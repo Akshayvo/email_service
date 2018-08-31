@@ -1,0 +1,57 @@
+<div class="fixed-top">
+  <app-header [currentActive]="currentActive"></app-header>
+  <app-breadcrumb [breadcrumbActive]="breadcrumbActive"></app-breadcrumb>
+</div>
+
+<div class="contentHolder">
+  <div class="container pb-5" style="padding-top: 190px;">
+    <div class="my-4">
+      <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47251.23771165393!2d-73.906239!3d42.252851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb3c5b1992ccc62a!2sU-Haul+Neighborhood+Dealer!5e0!3m2!1sen!2sus!4v1466783726746"
+        height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-12 my-4">
+        <h3 class="heading py-3">Contact Form</h3>
+        <form>
+          <div [hidden]="valid" class="alert alert-danger">
+             Please fill out all the required fields!
+          </div>
+          <div [hidden]="submited" class="alert alert-success">
+            Form Successfully Submited!
+          </div>
+          <div class="form-group">
+            <label for="Name">Name (Required)</label>
+            <input type="text" name="name" (keyup)="validate('notNull', name, 'Name', 'nameHelp')" class="form-control" id="Name" placeholder="Enter Your Name"
+              [(ngModel)]="name" required>
+            <small id="nameHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="Email">Email address (Required)</label>
+            <input type="email" name="email" (keyup)="validate('email', email, 'Email', 'emailHelp')" class="form-control" id="Email"
+              aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="email" required>
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="Subject">Subject</label>
+            <input type="text" name="subject" class="form-control" id="Subject" placeholder="Enter Subject" [(ngModel)]="subject">
+          </div>
+          <div class="form-group">
+            <label for="Message">Enter Message (Required)</label>
+            <textarea class="form-control" name="message" id="Message"  (keyup)="validate('notNull', message, 'Message', 'messageHelp')" placeholder="Enter Your Message" [(ngModel)]="message" required></textarea>
+            <small id="messageHelp" class="form-text text-muted"></small>
+          </div>
+          <button type="submit" class="btn btn-primary px-4 mx-2" (click)="formSubmit()" style="float: right;">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-6 col-12 my-4">
+        <h3 class="heading py-3">Hours</h3>
+        <app-tables [tBody]="hours" [tHead]="head"></app-tables>
+        <h3 class="heading py-3">Contact Info</h3>
+        <app-tables [tBody]="contactDetails" [tHead]="head"></app-tables>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<app-footer></app-footer>
