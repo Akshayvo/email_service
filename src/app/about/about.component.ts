@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
 import { aboutUs } from '../data/home';
 
 @Component({
@@ -12,10 +14,17 @@ export class AboutComponent implements OnInit {
   currentActive: any = 'ABOUT US';
   aboutUs: any;
 
-  constructor() { }
+  constructor(
+    private titleService: Title
+  ) { }
 
   ngOnInit() {
     this.fetchStaticContent();
+    this.setTitle();
+  }
+
+  public setTitle() {
+    this.titleService.setTitle('About Catskill Self Storage');
   }
 
   public fetchStaticContent() {

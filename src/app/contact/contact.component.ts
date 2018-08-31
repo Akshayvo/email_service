@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { RouterLink, ActivatedRoute, Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
 // import * as MailService from '../services/email';
@@ -27,15 +29,21 @@ export class ContactComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private emailService: EmailService,
+    private titleService: Title
   ) { }
-
-  public navigate(location) {
-    this.router.navigate([location]);
-  }
 
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
+    this.setTitle();
+  }
+
+  public setTitle() {
+    this.titleService.setTitle('Contact Catskill Self Storage ');
+  }
+
+  public navigate(location) {
+    this.router.navigate([location]);
   }
 
   public fetchContactDetails() {

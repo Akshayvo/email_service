@@ -16,10 +16,12 @@ $border: #707070;
 $shadow: #000000;
 
 $fontColor: #707070;
-$primaryFont: 'Roboto';
+// $primaryFont: 'Roboto';
+$primaryFont: 'Lato', sans-serif;
 
 * {
-    font: $primaryFont;
+    // font: $primaryFont;
+    font-family: $primaryFont;
 }
 
 .justify {
@@ -84,7 +86,7 @@ $primaryFont: 'Roboto';
 }
 
 .heading {
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .sectionImage{

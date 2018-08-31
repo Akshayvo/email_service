@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, ActivatedRoute, Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+
 import { contact, hours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs, serviceOffered, gettingStarted } from '../data/home';
 
@@ -23,6 +25,7 @@ export class HomeComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
+    private titleService: Title
   ) { }
 
   public navigate(location) {
@@ -34,6 +37,11 @@ export class HomeComponent implements OnInit {
     this.fetchHours();
     this.fetchFeatures();
     this.fetchStaticContent();
+    this.setTitle();
+  }
+
+  public setTitle() {
+    this.titleService.setTitle('Affordable Storage Units Near Catskill , NY | 12414 - Catskill Self Storage');
   }
 
   public fetchContactDetails() {
