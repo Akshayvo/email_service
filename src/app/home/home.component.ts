@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, ActivatedRoute, Router } from '@angular/router';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs, serviceOffered, gettingStarted } from '../data/home';
@@ -25,8 +25,16 @@ export class HomeComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private titleService: Title
-  ) { }
+    private titleService: Title,
+    private meta: Meta
+  ) {
+    this.meta.addTag({
+      name: 'description',
+      content: `Catskill Self Storage has your self storage unit, packing supplies,
+       and U-Haul truck rental needs covered! Serving the Catskill community since 2003.`
+    });
+    this.titleService.setTitle('Affordable Storage Units Near Catskill , NY | 12414 - Catskill Self Storage');
+  }
 
   public navigate(location) {
     this.router.navigate([location]);
@@ -37,11 +45,6 @@ export class HomeComponent implements OnInit {
     this.fetchHours();
     this.fetchFeatures();
     this.fetchStaticContent();
-    this.setTitle();
-  }
-
-  public setTitle() {
-    this.titleService.setTitle('Affordable Storage Units Near Catskill , NY | 12414 - Catskill Self Storage');
   }
 
   public fetchContactDetails() {

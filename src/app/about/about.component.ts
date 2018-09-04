@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
-import { aboutUs } from '../data/home';
+import { aboutUs } from '../data/about';
 
 @Component({
   selector: 'app-about',
@@ -11,20 +11,23 @@ import { aboutUs } from '../data/home';
 export class AboutComponent implements OnInit {
 
   breadcrumbActive: any = 'About Us';
-  currentActive: any = 'ABOUT US';
+  currentActive: any = 'ABOUT';
   aboutUs: any;
 
   constructor(
-    private titleService: Title
-  ) { }
+    private titleService: Title,
+    private meta: Meta
+  ) {
+    this.meta.addTag({
+      name: 'description',
+      content: `Opened in 2003 Catskill Self Storage services the Catskill,
+      Leeds, and Cairo communities with quality storage and U-Haul Rentals`
+    });
+    this.titleService.setTitle('About Catskill Self Storage');
+  }
 
   ngOnInit() {
     this.fetchStaticContent();
-    this.setTitle();
-  }
-
-  public setTitle() {
-    this.titleService.setTitle('About Catskill Self Storage');
   }
 
   public fetchStaticContent() {

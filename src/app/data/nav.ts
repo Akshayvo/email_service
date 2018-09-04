@@ -8,7 +8,7 @@ export const navLinks = [
         path: '/view-rates',
     },
     {
-        label: 'RESERVE UNIT',
+        label: 'RESERVE',
         path: '/reserve',
     },
     {
@@ -16,11 +16,11 @@ export const navLinks = [
         path: '/payment'
     },
     {
-        label: 'ABOUT US',
+        label: 'ABOUT',
         path: '/about'
     },
     {
-        label: 'CONTACT US',
+        label: 'CONTACT',
         path: '/contact'
     },
 ];

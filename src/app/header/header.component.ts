@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { RouterLink, ActivatedRoute, Router } from '@angular/router';
-import { contact, socialLinks } from '../Data/contact';
-import { navLinks } from '../Data/nav';
+import { contact, socialLinks } from '../data/contact';
+import { navLinks } from '../data/nav';
 
 @Component({
   selector: 'app-header',

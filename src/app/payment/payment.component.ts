@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-payment',
@@ -12,15 +12,18 @@ export class PaymentComponent implements OnInit {
   currentActive: any = 'PAY RENT';
 
   constructor(
-    private titleService: Title
-  ) { }
-
-  ngOnInit() {
-    this.setTitle();
+    private titleService: Title,
+    private meta: Meta
+  ) {
+    // this.meta.addTag({
+    //   name: 'description',
+    //   content: `Opened in 2003 Catskill Self Storage services the Catskill,
+    //   Leeds, and Cairo communities with quality storage and U-Haul Rentals`
+    // });
+    this.titleService.setTitle('Pay Rent Catskill Self Storage');
   }
 
-  public setTitle() {
-    this.titleService.setTitle('Pay Rent Catskill Self Storage');
+  ngOnInit() {
   }
 
 }

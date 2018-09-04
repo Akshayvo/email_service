@@ -20,23 +20,23 @@
             Form Successfully Submited!
           </div>
           <div class="form-group">
-            <label for="Name">Name (Required)</label>
+            <label for="Name">Name*</label>
             <input type="text" name="name" (keyup)="validate('notNull', name, 'Name', 'nameHelp')" class="form-control" id="Name" placeholder="Enter Your Name"
               [(ngModel)]="name" required>
             <small id="nameHelp" class="form-text text-muted"></small>
           </div>
           <div class="form-group">
-            <label for="Email">Email address (Required)</label>
+            <label for="Email">Email address*</label>
             <input type="email" name="email" (keyup)="validate('email', email, 'Email', 'emailHelp')" class="form-control" id="Email"
               aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="email" required>
             <small id="emailHelp" class="form-text text-muted"></small>
           </div>
           <div class="form-group">
-            <label for="Subject">Subject</label>
+            <label for="Subject">Subject (Optional)</label>
             <input type="text" name="subject" class="form-control" id="Subject" placeholder="Enter Subject" [(ngModel)]="subject">
           </div>
           <div class="form-group">
-            <label for="Message">Enter Message (Required)</label>
+            <label for="Message">Enter Message*</label>
             <textarea class="form-control" name="message" id="Message"  (keyup)="validate('notNull', message, 'Message', 'messageHelp')" placeholder="Enter Your Message" [(ngModel)]="message" required></textarea>
             <small id="messageHelp" class="form-text text-muted"></small>
           </div>

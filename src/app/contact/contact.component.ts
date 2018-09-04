@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { RouterLink, ActivatedRoute, Router } from '@angular/router';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
@@ -14,7 +14,7 @@ import { EmailService } from '../services/email.service';
 export class ContactComponent implements OnInit {
 
   breadcrumbActive: any = 'Contact Us';
-  currentActive: any = 'CONTACT US';
+  currentActive: any = 'CONTACT';
   contactDetails: any;
   hours: any;
   name: any;
@@ -29,17 +29,19 @@ export class ContactComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private emailService: EmailService,
-    private titleService: Title
-  ) { }
+    private titleService: Title,
+    private meta: Meta
+  ) {
+    this.meta.addTag({
+      name: 'description',
+      content: `Have a question or concern about self storage units, climate controlled storage units or U-Haul rentals?`
+    });
+    this.titleService.setTitle('Contact Catskill Self Storage');
+  }
 
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
-    this.setTitle();
-  }
-
-  public setTitle() {
-    this.titleService.setTitle('Contact Catskill Self Storage ');
   }
 
   public navigate(location) {

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-reserve',
@@ -9,18 +9,20 @@ import { Title } from '@angular/platform-browser';
 export class ReserveComponent implements OnInit {
 
   breadcrumbActive: any = 'Reserve Unit';
-  currentActive: any = 'RESERVE UNIT';
+  currentActive: any = 'RESERVE';
 
   constructor(
-    private titleService: Title
-  ) { }
-
-  ngOnInit() {
-    this.setTitle();
+    private titleService: Title,
+    private meta: Meta
+  ) {
+    this.meta.addTag({
+      name: 'description',
+      content: `Reserve your self storage unit, climate controlled storage unit or U-Haul moving truck today at Catskill Self Storage!`
+    });
+    this.titleService.setTitle('Reserve A Storage Unit Near Catskill, NY | 12414 - Catskill Self Storage');
   }
 
-  public setTitle() {
-    this.titleService.setTitle('Reserve A Storage Unit Near Catskill, NY | 12414 - Catskill Self Storage');
+  ngOnInit() {
   }
 
 }

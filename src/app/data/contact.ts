@@ -38,7 +38,7 @@ export const hours = [
 export const socialLinks = [
     {
         label: 'twitter',
-        path: '#',
+        path: 'https://twitter.com/CatskillSS',
         class: 'fab fa-twitter-square',
     },
     {
@@ -46,9 +46,9 @@ export const socialLinks = [
         path: 'https://www.facebook.com/catskillselfstorage',
         class: 'fab fa-facebook-square',
     },
-    {
-        label: 'google plus',
-        path: '#',
-        class: 'fab fa-google-plus-square',
-    },
+    // {
+    //     label: 'google plus',
+    //     path: '#',
+    //     class: 'fab fa-google-plus-square',
+    // },
 ];
