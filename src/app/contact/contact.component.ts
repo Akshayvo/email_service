@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { RouterLink, ActivatedRoute, Router } from '@angular/router';
+import { Component, OnInit, Input } from '@angular/core'; // Review Vinay: Remove Unused Imports
+import { RouterLink, ActivatedRoute, Router } from '@angular/router'; // Review Vinay: Remove Unused Imports
 import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
@@ -7,14 +7,13 @@ import { EmailService } from '../services/email.service';
 // import * as MailService from '../services/email';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  selector: "app-contact",
+  templateUrl: "./contact.component.html",
+  styleUrls: ["./contact.component.scss"]
 })
 export class ContactComponent implements OnInit {
-
-  breadcrumbActive: any = 'Contact Us';
-  currentActive: any = 'CONTACT';
+  breadcrumbActive: any = "Contact Us";
+  currentActive: any = "CONTACT";
   contactDetails: any;
   hours: any;
   name: any;
@@ -26,17 +25,17 @@ export class ContactComponent implements OnInit {
   head: any;
 
   constructor(
-    private route: ActivatedRoute,
+    private route: ActivatedRoute, // Review Vinay: Remove Unused Variables
     private router: Router,
     private emailService: EmailService,
     private titleService: Title,
     private meta: Meta
   ) {
     this.meta.addTag({
-      name: 'description',
+      name: "description",
       content: `Have a question or concern about self storage units, climate controlled storage units or U-Haul rentals?`
     });
-    this.titleService.setTitle('Contact Catskill Self Storage');
+    this.titleService.setTitle("Contact Catskill Self Storage");
   }
 
   ngOnInit() {
@@ -56,28 +55,33 @@ export class ContactComponent implements OnInit {
     this.hours = hours;
   }
 
+  // Review Vinay: Please Use Angular way of accessing dom elements.(ViewChild/ElementRef)
+  // Review Vinay: For Form validation, see if you can use any packages, instead of manually setting it.
   public validate(check, value, id, helpId) {
     // console.log(check + ' ' + value);
-    if (check === 'notNull') {
+    if (check === "notNull") {
       if (this.validateNull(value)) {
-        document.getElementById(id).style.borderColor = 'red';
-        document.getElementById(helpId).innerHTML = 'Please fill out this field';
+        document.getElementById(id).style.borderColor = "red";
+        document.getElementById(helpId).innerHTML =
+          "Please fill out this field";
       } else {
-        document.getElementById(id).style.border = '1px solid #ced4da';
-        document.getElementById(helpId).innerHTML = '';
+        document.getElementById(id).style.border = "1px solid #ced4da";
+        document.getElementById(helpId).innerHTML = "";
       }
     }
-    if (check === 'email') {
+    if (check === "email") {
       if (this.validateNull(value)) {
-        document.getElementById(id).style.borderColor = 'red';
-        document.getElementById(helpId).innerHTML = 'Please fill out this field';
+        document.getElementById(id).style.borderColor = "red";
+        document.getElementById(helpId).innerHTML =
+          "Please fill out this field";
       } else {
         if (!this.validateEmail(value)) {
-          document.getElementById(id).style.borderColor = 'red';
-          document.getElementById(helpId).innerHTML = 'Please enter a valid email id';
+          document.getElementById(id).style.borderColor = "red";
+          document.getElementById(helpId).innerHTML =
+            "Please enter a valid email id";
         } else {
-          document.getElementById(id).style.border = '1px solid #ced4da';
-          document.getElementById(helpId).innerHTML = '';
+          document.getElementById(id).style.border = "1px solid #ced4da";
+          document.getElementById(helpId).innerHTML = "";
         }
       }
     }
@@ -85,22 +89,27 @@ export class ContactComponent implements OnInit {
 
   private validateEmail(value) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
-      return (true);
+      return true;
     }
-    return (false);
+    return false;
   }
 
   private validateNull(value) {
-    if (value === undefined || value === '') {
-      return (true);
+    if (value === undefined || value === "") {
+      return true;
     }
-    return (false);
+    return false;
   }
 
   public formSubmit() {
     this.valid = false;
     if (this.validateEmail(this.email)) {
-      if (this.name === '' || this.message === '' || this.name === undefined || this.message === undefined) {
+      if (
+        this.name === "" ||
+        this.message === "" ||
+        this.name === undefined ||
+        this.message === undefined
+      ) {
         this.valid = false;
       } else {
         this.valid = true;
@@ -108,24 +117,25 @@ export class ContactComponent implements OnInit {
           name: this.name,
           email: this.email,
           message: this.message,
-          subject: this.subject,
+          subject: this.subject
         };
-        this.emailService.sendEmail(body)
-          .subscribe((response: any) => {
-            console.log('Authentication response:', response);
+        this.emailService.sendEmail(body).subscribe(
+          (response: any) => {
+            console.log("Authentication response:", response);
             if (response.result != null) {
               alert(response.message);
             } else {
               console.log(`response`, response.result);
               alert(response.message);
             }
-          }, (err) => {
-            console.log('Error :', err);
-          });
+          },
+          err => {
+            console.log("Error :", err);
+          }
+        );
         this.submited = false;
         // MailService(body);
       }
     }
   }
-
 }
