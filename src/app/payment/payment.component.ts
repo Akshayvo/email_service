@@ -15,12 +15,11 @@ export class PaymentComponent implements OnInit {
     private titleService: Title,
     private meta: Meta
   ) {
-    // this.meta.addTag({
-    //   name: 'description',
-    //   content: `Opened in 2003 Catskill Self Storage services the Catskill,
-    //   Leeds, and Cairo communities with quality storage and U-Haul Rentals`
-    // });
-    this.titleService.setTitle('Pay Rent Catskill Self Storage');
+    this.meta.addTag({
+      name: 'description',
+      content: `Save time and access your account online with our convenient customer portal.`
+    });
+    this.titleService.setTitle('Make Your Payment Online | Catskill Self Storage');
   }
 
   ngOnInit() {
