@@ -5,12 +5,11 @@
   background: url(../../assets/images/self-storage-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   background-position: center;
-
-  height: 100vh;
-  color: $white;
-  padding-top: 70vh;
+  height: 60vh;
+  color: $fontColor;
+  padding-top: 15vh;
   border-radius: 0px;
   a{
     margin-top: 20px;
@@ -21,15 +20,31 @@
   text-align: right;
 }
 
-.getStarted{
-  background: url(../../assets/images/self-storage-photo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center top !important;
-  color: $white;
+.affordable {
   text-align: center;
+  color: $fontColor;
+  p {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #256784;
+  }
 }
+
+.boder {
+  border-right: 2px solid $white;
+}
+.boder:last-child {
+  border-right: none;
+}
+// .getStarted{
+//   background: url(../../assets/images/self-storage-photo.png);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-attachment: fixed;
+//   background-position: center top !important;
+//   color: $white;
+//   text-align: center;
+// }
 
 .disp {
   display: block;
@@ -37,6 +52,10 @@
   a{
     color: $white;
   }
+}
+
+.bg-light {
+  color: $fontColor;
 }
 
 @media screen and (max-width: 1024px) {
@@ -53,10 +72,10 @@
     text-align: right;
   }
 
-  .getStarted{
-    background-attachment: unset !important;
-    background-position: center top !important;
-  }
+  // .getStarted{
+  //   background-attachment: unset !important;
+  //   background-position: center top !important;
+  // }
 }
 
 @media screen and (max-width: 800px) {
@@ -74,10 +93,10 @@
     text-align: right;
   }
 
-  .getStarted{
-    background-attachment: unset !important;
-    background-position: center top !important;
-  }
+  // .getStarted{
+  //   background-attachment: unset !important;
+  //   background-position: center top !important;
+  // }
 }
 
 @media screen and (max-width: 600px) {
@@ -95,12 +114,13 @@
     text-align: center;
   }
 
-  .getStarted{
-    background-attachment: unset !important;
-    background-position: center top !important;
-  }
+  // .getStarted{
+  //   background-attachment: unset !important;
+  //   background-position: center top !important;
+  // }
 
   .disp {
     display: none;
   }
 }
+

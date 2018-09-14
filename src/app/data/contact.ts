@@ -1,49 +1,44 @@
 export const contact = [
     {
         label: 'Address:',
-        data: '5877 Cauterskill Road Catskill, NY 12414',
+        data: '10 Menzo-Haverly Rd, Elma, WA 98541',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         label: 'Email:',
-        data: 'catskillselfstorage@gmail.com',
+        data: 'brandselfstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
         label: 'Phone:',
-        data: '518-943-3003',
+        data: '360-482-5511',
         class: 'fas fa-phone mx-2 iconColor',
     }
 ];
 
 export const hours = [
     {
-        label: 'Mon-Fri: ',
-        data: '9:00 am - 6:00 pm'
+        label: 'Phone Number:',
+        data: '360-482-5511'
     },
     {
-        label: 'Sat: ',
-        data: '9:00 am - 3:00 pm'
+        label: 'Street Address: ',
+        data: '10 Menzo Haverly Rd Elma, WA 98541'
     },
     {
-        label: 'Sunday: ',
-        data: '8:00 am - 12:00 pm'
+        label: 'Office Hours: ',
+        data: '8:00 am - 5:00 pm Mon-Fri( Sat-Sun CLOSED)'
     },
     {
-        label: 'Facility Access With Pin Code: ',
-        data: '24 hours a day, 7 days a week'
+        label: 'Access Hours:',
+        data: '8:00 AM - 8:00 PM Sun-Sat'
     }
 ];
 
 export const socialLinks = [
     {
-        label: 'twitter',
-        path: '#',
-        class: 'fab fa-twitter-square',
-    },
-    {
         label: 'facebook',
-        path: 'https://www.facebook.com/catskillselfstorage',
+        path: '#',
         class: 'fab fa-facebook-square',
     },
     {
@@ -51,4 +46,24 @@ export const socialLinks = [
         path: '#',
         class: 'fab fa-google-plus-square',
     },
+    {
+        label: 'twitter',
+        path: '#',
+        class: 'fab fa-twitter-square',
+    },
+    
+];
+
+export const qaulityIcon = [
+    {
+        label: 'quality',
+        path: '',
+       
+    },
+    {
+        label: 'truck',
+        path: '',
+        
+    },
+    
 ];

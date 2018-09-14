@@ -7,15 +7,17 @@ import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { PaymentComponent } from './payment/payment.component';
 import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
+import { FrmlogviewerComponent } from 'src/app/frmlogviewer/frmlogviewer.component';
+import { JokeListComponentComponent } from 'src/app/joke-list-component/joke-list-component.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'reserve', component: ReserveComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'view-rates', component: ViewRatesComponent },
-  { path: 'payment', component: PaymentComponent },
-  { path: 'about', component: AboutComponent },
-  { path: '**', component: ErrorComponent },
+  // { path: 'reserve', component: ReserveComponent },
+  // { path: 'contact', component: ContactComponent },
+  // { path: 'view-rates', component: ViewRatesComponent },
+  // { path: 'payment', component: PaymentComponent },
+  // { path: 'about', component: AboutComponent },
+  // { path: '**', component: ErrorComponent },
 ];
 
 @NgModule({

@@ -3,7 +3,7 @@ import { RouterLink, ActivatedRoute, Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
-import { featuresList, featuresHead, aboutUs, serviceOffered, gettingStarted } from '../data/home';
+import { featuresList, featuresHead, aboutUs, serviceOffered, gettingStarted, price} from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
   aboutUs: any;
   serviceOffered: any;
   gettingStarted: any;
+  price: any;
   currentActive: any = 'HOME';
 
 
@@ -38,6 +39,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.setTitle();
+    this.fetchPrice();
   }
 
   public setTitle() {
@@ -50,6 +52,10 @@ export class HomeComponent implements OnInit {
 
   public fetchHours() {
     this.hours = hours;
+  }
+
+  public fetchPrice() {
+    this.price = price;
   }
 
   public fetchFeatures() {

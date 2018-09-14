@@ -4,21 +4,21 @@ export const navLinks = [
         path: '/',
     },
     {
-        label: 'VIEW RATES',
+        label: 'UNIT PRICE',
         path: '/view-rates',
     },
     {
-        label: 'RESERVE UNIT',
+        label: 'NEARBY',
         path: '/reserve',
     },
     {
-        label: 'PAY RENT',
+        label: 'FAQ',
         path: '/payment'
     },
-    {
-        label: 'ABOUT US',
-        path: '/about'
-    },
+    // {
+    //     label: 'ABOUT US',
+    //     path: '/about'
+    // },
     {
         label: 'CONTACT US',
         path: '/contact'

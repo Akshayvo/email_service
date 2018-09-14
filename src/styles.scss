@@ -1,16 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
 //Basic color and font styles
-$primary: #4ECCA6;
+$primary: #256784;
 $primaryDark: rgb(51, 161, 128);
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
-$secondary: #212121;
+$secondary: #ffffff;
 
-$dark: #333333;
+$dark: #ffffff;
 $light: #efefef;
-$white: #ffffff;
+$white: #a2a2a2;
 
 $border: #707070;
 $shadow: #000000;
@@ -42,8 +42,16 @@ $primaryFont: 'Lato', sans-serif;
 }
 
 .bg-translucent{
-    background: rgba(0, 0, 0, 0.6);
-    width: auto !important;
+    background: white;
+    width: 25%;
+    float: right;
+    text-align: right;
+    right: 0px;
+    position: absolute;
+    height: 100%;
+    // transform-origin: top left;
+    // transform: skew(-20deg, 0deg);
+    // width: auto !important;
 }
 
 
@@ -55,27 +63,29 @@ $primaryFont: 'Lato', sans-serif;
 .btn-primary{
     background-color: $primary;
     border-color: $primary; 
-    color: $white !important;
+    color: $secondary !important;
     min-width: 200px;
+    border-radius: 0px !important;
 }
 
-.btn-primary:hover {
-    background-color: $primaryDark;
-    border-color: $primaryDark;
-}
+// .btn-primary:hover {
+//     background-color: $primaryDark;
+//     border-color: $primaryDark;
+// }
 
 .btn-outline-primary {
     background-color: transparent;
     border-color: $primary;
     border: 2px solid $primary;
     min-width: 200px;
-    color: $white !important;
+    color: $primary !important;
+    border-radius: 0px !important;
 }
 
-.btn-outline-primary:hover {
-    background-color: $primaryDark;
-    border-color: $primaryDark;
-}
+// .btn-outline-primary:hover {
+//     background-color: $primaryDark;
+//     border-color: $primaryDark;
+// }
 
 .section-headings{
   font-weight: 200;

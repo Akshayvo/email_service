@@ -35,6 +35,8 @@ a {
     color: $white !important;
     font-weight: 600;
     transition-duration: 500ms;
+    padding-bottom: 30px;
+    margin-top: 30px;
 }
 
 .nav-link:hover {
@@ -45,12 +47,23 @@ a {
 
 .nav-link-active {
     color: $primary !important;
+    border-bottom: 5px solid $primary;
+    // padding-bottom: 20px;
+    // margin-top: 40px;
 }
 
 .display {
     display: block;
 }
 
+img {
+    position: relative;
+    top: 40px;
+}
+
+.navbar {
+    height: 95px
+}
 @media screen and (max-width: 900px) {
     .display {
         display: none;

@@ -17,6 +17,8 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { TablesComponent } from './tables/tables.component';
 import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
+import { FrmlogviewerComponent } from './frmlogviewer/frmlogviewer.component';
+import { JokeListComponentComponent } from './joke-list-component/joke-list-component.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ErrorComponent } from './error/error.component';
     BreadcrumbComponent,
     TablesComponent,
     AboutComponent,
-    ErrorComponent
+    ErrorComponent,
+    FrmlogviewerComponent,
+    JokeListComponentComponent
   ],
   imports: [
     BrowserModule,
