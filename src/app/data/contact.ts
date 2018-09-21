@@ -1,17 +1,17 @@
 export const contact = [
-    {
-        label: 'Address:',
-        data: '5877 Cauterskill Road Catskill, NY 12414',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
-    },
+    // {
+    //     label: 'Address:',
+    //     data: '5877 Cauterskill Road Catskill, NY 12414',
+    //     class: 'fas fa-map-marker-alt mx-2 iconColor',
+    // },
     {
         label: 'Email:',
-        data: 'catskillselfstorage@gmail.com',
+        data: 'info@victorselfstorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
         label: 'Phone:',
-        data: '518-943-3003',
+        data: '(585)-924-9290',
         class: 'fas fa-phone mx-2 iconColor',
     }
 ];
@@ -37,11 +37,6 @@ export const hours = [
 
 export const socialLinks = [
     {
-        label: 'twitter',
-        path: '#',
-        class: 'fab fa-twitter-square',
-    },
-    {
         label: 'facebook',
         path: 'https://www.facebook.com/catskillselfstorage',
         class: 'fab fa-facebook-square',
@@ -50,5 +45,10 @@ export const socialLinks = [
         label: 'google plus',
         path: '#',
         class: 'fab fa-google-plus-square',
+    },
+    {
+        label: 'twitter',
+        path: '#',
+        class: 'fab fa-twitter-square',
     },
 ];

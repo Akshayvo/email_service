@@ -2,25 +2,40 @@ export const navLinks = [
     {
         label: 'HOME',
         path: '/',
+        type: 'link'
     },
     {
-        label: 'VIEW RATES',
-        path: '/view-rates',
+        label: 'LOCATIONS',
+        type: 'dropdown',
+        sublinks: [
+            {
+                sub_label: 'Victor Storage - Mall',
+                path: '/locations',
+            },
+            {
+                sub_label: 'Victor Storage - Village',
+                path: '/locations',
+            }
+        ]
     },
     {
-        label: 'RESERVE UNIT',
-        path: '/reserve',
+        label: 'RENT SPACE',
+        path: '/rent-space',
+        type: 'link'
+    },
+    {
+        label: 'STORAGE TIPS',
+        path: '/storage-tips',
+        type: 'link'
     },
     {
         label: 'PAY RENT',
-        path: '/payment'
-    },
-    {
-        label: 'ABOUT US',
-        path: '/about'
+        path: '/pay-rent',
+        type: 'link'
     },
     {
         label: 'CONTACT US',
-        path: '/contact'
+        path: '/contact',
+        type: 'link'
     },
 ];

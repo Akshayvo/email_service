@@ -13,7 +13,6 @@ import { ReserveComponent } from './reserve/reserve.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { PaymentComponent } from './payment/payment.component';
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { TablesComponent } from './tables/tables.component';
 import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
@@ -28,7 +27,6 @@ import { ErrorComponent } from './error/error.component';
     FooterComponent,
     ViewRatesComponent,
     PaymentComponent,
-    BreadcrumbComponent,
     TablesComponent,
     AboutComponent,
     ErrorComponent

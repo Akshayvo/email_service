@@ -10,8 +10,7 @@ import { aboutUs } from '../data/home';
 })
 export class AboutComponent implements OnInit {
 
-  breadcrumbActive: any = 'About Us';
-  currentActive: any = 'ABOUT US';
+  currentActive: any = 'PAY RENT';
   aboutUs: any;
 
   constructor(

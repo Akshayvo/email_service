@@ -13,7 +13,6 @@ import { EmailService } from '../services/email.service';
 })
 export class ContactComponent implements OnInit {
 
-  breadcrumbActive: any = 'Contact Us';
   currentActive: any = 'CONTACT US';
   contactDetails: any;
   hours: any;

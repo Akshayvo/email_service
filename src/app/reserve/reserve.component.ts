@@ -8,9 +8,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class ReserveComponent implements OnInit {
 
-  breadcrumbActive: any = 'Reserve Unit';
-  currentActive: any = 'RESERVE UNIT';
-
+  currentActive: any = 'RENT SPACE';
   constructor(
     private titleService: Title
   ) { }

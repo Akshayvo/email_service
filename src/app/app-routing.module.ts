@@ -10,11 +10,11 @@ import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'reserve', component: ReserveComponent },
+  { path: 'rent-space', component: ReserveComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'view-rates', component: ViewRatesComponent },
-  { path: 'payment', component: PaymentComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'locations', component: ViewRatesComponent },
+  { path: 'storage-tips', component: PaymentComponent },
+  { path: 'pay-rent', component: AboutComponent },
   { path: '**', component: ErrorComponent },
 ];
 
