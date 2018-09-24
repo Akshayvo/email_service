@@ -29,23 +29,37 @@
     <div class="jumbotron-test-upper carousel slide display" data-ride="carousel">
       <!-- <ol class="carousel-indicators"> -->
         <div class="z-index">
-          <a class="btn btn-lg btn-primary m-2" role="button">Launch Our Tour</a>
+          <a class="btn btn-lg btn-primary m-2" role="button" data-toggle="modal" data-target="#exampleModalCenter">Launch Our Tour</a>
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <a role="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </a>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
           <!-- </ol> -->
-        <div class="carousel-inner">
+        <div class="carousel-inner jumbotron-top-style">
             <div class="carousel-item active">
-              <div class="jumbotron-test-upper"></div>
+              <div class="jumbotron-top jumbotron-top-style"></div>
             </div>
             <div class="carousel-item">
-                <div class="jumbotron-test-upper1"></div>
+                <div class="jumbotron-top1 jumbotron-top-style"></div>
             </div>
             <div class="carousel-item">
-                <div class="jumbotron-test-upper2"></div>
+                <div class="jumbotron-top2 jumbotron-top-style"></div>
             </div>
-          </div>
+        </div>
     </div>
   
-    <div class="container jumbotron-test-lower">
+    <div class="container jumbotron-bottom">
         <div class="feature row">
             <div class="col-md-3 p-4 mt-3" style="text-align: center" *ngFor="let feature of feature">
               <img [src]="feature?.path" style="padding: 10px" alt="" />

@@ -39,6 +39,59 @@
   }
 }
 
+.z-index {
+  position: absolute;
+  z-index: 1;
+  bottom: 50px;
+}
+
+.jumbotron-top-style {
+  height: 80vh;
+}
+
+.jumbotron-top {
+  background: url(../../assets/images/victor-self-storage-slider/victor-self-storage-slider-1.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-top1 {
+  background: url(../../assets/images/victor-self-storage-slider/victor-self-storage-slider-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-top2 {
+  background: url(../../assets/images/victor-self-storage-slider/victor-self-storage-slider-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bottom {
+  height: 20vh;
+}
+
+.feature-text {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: $fontColor;
+  line-height: 1.5em;
+}
+
+
+.jumbotron-container {
+  height: 100vh;
+}
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
 @media screen and (max-width: 1024px) {
   .jumbotron{
     padding-top: 64vh;
@@ -56,6 +109,16 @@
   .getStarted{
     background-attachment: unset !important;
     background-position: center top !important;
+  }
+
+  .jumbotron-top-style {
+    height: 75vh !important;
+  }
+  .jumbotron-bottom {
+    height: 25vh !important;
+    img {
+      width: 70px;
+    }
   }
 }
 
@@ -78,9 +141,15 @@
     background-attachment: unset !important;
     background-position: center top !important;
   }
+  .jumbotron-top-style {
+    height: 80vh !important;
+  }
+  .jumbotron-bottom {
+    height: 20vh !important;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 736px) {
   .jumbotron{
     padding-top: 100%;
     text-align: center !important;
@@ -89,6 +158,9 @@
     h1 {
       font-size: 2em !important;
     }
+  }
+  .z-index {
+    bottom: 100px!important;
   }
 
   .content-align{
@@ -103,54 +175,14 @@
   .disp {
     display: none;
   }
+  .jumbotron-top-style {
+    height: 100vh !important;
+  }
+  .jumbotron-bottom {
+    display: none;
+  }
 }
 
-.jumbotron-container {
-  height: 100vh;
-}
-.display {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-.z-index {
-  position: absolute;
-  z-index: 1;
-  bottom: 50px;
-}
 
-.jumbotron-test-upper {
-  height: 80vh;
-  background: url(../../assets/images/victor-self-storage-slider/victor-self-storage-slider-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: relative;
-}
-
-.jumbotron-test-upper1 {
-  height: 80vh;
-  background: url(../../assets/images/victor-self-storage-slider/victor-self-storage-slider-2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: relative;
-}
-
-.jumbotron-test-upper2 {
-  height: 80vh;
-  background: url(../../assets/images/victor-self-storage-slider/victor-self-storage-slider-3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: relative;
-}
-
-.jumbotron-test-lower {
-  height: 20vh;
-}
-
-.feature-text {
-  font-size: 0.8em;
-  font-weight: 600;
-  color: $fontColor;
-}
 
  

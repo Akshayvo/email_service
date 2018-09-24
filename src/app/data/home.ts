@@ -77,3 +77,119 @@ export const feature = [
     },
 ];
 
+export const launchOurTour = [
+    {
+        id: '1',
+        path: '../../assets/SlideShow/victor-self-storage-gate.jpg',
+        caption: 'Convenient Lift Gate',
+        description: 'Our fast-acting vertical lift gates make it easy for you to enter and exit, but hard for “tailgaters” to follow you in.'
+    },
+    {
+        id: '2',
+        path: '../../assets/SlideShow/victor-self-storage-full-time-on-site-staff.jpg',
+        caption: 'Full Time, On Site Manager',
+        description: 'A cheerful, full-time site manager is available 24/7/365 to assist you with any questions or troubles that may arise. Yep… even on Christmas morning!'
+    },
+    {
+        id: '3',
+        path: '../../assets/SlideShow/victor-self-storage-full-perimeter-fence.jpg',
+        caption: 'Full Perimeter Fence',
+        description: 'Our security fence encloses the entire property (not just the front entrance) to protect your valuables.'
+    },
+    {
+        id: '4',
+        path: '../../assets/SlideShow/victor-self-storage-fire-alarms.jpg',
+        caption: 'Smoke & Fire Alarms',
+        description: 'All internally accessed units are protected with fire and smoke detection equipment for your peace of mind.'
+    },
+    {
+        id: '5',
+        path: '../../assets/SlideShow/victor-self-storage-easy-lift-doors.jpg',
+        caption: 'Easy Lift Doors',
+        description: 'Fighting hard-to-open doors isn’t fun. Our non-rusting stainless steel door latches and rollers save you time and hassle.'
+    },
+    {
+        id: '6',
+        path: '../../assets/SlideShow/victor-self-storage-drive-up-access.jpg',
+        caption: 'At Grade Access',
+        description: 'Struggling to lift things over a threshold just to get them through the door is a pain. Here you can drive right up and walk or roll your stuff right in.'
+    },
+    {
+        id: '7',
+        path: '../../assets/SlideShow/victor-self-storage-climate-control.jpg',
+        caption: 'Heavy Duty, All Steel Construction',
+        description: 'Our units feature non-combustible steel construction, both inside and out, to keep your belongings safe and protected.'
+    },
+    {
+        id: '8',
+        path: '../../assets/SlideShow/victor-self-storage-clean-and-bright.jpg',
+        caption: 'Clean & Bright',
+        description: 'We keep our premises clean, bright, and cheerful because we care about our business, we care about you, and we care about your belongings.'
+    },
+    {
+        id: '9',
+        path: '../../assets/SlideShow/victor-self-storage-alarm.jpg',
+        caption: 'Unique Access Code',
+        description: 'Instead of the usual “1-2-3-4” code everyone else uses, you get your own access code for yet another layer of privacy and security.'
+    },
+    {
+        id: '10',
+        path: '../../assets/SlideShow/victor-self-storage-access.jpg',
+        caption: '24/7 Access',
+        description: 'Come and go whenever you need to: day, night, weekends, holidays, according to your schedule. Just like home.'
+    },
+    {
+        id: '11',
+        path: '../../assets/SlideShow/victor-self-storage-large-units.jpg',
+        caption: 'Large Units',
+        description: 'Equivalent in size to a one car garage. Can hold the furnishings of a small house. Great for business inventory, or an average size automobile. Available in regular and climate controlled settings.'
+    },
+    {
+        id: '12',
+        path: '../../assets/SlideShow/victor-self-storage-locks.jpg',
+        caption: 'Theft-Proof Cylinder Locks',
+        description: 'No fiddling with rusty, jamming padlocks. Our smooth surface, non-master keyed cylinder locks make bolt cutters useless'
+    },
+    {
+        id: '13',
+        path: '../../assets/SlideShow/victor-self-storage-medium-units.jpg',
+        caption: 'Medium Units',
+        description: 'Equivalent in size to an average bedroom. The contents of a one bedroom apartment or studio can be easily stored in units of this size. Available in regular and climate controlled settings.'
+    },
+    {
+        id: '14',
+        path: '../../assets/SlideShow/victor-self-storage-oversized-units.jpg',
+        caption: 'Oversized Units',
+        description: 'Equivalent in size to a 1 1/2 car garage with a huge 10’X12’ high doors to accommodate vehicles, boats, trailers, or the furnishings of a large house. Available in regular and climate controlled settings.'
+    },
+    {
+        id: '15',
+        path: '../../assets/SlideShow/victor-self-storage-pest-and-rodent-control.jpg',
+        caption: 'Pest & Rodent Control',
+        description: 'We use natural, environmentally-friendly deterrents (like cedar oil) to keep bugs and rodents out of your unit and away from your belongings'
+    },
+    {
+        id: '16',
+        path: '../../assets/SlideShow/victor-self-storage-retail-store.jpg',
+        caption: 'Retail Store',
+        description: 'Need Boxes? Tape? Gloves? We keep a well-stocked retail store with all the moving and storage-related supplies you might need.'
+    },
+    {
+        id: '17',
+        path: '../../assets/SlideShow/victor-self-storage-security.jpg',
+        caption: '24/7 Surveillance',
+        description: 'Smile, you’re on camera! Everyone that goes in and out of our facility is captured on video that records everything, day and night.'
+    },
+    {
+        id: '18',
+        path: '../../assets/SlideShow/victor-self-storage-smaller-units.jpg',
+        caption: 'Smaller Units',
+        description: 'Best for standard boxes and furniture pieces. Available in regular and climate controlled settings.'
+    },
+    {
+        id: '19',
+        path: '../../assets/SlideShow/victor-self-storage-well-lit.jpg',
+        caption: 'Interior Lights',
+        description: 'You have to be able to see where you’re going! We provide hands-free, motion-activated lighting and brightly lit interior hallways'
+    },
+];

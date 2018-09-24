@@ -16,7 +16,6 @@ import { PaymentComponent } from './payment/payment.component';
 import { TablesComponent } from './tables/tables.component';
 import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +28,7 @@ import { ErrorComponent } from './error/error.component';
     PaymentComponent,
     TablesComponent,
     AboutComponent,
-    ErrorComponent
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
