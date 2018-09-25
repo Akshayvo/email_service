@@ -21,6 +21,15 @@
   text-align: right;
 }
 
+.modal-body {
+  padding: 0rem!important;
+}
+
+.modal-content {
+  width: auto;
+  border: none!important;
+  border-radius: 0px !important;
+}
 // .getStarted{
 //   background: url(../../assets/images/self-storage-photo.png);
 //   background-repeat: no-repeat;
@@ -41,7 +50,7 @@
 
 .z-index {
   position: absolute;
-  z-index: 1;
+  z-index: 1045;
   bottom: 50px;
 }
 

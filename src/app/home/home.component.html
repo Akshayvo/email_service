@@ -34,19 +34,39 @@
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
+                    <h3  style="color:#707070">Launch Our Tour</h3>
                     <a role="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </a>
                   </div>
                   <div class="modal-body">
-                    ...
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner" role="listbox">
+                        <div *ngFor="let launch of launchOurTour">
+                          <div class="carousel-item active" >
+                            <img [src]="launch?.path" [alt]="launch?.caption"/>
+                            <div style="padding: 10px">
+                              <div style="font-weight: 600; font-size: 1.5em; color:#707070">{{launch.caption}}</div>
+                              <h5 style="color:#707070">Description</h5>
+                              <div style="font-size: 1em; color:#707070">{{launch.description}}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <a class="carousel-control-prev" href="#carouselExampleControls" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a> -->
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
         </div>
           <!-- </ol> -->
-        <div class="carousel-inner jumbotron-top-style">
+        <div class="carousel-inner slide jumbotron-top-style">
             <div class="carousel-item active">
               <div class="jumbotron-top jumbotron-top-style"></div>
             </div>
