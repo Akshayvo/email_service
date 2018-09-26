@@ -36,6 +36,10 @@
 
       <ul class="navbar-nav">
         <li class="nav-item" *ngFor="let nav of navLinks">
+
+         
+
+
           <div *ngIf="nav?.type === 'link'">
             <span *ngIf="currentActive === nav?.label">
               <a class="nav-link nav-link-active p-4" (click)="navigate(nav?.path)">{{nav.label}}</a>
@@ -45,19 +49,39 @@
             </span>
           </div>
 
-
           <div *ngIf="nav?.type === 'dropdown'">
-              <span class="dropdown">
-                <a class="nav-link p-4" data-toggle="dropdown">{{nav.label}}</a>
-                <div class="dropdown-menu" *ngFor="let sub of nav.sublinks"> 
-                  <a class="dropdown-item" *ngIf="currentActive === nav?.label">{{sub.sub_label}}</a>
-                </div>
-              </span>
-              <!-- <span *ngIf="currentActive !== nav?.label">
-                <a class="nav-link p-4" (click)="navigate(nav?.path)">{{nav.label}}</a>
-              </span> -->
+            <span *ngIf="currentActive === nav?.label">
+              <div class="dropdown show">  
+                <a class="nav-link nav-link-active p-4 dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+                <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
+                  <li *ngFor="let sub of nav.sublinks"><a class="dropdown-item" (click)="navigate(sub?.path)">{{sub.sub_label}}</a></li>
+                </ul>
+              </div>
+            </span>
+            <span *ngIf="currentActive !== nav?.label">
+              <div class="dropdown show">  
+                <a class="nav-link p-4 dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+                <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
+                  <li *ngFor="let sub of nav.sublinks"><a class="dropdown-item" (click)="navigate(sub?.path)">{{sub.sub_label}}</a></li>
+                </ul>
+              </div>
+            </span>
+          </div>
+
+<!-- 
+          <div *ngIf="nav?.type === 'dropdown'">
+             
+              
+                  <a class="nav-link p-4" (click)="navigate(nav?.path)">{{nav.label}}</a>
+                  <span class="dropdown show">
+                      <a class="nav-link p-4" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>'
+                  </span>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" *ngFor="let sub of nav.sublinks"> 
+                        <a class="dropdown-item" *ngIf="currentActive === nav?.label">{{sub.sub_label}}</a>
+                      </div>
+        
             </div>
-          
+     -->
 
           <!-- <ng-template #otherContent> -->
               <!-- <div *ngIf="nav.type === 'dropdown'">
@@ -98,5 +122,6 @@
       </ul>
 
     </div>
+    
   </div>
 </nav>

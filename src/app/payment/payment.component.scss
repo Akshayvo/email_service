@@ -6,8 +6,51 @@
         color: $fontColor;
         font-weight: 600;
     };
-    p {
+    h5 {
         color: $fontColor;
         font-weight: 600;
+        font-size: 1.2em;
+    };
+    .storage-left {
+        color: $fontColor;
+        font-weight: 600;
+        line-height: 2;
     };
 }
+
+.card {
+    border: none!important;
+    border-radius: 0px !important;
+}
+
+.card-header {
+    padding: 0px!important;
+    color: $primary!important;
+    background-color: $dark!important;
+    
+}
+
+.card-header:first-child {
+    border-radius: 0px !important;
+    
+}
+
+.card-body {
+    padding: 20px 20px 20px 45px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: $fontColor;
+    background-color: #f1ede3;
+    margin: auto;
+}
+
+.card-header-before-collapse:after {
+    font-family: 'FontAwesome';  
+    content: "\f106";
+    float: right;
+}
+
+.collapsed:after {
+    content: "\f107";
+}
+

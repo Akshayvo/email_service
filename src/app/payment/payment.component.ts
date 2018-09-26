@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { storageTip } from '../data/storage';
+import { storageTip, storageTipAccordion } from '../data/storage';
 
 
 @Component({
@@ -11,6 +11,7 @@ import { storageTip } from '../data/storage';
 export class PaymentComponent implements OnInit {
 
   storageTip : any;
+  storageTipAccordion: any;
   currentActive: any = 'STORAGE TIPS';
 
   constructor(
@@ -20,6 +21,7 @@ export class PaymentComponent implements OnInit {
   ngOnInit() {
     this.setTitle();
     this.fetchStorageTip();
+    this.fetchStorageTipAccordion();
   }
 
   public setTitle() {
@@ -28,6 +30,9 @@ export class PaymentComponent implements OnInit {
 
   public fetchStorageTip() {
     this.storageTip = storageTip;
+  }
+  public fetchStorageTipAccordion () {
+    this.storageTipAccordion = storageTipAccordion;
   }
 
 }

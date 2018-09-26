@@ -66,6 +66,26 @@ a {
     color: $primary !important;
 }
 
+.location-list {
+    background-color: $primary;
+    border: none !important;
+    border-radius: 0px;
+    margin:auto;
+    border-bottom: 5px solid $secondary!important;
+    li:hover {
+        a {
+            background-color: $primary;
+            color: $dark;
+        }
+    }
+    li {
+        a {
+            color: $fontColor;
+        }
+    }
+}
+
+
 @media screen and (max-width: 900px) {
     .display {
         display: none;

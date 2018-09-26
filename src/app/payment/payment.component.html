@@ -2,18 +2,55 @@
   <app-header [currentActive]="currentActive"></app-header>
 </div>
 
+
 <div class="contentHolder">
   <div class="container" style="padding-top: 190px;">
-    <h3>Proper Packing Tips</h3>
-    <p>Let Victor Self Storage assist you with tips on how to safety pack your belongings!</p>
-    <div class="row">
-      <div class="col-md-6" *ngFor="let store of storageTip">
+    <h3 style="line-height:2">Proper Packing Tips</h3>
+    <h5>Let Victor Self Storage assist you with tips on how to safety pack your belongings!</h5>
+    <div class="row p-4">
+      <div class="col-md-6">
         <!-- <iframe id="advanced_iframe" name="advanced_iframe" src="https://catskillselfstorage.sim.syrasoft.com/Payment" width="100%"
           height="800" scrolling="no" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;" onload=";aiResizeIframe(this, &quot;true&quot;,&quot;1&quot;);"></iframe> -->
-        <ol>{{store.data}}</ol>
-        </div>
-      <div class="col-md-6">
+        <ol style="text-align: left"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li></ol>
       </div>
+      <div class="col-md-6" id="accordion">
+          <div class="card" style="text-align: left"  *ngFor="let storage of storageTipAccordion">
+            <div class="card-header">
+              <div class="card-header-before-collapse collapsed" style="cursor: pointer;"  data-toggle="collapse" [attr.data-target]="'#'+ storage?.id" aria-expanded="true" aria-controls="collapseOne">
+                <a class="btn btn-link " >
+                  {{storage.label}}
+                  <!-- <i class="fas fa-angle-up"></i> -->
+                  <i class="fas fa-angle-up rotate-icon"></i>
+                </a>
+              </div>
+            </div>
+          
+            <div [id]="storage?.id"  aria-labelledby="headingOne" data-parent="#accordion">
+              <ul class="card-body">
+                <li *ngFor="let data of storage.data">
+                {{data.p}}
+              </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <!-- <div id="accordion">
+          <div class="card" *ngFor="let storage of storageTipAccordion">
+            <div class="card-header" [id]="storage?.label">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#' + storage?.id" aria-expanded="true" [attr.aria-controls]="storage?.id">
+                  Collapsible Group Item #1
+                </button>
+              </h5>
+            </div>
+        
+            <div [id]="storage?.id" class="collapse show" [attr.aria-labelledby]="storage?.label" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+      </div> -->
     </div>
   </div>
 </div>
