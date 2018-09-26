@@ -18,9 +18,9 @@ export class AppComponent implements OnInit {
 
   }
   ngOnInit() {
-    console.log('Init App');
+    // console.log('Init App');
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
-    this.angulatics.pageTrack('Hello');
+    // this.angulatics.pageTrack('Hello');
     const onNavigationEnd = this.router.events.pipe(filter(event => event instanceof NavigationEnd));
   }
 }
