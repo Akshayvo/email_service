@@ -4,10 +4,15 @@
 
 <div class="contentHolder">
   <div class="container" style="padding-top: 190px;">
+    <h3>Proper Packing Tips</h3>
+    <p>Let Victor Self Storage assist you with tips on how to safety pack your belongings!</p>
     <div class="row">
-      <div class="col-md-12">
-        <iframe id="advanced_iframe" name="advanced_iframe" src="https://catskillselfstorage.sim.syrasoft.com/Payment" width="100%"
-          height="800" scrolling="no" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;" onload=";aiResizeIframe(this, &quot;true&quot;,&quot;1&quot;);"></iframe>
+      <div class="col-md-6" *ngFor="let store of storageTip">
+        <!-- <iframe id="advanced_iframe" name="advanced_iframe" src="https://catskillselfstorage.sim.syrasoft.com/Payment" width="100%"
+          height="800" scrolling="no" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;" onload=";aiResizeIframe(this, &quot;true&quot;,&quot;1&quot;);"></iframe> -->
+        <ol>{{store.data}}</ol>
+        </div>
+      <div class="col-md-6">
       </div>
     </div>
   </div>

@@ -40,19 +40,24 @@
                     </a>
                   </div>
                   <div class="modal-body">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                      <div class="carousel-inner" role="listbox">
-                        <div *ngFor="let launch of launchOurTour">
-                          <div class="carousel-item active" >
+                    <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"> -->
+                      <!-- <div class="carousel-inner" role="listbox"> -->
+                        <div *ngFor="let launch of launchOurTour" >
+                          <!-- <div class="carousel-item"> -->
                             <img [src]="launch?.path" [alt]="launch?.caption"/>
                             <div style="padding: 10px">
                               <div style="font-weight: 600; font-size: 1.5em; color:#707070">{{launch.caption}}</div>
                               <h5 style="color:#707070">Description</h5>
                               <div style="font-size: 1em; color:#707070">{{launch.description}}</div>
+                              <div>
+                                <a class ='btn' (click)="prev()"><i class="fas fa-arrow-alt-circle-left"></i></a>
+                                <a class ='btn' (click)="next()"><i class="fas fa-arrow-alt-circle-right"></i></a>
+                              </div>
+                              {{count}}
                             </div>
-                          </div>
-                        </div>
-                      </div>
+                          <!-- </div> -->
+                        <!-- </div> -->
+                      <!-- </div> -->
                       <!-- <a class="carousel-control-prev" href="#carouselExampleControls" data-slide="prev">
                           <span class="carousel-control-prev-icon"></span>
                       </a>
@@ -66,7 +71,7 @@
             </div>
         </div>
           <!-- </ol> -->
-        <div class="carousel-inner slide jumbotron-top-style">
+        <div class="carousel-inner jumbotron-top-style">
             <div class="carousel-item active">
               <div class="jumbotron-top jumbotron-top-style"></div>
             </div>

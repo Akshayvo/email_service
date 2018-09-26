@@ -5,13 +5,15 @@ import { Title } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs, serviceOffered, gettingStarted, feature, launchOurTour } from '../data/home';
 
+
+let count = 1;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
 
+export class HomeComponent implements OnInit {
   contactDetails: any;
   hours: any;
   featuresHead: any;
@@ -22,14 +24,11 @@ export class HomeComponent implements OnInit {
   feature: any;
   launchOurTour:any;
   currentActive: any = 'HOME';
-
-
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private titleService: Title
   ) { }
-
   public navigate(location) {
     this.router.navigate([location]);
   }
@@ -42,7 +41,6 @@ export class HomeComponent implements OnInit {
     this.setTitle();
     this.fetchFeature();
     this.fetchLaunchOurTour();
- 
   }
 
   public setTitle() {
@@ -74,5 +72,26 @@ export class HomeComponent implements OnInit {
     this.serviceOffered = serviceOffered;
     this.gettingStarted = gettingStarted;
   }
+  
 
+  next() {
+    if( count == 19) {
+      count = 1;
+    }
+    else {
+      count = count + 1;
+    }
+    console.log(count);
+    console.log("i m next ");
+  }
+   prev() {
+    if( count == 1) {
+      count = 19;
+    }
+    else {
+      count = count - 1;
+    }
+    console.log("i m prev ");
+    console.log(count);
+  }
 }

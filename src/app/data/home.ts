@@ -79,6 +79,7 @@ export const feature = [
 
 export const launchOurTour = [
     {
+        class: 'active',
         id: '1',
         path: '../../assets/SlideShow/victor-self-storage-gate.jpg',
         caption: 'Convenient Lift Gate',
