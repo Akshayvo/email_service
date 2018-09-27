@@ -26,7 +26,6 @@
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation" style="border-color: #efefef">
-      <!-- <span class="navbar-toggler-icon"></span> -->
       <i class="fas fa-bars" style="color: #efefef"></i>
     </button>
   
@@ -36,9 +35,6 @@
 
       <ul class="navbar-nav">
         <li class="nav-item" *ngFor="let nav of navLinks">
-
-         
-
 
           <div *ngIf="nav?.type === 'link'">
             <span *ngIf="currentActive === nav?.label">
@@ -67,57 +63,6 @@
               </div>
             </span>
           </div>
-
-<!-- 
-          <div *ngIf="nav?.type === 'dropdown'">
-             
-              
-                  <a class="nav-link p-4" (click)="navigate(nav?.path)">{{nav.label}}</a>
-                  <span class="dropdown show">
-                      <a class="nav-link p-4" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>'
-                  </span>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" *ngFor="let sub of nav.sublinks"> 
-                        <a class="dropdown-item" *ngIf="currentActive === nav?.label">{{sub.sub_label}}</a>
-                      </div>
-        
-            </div>
-     -->
-
-          <!-- <ng-template #otherContent> -->
-              <!-- <div *ngIf="nav.type === 'dropdown'">
-              <span class="dropdown" >
-                <a class="dropdown-item p-4">{{nav.label}}</a>
-                  <li class="dropdown-menu" aria-labelledby="dropdownMenuLink" *ngFor="let sub for nav.socialLinks">
-                    <span *ngIf="currentActive === sub?.sub_label">
-                      <a class="nav-link nav-link-active" (click)="navigate(sub?.path)">{{sub.sub_label}}</a>
-                    </span>
-                    <span *ngIf="currentActive !== sub?.sub_label">
-                      <a class="nav-link" (click)="navigate(sub?.path)">{{sub.sub_label}}</a>
-                    </span>
-                  </li>
-              </span>
-            </div> -->
-
-          <!-- </ng-template> -->
-
-
-
-
-          <!-- <span *ngIf="nav?.type === link"; else otherContent>
-            <span *ngIf="currentActive !== nav?.label">
-              <a class="nav-link p-4" (click)="navigate(nav?.path)">{{nav.label}}</a>
-            </span>
-          </span>
-          <ng-template #otherContent>
-              <span class="dropdown" *ngIf="currentActive !== nav?.label">
-                <a class="dropdown-item p-4">{{nav.label}}</a>
-                  <li class="dropdown-menu" *ngFor="let sub for nav.socialLinks">
-                    <span *ngIf="currentActive !== sub?.sub_label">
-                      <a class="nav-link" (click)="navigate(sub?.path)">{{sub.sub_label}}</a>
-                    </span>
-                  </li>
-              </span>
-          </ng-template> -->
         </li>
       </ul>
 

@@ -26,6 +26,7 @@ export const storageTipAccordion = [
     {
         id: 0,
         label: `Furniture & Appliances`,
+        status: true,
         data : [
             {
                 p:`Rent, or purchase an appliance dolly for furniture, major appliances, and stacks of boxes.`
@@ -47,6 +48,7 @@ export const storageTipAccordion = [
     {
         id: '1',
         label: `Beds`,
+        status: false,
         data : [
             {
                 p:`Disassemble the bed frame and mark each piece so you will have an easy time putting it back together. (Use packing tape to tie rails together.)`
@@ -59,6 +61,7 @@ export const storageTipAccordion = [
     {
         id: '2',
         label: `Books`,
+        status: false,
         data : [
             {
                 p:`Never pack more than 30 pounds of books in a box.`
@@ -71,6 +74,7 @@ export const storageTipAccordion = [
     {
         id: '3',
         label: `Clothing`,
+        status: false,
         data : [
             {
                 p:`Hang clothing from closets in wardrobe boxes or plastic garment bags.`
@@ -83,6 +87,7 @@ export const storageTipAccordion = [
     {
         id: '4',
         label: `Artwork, Mirrors & Lamps`,
+        status: false,
         data : [
             {
                 p:`Wrap in bubble wrap and stack in a large box with bubble wrap or large peanuts.`
@@ -98,6 +103,7 @@ export const storageTipAccordion = [
     {
         id: '5',
         label: `Collectables`,
+        status: false,
         data : [
             {
                 p:`Wrap each fragile item separately with bubble wrap and packing tape`

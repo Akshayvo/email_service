@@ -14,18 +14,14 @@
         <ol style="text-align: left"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li></ol>
       </div>
       <div class="col-md-6" id="accordion">
-          <div class="card" style="text-align: left"  *ngFor="let storage of storageTipAccordion">
-            <div class="card-header">
-              <div class="card-header-before-collapse collapsed" style="cursor: pointer;"  data-toggle="collapse" [attr.data-target]="'#'+ storage?.id" aria-expanded="true" aria-controls="collapseOne">
-                <a class="btn btn-link " >
-                  {{storage.label}}
-                  <!-- <i class="fas fa-angle-up"></i> -->
-                  <i class="fas fa-angle-up rotate-icon"></i>
-                </a>
+         <div class="card" style="text-align: left"  *ngFor="let storage of storageTipAccordion">
+            <div class="card-header noselect">
+              <div class="card-header-before-collapse collapsed p-3" style="cursor: pointer" data-toggle="collapse" [attr.data-target]="'#collapseOne'+storage?.id" aria-expanded="true">
+                {{storage.label}}                 
               </div>
             </div>
           
-            <div [id]="storage?.id"  aria-labelledby="headingOne" data-parent="#accordion">
+            <div [id]="'collapseOne'+storage?.id"  aria-labelledby="collapseOne" data-parent="#accordion" class="collapse" [ngClass]="storage?.id == 0 && 'show'">
               <ul class="card-body">
                 <li *ngFor="let data of storage.data">
                 {{data.p}}
@@ -34,23 +30,6 @@
             </div>
           </div>
       </div>
-      <!-- <div id="accordion">
-          <div class="card" *ngFor="let storage of storageTipAccordion">
-            <div class="card-header" [id]="storage?.label">
-              <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#' + storage?.id" aria-expanded="true" [attr.aria-controls]="storage?.id">
-                  Collapsible Group Item #1
-                </button>
-              </h5>
-            </div>
-        
-            <div [id]="storage?.id" class="collapse show" [attr.aria-labelledby]="storage?.label" data-parent="#accordion">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-      </div> -->
     </div>
   </div>
 </div>
