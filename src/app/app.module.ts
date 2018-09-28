@@ -6,7 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { DemoComponent } from './demo/demo.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
@@ -25,7 +24,6 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 @NgModule({
   declarations: [
     AppComponent,
-    DemoComponent,
     HeaderComponent,
     HomeComponent,
     ContactComponent,
