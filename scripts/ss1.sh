@@ -24,11 +24,7 @@ echo "Directory Changed"
 
 sed -i 's,'"$pName"',ng-starter-pack,g' package.json
 
-cat package.json
-
 sed -i  's,'"$pName"',ng-starter-pack,g' angular.json
-
-cat angular.json
 
 
 else
