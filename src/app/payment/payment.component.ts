@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { payRent } from '../data/frameAddress';
+
 
 @Component({
   selector: 'app-payment',
@@ -10,6 +12,8 @@ export class PaymentComponent implements OnInit {
 
   breadcrumbActive: any = 'Pay Rent';
   currentActive: any = 'PAY RENT';
+  urlAdd: any;
+
 
   constructor(
     private titleService: Title,
@@ -23,6 +27,10 @@ export class PaymentComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.fetchUrl();
   }
 
+  public fetchUrl() {
+    this.urlAdd = payRent;
+  }
 }

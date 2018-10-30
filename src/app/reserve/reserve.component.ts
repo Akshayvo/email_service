@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { reserveAdd } from '../data/frameAddress';
 
 @Component({
   selector: 'app-reserve',
@@ -10,6 +11,7 @@ export class ReserveComponent implements OnInit {
 
   breadcrumbActive: any = 'Reserve Unit';
   currentActive: any = 'RESERVE';
+  urlAdd: any;
 
   constructor(
     private titleService: Title,
@@ -23,6 +25,11 @@ export class ReserveComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.fetchUrl();
+  }
+
+  public fetchUrl() {
+    this.urlAdd = reserveAdd;
   }
 
 }

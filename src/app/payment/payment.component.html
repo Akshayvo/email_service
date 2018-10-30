@@ -3,15 +3,6 @@
   <app-breadcrumb [breadcrumbActive]="breadcrumbActive"></app-breadcrumb>
 </div>
 
-<div class="contentHolder">
-  <div class="container" style="padding-top: 190px;">
-    <div class="row">
-      <div class="col-md-12">
-        <iframe id="advanced_iframe" name="advanced_iframe" src="https://catskillselfstorage.sim.syrasoft.com/Payment" width="100%"
-          height="800" scrolling="no" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;" onload=";aiResizeIframe(this, 'true','1');"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
+<app-iframe [urlAdd]="urlAdd" ></app-iframe>  
 
 <app-footer></app-footer>

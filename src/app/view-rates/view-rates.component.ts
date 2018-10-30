@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { viewRates } from '../data/frameAddress';
+
 
 @Component({
   selector: 'app-view-rates',
@@ -10,6 +12,7 @@ export class ViewRatesComponent implements OnInit {
 
   breadcrumbActive: any = 'View Rates';
   currentActive: any = 'VIEW RATES';
+  urlAdd: any;
 
   constructor(
     private titleService: Title,
@@ -24,6 +27,11 @@ export class ViewRatesComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.fetchUrl();
+
   }
 
+  public fetchUrl() {
+    this.urlAdd = viewRates;
+  }
 }

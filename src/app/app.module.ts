@@ -17,6 +17,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { TablesComponent } from './tables/tables.component';
 import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
+import { IframeComponent } from './iframe/iframe.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ErrorComponent } from './error/error.component';
     BreadcrumbComponent,
     TablesComponent,
     AboutComponent,
-    ErrorComponent
+    ErrorComponent,
+    IframeComponent
   ],
   imports: [
     BrowserModule,
