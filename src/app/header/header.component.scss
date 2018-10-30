@@ -45,6 +45,7 @@ a {
 
 .nav-link-active {
     color: $primary !important;
+    border-bottom: 5px solid $primary;
 }
 
 .display {

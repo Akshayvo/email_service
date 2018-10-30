@@ -57,3 +57,22 @@ export const serviceOffered = [
 export const gettingStarted = `Getting started with Catskill Self Storage is a quick and easy process.
                                 Simply click the button below and create your reservation through our tenant portal or reach
                                 out to us at 518-943-3003 to receive prompt and friendly customer service!`;
+
+export const feature = [
+    {   
+        path: '../../assets/images/jumbotorn-bottom-images/safe.png',
+        label: 'SAFE & SECURE'
+    },
+    {
+        path: '../../assets/images/jumbotorn-bottom-images/easy.png',
+        label: 'EASY & CONVENIENT'
+    },
+    {
+        path: '../../assets/images/jumbotorn-bottom-images/enviro.png',
+        label: 'AIR, WATER, FIRE & PEST PROTECTION'
+    },
+    {
+        path: '../../assets/images/jumbotorn-bottom-images/value.png',
+        label: 'SELECTION & VALUE'
+    },
+];
