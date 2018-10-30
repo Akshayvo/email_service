@@ -39,6 +39,8 @@ then
 
 	 sed -i  's,storage-space-template,ng-starter-pack,g' package-lock.json
 
+	 ng serve --port 3200 --open
+
     else
 	echo "Login Fail"
     fi
