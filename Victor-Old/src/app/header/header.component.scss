@@ -1,0 +1,55 @@
+@import '../../styles.scss';
+
+a {
+    cursor: pointer;
+}
+
+.navbar {
+    min-height: 80px !important;
+}
+
+
+.nav-link {
+    color: $white !important;
+    font-weight: 600;
+    transition-duration: 500ms;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: $light !important;
+    transition-duration: 500ms;
+}
+
+.nav-link-active {
+    border-bottom: 4px $light solid;
+}
+
+.display {
+    display: block;
+}
+
+.navbar-toggle {
+    margin-top: 30px;
+    padding: 30px 10px !important;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-nav {
+        li { 
+            a {
+            /* (80px - line-height of 27px) / 2 = 26.5px */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            line-height: 1.5rem;;
+            text-align: center !important;
+            }
+        }
+    } 
+  }
+
+@media screen and (max-width: 900px) {
+    .display {
+        display: none;
+    }
+}

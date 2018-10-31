@@ -1,0 +1,33 @@
+<div id="unit-sizer-container">
+  <div class="container">
+    <h2 class="text-center">Selecting the Right Storage Unit</h2>
+    <div class="container py-3">
+      <p class="text-center">Victor Self Storage has a wide variety of units at its village location, from regular 5' x 10' units to 10' x 20' climate controlled, we have your self storage needs covered! Our stellar service and immaculately maintained facilities will make your storage experience a pleasant, and convenient one. </p>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 single-block p-1" *ngFor="let unit of unitSizer">
+            <div class="row">
+              
+              <div class="col-5 pl-4 py-3 pr-0">
+                <img [src]="unit?.img" height="200px" width="100%" alt="">
+              </div>
+              
+  
+              <div class="col-7">
+                <h3 class="pt-2"> {{unit.size}} </h3>
+                <p class="pr-2" > {{unit.data}} </p>
+                <ul>
+                  <li *ngFor="let amenity of unit?.amenities"> {{amenity.content}} </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>    
+  </div>
+</div>
+

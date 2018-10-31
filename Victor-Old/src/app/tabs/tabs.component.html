@@ -1,0 +1,7 @@
+<p class="row text-center mx-0 w-100" id="tab">
+  <span *ngFor="let tab of tabData" class="py-3">
+    <a [routerLink]="tab?.path" class="px-1">{{tab.name}}</a>
+  </span>
+</p>
+
+  <router-outlet></router-outlet>

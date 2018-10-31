@@ -1,0 +1,15 @@
+@import '../../styles.scss';
+
+
+#unit-sizer-container {
+    margin-top: 0px;
+    padding-top: 50px;
+    background-color: $light;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+
+    .single-block {
+        background-color: $white;
+        border: 1px solid $border;
+    }
+}

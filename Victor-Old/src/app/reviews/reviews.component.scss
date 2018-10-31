@@ -1,0 +1,12 @@
+@import '../../styles.scss';
+
+#review-holder {
+    padding-top: 50px;
+    background-color: $light; 
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    .review-data {
+        border: 1px solid $border;
+        background-color: $white;
+    }
+}
