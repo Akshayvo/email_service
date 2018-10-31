@@ -21,6 +21,7 @@ import { ErrorComponent } from './error/error.component';
 
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
+import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
     BreadcrumbComponent,
     TablesComponent,
     AboutComponent,
-    ErrorComponent
+    ErrorComponent,
+    StorageTipsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -17,10 +17,10 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Affordable storage units and climate controlled units near Catskill,
-       N.Y. Catskill Self Storage has your self storage and U-Haul rental needs covered!`
+      content: `Our units range from closet sized 5’x5’ units to 10’x20’ multi-bedroom home sized units. We strive to provide the highest level of service at the best prices!
+                Take a moment to look at our unit prices to see which is right for you then make your free reservation right online!`
     });
-    this.titleService.setTitle('Storage Unit Prices Near Catskill , NY | 12414 - Catskill Self Storage');
+    this.titleService.setTitle('Affordable Self Storage Near Catskill, NY, 12414 | Catskill Self Storage');
   }
 
   ngOnInit() {
