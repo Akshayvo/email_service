@@ -1,13 +1,10 @@
 @import '../../styles.scss';
-
 a {
     cursor: pointer;
 }
-
 .iconColor {
     color: $primary !important;
 }
-
 .contact-header{
   display: inline;
   .contact-details{
@@ -17,7 +14,6 @@ a {
     width: 100%;
   }
 }
-
 .social {
     text-align: right !important;
     a {
@@ -25,38 +21,34 @@ a {
         text-decoration: none;
     }
 }
-
 .social :hover {
     color: $primary;
     transition-duration: 500ms;
 }
-
 .nav-link {
     color: $white !important;
     font-weight: 600;
     transition-duration: 500ms;
 }
-
 .nav-link:hover {
     color: $primary !important;
     // background: $primary;
     transition-duration: 500ms;
 }
-
 .nav-link-active {
     color: $primary !important;
     border-bottom: 5px solid $primary;
 }
-
 .display {
     display: block;
 }
-
+.navbar {
+    padding: 0px;
+}
 @media screen and (max-width: 900px) {
     .display {
         display: none;
     }
-
     .nav-link {
         text-align: center;
     }

@@ -61,18 +61,18 @@ export const gettingStarted = `Getting started with Catskill Self Storage is a q
 export const feature = [
     {   
         path: '../../assets/images/jumbotorn-bottom-images/safe.png',
-        label: 'SAFE & SECURE'
+        label: 'Safe & Secure'
     },
     {
         path: '../../assets/images/jumbotorn-bottom-images/easy.png',
-        label: 'EASY & CONVENIENT'
+        label: 'Temperature Controlled Units Available'
     },
     {
         path: '../../assets/images/jumbotorn-bottom-images/enviro.png',
-        label: 'AIR, WATER, FIRE & PEST PROTECTION'
+        label: 'Convenient Location'
     },
     {
         path: '../../assets/images/jumbotorn-bottom-images/value.png',
-        label: 'SELECTION & VALUE'
+        label: 'Easy Online Access'
     },
 ];
