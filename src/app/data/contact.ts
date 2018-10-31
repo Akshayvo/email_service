@@ -30,7 +30,7 @@ export const hours = [
         data: '8:00 am - 12:00 pm'
     },
     {
-        label: 'Facility Access With Pin Code: ',
+        label: 'Access Hours ',
         data: '24 hours a day, 7 days a week'
     }
 ];

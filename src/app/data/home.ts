@@ -25,16 +25,19 @@ export const featuresList = [
 
 export const aboutUs = [
     {
-        p: `Catskill Self Storage is a customer service driven self storage facility conveniently located at the crossroads of Rt 47
-            and 23 less than 4 miles from idyllic downtown Catskill, N.Y.`,
+        p: `Catskill Self Storage has been proudly serving the Catskill, Leeds, Cairo and surrounding communities since 2004 with stellar customer service,
+            and a wide range of clean, well maintained self storage units.`,
     },
     {
-        p: `Opened in 2003, Catskill Self Storage is proud to provide quality, affordable storage to the communities of Cairo,
-            South Cairo, Leeds and Catskill.`,
+        p: `We strive to have all of your self storage needs covered, whether you just need a little extra space during a move, or are looking for long term
+            storage we have the unit you need!`,
     },
     {
-        p: `We strive to provide the highest level of customer service at the most competitive prices.
-            Give us a shout today and let Catskill Self Storage handle all of your self storage needs!`,
+        p: `Are you in need of convenient, affordable truck rentals? We have a large selection of U-Haul trucks ready and waiting to make your moving experience faster and easier!`,
+    },
+    {
+        p: `Catskill Self Storage takes customer service seriously, if you have any questions or concerns about renting a unit or truck with us be sure to call our friendly, 
+            knowledgeable staff and let us make your storage experience a hassle-free one!`,
     },
 ];
 
@@ -54,9 +57,8 @@ export const serviceOffered = [
 
 ];
 
-export const gettingStarted = `Getting started with Catskill Self Storage is a quick and easy process.
-                                Simply click the button below and create your reservation through our tenant portal or reach
-                                out to us at 518-943-3003 to receive prompt and friendly customer service!`;
+export const gettingStarted = `Are you ready to move in today or just looking to make a reservation? Our friendly staff will be happy to 
+                               answer any questions you might have and set up your reservation today! Or you can simply click below and reserve your unit online for free!`;
 
 export const feature = [
     {   

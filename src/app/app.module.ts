@@ -15,11 +15,12 @@ import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { PaymentComponent } from './payment/payment.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { TablesComponent } from './tables/tables.component';
-import { AboutComponent } from './about/about.component';
+//import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
 
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
+import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +34,9 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
     PaymentComponent,
     BreadcrumbComponent,
     TablesComponent,
-    AboutComponent,
-    ErrorComponent
+    //AboutComponent,
+    ErrorComponent,
+    StorageTipsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -13,7 +13,7 @@ import { EmailService } from '../services/email.service';
 export class ContactComponent implements OnInit {
 
   breadcrumbActive: any = 'Contact Us';
-  currentActive: any = 'CONTACT';
+  currentActive: any = 'CONTACT US';
   contactDetails: any;
   hours: any;
   name: any;
@@ -32,9 +32,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Have a question or concern about self storage units, climate controlled storage units or U-Haul rentals?`
+      content: `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
+                and U-Haul truck rental questions! Simply call, email, or fill out the contact form and someone will be in touch shortly!`
     });
-    this.titleService.setTitle('Contact Catskill Self Storage');
+    this.titleService.setTitle('Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414');
   }
 
   ngOnInit() {
