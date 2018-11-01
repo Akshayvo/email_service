@@ -1,1 +1,6 @@
 @import '../../styles.scss';
+
+.vertical-line {
+    border-right: 1px solid black;
+    position: right;
+}
