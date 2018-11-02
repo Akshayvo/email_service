@@ -1,0 +1,119 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-size: .9rem;
+    line-height: 1.5rem;
+}
+//Basic color and font styles
+$primary: #2a856c;
+$primaryDark: #1e5e49;
+
+// $primary: #FF9800;
+// $primaryDark: #EF6C00;
+$secondary: #333333;
+
+$dark: #6d6d6d;
+$light: #f1f0ed;
+$white: #ffffff;
+
+$border: #bab3a3;
+$shadow: #000000;
+
+$fontColor: #707070;
+// $primaryFont: 'Roboto';
+$primaryFont: 'Lato', sans-serif;   
+
+* {
+    // font: $primaryFont;
+    font-family: $primaryFont;
+}
+
+.justify {
+    text-align: justify;
+}
+
+// Different Background colors
+.bg-primary {
+    background: $primary !important;
+}
+
+.bg-secondary {
+    background: $secondary !important;
+}
+
+.bg-dark {
+    background: $dark !important;
+}
+
+.bg-light {
+    background: $light !important;
+}
+
+.bg-translucent{
+    background: rgba(0, 0, 0, 0.6);
+    width: auto !important;
+}
+
+
+// Content Holder Styles
+.contentHolder {
+    min-height: 94vh;
+}
+
+.btn-primary{
+    background-color: $primary !important;
+    border: 1px solid $primary !important; 
+    color: $white !important;
+    min-width: 120px;
+    border-radius: 3px;
+    text-transform: none;
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    background-color: $primaryDark;
+    border-color: $primaryDark;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    border: 1px solid $primary !important;
+    color: $primary !important;
+    min-width: 120px;
+    border-radius: 3px;
+    text-transform: none;
+    box-shadow: none;
+}
+
+.btn-outline-primary:hover {
+    background-color: $primaryDark !important;
+    border-color: $primaryDark !important;
+    color: $white !important;
+}
+
+.section-headings{
+  font-weight: 200;
+}
+
+.contact-map{
+  width: 100%;
+}
+
+.heading {
+    font-weight: 400;
+}
+
+.sectionImage{
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 1.9rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}

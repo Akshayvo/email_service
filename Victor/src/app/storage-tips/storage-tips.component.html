@@ -1,0 +1,29 @@
+<div class="fixed-top">
+    <app-header [currentActive]="currentActive" [ngClass]="currentActive"></app-header>
+</div>
+
+<div id="storage-tip-holder">
+  <div class="container">
+    <div class="heading">
+      <h1 class="text-center pt-4">Storage Tips</h1>
+      <h2 class="text-center py-4">What you need to know before renting a unit</h2>
+    </div>
+
+
+    <div class="storage-content mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li *ngFor="let point of storagePoints" class="py-1"> {{point.data}} </li>
+          </ul>
+        </div>
+        
+        <div class="col-md-6">
+          <app-accordion [accordianData]='storageTips' ></app-accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

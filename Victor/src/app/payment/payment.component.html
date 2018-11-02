@@ -1,0 +1,18 @@
+<div class="fixed-top">
+  <app-header [currentActive]="currentActive"></app-header>
+  <app-breadcrumb [breadcrumbActive]="breadcrumbActive"></app-breadcrumb>
+</div>
+
+<div id="rent-holder">
+  <div class="container">
+    <div class="rent-heading">
+      <h1 class="text-center py-3">Pay Rent Online</h1>
+      <h2 class="text-center py-3">Select your location to access your account</h2>
+    </div>
+        <div  class="container pt-5">
+          <app-tabs [tabs]='tabs' [name]='name' style="background-color: #f1f0ed;"></app-tabs>
+        </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

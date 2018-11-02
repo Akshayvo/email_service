@@ -1,0 +1,11 @@
+@import '../../styles.scss';
+
+.contentHolder {
+    padding-top: 150px;
+    .contact-data {
+        background-color: $light;
+        .btn {
+            padding: 5px 120px;
+        }
+    }
+}

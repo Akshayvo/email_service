@@ -1,0 +1,16 @@
+@import '../../styles.scss';
+
+#rent-sub-holder {
+    
+    padding: 50px;
+    background-color: $light;
+    margin-bottom: 50px;
+    .rent-example {
+        border-left: 1px $border solid;
+        padding-left: 10%;
+        p {
+            padding: 0px;
+            margin: 0px;
+         }
+    }
+ }
