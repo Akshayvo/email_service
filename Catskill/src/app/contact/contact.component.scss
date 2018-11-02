@@ -2,9 +2,25 @@
 
 .btn-outline-primary {
     color: $primary!important;
-    margin-left: 10px;
 }
 
 .btn-outline-primary:hover {
     color: $white!important;
+}
+
+.btn-primary {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .padding-none {
+        padding: 0px!important;
+        background: $white!important;
+    }
+    h1 {
+        display:none!important;
+    }
+    .margin-bottom {
+        margin-bottom: 10px;
+    }
 }

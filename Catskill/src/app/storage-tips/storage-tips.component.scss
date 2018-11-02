@@ -58,7 +58,8 @@
 .card-header {
     padding: 0px;
     background-color: $dark!important;
-    color: $primary!important;
+    //color: $primary!important;
+    color:$white!important;
     border-radius:0px!important;
 }
 .card-body {
@@ -66,7 +67,7 @@
     font-size: 0.9em;
     font-weight: 600;
     color: $fontColor;
-    background-color: #f1ede3;
+    background-color: $white;
     margin: auto;
 }
 
@@ -103,4 +104,19 @@
 
 .accordion-background {
     height: 600px;
+}
+
+@media screen and (max-width: 900px) {
+    .accordion-background {
+        height: auto!important;
+    }
+    h1 {
+        display: none;
+    }
+    .bg-light {
+        background: white!important;
+    }
+    .card-body {
+        background: #efefef!important;
+    }
 }

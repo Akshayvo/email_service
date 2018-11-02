@@ -1,1 +1,11 @@
 @import '../../styles.scss';
+
+.text-align {
+    text-align: center; 
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        display: none;
+    }
+}

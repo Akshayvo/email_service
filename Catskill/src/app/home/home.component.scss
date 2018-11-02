@@ -35,7 +35,8 @@
 
 .disp {
   //display: block;
-  text-align: right;
+  //text-align: right;
+  text-align: left;
   color: $white;
   a{
     color: $white;
@@ -50,23 +51,42 @@
   height: 20vh;
 }
 
+// .skew-style{
+//   width: 35%;
+//   float: right;
+//   right: -120px;
+//   position: relative;
+//   transform: skew(-15deg);
+//   height: 68vh;
+//   margin-top: 53px;
+// }
+
+// .skew-text {
+//   transform: skew(15deg);
+//   width: 68%;
+//   position: absolute;
+//   top: 175px;
+//   right: 155px;
+// }
+
 .skew-style{
   width: 35%;
-  float: right;
-  right: -120px;
+  float: left;
+  left: -120px;
   position: relative;
-  transform: skew(-15deg);
+  transform: skew(15deg);
   height: 68vh;
   margin-top: 53px;
 }
 
 .skew-text {
-  transform: skew(15deg);
+  transform: skew(-15deg);
   width: 68%;
   position: absolute;
   top: 175px;
-  right: 155px;
+  left: 155px;
 }
+
 .display {
   display: inline;
 }
@@ -97,6 +117,7 @@
     // text-align: center !important;
     background-attachment: unset !important;
     background-position: center top !important;
+    height: 100vh!important;
     h1 {
       font-size: 3em !important;
     }
@@ -110,6 +131,10 @@
     background-attachment: unset !important;
     background-position: center top !important;
   }
+
+  .skew-style {
+    //display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -118,6 +143,7 @@
     text-align: center !important;
     background-attachment: unset !important;
     background-position: center left !important;
+    height: 100vh!important;
     h1 {
       font-size: 2em !important;
     }
@@ -133,6 +159,9 @@
   }
 
   .disp {
+    display: none;
+  }
+  .feature {
     display: none;
   }
 }
