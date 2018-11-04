@@ -126,5 +126,11 @@ export class ContactComponent implements OnInit {
       }
     }
   }
+  public formClear() {   
+      this.name= ''
+      this.email= ''
+      this.message= ''
+      this.subject= ''
+  }
 
 }

@@ -16,6 +16,7 @@
   a{
     margin-top: 20px;
   }
+  position: relative;
 }
 
 .content-align{
@@ -69,17 +70,16 @@
 //   right: 155px;
 // }
 
-.skew-style{
+.jumbotorn-skew-style{
   width: 35%;
   float: left;
   left: -120px;
   position: relative;
   transform: skew(15deg);
-  height: 68vh;
-  margin-top: 53px;
+  height: 80vh;
 }
 
-.skew-text {
+.jumbotorn-skew-text {
   transform: skew(-15deg);
   width: 68%;
   position: absolute;
@@ -88,12 +88,14 @@
 }
 
 .display {
-  display: inline;
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1024px) {
   .jumbotron{
-    padding-top: 64vh;
+    //padding-top: 64vh;
     background-attachment: unset !important;
     background-position: center top !important;
     h1 {
@@ -108,6 +110,26 @@
   .getStarted{
     background-attachment: unset !important;
     background-position: center top !important;
+  }
+
+  .feature {
+    margin-top: 5%;
+  }
+  .jumbotorn-skew-style {
+    width: 50%;
+    float: left;
+    left: -128px;
+    position: relative;
+    -webkit-transform: skew(15deg);
+    transform: skew(15deg);
+    height: 80vh;
+  }
+  .jumbotorn-skew-text {
+    width: 70%;
+    position: absolute;
+    top: 290px;
+    left: 160px;
+    
   }
 }
 
@@ -132,8 +154,35 @@
     background-position: center top !important;
   }
 
-  .skew-style {
-    //display: none;
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .jumbotorn-skew-style{
+    width:100%;
+    float: none;  
+    left: 0px;
+    position: absolute;
+    bottom: 0px;
+    transform: skew(0deg);
+    height: 160px;
+  }
+  
+  .jumbotorn-skew-text {
+    transform: skew(0deg);
+    width: auto;  
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+  }
+  .button-width{
+    width: 200px;
+    margin: auto;
   }
 }
 
@@ -158,10 +207,35 @@
     background-position: center top !important;
   }
 
+  .feature {
+    display: none;
+  }
+
   .disp {
     display: none;
   }
-  .feature {
-    display: none;
+
+  .button-width{
+    width: 200px;
+    margin: auto;
+  }
+
+  .jumbotorn-skew-style{
+    width:100%;
+    float: none;  
+    left: 0px;
+    position: absolute;
+    bottom: 0px;
+    transform: skew(0deg);
+    height: 160px;
+  }
+  
+  .jumbotorn-skew-text {
+    transform: skew(0deg);
+    width: auto;  
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: auto;
   }
 }
