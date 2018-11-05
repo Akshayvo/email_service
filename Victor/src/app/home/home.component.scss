@@ -1,6 +1,11 @@
 @import '../../styles.scss';
 
-
+.jumbotron {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
 #myCarousel {
   .carousel-indicators {
     li {
@@ -116,6 +121,10 @@
     }
         .carousel-item {
           max-width: 100%;
+          .active  {
+            background-position: center center;
+
+          }
           p {
             text-align: center; 
             font-size: 1rem;
@@ -141,16 +150,19 @@
   #myCarousel{
     .carousel-item {
       min-height: 50vh;
-      width: 100%;
+      background-size: cover;
+      background-position: center center; 
+      background-position-x: center;
+      background-position-y: center;
+      image-rendering: inherit; 
       img {
-        min-height: 50vh;
-        width: auto;
+      min-height: 50vh;
+      width: auto;
+      block-size: 100%;
+      position: relative;
       }
     }
   }
-  
-  
-  
 }
 
 @media screen and (max-width: 600px) {
@@ -174,5 +186,21 @@
       padding-bottom: 10px !important;
       font-size: 1.2rem;
     }
-
+    #myCarousel{
+      .carousel-item {
+        min-height: 40vh;
+        width: 200%;
+        background-size: cover;
+        background-position: center center; 
+        background-position-x: center;
+        background-position-y: center;
+        image-rendering: inherit; 
+        img {
+        min-height: 40vh;
+        width: auto;
+        block-size: 100%;
+        position: relative;
+        }
+      }
+    }
 }

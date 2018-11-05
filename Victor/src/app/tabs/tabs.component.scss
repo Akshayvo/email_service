@@ -19,34 +19,24 @@
         background-color: $light;
     }
 }
-.grid {
-    display: grid;
-    // grid-template-columns: repeat(5, 20vw);
-    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
-  }
+@media only screen and (min-width: 770px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(90px, 1fr) );
+      }
+    }
 
-// @media only screen and (max-width: 600px) {} 
 
-// /* Small devices (portrait tablets and large phones, 600px and up) */
-// @media only screen and (min-width: 600px) {} 
-
-// /* Medium devices (landscape tablets, 768px and up) */
-// @media only screen and (min-width: 768px) {
-//     span {
-//         min-width: calc(18% - 25.9px);
-//     }
-// } 
-
-// /* Large devices (laptops/desktops, 992px and up) */
-// @media only screen and (min-width: 992px) {
-//     span {
-//         min-width: calc(17% - 25.5px);
-//     }
-// } 
-
-// /* Extra large devices (large laptops and desktops, 1200px and up) */
-// @media only screen and (min-width: 1200px) {
-//     span {
-//         min-width: calc(16% - 19.1px);
-//     }
-// }
+@media only screen and (max-width: 770px) {
+    // #tabs .grid{
+    // overflow: auto;
+    // overflow-x: auto;
+    // overflow-y: hidden;
+    // -ms-overflow-style: -ms-autohiding-scrollbar;
+    // -webkit-overflow-scrolling: touch;
+    // white-space: nowrap;
+    // &::-webkit-scrollbar {
+    //     display: none;
+    // }
+    // }
+} 
