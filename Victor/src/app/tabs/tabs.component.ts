@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { RouterLink, ActivatedRoute, Router, NavigationExtras } from '@angular/router';
+import { RouterLink, ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -12,6 +12,7 @@ export class TabsComponent implements OnInit {
   @Input('tabs') tabs;
   @Input('name') name;
   placeName: any;
+  selectedTab: any;
 
   constructor( 
     private route: ActivatedRoute,
@@ -20,8 +21,7 @@ export class TabsComponent implements OnInit {
   ngOnInit() {
     this.fetchTabs();
     this.fetchPlace();
-    console.log(this.placeName);
-  }
+    }
 
   public fetchPlace() {
     this.placeName = this.name;
@@ -29,6 +29,11 @@ export class TabsComponent implements OnInit {
 
   public fetchTabs() {
     this.tabData = this.tabs;
+    this.selectedTab = this.tabData[0].path;
+
   }
+  public listClick(event, newValue) {
+    this.selectedTab = newValue; 
+}
 
 }

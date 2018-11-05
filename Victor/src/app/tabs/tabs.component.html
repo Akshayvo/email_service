@@ -1,7 +1,10 @@
-<p class="row text-center mx-0 w-100" id="tab">
-  <span *ngFor="let tab of tabData" class="py-3">
-    <a [routerLink]="tab?.path" [queryParams]="{ name:placeName }" class="px-1">{{tab.name}}</a>
-  </span>
-</p>
+    <div class="grid text-center mx-0" id="tab">
+      <span *ngFor="let tab of tabData" class="py-3 grid-item" [ngClass]="{'active-tab': selectedTab == tab?.path}">
+        <a [routerLink]="tab?.path" [queryParams]="{ name:placeName, id:tab?.id }"  (click)="listClick($event, tab?.path)" [id]="tab?.id" class="px-1">{{tab.name}}</a>
+      </span>
+    </div>
+
+
+
 
   <router-outlet></router-outlet>

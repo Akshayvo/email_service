@@ -18,7 +18,7 @@
   <div class="carousel-inner" role="listbox">
     <!--First slide-->
     <div class="carousel-item active">
-      <img class="d-block w-100" src="../../assets/images/HomeSlider/victor-self-storage-slider-1.jpg" alt="First slide">
+      <img class="d-block w-100" src="../../assets/images/HomeSlider/victor-self-storage-slider-1.jpg" style="background: url(../../assets/images/HomeSlider/victor-self-storage-slider-1.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; " alt="First slide">
     </div>
     <!--/First slide-->
     <!--Second slide-->
@@ -73,8 +73,8 @@
               <b>{{contact.label}}</b> {{contact.data}}<br>
             </span>
           </p>
-           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/village/storageUnits']" role="button">View Rates</a>            
-           <a class="btn btn-primary p-2" [routerLink]="['/location/village/reserveUnit']" role="button">Reserve Unit</a>                     
+           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['location/village/storageUnits']" [queryParams]="{ name:'village' }" role="button">View Rates</a>            
+           <a class="btn btn-primary p-2" [routerLink]="['location/village/reserveUnit']" [queryParams]="{ name:'village' }" role="button">Reserve Unit</a>                     
         </div>
         <div class="col-md-3 contact-hours pt-3">
             <h2>Hours:</h2>
@@ -108,8 +108,8 @@
                 <b>{{contact.label}}</b> {{contact.data}}<br>
               </span>
             </p>
-            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/village/storageUnits']" role="button">View Rates</a>                
-            <a class="btn btn-primary p-2" [routerLink]="['/location/mall/reserveUnit']" role="button"> Reserve Unit</a>                                  
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/village/storageUnits']" [queryParams]="{ name:'mall' }" role="button">View Rates</a>                
+            <a class="btn btn-primary p-2" [routerLink]="['/location/mall/reserveUnit']" [queryParams]="{ name:'mall' }" role="button"> Reserve Unit</a>                                  
           </div>
           <div class="col-md-3 contact-hours pt-3">
               <h2>Hours:</h2>

@@ -5,7 +5,10 @@
     background-color: $light;
     padding-top: 50px;
     margin-bottom: 50px;
-
+    padding-bottom: 50px;
+    h2 {
+        text-transform: capitalize;
+    }
     p {
         padding: 0px;
         font-size: 1rem;

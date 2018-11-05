@@ -20,6 +20,7 @@ export class LocationComponent implements OnInit, OnDestroy {
   head: any;
   tabs: any;
   ads: any;
+  currentActive: any;
 
   constructor( private route: ActivatedRoute, private router: Router,
     public sanitizer: DomSanitizer) { }
@@ -36,10 +37,12 @@ export class LocationComponent implements OnInit, OnDestroy {
 
   public fetchDetails(name) {
     if ( this.name == 'village' ) {
+      this.currentActive = 'Village Location';
       this.contacts = contactsVillage;      
       this.hours = hoursVillage;
       this.iframeAdd = iframeMapVillage;      
     } else {
+      this.currentActive = 'Mall Location';
       this.contacts = contactsMall;
       this.hours = hoursMall;
       this.iframeAdd = iframeMapMall;

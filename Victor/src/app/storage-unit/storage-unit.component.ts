@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -6,9 +6,10 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './storage-unit.component.html',
   styleUrls: ['./storage-unit.component.scss']
 })
-export class StorageUnitComponent implements OnInit {
+export class StorageUnitComponent implements OnInit, OnDestroy {
   name: any;
   private sub: any;
+  currentActiveTab: any = 'Storage Units';
 
   constructor(private route: ActivatedRoute) { }
 

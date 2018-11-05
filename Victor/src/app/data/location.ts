@@ -226,7 +226,78 @@ export const aboutUsVillage = [
     },
 ];
 
+export const aboutUsMall = [
+    {
+        p: 'Victor Self Storage is excited to open its second location, right by Eastview Mall! We continue the same tradition of high quality self storage, and stellar customer service! Our indoor RV parking is the perfect way to protect your recreational vehicle from damage in the brutal Western New York winters!',
+    },
+    {
+        p: 'RV customers of Victor Self Storage can utilize our sewage drain, top off their water supply, or even use our 3 amp trickle charger, at no additional cost! We also offer over a hundred parking spaces for cars, boards, and trucks!',
+    },
+    {
+        p: 'We take the safety of your belongings seriously. Our 24/7 video surveillance monitors the property, while individual door alarms protect your units from tampering. Our managers perform regular lot checks to ensure your units remain undisturbed.',
+    },
+    {
+        p: 'Our temperature controlled units are the perfect solution to storing belongings in Western New York, and are backed by second to none customer service! We are positive that you will be absolutely satisfied with your self storage, and customer service experience! Reserve your unit, or parking spot today!',
+    },
+];
+
+
 export const directionVillage = [
+    {
+        label: 'Coming from Route 332',
+        datas: [
+        { content: 'If driving north on NY-332 turn left on Route 96 3.0 mi'},
+        { content: 'If driving south on NY-332 turn right on Route 96 3.0 mi' },
+        { content: 'Drive west on NY-96' },
+        { content: 'Turn left onto School St 0.4 mi' },
+        { content: 'Victor Self Storage - Village will be on the right' },
+        ],
+    },
+    {
+        label: 'Coming from the NYS Thruway',
+        datas: [
+        { content: 'Head east on I-90 E - 0.5 mi'},
+        { content: 'Take exit 45 for I-490 toward Rochester/Victor - 0.6 mi' },
+        { content: 'Continue onto I-490 W - 0.2 mi' },
+        { content: 'Take exit 29 for NY-96 toward Victor - 0.4 mi' },
+        { content: 'Turn left onto NY-96 S - 3.1 mi' },
+        { content: 'Turn right onto School St' },
+        { content: 'Victor Self Storage - Village will be on the right' },
+        ],
+    },
+] ;
+
+export const directionMall = [
+    {
+        label: 'Directions from NYS Thruway',
+        datas: [
+        { content: 'Head northwest on I-90 W - 0.1 mi'},
+        { content: 'Use the right 2 lanes to take exit 45 for I-490 toward Rochester - 0.3 mi' },
+        { content: 'Continue onto I-490 W - 0.2 mi' },
+        { content: 'Take exit 29 for NY-96 toward Victor - 0.4 mi' },
+        { content: 'Turn right onto NY-96 N - 1.3 mi ' },
+        { content: 'Turn left onto Commons Blvd - 318 ft' },
+        { content: 'Turn right - 92 ft' },
+        { content: 'Continue straight - 0.6 mi' },
+        { content: 'Turn right' },
+        { content: 'Victor Self Storage - Mall will be on the right' },
+        
+        ],
+    },
+    {
+        label: 'Directions when driving south on I-490',
+        datas: [
+        { content: 'Take exit 28 for NY-96 - 0.2 mi'},
+        { content: 'Use any lane to turn left onto NY-96 S - 1.0 mi' },
+        { content: 'UTurn right onto Commons Blvd - 295 ft' },
+        { content: 'Turn right - 92 ft' },
+        { content: 'Continue straight 0.6 mi' },
+        { content: 'Victor Self Storage - Mall will be on the right' }
+        ],
+    },
+] ;
+
+export const direction = [
     {
         label: 'Driving directions to Victor Self Storage coming from Route 84 exit 5',
         datas: [
@@ -252,6 +323,7 @@ export const directionVillage = [
         ],
     }
 ] ;
+
 
 export const reviewVillage = [
     {

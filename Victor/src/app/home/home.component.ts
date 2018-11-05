@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   hoursMall: any;
   features: any;
   serviceOffered: any;
-  currentActive: any = 'HOME';
+  currentActive: any = 'Home';
   carousel: any;
    
   constructor(

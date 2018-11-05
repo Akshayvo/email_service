@@ -11,7 +11,7 @@
       <div class="contact-data p-5">
         <div class="row">
           <div class="col-md-8">
-            <form>
+            <form novalidate [formGroup]="form">
                 <div [hidden]="valid" class="alert alert-danger">
                     Please fill out all the required fields!
                  </div>
@@ -27,6 +27,7 @@
                                   name="name" 
                                   (keyup)="validate('notNull', name, 'Name', 'nameHelp')" 
                                   class="form-control" 
+                                  formControlName="Name"
                                   id="Name" 
                                   placeholder="Enter Name*"
                                   [(ngModel)]="name" 
@@ -46,6 +47,7 @@
                                   (keyup)="validate('tel', 'tel', 'Phone', 'telHelp')" 
                                   class="form-control" 
                                   id="Phone"
+                                  formControlName="Phone"
                                   aria-describedby="telHelp" 
                                   placeholder="Enter Phone Number*" 
                                   [(ngModel)]="tel" 
@@ -66,6 +68,7 @@
                                   (keyup)="validate('email', email, 'Email', 'emailHelp')" 
                                   class="form-control" 
                                   id="Email"
+                                  formControlName="Email"
                                   aria-describedby="emailHelp" 
                                   placeholder="Enter Email*" 
                                   [(ngModel)]="email" 
@@ -80,6 +83,7 @@
                           <select 
                                 name="location" 
                                 id="Location" 
+                                formControlName="location"
                                 class="form-control"
                                 [(ngModel)]="location"
                                 required>
@@ -92,7 +96,7 @@
 
                    <div class="form-group">
                       <label for="Message">Message*</label>
-                      <textarea class="form-control" name="message" id="Message"  (keyup)="validate('notNull', message, 'Message', 'messageHelp')" placeholder="Enter Message" [(ngModel)]="message" required></textarea>
+                      <textarea class="form-control" formControlName="Message" name="message" id="Message"  (keyup)="validate('notNull', message, 'Message', 'messageHelp')" placeholder="Enter Message" [(ngModel)]="message" required></textarea>
                       <small id="messageHelp" class="form-text text-muted"></small>
                    </div>
 

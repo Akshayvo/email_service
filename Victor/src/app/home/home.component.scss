@@ -141,8 +141,10 @@
   #myCarousel{
     .carousel-item {
       min-height: 50vh;
+      width: 100%;
       img {
         min-height: 50vh;
+        width: auto;
       }
     }
   }

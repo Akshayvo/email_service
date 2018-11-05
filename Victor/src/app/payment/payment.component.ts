@@ -9,7 +9,7 @@ import { Title, Meta } from '@angular/platform-browser';
 export class PaymentComponent implements OnInit {
 
   breadcrumbActive: any = 'Pay Rent';
-  currentActive: any = 'PAY RENT';
+  currentActive: any = 'Pay Rent';
   tabs: any = [
     { id: '1',
       name: "Victor Self Storage - Mall",

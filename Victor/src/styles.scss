@@ -6,6 +6,7 @@
 //Basic color and font styles
 $primary: #2a856c;
 $primaryDark: #1e5e49;
+$primaryLight: #64BEA5;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
@@ -62,6 +63,16 @@ $primaryFont: 'Lato', sans-serif;
 .btn-primary{
     background-color: $primary !important;
     border: 1px solid $primary !important; 
+    color: $white !important;
+    min-width: 120px;
+    border-radius: 3px;
+    text-transform: none;
+    box-shadow: none;
+}
+
+.btn-primary-light{
+    background-color: $primaryLight !important;
+    border: 1px solid $primaryLight !important; 
     color: $white !important;
     min-width: 120px;
     border-radius: 3px;

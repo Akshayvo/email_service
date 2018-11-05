@@ -37,15 +37,21 @@
                       </p>
                 </div>
                 <div class="col-md-4 pl-0 mt-0 pt-0">
-                 <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/contact']" role="button">Contact Us</a>            
-                 <a class="btn btn-primary p-2 ml-0" [routerLink]="['/payment']" role="button">Pay Rent</a> 
+                 <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/contact']" role="button">Contact Us</a> 
+                 <span *ngIf="name == 'village'">
+                  <a class="btn btn-primary-light p-2 ml-0" [routerLink]="['/payment/village']" role="button">Pay Rent</a> 
+                 </span>
+                 <span *ngIf="name == 'mall'">
+                  <a class="btn btn-primary-light p-2 ml-0" [routerLink]="['/payment/mall']" role="button">Pay Rent</a>                    
+                </span>
+
                  
                  <span *ngIf="name == 'village'">
-                    <a class="btn btn-primary p-2 ml-0" [routerLink]="['./reserveUnit']" role="button">Reserve Unit</a>                                       
+                    <a class="btn btn-primary p-2 ml-0" [routerLink]="['./reserveUnit']" [queryParams]="{ name:'village' }" role="button">Reserve Unit</a>                                       
                  </span>
 
                  <span *ngIf="name == 'mall'">
-                    <a class="btn btn-primary p-2 ml-0" [routerLink]="['./reserveUnit']" role="button">Reserve Unit</a>                                       
+                    <a class="btn btn-primary p-2 ml-0" [routerLink]="['./reserveUnit']" [queryParams]="{ name:'mall' }" role="button">Reserve Unit</a>                                       
                  </span>
 
                 </div>

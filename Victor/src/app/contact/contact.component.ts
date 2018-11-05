@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
@@ -12,9 +12,9 @@ import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data
 })
 export class ContactComponent implements OnInit {
 
-  // form: FormGroup;
+  form: FormGroup;
   breadcrumbActive: any = 'Contact Us';
-  currentActive: any = 'CONTACT';
+  currentActive: any = 'Contact Us';
   contactsMall: any;
   contactsVillage: any;
   hoursMall: any;
@@ -26,11 +26,14 @@ export class ContactComponent implements OnInit {
   valid: any = true;
   submited: any = true;
   head: any;
+  phone: any;
+  location: any;
 
   constructor(
     private router: Router,
     private emailService: EmailService,
     private titleService: Title,
+    private formBuilder: FormBuilder,
     private meta: Meta
   ) {
     this.meta.addTag({
@@ -41,6 +44,13 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.form = this.formBuilder.group({
+      Name: null,
+      Phone: null,
+      Email: null,
+      location: null,
+      Message: null,
+    });
     this.fetchContactDetails();
     this.fetchHours();
   }
@@ -110,7 +120,7 @@ export class ContactComponent implements OnInit {
   }
 
   public validatePhone(value) {
-    if(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/.test(value)) {
+    if(/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/.test(value)) {
       return (true);
     }
     return (false);
@@ -124,7 +134,7 @@ export class ContactComponent implements OnInit {
   }
 
   public reset() {
-    this.reset();
+    this.form.reset();
     }
 
 
@@ -137,9 +147,10 @@ export class ContactComponent implements OnInit {
         this.valid = true;
         const body = {
           name: this.name,
+          phone: this.phone,
           email: this.email,
+          location: this.location,
           message: this.message,
-          subject: this.subject,
         };
         this.emailService.sendEmail(body)
           .subscribe((response: any) => {

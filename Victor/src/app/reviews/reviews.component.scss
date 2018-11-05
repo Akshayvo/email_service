@@ -5,8 +5,14 @@
     background-color: $light; 
     padding-bottom: 50px;
     margin-bottom: 50px;
+    h2 {
+        text-transform: capitalize;
+    }
     .review-data {
         border: 1px solid $border;
         background-color: $white;
+    }
+    .checked {
+        color: #ffd034;
     }
 }

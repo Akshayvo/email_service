@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { reviewVillage } from "../data/location";
 
 @Component({
@@ -6,13 +7,17 @@ import { reviewVillage } from "../data/location";
   templateUrl: './reviews.component.html',
   styleUrls: ['./reviews.component.scss']
 })
-export class ReviewsComponent implements OnInit {
-
+export class ReviewsComponent implements OnInit, OnDestroy {
+  name: any;
+  private sub: any;
   reviews: any;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.sub = this.route.queryParams.subscribe(params => {
+      this.name = params['name'];
+    });
     this.fetchreviews();
   }
 
@@ -22,5 +27,9 @@ export class ReviewsComponent implements OnInit {
    */
   public fetchreviews() {
     this.reviews = reviewVillage;
+  }
+
+  ngOnDestroy() {
+    this.sub.unsubscribe();
   }
 }
