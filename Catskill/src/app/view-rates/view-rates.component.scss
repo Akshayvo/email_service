@@ -4,8 +4,17 @@
     text-align: center; 
 }
 
-@media screen and (max-width: 900px) {
+.view-rate-heading {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
     h1 {
         display: none;
+    }
+    .view-rate-heading {
+        display: block;
+        text-align: center;
+        padding: 0px 0px 15px 0px;;
     }
 }

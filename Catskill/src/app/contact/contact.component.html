@@ -45,14 +45,18 @@
             <textarea rows="6" class="form-control" name="message" id="Message"  (keyup)="validate('notNull', message, 'Message', 'messageHelp')" placeholder="Enter Your Message" [(ngModel)]="message" required></textarea>
             <small id="messageHelp" class="form-text text-muted"></small>
           </div>  
-            <button type="submit" class="btn btn-primary px-4 margin-bottom" (click)="formSubmit()" style="float: right;">Submit</button>
-            <button type="clear" class="btn btn-outline-primary px-4" (click)="formClear()" style="float: right;">Clear</button>
+          <div >
+            <button type="submit" class="btn btn-primary margin-bottom" (click)="formSubmit()" style="float: right;">Submit</button>
+            <button type="clear" class="btn btn-outline-primary" (click)="formClear()" style="float: right;">Clear</button>
+          </div>
         </form>
       </div>
       <div class="col-md-6 col-12 my-4">
         <div class="my-4">
-          <iframe style="border:2px solid white" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47251.23771165393!2d-73.906239!3d42.252851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb3c5b1992ccc62a!2sU-Haul+Neighborhood+Dealer!5e0!3m2!1sen!2sus!4v1466783726746"
-             width="100%" height="250" frameborder="0" allowfullscreen></iframe>
+          <!-- <iframe style="border:2px solid white" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47251.23771165393!2d-73.906239!3d42.252851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb3c5b1992ccc62a!2sU-Haul+Neighborhood+Dealer!5e0!3m2!1sen!2sus!4v1466783726746"
+             width="100%" height="250" frameborder="0" allowfullscreen></iframe> -->
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11812.741403016997!2d-73.9069651!3d42.2532142!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f78849841f11072!2sCatskill+Self+Storage!5e0!3m2!1sen!2sus!4v1541375613193" 
+             style="border:2px solid white" width="100%" height="250" frameborder="0" allowfullscreen></iframe> 
         </div>
         <!-- /<h3 class="heading py-3">Hours</h3> -->
         <!-- <app-tables [tBody]="hours" [tHead]="head"></app-tables> -->

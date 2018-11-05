@@ -2,7 +2,7 @@
 
 .jumbotron{
   // text-align: right !important;
-  background: url(../../assets/images/self-storage-hero.jpg);
+  background: url(../../assets/images/catskill-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   //background-attachment: fixed;
@@ -73,7 +73,7 @@
 .jumbotorn-skew-style{
   width: 35%;
   float: left;
-  left: -120px;
+  left: -20px;
   position: relative;
   transform: skew(15deg);
   height: 80vh;
@@ -81,7 +81,7 @@
 
 .jumbotorn-skew-text {
   transform: skew(-15deg);
-  width: 68%;
+  width: 65%;
   position: absolute;
   top: 175px;
   left: 155px;
@@ -93,47 +93,51 @@
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1024px) {
-  .jumbotron{
-    //padding-top: 64vh;
-    background-attachment: unset !important;
-    background-position: center top !important;
-    h1 {
-      font-size: 2.5em !important;
-    }
-  }
+@media only screen and (min-width: 1280px) {                             //desktop 
 
-  .content-align{
-    text-align: right;
-  }
-
-  .getStarted{
-    background-attachment: unset !important;
-    background-position: center top !important;
-  }
-
-  .feature {
-    margin-top: 5%;
-  }
-  .jumbotorn-skew-style {
-    width: 50%;
-    float: left;
-    left: -128px;
-    position: relative;
-    -webkit-transform: skew(15deg);
-    transform: skew(15deg);
-    height: 80vh;
-  }
-  .jumbotorn-skew-text {
-    width: 70%;
-    position: absolute;
-    top: 290px;
-    left: 160px;
-    
-  }
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 1025px) and (min-width: 1279px) {    //laptop
+  // .jumbotron{
+  //   //padding-top: 64vh;
+  //   background-attachment: unset !important;
+  //   background-position: center top !important;
+  //   h1 {
+  //     font-size: 2.5em !important;
+  //   }
+  // }
+
+  // .content-align{
+  //   text-align: right;
+  // }
+
+  // .getStarted{
+  //   background-attachment: unset !important;
+  //   background-position: center top !important;
+  // }
+
+  // .feature {
+  //   margin-top: 5%;
+  // }
+  // .jumbotorn-skew-style {
+  //   width: 50%;
+  //   float: left;
+  //   left: -128px;
+  //   position: relative;
+  //   -webkit-transform: skew(15deg);
+  //   transform: skew(15deg);
+  //   height: 80vh;
+  // }
+  // .jumbotorn-skew-text {
+  //   width: 70%;
+  //   position: absolute;
+  //   top: 410px;
+  //   left: 150px;
+    
+  // }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768) {               //tablet
   .jumbotron{
     padding-top: 50vh;
     // text-align: center !important;
@@ -154,12 +158,70 @@
     background-position: center top !important;
   }
 
+  // .feature {
+  //   display: none;
+  // }
+
+  // .disp {
+  //   display: none;
+  // }
+
+  // .jumbotorn-skew-style{
+  //   width:100%;
+  //   float: none;  
+  //   left: 0px;
+  //   position: absolute;
+  //   bottom: 0px;
+  //   transform: skew(0deg);
+  //   height: 160px;
+  // }
+  
+  // .jumbotorn-skew-text {
+  //   transform: skew(0deg);
+  //   width: auto;  
+  //   position: relative;
+  //   top: 0px;
+  //   left: 0px;
+  //   margin: auto;
+  // }
+  // .button-width{
+  //   width: 200px;
+  //   margin: auto;
+  // }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 481px) {                             //fablet
+  .jumbotron{
+    padding-top: 100%;
+    text-align: center !important;
+    background-attachment: unset !important;
+    background-position: center left !important;
+    height: 100vh!important;
+    h1 {
+      font-size: 2em !important;
+    }
+  }
+
+  .content-align{
+    text-align: center;
+  }
+
+  .getStarted{
+    background-attachment: unset !important;
+    background-position: center top !important;
+  }
+
   .feature {
     display: none;
   }
 
   .disp {
     display: none;
+  }
+
+  .button-width{
+    width: 200px;
+    margin: auto;
   }
 
   .jumbotorn-skew-style{
@@ -180,13 +242,10 @@
     left: 0px;
     margin: auto;
   }
-  .button-width{
-    width: 200px;
-    margin: auto;
-  }
 }
 
-@media screen and (max-width: 600px) {
+
+@media only screen and (max-width: 480px) {                             //mobile
   .jumbotron{
     padding-top: 100%;
     text-align: center !important;
