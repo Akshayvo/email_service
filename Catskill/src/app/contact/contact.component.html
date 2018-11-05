@@ -45,9 +45,9 @@
             <textarea rows="6" class="form-control" name="message" id="Message"  (keyup)="validate('notNull', message, 'Message', 'messageHelp')" placeholder="Enter Your Message" [(ngModel)]="message" required></textarea>
             <small id="messageHelp" class="form-text text-muted"></small>
           </div>  
-          <div >
-            <button type="submit" class="btn btn-primary margin-bottom" (click)="formSubmit()" style="float: right;">Submit</button>
-            <button type="clear" class="btn btn-outline-primary" (click)="formClear()" style="float: right;">Clear</button>
+          <div class="contact-butoon">
+            <button type="submit" class="btn btn-primary margin-bottom " (click)="formSubmit()" style="float: right;">Submit</button>
+            <button type="clear" class="btn btn-outline-primary " (click)="formClear()" style="float: right;">Clear</button>
           </div>
         </form>
       </div>

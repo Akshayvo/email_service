@@ -12,6 +12,18 @@
     margin-left: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+    .contact-butoon {
+        .btn-primary {
+            min-width: 145px !important;
+        }
+        .btn-outline-primary {
+            min-width: 145px !important;
+        }
+    }
+   
+}
+
 @media screen and (max-width: 900px) {
     .padding-none {
         padding: 0px!important;
@@ -23,4 +35,27 @@
     .margin-bottom {
         margin-bottom: 10px;
     }
+    .contact-butoon {
+        .btn-primary {
+            min-width: 145px !important;
+        }
+        .btn-outline-primary {
+            min-width: 145px !important;
+        }
+    }
+   
 }
+
+
+@media screen and (max-width: 480px) {
+    
+    .contact-butoon {
+        .btn-primary {
+            min-width: 145px !important;
+        }
+        .btn-outline-primary {
+            min-width: 145px !important;
+        }
+    }
+    
+} 
