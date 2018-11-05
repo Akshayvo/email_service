@@ -95,7 +95,7 @@
   flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 1280px) {                             //desktop 
+@media only screen and (max-width: 1280px) {                             //desktop 
   .jumbotron{
     //padding-top: 64vh;
     background-attachment: unset !important;
@@ -151,6 +151,10 @@
   .jumbotorn-skew-style {
     left: -15%
   }
+  .feature {
+    margin-top: 5%; 
+  }
+
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {               //tablet
@@ -183,6 +187,11 @@
     right: 5%;
     width: 60%;
   }
+  .home-map {
+    width: 50% !important;
+    margin: auto;
+  }
+
 }
 
 @media only screen and (max-width: 767px) and (min-width: 481px) {                             //fablet
@@ -217,6 +226,9 @@
   .button-width{
     width: 200px;
     margin: auto;
+  }
+  .row {
+    flex-wrap: wrap;
   }
 }
 
