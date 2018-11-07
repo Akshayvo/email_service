@@ -1,3 +1,5 @@
+import { DemoComponent } from './demo/demo.component';
+import { AboutComponent } from './about/about.component';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -6,7 +8,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { Angulartics2Module } from 'angulartics2';
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
@@ -35,6 +38,8 @@ import { RentSubComponent } from './rent-sub/rent-sub.component';
 @NgModule({
   declarations: [
     AppComponent,
+    AboutComponent,
+    DemoComponent,
     HeaderComponent,
     HomeComponent,
     ContactComponent,
@@ -60,7 +65,8 @@ import { RentSubComponent } from './rent-sub/rent-sub.component';
     RentSubComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,

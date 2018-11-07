@@ -28,6 +28,9 @@ export class ContactComponent implements OnInit {
   head: any;
   phone: any;
   location: any;
+  tel: any;
+  mall: any;
+  village: any;
 
   constructor(
     private router: Router,
