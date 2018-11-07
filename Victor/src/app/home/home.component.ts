@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   serviceOffered: any;
   currentActive: any = 'Home';
   carousel: any;
-   
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -29,10 +29,11 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Catskill Self Storage has your self storage unit, packing supplies,
-       and U-Haul truck rental needs covered! Serving the Catskill community since 2003.`
+      content: `Victor Self Storage offers a wide variety of self storage units with the
+      security, convenience, and stellar customer service you expect, all at an affordable price! Reserve today!
+      `
     });
-    this.titleService.setTitle('Affordable Storage Units Near Catskill , NY | 12414 - Catskill Self Storage');
+    this.titleService.setTitle('Storage Units Near Victor, NY, 14564 | Victor Self Storage');
   }
 
   public navigate(location) {

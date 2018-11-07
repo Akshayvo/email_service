@@ -29,7 +29,7 @@ export class PaymentComponent implements OnInit {
       name: 'description',
       content: `Save time and access your account online with our convenient customer portal.`
     });
-    this.titleService.setTitle('Make Your Payment Online | Catskill Self Storage');
+    this.titleService.setTitle('Pay Your Rent Online | Victor Self Storage');
   }
 
   ngOnInit() {

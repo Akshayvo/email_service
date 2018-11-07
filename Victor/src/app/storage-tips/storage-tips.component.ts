@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { storagePoints, storageTips } from "../data/storage-tips";
+import { storagePoints, storageTips } from '../data/storage-tips';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-storage-tips',
@@ -9,13 +10,16 @@ import { storagePoints, storageTips } from "../data/storage-tips";
 
 
 export class StorageTipsComponent implements OnInit {
-  
   storagePoints: any;
   storageTips: any;
   currentActive: any = 'Storage Tips';
   breadcrumbActive: any = 'Storage Tips';
 
-  constructor() { }
+  constructor(
+    private titleService: Title,
+  ) {
+    this.titleService.setTitle('Self Storage Tips | Victor Self Storage');
+  }
 
   ngOnInit() {
     this.fetchstoragePoints();

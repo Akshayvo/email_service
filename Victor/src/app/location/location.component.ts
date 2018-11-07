@@ -1,8 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';
-import { iframeMapMall, iframeMapVillage, tabs } from '../data/location'
-import { DomSanitizer } from '@angular/platform-browser';
+import { iframeMapMall, iframeMapVillage, tabs } from '../data/location';
+import { DomSanitizer, Title } from '@angular/platform-browser';
 
 
 @Component({
@@ -22,12 +22,18 @@ export class LocationComponent implements OnInit, OnDestroy {
   ads: any;
   currentActive: any;
 
-  constructor( private route: ActivatedRoute, private router: Router,
-    public sanitizer: DomSanitizer) { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    public sanitizer: DomSanitizer,
+    private titleService: Title,
+    ) {
+      this.titleService.setTitle('Storage Units Near Victor, NY, 14564 | Victor Self Storage');
+    }
 
   ngOnInit() {
     this.sub = this.route.queryParams.subscribe(params => {
-      this.name = params['name']; 
+      this.name = params['name'];
     });
     this.fetchDetails(this.name);
     this.fetchTabs();
@@ -38,9 +44,9 @@ export class LocationComponent implements OnInit, OnDestroy {
   public fetchDetails(name) {
     if ( this.name == 'village' ) {
       this.currentActive = 'Village Location';
-      this.contacts = contactsVillage;      
+      this.contacts = contactsVillage;
       this.hours = hoursVillage;
-      this.iframeAdd = iframeMapVillage;      
+      this.iframeAdd = iframeMapVillage;
     } else {
       this.currentActive = 'Mall Location';
       this.contacts = contactsMall;
@@ -54,7 +60,7 @@ export class LocationComponent implements OnInit, OnDestroy {
   }
 
   getSafeUrl(url) {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(url)
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
 }
 
 public navigate (location) {
