@@ -4,26 +4,33 @@
     margin-bottom: 0px;
     width: 100%;
 
-    span{
+    .grid-item{
         border-left: 1px solid $light;
         border-right: 1px solid $light;
         border-top: 1px solid $light;
         background-color: #e2e0d8;
+        cursor: pointer;
     }
     a {
         text-decoration: none;
         color: $dark;
         background-color: transparent;
     }
-    .active-tab {
-        background-color: $light;
-    }
 }
+.active-tab {
+    background-color: $light !important;
+}
+
+
+
 @media only screen and (min-width: 770px) {
     .grid {
         display: grid;
         grid-template-columns: repeat( auto-fit, minmax(90px, 1fr) );
       }
+    .disp {
+        display: none;
+    }
     }
 
 
@@ -39,4 +46,21 @@
     //     display: none;
     // }
     // }
+
+    .disp {
+        display: block;
+    }
+
+    .horizontal-scroll-wrapper {
+        overflow-y: hidden;
+        overflow-x: auto;
+        display: flex;
+        width: 100%;
+        span {
+            min-width: 100px;
+        }
+      }
+    //   .horizontal-scroll-wrapper::-webkit-scrollbar {
+    //     display: none;
+    //   }
 } 

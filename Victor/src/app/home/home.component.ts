@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
     this.titleService.setTitle('Storage Units Near Victor, NY, 14564 | Victor Self Storage');
   }
 
-  public navigate(location) {
+  public navigate(location: any) {
     this.router.navigate([location]);
   }
 
@@ -52,14 +52,14 @@ export class HomeComponent implements OnInit {
     this.contactsVillage = contactsVillage;
     this.contactsMall = contactsMall;
   }
-  
+
 
   public fetchHours() {
     this.hoursVillage = hoursVillage;
     this.hoursMall = hoursMall;
    }
 
-  public fetchFeatureHead(){
+  public fetchFeatureHead() {
     this.features = featuresHead;
   }
 

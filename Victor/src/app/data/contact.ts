@@ -17,16 +17,16 @@ export const contactsVillage = [
 ];
 
 export const hoursVillage = [
-    {   
+    {
         label: 'Mon-Fri: ',
         data: '9:00 am - 5:00 pm',
         class: 'bg-light'
     },
-    {   
+    {
         label: 'Sat: ',
         data: '8:00 am - 4:00 pm'
     },
-    {   
+    {
         label: 'Sunday: ',
         data: 'Closed',
         class: 'bg-light'
@@ -43,7 +43,7 @@ export const contactsMall = [
         data: '7607 Commons Blvd., Victor, NY 14564',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
-    
+
     {
         label: 'Phone:',
         data: '(585) 924-9290',

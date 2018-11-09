@@ -10,8 +10,8 @@ export class TablesComponent implements OnInit {
   th: any;
   tds: String;
   objectKeys: any;
-  @Input('tBody') tBody;
-  @Input('tHead') tHead;
+  @Input() tBody: any;
+  @Input() tHead: any;
   constructor() { }
 
   ngOnInit() {

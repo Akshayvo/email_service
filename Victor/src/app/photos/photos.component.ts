@@ -8,11 +8,12 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./photos.component.scss']
 })
 export class PhotosComponent implements OnInit, OnDestroy {
-  name: any;
-  private sub: any;
+  name: string;
+  currentActiveTab: any = 'Photos';
   selectedImage: any;
   galleryImages: any;
   galleryData: any;
+  private sub: any;
 
 
   constructor(private route: ActivatedRoute) { }
@@ -27,18 +28,17 @@ export class PhotosComponent implements OnInit, OnDestroy {
 
   public fetchGallery() {
 
-    if ( this.name == 'village' ) {
+    if ( this.name === 'village' ) {
       this.galleryImages = gallery;
       this.galleryData = galleryDataVillage;
-    } else if ( this.name == 'mall' )
-    {
+    } else if ( this.name === 'mall' ) {
       this.galleryImages = gallery;
       this.galleryData = galleryDataMall;
     }
   }
 
-  setSelectedImage(image){
-    this.selectedImage = image;	
+  setSelectedImage(image: any) {
+    this.selectedImage = image;
  }
 
  ngOnDestroy() {

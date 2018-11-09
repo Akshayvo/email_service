@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BreadcrumbComponent implements OnInit {
 
-  @Input('breadcrumbActive') breadcrumbActive;
+  @Input() breadcrumbActive: any;
   constructor() { }
 
   ngOnInit() {

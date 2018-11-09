@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { ReserveComponent } from './reserve/reserve.component';
 import { ContactComponent } from './contact/contact.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ErrorComponent } from './error/error.component';
@@ -14,12 +13,12 @@ import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
 import { ReviewsComponent } from './reviews/reviews.component';
-import { RentSubComponent } from "./rent-sub/rent-sub.component";
+import { RentSubComponent } from './rent-sub/rent-sub.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  
-  { path: 'location/village', 
+
+  { path: 'location/village',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -30,9 +29,9 @@ const routes: Routes = [
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
       { path: 'reviews', component:  ReviewsComponent },
-    ] 
+    ]
   },
-  { path: 'location/mall', 
+  { path: 'location/mall',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -43,20 +42,19 @@ const routes: Routes = [
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
       { path: 'reviews', component:  ReviewsComponent },
-    ] 
+    ]
   },
 
-  { path: 'payment', 
+  { path: 'payment',
     component: PaymentComponent,
     children: [
-      {path: '', redirectTo: 'village' ,pathMatch: 'full' },
+      {path: '', redirectTo: 'village' , pathMatch: 'full' },
       { path: 'village', component: RentSubComponent },
       { path: 'mall', component: RentSubComponent },
     ]
   },
 
   { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'reserve', component: ReserveComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: ErrorComponent },
 ];

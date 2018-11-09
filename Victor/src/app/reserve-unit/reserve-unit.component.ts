@@ -1,14 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { tabs } from '../data/location';
 
 @Component({
   selector: 'app-reserve-unit',
   templateUrl: './reserve-unit.component.html',
   styleUrls: ['./reserve-unit.component.scss']
 })
-export class ReserveUnitComponent implements OnInit {
+export class ReserveUnitComponent implements OnInit, OnDestroy {
 
   name: any;
+  tabs: any;
+  currentActiveTab: any = 'Reserve Unit';
   private sub: any;
 
   constructor(private route: ActivatedRoute) { }
@@ -17,8 +20,12 @@ export class ReserveUnitComponent implements OnInit {
     this.sub = this.route.queryParams.subscribe(params => {
       this.name = params['name'];
     });
+    this.fetchTabs();
   }
 
+  public fetchTabs() {
+    this.tabs = tabs;
+  }
   ngOnDestroy() {
     this.sub.unsubscribe();
   }

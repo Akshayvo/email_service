@@ -13,7 +13,6 @@ import { DomSanitizer, Title } from '@angular/platform-browser';
 export class LocationComponent implements OnInit, OnDestroy {
 
   name: any;
-  private sub: any;
   contacts: any;
   hours: any;
   iframeAdd: any;
@@ -21,6 +20,7 @@ export class LocationComponent implements OnInit, OnDestroy {
   tabs: any;
   ads: any;
   currentActive: any;
+  private sub: any;
 
   constructor(
     private route: ActivatedRoute,
@@ -41,8 +41,8 @@ export class LocationComponent implements OnInit, OnDestroy {
   }
 
 
-  public fetchDetails(name) {
-    if ( this.name == 'village' ) {
+  public fetchDetails(name: string) {
+    if ( this.name === 'village' ) {
       this.currentActive = 'Village Location';
       this.contacts = contactsVillage;
       this.hours = hoursVillage;
@@ -59,11 +59,11 @@ export class LocationComponent implements OnInit, OnDestroy {
     this.tabs = tabs;
   }
 
-  getSafeUrl(url) {
+  getSafeUrl(url: any) {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
 }
 
-public navigate (location) {
+public navigate (location: any) {
   this.router.navigate([location]);
 }
   ngOnDestroy() {

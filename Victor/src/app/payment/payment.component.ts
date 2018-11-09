@@ -12,12 +12,12 @@ export class PaymentComponent implements OnInit {
   currentActive: any = 'Pay Rent';
   tabs: any = [
     { id: '1',
-      name: "Victor Self Storage - Mall",
-      path: "./mall"
+      name: 'Victor Self Storage - Mall',
+      path: './mall'
     },
     { id: '2',
-      name: "Victor Self Storage -  Village",
-      path: "./village"
+      name: 'Victor Self Storage -  Village',
+      path: './village'
     }
   ];
 

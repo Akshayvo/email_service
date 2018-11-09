@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { tabs } from '../data/location';
 
 @Component({
   selector: 'app-storage-unit',
@@ -8,15 +9,19 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class StorageUnitComponent implements OnInit, OnDestroy {
   name: any;
-  private sub: any;
+  tabs: any;
   currentActiveTab: any = 'Storage Units';
-
+  private sub: any;
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.sub = this.route.queryParams.subscribe(params => {
       this.name = params['name'];
     });
+    this.fetchTabs();
+  }
+  public fetchTabs() {
+    this.tabs = tabs;
   }
 
   ngOnDestroy() {

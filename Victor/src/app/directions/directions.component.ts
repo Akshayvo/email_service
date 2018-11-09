@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { directionVillage, directionMall } from "../data/location";
+import { directionVillage, directionMall } from '../data/location';
 @Component({
   selector: 'app-directions',
   templateUrl: './directions.component.html',
@@ -9,8 +9,9 @@ import { directionVillage, directionMall } from "../data/location";
 })
 export class DirectionsComponent implements OnInit, OnDestroy {
   name: any;
-  private sub: any;
+  currentActiveTab: any = 'Directions';
   directionPoints: any;
+  private sub: any;
 
   constructor(private route: ActivatedRoute) { }
 
@@ -20,13 +21,12 @@ export class DirectionsComponent implements OnInit, OnDestroy {
     });
     this.fetchDirectionData();
   }
- 
- 
+
+
   public fetchDirectionData() {
-    if ( this.name == 'village' ) {
+    if ( this.name === 'village' ) {
     this.directionPoints = directionVillage;
-    } else if ( this.name == 'mall' )
-    {
+    } else if ( this.name === 'mall' ) {
       this.directionPoints = directionMall;
     }
   }

@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   navLinks: any;
   socialLinks: any;
   data: any;
-  @Input('currentActive') currentActive;
+  @Input() currentActive: any;
 
   constructor(
     private route: ActivatedRoute,
@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
     this.fetchNavigationLinks();
   }
 
-  public navigate (location) {
+  public navigate (location: any) {
     this.router.navigate([location]);
   }
 

@@ -6,10 +6,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./accordion.component.scss']
 })
 export class AccordionComponent implements OnInit {
-  
-  show: boolean = false;
-  aData: any;
-  @Input('accordianData') accordianData;
+
+  show = false;
+  aData: Object;
+  @Input() accordianData: any;
 
   constructor() { }
 

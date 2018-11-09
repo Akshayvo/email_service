@@ -19,15 +19,22 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Since [Need founding date] Victor Self Storage has served Victor, Mendon, Farmington, and the surrounding communities with high quality, affordable units in a wide variety of convenient sizes. Our full perimeter fence, 24/7 recording video cameras, unique access codes, and theft-proof cylinder locks, are just a few of the many features we have in place to protect your belongings.`,
+        p: `Since [Need founding date] Victor Self Storage has served Victor, Mendon, Farmington,
+        and the surrounding communities with high quality, affordable units in a wide variety of convenient sizes.
+        Our full perimeter fence, 24/7 recording video cameras, unique access codes, and theft-proof cylinder locks,
+        are just a few of the many features we have in place to protect your belongings.`,
     },
     {
-        p: ` Both the Village, and Mall locations offer 24/7 access, motion activated interior lights, a well stocked retail store with all of the tape, boxes, and you will need to make your moving experience a successful one! Our full time, on-site staff maintain the properties to provide both a clean experience, and an extra layer of security for your benefit.`,
+        p: `Both the Village, and Mall locations offer 24/7 access, motion activated interior lights,
+        a well stocked retail store with all of the tape, boxes,
+        and you will need to make your moving experience a successful one!
+        Our full time, on-site staff maintain the properties to provide both a clean experience,
+        and an extra layer of security for your benefit.`,
     },
 ];
 
 export const homeCarousel = [
-    {   
+    {
         class: 'active',
         id: '1',
         label: 'slide-1',
@@ -48,12 +55,12 @@ export const testimonials = [
         label: 'slide-1',
         data: '../../assets/images/HomeSlider/victor-self-storage-slider-1.jpg'
     },
-    {   
+    {
         id: '2',
         label: 'slide-2',
         data: '../../assets/images/HomeSlider/victor-self-storage-slider-2.jpg'
     },
-    {   
+    {
         id: '3',
         label: 'slide-3',
         data: '../../assets/images/HomeSlider/victor-self-storage-slider-3.jpg'

@@ -15,22 +15,20 @@ export class ContactComponent implements OnInit {
   form: FormGroup;
   breadcrumbActive: any = 'Contact Us';
   currentActive: any = 'Contact Us';
-  contactsMall: any;
-  contactsVillage: any;
-  hoursMall: any;
-  hoursVillage: any;
-  name: any;
+  contactsMall: object;
+  contactsVillage: object;
+  hoursMall: object;
+  hoursVillage: object;
+  name: string;
   email: any;
   subject: any;
   message: any;
-  valid: any = true;
-  submited: any = true;
+  valid = true;
+  submited = true;
   head: any;
   phone: any;
-  location: any;
+  location: string;
   tel: any;
-  mall: any;
-  village: any;
 
   constructor(
     private router: Router,
@@ -41,7 +39,8 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Have a question or concern about self storage units, climate controlled storage units or U-Haul rentals?`
+      content: `Have a question or concern about self storage units,
+                climate controlled storage units or U-Haul rentals?`
     });
     this.titleService.setTitle('Contact Victor Self Storage');
   }
@@ -58,7 +57,7 @@ export class ContactComponent implements OnInit {
     this.fetchHours();
   }
 
-  public navigate(location) {
+  public navigate(location: any) {
     this.router.navigate([location]);
   }
 
@@ -115,22 +114,8 @@ export class ContactComponent implements OnInit {
     }
   }
 
-  private validateEmail(value) {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
-      return (true);
-    }
-    return (false);
-  }
-
   public validatePhone(value) {
-    if(/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/.test(value)) {
-      return (true);
-    }
-    return (false);
-  }
-
-  private validateNull(value) {
-    if (value === undefined || value === '') {
+    if (/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/.test(value)) {
       return (true);
     }
     return (false);
@@ -171,6 +156,20 @@ export class ContactComponent implements OnInit {
         // MailService(body);
       }
     }
+  }
+
+  private validateEmail(value) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
+      return (true);
+    }
+    return (false);
+  }
+
+  private validateNull(value) {
+    if (value === undefined || value === '') {
+      return (true);
+    }
+    return (false);
   }
 
 }

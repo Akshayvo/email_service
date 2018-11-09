@@ -1,10 +1,11 @@
+<app-tabs [currentActiveTab] = 'currentActiveTab'></app-tabs>
 
   <div class="gallery-content">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <div id="selectedImageM" class="text-center">
-            <img *ngIf="selectedImage" src="{{selectedImage.url}}" height="300px" width="auto">
+          <div id="selectedImageM" class="text-center p-3">
+            <img *ngIf="selectedImage" src="{{selectedImage.url}}" height="auto" width="100%">
           </div>
         </div>
   

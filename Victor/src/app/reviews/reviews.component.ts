@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { reviewVillage } from "../data/location";
+import { reviewVillage } from '../data/location';
 
 @Component({
   selector: 'app-reviews',
@@ -9,8 +9,9 @@ import { reviewVillage } from "../data/location";
 })
 export class ReviewsComponent implements OnInit, OnDestroy {
   name: any;
-  private sub: any;
+  currentActiveTab: any = 'Reviews';
   reviews: any;
+  private sub: any;
 
   constructor(private route: ActivatedRoute) { }
 

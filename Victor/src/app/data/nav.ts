@@ -3,13 +3,13 @@ export const navLinks = [
         label: 'Home',
         path: '/',
     },
-    {   
+    {
         id: '1',
         label: 'Village Location',
         path: '/location/village',
         name: 'village'
     },
-    {   
+    {
         id: '2',
         label: 'Mall Location',
         path: '/location/mall',

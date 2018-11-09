@@ -1,11 +1,13 @@
 export const iframeMapVillage = [
+  // tslint:disable-next-line:max-line-length
   { url: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11675.702373314978!2d-77.418952!3d42.979841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb582595e3f89c79!2sVictor+Self+Storage!5e0!3m2!1sen!2sus!4v1540326807113', }
 ];
-    
+
 export const iframeMapMall = [
+  // tslint:disable-next-line:max-line-length
   { url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.456694096037!2d-77.45499368415007!3d43.0317839791476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d133e608f58345%3A0xe4b84336380bb2c!2s7607+Commons+Blvd%2C+Victor%2C+NY+14564!5e0!3m2!1sen!2sus!4v1540326915757', }
 ];
-    
+
 export const tabs = [
     {
         id: '1',
@@ -46,160 +48,172 @@ export const tabs = [
 
 export const unitSizerVillage = [
     {
-        size: "10' x 15' General Storage",
+        size: '10\' x 15\' General Storage',
         img: '../../assets/images/UnitSizer/5x5-01.png',
-        data: "This unit is approximately 25 sq feet of space that can hold the contents of one small room or large closet, such as: ",
+        data: `This unit is approximately 25 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
         amenities: [
-            { content: "chairs", },
-            { content: "small desks", },
-            { content: "small bookcases", },
-            { content: "suitcases", },
-            { content: "lamps", },
+            { content: 'chairs', },
+            { content: 'small desks', },
+            { content: 'small bookcases', },
+            { content: 'suitcases', },
+            { content: 'lamps', },
         ],
     },
 
     {
-        size: "15' x 30' General Storage",
+        size: '15\' x 30\' General Storage',
         img: '../../assets/images/UnitSizer/10x10-01.png',
-        data: "This unit is approximately 50 sq feet of space that can hold the contents of one small room or large closet, such as: ",
+        data: `This unit is approximately 50 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
         amenities: [
-                    { content: "chairs", },
-                    { content: "small desks", },
-                    { content: "small bookcases", },
-                    { content: "suitcases", },
-                    { content: "lamps", },
+                    { content: 'chairs', },
+                    { content: 'small desks', },
+                    { content: 'small bookcases', },
+                    { content: 'suitcases', },
+                    { content: 'lamps', },
         ],
     },
     {
-        size: "10' x 15' General Storage",
+        size: '10\' x 15\' General Storage',
         img: '../../assets/images/UnitSizer/10x15-01.png',
-        data: "This unit is approximately 150 sq feet of space that can hold the contents of one small room or large closet, such as: ",
+        data: `This unit is approximately 150 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
         amenities: [
-            { content: "chairs", },
-            { content: "small desks", },
-            { content: "small bookcases", },
-            { content: "suitcases", },
-            { content: "lamps", },
+            { content: 'chairs', },
+            { content: 'small desks', },
+            { content: 'small bookcases', },
+            { content: 'suitcases', },
+            { content: 'lamps', },
         ],
     },
-    
-    
+
+
     {
-        size: "10' x 20' General Storage",
+        size: '10\' x 20\' General Storage',
         img: '../../assets/images/UnitSizer/10x20-01.png',
-        data: "This unit is approximately 200 sq feet of space that can hold the contents of one small room or large closet, such as: ",
+        data: `This unit is approximately 200 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
         amenities: [
-            { content: "mattress sets", },
-            { content: "sofa sets", },
-            { content: "washer / dryer", },
-            { content: "refrigerator", },
-            { content: "many boxes", },
+            { content: 'mattress sets', },
+            { content: 'sofa sets', },
+            { content: 'washer / dryer', },
+            { content: 'refrigerator', },
+            { content: 'many boxes', },
         ],
     },
 
 
     {
-        size: "10' x 25' General Storage",
+        size: '10\' x 25\' General Storage',
         img: '../../assets/images/UnitSizer/10x25-01.png',
-        data: "This unit is approximately 250 sq feet of space that can hold the contents of one small room or large closet, such as: ",
+        data: `This unit is approximately 250 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
         amenities: [
-            { content: "mattress sets", },
-            { content: "sofa sets", },
-            { content: "washer / dryer", },
-            { content: "refrigerator", },
-            { content: "many boxes", },
+            { content: 'mattress sets', },
+            { content: 'sofa sets', },
+            { content: 'washer / dryer', },
+            { content: 'refrigerator', },
+            { content: 'many boxes', },
         ],
     },
     {
-        size: "10' x 30' General Storage",
+        size: '10\' x 30\' General Storage',
         img: '../../assets/images/UnitSizer/10x30-01.png',
-        data: "This unit is approximately 300 sq feet of space that can hold the contents of one small room or large closet, such as: ",
+        data: `This unit is approximately 300 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
         amenities: [
-            { content: "mattress sets", },
-            { content: "sofa sets", },
-            { content: "washer / dryer", },
-            { content: "refrigerator", },
-            { content: "many boxes", },
+            { content: 'mattress sets', },
+            { content: 'sofa sets', },
+            { content: 'washer / dryer', },
+            { content: 'refrigerator', },
+            { content: 'many boxes', },
         ],
     }
 ];
 
 export const unitSizerMall = [
     {
-        size: "5' x 10' General Storage",
+        size: '5\' x 10\' General Storage',
         img: '../../assets/images/UnitSizer/5x5-01.png',
-        data: "This unit is approximately 25 sq feet of space that can hold the contents of one small room or large closet, such as: ",
+        data: `This unit is approximately 25 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
         amenities: [
-            { content: "chairs", },
-            { content: "small desks", },
-            { content: "small bookcases", },
-            { content: "suitcases", },
-            { content: "lamps", },
+            { content: 'chairs', },
+            { content: 'small desks', },
+            { content: 'small bookcases', },
+            { content: 'suitcases', },
+            { content: 'lamps', },
         ],
     },
 
     {
-        size: "10' x 10' General Storage",
+        size: '10\' x 10\' General Storage',
         img: '../../assets/images/UnitSizer/10x10-01.png',
-        data: "This unit is approximately 50 sq feet of space that can hold the contents of one small room or large closet, such as: ",
+        data: `This unit is approximately 50 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
         amenities: [
-                    { content: "chairs", },
-                    { content: "small desks", },
-                    { content: "small bookcases", },
-                    { content: "suitcases", },
-                    { content: "lamps", },
+                    { content: 'chairs', },
+                    { content: 'small desks', },
+                    { content: 'small bookcases', },
+                    { content: 'suitcases', },
+                    { content: 'lamps', },
         ],
     },
     {
-        size: "10' x 15' General Storage",
+        size: '10\' x 15\' General Storage',
         img: '../../assets/images/UnitSizer/10x15-01.png',
-        data: "This unit is approximately 150 sq feet of space that can hold the contents of one small room or large closet, such as: ",
+        data: `This unit is approximately 150 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
         amenities: [
-            { content: "chairs", },
-            { content: "small desks", },
-            { content: "small bookcases", },
-            { content: "suitcases", },
-            { content: "lamps", },
+            { content: 'chairs', },
+            { content: 'small desks', },
+            { content: 'small bookcases', },
+            { content: 'suitcases', },
+            { content: 'lamps', },
         ],
     },
-    
-    
+
+
     {
-        size: "10' x 20' General Storage",
+        size: '10\' x 20\' General Storage',
         img: '../../assets/images/UnitSizer/10x20-01.png',
-        data: "This unit is approximately 200 sq feet of space that can hold the contents of one small room or large closet, such as: ",
+        data: `This unit is approximately 200 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
         amenities: [
-            { content: "mattress sets", },
-            { content: "sofa sets", },
-            { content: "washer / dryer", },
-            { content: "refrigerator", },
-            { content: "many boxes", },
+            { content: 'mattress sets', },
+            { content: 'sofa sets', },
+            { content: 'washer / dryer', },
+            { content: 'refrigerator', },
+            { content: 'many boxes', },
         ],
     },
 
 
     {
-        size: "10' x 25' General Storage",
+        size: '10\' x 25\' General Storage',
         img: '../../assets/images/UnitSizer/10x25-01.png',
-        data: "This unit is approximately 250 sq feet of space that can hold the contents of one small room or large closet, such as: ",
+        data: `This unit is approximately 250 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
         amenities: [
-            { content: "mattress sets", },
-            { content: "sofa sets", },
-            { content: "washer / dryer", },
-            { content: "refrigerator", },
-            { content: "many boxes", },
+            { content: 'mattress sets', },
+            { content: 'sofa sets', },
+            { content: 'washer / dryer', },
+            { content: 'refrigerator', },
+            { content: 'many boxes', },
         ],
     },
     {
-        size: "10' x 30' General Storage",
+        size: '10\' x 30\' General Storage',
         img: '../../assets/images/UnitSizer/10x30-01.png',
-        data: "This unit is approximately 300 sq feet of space that can hold the contents of one small room or large closet, such as: ",
+        data: `This unit is approximately 300 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
         amenities: [
-            { content: "mattress sets", },
-            { content: "sofa sets", },
-            { content: "washer / dryer", },
-            { content: "refrigerator", },
-            { content: "many boxes", },
+            { content: 'mattress sets', },
+            { content: 'sofa sets', },
+            { content: 'washer / dryer', },
+            { content: 'refrigerator', },
+            { content: 'many boxes', },
         ],
     }
 ];
@@ -281,7 +295,7 @@ export const directionMall = [
         { content: 'Continue straight - 0.6 mi' },
         { content: 'Turn right' },
         { content: 'Victor Self Storage - Mall will be on the right' },
-        
+
         ],
     },
     {
@@ -327,15 +341,15 @@ export const direction = [
 
 export const reviewVillage = [
     {
-        p :`"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location. I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe, and there wasn't anyone around to help out if I had an issue. Victor Self Storage is an extremely good facility, yes, I'll say great. I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects, and I DO recommend them every chance I get!"`, 
+        p : `"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location. I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe, and there wasn't anyone around to help out if I had an issue. Victor Self Storage is an extremely good facility, yes, I'll say great. I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects, and I DO recommend them every chance I get!"`,
         by: '- Mary (Victor, New York)',
     },
     {
-        p :`"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location. I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe, and there wasn't anyone around to help out if I had an issue. Victor Self Storage is an extremely good facility, yes, I'll say great. I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects, and I DO recommend them every chance I get!"`, 
+        p : `"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location. I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe, and there wasn't anyone around to help out if I had an issue. Victor Self Storage is an extremely good facility, yes, I'll say great. I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects, and I DO recommend them every chance I get!"`,
         by: '- Mary (Victor, New York)',
     },
     {
-        p :`"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location. I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe, and there wasn't anyone around to help out if I had an issue. Victor Self Storage is an extremely good facility, yes, I'll say great. I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects, and I DO recommend them every chance I get!"`, 
+        p : `"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location. I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe, and there wasn't anyone around to help out if I had an issue. Victor Self Storage is an extremely good facility, yes, I'll say great. I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects, and I DO recommend them every chance I get!"`,
         by: '- Mary (Victor, New York)',
     }
 ];

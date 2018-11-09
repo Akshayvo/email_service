@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { aboutUsVillage, aboutUsMall } from '../data/location'
+import { aboutUsVillage, aboutUsMall } from '../data/location';
 
 @Component({
   selector: 'app-about-us',
@@ -8,9 +8,10 @@ import { aboutUsVillage, aboutUsMall } from '../data/location'
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent implements OnInit, OnDestroy {
-  name: any;
-  private sub: any;
+  name: string;
   aboutPara: any;
+  currentActiveTab: any = 'About Us';
+  private sub: any;
 
   constructor(private route: ActivatedRoute) { }
 
@@ -21,10 +22,10 @@ export class AboutUsComponent implements OnInit, OnDestroy {
     this.fetchData();
   }
 
-  public fetchData(){
-    if (this.name == 'village') {
+  public fetchData() {
+    if (this.name === 'village') {
     this.aboutPara = aboutUsVillage;
-    } else if (this.name == 'mall') {
+    } else if (this.name === 'mall') {
       this.aboutPara = aboutUsMall;
     }
   }
