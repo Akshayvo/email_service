@@ -55,8 +55,8 @@ export const tabs = [
 
 export const unitSizerVillage = [
     {
-        size: '10\' x 15\' General Storage',
-        img: '../../assets/images/UnitSizer/5x5-01.png',
+        size: '5\' x 15\' General Storage',
+        img: '../../assets/images/UnitSizer/5x5.png',
         data: `This unit is approximately 25 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -69,8 +69,8 @@ export const unitSizerVillage = [
     },
 
     {
-        size: '15\' x 30\' General Storage',
-        img: '../../assets/images/UnitSizer/10x10-01.png',
+        size: '10\' x 10\' General Storage',
+        img: '../../assets/images/UnitSizer/10x10.png',
         data: `This unit is approximately 50 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -83,7 +83,7 @@ export const unitSizerVillage = [
     },
     {
         size: '10\' x 15\' General Storage',
-        img: '../../assets/images/UnitSizer/10x15-01.png',
+        img: '../../assets/images/UnitSizer/10x15.png',
         data: `This unit is approximately 150 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -98,7 +98,7 @@ export const unitSizerVillage = [
 
     {
         size: '10\' x 20\' General Storage',
-        img: '../../assets/images/UnitSizer/10x20-01.png',
+        img: '../../assets/images/UnitSizer/10x20.png',
         data: `This unit is approximately 200 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -113,7 +113,7 @@ export const unitSizerVillage = [
 
     {
         size: '10\' x 25\' General Storage',
-        img: '../../assets/images/UnitSizer/10x25-01.png',
+        img: '../../assets/images/UnitSizer/10x25.png',
         data: `This unit is approximately 250 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -126,7 +126,7 @@ export const unitSizerVillage = [
     },
     {
         size: '10\' x 30\' General Storage',
-        img: '../../assets/images/UnitSizer/10x30-01.png',
+        img: '../../assets/images/UnitSizer/10x30.png',
         data: `This unit is approximately 300 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -142,7 +142,7 @@ export const unitSizerVillage = [
 export const unitSizerMall = [
     {
         size: '5\' x 10\' General Storage',
-        img: '../../assets/images/UnitSizer/5x5-01.png',
+        img: '../../assets/images/UnitSizer/5x10.png',
         data: `This unit is approximately 25 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -156,7 +156,7 @@ export const unitSizerMall = [
 
     {
         size: '10\' x 10\' General Storage',
-        img: '../../assets/images/UnitSizer/10x10-01.png',
+        img: '../../assets/images/UnitSizer/10x10.png',
         data: `This unit is approximately 50 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -169,7 +169,7 @@ export const unitSizerMall = [
     },
     {
         size: '10\' x 15\' General Storage',
-        img: '../../assets/images/UnitSizer/10x15-01.png',
+        img: '../../assets/images/UnitSizer/10x15.png',
         data: `This unit is approximately 150 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -184,7 +184,7 @@ export const unitSizerMall = [
 
     {
         size: '10\' x 20\' General Storage',
-        img: '../../assets/images/UnitSizer/10x20-01.png',
+        img: '../../assets/images/UnitSizer/10x20.png',
         data: `This unit is approximately 200 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -199,7 +199,7 @@ export const unitSizerMall = [
 
     {
         size: '10\' x 25\' General Storage',
-        img: '../../assets/images/UnitSizer/10x25-01.png',
+        img: '../../assets/images/UnitSizer/10x25.png',
         data: `This unit is approximately 250 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -212,7 +212,7 @@ export const unitSizerMall = [
     },
     {
         size: '10\' x 30\' General Storage',
-        img: '../../assets/images/UnitSizer/10x30-01.png',
+        img: '../../assets/images/UnitSizer/10x30.png',
         data: `This unit is approximately 300 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -242,29 +242,46 @@ export const aboutUsVillage = [
             and discourage flooding during periods of heavy rain.`,
     },
     {
-        p: 'Our wide selection of convenient unit sizes ensures all of your storage unit needs are covered, from closet sized 5’x10’ units to our oversized 12’x30’, and 10’x45’ units, there are few storage needs we can’t satisfy!',
+        p: `Our wide selection of convenient unit sizes ensures all of your storage unit needs are covered,
+            from closet sized 5’x10’ units to our oversized 12’x30’, and 10’x45’ units,
+            there are few storage needs we can’t satisfy!`,
     },
     {
-        p: 'Need boxes, tape, or other moving, and storage-related supplies? Stop into our well-stocked retail store! At Victor Self Storage, we strive to provide safe, secure, quality, self-storage, at an affordable price. Reach out today, and make your reservation!',
+        p: `Need boxes, tape, or other moving, and storage-related supplies?
+            Stop into our well-stocked retail store! At Victor Self Storage,
+            we strive to provide safe, secure, quality, self-storage, at an affordable price.
+            Reach out today, and make your reservation!`,
 
     },
     {
-        p: 'We take the security of your belongings seriously, which is why all of our units have individual unit door alarms, theft-proof cylinder locks, and are surrounded by a full perimeter fence.',
+        p: `We take the security of your belongings seriously,
+            which is why all of our units have individual unit door alarms,
+            theft-proof cylinder locks, and are surrounded by a full perimeter fence.`,
     },
 ];
 
 export const aboutUsMall = [
     {
-        p: 'Victor Self Storage is excited to open its second location, right by Eastview Mall! We continue the same tradition of high quality self storage, and stellar customer service! Our indoor RV parking is the perfect way to protect your recreational vehicle from damage in the brutal Western New York winters!',
+        p: `Victor Self Storage is excited to open its second location, right by Eastview Mall!
+            We continue the same tradition of high quality self storage, and stellar customer service!
+            Our indoor RV parking is the perfect way to protect your recreational vehicle from damage
+            in the brutal Western New York winters!`,
     },
     {
-        p: 'RV customers of Victor Self Storage can utilize our sewage drain, top off their water supply, or even use our 3 amp trickle charger, at no additional cost! We also offer over a hundred parking spaces for cars, boards, and trucks!',
+        p: `RV customers of Victor Self Storage can utilize our sewage drain,
+            top off their water supply, or even use our 3 amp trickle charger,
+            at no additional cost! We also offer over a hundred parking spaces for cars, boards, and trucks!`,
     },
     {
-        p: 'We take the safety of your belongings seriously. Our 24/7 video surveillance monitors the property, while individual door alarms protect your units from tampering. Our managers perform regular lot checks to ensure your units remain undisturbed.',
+        p: `We take the safety of your belongings seriously. Our 24/7 video surveillance monitors the property,
+            while individual door alarms protect your units from tampering.
+            Our managers perform regular lot checks to ensure your units remain undisturbed.`,
     },
     {
-        p: 'Our temperature controlled units are the perfect solution to storing belongings in Western New York, and are backed by second to none customer service! We are positive that you will be absolutely satisfied with your self storage, and customer service experience! Reserve your unit, or parking spot today!',
+        p: `Our temperature controlled units are the perfect solution to storing belongings in Western New York,
+            and are backed by second to none customer service!
+            We are positive that you will be absolutely satisfied with your self storage,
+            and customer service experience! Reserve your unit, or parking spot today!`,
     },
 ];
 
@@ -354,15 +371,32 @@ export const direction = [
 
 export const reviewVillage = [
     {
-        p : `"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location. I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe, and there wasn't anyone around to help out if I had an issue. Victor Self Storage is an extremely good facility, yes, I'll say great. I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects, and I DO recommend them every chance I get!"`,
+        p : `"I wanted a storage facility that was secure, accessible, reasonably priced,
+            and in the right location. I've used other storage facilities in the past that
+            really didn't make me feel like my "stuff" was safe,
+            and there wasn't anyone around to help out if I had an issue.
+            Victor Self Storage is an extremely good facility, yes, I'll say great.
+            I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects,
+            and I DO recommend them every chance I get!"`,
         by: '- Mary (Victor, New York)',
     },
     {
-        p : `"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location. I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe, and there wasn't anyone around to help out if I had an issue. Victor Self Storage is an extremely good facility, yes, I'll say great. I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects, and I DO recommend them every chance I get!"`,
+        p : `"I wanted a storage facility that was secure, accessible, reasonably priced,
+            and in the right location. I've used other storage facilities in the past
+            that really didn't make me feel like my "stuff" was safe,
+            and there wasn't anyone around to help out if I had an issue.
+            Victor Self Storage is an extremely good facility, yes, I'll say great.
+            I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects,
+            and I DO recommend them every chance I get!"`,
         by: '- Mary (Victor, New York)',
     },
     {
-        p : `"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location. I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe, and there wasn't anyone around to help out if I had an issue. Victor Self Storage is an extremely good facility, yes, I'll say great. I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects, and I DO recommend them every chance I get!"`,
+        p : `"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location.
+            I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe,
+            and there wasn't anyone around to help out if I had an issue.
+            Victor Self Storage is an extremely good facility, yes, I'll say great.
+            I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects,
+            and I DO recommend them every chance I get!"`,
         by: '- Mary (Victor, New York)',
     }
 ];

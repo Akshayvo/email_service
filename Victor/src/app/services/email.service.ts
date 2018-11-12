@@ -16,7 +16,6 @@ export class EmailService {
   }
 
   public sendEmail(content) {
-
     const data = {
       service_id: service_id,
       template_id: template_id,
