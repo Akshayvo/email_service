@@ -17,8 +17,10 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We make it easy for you to pay your rent and check your balance online, 24/7. Simply login with the credentials supplied by
-                our office and gain access to our online bill pay option! You can even sign up for automatic payments in seconds!`
+      content: `We make it easy for you to pay your rent and check your balance online, 24/7.
+                Simply login with the credentials supplied by
+                our office and gain access to our online bill pay option!
+                You can even sign up for automatic payments in seconds!`
     });
     this.titleService.setTitle('Pay Your Rent Online | Catskill Self Storage, Catskill, NY, 12414 ');
   }

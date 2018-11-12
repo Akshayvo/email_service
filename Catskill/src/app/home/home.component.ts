@@ -30,8 +30,10 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Catskill Self Storage has been proudly serving Catskill, Cairo, Leeds, and surrounding communities with affordable storage units since 2004!
-                Whether you just need an extra closet’s worth of storage or a whole apartment, we’ve got your self storage needs covered! Call and reserve today!`
+      content: `Catskill Self Storage has been proudly serving Catskill, Cairo, Leeds,
+                and surrounding communities with affordable storage units since 2004!
+                Whether you just need an extra closet’s worth of storage or a whole apartment,
+                we’ve got your self storage needs covered! Call and reserve today!`
     });
     this.titleService.setTitle('Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage');
   }

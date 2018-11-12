@@ -46,9 +46,4 @@ export const socialLinks = [
         path: 'https://www.facebook.com/catskillselfstorage',
         class: 'fab fa-facebook-square',
     },
-    // {
-    //     label: 'google plus',
-    //     path: '#',
-    //     class: 'fab fa-google-plus-square',
-    // },
 ];

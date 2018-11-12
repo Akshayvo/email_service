@@ -13,6 +13,8 @@
   //padding-top: 70vh;
   overflow: hidden;
   border-radius: 0px;
+  padding-top: 0%;
+  padding-bottom: 0%;
   a{
     margin-top: 20px;
   }
@@ -45,11 +47,11 @@
 }
 
 .jumbotron-top {
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .jumbotron-bottom {
-  height: 20vh;
+  min-height: 20vh;
 }
 
 // .skew-style{
@@ -76,17 +78,18 @@
   left: -25%;
   position: relative;
   transform: skew(15deg);
-  height: 80vh;
+  min-height: 100%;
 }
 
 .jumbotorn-skew-text {
   transform: skew(-15deg);
   width: 45%;
-  position: relative;
+  position: absolute;
   top: 25%;
   //left: 25%;
   float: right;
-  right: 2%;
+  right: 5%;
+  padding-left: 2%;
 }
 
 .display {
@@ -151,10 +154,9 @@
   .jumbotorn-skew-style {
     left: -15%
   }
-  .feature {
-    margin-top: 5%; 
-  }
-
+  // .feature {
+  //   margin-top: 5%; 
+  // }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {               //tablet

@@ -16,7 +16,6 @@ import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { PaymentComponent } from './payment/payment.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { TablesComponent } from './tables/tables.component';
-import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
 
 import { Angulartics2Module } from 'angulartics2';
@@ -36,7 +35,6 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
     PaymentComponent,
     BreadcrumbComponent,
     TablesComponent,
-    AboutComponent,
     ErrorComponent,
     StorageTipsComponent
   ],

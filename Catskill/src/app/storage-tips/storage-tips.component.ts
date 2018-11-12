@@ -9,7 +9,7 @@ import { storageTip, storageTipAccordion } from '../data/storage';
 })
 export class StorageTipsComponent implements OnInit {
 
-  storageTip : any;
+  storageTip: any;
   storageTipAccordion: any;
   breadcrumbActive: any = 'Storage Tips';
   currentActive: any = 'STORAGE TIPS';
@@ -17,7 +17,7 @@ export class StorageTipsComponent implements OnInit {
   constructor(
     private titleService: Title,
     private meta: Meta,
-  ) { 
+  ) {
     this.meta.addTag({
       name: 'description',
       content: `We know moving can be stressful, let our helpful hints and tips make your experience that

@@ -32,7 +32,8 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage and U-Haul truck rental questions! 
+      content: `Our friendly and knowledgeable staff are ready and willing
+                to answer all of your self storage and U-Haul truck rental questions!
                 Simply call, email, or fill out the contact form and someone will be in touch shortly!`
     });
     this.titleService.setTitle('Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414');
@@ -82,18 +83,11 @@ export class ContactComponent implements OnInit {
     }
   }
 
-  private validateEmail(value) {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
-      return (true);
-    }
-    return (false);
-  }
-
-  private validateNull(value) {
-    if (value === undefined || value === '') {
-      return (true);
-    }
-    return (false);
+  public formClear() {
+    this.name = '',
+    this.email = '',
+    this.message = '',
+    this.subject = '';
   }
 
   public formSubmit() {
@@ -126,11 +120,18 @@ export class ContactComponent implements OnInit {
       }
     }
   }
-  public formClear() {   
-      this.name= ''
-      this.email= ''
-      this.message= ''
-      this.subject= ''
+
+  private validateEmail(value) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
+      return (true);
+    }
+    return (false);
   }
 
+  private validateNull(value) {
+    if (value === undefined || value === '') {
+      return (true);
+    }
+    return (false);
+  }
 }

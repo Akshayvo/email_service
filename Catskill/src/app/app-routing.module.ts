@@ -6,7 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { PaymentComponent } from './payment/payment.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
-//import { AboutComponent } from './about/about.component';
+// import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
-  //{ path: 'about', component: AboutComponent },
+  // { path: 'about', component: AboutComponent },
   { path: '**', component: ErrorComponent }
 ];
 
