@@ -8,13 +8,12 @@
         border-left: 1px solid $light;
         border-right: 1px solid $light;
         border-top: 1px solid $light;
-        background-color: #e2e0d8;
         cursor: pointer;
     }
     a {
         text-decoration: none;
         color: $dark;
-        background-color: transparent;
+        // background-color: transparent;
     }
 }
 .active-tab {
@@ -27,6 +26,13 @@
     .grid {
         display: grid;
         grid-template-columns: repeat( auto-fit, minmax(90px, 1fr) );
+        span {
+            position: relative;
+            background-color: #e2e0d8;
+            a {
+                line-height: 3rem;
+            }
+        }
       }
     .disp {
         display: none;
