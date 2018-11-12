@@ -13,36 +13,43 @@ export const tabs = [
         id: '1',
         name: 'Storage Units',
         path: './',
+        active: true,
     },
     {
         id: '2',
         name: 'Unit Sizer',
         path: './unitSizer',
+        active: false,
     },
     {
         id: '3',
         name: 'Reserve Unit',
         path: './reserveUnit',
+        active: false,
     },
     {
         id: '4',
         name: 'Photos',
         path: './photos',
+        active: false,
     },
     {
         id: '5',
         name: 'About Us',
         path: './about',
+        active: false,
     },
     {
         id: '6',
         name: 'Directions',
         path: './directions',
+        active: false,
     },
     {
         id: '7',
         name: 'Reviews',
         path: './reviews',
+        active: false,
     },
 ];
 

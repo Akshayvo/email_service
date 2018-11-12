@@ -9,6 +9,7 @@ export class TabsComponent implements OnInit {
   tabData: any;
   @Input() tabs: any;
   @Input() name: any;
+  @Input() onTabClicked: any;
   placeName: string;
   selectedTab: any;
   activeTab: string;
@@ -32,21 +33,18 @@ export class TabsComponent implements OnInit {
   }
 
   public fetchTabs() {
-    this.tabData = this.tabs;
+    if (this.tabs) {
+      this.tabData = this.tabs;
+    }
     // this.selectedTab = this.tabData[0].path;
   }
-//   public listClick(_event: any, newValue: any) {
-//     this.selectedTab = newValue;
-// }
-// public scrollRight(): void {
-//   this.tabContent.nativeElement.scrollTo({
-//     left: (this.tabContent.nativeElement.scrollLeft + 150), behavior: 'smooth' });
-// }
 
-// public scrollLeft(): void {
-//   this.tabContent.nativeElement.scrollTo({
-//     right: (this.tabContent.nativeElement.scrollLeft - 150), behavior: 'smooth' });
-// }
+  public onTabClick(event: any) {
+    console.log('Event: ', event);
+    if(this.onTabClicked) {
+      this.onTabClicked(event);
+    }
+  }
 }
 
 

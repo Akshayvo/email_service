@@ -64,7 +64,7 @@
 
 <section id="sub-components">
   <div  class="container">
-      <app-tabs [tabs]='tabs' [name]='name' style="background-color: #f1f0ed;"></app-tabs>
+      <app-tabs [tabs]='tabs' [name]='name' style="background-color: #f1f0ed;" [onTabClicked]='tabClicked' [currentActiveTab]=getActiveTab()></app-tabs>
   </div>
 </section>
 

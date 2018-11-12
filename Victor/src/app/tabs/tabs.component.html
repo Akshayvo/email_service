@@ -1,12 +1,11 @@
     <div class="grid text-center mx-0 horizontal-scroll-wrapper" id="tab">
       
-      <span *ngFor="let tab of tabData" class="py-3 grid-item" #tabContent>      
+      <span *ngFor="let tab of tabData" class="py-3 grid-item" #tabContent (click)=onTabClick(tab)>      
           
-        <span *ngIf="currentActiveTab == 'tab?.name'" [class.active-tab]="'active-tab'">
-          <a [routerLink]="tab?.path" [queryParams]="{ name:placeName, id:tab?.id }" class="px-1">{{tab.name}}</a>
+        <span *ngIf="currentActiveTab?.name === tab?.name" [class.active-tab]="'active-tab'">
+          <a [routerLink]="tab?.path" [queryParams]="{ name:placeName, id:tab?.id }" class="px-1"><b>{{tab.name}}</b></a>
         </span>
         <a [routerLink]="tab?.path" [queryParams]="{ name:placeName, id:tab?.id }" class="px-1">{{tab.name}}</a>
-        {{currentActiveTab}}
       </span>
       <!-- {{currentActiveTab}} -->
     </div>
