@@ -1,4 +1,4 @@
-    <div class="grid text-center mx-0 horizontal-scroll-wrapper" id="tab">
+    <!-- <div class="grid text-center mx-0 horizontal-scroll-wrapper" id="tab">
       
       <span *ngFor="let tab of tabData" class="py-3 grid-item" #tabContent (click)=onTabClick(tab)>      
           
@@ -7,30 +7,13 @@
         </span>
         <a [routerLink]="tab?.path" [queryParams]="{ name:placeName, id:tab?.id }" class="px-1">{{tab.name}}</a>
       </span>
-      <!-- {{currentActiveTab}} -->
-    </div>
-
-
-        <!-- <ul class="navbar-nav grid" id="tab">
-          <li class="grid-item nav-link text-center" *ngFor="let tab of tabData" >
-            <span *ngIf="activeTab == 'tab?.name'" [class.active-tab]="'active-tab'"  class="text-center">
-              <a [routerLink]="tab?.path" [queryParams]="{ name:placeName, id:tab?.id }" class="px-1 mx-auto">{{tab.name}}</a>              
-            </span>
-            <span *ngIf="activeTab !== tab?.name" class="text-center">
-                  <a [routerLink]="tab?.path" [queryParams]="{ name:placeName, id:tab?.id }" class="px-1">{{tab.name}}</a>              
-            </span>
-          {{activeTab}}
-
-          </li>
-          {{activeTab}}
-        </ul> -->
-    
-    
-    
-    <!-- <div class="grid text-center mx-0 horizontal-scroll-wrapper" id="tab">
-      <span *ngFor="let tab of tabData" #tabContent class="py-3 grid-item" [ngClass]="{'active-tab': selectedTab == tab?.path}" >
-        <a [routerLink]="tab?.path" [queryParams]="{ name:placeName, id:tab?.id }"  (click)="listClick($event, tab?.path)" [id]="tab?.id" class="px-1">{{tab.name}}</a>
-      </span>
+      {{currentActiveTab}}
     </div> -->
+
+    <div class="grid text-center mx-0 horizontal-scroll-wrapper" id="tab">
+      <span *ngFor="let tab of tabData" class="py-3 grid-item" [ngClass]="{'active-tab': selectedTab == tab?.name}" >
+        <a [routerLink]="tab?.path" [queryParams]="{ name:placeName, id:tab?.id, currentTab: tab?.name }"  (click)="listClick($event, tab?.name)" [id]="tab?.id" class="px-1">{{tab.name}}</a>
+      </span>
+    </div>
 
   <router-outlet></router-outlet>

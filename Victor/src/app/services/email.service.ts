@@ -24,7 +24,8 @@ export class EmailService {
       template_params: {
         'from_name': content.name,
         'email': content.email,
-        'subject': content.subject,
+        'phone': content.phone,
+        'location': content.location,
         'message_html': content.message
         // 'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
       }

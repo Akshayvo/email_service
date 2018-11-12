@@ -44,13 +44,13 @@
                           
                           <input  type="tel" 
                                   name="phone" 
-                                  (keyup)="validate('tel', 'tel', 'Phone', 'telHelp')" 
+                                  (keyup)="validate('tel', tel, 'Phone', 'telHelp')" 
                                   class="form-control" 
                                   id="Phone"
                                   formControlName="Phone"
                                   aria-describedby="telHelp" 
                                   placeholder="Enter Phone Number*" 
-                                  [(ngModel)]="tel" 
+                                  [(ngModel)]="Phone" 
                                   required>
                           
                           <small id="telHelp" class="form-text text-muted"></small>
@@ -86,9 +86,9 @@
                                 formControlName="location"
                                 class="form-control"
                                 [(ngModel)]="location"
+                                (keyup)="validate('location', location, 'location', 'locationHelp')" 
                                 required>
-                            <option [value]="mall">Victor Self Storage - Mall</option>
-                            <option [value]="village">Victor Self Storage - Village</option>
+                            <option *ngFor='let place of places' [value]="place">{{place}}</option>
                           </select>
                       </div>
                     </div>

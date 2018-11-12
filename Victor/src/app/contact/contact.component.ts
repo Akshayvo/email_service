@@ -27,7 +27,8 @@ export class ContactComponent implements OnInit {
   submited = true;
   head: any;
   phone: any;
-  location: string;
+  places = [ 'Victor Self Storage - Mall', 'Victor Self Storage - Village' ];
+  location: any;
   tel: any;
 
   constructor(
@@ -84,11 +85,11 @@ export class ContactComponent implements OnInit {
     }
 
     if (check === 'tel') {
-      if (this.validateNull(value)) {
+      if (!this.validateNull(value)) {
         document.getElementById(id).style.borderColor = 'red';
         document.getElementById(helpId).innerHTML = 'Please fill out this field';
       } else {
-        if (!this.validatePhone(value)) {
+        if (this.validatePhone(value)) {
           document.getElementById(id).style.borderColor = 'red';
           document.getElementById(helpId).innerHTML = 'Please enter a valid Phone Number';
         } else {
@@ -114,22 +115,18 @@ export class ContactComponent implements OnInit {
     }
   }
 
-  public validatePhone(value) {
-    if (/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/.test(value)) {
-      return (true);
-    }
-    return (false);
-  }
-
   public reset() {
     this.form.reset();
     }
 
 
   public formSubmit() {
+
     this.valid = false;
     if (this.validateEmail(this.email)) {
-      if (this.name === '' || this.message === '' || this.name === undefined || this.message === undefined) {
+      if (this.name === '' ||
+          this.email === '' ||
+          this.message === '' || this.name === undefined || this.message === undefined || this.email === undefined ) {
         this.valid = false;
       } else {
         this.valid = true;
@@ -163,6 +160,19 @@ export class ContactComponent implements OnInit {
       return (true);
     }
     return (false);
+  }
+
+  private validatePhone(value) {
+    const isValidNumber = /^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$/.test(value);
+    console.log('Number is:', isValidNumber);
+
+    if (isValidNumber) {
+      alert('true');
+      return (true);
+    } else {
+      // alert('false');
+      return (false);
+    }
   }
 
   private validateNull(value) {

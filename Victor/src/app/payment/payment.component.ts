@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-payment',
@@ -10,6 +12,7 @@ export class PaymentComponent implements OnInit {
 
   breadcrumbActive: any = 'Pay Rent';
   currentActive: any = 'Pay Rent';
+  currentTab: any;
   tabs: any = [
     { id: '1',
       name: 'Victor Self Storage - Mall',
@@ -20,8 +23,12 @@ export class PaymentComponent implements OnInit {
       path: './village'
     }
   ];
+  private sub: any;
+
 
   constructor(
+    private route: ActivatedRoute,
+    private router: Router,
     private titleService: Title,
     private meta: Meta
   ) {
@@ -33,6 +40,9 @@ export class PaymentComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.sub = this.route.queryParams.subscribe(params => {
+      this.currentTab = params['currentTab'];
+    });
   }
 
 }

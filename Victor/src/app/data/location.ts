@@ -227,13 +227,19 @@ export const unitSizerMall = [
 
 export const aboutUsVillage = [
     {
-        p: 'Victor Self Storage is proud to serve Victor, Mendon, Bloomfield, Farmington, and surrounding communities with the highest quality self storage, and customer service! We offer self storage services that are second to none.'
+        p: `Victor Self Storage is proud to serve Victor, Mendon, Bloomfield, Farmington,
+            and surrounding communities with the highest quality self storage,
+            and customer service! We offer self storage services that are second to none.`,
     },
     {
-        p: 'You’ll be thrilled with our on-site, full-time manager, available 24/7/365, to assist you with any questions or troubles that may arise, along with many amenities to make your entire self storage experience a breeze. We now offer a 24/7 online payment portal for your convenience!',
+        p: `You’ll be thrilled with our on-site, full-time manager, available 24/7/365,
+            to assist you with any questions or troubles that may arise,
+            along with many amenities to make your entire self storage experience a breeze.
+            We now offer a 24/7 online payment portal for your convenience!`,
     },
     {
-        p: 'Our fully paved facility has ample drainage, to reduce the dust and dirt contamination, and discourage flooding during periods of heavy rain. ',
+        p: `Our fully paved facility has ample drainage, to reduce the dust and dirt contamination,
+            and discourage flooding during periods of heavy rain.`,
     },
     {
         p: 'Our wide selection of convenient unit sizes ensures all of your storage unit needs are covered, from closet sized 5’x10’ units to our oversized 12’x30’, and 10’x45’ units, there are few storage needs we can’t satisfy!',
