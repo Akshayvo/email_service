@@ -47,14 +47,6 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.form = this.formBuilder.group({
-      Name: null,
-      Phone: null,
-      Email: null,
-      location: null,
-      Message: null,
-    });
-
     this.fetchContactDetails();
     this.fetchHours();
   }
@@ -69,14 +61,16 @@ export class ContactComponent implements OnInit {
     this.hoursVillage = hoursVillage;
   }
 
-  public validate(check, value, id, helpId) {
+  public validate(check: string, value: any, id: string, helpId: string) {
     if (check === 'notNull') {
       if (this.validateNull(value)) {
         document.getElementById(id).style.borderColor = 'red';
         document.getElementById(helpId).innerHTML = 'Please fill out this field';
+        return false;
       } else {
         document.getElementById(id).style.border = '1px solid #ced4da';
         document.getElementById(helpId).innerHTML = '';
+        return true;
       }
     }
 
@@ -84,13 +78,16 @@ export class ContactComponent implements OnInit {
       if (this.validateNull(value)) {
         document.getElementById(id).style.borderColor = 'red';
         document.getElementById(helpId).innerHTML = 'Please fill out this field';
+        return false;
       } else {
         if (!this.validatePhone(value)) {
           document.getElementById(id).style.borderColor = 'red';
-          document.getElementById(helpId).innerHTML = 'Please enter a valid Phone Number';
+          document.getElementById(helpId).innerHTML = 'Please enter Phone Number in a format (555)555-5555';
+          return false;
         } else {
           document.getElementById(id).style.border = '1px solid #ced4da';
           document.getElementById(helpId).innerHTML = '';
+          return true;
         }
       }
     }
@@ -99,58 +96,66 @@ export class ContactComponent implements OnInit {
       if (this.validateNull(value)) {
         document.getElementById(id).style.borderColor = 'red';
         document.getElementById(helpId).innerHTML = 'Please fill out this field';
-      } else {
+        return false;
+        } else {
         if (!this.validateEmail(value)) {
           document.getElementById(id).style.borderColor = 'red';
           document.getElementById(helpId).innerHTML = 'Please enter a valid email id';
+          return false;
         } else {
           document.getElementById(id).style.border = '1px solid #ced4da';
           document.getElementById(helpId).innerHTML = '';
+          return true;
         }
       }
   }
 }
 
-  public reset() {
-    this.valid = true;
-    this.form.reset();
-    }
+public formClear() {
+  this.name = '',
+  this.email = '',
+  this.message = '',
+  this.phone = '',
+  this.location = '';
+}
 
 
   public formSubmit() {
-    console.log(this.form);
-    if (this.validateEmail(this.email)) {
-      if (this.name === '' ||
-          this.email === '' ||
-          this.message === '' || this.name === undefined || this.message === undefined || this.email === undefined ) {
-        this.valid = false;
-      } else {
-        this.valid = true;
-        const body = {
-          name: this.name,
-          phone: this.phone,
-          email: this.email,
-          location: this.location,
-          message: this.message,
-        };
-        console.log(body);
-        this.emailService.sendEmail(body)
-          .subscribe((response: any) => {
-            // console.log('Authentication response:', response);
-            if (response.result != null) {
-              alert(response.message);
-            } else {
-              // console.log(`response`, response.result);
-              alert(response.message);
-            }
-          }, (err) => {
-            console.log('Error :', err);
-          });
-        this.submited = false;
-        // MailService(body);
+    if (this.validate('notNull', this.name, 'Name', 'nameHelp') &&
+        this.validate('tel', this.phone, 'Phone', 'telHelp') &&
+        this.validate('email', this.email, 'Email', 'emailHelp') &&
+        this.validate('notNull', this.location, 'Location', 'locationHelp') &&
+        this.validate('notNull', this.message, 'Message', 'messageHelp')
+         ) {
+
+          this.valid = true;
+          const body = {
+            name: this.name,
+            phone: this.phone,
+            email: this.email,
+            location: this.location,
+            message: this.message,
+          };
+          console.log(body);
+          this.emailService.sendEmail(body)
+            .subscribe((response: any) => {
+              // console.log('Authentication response:', response);
+              if (response.result != null) {
+                alert(response.message);
+              } else {
+                // console.log(`response`, response.result);
+                alert(response.message);
+              }
+            }, (err) => {
+              console.log('Error :', err);
+            });
+          this.submited = false;
+          // MailService(body);
+    } else {
+
+      this.valid = false;
       }
     }
-  }
 
   private validateEmail(value: string) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
@@ -161,10 +166,7 @@ export class ContactComponent implements OnInit {
 
   private validatePhone(value: string) {
     const isValidNumber = /^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$/.test(value);
-    console.log('Number is:', isValidNumber);
-
     if (isValidNumber) {
-      alert('true');
       return (true);
     } else {
       // alert('false');

@@ -20,7 +20,6 @@ export class TabsComponent implements OnInit {
     ngOnInit() {
       this.fetchTabs();
       this.fetchPlace();
-      // console.log(this.currentActiveTab);
       }
 
     public fetchPlace() {
@@ -32,11 +31,8 @@ export class TabsComponent implements OnInit {
       this.sub = this.route.queryParams.subscribe(params => {
         this.name = params['name'],
         this.currentActiveTab = params['currentTab'];
-        // console.log(this.currentActiveTab);
         this.selectedTab = this.currentActiveTab;
       });
-      console.log(this.tabData);
-      console.log(this.currentActiveTab);
       if ( this.currentActiveTab === undefined ) {
         this.selectedTab = this.tabData[0].name;
       }
