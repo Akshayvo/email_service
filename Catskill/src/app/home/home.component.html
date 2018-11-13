@@ -7,29 +7,38 @@
     <div class="jumbotron-top">
       <div class="jumbotron px-0 m-0">
         <div class="bg-translucent jumbotorn-skew-style">
-          <!-- <div class="container"> -->
-            <!-- <div class="py-5"> -->
-              <!-- <div class="row"> -->
-                <!-- <div class="col-md-6"> -->
-                  <!-- <div class=""> -->
-                <div class="jumbotorn-skew-text">
-                  <div class="disp">
-                    <h1 style="font-weight: 600; font-size: 2.5em;" class="my-4">
-                      Convenient & Affordable
-                    </h1>
-                    <p>With affordable truck rentals, drive-up access, temperature-controlled storage units, and top notch customer service, Catskill Self Storage has your storage unit needs covered! Contact us today to get started!</p>
-                  </div>
-                <!-- </div> -->
-                <div class="display p-0 button-width">
-                  <!-- <a class="btn btn-btn-outline-primary mr-3" (click)="navigate('/view-rates')" role="button">View Rates</a>
-                  <a class="btn btn-lg btn-primary ml-3" (click)="navigate('/reserve')" role="button">Reserve Unit</a> -->
-                  <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Unit</a>
-                  <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-                </div>
+        </div>
+        <div class="container hide-div">
+          <div class="jumbotorn-skew-text">
+              <div class="disp">
+                <h1 style="font-weight: 600; font-size: 2.5em;" class="my-4">
+                  Convenient & Affordable
+                </h1>
+                <p>With affordable truck rentals, drive-up access, temperature-controlled storage units, and top notch customer service, Catskill Self Storage has your storage unit needs covered! Contact us today to get started!</p>
               </div>
-              <!-- </div> -->
             <!-- </div> -->
-          <!-- </div> -->
+            <div class="p-0 button-width">
+              <a class="btn btn-lg btn-primary button-margin-right" (click)="navigate('/reserve')" role="button">Reserve Unit</a>
+              <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-translucent jumbotorn-skew-style-show">
+                <div class="jumbotorn-skew-text">
+                    <div class="disp">
+                      <h1 style="font-weight: 600; font-size: 2.5em;" class="my-4">
+                        Convenient & Affordable
+                      </h1>
+                      <p>With affordable truck rentals, drive-up access, temperature-controlled storage units, and top notch customer service, Catskill Self Storage has your storage unit needs covered! Contact us today to get started!</p>
+                    </div>
+                  
+                  <div class="p-0 button-width">
+                    <a class="btn btn-lg btn-primary" style="margin-right: 10px;" (click)="navigate('/reserve')" role="button">Reserve Unit</a>
+                    <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+                  </div>
+                </div>
+              
         </div>
       </div>
     </div>
@@ -42,34 +51,6 @@
       </div>
     </div>
   </div>
-
-  <!-- <div class="container pb-5">
-    
-    <div class="section py-5 m-0">
-      <div class="row">
-        <div class="col-md-6 py-3">
-          <h1 class="heading pb-4">Services We Offer</h1>
-          <p class="justify" *ngFor="let data of serviceOffered">{{data.p}}</p>
-        </div>
-        <div class="col-md-6 py-3">
-          <app-tables [tBody]="featuresList" [tHead]="featuresHead"></app-tables>
-        </div>
-      </div>
-    </div>
-
-    <div class="section py-5 m-0">
-      <div class="row">
-        <div class="col-md-6 py-3">
-          <img src="../../assets/images/self-storage-units.jpg" alt="storage unit picture" class="sectionImage">
-        </div>
-        <div class="col-md-6 py-3">
-          <h1 class="heading pb-4">Little About Us</h1>
-          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
-        </div>
-      </div>
-    </div>
-  
-  </div> -->
 
   <div class="bg-light">
     <div class="container py-4">
