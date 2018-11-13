@@ -29,7 +29,7 @@
                                   formControlName="Name"
                                   id="Name" 
                                   placeholder="Enter Name*"
-                                  [(ngModel)]="name" 
+                                  [(ngModel)]="form.Name" 
                                   required>
                           
                           <small id="nameHelp" class="form-text text-muted"></small>
@@ -48,7 +48,7 @@
                                   formControlName="Phone"
                                   aria-describedby="telHelp" 
                                   placeholder="Enter Phone Number*" 
-                                  [(ngModel)]="Phone" 
+                                  [(ngModel)]="form.Phone" 
                                   required>
                           
                           <small id="telHelp" class="form-text text-muted"></small>
@@ -68,7 +68,7 @@
                                   formControlName="Email"
                                   aria-describedby="emailHelp" 
                                   placeholder="Enter Email*" 
-                                  [(ngModel)]="email" 
+                                  [(ngModel)]="form.Email" 
                                   required>
 
                             <small id="emailHelp" class="form-text text-muted"></small>
@@ -82,7 +82,7 @@
                                 id="Location" 
                                 formControlName="location"
                                 class="form-control"
-                                [(ngModel)]="location"
+                                [(ngModel)]="form.location"
                                 required>
                             <option *ngFor='let place of places' [value]="place">{{place}}</option>
                           </select>
@@ -92,7 +92,7 @@
 
                    <div class="form-group">
                       <label for="Message">Message*</label>
-                      <textarea class="form-control" formControlName="Message" name="message" id="Message"  (keyup)="validate('notNull', message, 'Message', 'messageHelp')" placeholder="Enter Message" [(ngModel)]="message" required></textarea>
+                      <textarea class="form-control" formControlName="Message" name="message" id="Message"  (keyup)="validate('notNull', message, 'Message', 'messageHelp')" placeholder="Enter Message" [(ngModel)]="form.message" required></textarea>
                       <small id="messageHelp" class="form-text text-muted"></small>
                    </div>
 

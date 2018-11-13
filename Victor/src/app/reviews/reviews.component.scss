@@ -1,9 +1,8 @@
 @import '../../styles.scss';
 
 #review-holder {
-    padding-top: 50px;
+    padding: 64px;
     background-color: $light; 
-    padding-bottom: 50px;
     margin-bottom: 50px;
     h2 {
         text-transform: capitalize;
@@ -14,5 +13,14 @@
     }
     .checked {
         color: #ffd034;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #review-holder {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        padding: 16px;
+        // width: 100%;
     }
 }

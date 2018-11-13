@@ -13,9 +13,11 @@
     a {
         text-decoration: none;
         color: $dark;
-        // background-color: transparent;
+        background-color: transparent;
     }
 }
+
+
 .active-tab {
     background-color: $light !important;
 }
@@ -43,18 +45,6 @@
 
 
 @media only screen and (max-width: 770px) {
-    // #tabs .grid{
-    // overflow: auto;
-    // overflow-x: auto;
-    // overflow-y: hidden;
-    // -ms-overflow-style: -ms-autohiding-scrollbar;
-    // -webkit-overflow-scrolling: touch;
-    // white-space: nowrap;
-    // &::-webkit-scrollbar {
-    //     display: none;
-    // }
-    // }
-
     .disp {
         display: block;
     }
@@ -62,13 +52,25 @@
     .horizontal-scroll-wrapper {
         overflow-y: hidden;
         overflow-x: auto;
-        display: flex;
-        width: 100%;
-        span {
-            min-width: 100px;
+        display: flex;        
+            span {
+                position: relative;
+                background-color: #e2e0d8;
+                min-width: 110px;
+                a { 
+                    padding: 15px 5px 15px 15px !important;
+                    line-height: 3rem !important;
+                }
         }
-      }
-    //   .horizontal-scroll-wrapper::-webkit-scrollbar {
-    //     display: none;
-    //   }
-} 
+    } 
+}
+
+@media only screen and (max-width: 600px) {
+    #tab {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        padding-right: auto;
+        padding-left: auto;
+        // width: 98%;
+    }
+}

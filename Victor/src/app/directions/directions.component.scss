@@ -3,9 +3,8 @@
 
 #direction-holder {
     background-color: $light;
-    padding-top: 50px;
+    padding: 64px;
     margin-bottom: 50px;
-    padding-bottom: 50px;
     h2 {
         text-transform: capitalize;
     }
@@ -34,4 +33,13 @@
         width:100%;
         position:absolute;
       }
+}
+
+@media only screen and (max-width: 600px) {
+    #direction-holder {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        // width: 100%;
+        padding: 16px;
+    }
 }

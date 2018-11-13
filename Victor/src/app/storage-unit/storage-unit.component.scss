@@ -1,4 +1,14 @@
 @import '../../styles.scss';
 .contentHolder {
     margin-bottom: 50px;
+    padding: 64px !important;
+    background-color: #f1f0ed;
+}
+
+@media only screen and (max-width: 600px) {
+    .contentHolder {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        padding: 16px !important;
+    }
 }

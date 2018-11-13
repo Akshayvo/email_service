@@ -1,11 +1,11 @@
 <!-- <app-tabs [currentActiveTab] = 'currentActiveTab'></app-tabs> -->
 
   <div class="aboutUs-holder">
-    <div class="container">
+    <div class="container px-0">
       <div class="row">
         <div class="col-lg-6">
-          <h2 class="pb-2 pl-5" style="text-transform:capitalize;">About Victor Self Storage - {{name}} </h2>
-            <div *ngFor="let para of aboutPara" class="px-5">
+          <h2 class="pb-2" style="text-transform:capitalize;">About Victor Self Storage - {{name}} </h2>
+            <div *ngFor="let para of aboutPara">
                 <p>{{ para.p }}</p>
             </div>
         </div>

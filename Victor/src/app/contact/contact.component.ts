@@ -19,20 +19,20 @@ export class ContactComponent implements OnInit {
   contactsVillage: object;
   hoursMall: object;
   hoursVillage: object;
+
   name: string;
   email: any;
-  subject: any;
+  phone: any;
+  location: any;
   message: any;
+  places = [ 'Victor Self Storage - Mall', 'Victor Self Storage - Village' ];
+
   valid = true;
   submited = true;
   head: any;
-  Phone: any;
-  places = [ 'Victor Self Storage - Mall', 'Victor Self Storage - Village' ];
-  location: any;
-  tel: any;
+  flag: boolean;
 
   constructor(
-    private router: Router,
     private emailService: EmailService,
     private titleService: Title,
     private formBuilder: FormBuilder,
@@ -54,12 +54,9 @@ export class ContactComponent implements OnInit {
       location: null,
       Message: null,
     });
+
     this.fetchContactDetails();
     this.fetchHours();
-  }
-
-  public navigate(location: any) {
-    this.router.navigate([location]);
   }
 
   public fetchContactDetails() {
@@ -73,7 +70,6 @@ export class ContactComponent implements OnInit {
   }
 
   public validate(check, value, id, helpId) {
-    // console.log(check + ' ' + value);
     if (check === 'notNull') {
       if (this.validateNull(value)) {
         document.getElementById(id).style.borderColor = 'red';
@@ -85,7 +81,7 @@ export class ContactComponent implements OnInit {
     }
 
     if (check === 'tel') {
-      if (!this.validateNull(value)) {
+      if (this.validateNull(value)) {
         document.getElementById(id).style.borderColor = 'red';
         document.getElementById(helpId).innerHTML = 'Please fill out this field';
       } else {
@@ -112,22 +108,17 @@ export class ContactComponent implements OnInit {
           document.getElementById(helpId).innerHTML = '';
         }
       }
-    }
   }
+}
 
   public reset() {
+    this.valid = true;
     this.form.reset();
     }
 
 
   public formSubmit() {
-    if (this.validate('notNull', this.name, 'Name', 'nameHelp') &&
-        this.validate('tel', this.tel, 'Phone', 'telHelp') &&
-        this.validate('email', this.email, 'Email', 'emailHelp') &&
-        this.validate('location', location, 'location', 'locationHelp'))  {
-          return false;
-    } else {
-    // this.valid = false;
+    console.log(this.form);
     if (this.validateEmail(this.email)) {
       if (this.name === '' ||
           this.email === '' ||
@@ -137,11 +128,12 @@ export class ContactComponent implements OnInit {
         this.valid = true;
         const body = {
           name: this.name,
-          phone: this.Phone,
+          phone: this.phone,
           email: this.email,
           location: this.location,
           message: this.message,
         };
+        console.log(body);
         this.emailService.sendEmail(body)
           .subscribe((response: any) => {
             // console.log('Authentication response:', response);
@@ -159,16 +151,15 @@ export class ContactComponent implements OnInit {
       }
     }
   }
-  }
 
-  private validateEmail(value) {
+  private validateEmail(value: string) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
       return (true);
     }
     return (false);
   }
 
-  private validatePhone(value) {
+  private validatePhone(value: string) {
     const isValidNumber = /^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$/.test(value);
     console.log('Number is:', isValidNumber);
 
@@ -181,10 +172,11 @@ export class ContactComponent implements OnInit {
     }
   }
 
-  private validateNull(value) {
+  private validateNull(value: string) {
     if (value === undefined || value === '') {
       return (true);
     }
+    console.log(value);
     return (false);
   }
 

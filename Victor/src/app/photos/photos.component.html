@@ -1,22 +1,22 @@
 <!-- <app-tabs [currentActiveTab] = 'currentActiveTab'></app-tabs> -->
 
   <div class="gallery-content">
-    <div class="container">
+    <div class="container px-0">
       <div class="row">
         <div class="col-lg-6">
-          <div id="selectedImageM" class="text-center p-3">
+          <div id="selectedImageM" class="text-center">
             <img *ngIf="selectedImage" src="{{selectedImage.url}}" height="auto" width="100%">
           </div>
         </div>
   
         <div class="col-lg-6">
           <div class="data">
-            <h3 class="pl-2 pt-2">Victor Self Storage - {{name}}</h3>
-            <p class="p-2" style="text-align: justify;" *ngFor='let data of galleryData'> {{data.p}}
+            <h3>Victor Self Storage - {{name}}</h3>
+            <p style="text-align: justify;" *ngFor='let data of galleryData'> {{data.p}}
             </p>
-            <div id="thumbnailsList" class="pl-2">
-              <span *ngFor="let image of galleryImages; let i = index" class="my-5 mx-1">
-                 <img src="{{image.url}}" class="tn" width="75px" height="auto" 
+            <div id="thumbnailsList">
+              <span *ngFor="let image of galleryImages; let i = index" class="m-1">
+                 <img src="{{image.url}}" class="tn" width="70px" height="auto" 
                     data-toggle="image.url"   data-target="#selectedImageM"
                       (click)=setSelectedImage(image)>
               </span>

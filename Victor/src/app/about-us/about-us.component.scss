@@ -2,8 +2,7 @@
 
 
 .aboutUs-holder {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 64px;
     background-color: $light;
     margin-bottom: 50px;
     p {
@@ -12,5 +11,14 @@
 
     img {
         border: 2px solid $white;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutUs-holder {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        padding: 16px !important;
+        // width: 100%;
     }
 }
