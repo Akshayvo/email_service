@@ -30,7 +30,9 @@
             position: relative;
             background-color: #e2e0d8;
             a {
-                line-height: 3rem;
+                padding-top: 15px !important;
+                padding-bottom: 15px !important;
+                line-height: 3rem !important;
             }
         }
       }
