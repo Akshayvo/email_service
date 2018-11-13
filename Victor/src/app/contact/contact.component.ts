@@ -26,7 +26,7 @@ export class ContactComponent implements OnInit {
   valid = true;
   submited = true;
   head: any;
-  phone: any;
+  Phone: any;
   places = [ 'Victor Self Storage - Mall', 'Victor Self Storage - Village' ];
   location: any;
   tel: any;
@@ -89,7 +89,7 @@ export class ContactComponent implements OnInit {
         document.getElementById(id).style.borderColor = 'red';
         document.getElementById(helpId).innerHTML = 'Please fill out this field';
       } else {
-        if (this.validatePhone(value)) {
+        if (!this.validatePhone(value)) {
           document.getElementById(id).style.borderColor = 'red';
           document.getElementById(helpId).innerHTML = 'Please enter a valid Phone Number';
         } else {
@@ -121,8 +121,13 @@ export class ContactComponent implements OnInit {
 
 
   public formSubmit() {
-
-    this.valid = false;
+    if (this.validate('notNull', this.name, 'Name', 'nameHelp') &&
+        this.validate('tel', this.tel, 'Phone', 'telHelp') &&
+        this.validate('email', this.email, 'Email', 'emailHelp') &&
+        this.validate('location', location, 'location', 'locationHelp'))  {
+          return false;
+    } else {
+    // this.valid = false;
     if (this.validateEmail(this.email)) {
       if (this.name === '' ||
           this.email === '' ||
@@ -132,7 +137,7 @@ export class ContactComponent implements OnInit {
         this.valid = true;
         const body = {
           name: this.name,
-          phone: this.phone,
+          phone: this.Phone,
           email: this.email,
           location: this.location,
           message: this.message,
@@ -153,6 +158,7 @@ export class ContactComponent implements OnInit {
         // MailService(body);
       }
     }
+  }
   }
 
   private validateEmail(value) {

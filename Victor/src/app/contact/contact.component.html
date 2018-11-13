@@ -25,7 +25,6 @@
                           
                           <input  type="text" 
                                   name="name" 
-                                  (keyup)="validate('notNull', name, 'Name', 'nameHelp')" 
                                   class="form-control" 
                                   formControlName="Name"
                                   id="Name" 
@@ -43,8 +42,7 @@
                           <label for="Phone">Phone number</label>
                           
                           <input  type="tel" 
-                                  name="phone" 
-                                  (keyup)="validate('tel', tel, 'Phone', 'telHelp')" 
+                                  name="Phone" 
                                   class="form-control" 
                                   id="Phone"
                                   formControlName="Phone"
@@ -65,7 +63,6 @@
                             <input 
                                   type="email" 
                                   name="email" 
-                                  (keyup)="validate('email', email, 'Email', 'emailHelp')" 
                                   class="form-control" 
                                   id="Email"
                                   formControlName="Email"
@@ -86,7 +83,6 @@
                                 formControlName="location"
                                 class="form-control"
                                 [(ngModel)]="location"
-                                (keyup)="validate('location', location, 'location', 'locationHelp')" 
                                 required>
                             <option *ngFor='let place of places' [value]="place">{{place}}</option>
                           </select>
