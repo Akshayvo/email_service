@@ -79,20 +79,9 @@ export const hoursMall = [
 ];
 
 export const socialLinks = [
-    // {
-    //     label: 'twitter',
-    //     path: 'https://twitter.com/CatskillSS',
-    //     class: 'fab fa-twitter-square',
-    // },
     {
         label: 'facebook',
         path: 'https://www.facebook.com/pages/Victor-Self-Storage/211266552318710',
         class: 'fab fa-facebook-square',
     },
-
-    // {
-    //     label: 'google plus',
-    //     path: '#',
-    //     class: 'fab fa-google-plus-square',
-    // },
 ];

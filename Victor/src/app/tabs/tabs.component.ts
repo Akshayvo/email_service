@@ -38,9 +38,14 @@ export class TabsComponent implements OnInit {
       }
 
     }
-    public listClick(event: any, newValue: any) {
-      this.selectedTab = newValue;
-  }
+
+    public navigate (location: any) {
+      this.router.navigate([location]);
+    }
+
+  //   public listClick(event: any, newValue: any) {
+  //     this.selectedTab = newValue;
+  // }
 
   // public onTabClick(event: any) {
   //   console.log('Event: ', event);

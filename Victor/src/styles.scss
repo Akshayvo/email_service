@@ -80,9 +80,16 @@ $primaryFont: 'Lato', sans-serif;
     box-shadow: none;
 }
 
+.btn-primary-light:hover {
+    background-color: $primaryDark !important;
+    border-color: $primaryDark !important;
+    color: $white !important;    
+}
+
 .btn-primary:hover {
-    background-color: $primaryDark;
-    border-color: $primaryDark;
+    background-color: $primaryDark !important;
+    border-color: $primaryDark !important;
+    color: $white !important;
 }
 
 .btn-outline-primary {
@@ -119,6 +126,7 @@ $primaryFont: 'Lato', sans-serif;
 
 h1,h2,h3,h4,h5 {
     font-weight: 600;
+    line-height: 2.5rem;
 }
 
 h1 {

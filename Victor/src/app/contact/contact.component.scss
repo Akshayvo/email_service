@@ -19,3 +19,16 @@
         height: 200px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+.btn {
+    width: 100%;
+}
+.for-mall {
+    margin-top: 20px;
+}
+.for-village {
+    margin-top: 20px;
+    padding-top: 0px !important;
+}
+}
