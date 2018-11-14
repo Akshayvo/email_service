@@ -3,6 +3,9 @@
 .contentHolder {
     padding-top: 100px;
     margin-bottom: 50px;
+    min-height: 89vh;
+    max-height: auto;
+    display: block;
     h1 {
         font-size: 2rem;
     }
