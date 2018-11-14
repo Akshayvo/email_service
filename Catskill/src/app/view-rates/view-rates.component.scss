@@ -8,6 +8,12 @@
     display: none;
 }
 
+.contentHolder{
+    h1 {
+        margin-block-end: 16px!important;
+    }
+}
+
 @media screen and (max-width: 480px) {
     h1 {
         display: none;

@@ -17,6 +17,9 @@
         font-weight: 600;
         line-height: 2;
     };
+    h1 {
+        margin-block-end: 16px!important;
+    }
 }
 
 .card {
@@ -105,6 +108,10 @@
 .accordion-background {
     height: 600px;
     margin-bottom: 15px;
+    li:last-child:after {
+        text-align: justify;
+        padding-bottom: 5px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -119,5 +126,14 @@
     }
     .card-body {
         background: #efefef!important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .accordion-background {
+        padding: 0px!important;
+        ol {
+            padding-inline-start: 20px;
+        }
     }
 }

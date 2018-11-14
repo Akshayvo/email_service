@@ -6,6 +6,12 @@
     padding: 0px 50px;
 }
 
+.contentHolder{
+    h1 {
+        margin-block-end: 16px!important;
+    }
+}
+
 @media screen and (max-width: 900px) {
     h1 {
         display: none;
