@@ -20,6 +20,7 @@
         width: 100%;
         box-shadow: none;
         margin: auto 0px;
+        text-transform: capitalize;
     }
 }
 
@@ -45,7 +46,7 @@
     }
 
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 768px) {
     .disp {
         display: block;
     }
@@ -58,9 +59,10 @@
             span {
                 position: relative;
                 background-color: #e2e0d8;
-                .btn {
-                    min-width: 110px;
-                }
+                // min-width: 50% !important;
+        }
+        .payment-tab {
+            min-width: 50% !important;
         }
     } 
 }
@@ -72,5 +74,13 @@
         padding-right: auto;
         padding-left: auto;
         width: 100% !important;
+
+        span {
+            position: relative;
+            background-color: #e2e0d8;
+           .btn { 
+               min-width: 110px;
+            }
+        }
     }
 }
