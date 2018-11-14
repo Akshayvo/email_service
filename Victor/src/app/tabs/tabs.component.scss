@@ -2,7 +2,7 @@
 
 #tab {
     margin-bottom: 0px;
-    width: 100%;
+    width: 100% !important;
 
     .grid-item{
         border-left: 1px solid $light;
@@ -71,6 +71,6 @@
         // margin-right: 15px !important;
         padding-right: auto;
         padding-left: auto;
-        // width: 98%;
+        width: 100% !important;
     }
 }

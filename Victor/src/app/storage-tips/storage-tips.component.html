@@ -6,16 +6,16 @@
 <div id="storage-tip-holder">
   <div class="container">
     <div class="heading">
-      <h1 class="text-center pt-3">Storage Tips</h1>
-      <h2 class="text-center py-3">What you need to know before renting a unit</h2>
+      <h1 class="text-center pt-5">Storage Tips</h1>
+      <h2 class="text-center">What you need to know before renting a unit</h2>
     </div>
 
 
     <div class="storage-content mt-5">
       <div class="row">
         <div class="col-md-6">
-          <ul>
-            <li *ngFor="let point of storagePoints" class="p-1"> {{point.data}} </li>
+          <ul style="padding-left: 30px;">
+            <li *ngFor="let point of storagePoints" class="p-1 text-justify"> {{point.data}} </li>
           </ul>
         </div>
         

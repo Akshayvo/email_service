@@ -37,17 +37,6 @@ export class TabsComponent implements OnInit {
         this.selectedTab = this.tabData[0].name;
       }
     }
-
-  //   public listClick(event: any, newValue: any) {
-  //     this.selectedTab = newValue;
-  // }
-
-  // public onTabClick(event: any) {
-  //   console.log('Event: ', event);
-  //   if(this.onTabClicked) {
-  //     this.onTabClicked(event);
-  //   }
-  // }
 }
 
 

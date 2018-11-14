@@ -29,7 +29,7 @@ export const tabs = [
     },
     {
         id: '4',
-        name: 'Photos',
+        name: 'Gallery',
         path: './photos',
         active: false,
     },

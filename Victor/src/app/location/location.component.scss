@@ -39,10 +39,6 @@
     position:absolute;
   }
 
-  #sub-components {
-    margin-top:30px;
-  }
-
   @media only screen and (max-width: 1200px) {
   .disp {
     display: none;
@@ -74,6 +70,9 @@
     a {
       margin-left: 10px !important;
     }
+    .btn-outline-primary {
+      margin-top: 5px !important;
+    }
   }  
 }
 
@@ -99,7 +98,7 @@
         }
       }
       .hours-data {
-        .col-md-8 {
+        .col-lg-8 {
           padding-left: 0px;
           padding-right: 0px;
           padding-bottom: 20px;
@@ -107,12 +106,18 @@
       .btn {
         width: 100% !important;
       }
-      .col-md-4 {
-        padding-left: 0px;
-        // padding-right: 0px;
+      .col-lg-4 {
+        // padding-left: 0px;
+        padding-right: 0px;
         a {
         margin-left: 0px;
         margin-right: 0px;
+        }
+        .btn {
+          margin-left: 0px !important;
+          margin-right: 0px !important;
+          width: 100%;
+          // padding-right: 0px !important;
         }
       }
     }

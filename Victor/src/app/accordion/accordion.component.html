@@ -19,8 +19,8 @@
     <!-- Card body -->
     <div [id]="'collapse_'+i" class="collapse" [ngClass]="i == 0 && 'show'" role="tabpanel" aria-labelledby="'heading'+i" data-parent="#accordionEx">
       <div class="card-body">
-        <ul>
-          <li *ngFor="let point of points?.contents" class="px-2"> {{point.data}} </li>
+        <ul style="padding-left: 30px;">
+          <li *ngFor="let point of points?.contents" class="pl-0 pr-3 text-justify"> {{point.data}} </li>
         </ul>  
       </div>
     </div>

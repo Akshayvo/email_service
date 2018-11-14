@@ -59,7 +59,6 @@
                  <span *ngIf="name == 'mall'">
                     <a class="btn btn-primary p-2 ml-0" [routerLink]="['./reserveUnit']" [queryParams]="{ name:'mall', currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                                       
                  </span>
-
                 </div>
               </div>
             </div>
@@ -69,7 +68,7 @@
 </section>
 
 <section id="sub-components">
-  <div  class="container px-0">
+  <div  class="container px-0 pt-2 mt-5">
       <app-tabs [tabs]='tabs' [name]='name' style="background-color: #f1f0ed;" [currentActiveTab]='currentTab' ></app-tabs>
   </div>
 </section>

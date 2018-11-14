@@ -3,6 +3,9 @@
 .contentHolder {
     padding-top: 100px;
     margin-bottom: 50px;
+    h1 {
+        font-size: 2rem;
+    }
     .contact-data {
         background-color: $light;
         label {

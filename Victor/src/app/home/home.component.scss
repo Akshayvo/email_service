@@ -63,6 +63,12 @@
   padding-left: 5%;
 }
 
+.for-mall, .for-village {
+  .btn-outline-primary {
+    margin-right: 10px;
+  }
+}
+
 .service{
   color: $dark;
   text-align: left;
@@ -212,6 +218,16 @@
 @media only screen and (max-width: 768px) {
   .disp {
     display: none;
+  }
+  .for-mall {
+    .btn {
+      width: 100%;
+    }
+  }
+  .for-village {
+    .btn {
+      width: 100%;
+    }
   }
 } 
 

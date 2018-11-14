@@ -16,7 +16,10 @@
  }
 
 @media only screen and (max-width: 600px) {
-   iframe {
+    #rent-sub-holder {
+        padding: 16px;
+    }
+    iframe {
        min-height: 400px;
    }
     .rent-example {
