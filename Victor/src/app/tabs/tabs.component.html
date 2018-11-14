@@ -12,7 +12,7 @@
 <div class="container px-0">
   <div class="grid text-center mx-0 horizontal-scroll-wrapper" id="tab">
     <span *ngFor="let tab of tabData" class="grid-item" [ngClass]="{'active-tab': selectedTab == tab?.name}" >
-      <a [routerLink]="tab?.path" [queryParams]="{ name:placeName, id:tab?.id, currentTab: tab?.name }"  (click)="listClick($event, tab?.name)" [id]="tab?.id" class="px-4">{{tab.name}}</a>
+      <a [routerLink]="tab?.path" [queryParams]="{ name:placeName, id:tab?.id, currentTab: tab?.name }"  (click)="listClick($event, tab?.name)" [id]="tab?.id" class="px-4 btn">{{tab.name}}</a>
     </span>
   </div>
 </div>

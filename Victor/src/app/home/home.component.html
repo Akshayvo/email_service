@@ -38,11 +38,42 @@
     </div>
   <!--Feature Box Ends Here-->
 
+  <!--Contact Mall-->
+  <div class="pb-5 pt-5 bg-light">    
+    <div class="container">
+      <div class="row">          
+        <div class="col-md-5">
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.456694096037!2d-77.45499368415007!3d43.0317839791476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d133e608f58345%3A0xe4b84336380bb2c!2s7607+Commons+Blvd%2C+Victor%2C+NY+14564!5e0!3m2!1sen!2sus!4v1540326915757" width="600" height="450" frameborder="0" style="border:1px solid #fff;" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4 pl-4 pt-3">
+          <h2>Victor Self Storage - Mall</h2>
+          <p> 
+            <span *ngFor="let contact of contactsMall">
+              <b>{{contact.label}}</b> {{contact.data}}<br>
+            </span>
+          </p>
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/village/storageUnits']" [queryParams]="{ name:'mall', currentTab: 'Storage Units' }" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2" [routerLink]="['/location/mall/reserveUnit']" [queryParams]="{ name:'mall', currentTab: 'Reserve Unit' }" role="button"> Reserve Unit</a>                                  
+        </div>
+        <div class="col-md-3 contact-hours pt-3">
+            <h2>Hours:</h2>
+            <p>
+              <span *ngFor="let hour of hoursMall">
+                <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>
+            </p>
+        </div>
+      </div>
+    </div>      
+  </div>
+<!--Contact Mall Ends Here-->
 
 
 
   <!--Contact Village-->
-  <div class="pb-5 pt-5 bg-light">  
+  <div class="pb-5 pt-5">  
     <div class="container">
       <div class="row">
         <div class="col-md-5">
@@ -76,37 +107,7 @@
 
 
 
-<!--Contact Mall-->
-  <div class="pb-5 pt-5">    
-      <div class="container">
-        <div class="row">          
-          <div class="col-md-5">
-            <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.456694096037!2d-77.45499368415007!3d43.0317839791476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d133e608f58345%3A0xe4b84336380bb2c!2s7607+Commons+Blvd%2C+Victor%2C+NY+14564!5e0!3m2!1sen!2sus!4v1540326915757" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-md-4 pl-4 pt-3">
-            <h2>Victor Self Storage - Mall</h2>
-            <p> 
-              <span *ngFor="let contact of contactsMall">
-                <b>{{contact.label}}</b> {{contact.data}}<br>
-              </span>
-            </p>
-            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/village/storageUnits']" [queryParams]="{ name:'mall', currentTab: 'Storage Units' }" role="button">View Rates</a>                
-            <a class="btn btn-primary p-2" [routerLink]="['/location/mall/reserveUnit']" [queryParams]="{ name:'mall', currentTab: 'Reserve Unit' }" role="button"> Reserve Unit</a>                                  
-          </div>
-          <div class="col-md-3 contact-hours pt-3">
-              <h2>Hours:</h2>
-              <p>
-                <span *ngFor="let hour of hoursMall">
-                  <b>{{hour.label}}</b>{{hour.data}}<br>
-                </span>
-              </p>
-          </div>
-        </div>
-      </div>      
-    </div>
-<!--Contact Mall Ends Here-->
+
 
 
 

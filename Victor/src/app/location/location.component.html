@@ -34,15 +34,14 @@
             <div class="hours-data py-2 w-100">
                 <h2 class="pt-3">Hours</h2>
               <div class="row">
-                <div class="col-md-8"> 
+                <div class="col-lg-8"> 
                       <p *ngFor="let hour of hours" class="{{hour.class}} py-2 my-0 px-2">
                             <span style="float:left;"><b>{{hour.label}}</b></span><span style="float:right;">{{hour.data}}</span><br>
                       </p>
                 </div>
-                <div class="col-md-4 pl-0 mt-0 pt-0 btn-area">
+                <div class="col-lg-4 pl-0 mt-0 pt-0 btn-area">
                  <a class="btn btn-outline-primary p-2 ml-0 mt-0" [routerLink]="['/contact']" role="button">Contact Us</a> 
                  
-                 <br/>
                 
                  <span *ngIf="name == 'village'">
                   <a class="btn btn-primary-light p-2 ml-0" [routerLink]="['/payment/village']" [queryParams]="{ currentTab: 'Victor Self Storage -  Village' }" role="button">Pay Rent</a> 
@@ -52,8 +51,6 @@
                 </span>
                 
                 
-                <br/>
-
                  
                  <span *ngIf="name == 'village'">
                     <a class="btn btn-primary p-2 ml-0" [routerLink]="['./reserveUnit']" [queryParams]="{ name:'village', currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                                       

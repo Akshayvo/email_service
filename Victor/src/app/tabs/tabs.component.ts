@@ -36,11 +36,6 @@ export class TabsComponent implements OnInit {
       if ( this.currentActiveTab === undefined ) {
         this.selectedTab = this.tabData[0].name;
       }
-
-    }
-
-    public navigate (location: any) {
-      this.router.navigate([location]);
     }
 
   //   public listClick(event: any, newValue: any) {

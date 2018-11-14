@@ -5,8 +5,9 @@
 }
 
 #storage-tip-holder {
-    padding-top: 150px;
-    margin-bottom: 180px;
+    padding-top: 100px;
+    min-height: 89vh;
+    margin-bottom: 50px;
     .heading {
         h1 {
             font-size: 2rem;
@@ -18,11 +19,13 @@
     }
 
     .storage-content {
-        padding-top: 50px;
-        background-color: $light;
-        padding-bottom: 50px;
-        padding-left: 50px;
-        padding-right: 50px;
-        
+        padding: 50px;
+        background-color: $light;        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .storage-content {
+    padding: 16px !important;
     }
 }

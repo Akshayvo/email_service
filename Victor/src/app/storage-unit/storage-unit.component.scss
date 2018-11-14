@@ -8,8 +8,9 @@
 
 @media only screen and (max-width: 600px) {
     .contentHolder {
-        margin-left: 15px !important;
-        margin-right: 15px !important;
         padding: 16px !important;
+        iframe {
+            min-height: 1100px;
+        }
     }
 }

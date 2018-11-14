@@ -37,9 +37,11 @@
 
 @media only screen and (max-width: 600px) {
     #direction-holder {
-        margin-left: 15px !important;
-        margin-right: 15px !important;
-        // width: 100%;
         padding: 16px;
+        span {
+            a {
+                font-size: .8rem;
+            }
+        }
     }
 }

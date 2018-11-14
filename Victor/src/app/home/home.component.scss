@@ -208,3 +208,10 @@
       padding-left: 5%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+  .disp {
+    display: none;
+  }
+} 
+

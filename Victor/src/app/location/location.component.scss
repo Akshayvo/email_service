@@ -2,7 +2,7 @@
 
 #contact-details {
     background-color: $light;
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 .social-content {
@@ -122,6 +122,10 @@
       padding-bottom: 15px;
     }
   }
+
+  #sub-components {
+    padding: 0px 16px !important;
+  } 
 }
 
   
