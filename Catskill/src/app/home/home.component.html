@@ -7,21 +7,30 @@
     <div class="jumbotron-top">
       <div class="jumbotron px-0 m-0">
         <div class="bg-translucent jumbotorn-skew-style">
-          <div class="container hide-div">
-            <div class="jumbotorn-skew-text">
-                <div class="disp">
-                  <h1 style="font-weight: 600; font-size: 2.5em;" class="my-4">
-                    Convenient & Affordable
-                  </h1>
-                  <p>With affordable truck rentals, drive-up access, temperature-controlled storage units, and top notch customer service, Catskill Self Storage has your storage unit needs covered! Contact us today to get started!</p>
+          <!-- <div class="container"> -->
+            <!-- <div class="py-5"> -->
+              <!-- <div class="row"> -->
+                <!-- <div class="col-md-6"> -->
+                  <!-- <div class=""> -->
+                <div class="jumbotorn-skew-text">
+                  <div class="disp">
+                    <h1 style="font-weight: 600; font-size: 2.5em;" class="my-4">
+                      Convenient & Affordable
+                    </h1>
+                    <p>With affordable truck rentals, drive-up access, temperature - controlled storage units, and top notch customer service, Catskill Self Storage has your storage unit needs covered! Contact us today to get started!</p>
+                  </div>
+                <!-- </div> -->
+                <!-- <div class="display p-0 button-width"> -->
+                <div class="col-md-6 display padding-left">
+                  <!-- <a class="btn btn-btn-outline-primary mr-3" (click)="navigate('/view-rates')" role="button">View Rates</a>
+                  <a class="btn btn-lg btn-primary ml-3" (click)="navigate('/reserve')" role="button">Reserve Unit</a> -->
+                  <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Unit</a>
+                  <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
                 </div>
-              <!-- </div> -->
-              <div class="p-0 button-width">
-                <a class="btn btn-lg btn-primary button-margin-right" (click)="navigate('/reserve')" role="button">Reserve Unit</a>
-                <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
               </div>
-            </div>
-          </div>
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -35,16 +44,46 @@
     </div>
   </div>
 
+  <!-- <div class="container pb-5">
+    
+    <div class="section py-5 m-0">
+      <div class="row">
+        <div class="col-md-6 py-3">
+          <h1 class="heading pb-4">Services We Offer</h1>
+          <p class="justify" *ngFor="let data of serviceOffered">{{data.p}}</p>
+        </div>
+        <div class="col-md-6 py-3">
+          <app-tables [tBody]="featuresList" [tHead]="featuresHead"></app-tables>
+        </div>
+      </div>
+    </div>
+
+    <div class="section py-5 m-0">
+      <div class="row">
+        <div class="col-md-6 py-3">
+          <img src="../../assets/images/self-storage-units.jpg" alt="storage unit picture" class="sectionImage">
+        </div>
+        <div class="col-md-6 py-3">
+          <h1 class="heading pb-4">Little About Us</h1>
+          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+        </div>
+      </div>
+    </div>
+  
+  </div> -->
+
   <div class="bg-light">
     <div class="container py-4">
       <div class="section py-4 m-0">
         <div class="row">
+
           <div class="col-lg-6 py-3 home-map">
             <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47251.23771165393!2d-73.906239!3d42.252851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb3c5b1992ccc62a!2sU-Haul+Neighborhood+Dealer!5e0!3m2!1sen!2sus!4v1466783726746"
               width="100%" height="100%" frameborder="0" style="border:2px solid white" allowfullscreen=""></iframe> -->
               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.185165809262!2d-73.90915378490008!3d42.25321814983534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ddbc3c847fb101%3A0x4f78849841f11072!2sCatskill+Self+Storage!5e0!3m2!1sen!2sus!4I will be authoring a full set of tips that are wholly ours that we can remix on any page. That will be available for Catskill no later than Tuesday your time. v1540774054779" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11812.741403016997!2d-73.9069651!3d42.2532142!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f78849841f11072!2sCatskill+Self+Storage!5e0!3m2!1sen!2sus!4v1541375613193" style="border:2px solid white" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
           </div>
+
           <div class="col-lg-6 py-3">
             <div class="mb-4">
               <!-- <h1 class="heading pb-4">Location Information</h1> -->
@@ -71,9 +110,11 @@
   <div class="container">
     <div class="section py-5 m-0">
       <div class="row">
+
         <div class="col-lg-6 py-3">
           <img src="../../assets/images/self-storage-units.jpg" width="100%" height="100%" alt="storage unit picture" class="sectionImage">
         </div>
+
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">About Us</h1>
           <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>

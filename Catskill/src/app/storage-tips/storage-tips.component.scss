@@ -108,7 +108,11 @@
 .accordion-background {
     height: 600px;
     margin-bottom: 15px;
-    li:last-child:after {
+    ol {
+        text-align: justify;
+    }
+
+    li {
         text-align: justify;
         padding-bottom: 5px;
     }

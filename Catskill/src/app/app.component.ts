@@ -9,7 +9,7 @@ import { filter, map, mergeMap } from 'rxjs/operators';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'ngStarterPack';
+  title = 'Catskill';
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,

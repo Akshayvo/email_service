@@ -1,5 +1,5 @@
 @import '../../styles.scss';
-
+ 
 .jumbotron{
   // text-align: right !important;
   background: url(../../assets/images/catskill-hero.jpg);
@@ -7,318 +7,301 @@
   background-size: cover;
   //background-attachment: fixed;
   background-position: center;
-
+  padding: 0px;
   height: 80vh;
-  //height: 80%;
   color: $white;
-  //padding-top: 70vh;
-  overflow: hidden;
-  border-radius: 0px;
-  padding-top: 0%;
-  padding-bottom: 0%;
-  a{
-    margin-top: 20px;
+   //padding-top: 70vh;
+   overflow: hidden;
+   border-radius: 0px;
+   a{
+     margin-top: 20px;
+   }
+   position: relative;
+ }
+ 
+ .content-align{
+   text-align: right;
+ }
+ 
+ .getStarted{
+   //background: url(../../assets/images/self-storage-photo.png);
+   //background-repeat: no-repeat;
+   //background-size: cover;
+   //background-attachment: fixed;
+   //background-position: center top !important;
+   //background: $dark;
+   color: $secondary;
+   text-align: center;
+ }
+ 
+ .disp {
+   //display: block;
+   //text-align: right;
+   text-align: left;
+   color: $white;
+   a{
+     color: $white;
+   }
+ }
+ 
+ .jumbotron-top {
+   height: 80vh;
+ }
+ 
+ .jumbotron-bottom {
+   height: 20vh;
+ }
+ 
+ // .skew-style{
+ //   width: 35%;
+ //   float: right;
+ //   right: -120px;
+ //   position: relative;
+ //   transform: skew(-15deg);
+ //   height: 68vh;
+ //   margin-top: 53px;
+ // }
+ 
+ // .skew-text {
+ //   transform: skew(15deg);
+ //   width: 68%;
+ //   position: absolute;
+ //   top: 175px;
+ //   right: 155px;
+ // }
+ 
+ .jumbotorn-skew-style{
+   width: 50%;
+   float: left;
+   left: -25%;
+   position: relative;
+   transform: skew(15deg);
+   height: 100%;
+ }
+ 
+ .jumbotorn-skew-text {
+   transform: skew(-15deg);
+   width: 45%;
+   position: relative;
+   top: 25%;
+   float: right;
+   right: 6%;
+   p {
+     text-align: justify;
+   }
+   .btn-primary {
+    margin-right: 10px;
   }
-  position: relative;
-}
+ }
 
-.content-align{
-  text-align: right;
-}
 
-.button-margin-right {
-  margin-right: 10px;
-}
-
-.getStarted{
-  color: $secondary;
-  text-align: center;
-}
-
-.disp {
-  text-align: left;
-  color: $white;
-  a{
-    color: $white;
-  }
-}
-
-.jumbotron-top {
-  height: 80vh;
-  //height: 80%;
-}
-
-.jumbotron-bottom {
-  height: 20vh;
-  //height: 20%;
-}
-
-.jumbotorn-skew-style{
-  width: 55%;
-  float: left;
-  left: -25%;
-  position: relative;
-  transform: skew(15deg);
-  min-height: 100%;
-}
-
-.jumbotorn-skew-text {
-  width: 45%;
-  position: relative;
-  -webkit-transform: skew(-15deg);
-  transform: skew(-15deg);
-  p {
-    text-align: justify;
-  }
-  float: right;
-  margin-top: 25%;
-  right: 5%;
-  
-}
-
-.display {
-  display: flex;
-  justify-content: space-between; 
-  flex-wrap: wrap;
-}
-
+ 
 @media only screen and (max-width: 2599px) and (min-width: 2300px) {
+  .display {
+    display: flex;
+    padding-left: 0px;
+  }
+  .jumbotorn-skew-style {
+    width: 50%;
+  }
   .jumbotorn-skew-text {
-   // width: 20%;
+    width: 40%;
+    top:40%;
   }
 } 
 
 @media only screen and (max-width: 2299px) and (min-width: 1900px) {
+  .jumbotorn-skew-style {
+    width: 50%
+  }
   .jumbotorn-skew-text {
-    //width: 24%;
+    width: 40%;
+    top: 40%;
+  }
+  .display {
+    display: flex;
+    padding-left: 0px;
   }
 }
 
 @media only screen and (max-width: 1899px) and (min-width: 1600px) {
+  .jumbotorn-skew-style {
+    width: 55%;
+  }
   .jumbotorn-skew-text {
-    //width: 32%;
+    width: 40%;
+    top: 35%;
+  }
+  .display {
+    display: flex;
+    padding-left: 0px;
   }
 }
 
 @media only screen and (max-width: 1599px) and (min-width: 1400px) {
-
+  .jumbotorn-skew-style {
+    width: 55%;
+  }
+  .jumbotorn-skew-text {
+    width: 45%;
+    top: 35%;
+  }
+  .display {
+    display: flex;
+    padding-left: 0px;
+  }
+}
+ 
+@media only screen and (max-width: 1399px) and (min-width: 1280px) {                             //desktop 
   .jumbotorn-skew-style {
     width: 60%;
   }
   .jumbotorn-skew-text {
     width: 50%;
+    top: 40%;
+  }
+  .display {
+    display: flex;
+    padding-left: 0px;
   }
 }
-
-@media only screen and (max-width: 1399px) and (min-width: 1280px) {
-
-  .jumbotorn-skew-style {
-    width: 64% !important;
-  }
-  .jumbotorn-skew-text {
-    width: 54% !important;
-    
-  }
-}
-
-@media only screen and (max-width: 1279px) and (min-width: 1024px) {    //laptop
-  .jumbotron{
-    //padding-top: 64vh;
-    background-attachment: unset !important;
-    background-position: center top !important;
-    height: 100vh;
-    h1 {
-      font-size: 2.5em !important;
-    }
-  }
-
-  .content-align{
-    text-align: right;
-  }
-
-  .getStarted{
-    background-attachment: unset !important;
-    background-position: center top !important;
-  }
-
-  .jumbotron-top {
+ 
+ @media only screen and (max-width: 1279px) and (min-width: 1024px) {    //laptop
+  .jumbotron {
     height: 100vh;
   }
-
-  .jumbotron-bottom {
-    height: 160px;
-  }
-
-  
   .jumbotorn-skew-style {
     width: 75%;
   }
-
   .jumbotorn-skew-text {
-    width: 60%;
-    position: relative;
-    margin-top: 40%;
+    width: 55%;
+    top: 40%;
   }
-
+  .jumbotron-top {
+    height: 100vh;
+  }
+  .jumbotron-bottom {
+    height: 168px;
+  }
+  .display {
+    display: flex;
+    padding-left: 0px;
+  }
 }
-
-@media only screen and (max-width: 1023px) and (min-width: 768px) {               //tablet
-  .jumbotron{
-    //padding-top: 50vh;
-    // text-align: center !important;
-    background-attachment: unset !important;
-    background-position: center top !important;
-    //height: 100vh!important;
-    h1 {
-      font-size: 3em !important;
-    }
-  }
-
-  .content-align{
-    text-align: right;
-  }
-
-  .getStarted{
-    background-attachment: unset !important;
-    background-position: center top !important;
-  }
-  
+ 
+ @media only screen and (max-width: 1023px) and (min-width: 768px) {               //tablet
+   .jumbotorn-skew-style {
+     h1 {
+       font-size: 2.5em !important;
+     }
+    width: 75%;
+   }
+   .jumbotorn-skew-text {
+      width: 55%;
+      top: 30%
+   }
+   .display {
+    padding: 0px;
+   }
   .home-map {
     width: 50% !important;
     margin: auto;
   }
-
-  .button-margin-right {
-    margin-right: 7px;
-  } 
-  .btn-primary {
-    min-width: 150px;
-  }
-
-  .btn-outline-primary {
-    min-width: 150px;
-  }
-
-  .jumbotron-bottom {
-    align-items: center;
-  }
-
-  .jumbotorn-skew-style {
-    width: 75%;
-  }
-
-  .jumbotorn-skew-text {
-    width: 60%;
-    position: relative;
-    margin-top: 50%;
-  }
-  
 }
-
-@media only screen and (max-width: 767px) and (min-width: 481px) {                             //fablet
+ 
+ @media only screen and (max-width: 767px) and (min-width: 481px) {                             //fablet
   .jumbotron{
-    //padding-top: 100%;
     text-align: center !important;
     background-attachment: unset !important;
     background-position: center left !important;
     height: 100vh!important;
-    h1 {
-      font-size: 2em !important;
-    }
   }
-
-  .content-align{
-    text-align: center;
-  }
-
-  .getStarted{
-    background-attachment: unset !important;
-    background-position: center top !important;
-  }
-
-  .feature {
-    display: none;
-  }
-
-  .disp {
-    display: none;
-  }
-
-  .button-width{
-    width: 200px;
-    margin: auto;
-  }
+   .feature {
+     display: none;
+   }
+ 
+   .disp {
+     display: none;
+   }
+ 
+   .button-width{
+     width: 200px;
+     margin: auto;
+   }
   .row {
     flex-wrap: wrap;
-  }
-  .jumbotorn-skew-style {
-    width: 100%;
+   }
+   .jumbotorn-skew-style{
+    width:100%;
     float: none!important;  
     left: 0px;
     position: absolute;
     bottom: 0px;
     transform: skew(0deg);
-    min-height: 160px;
+    height: 90px;
   }
-
+  
   .jumbotorn-skew-text {
     transform: skew(0deg);
-    float: none!important;
-    width: auto;
-    margin-top: 0px!important;
-    right: 0px!important;
-  }
-}
-
-
-@media only screen and (max-width: 480px) {                             //mobile
-  .jumbotron{
-    text-align: center !important;
-    background-attachment: unset !important;
-    background-position: center left !important;
-    height: 100vh!important;
-    h1 {
-      font-size: 2em !important;
-    }
-  }
-
-  .content-align{
-    text-align: center;
-  }
-
-  .getStarted{
-    background-attachment: unset !important;
-    background-position: center top !important;
-  }
-
-  .feature {
-    display: none;
-  }
-
-  .disp {
-    display: none;
-  }
-
-  .button-width{
-    max-width: 200px;
+    width: 100%;  
+    position: absolute;
+    top: 0px;
+    left: 0px;
     margin: auto;
   }
-  .jumbotorn-skew-style {
-    width: 100%;
-    float: none!important;  
-    left: 0px;
-    position: absolute;
-    bottom: 0px;
-    transform: skew(0deg);
-    min-height: 160px;
-  }
 
-  .jumbotorn-skew-text {
-    transform: skew(0deg);
-    float: none!important;
-    width: auto;
-    margin-top: 0px!important;
-    right: 0px!important;
-  }
-}
-
+ }
+ 
+ 
+ @media only screen and (max-width: 480px) {                             //mobile
+   .jumbotron{
+     text-align: center !important;
+     background-attachment: unset !important;
+     background-position: center left !important;
+     height: 100vh!important;
+     h1 {
+       font-size: 2em !important;
+     }
+   }
+ 
+ 
+   .feature {
+     display: none;
+   }
+ 
+   .disp {
+     display: none;
+   }
+ 
+   .button-width{
+     max-width: 200px;
+     margin: auto;
+   }
+ 
+ 
+   .jumbotorn-skew-style{
+     width:100%;
+     float: none!important;  
+     left: 0px;
+     position: absolute;
+     bottom: 0px;
+     transform: skew(0deg);
+     height: 160px;
+   }
+   
+   .jumbotorn-skew-text {
+     transform: skew(0deg);
+     width: 100%;  
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     margin: auto;
+     .btn-primary {
+      margin-right: 0px;
+    }
+   }
+   .display {
+     padding-left: 50px;
+     padding-right: 50px;
+   }
+ }

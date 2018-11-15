@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server.js",
-    "build:client-and-server-bundles": "ng build --prod && ng run ngStarterPack:server",
+    "build:client-and-server-bundles": "ng build --prod && ng run Catskill:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
   "private": true,
@@ -58,7 +58,7 @@
     "stylelint-scss": "~3.3.0",
     "ts-loader": "^4.2.0",
     "ts-node": "~7.0.0",
-    "tslint": "~5.11.0",
+    "tslint": "^5.11.0",
     "typescript": "~2.9.2",
     "webpack-cli": "^2.0.14"
   }
