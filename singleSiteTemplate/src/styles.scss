@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 //Basic color and font styles
-$primary: #4ECCA6;
+$primary: #256784;
 $primaryDark: rgb(51, 161, 128);
 
 // $primary: #FF9800;
@@ -20,7 +20,6 @@ $fontColor: #707070;
 $primaryFont: 'Lato', sans-serif;
 
 * {
-    // font: $primaryFont;
     font-family: $primaryFont;
 }
 

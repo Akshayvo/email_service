@@ -21,7 +21,7 @@ a {
 .social {
     text-align: right !important;
     a {
-        color: $white;
+        color: $dark;
         text-decoration: none;
     }
 }
@@ -32,7 +32,7 @@ a {
 }
 
 .nav-link {
-    color: $white !important;
+    color: $fontColor !important;
     font-weight: 600;
     transition-duration: 500ms;
 }
