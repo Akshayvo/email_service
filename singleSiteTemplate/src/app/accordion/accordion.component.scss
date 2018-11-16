@@ -1,0 +1,24 @@
+@import '../../styles.scss';
+
+.accordion {
+    .card {
+        background-color: $white;
+        border: none;
+    .card-header {
+        background-color: $primary;
+        a {
+           color: $white;
+        }
+    }
+
+    .card-body {
+        display: inline;
+    }
+    
+    }
+
+    .text-justify {
+        text-align: justify !important;
+    }
+}
+      
