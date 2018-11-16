@@ -1,1 +1,26 @@
 @import '../../styles.scss';
+
+.text-align {
+    text-align: center; 
+}
+
+.view-rate-heading {
+    display: none;
+}
+
+.contentHolder{
+    h1 {
+        margin-block-end: 16px!important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        display: none;
+    }
+    .view-rate-heading {
+        display: block;
+        text-align: center;
+        padding: 0px 0px 15px 0px;;
+    }
+}

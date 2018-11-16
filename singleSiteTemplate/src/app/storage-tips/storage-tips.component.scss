@@ -20,7 +20,10 @@
 }
 
 @media screen and (max-width: 600px) {
-    .storage-content {
-    padding: 16px !important;
+    #storage-tip-holder {
+        padding-top: 60px;
+        .storage-content {
+        padding: 16px !important;
+        }
     }
 }
