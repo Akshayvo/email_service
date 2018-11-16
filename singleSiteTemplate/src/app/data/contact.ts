@@ -5,18 +5,30 @@ export const contact = [
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
-        label: 'Email:',
-        data: 'catskillselfstorage@gmail.com',
-        class: 'fas fa-envelope mx-2 iconColor',
+        label: 'Phone:',
+        data: '(585)924-9290',
+        class: 'fas fa-phone mx-2 iconColor',
+
     },
     {
-        label: 'Phone:',
-        data: '518-943-3003',
-        class: 'fas fa-phone mx-2 iconColor',
+        label: 'Email:',
+        data: 'info@brandselfstorage.com',
+        class: 'fas fa-envelope mx-2 iconColor',
     }
 ];
 
 export const hours = [
+    {
+        label: 'Site Access: ',
+        data: '6:00 AM - 8:00 PM (Mon-Sun)'
+    },
+    {
+        label: 'Office Hours: ',
+        data: '9:00 AM - 6:00 PM (Mon-Sun)'
+    },
+];
+
+export const officeHours = [
     {
         label: 'Mon-Fri: ',
         data: '9:00 am - 6:00 pm'
@@ -30,10 +42,11 @@ export const hours = [
         data: '8:00 am - 12:00 pm'
     },
     {
-        label: 'Facility Access With Pin Code: ',
-        data: '24 hours a day, 7 days a week'
+        label: 'Gate Access ',
+        data: '24/7'
     }
 ];
+
 
 export const socialLinks = [
     {

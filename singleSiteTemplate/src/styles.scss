@@ -2,7 +2,7 @@
 
 //Basic color and font styles
 $primary: #256784;
-$primaryDark: rgb(51, 161, 128);
+$primaryDark: #1c566e;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
@@ -21,6 +21,7 @@ $primaryFont: 'Lato', sans-serif;
 
 * {
     font-family: $primaryFont;
+    font-size: 1rem;
 }
 
 .justify {
@@ -40,9 +41,12 @@ $primaryFont: 'Lato', sans-serif;
     background: $light !important;
 }
 
+.bg-white {
+    background: $white !important;
+}
+
 .bg-translucent{
-    background: rgba(0, 0, 0, 0.6);
-    width: auto !important;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -51,11 +55,15 @@ $primaryFont: 'Lato', sans-serif;
     min-height: 94vh;
 }
 
+.btn {
+    min-width: 160px;
+}
+
 .btn-primary{
     background-color: $primary;
     border-color: $primary; 
     color: $white !important;
-    min-width: 200px;
+    // min-width: 170px;
 }
 
 .btn-primary:hover {
@@ -67,13 +75,14 @@ $primaryFont: 'Lato', sans-serif;
     background-color: transparent;
     border-color: $primary;
     border: 2px solid $primary;
-    min-width: 200px;
-    color: $white !important;
+    // min-width: 170px;
+    color: $primary !important;
 }
 
 .btn-outline-primary:hover {
     background-color: $primaryDark;
     border-color: $primaryDark;
+    color: $white !important;
 }
 
 .section-headings{
@@ -90,4 +99,21 @@ $primaryFont: 'Lato', sans-serif;
 
 .sectionImage{
     width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin-bottom: 0px;
 }

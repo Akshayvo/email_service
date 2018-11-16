@@ -4,37 +4,15 @@ a {
     cursor: pointer;
 }
 
-.iconColor {
-    color: $primary !important;
-}
-
-.contact-header{
-  display: inline;
-  .contact-details{
-    color: $white;
-    font-size: 0.82em;
-    font-weight: 500;
-    width: 100%;
-  }
-}
-
-.social {
-    text-align: right !important;
-    a {
-        color: $dark;
-        text-decoration: none;
-    }
-}
-
-.social :hover {
-    color: $primary;
-    transition-duration: 500ms;
+.navbar {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 }
 
 .nav-link {
     color: $fontColor !important;
     font-weight: 600;
     transition-duration: 500ms;
+    padding: 21px;
 }
 
 .nav-link:hover {
@@ -45,6 +23,7 @@ a {
 
 .nav-link-active {
     color: $primary !important;
+    border-bottom: 5px solid $primary;
 }
 
 .display {

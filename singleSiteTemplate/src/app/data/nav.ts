@@ -8,19 +8,19 @@ export const navLinks = [
         path: '/view-rates',
     },
     {
-        label: 'RESERVE',
-        path: '/reserve',
+        label: 'UNIT SIZER',
+        path: '/unitSizer',
     },
     {
         label: 'PAY RENT',
         path: '/payment'
     },
     {
-        label: 'ABOUT',
-        path: '/about'
+        label: 'STORAGE TIPS',
+        path: '/storageTips',
     },
     {
-        label: 'CONTACT',
+        label: 'CONTACT US',
         path: '/contact'
     },
 ];

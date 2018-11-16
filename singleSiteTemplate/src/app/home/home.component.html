@@ -2,85 +2,123 @@
   <app-header [currentActive]="currentActive"></app-header>
 </div>
   
-<div class="">
-  <div class="jumbotron px-0 m-0">
-    <div class="bg-translucent">
-      <div class="container">
-        <div class="py-5">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="disp">
-                <h1 style="font-weight: 200; font-size: 2.5em;">
-                  <span style="font-weight: 500;">Catskill Self Storage</span><br> Convenient & Affordable
-                </h1>
+<div class="home-container">
+  <div class="jumbotron-container">
+    <div class="jumbotron-top">
+      <div class="jumbotron px-0 m-0">
+        <div class="bg-translucent jumbotorn-skew-style">
+          <div class="container">
+            <div class="jumbotorn-skew-text">
+              <div class="jum-text disp">
+                <h1 class="my-4">Great storage options</h1>
+                <p>With affordable truck rentals, drive-up access, temperature-controlled storage units, and other amenities, storing with us couldn’t be more convenient. Contact us today to get started!</p>
+              </div>
+              <div class="button-width">
+                 <a class="btn btn-primary mr-2" (click)="navigate('/reserve')" role="button">Reserve Unit</a>
+                 <a class="btn btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
               </div>
             </div>
-            <div class="col-md-6  align-self-center content-align">
-              <a class="btn btn-lg btn-outline-primary m-2" (click)="navigate('/view-rates')" role="button">View Rates</a>
-              <a class="btn btn-lg btn-primary m-2" (click)="navigate('/reserve')" role="button">Reserve Unit</a>
-            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron-bottom disp">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-center" *ngFor="let feature of feature">
+            <img [src]="feature?.path" style="padding: 10px" alt="" />
+              <h6 class="feature-text">{{feature.label}}</h6>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container pb-5">
-    
-    <div class="section py-5 m-0">
+  <!--Map and Contact Section-->
+  <div class="bg-light py-5">
+    <div class="container">
       <div class="row">
-        <div class="col-md-6 py-3">
-          <h1 class="heading pb-4">Services We Offer</h1>
-          <p class="justify" *ngFor="let data of serviceOffered">{{data.p}}</p>
+        <div class="col-lg-6 py-2">
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11675.702373314978!2d-77.418952!3d42.979841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb582595e3f89c79!2sVictor+Self+Storage!5e0!3m2!1sen!2sus!4v1540326807113" width="100%" height="400px" frameborder="0" style="border:1px solid #fff;" allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="col-md-6 py-3">
-          <app-tables [tBody]="featuresList" [tHead]="featuresHead"></app-tables>
-        </div>
-      </div>
-    </div>
-
-    <div class="section py-5 m-0">
-      <div class="row">
-        <div class="col-md-6 py-3">
-          <img src="../../assets/images/self-storage-units.jpg" alt="storage unit picture" class="sectionImage">
-        </div>
-        <div class="col-md-6 py-3">
-          <h1 class="heading pb-4">Little About Us</h1>
-          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
-        </div>
-      </div>
-    </div>
-  
-  </div>
-
-  <div class="bg-light">
-    <div class="container py-5">
-      <div class="section py-5 m-0">
-        <div class="row">
-          <div class="col-md-6 py-3">
-            <h1 class="heading pb-4">Location Information</h1>
+        
+        <div class="col-lg-6 py-2">
+          <div class="mb-4">
             <p>
               <span *ngFor="let contact of contactDetails">
-                <b>{{contact.label}}</b> {{contact.data}}<br>
-              </span>
-            </p>
-            <b>Hours:</b>
-            <p>
-              <span *ngFor="let hour of hours">
-                <b>{{hour.label}}</b>{{hour.data}}<br>
-              </span>
+                  <b>{{contact.label}}</b> {{contact.data}}<br>
+                </span>
+                <span *ngFor="let hour of hours">
+                  <b>{{hour.label}}</b>{{hour.data}}<br>
+                </span>
             </p>
           </div>
-          <div class="col-md-6 py-3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47251.23771165393!2d-73.906239!3d42.252851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb3c5b1992ccc62a!2sU-Haul+Neighborhood+Dealer!5e0!3m2!1sen!2sus!4v1466783726746"
-              width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+          
+          <div class="pt-2">
+              <app-tables [tBody]="featuresList"></app-tables>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!--Map and Contact Section Ends Here-->
 
-  <div class="getStarted">
+  <!--About Us Section-->
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6 py-2">
+        <img src="../../assets/images/self-storage-units.jpg" width="100%" height="100%" alt="storage unit picture" class="sectionImage">
+      </div>
+      <div class="col-md-6 py-2">
+        <h1 class="heading pb-4">About Us</h1>
+        <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+      </div>
+    </div>
+  </div>
+  <!--About Us Section Ends Here-->
+
+  
+  
+  <!--Testimonial-->
+  <div id="testimonial" class="py-5 bg-light">
+      <h1 class="text-center pt-3"> Testimonials </h1>
+  <!--Carousel Wrapper-->
+  <div id="carousel-test" class="carousel slide carousel-fade" data-ride="carousel(stop)">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-test" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-test" data-slide-to="1"></li>
+        <li data-target="#carousel-test" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+      <!--Slides-->
+      <div class="container">
+          <div class="carousel-inner" role="listbox">
+              <div class="carousel-item  pb-5 active">
+                <p class="text-center mx-auto pt-4 pb-2">"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location. I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe, and there wasn't anyone around to help out if I had an issue. Victor Self Storage is an extremely good facility, yes, I'll say great. I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects, and I do recommend them every chance I get!"</p>
+                <p class="text-center mx-auto"> - Mary (Victor, New York) </p>
+              </div>
+              <div class="carousel-item pb-5">
+                <p class="text-center mx-auto pt-4 pb-2">"In my line of work, a quality storage facility is essential. I was looking for a clean, climate controlled area. I need the very best in regards to customer service, safety, and surroundings. Victor Self Storage provides all of that and more. The staff is FABULOUS and it is by far the best storage facility in the greater Rochester area!"</p>
+                <p class="text-center mx-auto"> - Mel (Victor, New York) </p>
+              </div>
+              <div class="carousel-item pb-5">
+                <p class="text-center mx-auto pt-4 pb-2">"I was looking for a secure climate controlled storage facility with 24/7 accessibility. I travel the New York Thruway every day, so location was important. Victor Self Storage is conveniently located and is by far one of the nicest storage facilities I have visited and used. I have run my business out of there for two years now and I have nothing but great things to say! Victor Self Storage is safe, secure, clean and accessible. Not much more you could ask for!"</p>
+                <p class="text-center mx-auto"> - Tom (Victor, New York) </p>
+                </div>
+            </div>
+      </div>
+      <!--/.Slides-->
+    </div>
+    <!--/.Carousel Wrapper-->
+    </div>  
+  <!--Testimonials Ends Here-->
+
+
+
+  <div class="getStarted text-center">
     <div class="container py-5">
       <div class="section py-5 m-0">
         <div class="row">
@@ -94,6 +132,6 @@
     </div>
   </div>
 
-</div>
+</div> 
 
 <app-footer></app-footer>

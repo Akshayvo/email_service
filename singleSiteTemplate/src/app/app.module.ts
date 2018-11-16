@@ -18,9 +18,11 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { TablesComponent } from './tables/tables.component';
 import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
-
+import { AccordionComponent } from './accordion/accordion.component'
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
+import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,10 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
     BreadcrumbComponent,
     TablesComponent,
     AboutComponent,
-    ErrorComponent
+    ErrorComponent,
+    UnitSizerComponent,
+    StorageTipsComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

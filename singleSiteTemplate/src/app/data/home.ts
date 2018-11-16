@@ -2,16 +2,16 @@ export const featuresHead = 'The Only Self Storage in Greene County With All of 
 
 export const featuresList = [
     {
-        td1: 'Climate Controlled Units',
-        td2: 'Fully Lit Facility'
+        td1: 'Fully Lit Facility',
+        td2: 'Climate Controlled Units',
     },
     {
-        td1: '24 Hour Video Security',
-        td2: 'Fenced In Facility'
+        td1: 'Fenced In Facility',
+        td2: '24 Hour Video Security',
     },
     {
-        td1: 'Superior Customer Service',
-        td2: 'Gated Access'
+        td1: 'Gated Access',
+        td2: 'Superior Customer Service',
     },
     {
         td1: 'Black Top Paving',
@@ -21,6 +21,25 @@ export const featuresList = [
         td1: 'Packing Material',
         td2: 'Tenant Insurance'
     }
+];
+
+export const feature = [
+    {
+        path: '../../assets/images/jumbotorn-bottom-images/enviro.png',
+        label: 'Convenient Location'
+    },
+    {
+        path: '../../assets/images/jumbotorn-bottom-images/easy.png',
+        label: 'Climate Control'
+    },
+    {
+        path: '../../assets/images/jumbotorn-bottom-images/value.png',
+        label: 'Online Bill Payment'
+    },
+    {
+        path: '../../assets/images/jumbotorn-bottom-images/safe.png',
+        label: 'Auto-pay available'
+    },
 ];
 
 export const aboutUs = [

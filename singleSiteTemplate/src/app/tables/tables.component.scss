@@ -3,14 +3,19 @@
 p{
   padding: 0px;
   margin: 0px;
-  color: $dark; 
+  color: $fontColor; 
 }
 
 table{
-  border: 1px solid $light;
+  border: 1px solid rgb(222, 226, 230);
 }
 
 .table-head{
   background: $primary !important;
   color: $white;
+}
+
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: $white;
 }

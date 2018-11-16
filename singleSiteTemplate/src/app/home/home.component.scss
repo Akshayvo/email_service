@@ -1,106 +1,388 @@
 @import '../../styles.scss';
 
-.jumbotron{
-  // text-align: right !important;
-  background: url(../../assets/images/self-storage-hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-
-  height: 100vh;
-  color: $white;
-  padding-top: 70vh;
-  border-radius: 0px;
-  a{
-    margin-top: 20px;
-  }
-}
-
-.content-align{
-  text-align: right;
-}
-
-.getStarted{
-  background: url(../../assets/images/self-storage-photo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center top !important;
-  color: $white;
-  text-align: center;
+//Common code
+* {
+  color: $fontColor;
 }
 
 .disp {
   display: block;
-  color: $white;
-  a{
-    color: $white;
+}
+
+// HOME jUMBOTRON
+.jumbotron-container {
+  .jumbotron-top {
+    height: 80vh;
+    .jumbotron {
+      background: url(../../assets/images/jumbotorn.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      color: $fontColor;
+      overflow: hidden;
+      padding: 0px;
+      position: relative;
+      .jumbotorn-skew-style {
+        width: calc(65% - 50px);
+        float: left;
+        left: -20%;
+        position: relative;
+        transform: skew(15deg);
+        min-height: 100%;
+        .jumbotorn-skew-text {
+          width: 40%;
+          position: absolute;
+          -webkit-transform: skew(-15deg);
+          transform: skew(-15deg);
+          float: right;
+          text-align: left;
+          margin-top: 25%;
+          right: 3%;
+          padding-left: calc(10% - 33px); 
+          color: $fontColor;
+          h1 {
+            text-transform: uppercase;
+            font-weight: 600; 
+            font-size: 2em;
+          }
+          p {
+            text-align: justify;
+            }
+            a {
+              margin-top: 20px;
+            }
+          }  
+        }
+      }
+    }
+  .jumbotron-bottom {
+    padding-top: 3%;
+    height: 20vh;
+    .feature-text {
+      text-transform: uppercase;
+    }
+  }
+}
+  
+// Testimonial
+.carousel {
+  .carousel-indicators {
+     li {
+      width: 0.825rem;
+      height: 0.825rem;
+      border: 2px solid $primary;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      cursor: pointer; 
+      }
+    .active {
+      background-color: $primary !important;
+    }
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .jumbotron{
-    padding-top: 64vh;
-    background-attachment: unset !important;
-    background-position: center top !important;
-    h1 {
-      font-size: 2.5em !important;
-    }
-  }
-
-  .content-align{
-    text-align: right;
-  }
-
-  .getStarted{
-    background-attachment: unset !important;
-    background-position: center top !important;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .jumbotron{
-    padding-top: 50vh;
-    // text-align: center !important;
-    background-attachment: unset !important;
-    background-position: center top !important;
-    h1 {
-      font-size: 3em !important;
-    }
-  }
-
-  .content-align{
-    text-align: right;
-  }
-
-  .getStarted{
-    background-attachment: unset !important;
-    background-position: center top !important;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .jumbotron{
-    padding-top: 100%;
-    text-align: center !important;
-    background-attachment: unset !important;
-    background-position: center left !important;
-    h1 {
-      font-size: 2em !important;
-    }
-  }
-
-  .content-align{
-    text-align: center;
-  }
-
-  .getStarted{
-    background-attachment: unset !important;
-    background-position: center top !important;
-  }
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .disp {
     display: none;
+  }
+  .jumbotron-container {
+    .jumbotron-top {
+      height: 90vh;
+      .jumbotron {
+        height: 90vh;
+        .jumbotorn-skew-style {
+          width: 100%;
+          position: absolute;
+          transform: skew(0deg);
+          left: 0%;
+          min-height: 15%;
+          bottom: 0;
+          .jumbotorn-skew-text {
+            width: 100%;
+            -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+            float: none;
+            right: 0;
+            top: 0;
+            margin-top: 0px;
+            .button-width {
+              top: 0;
+              text-align: center;
+              }
+            }  
+          }
+        }
+      }
+      .jumbotron-bottom {
+        display: none;
+        height: 0vh;
+      }
+  }
+  .map-responsive {
+    iframe {
+      height: 200px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .disp {
+    display: none;
+  }
+  .jumbotron-container {
+    .jumbotron-top {
+      height: 90vh;
+      .jumbotron {
+        height: 90vh;
+        .jumbotorn-skew-style {
+          width: 100%;
+          position: absolute;
+          transform: skew(0deg);
+          left: 0%;
+          min-height: 25%;
+          bottom: 0;
+          .jumbotorn-skew-text {
+            width: 100%;
+            -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+            float: none;
+            right: 0;
+            top: 0;
+            margin-top: 0px;
+            .button-width {
+              top: 0;
+              text-align: center;
+              align-content: center;
+              .btn {
+                width: 210px;
+              }
+              }
+            }  
+          }
+        }
+      }
+    .jumbotron-bottom {
+      display: none;
+      height: 0vh;
+    }
+  }
+  .map-responsive {
+    iframe {
+      height: 200px;
+    }
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .disp {
+    display: block;
+  }
+
+  .jumbotron-container {
+    .jumbotron-top {
+      height: 80vh;
+      .jumbotron {
+        height: 80vh;
+        .jumbotorn-skew-style {
+          width: calc(80% - 20px);
+          float: left;
+          left: -25%;
+          position: relative;
+          transform: skew(15deg);
+          min-height: 100%;
+          .jumbotorn-skew-text {
+            width: 55%;
+            position: relative;
+            -webkit-transform: skew(-15deg);
+            transform: skew(-15deg);
+            float: right;
+            text-align: left;
+            margin-top: 35%;
+            right: 3%;
+            padding-left: calc(3% - 50px); 
+            color: $fontColor;
+            .button-width {
+              top: 0;
+              text-align: left;
+              align-content: left;
+              display: flex;
+              .btn {
+                width: 160px;
+              }
+            }  
+          }
+        }
+      }
+    }
+    .jumbotron-bottom {
+      padding-top: 3%;
+      height: 20vh;
+      display: block;
+      .feature-text {
+        text-transform: uppercase;
+      }
+    }
+  }
+} 
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  .disp {
+    display: block;
+  }
+
+  .jumbotron-container {
+    .jumbotron-top {
+      height: 100vh;
+      .jumbotron {
+        height: 100vh;
+        .jumbotorn-skew-style {
+          width: calc(80% - 20px);
+          float: left;
+          left: -25%;
+          position: relative;
+          transform: skew(15deg);
+          min-height: 100%;
+          .jumbotorn-skew-text {
+            width: 55%;
+            position: relative;
+            -webkit-transform: skew(-15deg);
+            transform: skew(-15deg);
+            float: right;
+            text-align: left;
+            margin-top: 35%;
+            right: 3%;
+            padding-left: calc(3% - 50px); 
+            color: $fontColor;
+            .button-width {
+              top: 0;
+              text-align: left;
+              align-content: left;
+              display: flex;
+              .btn {
+                width: 160px;
+              }
+            }  
+          }
+        }
+      }
+    }
+    .jumbotron-bottom {
+      padding-top: 3%;
+      height: 20vh;
+      display: block;
+      .feature-text {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .disp {
+    display: block;
+  }
+
+  .jumbotron-container {
+    .jumbotron-top {
+      height: 100vh;
+      .jumbotron {
+        height: 100vh;
+        .jumbotorn-skew-style {
+          width: calc(80% - 20px);
+          float: left;
+          left: -25%;
+          position: relative;
+          transform: skew(15deg);
+          min-height: 100%;
+          .jumbotorn-skew-text {
+            width: 55%;
+            position: relative;
+            -webkit-transform: skew(-15deg);
+            transform: skew(-15deg);
+            float: right;
+            text-align: left;
+            margin-top: 35%;
+            right: 3%;
+            padding-left: calc(3% - 50px); 
+            color: $fontColor;
+            .button-width {
+              top: 0;
+              text-align: left;
+              align-content: left;
+              display: flex;
+              .btn {
+                width: 160px;
+              }
+            }  
+          }
+        }
+      }
+    }
+    .jumbotron-bottom {
+      padding-top: 3%;
+      height: 20vh;
+      display: block;
+      .feature-text {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+} 
+
+@media only screen and (min-width: 1200px) {
+
+  .jumbotron-container {
+    .jumbotron-top {
+      height: 80vh;
+      .jumbotron {
+        height: 80vh;
+        .jumbotorn-skew-style {
+          width: calc(65% - 50px);
+          float: left;
+          left: -20%;
+          position: relative;
+          transform: skew(15deg);
+          min-height: 100%;
+          .jumbotorn-skew-text {
+            width: 40%;
+            position: absolute;
+            -webkit-transform: skew(-15deg);
+            transform: skew(-15deg);
+            float: right;
+            text-align: left;
+            margin-top: 25%;
+            right: 3%;
+            padding-left: calc(9% - 37px); 
+            color: $fontColor;
+            h1 {
+              text-transform: uppercase;
+              font-weight: 600; 
+              font-size: 2em;
+            }
+            p {
+              text-align: justify;
+              }
+              a {
+                margin-top: 20px;
+              }
+              .btn {
+                width: 170px;
+              }
+            }  
+          }
+        }
+      }
+    .jumbotron-bottom {
+      padding-top: 3%;
+      height: 20vh;
+      .feature-text {
+        text-transform: uppercase;
+      }
+    }
   }
 }

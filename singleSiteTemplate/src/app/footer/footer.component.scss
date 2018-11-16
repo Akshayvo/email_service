@@ -1,7 +1,11 @@
 @import '../../styles.scss';
 
 .footer {
-    color: $white;
+    color: $shadow;
     text-align: center;
-    font-size: 0.7em;
+    font-size: 1em;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    // position: static;
 }

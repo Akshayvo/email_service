@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
-import { featuresList, featuresHead, aboutUs, serviceOffered, gettingStarted } from '../data/home';
+import { featuresList, featuresHead, aboutUs, serviceOffered, gettingStarted, feature} from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
   aboutUs: any;
   serviceOffered: any;
   gettingStarted: any;
+  feature: any;
   currentActive: any = 'HOME';
 
 
@@ -29,13 +30,15 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Catskill Self Storage has your self storage unit, packing supplies,
-       and U-Haul truck rental needs covered! Serving the Catskill community since 2003.`
+      content: `Catskill Self Storage has been proudly serving Catskill, Cairo, Leeds,
+                and surrounding communities with affordable storage units since 2004!
+                Whether you just need an extra closet’s worth of storage or a whole apartment,
+                we’ve got your self storage needs covered! Call and reserve today!`
     });
-    this.titleService.setTitle('Affordable Storage Units Near Catskill , NY | 12414 - Catskill Self Storage');
+    this.titleService.setTitle('Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage');
   }
 
-  public navigate(location) {
+  public navigate(location: any) {
     this.router.navigate([location]);
   }
 
@@ -44,6 +47,8 @@ export class HomeComponent implements OnInit {
     this.fetchHours();
     this.fetchFeatures();
     this.fetchStaticContent();
+    this.fetchFeature();
+    // window.scrollTo(0, 0);
   }
 
   public fetchContactDetails() {
@@ -63,6 +68,9 @@ export class HomeComponent implements OnInit {
     this.aboutUs = aboutUs;
     this.serviceOffered = serviceOffered;
     this.gettingStarted = gettingStarted;
+  }
+  public fetchFeature () {
+    this.feature = feature;
   }
 
 }
