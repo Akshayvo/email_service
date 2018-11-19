@@ -12,7 +12,7 @@ import { contact, officeHours } from '../data/contact';
 })
 export class ContactComponent implements OnInit {
 
-  form: FormGroup;
+  // form: FormGroup;
   breadcrumbActive: any = 'Contact Us';
   currentActive: any = 'CONTACT US';
   hours: any;

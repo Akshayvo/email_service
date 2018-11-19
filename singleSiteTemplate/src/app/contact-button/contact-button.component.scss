@@ -1,0 +1,32 @@
+@import '../../styles.scss';
+
+#contact-button {
+    position: relative;
+    top: 40%;
+    right: 0;
+    button {
+        min-width: 40px;
+        background-color: $primary;
+        padding: 10px;
+        border: 1px solid $primary;
+    }
+} 
+
+#contact-button-data {
+    background-color: $white;
+    width: 348px !important;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
+    .heading {
+        h2 {
+            color: $primary;
+        }
+    }
+    .iconColor {
+        color: $primary;
+    }
+    form {
+        margin-bottom: 50px;
+    }
+}

@@ -1,19 +1,19 @@
 <div class="fixed-top">
   <app-header [currentActive]="currentActive"></app-header>
-  <app-breadcrumb [breadcrumbActive]="breadcrumbActive"></app-breadcrumb>
+  <!-- <app-breadcrumb [breadcrumbActive]="breadcrumbActive"></app-breadcrumb> -->
 </div>
 
 <div class="contentHolder">
-  <div class="container" style="padding-top: 100px;">
+  <div class="container">
     <h1 class="py-5" style="text-align: center">Affordable Storage</h1>
     <div class="row">
       <div class="col-md-6">
         <iframe id="advanced_iframe" name="advanced_iframe" src="https://catskillselfstorage.sim.syrasoft.com/viewRates" width="100%"
-          height="700" scrolling="no" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;" onload=";aiResizeIframe(this, 'true','1');"></iframe>
+          height="550" scrolling="no" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;" onload=";aiResizeIframe(this, 'true','1');"></iframe>
       </div>
       <div class="col-md-6 my-3">
         <h1 class="view-rate-heading">Amenities</h1>
-        <img src="../../assets/images/self_storage.jpg" alt="self-storage-view-rates" class="sectionImage" height="250px"/>
+        <img src="../../assets/images/self_storage.jpg" alt="self-storage-view-rates" class="sectionImage" height="300px" width="auto"/>
         <p class="my-4" style="text-align: justify;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
          <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
@@ -22,3 +22,9 @@
 </div>
 
 <app-footer></app-footer>
+
+
+<div class="contact-button" style="position:fixed; right:0px; top:12%; z-index: 16;">
+    <app-contact-button style="z-index:1000;"></app-contact-button>
+  </div>
+  

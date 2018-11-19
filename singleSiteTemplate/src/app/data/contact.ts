@@ -1,8 +1,13 @@
 export const contact = [
     {
         label: 'Address:',
-        data: '5877 Cauterskill Road Catskill, NY 12414',
+        data: '10 Menzo-Haverly Rd, Elma, WA 98541',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+    },
+    {
+        label: 'Email:',
+        data: 'info@brandselfstorage.com',
+        class: 'fas fa-envelope mx-2 iconColor',
     },
     {
         label: 'Phone:',
@@ -10,11 +15,7 @@ export const contact = [
         class: 'fas fa-phone mx-2 iconColor',
 
     },
-    {
-        label: 'Email:',
-        data: 'info@brandselfstorage.com',
-        class: 'fas fa-envelope mx-2 iconColor',
-    }
+
 ];
 
 export const hours = [
