@@ -34,6 +34,15 @@
         position:absolute;
       }
 }
+@media only screen and (max-width: 886px) {
+    #direction-holder {
+        span {
+            a {
+                font-size: .8rem;
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 600px) {
     #direction-holder {

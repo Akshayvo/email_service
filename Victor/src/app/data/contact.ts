@@ -11,7 +11,7 @@ export const contactsVillage = [
     },
     {
         label: 'Email:',
-        data: 'village@victorselfstorage.com',
+        data: 'info@victorselfstorage.com',
         class: 'fas fa-envelope-open mx-2 iconColor',
     },
 ];
@@ -51,7 +51,7 @@ export const contactsMall = [
     },
     {
         label: 'Email:',
-        data: 'mall@victorselfstorage.com',
+        data: 'info@victorselfstorage.com',
         class: 'fas fa-envelope-open mx-2 iconColor',
     },
 ];
