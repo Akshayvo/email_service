@@ -5,8 +5,7 @@ a {
     cursor: pointer;
 }
 
-.navbar {@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+.navbar {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 }
 
@@ -30,6 +29,10 @@ a {
 
 .display {
     display: block;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    border: 1px solid $primary !important;
 }
 
 @media screen and (max-width: 900px) {

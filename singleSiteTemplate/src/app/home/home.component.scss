@@ -23,23 +23,18 @@
       overflow: hidden;
       padding: 0px;
       position: relative;
-      .jumbotorn-skew-style {
+      .jumbotron-skew-style {
         width: calc(65% - 50px);
         float: left;
         left: -20%;
         position: relative;
         transform: skew(15deg);
-        min-height: 100%;
-        .jumbotorn-skew-text {
-          width: 40%;
+        min-height: 100%; 
+        }
+        .jumbotron-skew-text {
+          width: 18%;
           position: absolute;
-          -webkit-transform: skew(-15deg);
-          transform: skew(-15deg);
-          float: right;
-          text-align: left;
-          margin-top: 25%;
-          right: 3%;
-          padding-left: calc(10% - 33px); 
+          margin-top: 15%;
           color: $fontColor;
           h1 {
             text-transform: uppercase;
@@ -49,15 +44,18 @@
           p {
             text-align: justify;
             }
+            .btn {
+              width: 95%;
+              min-width: 110px;
+            }
             a {
               margin-top: 20px;
             }
-          }  
-        }
+          } 
       }
     }
   .jumbotron-bottom {
-    padding-top: 3%;
+    padding-top: 2%;
     height: 20vh;
     .feature-text {
       text-transform: uppercase;
@@ -82,6 +80,25 @@
   }
 }
 
+// Get started Section 
+
+.getStarted {
+  .btn {
+    min-width: 250px;
+    font-size: 1.2rem;
+  }
+}
+
+
+// Sticky Buttons 
+.contact-button {
+  position:fixed; 
+  right:0px; 
+  top:12%; 
+  z-index: 16;
+}
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .disp {
@@ -92,27 +109,25 @@
       height: 90vh;
       .jumbotron {
         height: 90vh;
-        .jumbotorn-skew-style {
+        .jumbotron-skew-style {
           width: 100%;
           position: absolute;
           transform: skew(0deg);
           left: 0%;
           min-height: 15%;
-          bottom: 0;
-          .jumbotorn-skew-text {
+          bottom: 0; 
+          }
+          .jumbotron-skew-text {
             width: 100%;
-            -webkit-transform: skew(0deg);
-            transform: skew(0deg);
-            float: none;
-            right: 0;
-            top: 0;
-            margin-top: 0px;
+            bottom: 5%;
+            left: 0;
             .button-width {
+              padding: 0px 15px;
               top: 0;
+              width: 100%;
               text-align: center;
               }
-            }  
-          }
+            } 
         }
       }
       .jumbotron-bottom {
@@ -125,10 +140,24 @@
       height: 200px;
     }
   }
+
+  // Sticky Buttons 
+.contact-button {
+  position:fixed; 
+  right:0px; 
+  top:15%;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden; 
+  z-index: 16;
+}
 }
 
+
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px)  and (max-width: 767px) {
   .disp {
     display: none;
   }
@@ -137,31 +166,25 @@
       height: 90vh;
       .jumbotron {
         height: 90vh;
-        .jumbotorn-skew-style {
+        .jumbotron-skew-style {
           width: 100%;
           position: absolute;
           transform: skew(0deg);
           left: 0%;
           min-height: 25%;
-          bottom: 0;
-          .jumbotorn-skew-text {
-            width: 100%;
-            -webkit-transform: skew(0deg);
-            transform: skew(0deg);
-            float: none;
-            right: 0;
-            top: 0;
-            margin-top: 0px;
-            .button-width {
-              top: 0;
-              text-align: center;
-              align-content: center;
-              .btn {
-                width: 210px;
-              }
-              }
-            }  
+          bottom: 0; 
           }
+          .jumbotron-skew-text {
+            width: 100%;
+            bottom: 7%;
+            left: 0;
+            .button-width {
+              width: 100%;
+              padding: 0px;
+              text-align: center;
+              padding-left: 7%;
+              }
+            } 
         }
       }
     .jumbotron-bottom {
@@ -176,8 +199,10 @@
   }
 } 
 
+
+
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .disp {
     display: block;
   }
@@ -187,41 +212,33 @@
       height: 80vh;
       .jumbotron {
         height: 80vh;
-        .jumbotorn-skew-style {
+        .jumbotron-skew-style {
           width: calc(80% - 20px);
           float: left;
-          left: -25%;
+          left: -24%;
           position: relative;
           transform: skew(15deg);
           min-height: 100%;
-          .jumbotorn-skew-text {
-            width: 55%;
-            position: absolute;
-            -webkit-transform: skew(-15deg);
-            transform: skew(-15deg);
-            float: right;
-            text-align: left;
-            margin-top: 35%;
-            right: 3%;
-            padding-left: calc(3% - 50px); 
-            color: $fontColor;
-            .button-width {
-              top: 0;
-              text-align: left;
-              align-content: left;
-              display: flex;
-              .btn {
-                width: 160px;
-              }
-            }  
-          }
+        }
+        .jumbotron-skew-text {
+          width: 48%;
+          position: absolute;            
+          padding-left: 3%;
+          padding-top: 20%; 
+          top:0px;
+          bottom: 0;
+          .button-width {
+            width: 100%;
+            text-align: center;
+            padding-left: 0%;
+          }  
         }
       }
     }
     .jumbotron-bottom {
-      padding-top: 3%;
       height: 20vh;
       display: block;
+      padding-top: 5%;
       .feature-text {
         text-transform: uppercase;
       }
@@ -229,51 +246,95 @@
   }
 } 
 
-@media only screen and (min-width: 768px) and (orientation: landscape) {
+
+
+// For small laptops and landscape tablets
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .disp {
     display: block;
   }
-
   .jumbotron-container {
     .jumbotron-top {
-      height: 100vh;
+      height: 80vh;
       .jumbotron {
-        height: 100vh;
-        .jumbotorn-skew-style {
-          width: calc(80% - 20px);
+        background: url(../../assets/images/jumbotorn.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        color: $fontColor;
+        overflow: hidden;
+        padding: 0px;
+        position: relative;
+        .jumbotron-skew-style {
+          width: calc(65% - 50px);
           float: left;
-          left: -25%;
+          left: -15%;
           position: relative;
           transform: skew(15deg);
-          min-height: 100%;
-          .jumbotorn-skew-text {
-            width: 55%;
-            position: absolute;
-            -webkit-transform: skew(-15deg);
-            transform: skew(-15deg);
-            float: right;
-            text-align: left;
-            margin-top: 35%;
-            right: 3%;
-            padding-left: calc(3% - 50px); 
-            color: $fontColor;
-            .button-width {
-              top: 0;
-              text-align: left;
-              align-content: left;
-              display: flex;
-              .btn {
-                width: 160px;
-              }
-            }  
+          min-height: 100%; 
           }
+          .jumbotron-skew-text {
+            width: 40%;
+            position: absolute;
+            margin-top: 0%;
+            color: $fontColor;
+            padding-left: 3%;
+            padding-top: 20%; 
+            top:0px;
+            bottom: 0;
+            } 
         }
       }
-    }
     .jumbotron-bottom {
-      padding-top: 3%;
+      padding-top: 2%;
       height: 20vh;
-      display: block;
+      .feature-text {
+        text-transform: uppercase;
+      }
+    }
+  }
+} 
+
+
+
+// For larger Laptops with high resolution
+@media only screen and (min-width: 1200px) and ( max-width: 1439 ) {
+  .disp {
+    display: block;
+  }
+  
+  .jumbotron-container {
+    .jumbotron-top {
+      height: 80vh;
+      .jumbotron {
+        background: url(../../assets/images/jumbotorn.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        color: $fontColor;
+        overflow: hidden;
+        padding: 0px;
+        position: relative;
+        .jumbotron-skew-style {
+          width: calc(65% - 50px);
+          float: left;
+          left: -20%;
+          position: relative;
+          transform: skew(15deg);
+          min-height: 100%; 
+          }
+          .jumbotron-skew-text {
+            width: 22%;
+            top: 0;
+            padding-top: 0%;
+            } 
+        }
+      }
+    .jumbotron-bottom {
+      padding-top: 2%;
+      height: 20vh;
       .feature-text {
         text-transform: uppercase;
       }
@@ -281,104 +342,92 @@
   }
 }
 
-@media only screen and (min-width: 992px) {
+
+// For larger desktop size
+@media only screen and (min-width: 1440px)  and (max-width: 1599px) {
   .disp {
     display: block;
   }
-
-  .jumbotron-container {
-    .jumbotron-top {
-      height: 100vh;
-      .jumbotron {
-        height: 100vh;
-        .jumbotorn-skew-style {
-          width: calc(80% - 20px);
-          float: left;
-          left: -25%;
-          position: relative;
-          transform: skew(15deg);
-          min-height: 100%;
-          .jumbotorn-skew-text {
-            width: 55%;
-            position: absolute;
-            -webkit-transform: skew(-15deg);
-            transform: skew(-15deg);
-            float: right;
-            text-align: left;
-            margin-top: 35%;
-            right: 3%;
-            padding-left: calc(3% - 50px); 
-            color: $fontColor;
-            .button-width {
-              top: 0;
-              text-align: left;
-              align-content: left;
-              display: flex;
-              .btn {
-                width: 160px;
-              }
-            }  
-          }
-        }
-      }
-    }
-    .jumbotron-bottom {
-      padding-top: 3%;
-      height: 20vh;
-      display: block;
-      .feature-text {
-        text-transform: uppercase;
-      }
-    }
-  }
-
-} 
-
-@media only screen and (min-width: 1200px) {
-
+  
   .jumbotron-container {
     .jumbotron-top {
       height: 80vh;
       .jumbotron {
+        background: url(../../assets/images/jumbotorn.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         height: 80vh;
-        .jumbotorn-skew-style {
+        color: $fontColor;
+        overflow: hidden;
+        padding: 0px;
+        position: relative;
+        .jumbotron-skew-style {
           width: calc(65% - 50px);
           float: left;
           left: -20%;
           position: relative;
           transform: skew(15deg);
-          min-height: 100%;
-          .jumbotorn-skew-text {
-            width: 40%;
-            position: absolute;
-            -webkit-transform: skew(-15deg);
-            transform: skew(-15deg);
-            float: right;
-            text-align: left;
-            margin-top: 25%;
-            right: 3%;
-            padding-left: calc(9% - 37px); 
-            color: $fontColor;
-            h1 {
-              text-transform: uppercase;
-              font-weight: 600; 
-              font-size: 2em;
-            }
-            p {
-              text-align: justify;
-              }
-              a {
-                margin-top: 20px;
-              }
-              .btn {
-                width: 170px;
-              }
-            }  
+          min-height: 100%; 
           }
+          .jumbotron-skew-text {
+            width: 25%;
+            top: 0;
+            padding-top: 0%;
+            } 
         }
       }
     .jumbotron-bottom {
-      padding-top: 3%;
+      padding-top: 2%;
+      height: 20vh;
+      .feature-text {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+// For larger desktop size
+@media only screen and (min-width: 1600px) {
+  .disp {
+    display: block;
+  }
+  
+  .jumbotron-container {
+    .jumbotron-top {
+      height: 80vh;
+      .jumbotron {
+        background: url(../../assets/images/jumbotorn.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        color: $fontColor;
+        overflow: hidden;
+        padding: 0px;
+        position: relative;
+        .jumbotron-skew-style {
+          width: calc(65% - 50px);
+          float: left;
+          left: -19%;
+          position: relative;
+          transform: skew(15deg);
+          min-height: 100%; 
+          }
+          .jumbotron-skew-text {
+            width: 18%;
+            top: 0;
+            padding-top: 0%;
+            } 
+        }
+      }
+    .jumbotron-bottom {
+      padding-top: 2%;
       height: 20vh;
       .feature-text {
         text-transform: uppercase;

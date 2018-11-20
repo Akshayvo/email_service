@@ -44,16 +44,19 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Catskill Self Storage is a customer service driven self storage facility conveniently located at the crossroads of Rt 47
-            and 23 less than 4 miles from idyllic downtown Catskill, N.Y.`,
+        p: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.`,
     },
     {
-        p: `Opened in 2003, Catskill Self Storage is proud to provide quality, affordable storage to the communities of Cairo,
-            South Cairo, Leeds and Catskill.`,
-    },
-    {
-        p: `We strive to provide the highest level of customer service at the most competitive prices.
-            Give us a shout today and let Catskill Self Storage handle all of your self storage needs!`,
+        p: `Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
     },
 ];
 
@@ -73,6 +76,17 @@ export const serviceOffered = [
 
 ];
 
-export const gettingStarted = `Getting started with Catskill Self Storage is a quick and easy process.
-                                Simply click the button below and create your reservation through our tenant portal or reach
-                                out to us at 518-943-3003 to receive prompt and friendly customer service!`;
+export const gettingStarted = `Sed sed risus pretium quam vulputate dignissim.
+                                Posuere morbi leo urna molestie at elementum eu
+                                facilisis. Nisl suscipit adipiscing bibendum est.
+                                In dictum non consectetur a erat.
+                                Malesuada pellentesque elit eget gravida cum.
+                                Ornare lectus sit amet est placerat in egestas erat.
+                                Sed velit dignissim sodales ut eu sem.
+                                Leo duis ut diam quam nulla porttitor massa.
+                                Enim nec dui nunc mattis enim ut.
+                                Velit laoreet id donec ultrices tincidunt arcu non sodales.
+                                Sit amet risus nullam eget.
+                                Lorem donec massa sapien faucibus et molestie ac.
+                                Lorem mollis aliquam ut porttitor leo a.
+                                In ornare quam viverra orci sagittis eu volutpat odio facilisis.`;

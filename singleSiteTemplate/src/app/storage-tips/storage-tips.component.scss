@@ -19,6 +19,14 @@
     }
 }
 
+ // Sticky Buttons 
+ .contact-button {
+    position:fixed; 
+    right:0px; 
+    top:12%; 
+    z-index: 16;
+  } 
+
 @media screen and (max-width: 600px) {
     #storage-tip-holder {
         padding-top: 60px;
@@ -26,4 +34,14 @@
         padding: 16px !important;
         }
     }
+
+    .contact-button {
+        position:fixed; 
+        right:0px; 
+        top:15%;
+        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden; 
+        z-index: 16;
+      }
 }

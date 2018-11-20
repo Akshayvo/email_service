@@ -1,8 +1,7 @@
 @import '../../styles.scss';
 
 #contact-button {
-    position: relative;
-    top: 40%;
+    position: fixed;
     right: 0;
     button {
         min-width: 40px;
@@ -10,23 +9,28 @@
         padding: 10px;
         border: 1px solid $primary;
     }
-} 
-
-#contact-button-data {
-    background-color: $white;
-    width: 348px !important;
-    padding: 20px;
-    position: relative;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
-    .heading {
-        h2 {
+    #contact-button-data {
+        background-color: $white;
+        width: 348px !important;
+        padding: 20px;
+        margin-right: 10px;
+        z-index: 1000;
+        box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.16);
+        overflow: auto;
+        overflow-x: hidden; 
+        .heading {
+            h2 {
+                color: $primary;
+            }
+        }
+        .iconColor {
             color: $primary;
         }
+        form {
+            margin-bottom: 50px;
+        }
     }
-    .iconColor {
-        color: $primary;
-    }
-    form {
-        margin-bottom: 50px;
-    }
-}
+} 
+
+
+

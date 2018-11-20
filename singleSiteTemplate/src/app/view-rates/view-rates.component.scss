@@ -1,28 +1,33 @@
 @import '../../styles.scss';
 
-.text-align {
-    text-align: center; 
-}
-
-.view-rate-heading {
-    display: none;
-}
-
 .contentHolder{
-    // min-height: 95vh;
     padding-top: 100px;
-    h1 {
-        margin-block-end: 16px!important;
+}
+
+// Sticky Buttons 
+.contact-button {
+    position:fixed; 
+    right:0px; 
+    top:12%; 
+    z-index: 16;
+  }
+
+@media screen and (max-width: 600px) {
+    .contentHolder {
+        padding-top: 60px;
+    }
+    .contact-button {
+        position:fixed; 
+        right:0px; 
+        top:15%;
+        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden; 
+        z-index: 16;
+      }
+      img {
+        height: 200px;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 480px) {
-    h1 {
-        display: none;
-    }
-    .view-rate-heading {
-        display: block;
-        text-align: center;
-        padding: 0px 0px 15px 0px;;
-    }
-}

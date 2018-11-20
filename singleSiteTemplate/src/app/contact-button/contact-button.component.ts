@@ -40,7 +40,6 @@ export class ContactButtonComponent implements OnInit {
   }
   public fetchContactDetails() {
     this.contactInfo = contact;
-    console.log(this.contactInfo);
   }
 
   public fetchHours() {

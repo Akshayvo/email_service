@@ -13,9 +13,21 @@
         .single-block {
             background-color: $white;
             border: 1px solid $border;
+            .col-sm-5 {
+                padding-top: 20px;
+            }
         }
     }
 }
+
+.contact-button {
+    position:fixed; 
+    right:0px; 
+    top:12%; 
+    z-index: 16;
+  }
+
+ 
 
 @media only screen and (max-width: 600px) {
     #unit-sizer-holder {
@@ -25,6 +37,10 @@
         }
         #unit-sizer-container {
             padding: 16px !important;
+            .single-block {
+                .col-sm-5 {
+                    padding-top: 20px !important;
+                }
         }
     }
 
@@ -32,4 +48,15 @@
     .col-sm-7 {
         padding-left: 30px !important;
     }
+}
+     // Sticky Buttons 
+  .contact-button {
+    position:fixed; 
+    right:0px; 
+    top:15%;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    z-index: 16;
+  }
 }
