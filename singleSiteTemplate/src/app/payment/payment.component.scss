@@ -1,7 +1,7 @@
 @import '../../styles.scss';
 
 #rent-holder {
-    padding-top: 100px;
+    padding-top: 30px;
     min-height: 89vh;
     #rent-sub-holder {
         padding: 64px;
@@ -35,7 +35,7 @@
 @media only screen and (max-width: 600px) {
 
     #rent-holder {
-        padding-top: 60px;
+        padding-top: 0px;
         #rent-sub-holder {
             padding: 16px !important;
         }

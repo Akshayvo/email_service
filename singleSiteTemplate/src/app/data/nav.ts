@@ -1,7 +1,7 @@
 export const navLinks = [
     {
         label: 'HOME',
-        path: '/',
+        path: ' ',
     },
     {
         label: 'VIEW RATES',
@@ -9,18 +9,18 @@ export const navLinks = [
     },
     {
         label: 'UNIT SIZER',
-        path: '/unitSizer',
+        path: 'unitSizer',
     },
     {
         label: 'PAY RENT',
-        path: '/payment'
+        path: 'payment'
     },
     {
         label: 'STORAGE TIPS',
-        path: '/storageTips',
+        path: 'storageTips',
     },
     {
         label: 'CONTACT US',
-        path: '/contact'
+        path: 'contact'
     },
 ];

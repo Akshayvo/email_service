@@ -1,0 +1,21 @@
+
+ /* Sticky Buttons  */
+.contact-button {
+  position:fixed; 
+  right:0px; 
+  top:12%; 
+  z-index: 16;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+    .contact-button {
+        position:fixed; 
+        right:0px; 
+        top:15%;
+        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden; 
+        z-index: 16;
+      }
+    }

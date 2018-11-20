@@ -12,7 +12,7 @@ import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
-  { path: '', component: HomeComponent },
+  { path: ' ', component: HomeComponent },
   { path: 'reserve', component: ReserveComponent },
   { path: 'unitSizer', component: UnitSizerComponent },
   { path: 'storageTips', component: StorageTipsComponent },

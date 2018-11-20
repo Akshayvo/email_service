@@ -9,7 +9,6 @@ import { Title, Meta } from '@angular/platform-browser';
 export class ReserveComponent implements OnInit {
 
   breadcrumbActive: any = 'Reserve Unit';
-  currentActive: any = 'RESERVE';
 
   constructor(
     private titleService: Title,
@@ -17,7 +16,8 @@ export class ReserveComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Reserve your self storage unit, climate controlled storage unit or U-Haul moving truck today at Catskill Self Storage!`
+      content: `Reserve your self storage unit, climate controlled storage unit or U-Haul moving 
+                truck today at Catskill Self Storage!`
     });
     this.titleService.setTitle('Reserve A Storage Unit Near Catskill, NY | 12414 - Catskill Self Storage');
   }

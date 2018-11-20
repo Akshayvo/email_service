@@ -12,13 +12,13 @@
 // HOME jUMBOTRON
 .jumbotron-container {
   .jumbotron-top {
-    height: 80vh;
+    height: 70vh;
     .jumbotron {
       background: url(../../assets/images/jumbotorn.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      height: 80vh;
+      height: 70vh;
       color: $fontColor;
       overflow: hidden;
       padding: 0px;
@@ -56,7 +56,7 @@
     }
   .jumbotron-bottom {
     padding-top: 2%;
-    height: 20vh;
+    height: 15vh;
     .feature-text {
       text-transform: uppercase;
     }
@@ -90,13 +90,6 @@
 }
 
 
-// Sticky Buttons 
-.contact-button {
-  position:fixed; 
-  right:0px; 
-  top:12%; 
-  z-index: 16;
-}
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -400,13 +393,13 @@
   
   .jumbotron-container {
     .jumbotron-top {
-      height: 80vh;
+      height: 75vh;
       .jumbotron {
         background: url(../../assets/images/jumbotorn.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 80vh;
+        height: 75vh;
         color: $fontColor;
         overflow: hidden;
         padding: 0px;
