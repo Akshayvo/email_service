@@ -1,7 +1,7 @@
 @import '../../styles.scss';
 
 #unit-sizer-holder {
-    padding-top: 30px;
+    padding-top: 100px;
     min-height: 89vh;
     margin-bottom: 50px;
     text-align: justify;
@@ -31,7 +31,7 @@
 
 @media only screen and (max-width: 600px) {
     #unit-sizer-holder {
-        padding-top: 0px;
+        padding-top: 60px;
         .heading {
             padding-bottom: 30px !important;
         }

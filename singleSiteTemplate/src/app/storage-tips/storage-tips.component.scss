@@ -9,7 +9,7 @@
 }
 
 #storage-tip-holder {
-    padding-top: 30px;
+    padding-top: 100px;
     min-height: 89vh;
     margin-bottom: 50px;
 
@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 600px) {
     #storage-tip-holder {
-        padding-top: 0px;
+        padding-top: 60px;
         .storage-content {
         padding: 16px !important;
         }

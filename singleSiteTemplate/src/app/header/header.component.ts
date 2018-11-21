@@ -1,7 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 import { Router } from '@angular/router';
-import { contact, socialLinks } from '../data/contact';
 import { navLinks } from '../data/nav';
+
 
 @Component({
   selector: 'app-header',
@@ -9,33 +9,35 @@ import { navLinks } from '../data/nav';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  @ViewChild('navbarToggler') navbarToggler: ElementRef;
 
-  contactDetails: any;
   navLinks: any;
-  socialLinks: any;
-  isCollapsed = false;
-
+  navbarCollapsed = true;
 
   constructor(
     private router: Router,
   ) { }
 
   ngOnInit() {
-    this.fetchContactDetails();
     this.fetchNavigationLinks();
-    this.fetchSocialLinks();
-  }
-
-  public fetchContactDetails() {
-    this.contactDetails = contact;
-  }
-
-  public fetchSocialLinks() {
-    this.socialLinks = socialLinks;
   }
 
   public fetchNavigationLinks() {
     this.navLinks = navLinks;
   }
+
+  public navigate (location: any) {
+    this.router.navigate([location]);
+  }
+
+navBarTogglerIsVisible() {
+  return this.navbarToggler.nativeElement.offsetParent !== null;
+}
+
+collapseNav() {
+  if (this.navBarTogglerIsVisible()) {
+    this.navbarToggler.nativeElement.click();
+  }
+}
 
 }

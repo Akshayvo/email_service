@@ -25,19 +25,18 @@ export class ContactButtonComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.flag = false;
     this.fetchContactDetails();
     this.fetchHours();
   }
 
 
-  public dataShow() {
-    if (this.flag === false) {
-      this.flag = true;
-    } else {
-      this.flag = false;
-    }
-  }
+  // public dataShow() {
+  //   if (this.flag === false) {
+  //     this.flag = true;
+  //   } else {
+  //     this.flag = false;
+  //   }
+  // }
   public fetchContactDetails() {
     this.contactInfo = contact;
   }

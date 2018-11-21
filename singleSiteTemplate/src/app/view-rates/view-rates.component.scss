@@ -1,7 +1,8 @@
 @import '../../styles.scss';
 
 .contentHolder{
-    padding-top: 30px;
+    padding-top: 100px;
+    min-height: 93vh;
 }
 
 // Sticky Buttons 
@@ -14,7 +15,7 @@
 
 @media screen and (max-width: 600px) {
     .contentHolder {
-        padding-top: 0px;
+        padding-top: 60px;
     }
     .contact-button {
         position:fixed; 

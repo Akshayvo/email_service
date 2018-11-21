@@ -1,7 +1,7 @@
 export const navLinks = [
     {
         label: 'HOME',
-        path: ' ',
+        path: '/home',
     },
     {
         label: 'VIEW RATES',

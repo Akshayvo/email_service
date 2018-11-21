@@ -1,9 +1,9 @@
 @import '../../styles.scss';
 
 .contentHolder {
-    padding-top: 30px;
+    padding-top: 100px;
     margin-bottom: 50px;
-    min-height: 88vh;
+    min-height: 89vh;
     max-height: auto;
     display: block;
     .contact-data {
@@ -54,7 +54,7 @@
 
 @media only screen and (max-width: 600px) {
     .contentHolder {
-      padding-top: 0px;
+      padding-top: 60px;
       .heading {
         padding-bottom: 30px !important;
     }

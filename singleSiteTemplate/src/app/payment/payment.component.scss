@@ -1,8 +1,8 @@
 @import '../../styles.scss';
 
 #rent-holder {
-    padding-top: 30px;
-    min-height: 89vh;
+    padding-top: 100px;
+    min-height: 88vh;
     #rent-sub-holder {
         padding: 64px;
         background-color: $light;
@@ -35,7 +35,7 @@
 @media only screen and (max-width: 600px) {
 
     #rent-holder {
-        padding-top: 0px;
+        padding-top: 60px;
         #rent-sub-holder {
             padding: 16px !important;
         }
