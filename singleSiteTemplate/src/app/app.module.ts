@@ -60,5 +60,6 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
   providers: [
     Title,
   ],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
