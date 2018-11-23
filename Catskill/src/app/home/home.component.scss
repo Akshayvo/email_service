@@ -71,7 +71,7 @@
  // }
  
  .jumbotorn-skew-style{
-   width: 50%;
+   width: 60%;
    float: left;
    left: -25%;
    position: relative;
@@ -85,7 +85,7 @@
    position: relative;
    top: 25%;
    float: right;
-   right: 6%;
+   right: 8%;
    p {
      text-align: justify;
    }
@@ -93,8 +93,6 @@
     margin-right: 10px;
   }
  }
-
-
  
 @media only screen and (max-width: 2599px) and (min-width: 2300px) {
   .display {
@@ -109,7 +107,6 @@
     top:40%;
   }
 } 
-
 @media only screen and (max-width: 2299px) and (min-width: 1900px) {
   .jumbotorn-skew-style {
     width: 50%
@@ -123,7 +120,6 @@
     padding-left: 0px;
   }
 }
-
 @media only screen and (max-width: 1899px) and (min-width: 1600px) {
   .jumbotorn-skew-style {
     width: 55%;
@@ -137,7 +133,6 @@
     padding-left: 0px;
   }
 }
-
 @media only screen and (max-width: 1599px) and (min-width: 1400px) {
   .jumbotorn-skew-style {
     width: 55%;
@@ -165,123 +160,160 @@
     padding-left: 0px;
   }
 }
-
-@media only screen and (min-width: 1280px) and (max-height: 700px) {
-  .feature {
-    div {
-      padding-top: 5px !important;
-      padding-bottom: 5px !important; 
-    }
-  }
-  .jumbotorn-skew-text {
-    top: 25%;
-    h1 {
-      font-size: 2.2em !important;
-    }
-    .btn-primary {
-      min-width: 150px;
-      font-size: 1em;
-    }
-    .btn-outline-primary {
-      min-width: 150px;
-      font-size: 1em;
-    }
-  }
-}
-
-@media only screen and (max-width: 960px) and (min-width: 768px) and (max-height: 600px) {
-  .jumbotron {
-    height: 100vh;
-  }
-  .jumbotorn-skew-text {
-    font-size: 0.8em;
-    .btn-primary {
-      min-width: 150px;
-      font-size: 1em;
-    }
-    .btn-outline-primary {
-      min-width: 150px;
-      font-size: 1em;
-    }
-    .display {
-      display: flex;
-    }
-  }
-  .jumbotron-top {
-    height: 100vh;
-  }
-  .jumbotron-bottom {
-    height: 168px;
-  }
-}
-
-@media only screen and (max-width: 960px) and (min-width: 768px) and (max-height: 480px) {
-  .jumbotron {
-    height: 100vh;
-  }
-  .jumbotorn-skew-text {
-    font-size: 0.8em;
-    .btn-primary {
-      min-width: 100px;
-      font-size: 1em;
-    }
-    .btn-outline-primary {
-      min-width: 100px;
-      font-size: 1em;
-    }
-    .display {
-      display: flex;
-    }
-    top: 20% !important;
-  }
-  .jumbotron-top {
-    height: 100vh;
-  }
-  .jumbotron-bottom {
-    height: 168px;
-  }
-}
  
-@media only screen and (max-width: 1279px) and (min-width: 1024px) {    //laptop
-  .jumbotron {
-    height: 100vh;
+
+@media only screen and (max-width: 1279px) and (min-width: 1025px) {    //laptop
+  .display {
+    display: flex;
+    padding-left: 0px;
   }
+
   .jumbotorn-skew-style {
-    width: 75%;
+    width: 70%
+  }
+
+  .jumbotorn-skew-text {
+    right: 10%
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 992px) {
+  .jumbotorn-skew-style {
+    width: 70%;
   }
   .jumbotorn-skew-text {
-    width: 55%;
-    top: 40%;
+    width: 50%;
+    right: 8%;
+    top: 30%
   }
-  .jumbotron-top {
-    height: 100vh;
-  }
-  .jumbotron-bottom {
-    height: 168px;
-  }
-  .display {
+  .display {  
     display: flex;
     padding-left: 0px;
   }
 }
  
- @media only screen and (max-width: 1023px) and (min-width: 768px) {               //tablet
-   .jumbotorn-skew-style {
-     h1 {
-       font-size: 2.5em !important;
-     }
-    width: 75%;
+@media only screen and (max-width: 1024px) and (min-width: 992px) and (max-height: 768px) and (min-height: 540px){
+  .jumbotron {
+    height: 100vh;
+  }
+  .jumbotron-top {
+    height: 100vh;
+  }
+  .jumbotron-bottom {
+    height: 170px;
+  }
+  .display {
+    display: flex;
+    padding-left: 0px;
+  }
+  .jumbotorn-skew-style {
+    width: 70%;
+  }
+  .jumbotorn-skew-text {
+    width: 50%;
+    right: 8%;
+    top: 30%
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 992px) and (max-height: 540px){
+  .jumbotron {
+    height: 100vh;
+  }
+  .jumbotron-top {
+    height: 100vh;
+  }
+  .jumbotron-bottom {
+    height: 170px;
+  }
+  .display {
+    display: flex;
+    padding-left: 0px;
+  }
+  .jumbotorn-skew-style {
+    width: 70%;
+  }
+  .jumbotorn-skew-text {
+    width: 50%;
+    right: 8%;
+    top: 45%;
+    h1 {
+      font-size: 2rem!important;
+    } 
+    p{
+      display: none;
+    }
+    .btn-primary {
+      min-width: 150px;
+      font-size: 1em;
+    }
+    .btn-outline-primary {
+      min-width: 150px;
+      font-size: 1em;
+    }
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) and (min-height: 701px) {               //tablet
+  .display {
+    display: flex;
+    padding-left: 0px;
+  }
+  .jumbotron {
+    height: 100vh;
+  }
+  .feature {
+    display: none;
+  }
+  .jumbotorn-skew-style {
+    width: 80%;
+  }
+  .jumbotorn-skew-text {
+    width: 55%;
+    right: 10%;
+    top: 40%; 
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 700px) {
+  .jumbotron{
+    text-align: center !important;
+    background-attachment: unset !important;
+    background-position: center left !important;
+    height: 100vh!important;
+  }
+   .feature {
+     display: none;
    }
-   .jumbotorn-skew-text {
-      width: 55%;
-      top: 30%
+ 
+   .disp {
+     display: none;
    }
-   .display {
-    padding: 0px;
+ 
+   .button-width{
+     width: 200px;
+     margin: auto;
    }
-  .home-map {
-    width: 50% !important;
+  .row {
+    flex-wrap: wrap;
+   }
+   .jumbotorn-skew-style{
+    width:100%;
+    float: none!important;  
+    left: 0px;
+    position: absolute;
+    bottom: 0px;
+    transform: skew(0deg);
+    height: 90px;
+  }
+  
+  .jumbotorn-skew-text {
+    transform: skew(0deg);
+    width: 100%;  
+    position: absolute;
+    top: 0px;
+    left: 0px;
     margin: auto;
+    .col-md-6 {
+      max-width: 100%;
+    }
   }
 }
  
@@ -325,59 +357,58 @@
     left: 0px;
     margin: auto;
   }
+ }
+  
 
- }
- 
- 
  @media only screen and (max-width: 480px) {                             //mobile
-   .jumbotron{
-     text-align: center !important;
-     background-attachment: unset !important;
-     background-position: center left !important;
-     height: 100vh!important;
-     h1 {
-       font-size: 2em !important;
-     }
-   }
- 
- 
-   .feature {
-     display: none;
-   }
- 
-   .disp {
-     display: none;
-   }
- 
-   .button-width{
-     max-width: 200px;
-     margin: auto;
-   }
- 
- 
-   .jumbotorn-skew-style{
-     width:100%;
-     float: none!important;  
-     left: 0px;
-     position: absolute;
-     bottom: 0px;
-     transform: skew(0deg);
-     height: 160px;
-   }
-   
-   .jumbotorn-skew-text {
-     transform: skew(0deg);
-     width: 100%;  
-     position: absolute;
-     top: 0px;
-     left: 0px;
-     margin: auto;
-     .btn-primary {
-      margin-right: 0px;
+  .jumbotron{
+    text-align: center !important;
+    background-attachment: unset !important;
+    background-position: center left !important;
+    height: 100vh!important;
+    h1 {
+      font-size: 2em !important;
     }
+  }
+
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .button-width{
+    max-width: 200px;
+    margin: auto;
+  }
+
+
+  .jumbotorn-skew-style{
+    width:100%;
+    float: none!important;  
+    left: 0px;
+    position: absolute;
+    bottom: 0px;
+    transform: skew(0deg);
+    height: 160px;
+  }
+  
+  .jumbotorn-skew-text {
+    transform: skew(0deg);
+    width: 100%;  
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    .btn-primary {
+     margin-right: 0px;
    }
-   .display {
-     padding-left: 50px;
-     padding-right: 50px;
-   }
- }
+  }
+  .display {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
