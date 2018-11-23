@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { WINDOW } from '@ng-toolkit/universal';
+import { Component, OnInit , Inject} from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 
@@ -23,7 +24,7 @@ export class HomeComponent implements OnInit {
   currentActive: any = 'HOME';
 
 
-  constructor(
+  constructor(@Inject(WINDOW) private window: Window, 
     private router: Router,
     private titleService: Title,
     private meta: Meta

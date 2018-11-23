@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { WINDOW } from '@ng-toolkit/universal';
+import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
@@ -11,7 +12,7 @@ export class ViewRatesComponent implements OnInit {
   breadcrumbActive: any = 'View Rates';
   currentActive: any = 'VIEW RATES';
 
-  constructor(
+  constructor(@Inject(WINDOW) private window: Window, 
     private titleService: Title,
     private meta: Meta
   ) {
@@ -26,7 +27,7 @@ export class ViewRatesComponent implements OnInit {
   }
 
   ngOnInit() {
-    window.scrollTo(0, 0);
+    this.window.scrollTo(0, 0);
   }
 
 }

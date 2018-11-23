@@ -43,7 +43,7 @@ button {
     .contact-button {
       position:fixed; 
       right:0px; 
-      top:30px;
+      top:80px;
       overflow: auto;
       overflow-y: auto;
       overflow-x: hidden; 

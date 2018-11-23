@@ -30,19 +30,20 @@ export class ContactButtonComponent implements OnInit {
   }
 
 
-  // public dataShow() {
-  //   if (this.flag === false) {
-  //     this.flag = true;
-  //   } else {
-  //     this.flag = false;
-  //   }
-  // }
   public fetchContactDetails() {
     this.contactInfo = contact;
   }
 
   public fetchHours() {
     this.hours = officeHours;
+  }
+
+  public disableBodyScroll() {
+    document.body.style.overflowY = 'hidden';
+  }
+
+  public enableBodyScroll() {
+    document.body.style.overflowY = 'auto';
   }
 
   public validate(check: string, value: any, id: string, helpId: string) {

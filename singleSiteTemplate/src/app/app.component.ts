@@ -1,8 +1,8 @@
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter, map, mergeMap } from 'rxjs/operators';
-import { WindowScrolling } from './window-scroll';
+// import { WINDOW } from '@ng-toolkit/universal';
 
 @Component({
   selector: 'app-root',
@@ -12,17 +12,15 @@ import { WindowScrolling } from './window-scroll';
 export class AppComponent implements OnInit {
   title = 'ngStarterPack';
   flag: boolean;
+  // x = matchMedia('(max-width: 600px)');
   public offsets: number[];
-  private windowScrolling: WindowScrolling;
 
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private angulatics: Angulartics2GoogleAnalytics,
-    windowScrolling: WindowScrolling
+    // @Inject(WINDOW) private window: Window,
   ) {
-    this.windowScrolling = windowScrolling;
-    this.offsets = this.range( 1, 20 );
   }
   ngOnInit() {
     this.flag = false;
@@ -32,30 +30,18 @@ export class AppComponent implements OnInit {
     const onNavigationEnd = this.router.events.pipe(filter(event => event instanceof NavigationEnd));
   }
 
-
   public dataShow() {
     if (this.flag === false) {
       this.flag = true;
-      this.windowScrolling.disable();
+      // if (this.x.matches) {
+      // document.body.style.overflow = 'hidden';
+      // }
     } else {
       this.flag = false;
-      this.windowScrolling.enable();
+      // if (this.x.matches) {
+        // document.body.style.overflow = 'auto';
+        // }
     }
   }
-
-  private range( from: number, to: number ): number[] {
-
-    let values = [];
-
-    for ( let i = from ; i <= to ; i++ ) {
-
-        values.push( i );
-
-    }
-
-    return( values );
-
-}
-
 
 }

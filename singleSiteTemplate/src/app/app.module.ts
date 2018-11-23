@@ -1,3 +1,5 @@
+import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -24,7 +26,6 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
-import { WindowScrolling } from './window-scroll';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,8 @@ import { WindowScrolling } from './window-scroll';
     ContactButtonComponent
   ],
   imports: [
+    CommonModule,
+    NgtUniversalModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
     AppRoutingModule,
@@ -55,8 +58,7 @@ import { WindowScrolling } from './window-scroll';
     HttpClientModule,
   ],
   providers: [
-    Title, WindowScrolling
+    Title,
   ],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }
