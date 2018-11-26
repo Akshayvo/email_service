@@ -3,29 +3,23 @@
 .contentHolder{
     padding-top: 100px;
     min-height: 93vh;
+
+    iframe {
+        overflow: hidden;
+        overflow-x: hidden !important; 
+    }
 }
 
-// Sticky Buttons 
-.contact-button {
-    position:fixed; 
-    right:0px; 
-    top:12%; 
-    z-index: 16;
-  }
+  
 
 @media screen and (max-width: 600px) {
     .contentHolder {
         padding-top: 60px;
     }
-    .contact-button {
-        position:fixed; 
-        right:0px; 
-        top:15%;
-        overflow: auto;
-        overflow-y: auto;
-        overflow-x: hidden; 
-        z-index: 16;
-      }
+    iframe {
+        overflow: hidden;
+        overflow-x: auto; 
+    }
       img {
         height: 200px;
         width: 100%;

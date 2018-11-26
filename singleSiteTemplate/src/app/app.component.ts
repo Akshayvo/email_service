@@ -2,7 +2,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { Component, OnInit, Inject } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter, map, mergeMap } from 'rxjs/operators';
-// import { WINDOW } from '@ng-toolkit/universal';
+import { WINDOW } from '@ng-toolkit/universal';
 
 @Component({
   selector: 'app-root',
@@ -12,17 +12,17 @@ import { filter, map, mergeMap } from 'rxjs/operators';
 export class AppComponent implements OnInit {
   title = 'ngStarterPack';
   flag: boolean;
-  // x = matchMedia('(max-width: 600px)');
   public offsets: number[];
-
+  x: any;
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private angulatics: Angulartics2GoogleAnalytics,
-    // @Inject(WINDOW) private window: Window,
+    @Inject(WINDOW) private window: Window,
   ) {
   }
   ngOnInit() {
+  this.x = window.matchMedia('(max-width: 600px)');
     this.flag = false;
     // console.log('Init App');
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
@@ -33,14 +33,14 @@ export class AppComponent implements OnInit {
   public dataShow() {
     if (this.flag === false) {
       this.flag = true;
-      // if (this.x.matches) {
-      // document.body.style.overflow = 'hidden';
-      // }
+      if (this.x.matches) {
+      document.body.style.overflow = 'hidden';
+      }
     } else {
       this.flag = false;
-      // if (this.x.matches) {
-        // document.body.style.overflow = 'auto';
-        // }
+      if (this.x.matches) {
+        document.body.style.overflow = 'auto';
+        }
     }
   }
 

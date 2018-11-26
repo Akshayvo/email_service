@@ -45,7 +45,7 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
     UnitSizerComponent,
     StorageTipsComponent,
     AccordionComponent,
-    ContactButtonComponent
+    ContactButtonComponent,
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { navLinks } from '../data/nav';
 
@@ -9,7 +9,6 @@ import { navLinks } from '../data/nav';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @ViewChild('navbarToggler') navbarToggler: ElementRef;
 
   navLinks: any;
   navbarCollapsed = true;
@@ -30,14 +29,8 @@ export class HeaderComponent implements OnInit {
     this.router.navigate([location]);
   }
 
-navBarTogglerIsVisible() {
-  return this.navbarToggler.nativeElement.offsetParent !== null;
-}
-
-collapseNav() {
-  if (this.navBarTogglerIsVisible()) {
-    this.navbarToggler.nativeElement.click();
+  public onClick(menu: any) {
+    menu.classList.remove('show');
   }
-}
 
 }
