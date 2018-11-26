@@ -19,7 +19,7 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Since [Need founding date] Victor Self Storage has served Victor, Mendon, Farmington,
+        p: `Victor Self Storage has served Victor, Mendon, Farmington,
         and the surrounding communities with high quality, affordable units in a wide variety of convenient sizes.
         Our full perimeter fence, 24/7 recording video cameras, unique access codes, and theft-proof cylinder locks,
         are just a few of the many features we have in place to protect your belongings.`,
