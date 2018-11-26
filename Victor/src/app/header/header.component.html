@@ -10,20 +10,15 @@
       <i class="fas fa-bars" style="color: #efefef"></i>
     </button>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item mx-2" *ngFor="let nav of navLinks">
-          <span *ngIf="currentActive == nav?.label">
-            <a class="nav-link nav-link-active text-center" (click)="navigate(nav?.path)">{{nav.label}}</a>
-          </span>
-          <span *ngIf="currentActive !== nav?.label">
             <span *ngIf="nav?.id == '1' || nav?.id == '2'">
-                <a class="nav-link text-center" [routerLink]="nav?.path" [queryParams]='{ name: nav?.name }'>{{nav.label}}</a>  
+                <a class="nav-link text-center" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" (click)="onClick(menu)" [queryParams]='{ name: nav?.name }'>{{nav.label}}</a>  
             </span>
             <span *ngIf="nav?.id !== '1' && nav?.id !== '2'">            
-              <a class="nav-link text-center" (click)="navigate(nav?.path)">{{nav.label}}</a>
+              <a class="nav-link text-center" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" (click)="onClick(menu)">{{nav.label}}</a>
             </span>
-          </span>
         </li>
       </ul>
     </div>

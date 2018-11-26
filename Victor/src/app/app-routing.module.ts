@@ -16,8 +16,8 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { RentSubComponent } from './rent-sub/rent-sub.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent },
   { path: 'location/village',
     component: LocationComponent,
     children: [
