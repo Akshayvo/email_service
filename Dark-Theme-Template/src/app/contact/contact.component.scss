@@ -1,0 +1,14 @@
+@import '../../styles.scss';
+
+.contact-top {
+    background: url(../../assets/images/contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    height: 60vh;
+}
+
+.bg-translucent {
+    height: 60vh;
+}

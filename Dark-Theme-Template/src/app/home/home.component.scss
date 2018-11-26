@@ -1,0 +1,122 @@
+@import '../../styles.scss';
+
+.jumbotron{
+  // text-align: right !important;
+  background: url(../../assets/images/jumbotorn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  height: 100vh;
+  color: $white;
+  border-radius: 0px;
+  a{
+    margin-top: 20px;
+  }
+}
+
+.content-align{
+  text-align: right;
+}
+
+.getStarted{
+  background: url(../../assets/images/jumbotorn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top !important;
+  color: $white;
+  text-align: center;
+  .we-provide-background {
+    background: rgba(0,0,0,0.7);
+  } 
+}
+
+.bg-dark-background {
+  color: $white;
+}
+.disp {
+ // text-align: center;
+  color: $white;
+  a{
+    color: $white;
+  }
+}
+
+.text-align {
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .jumbotron{
+    padding-top: 64vh;
+    background-attachment: unset !important;
+    background-position: center top !important;
+    h1 {
+      font-size: 2.5em !important;
+    }
+  }
+
+  .content-align{
+    text-align: right;
+  }
+
+  .getStarted{
+    background-attachment: unset !important;
+    background-position: center top !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .jumbotron{
+    padding-top: 50vh;
+    // text-align: center !important;
+    background-attachment: unset !important;
+    background-position: center top !important;
+    h1 {
+      font-size: 3em !important;
+    }
+  }
+
+  .content-align{
+    text-align: right;
+  }
+
+  .getStarted{
+    background-attachment: unset !important;
+    background-position: center top !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jumbotron{
+    padding-top: 100%;
+    text-align: center !important;
+    background-attachment: unset !important;
+    background-position: center left !important;
+    h1 {
+      font-size: 2em !important;
+    }
+  }
+
+  .content-align{
+    text-align: center;
+  }
+
+  .getStarted{
+    background-attachment: unset !important;
+    background-position: center top !important;
+  }
+
+  .disp {
+    display: none;
+  }
+}

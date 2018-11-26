@@ -1,0 +1,16 @@
+@import '../../styles.scss';
+
+p{
+  padding: 0px;
+  margin: 0px;
+  color: $dark; 
+}
+
+table{
+  border: 1px solid $light;
+}
+
+.table-head{
+  background: $primary !important;
+  color: $white;
+}
