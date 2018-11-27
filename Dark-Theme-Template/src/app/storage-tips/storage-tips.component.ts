@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { WINDOW } from '@ng-toolkit/universal';
+import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { storageTip, storageTipAccordion } from '../data/storage';
 
@@ -14,7 +15,7 @@ export class StorageTipsComponent implements OnInit {
   breadcrumbActive: any = 'Storage Tips';
   currentActive: any = 'STORAGE TIPS';
 
-  constructor(
+  constructor(@Inject(WINDOW) private window: Window, 
     private titleService: Title,
     private meta: Meta,
   ) {
@@ -29,7 +30,7 @@ export class StorageTipsComponent implements OnInit {
   ngOnInit() {
     this.fetchStorageTip();
     this.fetchStorageTipAccordion();
-    window.scrollTo(0, 0);
+    this.window.scrollTo(0, 0);
   }
 
   public fetchStorageTip() {

@@ -1,25 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.724 51.915">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.724 51.916">
   <defs>
     <style>
-      .cls-1 {
+      .cls-1, .cls-2, .cls-3 {
         fill: none;
-        stroke: #ffffff;
-        stroke-miterlimit: 10;
         stroke-width: 1.5px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #ffde03;
       }
     </style>
   </defs>
   <g id="credit-01" transform="translate(0.75 0.75)">
     <path id="Path_4" data-name="Path 4" class="cls-1" d="M107.887,124.715H28.337A1.341,1.341,0,0,1,27,123.378V75.637A1.341,1.341,0,0,1,28.337,74.3h79.55a1.341,1.341,0,0,1,1.337,1.337v47.741A1.341,1.341,0,0,1,107.887,124.715Z" transform="translate(-27 -74.3)"/>
-    <rect id="Rectangle_13" data-name="Rectangle 13" class="cls-1" width="82.224" height="8.289" transform="translate(0 8.746)"/>
+    <path id="Path_930" data-name="Path 930" class="cls-2" d="M0,0H82.224V8.289H0Z" transform="translate(0 8.746)"/>
     <g id="Group_61" data-name="Group 61" transform="translate(5.359 23.977)">
-      <ellipse id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="8.334" cy="8.334" rx="8.334" ry="8.334" transform="translate(54.839)"/>
+      <ellipse id="Ellipse_1" data-name="Ellipse 1" class="cls-3" cx="8.334" cy="8.334" rx="8.334" ry="8.334" transform="translate(54.839)"/>
       <g id="Group_60" data-name="Group 60" transform="translate(0)">
-        <line id="Line_3" data-name="Line 3" class="cls-1" x2="43.764"/>
-        <line id="Line_4" data-name="Line 4" class="cls-1" x2="43.764" transform="translate(0 4.345)"/>
-        <line id="Line_5" data-name="Line 5" class="cls-1" x2="43.764" transform="translate(0 8.702)"/>
-        <line id="Line_6" data-name="Line 6" class="cls-1" x2="43.764" transform="translate(0 13.047)"/>
-        <line id="Line_7" data-name="Line 7" class="cls-1" x2="21.882" transform="translate(0 17.403)"/>
+        <line id="Line_3" data-name="Line 3" class="cls-3" x2="43.764"/>
+        <line id="Line_4" data-name="Line 4" class="cls-3" x2="43.764" transform="translate(0 4.345)"/>
+        <line id="Line_5" data-name="Line 5" class="cls-3" x2="43.764" transform="translate(0 8.702)"/>
+        <line id="Line_6" data-name="Line 6" class="cls-3" x2="43.764" transform="translate(0 13.047)"/>
+        <line id="Line_7" data-name="Line 7" class="cls-3" x2="21.882" transform="translate(0 17.403)"/>
       </g>
     </g>
   </g>

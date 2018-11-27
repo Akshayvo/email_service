@@ -1,0 +1,68 @@
+@import '../../styles.scss';
+
+    #contact-button-data {
+        background-color: #303030;
+        width: 348px !important;
+        padding: 20px;
+        //margin-right: 10px;
+        z-index: 1000;
+        box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.16);
+        overflow: auto;
+        overflow-x: hidden; 
+        overflow-y: auto;
+        .heading {
+            h2 {
+                color: $white;
+                font-size: 1.5rem;
+            }
+        }
+        .iconColor {
+            color: $primary;
+        }
+        form {
+            margin-bottom: 50px;
+        }
+    }
+
+    .contact-data {
+        font-size: 13px;
+    }
+    input {
+        background-color: #707070 ;
+        border: #707070;
+    }
+    input:focus {
+        background-color: #707070 ;
+        border: #707070;
+    }
+    textarea:focus {
+        background-color: #707070 ;
+        border: #707070;
+    }
+
+    textarea {
+        background-color: #707070 ;
+        border: #707070;
+    }
+
+    input::placeholder {
+        color: #c7c7c7;
+    }
+
+    textarea::placeholder {
+        color: #c7c7c7;
+    }
+
+    .form-control:focus {
+        box-shadow: none !important;
+    }
+
+    @media screen and (max-width: 600px) {
+        #contact-button-data {
+            overflow: auto;
+            overflow-y: scroll !important;
+            height: 70vh;
+            width: 300px !important;
+        }
+    }
+

@@ -36,4 +36,7 @@ export class HeaderComponent implements OnInit {
     this.navLinks = navLinks;
   }
 
+  public onClick(menu: any) {
+    menu.classList.remove('show');
+  }
 }

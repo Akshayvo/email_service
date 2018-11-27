@@ -10,7 +10,8 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'unit-sizer', component: UnitSizerComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },

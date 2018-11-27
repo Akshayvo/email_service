@@ -1,21 +1,21 @@
 <div class="">
   <div class="jumbotron p-0 m-0">
     <div class="bg-translucent display">
-      <div class="container">
+      <div class="container margin-top">
         <div class="col-md-8 text-align">
           <div class="disp">
-            <h1>GREAT STORAGE OPTION</h1><br>
-            <p>With affordable truck rentals, drive-up access, temperature - controlled storage units, and top notch customer service, Catskill Self Storage has your storage unit needs covered! Contact us today to get started!</p>
+            <h1>SAFE & SECURE SELF STORAGE</h1><br>
+            <p>Scotia Storage is proud to serve the community with clean, well maintained self storage units at affordable prices! Whether you're just looking for a little extra room at home or need a place to store commercial equipment, Scotia Storage has your needs covered!</p>
           </div>
           <div class="">
             <a class="btn btn-lg btn-outline-primary m-2" (click)="navigate('/view-rates')" role="button">View Rates</a>
             <a class="btn btn-lg btn-primary m-2" (click)="navigate('/reserve')" role="button">Reserve Unit</a>
           </div>
         </div>
-        <div class="col-md-12">
+      </div>
+      <div class="container" style="display: flex; justify-content: center">
           <img  src="../../assets/images/down.svg" alt="" />
         </div>
-      </div>
     </div>
    
   </div>
@@ -23,13 +23,13 @@
   <div class="bg-dark-background">
     <div class="container py-5">
       <div class="section py-5 m-0">
-        <h2 class="heading pb-4" style="text-align: center; border-bottom: 1px solid #ffde03; width: 250px; margin: auto">About Us</h2>
-        <div class="row">
+        <h2 class="heading pb-3" style="text-align: center; border-bottom: 1px solid #ffde03; width: 250px; margin: auto">About Us</h2>
+        <div class="row primary-margin-top">
           <div class="col-md-6 py-3">
             <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
           </div>
-          <div class="col-md-6 py-3">
-            <img src="../../assets/images/about-us.jpg" alt="storage unit picture" class="sectionImage">
+          <div class="col-md-6 py-3" >
+            <img src="../../assets/images/about-us.jpg" height="300" alt="storage unit picture" class="sectionImage">
           </div>
         </div>
       </div>
@@ -37,13 +37,13 @@
   </div>
 
   <div class="getStarted">
-    <div class="we-provide-background">
-      <div class="container py-5">
+    <div class="we-provide-background py-5">
+      <div class="container">
         <div class="section py-5 m-0">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="heading pb-4" style="text-align: center; border-bottom: 1px solid #ffde03; width: 300px; margin: auto">We Provide</h2>
-              <div class="row">
+              <h2 class="heading pb-3" style="text-align: center; border-bottom: 1px solid #ffde03; width: 300px; margin: auto">We Provide</h2>
+              <div class="row primary-margin-top">
                 <div class="col-md-3 p-4" style="text-align: center" *ngFor="let feature of feature">
                   <img [src]="feature?.path" style="padding: 10px" height="75px" alt="" />
                   <h6 class="feature-text">{{feature.label}}</h6>
@@ -51,7 +51,7 @@
               </div>
               <div >
                 <ul class="row">
-                  <li class="col-md-4" style="text-align: justify" *ngFor="let featuresList of featuresList">{{featuresList.li}}</li>
+                  <li class="col-md-4" style="text-align: justify; margin-top: 40px"  *ngFor="let featuresList of featuresList">{{featuresList.li}}</li>
                 </ul>
               </div>
             </div>
@@ -64,20 +64,17 @@
   <div class="bg-dark-background">
     <div class="container py-5">
       <div class="section py-5 m-0">
-          <h2 class="heading pb-4" style="text-align: center; border-bottom: 1px solid #ffde03; width: 300px; margin: auto">Locate Us</h2>
-        <div class="row">
+          <h2 class="heading pb-3 " style="text-align: center; border-bottom: 1px solid #ffde03; width: 300px; margin: auto">Locate Us</h2>
+        <div class="row primary-margin-top">
             <div class="col-md-6 py-3">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47251.23771165393!2d-73.906239!3d42.252851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb3c5b1992ccc62a!2sU-Haul+Neighborhood+Dealer!5e0!3m2!1sen!2sus!4v1466783726746"
-                  width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.533752182271!2d-73.94262538438662!3d42.84046171261981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6e7c26c4b959%3A0x88f2e4056402869c!2sScotia+Storage+Co!5e0!3m2!1sen!2sus!4v1542138509038" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
           <div class="col-md-6 py-3">
             <p>
               <span *ngFor="let contact of contactDetails">
                 <b>{{contact.label}}</b> {{contact.data}}<br>
               </span>
-            </p>
-            <b>Hours:</b>
-            <p>
+         
               <span *ngFor="let hour of hours">
                 <b>{{hour.label}}</b>{{hour.data}}<br>
               </span>

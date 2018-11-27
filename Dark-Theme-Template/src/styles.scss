@@ -2,7 +2,7 @@
 
 //Basic color and font styles
 $primary: #ffde03;
-$primaryDark: rgb(51, 161, 128);
+$primaryDark: #FBC02D;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
@@ -79,12 +79,13 @@ $primaryFont: 'Lato', sans-serif;
     min-width: 200px;
     color: $white !important;
     border-radius: 25px;
-}
+} 
 
 .btn-outline-primary:hover {
     background-color: $primaryDark;
     border-color: $primaryDark;
     border-radius: 25px;
+    color: #000000 !important;
 }
 
 .section-headings{

@@ -14,15 +14,15 @@
   a{
     margin-top: 20px;
   }
-  h1 {
-    font-size: 3.60rem;
-  }
 }
 
 .content-align{
   text-align: right;
 }
 
+.primary-margin-top {
+  margin-top: 28px;
+}
 .getStarted{
   background: url(../../assets/images/jumbotorn.jpg);
   background-repeat: no-repeat;
@@ -34,6 +34,13 @@
   .we-provide-background {
     background: rgba(0,0,0,0.7);
   } 
+  ul {
+    padding-inline-start: 15%;
+    li:before {
+      color: black;
+    }
+  }
+  
 }
 
 .bg-dark-background {
@@ -45,6 +52,22 @@
   a{
     color: $white;
   }
+  p {
+    font-size: 16px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 30px;
+}
+
+.margin-top {
+  margin-top: 15%;
 }
 
 .text-align {
@@ -56,6 +79,7 @@
 .display {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1024px) {

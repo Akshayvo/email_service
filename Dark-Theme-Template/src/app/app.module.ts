@@ -1,6 +1,8 @@
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgtUniversalModule } from '@ng-toolkit/universal';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -13,14 +15,13 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { PaymentComponent } from './payment/payment.component';
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
-import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
 
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
+import { ContactButtonComponent } from './contact-button/contact-button.component';
 
 @NgModule({
   declarations: [
@@ -32,13 +33,14 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
     FooterComponent,
     ViewRatesComponent,
     PaymentComponent,
-    BreadcrumbComponent,
-    TablesComponent,
     ErrorComponent,
     UnitSizerComponent,
-    StorageTipsComponent
+    StorageTipsComponent,
+    ContactButtonComponent
   ],
   imports: [
+    CommonModule,
+    NgtUniversalModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
     AppRoutingModule,
@@ -49,6 +51,5 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
   providers: [
     Title
   ],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }

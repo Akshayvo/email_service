@@ -18,6 +18,10 @@ a {
   }
 }
 
+.navbar-brand {
+    padding-top: 20px;
+}
+
 .bg-dark {
     background: linear-gradient(to bottom, rgba(33,33,33,1) 20%, rgba(33,33,33,0.75) 50%, rgba(33,33,33,0.25) 75%, rgba(33,33,33,0) 100%) !important;
 }
@@ -37,17 +41,17 @@ a {
 .nav-link {
     color: $white !important;
     font-weight: 600;
-    transition-duration: 500ms;
+    //transition-duration: 500ms;
 }
 
 .nav-link:hover {
     color: $primary !important;
-    // background: $primary;
-    transition-duration: 500ms;
+    //transition-duration: 500ms;
 }
 
 .nav-link-active {
     color: $primary !important;
+    border-bottom: 1px solid $primary;
 }
 
 .display {
