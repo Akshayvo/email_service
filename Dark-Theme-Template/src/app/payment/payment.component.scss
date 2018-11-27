@@ -1,1 +1,13 @@
 @import '../../styles.scss';
+
+.payment-top {
+    height: 60vh;
+    background: url(../../assets/images/pay-rent.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    .bg-translucent {
+        height: 60vh;
+    }
+}

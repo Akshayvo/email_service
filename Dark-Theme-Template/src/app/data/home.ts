@@ -2,25 +2,51 @@ export const featuresHead = 'The Only Self Storage in Greene County With All of 
 
 export const featuresList = [
     {
-        td1: 'Climate Controlled Units',
-        td2: 'Fully Lit Facility'
+        li: `Fully Fit Facility`,
     },
     {
-        td1: '24 Hour Video Security',
-        td2: 'Fenced In Facility'
+        li: `Fenced In Facility`,
     },
     {
-        td1: 'Superior Customer Service',
-        td2: 'Gated Access'
+        li: `Tenant Insurance`,
     },
     {
-        td1: 'Black Top Paving',
-        td2: 'U-Haul Rentals'
+        li: `Gated Access`,
     },
     {
-        td1: 'Packing Material',
-        td2: 'Tenant Insurance'
-    }
+        li: `Black Top Paving`,
+    },
+    {
+        li: `Packing Material`,
+    },
+    {
+        li: `24 Hour Video Security`,
+    },
+    {
+        li: `Superior Customer Service`,
+    },
+    {
+        li: `U-Haul Rental`,
+    },
+];
+
+export const feature = [
+    {
+        path: '../../assets/images/convenient-location.svg',
+        label: 'CONVENIENT LOCATION'
+    },
+    {
+        path: '../../assets/images/climate-control.svg',
+        label: 'CLIMATE CONTROL'
+    },
+    {
+        path: '../../assets/images/online-bill.svg',
+        label: 'ONLINE BILL PAYMENT'
+    },
+    {
+        path: '../../assets/images/auto-pay.svg',
+        label: 'AUTO-PAY AVAILABLE'
+    },
 ];
 
 export const aboutUs = [

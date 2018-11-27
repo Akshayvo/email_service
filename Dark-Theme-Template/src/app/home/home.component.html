@@ -12,37 +12,28 @@
             <a class="btn btn-lg btn-primary m-2" (click)="navigate('/reserve')" role="button">Reserve Unit</a>
           </div>
         </div>
+        <div class="col-md-12">
+          <img  src="../../assets/images/down.svg" alt="" />
+        </div>
       </div>
     </div>
+   
   </div>
 
   <div class="bg-dark-background">
-  <div class="container py-5">
-    
-    <!-- <div class="section py-5 m-0">
-      <div class="row">
-        <div class="col-md-6 py-3">
-          <h1 class="heading pb-4">Services We Offer</h1>
-          <p class="justify" *ngFor="let data of serviceOffered">{{data.p}}</p>
-        </div>
-        <div class="col-md-6 py-3">
-          <app-tables [tBody]="featuresList" [tHead]="featuresHead"></app-tables>
-        </div>
-      </div>
-    </div> -->
-
-    <div class="section py-5 m-0">
-        <h1 class="heading pb-4" style="text-align: center, border-bottom: 1px">About Us</h1>
-      <div class="row">
-        <div class="col-md-6 py-3">
-          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
-        </div>
-        <div class="col-md-6 py-3">
-            <img src="../../assets/images/about-us.jpg" height=100% alt="storage unit picture" class="sectionImage">
+    <div class="container py-5">
+      <div class="section py-5 m-0">
+        <h2 class="heading pb-4" style="text-align: center; border-bottom: 1px solid #ffde03; width: 250px; margin: auto">About Us</h2>
+        <div class="row">
+          <div class="col-md-6 py-3">
+            <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
           </div>
+          <div class="col-md-6 py-3">
+            <img src="../../assets/images/about-us.jpg" alt="storage unit picture" class="sectionImage">
+          </div>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 
   <div class="getStarted">
@@ -51,9 +42,18 @@
         <div class="section py-5 m-0">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="heading pb-4">We Provide</h1>
-              <p class="pb-4">{{gettingStarted}}</p>
-              <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Unit Now!</a>
+              <h2 class="heading pb-4" style="text-align: center; border-bottom: 1px solid #ffde03; width: 300px; margin: auto">We Provide</h2>
+              <div class="row">
+                <div class="col-md-3 p-4" style="text-align: center" *ngFor="let feature of feature">
+                  <img [src]="feature?.path" style="padding: 10px" height="75px" alt="" />
+                  <h6 class="feature-text">{{feature.label}}</h6>
+                </div>
+              </div>
+              <div >
+                <ul class="row">
+                  <li class="col-md-4" style="text-align: justify" *ngFor="let featuresList of featuresList">{{featuresList.li}}</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
   <div class="bg-dark-background">
     <div class="container py-5">
       <div class="section py-5 m-0">
-          <h1 class="heading pb-4" style="text-align: center">Location Information</h1>
+          <h2 class="heading pb-4" style="text-align: center; border-bottom: 1px solid #ffde03; width: 300px; margin: auto">Locate Us</h2>
         <div class="row">
             <div class="col-md-6 py-3">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47251.23771165393!2d-73.906239!3d42.252851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb3c5b1992ccc62a!2sU-Haul+Neighborhood+Dealer!5e0!3m2!1sen!2sus!4v1466783726746"
