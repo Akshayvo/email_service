@@ -5,14 +5,13 @@
 .contact-button {
     position: fixed; 
     right: 0px; 
-    top: 180px; 
+    top: 20vh; 
     z-index: 16;
   }
   button {
-    min-width: 64px;
-    min-height: 64px;
+    min-width: 52px;
+    min-height: 52px;
     background-color: $primary;
-    padding: 10px;
     border: 1px solid $primary;
     border-radius: 50% 0px 0px 50%;
   }
@@ -30,9 +29,9 @@
   @media only screen and (max-width: 600px) {
    
       .contact-button {
-          position:fixed; 
-          right:0px; 
-          top:100px;
+          position: fixed; 
+          right: 0px; 
+          top: 20vh;
           overflow: auto;
           overflow-y: auto;
           overflow-x: hidden; 

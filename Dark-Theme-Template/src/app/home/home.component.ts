@@ -4,6 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, feature } from '../data/home';
+import { transition } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
@@ -64,4 +65,7 @@ export class HomeComponent implements OnInit {
   public fetchFeature() {
     this.feature = feature;
   }
+   public scroll(el) {
+    el.scrollIntoView();
+}
 }
