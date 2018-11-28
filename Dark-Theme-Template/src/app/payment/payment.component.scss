@@ -11,3 +11,16 @@
         height: 60vh;
     }
 }
+
+.contentHolder {
+    text-align: center;
+    color: $fontColor;
+    h1 {
+        //margin-block-end: 16px!important;
+        color: $white;
+        border-bottom: 1px solid $primary;
+        margin: auto;
+        font-size: 2.25rem !important;
+        width:200px;
+    }
+}

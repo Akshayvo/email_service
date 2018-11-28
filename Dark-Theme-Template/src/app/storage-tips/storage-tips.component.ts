@@ -21,10 +21,9 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We know moving can be stressful, let our helpful hints and tips make your experience that
-                much easier. Use this tips to save yourself time and frustration!`
+      content: `Whether you're storing a closet full of out of season clothes or an entire home during a move Scotia Self Storage has storage unit options for you! Follow these `
     });
-    this.titleService.setTitle('Self Storage Tips | Catskill Self Storage, Catskill, NY, 12414');
+    this.titleService.setTitle('Self Storage Tips for Scotia Self Storage');
   }
 
   ngOnInit() {

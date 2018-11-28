@@ -12,3 +12,67 @@
 .bg-translucent {
     height: 60vh;
 }
+
+.locate-us-style {
+    table{
+      tr {
+        td {
+          padding: 2px 15px;
+        }
+      }
+    }
+  }
+
+input {
+    background-color: $dark-background ;
+    border: 1px solid $primary !important;
+    color: $white !important;
+}
+input:focus {
+    background-color: $dark-background ;
+    border: 1px solid $primary !important;
+}
+textarea:focus {
+    background-color: $dark-background ;
+    border: 1px solid $primary !important;
+}
+
+textarea {
+    background-color: $dark-background ;
+    border: 1px solid $primary !important;
+    color: $white !important;
+}
+
+input::placeholder {
+    color: #c7c7c7;
+}
+
+textarea::placeholder {
+    color: #c7c7c7;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.contentHolder {
+    color: $fontColor;
+    h1 {
+        //margin-block-end: 16px!important;
+        color: $white;
+        border-bottom: 1px solid $primary;
+        margin: auto;
+        font-size: 2.25rem !important;
+        width:500px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contentHolder {
+        h1 {
+            font-size: 2rem !important;
+            width: auto !important;
+        }
+    }
+}
