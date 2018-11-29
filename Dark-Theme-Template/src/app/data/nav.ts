@@ -20,7 +20,7 @@ export const navLinks = [
         path: '/storage-tips'
     },
     {
-        label: 'CONTACT',
+        label: 'CONTACT US',
         path: '/contact'
     },
 ];

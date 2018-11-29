@@ -10,12 +10,14 @@
     background-position: center; 
     .bg-translucent {
         height: 60vh;
-        h2 {
-            padding-top: 200px;
-            font-size: 3rem;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 4rem;
         }
         p {
-            padding: 30px 20% 0px;
             font-size: 1.5rem;
         }
     }

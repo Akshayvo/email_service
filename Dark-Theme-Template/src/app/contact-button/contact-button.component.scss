@@ -30,6 +30,7 @@
     input {
         background-color: #707070 ;
         border: #707070;
+        color: $white !important;
     }
     input:focus {
         background-color: #707070 ;
@@ -43,6 +44,7 @@
     textarea {
         background-color: #707070 ;
         border: #707070;
+        color: $white !important;
     }
 
     input::placeholder {

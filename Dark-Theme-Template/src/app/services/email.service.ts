@@ -25,7 +25,8 @@ export class EmailService {
         'from_name': content.name,
         'email': content.email,
         'subject': content.subject,
-        'message_html': content.message
+        'message_html': content.message,
+        'receiverEmail': 'ayush.j@codeparva.in'
         // 'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
       }
     };
