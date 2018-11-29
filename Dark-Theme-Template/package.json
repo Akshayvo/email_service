@@ -35,12 +35,12 @@
     "@nguniversal/module-map-ngfactory-loader": "^6.1.0",
     "angulartics2": "^6.0.0",
     "core-js": "^2.5.4",
+    "cors": "~2.8.4",
     "hads": "^1.7.0",
     "rxjs": "~6.2.0",
-    "zone.js": "~0.8.26",
-    "webpack-cli": "^2.1.4",
     "ts-loader": "4.2.0",
-    "cors": "~2.8.4"
+    "webpack-cli": "^2.1.4",
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.8.0",
