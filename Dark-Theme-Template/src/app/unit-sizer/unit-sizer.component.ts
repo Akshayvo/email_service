@@ -15,7 +15,7 @@ export class UnitSizerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.i = 2;
+    this.i = 1;
     this.h = this.i - 1;
     this.j = this.i + 1;
     this.fetchUnitSizer();
