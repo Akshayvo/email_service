@@ -13,9 +13,18 @@
 
 .bg-translucent {
     height: 60vh;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 4rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
 }
 .contentHolder {
-    height: 40vh;
     text-align: center;
     h3 {
         color: $fontColor;
@@ -27,12 +36,17 @@
         font-size: 1.2em;
     };
     .storage-left {
-        color: $fontColor;
+        color: $white;
         font-weight: 600;
         line-height: 2;
     };
     h1 {
-        margin-block-end: 16px!important;
+        //margin-block-end: 16px!important;
+        color: $white;
+        border-bottom: 1px solid $primary;
+        width:500px;
+        margin: auto;
+        font-size: 2.25rem !important;
     }
 }
 
@@ -74,17 +88,17 @@
 
 .card-header {
     padding: 0px;
-    background-color: $dark!important;
+    background-color: $border!important;
     //color: $primary!important;
-    color:$white!important;
+    color:#f1f0ed!important;
     border-radius:0px!important;
 }
 .card-body {
     padding: 20px 20px 20px 45px;
     font-size: 0.9em;
     font-weight: 600;
-    color: $fontColor;
-    background-color: $white;
+    color: $white;
+    background-color: #858585;
     margin: auto;
 }
 
@@ -119,31 +133,25 @@
                                     supported by Chrome and Opera */
   }
 
-.accordion-background {
-    height: 650px;
-    margin-bottom: 15px;
-    ol {
-        text-align: justify;
-    }
+// .accordion-background {
+//     height: 650px;
+//     margin-bottom: 15px;
+//     ol {
+//         text-align: justify;
+//     }
 
-    li {
-        text-align: justify;
-        padding-bottom: 5px;
-    }
-}
+//     li {
+//         text-align: justify;
+//         padding-bottom: 5px;
+//     }
+// }
 
 @media screen and (max-width: 900px) {
-    .accordion-background {
-        height: auto!important;
-    }
-    h1 {
-        display: none;
-    }
-    .bg-light {
-        background: white!important;
-    }
-    .card-body {
-        background: #efefef!important;
+    .contentHolder {
+        h1 {
+            font-size: 2rem !important;
+            width: auto !important;
+        }
     }
 }
 

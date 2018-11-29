@@ -32,9 +32,9 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Have a question or concern about self storage units, climate controlled storage units or U-Haul rentals?`
+      content: `Are you looking for more information about Scotia Self Storage and our array of convenient self storage options? Call  (518) 382-0218 or click here for our contact information!`
     });
-    this.titleService.setTitle('Contact Catskill Self Storage');
+    this.titleService.setTitle('Contact Scotia Self Storage');
   }
 
   ngOnInit() {
@@ -93,6 +93,13 @@ export class ContactComponent implements OnInit {
       return (true);
     }
     return (false);
+  }
+
+  public formClear() {
+    this.name = '',
+    this.email = '',
+    this.message = '',
+    this.subject = '';
   }
 
   public formSubmit() {

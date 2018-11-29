@@ -1,26 +1,27 @@
 <div class="">
   <div class="jumbotron p-0 m-0">
-    <div class="bg-translucent display">
-      <div class="container margin-top">
-        <div class="col-md-8 text-align">
-          <div class="disp">
-            <h1>SAFE & SECURE SELF STORAGE</h1><br>
-            <p>Scotia Storage is proud to serve the community with clean, well maintained self storage units at affordable prices! Whether you're just looking for a little extra room at home or need a place to store commercial equipment, Scotia Storage has your needs covered!</p>
-          </div>
-          <div class="">
-            <a class="btn btn-lg btn-outline-primary m-2" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            <a class="btn btn-lg btn-primary m-2" (click)="navigate('/reserve')" role="button">Reserve Unit</a>
+    <div class="bg-translucent  text-align">
+      <div class="container display" style="height:100%">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="disp">
+              <h1>SAFE & SECURE<br>SELF STORAGE</h1><br>
+              <p>Scotia Storage is proud to serve the community with clean, well maintained self storage units at affordable prices! Whether you're just looking for a little extra room at home or need a place to store commercial equipment, Scotia Storage has your needs covered!</p>
+            </div>
+            <div class="mt-4" >
+              <a class="btn btn-lg btn-outline-primary m-2" (click)="navigate('/contact')" role="button">Contact Us</a>
+              <a class="btn btn-lg btn-primary m-2" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container" style="display: flex; justify-content: center">
-          <img  src="../../assets/images/down.svg" alt="" />
-        </div>
+      <div class="arrow" >
+        <img (click)="scroll(target)" src="../../assets/images/down.svg" alt="" />
+      </div>
     </div>
-   
   </div>
 
-  <div class="bg-dark-background">
+  <div class="bg-dark-background"  #target>
     <div class="container py-5">
       <div class="section py-5 m-0">
         <h2 class="heading pb-3" style="text-align: center; border-bottom: 1px solid #ffde03; width: 250px; margin: auto">About Us</h2>
@@ -38,20 +39,20 @@
 
   <div class="getStarted">
     <div class="we-provide-background py-5">
-      <div class="container">
-        <div class="section py-5 m-0">
+      <div class="container py-5">
+        <div class="section  m-0">
           <div class="row">
             <div class="col-md-12">
               <h2 class="heading pb-3" style="text-align: center; border-bottom: 1px solid #ffde03; width: 300px; margin: auto">We Provide</h2>
-              <div class="row primary-margin-top">
-                <div class="col-md-3 p-4" style="text-align: center" *ngFor="let feature of feature">
+              <div class="row primary-margin">
+                <div class="col-md-3 col-6 p-4" style="text-align: center" *ngFor="let feature of feature">
                   <img [src]="feature?.path" style="padding: 10px" height="75px" alt="" />
                   <h6 class="feature-text">{{feature.label}}</h6>
                 </div>
               </div>
               <div >
                 <ul class="row">
-                  <li class="col-md-4" style="text-align: justify; margin-top: 40px"  *ngFor="let featuresList of featuresList">{{featuresList.li}}</li>
+                  <li class="col-md-6 col-lg-4 py-2"  *ngFor="let featuresList of featuresList">{{featuresList.li}}</li>
                 </ul>
               </div>
             </div>
@@ -61,7 +62,7 @@
     </div>
   </div>
 
-  <div class="bg-dark-background">
+  <div class="bg-dark-background"  >
     <div class="container py-5">
       <div class="section py-5 m-0">
           <h2 class="heading pb-3 " style="text-align: center; border-bottom: 1px solid #ffde03; width: 300px; margin: auto">Locate Us</h2>

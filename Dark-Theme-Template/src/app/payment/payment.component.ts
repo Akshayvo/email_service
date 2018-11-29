@@ -17,9 +17,9 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Save time and access your account online with our convenient customer portal.`
+      content: `Pay your rent online, quickly and conveniently with our online bill pay service!`
     });
-    this.titleService.setTitle('Make Your Payment Online | Catskill Self Storage');
+    this.titleService.setTitle('Pay Rent | Scotia Storage, Scotia, NY, 12302');
   }
 
   ngOnInit() {

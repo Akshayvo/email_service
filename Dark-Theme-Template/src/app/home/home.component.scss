@@ -14,14 +14,19 @@
   a{
     margin-top: 20px;
   }
+  
 }
+
 
 .content-align{
   text-align: right;
 }
 
+.primary-margin {
+  margin: 64px 0px;
+}
 .primary-margin-top {
-  margin-top: 28px;
+  margin-top: 64px;
 }
 .getStarted{
   background: url(../../assets/images/jumbotorn.jpg);
@@ -32,15 +37,20 @@
   color: $white;
   text-align: center;
   .we-provide-background {
-    background: rgba(0,0,0,0.7);
-  } 
-  ul {
-    padding-inline-start: 15%;
-    li:before {
-      color: black;
+    background: rgba(0,0,0,0.8);
+    ul {
+      list-style: none;
+      // padding-inline-start: 10%;
+      // padding-inline-end: 10% 
     }
-  }
-  
+    
+    
+    li::before {
+      content: "• ";
+      color: $primary; /* or whatever color you prefer */
+      //padding: 10px;
+    }
+  } 
 }
 
 .locate-us-style {
@@ -58,18 +68,26 @@
 }
 .disp {
  // text-align: center;
+  padding: 0% 15%;
   color: $white;
   a{
     color: $white;
   }
   p {
-    font-size: 16px;
+    font-size: 1.2rem;
     padding-bottom: 20px;
     line-height: 1.5;
   }
   h1 {
     font-size: 3.5rem;
   }
+}
+
+
+.display {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .margin-bottom {
@@ -82,19 +100,28 @@
 
 .text-align {
   text-align: center;
-  position: relative;
-  margin: auto;
 }
 
-.display {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+.arrow {
+  position: relative;
+  bottom: 100px;
+  //height: 50px;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: example;
+  animation-name: example;
+  cursor: pointer;
+}
+
+@keyframes example {
+   0% { bottom:100px;}
+   50% {bottom:120px;}
+   100% { bottom:100px;}
 }
 
 @media screen and (max-width: 1024px) {
   .jumbotron{
-    padding-top: 64vh;
+    //padding-top: 64vh;
     background-attachment: unset !important;
     background-position: center top !important;
     h1 {
@@ -114,7 +141,7 @@
 
 @media screen and (max-width: 800px) {
   .jumbotron{
-    padding-top: 50vh;
+    //padding-top: 50vh;
     // text-align: center !important;
     background-attachment: unset !important;
     background-position: center top !important;
@@ -135,7 +162,7 @@
 
 @media screen and (max-width: 600px) {
   .jumbotron{
-    padding-top: 100%;
+    //padding-top: 100%;
     text-align: center !important;
     background-attachment: unset !important;
     background-position: center left !important;
@@ -152,6 +179,26 @@
     background-attachment: unset !important;
     background-position: center top !important;
   }
-
-
+  .primary-margin-top {
+    margin-top: 36px;
+  }
+  .disp {
+    p {
+      font-size: 1rem;
+    }
+      margin-top: 150px;
+      padding: 0%;
+  }
+  
+  .btn-primary {
+    min-width: 100%;
+    margin: 10px 0px!important;
+  }
+  .btn-outline-primary {
+    min-width: 100%;
+    margin: 10px 0px !important;
+  } 
+  .arrow {
+    display: none;
+  }
 }

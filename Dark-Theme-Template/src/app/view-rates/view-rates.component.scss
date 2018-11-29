@@ -9,5 +9,41 @@
     background-position: center; 
     .bg-translucent {
         height: 60vh;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.contentHolder {
+     p {
+         color: $fontColor;
+         text-align: justify;
+     }
+    
+    h1 {
+        //margin-block-end: 16px!important;
+        color: $white;
+        border-bottom: 1px solid $primary;
+        width:750px;
+        margin: auto;
+        font-size: 2.25rem !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contentHolder {
+        h1 {
+            font-size: 2rem !important;
+            width: auto !important;
+        }
     }
 }

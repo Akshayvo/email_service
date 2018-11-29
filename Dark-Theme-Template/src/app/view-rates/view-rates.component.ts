@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { viewRate } from '../data/view';
 
 @Component({
   selector: 'app-view-rates',
@@ -8,6 +9,7 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class ViewRatesComponent implements OnInit {
 
+  viewRate : any;
   breadcrumbActive: any = 'View Rates';
   currentActive: any = 'VIEW RATES';
 
@@ -17,13 +19,16 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Affordable storage units and climate controlled units near Catskill,
-       N.Y. Catskill Self Storage has your self storage and U-Haul rental needs covered!`
+      content: `View our wide selection of affordable self storage units, from closet sized 4'x8' units to our oversized 24'x30' garage units.`
     });
-    this.titleService.setTitle('Storage Unit Prices Near Catskill , NY | 12414 - Catskill Self Storage');
+    this.titleService.setTitle('Storage Units Near Scotia, NY, 12302 | View Rates');
   }
 
   ngOnInit() {
+    this.fetchViewRate();
   }
-
+  
+  public fetchViewRate() {
+    this.viewRate = viewRate;
+  }
 }
