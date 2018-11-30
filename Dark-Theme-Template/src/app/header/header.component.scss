@@ -58,6 +58,14 @@ a {
     display: block;
 }
 
+
+@media screen and (max-width: 1200px) {
+
+    a {
+        font-size: 0.9em;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .display {
         display: none;

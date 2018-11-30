@@ -71,3 +71,20 @@
         }
     }
 
+    @media screen and (max-height: 850px) {
+        #contact-button-data {
+            overflow: auto;
+            overflow-y: scroll !important;
+            height: 70vh;
+            width: 300px !important;
+        }
+    }
+
+    @media screen and (max-height: 360px) {
+        #contact-button-data {
+            overflow: auto;
+            overflow-y: scroll !important;
+            height: 52vh;
+            width: 300px !important;
+        }
+    }
