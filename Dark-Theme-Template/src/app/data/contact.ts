@@ -6,7 +6,7 @@ export const contact = [
     },
     {
         label: 'Email:',
-        data: 'ss@scotiastorage.com',
+        data: 'jaya13194@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {

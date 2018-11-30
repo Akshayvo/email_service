@@ -112,6 +112,7 @@ export class ContactComponent implements OnInit {
         const body = {
           name: this.name,
           email: this.email,
+          receiverEmail: this.contactDetails[1].data,
           message: this.message,
           subject: this.subject,
         };
@@ -119,10 +120,10 @@ export class ContactComponent implements OnInit {
           .subscribe((response: any) => {
             // console.log('Authentication response:', response);
             if (response.result != null) {
-              alert(response.message);
+              //alert(response.message);
             } else {
               // console.log(`response`, response.result);
-              alert(response.message);
+              // alert(response.message);
             }
           }, (err) => {
             console.log('Error :', err);

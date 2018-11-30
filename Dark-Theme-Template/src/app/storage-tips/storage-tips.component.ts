@@ -15,7 +15,7 @@ export class StorageTipsComponent implements OnInit {
   breadcrumbActive: any = 'Storage Tips';
   currentActive: any = 'STORAGE TIPS';
 
-  constructor(@Inject(WINDOW) private window: Window, 
+  constructor(@Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
   ) {

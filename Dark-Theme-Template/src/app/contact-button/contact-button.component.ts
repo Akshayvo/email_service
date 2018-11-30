@@ -11,7 +11,7 @@ export class ContactButtonComponent implements OnInit {
   hours: any;
   name: string;
   email: any;
-  phone: any;
+  subject: any;
   message: any;
   contactInfo: any;
 
@@ -59,20 +59,29 @@ export class ContactButtonComponent implements OnInit {
     }
 
     if (check === 'tel') {
+      // if (this.validateNull(value)) {
+      //   document.getElementById(id).style.borderColor = 'red';
+      //   document.getElementById(helpId).innerHTML = 'Please fill out this field';
+      //   return false;
+      // } else {
+      //   if (!this.validatePhone(value)) {
+      //     document.getElementById(id).style.borderColor = 'red';
+      //     document.getElementById(helpId).innerHTML = 'Please enter Phone Number in a format (555)555-5555';
+      //     return false;
+      //   } else {
+      //     document.getElementById(id).style.border = '1px solid #ced4da';
+      //     document.getElementById(helpId).innerHTML = '';
+      //     return true;
+      //   }
+      // }
       if (this.validateNull(value)) {
         document.getElementById(id).style.borderColor = 'red';
         document.getElementById(helpId).innerHTML = 'Please fill out this field';
         return false;
       } else {
-        if (!this.validatePhone(value)) {
-          document.getElementById(id).style.borderColor = 'red';
-          document.getElementById(helpId).innerHTML = 'Please enter Phone Number in a format (555)555-5555';
-          return false;
-        } else {
-          document.getElementById(id).style.border = '1px solid #ced4da';
-          document.getElementById(helpId).innerHTML = '';
-          return true;
-        }
+        document.getElementById(id).style.border = '1px solid #ced4da';
+        document.getElementById(helpId).innerHTML = '';
+        return true;
       }
     }
 
@@ -99,13 +108,13 @@ public formClear() {
   this.name = '',
   this.email = '',
   this.message = '',
-  this.phone = '';
+  this.subject = '';
 }
 
 
   public formSubmit() {
     if (this.validate('notNull', this.name, 'Name', 'nameHelp') &&
-        this.validate('tel', this.phone, 'Phone', 'telHelp') &&
+        this.validate('tel', this.subject, 'Subject', 'telHelp') &&
         this.validate('email', this.email, 'Email', 'emailHelp') &&
         this.validate('notNull', this.message, 'Message', 'messageHelp')
          ) {
@@ -113,7 +122,7 @@ public formClear() {
           this.valid = true;
           const body = {
             name: this.name,
-            phone: this.phone,
+            subject: this.subject,
             email: this.email,
             message: this.message
           };
@@ -145,15 +154,15 @@ public formClear() {
     return (false);
   }
 
-  private validatePhone(value: string) {
-    const isValidNumber = /^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$/.test(value);
-    if (isValidNumber) {
-      return (true);
-    } else {
-      // alert('false');
-      return (false);
-    }
-  }
+  // private validatePhone(value: string) {
+  //   const isValidNumber = /^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$/.test(value);
+  //   if (isValidNumber) {
+  //     return (true);
+  //   } else {
+  //     // alert('false');
+  //     return (false);
+  //   }
+  // }
 
   private validateNull(value: string) {
     if (value === undefined || value === '') {
