@@ -26,6 +26,8 @@ export class ContactComponent implements OnInit {
   location: any;
   message: any;
   places = [ 'Victor Self Storage - Mall', 'Victor Self Storage - Village' ];
+  receiveremail: string;
+  completeMessage: string;
 
   valid = true;
   submited = true;
@@ -128,26 +130,34 @@ public formClear() {
         this.validate('notNull', this.message, 'Message', 'messageHelp')
          ) {
 
+          if (this.location === 'Victor Self Storage - Mall') {
+              this.receiveremail = this.contactsMall[2].data;
+            } else if (this.location === 'Victor Self Storage - Village') {
+              this.receiveremail = this.contactsVillage[2].data;
+            }
+
+          this.completeMessage = `phone: ${this.phone}, <br/>
+                                 message: ${this.message}`;
+
           this.valid = true;
           const body = {
             name: this.name,
-            phone: this.phone,
             email: this.email,
-            location: this.location,
-            message: this.message,
+            receiveremail: this.receiveremail,
+            message: this.completeMessage,
           };
-          console.log(body);
+
           this.emailService.sendEmail(body)
             .subscribe((response: any) => {
               // console.log('Authentication response:', response);
-              if (response.result != null) {
-                alert(response.message);
-              } else {
-                // console.log(`response`, response.result);
-                alert(response.message);
-              }
+              // if (response.result != null) {
+              //   alert(response.message);
+              // } else {
+              //   // console.log(`response`, response.result);
+              //   alert(response.message);
+              // }
             }, (err) => {
-              console.log('Error :', err);
+              // console.log('Error :', err);
             });
           this.submited = false;
           // MailService(body);
@@ -178,7 +188,7 @@ public formClear() {
     if (value === undefined || value === '') {
       return (true);
     }
-    console.log(value);
+    // console.log(value);
     return (false);
   }
 
