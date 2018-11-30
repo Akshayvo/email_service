@@ -15,22 +15,34 @@ export class EmailService {
   ) {
   }
 
-  public sendEmail(content) {
+  public sendEmail(data: any) {
 
-    const data = {
-      service_id: service_id,
-      template_id: template_id,
-      user_id: user_id,
-      template_params: {
-        'from_name': content.name,
-        'email': content.email,
-        'subject': content.subject,
-        'message_html': content.message
-        // 'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
+    // const data = {
+    //   service_id: service_id,
+    //   template_id: template_id,
+    //   user_id: user_id,
+    //   template_params: {
+    //     'from_name': content.name,
+    //     'email': content.email,
+    //     'subject': content.subject,
+    //     'message_html': content.message
+    //     // 'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
+    //   }
+    // };
+
+    // return this.http.post(`https://api.emailjs.com/api/v1.0/email/send`, data);
+
+    const cont = {
+      contents: {
+        name: data.name,
+        senderEmail: data.email,
+        receiverEmail: data.receiverEmail,
+        subject: data.subject,
+        message: data.message,
+        customTemplate: ''
       }
     };
 
-    return this.http.post(`https://api.emailjs.com/api/v1.0/email/send`, data);
-
+    return this.http.post(`http://52.204.207.25:3000/v1/email`, cont);
   }
 }
