@@ -39,11 +39,14 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 767px) {
     .contentHolder {
         h1 {
             font-size: 2rem !important;
             width: auto !important;
         }
+    }
+    .jumbotorn-top {
+        display: none;
     }
 }

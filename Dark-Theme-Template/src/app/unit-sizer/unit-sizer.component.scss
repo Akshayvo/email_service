@@ -127,7 +127,7 @@
 @media screen and (max-width: 600px) {
     .unit-sizer-top {
         height: 40vh;
-        padding-top: 60px; 
+        //padding-top: 60px; 
         .bg-translucent {
             height: 40vh;
             h2 {
@@ -159,5 +159,11 @@
                 width: 10px !important;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .jumbotorn-top {
+        display: none;
     }
 }
