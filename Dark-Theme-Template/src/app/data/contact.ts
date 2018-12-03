@@ -1,18 +1,20 @@
 export const contact = [
     {
-        id: '0',
+        id: 0   ,
         label: 'Address:',
         data: '109 Freemans Bridge Rd.  Scotia, NY 12302',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
-        id: '1',
-        label: 'Email:',
-        data: 'jaya13194@gmail.com',
+        id: 1,
+        redirect: 'mailto:ss@scotiastorage.com',
+        label: 'Email',
+        data: 'ss@scotiastorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
-        id: '2',
+        id: 2,
+        redirect: 'tel:5183820218',
         label: 'Phone:',
         data: '518-382-0218',
         class: 'fas fa-phone mx-2 iconColor',
