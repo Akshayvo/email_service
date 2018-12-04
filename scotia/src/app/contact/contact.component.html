@@ -1,0 +1,71 @@
+<div class="contact-top">
+    <div class="bg-translucent">
+      <div class="container jumbotorn-top" style="text-align: center; padding: 0% 8%">
+        <h1 class="pb-4">Contact Us</h1>
+        <p>Have a question about our Storage Units or your account? Use the convenient form to email our managers directly or use the contact information below!</p>
+      </div>
+    </div>
+</div>
+
+<div class="contentHolder bg-dark-background">
+  <div class="container py-5">
+      <h2 class="py-4">Contact Information</h2>
+
+    <div class="row py-5">
+      <div class="col-md-6 col-12 py-4">
+        <!-- <h3 class="heading py-3">Contact Form</h3> -->
+        <form>
+          <div [hidden]="valid" class="alert alert-danger">
+             Please fill out all the required fields!
+          </div>
+          <div [hidden]="submited" class="alert alert-success">
+            Form Successfully Submited!
+          </div>
+          <div class="row">
+          <div class="form-group col-md-6">
+            <label for="Name">Name*</label>
+            <input type="text" name="name" (keyup)="validate('notNull', name, 'Name', 'nameHelp')" class="form-control" id="Name" placeholder="Enter Your Name"
+              [(ngModel)]="name" required>
+            <small id="nameHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Email">Email address*</label>
+            <input type="email" name="email" (keyup)="validate('email', email, 'Email', 'emailHelp')" class="form-control" id="Email"
+              aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="email" required>
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Subject">Subject (Optional)</label>
+            <input type="text" name="subject" class="form-control" id="Subject" placeholder="Enter Subject" [(ngModel)]="subject">
+          </div>
+        </div>
+          <div class="form-group">
+            <label for="Message">Enter Message*</label>
+            <textarea rows="6" class="form-control" name="message" id="Message"  (keyup)="validate('notNull', message, 'Message', 'messageHelp')" placeholder="Enter Your Message" [(ngModel)]="message" required></textarea>
+            <small id="messageHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="button-contact-us">
+          <button type="submit" class="btn btn-primary px-4 ml-2" (click)="formSubmit()" style="float: right;">Submit</button>
+          <button type="submit" class="btn btn-outline-primary px-4" (click)="formClear()" style="float: right;">Clear</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6 col-12 py-4">
+        <div class="pb-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.533752182271!2d-73.94262538438662!3d42.84046171261981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6e7c26c4b959%3A0x88f2e4056402869c!2sScotia+Storage+Co!5e0!3m2!1sen!2sus!4v1542138509038" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="py-3 locate-us-style">
+          <table>
+            <tr valign="top" style="font-weight: 300" *ngFor="let contact of contactDetails">
+              <td style="font-weight: 600" >{{contact.label}}</td><td *ngIf="contact?.id === 1 || contact?.id === 2; else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></td>
+              <ng-template #other_content><td >{{contact.data}}</td></ng-template>
+            </tr>
+            <tr valign="top" style="font-weight: 300" *ngFor="let hour of hours">
+              <td style="font-weight: 600">{{hour.label}}</td><td> {{hour.data}}</td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
