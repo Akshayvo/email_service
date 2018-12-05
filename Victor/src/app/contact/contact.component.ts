@@ -175,7 +175,7 @@ public formClear() {
   }
 
   private validatePhone(value: string) {
-    const isValidNumber = /^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$/.test(value);
+    const isValidNumber = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$/.test(value);
     if (isValidNumber) {
       return (true);
     } else {
