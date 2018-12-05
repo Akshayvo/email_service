@@ -84,7 +84,7 @@ export class ContactComponent implements OnInit {
       } else {
         if (!this.validatePhone(value)) {
           document.getElementById(id).style.borderColor = 'red';
-          document.getElementById(helpId).innerHTML = 'Please enter Phone Number in a format (555)555-5555';
+          document.getElementById(helpId).innerHTML = 'Please enter a valid phone number.';
           return false;
         } else {
           document.getElementById(id).style.border = '1px solid #ced4da';

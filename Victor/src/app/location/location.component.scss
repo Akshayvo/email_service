@@ -18,7 +18,8 @@
   float: right !important; 
   padding-right: 0px; 
   position: relative; 
-  padding-left: 130px; 
+  padding-left: 10%; 
+  // width: 20%;
   padding-top: 5px;
 }
 .disp {
@@ -44,6 +45,28 @@
     display: none;
   }
   }
+
+  @media only screen and (max-width: 1199px) and (min-width: 993px) {
+    // .hours-data {
+    //   .row {
+    //     .col-lg-8 {
+    //       width: 100%;
+    //     }
+    //     .col-lg-4 {
+    //       width: 100%;
+    //       .btn {
+    //         width: 100%;
+    //         margin-left: 5px;
+    //       }
+    //       .btn-outline-primary {
+    //         // margin-left: 5px !important;
+    //       }
+      
+    //     }
+    //    } 
+    // }
+  }
+
 
 @media only screen and (max-width: 992px) {
   .social-content {
