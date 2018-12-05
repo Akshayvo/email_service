@@ -39,7 +39,7 @@ export class EmailService {
       }
     };
 
-    return this.http.post(`http://52.204.207.25:3000/v1/email`, cont);
+    return this.http.post(`https://emailsvc-ext.syrasoft.com/v1/email`, cont);
 
   }
 }

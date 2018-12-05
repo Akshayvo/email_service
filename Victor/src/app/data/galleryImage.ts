@@ -1,4 +1,4 @@
-export const gallery = [
+export const galleryvillage = [
     { url: '../../assets/images/SlideShow/victor-self-storage-access.jpg'},
     { url: '../../assets/images/SlideShow/victor-self-storage-alarm.jpg'},
     { url: '../../assets/images/SlideShow/victor-self-storage-clean-and-bright.jpg'},
@@ -19,6 +19,33 @@ export const gallery = [
     { url: '../../assets/images/SlideShow/victor-self-storage-smaller-units.jpg'},
     { url: '../../assets/images/SlideShow/victor-self-storage-well-lit.jpg'},
 ];
+
+export const galleryMall = [
+    { url: '../../assets/images/mall/victor-self-storage-mall.jpg'},
+    { url: '../../assets/images/mall/victor-self-storage-units.jpg'},
+    { url: '../../assets/images/mall/victor-self-storage-night.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-access.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-alarm.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-clean-and-bright.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-climate-control.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-drive-up-access.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-easy-lift-doors.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-fire-alarms.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-full-perimeter-fence.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-full-time-on-site-staff.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-gate.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-large-units.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-locks.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-medium-units.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-oversized-units.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-pest-and-rodent-control.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-retail-store.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-security.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-smaller-units.jpg'},
+    { url: '../../assets/images/SlideShow/victor-self-storage-well-lit.jpg'},
+];
+
+
 
 export const galleryDataMall = [
     { p: `Our indoor units are accessible via oversized elevator for a fast, and easy moving experience!

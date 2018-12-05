@@ -11,7 +11,7 @@
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto nav-scroll">
         <li class="nav-item mx-2" *ngFor="let nav of navLinks">
             <span *ngIf="nav?.id == '1' || nav?.id == '2'">
                 <a class="nav-link text-center" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" (click)="onClick(menu)" [queryParams]='{ name: nav?.name }'>{{nav.label}}</a>  

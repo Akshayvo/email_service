@@ -18,26 +18,26 @@
   float: right !important; 
   padding-right: 0px; 
   position: relative; 
-  padding-left: 18%; 
+  padding-left: 130px; 
   padding-top: 5px;
 }
 .disp {
   display: block;
 }
 
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-  }
-  .map-responsive iframe{
-    left:0;
-    top:0;
-    height: 100%;
-    width:100%;
-    position:absolute;
-  }
+// .map-responsive{
+//     overflow:hidden;
+//     padding-bottom:56.25%;
+//     position:relative;
+//     height:0;
+//   }
+//   .map-responsive iframe{
+//     left:0;
+//     top:0;
+//     height: 100%;
+//     width:100%;
+//     position:absolute;
+//   }
 
   @media only screen and (max-width: 1200px) {
   .disp {

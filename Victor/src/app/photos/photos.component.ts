@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { gallery, galleryDataMall, galleryDataVillage } from '../data/galleryImage';
+import { galleryMall, galleryvillage, galleryDataMall, galleryDataVillage } from '../data/galleryImage';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -29,10 +29,10 @@ export class PhotosComponent implements OnInit, OnDestroy {
   public fetchGallery() {
 
     if ( this.name === 'village' ) {
-      this.galleryImages = gallery;
+      this.galleryImages = galleryvillage;
       this.galleryData = galleryDataVillage;
     } else if ( this.name === 'mall' ) {
-      this.galleryImages = gallery;
+      this.galleryImages = galleryMall;
       this.galleryData = galleryDataMall;
     }
   }

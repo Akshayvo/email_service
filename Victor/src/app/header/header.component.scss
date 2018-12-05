@@ -54,7 +54,7 @@ a {
     } 
   }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991px) {
     .display {
         display: none;
     }
@@ -71,6 +71,12 @@ a {
                 height: auto;
                 top: 8px !important;
             }
+        }
+    }
+    @media screen and (max-height: 476px) {
+        .nav-scroll {
+            height: 70vh;
+            overflow-y: auto;
         }
     }
 }
