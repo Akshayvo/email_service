@@ -17,8 +17,7 @@ export class ReserveComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Reserve your self storage unit,
-                climate controlled storage unit or U-Haul moving truck today at Catskill Self Storage!`
+      content: `Current description works fine.`
     });
     this.titleService.setTitle('Reserve A Storage Unit Near Catskill, NY | 12414 - Catskill Self Storage');
   }

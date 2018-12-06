@@ -32,9 +32,8 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Our friendly and knowledgeable staff are ready and willing
-                to answer all of your self storage and U-Haul truck rental questions!
-                Simply call, email, or fill out the contact form and someone will be in touch shortly!`
+      content: `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
+                and U-Haul truck rental questions! Simply call or drop us a line!`
     });
     this.titleService.setTitle('Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414');
   }

@@ -20,8 +20,7 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We know moving can be stressful, let our helpful hints and tips make your experience that
-                much easier. Use this tips to save yourself time and frustration!`
+      content: `We know moving can be stressful, let our helpful hints and tips make your experience that much easier. Use this tips to save yourself time and frustration!`
     });
     this.titleService.setTitle('Self Storage Tips | Catskill Self Storage, Catskill, NY, 12414');
   }

@@ -41,7 +41,7 @@ export const aboutUs = [
     },
     {
         p: `Catskill Self Storage takes customer service seriously,
-            if you have any questions or concerns about renting a unit or truck with us be sure to call our friendly, 
+            if you have any questions or concerns about renting a unit or truck with us be sure to call our friendly,
             knowledgeable staff and let us make your storage experience a hassle-free one!`,
     },
 ];
