@@ -26,6 +26,9 @@
 
     .contact-data {
         font-size: 13px;
+        a {
+            color: $white !important;
+        }
     }
     input {
         background-color: #707070 ;
@@ -59,6 +62,7 @@
         box-shadow: none !important;
     }
 
+    
     @media screen and (max-width: 600px) {
         #contact-button-data {
             overflow: auto;
@@ -68,6 +72,9 @@
         }
         .contact-data {
             font-size: 11px;
+            a {
+                color: $white !important;
+            }
         }
     }
 
