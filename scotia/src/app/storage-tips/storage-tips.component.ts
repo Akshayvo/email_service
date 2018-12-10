@@ -11,7 +11,7 @@ import { storageTip, storageTipAccordion } from '../data/storage';
 export class StorageTipsComponent implements OnInit {
 
   storageTip: any;
-  storageTipAccordion: any;
+  // storageTipAccordion: any;
   breadcrumbActive: any = 'Storage Tips';
   currentActive: any = 'STORAGE TIPS';
 
@@ -28,16 +28,16 @@ export class StorageTipsComponent implements OnInit {
 
   ngOnInit() {
     this.fetchStorageTip();
-    this.fetchStorageTipAccordion();
+    //this.fetchStorageTipAccordion();
     this.window.scrollTo(0, 0);
   }
 
   public fetchStorageTip() {
     this.storageTip = storageTip;
   }
-  public fetchStorageTipAccordion () {
-    this.storageTipAccordion = storageTipAccordion;
-  }
+  // public fetchStorageTipAccordion () {
+  //   this.storageTipAccordion = storageTipAccordion;
+  // }
 
 
 }

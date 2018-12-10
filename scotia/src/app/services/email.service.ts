@@ -35,14 +35,14 @@ export class EmailService {
       contents: {
         name: data.name,
         senderEmail: data.email,
-        receiverEmail: data.receiverEmail,
+        receiverEmail: data.receiveremail,
         subject: data.subject,
         message: data.message,
         customTemplate: ''
       }
     };
 
-    console.log(cont);
+    // console.log(cont);
 
     return this.http.post(`https://emailsvc-ext.syrasoft.com/v1/email`, cont);
 

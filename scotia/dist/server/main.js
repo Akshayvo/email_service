@@ -404,79 +404,80 @@ var i5 = __webpack_require__(/*! ../services/email.service */ "./src/app/service
 var styles_ContactButtonComponent = [i0.styles];
 var RenderType_ContactButtonComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_ContactButtonComponent, data: {} });
 exports.RenderType_ContactButtonComponent = RenderType_ContactButtonComponent;
-function View_ContactButtonComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "span", [["class", "contact-data"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "a", [], [[8, "href", 4]], null, null, null, null)), (_l()(), i1.ɵted(2, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = ((_v.parent.context.$implicit == null) ? null : _v.parent.context.$implicit.redirect); _ck(_v, 1, 0, currVal_0); var currVal_1 = _v.parent.context.$implicit.data; _ck(_v, 2, 0, currVal_1); }); }
-function View_ContactButtonComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "span", [["class", "contact-data"]], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.data; _ck(_v, 1, 0, currVal_0); }); }
-function View_ContactButtonComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "py-1"], ["style", "color: white"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 0, "i", [], [[8, "className", 0]], null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ContactButtonComponent_2)), i1.ɵdid(4, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"], ngIfElse: [1, "ngIfElse"] }, null), (_l()(), i1.ɵand(0, [["other_content", 2]], null, 0, null, View_ContactButtonComponent_3))], function (_ck, _v) { var currVal_1 = ((_v.context.$implicit.id === 1) || (_v.context.$implicit.id === 2)); var currVal_2 = i1.ɵnov(_v, 5); _ck(_v, 4, 0, currVal_1, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.class, ""); _ck(_v, 2, 0, currVal_0); }); }
-function View_ContactButtonComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 58, "div", [["id", "contact-button-data"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "div", [["class", "heading py-2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "h2", [["class", "text-center"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Contact Us"])), (_l()(), i1.ɵeld(4, 0, null, null, 50, "form", [["class", "py-2"], ["novalidate", ""]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "submit"], [null, "reset"]], function (_v, en, $event) { var ad = true; if (("submit" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 6).onSubmit($event) !== false);
+function View_ContactButtonComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "socialLink col-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "a", [["target", "_blank"]], [[8, "href", 4]], null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 0, "i", [], [[8, "className", 0]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = ((_v.context.$implicit == null) ? null : _v.context.$implicit.path); _ck(_v, 1, 0, currVal_0); var currVal_1 = ((_v.context.$implicit == null) ? null : _v.context.$implicit.class); _ck(_v, 2, 0, currVal_1); }); }
+function View_ContactButtonComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "span", [["class", "contact-data"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "a", [], [[8, "href", 4]], null, null, null, null)), (_l()(), i1.ɵted(2, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = ((_v.parent.context.$implicit == null) ? null : _v.parent.context.$implicit.redirect); _ck(_v, 1, 0, currVal_0); var currVal_1 = _v.parent.context.$implicit.data; _ck(_v, 2, 0, currVal_1); }); }
+function View_ContactButtonComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "span", [["class", "contact-data"]], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.data; _ck(_v, 1, 0, currVal_0); }); }
+function View_ContactButtonComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "py-1"], ["style", "color: white"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 0, "i", [], [[8, "className", 0]], null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ContactButtonComponent_3)), i1.ɵdid(4, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"], ngIfElse: [1, "ngIfElse"] }, null), (_l()(), i1.ɵand(0, [["other_content", 2]], null, 0, null, View_ContactButtonComponent_4))], function (_ck, _v) { var currVal_1 = ((_v.context.$implicit.id === 1) || (_v.context.$implicit.id === 2)); var currVal_2 = i1.ɵnov(_v, 5); _ck(_v, 4, 0, currVal_1, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.class, ""); _ck(_v, 2, 0, currVal_0); }); }
+function View_ContactButtonComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 60, "div", [["id", "contact-button-data"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 4, "div", [["class", "heading py-2 row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "h2", [["class", "col-6"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Contact Us"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ContactButtonComponent_1)), i1.ɵdid(5, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(6, 0, null, null, 50, "form", [["class", "py-2"], ["novalidate", ""]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "submit"], [null, "reset"]], function (_v, en, $event) { var ad = true; if (("submit" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 8).onSubmit($event) !== false);
         ad = (pd_0 && ad);
     } if (("reset" === en)) {
-        var pd_1 = (i1.ɵnov(_v, 6).onReset() !== false);
+        var pd_1 = (i1.ɵnov(_v, 8).onReset() !== false);
         ad = (pd_1 && ad);
-    } return ad; }, null, null)), i1.ɵdid(5, 16384, null, 0, i3.ɵangular_packages_forms_forms_bg, [], null, null), i1.ɵdid(6, 4210688, null, 0, i3.NgForm, [[8, null], [8, null]], null, null), i1.ɵprd(2048, null, i3.ControlContainer, null, [i3.NgForm]), i1.ɵdid(8, 16384, null, 0, i3.NgControlStatusGroup, [[4, i3.ControlContainer]], null, null), (_l()(), i1.ɵeld(9, 0, null, null, 1, "div", [["class", "alert alert-danger"]], [[8, "hidden", 0]], null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Please fill out all the required fields! "])), (_l()(), i1.ɵeld(11, 0, null, null, 1, "div", [["class", "alert alert-success"]], [[8, "hidden", 0]], null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Thank You for contacting us, We will get back to you soon. "])), (_l()(), i1.ɵeld(13, 0, null, null, 9, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 7, "input", [["class", "form-control"], ["id", "Name"], ["name", "Name"], ["placeholder", "Enter Name*"], ["required", ""], ["type", "text"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 15)._handleInput($event.target.value) !== false);
+    } return ad; }, null, null)), i1.ɵdid(7, 16384, null, 0, i3.ɵangular_packages_forms_forms_bg, [], null, null), i1.ɵdid(8, 4210688, null, 0, i3.NgForm, [[8, null], [8, null]], null, null), i1.ɵprd(2048, null, i3.ControlContainer, null, [i3.NgForm]), i1.ɵdid(10, 16384, null, 0, i3.NgControlStatusGroup, [[4, i3.ControlContainer]], null, null), (_l()(), i1.ɵeld(11, 0, null, null, 1, "div", [["class", "alert alert-danger"]], [[8, "hidden", 0]], null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Please fill out all the required fields! "])), (_l()(), i1.ɵeld(13, 0, null, null, 1, "div", [["class", "alert alert-success"]], [[8, "hidden", 0]], null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Thank You for contacting us, We will get back to you soon. "])), (_l()(), i1.ɵeld(15, 0, null, null, 9, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 7, "input", [["class", "form-control"], ["id", "Name1"], ["name", "Name"], ["placeholder", "Enter Name*"], ["required", ""], ["type", "text"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 17)._handleInput($event.target.value) !== false);
         ad = (pd_0 && ad);
     } if (("blur" === en)) {
-        var pd_1 = (i1.ɵnov(_v, 15).onTouched() !== false);
+        var pd_1 = (i1.ɵnov(_v, 17).onTouched() !== false);
         ad = (pd_1 && ad);
     } if (("compositionstart" === en)) {
-        var pd_2 = (i1.ɵnov(_v, 15)._compositionStart() !== false);
+        var pd_2 = (i1.ɵnov(_v, 17)._compositionStart() !== false);
         ad = (pd_2 && ad);
     } if (("compositionend" === en)) {
-        var pd_3 = (i1.ɵnov(_v, 15)._compositionEnd($event.target.value) !== false);
+        var pd_3 = (i1.ɵnov(_v, 17)._compositionEnd($event.target.value) !== false);
         ad = (pd_3 && ad);
     } if (("ngModelChange" === en)) {
         var pd_4 = ((_co.name = $event) !== false);
         ad = (pd_4 && ad);
-    } return ad; }, null, null)), i1.ɵdid(15, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(16, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(19, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(21, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(22, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "nameHelp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 9, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 7, "input", [["aria-describedby", "telHelp"], ["class", "form-control"], ["id", "Subject"], ["name", "Subject"], ["placeholder", "Enter Subject*"], ["required", ""], ["type", "tel"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 25)._handleInput($event.target.value) !== false);
+    } return ad; }, null, null)), i1.ɵdid(17, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(18, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(21, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(23, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(24, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "nameHelp1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 9, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(26, 0, null, null, 7, "input", [["aria-describedby", "telHelp"], ["class", "form-control"], ["id", "Phone1"], ["name", "Phone"], ["placeholder", "Enter Phone Number*"], ["required", ""], ["type", "tel"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 27)._handleInput($event.target.value) !== false);
         ad = (pd_0 && ad);
     } if (("blur" === en)) {
-        var pd_1 = (i1.ɵnov(_v, 25).onTouched() !== false);
+        var pd_1 = (i1.ɵnov(_v, 27).onTouched() !== false);
         ad = (pd_1 && ad);
     } if (("compositionstart" === en)) {
-        var pd_2 = (i1.ɵnov(_v, 25)._compositionStart() !== false);
+        var pd_2 = (i1.ɵnov(_v, 27)._compositionStart() !== false);
         ad = (pd_2 && ad);
     } if (("compositionend" === en)) {
-        var pd_3 = (i1.ɵnov(_v, 25)._compositionEnd($event.target.value) !== false);
+        var pd_3 = (i1.ɵnov(_v, 27)._compositionEnd($event.target.value) !== false);
         ad = (pd_3 && ad);
     } if (("ngModelChange" === en)) {
-        var pd_4 = ((_co.subject = $event) !== false);
+        var pd_4 = ((_co.phone = $event) !== false);
         ad = (pd_4 && ad);
-    } return ad; }, null, null)), i1.ɵdid(25, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(26, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(29, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(31, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(32, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "telHelp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(33, 0, null, null, 9, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(34, 0, null, null, 7, "input", [["aria-describedby", "emailHelp"], ["class", "form-control"], ["id", "Email"], ["name", "Email"], ["placeholder", "Enter Email*"], ["required", ""], ["type", "email"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 35)._handleInput($event.target.value) !== false);
+    } return ad; }, null, null)), i1.ɵdid(27, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(28, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(31, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(33, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(34, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "telHelp1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(35, 0, null, null, 9, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(36, 0, null, null, 7, "input", [["aria-describedby", "emailHelp"], ["class", "form-control"], ["id", "Email1"], ["name", "Email"], ["placeholder", "Enter Email*"], ["required", ""], ["type", "email"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 37)._handleInput($event.target.value) !== false);
         ad = (pd_0 && ad);
     } if (("blur" === en)) {
-        var pd_1 = (i1.ɵnov(_v, 35).onTouched() !== false);
+        var pd_1 = (i1.ɵnov(_v, 37).onTouched() !== false);
         ad = (pd_1 && ad);
     } if (("compositionstart" === en)) {
-        var pd_2 = (i1.ɵnov(_v, 35)._compositionStart() !== false);
+        var pd_2 = (i1.ɵnov(_v, 37)._compositionStart() !== false);
         ad = (pd_2 && ad);
     } if (("compositionend" === en)) {
-        var pd_3 = (i1.ɵnov(_v, 35)._compositionEnd($event.target.value) !== false);
+        var pd_3 = (i1.ɵnov(_v, 37)._compositionEnd($event.target.value) !== false);
         ad = (pd_3 && ad);
     } if (("ngModelChange" === en)) {
         var pd_4 = ((_co.email = $event) !== false);
         ad = (pd_4 && ad);
-    } return ad; }, null, null)), i1.ɵdid(35, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(36, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(39, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(41, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(42, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "emailHelp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(43, 0, null, null, 9, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(44, 0, null, null, 7, "textarea", [["class", "form-control"], ["id", "Message"], ["name", "message"], ["placeholder", "Enter Message*"], ["required", ""]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 45)._handleInput($event.target.value) !== false);
+    } return ad; }, null, null)), i1.ɵdid(37, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(38, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(41, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(43, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(44, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "emailHelp1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(45, 0, null, null, 9, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(46, 0, null, null, 7, "textarea", [["class", "form-control"], ["id", "Message1"], ["name", "message"], ["placeholder", "Enter Message*"], ["required", ""]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 47)._handleInput($event.target.value) !== false);
         ad = (pd_0 && ad);
     } if (("blur" === en)) {
-        var pd_1 = (i1.ɵnov(_v, 45).onTouched() !== false);
+        var pd_1 = (i1.ɵnov(_v, 47).onTouched() !== false);
         ad = (pd_1 && ad);
     } if (("compositionstart" === en)) {
-        var pd_2 = (i1.ɵnov(_v, 45)._compositionStart() !== false);
+        var pd_2 = (i1.ɵnov(_v, 47)._compositionStart() !== false);
         ad = (pd_2 && ad);
     } if (("compositionend" === en)) {
-        var pd_3 = (i1.ɵnov(_v, 45)._compositionEnd($event.target.value) !== false);
+        var pd_3 = (i1.ɵnov(_v, 47)._compositionEnd($event.target.value) !== false);
         ad = (pd_3 && ad);
     } if (("ngModelChange" === en)) {
         var pd_4 = ((_co.message = $event) !== false);
         ad = (pd_4 && ad);
-    } return ad; }, null, null)), i1.ɵdid(45, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(46, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(49, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(51, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(52, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "messageHelp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(53, 0, null, null, 1, "button", [["class", "btn btn-primary py-2"], ["style", "float: right; width: 100%;"], ["type", "submit"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), i1.ɵdid(47, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(48, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(51, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(53, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(54, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "messageHelp1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(55, 0, null, null, 1, "button", [["class", "btn btn-primary py-2"], ["style", "float: right; width: 100%;"], ["type", "submit"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.formSubmit() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Submit"])), (_l()(), i1.ɵeld(55, 0, null, null, 1, "div", [["class", "map-responsive py-2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(56, 0, null, null, 0, "iframe", [["allowfullscreen", ""], ["frameborder", "0"], ["height", "150"], ["src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.533752182271!2d-73.94262538438662!3d42.84046171261981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6e7c26c4b959%3A0x88f2e4056402869c!2sScotia+Storage+Co!5e0!3m2!1sen!2sus!4v1542138509038"], ["style", "border:0"], ["width", "100%"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ContactButtonComponent_1)), i1.ɵdid(58, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_17 = ""; _ck(_v, 16, 0, currVal_17); var currVal_18 = "Name"; var currVal_19 = _co.name; _ck(_v, 19, 0, currVal_18, currVal_19); var currVal_28 = ""; _ck(_v, 26, 0, currVal_28); var currVal_29 = "Subject"; var currVal_30 = _co.subject; _ck(_v, 29, 0, currVal_29, currVal_30); var currVal_39 = ""; _ck(_v, 36, 0, currVal_39); var currVal_40 = "Email"; var currVal_41 = _co.email; _ck(_v, 39, 0, currVal_40, currVal_41); var currVal_50 = ""; _ck(_v, 46, 0, currVal_50); var currVal_51 = "message"; var currVal_52 = _co.message; _ck(_v, 49, 0, currVal_51, currVal_52); var currVal_53 = _co.contactInfo; _ck(_v, 58, 0, currVal_53); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵnov(_v, 8).ngClassUntouched; var currVal_1 = i1.ɵnov(_v, 8).ngClassTouched; var currVal_2 = i1.ɵnov(_v, 8).ngClassPristine; var currVal_3 = i1.ɵnov(_v, 8).ngClassDirty; var currVal_4 = i1.ɵnov(_v, 8).ngClassValid; var currVal_5 = i1.ɵnov(_v, 8).ngClassInvalid; var currVal_6 = i1.ɵnov(_v, 8).ngClassPending; _ck(_v, 4, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6); var currVal_7 = _co.valid; _ck(_v, 9, 0, currVal_7); var currVal_8 = _co.submited; _ck(_v, 11, 0, currVal_8); var currVal_9 = (i1.ɵnov(_v, 16).required ? "" : null); var currVal_10 = i1.ɵnov(_v, 21).ngClassUntouched; var currVal_11 = i1.ɵnov(_v, 21).ngClassTouched; var currVal_12 = i1.ɵnov(_v, 21).ngClassPristine; var currVal_13 = i1.ɵnov(_v, 21).ngClassDirty; var currVal_14 = i1.ɵnov(_v, 21).ngClassValid; var currVal_15 = i1.ɵnov(_v, 21).ngClassInvalid; var currVal_16 = i1.ɵnov(_v, 21).ngClassPending; _ck(_v, 14, 0, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16); var currVal_20 = (i1.ɵnov(_v, 26).required ? "" : null); var currVal_21 = i1.ɵnov(_v, 31).ngClassUntouched; var currVal_22 = i1.ɵnov(_v, 31).ngClassTouched; var currVal_23 = i1.ɵnov(_v, 31).ngClassPristine; var currVal_24 = i1.ɵnov(_v, 31).ngClassDirty; var currVal_25 = i1.ɵnov(_v, 31).ngClassValid; var currVal_26 = i1.ɵnov(_v, 31).ngClassInvalid; var currVal_27 = i1.ɵnov(_v, 31).ngClassPending; _ck(_v, 24, 0, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25, currVal_26, currVal_27); var currVal_31 = (i1.ɵnov(_v, 36).required ? "" : null); var currVal_32 = i1.ɵnov(_v, 41).ngClassUntouched; var currVal_33 = i1.ɵnov(_v, 41).ngClassTouched; var currVal_34 = i1.ɵnov(_v, 41).ngClassPristine; var currVal_35 = i1.ɵnov(_v, 41).ngClassDirty; var currVal_36 = i1.ɵnov(_v, 41).ngClassValid; var currVal_37 = i1.ɵnov(_v, 41).ngClassInvalid; var currVal_38 = i1.ɵnov(_v, 41).ngClassPending; _ck(_v, 34, 0, currVal_31, currVal_32, currVal_33, currVal_34, currVal_35, currVal_36, currVal_37, currVal_38); var currVal_42 = (i1.ɵnov(_v, 46).required ? "" : null); var currVal_43 = i1.ɵnov(_v, 51).ngClassUntouched; var currVal_44 = i1.ɵnov(_v, 51).ngClassTouched; var currVal_45 = i1.ɵnov(_v, 51).ngClassPristine; var currVal_46 = i1.ɵnov(_v, 51).ngClassDirty; var currVal_47 = i1.ɵnov(_v, 51).ngClassValid; var currVal_48 = i1.ɵnov(_v, 51).ngClassInvalid; var currVal_49 = i1.ɵnov(_v, 51).ngClassPending; _ck(_v, 44, 0, currVal_42, currVal_43, currVal_44, currVal_45, currVal_46, currVal_47, currVal_48, currVal_49); }); }
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Submit"])), (_l()(), i1.ɵeld(57, 0, null, null, 1, "div", [["class", "map-responsive py-2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(58, 0, null, null, 0, "iframe", [["allowfullscreen", ""], ["frameborder", "0"], ["height", "150"], ["src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.533752182271!2d-73.94262538438662!3d42.84046171261981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6e7c26c4b959%3A0x88f2e4056402869c!2sScotia+Storage+Co!5e0!3m2!1sen!2sus!4v1542138509038"], ["style", "border:0"], ["width", "100%"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ContactButtonComponent_2)), i1.ɵdid(60, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.socialLink; _ck(_v, 5, 0, currVal_0); var currVal_18 = ""; _ck(_v, 18, 0, currVal_18); var currVal_19 = "Name"; var currVal_20 = _co.name; _ck(_v, 21, 0, currVal_19, currVal_20); var currVal_29 = ""; _ck(_v, 28, 0, currVal_29); var currVal_30 = "Phone"; var currVal_31 = _co.phone; _ck(_v, 31, 0, currVal_30, currVal_31); var currVal_40 = ""; _ck(_v, 38, 0, currVal_40); var currVal_41 = "Email"; var currVal_42 = _co.email; _ck(_v, 41, 0, currVal_41, currVal_42); var currVal_51 = ""; _ck(_v, 48, 0, currVal_51); var currVal_52 = "message"; var currVal_53 = _co.message; _ck(_v, 51, 0, currVal_52, currVal_53); var currVal_54 = _co.contactInfo; _ck(_v, 60, 0, currVal_54); }, function (_ck, _v) { var _co = _v.component; var currVal_1 = i1.ɵnov(_v, 10).ngClassUntouched; var currVal_2 = i1.ɵnov(_v, 10).ngClassTouched; var currVal_3 = i1.ɵnov(_v, 10).ngClassPristine; var currVal_4 = i1.ɵnov(_v, 10).ngClassDirty; var currVal_5 = i1.ɵnov(_v, 10).ngClassValid; var currVal_6 = i1.ɵnov(_v, 10).ngClassInvalid; var currVal_7 = i1.ɵnov(_v, 10).ngClassPending; _ck(_v, 6, 0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7); var currVal_8 = _co.valid; _ck(_v, 11, 0, currVal_8); var currVal_9 = _co.submited; _ck(_v, 13, 0, currVal_9); var currVal_10 = (i1.ɵnov(_v, 18).required ? "" : null); var currVal_11 = i1.ɵnov(_v, 23).ngClassUntouched; var currVal_12 = i1.ɵnov(_v, 23).ngClassTouched; var currVal_13 = i1.ɵnov(_v, 23).ngClassPristine; var currVal_14 = i1.ɵnov(_v, 23).ngClassDirty; var currVal_15 = i1.ɵnov(_v, 23).ngClassValid; var currVal_16 = i1.ɵnov(_v, 23).ngClassInvalid; var currVal_17 = i1.ɵnov(_v, 23).ngClassPending; _ck(_v, 16, 0, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17); var currVal_21 = (i1.ɵnov(_v, 28).required ? "" : null); var currVal_22 = i1.ɵnov(_v, 33).ngClassUntouched; var currVal_23 = i1.ɵnov(_v, 33).ngClassTouched; var currVal_24 = i1.ɵnov(_v, 33).ngClassPristine; var currVal_25 = i1.ɵnov(_v, 33).ngClassDirty; var currVal_26 = i1.ɵnov(_v, 33).ngClassValid; var currVal_27 = i1.ɵnov(_v, 33).ngClassInvalid; var currVal_28 = i1.ɵnov(_v, 33).ngClassPending; _ck(_v, 26, 0, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25, currVal_26, currVal_27, currVal_28); var currVal_32 = (i1.ɵnov(_v, 38).required ? "" : null); var currVal_33 = i1.ɵnov(_v, 43).ngClassUntouched; var currVal_34 = i1.ɵnov(_v, 43).ngClassTouched; var currVal_35 = i1.ɵnov(_v, 43).ngClassPristine; var currVal_36 = i1.ɵnov(_v, 43).ngClassDirty; var currVal_37 = i1.ɵnov(_v, 43).ngClassValid; var currVal_38 = i1.ɵnov(_v, 43).ngClassInvalid; var currVal_39 = i1.ɵnov(_v, 43).ngClassPending; _ck(_v, 36, 0, currVal_32, currVal_33, currVal_34, currVal_35, currVal_36, currVal_37, currVal_38, currVal_39); var currVal_43 = (i1.ɵnov(_v, 48).required ? "" : null); var currVal_44 = i1.ɵnov(_v, 53).ngClassUntouched; var currVal_45 = i1.ɵnov(_v, 53).ngClassTouched; var currVal_46 = i1.ɵnov(_v, 53).ngClassPristine; var currVal_47 = i1.ɵnov(_v, 53).ngClassDirty; var currVal_48 = i1.ɵnov(_v, 53).ngClassValid; var currVal_49 = i1.ɵnov(_v, 53).ngClassInvalid; var currVal_50 = i1.ɵnov(_v, 53).ngClassPending; _ck(_v, 46, 0, currVal_43, currVal_44, currVal_45, currVal_46, currVal_47, currVal_48, currVal_49, currVal_50); }); }
 exports.View_ContactButtonComponent_0 = View_ContactButtonComponent_0;
 function View_ContactButtonComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-contact-button", [], null, null, null, View_ContactButtonComponent_0, RenderType_ContactButtonComponent)), i1.ɵdid(1, 114688, null, 0, i4.ContactButtonComponent, [i5.EmailService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_ContactButtonComponent_Host_0 = View_ContactButtonComponent_Host_0;
@@ -502,7 +503,7 @@ exports.ContactButtonComponentNgFactory = ContactButtonComponentNgFactory;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = ["*[_ngcontent-%COMP%] {\n  font-family: \"Lato\", sans-serif; }\n.justify[_ngcontent-%COMP%] {\n  text-align: justify; }\n.bg-secondary[_ngcontent-%COMP%] {\n  background: #212121 !important; }\n.bg-dark[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.2) !important; }\n.bg-light[_ngcontent-%COMP%] {\n  background: #efefef !important; }\n.bg-translucent[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.72);\n  width: auto !important;\n  height: 100vh; }\n.bg-dark-background[_ngcontent-%COMP%] {\n  background: #404040; }\n.contentHolder[_ngcontent-%COMP%] {\n  min-height: 94vh; }\n.btn-primary[_ngcontent-%COMP%] {\n  background-color: #ffde03;\n  border-color: #ffde03;\n  color: #000000 !important;\n  min-width: 200px;\n  border-radius: 25px; }\n.btn-primary[_ngcontent-%COMP%]:hover {\n  background-color: #FBC02D;\n  border-color: #FBC02D;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%] {\n  background-color: transparent;\n  border-color: #ffde03;\n  border: 1px solid #ffde03;\n  min-width: 200px;\n  color: #ffffff !important;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%]:hover {\n  background-color: #FBC02D;\n  border-color: #FBC02D;\n  border-radius: 25px;\n  color: #000000 !important; }\n.section-headings[_ngcontent-%COMP%] {\n  font-weight: 200; }\n.contact-map[_ngcontent-%COMP%] {\n  width: 100%; }\n.heading[_ngcontent-%COMP%] {\n  font-weight: 400; }\n.sectionImage[_ngcontent-%COMP%] {\n  width: 100%; }\n#contact-button-data[_ngcontent-%COMP%] {\n  background-color: #303030;\n  min-width: 348px;\n  padding: 20px;\n  margin-right: 10px;\n  z-index: 1000;\n  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.16);\n  overflow: auto;\n  overflow-x: hidden;\n  overflow-y: auto; }\n#contact-button-data[_ngcontent-%COMP%]   .heading[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    color: #ffffff;\n    font-size: 1.5rem; }\n#contact-button-data[_ngcontent-%COMP%]   .iconColor[_ngcontent-%COMP%] {\n    color: #ffde03; }\n#contact-button-data[_ngcontent-%COMP%]   form[_ngcontent-%COMP%] {\n    margin-bottom: 50px; }\n.contact-data[_ngcontent-%COMP%] {\n  font-size: 13px; }\n.contact-data[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: #ffffff !important; }\ninput[_ngcontent-%COMP%] {\n  background-color: #707070;\n  border: #707070;\n  color: #ffffff !important; }\ninput[_ngcontent-%COMP%]:focus {\n  background-color: #707070;\n  border: #707070; }\ntextarea[_ngcontent-%COMP%]:focus {\n  background-color: #707070;\n  border: #707070; }\ntextarea[_ngcontent-%COMP%] {\n  background-color: #707070;\n  border: #707070;\n  color: #ffffff !important; }\ninput[_ngcontent-%COMP%]::-webkit-input-placeholder {\n  color: #c7c7c7; }\ninput[_ngcontent-%COMP%]::-ms-input-placeholder {\n  color: #c7c7c7; }\ninput[_ngcontent-%COMP%]::placeholder {\n  color: #c7c7c7; }\ntextarea[_ngcontent-%COMP%]::-webkit-input-placeholder {\n  color: #c7c7c7; }\ntextarea[_ngcontent-%COMP%]::-ms-input-placeholder {\n  color: #c7c7c7; }\ntextarea[_ngcontent-%COMP%]::placeholder {\n  color: #c7c7c7; }\n.form-control[_ngcontent-%COMP%]:focus {\n  box-shadow: none !important; }\n@media screen and (max-width: 600px) {\n  #contact-button-data[_ngcontent-%COMP%] {\n    overflow: auto;\n    overflow-y: scroll !important;\n    height: 70vh;\n    width: 300px !important; }\n  .contact-data[_ngcontent-%COMP%] {\n    font-size: 11px; }\n    .contact-data[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n      color: #ffffff !important; } }\n@media screen and (max-height: 850px) {\n  #contact-button-data[_ngcontent-%COMP%] {\n    overflow: auto;\n    overflow-y: scroll !important;\n    height: 70vh;\n    width: 300px !important; } }\n@media screen and (max-height: 360px) {\n  #contact-button-data[_ngcontent-%COMP%] {\n    overflow: auto;\n    overflow-y: scroll !important;\n    height: 52vh;\n    width: 300px !important; } }"];
+var styles = ["*[_ngcontent-%COMP%] {\n  font-family: \"Lato\", sans-serif; }\n.justify[_ngcontent-%COMP%] {\n  text-align: justify; }\n.bg-secondary[_ngcontent-%COMP%] {\n  background: #212121 !important; }\n.bg-dark[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.2) !important; }\n.bg-light[_ngcontent-%COMP%] {\n  background: #efefef !important; }\n.bg-translucent[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.72);\n  width: auto !important;\n  height: 100vh; }\n.bg-dark-background[_ngcontent-%COMP%] {\n  background: #404040; }\n.contentHolder[_ngcontent-%COMP%] {\n  min-height: 94vh; }\n.btn-primary[_ngcontent-%COMP%] {\n  background-color: #ffde03;\n  border-color: #ffde03;\n  color: #000000 !important;\n  min-width: 200px;\n  border-radius: 25px; }\n.btn-primary[_ngcontent-%COMP%]:hover {\n  background-color: #FBC02D;\n  border-color: #FBC02D;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%] {\n  background-color: transparent;\n  border-color: #ffde03;\n  border: 1px solid #ffde03;\n  min-width: 200px;\n  color: #ffffff !important;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%]:hover {\n  background-color: #FBC02D;\n  border-color: #FBC02D;\n  border-radius: 25px;\n  color: #000000 !important; }\n.section-headings[_ngcontent-%COMP%] {\n  font-weight: 200; }\n.contact-map[_ngcontent-%COMP%] {\n  width: 100%; }\n.heading[_ngcontent-%COMP%] {\n  font-weight: 400; }\n.sectionImage[_ngcontent-%COMP%] {\n  width: 100%; }\n#contact-button-data[_ngcontent-%COMP%] {\n  background-color: #303030;\n  min-width: 348px;\n  padding: 20px;\n  margin-right: 10px;\n  z-index: 1000;\n  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.16);\n  overflow: auto;\n  overflow-x: hidden;\n  overflow-y: auto; }\n#contact-button-data[_ngcontent-%COMP%]   .heading[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    color: #ffffff;\n    font-size: 1.5rem; }\n#contact-button-data[_ngcontent-%COMP%]   .iconColor[_ngcontent-%COMP%] {\n    color: #ffde03; }\n#contact-button-data[_ngcontent-%COMP%]   form[_ngcontent-%COMP%] {\n    margin-bottom: 50px; }\n.socialLink[_ngcontent-%COMP%] {\n  text-align: right; }\n.socialLink[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: #ffde03 !important;\n    font-size: 22px; }\n.contact-data[_ngcontent-%COMP%] {\n  font-size: 13px; }\n.contact-data[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: #ffffff !important; }\ninput[_ngcontent-%COMP%] {\n  background-color: #707070;\n  border: #707070;\n  color: #ffffff !important; }\ninput[_ngcontent-%COMP%]:focus {\n  background-color: #707070;\n  border: #707070; }\ntextarea[_ngcontent-%COMP%]:focus {\n  background-color: #707070;\n  border: #707070; }\ntextarea[_ngcontent-%COMP%] {\n  background-color: #707070;\n  border: #707070;\n  color: #ffffff !important; }\ninput[_ngcontent-%COMP%]::-webkit-input-placeholder {\n  color: #c7c7c7; }\ninput[_ngcontent-%COMP%]::-ms-input-placeholder {\n  color: #c7c7c7; }\ninput[_ngcontent-%COMP%]::placeholder {\n  color: #c7c7c7; }\ntextarea[_ngcontent-%COMP%]::-webkit-input-placeholder {\n  color: #c7c7c7; }\ntextarea[_ngcontent-%COMP%]::-ms-input-placeholder {\n  color: #c7c7c7; }\ntextarea[_ngcontent-%COMP%]::placeholder {\n  color: #c7c7c7; }\n.form-control[_ngcontent-%COMP%]:focus {\n  box-shadow: none !important; }\n@media screen and (max-width: 600px) {\n  #contact-button-data[_ngcontent-%COMP%] {\n    overflow: auto;\n    overflow-y: scroll !important;\n    height: 70vh;\n    width: 300px !important; }\n  .contact-data[_ngcontent-%COMP%] {\n    font-size: 11px; }\n    .contact-data[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n      color: #ffffff !important; } }\n@media screen and (max-height: 850px) {\n  #contact-button-data[_ngcontent-%COMP%] {\n    overflow: auto;\n    overflow-y: scroll !important;\n    height: 70vh;\n    width: 300px !important; } }\n@media screen and (max-height: 360px) {\n  #contact-button-data[_ngcontent-%COMP%] {\n    overflow: auto;\n    overflow-y: scroll !important;\n    height: 52vh;\n    width: 300px !important; } }"];
 exports.styles = styles;
 
 
@@ -530,19 +531,16 @@ var ContactButtonComponent = /** @class */ (function () {
     ContactButtonComponent.prototype.ngOnInit = function () {
         this.fetchContactDetails();
         this.fetchHours();
+        this.fetchsocialLink();
     };
-    // public dataShow() {
-    //   if (this.flag === false) {
-    //     this.flag = true;
-    //   } else {
-    //     this.flag = false;
-    //   }
-    // }
     ContactButtonComponent.prototype.fetchContactDetails = function () {
         this.contactInfo = contact_1.contact;
     };
     ContactButtonComponent.prototype.fetchHours = function () {
         this.hours = contact_1.hours;
+    };
+    ContactButtonComponent.prototype.fetchsocialLink = function () {
+        this.socialLink = contact_1.socialLink;
     };
     ContactButtonComponent.prototype.validate = function (check, value, id, helpId) {
         if (check === 'notNull') {
@@ -558,30 +556,22 @@ var ContactButtonComponent = /** @class */ (function () {
             }
         }
         if (check === 'tel') {
-            // if (this.validateNull(value)) {
-            //   document.getElementById(id).style.borderColor = 'red';
-            //   document.getElementById(helpId).innerHTML = 'Please fill out this field';
-            //   return false;
-            // } else {
-            //   if (!this.validatePhone(value)) {
-            //     document.getElementById(id).style.borderColor = 'red';
-            //     document.getElementById(helpId).innerHTML = 'Please enter Phone Number in a format (555)555-5555';
-            //     return false;
-            //   } else {
-            //     document.getElementById(id).style.border = '1px solid #ced4da';
-            //     document.getElementById(helpId).innerHTML = '';
-            //     return true;
-            //   }
-            // }
             if (this.validateNull(value)) {
                 document.getElementById(id).style.borderColor = 'red';
                 document.getElementById(helpId).innerHTML = 'Please fill out this field';
                 return false;
             }
             else {
-                document.getElementById(id).style.border = '1px solid #ced4da';
-                document.getElementById(helpId).innerHTML = '';
-                return true;
+                if (!this.validatePhone(value)) {
+                    document.getElementById(id).style.borderColor = 'red';
+                    document.getElementById(helpId).innerHTML = 'Please enter a valid phone number.';
+                    return false;
+                }
+                else {
+                    document.getElementById(id).style.border = '1px solid #ced4da';
+                    document.getElementById(helpId).innerHTML = '';
+                    return true;
+                }
             }
         }
         if (check === 'email') {
@@ -608,21 +598,24 @@ var ContactButtonComponent = /** @class */ (function () {
         this.name = '',
             this.email = '',
             this.message = '',
-            this.subject = '';
+            this.phone = '';
     };
     ContactButtonComponent.prototype.formSubmit = function () {
-        if (this.validate('notNull', this.name, 'Name', 'nameHelp') &&
-            this.validate('tel', this.subject, 'Subject', 'telHelp') &&
-            this.validate('email', this.email, 'Email', 'emailHelp') &&
-            this.validate('notNull', this.message, 'Message', 'messageHelp')) {
+        if (this.validate('notNull', this.name, 'Name1', 'nameHelp1') &&
+            this.validate('tel', this.phone, 'Phone1', 'telHelp1') &&
+            this.validate('email', this.email, 'Email1', 'emailHelp1') &&
+            this.validate('notNull', this.message, 'Message1', 'messageHelp1')) {
+            this.receiveremail = this.contactInfo[1].data;
+            console.log(this.receiveremail);
+            this.completeMessage = "phone: " + this.phone + ", <br/>\n                                 message: " + this.message;
             this.valid = true;
             var body = {
                 name: this.name,
-                subject: this.subject,
                 email: this.email,
-                message: this.message
+                receiveremail: this.receiveremail,
+                message: this.completeMessage,
             };
-            console.log(body);
+            // console.log(body);
             this.emailService.sendEmail(body)
                 .subscribe(function (response) {
                 // console.log('Authentication response:', response);
@@ -649,20 +642,21 @@ var ContactButtonComponent = /** @class */ (function () {
         }
         return (false);
     };
-    // private validatePhone(value: string) {
-    //   const isValidNumber = /^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$/.test(value);
-    //   if (isValidNumber) {
-    //     return (true);
-    //   } else {
-    //     // alert('false');
-    //     return (false);
-    //   }
-    // }
+    ContactButtonComponent.prototype.validatePhone = function (value) {
+        var isValidNumber = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$/.test(value);
+        if (isValidNumber) {
+            return (true);
+        }
+        else {
+            // alert('false');
+            return (false);
+        }
+    };
     ContactButtonComponent.prototype.validateNull = function (value) {
         if (value === undefined || value === '') {
             return (true);
         }
-        console.log(value);
+        // console.log(value);
         return (false);
     };
     return ContactButtonComponent;
@@ -693,7 +687,7 @@ var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var i3 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
 var i4 = __webpack_require__(/*! ./contact.component */ "./src/app/contact/contact.component.ts");
-var i5 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i5 = __webpack_require__(/*! @ng-toolkit/universal */ "@ng-toolkit/universal");
 var i6 = __webpack_require__(/*! ../services/email.service */ "./src/app/services/email.service.ts");
 var i7 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
 var styles_ContactComponent = [i0.styles];
@@ -703,90 +697,96 @@ function View_ContactComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 
 function View_ContactComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "td", [], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.data; _ck(_v, 1, 0, currVal_0); }); }
 function View_ContactComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "tr", [["style", "font-weight: 300"], ["valign", "top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "td", [["style", "font-weight: 600"]], null, null, null, null, null)), (_l()(), i1.ɵted(2, null, ["", ""])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ContactComponent_2)), i1.ɵdid(4, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"], ngIfElse: [1, "ngIfElse"] }, null), (_l()(), i1.ɵand(0, [["other_content", 2]], null, 0, null, View_ContactComponent_3))], function (_ck, _v) { var currVal_1 = ((((_v.context.$implicit == null) ? null : _v.context.$implicit.id) === 1) || (((_v.context.$implicit == null) ? null : _v.context.$implicit.id) === 2)); var currVal_2 = i1.ɵnov(_v, 5); _ck(_v, 4, 0, currVal_1, currVal_2); }, function (_ck, _v) { var currVal_0 = _v.context.$implicit.label; _ck(_v, 2, 0, currVal_0); }); }
 function View_ContactComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "tr", [["style", "font-weight: 300"], ["valign", "top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "td", [["style", "font-weight: 600"]], null, null, null, null, null)), (_l()(), i1.ɵted(2, null, ["", ""])), (_l()(), i1.ɵeld(3, 0, null, null, 1, "td", [], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, [" ", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.label; _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.data; _ck(_v, 4, 0, currVal_1); }); }
-function View_ContactComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "contact-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "div", [["class", "bg-translucent"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 4, "div", [["class", "container jumbotorn-top"], ["style", "text-align: center; padding: 0% 8%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h1", [["class", "pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Contact Us"])), (_l()(), i1.ɵeld(5, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Have a question about our Storage Units or your account? Use the convenient form to email our managers directly or use the contact information below!"])), (_l()(), i1.ɵeld(7, 0, null, null, 75, "div", [["class", "content-Holder bg-dark-background py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 74, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "h2", [["class", "pb-3"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Contact Information"])), (_l()(), i1.ɵeld(11, 0, null, null, 71, "div", [["class", "row content-margin-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 60, "div", [["class", "col-md-6 col-12 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 59, "form", [["novalidate", ""]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "submit"], [null, "reset"]], function (_v, en, $event) { var ad = true; if (("submit" === en)) {
+function View_ContactComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "contact-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "div", [["class", "bg-translucent"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 4, "div", [["class", "container jumbotorn-top"], ["style", "text-align: center; padding: 0% 8%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h1", [["class", "pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Contact Us"])), (_l()(), i1.ɵeld(5, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Have a question about our Storage Units or your account? Use the convenient form to email our managers directly or use the contact information below!"])), (_l()(), i1.ɵeld(7, 0, null, null, 93, "div", [["class", "content-Holder bg-dark-background py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 92, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "h2", [["class", "pb-3"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Contact Information"])), (_l()(), i1.ɵeld(11, 0, null, null, 89, "div", [["class", "row content-margin-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 78, "div", [["class", "col-md-6 col-12 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 77, "form", [["novalidate", ""]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "submit"], [null, "reset"]], function (_v, en, $event) { var ad = true; if (("submit" === en)) {
         var pd_0 = (i1.ɵnov(_v, 15).onSubmit($event) !== false);
         ad = (pd_0 && ad);
     } if (("reset" === en)) {
         var pd_1 = (i1.ɵnov(_v, 15).onReset() !== false);
         ad = (pd_1 && ad);
-    } return ad; }, null, null)), i1.ɵdid(14, 16384, null, 0, i3.ɵangular_packages_forms_forms_bg, [], null, null), i1.ɵdid(15, 4210688, null, 0, i3.NgForm, [[8, null], [8, null]], null, null), i1.ɵprd(2048, null, i3.ControlContainer, null, [i3.NgForm]), i1.ɵdid(17, 16384, null, 0, i3.NgControlStatusGroup, [[4, i3.ControlContainer]], null, null), (_l()(), i1.ɵeld(18, 0, null, null, 1, "div", [["class", "alert alert-danger"]], [[8, "hidden", 0]], null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Please fill out all the required fields! "])), (_l()(), i1.ɵeld(20, 0, null, null, 1, "div", [["class", "alert alert-success"]], [[8, "hidden", 0]], null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Form Successfully Submited! "])), (_l()(), i1.ɵeld(22, 0, null, null, 33, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 11, "div", [["class", "form-group col-md-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 1, "label", [["for", "Name"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Name*"])), (_l()(), i1.ɵeld(26, 0, null, null, 7, "input", [["class", "form-control"], ["id", "Name"], ["name", "name"], ["placeholder", "Enter Your Name"], ["required", ""], ["type", "text"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "keyup"], [null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 27)._handleInput($event.target.value) !== false);
+    } return ad; }, null, null)), i1.ɵdid(14, 16384, null, 0, i3.ɵangular_packages_forms_forms_bg, [], null, null), i1.ɵdid(15, 4210688, null, 0, i3.NgForm, [[8, null], [8, null]], null, null), i1.ɵprd(2048, null, i3.ControlContainer, null, [i3.NgForm]), i1.ɵdid(17, 16384, null, 0, i3.NgControlStatusGroup, [[4, i3.ControlContainer]], null, null), (_l()(), i1.ɵeld(18, 0, null, null, 1, "div", [["class", "alert alert-danger"]], [[8, "hidden", 0]], null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Please fill out all the required fields! "])), (_l()(), i1.ɵeld(20, 0, null, null, 1, "div", [["class", "alert alert-success"]], [[8, "hidden", 0]], null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Thank You for contacting us, We will get back to you soon. "])), (_l()(), i1.ɵeld(22, 0, null, null, 26, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 12, "div", [["class", "col-md-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 11, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 1, "label", [["for", "Name"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Name"])), (_l()(), i1.ɵeld(27, 0, null, null, 7, "input", [["class", "form-control"], ["id", "Name"], ["name", "Name"], ["placeholder", "Enter Name*"], ["required", ""], ["type", "text"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 28)._handleInput($event.target.value) !== false);
         ad = (pd_0 && ad);
     } if (("blur" === en)) {
-        var pd_1 = (i1.ɵnov(_v, 27).onTouched() !== false);
+        var pd_1 = (i1.ɵnov(_v, 28).onTouched() !== false);
         ad = (pd_1 && ad);
     } if (("compositionstart" === en)) {
-        var pd_2 = (i1.ɵnov(_v, 27)._compositionStart() !== false);
+        var pd_2 = (i1.ɵnov(_v, 28)._compositionStart() !== false);
         ad = (pd_2 && ad);
     } if (("compositionend" === en)) {
-        var pd_3 = (i1.ɵnov(_v, 27)._compositionEnd($event.target.value) !== false);
+        var pd_3 = (i1.ɵnov(_v, 28)._compositionEnd($event.target.value) !== false);
         ad = (pd_3 && ad);
-    } if (("keyup" === en)) {
-        var pd_4 = (_co.validate("notNull", _co.name, "Name", "nameHelp") !== false);
-        ad = (pd_4 && ad);
     } if (("ngModelChange" === en)) {
-        var pd_5 = ((_co.name = $event) !== false);
-        ad = (pd_5 && ad);
-    } return ad; }, null, null)), i1.ɵdid(27, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(28, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(31, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(33, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(34, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "nameHelp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(35, 0, null, null, 11, "div", [["class", "form-group col-md-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(36, 0, null, null, 1, "label", [["for", "Email"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Email address*"])), (_l()(), i1.ɵeld(38, 0, null, null, 7, "input", [["aria-describedby", "emailHelp"], ["class", "form-control"], ["id", "Email"], ["name", "email"], ["placeholder", "Enter email"], ["required", ""], ["type", "email"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "keyup"], [null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 39)._handleInput($event.target.value) !== false);
+        var pd_4 = ((_co.name = $event) !== false);
+        ad = (pd_4 && ad);
+    } return ad; }, null, null)), i1.ɵdid(28, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(29, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(32, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(34, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(35, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "nameHelp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(36, 0, null, null, 12, "div", [["class", "col-md-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(37, 0, null, null, 11, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(38, 0, null, null, 1, "label", [["for", "Phone"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Phone number"])), (_l()(), i1.ɵeld(40, 0, null, null, 7, "input", [["aria-describedby", "telHelp"], ["class", "form-control"], ["id", "Phone"], ["name", "Phone"], ["placeholder", "Enter Phone Number*"], ["required", ""], ["type", "tel"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 41)._handleInput($event.target.value) !== false);
         ad = (pd_0 && ad);
     } if (("blur" === en)) {
-        var pd_1 = (i1.ɵnov(_v, 39).onTouched() !== false);
+        var pd_1 = (i1.ɵnov(_v, 41).onTouched() !== false);
         ad = (pd_1 && ad);
     } if (("compositionstart" === en)) {
-        var pd_2 = (i1.ɵnov(_v, 39)._compositionStart() !== false);
+        var pd_2 = (i1.ɵnov(_v, 41)._compositionStart() !== false);
         ad = (pd_2 && ad);
     } if (("compositionend" === en)) {
-        var pd_3 = (i1.ɵnov(_v, 39)._compositionEnd($event.target.value) !== false);
+        var pd_3 = (i1.ɵnov(_v, 41)._compositionEnd($event.target.value) !== false);
         ad = (pd_3 && ad);
-    } if (("keyup" === en)) {
-        var pd_4 = (_co.validate("email", _co.email, "Email", "emailHelp") !== false);
-        ad = (pd_4 && ad);
     } if (("ngModelChange" === en)) {
-        var pd_5 = ((_co.email = $event) !== false);
-        ad = (pd_5 && ad);
-    } return ad; }, null, null)), i1.ɵdid(39, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(40, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(43, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(45, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(46, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "emailHelp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(47, 0, null, null, 8, "div", [["class", "form-group col-md-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(48, 0, null, null, 1, "label", [["for", "Subject"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Subject (Optional)"])), (_l()(), i1.ɵeld(50, 0, null, null, 5, "input", [["class", "form-control"], ["id", "Subject"], ["name", "subject"], ["placeholder", "Enter Subject"], ["type", "text"]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 51)._handleInput($event.target.value) !== false);
+        var pd_4 = ((_co.phone = $event) !== false);
+        ad = (pd_4 && ad);
+    } return ad; }, null, null)), i1.ɵdid(41, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(42, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(45, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(47, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(48, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "telHelp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(49, 0, null, null, 24, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(50, 0, null, null, 12, "div", [["class", "col-md-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(51, 0, null, null, 11, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(52, 0, null, null, 1, "label", [["for", "Email"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Email Address"])), (_l()(), i1.ɵeld(54, 0, null, null, 7, "input", [["aria-describedby", "emailHelp"], ["class", "form-control"], ["id", "Email"], ["name", "Email"], ["placeholder", "Enter Email*"], ["required", ""], ["type", "email"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 55)._handleInput($event.target.value) !== false);
         ad = (pd_0 && ad);
     } if (("blur" === en)) {
-        var pd_1 = (i1.ɵnov(_v, 51).onTouched() !== false);
+        var pd_1 = (i1.ɵnov(_v, 55).onTouched() !== false);
         ad = (pd_1 && ad);
     } if (("compositionstart" === en)) {
-        var pd_2 = (i1.ɵnov(_v, 51)._compositionStart() !== false);
+        var pd_2 = (i1.ɵnov(_v, 55)._compositionStart() !== false);
         ad = (pd_2 && ad);
     } if (("compositionend" === en)) {
-        var pd_3 = (i1.ɵnov(_v, 51)._compositionEnd($event.target.value) !== false);
+        var pd_3 = (i1.ɵnov(_v, 55)._compositionEnd($event.target.value) !== false);
+        ad = (pd_3 && ad);
+    } if (("ngModelChange" === en)) {
+        var pd_4 = ((_co.email = $event) !== false);
+        ad = (pd_4 && ad);
+    } return ad; }, null, null)), i1.ɵdid(55, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(56, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(59, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(61, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(62, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "emailHelp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(63, 0, null, null, 10, "div", [["class", "col-md-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(64, 0, null, null, 9, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(65, 0, null, null, 1, "label", [["for", "Subject"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Subject (Optional)"])), (_l()(), i1.ɵeld(67, 0, null, null, 5, "input", [["aria-describedby", "emailHelp"], ["class", "form-control"], ["id", "Subject"], ["name", "subject"], ["placeholder", "Enter Subject"], ["type", "text"]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 68)._handleInput($event.target.value) !== false);
+        ad = (pd_0 && ad);
+    } if (("blur" === en)) {
+        var pd_1 = (i1.ɵnov(_v, 68).onTouched() !== false);
+        ad = (pd_1 && ad);
+    } if (("compositionstart" === en)) {
+        var pd_2 = (i1.ɵnov(_v, 68)._compositionStart() !== false);
+        ad = (pd_2 && ad);
+    } if (("compositionend" === en)) {
+        var pd_3 = (i1.ɵnov(_v, 68)._compositionEnd($event.target.value) !== false);
         ad = (pd_3 && ad);
     } if (("ngModelChange" === en)) {
         var pd_4 = ((_co.subject = $event) !== false);
         ad = (pd_4 && ad);
-    } return ad; }, null, null)), i1.ɵdid(51, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(53, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [8, null], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(55, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(56, 0, null, null, 11, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(57, 0, null, null, 1, "label", [["for", "Message"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Enter Message*"])), (_l()(), i1.ɵeld(59, 0, null, null, 7, "textarea", [["class", "form-control"], ["id", "Message"], ["name", "message"], ["placeholder", "Enter Your Message"], ["required", ""], ["rows", "6"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "keyup"], [null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 60)._handleInput($event.target.value) !== false);
+    } return ad; }, null, null)), i1.ɵdid(68, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(70, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [8, null], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(72, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(73, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "subjectHelp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(74, 0, null, null, 12, "div", [["class", "form-group"]], null, null, null, null, null)), (_l()(), i1.ɵeld(75, 0, null, null, 1, "label", [["for", "Message"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Message"])), (_l()(), i1.ɵeld(77, 0, null, null, 8, "textarea", [["class", "form-control"], ["id", "Message"], ["name", "message"], ["placeholder", "Enter Message*"], ["required", ""], ["rows", "5"]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 78)._handleInput($event.target.value) !== false);
         ad = (pd_0 && ad);
     } if (("blur" === en)) {
-        var pd_1 = (i1.ɵnov(_v, 60).onTouched() !== false);
+        var pd_1 = (i1.ɵnov(_v, 78).onTouched() !== false);
         ad = (pd_1 && ad);
     } if (("compositionstart" === en)) {
-        var pd_2 = (i1.ɵnov(_v, 60)._compositionStart() !== false);
+        var pd_2 = (i1.ɵnov(_v, 78)._compositionStart() !== false);
         ad = (pd_2 && ad);
     } if (("compositionend" === en)) {
-        var pd_3 = (i1.ɵnov(_v, 60)._compositionEnd($event.target.value) !== false);
+        var pd_3 = (i1.ɵnov(_v, 78)._compositionEnd($event.target.value) !== false);
         ad = (pd_3 && ad);
-    } if (("keyup" === en)) {
-        var pd_4 = (_co.validate("notNull", _co.message, "Message", "messageHelp") !== false);
-        ad = (pd_4 && ad);
     } if (("ngModelChange" === en)) {
-        var pd_5 = ((_co.message = $event) !== false);
-        ad = (pd_5 && ad);
-    } return ad; }, null, null)), i1.ɵdid(60, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(61, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(64, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(66, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵeld(67, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "messageHelp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(68, 0, null, null, 4, "div", [["class", "button-contact-us"]], null, null, null, null, null)), (_l()(), i1.ɵeld(69, 0, null, null, 1, "button", [["class", "btn btn-primary px-4 ml-2"], ["style", "float: right;"], ["type", "submit"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_4 = ((_co.message = $event) !== false);
+        ad = (pd_4 && ad);
+    } return ad; }, null, null)), i1.ɵdid(78, 16384, null, 0, i3.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i3.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵdid(79, 16384, null, 0, i3.RequiredValidator, [], { required: [0, "required"] }, null), i1.ɵprd(1024, null, i3.NG_VALIDATORS, function (p0_0) { return [p0_0]; }, [i3.RequiredValidator]), i1.ɵprd(1024, null, i3.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i3.DefaultValueAccessor]), i1.ɵdid(82, 671744, null, 0, i3.NgModel, [[2, i3.ControlContainer], [6, i3.NG_VALIDATORS], [8, null], [6, i3.NG_VALUE_ACCESSOR]], { name: [0, "name"], model: [1, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i3.NgControl, null, [i3.NgModel]), i1.ɵdid(84, 16384, null, 0, i3.NgControlStatus, [[4, i3.NgControl]], null, null), (_l()(), i1.ɵted(-1, null, ["                          "])), (_l()(), i1.ɵeld(86, 0, null, null, 0, "small", [["class", "form-text text-muted"], ["id", "messageHelp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(87, 0, null, null, 1, "button", [["class", "btn btn-primary px-4 mx-1"], ["style", "float: right"], ["type", "submit"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.formSubmit() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Submit"])), (_l()(), i1.ɵeld(71, 0, null, null, 1, "button", [["class", "btn btn-outline-primary px-4"], ["style", "float: right;"], ["type", "submit"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Send"])), (_l()(), i1.ɵeld(89, 0, null, null, 1, "button", [["class", "btn btn-outline-primary mx-1 px-4"], ["style", "float: right;"], ["type", "button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.formClear() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Clear"])), (_l()(), i1.ɵeld(73, 0, null, null, 9, "div", [["class", "col-md-6 col-12 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(74, 0, null, null, 1, "div", [["class", "pb-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(75, 0, null, null, 0, "iframe", [["allowfullscreen", ""], ["frameborder", "0"], ["height", "200"], ["src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.533752182271!2d-73.94262538438662!3d42.84046171261981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6e7c26c4b959%3A0x88f2e4056402869c!2sScotia+Storage+Co!5e0!3m2!1sen!2sus!4v1542138509038"], ["style", "border:0"], ["width", "100%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(76, 0, null, null, 6, "div", [["class", "py-3 locate-us-style"]], null, null, null, null, null)), (_l()(), i1.ɵeld(77, 0, null, null, 5, "table", [], null, null, null, null, null)), (_l()(), i1.ɵeld(78, 0, null, null, 4, "tbody", [], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ContactComponent_1)), i1.ɵdid(80, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ContactComponent_4)), i1.ɵdid(82, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_17 = ""; _ck(_v, 28, 0, currVal_17); var currVal_18 = "name"; var currVal_19 = _co.name; _ck(_v, 31, 0, currVal_18, currVal_19); var currVal_28 = ""; _ck(_v, 40, 0, currVal_28); var currVal_29 = "email"; var currVal_30 = _co.email; _ck(_v, 43, 0, currVal_29, currVal_30); var currVal_38 = "subject"; var currVal_39 = _co.subject; _ck(_v, 53, 0, currVal_38, currVal_39); var currVal_48 = ""; _ck(_v, 61, 0, currVal_48); var currVal_49 = "message"; var currVal_50 = _co.message; _ck(_v, 64, 0, currVal_49, currVal_50); var currVal_51 = _co.contactDetails; _ck(_v, 80, 0, currVal_51); var currVal_52 = _co.hours; _ck(_v, 82, 0, currVal_52); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵnov(_v, 17).ngClassUntouched; var currVal_1 = i1.ɵnov(_v, 17).ngClassTouched; var currVal_2 = i1.ɵnov(_v, 17).ngClassPristine; var currVal_3 = i1.ɵnov(_v, 17).ngClassDirty; var currVal_4 = i1.ɵnov(_v, 17).ngClassValid; var currVal_5 = i1.ɵnov(_v, 17).ngClassInvalid; var currVal_6 = i1.ɵnov(_v, 17).ngClassPending; _ck(_v, 13, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6); var currVal_7 = _co.valid; _ck(_v, 18, 0, currVal_7); var currVal_8 = _co.submited; _ck(_v, 20, 0, currVal_8); var currVal_9 = (i1.ɵnov(_v, 28).required ? "" : null); var currVal_10 = i1.ɵnov(_v, 33).ngClassUntouched; var currVal_11 = i1.ɵnov(_v, 33).ngClassTouched; var currVal_12 = i1.ɵnov(_v, 33).ngClassPristine; var currVal_13 = i1.ɵnov(_v, 33).ngClassDirty; var currVal_14 = i1.ɵnov(_v, 33).ngClassValid; var currVal_15 = i1.ɵnov(_v, 33).ngClassInvalid; var currVal_16 = i1.ɵnov(_v, 33).ngClassPending; _ck(_v, 26, 0, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16); var currVal_20 = (i1.ɵnov(_v, 40).required ? "" : null); var currVal_21 = i1.ɵnov(_v, 45).ngClassUntouched; var currVal_22 = i1.ɵnov(_v, 45).ngClassTouched; var currVal_23 = i1.ɵnov(_v, 45).ngClassPristine; var currVal_24 = i1.ɵnov(_v, 45).ngClassDirty; var currVal_25 = i1.ɵnov(_v, 45).ngClassValid; var currVal_26 = i1.ɵnov(_v, 45).ngClassInvalid; var currVal_27 = i1.ɵnov(_v, 45).ngClassPending; _ck(_v, 38, 0, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25, currVal_26, currVal_27); var currVal_31 = i1.ɵnov(_v, 55).ngClassUntouched; var currVal_32 = i1.ɵnov(_v, 55).ngClassTouched; var currVal_33 = i1.ɵnov(_v, 55).ngClassPristine; var currVal_34 = i1.ɵnov(_v, 55).ngClassDirty; var currVal_35 = i1.ɵnov(_v, 55).ngClassValid; var currVal_36 = i1.ɵnov(_v, 55).ngClassInvalid; var currVal_37 = i1.ɵnov(_v, 55).ngClassPending; _ck(_v, 50, 0, currVal_31, currVal_32, currVal_33, currVal_34, currVal_35, currVal_36, currVal_37); var currVal_40 = (i1.ɵnov(_v, 61).required ? "" : null); var currVal_41 = i1.ɵnov(_v, 66).ngClassUntouched; var currVal_42 = i1.ɵnov(_v, 66).ngClassTouched; var currVal_43 = i1.ɵnov(_v, 66).ngClassPristine; var currVal_44 = i1.ɵnov(_v, 66).ngClassDirty; var currVal_45 = i1.ɵnov(_v, 66).ngClassValid; var currVal_46 = i1.ɵnov(_v, 66).ngClassInvalid; var currVal_47 = i1.ɵnov(_v, 66).ngClassPending; _ck(_v, 59, 0, currVal_40, currVal_41, currVal_42, currVal_43, currVal_44, currVal_45, currVal_46, currVal_47); }); }
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Clear"])), (_l()(), i1.ɵeld(91, 0, null, null, 9, "div", [["class", "col-md-6 col-12 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(92, 0, null, null, 1, "div", [["class", "pb-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(93, 0, null, null, 0, "iframe", [["allowfullscreen", ""], ["frameborder", "0"], ["height", "200"], ["src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.533752182271!2d-73.94262538438662!3d42.84046171261981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6e7c26c4b959%3A0x88f2e4056402869c!2sScotia+Storage+Co!5e0!3m2!1sen!2sus!4v1542138509038"], ["style", "border:0"], ["width", "100%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(94, 0, null, null, 6, "div", [["class", "py-3 locate-us-style"]], null, null, null, null, null)), (_l()(), i1.ɵeld(95, 0, null, null, 5, "table", [], null, null, null, null, null)), (_l()(), i1.ɵeld(96, 0, null, null, 4, "tbody", [], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ContactComponent_1)), i1.ɵdid(98, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ContactComponent_4)), i1.ɵdid(100, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_17 = ""; _ck(_v, 29, 0, currVal_17); var currVal_18 = "Name"; var currVal_19 = _co.name; _ck(_v, 32, 0, currVal_18, currVal_19); var currVal_28 = ""; _ck(_v, 42, 0, currVal_28); var currVal_29 = "Phone"; var currVal_30 = _co.phone; _ck(_v, 45, 0, currVal_29, currVal_30); var currVal_39 = ""; _ck(_v, 56, 0, currVal_39); var currVal_40 = "Email"; var currVal_41 = _co.email; _ck(_v, 59, 0, currVal_40, currVal_41); var currVal_49 = "subject"; var currVal_50 = _co.subject; _ck(_v, 70, 0, currVal_49, currVal_50); var currVal_59 = ""; _ck(_v, 79, 0, currVal_59); var currVal_60 = "message"; var currVal_61 = _co.message; _ck(_v, 82, 0, currVal_60, currVal_61); var currVal_62 = _co.contactDetails; _ck(_v, 98, 0, currVal_62); var currVal_63 = _co.hours; _ck(_v, 100, 0, currVal_63); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵnov(_v, 17).ngClassUntouched; var currVal_1 = i1.ɵnov(_v, 17).ngClassTouched; var currVal_2 = i1.ɵnov(_v, 17).ngClassPristine; var currVal_3 = i1.ɵnov(_v, 17).ngClassDirty; var currVal_4 = i1.ɵnov(_v, 17).ngClassValid; var currVal_5 = i1.ɵnov(_v, 17).ngClassInvalid; var currVal_6 = i1.ɵnov(_v, 17).ngClassPending; _ck(_v, 13, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6); var currVal_7 = _co.valid; _ck(_v, 18, 0, currVal_7); var currVal_8 = _co.submited; _ck(_v, 20, 0, currVal_8); var currVal_9 = (i1.ɵnov(_v, 29).required ? "" : null); var currVal_10 = i1.ɵnov(_v, 34).ngClassUntouched; var currVal_11 = i1.ɵnov(_v, 34).ngClassTouched; var currVal_12 = i1.ɵnov(_v, 34).ngClassPristine; var currVal_13 = i1.ɵnov(_v, 34).ngClassDirty; var currVal_14 = i1.ɵnov(_v, 34).ngClassValid; var currVal_15 = i1.ɵnov(_v, 34).ngClassInvalid; var currVal_16 = i1.ɵnov(_v, 34).ngClassPending; _ck(_v, 27, 0, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16); var currVal_20 = (i1.ɵnov(_v, 42).required ? "" : null); var currVal_21 = i1.ɵnov(_v, 47).ngClassUntouched; var currVal_22 = i1.ɵnov(_v, 47).ngClassTouched; var currVal_23 = i1.ɵnov(_v, 47).ngClassPristine; var currVal_24 = i1.ɵnov(_v, 47).ngClassDirty; var currVal_25 = i1.ɵnov(_v, 47).ngClassValid; var currVal_26 = i1.ɵnov(_v, 47).ngClassInvalid; var currVal_27 = i1.ɵnov(_v, 47).ngClassPending; _ck(_v, 40, 0, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25, currVal_26, currVal_27); var currVal_31 = (i1.ɵnov(_v, 56).required ? "" : null); var currVal_32 = i1.ɵnov(_v, 61).ngClassUntouched; var currVal_33 = i1.ɵnov(_v, 61).ngClassTouched; var currVal_34 = i1.ɵnov(_v, 61).ngClassPristine; var currVal_35 = i1.ɵnov(_v, 61).ngClassDirty; var currVal_36 = i1.ɵnov(_v, 61).ngClassValid; var currVal_37 = i1.ɵnov(_v, 61).ngClassInvalid; var currVal_38 = i1.ɵnov(_v, 61).ngClassPending; _ck(_v, 54, 0, currVal_31, currVal_32, currVal_33, currVal_34, currVal_35, currVal_36, currVal_37, currVal_38); var currVal_42 = i1.ɵnov(_v, 72).ngClassUntouched; var currVal_43 = i1.ɵnov(_v, 72).ngClassTouched; var currVal_44 = i1.ɵnov(_v, 72).ngClassPristine; var currVal_45 = i1.ɵnov(_v, 72).ngClassDirty; var currVal_46 = i1.ɵnov(_v, 72).ngClassValid; var currVal_47 = i1.ɵnov(_v, 72).ngClassInvalid; var currVal_48 = i1.ɵnov(_v, 72).ngClassPending; _ck(_v, 67, 0, currVal_42, currVal_43, currVal_44, currVal_45, currVal_46, currVal_47, currVal_48); var currVal_51 = (i1.ɵnov(_v, 79).required ? "" : null); var currVal_52 = i1.ɵnov(_v, 84).ngClassUntouched; var currVal_53 = i1.ɵnov(_v, 84).ngClassTouched; var currVal_54 = i1.ɵnov(_v, 84).ngClassPristine; var currVal_55 = i1.ɵnov(_v, 84).ngClassDirty; var currVal_56 = i1.ɵnov(_v, 84).ngClassValid; var currVal_57 = i1.ɵnov(_v, 84).ngClassInvalid; var currVal_58 = i1.ɵnov(_v, 84).ngClassPending; _ck(_v, 77, 0, currVal_51, currVal_52, currVal_53, currVal_54, currVal_55, currVal_56, currVal_57, currVal_58); }); }
 exports.View_ContactComponent_0 = View_ContactComponent_0;
-function View_ContactComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-contact", [], null, null, null, View_ContactComponent_0, RenderType_ContactComponent)), i1.ɵdid(1, 114688, null, 0, i4.ContactComponent, [i5.Router, i6.EmailService, i7.Title, i7.Meta], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_ContactComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-contact", [], null, null, null, View_ContactComponent_0, RenderType_ContactComponent)), i1.ɵdid(1, 114688, null, 0, i4.ContactComponent, [i5.WINDOW, i6.EmailService, i7.Title, i7.Meta], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_ContactComponent_Host_0 = View_ContactComponent_Host_0;
 var ContactComponentNgFactory = i1.ɵccf("app-contact", i4.ContactComponent, View_ContactComponent_Host_0, {}, {}, []);
 exports.ContactComponentNgFactory = ContactComponentNgFactory;
@@ -827,13 +827,12 @@ exports.styles = styles;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
 var platform_browser_1 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
 var contact_1 = __webpack_require__(/*! ../data/contact */ "./src/app/data/contact.ts");
 var email_service_1 = __webpack_require__(/*! ../services/email.service */ "./src/app/services/email.service.ts");
 var ContactComponent = /** @class */ (function () {
-    function ContactComponent(router, emailService, titleService, meta) {
-        this.router = router;
+    function ContactComponent(window, emailService, titleService, meta) {
+        this.window = window;
         this.emailService = emailService;
         this.titleService = titleService;
         this.meta = meta;
@@ -843,17 +842,14 @@ var ContactComponent = /** @class */ (function () {
         this.submited = true;
         this.meta.addTag({
             name: 'description',
-            content: "Are you looking for more information about Scotia Self Storage and our array of convenient self storage options? Call  (518) 382-0218 or click here for our contact information!"
+            content: "Have a question about our self storage units or RV parking spaces?\n                Use our convenient contact form or the contact information here to\n                speak with one of our friendly and knowledgeable managers!"
         });
-        this.titleService.setTitle('Contact Scotia Self Storage');
+        this.titleService.setTitle('Contact Us | Fortress Mini Storage');
     }
     ContactComponent.prototype.ngOnInit = function () {
         this.fetchContactDetails();
         this.fetchHours();
-        window.scrollTo(0, 0);
-    };
-    ContactComponent.prototype.navigate = function (location) {
-        this.router.navigate([location]);
+        this.window.scrollTo(0, 0);
     };
     ContactComponent.prototype.fetchContactDetails = function () {
         this.contactDetails = contact_1.contact;
@@ -862,32 +858,101 @@ var ContactComponent = /** @class */ (function () {
         this.hours = contact_1.hours;
     };
     ContactComponent.prototype.validate = function (check, value, id, helpId) {
-        // console.log(check + ' ' + value);
         if (check === 'notNull') {
             if (this.validateNull(value)) {
                 document.getElementById(id).style.borderColor = 'red';
                 document.getElementById(helpId).innerHTML = 'Please fill out this field';
+                return false;
             }
             else {
                 document.getElementById(id).style.border = '1px solid #ced4da';
                 document.getElementById(helpId).innerHTML = '';
+                return true;
+            }
+        }
+        if (check === 'tel') {
+            if (this.validateNull(value)) {
+                document.getElementById(id).style.borderColor = 'red';
+                document.getElementById(helpId).innerHTML = 'Please fill out this field';
+                return false;
+            }
+            else {
+                if (!this.validatePhone(value)) {
+                    document.getElementById(id).style.borderColor = 'red';
+                    document.getElementById(helpId).innerHTML = 'Please enter a valid phone number.';
+                    return false;
+                }
+                else {
+                    document.getElementById(id).style.border = '1px solid #ced4da';
+                    document.getElementById(helpId).innerHTML = '';
+                    return true;
+                }
             }
         }
         if (check === 'email') {
             if (this.validateNull(value)) {
                 document.getElementById(id).style.borderColor = 'red';
                 document.getElementById(helpId).innerHTML = 'Please fill out this field';
+                return false;
             }
             else {
                 if (!this.validateEmail(value)) {
                     document.getElementById(id).style.borderColor = 'red';
                     document.getElementById(helpId).innerHTML = 'Please enter a valid email id';
+                    return false;
                 }
                 else {
                     document.getElementById(id).style.border = '1px solid #ced4da';
                     document.getElementById(helpId).innerHTML = '';
+                    return true;
                 }
             }
+        }
+    };
+    ContactComponent.prototype.formClear = function () {
+        this.name = '',
+            this.email = '',
+            this.message = '',
+            this.phone = '',
+            this.subject = '';
+    };
+    ContactComponent.prototype.formSubmit = function () {
+        if (this.validate('notNull', this.name, 'Name', 'nameHelp') &&
+            this.validate('tel', this.phone, 'Phone', 'telHelp') &&
+            this.validate('email', this.email, 'Email', 'emailHelp') &&
+            this.validate('notNull', this.message, 'Message', 'messageHelp')) {
+            if (this.subject === undefined) {
+                this.subject = 'Enquiry Message';
+            }
+            this.receiveremail = this.contactDetails[1].data;
+            this.completeMessage = "phone: " + this.phone + ", <br/>\n                                 message: " + this.message;
+            this.valid = true;
+            var body = {
+                name: this.name,
+                email: this.email,
+                subject: this.subject,
+                receiveremail: this.receiveremail,
+                message: this.completeMessage,
+            };
+            console.log(body);
+            this.emailService.sendEmail(body)
+                .subscribe(function (response) {
+                // console.log('Authentication response:', response);
+                if (response.result != null) {
+                    // alert(response.message);
+                }
+                else {
+                    // console.log(`response`, response.result);
+                    // alert(response.message);
+                }
+            }, function (err) {
+                // console.log('Error :', err);
+            });
+            this.submited = false;
+            // MailService(body);
+        }
+        else {
+            this.valid = false;
         }
     };
     ContactComponent.prototype.validateEmail = function (value) {
@@ -896,50 +961,22 @@ var ContactComponent = /** @class */ (function () {
         }
         return (false);
     };
+    ContactComponent.prototype.validatePhone = function (value) {
+        var isValidNumber = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$/.test(value);
+        if (isValidNumber) {
+            return (true);
+        }
+        else {
+            // alert('false');
+            return (false);
+        }
+    };
     ContactComponent.prototype.validateNull = function (value) {
         if (value === undefined || value === '') {
             return (true);
         }
+        console.log(value);
         return (false);
-    };
-    ContactComponent.prototype.formClear = function () {
-        this.name = '',
-            this.email = '',
-            this.message = '',
-            this.subject = '';
-    };
-    ContactComponent.prototype.formSubmit = function () {
-        this.valid = false;
-        if (this.validateEmail(this.email)) {
-            if (this.name === '' || this.message === '' || this.name === undefined || this.message === undefined) {
-                this.valid = false;
-            }
-            else {
-                this.valid = true;
-                var body = {
-                    name: this.name,
-                    email: this.email,
-                    receiverEmail: this.contactDetails[1].data,
-                    message: this.message,
-                    subject: this.subject,
-                };
-                this.emailService.sendEmail(body)
-                    .subscribe(function (response) {
-                    // console.log('Authentication response:', response);
-                    if (response.result != null) {
-                        //alert(response.message);
-                    }
-                    else {
-                        // console.log(`response`, response.result);
-                        // alert(response.message);
-                    }
-                }, function (err) {
-                    console.log('Error :', err);
-                });
-                this.submited = false;
-                // MailService(body);
-            }
-        }
     };
     return ContactComponent;
 }());
@@ -969,7 +1006,7 @@ exports.contact = [
         id: 1,
         redirect: 'mailto:ss@scotiastorage.com',
         label: 'Email',
-        data: 'ss@scotiastorage.com',
+        data: 'jaya13194@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
@@ -993,6 +1030,13 @@ exports.hours = [
         label: 'Office Hours: ',
         data: 'Mon-Fri 10:00 am - 4:00 pm'
     },
+];
+exports.socialLink = [
+    {
+        label: "facebook",
+        path: "https://www.facebook.com/pages/Scotia-Storage/161605087196389",
+        class: "fab fa-facebook-square",
+    }
 ];
 
 
@@ -1430,6 +1474,59 @@ exports.viewRate = [
         p: "Whether you just need an extra closet's worth of storage or you require an oversized unit complete with large garage door for easy loading and unloading we're there for your convenience!",
     },
 ];
+exports.slideShow = [
+    {
+        class: "active",
+        id: "1",
+        path: "../../assets/images/slide-show/1.jpg",
+        alt: "view-rate-1",
+    },
+    {
+        id: "2",
+        path: "../../assets/images/slide-show/2.jpg",
+        alt: "view-rate-2",
+    },
+    // {
+    //     id: `3`,
+    //     path: `../../assets/images/slide-show/3.jpg`,
+    //     alt: `view-rate-3`,
+    // },
+    {
+        id: "4",
+        path: "../../assets/images/slide-show/scotia-self-storage-4.jpg",
+        alt: "view-rate-4",
+    },
+    {
+        id: "5",
+        path: "../../assets/images/slide-show/scotia-self-storage-building.jpg",
+        alt: "view-rate-5",
+    },
+    {
+        id: "6",
+        path: "../../assets/images/slide-show/scotia-self-storage-gate.jpg",
+        alt: "view-rate-6",
+    },
+    {
+        id: "7",
+        path: "../../assets/images/slide-show/scotia-self-storage-sign.jpg",
+        alt: "view-rate-7",
+    },
+    {
+        id: "8",
+        path: "../../assets/images/slide-show/scotia-storage-gate.jpg",
+        alt: "view-rate-8",
+    },
+    {
+        id: "9",
+        path: "../../assets/images/slide-show/scotia-storage-ramp.jpg",
+        alt: "view-rate-9",
+    },
+    {
+        id: "10",
+        path: "../../assets/images/slide-show/scotia-storage-two-story.jpg",
+        alt: "view-rate-10",
+    },
+];
 
 
 /***/ }),
@@ -1533,7 +1630,7 @@ var i2 = __webpack_require__(/*! ./footer.component */ "./src/app/footer/footer.
 var styles_FooterComponent = [i0.styles];
 var RenderType_FooterComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_FooterComponent, data: {} });
 exports.RenderType_FooterComponent = RenderType_FooterComponent;
-function View_FooterComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "container footer bg-secondary sticky col-md-12 p-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 6, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 5, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "div", [["class", "col-6 my-auto"], ["style", "text-align: left;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Copyright 2018 Victor Self Storage"])), (_l()(), i1.ɵeld(5, 0, null, null, 2, "div", [["class", "col-6 my-auto"], ["style", "text-align: right;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 1, "a", [["href", "https://www.syrasoft.com/"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 0, "img", [["alt", ""], ["height", "40px"], ["src", "../../assets/images/Syrasoft Powered.svg"]], null, null, null, null, null))], null, null); }
+function View_FooterComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "footer bg-secondary col-md-12 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 6, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 5, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "div", [["class", "col-6 my-auto"], ["style", "text-align: left;"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Copyright 2018 Scotia Self Storage"])), (_l()(), i1.ɵeld(5, 0, null, null, 2, "div", [["class", "col-6 my-auto"], ["style", "text-align: right;"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 1, "a", [["href", "https://www.syrasoft.com/"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 0, "img", [["alt", ""], ["height", "48px"], ["rel", "nofollow"], ["src", "../../assets/images/Syrasoft Powered.svg"], ["width", "auto"]], null, null, null, null, null))], null, null); }
 exports.View_FooterComponent_0 = View_FooterComponent_0;
 function View_FooterComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-footer", [], null, null, null, View_FooterComponent_0, RenderType_FooterComponent)), i1.ɵdid(1, 114688, null, 0, i2.FooterComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_FooterComponent_Host_0 = View_FooterComponent_Host_0;
@@ -1559,7 +1656,7 @@ exports.FooterComponentNgFactory = FooterComponentNgFactory;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = ["*[_ngcontent-%COMP%] {\n  font-family: \"Lato\", sans-serif; }\n.justify[_ngcontent-%COMP%] {\n  text-align: justify; }\n.bg-secondary[_ngcontent-%COMP%] {\n  background: #212121 !important; }\n.bg-dark[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.2) !important; }\n.bg-light[_ngcontent-%COMP%] {\n  background: #efefef !important; }\n.bg-translucent[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.72);\n  width: auto !important;\n  height: 100vh; }\n.bg-dark-background[_ngcontent-%COMP%] {\n  background: #404040; }\n.contentHolder[_ngcontent-%COMP%] {\n  min-height: 94vh; }\n.btn-primary[_ngcontent-%COMP%] {\n  background-color: #ffde03;\n  border-color: #ffde03;\n  color: #000000 !important;\n  min-width: 200px;\n  border-radius: 25px; }\n.btn-primary[_ngcontent-%COMP%]:hover {\n  background-color: #FBC02D;\n  border-color: #FBC02D;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%] {\n  background-color: transparent;\n  border-color: #ffde03;\n  border: 1px solid #ffde03;\n  min-width: 200px;\n  color: #ffffff !important;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%]:hover {\n  background-color: #FBC02D;\n  border-color: #FBC02D;\n  border-radius: 25px;\n  color: #000000 !important; }\n.section-headings[_ngcontent-%COMP%] {\n  font-weight: 200; }\n.contact-map[_ngcontent-%COMP%] {\n  width: 100%; }\n.heading[_ngcontent-%COMP%] {\n  font-weight: 400; }\n.sectionImage[_ngcontent-%COMP%] {\n  width: 100%; }\n.footer[_ngcontent-%COMP%] {\n  color: #ffffff;\n  text-align: center;\n  font-size: 0.7em; }"];
+var styles = ["*[_ngcontent-%COMP%] {\n  font-family: \"Lato\", sans-serif; }\n.justify[_ngcontent-%COMP%] {\n  text-align: justify; }\n.bg-secondary[_ngcontent-%COMP%] {\n  background: #212121 !important; }\n.bg-dark[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.2) !important; }\n.bg-light[_ngcontent-%COMP%] {\n  background: #efefef !important; }\n.bg-translucent[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.72);\n  width: auto !important;\n  height: 100vh; }\n.bg-dark-background[_ngcontent-%COMP%] {\n  background: #404040; }\n.contentHolder[_ngcontent-%COMP%] {\n  min-height: 94vh; }\n.btn-primary[_ngcontent-%COMP%] {\n  background-color: #ffde03;\n  border-color: #ffde03;\n  color: #000000 !important;\n  min-width: 200px;\n  border-radius: 25px; }\n.btn-primary[_ngcontent-%COMP%]:hover {\n  background-color: #FBC02D;\n  border-color: #FBC02D;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%] {\n  background-color: transparent;\n  border-color: #ffde03;\n  border: 1px solid #ffde03;\n  min-width: 200px;\n  color: #ffffff !important;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%]:hover {\n  background-color: #FBC02D;\n  border-color: #FBC02D;\n  border-radius: 25px;\n  color: #000000 !important; }\n.section-headings[_ngcontent-%COMP%] {\n  font-weight: 200; }\n.contact-map[_ngcontent-%COMP%] {\n  width: 100%; }\n.heading[_ngcontent-%COMP%] {\n  font-weight: 400; }\n.sectionImage[_ngcontent-%COMP%] {\n  width: 100%; }\n.footer[_ngcontent-%COMP%] {\n  color: #ffffff; }"];
 exports.styles = styles;
 
 
@@ -1962,7 +2059,7 @@ var EmailService = /** @class */ (function () {
             contents: {
                 name: data.name,
                 senderEmail: data.email,
-                receiverEmail: data.receiverEmail,
+                receiverEmail: data.receiveremail,
                 subject: data.subject,
                 message: data.message,
                 customTemplate: ''
@@ -2007,7 +2104,7 @@ exports.RenderType_StorageTipsComponent = RenderType_StorageTipsComponent;
 function View_StorageTipsComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "li", [["class", "storage-left"]], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.data; _ck(_v, 1, 0, currVal_0); }); }
 function View_StorageTipsComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "li", [["class", "py-2"]], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, [" ", " "]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.p; _ck(_v, 1, 0, currVal_0); }); }
 function View_StorageTipsComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 8, "div", [["class", "card"], ["style", "text-align: left"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "div", [["class", "card-header noselect"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "div", [["aria-expanded", "true"], ["class", "card-header-before-collapse collapsed p-3"], ["data-toggle", "collapse"], ["style", "cursor: pointer"]], [[1, "data-target", 0]], null, null, null, null)), (_l()(), i1.ɵted(3, null, [" ", " "])), (_l()(), i1.ɵeld(4, 0, null, null, 4, "div", [["aria-labelledby", "collapseOne"], ["class", "collapse"], ["data-parent", "#accordion"]], [[8, "id", 0]], null, null, null, null)), i1.ɵdid(5, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), (_l()(), i1.ɵeld(6, 0, null, null, 2, "ul", [["class", "card-body"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StorageTipsComponent_3)), i1.ɵdid(8, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var currVal_3 = "collapse"; var currVal_4 = ((((_v.context.$implicit == null) ? null : _v.context.$implicit.id) == 0) && "show"); _ck(_v, 5, 0, currVal_3, currVal_4); var currVal_5 = _v.context.$implicit.data; _ck(_v, 8, 0, currVal_5); }, function (_ck, _v) { var currVal_0 = ("#collapseOne" + ((_v.context.$implicit == null) ? null : _v.context.$implicit.id)); _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.label; _ck(_v, 3, 0, currVal_1); var currVal_2 = ("collapseOne" + ((_v.context.$implicit == null) ? null : _v.context.$implicit.id)); _ck(_v, 4, 0, currVal_2); }); }
-function View_StorageTipsComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "storage-tips-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "div", [["class", "bg-translucent"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 4, "div", [["class", "container jumbotorn-top"], ["style", "text-align: center; padding: 0% 8%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h1", [["class", "pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Scotia Storage Helps you Every Step of the Way!"])), (_l()(), i1.ɵeld(5, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Here are some free tips for storing your belongings with Scotia Storage! Have specific questions that aren't covered here? Contact us today and let us make your self storage experience a breeze!"])), (_l()(), i1.ɵeld(7, 0, null, null, 11, "div", [["class", "content-Holder bg-dark-background py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 10, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "h2", [["class", "pb-3"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Scotia Self Storage Tips"])), (_l()(), i1.ɵeld(11, 0, null, null, 7, "div", [["class", "row accordion-background content-margin-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 3, "div", [["class", "col-md-6 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 2, "ol", [["style", "text-align: left"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StorageTipsComponent_1)), i1.ɵdid(15, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(16, 0, null, null, 2, "div", [["class", "col-md-6 py-3"], ["id", "accordion"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StorageTipsComponent_2)), i1.ɵdid(18, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.storageTip; _ck(_v, 15, 0, currVal_0); var currVal_1 = _co.storageTipAccordion; _ck(_v, 18, 0, currVal_1); }, null); }
+function View_StorageTipsComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "storage-tips-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "div", [["class", "bg-translucent"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 4, "div", [["class", "container jumbotorn-top"], ["style", "text-align: center; padding: 0% 8%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h1", [["class", "pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Scotia Storage Helps you Every Step of the Way!"])), (_l()(), i1.ɵeld(5, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Here are some free tips for storing your belongings with Scotia Storage! Have specific questions that aren't covered here? Contact us today and let us make your self storage experience a breeze!"])), (_l()(), i1.ɵeld(7, 0, null, null, 11, "div", [["class", "content-Holder bg-dark-background py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 10, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "h2", [["class", "pb-3"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Scotia Self Storage Tips"])), (_l()(), i1.ɵeld(11, 0, null, null, 7, "div", [["class", "row accordion-background content-margin-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 3, "div", [["class", "col-md-6 py-3 ul-padding"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 2, "ul", [["style", "text-align: left"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StorageTipsComponent_1)), i1.ɵdid(15, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(16, 0, null, null, 2, "div", [["class", "col-md-6 py-3"], ["id", "accordion"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StorageTipsComponent_2)), i1.ɵdid(18, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.storageTip; _ck(_v, 15, 0, currVal_0); var currVal_1 = _co.storageTipAccordion; _ck(_v, 18, 0, currVal_1); }, null); }
 exports.View_StorageTipsComponent_0 = View_StorageTipsComponent_0;
 function View_StorageTipsComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-storage-tips", [], null, null, null, View_StorageTipsComponent_0, RenderType_StorageTipsComponent)), i1.ɵdid(1, 114688, null, 0, i3.StorageTipsComponent, [i4.WINDOW, i5.Title, i5.Meta], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_StorageTipsComponent_Host_0 = View_StorageTipsComponent_Host_0;
@@ -2033,7 +2130,7 @@ exports.StorageTipsComponentNgFactory = StorageTipsComponentNgFactory;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = ["@import url(\"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\");\n\n*[_ngcontent-%COMP%] {\n  font-family: \"Lato\", sans-serif; }\n.justify[_ngcontent-%COMP%] {\n  text-align: justify; }\n.bg-secondary[_ngcontent-%COMP%] {\n  background: #212121 !important; }\n.bg-dark[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.2) !important; }\n.bg-light[_ngcontent-%COMP%] {\n  background: #efefef !important; }\n.bg-translucent[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.72);\n  width: auto !important;\n  height: 100vh; }\n.bg-dark-background[_ngcontent-%COMP%] {\n  background: #404040; }\n.contentHolder[_ngcontent-%COMP%] {\n  min-height: 94vh; }\n.btn-primary[_ngcontent-%COMP%] {\n  background-color: #ffde03;\n  border-color: #ffde03;\n  color: #000000 !important;\n  min-width: 200px;\n  border-radius: 25px; }\n.btn-primary[_ngcontent-%COMP%]:hover {\n  background-color: #FBC02D;\n  border-color: #FBC02D;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%] {\n  background-color: transparent;\n  border-color: #ffde03;\n  border: 1px solid #ffde03;\n  min-width: 200px;\n  color: #ffffff !important;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%]:hover {\n  background-color: #FBC02D;\n  border-color: #FBC02D;\n  border-radius: 25px;\n  color: #000000 !important; }\n.section-headings[_ngcontent-%COMP%] {\n  font-weight: 200; }\n.contact-map[_ngcontent-%COMP%] {\n  width: 100%; }\n.heading[_ngcontent-%COMP%] {\n  font-weight: 400; }\n.sectionImage[_ngcontent-%COMP%] {\n  width: 100%; }\n.bg-translucent[_ngcontent-%COMP%] {\n  height: 60vh;\n  color: #ffffff;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n.bg-translucent[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 3.5rem; }\n.bg-translucent[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 1.2rem; }\n.content-margin-top[_ngcontent-%COMP%] {\n  margin-top: 64px; }\n@media screen and (max-width: 600px) {\n  .content-margin-top[_ngcontent-%COMP%] {\n    margin-top: 36px; } }\n@media screen and (max-width: 767px) {\n  .jumbotorn-top[_ngcontent-%COMP%] {\n    display: none; }\n  .content-Holder[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 2rem !important;\n    width: auto !important; } }\n@media only screen and (min-width: 768px) and (max-width: 991px) and (max-height: 767px) {\n  .content-Holder[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 2rem !important;\n    width: auto !important; }\n  .jumbotorn-top[_ngcontent-%COMP%] {\n    display: none; } }\n@media only screen and (min-width: 768px) and (max-width: 991px) and (min-height: 768px) and (max-height: 900px) {\n  .content-Holder[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 2rem !important;\n    width: auto !important; }\n  .jumbotorn-top[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 2.5rem !important; }\n  .jumbotorn-top[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 1rem !important; } }\n@media only screen and (min-width: 768px) and (max-width: 991px) {\n  .content-Holder[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    width: auto !important; }\n  .jumbotorn-top[_ngcontent-%COMP%] {\n    top: 10%;\n    position: relative; }\n    .jumbotorn-top[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n      font-size: 3rem !important; }\n    .jumbotorn-top[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n      font-size: 1.2rem !important; } }\n@media only screen and (min-width: 992px) and (min-height: 601px) and (max-height: 950px) {\n  .jumbotorn-top[_ngcontent-%COMP%] {\n    position: relative;\n    top: 10%; }\n    .jumbotorn-top[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n      font-size: 2.5rem !important; }\n    .jumbotorn-top[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n      font-size: 1rem !important; } }\n@media only screen and (min-width: 992px) and (max-height: 600px) {\n  .jumbotorn-top[_ngcontent-%COMP%] {\n    display: none; } }\n.storage-tips-top[_ngcontent-%COMP%] {\n  background: url('storage-tips.jpeg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  background-position: center;\n  height: 60vh; }\n.content-Holder[_ngcontent-%COMP%] {\n  text-align: center; }\n.content-Holder[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n    color: #ffffff;\n    font-weight: 600; }\n.content-Holder[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n    color: #ffffff;\n    font-weight: 600;\n    font-size: 1.2em; }\n.content-Holder[_ngcontent-%COMP%]   .storage-left[_ngcontent-%COMP%] {\n    color: #ffffff;\n    font-weight: 600;\n    line-height: 2; }\n.content-Holder[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    color: #ffffff;\n    border-bottom: 1px solid #ffde03;\n    width: 420px;\n    margin: auto;\n    font-size: 2.25rem !important; }\n.card[_ngcontent-%COMP%] {\n  border: none !important;\n  border-radius: 0px !important; }\n.panel-heading[_ngcontent-%COMP%] {\n  padding: 15px;\n  background-color: rgba(0, 0, 0, 0.2) !important; }\n.panel-heading[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: #ffde03 !important; }\n.panel-heading[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n    color: #ffde03 !important;\n    text-decoration: none; }\n.panel-default[_ngcontent-%COMP%]:not(:last-child) {\n  border-bottom: 1px solid #212121 !important; }\n.panel-heading[_ngcontent-%COMP%]:first-child {\n  border-radius: 0px !important; }\n.panel-collapse[_ngcontent-%COMP%] {\n  padding: 20px 20px 20px 45px;\n  font-size: 0.9em;\n  font-weight: 600;\n  color: #ffffff;\n  background-color: #f1ede3;\n  margin: auto;\n  transition: height 200ms; }\n.card-header[_ngcontent-%COMP%] {\n  padding: 0px;\n  background-color: #707070 !important;\n  color: #f1f0ed !important;\n  border-radius: 0px !important; }\n.card-body[_ngcontent-%COMP%] {\n  padding: 20px 20px 20px 45px;\n  font-size: 0.9em;\n  font-weight: 600;\n  color: #ffffff;\n  background-color: #858585;\n  margin: auto; }\n.card-header-before-collapse[_ngcontent-%COMP%]:after {\n  font-family: 'FontAwesome';\n  content: \"\\f106\";\n  float: right; }\n.collapsed[_ngcontent-%COMP%]:after {\n  content: \"\\f107\"; }\n.noselect[_ngcontent-%COMP%] {\n  -webkit-touch-callout: none;\n  \n  -webkit-user-select: none;\n  \n  \n  -moz-user-select: none;\n  \n  -ms-user-select: none;\n  \n  user-select: none;\n   }\n@media only screen and (max-width: 480px) {\n  .accordion-background[_ngcontent-%COMP%] {\n    padding: 0px !important; }\n    .accordion-background[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%] {\n      -webkit-padding-start: 20px;\n              padding-inline-start: 20px; } }\n@media only screen and (max-width: 600px) {\n  .storage-tips-top[_ngcontent-%COMP%] {\n    height: 40vh; } }"];
+var styles = ["@import url(\"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\");\n\n*[_ngcontent-%COMP%] {\n  font-family: \"Lato\", sans-serif; }\n.justify[_ngcontent-%COMP%] {\n  text-align: justify; }\n.bg-secondary[_ngcontent-%COMP%] {\n  background: #212121 !important; }\n.bg-dark[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.2) !important; }\n.bg-light[_ngcontent-%COMP%] {\n  background: #efefef !important; }\n.bg-translucent[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.72);\n  width: auto !important;\n  height: 100vh; }\n.bg-dark-background[_ngcontent-%COMP%] {\n  background: #404040; }\n.contentHolder[_ngcontent-%COMP%] {\n  min-height: 94vh; }\n.btn-primary[_ngcontent-%COMP%] {\n  background-color: #ffde03;\n  border-color: #ffde03;\n  color: #000000 !important;\n  min-width: 200px;\n  border-radius: 25px; }\n.btn-primary[_ngcontent-%COMP%]:hover {\n  background-color: #FBC02D;\n  border-color: #FBC02D;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%] {\n  background-color: transparent;\n  border-color: #ffde03;\n  border: 1px solid #ffde03;\n  min-width: 200px;\n  color: #ffffff !important;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%]:hover {\n  background-color: #FBC02D;\n  border-color: #FBC02D;\n  border-radius: 25px;\n  color: #000000 !important; }\n.section-headings[_ngcontent-%COMP%] {\n  font-weight: 200; }\n.contact-map[_ngcontent-%COMP%] {\n  width: 100%; }\n.heading[_ngcontent-%COMP%] {\n  font-weight: 400; }\n.sectionImage[_ngcontent-%COMP%] {\n  width: 100%; }\n.bg-translucent[_ngcontent-%COMP%] {\n  height: 60vh;\n  color: #ffffff;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n.bg-translucent[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 3.5rem; }\n.bg-translucent[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 1.2rem; }\n.content-margin-top[_ngcontent-%COMP%] {\n  margin-top: 64px; }\n@media screen and (max-width: 600px) {\n  .content-margin-top[_ngcontent-%COMP%] {\n    margin-top: 36px; } }\n@media screen and (max-width: 767px) {\n  .jumbotorn-top[_ngcontent-%COMP%] {\n    display: none; }\n  .content-Holder[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 2rem !important;\n    width: auto !important; } }\n@media only screen and (min-width: 768px) and (max-width: 991px) and (max-height: 767px) {\n  .content-Holder[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 2rem !important;\n    width: auto !important; }\n  .jumbotorn-top[_ngcontent-%COMP%] {\n    display: none; } }\n@media only screen and (min-width: 768px) and (max-width: 991px) and (min-height: 768px) and (max-height: 900px) {\n  .content-Holder[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 2rem !important;\n    width: auto !important; }\n  .jumbotorn-top[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 2.5rem !important; }\n  .jumbotorn-top[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 1rem !important; } }\n@media only screen and (min-width: 768px) and (max-width: 991px) {\n  .content-Holder[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    width: auto !important; }\n  .jumbotorn-top[_ngcontent-%COMP%] {\n    top: 10%;\n    position: relative; }\n    .jumbotorn-top[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n      font-size: 3rem !important; }\n    .jumbotorn-top[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n      font-size: 1.2rem !important; } }\n@media only screen and (min-width: 992px) and (min-height: 601px) and (max-height: 950px) {\n  .jumbotorn-top[_ngcontent-%COMP%] {\n    position: relative;\n    top: 10%; }\n    .jumbotorn-top[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n      font-size: 2.5rem !important; }\n    .jumbotorn-top[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n      font-size: 1rem !important; } }\n@media only screen and (min-width: 992px) and (max-height: 600px) {\n  .jumbotorn-top[_ngcontent-%COMP%] {\n    display: none; } }\n.storage-tips-top[_ngcontent-%COMP%] {\n  background: url('storage-tips.png');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-attachment: fixed;\n  background-position: bottom;\n  height: 60vh; }\n.content-Holder[_ngcontent-%COMP%] {\n  text-align: center; }\n.content-Holder[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n    color: #ffffff;\n    font-weight: 600; }\n.content-Holder[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n    color: #ffffff;\n    font-weight: 600;\n    font-size: 1.2em; }\n.content-Holder[_ngcontent-%COMP%]   .storage-left[_ngcontent-%COMP%] {\n    color: #ffffff;\n    font-weight: 600;\n    line-height: 2; }\n.content-Holder[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    color: #ffffff;\n    border-bottom: 1px solid #ffde03;\n    width: 420px;\n    margin: auto;\n    font-size: 2.25rem !important; }\n.card[_ngcontent-%COMP%] {\n  border: none !important;\n  border-radius: 0px !important; }\n.panel-heading[_ngcontent-%COMP%] {\n  padding: 15px;\n  background-color: rgba(0, 0, 0, 0.2) !important; }\n.panel-heading[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    color: #ffde03 !important; }\n.panel-heading[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n    color: #ffde03 !important;\n    text-decoration: none; }\n.panel-default[_ngcontent-%COMP%]:not(:last-child) {\n  border-bottom: 1px solid #212121 !important; }\n.panel-heading[_ngcontent-%COMP%]:first-child {\n  border-radius: 0px !important; }\n.panel-collapse[_ngcontent-%COMP%] {\n  padding: 20px 20px 20px 45px;\n  font-size: 0.9em;\n  font-weight: 600;\n  color: #ffffff;\n  background-color: #f1ede3;\n  margin: auto;\n  transition: height 200ms; }\n.card-header[_ngcontent-%COMP%] {\n  padding: 0px;\n  background-color: #707070 !important;\n  color: #f1f0ed !important;\n  border-radius: 0px !important; }\n.card-body[_ngcontent-%COMP%] {\n  padding: 20px 20px 20px 45px;\n  font-size: 0.9em;\n  font-weight: 600;\n  color: #ffffff;\n  background-color: #858585;\n  margin: auto; }\n.card-header-before-collapse[_ngcontent-%COMP%]:after {\n  font-family: 'FontAwesome';\n  content: \"\\f106\";\n  float: right; }\n.collapsed[_ngcontent-%COMP%]:after {\n  content: \"\\f107\"; }\n.noselect[_ngcontent-%COMP%] {\n  -webkit-touch-callout: none;\n  \n  -webkit-user-select: none;\n  \n  \n  -moz-user-select: none;\n  \n  -ms-user-select: none;\n  \n  user-select: none;\n   }\n@media only screen and (max-width: 480px) {\n  .ul-padding[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n    -webkit-padding-start: 20px;\n            padding-inline-start: 20px; } }\n@media only screen and (max-width: 600px) {\n  .storage-tips-top[_ngcontent-%COMP%] {\n    height: 40vh; } }"];
 exports.styles = styles;
 
 
@@ -2113,13 +2210,13 @@ function View_UnitSizerComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0
     } return ad; }, null, null)), (_l()(), i1.ɵted(2, null, [" ", " "])), (_l()(), i1.ɵeld(3, 0, null, null, 0, "br", [], null, null, null, null, null))], null, function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.size; _ck(_v, 2, 0, currVal_0); }); }
 function View_UnitSizerComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "div", [["class", "unit-dimention py-3 disp"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UnitSizerComponent_2)), i1.ɵdid(2, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UnitSizerComponent_3)), i1.ɵdid(4, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.i == ((_v.context.$implicit == null) ? null : _v.context.$implicit.id)); _ck(_v, 2, 0, currVal_0); var currVal_1 = (_co.i !== ((_v.context.$implicit == null) ? null : _v.context.$implicit.id)); _ck(_v, 4, 0, currVal_1); }, null); }
 function View_UnitSizerComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "li", [], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, [" ", " "]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.content; _ck(_v, 1, 0, currVal_0); }); }
-function View_UnitSizerComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "unit-sizer-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "div", [["class", "bg-translucent"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 4, "div", [["class", "container jumbotorn-top"], ["style", "text-align: center; padding: 0% 8%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h1", [["class", "pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Selecting the Right Storage"])), (_l()(), i1.ɵeld(5, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"])), (_l()(), i1.ɵeld(7, 0, null, null, 44, "div", [["class", " content-Holder bg-dark-background py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 43, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "h2", [["class", "pb-3"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Unit Sizer"])), (_l()(), i1.ɵeld(11, 0, null, null, 40, "div", [["class", "unit-sizer-container content-margin-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 39, "div", [["class", "unit-sizer-box py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 38, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 13, "div", [["class", "col-md-2"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UnitSizerComponent_1)), i1.ɵdid(16, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(17, 0, null, null, 10, "div", [["class", "disp-mob pb-3 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 9, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 2, "div", [["class", "col-4 mt-auto"]], null, null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 1, "span", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+function View_UnitSizerComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "unit-sizer-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "div", [["class", "bg-translucent"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 4, "div", [["class", "container jumbotorn-top"], ["style", "text-align: center; padding: 0% 8%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h1", [["class", "pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Selecting the Right Storage"])), (_l()(), i1.ɵeld(5, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"])), (_l()(), i1.ɵeld(7, 0, null, null, 42, "div", [["class", " content-Holder bg-dark-background py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 41, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "h2", [["class", "pb-3"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Unit Sizer"])), (_l()(), i1.ɵeld(11, 0, null, null, 38, "div", [["class", "unit-sizer-container content-margin-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 37, "div", [["class", "unit-sizer-box py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 36, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 13, "div", [["class", "col-md-2"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UnitSizerComponent_1)), i1.ɵdid(16, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(17, 0, null, null, 10, "div", [["class", "disp-mob pb-3 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 9, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 2, "div", [["class", "col-4 mt-auto"]], null, null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 1, "span", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.moveLeft() !== false);
         ad = (pd_0 && ad);
     } return ad; }, null, null)), (_l()(), i1.ɵted(21, null, ["", ""])), (_l()(), i1.ɵeld(22, 0, null, null, 2, "div", [["class", "col-4 mx-0 mt-auto px-0"]], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 1, "span", [["style", "color:#ffde03; font-size: 1.4rem;"]], null, null, null, null, null)), (_l()(), i1.ɵted(24, null, ["", ""])), (_l()(), i1.ɵeld(25, 0, null, null, 2, "div", [["class", "col-4 mt-auto"]], null, null, null, null, null)), (_l()(), i1.ɵeld(26, 0, null, null, 1, "span", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.moveRight() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵted(27, null, ["", ""])), (_l()(), i1.ɵeld(28, 0, null, null, 23, "div", [["class", "col-md-10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(29, 0, null, null, 22, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(30, 0, null, null, 10, "div", [["class", "row image-carosel"]], null, null, null, null, null)), (_l()(), i1.ɵeld(31, 0, null, null, 1, "div", [["class", "col-1 navigate-arrows-left text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/left.svg"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+    } return ad; }, null, null)), (_l()(), i1.ɵted(27, null, ["", ""])), (_l()(), i1.ɵeld(28, 0, null, null, 21, "div", [["class", "col-md-10"]], null, null, null, null, null)), (_l()(), i1.ɵeld(29, 0, null, null, 20, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(30, 0, null, null, 10, "div", [["class", "row image-carosel"]], null, null, null, null, null)), (_l()(), i1.ɵeld(31, 0, null, null, 1, "div", [["class", "col-1 navigate-arrows-left text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/left.svg"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.moveLeft() !== false);
         ad = (pd_0 && ad);
     } return ad; }, null, null)), (_l()(), i1.ɵeld(33, 0, null, null, 1, "div", [["class", "col-3 mx-0 px-0 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(34, 0, null, null, 0, "img", [["alt", ""], ["class", "overlay"], ["height", "auto"], ["width", "80%"]], [[8, "src", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
@@ -2131,7 +2228,7 @@ function View_UnitSizerComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0
     } return ad; }, null, null)), (_l()(), i1.ɵeld(39, 0, null, null, 1, "div", [["class", "col-1 navigate-arrows-right text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(40, 0, null, null, 0, "img", [["alt", ""], ["src", "../../assets/images/right.svg"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.moveRight() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(41, 0, null, null, 10, "div", [["class", "row mt-4 unit-data"]], null, null, null, null, null)), (_l()(), i1.ɵeld(42, 0, null, null, 1, "div", [["class", "col-md-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(43, 0, null, null, 0, "img", [["alt", ""], ["height", "auto"], ["width", "100%"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(44, 0, null, null, 7, "div", [["class", "col-md-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(45, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(46, null, ["", ""])), (_l()(), i1.ɵeld(47, 0, null, null, 1, "p", [["class", "pr-2 text-justify"]], null, null, null, null, null)), (_l()(), i1.ɵted(48, null, [" ", " "])), (_l()(), i1.ɵeld(49, 0, null, null, 2, "ul", [["style", "display:inline-table; padding-left: 0px;"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UnitSizerComponent_4)), i1.ɵdid(51, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.unitsizers; _ck(_v, 16, 0, currVal_0); var currVal_10 = ((_co.unitsizers[_co.i] == null) ? null : _co.unitsizers[_co.i].amenities); _ck(_v, 51, 0, currVal_10); }, function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.unitsizers[_co.h].size; _ck(_v, 21, 0, currVal_1); var currVal_2 = _co.unitsizers[_co.i].size; _ck(_v, 24, 0, currVal_2); var currVal_3 = _co.unitsizers[_co.j].size; _ck(_v, 27, 0, currVal_3); var currVal_4 = i1.ɵinlineInterpolate(1, "", _co.unitsizers[_co.h].unitImg, ""); _ck(_v, 34, 0, currVal_4); var currVal_5 = i1.ɵinlineInterpolate(1, "", _co.unitsizers[_co.i].unitImg, ""); _ck(_v, 36, 0, currVal_5); var currVal_6 = i1.ɵinlineInterpolate(1, "", _co.unitsizers[_co.j].unitImg, ""); _ck(_v, 38, 0, currVal_6); var currVal_7 = i1.ɵinlineInterpolate(1, "", _co.unitsizers[_co.i].photo, ""); _ck(_v, 43, 0, currVal_7); var currVal_8 = _co.unitsizers[_co.i].heading; _ck(_v, 46, 0, currVal_8); var currVal_9 = _co.unitsizers[_co.i].data; _ck(_v, 48, 0, currVal_9); }); }
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(41, 0, null, null, 8, "div", [["class", "row justify-content-center mt-4 unit-data"], ["style", "width:100%; margin:auto"]], null, null, null, null, null)), (_l()(), i1.ɵeld(42, 0, null, null, 7, "div", [["class", "col-12 col-md-8 col-lg-8 col align-self-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(43, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(44, null, ["", ""])), (_l()(), i1.ɵeld(45, 0, null, null, 1, "p", [["class", "pr-2 text-justify"]], null, null, null, null, null)), (_l()(), i1.ɵted(46, null, [" ", " "])), (_l()(), i1.ɵeld(47, 0, null, null, 2, "ul", [["style", "display:inline-table; padding-left: 0px;"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UnitSizerComponent_4)), i1.ɵdid(49, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.unitsizers; _ck(_v, 16, 0, currVal_0); var currVal_9 = ((_co.unitsizers[_co.i] == null) ? null : _co.unitsizers[_co.i].amenities); _ck(_v, 49, 0, currVal_9); }, function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.unitsizers[_co.h].size; _ck(_v, 21, 0, currVal_1); var currVal_2 = _co.unitsizers[_co.i].size; _ck(_v, 24, 0, currVal_2); var currVal_3 = _co.unitsizers[_co.j].size; _ck(_v, 27, 0, currVal_3); var currVal_4 = i1.ɵinlineInterpolate(1, "", _co.unitsizers[_co.h].unitImg, ""); _ck(_v, 34, 0, currVal_4); var currVal_5 = i1.ɵinlineInterpolate(1, "", _co.unitsizers[_co.i].unitImg, ""); _ck(_v, 36, 0, currVal_5); var currVal_6 = i1.ɵinlineInterpolate(1, "", _co.unitsizers[_co.j].unitImg, ""); _ck(_v, 38, 0, currVal_6); var currVal_7 = _co.unitsizers[_co.i].heading; _ck(_v, 44, 0, currVal_7); var currVal_8 = _co.unitsizers[_co.i].data; _ck(_v, 46, 0, currVal_8); }); }
 exports.View_UnitSizerComponent_0 = View_UnitSizerComponent_0;
 function View_UnitSizerComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-unit-sizer", [], null, null, null, View_UnitSizerComponent_0, RenderType_UnitSizerComponent)), i1.ɵdid(1, 114688, null, 0, i3.UnitSizerComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_UnitSizerComponent_Host_0 = View_UnitSizerComponent_Host_0;
@@ -2257,8 +2354,9 @@ var i4 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform
 var styles_ViewRatesComponent = [i0.styles];
 var RenderType_ViewRatesComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_ViewRatesComponent, data: {} });
 exports.RenderType_ViewRatesComponent = RenderType_ViewRatesComponent;
-function View_ViewRatesComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "p", [["class", ""]], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, [" ", " "]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.p; _ck(_v, 1, 0, currVal_0); }); }
-function View_ViewRatesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "view-rates-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "div", [["class", "bg-translucent"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 4, "div", [["class", "container jumbotorn-top"], ["style", "text-align: center; padding: 0% 8%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h1", [["class", "pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Affordable Storage Near Scotia, NY"])), (_l()(), i1.ɵeld(5, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Whether you're looking for short term storage during a move or long term self storage for your business Scotia Storage has the storage unit options you need! Our friendly staff and high tech facility is here to make your self storage experience a convenient one!"])), (_l()(), i1.ɵeld(7, 0, null, null, 11, "div", [["class", "content-Holder bg-dark-background py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 10, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "h2", [["class", "pb-3"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Unit Rates"])), (_l()(), i1.ɵeld(11, 0, null, null, 7, "div", [["class", "row content-margin-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 1, "div", [["class", "col-md-6 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 0, "iframe", [["allowtransparency", "true"], ["border", "0"], ["frameborder", "0"], ["height", "700"], ["id", "advanced_iframe"], ["name", "advanced_iframe"], ["onload", ";aiResizeIframe(this, 'true','1');"], ["scrolling", "yes"], ["src", " https://scotiastorage.sim.syrasoft.com/unitavailability"], ["style", "max-width:100%;"], ["width", "100%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 4, "div", [["class", "col-md-6 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 0, "img", [["alt", "view-rate-image"], ["src", "../../assets/images/view-rate.jpg"], ["width", "100%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 2, "div", [["class", "py-4"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ViewRatesComponent_1)), i1.ɵdid(18, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.viewRate; _ck(_v, 18, 0, currVal_0); }, null); }
+function View_ViewRatesComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "carousel-item"]], null, null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), (_l()(), i1.ɵeld(2, 0, null, null, 0, "img", [["height", "auto"], ["width", "100%"]], [[8, "src", 4], [8, "alt", 0]], null, null, null, null))], function (_ck, _v) { var currVal_0 = "carousel-item"; var currVal_1 = ((((_v.context.$implicit == null) ? null : _v.context.$implicit.id) == 1) && "active"); _ck(_v, 1, 0, currVal_0, currVal_1); }, function (_ck, _v) { var currVal_2 = ((_v.context.$implicit == null) ? null : _v.context.$implicit.path); var currVal_3 = ((_v.context.$implicit == null) ? null : _v.context.$implicit.alt); _ck(_v, 2, 0, currVal_2, currVal_3); }); }
+function View_ViewRatesComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "p", [["class", ""]], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, [" ", " "]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.p; _ck(_v, 1, 0, currVal_0); }); }
+function View_ViewRatesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "view-rates-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "div", [["class", "bg-translucent"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 4, "div", [["class", "container jumbotorn-top"], ["style", "text-align: center; padding: 0% 8%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h1", [["class", "pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Affordable Storage Near Scotia, NY"])), (_l()(), i1.ɵeld(5, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Whether you're looking for short term storage during a move or long term self storage for your business Scotia Storage has the storage unit options you need! Our friendly staff and high tech facility is here to make your self storage experience a convenient one!"])), (_l()(), i1.ɵeld(7, 0, null, null, 22, "div", [["class", "content-Holder bg-dark-background py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 21, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "h2", [["class", "pb-3"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Unit Rates"])), (_l()(), i1.ɵeld(11, 0, null, null, 18, "div", [["class", "row content-margin-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 1, "div", [["class", "col-md-6 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 0, "iframe", [["allowtransparency", "true"], ["border", "0"], ["frameborder", "0"], ["height", "700"], ["id", "advanced_iframe"], ["name", "advanced_iframe"], ["onload", ";aiResizeIframe(this, 'true','1');"], ["scrolling", "yes"], ["src", " https://scotiastorage.sim.syrasoft.com/unitavailability"], ["style", "max-width:100%;"], ["width", "100%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 15, "div", [["class", "col-md-6 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 11, "div", [["class", "carousel slide"], ["data-ride", "carousel"], ["id", "carouselExampleIndicatorsClick"]], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 2, "div", [["class", "carousel-inner"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ViewRatesComponent_1)), i1.ɵdid(18, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(19, 0, null, null, 3, "a", [["class", "carousel-control-prev"], ["data-slide", "prev"], ["href", "#carouselExampleIndicatorsClick"], ["role", "button"]], null, null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 0, "span", [["aria-hidden", "true"], ["class", "carousel-control-prev-icon"]], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 1, "span", [["class", "sr-only"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Previous"])), (_l()(), i1.ɵeld(23, 0, null, null, 3, "a", [["class", "carousel-control-next"], ["data-slide", "next"], ["href", "#carouselExampleIndicatorsClick"], ["role", "button"]], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 0, "span", [["aria-hidden", "true"], ["class", "carousel-control-next-icon"]], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 1, "span", [["class", "sr-only"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Next"])), (_l()(), i1.ɵeld(27, 0, null, null, 2, "div", [["class", "py-4"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ViewRatesComponent_2)), i1.ɵdid(29, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.slideShow; _ck(_v, 18, 0, currVal_0); var currVal_1 = _co.viewRate; _ck(_v, 29, 0, currVal_1); }, null); }
 exports.View_ViewRatesComponent_0 = View_ViewRatesComponent_0;
 function View_ViewRatesComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-view-rates", [], null, null, null, View_ViewRatesComponent_0, RenderType_ViewRatesComponent)), i1.ɵdid(1, 114688, null, 0, i3.ViewRatesComponent, [i4.Title, i4.Meta], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_ViewRatesComponent_Host_0 = View_ViewRatesComponent_Host_0;
@@ -2317,10 +2415,14 @@ var ViewRatesComponent = /** @class */ (function () {
     }
     ViewRatesComponent.prototype.ngOnInit = function () {
         this.fetchViewRate();
+        this.fetchSlideShow();
         window.scrollTo(0, 0);
     };
     ViewRatesComponent.prototype.fetchViewRate = function () {
         this.viewRate = view_1.viewRate;
+    };
+    ViewRatesComponent.prototype.fetchSlideShow = function () {
+        this.slideShow = view_1.slideShow;
     };
     return ViewRatesComponent;
 }());

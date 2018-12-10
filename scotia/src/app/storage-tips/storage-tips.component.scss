@@ -4,11 +4,11 @@
 
 
 .storage-tips-top {
-    background: url(../../assets/images/storage-tips.jpeg);
+    background: url(../../assets/images/storage-tips.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: bottom; 
     height: 60vh;
 }
 
@@ -38,107 +38,106 @@
     }
 }
 
-.card {
-    border: none!important;
-    border-radius: 0px !important;
-}
+// .card {
+//     border: none!important;
+//     border-radius: 0px !important;
+// }
 
-.panel-heading {
-    padding: 15px;
-    background-color: $dark!important;
-    a {
-        color: $primary!important;
-    }
-    a:hover {
-        color: $primary!important;
-        text-decoration: none;
-    }
+// .panel-heading {
+//     padding: 15px;
+//     background-color: $dark!important;
+//     a {
+//         color: $primary!important;
+//     }
+//     a:hover {
+//         color: $primary!important;
+//         text-decoration: none;
+//     }
     
-}
+// }
 
-.panel-default:not(:last-child) {
-    border-bottom: 1px solid $secondary!important;
-}
+// .panel-default:not(:last-child) {
+//     border-bottom: 1px solid $secondary!important;
+// }
 
-.panel-heading:first-child {
-    border-radius: 0px !important;
-}
+// .panel-heading:first-child {
+//     border-radius: 0px !important;
+// }
 
-.panel-collapse {
-    padding: 20px 20px 20px 45px;
-    font-size: 0.9em;
-    font-weight: 600;
-    color: $fontColor;
-    background-color: #f1ede3;
-    margin: auto;
-    transition: height 200ms;
-}
+// .panel-collapse {
+//     padding: 20px 20px 20px 45px;
+//     font-size: 0.9em;
+//     font-weight: 600;
+//     color: $fontColor;
+//     background-color: #f1ede3;
+//     margin: auto;
+//     transition: height 200ms;
+// }
 
-.card-header {
-    padding: 0px;
-    background-color: $border!important;
-    //color: $primary!important;
-    color:#f1f0ed!important;
-    border-radius:0px!important;
-}
-.card-body {
-    padding: 20px 20px 20px 45px;
-    font-size: 0.9em;
-    font-weight: 600;
-    color: $white;
-    background-color: #858585;
-    margin: auto;
-}
+// .card-header {
+//     padding: 0px;
+//     background-color: $border!important;
+//     //color: $primary!important;
+//     color:#f1f0ed!important;
+//     border-radius:0px!important;
+// }
+// .card-body {
+//     padding: 20px 20px 20px 45px;
+//     font-size: 0.9em;
+//     font-weight: 600;
+//     color: $white;
+//     background-color: #858585;
+//     margin: auto;
+// }
+
+// // .card-header-before-collapse:after {
+// //     font-family: 'FontAwesome';  
+// //     content: "\f106";
+// //     float: right;
+// // }
+
+// // .collapsed:after {
+// //     content: "\f107";
+// // }
 
 // .card-header-before-collapse:after {
 //     font-family: 'FontAwesome';  
 //     content: "\f106";
 //     float: right;
+//     // font-size: 25px;
 // }
 
 // .collapsed:after {
 //     content: "\f107";
 // }
 
-.card-header-before-collapse:after {
-    font-family: 'FontAwesome';  
-    content: "\f106";
-    float: right;
-    // font-size: 25px;
-}
+// .noselect {
+//     -webkit-touch-callout: none; /* iOS Safari */
+//       -webkit-user-select: none; /* Safari */
+//        -khtml-user-select: none; /* Konqueror HTML */
+//          -moz-user-select: none; /* Firefox */
+//           -ms-user-select: none; /* Internet Explorer/Edge */
+//               user-select: none; /* Non-prefixed version, currently
+//                                     supported by Chrome and Opera */
+//   }
 
-.collapsed:after {
-    content: "\f107";
-}
+// // .accordion-background {
+// //     height: 650px;
+// //     margin-bottom: 15px;
+// //     ol {
+// //         text-align: justify;
+// //     }
 
-.noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome and Opera */
-  }
-
-// .accordion-background {
-//     height: 650px;
-//     margin-bottom: 15px;
-//     ol {
-//         text-align: justify;
-//     }
-
-//     li {
-//         text-align: justify;
-//         padding-bottom: 5px;
-//     }
-// }
+// //     li {
+// //         text-align: justify;
+// //         padding-bottom: 5px;
+// //     }
+// // }
 
 
 @media only screen and (max-width: 480px) {
-    .accordion-background {
-        padding: 0px!important;
-        ol {
+    .ul-padding {
+        ul {
             padding-inline-start: 20px;
         }
     }

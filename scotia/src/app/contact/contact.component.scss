@@ -71,25 +71,21 @@ textarea::placeholder {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .button-contact-us {
         .btn-primary {
             min-width: auto;
         }
         .btn-outline-primary {
             min-width: auto;
         }
-    }
 }
 
 @media only screen and (max-width: 437px) {
-    .button-contact-us {
         .btn-primary {
             min-width: auto;
         }
         .btn-outline-primary {
             min-width: auto;
         }
-    }
 }
 
 @media only screen and (max-width: 600px) {

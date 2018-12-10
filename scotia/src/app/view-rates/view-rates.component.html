@@ -20,7 +20,7 @@
         <div id="carouselExampleIndicatorsClick" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item" *ngFor="let slideShow of slideShow" [ngClass]="slideShow?.id == 1 && 'active'">
-              <img [src]="slideShow?.path"  [alt]="slideShow?.alt" width="100%"  height="auto"/>
+              <img [src]="slideShow?.path"  [alt]="slideShow?.alt" width="100%"  />
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicatorsClick" role="button" data-slide="prev">

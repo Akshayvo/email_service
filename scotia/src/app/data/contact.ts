@@ -9,7 +9,7 @@ export const contact = [
         id: 1,
         redirect: 'mailto:ss@scotiastorage.com',
         label: 'Email',
-        data: 'ss@scotiastorage.com',
+        data: 'jaya13194@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
@@ -35,3 +35,11 @@ export const hours = [
         data: 'Mon-Fri 10:00 am - 4:00 pm'
     },
 ];
+
+export const socialLink = [
+    {
+        label: `facebook`,
+        path: `https://www.facebook.com/pages/Scotia-Storage/161605087196389`,
+        class: `fab fa-facebook-square`,
+    }
+]

@@ -11,17 +11,18 @@
   <div class="container py-5">
     <h2 class="pb-3">Scotia Self Storage Tips</h2>
     <div class="row accordion-background content-margin-top">
-      <div class="col-md-6 py-3">
-        <ol style="text-align: left"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li></ol>
+      <div class="col-md-6 py-3 ul-padding">
+        <!-- <ol style="text-align: left"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li></ol> -->
+        <ul style="text-align: left"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li ></ul>
       </div>
       <div class="col-md-6 py-3" id="accordion">
-         <div class="card" style="text-align: left"  *ngFor="let storage of storageTipAccordion">
+         <!-- <div class="card" style="text-align: left"  *ngFor="let storage of storageTipAccordion">
             <div class="card-header noselect">
               <div class="card-header-before-collapse collapsed p-3" style="cursor: pointer" data-toggle="collapse" [attr.data-target]="'#collapseOne'+storage?.id" aria-expanded="true">
                 {{storage.label}}                 
-              </div>
+              </div>  
             </div>
-          
+
             <div [id]="'collapseOne'+storage?.id"  aria-labelledby="collapseOne" data-parent="#accordion" class="collapse" [ngClass]="storage?.id == 0 && 'show'">
               <ul class="card-body">
                 <li class="py-2" *ngFor="let data of storage.data">
@@ -30,7 +31,8 @@
               </ul>
             </div>
           </div>
-      </div>
+      </div> -->
+      <app-accordion></app-accordion>
     </div>
   </div>
 </div>
