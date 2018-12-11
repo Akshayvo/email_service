@@ -3,44 +3,45 @@
 </div>
   
 <div class="">
-  <div class="jumbotron-container">
-    <div class="jumbotron-top">
-      <div class="jumbotron px-0 m-0">
-        <div class="bg-translucent jumbotorn-skew-style">
-          <!-- <div class="container"> -->
-            <!-- <div class="py-5"> -->
-              <!-- <div class="row"> -->
-                <!-- <div class="col-md-6"> -->
-                  <!-- <div class=""> -->
-                <div class="jumbotorn-skew-text">
-                  <div class="disp">
-                    <h2 style="font-weight: 600; font-size: 2.5em;" class="my-4">
-                      Convenient & Affordable
-                    </h2>
-                    <p>With affordable truck rentals, drive-up access, temperature - controlled storage units, and top notch customer service, Catskill Self Storage has your storage unit needs covered! Contact us today to get started!</p>
-                  </div>
-                <!-- </div> -->
-                <!-- <div class="display p-0 button-width"> -->
-                <div class="col-md-6 display padding-left">
-                  <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-                  <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Unit</a>
-                </div>
-              </div>
-              <!-- </div> -->
-            <!-- </div> -->
-          <!-- </div> -->
-        </div>
+ <!--Jumbotron Container Starts Here-->
+ <div class="jumbotron-container">
+  <div class="jumbotron-top">
+    <div class="jumbotron px-0 m-0">
+      <div class="bg-translucent jumbotron-skew-style">
       </div>
+        <div class="container">
+          <div class="jumbotron-skew-text">
+            <div class="jum-text disp">
+              <h1 class="my-4">Convenient & Affordable</h1>
+              <p>With affordable truck rentals, drive - up access, temperature - controlled storage units, and other amenities, storing with us couldn’t be more convenient. Contact us today to get started!</p>
+            </div>
+            <div class="button-width">
+                <div class="row mx-0 px-0">
+                  <div class="col-6 mx-0 px-0">
+                   <a class="btn btn-primary mr-2" (click)="navigate('/view-rates')" role="button">Reserve Unit</a>
+                  </div>
+                  <div class="col-6 mx-0 px-0">
+                   <a class="btn btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
     </div>
-    <div class="container jumbotron-bottom">
-      <div class="feature row">
-        <div class="col-md-3 p-4" style="text-align: center" *ngFor="let feature of feature">
+  </div>
+  <div class="jumbotron-bottom disp">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 text-center" *ngFor="let feature of feature">
           <img [src]="feature?.path" style="padding: 10px" alt="" />
             <h6 class="feature-text">{{feature.label}}</h6>
         </div>
       </div>
     </div>
   </div>
+</div>
+<!--Jumbotron Ends Here-->
 
   <div class="bg-light">
     <div class="container py-4">
