@@ -1,0 +1,84 @@
+@import '../../styles.scss';
+
+#rent-holder {
+    padding-top: 70px;
+    min-height: 86vh;
+    margin-bottom: 50px;
+
+    #rent-sub-holder {
+        padding: 64px;
+        background-color: $light;
+
+        .coming {
+            div {
+                height: 20rem; 
+                width: 100%; 
+                background: #efefef;
+                font-size: 2rem;
+                padding-top: 25%;
+            }
+        }
+
+        .rent-example {
+            border-left: 1px $border solid;
+            padding-left: 10%;
+            p {
+                padding: 0px;
+                margin: 0px;
+             }
+        }
+     }
+ }
+
+ // Sticky Buttons 
+.contact-button {
+    position:fixed; 
+    right:0px; 
+    top:12%; 
+    z-index: 16;
+  } 
+
+ @media only screen and (max-width: 768px) {
+    .rent-example {
+        border-left: none !important;
+    }
+    .coming {
+        div {
+            height: 5rem !important;
+            margin: 10px auto !important;   
+            padding-top: 3% !important;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #rent-holder {
+        padding-top: 60px;
+        #rent-sub-holder {
+            padding: 16px !important;
+        }
+        .rent-heading {
+            padding-bottom: 30px !important;
+        }
+        iframe {
+           min-height: 400px;
+       }
+        .rent-example {
+            border-left: none !important;
+            padding-bottom: 20px;
+        }
+    }
+
+      // Sticky Buttons 
+.contact-button {
+    position:fixed; 
+    right:0px; 
+    top:15%;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    z-index: 16;
+  }
+}
