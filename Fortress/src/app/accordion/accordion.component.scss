@@ -1,0 +1,28 @@
+@import '../../styles.scss';
+
+.accordion {
+    .card {
+        background-color: $white;
+        border: none;
+    .card-header {
+        background-color: #707070;
+        a {
+           color: $white;
+           h5 {
+               font-size: 1rem;
+               font-weight: 600;
+           }
+        }
+    }
+
+    .card-body {
+        display: inline;
+    }
+    
+    }
+
+    .text-justify {
+        text-align: justify !important;
+    }
+}
+      
