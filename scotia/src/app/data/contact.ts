@@ -9,7 +9,7 @@ export const contact = [
         id: 1,
         redirect: 'mailto:ss@scotiastorage.com',
         label: 'Email',
-        data: 'jaya13194@gmail.com',
+        data: 'ss@scotiastorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {

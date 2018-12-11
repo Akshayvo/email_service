@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
+import { Title, Meta } from '@angular/platform-browser';
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -12,7 +13,16 @@ export class UnitSizerComponent implements OnInit {
   i: number;
   j: number;
 
-  constructor() { }
+  constructor(
+    private titleService: Title,
+    private meta: Meta
+  ) { 
+    this.meta.addTag({
+      name: 'description',
+      content: `Use our handy unit size guide to figure out which self storage unit size is right for your needs! Still have questions? Call (518) 382-0218!`
+    });
+    this.titleService.setTitle('Unit Sizer | Scotia Storage, Scotia, New York 12302');
+  }
 
   ngOnInit() {
     this.i = 0;

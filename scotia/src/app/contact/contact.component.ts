@@ -35,11 +35,9 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Have a question about our self storage units or RV parking spaces?
-                Use our convenient contact form or the contact information here to
-                speak with one of our friendly and knowledgeable managers!`
+      content: `Are you looking for more information about Scotia Self Storage and our array of convenient self storage options? Call  (518) 382-0218 or click here for our contact information!`
     });
-    this.titleService.setTitle('Contact Us | Fortress Mini Storage');
+    this.titleService.setTitle('Contact Scotia Self Storage');
   }
 
   ngOnInit() {
@@ -123,7 +121,7 @@ public formClear() {
          ) {
 
           if ( this.subject === undefined ) {
-            this.subject = 'Enquiry Message';
+            this.subject = 'Website Form Submission';
           }
 
 
@@ -145,6 +143,7 @@ public formClear() {
             .subscribe((response: any) => {
               // console.log('Authentication response:', response);
               if (response.result != null) {
+                this.formClear();
                 // alert(response.message);
               } else {
                 // console.log(`response`, response.result);

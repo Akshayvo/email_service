@@ -114,7 +114,7 @@ public formClear() {
          ) {
 
           if ( this.subject === undefined ) {
-            this.subject = 'Enquiry Message';
+            this.subject = 'Website Form Submission';
           }
 
           this.receiveremail = this.contactInfo[1].data;
@@ -137,6 +137,7 @@ public formClear() {
             .subscribe((response: any) => {
               // console.log('Authentication response:', response);
               if (response.result != null) {
+                this.formClear();
                 // alert(response.message);
               } else {
                 // console.log(`response`, response.result);
