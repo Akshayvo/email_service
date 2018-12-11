@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import '../../styles.scss';
+
+a {
+    cursor: pointer;
+}
+.iconColor {
+    color: $primary !important;
+}
+.contact-header{
+  display: inline;
+  .contact-details{
+    color: $dark;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+  }
+}
+.social {
+    text-align: right !important;
+    a {
+        color: $dark;
+        text-decoration: none;
+    }
+}
+.social :hover {
+    color: $primary;
+    transition-duration: 500ms;
+}
+.navbar {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+}
+
+.nav-link {
+    color: $primary !important;
+    font-weight: 600;
+    transition-duration: 500ms;
+    padding: 21px;
+}
+
+.nav-link:hover {
+    color: $secondary !important;
+    // background: $primary;
+    transition-duration: 500ms;
+}
+
+.router-link-active {
+    color: $secondary !important;
+    border-bottom: 5px solid $secondary;
+}
+
+.nav-link-active {
+    color: $secondary !important;
+    border-bottom: 5px solid $secondary;
+}
+
+.display {
+    display: block;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    border: 1px solid $primary !important;
+}
+
+@media screen and (max-width: 900px) {
+    .display {
+        display: none;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+}

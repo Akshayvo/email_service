@@ -1,0 +1,47 @@
+@import '../../styles.scss';
+
+.currentActive {
+    border-bottom: 3px solid $light;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+#storage-tip-holder {
+    padding-top: 100px;
+    min-height: 87vh;
+    margin-bottom: 50px;
+
+    .storage-content {
+        padding: 64px;
+        background-color: $light;        
+    }
+}
+
+ // Sticky Buttons 
+ .contact-button {
+    position:fixed; 
+    right:0px; 
+    top:12%; 
+    z-index: 16;
+  } 
+
+@media screen and (max-width: 600px) {
+    #storage-tip-holder {
+        padding-top: 60px;
+        .storage-content {
+        padding: 16px !important;
+        }
+    }
+
+    .contact-button {
+        position:fixed; 
+        right:0px; 
+        top:15%;
+        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden; 
+        z-index: 16;
+      }
+}
