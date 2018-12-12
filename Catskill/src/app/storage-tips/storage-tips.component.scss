@@ -27,41 +27,41 @@
     border-radius: 0px !important;
 }
 
-.panel-heading {
-    padding: 15px;
-    background-color: $dark!important;
-    a {
-        color: $primary!important;
-    }
-    a:hover {
-        color: $primary!important;
-        text-decoration: none;
-    }
+// .panel-heading {
+//     padding: 15px;
+//     background-color: $dark!important;
+//     a {
+//         color: $primary!important;
+//     }
+//     a:hover {
+//         color: $primary!important;
+//         text-decoration: none;
+//     }
     
-}
+// }
 
-.panel-default:not(:last-child) {
-    border-bottom: 1px solid $secondary!important;
-}
+// .panel-default:not(:last-child) {
+//     border-bottom: 1px solid $secondary!important;
+// }
 
-.panel-heading:first-child {
-    border-radius: 0px !important;
-}
+// .panel-heading:first-child {
+//     border-radius: 0px !important;
+// }
 
-.panel-collapse {
-    padding: 20px 20px 20px 45px;
-    font-size: 0.9em;
-    font-weight: 600;
-    color: $fontColor;
-    background-color: #f1ede3;
-    margin: auto;
-    transition: height 200ms;
-}
+// .panel-collapse {
+//     padding: 20px 20px 20px 45px;
+//     font-size: 0.9em;
+//     font-weight: 600;
+//     color: $fontColor;
+//     background-color: #f1ede3;
+//     margin: auto;
+//     transition: height 200ms;
+// }
 
 .card-header {
     padding: 0px;
     background-color: $dark!important;
-    //color: $primary!important;
+    //color: $primary!important; 
     color:$white!important;
     border-radius:0px!important;
 }
@@ -136,7 +136,7 @@
 @media only screen and (max-width: 480px) {
     .accordion-background {
         padding: 0px!important;
-        ol {
+        ul {
             padding-inline-start: 20px;
         }
     }

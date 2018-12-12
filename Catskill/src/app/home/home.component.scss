@@ -63,15 +63,161 @@
   }
 }
 
-@media only screen and (max-width: 2000px) and (min-width: 1900px ) {  //my desktop
-  .jumbotorn-skew-text {
-    width: 23%;
+// @media only screen and (max-width: 2000px) and (min-width: 1900px ) {  //my desktop
+//   .jumbotorn-skew-text {
+//     width: 23%;
+//   }
+// } 
+
+@media only screen and (min-width: 1200px) and (max-height: 750px ) and (min-height: 641px) {
+  .override-padding-x-axis {
+    padding: 12px 24px !important;
+    h6 {
+      font-size: 0.8rem;
+    }
   }
-} 
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 640px) and (min-height: 451px){
+  .jumbotron {
+    height: 100vh;
+  }
+  .override-padding-x-axis {
+    padding: 12px 24px !important;
+    h6 {
+      font-size: 0.8rem;
+    }
+  } 
+  .jumbotron-top {
+    height: 100vh;
+  }
+  .jumbotron-bottom {
+    height: 120px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 450px) {
+  .jumbotron {
+    height: 100vh;
+  }
+  .jumbotron-top {
+    height: 100vh;
+  }
+  .jumbotron-bottom {
+    height: 120px;
+  }
+  .jumbotorn-skew-text {
+    .disp {
+      p {
+        display: none;
+      }
+    }
+  }
+  .override-padding-x-axis {
+    padding: 12px 24px !important;
+    h6 {
+      font-size: 0.8rem;
+    }
+  } 
+}
+
+@media only screen and (min-width: 1200px) {
+  .jumbotorn-skew-text {
+    width: 425px;
+  }
+}
+
+// @media only screen and (max-width: 1854px) and (min-width: 1771px) {  //my laptop "default CSS"
+  
+// }
+
+// @media only screen and (max-width: 1770px) and (min-width: 1271px) {
+//   .jumbotorn-skew-text {
+//     width: 425px;
+//   }
+// }
+
+// @media only screen and (max-width: 1270px) and (min-width: 1200px) {
+//   .jumbotorn-skew-text {
+//     width: 35%;
+//   }
+// }
+
+
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .jumbotorn-skew-text {
+    width: 35%;
+    a {
+      min-width: 160px;
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 750px) and (min-height: 641px){
+  .override-padding-x-axis {
+    padding: 12px 24px !important;
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 640px) and (min-height: 451px){
+  .jumbotron {
+    height: 100vh;
+  }
+  .override-padding-x-axis {
+    padding: 12px 24px !important;
+    h6 {
+      font-size: 0.8rem;
+    }
+  } 
+  .jumbotron-top {
+    height: 100vh;
+  }
+  .jumbotron-bottom {
+    height: 130px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 450px) {
+  .jumbotron {
+    height: 100vh;
+  }
+  .jumbotron-top {
+    height: 100vh;
+  }
+  .jumbotron-bottom {
+    height: 120px;
+  }
+  .jumbotorn-skew-text {
+    .disp {
+      p {
+        display: none;
+      }
+    }
+  }
+  .override-padding-x-axis {
+    padding: 12px 24px !important;
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .jumbotorn-skew-style {
-    width: 80%
+    width: 85%
   }
 
   .jumbotorn-skew-text {
@@ -88,6 +234,96 @@
       font-size: 2rem;
     }
   }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 830px) and (min-height: 701px) {
+  .override-padding-x-axis {
+    padding: 12px 24px !important;
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 700px) and (min-height: 481px) {
+  .jumbotron-top {
+    height: 100vh;
+  }
+  .jumbotron {
+    height: 100vh;
+  }
+  .jumbotron-bottom {
+    height: 160px;
+  }
+  .jumbotorn-skew-text {
+    
+    a {
+      min-width: 140px;
+      font-size: 0.8rem;
+    }
+    .disp {
+      p {
+      font-size: 0.8rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  }
+  .override-padding-x-axis {
+    padding: 12px 24px !important;
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 480px) {
+  .jumbotron{
+    text-align: center !important;
+    background-attachment: unset !important;
+    background-position: center left !important;
+    height: 100vh!important;
+    h1 {
+      font-size: 2em !important;
+    }
+    .container {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+  .button-width{
+    max-width: 200px;
+    margin: auto;
+  }
+  .jumbotorn-skew-style {
+    display: none;
+  }
+  .jumbotorn-skew-text {
+    display: none;
+  }
+  .jumbotron-small-device {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    a {
+      margin: 10px;
+    }
+    .padding-none {
+      padding: 0px;
+    }
   }
 }
 
@@ -136,8 +372,15 @@
       height: 100%;
       display: flex;
     }
+  } 
+
+  .jumbotron-top {
+    height: 100vh;
   }
 
+  .jumbotron-bottom {
+    height: 0vh;
+  }
 
   .feature {
     display: none;
@@ -176,6 +419,7 @@
     background-attachment: unset !important;
     background-position: center left !important;
     height: 100vh!important;
+    overflow: hidden;
     h1 {
       font-size: 2em !important;
     }
@@ -184,8 +428,9 @@
       display: flex;
     }
   }
-
-
+  .jumbotron-top {
+    //overflow: hidden;
+  }
   .feature {
     display: none;
   }

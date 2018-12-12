@@ -6,12 +6,9 @@
 <div class="contentHolder">
   <div class="container pb-5" style="padding-top: 190px;">
     <h1 class="py-4" >Storage Tips</h1>
-    <!-- <h5>What you need to know before renting a unit</h5> -->
     <div class="row accordion-background bg-light p-4">
       <div class="col-md-6">
-        <!-- <iframe id="advanced_iframe" name="advanced_iframe" src="https://catskillselfstorage.sim.syrasoft.com/Payment" width="100%"
-          height="800" scrolling="no" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;" onload=";aiResizeIframe(this, &quot;true&quot;,&quot;1&quot;);"></iframe> -->
-        <ol style="text-align: left"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li></ol>
+        <ul style="text-align: left"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li></ul>
       </div>
       <div class="col-md-6" id="accordion">
          <div class="card" style="text-align: left"  *ngFor="let storage of storageTipAccordion">
