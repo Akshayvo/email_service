@@ -10,7 +10,7 @@ import { WINDOW } from '@ng-toolkit/universal';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'ngStarterPack';
+  title = 'Drayton Harbor Mini Storage';
   flag: boolean;
   public offsets: number[];
   x: any;

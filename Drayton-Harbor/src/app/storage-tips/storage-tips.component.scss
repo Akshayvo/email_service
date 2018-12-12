@@ -15,7 +15,8 @@
 
     .storage-content {
         padding: 64px;
-        background-color: $light;        
+        background-color: $light;  
+        min-height: 644px;   
     }
 }
 
@@ -32,6 +33,7 @@
         padding-top: 60px;
         .storage-content {
         padding: 16px !important;
+        //height: auto;
         }
     }
 
