@@ -1,8 +1,7 @@
  /* Sticky Buttons  */
 .contact-button {
   position:fixed; 
-  right:0px; 
-  top:100px; 
+  top:150px; 
   z-index: 16;
 }
 button {

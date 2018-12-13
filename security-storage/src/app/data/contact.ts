@@ -46,6 +46,10 @@ export const officeHours = [
     {
         label: 'Drop-box: ',
         data: '24/7'
+    },
+    {
+        label: 'Facility: ',
+        data: '24/7/365'
     }
 ];
 
