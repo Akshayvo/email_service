@@ -6,7 +6,7 @@
       </div>
       <div class="contact-data">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-7">
             <form>
                 <div [hidden]="valid" class="alert alert-danger">
                     Please fill out all the required fields!
@@ -85,14 +85,14 @@
             </form>
           </div>
           
-          <div class="col-md-4">
+          <div class="col-md-5">
               <div class="map-responsive">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4146.257235889596!2d-97.29052734279435!3d29.088764897349915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5fa42437a761f42!2sSecurity+Storage!5e0!3m2!1sen!2sus!4v1543607082908" width="100%" height="400px" frameborder="0" style="border:2px solid #fff;"  allowfullscreen></iframe>
               </div>
               <div class="contact-details pt-3">
-                <h2 class="py-1">Your Self Storage</h2>
+                <h2 class="py-1">Security Storage</h2>
                 <span *ngFor="let contact of contactInfo; let i = index">
-                  <span *ngIf = "i !== 0">
+                  <span>
                    <b>{{contact.label}}</b> {{contact.data}}<br>
                   </span>
                 </span>

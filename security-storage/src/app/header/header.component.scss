@@ -25,23 +25,26 @@ a {
 }
 .social :hover {
     color: $primary;
-    transition-duration: 500ms;
+    //transition-duration: 500ms;
 }
 .navbar {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+    button:focus {
+        outline: 5px auto $primary;
+    }
 }
 
 .nav-link {
     color: $primary !important;
     font-weight: 600;
-    transition-duration: 500ms;
+    //transition-duration: 500ms;
     padding: 21px;
 }
 
 .nav-link:hover {
     color: $secondary !important;
     // background: $primary;
-    transition-duration: 500ms;
+    //transition-duration: 500ms;
 }
 
 .router-link-active {
@@ -69,5 +72,12 @@ a {
 
     .nav-link {
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) and (max-height: 600px) {
+    .navbar-nav-scroll {
+        height: 200px;
+        overflow-y: scroll;
     }
 }

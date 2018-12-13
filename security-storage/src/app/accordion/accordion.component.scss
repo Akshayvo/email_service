@@ -1,24 +1,25 @@
 @import '../../styles.scss';
-
 .accordion {
     .card {
         background-color: $white;
         border: none;
     .card-header {
         background-color: $primary;
-        a {
+        cursor: pointer;
            color: $white;
-        }
     }
-
     .card-body {
-        display: inline;
+        ul {
+            margin-bottom: 0rem !important;
+            padding-inline-start: 20px;
+            li:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
     }
     
     }
-
     .text-justify {
         text-align: justify !important;
     }
 }
-      
