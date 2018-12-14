@@ -25,22 +25,22 @@
               </h2>
               <p class="text-justify">With affordable truck rentals, drive-up access, temperature - controlled storage units, and top notch customer service, Catskill Self Storage has your storage unit needs covered! Contact us today to get started!</p>
             </div>
-            <div class="col-md-12 button-override-padding-left">
+            <div class="button-override-padding-left">
               <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
               <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Unit</a></div>
             </div>
           </div>
         </div>
        </div>
-      <div class="container jumbotron-bottom">
-        <div>
-        <div class="feature row align-middle">
-          <div class="col-md-3 col-3 p-4 override-padding-x-axis" style="text-align: center" *ngFor="let feature of feature">
-            <img [src]="feature?.path" style="padding: 10px" alt="" />
-              <h6 class="feature-text">{{feature.label}}</h6>
+      <div class="jumbotron-bottom">
+        <div class="container">
+          <div class="feature row">
+            <div class="col-md-3 col-3 p-4 override-padding-x-axis" style="text-align: center" *ngFor="let feature of feature">
+              <img [src]="feature?.path" style="padding: 10px" alt="" />
+                <h6 class="feature-text">{{feature.label}}</h6>
+            </div>
           </div>
         </div>
-      </div>
       </div>
      </div>
 

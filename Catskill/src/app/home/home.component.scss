@@ -20,9 +20,10 @@
    text-align: right;
  }
 
- .button-override-padding-left {
-   padding-left: 0px;
- }
+//  .button-override-padding-left {
+//    padding-left: 0px;
+//    padding-right: 0px;
+//  }
   .getStarted{
     color: $secondary;
     text-align: center;
@@ -39,6 +40,8 @@
     
   .jumbotron-bottom {
     height: 20vh;
+    display: flex;
+    align-items: center;
   }
 
  .jumbotorn-skew-style{
@@ -413,51 +416,85 @@
   }
 }
 
-@media only screen and (max-width: 640px) {                             //mobile
-  .jumbotron{
+// @media only screen and (max-width: 640px) {                             //mobile
+//   .jumbotron{
+//     text-align: center !important;
+//     background-attachment: unset !important;
+//     background-position: center left !important;
+//     height: 100vh!important;
+//     overflow: hidden;
+//     h1 {
+//       font-size: 2em !important;
+//     }
+//     .container {
+//       height: 100%;
+//       display: flex;
+//     }
+//   }
+//   .jumbotron-top {
+//     //overflow: hidden;
+//   }
+//   .feature {
+//     display: none;
+//   }
+
+//   .disp {
+//     display: none;
+//   }
+//   .button-width{
+//     max-width: 200px;
+//     margin: auto;
+//   }
+//   .jumbotorn-skew-style {
+//     display: none;
+//   }
+//   .jumbotorn-skew-text {
+//     display: none;
+//   }
+//   .jumbotron-small-device {
+//     width: 100%;
+//     display: flex;
+//     position: absolute;
+//     bottom: 0px;
+//     a {
+//       margin: 10px;
+//     }
+//     .padding-none {
+//       padding: 0px;
+//     }
+//   }
+// }
+
+
+@media only screen and (max-width: 640px) {
+  .jumbotron {
     text-align: center !important;
     background-attachment: unset !important;
-    background-position: center left !important;
+    background-position: center left !important;     
     height: 100vh!important;
-    overflow: hidden;
-    h1 {
-      font-size: 2em !important;
-    }
-    .container {
-      height: 100%;
-      display: flex;
-    }
-  }
-  .jumbotron-top {
-    //overflow: hidden;
   }
   .feature {
     display: none;
   }
-
   .disp {
     display: none;
   }
-  .button-width{
-    max-width: 200px;
-    margin: auto;
-  }
   .jumbotorn-skew-style {
-    display: none;
+    left: auto;
+    transform: skew(0deg);
+    width: 100%;
+    position: absolute;
+    height: 20%;
+    bottom: 0;
   }
   .jumbotorn-skew-text {
-    display: none;
-  }
-  .jumbotron-small-device {
     width: 100%;
-    display: flex;
-    position: absolute;
-    bottom: 0px;
-    a {
-      margin: 10px;
-    }
-    .padding-none {
-      padding: 0px;
+    left: 0;
+    // .button-override-padding-left {
+    //   padding-left: 
+    // }
+    button {
+      min-width: 100%;
     }
   }
 }
