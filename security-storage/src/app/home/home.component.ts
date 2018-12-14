@@ -5,7 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs,
-          gettingStarted, feature, blurbHeading, blurbText } from '../data/home';
+          gettingStarted, feature, blurbHeading, blurbText, slideShow } from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -25,6 +25,8 @@ export class HomeComponent implements OnInit {
   currentActive: any = 'HOME';
   blurbHeading: any;
   blurbText: any;
+  slideShow: any;
+
 
   constructor(@Inject(WINDOW) private window: Window,
     private router: Router,
@@ -51,12 +53,17 @@ export class HomeComponent implements OnInit {
     this.fetchStaticContent();
     this.fetchFeature();
     this.fetchJumbotronText();
+    this.fetchSlideShow();
     this.window.scrollTo(0, 0);
   }
 
   public fetchJumbotronText() {
     this.blurbHeading = blurbHeading;
     this.blurbText = blurbText;
+  }
+
+  public fetchSlideShow() {
+    this.slideShow = slideShow;
   }
 
   public fetchContactDetails() {

@@ -3,7 +3,7 @@
   <!--Jumbotron Container Starts Here-->
   <div class="jumbotron-container">
     <div class="jumbotron-top">
-        <div class="bg-translucent jumbotron-skew-style">
+        <!-- <div class="bg-translucent jumbotron-skew-style">
         </div>
         <div class="container text-align-right">
           <div class="jumbotron-skew-text">
@@ -22,16 +22,24 @@
               </div>
             </div>
           </div>
+        </div> -->
+        <div id="carouselExampleIndicatorsClick" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item" *ngFor="let slideShow of slideShow" [ngClass]="slideShow?.id == 1 && 'active'">
+              <img [src]="slideShow?.path"  [alt]="slideShow?.alt" width="100%" style="background-repeat: no-repeat; background-size: cover; background-position: bottom;" />
+            </div>
+          </div>
         </div>
     </div>
     <div class="jumbotron-bottom disp">
       <div class="container">
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-md-3 col-3 text-center" *ngFor="let feature of feature">
             <img [src]="feature?.path" style="padding: 10px" alt="" height="80px"/>
               <h6 class="feature-text">{{feature.label}}</h6>
           </div>
-        </div>
+        </div> -->
+        <p style="text-align:center; font-size: 1.4rem; margin-bottom:0px"> {{blurbText}} </p>
       </div>
     </div>
   </div>
@@ -42,8 +50,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 py-2">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11675.702373314978!2d-77.418952!3d42.979841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb582595e3f89c79!2sVictor+Self+Storage!5e0!3m2!1sen!2sus!4v1540326807113" width="100%" height="100%" frameborder="0" style="border:1px solid #fff;" allowfullscreen></iframe>
-        </div>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11675.702373314978!2d-77.418952!3d42.979841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb582595e3f89c79!2sVictor+Self+Storage!5e0!3m2!1sen!2sus!4v1540326807113" width="100%" height="100%" frameborder="0" style="border:1px solid #fff;" allowfullscreen></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4146.257235889596!2d-97.29052734279435!3d29.088764897349915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5fa42437a761f42!2sSecurity+Storage!5e0!3m2!1sen!2sus!4v1543607082908" width="100%" height="400px" frameborder="0" style="border:2px solid #fff;"  allowfullscreen></iframe>
+          </div>
         
         <div class="col-lg-6 py-2">
           <div class="mb-4">

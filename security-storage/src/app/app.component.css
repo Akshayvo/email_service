@@ -1,14 +1,16 @@
- /* Sticky Buttons  */
+
+/* Sticky Buttons  */
 .contact-button {
   position:fixed; 
+  right: 0;
   top:150px; 
   z-index: 16;
 }
 button {
   min-width: 40px;
-  background-color: #256784;
+  background-color: #0f6c2c;
   padding: 10px;
-  border: 1px solid #256784;
+  border: 1px solid #0f6c2c;
 }
 
 .footer {

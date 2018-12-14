@@ -1,85 +1,64 @@
 export const unitSizer = [
     {
-        size: '5\' x 15\' General Storage',
-        img: '../../assets/images/UnitSizer/5x5.png',
-        data: `This unit is approximately 25 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
-        amenities: [
-            { content: 'chairs', },
-            { content: 'small desks', },
-            { content: 'small bookcases', },
-            { content: 'suitcases', },
-            { content: 'lamps', },
-        ],
-    },
-
-    {
-        size: '10\' x 10\' General Storage',
-        img: '../../assets/images/UnitSizer/10x10.png',
+        id: 0,
+        size: '5\' x 10\'',
+        heading: '5\' x 10\' Storage Unit',
+        unitImg: '../../assets/images/UnitSizer/5x10.png',
+       // photo: '../../assets/images/photos/2.jpg',
         data: `This unit is approximately 50 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
-                    { content: 'chairs', },
-                    { content: 'small desks', },
-                    { content: 'small bookcases', },
-                    { content: 'suitcases', },
-                    { content: 'lamps', },
+                    { content: 'Mattress Sets', },
+                    { content: 'Sofas', },
+                    { content: 'Bookcases', },
+                    { content: 'dining room sets', },
+                    { content: 'Lamps', },
         ],
     },
     {
-        size: '10\' x 15\' General Storage',
-        img: '../../assets/images/UnitSizer/10x15.png',
-        data: `This unit is approximately 150 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
+        id: 1,
+        size: '10\' x 10\'',
+        heading: '10\' x 10\' Storage Unit',
+        unitImg: '../../assets/images/UnitSizer/10x10.png',
+       // photo: '../../assets/images/photos/3.jpg',
+        data: `This unit is approximately 100 sq feet of space that can store belongings from a large room : `,
         amenities: [
-            { content: 'chairs', },
-            { content: 'small desks', },
-            { content: 'small bookcases', },
-            { content: 'suitcases', },
-            { content: 'lamps', },
+            { content: 'Mattress Sets', },
+            { content: 'Sofas', },
+            { content: 'Bookcases', },
+            { content: 'Dining room sets', },
+            { content: 'Lamps', },
         ],
     },
 
-
     {
-        size: '10\' x 20\' General Storage',
-        img: '../../assets/images/UnitSizer/10x20.png',
-        data: `This unit is approximately 200 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
+        id: 2,
+        size: '10\' x 15\'',
+        heading: '10\' x 15\' Storage Unit',
+        unitImg: '../../assets/images/UnitSizer/10x15.png',
+        //photo: '../../assets/images/photos/5.jpg',
+        data: `This unit is approximately 160 sq feet of space that can hold the contents of a single bedroom apartment. `,
         amenities: [
-            { content: 'mattress sets', },
-            { content: 'sofa sets', },
-            { content: 'washer / dryer', },
-            { content: 'refrigerator', },
-            { content: 'many boxes', },
-        ],
-    },
-
-
-    {
-        size: '10\' x 25\' General Storage',
-        img: '../../assets/images/UnitSizer/10x25.png',
-        data: `This unit is approximately 250 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
-        amenities: [
-            { content: 'mattress sets', },
-            { content: 'sofa sets', },
-            { content: 'washer / dryer', },
-            { content: 'refrigerator', },
-            { content: 'many boxes', },
+            { content: 'Mattress sets', },
+            { content: 'Armchairs', },
+            { content: 'Bookcases', },
+            { content: 'Sofas', },
+            { content: 'Dining room sets', },
         ],
     },
     {
-        size: '10\' x 30\' General Storage',
-        img: '../../assets/images/UnitSizer/10x30.png',
-        data: `This unit is approximately 300 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
+        id: 3,
+        size: '10\' x 20\'',
+        heading: '10\' x 20\' Storage Unit',
+        unitImg: '../../assets/images/UnitSizer/10x20.png',
+        //photo: '../../assets/images/photos/6.jpg',
+        data: `This unit is approximately 200 sq feet of space that can hold the contents of a multiple bedroom apartments or a small house. `,
         amenities: [
-            { content: 'mattress sets', },
-            { content: 'sofa sets', },
-            { content: 'washer / dryer', },
-            { content: 'refrigerator', },
-            { content: 'many boxes', },
+            { content: 'Mattress sets', },
+            { content: 'Armchairs', },
+            { content: 'Bookcases', },
+            { content: 'Sofas', },
+            { content: 'Dining room sets', },
         ],
-    }
+    },
 ];

@@ -71,5 +71,24 @@ export const aboutUs = [
     },
 ];
 
+export const slideShow = [
+    {
+        class: `active`,
+        id: `1`,
+        path: `../../assets/images/Security-Storage/carousel/security-storage-cuero-exterior-hero.jpg`,
+        alt: `jumbotron1`
+    },
+    {
+        id: `2`,
+        path: `../../assets/images/Security-Storage/carousel/security-storage-cuero-exterior.jpg`,
+        alt: `jubotron2`,
+    },
+    {
+        id: `3`,
+        path: `../../assets/images/Security-Storage/carousel/security-storage-cuero-outdoor-units.jpg`,
+        alt: `jumbotron3`,
+    }
+];
+
 export const gettingStarted = `Are you ready to reserve your unit,
                                warehouse space or office suite? Click below to start decluttering your life today!`;
