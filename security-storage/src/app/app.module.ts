@@ -26,6 +26,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
+import { PhotosComponent } from './photos/photos.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
     StorageTipsComponent,
     AccordionComponent,
     ContactButtonComponent,
+    PhotosComponent,
   ],
   imports: [
     CommonModule,

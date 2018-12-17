@@ -26,10 +26,11 @@
         <div id="carouselExampleIndicatorsClick" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item" *ngFor="let slideShow of slideShow" [ngClass]="slideShow?.id == 1 && 'active'">
-              <img [src]="slideShow?.path"  [alt]="slideShow?.alt" width="100%" style="background-repeat: no-repeat; background-size: cover; background-position: bottom;" />
+              <img [src]="slideShow?.path"  [alt]="slideShow?.alt"  style="background: url(`slideShow?.path`) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;" />
             </div>
           </div>
         </div>
+       
     </div>
     <div class="jumbotron-bottom disp">
       <div class="container">
@@ -83,7 +84,7 @@
         <img src="../../assets/images/Security-Storage/security-storage-cuero-drive-up-indoor-units.jpg" width="100%" height="95%" alt="storage unit picture" class="sectionImage">
       </div>
       <div class="col-lg-6 py-2">
-        <h2 class="heading pb-4">Affordable Storage & Office Space in Cuero, TX</h2>
+        <h1 class="heading pb-4">Affordable Storage & Office Space in Cuero, TX</h1>
         <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
       </div>
     </div>
