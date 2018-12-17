@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';
+import { WINDOW } from '@ng-toolkit/universal';
 
 @Component({
   selector: 'app-contact',
@@ -35,6 +36,7 @@ export class ContactComponent implements OnInit {
   flag: boolean;
 
   constructor(
+    @Inject(WINDOW) private window: Window,
     private emailService: EmailService,
     private titleService: Title,
     private formBuilder: FormBuilder,
@@ -51,6 +53,7 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
+    this.window.scrollTo(0, 0);
   }
 
   public fetchContactDetails() {
@@ -136,8 +139,8 @@ public formClear() {
               this.receiveremail = this.contactsVillage[2].data;
             }
 
-          this.completeMessage = `phone: ${this.phone}, <br/>
-                                 message: ${this.message}`;
+          this.completeMessage = `<strong>Phone:</strong> ${this.phone}, <br/>
+                                 <strong>Message:</strong> ${this.message}`;
 
           this.valid = true;
           const body = {

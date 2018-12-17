@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
+import { WINDOW } from '@ng-toolkit/universal';
 
 
 @Component({
@@ -27,6 +28,7 @@ export class PaymentComponent implements OnInit {
 
 
   constructor(
+    @Inject(WINDOW) private window: Window,
     private route: ActivatedRoute,
     private router: Router,
     private titleService: Title,
@@ -43,6 +45,8 @@ export class PaymentComponent implements OnInit {
     this.sub = this.route.queryParams.subscribe(params => {
       this.currentTab = params['currentTab'];
     });
+    this.window.scrollTo(0, 0);
+
   }
 
 }

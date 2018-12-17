@@ -33,7 +33,7 @@ export class EmailService {
         name: data.name,
         senderEmail: data.email,
         receiverEmail: data.receiveremail,
-        subject: 'Enquiry Message',
+        subject: 'Website Form Submission',
         message: data.message,
         customTemplate: ''
       }

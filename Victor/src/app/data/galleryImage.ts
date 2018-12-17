@@ -21,9 +21,9 @@ export const galleryvillage = [
 ];
 
 export const galleryMall = [
-    { url: '../../assets/images/mall/victor-self-storage-mall.jpg'},
-    { url: '../../assets/images/mall/victor-self-storage-units.jpg'},
-    { url: '../../assets/images/mall/victor-self-storage-night.jpg'},
+    { url: '../../assets/images/mall/victor-self-storage-mall.png'},
+    { url: '../../assets/images/mall/victor-self-storage-night.png'},
+    { url: '../../assets/images/mall/victor-self-storage-units.png'},
     { url: '../../assets/images/SlideShow/victor-self-storage-access.jpg'},
     { url: '../../assets/images/SlideShow/victor-self-storage-alarm.jpg'},
     { url: '../../assets/images/SlideShow/victor-self-storage-clean-and-bright.jpg'},

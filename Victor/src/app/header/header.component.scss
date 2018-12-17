@@ -8,21 +8,24 @@ a {
     // min-height: 80px !important;
     padding-bottom: 0px;
     // padding-top: 35px;
+    button:focus {
+        outline: 5px auto $primary;
+    }
 }
 
 
 .nav-link {
     color: $white !important;
     font-weight: 600;
-    transition-duration: 500ms;
     font-size: 1.2rem;
     padding-top: 25px !important;
     padding-bottom: 25px !important;
+    transition: none !important;
 }
 
 .nav-link:hover {
     color: $light !important;
-    transition-duration: 500ms;
+    transition: none !important;
 }
 
 .nav-link-active {
@@ -39,7 +42,11 @@ a {
     margin-bottom: 10px;
     // padding: 10px !important;
   }
-  
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    border: 1px solid $primary !important;
+}
+
   @media (min-width: 768px) {
     .navbar-nav {
         li { 

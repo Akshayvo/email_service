@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { RouterLink, ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-
+import { WINDOW } from '@ng-toolkit/universal';
 import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';
 import { featuresHead, serviceOffered, homeCarousel } from '../data/home';
 
@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
   carousel: any;
 
   constructor(
+    @Inject(WINDOW) private window: Window,
     private route: ActivatedRoute,
     private router: Router,
     private titleService: Title,
@@ -45,6 +46,7 @@ export class HomeComponent implements OnInit {
     this.fetchStaticContent();
     this.fetchFeatureHead();
     this.carouselData();
+    this.window.scrollTo(0, 0);
   }
 
   public fetchContactDetails() {

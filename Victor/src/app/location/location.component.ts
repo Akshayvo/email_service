@@ -1,8 +1,9 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';
 import { iframeMapMall, iframeMapVillage, tabs } from '../data/location';
 import { DomSanitizer, Title } from '@angular/platform-browser';
+import { WINDOW } from '@ng-toolkit/universal';
 
 
 @Component({
@@ -24,6 +25,7 @@ export class LocationComponent implements OnInit, OnDestroy {
   private sub: any;
 
   constructor(
+    @Inject(WINDOW) private window: Window,
     private route: ActivatedRoute,
     private router: Router,
     public sanitizer: DomSanitizer,
@@ -40,6 +42,7 @@ export class LocationComponent implements OnInit, OnDestroy {
     this.fetchDetails(this.name);
     this.fetchTabs();
     this.ads = this.getSafeUrl(this.iframeAdd.url);
+    this.window.scrollTo(0, 0);
   }
 
 

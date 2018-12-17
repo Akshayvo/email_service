@@ -1,6 +1,8 @@
 import { DemoComponent } from './demo/demo.component';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgtUniversalModule } from '@ng-toolkit/universal';
+
 // import '@material/tab/mdc-tab-scroller';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -58,6 +60,7 @@ import { RentSubComponent } from './rent-sub/rent-sub.component';
     RentSubComponent,
   ],
   imports: [
+    NgtUniversalModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
     AppRoutingModule,

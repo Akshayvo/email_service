@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { storagePoints, storageTips } from '../data/storage-tips';
 import { Title } from '@angular/platform-browser';
+import { WINDOW } from '@ng-toolkit/universal';
 
 @Component({
   selector: 'app-storage-tips',
@@ -16,6 +17,7 @@ export class StorageTipsComponent implements OnInit {
   breadcrumbActive: any = 'Storage Tips';
 
   constructor(
+    @Inject(WINDOW) private window: Window,
     private titleService: Title,
   ) {
     this.titleService.setTitle('Self Storage Tips | Victor Self Storage');
@@ -24,6 +26,8 @@ export class StorageTipsComponent implements OnInit {
   ngOnInit() {
     this.fetchstoragePoints();
     this.fetchstorageTips();
+    this.window.scrollTo(0, 0);
+
   }
 
 
