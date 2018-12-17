@@ -2,7 +2,7 @@
 <div class="home-container">
   <!--Jumbotron Container Starts Here-->
   <div class="jumbotron-container">
-    <div class="jumbotron-top">
+    <!-- <div class="jumbotron-top"> -->
         <!-- <div class="bg-translucent jumbotron-skew-style">
         </div>
         <div class="container text-align-right">
@@ -23,15 +23,30 @@
             </div>
           </div>
         </div> -->
-        <div id="carouselExampleIndicatorsClick" class="carousel slide" data-ride="carousel">
+        
+
+        <!-- <div id="carouselExampleIndicatorsClick" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item" *ngFor="let slideShow of slideShow" [ngClass]="slideShow?.id == 1 && 'active'">
-              <img [src]="slideShow?.path"  [alt]="slideShow?.alt"  style="background: url(`slideShow?.path`) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;" />
+              <img [src]="slideShow?.path"  [alt]="slideShow?.alt"  style="-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;" />
             </div>
           </div>
-        </div>
+        </div> -->
+        <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="jumbotron-top jumbotron-top-style"></div>
+              </div>
+              <div class="carousel-item">
+                  <div class="jumbotron-top1 jumbotron-top-style"></div>
+              </div>
+              <div class="carousel-item">
+                  <div class="jumbotron-top2 jumbotron-top-style"></div>
+              </div>
+            </div>
+          </div>
        
-    </div>
+    <!-- </div> -->
     <div class="jumbotron-bottom disp">
       <div class="container">
         <!-- <div class="row">
