@@ -1,28 +1,95 @@
 @import '../../styles.scss';
 
 .gallery-content {
-    //padding: 64px !important;
-    background-color: $light;
-    //margin-bottom: 50px;
-    #selectedImageM {
-        img {
-            border: 2px solid $white;
-        }
+  //padding: 64px !important;
+  //background-color: $light;
+  //margin-bottom: 50px;
+  #selectedImageM {
+    img {
+      border: 2px solid $white;
     }
-    .data {
-        h3 {
-            text-transform: capitalize;
-            font-size: 1.5rem;
-        }
+  }
+
+  .data {
+    h3 {
+      text-transform: capitalize;
+      font-size: 1.5rem;
     }
-    #thumbnailsList {
-        img {
-            box-shadow: none;
-            border: 1px solid $white;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            cursor: pointer;
-        }
+  }
+
+  .thumbnailsList {
+    img {
+      width: 78px;
     }
+  }
+
+  #thumbnailsList {
+    img {
+      box-shadow: none;
+      border: 1px solid $white;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+  }
 }
 
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .gallery-content {
+    .thumbnailsList {
+      img {
+        width: 95px;
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 767px) and (min-width: 576px) {
+//   .gallery-content {
+//     .thumbnailsList {
+//       img {
+//         width: 90px;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 575px) {
+//   .gallery-content {
+//     .thumbnailsList {
+//       img {
+//         width: 90px;
+//       }
+//     }
+//   }
+// }
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  .gallery-content {
+    .thumbnailsList {
+      img {
+        width: 90px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) and (min-width: 448px) {
+  .gallery-content {
+    .thumbnailsList {
+      img {
+        width: 78px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 447px) {
+  .gallery-content {
+    .thumbnailsList {
+      img {
+        width: 75px;
+      }
+    }
+  }
+}

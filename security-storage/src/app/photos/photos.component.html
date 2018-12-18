@@ -7,22 +7,11 @@
         </div>
       </div>
 
-      <!-- <div id="carouselExampleIndicatorsClick" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div id="selectedImageM" class="carousel-item" *ngFor="let image of galleryImages" [ngClass]="image?.id == 1 && 'active'">
-            <img  src="{{image.url}}" height="auto" width="100%">
-          </div>
-        </div>
-      </div> -->
-
       <div class="">
         <div class="data">
-          <!-- <h3>Victor Self Storage - {{name}}</h3> -->
-          <!-- <p style="text-align: justify;" *ngFor='let data of galleryData'>
-          </p> -->
-          <div id="thumbnailsList">
+          <div id="thumbnailsList" class="thumbnailsList">
             <span *ngFor="let image of galleryImages; let i = index" class="p-1">
-               <img src="{{image.url}}" class="tn" width="100px" height="auto" 
+               <img src="{{image.url}}" class="tn" height="auto" 
                   data-toggle="image.url"   data-target="#selectedImageM"
                     (click)=setSelectedImage(image)>
             </span>
@@ -31,18 +20,5 @@
       </div>
 
     </div>
-
-    <!-- experiment  -->
-
-    <!-- <div id="carouselExampleIndicatorsClick" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item" *ngFor="let image of galleryImages" [ngClass]="image?.id == 1 && 'active'">
-          <img [src]="image?.url"  [alt]=""  width="100%"/>
-        </div>
-      </div>
-    </div> -->
-    
-    <!-- experiment  -->
-    
   </div>
 </div>

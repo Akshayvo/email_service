@@ -15,7 +15,7 @@
         }
         .btn {
             padding: 5px 140px;
-            min-width: 160px;
+            min-width: 140px;
         }
     }
     textarea {
@@ -42,6 +42,24 @@
     position:absolute;
   }
 
+
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .contentHolder {
+      .contact-data {
+          padding: 24px;
+          height: 600px;
+      }
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .contact-data {
+    .btn {
+      margin-bottom: 20px;
+    }
+  }
+}
 
 
 @media only screen and (max-width: 600px) {
