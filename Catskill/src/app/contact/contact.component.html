@@ -1,7 +1,3 @@
-<div class="fixed-top">
-  <app-header [currentActive]="currentActive"></app-header>
-</div>
-<app-breadcrumb [breadcrumbActive]="breadcrumbActive"></app-breadcrumb>
 
 <div class="contentHolder">
   <div class="container pb-5" style="padding-top: 190px;">
@@ -36,10 +32,6 @@
             <small id="emailHelp" class="form-text text-muted"></small>
           </div>
         </div>
-          <!-- <div class="form-group">
-            <label for="Subject">Subject (Optional)</label>
-            <input type="text" name="subject" class="form-control" id="Subject" placeholder="Enter Subject" [(ngModel)]="subject">
-          </div> -->
           <div class="form-group">
             <label for="Message">Enter Message*</label>
             <textarea rows="6" class="form-control" name="message" id="Message"  (keyup)="validate('notNull', message, 'Message', 'messageHelp')" placeholder="Enter Your Message" [(ngModel)]="message" required></textarea>
@@ -53,25 +45,9 @@
       </div>
       <div class="col-md-5 col-12 my-4">
         <div class="my-4">
-          <!-- <iframe style="border:2px solid white" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47251.23771165393!2d-73.906239!3d42.252851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb3c5b1992ccc62a!2sU-Haul+Neighborhood+Dealer!5e0!3m2!1sen!2sus!4v1466783726746"
-             width="100%" height="250" frameborder="0" allowfullscreen></iframe> -->
              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11812.741403016997!2d-73.9069651!3d42.2532142!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f78849841f11072!2sCatskill+Self+Storage!5e0!3m2!1sen!2sus!4v1541375613193" 
-             style="border:2px solid white" width="100%" height="250" frameborder="0" allowfullscreen></iframe> 
+             style="border:2px solid white;" width="100%" height="250" frameborder="0" allowfullscreen></iframe> 
         </div>
-        <!-- /<h3 class="heading py-3">Hours</h3> -->
-        <!-- <app-tables [tBody]="hours" [tHead]="head"></app-tables> -->
-        <!-- <h3 class="heading py-3">Contact Info</h3> -->
-        <!-- <app-tables [tBody]="contactDetails" [tHead]="head"></app-tables> -->
-        <!-- <h4>Catskill Self Storage</h4>
-        <div>
-          <b>Phone: </b> (518)-943-3003 <br/>
-          <b>Email: </b> catskillselfstorage@gmail.com<br/>
-          <b>Office</b><br/>
-          Mon-Fri 9am-6pm<br/>
-          Saturday 9am-3pm<br/>
-          Sunday 8am-12pm<br/>
-          Gate Access 24/7
-        </div> -->
         <p>
             <span *ngFor="let contact of contactDetails">
               <b>{{contact.label}}</b> {{contact.data}}<br>
@@ -88,5 +64,3 @@
   </div>
 
 </div>
-
-<app-footer></app-footer>

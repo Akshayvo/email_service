@@ -1,81 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import '../../styles.scss';
+
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
+
 .iconColor {
-    color: $primary !important;
+  color: $primary !important;
 }
-.contact-header{
+
+.contact-header {
   display: inline;
-  .contact-details{
+
+  .contact-details {
     color: $white;
     font-size: 0.82em;
     font-weight: 500;
     width: 100%;
   }
 }
+
 .social {
-    text-align: right !important;
-    a {
-        color: $white;
-        text-decoration: none;
-    }
+  text-align: right !important;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
 }
+
 .social :hover {
-    color: $primary;
-    transition-duration: 500ms;
+  color: $primary;
 }
-.nav-link {
-    color: $white !important;
-    font-weight: 600;
-    transition-duration: 500ms;
-}
-.nav-link:hover {
-    color: $primary !important;
-    // background: $primary;
-    transition-duration: 500ms;
-}
-.nav-link-active {
-    color: $primary !important;
-    border-bottom: 5px solid $primary;
-}
-.display {
-    display: block;
-}
+
 .navbar {
-    padding: 0px;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+
+  button:focus {
+    outline: 5px auto $white;
+  }
 }
 
-.navbar-button{
-    button:focus {
-        outline: 5px auto $primary;
-    }
+.nav-link {
+  color: $white !important;
+  font-weight: 600;
+  padding: 21px;
 }
 
+.nav-link:hover {
+  color: $primary !important;
+}
 
+.router-link-active {
+  color: $primary !important;
+  border-bottom: 5px solid $primary;
+}
+
+.nav-link-active {
+  color: $primary !important;
+  border-bottom: 5px solid $primary;
+}
+
+.display {
+  display: block;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+  border: 1px solid $primary !important;
+}
 
 @media screen and (max-width: 991px) {
-    .display {
-        display: none;
-    }
-    .nav-link {
-        text-align: center;
-    }
-    .container {
-        max-width: 100%!important;
-    }
+  .display {
+    display: none;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 767px) and (max-height: 600px) {
-    .navbar-nav-scroll {
-        height: 200px;
-        overflow-y: scroll;
-    }
+@media only screen and (max-width: 767px) and (max-height: 600px) {
+  .navbar-nav-scroll {
+    height: 200px;
+    overflow-y: scroll;
+  }
 }
-
-@media only screen and (max-width: 767px) {
-    .nav-link:hover {
-        color: $white !important;
-    }
-}   
