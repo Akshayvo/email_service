@@ -100,7 +100,7 @@ export class ContactComponent implements OnInit {
             });
           this.submitted = false;
           // MailService(body);
-        //  this.registerForm.reset();
+          this.contactForm.reset();
     }
   }
 }
