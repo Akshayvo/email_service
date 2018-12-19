@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';
@@ -34,10 +35,12 @@ export class ContactComponent implements OnInit {
   submited = true;
   head: any;
   flag: boolean;
+  private sub: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private emailService: EmailService,
+    private route: ActivatedRoute,
     private titleService: Title,
     private formBuilder: FormBuilder,
     private meta: Meta
@@ -51,6 +54,16 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.sub = this.route.queryParams.subscribe(params => {
+      this.name = params['name'];
+    });
+    if ( this.name === 'mall' ) {
+      this.location = 'Victor Self Storage - Mall';
+    }  else if ( this.name === 'village' ) {
+      this.location = 'Victor Self Storage - Village';
+    } else if (this.name === undefined ) {
+      this.location = ' ';
+    }
     this.fetchContactDetails();
     this.fetchHours();
     this.window.scrollTo(0, 0);
