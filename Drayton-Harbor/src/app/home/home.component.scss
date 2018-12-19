@@ -9,84 +9,11 @@
   display: block;
 }
 
-// HOME jUMBOTRON
-.jumbotron-container {
-  .jumbotron-top {
-    height: 80vh;
-    .jumbotron {
-      background: url(../../assets/images/self-storage-hero.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 80vh;
-      color: $fontColor;
-      overflow: hidden;
-      padding: 0px;
-      position: relative;
-      .jumbotron-skew-style {
-        width: 75%;
-        float: left;
-        left: -20%;
-        position: relative;
-        transform: skew(15deg);
-        min-height: 100%; 
-        }
-        .jumbotron-skew-text {
-          width: 24%;
-          position: absolute;
-          top: 30%;
-          color: $fontColor;
-          h1 {
-            text-transform: uppercase;
-            font-weight: 600; 
-            font-size: 2em;
-          }
-          p {
-            text-align: justify;
-            }
-            .btn {
-              width: 95%;
-              min-width: 110px;
-            }
-            a {
-              margin-top: 20px;
-            }
-          } 
-      }
-    }
-  .jumbotron-bottom {
-    //padding-top: 2%;
-    display: flex;
-    align-items: center;
-    height: 20vh;
-    .feature-text {
-      text-transform: uppercase;
-    }
-  }
-}
-  
-// Testimonial
-.carousel {
-  .carousel-indicators {
-     li {
-      width: 0.825rem;
-      height: 0.825rem;
-      border: 2px solid $primary;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-      cursor: pointer; 
-      }
-    .active {
-      background-color: $primary !important;
-    }
-  }
-}
-
-// Get started Section 
-
+// Get started Section
 .getStarted {
   background: url(../../assets/images/jumbotorn.jpg) center top no-repeat fixed;
   background-size: cover;
+
   .get-started {
     left: 0;
     right: 0;
@@ -95,10 +22,92 @@
     background: rgba(238, 238, 238, 0.7);
     z-index: 9;
   }
-  
+
   .btn {
     min-width: 250px;
     font-size: 1.2rem;
+  }
+}
+
+// HOME jUMBOTRON
+.jumbotron-container {
+  .jumbotron-top {
+    height: 80vh;
+
+    .jumbotron {
+      background: url(../../assets/images/self-storage-hero.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      color: $fontColor;
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+
+      .jumbotron-skew-style {
+        width: 75%;
+        float: left;
+        left: -20%;
+        position: relative;
+        transform: skew(15deg);
+        min-height: 100%;
+      }
+
+      .jumbotron-skew-text {
+        width: 24%;
+        position: absolute;
+        top: 30%;
+        color: $fontColor;
+
+        h1 {
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 2em;
+        }
+
+        p {
+          text-align: justify;
+        }
+
+        .btn {
+          width: 95%;
+          min-width: 110px;
+        }
+
+        a {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .jumbotron-bottom {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+
+    .feature-text {
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Testimonial
+.carousel {
+  .carousel-indicators {
+    li {
+      width: 0.825rem;
+      height: 0.825rem;
+      border: 2px solid $primary;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: $primary !important;
+    }
   }
 }
 
@@ -107,35 +116,42 @@
   .disp {
     display: none;
   }
+
   .jumbotron-container {
     .jumbotron-top {
       height: 95vh;
+
       .jumbotron {
         height: 95vh;
+
         .jumbotron-skew-style {
           display: none;
-          }
-          .jumbotron-skew-text {
+        }
+
+        .jumbotron-skew-text {
+          width: 100%;
+          bottom: 0 !important;
+          left: 0;
+          top: auto;
+          height: 80px;
+          background: rgba(255, 255, 255, 0.9);
+
+          .button-width {
+            padding: 0 15px;
+            top: 0;
             width: 100%;
-            bottom: 0px !important;
-            left: 0;
-            top: auto;
-            height: 80px;
-            background: rgba(255, 255, 255, 0.9);
-            .button-width {
-              padding: 0px 15px;
-              top: 0;
-              width: 100%;
-              text-align: center;
-              }
-            } 
+            text-align: center;
+          }
         }
       }
-      .jumbotron-bottom {
-        display: none;
-        height: 0vh;
-      }
+    }
+
+    .jumbotron-bottom {
+      display: none;
+      height: 0vh;
+    }
   }
+
   .map-responsive {
     iframe {
       height: 200px;
@@ -150,39 +166,44 @@
   .jumbotron-container {
     .jumbotron-top {
       height: 100vh;
+
       .jumbotron {
         height: 100vh;
+
         .jumbotron-skew-style {
           width: 85%;
+        }
+
+        .jumbotron-skew-text {
+          width: 44%;
+          a {
+            min-width: 140px;
           }
-          .jumbotron-skew-text {
-            width: 44%;
-            a {
-              min-width: 140px;
+          .disp {
+            p {
+              font-size: 0.8rem;
             }
-            .disp {
-              p {
-                font-size: 0.8rem;
-              }
-              h2 {
-                font-size: 2rem;
-              }
+            h2 {
+              font-size: 2rem;
             }
-            } 
+          }
         }
       }
+    }
+
     .jumbotron-bottom {
       display: flex;
       align-items: center;
       height: 180px;
     }
   }
+
   .map-responsive {
     iframe {
       height: 200px;
     }
   }
-} 
+}
 
 @media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 700px) and (min-height: 501px) {
   .jumbotron-container {
@@ -193,13 +214,16 @@
         }
       }
     }
+
     .jumbotron-bottom {
       display: flex;
       align-items: center;
       height: 160px;
+
       .override-padding-x-axis {
         padding: 12px 24px !important;
       }
+
       h6 {
         font-size: 0.8rem;
       }
@@ -211,36 +235,43 @@
   .disp {
     display: none;
   }
+
   .jumbotron-container {
     .jumbotron-top {
       height: 90vh;
+
       .jumbotron {
         height: 90vh;
+
         .jumbotron-skew-style {
           display: none;
-          }
-          .jumbotron-skew-text {
+        }
+
+        .jumbotron-skew-text {
+          width: 100%;
+          height: 80px;
+          bottom: 0;
+          top: auto;
+          background: rgba(255, 255, 255, 0.9);
+          left: 0;
+
+          .button-width {
             width: 100%;
-            height: 80px;
-            bottom: 0;
-            top: auto;
-            background: rgba(255, 255, 255, 0.9);
-            left: 0;
-            .button-width {
-              width: 100%;
-              padding: 0px;
-              text-align: center;
-              padding-left: 7%;
-              padding-right: 7%;
-              }
-            } 
+            padding: 0px;
+            text-align: center;
+            padding-left: 7%;
+            padding-right: 7%;
+          }
         }
       }
+    }
+
     .jumbotron-bottom {
       display: none;
       height: 0vh;
     }
   }
+
   .map-responsive {
     iframe {
       height: 200px;
@@ -251,8 +282,10 @@
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 830px) and (min-height: 641px) {
   .jumbotron-container {
     height: 100vh;
+
     .jumbotron-top {
       height: 100vh;
+
       .jumbotron {
         .jumbotron-skew-text {
           .disp {
@@ -263,17 +296,19 @@
               font-size: 2rem;
             }
           }
-         
         }
       }
     }
+
     .jumbotron-bottom {
       display: flex;
       align-items: center;
       height: 160px;
+
       .override-padding-x-axis {
         padding: 12px 24px !important;
       }
+
       h6 {
         font-size: 0.8rem;
       }
@@ -287,17 +322,22 @@
       display: flex;
       align-items: center;
       height: 150px !important;
+
       h6 {
         font-size: 0.8rem !important;
       }
     }
+
     .jumbotron-top {
       height: 100vh !important;
+
       .jumbotron {
         height: 100vh !important;
       }
+
       .jumbotron-skew-text {
         top: 25%;
+
         .disp {
           p {
             font-size: 0.8rem;
@@ -317,15 +357,19 @@
       display: flex;
       align-items: center;
       height: 150px !important;
+
       h6 {
         font-size: 0.8rem !important;
       }
     }
+
     .jumbotron-top {
       height: 100vh !important;
+
       .jumbotron {
         height: 100vh !important;
       }
+
       .jumbotron-skew-text {
         top: 25%;
         .disp {
@@ -340,7 +384,7 @@
     }
   }
 }
- 
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .disp {
@@ -350,8 +394,10 @@
   .jumbotron-container {
     .jumbotron-top {
       height: 80vh;
+
       .jumbotron {
         height: 80vh;
+
         .jumbotron-skew-style {
           //@debugwidth: calc(80% - 20px);
           width: 84%;
@@ -361,37 +407,43 @@
           transform: skew(15deg);
           min-height: 100%;
         }
+
         .jumbotron-skew-text {
           width: 40%;
-          position: absolute;            
+          position: absolute;
+
           //top: 0px;
           bottom: 0;
+
           .button-width {
             width: 100%;
             text-align: center;
             //padding-left: 0%;
-          }  
+          }
         }
       }
     }
+
     .jumbotron-bottom {
       display: flex;
       align-items: center;
       height: 20vh;
-      display: block;
+
       //padding-top: 2%;
       .feature-text {
         text-transform: uppercase;
       }
     }
   }
-} 
+}
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 830px) and (min-height: 641px) {
   .jumbotron-container {
     height: 100vh;
+
     .jumbotron-top {
       height: 100vh;
+
       .jumbotron {
         .jumbotron-skew-text {
           .disp {
@@ -402,17 +454,19 @@
               font-size: 2rem;
             }
           }
-         
         }
       }
     }
+
     .jumbotron-bottom {
       display: flex;
       align-items: center;
       height: 160px;
+
       .override-padding-x-axis {
         padding: 12px 24px !important;
       }
+
       h6 {
         font-size: 0.8rem;
       }
@@ -426,15 +480,19 @@
       display: flex;
       align-items: center;
       height: 150px !important;
+
       h6 {
         font-size: 0.8rem !important;
       }
     }
+
     .jumbotron-top {
       height: 100vh !important;
+
       .jumbotron {
         height: 100vh !important;
       }
+
       .jumbotron-skew-text {
         top: 25%;
         .disp {
@@ -456,15 +514,19 @@
       display: flex;
       align-items: center;
       height: 150px !important;
+
       h6 {
         font-size: 0.8rem !important;
       }
     }
+
     .jumbotron-top {
       height: 100vh !important;
+
       .jumbotron {
         height: 100vh !important;
       }
+
       .jumbotron-skew-text {
         top: 25%;
         .disp {
@@ -479,7 +541,7 @@
     }
   }
 }
- 
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .disp {
@@ -489,8 +551,10 @@
   .jumbotron-container {
     .jumbotron-top {
       height: 80vh;
+
       .jumbotron {
         height: 80vh;
+
         .jumbotron-skew-style {
           //@debugwidth: calc(80% - 20px);
           width: 84%;
@@ -500,19 +564,21 @@
           transform: skew(15deg);
           min-height: 100%;
         }
+
         .jumbotron-skew-text {
           width: 35%;
-          position: absolute;            
+          position: absolute;        
           //top: 0px;
           bottom: 0;
           .button-width {
             width: 100%;
             text-align: center;
             //padding-left: 0%;
-          }  
+          }
         }
       }
     }
+
     .jumbotron-bottom {
       height: 20vh;
       display: flex;
@@ -523,10 +589,6 @@
       }
     }
   }
-} 
-
-@media only screen and (min-width: 1200px) and (max-height: 640px) and (min-height: 641px) {
-
 }
 
 @media only screen and (min-width: 1200px) and (max-height: 640px) and (min-height: 481px) {
@@ -535,17 +597,22 @@
       height: 150px !important;
       display: flex;
       align-items: center;
+
       h6 {
         font-size: 0.8rem !important;
       }
     }
+
     .jumbotron-top {
       height: 100vh !important;
+
       .jumbotron {
         height: 100vh !important;
       }
+
       .jumbotron-skew-text {
         top: 25%;
+
         .disp {
           p {
             font-size: 0.8rem;
@@ -561,19 +628,13 @@
 
 @media only screen and (min-width: 1200px) and (max-height: 480px) {
   .jumbotron-container {
-    .jumbotron-bottom {
-      display: flex;
-      align-items: center;
-      height: 150px !important;
-      h6 {
-        font-size: 0.8rem !important;
-      }
-    }
     .jumbotron-top {
-      height: 100vh !important;
+      height: 100vh;
+
       .jumbotron {
-        height: 100vh !important;
+        height: 100vh;
       }
+
       .jumbotron-skew-text {
         top: 25%;
         .disp {
@@ -587,10 +648,25 @@
       }
     }
   }
+
+  .jumbotron-bottom {
+    display: flex;
+    align-items: center;
+    height: 150px !important;
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-  .jumbotron-skew-text {
-    width: 425px !important;
+  .jumbotron-container {
+    .jumbotron-top {
+      .jumbotron {
+        .jumbotron-skew-text {
+          width: 425px;
+        }
+      }
+    }
   }
 }

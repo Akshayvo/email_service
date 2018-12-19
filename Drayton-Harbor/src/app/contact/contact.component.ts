@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { WINDOW } from '@ng-toolkit/universal';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
+// import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, hours } from '../data/contact';
@@ -14,25 +14,26 @@ import { contact, hours } from '../data/contact';
 export class ContactComponent implements OnInit {
 
   // form: FormGroup;
-  breadcrumbActive: any = 'Contact Us';
   currentActive: any = 'CONTACT US';
   hours: any;
   name: string;
   email: any;
   phone: any;
-  message: any;
+  message: string;
   contactInfo: any;
   receiveremail: string;
   completeMessage: string;
+  registerForm: FormGroup;
+  submitted = false;
+  valid= false;
 
-  valid = true;
-  submited = true;
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private emailService: EmailService,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private formBuilder: FormBuilder
   ) {
     this.meta.addTag({
       name: 'description',
@@ -46,8 +47,15 @@ export class ContactComponent implements OnInit {
     this.fetchContactDetails();
     this.fetchHours();
     this.window.scrollTo(0, 0);
+    this.registerForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      phone: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required]
+  });
   }
 
+  get f() { return this.registerForm.controls; }
   public fetchContactDetails() {
     this.contactInfo = contact;
   }
@@ -56,80 +64,24 @@ export class ContactComponent implements OnInit {
     this.hours = hours;
   }
 
-  public validate(check: string, value: any, id: string, helpId: string) {
-    if (check === 'notNull') {
-      if (this.validateNull(value)) {
-        document.getElementById(id).style.borderColor = 'red';
-        document.getElementById(helpId).innerHTML = 'Please fill out this field';
-        return false;
-      } else {
-        document.getElementById(id).style.border = '1px solid #ced4da';
-        document.getElementById(helpId).innerHTML = '';
-        return true;
-      }
-    }
+  onSubmit() {
+     this.submitted = true;
 
-    if (check === 'tel') {
-      if (this.validateNull(value)) {
-        document.getElementById(id).style.borderColor = 'red';
-        document.getElementById(helpId).innerHTML = 'Please fill out this field';
-        return false;
-      } else {
-        if (!this.validatePhone(value)) {
-          document.getElementById(id).style.borderColor = 'red';
-          document.getElementById(helpId).innerHTML = 'Please enter a valid phone number.';
-          return false;
-        } else {
-          document.getElementById(id).style.border = '1px solid #ced4da';
-          document.getElementById(helpId).innerHTML = '';
-          return true;
-        }
-      }
-    }
+    // stop here if form is invalid
+    if (this.registerForm.invalid) {
+        return;
+    } else {
+      alert('SUCCESS!! :-)');
+      this.valid = true;
+      console.log(this.registerForm.value);
+      this.receiveremail = this.contactInfo[1].data;
 
-    if (check === 'email') {
-      if (this.validateNull(value)) {
-        document.getElementById(id).style.borderColor = 'red';
-        document.getElementById(helpId).innerHTML = 'Please fill out this field';
-        return false;
-        } else {
-        if (!this.validateEmail(value)) {
-          document.getElementById(id).style.borderColor = 'red';
-          document.getElementById(helpId).innerHTML = 'Please enter a valid email id';
-          return false;
-        } else {
-          document.getElementById(id).style.border = '1px solid #ced4da';
-          document.getElementById(helpId).innerHTML = '';
-          return true;
-        }
-      }
-  }
-}
+          this.completeMessage = `phone: ${this.registerForm.value.phone}, <br/>
+                                 message: ${this.registerForm.value.message}`;
 
-public formClear() {
-  this.name = '',
-  this.email = '',
-  this.message = '',
-  this.phone = '';
-}
-
-
-  public formSubmit() {
-    if (this.validate('notNull', this.name, 'Name', 'nameHelp') &&
-        this.validate('tel', this.phone, 'Phone', 'telHelp') &&
-        this.validate('email', this.email, 'Email', 'emailHelp') &&
-        this.validate('notNull', this.message, 'Message', 'messageHelp')
-         ) {
-
-          this.receiveremail = this.contactInfo[1].data;
-
-          this.completeMessage = `phone: ${this.phone}, <br/>
-                                 message: ${this.message}`;
-
-          this.valid = true;
           const body = {
-            name: this.name,
-            email: this.email,
+            name: this.registerForm.value.name,
+            email: this.registerForm.value.email,
             receiveremail: this.receiveremail,
             message: this.completeMessage,
           };
@@ -146,37 +98,9 @@ public formClear() {
             }, (err) => {
               console.log('Error :', err);
             });
-          this.submited = false;
+          this.submitted = false;
           // MailService(body);
-    } else {
-
-      this.valid = false;
-      }
-    }
-
-  private validateEmail(value: string) {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
-      return (true);
-    }
-    return (false);
-  }
-
-  private validatePhone(value: string) {
-    const isValidNumber = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$/.test(value);
-    if (isValidNumber) {
-      return (true);
-    } else {
-      // alert('false');
-      return (false);
+          this.registerForm.reset();
     }
   }
-
-  private validateNull(value: string) {
-    if (value === undefined || value === '') {
-      return (true);
-    }
-    console.log(value);
-    return (false);
-  }
-
 }

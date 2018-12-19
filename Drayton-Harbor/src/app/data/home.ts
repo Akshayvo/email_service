@@ -11,16 +11,7 @@ export const featuresList = [
     },
     {
         td1: 'Large Units',
-        // td2: 'Superior Customer Service',
     },
-    // {
-        // td1: 'Black Top Paving',
-        // td2: 'U-Haul Rentals'
-    // },
-    // {
-        // td1: 'Packing Material',
-        // td2: 'Tenant Insurance'
-    // }
 ];
 
 export const feature = [

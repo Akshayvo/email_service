@@ -1,61 +1,59 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import '../../styles.scss';
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "../../styles.scss";
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .navbar {
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
-    button:focus {
-        outline: 5px auto $primary;
-    }
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+
+  button:focus {
+    outline: 5px auto $primary;
+  }
 }
 
 .nav-link {
-    color: $fontColor !important;
-    font-weight: 600;
-    //transition-duration: 500ms;
-    padding: 21px;
+  color: $fontColor !important;
+  font-weight: 600;
+  padding: 21px;
 }
 
 .nav-link:hover {
-    color: $primary !important;
-    // background: $primary;
-    //transition-duration: 500ms;
+  color: $primary !important;
 }
 
 .router-link-active {
-    color: $primary !important;
-    border-bottom: 5px solid $primary;
+  color: $primary !important;
+  border-bottom: 5px solid $primary;
 }
 
 .nav-link-active {
-    color: $primary !important;
-    border-bottom: 5px solid $primary;
+  color: $primary !important;
+  border-bottom: 5px solid $primary;
 }
 
 .display {
-    display: block;
+  display: block;
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover {
-    border: 1px solid $primary !important;
+  border: 1px solid $primary !important;
 }
 
 @media screen and (max-width: 900px) {
-    .display {
-        display: none;
-    }
+  .display {
+    display: none;
+  }
 
-    .nav-link {
-        text-align: center;
-    }
+  .nav-link {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 767px) and (max-height: 600px) {
-    .navbar-nav-scroll {
-        height: 200px;
-        overflow-y: scroll;
-    }
+  .navbar-nav-scroll {
+    height: 200px;
+    overflow-y: scroll;
+  }
 }

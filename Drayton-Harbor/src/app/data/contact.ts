@@ -6,7 +6,8 @@ export const contact = [
     },
     {
         label: 'Email:',
-        data: 'sales@draytonharborministorage.com',
+        // data: 'sales@draytonharborministorage.com',
+        data: 'jaya13194@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
@@ -27,40 +28,10 @@ export const hours = [
     },
 ];
 
-// export const officeHours = [
-//     {
-//         label: 'Mon-Fri: ',
-//         data: '9:00 am - 6:00 pm'
-//     },
-//     {
-//         label: 'Sat: ',
-//         data: '9:00 am - 3:00 pm'
-//     },
-//     {
-//         label: 'Sunday: ',
-//         data: '8:00 am - 12:00 pm'
-//     },
-//     {
-//         label: 'Gate Access ',
-//         data: '24/7'
-//     }
-// ];
-
-
 export const socialLinks = [
-    // {
-    //     label: 'twitter',
-    //     path: 'https://twitter.com/Drayton-Harbor-SS',
-    //     class: 'fab fa-twitter-square',
-    // },
     {
         label: 'facebook',
         path: 'https://www.facebook.com/pages/Drayton-Harbor-Mini-Storage/126481870738770',
         class: 'fab fa-facebook-square',
     },
-    // {
-    //     label: 'google plus',
-    //     path: '#',
-    //     class: 'fab fa-google-plus-square',
-    // },
 ];
