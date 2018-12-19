@@ -4,10 +4,10 @@
 <div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
   <!-- Accordion card -->
-  <div class="card" *ngFor="let points of aData; let i = index;">
+  <div class="card" *ngFor="let points of aData;">
 
     <!-- Card header -->
-    <div class="card-header" role="tab" id="'heading'+i"  [attr.data-target]="'#collapse_'+i" data-toggle="collapse">
+    <div class="card-header" role="tab"  [attr.data-target]="'#collapseOne'+points?.id" data-toggle="collapse">
         <h5 class="mb-0">
           {{points.label}}
           <i class="fa fa-angle-down rotate-icon" style="float: right;"></i>
@@ -15,7 +15,7 @@
     </div>
 
     <!-- Card body -->
-    <div [id]="'collapse_'+i" class="collapse" [ngClass]="i == 0 && 'show'" role="tabpanel" aria-labelledby="'heading'+i" data-parent="#accordionEx">
+    <div [id]="'collapseOne'+points?.id" class="collapse" [ngClass]="points?.id == 0 && 'show'" role="tabpanel" aria-labelledby="collapseOne" data-parent="#accordionEx">
       <div class="card-body">
         <ul class="">
           <li *ngFor="let point of points?.contents" class="text-justify"> {{point.data}} </li>

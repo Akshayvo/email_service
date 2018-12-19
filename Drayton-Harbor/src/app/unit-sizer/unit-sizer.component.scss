@@ -1,12 +1,12 @@
 @import '../../styles.scss';
 
-#unit-sizer-holder {
+.unit-sizer-holder {
   padding-top: 100px;
   min-height: 89vh;
   margin-bottom: 50px;
   text-align: justify;
 
-  #unit-sizer-container {
+  .unit-sizer-container {
     padding: 64px;
     background-color: $light;
     margin-bottom: 50px;
@@ -15,7 +15,7 @@
       background-color: $white;
       border: 1px solid $border;
 
-      .col-sm-5 {
+      .single-block-inner {
         padding-top: 20px;
       }
     }
@@ -31,18 +31,18 @@
 
 
 @media only screen and (max-width: 600px) {
-  #unit-sizer-holder {
+  .unit-sizer-holder {
     padding-top: 60px;
 
     .heading {
       padding-bottom: 30px !important;
     }
 
-    #unit-sizer-container {
+    .unit-sizer-container {
       padding: 16px !important;
 
       .single-block {
-        .col-sm-5 {
+        .single-block-inner {
           padding-top: 20px !important;
         }
       }

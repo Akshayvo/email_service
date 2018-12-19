@@ -25,7 +25,8 @@ export class ContactComponent implements OnInit {
   completeMessage: string;
   registerForm: FormGroup;
   submitted = false;
-  valid= false;
+
+
 
 
   constructor(
@@ -49,7 +50,7 @@ export class ContactComponent implements OnInit {
     this.window.scrollTo(0, 0);
     this.registerForm = this.formBuilder.group({
       name: ['', Validators.required],
-      phone: ['', Validators.required],
+      phone: ['', [Validators.required, Validators.pattern('0-9')]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required]
   });
@@ -71,8 +72,6 @@ export class ContactComponent implements OnInit {
     if (this.registerForm.invalid) {
         return;
     } else {
-      alert('SUCCESS!! :-)');
-      this.valid = true;
       console.log(this.registerForm.value);
       this.receiveremail = this.contactInfo[1].data;
 
