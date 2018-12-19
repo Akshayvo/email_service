@@ -1,6 +1,4 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
@@ -14,15 +12,13 @@ import { WINDOW } from '@ng-toolkit/universal';
 })
 export class ContactComponent implements OnInit {
 
-  form: FormGroup;
-  breadcrumbActive: any = 'Contact Us';
-  currentActive: any = 'Contact Us';
   contactsMall: object;
   contactsVillage: object;
   hoursMall: object;
   hoursVillage: object;
 
   name: string;
+  placeName: string;
   email: any;
   phone: any;
   location: any;
@@ -42,7 +38,6 @@ export class ContactComponent implements OnInit {
     private emailService: EmailService,
     private route: ActivatedRoute,
     private titleService: Title,
-    private formBuilder: FormBuilder,
     private meta: Meta
   ) {
     this.meta.addTag({
@@ -55,13 +50,13 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.sub = this.route.queryParams.subscribe(params => {
-      this.name = params['name'];
+      this.placeName = params['name'];
     });
-    if ( this.name === 'mall' ) {
+    if ( this.placeName === 'mall' ) {
       this.location = 'Victor Self Storage - Mall';
-    }  else if ( this.name === 'village' ) {
+    }  else if ( this.placeName === 'village' ) {
       this.location = 'Victor Self Storage - Village';
-    } else if (this.name === undefined ) {
+    } else if (this.placeName === undefined ) {
       this.location = ' ';
     }
     this.fetchContactDetails();

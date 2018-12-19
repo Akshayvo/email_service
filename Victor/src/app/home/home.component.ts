@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { RouterLink, ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';

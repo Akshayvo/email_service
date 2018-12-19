@@ -1,16 +1,18 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
+
 .contentHolder {
-    margin-bottom: 50px;
-    padding: 64px !important;
-    min-height: 90vh;
-    background-color: #f1f0ed;
+  margin-bottom: 50px;
+  padding: 64px;
+  min-height: 90vh;
+  background-color: #f1f0ed;
 }
 
 @media only screen and (max-width: 600px) {
-    .contentHolder {
-        padding: 16px !important;
-        iframe {
-            min-height: 1100px;
-        }
+  .contentHolder {
+    padding: 16px;
+
+    iframe {
+      min-height: 1100px;
     }
+  }
 }

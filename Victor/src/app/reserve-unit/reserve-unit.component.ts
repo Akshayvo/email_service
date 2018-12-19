@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { tabs } from '../data/location';
 
 @Component({
   selector: 'app-reserve-unit',
@@ -20,11 +19,5 @@ export class ReserveUnitComponent implements OnInit {
     this.sub = this.route.queryParams.subscribe(params => {
       this.name = params['name'];
     });
-    this.fetchTabs();
   }
-
-  public fetchTabs() {
-    this.tabs = tabs;
-  }
-
 }

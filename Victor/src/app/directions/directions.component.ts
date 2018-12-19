@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
 import { directionVillage, directionMall } from '../data/location';
 @Component({
   selector: 'app-directions',

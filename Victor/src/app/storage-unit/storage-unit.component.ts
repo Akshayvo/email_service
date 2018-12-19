@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { tabs } from '../data/location';
 
 @Component({
   selector: 'app-storage-unit',
@@ -19,9 +18,6 @@ export class StorageUnitComponent implements OnInit {
     this.sub = this.route.queryParams.subscribe(params => {
       this.name = params['name'];
     });
-    this.fetchTabs();
   }
-  public fetchTabs() {
-    this.tabs = tabs;
-  }
+
 }

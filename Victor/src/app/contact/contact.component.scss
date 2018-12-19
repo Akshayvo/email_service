@@ -15,8 +15,8 @@
     background-color: $light;
 
     label {
-      padding-top: 0px;
-      margin-bottom: 0px;
+      padding-top: 0;
+      margin-bottom: 0;
     }
 
     .btn {
@@ -34,7 +34,7 @@
 @media only screen and (max-width: 600px) {
   .btn {
     width: 100%;
-    margin: 5px 0px;
+    margin: 5px 0;
   }
 
   .for-mall {

@@ -1,89 +1,95 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .navbar {
-    // min-height: 80px !important;
-    padding-bottom: 0px;
-    // padding-top: 35px;
-    button:focus {
-        outline: 5px auto $primary;
+  padding-bottom: 0;
+
+  .navbar-brand {
+    img {
+      position: absolute;
+      height: auto;
+      top: 12px;
     }
+  }
+
+  button {
+    border: 1px #efefef solid;
+    margin-right: 20px;
+  }
+
+  button:focus {
+    outline: 5px auto $primary;
+  }
 }
 
 
 .nav-link {
-    color: $white !important;
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding-top: 25px !important;
-    padding-bottom: 25px !important;
-    transition: none !important;
-}
-
-.nav-link:hover {
-    color: $light !important;
-    transition: none !important;
+  color: $white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  transition: none;
 }
 
 .nav-link-active {
-    border-bottom: 5px $border solid;  
-    // border-bottom: 5px #e2cfa9 solid;
+  border-bottom: 5px $border solid;
+  color: $white;
 }
 
 .display {
-    display: block;
+  display: block;
 }
 
 .navbar-toggler {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    // padding: 10px !important;
-  }
-
-.navbar-toggler:focus, .navbar-toggler:hover {
-    border: 1px solid $primary !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-  @media (min-width: 768px) {
-    .navbar-nav {
-        li { 
-            a {
-            padding-top: 5px;
-            padding-bottom: 5px;
-            line-height: 1.5rem;;
-            text-align: center !important; 
-        }
-            
-        }
-    } 
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  border: 1px #efefef solid;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    li {
+      a {
+        line-height: 1.5rem;
+        text-align: center;
+      }
+    }
   }
+}
 
 @media screen and (max-width: 991px) {
-    .display {
-        display: none;
+  .display {
+    display: none;
+  }
+
+  .navbar {
+    .navbar-nav {
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: flex;
     }
-    .navbar {
-        .navbar-nav {
-        overflow-y: auto;
-        overflow-x: hidden;
-        display: flex; 
-        }
-        // min-height: 50px;
-        .navbar-brand {
-            img {
-                width: 80px;
-                height: auto;
-                top: 8px !important;
-            }
-        }
+
+    .navbar-brand {
+      img {
+        width: 80px;
+        height: auto;
+        top: 10px;
+      }
     }
-    @media screen and (max-height: 476px) {
-        .nav-scroll {
-            height: 70vh;
-            overflow-y: auto;
-        }
+  }
+
+  @media screen and (max-height: 476px) {
+    .nav-scroll {
+      height: 70vh;
+      overflow-y: auto;
     }
+  }
 }
