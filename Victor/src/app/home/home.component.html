@@ -51,7 +51,7 @@
               <b>{{contact.label}}</b> {{contact.data}}<br>
             </span>
           </p>
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/village/storageUnits']" [queryParams]="{ name:'mall', currentTab: 'Storage Units' }" role="button">View Rates</a>                
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/mall/storageUnits']" [queryParams]="{ name:'mall', currentTab: 'Storage Units' }" role="button">View Rates</a>                
           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/mall/reserveUnit']" [queryParams]="{ name:'mall', currentTab: 'Reserve Unit' }" role="button"> Reserve Unit</a>                                  
         </div>
         <div class="col-md-3 contact-hours pt-3">
@@ -85,8 +85,8 @@
               <b>{{contact.label}}</b> {{contact.data}}<br>
             </span>
           </p>
-           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['location/village/storageUnits']" [queryParams]="{ name:'village', currentTab: 'Storage Units' }" role="button">View Rates</a>            
-           <a class="btn btn-primary p-2 ml-0" [routerLink]="['location/village/reserveUnit']" [queryParams]="{ name:'village',  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                     
+           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/village/storageUnits']" [queryParams]="{ name:'village', currentTab: 'Storage Units' }" role="button">View Rates</a>            
+           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/village/reserveUnit']" [queryParams]="{ name:'village',  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                     
         </div>
         <div class="col-md-3 contact-hours pt-3">
             <h2>Hours:</h2>
