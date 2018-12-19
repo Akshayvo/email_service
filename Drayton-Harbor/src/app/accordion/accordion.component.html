@@ -15,7 +15,7 @@
     </div>
 
     <!-- Card body -->
-    <div [id]="'collapseOne'+points?.id" class="collapse" [ngClass]="points?.id == 0 && 'show'" role="tabpanel" aria-labelledby="collapseOne" data-parent="#accordionEx">
+    <div [id]="'collapseOne'+points?.id" class="collapse" [ngClass]="points?.id == 1 && 'show'" role="tabpanel" aria-labelledby="collapseOne" data-parent="#accordionEx">
       <div class="card-body">
         <ul class="">
           <li *ngFor="let point of points?.contents" class="text-justify"> {{point.data}} </li>

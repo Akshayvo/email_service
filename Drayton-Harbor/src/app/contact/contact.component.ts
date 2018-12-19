@@ -23,9 +23,9 @@ export class ContactComponent implements OnInit {
   contactInfo: any;
   receiveremail: string;
   completeMessage: string;
-  registerForm: FormGroup;
+  contactForm: FormGroup;
   submitted = false;
-
+  isSubmitted = false;
 
 
 
@@ -48,15 +48,15 @@ export class ContactComponent implements OnInit {
     this.fetchContactDetails();
     this.fetchHours();
     this.window.scrollTo(0, 0);
-    this.registerForm = this.formBuilder.group({
+    this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
-      phone: ['', [Validators.required, Validators.pattern('0-9')]],
+      phone: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required]
   });
   }
 
-  get f() { return this.registerForm.controls; }
+  get f() { return this.contactForm.controls; }
   public fetchContactDetails() {
     this.contactInfo = contact;
   }
@@ -69,18 +69,19 @@ export class ContactComponent implements OnInit {
      this.submitted = true;
 
     // stop here if form is invalid
-    if (this.registerForm.invalid) {
+    if (this.contactForm.invalid) {
         return;
     } else {
-      console.log(this.registerForm.value);
+      console.log(this.contactForm.value);
+      this.isSubmitted = true;
       this.receiveremail = this.contactInfo[1].data;
 
-          this.completeMessage = `phone: ${this.registerForm.value.phone}, <br/>
-                                 message: ${this.registerForm.value.message}`;
+          this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
+                                 message: ${this.contactForm.value.message}`;
 
           const body = {
-            name: this.registerForm.value.name,
-            email: this.registerForm.value.email,
+            name: this.contactForm.value.name,
+            email: this.contactForm.value.email,
             receiveremail: this.receiveremail,
             message: this.completeMessage,
           };
@@ -99,7 +100,7 @@ export class ContactComponent implements OnInit {
             });
           this.submitted = false;
           // MailService(body);
-          this.registerForm.reset();
+        //  this.registerForm.reset();
     }
   }
 }
