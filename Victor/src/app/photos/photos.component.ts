@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { galleryMall, galleryvillage, galleryDataMall, galleryDataVillage } from '../data/galleryImage';
 import { ActivatedRoute } from '@angular/router';
 
@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './photos.component.html',
   styleUrls: ['./photos.component.scss']
 })
-export class PhotosComponent implements OnInit, OnDestroy {
+export class PhotosComponent implements OnInit {
   name: string;
   currentActiveTab: any = 'Photos';
   selectedImage: any;
@@ -40,9 +40,5 @@ export class PhotosComponent implements OnInit, OnDestroy {
   setSelectedImage(image: any) {
     this.selectedImage = image;
  }
-
- ngOnDestroy() {
-  this.sub.unsubscribe();
-}
 
 }

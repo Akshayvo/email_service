@@ -1,29 +1,27 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 .jumbotron {
   height: 100%;
   width: 100%;
-  padding: 0px;
-  margin: 0px;
 }
-#myCarousel {
-  .carousel-indicators {
-    li {
-      width: .8rem;
-          height: .8rem;
-          background-color: transparent;                
-          border: 1.5px $white solid;
-          position: relative;
-          -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-          margin-right: 3px;
-          margin-left: 3px;
-          text-indent: -999px;
-          cursor: pointer;
-    }
-    .active {
-      background-color: $white;
-    }
+
+
+.carousel-indicators {
+  li {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: transparent;
+    border: 1.5px $white solid;
+    position: relative;
+    flex: 0 1 auto;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: $white;
   }
 }
 
@@ -34,27 +32,29 @@
 }
 
 .f-text {
-  color: $primary !important;
+  color: $primary;
   font-weight: 600;
   font-size: 1.3rem;
 }
 
 
-.map-responsive{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-}
-.map-responsive iframe{
-  left:0;
-  top:0;
-  height: 90%;
-  width:100%;
-  position:absolute;
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+
+  iframe {
+    left: 0;
+    top: 0;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+  }
 }
 
-.content-align{
+
+.content-align {
   text-align: right;
 }
 
@@ -63,13 +63,14 @@
   padding-left: 5%;
 }
 
-.for-mall, .for-village {
+.for-mall,
+.for-village {
   .btn-outline-primary {
     margin-right: 10px;
   }
 }
 
-.service{
+.service {
   color: $dark;
   text-align: left;
 
@@ -82,98 +83,99 @@
     width: 100%;
     height: 330px;
   }
+
   p {
     text-align: justify;
   }
 }
 
 .content-left {
-  text-align: left; 
+  text-align: left;
 }
 
 
 .disp {
   display: block;
   color: $white;
-  a{
+
+  a {
     color: $white;
   }
 }
 
-#testimonial {
+.testimonial {
   background: $light;
   height: auto;
+
   h1 {
     font-size: 2rem;
-  } 
-  #carousel-test {
-    .carousel-indicators  {
-      li {
-          width: .8rem;
-          height: .8rem;
-          background-color: rgba(255, 255, 255, 0.5);                
-          border: 1px $primary solid;
-          position: relative;
-          -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-          margin-right: 3px;
-          margin-left: 3px;
-          text-indent: -999px;
-          cursor: pointer;
-      }
-      .active {
-          background-color: $primary !important;
-        }
-    }
-        .carousel-item {
-          max-width: 100%;
-          .active  {
-            background-position: center center;
-
-          }
-          p {
-            text-align: center; 
-            font-size: 1rem;
-          }  
-        }
   }
-} 
+
+  .carousel-indicators {
+    li {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 1px $primary solid;
+      position: relative;
+      flex: 0 1 auto;
+      margin-right: 3px;
+      margin-left: 3px;
+      text-indent: -999px;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: $primary;
+    }
+  }
+
+  .carousel-item {
+    max-width: 100%;
+
+    .active {
+      background-position: center center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+}
 
 @media screen and (max-width: 1024px) {
-
-  .content-align{
+  .content-align {
     text-align: right;
   }
-
-
 }
 
 @media screen and (max-width: 800px) {
-
-  .content-align{
+  .content-align {
     text-align: right;
   }
-  #myCarousel{
+
+  #myCarousel {
     .carousel-item {
-      min-height: 50vh;
+      min-height: 40vh;
       background-size: cover;
-      background-position: center center; 
+      background-position: center center;
       background-position-x: center;
       background-position-y: center;
-      image-rendering: inherit; 
+      image-rendering: inherit;
+
       img {
-      min-height: 50vh;
-      width: auto;
-      block-size: 100%;
-      position: relative;
+        min-height: 40vh;
+        width: auto;
+        block-size: 100%;
+        position: relative;
       }
     }
   }
 }
 
 @media screen and (max-width: 600px) {
-
-  .content-align{
+  .content-align {
     text-align: center;
   }
 
@@ -182,56 +184,64 @@
   }
 
   .f-block-img {
-    padding-top : 10px !important;
+    padding-top: 10px;
+
     .f-img {
       height: 40%;
       width: 40%;
     }
   }
-    .f-text {
-      padding-bottom: 10px !important;
-      font-size: 1.2rem;
-    }
-    #myCarousel{
-      .carousel-item {
-        min-height: 40vh;
-        width: 200%;
-        background-size: cover;
-        background-position: center center; 
-        background-position-x: center;
-        background-position-y: center;
-        image-rendering: inherit; 
-        img {
+
+  .f-text {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  #myCarousel {
+    .carousel-item {
+      min-height: 40vh;
+      width: 200%;
+      background-size: cover;
+      background-position: center center;
+      background-position-x: center;
+      background-position-y: center;
+      image-rendering: inherit;
+
+      img {
         min-height: 40vh;
         width: auto;
         block-size: 100%;
         position: relative;
-        }
       }
     }
-    .contact-hours {
-      border-left: none;
-      padding-left: 5%;
-    }
+  }
+
+  .contact-hours {
+    border-left: none;
+    padding-left: 5%;
+  }
 }
+
 
 @media only screen and (max-width: 768px) {
   .contact-hours {
     border-left: none;
     padding-left: 5%;
   }
+
   .disp {
     display: none;
   }
+
   .for-mall {
     .btn {
       width: 100%;
     }
   }
+
   .for-village {
     .btn {
       width: 100%;
     }
   }
-} 
-
+}

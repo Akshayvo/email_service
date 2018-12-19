@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { aboutUsVillage, aboutUsMall } from '../data/location';
 
@@ -7,7 +7,7 @@ import { aboutUsVillage, aboutUsMall } from '../data/location';
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.scss']
 })
-export class AboutUsComponent implements OnInit, OnDestroy {
+export class AboutUsComponent implements OnInit {
   name: string;
   aboutPara: any;
   currentActiveTab: any = 'About Us';
@@ -28,9 +28,5 @@ export class AboutUsComponent implements OnInit, OnDestroy {
     } else if (this.name === 'mall') {
       this.aboutPara = aboutUsMall;
     }
-  }
-
-  ngOnDestroy() {
-    this.sub.unsubscribe();
   }
 }

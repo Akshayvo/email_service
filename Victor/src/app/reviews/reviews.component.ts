@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { reviewVillage } from '../data/location';
 
@@ -7,7 +7,7 @@ import { reviewVillage } from '../data/location';
   templateUrl: './reviews.component.html',
   styleUrls: ['./reviews.component.scss']
 })
-export class ReviewsComponent implements OnInit, OnDestroy {
+export class ReviewsComponent implements OnInit {
   name: any;
   currentActiveTab: any = 'Reviews';
   reviews: any;
@@ -28,9 +28,5 @@ export class ReviewsComponent implements OnInit, OnDestroy {
    */
   public fetchreviews() {
     this.reviews = reviewVillage;
-  }
-
-  ngOnDestroy() {
-    this.sub.unsubscribe();
   }
 }

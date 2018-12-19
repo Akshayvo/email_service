@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { tabs } from '../data/location';
 
@@ -7,7 +7,7 @@ import { tabs } from '../data/location';
   templateUrl: './reserve-unit.component.html',
   styleUrls: ['./reserve-unit.component.scss']
 })
-export class ReserveUnitComponent implements OnInit, OnDestroy {
+export class ReserveUnitComponent implements OnInit {
 
   name: any;
   tabs: any;
@@ -25,9 +25,6 @@ export class ReserveUnitComponent implements OnInit, OnDestroy {
 
   public fetchTabs() {
     this.tabs = tabs;
-  }
-  ngOnDestroy() {
-    this.sub.unsubscribe();
   }
 
 }

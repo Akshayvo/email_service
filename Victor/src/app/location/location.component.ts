@@ -89,6 +89,7 @@ export class LocationComponent implements OnInit, OnDestroy {
   public navigate (location: any) {
     this.router.navigate([location]);
   }
+
   ngOnDestroy() {
     this.sub.unsubscribe();
   }

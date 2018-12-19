@@ -1,4 +1,3 @@
-import { DemoComponent } from './demo/demo.component';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
@@ -15,7 +14,6 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { PaymentComponent } from './payment/payment.component';
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
 import { LocationComponent } from './location/location.component';
@@ -36,13 +34,11 @@ import { RentSubComponent } from './rent-sub/rent-sub.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DemoComponent,
     HeaderComponent,
     HomeComponent,
     ContactComponent,
     FooterComponent,
     PaymentComponent,
-    BreadcrumbComponent,
     TablesComponent,
     ErrorComponent,
     LocationComponent,

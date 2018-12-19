@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { unitSizerVillage, unitSizerMall, tabs } from '../data/location';
 @Component({
@@ -6,7 +6,7 @@ import { unitSizerVillage, unitSizerMall, tabs } from '../data/location';
   templateUrl: './unit-sizer.component.html',
   styleUrls: ['./unit-sizer.component.scss']
 })
-export class UnitSizerComponent implements OnInit, OnDestroy {
+export class UnitSizerComponent implements OnInit {
   name: any;
   unitSizer: any;
   tabs: any;
@@ -35,10 +35,5 @@ export class UnitSizerComponent implements OnInit, OnDestroy {
 
   public fetchTabs() {
     this.tabs = tabs;
-  }
-
-  // tslint:disable-next-line:use-life-cycle-interface
-  ngOnDestroy() {
-    this.sub.unsubscribe();
   }
 }

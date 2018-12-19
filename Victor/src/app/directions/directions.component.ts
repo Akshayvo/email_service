@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { directionVillage, directionMall } from '../data/location';
@@ -7,7 +7,7 @@ import { directionVillage, directionMall } from '../data/location';
   templateUrl: './directions.component.html',
   styleUrls: ['./directions.component.scss']
 })
-export class DirectionsComponent implements OnInit, OnDestroy {
+export class DirectionsComponent implements OnInit {
   name: any;
   currentActiveTab: any = 'Directions';
   directionPoints: any;
@@ -29,9 +29,5 @@ export class DirectionsComponent implements OnInit, OnDestroy {
     } else if ( this.name === 'mall' ) {
       this.directionPoints = directionMall;
     }
-  }
-
-  ngOnDestroy() {
-    this.sub.unsubscribe();
   }
 }
