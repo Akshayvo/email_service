@@ -10,7 +10,6 @@ import { dataViewRates } from '../data/view-rates';
 })
 export class ViewRatesComponent implements OnInit {
 
-  breadcrumbActive: any = 'View Rates';
   currentActive: any = 'VIEW RATES';
   dataViewRates: any;
 

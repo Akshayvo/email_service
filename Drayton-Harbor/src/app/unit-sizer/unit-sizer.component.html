@@ -22,10 +22,10 @@
                       </div>
                       
           
-                      <div class="col-sm-7 pl-4">
+                      <div class="col-sm-7 padding-left pl-4 unit-sizer-content">
                         <h3 class="pt-2"> {{unit.size}} </h3>
                         <p class="pr-2" > {{unit.data}} </p>
-                        <ul style="display:inline-table; padding-left: 10px;">
+                        <ul >
                           <li *ngFor="let amenity of unit?.amenities"> {{amenity.content}} </li>
                         </ul>
                       </div>

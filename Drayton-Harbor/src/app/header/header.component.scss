@@ -8,28 +8,33 @@ a {
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
+  button {
+    color: #707070;
+    border-color: #707070;
+  }
+
   button:focus {
     outline: 5px auto $primary;
   }
 }
 
 .nav-link {
-  color: $fontColor !important;
+  color: $fontColor;
   font-weight: 600;
   padding: 21px;
 }
 
 .nav-link:hover {
-  color: $primary !important;
+  color: $primary;
 }
 
 .router-link-active {
-  color: $primary !important;
+  color: $primary;
   border-bottom: 5px solid $primary;
 }
 
 .nav-link-active {
-  color: $primary !important;
+  color: $primary;
   border-bottom: 5px solid $primary;
 }
 
@@ -37,8 +42,9 @@ a {
   display: block;
 }
 
-.navbar-toggler:focus, .navbar-toggler:hover {
-  border: 1px solid $primary !important;
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  border: 1px solid $primary;
 }
 
 @media screen and (max-width: 900px) {

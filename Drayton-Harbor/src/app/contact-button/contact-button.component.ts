@@ -40,7 +40,8 @@ export class ContactButtonComponent implements OnInit {
     this.fetchsocialLinks();
     this.contactForm = this.formBuilder.group({
       nameCB: ['', Validators.required],
-      phoneCB: ['', [Validators.required, Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+      phoneCB: ['', [Validators.required,
+      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       emailCB: ['', [Validators.required, Validators.email]],
       messageCB: ['', Validators.required]
   });
@@ -83,12 +84,10 @@ export class ContactButtonComponent implements OnInit {
          console.log(body);
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
-             // console.log('Authentication response:', response);
              if (response.result != null) {
-               alert(response.message);
+               // alert(response.message);
              } else {
-               // console.log(`response`, response.result);
-               alert(response.message);
+               // alert(response.message);
              }
            }, (err) => {
              console.log('Error :', err);

@@ -23,6 +23,18 @@
 
   form {
     margin-bottom: 50px;
+
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.socialLinks {
+  float: right;
+
+  a {
+    color: $primary;
   }
 }
 
@@ -44,7 +56,12 @@
     overflow: auto;
     overflow-y: scroll;
     height: 60vh;
-    width: 300px;
+    width: 280px;
+    margin-right: 20px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
   }
 }
 
@@ -57,3 +74,8 @@
   }
 }
 
+@media only screen and (max-height: 480px) {
+  .contact-button-data {
+    height: 55vh;
+  }
+}

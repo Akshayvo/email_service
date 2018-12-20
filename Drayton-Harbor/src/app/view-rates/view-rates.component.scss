@@ -17,17 +17,7 @@
 
   iframe {
     overflow: hidden;
-    overflow-x: hidden !important;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .coming {
-    div {
-      height: 5rem !important;
-      margin: 10px auto !important;   
-      padding-top: 3% !important;
-    }
+    overflow-x: hidden;
   }
 }
 

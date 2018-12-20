@@ -1,4 +1,4 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 .rent-holder {
   padding-top: 70px;
@@ -9,13 +9,14 @@
     padding: 64px;
     background-color: $light;
 
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
     .rent-example {
       border-left: 1px $border solid;
       padding-left: 10%;
-      p {
-        padding: 0;
-        margin: 0;
-      }
     }
   }
 }
@@ -29,9 +30,14 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .rent-example {
-    border-left: none !important;
+  .rent-holder {
+    .rent-sub-holder {
+      .rent-example {
+        border-left: none;
+      }
+    }
   }
+
   .coming {
     padding-bottom: 50px;
   }
@@ -42,11 +48,7 @@
     padding-top: 60px;
 
     .rent-sub-holder {
-      padding: 16px !important;
-    }
-
-    .rent-heading {
-      padding-bottom: 30px !important;
+      padding: 16px;
     }
 
     iframe {
@@ -54,7 +56,7 @@
     }
 
     .rent-example {
-      border-left: none !important;
+      border-left: none;
       padding-bottom: 20px;
     }
   }

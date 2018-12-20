@@ -9,7 +9,6 @@ import { WINDOW } from '@ng-toolkit/universal';
 })
 export class PaymentComponent implements OnInit {
 
-  breadcrumbActive: any = 'Pay Rent';
   currentActive: any = 'PAY RENT';
 
   constructor(

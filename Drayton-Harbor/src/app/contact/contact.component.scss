@@ -23,6 +23,7 @@
     .btn {
       padding: 5px 140px;
       min-width: 160px;
+      float: right;
     }
   }
 
@@ -42,6 +43,7 @@
   padding-bottom: 56.25%;
   position: relative;
   height: 45%;
+  border: 2px solid #fff;
 }
 
 .map-responsive iframe {
@@ -53,12 +55,10 @@
 }
 
 input::placeholder {
-  //color: #c7c7c7;
   font-size: 0.875rem;
 }
 
 textarea::placeholder {
-  //color: #c7c7c7;
   font-size: 0.875rem;
 }
 
@@ -76,9 +76,6 @@ small {
   .contentHolder {
     padding-top: 60px;
 
-    .heading {
-      padding-bottom: 30px !important;
-    }
 
     .contact-data {
       padding: 16px 16px 90px 16px;

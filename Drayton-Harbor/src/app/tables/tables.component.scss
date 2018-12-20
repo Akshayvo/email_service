@@ -12,11 +12,18 @@ table {
 }
 
 .table-head {
-  background: $primary !important;
+  background: $primary;
   color: $white;
 }
 
+td {
+  padding-left: 5%;
+}
 
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: $white;
+}
+
+.text-align-right {
+  text-align: right;
 }

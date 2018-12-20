@@ -17,6 +17,10 @@
     padding: 64px;
     background-color: $light;
     min-height: 644px;
+
+    ul {
+      padding-left: 15px;
+    }
   }
 }
 
@@ -33,7 +37,7 @@
     padding-top: 60px;
 
     .storage-content {
-      padding: 16px !important;
+      padding: 16px;
     }
   }
 

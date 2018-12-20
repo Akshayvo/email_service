@@ -1,7 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
-// import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, hours } from '../data/contact';
@@ -50,7 +49,8 @@ export class ContactComponent implements OnInit {
     this.window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
-      phone: ['', [Validators.required, Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+      phone: ['', [Validators.required,
+      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required]
   });
@@ -88,15 +88,13 @@ export class ContactComponent implements OnInit {
           console.log(body);
           this.emailService.sendEmail(body)
             .subscribe((response: any) => {
-              // console.log('Authentication response:', response);
               if (response.result != null) {
-                alert(response.message);
+               // alert(response.message);
               } else {
-                // console.log(`response`, response.result);
-                alert(response.message);
+               //  alert(response.message);
               }
             }, (err) => {
-              console.log('Error :', err);
+              // console.log('Error :', err);
             });
           this.submitted = false;
           // MailService(body);

@@ -6,8 +6,7 @@ export const contact = [
     },
     {
         label: 'Email:',
-        // data: 'sales@draytonharborministorage.com',
-        data: 'jaya13194@gmail.com',
+        data: 'sales@draytonharborministorage.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {

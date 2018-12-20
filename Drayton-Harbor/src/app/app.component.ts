@@ -24,24 +24,20 @@ export class AppComponent implements OnInit {
   ngOnInit() {
   this.x = window.matchMedia('(max-width: 600px)');
     this.flag = false;
-    // console.log('Init App');
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
-    // this.angulatics.pageTrack('Hello');
-    const onNavigationEnd = this.router.events.pipe(filter(event => event instanceof NavigationEnd));
   }
 
   public dataShow() {
-    if (this.flag === false) {
-      this.flag = true;
+    if (!this.flag) {
+      this.flag = !this.flag;
       if (this.x.matches) {
       document.body.style.overflow = 'hidden';
       }
     } else {
-      this.flag = false;
+      this.flag = !this.flag;
       if (this.x.matches) {
         document.body.style.overflow = 'auto';
         }
     }
   }
-
 }

@@ -7,12 +7,12 @@
     </tHead>
     <tbody>
       <tr *ngFor="let td of tds">
-        <td *ngFor="let key of objectKeys;" style="padding-left: 5%;">
+        <td *ngFor="let key of objectKeys;">
           <p *ngIf="(key === 'label')">
             <b>{{td[key]}}</b>
           </p>
           <p *ngIf="(key === 'data')">{{td[key]}}</p>
-          <p style="text-align: right;" *ngIf="(key === 'rate')">{{td[key]}}</p>
+          <p class="text-align-right" *ngIf="(key === 'rate')">{{td[key]}}</p>
           <p *ngIf="(key === 'td1' || key === 'td2' && td[key] !== undefined)">• &nbsp; {{td[key]}}</p>
         </td>
       </tr>
