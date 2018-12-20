@@ -134,29 +134,5 @@ onSubmit() {
  }
 }
 
-  private validateEmail(value: string) {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
-      return (true);
-    }
-    return (false);
-  }
-
-  private validatePhone(value: string) {
-    const isValidNumber = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$/.test(value);
-    if (isValidNumber) {
-      return (true);
-    } else {
-      // alert('false');
-      return (false);
-    }
-  }
-
-  private validateNull(value: string) {
-    if (value === undefined || value === '') {
-      return (true);
-    }
-    // console.log(value);
-    return (false);
-  }
 
 }

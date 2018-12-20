@@ -1,5 +1,5 @@
-import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
-import { RouterLink, ActivatedRoute, Router } from '@angular/router';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-tabs',
   templateUrl: './tabs.component.html',

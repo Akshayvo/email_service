@@ -67,29 +67,6 @@ export class LocationComponent implements OnInit, OnDestroy {
   getSafeUrl(url: any) {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
-
-  // public tabClicked(tabClicked: any) {
-  //   console.log('Tab Clicked Name:', tabClicked);
-  //   console.log('Tab Data is:', tabs);
-  //   this.tabs = tabs.map((tab) => {
-  //     tab.active = tab.name === tabClicked.name ? true : false;
-  //   });
-
-  // }
-  // public getActiveTab() {
-  //   const [currentTab] = this.tabs.filter((tab) => {
-  //     if (tab.active) {
-  //       return tab;
-  //     }
-  //   });
-  //   console.log('Current Active Tab:', currentTab);
-  //   return currentTab;
-  // }
-
-  public navigate (location: any) {
-    this.router.navigate([location]);
-  }
-
   ngOnDestroy() {
     this.sub.unsubscribe();
   }
