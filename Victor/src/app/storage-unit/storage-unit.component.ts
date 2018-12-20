@@ -19,5 +19,4 @@ export class StorageUnitComponent implements OnInit {
       this.name = params['name'];
     });
   }
-
 }

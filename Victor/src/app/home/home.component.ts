@@ -36,10 +36,6 @@ export class HomeComponent implements OnInit {
     this.titleService.setTitle('Storage Units Near Victor, NY, 14564 | Victor Self Storage');
   }
 
-  public navigate(location: any) {
-    this.router.navigate([location]);
-  }
-
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();

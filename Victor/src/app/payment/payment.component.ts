@@ -46,7 +46,5 @@ export class PaymentComponent implements OnInit {
       this.currentTab = params['currentTab'];
     });
     this.window.scrollTo(0, 0);
-
   }
-
 }

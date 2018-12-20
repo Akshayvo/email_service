@@ -16,7 +16,5 @@ export class RentSubComponent implements OnInit {
     this.sub = this.route.queryParams.subscribe(params => {
       this.tabId = params['id'];
     });
-
   }
-
 }

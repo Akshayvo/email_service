@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-* {
+html,
+body {
   font-size: 0.9rem;
   line-height: 1.5rem;
 }
@@ -35,7 +36,6 @@ $primaryFont: "Lato", sans-serif;
 
 .bg-translucent {
   background: rgba(0, 0, 0, 0.6);
-  width: auto !important;
 }
 
 // Content Holder Styles
@@ -54,9 +54,9 @@ $primaryFont: "Lato", sans-serif;
 }
 
 .btn-primary-light {
-  background-color: $primaryLight !important;
-  border: 1px solid $primaryLight !important;
-  color: $white !important;
+  background-color: $primaryLight;
+  border: 1px solid $primaryLight;
+  color: $white;
   min-width: 120px;
   border-radius: 3px;
   text-transform: none;
@@ -64,9 +64,9 @@ $primaryFont: "Lato", sans-serif;
 }
 
 .btn-primary-light:hover {
-  background-color: $primaryDark !important;
-  border-color: $primaryDark !important;
-  color: $white !important;
+  background-color: $primaryDark;
+  border-color: $primaryDark;
+  color: $white;
 }
 
 .btn-primary:hover {
