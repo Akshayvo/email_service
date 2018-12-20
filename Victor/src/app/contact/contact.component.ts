@@ -30,7 +30,7 @@ export class ContactComponent implements OnInit {
   places = [ 'Victor Self Storage - Mall', 'Victor Self Storage - Village' ];
   receiveremail: string;
   completeMessage: string;
-
+  placeName: any;
   valid = true;
   submited = true;
   head: any;
@@ -55,13 +55,13 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.sub = this.route.queryParams.subscribe(params => {
-      this.name = params['name'];
+      this.placeName = params['name'];
     });
-    if ( this.name === 'mall' ) {
+    if ( this.placeName === 'mall' ) {
       this.location = 'Victor Self Storage - Mall';
-    }  else if ( this.name === 'village' ) {
+    }  else if ( this.placeName === 'village' ) {
       this.location = 'Victor Self Storage - Village';
-    } else if (this.name === undefined ) {
+    } else if (this.placeName === undefined ) {
       this.location = ' ';
     }
     this.fetchContactDetails();
