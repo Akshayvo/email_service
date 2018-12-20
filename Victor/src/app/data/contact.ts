@@ -12,7 +12,6 @@ export const contactsVillage = [
     {
         label: 'Email:',
         data: 'info@victorselfstorage.com',
-        // data: 'neha.a@codeparva.in',
         class: 'fas fa-envelope-open mx-2 iconColor',
     },
 ];
@@ -52,7 +51,6 @@ export const contactsMall = [
     },
     {
         label: 'Email:',
-        // data: 'neha.a@codeparva.in',
         data: 'info@victorselfstorage.com',
         class: 'fas fa-envelope-open mx-2 iconColor',
     },

@@ -4,6 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
+import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -16,21 +17,21 @@ export class ContactComponent implements OnInit {
   contactsVillage: object;
   hoursMall: object;
   hoursVillage: object;
+  placeName: string;
 
   name: string;
-  placeName: string;
   email: any;
   phone: any;
   location: any;
-  message: any;
+  message: string;
   places = [ 'Victor Self Storage - Mall', 'Victor Self Storage - Village' ];
   receiveremail: string;
   completeMessage: string;
 
-  valid = true;
-  submited = true;
-  head: any;
-  flag: boolean;
+
+  contactForm: FormGroup;
+  submitted = false;
+  isSubmitted = false;
   private sub: any;
 
   constructor(
@@ -38,7 +39,8 @@ export class ContactComponent implements OnInit {
     private emailService: EmailService,
     private route: ActivatedRoute,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private formBuilder: FormBuilder
   ) {
     this.meta.addTag({
       name: 'description',
@@ -52,17 +54,33 @@ export class ContactComponent implements OnInit {
     this.sub = this.route.queryParams.subscribe(params => {
       this.placeName = params['name'];
     });
-    if ( this.placeName === 'mall' ) {
-      this.location = 'Victor Self Storage - Mall';
-    }  else if ( this.placeName === 'village' ) {
-      this.location = 'Victor Self Storage - Village';
-    } else if (this.placeName === undefined ) {
-      this.location = ' ';
-    }
+
     this.fetchContactDetails();
     this.fetchHours();
     this.window.scrollTo(0, 0);
+    this.contactForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      phone: ['', [Validators.required,
+                Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required],
+      location: ['', Validators.required]
+  });
+
+
+  if ( this.placeName === 'mall' ) {
+    this.contactForm.value.location = 'Victor Self Storage - Mall';
+  }  else if ( this.placeName === 'village' ) {
+    this.contactForm.value.location = 'Victor Self Storage - Village';
+  } else if (this.placeName === undefined ) {
+    this.contactForm.value.location = '';
   }
+
+  // console.log(this.placeName);
+  // console.log(this.contactForm.value.location);
+  }
+
+  get f() { return this.contactForm.controls; }
 
   public fetchContactDetails() {
     this.contactsMall = contactsMall;
@@ -74,109 +92,47 @@ export class ContactComponent implements OnInit {
     this.hoursVillage = hoursVillage;
   }
 
-  public validate(check: string, value: any, id: string, helpId: string) {
-    if (check === 'notNull') {
-      if (this.validateNull(value)) {
-        document.getElementById(id).style.borderColor = 'red';
-        document.getElementById(helpId).innerHTML = 'Please fill out this field';
-        return false;
-      } else {
-        document.getElementById(id).style.border = '1px solid #ced4da';
-        document.getElementById(helpId).innerHTML = '';
-        return true;
-      }
-    }
+onSubmit() {
+  this.submitted = true;
 
-    if (check === 'tel') {
-      if (this.validateNull(value)) {
-        document.getElementById(id).style.borderColor = 'red';
-        document.getElementById(helpId).innerHTML = 'Please fill out this field';
-        return false;
-      } else {
-        if (!this.validatePhone(value)) {
-          document.getElementById(id).style.borderColor = 'red';
-          document.getElementById(helpId).innerHTML = 'Please enter a valid phone number.';
-          return false;
-        } else {
-          document.getElementById(id).style.border = '1px solid #ced4da';
-          document.getElementById(helpId).innerHTML = '';
-          return true;
-        }
-      }
-    }
+ // stop here if form is invalid
+ if (this.contactForm.invalid) {
+     return;
+ } else {
+   this.isSubmitted = true;
 
-    if (check === 'email') {
-      if (this.validateNull(value)) {
-        document.getElementById(id).style.borderColor = 'red';
-        document.getElementById(helpId).innerHTML = 'Please fill out this field';
-        return false;
-        } else {
-        if (!this.validateEmail(value)) {
-          document.getElementById(id).style.borderColor = 'red';
-          document.getElementById(helpId).innerHTML = 'Please enter a valid email id';
-          return false;
-        } else {
-          document.getElementById(id).style.border = '1px solid #ced4da';
-          document.getElementById(helpId).innerHTML = '';
-          return true;
-        }
-      }
+   if (this.contactForm.value.location === 'Victor Self Storage - Mall') {
+    this.receiveremail = this.contactsMall[2].data;
+  } else if (this.contactForm.value.location === 'Victor Self Storage - Village') {
+    this.receiveremail = this.contactsVillage[2].data;
   }
+  this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
+                          <strong>Message:</strong> ${this.contactForm.value.message}`;
+
+       const body = {
+         name: this.contactForm.value.name,
+         email: this.contactForm.value.email,
+         receiveremail: this.receiveremail,
+         message: this.completeMessage,
+       };
+      //  console.log(body);
+       this.emailService.sendEmail(body)
+         .subscribe((response: any) => {
+           // console.log('Authentication response:', response);
+           if (response.result != null) {
+             alert(response.message);
+           } else {
+             // console.log(`response`, response.result);
+             alert(response.message);
+           }
+         }, (err) => {
+           console.log('Error :', err);
+         });
+       this.submitted = false;
+       // MailService(body);
+       this.contactForm.reset();
+ }
 }
-
-public formClear() {
-  this.name = '',
-  this.email = '',
-  this.message = '',
-  this.phone = '',
-  this.location = '';
-}
-
-
-  public formSubmit() {
-    if (this.validate('notNull', this.name, 'Name', 'nameHelp') &&
-        this.validate('tel', this.phone, 'Phone', 'telHelp') &&
-        this.validate('email', this.email, 'Email', 'emailHelp') &&
-        this.validate('notNull', this.location, 'Location', 'locationHelp') &&
-        this.validate('notNull', this.message, 'Message', 'messageHelp')
-         ) {
-
-          if (this.location === 'Victor Self Storage - Mall') {
-              this.receiveremail = this.contactsMall[2].data;
-            } else if (this.location === 'Victor Self Storage - Village') {
-              this.receiveremail = this.contactsVillage[2].data;
-            }
-
-          this.completeMessage = `<strong>Phone:</strong> ${this.phone}, <br/>
-                                 <strong>Message:</strong> ${this.message}`;
-
-          this.valid = true;
-          const body = {
-            name: this.name,
-            email: this.email,
-            receiveremail: this.receiveremail,
-            message: this.completeMessage,
-          };
-
-          this.emailService.sendEmail(body)
-            .subscribe((response: any) => {
-              // console.log('Authentication response:', response);
-              // if (response.result != null) {
-              //   alert(response.message);
-              // } else {
-              //   // console.log(`response`, response.result);
-              //   alert(response.message);
-              // }
-            }, (err) => {
-              // console.log('Error :', err);
-            });
-          this.submited = false;
-          // MailService(body);
-    } else {
-
-      this.valid = false;
-      }
-    }
 
   private validateEmail(value: string) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
