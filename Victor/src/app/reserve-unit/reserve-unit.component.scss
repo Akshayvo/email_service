@@ -1,3 +1,10 @@
+.contentHolder {
+  .container {
+    padding-top: 50px;
+    background-color: #f1f0ed;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .contentHolder {
     margin-right: auto;

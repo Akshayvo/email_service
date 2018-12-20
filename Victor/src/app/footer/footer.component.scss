@@ -8,4 +8,12 @@
   left: 0;
   right: 0;
   position: static;
+
+  .copyright-text {
+    text-align: left;
+  }
+
+  .copyright-image {
+    text-align: right;
+  }
 }
