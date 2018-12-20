@@ -50,7 +50,7 @@ export class ContactComponent implements OnInit {
     this.window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
-      phone: ['', Validators.required],
+      phone: ['', [Validators.required, Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required]
   });

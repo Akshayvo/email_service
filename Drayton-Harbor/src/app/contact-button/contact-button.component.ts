@@ -40,7 +40,7 @@ export class ContactButtonComponent implements OnInit {
     this.fetchsocialLinks();
     this.contactForm = this.formBuilder.group({
       nameCB: ['', Validators.required],
-      phoneCB: ['', Validators.required],
+      phoneCB: ['', [Validators.required, Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       emailCB: ['', [Validators.required, Validators.email]],
       messageCB: ['', Validators.required]
   });
