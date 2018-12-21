@@ -70,16 +70,19 @@ export const slideShow = [
     {
         class: `active`,
         id: `1`,
+        // tslint:disable-next-line:max-line-length
         path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-exterior-hero.jpg`,
         alt: `jumbotron1`
     },
     {
         id: `2`,
+        // tslint:disable-next-line:max-line-length
         path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-exterior.jpg`,
         alt: `jubotron2`,
     },
     {
         id: `3`,
+        // tslint:disable-next-line:max-line-length
         path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-outdoor-units.jpg`,
         alt: `jumbotron3`,
     }
