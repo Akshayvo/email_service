@@ -31,12 +31,11 @@ export const payment = [
                     data: `Have question about your account?`,
                 },
                 {
-                    data: `(518)382-0218`,
+                    data: `(360) 254-6464`,
                 },
                 {
-                    data: `ss@scotiastorage.com`
+                    data: `fortressministorage@gmail.com`
                 },
-            
         ],
     }
 ];

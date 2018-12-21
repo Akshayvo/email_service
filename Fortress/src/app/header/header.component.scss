@@ -21,8 +21,12 @@ a {
 
 .navbar-button {
     button:focus {
-        outline: 5px auto $primary !important;
+        outline: 1px auto $primary !important;
     }
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    border: 1px solid $primary !important;
 }
 
 

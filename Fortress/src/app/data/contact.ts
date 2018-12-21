@@ -8,9 +8,9 @@ export const contact = [
     {
         id: 1,
         redirect: 'mailto:fortressministorage@gmail.com',
-        label: 'Email',
-        // data: 'fortressministorage@gmail.com',
-        data: 'samuel.kingsport@syrasoft.com',
+        label: 'Email:',
+        data: 'fortressministorage@gmail.com',
+        // data: 'samuel.kingsport@syrasoft.com',
         // data: 'neha.a@codeparva.in',
         class: 'fas fa-envelope mx-2 iconColor',
     },
@@ -43,19 +43,9 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    // {
-    //     label: 'twitter',
-    //     path: 'https://twitter.com/Drayton-Harbor-SS',
-    //     class: 'fab fa-twitter-square',
-    // },
     {
         label: 'facebook',
         path: 'https://www.facebook.com/pages/Fortress-Mini-Storage/151273024914263',
         class: 'fab fa-facebook-square',
     },
-    // {
-    //     label: 'google plus',
-    //     path: '#',
-    //     class: 'fab fa-google-plus-square',
-    // },
 ];

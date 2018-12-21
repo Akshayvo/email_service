@@ -72,33 +72,35 @@ textarea::placeholder {
         font-size: 2.25rem !important;
         width:370px;
         text-align: center;
+        display: none;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .button-contact-us {
-        .btn-primary {
-            min-width: auto;
+@media only screen and (max-width: 767px) {
+    .content-Holder {
+        h2 {
+            display: block;
         }
+    }
+}
+
+// @media only screen and (min-width: 768px) and (max-width: 991px) {
+//         .btn-primary {
+//             width: 100px !important;
+//         }
+//         .btn-outline-primary {
+//             width: 100px !important;
+//         }
+// }
+
+@media only screen and (max-width: 345px) {
         .btn-outline-primary {
-            min-width: auto;
+            margin-top: 10px;
         }
-    }
 }
 
-@media only screen and (max-width: 437px) {
-    .button-contact-us {
-        .btn-primary {
-            min-width: auto;
-        }
-        .btn-outline-primary {
-            min-width: auto;
-        }
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .contact-top {
-        height: 40vh;
-    }
-}
+// @media only screen and (max-width: 600px) {
+//     .contact-top {
+//         height: 40vh;
+//     }
+// }

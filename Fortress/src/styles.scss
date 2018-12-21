@@ -58,15 +58,44 @@ $primaryFont: 'Lato', sans-serif;
     min-height: 94vh;
 }
 
+.btn {
+    width: 200px;
+}
+
 .btn-primary{
     background-color: $primary;
     border-color: $primary; 
     color: $shadow !important;
-    min-width: 200px;
     border-radius: 25px;
 }
 
-.btn-primary:hover {
+.btn-primary:active {
+    background-color: $primaryDark !important;
+    border-color: $primary !important; 
+} 
+
+.btn-outline-primary:active {
+    border-color: $primary !important ; 
+    background-color: $primaryDark !important;
+} 
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none !important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none !important;
+  }
+  
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+      box-shadow: none !important;
+  }
+
+.btn-outline-primary:hover {
     background-color: $primaryDark;
     border-color: $primaryDark;
     border-radius: 25px;
@@ -76,7 +105,6 @@ $primaryFont: 'Lato', sans-serif;
     background-color: transparent;
     border-color: $primary;
     border: 1px solid $primary;
-    min-width: 200px;
     color: $white !important;
     border-radius: 25px;
 } 
@@ -102,4 +130,10 @@ $primaryFont: 'Lato', sans-serif;
 
 .sectionImage{
     width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+    .btn {
+        width: 150px;
+    }
 }

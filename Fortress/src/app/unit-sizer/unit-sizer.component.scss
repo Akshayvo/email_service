@@ -20,6 +20,7 @@
         margin: auto;
         font-size: 2.25rem !important;
         text-align: center;
+        display: none;
     }
 }
 
@@ -101,6 +102,12 @@
 @media screen and (max-width: 767px) { 
     .disp {
         display: none;
+    }
+
+    .content-Holder {
+        h2 {
+            display: block;
+        }
     }
 
     .disp-mob {

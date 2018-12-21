@@ -4,11 +4,11 @@
 
 
 .storage-tips-top {
-    background: url(../../assets/images/storage-tips.jpeg);
+    background: url(../../assets/images/black-box-box-boxes.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: bottom; 
     height: 60vh;
 }
 
@@ -17,7 +17,7 @@
     .storage-left {
         color: $white;
         line-height: 2;
-    };
+    }
     h2 {
         //margin-block-end: 16px!important;
         color: $white;
@@ -25,6 +25,7 @@
         width:420px;
         margin: auto;
         font-size: 2.25rem !important;
+        display: none;
     }
 }
 
@@ -124,6 +125,13 @@
 //     }
 // }
 
+@media only screen and (max-width: 767px) {
+  .content-Holder {
+    h2 {
+      display: block;
+    }
+  }
+}
 
 @media only screen and (max-width: 480px) {
     .accordion-background {
