@@ -1,0 +1,168 @@
+
+<div class="">
+  
+<div id="myCarousel" class="carousel slide carousel-fade jumbotron-container myCarousel" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-3.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>
+
+  <!--Feature Box-->
+    <div class="container feature-block disp">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-6" *ngFor= "let feature of features">
+          <p class="text-center pt-5 f-block-img"> 
+            <img src="{{feature.data}}" class="f-img">
+          </p>
+          <p class="text-center pb-4 f-text">
+            {{feature.label}}
+          </p>
+        </div>
+      </div>
+    </div>
+  <!--Feature Box Ends Here-->
+
+  <!--Contact Mall-->
+  <div class="pb-5 pt-5 bg-light for-mall">    
+    <div class="container">
+      <div class="row">          
+        <div class="col-md-5">
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.456694096037!2d-77.45499368415007!3d43.0317839791476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d133e608f58345%3A0xe4b84336380bb2c!2s7607+Commons+Blvd%2C+Victor%2C+NY+14564!5e0!3m2!1sen!2sus!4v1540326915757" width="600" height="450" frameborder="0" style="border:1px solid #fff;" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4 pl-4 pt-3">
+          <h2>Victor Self Storage - Mall</h2>
+          <p> 
+            <span *ngFor="let contact of contactsMall">
+              <b>{{contact.label}}</b> {{contact.data}}<br>
+            </span>
+          </p>
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/mall/storageUnits']" [queryParams]="{ name:'mall', currentTab: 'Storage Units' }" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/mall/reserveUnit']" [queryParams]="{ name:'mall', currentTab: 'Reserve Unit' }" role="button"> Reserve Unit</a>                                  
+        </div>
+        <div class="col-md-3 contact-hours pt-3">
+            <h2>Hours:</h2>
+            <p>
+              <span *ngFor="let hour of hoursMall">
+                <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>
+            </p>
+        </div>
+      </div>
+    </div>      
+  </div>
+<!--Contact Mall Ends Here-->
+
+
+
+  <!--Contact Village-->
+  <div class="pb-5 pt-5 for-village">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11675.702373314978!2d-77.418952!3d42.979841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb582595e3f89c79!2sVictor+Self+Storage!5e0!3m2!1sen!2sus!4v1540326807113" width="600" height="450" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4  pl-4 pt-3">
+          <h2>Victor Self Storage - Village</h2>
+          <p> 
+            <span *ngFor="let contact of contactsVillage">
+              <b>{{contact.label}}</b> {{contact.data}}<br>
+            </span>
+          </p>
+           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/village/storageUnits']" [queryParams]="{ name:'village', currentTab: 'Storage Units' }" role="button">View Rates</a>            
+           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/village/reserveUnit']" [queryParams]="{ name:'village',  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                     
+        </div>
+        <div class="col-md-3 contact-hours pt-3">
+            <h2>Hours:</h2>
+            <p>
+              <span *ngFor="let hour of hoursVillage">
+                <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>
+            </p>
+        </div>
+      </div>
+    </div>  
+  </div>
+<!--Contact Village Ends Here-->
+
+
+
+
+
+
+
+
+
+<!--Testimonial-->
+  <div class="testimonial py-5">
+    <h1 class="text-center pt-3"> Testimonials </h1>
+<!--Carousel Wrapper-->
+  <div id="carousel-test" class="carousel slide carousel-fade" data-ride="carousel(stop)">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-test" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-test" data-slide-to="1"></li>
+        <li data-target="#carousel-test" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+      <!--Slides-->
+      <div class="container">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item  pb-5 active">
+            <p class="text-center mx-auto pt-4 pb-2">"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location. I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe, and there wasn't anyone around to help out if I had an issue. Victor Self Storage is an extremely good facility, yes, I'll say great. I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects, and I do recommend them every chance I get!"</p>
+            <p class="text-center mx-auto"> - Mary (Victor, New York) </p>
+          </div>
+          <div class="carousel-item pb-5">
+            <p class="text-center mx-auto pt-4 pb-2">"In my line of work, a quality storage facility is essential. I was looking for a clean, climate controlled area. I need the very best in regards to customer service, safety, and surroundings. Victor Self Storage provides all of that and more. The staff is FABULOUS and it is by far the best storage facility in the greater Rochester area!"</p>
+            <p class="text-center mx-auto"> - Mel (Victor, New York) </p>
+          </div>
+          <div class="carousel-item pb-5">
+            <p class="text-center mx-auto pt-4 pb-2">"I was looking for a secure climate controlled storage facility with 24/7 accessibility. I travel the New York Thruway every day, so location was important. Victor Self Storage is conveniently located and is by far one of the nicest storage facilities I have visited and used. I have run my business out of there for two years now and I have nothing but great things to say! Victor Self Storage is safe, secure, clean and accessible. Not much more you could ask for!"</p>
+            <p class="text-center mx-auto"> - Tom (Victor, New York) </p>
+            </div>
+        </div>
+      </div>
+      <!--/.Slides-->
+  </div>
+  <!--/.Carousel Wrapper-->
+</div>  
+<!--Testimonials Ends Here-->
+
+
+
+<!--Service-->
+  <div class="service">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 pt-2">
+            <h1  class="pb-4">Convenient, Customer Service Focused, Self Storage</h1>
+            <div *ngFor="let para of serviceOffered">
+              <p>{{ para.p }}</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-gate.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Service Ends Here-->
+
+
+</div>

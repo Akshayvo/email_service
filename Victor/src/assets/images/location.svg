@@ -1,0 +1,19 @@
+<svg id="if_location_1055034" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.132 71.132">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #268269;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_163" data-name="Group 163">
+    <circle id="Ellipse_20" data-name="Ellipse 20" class="cls-1" cx="35.566" cy="35.566" r="35.566"/>
+  </g>
+  <g id="Group_166" data-name="Group 166" transform="translate(16.672 13.337)">
+    <path id="Path_900" data-name="Path 900" class="cls-2" d="M33.894,12A18.784,18.784,0,0,0,15,30.672C15,47.01,33.894,58.68,33.894,58.68S52.789,47.3,52.789,30.672A18.784,18.784,0,0,0,33.894,12Zm0,26.675a8.892,8.892,0,1,1,8.892-8.892A8.892,8.892,0,0,1,33.894,38.675Z" transform="translate(-15 -12)"/>
+  </g>
+</svg>
