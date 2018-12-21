@@ -1,42 +1,35 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
+
 .currentActive {
-    border-bottom: 3px solid $light;
+  border-bottom: 3px solid $light;
 }
+
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
-#storage-tip-holder {
-    padding-top: 70px;
-    min-height: 86vh;
-    margin-bottom: 50px;
-    .storage-content {
-        padding: 64px;
-        background-color: $light;  
-        min-height: 644px;   
+
+.storage-tip-holder {
+  padding-top: 70px;
+  min-height: 86vh;
+  margin-bottom: 50px;
+
+  .storage-content {
+    padding: 64px;
+    background-color: $light;
+    min-height: 644px;
+
+    ul {
+      padding-left: 15px;
     }
+  }
 }
- // Sticky Buttons 
- .contact-button {
-    position:fixed; 
-    right:0px; 
-    top:12%; 
-    z-index: 16;
-  } 
+
 @media screen and (max-width: 600px) {
-    #storage-tip-holder {
-        padding-top: 60px;
-        .storage-content {
-        padding: 16px !important;
-        //height: auto;
-        }
+  .storage-tip-holder {
+    padding-top: 60px;
+
+    .storage-content {
+      padding: 16px;
     }
-    .contact-button {
-        position:fixed; 
-        right:0px; 
-        top:15%;
-        overflow: auto;
-        overflow-y: auto;
-        overflow-x: hidden; 
-        z-index: 16;
-      }
+  }
 }

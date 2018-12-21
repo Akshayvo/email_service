@@ -15,10 +15,6 @@ export const navLinks = [
         label: 'PAY RENT',
         path: 'payment'
     },
-    // {
-    //     label: 'STORAGE TIPS',
-    //     path: 'storageTips',
-    // },
     {
         label: 'CONTACT US',
         path: 'contact'

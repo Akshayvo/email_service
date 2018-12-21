@@ -7,98 +7,79 @@
       <div class="contact-data">
         <div class="row">
           <div class="col-md-7">
-            <form>
-                <div [hidden]="valid" class="alert alert-danger">
-                    Please fill out all the required fields!
-                 </div>
-                 <div [hidden]="submited" class="alert alert-success">
-                   Thank You for contacting us, We will get back to you soon.
-                 </div>
-                 <div class="row">
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="Name">Name</label>
-                          
-                          <input  type="text" 
-                                  name="Name" 
-                                  class="form-control" 
-                                  id="Name" 
-                                  placeholder="Enter Name*"
-                                  [(ngModel)]="name" 
-                                  required>
-                          
-                          <small id="nameHelp" class="form-text text-muted"></small>
-                        </div>
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                  <div [hidden]="" *ngIf="submitted && !this.contactForm.valid" class="alert alert-danger">
+                      Please fill out all the required fields!
                   </div>
-
-
+                  <div [hidden]="" *ngIf="isSubmitted" class="alert alert-success">
+                      Thank You for contacting us, We will get back to you soon.
+                  </div>
+              </div>
+              <div class="row">
                   <div class="col-md-6">
                       <div class="form-group">
-                          <label for="Phone">Phone number</label>
-                          
-                          <input  type="tel" 
-                                  name="Phone" 
-                                  class="form-control" 
-                                  id="Phone"
-                                  aria-describedby="telHelp" 
-                                  placeholder="Enter Phone Number*" 
-                                  [(ngModel)]="phone" 
-                                  required>
-                          
-                          <small id="telHelp" class="form-text text-muted"></small>
+                          <label>Name</label>
+                          <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" placeholder="Enter Name*"/>
+                          <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                              <small class="form-text text-muted" *ngIf="f.name.errors.required">Please fill out this field</small>
+                          </div>
                       </div>
                   </div>
-                 </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label>Phone Number</label>
+                          <input type="tel" formControlName="phone" placeholder="Enter Phone Number*" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
+                          <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                              <small class="form-text text-muted" *ngIf="f.phone.errors.required">Please fill out this field</small>
+                              <small class="form-text text-muted" *ngIf="f.phone.errors.pattern">Please enter valid number</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label>Email Address</label>
+                          <input type="text" formControlName="email" placeholder="Enter Email*" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                              <small class="form-text text-muted" *ngIf="f.email.errors.required">Please fill out this field</small>                                  
+                          </div>
+                          <div *ngIf="f.email.errors" >
+                              <small class="form-text text-muted" *ngIf="f.email.errors.email">Please enter a valid email</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label>Message</label>
+                  <textarea type="text" formControlName="message" placeholder="Enter Message*" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
+                  <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                      <small class="form-text text-muted" *ngIf="f.message.errors.required">Please fill out this field</small>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <button type="submit" class="btn btn-primary px-4 mx-1" style="float: right;">Send</button>
+                  <button type="button" class="btn btn-outline-primary mx-1 px-4" (click)="contactForm.reset()" style="float: right;">Clear</button>
 
-                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="Email">Email Address</label>
-                            <input 
-                                  type="email" 
-                                  name="Email" 
-                                  class="form-control" 
-                                  id="Email"
-                                  aria-describedby="emailHelp" 
-                                  placeholder="Enter Email*" 
-                                  [(ngModel)]="email" 
-                                  required>
-
-                            <small id="emailHelp" class="form-text text-muted"></small>
-                        </div>
-                    </div>
-                   </div>
-
-                   <div class="form-group">
-                      <label for="Message">Message</label>
-                      <textarea class="form-control" 
-                                name="message" 
-                                id="Message" 
-                                placeholder="Enter Message*" 
-                                [(ngModel)]="message" 
-                                required></textarea>
-                      <small id="messageHelp" class="form-text text-muted"></small>
-                   </div>
-                   <button type="submit" class="btn btn-primary px-4 mx-1" (click)="formSubmit()" style="float: right;">Send</button>
-                   <button type="button" class="btn btn-outline-primary mx-1 px-4" (click)="formClear()" style="float: right;">Clear</button>
-
-            </form>
+              </div>
+          </form>
           </div>
           
           <div class="col-md-5">
               <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4146.257235889596!2d-97.29052734279435!3d29.088764897349915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5fa42437a761f42!2sSecurity+Storage!5e0!3m2!1sen!2sus!4v1543607082908" width="100%" height="400px" frameborder="0" style="border:2px solid #fff;"  allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xJmTfBwxDYiUS0Qz149rohrcAy6nAHEv" width="100%" height="200px" frameborder="0" style="border:2px solid #fff;"  allowfullscreen></iframe>
               </div>
               <div class="contact-details pt-3">
-                <h2 class="py-1">Security Storage</h2>
+                <h2 class="py-1">Security STORAGE</h2>
                 <span *ngFor="let contact of contactInfo; let i = index">
                   <span>
                    <b>{{contact.label}}</b> {{contact.data}}<br>
                   </span>
                 </span>
-                <h3 class="py-1">Office:</h3>
+                <span><strong>Office:</strong> Monday- Friday 8:00am-3:00pm</span> <br>
                 <span *ngFor="let hour of hours">
-                  <b>{{hour.label}}</b> {{hour.data}}<br>
+                  {{hour.label}} {{hour.data}}<br>
                 </span>
               </div>
           </div>

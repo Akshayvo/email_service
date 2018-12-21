@@ -3,7 +3,7 @@ import { Component, OnInit , Inject} from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 
-import { contact, hours } from '../data/contact';
+import { contact, officeHours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs,
           gettingStarted, feature, blurbHeading, blurbText, slideShow } from '../data/home';
 
@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
   }
 
   public fetchHours() {
-    this.hours = hours;
+    this.hours = officeHours;
   }
 
   public fetchFeatures() {
@@ -81,9 +81,9 @@ export class HomeComponent implements OnInit {
 
   public fetchStaticContent() {
     this.aboutUs = aboutUs;
-    // this.serviceOffered = serviceOffered;
     this.gettingStarted = gettingStarted;
   }
+
   public fetchFeature () {
     this.feature = feature;
   }

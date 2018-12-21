@@ -1,10 +1,7 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 .gallery-content {
-  //padding: 64px !important;
-  //background-color: $light;
-  //margin-bottom: 50px;
-  #selectedImageM {
+  .selectedImageM {
     img {
       border: 2px solid $white;
     }
@@ -20,11 +17,6 @@
   .thumbnailsList {
     img {
       width: 78px;
-    }
-  }
-
-  #thumbnailsList {
-    img {
       box-shadow: none;
       border: 1px solid $white;
       margin-top: 5px;
@@ -43,26 +35,6 @@
     }
   }
 }
-
-// @media only screen and (max-width: 767px) and (min-width: 576px) {
-//   .gallery-content {
-//     .thumbnailsList {
-//       img {
-//         width: 90px;
-//       }
-//     }
-//   }
-// }
-
-// @media only screen and (max-width: 575px) {
-//   .gallery-content {
-//     .thumbnailsList {
-//       img {
-//         width: 90px;
-//       }
-//     }
-//   }
-// }
 
 @media only screen and (max-width: 767px) and (min-width: 576px) {
   .gallery-content {

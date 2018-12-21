@@ -1,7 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { WINDOW } from '@ng-toolkit/universal';
-import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, officeHours } from '../data/contact';
@@ -13,19 +12,17 @@ import { contact, officeHours } from '../data/contact';
 })
 export class ContactComponent implements OnInit {
 
-  // form: FormGroup;
-  breadcrumbActive: any = 'Contact Us';
-  currentActive: any = 'CONTACT US';
   hours: any;
   name: string;
   email: any;
   phone: any;
-  message: any;
+  message: string;
   contactInfo: any;
   receiveremail: string;
   completeMessage: string;
-  valid = true;
-  submited = true;
+  contactForm: FormGroup;
+  submitted = false;
+  isSubmitted = false;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -47,7 +44,17 @@ export class ContactComponent implements OnInit {
     this.fetchContactDetails();
     this.window.scrollTo(0, 0);
     this.fetchHours();
+    this.contactForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      phone: ['', [Validators.required,
+              Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required]
+  });
   }
+
+  get f() { return this.contactForm.controls; }
+
 
   public fetchContactDetails() {
     this.contactInfo = contact;
@@ -57,127 +64,40 @@ export class ContactComponent implements OnInit {
     this.hours = officeHours;
   }
 
-  public validate(check: string, value: any, id: string, helpId: string) {
-    if (check === 'notNull') {
-      if (this.validateNull(value)) {
-        document.getElementById(id).style.borderColor = 'red';
-        document.getElementById(helpId).innerHTML = 'Please fill out this field';
-        return false;
-      } else {
-        document.getElementById(id).style.border = '1px solid #ced4da';
-        document.getElementById(helpId).innerHTML = '';
-        return true;
-      }
-    }
+  onSubmit() {
+    this.submitted = true;
 
-    if (check === 'tel') {
-      if (this.validateNull(value)) {
-        document.getElementById(id).style.borderColor = 'red';
-        document.getElementById(helpId).innerHTML = 'Please fill out this field';
-        return false;
-      } else {
-        if (!this.validatePhone(value)) {
-          document.getElementById(id).style.borderColor = 'red';
-          document.getElementById(helpId).innerHTML = 'Please enter valid phone number.';
-          return false;
-        } else {
-          document.getElementById(id).style.border = '1px solid #ced4da';
-          document.getElementById(helpId).innerHTML = '';
-          return true;
-        }
-      }
-    }
+   // stop here if form is invalid
+   if (this.contactForm.invalid) {
+       return;
+   } else {
+     console.log(this.contactForm.value);
+     this.isSubmitted = true;
+     this.receiveremail = this.contactInfo[1].data;
 
-    if (check === 'email') {
-      if (this.validateNull(value)) {
-        document.getElementById(id).style.borderColor = 'red';
-        document.getElementById(helpId).innerHTML = 'Please fill out this field';
-        return false;
-        } else {
-        if (!this.validateEmail(value)) {
-          document.getElementById(id).style.borderColor = 'red';
-          document.getElementById(helpId).innerHTML = 'Please enter a valid email id';
-          return false;
-        } else {
-          document.getElementById(id).style.border = '1px solid #ced4da';
-          document.getElementById(helpId).innerHTML = '';
-          return true;
-        }
-      }
-  }
-}
+         this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
+                                message: ${this.contactForm.value.message}`;
 
-public formClear() {
-  this.name = '',
-  this.email = '',
-  this.message = '',
-  this.phone = '';
-}
-
-
-public formSubmit() {
-  if (this.validate('notNull', this.name, 'Name', 'nameHelp') &&
-      this.validate('tel', this.phone, 'Phone', 'telHelp') &&
-      this.validate('email', this.email, 'Email', 'emailHelp') &&
-      this.validate('notNull', this.message, 'Message', 'messageHelp')
-       ) {
-
-        this.receiveremail = this.contactInfo[1].data;
-
-        this.completeMessage = ` <strong> Phone: </strong> ${this.phone}, <br/>
-                                 <strong> Message: </strong> ${this.message}`;
-
-        this.valid = true;
-        const body = {
-          name: this.name,
-          email: this.email,
-          receiveremail: this.receiveremail,
-          message: this.completeMessage,
-        };
-
-        this.emailService.sendEmail(body)
-          .subscribe((response: any) => {
-            // console.log('Authentication response:', response);
-            if (response.result != null) {
-              // alert(response.message);
-            } else {
-              // console.log(`response`, response.result);
-              // alert(response.message);
-            }
-          }, (err) => {
-            console.log('Error :', err);
-          });
-        this.submited = false;
-        // MailService(body);
-  } else {
-
-    this.valid = false;
-    }
-  }
-
-  private validateEmail(value: string) {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
-      return (true);
-    }
-    return (false);
-  }
-
-  private validatePhone(value: string) {
-    const isValidNumber = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$/.test(value);
-    if (isValidNumber) {
-      return (true);
-    } else {
-      // alert('false');
-      return (false);
-    }
-  }
-
-  private validateNull(value: string) {
-    if (value === undefined || value === '') {
-      return (true);
-    }
-    console.log(value);
-    return (false);
-  }
+         const body = {
+           name: this.contactForm.value.name,
+           email: this.contactForm.value.email,
+           receiveremail: this.receiveremail,
+           message: this.completeMessage,
+         };
+         console.log(body);
+         this.emailService.sendEmail(body)
+           .subscribe((response: any) => {
+             if (response.result != null) {
+              //  alert(response.message);
+             } else {
+              //  alert(response.message);
+             }
+           }, (err) => {
+             console.log('Error :', err);
+           });
+         this.submitted = false;
+         this.contactForm.reset();
+   }
+ }
 
 }

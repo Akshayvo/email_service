@@ -1,8 +1,8 @@
 export const blurbHeading = `Affordable, Convenient Self Storage`;
 
 export const blurbText = `Our self storage units, warehouse space and office suites are second to none!
-                          We've been serving Cuero, DeWitt, Yorktown and surrounding communities with
-                          quality, affordable storage units, warehouse space and office suites since 1993!`;
+                        We've been serving the DeWitt County area and surrounding communities with quality,
+                        affordable storage units, warehouse space and office suites since 1993!`;
 
 export const featuresHead = 'The Only Self Storage in Greene County With All of The Following';
 
@@ -23,10 +23,6 @@ export const featuresList = [
         td1: 'Online Bill Pay',
         td2: 'Stellar Customer Service'
     },
-    // {
-    //     td1: 'Packing Material',
-    //     td2: 'Tenant Insurance'
-    // }
 ];
 
 export const feature = [
@@ -74,17 +70,17 @@ export const slideShow = [
     {
         class: `active`,
         id: `1`,
-        path: `../../assets/images/Security-Storage/carousel/security-storage-cuero-exterior-hero.jpg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-exterior-hero.jpg`,
         alt: `jumbotron1`
     },
     {
         id: `2`,
-        path: `../../assets/images/Security-Storage/carousel/security-storage-cuero-exterior.jpg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-exterior.jpg`,
         alt: `jubotron2`,
     },
     {
         id: `3`,
-        path: `../../assets/images/Security-Storage/carousel/security-storage-cuero-outdoor-units.jpg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-outdoor-units.jpg`,
         alt: `jumbotron3`,
     }
 ];

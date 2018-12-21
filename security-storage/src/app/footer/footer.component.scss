@@ -1,5 +1,15 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 .footer {
-    color: $shadow;
+  color: $shadow;
+
+  .copyright-text {
+    float: left;
+  }
+
+  .copyright-image {
+    a {
+      float: right;
+    }
+  }
 }

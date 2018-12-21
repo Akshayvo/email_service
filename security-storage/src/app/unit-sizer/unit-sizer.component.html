@@ -1,5 +1,5 @@
 
-<div id="unit-sizer-holder">
+<div class="unit-sizer-holder">
     <div class="container">
       <div class="heading pb-5">
         <h1 class="text-center pt-5">Unit Sizer</h1>
@@ -15,7 +15,7 @@
             <!--Main Row-->
               <div class="row">
                 <!--Left bar size of unit starts here-->
-                  <div class="col-md-2">
+                  <div class="col-md-2 px-0">
                     <!--For desktop and width more than 768-->
                     <div *ngFor="let unit of unitsizers" class="unit-dimention py-3 disp">
                      
@@ -40,7 +40,7 @@
                         </div>
       
                         <div class="col-4 mx-0 mt-auto px-0">
-                            <span class="" style="font-size: 1.4rem;">{{unitsizers[i].size}}</span>
+                            <span class="active-unit">{{unitsizers[i].size}}</span>
                         </div>
       
                         <div class="col-4 mt-auto">
@@ -79,14 +79,14 @@
                         <!--Image Carousel Ends Here-->
       
                         <!--Unit Sizer Data Row-->
-                        <div class="row justify-content-center mt-4 unit-data" style="width:100%; margin:auto">
+                        <div class="row justify-content-center mt-4 unit-data">
                           <!-- <div class="col-md-6">
                             <img src="{{unitsizers[i].photo}}" alt="" width="100%" height="auto">
                           </div> -->
                           <div class="col-12 col-md-8 col-lg-8 col align-self-center">
                             <h3>{{unitsizers[i].heading}}</h3>
                             <p class="pr-2 text-justify"> {{unitsizers[i].data}} </p>
-                            <ul style="display:inline-table; padding-left: 0px;">
+                            <ul class="pl-0">
                               <li *ngFor="let amenity of unitsizers[i]?.amenities"> {{amenity.content}} </li>
                             </ul>
                           </div>

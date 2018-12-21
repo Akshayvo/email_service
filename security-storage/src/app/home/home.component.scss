@@ -1,17 +1,13 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 //Common code
-* {
-  color: $fontColor;
-}
-
 .disp {
   display: block;
 }
 
 
 .jumbotron-top {
-  background: url(../../assets/images/Security-Storage/carousel/security-storage-cuero-exterior-hero.jpg);
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-exterior-hero.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +15,7 @@
 }
 
 .jumbotron-top1 {
-  background: url(../../assets/images/Security-Storage/carousel/security-storage-cuero-outdoor-units.jpg);
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-outdoor-units.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +23,7 @@
 }
 
 .jumbotron-top2 {
-  background: url(../../assets/images/Security-Storage/carousel/security-storage-cuero-exterior.jpg);
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-exterior.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,7 +35,6 @@
   .jumbotron-bottom {
     display: flex;
     align-items: center;
-    // padding-top: 2%;
     height: 20vh;
 
     .feature-text {
@@ -76,7 +71,7 @@
 // Get started Section
 
 .getStarted {
-  background: url(../../assets/images/Security-Storage/carousel/security-storage-cuero-outdoor-units.jpg) center top no-repeat fixed;
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-outdoor-units.jpg") center top no-repeat fixed;
   background-size: cover;
   background-position: top;
 
@@ -84,7 +79,6 @@
     left: 0;
     right: 0;
     top: 10;
-    // bottom: 0;
     background: rgba(238, 238, 238, 0.9);
     z-index: 9;
   }
@@ -106,12 +100,6 @@
       }
     }
   }
-
-  // .jumbotron-bottom {
-  //   p {
-  //     font-size: 1.2rem;
-  //   }
-  // }
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {

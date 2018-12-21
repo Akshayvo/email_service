@@ -1,46 +1,29 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
-.contentHolder{
-    padding-top: 100px;
-    min-height: 87vh;
-    margin-bottom: 50px;
-    .coming {
-        div {
-            height: 43rem; 
-            width: 100%; 
-            background: #efefef;
-            font-size: 2rem;
-            padding-top: 50%;
-        }
-    }
-    iframe {
-        overflow: hidden;
-        overflow-x: hidden !important; 
-    }
-}
+.contentHolder {
+  padding-top: 100px;
+  min-height: 87vh;
+  margin-bottom: 50px;
 
-  
-@media screen and (max-width: 767px) {
-    .coming {
-        div {
-            height: 5rem !important;
-            margin: 10px auto !important;   
-            padding-top: 3% !important;
-        }
-    }
+  iframe {
+    overflow: hidden;
+    overflow-x: hidden;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .contentHolder {
-        padding-top: 60px;
-    }
-    iframe {
-        overflow: hidden;
-        overflow-x: auto; 
-    }
-      img {
-        height: 200px;
-        width: 100%;
-    }
+  .contentHolder {
+    padding-top: 60px;
+  }
+
+  iframe {
+    overflow: hidden;
+    overflow-x: auto;
+  }
+
+  img {
+    height: 200px;
+    width: 100%;
+  }
 }
 

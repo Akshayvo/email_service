@@ -7,7 +7,7 @@ export const contact = [
     {
         label: 'Email:',
         // data: 'securitystorage@bizstx.rr.com',
-        data: 'jaya13194@gmail.com',
+        data: 'neha.a@codeparva.in',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
@@ -31,21 +31,21 @@ export const hours = [
 ];
 
 export const officeHours = [
-    {
-        label: 'Mon-Fri: ',
-        data: '8:00 am - 3:00 pm'
-    },
+    // {
+    //     label: 'Office: ',
+    //     data: 'Monday- Friday 8:00am-3:00pm'
+    // },
     // {
     //     label: 'Sat- Sun: ',
     //     data: 'Closed'
     // },
     {
-        label: 'Other: ',
-        data: 'After Hours by Appointment Only'
+        label: '24/7 ',
+        data: 'Drop Box'
     },
     {
-        label: 'Drop-box: ',
-        data: '24/7'
+        label: 'After Hours by Appointment Only ',
+        data: ''
     },
     {
         label: 'Facility: ',
