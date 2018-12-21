@@ -1,0 +1,70 @@
+@import '../../styles.scss';
+
+.content-Holder {
+    text-align: center;
+    h3 {
+        color: $fontColor;
+        font-weight: 600;
+    };
+    h5 {
+        color: $fontColor;
+        font-weight: 600;
+        font-size: 1.2em;
+    };
+    .storage-left {
+        color: $white;
+        font-weight: 600;
+        line-height: 2;
+    };
+    h2 {
+        //margin-block-end: 16px!important;
+        color: $white;
+        border-bottom: 1px solid $primary;
+        width:420px;
+        margin: auto;
+        font-size: 2.25rem !important;
+    }
+}
+
+.card {
+    border: none!important;
+    border-radius: 0px !important;
+}
+
+
+.card-header {
+    padding: 0px;
+    background-color: $secondary!important;
+    //color: $primary!important;
+    color: $white!important;
+    border-radius:0px!important;
+}
+.card-body {
+    padding: 20px 20px 20px 45px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: $fontColor;
+    background-color: $white;
+    margin: auto;
+}
+
+.card-header-before-collapse:after {
+    font-family: 'FontAwesome';  
+    content: "\f106";
+    float: right;
+    // font-size: 25px;
+}
+
+.collapsed:after {
+    content: "\f107";
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}

@@ -1,7 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { contact, socialLinks } from '../data/contact';
 import { navLinks } from '../data/nav';
+import { contact, socialLinks } from '../data/contact';
+
 
 @Component({
   selector: 'app-header',
@@ -9,24 +10,19 @@ import { navLinks } from '../data/nav';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
   contactDetails: any;
   navLinks: any;
   socialLinks: any;
-  @Input('currentActive') currentActive;
+  navbarCollapsed = true;
 
   constructor(
     private router: Router,
   ) { }
 
   ngOnInit() {
-    this.fetchContactDetails();
     this.fetchNavigationLinks();
     this.fetchSocialLinks();
-  }
-
-  public navigate (location) {
-    this.router.navigate([location]);
+    this.fetchContactDetails();
   }
 
   public fetchContactDetails() {
@@ -35,10 +31,21 @@ export class HeaderComponent implements OnInit {
 
   public fetchSocialLinks() {
     this.socialLinks = socialLinks;
+
   }
+
+
 
   public fetchNavigationLinks() {
     this.navLinks = navLinks;
+  }
+
+  public navigate (location: any) {
+    this.router.navigate([location]);
+  }
+
+  public onClick(menu: any) {
+    menu.classList.remove('show');
   }
 
 }

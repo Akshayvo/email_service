@@ -1,34 +1,16 @@
-<div class="fixed-top">
-  <app-header [currentActive]="currentActive"></app-header>
-</div>
-<app-breadcrumb [breadcrumbActive]="breadcrumbActive"></app-breadcrumb>
 
 <div class="contentHolder">
   <div class="container pb-5" style="padding-top: 190px;">
     <h1 class="py-4" >Storage Tips</h1>
     <div class="row accordion-background bg-light p-4">
       <div class="col-md-6">
-        <ul style="text-align: left"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li></ul>
+        <ul style="text-align: left;"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li></ul>
       </div>
       <div class="col-md-6" id="accordion">
-         <div class="card" style="text-align: left"  *ngFor="let storage of storageTipAccordion">
-            <div class="card-header noselect">
-              <div class="card-header-before-collapse collapsed p-3" style="cursor: pointer" data-toggle="collapse" [attr.data-target]="'#collapseOne'+storage?.id" aria-expanded="true">
-                {{storage.label}}                 
-              </div>
-            </div>
-          
-            <div [id]="'collapseOne'+storage?.id"  aria-labelledby="collapseOne" data-parent="#accordion" class="collapse" [ngClass]="storage?.id == 0 && 'show'">
-              <ul class="card-body">
-                <li *ngFor="let data of storage.data">
-                {{data.p}}
-              </li>
-              </ul>
-            </div>
-          </div>
+        <app-accordion></app-accordion>
       </div>
     </div>
   </div>
 </div>
 
-<app-footer></app-footer>
+
