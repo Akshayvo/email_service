@@ -6,8 +6,7 @@ export const contact = [
     },
     {
         label: 'Email:',
-        // data: 'securitystorage@bizstx.rr.com',
-        data: 'neha.a@codeparva.in',
+        data: 'securitystorage@bizstx.rr.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
