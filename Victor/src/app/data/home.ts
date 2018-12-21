@@ -1,3 +1,4 @@
+/* tslint:disable:max-line-length */
 export const featuresHead = [
     {
         label: 'Safe and Secure',
@@ -38,17 +39,14 @@ export const homeCarousel = [
         class: 'active',
         id: '1',
         label: 'slide-1',
-        // tslint:disable-next-line:max-line-length
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-1.jpg'
     },
     {
         label: 'slide-2',
-        // tslint:disable-next-line:max-line-length
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-2.jpg'
     },
     {
         label: 'slide-3',
-        // tslint:disable-next-line:max-line-length
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-3.jpg'
     }
 ];
@@ -56,20 +54,16 @@ export const homeCarousel = [
 export const testimonials = [
     {
         label: 'slide-1',
-        // tslint:disable-next-line:max-line-length
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-1.jpg'
     },
     {
         id: '2',
         label: 'slide-2',
-        // tslint:disable-next-line:max-line-length
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-2.jpg'
     },
     {
         id: '3',
         label: 'slide-3',
-        // tslint:disable-next-line:max-line-length
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-3.jpg'
     }
 ];
-

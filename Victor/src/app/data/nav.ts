@@ -6,13 +6,13 @@ export const navLinks = [
     {
         id: '1',
         label: 'Village Location',
-        path: '/location/village',
+        path: '/location/',
         name: 'village'
     },
     {
         id: '2',
         label: 'Mall Location',
-        path: '/location/mall',
+        path: '/location/',
         name: 'mall'
     },
     {

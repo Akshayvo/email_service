@@ -35,5 +35,4 @@ export class HeaderComponent implements OnInit {
   public onClick(menu: any) {
     menu.classList.remove('show');
   }
-
 }
