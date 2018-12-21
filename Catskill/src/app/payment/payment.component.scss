@@ -10,6 +10,16 @@
     h1 {
         margin-block-end: 16px!important;
     }
+
+    .scroll-wrapper {
+        -webkit-overflow-scrolling: touch;
+        overflow: auto;
+
+        iframe {
+            width: 100%;
+            overflow: auto;
+        }
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -29,5 +39,17 @@
     }
     iframe {
         height: 500px!important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .scroll-wrapper {
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll;
+
+        iframe {
+            width: 100%;
+            overflow: scroll;
+        }
     }
 }

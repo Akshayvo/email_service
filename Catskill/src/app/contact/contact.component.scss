@@ -12,6 +12,11 @@
     margin-left: 10px;
 }
 
+.contact-links {
+  a {
+    color: black;
+  }
+}
 
 .contentHolder{
     h1 {
@@ -27,6 +32,14 @@
         min-width: 140px !important;
     }
 }
+ 
+input::placeholder {
+    font-size: 0.875rem;
+}
+
+textarea::placeholder {
+    font-size: 0.8rem;
+}
 
 @media screen and (max-width: 900px) {
     .padding-none {
@@ -38,5 +51,16 @@
     }
     .margin-bottom {
         margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-butoon {
+        .btn-primary {
+            min-width: 100% !important;
+        }
+        .btn-outline-primary {
+            min-width: 100% !important;
+        }
     }
 }

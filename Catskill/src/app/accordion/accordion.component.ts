@@ -19,5 +19,4 @@ export class AccordionComponent implements OnInit {
   public fetchStorageTipAccordion() {
     this.storageTipAccordion = storageTipAccordion;
   }
-
 }

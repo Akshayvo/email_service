@@ -1,7 +1,7 @@
 @import '../../styles.scss';
   
 .jumbotron {
-  background: url(../../assets/images/catskill-hero.jpg);
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/catskill-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,7 +11,12 @@
   overflow: hidden;
   border-radius: 0px;
  }
- 
+
+ .contact-links {
+  a {
+    color: black;
+  }
+}
  .jumbotron-small-device {
    display: none;
  }

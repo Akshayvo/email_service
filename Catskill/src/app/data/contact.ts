@@ -1,15 +1,20 @@
 export const contact = [
     {
+        id: 0,
         label: 'Address:',
         data: '5877 Cauterskill Road Catskill, NY 12414',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
+        id: 1,
+        redirect: 'mailto:catskillselfstorage@gmail.com',
         label: 'Email:',
         data: 'catskillselfstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
+        id: 2,
+        redirect: 'tel:5189433003',
         label: 'Phone:',
         data: '518-943-3003',
         class: 'fas fa-phone mx-2 iconColor',

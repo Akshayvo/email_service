@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-const service_id = 'mailgun';
-const template_id = 'template_zUfc6JL6';
-const user_id = 'user_3w3aBFetBCiOCRkClF9SN';
+// const service_id = 'mailgun';
+// const template_id = 'template_zUfc6JL6';
+// const user_id = 'user_3w3aBFetBCiOCRkClF9SN';
 
 @Injectable({
   providedIn: 'root'
@@ -16,27 +16,11 @@ export class EmailService {
   }
 
   public sendEmail(data: any) {
-
-    // const data = {
-    //   service_id: service_id,
-    //   template_id: template_id,
-    //   user_id: user_id,
-    //   template_params: {
-    //     'from_name': content.name,
-    //     'email': content.email,
-    //     'subject': content.subject,
-    //     'message_html': content.message
-    //     // 'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
-    //   }
-    // };
-
-    // return this.http.post(`https://api.emailjs.com/api/v1.0/email/send`, data);
-
     const cont = {
       contents: {
         name: data.name,
         senderEmail: data.email,
-        receiverEmail: data.receiverEmail,
+        receiverEmail: data.receiveremail,
         subject: data.subject,
         message: data.message,
         customTemplate: ''
@@ -44,5 +28,6 @@ export class EmailService {
     };
 
     return this.http.post(`https://emailsvc-ext.syrasoft.com/v1/email`, cont);
+
   }
 }
