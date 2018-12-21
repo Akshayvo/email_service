@@ -18,7 +18,6 @@ export class HomeComponent implements OnInit {
   hoursMall: any;
   features: any;
   serviceOffered: any;
-  carousel: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -41,7 +40,6 @@ export class HomeComponent implements OnInit {
     this.fetchHours();
     this.fetchStaticContent();
     this.fetchFeatureHead();
-    this.carouselData();
     this.window.scrollTo(0, 0);
   }
 
@@ -62,10 +60,6 @@ export class HomeComponent implements OnInit {
 
   public fetchStaticContent() {
     this.serviceOffered = serviceOffered;
-  }
-
-  public carouselData() {
-    this.carousel = homeCarousel;
   }
 
 }

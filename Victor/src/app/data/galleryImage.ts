@@ -1,48 +1,86 @@
 export const galleryvillage = [
-    { url: '../../assets/images/SlideShow/victor-self-storage-access.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-alarm.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-clean-and-bright.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-climate-control.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-drive-up-access.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-easy-lift-doors.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-fire-alarms.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-full-perimeter-fence.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-full-time-on-site-staff.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-gate.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-large-units.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-locks.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-medium-units.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-oversized-units.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-pest-and-rodent-control.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-retail-store.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-security.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-smaller-units.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-well-lit.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-access.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-alarm.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-clean-and-bright.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-climate-control.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-drive-up-access.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-easy-lift-doors.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-fire-alarms.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-full-perimeter-fence.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-full-time-on-site-staff.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-gate.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-large-units.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-locks.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-medium-units.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-oversized-units.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-pest-and-rodent-control.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-retail-store.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-security.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-smaller-units.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-well-lit.jpg'},
 ];
 
 export const galleryMall = [
-    { url: '../../assets/images/mall/victor-self-storage-mall.png'},
-    { url: '../../assets/images/mall/victor-self-storage-night.png'},
-    { url: '../../assets/images/mall/victor-self-storage-units.png'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-access.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-alarm.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-clean-and-bright.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-climate-control.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-drive-up-access.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-easy-lift-doors.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-fire-alarms.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-full-perimeter-fence.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-full-time-on-site-staff.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-gate.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-large-units.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-locks.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-medium-units.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-oversized-units.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-pest-and-rodent-control.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-retail-store.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-security.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-smaller-units.jpg'},
-    { url: '../../assets/images/SlideShow/victor-self-storage-well-lit.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-mall.png'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-night.png'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-units.png'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-access.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-alarm.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-clean-and-bright.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-climate-control.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-drive-up-access.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-easy-lift-doors.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-fire-alarms.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-full-perimeter-fence.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-full-time-on-site-staff.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-gate.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-large-units.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-locks.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-medium-units.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-oversized-units.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-pest-and-rodent-control.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-retail-store.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-security.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-smaller-units.jpg'},
+    // tslint:disable-next-line:max-line-length
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-well-lit.jpg'},
 ];
 
 

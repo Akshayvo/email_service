@@ -24,8 +24,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Phone Number</label>
@@ -56,8 +54,7 @@
                         <label for="location">Location</label>
                           <select 
                                 name="location"
-                                formControlName="location" 
-                                id="Location" 
+                                formControlName="location"  
                                 class="form-control"
                                 required>
                             <option *ngFor='let place of places' [value]="place">{{place}}</option>

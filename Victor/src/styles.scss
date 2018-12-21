@@ -63,13 +63,17 @@ $primaryFont: "Lato", sans-serif;
   box-shadow: none;
 }
 
-.btn-primary-light:hover {
+.btn-primary-light:hover,
+.btn-primary-light:focus,
+.btn-primary-light:active {
   background-color: $primaryDark;
   border-color: $primaryDark;
   color: $white;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
   background-color: $primaryDark !important;
   border-color: $primaryDark !important;
   color: $white !important;
@@ -85,7 +89,9 @@ $primaryFont: "Lato", sans-serif;
   box-shadow: none;
 }
 
-.btn-outline-primary:hover {
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
   background-color: $primaryDark !important;
   border-color: $primaryDark !important;
   color: $white !important;

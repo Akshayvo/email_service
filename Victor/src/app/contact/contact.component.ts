@@ -72,12 +72,7 @@ export class ContactComponent implements OnInit {
     this.contactForm.value.location = 'Victor Self Storage - Mall';
   }  else if ( this.placeName === 'village' ) {
     this.contactForm.value.location = 'Victor Self Storage - Village';
-  } else if (this.placeName === undefined ) {
-    this.contactForm.value.location = '';
   }
-
-  // console.log(this.placeName);
-  // console.log(this.contactForm.value.location);
   }
 
   get f() { return this.contactForm.controls; }
@@ -115,21 +110,17 @@ onSubmit() {
          receiveremail: this.receiveremail,
          message: this.completeMessage,
        };
-      //  console.log(body);
        this.emailService.sendEmail(body)
          .subscribe((response: any) => {
-           // console.log('Authentication response:', response);
            if (response.result != null) {
-             alert(response.message);
+            //  alert(response.message);
            } else {
-             // console.log(`response`, response.result);
-             alert(response.message);
+            //  alert(response.message);
            }
          }, (err) => {
            console.log('Error :', err);
          });
        this.submitted = false;
-       // MailService(body);
        this.contactForm.reset();
  }
 }

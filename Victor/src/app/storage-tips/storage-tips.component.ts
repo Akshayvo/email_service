@@ -29,10 +29,6 @@ export class StorageTipsComponent implements OnInit {
     this.window.scrollTo(0, 0);
   }
 
-
-  /**
-   * fetchstoragePoints
-   */
   public fetchstoragePoints() {
     this.storagePoints = storagePoints;
   }

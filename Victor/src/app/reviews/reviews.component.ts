@@ -11,21 +11,13 @@ export class ReviewsComponent implements OnInit {
   name: any;
   currentActiveTab: any = 'Reviews';
   reviews: any;
-  private sub: any;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.sub = this.route.queryParams.subscribe(params => {
-      this.name = params['name'];
-    });
     this.fetchreviews();
   }
 
-
-  /**
-   * fetchreviews
-   */
   public fetchreviews() {
     this.reviews = reviewVillage;
   }
