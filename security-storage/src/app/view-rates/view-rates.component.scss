@@ -5,9 +5,14 @@
   min-height: 87vh;
   margin-bottom: 50px;
 
-  iframe {
-    overflow: hidden;
-    overflow-x: hidden;
+  .scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+
+    iframe {
+      width: 100%;
+      overflow: auto;
+    }
   }
 }
 
@@ -16,9 +21,14 @@
     padding-top: 60px;
   }
 
-  iframe {
-    overflow: hidden;
-    overflow-x: auto;
+  .scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+
+    iframe {
+      width: 100%;
+      overflow: scroll;
+    }
   }
 
   img {
