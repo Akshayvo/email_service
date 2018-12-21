@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: http://www.example.com/sitemap.xml
+Sitemap: http://www.securitystoragecuero.com/sitemap.xml
 User-agent: *
 Disallow:
