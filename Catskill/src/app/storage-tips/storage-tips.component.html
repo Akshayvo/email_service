@@ -1,10 +1,10 @@
 
 <div class="contentHolder">
-  <div class="container pb-5" style="padding-top: 190px;">
+  <div class="container pb-5 padding-top">
     <h1 class="py-4" >Storage Tips</h1>
-    <div class="row accordion-background bg-light p-4">
+    <div class="row accordion-background bg-light">
       <div class="col-md-6">
-        <ul style="text-align: left;"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li></ul>
+        <ul><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li></ul>
       </div>
       <div class="col-md-6" id="accordion">
         <app-accordion></app-accordion>

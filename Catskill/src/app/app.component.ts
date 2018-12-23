@@ -1,7 +1,7 @@
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
-import { filter, map, mergeMap } from 'rxjs/operators';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',

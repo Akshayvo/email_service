@@ -11,7 +11,6 @@ export class StorageTipsComponent implements OnInit {
 
   storageTip: any;
   storageTipAccordion: any;
-  breadcrumbActive: any = 'Storage Tips';
   currentActive: any = 'STORAGE TIPS';
 
   constructor(

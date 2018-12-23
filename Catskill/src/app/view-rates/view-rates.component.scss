@@ -1,48 +1,52 @@
-@import '../../styles.scss';
-
-.text-align {
-    text-align: center; 
-}
+@import "../../styles.scss";
 
 .view-rate-heading {
-    display: none;
+  display: none;
 }
 
-.contentHolder{
-    h1 {
-        margin-block-end: 16px!important;
-    }
+.contentHolder {
+  h1 {
+    margin-block-end: 16px;
+  }
 
-    .scroll-wrapper {
-        -webkit-overflow-scrolling: touch;
-        overflow: auto;
+  .scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
 
-        iframe {
-            width: 100%;
-            overflow: auto;
-        }
+    iframe {
+      width: 100%;
+      overflow: auto;
+      max-width: 100%;
     }
+  }
 }
 
-@media screen and (max-width: 480px) {
-    h1 {
-        display: none;
-    }
-    .view-rate-heading {
-        display: block;
-        text-align: center;
-        padding: 0px 0px 15px 0px;;
-    }
+.padding-top {
+  padding-top: 125px;
+}
+
+.background-padding {
+  padding: 24px;
 }
 
 @media only screen and (max-width: 600px) {
-    .scroll-wrapper {
-        -webkit-overflow-scrolling: touch;
-        overflow-x: scroll;
+  .scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
 
-        iframe {
-            width: 100%;
-            overflow: scroll;
-        }
+    iframe {
+      width: 100%;
+      overflow: scroll;
     }
+  }
+
+  .background-padding {
+    padding: 24px 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .padding-top {
+    padding-top: 80px;
+  }
 }

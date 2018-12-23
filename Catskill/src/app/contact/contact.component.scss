@@ -1,15 +1,19 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
+
+.padding-top {
+  padding-top: 125px;
+}
 
 .btn-outline-primary {
-    color: $primary!important;
+  color: $primary !important;
 }
 
 .btn-outline-primary:hover {
-    color: $white!important;
+  color: $white !important;
 }
 
 .btn-primary {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .contact-links {
@@ -18,49 +22,55 @@
   }
 }
 
-.contentHolder{
-    h1 {
-        margin-block-end: 16px!important;
-    }
+.contact-map {
+  border: 2px solid white;
 }
 
-.contact-butoon {
-    .btn-primary {
-        min-width: 140px !important;
-    }
-    .btn-outline-primary {
-        min-width: 140px !important;
-    }
+.contentHolder {
+  h1 {
+    margin-block-end: 16px;
+    text-align: center;
+  }
 }
- 
+
+
+.contact-butoon {
+  .btn-primary {
+    min-width: 140px;
+  }
+
+  .btn-outline-primary {
+    min-width: 140px;
+  }
+
+  button {
+    float: right;
+  }
+}
+
 input::placeholder {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }
 
 textarea::placeholder {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
-@media screen and (max-width: 900px) {
-    .padding-none {
-        padding: 0px!important;
-        background: $white!important;
-    }
-    h1 {
-        display:none!important;
-    }
-    .margin-bottom {
-        margin-bottom: 10px;
-    }
-}
 
 @media only screen and (max-width: 600px) {
-    .contact-butoon {
-        .btn-primary {
-            min-width: 100% !important;
-        }
-        .btn-outline-primary {
-            min-width: 100% !important;
-        }
+  .contact-butoon {
+    .btn-primary {
+      min-width: 100%;
     }
+
+    .btn-outline-primary {
+      min-width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .padding-top {
+    padding-top: 80px;
+  }
 }

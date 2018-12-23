@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import '../../styles.scss';
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "../../styles.scss";
 
 a {
   cursor: pointer;
 }
 
 .iconColor {
-  color: $primary !important;
+  color: $primary;
 }
 
 .contact-header {
@@ -21,11 +21,13 @@ a {
 }
 
 .social {
-  text-align: right !important;
-
   a {
     color: $white;
     text-decoration: none;
+  }
+
+  i {
+    font-size: 1.2rem;
   }
 }
 
@@ -36,38 +38,38 @@ a {
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
-  button:focus {
-    outline: 5px auto $white;
+  .nav-link {
+    color: $white;
+    font-weight: 600;
+    padding: 21px;
   }
-}
 
-.nav-link {
-  color: $white !important;
-  font-weight: 600;
-  padding: 21px;
-}
+  .nav-link:hover {
+    color: $primary;
+  }
 
-.nav-link:hover {
-  color: $primary !important;
-}
+  .nav-link-active {
+    color: $primary;
+    border-bottom: 5px solid $primary;
+  }
 
-.router-link-active {
-  color: $primary !important;
-  border-bottom: 5px solid $primary;
-}
+  button {
+    border-color: $white;
 
-.nav-link-active {
-  color: $primary !important;
-  border-bottom: 5px solid $primary;
+    .iconColor {
+      color: $white;
+    }
+  }
+
+  button:focus {
+    outline: 5px auto $primary;
+  }
 }
 
 .display {
   display: block;
 }
 
-.navbar-toggler:focus, .navbar-toggler:hover {
-  border: 1px solid $primary !important;
-}
 
 @media screen and (max-width: 991px) {
   .display {

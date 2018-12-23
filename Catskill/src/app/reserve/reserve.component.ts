@@ -8,7 +8,6 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class ReserveComponent implements OnInit {
 
-  breadcrumbActive: any = 'Reserve Unit';
   currentActive: any = 'RESERVE';
 
   constructor(

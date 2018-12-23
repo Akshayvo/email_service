@@ -8,7 +8,6 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class ViewRatesComponent implements OnInit {
 
-  breadcrumbActive: any = 'View Rates';
   currentActive: any = 'VIEW RATES';
 
   constructor(

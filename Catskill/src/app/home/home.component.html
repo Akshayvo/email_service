@@ -1,106 +1,97 @@
   
 <div class="">
-    <div class="jumbotron-container">
-     <div class="jumbotron-top">
-      <div class="jumbotron px-0 m-0">
-          <div class="bg-translucent jumbotron-small-device">
-            <div class="container">
-              <div class="col-md-12 padding-none">
-                <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-                <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Unit</a>
-              </div>
-            </div>
+  <div class="jumbotron-container">
+    <div class="jumbotron-top">
+    <div class="jumbotron px-0 m-0">
+      <div class="bg-translucent jumbotorn-skew-style">
+      </div>
+      <div class="container">
+        <div class="jumbotorn-skew-text">
+          <div class="disp">
+            <h2  class="my-4">
+              Convenient & Affordable
+            </h2>
+            <p class="text-justify">With affordable truck rentals, drive-up access, temperature - controlled storage units, and top notch customer service, Catskill Self Storage has your storage unit needs covered! Contact us today to get started!</p>
           </div>
-     
-        <div class="bg-translucent jumbotorn-skew-style">
-        </div>
-        <div class="container">
-          <div class="jumbotorn-skew-text">
-            <div class="disp">
-              <h2 style="font-weight: 600; font-size: 2.5em;" class="my-4">
-                Convenient & Affordable
-              </h2>
-              <p class="text-justify">With affordable truck rentals, drive-up access, temperature - controlled storage units, and top notch customer service, Catskill Self Storage has your storage unit needs covered! Contact us today to get started!</p>
-            </div>
-            <div class="button-override-padding-left">
-              <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-              <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Unit</a></div>
-            </div>
-          </div>
-        </div>
-       </div>
-      <div class="jumbotron-bottom">
-        <div class="container">
-          <div class="feature row">
-            <div class="col-md-3 col-3 p-4 override-padding-x-axis" style="text-align: center" *ngFor="let feature of feature">
-              <img [src]="feature?.path" style="padding: 10px" alt="" />
-                <h6 class="feature-text">{{feature.label}}</h6>
-            </div>
+          <div class="jumbotorn-button">
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Unit</a></div>
           </div>
         </div>
       </div>
-     </div>
-
-
-  <div class="bg-light">
-    <div class="container py-4">
-      <div class="section py-4 m-0">
-        <div class="row">
-          <div class="col-lg-6 py-3 home-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11812.741403016997!2d-73.9069651!3d42.2532142!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f78849841f11072!2sCatskill+Self+Storage!5e0!3m2!1sen!2sus!4v1541375613193" style="border:2px solid white" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
+      </div>
+    <div class="jumbotron-bottom">
+      <div class="container">
+        <div class="feature row">
+          <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
+            <img [src]="feature?.path" alt="" />
+              <h6 class="feature-text">{{feature.label}}</h6>
           </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
-          <div class="col-lg-6 py-3">
-            <div class="mb-4">
-             
-              <p>
-                <span *ngFor="let contact of contactDetails">
-                  <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></span>
-                  <ng-template #other_content>{{contact.data}}</ng-template><br>
-                </span>
-              </p>
-              <b>Hours:</b>
-              <p>
-                <span *ngFor="let hour of hours">
-                  <b>{{hour.label}}</b>{{hour.data}}<br>
-                </span>
-              </p>
-            </div>
-            <div>
-              <app-tables [tBody]="featuresList"></app-tables>
-            </div>
+
+<div class="bg-light">
+  <div class="container py-4">
+    <div class="section py-4 m-0">
+      <div class="row">
+        <div class="col-lg-6 py-3 home-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11812.741403016997!2d-73.9069651!3d42.2532142!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f78849841f11072!2sCatskill+Self+Storage!5e0!3m2!1sen!2sus!4v1541375613193" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
+        </div>
+
+        <div class="col-lg-6 py-3">
+          <div class="mb-4">
+            
+            <p>
+              <span *ngFor="let contact of contactDetails">
+                <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></span>
+                <ng-template #other_content>{{contact.data}}</ng-template><br>
+              </span>
+            </p>
+            <b>Hours:</b>
+            <p>
+              <span *ngFor="let hour of hours">
+                <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>
+            </p>
+          </div>
+          <div>
+            <app-tables [tBody]="featuresList"></app-tables>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="container">
+  <div class="section py-5 m-0">
+    <div class="row">
+      <div class="col-lg-6 py-3">
+        <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/self-storage-units.jpg" width="100%" height="100%" alt="storage unit picture" class="sectionImage">
+      </div>
+      <div class="col-lg-6 py-3">
+        <h1 class="heading pb-4">Affordable Storage Near Catskill, NY</h1>
+        <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="getStarted bg-light">
   <div class="container">
     <div class="section py-5 m-0">
       <div class="row">
-        <div class="col-lg-6 py-3">
-          <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/self-storage-units.jpg" width="100%" height="100%" alt="storage unit picture" class="sectionImage">
-        </div>
-        <div class="col-lg-6 py-3">
-          <h1 class="heading pb-4">Affordable Storage Near Catskill, NY</h1>
-          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+        <div class="col-md-12 py-3">
+          <h2 class="heading pb-4">Get Started</h2>
+          <p class="pb-4">{{gettingStarted}}</p>
+          <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Unit Now!</a>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="getStarted bg-light">
-    <div class="container py-5">
-      <div class="section py-5 m-0">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="heading pb-4" style="font-size: 2.25rem;">Get Started</h2>
-            <p class="pb-4">{{gettingStarted}}</p>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Unit Now!</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 
 </div> 
 
