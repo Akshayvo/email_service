@@ -10,8 +10,6 @@ export const contact = [
         redirect: 'mailto:fortressministorage@gmail.com',
         label: 'Email:',
         data: 'fortressministorage@gmail.com',
-        // data: 'samuel.kingsport@syrasoft.com',
-        // data: 'neha.a@codeparva.in',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {

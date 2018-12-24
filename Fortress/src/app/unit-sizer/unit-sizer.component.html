@@ -1,15 +1,14 @@
 <div class="unit-sizer-top">
-    <div class="bg-translucent">
-        <div class="container jumbotorn-top" style="text-align: center; padding: 0% 8%">
-          <h1 class="pb-4">Selecting the Right Storage Unit For You</h1>
-          <p>Sometimes visualizing how much space your belongings take up isn't enough to select the right self storage unit. Use our handy unit sizer to help you determine the right unit for your needs!</p>      
-        </div>
+  <div class="bg-translucent">
+    <div class="container jumbotorn-top text-center">
+      <h1 class="pb-4">Selecting the Right Storage Unit For You</h1>
+      <p>Sometimes visualizing how much space your belongings take up isn't enough to select the right self storage unit. Use our handy unit sizer to help you determine the right unit for your needs!</p>      
     </div>
   </div>
+</div>
 
 <div class=" content-Holder bg-dark-background py-5">
   <div class="container py-5">
-    <!-- <p class="py-4 text-center">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
     <!--Unit Sizer Box Layout-->
     <h2 class="pb-3">Unit Sizer</h2>
     <div class="unit-sizer-container content-margin-top">
@@ -81,14 +80,11 @@
                   <!--Image Carousel Ends Here-->
 
                   <!--Unit Sizer Data Row-->
-                  <div class="row justify-content-center mt-4 unit-data" style="width:100%; margin:auto">
-                    <!-- <div class="col-md-6">
-                      <img src="{{unitsizers[i].photo}}" alt="" width="100%" height="auto">
-                    </div> -->
+                  <div class="row justify-content-center mt-4 unit-data">
                     <div class="col-12 col-md-8 col-lg-8 col align-self-center">
                       <h3>{{unitsizers[i].heading}}</h3>
                       <p class="pr-2 text-justify"> {{unitsizers[i].data}} </p>
-                      <ul style="display:inline-table; padding-left: 0px;">
+                      <ul>
                         <li *ngFor="let amenity of unitsizers[i]?.amenities"> {{amenity.content}} </li>
                       </ul>
                     </div>

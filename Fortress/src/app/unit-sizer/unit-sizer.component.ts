@@ -15,10 +15,8 @@ export class UnitSizerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.i = 0;
-    this.h = 3;
-    this.j = this.i + 1;
     this.fetchUnitSizer();
+    this.unitSizer(3, 0, 4);
     window.scrollTo(0, 0);
   }
 
@@ -30,37 +28,42 @@ export class UnitSizerComponent implements OnInit {
     this.unitsizers = unitSizer;
   }
 
-  public moveLeft() {
-    this.j = this.i;
-    this.i = this.h;
-    if ( this.h === 0 ) {
-      this.h = 3;
+  public unitSizer(h: number, i: number, j: number) {
+    i = 0;
+    h = 3;
+    j = i + 1;
+  }
+
+  public moveLeft(h: number, i: number, j: number) {
+    j = i;
+    i = h;
+    if ( h === 0 ) {
+      h = 3;
     } else {
-      this.h = this.h - 1;
+      h = h - 1;
     }
   }
 
-  public moveRight() {
-    this.h = this.i;
-    this.i = this.j;
-    if ( this.j === 3 ) {
-      this.j = 0;
+  public moveRight(h: number, i: number, j: number) {
+    h = i;
+    i = j;
+    if ( j === 3 ) {
+      j = 0;
     } else {
-    this.j = this.j + 1;
+    j = j + 1;
     }
   }
 
-  public activeUnit(unitId: number) {
-    this.i = unitId;
-    if ( this.i === 0 ) {
-      this.h = 3;
-      this.j = this.i + 1;
-    } else if ( this.i === 3 ) {
-      this.j = 0;
-      this.h = this.i - 1;
+  public activeUnit(h: number, i: number, j: number) {
+    if ( i === 0 ) {
+      h = 3;
+      j = i + 1;
+    } else if ( i === 3 ) {
+      j = 0;
+      h = i - 1;
     } else {
-      this.h = this.i - 1;
-      this.j = this.i + 1;
+      h = i - 1;
+      j = i + 1;
     }
 
   }

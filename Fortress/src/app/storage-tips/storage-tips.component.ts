@@ -12,10 +12,9 @@ export class StorageTipsComponent implements OnInit {
 
   storageTip: any;
   storageAccordion: any;
-  breadcrumbActive: any = 'Storage Tips';
-  currentActive: any = 'STORAGE TIPS';
 
-  constructor(@Inject(WINDOW) private window: Window,
+  constructor(
+    @Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
   ) {
@@ -39,6 +38,4 @@ export class StorageTipsComponent implements OnInit {
   public fetchStorageTipAccordion () {
     this.storageAccordion = storageTips;
   }
-
-
 }

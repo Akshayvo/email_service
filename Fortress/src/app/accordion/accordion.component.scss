@@ -1,36 +1,28 @@
 @import "../../styles.scss";
 
-.accordion {
-  .card {
-    background-color: $white;
-    border: none;
+.card {
+  background-color: $white;
+  border: none;
 
-    .card-header {
-      cursor: pointer;
-      background-color: #707070;
-      color: $white;
+  .card-header {
+    cursor: pointer;
+    background-color: #707070;
+    color: $white;
 
-      h5 {
-        font-size: 1rem;
-        font-weight: 600;
-      }
+    h5 {
+      font-size: 1rem;
+      font-weight: 600;
     }
-
-    .card-body {
-      // display: inline;
-        ul {
-            margin-bottom: 0rem !important;
-            padding-inline-start: 20px;
-            li:not(:last-child) {
-                margin-bottom: 5px;
-            }
-        }
-    }
-    
-    }
-
-    .text-justify {
-        text-align: justify !important;
-    }
+  }
 }
-      
+
+.card-body {
+  ul {
+    margin-bottom: 0;
+    padding-inline-start: 20px;
+
+    li:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}

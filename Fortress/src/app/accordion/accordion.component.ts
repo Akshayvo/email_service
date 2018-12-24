@@ -17,14 +17,6 @@ export class AccordionComponent implements OnInit {
     this.fetchaccordianData();
   }
 
-
-  toggleCollapse(): void {
-    this.show = !this.show;
-  }
-
-  /**
-   * fetchaccordianData
-   */
   public fetchaccordianData() {
     this.aData = this.accordianData;
   }

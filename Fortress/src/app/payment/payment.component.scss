@@ -1,55 +1,43 @@
-@import '../../styles.scss';
-@import '../../general.scss';
+@import "../../styles.scss";
+@import "../../general.scss";
 
 .payment-top {
-    height: 60vh;
-    background: url(../../assets/images/pay-rent.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center; 
+  height: 60vh;
+  background: url("../../assets/images/backImg/pay-rent.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  .jumbotron-top {
+    padding: 0% 8%;
+  }
 }
 
 .content-Holder {
-    text-align: center;
-    color: $fontColor;
-    h2 {
-        //margin-block-end: 16px!important;
-        color: $white;
-        border-bottom: 1px solid $primary;
-        margin: auto;
-        font-size: 2.25rem !important;
-        width:200px;
-        display: none;
-    }
+  text-align: center;
+  color: $fontColor;
 
-    .coming {
-        div {
-            // height: 20rem; 
-            width: 100%; 
-            background: #6f6f70;
-            font-size: 2rem;
-            padding: 20% 25% 25%;
-        }
-    }
+  h2 {
+    color: $white;
+    border-bottom: 1px solid $primary;
+    margin: auto;
+    font-size: 2.25rem;
+    width: 200px;
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-    .coming {
-        div {
-            margin: 10px auto !important;   
-            // padding-top: 3% !important;
-        }
+  .content-Holder {
+    h2 {
+      display: block;
     }
-    .content-Holder {
-        h2 {
-            display: block;
-        }
-    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .payment-top {
-        height: 40vh;
-    }
+  .payment-top {
+    height: 40vh;
+  }
 }

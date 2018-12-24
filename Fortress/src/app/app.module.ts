@@ -8,7 +8,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AccordionComponent } from './accordion/accordion.component';
 import { AppComponent } from './app.component';
-import { DemoComponent } from './demo/demo.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
@@ -26,7 +25,6 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
 @NgModule({
   declarations: [
     AppComponent,
-    DemoComponent,
     HeaderComponent,
     HomeComponent,
     ContactComponent,

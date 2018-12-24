@@ -1,106 +1,96 @@
-@import '../../styles.scss';
-@import '../../general.scss';
+@import "../../styles.scss";
+@import "../../general.scss";
 
 .contact-top {
-    background: url(../../assets/images/contact-us.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center; 
-    height: 60vh;
+  background: url("../../assets/images/backImg/contact-us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 60vh;
+
+  .jumbotorn-top {
+    padding: 0% 8%;
+  }
 }
 
 label {
-    font-size: .824rem;
+  font-size: 0.824rem;
 }
 
 .locate-us-style {
-    table{
-      tr {
-        td {
-          padding: 2px 15px 2px 0px;
-          a {
-              color: $white;
-          }
-        }
-      }
+  td {
+    padding: 2px 15px 2px 0;
+
+    a {
+      color: $white;
     }
   }
+}
 
 input {
-    background-color: $dark-background ;
-    border: 1px solid $primary !important;
-    color: $white !important;
+  background-color: $dark-background;
+  border: 1px solid $primary;
+  color: $white;
 }
+
 input:focus {
-    background-color: $dark-background ;
-    border: 1px solid $primary !important;
-}
-textarea:focus {
-    background-color: $dark-background ;
-    border: 1px solid $primary !important;
+  background-color: $dark-background;
+  border: 1px solid $primary;
+  color: $white;
 }
 
 textarea {
-    background-color: $dark-background ;
-    border: 1px solid $primary !important;
-    color: $white !important;
-    height: 200px;
+  background-color: $dark-background;
+  border: 1px solid $primary;
+  color: $white;
+  height: 200px;
+}
+
+textarea:focus {
+  background-color: $dark-background;
+  border: 1px solid $primary;
+  color: $white;
 }
 
 input::placeholder {
-    color: #c7c7c7;
-    font-size: 0.875rem;
+  color: #c7c7c7;
+  font-size: 0.875rem;
 }
 
 textarea::placeholder {
-    color: #c7c7c7;
-    font-size: 0.875rem;
+  color: #c7c7c7;
+  font-size: 0.875rem;
 }
 
 .form-control:focus {
-    box-shadow: none !important;
+  box-shadow: none;
 }
 
 .content-Holder {
-    color: $fontColor;
-    h2 {
-        //margin-block-end: 16px!important;
-        color: $white;
-        border-bottom: 1px solid $primary;
-        margin: auto;
-        font-size: 2.25rem !important;
-        width:370px;
-        text-align: center;
-        display: none;
-    }
+  color: $fontColor;
+
+  h2 {
+    color: $white;
+    border-bottom: 1px solid $primary;
+    margin: auto;
+    font-size: 2.25rem;
+    width: 370px;
+    text-align: center;
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-    .content-Holder {
-        h2 {
-            display: block;
-        }
+  .content-Holder {
+    h2 {
+      display: block;
     }
+  }
 }
-
-// @media only screen and (min-width: 768px) and (max-width: 991px) {
-//         .btn-primary {
-//             width: 100px !important;
-//         }
-//         .btn-outline-primary {
-//             width: 100px !important;
-//         }
-// }
 
 @media only screen and (max-width: 345px) {
-        .btn-outline-primary {
-            margin-top: 10px;
-        }
+  .btn-outline-primary {
+    margin-top: 10px;
+  }
 }
-
-// @media only screen and (max-width: 600px) {
-//     .contact-top {
-//         height: 40vh;
-//     }
-// }

@@ -6,10 +6,9 @@ import { BrowserModule } from '@angular/platform-browser';
 @NgModule({
  bootstrap: [AppComponent],
 
-        imports: [
- BrowserModule.withServerTransition({appId: 'app-root'}),
- AppModule,
-
+imports: [
+        BrowserModule.withServerTransition({appId: 'app-root'}),
+        AppModule,
         ]
     })
 export class AppBrowserModule { }
