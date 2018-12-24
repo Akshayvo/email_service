@@ -268,9 +268,9 @@ export const aboutUsMall = [
             in the brutal Western New York winters!`,
     },
     {
-        p: `RV customers of Victor Self Storage can utilize our sewage drain,
-            top off their water supply, or even use our 3 amp trickle charger,
-            at no additional cost! We also offer over a hundred parking spaces for cars, boards, and trucks!`,
+        p: `RV customers of Victor Self Storage can utilize our RV dump station, top off their water supply,
+            or even use our 3 amp outlet for a trickle charger.
+            We also offer over a hundred parking spaces for cars, boats, and trucks!`,
     },
     {
         p: `We take the safety of your belongings seriously. Our 24/7 video surveillance monitors the property,
