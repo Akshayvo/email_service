@@ -1,9 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-
-// const service_id = 'mailgun';
-// const template_id = 'template_zUfc6JL6';
-// const user_id = 'user_3w3aBFetBCiOCRkClF9SN';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'

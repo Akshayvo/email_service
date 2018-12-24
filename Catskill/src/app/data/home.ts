@@ -1,5 +1,3 @@
-export const featuresHead = 'The Only Self Storage in Greene County With All of The Following';
-
 export const featuresList = [
     {
         td1: 'Climate Controlled Units',
@@ -44,26 +42,6 @@ export const aboutUs = [
             if you have any questions or concerns about renting a unit or truck with us be sure to call our friendly,
             knowledgeable staff and let us make your storage experience a hassle-free one!`,
     },
-];
-
-export const serviceOffered = [
-    {
-        p: `We are the only self storage provider in Catskill to offer climate controlled units,
-            secure access to your units 24 hours a day,
-            and a fully lit facility for safe and easy access.`,
-    },
-    {
-        p: `We offer a wide selection of easy to access, clean,
-            well maintained units secured by fences and pin-coded activated gates all
-            at extremely competitive prices!
-            Reserve your unit and pay your rent with our convenient online tenant portal!`,
-    },
-    {
-        p: `Are you in need of a truck during your big move?
-            We've got you covered with an ample supply of U-Haul trucks in
-            a variety of sizes,a perfect solution for your next big move!`,
-    },
-
 ];
 
 export const gettingStarted = `Are you ready to move in today or just looking to make a reservation?

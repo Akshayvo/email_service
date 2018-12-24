@@ -94,12 +94,9 @@ export class ContactComponent implements OnInit {
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {
-              // alert(response.message);
              } else {
-              //  alert(response.message);
              }
            }, (err) => {
-             // console.log('Error :', err);
            });
          this.submitted = false;
          // MailService(body);

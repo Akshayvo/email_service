@@ -30,15 +30,15 @@ body {
 
 // Different Background colors
 .bg-secondary {
-  background: $secondary;
+  background: $secondary !important;
 }
 
 .bg-dark {
-  background: $dark;
+  background: $dark !important;
 }
 
 .bg-light {
-  background: $light;
+  background: $light !important;
 }
 
 .bg-translucent {

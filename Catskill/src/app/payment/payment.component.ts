@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { contact } from '../data/contact';
 
 @Component({
   selector: 'app-payment',
@@ -9,6 +10,7 @@ import { Title, Meta } from '@angular/platform-browser';
 export class PaymentComponent implements OnInit {
 
   currentActive: any = 'PAY RENT';
+  contactDetails: any;
 
   constructor(
     private titleService: Title,
@@ -23,6 +25,10 @@ export class PaymentComponent implements OnInit {
 
   ngOnInit() {
     window.scrollTo(0, 0);
+    this.fetchContact();
   }
 
+  public fetchContact() {
+    this.contactDetails = contact;
+  }
 }

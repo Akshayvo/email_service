@@ -1,4 +1,4 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 .jumbotron {
   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/catskill-hero.jpg");
@@ -17,7 +17,9 @@ h1 {
 }
 
 .home-map {
-  border: 2px solid white;
+  iframe {
+    border: 2px solid white;
+  }
 }
 
 .feature-icon-style {
@@ -173,10 +175,6 @@ h1 {
     p {
       font-size: 0.8rem;
     }
-
-    // h2 {
-    //   font-size: 2rem;
-    // }
   }
 }
 
