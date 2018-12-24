@@ -27,19 +27,19 @@ export const featuresList = [
 
 export const feature = [
     {
-        path: '../../assets/images/convenient-location.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/convenient-location.svg',
         label: 'CONVENIENT LOCATION'
     },
     {
-        path: '../../assets/images/cctv.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/cctv.svg',
         label: '24 Hour Security Cameras'
     },
     {
-        path: '../../assets/images/online-bill.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/online-bill.svg',
         label: 'ONLINE BILL PAY'
     },
     {
-        path: '../../assets/images/truck.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/truck.svg',
         label: 'Drive Up Access'
     },
 ];
