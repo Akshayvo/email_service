@@ -44,9 +44,8 @@
               <span *ngFor="let contact of contactDetails">
                   <b>{{contact.label}}</b> {{contact.data}}<br>
                 </span>
-                <span><strong>Office:</strong> Monday- Friday 8:00am-3:00pm</span> <br>
                 <span *ngFor="let hour of hours">
-                  <span>{{hour.label}} {{hour.data}}<br></span>
+                  <strong>{{hour.label}} </strong> {{hour.data}}<br>
                 </span>
             </p>
           </div>

@@ -30,21 +30,17 @@ export const hours = [
 ];
 
 export const officeHours = [
-    // {
-    //     label: 'Office: ',
-    //     data: 'Monday- Friday 8:00am-3:00pm'
-    // },
-    // {
-    //     label: 'Sat- Sun: ',
-    //     data: 'Closed'
-    // },
     {
-        label: '24/7 ',
-        data: 'Drop Box'
+        label: 'Office: ',
+        data: 'Monday- Friday 8:00am-3:00pm'
     },
     {
-        label: 'After Hours by Appointment Only ',
-        data: ''
+        label: '',
+        data: '24/7 Drop Box'
+    },
+    {
+        label: '',
+        data: 'After Hours by Appointment Only'
     },
     {
         label: 'Facility: ',
