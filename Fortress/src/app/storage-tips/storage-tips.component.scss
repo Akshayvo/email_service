@@ -32,3 +32,15 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .storage-tips-top {
+    height: 40vh;
+  }
+
+  .content-Holder {
+    h2 {
+      display: block;
+    }
+  }
+}

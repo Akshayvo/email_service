@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
+import { Title, Meta } from '@angular/platform-browser';
+import { WINDOW } from '@ng-toolkit/universal';
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -12,7 +14,17 @@ export class UnitSizerComponent implements OnInit {
   current: number;
   next: number;
 
-  constructor() { }
+  constructor(
+    @Inject(WINDOW) private window: Window,
+    private titleService: Title,
+    private meta: Meta
+    ) {
+      this.meta.addTag({
+        name: 'description',
+        content: ``
+      });
+      this.titleService.setTitle('Unit Sizer | Fortress Mini Storage');
+    }
 
   ngOnInit() {
     this.current = 0;
