@@ -8,15 +8,17 @@ import { unitSizer } from '../data/unitSizer';
 export class UnitSizerComponent implements OnInit {
   unitsizers: any;
   selectedUnit: any;
-  h: number;
-  i: number;
-  j: number;
+  previous: number;
+  current: number;
+  next: number;
 
   constructor() { }
 
   ngOnInit() {
+    this.current = 0;
+    this.previous = 3;
+    this.next = this.current + 1;
     this.fetchUnitSizer();
-    this.unitSizer(3, 0, 4);
     window.scrollTo(0, 0);
   }
 
@@ -28,42 +30,37 @@ export class UnitSizerComponent implements OnInit {
     this.unitsizers = unitSizer;
   }
 
-  public unitSizer(h: number, i: number, j: number) {
-    i = 0;
-    h = 3;
-    j = i + 1;
-  }
-
-  public moveLeft(h: number, i: number, j: number) {
-    j = i;
-    i = h;
-    if ( h === 0 ) {
-      h = 3;
+  public moveLeft() {
+    this.next = this.current;
+    this.current = this.previous;
+    if ( this.previous === 0 ) {
+      this.previous = 3;
     } else {
-      h = h - 1;
+      this.previous = this.previous - 1;
     }
   }
 
-  public moveRight(h: number, i: number, j: number) {
-    h = i;
-    i = j;
-    if ( j === 3 ) {
-      j = 0;
+  public moveRight() {
+    this.previous = this.current;
+    this.current = this.next;
+    if ( this.next === 3 ) {
+      this.next = 0;
     } else {
-    j = j + 1;
+    this.next = this.next + 1;
     }
   }
 
-  public activeUnit(h: number, i: number, j: number) {
-    if ( i === 0 ) {
-      h = 3;
-      j = i + 1;
-    } else if ( i === 3 ) {
-      j = 0;
-      h = i - 1;
+  public activeUnit(unitId: number) {
+    this.current = unitId;
+    if ( this.current === 0 ) {
+      this.previous = 3;
+      this.next = this.current + 1;
+    } else if ( this.current === 3 ) {
+      this.next = 0;
+      this.previous = this.current - 1;
     } else {
-      h = i - 1;
-      j = i + 1;
+      this.previous = this.current - 1;
+      this.next = this.current + 1;
     }
 
   }
