@@ -54,6 +54,11 @@ export class ContactComponent implements OnInit {
     this.hours = hours;
   }
 
+  public generateClientError() {
+    console.log('Client Error');
+    let t = a + b;
+  }
+
   public validate(check, value, id, helpId) {
     // console.log(check + ' ' + value);
     if (check === 'notNull') {
