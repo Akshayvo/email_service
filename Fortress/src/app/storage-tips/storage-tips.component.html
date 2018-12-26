@@ -1,0 +1,22 @@
+<div class="storage-tips-top">
+  <div class="bg-translucent">
+    <div class="container jumbotorn-top text-center">
+      <h1 class="pb-4">Easy Self Storage Tips</h1>
+      <p>Moving can be a hassle! Make your experience easier with these helpful self storage tips!</p>      
+    </div>
+  </div>
+</div>
+
+<div class="content-Holder bg-dark-background py-5">
+  <div class="container py-5">
+    <h2 class="pb-3">Fortress Self Storage Tips</h2>
+    <div class="row accordion-background content-margin-top">
+      <div class="col-md-6">
+        <ul class="text-left"><li class="storage-left" *ngFor="let point of storageTip" >{{point.data}}</li></ul>
+      </div>
+      <div class="col-md-6">
+        <app-accordion [accordianData]='storageAccordion' ></app-accordion>
+      </div>
+    </div>
+  </div>
+</div>

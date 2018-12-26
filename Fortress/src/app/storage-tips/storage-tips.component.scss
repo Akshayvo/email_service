@@ -1,0 +1,46 @@
+@import "../../styles.scss";
+@import "../../general.scss";
+
+
+.storage-tips-top {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/backImg/black-box-box-boxes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom right;
+  height: 60vh;
+
+  .jumbotorn-top {
+    padding: 0% 8%;
+  }
+}
+
+.content-Holder {
+  text-align: center;
+
+  .storage-left {
+    color: $white;
+    line-height: 2;
+  }
+
+  h2 {
+    color: $white;
+    border-bottom: 1px solid $primary;
+    width: 420px;
+    margin: auto;
+    font-size: 2.25rem;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .storage-tips-top {
+    height: 40vh;
+  }
+
+  .content-Holder {
+    h2 {
+      display: block;
+    }
+  }
+}

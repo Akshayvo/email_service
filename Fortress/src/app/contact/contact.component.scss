@@ -1,0 +1,96 @@
+@import "../../styles.scss";
+@import "../../general.scss";
+
+.contact-top {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/backImg/contact-us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 60vh;
+
+  .jumbotorn-top {
+    padding: 0% 8%;
+  }
+}
+
+label {
+  font-size: 0.824rem;
+}
+
+.locate-us-style {
+  td {
+    padding: 2px 15px 2px 0;
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+input {
+  background-color: $dark-background;
+  border: 1px solid $primary;
+  color: $white;
+}
+
+input:focus {
+  background-color: $dark-background;
+  border: 1px solid $primary;
+  color: $white;
+}
+
+textarea {
+  background-color: $dark-background;
+  border: 1px solid $primary;
+  color: $white;
+  height: 200px;
+}
+
+textarea:focus {
+  background-color: $dark-background;
+  border: 1px solid $primary;
+  color: $white;
+}
+
+input::placeholder {
+  color: #c7c7c7;
+  font-size: 0.875rem;
+}
+
+textarea::placeholder {
+  color: #c7c7c7;
+  font-size: 0.875rem;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.content-Holder {
+  color: $fontColor;
+
+  h2 {
+    color: $white;
+    border-bottom: 1px solid $primary;
+    margin: auto;
+    font-size: 2.25rem;
+    width: 370px;
+    text-align: center;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .content-Holder {
+    h2 {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .btn-outline-primary {
+    margin-top: 10px;
+  }
+}
