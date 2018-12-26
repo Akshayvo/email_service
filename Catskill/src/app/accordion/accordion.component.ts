@@ -20,3 +20,4 @@ export class AccordionComponent implements OnInit {
     this.storageTipAccordion = storageTipAccordion;
   }
 }
+

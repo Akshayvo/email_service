@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature} from '../data/home';
 
@@ -29,8 +28,8 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      // tslint:disable-next-line:max-line-length
-      content: `Catskill Self Storage has been proudly serving Catskill, Cairo, Leeds, and surrounding communities with affordable storage units since 2004!`
+      content: `Catskill Self Storage has been proudly serving Catskill, Cairo, Leeds, and surrounding communities with
+      affordable storage units since 2004!`
     });
     this.titleService.setTitle('Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage');
   }
@@ -64,6 +63,7 @@ export class HomeComponent implements OnInit {
     this.aboutUs = aboutUs;
     this.gettingStarted = gettingStarted;
   }
+
   public fetchFeature () {
     this.feature = feature;
   }
