@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { aboutUsVillage, aboutUsMall } from '../data/location';
 
 @Component({
@@ -13,20 +13,27 @@ export class AboutUsComponent implements OnInit {
   currentActiveTab: any = 'About Us';
   private sub: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    this.sub = this.route.queryParams.subscribe(params => {
-      this.name = params['name'];
-    });
-    this.fetchData();
+    this.isSomePage();
   }
 
-  public fetchData() {
-    if (this.name === 'village') {
-    this.aboutPara = aboutUsVillage;
-    } else if (this.name === 'mall') {
-      this.aboutPara = aboutUsMall;
+  public isSomePage() {
+    if (this.router.url.includes('/location/village')) {
+        this.fetchDataVillage();
+    } else {
+      this.fetchDataMall();
     }
+ }
+
+  public fetchDataVillage() {
+    this.aboutPara = aboutUsVillage;
+    this.name = 'Village';
+  }
+
+  public fetchDataMall() {
+    this.aboutPara = aboutUsMall;
+    this.name = 'Mall';
   }
 }

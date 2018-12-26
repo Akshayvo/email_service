@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { galleryMall, galleryvillage, galleryDataMall, galleryDataVillage } from '../data/galleryImage';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-photos',
@@ -16,25 +16,32 @@ export class PhotosComponent implements OnInit {
   private sub: any;
 
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    this.sub = this.route.queryParams.subscribe(params => {
-      this.name = params['name'];
-    });
-    this.fetchGallery();
+    this.isSomePage();
+    // this.fetchGallery();
     this.setSelectedImage(this.galleryImages[0]);
   }
 
-  public fetchGallery() {
-
-    if ( this.name === 'village' ) {
-      this.galleryImages = galleryvillage;
-      this.galleryData = galleryDataVillage;
-    } else if ( this.name === 'mall' ) {
-      this.galleryImages = galleryMall;
-      this.galleryData = galleryDataMall;
+  public isSomePage() {
+    if (this.router.url.includes('/location/village')) {
+        this.fetchGalleryVillage();
+    } else {
+      this.fetchGalleryMall();
     }
+ }
+
+  public fetchGalleryVillage() {
+    this.galleryImages = galleryvillage;
+    this.galleryData = galleryDataVillage;
+    this.name = 'Village';
+  }
+
+  public fetchGalleryMall() {
+    this.galleryImages = galleryMall;
+    this.galleryData = galleryDataMall;
+    this.name = 'Mall';
   }
 
   setSelectedImage(image: any) {
