@@ -1,0 +1,47 @@
+@import "../../styles.scss";
+
+.contentHolder {
+  padding-top: 100px;
+  margin-bottom: 50px;
+  min-height: 88vh;
+  max-height: auto;
+  display: block;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .contact-data {
+    background-color: $light;
+
+    label {
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+
+    .btn {
+      padding: 5px 140px;
+      min-width: 160px;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .for-mall {
+    margin-top: 20px;
+  }
+
+  .for-village {
+    margin-top: 20px;
+  }
+}
