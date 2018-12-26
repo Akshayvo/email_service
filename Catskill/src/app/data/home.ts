@@ -71,3 +71,12 @@ export const feature = [
         label: 'Easy Online Access'
     },
 ];
+
+export const jumbotron = [
+    {
+        h1: `Convenient & Affordable`,
+        blurb: `With affordable truck rentals, drive-up access, temperature - controlled storage units,
+        and top notch customer service,
+        Catskill Self Storage has your storage unit needs covered! Contact us today to get started!`,
+    }
+];

@@ -7,11 +7,11 @@
       </div>
       <div class="container">
         <div class="jumbotorn-skew-text">
-          <div class="disp">
+          <div class="disp" *ngFor="let jumbotron of jumbotron">
             <h2  class="my-4">
-              Convenient & Affordable
+              {{jumbotron.h1}}
             </h2>
-            <p class="text-justify">With affordable truck rentals, drive-up access, temperature - controlled storage units, and top notch customer service, Catskill Self Storage has your storage unit needs covered! Contact us today to get started!</p>
+          <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button">
             <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>

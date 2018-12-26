@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
-import { featuresList, aboutUs, gettingStarted, feature} from '../data/home';
+import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
   serviceOffered: any;
   gettingStarted: any;
   feature: any;
+  jumbotron: any;
   currentActive: any = 'HOME';
 
   constructor(
@@ -44,6 +45,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
+    this.fetchJumbotron();
     window.scrollTo(0, 0);
   }
 
@@ -66,6 +68,10 @@ export class HomeComponent implements OnInit {
 
   public fetchFeature () {
     this.feature = feature;
+  }
+
+  public fetchJumbotron() {
+    this.jumbotron = jumbotron;
   }
 
 }
