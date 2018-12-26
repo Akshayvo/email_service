@@ -20,8 +20,9 @@ export const unitSizer = [
         size: '8\' x 10\'',
         heading: '8\' x 10\' Storage Unit',
         unitImg: '../../assets/images/UnitSizer/10x10.png',
-        //photo: '../../assets/images/photos/1.jpg',
-        data: `This unit is approximately 80 sq feet of space that can hold the contents of a small room or large closet: `,
+        // photo: '../../assets/images/photos/1.jpg',
+        data: `This unit is approximately 80 sq feet of space that can hold the contents
+        of a small room or large closet: `,
         amenities: [
             { content: 'Mattress sets', },
             { content: 'Sofas', },
@@ -52,8 +53,9 @@ export const unitSizer = [
         size: '10\' x 14\'',
         heading: '10\' x 14\' Storage Unit',
         unitImg: '../../assets/images/UnitSizer/10x15.png',
-        //photo: '../../assets/images/photos/4.jpg',
-        data: `This unit is approximately 140 sq feet of space that can hold the contents of a single bedroom apartment. `,
+        // photo: '../../assets/images/photos/4.jpg',
+        data: `This unit is approximately 140 sq feet of space that can hold the contents
+        of a single bedroom apartment. `,
         amenities: [
             { content: 'Mattress sets', },
             { content: 'Armchairs', },
@@ -69,8 +71,9 @@ export const unitSizer = [
         size: '10\' x 16\'',
         heading: '10\' x 16\' Storage Unit',
         unitImg: '../../assets/images/UnitSizer/10x15.png',
-        //photo: '../../assets/images/photos/5.jpg',
-        data: `This unit is approximately 160 sq feet of space that can hold the contents of a single bedroom apartment. `,
+        // photo: '../../assets/images/photos/5.jpg',
+        data: `This unit is approximately 160 sq feet of space that can hold the contents
+        of a single bedroom apartment. `,
         amenities: [
             { content: 'Mattress sets', },
             { content: 'Armchairs', },
@@ -84,8 +87,9 @@ export const unitSizer = [
         size: '10\' x 20\'',
         heading: '10\' x 20\' Storage Unit',
         unitImg: '../../assets/images/UnitSizer/10x20.png',
-        //photo: '../../assets/images/photos/6.jpg',
-        data: `This unit is approximately 200 sq feet of space that can hold the contents of a multiple bedroom apartments or a small house. `,
+        // photo: '../../assets/images/photos/6.jpg',
+        data: `This unit is approximately 200 sq feet of space that can hold the contents
+         of a multiple bedroom apartments or a small house. `,
         amenities: [
             { content: 'Mattress sets', },
             { content: 'Armchairs', },
@@ -99,8 +103,9 @@ export const unitSizer = [
         size: '10\' x 30\'',
         heading: '10\' x 30\' Storage Unit',
         unitImg: '../../assets/images/UnitSizer/10x30.png',
-        //photo: '../../assets/images/photos/6.jpg',
-        data: `This unit is approximately 300 sq feet of space that can hold the contents of a multiple bedroom apartments or a small house. `,
+        // photo: '../../assets/images/photos/6.jpg',
+        data: `This unit is approximately 300 sq feet of space that can hold the contents
+        of a multiple bedroom apartments or a small house. `,
         amenities: [
             { content: 'Mattress sets', },
             { content: 'Armchairs', },

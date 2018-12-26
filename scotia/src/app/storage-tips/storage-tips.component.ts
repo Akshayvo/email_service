@@ -11,8 +11,7 @@ import { storageTip, storageTipAccordion } from '../data/storage';
 export class StorageTipsComponent implements OnInit {
 
   storageTip: any;
-  // storageTipAccordion: any;
-  breadcrumbActive: any = 'Storage Tips';
+  storageTipAccordion: any;
   currentActive: any = 'STORAGE TIPS';
 
   constructor(@Inject(WINDOW) private window: Window,
@@ -21,23 +20,25 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Whether you're storing a closet full of out of season clothes or an entire home during a move Scotia Self Storage has storage unit options for you! Follow these `
+      content: `Whether you're storing a closet full of out of season clothes or an entire home during a move
+      Scotia Self Storage has storage unit options for you! Follow these `
     });
     this.titleService.setTitle('Self Storage Tips for Scotia Self Storage');
   }
 
   ngOnInit() {
     this.fetchStorageTip();
-    //this.fetchStorageTipAccordion();
+    this.fetchStorageTipAccordion();
     this.window.scrollTo(0, 0);
   }
 
   public fetchStorageTip() {
     this.storageTip = storageTip;
   }
-  // public fetchStorageTipAccordion () {
-  //   this.storageTipAccordion = storageTipAccordion;
-  // }
+
+  public fetchStorageTipAccordion () {
+    this.storageTipAccordion = storageTipAccordion;
+  }
 
 
 }

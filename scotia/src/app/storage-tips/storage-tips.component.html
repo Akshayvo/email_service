@@ -1,6 +1,6 @@
 <div class="storage-tips-top">
   <div class="bg-translucent">
-      <div class="container jumbotorn-top" style="text-align: center; padding: 0% 8%">
+      <div class="container jumbotorn-top text-center">
         <h1 class="pb-4">Scotia Storage Helps you Every Step of the Way!</h1>
         <p>Here are some free tips for storing your belongings with Scotia Storage! Have specific questions that aren't covered here? Contact us today and let us make your self storage experience a breeze!</p>
       </div>
@@ -12,11 +12,10 @@
     <h2 class="pb-3">Scotia Self Storage Tips</h2>
     <div class="row accordion-background content-margin-top">
       <div class="col-md-6 py-3 ul-padding">
-        <ul style="text-align: left"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li ></ul>
+        <ul class="text-left"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li ></ul>
       </div>
       <div class="col-md-6 py-3" id="accordion">
       <app-accordion></app-accordion>
     </div>
   </div>
 </div>
-

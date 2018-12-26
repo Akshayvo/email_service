@@ -110,12 +110,8 @@ export class ContactComponent implements OnInit {
         };
         this.emailService.sendEmail(body)
           .subscribe((response: any) => {
-            // console.log('Authentication response:', response);
             if (response.result != null) {
-              alert(response.message);
             } else {
-              // console.log(`response`, response.result);
-              alert(response.message);
             }
           }, (err) => {
             console.log('Error :', err);

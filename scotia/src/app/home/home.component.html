@@ -1,14 +1,14 @@
 <div class="">
   <div class="jumbotron p-0 m-0">
     <div class="bg-translucent  text-align">
-      <div class="container display" style="height:100%">
+      <div class="container display">
         <div class="row justify-content-center width margin-bottom">
           <div class="col-md-12">
             <div class="disp">
               <h1>SAFE & SECURE<br>SELF STORAGE</h1><br>
               <p>Scotia Storage is proud to serve the community with clean, well maintained self storage units at affordable prices! Whether you're just looking for a little extra room at home or need a place to store commercial equipment, Scotia Storage has your needs covered!</p>
             </div>
-            <div class="mt-4" >
+            <div class="button-top-margin">
               <a class="btn btn-lg btn-outline-primary m-2" (click)="navigate('/contact')" role="button">Contact Us</a>
               <a class="btn btn-lg btn-primary m-2" (click)="navigate('/view-rates')" role="button">View Rates</a>
             </div>
@@ -24,7 +24,7 @@
   <div class="about-us bg-dark-background"  #target>
     <div class="container py-5">
       <div class="section py-5 m-0">
-        <h2 class="heading pb-3" style="text-align: center; border-bottom: 1px solid #ffde03; width: 250px; margin: auto">About Us</h2>
+        <h2 class="heading pb-3 text-center">About Us</h2>
         <div class="row content-margin-top">
           <div class="col-md-6 py-3">
             <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
@@ -43,16 +43,16 @@
         <div class="section  m-0">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="heading pb-3" style="text-align: center; border-bottom: 1px solid #ffde03; width: 300px; margin: auto">We Provide</h2>
+              <h2 class="heading pb-3 text-center">We Provide</h2>
               <div class="row primary-margin">
-                <div class="col-md-3 col-6 p-4" style="text-align: center" *ngFor="let feature of feature">
-                  <img [src]="feature?.path" style="padding: 10px" height="75px" alt="" />
+                <div class="col-md-3 col-6 p-4 text-center" *ngFor="let feature of feature">
+                  <img [src]="feature?.path" height="75px" alt="" />
                   <h6 class="feature-text">{{feature.label}}</h6>
                 </div>
               </div>
-              <div class="" style="position: relative; margin: auto">
+              <div class="feature-list">
                 <ul class="row" > 
-                  <li class="col-md-6 col-lg-4 py-2" style="text-align: left; display: flex; align-items: baseline" *ngFor="let featuresList of featuresList">{{featuresList.li}}</li>
+                  <li class="col-md-6 col-lg-4 py-2 text-left" *ngFor="let featuresList of featuresList">{{featuresList.li}}</li>
                 </ul>
               </div>
             </div>
@@ -62,22 +62,22 @@
     </div>
   </div>
 
-  <div class="l ocate-us bg-dark-background">
+  <div class="locate-us bg-dark-background">
     <div class="container py-5">
       <div class="section py-5 m-0">
-          <h2 class="heading pb-3 " style="text-align: center; border-bottom: 1px solid #ffde03; width: 300px; margin: auto">Locate Us</h2>
+          <h2 class="heading pb-3 text-center">Locate Us</h2>
         <div class="row content-margin-top">
             <div class="col-md-6 py-3">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.533752182271!2d-73.94262538438662!3d42.84046171261981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6e7c26c4b959%3A0x88f2e4056402869c!2sScotia+Storage+Co!5e0!3m2!1sen!2sus!4v1542138509038" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.533752182271!2d-73.94262538438662!3d42.84046171261981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6e7c26c4b959%3A0x88f2e4056402869c!2sScotia+Storage+Co!5e0!3m2!1sen!2sus!4v1542138509038" width="100%" height="250" frameborder="0" allowfullscreen></iframe>
               </div>
           <div class="col-md-6 py-3 locate-us-style">
             <table>
-              <tr valign="top" style="font-weight: 300" *ngFor="let contact of contactDetails">
-                <td style="font-weight: 600">{{contact.label}}</td><td class="contact-data" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect"> {{contact.data}}</a></td>
+              <tr valign="top" *ngFor="let contact of contactDetails">
+                <td ><strong>{{contact.label}}</strong></td><td class="contact-data" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect"> {{contact.data}}</a></td>
                 <ng-template #other_content><td >{{contact.data}}</td></ng-template>
               </tr>
-              <tr valign="top" style="font-weight: 300" *ngFor="let hour of hours">
-                <td style="font-weight: 600">{{hour.label}}</td><td> {{hour.data}}</td>
+              <tr valign="top" *ngFor="let hour of hours">
+                <td ><strong>{{hour.label}}</strong></td><td> {{hour.data}}</td>
               </tr>
               </table>
           </div>

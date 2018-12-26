@@ -1,16 +1,17 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .iconColor {
-    color: $primary !important;
+  color: $primary;
 }
 
-.contact-header{
+.contact-header {
   display: inline;
-  .contact-details{
+
+  .contact-details {
     color: $white;
     font-size: 0.82em;
     font-weight: 500;
@@ -19,82 +20,73 @@ a {
 }
 
 
-.navbar-button {
-    button:focus {
-        outline: 5px auto $primary !important;
-    }
+.navbar {
+  .nav-link {
+    color: $white;
+    font-weight: 600;
+  }
+
+  .nav-link:hover {
+    color: $primary;
+  }
+
+  .nav-link-active {
+    color: $primary;
+    border-bottom: 1px solid $primary;
+  }
+
+  button {
+    color: $white;
+    border-color: $white;
+  }
+
+  button:focus {
+    outline: 5px auto $primary;
+  }
 }
-
-
 
 .navbar-brand {
-    padding-top: 20px;
+  padding-top: 20px;
 }
+
 
 .bg-dark {
-    background: linear-gradient(to bottom, rgba(33,33,33,1) 0%,  rgba(33,33,33, 1) 20%, rgba(33,33,33,0.90) 40%, rgba(33,33,33,0.82) 50%, rgba(33,33,33,0.75) 64%, rgba(33,33,33,0) 100%) !important;
-}
-.social {
-    text-align: right !important;
-    a {
-        color: $white;
-        text-decoration: none;
-    }
-}
-
-.social :hover {
-    color: $primary;
-    transition-duration: 500ms;
-}
-
-.nav-link {
-    color: $white !important;
-    font-weight: 600;
-    //transition-duration: 500ms;
-}
-
-.nav-link:hover {
-    color: $primary !important;
-    //transition-duration: 500ms;
-}
-
-.nav-link-active {
-    color: $primary !important;
-    border-bottom: 1px solid $primary;
+  background: linear-gradient(to bottom, rgba(33, 33, 33, 1) 0%, rgba(33, 33, 33, 1) 20%, rgba(33, 33, 33, 0.9) 40%, rgba(33, 33, 33, 0.82) 50%, rgba(33, 33, 33, 0.75) 64%, rgba(33, 33, 33, 0) 100%);
 }
 
 .display {
-    display: block;
+  display: block;
 }
 
 
 @media screen and (max-width: 1200px) {
-
-    a {
-        font-size: 0.9em;
-    }
+  a {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (max-width: 991px) {
-    .display {
-        display: none;
-    }   
+  .display {
+    display: none;
+  }
 
-    .nav-link {
-        text-align: center;
-    }
-    .bg-dark {
-        background: rgba(0,0,0,0.85) !important;
-    }
-    .navbar-brand{
-        padding: 0px;
-    }
+  .nav-link {
+    text-align: center;
+  }
+
+  .bg-dark {
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  .navbar-brand {
+    padding: 0;
+  }
 }
 
 
 @media only screen and (max-height: 500px) {
-    .navbar-nav-scroll {
-        height: 200px;
-        overflow-y: scroll;
-    }
+  .navbar-nav-scroll {
+    height: 200px;
+    overflow-y: scroll;
+  }
 }

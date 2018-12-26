@@ -9,9 +9,8 @@ import { viewRate, slideShow } from '../data/view';
 })
 export class ViewRatesComponent implements OnInit {
 
-  viewRate : any;
+  viewRate: any;
   slideShow: any;
-  breadcrumbActive: any = 'View Rates';
   currentActive: any = 'VIEW RATES';
 
   constructor(
@@ -20,7 +19,8 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `View our wide selection of affordable self storage units, from closet sized 4'x8' units to our oversized 24'x30' garage units.`
+      content: `View our wide selection of affordable self storage units, from closet sized 4'x8'
+      units to our oversized 24'x30' garage units.`
     });
     this.titleService.setTitle('Storage Units Near Scotia, NY, 12302 | View Rates');
   }
@@ -30,7 +30,7 @@ export class ViewRatesComponent implements OnInit {
     this.fetchSlideShow();
     window.scrollTo(0, 0);
   }
-  
+
   public fetchViewRate() {
     this.viewRate = viewRate;
   }

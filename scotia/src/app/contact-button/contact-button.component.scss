@@ -1,108 +1,125 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
-    #contact-button-data {
-        background-color: #303030;
-        width: 348px;
-        padding: 20px 40px 20px 20px;
-        right:5px;
-        //margin-right: 10px;
-        z-index: 1000;
-        box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.16);
-        overflow: auto;
-        overflow-x: hidden; 
-        overflow-y: auto;
-        .heading {
-            h2 {
-                color: $white;
-                font-size: 1.5rem;
-            }
-        }
-        .iconColor {
-            color: $primary;
-        }
-        form {
-            margin-bottom: 50px;
-        }
-    }
-    .socialLink {
-        a {
-            color: $primary !important;
-            font-size: 22px;   
-        }
-        text-align: right;
-    }
+.contact-button-data {
+  background-color: #303030;
+  width: 348px;
+  padding: 20px 30px 20px 20px;
+  right: 5px;
+  z-index: 1000;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.16);
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 
-    .contact-data {
-        font-size: 13px;
-        a {
-            color: $white !important;
-        }
+  .heading {
+    h2 {
+      color: $white;
+      font-size: 1.5rem;
     }
-    input {
-        background-color: #707070 ;
-        border: #707070;
-        color: $white !important;
-    }
-    input:focus {
-        background-color: #707070 ;
-        border: #707070;
-    }
-    textarea:focus {
-        background-color: #707070 ;
-        border: #707070;
-    }
+  }
 
-    textarea {
-        background-color: #707070 ;
-        border: #707070;
-        color: $white !important;
-    }
+  .iconColor {
+    color: $primary;
+  }
+}
 
-    input::placeholder {
-        color: #c7c7c7;
-    }
 
-    textarea::placeholder {
-        color: #c7c7c7;
-    }
+.socialLink {
+  a {
+    color: $primary;
+    font-size: 22px;
+  }
 
-    .form-control:focus {
-        box-shadow: none !important;
-    }
+  text-align: right;
+}
 
-    
-    @media screen and (max-width: 600px) {
-        #contact-button-data {
-            overflow: auto;
-            overflow-y: scroll !important;
-            height: 70vh;
-            width: 300px !important;
-        }
-        .contact-data {
-            font-size: 11px;
-            a {
-                color: $white !important;
-            }
-        }
-        h2 {
-            font-size: 1.3rem;
-        }
-    }
+.contact-data {
+  font-size: 13px;
+  color: $white;
 
-    @media screen and (max-height: 850px) {
-        #contact-button-data {
-            overflow: auto;
-            overflow-y: scroll !important;
-            height: 68vh;
-            width: 300px !important;
-        }
-    }
+  a {
+    color: $white;
+  }
+}
 
-    @media screen and (max-height: 360px) {
-        #contact-button-data {
-            overflow: auto;
-            overflow-y: scroll !important;
-            height: 52vh;
-            width: 300px !important;
-        }
+form {
+  input {
+    background-color: #707070;
+    border: #707070;
+    color: $white;
+  }
+
+  input:focus {
+    background-color: #707070;
+    border: #707070;
+  }
+
+  textarea {
+    background-color: #707070;
+    border: #707070;
+    color: $white;
+  }
+
+  textarea:focus {
+    background-color: #707070;
+    border: #707070;
+  }
+
+
+  input::placeholder {
+    color: #c7c7c7;
+  }
+
+  textarea::placeholder {
+    color: #c7c7c7;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-button-data {
+    overflow: auto;
+    overflow-y: scroll;
+    height: 70vh;
+    width: 300px;
+
+    .heading {
+      h2 {
+        color: $white;
+        font-size: 1.3rem;
+      }
     }
+  }
+
+  .contact-data {
+    font-size: 11px;
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+@media screen and (max-height: 890px) {
+  .contact-button-data {
+    overflow: auto;
+    overflow-y: scroll;
+    height: 68vh;
+  }
+}
+
+@media screen and (max-height: 360px) {
+  .contact-button-data {
+    overflow: auto;
+    overflow-y: scroll;
+    height: 52vh;
+    width: 300px;
+  }
+}

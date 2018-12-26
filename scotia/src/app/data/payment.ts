@@ -36,7 +36,6 @@ export const payment = [
                 {
                     data: `ss@scotiastorage.com`
                 },
-            
         ],
     }
 ];

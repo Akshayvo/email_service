@@ -1,97 +1,108 @@
-@import '../../styles.scss';
-@import '../../general.scss';
+@import "../../styles.scss";
+@import "../../general.scss";
 
 .contact-top {
-    background: url(../../assets/images/contact-us.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center; 
-    height: 60vh;
+  background: url(../../assets/images/contact-us.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 60vh;
+
+  .jumbotorn-top {
+    padding: 0% 8%;
+  }
 }
 
 .locate-us-style {
-    table{
-      tr {
-        td {
-          padding: 2px 15px;
-          a {
-              color: $white;
-          }
-        }
-      }
+  td {
+    padding: 2px 15px;
+
+    a {
+      color: $white;
     }
   }
-
-input {
-    background-color: $dark-background ;
-    border: 1px solid $primary !important;
-    color: $white !important;
-}
-input:focus {
-    background-color: $dark-background ;
-    border: 1px solid $primary !important;
-}
-textarea:focus {
-    background-color: $dark-background ;
-    border: 1px solid $primary !important;
 }
 
-textarea {
-    background-color: $dark-background ;
-    border: 1px solid $primary !important;
-    color: $white !important;
+
+label {
+  font-size: 0.875rem;
 }
 
-input::placeholder {
+.form-group {
+  input {
+    background-color: $dark-background;
+    border: 1px solid $primary;
+    color: $white;
+  }
+
+  input:focus {
+    background-color: $dark-background;
+    border: 1px solid $primary;
+  }
+
+  textarea {
+    background-color: $dark-background;
+    border: 1px solid $primary;
+    color: $white;
+  }
+
+  textarea:focus {
+    background-color: $dark-background;
+    border: 1px solid $primary;
+  }
+
+
+  input::placeholder {
     color: #c7c7c7;
-    font-size: 0.875rem;
-}
+  }
 
-textarea::placeholder {
+  textarea::placeholder {
     color: #c7c7c7;
-    font-size: 0.875rem;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
 }
 
-.form-control:focus {
-    box-shadow: none !important;
-}
 
 .content-Holder {
-    color: $fontColor;
-    h2 {
-        //margin-block-end: 16px!important;
-        color: $white;
-        border-bottom: 1px solid $primary;
-        margin: auto;
-        font-size: 2.25rem !important;
-        width:370px;
-        text-align: center;
-    }
+  color: $fontColor;
+
+  h2 {
+    color: $white;
+    border-bottom: 1px solid $primary;
+    margin: auto;
+    font-size: 2.25rem;
+    width: 370px;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .btn-primary {
-            min-width: 150px;
-        }
-        .btn-outline-primary {
-            min-width: 150px;
-        }
+  .btn-primary {
+    min-width: 150px;
+  }
+
+  .btn-outline-primary {
+    min-width: 150px;
+  }
 }
 
 @media only screen and (max-width: 445px) {
-        .btn-primary {
-            // min-width: auto;
-            min-width: auto;;
-        }
-        .btn-outline-primary {
-            // min-width: auto;
-            min-width: auto;
-        }
+  .btn-primary {
+    min-width: 100%;
+    margin-top: 10px;
+  }
+
+  .btn-outline-primary {
+    min-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .contact-top {
-        height: 40vh;
-    }
+  .contact-top {
+    height: 40vh;
+  }
 }

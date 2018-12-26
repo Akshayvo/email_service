@@ -13,7 +13,6 @@ export class HeaderComponent implements OnInit {
   contactDetails: any;
   navLinks: any;
   socialLinks: any;
-  @Input('currentActive') currentActive;
 
   constructor(
     private router: Router,
@@ -24,7 +23,7 @@ export class HeaderComponent implements OnInit {
     this.fetchNavigationLinks();
   }
 
-  public navigate (location) {
+  public navigate (location: any) {
     this.router.navigate([location]);
   }
 

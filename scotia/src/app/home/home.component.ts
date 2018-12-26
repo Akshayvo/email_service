@@ -4,7 +4,6 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, feature } from '../data/home';
-import { transition } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
@@ -34,7 +33,7 @@ export class HomeComponent implements OnInit {
     this.titleService.setTitle('Affordable Storage Units Near Scotia, NY, 12302 | Scotia Storage');
   }
 
-  public navigate(location) {
+  public navigate(location: any) {
     this.router.navigate([location]);
   }
 
@@ -66,7 +65,7 @@ export class HomeComponent implements OnInit {
   public fetchFeature() {
     this.feature = feature;
   }
-   public scroll(el) {
+   public scroll(el: any) {
     el.scrollIntoView();
 }
 }
