@@ -172,22 +172,7 @@ h1 {
 
   .jumbotron-bottom {
     display: none;
-  }
-
-  .jumbotorn-buttonskew-text {
-    .disp {
-      p {
-        display: none;
-      }
-    }
-  }
-
-  .feature-icon-style {
-    padding: 12px 24px;
-
-    h6 {
-      font-size: 0.8rem;
-    }
+    height: 0;
   }
 }
 
@@ -248,11 +233,6 @@ h1 {
     height: 100vh;
   }
 
-  .jumbotron-bottom {
-    // height: 120px;
-    display: none;
-  }
-
   .jumbotorn-skew-text {
     .disp {
       p {
@@ -267,6 +247,11 @@ h1 {
     h6 {
       font-size: 0.8rem;
     }
+  }
+
+  .jumbotron-bottom {
+    height: 0;
+    display: none;
   }
 }
 
@@ -321,6 +306,11 @@ h1 {
       font-size: 0.8rem;
     }
   }
+
+  .jumbotron-bottom {
+    display: none;
+    height: 0;
+  }
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 480px) {
@@ -358,7 +348,6 @@ h1 {
     left: 0;
     top: auto;
     bottom: 0;
-    position: absolute;
     padding: 10px;
     background: rgba(237, 241, 238, 0.7);
 
@@ -418,10 +407,14 @@ h1 {
 
 @media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 500px) {
   .jumbotron-top {
+    height: 90vh;
+  }
+
+  .jumbotron {
     text-align: center;
     background-attachment: unset;
     background-position: center left;
-    height: 100vh;
+    height: 90vh;
 
     h1 {
       font-size: 2em;
@@ -456,16 +449,15 @@ h1 {
     top: auto;
     bottom: 0;
     background: rgba(237, 241, 238, 0.7);
-    padding: 20px 0;
+
+    .jumbotorn-button {
+      padding: 20px;
+    }
 
     a {
       font-size: 1.25rem;
       min-width: 200px;
     }
-  }
-
-  .jumbotorn-button {
-    padding: 10px;
   }
 }
 
@@ -474,7 +466,11 @@ h1 {
     text-align: center;
     background-attachment: unset;
     background-position: center left;
-    height: 100vh;
+    height: 90vh;
+  }
+
+  .jumbotron-top {
+    height: 90vh;
   }
 
   .feature {
@@ -499,7 +495,7 @@ h1 {
   }
 
   .jumbotorn-button {
-    padding: 10px;
+    padding: 20px;
   }
 
   .jumbotron-bottom {
@@ -513,7 +509,11 @@ h1 {
     text-align: center;
     background-attachment: unset;
     background-position: center left;
-    height: 100vh;
+    height: 90vh;
+  }
+
+  .jumbotron-top {
+    height: 90vh;
   }
 
   .feature {
@@ -534,7 +534,7 @@ h1 {
     top: auto;
     bottom: 0;
     background: rgba(237, 241, 238, 0.7);
-    padding: 20px;
+    padding: 10px;
   }
 
   .jumbotron-bottom {
