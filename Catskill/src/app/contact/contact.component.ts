@@ -53,7 +53,7 @@ export class ContactComponent implements OnInit {
   }
 
   get f() { return this.contactForm.controls; }
-  public navigate(location) {
+  public navigate(location: any) {
     this.router.navigate([location]);
   }
 

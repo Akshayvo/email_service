@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { storageTipAccordion } from '../data/storage'
+import { storageTipAccordion } from '../data/storage';
 
 @Component({
   selector: 'app-accordion',

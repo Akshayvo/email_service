@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
     this.titleService.setTitle('Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage');
   }
 
-  public navigate(location) {
+  public navigate(location: any) {
     this.router.navigate([location]);
   }
 
