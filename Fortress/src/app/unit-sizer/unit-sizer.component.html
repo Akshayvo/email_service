@@ -11,14 +11,14 @@
   <div class="container py-5">
     <!--Unit Sizer Box Layout-->
     <h2 class="pb-3">Unit Sizer</h2>
-    <div class="unit-sizer-container content-margin-top">
-    <div class="unit-sizer-box py-5">
+    <div class="unit-sizer-container py-3">
+    <div class="unit-sizer-box">
       <!--Main Row-->
         <div class="row">
           <!--Left bar size of unit starts here-->
             <div class="col-md-2 px-0">
               <!--For desktop and width more than 768-->
-              <div *ngFor="let unit of unitsizers" class="unit-dimention py-3 disp">
+              <div *ngFor="let unit of unitsizers" class="unit-dimention disp py-4">
                
                 <span *ngIf="current == unit?.id" [ngClass]="'active-unit'">
                     {{unit.size}} <br/>
@@ -80,11 +80,11 @@
                   <!--Image Carousel Ends Here-->
 
                   <!--Unit Sizer Data Row-->
-                  <div class="row justify-content-center mt-4 unit-data">
+                  <div class="row justify-content-center pt-5 unit-data">
                     <div class="col-12 col-md-8 col-lg-8 col align-self-center">
                       <h3>{{unitsizers[current].heading}}</h3>
                       <p class="pr-2 text-justify"> {{unitsizers[current].data}} </p>
-                      <ul>
+                      <ul class="mb-0">
                         <li *ngFor="let amenity of unitsizers[current]?.amenities"> {{amenity.content}} </li>
                       </ul>
                     </div>

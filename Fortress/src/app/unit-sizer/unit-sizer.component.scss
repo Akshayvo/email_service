@@ -1,5 +1,4 @@
 @import "../../styles.scss";
-@import "../../general.scss";
 
 .unit-sizer-top {
   color: $white;
@@ -15,13 +14,29 @@
   }
 }
 
+.bg-translucent {
+  height: 60vh;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
 .content-Holder {
   h2 {
     color: $white;
     border-bottom: 1px solid $primary;
     width: 250px;
     margin: auto;
-    font-size: 2.25rem;
+    font-size: 1.7rem;
     text-align: center;
     display: none;
   }
@@ -42,7 +57,7 @@
 
     .active-unit {
       color: #ffde03;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
   }
 }
@@ -111,6 +126,11 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) and (max-height: 767px) {
+  .jumbotorn-top {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .disp {
@@ -142,21 +162,15 @@
       width: 10px;
     }
   }
+
+  .jumbotorn-top {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .unit-sizer-top {
-    .bg-translucent {
-      h2 {
-        padding-top: 30px;
-        font-size: 2rem;
-      }
-
-      p {
-        padding: 7px 5% 0;
-        font-size: 1.3rem;
-      }
-    }
+    height: 40vh;
   }
 
   .unit-sizer-container {
@@ -179,11 +193,5 @@
         width: 10px;
       }
     }
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .unit-sizer-top {
-    height: 40vh;
   }
 }

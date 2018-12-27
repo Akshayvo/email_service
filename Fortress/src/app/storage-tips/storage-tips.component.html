@@ -10,11 +10,11 @@
 <div class="content-Holder bg-dark-background py-5">
   <div class="container py-5">
     <h2 class="pb-3">Fortress Self Storage Tips</h2>
-    <div class="row accordion-background content-margin-top">
-      <div class="col-md-6">
+    <div class="row accordion-background">
+      <div class="col-md-6 p-sec-block">
         <ul class="text-left"><li class="storage-left" *ngFor="let point of storageTip" >{{point.data}}</li></ul>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 p-sec-block">
         <app-accordion [accordianData]='storageAccordion' ></app-accordion>
       </div>
     </div>
