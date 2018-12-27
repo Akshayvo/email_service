@@ -46,7 +46,9 @@
               <h2 class="heading pb-3">We Provide</h2>
               <div class="row primary-margin">
                 <div class="col-md-3 col-6 p-4 text-center" *ngFor="let feature of feature">
-                  <img [src]="feature?.path" class="p-1" height="75px" alt="Fortress features" />
+                  <div class="p-4">
+                    <img [src]="feature?.path" height="75px" alt="Fortress features" />
+                  </div>
                   <h6 class="feature-text">{{feature.label}}</h6>
                 </div>
               </div>

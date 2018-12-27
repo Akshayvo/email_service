@@ -57,14 +57,12 @@ body {
   border-radius: 25px;
 }
 
-.btn-primary:active {
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:hover {
+  box-shadow: none !important;
   background-color: $primaryDark !important;
   border-color: $primary !important;
-}
-
-.btn-primary.focus,
-.btn-primary:active {
-  box-shadow: none !important;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus {

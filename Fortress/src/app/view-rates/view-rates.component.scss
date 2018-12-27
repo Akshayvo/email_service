@@ -1,5 +1,4 @@
 @import "../../styles.scss";
-@import "../../general.scss";
 
 .view-rates-top {
   height: 60vh;
@@ -14,6 +13,22 @@
   }
 }
 
+.bg-translucent {
+  height: 60vh;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
 .content-Holder {
   p {
     color: $fontColor;
@@ -23,9 +38,8 @@
   h2 {
     color: $white;
     border-bottom: 1px solid $primary;
-    width: 25%;
     margin: auto;
-    font-size: 2.25rem;
+    font-size: 1.7rem;
     text-align: center;
     display: none;
   }
@@ -35,7 +49,16 @@
   .content-Holder {
     h2 {
       display: block;
+      width: 70%;
     }
+  }
+
+  .jumbotorn-top {
+    display: none;
+  }
+
+  .p-sec-block {
+    padding-top: 30px;
   }
 }
 

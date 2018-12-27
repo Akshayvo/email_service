@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   height: 100vh;
   color: $white;
   border-radius: 0;
@@ -337,6 +337,11 @@
   .disp {
     padding: 0%;
 
+    .margin-bottom {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
     p {
       display: none;
     }
@@ -361,6 +366,11 @@
   .we-provide {
     background-attachment: unset;
     background-position: center top;
+  }
+
+  .margin-bottom {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .disp {
@@ -438,6 +448,11 @@
 
   .content-margin-top {
     margin-top: 36px;
+  }
+
+  .margin-bottom {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .disp {
@@ -596,6 +611,11 @@
         margin-top: 0;
       }
     }
+  }
+
+  .margin-bottom {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .disp {
