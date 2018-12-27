@@ -17,7 +17,7 @@ export const navLinks = [
     },
     {
         label: 'Pay Rent',
-        path: '/payment'
+        path: '/payment/'
     },
     {
         label: 'Storage Tips',
