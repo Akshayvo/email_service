@@ -13,14 +13,11 @@ export class PhotosComponent implements OnInit {
   selectedImage: any;
   galleryImages: any;
   galleryData: any;
-  private sub: any;
-
 
   constructor(private router: Router) { }
 
   ngOnInit() {
     this.isSomePage();
-    // this.fetchGallery();
     this.setSelectedImage(this.galleryImages[0]);
   }
 

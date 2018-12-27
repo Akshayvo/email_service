@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { unitSizerVillage, unitSizerMall } from '../data/location';
 @Component({
   selector: 'app-unit-sizer',
@@ -11,22 +11,28 @@ export class UnitSizerComponent implements OnInit {
   unitSizer: any;
   tabs: any;
   currentTab = 'Unit Sizer';
-  private sub: any;
-  constructor( private route: ActivatedRoute ) {
+  constructor( private router: Router ) {
    }
 
   ngOnInit() {
-    this.sub = this.route.queryParams.subscribe(params => {
-      this.name = params['name'];
-    });
-    this.fetchUnitSizer();
+    this.isSomePage();
   }
 
-  public fetchUnitSizer() {
-    if ( this.name === 'village' ) {
-      this.unitSizer = unitSizerVillage;
-    } else if ( this.name === 'mall' ) {
-      this.unitSizer = unitSizerMall;
+  public isSomePage() {
+    if (this.router.url.includes('/location/village')) {
+        this.fetchUnitSizerVillage();
+    } else {
+      this.fetchUnitSizerMall();
     }
+  }
+
+ public fetchUnitSizerVillage() {
+    this.name = 'village';
+    this.unitSizer = unitSizerVillage;
+  }
+
+  public fetchUnitSizerMall() {
+    this.name = 'mall';
+    this.unitSizer = unitSizerMall;
   }
 }

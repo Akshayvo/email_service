@@ -11,7 +11,6 @@ export class AboutUsComponent implements OnInit {
   name: string;
   aboutPara: any;
   currentActiveTab: any = 'About Us';
-  private sub: any;
 
   constructor(private router: Router) { }
 
@@ -25,7 +24,7 @@ export class AboutUsComponent implements OnInit {
     } else {
       this.fetchDataMall();
     }
- }
+  }
 
   public fetchDataVillage() {
     this.aboutPara = aboutUsVillage;

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { reviewVillage } from '../data/location';
 
 @Component({
@@ -12,13 +12,19 @@ export class ReviewsComponent implements OnInit {
   currentActiveTab: any = 'Reviews';
   reviews: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    this.fetchreviews();
+    this.isSomePage();
   }
 
-  public fetchreviews() {
-    this.reviews = reviewVillage;
+  public isSomePage() {
+    if (this.router.url.includes('/location/village')) {
+      this.name = 'village';
+      this.reviews = reviewVillage;
+    } else {
+      this.name = 'mall';
+      this.reviews = reviewVillage;
+    }
   }
 }
