@@ -21,7 +21,7 @@ fi
 
 if [ -e $dest_path/$project_name ];then
 	echo "project name already exists"
-	
+	exit 1
 else
 	
 	mkdir $dest_path/$project_name
