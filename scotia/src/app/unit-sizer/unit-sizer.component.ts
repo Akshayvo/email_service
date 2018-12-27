@@ -1,17 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
+import { unitSizers } from '../data/blurb';
+
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
   styleUrls: ['./unit-sizer.component.scss']
 })
 export class UnitSizerComponent implements OnInit {
-  unitsizers: any;
+  unitsizer: any;
   selectedUnit: any;
   previous: number;
   current: number;
   next: number;
+  unitSizers: any;
 
   constructor(
     private titleService: Title,
@@ -30,6 +33,7 @@ export class UnitSizerComponent implements OnInit {
     this.previous = 6;
     this.next = this.current + 1;
     this.fetchUnitSizer();
+    this.fetchUnitsizers();
     window.scrollTo(0, 0);
   }
 
@@ -38,7 +42,11 @@ export class UnitSizerComponent implements OnInit {
    * fetchUnitSizer
    */
   public fetchUnitSizer() {
-    this.unitsizers = unitSizer;
+    this.unitsizer = unitSizer;
+  }
+
+  public fetchUnitsizers() {
+    this.unitSizers = unitSizers;
   }
 
   public moveLeft() {

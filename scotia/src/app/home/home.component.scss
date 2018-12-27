@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .jumbotron {
-  background: url("../../assets/images/scotia-self-storage-hero.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/scotia-self-storage-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -47,7 +47,7 @@
 }
 
 .we-provide {
-  background: url("../../assets/images/jumbotorn.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/jumbotorn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -59,10 +59,6 @@
     border-bottom: 1px solid $primary;
     width: 300px;
     margin: auto;
-  }
-
-  img {
-    padding: 10px;
   }
 
   .we-provide-background {
@@ -169,10 +165,14 @@
   100% { bottom: 100px; }
 }
 
-@media only screen and (min-width: 992px) and (max-height: 680px) and (min-height: 481px) {
+@media only screen and (min-width: 992px) and (max-height: 600px) and (min-height: 481px) {
   .jumbotron {
     .arrow {
       display: none;
+    }
+
+    .margin-bottom {
+      margin-bottom: 10vh;
     }
 
     .display {
@@ -220,7 +220,7 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) and (min-width: 768px) {
   .jumbotron {
     background-attachment: unset;
     background-position: center top;
@@ -232,7 +232,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) and (min-height: 451px) and (max-height: 600px) {
+@media screen and (max-width: 991px) and (min-width: 768px) and (max-height: 600px) and (min-height: 451px) {
   .jumbotron {
     background-attachment: unset;
     background-position: center top;
@@ -263,7 +263,7 @@
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 991px) and (max-height: 450px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 450px) {
   .jumbotron {
     background-attachment: unset;
     background-position: center top;
@@ -300,7 +300,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 601px) and (min-height: 481px) and (max-height: 649px) {
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 649px) and (min-height: 481px) {
   .jumbotron {
     background-attachment: unset;
     background-position: center top;

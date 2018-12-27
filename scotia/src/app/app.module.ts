@@ -13,7 +13,6 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewRatesComponent } from './view-rates/view-rates.component';
-import { PaymentComponent } from './payment/payment.component';
 import { ErrorComponent } from './error/error.component';
 
 import { Angulartics2Module } from 'angulartics2';
@@ -22,6 +21,7 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { AccordionComponent } from './accordion/accordion.component';
+import { PayRentComponent } from './pay-rent/pay-rent.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +31,12 @@ import { AccordionComponent } from './accordion/accordion.component';
     ContactComponent,
     FooterComponent,
     ViewRatesComponent,
-    PaymentComponent,
     ErrorComponent,
     UnitSizerComponent,
     StorageTipsComponent,
     ContactButtonComponent,
-    AccordionComponent
+    AccordionComponent,
+    PayRentComponent
   ],
   imports: [
     CommonModule,

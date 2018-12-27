@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { viewRate, slideShow } from '../data/view';
+import { viewRates } from '../data/blurb';
 
 @Component({
   selector: 'app-view-rates',
@@ -11,6 +12,7 @@ export class ViewRatesComponent implements OnInit {
 
   viewRate: any;
   slideShow: any;
+  viewRates: any;
   currentActive: any = 'VIEW RATES';
 
   constructor(
@@ -28,6 +30,7 @@ export class ViewRatesComponent implements OnInit {
   ngOnInit() {
     this.fetchViewRate();
     this.fetchSlideShow();
+    this.fetchViewRates();
     window.scrollTo(0, 0);
   }
 
@@ -36,5 +39,8 @@ export class ViewRatesComponent implements OnInit {
   }
   public fetchSlideShow() {
     this.slideShow = slideShow;
+  }
+  public fetchViewRates() {
+    this.viewRates = viewRates;
   }
 }

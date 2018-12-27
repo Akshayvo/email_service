@@ -90,7 +90,6 @@ export class ContactButtonComponent implements OnInit {
 
              }
            }, (err) => {
-             console.log('Error :', err);
 
            });
          this.submitted = false;

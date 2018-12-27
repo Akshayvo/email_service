@@ -21,19 +21,19 @@ export const featuresList = [
 
 export const feature = [
     {
-        path: '../../assets/images/convenient-location.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/feature/convenient-location.svg',
         label: 'CONVENIENT LOCATION'
     },
     {
-        path: '../../assets/images/cctv.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/feature/cctv.svg',
         label: 'CLOSED CIRCUIT SECURITY CAMERAS'
     },
     {
-        path: '../../assets/images/online-bill.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/feature/online-bill.svg',
         label: 'ONLINE BILL PAYMENT'
     },
     {
-        path: '../../assets/images/24-hours.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/feature/24-hours.svg',
         label: '24/7 ACCESS'
     },
 ];

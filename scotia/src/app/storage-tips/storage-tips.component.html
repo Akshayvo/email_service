@@ -1,8 +1,8 @@
 <div class="storage-tips-top">
   <div class="bg-translucent">
-      <div class="container jumbotorn-top text-center">
-        <h1 class="pb-4">Scotia Storage Helps you Every Step of the Way!</h1>
-        <p>Here are some free tips for storing your belongings with Scotia Storage! Have specific questions that aren't covered here? Contact us today and let us make your self storage experience a breeze!</p>
+      <div class="container jumbotorn-top text-center" *ngFor="let storageTips of storageTips">
+        <h1 class="pb-4">{{storageTips.heading}}</h1>
+        <p>{{storageTips.blurb}}</p>
       </div>
   </div>
 </div>

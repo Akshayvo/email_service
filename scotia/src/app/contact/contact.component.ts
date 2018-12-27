@@ -4,6 +4,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
+import { contactUs } from '../data/blurb';
 
 @Component({
   selector: 'app-contact',
@@ -25,6 +26,7 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   submitted = false;
   isSubmitted = false;
+  contactUs: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -43,6 +45,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.fetchContactDetails();
+    this.fetchContactUs();
     this.fetchHours();
     this.window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
@@ -63,6 +66,10 @@ export class ContactComponent implements OnInit {
 
   public fetchHours() {
     this.hours = hours;
+  }
+
+  public fetchContactUs() {
+    this.contactUs = contactUs;
   }
 
   onSubmit() {
@@ -97,7 +104,6 @@ export class ContactComponent implements OnInit {
 
              }
            }, (err) => {
-             console.log('Error :', err);
 
            });
          this.submitted = false;

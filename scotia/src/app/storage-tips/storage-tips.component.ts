@@ -2,6 +2,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { storageTip, storageTipAccordion } from '../data/storage';
+import { storageTips } from '../data/blurb';
 
 @Component({
   selector: 'app-storage-tips',
@@ -12,6 +13,7 @@ export class StorageTipsComponent implements OnInit {
 
   storageTip: any;
   storageTipAccordion: any;
+  storageTips: any;
   currentActive: any = 'STORAGE TIPS';
 
   constructor(@Inject(WINDOW) private window: Window,
@@ -29,6 +31,7 @@ export class StorageTipsComponent implements OnInit {
   ngOnInit() {
     this.fetchStorageTip();
     this.fetchStorageTipAccordion();
+    this.fetchStorageTips();
     this.window.scrollTo(0, 0);
   }
 
@@ -40,5 +43,8 @@ export class StorageTipsComponent implements OnInit {
     this.storageTipAccordion = storageTipAccordion;
   }
 
+  public fetchStorageTips() {
+    this.storageTips = storageTips;
+  }
 
 }
