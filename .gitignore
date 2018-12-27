@@ -39,5 +39,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-vinay_test*
+**/vinay_test*
 **/package-lock.json
