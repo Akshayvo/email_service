@@ -1,8 +1,8 @@
-import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, OnInit, Inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';
 import { iframeMapMall, iframeMapVillage, tabs } from '../data/location';
-import { DomSanitizer, Title } from '@angular/platform-browser';
+import { Title } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 
 
@@ -11,7 +11,7 @@ import { WINDOW } from '@ng-toolkit/universal';
   templateUrl: './location.component.html',
   styleUrls: ['./location.component.scss']
 })
-export class LocationComponent implements OnInit, OnDestroy {
+export class LocationComponent implements OnInit {
 
   name: any;
   currentTab: any;
@@ -20,55 +20,44 @@ export class LocationComponent implements OnInit, OnDestroy {
   iframeAdd: any;
   head: any;
   tabs: any;
-  ads: any;
-  currentActive: any;
-  private sub: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
-    private route: ActivatedRoute,
     private router: Router,
-    public sanitizer: DomSanitizer,
     private titleService: Title,
     ) {
       this.titleService.setTitle('Storage Units Near Victor, NY, 14564 | Victor Self Storage');
     }
 
   ngOnInit() {
-    this.sub = this.route.queryParams.subscribe(params => {
-      this.name = params['name'],
-      this.currentTab = params['currentTab'];
-    });
-    this.fetchDetails(this.name);
     this.fetchTabs();
-    this.ads = this.getSafeUrl(this.iframeAdd.url);
     this.window.scrollTo(0, 0);
+    this.isSomePage();
   }
 
+  public isSomePage() {
+    if (this.router.url.includes('/location/village')) {
+        this.fetchDetailsVillage();
+    } else {
+      this.fetchDetailsMall();
+    }
+ }
 
-  public fetchDetails(name: string) {
-    if ( this.name === 'village' ) {
-      this.currentActive = 'Village Location';
+  public fetchDetailsVillage() {
+      this.name = 'village';
       this.contacts = contactsVillage;
       this.hours = hoursVillage;
       this.iframeAdd = iframeMapVillage;
-    } else {
-      this.currentActive = 'Mall Location';
-      this.contacts = contactsMall;
-      this.hours = hoursMall;
-      this.iframeAdd = iframeMapMall;
     }
-  }
+
+   public fetchDetailsMall() {
+    this.name = 'mall';
+     this.contacts = contactsMall;
+     this.hours = hoursMall;
+     this.iframeAdd = iframeMapMall;
+   }
 
   public fetchTabs() {
     this.tabs = tabs;
   }
-
-  getSafeUrl(url: any) {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
-  }
-  ngOnDestroy() {
-    this.sub.unsubscribe();
-  }
-
 }

@@ -30,7 +30,6 @@ export class PaymentComponent implements OnInit {
   constructor(
     @Inject(WINDOW) private window: Window,
     private route: ActivatedRoute,
-    private router: Router,
     private titleService: Title,
     private meta: Meta
   ) {

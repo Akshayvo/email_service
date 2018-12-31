@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { directionVillage, directionMall } from '../data/location';
 @Component({
   selector: 'app-directions',
@@ -8,25 +8,29 @@ import { directionVillage, directionMall } from '../data/location';
 })
 export class DirectionsComponent implements OnInit {
   name: any;
-  currentActiveTab: any = 'Directions';
   directionPoints: any;
-  private sub: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    this.sub = this.route.queryParams.subscribe(params => {
-      this.name = params['name'];
-    });
-    this.fetchDirectionData();
+    this.isSomePage();
   }
 
-
-  public fetchDirectionData() {
-    if ( this.name === 'village' ) {
-    this.directionPoints = directionVillage;
-    } else if ( this.name === 'mall' ) {
-      this.directionPoints = directionMall;
+  public isSomePage() {
+    if (this.router.url.includes('/location/village')) {
+        this.fetchDirectionVillage();
+    } else {
+      this.fetchDirectionMall();
     }
+ }
+
+  public fetchDirectionVillage() {
+    this.name = 'village';
+    this.directionPoints = directionVillage;
   }
+
+  public fetchDirectionMall() {
+    this.name = 'mall';
+    this.directionPoints = directionMall;
+ }
 }
