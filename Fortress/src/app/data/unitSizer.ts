@@ -19,7 +19,7 @@ export const unitSizer = [
         size: '10\' x 10\'',
         heading: '10\' x 10\' Storage Unit',
         unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/UnitSizer/10x10.png',
-        data: `This unit is approximately 100 sq feet of space that can store belongings from a large room : `,
+        data: `This unit is approximately 100 sq feet of space that can store belongings from a large room, such as: `,
         amenities: [
             { content: 'Mattress Sets', },
             { content: 'Sofas', },
@@ -36,7 +36,7 @@ export const unitSizer = [
         heading: '10\' x 15\' Storage Unit',
         unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/UnitSizer/10x15.png',
         data: `This unit is approximately 150 sq feet of space that can hold
-                the contents of a single bedroom apartment.`,
+                the contents of a single bedroom apartment, such as:`,
         amenities: [
             { content: 'Mattress sets', },
             { content: 'Armchairs', },
@@ -49,15 +49,30 @@ export const unitSizer = [
         id: 3,
         size: '10\' x 20\'',
         heading: '10\' x 20\' Storage Unit',
-        unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/UnitSizer/10x30.png',
+        unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/UnitSizer/10x20.png',
         data: `This unit is approximately 200 sq feet of space that can hold the
-                contents of a multiple bedroom apartments or a small house.`,
+                contents of a multiple bedroom apartments or a small house, such as:`,
         amenities: [
             { content: 'Mattress sets', },
             { content: 'Armchairs', },
             { content: 'Bookcases', },
             { content: 'Sofas', },
             { content: 'Dining room sets', },
+        ],
+    },
+    {
+        id: 4,
+        size: '10\' x 25\'',
+        heading: '10\' x 25\' Storage Unit',
+        unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/UnitSizer/10x25.png',
+        data: `This unit is approximately 250 sq feet of space that can hold the
+                contents of one small room or large closet, such as:`,
+        amenities: [
+            { content: 'Mattress sets', },
+            { content: 'Sofa sets', },
+            { content: 'Washer/Dryer', },
+            { content: 'Refrigerator', },
+            { content: 'Many boxes', },
         ],
     },
 ];
