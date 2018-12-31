@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit {
   feature: any;
   blurbHeading: string;
   blurbText: string;
-  currentActive: any = 'HOME';
 
   constructor(
     private router: Router,

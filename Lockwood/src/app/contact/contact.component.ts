@@ -24,7 +24,6 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   submitted = false;
   isSubmitted = false;
-  head: any;
 
   constructor(
     private router: Router,

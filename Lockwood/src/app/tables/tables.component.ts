@@ -10,8 +10,8 @@ export class TablesComponent implements OnInit {
   th: any;
   tds: String;
   objectKeys: any;
-  @Input('tBody') tBody;
-  @Input('tHead') tHead;
+  @Input() tBody;
+  @Input() tHead;
   constructor() { }
 
   ngOnInit() {
@@ -19,5 +19,4 @@ export class TablesComponent implements OnInit {
     this.tds = this.tBody;
     this.objectKeys = Object.keys(this.tds[0]);
   }
-
 }
