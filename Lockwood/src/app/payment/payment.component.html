@@ -11,17 +11,22 @@
       </div>
       <div class="col-lg-4 col-md-6 vertical-line">
         <h3>How to Login</h3>
-        <p><b>Username:</b> First initial + Last Name<br>
+
+        <p><b>Username:</b> First initial + Last Name<br>        
         <b>Password:</b> Your gate access code</p>
+
         <p><b>Example:</b></p>
+
         <p>John Smith's code is 1234</p>
+
         <p>John's Username: Jsmith<br>
         John's Password: 1234</p>
         <p>Have questions about your account?<br>
+
         <span *ngFor="let contact of contactDetails">
           <span *ngIf="contact?.id == 1 || contact?.id == 2">{{contact.data}}</span><br>
         </span>
-      </p>
+        </p>
       </div>
     </div>
   </div>

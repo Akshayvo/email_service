@@ -12,7 +12,6 @@ import { EmailService } from '../services/email.service';
 })
 export class ContactComponent implements OnInit {
 
-  currentActive: any = 'CONTACT US';
   contactDetails: any;
   hours: any;
   name: string;

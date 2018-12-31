@@ -29,5 +29,4 @@ export class ViewRatesComponent implements OnInit {
   public fetchViewRates() {
     this.viewRates = viewrates;
   }
-
 }
