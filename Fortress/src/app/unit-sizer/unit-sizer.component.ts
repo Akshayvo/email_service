@@ -21,7 +21,8 @@ export class UnitSizerComponent implements OnInit {
     ) {
       this.meta.addTag({
         name: 'description',
-        content: ``
+        content: `Having trouble figuring out what type of self storage unit will suit your needs?
+                  Use our handy unit sizer!`
       });
       this.titleService.setTitle('Unit Sizer | Fortress Mini Storage');
     }
