@@ -1,0 +1,57 @@
+@import "../../styles.scss";
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+.contentHolder {
+  text-align: center;
+
+  .storage-left {
+    color: $fontColor;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  h1 {
+    margin-block-end: 0;
+  }
+}
+
+.background-padding {
+  padding: 64px;
+}
+
+.padding-top {
+  padding-top: 110px;
+}
+
+.accordion-background {
+  min-height: 680px;
+
+  ul {
+    text-align: left;
+    padding-inline-start: 0;
+
+    li {
+      padding: 5px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .accordion-background {
+    padding: 24px 0;
+
+    ul {
+      padding-inline-start: 15px;
+    }
+  }
+
+  .padding-top {
+    padding-top: 56px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .padding-top {
+    padding-top: 56px;
+  }
+}

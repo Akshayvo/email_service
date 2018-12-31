@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-reserve-unit',
@@ -11,13 +11,18 @@ export class ReserveUnitComponent implements OnInit {
   name: any;
   tabs: any;
   currentActiveTab: any = 'Reserve Unit';
-  private sub: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    this.sub = this.route.queryParams.subscribe(params => {
-      this.name = params['name'];
-    });
+    this.isSomePage();
+  }
+
+  public isSomePage() {
+    if (this.router.url.includes('/location/village')) {
+      this.name = 'village';
+    } else {
+      this.name = 'mall';
+    }
   }
 }
