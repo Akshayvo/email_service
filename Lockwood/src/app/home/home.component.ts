@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, blurbHeading, blurbText } from '../data/home';
 

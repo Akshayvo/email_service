@@ -13,7 +13,7 @@ a {
   display: inline;
 
   .contact-details {
-    color: $white;
+    color: $primary;
     font-size: 0.82em;
     font-weight: 500;
   }
@@ -36,6 +36,15 @@ a {
 
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+
+  .navbar-brand {
+    img {
+      top: 20px;
+      position: absolute;
+      height: 90px;
+      width: auto;
+    }
+  }
 
   .nav-link {
     color: $white;
@@ -77,6 +86,17 @@ a {
 
   .nav-link {
     text-align: center;
+  }
+
+  .navbar {
+    .navbar-brand {
+      img {
+        top: 16px;
+        position: absolute;
+        height: 60px;
+        width: auto;
+      }
+    }
   }
 }
 

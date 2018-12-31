@@ -53,6 +53,7 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: [''],
   });
+  window.scrollTo(0, 0);
   }
 
   get f() { return this.contactForm.controls; }

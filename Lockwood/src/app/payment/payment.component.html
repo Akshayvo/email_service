@@ -1,26 +1,26 @@
-
 <div class="contentHolder">
   <div class="container my-3 pb-5 padding-top">
     <h1 class="py-5 text-center">Pay Rent Online</h1>
     <div class="row bg-light background-padding">
-      <div class="col-lg-8 col-md-7 scroll-wrapper small-screen-padding">
-          <div class="iframe-container">
+      <div class="col-lg-8 col-md-6 scroll-wrapper small-screen-padding">
+        <div class="iframe-container">
           <!-- <iframe id="advanced_iframe" name="advanced_iframe" src="https://catskillselfstorage.sim.syrasoft.com/Payment" width="100%"
             height="400" scrolling="yes" frameborder="0" border="0" allowtransparency="true" onload=";aiResizeIframe(this, 'true','1');"></iframe> -->
-            <div class="text-center m-auto"> Coming Soon! </div>
+          <div class="text-center m-auto"> Coming Soon! </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-5 vertical-line">
+      <div class="col-lg-4 col-md-6 vertical-line">
         <h3>How to Login</h3>
         <p><b>Username:</b> First initial + Last Name<br>
-        <b>Password:</b>Your gate access code</p>
+        <b>Password:</b> Your gate access code</p>
         <p><b>Example:</b></p>
         <p>John Smith's code is 1234</p>
         <p>John's Username: Jsmith<br>
         John's Password: 1234</p>
         <p>Have questions about your account?<br>
-        <span *ngFor="let contact of contactDetails"><span *ngIf="contact?.id == 1 || contact?.id == 2">{{contact.data}}</span><br>
-      </span>
+        <span *ngFor="let contact of contactDetails">
+          <span *ngIf="contact?.id == 1 || contact?.id == 2">{{contact.data}}</span><br>
+        </span>
       </p>
       </div>
     </div>

@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '1700 E. BROADWAY ST., OVIEDO, FL 32765',
+        data: '1700 E. Broadway St., Oviedo, FL 32765',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
@@ -32,7 +32,7 @@ export const hours = [
     },
     {
         label: 'Sunday: ',
-        data: 'closed'
+        data: 'Closed'
     },
     {
         label: 'Facility Access: ',

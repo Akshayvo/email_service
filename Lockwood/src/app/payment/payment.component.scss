@@ -40,24 +40,20 @@
   padding-top: 110px;
 }
 
-@media only screen and (max-width: 600px) {
-  .scroll-wrapper {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .vertical-line {
+    padding: 24px;
+  }
 
-    iframe {
-      width: 100%;
-      overflow: scroll;
+  .contentHolder {
+    .scroll-wrapper {
+      padding-right: 15px;
     }
   }
 
-  .background-padding {
-    padding: 24px 0;
-  }
-
-  .vertical-line {
-    border: none;
-    padding: 24px;
+  .small-screen-padding {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .padding-top {
@@ -71,19 +67,31 @@
     border: none;
   }
 
+  .contentHolder {
+    .scroll-wrapper {
+      padding-right: 15px;
+    }
+  }
+
   .padding-top {
     padding-top: 56px;
   }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px) {
-  .vertical-line {
-    padding: 24px;
+@media only screen and (max-width: 600px) {
+  .background-padding {
+    padding: 24px 0;
   }
 
-  .small-screen-padding {
-    padding-left: 24px;
-    padding-right: 24px;
+  .contentHolder {
+    .scroll-wrapper {
+      padding-right: 15px;
+    }
+  }
+
+  .vertical-line {
+    border: none;
+    padding: 24px;
   }
 
   .padding-top {
