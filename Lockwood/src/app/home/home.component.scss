@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .jumbotron {
-  background: url("../../assets/images/lockwood-self-storage.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lockwood_Images/lockwood-self-storage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -48,7 +48,7 @@ h1 {
 }
 
 .getStarted {
-  background: url("../../assets/images/lockwood-storage.jpg") center top no-repeat fixed;
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lockwood_Images/lockwood-storage.jpg") center top no-repeat fixed;
   background-size: cover;
 
   .get-started {

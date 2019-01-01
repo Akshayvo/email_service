@@ -55,22 +55,22 @@ export const gettingStarted = `Are you ready to make some space in your life?
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/jumbotorn-bottom-images/enviro.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lockwood_Images/jumbotron-bottom-images/enviro.svg`,
         label: 'Convenient Location'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/jumbotorn-bottom-images/easy.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lockwood_Images/jumbotron-bottom-images/easy.svg`,
         label: 'Climate Controlled Units Available'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/jumbotorn-bottom-images/truck.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lockwood_Images/jumbotron-bottom-images/truck.svg`,
         label: 'Drive Up Outdoor Units'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/jumbotorn-bottom-images/value.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lockwood_Images/jumbotron-bottom-images/value.svg`,
         label: 'Online Bill Pay'
     },
 ];
