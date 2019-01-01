@@ -5,12 +5,33 @@
   min-height: 86vh;
   margin-bottom: 50px;
 
-  .rent-sub-holder {
-    padding: 64px;
+  .padding {
+    padding: 72px 48px;
+  }
 
+  .padding-for-small-device {
+    padding: 0 24px 24px 24px;
+  }
+
+  .scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+
+    iframe {
+      width: 100%;
+      overflow: auto;
+      min-width: 100%;
+    }
+  }
+
+  .rent-sub-holder {
     p {
       padding: 0;
       margin: 0;
+    }
+
+    a {
+      color: $fontColor;
     }
 
     .rent-example {
@@ -46,12 +67,31 @@
   .rent-holder {
     padding-top: 60px;
 
-    .rent-sub-holder {
-      padding: 16px;
+    .padding {
+      padding: 0;
+    }
+
+    .padding-for-small-device {
+      padding: 24px;
     }
 
     iframe {
       min-height: 400px;
+    }
+
+    .scroll-wrapper {
+      -webkit-overflow-scrolling: touch;
+      overflow: auto;
+
+      iframe {
+        width: 100%;
+        overflow: auto;
+        min-width: 100%;
+      }
+    }
+
+    .rent-sub-holder {
+      padding: 16px;
     }
 
     .rent-example {

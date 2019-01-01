@@ -83,3 +83,12 @@ export const serviceOffered = [
 
 export const gettingStarted = `Are you ready to de-clutter your life with Drayton Habor Mini Storage?
                                Check out our unit pricing and reserve your unit or parking space today!`;
+
+export const blurb = [
+    {
+        h1: `Affordable, Secure Self Storage Units`,
+        p: `Drayton Harbor Mini Storage proudly serves Blaine, Bellingham, Birch Bay and surrounding communities
+        with high-quality customer storage, top notch customer service and the amenities you need to make your
+        storage unit experience a breeze.`,
+    }
+];

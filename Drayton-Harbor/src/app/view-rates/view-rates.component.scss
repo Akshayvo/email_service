@@ -5,6 +5,26 @@
   min-height: 86vh;
   margin-bottom: 50px;
 
+  .padding {
+    padding: 48px;
+  }
+
+  iframe {
+    overflow: hidden;
+    overflow-x: hidden;
+  }
+
+  .scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+
+    iframe {
+      width: 100%;
+      overflow: auto;
+      min-width: 100%;
+    }
+  }
+
   .coming {
     div {
       height: 35rem;
@@ -14,22 +34,31 @@
       padding-top: 40%;
     }
   }
-
-  iframe {
-    overflow: hidden;
-    overflow-x: hidden;
-  }
 }
 
 
 @media screen and (max-width: 600px) {
-  .contentHolder {
-    padding-top: 60px;
-  }
-
   iframe {
     overflow: hidden;
     overflow-x: auto;
+  }
+
+  .contentHolder {
+    padding-top: 60px;
+
+    .padding {
+      padding: 0;
+    }
+
+    .scroll-wrapper {
+      -webkit-overflow-scrolling: touch;
+      overflow-x: scroll;
+
+      iframe {
+        width: 100%;
+        overflow: scroll;
+      }
+    }
   }
 
   img {

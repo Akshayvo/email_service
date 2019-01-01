@@ -2,7 +2,7 @@
 
 //Basic color and font styles
 // $primary: #3c8fb4;
-$primary: #f5a700;
+$primary: #e59723;
 $primaryDark: #dc9600;
 
 // $primary: #FF9800;
@@ -59,25 +59,29 @@ body {
   background-color: $primary;
   border-color: $primary;
   color: $white !important;
-  border: 1px solid $primary;
+  border: 2px solid $primary;
+  font-weight: 600;
 }
 
 .btn-primary:hover {
   background-color: $primaryDark;
   border-color: $primaryDark;
+  font-weight: 600;
 }
 
 .btn-outline-primary {
   background-color: transparent;
   border-color: $primary;
-  border: 1px solid $primary;
+  border: 2px solid $primary;
   color: $primary !important;
+  font-weight: 600;
 }
 
 .btn-outline-primary:hover {
   background-color: $primaryDark;
   border-color: $primaryDark;
   color: $white !important;
+  font-weight: 600;
 }
 
 .section-headings {
