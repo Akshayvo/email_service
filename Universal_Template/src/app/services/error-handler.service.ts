@@ -1,5 +1,6 @@
+import { Router } from '@angular/router';
 import { environment } from '../../environments/environment';
-import { Injectable, ErrorHandler } from '@angular/core';
+import { Injectable, ErrorHandler, Injector } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
 import { ErrorReportingService } from './error-reporting.service';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
@@ -11,14 +12,15 @@ import * as StackTraceParser from 'error-stack-parser';
 export class ErrorHandlerService implements ErrorHandler {
 
   constructor(
-    private errorReport: ErrorReportingService
+    private errorReport: ErrorReportingService,
+    private injector: Injector,
   ) {
     console.log('Error reporting initialized');
-
   }
 
   handleError(error: Error | HttpErrorResponse) {
     console.log('Error');
+    const router = this.injector.get(Router);
 
     if (error instanceof HttpErrorResponse) {
       // Server error happened
@@ -33,7 +35,9 @@ export class ErrorHandlerService implements ErrorHandler {
       console.log('App Error -> Client Error');
     }
     const errorWithContext = this.addContextInfo(error);
+    // Generic route /error -> Error Handler Component
     this.reportError(errorWithContext);
+    router.navigate(['/error']);
   }
 
   addContextInfo(error: any) {

@@ -7,6 +7,7 @@ import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { PaymentComponent } from './payment/payment.component';
 import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'about', component: AboutComponent },
-  { path: '**', component: ErrorComponent }
+  { path: 'error', component: ErrorHandlerComponent },
+  { path: '**', component: ErrorComponent },
 ];
 
 @NgModule({

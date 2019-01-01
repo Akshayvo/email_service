@@ -56,7 +56,7 @@ export class ContactComponent implements OnInit {
 
   public generateClientError() {
     console.log('Client Error');
-    let t = a + b;
+    // let t = a + b;
   }
 
   public validate(check, value, id, helpId) {

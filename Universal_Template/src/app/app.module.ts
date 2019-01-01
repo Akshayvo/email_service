@@ -17,6 +17,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { TablesComponent } from './tables/tables.component';
 import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
@@ -35,7 +36,8 @@ import { ErrorHandlerService } from './services/error-handler.service';
     BreadcrumbComponent,
     TablesComponent,
     AboutComponent,
-    ErrorComponent
+    ErrorComponent,
+    ErrorHandlerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

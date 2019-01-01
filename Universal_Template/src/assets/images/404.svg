@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="711" height="573" viewBox="0 0 711 573">
+  <g id="Group_6" data-name="Group 6" transform="translate(-258 -254)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(278 288)" fill="#f6f6f6" stroke="#707070" stroke-width="1">
+      <rect width="671" height="539" stroke="none"/>
+      <rect x="0.5" y="0.5" width="670" height="538" fill="none"/>
+    </g>
+    <g id="Path_4" data-name="Path 4" transform="translate(316 356)" fill="#fdfdfd">
+      <path d="M 594.5 470.5 L 0.5 470.5 L 0.5 0.5 L 594.5 0.5 L 594.5 470.5 Z" stroke="none"/>
+      <path d="M 1 1 L 1 470 L 594 470 L 594 1 L 1 1 M 0 0 L 595 0 L 595 471 L 0 471 L 0 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(258 254)" fill="#e5e5e5" stroke="#707070" stroke-width="1">
+      <rect width="711" height="35" stroke="none"/>
+      <rect x="0.5" y="0.5" width="710" height="34" fill="none"/>
+    </g>
+    <g id="Group_1" data-name="Group 1" transform="translate(-88 40)">
+      <g id="Path_1" data-name="Path 1" transform="translate(399 361)" fill="#fbfbfb">
+        <path d="M 604.5 150.5 L 0.5 150.5 L 0.5 0.5 L 604.5 0.5 L 604.5 150.5 Z" stroke="none"/>
+        <path d="M 1 1 L 1 150 L 604 150 L 604 1 L 1 1 M 0 0 L 605 0 L 605 151 L 0 151 L 0 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <line id="Line_1" data-name="Line 1" x2="604.5" transform="translate(399.5 379.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <line id="Line_4" data-name="Line 4" x2="604.5" transform="translate(399.5 427.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <line id="Line_6" data-name="Line 6" x2="604.5" transform="translate(399.5 475.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <line id="Line_2" data-name="Line 2" x2="604.5" transform="translate(399.5 403.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <line id="Line_3" data-name="Line 3" x2="604.5" transform="translate(399.5 451.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <line id="Line_5" data-name="Line 5" x2="604.5" transform="translate(399.5 499.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(399 497)" fill="#f6f6f6" stroke="#707070" stroke-width="1">
+        <rect width="605" height="15" stroke="none"/>
+        <rect x="0.5" y="0.5" width="604" height="14" fill="none"/>
+      </g>
+      <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(666 502)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="72" height="6" rx="3" stroke="none"/>
+        <rect x="0.5" y="0.5" width="71" height="5" rx="2.5" fill="none"/>
+      </g>
+    </g>
+    <g id="Path_5" data-name="Path 5" transform="translate(305 328)" fill="#e5e5e5">
+      <path d="M 617.5 90.5 L 0.5 90.5 L 0.5 0.5 L 617.5 0.5 L 617.5 90.5 Z" stroke="none"/>
+      <path d="M 1 1 L 1 90 L 617 90 L 617 1 L 1 1 M 0 0 L 618 0 L 618 91 L 0 91 L 0 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Group_4" data-name="Group 4">
+      <g id="Rectangle_19" data-name="Rectangle 19" transform="translate(520 345)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="188" height="58" stroke="none"/>
+        <rect x="0.5" y="0.5" width="187" height="57" fill="none"/>
+      </g>
+      <text id="_404" data-name="404" transform="translate(614 388)" fill="#707070" font-size="36" font-family="Lato, sans-serif"><tspan x="-29.109" y="0">404</tspan></text>
+    </g>
+  </g>
+</svg>
