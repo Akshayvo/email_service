@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 77">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 14px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-2 {
+        font-size: 24px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-3,
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #fae33a;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_203" data-name="Group 203" transform="translate(-130 -68)">
+    <text id="YOUR_LOGO" data-name="YOUR
+LOGO" class="cls-1" transform="translate(149 96)"><tspan x="0" y="0">YOUR</tspan><tspan class="cls-2"><tspan x="0" y="30">LOGO</tspan></tspan></text>
+    <g id="Rectangle_1193" data-name="Rectangle 1193" class="cls-3" transform="translate(130 68)">
+      <rect class="cls-4" width="101" height="77"/>
+      <rect class="cls-5" x="0.5" y="0.5" width="100" height="76"/>
+    </g>
+  </g>
+</svg>
