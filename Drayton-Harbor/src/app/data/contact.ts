@@ -1,15 +1,20 @@
 export const contact = [
     {
+        id: 0,
         label: 'Address:',
         data: '8870 Blaine Rd, Blaine, WA 98230',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
+        id: 1,
+        redirect: 'mailto:sales@draytonharborministorage.com',
         label: 'Email:',
         data: 'sales@draytonharborministorage.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
+        id: 2,
+        redirect: 'tel:3603321047',
         label: 'Phone:',
         data: '(360)332-1047',
         class: 'fas fa-phone mr-2 iconColor',

@@ -19,7 +19,6 @@ import { ErrorComponent } from './error/error.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
-import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 
@@ -34,7 +33,6 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
     PaymentComponent,
     TablesComponent,
     ErrorComponent,
-    UnitSizerComponent,
     StorageTipsComponent,
     AccordionComponent,
     ContactButtonComponent,
