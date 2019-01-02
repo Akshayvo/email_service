@@ -23,6 +23,10 @@
   }
 }
 
+.contact-bottom {
+  padding: 48px 0;
+}
+
 .bg-translucent {
   height: 60vh;
   color: $white;
@@ -96,6 +100,14 @@ label {
     width: 370px;
     text-align: center;
   }
+}
+
+.btn-outline-primary {
+  margin: 4px;
+}
+
+.btn-primary {
+  margin: 4px;
 }
 
 @media only screen and (min-width: 992px) and (min-height: 601px) and(max-height: 950px) {
@@ -240,15 +252,24 @@ label {
   .content-margin-top {
     margin-top: 36px;
   }
+
+  .contact-bottom {
+    padding: 16px 0;
+  }
 }
 
 @media only screen and (max-width: 445px) {
   .btn-primary {
     min-width: 100%;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
   }
 
   .btn-outline-primary {
     min-width: 100%;
+    margin: 0;
+  }
+
+  .contact-bottom {
+    padding: 16px 0;
   }
 }

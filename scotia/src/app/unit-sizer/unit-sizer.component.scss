@@ -14,6 +14,10 @@
   }
 }
 
+.unit-sizer-bottom {
+  padding: 48px 0;
+}
+
 .bg-translucent {
   height: 60vh;
   color: $white;
@@ -144,9 +148,11 @@
     }
   }
 
-  .unit-sizer-container {
-    // padding-top: 64px;
+  .unit-sizer-bottom {
+    padding: 16px 0;
+  }
 
+  .unit-sizer-container {
     .unit-sizer-box {
       padding: 16px;
     }

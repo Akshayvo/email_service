@@ -13,6 +13,10 @@
   padding: 0 8%;
 }
 
+.view-rates-bottom {
+  padding: 48px 0;
+}
+
 .bg-translucent {
   height: 60vh;
   color: $white;
@@ -67,7 +71,7 @@
   .view-rates-top {
     height: 40vh;
     background-size: cover;
-    background-position: center top;
+    background-position: initi;
     background-attachment: scroll;
   }
 
@@ -86,6 +90,10 @@
 
   .content-margin-top {
     margin-top: 36px;
+  }
+
+  .view-rates-bottom {
+    padding: 16px 0;
   }
 }
 

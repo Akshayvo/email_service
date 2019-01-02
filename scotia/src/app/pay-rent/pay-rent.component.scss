@@ -13,6 +13,10 @@
   padding: 0 8%;
 }
 
+.payment-bottom {
+  padding: 48px 0;
+}
+
 .bg-translucent {
   height: 60vh;
   color: $white;
@@ -79,6 +83,10 @@
 
   .content-margin-top {
     margin-top: 36px;
+  }
+
+  .payment-bottom {
+    padding: 16px 0;
   }
 }
 

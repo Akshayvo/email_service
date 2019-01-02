@@ -27,6 +27,10 @@
   }
 }
 
+.storage-tips-bottom {
+  padding: 48px 0;
+}
+
 .content-margin-top {
   margin-top: 64px;
 }
@@ -82,6 +86,10 @@
       padding-inline-start: 20px;
     }
   }
+
+  .storage-tips-bottom {
+    padding: 16px 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -108,6 +116,10 @@
     .jumbotorn-top {
       display: none;
     }
+  }
+
+  .storage-tips-bottom {
+    padding: 16px 0;
   }
 
   .content-Holder {
