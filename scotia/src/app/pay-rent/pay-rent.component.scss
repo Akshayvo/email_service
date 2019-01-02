@@ -71,6 +71,10 @@
 @media only screen and (max-width: 600px) {
   .payment-top {
     height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
   }
 
   .content-margin-top {
