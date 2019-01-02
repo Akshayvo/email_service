@@ -11,6 +11,10 @@
   overflow-x: hidden;
   overflow-y: auto;
 
+  a {
+    color: $fontColor;
+  }
+
   .heading {
     h2 {
       color: $primary;
@@ -35,6 +39,7 @@
 
   a {
     color: $primary;
+    font-size: 1.5rem;
   }
 }
 
@@ -48,6 +53,10 @@
     .contact-data {
       font-size: 0.8rem;
     }
+  }
+
+  .contact-links {
+    font-size: 0.8rem;
   }
 }
 

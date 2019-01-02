@@ -16,19 +16,23 @@ export const featuresList = [
 
 export const feature = [
     {
-        path: '../../assets/images/jumbotorn-bottom-images/enviro.svg',
+        // tslint:disable-next-line:max-line-length
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Drayton_Images/jumbotorn-bottom-images/enviro.svg',
         label: 'Convenient Location'
     },
     {
-        path: '../../assets/images/jumbotorn-bottom-images/operator.svg',
+        // tslint:disable-next-line:max-line-length
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Drayton_Images/jumbotorn-bottom-images/operator.svg',
         label: 'Stellar Customer Service'
     },
     {
-        path: '../../assets/images/jumbotorn-bottom-images/value.svg',
+        // tslint:disable-next-line:max-line-length
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Drayton_Images/jumbotorn-bottom-images/value.svg',
         label: 'Online Payment'
     },
     {
-        path: '../../assets/images/jumbotorn-bottom-images/cctv (2).svg',
+        // tslint:disable-next-line:max-line-length
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Drayton_Images/jumbotorn-bottom-images/cctv (2).svg',
         label: 'Security Cameras'
     },
 ];
@@ -79,3 +83,12 @@ export const serviceOffered = [
 
 export const gettingStarted = `Are you ready to de-clutter your life with Drayton Habor Mini Storage?
                                Check out our unit pricing and reserve your unit or parking space today!`;
+
+export const blurb = [
+    {
+        h1: `Affordable, Secure Self Storage Units`,
+        p: `Drayton Harbor Mini Storage proudly serves Blaine, Bellingham, Birch Bay and surrounding communities
+        with high-quality customer storage, top notch customer service and the amenities you need to make your
+        storage unit experience a breeze.`,
+    }
+];

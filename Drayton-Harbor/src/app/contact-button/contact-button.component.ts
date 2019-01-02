@@ -68,7 +68,6 @@ export class ContactButtonComponent implements OnInit {
    if (this.contactForm.invalid) {
        return;
    } else {
-     console.log(this.contactForm.value);
      this.isSubmitted = true;
      this.receiveremail = this.contactInfo[1].data;
 
@@ -81,16 +80,15 @@ export class ContactButtonComponent implements OnInit {
            receiveremail: this.receiveremail,
            message: this.completeMessage,
          };
-         console.log(body);
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {
-               // alert(response.message);
+
              } else {
-               // alert(response.message);
+
              }
            }, (err) => {
-             console.log('Error :', err);
+
            });
          this.submitted = false;
          // MailService(body);

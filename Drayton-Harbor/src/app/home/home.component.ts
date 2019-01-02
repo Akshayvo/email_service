@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
-import { featuresList, featuresHead, aboutUs, serviceOffered, gettingStarted, feature} from '../data/home';
+import { featuresList, featuresHead, aboutUs, serviceOffered, gettingStarted, feature, blurb} from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   contactDetails: any;
   hours: any;
   featuresHead: any;
+  blurb: any;
   featuresList: any;
   aboutUs: any;
   serviceOffered: any;
@@ -64,6 +65,7 @@ export class HomeComponent implements OnInit {
   public fetchFeatures() {
     this.featuresList = featuresList;
     this.featuresHead = featuresHead;
+    this.blurb = blurb;
   }
 
   public fetchStaticContent() {

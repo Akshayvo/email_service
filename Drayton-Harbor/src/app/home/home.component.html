@@ -8,9 +8,9 @@
         </div>
           <div class="container">
             <div class="jumbotron-skew-text">
-              <div class="jum-text disp">
-                <h1 class="my-4">Affordable, Secure Self Storage Units</h1>
-                <p>Drayton Harbor Mini Storage proudly serves Blaine, Bellingham, Birch Bay and surrounding communities with high-quality customer storage, top notch customer service and the amenities you need to make your storage unit experience a breeze.
+              <div class="jum-text disp" *ngFor="let blurb of blurb">
+                <h1 class="my-4">{{blurb.h1}}</h1>
+                <p>{{blurb.p}}
                 </p>
               </div>
               <div class="button-width">
@@ -77,7 +77,7 @@
   <div class="container py-5">
     <div class="row">
       <div class="col-lg-6 py-3">
-        <img src="../../assets/images/home-about-drayton.png" width="auto" height="500px" alt="storage unit picture" class="sectionImage">
+        <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Drayton_Images/home-about-drayton.png" width="auto" height="500px" alt="storage unit picture" class="sectionImage">
       </div>
       <div class="col-lg-6 py-3">
         <h2 class="heading pb-4">About Us</h2>

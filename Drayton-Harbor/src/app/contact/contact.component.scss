@@ -7,14 +7,19 @@
   max-height: auto;
   display: block;
 
+  .padding {
+    padding: 48px;
+  }
+
+  a {
+    color: $fontColor;
+  }
+
   label {
     font-size: 0.875rem;
   }
 
   .contact-data {
-    padding: 64px;
-    background-color: $light;
-
     label {
       padding-top: 0;
       margin-bottom: 0;
@@ -54,14 +59,6 @@
   position: absolute;
 }
 
-input::placeholder {
-  font-size: 0.875rem;
-}
-
-textarea::placeholder {
-  font-size: 0.875rem;
-}
-
 small {
   font-size: 0.8rem;
 }
@@ -76,9 +73,12 @@ small {
   .contentHolder {
     padding-top: 60px;
 
+    .padding {
+      padding: 0;
+    }
 
     .contact-data {
-      padding: 16px 16px 90px 16px;
+      //padding: 16px 16px 90px 16px;
 
       .btn {
         width: 100%;

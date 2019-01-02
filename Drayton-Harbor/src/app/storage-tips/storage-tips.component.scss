@@ -14,9 +14,11 @@
   margin-bottom: 50px;
 
   .storage-content {
-    padding: 64px;
-    background-color: $light;
     min-height: 644px;
+
+    .padding {
+      padding: 48px;
+    }
 
     ul {
       padding-left: 15px;
@@ -37,7 +39,9 @@
     padding-top: 60px;
 
     .storage-content {
-      padding: 16px;
+      .padding {
+        padding: 0;
+      }
     }
   }
 
