@@ -24,11 +24,9 @@
       </div>
     <div class="jumbotron-bottom">
       <div class="container">
-        <div class="feature row">
+        <div class="feature row my-5">
           <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
-            <div class="pb-3">
-              <img [src]="feature?.path" alt="Lockwood Features" height="80px"/>
-            </div>
+              <img [src]="feature?.path" alt="Lockwood Features" height="80px" class="py-2"/>
               <h5 class="feature-text mb-0">{{feature.label}}</h5>
           </div>
         </div>
