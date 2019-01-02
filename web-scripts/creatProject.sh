@@ -28,7 +28,7 @@ else
       	echo "project created successfully"         
 fi
    			
-source=/home/sagar/web_scripts/Universal_Template/
+source=/home/sagar/Websites/Universal_Template/
           
 #create a project 
 rsync -av --progress $source $dest_path/$project_name --exclude dist --exclude node_modules
