@@ -1,9 +1,5 @@
-# www.robotstxt.org/
-# Allow crawling of all content
-<<<<<<< HEAD
-Sitemap: http://www.draytonharborministorage.com/sitemap.xml
-=======
+ # www.robotstxt.org/
+ # Allow crawling of all content
 Sitemap: https://www.draytonharborministorage.com/sitemap.xml
->>>>>>> a85d8017fec95511d8d35ff77cb2073fd976c11c
-User-agent: *
-Disallow:
+ User-agent: *
+ Disallow:
