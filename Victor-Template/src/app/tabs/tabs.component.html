@@ -1,0 +1,16 @@
+
+<div class="container px-0">
+  <div class="grid text-center mx-0 horizontal-scroll-wrapper tab">
+    <span *ngFor="let tab of tabData" class="grid-item" [ngClass]="{'active-tab': selectedTab == tab?.name}" >
+      <span *ngIf="tab?.name !== 'Your Self Storage - Mall' && tab?.name !== 'Your Self Storage -  Village'">
+          <a [routerLink]="tab?.path" [queryParams]="{ currentTab: tab?.name }" [id]="tab?.id" class="px-4 py-2 btn">{{tab.name}}</a>
+      </span>
+      <span *ngIf="tab?.name == 'Your Self Storage - Mall' || tab?.name == 'Your Self Storage -  Village'" [ngClass]="'payment-tab'">
+        <a [routerLink]="tab?.path" [queryParams]="{ name:placeName, id:tab?.id, currentTab: tab?.name }" [id]="tab?.id" class="px-4 py-2 btn">{{tab.name}}</a>
+    </span>
+    </span>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+  
