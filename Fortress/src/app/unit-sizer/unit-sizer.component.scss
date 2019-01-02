@@ -6,12 +6,16 @@
   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/backImg/unit.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
 
   .jumbotorn-top {
     padding: 0% 8%;
   }
+}
+
+.unit-sizer-bottom {
+  padding: 48px 0;
 }
 
 .bg-translucent {
@@ -171,6 +175,10 @@
 @media screen and (max-width: 600px) {
   .unit-sizer-top {
     height: 40vh;
+  }
+
+  .unit-sizer-bottom {
+    padding: 16px 0;
   }
 
   .unit-sizer-container {

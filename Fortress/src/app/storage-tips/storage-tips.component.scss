@@ -5,13 +5,17 @@
   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/backImg/black-box-box-boxes.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: bottom right;
   height: 60vh;
 
   .jumbotorn-top {
     padding: 0% 8%;
   }
+}
+
+.storage-tips-bottom {
+  padding: 48px 0;
 }
 
 .bg-translucent {
@@ -51,15 +55,15 @@
   .jumbotorn-top {
     display: none;
   }
-
-  .p-sec-block {
-    padding-top: 30px;
-  }
 }
 
 @media screen and (max-width: 767px) {
   .storage-tips-top {
     height: 40vh;
+  }
+
+  .storage-tips-bottom {
+    padding: 16px 0;
   }
 
   .jumbotorn-top {
@@ -70,9 +74,5 @@
     h2 {
       display: block;
     }
-  }
-
-  .p-sec-block {
-    padding-top: 30px;
   }
 }

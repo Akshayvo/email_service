@@ -13,6 +13,10 @@
   }
 }
 
+.contact-bottom {
+  padding: 48px 0;
+}
+
 .bg-translucent {
   height: 60vh;
   color: $white;
@@ -126,6 +130,10 @@ textarea::placeholder {
 @media only screen and (max-width: 600px) {
   .contact-top {
     height: 40vh;
+  }
+
+  .contact-bottom {
+    padding: 16px 0;
   }
 }
 
