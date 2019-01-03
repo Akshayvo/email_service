@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0   ,
         label: 'Address:',
-        data: '109 Freemans Bridge Rd.  fortress, NY 12302',
+        data: '12513 NE Fourth Plain Blvd, Vancouver, WA 98682',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
