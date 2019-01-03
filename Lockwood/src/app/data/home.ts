@@ -74,7 +74,7 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/image/cctv.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lockwood_Images/jumbotron-bottom-images/cctv.svg`,
         label: 'Security Cameras On-Premises'
     },
 ];
