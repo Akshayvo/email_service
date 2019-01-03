@@ -12,11 +12,11 @@ export const featuresList = [
     },
     {
         td1: 'Online Reservations',
-        td2: 'Family Owned & Operated'
+        td2: 'Locally Owned & Operated'
     },
     {
         td1: 'Boat/Vehicle Parking',
-        td2: 'Fully Stocked Retail Store'
+        td2: 'Moving Boxes & Supplies Sold Here'
     },
     {
         td1: 'Black Top Paving',
@@ -25,6 +25,10 @@ export const featuresList = [
     {
         td1: 'Online Bill Pay',
         td2: 'Tenant Use Rental Truck'
+    },
+    {
+        td1: 'Authorized Chateau Dealer',
+        td2: 'Secured Access'
     }
 ];
 
@@ -70,7 +74,7 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lockwood_Images/jumbotron-bottom-images/value.svg`,
-        label: 'Online Bill Pay'
+        path: `../../assets/image/cctv.svg`,
+        label: 'Security Cameras On-Premises'
     },
 ];

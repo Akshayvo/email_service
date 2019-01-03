@@ -39,9 +39,9 @@ a {
 
   .navbar-brand {
     img {
-      top: 20px;
+      top: 16px;
       position: absolute;
-      height: 90px;
+      height: 125px;
       width: auto;
     }
   }
@@ -49,7 +49,7 @@ a {
   .nav-link {
     color: $white;
     font-weight: 600;
-    padding: 21px;
+    padding: 30px 21px;
   }
 
   .nav-link:hover {
@@ -63,6 +63,7 @@ a {
 
   button {
     border-color: $white;
+    // margin: 3px auto;
 
     .iconColor {
       color: $white;
@@ -91,9 +92,9 @@ a {
   .navbar {
     .navbar-brand {
       img {
-        top: 16px;
+        top: 8px;
         position: absolute;
-        height: 60px;
+        height: 80px;
         width: auto;
       }
     }
