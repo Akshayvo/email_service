@@ -59,6 +59,7 @@ body {
   background-color: $primary;
   border-color: $primary;
   color: $white !important;
+  border: 2px solid $primary;
 }
 
 .btn-primary:hover,

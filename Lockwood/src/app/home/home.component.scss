@@ -7,7 +7,7 @@
   background-position: center;
   padding: 0;
   height: 80vh;
-  color: $fontColor;
+  color: $dark;
   overflow: hidden;
   border-radius: 0;
 
@@ -15,6 +15,12 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+.jumbotorn-button {
+  .btn {
+    width: 100%;
   }
 }
 
@@ -33,6 +39,7 @@ h1 {
   text-align: center;
 
   img {
+    height: 80px;
     padding: 10px;
   }
 }
@@ -71,7 +78,7 @@ h1 {
 
 .disp {
   text-align: left;
-  color: #000;
+  color: $dark;
 
   h2 {
     font-size: 2.5rem;
@@ -107,15 +114,6 @@ h1 {
   width: 24%;
   position: absolute;
   top: 30%;
-  color: $fontColor;
-
-  h2 {
-    text-align: end;
-  }
-
-  .btn {
-    width: 100%;
-  }
 
   .btn-outline-primary {
     margin-right: 10px;
@@ -155,12 +153,6 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .jumbotorn-skew-text {
-    width: 425px;
-  }
-}
-
 @media only screen and (min-width: 1200px) and (max-height: 450px) {
   .jumbotron {
     height: 100vh;
@@ -171,11 +163,31 @@ h1 {
   }
 
   .jumbotron-bottom {
-    display: none;
-    height: 0;
+    height: 120px;
+  }
+
+  .jumbotorn-skew-text {
+    .disp {
+      p {
+        display: none;
+      }
+    }
+  }
+
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .jumbotorn-skew-text {
+    width: 425px;
+  }
+}
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .jumbotorn-skew-text {
@@ -233,6 +245,10 @@ h1 {
     height: 100vh;
   }
 
+  .jumbotron-bottom {
+    height: 120px;
+  }
+
   .jumbotorn-skew-text {
     .disp {
       p {
@@ -247,11 +263,6 @@ h1 {
     h6 {
       font-size: 0.8rem;
     }
-  }
-
-  .jumbotron-bottom {
-    height: 0;
-    display: none;
   }
 }
 
@@ -299,6 +310,27 @@ h1 {
     height: 100vh;
   }
 
+  .jumbotron-bottom {
+    height: 160px;
+  }
+
+  .jumbotorn-skew-text {
+    a {
+      min-width: 140px;
+      font-size: 0.8rem;
+    }
+
+    .disp {
+      p {
+        font-size: 0.8rem;
+      }
+
+      h2 {
+        font-size: 2.3rem;
+      }
+    }
+  }
+
   .feature-icon-style {
     padding: 12px 24px;
 
@@ -306,15 +338,10 @@ h1 {
       font-size: 0.8rem;
     }
   }
-
-  .jumbotron-bottom {
-    display: none;
-    height: 0;
-  }
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 480px) {
-  .jumbotron-top {
+  .jumbotron {
     text-align: center;
     background-attachment: unset;
     background-position: center left;
@@ -339,17 +366,26 @@ h1 {
     display: none;
   }
 
+  .button-width {
+    max-width: 200px;
+    margin: auto;
+  }
+
   .jumbotorn-skew-style {
-    display: none;
+    transform: skew(0deg);
+    width: 100%;
+    left: 0;
+    right: auto;
+    height: 90px;
+    bottom: 0;
+    position: absolute;
   }
 
   .jumbotorn-skew-text {
     width: 100%;
     left: 0;
     top: auto;
-    bottom: 0;
-    padding: 10px;
-    background: rgba(237, 241, 238, 0.7);
+    bottom: 10px;
 
     a {
       font-size: 1.25rem;
@@ -359,11 +395,6 @@ h1 {
 
   .jumbotorn-button {
     padding: 10px;
-  }
-
-  .jumbotron-bottom {
-    display: none;
-    height: 0;
   }
 }
 
@@ -406,15 +437,11 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 500px) {
-  .jumbotron-top {
-    height: calc(100vh - 56px);
-  }
-
   .jumbotron {
     text-align: center;
     background-attachment: unset;
     background-position: center left;
-    height: calc(100vh - 56px);
+    height: 100vh;
 
     h1 {
       font-size: 2em;
@@ -426,9 +453,12 @@ h1 {
     }
   }
 
+  .jumbotron-top {
+    height: 100vh;
+  }
+
   .jumbotron-bottom {
     height: 0;
-    display: none;
   }
 
   .feature {
@@ -440,24 +470,29 @@ h1 {
   }
 
   .jumbotorn-skew-style {
-    display: none;
+    transform: skew(0deg);
+    width: 100%;
+    left: 0;
+    right: auto;
+    height: 90px;
+    bottom: 0;
+    position: absolute;
   }
 
   .jumbotorn-skew-text {
     width: 100%;
     left: 0;
     top: auto;
-    bottom: 0;
-    background: rgba(237, 241, 238, 0.7);
-
-    .jumbotorn-button {
-      padding: 20px;
-    }
+    bottom: 10px;
 
     a {
       font-size: 1.25rem;
       min-width: 200px;
     }
+  }
+
+  .jumbotorn-button {
+    padding: 10px;
   }
 }
 
@@ -469,7 +504,42 @@ h1 {
     height: 100vh;
   }
 
-  .jumbotron-top {
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .jumbotorn-skew-style {
+    transform: skew(0deg);
+    width: 100%;
+    left: 0;
+    right: auto;
+    height: 90px;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .jumbotorn-skew-text {
+    width: 100%;
+    left: 0;
+    top: auto;
+    right: auto;
+    bottom: 10px;
+  }
+
+  .jumbotorn-button {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 429px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
     height: 100vh;
   }
 
@@ -482,63 +552,32 @@ h1 {
   }
 
   .jumbotorn-skew-style {
-    display: none;
+    transform: skew(0deg);
+    width: 100%;
+    left: 0;
+    height: 90px;
+    bottom: 0;
+    right: auto;
+    position: absolute;
   }
 
   .jumbotorn-skew-text {
     width: 100%;
     left: 0;
     top: auto;
-    bottom: 0;
-    background: rgba(237, 241, 238, 0.7);
-    padding: 20px;
+    bottom: 2px;
+
+    .btn-outline-primary {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+
+    .jumbotorn-button {
+      padding: 15px;
+    }
   }
 
-  .jumbotorn-button {
-    padding: 20px;
-  }
-
-  .jumbotron-bottom {
-    height: 0;
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 429px) {
-  .jumbotron {
-    text-align: center;
-    background-attachment: unset;
-    background-position: center left;
-    height: calc(100vh - 56px);
-  }
-
-  .jumbotron-top {
-    height: calc(100vh - 56px);
-  }
-
-  .feature {
-    display: none;
-  }
-
-  .disp {
-    display: none;
-  }
-
-  .jumbotorn-skew-style {
-    display: none;
-  }
-
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 0;
-    background: rgba(237, 241, 238, 0.7);
-    padding: 10px;
-  }
-
-  .jumbotron-bottom {
-    height: 0;
-    display: none;
+  .pr-0 {
+    padding-right: 15px !important;
   }
 }
