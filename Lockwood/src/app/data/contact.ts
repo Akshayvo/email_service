@@ -9,7 +9,7 @@ export const contact = [
         id: 1,
         redirect: 'mailto:mmanager@lockwood-storage.com',
         label: 'Email:',
-        data: 'mmanager@lockwood-storage.com',
+        data: 'manager@lockwood-storage.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {

@@ -8,14 +8,14 @@
       <div class="container">
         <div class="jumbotorn-skew-text">
           <div class="disp">
-            <h2  class="my-4">{{blurbHeading}}</h2>
+            <h2  class="my-4 text-right">{{blurbHeading}}</h2>
             <p class="text-justify" style="font-weight: 400;">{{blurbText}}</p>
           </div>
           <div class="jumbotorn-button row mx-0">
             <div class="col-6">
               <a class="btn btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
             </div>
-            <div class="col-6">
+            <div class="col-6 pr-0">
               <a class="btn btn-primary" (click)="navigate('/contact')" role="button">Contact Us</a></div>
             </div>
           </div>
@@ -24,12 +24,10 @@
       </div>
     <div class="jumbotron-bottom">
       <div class="container">
-        <div class="feature row">
+        <div class="feature row my-5">
           <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
-            <div class="pb-3">
-              <img [src]="feature?.path" alt="Lockwood Features" height="80px"/>
-            </div>
-              <h5 class="feature-text mb-0">{{feature.label}}</h5>
+            <img [src]="feature?.path" alt="Lockwood Self Storage Features" />
+              <h6 class="feature-text">{{feature.label}}</h6>
           </div>
         </div>
       </div>
