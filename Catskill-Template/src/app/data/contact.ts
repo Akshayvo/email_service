@@ -1,0 +1,54 @@
+export const contact = [
+    {
+        id: 0,
+        label: 'Address:',
+        data: '5877 Cauterskill Road, Address, NY 12414',
+        class: 'fas fa-map-marker-alt mx-2 iconColor',
+    },
+    {
+        id: 1,
+        redirect: 'mailto:mail@yoursite.com',
+        label: 'Email:',
+        data: 'mail@yoursite.com',
+        class: 'fas fa-envelope mx-2 iconColor',
+    },
+    {
+        id: 2,
+        redirect: 'tel:5555555555',
+        label: 'Phone:',
+        data: '(555)555-5555',
+        class: 'fas fa-phone mx-2 iconColor',
+    }
+];
+
+export const hours = [
+    {
+        label: 'Mon-Fri: ',
+        data: '9:00 am - 6:00 pm'
+    },
+    {
+        label: 'Sat: ',
+        data: '9:00 am - 3:00 pm'
+    },
+    {
+        label: 'Sunday: ',
+        data: '8:00 am - 12:00 pm'
+    },
+    {
+        label: 'Facility Access With Pin Code: ',
+        data: '24 hours a day, 7 days a week'
+    }
+];
+
+export const socialLinks = [
+    {
+        label: 'twitter',
+        path: 'https://twitter.com',
+        class: 'fab fa-twitter-square',
+    },
+    {
+        label: 'facebook',
+        path: 'https://www.facebook.com',
+        class: 'fab fa-facebook-square',
+    },
+];
