@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "enter the folder path to find the file or press 'ENTER' to to select by defaultdirectory: "
+echo "Enter the Folder path to find the file or press 'ENTER' to select the default directory: "
 read  folder_path
 
 
@@ -17,7 +17,7 @@ prev_folder="$(pwd)"
 
 
 if [ -e $folder_path/server.js ];then
-	echo "file exists"
+	echo "file exists in the folder"
 	cp $folder_path/server.js $prev_folder/server.js
 	
 else
@@ -27,10 +27,10 @@ else
 	         
 fi
 echo $prev_folder
-echo "read port number:"
+echo "Enter port number:"
 read port_number
 sed -i "s,|| 5000,|| $port_number,g" $prev_folder/server.js
-echo "red app name:"
+echo "Enter app name:"
 read app_name
 
 pm2 start server.js --name=$app_name

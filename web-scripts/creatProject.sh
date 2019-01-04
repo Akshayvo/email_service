@@ -3,7 +3,7 @@ echo "Enter The Project Name:"
 read project_name
 output=$( echo "$project_name" | sed -r 's/([a-z0-9])([A-Z])/\1_\L\2/g')
 echo $output
-echo "enter the path to create the Project or press 'ENTER' to to select by defaultdirectory: "
+echo "Enter the path to create the Project or press 'ENTER' to select the defaultdirectory: "
 read  dest_path
 
 
@@ -20,12 +20,12 @@ fi
 
 
 if [ -e $dest_path/$project_name ];then
-	echo "project name already exists"
+	echo "The same project name already exists in the given path"
 	exit 1
 else
 	
 	mkdir $dest_path/$project_name
-      	echo "project created successfully"         
+      	echo "Project created successfully"         
 fi
    			
 source=/home/sagar/Websites/Universal_Template/

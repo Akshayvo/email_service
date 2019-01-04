@@ -1,22 +1,22 @@
 #!/bin/bash
 # validate xml
-echo "Enter The url"
+echo "Enter The url "
 read url
 url_validator='(https?|ftp|file)://[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]'
 if [[ $url =~ $url_validator ]]
 then 
-    	echo "Link valid"
+    	echo "Given URL is valid"
 else
-    	echo "Link not valid"
+    	echo "URL is not valid"
 	exit 1
 fi	
 if grep -E "$url" $dest_path/$project_name/src/sitemap.xml
 then
-	echo ' Url Found in Sitemap File'
+	echo ' Url Found in The File'
 else
-	echo 'url Not Found'
+	echo 'Url Not Found'
 	while true; do
-    		read -p "anyhow Do you want to update the url?" yn
+    		read -p "Do you want to update the url?" yn
     		case $yn in
         		[Yy]* ) sed -i "s,https://stagingcatskill.syrasoft.com/,$url,g;" $dest_path/$project_name/src/sitemap.xml; break;;
         		[Nn]* ) exit;;

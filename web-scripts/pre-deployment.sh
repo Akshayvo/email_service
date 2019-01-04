@@ -1,5 +1,6 @@
 #!/bin/bash
-echo "enter the path or press 'ENTER' to to select by defaultdirectory: "
+echo " Enter the path to the file  or ' PRESS ENTER ' to select The Default Directory: "
+#variable to read the path
 read  folder_path
 
 
@@ -19,7 +20,8 @@ timestamp=`date "+%d-%m-%Y"`
 #file name format 
 dest_folder=$(echo "$directory"_"$timestamp"_dist.zip)
 if [ -e $folder_path/dist ];then
-	echo "folder exists"
+	echo "Folder already exists"
+	# zip the file dist 
 	zip -r $dest_folder dist/
 else
 	echo "Folder doesnot exists"
@@ -36,11 +38,11 @@ else
 	done
 	         
 fi
-echo "read user name :"
+echo "Enter user name :"
 read user_name
-echo "give destination ip addresss:"
+echo "Enter destination ip addresss:"
 read ip_addr
-echo "enter the path of destination folder"
+echo "Enter the path to the destination folder"
 read remote_dest
 cd $folder_path
 #For key based login, please edit this line
