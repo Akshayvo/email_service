@@ -25,7 +25,6 @@ import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
-import { ReviewsComponent } from './reviews/reviews.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { RentSubComponent } from './rent-sub/rent-sub.component';
@@ -50,7 +49,6 @@ import { RentSubComponent } from './rent-sub/rent-sub.component';
     PhotosComponent,
     AboutUsComponent,
     DirectionsComponent,
-    ReviewsComponent,
     TabsComponent,
     AccordionComponent,
     RentSubComponent,

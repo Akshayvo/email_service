@@ -3,9 +3,9 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace victor-website with your project name(Hyphen Case)
+Replace Southern-website with your project name(Hyphen Case)
 
-Replace victorWebsite with your project name(camelCase)
+Replace SouthernWebsite with your project name(camelCase)
 
 Find and Replace across project
 

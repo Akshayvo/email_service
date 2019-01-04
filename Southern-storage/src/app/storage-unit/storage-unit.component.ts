@@ -7,20 +7,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./storage-unit.component.scss']
 })
 export class StorageUnitComponent implements OnInit {
-  name: any;
+  id: number;
   tabs: any;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
     this.isSomePage();
+    console.log(this.id);
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/village')) {
-        this.name = 'village';
-    } else {
-        this.name = 'mall';
+    if (this.router.url.includes('/location/rocky-creek')) {
+        this.id = 0;
+    } else if (this.router.url.includes('/location/agricola')) {
+      this.id = 1;
+    } else if (this.router.url.includes('/location/barton')) {
+      this.id = 2;
     }
   }
 }

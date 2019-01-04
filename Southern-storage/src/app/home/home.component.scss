@@ -5,33 +5,41 @@
   width: 100%;
 }
 
-.carousel-indicators {
-  li {
-    width: 0.8rem;
-    height: 0.8rem;
-    background-color: transparent;
-    border: 1.5px $white solid;
-    position: relative;
-    flex: 0 1 auto;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-  }
+.jumbotron-top {
+  background: url("../../assets/images/Photos/Agricola/southern-storage-agricola-main-building.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
 
-  .active {
-    background-color: $white;
-  }
+.jumbotron-top1 {
+  background: url("../../assets/images/Photos/Rocky-Creek/southern-storage-rocky-creek-location.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-top2 {
+  background: url("../../assets/images/Photos/Rocky-Creek/11.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
 }
 
 .feature-block {
+  // height: 20vh;
+  // padding: 2% 0;
+
   img {
-    height: 60px;
+    height: 70px;
   }
 }
 
 .f-text {
-  color: $primary;
+  color: $dark;
   font-weight: 600;
   font-size: 1.3rem;
 }
@@ -156,6 +164,29 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .contact-hours {
+    border-left: none;
+    padding-left: 5%;
+  }
+
+  .disp {
+    display: block;
+  }
+
+  .for-mall {
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .for-village {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .content-align {
     text-align: center;
@@ -201,29 +232,5 @@
   .contact-hours {
     border-left: none;
     padding-left: 5%;
-  }
-}
-
-
-@media only screen and (max-width: 768px) {
-  .contact-hours {
-    border-left: none;
-    padding-left: 5%;
-  }
-
-  .disp {
-    display: none;
-  }
-
-  .for-mall {
-    .btn {
-      width: 100%;
-    }
-  }
-
-  .for-village {
-    .btn {
-      width: 100%;
-    }
   }
 }

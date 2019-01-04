@@ -5,15 +5,15 @@ body {
   line-height: 1.5rem;
 }
 //Basic color and font styles
-$primary: #2a856c;
-$primaryDark: #1e5e49;
-$primaryLight: #64bea5;
+$primary: #ff8101;
+$primaryDark: #e97705;
+$primaryLight: #f8b16a;
 $secondary: #333;
-$dark: #6d6d6d;
+$dark: #4e4848;
 $light: #f1f0ed;
 $white: #fff;
-$border: #bab3a3;
-$shadow: #000;
+$border: #4e4848;
+$shadow: rgb(2, 2, 2);
 $fontColor: #707070;
 $primaryFont: "Lato", sans-serif;
 
@@ -73,10 +73,12 @@ $primaryFont: "Lato", sans-serif;
 
 .btn-primary:hover,
 .btn-primary:focus,
-.btn-primary:active {
+.btn-primary:active,
+.btn-primary:not([disabled]):not(.disabled):active {
   background-color: $primaryDark !important;
   border-color: $primaryDark !important;
   color: $white !important;
+  box-shadow: none;
 }
 
 .btn-outline-primary {
@@ -91,10 +93,13 @@ $primaryFont: "Lato", sans-serif;
 
 .btn-outline-primary:hover,
 .btn-outline-primary:active,
-.btn-outline-primary:focus {
+.btn-outline-primary:focus,
+.btn-outline-primary:not([disabled]):not(.disabled):active {
   background-color: $primaryDark !important;
   border-color: $primaryDark !important;
   color: $white !important;
+  box-shadow: none;
+
 }
 
 .section-headings {

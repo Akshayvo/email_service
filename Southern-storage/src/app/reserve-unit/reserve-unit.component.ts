@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class ReserveUnitComponent implements OnInit {
 
-  name: any;
+  id: number;
   tabs: any;
   currentActiveTab: any = 'Reserve Unit';
 
@@ -19,10 +19,12 @@ export class ReserveUnitComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/village')) {
-      this.name = 'village';
-    } else {
-      this.name = 'mall';
+    if (this.router.url.includes('/location/rocky-creek')) {
+        this.id = 0;
+    } else if (this.router.url.includes('/location/agricola')) {
+      this.id = 1;
+    } else if (this.router.url.includes('/location/barton')) {
+      this.id = 2;
     }
   }
 }

@@ -1,13 +1,3 @@
-export const iframeMapVillage = [
-  // tslint:disable-next-line:max-line-length
-  { url: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11675.702373314978!2d-77.418952!3d42.979841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb582595e3f89c79!2sVictor+Self+Storage!5e0!3m2!1sen!2sus!4v1540326807113', }
-];
-
-export const iframeMapMall = [
-  // tslint:disable-next-line:max-line-length
-  { url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.456694096037!2d-77.45499368415007!3d43.0317839791476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d133e608f58345%3A0xe4b84336380bb2c!2s7607+Commons+Blvd%2C+Victor%2C+NY+14564!5e0!3m2!1sen!2sus!4v1540326915757', }
-];
-
 export const tabs = [
     {
         id: '1',
@@ -45,98 +35,39 @@ export const tabs = [
         path: './directions',
         active: false,
     },
-    {
-        id: '7',
-        name: 'Reviews',
-        path: './reviews',
-        active: false,
-    },
 ];
 
-export const unitSizerVillage = [
+export const tabsBarton = [
     {
-        size: '5\' x 15\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/5x5.png',
-        data: `This unit is approximately 25 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
-        amenities: [
-            { content: 'chairs', },
-            { content: 'small desks', },
-            { content: 'small bookcases', },
-            { content: 'suitcases', },
-            { content: 'lamps', },
-        ],
-    },
-
-    {
-        size: '10\' x 10\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x10.png',
-        data: `This unit is approximately 50 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
-        amenities: [
-                    { content: 'chairs', },
-                    { content: 'small desks', },
-                    { content: 'small bookcases', },
-                    { content: 'suitcases', },
-                    { content: 'lamps', },
-        ],
+        id: '1',
+        name: 'Storage Units',
+        path: './',
+        active: true,
     },
     {
-        size: '10\' x 15\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x15.png',
-        data: `This unit is approximately 150 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
-        amenities: [
-            { content: 'chairs', },
-            { content: 'small desks', },
-            { content: 'small bookcases', },
-            { content: 'suitcases', },
-            { content: 'lamps', },
-        ],
-    },
-
-
-    {
-        size: '10\' x 20\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x20.png',
-        data: `This unit is approximately 200 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
-        amenities: [
-            { content: 'mattress sets', },
-            { content: 'sofa sets', },
-            { content: 'washer / dryer', },
-            { content: 'refrigerator', },
-            { content: 'many boxes', },
-        ],
-    },
-
-
-    {
-        size: '10\' x 25\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x25.png',
-        data: `This unit is approximately 250 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
-        amenities: [
-            { content: 'mattress sets', },
-            { content: 'sofa sets', },
-            { content: 'washer / dryer', },
-            { content: 'refrigerator', },
-            { content: 'many boxes', },
-        ],
+        id: '2',
+        name: 'Unit Sizer',
+        path: './unitSizer',
+        active: false,
     },
     {
-        size: '10\' x 30\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x30.png',
-        data: `This unit is approximately 300 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
-        amenities: [
-            { content: 'mattress sets', },
-            { content: 'sofa sets', },
-            { content: 'washer / dryer', },
-            { content: 'refrigerator', },
-            { content: 'many boxes', },
-        ],
-    }
+        id: '3',
+        name: 'Reserve Unit',
+        path: './reserveUnit',
+        active: false,
+    },
+    {
+        id: '4',
+        name: 'About Us',
+        path: './about',
+        active: false,
+    },
+    {
+        id: '5',
+        name: 'Directions',
+        path: './directions',
+        active: false,
+    },
 ];
 
 export const unitSizerMall = [
@@ -146,11 +77,11 @@ export const unitSizerMall = [
         data: `This unit is approximately 25 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
-            { content: 'chairs', },
-            { content: 'small desks', },
-            { content: 'small bookcases', },
-            { content: 'suitcases', },
-            { content: 'lamps', },
+            { content: 'Chairs', },
+            { content: 'Small desks', },
+            { content: 'Small bookcases', },
+            { content: 'Suitcases', },
+            { content: 'Lamps', },
         ],
     },
 
@@ -160,11 +91,11 @@ export const unitSizerMall = [
         data: `This unit is approximately 50 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
-                    { content: 'chairs', },
-                    { content: 'small desks', },
-                    { content: 'small bookcases', },
-                    { content: 'suitcases', },
-                    { content: 'lamps', },
+                    { content: 'Chairs', },
+                    { content: 'Small desks', },
+                    { content: 'Small bookcases', },
+                    { content: 'Suitcases', },
+                    { content: 'Lamps', },
         ],
     },
     {
@@ -180,223 +111,114 @@ export const unitSizerMall = [
             { content: 'lamps', },
         ],
     },
+];
+
+export const headingRockyCreek = `About Southern Storage - Rocky Creek`;
+
+export const headingAgricola = `About Southern Storage - Agricola`;
+
+export const headingBarton = `About Southern Storage at Barton`;
+
+export const aboutUsImageRockyCreek = `../../assets/images/Photos/Rocky-Creek/optimized/southern-storage-rocky-creek-roadside-sign.jpg`;
+
+export const aboutUsImageAgricola = `../../assets/images/Photos/Agricola/optimized/southern-storage-argicola-climate-controlled.jpg`;
+
+export const aboutUsImageBarton = `../../assets/images/Photos/Barton/southern-storage-barton-location.png`;
 
 
+export const aboutUsRockyCreek = [
     {
-        size: '10\' x 20\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x20.png',
-        data: `This unit is approximately 200 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
-        amenities: [
-            { content: 'mattress sets', },
-            { content: 'sofa sets', },
-            { content: 'washer / dryer', },
-            { content: 'refrigerator', },
-            { content: 'many boxes', },
-        ],
-    },
-
-
-    {
-        size: '10\' x 25\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x25.png',
-        data: `This unit is approximately 250 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
-        amenities: [
-            { content: 'mattress sets', },
-            { content: 'sofa sets', },
-            { content: 'washer / dryer', },
-            { content: 'refrigerator', },
-            { content: 'many boxes', },
-        ],
+        p: `Southern Storage at Rocky Creek is proud to serve the Lucedale,
+            Vernal and surrounding areas with quality self storage units accessible 24 hours a day, 7 days a week!`,
     },
     {
-        size: '10\' x 30\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x30.png',
-        data: `This unit is approximately 300 sq feet of space that can hold
-                the contents of one small room or large closet, such as: `,
-        amenities: [
-            { content: 'mattress sets', },
-            { content: 'sofa sets', },
-            { content: 'washer / dryer', },
-            { content: 'refrigerator', },
-            { content: 'many boxes', },
-        ],
+        p: `Our affordable storage options are perfect for the residential, commercial or
+            seasonal self storage user. Whether you need room after downsizing your living
+            situation or are looking to store equipment and inventory our Rocky Creek location is an ideal solution!`,
+    },
+    {
+        p: `Access your unit 24/7/365 and use our easy online bill pay portal to check
+            your balance, pay your bill, or update your customer information!`,
+    },
+];
+
+export const aboutUsAgricola = [
+    {
+        p: `Southern Storage at Agricola offers both regular and climate controlled units
+            for your convenience! Our 24/7 access and online bill pay service frees
+            you to operate on your schedule, not just our office hours!`,
+    },
+    {
+        p: `Are you in the process of planning a move? Reserve online or call today to
+            book your unit in advance and save yourself some moving day hassles! Business
+            and seasonal storage users find our flexible hours and variety of storage
+            unit options a convenient answer to their space shortages!`,
     }
 ];
 
-export const aboutUsVillage = [
+export const aboutUsBarton = [
     {
-        p: `Victor Self Storage is proud to serve Victor, Mendon, Bloomfield, Farmington,
-            and surrounding communities with the highest quality self storage,
-            and customer service! We offer self storage services that are second to none.`,
+        p: `Southern Storage at Barton is our newest location and expands the stellar Southern
+            Storage customer service and quality self storage services! Our Barton location
+            offers units ranging from 5' x 10' to 10' x 15' and is completely fenced in!`,
     },
     {
-        p: `You’ll be thrilled with our on-site, full-time manager, available 24/7/365,
-            to assist you with any questions or troubles that may arise,
-            along with many amenities to make your entire self storage experience a breeze.
-            We now offer a 24/7 online payment portal for your convenience!`,
-    },
-    {
-        p: `Our fully paved facility has ample drainage, to reduce the dust and dirt contamination,
-            and discourage flooding during periods of heavy rain.`,
-    },
-    {
-        p: `Our wide selection of convenient unit sizes ensures all of your storage unit needs are covered,
-            from closet sized 5’x10’ units to our oversized 12’x30’, and 10’x45’ units,
-            there are few storage needs we can’t satisfy!`,
-    },
-    {
-        p: `Need boxes, tape, or other moving, and storage-related supplies?
-            Stop into our well-stocked retail store! At Victor Self Storage,
-            we strive to provide safe, secure, quality, self-storage, at an affordable price.
-            Reach out today, and make your reservation!`,
-
-    },
-    {
-        p: `We take the security of your belongings seriously,
-            which is why all of our units have individual unit door alarms,
-            theft-proof cylinder locks, and are surrounded by a full perimeter fence.`,
+        p: `Our Barton location is complete with its own office and hours to
+            further expand your customer service experience. As with any Southern
+            Storage location you can reserve a unit or pay your rent online 24/7!`,
     },
 ];
 
-export const aboutUsMall = [
+export const directionRockyCreek = [
     {
-        p: `Victor Self Storage is excited to open its second location, right by Eastview Mall!
-            We continue the same tradition of high quality self storage, and stellar customer service!
-            Our indoor RV parking is the perfect way to protect your recreational vehicle from damage
-            in the brutal Western New York winters!`,
-    },
-    {
-        p: `RV customers of Victor Self Storage can utilize our RV dump station, top off their water supply,
-            or even use our 3 amp outlet for a trickle charger.
-            We also offer over a hundred parking spaces for cars, boats, and trucks!`,
-    },
-    {
-        p: `We take the safety of your belongings seriously. Our 24/7 video surveillance monitors the property,
-            while individual door alarms protect your units from tampering.
-            Our managers perform regular lot checks to ensure your units remain undisturbed.`,
-    },
-    {
-        p: `Our temperature controlled units are the perfect solution to storing belongings in Western New York,
-            and are backed by second to none customer service!
-            We are positive that you will be absolutely satisfied with your self storage,
-            and customer service experience! Reserve your unit, or parking spot today!`,
-    },
-];
-
-
-export const directionVillage = [
-    {
-        label: 'Coming from Route 332',
+        label: 'Coming From North MS-63/Carl Hudson Rd',
         datas: [
-        { content: 'If driving north on NY-332 turn left on Route 96 3.0 mi'},
-        { content: 'If driving south on NY-332 turn right on Route 96 3.0 mi' },
-        { content: 'Drive west on NY-96' },
-        { content: 'Turn left onto School St 0.4 mi' },
-        { content: 'Victor Self Storage - Village will be on the right' },
+        { content: 'Turn left onto Jake Hill/Windburn Chapel Rd - 2.4 miles'},
+        { content: 'Turn right onto Old Hwy 63 N - 2.9 miles' },
+        { content: `Southern Storage at Rocky Creek will be on the right
+                    immediately after Beaver Dam Rd/Rocky Creek Rd` },
         ],
     },
     {
-        label: 'Coming from the NYS Thruway',
+        label: 'Coming from South U.S. Highway 98',
         datas: [
-        { content: 'Head east on I-90 E - 0.5 mi'},
-        { content: 'Take exit 45 for I-490 toward Rochester/Victor - 0.6 mi' },
-        { content: 'Continue onto I-490 W - 0.2 mi' },
-        { content: 'Take exit 29 for NY-96 toward Victor - 0.4 mi' },
-        { content: 'Turn left onto NY-96 S - 3.1 mi' },
-        { content: 'Turn right onto School St' },
-        { content: 'Victor Self Storage - Village will be on the right' },
+        { content: 'Turn right onto Old Highway 63 N 1.4 miles'},
+        { content: `Southern Storage at Rocky Creek will be on the
+                    left immediately before Beaver Dam Rd/Rocky Creek Rd` },
         ],
     },
 ] ;
 
-export const directionMall = [
+export const directionAgricola = [
     {
-        label: 'Directions from NYS Thruway',
+        label: 'Coming From MS-63 South',
         datas: [
-        { content: 'Head northwest on I-90 W - 0.1 mi'},
-        { content: 'Use the right 2 lanes to take exit 45 for I-490 toward Rochester - 0.3 mi' },
-        { content: 'Continue onto I-490 W - 0.2 mi' },
-        { content: 'Take exit 29 for NY-96 toward Victor - 0.4 mi' },
-        { content: 'Turn right onto NY-96 N - 1.3 mi ' },
-        { content: 'Turn left onto Commons Blvd - 318 ft' },
-        { content: 'Turn right - 92 ft' },
-        { content: 'Continue straight - 0.6 mi' },
-        { content: 'Turn right' },
-        { content: 'Victor Self Storage - Mall will be on the right' },
-
+        { content: 'Turn right onto Wayne Lee Rd - 0.2 miles'},
+        { content: 'Turn left onto CCC Rd - 2.3 miles' },
+        { content: 'Turn left onto MS-613 N 0.4 miles' },
+        { content: `Southern Storage at Agricola will be on the left,
+                    between Agricola Hardware & Lumber and the Dollar General` },
         ],
     },
     {
-        label: 'Directions when driving south on I-490',
+        label: 'Coming From U.S. 98',
         datas: [
-        { content: 'Take exit 28 for NY-96 - 0.2 mi'},
-        { content: 'Use any lane to turn left onto NY-96 S - 1.0 mi' },
-        { content: 'UTurn right onto Commons Blvd - 295 ft' },
-        { content: 'Turn right - 92 ft' },
-        { content: 'Continue straight 0.6 mi' },
-        { content: 'Victor Self Storage - Mall will be on the right' }
+        { content: 'Turn left onto Shipman Rd - 3.4 miles'},
+        { content: 'Continue onto Agricola Latonia Rd - 2.9 miles' },
+        { content: 'Turn right onto MS-612 W - 0.9 miles' },
+        { content: 'Turn left onto MS-613 S 1.1 miles' },
         ],
     },
 ] ;
 
-export const direction = [
+export const directionBarton = [
     {
-        label: 'Driving directions to Victor Self Storage coming from Route 84 exit 5',
+        label: 'Directions From Lucedale',
         datas: [
-        { content: 'Turn right on NY-208 N for 0.9 miles.'},
-        { content: 'Turn right onto Bracken Rd 0.8 Miles.' },
-        { content: 'Beehive Self Storage will be on the right hand side of the road.' }
+        { content: 'Head south on Winter St toward Church St - 0.6 miles.'},
+        { content: 'Continue onto MS-26 W - 282ft' },
+        { content: 'Turn left onto Old Highway 63 - 4.3 miles' },
+        { content: 'Turn left onto MS-63 S - 4.6 miles' }
         ],
     },
-    {
-        label: 'Driving directions to Victor Self Storage coming from Route 84 exit 5A',
-        datas: [
-        { content: 'Turn right on NY-747 N 0.2 Miles.'},
-        { content: 'Turn left onto NY-17K N 2.6 Miles.' },
-        { content: 'Turn left onto Bracken Rd 0.4 Miles.' }
-        ],
-    },
-    {
-        label: 'Driving directions to Victor Self Storage driving North on Route 208',
-        datas: [
-        { content: 'Pass under Route 84 going North on Route 208.'},
-        { content: 'Turn right onto Bracken Rd 0.8 Miles.' },
-        { content: 'Victor Self Storage will be on the right hand side of the road.' }
-        ],
-    }
 ] ;
-
-
-export const reviewVillage = [
-    {
-        p : `"I wanted a storage facility that was secure, accessible, reasonably priced,
-            and in the right location. I've used other storage facilities in the past that
-            really didn't make me feel like my "stuff" was safe,
-            and there wasn't anyone around to help out if I had an issue.
-            Victor Self Storage is an extremely good facility, yes, I'll say great.
-            I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects,
-            and I DO recommend them every chance I get!"`,
-        by: '- Mary (Victor, New York)',
-    },
-    {
-        p : `"I wanted a storage facility that was secure, accessible, reasonably priced,
-            and in the right location. I've used other storage facilities in the past
-            that really didn't make me feel like my "stuff" was safe,
-            and there wasn't anyone around to help out if I had an issue.
-            Victor Self Storage is an extremely good facility, yes, I'll say great.
-            I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects,
-            and I DO recommend them every chance I get!"`,
-        by: '- Mary (Victor, New York)',
-    },
-    {
-        p : `"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location.
-            I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe,
-            and there wasn't anyone around to help out if I had an issue.
-            Victor Self Storage is an extremely good facility, yes, I'll say great.
-            I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects,
-            and I DO recommend them every chance I get!"`,
-        by: '- Mary (Victor, New York)',
-    }
-];

@@ -1,7 +1,7 @@
 <div class="contentHolder">
   <div class="container">
       <div class="heading pb-5">
-        <h1 class="text-center pt-5">Contact Victor Self Storage</h1>
+        <h1 class="text-center pt-5">Contact Southern Storage</h1>
       </div>
       <div class="contact-data p-5">
         <div class="row">
@@ -80,40 +80,55 @@
           </div>
           
           <div class="col-md-4">
-            <div class="for-mall">
-              <h2> Victor Self Storage - Mall </h2>
-
+            <div class="for-village">
+             <h2> Southern Storage - Agricola</h2>
               <div class="py-2">
-                  <span *ngFor="let contact of contactsMall; let i = index">
+                  <span *ngFor="let contact of contactsAgricola; let i = index">
                     <span *ngIf = "i !== 0">
                      <b>{{contact.label}}</b> {{contact.data}}<br>
                     </span>
                   </span>
               </div>
-
+              
               <span><b> Office: </b></span> <br>
-              <span *ngFor="let hour of hoursMall">
+              <span *ngFor="let hour of hoursAgricola">
                 <b>{{hour.label}}</b>{{hour.data}}<br>
               </span>  
             </div>
 
+
+            <div class="for-mall pt-5">
+              <h2> Southern Storage - Rocky Creek</h2>
+              <div class="py-2">
+                  <span *ngFor="let contact of contactsRockyCreek; let i = index">
+                    <span *ngIf = "i !== 0">
+                     <b>{{contact.label}}</b> {{contact.data}}<br>
+                    </span>
+                  </span>
+              </div>
+            </div>
+              <!-- <span><b> Office: </b></span> <br>
+              <span *ngFor="let hour of hoursRockyCreek">
+                <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>  
+            </div> -->
             <div class="for-village pt-5">
-                <h2> Victor Self Storage - Village </h2>
-  
+                <h2> Southern Storage - Barton</h2>
                 <div class="py-2">
-                    <span *ngFor="let contact of contactsVillage; let i = index">
-                      <span *ngIf = "i !== 0">
-                       <b>{{contact.label}}</b> {{contact.data}}<br>
-                      </span>
+                    <span *ngFor="let contact of contactsBarton; let i = index">
+                        <span *ngIf = "i !== 0">
+                        <b>{{contact.label}}</b> {{contact.data}}<br>
+                        </span>
                     </span>
                 </div>
-                
+              
                 <span><b> Office: </b></span> <br>
-                <span *ngFor="let hour of hoursVillage">
-                  <b>{{hour.label}}</b>{{hour.data}}<br>
+                <span *ngFor="let hour of hoursBarton">
+                    <b>{{hour.label}}</b>{{hour.data}}<br>
                 </span>  
-              </div>
-          </div>
+            </div>
+
+
         </div>
       </div>
   </div>

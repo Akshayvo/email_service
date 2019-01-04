@@ -9,8 +9,15 @@
 
       <div class="col-lg-6">
         <div class="data">
-          <h3>Victor Self Storage - {{name}}</h3>
-          <p style="text-align: justify;" *ngFor='let data of galleryData'> {{data.p}} </p>
+            <span *ngIf="id === 0">
+                <h3>Southern Storage at Agricola</h3>
+                <p style="text-align: justify;" *ngFor='let data of galleryData'> {{data.p}} </p>
+            </span>
+            <span *ngIf="id === 1">
+                <h3>Southern Storage - Agricola Gallery</h3>
+                <p style="text-align: justify;" *ngFor='let data of galleryData'> {{data.p}} </p>
+            </span>
+         
           <div id="thumbnailsList" class="thumbnailsList">
             <span *ngFor="let image of galleryImages; let i = index" class="m-1">
              <img src="{{image.url}}" class="tn" width="70px" height="auto" 

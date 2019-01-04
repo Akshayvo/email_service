@@ -5,15 +5,21 @@ export const navLinks = [
     },
     {
         id: '1',
-        label: 'Village Location',
-        path: '/location/village',
-        name: 'village'
+        label: 'Agricola',
+        path: '/location/agricola',
+        name: 'agricola'
     },
     {
         id: '2',
-        label: 'Mall Location',
-        path: '/location/mall',
-        name: 'mall'
+        label: 'Rocky Creek',
+        path: '/location/rocky-creek',
+        name: 'RockyCreek'
+    },
+    {
+        id: '3',
+        label: 'Barton',
+        path: '/location/barton',
+        name: 'barton'
     },
     {
         label: 'Pay Rent',

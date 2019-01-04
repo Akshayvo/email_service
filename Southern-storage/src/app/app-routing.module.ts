@@ -12,13 +12,12 @@ import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
-import { ReviewsComponent } from './reviews/reviews.component';
 import { RentSubComponent } from './rent-sub/rent-sub.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
-  { path: 'location/village',
+  { path: 'location/rocky-creek',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -28,10 +27,9 @@ const routes: Routes = [
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
-      { path: 'reviews', component:  ReviewsComponent },
     ]
   },
-  { path: 'location/mall',
+  { path: 'location/agricola',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -41,16 +39,28 @@ const routes: Routes = [
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
-      { path: 'reviews', component:  ReviewsComponent },
+    ]
+  },
+  { path: 'location/barton',
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      { path: 'storageUnits', component: StorageUnitComponent },
+      { path: 'unitSizer', component: UnitSizerComponent },
+      { path: 'reserveUnit', component: ReserveUnitComponent },
+      { path: 'photos', component: PhotosComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
     ]
   },
 
   { path: 'payment',
     component: PaymentComponent,
     children: [
-      {path: '', redirectTo: 'village' , pathMatch: 'full' },
-      { path: 'village', component: RentSubComponent },
-      { path: 'mall', component: RentSubComponent },
+      {path: '', redirectTo: 'rocky-creek' , pathMatch: 'full' },
+      { path: 'rocky-creek', component: RentSubComponent },
+      { path: 'agricola', component: RentSubComponent },
+      { path: 'barton', component: RentSubComponent },
     ]
   },
 

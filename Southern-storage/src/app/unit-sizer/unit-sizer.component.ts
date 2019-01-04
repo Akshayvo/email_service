@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { unitSizerVillage, unitSizerMall } from '../data/location';
+import { unitSizerMall } from '../data/location';
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -19,17 +19,18 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/village')) {
-        this.fetchUnitSizerVillage();
-    } else {
+    // if (this.router.url.includes('/location/village')) {
+    //     this.fetchUnitSizerVillage();
+    // } else {
+    //   this.fetchUnitSizerMall();
+    // }
       this.fetchUnitSizerMall();
-    }
   }
 
- public fetchUnitSizerVillage() {
-    this.name = 'village';
-    this.unitSizer = unitSizerVillage;
-  }
+//  public fetchUnitSizerVillage() {
+//     this.name = 'village';
+//     this.unitSizer = unitSizerVillage;
+//   }
 
   public fetchUnitSizerMall() {
     this.name = 'mall';

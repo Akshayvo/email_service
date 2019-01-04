@@ -2,8 +2,10 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';
-import { featuresHead, serviceOffered, homeCarousel } from '../data/home';
+import { contactsRockyCreek, hoursRockyCreek,
+         contactsAgricola, hoursAgricola,
+         contactsBarton, hoursBarton } from '../data/contact';
+import { featuresHead, serviceOffered } from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -12,10 +14,12 @@ import { featuresHead, serviceOffered, homeCarousel } from '../data/home';
 })
 export class HomeComponent implements OnInit {
 
-  contactsVillage: any;
-  contactsMall: any;
-  hoursVillage: any;
-  hoursMall: any;
+  contactsRockyCreek: any;
+  contactsBarton: any;
+  contactsAgricola: any;
+  hoursRockyCreek: any;
+  hoursBarton: any;
+  hoursAgricola: any;
   features: any;
   serviceOffered: any;
 
@@ -43,14 +47,16 @@ export class HomeComponent implements OnInit {
   }
 
   public fetchContactDetails() {
-    this.contactsVillage = contactsVillage;
-    this.contactsMall = contactsMall;
+    this.contactsRockyCreek = contactsRockyCreek;
+    this.contactsBarton = contactsBarton;
+    this.contactsAgricola = contactsAgricola;
   }
 
 
   public fetchHours() {
-    this.hoursVillage = hoursVillage;
-    this.hoursMall = hoursMall;
+    this.hoursRockyCreek = hoursRockyCreek;
+    this.hoursAgricola = hoursAgricola;
+    this.hoursBarton = hoursBarton;
    }
 
   public fetchFeatureHead() {

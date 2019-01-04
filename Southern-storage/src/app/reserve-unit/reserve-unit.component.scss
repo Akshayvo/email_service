@@ -1,12 +1,13 @@
-.contentHolder {
+.reserveUnitHolder {
   .container {
     padding-top: 50px;
+    margin-bottom: 50px;
     background-color: #f1f0ed;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .contentHolder {
+  .reserveUnitHolder {
     margin-right: auto;
     margin-left: auto;
     width: 100%;

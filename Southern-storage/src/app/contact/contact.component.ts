@@ -2,7 +2,9 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';
+import { contactsRockyCreek, hoursRockyCreek,
+         contactsAgricola, hoursAgricola,
+         contactsBarton, hoursBarton } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 
@@ -13,18 +15,21 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
-  contactsMall: object;
-  contactsVillage: object;
-  hoursMall: object;
-  hoursVillage: object;
+  contactsAgricola: object;
+  contactsRockyCreek: object;
+  contactsBarton: object;
+  hoursRockyCreek: object;
+  hoursAgricola: object;
+  hoursBarton: object;
   placeName: string;
-
   name: string;
   email: any;
   phone: any;
   location: any;
   message: string;
-  places = [ 'Victor Self Storage - Mall', 'Victor Self Storage - Village' ];
+  places = [ 'Southern Self Storage - Rocky Creek',
+             'Southern Self Storage - Agricola',
+             'Southern Self Storage - Barton' ];
   receiveremail: string;
   completeMessage: string;
 
@@ -44,10 +49,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Have a question or concern about self storage units,
-                climate controlled storage units or U-Haul rentals?`
+      content: `Do you have a question about our services or your account with Southern Storage?
+                Find the contact information for all of our locations here!`
     });
-    this.titleService.setTitle('Contact Victor Self Storage');
+    this.titleService.setTitle('Contact Us | Southern Storage');
   }
 
   ngOnInit() {
@@ -68,23 +73,27 @@ export class ContactComponent implements OnInit {
   });
 
 
-  if ( this.placeName === 'mall' ) {
-    this.contactForm.value.location = 'Victor Self Storage - Mall';
-  }  else if ( this.placeName === 'village' ) {
-    this.contactForm.value.location = 'Victor Self Storage - Village';
-  }
+  if ( this.placeName === 'RockyCreek' ) {
+    this.contactForm.value.location = 'Southern Self Storage - Rocky Creek';
+  }  else if ( this.placeName === 'Agricola' ) {
+    this.contactForm.value.location = 'Southern Self Storage - Agricola';
+  } else if ( this.placeName === 'Barton' ) {
+    this.contactForm.value.location = 'Southern Self Storage - Barton';
+   }
   }
 
   get f() { return this.contactForm.controls; }
 
   public fetchContactDetails() {
-    this.contactsMall = contactsMall;
-    this.contactsVillage = contactsVillage;
+    this.contactsRockyCreek = contactsRockyCreek;
+    this.contactsAgricola = contactsAgricola;
+    this.contactsBarton = contactsBarton;
   }
 
   public fetchHours() {
-    this.hoursMall = hoursMall;
-    this.hoursVillage = hoursVillage;
+    this.hoursRockyCreek = hoursRockyCreek;
+    this.hoursAgricola = hoursAgricola;
+    this.hoursBarton = hoursBarton;
   }
 
 onSubmit() {
@@ -96,10 +105,12 @@ onSubmit() {
  } else {
    this.isSubmitted = true;
 
-   if (this.contactForm.value.location === 'Victor Self Storage - Mall') {
-    this.receiveremail = this.contactsMall[2].data;
-  } else if (this.contactForm.value.location === 'Victor Self Storage - Village') {
-    this.receiveremail = this.contactsVillage[2].data;
+   if (this.contactForm.value.location === 'Southern Self Storage - Rocky Creek') {
+    this.receiveremail = this.contactsRockyCreek[2].data;
+  } else if (this.contactForm.value.location === 'Southern Self Storage - Agricola') {
+    this.receiveremail = this.contactsAgricola[2].data;
+  } else if (this.contactForm.value.location === 'Southern Self Storage - Barton') {
+    this.receiveremail = this.contactsBarton[2].data;
   }
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
