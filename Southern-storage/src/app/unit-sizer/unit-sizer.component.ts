@@ -11,6 +11,7 @@ export class UnitSizerComponent implements OnInit {
   unitSizer: any;
   tabs: any;
   currentTab = 'Unit Sizer';
+  id: number;
   constructor( private router: Router ) {
    }
 
@@ -19,21 +20,17 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public isSomePage() {
-    // if (this.router.url.includes('/location/village')) {
-    //     this.fetchUnitSizerVillage();
-    // } else {
-    //   this.fetchUnitSizerMall();
-    // }
-      this.fetchUnitSizerMall();
+    if (this.router.url.includes('/location/agricola')) {
+        this.id = 0;
+    } else if (this.router.url.includes('/location/rocky-creek')) {
+      this.id = 1;
+    } else {
+      this.id = 2;
+    }
+      this.fetchUnitSizer();
   }
 
-//  public fetchUnitSizerVillage() {
-//     this.name = 'village';
-//     this.unitSizer = unitSizerVillage;
-//   }
-
-  public fetchUnitSizerMall() {
-    this.name = 'mall';
+  public fetchUnitSizer() {
     this.unitSizer = unitSizerMall;
   }
 }

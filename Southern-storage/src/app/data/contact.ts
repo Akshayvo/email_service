@@ -24,7 +24,8 @@ export const hoursRockyCreek = [
     // },
     {
         label: 'Access Hours: ',
-        data: '24/7'
+        data: '24/7',
+        class: 'bg-light'
     },
 ];
 
@@ -59,7 +60,8 @@ export const hoursAgricola = [
     },
     {
         label: 'Facility Access: ',
-        data: '24/7/365'
+        data: '24/7/365',
+        class: 'bg-light'
     }
 ];
 
@@ -94,7 +96,8 @@ export const hoursBarton = [
     },
     {
         label: 'Facility Access: ',
-        data: '24/7'
+        data: '24/7',
+        class: 'bg-light'
     }
 ];
 
