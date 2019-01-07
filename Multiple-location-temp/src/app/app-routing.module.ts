@@ -44,6 +44,19 @@ const routes: Routes = [
       { path: 'reviews', component:  ReviewsComponent },
     ]
   },
+  { path: 'location/location3',
+  component: LocationComponent,
+  children: [
+    {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+    { path: 'storageUnits', component: StorageUnitComponent },
+    { path: 'unitSizer', component: UnitSizerComponent },
+    { path: 'reserveUnit', component: ReserveUnitComponent },
+    { path: 'photos', component: PhotosComponent },
+    { path: 'about', component: AboutUsComponent },
+    { path: 'directions', component: DirectionsComponent },
+    { path: 'reviews', component:  ReviewsComponent },
+  ]
+},
 
   { path: 'payment',
     component: PaymentComponent,
