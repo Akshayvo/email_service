@@ -1,14 +1,11 @@
 /* tslint:disable:max-line-length */
 export const gallerylocation1 = [
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-access.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-alarm.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-clean-and-bright.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-climate-control.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-drive-up-access.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-easy-lift-doors.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-fire-alarms.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-full-perimeter-fence.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-full-time-on-site-staff.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-gate.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-large-units.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-locks.jpg'},
@@ -22,18 +19,13 @@ export const gallerylocation1 = [
 ];
 
 export const gallerylocation2 = [
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-mall.png'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-night.png'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-units.png'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-access.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-alarm.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-clean-and-bright.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-climate-control.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-drive-up-access.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-easy-lift-doors.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-fire-alarms.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-full-perimeter-fence.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-full-time-on-site-staff.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-gate.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-large-units.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-locks.jpg'},
