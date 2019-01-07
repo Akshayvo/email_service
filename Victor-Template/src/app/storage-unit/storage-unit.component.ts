@@ -17,10 +17,10 @@ export class StorageUnitComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/village')) {
-        this.name = 'village';
+    if (this.router.url.includes('/location/location1')) {
+        this.name = 'location1';
     } else {
-        this.name = 'mall';
+        this.name = 'location2';
     }
   }
 }

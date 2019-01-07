@@ -1,4 +1,4 @@
-export const contactsVillage = [
+export const contactsLocation1 = [
     {
         label: 'Address:',
         data: '200 School Your Address, NY 14564',
@@ -11,12 +11,12 @@ export const contactsVillage = [
     },
     {
         label: 'Email:',
-        data: 'villageInfo@yoursite.com',
+        data: 'mailLocation1@yoursite.com',
         class: 'fas fa-envelope-open mx-2 iconColor',
     },
 ];
 
-export const hoursVillage = [
+export const hoursLocation1 = [
     {
         label: 'Mon-Fri: ',
         data: '9:00 am - 5:00 pm',
@@ -37,7 +37,7 @@ export const hoursVillage = [
     }
 ];
 
-export const contactsMall = [
+export const contactsLocation2 = [
     {
         label: 'Address:',
         data: '7607 Commons, Your Address, NY 14564',
@@ -51,12 +51,12 @@ export const contactsMall = [
     },
     {
         label: 'Email:',
-        data: 'mallInfo@yoursite.com',
+        data: 'mailLocation2@yoursite.com',
         class: 'fas fa-envelope-open mx-2 iconColor',
     },
 ];
 
-export const hoursMall = [
+export const hoursLocation2 = [
     {
         label: 'Mon-Fri: ',
         data: '9:00 am - 5:00 pm',
@@ -81,7 +81,7 @@ export const hoursMall = [
 export const socialLinks = [
     {
         label: 'facebook',
-        path: 'https://www.facebook.com/pages/Victor-Self-Storage/211266552318710',
+        path: 'https://www.facebook.com',
         class: 'fab fa-facebook-square',
     },
 ];

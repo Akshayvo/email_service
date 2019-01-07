@@ -1,18 +1,18 @@
-<div id="myCarousel" class="carousel slide carousel-fade jumbotron-container myCarousel" data-ride="carousel">
+<div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselJumbo" data-slide-to="1"></li>
+    <li data-target="#carouselJumbo" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-1.jpg" alt="First slide">
+      <div class="jumbotron-top jumbotron-top-style"></div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-2.jpg" alt="Second slide">
+        <div class="jumbotron-top1 jumbotron-top-style"></div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-3.jpg" alt="Third slide">
+        <div class="jumbotron-top2 jumbotron-top-style"></div>
     </div>
   </div>
 </div>
@@ -32,7 +32,7 @@
   </div>
 <!--Feature Box Ends Here-->
 
-<!--Contact Mall-->
+<!--Contact Location 1-->
 <div class="pb-5 pt-5 bg-light for-mall">    
   <div class="container">
     <div class="row">          
@@ -40,19 +40,19 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47251.12533595377!2d-73.906778!3d42.253001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f78849841f11072!2sCatskill+Self+Storage!5e0!3m2!1sen!2sus!4v1546430162794" width="100%" height="100%" frameborder="0" style="border:1px solid #fff;" allowfullscreen></iframe>
       </div>
       <div class="col-md-4 pl-4 pt-3">
-        <h2>Your Self Storage - Mall</h2>
+        <h2>Your Self Storage - Location 1</h2>
         <p> 
-          <span *ngFor="let contact of contactsMall">
+          <span *ngFor="let contact of contactsLocation1">
             <b>{{contact.label}}</b> {{contact.data}}<br>
           </span>
         </p>
-        <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/mall/storageUnits']" [queryParams]="{ name:'mall', currentTab: 'Storage Units' }" role="button">View Rates</a>                
-        <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/mall/reserveUnit']" [queryParams]="{ name:'mall', currentTab: 'Reserve Unit' }" role="button"> Reserve Unit</a>                                  
+        <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/location1/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>                
+        <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/location1/reserveUnit']" [queryParams]="{ currentTab: 'Reserve Unit' }" role="button"> Reserve Unit</a>                                  
       </div>
       <div class="col-md-3 contact-hours pt-3">
           <h2>Hours:</h2>
           <p>
-            <span *ngFor="let hour of hoursMall">
+            <span *ngFor="let hour of hoursLocation1">
               <b>{{hour.label}}</b>{{hour.data}}<br>
             </span>
           </p>
@@ -60,9 +60,9 @@
     </div>
   </div>      
 </div>
-<!--Contact Mall Ends Here-->
+<!--Contact Location 1 Ends Here-->
 
-<!--Contact Village-->
+<!--Contact Location 2-->
 <div class="pb-5 pt-5 for-village">  
   <div class="container">
     <div class="row">
@@ -70,19 +70,19 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5821.139246712949!2d-76.334158!3d43.155566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6050b46d0319b1d!2sSyrasoft%2C+LLC!5e0!3m2!1sen!2sus!4v1546430063664" width="100%" height="100%" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
       </div>
       <div class="col-md-4  pl-4 pt-3">
-        <h2>Your Self Storage - Village</h2>
+        <h2>Your Self Storage - Location 2</h2>
         <p> 
-          <span *ngFor="let contact of contactsVillage">
+          <span *ngFor="let contact of contactsLocation2">
             <b>{{contact.label}}</b> {{contact.data}}<br>
           </span>
         </p>
-         <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/village/storageUnits']" [queryParams]="{ name:'village', currentTab: 'Storage Units' }" role="button">View Rates</a>            
-         <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/village/reserveUnit']" [queryParams]="{ name:'village',  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                     
+         <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/location2/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+         <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/location2/reserveUnit']" [queryParams]="{ currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                     
       </div>
       <div class="col-md-3 contact-hours pt-3">
           <h2>Hours:</h2>
           <p>
-            <span *ngFor="let hour of hoursVillage">
+            <span *ngFor="let hour of hoursLocation2">
               <b>{{hour.label}}</b>{{hour.data}}<br>
             </span>
           </p>
@@ -90,7 +90,7 @@
     </div>
   </div>  
 </div>
-<!--Contact Village Ends Here-->
+<!--Contact Location 2 Ends Here-->
 
 <!--Testimonial-->
   <div class="testimonial py-5">

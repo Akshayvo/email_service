@@ -43,7 +43,7 @@ export const tabs = [
     },
 ];
 
-export const unitSizerVillage = [
+export const unitSizerLocation1 = [
     {
         size: '5\' x 15\' General Storage',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/5x5.png',
@@ -129,7 +129,7 @@ export const unitSizerVillage = [
     }
 ];
 
-export const unitSizerMall = [
+export const unitSizerLocation2 = [
     {
         size: '5\' x 10\' General Storage',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/5x10.png',
@@ -215,7 +215,7 @@ export const unitSizerMall = [
     }
 ];
 
-export const aboutUsVillage = [
+export const aboutUsLocation1 = [
     {
         p: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
             of classical Latin literature from 45 BC, making it over 2000 years old.`,
@@ -239,7 +239,7 @@ export const aboutUsVillage = [
     },
 ];
 
-export const aboutUsMall = [
+export const aboutUsLocation2 = [
     {
         p: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
             of classical Latin literature from 45 BC, making it over 2000 years old.`,
@@ -264,7 +264,7 @@ export const aboutUsMall = [
 ];
 
 
-export const directionVillage = [
+export const directionLocation1 = [
     {
         label: 'Coming from Route 332',
         datas: [
@@ -272,7 +272,7 @@ export const directionVillage = [
         { content: 'If driving south on NY-332 turn right on Route 96 3.0 mi' },
         { content: 'Drive west on NY-96' },
         { content: 'Turn left onto School St 0.4 mi' },
-        { content: 'Your Self Storage - Village will be on the right' },
+        { content: 'Your Self Storage - Location1 will be on the right' },
         ],
     },
     {
@@ -284,12 +284,12 @@ export const directionVillage = [
         { content: 'Take exit 29 for NY-96 toward Your - 0.4 mi' },
         { content: 'Turn left onto NY-96 S - 3.1 mi' },
         { content: 'Turn right onto School St' },
-        { content: 'Your Self Storage - Village will be on the right' },
+        { content: 'Your Self Storage - Location1 will be on the right' },
         ],
     },
 ] ;
 
-export const directionMall = [
+export const directionLocation2 = [
     {
         label: 'Directions from NYS Thruway',
         datas: [
@@ -302,7 +302,7 @@ export const directionMall = [
         { content: 'Turn right - 92 ft' },
         { content: 'Continue straight - 0.6 mi' },
         { content: 'Turn right' },
-        { content: 'Your Self Storage - Mall will be on the right' },
+        { content: 'Your Self Storage - Location2 will be on the right' },
 
         ],
     },
@@ -314,7 +314,7 @@ export const directionMall = [
         { content: 'UTurn right onto Commons Blvd - 295 ft' },
         { content: 'Turn right - 92 ft' },
         { content: 'Continue straight 0.6 mi' },
-        { content: 'Your Self Storage - Mall will be on the right' }
+        { content: 'Your Self Storage - Location2 will be on the right' }
         ],
     },
 ] ;
@@ -347,7 +347,7 @@ export const direction = [
 ] ;
 
 
-export const reviewVillage = [
+export const reviewLocation1 = [
     {
         p : `"I wanted a storage facility that was secure, accessible, reasonably priced,
             and in the right location. I've used other storage facilities in the past that

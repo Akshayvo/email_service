@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';
+import { contactsLocation2, hoursLocation1, contactsLocation1, hoursLocation2  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 
@@ -13,10 +13,10 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
-  contactsMall: object;
-  contactsVillage: object;
-  hoursMall: object;
-  hoursVillage: object;
+  contactsLocation2: object;
+  contactsLocation1: object;
+  hoursLocation1: object;
+  hoursLocation2: object;
   placeName: string;
 
   name: string;
@@ -24,7 +24,7 @@ export class ContactComponent implements OnInit {
   phone: any;
   location: any;
   message: string;
-  places = [ 'Your Self Storage - Mall', 'Your Self Storage - Village' ];
+  places = [ 'Your Self Storage - Location1', 'Your Self Storage - Location2' ];
   receiveremail: string;
   completeMessage: string;
 
@@ -67,23 +67,23 @@ export class ContactComponent implements OnInit {
   });
 
 
-  if ( this.placeName === 'mall' ) {
-    this.contactForm.value.location = 'Your Self Storage - Mall';
-  }  else if ( this.placeName === 'village' ) {
-    this.contactForm.value.location = 'Your Self Storage - Village';
+  if ( this.placeName === 'Location1' ) {
+    this.contactForm.value.location = 'Your Self Storage - Location1';
+  }  else if ( this.placeName === 'Location2' ) {
+    this.contactForm.value.location = 'Your Self Storage - Location2';
   }
   }
 
   get f() { return this.contactForm.controls; }
 
   public fetchContactDetails() {
-    this.contactsMall = contactsMall;
-    this.contactsVillage = contactsVillage;
+    this.contactsLocation2 = contactsLocation2;
+    this.contactsLocation1 = contactsLocation1;
   }
 
   public fetchHours() {
-    this.hoursMall = hoursMall;
-    this.hoursVillage = hoursVillage;
+    this.hoursLocation1 = hoursLocation1;
+    this.hoursLocation2 = hoursLocation2;
   }
 
 onSubmit() {
@@ -95,10 +95,10 @@ onSubmit() {
  } else {
    this.isSubmitted = true;
 
-   if (this.contactForm.value.location === 'Your Self Storage - Mall') {
-    this.receiveremail = this.contactsMall[2].data;
-  } else if (this.contactForm.value.location === 'Your Self Storage - Village') {
-    this.receiveremail = this.contactsVillage[2].data;
+   if (this.contactForm.value.location === 'Your Self Storage - Location1') {
+    this.receiveremail = this.contactsLocation1[2].data;
+  } else if (this.contactForm.value.location === 'Your Self Storage - Location2') {
+    this.receiveremail = this.contactsLocation2[2].data;
   }
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;

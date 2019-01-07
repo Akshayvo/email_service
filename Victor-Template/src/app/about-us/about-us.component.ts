@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { aboutUsVillage, aboutUsMall } from '../data/location';
+import { aboutUsLocation1, aboutUsLocation2 } from '../data/location';
 
 @Component({
   selector: 'app-about-us',
@@ -19,20 +19,20 @@ export class AboutUsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/village')) {
-        this.fetchDataVillage();
+    if (this.router.url.includes('/location/location1')) {
+        this.fetchDatalocation1();
     } else {
-      this.fetchDataMall();
+      this.fetchDatalocation2();
     }
   }
 
-  public fetchDataVillage() {
-    this.aboutPara = aboutUsVillage;
-    this.name = 'Village';
+  public fetchDatalocation1() {
+    this.aboutPara = aboutUsLocation1;
+    this.name = 'location 1';
   }
 
-  public fetchDataMall() {
-    this.aboutPara = aboutUsMall;
-    this.name = 'Mall';
+  public fetchDatalocation2() {
+    this.aboutPara = aboutUsLocation2;
+    this.name = 'location 2';
   }
 }

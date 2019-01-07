@@ -16,12 +16,12 @@ export class PaymentComponent implements OnInit {
   currentTab: any;
   tabs: any = [
     { id: '1',
-      name: 'Your Self Storage - Mall',
-      path: './mall'
+      name: 'Your Self Storage - Location1',
+      path: './location1'
     },
     { id: '2',
-      name: 'Your Self Storage -  Village',
-      path: './village'
+      name: 'Your Self Storage - Location2',
+      path: './location2'
     }
   ];
   private sub: any;

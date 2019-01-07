@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { reviewVillage } from '../data/location';
+import { reviewLocation1 } from '../data/location';
 
 @Component({
   selector: 'app-reviews',
@@ -19,12 +19,12 @@ export class ReviewsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/village')) {
-      this.name = 'village';
-      this.reviews = reviewVillage;
+    if (this.router.url.includes('/location/location1')) {
+      this.name = 'Location 1';
+      this.reviews = reviewLocation1;
     } else {
-      this.name = 'mall';
-      this.reviews = reviewVillage;
+      this.name = 'Location 2';
+      this.reviews = reviewLocation1;
     }
   }
 }

@@ -5,19 +5,19 @@ export const navLinks = [
     },
     {
         id: '1',
-        label: 'Village Location',
-        path: '/location/village',
-        name: 'village'
+        label: 'Location 1',
+        path: '/location/location1',
+        name: 'location1'
     },
     {
         id: '2',
-        label: 'Mall Location',
-        path: '/location/mall',
-        name: 'mall'
+        label: 'Location 2',
+        path: '/location/location2',
+        name: 'location2'
     },
     {
         label: 'Pay Rent',
-        path: '/payment/'
+        path: '/payment'
     },
     {
         label: 'Storage Tips',

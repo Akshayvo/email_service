@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';
+import { contactsLocation2, hoursLocation1, contactsLocation1, hoursLocation2  } from '../data/contact';
 import { featuresHead, serviceOffered, homeCarousel } from '../data/home';
 
 @Component({
@@ -12,10 +12,10 @@ import { featuresHead, serviceOffered, homeCarousel } from '../data/home';
 })
 export class HomeComponent implements OnInit {
 
-  contactsVillage: any;
-  contactsMall: any;
-  hoursVillage: any;
-  hoursMall: any;
+  contactsLocation1: any;
+  contactsLocation2: any;
+  hoursLocation2: any;
+  hoursLocation1: any;
   features: any;
   serviceOffered: any;
 
@@ -42,14 +42,14 @@ export class HomeComponent implements OnInit {
   }
 
   public fetchContactDetails() {
-    this.contactsVillage = contactsVillage;
-    this.contactsMall = contactsMall;
+    this.contactsLocation1 = contactsLocation1;
+    this.contactsLocation2 = contactsLocation2;
   }
 
 
   public fetchHours() {
-    this.hoursVillage = hoursVillage;
-    this.hoursMall = hoursMall;
+    this.hoursLocation2 = hoursLocation2;
+    this.hoursLocation1 = hoursLocation1;
    }
 
   public fetchFeatureHead() {

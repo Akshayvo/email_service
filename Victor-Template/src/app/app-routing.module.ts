@@ -18,7 +18,7 @@ import { RentSubComponent } from './rent-sub/rent-sub.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
-  { path: 'location/village',
+  { path: 'location/location1',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -31,7 +31,7 @@ const routes: Routes = [
       { path: 'reviews', component:  ReviewsComponent },
     ]
   },
-  { path: 'location/mall',
+  { path: 'location/location2',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -48,9 +48,9 @@ const routes: Routes = [
   { path: 'payment',
     component: PaymentComponent,
     children: [
-      {path: '', redirectTo: 'village' , pathMatch: 'full' },
-      { path: 'village', component: RentSubComponent },
-      { path: 'mall', component: RentSubComponent },
+      {path: '', redirectTo: 'location1' , pathMatch: 'full' },
+      { path: 'location1', component: RentSubComponent },
+      { path: 'location2', component: RentSubComponent },
     ]
   },
 

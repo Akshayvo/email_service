@@ -81,10 +81,10 @@
           
           <div class="col-md-4">
             <div class="for-mall">
-              <h2> Your Self Storage - Mall </h2>
+              <h2> Your Self Storage - Location1 </h2>
 
               <div class="py-2">
-                  <span *ngFor="let contact of contactsMall; let i = index">
+                  <span *ngFor="let contact of contactsLocation1; let i = index">
                     <span *ngIf = "i !== 0">
                      <b>{{contact.label}}</b> {{contact.data}}<br>
                     </span>
@@ -92,16 +92,16 @@
               </div>
 
               <span><b> Office: </b></span> <br>
-              <span *ngFor="let hour of hoursMall">
+              <span *ngFor="let hour of hoursLocation1">
                 <b>{{hour.label}}</b>{{hour.data}}<br>
               </span>  
             </div>
 
             <div class="for-village pt-5">
-                <h2> Your Self Storage - Village </h2>
+                <h2> Your Self Storage - Location2 </h2>
   
                 <div class="py-2">
-                    <span *ngFor="let contact of contactsVillage; let i = index">
+                    <span *ngFor="let contact of contactsLocation2; let i = index">
                       <span *ngIf = "i !== 0">
                        <b>{{contact.label}}</b> {{contact.data}}<br>
                       </span>
@@ -109,7 +109,7 @@
                 </div>
                 
                 <span><b> Office: </b></span> <br>
-                <span *ngFor="let hour of hoursVillage">
+                <span *ngFor="let hour of hoursLocation2">
                   <b>{{hour.label}}</b>{{hour.data}}<br>
                 </span>  
               </div>

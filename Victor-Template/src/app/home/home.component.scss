@@ -5,23 +5,28 @@
   width: 100%;
 }
 
-.carousel-indicators {
-  li {
-    width: 0.8rem;
-    height: 0.8rem;
-    background-color: transparent;
-    border: 1.5px $white solid;
-    position: relative;
-    flex: 0 1 auto;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-  }
+.jumbotron-top {
+  background: url("../../assets/victor-self-storage-slider-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
 
-  .active {
-    background-color: $white;
-  }
+.jumbotron-top1 {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-top2 {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
 }
 
 .feature-block {
@@ -137,22 +142,28 @@
     text-align: right;
   }
 
-  .myCarousel {
-    .carousel-item {
-      min-height: 40vh;
-      background-size: cover;
-      background-position: center center;
-      background-position-x: center;
-      background-position-y: center;
-      image-rendering: inherit;
+  .jumbotron-top {
+    background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-1.jpg");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
 
-      img {
-        min-height: 40vh;
-        width: auto;
-        block-size: 100%;
-        position: relative;
-      }
-    }
+  .jumbotron-top1 {
+    background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+
+  .jumbotron-top2 {
+    background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-3.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
   }
 }
 
@@ -177,25 +188,6 @@
   .f-text {
     padding-bottom: 10px;
     font-size: 1.2rem;
-  }
-
-  .myCarousel {
-    .carousel-item {
-      min-height: 40vh;
-      width: 200%;
-      background-size: cover;
-      background-position: center center;
-      background-position-x: center;
-      background-position-y: center;
-      image-rendering: inherit;
-
-      img {
-        min-height: 40vh;
-        width: auto;
-        block-size: 100%;
-        position: relative;
-      }
-    }
   }
 
   .contact-hours {

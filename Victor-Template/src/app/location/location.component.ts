@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { contactsMall, hoursMall, contactsVillage, hoursVillage  } from '../data/contact';
+import { contactsLocation2, hoursLocation1, contactsLocation1, hoursLocation2  } from '../data/contact';
 import { tabs } from '../data/location';
 import { Title } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -36,23 +36,23 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/village')) {
-        this.fetchDetailsVillage();
+    if (this.router.url.includes('/location/location1')) {
+        this.fetchDetailsLocation1();
     } else {
-      this.fetchDetailsMall();
+      this.fetchDetailsLocation2();
     }
  }
 
-  public fetchDetailsVillage() {
-      this.name = 'village';
-      this.contacts = contactsVillage;
-      this.hours = hoursVillage;
+  public fetchDetailsLocation1() {
+      this.name = 'Location1';
+      this.contacts = contactsLocation1;
+      this.hours = hoursLocation1;
     }
 
-   public fetchDetailsMall() {
-    this.name = 'mall';
-     this.contacts = contactsMall;
-     this.hours = hoursMall;
+   public fetchDetailsLocation2() {
+    this.name = 'Location2';
+     this.contacts = contactsLocation2;
+     this.hours = hoursLocation2;
    }
 
   public fetchTabs() {

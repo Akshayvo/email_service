@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-rent-sub',
@@ -8,13 +8,20 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class RentSubComponent implements OnInit {
   tabId: any;
+  name: string;
   private sub: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    this.sub = this.route.queryParams.subscribe(params => {
-      this.tabId = params['id'];
-    });
+    this.isSomePage();
+  }
+
+  public isSomePage() {
+    if (this.router.url.includes('/payment/location1')) {
+        this.name = 'location1';
+    } else {
+        this.name = 'location2';
+    }
   }
 }

@@ -1,5 +1,5 @@
 /* tslint:disable:max-line-length */
-export const galleryvillage = [
+export const gallerylocation1 = [
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-access.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-alarm.jpg'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-clean-and-bright.jpg'},
@@ -21,7 +21,7 @@ export const galleryvillage = [
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-well-lit.jpg'},
 ];
 
-export const galleryMall = [
+export const gallerylocation2 = [
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-mall.png'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-night.png'},
     { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-units.png'},
@@ -48,14 +48,14 @@ export const galleryMall = [
 
 
 
-export const galleryDataMall = [
+export const galleryDataLocation1 = [
     { p: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
           Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.`, }
 ];
 
-export const galleryDataVillage = [
+export const galleryDataLocation2 = [
     { p: `In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
           Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
           Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,

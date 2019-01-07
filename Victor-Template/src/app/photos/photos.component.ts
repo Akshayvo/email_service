@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { galleryMall, galleryvillage, galleryDataMall, galleryDataVillage } from '../data/galleryImage';
+import { gallerylocation2, gallerylocation1, galleryDataLocation1, galleryDataLocation2 } from '../data/galleryImage';
 import { Router } from '@angular/router';
 
 @Component({
@@ -22,23 +22,23 @@ export class PhotosComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/village')) {
-        this.fetchGalleryVillage();
+    if (this.router.url.includes('/location/location1')) {
+        this.fetchGalleryLocation1();
     } else {
-      this.fetchGalleryMall();
+      this.fetchGalleryLocation2();
     }
  }
 
-  public fetchGalleryVillage() {
-    this.galleryImages = galleryvillage;
-    this.galleryData = galleryDataVillage;
-    this.name = 'Village';
+  public fetchGalleryLocation1() {
+    this.galleryImages = gallerylocation1;
+    this.galleryData = galleryDataLocation2;
+    this.name = 'Location1';
   }
 
-  public fetchGalleryMall() {
-    this.galleryImages = galleryMall;
-    this.galleryData = galleryDataMall;
-    this.name = 'Mall';
+  public fetchGalleryLocation2() {
+    this.galleryImages = gallerylocation2;
+    this.galleryData = galleryDataLocation1;
+    this.name = 'Location2';
   }
 
   setSelectedImage(image: any) {
