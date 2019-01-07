@@ -13,6 +13,7 @@ fi
 if grep -E "$url" $dest_path/$project_name/src/sitemap.xml
 then
 	echo ' Url Found in The File'
+	exit 1
 else
 	echo 'Url Not Found'
 	while true; do

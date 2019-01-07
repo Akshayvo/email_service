@@ -1,5 +1,5 @@
 #!/bin/bash
-echo " Enter the path to the file  or ' PRESS ENTER ' to select The Default Directory: "
+echo " Enter the path to the dist folder  or ' PRESS ENTER ' to select The Default Directory: "
 #variable to read the path
 read  folder_path
 
@@ -26,7 +26,7 @@ if [ -e $folder_path/dist ];then
 else
 	echo "Folder doesnot exists"
 	while true; do
-    		read -p "do you want to create the file?" yn
+    		read -p "do you want to create the folder?" yn
     		case $yn in
         		[Yy]* ) cd $folder_path
 				npm run build:ssr;
@@ -45,7 +45,9 @@ read ip_addr
 echo "Enter the path to the destination folder"
 read remote_dest
 cd $folder_path
+#cd /home/sagar/
+echo $(pwd)
 #For key based login, please edit this line
-scp $dest_folder $user_name@$ip_addr:$remote_dest
+scp -i Codeparva-dev.pem $dest_folder $user_name@$ip_addr:$remote_dest
 
 
