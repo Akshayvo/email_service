@@ -4,8 +4,6 @@
   padding-top: 70px;
   margin-bottom: 50px;
   min-height: 86vh;
-  max-height: auto;
-  display: block;
 
   .padding {
     padding: 48px;
@@ -63,12 +61,6 @@ small {
   font-size: 0.8rem;
 }
 
-@media only screen and (max-width: 991px) {
-  .map-responsive {
-    margin-top: 20px;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .contentHolder {
     padding-top: 60px;
@@ -85,5 +77,15 @@ small {
         margin: 5px 0 10px 5px;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .font-xs-device {
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
   }
 }

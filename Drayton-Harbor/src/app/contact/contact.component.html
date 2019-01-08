@@ -72,12 +72,12 @@
               </div>
               <div class="contact-details pt-4">
                 <h2 class="py-1">Drayton Harbor Mini Storage</h2>
-                <span *ngFor="let contact of contactInfo">
-                    <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <span class="font-xs-device" *ngFor="let contact of contactInfo">
+                    <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                 </span>
                 <h3 class="py-1">Office:</h3>
-                <span *ngFor="let hour of hours">
+                <span class="font-xs-device" *ngFor="let hour of hours">
                   <b>{{hour.label}}</b> {{hour.data}}<br>
                 </span>
               </div>
