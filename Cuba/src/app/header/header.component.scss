@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "../../styles.scss";
+
+a {
+  cursor: pointer;
+}
+
+.iconColor {
+  color: $secondary;
+}
+
+.contact-header {
+  display: inline;
+
+  .contact-details {
+    color: $secondary;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+  }
+}
+
+.social {
+  a {
+    color: $secondary;
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 1.2rem;
+  }
+}
+
+.social :hover {
+  color: $white;
+}
+
+.navbar {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+
+  .nav-link {
+    color: $fontColor;
+    font-weight: 600;
+  }
+
+  .nav-link:hover {
+    color: $primary;
+  }
+
+  .nav-link-active {
+    color: $primary;
+    border-bottom: 5px solid $primary;
+  }
+
+  button {
+    border-color: $primary;
+
+    .iconColor {
+      color: $primary;
+    }
+  }
+
+  button:focus {
+    outline: 5px auto $primary;
+  }
+}
+
+.display {
+  display: block;
+}
+
+
+@media screen and (max-width: 991px) {
+  .display {
+    display: none;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-height: 480px) {
+  .navbar-nav-scroll {
+    height: 200px;
+    overflow-y: scroll;
+  }
+}
