@@ -57,7 +57,7 @@ const routes: Routes = [
   { path: 'payment',
     component: PaymentComponent,
     children: [
-      {path: '', redirectTo: 'rocky-creek' , pathMatch: 'full' },
+      {path: '', redirectTo: 'agricola' , pathMatch: 'full' },
       { path: 'rocky-creek', component: RentSubComponent },
       { path: 'agricola', component: RentSubComponent },
       { path: 'barton', component: RentSubComponent },

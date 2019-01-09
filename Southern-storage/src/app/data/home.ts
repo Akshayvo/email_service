@@ -2,19 +2,19 @@
 export const featuresHead = [
     {
         label: '24/7 Access at All Locations',
-        data: '../../assets/images/jumbotron-bottom-images/24-hours.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/jumbotron-bottom-images/24-hours.svg',
     },
     {
         label: '3 Convenient Location',
-        data: '../../assets/images/jumbotron-bottom-images/location.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/jumbotron-bottom-images/placeholder.svg',
     },
     {
         label: 'Fenced Facilities Available',
-        data: '../../assets/images/jumbotron-bottom-images/fence.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/jumbotron-bottom-images/fence.svg',
     },
     {
         label: 'Easy Online Bill Pay',
-        data: '../../assets/images/jumbotron-bottom-images/online-pay.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/jumbotron-bottom-images/online-pay.svg',
     },
 ];
 

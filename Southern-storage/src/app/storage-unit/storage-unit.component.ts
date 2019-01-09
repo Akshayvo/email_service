@@ -14,7 +14,7 @@ export class StorageUnitComponent implements OnInit {
 
   ngOnInit() {
     this.isSomePage();
-    console.log(this.id);
+    // console.log(this.id);
   }
 
   public isSomePage() {

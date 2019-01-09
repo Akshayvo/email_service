@@ -19,7 +19,7 @@ export class AboutUsComponent implements OnInit {
 
   ngOnInit() {
     this.isSomePage();
-    console.log(this.image);
+    // console.log(this.image);
   }
 
   public isSomePage() {

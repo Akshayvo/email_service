@@ -6,6 +6,7 @@ import { contactsRockyCreek, hoursRockyCreek,
          contactsAgricola, hoursAgricola,
          contactsBarton, hoursBarton } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
+import {  SelectLocationComponent } from '../select-location/select-location.component';
 
 @Component({
   selector: 'app-home',
@@ -14,12 +15,17 @@ import { featuresHead, serviceOffered } from '../data/home';
 })
 export class HomeComponent implements OnInit {
 
+  // @ViewChild(SelectLocationComponent) gettingLocation;
   contactsRockyCreek: any;
   contactsBarton: any;
   contactsAgricola: any;
   hoursRockyCreek: any;
   hoursBarton: any;
   hoursAgricola: any;
+  // contactDetails: any;
+  // hoursDetails: any;
+  // locationId: string;
+  // heading: string;
   features: any;
   serviceOffered: any;
 
@@ -44,6 +50,7 @@ export class HomeComponent implements OnInit {
     this.fetchStaticContent();
     this.fetchFeatureHead();
     this.window.scrollTo(0, 0);
+    // this.locationId = 0;
   }
 
   public fetchContactDetails() {
@@ -58,6 +65,39 @@ export class HomeComponent implements OnInit {
     this.hoursAgricola = hoursAgricola;
     this.hoursBarton = hoursBarton;
    }
+
+  // receiveMessage($event: any) {
+  //   this.locationId = $event;
+  //   console.log($event);
+  //   if ( this.locationId === '0' ) {
+  //     this.fetchContactDetailsAgricola();
+  //   } else if ( this.locationId === '1' ) {
+  //     this.fetchContactDetailsRockyCreek();
+  //   } else if ( this.locationId === '2' ) {
+  //     this.fetchContactDetailsBarton();
+  //   }
+  //   console.log(this.contactDetails);
+  //   console.log(this.hoursDetails);
+
+  // }
+
+    // public fetchContactDetailsAgricola() {
+    //   this.heading = `Southern Storage - Agricola`;
+    //   this.contactDetails = contactsAgricola;
+    //   this.hoursDetails = hoursAgricola;
+    // }
+
+    // public fetchContactDetailsRockyCreek() {
+    //   this.heading = `Southern Storage - Rocky Creek`;
+    //   this.contactDetails = contactsRockyCreek;
+    //   this.hoursDetails = hoursRockyCreek;
+    // }
+
+    // public fetchContactDetailsBarton() {
+    //   this.heading = `Southern Storage - Barton`;
+    //   this.contactDetails = contactsBarton;
+    //   this.hoursDetails = hoursBarton;
+    // }
 
   public fetchFeatureHead() {
     this.features = featuresHead;

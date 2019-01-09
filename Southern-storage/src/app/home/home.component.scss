@@ -6,7 +6,7 @@
 }
 
 .jumbotron-top {
-  background: url("../../assets/images/Photos/Agricola/southern-storage-agricola-main-building.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-agricola-main-building.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +14,7 @@
 }
 
 .jumbotron-top1 {
-  background: url("../../assets/images/Photos/Rocky-Creek/southern-storage-rocky-creek-location.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-location.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +22,7 @@
 }
 
 .jumbotron-top2 {
-  background: url("../../assets/images/Photos/Rocky-Creek/11.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/11.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,11 +30,8 @@
 }
 
 .feature-block {
-  // height: 20vh;
-  // padding: 2% 0;
-
   img {
-    height: 70px;
+    height: 60px;
   }
 }
 
@@ -53,8 +50,7 @@
   padding-left: 5%;
 }
 
-.for-mall,
-.for-village {
+.for-mall {
   .btn-outline-primary {
     margin-right: 10px;
   }
@@ -174,7 +170,7 @@
     display: block;
   }
 
-  .for-mall {
+  .for-location {
     .btn {
       width: 100%;
     }
@@ -188,6 +184,19 @@
 }
 
 @media screen and (max-width: 600px) {
+  .jumbotron-top {
+    height: 50vh;
+  }
+
+  .jumbotron-top1 {
+    background-position: right;
+    height: 50vh;
+  }
+
+  .jumbotron-top2 {
+    height: 50vh;
+  }
+
   .content-align {
     text-align: center;
   }

@@ -16,12 +16,12 @@ export class PaymentComponent implements OnInit {
   currentTab: any;
   tabs: any = [
     { id: '0',
-      name: 'Southern Storage - Rocky Creek',
-      path: './rocky-crook'
-    },
+    name: 'Southern Storage - Agricola',
+    path: './agricola'
+  },
     { id: '1',
-      name: 'Southern Storage - Agricola',
-      path: './agicola'
+      name: 'Southern Storage - Rocky Creek',
+      path: './rocky-creek'
     },
     { id: '2',
       name: 'Southern Storage - Barton',

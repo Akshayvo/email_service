@@ -2,12 +2,16 @@
   <div class="container px-0">
     <div class="row">
       <div class="col-md-8 mx-0">
-        <span *ngIf="tabId == '' || '1' && tabId !== '2'" >
-          <iframe id="advanced_iframe" name="advanced_iframe" src="https://victorselfstorage-mall.sim.syrasoft.com/Paynow" width="100%"
+        <span *ngIf="tabId == '' || '0' && tabId !== '1' && tabId !== '2'" >
+          <iframe id="advanced_iframe" name="advanced_iframe" src="https://SouthernStorageRC.sim.syrasoft.com/PayNow" width="100%"
+          height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>  
+        </span>
+        <span *ngIf="tabId == '1' " >
+          <iframe id="advanced_iframe" name="advanced_iframe" src="https://SouthernStorage.sim.syrasoft.com/PayNow" width="100%"
           height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>  
         </span>
         <span *ngIf="tabId == '2' " >
-          <iframe id="advanced_iframe" name="advanced_iframe" src="https://victorselfstorage-village.sim.syrasoft.com/Paynow" width="100%"
+          <iframe id="advanced_iframe" name="advanced_iframe" src="https://SouthernStorageB.sim.syrasoft.com/PayNow" width="100%"
           height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>  
         </span>
       </div>
@@ -15,7 +19,7 @@
       <div class="col-md-4 rent-example" >
          <h2> How to Login </h2>
          <p class="pt-3"> <b>Username:</b> First initial + Last Name </p>
-         <p> <b>Password:</b> Your gate access code</p>
+         <p> <b>Password:</b>  Unit Number </p>
     
          <p class="py-3"> <b>Example</b> </p>
          <p class="pb-3">John Smith's gate code is 1234</p>
@@ -24,7 +28,7 @@
          <p class="pb-3"> <b>John's Password:</b> 1234 </p>
     
          <p> <b>Have question about your account?</b> </p>
-         <p> (585) 924-9290 </p>
+         <p> (601) 791-2999 </p>
       </div>
     </div>
   </div>

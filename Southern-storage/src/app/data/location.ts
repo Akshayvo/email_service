@@ -119,11 +119,11 @@ export const headingAgricola = `About Southern Storage - Agricola`;
 
 export const headingBarton = `About Southern Storage at Barton`;
 
-export const aboutUsImageRockyCreek = `../../assets/images/Photos/Rocky-Creek/optimized/southern-storage-rocky-creek-roadside-sign.jpg`;
+export const aboutUsImageRockyCreek = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-roadside-sign.jpg`;
 
-export const aboutUsImageAgricola = `../../assets/images/Photos/Agricola/optimized/southern-storage-argicola-climate-controlled.jpg`;
+export const aboutUsImageAgricola = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-climate-controlled.jpg`;
 
-export const aboutUsImageBarton = `../../assets/images/Photos/Barton/southern-storage-barton-location.png`;
+export const aboutUsImageBarton = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Barton/southern-storage-barton-location.png`;
 
 
 export const aboutUsRockyCreek = [

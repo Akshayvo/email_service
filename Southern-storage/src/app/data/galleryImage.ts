@@ -1,24 +1,25 @@
 /* tslint:disable:max-line-length */
 export const galleryRockyCreek = [
-    { url: '../../assets/images/Photos/Rocky-Creek/optimized/southern-storage-rocky-creek-green-buildings.jpg'},
-    { url: '../../assets/images/Photos/Rocky-Creek/optimized/southern-storage-rocky-creek-buildings.jpg'},
-    { url: '../../assets/images/Photos/Rocky-Creek/optimized/southern-storage-rocky-creek-roadside.jpg'},
-    { url: '../../assets/images/Photos/Rocky-Creek/optimized/southern-storage-rocky-creek-roadside-sign.jpg'},
-    { url: '../../assets/images/Photos/Rocky-Creek/optimized/southern-storage-rocky-creek-10-by-15-units.jpg'},
-    { url: '../../assets/images/Photos/Rocky-Creek/optimized/southern-storage-rocky-creek-5-by-10-units.jpg'},
-    { url: '../../assets/images/Photos/Rocky-Creek/optimized/southern-storage-rocky-creek-self-storage-building.jpg'},
-    { url: '../../assets/images/Photos/Rocky-Creek/optimized/southern-storage-rocky-creek-units.jpg'},
-    { url: '../../assets/images/Photos/Rocky-Creek/optimized/southern-storage-rocky-creek-10-by-10-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-green-buildings.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-buildings.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-roadside.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-roadside-sign.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-10-by-15-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-5-by-10-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-self-storage-building.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-10-by-10-units.jpg'},
 ];
 
 export const galleryMall = [
-    { url: '../../assets/images/Photos/Agricola/optimized/southern-storage-argicola-main-building.jpg'},
-    { url: '../../assets/images/Photos/Agricola/optimized/southern-storage-argicola-outdoor-units.jpg'},
-    { url: '../../assets/images/Photos/Agricola/optimized/southern-storage-argicola-climate-control-entrance.jpg'},
-    { url: '../../assets/images/Photos/Agricola/optimized/southern-storage-argicola-climate-controlled.jpg'},
-    { url: '../../assets/images/Photos/Agricola/optimized/southern-storage-argicola-inside-unit.jpg'},
-    { url: '../../assets/images/Photos/Agricola/optimized/southern-storage-argicola-inside-units.jpg'},
-    { url: '../../assets/images/Photos/Agricola/optimized/southern-storage-argicola-outdoor-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-main-building.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-outdoor-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-climate-control-entrance.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-climate-controlled.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-inside-unit.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-inside-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-outdoor-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-outdoor-units(1).jpg'},
 ];
 
 

@@ -1,0 +1,31 @@
+@import "../../styles.scss";
+
+.selector-block {
+  background: $primary;
+  border: 2px solid $primary;
+  border-radius: 0 0 10px 10px;
+  width: 400px;
+
+  .row {
+    border-bottom: 2px solid $white;
+  }
+}
+
+form {
+  background: $primary;
+  width: 100%;
+
+  select {
+    background: $primary;
+    border: none;
+    color: $white;
+    width: 100%;
+    font-weight: 600;
+    float: right;
+  }
+
+  select:focus,
+  select:active, {
+    outline: -webkit-focus-ring-color auto 0;
+  }
+}

@@ -2,30 +2,30 @@ export const contactsRockyCreek = [
     {
         label: 'Address:',
         data: '3181 Old Highway 63 North, Lucedale, Mississippi',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         label: 'Phone:',
         data: '(601) 791-2999',
-        class: 'fas fa-phone mx-2 iconColor',
+        class: 'fas fa-phone mr-2 iconColor',
     },
     {
         label: 'Email:',
         data: 'southernstorage17@gmail.com',
-        class: 'fas fa-envelope-open mx-2 iconColor',
+        class: 'fas fa-envelope-open mr-2 iconColor',
     },
 ];
 
 export const hoursRockyCreek = [
-    // {
-    //     label: 'Office Hours: ',
-    //     data: 'Office located at the Agricola Location',
-    //     class: 'bg-light'
-    // },
     {
-        label: 'Access Hours: ',
-        data: '24/7',
-        class: 'bg-light'
+        label: 'Office Hours: ',
+        data: 'Office is located at the Barton Location',
+        // class: 'bg-light'
+    },
+    {
+        label: 'Facility Access: ',
+        data: '24/7/365',
+        // class: ''
     },
 ];
 
@@ -33,54 +33,50 @@ export const contactsAgricola = [
     {
         label: 'Address:',
         data: '6127 MS-613, Lucedale, MS 39452',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
 
     {
         label: 'Phone:',
         data: '(601) 791-2999',
-        class: 'fas fa-phone mx-2 iconColor',
+        class: 'fas fa-phone mr-2 iconColor',
     },
     {
         label: 'Email:',
         data: 'southernstorage17@gmail.com',
-        class: 'fas fa-envelope-open mx-2 iconColor',
+        class: 'fas fa-envelope-open mr-2 iconColor',
     },
 ];
 
 export const hoursAgricola = [
     {
-        label: 'Mon-Fri: ',
-        data: '9:00 am - 5:00 pm',
-        class: 'bg-light'
-    },
-    {
-        label: 'Saturday-Sunday ',
-        data: 'Closed'
+        label: 'Office Hours: ',
+        data: 'Office is located at the Barton Location',
+        // class: 'bg-light'
     },
     {
         label: 'Facility Access: ',
         data: '24/7/365',
-        class: 'bg-light'
-    }
+        // class: ''
+    },
 ];
 
 export const contactsBarton = [
     {
         label: 'Address:',
         data: '3203 Hwy 63 S Lucedale, MS 39452',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
 
     {
         label: 'Phone:',
         data: '(601) 791-2999',
-        class: 'fas fa-phone mx-2 iconColor',
+        class: 'fas fa-phone mr-2 iconColor',
     },
     {
         label: 'Email:',
         data: 'southernstorage17@gmail.com',
-        class: 'fas fa-envelope-open mx-2 iconColor',
+        class: 'fas fa-envelope-open mr-2 iconColor',
     },
 ];
 
@@ -88,16 +84,16 @@ export const hoursBarton = [
     {
         label: 'Mon-Fri: ',
         data: '8:00 am - 4:00 pm',
-        class: 'bg-light'
+        // class: 'bg-light'
     },
     {
-        label: 'Saturday-Sunday ',
+        label: 'Sat-Sun: ',
         data: 'Closed'
     },
     {
         label: 'Facility Access: ',
         data: '24/7',
-        class: 'bg-light'
+        // class: 'bg-light'
     }
 ];
 
