@@ -34,22 +34,31 @@ export const featuresList = [
 
 export const aboutUs = [
     {
-        p: `Lockwood Self Storage is Oviedo's only privately-owned and operated self storage facility.
-            We serve Oviedo, Geneva, Chuluota, Winter Springs and surrounding communities with high quality,
-            affordable self storage units, boat or trailer parking and moving supplies!`,
+        p: `Lockwood Self-Storage, located in the heart of Oviedo, Florida, is your top-rated
+            choice for secure, reliable self-storage for both your small business as well as
+            personal storage needs. We are Oviedo's last PRIVATELY OWNED self-storage facility,
+            serving Oviedo, Chuluota, Geneva, Winter Springs, Orlando, Longwood, Casselberry and
+            other Central Florida area residents and business owners. We take pride in proving
+            you gated access storage units that are clean, well-maintained, and offer flexible
+            sizes to meet everyone's needs!`,
+    },
+];
+
+export const aboutUsunderh2 = [
+    {
+        p: `You have dedicated your life to bettering our communities throughout the US, and
+            that makes you a Community Champion in our eyes! From teaching our future leaders
+            to read, to fighting to preserve the life we know in our Country, your hard work has not gone unnoticed.`,
     },
     {
-        p: `We strive to provide the highest quality customer service to our community.
-            Do you need a rental truck for your move? We have a tenant-use truck ready and
-            waiting to make your move a hassle-free one!
-            Are you a business that needs a little extra space for inventory,
-            supplies or equipment? We've got your storage needs covered!`,
+        p: `As a special thanks to the men & women that serve our community and our country, we would
+            like to introduce our Community Champions program*. This offer is extended to all active
+            duty, reserve, retired, and veteran members of our Armed Forces, DoD, LEOs, First Responders,
+            as well as some misc Government/State workers, Teachers, Doctors, and Nurses.`,
     },
-    {
-        p: `Whether you're downsizing and need to store a few closets' worth of belongings
-            in our climate controlled units or looking for long term storage in an oversized unit,
-            Lockwood Self Storage has you covered!!`,
-    },
+    // {
+    //     p: `We've got your 6.`,
+    // },
 ];
 
 export const gettingStarted = `Are you ready to make some space in your life?

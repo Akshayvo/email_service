@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
-import { featuresList, aboutUs, gettingStarted, feature, blurbHeading, blurbText } from '../data/home';
+import { featuresList, aboutUs, gettingStarted, feature, blurbHeading, blurbText, aboutUsunderh2 } from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   featuresHead: any;
   featuresList: any;
   aboutUs: any;
+  aboutUsunderh2: any;
   serviceOffered: any;
   gettingStarted: any;
   feature: any;
@@ -69,6 +70,7 @@ export class HomeComponent implements OnInit {
 
   public fetchStaticContent() {
     this.aboutUs = aboutUs;
+    this.aboutUsunderh2 = aboutUsunderh2;
     this.gettingStarted = gettingStarted;
   }
   public fetchFeature () {
