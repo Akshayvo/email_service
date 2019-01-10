@@ -44,7 +44,7 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/feature-icon/Convenient Location.svg`,
+        path: `../../assets/images/feature-icon/Security Lighting.svg`,
         label: 'Security Lighting'
     },
     {

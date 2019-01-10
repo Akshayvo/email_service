@@ -16,9 +16,9 @@ export class ReserveComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Current description works fine.`
+      content: ``
     });
-    this.titleService.setTitle('Reserve A Storage Unit Near Catskill, NY | 12414 - Catskill Self Storage');
+    this.titleService.setTitle('');
   }
 
   ngOnInit() {

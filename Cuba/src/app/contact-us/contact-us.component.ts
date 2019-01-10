@@ -17,6 +17,7 @@ export class ContactUsComponent implements OnInit {
   name: string;
   email: any;
   message: string;
+  phone: any;
   contactInfo: any;
   receiveremail: string;
   completeMessage: string;
@@ -45,6 +46,8 @@ export class ContactUsComponent implements OnInit {
     this.fetchHours();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
+      phone: ['', [Validators.required,
+      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
       subject: [''],
@@ -72,7 +75,6 @@ export class ContactUsComponent implements OnInit {
    if (this.contactForm.invalid) {
        return;
    } else {
-     console.log(this.contactForm.value);
      this.isSubmitted = true;
 
      if ( !this.contactForm.value.subject) {
@@ -80,16 +82,17 @@ export class ContactUsComponent implements OnInit {
     }
      this.receiveremail = this.contactDetails[1].data;
 
-         this.completeMessage = `message: ${this.contactForm.value.message}`;
+     this.completeMessage = `<strong>Phone: </strong> ${this.contactForm.value.phone}, <br/>
+     <strong>Message: </strong> ${this.contactForm.value.message}`;
 
          const body = {
            name: this.contactForm.value.name,
            email: this.contactForm.value.email,
+           phone: this.contactForm.value.phone,
            receiveremail: this.receiveremail,
            message: this.completeMessage,
            subject: this.contactForm.value.subject,
          };
-         console.log(body);
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {

@@ -2,7 +2,7 @@
 <div class="">
   <div class="jumbotron-container">
     <div class="jumbotron-top">
-    <div class="jumbotron px-0 m-0">
+    <div class="jumbotron px-0 m-0" role="img" aria-label="Cuba Self Storage Office">
       <div class="bg-translucent jumbotorn-skew-style">
       </div>
       <div class="container">
@@ -24,7 +24,7 @@
       <div class="container">
         <div class="feature row">
           <div class="col feature-icon-style" *ngFor="let feature of feature">
-            <img [src]="feature?.path" alt="" />
+            <img [src]="feature?.path" alt="" height="75px"/>
               <h6 class="feature-text">{{feature.label}}</h6>
           </div>
         </div>
@@ -72,7 +72,7 @@
         <img src="../../assets/images/self-storage-hallway.jpg" width="100%" height="100%" alt="Indoor Climate Controlled Units" class="sectionImage">
       </div>
       <div class="col-lg-6 py-3">
-        <h1 class="heading pb-4">Affordable Storage Units in Cuba, MO</h1>
+        <h1 class="heading pb-4">Clean and Affordable Storage Units in Cuba, MO</h1>
         <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
       </div>
     </div>
