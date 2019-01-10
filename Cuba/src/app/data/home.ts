@@ -39,29 +39,34 @@ export const gettingStarted = `Start de-cluttering your life today with Cuba Sel
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/jumbotorn-bottom-images/safe.png`,
-        label: 'Safe & Secure'
-    },
-    {
-        // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/jumbotorn-bottom-images/easy.png`,
-        label: 'Temperature Controlled Units Available'
-    },
-    {
-        // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/jumbotorn-bottom-images/enviro.png`,
+        path: `../../assets/images/feature-icon/Convenient Location.svg`,
         label: 'Convenient Location'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/jumbotorn-bottom-images/value.png`,
-        label: 'Easy Online Access'
+        path: `../../assets/images/feature-icon/Convenient Location.svg`,
+        label: 'Security Lighting'
+    },
+    {
+        // tslint:disable-next-line:max-line-length
+        path: `../../assets/images/feature-icon/Fenced In Facility.svg`,
+        label: 'Fenced In Facility'
+    },
+    {
+        // tslint:disable-next-line:max-line-length
+        path: `../../assets/images/feature-icon/Easy Online Bill Pay.svg`,
+        label: 'Easy Online Bill Pay'
+    },
+    {
+        // tslint:disable-next-line:max-line-length
+        path: `../../assets/images/feature-icon/Stellar Customer Service.svg`,
+        label: 'Stellar Customer Service'
     },
 ];
 
 export const jumbotron = [
     {
-        h1: `Convenient & Affordable`,
+        h1: `Convenient Self Storage`,
         blurb: `We provide high quality, clean and affordable self storage units, boat, RV and commercial
         storage to Cuba,Steelville and the surrounding communities! Stop into our on-site office or call
         today to learn more about our wide variety of units and services!`,

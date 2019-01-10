@@ -9,7 +9,7 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Catskill';
+  title = 'Cuba';
   constructor(
     private router: Router,
     private angulatics: Angulartics2GoogleAnalytics

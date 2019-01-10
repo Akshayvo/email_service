@@ -19,10 +19,10 @@ export class UnitSizerComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our handy unit size guide to figure out which self storage unit size is right for your needs!
-                Still have questions? Call (518) 382-0218!`
+      content: `Need help choosing an appropriate unit size? Use our handy
+      size guide to help figure out which size to pick!`
     });
-    this.titleService.setTitle('Unit Sizer | Scotia Storage, Scotia, New York 12302');
+    this.titleService.setTitle('Unit Size Guide | Cuba Self Storage');
   }
 
   ngOnInit() {
