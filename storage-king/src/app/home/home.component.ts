@@ -35,11 +35,10 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Security Storage has been providing clean, affordable self storage units to Cuero,
-                Texas since 1993 and is proud to offer a wide selection of sizes and
-                services to make your self storage experience a hassle free one!`
+      content: `Storage King serves Exeter and surrounding towns with a
+                variety of  well maintained and affordable self storage units!`
     });
-    this.titleService.setTitle('Storage Units in Cuero, Tx | Security Storage');
+    this.titleService.setTitle('Storage Units Near Exeter, NH | Storage King');
   }
 
   public navigate(location: any) {

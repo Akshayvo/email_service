@@ -7,9 +7,14 @@
     <div class="storage-content mt-5">
       <div class="row">    
         <div class="col-md-6">
-          <ul>
+          <h2 class="pb-3">Tips For Your Storage Unit</h2>
+          <!-- <ul>
             <li *ngFor="let point of storagePoints" class="p-1 text-justify"> {{point.data}} </li>
-          </ul>
+          </ul> -->
+          <div *ngFor="let point of storagePoints">
+            <h3>{{point.heading}}</h3>
+            <p class="text-justify"> {{point.data}} </p>
+          </div>
         </div>
         <div class="col-md-6">
           <app-accordion [accordianData]='storageTips' ></app-accordion>

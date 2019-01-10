@@ -1,7 +1,7 @@
 import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { viewrates } from '../data/view-rates';
+import { viewrates, benefitsList } from '../data/view-rates';
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -12,6 +12,7 @@ export class ViewRatesComponent implements OnInit {
   breadcrumbActive: any = 'View Rates';
   currentActive: any = 'VIEW RATES';
   viewrates: any;
+  benefitsList: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -20,10 +21,10 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Check out the competitive rates for our high quality self storage units,
-                warehouse space, and office suites! Security Storage is the premiere storage facility in Cuero, Texas!`
+      content: `Looking for an affordable self storage unit for personal or
+                business use? Click here to view Storage King's rates!`
     });
-    this.titleService.setTitle('Storage Units in Cuero, Tx | View Rates');
+    this.titleService.setTitle('View Storage Unit Rates | Storage King');
   }
 
   ngOnInit() {
@@ -33,6 +34,7 @@ export class ViewRatesComponent implements OnInit {
 
   public fetchViewRates() {
     this.viewrates = viewrates;
+    this.benefitsList = benefitsList;
   }
 
 }

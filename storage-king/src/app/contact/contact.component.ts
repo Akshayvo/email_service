@@ -33,11 +33,9 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Do you have any questions about Security Storage's self storage units,
-                warehouse space or office leases? Drop us a line through our contact
-                form or via phone at (361) 275-9698!`
+      content: `Use our contact form or information here if you have questions about your account or our services!`
     });
-    this.titleService.setTitle('Contact Us | Security Storage Cuero, Tx 77954');
+    this.titleService.setTitle('Contact US | Storage King');
   }
 
   ngOnInit() {
@@ -88,9 +86,9 @@ export class ContactComponent implements OnInit {
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {
-              //  alert(response.message);
+               alert(response.message);
              } else {
-              //  alert(response.message);
+               alert(response.message);
              }
            }, (err) => {
              console.log('Error :', err);

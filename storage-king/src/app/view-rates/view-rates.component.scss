@@ -14,6 +14,10 @@
       overflow: auto;
     }
   }
+
+  ul {
+    padding-inline-start: 30px;
+  }
 }
 
 @media screen and (max-width: 600px) {

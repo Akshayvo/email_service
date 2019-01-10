@@ -19,10 +19,10 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Access your account and securely pay your rent through our online bill pay service.
-                For information on accessing your account call (361) 275-9698.`
+      content: `Need to pay your bill online? Follow the instructions
+                here or contact us and start paying at your convenience, 24/7!`
     });
-    this.titleService.setTitle('Pay Your Rent Online | Security Storage Cuero, Tx 77954');
+    this.titleService.setTitle('Pay Your Bill Online');
   }
 
   ngOnInit() {

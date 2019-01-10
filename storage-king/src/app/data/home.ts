@@ -44,23 +44,20 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `At Security STORAGE we pride ourselves on our customer service. That means clean units,
-            convenient office and access hours, and online access to your account.
-            Our services are designed to operate on your terms, not ours.`,
+        p: `Storage King is a proud member of Rockingham County, New Hampshire and have been serving Exeter,
+            Brentwood, Stratham and surrounding communities since [INSERT YEAR].
+            We are easily accessed from both 101 & I-95`,
     },
     {
-        p: `Our broad selection of storage units serve a wide variety of clients in need of that extra space.
-            From local businesses in need of extra room for supplies and equipment to the residential
-            customer we've got your self storage needs covered!`,
+        p: `We offer a large selection of unit types from regular drive-units that can be easily loaded and
+            unloaded from your vehicle to high quality climate controlled and hard-to-find humidity controlled
+            units! We proudly use solar panels to power our facility, reduce our emissions and decrease an energy bill,
+            passing the savings onto you! We even offer Penske truck rentals to make your moving experience a breeze!`,
     },
     {
-        p: `We also cater to local businesses with our high quality office suites! Lease office space today in
-            6 or 12 month contracts and restore your work/life balance! Some offices are even partially furnished.`,
-    },
-    {
-        p: `Our extra-large units function as warehouse space for a wide range of local businesses who need to
-            store equipment or inventory off-site.  Drive right up to your unit to load or unload with no problem!
-            Be sure to ask about our drive up indoor units as well for moving goods during inclement weather.`,
+        p: `We understand that your belongings, equipment and inventory are valuable and go to great lengths
+            to secure our facility. Storage King has a state-of-the-art security system, is fully fenced and
+            requires a pin code for entry through our electronic gate.`,
     },
 ];
 
@@ -86,5 +83,5 @@ export const slideShow = [
     }
 ];
 
-export const gettingStarted = `Are you ready to reserve your unit,
-                               warehouse space or office suite? Click below to start decluttering your life today!`;
+export const gettingStarted = `To get started simply call (603) 772-4500, or (603) 396-2706 after
+                              normal business hours, or click below to begin your reservation process online!`;
