@@ -6,6 +6,13 @@
   padding: 0 48px;
 }
 
+.contact-links {
+  a {
+    color: $fontColor;
+    opacity: 0.8;
+  }
+}
+
 .contentHolder {
   h1 {
     margin-block-end: 0;

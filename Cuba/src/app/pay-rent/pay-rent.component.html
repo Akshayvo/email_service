@@ -5,7 +5,7 @@
     <div class="row bg-light background-padding">
       <div class="col-lg-8 col-md-7 scroll-wrapper small-screen-padding">
           <div class="iframe-container">
-          <iframe id="advanced_iframe" name="advanced_iframe" src="" width="100%"
+          <iframe id="advanced_iframe" name="advanced_iframe" src="https://CubaSelfStorage.sim.syrasoft.com/PayNow" width="100%"
             height="400" scrolling="yes" frameborder="0" border="0" allowtransparency="true" onload=";aiResizeIframe(this, 'true','1');"></iframe>
         </div>
       </div>
@@ -18,7 +18,8 @@
         <p>John's Username: smith<br>
         John's Password: 1234</p>
         <p>Have questions about your account?<br>
-        <span *ngFor="let contact of contactDetails"><span *ngIf="contact?.id == 1 || contact?.id == 2">{{contact.data}}</span><br>
+        <span *ngFor="let contact of contactDetails"><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+        <br>
       </span>
       </p>
       </div>

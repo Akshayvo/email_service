@@ -8,17 +8,16 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class ReserveComponent implements OnInit {
 
-  currentActive: any = 'RESERVE';
-
   constructor(
     private titleService: Title,
     private meta: Meta
   ) {
     this.meta.addTag({
       name: 'description',
-      content: ``
+      content: `Ready to reserve an affordable, high quality self storage unit at
+      Cuba Self Storage? Click here to complete your reservation online!`
     });
-    this.titleService.setTitle('');
+    this.titleService.setTitle('Reserve Your Unit');
   }
 
   ngOnInit() {

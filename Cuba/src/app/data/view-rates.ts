@@ -1,3 +1,4 @@
+// tslint:disable:indent
 export const viewRates = [
 	{
 		p: `Cuba Self Storage serves both residential and commercial storage needs in Cuba,
@@ -8,5 +9,5 @@ export const viewRates = [
 		p: `Our manager is on-site daily and ready to answer questions or help you move in to your well maintained,
 		clean storage unit. Our facility is also fenced, well lit and has security cameras to protect you and your
 		belongings! Call or reserve your unit online today!`,
-	}		
+	}
 ];

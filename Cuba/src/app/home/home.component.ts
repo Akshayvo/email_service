@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit {
 
   contactDetails: any;
   hours: any;
-  featuresHead: any;
   featuresList: any;
   aboutUs: any;
   serviceOffered: any;
