@@ -9,9 +9,9 @@ import { Title, Meta } from '@angular/platform-browser';
 export class UnitSizerComponent implements OnInit {
   unitsizers: any;
   selectedUnit: any;
-  h: number;
-  i: number;
-  j: number;
+  previous: number;
+  current: number;
+  next: number;
 
   constructor(
     private titleService: Title,
@@ -19,16 +19,15 @@ export class UnitSizerComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our handy unit size guide to figure out which self storage unit size is right for your needs!
-                Still have questions? Call (518) 382-0218!`
+      content: ``
     });
-    this.titleService.setTitle('Unit Sizer | Scotia Storage, Scotia, New York 12302');
+    this.titleService.setTitle('');
   }
 
   ngOnInit() {
-    this.i = 0;
-    this.h = 7;
-    this.j = this.i + 1;
+    this.current = 0;
+    this.previous = 7;
+    this.next = this.current + 1;
     this.fetchUnitSizer();
     window.scrollTo(0, 0);
   }
@@ -42,36 +41,36 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public moveLeft() {
-    this.j = this.i;
-    this.i = this.h;
-    if ( this.h === 0 ) {
-      this.h = 7;
+    this.next = this.current;
+    this.current = this.previous;
+    if ( this.previous === 0 ) {
+      this.previous = 7;
     } else {
-      this.h = this.h - 1;
+      this.previous = this.previous - 1;
     }
   }
 
   public moveRight() {
-    this.h = this.i;
-    this.i = this.j;
-    if ( this.j === 7 ) {
-      this.j = 0;
+    this.previous = this.current;
+    this.current = this.next;
+    if ( this.next === 7 ) {
+      this.next = 0;
     } else {
-    this.j = this.j + 1;
+    this.next = this.next + 1;
     }
   }
 
   public activeUnit(unitId: number) {
-    this.i = unitId;
-    if ( this.i === 0 ) {
-      this.h = 7;
-      this.j = this.i + 1;
-    } else if ( this.i === 7 ) {
-      this.j = 0;
-      this.h = this.i - 1;
+    this.current = unitId;
+    if ( this.current === 0 ) {
+      this.previous = 7;
+      this.next = this.current + 1;
+    } else if ( this.current === 7 ) {
+      this.next = 0;
+      this.previous = this.current - 1;
     } else {
-      this.h = this.i - 1;
-      this.j = this.i + 1;
+      this.previous = this.current - 1;
+      this.next = this.current + 1;
     }
 
   }
