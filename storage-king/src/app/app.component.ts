@@ -9,7 +9,7 @@ import { filter, map, mergeMap } from 'rxjs/operators';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Security Storage';
+  title = 'Storage King';
   flag: boolean;
   public offsets: number[];
   constructor(

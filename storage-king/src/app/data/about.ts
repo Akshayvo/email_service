@@ -1,14 +1,14 @@
 export const aboutUs = [
     {
-        p: `Security Self Storage is your one stop moving, and
-            self storage solution for the communities of Security, Leeds, and Cairo,
+        p: `Storage King Self Storage is your one stop moving, and
+            self storage solution for the communities of Storage King, Leeds, and Cairo,
             N.Y. We have been serving the surrounding communities since 2003 and
             are proud to be a locally owned and operated business!`,
     },
     {
         p: `If you’re in need of temperature controlled units we have a variety of clean, well maintained,
          temperature controlled units. Are you just looking for
-         regular storage units near Security, N.Y.? We’ve got you covered!`,
+         regular storage units near Storage King, N.Y.? We’ve got you covered!`,
     },
     {
         p: `We offer U-Haul truck rentals to make your moving experience as easy and streamlined as possible.
