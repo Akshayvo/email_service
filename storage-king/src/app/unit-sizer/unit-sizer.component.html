@@ -9,7 +9,7 @@
         <div class="container">   
           <!--Unit Sizer Box Layout-->
           <div class="unit-sizer-container content-margin-top">
-          <div class="unit-sizer-box py-5">
+          <div class="unit-sizer-box">
             <!--Main Row-->
               <div class="row">
                 <!--Left bar size of unit starts here-->
@@ -55,7 +55,7 @@
                         <!--Image Carousel Starts Here-->
                         <div class="row image-carosel">
                           <div class="col-1 navigate-arrows-left text-center">
-                            <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/left.svg" alt="" (click)="moveLeft()">
+                            <img src="../../assets/images/left.svg" alt="" (click)="moveLeft()">
                           </div>
       
                           <div class="col-3 mx-0 px-0 text-center">
@@ -71,7 +71,7 @@
                           </div>
       
                           <div class="col-1 navigate-arrows-right text-center">
-                            <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/right.svg" alt="" (click)="moveRight()">
+                            <img src="../../assets/images/right.svg" alt="" (click)="moveRight()">
                           </div>
                         </div>
                         <!--Image Carousel Ends Here-->
@@ -82,8 +82,8 @@
                             <img src="{{unitsizers[i].photo}}" alt="" width="100%" height="auto">
                           </div> -->
                           <div class="col-12 col-md-8 col-lg-8 col pt-3 align-self-center">
-                            <h3>{{unitsizers[i].heading}}</h3>
-                            <p class="pr-2 text-justify py-2"> {{unitsizers[i].data}} </p>
+                            <h3 class="text-center">{{unitsizers[i].heading}}</h3>
+                            <p class="pr-2 text-center py-2"> {{unitsizers[i].data}} </p>
                             <ul class="pl-0">
                               <li *ngFor="let amenity of unitsizers[i]?.amenities"> {{amenity.content}} </li>
                             </ul>
