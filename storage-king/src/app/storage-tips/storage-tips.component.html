@@ -8,11 +8,8 @@
       <div class="row">    
         <div class="col-md-6">
           <h2 class="pb-3">Tips For Your Storage Unit</h2>
-          <!-- <ul>
-            <li *ngFor="let point of storagePoints" class="p-1 text-justify"> {{point.data}} </li>
-          </ul> -->
           <div *ngFor="let point of storagePoints">
-            <h3 class="pb-2" style="font-weight: 600;">{{point.heading}}</h3>
+            <h3 class="pb-2">{{point.heading}}</h3>
             <p class="text-justify"> {{point.data}} </p>
           </div>
         </div>
@@ -24,7 +21,3 @@
     </div>
   </div>
 </div>
-
-
-
-

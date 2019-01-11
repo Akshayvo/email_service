@@ -4,8 +4,8 @@ import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, officeHours } from '../data/contact';
-import { featuresList, featuresHead, aboutUs,
-          gettingStarted, feature, blurbHeading, blurbText, slideShow } from '../data/home';
+import { featuresList, aboutUs,
+          gettingStarted, feature } from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -51,18 +51,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
-    this.fetchJumbotronText();
-    this.fetchSlideShow();
     this.window.scrollTo(0, 0);
-  }
-
-  public fetchJumbotronText() {
-    this.blurbHeading = blurbHeading;
-    this.blurbText = blurbText;
-  }
-
-  public fetchSlideShow() {
-    this.slideShow = slideShow;
   }
 
   public fetchContactDetails() {
@@ -75,7 +64,6 @@ export class HomeComponent implements OnInit {
 
   public fetchFeatures() {
     this.featuresList = featuresList;
-    this.featuresHead = featuresHead;
   }
 
   public fetchStaticContent() {

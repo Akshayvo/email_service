@@ -1,9 +1,3 @@
-export const blurbHeading = `Affordable, Convenient Self Storage`;
-
-export const blurbText = ``;
-
-export const featuresHead = 'The Only Self Storage in Greene County With All of The Following';
-
 export const featuresList = [
     {
         td1: 'Convenient Location',
@@ -59,28 +53,6 @@ export const aboutUs = [
             to secure our facility. Storage King has a state-of-the-art security system, is fully fenced and
             requires a pin code for entry through our electronic gate.`,
     },
-];
-
-export const slideShow = [
-    {
-        class: `active`,
-        id: `1`,
-        // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-exterior-hero.jpg`,
-        alt: `jumbotron1`
-    },
-    {
-        id: `2`,
-        // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-exterior.jpg`,
-        alt: `jubotron2`,
-    },
-    {
-        id: `3`,
-        // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-outdoor-units.jpg`,
-        alt: `jumbotron3`,
-    }
 ];
 
 export const gettingStarted = `To get started simply call (603) 772-4500, or (603) 396-2706 after

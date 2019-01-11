@@ -22,7 +22,6 @@ export const benefitsList = [
     {
         p: `Student Discounts`,
     },
-
 ];
 
 

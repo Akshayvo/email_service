@@ -36,26 +36,6 @@ export const officeHours = [
     },
 ];
 
-// export const officeHours = [
-//     {
-//         label: 'Office: ',
-//         data: 'Monday- Friday 8:00am-3:00pm'
-//     },
-//     {
-//         label: '',
-//         data: '24/7 Drop Box'
-//     },
-//     {
-//         label: '',
-//         data: 'After Hours by Appointment Only'
-//     },
-//     {
-//         label: 'Facility: ',
-//         data: '24/7/365'
-//     }
-// ];
-
-
 export const socialLinks = [
     {
         label: 'facebook',

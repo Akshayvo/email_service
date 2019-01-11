@@ -35,10 +35,6 @@ export class StorageTipsComponent implements OnInit {
     this.fetchstorageTips();
   }
 
-
-  /**
-   * fetchstoragePoints
-   */
   public fetchstoragePoints() {
     this.storagePoints = storagePoints;
   }

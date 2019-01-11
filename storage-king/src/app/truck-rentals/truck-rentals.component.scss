@@ -9,6 +9,10 @@
     padding: 64px;
     background-color: $light;
     min-height: 644px;
+
+    ul {
+      padding-left: 17px;
+    }
   }
 }
 
@@ -20,8 +24,6 @@
       padding: 16px;
     }
   }
-
-
 
   .scroll-wrapper {
     -webkit-overflow-scrolling: touch;

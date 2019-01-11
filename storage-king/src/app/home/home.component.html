@@ -2,75 +2,66 @@
 <div class="home-container">
   <!--Jumbotron Container Starts Here-->
   <div class="jumbotron-container">
-        <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselJumbo" data-slide-to="1"></li>
-                <li data-target="#carouselJumbo" data-slide-to="2"></li>
-              </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="jumbotron-top jumbotron-top-style"></div>
-              </div>
-              <div class="carousel-item">
-                  <div class="jumbotron-top1 jumbotron-top-style"></div>
-              </div>
-              <div class="carousel-item">
-                  <div class="jumbotron-top2 jumbotron-top-style"></div>
-              </div>
-            </div>
-          </div>
-       
-    <!-- </div> -->
-    <!-- <div class="jumbotron-bottom">
-      <div class="container">
-        <p> {{blurbText}} </p>
+    <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselJumbo" data-slide-to="1"></li>
+        <li data-target="#carouselJumbo" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="jumbotron-top jumbotron-top-style"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron-top1 jumbotron-top-style"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron-top2 jumbotron-top-style"></div>
+        </div>
       </div>
-    </div> -->
-
+    </div>
+    <!--Carousel Ends Here-->
 
     <!--Feature Box-->
     <div class="container feature-block disp">
-    <div class="row pgRow">
-      <div class="col-md-3" *ngFor = "let feature of feature">
-        <p class="text-center f-block-img p-2"> 
-          <img src="{{feature.path}}" class="f-img">
-        </p>
-        <p class="text-center f-text p-2">
-          {{feature.label}}
-        </p>
+      <div class="row pgRow">
+        <div class="col-md-3" *ngFor = "let feature of feature">
+          <p class="text-center f-block-img p-2"> 
+            <img src="{{feature.path}}" class="f-img">
+          </p>
+          <p class="text-center f-text p-2">
+            {{feature.label}}
+          </p>
+        </div>
       </div>
     </div>
+    <!--Feature Box Ends Here-->
   </div>
-  <!--Feature Box Ends Here-->
-
-
-</div>
-<!--Jumbotron Ends Here-->
+  <!--Jumbotron Ends Here-->
 
   <!--Map and Contact Section-->
   <div class="bg-light py-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 py-2">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11673.454564811162!2d-70.9732253!3d42.9916769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5931a7e425ffbd4e!2sStorage+King!5e0!3m2!1sen!2sus!4v1546988999884" width="100%" height="100%" frameborder="0" style="border:2px solid #fff;" allowfullscreen></iframe>
-          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11673.454564811162!2d-70.9732253!3d42.9916769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5931a7e425ffbd4e!2sStorage+King!5e0!3m2!1sen!2sus!4v1546988999884" width="100%" height="100%" frameborder="0" style="border:2px solid #fff;" allowfullscreen></iframe>
+        </div>
         
         <div class="col-lg-6 py-2">
           <div class="mb-4">
             <p>
               <span *ngFor="let contact of contactDetails">
-                  <b>{{contact.label}}</b> {{contact.data}} {{contact.time}}<br>
-                </span>
-                <span style="font-size: 1.1rem;"><strong> Office Hours: <br> </strong></span>
-                <span *ngFor="let hour of hours">
-                  <strong>{{hour.label}} </strong> {{hour.data}}<br>
-                </span>
+                <b>{{contact.label}}</b> {{contact.data}} {{contact.time}}<br>
+              </span>
+              <span style="font-size: 1.1rem;"><strong> Office Hours: <br> </strong></span>
+              <span *ngFor="let hour of hours">
+                <strong>{{hour.label}} </strong> {{hour.data}}<br>
+              </span>
             </p>
           </div>
           
           <div class="pt-2">
-              <app-tables [tBody]="featuresList"></app-tables>
+            <app-tables [tBody]="featuresList"></app-tables>
           </div>
         </div>
       </div>
@@ -93,8 +84,8 @@
   </div>
   <!--About Us Section Ends Here-->
 
-<!--Get Started Secion-->
-<div class="getStarted text-center">
+  <!--Get Started Secion-->
+  <div class="getStarted text-center">
   <div class="get-started">
    <div class="container py-5">
      <div class="py-5 m-0">
@@ -108,8 +99,8 @@
      </div>
    </div>      
   </div>
-</div>
-<!--Get Started Secion Ends Here-->
+  </div>
+  <!--Get Started Secion Ends Here-->
 
 </div> 
 <!--Home Cotainer Ends here-->
