@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { WINDOW } from '@ng-toolkit/universal';
 import { truckRentals } from '../data/truck-rentals';
 import { Title, Meta } from '@angular/platform-browser';
-
+import { environment } from '../../environments/environment';
 @Component({
   selector: 'app-truck-rentals',
   templateUrl: './truck-rentals.component.html',
@@ -10,6 +10,7 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class TruckRentalsComponent implements OnInit {
   truckRentals: any;
+  baseUrl = environment.s3_base_url;
 
   constructor(
     @Inject(WINDOW) private window: Window,

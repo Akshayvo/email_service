@@ -6,7 +6,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { contact, officeHours } from '../data/contact';
 import { featuresList, aboutUs,
           gettingStarted, feature } from '../data/home';
-
+import { environment } from '../../environments/environment';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
   blurbHeading: any;
   blurbText: any;
   slideShow: any;
-
+  baseUrl = environment.s3_base_url;
 
   constructor(@Inject(WINDOW) private window: Window,
     private router: Router,
