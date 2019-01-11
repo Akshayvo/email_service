@@ -12,9 +12,15 @@ export const contact = [
     },
     {
         label: 'Phone:',
-        data: '(603) 396-2706',
+        data: '(603) 772-4500',
+        time: ' - Business Hours',
         class: 'fas fa-phone mx-2 iconColor',
-
+    },
+    {
+        label: 'Phone:',
+        data: '(603) 396-2706',
+        time: ' - Outside Normal Business Hours',
+        class: 'fas fa-phone mx-2 iconColor',
     },
 
 ];

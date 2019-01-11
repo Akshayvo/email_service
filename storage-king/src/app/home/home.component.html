@@ -60,7 +60,7 @@
           <div class="mb-4">
             <p>
               <span *ngFor="let contact of contactDetails">
-                  <b>{{contact.label}}</b> {{contact.data}}<br>
+                  <b>{{contact.label}}</b> {{contact.data}} {{contact.time}}<br>
                 </span>
                 <span style="font-size: 1.1rem;"><strong> Office Hours: <br> </strong></span>
                 <span *ngFor="let hour of hours">
