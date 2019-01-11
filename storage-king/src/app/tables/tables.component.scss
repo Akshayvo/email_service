@@ -20,3 +20,7 @@ table {
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: $white;
 }
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #dbd8ce;
+}

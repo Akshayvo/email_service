@@ -22,6 +22,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { PhotosComponent } from './photos/photos.component';
+import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { PhotosComponent } from './photos/photos.component';
     StorageTipsComponent,
     AccordionComponent,
     PhotosComponent,
+    TruckRentalsComponent,
   ],
   imports: [
     CommonModule,

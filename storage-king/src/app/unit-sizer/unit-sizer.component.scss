@@ -2,11 +2,13 @@
 
 .unit-sizer-holder {
   padding-top: 100px;
-  min-height: 87vh;
+  min-height: 86vh;
   margin-bottom: 50px;
 }
 
 .content-Holder {
+  background-color: $light;
+
   h2 {
     border-bottom: 1px solid $primary;
     width: 250px;
@@ -20,7 +22,6 @@
   color: black;
 
   .unit-sizer-box {
-    border: 1px solid $primary;
     padding: 64px;
   }
 
@@ -34,6 +35,10 @@
       font-size: 1.2rem;
       font-weight: 900;
     }
+  }
+
+  .right-block {
+    height: 100%;
   }
 }
 
@@ -79,7 +84,8 @@
 
 
 .active-unit-border {
-  border: 1px solid $primary;
+  // border: 1.3px solid $primary;
+  background-color: #cac2a6;
 }
 
 .disp {

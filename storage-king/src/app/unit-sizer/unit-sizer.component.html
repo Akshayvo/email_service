@@ -51,7 +51,7 @@
       
               
                   <div class="col-md-10">
-                      <div>
+                      <div class="right-block">
                         <!--Image Carousel Starts Here-->
                         <div class="row image-carosel">
                           <div class="col-1 navigate-arrows-left text-center">
@@ -81,9 +81,9 @@
                           <!-- <div class="col-md-6">
                             <img src="{{unitsizers[i].photo}}" alt="" width="100%" height="auto">
                           </div> -->
-                          <div class="col-12 col-md-8 col-lg-8 col align-self-center">
+                          <div class="col-12 col-md-8 col-lg-8 col pt-3 align-self-center">
                             <h3>{{unitsizers[i].heading}}</h3>
-                            <p class="pr-2 text-justify"> {{unitsizers[i].data}} </p>
+                            <p class="pr-2 text-justify py-2"> {{unitsizers[i].data}} </p>
                             <ul class="pl-0">
                               <li *ngFor="let amenity of unitsizers[i]?.amenities"> {{amenity.content}} </li>
                             </ul>

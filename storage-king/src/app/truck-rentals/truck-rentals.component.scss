@@ -5,23 +5,10 @@
   min-height: 87vh;
   margin-bottom: 50px;
 
-  .view-rates-holder {
+  .rentals-content {
     padding: 64px;
     background-color: $light;
-  }
-
-  .scroll-wrapper {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-
-    iframe {
-      width: 100%;
-      overflow: auto;
-    }
-  }
-
-  ul {
-    padding-inline-start: 30px;
+    min-height: 644px;
   }
 }
 
@@ -29,11 +16,12 @@
   .contentHolder {
     padding-top: 60px;
 
-    .view-rates-holder {
+    .rentals-content {
       padding: 16px;
-      background-color: $light;
     }
   }
+
+
 
   .scroll-wrapper {
     -webkit-overflow-scrolling: touch;

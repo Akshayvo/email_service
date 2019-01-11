@@ -33,6 +33,16 @@
 .feature-block {
   height: 20vh;
 
+  .pgRow {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .f-img {
+    height: 60px;
+  }
+
   p {
     margin-bottom: 0;
   }
@@ -131,6 +141,22 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .jumbotron-top {
+    background-size: cover;
+    height: 60vh;
+  }
+
+  .jumbotron-top1 {
+    background-size: cover;
+    background-position: top;
+    height: 60vh;
+  }
+
+  .jumbotron-top2 {
+    background-size: cover;
+    height: 60vh;
+  }
+
   .disp {
     display: none;
   }
@@ -141,6 +167,26 @@
         font-size: 0.8rem;
       }
     }
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .feature-block {
+    .f-block-img {
+      .f-img {
+        height: 50px;
+      }
+    }
+
+    .f-text {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-height: 540px) {
+  .disp {
+    display: none;
   }
 }
 

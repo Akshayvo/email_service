@@ -9,11 +9,15 @@ export const navLinks = [
     },
     {
         label: 'UNIT SIZER',
-        path: 'unitSizer',
+        path: '/unit-sizer',
     },
     {
         label: 'STORAGE TIPS',
-        path: 'storageTips'
+        path: '/storage-tips'
+    },
+    {
+        label: 'TRUCK RENTALS',
+        path: 'truck-rentals',
     },
     {
         label: 'PAY RENT',
@@ -21,6 +25,6 @@ export const navLinks = [
     },
     {
         label: 'CONTACT US',
-        path: 'contact'
+        path: 'contact-us'
     },
 ];

@@ -1,0 +1,29 @@
+<div class="contentHolder">
+  <div class="container">
+    <h1 class="pt-5 text-center">Truck Rentals</h1>
+    <div class="rentals-content mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-justify" *ngFor='let content of truckRentals'>
+            <strong>{{content.heading}}</strong> <br/>
+            {{content.data}}
+          </p>
+          <p style="margin-bottom: 0;">
+            <strong>Truck Sizes</strong>
+          </p>
+            <ul style="padding-left: 17px;">
+              <li>A 12′ truck will fit 1-2 rooms.</li>
+              <li>A 16′ truck will fit 2-3 rooms.</li>
+              <li>A 22′ truck will fit 4-5 rooms.</li>
+              <li>A 12′ truck will fit 1-2 rooms.</li>
+            </ul>
+          
+        </div>
+        <div class="col-md-6">
+          <!-- <app-photos></app-photos> -->
+          <img src="../../assets/images/storage-king-penske-trucks.jpg" alt="Penske Trucks" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
