@@ -19,19 +19,23 @@ export const featuresList = [
 
 export const feature = [
     {
-        path: '../../assets/images/jumbotorn-bottom-images/location.svg',
+        // tslint:disable-next-line:max-line-length
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/jumbotron-bottom-images/location.svg',
         label: 'Convenient Location & Accessible'
     },
     {
-        path: '../../assets/images/jumbotorn-bottom-images/online-pay.svg',
+        // tslint:disable-next-line:max-line-length
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/jumbotron-bottom-images/online-pay.svg',
         label: 'Complementary Online Bill-Pay'
     },
     {
-        path: '../../assets/images/jumbotorn-bottom-images/Temp.svg',
+        // tslint:disable-next-line:max-line-length
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/jumbotron-bottom-images/Temp.svg',
         label: 'Climate & Humidity Controlled Units Available'
     },
     {
-        path: '../../assets/images/jumbotorn-bottom-images/shipped.svg',
+        // tslint:disable-next-line:max-line-length
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/jumbotron-bottom-images/shipped.svg',
         label: 'Penske Truck Rentals'
     },
 ];
