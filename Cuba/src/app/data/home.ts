@@ -39,27 +39,27 @@ export const gettingStarted = `Start de-cluttering your life today with Cuba Sel
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/feature-icon/Convenient Location.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Cuba_Images/feature-icon/Convenient Location.svg`,
         label: 'Convenient Location'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/feature-icon/Security Lighting.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Cuba_Images/feature-icon/Security Lighting.svg`,
         label: 'Security Lighting'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/feature-icon/Fenced In Facility.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Cuba_Images/feature-icon/Fenced In Facility.svg`,
         label: 'Fenced In Facility'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/feature-icon/Easy Online Bill Pay.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Cuba_Images/feature-icon/Easy Online Bill Pay.svg`,
         label: 'Easy Online Bill Pay'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/feature-icon/Stellar Customer Service.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Cuba_Images/feature-icon/Stellar Customer Service.svg`,
         label: 'Stellar Customer Service'
     },
 ];
