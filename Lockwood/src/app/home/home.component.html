@@ -22,17 +22,21 @@
         </div>
       </div>
       </div>
-    <div class="jumbotron-bottom">
-      <div class="container">
-        <div class="feature row my-5">
-          <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
-            <img [src]="feature?.path" alt="Lockwood Self Storage Features" />
-              <h6 class="feature-text">{{feature.label}}</h6>
+      <div class="jumbotron-bottom">
+        <div class="container feature-block disp">
+          <div class="row pgRow">
+            <div class="col-md-3" *ngFor = "let feature of feature">
+              <p class="text-center f-block-img p-2"> 
+                <img src="{{feature.path}}" class="f-img">
+              </p>
+              <p class="text-center f-text p-2">
+                {{feature.label}}
+              </p>
+            </div>
           </div>
-        </div>
+        </div>  
       </div>
-    </div>
-    </div>
+  </div>
 
 
 <div class="bg-light">

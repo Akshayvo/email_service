@@ -20,7 +20,7 @@ export const featuresList = [
     },
     {
         td1: 'Black Top Paving',
-        td2: 'U-Haul Rentals'
+        td2: 'Security Cameras'
     },
     {
         td1: 'Online Bill Pay',
