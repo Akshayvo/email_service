@@ -22,9 +22,6 @@ export class AccordionComponent implements OnInit {
     this.show = !this.show;
   }
 
-  /**
-   * fetchaccordianData
-   */
   public fetchaccordianData() {
     this.aData = this.accordianData;
   }

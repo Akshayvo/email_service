@@ -73,7 +73,7 @@ export const tabsBarton = [
 export const unitSizerMall = [
     {
         size: '5\' x 10\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/5x10.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `This unit is approximately 25 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -87,7 +87,7 @@ export const unitSizerMall = [
 
     {
         size: '10\' x 10\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x10.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
         data: `This unit is approximately 50 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -100,7 +100,7 @@ export const unitSizerMall = [
     },
     {
         size: '10\' x 15\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x15.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `This unit is approximately 150 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [

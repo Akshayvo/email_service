@@ -21,21 +21,23 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .rent-example {
-    border-left: none;
+  .rent-sub-holder {
+    .rent-example {
+      border-left: 0 $border solid;
+    }
   }
 }
 
 @media only screen and (max-width: 600px) {
   .rent-sub-holder {
     padding: 16px;
+
+    .rent-example {
+      border-left: 0 $border solid;
+    }
   }
 
   iframe {
     min-height: 400px;
-  }
-
-  .rent-example {
-    border-left: 0 $border solid !important;
   }
 }

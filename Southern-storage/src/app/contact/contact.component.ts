@@ -36,7 +36,7 @@ export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
   submitted = false;
-  isSubmitted = false;
+  mailSent = false;
   private sub: any;
 
   constructor(
@@ -103,7 +103,6 @@ onSubmit() {
  if (this.contactForm.invalid) {
      return;
  } else {
-   this.isSubmitted = true;
 
    if (this.contactForm.value.location === 'Southern Self Storage - Rocky Creek') {
     this.receiveremail = this.contactsRockyCreek[2].data;
@@ -124,9 +123,8 @@ onSubmit() {
        this.emailService.sendEmail(body)
          .subscribe((response: any) => {
            if (response.result != null) {
-            //  alert(response.message);
+            this.mailSent = true;
            } else {
-            //  alert(response.message);
            }
          }, (err) => {
            console.log('Error :', err);

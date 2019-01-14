@@ -92,7 +92,7 @@ export const hoursBarton = [
     },
     {
         label: 'Facility Access: ',
-        data: '24/7',
+        data: '24/7/365',
         // class: 'bg-light'
     }
 ];
