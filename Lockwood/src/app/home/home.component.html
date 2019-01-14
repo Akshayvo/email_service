@@ -1,7 +1,6 @@
-  
-<div class="">
-  <div class="jumbotron-container">
-    <div class="jumbotron-top">
+<!--Jumbotron-->
+<div class="jumbotron-container">
+  <div class="jumbotron-top">
     <div class="jumbotron px-0 m-0">
       <div class="bg-translucent jumbotorn-skew-style">
       </div>
@@ -16,29 +15,31 @@
               <a class="btn btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
             </div>
             <div class="col-6 pr-0">
-              <a class="btn btn-primary" (click)="navigate('/contact')" role="button">Contact Us</a></div>
+              <a class="btn btn-primary" (click)="navigate('/contact')" role="button">Contact Us</a>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      <div class="jumbotron-bottom">
-        <div class="container feature-block disp">
-          <div class="row pgRow">
-            <div class="col-md-3" *ngFor = "let feature of feature">
-              <p class="text-center f-block-img p-2"> 
-                <img src="{{feature.path}}" class="f-img">
-              </p>
-              <p class="text-center f-text p-2">
-                {{feature.label}}
-              </p>
-            </div>
-          </div>
-        </div>  
-      </div>
+    </div>
   </div>
+  <div class="jumbotron-bottom">
+    <div class="container feature-block disp">
+      <div class="row pgRow">
+        <div class="col-md-3" *ngFor = "let feature of feature">
+          <p class="text-center f-block-img p-2"> 
+            <img src="{{feature.path}}" class="f-img">
+          </p>
+          <p class="text-center f-text p-2">
+            {{feature.label}}
+          </p>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+<!--Jumbotron Ends Here-->
 
-
+<!--Contatct Section-->
 <div class="bg-light">
   <div class="container py-4">
     <div class="section py-4 m-0">
@@ -46,10 +47,8 @@
         <div class="col-lg-6 py-3 home-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14003.950807277495!2d-81.1805093!3d28.6600869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ad862a170aa3ae1!2sLockwood+Self+Storage!5e0!3m2!1sen!2sus!4v1544027459846" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
         </div>
-
         <div class="col-lg-6 py-3">
           <div class="mb-4">
-            
             <p>
               <span *ngFor="let contact of contactDetails">
                 <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
@@ -71,6 +70,7 @@
     </div>
   </div>
 </div>
+<!--Contatct Section Ends Here-->
 
 <!--About Us Section-->
 <div class="container">
@@ -81,7 +81,6 @@
           <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
           <h2>Community Champions Program: Honoring Those Who Lead & Inspire Our Community</h2>
           <p class="justify" *ngFor="let data of aboutUsunderh2">{{data.p}} <br/> We've got your 6. </p>
-          <!-- <p></p> -->
           <img src="../../assets/thin-blue-red-green-line-flag.jpg" alt="">
           <p class="pt-3">*- Please be sure to bring appropriate ID to qualify for this program.</p>
         </div>
@@ -110,6 +109,3 @@
   </div>
 </div>
 <!--Get Started Section Ends Here-->
-
-</div> 
-
