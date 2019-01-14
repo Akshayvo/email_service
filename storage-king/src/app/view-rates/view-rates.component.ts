@@ -23,10 +23,10 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Looking for an affordable self storage unit for personal or
-                business use? Click here to view Storage King's rates!`
+      content: `Looking for an affordable self storage unit for personal
+                or business use? Click here to view Storage King's unit sizes!`
     });
-    this.titleService.setTitle('View Storage Unit Rates | Storage King');
+    this.titleService.setTitle('View Our Storage Unit Sizes | Storage King');
   }
 
   ngOnInit() {
