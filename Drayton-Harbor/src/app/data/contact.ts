@@ -9,7 +9,7 @@ export const contact = [
         id: 1,
         redirect: 'mailto:sales@draytonharborministorage.com',
         label: 'Email:',
-        data: 'sales@draytonharborministorage.com',
+        data: 'jaya13194@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
@@ -24,11 +24,11 @@ export const contact = [
 export const hours = [
     {
         label: 'Site Access: ',
-        data: '7 Days a Week 11:00AM - 5:00PM'
+        data: '7 Days a Week: 6:00AM to 11:00PM'
     },
     {
         label: 'Office Hours: ',
-        data: '7 Days a Week 6:00AM - 11:00PM'
+        data: 'Tues-Sat: 12:00PM to 5:00PM'
     },
 ];
 

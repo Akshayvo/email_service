@@ -24,7 +24,7 @@ export class ContactButtonComponent implements OnInit {
 
   valid = true;
   submitted = false;
-  isSubmitted = false;
+  mailSent = false;
   head: any;
   flag: boolean;
 
@@ -68,7 +68,7 @@ export class ContactButtonComponent implements OnInit {
    if (this.contactForm.invalid) {
        return;
    } else {
-     this.isSubmitted = true;
+
      this.receiveremail = this.contactInfo[1].data;
 
          this.completeMessage = `phone: ${this.contactForm.value.phoneCB}, <br/>
@@ -83,7 +83,7 @@ export class ContactButtonComponent implements OnInit {
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {
-
+              this.mailSent = true;
              } else {
 
              }

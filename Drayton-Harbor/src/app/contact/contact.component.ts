@@ -24,9 +24,9 @@ export class ContactComponent implements OnInit {
   completeMessage: string;
   contactForm: FormGroup;
   submitted = false;
-  isSubmitted = false;
+  // mailSent = null;
 
-
+  error = false;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -72,7 +72,7 @@ export class ContactComponent implements OnInit {
     if (this.contactForm.invalid) {
         return;
     } else {
-      this.isSubmitted = true;
+
       this.receiveremail = this.contactInfo[1].data;
 
           this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
@@ -89,7 +89,7 @@ export class ContactComponent implements OnInit {
               if (response.result != null) {
 
               } else {
-
+                this.error = true;
               }
             }, (err) => {
 
