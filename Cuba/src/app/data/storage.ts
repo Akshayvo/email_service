@@ -19,6 +19,9 @@ export const storageTip = [
     },
     {
         data: `Place heavier items in the bottom of the box and lighter items on top.`
+    },
+    {
+        data: `Place plastic on the floor as a moisture barrier between your belongings and concrete.`
     }
 ];
 

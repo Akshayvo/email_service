@@ -2,6 +2,7 @@
 
 .background-padding {
   padding: 64px;
+  height: 760px;
 }
 
 .padding-top {
@@ -135,6 +136,7 @@ h1 {
 @media screen and (max-width: 600px) {
   .background-padding {
     padding: 24px 0;
+    height: 660px;
   }
 
   .padding-top {

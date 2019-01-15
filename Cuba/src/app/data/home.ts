@@ -68,7 +68,7 @@ export const jumbotron = [
     {
         h1: `Convenient Self Storage`,
         blurb: `We provide high quality, clean and affordable self storage units, boat, RV and commercial
-        storage to Cuba,Steelville and the surrounding communities! Stop into our on-site office or call
+        storage to Cuba, Steelville and the surrounding communities! Stop into our on-site office or call
         today to learn more about our wide variety of units and services!`,
     }
 ];
