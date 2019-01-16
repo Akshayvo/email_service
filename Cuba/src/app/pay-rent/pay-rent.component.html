@@ -14,8 +14,8 @@
         <p><b>Username:</b>&nbsp; First Initial + Last Name<br>
         <b>Password:</b>&nbsp; Full Phone Number</p>
         <p><b>Example:</b></p>
-        <p>John Smith's Phone Number is (555) 555-5555</p>
-        <p>John's Username: smith<br>
+        <p>John jsmith's Phone Number is (555) 555-5555</p>
+        <p>John's Username: jsmith<br>
         John's Password: 5555555555</p>
         <p>Have questions about your account or would like your password changed? Call our office or email us today!<br>
         <span *ngFor="let contact of contactDetails"><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>

@@ -73,6 +73,7 @@
         <div class="my-4 contact-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1867.979948621348!2d-91.40077732306871!3d38.057447368054405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87dbce6209c6f96b%3A0xc5e803f8cfface80!2sCuba+Self+Storage!5e0!3m2!1sen!2sus!4v1544123421497" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
         </div>
+        <strong>The Entrance to Cuba Storage is off of Highway PP</strong>
         <p>
           <span *ngFor="let contact of contactDetails">
             <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
