@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'truck-rentals', component: TruckRentalsComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'view-rates', component: ViewRatesComponent },
+  { path: 'view-units', component: ViewRatesComponent },
   { path: 'payment', component: PaymentComponent },
   { path: '**', component: ErrorComponent }
 ];

@@ -42,20 +42,23 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Storage King is a proud member of Rockingham County, New Hampshire and have been serving Exeter,
-            Brentwood, Stratham and surrounding communities since [INSERT YEAR].
-            We are easily accessed from both 101 & I-95`,
+        p: `Storage King is a proud member of Rockingham County, New Hampshire. Offering self storage units in Exeter
+            and conveniently located to Brentwood, Epping, Newfields, Stratham, East Kingston,
+            and Kensington. We are easily accessed from both 101 & I-95!`,
     },
     {
-        p: `We offer a large selection of unit types from regular drive-units that can be easily loaded and
-            unloaded from your vehicle to high quality climate controlled and hard-to-find humidity controlled
-            units! We proudly use solar panels to power our facility, reduce our emissions and decrease an energy bill,
-            passing the savings onto you! We even offer Penske truck rentals to make your moving experience a breeze!`,
+        p: `Offering a large selection of unit types from non-climate drive-up units
+            that are easily loaded and unloaded from your vehicle to climate controlled
+            and humidity controlled units. We proudly use solar panels to power our
+            facility, reducing our emissions and decreasing energy consumption, passing
+            the savings onto you! We even offer Penske truck rentals to make your
+            moving experience a breeze!`,
     },
     {
-        p: `We understand that your belongings, equipment and inventory are valuable and go to great lengths
-            to secure our facility. Storage King has a state-of-the-art security system, is fully fenced and
-            requires a pin code for entry through our electronic gate.`,
+        p: `Whether it is household, business, inventory, student, temporary or long term storage
+            we are here to make it convenient and stress-free to rent the right unit for your
+            storage needs. Storage King is part of the StorSmart Insurance Program! Simply
+            ask us how you can insure your stored belongings! `,
     },
 ];
 
