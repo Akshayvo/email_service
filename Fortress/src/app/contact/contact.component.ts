@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit {
   completeMessage: string;
   contactForm: FormGroup;
   submitted = false;
-  isSubmitted = false;
+  mailSent = false;
 
 
   constructor(
@@ -69,12 +69,10 @@ export class ContactComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-
    // stop here if form is invalid
    if (this.contactForm.invalid) {
        return;
    } else {
-     this.isSubmitted = true;
      this.receiveremail = this.contactInfo[1].data;
 
          this.completeMessage = `<strong>Phone: </strong> ${this.contactForm.value.phone}, <br/>
@@ -91,18 +89,17 @@ export class ContactComponent implements OnInit {
            message: this.completeMessage,
            subject: this.contactForm.value.subject
          };
-         this.emailService.sendEmail(body)
-           .subscribe((response: any) => {
-             if (response.result != null) {
-              //  alert(response.message);
-             } else {
-              //  alert(response.message);
-             }
-           }, (err) => {
-             console.log('Error :', err);
-           });
-         this.submitted = false;
-         this.contactForm.reset();
+    this.emailService.sendEmail(body)
+    .subscribe((response: any) => {
+      if (response.result != null) {
+        this.mailSent = true;
+      } else {
+      }
+    }, (err) => {
+    });
+  this.submitted = false;
+  // MailService(body);
+  this.contactForm.reset();
    }
  }
 }

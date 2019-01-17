@@ -20,9 +20,6 @@ export const featuresList = [
     {
         li: `Alarmed Facility`,
     },
-    {
-        li: `Online Reservations`,
-    },
 ];
 
 export const feature = [
@@ -50,9 +47,8 @@ export const aboutUs = [
             worked in the community, always striving to provide fast and friendly service. `,
     },
     {
-        p: `We pride ourselves in going above and beyond for each and every customer which now includes
-            complementary online reservations and bill pay.
-            Reserve your self storage unit or pay your rent on your schedule, 24/7.`,
+        p: `We pride ourselves in going above and beyond for each and every customer which
+            now includes complementary online  bill pay. Check your balance and pay your rent on your schedule, 24/7.`,
     },
     {
         p: `Rest easy knowing your belongings are secured behind a pin-code activated gate
