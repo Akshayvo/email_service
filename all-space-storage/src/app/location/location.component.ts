@@ -31,12 +31,35 @@ export class LocationComponent implements OnInit {
     private router: Router,
     private titleService: Title,
     ) {
-      this.meta.addTag({
-        name: 'description',
-        content: `Are you looking for a well maintained, fully lit self
-                  storage facility with great customer service and affordable pricing? We've got you covered!`
-      });
-      this.titleService.setTitle('Storage Units | AllSpace Storage');
+      if (this.router.url.includes('/location/poughkeepsie')) {
+            this.meta.addTag({
+              name: 'description',
+              content: `Our Route 55 Poughkeepsie location has 24 hour access available, pin-code activated gates,
+                        and easy online auto-pay for your convenience!`
+            });
+            this.titleService.setTitle('Storage Units in Poughkeepsie, NY | AllSpace Storage');
+    } else if (this.router.url.includes('/location/highland')) {
+           this.meta.addTag({
+             name: 'description',
+             content: `Our Highland location is fully lit, has boxes and moving supplies, pin-code
+                       activated gates and easy online auto-pay for your convenience!`
+           });
+           this.titleService.setTitle('Convenient Storage Units in Highland | AllSpace Storage');
+    } else  if (this.router.url.includes('/location/lake-katrine'))  {
+          this.meta.addTag({
+            name: 'description',
+            content: `Are you looking for well-maintained, affordable self storage units near Lake Katrine, NY?
+                      AllSpace Storage has your storage needs covered!`
+          });
+          this.titleService.setTitle('Storage Units In Lake Katrine, NY | AllSpace Storage');
+    } else {
+          this.meta.addTag({
+            name: 'description',
+            content: `Are you looking for a well maintained, fully lit self storage facility with great
+                      customer service and affordable pricing? We've got you covered!`
+          });
+          this.titleService.setTitle('Storage Units in Pawling, NY | AllSpace Storage');
+    }
     }
 
   ngOnInit() {
