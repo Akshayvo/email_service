@@ -1,0 +1,34 @@
+<div class="direction-holder">
+  <div class="container px-0">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>{{directionHeading}}</h2>
+        <div *ngFor="let dir of directionPoints" class="py-0">
+          <p class="py-0 mb-0 mt-4"> {{dir.label}} </p> 
+          <ul class="py-0 pl-3">
+            <li *ngFor="let data of dir?.datas" class="py-0">   {{data.content}}   </li>
+          </ul>  
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <span *ngIf="id === 1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.4339304174373!2d-73.88317818456487!3d41.689567279237515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd3fae485cebbf%3A0x26c17f058f6e14f5!2sAllSpace+Storage!5e0!3m2!1sen!2sus!4v1547424990419" width="100%" height="300PX" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+          <a class="btn btn-primary py-2 w-100 my-3 ml-0" style="position: relative;" target="_blank" href="https://www.google.com/maps/dir//AllSpace+Storage,+189+Manchester+Rd,+Poughkeepsie,+NY+12603/@41.6885913,-73.8937049,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89dd3fae485cebbf:0x26c17f058f6e14f5!2m2!1d-73.8809895!2d41.6895673" role="button">CLICK HERE FOR CUSTOM DRIVING DIRECTION</a>                                       
+        </span>
+        <span *ngIf="id === 2">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.1611943605335!2d-74.02744608456327!3d41.738615879233485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd3d55d160eb6d%3A0x64a4ce6012f7150a!2sAllSpace+Storage!5e0!3m2!1sen!2sus!4v1547426582258" width="100%" height="300px" frameborder="0" style="border:2px solid #fff;" allowfullscreen></iframe> 
+          <a class="btn btn-primary py-2 w-100 my-3 ml-0" style="position: relative;" target="_blank" href="https://www.google.com/maps/dir//AllSpace+Storage,+480+NY-299,+Highland,+NY+12528/@41.7337579,-74.0393607,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89dd3d55d160eb6d:0x64a4ce6012f7150a!2m2!1d-74.0252574!2d41.7386159!3e0" role="button">CLICK HERE FOR CUSTOM DRIVING DIRECTION</a>                                       
+        </span>
+        <span *ngIf="id === 3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.8773523280065!2d-73.99206268419536!3d41.98144297921405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd08d954bf9dd5%3A0x99ba74eb9850ef38!2sAllSpace+Storage!5e0!3m2!1sen!2sus!4v1547428290178" width="100%" height="300px" frameborder="0" style="border:2px solid #fff;" allowfullscreen></iframe>
+          <a class="btn btn-primary py-2 w-100 my-3 ml-0" style="position: relative;" target="_blank" href="https://www.google.com/maps/dir//allspace+kingston/@41.9556832,-74.0191376,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89dd08d954bf9dd5:0x99ba74eb9850ef38!2m2!1d-73.989874!2d41.981443" role="button">CLICK HERE FOR CUSTOM DRIVING DIRECTION</a>                                       
+        </span>
+        <span *ngIf="id === 4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3895.372725219602!2d-73.58763914649444!3d41.538010515264524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xecff7e1d16462119!2sAllSpace+Storage!5e0!3m2!1sen!2sus!4v1547429701813" width="100%" height="300px" frameborder="0" style="border:2px solid #fff;" allowfullscreen></iframe>
+            <a class="btn btn-primary py-2 w-100 my-3 ml-0" style="position: relative;" target="_blank" href="https://www.google.com/maps/dir//AllSpace+Storage,+165+NY-22,+Pawling,+NY+12564/@41.5406682,-73.6081708,13.42z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89dd5a40f06c8155:0xecff7e1d16462119!2m2!1d-73.5847807!2d41.5376071" role="button">CLICK HERE FOR CUSTOM DRIVING DIRECTION</a>                                       
+          </span>
+       </div>
+    </div>
+  </div>
+</div>

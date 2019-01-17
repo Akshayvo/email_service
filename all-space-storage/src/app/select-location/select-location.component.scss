@@ -1,0 +1,14 @@
+@import "../../styles.scss";
+
+.selector-block {
+  // width: 400px;
+}
+
+form {
+  width: 100%;
+
+  .form-control:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+  }
+}

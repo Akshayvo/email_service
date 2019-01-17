@@ -1,0 +1,241 @@
+@import "../../styles.scss";
+
+.jumbotron {
+  height: 100%;
+  width: 100%;
+}
+
+.jumbotron-top {
+  background: url("../../assets/images/self-storage-hallway-green.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-top1 {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-location.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-top2 {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-road.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.feature-block {
+  img {
+    height: 60px;
+  }
+}
+
+.f-text {
+  color: $dark;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.content-align {
+  text-align: right;
+}
+
+.contact-hours {
+  border-left: 2px solid $border;
+  padding-left: 5%;
+}
+
+.for-location {
+  padding: 35px 0 64px 0;
+
+  .btn-outline-primary {
+    margin-right: 10px;
+  }
+}
+
+.service {
+  color: $dark;
+  text-align: left;
+
+  h1 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+
+  img {
+    width: 100%;
+    height: 330px;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+.content-left {
+  text-align: left;
+}
+
+
+.disp {
+  display: block;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+}
+
+.testimonial {
+  background: $light;
+  height: auto;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-indicators {
+    li {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 1px $primary solid;
+      position: relative;
+      flex: 0 1 auto;
+      margin-right: 3px;
+      margin-left: 3px;
+      text-indent: -999px;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: $primary;
+    }
+  }
+
+  .carousel-item {
+    max-width: 100%;
+
+    .active {
+      background-position: center center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content-align {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content-align {
+    text-align: right;
+  }
+
+  .myCarousel {
+    .carousel-item {
+      min-height: 40vh;
+      background-size: cover;
+      background-position: center center;
+      background-position-x: center;
+      background-position-y: center;
+      image-rendering: inherit;
+
+      img {
+        min-height: 40vh;
+        width: auto;
+        block-size: 100%;
+        position: relative;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-hours {
+    border-left: none;
+    padding-left: 5%;
+  }
+
+  .disp {
+    display: block;
+  }
+
+  .for-location {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jumbotron-top {
+    height: 50vh;
+  }
+
+  .jumbotron-top1 {
+    background-position: right;
+    height: 50vh;
+  }
+
+  .jumbotron-top2 {
+    height: 50vh;
+  }
+
+  .content-align {
+    text-align: center;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .f-block-img {
+    padding-top: 10px;
+
+    .f-img {
+      height: 40%;
+      width: 40%;
+    }
+  }
+
+  .f-text {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .myCarousel {
+    .carousel-item {
+      min-height: 40vh;
+      width: 200%;
+      background-size: cover;
+      background-position: center center;
+      background-position-x: center;
+      background-position-y: center;
+      image-rendering: inherit;
+
+      img {
+        min-height: 40vh;
+        width: auto;
+        block-size: 100%;
+        position: relative;
+      }
+    }
+  }
+
+  .contact-hours {
+    border-left: none;
+    padding-left: 5%;
+  }
+}

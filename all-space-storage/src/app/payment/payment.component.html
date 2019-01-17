@@ -1,0 +1,60 @@
+<div class="rent-holder">
+  <div class="container">
+    <div class="rent-heading">
+      <h1 class="text-center pt-5">Pay Rent Online</h1>
+      <h2 class="text-center">Select your location to access your account</h2>
+    </div>
+    <div  class="container pt-5">
+      <!-- <app-tabs [tabs]='tabs'  style="background-color: #f1f0ed;"></app-tabs> -->
+      <div class="rent-sub-holder">
+          <div class="container px-0">
+            <app-select-location (click)="receiveMessage()"></app-select-location>
+            <div class="row">
+              <div class="col-md-8 mx-0">
+                <span *ngIf="locationId == 1" >
+                  <!-- <iframe id="advanced_iframe" name="advanced_iframe" src="https://SouthernStorageRC.sim.syrasoft.com/PayNow" width="100%" -->
+                  <!-- height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe> -->
+                  <div class="text-center my-auto" style="padding: 20%;">
+                    <h2> Coming Soon!!! </h2>
+                  </div>
+                </span>
+                <span *ngIf="locationId == 2">
+                  <!-- <iframe id="advanced_iframe" name="advanced_iframe" src="https://SouthernStorage.sim.syrasoft.com/PayNow" width="100%"
+                  height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>   -->
+                  <div class="text-center my-auto" style="padding: 20%;">
+                    <h2> Coming Soon!!! </h2>
+                  </div>
+                </span>
+                <span *ngIf="locationId == 3">
+                  <iframe id="advanced_iframe" name="advanced_iframe" src="https://allspacelakekatrine.sim.syrasoft.com/paynow" width="100%"
+                  height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>  
+                </span>
+                <span *ngIf="locationId == 4">
+                  <!-- <iframe id="advanced_iframe" name="advanced_iframe" src="https://SouthernStorageB.sim.syrasoft.com/PayNow" width="100%"
+                  height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>   -->
+                  <div class="text-center my-auto" style="padding: 20%;">
+                    <h2> Coming Soon!!! </h2>
+                  </div>
+                </span>
+              </div>
+        
+              <div class="col-md-4 rent-example" >
+                 <h2> How to Login </h2>
+                 <p class="pt-3"> <b>Username:</b> First initial + Last Name </p>
+                 <p> <b>Password:</b>  Full Phone Number </p>
+            
+                 <p class="py-3"> <b>Example</b> </p>
+                 <p class="pb-3">John Smith's phone number is (555) 555-5555</p>
+            
+                 <p> <b>John's Username:</b> jsmith </p>
+                 <p class="pb-3"> <b>John's Password:</b> 5555555555 </p>
+            
+                 <p> <b>Have question about your account?</b> </p>
+                 <p> (601) 791-2999 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="d-flex justify-content-center">
+  <div class="selector-block" style="padding-bottom: 35px;">
+    <div class="row">
+      <span style="background-color: #006e3e; padding: 6px 12px; border-radius: 4px 0 0 4px;">
+        <i class="fas fa-map-marker-alt" style="color: #fff; font-size: 1.1rem;"></i>
+      </span>
+      <span>
+        <form [formGroup]="getLocation">
+          <select name="location"
+          formControlName="location" class="form-control text-center" style="border-radius: 0 4px 4px 0;" (click)="sendMessage()">
+            <option *ngFor='let place of places' class="text-center" [value]="place.id">{{place.name}}</option>
+          </select>
+        </form>
+      </span>
+    </div>
+  </div>
+</div>
