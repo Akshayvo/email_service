@@ -4,7 +4,7 @@ import { contactsRockyCreek, hoursRockyCreek,
          contactsAgricola, hoursAgricola,
          contactsBarton, hoursBarton } from '../data/contact';
 import { tabs, tabsBarton } from '../data/location';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 
 
@@ -28,8 +28,30 @@ export class LocationComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
+    private meta: Meta,
     ) {
-      this.titleService.setTitle('');
+      if (this.router.url.includes('/location/rocky-creek')) {
+          this.meta.addTag({
+            name: 'description',
+            content: `24/7 access to your unit and free online bill pay service! Southern
+                      Storage at Rocky Creek offers units from 5' x 10' to 10' x 15'! Call or reserve today!`
+          });
+          this.titleService.setTitle('Self Storage Units Near Rocky Creek | Southern Storage');
+      } else if (this.router.url.includes('/location/agricola')) {
+          this.meta.addTag({
+            name: 'description',
+            content: `Conveniently located in Agricola, Southern Storage has regular and climate
+                      controlled storage units perfect for your needs! Reserve online or call today!`
+          });
+          this.titleService.setTitle('Affordable Storage Units in Agricola | Southern Storage');
+      } else {
+          this.meta.addTag({
+            name: 'description',
+            content: `Southern Storage now offers a fully fenced self storage facility in Lucedale,
+                      MS! Free online bill pay and the same stellar customer service!`
+          });
+          this.titleService.setTitle('Convenient Storage Units Near Lucedale, MS | Southern Storage');
+      }
     }
 
   ngOnInit() {
