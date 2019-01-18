@@ -33,18 +33,22 @@ export class UnitSizerComponent implements OnInit {
 
   public fetchDetailsLocation1() {
     this.unitSizer = unitSizerLocation1;
+    this.id = 1;
   }
 
   public fetchDetailsLocation2() {
     this.unitSizer = unitSizerLocation2;
+    this.id = 2;
   }
 
   public fetchDetailsLocation3() {
     this.unitSizer = unitSizerLocation3;
+    this.id = 3;
   }
 
   public fetchDetailsLocation4() {
     this.unitSizer = unitSizerLocation4;
+    this.id = 4;
   }
 
 }

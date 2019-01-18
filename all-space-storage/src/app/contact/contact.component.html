@@ -4,7 +4,9 @@
         <h1 class="text-center pt-5">Contact Us</h1>
       </div>
       <div class="contact-data p-5">
-       <app-select-location (click)="receiveMessage()"></app-select-location>
+        <div class="location-selection">
+          <app-select-location (click)="receiveMessage()"></app-select-location>
+        </div>
         <div class="row">
           <div class="col-md-8">
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
@@ -59,8 +61,8 @@
                       </div>
                   </div>
 
-                   <button type="submit" class="btn btn-primary px-4" style="float: right;">Submit</button>
-                   <button type="button" class="btn btn-outline-primary px-4" (click)="contactForm.reset()" style="float: right;">Clear</button>
+                   <button type="submit" class="btn btn-primary px-4">Submit</button>
+                   <button type="button" class="btn btn-outline-primary px-4" (click)="contactForm.reset()">Clear</button>
 
             </form>
           </div>

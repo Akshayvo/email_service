@@ -25,22 +25,18 @@ export const hoursLocation1 = [
     {
         label: 'Tues,Thurs: ',
         data: '10am-2pm',
-        // class: ''
     },
     {
         label: 'Saturday: ',
         data: '10am-4pm',
-        // class: 'bg-light'
     },
     {
         label: 'Sunday: ',
         data: 'Closed',
-        // class: ''
     },
     {
         label: 'Access hours:',
         data: '6am-11pm - 7 days a week',
-        // class: 'bg-light'
     },
 ];
 
@@ -67,22 +63,18 @@ export const hoursLocation2 = [
     {
         label: 'Mon - Fri: ',
         data: '10am-5pm',
-        // class: 'bg-light'
     },
     {
         label: 'Saturday: ',
         data: '10am-4pm',
-        // class: ''
     },
     {
         label: 'Sunday: ',
         data: 'Closed',
-        // class: ''
     },
     {
         label: 'Access hours: ',
         data: '6am-11pm - 7 days a week',
-        // class: ''
     },
 ];
 
@@ -109,22 +101,18 @@ export const hoursLocation3 = [
     {
         label: 'Mon - Fri: ',
         data: '9am-5pm',
-        // class: 'bg-light'
     },
     {
         label: 'Saturday: ',
         data: '9am-4pm',
-        // class: ''
     },
     {
         label: 'Sunday: ',
         data: 'Closed',
-        // class: ''
     },
     {
         label: 'Access hours: ',
         data: '6am-11pm - 7 days a week',
-        // class: ''
     },
 ];
 
@@ -151,29 +139,17 @@ export const hoursLocation4 = [
     {
         label: 'Mon, Tues, Wed, Fri: ',
         data: '10am-5pm',
-        // class: 'bg-light'
     },
     {
         label: 'Thurs: ',
         data: '9am-4pm',
-        // class: ''
     },
     {
         label: 'Saturday: ',
         data: '10am-4pm',
-        // class: ''
     },
     {
         label: 'Sunday: ',
         data: 'Closed',
-        // class: ''
     },
-];
-
-export const socialLinks = [
-    // {
-    //     label: 'facebook',
-    //     path: 'https://www.facebook.com',
-    //     class: 'fab fa-facebook-square',
-    // },
 ];

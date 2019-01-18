@@ -65,7 +65,13 @@ export class ContactComponent implements OnInit {
   get f() { return this.contactForm.controls; }
 
   receiveMessage() {
-    this.data.currentLocation.subscribe(locationId => this.locationId = locationId);
+    this.data.currentLocation.subscribe(locationId => {
+      this.locationId = locationId;
+      this.dataupdate();
+    });
+  }
+
+  public dataupdate() {
     if ( this.locationId === '1' || this.locationId === 1 ) {
       this.fetchContactDetailsLocation1();
     } else if ( this.locationId === '2' ) {

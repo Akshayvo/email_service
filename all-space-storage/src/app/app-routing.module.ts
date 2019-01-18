@@ -12,7 +12,6 @@ import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
-import { RentSubComponent } from './rent-sub/rent-sub.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -65,16 +64,6 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-
-  // { path: 'payment',
-  //   component: PaymentComponent,
-  //   children: [
-  //     {path: '', redirectTo: 'agricola' , pathMatch: 'full' },
-  //     { path: 'rocky-creek', component: RentSubComponent },
-  //     { path: 'agricola', component: RentSubComponent },
-  //     { path: 'barton', component: RentSubComponent },
-  //   ]
-  // },
   { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },

@@ -75,100 +75,44 @@ export const unitSizerLocation1 = [
         size: '5\' x 5\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
         data: `Basically the size of a closet (with a very high ceiling). Store boxes, holiday items, clothes, etc.`,
-        // amenities: [
-        //     { content: 'Chairs', },
-        //     { content: 'Small desks', },
-        //     { content: 'Small bookcases', },
-        //     { content: 'Suitcases', },
-        //     { content: 'Lamps', },
-        // ],
     },
 
     {
         size: '5\' x 10\' or 10\' x 5\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `Store the contents of one room. Also the right size for a motorcycle.`,
-        // amenities: [
-        //             { content: 'Chairs', },
-        //             { content: 'Small desks', },
-        //             { content: 'Small bookcases', },
-        //             { content: 'Suitcases', },
-        //             { content: 'Lamps', },
-        // ],
     },
     {
         size: '5\' x 15\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
         data: `Comfortably holds the contents of a one bedroom apartment as well as some sports equipment.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     },
     {
         size: '10\' x 10\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Perfectly holds the contents of a one or two bedroom apartment. This
                 unit size is also well suited for file storage or for your four-wheeler.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     },
     {
         size: '10\' x 15\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Need to store a compact car, a jet ski or snowmobile? This is the space you need.`,
-        // amenities: [
-        //     { content: 'Chairs', },
-        //     { content: 'Small desks', },
-        //     { content: 'Small bookcases', },
-        //     { content: 'Suitcases', },
-        //     { content: 'Lamps', },
-        // ],
     },
 
     {
         size: `10' x 20'`,
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
         data: `This size can accommodate a larger car or the contents of a large apartment or small house.`,
-        // amenities: [
-        //             { content: 'Chairs', },
-        //             { content: 'Small desks', },
-        //             { content: 'Small bookcases', },
-        //             { content: 'Suitcases', },
-        //             { content: 'Lamps', },
-        // ],
     },
     {
         size: '10\' x 25\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
         data: `A great space for a three bedroom apartment or a small house.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     },
     {
         size: '10\' x 30\' or 12\' x 30\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
         data: `Great for commercial use or for storing the contents of a large house, boats, RV's, etc.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     }
 ];
 
@@ -177,100 +121,44 @@ export const unitSizerLocation2 = [
         size: '5\' x 5\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
         data: `Basically the size of a closet (with a very high ceiling). Store boxes, holiday items, clothes, etc.`,
-        // amenities: [
-        //     { content: 'Chairs', },
-        //     { content: 'Small desks', },
-        //     { content: 'Small bookcases', },
-        //     { content: 'Suitcases', },
-        //     { content: 'Lamps', },
-        // ],
     },
 
     {
         size: '5\' x 10\' or 10\' x 5\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `Store the contents of one room. Also the right size for a motorcycle.`,
-        // amenities: [
-        //             { content: 'Chairs', },
-        //             { content: 'Small desks', },
-        //             { content: 'Small bookcases', },
-        //             { content: 'Suitcases', },
-        //             { content: 'Lamps', },
-        // ],
     },
     {
         size: '5\' x 15\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
         data: `Comfortably holds the contents of a one bedroom apartment as well as some sports equipment.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     },
     {
         size: '10\' x 10\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Perfectly holds the contents of a one or two bedroom apartment. This unit size is
                also well suited for file storage or for your four-wheeler.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     },
     {
         size: '10\' x 15\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Need to store a compact car, a jet ski or snowmobile? This is the space you need.`,
-        // amenities: [
-        //     { content: 'Chairs', },
-        //     { content: 'Small desks', },
-        //     { content: 'Small bookcases', },
-        //     { content: 'Suitcases', },
-        //     { content: 'Lamps', },
-        // ],
     },
 
     {
         size: `10' x 20'`,
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
         data: `This size can accommodate a larger car or the contents of a large apartment or small house.`,
-        // amenities: [
-        //             { content: 'Chairs', },
-        //             { content: 'Small desks', },
-        //             { content: 'Small bookcases', },
-        //             { content: 'Suitcases', },
-        //             { content: 'Lamps', },
-        // ],
     },
     {
         size: '10\' x 25\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
         data: `A great space for a three bedroom apartment or a small house.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     },
     {
         size: '10\' x 30\' or 12\' x 30\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
         data: `Great for commercial use or for storing the contents of a large house, boats, RV's, etc.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     }
 ];
 
@@ -279,100 +167,44 @@ export const unitSizerLocation3 = [
         size: '5\' x 5\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
         data: `Basically the size of a closet (with a very high ceiling). Store boxes, holiday items, clothes, etc.`,
-        // amenities: [
-        //     { content: 'Chairs', },
-        //     { content: 'Small desks', },
-        //     { content: 'Small bookcases', },
-        //     { content: 'Suitcases', },
-        //     { content: 'Lamps', },
-        // ],
     },
 
     {
         size: '5\' x 10\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `Store the contents of one room. Also the right size for a motorcycle.`,
-        // amenities: [
-        //             { content: 'Chairs', },
-        //             { content: 'Small desks', },
-        //             { content: 'Small bookcases', },
-        //             { content: 'Suitcases', },
-        //             { content: 'Lamps', },
-        // ],
     },
     {
         size: '5\' x 15\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
         data: `Comfortably holds the contents of a one bedroom apartment as well as some sports equipment.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     },
     {
         size: '10\' x 10\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Perfectly holds the contents of a one or two bedroom apartment. This unit size is
                also well suited for file storage or for your four-wheeler.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     },
     {
         size: '10\' x 15\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Need to store a compact car, a jet ski or snowmobile? This is the space you need.`,
-        // amenities: [
-        //     { content: 'Chairs', },
-        //     { content: 'Small desks', },
-        //     { content: 'Small bookcases', },
-        //     { content: 'Suitcases', },
-        //     { content: 'Lamps', },
-        // ],
     },
 
     {
         size: `10' x 20' or 12' X 20'`,
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
         data: `This size can accommodate a larger car or the contents of a large apartment or small house.`,
-        // amenities: [
-        //             { content: 'Chairs', },
-        //             { content: 'Small desks', },
-        //             { content: 'Small bookcases', },
-        //             { content: 'Suitcases', },
-        //             { content: 'Lamps', },
-        // ],
     },
     {
         size: '10\' x 25\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
         data: `A great space for a three bedroom apartment or a small house.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     },
     {
         size: '10\' x 30\' or 12\' x 30\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
         data: `Great for commercial use or for storing the contents of a large house, boats, RV's, etc.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     }
 ];
 
@@ -381,100 +213,44 @@ export const unitSizerLocation4 = [
         size: '5\' x 5\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
         data: `Basically the size of a closet (with a very high ceiling). Store boxes, holiday items, clothes, etc.`,
-        // amenities: [
-        //     { content: 'Chairs', },
-        //     { content: 'Small desks', },
-        //     { content: 'Small bookcases', },
-        //     { content: 'Suitcases', },
-        //     { content: 'Lamps', },
-        // ],
     },
 
     {
         size: '5\' x 10\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `Store the contents of one room. Also the right size for a motorcycle.`,
-        // amenities: [
-        //             { content: 'Chairs', },
-        //             { content: 'Small desks', },
-        //             { content: 'Small bookcases', },
-        //             { content: 'Suitcases', },
-        //             { content: 'Lamps', },
-        // ],
     },
     {
         size: '5\' x 15\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
         data: `Comfortably holds the contents of a one bedroom apartment as well as some sports equipment.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     },
     {
         size: '10\' x 10\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Perfectly holds the contents of a one or two bedroom apartment. This unit size
                is also well suited for file storage or for your four-wheeler.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     },
     {
         size: '10\' x 15\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Need to store a compact car, a jet ski or snowmobile? This is the space you need.`,
-        // amenities: [
-        //     { content: 'Chairs', },
-        //     { content: 'Small desks', },
-        //     { content: 'Small bookcases', },
-        //     { content: 'Suitcases', },
-        //     { content: 'Lamps', },
-        // ],
     },
 
     {
         size: `10' x 20'`,
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
         data: `This size can accommodate a larger car or the contents of a large apartment or small house.`,
-        // amenities: [
-        //             { content: 'Chairs', },
-        //             { content: 'Small desks', },
-        //             { content: 'Small bookcases', },
-        //             { content: 'Suitcases', },
-        //             { content: 'Lamps', },
-        // ],
     },
     {
         size: '10\' x 25\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
         data: `A great space for a three bedroom apartment or a small house.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     },
     {
         size: '10\' x 30\' or 12\' x 30\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
         data: `Great for commercial use or for storing the contents of a large house, boats, RV's, etc.`,
-        // amenities: [
-        //     { content: 'chairs', },
-        //     { content: 'small desks', },
-        //     { content: 'small bookcases', },
-        //     { content: 'suitcases', },
-        //     { content: 'lamps', },
-        // ],
     }
 ];
 

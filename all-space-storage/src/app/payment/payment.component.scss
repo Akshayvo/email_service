@@ -21,6 +21,14 @@
   background-color: $light;
   margin-bottom: 50px;
 
+  .coming-soon {
+    padding: 20%;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
   .col-md-8 {
     padding-right: 4%;
   }
@@ -38,6 +46,14 @@
 
 @media only screen and (max-width: 768px) {
   .rent-sub-holder {
+    .coming-soon {
+      padding: 40% 10%;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+
     .rent-example {
       border-left: 0 $border solid;
     }
@@ -45,6 +61,13 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .rent-holder {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .rent-sub-holder {
     padding: 16px;
 

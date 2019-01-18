@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormGroup, FormBuilder, Validators  } from '@angular/forms';
+import { FormGroup, FormBuilder  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
 
 @Component({
@@ -43,8 +43,6 @@ export class SelectLocationComponent implements OnInit {
  }
 
   sendMessage() {
-    console.log('sendmessage', this.getLocation.value.location);
     this.data.changeLocation(this.getLocation.value.location);
-    // this.messageEvent.emit(this.getLocation.value.location);
   }
 }

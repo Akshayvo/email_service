@@ -3,16 +3,21 @@
 .storageUnitHolder {
   margin-bottom: 50px;
   padding: 64px;
-  // min-height: 90vh;
   background-color: #f1f0ed;
+
+  .coming-soon {
+    font-size: 2rem;
+    padding: 20%;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .storageUnitHolder {
     padding: 16px;
 
-    iframe {
-      min-height: 1100px;
+    .coming-soon {
+      font-size: 1.8rem;
+      padding: 40% 10%;
     }
   }
 }

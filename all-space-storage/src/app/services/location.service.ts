@@ -31,6 +31,5 @@ export class LocationService {
 
   changeLocation (locationId: any) {
     this.locationSource.next(locationId);
-    console.log('Service change', locationId);
   }
 }
