@@ -23,7 +23,7 @@ export class StorageUnitComponent implements OnInit {
       this.id = 2;
     } else if (this.router.url.includes('/location/lake-katrine')) {
       this.id = 3;
-    } else if (this.router.url.includes('/location/lake-katrine')) {
+    } else if (this.router.url.includes('/location/pawling')) {
       this.id = 4;
     }
   }

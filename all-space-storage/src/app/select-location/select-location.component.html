@@ -7,7 +7,7 @@
       <span>
         <form [formGroup]="getLocation">
           <select name="location"
-          formControlName="location" class="form-control text-center" style="border-radius: 0 4px 4px 0; height: 42px; width: 300px;" (click)="sendMessage()">
+          formControlName="location" class="form-control text-center" style="border-radius: 0 4px 4px 0; height: 42px; width: 300px;" (change)="sendMessage()">
             <option *ngFor='let place of places' class="text-center" [value]="place.id">{{place.name}}</option>
           </select>
         </form>

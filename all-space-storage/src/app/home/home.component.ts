@@ -8,6 +8,7 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation4, hoursLocation4 } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
 import { LocationService } from '../services/location.service';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +22,7 @@ export class HomeComponent implements OnInit {
   heading: string;
   features: any;
   serviceOffered: any;
+  private sub: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -43,10 +45,14 @@ export class HomeComponent implements OnInit {
     this.fetchFeatureHead();
     this.window.scrollTo(0, 0);
     this.receiveMessage();
+    // interval(1000).subscribe(x => {
+    //   this.receiveMessage();
+    // });
   }
 
   receiveMessage() {
     this.data.currentLocation.subscribe(locationId => this.locationId = locationId);
+    console.log('Home Component', this.locationId);
     if ( this.locationId === '1' || this.locationId === 1 ) {
       this.fetchContactDetailsLocation1();
     } else if ( this.locationId === '2' ) {
