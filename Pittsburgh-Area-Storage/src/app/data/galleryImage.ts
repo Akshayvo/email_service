@@ -1,33 +1,49 @@
 /* tslint:disable:max-line-length */
-export const galleryRockyCreek = [
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-green-buildings.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-buildings.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-roadside.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-roadside-sign.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-10-by-15-units.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-5-by-10-units.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-self-storage-building.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-units.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-10-by-10-units.jpg'},
+export const galleryImagesLocation1 = [
+    { url: '../../assets/images/movin-on-storage/movin-on-storage-center-boxes.jpg'},
+    { url: '../../assets/images/movin-on-storage/movin-on-storage-center-indoor-units.jpg'},
+    { url: '../../assets/images/movin-on-storage/movin-on-storage-center-office-window.jpg'},
+    { url: '../../assets/images/movin-on-storage/movin-on-storage-center-office.jpg'},
+    { url: '../../assets/images/movin-on-storage/movin-on-storage-elevator.jpg'},
+    { url: '../../assets/images/movin-on-storage/movin-on-storage-front-desk.jpg'},
+    { url: '../../assets/images/movin-on-storage/movin-on-storage-office-store.jpg'},
 ];
 
-export const galleryMall = [
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-main-building.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-outdoor-units.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-climate-control-entrance.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-climate-controlled.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-inside-unit.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-inside-units.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-outdoor-units.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-outdoor-units(1).jpg'},
+export const galleryImagesLocation2 = [
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-retail-store.jpg'},
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-units.jpg'},
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-regular-units.jpg'},
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-pin-code-gate.jpg'},
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-climate-controlled-units-doors.jpg'},
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-outdoor-parking.jpg'},
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-large-unit.jpg'},
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-jeep.jpg'},
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-indoor-hallway-climate-controlled-units.jpg'},
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-indoor-climate-controlled-units.jpg'},
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-front-gate.jpg'},
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-front-desk.jpg'},
+    { url: '../../assets/images/shaler-self-storage/shaler-self-storage-exit-gate.jpg'},
+];
+
+export const galleryImagesLocation3 = [
+    { url: '../../assets/images/natrona-heights/natrona-heights-retail-store.jpg'},
+    { url: '../../assets/images/natrona-heights/natrona-heights-outdoor-units.jpg'},
+    { url: '../../assets/images/natrona-heights/natrona-heights-indoor-office.jpg'},
+    { url: '../../assets/images/natrona-heights/natrona-heights-front-office.jpg'},
+    { url: '../../assets/images/natrona-heights/natrona-heights-climate-controlled-units.jpg'},
+    { url: '../../assets/images/natrona-heights/natrona-heights-climate-controlled-indoor-units.jpg'},
+    { url: '../../assets/images/natrona-heights/natrona-heights-climate-controlled-hallway.jpg'},
 ];
 
 
-
-export const galleryDataRockyCreek = [
-    { p: `The Southern Storage Agricola location offers high quality, conveniently located storage units perfect for your needs! The Agricola location offers both climate control and regular units from 5'x10' through 10'x15'! We pride ourselves on friendly, responsive customer service and extremely convenient online reservations ` }
+export const galleryDataLocation1 = [
+    { p: `Gallery Movin' On Storage Center Data.` }
 ];
 
-export const galleryDataAgricola = [
-    { p: `Our Agricola location is a fenced facility with a number of regular and climate controlled units conveniently located in Agricola. Our management team is ready and waiting to help you get moved in to one of our high quality self storage units. Simply reserve your unit online or call today!`, }
+export const galleryDataLocation2 = [
+    { p: `Gallery Shaler Self Storage Data.`, }
+];
+
+export const galleryDataLocation3 = [
+    { p: `Gallery Natrona Heights Self Storage Data`, }
 ];

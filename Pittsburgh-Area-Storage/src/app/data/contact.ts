@@ -1,34 +1,30 @@
 export const contactsLocation1 = [
     {
         label: 'Address:',
-        data: '189 Manchester Road Poughkeepsie, NY 12603',
+        data: '200 Piedmont Road  Charleston, WV  25301',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         label: 'Phone:',
-        data: '(845) 454-0066',
+        data: '(304) 344-1104',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
         label: 'Email:',
-        data: 'allspacestoragert55@hvc.rr.com',
+        data: 'movinonstoragecenter@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
     },
 ];
 
 export const hoursLocation1 = [
     {
-        label: 'Mon, Wed, Fri: ',
-        data: '10am-5pm',
+        label: 'Monday - Friday: ',
+        data: '9:00AM - 5:00PM',
         // class: 'bg-light'
     },
     {
-        label: 'Tues,Thurs: ',
-        data: '10am-2pm',
-    },
-    {
         label: 'Saturday: ',
-        data: '10am-4pm',
+        data: '9:00AM - 2:00PM',
     },
     {
         label: 'Sunday: ',
@@ -36,120 +32,74 @@ export const hoursLocation1 = [
     },
     {
         label: 'Access hours:',
-        data: '6am-11pm - 7 days a week',
+        data: '24/7/365',
     },
 ];
 
 export const contactsLocation2 = [
     {
         label: 'Address:',
-        data: '480 Route 299 Highland, NY 12528',
+        data: '422 Elfinwild Road  Allison Park, PA. 15101',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
 
     {
         label: 'Phone:',
-        data: '845-691-6999',
+        data: '(412) 486-4852',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
         label: 'Email:',
-        data: 'allspacestoragert299@hvc.rr.com',
+        data: 'shalerselfstorage@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
     },
 ];
 
 export const hoursLocation2 = [
     {
-        label: 'Mon - Fri: ',
-        data: '10am-5pm',
+        label: 'Tuesday-Friday: ',
+        data: '10:00AM - 4:00PM',
     },
     {
         label: 'Saturday: ',
-        data: '10am-4pm',
-    },
-    {
-        label: 'Sunday: ',
-        data: 'Closed',
+        data: '10:00AM - 2:00PM',
     },
     {
         label: 'Access hours: ',
-        data: '6am-11pm - 7 days a week',
+        data: '24/7/365',
     },
 ];
 
 export const contactsLocation3 = [
     {
         label: 'Address:',
-        data: '1693 Ulster Avenue Lake Katrine, NY 12449',
+        data: '896 Veterans Drive, Natrona Heights, PA 15065',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
 
     {
         label: 'Phone:',
-        data: '(845) 383-0606',
+        data: '(724) 295-0411',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
         label: 'Email:',
-        data: 'allspacestorageLK@hvc.rr.com',
+        data: 'natronaheightsselfstorage@gmail.com ',
         class: 'fas fa-envelope-open mr-2 iconColor',
     },
 ];
 
 export const hoursLocation3 = [
     {
-        label: 'Mon - Fri: ',
-        data: '9am-5pm',
+        label: 'Monday - Friday: ',
+        data: '9:00AM - 4:00PM',
     },
     {
         label: 'Saturday: ',
-        data: '9am-4pm',
-    },
-    {
-        label: 'Sunday: ',
-        data: 'Closed',
+        data: '9:00AM - 2:00PM',
     },
     {
         label: 'Access hours: ',
-        data: '6am-11pm - 7 days a week',
-    },
-];
-
-export const contactsLocation4 = [
-    {
-        label: 'Address:',
-        data: '165 Route 22 Pawling, NY 12564',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-    },
-
-    {
-        label: 'Phone:',
-        data: '(845) 855-0700',
-        class: 'fas fa-phone mr-2 iconColor',
-    },
-    {
-        label: 'Email:',
-        data: 'allspacestoragert22@hvc.rr.com',
-        class: 'fas fa-envelope-open mr-2 iconColor',
-    },
-];
-
-export const hoursLocation4 = [
-    {
-        label: 'Mon, Tues, Wed, Fri: ',
-        data: '10am-5pm',
-    },
-    {
-        label: 'Thurs: ',
-        data: '9am-4pm',
-    },
-    {
-        label: 'Saturday: ',
-        data: '10am-4pm',
-    },
-    {
-        label: 'Sunday: ',
-        data: 'Closed',
+        data: '24/7/365',
     },
 ];

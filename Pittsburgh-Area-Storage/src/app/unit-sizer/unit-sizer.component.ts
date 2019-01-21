@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { unitSizerLocation1, unitSizerLocation2, unitSizerLocation3, unitSizerLocation4 } from '../data/location';
+import { unitSizerLocation1, unitSizerLocation2, unitSizerLocation3 } from '../data/location';
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -11,7 +11,8 @@ export class UnitSizerComponent implements OnInit {
   unitSizer: any;
   tabs: any;
   currentTab = 'Unit Sizer';
-  id: number;
+  h2tag: string;
+  description: string;
   constructor( private router: Router ) {
    }
 
@@ -26,29 +27,36 @@ export class UnitSizerComponent implements OnInit {
     this.fetchDetailsLocation2();
   } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
     this.fetchDetailsLocation3();
-  } else {
-    this.fetchDetailsLocation4();
   }
   }
 
   public fetchDetailsLocation1() {
     this.unitSizer = unitSizerLocation1;
-    this.id = 1;
+    this.h2tag = 'Unit Sizer';
+    this.description = `Finding the right size is easy, below you will find some
+                        of the common storage units, by size and what typically fits.
+                        TIP: remember to think 'cubic', do your items just need floor
+                        space or can they stack and fit together? *Actual contents
+                        vary depending of the size of your belongings.`;
   }
 
   public fetchDetailsLocation2() {
+    this.h2tag = 'Unit Sizer';
+    this.description = `Finding the right size is easy, below you will find some of
+                        the common storage units, by size and what typically fits.
+                        TIP: remember to think 'cubic', do your items just need floor
+                        space or can they stack and fit together?
+                        *Actual contents vary depending of the size of your belongings`;
     this.unitSizer = unitSizerLocation2;
-    this.id = 2;
   }
 
   public fetchDetailsLocation3() {
+    this.h2tag = 'Unit Sizer';
+    this.description = `Finding the right size is easy, below you will find some of the
+                        common storage units, by size and what typically fits.
+                        TIP: remember to think 'cubic', do your items just need floor
+                        space or can they stack and fit together?
+                        *Actual contents vary depending of the size of your belongings.`;
     this.unitSizer = unitSizerLocation3;
-    this.id = 3;
   }
-
-  public fetchDetailsLocation4() {
-    this.unitSizer = unitSizerLocation4;
-    this.id = 4;
-  }
-
 }

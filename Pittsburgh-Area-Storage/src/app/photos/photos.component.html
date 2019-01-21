@@ -9,11 +9,8 @@
 
       <div class="col-lg-6">
         <div class="data">
-            <span *ngIf="id === 1">
-                <h3>Gallery</h3>
-                <p class="text-justify" *ngFor='let data of galleryData'> {{data.p}} </p>
-            </span>
-         
+          <h3>Gallery</h3>
+          <p class="text-justify" *ngFor='let data of galleryData'> {{data.p}} </p>         
           <div id="thumbnailsList" class="thumbnailsList">
             <span *ngFor="let image of galleryImages; let i = index" class="m-1">
              <img src="{{image.url}}" class="tn" width="70px" height="auto" 

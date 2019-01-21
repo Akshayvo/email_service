@@ -3,9 +3,9 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace AllSpace-website with your project name(Hyphen Case)
+Replace Pittsburgh-website with your project name(Hyphen Case)
 
-Replace AllSpaceWebsite with your project name(camelCase)
+Replace PittsburghWebsite with your project name(camelCase)
 
 Find and Replace across project
 

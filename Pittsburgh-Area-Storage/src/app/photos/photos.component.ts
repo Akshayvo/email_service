@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { galleryMall, galleryRockyCreek, galleryDataAgricola, galleryDataRockyCreek } from '../data/galleryImage';
+import { galleryDataLocation1, galleryDataLocation2, galleryDataLocation3,
+        galleryImagesLocation1, galleryImagesLocation2, galleryImagesLocation3 } from '../data/galleryImage';
 import { Router } from '@angular/router';
 
 @Component({
@@ -18,37 +19,40 @@ export class PhotosComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    // this.isSomePage();
+    this.isSomePage();
     this.setSelectedImage(this.galleryImages[0]);
   }
 
-//   public isSomePage() {
-//     if (this.router.url.includes('/location/rocky-creek')) {
-//         this.fetchGalleryRockyCreek();
-//     } else if (this.router.url.includes('/location/agricola')) {
-//       this.fetchGalleryAgicola();
-//     }
-//  }
+  public isSomePage() {
+    if (this.router.url.includes('/location/movin-on-storage')) {
+      this.fetchDetailsLocation1();
+  } else if (this.router.url.includes('/location/shaler-self')) {
+    this.fetchDetailsLocation2();
+  } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+    this.fetchDetailsLocation3();
+  }
+  }
 
-  // public fetchGalleryRockyCreek() {
-  //   this.galleryImages = galleryRockyCreek;
-  //   this.galleryData = galleryDataRockyCreek;
-  //   this.name = 'Rocky Creek';
-  //   this.id = 0;
-  // }
+  public fetchDetailsLocation1() {
+    this.galleryImages = galleryImagesLocation1;
+    this.galleryData = galleryDataLocation1;
+    this.name = 'Rocky Creek';
+    this.id = 1;
+  }
 
-  // public fetchGalleryAgicola() {
-  //   this.galleryImages = galleryMall;
-  //   this.galleryData = galleryDataAgricola;
-  //   this.name = 'Agicola';
-  //   this.id = 1;
-  // }
+  public fetchDetailsLocation2() {
+    this.galleryImages = galleryImagesLocation2;
+    this.galleryData = galleryDataLocation2;
+    this.name = 'Agicola';
+    this.id = 2;
+  }
 
-  // public fetchGalleryBarton() {
-  //   this.galleryImages = galleryMall;
-  //   this.galleryData = galleryDataMall;
-  //   this.name = 'Barton';
-  // }
+  public fetchDetailsLocation3() {
+    this.galleryImages = galleryImagesLocation3;
+    this.galleryData = galleryDataLocation3;
+    this.name = 'Barton';
+    this.id = 3;
+  }
 
   setSelectedImage(image: any) {
     this.selectedImage = image;

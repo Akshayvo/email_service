@@ -1,42 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc>http://allspace-staging.syrasoft.com/</loc>
+    <loc>http://pittsburgh-staging,syrasoft.com/</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://allspace-staging.syrasoft.com/location/movin-on-storage</loc>
+    <loc>http://pittsburgh-staging,syrasoft.com/location/movin-on-storage</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://allspace-staging.syrasoft.com/location/shaler-self</loc>
+    <loc>http://pittsburgh-staging,syrasoft.com/location/shaler-self</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://allspace-staging.syrasoft.com/location/natrona-heights-self</loc>
+    <loc>http://pittsburgh-staging,syrasoft.com/location/natrona-heights-self</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://allspace-staging.syrasoft.com/location/pawling</loc>
+    <loc>http://pittsburgh-staging,syrasoft.com/payment</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://allspace-staging.syrasoft.com/payment</loc>
+    <loc>http://pittsburgh-staging,syrasoft.com/storage-tips</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://allspace-staging.syrasoft.com/storage-tips</loc>
-    <lastmod>2018-09-25</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>http://allspace-staging.syrasoft.com/contact</loc>
+    <loc>http://pittsburgh-staging,syrasoft.com/contact</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>

@@ -4,8 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
-          contactsLocation3, hoursLocation3,
-          contactsLocation4, hoursLocation4 } from '../data/contact';
+          contactsLocation3, hoursLocation3 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -78,33 +77,25 @@ export class ContactComponent implements OnInit {
       this.fetchContactDetailsLocation2();
     } else if ( this.locationId === '3' ) {
       this.fetchContactDetailsLocation3();
-    } else if ( this.locationId === '4' ) {
-      this.fetchContactDetailsLocation4();
     }
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `AllSpace Storage - Poughkeepsie`;
+    this.heading = `Movin\' On Storage Center`;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
 
   public fetchContactDetailsLocation2() {
-    this.heading = `AllSpace Storage - Highland`;
+    this.heading = `Shaler Self Storage`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = `AllSpace Storage - Lake Katrine`;
+    this.heading = `Natrona Heights Self Storage`;
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
-  }
-
-  public fetchContactDetailsLocation4() {
-    this.heading = `AllSpace Storage - Pawling`;
-    this.contactDetails = contactsLocation4;
-    this.hoursDetails = hoursLocation4;
   }
 
 onSubmit() {

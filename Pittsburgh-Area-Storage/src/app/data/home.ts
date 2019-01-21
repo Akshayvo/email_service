@@ -2,19 +2,19 @@
 export const featuresHead = [
     {
         label: '3 Convenient Locations',
-        data: '../../assets/images/jumbotron-bottom-images/gate.svg',
+        data: '../../assets/images/jumbotron-bottom-images/location.svg',
     },
     {
         label: 'Moving Supplies Available',
-        data: '../../assets/images/jumbotron-bottom-images/cctv.svg',
+        data: '../../assets/images/jumbotron-bottom-images/luggage-cart.svg',
     },
     {
         label: 'Penske Truck Rentals',
-        data: '../../assets/images/jumbotron-bottom-images/24-hours.svg',
+        data: '../../assets/images/jumbotron-bottom-images/truck.svg',
     },
     {
         label: 'Temperature Controlled Units Available',
-        data: '../../assets/images/jumbotron-bottom-images/truck.svg',
+        data: '../../assets/images/jumbotron-bottom-images/Temp.svg',
     },
 ];
 

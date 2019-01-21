@@ -17,7 +17,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 export class LocationComponent implements OnInit {
 
   name: any;
-  id: number;
+  locationId: number;
   currentTab: any;
   contacts: any;
   hours: any;
@@ -34,24 +34,24 @@ export class LocationComponent implements OnInit {
       if (this.router.url.includes('/location/movin-on-storage')) {
             this.meta.addTag({
               name: 'description',
-              content: `Our Route 55 Poughkeepsie location has 24 hour access available, pin-code activated gates,
-                        and easy online auto-pay for your convenience!`
+              content: `Welcome to Movin' On Storage Center of Charleston, WV!
+                        We have a wide selection of storage units and Penske truck rentals!`
             });
-            this.titleService.setTitle('Storage Units in Poughkeepsie, NY | AllSpace Storage');
+            this.titleService.setTitle('Storage Units in Charleston, WV | Movin\' On  Storage Center');
     } else if (this.router.url.includes('/location/shaler-self')) {
            this.meta.addTag({
              name: 'description',
-             content: `Our Highland location is fully lit, has boxes and moving supplies, pin-code
-                       activated gates and easy online auto-pay for your convenience!`
+             content: `Whether you're looking to clear a room for a family gathering or use our
+                      seasonal vehicle parking, Shaler Self Storage has your self storage needs covered!`
            });
-           this.titleService.setTitle('Convenient Storage Units in Highland | AllSpace Storage');
+           this.titleService.setTitle('Storage Units in Alison Park, PA | Shaler Self Storage');
     } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
           this.meta.addTag({
             name: 'description',
-            content: `Are you looking for well-maintained, affordable self storage units near Lake Katrine, NY?
-                      AllSpace Storage has your storage needs covered!`
+            content: `We offer a wide selection of affordable self storage units and
+                      stellar customer service right in your backyard! Contact us to learn more!`
           });
-          this.titleService.setTitle('Storage Units In Lake Katrine, NY | AllSpace Storage');
+          this.titleService.setTitle('Storage in Natrona Heights | Natrona Heights Self Storage');
     }
     }
 
@@ -72,7 +72,7 @@ export class LocationComponent implements OnInit {
 
   public fetchDetailsLocation1() {
       this.name = 'Movin\' On Storage Center';
-      this.id = 1;
+      this.locationId = 1;
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
       this.tabs = tabs;
@@ -80,7 +80,7 @@ export class LocationComponent implements OnInit {
 
    public fetchDetailsLocation2() {
      this.name = 'Shaler Self Storage';
-     this.id = 2;
+     this.locationId = 2;
      this.contacts = contactsLocation2;
      this.hours = hoursLocation2;
      this.tabs = tabs;
@@ -88,7 +88,7 @@ export class LocationComponent implements OnInit {
 
    public fetchDetailsLocation3() {
      this.name = 'Natrona Heights Self Storage';
-     this.id = 3;
+     this.locationId = 3;
      this.contacts = contactsLocation3;
      this.hours = hoursLocation3;
      this.tabs = tabs;
