@@ -3,7 +3,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
-
+import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../data/contact';
 @Component({
   selector: 'app-payment',
   templateUrl: './payment.component.html',
@@ -13,7 +13,7 @@ export class PaymentComponent implements OnInit {
 
   breadcrumbActive: any = 'Pay Rent';
   locationId: any;
-
+  contact: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -24,10 +24,10 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `AllSpace Storage  offers convenient online bill pay!
-                Simply follow the instructions or call your location to learn how to access your account!`
+      content: `Click here to pay your rent online for Natrona Heights Self Storage,
+                Shaler Self Storage or Movin' On Storage Center`
     });
-    this.titleService.setTitle('Pay Your Rent Online');
+    this.titleService.setTitle('Pay Rent Online');
   }
 
   ngOnInit() {
@@ -36,6 +36,19 @@ export class PaymentComponent implements OnInit {
   }
 
   receiveMessage() {
-    this.data.currentLocation.subscribe(locationId => this.locationId = locationId);
+    this.data.currentLocation.subscribe(locationId => {
+      this.locationId = locationId;
+      this.dataupdate();
+    });
+  }
+
+  public dataupdate() {
+    if ( this.locationId === '1' || this.locationId === 1 ) {
+      this.contact = contactsLocation1;
+    } else if ( this.locationId === '2' ) {
+      this.contact = contactsLocation2;
+    } else if ( this.locationId === '3' ) {
+      this.contact = contactsLocation3;
+    }
   }
 }

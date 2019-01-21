@@ -8,19 +8,15 @@ export class LocationService {
   places = [
     {
       id: 1,
-      name: 'AllSpace Storage - Poughkeepsie',
+      name: 'Movin\' On Storage Center',
     },
     {
       id: 2,
-      name: 'AllSpace Storage - Highland',
+      name: 'Shaler Self Storage',
     },
     {
       id: 3,
-      name: 'AllSpace Storage - Lake Katrine',
-    },
-    {
-      id: 4,
-      name: 'AllSpace Storage - Pawling',
+      name: 'Natrona Heights Self Storage',
     },
  ];
  private locationSource = new BehaviorSubject(this.places[0].id);

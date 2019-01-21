@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
           contactsLocation3, hoursLocation3,
-          contactsLocation4,  hoursLocation4 } from '../data/contact';
+          } from '../data/contact';
 import { tabs } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -31,34 +31,27 @@ export class LocationComponent implements OnInit {
     private router: Router,
     private titleService: Title,
     ) {
-      if (this.router.url.includes('/location/poughkeepsie')) {
+      if (this.router.url.includes('/location/movin-on-storage')) {
             this.meta.addTag({
               name: 'description',
               content: `Our Route 55 Poughkeepsie location has 24 hour access available, pin-code activated gates,
                         and easy online auto-pay for your convenience!`
             });
             this.titleService.setTitle('Storage Units in Poughkeepsie, NY | AllSpace Storage');
-    } else if (this.router.url.includes('/location/highland')) {
+    } else if (this.router.url.includes('/location/shaler-self')) {
            this.meta.addTag({
              name: 'description',
              content: `Our Highland location is fully lit, has boxes and moving supplies, pin-code
                        activated gates and easy online auto-pay for your convenience!`
            });
            this.titleService.setTitle('Convenient Storage Units in Highland | AllSpace Storage');
-    } else  if (this.router.url.includes('/location/lake-katrine'))  {
+    } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
           this.meta.addTag({
             name: 'description',
             content: `Are you looking for well-maintained, affordable self storage units near Lake Katrine, NY?
                       AllSpace Storage has your storage needs covered!`
           });
           this.titleService.setTitle('Storage Units In Lake Katrine, NY | AllSpace Storage');
-    } else {
-          this.meta.addTag({
-            name: 'description',
-            content: `Are you looking for a well maintained, fully lit self storage facility with great
-                      customer service and affordable pricing? We've got you covered!`
-          });
-          this.titleService.setTitle('Storage Units in Pawling, NY | AllSpace Storage');
     }
     }
 
@@ -68,19 +61,17 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/poughkeepsie')) {
+    if (this.router.url.includes('/location/movin-on-storage')) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes('/location/highland')) {
+    } else if (this.router.url.includes('/location/shaler-self')) {
       this.fetchDetailsLocation2();
-    } else  if (this.router.url.includes('/location/lake-katrine'))  {
+    } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
       this.fetchDetailsLocation3();
-    } else {
-      this.fetchDetailsLocation4();
     }
  }
 
   public fetchDetailsLocation1() {
-      this.name = 'Poughkeepsie';
+      this.name = 'Movin\' On Storage Center';
       this.id = 1;
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
@@ -88,7 +79,7 @@ export class LocationComponent implements OnInit {
     }
 
    public fetchDetailsLocation2() {
-     this.name = 'Highland';
+     this.name = 'Shaler Self Storage';
      this.id = 2;
      this.contacts = contactsLocation2;
      this.hours = hoursLocation2;
@@ -96,18 +87,10 @@ export class LocationComponent implements OnInit {
    }
 
    public fetchDetailsLocation3() {
-     this.name = 'Lake Katrine';
+     this.name = 'Natrona Heights Self Storage';
      this.id = 3;
      this.contacts = contactsLocation3;
      this.hours = hoursLocation3;
      this.tabs = tabs;
    }
-
-   public fetchDetailsLocation4() {
-    this.name = 'Pawling';
-    this.id = 4;
-    this.contacts = contactsLocation4;
-    this.hours = hoursLocation4;
-    this.tabs = tabs;
-  }
 }

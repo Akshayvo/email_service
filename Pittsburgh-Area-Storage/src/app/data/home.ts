@@ -1,41 +1,38 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: 'Electronic Gate Access',
+        label: '3 Convenient Locations',
         data: '../../assets/images/jumbotron-bottom-images/gate.svg',
     },
     {
-        label: 'Security Cameras On-Premises',
+        label: 'Moving Supplies Available',
         data: '../../assets/images/jumbotron-bottom-images/cctv.svg',
     },
     {
-        label: '24 Hour Access Available',
+        label: 'Penske Truck Rentals',
         data: '../../assets/images/jumbotron-bottom-images/24-hours.svg',
     },
     {
-        label: 'Boxes & Moving Supplies Sold',
+        label: 'Temperature Controlled Units Available',
         data: '../../assets/images/jumbotron-bottom-images/truck.svg',
     },
 ];
 
 export const serviceOffered = [
     {
-        p: `Whether you are searching for self storage units to store
-            personal belongings, or business equipment and inventory AllSpace
-            Storage has you covered! Our convenient locations, clean, well maintained
-            units, and stellar customer service speak for themselves!`,
+        p: `Welcome to Pittsburgh Area Storage Centers! We have been managing self storage
+            facilities since 2000, and currently have 3 conveniently located locations! `,
     },
     {
-        p: `We understand that your belongings and personal safety are critical and that's
-            why our locations are fully fenced, secured with pin-code activated gates,
-            and have security cameras on-premises. Every facility is well lit to ensure a
-            sense of safety even if you are using our available 24 hour access outside of regular business hours!`,
+        p: `We like to think of our facilities as an extension of your home, perfect for those
+            rarely used or seasonal items. Holiday decorations, camping equipment, or lawn furniture.
+            Store it all with us and know that you'll have easy access to your belongings whenever you need them!`,
     },
     {
-        p: `The professional staff at AllSpace Storage has been assisting your friends and family
-            with their storage needs since 1996 and can't wait to make your stay with us a breeze!
-            So whether you own a home, rent an apartment, go to school or run a business,
-            the perfect place for your property is with us. AllSpace Self Storage!`,
+        p: `Whether you're a home owner, or renting and in need of some extra space around the house or
+            a business looking for long term equipment or inventory storage, our locations have you covered!
+            Our Pennsylvania locations also offer outdoor vehicle storage! In need of a truck?
+            Our Charleston location offers Penske truck rentals!`,
     },
 ];
 

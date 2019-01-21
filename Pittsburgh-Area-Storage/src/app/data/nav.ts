@@ -11,28 +11,22 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Poughkeepsie',
-                path: '/location/poughkeepsie',
+                label: 'Movin\' On Storage',
+                path: '/location/movin-on-storage',
                 name: 'Poughkeepsie'
               },
               {
                   id: '2',
-                  label: 'Highland',
-                  path: '/location/highland',
+                  label: 'Shaler Self Storage',
+                  path: '/location/shaler-self',
                   name: 'Highland'
               },
               {
                   id: '3',
-                  label: 'Lake Katrine',
-                  path: '/location/lake-katrine',
+                  label: 'Natrona Heights Self Storage',
+                  path: '/location/natrona-heights-self',
                   name: 'LakeKatrine'
               },
-              {
-                id: '4',
-                label: 'Pawling',
-                path: '/location/pawling',
-                name: 'Pawling'
-            },
         ]
     },
     {

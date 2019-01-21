@@ -23,10 +23,10 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `AllSpace Storage has been making the storage experience
-                more convenient since 1996! Here are some quick tips to help you during your stay!`
+      content: `We've been in the self storage business for twenty years.
+                When it comes to properly packing a unit, we've learned a thing or two! `
     });
-    this.titleService.setTitle('Storage Tips | AllSpace Storage');
+    this.titleService.setTitle('Storage Tips | Pittsburgh Area Storage Centers');
   }
 
   ngOnInit() {

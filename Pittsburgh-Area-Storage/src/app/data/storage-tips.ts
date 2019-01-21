@@ -1,72 +1,69 @@
 export const storagePoints = [
-    {
-        heading: 'Purchase Insurance',
-        data: `Belongings worth storing are worth insuring. Homeowners or Renters insurance
-              may not cover belongings while in storage. Verify with your insurance agent and
-              check with an AllSpace representative to find out about acquiring low-cost, storage insurance.`,
-    },
-    {
-        heading: 'Pallets',
-        data: `Placing pallets in your storage unit will help maintain
-                your belongings by circulating air beneath them.`,
-    },
-    {
-        heading: 'Plan Ahead',
-        data: `Utilize your space as much as possible by planning
-                the arrangement of your items before you place them in the unit.`,
-    },
-    {
-        heading: 'Take Apart Large Items',
-        data: `Disassemble items whenever possible. For example, remove legs on tables and break down bed frames, etc.`,
-    },
-    {
-        heading: 'Pack Smart',
-        data: `Place items that you need to access frequently near the front of your unit.
-                This helps avoid having to search or climb over items.`,
-    },
-    {
-        heading: 'AllSpace Unit Heights',
-        data: `AllSpace unit heights are between 9 and 10 feet, which gives
-                you more space to work with. Be sure to stack your items high.`,
-    },
+    { data: 'Use smaller boxes for books and heavy items.' },
+    { data: 'Use larger boxes for lighter items.' },
+    { data: 'Reinforce the bottom of boxes with at least one strip of packing tape.' },
+    { data: 'Pack boxes firmly to prevent the contents from shifting.' },
+    { data: 'Seal boxes tightly with wide packing tape.' },
+    { data: 'Pack records and CDs vertically! Don\'t stack them flat, they will warp or bend!' },
+    { data: 'Place heavier items in the bottom of the box and lighter items on top.' },
 ];
 
 
 export const storageTips = [
     {
         id: '1',
-        label: 'Chairs',
-        data: 'Whenever possible stack your chairs seat to seat. This will give you more packing space.',
+        label: 'Furniture & Appliances',
+        contents: [
+            { data: 'Rent, or purchase an appliance dolly for furniture, major appliances, and stacks of boxes.'},
+            { data: 'Remember, loading heavy furniture and appliances is not a one-person job. Get help.'},
+            { data: 'For major appliances, consult your user\'s manuals for specific moving and safety instructions.'},
+            { data: 'Wipe and dry the interiors of all appliances.'},
+            { data: 'Tape and/or tie down all movable parts.'},
+        ],
     },
     {
         id: '2',
-        label: 'Stack by Weight',
-        data: 'Always remember to pack heavier items on the bottom, so that lighter boxes won\'t get crushed.',
+        label: 'Beds',
+        contents: [
+            { data: `Disassemble the bed frame and
+            mark each piece so you will have an easy time putting it back together.
+            (Use packing tape to tie rails together.)`},
+            { data: 'Wrap mattresses in plastic mattress covers.'},
+        ],
     },
     {
         id: '3',
-        label: 'Dust Covers',
-        data: `Make use of old sheets or blankets to protect mattresses and
-                furniture from dust. We don’t recommend using plastic, which can hold in moisture.`,
+        label: 'Books',
+        contents: [
+            { data: 'Never pack more than 30 pounds of books in a box'},
+            { data: 'Alternate bindings, and cushion with packing paper.'},
+        ],
     },
     {
         id: '4',
-        label: 'Tote Boxes',
-        data: 'Plastic storage totes are great for packing smaller items and can be reused after your move.',
+        label: 'Clothing',
+        contents: [
+            { data: 'Hang clothing from closets in wardrobe boxes or plastic garment bags.'},
+            { data: `Store clothing from dresser drawers in sturdy cardboard boxes.
+            If the boxes still have some space, consider filling them with bubble wrap.`},
+        ],
     },
     {
         id: '5',
-        label: 'Preventing Mildew',
-        data: 'If you are storing any appliances, remember to leave appliance doors slightly ajar to prevent mildew.',
+        label: 'Artwork, Mirrors & Lamps',
+        contents: [
+            { data: 'Wrap in bubble wrap and stack in a large box with bubble wrap or large peanuts.'},
+            { data: 'Remove light bulbs, harps, and lamp shades off lamp.'},
+            { data: 'Artwork & mirrors should be wrapped in paper, covered with cardboard.'},
+        ],
     },
     {
         id: '6',
-        label: 'Do Not Store Food',
-        data: 'Do not store any food products in your unit to avoid any unwanted “guests.”',
-    },
-    {
-        id: '7',
-        label: 'Do Not Store Flammables',
-        data: 'Do not store any flammables products, such as kerosene, gas, aerosol cans, or kerosene heaters.',
+        label: 'Collectables',
+        contents: [
+            { data: 'Wrap each fragile item separately with bubble wrap and packing tape.'},
+            { data: 'Layer wrapped items in sturdy cardboard box using large peanuts or wadded paper between.'},
+            { data: 'Place a final layer of peanuts or wadded paper on top, seal and mark.'},
+        ],
     },
 ];

@@ -20,11 +20,11 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/poughkeepsie')) {
+    if (this.router.url.includes('/location/movin-on-storage')) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes('/location/highland')) {
+  } else if (this.router.url.includes('/location/shaler-self')) {
     this.fetchDetailsLocation2();
-  } else  if (this.router.url.includes('/location/lake-katrine'))  {
+  } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
     this.fetchDetailsLocation3();
   } else {
     this.fetchDetailsLocation4();

@@ -16,7 +16,7 @@ import { DirectionsComponent } from './directions/directions.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
-  { path: 'location/poughkeepsie',
+  { path: 'location/movin-on-storage',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -28,7 +28,7 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/highland',
+  { path: 'location/shaler-self',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -40,19 +40,7 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/lake-katrine',
-    component: LocationComponent,
-    children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
-      { path: 'reserveUnit', component: ReserveUnitComponent },
-      { path: 'photos', component: PhotosComponent },
-      { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
-    ]
-  },
-  { path: 'location/pawling',
+  { path: 'location/natrona-heights-self',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },

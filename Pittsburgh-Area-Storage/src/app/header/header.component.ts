@@ -13,7 +13,9 @@ export class HeaderComponent implements OnInit {
   navLinks: any;
   socialLinks: any;
   data: any;
+  logo: any;
   @Input() currentActive: any;
+  locationId: any;
 
   constructor(
     private route: ActivatedRoute,
@@ -22,6 +24,21 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.fetchNavigationLinks();
+    this.router.events.subscribe(path => {
+      this.isSomePage();
+    });
+  }
+
+  public isSomePage() {
+    if (this.router.url.includes('/location/movin-on-storage')) {
+        this.logo = '../../assets/images/movin-on-storage-center-logo.jpg';
+    } else if (this.router.url.includes('/location/shaler-self')) {
+      this.logo = '../../assets/images/shaler-self-storage-logo.jpg';
+    } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+        this.logo = '../../assets/images/natrona-heights-self-storage-logo.jpeg';
+    } else {
+      this.logo = '../../assets/images/pittsburgh-area-storage-centers-logo.jpg';
+    }
   }
 
   public navigate (location: any) {
@@ -35,4 +52,5 @@ export class HeaderComponent implements OnInit {
   public onClick(menu: any) {
     menu.classList.remove('show');
   }
+
 }

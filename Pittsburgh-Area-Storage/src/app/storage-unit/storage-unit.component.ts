@@ -17,11 +17,11 @@ export class StorageUnitComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/poughkeepsie')) {
+    if (this.router.url.includes('/location/movin-on-storage')) {
         this.id = 1;
-    } else if (this.router.url.includes('/location/highland')) {
+    } else if (this.router.url.includes('/location/shaler-self')) {
       this.id = 2;
-    } else if (this.router.url.includes('/location/lake-katrine')) {
+    } else if (this.router.url.includes('/location/natrona-heights-self')) {
       this.id = 3;
     } else if (this.router.url.includes('/location/pawling')) {
       this.id = 4;

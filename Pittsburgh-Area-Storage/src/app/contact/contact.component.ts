@@ -44,10 +44,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Have a question about the services provided by AllSpace Storage?
-                Use our handy form or reach out today and let our friendly staff help today!`
+      content: `Do you have a question about the services offered at one of our
+                three locations or a question about you account? Contact us here!`
     });
-    this.titleService.setTitle('Contact Us | AllSpace Storage');
+    this.titleService.setTitle('Contact Us | Pittsburgh Area Storage Centers');
   }
 
   ngOnInit() {
