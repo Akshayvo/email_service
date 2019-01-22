@@ -69,6 +69,30 @@ export class LocationComponent implements OnInit {
     }
  }
 
+  public navigateToContact() {
+   this.router.navigate(['contact']);
+  }
+
+  public navigateToPayment() {
+    if ( this.id === 0 ) {
+      this.router.navigate(['/payment/rocky-creek'], { queryParams: { currentTab: 'Southern Storage - Rocky Creek' }});
+    } else if ( this.id === 1 ) {
+      this.router.navigate(['/payment/agricola'], { queryParams: { currentTab: 'Southern Storage - Agricola' }});
+    } else if ( this.id === 2) {
+      this.router.navigate(['/payment/barton'], { queryParams: { currentTab: 'Southern Storage - Barton' }});
+    }
+   }
+
+   public navigateToReserve() {
+    if ( this.id === 0 ) {
+      this.router.navigate(['/location/rocky-creek/reserveUnit'], { queryParams: { name: 'Rocky-Creek', currentTab: 'Reserve Unit' }});
+    } else if ( this.id === 1 ) {
+      this.router.navigate(['/location/agricola/reserveUnit'], { queryParams: { name: 'Agricola', currentTab: 'Reserve Unit' }});
+    } else if ( this.id === 2) {
+      this.router.navigate(['/location/barton/reserveUnit'], { queryParams: { name: 'Barton', currentTab: 'Reserve Unit' }});
+    }
+   }
+
   public fetchDetailsRockyCreek() {
       this.name = 'Rocky Creek';
       this.id = 0;

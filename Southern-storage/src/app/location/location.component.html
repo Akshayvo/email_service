@@ -51,35 +51,9 @@
               <app-tables [tBody]="hours" ></app-tables> 
             </div>
             <div class="col-lg-4 btn-area text-center">
-              <span *ngIf="id == 0">
-               <a class="btn btn-outline-primary p-2" [routerLink]="['/contact']" [queryParams]="{ name:'Rocky-Creek' }" role="button">Contact Us</a> 
-              </span>
-              <span *ngIf="id == 1">
-                <a class="btn btn-outline-primary p-2" [routerLink]="['/contact']" [queryParams]="{ name:'Agricola' }" role="button">Contact Us</a> 
-              </span>
-              <span *ngIf="id == 2">
-                <a class="btn btn-outline-primary p-2" [routerLink]="['/contact']" [queryParams]="{ name:'Barton' }" role="button">Contact Us</a> 
-              </span>
-            
-              <span *ngIf="id == 0">
-                <a class="btn btn-primary-light p-2" [routerLink]="['/payment/rocky-creek']" [queryParams]="{ currentTab: 'Southern Storage - Rocky Creek' }" role="button">Pay Rent</a> 
-              </span>
-              <span *ngIf="id == 1">
-                <a class="btn btn-primary-light p-2" [routerLink]="['/payment/agricola']" [queryParams]="{ currentTab: 'Southern Storage - Agricola' }" role="button">Pay Rent</a>                    
-              </span>
-              <span *ngIf="id == 2">
-                <a class="btn btn-primary-light p-2" [routerLink]="['/payment/barton']" [queryParams]="{ currentTab: 'Southern Storage - Barton' }" role="button">Pay Rent</a>                    
-              </span>
-
-              <span *ngIf="id == 0">
-                <a class="btn btn-primary p-2" [routerLink]="['./reserveUnit']" [queryParams]="{ name:'Rocky-Creek', currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                                       
-              </span>
-              <span *ngIf="id == 1">
-                <a class="btn btn-primary p-2" [routerLink]="['./reserveUnit']" [queryParams]="{ name:'Agricola', currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                                       
-              </span>
-              <span *ngIf="id == 2">
-                <a class="btn btn-primary p-2" [routerLink]="['./reserveUnit']" [queryParams]="{ name:'Barton', currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                                       
-              </span>
+              <a class="btn btn-outline-primary p-2" (click)='navigateToContact()' role="button">Contact Us</a> 
+              <a class="btn btn-primary-light p-2" (click)='navigateToPayment()' role="button">Pay Rent</a>                    
+              <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                       
             </div>
           </div>
         </div>

@@ -71,15 +71,6 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       location: ['', Validators.required]
   });
-
-
-  if ( this.placeName === 'RockyCreek' ) {
-    this.contactForm.value.location = 'Southern Self Storage - Rocky Creek';
-  }  else if ( this.placeName === 'Agricola' ) {
-    this.contactForm.value.location = 'Southern Self Storage - Agricola';
-  } else if ( this.placeName === 'Barton' ) {
-    this.contactForm.value.location = 'Southern Self Storage - Barton';
-   }
   }
 
   get f() { return this.contactForm.controls; }

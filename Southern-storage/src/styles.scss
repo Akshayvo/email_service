@@ -56,7 +56,7 @@ $primaryFont: "Lato", sans-serif;
 .btn-primary-light {
   background-color: $primaryLight;
   border: 1px solid $primaryLight;
-  color: $white;
+  color: $white !important;
   min-width: 120px;
   border-radius: 3px;
   text-transform: none;
