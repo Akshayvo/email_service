@@ -1,0 +1,28 @@
+
+<div class="contentHolder">
+  <div class="container my-3 pb-5 padding-top">
+    <h1 class="py-lg-5 py-md-5 py-4 text-center">Pay Rent Online</h1>
+    <div class="row bg-light background-padding">
+      <div class="col-lg-8 col-md-7 scroll-wrapper small-screen-padding">
+          <div class="iframe-container">
+          <iframe id="advanced_iframe" name="advanced_iframe" src="https://CubaSelfStorage.sim.syrasoft.com/PayNow" width="100%"
+            height="400" scrolling="yes" frameborder="0" border="0" allowtransparency="true" onload=";aiResizeIframe(this, 'true','1');"></iframe>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-5 vertical-line">
+        <h3>How to Login</h3>
+        <p><b>Username:</b>&nbsp; First Initial + Last Name<br>
+        <b>Password:</b>&nbsp; Full Phone Number</p>
+        <p><b>Example:</b></p>
+        <p>John jsmith's Phone Number is (555) 555-5555</p>
+        <p>John's Username: jsmith<br>
+        John's Password: 5555555555</p>
+        <p>Have questions about your account or would like your password changed? Call our office or email us today!<br>
+        <span *ngFor="let contact of contactDetails"><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+        <br>
+      </span>
+      </p>
+      </div>
+    </div>
+  </div>
+</div>
