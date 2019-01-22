@@ -36,21 +36,18 @@ export class PhotosComponent implements OnInit {
   public fetchDetailsLocation1() {
     this.galleryImages = galleryImagesLocation1;
     this.galleryData = galleryDataLocation1;
-    this.name = 'Rocky Creek';
     this.id = 1;
   }
 
   public fetchDetailsLocation2() {
     this.galleryImages = galleryImagesLocation2;
     this.galleryData = galleryDataLocation2;
-    this.name = 'Agicola';
     this.id = 2;
   }
 
   public fetchDetailsLocation3() {
     this.galleryImages = galleryImagesLocation3;
     this.galleryData = galleryDataLocation3;
-    this.name = 'Barton';
     this.id = 3;
   }
 

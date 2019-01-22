@@ -1,6 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { ActivatedRoute, Router } from '@angular/router';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
 import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../data/contact';
@@ -17,7 +16,6 @@ export class PaymentComponent implements OnInit {
 
   constructor(
     @Inject(WINDOW) private window: Window,
-    private route: ActivatedRoute,
     private titleService: Title,
     private meta: Meta,
     private data: LocationService

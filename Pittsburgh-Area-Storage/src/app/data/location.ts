@@ -37,6 +37,13 @@ export const tabs = [
     },
 ];
 
+
+export const headingLocation1 = `Movin' On Storage Center`;
+
+export const headingLocation2 = `Shaler Self Storage`;
+
+export const headingLocation3 = `Natrona Heights Self Storage`;
+
 export const unitSizerLocation1 = [
     {
         size: '5\' x 5\'',
@@ -194,12 +201,6 @@ export const unitSizerLocation3 = [
                 all the appliances, a small boat or utility trailer`,
     }
 ];
-
-export const headingLocation1 = `Movin' On Storage Center`;
-
-export const headingLocation2 = `Shaler Self Storage`;
-
-export const headingLocation3 = `Natrona Heights Self Storage`;
 
 export const aboutUsHeadingLocation1 = `About Movin' On Storage Center`;
 
