@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { directionLocation1, directionLocation2 } from '../data/location';
+import { directionLocation1, directionLocation2, directionLocation3 } from '../data/location';
 @Component({
   selector: 'app-directions',
   templateUrl: './directions.component.html',
@@ -19,8 +19,10 @@ export class DirectionsComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/location1')) {
         this.fetchdirectionLocation1();
-    } else {
+    } else if (this.router.url.includes('/location/location2')) {
       this.fetchdirectionLocation2();
+    } else {
+      this.fetchdirectionLocation3();
     }
  }
 
@@ -33,4 +35,9 @@ export class DirectionsComponent implements OnInit {
     this.name = 'Location 2';
     this.directionPoints = directionLocation2;
  }
+
+ public fetchdirectionLocation3() {
+  this.name = 'Location 3';
+  this.directionPoints = directionLocation3;
+}
 }

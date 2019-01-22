@@ -28,7 +28,6 @@ export class ContactComponent implements OnInit {
   receiveremail: string;
   completeMessage: string;
   locationId: any;
-
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;
@@ -57,6 +56,7 @@ export class ContactComponent implements OnInit {
                 Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
+      subject: [''],
   });
   this.receiveMessage();
 }
@@ -110,11 +110,16 @@ onSubmit() {
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
 
+   if ( this.contactForm.value.subject === undefined || this.contactForm.value.subject === '' ) {
+      this.contactForm.value.subject = 'Website Submission Form';
+    }
+
        const body = {
          name: this.contactForm.value.name,
          email: this.contactForm.value.email,
          receiveremail: this.receiveremail,
          message: this.completeMessage,
+         subject: this.contactForm.value.subject,
        };
        this.emailService.sendEmail(body)
          .subscribe((response: any) => {
