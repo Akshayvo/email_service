@@ -5,6 +5,7 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation3, hoursLocation3,
           } from '../data/contact';
 import { tabs } from '../data/location';
+import { headingLocation1, headingLocation2, headingLocation3 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 
@@ -71,7 +72,7 @@ export class LocationComponent implements OnInit {
  }
 
   public fetchDetailsLocation1() {
-      this.name = 'Movin\' On Storage Center';
+      this.name = headingLocation1;
       this.locationId = 1;
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
@@ -79,7 +80,7 @@ export class LocationComponent implements OnInit {
     }
 
    public fetchDetailsLocation2() {
-     this.name = 'Shaler Self Storage';
+     this.name = headingLocation2;
      this.locationId = 2;
      this.contacts = contactsLocation2;
      this.hours = hoursLocation2;
@@ -87,7 +88,7 @@ export class LocationComponent implements OnInit {
    }
 
    public fetchDetailsLocation3() {
-     this.name = 'Natrona Heights Self Storage';
+     this.name = headingLocation3;
      this.locationId = 3;
      this.contacts = contactsLocation3;
      this.hours = hoursLocation3;
