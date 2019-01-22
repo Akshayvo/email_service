@@ -381,22 +381,21 @@ export const reviewVillage = [
         by: '- Mary (Victor, New York)',
     },
     {
-        p : `"I wanted a storage facility that was secure, accessible, reasonably priced,
-            and in the right location. I've used other storage facilities in the past
-            that really didn't make me feel like my "stuff" was safe,
-            and there wasn't anyone around to help out if I had an issue.
-            Victor Self Storage is an extremely good facility, yes, I'll say great.
-            I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects,
-            and I DO recommend them every chance I get!"`,
-        by: '- Mary (Victor, New York)',
+        p : `"In my line of work, a quality storage facility is essential. I was
+              looking for a clean, climate controlled area. I need the very best
+              in regards to customer service, safety, and surroundings. Victor Self
+              Storage provides all of that and more. The staff is FABULOUS and it is
+              by far the best storage facility in the greater Rochester area!"`,
+        by: '- Mel (Victor, New York)',
     },
     {
-        p : `"I wanted a storage facility that was secure, accessible, reasonably priced, and in the right location.
-            I've used other storage facilities in the past that really didn't make me feel like my "stuff" was safe,
-            and there wasn't anyone around to help out if I had an issue.
-            Victor Self Storage is an extremely good facility, yes, I'll say great.
-            I've been extremely happy with Victor Self Storage for well over two years now in ALL aspects,
-            and I DO recommend them every chance I get!"`,
-        by: '- Mary (Victor, New York)',
+        p : `"I was looking for a secure climate controlled storage facility with
+              24/7 accessibility. I travel the New York Thruway every day, so location
+              was important. Victor Self Storage is conveniently located and is by far
+              one of the nicest storage facilities I have visited and used. I have
+              run my business out of there for two years now and I have nothing but
+              great things to say! Victor Self Storage is safe, secure, clean and
+              accessible. Not much more you could ask for!"`,
+        by: '- Tom (Victor, New York)',
     }
 ];
