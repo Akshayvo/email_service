@@ -20,7 +20,6 @@ export const hoursLocation1 = [
     {
         label: 'Monday - Friday: ',
         data: '9:00AM - 5:00PM',
-        // class: 'bg-light'
     },
     {
         label: 'Saturday: ',
