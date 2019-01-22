@@ -71,6 +71,16 @@ export class LocationComponent implements OnInit {
     }
  }
 
+ public navigateToReserve() {
+  if ( this.locationId === 1 ) {
+    this.router.navigate(['/location/movin-on-storage/reserveUnit'], { queryParams: { name:'Movin\' On  Storage Center', currentTab: 'Reserve Unit' }});
+  } else if ( this.locationId === 2 ) {
+    this.router.navigate(['/location/shaler-self/reserveUnit'], { queryParams: { name:'Shaler Self Storage', currentTab: 'Reserve Unit' }});
+  } else if ( this.locationId === 3) {
+    this.router.navigate(['/location/natrona-heights-self/reserveUnit'], { queryParams: { name:'Natrona Heights Self Storage', currentTab: 'Reserve Unit' }});
+  }
+ }
+
   public fetchDetailsLocation1() {
       this.name = headingLocation1;
       this.locationId = 1;

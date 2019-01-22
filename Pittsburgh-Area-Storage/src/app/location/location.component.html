@@ -51,35 +51,9 @@
               <app-tables [tBody]="hours" ></app-tables> 
             </div>
             <div class="col-lg-4 btn-area text-center">
-              <span *ngIf="locationId == 1">
-               <a class="btn btn-outline-primary p-2" [routerLink]="['/contact']" [queryParams]="{ name:'Movin\' On  Storage Center' }" role="button">Contact Us</a> 
-              </span>
-              <span *ngIf="locationId == 2">
-                <a class="btn btn-outline-primary p-2" [routerLink]="['/contact']" [queryParams]="{ name:'Shaler Self Storage' }" role="button">Contact Us</a> 
-              </span>
-              <span *ngIf="locationId == 3">
-                <a class="btn btn-outline-primary p-2" [routerLink]="['/contact']" [queryParams]="{ name:'Natrona Heights Self Storage' }" role="button">Contact Us</a> 
-              </span>
-            
-              <span *ngIf="locationId == 1">
-                <a class="btn btn-primary-light p-2" [routerLink]="['/payment']" role="button">Pay Rent</a> 
-              </span>
-              <span *ngIf="locationId == 2">
-                <a class="btn btn-primary-light p-2" [routerLink]="['/payment']" role="button">Pay Rent</a>                    
-              </span>
-              <span *ngIf="locationId == 3">
-                <a class="btn btn-primary-light p-2" [routerLink]="['/payment']" role="button">Pay Rent</a>                    
-              </span>
-
-              <span *ngIf="locationId == 1">
-                <a class="btn btn-primary p-2" [routerLink]="['./reserveUnit']" [queryParams]="{ name:'Movin\' On  Storage Center', currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                                       
-              </span>
-              <span *ngIf="locationId == 2">
-                <a class="btn btn-primary p-2" [routerLink]="['./reserveUnit']" [queryParams]="{ name:'Shaler Self Storage', currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                                       
-              </span>
-              <span *ngIf="locationId == 3">
-                <a class="btn btn-primary p-2" [routerLink]="['./reserveUnit']" [queryParams]="{ name:'Natrona Heights Self Storage', currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                                       
-              </span>
+              <a class="btn btn-outline-primary p-2" [routerLink]="['/contact']" role="button">Contact Us</a> 
+              <a class="btn btn-primary-light p-2" [routerLink]="['/payment']" role="button">Pay Rent</a> 
+              <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                       
             </div>
           </div>
         </div>
