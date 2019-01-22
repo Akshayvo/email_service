@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
 
@@ -25,7 +25,6 @@ export class SelectLocationComponent implements OnInit {
       name: 'Natrona Heights Self Storage',
     },
  ];
- @Output() messageEvent = new EventEmitter<string>();
 
 
   constructor(private formBuilder: FormBuilder,

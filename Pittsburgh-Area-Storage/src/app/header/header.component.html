@@ -19,7 +19,7 @@
               <div class="dropdown show">  
                 <a class="dropdown-toggle nav-link text-center" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
-                  <li *ngFor="let sub of nav.sublinks text-center"><a class="dropdown-item" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a></li>
+                  <li *ngFor="let sub of nav.sublinks text-center"><a class="dropdown-item" [routerLinkActive]="'nav-link-active'" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a></li>
                 </ul>
               </div>
           </span>
