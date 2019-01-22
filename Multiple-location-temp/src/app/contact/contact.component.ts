@@ -2,9 +2,13 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsLocation2, hoursLocation1, contactsLocation1, hoursLocation2  } from '../data/contact';
+import { contactsLocation1, hoursLocation1,
+          contactsLocation2, hoursLocation2,
+          contactsLocation3, hoursLocation3 } from '../data/contact';
+import { headingLocation1, headingLocation2, headingLocation3 } from '../data/location';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
+import { LocationService } from '../services/location.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,26 +17,21 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
-  contactsLocation2: object;
-  contactsLocation1: object;
-  hoursLocation1: object;
-  hoursLocation2: object;
+  contactDetails: any;
+  heading: string;
+  hoursDetails: any;
   placeName: string;
-
   name: string;
   email: any;
   phone: any;
-  location: any;
   message: string;
-  places = [ 'Your Self Storage - Location1', 'Your Self Storage - Location2' ];
   receiveremail: string;
   completeMessage: string;
-
+  locationId: any;
 
   contactForm: FormGroup;
   submitted = false;
-  isSubmitted = false;
-  private sub: any;
+  mailSent = false;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -40,7 +39,8 @@ export class ContactComponent implements OnInit {
     private route: ActivatedRoute,
     private titleService: Title,
     private meta: Meta,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private data: LocationService
   ) {
     this.meta.addTag({
       name: 'contact-meta-name',
@@ -50,12 +50,6 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.sub = this.route.queryParams.subscribe(params => {
-      this.placeName = params['name'];
-    });
-
-    this.fetchContactDetails();
-    this.fetchHours();
     this.window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -63,27 +57,45 @@ export class ContactComponent implements OnInit {
                 Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
-      location: ['', Validators.required]
   });
-
-
-  if ( this.placeName === 'Location1' ) {
-    this.contactForm.value.location = 'Your Self Storage - Location1';
-  }  else if ( this.placeName === 'Location2' ) {
-    this.contactForm.value.location = 'Your Self Storage - Location2';
-  }
-  }
+  this.receiveMessage();
+}
 
   get f() { return this.contactForm.controls; }
 
-  public fetchContactDetails() {
-    this.contactsLocation2 = contactsLocation2;
-    this.contactsLocation1 = contactsLocation1;
+  receiveMessage() {
+    this.data.currentLocation.subscribe(locationId => {
+      this.locationId = locationId;
+      this.dataupdate();
+    });
   }
 
-  public fetchHours() {
-    this.hoursLocation1 = hoursLocation1;
-    this.hoursLocation2 = hoursLocation2;
+  public dataupdate() {
+    if ( this.locationId === '1' || this.locationId === 1 ) {
+      this.fetchContactDetailsLocation1();
+    } else if ( this.locationId === '2' ) {
+      this.fetchContactDetailsLocation2();
+    } else if ( this.locationId === '3' ) {
+      this.fetchContactDetailsLocation3();
+    }
+  }
+
+  public fetchContactDetailsLocation1() {
+    this.heading = headingLocation1;
+    this.contactDetails = contactsLocation1;
+    this.hoursDetails = hoursLocation1;
+  }
+
+  public fetchContactDetailsLocation2() {
+    this.heading = headingLocation2;
+    this.contactDetails = contactsLocation2;
+    this.hoursDetails = hoursLocation2;
+  }
+
+  public fetchContactDetailsLocation3() {
+    this.heading = headingLocation3;
+    this.contactDetails = contactsLocation3;
+    this.hoursDetails = hoursLocation3;
   }
 
 onSubmit() {
@@ -93,13 +105,8 @@ onSubmit() {
  if (this.contactForm.invalid) {
      return;
  } else {
-   this.isSubmitted = true;
 
-   if (this.contactForm.value.location === 'Your Self Storage - Location1') {
-    this.receiveremail = this.contactsLocation1[2].data;
-  } else if (this.contactForm.value.location === 'Your Self Storage - Location2') {
-    this.receiveremail = this.contactsLocation2[2].data;
-  }
+  this.receiveremail = this.contactDetails[2].data;
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
 
@@ -112,9 +119,8 @@ onSubmit() {
        this.emailService.sendEmail(body)
          .subscribe((response: any) => {
            if (response.result != null) {
-            //  alert(response.message);
+            this.mailSent = true;
            } else {
-            //  alert(response.message);
            }
          }, (err) => {
            console.log('Error :', err);

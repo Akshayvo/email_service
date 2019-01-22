@@ -5,7 +5,47 @@
       <h2 class="text-center">Select your location to access your account</h2>
     </div>
     <div  class="container pt-5">
-      <app-tabs [tabs]='tabs'  style="background-color: #f1f0ed;"></app-tabs>
+      <div class="rent-sub-holder">
+          <div class="container px-0">
+            <div class="location-selection">
+              <app-select-location (click)="receiveMessage()"></app-select-location>
+            </div>
+            <div class="row">
+              <div class="col-md-8 justify-content-center align-self-center">
+                <div class="text-center coming-soon">
+                  <h2> Coming Soon!!! </h2>
+                </div>
+                <!-- <span *ngIf="locationId == 1" >
+                  <iframe id="advanced_iframe" name="advanced_iframe" src="https://MovinOnStorageCenter.sim.syrasoft.com/Payment" width="100%"
+                  height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>
+                </span>
+                <span *ngIf="locationId == 2">
+                  <iframe id="advanced_iframe" name="advanced_iframe" src="https://ShalerSelfStorage.sim.syrasoft.com/Payment" width="100%"
+                  height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>  
+                </span>
+                <span *ngIf="locationId == 3" class="py-2">
+                  <iframe id="advanced_iframe" name="advanced_iframe" src="https://natronaheightsselfstorage.sim.syrasoft.com/Payment" width="100%"
+                  height="300px" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>  
+                </span> -->
+              </div>
+        
+              <div class="col-md-4 rent-example" >
+                 <h2> How to Login </h2>
+                 <p class="pt-3"> <b>Username:</b> Last Name </p>
+                 <p> <b>Password:</b>  Your gate access code </p>
+            
+                 <p class="py-3"> <b>Example</b> </p>
+                 <p class="pb-3">John Smith's gate access code is 1234 </p>
+            
+                 <p> <b>John's Username:</b> smith </p>
+                 <p class="pb-3"> <b>John's Password:</b> 1234 </p>
+            
+                 <p> <b>Have question about your account?</b> </p>
+                 <p> {{contact[1].data}} </p>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 </div>

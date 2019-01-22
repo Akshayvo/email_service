@@ -16,15 +16,19 @@ a {
   button:focus {
     outline: 5px auto $primary;
   }
+
+  .nav-link {
+    color: $white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: none;
+  }
 }
 
-.nav-link {
-  color: $white;
-  font-weight: 600;
-  font-size: 1.2rem;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  transition: none !important;
+.nav-link:hover {
+  color: $primary;
 }
 
 .nav-link-active {
@@ -43,7 +47,7 @@ a {
 
 .navbar-toggler:focus,
 .navbar-toggler:hover {
-  border: 1px #efefef solid;
+  border: 1px $primary solid;
 }
 
 @media (min-width: 768px) {

@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./storage-unit.component.scss']
 })
 export class StorageUnitComponent implements OnInit {
-  name: any;
+  id: number;
   tabs: any;
 
   constructor(private router: Router) { }
@@ -18,9 +18,11 @@ export class StorageUnitComponent implements OnInit {
 
   public isSomePage() {
     if (this.router.url.includes('/location/location1')) {
-        this.name = 'location1';
-    } else {
-        this.name = 'location2';
+        this.id = 1;
+    } else if (this.router.url.includes('/location/location2')) {
+      this.id = 2;
+    } else if (this.router.url.includes('/location/location3')) {
+      this.id = 3;
     }
   }
 }

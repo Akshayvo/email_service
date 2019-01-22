@@ -3,25 +3,31 @@
 .card {
   background-color: $white;
   border: none;
+}
 
-  .card-header {
-    cursor: pointer;
-    background-color: $primary;
-    color: $white;
+.card-header {
+  cursor: pointer;
+  background-color: $primary;
+  color: $white;
 
-    h5 {
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 1.5;
-    }
-  }
+  h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
 
-  .card-body {
-    margin-bottom: 0;
-    padding-left: 0;
-
-    li:not(:last-child) {
-      margin-bottom: 5px;
+    .rotate-icon {
+      float: right;
+      margin-top: 5px;
     }
   }
 }
+
+.card-body {
+  margin-bottom: 0;
+  padding-left: 0;
+
+  li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+

@@ -18,71 +18,52 @@
 </div>
 
 <!--Feature Box-->
-  <div class="container feature-block disp">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 col-6" *ngFor= "let feature of features">
-        <p class="text-center pt-5 f-block-img"> 
-          <img src="{{feature.data}}" class="f-img">
-        </p>
-        <p class="text-center pb-4 f-text">
-          {{feature.label}}
-        </p>
-      </div>
+<div class="container feature-block disp py-4">
+  <div class="row">
+    <div class="col-md-3 col-sm-6 col-6" *ngFor= "let feature of features">
+      <p class="text-center f-block-img p-2"> 
+        <img src="{{feature.data}}" class="f-img">
+      </p>
+      <p class="text-center f-text py-1">
+        {{feature.label}}
+      </p>
     </div>
   </div>
+</div>
 <!--Feature Box Ends Here-->
 
-<!--Contact Location 1-->
-<div class="pb-5 pt-5 bg-light for-mall">    
-  <div class="container">
-    <div class="row">          
-      <div class="col-md-5">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47251.12533595377!2d-73.906778!3d42.253001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f78849841f11072!2sCatskill+Self+Storage!5e0!3m2!1sen!2sus!4v1546430162794" width="100%" height="100%" frameborder="0" style="border:1px solid #fff;" allowfullscreen></iframe>
-      </div>
-      <div class="col-md-4 pl-4 pt-3">
-        <h2>Your Self Storage - Location 1</h2>
-        <p> 
-          <span *ngFor="let contact of contactsLocation1">
-            <b>{{contact.label}}</b> {{contact.data}}<br>
-          </span>
-        </p>
-        <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/location1/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>                
-        <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/location1/reserveUnit']" [queryParams]="{ currentTab: 'Reserve Unit' }" role="button"> Reserve Unit</a>                                  
-      </div>
-      <div class="col-md-3 contact-hours pt-3">
-          <h2>Hours:</h2>
-          <p>
-            <span *ngFor="let hour of hoursLocation1">
-              <b>{{hour.label}}</b>{{hour.data}}<br>
-            </span>
-          </p>
-      </div>
-    </div>
-  </div>      
-</div>
-<!--Contact Location 1 Ends Here-->
-
-<!--Contact Location 2-->
-<div class="pb-5 pt-5 for-village">  
-  <div class="container">
+<!--Contact Details-->
+<div class="bg-light for-location"> 
+  <div class="locaion-selection">
+    <app-select-location (click)="receiveMessage()"></app-select-location>
+  </div> 
+    <div class="container">
     <div class="row">
       <div class="col-md-5">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5821.139246712949!2d-76.334158!3d43.155566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6050b46d0319b1d!2sSyrasoft%2C+LLC!5e0!3m2!1sen!2sus!4v1546430063664" width="100%" height="100%" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
+        <span *ngIf="locationId == 1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.672405502645!2d-81.63062818449204!3d38.35656368624566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8848d334571013f1%3A0xa6e7d1e74704d6f!2sMovin&#39;on+Storage+Center!5e0!3m2!1sen!2sus!4v1547507975675" width="100%" height="100%" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="locationId == 2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.7152950109976!2d-79.96360028444201!3d40.54787875557631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88348d1dbeac6833%3A0x96666d804a43a62!2sShaler+Self+Storage!5e0!3m2!1sen!2sus!4v1547509488961" width="100%" height="100%" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="locationId == 3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.9616822568664!2d-79.71200568443953!3d40.65277504917323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834bd311bf9caf3%3A0xb3ba833bf0e8b8f0!2sNatrona+Heights+Self+Storage!5e0!3m2!1sen!2sus!4v1547510624473" width="100%" height="100%" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+          </span>
       </div>
       <div class="col-md-4  pl-4 pt-3">
-        <h2>Your Self Storage - Location 2</h2>
+        <h2>{{heading}}</h2>
         <p> 
-          <span *ngFor="let contact of contactsLocation2">
+          <span *ngFor="let contact of contactDetails">
             <b>{{contact.label}}</b> {{contact.data}}<br>
           </span>
         </p>
-         <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/location2/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
-         <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/location2/reserveUnit']" [queryParams]="{ currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                     
+        <a class="btn btn-outline-primary p-2 ml-0" (click)="navigateToStorageUnit()" role="button">View Rates</a>            
+        <a class="btn btn-primary p-2 ml-0" (click)="navigateToReserveUnit()" role="button">Reserve Unit</a>                        
       </div>
       <div class="col-md-3 contact-hours pt-3">
           <h2>Hours:</h2>
           <p>
-            <span *ngFor="let hour of hoursLocation2">
+            <span *ngFor="let hour of hoursDetails">
               <b>{{hour.label}}</b>{{hour.data}}<br>
             </span>
           </p>
@@ -90,7 +71,26 @@
     </div>
   </div>  
 </div>
-<!--Contact Location 2 Ends Here-->
+<!--Contact Details Ends Here-->
+
+<!--Service-->
+<div class="service">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 pt-2">
+          <h1  class="pb-4">Convenient, Customer Service Focused, Self Storage</h1>
+          <div *ngFor="let para of serviceOffered">
+            <p>{{ para.p }}</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-gate.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Service Ends Here-->
+
 
 <!--Testimonial-->
   <div class="testimonial py-5">
@@ -127,20 +127,3 @@
 </div>  
 <!--Testimonials Ends Here-->
 
-<!--Service-->
-  <div class="service">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-md-6 pt-2">
-            <h1  class="pb-4">Convenient, Customer Service Focused, Self Storage</h1>
-            <div *ngFor="let para of serviceOffered">
-              <p>{{ para.p }}</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-gate.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-<!--Service Ends Here-->

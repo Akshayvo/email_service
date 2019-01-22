@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RentSubComponent } from './rent-sub.component';
+import { SelectLocationComponent } from './select-location.component';
 
-describe('RentSubComponent', () => {
-  let component: RentSubComponent;
-  let fixture: ComponentFixture<RentSubComponent>;
+describe('SelectLocationComponent', () => {
+  let component: SelectLocationComponent;
+  let fixture: ComponentFixture<SelectLocationComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RentSubComponent ]
+      declarations: [ SelectLocationComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RentSubComponent);
+    fixture = TestBed.createComponent(SelectLocationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -58,15 +58,7 @@ const routes: Routes = [
   ]
 },
 
-  { path: 'payment',
-    component: PaymentComponent,
-    children: [
-      {path: '', redirectTo: 'location1' , pathMatch: 'full' },
-      { path: 'location1', component: RentSubComponent },
-      { path: 'location2', component: RentSubComponent },
-    ]
-  },
-
+  { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: ErrorComponent },

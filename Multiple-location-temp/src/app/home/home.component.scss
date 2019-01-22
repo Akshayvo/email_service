@@ -6,7 +6,7 @@
 }
 
 .jumbotron-top {
-  background: url("../../assets/victor-self-storage-slider-1.jpg");
+  background: url("../../assets/images/victor-self-storage-slider-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,8 +50,13 @@
   padding-left: 5%;
 }
 
-.for-mall,
-.for-village {
+.for-location {
+  padding: 35px 0 64px 0;
+
+  .locaion-selection {
+    padding-bottom: 35px;
+  }
+
   .btn-outline-primary {
     margin-right: 10px;
   }
@@ -142,32 +147,58 @@
     text-align: right;
   }
 
-  .jumbotron-top {
-    background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-1.jpg");
-    background-position: bottom left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-  }
+  .myCarousel {
+    .carousel-item {
+      min-height: 40vh;
+      background-size: cover;
+      background-position: center center;
+      background-position-x: center;
+      background-position-y: center;
+      image-rendering: inherit;
 
-  .jumbotron-top1 {
-    background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-  }
-
-  .jumbotron-top2 {
-    background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/HomeSlider/victor-self-storage-slider-3.jpg");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
+      img {
+        min-height: 40vh;
+        width: auto;
+        block-size: 100%;
+        position: relative;
+      }
+    }
   }
 }
 
+
+@media only screen and (max-width: 768px) {
+  .contact-hours {
+    border-left: none;
+    padding-left: 5%;
+  }
+
+  .disp {
+    display: block;
+  }
+
+  .for-location {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+
 @media screen and (max-width: 600px) {
+  .jumbotron-top {
+    height: 50vh;
+  }
+
+  .jumbotron-top1 {
+    background-position: right;
+    height: 50vh;
+  }
+
+  .jumbotron-top2 {
+    height: 50vh;
+  }
+
   .content-align {
     text-align: center;
   }
@@ -190,32 +221,27 @@
     font-size: 1.2rem;
   }
 
-  .contact-hours {
-    border-left: none;
-    padding-left: 5%;
-  }
-}
+  .myCarousel {
+    .carousel-item {
+      min-height: 40vh;
+      width: 200%;
+      background-size: cover;
+      background-position: center center;
+      background-position-x: center;
+      background-position-y: center;
+      image-rendering: inherit;
 
-
-@media only screen and (max-width: 768px) {
-  .contact-hours {
-    border-left: none;
-    padding-left: 5%;
-  }
-
-  .disp {
-    display: none;
-  }
-
-  .for-mall {
-    .btn {
-      width: 100%;
+      img {
+        min-height: 40vh;
+        width: auto;
+        block-size: 100%;
+        position: relative;
+      }
     }
   }
 
-  .for-village {
-    .btn {
-      width: 100%;
-    }
+  .contact-hours {
+    border-left: none;
+    padding-left: 5%;
   }
 }

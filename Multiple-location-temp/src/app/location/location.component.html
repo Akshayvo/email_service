@@ -1,65 +1,59 @@
 <section class="contact-details">
   <div class="container py-5">
     <div class="row">
-      <div class="col-lg-8 py-0 px-0" style="background-color: #f1f0ed;">
+      <div class="col-lg-8 py-0 px-0" style="background-color: #fff;">
         <div class="social-content px-3 py-4">
-          <h1 style="text-transform:capitalize;"> Your Self Storage - {{name}}</h1>
+          <h1 style="text-transform:capitalize;"> {{name}}</h1>
           <div class="row">
-            <span *ngFor="let contact of contacts" class="py-2">
-              <span class="pl-3"><i style="font-size: 1.1rem;" class="{{contact.class}}"></i></span><span>{{contact.data}}</span>   
-            </span>
-            <span class="social-links disp">
-              <a href="https://www.facebook.com" target="_blank"> <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/facebook.png" alt="Your Self Storage" height="20px" width="auto" style="float:right;"> </a>
-            </span>
+            <div class="col-lg-11 px-0">
+              <span *ngFor="let contact of contacts" class="py-2 each-contact">
+                <span class="pl-3"><i style="font-size: 1.1rem;" class="{{contact.class}}"></i></span><span>{{contact.data}}</span>
+              </span>
+            </div>
+            <div class="col-lg-1">
+              <span class="disp">
+               <a href="https://www.facebook.com/" target="_blank"><img src="../../assets/images/facebook.png" alt=""></a> 
+              </span>
+            </div>
           </div>
         </div>
         <div class="contact-img">
-            <span *ngIf="name == 'Location2'"> 
-             <img src="../../assets/victor-self-storage-slider-1.jpg" width="100%" alt="" height="100%" class="py-0 px-0 my-0">
+            <span *ngIf="locationId == 1"> 
+              <div class="img-box-1">
+              </div>
             </span>
-            <span *ngIf="name == 'Location1'"> 
-             <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-mall-hero.png" width="100%" alt="" height="100%" class="py-0 px-0 my-0">
+            <span *ngIf="locationId == 2"> 
+              <div class="img-box-2">
+              </div>
+            </span>
+            <span *ngIf="locationId == 3"> 
+              <div class="img-box-3">
+              </div>  
             </span>
         </div>
       </div>
       <div class="col-lg-4 pt-3" style="background-color: #fff;">
         <div class="map-responsive">
-          <span *ngIf="name == 'Location2'">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5821.139246712949!2d-76.334158!3d43.155566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6050b46d0319b1d!2sSyrasoft%2C+LLC!5e0!3m2!1sen!2sus!4v1546430063664" width="100%" height="200px" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
-          </span>
-          <span *ngIf="name == 'Location1'">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47251.12533595377!2d-73.906778!3d42.253001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f78849841f11072!2sCatskill+Self+Storage!5e0!3m2!1sen!2sus!4v1546430162794" width="100%" height="270px" frameborder="0" style="border:1px solid #fff;" allowfullscreen></iframe>
-          </span>
+            <span *ngIf="locationId == 1">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.672405502645!2d-81.63062818449204!3d38.35656368624566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8848d334571013f1%3A0xa6e7d1e74704d6f!2sMovin&#39;on+Storage+Center!5e0!3m2!1sen!2sus!4v1547507975675" width="100%" height="220" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 2">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.7152950109976!2d-79.96360028444201!3d40.54787875557631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88348d1dbeac6833%3A0x96666d804a43a62!2sShaler+Self+Storage!5e0!3m2!1sen!2sus!4v1547509488961" width="100%" height="230" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.9616822568664!2d-79.71200568443953!3d40.65277504917323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834bd311bf9caf3%3A0xb3ba833bf0e8b8f0!2sNatrona+Heights+Self+Storage!5e0!3m2!1sen!2sus!4v1547510624473" width="100%" height="230" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+            </span>
         </div>
-        <div class="hours-data py-2 w-100">
+        <div class="hours-data w-100">
           <h2 class="pt-3">Hours</h2>
           <div class="row">
-            <div class="col-lg-8"> 
-              <p *ngFor="let hour of hours" class="{{hour.class}} py-2 my-0 px-2">
-                <span style="float:left;"><b>{{hour.label}}</b></span><span style="float:right;">{{hour.data}}</span><br>
-              </p>
+            <div class="col-lg-8">
+              <app-tables [tBody]="hours" ></app-tables> 
             </div>
-            <div class="col-lg-4 pl-0 mt-0 pt-0 btn-area">
-              <span *ngIf="name == 'Location1'">
-               <a class="btn btn-outline-primary p-2 ml-0 mt-0" [routerLink]="['/contact']" [queryParams]="{ name:'Location1' }" role="button">Contact Us</a> 
-              </span>
-              <span *ngIf="name == 'Location2'">
-                <a class="btn btn-outline-primary p-2 ml-0 mt-0" [routerLink]="['/contact']" [queryParams]="{ name:'Location2' }" role="button">Contact Us</a> 
-              </span>
-            
-              <span *ngIf="name == 'Location1'">
-                <a class="btn btn-primary-light p-2 ml-0" [routerLink]="['/payment/location1']" [queryParams]="{ currentTab: 'Your Self Storage - Location1' }" role="button">Pay Rent</a> 
-              </span>
-              <span *ngIf="name == 'Location2'">
-                <a class="btn btn-primary-light p-2 ml-0" [routerLink]="['/payment/location2']" [queryParams]="{ currentTab: 'Your Self Storage - Location2' }" role="button">Pay Rent</a>                    
-              </span>
-
-              <span *ngIf="name == 'Location1'">
-                <a class="btn btn-primary p-2 ml-0" [routerLink]="['./reserveUnit']" [queryParams]="{ currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                                       
-              </span>
-              <span *ngIf="name == 'Location2'">
-                <a class="btn btn-primary p-2 ml-0" [routerLink]="['./reserveUnit']" [queryParams]="{ currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                                       
-              </span>
+            <div class="col-lg-4 btn-area text-center">
+              <a class="btn btn-outline-primary p-2" [routerLink]="['/contact']" role="button">Contact Us</a> 
+              <a class="btn btn-primary-light p-2" [routerLink]="['/payment']" role="button">Pay Rent</a> 
+              <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                       
             </div>
           </div>
         </div>

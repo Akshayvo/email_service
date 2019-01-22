@@ -11,6 +11,7 @@ export class UnitSizerComponent implements OnInit {
   unitSizer: any;
   tabs: any;
   currentTab = 'Unit Sizer';
+  id: number;
   constructor( private router: Router ) {
    }
 
@@ -20,19 +21,26 @@ export class UnitSizerComponent implements OnInit {
 
   public isSomePage() {
     if (this.router.url.includes('/location/location1')) {
-        this.fetchunitSizerLocation1();
+        this.fetchDetailsLocation1();
+    } else  if (this.router.url.includes('/location/location2'))  {
+      this.fetchDetailsLocation2();
     } else {
-      this.fetchunitSizerLocation2();
+      this.fetchunitSizerLocation3();
     }
   }
 
- public fetchunitSizerLocation1() {
-    this.name = 'Location 1';
+ public fetchDetailsLocation1() {
     this.unitSizer = unitSizerLocation1;
+    this.id = 1;
   }
 
-  public fetchunitSizerLocation2() {
-    this.name = 'Location 2';
+  public fetchDetailsLocation2() {
     this.unitSizer = unitSizerLocation2;
+    this.id = 2;
+  }
+
+  public fetchunitSizerLocation3() {
+    this.unitSizer = unitSizerLocation2;
+    this.id = 3;
   }
 }

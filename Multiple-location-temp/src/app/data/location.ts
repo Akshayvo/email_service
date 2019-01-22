@@ -43,10 +43,16 @@ export const tabs = [
     },
 ];
 
+export const headingLocation1 = `Location 1`;
+
+export const headingLocation2 = `Location 2`;
+
+export const headingLocation3 = `Location 3`;
+
 export const unitSizerLocation1 = [
     {
         size: '5\' x 15\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/5x5.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
         data: `This unit is approximately 25 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -60,7 +66,7 @@ export const unitSizerLocation1 = [
 
     {
         size: '10\' x 10\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x10.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
         data: `This unit is approximately 50 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -73,7 +79,7 @@ export const unitSizerLocation1 = [
     },
     {
         size: '10\' x 15\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x15.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `This unit is approximately 150 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -88,7 +94,7 @@ export const unitSizerLocation1 = [
 
     {
         size: '10\' x 20\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x20.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
         data: `This unit is approximately 200 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -103,7 +109,7 @@ export const unitSizerLocation1 = [
 
     {
         size: '10\' x 25\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x25.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
         data: `This unit is approximately 250 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -116,7 +122,7 @@ export const unitSizerLocation1 = [
     },
     {
         size: '10\' x 30\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x30.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
         data: `This unit is approximately 300 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -132,7 +138,7 @@ export const unitSizerLocation1 = [
 export const unitSizerLocation2 = [
     {
         size: '5\' x 10\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/5x10.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `This unit is approximately 25 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -146,7 +152,7 @@ export const unitSizerLocation2 = [
 
     {
         size: '10\' x 10\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x10.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
         data: `This unit is approximately 50 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -159,7 +165,7 @@ export const unitSizerLocation2 = [
     },
     {
         size: '10\' x 15\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x15.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `This unit is approximately 150 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -174,7 +180,7 @@ export const unitSizerLocation2 = [
 
     {
         size: '10\' x 20\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x20.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
         data: `This unit is approximately 200 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -189,7 +195,7 @@ export const unitSizerLocation2 = [
 
     {
         size: '10\' x 25\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x25.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
         data: `This unit is approximately 250 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -202,7 +208,7 @@ export const unitSizerLocation2 = [
     },
     {
         size: '10\' x 30\' General Storage',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/UnitSizer/10x30.png',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
         data: `This unit is approximately 300 sq feet of space that can hold
                 the contents of one small room or large closet, such as: `,
         amenities: [
@@ -214,6 +220,104 @@ export const unitSizerLocation2 = [
         ],
     }
 ];
+
+export const unitSizerLocation3 = [
+    {
+        size: '5\' x 10\' General Storage',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
+        data: `This unit is approximately 25 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+            { content: 'chairs', },
+            { content: 'small desks', },
+            { content: 'small bookcases', },
+            { content: 'suitcases', },
+            { content: 'lamps', },
+        ],
+    },
+
+    {
+        size: '10\' x 10\' General Storage',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
+        data: `This unit is approximately 50 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+                    { content: 'chairs', },
+                    { content: 'small desks', },
+                    { content: 'small bookcases', },
+                    { content: 'suitcases', },
+                    { content: 'lamps', },
+        ],
+    },
+    {
+        size: '10\' x 15\' General Storage',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        data: `This unit is approximately 150 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+            { content: 'chairs', },
+            { content: 'small desks', },
+            { content: 'small bookcases', },
+            { content: 'suitcases', },
+            { content: 'lamps', },
+        ],
+    },
+
+
+    {
+        size: '10\' x 20\' General Storage',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
+        data: `This unit is approximately 200 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+            { content: 'mattress sets', },
+            { content: 'sofa sets', },
+            { content: 'washer / dryer', },
+            { content: 'refrigerator', },
+            { content: 'many boxes', },
+        ],
+    },
+
+
+    {
+        size: '10\' x 25\' General Storage',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
+        data: `This unit is approximately 250 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+            { content: 'mattress sets', },
+            { content: 'sofa sets', },
+            { content: 'washer / dryer', },
+            { content: 'refrigerator', },
+            { content: 'many boxes', },
+        ],
+    },
+    {
+        size: '10\' x 30\' General Storage',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
+        data: `This unit is approximately 300 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+            { content: 'mattress sets', },
+            { content: 'sofa sets', },
+            { content: 'washer / dryer', },
+            { content: 'refrigerator', },
+            { content: 'many boxes', },
+        ],
+    }
+];
+
+export const aboutUsHeadingLocation1 = `About Location 1`;
+
+export const aboutUsHeadingLocation2 = `About Location 2`;
+
+export const aboutUsHeadingLocation3 = `About Location 3`;
+
+export const aboutUsImageLocation1 = `../../assets/images/self-storage-hallway-green.jpg`;
+
+export const aboutUsImageLocation2 = `../../assets/images/self-storage-units_green.jpg`;
+
+export const aboutUsImageLocation3 = `../../assets/images/victor-self-storage-slider-1.jpg`;
 
 export const aboutUsLocation1 = [
     {
@@ -262,6 +366,31 @@ export const aboutUsLocation2 = [
             electronic typesetting, remaining essentially unchanged.`,
     },
 ];
+
+export const aboutUsLocation3 = [
+    {
+        p: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+            of classical Latin literature from 45 BC, making it over 2000 years old.`,
+    },
+    {
+        p: `Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one
+            of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through
+            the cites of the word in classical literature, discovered the undoubtable source.`,
+    },
+    {
+        p: `Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+            (The Extremes of Good and Evil) by Cicero. written in 45 BC. This book is a treatise on the
+            theory of ethics, very popular during the Renaissance.`,
+    },
+    {
+        p: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.`,
+    },
+];
+
 
 
 export const directionLocation1 = [
@@ -319,7 +448,7 @@ export const directionLocation2 = [
     },
 ] ;
 
-export const direction = [
+export const directionLocation3 = [
     {
         label: 'Driving directions to Your Self Storage coming from Route 84 exit 5',
         datas: [
@@ -377,4 +506,40 @@ export const reviewLocation1 = [
             and I DO recommend them every chance I get!"`,
         by: '- Mary (Your, New York)',
     }
+];
+
+export const reviewLocation2 = [
+    {
+        p : `"I wanted a storage facility that was secure, accessible, reasonably priced,
+            and in the right location. I've used other storage facilities in the past that
+            really didn't make me feel like my "stuff" was safe,
+            and there wasn't anyone around to help out if I had an issue.
+            Your Self Storage is an extremely good facility, yes, I'll say great.
+            I've been extremely happy with Your Self Storage for well over two years now in ALL aspects,
+            and I DO recommend them every chance I get!"`,
+        by: '- Mary (Your, New York)',
+    },
+    {
+        p : `"I wanted a storage facility that was secure, accessible, reasonably priced,
+            and in the right location. I've used other storage facilities in the past
+            that really didn't make me feel like my "stuff" was safe,
+            and there wasn't anyone around to help out if I had an issue.
+            Your Self Storage is an extremely good facility, yes, I'll say great.
+            I've been extremely happy with Your Self Storage for well over two years now in ALL aspects,
+            and I DO recommend them every chance I get!"`,
+        by: '- Mary (Your, New York)',
+    },
+];
+
+export const reviewLocation3 = [
+    {
+        p : `"I wanted a storage facility that was secure, accessible, reasonably priced,
+            and in the right location. I've used other storage facilities in the past that
+            really didn't make me feel like my "stuff" was safe,
+            and there wasn't anyone around to help out if I had an issue.
+            Your Self Storage is an extremely good facility, yes, I'll say great.
+            I've been extremely happy with Your Self Storage for well over two years now in ALL aspects,
+            and I DO recommend them every chance I get!"`,
+        by: '- Mary (Your, New York)',
+    },
 ];

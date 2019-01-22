@@ -1,9 +1,19 @@
 <div class="unit-sizer-container">
   <div class="container px-0">
-    <h2 class="text-center">Selecting the Right Storage Unit</h2>
-    <div class="container py-3 px-0">
-      <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+    <span *ngIf="id === 1">
+        <h2 class="text-center">Unit Sizer</h2>
+        <p class="text-center">This location offers a wide range of unit sizes. A professional and knowledgeable storage associate will be glad to help you determine which unit will best meet your needs.  AllSpace's units have 9 to 10 foot ceilings, which allows you to stack higher and store more for your money.  The following unit sizes are available at the Poughkeepsie/Arlington location. A wide array of moving and storage supplies are available for sale at every AllSpace location. We accept Master Card and Visa. Sign up for our Easy Pay program, and we'll charge your credit card automatically.</p>
+    </span>
+    <span *ngIf="id === 2">
+        <h2 class="text-center">Unit Sizer</h2>
+        <p class="text-center">Need help selecting the proper size for your storage unit needs? We've provided this handy chart of what unit types are available at our Highland location and we encourage you to reach out to one of our friendly, professional storage associates for more information!</p>
+    </span>
+    <span *ngIf="id === 3">
+      <h2 class="text-center">Unit Sizer</h2>
+      <p class="text-center">Climate controlled units provide an environment where the temperature allows for ideal storage of your personal items, such as electronics, artwork, books, leather and wooden furniture, Climate controlled units are also ideal for business items, such as media, pharmaceuticals, records, files and retail inventory.  AllSpace's units have 9 to 10 foot ceilings, which allows you to stack higher and store more for your money.  The following unit sizes are available at the Kingston/Lake Katrine location. Those marked by  are available with climate control.</p>
+    </span>
 
+    <div class="container py-3">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 single-block p-1" *ngFor="let unit of unitSizer">
