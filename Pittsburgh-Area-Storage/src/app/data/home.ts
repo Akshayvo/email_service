@@ -2,19 +2,19 @@
 export const featuresHead = [
     {
         label: '3 Convenient Locations',
-        data: '../../assets/images/jumbotron-bottom-images/location.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/jumbotron-bottom-images/location.svg',
     },
     {
         label: 'Moving Supplies Available',
-        data: '../../assets/images/jumbotron-bottom-images/luggage-cart.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/jumbotron-bottom-images/luggage-cart.svg',
     },
     {
         label: 'Penske Truck Rentals',
-        data: '../../assets/images/jumbotron-bottom-images/truck.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/jumbotron-bottom-images/truck.svg',
     },
     {
         label: 'Temperature Controlled Units Available',
-        data: '../../assets/images/jumbotron-bottom-images/Temp.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/jumbotron-bottom-images/Temp.svg',
     },
 ];
 

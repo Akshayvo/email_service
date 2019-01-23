@@ -31,13 +31,13 @@ export class HeaderComponent implements OnInit {
 
   public isSomePage() {
     if (this.router.url.includes('/location/movin-on-storage')) {
-        this.logo = '../../assets/images/movin-on-storage-center-logo.jpg';
+        this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/movin-on-storage-center-logo.jpg';
     } else if (this.router.url.includes('/location/shaler-self')) {
-      this.logo = '../../assets/images/shaler-self-storage-logo.jpg';
+      this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/shaler-self-storage-logo.jpg';
     } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
-        this.logo = '../../assets/images/natrona-heights-self-storage-logo.jpeg';
+        this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/natrona-heights-self-storage-logo.jpeg';
     } else {
-      this.logo = '../../assets/images/pittsburgh-area-storage-centers-logo.jpg';
+      this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/pittsburgh-area-storage-centers-logo.jpg';
     }
   }
 
