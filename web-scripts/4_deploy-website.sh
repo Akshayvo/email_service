@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Enter the Folder path to find the file or press 'ENTER' to select the default directory: "
+echo "Enter the Folder path to find the file or Press 'ENTER' to select current working directory as a Path: "
 read  folder_path
 
 

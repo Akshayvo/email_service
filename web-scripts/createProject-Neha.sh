@@ -24,7 +24,7 @@ then
     then
 	 echo "Login successful"
 
-	 cd Websites
+	 
 
 	 mkdir $pName
 

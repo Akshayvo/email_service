@@ -1,5 +1,5 @@
 #!/bin/bash
-echo " Enter the path to the dist folder  or ' PRESS ENTER ' to select The Default Directory: "
+echo " Enter the path to the dist folder orPress 'ENTER' to select current working directory as a Path: "
 #variable to read the path
 read  folder_path
 
