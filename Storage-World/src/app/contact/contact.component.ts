@@ -69,13 +69,11 @@ export class ContactComponent implements OnInit {
 
 
   onSubmit() {
-    this.submitted = true;
 
    // stop here if form is invalid
    if (this.contactForm.invalid) {
        return;
    } else {
-     console.log(this.contactForm.value);
 
      if ( !this.contactForm.value.subject) {
       this.contactForm.value.subject = 'Website Form Submission';
@@ -92,7 +90,6 @@ export class ContactComponent implements OnInit {
            message: this.completeMessage,
            subject: this.contactForm.value.subject,
          };
-         console.log(body);
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {

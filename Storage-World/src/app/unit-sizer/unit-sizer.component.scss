@@ -1,8 +1,11 @@
 @import "../../styles.scss";
 
 .unit-sizer-holder {
-  padding-top: 100px;
+  padding-top: 110px;
   min-height: 87vh;
+}
+
+.note-block {
   margin-bottom: 50px;
 }
 
@@ -16,11 +19,17 @@
   }
 }
 
+.amenity-capitalize {
+  text-transform: capitalize;
+}
+
 .unit-sizer-container {
   color: black;
 
   .unit-sizer-box {
+    // border: 1px solid $primary;
     padding: 64px;
+    background: $light;
   }
 
   .unit-dimention {
@@ -174,6 +183,19 @@
       img {
         width: 10px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .unit-sizer-holder {
+    .outer-block {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .content-Holder {
+      background: $light;
     }
   }
 }

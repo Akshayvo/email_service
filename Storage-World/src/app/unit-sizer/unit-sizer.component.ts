@@ -9,9 +9,9 @@ import { Title, Meta } from '@angular/platform-browser';
 export class UnitSizerComponent implements OnInit {
   unitsizers: any;
   selectedUnit: any;
-  h: number;
-  i: number;
-  j: number;
+  previous: number;
+  current: number;
+  next: number;
 
   constructor(
     private titleService: Title,
@@ -26,9 +26,9 @@ export class UnitSizerComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.i = 0;
-    this.h = 3;
-    this.j = this.i + 1;
+    this.current = 0;
+    this.previous = 3;
+    this.next = this.current + 1;
     this.fetchUnitSizer();
     window.scrollTo(0, 0);
   }
@@ -42,36 +42,36 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public moveLeft() {
-    this.j = this.i;
-    this.i = this.h;
-    if ( this.h === 0 ) {
-      this.h = 3;
+    this.next = this.current;
+    this.current = this.previous;
+    if ( this.previous === 0 ) {
+      this.previous = 3;
     } else {
-      this.h = this.h - 1;
+      this.previous = this.previous - 1;
     }
   }
 
   public moveRight() {
-    this.h = this.i;
-    this.i = this.j;
-    if ( this.j === 3 ) {
-      this.j = 0;
+    this.previous = this.current;
+    this.current = this.next;
+    if ( this.next === 3 ) {
+      this.next = 0;
     } else {
-    this.j = this.j + 1;
+    this.next = this.next + 1;
     }
   }
 
   public activeUnit(unitId: number) {
-    this.i = unitId;
-    if ( this.i === 0 ) {
-      this.h = 3;
-      this.j = this.i + 1;
-    } else if ( this.i === 3 ) {
-      this.j = 0;
-      this.h = this.i - 1;
+    this.current = unitId;
+    if ( this.current === 0 ) {
+      this.previous = 3;
+      this.next = this.current + 1;
+    } else if ( this.current === 3 ) {
+      this.next = 0;
+      this.previous = this.current - 1;
     } else {
-      this.h = this.i - 1;
-      this.j = this.i + 1;
+      this.previous = this.current - 1;
+      this.next = this.current + 1;
     }
 
   }
