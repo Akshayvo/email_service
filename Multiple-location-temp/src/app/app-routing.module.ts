@@ -13,11 +13,9 @@ import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
 import { ReviewsComponent } from './reviews/reviews.component';
-import { RentSubComponent } from './rent-sub/rent-sub.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'location/location1',
     component: LocationComponent,
     children: [

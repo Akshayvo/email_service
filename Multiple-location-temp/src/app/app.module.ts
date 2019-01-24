@@ -28,7 +28,6 @@ import { DirectionsComponent } from './directions/directions.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AccordionComponent } from './accordion/accordion.component';
-import { RentSubComponent } from './rent-sub/rent-sub.component';
 import { SelectLocationComponent } from './select-location/select-location.component';
 
 @NgModule({
@@ -53,7 +52,6 @@ import { SelectLocationComponent } from './select-location/select-location.compo
     ReviewsComponent,
     TabsComponent,
     AccordionComponent,
-    RentSubComponent,
     SelectLocationComponent
   ],
   imports: [
