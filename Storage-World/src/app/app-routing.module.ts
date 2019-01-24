@@ -10,8 +10,7 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'unit-sizer', component: UnitSizerComponent },
