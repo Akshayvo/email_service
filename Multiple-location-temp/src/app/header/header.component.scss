@@ -1,0 +1,91 @@
+@import "../../styles.scss";
+
+a {
+  cursor: pointer;
+}
+
+.navbar {
+  padding-bottom: 0;
+  padding-top: 0;
+
+  button {
+    border: 1px #efefef solid;
+    margin-right: 20px;
+  }
+
+  button:focus {
+    outline: 5px auto $primary;
+  }
+
+  .nav-link {
+    color: $white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: none !important;
+    -webkit-transition: 0 !important;
+  }
+}
+
+.nav-link:hover {
+  color: $primary;
+}
+
+.nav-link-active {
+  border-bottom: 5px $border solid;
+  color: $white;
+}
+
+.display {
+  display: block;
+}
+
+.navbar-toggler {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  border: 1px $primary solid;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    li {
+      a {
+        line-height: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .display {
+    display: none;
+  }
+
+  .navbar {
+    .navbar-nav {
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: flex;
+    }
+
+    .navbar-brand {
+      img {
+        width: 60px;
+        height: auto;
+      }
+    }
+  }
+
+  @media screen and (max-height: 476px) {
+    .nav-scroll {
+      height: 70vh;
+      overflow-y: auto;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../styles.scss";
+
+.footer {
+  color: $shadow;
+  text-align: center;
+  font-size: 1em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: static;
+  background: #e2e0d8;
+
+  .copyright-text {
+    text-align: left;
+  }
+
+  .copyright-image {
+    text-align: right;
+  }
+}
