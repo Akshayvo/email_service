@@ -10,8 +10,7 @@ import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'unitSizer', component: UnitSizerComponent },
   { path: 'storageTips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
