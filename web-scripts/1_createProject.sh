@@ -8,20 +8,20 @@ else
 	exit 1
 fi
 camel_to_under=$( echo "$project_name" | sed -r 's/([a-z0-9])([A-Z])/\1_\L\2/g')
-
+cwd="$(pwd)"
 echo "Enter the path to create the Project or Press 'ENTER' to select current working directory as a Path:"
 read  dest_path
 
 
-if [ -z $dest_path ];then
+if [ -z "${dest_path}" ];then
 	dest_path="$(pwd)"
 fi
 
-if [ -e $dest_path/"${project_name}" ];then
+if [ -e "${dest_path}"/"${project_name}" ];then
 	echo "The same project name already exists in the given path"
 	exit 1
 else
-	cd $dest_path
+	cd "${dest_path}"
 	mkdir "${project_name}"
       	echo "Project created successfully"         
 fi
@@ -34,16 +34,16 @@ else
 	exit 1
 fi        
 # create a project 
-rsync -av --progress "$source" $dest_path/"${project_name}" --exclude dist --exclude node_modules
+rsync -av --progress "$source" "${dest_path}"/"${project_name}" --exclude dist --exclude node_modules
 # Renaming the project name
 export camel_to_under
 export dest_path
 export project_name
-cwd="$(pwd)"
-cd $cwd
-sh ./Rename_proj_filename.sh
 
-cd $dest_path/"${project_name}"
+cd $cwd
+sh ./2_Rename_proj_filename.sh
+
+cd "${dest_path}"/"${project_name}"
 
 while true; do
     		read -p "Do you want to start ?" yn
