@@ -14,8 +14,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'location/movin-on-storage',
     component: LocationComponent,
     children: [
