@@ -53,22 +53,22 @@ export const gettingStarted = `Are you ready to start storing with the storage e
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/jumbotron-bottom-images/operation.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_World_Images/jumbotron-bottom-images/operation.svg`,
         label: 'Locally Owned and Operated'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/jumbotron-bottom-images/online-bill.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_World_Images/jumbotron-bottom-images/online-bill.svg`,
         label: 'Online Bill Pay Available'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/jumbotron-bottom-images/cctv.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_World_Images/jumbotron-bottom-images/cctv.svg`,
         label: 'State-of-the-Art Security System'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/jumbotron-bottom-images/support.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_World_Images/jumbotron-bottom-images/support.svg`,
         label: 'Friendly, Professional On-Premises Manager'
     },
 ];
