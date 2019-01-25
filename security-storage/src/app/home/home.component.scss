@@ -7,28 +7,28 @@
 
 
 .jumbotron-top {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-exterior-hero.jpg");
+  background: url("../../assets/images/security-storage-cuero-exterior-hero.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
 }
 
-.jumbotron-top1 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-outdoor-units.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-}
+// .jumbotron-top1 {
+//   background: url("../../assets/images/security-storage-cuero-outdoor-units.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
 
-.jumbotron-top2 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-exterior.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-}
+// .jumbotron-top2 {
+//   background: url("../../assets/images/security-storage-cuero-exterior.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
 
 // HOME jUMBOTRON
 .jumbotron-container {
@@ -57,7 +57,7 @@
       width: 0.825rem;
       height: 0.825rem;
       border: 2px solid $primary;
-      -webkit-border-radius: 50%;
+      // -webkit-border-radius: 50%;
       border-radius: 50%;
       cursor: pointer;
     }
@@ -71,7 +71,7 @@
 // Get started Section
 
 .getStarted {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Images/Security-Storage/carousel/security-storage-cuero-outdoor-units.jpg") center top no-repeat fixed;
+  background: url("../../assets/images/security-storage-cuero-outdoor-units.jpg") center top no-repeat fixed;
   background-size: cover;
   background-position: top;
 
