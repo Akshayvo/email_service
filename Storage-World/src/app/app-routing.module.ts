@@ -16,6 +16,14 @@ const routes: Routes = [
   { path: 'unit-sizer', component: UnitSizerComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
+  {path: 'review',
+  component: HomeComponent,
+  resolve: {
+      url: 'externalUrlRedirectResolver'
+  },
+  data: {
+      externalUrl: 'https://www.youtube.com'
+  }},
   { path: '**', component: ErrorComponent }
 ];
 

@@ -19,6 +19,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +44,13 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
     HttpClientModule,
   ],
   providers: [
-    Title
+    Title,
+    {
+      provide: 'externalUrlRedirectResolver',
+      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+          window.location.href = (route.data as any).externalUrl;
+      }
+  }
   ],
   bootstrap: [AppComponent]
 })
