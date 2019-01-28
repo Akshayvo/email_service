@@ -1,16 +1,15 @@
 export const navLinks = [
     {
+        id: '0',
         label: 'Home',
-        path: '/home',
+        path: '/',
     },
     {
-        id: '1',
         label: 'Village Location',
         path: '/location/village',
         name: 'village'
     },
     {
-        id: '2',
         label: 'Mall Location',
         path: '/location/mall',
         name: 'mall'

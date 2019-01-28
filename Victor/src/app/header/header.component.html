@@ -12,12 +12,12 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
       <ul class="navbar-nav ml-auto nav-scroll">
         <li class="nav-item mx-2" *ngFor="let nav of navLinks">
-          <!-- <span *ngIf="nav?.name == 'village' || nav?.name == 'mall'">
-              <a class="nav-link text-center" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" (click)="onClick(menu)">{{nav.label}}</a>  
-          </span> -->
-          <!-- <span *ngIf="nav?.id !== '1' && nav?.id !== '2'">             -->
+          <span *ngIf=" nav?.id === '0' ">
+              <a class="nav-link text-center" [routerLinkActive]="'nav-link-active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="nav?.path" (click)="onClick(menu)">{{nav.label}}</a>  
+          </span>
+          <span *ngIf=" nav?.id !== '0' ">            
             <a class="nav-link text-center" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" (click)="onClick(menu)">{{nav.label}}</a>
-          <!-- </span> -->
+          </span>
         </li>
       </ul>
     </div>
