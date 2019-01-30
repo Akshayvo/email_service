@@ -20,19 +20,26 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Welcome to Pittsburgh Area Storage Centers! We have been managing self storage
-            facilities since 2000, and currently have 3 conveniently located locations! `,
+        p: `Pittsburgh Area Storage Centers was formed by an Awesome Man who had
+            the thoughts that one day he would make a difference in the Self
+            Storage Business. Well, he did!`,
     },
     {
-        p: `We like to think of our facilities as an extension of your home, perfect for those
-            rarely used or seasonal items. Holiday decorations, camping equipment, or lawn furniture.
-            Store it all with us and know that you'll have easy access to your belongings whenever you need them!`,
+        p: `He initially started Movin’ On Storage Center in Charleston WV in 2000,
+            he then moved on to Shaler Self Storage in Allison Park PA and then
+            Natrona Heights Self Storage in Natrona Heights, PA.`,
     },
     {
-        p: `Whether you're a home owner, or renting and in need of some extra space around the house or
-            a business looking for long term equipment or inventory storage, our locations have you covered!
-            Our Pennsylvania locations also offer outdoor vehicle storage! In need of a truck?
-            Our Charleston location offers Penske truck rentals!`,
+        p: `Scott was successful and we Thank him for his Wisdom and knowledge
+            of the Self Storage Industry. He also realized that we could also
+            accommodate or customers by having Rental Trucks available to them.`,
+    },
+    {
+        p: `We continue on with his creations. Scott would be very pleased with
+            how we have continued with what had started.`,
+    },
+    {
+        p: `Scott Harris 8/22/1960 - 3/30/2016`,
     },
 ];
 

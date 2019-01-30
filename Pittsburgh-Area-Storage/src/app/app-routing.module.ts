@@ -12,6 +12,7 @@ import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
+import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -53,6 +54,7 @@ const routes: Routes = [
   },
   { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
+  { path: 'truck-rentals', component: TruckRentalsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: ErrorComponent },
 ];

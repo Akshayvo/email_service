@@ -65,7 +65,7 @@ export const hoursLocation2 = [
     },
     {
         label: 'Access hours: ',
-        data: '24/7/365',
+        data: '7 Days a Week: 7:00AM - 7:00PM',
     },
 ];
 

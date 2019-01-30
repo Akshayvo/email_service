@@ -28,6 +28,7 @@ import { DirectionsComponent } from './directions/directions.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { SelectLocationComponent } from './select-location/select-location.component';
+import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { SelectLocationComponent } from './select-location/select-location.compo
     TabsComponent,
     AccordionComponent,
     SelectLocationComponent,
+    TruckRentalsComponent,
   ],
   imports: [
     NgtUniversalModule,

@@ -1,0 +1,45 @@
+@import "../../styles.scss";
+
+.truck-rentels-holder {
+    padding-top: 100px;
+    min-height: 88vh;
+    margin-bottom: 50px;
+
+    .truck-rentals-content {
+      .top-block {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .central-block {
+        background: #f1f0ed;
+        padding: 50px;
+      }
+
+      .bottom-block {
+        padding-top: 50px;
+        // padding-bottom: 50px; 
+      }
+    }
+
+    .truck-sizes {
+      // border: 1px solid $border;
+      background: #fff;
+      height: 100%;
+      width: 100%;
+      position: relative;
+
+      .image-box {
+        height: 80px;
+        position: relative;
+        
+        img {
+          bottom: 0px;
+          position:absolute;
+          text-align: center;
+          left: 25%;
+          right: 25%;
+        }
+      }
+    }
+}

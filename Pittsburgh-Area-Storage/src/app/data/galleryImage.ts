@@ -29,6 +29,26 @@ export const galleryImagesLocation1 = [
         url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/movin-on-storage/movin-on-storage-office-store.jpg',
         alt: `Movin' On Storage Center Front Office and Store`,
     },
+    {
+        url: `../../assets/images/movin-on-storage/movin-on-storage-center-exterior.jpg`,
+        alt: `Movin' On Storage Center's brick exterior from across the street`,
+    },
+    {
+        url: `../../assets/images/movin-on-storage/movin-on-storage-center-climate-control.jpg`,
+        alt: `Interior hallway of Movin' On Storage Center's roll up storage unit doors`,
+    },
+    {
+        url: `../../assets/images/movin-on-storage/movin-on-storage-center-roadfront.jpg`,
+        alt: `Movin' On Storage Center building from across the street`,
+    },
+    {
+        url: `../../assets/images/movin-on-storage/movin-on-storage-center-outside.jpg`,
+        alt: `Movin' On Storage Center's building and sign from the parking lot`,
+    },
+    {
+        url: `../../assets/images/movin-on-storage/movin-on-storage-center-font-door.jpg`,
+        alt: `Movin' On Storage Center red brick building from the other side of the street`,
+    },
 ];
 
 export const galleryImagesLocation2 = [
