@@ -1,0 +1,40 @@
+
+.header{
+    background-color: hsl(56,30%,50%);
+    color: rgb(66, 107, 64);
+    height: 100px;
+    width:100%;
+}
+.navigations-upper{
+    display:inline-block;
+    
+}   
+.navigation-upper-right{
+    text-align: right;
+     
+}
+.logo{
+    float:left;
+    display:inline-block;
+    padding:8px
+}
+.nav-buttons, .nav-but-bottom {
+    display:inline-block;
+    padding:8px;
+    color: aliceblue;
+}
+.login{
+    display:inline-block;
+    background-color: hsl(59,30%,50%)
+}
+.navigation-upper-right .nav-buttons:hover{
+    // background-color: #111;
+    color: burlywood;
+} 
+.nav-bottom{
+    padding-top: 20px;
+    height: 52px;
+}
+.nav-bottom .nav-but-bottom:hover{
+    color: burlywood;
+}
