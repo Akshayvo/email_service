@@ -27,19 +27,19 @@ export const featuresList = [
 
 export const feature = [
     {
-        path: '../../assets/images/jumbotorn-bottom-images/enviro.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Cuero_Images/jumbotorn-bottom-images/enviro.svg',
         label: 'Convenient Location'
     },
     {
-        path: '../../assets/images/jumbotorn-bottom-images/easy.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Cuero_Images/jumbotorn-bottom-images/easy.svg',
         label: 'Climate Control'
     },
     {
-        path: '../../assets/images/jumbotorn-bottom-images/value.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Cuero_Images/jumbotorn-bottom-images/value.svg',
         label: 'Online Bill Payment'
     },
     {
-        path: '../../assets/images/jumbotorn-bottom-images/safe.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Security_Cuero_Images/jumbotorn-bottom-images/safe.svg',
         label: 'Auto-pay available'
     },
 ];
