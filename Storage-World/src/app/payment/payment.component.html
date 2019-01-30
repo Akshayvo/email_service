@@ -11,14 +11,14 @@
       </div>
       <div class="col-lg-4 vertical-line">
         <h3>How to Login</h3>
-        <p><b>Username:</b>&nbsp;First Initial + Last Name<br>
-        <b>Password:</b>Your gate access code</p>
+        <p><b>Username:</b>&nbsp;If you provided your email address your username is your email. If you do not have an email address it is First Initial + Last Name<br>
+        <b>Password:</b> &nbsp; Your gate access code</p>
         <p><b>Example:</b></p>
         <p>John Smith's code is 1234</p>
-        <p>John's Username: smith<br>
+        <p>John's Username:  john.smith@gmail.com or jsmith<br>
         John's Password: 1234</p>
-        <p>Have questions about your account?<br>
-        <span *ngFor="let contact of contactDetails"><span *ngIf="contact?.id == 1 || contact?.id == 2">{{contact.data}}</span><br>
+        <p><strong> Have questions about your account? <br> Having trouble logging in?</strong> <br>
+        <span *ngFor="let contact of contactDetails"><span *ngIf="contact?.id !== 0">{{contact.data}}</span><br>
       </span>
       </p>
       </div>

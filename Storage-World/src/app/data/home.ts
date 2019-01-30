@@ -26,9 +26,10 @@ export const featuresList = [
 
 export const aboutUs = [
                     {
-                        p: `Storage World has been serving Ham Lake, Blaine, Forest Lake and surrounding communities
-                        for nearly fifty years. As members of the community we understand the value of long-lasting
-                        relationships with our customers and strive to provide the highest quality customer service.`,
+                        p: `Storage World has been serving Ham Lake, Blaine, North Metro, Forest Lake, and
+                            Twin Cities area for nearly fifty years. As members of the community, we understand
+                            the value of long-lasting relationships with our customers and strive to provide
+                            the highest quality customer service.`,
                     },
                     {
                         p: `Our on-premises, professional management team is here to make your moving and self
