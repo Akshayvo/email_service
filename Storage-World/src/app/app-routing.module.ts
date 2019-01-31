@@ -22,7 +22,7 @@ const routes: Routes = [
       url: 'externalUrlRedirectResolver'
   },
   data: {
-      externalUrl: 'https://www.youtube.com'
+      externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJuQ-2v-sYs1IRu1Dm8I6AjOU'
   }},
   { path: '**', component: ErrorComponent }
 ];
