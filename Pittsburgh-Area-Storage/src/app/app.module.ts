@@ -29,6 +29,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { SelectLocationComponent } from './select-location/select-location.component';
 import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
 
 @NgModule({
@@ -65,7 +66,13 @@ import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
     HttpClientModule,
     ],
   providers: [
-    Title
+    Title,
+    {
+      provide: 'externalUrlRedirectResolver',
+      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+          window.location.href = (route.data as any).externalUrl;
+      }
+  }
   ],
   bootstrap: [AppComponent]
 })

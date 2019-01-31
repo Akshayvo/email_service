@@ -52,6 +52,30 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
+  { path: 'review/movin-on-storage', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ8RMQVzTTSIgRb01wdB59bgo'
+    }
+  },
+  { path: 'review/shaler-self', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJM2isvh2NNIgRYjqkBNhmZgk'
+    }
+  },
+  { path: 'review/natrona-heights-self', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ88r5GzG9NIgR8Ljo8DuDurM'
+    }
+  },
   { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'truck-rentals', component: TruckRentalsComponent },
