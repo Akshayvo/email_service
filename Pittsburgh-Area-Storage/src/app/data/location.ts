@@ -208,7 +208,7 @@ export const aboutUsHeadingLocation2 = `About Shaler Self Storage`;
 
 export const aboutUsHeadingLocation3 = `About Natrona Heights`;
 
-export const aboutUsImageLocation1 = `../../assets/images/movin-on-storage/movin-on-storage-center-climate-control.jpg`;
+export const aboutUsImageLocation1 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/movin-on-storage/movin-on-storage-center-climate-control.jpg`;
 
 // tslint:disable-next-line:max-line-length
 export const aboutUsImageLocation2 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/shaler-self-storage/shaler-self-storage-retail-store.jpg`;
