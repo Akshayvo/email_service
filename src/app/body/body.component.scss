@@ -10,26 +10,28 @@
     padding:20px 0 5px 25px;
     // height: 25px;
 }
-.card-button{
-    // display: inline;
-    padding: 0 0 0 25px;
-}
+// .card-button{
+//     width: 100%;
+//     display: inline;
+//     padding: 0 0 0 25px;
+// }
 .preview{
-    padding: 20px 20px 20px 75px
+    padding: 10px 20px 20px 20px
 }
 .preview_button{
-    background-color:rgb(145, 190, 228); /* Green */
+  background-color:rgb(145, 190, 228); /* Green */
   border: none;
   color:white;
-  padding: 15px 32px;
+  padding: 15px 30px;
   text-align: center;
+  font-size: 12px
 }
 .preview_button:hover{
     background-color:#6ba229;
 }
-.price{
-    padding: 0 60px 0 25
-}
+// .price{
+//     padding: 0 60px 0 25
+// }
 .search{
     display: inline-block;
     text-align: center;
@@ -61,11 +63,11 @@
 body{
     background-color: #fafafa
 }
-.row{
-    padding-bottom: 20px;
-}
+// .row{
+//     padding-bottom: 20px;
+// }
 
-.image1{
+.image1,.image5{
     position: relative;
     width:100%;
     // background-color:aquamarine
@@ -84,13 +86,18 @@ body{
     display: block;
     background: rgba(0, 0, 0, .3);
   }
+  .image5:hover .overlay {
+    display: block;
+    background: rgba(252, 246, 246, 0.3);
+  }
   .image1 {
     // position: absolute;
     // width: 500px;
     // height: 300px;
     // left: 0;
   }
-  .button {
+  
+  .button,.button5 {
     position: absolute;
     // width: 500px;
     right:10px;
@@ -108,12 +115,14 @@ body{
     // border: solid 2px white;
     z-index: 1;
   }
-  .container:hover .button {
-    opacity: 1;
-  }
-  .img-over{
-      display: inline
-
+  .button5 a {
+    width: 150px;
+    // padding: 4px;
+    // padding-bottom: 0px;
+    // text-align: center;
+    color: rgb(29, 28, 28);
+    // border: solid 2px white;
+    z-index: 1;
   }
   .button1{
       right:50px
@@ -121,3 +130,13 @@ body{
   .card{
       width:100%
   }
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px
+}
+.card-img{
+    height: 250px;
+    // width:  200px
+
+}
