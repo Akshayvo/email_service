@@ -23,7 +23,7 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { PhotosComponent } from './photos/photos.component';
 import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
-
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +53,12 @@ import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
   ],
   providers: [
     Title,
+    {
+      provide: 'externalUrlRedirectResolver',
+      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+          window.location.href = (route.data as any).externalUrl;
+      }
+    }
   ],
   bootstrap: [AppComponent],
 })

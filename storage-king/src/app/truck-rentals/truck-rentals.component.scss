@@ -1,14 +1,13 @@
 @import "../../styles.scss";
 
 .contentHolder {
-  padding-top: 100px;
+  padding-top: 130px;
   min-height: 87vh;
   margin-bottom: 50px;
 
   .rentals-content {
     padding: 64px;
     background-color: $light;
-    min-height: 644px;
 
     ul {
       padding-left: 17px;
