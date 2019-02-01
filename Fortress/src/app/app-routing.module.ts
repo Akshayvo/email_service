@@ -10,13 +10,20 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'unit-sizer', component: UnitSizerComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
+  { path: 'review', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJmfquuhCwlVQRck1GmIDXsug'
+    }
+  },
   { path: '**', component: ErrorComponent }
 ];
 

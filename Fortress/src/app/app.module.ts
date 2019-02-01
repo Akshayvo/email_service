@@ -21,7 +21,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
-
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +48,13 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
     HttpClientModule,
   ],
   providers: [
-    Title
+    Title,
+    {
+      provide: 'externalUrlRedirectResolver',
+      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+          window.location.href = (route.data as any).externalUrl;
+      }
+    }
   ],
   bootstrap: [AppComponent],
 })
