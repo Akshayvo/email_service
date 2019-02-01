@@ -10,13 +10,20 @@ import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'reserve', component: ReserveComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
+  { path: 'review', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
+    }
+  },
   { path: '**', component: ErrorComponent }
 ];
 
