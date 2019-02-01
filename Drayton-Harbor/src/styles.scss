@@ -66,8 +66,8 @@ body {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: $primaryDark;
-  border-color: $primaryDark;
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
   font-weight: 600;
 }
 
@@ -82,8 +82,8 @@ body {
 .btn-outline-primary:hover,
 .btn-outline-primary:active,
 .btn-outline-primary:focus {
-  background-color: $primaryDark;
-  border-color: $primaryDark;
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
   color: $white !important;
   font-weight: 600;
 }

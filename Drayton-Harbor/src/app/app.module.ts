@@ -21,6 +21,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,12 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
   ],
   providers: [
     Title,
+    {
+      provide: 'externalUrlRedirectResolver',
+      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+          window.location.href = (route.data as any).externalUrl;
+      }
+    }
   ],
   bootstrap: [AppComponent],
 })

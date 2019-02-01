@@ -9,12 +9,19 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'pay-rent', component: PayRentComponent },
+  { path: 'review', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJGak6Yi_BhVQRx866h5uCHvc'
+    }
+  },
   { path: '**', component: ErrorComponent }
 ];
 
