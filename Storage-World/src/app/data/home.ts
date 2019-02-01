@@ -21,6 +21,7 @@ export const featuresList = [
     },
     {
         td1: 'Well Lit Facility',
+        td2: 'Mobile Units Coming Soon'
     }
 ];
 
