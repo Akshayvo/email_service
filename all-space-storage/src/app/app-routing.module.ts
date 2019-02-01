@@ -64,6 +64,38 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
+  { path: 'review/poughkeepsie', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJv-tcSK4_3YkR9RRujwV_wSY'
+    }
+  },
+  { path: 'review/highland', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJbetg0VU93YkRChX3EmDOpGQ'
+    }
+  },
+  { path: 'review/lake-katrine', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ1Z2_VNkI3YkROO9QmOt0upk'
+    }
+  },
+  { path: 'review/pawling', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJVYFs8EBa3YkRGSFGFh1-_-w'
+    }
+  },
   { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
