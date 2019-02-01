@@ -15,8 +15,7 @@ import { DirectionsComponent } from './directions/directions.component';
 import { RentSubComponent } from './rent-sub/rent-sub.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'location/rocky-creek',
     component: LocationComponent,
     children: [
@@ -63,7 +62,30 @@ const routes: Routes = [
       { path: 'barton', component: RentSubComponent },
     ]
   },
-
+  { path: 'review/agricola', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJj88tVVB2m4gRZsbVMWluuFs'
+    }
+  },
+  { path: 'review/rocky-creek', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJUwfhkG51m4gROTD_Wm_bbMY'
+    }
+  },
+  { path: 'review/barton', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJnTxQ_Qx0m4gRebR-ShL8-fo'
+    }
+  },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: ErrorComponent },
