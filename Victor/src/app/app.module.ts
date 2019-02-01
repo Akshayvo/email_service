@@ -29,7 +29,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { RentSubComponent } from './rent-sub/rent-sub.component';
-
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -65,7 +65,13 @@ import { RentSubComponent } from './rent-sub/rent-sub.component';
     HttpClientModule,
     ],
   providers: [
-    Title
+    Title,
+    {
+      provide: 'externalUrlRedirectResolver',
+      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+          window.location.href = (route.data as any).externalUrl;
+      }
+    }
   ],
   bootstrap: [AppComponent]
 })

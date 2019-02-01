@@ -56,6 +56,22 @@ const routes: Routes = [
 
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'review/village', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJhfTao1Qw0YkReZz445UlWPs'
+    }
+  },
+  { path: 'review/mall', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ42TuZU8z0YkRAJdjGzjokBE'
+    }
+  },
   { path: '**', component: ErrorComponent },
 ];
 
