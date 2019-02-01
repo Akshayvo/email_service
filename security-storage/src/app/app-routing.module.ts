@@ -16,6 +16,14 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'payment', component: PaymentComponent },
+  { path: 'review', component: HomeComponent,
+  resolve: {
+      url: 'externalUrlRedirectResolver'
+  },
+  data: {
+      externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJdxECf-bkQoYRQh92ekNC-tU'
+  }
+},
   { path: '**', component: ErrorComponent }
 ];
 
