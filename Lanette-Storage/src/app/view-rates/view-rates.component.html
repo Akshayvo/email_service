@@ -1,0 +1,27 @@
+
+
+<div class="contentHolder">
+  <div class="container pb-5 my-3 padding-top">
+    <h1 class="py-5 text-center">View Our Rates</h1>
+    <div class="row bg-light background-padding">
+      <div class="col-lg-7 px-4 iframe scroll-wrapper">
+        <!-- <div class="iframe-container">    
+          <iframe id="advanced_iframe" name="advanced_iframe" src="https://Lanett.sim.syrasoft.com/UnitAvailability" width="100%"
+            height="900" scrolling="yes" frameborder="0" border="0" allowtransparency="true"></iframe>
+        </div> -->
+        <div class="h-100 text-center">
+         <h2 style="padding: 50% 20%;">Coming Soon!</h2>
+        </div>
+      </div>
+      <div class="col-lg-5 px-4">
+        <h3 class="view-rate-heading">Amenities</h3>
+        <img src="../../assets/images/lanet-storage-units-outdoors.jpg" alt="Outdoor units at Lanett Storage" class="sectionImage" />
+        <div class="pt-2">
+          <p class="view-rate-text text-justify" *ngFor="let para of viewRatesData">
+            {{para.p}}
+          </p>      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

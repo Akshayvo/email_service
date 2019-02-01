@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+  <url>
+    <loc>https://lanettstorage.com/</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lanettstorage.com/view-rates</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lanettstorage.com/unit-sizer</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+    <url>
+    <loc>https://lanettstorage.com/payment</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+    <url>
+    <loc>https://lanettstorage.com/storage-tips</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lanettstorage.com/contact</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+</urlset>
