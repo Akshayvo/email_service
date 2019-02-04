@@ -22,6 +22,7 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,13 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
     HttpClientModule,
   ],
   providers: [
-    Title
+    Title,
+    {
+      provide: 'externalUrlRedirectResolver',
+      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+          window.location.href = (route.data as any).externalUrl;
+      }
+    }
   ],
 })
 export class AppModule { }

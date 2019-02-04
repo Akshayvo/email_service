@@ -67,9 +67,11 @@ body {
   border-radius: 25px;
 }
 
-.btn-primary:hover {
-  background-color: $primaryDark;
-  border-color: $primaryDark;
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
   border-radius: 25px;
 }
 
@@ -82,9 +84,11 @@ body {
   border-radius: 25px;
 }
 
-.btn-outline-primary:hover {
-  background-color: $primaryDark;
-  border-color: $primaryDark;
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
   border-radius: 25px;
   color: #000 !important;
 }
