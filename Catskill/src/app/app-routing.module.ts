@@ -7,6 +7,7 @@ import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { PaymentComponent } from './payment/payment.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ErrorComponent } from './error/error.component';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -24,6 +25,7 @@ const routes: Routes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
     }
   },
+  { path: 'error', component: ErrorHandlerComponent },
   { path: '**', component: ErrorComponent }
 ];
 
