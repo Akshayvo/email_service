@@ -24,9 +24,7 @@ export class ContactComponent implements OnInit {
   completeMessage: string;
   contactForm: FormGroup;
   submitted = false;
-  // mailSent = null;
-
-  error = false;
+  mailSent = false;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -87,9 +85,8 @@ export class ContactComponent implements OnInit {
           this.emailService.sendEmail(body)
             .subscribe((response: any) => {
               if (response.result != null) {
-
+                this.mailSent = true;
               } else {
-                this.error = true;
               }
             }, (err) => {
 
