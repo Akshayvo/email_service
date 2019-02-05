@@ -1,21 +1,18 @@
 export const featuresList = [
     {
-        td1: 'Convenient Location',
-        td2: 'Climate Controlled Units',
+        td1: 'Easy Auto-Pay Available',
+        td2: 'Penske Truck Rentals',
     },
     {
-        td1: 'Surveillance Cameras',
-        td2: 'On-Site Manager',
+        td1: 'Stellar Customer Service',
+        td2: 'Complimentary Online Bill-Pay',
     },
     {
-        td1: 'Office Suites for Lease',
-        td2: 'Online Reservation',
-    },
-    {
-        td1: 'Online Bill Pay',
-        td2: 'Stellar Customer Service'
+        td1: 'Climate & Humidity Controlled Units Available',
+        td2: 'Convenient Location & Accessible',
     },
 ];
+
 
 export const feature = [
     {
