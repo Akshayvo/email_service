@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
+  { path: 'error', component: ErrorHandlerComponent },
   { path: 'review', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
@@ -23,7 +24,6 @@ const routes: Routes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJx7PpHPRp54gR4TqqcKFi2Io'
     }
   },
-  { path: 'error', component: ErrorHandlerComponent },
   { path: '**', component: ErrorComponent }
 ];
 
