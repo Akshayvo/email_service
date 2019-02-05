@@ -42,7 +42,6 @@ export class ErrorHandlerService implements ErrorHandler {
         this.reportError(errorWithContext);
         router.navigate(['/error']);
       }
-    router.navigate(['/error']);
   }
 
   addContextInfo(error: any) {

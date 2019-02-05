@@ -55,6 +55,7 @@ export class ContactComponent implements OnInit {
   }
 
   get f() { return this.contactForm.controls; }
+
   public navigate(location: any) {
     this.router.navigate([location]);
   }
@@ -69,6 +70,7 @@ export class ContactComponent implements OnInit {
 
 
   onSubmit() {
+    this.submitted = true;
 
    // stop here if form is invalid
    if (this.contactForm.invalid) {
