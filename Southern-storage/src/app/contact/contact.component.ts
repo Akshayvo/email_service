@@ -62,7 +62,7 @@ export class ContactComponent implements OnInit {
 
     this.fetchContactDetails();
     this.fetchHours();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,

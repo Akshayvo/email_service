@@ -49,6 +49,6 @@ export class PaymentComponent implements OnInit {
     this.sub = this.route.queryParams.subscribe(params => {
       this.currentTab = params['currentTab'];
     });
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 }
