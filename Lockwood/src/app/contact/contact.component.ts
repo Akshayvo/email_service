@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit {
   completeMessage: string;
   contactForm: FormGroup;
   submitted = false;
-  isSubmitted = false;
+  mailSent = false;
 
   constructor(
     private router: Router,
@@ -76,7 +76,6 @@ export class ContactComponent implements OnInit {
    if (this.contactForm.invalid) {
        return;
    } else {
-     this.isSubmitted = true;
 
      if ( !this.contactForm.value.subject) {
       this.contactForm.value.subject = 'Website Form Submission';
@@ -96,6 +95,7 @@ export class ContactComponent implements OnInit {
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {
+               this.mailSent = true;
              } else {
              }
            }, (err) => {

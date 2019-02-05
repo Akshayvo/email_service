@@ -1,6 +1,6 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -17,6 +17,8 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { ErrorHandlerService } from './services/error-handler.service';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,8 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
     TablesComponent,
     ErrorComponent,
     StorageTipsComponent,
-    AccordionComponent
+    AccordionComponent,
+    ErrorHandlerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -41,6 +44,10 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
   ],
   providers: [
     Title,
+    {
+      provide: ErrorHandler,
+      useClass: ErrorHandlerService
+    },
     {
       provide: 'externalUrlRedirectResolver',
       useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {

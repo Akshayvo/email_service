@@ -3,8 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  errorsMails: ['vinay.g@codeparva.in', 'preetha.ts@codeparva.in'],
+  senderEmail: 'errors@codeparva.in',
+  appId: 'Lockwood'
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
