@@ -31,7 +31,7 @@ export class StorageTipsComponent implements OnInit {
 
   ngOnInit() {
     this.fetchstoragePoints();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     this.fetchstorageTips();
   }
 

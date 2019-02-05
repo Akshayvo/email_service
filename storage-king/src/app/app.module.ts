@@ -2,7 +2,7 @@ import { NgtUniversalModule } from '@ng-toolkit/universal';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -23,6 +23,9 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { PhotosComponent } from './photos/photos.component';
 import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
+import { ErrorHandlerService } from './services/error-handler.service';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -40,6 +43,7 @@ import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
     AccordionComponent,
     PhotosComponent,
     TruckRentalsComponent,
+    ErrorHandlerComponent
   ],
   imports: [
     CommonModule,
@@ -53,6 +57,16 @@ import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
   ],
   providers: [
     Title,
+    {
+      provide: ErrorHandler,
+      useClass: ErrorHandlerService
+    },
+    {
+      provide: 'externalUrlRedirectResolver',
+      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+          window.location.href = (route.data as any).externalUrl;
+      }
+    }
   ],
   bootstrap: [AppComponent],
 })

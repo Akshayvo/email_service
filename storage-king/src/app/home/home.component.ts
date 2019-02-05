@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 
   public fetchContactDetails() {
