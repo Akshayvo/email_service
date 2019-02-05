@@ -31,6 +31,7 @@
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
     "angulartics2": "^6.0.0",
     "core-js": "^2.5.4",
+    "error-stack-parser": "^2.0.2",
     "hads": "^1.7.0",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"

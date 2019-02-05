@@ -13,6 +13,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
 import { RentSubComponent } from './rent-sub/rent-sub.component';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -86,6 +87,7 @@ const routes: Routes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJnTxQ_Qx0m4gRebR-ShL8-fo'
     }
   },
+  { path: 'error', component: ErrorHandlerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: ErrorComponent },
