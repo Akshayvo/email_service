@@ -1,74 +1,70 @@
-export const blurbHeading = `Convenient & Affordable`;
-
-export const blurbContent = `Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-                            Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
-                            libero venenatis faucibus. Nullam quis ante.`;
-
 export const featuresList = [
     {
-        td1: 'Climate Controlled Units',
-        td2: 'Fully Lit Facility'
+        td1: 'Easy Online Reservations',
+        td2: 'Online Bill Pay Available'
     },
     {
-        td1: '24 Hour Video Security',
-        td2: 'Fenced In Facility'
+        td1: 'Pin-Code Activated Gate',
+        td2: 'Stellar Customer Service'
     },
     {
-        td1: 'Superior Customer Service',
-        td2: 'Gated Access'
+        td1: 'Recreational Vehicle Storage',
+        td2: 'Facility Access 24/7/365'
     },
-    {
-        td1: 'Black Top Paving',
-        td2: 'U-Haul Rentals'
-    },
-    {
-        td1: 'Packing Material',
-        td2: 'Tenant Insurance'
-    }
 ];
 
 export const aboutUs = [
     {
-        p: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.`,
+        p: `If you're looking for clean, well maintained and affordable self storage units in or near Johnstown,
+            Cloversville, Amsterdam and Capital Region communities, you've come to the right place!`,
     },
     {
-        p: `Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.`,
+        p: `Our convenient location, competitive prices and 24 hour access offer great value whether
+            you're looking for short or long term self storage. We proudly serve many residential and commercial
+            customers seeking both short and long term self storage solutions.
+        `,
     },
     {
-        p: `In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.`,
-    },
-    {
-        p: `Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-            viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.`,
+        p: `We offer a convenient online reservation and system that makes finding an the right unit for you a breeze!
+            Once you're moved in you have convenient 24/7 access to your account information and payment portal to
+            make your stay with us a convenient one!`,
     },
 ];
 
-export const gettingStarted = `Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
-                               Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
-                               sem quam semper libero, sit amet adipiscing sem neque sed ipsum.`;
+export const gettingStarted = `Are you ready to reserve your unit today?  Use our handy online reservation tool to
+find an affordable unit that fits your needs!`;
 
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/jumbotorn-bottom-images/safe.png`,
-        label: 'Safe & Secure'
+        path: `../../assets/images/stellar.svg`,
+        label: 'Stellar Customer Service',
+        alt: `Customer Service Agent Icon`
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/jumbotorn-bottom-images/easy.png`,
-        label: 'Temperature Controlled Units Available'
+        path: `../../assets/images/24-hours.svg`,
+        label: 'Facility Access 24/7/365',
+        alt: `Icon of a clock and the number 24`
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/jumbotorn-bottom-images/enviro.png`,
-        label: 'Convenient Location'
+        path: `../../assets/images/location.svg`,
+        label: 'Convenient Location',
+        alt: ` Location Pin Icon`
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/jumbotorn-bottom-images/value.png`,
-        label: 'Easy Online Access'
+        path: `../../assets/images/online.svg`,
+        label: 'Online Bill Pay Available',
+        alt: `Icon of a computer screen and cursor`
     },
+];
+
+export const jumbotron = [
+    {
+        h1: `Convenient & Affordable Storage Units`,
+        blurb: `We offer affordable, 24 hour access to a variety of self storage unit sizes secured behind a
+        pin-code accessible gate! Call or reserve online today!`,
+    }
 ];

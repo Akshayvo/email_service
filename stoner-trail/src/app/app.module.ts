@@ -19,6 +19,8 @@ import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { AccordionComponent } from './accordion/accordion.component';
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { AccordionComponent } from './accordion/accordion.component';
     TablesComponent,
     ErrorComponent,
     StorageTipsComponent,
-    AccordionComponent
+    AccordionComponent,
+    UnitSizerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -44,7 +47,13 @@ import { AccordionComponent } from './accordion/accordion.component';
     HttpClientModule,
   ],
   providers: [
-    Title
+    Title,
+    {
+      provide: 'externalUrlRedirectResolver',
+      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+          window.location.href = (route.data as any).externalUrl;
+      }
+    }
   ],
   bootstrap: [AppComponent]
 })

@@ -12,6 +12,7 @@ import { EmailService } from '../services/email.service';
 })
 export class ContactComponent implements OnInit {
 
+  currentActive: any = 'CONTACT US';
   contactDetails: any;
   hours: any;
   name: string;
@@ -22,7 +23,8 @@ export class ContactComponent implements OnInit {
   completeMessage: string;
   contactForm: FormGroup;
   submitted = false;
-  isSubmitted = false;
+  mailSent = false;
+  head: any;
 
   constructor(
     private router: Router,
@@ -32,10 +34,11 @@ export class ContactComponent implements OnInit {
     private formBuilder: FormBuilder
   ) {
     this.meta.addTag({
-      name: 'contact-meta-name',
-      content: `contact-meta-content`
+      name: 'description',
+      content: `Have a question about our self storage units and services or your account?
+      Use this form or call 518-762-7867.`
     });
-    this.titleService.setTitle('Contact-PageTitle');
+    this.titleService.setTitle('Contact Us | Stoner Trail Self Storage');
   }
 
   ngOnInit() {
@@ -70,8 +73,6 @@ export class ContactComponent implements OnInit {
    if (this.contactForm.invalid) {
        return;
    } else {
-     console.log(this.contactForm.value);
-     this.isSubmitted = true;
 
      if ( !this.contactForm.value.subject) {
       this.contactForm.value.subject = 'Website Form Submission';
@@ -87,10 +88,10 @@ export class ContactComponent implements OnInit {
            message: this.completeMessage,
            subject: this.contactForm.value.subject,
          };
-         console.log(body);
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {
+                 this.mailSent = true;
              } else {
              }
            }, (err) => {

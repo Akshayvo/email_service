@@ -1,15 +1,15 @@
 @import "../../styles.scss";
 
+.contact-form {
+  color: $white;
+}
+
+.contact-data {
+  color: $white;
+}
+
 .padding-top {
-  padding-top: 110px;
-}
-
-.btn-outline-primary {
-  color: $primary !important;
-}
-
-.btn-outline-primary:hover {
-  color: $white !important;
+  padding-top: 158px;
 }
 
 .btn-primary {
@@ -22,12 +22,14 @@
 
 .contact-links {
   a {
-    color: black;
+    color: $white;
   }
 }
 
 .contact-map {
-  border: 2px solid white;
+  iframe {
+    border: 2px solid white;
+  }
 }
 
 .contentHolder {

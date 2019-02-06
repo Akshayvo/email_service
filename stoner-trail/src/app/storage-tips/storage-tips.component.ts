@@ -18,10 +18,11 @@ export class StorageTipsComponent implements OnInit {
     private meta: Meta,
   ) {
     this.meta.addTag({
-      name: 'storage-tips-meta-name',
-      content: `storage-tips-meta-content`
+      name: 'description',
+      content: `We understand self storage, learn a thing or two and make your self storage experience easier
+      with these handy storage unit tips!`
     });
-    this.titleService.setTitle('Storage-Tips-PageTitle');
+    this.titleService.setTitle('Self Storage Tips | Stoner Trail Self Storage');
   }
 
   ngOnInit() {

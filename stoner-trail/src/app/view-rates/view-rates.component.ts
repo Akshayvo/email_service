@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { viewRatesData } from '../data/view-rates';
+import { viewRates } from '../data/view-rates';
 
 @Component({
   selector: 'app-view-rates',
@@ -9,26 +9,27 @@ import { viewRatesData } from '../data/view-rates';
 })
 export class ViewRatesComponent implements OnInit {
 
-  viewRatesData: any;
   currentActive: any = 'VIEW RATES';
+  viewRates: any;
 
   constructor(
     private titleService: Title,
     private meta: Meta
   ) {
     this.meta.addTag({
-      name: 'view-rates-name',
-      content: `view-rates-content`
+      name: 'description',
+      content: `Take a moment and view the unit sizes and rates we have available here.
+      Call our management team or use the only reservation form 24/7! `
     });
-    this.titleService.setTitle('View-Rates-PageTitle');
+    this.titleService.setTitle('Storage Units Near Johnstown, NY | Stoner Trail Self Storage');
   }
 
   ngOnInit() {
-    this.fetchViewRatesData();
     window.scrollTo(0, 0);
+    this.fetchViewRates();
+  }
+  public fetchViewRates() {
+    this.viewRates = viewRates;
   }
 
-  public fetchViewRatesData() {
-    this.viewRatesData = viewRatesData;
-  }
 }

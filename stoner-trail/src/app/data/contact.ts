@@ -2,53 +2,40 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '5877 Cauterskill Road, Address, NY 12414',
+        data: '199 County Highway 103, Johnstown NY, 12095',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 1,
-        redirect: 'mailto:mail@yoursite.com',
+        redirect: 'mailto:info@stonertrailstorage.com',
         label: 'Email:',
-        data: 'mail@yoursite.com',
+        data: 'info@stonertrailstorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
         id: 2,
-        redirect: 'tel:5555555555',
+        redirect: 'tel:5187627867',
         label: 'Phone:',
-        data: '(555)555-5555',
+        data: '(518) 762-7867',
         class: 'fas fa-phone mx-2 iconColor',
     }
 ];
 
 export const hours = [
     {
-        label: 'Mon-Fri: ',
-        data: '9:00 am - 6:00 pm'
+        label: 'Office Hours: ',
+        data: 'By Appointment'
     },
     {
-        label: 'Sat: ',
-        data: '9:00 am - 3:00 pm'
+        label: 'Access Hours: ',
+        data: '24/7'
     },
-    {
-        label: 'Sunday: ',
-        data: '8:00 am - 12:00 pm'
-    },
-    {
-        label: 'Facility Access With Pin Code: ',
-        data: '24 hours a day, 7 days a week'
-    }
 ];
 
 export const socialLinks = [
     {
-        label: 'twitter',
-        path: 'https://twitter.com',
-        class: 'fab fa-twitter-square',
-    },
-    {
         label: 'facebook',
-        path: 'https://www.facebook.com',
+        path: 'https://www.facebook.com/stonertrailstorage',
         class: 'fab fa-facebook-square',
     },
 ];

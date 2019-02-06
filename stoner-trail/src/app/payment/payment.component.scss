@@ -6,6 +6,13 @@
   padding: 0 48px;
 }
 
+.login {
+  color: $white;
+  a {
+    color: $white;
+  }
+}
+
 .contentHolder {
   h1 {
     margin-block-end: 0;
@@ -22,11 +29,6 @@
   }
 }
 
-.coming-soon {
-  padding: 25%;
-  font-size: 2rem;
-}
-
 .iframe-container {
   background-color: white;
 }
@@ -36,7 +38,7 @@
 }
 
 .padding-top {
-  padding-top: 110px;
+  padding-top: 158px;
 }
 
 @media only screen and (max-width: 600px) {

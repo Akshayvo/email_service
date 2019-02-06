@@ -17,10 +17,11 @@ export class PaymentComponent implements OnInit {
     private meta: Meta
   ) {
     this.meta.addTag({
-      name: 'pay-ment-name',
-      content: `pay-ment-content`
+      name: 'description',
+      content: `Need to check your balance or pay your rent online? Use our convenient bill pay service!
+      Follow the instructions or call (518) 762-7867`
     });
-    this.titleService.setTitle('Pay-Rent-PageTitle');
+    this.titleService.setTitle('Pay Your Rent Online | Stoner Trail Self Storage');
   }
 
   ngOnInit() {

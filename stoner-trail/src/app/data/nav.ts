@@ -1,11 +1,15 @@
 export const navLinks = [
     {
         label: 'HOME',
-        path: '/home',
+        path: '/',
     },
     {
         label: 'VIEW RATES',
         path: '/view-rates',
+    },
+    {
+        label: 'UNIT SIZER',
+        path: '/unit-sizer'
     },
     {
         label: 'PAY RENT',

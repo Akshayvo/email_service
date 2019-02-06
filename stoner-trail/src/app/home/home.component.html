@@ -7,17 +7,15 @@
       </div>
       <div class="container">
         <div class="jumbotorn-skew-text">
-          <div class="disp">
-            <h2  class="my-4">{{blurbHeading}}</h2>
-            <p class="text-justify">{{blurbContent}}</p>
+          <div class="disp" *ngFor="let jumbotron of jumbotron">
+            <h2  class="my-4">
+              {{jumbotron.h1}}
+            </h2>
+          <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
-          <div class="jumbotorn-button row mr-0">
-            <div class="col-6">
-              <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            </div>
-            <div class="col-6">
-              <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Unit</a></div>
-            </div>
+          <div class="jumbotorn-button">
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Unit</a></div>
           </div>
         </div>
       </div>
@@ -26,7 +24,7 @@
       <div class="container">
         <div class="feature row">
           <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
-            <img [src]="feature?.path" alt="" />
+            <img [src]="feature?.path" [alt]="feature?.alt" height="80px"/>
               <h6 class="feature-text">{{feature.label}}</h6>
           </div>
         </div>
@@ -40,11 +38,11 @@
     <div class="section py-4 m-0">
       <div class="row">
         <div class="col-lg-6 py-3 home-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d727.646228085089!2d-76.336382!3d43.155245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6050b46d0319b1d!2sSyrasoft%2C+LLC!5e0!3m2!1sen!2sus!4v1546341233807" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d235.64908603089862!2d-74.32359953808944!3d42.9848089783153!2m2!1f37.355139155200554!2f44.99577008889989!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x89de8c9a74090a29%3A0x4c14a76ec8a476b0!2sStoner+Trail+Self+Storage!5e1!3m2!1sen!2sus!4v1549298314879" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
         </div>
 
         <div class="col-lg-6 py-3">
-          <div class="mb-4">
+          <div class="mb-4 contact">
             
             <p>
               <span *ngFor="let contact of contactDetails">
@@ -71,10 +69,10 @@
   <div class="section py-5 m-0">
     <div class="row">
       <div class="col-lg-6 py-3">
-        <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/self-storage-units.jpg" width="100%" height="100%" alt="storage unit picture" class="sectionImage">
+        <img src="../../assets/images/stoner-trail-self-storage-outdoor-units.jpg" width="100%" alt="Photos of outdoor self storage units with green doors" class="sectionImage">
       </div>
       <div class="col-lg-6 py-3">
-        <h1 class="heading pb-4">Affordable Self Storage, NY</h1>
+        <h1 class="heading pb-4">Affordable Storage Near Johnston, NY | Stoner Trail Self Storage</h1>
         <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
       </div>
     </div>

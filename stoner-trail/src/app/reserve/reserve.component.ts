@@ -16,9 +16,10 @@ export class ReserveComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Current description works fine.`
+      content: `Reserve your unit in a matter of second with our easy to use
+      online reservation form or call (518)762-7867`
     });
-    this.titleService.setTitle('Reserve A Storage Unit Near Catskill, NY | 12414 - Catskill Self Storage');
+    this.titleService.setTitle('Reserve Your Unit | Stoner Trail Self Storage');
   }
 
   ngOnInit() {

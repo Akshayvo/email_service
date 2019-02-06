@@ -1,120 +1,101 @@
 export const storageTip = [
     {
-        data: `Use smaller boxes for books and heavy items.`
+        data: `Plan your space. Allow for walkways. Place items you may need to access often in the front.`
     },
     {
-        data: `Use larger boxes for lighter items`
+        data: `Make an inventory of your stored items and keep it in a safe place.`
     },
     {
-        data: `Reinforce the bottom of boxes with at least one strip of packing tape.`
+        data: `Use uniform size boxes for ease of stacking. Use sturdy boxes and don't overfill.
+        Boxes are available in our office.`
     },
     {
-        data: `Pack boxes firmly to prevent the contents from shifting.`
+        data: `Place your storage boxes on 2x4s or pallets to guard against dampness.`
     },
     {
-        data: `Seal boxes tightly with wide packing tape.`
+        data: `List contents of boxes on all four sides, number the boxes, and seal with tape.`
     },
     {
-        data: `Pack records and CDs vertically! Don't stack them flat, they will warp or bend 1`
+        data: `Stack lighter boxes on top of heavier boxes.`
     },
     {
-        data: `Place heavier items in the bottom of the box and lighter items on top.`
+        data: `Dishes and other breakables should be wrapped in paper and stored in sturdy boxes.`
+    },
+    {
+        data: `Pictures and mirrors should be wrapped in cardboard, labeled as "fragile" and stacked on end.`
     }
 ];
 
 export const storageTipAccordion = [
     {
         id: 0,
-        label: `Furniture & Appliances`,
+        label: `Furniture`,
         status: true,
         data : [
             {
-                p: `Rent, or purchase an appliance dolly for furniture, major appliances, and stacks of boxes.`
-            },
-            {
-                p: `For major appliances, consult your user\`s manuals for specific moving and safety instructions.`
-            },
-            {
-                p: `Wipe and dry the interiors of all appliances.`
-            },
-            {
-                p: `Tape and or tie down all movable parts.`
-            },
-            {
-                p: `Remember, loading heavy furniture and appliances is not a one-person job. Get help.`
+                p: `If your furniture has drawers, they make excellent storage cases for small knick-knacks,
+                silverware and pictures.`
             },
         ]
     },
     {
         id: '1',
-        label: `Beds`,
+        label: `Appliances`,
         status: false,
         data : [
             {
-                p: `Disassemble the bed frame and mark each piece so you will have an easy time
-                    putting it back together. (Use packing tape to tie rails together.)`
-            },
-            {
-                p: `Wrap mattresses in plastic mattress covers.`
+                p: `Large appliances can make good "packing cases" for blankets, towels, tablecloths and clothes.`
             },
         ]
     },
     {
         id: '2',
-        label: `Books`,
+        label: `Dust Protection`,
         status: false,
         data : [
             {
-                p: `Never pack more than 30 pounds of books in a box.`
-            },
-            {
-                p: `Alternate bindings, and cushion with packing paper.`
+                p: `Cover upholstered furniture to protect from dust.`
             },
         ]
     },
     {
         id: '3',
-        label: `Clothing`,
+        label: `Mattress Storage`,
         status: false,
         data : [
             {
-                p: `Hang clothing from closets in wardrobe boxes or plastic garment bags.`
-            },
-            {
-                p: `Store clothing from dresser drawers in sturdy cardboard boxes.
-                    If the boxes still have some space, consider filling them with bubble wrap.`
+                p: `Mattresses stacked on end should be propped up to prevent them from sagging and becoming lumpy.`
             },
         ]
     },
     {
         id: '4',
-        label: `Artwork, Mirrors & Lamps`,
+        label: `Tables`,
         status: false,
         data : [
             {
-                p: `Wrap in bubble wrap and stack in a large box with bubble wrap or large peanuts.`
-            },
-            {
-                p: `Remove light bulbs, harps, and lamp shades off lamp.`
-            },
-            {
-                p: `Artwork & mirrors should be wrapped in paper, covered with cardboard.`
+                p: `If your table has removable legs it can be broken down for easier transport and storage.`
             },
         ]
     },
     {
         id: '5',
-        label: `Collectables`,
+        label: `Combustibles`,
         status: false,
         data : [
             {
-                p: `Wrap each fragile item separately with bubble wrap and packing tape`
+                p: `Do not store anything combustible (i.e., paint thinner, gasoline, solvents, paint, etc.)`
             },
+        ]
+    },
+    {
+        id: '6',
+        label: `Use a Quality Lock`,
+        status: false,
+        data : [
             {
-                p: `Layer wrapped items in sturdy cardboard box using large peanuts or wadded paper between.`
-            },
-            {
-                p: `Place a final layer of peanuts or wadded paper on top, seal and mark.`
+                p: `Cheap locks rust and do not provide good security for your belongings.
+                Locks are available in our office.`
             },
         ]
     }

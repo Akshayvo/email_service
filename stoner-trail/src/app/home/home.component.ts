@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
-import { featuresList, aboutUs, gettingStarted, feature, blurbContent, blurbHeading} from '../data/home';
+import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -15,12 +15,11 @@ export class HomeComponent implements OnInit {
   hours: any;
   featuresHead: any;
   featuresList: any;
-  blurbHeading: any;
-  blurbContent: any;
   aboutUs: any;
   serviceOffered: any;
   gettingStarted: any;
   feature: any;
+  jumbotron: any;
   currentActive: any = 'HOME';
 
   constructor(
@@ -29,10 +28,11 @@ export class HomeComponent implements OnInit {
     private meta: Meta
   ) {
     this.meta.addTag({
-      name: 'home-meta-name',
-      content: `home-meta-content`
+      name: 'description',
+      content: `Stoner Trail Self Storage offers convenient 24/7 access to your belongings,
+      online payments and a variety of unit sizes for all of your self storage needs.`
     });
-    this.titleService.setTitle('Home-PageTitle');
+    this.titleService.setTitle('Storage Units Near Johnstown, NY | Stoner Trail Self Storage');
   }
 
   public navigate(location: any) {
@@ -45,17 +45,12 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
-    this.fetchBlurbtext();
+    this.fetchJumbotron();
     window.scrollTo(0, 0);
   }
 
   public fetchContactDetails() {
     this.contactDetails = contact;
-  }
-
-  public fetchBlurbtext() {
-    this.blurbContent = blurbContent;
-    this.blurbHeading = blurbHeading;
   }
 
   public fetchHours() {
@@ -73,6 +68,10 @@ export class HomeComponent implements OnInit {
 
   public fetchFeature () {
     this.feature = feature;
+  }
+
+  public fetchJumbotron() {
+    this.jumbotron = jumbotron;
   }
 
 }

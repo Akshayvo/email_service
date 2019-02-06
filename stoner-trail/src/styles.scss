@@ -1,15 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
 //Basic color and font styles
-$primary: #4ecca6;
-$primaryDark: rgb(51, 161, 128);
+$primary: #025c7e;
+$primaryDark: #025c7e;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
-$secondary: #212121;
+$secondary: #8fc641;
 
 $dark: #333;
-$light: #efefef;
+$light: rgba(2, 92, 126, 0.5);
 $white: #fff;
 
 $border: #707070;
@@ -29,20 +29,25 @@ body {
 }
 
 // Different Background colors
+.bg-primary {
+  background: $primary !important;
+}
+
 .bg-secondary {
   background: $secondary !important;
 }
 
 .bg-dark {
-  background: $dark !important;
+  background: $primary !important;
 }
 
 .bg-light {
   background: $light !important;
+  
 }
 
 .bg-translucent {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.7);
   // position: relative;
 }
 
@@ -55,24 +60,26 @@ body {
   background-color: $primary;
   border-color: $primary;
   color: $white !important;
-  border: 2px solid $primary;
+  min-width: 200px;
 }
 
 .btn-primary:hover {
-  background-color: $primaryDark;
-  border-color: $primaryDark;
+  background-color: #034E69;
+  border-color: #034E69;
 }
 
 .btn-outline-primary {
   background-color: transparent;
   border-color: $primary;
   border: 2px solid $primary;
-  color: $white !important;
+  min-width: 200px;
+  color: black !important;
 }
 
 .btn-outline-primary:hover {
   background-color: $primaryDark;
   border-color: $primaryDark;
+  color: $white !important;
 }
 
 .section-headings {
