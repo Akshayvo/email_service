@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .vertical-line {
-  border-left: 1px solid darkgray;
+  border-left: 1px solid $primary;
   padding-left: 48px;
 }
 
@@ -28,6 +28,7 @@
 
 .background-padding {
   padding: 64px;
+  color: $white;
 }
 
 .padding-top {

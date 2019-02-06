@@ -8,7 +8,7 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'tel:5189433003',
+        redirect: 'tel:2563733647',
         label: 'Phone:',
         data: '(256) 373-3647',
         class: 'fas fa-phone mx-2 iconColor',

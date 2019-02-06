@@ -6,7 +6,7 @@ a {
 }
 
 .iconColor {
-  color: $secondary;
+  color: $white;
 }
 
 .contact-header {
@@ -31,10 +31,6 @@ a {
   }
 }
 
-.social :hover {
-  color: $secondary;
-}
-
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
@@ -44,19 +40,19 @@ a {
   }
 
   .nav-link:hover {
-    color: $primary;
+    color: $white;
   }
 
   .nav-link-active {
-    color: $primary;
-    border-bottom: 5px solid $primary;
+    color: $white;
+    border-bottom: 5px solid $secondary;
   }
 
   button {
-    border-color: $dark;
+    border-color: $white;
 
     .iconColor {
-      color: $dark;
+      color: $white;
     }
   }
 

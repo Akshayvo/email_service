@@ -69,6 +69,7 @@ export class ContactComponent implements OnInit {
 
 
   onSubmit() {
+  this.submitted = true;
 
    // stop here if form is invalid
    if (this.contactForm.invalid) {

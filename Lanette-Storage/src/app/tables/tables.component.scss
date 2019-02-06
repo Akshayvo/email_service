@@ -15,11 +15,15 @@ table {
   background: $white;
 }
 
-.color-primary {
-  color: $primary;
+.color-secondary {
+  color: $secondary;
 }
 
 .table-head {
   background: $primary;
   color: $white;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(207,66,84,0.2) !important;
 }

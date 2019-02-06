@@ -37,13 +37,13 @@ export const gettingStarted = `Are you ready to move your belongings or equipmen
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/jumbotron-bottom-images/`,
+        path: `../../assets/images/jumbotron-bottom-images/hand.svg`,
         label: 'Affordable Units'
     },
     {
         // tslint:disable-next-line:max-line-length
         path: `../../assets/images/jumbotron-bottom-images/online-pay.svg`,
-        label: 'Online Bill Pay Available'
+        label: 'Easy Online Bill Pay'
     },
     {
         // tslint:disable-next-line:max-line-length

@@ -1,21 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
 //Basic color and font styles
-$primary: #4582c4;
-$primaryDark: #265485;
+$primary: #3C3B6E;
+$primaryDark: rgb(41, 40, 80);
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
-$secondary: #c8b18b;
-
+$secondary: #CF4254;
+$secondaryDark: rgb(179, 51, 68);
 $dark: #333;
-$light: #f0ebe2;
+$light: rgba(60,59,110, 0.5);
 $white: #fff;
 
 $border: #707070;
 $shadow: #000;
 
-$fontColor: #707070;
+$fontColor: #fff;
 // $primaryFont: 'Roboto';
 $primaryFont: "Lato", sans-serif;
 
@@ -46,7 +46,7 @@ body {
 }
 
 .bg-translucent {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   // position: relative;
 }
 
@@ -62,9 +62,25 @@ body {
   min-width: 200px;
 }
 
-.btn-primary:hover {
-  background-color: $primaryDark;
-  border-color: $primaryDark;
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+  color: $white !important;
+  min-width: 200px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background-color: $secondaryDark !important;
+  border-color: $secondaryDark !important;
 }
 
 .btn-outline-primary {
@@ -72,12 +88,15 @@ body {
   border-color: $primary;
   border: 2px solid $primary;
   min-width: 200px;
-  color: $white !important;
+  color: $primary !important;
 }
 
-.btn-outline-primary:hover {
-  background-color: $primaryDark;
-  border-color: $primaryDark;
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
+  color: $white !important;
 }
 
 .section-headings {
