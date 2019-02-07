@@ -18,7 +18,7 @@ else
 	while true; do
     		read -p "anyhow Do you want to update the url?" yn
     		case $yn in
-        		[Yy]* ) sed -i "s,https://stagingcatskill.syrasoft.com/,$url,g;" $dest_path/$project_name/src/sitemap.xml; break;;
+        		[Yy]* ) sed -i "s,https://stagingstoner-trail.syrasoft.com/,$url,g;" $dest_path/$project_name/src/sitemap.xml; break;;
         		[Nn]* ) exit;;
         		* ) echo "Please answer yes or no.";;
     		esac
