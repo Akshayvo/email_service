@@ -8,16 +8,18 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ErrorComponent } from './error/error.component';
 // import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { ReserveComponent } from './reserve/reserve.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
   { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
+  { path: 'reserve', component: ReserveComponent },
   // { path: 'unit-sizer', component: UnitSizerComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
-  {path: 'review',
+  { path: 'review',
   component: HomeComponent,
   resolve: {
       url: 'externalUrlRedirectResolver'

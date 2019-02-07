@@ -17,14 +17,15 @@
     iframe {
       overflow: auto;
       max-width: 100%;
-      background: $light;
+      color: $white;
+      // background: $light;
     }
   }
 }
 
-.iframe-container {
-  background-color: $light;
-}
+// .iframe-container {
+//   background-color: $light;
+// }
 
 .background-padding {
   padding: 64px;

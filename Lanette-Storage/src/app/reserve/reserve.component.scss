@@ -1,0 +1,17 @@
+@import "../../styles.scss";
+
+.padding-top {
+  padding-top: 100px;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.reserve-block {
+  background: $light;
+
+  .col-md-12 {
+    padding: 64px;
+  }
+}

@@ -19,6 +19,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+import { ReserveComponent } from './reserve/reserve.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
@@ -37,7 +38,8 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
     StorageTipsComponent,
     AccordionComponent,
     UnitSizerComponent,
-    ErrorHandlerComponent
+    ErrorHandlerComponent,
+    ReserveComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
