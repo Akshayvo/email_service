@@ -9,7 +9,6 @@ import { contact } from '../data/contact';
 })
 export class PaymentComponent implements OnInit {
 
-  currentActive: any = 'PAY RENT';
   contactDetails: any;
 
   constructor(

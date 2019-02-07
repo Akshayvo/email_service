@@ -11,7 +11,6 @@ export class StorageTipsComponent implements OnInit {
 
   storageTip: any;
   storageTipAccordion: any;
-  currentActive: any = 'STORAGE TIPS';
 
   constructor(
     private titleService: Title,

@@ -21,6 +21,7 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
     ErrorComponent,
     StorageTipsComponent,
     AccordionComponent,
-    UnitSizerComponent
+    UnitSizerComponent,
+    ErrorHandlerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

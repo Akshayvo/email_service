@@ -9,7 +9,6 @@ import { viewRates } from '../data/view-rates';
 })
 export class ViewRatesComponent implements OnInit {
 
-  currentActive: any = 'VIEW RATES';
   viewRates: any;
 
   constructor(

@@ -8,8 +8,6 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class ReserveComponent implements OnInit {
 
-  currentActive: any = 'RESERVE';
-
   constructor(
     private titleService: Title,
     private meta: Meta

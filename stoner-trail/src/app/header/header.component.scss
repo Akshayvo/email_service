@@ -39,7 +39,16 @@ a {
 }
 
 .navbar {
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);  
+
+  ul {
+    text-align: center;
+    text-align: -webkit-center;
+  }
+
+  li {
+    width: fit-content;
+  }
 
   .nav-link {
     color: $white;
@@ -85,7 +94,7 @@ a {
   .navbar {
     .nav-link {
       text-align: center;
-      padding: 48px;
+      padding: 24px 21px;
     }
   }
 }
@@ -94,5 +103,5 @@ a {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;
-  }
+  } 
 }

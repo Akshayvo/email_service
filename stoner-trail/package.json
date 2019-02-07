@@ -1,5 +1,5 @@
 {
-  "name": "ng-starter-pack",
+  "name": "stoner-trail",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -29,9 +29,12 @@
     "@angular/router": "^7.1.1",
     "@nguniversal/express-engine": "^6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
+    "@types/jest": "^24.0.0",
     "angulartics2": "^6.0.0",
     "core-js": "^2.5.4",
+    "error-stack-parser": "^2.0.2",
     "hads": "^1.7.0",
+    "i": "^0.3.6",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"

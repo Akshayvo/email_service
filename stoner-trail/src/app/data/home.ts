@@ -37,25 +37,25 @@ find an affordable unit that fits your needs!`;
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/stellar.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Stoner_Trail_Images/stellar.svg`,
         label: 'Stellar Customer Service',
         alt: `Customer Service Agent Icon`
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/24-hours.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Stoner_Trail_Images/24-hours.svg`,
         label: 'Facility Access 24/7/365',
         alt: `Icon of a clock and the number 24`
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/location.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Stoner_Trail_Images/location.svg`,
         label: 'Convenient Location',
         alt: ` Location Pin Icon`
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/online.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Stoner_Trail_Images/online.svg`,
         label: 'Online Bill Pay Available',
         alt: `Icon of a computer screen and cursor`
     },

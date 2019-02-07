@@ -103,7 +103,7 @@ export const unitSizer = [
     size: '10\' x 42\'',
     heading: '10\' x 42\' Storage Unit',
     alt: '10\' x 42\' Storage Unit Graphic ',
-    unitImg: '../../assets/images/15x42.png',
+    unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/15x42.png',
     data: `This unit is approximately 400sq feet of space that can store the contents of a large home, including.`,
     amenities: [
       { content: 'Appliances', },

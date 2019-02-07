@@ -20,7 +20,6 @@ export class HomeComponent implements OnInit {
   gettingStarted: any;
   feature: any;
   jumbotron: any;
-  currentActive: any = 'HOME';
 
   constructor(
     private router: Router,
