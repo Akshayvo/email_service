@@ -28,7 +28,9 @@
 }
 
 .contact-map {
-  border: 2px solid white;
+  iframe{
+    border: 2px solid white;
+  }
 }
 
 .contentHolder {
