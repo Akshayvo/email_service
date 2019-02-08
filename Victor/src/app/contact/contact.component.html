@@ -81,9 +81,9 @@
           
           <div class="col-md-4">
             <div class="for-village">
-             <h2> Southern Storage - Agricola</h2>
+             <h2> Victor Self Storage - Mall </h2>
               <div class="py-2">
-                  <span *ngFor="let contact of contactsAgricola; let i = index">
+                  <span *ngFor="let contact of contacts1; let i = index">
                     <span *ngIf = "i !== 0">
                      <b>{{contact.label}}</b> {{contact.data}}<br>
                     </span>
@@ -91,16 +91,16 @@
               </div>
              
               <!--  <span><b> Office: </b></span> <br> -->
-              <span *ngFor="let hour of hoursAgricola">
+              <span *ngFor="let hour of hours1">
                 <b>{{hour.label}}</b>{{hour.data}}<br>
               </span>  
             </div>
 
 
             <div class="for-mall pt-5">
-              <h2> Southern Storage - Rocky Creek</h2>
+              <h2> Victor Self Storage - Village </h2>
               <div class="py-2">
-                  <span *ngFor="let contact of contactsRockyCreek; let i = index">
+                  <span *ngFor="let contact of contacts2; let i = index">
                     <span *ngIf = "i !== 0">
                      <b>{{contact.label}}</b> {{contact.data}}<br>
                     </span>
@@ -108,27 +108,10 @@
               </div>
             </div>
               <!-- <span><b> Office: </b></span> <br> -->
-              <span *ngFor="let hour of hoursRockyCreek">
+              <span *ngFor="let hour of hours2">
                 <b>{{hour.label}}</b>{{hour.data}}<br>
-              </span>  
-            <div class="for-village pt-5">
-                <h2> Southern Storage - Barton</h2>
-                <div class="py-2">
-                    <span *ngFor="let contact of contactsBarton; let i = index">
-                        <span *ngIf = "i !== 0">
-                        <b>{{contact.label}}</b> {{contact.data}}<br>
-                        </span>
-                    </span>
-                </div>
-              
-                <span><b> Office: </b></span> <br>
-                <span *ngFor="let hour of hoursBarton">
-                    <b>{{hour.label}}</b>{{hour.data}}<br>
-                </span>  
-            </div>
-
-
-        </div>
+              </span>
+          </div>
       </div>
   </div>
 

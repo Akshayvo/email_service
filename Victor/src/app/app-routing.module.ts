@@ -17,7 +17,7 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'location/rocky-creek',
+  { path: 'location/mall',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -29,7 +29,7 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/agricola',
+  { path: 'location/village',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -41,50 +41,28 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/barton',
-    component: LocationComponent,
-    children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
-      { path: 'reserveUnit', component: ReserveUnitComponent },
-      { path: 'photos', component: PhotosComponent },
-      { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
-    ]
-  },
-
   { path: 'payment',
     component: PaymentComponent,
     children: [
-      {path: '', redirectTo: 'agricola' , pathMatch: 'full' },
-      { path: 'rocky-creek', component: RentSubComponent },
-      { path: 'agricola', component: RentSubComponent },
-      { path: 'barton', component: RentSubComponent },
+      {path: '', redirectTo: 'mall' , pathMatch: 'full' },
+      { path: 'village', component: RentSubComponent },
+      { path: 'mall', component: RentSubComponent },
     ]
   },
-  { path: 'review/agricola', component: HomeComponent,
+  { path: 'review/village', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJj88tVVB2m4gRZsbVMWluuFs'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJhfTao1Qw0YkReZz445UlWPs'
     }
   },
-  { path: 'review/rocky-creek', component: HomeComponent,
+  { path: 'review/mall', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJUwfhkG51m4gROTD_Wm_bbMY'
-    }
-  },
-  { path: 'review/barton', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJnTxQ_Qx0m4gRebR-ShL8-fo'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ42TuZU8z0YkRAJdjGzjokBE'
     }
   },
   { path: 'error', component: ErrorHandlerComponent },

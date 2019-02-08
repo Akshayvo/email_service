@@ -23,10 +23,9 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We strive to make your storage experience an easy one,
-                so we've done the legwork! Check out these handy self storage tips!`
+      content: ``
     });
-    this.titleService.setTitle('Helpful Self Storage Tips | Southern Storage');
+    this.titleService.setTitle('');
   }
 
   ngOnInit() {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { galleryMall, galleryRockyCreek, galleryDataAgricola, galleryDataRockyCreek } from '../data/galleryImage';
+import { galleryDataLocation1, galleryDataLocation2, galleryLocation1, galleryLocation2 } from '../data/galleryImage';
 import { Router } from '@angular/router';
 
 @Component({
@@ -23,24 +23,24 @@ export class PhotosComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/rocky-creek')) {
-        this.fetchGalleryRockyCreek();
-    } else if (this.router.url.includes('/location/agricola')) {
-      this.fetchGalleryAgicola();
+    if (this.router.url.includes('/location/mall')) {
+        this.fetchGalleryLocation1();
+    } else if (this.router.url.includes('/location/village')) {
+      this.fetchGalleryLocation2();
     }
  }
 
-  public fetchGalleryRockyCreek() {
-    this.galleryImages = galleryRockyCreek;
-    this.galleryData = galleryDataRockyCreek;
-    this.name = 'Rocky Creek';
+  public fetchGalleryLocation1() {
+    this.galleryImages = galleryLocation1;
+    this.galleryData = galleryDataLocation1;
+    this.name = 'Mall';
     this.id = 0;
   }
 
-  public fetchGalleryAgicola() {
-    this.galleryImages = galleryMall;
-    this.galleryData = galleryDataAgricola;
-    this.name = 'Agicola';
+  public fetchGalleryLocation2() {
+    this.galleryImages = galleryLocation2;
+    this.galleryData = galleryDataLocation2;
+    this.name = 'Village';
     this.id = 1;
   }
 

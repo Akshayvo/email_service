@@ -2,9 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsRockyCreek, hoursRockyCreek,
-         contactsAgricola, hoursAgricola,
-         contactsBarton, hoursBarton } from '../data/contact';
+import { contacts1, contacts2, hours1, hours2 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 
@@ -15,21 +13,18 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
-  contactsAgricola: object;
-  contactsRockyCreek: object;
-  contactsBarton: object;
-  hoursRockyCreek: object;
-  hoursAgricola: object;
-  hoursBarton: object;
+  contacts1: object;
+  contacts2: object;
+  hours1: object;
+  hours2: object;
   placeName: string;
   name: string;
   email: any;
   phone: any;
   location: any;
   message: string;
-  places = [ 'Southern Self Storage - Rocky Creek',
-             'Southern Self Storage - Agricola',
-             'Southern Self Storage - Barton' ];
+  places = [ 'Victor Self Storage - Mall',
+             'Victor Self Storage - Village' ];
   receiveremail: string;
   completeMessage: string;
 
@@ -49,10 +44,9 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Do you have a question about our services or your account with Southern Storage?
-                Find the contact information for all of our locations here!`
+      content: ``
     });
-    this.titleService.setTitle('Contact Us | Southern Storage');
+    this.titleService.setTitle('');
   }
 
   ngOnInit() {
@@ -76,15 +70,13 @@ export class ContactComponent implements OnInit {
   get f() { return this.contactForm.controls; }
 
   public fetchContactDetails() {
-    this.contactsRockyCreek = contactsRockyCreek;
-    this.contactsAgricola = contactsAgricola;
-    this.contactsBarton = contactsBarton;
+    this.contacts1 = contacts1;
+    this.contacts2 = contacts2;
   }
 
   public fetchHours() {
-    this.hoursRockyCreek = hoursRockyCreek;
-    this.hoursAgricola = hoursAgricola;
-    this.hoursBarton = hoursBarton;
+    this.hours1 = hours1;
+    this.hours2 = hours2;
   }
 
 onSubmit() {
@@ -95,12 +87,10 @@ onSubmit() {
      return;
  } else {
 
-   if (this.contactForm.value.location === 'Southern Self Storage - Rocky Creek') {
-    this.receiveremail = this.contactsRockyCreek[2].data;
-  } else if (this.contactForm.value.location === 'Southern Self Storage - Agricola') {
-    this.receiveremail = this.contactsAgricola[2].data;
-  } else if (this.contactForm.value.location === 'Southern Self Storage - Barton') {
-    this.receiveremail = this.contactsBarton[2].data;
+   if (this.contactForm.value.location === 'Victor Self Storage - Mall') {
+    this.receiveremail = this.contacts1[2].data;
+  } else if (this.contactForm.value.location === 'Victor Self Storage - Village') {
+    this.receiveremail = this.contacts2[2].data;
   }
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
