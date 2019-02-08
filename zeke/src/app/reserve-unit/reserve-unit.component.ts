@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-reserve',
-  templateUrl: './reserve.component.html',
-  styleUrls: ['./reserve.component.scss']
+  selector: 'app-reserve-unit',
+  templateUrl: './reserve-unit.component.html',
+  styleUrls: ['./reserve-unit.component.scss']
 })
-export class ReserveComponent implements OnInit {
+export class ReserveUnitComponent implements OnInit {
 
   constructor(
     private titleService: Title,

@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .jumbotron {
-  background: url("../../assets/images/zekes-self-storage.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Zeke_Images/zekes-self-storage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -141,6 +141,22 @@ h1 {
 
 @media only screen and (min-width: 1200px) and (max-height: 480px) {
   .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+  .jumbotron-top {
     height: 100vh;
   }
 
@@ -149,25 +165,40 @@ h1 {
   }
 
   .jumbotron-bottom {
-    height: 120px;
+    height: 0;
+  }
+
+  .feature {
+    display: none;
   }
 
   .disp {
-    p {
-      display: none;
-    }
-
-    h2 {
-      font-size: 2rem;
-    } 
+    display: none;
   }
 
-  .feature-icon-style {
-    padding: 12px 24px;
+  .jumbotorn-skew-style {
+    width: 100%;
+    transform: skew(0deg);
+    left: auto;
+    height: 90px;
+    bottom: 0;
+    position: absolute;
+  }
 
-    h6 {
-      font-size: 0.8rem;
+  .jumbotorn-skew-text {
+    width: 100% !important;
+    left: 0;
+    top: auto;
+    bottom: 10px;
+
+    a {
+      font-size: 1.25rem;
+      min-width: 200px;
     }
+  }
+
+  .jumbotorn-button {
+    padding: 10px;
   }
 }
 
@@ -228,6 +259,22 @@ h1 {
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 480px) {
   .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+  .jumbotron-top {
     height: 100vh;
   }
 
@@ -236,28 +283,40 @@ h1 {
   }
 
   .jumbotron-bottom {
-    height: 120px;
+    height: 0;
+  }
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .jumbotorn-skew-style {
+    transform: skew(0deg);
+    width: 100%;
+    left: auto;
+    height: 90px;
+    bottom: 0;
+    position: absolute;
   }
 
   .jumbotorn-skew-text {
+    width: 100%;
+    left: 0;
+    top: auto;
+    bottom: 10px;
 
-    .disp {
-      p {
-        display: none;
-      }
-
-      h2 {
-        font-size: 2rem;
-      }
+    a {
+      font-size: 1.25rem;
+      min-width: 200px;
     }
   }
 
-  .feature-icon-style {
-    padding: 12px 24px;
-
-    h6 {
-      font-size: 0.8rem;
-    }
+  .jumbotorn-button {
+    padding: 10px;
   }
 }
 
@@ -342,6 +401,14 @@ h1 {
       height: 100%;
       display: flex;
     }
+  }
+
+  .jumbotron-bottom {
+    height: 0;
+  }
+
+  .jumbotron-top {
+    height: 100vh;
   }
 
 
@@ -443,6 +510,10 @@ h1 {
     height: 100vh;
   }
 
+  .jumbotron-top {
+    height: 100vh;
+  }
+
   .jumbotron-bottom {
     height: 0;
   }
@@ -489,6 +560,14 @@ h1 {
     height: 100vh;
   }
 
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 0;
+  }
+
   .feature {
     display: none;
   }
@@ -526,6 +605,10 @@ h1 {
     height: 100vh;
   }
 
+  .jumbotron-top {
+    height: 100vh;
+  }
+  
   .feature {
     display: none;
   }
@@ -561,5 +644,9 @@ h1 {
     .jumbotorn-button {
       padding: 15px;
     }
+  }
+
+  .jumbotron-bottom {
+    height: 0;
   }
 }

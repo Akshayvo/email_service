@@ -1,6 +1,6 @@
 {
   "name": "zeke",
-  "version": "0.0.0",
+  "version": "v0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

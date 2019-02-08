@@ -3,11 +3,11 @@ import { Title, Meta } from '@angular/platform-browser';
 import { contact } from '../data/contact';
 
 @Component({
-  selector: 'app-payment',
-  templateUrl: './payment.component.html',
-  styleUrls: ['./payment.component.scss']
+  selector: 'app-pay-rent',
+  templateUrl: './pay-rent.component.html',
+  styleUrls: ['./pay-rent.component.scss']
 })
-export class PaymentComponent implements OnInit {
+export class PayRentComponent implements OnInit {
 
   contactDetails: any;
 

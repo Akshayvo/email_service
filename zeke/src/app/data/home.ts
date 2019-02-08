@@ -45,25 +45,25 @@ experiencing our easy access and stellar customer service today!`;
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/stellar.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Zeke_Images/stellar.svg`,
         label: 'Stellar Customer Service',
         alt: `Customer Service Representative Icon`
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/24-hours.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Zeke_Images/24-hours.svg`,
         label: '24/7 Facility Access',
         alt: `Clock with the Number 24 Next to it Icon`
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/location.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Zeke_Images/location.svg`,
         label: 'Convenient Located',
         alt: ` Location Pin Icon`
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/images/online.svg`,
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Zeke_Images/online.svg`,
         label: 'Easy Online Reservations',
         alt: `Computer Screen Icon`
     },

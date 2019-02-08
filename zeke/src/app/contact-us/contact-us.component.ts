@@ -6,11 +6,11 @@ import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  selector: 'app-contact-us',
+  templateUrl: './contact-us.component.html',
+  styleUrls: ['./contact-us.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class ContactUsComponent implements OnInit {
 
   contactDetails: any;
   hours: any;
