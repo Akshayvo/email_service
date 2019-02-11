@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { aboutUsAgricola, aboutUsBarton, aboutUsRockyCreek,
-          headingRockyCreek, headingAgricola,  headingBarton,
-          aboutUsImageRockyCreek, aboutUsImageAgricola, aboutUsImageBarton } from '../data/location';
+import { aboutUs1, aboutUs2, aboutUsImage1, aboutUsImage2, heading1, heading2 } from '../data/location';
 
 @Component({
   selector: 'app-about-us',
@@ -22,33 +20,24 @@ export class AboutUsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/rocky-creek')) {
-        this.fetchDataRockyCreek();
-    } else if (this.router.url.includes('/location/agricola')) {
-        this.fetchDataAgricola();
-    } else {
-      this.fetchDataBarton();
+    if (this.router.url.includes('/location/mall')) {
+        this.fetchData1();
+    } else if (this.router.url.includes('/location/village')) {
+        this.fetchData2();
     }
   }
 
-  public fetchDataRockyCreek() {
-    this.aboutPara = aboutUsRockyCreek;
-    this.heading = headingRockyCreek;
-    this.name = 'Rocky Creek';
-    this.image = aboutUsImageRockyCreek;
+  public fetchData1() {
+    this.aboutPara = aboutUs1;
+    this.heading = heading1;
+    this.name = 'Mall';
+    this.image = aboutUsImage1;
   }
 
-  public fetchDataAgricola() {
-    this.aboutPara = aboutUsAgricola;
-    this.heading = headingAgricola;
-    this.name = 'Agricola';
-    this.image = aboutUsImageAgricola;
-  }
-
-  public fetchDataBarton() {
-    this.aboutPara = aboutUsBarton;
-    this.heading = headingBarton;
-    this.name = 'Barton';
-    this.image = aboutUsImageBarton;
+  public fetchData2() {
+    this.aboutPara = aboutUs2;
+    this.heading = heading2;
+    this.name = 'Village';
+    this.image = aboutUsImage2;
   }
 }

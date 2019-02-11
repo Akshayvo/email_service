@@ -14,15 +14,15 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'SouthernWebsite'`, async(() => {
+  it(`should have as title 'VictorWebsite'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('SouthernWebsite');
+    expect(app.title).toEqual('VictorWebsite');
   }));
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Southern Website!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Victor Website!');
   }));
 });

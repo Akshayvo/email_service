@@ -21,7 +21,6 @@ export const hours1 = [
     {
         label: 'Mon-Fri: ',
         data: '9:00 am - 5:00 pm',
-        class: 'bg-light'
     },
     {
         label: 'Sat: ',
@@ -30,8 +29,6 @@ export const hours1 = [
     {
         label: 'Sunday: ',
         data: 'Closed',
-        class: 'bg-light'
-
     },
     {
         label: 'Gate Access: ',
@@ -61,7 +58,6 @@ export const hours2 = [
     {
         label: 'Mon-Fri: ',
         data: '9:00 am - 5:00 pm',
-        class: 'bg-light'
     },
     {
         label: 'Sat: ',
@@ -70,7 +66,6 @@ export const hours2 = [
     {
         label: 'Sunday: ',
         data: 'Closed',
-        class: 'bg-light'
     },
     {
         label: 'Gate Access: ',

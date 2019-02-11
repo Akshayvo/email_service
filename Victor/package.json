@@ -1,5 +1,5 @@
 {
-  "name": "Southern-website",
+  "name": "Victor-website",
   "version": "0.1.1",
   "scripts": {
     "ng": "ng",
@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server.js",
-    "build:client-and-server-bundles": "ng build --prod && ng run SouthernWebsite:server",
+    "build:client-and-server-bundles": "ng build --prod && ng run VictorWebsite:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
   "private": true,

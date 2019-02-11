@@ -44,9 +44,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: ``
+      content: `Have a question or concern about self storage units,
+                climate controlled storage units or U-Haul rentals?`
     });
-    this.titleService.setTitle('');
+    this.titleService.setTitle('Contact Victor Self Storage');
   }
 
   ngOnInit() {

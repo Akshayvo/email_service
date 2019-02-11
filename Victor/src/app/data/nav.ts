@@ -5,12 +5,12 @@ export const navLinks = [
         path: '/',
     },
     {
-        label: 'Mall Location',
-        path: '/location/mall',
-    },
-    {
         label: 'Village Location',
         path: '/location/village',
+    },
+    {
+        label: 'Mall Location',
+        path: '/location/mall',
     },
     {
         label: 'Pay Rent',

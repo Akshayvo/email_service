@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { directionAgricola, directionBarton, directionRockyCreek } from '../data/location';
+import { direction1, direction2 } from '../data/location';
 @Component({
   selector: 'app-directions',
   templateUrl: './directions.component.html',
@@ -18,32 +18,23 @@ export class DirectionsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/agricola')) {
-        this.fetchDirectionAgricola();
-    } else if (this.router.url.includes('/location/barton')) {
-      this.fetchDirectionBarton();
-    } else {
-      this.fetchDirectionRockyCreek();
+    if (this.router.url.includes('/location/mall')) {
+        this.fetchDirectionLocation1();
+    } else if (this.router.url.includes('/location/village')) {
+      this.fetchDirectionLocation2();
     }
  }
 
- public fetchDirectionRockyCreek() {
-  this.name = 'Rocky Creek';
-  this.directionPoints = directionRockyCreek;
-  this.directionHeading = `Directions to Southern Storage at Rocky Creek`;
+ public fetchDirectionLocation1() {
+  this.name = 'Mall';
+  this.directionPoints = direction1;
+  this.directionHeading = `Directions to Victor Self Storage - Mall`;
   this.id = 0;
 }
-  public fetchDirectionAgricola() {
-    this.name = 'Agricola';
-    this.directionPoints = directionAgricola;
-    this.directionHeading = `Directions to Southern Storage at Agricola`;
+  public fetchDirectionLocation2() {
+    this.name = 'Village';
+    this.directionPoints = direction2;
+    this.directionHeading = `Directions to Victor Self Storage - Village`;
     this.id = 1;
-  }
-
-  public fetchDirectionBarton() {
-    this.name = 'Barton';
-    this.directionPoints = directionBarton;
-    this.directionHeading = `Directions to Southern Storage at Barton`;
-    this.id = 2;
   }
 }

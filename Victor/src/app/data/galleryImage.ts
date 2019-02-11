@@ -1,33 +1,62 @@
 /* tslint:disable:max-line-length */
 export const galleryLocation1 = [
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-green-buildings.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-buildings.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-roadside.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-roadside-sign.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-10-by-15-units.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-5-by-10-units.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-self-storage-building.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-units.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-10-by-10-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-mall.png'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-night.png'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-units.png'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-access.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-alarm.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-clean-and-bright.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-climate-control.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-drive-up-access.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-easy-lift-doors.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-fire-alarms.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-full-perimeter-fence.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-full-time-on-site-staff.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-gate.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-large-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-locks.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-medium-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-oversized-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-pest-and-rodent-control.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-retail-store.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-security.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-smaller-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-well-lit.jpg'},
 ];
 
 export const galleryLocation2 = [
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-main-building.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-outdoor-units.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-climate-control-entrance.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-climate-controlled.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-inside-unit.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-inside-units.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-outdoor-units.jpg'},
-    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-outdoor-units(1).jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-access.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-alarm.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-clean-and-bright.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-climate-control.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-drive-up-access.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-easy-lift-doors.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-fire-alarms.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-full-perimeter-fence.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-full-time-on-site-staff.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-gate.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-large-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-locks.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-medium-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-oversized-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-pest-and-rodent-control.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-retail-store.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-security.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-smaller-units.jpg'},
+    { url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/SlideShow/victor-self-storage-well-lit.jpg'},
 ];
 
-
-
 export const galleryDataLocation1 = [
-    { p: `The Southern Storage Agricola location offers high quality, conveniently located storage units perfect for your needs! The Agricola location offers both climate control and regular units from 5'x10' through 10'x15'! We pride ourselves on friendly, responsive customer service and extremely convenient online reservations ` }
+    { p: `Our indoor units are accessible via oversized elevator for a fast, and easy moving experience!
+          Our wide selection of convenient unit sizes ensures every storage need under the sun is covered!
+          Need boxes, tape or other moving supplies? Stop into our full retail store during office hours!
+          Our goal is to provide the highest quality customer service and self storage experience!` }
 ];
 
 export const galleryDataLocation2 = [
-    { p: `Our Agricola location is a fenced facility with a number of regular and climate controlled units conveniently located in Agricola. Our management team is ready and waiting to help you get moved in to one of our high quality self storage units. Simply reserve your unit online or call today!`, }
+    { p: `We offer 24/7 closed circuit video recording, and
+          our resident manager performs regular lot checks to ensure your units are undisturbed.
+          You’ll feel safe, and secure with motion activated lighting, and brightly lit interior hallways.
+          We even offer clean, well maintained private restrooms, for the comfort and convenience of our customers.
+          Our first goal is your complete satisfaction during your stay! Call Victor Self Storage today!`, }
 ];

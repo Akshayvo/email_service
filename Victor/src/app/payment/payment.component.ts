@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { WINDOW } from '@ng-toolkit/universal';
 
 
@@ -16,17 +16,13 @@ export class PaymentComponent implements OnInit {
   currentTab: any;
   tabs: any = [
     { id: '0',
-    name: 'Southern Storage - Agricola',
-    path: './agricola'
-  },
-    { id: '1',
-      name: 'Southern Storage - Rocky Creek',
-      path: './rocky-creek'
+      name: 'Victor Self Storage - Mall',
+      path: './mall'
     },
-    { id: '2',
-      name: 'Southern Storage - Barton',
-      path: './barton'
-    }
+    { id: '1',
+      name: 'Victor Self Storage - Village',
+      path: './village'
+    },
   ];
   private sub: any;
 
@@ -39,10 +35,9 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent for any of our 3 locations online! Simply
-                follow the instructions on the page or call our friendly management staff to learn how!`
+      content: `Save time and access your account online with our convenient customer portal.`
     });
-    this.titleService.setTitle('Pay Your Rent Online | Southern Storage');
+    this.titleService.setTitle('Pay Your Rent Online | Victor Self Storage');
   }
 
   ngOnInit() {

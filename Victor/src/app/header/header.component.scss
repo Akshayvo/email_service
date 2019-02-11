@@ -16,7 +16,7 @@ a {
   }
 
   button {
-    border: 1px $dark solid;
+    border: 1px #efefef solid;
     margin-right: 20px;
   }
 
@@ -26,12 +26,12 @@ a {
 }
 
 .nav-link {
-  color: $dark !important;
+  color: $white !important;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 18px;
   padding-top: 25px;
   padding-bottom: 25px;
-  transition: none;
+  transition: none !important;
 }
 
 .nav-link:hover {
@@ -39,7 +39,7 @@ a {
 }
 
 .nav-link-active {
-  border-bottom: 5px $primary solid;
+  border-bottom: 5px $border solid;
   color: $primary;
 }
 

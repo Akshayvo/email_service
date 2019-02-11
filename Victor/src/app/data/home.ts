@@ -1,37 +1,36 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: '24/7 Access at All Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/jumbotron-bottom-images/24-hours.svg',
+        label: 'Safe and Secure',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/safe.png',
     },
     {
-        label: '3 Convenient Location',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/jumbotron-bottom-images/placeholder.svg',
+        label: '2 Convenient Location',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/location.png',
     },
     {
-        label: 'Fenced Facilities Available',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/jumbotron-bottom-images/fence.svg',
+        label: 'Water, Fire & Pest Protection',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/bestProtection.png',
     },
     {
-        label: 'Easy Online Bill Pay',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/jumbotron-bottom-images/online-pay.svg',
+        label: 'Easy & Hassle-Free',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/easy.png',
     },
 ];
 
 export const serviceOffered = [
     {
-        p: `Southern Storage has three locations serving Lucedale, Vernal, Agricola, and the surrounding
-            communities with clean, affordable self storage units. We offer both regular and climate
-            controlled units in a variety of sizes certain to suit your needs.`,
+        p: `Victor Self Storage has served Victor, Mendon, Farmington,
+            and the surrounding communities with high quality, affordable units in a wide variety of convenient sizes.
+            Our full perimeter fence, 24/7 recording video cameras, unique access codes, and theft-proof cylinder locks,
+            are just a few of the many features we have in place to protect your belongings.`,
     },
     {
-        p: `Many of our units are drive-up to make your self storage experience a fast and easy one!
-            All of our locations offer 24/7 access and easy online reservations plus bill pay! Our goal
-            is to give you the most convenient storage unit experience possible!`,
-    },
-    {
-        p: `Our friendly and knowledgeable staff monitor and maintain our facilities while
-            providing top notch customer service ready to answer your storage questions or access your account!`,
+        p: `Both the Village, and Mall locations offer 24/7 access, motion activated interior lights,
+            a well stocked retail store with all of the tape, boxes,
+            and you will need to make your moving experience a successful one!
+            Our full time, on-site staff maintain the properties to provide both a clean experience,
+            and an extra layer of security for your benefit.`,
     },
 ];
 

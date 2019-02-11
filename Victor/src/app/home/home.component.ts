@@ -29,9 +29,10 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: ``
+      content: `Victor Self Storage offers a wide variety of self storage units with the
+      security, convenience, and stellar customer service you expect, all at an affordable price! Reserve today`
     });
-    this.titleService.setTitle('');
+    this.titleService.setTitle('Storage Units Near Victor, NY, 14564 | Victor Self Storage');
   }
 
   ngOnInit() {

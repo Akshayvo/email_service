@@ -12,6 +12,7 @@ import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 import { RentSubComponent } from './rent-sub/rent-sub.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
@@ -27,6 +28,7 @@ const routes: Routes = [
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
+      { path: 'reviews', component: ReviewsComponent },
     ]
   },
   { path: 'location/village',
@@ -39,14 +41,15 @@ const routes: Routes = [
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
+      { path: 'reviews', component: ReviewsComponent },
     ]
   },
   { path: 'payment',
     component: PaymentComponent,
     children: [
       {path: '', redirectTo: 'mall' , pathMatch: 'full' },
-      { path: 'village', component: RentSubComponent },
       { path: 'mall', component: RentSubComponent },
+      { path: 'village', component: RentSubComponent },
     ]
   },
   { path: 'review/village', component: HomeComponent,

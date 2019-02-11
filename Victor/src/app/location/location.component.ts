@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { contacts1, contacts2, hours1, hours2 } from '../data/contact';
-import { tabs, tabsBarton } from '../data/location';
+import { tabs } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 
@@ -27,7 +27,9 @@ export class LocationComponent implements OnInit {
     private router: Router,
     private titleService: Title,
     private meta: Meta,
-  ) {}
+  ) {
+    this.titleService.setTitle('Storage Units Near Victor, NY, 14564 | Victor Self Storage');
+  }
 
   ngOnInit() {
     window.scrollTo(0, 0);
@@ -48,9 +50,9 @@ export class LocationComponent implements OnInit {
 
   public navigateToPayment() {
     if ( this.id === 0 ) {
-      this.router.navigate(['/payment/mall'], { queryParams: { currentTab: '' }});
+      this.router.navigate(['/payment/mall'], { queryParams: { currentTab: 'Victor Self Storage - Mall' }});
     } else if ( this.id === 1 ) {
-      this.router.navigate(['/payment/village'], { queryParams: { currentTab: '' }});
+      this.router.navigate(['/payment/village'], { queryParams: { currentTab: 'Victor Self Storage - Village' }});
     }
    }
 
