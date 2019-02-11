@@ -15,13 +15,20 @@ export const contact = [
     },
     {
         id: 2,
+        redirect: 'tel:2563733647',
+        label: 'Phone:',
+        data: '(334) 559-9500 - Text Messages Accepted',
+        class: 'fas fa-phone mx-2 iconColor',
+    },
+    {
+        id: 3,
         label: 'Address:',
         data: '555 S 15th Street, Lanett, AL 36863',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
-        id: 3,
-        label: 'Office Address:',
+        id: 4,
+        label: 'Mailing Address:',
         data: '11003 County Road 34, Dadeville, AL 36853',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
