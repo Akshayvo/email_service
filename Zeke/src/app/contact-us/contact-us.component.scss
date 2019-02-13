@@ -61,6 +61,12 @@ label {
   font-size: 0.875rem;
 }
 
+.close {
+  span {
+    float: right;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .contact-butoon {

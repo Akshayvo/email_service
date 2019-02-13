@@ -67,7 +67,7 @@ body {
   color: #000 !important;
 }
 
-.btn-primary:hover {
+.btn-primary:hover:not(.disabled) {
   background-color: $primaryDark;
   border-color: $primaryDark;
 }
@@ -86,7 +86,7 @@ body {
   color: black !important;
 }
 
-.btn-outline-primary:active {
+.btn-outline-primary:active:not(.disabled) {
   background-color: $primary;
   border-color: $primary;
   color: black !important;
