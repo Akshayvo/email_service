@@ -6,14 +6,13 @@ import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
 import { contactUs } from '../data/blurb';
 
-@Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
-})
-export class ContactComponent implements OnInit {
 
-  currentActive: any = 'CONTACT';
+@Component({
+  selector: 'app-contact-us',
+  templateUrl: './contact-us.component.html',
+  styleUrls: ['./contact-us.component.scss']
+})
+export class ContactUsComponent implements OnInit {
   contactDetails: any;
   hours: any;
   name: string;
@@ -27,6 +26,7 @@ export class ContactComponent implements OnInit {
   submitted = false;
   isSubmitted = false;
   contactUs: any;
+  mailSent = false;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -37,10 +37,9 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Are you looking for more information about Scotia Self Storage and our array of
-      convenient self storage options?Call  (518) 382-0218 or click here for our contact information!`
+      content: `Have a question about our services or your account? Use our handy form or call today!`
     });
-    this.titleService.setTitle('Contact Scotia Self Storage');
+    this.titleService.setTitle('Contact Us | Exit 120 Self Storage');
   }
 
   ngOnInit() {
@@ -79,34 +78,31 @@ export class ContactComponent implements OnInit {
    if (this.contactForm.invalid) {
        return;
    } else {
-     this.isSubmitted = true;
+    if ( !this.contactForm.value.subject) {
+      this.contactForm.value.subject = 'Website Form Submission';
+    }
      this.receiveremail = this.contactDetails[1].data;
 
-         this.completeMessage = `<strong>Phone: </strong> ${this.contactForm.value.phone}, <br/>
-                                <strong>Message: </strong> ${this.contactForm.value.message}`;
-
-         if (!this.contactForm.value.subject) {
-          this.contactForm.value.subject = 'Website Contact Form';
-         }
+     this.completeMessage = `<strong>Phone: </strong> ${this.contactForm.value.phone}, <br/>
+     <strong>Message: </strong> ${this.contactForm.value.message}`;
 
          const body = {
            name: this.contactForm.value.name,
            email: this.contactForm.value.email,
            receiveremail: this.receiveremail,
            message: this.completeMessage,
-           subject: this.contactForm.value.subject
+           subject: this.contactForm.value.subject,
          };
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {
-
+                 this.mailSent = true;
              } else {
-
              }
            }, (err) => {
-
            });
          this.submitted = false;
+         // MailService(body);
          this.contactForm.reset();
    }
  }

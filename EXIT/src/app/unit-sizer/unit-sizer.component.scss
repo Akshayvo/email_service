@@ -44,7 +44,9 @@
 }
 
 .unit-sizer-border {
+  // background-color: $primary;
   border: 1px solid $primary;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .content-Holder {
@@ -72,7 +74,7 @@
     }
 
     .active-unit {
-      color: #ffde03;
+      color: $primary;
       font-size: 1.2rem;
     }
   }
@@ -113,7 +115,7 @@
 
     li::before {
       content: "• ";
-      color: #ffde03;
+      color: $primary;
       padding-right: 10px;
     }
   }
@@ -222,7 +224,7 @@
 
   .unit-dimention {
     .active-unit {
-      color: #ffde03;
+      color: $primary;
       font-size: 1.1rem;
     }
   }

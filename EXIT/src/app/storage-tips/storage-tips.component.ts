@@ -22,10 +22,9 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Whether you're storing a closet full of out of season clothes or an entire home during a move
-      Scotia Self Storage has storage unit options for you! Follow these `
+      content: `Use these helpful hints to make your storage experience a breeze!`
     });
-    this.titleService.setTitle('Self Storage Tips for Scotia Self Storage');
+    this.titleService.setTitle('Storage Tips | Exit 120 Self Storage');
   }
 
   ngOnInit() {

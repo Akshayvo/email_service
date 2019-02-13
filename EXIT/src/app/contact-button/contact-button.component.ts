@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailService } from '../services/email.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { contact, hours, socialLink } from '../data/contact';
+import { contact, hours } from '../data/contact';
 
 @Component({
   selector: 'app-contact-button',
@@ -21,9 +21,8 @@ export class ContactButtonComponent implements OnInit {
   completeMessage: string;
   contactForm: FormGroup;
   submitted = false;
-  isSubmitted = false;
-  socialLink: any;
   subject: string;
+  mailSent = false;
 
   constructor(
     private emailService: EmailService,
@@ -33,7 +32,6 @@ export class ContactButtonComponent implements OnInit {
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
-    this.fetchsocialLink();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -54,10 +52,6 @@ export class ContactButtonComponent implements OnInit {
     this.hours = hours;
   }
 
-  public fetchsocialLink() {
-    this.socialLink = socialLink;
-  }
-
   onSubmit() {
     this.submitted = true;
 
@@ -65,7 +59,7 @@ export class ContactButtonComponent implements OnInit {
    if (this.contactForm.invalid) {
        return;
    } else {
-     this.isSubmitted = true;
+
      this.receiveremail = this.contactInfo[1].data;
 
          this.completeMessage = `<strong>Phone: </strong> ${this.contactForm.value.phone}, <br/>
@@ -85,7 +79,7 @@ export class ContactButtonComponent implements OnInit {
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {
-
+              this.mailSent = true;
              } else {
 
              }

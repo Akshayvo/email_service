@@ -3,7 +3,8 @@ import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
-import { featuresList, aboutUs, feature } from '../data/home';
+import { featuresList, aboutUs, feature, gettingStarted } from '../data/home';
+import { jumbotronHome } from '../data/blurb';
 
 @Component({
   selector: 'app-home',
@@ -17,8 +18,8 @@ export class HomeComponent implements OnInit {
   featuresList: any;
   aboutUs: any;
   feature: any;
-  currentActive: any = 'HOME';
-
+  gettingStarted: string;
+  jumbotronHome: any;
 
   constructor(
     private router: Router,
@@ -27,10 +28,10 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We are Scotia's premiere self storage facility, with a wide variety of self storage unit sizes,
-                and stellar customer service, all at an affordable price!`
+      content: `Are you in need of clean, affordable self storage for your belongings, equipment or vehicle?
+      Exit 120 Self Storage has you covered!`
     });
-    this.titleService.setTitle('Affordable Storage Units Near Scotia, NY, 12302 | Scotia Storage');
+    this.titleService.setTitle('Affordable Self Storage Units | Exit 120 Self Storage');
   }
 
   public navigate(location: any) {
@@ -60,6 +61,8 @@ export class HomeComponent implements OnInit {
 
   public fetchStaticContent() {
     this.aboutUs = aboutUs;
+    this.gettingStarted = gettingStarted;
+    this.jumbotronHome = jumbotronHome;
   }
 
   public fetchFeature() {

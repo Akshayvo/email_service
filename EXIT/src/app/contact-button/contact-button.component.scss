@@ -24,6 +24,12 @@
 }
 
 
+.close {
+  span {
+    float: right;
+  }
+}
+
 .socialLink {
   a {
     color: $primary;

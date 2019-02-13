@@ -27,12 +27,12 @@ a {
   }
 
   .nav-link:hover {
-    color: $primary;
+    color: $white;
   }
 
   .nav-link-active {
-    color: $primary;
-    border-bottom: 1px solid $primary;
+    color: $white;
+    border-bottom: 2px solid $primary;
   }
 
   button {
@@ -88,5 +88,12 @@ a {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  img {
+    height: 50px;
   }
 }

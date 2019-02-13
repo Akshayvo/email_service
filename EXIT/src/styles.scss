@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 //Basic color and font styles
-$primary: #ffde03;
-$primaryDark: #fbc02d;
+$primary: #4170EF;
+$primaryDark: #1d3679;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
@@ -54,6 +54,9 @@ body {
   background: $dark-background;
 }
 
+.bg-custom {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 // Content Holder Styles
 .contentHolder {
   min-height: 94vh;
@@ -62,7 +65,7 @@ body {
 .btn-primary {
   background-color: $primary;
   border-color: $primary;
-  color: black !important;
+  color: $white !important;
   min-width: 200px;
   border-radius: 25px;
 }
@@ -76,7 +79,7 @@ body {
 .btn-outline-primary {
   background-color: transparent;
   border-color: $primary;
-  border: 1px solid $primary;
+  border: 2px solid $primary;
   min-width: 200px;
   color: $white !important;
   border-radius: 25px;
@@ -86,7 +89,7 @@ body {
   background-color: $primaryDark;
   border-color: $primaryDark;
   border-radius: 25px;
-  color: #000 !important;
+  color: $white !important;
 }
 
 .section-headings {

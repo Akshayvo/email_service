@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .jumbotron {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/scotia-self-storage-hero.jpg");
+  background: url("../../assets/exit-120-self-storage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -47,7 +47,7 @@
 }
 
 .we-provide {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/jumbotorn.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/EXIT_Images/jumbotorn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -56,7 +56,7 @@
   text-align: center;
 
   .heading {
-    border-bottom: 1px solid $primary;
+    border-bottom: 2px solid $primary;
     width: 300px;
     margin: auto;
   }
@@ -87,7 +87,7 @@
 
 .locate-us {
   .heading {
-    border-bottom: 1px solid $primary;
+    border-bottom: 2px solid $primary;
     width: 300px;
     margin: auto;
   }
@@ -153,9 +153,25 @@
 
 .about-us {
   .heading {
-    border-bottom: 1px solid $primary;
-    width: 250px;
+    border-bottom: 2px solid $primary;
+    width: 600px;
     margin: auto;
+  }
+}
+
+.getting-started {
+  background: rgba(0, 0, 0, 0.8);
+  color: $white;
+  text-align: center;
+
+  .heading {
+    border-bottom: 2px solid $primary;
+    width: 300px;
+    margin: auto;
+  }
+
+  .getting-started-margin-top {
+    margin-top: 64px;
   }
 }
 
@@ -334,7 +350,21 @@
     h1 {
       font-size: 3rem;
     }
+
+    .we-provide, .about-us, .locate-us, .getting-started {
+      .heading {
+        width: auto;
+      }
+    }
+   
   }
+
+  .we-provide, .about-us, .locate-us, .getting-started {
+    .heading {
+      width: auto;
+    }
+  }
+ 
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 480px) {
@@ -372,6 +402,13 @@
     background-attachment: unset;
     background-position: center top;
   }
+
+  .we-provide, .about-us, .locate-us, .getting-started {
+    .heading {
+      width: auto;
+    }
+  }
+ 
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
@@ -379,6 +416,12 @@
     background-attachment: unset;
     background-position: center top;
   }
+
+ .we-provide, .about-us, .locate-us, .getting-started {
+   .heading {
+     width: auto;
+   }
+ }
 
   .we-provide {
     background-attachment: unset;
@@ -431,6 +474,13 @@
       text-align: left;
     }
   }
+
+  .we-provide, .about-us, .locate-us, .getting-started {
+    .heading {
+      width: auto;
+    }
+  }
+ 
 }
 
 @media only screen and (max-width: 600px) and (min-width: 481px) and (max-height: 590px) and (min-height: 481px) {
@@ -483,6 +533,13 @@
       text-align: left;
     }
   }
+
+  .we-provide, .about-us, .locate-us, .getting-started {
+    .heading {
+      width: auto;
+    }
+  }
+ 
 }
 
 @media only screen and (max-width: 600px) and (min-width: 481px) and (max-height: 480px) {
@@ -532,6 +589,13 @@
       text-align: left;
     }
   }
+
+  .we-provide, .about-us, .locate-us, .getting-started {
+    .heading {
+      width: auto;
+    }
+  }
+ 
 }
 
 @media only screen and (max-width: 480px) and (min-height: 801px) {
@@ -578,6 +642,13 @@
       text-align: left;
     }
   }
+
+  .we-provide, .about-us, .locate-us, .getting-started {
+    .heading {
+      width: auto;
+    }
+  }
+ 
 }
 
 @media only screen and (max-width: 480px) and (max-height: 800px) and (min-height: 569px) {
@@ -628,6 +699,13 @@
       text-align: left;
     }
   }
+
+  .we-provide, .about-us, .locate-us, .getting-started {
+    .heading {
+      width: auto;
+    }
+  }
+ 
 }
 
 @media only screen and (max-width: 480px) and (max-height: 568px) and (min-height: 420px) {
@@ -679,6 +757,13 @@
   .arrow {
     display: none;
   }
+
+  .we-provide, .about-us, .locate-us, .getting-started {
+    .heading {
+      width: auto;
+    }
+  }
+ 
 }
 
 @media only screen and (max-width: 480px) and (max-height: 419px) {
@@ -729,4 +814,11 @@
       width: auto;
     }
   }
+
+  .we-provide, .about-us, .locate-us, .getting-started {
+    .heading {
+      width: auto;
+    }
+  }
+ 
 }

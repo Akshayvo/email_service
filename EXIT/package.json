@@ -1,5 +1,5 @@
 {
-  "name": "scotia",
+  "name": "EXIT",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server.js",
-    "build:client-and-server-bundles": "ng build --prod && ng run scotia:server",
+    "build:client-and-server-bundles": "ng build --prod && ng run EXIT:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
   "private": true,
@@ -29,9 +29,13 @@
     "@ng-toolkit/universal": "^1.1.47",
     "@nguniversal/express-engine": "^6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
+    "@types/jest": "^24.0.3",
+    "@types/mocha": "^5.2.5",
     "angulartics2": "^6.0.0",
     "core-js": "^2.5.4",
+    "error-stack-parser": "^2.0.2",
     "hads": "^1.7.0",
+    "i": "^0.3.6",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"
   },

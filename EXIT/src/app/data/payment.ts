@@ -34,7 +34,7 @@ export const payment = [
                     data: `(518)382-0218`,
                 },
                 {
-                    data: `ss@scotiastorage.com`
+                    data: `ss@EXITstorage.com`
                 },
         ],
     }

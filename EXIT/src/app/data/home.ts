@@ -1,56 +1,64 @@
 export const featuresList = [
     {
-        li: `Pin-Code Activated Gates`,
+        li: `Cold Storage Available`,
     },
     {
-        li: `Closed Circuit Security Cameras`,
+        li: `Easy Online Reservations`,
     },
     {
-        li: `24/7 Unit Access`,
+        li: `Convenient Location`,
     },
     {
-        li: `Indoor Units Available`,
+        li: `Online Bill-Pay Service`,
     },
     {
-        li: `Elevator Access To 2nd Floor`,
+        li: `Wide Variety of Unit Sizes`,
     },
     {
-        li: `Kiosk  Available 24/7`,
+        li: `Locally Owned & Operated`,
     },
 ];
 
 export const feature = [
     {
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/feature/convenient-location.svg',
-        label: 'CONVENIENT LOCATION'
+        path: '../../assets/location.svg',
+        label: 'Boat and Vehicle Storage',
+        alt: 'Icon art displaying boat and motorcycle',
     },
     {
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/feature/cctv.svg',
-        label: 'CLOSED CIRCUIT SECURITY CAMERAS'
+        path: '../../assets/location.svg',
+        label: ' Conveniently Located',
+        alt: ''
     },
     {
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/feature/online-bill.svg',
-        label: 'ONLINE BILL PAYMENT'
+        path: '../../assets/online.svg',
+        label: 'Online Reservation & Bill Pay',
+        alt: 'Icon art displaying a screen with cursor'
     },
     {
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/feature/24-hours.svg',
-        label: '24/7 ACCESS'
+        path: '../../assets/24-hours.svg',
+        label: '24 Hour Facility Access',
+        alt: 'Icon art displaying clock hands and the number 24'
     },
 ];
 
 export const aboutUs = [
     {
-        p: `Since 1983, Scotia Storage has been serving Scotia, Schenectady, Rotterdam, and the surrounding communities.
-            Our stellar customer service,
-            and round the clock gate and kiosk access are sure to make your storage unit experience a convenient one! `,
+        p: `We are conveniently located 8 minutes from both Waterville and Augusta on the corner of the Middle
+        and Lyons Road in Sidney, less than 1 mile from Exit 120 off Interstate 95. Since 2005,
+        Exit 120 Self Storage has been providing the lowest cost self storage in the Central Maine Area.`,
     },
     {
-        p: `Our units are used by both residential users to make their limited space go just a bit further,
-            and by commercial users who have equipment or inventory that is more convenient to store off-site.`,
+        p: `Exit 120 Self Storage services Sidney, Augusta, Oakland, Waterville and the surrounding
+        communities with top-notch customer service, convenient 24 hour access and online bill pay.`,
     },
     {
-        p: `Your safety, and the protection of your belongings is our #1 concern, which is why we have 24 hour closed
-            circuit video and units secured behind a pin-code activated gate!`,
+        p: `We are an ideal place to store your car, boat or motorcycle through the off-season!
+        Exit 120 Self Storage also caters to military personnel and college students! Whether you just need a little
+        extra space for a couple of months or if you are searching for long term storage, Exit 120 Self Storage has
+        something to offer!`,
     },
 ];
 
+export const gettingStarted = `Are you ready to get started with Exit 120 Self Storage? Simply
+click below and fill out our contact form! A member of our team will reach out promptly!`;

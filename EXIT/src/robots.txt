@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://scotiastorage.com/sitemap.xml
+Sitemap: https://exit120.com/sitemap.xml
 User-agent: *
 Disallow:

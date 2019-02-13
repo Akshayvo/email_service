@@ -1,7 +1,7 @@
 export const navLinks = [
     {
         label: 'HOME',
-        path: '/home',
+        path: '/',
     },
     {
         label: 'VIEW RATES',
@@ -21,6 +21,6 @@ export const navLinks = [
     },
     {
         label: 'CONTACT US',
-        path: '/contact'
+        path: '/contact-us'
     },
 ];

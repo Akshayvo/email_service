@@ -21,10 +21,10 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `View our wide selection of affordable self storage units, from closet sized 4'x8'
-      units to our oversized 24'x30' garage units.`
+      content: `Check out our affordable self storage unit pricing right here! We offer the lowest in
+      the Central Maine area!`
     });
-    this.titleService.setTitle('Storage Units Near Scotia, NY, 12302 | View Rates');
+    this.titleService.setTitle('View Unit Rates | Exit 120 Self Storage');
   }
 
   ngOnInit() {

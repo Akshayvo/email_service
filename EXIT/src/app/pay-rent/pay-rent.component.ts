@@ -23,9 +23,10 @@ export class PayRentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent online, quickly and conveniently with our online bill pay service!`
+      content: `Want to pay your rent online 24/7/365? Use the instructions on this page to log into your
+      account or call  (207) 547 -5200`
     });
-    this.titleService.setTitle('Pay Rent | Scotia Storage, Scotia, NY, 12302');
+    this.titleService.setTitle('Pay Rent Online');
   }
 
   ngOnInit() {
