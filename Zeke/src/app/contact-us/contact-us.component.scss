@@ -1,0 +1,103 @@
+@import "../../styles.scss";
+
+.contact-form {
+  color: $white;
+}
+
+h1 {
+  color: $white;
+}
+.contact-data {
+  color: $white;
+}
+
+.padding-top {
+  padding-top: 110px;
+}
+
+.btn-primary {
+  margin-left: 10px;
+}
+
+.background-padding {
+  padding: 64px;
+}
+
+.contact-links {
+  a {
+    color: $white;
+  }
+}
+
+.contact-map {
+  iframe {
+    border: 2px solid white;
+  }
+}
+
+.contentHolder {
+  display: flex;
+  h1 {
+    margin-block-end: 0;
+  }
+}
+
+
+.contact-butoon {
+  .btn-primary {
+    min-width: 140px;
+  }
+
+  .btn-outline-primary {
+    min-width: 140px;
+  }
+
+  button {
+    float: right;
+  }
+}
+
+label {
+  font-size: 0.875rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .contact-butoon {
+    .btn-primary {
+      min-width: 100%;
+      margin-bottom: 5px;
+    }
+
+    .btn-outline-primary {
+      min-width: 100%;
+      margin-top: 5px;
+    }
+  }
+
+  .background-padding {
+    padding: 24px 0;
+  }
+
+  .padding-top {
+    padding-top: 56px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .contact-butoon {
+    .btn-primary {
+      min-width: 100%;
+      margin-bottom: 5px;
+    }
+
+    .btn-outline-primary {
+      min-width: 100%;
+      margin-top: 5px;
+    }
+  }
+
+  .padding-top {
+    padding-top: 56px;
+  }
+}
