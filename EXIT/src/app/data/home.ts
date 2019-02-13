@@ -21,7 +21,7 @@ export const featuresList = [
 
 export const feature = [
     {
-        path: '../../assets/location.svg',
+        path: '../../assets/garage.svg',
         label: 'Boat and Vehicle Storage',
         alt: 'Icon art displaying boat and motorcycle',
     },

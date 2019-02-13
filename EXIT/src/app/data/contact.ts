@@ -7,9 +7,9 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:jaya13194@gmail.com',
+        redirect: 'mailto:Exit120storage@yahoo.com',
         label: 'Email',
-        data: 'jaya13194@gmail.com',
+        data: 'Exit120storage@yahoo.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
