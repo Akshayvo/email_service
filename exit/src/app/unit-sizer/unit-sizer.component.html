@@ -1,0 +1,102 @@
+<div class="unit-sizer-top">
+  <div class="bg-translucent">
+    <div class="container jumbotorn-top text-center" *ngFor="let unitSizers of unitSizers">
+      <h1 class="pb-4">{{unitSizers.heading}}</h1>
+      <p>{{unitSizers.blurb}}</p>
+    </div>
+  </div>
+</div>
+
+<div class=" content-Holder bg-dark-background unit-sizer-bottom">
+  <div class="container py-5">
+    <!--Unit Sizer Box Layout-->
+    <h2 class="pb-3">Unit Sizer</h2>
+    <div class="unit-sizer-container content-margin-top">
+    <div class="unit-sizer-box py-5">
+      <!--Main Row-->
+        <div class="row">
+          <!--Left bar size of unit starts here-->
+            <div class="col-md-2 px-0">
+              <!--For desktop and width more than 768-->
+              <div *ngFor="let unit of unitsizer" class="unit-dimention py-3 disp">
+               
+                <span *ngIf="current == unit?.id" [ngClass]="'active-unit'">
+                    {{unit.size}} <br/>
+                </span>
+               
+                <span *ngIf="current !== unit?.id">
+                  <span (click)="activeUnit(unit?.id)">
+                      {{unit.size}} <br/>
+                  </span>
+                </span>
+              
+              </div>
+              <!--For desktop and width more than 768 Ends Here-->
+
+              <!--For Mobile and width Less than 768 Ends Here-->
+              <div class="disp-mob pb-3 text-center">
+                <div class="row"> 
+                  <div class="col-4 mt-auto">
+                    <span (click)="moveLeft()">{{unitsizer[previous].size}}</span>
+                  </div>
+
+                  <div class="col-4 mx-0 mt-auto px-0">
+                      <span class="disp-mob-current-size">{{unitsizer[current].size}}</span>
+                  </div>
+
+                  <div class="col-4 mt-auto">
+                      <span (click)="moveRight()">{{unitsizer[next].size}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!--Left Bar Size of Unit Ends Here-->
+
+        
+            <div class="col-md-10">
+                <div>
+                  <!--Image Carousel Starts Here-->
+                  <div class="row image-carosel">
+                    <div class="col-1 navigate-arrows-left text-center">
+                      <img src="../../assets/left.svg" alt="" (click)="moveLeft()">
+                    </div>
+
+                    <div class="col-3 mx-0 px-0 text-center">
+                      <img src="{{unitsizer[previous].unitImg}}" alt="" width="80%" height="auto" class="overlay" (click)="moveLeft()">
+                    </div>
+
+                    <div class="col-4 text-center p-2 unit-sizer-border">
+                      <img src="{{unitsizer[current].unitImg}}" alt="" width="100%" height="auto">
+                    </div>
+
+                    <div class="col-3 mx-0 px-0 text-center">
+                      <img src="{{unitsizer[next].unitImg}}" alt="" width="80%" height="auto" class="overlay" (click)="moveRight()">
+                    </div>
+
+                    <div class="col-1 navigate-arrows-right text-center">
+                      <img src="../../assets/right.svg" alt="" (click)="moveRight()">
+                    </div>
+                  </div>
+                  <!--Image Carousel Ends Here-->
+
+                  <!--Unit Sizer Data Row-->
+                  <div class="row justify-content-center mt-4 unit-data">
+                    <div class="col-12 col-md-8 col-lg-8 col align-self-center">
+                      <h3>{{unitsizer[current].heading}}</h3>
+                      <p class="pr-2 text-justify"> {{unitsizer[current].data}} </p>
+                      <ul>
+                        <li *ngFor="let amenity of unitsizer[current]?.amenities"> {{amenity.content}} </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--Unit Sizer Data Row Ends Here-->
+                </div>
+            </div>
+        </div>
+        <!--Main Row Ends Here-->
+      </div>
+      <!--Unit Sizer Box Layout Ends here-->
+    </div>
+    <!--Container Ends Here-->
+</div>
+<!--Unit Sizer Container Ends Here-->
