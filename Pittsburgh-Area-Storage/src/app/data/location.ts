@@ -1,3 +1,48 @@
+export const tabs1 = [
+    {
+        id: '1',
+        name: 'Storage Units',
+        path: './',
+        active: true,
+    },
+    {
+        id: '2',
+        name: 'Unit Sizer',
+        path: './unitSizer',
+        active: false,
+    },
+    {
+        id: '3',
+        name: 'Reserve Unit',
+        path: './reserveUnit',
+        active: false,
+    },
+    {
+        id: '4',
+        name: 'Gallery',
+        path: './photos',
+        active: false,
+    },
+    {
+        id: '5',
+        name: 'About Us',
+        path: './about',
+        active: false,
+    },
+    {
+        id: '6',
+        name: 'Truck Rentals',
+        path: './truck-rentals',
+        active: false,
+    },
+    {
+        id: '7',
+        name: 'Directions',
+        path: './directions',
+        active: false,
+    },
+];
+
 export const tabs = [
     {
         id: '1',
@@ -214,7 +259,7 @@ export const aboutUsImageLocation1 = `https://s3.amazonaws.com/syrasoft-tenant-f
 export const aboutUsImageLocation2 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/shaler-self-storage/shaler-self-storage-retail-store.jpg`;
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation3 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/natrona-heights-retail-store.jpg`;
+export const aboutUsImageLocation3 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/natrona-heights/natrona-heights-indoor-office.jpg`;
 
 export const aboutUsLocation1 = [
     {

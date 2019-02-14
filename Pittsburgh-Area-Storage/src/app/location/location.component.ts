@@ -4,7 +4,7 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
           contactsLocation3, hoursLocation3,
           } from '../data/contact';
-import { tabs } from '../data/location';
+import { tabs, tabs1 } from '../data/location';
 import { headingLocation1, headingLocation2, headingLocation3 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -57,7 +57,7 @@ export class LocationComponent implements OnInit {
     }
 
   ngOnInit() {
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     this.isSomePage();
   }
 
@@ -89,7 +89,7 @@ export class LocationComponent implements OnInit {
       this.locationId = 1;
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
-      this.tabs = tabs;
+      this.tabs = tabs1;
     }
 
    public fetchDetailsLocation2() {

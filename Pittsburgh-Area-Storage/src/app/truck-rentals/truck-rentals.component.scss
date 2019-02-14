@@ -1,55 +1,59 @@
 @import "../../styles.scss";
 
 .truck-rentels-holder {
-    padding-top: 100px;
-    min-height: 88vh;
-    margin-bottom: 50px;
+  background: $light;
+  min-height: 88vh;
+  padding: 64px;
+  margin-bottom: 50px;
 
-    .truck-rentals-content {
-      .top-block {
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-
-      .central-block {
-        background: #f1f0ed;
-        padding: 50px;
-      }
-
-      .bottom-block {
-        padding-top: 50px;
-        // padding-bottom: 50px; 
-      }
+  .truck-rentals-content {
+    .top-block {
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
-    .truck-sizes {
-      // border: 1px solid $border;
-      background: #fff;
-      height: 100%;
-      width: 100%;
+    .central-block {
+      background: #e2e0d8;
+      padding: 50px;
+    }
+
+    .bottom-block {
+      padding-top: 50px;
+      // padding-bottom: 50px;
+    }
+  }
+
+  .truck-sizes {
+    // border: 1px solid $border;
+    background: $light;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+
+    .image-box {
+      height: 80px;
       position: relative;
 
-      .image-box {
-        height: 80px;
-        position: relative;
-        
-        img {
-          bottom: 0px;
-          position:absolute;
-          text-align: center;
-          left: 25%;
-          right: 25%;
-        }
+      img {
+        bottom: 0;
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
       }
     }
-}
-
-@media screen and (max-width: 768px) {
-  
+  }
 }
 
 @media screen and (max-width: 600px) {
   .truck-rentels-holder {
-    padding-top: 70px;
+    padding: 20px;
+
+    .truck-rentals-content {
+      .central-block {
+        padding: 20px;
+      }
+    }
   }
 }

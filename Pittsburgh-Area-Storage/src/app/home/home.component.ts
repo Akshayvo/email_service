@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.fetchStaticContent();
     this.fetchFeatureHead();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     this.receiveMessage();
   }
 

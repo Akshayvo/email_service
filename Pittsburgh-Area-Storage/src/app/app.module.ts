@@ -1,5 +1,5 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 
 // import '@material/tab/mdc-tab-scroller';
@@ -30,7 +30,8 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { SelectLocationComponent } from './select-location/select-location.component';
 import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-
+import { ErrorHandlerService } from './services/error-handler.service';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
     AccordionComponent,
     SelectLocationComponent,
     TruckRentalsComponent,
+    ErrorHandlerComponent
   ],
   imports: [
     NgtUniversalModule,
@@ -67,6 +69,10 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
     ],
   providers: [
     Title,
+    {
+      provide: ErrorHandler,
+      useClass: ErrorHandlerService
+    },
     {
       provide: 'externalUrlRedirectResolver',
       useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {

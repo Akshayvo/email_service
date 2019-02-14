@@ -30,8 +30,8 @@ export const hoursLocation1 = [
         data: 'Closed',
     },
     {
-        label: 'Access hours:',
-        data: '24/7/365',
+        label: 'Access hours: ',
+        data: 'Office Hours',
     },
 ];
 
@@ -99,6 +99,6 @@ export const hoursLocation3 = [
     },
     {
         label: 'Access hours: ',
-        data: '24/7/365',
+        data: '7:00AM - 7:00PM',
     },
 ];

@@ -12,6 +12,11 @@ a {
     color: $primary !important;
   }
 
+  .location-active {
+    color: $primary !important;
+    font-weight: 600;
+  }
+
   .navbar-brand {
     img {
       position: absolute;

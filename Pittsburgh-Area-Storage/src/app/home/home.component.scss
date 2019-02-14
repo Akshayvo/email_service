@@ -2,7 +2,7 @@
 
 .jumbotron-home {
   height: 100vh;
-  
+
   .for-mobile-view {
     display: none;
   }
@@ -18,10 +18,11 @@
 
   .feature-block {
     height: 20vh;
+
     img {
       height: 60px;
     }
-  
+
     .f-text {
       color: $dark;
       font-weight: 600;
@@ -30,8 +31,15 @@
   }
 }
 
+.carousel-caption {
+  bottom: 40px;
+  img {
+    height: 80px;
+  }
+}
+
 .jumbotron-top {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/movin-on-storage-center-mobile.jpg");
+  background: url("../../assets/images/movin-on-storage-office-store.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,7 +47,7 @@
 }
 
 .jumbotron-top1 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/shaler-self-storage-mobile.jpg");
+  background: url("../../assets/images/shaler-self-storage-office.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,7 +55,7 @@
 }
 
 .jumbotron-top2 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/natrona-heights-mobile.jpg");
+  background: url("../../assets/images/natrona-heights-front-office.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,7 +164,6 @@
     .feature-block {
       height: 160px;
     }
-
   }
 }
 
@@ -173,13 +180,13 @@
       img {
         height: 40px;
       }
-    
+
       .f-text {
         color: $dark;
         font-weight: 600;
         font-size: 1rem;
       }
-    } 
+    }
   }
 }
 
@@ -227,11 +234,11 @@
 @media screen and (max-width: 600px) {
   .jumbotron-home {
     height: 60vh;
-    
+
     .for-mobile-view {
       display: block;
     }
-  
+
     .for-desktop-view {
       display: none;
     }

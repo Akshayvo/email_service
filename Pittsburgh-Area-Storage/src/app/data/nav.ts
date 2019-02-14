@@ -27,11 +27,6 @@ export const navLinks = [
         ]
     },
     {
-        label: 'Truck Rentals',
-        path: '/truck-rentals',
-        type: 'link'
-    },
-    {
         label: 'Pay Rent',
         path: '/payment',
         type: 'link'
