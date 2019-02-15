@@ -3,7 +3,7 @@
 .unit-sizer-top {
   color: $white;
   height: 60vh;
-  background: url("../../assets/unit.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Exit_120_Images/unit.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -66,6 +66,7 @@
   .unit-sizer-box {
     border: 1px solid $primary;
     padding: 64px;
+    height: 650px;
   }
 
   .unit-dimention {

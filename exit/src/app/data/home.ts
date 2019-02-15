@@ -21,22 +21,22 @@ export const featuresList = [
 
 export const feature = [
     {
-        path: '../../assets/garage.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Exit_120_Images/garage.svg',
         label: 'Boat and Vehicle Storage',
         alt: 'Icon art displaying boat and motorcycle',
     },
     {
-        path: '../../assets/location.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Exit_120_Images/location.svg',
         label: ' Conveniently Located',
         alt: 'Icon image of a map location pin'
     },
     {
-        path: '../../assets/online.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Exit_120_Images/online.svg',
         label: 'Online Reservation & Bill Pay',
         alt: 'Icon art displaying a screen with cursor'
     },
     {
-        path: '../../assets/24-hours.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Exit_120_Images/24-hours.svg',
         label: '24 Hour Facility Access',
         alt: 'Icon art displaying clock hands and the number 24'
     },
