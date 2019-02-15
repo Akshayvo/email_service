@@ -1,5 +1,32 @@
 @import "../../styles.scss";
 
+.carousel-caption {
+  bottom: 40px;
+
+  img {
+    height: 120px;
+  }
+}
+
+.service {
+  color: $dark;
+  text-align: left;
+
+  h1 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+
+  img {
+    width: 70%;
+    height: 100%;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
 .jumbotron-home {
   height: 100vh;
 
@@ -31,12 +58,6 @@
   }
 }
 
-.carousel-caption {
-  bottom: 40px;
-  img {
-    height: 80px;
-  }
-}
 
 .jumbotron-top {
   background: url("../../assets/images/movin-on-storage-office-store.jpg");
@@ -83,24 +104,6 @@
   }
 }
 
-.service {
-  color: $dark;
-  text-align: left;
-
-  h1 {
-    line-height: 2.5rem;
-    font-size: 2rem;
-  }
-
-  img {
-    width: 70%;
-    height: 100%;
-  }
-
-  p {
-    text-align: justify;
-  }
-}
 
 .content-left {
   text-align: left;
@@ -158,6 +161,14 @@
 }
 
 @media screen and (max-height: 700px) and (min-width: 600px) {
+  .carousel-caption {
+    bottom: 40px;
+
+    img {
+      height: 60px;
+    }
+  }
+
   .jumbotron-home {
     height: auto;
 
@@ -232,6 +243,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .carousel-caption {
+    bottom: 40px;
+
+    img {
+      height: 60px;
+    }
+  }
+
   .jumbotron-home {
     height: 60vh;
 

@@ -20,26 +20,24 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Pittsburgh Area Storage Centers was formed by an Awesome Man who had
-            the thoughts that one day he would make a difference in the Self
-            Storage Business. Well, he did!`,
+        p: `Pittsburgh Area Storage Centers was founded by Scott Harris in 2000.
+            A thoughtful and much-loved guy, Scott believed he could serve communities
+            by providing quality self storage and great customer service. He
+            built companies that would become like family for many of us.`,
     },
     {
-        p: `He initially started Movin’ On Storage Center in Charleston WV in 2000,
-            he then moved on to Shaler Self Storage in Allison Park PA and then
+        p: `After founding Movin' On Storage Center in Charleston, WV, Scott
+            moved on to open Shaler Self Storage in Allison Park, PA, and
             Natrona Heights Self Storage in Natrona Heights, PA.`,
     },
     {
-        p: `Scott was successful and we Thank him for his Wisdom and knowledge
-            of the Self Storage Industry. He also realized that we could also
-            accommodate or customers by having Rental Trucks available to them.`,
+        p: `He was a successful man and we will always be thankful
+            for his wisdom both in building the self storage and truck
+            rental business and in life. We honor his memory today by
+            carrying his creations forward. `,
     },
     {
-        p: `We continue on with his creations. Scott would be very pleased with
-            how we have continued with what had started.`,
-    },
-    {
-        p: `Scott Harris 8/22/1960 - 3/30/2016`,
+        p: `Scott Harris 8/22/1960 - 3/30-2016`,
     },
 ];
 
