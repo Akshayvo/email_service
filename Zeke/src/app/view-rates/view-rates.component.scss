@@ -66,17 +66,15 @@
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
+  .padding-top {
+    padding-top: 56px;
+  }
+
   .view-rate-heading {
     display: block;
     margin-block-start: 36px;
     margin-block-end: 16px;
-  }
-}
-
-
-@media only screen and (max-width: 991px) {
-  .padding-top {
-    padding-top: 56px;
+    color: white;
   }
 }
