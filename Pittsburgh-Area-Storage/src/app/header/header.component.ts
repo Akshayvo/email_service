@@ -31,11 +31,11 @@ export class HeaderComponent implements OnInit {
 
   public isSomePage() {
     if (this.router.url.includes('/location/movin-on-storage')) {
-        this.logo = '../../assets/images/movin-on-logo.png';
+        this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/movin-on-logo.png';
     } else if (this.router.url.includes('/location/shaler-self')) {
-      this.logo = '../../assets/images/shaler-logo.png';
+      this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/shaler-logo.png';
     } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
-        this.logo = '../../assets/images/natrona-logo.png';
+        this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/natrona-logo.png';
     } else {
       this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/pittsburgh-area-storage-centers-logo.jpg';
     }

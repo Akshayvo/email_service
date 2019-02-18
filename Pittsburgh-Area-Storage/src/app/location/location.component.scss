@@ -57,13 +57,13 @@
   display: block;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
   .disp {
     display: none;
   }
 
   .social-content {
-    .col-lg-11 {
+    .col-lg-12 {
       .each-contact {
         display: block;
       }
