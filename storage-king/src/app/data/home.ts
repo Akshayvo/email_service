@@ -26,7 +26,7 @@ export const feature = [
         // tslint:disable-next-line:max-line-length
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/jumbotron-bottom-images/location.svg',
         label: 'Convenient Location & Accessible',
-        alt: ''
+        alt: 'Icon of location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
@@ -38,13 +38,13 @@ export const feature = [
         // tslint:disable-next-line:max-line-length
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/jumbotron-bottom-images/Temp.svg',
         label: 'Variety of Unit Types Available',
-        alt: ''
+        alt: 'Icon of a thermometer indicating climate controlled units'
     },
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/jumbotron-bottom-images/shipped.svg',
         label: 'Penske Truck Rentals',
-        alt: '',
+        alt: 'Icon of a truck indicating truck rentals are available',
     },
 ];
 

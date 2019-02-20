@@ -4,6 +4,10 @@ export const navLinks = [
         path: '/',
     },
     {
+        label: 'VIEW UNITS',
+        path: '/view-units',
+    },
+    {
         label: 'UNIT SIZES',
         path: '/unit-sizes',
     },
@@ -15,10 +19,6 @@ export const navLinks = [
         label: 'STORAGE TIPS',
         path: '/storage-tips'
     },
-    // {
-    //     label: 'VIEW UNITS',
-    //     path: '/view-units',
-    // },
     {
         label: 'PAY RENT',
         path: 'pay-rent'
