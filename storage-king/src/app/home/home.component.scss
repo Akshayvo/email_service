@@ -5,6 +5,12 @@
   display: block;
 }
 
+.home-container {
+  a {
+    color: black; 
+  }
+}
+
 
 .jumbotron-top {
   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/storage-king-hero-image.jpeg");
@@ -15,7 +21,7 @@
 }
 
 .jumbotron-top1 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/storage-king-image.jpeg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/storage-king-kingway-avenue.jpeg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +29,7 @@
 }
 
 .jumbotron-top2 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/storage-king-kingway-avenue.jpeg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/storage-king-indoors.jpg");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;

@@ -3,22 +3,24 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ViewRatesComponent } from './view-rates/view-rates.component';
-import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
-import { PaymentComponent } from './payment/payment.component';
+// import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
-import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
+// import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
 import { ErrorComponent } from './error/error.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { PenskeTruckRentalsComponent } from './penske-truck-rentals/penske-truck-rentals.component';
+import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
+import { PayRentComponent } from './pay-rent/pay-rent.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
   { path: '', component: HomeComponent },
-  { path: 'unit-sizer', component: UnitSizerComponent },
-  { path: 'truck-rentals', component: TruckRentalsComponent },
+  { path: 'unit-sizes', component: UnitSizesComponent },
+  { path: 'penske-truck-rentals', component: PenskeTruckRentalsComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'view-units', component: ViewRatesComponent },
-  { path: 'payment', component: PaymentComponent },
+  { path: 'pay-rent', component: PayRentComponent },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'review', component: HomeComponent,
     resolve: {

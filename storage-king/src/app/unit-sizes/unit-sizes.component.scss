@@ -20,6 +20,7 @@
 
 .unit-sizer-container {
   color: black;
+  min-height: 620px;
 
   .unit-sizer-box {
     padding: 64px;
@@ -101,6 +102,7 @@
     padding-top: 80px;
   }
 
+
   .col-1 {
     img {
       width: 100%;
@@ -117,6 +119,11 @@
 
 
 @media screen and (max-width: 767px) {
+  .unit-sizer-holder {
+    padding-top: 80px;
+  }
+
+
   .disp {
     display: none;
   }

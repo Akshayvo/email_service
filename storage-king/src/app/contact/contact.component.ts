@@ -23,6 +23,7 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;
+  subject: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -47,7 +48,8 @@ export class ContactComponent implements OnInit {
       phone: ['', [Validators.required,
               Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required]
+      message: ['', Validators.required],
+      subject: [''],
   });
   }
 
@@ -69,6 +71,10 @@ export class ContactComponent implements OnInit {
    if (this.contactForm.invalid) {
        return;
    } else {
+
+    if ( !this.contactForm.value.subject) {
+      this.contactForm.value.subject = 'Website Form Submission';
+    }
          this.receiveremail = this.contactInfo[1].data;
 
          this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
@@ -79,6 +85,7 @@ export class ContactComponent implements OnInit {
            email: this.contactForm.value.email,
            receiveremail: this.receiveremail,
            message: this.completeMessage,
+           subject: this.contactForm.value.subject,
          };
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {

@@ -4,27 +4,27 @@ export const navLinks = [
         path: '/',
     },
     {
-        label: 'VIEW UNITS',
-        path: '/view-units',
+        label: 'UNIT SIZES',
+        path: '/unit-sizes',
     },
     {
-        label: 'UNIT SIZER',
-        path: '/unit-sizer',
+        label: 'CONTACT US',
+        path: 'contact-us'
     },
     {
         label: 'STORAGE TIPS',
         path: '/storage-tips'
     },
-    {
-        label: 'TRUCK RENTALS',
-        path: 'truck-rentals',
-    },
+    // {
+    //     label: 'VIEW UNITS',
+    //     path: '/view-units',
+    // },
     {
         label: 'PAY RENT',
-        path: 'payment'
+        path: 'pay-rent'
     },
     {
-        label: 'CONTACT US',
-        path: 'contact-us'
+        label: 'PENSKE TRUCK RENTALS',
+        path: 'penske-truck-rentals',
     },
 ];

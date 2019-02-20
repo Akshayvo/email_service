@@ -15,7 +15,7 @@ export class ErrorHandlerService implements ErrorHandler {
     private errorReport: ErrorReportingService,
     private injector: Injector,
   ) {
-    console.log('Error reporting initialized');
+    // console.log('Error reporting initialized');
   }
 
   handleError(error: Error | HttpErrorResponse) {

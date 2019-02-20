@@ -21,6 +21,12 @@
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .rent-holder {
+    padding-top: 80px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .rent-example {
     border-left: none;
@@ -30,7 +36,7 @@
 
 @media only screen and (max-width: 600px) {
   .rent-holder {
-    padding-top: 60px;
+    padding-top: 80px;
 
     .rent-sub-holder {
       padding: 16px;

@@ -28,9 +28,15 @@
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .storage-tip-holder {
+    padding-top: 80px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .storage-tip-holder {
-    padding-top: 60px;
+    padding-top: 80px;
 
     .storage-content {
       padding: 16px;

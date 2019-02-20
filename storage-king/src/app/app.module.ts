@@ -13,7 +13,6 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewRatesComponent } from './view-rates/view-rates.component';
-import { PaymentComponent } from './payment/payment.component';
 import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
 import { AccordionComponent } from './accordion/accordion.component';
@@ -26,6 +25,9 @@ import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { PenskeTruckRentalsComponent } from './penske-truck-rentals/penske-truck-rentals.component';
+import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
+import { PayRentComponent } from './pay-rent/pay-rent.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,6 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
     ContactComponent,
     FooterComponent,
     ViewRatesComponent,
-    PaymentComponent,
     TablesComponent,
     ErrorComponent,
     UnitSizerComponent,
@@ -43,7 +44,10 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
     AccordionComponent,
     PhotosComponent,
     TruckRentalsComponent,
-    ErrorHandlerComponent
+    ErrorHandlerComponent,
+    PenskeTruckRentalsComponent,
+    UnitSizesComponent,
+    PayRentComponent
   ],
   imports: [
     CommonModule,

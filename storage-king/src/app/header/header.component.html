@@ -4,7 +4,8 @@
       <div class="row">
         <div class="col-md-10">
           <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
-            <i [class]="contact?.class"></i>{{contact.data}}
+            <i [class]="contact?.class"></i><span *ngIf="contact?.id !== 1 else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></span>
+            <ng-template #other_content><span>{{contact.data}}</span></ng-template>
           </span>
         </div>
         <div class="col-md-2 ml-auto">
