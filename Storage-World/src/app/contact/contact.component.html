@@ -57,7 +57,7 @@
           </div>
           <div class="form-group">
               <label>Enter Message*</label>
-              <textarea type="text" rows="6" formControlName="message" placeholder="Enter Message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
+              <textarea type="text" rows="9" formControlName="message" placeholder="Enter Message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
               <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
                   <small class="form-text text-muted" *ngIf="f.message.errors.required">Please fill out this field</small>
               </div>
@@ -84,6 +84,14 @@
             <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
           </span>
         </p>
+
+        <div>
+          <strong> Download documents: </strong>
+          <br/>
+          <span> <a href="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_World_Images/15-day-notice.pdf" target="_blank" download> 15 Day Move Out Notification Form </a> </span>
+          <br/>
+          <span> <a href="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_World_Images/address-change.pdf" target="_blank" download> Address Change Form </a> </span>
+        </div>
       </div>
     </div>
   </div>
