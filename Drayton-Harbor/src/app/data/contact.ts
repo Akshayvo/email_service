@@ -9,7 +9,7 @@ export const contact = [
         id: 1,
         redirect: 'mailto:sales@draytonharborministorage.com',
         label: 'Email:',
-        data: 'jaya13194@gmail.com',
+        data: 'sales@draytonharborministorage.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {

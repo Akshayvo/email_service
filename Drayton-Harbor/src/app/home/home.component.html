@@ -52,9 +52,10 @@
           <div class="mb-4">
            <h2 class="heading pb-4">Location Information</h2>
             <div>
-              <div *ngFor="let contact of contactDetails">
-                  <b>{{contact.label}}</b> {{contact.data}}<br>
-              </div>
+              <span class="font-xs-device" *ngFor="let contact of contactDetails">
+                <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+            </span>
               <div class="pt-3">
                   <div *ngFor="let hour of hours">
                       <b>{{hour.label}}</b>{{hour.data}}<br>

@@ -11,12 +11,17 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.draytonharborministorage.com/reserve</loc>
+    <loc>https://www.draytonharborministorage.com/pay-rent</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.draytonharborministorage.com/contact</loc>
+    <loc>https://www.draytonharborministorage.com/contact-us</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.draytonharborministorage.com/storage-tips</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
