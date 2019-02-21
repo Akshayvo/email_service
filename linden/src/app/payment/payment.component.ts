@@ -2,7 +2,9 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
-import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../data/contact';
+import { contactsLocation1, contactsLocation2,
+  // contactsLocation3
+ } from '../data/contact';
 @Component({
   selector: 'app-payment',
   templateUrl: './payment.component.html',
@@ -22,10 +24,10 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Click here to pay your rent online for Natrona Heights Self Storage,
-                Shaler Self Storage or Movin' On Storage Center`
+      content: `Look up account information or pay your rent online just by
+      following the instructions or calling our friendly managers!`
     });
-    this.titleService.setTitle('Pay Rent Online');
+    this.titleService.setTitle('Pay Your Rent Online | Linden Self Storage');
   }
 
   ngOnInit() {
@@ -45,8 +47,9 @@ export class PaymentComponent implements OnInit {
       this.contact = contactsLocation1;
     } else if ( this.locationId === '2' ) {
       this.contact = contactsLocation2;
-    } else if ( this.locationId === '3' ) {
-      this.contact = contactsLocation3;
     }
+    // else if ( this.locationId === '3' ) {
+    //   this.contact = contactsLocation3;
+    // }
   }
 }

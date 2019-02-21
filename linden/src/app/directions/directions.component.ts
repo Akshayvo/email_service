@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { directionLocation1, directionLocation2, directionLocation3 } from '../data/location';
+import { directionLocation1, directionLocation2, 
+  // directionLocation3
+ } from '../data/location';
 @Component({
   selector: 'app-directions',
   templateUrl: './directions.component.html',
@@ -18,18 +20,19 @@ export class DirectionsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/movin-on-storage')) {
+    if (this.router.url.includes('/location/linden-storage')) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes('/location/shaler-self')) {
+     } else if (this.router.url.includes('/location/macedon-storage')) {
        this.fetchDetailsLocation2();
-     } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
-       this.fetchDetailsLocation3();
-     }
+     } 
+    //  else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+    //    this.fetchDetailsLocation3();
+    //  }
  }
 
  public fetchDetailsLocation1() {
   this.directionPoints = directionLocation1;
-  this.directionHeading = `Directions to Movin' On Storage Center`;
+  this.directionHeading = `Directions to Linden Self Storage`;
   this.id = 1;
 }
   public fetchDetailsLocation2() {
@@ -38,9 +41,9 @@ export class DirectionsComponent implements OnInit {
     this.id = 2;
   }
 
-  public fetchDetailsLocation3() {
-    this.directionPoints = directionLocation3;
-    this.directionHeading = `Directions to Natrona Heights Self Storage`;
-    this.id = 3;
-  }
+  // public fetchDetailsLocation3() {
+  //   this.directionPoints = directionLocation3;
+  //   this.directionHeading = `Directions to Natrona Heights Self Storage`;
+  //   this.id = 3;
+  // }
 }

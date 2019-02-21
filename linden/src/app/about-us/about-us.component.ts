@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { aboutUsLocation1, aboutUsLocation2, aboutUsLocation3,
-          aboutUsHeadingLocation1, aboutUsHeadingLocation2, aboutUsHeadingLocation3,
+import { aboutUsLocation1, aboutUsLocation2,
+  //  aboutUsLocation3,
+          aboutUsHeadingLocation1, aboutUsHeadingLocation2,
+          //  aboutUsHeadingLocation3,
           aboutUsImageLocation1, aboutUsImageLocation2,
-          aboutUsImageLocation3 } from '../data/location';
+          // aboutUsImageLocation3 
+        } from '../data/location';
 
 @Component({
   selector: 'app-about-us',
@@ -24,20 +27,21 @@ export class AboutUsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/movin-on-storage')) {
+    if (this.router.url.includes('/location/linden-storage')) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes('/location/shaler-self')) {
+  } else if (this.router.url.includes('/location/macedon-storage')) {
     this.fetchDetailsLocation2();
-  } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
-    this.fetchDetailsLocation3();
-  }
+  } 
+  // else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+  //   this.fetchDetailsLocation3();
+  // }
   }
 
   public fetchDetailsLocation1() {
     this.aboutPara = aboutUsLocation1;
     this.heading = aboutUsHeadingLocation1;
     this.image = aboutUsImageLocation1;
-    this.alt = 'Indoor Units at Movin\' On Storage Center';
+    this.alt = 'A Photo of indoor self storage units at Linden Self Storage';
   }
 
   public fetchDetailsLocation2() {
@@ -47,10 +51,10 @@ export class AboutUsComponent implements OnInit {
     this.alt = 'Shaler Self Storage Retail Store';
   }
 
-  public fetchDetailsLocation3() {
-    this.aboutPara = aboutUsLocation3;
-    this.heading = aboutUsHeadingLocation3;
-    this.image = aboutUsImageLocation3;
-    this.alt = 'Natrona Heights Retail Store';
-  }
+  // public fetchDetailsLocation3() {
+  //   this.aboutPara = aboutUsLocation3;
+  //   this.heading = aboutUsHeadingLocation3;
+  //   this.image = aboutUsImageLocation3;
+  //   this.alt = 'Natrona Heights Retail Store';
+  // }
 }

@@ -2,42 +2,39 @@
 export const featuresHead = [
     {
         label: '3 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/jumbotron-bottom-images/location.svg',
+        data: '../../assets/linden-images/location.svg',
+        alt: 'Icon art displaying a location pin'
     },
     {
-        label: 'Moving Supplies Available',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/jumbotron-bottom-images/luggage-cart.svg',
+        label: 'Online Reservation & Bill Pay',
+        data: '../../assets/linden-images/online.svg',
+        alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: 'Penske Truck Rentals',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/jumbotron-bottom-images/truck.svg',
+        label: 'Stellar Customer Service',
+        data: '../../assets/linden-images/operator.svg',
+        alt: 'Customer Service Representative Icon'
     },
     {
-        label: 'Temperature Controlled Units Available',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/jumbotron-bottom-images/Temp.svg',
+        label: 'Climate Controlled Units Available',
+        data: '../../assets/linden-images/thermometer.svg',
+        alt: 'Icon of thermometer indicating climate controlled units'
     },
 ];
 
 export const serviceOffered = [
     {
-        p: `Pittsburgh Area Storage Centers was founded by Scott Harris in 2000.
-            A thoughtful and much-loved guy, Scott believed he could serve communities
-            by providing quality self storage and great customer service. He
-            built companies that would become like family for many of us.`,
+        p: `Linden Self Storage is proud to offer Monroe County a state-of-the-art storage facility in Pittsford, New York.
+        We cater to both residential and commercial tenants with a wide variety of self storage unit types and sizes.`,
     },
     {
-        p: `After founding Movin' On Storage Center in Charleston, WV, Scott
-            moved on to open Shaler Self Storage in Allison Park, PA, and
-            Natrona Heights Self Storage in Natrona Heights, PA.`,
+        p: `Need a little extra protection from the elements for your belongings? Ask about our climate controlled units!
+        Need a place to store that boat or RV? We've got outdoor units perfectly suited! `,
     },
     {
-        p: `He was a successful man and we will always be thankful
-            for his wisdom both in building the self storage and truck
-            rental business and in life. We honor his memory today by
-            carrying his creations forward. `,
-    },
-    {
-        p: `Scott Harris 8/22/1960 - 3/30-2016`,
+        p: `As a privately held, owner-operated company, started in 2004, we strive to bring you the safest, cleanest,
+        and most secure storage facility possible. All of our locations are backed by excellent customer service and
+        easy access to your account information 24/7 through our website!`,
     },
 ];
 

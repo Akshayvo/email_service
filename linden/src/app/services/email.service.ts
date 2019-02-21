@@ -17,7 +17,7 @@ export class EmailService {
         name: data.name,
         senderEmail: data.email,
         receiverEmail: data.receiveremail,
-        subject: 'Website Form Submission',
+        subject: data.subject,
         message: data.message,
         customTemplate: ''
       }

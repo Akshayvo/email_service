@@ -17,7 +17,7 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'location/movin-on-storage',
+  { path: 'location/linden-storage',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -30,7 +30,7 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/shaler-self',
+  { path: 'location/macedon-storage',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -54,7 +54,7 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/movin-on-storage', component: HomeComponent,
+  { path: 'review/linden-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -62,7 +62,7 @@ const routes: Routes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ8RMQVzTTSIgRb01wdB59bgo'
     }
   },
-  { path: 'review/shaler-self', component: HomeComponent,
+  { path: 'review/macedon-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },

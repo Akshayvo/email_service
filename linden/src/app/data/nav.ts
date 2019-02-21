@@ -11,19 +11,19 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Movin\' On Storage',
-                path: '/location/movin-on-storage',
+                label: 'Linden Self Storage',
+                path: '/location/linden-storage',
               },
               {
                   id: '2',
-                  label: 'Shaler Self Storage',
-                  path: '/location/shaler-self',
+                  label: 'Macedon Storage',
+                  path: '/location/macedon-storage',
               },
-              {
-                  id: '3',
-                  label: 'Natrona Heights Self Storage',
-                  path: '/location/natrona-heights-self',
-              },
+            //   {
+            //       id: '3',
+            //       label: 'Natrona Heights Self Storage',
+            //       path: '/location/natrona-heights-self',
+            //   },
         ]
     },
     {

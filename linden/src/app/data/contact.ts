@@ -1,29 +1,36 @@
 export const contactsLocation1 = [
     {
         label: 'Address:',
-        data: '200 Piedmont Road  Charleston, WV  25301',
+        data: '870 Linden Ave · Rochester, NY 14625',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         label: 'Phone:',
-        data: '(304) 344-1104',
+        data: '(585) 381-6557',
         class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:5853816557'
+    },
+    {
+        label: 'Fax',
+        data: '(585) 381-6557',
+        class: 'fas fa-fax mr-2 iconColor'
     },
     {
         label: 'Email:',
-        data: 'movinonstoragecenter@gmail.com',
+        data: 'contact-linden@lindenstorage.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:contact-linden@lindenstorage.com'
     },
 ];
 
 export const hoursLocation1 = [
     {
         label: 'Monday - Friday: ',
-        data: '9:00AM - 5:00PM',
+        data: '9:00AM - 4:00PM',
     },
     {
         label: 'Saturday: ',
-        data: '9:00AM - 2:00PM',
+        data: '9:00AM - 1:00PM',
     },
     {
         label: 'Sunday: ',
@@ -31,7 +38,7 @@ export const hoursLocation1 = [
     },
     {
         label: 'Access hours: ',
-        data: 'Office Hours',
+        data: '24/7',
     },
 ];
 
@@ -69,36 +76,36 @@ export const hoursLocation2 = [
     },
 ];
 
-export const contactsLocation3 = [
-    {
-        label: 'Address:',
-        data: '896 Veterans Drive, Natrona Heights, PA 15065',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-    },
+// export const contactsLocation3 = [
+//     {
+//         label: 'Address:',
+//         data: '896 Veterans Drive, Natrona Heights, PA 15065',
+//         class: 'fas fa-map-marker-alt mr-2 iconColor',
+//     },
 
-    {
-        label: 'Phone:',
-        data: '(724) 295-0411',
-        class: 'fas fa-phone mr-2 iconColor',
-    },
-    {
-        label: 'Email:',
-        data: 'natronaheightsselfstorage@gmail.com ',
-        class: 'fas fa-envelope-open mr-2 iconColor',
-    },
-];
+//     {
+//         label: 'Phone:',
+//         data: '(724) 295-0411',
+//         class: 'fas fa-phone mr-2 iconColor',
+//     },
+//     {
+//         label: 'Email:',
+//         data: 'natronaheightsselfstorage@gmail.com ',
+//         class: 'fas fa-envelope-open mr-2 iconColor',
+//     },
+// ];
 
-export const hoursLocation3 = [
-    {
-        label: 'Monday - Friday: ',
-        data: '9:00AM - 4:00PM',
-    },
-    {
-        label: 'Saturday: ',
-        data: '9:00AM - 2:00PM',
-    },
-    {
-        label: 'Access hours: ',
-        data: '7:00AM - 7:00PM',
-    },
-];
+// export const hoursLocation3 = [
+//     {
+//         label: 'Monday - Friday: ',
+//         data: '9:00AM - 4:00PM',
+//     },
+//     {
+//         label: 'Saturday: ',
+//         data: '9:00AM - 2:00PM',
+//     },
+//     {
+//         label: 'Access hours: ',
+//         data: '7:00AM - 7:00PM',
+//     },
+// ];

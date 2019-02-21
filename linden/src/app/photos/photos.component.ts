@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { galleryDataLocation1, galleryDataLocation2, galleryDataLocation3,
-        galleryImagesLocation1, galleryImagesLocation2, galleryImagesLocation3 } from '../data/galleryImage';
+import { galleryDataLocation1, galleryDataLocation2, 
+  // galleryDataLocation3,
+        galleryImagesLocation1, galleryImagesLocation2, 
+        // galleryImagesLocation3 
+      } from '../data/galleryImage';
 import { Router } from '@angular/router';
 
 @Component({
@@ -24,13 +27,14 @@ export class PhotosComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/movin-on-storage')) {
+    if (this.router.url.includes('/location/linden-storage')) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes('/location/shaler-self')) {
+  } else if (this.router.url.includes('/location/macedon-storage')) {
     this.fetchDetailsLocation2();
-  } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
-    this.fetchDetailsLocation3();
-  }
+  } 
+  // else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+  //   this.fetchDetailsLocation3();
+  // }
   }
 
   public fetchDetailsLocation1() {
@@ -45,11 +49,11 @@ export class PhotosComponent implements OnInit {
     this.id = 2;
   }
 
-  public fetchDetailsLocation3() {
-    this.galleryImages = galleryImagesLocation3;
-    this.galleryData = galleryDataLocation3;
-    this.id = 3;
-  }
+  // public fetchDetailsLocation3() {
+  //   this.galleryImages = galleryImagesLocation3;
+  //   this.galleryData = galleryDataLocation3;
+  //   this.id = 3;
+  // }
 
   setSelectedImage(image: any) {
     this.selectedImage = image;

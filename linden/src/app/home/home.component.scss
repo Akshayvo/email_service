@@ -60,7 +60,7 @@
 
 
 .jumbotron-top {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/movin-on-storage-office-store.jpg");
+  background: url("../../assets/linden-images/linden-self-storage-indoor-units.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,20 +68,20 @@
 }
 
 .jumbotron-top1 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/shaler-self-storage-office.jpg");
+  background: url("../../assets/linden-images/outdoor-units.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
 }
 
-.jumbotron-top2 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/natrona-heights-front-office.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-}
+// .jumbotron-top2 {
+//   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/natrona-heights-front-office.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
 
 .content-align {
   text-align: right;
@@ -112,11 +112,7 @@
 
 .disp {
   display: block;
-  color: $white;
-
-  a {
-    color: $white;
-  }
+  color: black;
 }
 
 .testimonial {
