@@ -35,17 +35,17 @@ export class LocationComponent implements OnInit {
       if (this.router.url.includes('/location/linden-storage')) {
             this.meta.addTag({
               name: 'description',
-              content: `Welcome to Movin' On Storage Center of Charleston, WV!
-                        We have a wide selection of storage units and Penske truck rentals!`
+              content: `Linden Self Storage has over 650 state-of-the-art storage units and 115 outdoor
+              RV and boat storage spaces ready to meet your storage needs!`
             });
-            this.titleService.setTitle('Storage Units in Charleston, WV | Movin\' On  Storage Center');
+            this.titleService.setTitle('Affordable Self Storage in Rochester | Linden Self Storage');
     } else if (this.router.url.includes('/location/macedon-storage')) {
            this.meta.addTag({
              name: 'description',
              content: `Whether you're looking to clear a room for a family gathering or use our
                       seasonal vehicle parking, Shaler Self Storage has your self storage needs covered!`
            });
-           this.titleService.setTitle('Storage Units in Alison Park, PA | Shaler Self Storage');
+           this.titleService.setTitle('Affordable Self Storage in Macedon | Linden Self Storage');
     } 
     // else  if (this.router.url.includes('/location/natrona-heights-self'))  {
     //       this.meta.addTag({

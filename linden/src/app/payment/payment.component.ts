@@ -47,7 +47,7 @@ export class PaymentComponent implements OnInit {
       this.contact = contactsLocation1;
     } else if ( this.locationId === '2' ) {
       this.contact = contactsLocation2;
-    }
+    } 
     // else if ( this.locationId === '3' ) {
     //   this.contact = contactsLocation3;
     // }

@@ -91,7 +91,7 @@ export class ContactComponent implements OnInit {
   }
 
   public fetchContactDetailsLocation2() {
-    this.heading = `Shaler Self Storage`;
+    this.heading = `Macedon Storage`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }

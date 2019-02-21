@@ -41,12 +41,9 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public fetchDetailsLocation2() {
-    this.h2tag = 'Unit Sizer';
-    this.description = `Finding the right size is easy, below you will find some of
-                        the common storage units, by size and what typically fits.
-                        TIP: remember to think 'cubic', do your items just need floor
-                        space or can they stack and fit together?
-                        *Actual contents vary depending of the size of your belongings`;
+    this.h2tag = 'Find The Right Unit For You';
+    this.description = `Having trouble figuring what size unit best suits your needs? Use this handy guide to make the
+    most of your stay with Macedon Storage!`;
     this.unitSizer = unitSizerLocation2;
   }
 

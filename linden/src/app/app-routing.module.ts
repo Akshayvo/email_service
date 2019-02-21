@@ -59,7 +59,7 @@ const routes: Routes = [
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ8RMQVzTTSIgRb01wdB59bgo'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJKXFnSz7L1okRf8vyyBQZoZs'
     }
   },
   { path: 'review/macedon-storage', component: HomeComponent,
@@ -67,21 +67,21 @@ const routes: Routes = [
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJM2isvh2NNIgRYjqkBNhmZgk'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJH8RSUuYs0YkR_fntSTEO-Zo'
     }
   },
-  { path: 'review/natrona-heights-self', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ88r5GzG9NIgR8Ljo8DuDurM'
-    }
-  },
+  // { path: 'review/natrona-heights-self', component: HomeComponent,
+  //   resolve: {
+  //       url: 'externalUrlRedirectResolver'
+  //   },
+  //   data: {
+  //       externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ88r5GzG9NIgR8Ljo8DuDurM'
+  //   }
+  // },
   { path: 'error', component: ErrorHandlerComponent },
-  { path: 'payment', component: PaymentComponent },
+  { path: 'pay-rent', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },
 ];
 

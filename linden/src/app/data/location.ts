@@ -182,53 +182,93 @@ export const unitSizerLocation1 = [
 
 export const unitSizerLocation2 = [
     {
-        text: '5\' x 5\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
-        data: `25 sq. ft. Hall Closet, small bedroom or office, boxes,
-               clothing, small furniture, toys, business records or about 50 file boxes.`,
+        text: '5\' x 10\' Storage Unit',
+        alt: '5\' x 10\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
+        data: `This unit is approximately 50 sq feet of space that can hold the contents of one small room, such as:
+        `,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small Desks', },
+            { content: 'Small Bookcases', },
+            { content: 'Suitcases', },
+            { content: 'Lamps', },
+            { content: 'Kitchenware' },
+            { content: 'Mattresses' }
+            ],
+    },
+    {
+        text: '10\' x 10\' Storage Unit',
+        alt: '10\' x 10\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
+        data: `This unit is approximately 100 sq feet of space that can hold the contents of two rooms, such as:`,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small Desks', },
+            { content: 'Bookcases', },
+            { content: 'Furniture', },
+            { content: 'Suitcases', },
+            { content: 'Mattresses' },
+            { content: 'Kitchen Appliances' },
+        ],
+    },
+    {
+        text: '10\' x 15\' Storage Unit',
+        alt: '10\' x 15\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        data: `This unit is approximately 150 sq feet of space that can hold the contents of three to four rooms.`,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small Desks', },
+            { content: 'Bookcases', },
+            { content: 'Furniture', },
+            { content: 'Suitcases', },
+            { content: 'Kitchen Appliances' },
+          ],
+    },
+    {
+        text: '10\' x 20\' Storage Unit',
+        alt: '10\' x 20\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
+        data: `This unit is approximately 200 sq feet of space that can hold the contents of about five rooms.
+        `,
+        amenities: [
+            { content: 'Appliances', },
+            { content: 'Car or Small Boat', },
+            { content: 'Furniture', },
+            { content: 'Bookcases', },
+            { content: 'Tow Trailer' },
+            ],
+    },
+    {
+        text: '10\' x 25\' Storage Unit',
+        alt: '10\' x 25\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
+        data: `This unit is approximately 250 sq feet of space that can hold the contents of a small house.`,
+        amenities: [
+        { content: 'Appliances', },
+        { content: 'Car or Small Boat', },
+        { content: 'Entertainment Sets', },
+        { content: 'Furniture', },
+        { content: 'Bookcases' },
+        { content: 'Tow Trailer' }
+        ],
     },
 
     {
-        size: '5\' x 10\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
-        data: `50 sq. ft. Walk-in closet, Mattress set, sofa, chest of drawers, dining
-                room set or about 100 file boxes.`,
-    },
-    {
-        size: '5\' x 15\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
-        data: `75 sq. ft. Large walk-in closet, furniture of a one bedroom apartment,
-               washer and dryer, desk, patio furniture or about 150 file boxes.`,
-    },
-    {
-        size: '10\' x 10\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
-        data: `100 sq. ft. Average size bedroom, the furniture of a one bedroom
-        apartment with a refrigerator, washer and dryer or about 200 file boxes`,
-    },
-    {
-        size: '10\' x 15\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
-        data: `150 sq. ft. Large size bedroom, furniture of a 2 bedroom apartment or
-                a small house with refrigerator, washer & dryer, patio furniture or about 300 file boxes`,
-    },
-    {
-        size: `10' x 20'`,
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
-        data: `200 sq. ft. One car garage, furniture of a 3 or 4 bedroom house with all the appliances,
-                patio furniture or about 400 file boxes`,
-    },
-    {
-        size: '10\' x 25\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
-        data: `250 sq. ft. One car garage, furniture of a 4 bedroom house with all the appliances,
-                patio furniture, lawn mower, bikes, small trailer`,
-    },
-    {
-        size: '10\' x 30\'',
+        text: '10\' x 30\' Storage Unit',
+        alt: '10\' x 30\' Storage Unit Graphic ',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
-        data: `300 sq. ft. Extra large garage, the furniture of a 4 or 5 bedroom house with
-                all the appliances, a small boat or utility trailer`,
+        data: `This unit is approximately 300sq feet of space that can store the contents of a multi-bedroom home,
+        including.`,
+        amenities: [
+            { content: 'Appliances', },
+            { content: 'Car or Small Boat', },
+            { content: 'Furniture', },
+            { content: 'Mattresses', },
+            { content: 'Bookcases', },
+            { content: 'Tow Trailer' },
+            ],
     }
 ];
 
@@ -287,14 +327,14 @@ export const unitSizerLocation2 = [
 
 export const aboutUsHeadingLocation1 = `About Linden Self Storage`;
 
-export const aboutUsHeadingLocation2 = `About Shaler Self Storage`;
+export const aboutUsHeadingLocation2 = `About Macedon Storage`;
 
 // export const aboutUsHeadingLocation3 = `About Natrona Heights`;
 
 export const aboutUsImageLocation1 = `../../assets/linden-images/climate-controlled-self-storage-units.jpg`;
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation2 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/macedon-storage-storage/macedon-storage-storage-retail-store.jpg`;
+export const aboutUsImageLocation2 = `../../assets/linden-images/standard_storage_space_unit.jpg`;
 
 // tslint:disable-next-line:max-line-length
 // export const aboutUsImageLocation3 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/natrona-heights/natrona-heights-indoor-office.jpg`;
@@ -318,20 +358,24 @@ export const aboutUsLocation1 = [
 
 export const aboutUsLocation2 = [
     {
-        p: `Our clean, well-maintained units are ready to give you that extra few feet of space at
-            home or in the garage. Whether you're preparing for family to visit or discovered you
-            have one too many tote boxes of holiday decorations, one of our storage units is a a perfect fit!`,
+        p: `Macedon Storage has over 100 newly built, state-of-the-art self storage units available for rental.
+        We also offer several outdoor storage sites for RV and boat storage.`,
     },
     {
-        p: `Are you in need of long term storage for your boat or recreational vehicle? We've got outdoor
-            parking spaces perfect for any vehicle! Let us free up that space in your yard until
-            you're ready for another adventure!`,
+        p: `We are conveniently located in the township of Macedon, NY just a few minutes from Fairport, Walworth,
+        Palmyra, and Manchester. Macedon Storage is secured by a pin-code accessible gate. We also offer convenient
+        online reservations or payments!`,
     },
     {
-        p: `Our fully stocked retail store is the ideal place to pick up tape, boxes, bubble wrap and all
-            the necessities for packing and moving! Don't forget to ask about our easy auto-pay program
-            and online account access!`,
+        p: `Whether you're looking for residential or commercial storage our facilities have units perfectly
+        suited to your needs! We have month to month rental agreements and pro-rated prices so you only pay
+        for the time you rent!`,
     },
+    {
+        p: `Video surveillance and security monitoring go that extra mile to make sure you have a safe and
+        convenient experience at Macedon Storage! Have questions? Contact us today to learn more about how
+        we can help you!`
+    }
 ];
 
 // export const aboutUsLocation3 = [
@@ -355,7 +399,6 @@ export const aboutUsLocation2 = [
 
 export const directionLocation1 = [
     {
-        label: 'Directions from Malden, WV',
         datas: [
         { content: 'Take Route I-490 to the Linden Ave. Exit (Exit 23) (Route 441).'},
         { content: ' Go east on Route 441/Linden Ave for 1 mile.'},
@@ -364,56 +407,15 @@ export const directionLocation1 = [
         { content: 'We are on the left side of the street with a green roof and "Linden Self 5. Storage" written on the main building in red letters.'},
         ],
     },
-    {
-        label: 'Directions from 119 West of the Kanawha River',
-        datas: [
-        { content: 'Head northeast on Oakwood Rd toward Lambert Pl - 0.2 mi'},
-        { content: 'Turn right onto Cantley Dr - 305 ft'},
-        { content: 'Turn left onto Corridor G - 0.2 mi'},
-        { content: 'Turn left onto US-119 N - 0.4 mi'},
-        { content: `Keep right at the fork, follow signs for I-64 E/I-77/I-79/Charleston/Beckley
-                    and merge onto I-64 E - 0.4 mi`},
-        { content: 'Take exit 58C for US-60/Lee St - 0.3 mi'},
-        { content: 'Merge onto Pennsylvania Ave N - 371 ft'},
-        { content: 'Keep right to continue on US-119 N/Pennsylvania Ave'},
-        { content: 'Continue to follow US-119 N - 0.6 mi'},
-        { content: 'Slight right onto Pennsylvania Ave - 0.1 mi'},
-        { content: 'Turn right at the 1st cross street onto Spring St - 0.2 mi'},
-        { content: 'Turn right onto Bullitt St- 413 ft'},
-        { content: 'Turn left onto Piedmont Rd'},
-        { content: 'Movin\' On Storage Center will be on your left.'},
-        ],
-    },
 ] ;
 
 export const directionLocation2 = [
     {
-        label: 'Directions from Ross Township, PA',
         datas: [
-          { content: `Head southwest on Buehner Dr toward Evergreen Rd - 112 ft` },
-          { content: `Turn left onto Evergreen Rd - 0.5 mi` },
-          { content: `Turn left onto Siebert Rd - 1.5 mi` },
-          { content: `Turn right onto Thompson Run Rd - 0.2 mi` },
-          { content: `Turn left onto Vilsack Rd - 0.9 mi` },
-          { content: `Turn left onto Iola St - 0.4 mi` },
-          { content: `Turn left onto Mt Royal Blvd - 0.8 mi` },
-          { content: `Turn right onto Willett Rd - 0.6 mi` },
-          { content: `Turn right onto Elfinwild Rd - 0.1 mi` },
-          { content: `Turn right -118 ft` },
-          { content: `Keep right` },
-          { content: `Shaler Self Storage will be on the right` },
-        ],
-    },
-    {
-        label: 'Directions from Etna, PA',
-        datas: [
-          { content: `Head northwest on Grant Ave/Mt Royal Blvd toward Weible St` },
-          { content: `Continue to follow Mt Royal Blvd - 3.5 mi` },
-          { content: `Turn right onto Willett Rd - 0.6 mi` },
-          { content: `Turn right onto Elfinwild Rd - 0.1 mi` },
-          { content: `Turn right - 118 ft` },
-          { content: `Keep right` },
-          { content: `Shaler Self Storage will be on the right` },
+          { content: `Take Route I-490 to the Route 31 exit (Exit 26) towards Palmyra.` },
+          { content: `Continue on Route 31 for 8.5 miles.` },
+          // tslint:disable-next-line:max-line-length
+          { content: `Macedon Storage is located next to a Burger King and Valvoline Oil Change. We are behind Filler's Power Sports (motorcycles and ATVs are outside).` },
         ],
     },
 ] ;

@@ -37,7 +37,7 @@ export class DirectionsComponent implements OnInit {
 }
   public fetchDetailsLocation2() {
     this.directionPoints = directionLocation2;
-    this.directionHeading = `Directions to Shaler Storage`;
+    this.directionHeading = `Directions`;
     this.id = 2;
   }
 
