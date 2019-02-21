@@ -35,19 +35,19 @@ export class PhotosComponent implements OnInit {
 
   public fetchDetailsLocation1() {
     this.galleryImages = galleryImagesLocation1;
-    this.galleryData = galleryDataLocation1;
+    // this.galleryData = galleryDataLocation1;
     this.id = 1;
   }
 
   public fetchDetailsLocation2() {
     this.galleryImages = galleryImagesLocation2;
-    this.galleryData = galleryDataLocation2;
+    // this.galleryData = galleryDataLocation2;
     this.id = 2;
   }
 
   public fetchDetailsLocation3() {
     this.galleryImages = galleryImagesLocation3;
-    this.galleryData = galleryDataLocation3;
+    // this.galleryData = galleryDataLocation3;
     this.id = 3;
   }
 
