@@ -42,8 +42,7 @@ export class LocationComponent implements OnInit {
     } else if (this.router.url.includes('/location/macedon-storage')) {
            this.meta.addTag({
              name: 'description',
-             content: `Whether you're looking to clear a room for a family gathering or use our
-                      seasonal vehicle parking, Shaler Self Storage has your self storage needs covered!`
+             content: ``
            });
            this.titleService.setTitle('Affordable Self Storage in Macedon | Linden Self Storage');
     } 

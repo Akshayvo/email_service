@@ -12,14 +12,14 @@ export const contactsLocation1 = [
         data: 'jaya13194@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
         // redirect: 'mailto:contact-linden@lindenstorage.com'
-        redirect: 'mailto:jaya13194@gmail.com'
+        // redirect: 'mailto:jaya13194@gmail.com'
     },
     {
         id: 3,
         label: 'Phone:',
         data: '(585) 381-6557',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5853816557'
+        // redirect: 'tel:5853816557'
     },
     {
         id: 4,
@@ -62,14 +62,14 @@ export const contactsLocation2 = [
         data: 'sanghmitra.v@codeparva.in',
         class: 'fas fa-envelope-open mr-2 iconColor',
         // redirect: 'mailto:support@lindenstorage.com'
-        redirect: 'mailto:sanghmitra.v@codeparva.in'
+        // redirect: 'mailto:sanghmitra.v@codeparva.in'
     },
     {
         id: 3,
         label: 'Phone:',
         data: '(585) 381-6557',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5853816557'
+        // redirect: 'tel:5853816557'
     },
 ];
 

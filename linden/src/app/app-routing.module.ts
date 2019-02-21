@@ -42,18 +42,18 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/natrona-heights-self',
-    component: LocationComponent,
-    children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
-      { path: 'reserveUnit', component: ReserveUnitComponent },
-      { path: 'photos', component: PhotosComponent },
-      { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
-    ]
-  },
+  // { path: 'location/natrona-heights-self',
+  //   component: LocationComponent,
+  //   children: [
+  //     {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+  //     { path: 'storageUnits', component: StorageUnitComponent },
+  //     { path: 'unitSizer', component: UnitSizerComponent },
+  //     { path: 'reserveUnit', component: ReserveUnitComponent },
+  //     { path: 'photos', component: PhotosComponent },
+  //     { path: 'about', component: AboutUsComponent },
+  //     { path: 'directions', component: DirectionsComponent },
+  //   ]
+  // },
   { path: 'review/linden-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
