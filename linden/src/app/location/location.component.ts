@@ -45,15 +45,7 @@ export class LocationComponent implements OnInit {
              content: ``
            });
            this.titleService.setTitle('Affordable Self Storage in Macedon | Linden Self Storage');
-    } 
-    // else  if (this.router.url.includes('/location/natrona-heights-self'))  {
-    //       this.meta.addTag({
-    //         name: 'description',
-    //         content: `We offer a wide selection of affordable self storage units and
-    //                   stellar customer service right in your backyard! Contact us to learn more!`
-    //       });
-    //       this.titleService.setTitle('Storage in Natrona Heights | Natrona Heights Self Storage');
-    // }
+      }
     }
 
   ngOnInit() {
@@ -66,8 +58,6 @@ export class LocationComponent implements OnInit {
         this.fetchDetailsLocation1();
     } else if (this.router.url.includes('/location/macedon-storage')) {
       this.fetchDetailsLocation2();
-    // } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
-    //   this.fetchDetailsLocation3();
     }
  }
 
@@ -78,9 +68,6 @@ export class LocationComponent implements OnInit {
   } else if ( this.locationId === 2 ) {
     this.router.navigate(['/location/macedon-storage/reserveUnit'],
           { queryParams: { name: 'Macedon Storage', currentTab: 'Reserve Unit' }});
-  // } else if ( this.locationId === 3) {
-  //   this.router.navigate(['/location/natrona-heights-self/reserveUnit'],
-  //         { queryParams: { name: 'Natrona Heights Self Storage', currentTab: 'Reserve Unit' }});
   }
  }
 
@@ -99,12 +86,4 @@ export class LocationComponent implements OnInit {
      this.hours = hoursLocation2;
      this.tabs = tabs;
    }
-
-  //  public fetchDetailsLocation3() {
-  //    this.name = headingLocation3;
-  //    this.locationId = 3;
-  //    this.contacts = contactsLocation3;
-  //    this.hours = hoursLocation3;
-  //    this.tabs = tabs;
-  //  }
 }

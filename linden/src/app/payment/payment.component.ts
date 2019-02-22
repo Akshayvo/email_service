@@ -2,9 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
-import { contactsLocation1, contactsLocation2,
-  // contactsLocation3
- } from '../data/contact';
+import { contactsLocation1, contactsLocation2, } from '../data/contact';
 
 @Component({
   selector: 'app-payment',
@@ -49,8 +47,5 @@ export class PaymentComponent implements OnInit {
     } else if ( this.locationId === '2' ) {
       this.contact = contactsLocation2;
     }
-    // else if ( this.locationId === '3' ) {
-    //   this.contact = contactsLocation3;
-    // }
   }
 }

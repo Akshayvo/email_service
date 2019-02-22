@@ -19,11 +19,6 @@ export const navLinks = [
                   label: 'Macedon Storage',
                   path: '/location/macedon-storage',
               },
-            //   {
-            //       id: '3',
-            //       label: 'Natrona Heights Self Storage',
-            //       path: '/location/natrona-heights-self',
-            //   },
         ]
     },
     {

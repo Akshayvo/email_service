@@ -25,21 +25,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.fetchNavigationLinks();
     this.router.events.subscribe(path => {
-      // this.isSomePage();
     });
   }
-
-  // public isSomePage() {
-  //   if (this.router.url.includes('/location/linden-storage')) {
-  //       this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/movin-on-logo.png';
-  //   } else if (this.router.url.includes('/location/macedon-storage')) {
-  //     this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/shaler-logo.png';
-  //   } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
-  //       this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/natrona-logo.png';
-  //   } else {
-  //     this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/pittsburgh-area-storage-centers-logo.jpg';
-  //   }
-  // }
 
   public navigate (location: any) {
     this.router.navigate([location]);

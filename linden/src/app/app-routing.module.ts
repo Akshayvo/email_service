@@ -9,10 +9,8 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { StorageUnitComponent } from './storage-unit/storage-unit.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
-import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
-import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 const routes: Routes = [
@@ -24,8 +22,6 @@ const routes: Routes = [
       { path: 'storageUnits', component: StorageUnitComponent },
       { path: 'unitSizer', component: UnitSizerComponent },
       { path: 'reserveUnit', component: ReserveUnitComponent },
-      { path: 'truck-rentals', component: TruckRentalsComponent },
-      { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
     ]
@@ -37,23 +33,10 @@ const routes: Routes = [
       { path: 'storageUnits', component: StorageUnitComponent },
       { path: 'unitSizer', component: UnitSizerComponent },
       { path: 'reserveUnit', component: ReserveUnitComponent },
-      { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  // { path: 'location/natrona-heights-self',
-  //   component: LocationComponent,
-  //   children: [
-  //     {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-  //     { path: 'storageUnits', component: StorageUnitComponent },
-  //     { path: 'unitSizer', component: UnitSizerComponent },
-  //     { path: 'reserveUnit', component: ReserveUnitComponent },
-  //     { path: 'photos', component: PhotosComponent },
-  //     { path: 'about', component: AboutUsComponent },
-  //     { path: 'directions', component: DirectionsComponent },
-  //   ]
-  // },
   { path: 'review/linden-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
@@ -70,14 +53,6 @@ const routes: Routes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJH8RSUuYs0YkR_fntSTEO-Zo'
     }
   },
-  // { path: 'review/natrona-heights-self', component: HomeComponent,
-  //   resolve: {
-  //       url: 'externalUrlRedirectResolver'
-  //   },
-  //   data: {
-  //       externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ88r5GzG9NIgR8Ljo8DuDurM'
-  //   }
-  // },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },

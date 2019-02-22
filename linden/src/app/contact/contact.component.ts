@@ -3,9 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
-          contactsLocation2, hoursLocation2,
-          // contactsLocation3, hoursLocation3
-         } from '../data/contact';
+          contactsLocation2, hoursLocation2,  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';

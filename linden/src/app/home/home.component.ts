@@ -1,10 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { contactsLocation1, hoursLocation1,
-          contactsLocation2, hoursLocation2,
-          // contactsLocation3, hoursLocation3 
-        } from '../data/contact';
+import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2 } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
 import { LocationService } from '../services/location.service';
 
@@ -55,9 +52,6 @@ export class HomeComponent implements OnInit {
     } else if ( this.locationId === '2' ) {
       this.fetchContactDetailsLocation2();
     }
-    // else if ( this.locationId === '3' ) {
-    //   this.fetchContactDetailsLocation3();
-    // }
   }
 
     public fetchContactDetailsLocation1() {
@@ -72,18 +66,12 @@ export class HomeComponent implements OnInit {
       this.hoursDetails = hoursLocation2;
     }
 
-    // public fetchContactDetailsLocation3() {
-    //   this.heading = `Natrona Heights Self Storage`;
-    //   this.contactDetails = contactsLocation3;
-    //   this.hoursDetails = hoursLocation3;
-    // }
+    public fetchFeatureHead() {
+      this.features = featuresHead;
+    }
 
-  public fetchFeatureHead() {
-    this.features = featuresHead;
-  }
-
-  public fetchStaticContent() {
-    this.serviceOffered = serviceOffered;
-  }
+    public fetchStaticContent() {
+      this.serviceOffered = serviceOffered;
+    }
 
 }

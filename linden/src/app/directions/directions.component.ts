@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { directionLocation1, directionLocation2, 
+import { directionLocation1, directionLocation2,
   // directionLocation3
  } from '../data/location';
 @Component({
@@ -24,7 +24,7 @@ export class DirectionsComponent implements OnInit {
        this.fetchDetailsLocation1();
      } else if (this.router.url.includes('/location/macedon-storage')) {
        this.fetchDetailsLocation2();
-     } 
+     }
     //  else  if (this.router.url.includes('/location/natrona-heights-self'))  {
     //    this.fetchDetailsLocation3();
     //  }

@@ -17,24 +17,12 @@ export const tabs1 = [
         path: './reserveUnit',
         active: false,
     },
-    // {
-    //     id: '4',
-    //     name: 'Gallery',
-    //     path: './photos',
-    //     active: false,
-    // },
     {
         id: '4',
         name: 'About Us',
         path: './about',
         active: false,
     },
-    // {
-    //     id: '6',
-    //     name: 'Truck Rentals',
-    //     path: './truck-rentals',
-    //     active: false,
-    // },
     {
         id: '5',
         name: 'Directions',
@@ -62,12 +50,6 @@ export const tabs = [
         path: './reserveUnit',
         active: false,
     },
-    // {
-    //     id: '4',
-    //     name: 'Gallery',
-    //     path: './photos',
-    //     active: false,
-    // },
     {
         id: '4',
         name: 'About Us',
@@ -86,8 +68,6 @@ export const tabs = [
 export const headingLocation1 = `Linden Self Storage`;
 
 export const headingLocation2 = `Macedon Storage`;
-
-// export const headingLocation3 = `Natrona Heights Self Storage`;
 
 export const unitSizerLocation1 = [
     {
@@ -272,72 +252,17 @@ export const unitSizerLocation2 = [
     }
 ];
 
-// export const unitSizerLocation3 = [
-//        {
-//         size: '5\' x 5\'',
-//         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
-//         data: `25 sq. ft. Hall Closet, small bedroom or office, boxes,
-//                clothing, small furniture, toys, business records or about 50 file boxes.`,
-//     },
-
-//     {
-//         size: '5\' x 10\'',
-//         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
-//         data: `50 sq. ft. Walk-in closet, Mattress set, sofa, chest of drawers, dining
-//                 room set or about 100 file boxes.`,
-//     },
-//     {
-//         size: '5\' x 15\'',
-//         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
-//         data: `75 sq. ft. Large walk-in closet, furniture of a one bedroom apartment,
-//                washer and dryer, desk, patio furniture or about 150 file boxes.`,
-//     },
-//     {
-//         size: '10\' x 10\'',
-//         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
-//         data: `100 sq. ft. Average size bedroom, the furniture of a one bedroom
-//         apartment with a refrigerator, washer and dryer or about 200 file boxes`,
-//     },
-//     {
-//         size: '10\' x 15\'',
-//         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
-//         data: `150 sq. ft. Large size bedroom, furniture of a 2 bedroom apartment or
-//                 a small house with refrigerator, washer & dryer, patio furniture or about 300 file boxes`,
-//     },
-
-//     {
-//         size: `10' x 20'`,
-//         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
-//         data: `200 sq. ft. One car garage, furniture of a 3 or 4 bedroom house with all the appliances,
-//                 patio furniture or about 400 file boxes`,
-//     },
-//     {
-//         size: '10\' x 25\'',
-//         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
-//         data: `250 sq. ft. One car garage, furniture of a 4 bedroom house with all the appliances,
-//                 patio furniture, lawn mower, bikes, small trailer`,
-//     },
-//     {
-//         size: '10\' x 30\'',
-//         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
-//         data: `300 sq. ft. Extra large garage, the furniture of a 4 or 5 bedroom house with
-//                 all the appliances, a small boat or utility trailer`,
-//     }
-// ];
 
 export const aboutUsHeadingLocation1 = `About Linden Self Storage`;
 
 export const aboutUsHeadingLocation2 = `About Macedon Storage`;
 
-// export const aboutUsHeadingLocation3 = `About Natrona Heights`;
 
 export const aboutUsImageLocation1 = `../../assets/linden-images/climate-controlled-self-storage-units.jpg`;
 
 // tslint:disable-next-line:max-line-length
 export const aboutUsImageLocation2 = `../../assets/linden-images/standard_storage_space_unit.jpg`;
 
-// tslint:disable-next-line:max-line-length
-// export const aboutUsImageLocation3 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/natrona-heights/natrona-heights-indoor-office.jpg`;
 
 export const aboutUsLocation1 = [
     {
@@ -378,25 +303,6 @@ export const aboutUsLocation2 = [
     }
 ];
 
-// export const aboutUsLocation3 = [
-//     {
-//         p: `Our friendly and professional management are available to help answer
-//             any questions you may have about our available units and associated self storage services. `,
-//     },
-//     {
-//         p: `Our fully stocked retail store has all of the tape, boxes, and
-//             packing supplies you will need to make your moving or storage experience
-//             an easy one! We cater to both residential and commercial storage with affordable
-//             pricing on both indoor and outdoor units. Natrona Heights even offers temperature
-//             controlled units to help protect your belongings against the elements!`,
-//     },
-//     {
-//         p: `Whether you're looking for a little extra room during a move or you need
-//             seasonal storage for a recreational vehicle, boat, or trailer, Natrona Heights
-//             has your self storage needs covered! We are proud to serve our community and look forward to meeting you!`,
-//     },
-// ];
-
 export const directionLocation1 = [
     {
         datas: [
@@ -420,21 +326,4 @@ export const directionLocation2 = [
     },
 ] ;
 
-// export const directionLocation3 = [
-//     {
-//         label: 'Directions to Natrona Heights Self Storage From Harwick',
-//         datas: [
-//           { content: `Head northwest on Spring St toward Jacoby Rd - 121 ft` },
-//           { content: `Turn left onto Jacoby Rd - 0.1 mi` },
-//           { content: `Continue onto Hite Rd - 0.1 mi` },
-//           { content: `Turn right onto the ramp to Kittanning - 0.1 mi` },
-//           { content: `Merge onto PA-28 N - 6.5 mi` },
-//           { content: `Take exit 15 toward Natrona Heights - 0.2 mi` },
-//           { content: `Turn right onto Burtner Rd - 0.8 mi` },
-//           { content: `Turn left onto Freeport Rd - 1.6 mi` },
-//           { content: `Turn left onto Veterans Drive - 472 ft` },
-//           { content: `Natrona Heights Self Storage will be on the left` },
-//         ],
-//     },
-// ] ;
 

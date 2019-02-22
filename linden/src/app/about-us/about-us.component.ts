@@ -1,12 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { aboutUsLocation1, aboutUsLocation2,
-  //  aboutUsLocation3,
-          aboutUsHeadingLocation1, aboutUsHeadingLocation2,
-          //  aboutUsHeadingLocation3,
-          aboutUsImageLocation1, aboutUsImageLocation2,
-          // aboutUsImageLocation3 
-        } from '../data/location';
+import { aboutUsLocation1, aboutUsLocation2, aboutUsHeadingLocation1, aboutUsHeadingLocation2,
+  aboutUsImageLocation1, aboutUsImageLocation2, } from '../data/location';
 
 @Component({
   selector: 'app-about-us',
@@ -31,10 +26,7 @@ export class AboutUsComponent implements OnInit {
       this.fetchDetailsLocation1();
   } else if (this.router.url.includes('/location/macedon-storage')) {
     this.fetchDetailsLocation2();
-  } 
-  // else  if (this.router.url.includes('/location/natrona-heights-self'))  {
-  //   this.fetchDetailsLocation3();
-  // }
+  }
   }
 
   public fetchDetailsLocation1() {
@@ -50,11 +42,4 @@ export class AboutUsComponent implements OnInit {
     this.image = aboutUsImageLocation2;
     this.alt = 'Photograph of an open self storage unit at Macedon Storage';
   }
-
-  // public fetchDetailsLocation3() {
-  //   this.aboutPara = aboutUsLocation3;
-  //   this.heading = aboutUsHeadingLocation3;
-  //   this.image = aboutUsImageLocation3;
-  //   this.alt = 'Natrona Heights Retail Store';
-  // }
 }
