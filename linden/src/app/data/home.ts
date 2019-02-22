@@ -2,22 +2,22 @@
 export const featuresHead = [
     {
         label: '3 Convenient Locations',
-        data: '../../assets/linden-images/location.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Linden_Images/location.svg',
         alt: 'Icon art displaying a location pin'
     },
     {
         label: 'Online Reservation & Bill Pay',
-        data: '../../assets/linden-images/online.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Linden_Images/online.svg',
         alt: 'Icon art displaying a screen with cursor'
     },
     {
         label: 'Stellar Customer Service',
-        data: '../../assets/linden-images/operator.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Linden_Images/operator.svg',
         alt: 'Customer Service Representative Icon'
     },
     {
         label: 'Climate Controlled Units Available',
-        data: '../../assets/linden-images/thermometer.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Linden_Images/thermometer.svg',
         alt: 'Icon of thermometer indicating climate controlled units'
     },
 ];

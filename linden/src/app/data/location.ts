@@ -258,10 +258,11 @@ export const aboutUsHeadingLocation1 = `About Linden Self Storage`;
 export const aboutUsHeadingLocation2 = `About Macedon Storage`;
 
 
-export const aboutUsImageLocation1 = `../../assets/linden-images/climate-controlled-self-storage-units.jpg`;
+// tslint:disable-next-line:max-line-length
+export const aboutUsImageLocation1 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Linden_Images/climate-controlled-self-storage-units.jpg`;
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation2 = `../../assets/linden-images/standard_storage_space_unit.jpg`;
+export const aboutUsImageLocation2 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Linden_Images/standard_storage_space_unit.jpg`;
 
 
 export const aboutUsLocation1 = [

@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://.com/sitemap.xml
+Sitemap: https://www.linden-staging-syrasoft.com/sitemap.xml
 User-agent: *
 Disallow:
