@@ -11,6 +11,10 @@
   }
 }
 
+iframe {
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
   .storageUnitHolder {
     padding: 16px;

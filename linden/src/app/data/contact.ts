@@ -8,24 +8,23 @@ export const contactsLocation1 = [
     {
         id: 2,
         label: 'Email:',
-        // data: 'contact-linden@lindenstorage.com',
-        data: 'jaya13194@gmail.com',
+        data: 'contact-linden@lindenstorage.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        // redirect: 'mailto:contact-linden@lindenstorage.com'
-        // redirect: 'mailto:jaya13194@gmail.com'
+        redirect: 'mailto:contact-linden@lindenstorage.com'
     },
     {
         id: 3,
         label: 'Phone:',
         data: '(585) 381-6557',
         class: 'fas fa-phone mr-2 iconColor',
-        // redirect: 'tel:5853816557'
+        redirect: 'tel:5853816557'
     },
     {
         id: 4,
         label: 'Fax',
-        data: '(585) 381-6557',
-        class: 'fas fa-fax mr-2 iconColor'
+        data: '(585) 381-3956',
+        class: 'fas fa-fax mr-2 iconColor',
+        redirect: 'fax:5853813956'
     },
 ];
 
@@ -58,18 +57,16 @@ export const contactsLocation2 = [
     {
         id: 2,
         label: 'Email:',
-        // data: 'support@lindenstorage.com',
-        data: 'sanghmitra.v@codeparva.in',
+        data: 'support@lindenstorage.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        // redirect: 'mailto:support@lindenstorage.com'
-        // redirect: 'mailto:sanghmitra.v@codeparva.in'
+        redirect: 'mailto:support@lindenstorage.com'
     },
     {
         id: 3,
         label: 'Phone:',
         data: '(585) 381-6557',
         class: 'fas fa-phone mr-2 iconColor',
-        // redirect: 'tel:5853816557'
+        redirect: 'tel:5853816557'
     },
 ];
 
@@ -87,37 +84,3 @@ export const hoursLocation2 = [
         data: 'CLOSED',
     },
 ];
-
-// export const contactsLocation3 = [
-//     {
-//         label: 'Address:',
-//         data: '896 Veterans Drive, Natrona Heights, PA 15065',
-//         class: 'fas fa-map-marker-alt mr-2 iconColor',
-//     },
-
-//     {
-//         label: 'Phone:',
-//         data: '(724) 295-0411',
-//         class: 'fas fa-phone mr-2 iconColor',
-//     },
-//     {
-//         label: 'Email:',
-//         data: 'natronaheightsselfstorage@gmail.com ',
-//         class: 'fas fa-envelope-open mr-2 iconColor',
-//     },
-// ];
-
-// export const hoursLocation3 = [
-//     {
-//         label: 'Monday - Friday: ',
-//         data: '9:00AM - 4:00PM',
-//     },
-//     {
-//         label: 'Saturday: ',
-//         data: '9:00AM - 2:00PM',
-//     },
-//     {
-//         label: 'Access hours: ',
-//         data: '7:00AM - 7:00PM',
-//     },
-// ];

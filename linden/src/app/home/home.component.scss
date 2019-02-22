@@ -18,8 +18,7 @@
   }
 
   img {
-    width: 70%;
-    height: 100%;
+    width: 100%;
   }
 
   p {
@@ -73,6 +72,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
+}
+
+.contact-links {
+  a {
+    color: black;
+  }
+}
+
+.map-responsive {
+  iframe {
+    border: 2px solid white;
+  }
 }
 
 // .jumbotron-top2 {

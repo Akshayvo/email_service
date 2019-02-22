@@ -9,6 +9,14 @@
   .single-block {
     background-color: $white;
   }
+
+  ul {
+    padding-inline-start: 17px;
+  }
+}
+
+.height {
+  height: 100%;
 }
 
 @media only screen and (max-width: 600px) {

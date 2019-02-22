@@ -6,6 +6,15 @@ a {
 
 .navbar {
   padding-bottom: 0;
+  .dropdown-menu {
+    min-width: 14rem;
+    a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #4e4848;
+    padding: 10px 20px;
+   }
+  }
 
   .nav-link-active {
     border-bottom: 5px $primary solid;
@@ -65,27 +74,32 @@ a {
   border: 1px #efefef solid;
 }
 
-@media (min-width: 768px) {
-  .navbar-nav {
-    li {
-      a {
-        line-height: 1.5rem;
-        text-align: center;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 991px) {
   .display {
     display: none;
   }
 
+
+  .dropdown {
+    ul {
+      text-align: -webkit-center;
+    }
+  } 
+
+  .dropdown-menu {
+    left: -50px;
+  }
+
   .navbar {
+
     .navbar-nav {
       overflow-y: auto;
       overflow-x: hidden;
       display: flex;
+       
+      li {
+        width: fit-content;
+      }
     }
 
     .navbar-brand {

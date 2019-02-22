@@ -76,8 +76,10 @@ export class ContactComponent implements OnInit {
   public dataupdate() {
     if ( this.locationId === '1' || this.locationId === 1 ) {
       this.fetchContactDetailsLocation1();
+      this.mailSent = false;
     } else if ( this.locationId === '2' ) {
       this.fetchContactDetailsLocation2();
+      this.mailSent = false;
     }
     //  else if ( this.locationId === '3' ) {
     //   this.fetchContactDetailsLocation3();
@@ -135,6 +137,7 @@ onSubmit() {
            console.log('Error :', err);
          });
        this.submitted = false;
+       this.mailSent = false;
        this.contactForm.reset();
  }
 }

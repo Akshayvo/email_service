@@ -5,6 +5,32 @@
   padding-top: 90px;
 }
 
+.iconColor {
+  font-size: 1.1rem;
+}
+
+.contact-data {
+  a {
+    color: white;
+  }
+}
+
+.header-background {
+  background: white;
+
+  h1 {
+    text-transform:capitalize;
+  }
+}
+
+.sub-component-background {
+  background-color: #f1f0ed;
+}
+
+.tab-background {
+  background-color: white;
+}
+
 .social-content {
   background-color: $primary;
   color: $white;

@@ -9,7 +9,7 @@
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
-      <ul class="navbar-nav ml-auto nav-scroll">
+      <ul class="navbar-nav ml-auto nav-scroll align-items-center">
         <li class="nav-item mx-2" *ngFor="let nav of navLinks">
           <span *ngIf="nav?.type === 'link'">
             <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
