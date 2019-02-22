@@ -1,0 +1,22 @@
+<div class="fixed-top">
+    <app-header></app-header>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="contact-button">
+    <button (click)='dataShow();' *ngIf="!flag"><img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Exit_120_Images/telephone.svg" alt="" height="25px" width="25px;"></button>
+    <span *ngIf='flag' [ngClass]="'sticky-template'">
+        <div class="row mx-0">
+            <div class="col-2 px-0">
+                 <button (click)='dataShow()'><img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Exit_120_Images/close.svg" alt="" height="25px" width="25px;"></button>        
+            </div>
+            <div class="col-10 px-0">
+                <app-contact-button></app-contact-button>
+            </div>
+        </div>
+    </span>
+</div>
+      
+
+<app-footer></app-footer>
