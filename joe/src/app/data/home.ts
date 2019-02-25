@@ -33,22 +33,22 @@ export const featuresList = [
 
 export const feature = [
     {
-        path: '../../assets/st-joe-images/location.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/St_Joe_Images/location.svg',
         label: ' Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
-        path: '../../assets/st-joe-images/support.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/St_Joe_Images/support.svg',
         label: 'Stellar Customer Service',
         alt: 'Customer Service Representative Icon',
     },
     {
-        path: '../../assets/st-joe-images/online.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/St_Joe_Images/online.svg',
         label: 'Online Reservation & Bill Pay',
         alt: 'Icon art displaying a screen with cursor'
     },
     {
-        path: '../../assets/st-joe-images/thermometer.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/St_Joe_Images/thermometer.svg',
         label: 'Temperature Controlled Units Available',
         alt: 'Icon of thermometer indicating climate controlled units'
     },

@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://www.stjoeselfstorage.com/sitemap.xml
+Sitemap: https:/stjoe-staging.syrasoft.com/sitemap.xml
 User-agent: *
 Disallow:

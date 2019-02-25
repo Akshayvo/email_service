@@ -2,7 +2,7 @@
 
 .payment-top {
   height: 60vh;
-  background: url("../../assets/st-joe-images/pay-rent-optimized.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/St_Joe_Images/pay-rent-optimized.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -33,9 +33,9 @@
   }
 }
 
-.content-margin-top {
-  margin-top: 64px;
-}
+// .content-margin-top {
+//   margin-top: 64px;
+// }
 
 .content-Holder {
   text-align: center;
@@ -81,9 +81,9 @@
     background-position: center;
   }
 
-  .content-margin-top {
-    margin-top: 36px;
-  }
+  // .content-margin-top {
+  //   margin-top: 36px;
+  // }
 
   .payment-bottom {
     padding: 16px 0;

@@ -3,7 +3,7 @@
 .unit-sizer-top {
   color: $white;
   height: 60vh;
-  background: url("../../assets/st-joe-images/st-joe-self-storage-row-of-units.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/St_Joe_Images/st-joe-self-storage-row-of-units.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -34,9 +34,9 @@
   }
 }
 
-.content-margin-top {
-  margin-top: 64px;
-}
+// .content-margin-top {
+//   margin-top: 64px;
+// }
 
 .disp-mob-current-size {
   color: $primary;

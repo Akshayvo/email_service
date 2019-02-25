@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .jumbotron {
-  background: url("../../assets/st-joe-images/st-joes-self-storage-building.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/St_Joe_Images/st-joes-self-storage-building.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -47,7 +47,7 @@
 }
 
 .we-provide {
-  background: url("../../assets/st-joe-images/outdoor-units-open-doors.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/St_Joe_Images/outdoor-units-open-doors.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

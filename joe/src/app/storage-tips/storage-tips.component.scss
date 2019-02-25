@@ -3,7 +3,7 @@
 
 
 .storage-tips-top {
-  background: url("../../assets/st-joe-images/storage-tips-optimized.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/St_Joe_Images/storage-tips-optimized.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -31,9 +31,9 @@
   padding: 48px 0;
 }
 
-.content-margin-top {
-  margin-top: 64px;
-}
+// .content-margin-top {
+//   margin-top: 64px;
+// }
 
 .content-Holder {
   min-height: 96vh;
@@ -101,9 +101,9 @@
     background-position: bottom;
   }
 
-  .content-margin-top {
-    margin-top: 36px;
-  }
+  // .content-margin-top {
+  //   margin-top: 36px;
+  // }
 }
 
 @media screen and (max-width: 767px) {
