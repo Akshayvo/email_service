@@ -30,7 +30,7 @@
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/platform-server": "^6.1.0",
     "@angular/router": "^6.1.0",
-    "@ng-toolkit/universal": "^1.1.47",
+    "@ng-toolkit/universal": "^1.1.51",
     "@nguniversal/express-engine": "^6.1.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.1.0",
     "angulartics2": "^6.0.0",
@@ -70,6 +70,7 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~2.9.2",
+    "webpack": "^4.29.5",
     "webpack-cli": "^2.0.14"
   }
 }

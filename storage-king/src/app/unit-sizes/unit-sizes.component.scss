@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .unit-sizer-holder {
-  padding-top: 130px;
+  padding-top: 185px;
   min-height: 86vh;
   margin-bottom: 50px;
 }
@@ -19,11 +19,13 @@
 }
 
 .unit-sizer-container {
+  padding: 64px;
   color: black;
   min-height: 620px;
 
   .unit-sizer-box {
-    padding: 64px;
+    // padding: 64px;
+    height: 500px;
   }
 
   .unit-dimention {
@@ -119,6 +121,15 @@
 
 
 @media screen and (max-width: 767px) {
+  .unit-sizer-container {
+    padding: 16px;
+
+    .unit-sizer-box {
+      // padding: 16px;
+      height: 425px;
+    }
+  }
+
   .unit-sizer-holder {
     padding-top: 80px;
   }
@@ -143,9 +154,6 @@
     }
   }
 
-  .unit-sizer-box {
-    padding: 16px;
-  }
 
   .col-1 {
     img {
@@ -176,8 +184,11 @@
   }
 
   .unit-sizer-container {
+    padding: 16px;
+
     .unit-sizer-box {
-      padding: 16px;
+      // padding: 16px;
+      height: 430px;
     }
 
     .col-3 {

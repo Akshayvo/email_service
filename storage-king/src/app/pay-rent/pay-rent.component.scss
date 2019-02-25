@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .rent-holder {
-  padding-top: 130px;
+  padding-top: 185px;
   min-height: 87vh;
   margin-bottom: 50px;
 
@@ -9,6 +9,10 @@
     padding: 64px;
     background-color: $light;
   }
+}
+
+.custom-border {
+  border-left: 1px solid black;
 }
 
 .rent-example {
@@ -31,6 +35,10 @@
   .rent-example {
     border-left: none;
     padding-top: 16px;
+  }
+
+  .custom-border {
+    border: none;
   }
 }
 

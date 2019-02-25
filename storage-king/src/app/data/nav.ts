@@ -3,10 +3,10 @@ export const navLinks = [
         label: 'HOME',
         path: '/',
     },
-    {
-        label: 'VIEW UNITS',
-        path: '/view-units',
-    },
+    // {
+    //     label: 'VIEW UNITS',
+    //     path: '/view-units',
+    // },
     {
         label: 'UNIT SIZES',
         path: '/unit-sizes',

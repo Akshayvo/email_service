@@ -66,15 +66,14 @@ ul {
 
 .navbar-brand {
   img {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    width: 150px;
   }
 }
 
 .nav-link {
   color: $dark !important;
   font-weight: 600;
-  padding: 22px;
+  padding: 49px 22px;
 }
 
 .nav-link:hover {
@@ -111,6 +110,13 @@ ul {
 
   .nav-link {
     text-align: center;
+    padding: 22px;
+  }
+
+  .navbar-brand {
+    img {
+      width: 100px;
+    }
   }
 }
 

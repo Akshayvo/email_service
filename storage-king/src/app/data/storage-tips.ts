@@ -14,8 +14,7 @@ export const storagePoints = [
             heading: 'Storing Books and Personal Papers',
             data: `Use file boxes. They are the best containers for your important
                   documents. Pack books flat and fill any empty space to minimize
-                  movement. Avoid overfilling cartons. Keep pallets free of
-                  moisture by placing plastic sheeting on the top of them.`,
+                  movement. Avoid overfilling cartons.`,
         },
         {
             heading: 'Storing Large Appliances and Equipment',
