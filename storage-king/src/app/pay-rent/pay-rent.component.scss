@@ -25,9 +25,15 @@
   }
 }
 
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .rent-holder {
+    padding-top: 210px;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .rent-holder {
-    padding-top: 80px;
+    padding-top: 95px;
   }
 }
 
@@ -44,7 +50,7 @@
 
 @media only screen and (max-width: 600px) {
   .rent-holder {
-    padding-top: 80px;
+    padding-top: 95px;
 
     .rent-sub-holder {
       padding: 16px;

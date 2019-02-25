@@ -101,7 +101,7 @@
 
 @media screen and (max-width: 991px) {
   .unit-sizer-holder {
-    padding-top: 80px;
+    padding-top: 95px;
   }
 
 
@@ -119,6 +119,11 @@
   }
 }
 
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .unit-sizer-holder {
+    padding-top: 210px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .unit-sizer-container {
@@ -131,7 +136,7 @@
   }
 
   .unit-sizer-holder {
-    padding-top: 80px;
+    padding-top: 95px;
   }
 
 
@@ -164,7 +169,7 @@
 
 @media screen and (max-width: 600px) {
   .unit-sizer-holder {
-    padding-top: 80px;
+    padding-top: 95px;
   }
 
   .unit-sizer-top {
