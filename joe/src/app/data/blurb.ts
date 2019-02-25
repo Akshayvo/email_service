@@ -1,6 +1,6 @@
 export const jumbotronHome = [
   {
-    heading: `Affordable Self Storage Units`,
+    heading: `Convenient and Affordable Self Storage Units!`,
     blurb: `Opened in 2015, St. Joe Self Storage offers conveniently located, high quality,
     and well maintained self storage units in a variety of sizes! Contact us today to learn more
     about our services and experience our first-class customer service!`,

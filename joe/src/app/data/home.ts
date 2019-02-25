@@ -72,5 +72,4 @@ export const aboutUs = [
     },
 ];
 
-export const gettingStarted = `Are you ready to get started with EXIT 120 Self Storage? Simply
-click below and fill out our contact form! A member of our team will reach out promptly!`;
+export const gettingStarted = ``;
