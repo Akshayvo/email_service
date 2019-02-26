@@ -11,24 +11,20 @@
   }
 }
 
-.custom-cta {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.cta-text {
-  position: absolute;
-  bottom: 15px;
-  color: $white;
-  font-size: 1rem;
-}
-
 .cta {
-  height: 50px;
+  height: 74px;
   background-color: $primary;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: flex;
   align-items: center;
-  text-align: -webkit-right;
+  justify-content: center;
+
+  p {
+    color: $white;
+    font-size: 22px;
+  }
 }
 
 .disp {
@@ -60,14 +56,14 @@
 // HOME jUMBOTRON
 
 .jumbotron-top {
-  height: 80vh;
+  height: 75vh;
 
   .jumbotron {
     background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Selkirk_Images/self-storage-units.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 75vh;
     color: $fontColor;
     overflow: hidden;
     padding: 0;
@@ -112,8 +108,9 @@
 
 .jumbotron-bottom {
   display: flex;
-  align-items: center;
-  height: 20vh;
+  // align-items: center;
+  // height: 25vh;
+  height: 250px;
 
   .feature-text {
     text-transform: uppercase;
@@ -230,7 +227,7 @@
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
-        top: 20%;
+        top: 25%;
       }
     }
   }
