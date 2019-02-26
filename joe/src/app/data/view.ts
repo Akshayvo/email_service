@@ -1,7 +1,7 @@
 export const viewRate = [
     {
-        p: `St. Joe Self Storage has been serving Evansville, Newburgh, Boonville and
-        surrounding areas since 2015. Our brand new units are covered by security cameras
+        p: `St. Joe Self Storage has been serving Evansville, Mt. Vernon, Newburgh and surrounding areas since 2015.
+        Our brand new units are covered by security cameras
         and are completely fenced in, accessible by keypad activated gate.`,
     },
     {

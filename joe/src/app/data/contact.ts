@@ -32,10 +32,10 @@ export const hours = [
     },
     {
         label: 'Saturday - Sunday: ',
-        data: 'CLOSED'
+        data: 'CLOSED (access reservations and move-in online)'
     },
     {
-        label: 'Access Hours: ',
+        label: 'Gate Access: ',
         data: '7 Days a Week 8:00AM - 8:00PM'
     }
 ];

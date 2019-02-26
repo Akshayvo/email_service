@@ -1,5 +1,8 @@
 export const storageTip = [
     {
+        data: `Use plastic bins/containers to protect from rodents/insects.`
+    },
+    {
         data: `Use smaller boxes for books and heavy items.`
     },
     {
@@ -19,6 +22,9 @@ export const storageTip = [
     },
     {
         data: `Place heavier items in the bottom of the box and lighter items on top.`
+    },
+    {
+        data: `Never place food in a storage unit.`
     }
 ];
 
