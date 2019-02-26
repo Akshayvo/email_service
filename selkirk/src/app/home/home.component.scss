@@ -5,6 +5,32 @@
   color: $fontColor;
 }
 
+.map {
+  iframe {
+    border: 2px solid white;
+  }
+}
+
+.custom-cta {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.cta-text {
+  position: absolute;
+  bottom: 15px;
+  color: $white;
+  font-size: 1rem;
+}
+
+.cta {
+  height: 50px;
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  text-align: -webkit-right;
+}
+
 .disp {
   display: block;
 
@@ -139,6 +165,14 @@
       height: 200px;
     }
   }
+
+  .cta {
+    display: none;
+  }
+
+  .cta-text {
+    display: none;
+  }
 }
 
 
@@ -219,6 +253,14 @@
     display: none;
   }
 
+  .cta {
+    display: none;
+  }
+
+  .cta-text {
+    display: none;
+  }
+
   .jumbotron-top {
     .button-width {
       width: 100%;
@@ -256,7 +298,7 @@
   }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 830px) and (min-height: 641px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 830px) and (min-height: 681px) {
   .disp {
     p {
       font-size: 0.8rem;
@@ -278,7 +320,7 @@
 }
 
 
-@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 640px) and (min-height: 481px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 680px) and (min-height: 546px) {
   .jumbotron-bottom {
     display: flex;
     align-items: center;
@@ -346,8 +388,16 @@
 }
 
 
-@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 480px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 545px) {
   .disp {
+    display: none;
+  }
+
+  .cta {
+    display: none;
+  }
+
+  .cta-text {
     display: none;
   }
 
@@ -392,14 +442,26 @@
     align-items: center;
   }
 
+  .jumbotron-top {
+    .jumbotron {
+      .jumbotron-skew-text {
+        top: 25%;
+      }
+    }
+  }
+
   .disp {
     h6 {
       font-size: 0.8rem;
     }
+
+    h2 {
+      font-size: 1.8rem;
+    }
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 640px) and (min-height: 481px) {
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 640px) and (min-height: 546px) {
   .jumbotron-bottom {
     display: flex;
     align-items: center;
@@ -450,6 +512,7 @@
         width: 35%;
         position: absolute;
         bottom: 0;
+        // top: 25%;
       }
 
       .button-width {
@@ -471,8 +534,16 @@
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 480px) {
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 545px) {
   .disp {
+    display: none;
+  }
+
+  .cta {
+    display: none;
+  }
+
+  .cta-text {
     display: none;
   }
 
@@ -560,6 +631,14 @@
 
 @media only screen and (min-width: 1200px) and (max-height: 480px) {
   .disp {
+    display: none;
+  }
+
+  .cta {
+    display: none;
+  }
+
+  .cta-text {
     display: none;
   }
 
