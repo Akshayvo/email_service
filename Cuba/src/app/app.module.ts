@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,6 +21,7 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
     AccordionComponent,
     ContactUsComponent,
     PayRentComponent,
-    UnitSizerComponent
+    UnitSizerComponent,
+    ErrorHandlerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -46,7 +49,13 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
     HttpClientModule,
   ],
   providers: [
-    Title
+    Title,
+    {
+      provide: 'externalUrlRedirectResolver',
+      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+          window.location.href = (route.data as any).externalUrl;
+      }
+    }
   ],
   bootstrap: [AppComponent]
 })

@@ -101,6 +101,7 @@ export class ContactUsComponent implements OnInit {
            });
          this.submitted = false;
          // MailService(body);
+         this.mailSent = false;
          this.contactForm.reset();
    }
  }
