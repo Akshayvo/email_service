@@ -69,6 +69,14 @@
     margin-block-start: 36px;
     margin-block-end: 16px;
   }
+
+  .contentHolder {
+    .scroll-wrapper {
+      iframe {
+        height: 400px;
+      }
+    }
+  }
 }
 
 
