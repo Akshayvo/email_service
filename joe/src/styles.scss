@@ -76,6 +76,10 @@ body {
   border-radius: 25px;
 }
 
+.btn-primary:active {
+  background-color: $primary !important;
+}
+
 .btn-outline-primary {
   background-color: transparent;
   border-color: $primary;
@@ -90,6 +94,10 @@ body {
   border-color: $primaryDark;
   border-radius: 25px;
   color: $white !important;
+}
+
+.btn-outline-primary:active {
+  background-color: $primary !important;
 }
 
 .section-headings {
