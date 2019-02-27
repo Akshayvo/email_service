@@ -5,7 +5,7 @@
   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/St_Joe_Images/st-joe-self-storage-unit.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: bottom;
 }
 
@@ -72,7 +72,7 @@
   .view-rates-top {
     height: 40vh;
     background-size: cover;
-    background-position: initi;
+    // background-position: initi;
     background-attachment: scroll;
   }
 
@@ -99,6 +99,7 @@
 
 @media screen and (max-width: 767px) {
   .view-rates-top {
+    background-attachment: scroll;
     .jumbotorn-top {
       display: none;
     }
@@ -121,6 +122,7 @@
   }
 
   .view-rates-top {
+    background-attachment: scroll;
     .jumbotorn-top {
       display: none;
     }
@@ -136,6 +138,7 @@
   }
 
   .view-rates-top {
+    background-attachment: fixed;
     .jumbotorn-top {
       h1 {
         font-size: 2.5rem;
