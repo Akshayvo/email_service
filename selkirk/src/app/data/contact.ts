@@ -1,8 +1,14 @@
 export const contact = [
     {
         id: 0,
-        label: 'Address:',
+        label: 'Facility Address:',
         data: '78 Thatcher St.  Selkirk, NY 12158',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+    {
+        id: 3,
+        label: 'Office Address:',
+        data: ' 560 Rt 9w, Glenmont, NY 12077',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
@@ -23,16 +29,24 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Monday-Saturday: ',
-        data: '10:00AM - 6:00PM'
+        id: 1,
+        label: 'Monday - Friday ',
+        data: '9:00AM-5:00PM'
     },
     {
-        label: 'Sunday: ',
+        id: 2,
+        label: 'Saturday ',
+        data: '9:00AM - 1:00PM'
+    },
+    {
+        id: 3,
+        label: 'Sunday ',
         data: 'CLOSED'
     },
     {
-        label: 'Access Hours: ',
-        data: '10:00AM-6:00PM 7 Days a Week'
+        id: 4,
+        label: '7 Days a Week ',
+        data: '7:00AM-8:00PM'
     }
 ];
 

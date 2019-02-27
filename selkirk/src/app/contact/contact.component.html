@@ -80,7 +80,7 @@
           
           <div class="col-lg-5 p-4">
               <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11760.177893025333!2d-73.804404!3d42.53311!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5dbc4cef28be2b31!2sSelkirk+Self+Storage!5e0!3m2!1sen!2sus!4v1551052466467" width="100%" height="400px" frameborder="0"  allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1J9PbNCtqxBv1so6RvmVL-vhL7pccXFQ0" width="100%" height="400px" frameborder="0"  allowfullscreen></iframe>
               </div>
               <div class="contact-details pt-4">
                 <h2 class="py-1">Selkirk Self Storage</h2>
@@ -88,10 +88,22 @@
                     <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                 </span>
-                <h3 class="py-1">Office:</h3>
-                <span class="font-xs-device" *ngFor="let hour of hours">
-                  <b>{{hour.label}}</b> {{hour.data}}<br>
-                </span>
+                <br>
+                <div class="font-xs-device ">
+                        <b>Access Hours: </b> 
+                        <div *ngFor="let hour of hours">
+                            <div *ngIf="hour.id === 4">
+                                <b>{{hour.label}}</b>{{hour.data}}<br>  
+                            </div>
+                          </div>
+                        
+                        <b>Office Hours:</b>
+                      <div *ngFor="let hour of hours">
+                        <div *ngIf="hour.id != 4">
+                            <b>{{hour.label}}</b>{{hour.data}}<br>  
+                        </div>
+                      </div>
+                    </div>
               </div>
           </div>
       </div>

@@ -6,7 +6,7 @@ export const featuresList = [
         td2: 'Convenient Location',
     },
     {
-        td1: 'Convenient Location',
+        td1: 'Wide Variety of Unit Sizes',
         td2: 'Fully Fenced Facility',
     },
     {
@@ -15,7 +15,16 @@ export const featuresList = [
     },
     {
         td1: 'Ground Floor Access to Units',
+        td2: 'Truck Rental'
     },
+    {
+        td1: 'Security Cameras',
+        td2: 'Electronic Gate Access'
+    },
+    {
+        td1: 'Boxes and Moving Supplies',
+        td2: 'Family Owned and Operated'
+    }
 ];
 
 export const feature = [
@@ -92,7 +101,10 @@ and convenient storage options? Click below to reserve today or call (518) 767-9
 export const blurb = [
     {
         h2: `Convenient and Affordable Self Storage Units`,
-        p: `Located in the Town of Bethlehem, Selkirk Self Storage serves Selkirk, Delmar, Glenmont, Ravena and
-        Southern Albany County. Our well-lit, fully fenced, and electronically-gated self storage.`,
+        p: `Located in the Town of Bethlehem, Selkirk Self Storage serves Selkirk, Delmar,
+        Glenmont, Ravena and Southern Albany County. We are a well-lit, fully fenced, and
+        electronically-gated self storage facility offering great customer service at affordable rates!
+
+        `,
     }
 ];

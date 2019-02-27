@@ -2,9 +2,7 @@
 <div class="home-container">
   <!--Jumbotron Container Starts Here-->
   <div class="jumbotron-container">
-      <div class="cta">
-          <p><b>Free truck with move in, call (518) 767-9002 for details!</b></p>
-        </div>
+
     <div class="jumbotron-top">
       <div class="jumbotron px-0 m-0">
         <div class="bg-translucent jumbotron-skew-style">
@@ -32,9 +30,9 @@
     </div>
     <div class="jumbotron-bottom disp">
       <div class="container">
-        <div class="row">
+        <div class="row custom-height">
           <div class="col-md-3 col-3 p-4 text-center override-padding-x-axis" *ngFor="let feature of feature">
-            <img [src]="feature?.path" alt="" height="80px" width="auto" [alt]="feature?.alt">
+            <img [src]="feature?.path" alt="" [alt]="feature?.alt">
               <h6 class="feature-text">{{feature.label}}</h6>
           </div>
         </div>
@@ -43,12 +41,15 @@
   </div>
   <!--Jumbotron Ends Here-->
 
+  <div class="cta">
+      <p class="mt-0 mb-0"><b>Free truck with move in, call (518) 767-9002 for details!</b></p>
+    </div>
   <!--Map and Contact Section-->
   <div class="bg-light py-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 py-3 map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11760.177893025333!2d-73.804404!3d42.53311!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5dbc4cef28be2b31!2sSelkirk+Self+Storage!5e0!3m2!1sen!2sus!4v1551052466467" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1J9PbNCtqxBv1so6RvmVL-vhL7pccXFQ0" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
         </div>
         
         <div class="col-lg-6 py-3">
@@ -58,17 +59,26 @@
               <span class="font-xs-device" *ngFor="let contact of contactDetails">
                 <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
-            </span>
+              </span>
               <div class="pt-3">
+                  <b>Access Hours: </b> 
                   <div *ngFor="let hour of hours">
-                      <b>{{hour.label}}</b>{{hour.data}}<br>
-                    </div>    
+                      <div *ngIf="hour.id === 4">
+                          <b>{{hour.label}}</b>{{hour.data}}<br>  
+                      </div>
+                    </div>
+                    
+                  <b >Office Hours:</b>
+                <div *ngFor="let hour of hours">
+                  <div *ngIf="hour.id != 4">
+                      <b>{{hour.label}}</b>{{hour.data}}<br>  
+                  </div>
+                </div>
               </div>
-              </div>
-          </div>
-          
-          <div class="pt-2">
-              <app-tables [tBody]="featuresList"></app-tables>
+            </div>
+            <div class="pt-2">
+                <app-tables [tBody]="featuresList"></app-tables>
+            </div>
           </div>
         </div>
       </div>
