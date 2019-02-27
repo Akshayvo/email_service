@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: http://www.cubamostorge.com/sitemap.xml
+Sitemap: http://www.cubamostorage.com/sitemap.xml
 User-agent: *
 Disallow:

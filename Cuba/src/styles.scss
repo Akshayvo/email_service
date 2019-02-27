@@ -63,6 +63,14 @@ body {
   min-width: 200px;
 }
 
+.btn-primary:active {
+  background-color: $primary !important;
+}
+
+.btn-outline-primary:active {
+  background-color: $primary !important;
+}
+
 .btn-primary:hover {
   background-color: $primaryDark;
   border-color: $primaryDark;
@@ -76,11 +84,13 @@ body {
   color: $primary !important;
 }
 
+
 .btn-outline-primary:hover {
   background-color: $primary;
   border-color: $primary;
   color: $white !important;
 }
+
 
 .section-headings {
   font-weight: 200;
