@@ -50,7 +50,7 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `We are a locally owned and operated since 2004.`,
+        p: `Welcome to Storage King! We are a locally owned and operated since 2004.`,
     },
     {
         p: `Storage King is a proud member of Rockingham County, New Hampshire. Offering self storage units in Exeter
