@@ -28,3 +28,8 @@ table {
 .table-striped tbody tr:nth-of-type(even) {
   background-color: #dbd8ce;
 }
+
+ul {
+  margin-bottom: 0;
+  padding-inline-start: 20px;
+}

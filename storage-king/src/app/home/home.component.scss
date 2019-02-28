@@ -7,7 +7,7 @@
 
 .home-container {
   a {
-    color: black; 
+    color: black;
   }
 }
 
@@ -137,6 +137,10 @@
     display: none;
   }
 
+  .text-align {
+    text-align: center;
+  }
+
   .jumbotron-container {
     .jumbotron-bottom {
       p {
@@ -173,6 +177,11 @@
         font-size: 0.8rem;
       }
     }
+  }
+
+
+  .text-align {
+    text-align: center;
   }
 }
 

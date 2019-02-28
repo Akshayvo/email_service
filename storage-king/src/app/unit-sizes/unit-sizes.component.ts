@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
+import { viewrates, benefitsList } from '../data/view-rates';
+
 @Component({
   selector: 'app-unit-sizes',
   templateUrl: './unit-sizes.component.html',
@@ -13,6 +15,8 @@ export class UnitSizesComponent implements OnInit {
   previous: number;
   current: number;
   next: number;
+  viewrates: any;
+  benefitsList: any;
 
   constructor(
     private titleService: Title,
@@ -30,6 +34,7 @@ export class UnitSizesComponent implements OnInit {
     this.previous = 7;
     this.next = this.current + 1;
     this.fetchUnitSizer();
+    this.fetchViewRates();
     window.scrollTo(0, 0);
   }
 
@@ -50,6 +55,7 @@ export class UnitSizesComponent implements OnInit {
       this.previous = this.previous - 1;
     }
   }
+
 
   public moveRight() {
     this.previous = this.current;
@@ -74,5 +80,10 @@ export class UnitSizesComponent implements OnInit {
       this.next = this.current + 1;
     }
 
+  }
+
+  public fetchViewRates() {
+    this.viewrates = viewrates;
+    this.benefitsList = benefitsList;
   }
 }

@@ -66,6 +66,9 @@ export const aboutUs = [
         p: `Whether it is household, business, inventory, student, temporary or long term storage we are here to make it
         convenient and stress-free to rent the right unit for your storage needs.`,
     },
+    {
+        p: `Have questions? Give us a call. Our family looks forward to working with you.`,
+    }
 ];
 
 export const gettingStarted = `To get started simply call (603) 772-4500, or (603) 396-2706 after normal

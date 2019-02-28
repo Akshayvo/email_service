@@ -48,31 +48,38 @@
         </div>
         
         <div class="col-lg-6 py-2">
-          <div class="mb-4">
-            <p>
-              <span *ngFor="let contact of contactDetails">
-                  <div *ngIf="contact?.label == 'Address:' || contact?.label == 'Email:' ">
-                      <b>{{contact.label}}</b><span *ngIf="contact?.id == 2"><a [href]="contact?.redirect"> {{contact.data}}</a></span>
-                        <span *ngIf="contact?.id == 1"> {{contact.data}}</span>
-                  </div>
-              </span>
-              <span *ngFor="let contact of contactDetails">
-                  <span *ngIf="contact?.label == 'Phone:'">
-                      <b *ngIf="contact?.id == 3">{{contact.label}}</b> <a [href]="contact?.redirect"> {{contact.data}}</a> <strong *ngIf="contact?.id == 3"> or </strong>
+          <div class="row">
+            <div class="col-md-7">
+              <div class="mb-4">
+                <p>
+                  <span *ngFor="let contact of contactDetails">
+                      <div *ngIf="contact?.label == 'Address:' || contact?.label == 'Email:' ">
+                          <b>{{contact.label}}</b><span *ngIf="contact?.id == 2"><a [href]="contact?.redirect"> {{contact.data}}</a></span>
+                            <span *ngIf="contact?.id == 1"> {{contact.data}}</span>
+                      </div>
                   </span>
-              </span><br>
-              <span style="font-size: 1.1rem;"><strong> Office Hours: <br> </strong></span>
-              <span *ngFor="let hour of hours">
-                  <div *ngIf="hour?.id == 1 || hour?.id == 2">
-                      <strong>{{hour.label}} </strong> {{hour.data}}<br>
-                  </div>
-              </span>
-              <span *ngFor="let hour of hours">
-                  <div *ngIf="hour?.id == 3">
-                      {{hour.label}} <a [href]="hour?.redirect"> {{hour.data}}</a>
-                  </div>
-              </span>
-            </p>
+                  <span *ngFor="let contact of contactDetails">
+                      <span *ngIf="contact?.label == 'Phone:'">
+                          <b *ngIf="contact?.id == 3">{{contact.label}}</b> <a [href]="contact?.redirect"> {{contact.data}}</a> <strong *ngIf="contact?.id == 3"> or </strong>
+                      </span>
+                  </span><br>
+                  <span style="font-size: 1.1rem;"><strong> Office Hours: <br> </strong></span>
+                  <span *ngFor="let hour of hours">
+                      <div *ngIf="hour?.id == 1 || hour?.id == 2">
+                          <strong>{{hour.label}} </strong> {{hour.data}}<br>
+                      </div>
+                  </span>
+                  <span *ngFor="let hour of hours">
+                      <div *ngIf="hour?.id == 3">
+                          {{hour.label}} <a [href]="hour?.redirect"> {{hour.data}}</a>
+                      </div>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-5 text-align">
+              <img class="mb-4" src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/credit-card-logos.png" alt="Image accepted credit card logos which include American Express, Mastercard, Visa and Discover">
+            </div>
           </div>
           
           <div class="pt-2">
