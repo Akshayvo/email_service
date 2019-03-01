@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: http://lockwood-storage.com/sitemap.xml
+Sitemap: http://www.lockwood-storage.com/sitemap.xml
 User-agent: *
 Disallow:
