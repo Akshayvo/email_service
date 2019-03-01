@@ -3,6 +3,7 @@
 
 a {
   cursor: pointer;
+  color: $primary;
 }
 
 .iconColor {
@@ -97,6 +98,14 @@ a {
         height: 80px;
         width: auto;
       }
+    }
+  }
+
+  .navbar-nav {
+    align-items: center;
+
+    li {
+      width: fit-content;
     }
   }
 }

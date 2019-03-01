@@ -11,9 +11,9 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 const routes: Routes = [
   // Fallback when no prior route is matched
   { path: '', component: HomeComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
-  { path: 'payment', component: PaymentComponent },
+  { path: 'pay-rent', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'review', component: HomeComponent,
