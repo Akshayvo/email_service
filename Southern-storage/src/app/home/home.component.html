@@ -18,20 +18,20 @@
   </div>
   
   <!--Feature Box-->
-  <!-- <div class="jumbotron-bottom"> -->
-    <div class="container feature-block disp py-4">
+  <div class="jumbotron-bottom">
+    <div class="container feature-block disp ">
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-6" *ngFor= "let feature of features">
-          <p class="text-center f-block-img p-2"> 
+        <div class="col-md-3 col-sm-3" *ngFor= "let feature of features">
+          <p class="text-center f-block-img py-2 mb-0"> 
             <img src="{{feature.data}}" class="f-img">
           </p>
-          <p class="text-center f-text py-1">
+          <h6 class="text-center f-text py-2 mb-0">
             {{feature.label}}
-          </p>
+          </h6>
         </div>
       </div>
     </div>
-  <!-- </div> -->
+  </div>
   <!--Feature Box Ends Here-->
 
 <!--Contact Agricola 28867-->
@@ -67,13 +67,17 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13690.470017626809!2d-88.5879159!3d30.9253139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5bb86e6931d5c666!2sSouthern+Storage!5e0!3m2!1sen!2sus!4v1546458603208" width="100%" height="100%" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13690.470017626809!2d-88.5879159!3d30.9253139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5bb86e6931d5c666!2sSouthern+Storage!5e0!3m2!1sen!2sus!4v1546458603208" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="col-md-4  pl-4 pt-3">
         <h2>Southern Storage - Agricola</h2>
         <p> 
-          <span *ngFor="let contact of contactsAgricola">
+          <!-- <span *ngFor="let contact of contactsAgricola">
             <b>{{contact.label}}</b> {{contact.data}}<br>
+          </span> -->
+          <span *ngFor="let contact of contactsAgricola">
+            <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
           </span>
         </p>
          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/agricola/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
@@ -99,13 +103,17 @@
     <div class="container">
       <div class="row">          
         <div class="col-md-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.0170678297663!2d-88.54143118442614!3d30.970005881555075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889b756e90e10753%3A0xc66cdb6f5aff3039!2sSouthern+Storage+-+Rocky+Creek!5e0!3m2!1sen!2sus!4v1547236392494" width="100%" height="100%" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.0170678297663!2d-88.54143118442614!3d30.970005881555075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889b756e90e10753%3A0xc66cdb6f5aff3039!2sSouthern+Storage+-+Rocky+Creek!5e0!3m2!1sen!2sus!4v1547236392494" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="col-md-4 pl-4 pt-3">
           <h2>Southern Storage - Rocky Creek</h2>
           <p> 
-            <span *ngFor="let contact of contactsRockyCreek">
+            <!-- <span *ngFor="let contact of contactsRockyCreek">
               <b>{{contact.label}}</b> {{contact.data}}<br>
+            </span> -->
+            <span *ngFor="let contact of contactsRockyCreek">
+              <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+              <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
             </span>
           </p>
           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/rocky-creek/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>                
@@ -130,13 +138,17 @@
     <div class="container">
       <div class="row">          
         <div class="col-md-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3427.674990014684!2d-88.60061878442978!3d30.783700081619337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889b740cfd503c9d%3A0xfaf9fc124a7eb479!2sBarton+U-Store-It!5e0!3m2!1sen!2sus!4v1547237075190" width="100%" height="100%" frameborder="0" style="border: 2px solid #fff;" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3427.674990014684!2d-88.60061878442978!3d30.783700081619337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889b740cfd503c9d%3A0xfaf9fc124a7eb479!2sBarton+U-Store-It!5e0!3m2!1sen!2sus!4v1547237075190" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="col-md-4 pl-4 pt-3">
           <h2>Southern Storage - Barton</h2>
           <p> 
-            <span *ngFor="let contact of contactsBarton">
+            <!-- <span *ngFor="let contact of contactsBarton">
               <b>{{contact.label}}</b> {{contact.data}}<br>
+            </span> -->
+            <span *ngFor="let contact of contactsBarton">
+              <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+              <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
             </span>
           </p>
           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/barton/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>                

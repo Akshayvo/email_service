@@ -21,4 +21,14 @@
       font-size: 1.5rem;
     }
   }
+
+  a {
+    color: $primary;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .custom-padding {
+    padding-top: 150px;
+  }
 }

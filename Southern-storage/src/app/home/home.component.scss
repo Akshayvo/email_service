@@ -5,11 +5,13 @@
   width: 100%;
 }
 
-// .jumbotron-bottom {
-//   height: 20vh;
-//   display: flex;
-//   align-items: center;
-// }
+a {
+  color: black;
+}
+
+iframe {
+  border: 2px solid #fff;
+}
 
 .jumbotron-top {
   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-agricola-main-building.jpg");
@@ -33,6 +35,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
+}
+
+.jumbotron-bottom {
+  height: 20vh;
+  display: flex;
+  align-items: center;
 }
 
 .feature-block {
@@ -87,7 +95,6 @@
 
 
 .disp {
-  display: block;
   color: $white;
 
   h6 {
@@ -171,14 +178,101 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 1200px) and (max-height: 700px) and (min-height: 601px) {
+  .disp {
+    h6 {
+      font-size: 1rem;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-height: 600px) {
+  .jumbotron-bottom {
+    height: 100px;
+  }
+
+  .f-block-img {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .disp {
+    h6 {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 700px) and (min-height: 601px) {
+  .disp {
+    h6 {
+      font-size: 1rem;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 600px) {
+  .jumbotron-bottom {
+    height: 100px;
+  }
+
+  .f-block-img {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .disp {
+    h6 {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 700px) and (min-height: 601px) {
+  .disp {
+    h6 {
+      font-size: 1rem;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 600px) {
+  .jumbotron-bottom {
+    height: 100px;
+  }
+
+  .f-block-img {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .disp {
+    h6 {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
   .contact-hours {
     border-left: none;
     padding-left: 5%;
   }
 
   .disp {
-    display: block;
+    h6 {
+      font-size: 1rem;
+    }
   }
 
   .for-location {
@@ -191,6 +285,31 @@
     .btn {
       width: 100%;
     }
+  }
+
+  .f-block-img {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 600px) and (min-height: 481px) {
+  .disp {
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 480px) {
+  .jumbotron-bottom {
+    height: 0;
+  }
+
+  .disp {
+    display: none;
   }
 }
 
@@ -252,5 +371,9 @@
   .contact-hours {
     border-left: none;
     padding-left: 5%;
+  }
+
+  .jumbotron-bottom {
+    height: 0;
   }
 }

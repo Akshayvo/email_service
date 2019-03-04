@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { contactsRockyCreek, hoursRockyCreek,
          contactsAgricola, hoursAgricola,
-         contactsBarton, hoursBarton } from '../data/contact';
+         contactsBarton, hoursBarton, socialLinks } from '../data/contact';
 import { tabs, tabsBarton } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -23,6 +23,7 @@ export class LocationComponent implements OnInit {
   iframeAdd: any;
   head: any;
   tabs: any;
+  socialLinks: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -70,26 +71,29 @@ export class LocationComponent implements OnInit {
  }
 
   public navigateToContact() {
-   this.router.navigate(['contact']);
+   this.router.navigate(['contact-us']);
   }
 
   public navigateToPayment() {
     if ( this.id === 0 ) {
-      this.router.navigate(['/payment/rocky-creek'], { queryParams: { currentTab: 'Southern Storage - Rocky Creek' }});
+      this.router.navigate(['/pay-rent/rocky-creek'], { queryParams: { currentTab: 'Southern Storage - Rocky Creek' }});
     } else if ( this.id === 1 ) {
-      this.router.navigate(['/payment/agricola'], { queryParams: { currentTab: 'Southern Storage - Agricola' }});
+      this.router.navigate(['/pay-rent/agricola'], { queryParams: { currentTab: 'Southern Storage - Agricola' }});
     } else if ( this.id === 2) {
-      this.router.navigate(['/payment/barton'], { queryParams: { currentTab: 'Southern Storage - Barton' }});
+      this.router.navigate(['/pay-rent/barton'], { queryParams: { currentTab: 'Southern Storage - Barton' }});
     }
    }
 
    public navigateToReserve() {
     if ( this.id === 0 ) {
-      this.router.navigate(['/location/rocky-creek/reserveUnit'], { queryParams: { name: 'Rocky-Creek', currentTab: 'Reserve Unit' }});
+      this.router.navigate(['/location/rocky-creek/reserveUnit'],
+      { queryParams: { name: 'Rocky-Creek', currentTab: 'Reserve Unit' }});
     } else if ( this.id === 1 ) {
-      this.router.navigate(['/location/agricola/reserveUnit'], { queryParams: { name: 'Agricola', currentTab: 'Reserve Unit' }});
+      this.router.navigate(['/location/agricola/reserveUnit'],
+      { queryParams: { name: 'Agricola', currentTab: 'Reserve Unit' }});
     } else if ( this.id === 2) {
-      this.router.navigate(['/location/barton/reserveUnit'], { queryParams: { name: 'Barton', currentTab: 'Reserve Unit' }});
+      this.router.navigate(['/location/barton/reserveUnit'],
+      { queryParams: { name: 'Barton', currentTab: 'Reserve Unit' }});
     }
    }
 
@@ -99,6 +103,7 @@ export class LocationComponent implements OnInit {
       this.contacts = contactsRockyCreek;
       this.hours = hoursRockyCreek;
       this.tabs = tabs;
+      this.socialLinks = socialLinks;
     }
 
    public fetchDetailsAgricola() {
@@ -107,6 +112,7 @@ export class LocationComponent implements OnInit {
      this.contacts = contactsAgricola;
      this.hours = hoursAgricola;
      this.tabs = tabs;
+     this.socialLinks = socialLinks;
    }
 
    public fetchDetailsBarton() {
@@ -115,5 +121,6 @@ export class LocationComponent implements OnInit {
      this.contacts = contactsBarton;
      this.hours = hoursBarton;
      this.tabs = tabsBarton;
+     this.socialLinks = socialLinks;
    }
 }

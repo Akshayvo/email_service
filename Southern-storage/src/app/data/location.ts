@@ -119,10 +119,13 @@ export const headingAgricola = `About Southern Storage - Agricola`;
 
 export const headingBarton = `About Southern Storage at Barton`;
 
+// tslint:disable-next-line:max-line-length
 export const aboutUsImageRockyCreek = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Rocky-Creek/southern-storage-rocky-creek-roadside-sign.jpg`;
 
+// tslint:disable-next-line:max-line-length
 export const aboutUsImageAgricola = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Agricola/southern-storage-argicola-climate-controlled.jpg`;
 
+// tslint:disable-next-line:max-line-length
 export const aboutUsImageBarton = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Southern_Images/Photos/Barton/southern-storage-barton-location.png`;
 
 

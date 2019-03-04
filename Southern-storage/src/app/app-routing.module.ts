@@ -54,7 +54,7 @@ const routes: Routes = [
     ]
   },
 
-  { path: 'payment',
+  { path: 'pay-rent',
     component: PaymentComponent,
     children: [
       {path: '', redirectTo: 'agricola' , pathMatch: 'full' },
@@ -89,7 +89,7 @@ const routes: Routes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },
 ];
 

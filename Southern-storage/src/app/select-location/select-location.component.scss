@@ -6,6 +6,11 @@
   border-radius: 0 0 10px 10px;
   width: 400px;
 
+  .fas {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
   .row {
     border-bottom: 2px solid $white;
   }
@@ -25,7 +30,7 @@ form {
   }
 
   select:focus,
-  select:active, {
+  select:active {
     outline: -webkit-focus-ring-color auto 0;
   }
 }

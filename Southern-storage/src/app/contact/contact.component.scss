@@ -31,6 +31,18 @@
   }
 }
 
+.form-control {
+  font-size: 0.8rem;
+}
+
+a {
+  color: black;
+}
+
+button {
+  float: right;
+}
+
 @media only screen and (max-width: 600px) {
   .btn {
     width: 100%;
