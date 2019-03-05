@@ -8,10 +8,6 @@
   .error-message {
     padding-left: 5%;
 
-    a {
-      color: $primary;
-    }
-
     div {
       font-size: 4.375rem;
       font-weight: 300;
@@ -24,6 +20,10 @@
     h5 {
       font-size: 1.5rem;
     }
+  }
+
+  a {
+    color: $primary;
   }
 }
 

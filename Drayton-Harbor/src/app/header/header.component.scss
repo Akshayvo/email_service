@@ -18,6 +18,14 @@ a {
   }
 }
 
+.navbar-nav {
+  align-items: center;
+
+  li {
+    width: fit-content;
+  }
+}
+
 .nav-link {
   color: $fontColor;
   font-weight: 600;

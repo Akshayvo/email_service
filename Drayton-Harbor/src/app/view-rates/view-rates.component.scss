@@ -36,6 +36,12 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  iframe {
+    min-height: 600px;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   iframe {
@@ -59,11 +65,6 @@
         overflow: scroll;
       }
     }
-  }
-
-  img {
-    height: 200px;
-    width: 100%;
   }
 }
 
