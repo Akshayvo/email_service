@@ -7,14 +7,15 @@ import { PaymentComponent } from './payment/payment.component';
 import { ErrorComponent } from './error/error.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
   { path: '', component: HomeComponent },
   { path: 'unit-sizer', component: UnitSizerComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
-  { path: 'payment', component: PaymentComponent },
+  { path: 'pay-rent', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'review', component: HomeComponent,
     resolve: {
@@ -24,6 +25,7 @@ const routes: Routes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJmfquuhCwlVQRck1GmIDXsug'
     }
   },
+  { path: 'error', component: ErrorHandlerComponent },
   { path: '**', component: ErrorComponent }
 ];
 

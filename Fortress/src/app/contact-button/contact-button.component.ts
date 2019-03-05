@@ -21,7 +21,7 @@ export class ContactButtonComponent implements OnInit {
   completeMessage: string;
   contactBtnForm: FormGroup;
   submitted = false;
-  isSubmitted = false;
+  mailSent = false;
 
   constructor(
     private emailService: EmailService,
@@ -63,7 +63,6 @@ export class ContactButtonComponent implements OnInit {
    if (this.contactBtnForm.invalid) {
        return;
    } else {
-     this.isSubmitted = true;
      this.receiveremail = this.contactInfo[1].data;
 
      this.completeMessage = `<strong>Phone: </strong> ${this.contactBtnForm.value.phone}, <br/>
@@ -84,6 +83,7 @@ export class ContactButtonComponent implements OnInit {
            .subscribe((response: any) => {
              if (response.result != null) {
               //  alert(response.message);
+              this.mailSent = true;
              } else {
               //  alert(response.message);
              }
@@ -91,6 +91,7 @@ export class ContactButtonComponent implements OnInit {
              console.log('Error :', err);
            });
          this.submitted = false;
+         this.mailSent = false;
          this.contactBtnForm.reset();
    }
  }

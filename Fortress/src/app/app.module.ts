@@ -14,7 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { PaymentComponent } from './payment/payment.component';
-import { ErrorComponent } from './error/error.component';
+
 
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
@@ -22,6 +22,9 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { ErrorComponent } from './error/error.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +35,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
     ViewRatesComponent,
     PaymentComponent,
     ErrorComponent,
+    ErrorHandlerComponent,
     UnitSizerComponent,
     StorageTipsComponent,
     ContactButtonComponent,

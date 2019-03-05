@@ -46,3 +46,15 @@ button:focus {
     z-index: 16;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .contact-button {
+    top: 110px;
+  }
+}
+
+@media only screen and (max-height: 480px) {
+  .contact-button {
+    top: 80px;
+  }
+}
