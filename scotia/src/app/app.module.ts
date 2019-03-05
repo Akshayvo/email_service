@@ -22,7 +22,9 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
     StorageTipsComponent,
     ContactButtonComponent,
     AccordionComponent,
-    PayRentComponent
+    PayRentComponent,
+    ErrorHandlerComponent,
   ],
   imports: [
     CommonModule,

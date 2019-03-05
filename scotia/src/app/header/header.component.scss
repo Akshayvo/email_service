@@ -81,6 +81,14 @@ a {
   .navbar-brand {
     padding: 0;
   }
+
+  .navbar-nav {
+    align-items: center;
+
+    li {
+      width: fit-content;
+    }
+  }
 }
 
 

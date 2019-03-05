@@ -64,6 +64,7 @@
   .unit-sizer-box {
     border: 1px solid $primary;
     padding: 64px;
+    min-height: 650px;
   }
 
   .unit-dimention {
@@ -155,6 +156,7 @@
   .unit-sizer-container {
     .unit-sizer-box {
       padding: 16px;
+      min-height: 650px;
     }
 
     .col-3 {
@@ -198,6 +200,7 @@
 
   .unit-sizer-box {
     padding: 16px;
+    min-height: 600px;
   }
 
   .col-1 {
@@ -225,6 +228,10 @@
       color: #ffde03;
       font-size: 1.1rem;
     }
+  }
+
+  .unit-sizer-box {
+    min-height: 600px;
   }
 }
 
