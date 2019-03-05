@@ -6,13 +6,6 @@ export const contact = [
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
-        id: 2,
-        label: 'Email:',
-        data: 'storageking1@comcast.net',
-        redirect: 'mailto:storageking1@comcast.net',
-        class: 'fas fa-envelope mx-2 iconColor',
-    },
-    {
         id: 3,
         label: 'Phone:',
         data: '(603) 772-4500',
@@ -27,6 +20,13 @@ export const contact = [
         redirect: 'tel:6033962706',
         time: ' - Outside Normal Business Hours',
         class: 'fas fa-phone mx-2 iconColor',
+    },
+    {
+        id: 2,
+        label: 'Email:',
+        data: 'storageking1@comcast.net',
+        redirect: 'mailto:storageking1@comcast.net',
+        class: 'fas fa-envelope mx-2 iconColor',
     },
 
 ];

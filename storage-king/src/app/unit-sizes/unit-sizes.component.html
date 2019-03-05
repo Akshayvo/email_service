@@ -2,7 +2,7 @@
 <div class="unit-sizer-holder">
   <div class="container">
     <div class="heading pb-5">
-      <h1 class="text-center pt-5">Unit Sizer</h1>
+      <h1 class="text-center pt-5">Unit Sizes</h1>
     </div>
     
     <div class="content-Holder">
@@ -13,7 +13,7 @@
           <!--Main Row-->
             <div class="row">
               <!--Left bar size of unit starts here-->
-                <div class="col-md-2 px-0">
+                <div class="col-md-2 ">
                   <!--For desktop and width more than 768-->
                   <div *ngFor="let unit of unitsizers" class="unit-dimention py-3 disp">
                    
@@ -96,20 +96,22 @@
             <!--Main Row Ends Here-->
           </div>
           <!--Unit Sizer Box Layout Ends here-->
-          <p  class="mb-0 text-center">Still not sure of what size or type you would like or would best fit your needs? Visit or call our local facility then decide which unit would be the best solution for you.</p>
+          <!-- <p  class="mb-0 text-center">Still not sure of what size or type you would like or would best fit your needs? Visit or call our local facility then decide which unit would be the best solution for you.</p> -->
           <div class="view-rates-holder">
             <div class="row">
-              <div class="col-md-7 scroll-wrapper pt-4">
-                <iframe id="advanced_iframe" name="advanced_iframe" src="https://storagekingnh.sim.syrasoft.com/unitavailability" width="100%"
-                scrolling="yes" frameborder="0" border="0" style="max-width:100%;"></iframe>
+              <div class="col-md-6 scroll-wrapper">
+                  <p class="my-4 justify" *ngFor='let para of viewrates'>{{para.p}}</p>
+                  <!-- <p> <strong>Our Truck Rentals offer the following great benefits!</strong> </p> -->
+                  <ul>
+                    <li class="py-1" *ngFor="let data of benefitsList">{{data.p}}</li>
+                  </ul>
+                  <p>Still not sure of what size or type you would like or would best fit your needs? Visit or call our local facility then decide which unit would be the best solution for you.</p>
+
+                <!-- <iframe id="advanced_iframe" name="advanced_iframe" src="https://storagekingnh.sim.syrasoft.com/unitavailability" width="100%"
+                scrolling="yes" frameborder="0" border="0" style="max-width:100%;"></iframe> -->
               </div>
-              <div class="col-md-5 pt-5">
+              <div class="col-md-6 mt-4">
                 <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/storage-king-units-parking.jpg" alt="Storage King's Front Office" width="100%">
-                <p class="my-4 justify" *ngFor='let para of viewrates'>{{para.p}}</p>
-                <p> <strong>Our Truck Rentals offer the following great benefits!</strong> </p>
-                <ul>
-                  <li class="py-1" *ngFor="let data of benefitsList">{{data.p}}</li>
-                </ul>
               </div>
             </div>
           </div>

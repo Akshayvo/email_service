@@ -59,6 +59,10 @@ ul {
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
+  a {
+    font-size: 18px;
+  }
+
   button:focus {
     outline: 5px auto $primary;
   }
@@ -101,6 +105,12 @@ ul {
       padding-right: 4px;
     }
   }
+
+  .navbar {
+    a {
+      font-size: 16px;
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -116,6 +126,12 @@ ul {
   .navbar-brand {
     img {
       width: 100px;
+    }
+  }
+
+  .navbar {
+    a {
+      font-size: 16px;
     }
   }
 }
