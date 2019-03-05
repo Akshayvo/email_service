@@ -825,3 +825,22 @@
     display: none;
   }
 }
+
+
+@media only screen and (max-width: 369px) {
+  .jumbotron {
+    .btn-primary {
+      min-width: 100%;
+    }
+
+    .btn-outline-primary {
+      min-width: 100%;
+    }
+  }
+
+  .jumbotron-buttons {
+    .btn {
+      margin: 5px auto;
+    }
+  }
+}
