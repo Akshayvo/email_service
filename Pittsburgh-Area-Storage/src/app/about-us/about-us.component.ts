@@ -4,6 +4,7 @@ import { aboutUsLocation1, aboutUsLocation2, aboutUsLocation3,
           aboutUsHeadingLocation1, aboutUsHeadingLocation2, aboutUsHeadingLocation3,
           aboutUsImageLocation1, aboutUsImageLocation2,
           aboutUsImageLocation3 } from '../data/location';
+import { serviceOffered } from '../data/home';
 
 @Component({
   selector: 'app-about-us',
@@ -17,10 +18,12 @@ export class AboutUsComponent implements OnInit {
   heading: string;
   image: any;
   alt: string;
+  serviceOffered: any;
   constructor(private router: Router) { }
 
   ngOnInit() {
     this.isSomePage();
+    this.fetchServiceOffered();
   }
 
   public isSomePage() {
@@ -52,5 +55,9 @@ export class AboutUsComponent implements OnInit {
     this.heading = aboutUsHeadingLocation3;
     this.image = aboutUsImageLocation3;
     this.alt = 'Natrona Heights Retail Store';
+  }
+
+  public fetchServiceOffered() {
+    this.serviceOffered = serviceOffered;
   }
 }
