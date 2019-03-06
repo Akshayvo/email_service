@@ -3,7 +3,14 @@
     <div class="row">
       <div class="col-lg-8 py-0 px-0" style="background-color: #fff;">
         <div class="social-content px-3 py-4">
-          <h1 style="text-transform:capitalize;"> Victor Self Storage - {{name}}</h1>
+            <!-- <h1 style="text-transform:capitalize;"> Victor Self Storage - {{name}}</h1> -->
+
+          <div class="display">
+            <h1 class="py-1" style="text-transform:capitalize;"> Victor Self Storage - {{name}}</h1>
+            <span class="disp-smalll-device">
+              <a href="https://www.facebook.com/pages/Victor-Self-Storage/211266552318710" target="_blank"><img src="../../assets/facebook.png" alt=""></a> 
+             </span>
+          </div>
           <div class="row">
             <div class="col-lg-11 px-0">
               <span *ngFor="let contact of contacts" class="py-2 each-contact">

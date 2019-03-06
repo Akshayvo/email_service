@@ -9,10 +9,11 @@ export const storagePoints = [
 ];
 
 
-export const storageTips = [
+export const storageTipAccordion = [
     {
-        id: '1',
+        id: 1,
         label: 'Furniture & Appliances',
+        status: true,
         contents: [
             { data: 'Rent, or purchase an appliance dolly for furniture, major appliances, and stacks of boxes.'},
             { data: 'Remember, loading heavy furniture and appliances is not a one-person job. Get help.'},
@@ -24,6 +25,7 @@ export const storageTips = [
     {
         id: '2',
         label: 'Beds',
+        status: false,
         contents: [
             { data: `Disassemble the bed frame and
             mark each piece so you will have an easy time putting it back together.
@@ -34,6 +36,7 @@ export const storageTips = [
     {
         id: '3',
         label: 'Books',
+        status: false,
         contents: [
             { data: 'Never pack more than 30 pounds of books in a box'},
             { data: 'Alternate bindings, and cushion with packing paper.'},
@@ -42,6 +45,7 @@ export const storageTips = [
     {
         id: '4',
         label: 'Clothing',
+        status: false,
         contents: [
             { data: 'Hang clothing from closets in wardrobe boxes or plastic garment bags.'},
             { data: `Store clothing from dresser drawers in sturdy cardboard boxes.
@@ -51,6 +55,7 @@ export const storageTips = [
     {
         id: '5',
         label: 'Artwork, Mirrors & Lamps',
+        status: false,
         contents: [
             { data: 'Wrap in bubble wrap and stack in a large box with bubble wrap or large peanuts.'},
             { data: 'Remove light bulbs, harps, and lamp shades off lamp.'},
@@ -60,6 +65,7 @@ export const storageTips = [
     {
         id: '6',
         label: 'Collectables',
+        status: false,
         contents: [
             { data: 'Wrap each fragile item separately with bubble wrap and packing tape.'},
             { data: 'Layer wrapped items in sturdy cardboard box using large peanuts or wadded paper between.'},

@@ -6,6 +6,10 @@
 }
 
 .social-content {
+  h1 {
+    margin-bottom: 0;
+  }
+
   background-color: $primary;
   color: $white;
 
@@ -50,6 +54,16 @@
   display: block;
 }
 
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.disp-smalll-device {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .disp {
     display: none;
@@ -90,6 +104,10 @@
         // margin: 5px 30px 5px 15px !important;
       }
     }
+  }
+
+  .disp-smalll-device {
+    display: flex;
   }
 }
 

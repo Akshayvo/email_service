@@ -78,6 +78,11 @@ a {
       overflow-y: auto;
       overflow-x: hidden;
       display: flex;
+      align-items: center;
+
+      li {
+        width: fit-content;
+      }
     }
 
     .navbar-brand {
