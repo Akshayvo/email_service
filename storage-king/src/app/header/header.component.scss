@@ -6,6 +6,10 @@ a {
   color: white;
 }
 
+h2 {
+  font-weight: 500;
+}
+
 .iconColor {
   color: $white;
 }
@@ -60,7 +64,8 @@ ul {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
   a {
-    font-size: 18px;
+    // font-size: 18px;
+    margin-right: 0;
   }
 
   button:focus {
@@ -101,14 +106,14 @@ ul {
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .nav-item {
     a {
-      padding-left: 4px;
-      padding-right: 4px;
+      padding-left: 5px;
+      padding-right: 5px;
     }
   }
 
   .navbar {
     a {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 }
