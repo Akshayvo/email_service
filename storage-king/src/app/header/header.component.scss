@@ -119,8 +119,10 @@ ul {
 }
 
 @media screen and (max-width: 991px) {
-  .display {
-    display: none;
+  .contact-header {
+    .contact-details {
+      font-size: 0.8rem;
+    }
   }
 
   .nav-link {
@@ -138,6 +140,34 @@ ul {
     a {
       font-size: 16px;
     }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .custom-padding {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-header {
+    .contact-details {
+      font-size: 0.6rem;
+    }
+  }
+
+  .display-fb-icon {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .custom-padding {
+    padding: 0;
+  }
+
+  .social {
+    font-size: 0.7rem;
+    padding: 4px;
   }
 }
 

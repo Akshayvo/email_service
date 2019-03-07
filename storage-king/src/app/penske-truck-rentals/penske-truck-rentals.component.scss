@@ -23,13 +23,19 @@
 
 @media only screen and (max-width: 991px) {
   .contentHolder {
-    padding-top: 95px;
+    padding-top: 160px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contentHolder {
+    padding-top: 150px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .contentHolder {
-    padding-top: 95px;
+    padding-top: 150px;
 
     .rentals-content {
       padding: 16px;
@@ -51,3 +57,8 @@
   }
 }
 
+@media only screen and (max-width: 356px) {
+  .contentHolder {
+    padding-top: 172px;
+  }
+}

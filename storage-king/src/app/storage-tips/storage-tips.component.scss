@@ -36,16 +36,28 @@
 
 @media only screen and (max-width: 991px) {
   .storage-tip-holder {
-    padding-top: 95px;
+    padding-top: 160px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .storage-tip-holder {
+    padding-top: 150px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .storage-tip-holder {
-    padding-top: 95px;
+    padding-top: 150px;
 
     .storage-content {
       padding: 16px;
     }
+  }
+}
+
+@media only screen and (max-width: 356px) {
+  .storage-tip-holder {
+    padding-top: 172px;
   }
 }

@@ -59,7 +59,7 @@
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .contentHolder {
-    padding-top: 95px;
+    padding-top: 160px;
 
     .contact-data {
       padding: 24px;
@@ -70,7 +70,7 @@
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .contentHolder {
-    padding-top: 95px;
+    padding-top: 150px;
   }
 
   .contact-data {
@@ -83,7 +83,7 @@
 
 @media only screen and (max-width: 600px) {
   .contentHolder {
-    padding-top: 95px;
+    padding-top: 150px;
 
     .heading {
       padding-bottom: 30px;
@@ -97,5 +97,11 @@
         margin: 5px 0 10px 5px;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 356px) {
+  .contentHolder {
+    padding-top: 172px;
   }
 }

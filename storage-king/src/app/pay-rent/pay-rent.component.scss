@@ -37,11 +37,11 @@ a {
 
 @media only screen and (max-width: 991px) {
   .rent-holder {
-    padding-top: 95px;
+    padding-top: 160px;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .rent-example {
     border-left: none;
     padding-top: 16px;
@@ -50,11 +50,15 @@ a {
   .custom-border {
     border: none;
   }
+
+  .rent-holder {
+    padding-top: 150px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .rent-holder {
-    padding-top: 95px;
+    padding-top: 150px;
 
     .rent-sub-holder {
       padding: 16px;
@@ -72,5 +76,12 @@ a {
       border-left: none;
       padding-bottom: 20px;
     }
+  }
+}
+
+
+@media only screen and (max-width: 356px) {
+  .rent-holder {
+    padding-top: 172px;
   }
 }
