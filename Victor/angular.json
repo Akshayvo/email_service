@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "VictorWebsite": {
+    "Victor": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "VictorWebsite:build"
+            "browserTarget": "Victor:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "VictorWebsite:build:production"
+              "browserTarget": "Victor:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "VictorWebsite:build"
+            "browserTarget": "Victor:build"
           }
         },
         "test": {
@@ -110,7 +110,7 @@
         }
       }
     },
-    "VictorWebsite-e2e": {
+    "Victor-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -118,11 +118,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "VictorWebsite:serve"
+            "devServerTarget": "Victor:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "VictorWebsite:serve:production"
+              "devServerTarget": "Victor:serve:production"
             }
           }
         },
@@ -138,5 +138,5 @@
       }
     }
   },
-  "defaultProject": "VictorWebsite"
+  "defaultProject": "Victor"
 }
