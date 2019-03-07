@@ -86,11 +86,23 @@ a {
       overflow-y: auto;
       overflow-x: hidden;
       display: flex;
+      align-items: center;
+
+      li {
+        width: fit-content;
+      }
     }
 
     .navbar-brand {
       img {
         height: 45px;
+      }
+    }
+
+    .dropdown {
+      ul {
+        left: -50px;
+        text-align: -webkit-center;
       }
     }
   }

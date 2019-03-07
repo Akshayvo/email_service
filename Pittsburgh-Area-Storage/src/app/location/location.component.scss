@@ -5,6 +5,18 @@
   padding-top: 90px;
 }
 
+.special {
+  background-color: $primary;
+  display: flex;
+  color: $white;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
 .social-content {
   background-color: $primary;
   color: $white;
