@@ -18,6 +18,16 @@
   }
 }
 
+.contact-links {
+  a {
+    color: $white;
+  }
+}
+
+.display-link {
+  display: flex;
+}
+
 .img-box-0 {
   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Victor_Images/mall/victor-self-storage-mall-hero.png");
   background-size: cover;

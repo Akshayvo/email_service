@@ -8,18 +8,19 @@
           <div class="display">
             <h1 class="py-1" style="text-transform:capitalize;"> Victor Self Storage - {{name}}</h1>
             <span class="disp-smalll-device">
-              <a href="https://www.facebook.com/pages/Victor-Self-Storage/211266552318710" target="_blank"><img src="../../assets/facebook.png" alt=""></a> 
+              <a href="https://www.facebook.com/pages/Victor-Self-Storage/211266552318710" target="_blank"><img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/facebook.png" alt=""></a> 
              </span>
           </div>
           <div class="row">
             <div class="col-lg-11 px-0">
               <span *ngFor="let contact of contacts" class="py-2 each-contact">
-                <span class="pl-3"><i style="font-size: 1.1rem;" class="{{contact.class}}"></i></span><span>{{contact.data}}</span>
+                <span class="pl-3"><i style="font-size: 1.1rem;" class="{{contact.class}}"></i></span><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
               </span>
             </div>
             <div class="col-lg-1">
               <span class="disp">
-               <a href="https://www.facebook.com/pages/Victor-Self-Storage/211266552318710" target="_blank"><img src="../../assets/facebook.png" alt=""></a> 
+               <a href="https://www.facebook.com/pages/Victor-Self-Storage/211266552318710" target="_blank"><img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/facebook.png" alt=""></a> 
               </span>
             </div>
           </div>
