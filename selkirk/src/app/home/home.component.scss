@@ -14,17 +14,26 @@
 
 .cta {
   height: 74px;
-  background-color: $primary;
+  background-color: #ffd055;
   // position: absolute;
   bottom: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
-  p {
-    color: $white;
+  a {
+    color: black;
+  }
+
+  h3 {
     font-size: 22px;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 18px;
   }
 }
 
@@ -160,9 +169,13 @@
   }
 
   .cta {
-    p {
+    h3 {
       text-align: center;
       font-size: 16px;
+    }
+
+    h4 {
+      font-size: 12px;
     }
   }
 
@@ -292,8 +305,12 @@
   }
 
   .cta {
-    p {
+    h3 {
       font-size: 16px;
+    }
+
+    h4 {
+      font-size: 12px;
     }
   }
 }
