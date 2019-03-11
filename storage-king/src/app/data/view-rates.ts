@@ -1,8 +1,14 @@
 export const viewrates = [
     {
-        p: `Offering a variety of units! Choices include: climate, non-climate, dehumidified, drive up access,
-        Complete storage solutions to meet your needs. You choose which one is right for you.`,
+        p: `Offering a variety of units! Choices include: climate, non-climate,
+        dehumidified, drive up access, Complete storage solutions to meet your needs.
+        You choose which one is right for you.
+        `,
     },
+    {
+        p: `Still not sure of what size or type you would like or would best fit your needs?
+        Visit or call our local facility then decide which unit would be the best solution for you.`,
+    }
 ];
 
 

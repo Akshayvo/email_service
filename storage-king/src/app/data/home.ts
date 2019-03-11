@@ -17,6 +17,7 @@ export const featuresList = [
     },
     {
         td1: 'Climate & Humidity Controlled Units Available',
+        td2: 'Vehicle Storage & Parking',
     }
 ];
 
@@ -67,7 +68,7 @@ export const aboutUs = [
         convenient and stress-free to rent the right unit for your storage needs.`,
     },
     {
-        p: `Have questions? Give us a call. Our family looks forward to working with you.`,
+        p: `Have questions? Our family looks forward to working with you. give us a call!`,
     }
 ];
 
