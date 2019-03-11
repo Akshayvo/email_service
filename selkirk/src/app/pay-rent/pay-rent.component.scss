@@ -36,7 +36,7 @@
 
     .rent-example {
       border-left: 1px $border solid;
-      padding-left: 10%;
+      padding-left: 5%;
     }
   }
 }
@@ -49,7 +49,7 @@
   z-index: 16;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .rent-holder {
     .rent-sub-holder {
       .rent-example {
@@ -75,10 +75,6 @@
       padding: 24px;
     }
 
-    iframe {
-      min-height: 400px;
-    }
-
     .scroll-wrapper {
       -webkit-overflow-scrolling: touch;
       overflow: auto;
@@ -86,7 +82,6 @@
       iframe {
         width: 100%;
         overflow: auto;
-        min-width: 100%;
       }
     }
 

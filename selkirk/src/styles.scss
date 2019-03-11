@@ -9,7 +9,7 @@ $primaryDark: #0a77ad;
 // $primaryDark: #EF6C00;
 $secondary: #212121;
 
-$dark: #e3e3e3;
+$dark: #f6f6f6;
 $light: #efefef;
 $white: #fff;
 
@@ -40,7 +40,7 @@ body {
 }
 
 .bg-light {
-  background: $light;
+  background: $light !important;
 }
 
 .bg-white {

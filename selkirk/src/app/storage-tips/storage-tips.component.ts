@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { storagePoints, storageTips } from '../data/storage-tips';
+import { storagePoints, storageTipAccordion } from '../data/storage-tips';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 
@@ -12,7 +12,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 
 export class StorageTipsComponent implements OnInit {
   storagePoints: any;
-  storageTips: any;
+  storageTipAccordion: any;
   currentActive: any = 'STORAGE TIPS';
 
   constructor(
@@ -43,6 +43,6 @@ export class StorageTipsComponent implements OnInit {
   }
 
   public fetchstorageTips() {
-    this.storageTips = storageTips;
+    this.storageTipAccordion = storageTipAccordion;
   }
 }

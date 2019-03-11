@@ -21,7 +21,7 @@ export const storagePoints = [
 ];
 
 
-export const storageTips = [
+export const storageTipAccordion = [
     {
         id: '1',
         label: 'Furniture & Appliances',
