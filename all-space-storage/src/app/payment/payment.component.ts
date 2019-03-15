@@ -31,7 +31,7 @@ export class PaymentComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     this.receiveMessage();
   }
 
