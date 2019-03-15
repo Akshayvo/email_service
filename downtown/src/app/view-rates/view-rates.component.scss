@@ -1,0 +1,70 @@
+@import "../../styles.scss";
+
+.contentHolder {
+  padding-top: 70px;
+  min-height: 86vh;
+  margin-bottom: 50px;
+
+  .padding {
+    padding: 48px;
+  }
+
+  iframe {
+    overflow: hidden;
+    overflow-x: hidden;
+  }
+
+  .scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+
+    iframe {
+      width: 100%;
+      overflow: auto;
+      min-width: 100%;
+    }
+  }
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  iframe {
+    min-height: 600px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  iframe {
+    overflow: hidden;
+    overflow-x: auto;
+  }
+
+  .contentHolder {
+    padding-top: 60px;
+
+    .padding {
+      padding: 0;
+    }
+
+    .scroll-wrapper {
+      -webkit-overflow-scrolling: touch;
+      overflow-x: scroll;
+
+      iframe {
+        width: 100%;
+        overflow: scroll;
+      }
+    }
+  }
+}
+
