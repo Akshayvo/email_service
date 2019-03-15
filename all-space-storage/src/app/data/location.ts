@@ -87,7 +87,7 @@ export const unitSizerLocation1 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `Store the contents of one room. Also the right size for a motorcycle.`,
         amenities: [
-            { content: `Store contents of '\<strong>one room</strong>\'`, },
+            { content: `Store contents of <b>one room</b>`, },
             { content: `Off season clothing`, },
             { content: `Ideal for motorcycles`, },
             { content: `Good for patio furniture` }
@@ -98,7 +98,7 @@ export const unitSizerLocation1 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
         data: `Comfortably holds the contents of a one bedroom apartment as well as some sports equipment.`,
         amenities: [
-            { content: `Holds 1 to 2 rooms of furniture`, },
+            { content: `Holds <b>1 to 2 rooms</b> of furniture`, },
             { content: `Ideal for sports equipment`, },
             { content: `Extra space for apartment dwellers`, },
         ],
@@ -131,7 +131,7 @@ export const unitSizerLocation1 = [
         data: `This size can accommodate a larger car or the contents of a large apartment or small house.`,
         amenities: [
             { content: `Large car, size of 1 car garage`, },
-            { content: `3 to 4 rooms of furniture`, },
+            { content: `<b>3 to 4 rooms</b> of furniture`, },
             { content: `Good for business storage`, },
         ],
     },
@@ -140,18 +140,18 @@ export const unitSizerLocation1 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
         data: `A great space for a three bedroom apartment or a small house.`,
         amenities: [
-            { content: `Three bedroom apartment`, },
+            { content: `<b>Three bedroom apartment</b>`, },
             { content: `Furniture and totes or boxes`, },
-            { content: `Regular home sized storage`, },
+            { content: `<b>Regular home</b> sized storage`, },
         ],
     },
     {
         size: '10\' x 30\' or 12\' x 30\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
-        data: `Great for commercial use or for storing the contents of a large house, boats, RV's, etc.`,
+        data: `Great for commercial use or for storing the contents of <b>a large house</b>, boats, RV's, etc.`,
         amenities: [
             { content: `Commercial use`, },
-            { content: `Contents of a large house`, },
+            { content: `Contents of <b>a large house</b>`, },
             { content: `Some have double doors, easy access`, },
             { content: `Some are end units with easy truck access` }
         ],
@@ -175,7 +175,7 @@ export const unitSizerLocation2 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `Store the contents of one room. Also the right size for a motorcycle.`,
         amenities: [
-            { content: 'Store contents of one room', },
+            { content: 'Store contents of <b>one room</b>', },
             { content: `Off season clothing`, },
             { content: `Ideal for motorcycles`, },
             { content: `Good for patio furniture` }
@@ -186,7 +186,7 @@ export const unitSizerLocation2 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
         data: `Comfortably holds the contents of a one bedroom apartment as well as some sports equipment.`,
         amenities: [
-            { content: `Holds 1 to 2 rooms of furniture`, },
+            { content: `Holds <b>1 to 2 rooms</b> of furniture`, },
             { content: `Ideal for sports equipment`, },
             { content: `Extra space for apartment dwellers`, },
         ],
@@ -219,7 +219,7 @@ export const unitSizerLocation2 = [
         data: `This size can accommodate a larger car or the contents of a large apartment or small house.`,
         amenities: [
             { content: `Large car, size of 1 car garage`, },
-            { content: `3 to 4 rooms of furniture`, },
+            { content: `<b>3 to 4 rooms</b> of furniture`, },
             { content: `Good for business storage`, },
         ],
     },
@@ -228,9 +228,9 @@ export const unitSizerLocation2 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
         data: `A great space for a three bedroom apartment or a small house.`,
         amenities: [
-            { content: `Three bedroom apartment`, },
+            { content: `<b>Three bedroom apartment</b>`, },
             { content: `Furniture and totes or boxes`, },
-            { content: `Regular home sized storage`, },
+            { content: `<b>Regular home</b> sized storage`, },
         ],
     },
     {
@@ -239,7 +239,7 @@ export const unitSizerLocation2 = [
         data: `Great for commercial use or for storing the contents of a large house, boats, RV's, etc.`,
         amenities: [
             { content: `Commercial use`, },
-            { content: `Contents of a large house`, },
+            { content: `Contents of <b>a large house</b>`, },
             { content: `Some have double doors, easy access`, },
             { content: `Some are end units with easy truck access` }
         ],
@@ -263,7 +263,7 @@ export const unitSizerLocation3 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `Store the contents of one room. Also the right size for a motorcycle.`,
         amenities: [
-            { content: `Store contents of one room`, },
+            { content: `Store contents of <b>one room</b>`, },
             { content: `Off season clothing`, },
             { content: `Ideal for motorcycles`, },
             { content: `Good for patio furniture` }
@@ -274,7 +274,7 @@ export const unitSizerLocation3 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
         data: `Comfortably holds the contents of a one bedroom apartment as well as some sports equipment.`,
         amenities: [
-            { content: `Holds 1 to 2 rooms of furniture`, },
+            { content: `Holds <b>1 to 2 rooms</b> of furniture`, },
             { content: `Ideal for sports equipment`, },
             { content: `Extra space for apartment dwellers`, },
         ],
@@ -307,7 +307,7 @@ export const unitSizerLocation3 = [
         data: `This size can accommodate a larger car or the contents of a large apartment or small house.`,
         amenities: [
             { content: `Large car, size of 1 car garage`, },
-            { content: `3 to 4 rooms of furniture`, },
+            { content: `<b>3 to 4 rooms</b> of furniture`, },
             { content: `Good for business storage`, },
         ],
     },
@@ -316,9 +316,9 @@ export const unitSizerLocation3 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
         data: `A great space for a three bedroom apartment or a small house.`,
         amenities: [
-            { content: `Three bedroom apartment`, },
+            { content: `<b>Three bedroom apartment</b>`, },
             { content: `Furniture and totes or boxes`, },
-            { content: `Regular home sized storage`, },
+            { content: `<b>Regular home</b> sized storage`, },
         ],
     },
     {
@@ -327,7 +327,7 @@ export const unitSizerLocation3 = [
         data: `Great for commercial use or for storing the contents of a large house, boats, RV's, etc.`,
         amenities: [
             { content: `Commercial use`, },
-            { content: `Contents of a large house`, },
+            { content: `Contents of <b>a large house</b>`, },
             { content: `Some have double doors, easy access`, },
             { content: `Some are end units with easy truck access` }
         ],
@@ -351,7 +351,7 @@ export const unitSizerLocation4 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `Store the contents of one room. Also the right size for a motorcycle.`,
         amenities: [
-            { content: `Store contents of one room`, },
+            { content: `Store contents of <b>one room</b>`, },
             { content: `Off season clothing`, },
             { content: `Ideal for motorcycles`, },
             { content: `Good for patio furniture` }
@@ -362,7 +362,7 @@ export const unitSizerLocation4 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
         data: `Comfortably holds the contents of a one bedroom apartment as well as some sports equipment.`,
         amenities: [
-            { content: `Holds 1 to 2 rooms of furniture`, },
+            { content: `Holds <b>1 to 2 rooms</b> of furniture`, },
             { content: `Ideal for sports equipment`, },
             { content: `Extra space for apartment dwellers`, },
         ],
@@ -395,7 +395,7 @@ export const unitSizerLocation4 = [
         data: `This size can accommodate a larger car or the contents of a large apartment or small house.`,
         amenities: [
             { content: `Large car, size of 1 car garage`, },
-            { content: `3 to 4 rooms of furniture`, },
+            { content: `<b>3 to 4 rooms</b> of furniture`, },
             { content: `Good for business storage`, },
         ],
     },
@@ -404,9 +404,9 @@ export const unitSizerLocation4 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
         data: `A great space for a three bedroom apartment or a small house.`,
         amenities: [
-            { content: `Three bedroom apartment`, },
+            { content: `<b>Three bedroom apartment</b>`, },
             { content: `Furniture and totes or boxes`, },
-            { content: `Regular home sized storage`, },
+            { content: `<b>Regular home</b> sized storage`, },
         ],
     },
     {
@@ -415,7 +415,7 @@ export const unitSizerLocation4 = [
         data: `Great for commercial use or for storing the contents of a large house, boats, RV's, etc.`,
         amenities: [
             { content: `Commercial use`, },
-            { content: `Contents of a large house`, },
+            { content: `Contents of <b>a large house</b>`, },
             { content: `Some have double doors, easy access`, },
             { content: `Some are end units with easy truck access` }
         ],
@@ -439,7 +439,7 @@ export const unitSizerLocation5 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
         data: `Store the contents of one room. Also the right size for a motorcycle.`,
         amenities: [
-            { content: `Store contents of one room`, },
+            { content: `Store contents of <b>one room</b>`, },
             { content: `Off season clothing`, },
             { content: `Ideal for motorcycles`, },
             { content: `Good for patio furniture` }
@@ -450,7 +450,7 @@ export const unitSizerLocation5 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
         data: `Comfortably holds the contents of a one bedroom apartment as well as some sports equipment.`,
         amenities: [
-            { content: `Holds 1 to 2 rooms of furniture`, },
+            { content: `Holds <b>1 to 2 rooms</b> of furniture`, },
             { content: `Ideal for sports equipment`, },
             { content: `Extra space for apartment dwellers`, },
         ],
@@ -483,7 +483,7 @@ export const unitSizerLocation5 = [
         data: `This size can accommodate a larger car or the contents of a large apartment or small house.`,
         amenities: [
             { content: `Large car, size of 1 car garage`, },
-            { content: `3 to 4 rooms of furniture`, },
+            { content: `<b>3 to 4 rooms</b> of furniture`, },
             { content: `Good for business storage`, },
         ],
     },
@@ -492,9 +492,9 @@ export const unitSizerLocation5 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
         data: `A great space for a three bedroom apartment or a small house.`,
         amenities: [
-            { content: `Three bedroom apartment`, },
+            { content: `<b>Three bedroom apartment</b>`, },
             { content: `Furniture and totes or boxes`, },
-            { content: `Regular home sized storage`, },
+            { content: `<b>Regular home</b> sized storage`, },
         ],
     },
     {
@@ -503,7 +503,7 @@ export const unitSizerLocation5 = [
         data: `Great for commercial use or for storing the contents of a large house, boats, RV's, etc.`,
         amenities: [
             { content: `Commercial use`, },
-            { content: `Contents of a large house`, },
+            { content: `Contents of <b>a large house</b>`, },
             { content: `Some have double doors, easy access`, },
             { content: `Some are end units with easy truck access` }
         ],
@@ -521,15 +521,15 @@ export const headingLocation4 = `AllSpace Storage - Pawling`;
 
 export const headingLocation5 = `AllSpace Storage - Poughkeepsie/Hyde Park`;
 
-export const aboutUsImageLocation1 = `../../assets/images/Photos/Poughkeepsie-HydePark/poughkeepsie-hydepark.jpg`;
+export const aboutUsImageLocation1 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Poughkeepsie-HydePark/poughkeepsie-hydepark.jpg`;
 
-export const aboutUsImageLocation2 = `../../assets/images/Photos/NewPaltz-Highland/new-paltz-highland.jpg`;
+export const aboutUsImageLocation2 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/NewPaltz-Highland/new-paltz-highland.jpg`;
 
-export const aboutUsImageLocation3 = `../../assets/images/Photos/Kingston-LakeKatrine/kingston-lake-katrine.jpg`;
+export const aboutUsImageLocation3 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Kingston-LakeKatrine/kingston-lake-katrine.jpg`;
 
-export const aboutUsImageLocation4 = `../../assets/images/Photos/Pawling-Brewster/pawling-brewster.jpg`;
+export const aboutUsImageLocation4 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Pawling-Brewster/pawling-brewster.jpg`;
 
-export const aboutUsImageLocation5 = `../../assets/images/Photos/Poughkeepsie-HydePark/poughkeepsie-hydepark.jpg`;
+export const aboutUsImageLocation5 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Poughkeepsie-HydePark/poughkeepsie-hydepark.jpg`;
 
 export const alt1 = ``;
 export const alt2 = ``;

@@ -41,6 +41,16 @@
   }
 }
 
+.form-control {
+  font-size: 0.8rem;
+}
+
+.contact-links {
+  a {
+    color: #252525;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .contentHolder {
     padding-top: 70px;

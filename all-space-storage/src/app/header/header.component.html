@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-white">
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')">
-      <img src="../../assets/images/allspace-logo.jpg" width="100px" height="" alt="All Space Storage Logo">
+      <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/allspace-logo.jpg" width="100px" height="" alt="All Space Storage Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,7 @@
               <div class="dropdown show">  
                 <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" data-toggle="dropdown" [class.nav-link-active]="router.isActive('/location/poughkeepsie/arlington') || router.isActive('/location/poughkeepsie/hyde-park') || router.isActive('/location/highland') || router.isActive('/location/lake-katrine') || router.isActive('/location/pawling')" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
-                    <li *ngFor="let sub of nav.sublinks text-center"><a class="dropdown-item" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a></li>
+                    <li *ngFor="let sub of nav.sublinks text-center"><a class="dropdown-item" [routerLink]="sub?.path" [routerLinkActive]="'location-active'" (click)="onClick(menu)">{{sub.label}}</a></li>
                   <!-- <ng-container *ngFor="let sub of nav.sublinks text-center" >
                     <li *ngIf="sub?.type != 'dropdown-submenu';else other_content">
                       <a class="dropdown-item" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a>

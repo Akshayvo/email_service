@@ -44,35 +44,43 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.4339304174373!2d-73.88317818456487!3d41.689567279237515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd3fae485cebbf%3A0x26c17f058f6e14f5!2sAllSpace+Storage!5e0!3m2!1sen!2sus!4v1547424990419" width="100%" height="100%" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
         </span>
         <span *ngIf="locationId == 2" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11912.94532453811!2d-73.901327!3d41.7154189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa8d5809b74358777!2sAllSpace+Storage!5e0!3m2!1sen!2sus!4v1552263193264" width="100%" height="100%" frameborder="0" style="border: 2px solid #fff;" allowfullscreen></iframe>
+          </span>
+        <span *ngIf="locationId == 3" >
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.1611943605335!2d-74.02744608456327!3d41.738615879233485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd3d55d160eb6d%3A0x64a4ce6012f7150a!2sAllSpace+Storage!5e0!3m2!1sen!2sus!4v1547426582258" width="100%" height="100%" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
         </span>
-        <span *ngIf="locationId == 3" >
+        <span *ngIf="locationId == 4" >
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.8773523280065!2d-73.99206268419536!3d41.98144297921405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd08d954bf9dd5%3A0x99ba74eb9850ef38!2sAllSpace+Storage!5e0!3m2!1sen!2sus!4v1547428290178" width="100%" height="100%" frameborder="0" style="border: 2px solid #fff;" allowfullscreen></iframe>
         </span>
-        <span *ngIf="locationId == 4" >
+        <span *ngIf="locationId == 5" >
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3895.372725219602!2d-73.58763914649444!3d41.538010515264524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xecff7e1d16462119!2sAllSpace+Storage!5e0!3m2!1sen!2sus!4v1547429701813" width="100%" height="100%" frameborder="0" style="border: 2px solid #fff;" allowfullscreen></iframe>
         </span>
       </div>
       <div class="col-md-4  pl-4 pt-3">
         <h2>{{heading}}</h2>
         <p > 
-          <span *ngFor="let contact of contactDetails">
-            <b>{{contact.label}}</b> {{contact.data}}<br>
-          </span>
+            <span *ngFor="let contact of contactDetails">
+                <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+              </span>
         </p>
         <span *ngIf="locationId == 1" >
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/poughkeepsie/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/poughkeepsie/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/poughkeepsie/arlington/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/poughkeepsie/arlington/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
         </span>
         <span *ngIf="locationId == 2" >
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/poughkeepsie/hyde-park/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/poughkeepsie/hyde-park/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
+          </span>
+        <span *ngIf="locationId == 3" >
           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/highland/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/highland/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
         </span>
-        <span *ngIf="locationId == 3" >
+        <span *ngIf="locationId == 4" >
           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/lake-katrine/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/lake-katrine/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>
         </span>
-        <span *ngIf="locationId == 4" >
+        <span *ngIf="locationId == 5" >
           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/pawling/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/pawling/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>
         </span>
@@ -103,7 +111,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <img src="../../assets/images/Photos/couple-packing-boxes.jpg" alt="Couple Packing Boxes">
+            <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/couple-packing-boxes.jpg" alt="Couple Packing Boxes">
           </div>
         </div>
       </div>

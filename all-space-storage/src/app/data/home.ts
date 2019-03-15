@@ -2,19 +2,19 @@
 export const featuresHead = [
     {
         label: 'Electronic Gate Access',
-        data: '../../assets/images/jumbotron-bottom-images/gate.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/jumbotron-bottom-images/gate.svg',
     },
     {
         label: 'Security Cameras On-Premises',
-        data: '../../assets/images/jumbotron-bottom-images/cctv.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/jumbotron-bottom-images/cctv.svg',
     },
     {
         label: '24 Hour Access Available',
-        data: '../../assets/images/jumbotron-bottom-images/24-hours.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/jumbotron-bottom-images/24-hours.svg',
     },
     {
         label: 'Boxes & Moving Supplies Sold',
-        data: '../../assets/images/jumbotron-bottom-images/package.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/jumbotron-bottom-images/package.svg',
     },
 ];
 

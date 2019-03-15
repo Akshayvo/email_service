@@ -6,9 +6,10 @@
           <h1 style="text-transform:capitalize;"> AllSpace Storage - {{name}}</h1>
           <div class="row">
             <div class="col-lg-11 px-0">
-              <span *ngFor="let contact of contacts" class="py-2 each-contact">
-                <span class="pl-3"><i style="font-size: 1.1rem;" class="{{contact.class}}"></i></span><span>{{contact.data}}</span>
-              </span>
+                <span *ngFor="let contact of contacts" class="py-2 each-contact contact-data">
+                    <span class="pl-3"><i class="{{contact.class}}"></i></span><span *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></span>
+                    <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
+                  </span>
             </div>
             <!-- <div class="col-lg-1">
               <span class="disp">

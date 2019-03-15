@@ -26,9 +26,16 @@ a {
 
   .nav-link-active {
     border-bottom: 5px $primary solid;
-    color: $primary;
+    color: $primary !important;
     font-weight: 600;
   }
+
+
+  .location-active {
+    color: $primary !important;
+    font-weight: 600;
+  }
+
 
   button {
     border: 1px $dark solid;
@@ -135,6 +142,10 @@ a {
 
     .dropdown {
       .dropdown-menu {
+        left: -25px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         a {
           padding: 4px;
         }

@@ -4,7 +4,8 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
           contactsLocation3, hoursLocation3,
-          contactsLocation4, hoursLocation4, para } from '../data/contact';
+          contactsLocation4, hoursLocation4,
+          contactsLocation5, hoursLocation5, } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
 import { LocationService } from '../services/location.service';
 
@@ -19,7 +20,6 @@ export class HomeComponent implements OnInit {
   locationId: any;
   heading: string;
   features: any;
-  para: any;
   serviceOffered: any;
 
   constructor(
@@ -41,7 +41,6 @@ export class HomeComponent implements OnInit {
     this.fetchFeatureHead();
     this.window.scrollTo(0, 0);
     this.receiveMessage();
-    this.fetchPara();
   }
 
   receiveMessage() {
@@ -55,16 +54,18 @@ export class HomeComponent implements OnInit {
     if ( this.locationId === '1' || this.locationId === 1 ) {
       this.fetchContactDetailsLocation1();
     } else if ( this.locationId === '2' ) {
-      this.fetchContactDetailsLocation2();
+      this.fetchContactDetailsLocation5();
     } else if ( this.locationId === '3' ) {
-      this.fetchContactDetailsLocation3();
+      this.fetchContactDetailsLocation2();
     } else if ( this.locationId === '4' ) {
+      this.fetchContactDetailsLocation3();
+    } else if ( this.locationId === '5' ) {
       this.fetchContactDetailsLocation4();
     }
   }
 
     public fetchContactDetailsLocation1() {
-      this.heading = `AllSpace Storage - Poughkeepsie`;
+      this.heading = `AllSpace Storage - Poughkeepsie/Arlington`;
       this.contactDetails = contactsLocation1;
       this.hoursDetails = hoursLocation1;
     }
@@ -87,15 +88,17 @@ export class HomeComponent implements OnInit {
       this.hoursDetails = hoursLocation4;
     }
 
+    public fetchContactDetailsLocation5() {
+      this.heading = `AllSpace Storage - Poughkeepsie/Hyde Park`;
+      this.contactDetails = contactsLocation5;
+      this.hoursDetails = hoursLocation5;
+    }
+
   public fetchFeatureHead() {
     this.features = featuresHead;
   }
 
   public fetchStaticContent() {
     this.serviceOffered = serviceOffered;
-  }
-
-  public fetchPara() {
-    this.para = para;
   }
 }

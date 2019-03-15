@@ -33,7 +33,9 @@
                 <h5 class="text-center"> {{unit.size}} </h5>
                 <!-- <p class="text-center" > {{unit.data}} </p> -->
                 <ul>
-                  <li *ngFor="let amenity of unit?.amenities"> {{amenity.content}} </li>
+                  <li *ngFor="let amenity of unit?.amenities"> 
+                    <div [innerHTML]="amenity.content"> </div> 
+                  </li>
                 </ul>
               </div>      
             </div>

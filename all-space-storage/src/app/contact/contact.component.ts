@@ -59,6 +59,7 @@ export class ContactComponent implements OnInit {
                 Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
+      subject: [''],
   });
   this.receiveMessage();
 }
@@ -123,6 +124,9 @@ onSubmit() {
  if (this.contactForm.invalid) {
      return;
  } else {
+  if ( !this.contactForm.value.subject) {
+    this.contactForm.value.subject = 'Website Form Submission';
+  }
 
   this.receiveremail = this.contactDetails[2].data;
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
@@ -133,6 +137,7 @@ onSubmit() {
          email: this.contactForm.value.email,
          receiveremail: this.receiveremail,
          message: this.completeMessage,
+         subject: this.contactForm.value.subject,
        };
        this.emailService.sendEmail(body)
          .subscribe((response: any) => {
