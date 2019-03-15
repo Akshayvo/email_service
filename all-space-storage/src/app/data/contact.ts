@@ -78,6 +78,12 @@ export const hoursLocation2 = [
     },
 ];
 
+export const para = [
+    {
+        p: 'Need 24 hour access? Ask an associate today!',
+    }
+];
+
 export const contactsLocation3 = [
     {
         label: 'Address:',
@@ -141,8 +147,8 @@ export const hoursLocation4 = [
         data: '10am-5pm',
     },
     {
-        label: 'Thurs: ',
-        data: '9am-4pm',
+        label: 'Thursday: ',
+        data: '10AM-2PM',
     },
     {
         label: 'Saturday: ',
@@ -152,4 +158,45 @@ export const hoursLocation4 = [
         label: 'Sunday: ',
         data: 'Closed',
     },
+];
+
+export const contactsLocation5 = [
+    {
+        label: 'Address:',
+        data: '120 Salt Point Turnpike, Poughkeepsie, NY 12603',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+
+    {
+        label: 'Phone:',
+        data: '(845) 473-0066',
+        class: 'fas fa-phone mr-2 iconColor',
+    },
+    {
+        label: 'Email:',
+        data: 'AllSpaceStorage@hvc.rr.com',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+    },
+];
+
+export const hoursLocation5 = [
+    {
+        label: 'Mon-Fri: ',
+        data: '9am-5pm',
+    },
+    {
+        label: 'Saturday: ',
+        data: '9am-4pm',
+    },
+    {
+        label: 'Sunday: ',
+        data: 'Closed',
+    },
+    {
+        label: 'Access Hours: ',
+        data: '7 Days a Week 6:00AM - 11:00PM',
+    },
+    // {
+    //     label: 'Need 24 hour access? Ask an associate today!',
+    // }
 ];

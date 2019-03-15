@@ -9,6 +9,10 @@
   .single-block {
     background-color: $white;
   }
+
+  ul {
+    padding-inline-start: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {

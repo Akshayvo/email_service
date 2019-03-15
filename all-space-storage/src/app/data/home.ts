@@ -14,7 +14,7 @@ export const featuresHead = [
     },
     {
         label: 'Boxes & Moving Supplies Sold',
-        data: '../../assets/images/jumbotron-bottom-images/truck.svg',
+        data: '../../assets/images/jumbotron-bottom-images/package.svg',
     },
 ];
 

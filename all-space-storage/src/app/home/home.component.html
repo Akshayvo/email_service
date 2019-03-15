@@ -55,7 +55,7 @@
       </div>
       <div class="col-md-4  pl-4 pt-3">
         <h2>{{heading}}</h2>
-        <p> 
+        <p > 
           <span *ngFor="let contact of contactDetails">
             <b>{{contact.label}}</b> {{contact.data}}<br>
           </span>
@@ -79,11 +79,12 @@
       </div>
       <div class="col-md-3 contact-hours pt-3">
           <h2>Hours:</h2>
-          <p>
+          <p class="margin-bottom">
             <span *ngFor="let hour of hoursDetails">
               <b>{{hour.label}}</b>{{hour.data}}<br>
             </span>
           </p>
+          <p class="margin-bottom" *ngIf="locationId == 2">Need 24 hour access? Ask an associate today!</p>
       </div>
     </div>
   </div>  

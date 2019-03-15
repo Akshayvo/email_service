@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { directionLocation1, directionLocation2, directionLocation3, directionLocation4 } from '../data/location';
+import {
+  directionLocation1, directionLocation2, directionLocation3, directionLocation4, directionLocation5
+ } from '../data/location';
 @Component({
   selector: 'app-directions',
   templateUrl: './directions.component.html',
@@ -18,14 +20,16 @@ export class DirectionsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/poughkeepsie')) {
+    if (this.router.url.includes('/location/poughkeepsie/arlington')) {
        this.fetchDetailsLocation1();
      } else if (this.router.url.includes('/location/highland')) {
        this.fetchDetailsLocation2();
      } else  if (this.router.url.includes('/location/lake-katrine'))  {
        this.fetchDetailsLocation3();
+    } else  if (this.router.url.includes('/location/pawling'))  {
+      this.fetchDetailsLocation4();
      } else {
-       this.fetchDetailsLocation4();
+       this.fetchDetailsLocation5();
      }
  }
 
@@ -54,5 +58,12 @@ export class DirectionsComponent implements OnInit {
     this.directionPoints = directionLocation4;
     this.directionHeading = `Directions to All Space Storage`;
     this.id = 4;
+  }
+
+  public fetchDetailsLocation5() {
+    this.name = 'PawPoughkeepsieling';
+    this.directionPoints = directionLocation5;
+    this.directionHeading = `Directions`;
+    this.id = 5;
   }
 }

@@ -3,7 +3,8 @@ import { Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
           contactsLocation3, hoursLocation3,
-          contactsLocation4,  hoursLocation4 } from '../data/contact';
+          contactsLocation4,  hoursLocation4,
+          contactsLocation5, hoursLocation5 } from '../data/contact';
 import { tabs } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -31,13 +32,20 @@ export class LocationComponent implements OnInit {
     private router: Router,
     private titleService: Title,
     ) {
-      if (this.router.url.includes('/location/poughkeepsie')) {
+      if (this.router.url.includes('/location/poughkeepsie/arlington')) {
             this.meta.addTag({
               name: 'description',
               content: `Our Route 55 Poughkeepsie location has 24 hour access available, pin-code activated gates,
                         and easy online auto-pay for your convenience!`
             });
             this.titleService.setTitle('Storage Units in Poughkeepsie, NY | AllSpace Storage');
+    } else if (this.router.url.includes('/location/poughkeepsie/hyde-park')) {
+      this.meta.addTag({
+        name: 'description',
+        content: `Whether you own a home, rent an apartment, go to school or run a business,
+        our Poughkeepsie/Hyde Park location can help you find the perfect storage unit for your needs!`
+      });
+      this.titleService.setTitle('Self Storage Units In Poughkeepsie, NY | AllSpace Storage');
     } else if (this.router.url.includes('/location/highland')) {
            this.meta.addTag({
              name: 'description',
@@ -68,24 +76,34 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/poughkeepsie')) {
+    if (this.router.url.includes('/location/poughkeepsie/arlington')) {
         this.fetchDetailsLocation1();
     } else if (this.router.url.includes('/location/highland')) {
       this.fetchDetailsLocation2();
     } else  if (this.router.url.includes('/location/lake-katrine'))  {
       this.fetchDetailsLocation3();
-    } else {
+    } else  if (this.router.url.includes('/location/pawling'))  {
       this.fetchDetailsLocation4();
+    } else {
+      this.fetchDetailsLocation5();
     }
  }
 
   public fetchDetailsLocation1() {
-      this.name = 'Poughkeepsie';
+      this.name = 'Poughkeepsie/Arlington';
       this.id = 1;
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
       this.tabs = tabs;
     }
+
+  public fetchDetailsLocation5() {
+    this.name = 'Poughkeepsie/Hyde Park';
+    this.id = 5;
+    this.contacts = contactsLocation5;
+    this.hours = hoursLocation5;
+    this.tabs = tabs;
+  }
 
    public fetchDetailsLocation2() {
      this.name = 'Highland';

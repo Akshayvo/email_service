@@ -11,24 +11,44 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Poughkeepsie',
-                path: '/location/poughkeepsie',
-                name: 'Poughkeepsie'
+                label: 'Poughkeepsie/Arlington',
+                path: '/location/poughkeepsie/arlington',
+                name: 'arlington',
+                // innerLinks: [
+                //     {
+                //         id: '1',
+                //         label: 'Poughkeepsie/Arlington',
+                //         path: '/location/poughkeepsie/arlington',
+                //         name: 'arlington',
+                //     },
+                //     {
+                //         id: '2',
+                //         label: 'Poughkeepsie/Hyde Park',
+                //         path: '/location/poughkeepsie/hyde-park',
+                //         name: 'hydePark',
+                //     }
+                // ]
               },
               {
-                  id: '2',
+                id: '2',
+                label: 'Poughkeepsie/Hyde Park',
+                path: '/location/poughkeepsie/hyde-park',
+                name: 'hyde-park'
+            },
+              {
+                  id: '3',
                   label: 'Highland',
                   path: '/location/highland',
                   name: 'Highland'
               },
               {
-                  id: '3',
+                  id: '4',
                   label: 'Lake Katrine',
                   path: '/location/lake-katrine',
                   name: 'LakeKatrine'
               },
               {
-                id: '4',
+                id: '5',
                 label: 'Pawling',
                 path: '/location/pawling',
                 name: 'Pawling'

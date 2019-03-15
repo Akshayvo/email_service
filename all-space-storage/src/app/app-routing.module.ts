@@ -16,7 +16,19 @@ import { DirectionsComponent } from './directions/directions.component';
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: '', component: HomeComponent },
-  { path: 'location/poughkeepsie',
+  { path: 'location/poughkeepsie/arlington',
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      { path: 'storageUnits', component: StorageUnitComponent },
+      { path: 'unitSizer', component: UnitSizerComponent },
+      { path: 'reserveUnit', component: ReserveUnitComponent },
+      { path: 'photos', component: PhotosComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
+  { path: 'location/poughkeepsie/hyde-park',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -64,12 +76,20 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/poughkeepsie', component: HomeComponent,
+  { path: 'review/poughkeepsie/arlington', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJv-tcSK4_3YkR9RRujwV_wSY'
+    }
+  },
+  { path: 'review/poughkeepsie/hyde-park', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJyym5TS8-3YkRd4c1dJuA1ag'
     }
   },
   { path: 'review/highland', component: HomeComponent,

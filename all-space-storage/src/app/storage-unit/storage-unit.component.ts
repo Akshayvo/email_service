@@ -17,7 +17,7 @@ export class StorageUnitComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/poughkeepsie')) {
+    if (this.router.url.includes('/location/poughkeepsie/arlington')) {
         this.id = 1;
     } else if (this.router.url.includes('/location/highland')) {
       this.id = 2;
@@ -25,6 +25,8 @@ export class StorageUnitComponent implements OnInit {
       this.id = 3;
     } else if (this.router.url.includes('/location/pawling')) {
       this.id = 4;
+    } else if (this.router.url.includes('/location/poughkeepsie/hyde-park')) {
+      this.id = 5;
     }
   }
 }

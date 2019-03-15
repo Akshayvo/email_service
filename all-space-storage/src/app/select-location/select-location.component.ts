@@ -14,18 +14,22 @@ export class SelectLocationComponent implements OnInit {
   places = [
     {
       id: 1,
-      name: 'AllSpace Storage - Poughkeepsie',
+      name: 'AllSpace Storage - Poughkeepsie/Arlington',
     },
     {
       id: 2,
-      name: 'AllSpace Storage - Highland',
+      name: 'AllSpace Storage - Poughkeepsie/Hyde Park',
     },
     {
       id: 3,
-      name: 'AllSpace Storage - Lake Katrine',
+      name: 'AllSpace Storage - Highland',
     },
     {
       id: 4,
+      name: 'AllSpace Storage - Lake Katrine',
+    },
+    {
+      id: 5,
       name: 'AllSpace Storage - Pawling',
     },
  ];

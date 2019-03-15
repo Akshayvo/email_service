@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
   navLinks: any;
   socialLinks: any;
   data: any;
+  status = false;
   @Input() currentActive: any;
 
   constructor(
@@ -34,5 +35,10 @@ export class HeaderComponent implements OnInit {
 
   public onClick(menu: any) {
     menu.classList.remove('show');
+  }
+
+  public showUl(menu: any) {
+    menu.classList.add('show');
+    this.status = true;
   }
 }

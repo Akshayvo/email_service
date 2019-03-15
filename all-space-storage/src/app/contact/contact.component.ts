@@ -5,7 +5,8 @@ import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
           contactsLocation3, hoursLocation3,
-          contactsLocation4, hoursLocation4 } from '../data/contact';
+          contactsLocation4, hoursLocation4,
+          contactsLocation5, hoursLocation5 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -80,28 +81,36 @@ export class ContactComponent implements OnInit {
       this.fetchContactDetailsLocation3();
     } else if ( this.locationId === '4' ) {
       this.fetchContactDetailsLocation4();
+    } else if ( this.locationId === '5' ) {
+      this.fetchContactDetailsLocation5();
     }
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `AllSpace Storage - Poughkeepsie`;
+    this.heading = `AllSpace Storage - Poughkeepsie/Arlington`;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
 
   public fetchContactDetailsLocation2() {
+    this.heading = `AllSpace Storage - Pawling/Hyde Park`;
+    this.contactDetails = contactsLocation5;
+    this.hoursDetails = hoursLocation5;
+  }
+
+  public fetchContactDetailsLocation3() {
     this.heading = `AllSpace Storage - Highland`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
-  public fetchContactDetailsLocation3() {
+  public fetchContactDetailsLocation4() {
     this.heading = `AllSpace Storage - Lake Katrine`;
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
-  public fetchContactDetailsLocation4() {
+  public fetchContactDetailsLocation5() {
     this.heading = `AllSpace Storage - Pawling`;
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;

@@ -16,6 +16,10 @@
           <h2 class="text-center">Unit Sizer</h2>
           <p class="text-center">Need help picking out an appropriate unit size for your purposes? Use our handy visual unit sizer below or reach out to a friendly, professional storage associate and see how AllSpace Storage can accommodate your needs!</p>
       </span>
+      <span *ngIf="id === 5">
+          <h2 class="text-center">Unit Sizer</h2>
+          <p class="text-center">This location offers a wide range of unit sizes. A professional and knowledgeable storage associate will be glad to help you determine which unit will work for you. AllSpace's units have 9 to 10 foot ceilings, which allows you to stack higher and store more for your money.  The following unit sizes are available at our Poughkeepsie/Hyde Park location.</p>
+      </span>
 
     <div class="container py-3">
       <div class="container">
@@ -27,10 +31,10 @@
               </div>
               <div class="p-3">
                 <h5 class="text-center"> {{unit.size}} </h5>
-                <p class="text-center" > {{unit.data}} </p>
-                <!-- <ul>
+                <!-- <p class="text-center" > {{unit.data}} </p> -->
+                <ul>
                   <li *ngFor="let amenity of unit?.amenities"> {{amenity.content}} </li>
-                </ul> -->
+                </ul>
               </div>      
             </div>
           </div>
