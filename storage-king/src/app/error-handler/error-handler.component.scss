@@ -1,6 +1,12 @@
 @import "../../styles.scss";
 
+.containHolder {
+  min-height: 100vh;
+  margin-bottom: 50px;
+}
+
 .error {
+  padding-top: 200px;
   margin-top: auto;
   margin-bottom: auto;
   height: 100vh;
@@ -20,5 +26,11 @@
     h5 {
       font-size: 1.5rem;
     }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .error {
+    padding-top: 200px;
   }
 }
