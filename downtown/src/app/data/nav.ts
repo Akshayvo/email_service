@@ -16,6 +16,10 @@ export const navLinks = [
         path: 'storage-tips',
     },
     {
+        label: 'UNIT SIZER',
+        path: 'unit-sizer'
+    },
+    {
         label: 'CONTACT US',
         path: 'contact-us'
     },

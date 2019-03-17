@@ -24,6 +24,7 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
+import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
     ContactButtonComponent,
     PayRentComponent,
     ReserveUnitComponent,
+    UnitSizerComponent,
   ],
   imports: [
     CommonModule,

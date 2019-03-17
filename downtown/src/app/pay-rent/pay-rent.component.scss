@@ -50,6 +50,13 @@
   z-index: 16;
 }
 
+.coming {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
   .rent-holder {
     .rent-sub-holder {

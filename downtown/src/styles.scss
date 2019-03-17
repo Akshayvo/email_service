@@ -3,7 +3,7 @@
 //Basic color and font styles
 // $primary: #3c8fb4;
 $primary: #36454f;
-$primaryDark: #dc9600;
+$primaryDark: #181e22;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
@@ -40,7 +40,7 @@ body {
 }
 
 .bg-light {
-  background: $light;
+  background: $light !important;
 }
 
 .bg-white {

@@ -12,9 +12,9 @@
 
 button {
   min-width: 40px;
-  background-color: #f5a700;
+  background-color: #36454f;
   padding: 10px;
-  border-right: 1px solid #f5a700;
+  border-right: 1px solid #36454f;
   border-left: 1px solid white;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
@@ -44,12 +44,11 @@ button {
   }
 }
 
-
 @media only screen and (min-width: 661px) and (max-width: 991px) and (max-height: 650px) {
   .contact-button {
     position: fixed;
     right: 0;
-    top: 80px;
+    top: 100px;
     overflow: auto;
     overflow-y: auto;
     overflow-x: hidden;
@@ -60,6 +59,6 @@ button {
 
 @media only screen and (max-width: 991px) and (max-height: 480px) {
   .contact-button {
-    top: 70px;
+    top: 90px;
   }
 }

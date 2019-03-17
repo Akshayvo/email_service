@@ -22,10 +22,9 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We're here to make your storage experience an easy and
-                straightforward one so here are some tips on how to get the most out of your self storage.`
+      content: `Make your stay with Downtown Storage an easy one with these quick self storage tips!`
     });
-    this.titleService.setTitle('Storage Tips | Drayton Harbor Mini Storage');
+    this.titleService.setTitle('Storage Tips | Downtown Storage');
   }
 
   ngOnInit() {

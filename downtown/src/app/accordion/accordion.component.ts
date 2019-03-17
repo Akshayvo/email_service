@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { storageTips } from '../data/storage-tips';
 
 @Component({
   selector: 'app-accordion',
@@ -7,25 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class AccordionComponent implements OnInit {
 
-  show = false;
-  aData: Object;
-  @Input() accordianData: any;
+  storageTipAccordion: any ;
 
   constructor() { }
 
   ngOnInit() {
-    this.fetchaccordianData();
+    this.fetchStorageTipAccordion();
   }
 
-
-  toggleCollapse(): void {
-    this.show = !this.show;
-  }
-
-  /**
-   * fetchaccordianData
-   */
-  public fetchaccordianData() {
-    this.aData = this.accordianData;
+  public fetchStorageTipAccordion() {
+    this.storageTipAccordion = storageTips;
   }
 }
+

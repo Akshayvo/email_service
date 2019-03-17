@@ -37,10 +37,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Have a question or concern about our self storage, RV, boat or vehicle services?
-                Use our convenient contact form or contact information to reach out today!`
+      content: `Have a question about the services we offer or your account with us? Call
+      (903) 439-8013 and speak with one of our self storage associates!`
     });
-    this.titleService.setTitle('Affordable Self Storage Units Near Blaine, WA, 98230 | Drayton Harbor Mini Storage');
+    this.titleService.setTitle('Contact Us | Downtown Storage');
   }
 
   ngOnInit() {
