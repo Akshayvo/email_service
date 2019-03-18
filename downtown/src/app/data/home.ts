@@ -18,25 +18,25 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/images/location.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Downtown_Images/location.svg',
         label: 'Located at the Heart of Alba',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/images/light-bulb.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Downtown_Images/light-bulb.svg',
         label: 'Well-Lit Facility',
         alt: 'Icon of an illuminated light'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/images/fence.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Downtown_Images/fence.svg',
         label: 'Fully-Fenced Facility',
         alt: 'Icon of a section of fencing'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/images/group-of-people-outline.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Downtown_Images/group-of-people-outline.svg',
         label: 'Locally Owned and Operated',
         alt: 'Icon of people standing together'
     },
