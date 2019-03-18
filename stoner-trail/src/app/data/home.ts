@@ -5,7 +5,7 @@ export const featuresList = [
     },
     {
         td1: 'Pin-Code Activated Gate',
-        td2: 'Stellar Customer Service'
+        td2: 'Easy Interstate Access'
     },
     {
         td1: 'Recreational Vehicle Storage',
@@ -15,19 +15,19 @@ export const featuresList = [
 
 export const aboutUs = [
     {
-        p: `If you're looking for clean, well maintained and affordable self storage units in or near Johnstown,
-            Cloversville, Amsterdam and Capital Region communities, you've come to the right place!`,
+        p: `Stoner Trail Self Storage is a well maintained and affordable facility in Johnstown NY with easy access
+            from Gloversville, Amsterdam and Capital Region communities.`,
     },
     {
         p: `Our convenient location, competitive prices and 24 hour access offer great value whether
-            you're looking for short or long term self storage. We proudly serve many residential and commercial
-            customers seeking both short and long term self storage solutions.
-        `,
+        you're looking for short or long term self storage. We proudly serve many residential and commercial customers
+        seeking both short and long term self storage solutions. Our facility large (15x42 & 15x48) single bay storage
+        units for RV's which are very hard to find.`,
     },
     {
         p: `We offer a convenient online reservation and system that makes finding an the right unit for you a breeze!
-            Once you're moved in you have convenient 24/7 access to your account information and payment portal to
-            make your stay with us a convenient one!`,
+        Once you're moved in you have convenient 24/7 access to your account information and payment portal to make
+        your stay with us a convenient one!`,
     },
 ];
 
@@ -37,9 +37,9 @@ find an affordable unit that fits your needs!`;
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Stoner_Trail_Images/stellar.svg`,
-        label: 'Stellar Customer Service',
-        alt: `Customer Service Agent Icon`
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Stoner_Trail_Images/hand.svg`,
+        label: 'Affordable Self Storage Rates',
+        alt: `Icon artwork showing a coin`
     },
     {
         // tslint:disable-next-line:max-line-length

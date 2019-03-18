@@ -15,16 +15,17 @@
 }
 
 .card-body {
-  padding: 20px 20px 20px 45px;
+  padding: 20px;
   font-size: 0.9em;
-  font-weight: 600;
-  color: $fontColor;
+  // font-weight: 600;
+  color: #212529;
   background-color: $white;
   margin: auto;
 }
 
 ul {
   padding-inline-start: 36px;
+  list-style: none;
 }
 
 .card-header-before-collapse {

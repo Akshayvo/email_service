@@ -13,12 +13,12 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 const routes: Routes = [
   // Fallback when no prior route is matched
   { path: '', component: HomeComponent },
-  { path: 'reserve', component: ReserveComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'reserve-unit', component: ReserveComponent },
+  { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
-  { path: 'payment', component: PaymentComponent },
+  { path: 'pay-rent', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'unit-sizer', component: UnitSizerComponent },
+  { path: 'unit-sizes', component: UnitSizerComponent },
   { path: 'review', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'

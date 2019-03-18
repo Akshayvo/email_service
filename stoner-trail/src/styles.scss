@@ -9,7 +9,7 @@ $primaryDark: #025c7e;
 $secondary: #8fc641;
 
 $dark: #333;
-$light: rgba(2, 92, 126, 0.5);
+$light: #43869b;
 $white: #fff;
 
 $border: #707070;
@@ -63,9 +63,11 @@ body {
   min-width: 200px;
 }
 
-.btn-primary:hover {
-  background-color: #034E69;
-  border-color: #034E69;
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #034E69 !important;
+  border-color: #034E69 !important;
 }
 
 .btn-outline-primary {
@@ -73,12 +75,14 @@ body {
   border-color: $primary;
   border: 2px solid $primary;
   min-width: 200px;
-  color: black !important;
+  color: $primary !important;
 }
 
-.btn-outline-primary:hover {
-  background-color: $primaryDark;
-  border-color: $primaryDark;
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
   color: $white !important;
 }
 

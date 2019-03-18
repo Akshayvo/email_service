@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  errorsMails: [ 'vinay.g@codeparva.in', 'preetha.ts@codeparva.in' ],
+  errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   appId: 'Catskill'
 };

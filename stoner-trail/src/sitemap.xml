@@ -1,22 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc>https://stonertrailstorage.com</loc>
+    <loc>https://www.stonertrailstorage.com</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stonertrailstorage.com/view-rates</loc>
+    <loc>https://www.stonertrailstorage.com/view-rates</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+    <url>
+    <loc>https://www.stonertrailstorage.com/unit-sizes</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stonertrailstorage.com/reserve</loc>
+    <loc>https://www.stonertrailstorage.com/pay-rent</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stonertrailstorage.com/contact</loc>
+    <loc>https://www.stonertrailstorage.com/storage-tips</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+   <url>
+    <loc>https://www.stonertrailstorage.com/contact-us</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+    <url>
+    <loc>https://www.stonertrailstorage.com/reserve-your-unit</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>

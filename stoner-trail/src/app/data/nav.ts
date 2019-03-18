@@ -8,12 +8,12 @@ export const navLinks = [
         path: '/view-rates',
     },
     {
-        label: 'UNIT SIZER',
-        path: '/unit-sizer'
+        label: 'UNIT SIZES',
+        path: '/unit-sizes'
     },
     {
         label: 'PAY RENT',
-        path: '/payment'
+        path: '/pay-rent'
     },
     {
         label: 'STORAGE TIPS',
@@ -21,6 +21,6 @@ export const navLinks = [
     },
     {
         label: 'CONTACT US',
-        path: '/contact'
+        path: '/contact-us'
     },
 ];

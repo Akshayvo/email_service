@@ -21,7 +21,7 @@
 }
 
 .padding-top {
-  padding-top: 158px;
+  padding-top: 120px;
 }
 
 .accordion-background {
@@ -40,6 +40,7 @@
 @media only screen and (max-width: 600px) {
   .accordion-background {
     padding: 24px 0;
+    min-height: 900px;
 
     ul {
       padding-inline-start: 15px;
@@ -47,12 +48,18 @@
   }
 
   .padding-top {
-    padding-top: 80px;
+    padding-top: 68px;
   }
 }
 
 @media only screen and (max-width: 991px) {
   .padding-top {
-    padding-top: 80px;
+    padding-top: 68px;
   }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .accordion-background {
+    min-height: 1014px;
+  }
+} 
