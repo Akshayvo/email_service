@@ -1,4 +1,6 @@
 @import "../../styles.scss";
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
 
 .currentActive {
   border-bottom: 3px solid $light;
@@ -40,9 +42,13 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) and (min-width: 601px) {
   .storage-tip-holder {
     padding-top: 150px;
+  }
+
+  .background-height {
+    height: 1250px;
   }
 }
 
@@ -53,6 +59,10 @@
     .storage-content {
       padding: 16px;
     }
+  }
+
+  .background-height {
+    height: 1120px;
   }
 }
 

@@ -34,6 +34,7 @@ export const storagePoints = [
 
 export const storageTips = [
         {
+            id: 1,
             label: `Write everything down`,
             contents: `Do not put the list down unless it’s in a place you’ll call
                       Packing Central. This is where you’ll find your labels,
@@ -41,16 +42,19 @@ export const storageTips = [
                       supplies – You will need LOTS of boxes. Having enough boxes will make your life easier!`
         },
         {
+            id: 2,
             label: `Color Coordinate`,
             contents: `Designate a color for each room in the new home.
                     Apply colored stickers on the boxes. In your new home,
                     put a matching sticker on the door to each room.`
         },
         {
+            id: 3,
             label: `Pack Ahead`,
             contents: `Anything you can pack ahead will save you time on moving day`
         },
         {
+            id: 4,
             label: `Consolidate Cleaning Supplies`,
             contents: `If you must clean your old place after moving out,
                     put together a kit of basic cleaning supplies and rags`
