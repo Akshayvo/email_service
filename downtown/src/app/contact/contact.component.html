@@ -83,7 +83,6 @@
                 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1lIK3pQoodYtqSxkuSVkpwXKquUWX-om2" width="100%" height="400px" frameborder="0"  allowfullscreen></iframe>
               </div>
               <div class="contact-details pt-4">
-                <h2 class="py-1">Drayton Harbor Mini Storage</h2>
                 <span class="font-xs-device" *ngFor="let contact of contactInfo">
                     <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>

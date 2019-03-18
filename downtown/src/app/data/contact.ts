@@ -45,7 +45,7 @@ export const hours = [
 // export const socialLinks = [
 //     {
 //         label: 'facebook',
-//         path: 'https://www.facebook.com/pages/Drayton-Harbor-Mini-Storage/126481870738770',
+//         path: 'https://www.facebook.com/pages/downtown-Mini-Storage/126481870738770',
 //         class: 'fab fa-facebook-square',
 //     },
 // ];

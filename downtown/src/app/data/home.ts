@@ -60,27 +60,6 @@ export const aboutUs = [
 ];
 
 
-export const serviceOffered = [
-    {
-        p: `We are the only self storage provider in Drayton Harbor to offer climate controlled units,
-            secure access to your units 24 hours a day,
-            and a fully lit facility for safe and easy access.`,
-    },
-    {
-        p: `We offer a wide selection of easy to access, clean,
-            well maintained units secured by fences and pin-coded activated gates all
-            at extremely competitive prices!
-            Reserve your unit and pay your rent with our convenient online tenant portal!`,
-    },
-    {
-        p: `Are you in need of a truck during your big move?
-            We've got you covered with an ample supply of U-Haul trucks in
-            a variety of sizes,a perfect solution for your next big move!`,
-    },
-
-];
-
-
 export const gettingStarted = `Are you ready to get started with our convenient self storage services? \
 Click below to begin!`;
 

@@ -5,7 +5,7 @@ Welcome to the project documentation!
 ## Changing the project name
 Replace ng-starter-pack with your project name(Hyphen Case)
 
-Replace Drayton-Harbor with your project name(camelCase)
+Replace downtown with your project name(camelCase)
 
 Find and Replace across project
 
