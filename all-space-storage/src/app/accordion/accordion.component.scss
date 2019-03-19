@@ -1,32 +1,41 @@
 @import "../../styles.scss";
 
 .card {
-  background-color: $white;
   border: none;
+  border-radius: 0;
+  text-align: left;
+}
 
-  .card-header {
-    cursor: pointer;
-    background-color: $primary;
-    color: $white;
 
-    h5 {
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 1.5;
+.card-header {
+  padding: 0;
+  background-color: $primary;
+  font-weight: 600;
+  color: $white;
+  border-radius: 0;
+}
 
-      .rotate-icon {
-        float: right;
-        margin-top: 5px;
-      }
-    }
-  }
+.card-body {
+  padding: 20px;
+  background-color: $white;
+  margin: auto;
+}
 
-  .card-body {
-    margin-bottom: 0;
-    padding-left: 15px;
+ul {
+  padding-inline-start: 36px;
+  list-style: none;
+}
 
-    li:not(:last-child) {
-      margin-bottom: 5px;
-    }
-  }
+.card-header-before-collapse {
+  cursor: pointer;
+}
+
+.card-header-before-collapse::after {
+  font-family: (FontAwesome);
+  content: "\f106";
+  float: right;
+}
+
+.collapsed::after {
+  content: "\f107";
 }

@@ -34,38 +34,38 @@ export const storagePoints = [
 
 export const storageTips = [
     {
-        id: '1',
+        id: 0,
         label: 'Chairs',
         data: 'Whenever possible stack your chairs seat to seat. This will give you more packing space.',
     },
     {
-        id: '2',
+        id: 1,
         label: 'Stack by Weight',
         data: 'Always remember to pack heavier items on the bottom, so that lighter boxes won\'t get crushed.',
     },
     {
-        id: '3',
+        id: 2,
         label: 'Dust Covers',
         data: `Make use of old sheets or blankets to protect mattresses and
                 furniture from dust. We don’t recommend using plastic, which can hold in moisture.`,
     },
     {
-        id: '4',
+        id: 3,
         label: 'Tote Boxes',
         data: 'Plastic storage totes are great for packing smaller items and can be reused after your move.',
     },
     {
-        id: '5',
+        id: 4,
         label: 'Preventing Mildew',
         data: 'If you are storing any appliances, remember to leave appliance doors slightly ajar to prevent mildew.',
     },
     {
-        id: '6',
+        id: 5,
         label: 'Do Not Store Food',
         data: 'Do not store any food products in your unit to avoid any unwanted “guests.”',
     },
     {
-        id: '7',
+        id: 6,
         label: 'Do Not Store Flammables',
         data: 'Do not store any flammables products, such as kerosene, gas, aerosol cans, or kerosene heaters.',
     },

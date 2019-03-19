@@ -149,6 +149,7 @@ onSubmit() {
            console.log('Error :', err);
          });
        this.submitted = false;
+       this.mailSent = false;
        this.contactForm.reset();
  }
 }

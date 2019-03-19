@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { PaymentComponent } from './payment/payment.component';
-import { ErrorComponent } from './error/error.component';
 import { LocationComponent } from './location/location.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { StorageUnitComponent } from './storage-unit/storage-unit.component';
@@ -12,6 +11,8 @@ import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -119,6 +120,7 @@ const routes: Routes = [
   { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'error', component: ErrorHandlerComponent },
   { path: '**', component: ErrorComponent },
 ];
 

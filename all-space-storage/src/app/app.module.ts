@@ -15,7 +15,6 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { PaymentComponent } from './payment/payment.component';
 import { TablesComponent } from './tables/tables.component';
-import { ErrorComponent } from './error/error.component';
 import { LocationComponent } from './location/location.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { SafePipe } from './safe.pipe';
@@ -29,6 +28,8 @@ import { TabsComponent } from './tabs/tabs.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { SelectLocationComponent } from './select-location/select-location.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { ErrorComponent } from './error/error.component';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
     PaymentComponent,
     TablesComponent,
     ErrorComponent,
+    ErrorHandlerComponent,
     LocationComponent,
     StorageTipsComponent,
     SafePipe,
