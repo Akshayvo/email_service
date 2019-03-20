@@ -7,7 +7,7 @@
     <div  class="container pt-5">
       <div class="rent-sub-holder">
           <div class="container px-0">
-            <div class="location-selection">
+            <!-- <div class="location-selection">
               <app-select-location (click)="receiveMessage()"></app-select-location>
             </div>
             <div class="row">
@@ -40,7 +40,52 @@
                  <p> <b>Have question about your account?</b> </p>
                  <p> {{contact[1].data}} </p>
               </div>
-            </div>
+            </div> -->
+            <!-- <app-tables [tBody]="payList"></app-tables> -->
+            <table class="col-md-12">
+              <thead>
+                <tr>
+                  <th>Facility</th>
+                  <th>Address</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-data">
+                      Movin'On storage canter
+                  </td>
+                  <td class="table-data">
+                      200 Piedmont Road Charleston, WV 25301
+                  </td>
+                  <td class="text-right px-3">
+                    <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent']" role="button">Pay Here</a>            
+                  </td>
+                </tr>
+                <tr>
+                    <td class="table-data">
+                        Shaler Self Storage
+                    </td>
+                    <td class="table-data">
+                        22 Elfinwild Road Allison Park, PA. 15101
+                    </td>
+                    <td class="text-right px-3">
+                      <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent-shaler']" role="button">Pay Here</a>            
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-data">
+                        Natrona Heights Self Storage
+                    </td>
+                    <td class="table-data">
+                        896 Veterans Drive, Natrona Heights, PA 15065
+                    </td>
+                    <td class="text-right px-3">
+                      <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent-natrona']" role="button">Pay Here</a>            
+                    </td>
+                </tr>
+              </tbody>
+             </table>
           </div>
         </div>
     </div>

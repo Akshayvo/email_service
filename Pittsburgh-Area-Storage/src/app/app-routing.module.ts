@@ -14,6 +14,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
 import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { PayRentShalerComponent } from './pay-rent-shaler/pay-rent-shaler.component';
+import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -82,6 +85,9 @@ const routes: Routes = [
   { path: 'payment', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'pay-rent', component: PayRentComponent },
+  { path: 'pay-rent-shaler', component: PayRentShalerComponent },
+  { path: 'pay-rent-natrona', component: PayRentNatronaComponent },
   { path: '**', component: ErrorComponent },
 ];
 

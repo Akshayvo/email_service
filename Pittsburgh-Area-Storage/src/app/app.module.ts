@@ -32,6 +32,9 @@ import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.component';
+import { PayRentShalerComponent } from './pay-rent-shaler/pay-rent-shaler.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,10 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
     AccordionComponent,
     SelectLocationComponent,
     TruckRentalsComponent,
-    ErrorHandlerComponent
+    ErrorHandlerComponent,
+    PayRentComponent,
+    PayRentNatronaComponent,
+    PayRentShalerComponent
   ],
   imports: [
     NgtUniversalModule,

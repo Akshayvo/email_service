@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { storagePoints, storageTips } from '../data/storage-tips';
+import { storagePoints } from '../data/storage-tips';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 
@@ -31,7 +31,7 @@ export class StorageTipsComponent implements OnInit {
 
   ngOnInit() {
     this.fetchstoragePoints();
-    this.fetchstorageTips();
+    // this.fetchstorageTips();
     window.scrollTo(0, 0);
   }
 
@@ -39,7 +39,7 @@ export class StorageTipsComponent implements OnInit {
     this.storagePoints = storagePoints;
   }
 
-  public fetchstorageTips() {
-    this.storageTips = storageTips;
-  }
+  // public fetchstorageTips() {
+  //   this.storageTips = storageTips;
+  // }
 }
