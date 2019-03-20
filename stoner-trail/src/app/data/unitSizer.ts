@@ -100,11 +100,11 @@ export const unitSizer = [
   },
   {
     id: 6,
-    size: '10\' x 42\'',
-    heading: '10\' x 42\' Storage Unit',
-    alt: '10\' x 42\' Storage Unit Graphic ',
+    size: '15\' x 42\'',
+    heading: '15\' x 42\' Storage Unit',
+    alt: '15\' x 42\' Storage Unit Graphic ',
     unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/15x42.png',
-    data: `This unit is approximately 400sq feet of space that can store the contents of a large home, including.`,
+    data: `This unit is approximately 630sq feet of space that can store the contents of a large home, including.`,
     amenities: [
       { content: 'Appliances', },
       { content: 'Car or Small Boat', },
@@ -112,6 +112,24 @@ export const unitSizer = [
       { content: 'Mattresses', },
       { content: 'Bookcases', },
       { content: 'Tow Trailer', },
+      { content: 'This Unit Size Offers 12\' x 14\' Doors' }
+    ],
+  },
+  {
+    id: 7,
+    size: '15\' x 48\'',
+    heading: '15\' x 48\' Storage Unit',
+    alt: '15\' x 48\' Storage Unit Graphic ',
+    unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/15x42.png',
+    data: `This unit is approximately 720sq feet of space that can store the contents of a large home, including.`,
+    amenities: [
+      { content: 'Appliances', },
+      { content: 'Car or Small Boat', },
+      { content: 'Furniture', },
+      { content: 'Mattresses', },
+      { content: 'Bookcases', },
+      { content: 'Tow Trailer', },
+      { content: 'This Unit Size Offers 12\' x 14\' Doors' }
     ],
   },
 ];
