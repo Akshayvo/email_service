@@ -69,6 +69,10 @@
 .jumbotron-top {
   height: 75vh;
 
+  .button-width {
+    width: 50%;
+  }
+
   .jumbotron {
     background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Selkirk_Images/self-storage-units.jpg");
     background-repeat: no-repeat;
@@ -158,6 +162,24 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-height: 640px) and (min-height: 481px) {
+  .disp {
+    img {
+      height: 60px;
+    }
+
+    p {
+      font-size: 0.79rem;
+    }
+
+    h6 {
+      font-size: 0.7rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+
   .jumbotron-container {
     .jumbotron-bottom {
       height: 90px;
@@ -183,24 +205,6 @@
       .jumbotron-skew-text {
         top: 25%;
       }
-    }
-  }
-
-  .disp {
-    img {
-      height: 60px;
-    }
-
-    p {
-      font-size: 0.79rem;
-    }
-
-    h6 {
-      font-size: 0.7rem;
-    }
-
-    h2 {
-      font-size: 1.6rem;
     }
   }
 
@@ -282,7 +286,7 @@
       }
 
       .button-width {
-        width: 100%;
+        // width: 100%;
         text-align: center;
       }
     }

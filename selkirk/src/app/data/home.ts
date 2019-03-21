@@ -36,9 +36,9 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Selkirk_Images/online.svg',
-        label: 'Online Reservation & Bill Pay',
-        alt: 'Icon art displaying a screen with cursor'
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Selkirk_Images/exit.svg',
+        label: 'Electronic Gate Access',
+        alt: ' Icon of an opening gate'
     },
     {
         // tslint:disable-next-line:max-line-length
@@ -57,19 +57,18 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Selkirk Self Storage offers affordable self storage units to Selkirk, Delmar, Glenmont,
-        Ravena, and Southern Albany County. Our facility is well-lit and properly maintained. Tenants
-        have access to their self storage units 7 days a week and can pay their rent online with our
-        onvenient bill-pay service!`,
+        p: `Selkirk Self Storage offers affordable self storage units to Selkirk, Delmar, Glenmont, Ravena,
+            and Southern Albany County. Our facility is well-lit and properly maintained. Tenants have access to
+            their self storage units 7 days a week!`,
     },
     {
-        p: `Do you need a truck during your move in? We have one available! Want to know more?
-        Simply call (518) 767-9002 and speak with one of our friendly self storage professionals!`,
+        p: `Do you need a truck during your move in? We have one available! Want to know more? Simply call
+            (518) 767-9002 and speak with one of our friendly self storage professionals!`,
     },
     {
         p: `We offer a wide variety of self storage unit sizes, perfect for any residential or commercial use.
-        Whether you need temporary storage for a move or long term storage for inventory and equipment,
-        Selkirk Self Storage has floor access units available to fit your need!`,
+            Whether you need temporary storage for a move or long term storage for inventory and equipment, Selkirk
+            Self Storage has floor access units available to fit your need!`,
     },
 ];
 
