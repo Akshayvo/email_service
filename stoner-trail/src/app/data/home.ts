@@ -19,15 +19,14 @@ export const aboutUs = [
             from Gloversville, Amsterdam and Capital Region communities.`,
     },
     {
-        p: `Our convenient location, competitive prices and 24 hour access offer great value whether
-        you're looking for short or long term self storage. We proudly serve many residential and commercial customers
-        seeking both short and long term self storage solutions. Our facility large (15x42 & 15x48) single bay storage
-        units for RV's which are very hard to find.`,
+        p: `Our convenient location, competitive prices and 24 hour access offer great value whether you're looking
+            for short or long term self storage. We proudly serve many residential and commercial customers seeking
+            self storage solutions. Our facility has large (15'x42' & 15'x48') single bay storage units for RV's
+            which are very hard to find.`,
     },
     {
-        p: `We offer a convenient online reservation and system that makes finding an the right unit for you a breeze!
-        Once you're moved in you have convenient 24/7 access to your account information and payment portal to make
-        your stay with us a convenient one!`,
+        p: `We offer online reservations and size information that makes finding the right unit a breeze!
+            Once you're moved in you have24/7 access to your account information and payment portal!`,
     },
 ];
 
