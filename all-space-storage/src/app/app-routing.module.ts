@@ -117,9 +117,9 @@ const routes: Routes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJVYFs8EBa3YkRGSFGFh1-_-w'
     }
   },
-  { path: 'payment', component: PaymentComponent },
+  { path: 'pay-rent', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'contact-us', component: ContactComponent },
   { path: 'error', component: ErrorHandlerComponent },
   { path: '**', component: ErrorComponent },
 ];

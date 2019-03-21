@@ -57,7 +57,7 @@ export const navLinks = [
     },
     {
         label: 'Pay Rent',
-        path: '/payment',
+        path: '/pay-rent',
         type: 'link'
     },
     {
@@ -67,7 +67,7 @@ export const navLinks = [
     },
     {
         label: 'Contact Us',
-        path: '/contact',
+        path: '/contact-us',
         type: 'link'
     },
 ];
