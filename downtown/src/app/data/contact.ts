@@ -1,14 +1,14 @@
 export const contact = [
     {
         id: 0,
-        label: 'Facility Address:',
-        data: '209 E. Holley Alba, TX 75410',
+        label: 'Office',
+        data: '169 E. Holley Alba, Texas 75410',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         id: 1,
-        label: 'Office Address:',
-        data: '169 E. Holley Alba, Texas 75410',
+        label: 'Facility',
+        data: '209 E. Holley Alba, TX 75410',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
