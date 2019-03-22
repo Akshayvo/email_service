@@ -7,6 +7,7 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ErrorComponent } from './error/error.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
+  { path: 'unit-sizer', component: UnitSizerComponent},
   { path: 'pay-rent', component: PayRentComponent },
   { path: 'review', component: HomeComponent,
     resolve: {

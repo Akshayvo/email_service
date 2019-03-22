@@ -1,6 +1,6 @@
 {
-  "name": "ng-starter-pack",
-  "version": "0.0.3",
+  "name": "Drayton-Harbor",
+  "version": "0.0.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

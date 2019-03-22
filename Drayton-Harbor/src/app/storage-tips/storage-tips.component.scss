@@ -1,4 +1,6 @@
 @import "../../styles.scss";
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
 
 .currentActive {
   border-bottom: 3px solid $light;
@@ -14,9 +16,8 @@
   margin-bottom: 50px;
 
   .storage-content {
-    min-height: 644px;
-
     .padding {
+      min-height: 630px;
       padding: 48px;
     }
 
@@ -34,6 +35,26 @@
   z-index: 16;
 }
 
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .storage-tip-holder {
+    .storage-content {
+      .padding {
+        min-height: 735px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .storage-tip-holder {
+    .storage-content {
+      .padding {
+        min-height: 1014px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .storage-tip-holder {
     padding-top: 60px;
@@ -41,6 +62,7 @@
     .storage-content {
       .padding {
         padding: 0;
+        min-height: 930px;
       }
     }
   }
