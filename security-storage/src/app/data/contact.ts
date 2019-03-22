@@ -1,19 +1,23 @@
 export const contact = [
     {
+        id: 0,
         label: 'Address:',
-        data: '115 E. South Railroad, Cuero, Tx 77954',
+        data:  '115 East South Railroad St, Cuero, TX 77954',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
+        id: 1,
         label: 'Email:',
         data: 'securitystorage@bizstx.rr.com',
         class: 'fas fa-envelope mx-2 iconColor',
+        redirect: 'mailto:securitystorage@bizstx.rr.com'
     },
     {
+        id: 2,
         label: 'Phone:',
         data: '(361) 275-9698',
         class: 'fas fa-phone mx-2 iconColor',
-
+        redirect: 'tel:3612759698'
     },
 
 ];

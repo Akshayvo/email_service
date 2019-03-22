@@ -9,14 +9,14 @@ export const navLinks = [
     },
     {
         label: 'UNIT SIZER',
-        path: 'unitSizer',
+        path: 'unit-sizer',
     },
     {
         label: 'PAY RENT',
-        path: 'payment'
+        path: 'pay-rent'
     },
     {
         label: 'CONTACT US',
-        path: 'contact'
+        path: 'contact-us'
     },
 ];

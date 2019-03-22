@@ -23,6 +23,7 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { PhotosComponent } from './photos/photos.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
     PaymentComponent,
     TablesComponent,
     ErrorComponent,
+    ErrorHandlerComponent,
     UnitSizerComponent,
     StorageTipsComponent,
     AccordionComponent,

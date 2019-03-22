@@ -14,6 +14,9 @@
     font-size: 2.25rem;
     text-align: center;
   }
+
+  padding: 64px;
+  background-color: #edf1ee;
 }
 
 .unit-sizer-container {
@@ -103,6 +106,10 @@
       font-size: 1.1rem;
     }
   }
+
+  .unit-sizer-holder {
+    padding-top: 60px;
+  }
 }
 
 
@@ -138,6 +145,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .content-Holder {
+    padding: 16px;
+  }
+
   .unit-sizer-holder {
     padding-top: 60px;
   }
