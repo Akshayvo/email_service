@@ -25,6 +25,7 @@ export class ContactComponent implements OnInit {
   submitted = false;
   mailSent = false;
   head: any;
+  phone: any;
 
   constructor(
     private router: Router,
@@ -46,9 +47,11 @@ export class ContactComponent implements OnInit {
     this.fetchHours();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
+      phone: ['', [Validators.required,
+      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
-      subject: [''],
+      subject: ['']
   });
   }
 
@@ -73,13 +76,14 @@ export class ContactComponent implements OnInit {
    if (this.contactForm.invalid) {
        return;
    } else {
-
-     if ( !this.contactForm.value.subject) {
+    if ( !this.contactForm.value.subject) {
       this.contactForm.value.subject = 'Website Form Submission';
     }
+
      this.receiveremail = this.contactDetails[1].data;
 
-         this.completeMessage = `message: ${this.contactForm.value.message}`;
+     this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
+     message: ${this.contactForm.value.message}`;
 
          const body = {
            name: this.contactForm.value.name,
@@ -97,6 +101,7 @@ export class ContactComponent implements OnInit {
            }, (err) => {
            });
          this.submitted = false;
+         this.mailSent = false;
          // MailService(body);
          this.contactForm.reset();
    }

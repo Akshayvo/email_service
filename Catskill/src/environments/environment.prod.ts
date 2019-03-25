@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  production: false,
+  errorsMails: ['website.dev@codeparva.in'],
+  senderEmail: 'errors@codeparva.in',
+  appId: 'Catskill'
 };

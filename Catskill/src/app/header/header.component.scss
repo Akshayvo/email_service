@@ -70,6 +70,11 @@ a {
   display: block;
 }
 
+.contact-links {
+  a {
+    color: white;
+  }
+}
 
 @media screen and (max-width: 991px) {
   .display {
@@ -78,6 +83,14 @@ a {
 
   .nav-link {
     text-align: center;
+  }
+
+  .navbar-nav {
+    align-items: center;
+
+    li {
+      width: fit-content;
+    }
   }
 }
 

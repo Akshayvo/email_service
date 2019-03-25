@@ -52,28 +52,32 @@ body {
 }
 
 .btn-primary {
-  background-color: $primary;
-  border-color: $primary;
+  background-color: $primary !important;
+  border-color: $primary !important;
   color: $white !important;
   min-width: 200px;
 }
 
-.btn-primary:hover {
-  background-color: $primaryDark;
-  border-color: $primaryDark;
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
 }
 
 .btn-outline-primary {
   background-color: transparent;
-  border-color: $primary;
-  border: 2px solid $primary;
+  border-color: $primary !important;
+  border: 2px solid $primary !important;
   min-width: 200px;
   color: $white !important;
 }
 
-.btn-outline-primary:hover {
-  background-color: $primaryDark;
-  border-color: $primaryDark;
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
 }
 
 .section-headings {

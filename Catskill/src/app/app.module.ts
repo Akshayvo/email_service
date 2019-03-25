@@ -20,6 +20,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
     PaymentComponent,
     TablesComponent,
     ErrorComponent,
+    ErrorHandlerComponent,
     StorageTipsComponent,
     AccordionComponent
   ],

@@ -24,7 +24,7 @@
 }
 
 .accordion-background {
-  min-height: 680px;
+  min-height: 718px;
 
   ul {
     text-align: left;
@@ -33,6 +33,27 @@
     li {
       padding: 5px 0;
     }
+  }
+}
+
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .padding-top {
+    padding-top: 56px;
+  }
+
+  .accordion-background {
+    min-height: 823px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+  .padding-top {
+    padding-top: 56px;
+  }
+
+  .accordion-background {
+    min-height: 1100px;
   }
 }
 
@@ -45,12 +66,6 @@
     }
   }
 
-  .padding-top {
-    padding-top: 56px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
   .padding-top {
     padding-top: 56px;
   }

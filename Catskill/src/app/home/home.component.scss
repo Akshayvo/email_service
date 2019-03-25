@@ -94,6 +94,12 @@ h1 {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .jumbotorn-skew-text {
+    width: 425px;
+  }
+}
+
 
 @media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 641px) {
   .feature-icon-style {
@@ -129,23 +135,53 @@ h1 {
 
 @media only screen and (min-width: 1200px) and (max-height: 450px) {
   .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
     height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
   }
 
-  .jumbotron-top {
-    height: 100vh;
+  .disp {
+    display: none;
   }
 
-  .jumbotron-bottom {
-    height: 120px;
+  .button-width {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .jumbotorn-skew-style {
+    transform: skew(0deg);
+    width: 100%;
+    left: auto;
+    height: 90px;
+    bottom: 0;
+    position: absolute;
   }
 
   .jumbotorn-skew-text {
-    .disp {
-      p {
-        display: none;
-      }
+    width: 100%;
+    left: 0;
+    top: auto;
+    bottom: 10px;
+
+    a {
+      font-size: 1.25rem;
+      min-width: 200px;
     }
+  }
+
+  .jumbotorn-button {
+    padding: 10px;
   }
 
   .feature-icon-style {
@@ -155,11 +191,13 @@ h1 {
       font-size: 0.8rem;
     }
   }
-}
 
-@media only screen and (min-width: 1200px) {
-  .jumbotorn-skew-text {
-    width: 425px;
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 150px;
   }
 }
 
@@ -212,23 +250,53 @@ h1 {
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 450px) {
   .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
     height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
   }
 
-  .jumbotron-top {
-    height: 100vh;
+  .disp {
+    display: none;
   }
 
-  .jumbotron-bottom {
-    height: 120px;
+  .button-width {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .jumbotorn-skew-style {
+    transform: skew(0deg);
+    width: 100%;
+    left: auto;
+    height: 90px;
+    bottom: 0;
+    position: absolute;
   }
 
   .jumbotorn-skew-text {
-    .disp {
-      p {
-        display: none;
-      }
+    width: 100%;
+    left: 0;
+    top: auto;
+    bottom: 10px;
+
+    a {
+      font-size: 1.25rem;
+      min-width: 200px;
     }
+  }
+
+  .jumbotorn-button {
+    padding: 10px;
   }
 
   .feature-icon-style {
@@ -237,6 +305,14 @@ h1 {
     h6 {
       font-size: 0.8rem;
     }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 150px;
   }
 }
 
