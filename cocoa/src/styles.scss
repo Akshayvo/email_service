@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+
+//Basic color and font styles
+// $primary: #3c8fb4;
+$primary: #662424;
+$primaryDark: #5a1919;
+
+// $primary: #FF9800;
+// $primaryDark: #EF6C00;
+$secondary: #212121;
+
+$dark: #333;
+$light: #efefef;
+$white: #fff;
+
+$border: #707070;
+$shadow: #000;
+
+$fontColor: #000;
+// $primaryFont: 'Roboto';
+$primaryFont: "Lato", sans-serif;
+
+html,
+body {
+  font-family: $primaryFont;
+  font-size: 1rem;
+}
+
+.justify {
+  text-align: justify;
+}
+
+// Different Background colors
+.bg-secondary {
+  background: $secondary;
+}
+
+.bg-dark {
+  background: $dark;
+}
+
+.bg-light {
+  background: $light !important;
+}
+
+.bg-white {
+  background: $white;
+}
+
+.bg-translucent {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.btn {
+  min-width: 160px;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  color: $white !important;
+  border: 2px solid $primary;
+  font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
+  font-weight: 600;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border-color: $primary;
+  border: 2px solid $primary;
+  color: $primary !important;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
+  color: $white !important;
+  font-weight: 600;
+}
+
+.section-headings {
+  font-weight: 200;
+}
+
+.contact-map {
+  width: 100%;
+}
+
+.heading {
+  font-weight: 400;
+}
+
+.sectionImage {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin-bottom: 0;
+}
