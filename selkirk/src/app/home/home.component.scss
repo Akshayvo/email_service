@@ -13,7 +13,7 @@
 }
 
 .cta {
-  height: 74px;
+  // height: 74px;
   background-color: #ffd055;
   // position: absolute;
   bottom: 0;
@@ -28,12 +28,14 @@
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 1.125rem;
     font-weight: 700;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 1.125rem;
+    background-color:black;
+    color: #ffd055;
   }
 }
 
@@ -45,8 +47,7 @@
   }
 
   img {
-    padding: 10px;
-    height: 80px;
+    height: 70px;
   }
 }
 
@@ -67,7 +68,7 @@
 // HOME jUMBOTRON
 
 .jumbotron-top {
-  height: 75vh;
+  height: 70vh;
 
   .button-width {
     width: 50%;
@@ -78,14 +79,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 75vh;
+    height: 70vh;
     color: $fontColor;
     overflow: hidden;
     padding: 0;
     position: relative;
 
     h1 {
-      text-transform: uppercase;
       font-weight: 600;
       font-size: 2em;
     }
@@ -127,12 +127,8 @@
 .jumbotron-bottom {
   display: flex;
   align-items: center;
-  height: calc(25vh - 74px);
+  height: calc(30vh - 138px);
   // height: 250px;
-
-  .feature-text {
-    text-transform: uppercase;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -145,9 +141,10 @@
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-height: 830px) and (min-height: 641px) {
+@media only screen and (min-width: 1200px) and (max-height: 830px) and (min-height: 710px) {
   .jumbotron-container {
     .jumbotron-bottom {
+      height: 90px;
       h6 {
         font-size: 0.8rem;
       }
@@ -159,9 +156,17 @@
       }
     }
   }
+
+  .jumbotron-top {
+    height: calc(100vh - 228px);
+
+    .jumbotron {
+      height: calc(100vh - 228px);
+    }
+  }
 }
 
-@media only screen and (min-width: 1200px) and (max-height: 640px) and (min-height: 481px) {
+@media only screen and (min-width: 1200px) and (max-height: 709px) and (min-height: 561px) {
   .disp {
     img {
       height: 60px;
@@ -169,6 +174,7 @@
 
     p {
       font-size: 0.79rem;
+      margin-bottom: 5px;
     }
 
     h6 {
@@ -192,10 +198,10 @@
     }
 
     .jumbotron-top {
-      height: calc(100vh - 140px);
+      height: calc(100vh - 228px);
 
       .jumbotron {
-        height: calc(100vh - 140px);
+        height: calc(100vh - 228px);
 
         a {
           margin-top: 10px;
@@ -207,27 +213,15 @@
       }
     }
   }
-
-  .cta {
-    height: 50px;
-
-    h3 {
-      font-size: 16px;
-    }
-
-    h4 {
-      font-size: 12px;
-    }
-  }
 }
 
-@media only screen and (min-width: 1200px) and (max-height: 480px) {
+@media only screen and (min-width: 1200px) and (max-height: 560px) {
   .disp {
     display: none;
   }
 
   .jumbotron-top {
-    height: calc(100vh - 74px);
+    height: calc(100vh - 138px);
 
     .button-width {
       padding: 0 15px;
@@ -237,7 +231,7 @@
     }
 
     .jumbotron {
-      height: calc(100vh - 74px);
+      height: calc(100vh - 138px);
 
       a {
         margin-top: 0;
@@ -279,7 +273,7 @@
       }
 
       .jumbotron-skew-text {
-        width: 35%;
+        width: 437px;
         position: absolute;
         bottom: 0;
         // top: 25%;
@@ -296,10 +290,6 @@
       height: 20vh;
       display: flex;
       align-items: center;
-
-      .feature-text {
-        text-transform: uppercase;
-      }
     }
   }
 
@@ -308,16 +298,27 @@
       height: 710px;
     }
   }
+
+  .disp {
+    img {
+      height: 60px;
+    }
+  }
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 830px) and (min-height: 641px) {
   .jumbotron-bottom {
     display: flex;
     align-items: center;
+    height: 90px;
   }
 
   .jumbotron-top {
+    height: calc(100vh - 228px);
+
     .jumbotron {
+      height: calc(100vh - 228px);
+
       .jumbotron-skew-text {
         top: 25%;
       }
@@ -327,6 +328,10 @@
   .disp {
     h6 {
       font-size: 0.7rem;
+    }
+
+    p {
+      font-size: 0.9rem;
     }
 
     img {
@@ -343,7 +348,7 @@
   .jumbotron-bottom {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 90px;
 
     h6 {
       font-size: 0.8rem;
@@ -351,13 +356,14 @@
   }
 
   .jumbotron-top {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 228px);
 
     .jumbotron {
-      height: calc(100vh - 150px);
+      height: calc(100vh - 228px);
 
       .jumbotron-skew-text {
         top: 25%;
+        width: 500px;
       }
 
       a {
@@ -373,6 +379,7 @@
 
     p {
       font-size: 0.79rem;
+      // margin-bottom: 0;
     }
 
     h6 {
@@ -383,18 +390,6 @@
       font-size: 1.6rem;
     }
   }
-
-  .cta {
-    height: 50px;
-
-    h3 {
-      font-size: 16px;
-    }
-
-    h4 {
-      font-size: 12px;
-    }
-  }
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 545px) {
@@ -403,7 +398,7 @@
   }
 
   .jumbotron-top {
-    height: calc(100vh - 74px);
+    height: calc(100vh - 138px);
 
     .button-width {
       padding: 0 15px;
@@ -413,7 +408,7 @@
     }
 
     .jumbotron {
-      height: calc(100vh - 74px);
+      height: calc(100vh - 138px);
 
       a {
         margin-top: 0;
@@ -455,7 +450,7 @@
       }
 
       .jumbotron-skew-text {
-        width: 40%;
+        width: 400px;
         position: absolute;
         bottom: 0;
       }
@@ -469,10 +464,6 @@
     h6 {
       font-size: 0.9rem;
     }
-
-    .feature-text {
-      text-transform: uppercase;
-    }
   }
 
   .map {
@@ -480,16 +471,30 @@
       height: 100%;
     }
   }
+
+  .disp {
+    img {
+      height: 60px;
+    }
+  }
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 830px) and (min-height: 681px) {
+  .jumbotron-top {
+    height: calc(100vh - 228px);
+
+    .jumbotron {
+      height: calc(100vh - 228px);
+    }
+  }
+
   .disp {
     p {
       font-size: 0.8rem;
     }
 
     img {
-      height: 60px;
+      height: 50px;
     }
 
     h2 {
@@ -500,6 +505,8 @@
   .jumbotron-bottom {
     display: flex;
     align-items: center;
+    height: 90px;
+
 
     h6 {
       font-size: 0.7rem;
@@ -520,13 +527,14 @@
   }
 
   .jumbotron-top {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 238px);
 
     .jumbotron {
-      height: calc(100vh - 150px);
+      height: calc(100vh - 238px);
 
       .jumbotron-skew-text {
         top: 20%;
+        width: 416px;
       }
 
       a {
@@ -537,11 +545,12 @@
 
   .disp {
     img {
-      height: 60px;
+      height: 50px;
     }
 
     p {
       font-size: 0.79rem;
+      margin-bottom: 5px;
     }
 
     h6 {
@@ -550,18 +559,6 @@
 
     h2 {
       font-size: 1.6rem;
-    }
-  }
-
-  .cta {
-    height: 50px;
-
-    h3 {
-      font-size: 16px;
-    }
-
-    h4 {
-      font-size: 12px;
     }
   }
 }
@@ -573,7 +570,7 @@
   }
 
   .jumbotron-top {
-    height: calc(100vh - 74px);
+    height: calc(100vh - 138px);
 
     .button-width {
       padding: 0 15px;
@@ -583,7 +580,7 @@
     }
 
     .jumbotron {
-      height: calc(100vh - 74px);
+      height: calc(100vh - 138px);
 
       a {
         margin-top: 0;
@@ -615,10 +612,10 @@
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .jumbotron-top {
-    height: calc(100vh - 165px);
+    height: calc(100vh - 233px);
 
     .jumbotron {
-      height: calc(100vh - 165px);
+      height: calc(100vh - 233px);
 
       .jumbotron-skew-style {
         width: 85%;
@@ -629,7 +626,8 @@
       }
 
       .jumbotron-skew-text {
-        width: 44%;
+        // width: 44%;
+        width: 320px;
       }
     }
   }
@@ -637,7 +635,7 @@
   .jumbotron-bottom {
     display: flex;
     align-items: center;
-    height: 115px;
+    height: 95px;
 
     h6 {
       font-size: 0.7rem;
@@ -652,7 +650,7 @@
 
   .disp {
     img {
-      height: 60px;
+      height: 50px;
     }
 
     p {
@@ -661,19 +659,6 @@
 
     h2 {
       font-size: 1.7rem;
-    }
-  }
-
-  .cta {
-    height: 50px;
-
-    h3 {
-      text-align: center;
-      font-size: 16px;
-    }
-
-    h4 {
-      font-size: 12px;
     }
   }
 }
@@ -686,6 +671,12 @@
       }
     }
   }
+
+  .disp {
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
 }
 
 
@@ -695,7 +686,7 @@
   }
 
   .jumbotron-top {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 138px);
 
     .button-width {
       width: 100%;
@@ -706,7 +697,7 @@
     }
 
     .jumbotron {
-      height: calc(100vh - 50px);
+      height: calc(100vh - 138px);
 
       a {
         margin-top: 0;
@@ -737,16 +728,6 @@
       height: 200px;
     }
   }
-
-  .cta {
-    h3 {
-      font-size: 16px;
-    }
-
-    h4 {
-      font-size: 12px;
-    }
-  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -756,7 +737,7 @@
   }
 
   .jumbotron-top {
-    height: calc(100vh - 74px);
+    height: calc(100vh - 138px);
 
     .button-width {
       padding: 0 15px;
@@ -766,7 +747,7 @@
     }
 
     .jumbotron {
-      height: calc(100vh - 74px);
+      height: calc(100vh - 138px);
 
       a {
         margin-top: 0;
@@ -793,20 +774,60 @@
     }
   }
 
-  .cta {
-    h3 {
-      text-align: center;
-      font-size: 16px;
-    }
-
-    h4 {
-      font-size: 12px;
-    }
-  }
-
   .map {
     iframe {
       height: 100%;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 545px) {
+  .jumbotron-top {
+    height: calc(100vh - 159px);
+
+    .jumbotron {
+      height: calc(100vh - 159px);
+    }
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .jumbotron-top {
+    height: calc(100vh - 159px);
+
+    .jumbotron {
+      height: calc(100vh - 159px);
+    }
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .jumbotron-top {
+    height: calc(100vh - 180px);
+
+    .jumbotron {
+      height: calc(100vh - 180px);
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .jumbotron-top {
+    height: calc(100vh - 201px);
+
+    .jumbotron {
+      height: calc(100vh - 201px);
+    }
+  }
+}
+
+@media only screen and (max-width: 278px) {
+  .jumbotron-top {
+    height: calc(100vh - 222px);
+
+    .jumbotron {
+      height: calc(100vh - 222px);
     }
   }
 }

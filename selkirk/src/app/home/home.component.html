@@ -29,8 +29,8 @@
       <div class="container">
         <div class="row custom-height">
           <div class="col-md-3 col-3 p-4 text-center override-padding-x-axis" *ngFor="let feature of feature">
-            <img [src]="feature?.path" alt="" [alt]="feature?.alt">
-              <h6 class="feature-text">{{feature.label}}</h6>
+            <img [src]="feature?.path" alt="" [alt]="feature?.alt" class="py-lg-2 py-md-1 py-1">
+              <h6 class="feature-text py-lg-2 py-md-1 py-1">{{feature.label}}</h6>
           </div>
         </div>
       </div>
@@ -38,11 +38,12 @@
   </div>
   <!--Jumbotron Ends Here-->
 
-  <div class="cta">
+  <div class="container-fluid cta">
       <!-- <h3 class="mt-0 mb-0"><b>Free truck with move in, call (518) 767-9002 for details!</b></h3> -->
-      <h3>Free Truck with move in, call <a href="tel:5187679002">(518) 767-9002</a> for details!</h3>
-
-      <h4 class="pt-1">Spring Special: 50% Off Next Month Upon Availability</h4>
+      <h3 class="pt-4 pb-3 text-center">Free Truck with move in, call <a href="tel:5187679002">(518) 767-9002</a> for details!</h3>
+    <div class="pb-4">
+      <h4 class="py-3 px-5 text-center">Spring Special: 50% Off Next Month Upon Availability</h4>
+      </div>
     </div>
   <!--Map and Contact Section-->
   <div class="bg-light py-5">
