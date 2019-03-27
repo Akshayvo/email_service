@@ -28,7 +28,6 @@ export const contact = [
         redirect: 'mailto:storageking1@comcast.net',
         class: 'fas fa-envelope mx-2 iconColor',
     },
-
 ];
 
 export const officeHours = [

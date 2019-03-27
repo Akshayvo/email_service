@@ -26,8 +26,7 @@ export class EmailService {
         customTemplate: ''
       }
     };
-
+console.log(cont);
     return this.http.post(`https://emailsvc-ext.syrasoft.com/v1/email`, cont);
-
   }
 }
