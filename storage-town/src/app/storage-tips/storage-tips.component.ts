@@ -23,10 +23,10 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `It doesn't matter why you're storing at one of our locations, there are helpful hints to make sure you
-      get the most out of our services!`
+      content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
+      make your stay with us a breeze!`
     });
-    this.titleService.setTitle('Storage Tips | Linden Self Storage');
+    this.titleService.setTitle('Storage Tips | StorageTown Rental Spaces');
   }
 
   ngOnInit() {

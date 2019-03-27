@@ -11,14 +11,24 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Linden Self Storage',
-                path: '/location/linden-storage',
+                label: 'Florida and Warwick',
+                path: '/location/florida-and-warwick',
               },
               {
                   id: '2',
-                  label: 'Macedon Storage',
-                  path: '/location/macedon-storage',
+                  label: 'Chester',
+                  path: '/location/chester',
               },
+              {
+                id: '3',
+                label: 'Montgomery/Walden',
+                path: '/location/montgomery-walden',
+            },
+            {
+                id: '4',
+                label: 'Middletown/WallKill',
+                path: '/location/middletown-wallKill',
+            },
         ]
     },
     {

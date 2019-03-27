@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
-import { contactsLocation1, contactsLocation2, } from '../data/contact';
+import { contactsLocation1, contactsLocation2, contactsLocation4, contactsLocation3, } from '../data/contact';
 
 @Component({
   selector: 'app-payment',
@@ -23,10 +23,10 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Look up account information or pay your rent online just by
-      following the instructions or calling our friendly managers!`
+      content: `Pay your rent for any of the 4 StorageTown Rental Spaces locations right here!
+      Simply follow the instructions or call your facility to learn how!`
     });
-    this.titleService.setTitle('Pay Your Rent Online | Linden Self Storage');
+    this.titleService.setTitle('Pay Rent | StorageTown Rental Spaces');
   }
 
   ngOnInit() {
@@ -42,10 +42,14 @@ export class PaymentComponent implements OnInit {
   }
 
   public dataupdate() {
-    if ( this.locationId === '1' || this.locationId === 1 ) {
+    if ( this.locationId === '1' || this.locationId === 1) {
       this.contact = contactsLocation1;
     } else if ( this.locationId === '2' ) {
       this.contact = contactsLocation2;
+    } else if ( this.locationId === '3' ) {
+      this.contact = contactsLocation3;
+    } else if ( this.locationId === '4' ) {
+      this.contact = contactsLocation4;
     }
   }
 }

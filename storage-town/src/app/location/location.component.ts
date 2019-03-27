@@ -1,10 +1,10 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
-          contactsLocation2, hoursLocation2,
+          contactsLocation2, hoursLocation2, hoursLocation3, contactsLocation3, contactsLocation4, hoursLocation4,
           // contactsLocation3, hoursLocation3,
           } from '../data/contact';
-import { tabs, tabs1 } from '../data/location';
+import { tabs, tabs1, tabs2, headingLocation3, tabs3, headingLocation4 } from '../data/location';
 import { headingLocation1, headingLocation2 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -32,21 +32,36 @@ export class LocationComponent implements OnInit {
     private router: Router,
     private titleService: Title,
     ) {
-      if (this.router.url.includes('/location/linden-storage')) {
+      if (this.router.url.includes('/location/florida-and-warwick')) {
             this.meta.addTag({
               name: 'description',
-              content: `Linden Self Storage has over 650 state-of-the-art storage units and 115 outdoor
-              RV and boat storage spaces ready to meet your storage needs!`
+              content: `Our Florida/Warwick location has a variety of unit sizes and all storage units
+              are individually alarmed for your safety!`
             });
-            this.titleService.setTitle('Affordable Self Storage in Rochester | Linden Self Storage');
-    } else if (this.router.url.includes('/location/macedon-storage')) {
+            this.titleService.setTitle('Storage Units in Chester, NY | StorageTown Rental Spaces');
+    } else if (this.router.url.includes('/location/chester')) {
            this.meta.addTag({
              name: 'description',
-             content: ``
+             content: `Our Chester location offers a variety of well-lit, fully-fenced self
+             storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!`
            });
-           this.titleService.setTitle('Affordable Self Storage in Macedon | Linden Self Storage');
-      }
-    }
+           this.titleService.setTitle('Self Storage Units in Chester | StorageTown Rental Spaces');
+      } else if (this.router.url.includes('/location/montgomery-walden')) {
+        this.meta.addTag({
+          name: 'description',
+          content: `Our Montgomery location offers a wide variety of affordable self storage units in a well-lit,
+          fully-fenced storage facility! Call (845) 457-3500 to learn more!`
+        });
+        this.titleService.setTitle('Storage Units in Montgomery, NY | StorageTown Rental Spaces');
+   } else if (this.router.url.includes('/location/middletown-wallKill')) {
+    this.meta.addTag({
+      name: 'description',
+      content: `Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable,
+      well maintained, fully-fenced in self storage units 7 days a week!`
+    });
+    this.titleService.setTitle('Self Storage Units in Middletown | StorageTown Rental Spaces');
+  }
+}
 
   ngOnInit() {
     window.scrollTo(0, 0);
@@ -54,20 +69,30 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/linden-storage')) {
+    if (this.router.url.includes('/location/florida-and-warwick')) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes('/location/macedon-storage')) {
+    } else if (this.router.url.includes('/location/chester')) {
       this.fetchDetailsLocation2();
+    } else if (this.router.url.includes('/location/montgomery-walden')) {
+      this.fetchDetailsLocation3();
+    } else if (this.router.url.includes('/location/middletown-wallKill')) {
+      this.fetchDetailsLocation4();
     }
  }
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate(['/location/linden-storage/reserveUnit'],
+    this.router.navigate(['/location/florida-and-warwick/reserveUnit'],
           { queryParams: { name: 'Linden Self Storage', currentTab: 'Reserve Unit' }});
   } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/macedon-storage/reserveUnit'],
-          { queryParams: { name: 'Macedon Storage', currentTab: 'Reserve Unit' }});
+    this.router.navigate(['/location/chester/reserveUnit'],
+          { queryParams: { name: 'chester', currentTab: 'Reserve Unit' }});
+  }  else if ( this.locationId === 3 ) {
+    this.router.navigate(['/location/montgomery-walden/reserveUnit'],
+          { queryParams: { name: 'chester', currentTab: 'Reserve Unit' }});
+  }  else if ( this.locationId === 4 ) {
+    this.router.navigate(['/location/middletown-wallKill/reserveUnit'],
+          { queryParams: { name: 'chester', currentTab: 'Reserve Unit' }});
   }
  }
 
@@ -86,4 +111,20 @@ export class LocationComponent implements OnInit {
      this.hours = hoursLocation2;
      this.tabs = tabs;
    }
+
+   public fetchDetailsLocation3() {
+    this.name = headingLocation3;
+    this.locationId = 3;
+    this.contacts = contactsLocation3;
+    this.hours = hoursLocation3;
+    this.tabs = tabs2;
+  }
+
+  public fetchDetailsLocation4() {
+    this.name = headingLocation4;
+    this.locationId = 4;
+    this.contacts = contactsLocation4;
+    this.hours = hoursLocation4;
+    this.tabs = tabs3;
+  }
 }

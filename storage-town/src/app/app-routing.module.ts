@@ -15,7 +15,7 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'location/linden-storage',
+  { path: 'location/florida-and-warwick',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -26,7 +26,7 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/macedon-storage',
+  { path: 'location/chester',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -37,20 +37,58 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/linden-storage', component: HomeComponent,
+  { path: 'location/montgomery-walden',
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      { path: 'storageUnits', component: StorageUnitComponent },
+      { path: 'unitSizer', component: UnitSizerComponent },
+      { path: 'reserveUnit', component: ReserveUnitComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
+  { path: 'location/middletown-wallKill',
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      { path: 'storageUnits', component: StorageUnitComponent },
+      { path: 'unitSizer', component: UnitSizerComponent },
+      { path: 'reserveUnit', component: ReserveUnitComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
+  { path: 'review/florida-and-warwick', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJKXFnSz7L1okRf8vyyBQZoZs'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
     }
   },
-  { path: 'review/macedon-storage', component: HomeComponent,
+  { path: 'review/chester', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJH8RSUuYs0YkR_fntSTEO-Zo'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJm7SnExspw4kRPUDRDPAzAIc'
+    }
+  },
+  { path: 'review/montgomery-walden', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJF0fu6ofV3IkR6yRjmwhuYZk'
+    }
+  },
+  { path: 'review/middletown-wallKill', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ3Q9xV4rN3IkRiDFuXQjIbD0'
     }
   },
   { path: 'error', component: ErrorHandlerComponent },

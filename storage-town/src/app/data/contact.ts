@@ -2,48 +2,29 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Address:',
-        data: '870 Linden Ave · Rochester, NY 14625',
+        data: '1 Andrews Lane, Chester, NY 10918',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         id: 2,
         label: 'Email:',
-        data: 'contact-linden@lindenstorage.com',
+        data: 'storagetowninfo@frontier.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:contact-linden@lindenstorage.com'
+        redirect: 'mailto:storagetowninfo@frontier.com'
     },
     {
         id: 3,
         label: 'Phone:',
-        data: '(585) 381-6557',
+        data: '(845) 469-4888',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5853816557'
-    },
-    {
-        id: 4,
-        label: 'Fax',
-        data: '(585) 381-3956',
-        class: 'fas fa-fax mr-2 iconColor',
-        redirect: 'fax:5853813956'
+        redirect: 'tel:8454694888'
     },
 ];
 
 export const hoursLocation1 = [
     {
-        label: 'Monday - Friday: ',
-        data: '9:00AM - 4:00PM',
-    },
-    {
-        label: 'Saturday: ',
-        data: '9:00AM - 1:00PM',
-    },
-    {
-        label: 'Sunday: ',
-        data: 'Closed',
-    },
-    {
         label: 'Access hours: ',
-        data: '24/7',
+        data: '7 Days a Week 6:00 AM-8:00 PM',
     },
 ];
 
@@ -51,36 +32,112 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address:',
-        data: '1140 Route 31  ·  Macedon, NY 14502',
+        data: '53 Brookside Ave, Chester, NY 10918',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         id: 2,
         label: 'Email:',
-        data: 'support@lindenstorage.com',
+        data: 'storagetowninfo@frontier.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:support@lindenstorage.com'
+        redirect: 'mailto:storagetowninfo@frontier.com'
     },
     {
         id: 3,
         label: 'Phone:',
-        data: '(585) 381-6557',
+        data: '(845) 469-4888',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5853816557'
+        redirect: 'tel:8454694888'
     },
 ];
 
 export const hoursLocation2 = [
     {
-        label: 'Monday-Friday: ',
-        data: '9:00AM - 4:00PM',
-    },
-    {
-        label: 'Saturday: ',
-        data: '9:00AM - 1:00PM',
+        label: 'Monday - Saturday: ',
+        data: '9:00AM - 5:00PM',
     },
     {
         label: 'Sunday: ',
         data: 'CLOSED',
+    },
+    {
+        label: 'Access Hours: ',
+        data: '7 Days a Week 6:00AM to 8:00PM',
+    },
+];
+
+export const contactsLocation3 = [
+    {
+        id: 1,
+        label: 'Address:',
+        data: '130 Neelytown Rd, Montgomery, NY 12549',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+    {
+        id: 2,
+        label: 'Email:',
+        data: 'montgomerystorage@frontier.com',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:montgomerystorage@frontier.com'
+    },
+    {
+        id: 3,
+        label: 'Phone:',
+        data: '(845) 457-3500',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:8454573500'
+    },
+];
+
+export const hoursLocation3 = [
+    {
+        label: 'Monday - Saturday: ',
+        data: '9:00AM - 5:00PM',
+    },
+    {
+        label: 'Sunday: ',
+        data: 'CLOSED',
+    },
+    {
+        label: 'Access hours: ',
+        data: '7 Days a Week 6:00AM - 8:00PM',
+    },
+];
+
+export const contactsLocation4 = [
+    {
+        id: 1,
+        label: 'Address:',
+        data: '2070 Goshen Turnpike, Middletown, NY 10941',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+    {
+        id: 2,
+        label: 'Email:',
+        data: 'islandia@frontier.com',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:islandia@frontier.com'
+    },
+    {
+        id: 3,
+        label: 'Phone:',
+        data: '(845) 692-4838',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:8456924838'
+    },
+];
+
+export const hoursLocation4 = [
+    {
+        label: 'Monday - Saturday: ',
+        data: '9:00AM - 5:00PM',
+    },
+    {
+        label: 'Sunday: ',
+        data: 'CLOSED',
+    },
+    {
+        label: 'Access hours: ',
+        data: '7 Days a Week 6:00AM - 8:00PM',
     },
 ];

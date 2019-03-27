@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { directionLocation1, directionLocation2,
-  // directionLocation3
+import { directionLocation1, directionLocation2, directionLocation3, directionLocation4,
  } from '../data/location';
 @Component({
   selector: 'app-directions',
@@ -20,30 +19,37 @@ export class DirectionsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/linden-storage')) {
+    if (this.router.url.includes('/location/florida-and-warwick')) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes('/location/macedon-storage')) {
+     } else if (this.router.url.includes('/location/chester')) {
        this.fetchDetailsLocation2();
-     }
-    //  else  if (this.router.url.includes('/location/natrona-heights-self'))  {
-    //    this.fetchDetailsLocation3();
-    //  }
+    } else  if (this.router.url.includes('/location/montgomery-walden'))  {
+       this.fetchDetailsLocation3();
+    }  else  if (this.router.url.includes('/location/middletown-wallKill'))  {
+      this.fetchDetailsLocation4();
+    }
  }
 
  public fetchDetailsLocation1() {
   this.directionPoints = directionLocation1;
-  this.directionHeading = `Directions to Linden Self Storage`;
+  this.directionHeading = `Directions`;
   this.id = 1;
 }
   public fetchDetailsLocation2() {
     this.directionPoints = directionLocation2;
-    this.directionHeading = `Directions`;
+    this.directionHeading = `Directions to StorageTown Rental Spaces`;
     this.id = 2;
   }
 
-  // public fetchDetailsLocation3() {
-  //   this.directionPoints = directionLocation3;
-  //   this.directionHeading = `Directions to Natrona Heights Self Storage`;
-  //   this.id = 3;
-  // }
+  public fetchDetailsLocation3() {
+    this.directionPoints = directionLocation3;
+    this.directionHeading = `Directions to StorageTown Rental Spaces`;
+    this.id = 3;
+  }
+
+  public fetchDetailsLocation4() {
+    this.directionPoints = directionLocation4;
+    this.directionHeading = `Directions`;
+    this.id = 4;
+  }
 }
