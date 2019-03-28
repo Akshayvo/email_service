@@ -1,10 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-const service_id = 'mailgun';
-const template_id = 'template_zUfc6JL6';
-const user_id = 'user_3w3aBFetBCiOCRkClF9SN';
-
 @Injectable({
   providedIn: 'root'
 })
@@ -26,7 +22,9 @@ export class EmailService {
         customTemplate: ''
       }
     };
-console.log(cont);
+
     return this.http.post(`https://emailsvc-ext.syrasoft.com/v1/email`, cont);
+
   }
 }
+

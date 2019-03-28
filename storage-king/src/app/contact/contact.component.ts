@@ -37,12 +37,7 @@ export class ContactComponent implements OnInit {
       content: `Use our contact form or information here if you have questions about your account or our services!`
     });
     this.titleService.setTitle('Contact US | Storage King');
-  }
 
-  ngOnInit() {
-    this.fetchContactDetails();
-    window.scrollTo(0, 0);
-    this.fetchHours();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -51,6 +46,12 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: [''],
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    window.scrollTo(0, 0);
+    this.fetchHours();
   }
 
   get f() { return this.contactForm.controls; }

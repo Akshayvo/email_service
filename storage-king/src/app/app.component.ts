@@ -13,14 +13,11 @@ export class AppComponent implements OnInit {
   title = 'Storage King';
   flag: boolean;
   public offsets: number[];
-  public version: string = environment.VERSION;
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private angulatics: Angulartics2GoogleAnalytics,
   ) {
-    console.log(this.version);
-
   }
   ngOnInit() {
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
