@@ -2,13 +2,16 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+
+
 export const environment = {
   production: false,
   s3_base_url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images',
   s3_powered_by_url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby',
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  appId: 'StorageKing'
+  appId: 'StorageKing',
+  VERSION: require('../../package.json').version
 };
 
 /*

@@ -4,5 +4,6 @@ export const environment = {
     s3_powered_by_url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby',
     errorsMails: ['website.dev@codeparva.in'],
     senderEmail: 'errors@codeparva.in',
-    appId: 'StorageKing'
+    appId: 'StorageKing',
+    VERSION: require('../../package.json').version
 };

@@ -1,6 +1,6 @@
 {
   "name": "storage-king",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -51,7 +51,7 @@
     "@angular/language-service": "^7.1.1",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~8.9.4",
+    "@types/node": "^8.9.5",
     "codelyzer": "~4.3.0",
     "htmlhint": "^0.10.0",
     "jasmine-core": "~2.99.1",
