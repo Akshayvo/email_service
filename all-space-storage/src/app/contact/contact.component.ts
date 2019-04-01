@@ -49,10 +49,7 @@ export class ContactComponent implements OnInit {
                 Use our handy form or reach out today and let our friendly staff help today!`
     });
     this.titleService.setTitle('Contact Us | AllSpace Storage');
-  }
 
-  ngOnInit() {
-    this.window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -61,6 +58,10 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: [''],
   });
+  }
+
+  ngOnInit() {
+    this.window.scrollTo(0, 0);
   this.receiveMessage();
 }
 

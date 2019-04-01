@@ -30,6 +30,7 @@ import { SelectLocationComponent } from './select-location/select-location.compo
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorComponent } from './error/error.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
     TabsComponent,
     AccordionComponent,
     SelectLocationComponent,
+    ReviewsComponent,
   ],
   imports: [
     NgtUniversalModule,

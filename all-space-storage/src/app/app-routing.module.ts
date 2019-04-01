@@ -13,6 +13,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorComponent } from './error/error.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -27,6 +28,7 @@ const routes: Routes = [
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
+      { path: 'reviews', component: ReviewsComponent },
     ]
   },
   { path: 'location/poughkeepsie/hyde-park',
@@ -39,6 +41,7 @@ const routes: Routes = [
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
+      { path: 'reviews', component: ReviewsComponent },
     ]
   },
   { path: 'location/highland',
@@ -51,6 +54,7 @@ const routes: Routes = [
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
+      { path: 'reviews', component: ReviewsComponent },
     ]
   },
   { path: 'location/lake-katrine',
@@ -63,6 +67,7 @@ const routes: Routes = [
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
+      { path: 'reviews', component: ReviewsComponent },
     ]
   },
   { path: 'location/pawling',
@@ -75,6 +80,7 @@ const routes: Routes = [
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
+      { path: 'reviews', component: ReviewsComponent },
     ]
   },
   { path: 'review/poughkeepsie/arlington', component: HomeComponent,

@@ -3,8 +3,8 @@ import { Router } from '@angular/router';
 import { aboutUsLocation1, aboutUsLocation2, aboutUsLocation3, aboutUsLocation4,
   aboutUsLocation5,
           headingLocation1, headingLocation2,  headingLocation3, headingLocation4, headingLocation5,
-          aboutUsImageLocation1, aboutUsImageLocation2,
-          aboutUsImageLocation3, aboutUsImageLocation4, aboutUsImageLocation5,
+          aboutUsImageLocation1, aboutUsImageLocation2, aboutUsImageLocation3,
+          aboutUsImageLocation4, aboutUsImageLocation5,
           alt1, alt2, alt3, alt4, alt5 } from '../data/location';
 
 @Component({

@@ -29,6 +29,12 @@ export const tabs = [
         path: './directions',
         active: false,
     },
+    {
+        id: '6',
+        name: 'Reviews',
+        path: './reviews',
+        active: false,
+    },
 ];
 
 // export const tabs = [
@@ -109,7 +115,7 @@ export const unitSizerLocation1 = [
         data: `Perfectly holds the contents of a one or two bedroom apartment. This
                 unit size is also well suited for file storage or for your four-wheeler.`,
         amenities: [
-            { content: `Stores 2 to 3 rooms of furniture`, },
+            { content: `Stores <b>2 to 3 rooms</b> of furniture`, },
             { content: `Ideal for 4 wheeler; file storage`, },
             { content: `Easier to place bulk items; aisle`, },
             { content: `1/2 size of a single car garage` }
@@ -120,7 +126,7 @@ export const unitSizerLocation1 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Need to store a compact car, a jet ski or snowmobile? This is the space you need.`,
         amenities: [
-            { content: `Size for an apartment or small house`, },
+            { content: `Size for <b>an apartment or small house</b>`, },
             { content: `Jet skies or snowmobiles`, },
         ],
     },
@@ -197,7 +203,7 @@ export const unitSizerLocation2 = [
         data: `Perfectly holds the contents of a one or two bedroom apartment. This
                 unit size is also well suited for file storage or for your four-wheeler.`,
         amenities: [
-            { content: `Stores 2 to 3 rooms of furniture`, },
+            { content: `Stores <b>2 to 3 rooms</b> of furniture`, },
             { content: `Ideal for 4 wheeler; file storage`, },
             { content: `Easier to place bulk items; aisle`, },
             { content: `1/2 size of a single car garage` }
@@ -208,7 +214,7 @@ export const unitSizerLocation2 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Need to store a compact car, a jet ski or snowmobile? This is the space you need.`,
         amenities: [
-            { content: `Size for an apartment or small house`, },
+            { content: `Size for <b>an apartment or small house</b>`, },
             { content: `Jet skies or snowmobiles`, },
         ],
     },
@@ -285,7 +291,7 @@ export const unitSizerLocation3 = [
         data: `Perfectly holds the contents of a one or two bedroom apartment. This
                 unit size is also well suited for file storage or for your four-wheeler.`,
         amenities: [
-            { content: `Stores 2 to 3 rooms of furniture`, },
+            { content: `Stores <b>2 to 3 rooms</b> of furniture`, },
             { content: `Ideal for 4 wheeler; file storage`, },
             { content: `Easier to place bulk items; aisle`, },
             { content: `1/2 size of a single car garage` }
@@ -296,7 +302,7 @@ export const unitSizerLocation3 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Need to store a compact car, a jet ski or snowmobile? This is the space you need.`,
         amenities: [
-            { content: `Size for an apartment or small house`, },
+            { content: `Size for <b>an apartment or small house</b>`, },
             { content: `Jet skies or snowmobiles`, },
         ],
     },
@@ -373,7 +379,7 @@ export const unitSizerLocation4 = [
         data: `Perfectly holds the contents of a one or two bedroom apartment. This
                 unit size is also well suited for file storage or for your four-wheeler.`,
         amenities: [
-            { content: `Stores 2 to 3 rooms of furniture`, },
+            { content: `Stores <b>2 to 3 rooms</b> of furniture`, },
             { content: `Ideal for 4 wheeler; file storage`, },
             { content: `Easier to place bulk items; aisle`, },
             { content: `1/2 size of a single car garage` }
@@ -384,7 +390,7 @@ export const unitSizerLocation4 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Need to store a compact car, a jet ski or snowmobile? This is the space you need.`,
         amenities: [
-            { content: `Size for an apartment or small house`, },
+            { content: `Size for <b>an apartment or small house</b>`, },
             { content: `Jet skies or snowmobiles`, },
         ],
     },
@@ -461,7 +467,7 @@ export const unitSizerLocation5 = [
         data: `Perfectly holds the contents of a one or two bedroom apartment. This
                 unit size is also well suited for file storage or for your four-wheeler.`,
         amenities: [
-            { content: `Stores 2 to 3 rooms of furniture`, },
+            { content: `Stores <b>2 to 3 rooms</b> of furniture`, },
             { content: `Ideal for 4 wheeler; file storage`, },
             { content: `Easier to place bulk items; aisle`, },
             { content: `1/2 size of a single car garage` }
@@ -472,7 +478,7 @@ export const unitSizerLocation5 = [
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
         data: `Need to store a compact car, a jet ski or snowmobile? This is the space you need.`,
         amenities: [
-            { content: `Size for an apartment or small house`, },
+            { content: `Size for <b>an apartment or small house</b>`, },
             { content: `Jet skies or snowmobiles`, },
         ],
     },
@@ -521,14 +527,19 @@ export const headingLocation4 = `AllSpace Storage - Pawling`;
 
 export const headingLocation5 = `AllSpace Storage - Poughkeepsie/Hyde Park`;
 
-export const aboutUsImageLocation1 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Poughkeepsie-HydePark/poughkeepsie-hydepark.jpg`;
+// tslint:disable-next-line:max-line-length
+export const aboutUsImageLocation1 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Poughkeepsie-Arlington/poughkeepsie-arlington.jpg`;
 
+// tslint:disable-next-line:max-line-length
 export const aboutUsImageLocation2 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/NewPaltz-Highland/new-paltz-highland.jpg`;
 
+// tslint:disable-next-line:max-line-length
 export const aboutUsImageLocation3 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Kingston-LakeKatrine/kingston-lake-katrine.jpg`;
 
+// tslint:disable-next-line:max-line-length
 export const aboutUsImageLocation4 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Pawling-Brewster/pawling-brewster.jpg`;
 
+// tslint:disable-next-line:max-line-length
 export const aboutUsImageLocation5 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Poughkeepsie-HydePark/poughkeepsie-hydepark.jpg`;
 
 export const alt1 = ``;
@@ -539,93 +550,79 @@ export const alt5 = `Photograph of the exterior of the main office at AllSpace S
 
 export const aboutUsLocation1 = [
     {
-        p: `At our Poughkeepsie/Arlington location, you'll have access to your storage unit seven days a week,
-        from 6 am to 11 pm. Your belongings will be stored in a facility and monitored by a team that has been
-        serving the Poughkeepsie and Arlington communities since 1998!`,
+        p: `Since 1998 our Poughkeepsie/Arlington location has been assisting your friends and family with their
+        storage choices. Our storage associates will gladly work with you on which size unit will best meet your needs;
+        from the small closet to the very large garage size, we can provide storage solutions for apartment dwellers,
+        homeowners, and commercial businesses.`,
     },
     {
-        p: `We are also proud to serve local students attending Vassar College, Marist College,
-        and the Culinary Institute of America!`
-    },
-    {
-        p: `Our storage experts will gladly work with you to figure out which unit type you require to make your
-        stay with AllSpace Storage a convenient and efficient one! So, whether you own a home, rent an apartment,
-        go to school or run a business in the community, we have the right unit for you.`,
+        p: `This location is fully fenced in with gate access using keypad entry. You will have access to your
+        storage unit from 6am to 11pm seven days per week. If you require 24-hour access ask our associate for details.
+        We are conveniently located on Rt 55 in Poughkeepsie. We are only a few miles from La Grange, Hyde Park,
+        Pleasant Valley, and Vassar College.`
     },
 ];
 
 export const aboutUsLocation2 = [
     {
-        p: `At our Highland location, you'll have access to your storage unit seven days a week, from 6 am to 11 pm.
-        24-hour access is available. Since 2001, the Highland AllSpace Storage has been serving the Highland,
-        New Paltz, and Lloyd communities with quality self storage services and excellent customer service.`,
+        p: `Since 2001 our Highland/New Paltz location has been assisting your friends and family in Highland,
+        New Paltz and Lloyd communities with their storage choices. Our storage associates will gladly work
+        with you on which size unit will best meet your needs; from the small closet to the very large garage
+        size, some being climate controlled, we can provide storage solutions for apartment dwellers, homeowners,
+        and commercial businesses.`,
     },
     {
-        p: `As members of the community oursevles we understand the value placed on the belongings of our friends,
-        family and neighbors. Our staff strive to provide clean, well maintained, and secure storage units to make
-        your move, downsizing, or other hectic storage experience as convenient and hassle-free as possible.`,
+        p: `This location is fully fenced in with gate access using keypad entry. You will have access to your
+        storage unit from 6am to 11pm seven days per week. If you require 24-hour access ask our associate for
+        details. We are conveniently located on Rt 299 in Highland. We are only a few miles from New Paltz, Port
+        Ewen, Clintondale, and SUNY New Paltz College.`,
     },
-    {
-        p: `So Whether you own a home, rent an apartment, are attending SUNY New Paltz or run a local business,
-        AllSpace Storage has the perfect unit for you!`,
-    },
-    {
-        p: `This location offers a wide range of unit sizes, and many are climate controlled. A professional and
-        knowledgeable storage associate will be glad to help you determine which unit will best meet your needs.`,
-    }
 ];
 
 export const aboutUsLocation3 = [
     {
-        p: `At our Kingston/Lake Katrine location, you'll have access to your storage unit seven days a week
-        from 6 am to 11 pm. 24-hour access is available. We understand that not every self storage user
-        operates on the same schedule as our office so we do out best to make sure you always have access
-        to your unit(s) whenever needed.`,
+        p: `Since 2003 our Lake Katrine/Kingston location has been assisting your friends and family in Kingston,
+        Saugerties, and Woodstock with their storage choices. Our storage associates will gladly work with you on
+        which size unit will best meet your needs; from the small closet to the very large garage size, some being
+        climate controlled, we can provide storage solutions for apartment dwellers, homeowners, and commercial
+        businesses.`,
     },
     {
-        p: `Many of our business customers take advantage of our 24 hour access at each location to pick
-        up equipment or store and retrieve inventory. Not sure if a particular location offers 24 hour access?
-        Simply call ahead and our friendly, knowledgeable storage associates will be happy to assist you!`,
-    },
-    {
-        p: `Whether you own a home, rent an apartment, are attending school at Bard College or run a local business,
-        an AllSpace Storage unit is right for you.`,
+        p: `This location is fully fenced in with gate access using keypad entry and security cameras on the property.
+        You will have access to your storage unit from 6am to 11pm seven days per week. If you require 24-hour access
+        ask our associate for details. We are conveniently located on Rt 9W in Lake Katrine, with easy access from NYS
+        Thruway and Kingston/Rhinecliff Bridge. We are only a few miles from Kingston, Woodstock, Saugerties, Rhinebeck,
+        Red Hook, and BARD College.`,
     },
 ];
 
 export const aboutUsLocation4 = [
     {
-        p: `At our Pawling/Brewster location, you'll have access to your storage unit 24 hours a day, seven days a week.
-        As local residents ourselves we understand the value of a convenient, hassle free storage service. We are here
-        to help answer questions and make your move in process a pain-free one.`,
+        p: `Since 2003 our Pawling/Brewster location has been assisting your friends and family in Patterson and
+        Brewster area with their storage choices. Our storage associates will gladly work with you on which size unit
+        will best meet your needs; from the small closet to the very large garage size, many being climate controlled,
+        we can provide storage solutions for apartment dwellers, homeowners, and commercial businesses.`,
     },
     {
-        p: `Many of our tenants are seeking to downsize their living situation or find a little extra breathing room at
-        home. We are here to help you find that extra space! We also cater to local businesses and non-profits in need
-        of long term storage!`,
-    },
-    {
-        p: `This location offers a wide range of unit sizes, and many are climate controlled. A professional
-        and knowledgeable storage associate will be glad to help you determine which unit will best meet your needs.`,
+        p: `This location is fully fenced in with gate access using keypad entry. You will have 24-hour access seven
+        days per week. We are conveniently located on Rt 22 in Pawling. We are only a few miles from Beckman,
+        LaGrangeville, Poughquag, Wingdale, Patterson, Brewster and Trinity Pawling.`,
     },
 ];
 
 export const aboutUsLocation5 = [
     {
-        p: `At this facility, you'll have access to your storage unit seven days a week, from 6 am to 11 pm.
-        Whether you need to store a few boxes, the contents of an entire home or a vehicle, we have the right
-        unit for you. If you're in need of 24-hour access, see a storage associate in our office for details.
-        `,
+        p: `Since 1996 our Poughkeepsie/Hyde Park location has been assisting your friends and
+        family with their storage choices. Our storage associates will gladly work with you on
+        which size unit will best meet your needs; from the small closet to the very large garage size,
+        we can provide storage solutions for apartment dwellers, homeowners, and commercial businesses.`,
     },
     {
-        p: `We are also proud to serve local students attending Vassar College, Marist College,
-        and the Culinary Institute of America!
-        `,
-    },
-    {
-        p: `A wide array of moving and storage supplies are available for sale at every All Space location. We accept
-        Master Card and Visa. Sign up for our Easy Pay program, and we'll charge your credit card automatically.
-        Never make a late payment again. `,
+        p: `This location is fully fenced in with gate access using keypad entry. You will have access to your
+        storage unit from 6am to 11pm seven days per week. If you require 24-hour access ask our associate for
+        details. We are conveniently located on Salt Point Turnpike in Poughkeepsie. We are only a few miles from
+        Hyde Park, Pleasant Valley, Vassar College, Marist College, Dutchess Community College and the Culinary
+        Institute of America.`,
     },
 ];
 
@@ -701,3 +698,88 @@ export const directionLocation4 = [
         ],
     },
 ] ;
+
+export const review1 = [
+    {
+        p : `"I have been a customer at AllSpace Route 55 for many years, the staff has always been extremely
+        friendly and goes above and beyond. -"`,
+        by: '- Annette',
+    },
+    {
+        p : `"Good location and reasonable prices. William Really nice people and units are clean."`,
+        by: '- Brenda',
+    },
+    {
+        p : `"Love it! Great Staff! Easy billing."`,
+        by: '- Satisfied Tenant',
+    }
+];
+
+export const review2 = [
+    {
+        p : `"Nice people a pleasure to go there."`,
+        by: '- Maureen',
+    },
+    {
+        p : `"My experience with AllSpace has been trouble free and great staff."`,
+        by: '- Lenny',
+    },
+    {
+        p : `"I searched all around, and they offered the best deal. The women I spoke with answered all my
+        questions and was very friendly."`,
+        by: '- Brittany',
+    }
+];
+
+export const review3 = [
+    {
+        p : `"I have been a customer at AllSpace for over 10 years. The management and staff
+        are friendly and helpful. The facility is secure and the units are clean."`,
+        by: '- Bill',
+    },
+    {
+        p : `"I’ve used several different storage places over the years, each with their own set of issues.
+        I can honestly say that the 3 to 4 years I’ve used AllSpace I have NEVER had even the slightest problem.
+        The staff is exceptionally friendly and helpful."`,
+        by: '- Jesse',
+    },
+    {
+        p : `"Clean, affordable, &amp; very friendly customer service!"`,
+        by: ' - Renata',
+    }
+];
+
+export const review4 = [
+    {
+        p : `"I have been a customer for many years at AllSpace &amp; can say with confidence that you will not
+        be disappointed. The staff are top notch, responsive, polite, and friendly."`,
+        by: '- Cris',
+    },
+    {
+        p : `"Great place and staff very friendly and very helpful."`,
+        by: '- Kenneth',
+    },
+    {
+        p : `"Excellent price people and place!"`,
+        by: '- Richard',
+    }
+];
+
+export const review5 = [
+    {
+        p : `"I have been a customer for over 10 years and AllSpace has always exemplified great customer
+        service and professionalism."`,
+        by: '- Tyrone',
+    },
+    {
+        p : `"They’re more like caring friends than someone I’m doing business with….always pleasant and helpful!"`,
+        by: '- Janice',
+    },
+    {
+        p : `"I recently moved from Manhatten to Poughkeepsie and a few hiccups took place on the day of the move,
+        none the less the staff at AllSpace was willing to wait for our late arrival and process our reservation,
+        made sure keycode worked, and not once did she complain about the late hour we got there. It was refreshing
+        to do business with someone who cares and offers exceptional customer service!"`,
+        by: '- Cleo',
+    }
+];

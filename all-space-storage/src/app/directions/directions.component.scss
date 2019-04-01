@@ -6,6 +6,10 @@
   padding: 64px;
   margin-bottom: 50px;
 
+  a {
+    max-width: 380px;
+  }
+
   h2 {
     text-transform: capitalize;
   }
@@ -54,6 +58,18 @@
     span {
       a {
         font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 328px) {
+  .direction-holder {
+    padding: 16px;
+
+    span {
+      a {
+        font-size: 0.7rem;
       }
     }
   }
