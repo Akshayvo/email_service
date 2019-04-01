@@ -21,7 +21,7 @@ export class ContactButtonComponent implements OnInit {
   completeMessage: string;
   // socialLinks: any;
   contactForm: FormGroup;
-
+  subjectCB: string;
   valid = true;
   submitted = false;
   mailSent = false;
@@ -32,19 +32,20 @@ export class ContactButtonComponent implements OnInit {
     private emailService: EmailService,
     private formBuilder: FormBuilder
   ) {
+    this.contactForm = this.formBuilder.group({
+      nameCB: ['', Validators.required],
+      phoneCB: ['', [Validators.required,
+      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+      emailCB: ['', [Validators.required, Validators.email]],
+      messageCB: ['', Validators.required],
+      subjectCB: ['']
+  });
   }
 
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
     // this.fetchsocialLinks();
-    this.contactForm = this.formBuilder.group({
-      nameCB: ['', Validators.required],
-      phoneCB: ['', [Validators.required,
-      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      emailCB: ['', [Validators.required, Validators.email]],
-      messageCB: ['', Validators.required]
-  });
   }
 
   get f() { return this.contactForm.controls; }
@@ -69,7 +70,12 @@ export class ContactButtonComponent implements OnInit {
        return;
    } else {
 
-     this.receiveremail = this.contactInfo[1].data;
+    if ( !this.contactForm.value.subjectCB) {
+      this.contactForm.value.subjectCB = 'Website Form Submission';
+    }
+
+
+     this.receiveremail = this.contactInfo[2].data;
 
          this.completeMessage = `phone: ${this.contactForm.value.phoneCB}, <br/>
                                 message: ${this.contactForm.value.messageCB}`;
@@ -79,6 +85,7 @@ export class ContactButtonComponent implements OnInit {
            email: this.contactForm.value.emailCB,
            receiveremail: this.receiveremail,
            message: this.completeMessage,
+           subject: this.contactForm.value.subjectCB,
          };
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
