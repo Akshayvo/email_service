@@ -42,34 +42,43 @@
                  </div>
 
                  <div class="row py-3">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Email Address*</label>
-                            <input type="text" formControlName="email" placeholder="Enter Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
-                            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                                <small class="form-text text-muted" *ngIf="f.email.errors.required">Please fill out this field</small>                                  
-                            </div>
-                            <div *ngIf="f.email.errors" >
-                                <small class="form-text text-muted" *ngIf="f.email.errors.email">Please enter a valid email</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
+                  <div class="col-md-6">
                       <div class="form-group">
-                        <label for="location">Location*</label>
-                          <select 
-                                name="location"
-                                formControlName="location"  
-                                class="form-control"
-                                required>
-                            <option *ngFor='let place of places' [value]="place">{{place}}</option>
-                          </select>
-                          <div *ngIf="submitted && f.location.errors" class="invalid-feedback">
-                              <small class="form-text text-muted" *ngIf="f.location.errors.required">Please fill out this field</small>                                  
+                          <label>Email Address*</label>
+                          <input type="text" formControlName="email" placeholder="Enter Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                              <small class="form-text text-muted" *ngIf="f.email.errors.required">Please fill out this field</small>                                  
+                          </div>
+                          <div *ngIf="f.email.errors" >
+                              <small class="form-text text-muted" *ngIf="f.email.errors.email">Please enter a valid email</small>
                           </div>
                       </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="location">Location*</label>
+                        <select 
+                              name="location"
+                              formControlName="location"  
+                              class="form-control"
+                              required>
+                          <option *ngFor='let place of places' [value]="place">{{place}}</option>
+                        </select>
+                        <div *ngIf="submitted && f.location.errors" class="invalid-feedback">
+                            <small class="form-text text-muted" *ngIf="f.location.errors.required">Please fill out this field</small>                                  
+                        </div>
                     </div>
-                   </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label>Subject</label>
+                          <input type="text" formControlName="subject" placeholder="Enter subject" class="form-control" />
+                      </div>
+                  </div>
+                </div>
 
                    <div class="form-group">
                       <label>Message*</label>
@@ -90,9 +99,8 @@
              <h2> Southern Storage - Agricola</h2>
               <div class="py-2">
                   <span *ngFor="let contact of contactsAgricola">
-                    <span *ngIf="contact.id === 1 || contact.id === 2">
-                     <b>{{contact.label}}</b> <a [href]="contact?.redirect">{{contact.data}}</a> <br>
-                    </span>
+                    <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                    <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                   </span>
               </div>
               
@@ -108,9 +116,8 @@
               <h2> Southern Storage - Rocky Creek</h2>
               <div class="py-2">
                   <span *ngFor="let contact of contactsRockyCreek; let i = index">
-                    <span *ngIf = "i !== 0">
-                     <b>{{contact.label}}</b> <a [href]="contact?.redirect">{{contact.data}}</a> <br>
-                    </span>
+                    <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                    <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                   </span>
               </div>
             </div>
@@ -122,9 +129,8 @@
                 <h2> Southern Storage - Barton</h2>
                 <div class="py-2">
                     <span *ngFor="let contact of contactsBarton; let i = index">
-                        <span *ngIf = "i !== 0">
-                        <b>{{contact.label}}</b> <a [href]="contact?.redirect">{{contact.data}}</a> <br>
-                        </span>
+                      <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                      <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                     </span>
                 </div>
               

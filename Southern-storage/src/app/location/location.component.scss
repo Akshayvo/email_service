@@ -78,6 +78,10 @@ h1 {
   display: block;
 }
 
+.disp-for-small-device {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   // .disp {
   //   display: none;
@@ -126,10 +130,11 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .social-content {
     h1 {
       font-size: 1.4rem;
+      margin-bottom: 0;
     }
   }
 
@@ -169,6 +174,20 @@ h1 {
         width: 32.5%;
       }
     }
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .disp-for-small-device {
+    display: flex;
+  }
+
+  .display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

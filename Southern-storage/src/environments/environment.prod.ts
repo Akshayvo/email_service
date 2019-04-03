@@ -1,6 +1,7 @@
 export const environment = {
-  production: false,
-  errorsMails: ['vinay.g@codeparva.in', 'preetha.ts@codeparva.in'],
+  production: true,
+  errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  appId: 'SouthernStorage'
+  appId: 'SouthernStorage',
+  VERSION: require('../../package.json').version
 };

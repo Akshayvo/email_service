@@ -17,11 +17,11 @@ export class RentSubComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/payment/rocky-creek')) {
+    if (this.router.url.includes('/pay-rent/rocky-creek')) {
         this.tabId = 0;
-    } else if (this.router.url.includes('/payment/agricola')) {
+    } else if (this.router.url.includes('/pay-rent/agricola')) {
       this.tabId = 1;
-    } else if (this.router.url.includes('/payment/barton')) {
+    } else if (this.router.url.includes('/pay-rent/barton')) {
       this.tabId = 2;
     }
   }

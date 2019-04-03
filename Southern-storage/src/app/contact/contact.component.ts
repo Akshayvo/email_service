@@ -25,6 +25,7 @@ export class ContactComponent implements OnInit {
   name: string;
   email: any;
   phone: any;
+  subject: string;
   location: any;
   message: string;
   places = [ 'Southern Self Storage - Rocky Creek',
@@ -53,6 +54,16 @@ export class ContactComponent implements OnInit {
                 Find the contact information for all of our locations here!`
     });
     this.titleService.setTitle('Contact Us | Southern Storage');
+
+    this.contactForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      phone: ['', [Validators.required,
+                Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required],
+      location: ['', Validators.required],
+      subject: ['']
+  });
   }
 
   ngOnInit() {
@@ -63,14 +74,6 @@ export class ContactComponent implements OnInit {
     this.fetchContactDetails();
     this.fetchHours();
     window.scrollTo(0, 0);
-    this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      phone: ['', [Validators.required,
-                Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      location: ['', Validators.required]
-  });
   }
 
   get f() { return this.contactForm.controls; }
@@ -95,6 +98,10 @@ onSubmit() {
      return;
  } else {
 
+  if ( !this.contactForm.value.subject) {
+    this.contactForm.value.subject = 'Website Form Submission';
+  }
+
    if (this.contactForm.value.location === 'Southern Self Storage - Rocky Creek') {
     this.receiveremail = this.contactsRockyCreek[2].data;
   } else if (this.contactForm.value.location === 'Southern Self Storage - Agricola') {
@@ -110,6 +117,7 @@ onSubmit() {
          email: this.contactForm.value.email,
          receiveremail: this.receiveremail,
          message: this.completeMessage,
+         subject: this.contactForm.value.subject
        };
        this.emailService.sendEmail(body)
          .subscribe((response: any) => {
