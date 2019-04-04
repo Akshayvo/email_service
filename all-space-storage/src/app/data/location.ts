@@ -701,13 +701,17 @@ export const directionLocation4 = [
 
 export const review1 = [
     {
-        p : `"I have been a customer at AllSpace Route 55 for many years, the staff has always been extremely
-        friendly and goes above and beyond. -"`,
+        p : `"I have been a customer at AllSpace Route 55 for many years, the staff
+        has always been extremely friendly and goes above and beyond." `,
         by: '- Annette',
     },
     {
-        p : `"Good location and reasonable prices. William Really nice people and units are clean."`,
-        by: '- Brenda',
+        p : `"Good location and reasonable prices."`,
+        by: '- William',
+    },
+    {
+        p: `"Really nice people and units are clean."`,
+        by: `- Brenda`
     },
     {
         p : `"Love it! Great Staff! Easy billing."`,
@@ -725,8 +729,8 @@ export const review2 = [
         by: '- Lenny',
     },
     {
-        p : `"I searched all around, and they offered the best deal. The women I spoke with answered all my
-        questions and was very friendly."`,
+        p : `"I searched all around, and they offered the best deal.
+        The woman I spoke with answered all my questions and was very friendly."`,
         by: '- Brittany',
     }
 ];
@@ -744,15 +748,15 @@ export const review3 = [
         by: '- Jesse',
     },
     {
-        p : `"Clean, affordable, &amp; very friendly customer service!"`,
+        p : `"Clean, affordable & very friendly customer service!"`,
         by: ' - Renata',
     }
 ];
 
 export const review4 = [
     {
-        p : `"I have been a customer for many years at AllSpace &amp; can say with confidence that you will not
-        be disappointed. The staff are top notch, responsive, polite, and friendly."`,
+        p : `"I have been a customer for many years at AllSpace & can say with confidence that you will
+        not be disappointed. The staff are top notch, responsive, polite, and friendly." `,
         by: '- Cris',
     },
     {

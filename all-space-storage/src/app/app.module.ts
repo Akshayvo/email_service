@@ -1,5 +1,5 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 
 // import '@material/tab/mdc-tab-scroller';
@@ -31,6 +31,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorComponent } from './error/error.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { ErrorHandlerService } from './services/error-handler.service';
 
 
 @NgModule({
@@ -67,15 +68,19 @@ import { ReviewsComponent } from './reviews/reviews.component';
     ReactiveFormsModule,
     HttpClientModule,
     ],
-  providers: [
-    Title,
-    {
-      provide: 'externalUrlRedirectResolver',
-      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
-          window.location.href = (route.data as any).externalUrl;
+    providers: [
+      Title,
+      {
+        provide: ErrorHandler,
+        useClass: ErrorHandlerService
+      },
+      {
+        provide: 'externalUrlRedirectResolver',
+        useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+            window.location.href = (route.data as any).externalUrl;
+        }
       }
-    }
-  ],
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

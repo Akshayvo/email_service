@@ -4,36 +4,36 @@ a {
   cursor: pointer;
 }
 
-.navbar {
-  padding-bottom: 0;
+.custom-border {
+  border-bottom: 3px solid $white;
+}
 
-  .navbar-brand {
-    img {
-      position: absolute;
-      height: auto;
-      top: 9px;
-    }
-  }
+.navbar {
+  padding: 0;
 
   .nav-link {
     color: $dark;
     font-size: 1.2rem;
     font-weight: 400;
-    padding-top: 25px;
+    padding-top: 30px;
     padding-bottom: 25px;
     transition: none;
   }
 
-  .nav-link-active {
-    border-bottom: 5px $primary solid;
-    color: $primary !important;
-    font-weight: 600;
+  .nav-link:hover {
+    color: $white;
+    background-color: $primary;
   }
 
+  .nav-link-active {
+    color: $white !important;
+    background-color: $primary;
+  }
 
   .location-active {
     color: $primary !important;
     font-weight: 600;
+    background-color: $white;
   }
 
 
@@ -45,10 +45,6 @@ a {
   button:focus {
     outline: 5px auto $primary;
   }
-}
-
-.nav-link:hover {
-  color: $primary;
 }
 
 .display {
@@ -69,39 +65,42 @@ a {
   border: 1px #efefef solid;
 }
 
-.dropdown {
-  .dropdown-menu {
-    width: max-content;
+.dropdown-menu {
+  border-radius: 0;
+  border: none;
+  background-color: $primary;
+  padding: 0;
+
+  li {
+    a {
+      color: $white;
+      font-weight: 400;
+    }
+  }
+
+  li:hover,
+  li:active {
+    background-color: $white;
+
+    a {
+      color: $primary;
+      font-weight: 400;
+    }
   }
 }
 
-.dropdown-submenu {
-  color: #000;
+.dropdown:hover>.dropdown-menu {
   display: block;
 }
-
-.dropdown-submenu>.dropdown-menu {
-  top: -8px;
-  margin-left: -1px;
-  border-radius: 0 2px 2px 2px;
-  // display: block;
-}
-
-// .success {
-//   .dropdown-submenu:hover>.dropdown-menu {
-//     display: block;
-//   }
-// }
-
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-
 
 .submenu-link {
   li {
     color: $primary;
   }
+}
+
+.dropdown-toggle::after {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -120,7 +119,49 @@ a {
     display: none;
   }
 
+  .custom-border {
+    border-bottom: none;
+  }
+
+  .dropdown-toggle::after {
+    display: inline-block !important;
+  }
+
   .navbar {
+    .navbar-brand {
+      img {
+        padding-bottom: 10px;
+      }
+    }
+
+    .nav-link-active {
+      color: $primary !important;
+      background-color: $white;
+      border-bottom: 5px solid $primary
+    }
+
+    .nav-link {
+      padding-top: 25px;
+    }
+
+    .nav-link:hover {
+      color: $primary !important;
+      background-color: $white;
+      border-bottom: 5px solid $primary
+    }
+
+    .nav-link:active {
+      color: $primary !important;
+      background-color: $white;
+      border-bottom: 5px solid $primary
+    }
+
+    .location-active {
+      color: $primary !important;
+      font-weight: 600;
+      background-color: $white;
+    }
+
     .navbar-nav {
       overflow-y: auto;
       overflow-x: hidden;
@@ -132,24 +173,61 @@ a {
       }
     }
 
-    .navbar-brand {
-      img {
-        width: 80px;
-        height: auto;
-        top: 0;
+    .nav-link:hover {
+      color: $white;
+      background-color: $white;
+    }
+
+    .dropdown-menu {
+      left: -40px;
+      border-radius: 3px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      background-color: $white;
+      padding: 0.5em 0;
+  
+      li {
+        background-color: white;
+        
+        a {
+          padding-top: 4px;
+          padding-bottom: 4px;
+          color: #4e4848;
+        }
+      }
+
+      li:active {
+        background-color: $white;
+    
+        a {
+          color: $primary;
+          font-weight: 600;
+        }
       }
     }
 
     .dropdown {
-      .dropdown-menu {
-        left: -25px;
-        // align-items: center;
-        // display: flex;
-        // flex-direction: column;
+      ul {
         text-align: -webkit-center;
-        a {
-          padding: 4px;
-        }
+      }
+    
+      .nav-link:active {
+        border-bottom: 0;
+      }
+
+      .nav-link:hover {
+        border-bottom: 0;
+      }
+      
+      .nav-link {
+        border-bottom: 0;
+      }
+
+      a {
+        display: -webkit-box;
+      }
+
+      .custom-border {
+        display: none;
       }
     }
   }
