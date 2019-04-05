@@ -88,7 +88,6 @@
                     <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                 </span>
-                <h3 class="py-1">Office:</h3>
                 <span class="font-xs-device" *ngFor="let hour of hours">
                     <div *ngIf="hour.id == 1">
                         <b>Office Hours</b><br>

@@ -9,8 +9,7 @@ export const contact = [
         id: 1,
         redirect: 'mailto:apesportable@gmail.com',
         label: 'Email:',
-        // data: 'apesportable@gmail.com',
-        data: 'sanghmitra.v@codeparva.in',
+        data: 'apesportable@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
@@ -32,13 +31,5 @@ export const hours = [
         id: 2,
         label: 'Monday-Saturday: ',
         data: '8:00AM - 5:00PM'
-    },
-];
-
-export const socialLinks = [
-    {
-        label: 'facebook',
-        path: '',
-        class: 'fab fa-facebook-square',
     },
 ];

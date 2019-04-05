@@ -1,4 +1,3 @@
-export const featuresHead = 'The Only Self Storage in Greene County With All of The Following';
 
 export const featuresList = [
     {

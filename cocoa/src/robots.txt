@@ -1,5 +1,0 @@
- # www.robotstxt.org/
- # Allow crawling of all content
-Sitemap: http://allspacecocoa-staging.syrasoft.com/sitemap.xml
- User-agent: *
- Disallow:
