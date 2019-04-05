@@ -41,12 +41,7 @@ export class ContactComponent implements OnInit {
       account? Use our handy form or call (321) 639-8576`
     });
     this.titleService.setTitle('Contact Us | All Space Self Storage');
-  }
 
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchHours();
-    this.window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -55,6 +50,12 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: ['']
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchHours();
+    window.scrollTo(0, 0);
   }
 
   get f() { return this.contactForm.controls; }
