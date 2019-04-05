@@ -17,25 +17,25 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: '../assets/images/container.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/All_Portable_Easy_Storage/container.svg',
         label: 'Convenient Pick-Up & Delivery',
         alt: 'Icon of a portable storage unit'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/images/cctv.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/All_Portable_Easy_Storage/cctv.svg',
         label: 'Security Cameras on Premises',
         alt: 'Icon of a security camera'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/images/Easy Online Bill Pay.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/All_Portable_Easy_Storage/Easy+Online+Bill+Pay.svg',
         label: 'Online Reservation & Bill Pay',
         alt: 'Icon art displaying a screen with cursor'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/images/fence.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/All_Portable_Easy_Storage/fence.svg',
         label: 'Fully-Fenced Facility',
         alt: 'Icon of a section of fencing'
     },
@@ -62,7 +62,7 @@ export const aboutUs = [
 
 
 export const gettingStarted = `Are you ready to begin de-cluttering your life today? Click below to reserve your
-unit or call <a href="tel:3216356017">(321) 635-6017</a>.`;
+unit or call (321) 635-6017.`;
 
 export const blurb = [
     {
