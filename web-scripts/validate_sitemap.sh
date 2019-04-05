@@ -7,8 +7,7 @@ if [ -z $file_path ];then
 	file_path="$(pwd)"
 fi
 path=$( echo "$file_path" )
-echo $dir
-if [ -e "$dir"/sitemap.xml ]; then
+if [ -e "${path}"/sitemap.xml ]; then
 	continue
 else 
 	echo "The file doesn't exists "
@@ -25,7 +24,7 @@ else
     	echo "URL is not valid"
 	exit 1
 fi	
-if grep -E "$url" "$path"/sitemap.xml
+if grep -E "$url" "${path}"/sitemap.xml
 then
 	echo ' Url Found in The File'
 	exit 1
@@ -34,7 +33,7 @@ else
 	while true; do
     		read -p "Do you want to update the url?" yn
     		case $yn in
-        		[Yy]* ) sed -i "s,https://example.com,$url,g;" "$path"/sitemap.xml; break;;
+        		[Yy]* ) sed -i "s,https://example.com,$url,g;" "${path}"/sitemap.xml; break;;
         		[Nn]* ) exit;;
         		* ) echo "Please answer yes or no.";;
     		esac

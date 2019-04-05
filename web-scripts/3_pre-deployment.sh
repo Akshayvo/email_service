@@ -18,11 +18,14 @@ directory=$( basename "${folder_path}")
 timestamp=`date "+%d-%m-%Y"`
 
 #file name format 
-dest_folder=$(echo "${directory}"_"$timestamp"_dist.zip)
+#dest_folder=$(echo "${directory}"_"$timestamp"_dist.zip)
+dest_folder=$(echo "${directory}"_dist.zip)
+backup_file=$(echo "${directory}"_backup.zip)
 if [ -e "${folder_path}"/dist ];then
 	echo "Folder already exists"
 	# zip the file dist 
 	zip -r "${dest_folder}" dist/
+        zip -r "${backup_file}" dist/
 else
 	echo "Folder doesnot exists"
 	while true; do
@@ -31,6 +34,7 @@ else
         		[Yy]* ) cd "${folder_path}"
 				npm run build:ssr;
 				zip -r "${dest_folder}" dist/;
+				zip -r "${backup_file}" dist/;
 				break;;
         		[Nn]* ) exit;;
         		* ) echo "Please answer yes or no.";;
@@ -48,6 +52,14 @@ cd "${folder_path}"
 #cd /home/sagar/
 echo $(pwd)
 #For key based login, please edit this line
-scp -i Codeparva-dev.pem "${dest_folder}" $user_name@$ip_addr:"${remote_dest}"
+#ssh -i Codeparva-dev.pem $user_name@$ip_addr
+if ssh -i Codeparva-dev.pem ubuntu@13.232.104.125 [ -e "${remote_dest}"/"${backup_file}" ];then
+	ssh -i Codeparva-dev.pem ubuntu@13.232.104.125 rm "${remote_dest}"/"${backup_file}" 
+	ssh -i Codeparva-dev.pem ubuntu@13.232.104.125 mv "${remote_dest}"/"${dest_folder}" "${remote_dest}"/"${backup_file}"
+	scp -i Codeparva-dev.pem "${dest_folder}" $user_name@$ip_addr:"${remote_dest}"
+else
+	scp -i Codeparva-dev.pem "${backup_file}" $user_name@$ip_addr:"${remote_dest}"
+	scp -i Codeparva-dev.pem "${dest_folder}" $user_name@$ip_addr:"${remote_dest}"
+fi
 
 
