@@ -2,7 +2,7 @@
 
 .contact-details {
   background-color: $light;
-  padding-top: 90px;
+  padding-top: 138px;
 }
 
 .social-content {
@@ -175,6 +175,12 @@
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .contact-details {
+    padding-top: 125px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .social-content {
     .col-lg-11 {
@@ -216,7 +222,6 @@
 
 @media only screen and (max-width: 600px) {
   .contact-details {
-    padding-top: 70px;
     background-color: $light;
 
     .row {

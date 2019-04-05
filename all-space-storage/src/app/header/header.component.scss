@@ -8,6 +8,17 @@ a {
   border-bottom: 3px solid $white;
 }
 
+h2 {
+  a {
+    color: white;
+  }
+
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  color: white;
+  line-height: 1.2;
+}
+
 .navbar {
   padding: 0;
 
@@ -184,7 +195,7 @@ a {
       border: 1px solid rgba(0, 0, 0, 0.15);
       background-color: $white;
       padding: 0.5em 0;
-  
+
       li {
         background-color: white;
         
@@ -197,7 +208,7 @@ a {
 
       li:active {
         background-color: $white;
-    
+
         a {
           color: $primary;
           font-weight: 600;
@@ -237,5 +248,12 @@ a {
       height: 200px;
       overflow-y: auto;
     }
+  }
+}
+
+
+@media only screen and (max-width: 370px) {
+  h2 {
+    font-size: 1rem;
   }
 }

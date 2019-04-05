@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .contentHolder {
-  padding-top: 100px;
+  padding-top: 138px;
   margin-bottom: 50px;
   min-height: 90vh;
   max-height: auto;
@@ -13,6 +13,7 @@
 
   h1 {
     font-size: 2rem;
+    margin-bottom: 0;
   }
 
   .contact-data {
@@ -51,10 +52,14 @@
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .contentHolder {
+    padding-top: 125px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .contentHolder {
-    padding-top: 70px;
-
     .container {
       padding-left: 0;
       padding-right: 0;
