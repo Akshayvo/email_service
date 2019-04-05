@@ -22,25 +22,25 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Cocoa/location.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Cocoa_Images/location.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Cocoa/fence.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Cocoa_Images/fence.svg',
         label: 'Fully-Fenced Facility',
         alt: ' Icon of a section of fencing'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Cocoa/cctv.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Cocoa_Images/cctv.svg',
         label: 'Security Cameras on Premises',
         alt: 'Icon of a security camera'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Images/Photos/Cocoa/24-hours.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/AllSpace_Cocoa_Images/24-hours.svg',
         label: '24 Hour Access To Non-Climate Controlled Units',
         alt: ' Icon art displaying clock hands and the number 24'
     },
