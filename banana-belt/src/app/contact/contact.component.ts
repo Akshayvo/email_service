@@ -36,15 +36,11 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
-                and U-Haul truck rental questions! Simply call or drop us a line!`
+      content: `Do you have questions about our services or your account? Call (719) 966-2240 or use our
+      contact form to reach out today!`
     });
-    this.titleService.setTitle('Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414');
-  }
+    this.titleService.setTitle('Contact Us | Banana Belt Storage');
 
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchHours();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -53,6 +49,11 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: ['']
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchHours();
   }
 
   get f() { return this.contactForm.controls; }

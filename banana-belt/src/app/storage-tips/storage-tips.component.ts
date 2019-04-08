@@ -19,10 +19,10 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We know moving can be stressful, let our helpful hints and tips make your experience that much easier.
-      Use this tips to save yourself time and frustration!`
+      content: `We know self storage and want to be sure you have the best experience possible!
+      Use our handy self storage tips `
     });
-    this.titleService.setTitle('Self Storage Tips | Catskill Self Storage, Catskill, NY, 12414');
+    this.titleService.setTitle('Storage Tips | Banana Belt Storage');
   }
 
   ngOnInit() {

@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .jumbotron {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/catskill-hero.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Banana_Belt/indoor-self-storage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -27,7 +27,13 @@ h1 {
   text-align: center;
 
   img {
-    padding: 10px;
+    padding: 8px;
+    height: 100px;
+  }
+
+  h6 {
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
 
@@ -42,7 +48,6 @@ h1 {
 }
 
 .getStarted {
-  color: $secondary;
   text-align: center;
 
   h2 {
@@ -105,8 +110,8 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
-      font-size: 0.8rem;
+    img {
+      height: 90px;
     }
   }
 }
@@ -119,8 +124,8 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
-      font-size: 0.8rem;
+    img {
+      height: 80px;
     }
   }
 
@@ -187,8 +192,8 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
-      font-size: 0.8rem;
+    img {
+      height: 80px;
     }
   }
 
@@ -197,21 +202,17 @@ h1 {
   }
 
   .jumbotron-bottom {
-    height: 150px;
+    height: 120px;
   }
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .jumbotorn-skew-text {
-    width: 35%;
+    width: 425px;
 
     a {
-      min-width: 160px;
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.8rem;
+      min-width: 200px;
+      font-size: 1.2rem;
     }
   }
 }
@@ -220,8 +221,8 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
-      font-size: 0.8rem;
+    img {
+      height: 80px;
     }
   }
 }
@@ -234,8 +235,8 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
-      font-size: 0.8rem;
+    img {
+      height: 80px;
     }
   }
 
@@ -244,7 +245,7 @@ h1 {
   }
 
   .jumbotron-bottom {
-    height: 130px;
+    height: 140px;
   }
 }
 
@@ -302,8 +303,8 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
-      font-size: 0.8rem;
+    img {
+      height: 80px;
     }
   }
 
@@ -322,21 +323,23 @@ h1 {
   }
 
   .jumbotorn-skew-text {
-    width: 40%;
+    width: 386px;
 
     a {
-      min-width: 140px;
-      font-size: 0.8rem;
+      min-width: 180px;
+      font-size: 1.1rem;
     }
 
     .disp {
-      p {
-        font-size: 0.8rem;
-      }
-
       h2 {
         font-size: 2.3rem;
       }
+    }
+  }
+
+  .feature-icon-style {
+    img {
+      height: 80px;
     }
   }
 }
@@ -344,10 +347,6 @@ h1 {
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 830px) and (min-height: 701px) {
   .feature-icon-style {
     padding: 12px 24px;
-
-    h6 {
-      font-size: 0.8rem;
-    }
   }
 }
 
@@ -365,16 +364,7 @@ h1 {
   }
 
   .jumbotorn-skew-text {
-    a {
-      min-width: 140px;
-      font-size: 0.8rem;
-    }
-
     .disp {
-      p {
-        font-size: 0.8rem;
-      }
-
       h2 {
         font-size: 2.3rem;
       }
@@ -384,8 +374,8 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
-      font-size: 0.8rem;
+    img {
+      height: 80px;
     }
   }
 }
@@ -457,7 +447,15 @@ h1 {
   }
 
   .jumbotron-bottom {
-    height: 200px;
+    height: 150px;
+  }
+
+  .feature-icon-style {
+    padding: 12px;
+
+    img {
+      height: 80px;
+    }
   }
 
   .jumbotorn-skew-style {
@@ -466,22 +464,24 @@ h1 {
 
   .jumbotorn-skew-text {
     top: 40%;
-    width: 49%;
+    width: 325px;
 
     a {
       min-width: 140px;
-      font-size: 0.8rem;
+      font-size: 1.1rem;
     }
 
     .disp {
-      p {
-        font-size: 0.8rem;
-      }
-
       h2 {
         font-size: 2.3rem;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 600px) and (min-height: 501px) {
+  .jumbotorn-skew-text {
+    top: 30%;
   }
 }
 

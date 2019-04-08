@@ -29,10 +29,10 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Catskill Self Storage has been proudly serving Catskill, Cairo, Leeds, and surrounding communities with
-      affordable storage units since 2004!`
+      content: `Bueno Vista's newest self storage facility, serving Buena Vista, and the surrounding
+      Chaffee County area with high quality, affordable self storage units`
     });
-    this.titleService.setTitle('Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage');
+    this.titleService.setTitle('Affordable Storage in Buena Vista, CO | Banana Belt Storage');
   }
 
   public navigate(location: any) {

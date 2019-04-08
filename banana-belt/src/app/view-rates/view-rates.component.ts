@@ -18,10 +18,10 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Our units range from closet sized 5'x5' units to 10'x20' multi-bedroom home sized units.
-      We strive to provide the highest level of service at the best prices! `
+      content: `Check out our affordable self storage unit rates and start the reservation process right
+      here! Have a question? Call (719) 966-2240! `
     });
-    this.titleService.setTitle('Affordable Self Storage Near Catskill, NY, 12414 | Catskill Self Storage');
+    this.titleService.setTitle('View Rates | Banana Belt Storage');
   }
 
   ngOnInit() {

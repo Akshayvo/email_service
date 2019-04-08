@@ -2,17 +2,20 @@
 
 <div class="contentHolder">
   <div class="container pb-5 my-3 padding-top">
-    <h1 class="py-5 text-center">Affordable Storage</h1>
+    <h1 class="py-5 text-center">View Rates</h1>
     <div class="row bg-light background-padding">
       <div class="col-md-6 px-4 iframe scroll-wrapper">
-        <div class="iframe-container">    
-          <iframe id="advanced_iframe" name="advanced_iframe" src="https://catskillselfstorage.sim.syrasoft.com/viewRates" width="100%"
+          <div style="height: 600px; display: flex; align-items: center; justify-content: center;">
+              <h2 style="font-size: 3rem;">Coming Soon</h2>
+            </div>
+        <!-- <div class="iframe-container">    
+          <iframe id="advanced_iframe" name="advanced_iframe" src="" width="100%"
             height="700" scrolling="yes" frameborder="0" border="0" allowtransparency="true" onload=";aiResizeIframe(this, 'true','1');"></iframe>
-        </div>
+        </div> -->
       </div>
       <div class="col-md-6 px-4">
         <h3 class="view-rate-heading">Amenities</h3>
-        <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/self-storage-view-rates.jpg" alt="self-storage-view-rates" class="sectionImage" />
+        <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Banana_Belt/indoor-self-storage-resized.jpg" alt="A photograph of open self storage units" class="sectionImage" />
         <p class="view-rate-text text-justify" *ngFor="let viewRates of viewRates">
           {{viewRates.p}}
         </p>

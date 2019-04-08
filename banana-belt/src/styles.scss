@@ -1,15 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
 //Basic color and font styles
-$primary: #4ecca6;
-$primaryDark: rgb(51, 161, 128);
+$primary: #b01919;
+$primaryDark: #770505;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
-$secondary: #212121;
+$secondary: #b0a922;
 
 $dark: #333;
-$light: #efefef;
+$light: #eeecc7;
 $white: #fff;
 
 $border: #707070;
@@ -26,6 +26,10 @@ body {
 
 .justify {
   text-align: justify;
+}
+
+.bg-primary {
+  background-color: $primary !important;
 }
 
 // Different Background colors

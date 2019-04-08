@@ -8,6 +8,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ErrorComponent } from './error/error.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -16,13 +17,14 @@ const routes: Routes = [
   { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'pay-rent', component: PaymentComponent },
+  { path: 'unit-sizer', component: UnitSizerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'review', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
+        externalUrl: ''
     }
   },
   { path: 'error', component: ErrorHandlerComponent },

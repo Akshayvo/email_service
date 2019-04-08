@@ -16,9 +16,10 @@ export class ReserveComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Current description works fine.`
+      content: `Start making extra room at home today! Reserve your storage unit at Banana Belt Storage.
+      Call (719) 966-2240 or use our reservation form!`
     });
-    this.titleService.setTitle('Reserve A Storage Unit Near Catskill, NY | 12414 - Catskill Self Storage');
+    this.titleService.setTitle('Reserve Your Unit | Banana Belt Storage');
   }
 
   ngOnInit() {

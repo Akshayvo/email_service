@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { navLinks } from '../data/nav';
-import { contact, socialLinks } from '../data/contact';
+import { contact } from '../data/contact';
 
 
 @Component({
@@ -21,17 +21,11 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.fetchNavigationLinks();
-    this.fetchSocialLinks();
     this.fetchContactDetails();
   }
 
   public fetchContactDetails() {
     this.contactDetails = contact;
-  }
-
-  public fetchSocialLinks() {
-    this.socialLinks = socialLinks;
-
   }
 
   public fetchNavigationLinks() {

@@ -3,14 +3,30 @@
 p {
   padding: 0;
   margin: 0;
-  color: $dark;
 }
 
 table {
-  border: 2px solid #dee2e6;
+  border: 2px solid $secondary;
+
+  td {
+    border: none;
+  }
 }
 
-.table-head {
-  background: $primary;
-  color: $white;
+
+.dot {
+  color: $primary;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: rgba(232, 209, 154, 0.12);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+ul {
+  padding-inline-start: 20px;
+  margin-bottom: 0;
 }

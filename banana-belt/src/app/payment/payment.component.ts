@@ -18,10 +18,10 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We make it easy for you to pay your rent and check your balance online, 24/7.
-      Simply login with the credentials supplied by our office to gain access!`
+      content: `Check your balance and manage your account with our convenient online tenant portal.
+      Follow the instructions or call (719) 966-2240 to learn how!`
     });
-    this.titleService.setTitle('Pay Your Rent Online | Catskill Self Storage, Catskill, NY, 12414 ');
+    this.titleService.setTitle('Pay Rent Online | Banana Belt Storage');
   }
 
   ngOnInit() {
