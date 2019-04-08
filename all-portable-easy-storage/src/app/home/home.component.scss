@@ -5,6 +5,12 @@
   color: $fontColor;
 }
 
+.aboutUs-iframe {
+  iframe {
+    min-height: 315px;
+  }
+}
+
 .feature-list {
   display: block;
 
