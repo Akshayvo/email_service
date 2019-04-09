@@ -29,7 +29,7 @@ export class ReserveUnitComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 
 }

@@ -55,7 +55,7 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 
   get f() { return this.contactForm.controls; }
