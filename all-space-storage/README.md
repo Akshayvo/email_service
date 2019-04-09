@@ -3,7 +3,7 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace AllSpace-website with your project name(Hyphen Case)
+Replace all-space-storage with your project name(Hyphen Case)
 
 Replace AllSpaceWebsite with your project name(camelCase)
 
