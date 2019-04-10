@@ -6,28 +6,31 @@ a {
 }
 
 h2 {
-  color: white;
   margin-bottom: 0;
 }
 
 .iconColor {
-  color: $secondary;
+  color: $primary;
 }
 
 .contact-header {
   display: inline;
 
   .contact-details {
-    color: $white;
+    color: $primary;
     font-size: 0.82em;
     font-weight: 500;
     width: 100%;
   }
 }
 
+.bg-white {
+  background-color: white;
+}
+
 .social {
   a {
-    color: $white;
+    color: $primary;
     text-decoration: none;
   }
 
@@ -44,7 +47,7 @@ h2 {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
   .nav-link {
-    color: $white;
+    color: black;
     font-weight: 600;
     padding: 15px;
   }
@@ -59,10 +62,10 @@ h2 {
   }
 
   button {
-    border-color: $white;
+    border-color: $primary;
 
     .iconColor {
-      color: $white;
+      color: $primary;
     }
   }
 
@@ -77,7 +80,7 @@ h2 {
 
 .contact-links {
   a {
-    color: white;
+    color: $primary;
   }
 }
 

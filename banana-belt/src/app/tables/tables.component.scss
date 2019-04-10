@@ -6,7 +6,7 @@ p {
 }
 
 table {
-  border: 2px solid $secondary;
+  border: 1px solid #dee2e6;
 
   td {
     border: none;
@@ -19,7 +19,7 @@ table {
 }
 
 .table-striped tbody tr:nth-of-type(even) {
-  background-color: rgba(232, 209, 154, 0.12);
+  background-color: #f8f6f6;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
