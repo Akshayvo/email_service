@@ -37,6 +37,16 @@
   margin-top: 64px;
 }
 
+.feature-list {
+  position: relative;
+  margin: auto;
+
+  li {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .we-provide {
   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/jumbotorn.jpg");
   background-repeat: no-repeat;
@@ -60,15 +70,8 @@
   ul {
     list-style: none;
     padding-inline-start: 0;
-    text-align: start;
-
-    li {
-      margin: 0;
-      padding: 5px 0 5px 15px;
-      text-align: left;
-      display: flex;
-      align-items: baseline;
-    }
+    width: 80%;
+    margin: auto;
   }
 
   li::before {

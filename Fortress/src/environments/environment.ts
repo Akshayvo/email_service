@@ -4,9 +4,10 @@
 
 export const environment = {
   production: false,
-  errorsMails: [ 'sanghmitra.v@codeparva.in' ],
+  errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Fortress'
+  appId: 'Fortress',
+  VERSION: require('../../package.json').version
 };
 /*
  * For easier debugging in development mode, you can import the following file

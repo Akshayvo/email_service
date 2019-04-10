@@ -1,31 +1,50 @@
 @import "../../styles.scss";
 
 .card {
-  background-color: $white;
   border: none;
+  border-radius: 0;
+  text-align: left;
+}
 
-  .card-header {
-    cursor: pointer;
-    background-color: #707070;
-    color: $white;
 
-    h5 {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-  }
+.card-header {
+  padding: 0;
+  background-color: #707070;
+  color: $white;
+  border-radius: 0;
+  font-weight: 600;
 }
 
 .card-body {
-  background: #848484;
-  color: $white;
+  padding: 20px;
+  color: white;
+  background-color: #848484;
+  margin: auto;
+}
 
-  ul {
-    margin-bottom: 0;
-    padding-inline-start: 20px;
+ul {
+  padding-inline-start: 36px;
+  list-style: none;
 
-    li:not(:last-child) {
-      margin-bottom: 5px;
-    }
+  li {
+    color: white;
   }
+
+  li:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
+.card-header-before-collapse {
+  cursor: pointer;
+}
+
+.card-header-before-collapse::after {
+  font-family: (FontAwesome);
+  content: "\f106";
+  float: right;
+}
+
+.collapsed::after {
+  content: "\f107";
 }

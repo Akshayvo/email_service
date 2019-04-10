@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
 
   }
   ngOnInit() {
-    this.x = this.window.matchMedia('(max-width: 600px)');
+    this.x = window.matchMedia('(max-width: 600px)');
     this.flag = false;
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
     const onNavigationEnd = this.router.events.pipe(filter(event => event instanceof NavigationEnd));

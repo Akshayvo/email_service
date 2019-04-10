@@ -53,9 +53,11 @@
                 </div>
               </div>
               <div>
-                <ul class="row mx-0" > 
-                  <li class="col-md-6 col-lg-4 py-2" *ngFor="let featuresList of featuresList">{{featuresList.li}}</li>
-                </ul>
+                <div class="feature-list">
+                  <ul class="row" > 
+                    <li class="col-md-6 col-lg-4 py-2 text-left" *ngFor="let featuresList of featuresList">{{featuresList.li}}</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

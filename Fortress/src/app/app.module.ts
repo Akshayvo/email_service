@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -24,6 +24,7 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorComponent } from './error/error.component';
+import { ErrorHandlerService } from './services/error-handler.service';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,11 @@ import { ErrorComponent } from './error/error.component';
     HttpClientModule,
   ],
   providers: [
+    Title,
+    {
+      provide: ErrorHandler,
+      useClass: ErrorHandlerService
+    },
     Title,
     {
       provide: 'externalUrlRedirectResolver',
