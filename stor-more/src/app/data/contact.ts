@@ -36,7 +36,7 @@ export const accesshours = [
         data: '7 Days a Week 8:00AM-5:00PM'
     },
     {
-        data: '24 Hour access is available. Please speak with'
+        data: '24 Hour access is available. Please call for more information.'
     }
 ]
 
