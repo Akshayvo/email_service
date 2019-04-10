@@ -45,18 +45,15 @@ export const feature = [
 export const aboutUs = [
     {
         p: `We've been serving Brevard County communities with affordable portable self storage units since 2006.
-        Do you need an extra room worth of space during a remodel?  Put one of our well-maintained units on-site
-        and have 24/7 access to your belongings!  Are you preparing for a move and want to avoid driving back and
+        Do you need an extra room worth of space during a remodel? Put one of our well-maintained units on-site
+        and have 24/7 access to your belongings! Are you preparing for a move and want to avoid driving back and
         forth to a self storage facility? We'll deliver a unit right to your yard then pick it up at your request!`,
     },
     {
         p: `Unlike other portable storage options, our no-tip delivery truck ensures your unit remains level during
-        pickup and delivery. Your unit will be stored in a fully-fenced facility covered by security cameras and secured
-        behind a pin-code accessible gate system.`,
-    },
-    {
-        p: `Reserve your unit online in just a few seconds and pay online 24/7 with our convenient tenant portal!
-        Have questions? Call (321) 635-6017 today!`,
+        pickup and delivery. Your unit may also be picked up from your location and stored in a fully-fenced facility
+        covered by security cameras. Reserve your unit online in just a few seconds and pay online 24/7 with our
+        convenient tenant portal! Have questions? Call (321) 635-6017 today!`,
     },
 ];
 
