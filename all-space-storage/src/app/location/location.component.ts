@@ -114,7 +114,7 @@ export class LocationComponent implements OnInit {
    }
 
    public fetchDetailsLocation3() {
-     this.name = 'Lake Katrine';
+     this.name = 'Kingston/Lake Katrine';
      this.id = 3;
      this.contacts = contactsLocation3;
      this.hours = hoursLocation3;

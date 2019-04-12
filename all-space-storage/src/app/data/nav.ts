@@ -43,7 +43,7 @@ export const navLinks = [
               },
               {
                   id: '4',
-                  label: 'Lake Katrine',
+                  label: 'Kingston/Lake Katrine',
                   path: '/location/lake-katrine',
                   name: 'LakeKatrine'
               },

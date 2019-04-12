@@ -111,11 +111,6 @@ h2 {
   display: none;
 }
 
-.display {
-  .dropdown:hover>.dropdown-menu {
-    display: none;
-  }
-}
 // medium screen
 
 @media screen and (max-width: 991px) {

@@ -521,7 +521,7 @@ export const headingLocation1 = `AllSpace Storage - Poughkeepsie/Arlington`;
 
 export const headingLocation2 = `AllSpace Storage - Highland`;
 
-export const headingLocation3 = `AllSpace Storage - Lake Katrine`;
+export const headingLocation3 = `AllSpace Storage - Kingston/Lake Katrine`;
 
 export const headingLocation4 = `AllSpace Storage - Pawling`;
 

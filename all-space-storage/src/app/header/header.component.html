@@ -21,12 +21,14 @@
           </span>
 
           <span *ngIf="nav?.type === 'dropdown'">
-              <div class="dropdown show display hide">  
-                <a class="dropdown-toggle nav-link"  id="dropdownMenuLink" data-toggle="dropdown" [class.nav-link-active]="router.isActive('/location/poughkeepsie/arlington') || router.isActive('/location/poughkeepsie/hyde-park') || router.isActive('/location/highland') || router.isActive('/location/lake-katrine') || router.isActive('/location/pawling')" aria-haspopup="true" aria-expanded="false">{{nav.label}}<div class="custom-border pt-2"></div></a>
-                <ul class="dropdown-menu location-list " aria-labelledby="dropdownMenuLink" >
-                    <li *ngFor="let sub of nav.sublinks text-center"><a class="dropdown-item" [routerLink]="sub?.path" [routerLinkActive]="'location-active'" (click)="onClick(menu)">{{sub.label}}</a></li>
-                </ul>
-              </div>
+            <div class="dropdown show">  
+              <a class="dropdown-toggle nav-link" data-hover="dropdown" id="dropdownMenuLink" data-toggle="dropdown" [class.nav-link-active]="router.isActive('/location/poughkeepsie/arlington') || router.isActive('/location/poughkeepsie/hyde-park') || router.isActive('/location/highland') || router.isActive('/location/lake-katrine') || router.isActive('/location/pawling')" aria-haspopup="true" aria-expanded="false">{{nav.label}}<div class="custom-border pt-2"></div></a>
+              <ul class="dropdown-menu location-list " aria-labelledby="dropdownMenuLink" >
+                  <li *ngFor="let sub of nav.sublinks text-center">
+                    <a class="dropdown-item" [routerLink]="sub?.path" [routerLinkActive]="'location-active'" (click)="onClick(menu)">{{sub.label}}</a>
+                  </li>
+              </ul>
+            </div>
           </span>
         </li>
       </ul>
