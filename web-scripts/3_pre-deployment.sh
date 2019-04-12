@@ -21,6 +21,7 @@ timestamp=`date "+%d-%m-%Y"`
 #dest_folder=$(echo "${directory}"_"$timestamp"_dist.zip)
 dest_folder=$(echo "${directory}"_dist.zip)
 backup_file=$(echo "${directory}"_backup.zip)
+echo "$backup_file"
 if [ -e "${folder_path}"/dist ];then
 	echo "Folder already exists"
 	# zip the file dist 
@@ -34,6 +35,7 @@ else
         		[Yy]* ) cd "${folder_path}"
 				npm run build:ssr;
 				zip -r "${dest_folder}" dist/;
+
 				zip -r "${backup_file}" dist/;
 				break;;
         		[Nn]* ) exit;;
@@ -53,13 +55,22 @@ cd "${folder_path}"
 echo $(pwd)
 #For key based login, please edit this line
 #ssh -i Codeparva-dev.pem $user_name@$ip_addr
-if ssh -i Codeparva-dev.pem ubuntu@13.232.104.125 [ -e "${remote_dest}"/"${backup_file}" ];then
-	ssh -i Codeparva-dev.pem ubuntu@13.232.104.125 rm "${remote_dest}"/"${backup_file}" 
-	ssh -i Codeparva-dev.pem ubuntu@13.232.104.125 mv "${remote_dest}"/"${dest_folder}" "${remote_dest}"/"${backup_file}"
+if ssh -i Codeparva-dev.pem $user_name@$ip_addr [ -e "${remote_dest}"/"${backup_file}" ];then
+	echo "Hi"
+	ssh -i Codeparva-dev.pem $user_name@$ip_addr rm "${remote_dest}"/"${backup_file}" 
+	ssh -i Codeparva-dev.pem $user_name@$ip_addr mv "${remote_dest}"/"${dest_folder}" "${remote_dest}"/"${backup_file}"
 	scp -i Codeparva-dev.pem "${dest_folder}" $user_name@$ip_addr:"${remote_dest}"
+	ssh -i Codeparva-dev.pem $user_name@$ip_addr unzip "${remote_dest}"/"${backup_file}" -d "${remote_dest}"/"${directory}"_backup
+	ssh -i Codeparva-dev.pem $user_name@$ip_addr rm "${remote_dest}"/"${backup_file}"
+	ssh -i Codeparva-dev.pem $user_name@$ip_addr unzip "${remote_dest}"/"${dest_folder}" -d "${remote_dest}"/"${directory}"_dist
+	ssh -i Codeparva-dev.pem $user_name@$ip_addr rm "${remote_dest}"/"${dest_folder}"
 else
 	scp -i Codeparva-dev.pem "${backup_file}" $user_name@$ip_addr:"${remote_dest}"
 	scp -i Codeparva-dev.pem "${dest_folder}" $user_name@$ip_addr:"${remote_dest}"
+	ssh -i Codeparva-dev.pem $user_name@$ip_addr unzip "${remote_dest}"/"${dest_folder}" -d "${remote_dest}"/"${directory}"_dist
+	ssh -i Codeparva-dev.pem $user_name@$ip_addr unzip "${remote_dest}"/"${backup_file}" -d "${remote_dest}"/"${directory}"_backup
+	ssh -i Codeparva-dev.pem $user_name@$ip_addr rm "${remote_dest}"/"${backup_file}"
+	ssh -i Codeparva-dev.pem $user_name@$ip_addr rm "${remote_dest}"/"${dest_folder}"
 fi
 
 
