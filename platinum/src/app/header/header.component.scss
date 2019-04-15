@@ -18,10 +18,17 @@ a {
   }
 }
 
+.navbar-brand {
+  img {
+    height: 80px;
+  }
+}
+
 .nav-link {
   color: $fontColor;
   font-weight: 600;
-  padding: 21px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .nav-link:hover {
@@ -61,5 +68,13 @@ a {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 349px) {
+  .navbar-brand {
+    img {
+      height: 60px;
+    }
   }
 }
