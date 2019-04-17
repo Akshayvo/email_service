@@ -22,9 +22,26 @@ timestamp=`date "+%d-%m-%Y"`
 dest_folder=$(echo "${directory}"_dist.zip)
 backup_file=$(echo "${directory}"_backup.zip)
 echo "$backup_file"
-if [ -e "${folder_path}"/dist ];then
+dist_folder_path=$(echo "${folder_path}"dist/)
+if [ -e "${folder_path}"dist ];then
 	echo "Folder already exists"
 	# zip the file dist 
+	
+		if [ -e "${dist_folder_path}"server.js ];then
+			echo " server.js file exists in the dist folder"
+			#cp "${folder_path}"/server.js "${prev_folder}"/server.js
+	
+		else
+			echo "server.js File doesnot exists in the dist folder"
+			exit 1
+		fi
+		echo "Enter port number:"
+		read port_number
+		if [ $port_number -gt 10000 ]; then
+        		echo "Enter Valid Port Number"
+        		exit 1
+		fi
+		sed -i "s,|| 5000,|| $port_number,g" "${dist_folder_path}"server.js
 	zip -r "${dest_folder}" dist/
         zip -r "${backup_file}" dist/
 else
@@ -34,6 +51,21 @@ else
     		case $yn in
         		[Yy]* ) cd "${folder_path}"
 				npm run build:ssr;
+					if [ -e "${dist_folder_path}"server.js ];then
+						echo " server.js file exists in the dist folder"
+						#cp "${folder_path}"/server.js "${prev_folder}"/server.js
+	
+					else
+						echo "server.js File doesnot exists in the dist folder"
+						exit 1
+					fi
+					echo "Enter port number:"
+					read port_number
+					if [ $port_number -gt 10000 ]; then
+        					echo "Enter Valid Port Number"
+        					exit 1
+					fi
+					sed -i "s,|| 5000,|| $port_number,g" "${dist_folder_path}"server.js
 				zip -r "${dest_folder}" dist/;
 
 				zip -r "${backup_file}" dist/;
@@ -44,6 +76,7 @@ else
 	done
 	         
 fi
+
 echo "Enter user name :"
 read user_name
 echo "Enter destination ip addresss:"
@@ -72,5 +105,3 @@ else
 	ssh -i Codeparva-dev.pem $user_name@$ip_addr rm "${remote_dest}"/"${backup_file}"
 	ssh -i Codeparva-dev.pem $user_name@$ip_addr rm "${remote_dest}"/"${dest_folder}"
 fi
-
-
