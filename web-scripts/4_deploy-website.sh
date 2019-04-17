@@ -1,41 +1,8 @@
 #!/bin/bash
-echo "Enter the Folder path to find the server.js file or Press 'ENTER' to select current working directory as a Path: "
-read  folder_path
-
-
-
-if [ -z "${folder_path}" ];then
-	folder_path="$(pwd)"
-	echo $pwd
-fi
-
-if [ -w "${folder_path}" ];then
-	cd "${folder_path}"	
-fi
-cd ..
-prev_folder="$(pwd)"
-
-
-if [ -e "${folder_path}"server.js ];then
-	echo "file exists in the folder"
-	cp "${folder_path}"/server.js "${prev_folder}"/server.js
-	
-else
-	echo "File doesnot exists"
-	exit 1
-	
-	         
-fi
-echo "${prev_folder}"
-echo "Enter port number:"
-read port_number
-if [ $port_number -gt 10000 ]; then
-        echo "Enter Valid Port Number"
-        exit 1
-fi
-sed -i "s,|| 5000,|| $port_number,g" "${prev_folder}"/server.js
+echo "Enter project name:"
+read proj_name
 echo "Enter app name:"
 read app_name
 
-pm2 start server.js --name=$app_name
+ssh -i Codeparva-dev.pem ubuntu@13.232.104.125 /home/ubuntu/.nvm/versions/node/v8.11.4/bin/pm2 start /home/ubuntu/sagar_test/"${proj_name}"_dist/dist/server.js --name=$app_name
 
