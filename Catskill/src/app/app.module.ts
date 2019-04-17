@@ -1,6 +1,6 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -21,6 +21,7 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { ErrorHandlerService } from './services/error-handler.service';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,11 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
     HttpClientModule,
   ],
   providers: [
+    Title,
+    {
+      provide: ErrorHandler,
+      useClass: ErrorHandlerService
+    },
     Title,
     {
       provide: 'externalUrlRedirectResolver',

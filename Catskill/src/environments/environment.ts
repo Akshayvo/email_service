@@ -4,9 +4,10 @@
 
 export const environment = {
   production: false,
-  errorsMails: [ 'sanghmitra.v@codeparva.in' ],
+  errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Catskill'
+  appId: 'Catskill',
+  VERSION: require('../../package.json').version
 };
 
 /*
