@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '10471 Hwy 78 East  Summerville, SC 29483484',
+        data: '10471 Highway 78 East, Summerville, SC 29483',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {

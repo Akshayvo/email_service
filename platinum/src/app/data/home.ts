@@ -65,7 +65,7 @@ to reserve your unit!`;
 
 export const blurb = [
     {
-        h1: `Brand New, Affordable & Convenient Self Storage Units`,
+        h1: `Opening Soon! Check back for unit rates and availability!`,
         p: `Platinum Storage is Summerville's newest self storage facility! We offer a variety of unit sizes
         and amenities to make your self storage experience a breeze! Whether you're looking for that extra
         bedroom worth of space or are a growing business looking to store inventory and supplies, Platinum
