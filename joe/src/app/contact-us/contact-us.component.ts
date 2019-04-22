@@ -41,13 +41,7 @@ export class ContactUsComponent implements OnInit {
       Need to update your account information? Use the contact information here!`
     });
     this.titleService.setTitle('Contact Us | St. Joe Self Storage');
-  }
 
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchContactUs();
-    this.fetchHours();
-    this.window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -56,6 +50,13 @@ export class ContactUsComponent implements OnInit {
       message: ['', Validators.required],
       subject: [''],
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchContactUs();
+    this.fetchHours();
+    window.scrollTo (0, 0);
   }
 
   get f() { return this.contactForm.controls; }
@@ -104,6 +105,7 @@ export class ContactUsComponent implements OnInit {
            });
          this.submitted = false;
          // MailService(body);
+         this.mailSent = false;
          this.contactForm.reset();
    }
  }
