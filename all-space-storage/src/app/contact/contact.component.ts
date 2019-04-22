@@ -95,7 +95,7 @@ export class ContactComponent implements OnInit {
   }
 
   public fetchContactDetailsLocation2() {
-    this.heading = `AllSpace Storage - Pawling/Hyde Park`;
+    this.heading = `AllSpace Storage - Poughkeepsie/Hyde Park`;
     this.contactDetails = contactsLocation5;
     this.hoursDetails = hoursLocation5;
   }
