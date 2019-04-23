@@ -11,13 +11,15 @@ export const featuresList = [
 
 export const aboutUs = [
     {
-        p: `Banana Belt Storage is Bueno Vista's newest facility. We are proud to serve the Bueno Visa community
-        and surrounding communities with affordable, high-quality self storage services and stellar customer service`,
+        p: `Banana Belt Storage is Buena Vista's newest facility. We are proud to serve the Buena Visa
+        community and surrounding communities with affordable, high-quality self storage services and
+        stellar customer service.`,
     },
     {
-        p: `Our brand new storage units offer a variety of sizes perfect for all of your residential or commercial
-        needs. Whether you're in the process of de-cluttering at home and searching for a little extra room at home
-        or are a local business in need of equipment or inventory storage, Banana Belt Storage has you covered!`,
+        p: `Our brand new storage units offer a variety of sizes perfect for all of your residential or
+        commercial needs. Whether you're in the process of de-cluttering at home and searching for a little
+        extra room at home or are a local business in need of equipment or inventory storage,
+        Banana Belt Storage has you covered!`,
     },
 ];
 
@@ -54,7 +56,7 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Self Storage Units`,
-        blurb: `Banana Belt Storage is Bueno Vista's newest self storage facility.
-        Start de-cluttering your life today with our high-quality, affordable self storage service!`,
+        blurb: `Banana Belt Storage is Buena Vista's newest self storage facility. Start de-cluttering your
+        life today with our high-quality, affordable self storage service!`,
     }
 ];

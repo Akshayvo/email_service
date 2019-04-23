@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address: ',
-        data: '13248 Midland Way, Buena Vista, CO 81211',
+        data: '13237 Mid Land Way, Buena Vista, CO 81211',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
