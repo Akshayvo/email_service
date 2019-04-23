@@ -2,6 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
+import { Router } from '@angular/router';
+import { tabs } from '../data/tab';
 
 @Component({
   selector: 'app-pay-rent',
@@ -10,11 +12,14 @@ import { WINDOW } from '@ng-toolkit/universal';
 })
 export class PayRentComponent implements OnInit {
 
-  contactInfo: any;
+  tabs: any;
+  id: number;
+  currentTab: any;
 
   constructor(
     private titleService: Title,
     @Inject(WINDOW) private window: Window,
+    private router: Router,
     private meta: Meta
   ) {
     this.meta.addTag({
@@ -30,7 +35,10 @@ export class PayRentComponent implements OnInit {
     window.scrollTo(0, 0);
   }
 
+
   public fetchContactDetails() {
-    this.contactInfo = contact;
+    this.tabs = tabs;
   }
+
+
 }

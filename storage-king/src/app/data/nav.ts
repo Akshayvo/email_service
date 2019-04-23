@@ -1,19 +1,15 @@
 export const navLinks = [
     {
         label: 'HOME',
-        path: '/',
+        path: '/home',
     },
-    // {
-    //     label: 'VIEW UNITS',
-    //     path: '/view-units',
-    // },
     {
         label: 'UNIT SIZES',
         path: '/unit-sizes',
     },
     {
         label: 'CONTACT US',
-        path: 'contact-us'
+        path: '/contact-us'
     },
     {
         label: 'STORAGE TIPS',
@@ -21,10 +17,10 @@ export const navLinks = [
     },
     {
         label: 'PAY RENT',
-        path: 'pay-rent'
+        path: '/pay-rent',
     },
     {
         label: 'PENSKE TRUCK RENTALS',
-        path: 'penske-truck-rentals',
+        path: '/penske-truck-rentals',
     },
 ];

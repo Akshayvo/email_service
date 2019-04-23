@@ -27,6 +27,9 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { PenskeTruckRentalsComponent } from './penske-truck-rentals/penske-truck-rentals.component';
 import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { RentSubComponent } from './rent-sub/rent-sub.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,10 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
     ErrorHandlerComponent,
     PenskeTruckRentalsComponent,
     UnitSizesComponent,
-    PayRentComponent
+    PayRentComponent,
+    RentSubComponent,
+    SignUpComponent,
+    TabsComponent
   ],
   imports: [
     CommonModule,

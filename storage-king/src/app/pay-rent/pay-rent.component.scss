@@ -6,28 +6,11 @@
   margin-bottom: 50px;
 
   .rent-sub-holder {
-    padding: 64px;
+    // padding: 64px;
     background-color: $light;
   }
 }
 
-.custom-border {
-  border-left: 1px solid black;
-}
-
-.rent-example {
-  border-left: 1px $border solid;
-  padding-left: 5%;
-
-  p {
-    padding: 0;
-    margin: 0;
-  }
-}
-
-a {
-  color: black;
-}
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .rent-holder {
@@ -42,15 +25,6 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
-  .rent-example {
-    border-left: none;
-    padding-top: 16px;
-  }
-
-  .custom-border {
-    border: none;
-  }
-
   .rent-holder {
     padding-top: 150px;
   }
@@ -60,21 +34,8 @@ a {
   .rent-holder {
     padding-top: 150px;
 
-    .rent-sub-holder {
-      padding: 16px;
-    }
-
     .rent-heading {
       padding-bottom: 30px;
-    }
-
-    iframe {
-      min-height: 400px;
-    }
-
-    .rent-example {
-      border-left: none;
-      padding-bottom: 20px;
     }
   }
 }

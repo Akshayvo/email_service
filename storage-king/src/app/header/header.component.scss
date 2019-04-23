@@ -94,6 +94,11 @@ ul {
   border-bottom: 5px solid $primary;
 }
 
+.activeClass {
+  color: $primary !important;
+  border-bottom: 5px solid $primary;
+}
+
 .display {
   display: block;
 }
