@@ -645,14 +645,14 @@ export const directionLocation3 = [
     },
 ] ;
 
-export const directionLocation4 = [
-    {
-        datas: [
-          { content: `` },
-          { content: `` },
-          { content: `` },
-        ],
-    },
-] ;
+// export const directionLocation4 = [
+//     {
+//         datas: [
+//           { content: `` },
+//           { content: `` },
+//           { content: `` },
+//         ],
+//     },
+// ] ;
 
 

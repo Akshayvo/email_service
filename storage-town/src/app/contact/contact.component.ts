@@ -48,10 +48,7 @@ export class ContactComponent implements OnInit {
       form or the contact information for your StorageTown location on this page!`
     });
     this.titleService.setTitle('Contact Us | StorageTown Rental Spaces');
-  }
 
-  ngOnInit() {
-    window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -60,6 +57,10 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: [''],
   });
+  }
+
+  ngOnInit() {
+    window.scrollTo(0, 0);
   this.receiveMessage();
 }
 

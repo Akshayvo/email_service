@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { directionLocation1, directionLocation2, directionLocation3, directionLocation4,
+import { directionLocation1, directionLocation2, directionLocation3,
+  // directionLocation4,
  } from '../data/location';
 @Component({
   selector: 'app-directions',
@@ -48,7 +49,7 @@ export class DirectionsComponent implements OnInit {
   }
 
   public fetchDetailsLocation4() {
-    this.directionPoints = directionLocation4;
+    // this.directionPoints = directionLocation4;
     this.directionHeading = `Directions`;
     this.id = 4;
   }
