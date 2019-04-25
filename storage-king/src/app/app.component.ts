@@ -16,14 +16,10 @@ export class AppComponent implements OnInit {
   public offsets: number[];
   constructor(
     private router: Router,
-    private route: ActivatedRoute,
     private angulatics: Angulartics2GoogleAnalytics,
   ) {
   }
   ngOnInit() {
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
-    const onNavigationEnd = this.router.events.pipe(filter(event => event instanceof NavigationEnd));
-    this.rent = this.route.snapshot.paramMap.get('rent');
   }
-
 }

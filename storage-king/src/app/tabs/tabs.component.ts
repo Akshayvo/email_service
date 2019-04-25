@@ -20,8 +20,8 @@ export class TabsComponent implements OnInit {
     ngOnInit() {
       this.fetchTabs();
       this.fetchPlace();
-      console.log(this.currentActiveTab);
-      console.log(this.selectedTab);
+      // console.log(this.currentActiveTab);
+      // console.log(this.selectedTab);
       }
 
     public fetchPlace() {

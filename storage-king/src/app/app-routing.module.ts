@@ -16,8 +16,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'unit-sizes', component: UnitSizesComponent },
   { path: 'penske-truck-rentals', component: PenskeTruckRentalsComponent },
   { path: 'storage-tips', component: StorageTipsComponent },

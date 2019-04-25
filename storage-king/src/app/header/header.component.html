@@ -23,7 +23,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white py-0">
   <div class="container">
-    <a class="navbar-brand" (click)="navigate('/home')">
+    <a class="navbar-brand" (click)="navigate('/')">
       <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_King_Images/storage-king-logo.png" alt="Storage King Logo" class="py-2" />
     </a>
     <!-- <h2 class="p-4">Call Now</h2> -->
@@ -36,7 +36,9 @@
       <ul class="navbar-nav ml-auto navbar-nav-scroll">
           <!-- [class.nav-link-active]="router.isActive('/pay-rent/rent-sub') || router.isActive('/pay-rent/sign-up')" -->
         <li class="nav-item px-2" *ngFor="let nav of navLinks" >
-          <a class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLinkActiveOptions]="{exact: false}" [routerLink]="nav?.path" (click)="onClick(menu)">{{nav.label}}</a>
+          <a *ngIf="nav.id != 4" class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="nav?.path" (click)="onClick(menu)">{{nav.label}}</a>
+          <a *ngIf="nav.id == 4" class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLinkActiveOptions]="{exact: false}" [routerLink]="nav?.path" (click)="onClick(menu)">{{nav.label}}</a>
+
         </li>
       </ul>
     </div>
