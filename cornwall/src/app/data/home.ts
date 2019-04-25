@@ -50,18 +50,21 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Cornwall Storage Box is Cornwall's newest storage facility. Our brand new, well-list indoor storage facility
-        is conveniently located and our units are heated to defend your belongings from the elements!`,
+        p: `Cornwall Storage Box is Cornwall's newest storage facility. Our brand new, well-list indoor storage
+        facility is conveniently located right in downtown Cornwall and our units are heated to defend your belongings
+        from the elements! Our facility is just a stone's throw away from Ultra Vista Towers, Adolphus Court Apartments,
+        and Sunset Tower Apartments.`,
     },
     {
-        p: `Whether you're planning a move or just need to make some elbow room at home, our wide selection of unit
-        sizes is guaranteed to have the perfect unit! Our units are the ideal solution for medical, legal, or accounting
-        records that require stable temperatures for storage.`,
+        p: `Whether you're planning a move or just need to make some elbow room at home, if you live or work near
+        downtown Cornwall, our wide selection of unit sizes is guaranteed to have the perfect unit for you! Our heated,
+        indoor units are the ideal solution for medical, legal, or accounting records that require stable temperatures
+        for storage. `,
     },
     {
         p: `At Cornwall Storage Box, we take pride in our customer service, which is why we offer convenient office
         hours, 24 hour access to your units, and an easy online tenant portal. You can reserve a unit, check your
-        balance, or pay your rent online, 24 hours a day! `,
+        balance, or pay your rent online, 24 hours a day!`,
     },
 ];
 

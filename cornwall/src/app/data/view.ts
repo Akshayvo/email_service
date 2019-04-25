@@ -1,7 +1,9 @@
 export const viewRate = [
     {
-        p: `We proudly serve residential and business customers from Cornwall, Lancaster, Martintown,
-        and the surrounding communities with affordable, heated self storage services and excellent customer service.`,
+        p: `We proudly serve residential and business customers from Cornwall, Lancaster, Martintown, and the
+        surrounding communities with affordable, heated self storage services and excellent customer service.
+        Our convenient location in downtown Cornwall makes us an especially great choice for residents living in
+        Ultra Vista Towers, Adolphus Court Apartments, and Sunset Tower Apartments.`,
     },
     {
         p: `Our business customers enjoy the convenience of 24/7 access to their equipment, supplies, and document

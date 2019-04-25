@@ -62,7 +62,7 @@ export class ContactButtonComponent implements OnInit {
    if (this.contactForm.invalid) {
        return;
    } else {
-     this.receiveremail = this.contactInfo[1].data;
+     this.receiveremail = this.contactInfo[2].data;
 
          this.completeMessage = `<strong>Phone: </strong> ${this.contactForm.value.phone}, <br/>
                                 <strong>Message: </strong> ${this.contactForm.value.message}`;

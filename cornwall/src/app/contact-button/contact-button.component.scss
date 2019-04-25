@@ -20,6 +20,7 @@
 
   .iconColor {
     color: $primary;
+    font-size: 0.8rem;
   }
 }
 
@@ -28,7 +29,7 @@
 }
 
 .contact-data {
-  font-size: 13px;
+  font-size: 12px;
   color: $white;
 
   a {
@@ -75,6 +76,11 @@ form {
   button {
     width: 100%;
   }
+}
+
+.address-style {
+  color: white;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 600px) {
