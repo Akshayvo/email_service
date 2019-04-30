@@ -45,7 +45,7 @@ export class UnitSizerComponent implements OnInit {
     this.j = this.i;
     this.i = this.h;
     if ( this.h === 0 ) {
-      this.h = 8;
+      this.h = 5;
     } else {
       this.h = this.h - 1;
     }
@@ -54,7 +54,7 @@ export class UnitSizerComponent implements OnInit {
   public moveRight() {
     this.h = this.i;
     this.i = this.j;
-    if ( this.j === 8 ) {
+    if ( this.j === 5 ) {
       this.j = 0;
     } else {
     this.j = this.j + 1;
@@ -64,9 +64,9 @@ export class UnitSizerComponent implements OnInit {
   public activeUnit(unitId: number) {
     this.i = unitId;
     if ( this.i === 0 ) {
-      this.h = 8;
+      this.h = 5;
       this.j = this.i + 1;
-    } else if ( this.i === 8 ) {
+    } else if ( this.i === 5 ) {
       this.j = 0;
       this.h = this.i - 1;
     } else {

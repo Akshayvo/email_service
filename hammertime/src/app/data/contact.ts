@@ -28,20 +28,17 @@ export const contact = [
 ];
 
 export const hours = [
-    // {
-    //     label: 'Site Access: ',
-    //     data: '7 Days a Week: 6:00AM to 11:00PM'
-    // },
     {
-        label: 'Office Hours: ',
-        data: 'Tues-Friday: 9:00AM to 6:00PM'
+        label: 'Tues-Friday: ',
+        data: '9:00AM to 6:00PM'
     },
     {
-        label: '',
-        data: 'Saturday 9:00AM-3:00PM or by appointment'
+        label: 'Saturday: ',
+        data: '9:00AM-3:00PM or by appointment'
     },
     {
-        data: 'Sunday-Monday CLOSED'
+        label: 'Sunday-Monday: ',
+        data: 'CLOSED'
     },
 ];
 

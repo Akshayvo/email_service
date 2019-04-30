@@ -22,22 +22,22 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/garage.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Hammertime/garage.svg',
         label: 'Boat and Vehicle Storage'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/location.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Hammertime/location.svg',
         label: 'Conveniently Located'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/online.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Hammertime/online.svg',
         label: 'Online Reservation & Bill Pay '
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/24-hours.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Hammertime/24-hours.svg',
         label: '24 Hour Facility Access'
     },
 ];
@@ -45,45 +45,24 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Drayton Harbor Mini Storage proudly serves Blaine, Bellingham and surrounding communities with
-            high quality customer storage, top notch customer service and
-            the amenities you need to make your storage unit experience a breeze.`,
+        p: `Hammertime Self Storage is Belvidere's newest self storage facility. We cater to both residential and
+            business users in need of short and long term rental space. It doesn't matter if you're a homeowner
+            preparing for a move, or a business with more inventory and equipment than you have room for,
+            Hammertime Self Storage has the perfect unit for you!.`,
     },
     {
-        p: `After finding a unit that suits your needs with our Size Guide, reserve your unit quickly and
-            easily through our website 24 hours a day, 7 days a week!
-            When you arrive for your move in take a moment to pick up boxes and
-            packing supplies from our fully stocked store!
-            Use our online bill pay service to pay your rent or set up auto-pay on your schedule.`,
+        p: `We also offer parking for recreational vehicles, trailers, and boats! Our on-site staff are
+            available with fork trucks, and we offer a boat valet service to make stowing your vehicle a breeze!`,
     },
     {
-        p: `Drayton Harbor Mini Storage offers standard self storage units for residents in the process of
-            downsizing or searching for a little extra room during a move. Searching for RV, boat, or
-            vehicle storage? We've got that, too! Don't use up your valuable yard space storing out of season vehicles,
-            use our well lit, security camera monitored dedicated parking spaces!`,
+        p: `Our facility is conveniently located to service Boone, and Winnebago counties. We offer paved parking,
+            ground-level units, and is well-lit. We also utilize security cameras and our on-site staff perform regular
+            lot checks for your safety and the security of your belongings.`,
     },
 ];
 
 
-export const serviceOffered = [
-    {
-        p: `We are the only self storage provider in Drayton Harbor to offer climate controlled units,
-            secure access to your units 24 hours a day,
-            and a fully lit facility for safe and easy access.`,
-    },
-    {
-        p: `We offer a wide selection of easy to access, clean,
-            well maintained units secured by fences and pin-coded activated gates all
-            at extremely competitive prices!
-            Reserve your unit and pay your rent with our convenient online tenant portal!`,
-    },
-    {
-        p: `Are you in need of a truck during your big move?
-            We've got you covered with an ample supply of U-Haul trucks in
-            a variety of sizes,a perfect solution for your next big move!`,
-    },
 
-];
 
 
 export const gettingStarted = `Are you ready to start de-cluttering your life with our convenient, affordable

@@ -53,7 +53,7 @@
            <h2 class="heading pb-4">Location Information</h2>
             <div>
               <div class="font-xs-device" *ngFor="let contact of contactDetails">
-                <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </div>
               <div class="pt-3 font-xs-device">
@@ -78,10 +78,9 @@
   <div class="container py-5">
     <div class="row">
       <div class="col-lg-6 py-3">
-        <img src="../../assets/hammer-time-self-storage-paved-parking-and-units.jpg" width="100%" alt="A photograph of outdoor self storage units with all the doors closed" class="sectionImage">
+        <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Hammertime/hammer-time-self-storage-paved-parking-and-units.jpg" width="100%" alt="A photograph of outdoor self storage units with all the doors closed" class="sectionImage">
       </div>
       <div class="col-lg-6 py-3">
-        <h2 class="heading pb-4">About Us</h2>
         <h1>Affordable Self Storage Units & Vehicle Parking in Belvidere</h1> <br>
         <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
       </div>
@@ -98,7 +97,7 @@
            <div class="col-md-12">
              <h2 class="heading pb-4">Getting Started</h2>
              <p class="pb-4">{{gettingStarted}}</p>
-             <a class="btn btn-lg btn-primary" (click)="navigate('/reserve')" role="button">Reserve Your Unit!</a>
+             <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Your Unit!</a>
            </div>
          </div>
        </div>

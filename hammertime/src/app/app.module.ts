@@ -2,7 +2,7 @@ import { NgtUniversalModule } from '@ng-toolkit/universal';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -25,6 +25,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { ReserveComponent } from './reserve/reserve.component';
+import { ErrorHandlerService } from './services/error-handler.service';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,11 @@ import { ReserveComponent } from './reserve/reserve.component';
     HttpClientModule,
   ],
   providers: [
+    Title,
+    {
+      provide: ErrorHandler,
+      useClass: ErrorHandlerService
+    },
     Title,
     {
       provide: 'externalUrlRedirectResolver',

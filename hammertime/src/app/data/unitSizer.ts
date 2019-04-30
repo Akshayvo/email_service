@@ -4,7 +4,7 @@ export const unitSizer = [
     size: '10\' x 20\'',
     heading: '10\' x 20\' Storage Unit',
     alt: '10\' x 20\' Storage Unit Graphic ',
-    unitImg: '../../assets/10x20.png',
+    unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
     data: `This unit is approximately 200 sq feet of space that can hold the contents of about five rooms.`,
     amenities: [
       { content: 'Appliances', },
@@ -19,7 +19,7 @@ export const unitSizer = [
     size: '10\' x 25\'',
     heading: '10\' x 25\' Storage Unit',
     alt: '10\' x 25\' Storage Unit Graphic ',
-    unitImg: '../../assets/10x25.png',
+    unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
     data: `This unit is approximately 250 sq feet of space that can hold the contents of a small house.`,
     amenities: [
       { content: 'Appliances', },
@@ -34,7 +34,7 @@ export const unitSizer = [
     size: '12\' x 10\'',
     heading: '12\' x 10\' Storage Unit',
     alt: '12\' x 10\' Storage Unit Graphic',
-    unitImg: '../../assets/12x10.png',
+    unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
     data: `This unit is approximately 100 sq feet of space that can hold the contents of two rooms, such as:`,
     amenities: [
       { content: 'Chairs', },
@@ -52,7 +52,7 @@ export const unitSizer = [
     size: '12\' x 15\'',
     heading: '12\' x 15\' Storage Unit',
     alt: '12\' x 15\' Storage Unit Graphic ',
-    unitImg: '../../assets/10x15.png',
+    unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
     data: `This unit is approximately 180 sq feet of space that can hold the contents of three to four rooms.`,
     amenities: [
       { content: 'Chairs', },
@@ -68,7 +68,7 @@ export const unitSizer = [
     size: '12\' x 25\'',
     heading: '12\' x 25\' Storage Unit',
     alt: '12\' x 25\' Storage Unit Graphic ',
-    unitImg: '../../assets/10x25.png',
+    unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
     data: `This unit is approximately 300 sq feet of space that can hold the contents of a small house.`,
     amenities: [
       { content: 'Appliances', },
@@ -84,7 +84,7 @@ export const unitSizer = [
     size: '12\' x 30\'',
     heading: '12\' x 30\' Storage Unit',
     alt: '12\' x 30\' Storage Unit Graphic ',
-    unitImg: '../../assets/10x30.png',
+    unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/12x30.png',
     data: `This unit is approximately 360sq feet of space that can store the contents of a multi-bedroom home,
            including.`,
     amenities: [
