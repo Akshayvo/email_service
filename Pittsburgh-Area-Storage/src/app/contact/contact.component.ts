@@ -47,10 +47,7 @@ export class ContactComponent implements OnInit {
                 three locations or a question about you account? Contact us here!`
     });
     this.titleService.setTitle('Contact Us | Pittsburgh Area Storage Centers');
-  }
 
-  ngOnInit() {
-    window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -58,6 +55,10 @@ export class ContactComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
   });
+  }
+
+  ngOnInit() {
+    window.scrollTo(0, 0);
   this.receiveMessage();
 }
 
