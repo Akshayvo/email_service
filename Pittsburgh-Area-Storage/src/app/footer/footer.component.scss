@@ -16,4 +16,25 @@
   .copyright-image {
     text-align: right;
   }
+
+  p {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.3;
+  }
+}
+
+.pittusburgh-image {
+  img {
+    height: 48px;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  .pittusburgh-image {
+    img {
+      height: 38px;
+    }
+  }
 }

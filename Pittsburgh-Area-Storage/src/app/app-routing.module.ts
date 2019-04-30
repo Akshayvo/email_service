@@ -83,11 +83,11 @@ const routes: Routes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'payment', component: PaymentComponent },
-  { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'contact', component: ContactComponent },
   { path: 'pay-rent', component: PayRentComponent },
   { path: 'pay-rent-shaler', component: PayRentShalerComponent },
   { path: 'pay-rent-natrona', component: PayRentNatronaComponent },
+  { path: 'storage-tips', component: StorageTipsComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '**', component: ErrorComponent },
 ];
 

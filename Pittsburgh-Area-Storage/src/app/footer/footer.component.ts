@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -6,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  logo: any;
+  locationId: number;
+
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit() {
+    this.router.events.subscribe(path => {
+      this.isSomePage();
+    });
   }
 
+  public isSomePage() {
+    if (this.router.url.includes('/location/shaler-self')) {
+      this.locationId = 1;
+    } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+      this.locationId = 1;
+    } else {
+      this.locationId = 0;
+    }
+  }
 }
+
