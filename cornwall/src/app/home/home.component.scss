@@ -167,7 +167,7 @@
   100% { bottom: 100px; }
 }
 
-@media only screen and (min-width: 992px) and (max-height: 600px) and (min-height: 481px) {
+@media only screen and (min-width: 992px) and (max-height: 710px) and (min-height: 481px) {
   .jumbotron {
     .arrow {
       display: none;
@@ -215,7 +215,7 @@
       }
 
       h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
     }
   }
@@ -241,7 +241,7 @@
   
 }
 
-@media screen and (max-width: 991px) and (min-width: 768px) and (max-height: 640px) and (min-height: 451px) {
+@media screen and (max-width: 991px) and (min-width: 768px) and (max-height: 710px) and (min-height: 451px) {
   .jumbotron {
     background-attachment: unset;
     background-position: center top;
@@ -254,10 +254,11 @@
   .disp {
     p {
       font-size: 1rem;
+      padding-bottom: 0;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
     }
   }
 
@@ -304,7 +305,27 @@
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .jumbotron {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .disp {
+    padding: 0;
+
+    h1 {
+      font-size: 2.5rem;
     }
   }
 }
@@ -339,10 +360,6 @@
     p {
       font-size: 1rem;
     }
-
-    h1 {
-      font-size: 3rem;
-    }
   }
 }
 
@@ -371,35 +388,11 @@
     p {
       display: none;
     }
-
-    h1 {
-      font-size: 3rem;
-    }
   }
 
   .we-provide {
     background-attachment: unset;
     background-position: center top;
-  }
-}
-
-@media only screen and (max-width: 767px) and (min-width: 601px) {
-  .jumbotron {
-    background-attachment: unset;
-    background-position: center top;
-  }
-
-  .we-provide {
-    background-attachment: unset;
-    background-position: center top;
-  }
-
-  .disp {
-    padding: 0;
-
-    h1 {
-      font-size: 3rem;
-    }
   }
 }
 

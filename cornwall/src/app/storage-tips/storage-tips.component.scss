@@ -70,7 +70,7 @@
 }
 
 .accordion-background {
-  min-height: 400px;
+  min-height: 662px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -104,6 +104,10 @@
   // .content-margin-top {
   //   margin-top: 36px;
   // }
+
+  .accordion-background {
+    min-height: 1030px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -127,6 +131,10 @@
       font-size: 2rem;
       width: auto;
     }
+  }
+
+  .accordion-background {
+    min-height: 1030px;
   }
 }
 
@@ -193,6 +201,10 @@
       top: 10%;
       position: relative;
     }
+  }
+
+  .accordion-background {
+    min-height: 746px;
   }
 }
 
