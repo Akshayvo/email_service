@@ -24,6 +24,7 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerService } from './services/error-handler.service';
+import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { ErrorHandlerService } from './services/error-handler.service';
     AccordionComponent,
     PayRentComponent,
     ErrorHandlerComponent,
+    UnitSizerComponent,
   ],
   imports: [
     CommonModule,

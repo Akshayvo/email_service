@@ -17,9 +17,9 @@ export const viewRates = [
 
 export const unitSizers = [
   {
-    heading: `Selecting the Right Storage Unit For You`,
-    blurb: `Sometimes visualizing how much space your belongings take up isn't enough to select the
-		right self storage unit. Use our handy unit sizer to help you determine the right unit for your needs!`,
+    heading: `Unit Sizer`,
+    blurb: `Having trouble figuring out what sized unit you need? Use our handy unit sizer chart to
+    help determine the best unit size for your purposes!`,
   },
 ];
 
