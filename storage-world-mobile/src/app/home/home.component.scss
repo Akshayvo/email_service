@@ -1,5 +1,11 @@
 @import "../../styles.scss";
 
+.img-display {
+  justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
 .jumbotron {
   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_World_Mobile/storage-world-aerial.jpg");
   background-repeat: no-repeat;
@@ -104,7 +110,7 @@
 }
 
 .disp {
-  padding: 0% 15%;
+  // padding: 0% 15%;
   color: $white;
 
   a {
@@ -141,7 +147,7 @@
 }
 
 .text-align {
-  text-align: center;
+  text-align: left;
 }
 
 .arrow {
@@ -151,6 +157,7 @@
   animation-iteration-count: infinite;
   animation-name: example;
   cursor: pointer;
+  text-align: center;
 }
 
 .about-us {

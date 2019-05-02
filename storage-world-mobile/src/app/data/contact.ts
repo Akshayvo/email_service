@@ -2,14 +2,15 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address: ',
-        data: '16800 hwy 65 ne Ham Lake MN 55304 Ste A',
+        data: '16800 MN-65 Suite A, Ham Lake, MN 55304',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 1,
         redirect: 'mailto:steve@storageworldmn.com',
         label: 'Email',
-        data: 'steve@storageworldmn.com',
+        // data: 'steve@storageworldmn.com',
+        data: 'sanghmitra.v@codeparva.in',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {

@@ -4,6 +4,15 @@ a {
   cursor: pointer;
 }
 
+.header-style {
+  background-color: #000;
+  color: white;
+  font-size: 0.87rem;
+  a {
+    color: $primary;
+    font-weight: 800;
+  }
+}
 .iconColor {
   color: $primary;
 }
@@ -32,7 +41,7 @@ a {
 
   .nav-link-active {
     color: $primary;
-    border-bottom: 1px solid $primary;
+    border-bottom: 2px solid $primary;
   }
 
   button {
@@ -43,10 +52,6 @@ a {
   button:focus {
     outline: 5px auto $primary;
   }
-}
-
-.navbar-brand {
-  padding-top: 20px;
 }
 
 .bg-gradient {
