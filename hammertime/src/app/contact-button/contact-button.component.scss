@@ -63,6 +63,14 @@
     font-size: 0.8rem;
   }
 }
+@media screen and (max-width: 991px) and (max-height: 768px) {
+  .contact-button-data{
+    overflow: auto;
+    overflow-y: scroll;
+    height: 70vh;
+    width: 340px;
+  }
+}
 
 @media screen and (max-width: 600px) and (max-height: 480px) {
   .contact-button-data {
