@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import "../../styles.scss";
 
+
 a {
   cursor: pointer;
   color: white;
@@ -31,6 +32,7 @@ ul {
     font-size: 1em;
     font-weight: 600;
     width: 100%;
+    clear: none;
   }
 }
 
@@ -124,12 +126,6 @@ ul {
 }
 
 @media screen and (max-width: 991px) {
-  .contact-header {
-    .contact-details {
-      font-size: 0.8rem;
-    }
-  }
-
   .nav-link {
     text-align: center;
     padding: 22px;
@@ -155,12 +151,6 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
-  .contact-header {
-    .contact-details {
-      font-size: 0.6rem;
-    }
-  }
-
   .display-fb-icon {
     padding-left: 5px;
     padding-right: 5px;
@@ -171,8 +161,13 @@ ul {
   }
 
   .social {
-    font-size: 0.7rem;
+    // font-size: 0.7rem;
     padding: 4px;
+  }
+
+  .col-1 {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -180,5 +175,13 @@ ul {
   .navbar-nav-scroll {
     height: 150px;
     overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 348px) {
+  .contact-header {
+    .contact-details {
+      font-size: 0.8em;
+    }
   }
 }

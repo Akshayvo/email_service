@@ -3,7 +3,7 @@ export const contact = [
         id: 1,
         label: 'Address:',
         data: '6 Kingsway Avenue, Exeter, NH 03833',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         id: 3,
@@ -11,7 +11,7 @@ export const contact = [
         data: '(603) 772-4500',
         redirect: 'tel:6037724500',
         time: ' - Business Hours',
-        class: 'fas fa-phone mx-2 iconColor',
+        class: 'fas fa-phone mr-2 iconColor',
     },
     {
         id: 4,
@@ -19,14 +19,14 @@ export const contact = [
         data: '(603) 396-2706',
         redirect: 'tel:6033962706',
         time: ' - Outside Normal Business Hours',
-        class: 'fas fa-phone mx-2 iconColor',
+        class: 'fas fa-phone mr-2 iconColor',
     },
     {
         id: 2,
         label: 'Email:',
         data: 'storageking1@comcast.net',
         redirect: 'mailto:storageking1@comcast.net',
-        class: 'fas fa-envelope mx-2 iconColor',
+        class: 'fas fa-envelope mr-2 iconColor',
     },
 ];
 

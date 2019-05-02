@@ -268,13 +268,6 @@
   }
 }
 
-
-@media only screen and (max-width: 356px) {
-  .unit-sizer-holder {
-    padding-top: 173px;
-  }
-}
-
 @media only screen and (max-width: 415px) {
   .disp-mob {
     font-size: 0.7rem;
@@ -282,5 +275,12 @@
     .active-unit {
       font-size: 1rem;
     }
+  }
+}
+
+
+@media only screen and (max-width: 513px) {
+  .unit-sizer-holder {
+    padding-top: 173px;
   }
 }
