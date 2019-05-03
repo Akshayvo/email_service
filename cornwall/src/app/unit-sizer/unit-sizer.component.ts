@@ -22,9 +22,10 @@ export class UnitSizerComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: ``
+      content: `If you're not sure what size unit you need, use our handy unit sizing chart to
+      visualize what will fit into each of our available sizes!`
     });
-    this.titleService.setTitle('');
+    this.titleService.setTitle('Unit Sizer | Cornwall Storage Box');
   }
 
   ngOnInit() {
