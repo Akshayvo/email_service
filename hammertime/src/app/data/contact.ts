@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address:',
-        data: '2519 US-20 BUS Belvidere, IL 61008',
+        data: '2519 US-20 BUS, Belvidere, IL 61008',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
