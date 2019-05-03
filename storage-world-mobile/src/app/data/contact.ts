@@ -9,8 +9,7 @@ export const contact = [
         id: 1,
         redirect: 'mailto:steve@storageworldmn.com',
         label: 'Email',
-        // data: 'steve@storageworldmn.com',
-        data: 'sanghmitra.v@codeparva.in',
+        data: 'steve@storageworldmn.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {

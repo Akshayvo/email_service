@@ -11,3 +11,13 @@ export const viewRate = [
     },
 ];
 
+export const rate = [
+    {
+        td1: 'SIZE',
+        td2: 'RATE ',
+    },
+    {
+        td1: '8\' X 16\' Portable Storage Unit',
+        td2: ' $150 a Month',
+    }
+];

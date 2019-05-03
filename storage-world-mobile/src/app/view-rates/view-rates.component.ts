@@ -7,6 +7,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
 import { contactUs } from '../data/blurb';
+import { rate } from '../data/view';
 
 @Component({
   selector: 'app-view-rates',
@@ -18,6 +19,7 @@ export class ViewRatesComponent implements OnInit {
   viewRate: any;
   slideShow: any;
   viewRates: any;
+  rate: any;
   currentActive: any = 'VIEW RATES';
 
   contactDetails: any;
@@ -63,6 +65,7 @@ export class ViewRatesComponent implements OnInit {
     this.fetchContactDetails();
     this.fetchViewRate();
     this.fetchViewRates();
+    this.fetchFeatures();
     window.scrollTo(0, 0);
   }
 
@@ -79,6 +82,10 @@ export class ViewRatesComponent implements OnInit {
 
   public fetchContactDetails() {
     this.contactDetails = contact;
+  }
+
+  public fetchFeatures() {
+    this.rate = rate;
   }
 
   onSubmit() {
