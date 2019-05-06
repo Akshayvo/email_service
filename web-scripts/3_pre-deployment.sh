@@ -13,7 +13,7 @@ fi
 if [ -w "${folder_path}" ];then
 	cd "${folder_path}"	
 fi
-
+sc
 directory=$( basename "${folder_path}")
 timestamp=`date "+%d-%m-%Y"`
 
@@ -105,3 +105,7 @@ else
 	ssh -i Codeparva-dev.pem $user_name@$ip_addr rm "${remote_dest}"/"${backup_file}"
 	ssh -i Codeparva-dev.pem $user_name@$ip_addr rm "${remote_dest}"/"${dest_folder}"
 fi
+echo $(pwd)
+cd ..
+echo $(pwd)
+scp -i Codeparva-dev.pem 5_redirect-domain.sh $user_name@$ip_addr:"${remote_dest}" 

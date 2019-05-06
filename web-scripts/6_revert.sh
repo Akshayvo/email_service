@@ -1,9 +1,9 @@
-#echo "Enter user name :"
-#read user_name
-#echo "Enter destination ip addresss:"
-#read ip_addr
-#echo "Enter the path to the destination folder"
-#read remote_dest
+echo "Enter user name :"
+read user_name
+echo "Enter destination ip addresss:"
+read ip_addr
+echo "Enter the path to the destination folder"
+read remote_dest
 echo "Enter the folder name"
 read file_name
 #cd /home/sagar/
