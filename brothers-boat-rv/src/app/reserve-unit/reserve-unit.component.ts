@@ -1,23 +1,19 @@
+import { Component, OnInit, Inject } from '@angular/core';
 import { WINDOW } from '@ng-toolkit/universal';
-import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { dataViewRates } from '../data/view-rates';
 
 @Component({
-  selector: 'app-view-rates',
-  templateUrl: './view-rates.component.html',
-  styleUrls: ['./view-rates.component.scss']
+  selector: 'app-reserve-unit',
+  templateUrl: './reserve-unit.component.html',
+  styleUrls: ['./reserve-unit.component.scss']
 })
-export class ViewRatesComponent implements OnInit {
-
-  currentActive: any = 'VIEW RATES';
-  dataViewRates: any;
+export class ReserveUnitComponent implements OnInit {
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta
-  ) {
+  ) { 
     this.meta.addTag({
       name: 'description',
       content: `Our rates are surprisingly affordable for all of the amenities we offer!
@@ -28,10 +24,6 @@ export class ViewRatesComponent implements OnInit {
 
   ngOnInit() {
     window.scrollTo(0, 0);
-    this.viewRates();
   }
 
-  public viewRates() {
-    this.dataViewRates = dataViewRates;
-  }
 }

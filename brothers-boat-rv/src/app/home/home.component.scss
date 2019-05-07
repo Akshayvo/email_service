@@ -8,6 +8,10 @@
 .disp {
   display: block;
 
+  h2 {
+    font-size: 2.6rem;
+  }
+
   img {
     padding: 10px;
   }
@@ -21,7 +25,7 @@
 
 // Get started Section
 .getStarted {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Drayton_Images/jumbotorn.jpg") center top no-repeat fixed;
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Brothers_Boat/brothers-boat-and-rv-self-storage-recreational-vehicles.jpg") center top no-repeat fixed;
   background-size: cover;
 
   .get-started {
@@ -44,7 +48,7 @@
   height: 80vh;
 
   .jumbotron {
-    background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Drayton_Images/self-storage-hero.jpg");
+    background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Brothers_Boat/brothers-boat-and-rv-self-storage-recreational-vehicles.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -85,7 +89,7 @@
     .jumbotron-skew-text {
       width: 24%;
       position: absolute;
-      top: 30%;
+      top: 35%;
       color: $fontColor;
     }
   }
@@ -130,19 +134,16 @@
         height: 100vh;
       }
 
-      .jumbotron-skew-text {
-        top: 25%;
-      }
     }
   }
 
   .disp {
-    p {
-      font-size: 0.8rem;
+    h2 {
+      font-size: 2.2rem;
     }
 
-    h1 {
-      font-size: 1.8rem;
+    p {
+      font-size: 0.9rem;
     }
   }
 }
@@ -205,7 +206,7 @@
       }
 
       .jumbotron-skew-text {
-        width: 35%;
+        width: 416px;
         position: absolute;
         bottom: 0;
       }
@@ -267,11 +268,11 @@
 
   .disp {
     p {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
 
-    h1 {
-      font-size: 1.8rem;
+    h2 {
+      font-size: 2.2rem;
     }
   }
 }
@@ -324,7 +325,7 @@
       }
 
       .jumbotron-skew-text {
-        width: 40%;
+        width: 400px;
         position: absolute;
         bottom: 0;
       }
@@ -341,19 +342,20 @@
       }
     }
   }
-}
 
-@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 830px) and (min-height: 641px) {
   .disp {
     p {
-      font-size: 0.8rem;
+      font-size: 1rem;
+      margin-bottom: 0;
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
   }
+}
 
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 830px) and (min-height: 641px) {
   .jumbotron-bottom {
     display: flex;
     align-items: center;
@@ -381,20 +383,10 @@
 
     .jumbotron {
       height: 100vh;
-    }
 
-    .jumbotron-skew-text {
-      top: 25%;
-    }
-  }
-
-  .disp {
-    p {
-      font-size: 0.8rem;
-    }
-
-    h1 {
-      font-size: 1.8rem;
+      .jumbotron-skew-text {
+        top:30%;
+      }
     }
   }
 }
@@ -452,17 +444,7 @@
       }
 
       .jumbotron-skew-text {
-        width: 44%;
-      }
-    }
-
-    .disp {
-      p {
-        font-size: 0.8rem;
-      }
-
-      h2 {
-        font-size: 2rem;
+        width: 300px;
       }
     }
 
@@ -470,6 +452,16 @@
       display: flex;
       align-items: center;
       height: 180px;
+    }
+  }
+
+  .disp {
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
     }
   }
 
@@ -484,7 +476,7 @@
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
-        top: 20%;
+        top: 25%;
       }
     }
   }

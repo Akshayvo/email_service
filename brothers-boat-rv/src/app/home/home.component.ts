@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
-import { featuresList, featuresHead, aboutUs, serviceOffered, gettingStarted, feature, blurb} from '../data/home';
+import { featuresList, featuresHead, aboutUs, gettingStarted, feature, blurb} from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -33,12 +33,10 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Drayton Harbor Mini Storage provides high quality, affordable self storage,
-                RV, boat and vehicle storage to Blaine, Birch Bay, Ferndale and surrounding
-                communities. Our friendly and knowledgeable staff are ready and
-                able to answer any and all storage unit questions you have!`
+      content: `Our brand new location offers conveniently located, safe storage for boats, recreational vehicles,
+      classic cars, and regular self storage!`
     });
-    this.titleService.setTitle('Affordable Self Storage Units Near Blaine, WA, 98230 | Drayton Harbor Mini Storage');
+    this.titleService.setTitle('Storage Units in Placida | Brothers Boat RV & Self Storage');
   }
 
   public navigate(location: any) {
@@ -51,7 +49,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 
   public fetchContactDetails() {
@@ -70,7 +68,6 @@ export class HomeComponent implements OnInit {
 
   public fetchStaticContent() {
     this.aboutUs = aboutUs;
-    this.serviceOffered = serviceOffered;
     this.gettingStarted = gettingStarted;
   }
   public fetchFeature () {

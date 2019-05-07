@@ -37,16 +37,11 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Have a question or concern about our self storage, RV, boat or vehicle services?
-                Use our convenient contact form or contact information to reach out today!`
+      content: `Have a questions about the parking and storage services offered by Brothers Boat
+      RV & Self Storage? Call (239) 339-7440 or use our contact form.`
     });
-    this.titleService.setTitle('Affordable Self Storage Units Near Blaine, WA, 98230 | Drayton Harbor Mini Storage');
-  }
+    this.titleService.setTitle('Contact Us');
 
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchHours();
-    this.window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -55,6 +50,12 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: ['']
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchHours();
+    window.scrollTo(0, 0);
   }
 
   get f() { return this.contactForm.controls; }
@@ -78,7 +79,7 @@ export class ContactComponent implements OnInit {
         this.contactForm.value.subject = 'Website Form Submission';
       }
 
-      this.receiveremail = this.contactInfo[1].data;
+      this.receiveremail = this.contactInfo[2].data;
 
           this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
                                  message: ${this.contactForm.value.message}`;

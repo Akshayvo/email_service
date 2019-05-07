@@ -22,16 +22,15 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We're here to make your storage experience an easy and
-                straightforward one so here are some tips on how to get the most out of your self storage.`
+      content: `We know self storage. Use these handy tips to help make your stay with us a convenient one!`
     });
-    this.titleService.setTitle('Storage Tips | Drayton Harbor Mini Storage');
+    this.titleService.setTitle('Storage Tips | Brothers Boat RV & Self Storage');
   }
 
   ngOnInit() {
     this.fetchstoragePoints();
     this.fetchstorageTips();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
   }
 

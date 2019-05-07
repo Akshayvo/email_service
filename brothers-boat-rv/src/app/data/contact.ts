@@ -1,41 +1,43 @@
 export const contact = [
     {
         id: 0,
-        label: 'Address:',
-        data: '8870 Blaine Rd, Blaine, WA 98230',
+        label: 'Facility Address: ',
+        data: '5341 Woodfield Rd, Placida, FL 33946',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         id: 1,
-        redirect: 'mailto:sales@draytonharborministorage.com',
-        label: 'Email:',
-        data: 'sales@draytonharborministorage.com',
-        class: 'fas fa-envelope mr-2 iconColor',
+        label: 'Office Address: ',
+        data: 'P.O. Box #570, Estero, FL 33928',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         id: 2,
-        redirect: 'tel:3603321047',
+        redirect: 'mailto:Jmmarcoaldi@gmail.com',
+        label: 'Email:',
+        data: 'Jmmarcoaldi@gmail.com',
+        class: 'fas fa-envelope mr-2 iconColor',
+    },
+    {
+        id: 3,
+        redirect: 'tel:2393397440',
         label: 'Phone:',
-        data: '(360)332-1047',
+        data: '(239) 339-7440',
         class: 'fas fa-phone mr-2 iconColor',
     }
 ];
 
 export const hours = [
     {
-        label: 'Site Access: ',
-        data: '7 Days a Week: 6:00AM to 11:00PM'
+        label: 'Monday-Friday: ',
+        data: '9:00AM to 5:00PM'
     },
     {
-        label: 'Office Hours: ',
-        data: 'Tues-Sat: 12:00PM to 5:00PM'
+        label: 'Saturday-Sunday: ',
+        data: 'CLOSED'
     },
-];
-
-export const socialLinks = [
     {
-        label: 'facebook',
-        path: 'https://www.facebook.com/pages/Drayton-Harbor-Mini-Storage/126481870738770',
-        class: 'fab fa-facebook-square',
-    },
+        label: 'Access Hours: ',
+        data: '24/7'
+    }
 ];
