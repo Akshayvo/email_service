@@ -24,7 +24,7 @@ const routes: Routes = [
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJGak6Yi_BhVQRx866h5uCHvc'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJfVh58We3CIgRrUmCHf13Rug'
     }
   },
   { path: 'error', component: ErrorHandlerComponent },
