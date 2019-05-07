@@ -548,11 +548,23 @@
   .text-align {
     text-align: center;
   }
-
-  .img-display {
-    display: none;
-  }
   
+  .img-display {
+    padding-top: 30px;
+    img {
+      width: 150px
+    }
+  }
+
+  .padding-top {
+    padding-top: 90px;
+  }
+
+  .main-button {
+    a {
+      margin-top: 0;
+    }
+  }
 }
 
 
@@ -600,6 +612,10 @@
 
   .padding-top {
     padding-top: 120px;
+  }
+
+  .img-display {
+    display: none;
   }
 }
 
@@ -672,11 +688,11 @@
     padding: 0%;
 
     p {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
   }
 
@@ -687,7 +703,10 @@
   }
 
   .img-display {
-    display: none;
+    padding-top: 30px;
+    img {
+      width: 150px;
+    }  
   }
 
   .text-align {
@@ -698,6 +717,16 @@
     li {
       justify-content: center;
     }
+  }
+
+  .main-button {
+    a {
+      margin-top: 0;
+    }
+  }
+
+  .padding-top {
+    padding-top: 60px;
   }
 }
 
@@ -800,8 +829,213 @@
 }
 
 
+// @media only screen and (max-width: 480px) {
+//   .jumbotron {
+//     .arrow {
+//       display: none;
+//     }
+//   }
+
+//   .img-display {
+//     display: none;
+//   }
+
+//   .disp {
+//     display: none;
+//   }
+
+//   .main-button {
+//     display: none;
+//   }
+
+//   .small-device-button {
+//     display: flex;
+//     bottom: 0;
+//     position: absolute;
+//     background-color: rgba(0,0,0,0.6);
+//     width: inherit;
+//     justify-content: center;
+
+//     .btn-primary {
+//       margin: 24px 8px;
+//     }
+
+//     .btn-outline-primary {
+//       margin: 24px 8px;
+//     }
+//   }
+
+//   .display {
+//     justify-content: center;
+//   }
+
+//   .feature-list {
+//     li {
+//       justify-content: center;
+//     }
+//   }
+// }
+
+
+// @media only screen and (max-width: 443px) {
+//   .jumbotron {
+//     .arrow {
+//       display: none;
+//     }
+//   }
+
+//   .img-display {
+//     display: none;
+//   }
+
+//   .disp {
+//     display: none;
+//   }
+
+//   .main-button {
+//     display: none;
+//   }
+
+//   .small-device-button {
+//     display: flex;
+//     bottom: 0;
+//     position: absolute;
+//     background-color: rgba(0,0,0,0.6);
+//     width: inherit;
+//     justify-content: center;
+//     flex-direction: column;
+
+//     .btn-primary {
+//       margin: 12px 8px 24px 8px;
+//     }
+
+//     .btn-outline-primary {
+//       margin: 24px 8px 12px 8px;
+//     }
+//   }
+
+//   .display {
+//     justify-content: center;
+//   }
+// }
+
 @media only screen and (max-width: 480px) {
   .jumbotron {
+    text-align: center;
+    background-attachment: scroll;
+    background-position: center;
+
+    .display {
+      justify-content: center;
+
+      .button-top-margin {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .we-provide {
+    background-attachment: unset;
+    background-position: center top;
+  }
+
+  .content-margin-top {
+    margin-top: 36px;
+  }
+
+  .disp {
+    padding: 0%;
+    p {
+      font-size: 0.8rem;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .we-provide-background {
+    li {
+      text-align: left;
+    }
+  }
+
+  .img-display {
+    padding-top: 30px;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  .text-align {
+    text-align: center;
+  }
+
+  .feature-list {
+    li {
+      justify-content: center;
+    }
+  }
+  .btn-primary {
+    min-width: 140px;
+    font-size: 0.8rem;
+  }
+
+  .btn-outline-primary {
+    min-width: 140px;
+    font-size: 0.8rem;
+  }
+
+  .main-button {
+    a {
+      margin-top: 0;
+    }
+  }
+
+  .padding-top {
+    padding-top: 90px;
+  }
+}
+
+@media only screen and (max-width: 480px) and (max-height: 640px) and (min-height: 481px) {
+  .jumbotron {
+    .arrow {
+      display: none;
+    }
+  }
+
+  .disp {
+    padding: 0%;
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .padding-top {
+    padding-top: 90px;
+  }
+
+  .main-button {
+    a {
+      margin-top: 0;
+    }
+  }
+
+  .img-display {
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) and (max-height: 480px) {
+    .jumbotron {
     .arrow {
       display: none;
     }
@@ -826,29 +1060,23 @@
     background-color: rgba(0,0,0,0.6);
     width: inherit;
     justify-content: center;
+    flex-direction: column;
 
     .btn-primary {
-      margin: 24px 8px;
+      margin: 12px 8px 24px 8px;
     }
 
     .btn-outline-primary {
-      margin: 24px 8px;
+      margin: 24px 8px 12px 8px;
     }
   }
 
   .display {
     justify-content: center;
   }
-
-  .feature-list {
-    li {
-      justify-content: center;
-    }
-  }
 }
 
-
-@media only screen and (max-width: 443px) {
+@media only screen and (max-width: 325px) {
   .jumbotron {
     .arrow {
       display: none;
