@@ -5,6 +5,10 @@ a {
   cursor: pointer;
 }
 
+img {
+  height: 68px;
+}
+
 .iconColor {
   color: $secondary;
 }
@@ -69,6 +73,18 @@ a {
   display: block;
 }
 
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .navbar {
+    .nav-link {
+      font-size: 0.9rem;
+    }
+  }
+
+  img {
+    height: 64px;
+  }
+}
+
 
 @media screen and (max-width: 991px) {
   .display {
@@ -77,6 +93,14 @@ a {
 
   .nav-link {
     text-align: center;
+  }
+
+  .navbar {
+    text-align: -webkit-center;
+
+    .nav-link {
+      width: fit-content;
+    }
   }
 }
 

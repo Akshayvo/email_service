@@ -39,11 +39,7 @@ export class ContactComponent implements OnInit {
                 more information regarding our storage units and parking spaces? Click Here!`
     });
     this.titleService.setTitle('Contact Us | Storage World');
-  }
 
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchHours();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -52,6 +48,11 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: [''],
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchHours();
   }
 
   get f() { return this.contactForm.controls; }
