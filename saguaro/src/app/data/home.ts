@@ -3,33 +3,22 @@ export const featuresHead = 'The Only Self Storage in Greene County With All of 
 export const featuresList = [
     
     {
-        td1: 'Coded Access',
-        td2: 'Walled In Storage',
-    },
-    {
-        td1: 'Lighted',
-        td2: 'Self Storage',
-    },
-    {
-        td1: 'Fountain Hills AZ storage units',
-        td2: ' Full Online Move Ins',
-    },
-    {
-        td1: 'Easy Online Payment Portal',
-        td2: 'Walled-in Facility',
-    },
-    {
-        td1: 'Online Reservations',
-        td2: 'Well-Lit Facility',
-    },
-    {
-        td1: 'Computerized Security Gate with personal code, Paved, Night Lighting.',
-        td2: 'Fully Computerized Automated Gates',
-    },
-    {
         td1: 'Pin-Code Activated Security Gate',
-        td2: 'Stellar Customer Service',
-    }
+        td2: 'Easy Online Payment Portal',
+    },
+    {
+        td1: 'Walled-in Facility',
+        td2: 'Online Reservations',
+    },
+    {
+        td1: 'Well-Lit Facility',
+        td2: 'Full Online Move-Ins',
+    },
+    {
+        td1: 'Stellar Customer Service',
+        
+    },
+    
 ];
 
 export const feature = [
