@@ -7,7 +7,7 @@ $primaryDark: #012447;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
-$secondary: #212121;
+$secondary: #65bc46;
 
 $dark: #333;
 $light: #efefef;
@@ -31,8 +31,12 @@ body {
 }
 
 // Different Background colors
+.bg-primary {
+  background-color: $primary !important;
+}
+
 .bg-secondary {
-  background: $secondary;
+  background: $secondary !important;
 }
 
 .bg-dark {

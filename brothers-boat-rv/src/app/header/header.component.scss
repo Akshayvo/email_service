@@ -9,45 +9,58 @@ a {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
   button {
-    color: #707070;
-    border-color: #707070;
+    color: white;
+    border-color:  white;
   }
 
-  button:focus {
+  button:focus,
+  button:active {
     outline: 5px auto $primary;
+    border: 1px solid $secondary;
   }
 }
 
+.contact-details {
+  color: $white;
+  font-size: 0.82em;
+  font-weight: 500;
+  width: 100%;
+  a {
+    color: $white;
+  }
+}
+
+
 .nav-link {
-  color: $fontColor;
+  color: white;
   font-weight: 600;
   padding: 30px;
 }
 
 .nav-link:hover {
-  color: $primary;
+  color: white;
 }
 
 .router-link-active {
   color: $primary;
-  border-bottom: 5px solid $primary;
+  border-bottom: 5px solid $secondary;
 }
 
 .nav-link-active {
-  color: $primary;
-  border-bottom: 5px solid $primary;
+  color: white;
+  border-bottom: 5px solid $secondary;
 }
 
 .display {
   display: block;
 }
 
-.navbar-toggler:focus,
-.navbar-toggler:hover {
-  border: 1px solid $primary;
-}
 
 @media screen and (max-width: 991px) {
+  .display {
+    display: none;
+  }
+
   .navbar-nav {
     align-items: center;
 

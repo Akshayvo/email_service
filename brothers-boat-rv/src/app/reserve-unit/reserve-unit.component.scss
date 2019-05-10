@@ -4,7 +4,7 @@
   min-height: 94vh;
 }
 .padding-top {
-  padding-top: 70px;
+  padding-top: 110px;
 }
 
 iframe {
@@ -17,6 +17,12 @@ iframe {
 
 h1 {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .padding-top {
+    padding-top: 70px;
+  }
 }
 
 @media only screen and (max-width: 600px) {

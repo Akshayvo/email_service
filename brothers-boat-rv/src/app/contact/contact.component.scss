@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .contentHolder {
-  padding-top: 90px;
+  padding-top: 130px;
   margin-bottom: 50px;
   min-height: 86vh;
 
@@ -63,6 +63,12 @@
 
 small {
   font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .contentHolder {
+    padding-top: 90px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
