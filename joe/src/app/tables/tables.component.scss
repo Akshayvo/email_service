@@ -1,0 +1,52 @@
+@import "../../styles.scss";
+
+p {
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+table {
+	margin-bottom: 0;
+	text-decoration: none;
+
+	td {
+		border: none;
+	}
+}
+
+.table-head {
+  background: $primary;
+  color: black;
+}
+
+td {
+  padding-left: 5%;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(33, 33, 33, 1);
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: rgb(54, 54, 54);;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+
+ul {
+  margin-bottom: 0;
+	padding-inline-start: 0;
+	list-style-type: none;
+	
+	li {
+		color: white;
+	}
+
+	.dot {
+		color: $primary;
+	}
+}

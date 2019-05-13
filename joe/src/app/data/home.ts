@@ -66,15 +66,30 @@ export const aboutUs = [
         p: `Whether you're looking for residential storage space for a move or are in need of commercial storage
         for equipment or inventory, St. Joe Self Storage has all of your self storage needs covered!`,
     },
-    {
-        p: `St. Joe Self Storage also offers packing and moving supplies to make your self storage experience a breeze!
-        We have disc locks, moving boxes, bubble wrap, packing tape, and storage totes available for purchase in our
-        office! We also rent rolling shelving units if you're looking to take your organization skills to the next
-        level!`,
-    },
-    {
-        p: `Use our easy online reservation form or call (812) 402-0116 today!`,
-    }
+    // {
+    //     p: `St. Joe Self Storage also offers packing and moving supplies to make your self storage experience a breeze!
+    //     We have disc locks, moving boxes, bubble wrap, packing tape, and storage totes available for purchase in our
+    //     office! We also rent rolling shelving units if you're looking to take your organization skills to the next
+    //     level!`,
+    // },
+    // {
+    //     p: `Use our easy online reservation form or call (812) 402-0116 today!`,
+    // }
 ];
 
 export const gettingStarted = ``;
+
+
+export const retailStore = [
+    {
+        td1: `Disc Locks`,
+        td2: `Moxing Boxes`,
+    },
+    {
+        td1: `Bubble Wrap`,
+        td2: `Packing Tape`,
+    },
+    {
+        td1: `Rolling Shelving Units for rent`,
+    },
+];
