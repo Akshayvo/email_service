@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { storageTip, storageTipAccordion } from '../data/storage';
+import { MetaService } from '../services/link.service';
 
 @Component({
   selector: 'app-storage-tips',
@@ -16,6 +17,7 @@ export class StorageTipsComponent implements OnInit {
   constructor(
     private titleService: Title,
     private meta: Meta,
+    private metaService: MetaService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -23,6 +25,7 @@ export class StorageTipsComponent implements OnInit {
       Use this tips to save yourself time and frustration!`
     });
     this.titleService.setTitle('Self Storage Tips | Catskill Self Storage, Catskill, NY, 12414');
+    this.metaService.createCanonicalURL();
   }
 
   ngOnInit() {

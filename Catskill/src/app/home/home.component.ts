@@ -1,8 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2, Inject} from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../data/home';
+import { MetaService } from '../services/link.service';
+import { DOCUMENT } from '@angular/common';
+
 
 @Component({
   selector: 'app-home',
@@ -25,7 +28,10 @@ export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private _renderer2: Renderer2,
+    private metaService: MetaService,
+    @Inject(DOCUMENT) private _document: any,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -33,6 +39,7 @@ export class HomeComponent implements OnInit {
       affordable storage units since 2004!`
     });
     this.titleService.setTitle('Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage');
+    this.metaService.createCanonicalURL();
   }
 
   public navigate(location: any) {
@@ -47,6 +54,40 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
+
+    // const s = this._renderer2.createElement('script');
+    // s.type = `application/ld+json`;
+    // s.text = `
+    // {
+    //   "@context": "http://www.schema.org",
+    //   "@type": "SelfStorage",
+    //   "name": "Catskill Self Storage",
+    //   "url": "https://www.catskillselfstorage.com",
+    //   "logo": "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/logo.png",
+    //   "image": "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/self-storage-units.jpg",
+    //   "description": "Catskill Self Storage is a self storage facility serving Catskill, Cairo, Leeds, and surrounding communities with affordable regular and climate controlled self storage.",
+    //   "address": {
+    //     "@type": "PostalAddress",
+    //     "streetAddress": "5877 Cauterskill Road",
+    //     "addressLocality": "Catskill",
+    //     "addressRegion": "NY",
+    //     "postalCode": "12414",
+    //     "addressCountry": "United States"
+    //   },
+    //   "geo": {
+    //     "@type": "GeoCoordinates",
+    //     "latitude": "42.2529936",
+    //     "longitude": "-73.9089837"
+    //   },
+    //   "openingHours": "Mo, Tu, We, Th, Fr 09:00-18:00 Sa 09:00-15:00 Su 08:00-12:00",
+    //   "contactPoint": {
+    //     "@type": "ContactPoint",
+    //     "telephone": "(518) 943-3003"
+    //   }
+    // }
+    // `;
+
+    // this._renderer2.appendChild(this._document.body, s);
   }
 
   public fetchContactDetails() {

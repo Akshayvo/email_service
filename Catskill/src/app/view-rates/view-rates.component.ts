@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { viewRates } from '../data/view-rates';
+import { MetaService } from '../services/link.service';
 
 @Component({
   selector: 'app-view-rates',
@@ -14,7 +15,8 @@ export class ViewRatesComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private MetaService: MetaService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -22,6 +24,8 @@ export class ViewRatesComponent implements OnInit {
       We strive to provide the highest level of service at the best prices! `
     });
     this.titleService.setTitle('Affordable Self Storage Near Catskill, NY, 12414 | Catskill Self Storage');
+    this.MetaService.createCanonicalURL();
+
   }
 
   ngOnInit() {

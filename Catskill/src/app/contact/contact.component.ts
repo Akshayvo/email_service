@@ -4,6 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
+import { MetaService } from '../services/link.service';
 
 @Component({
   selector: 'app-contact',
@@ -32,7 +33,9 @@ export class ContactComponent implements OnInit {
     private emailService: EmailService,
     private titleService: Title,
     private meta: Meta,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private metaService: MetaService,
+
   ) {
     this.meta.addTag({
       name: 'description',
@@ -40,6 +43,7 @@ export class ContactComponent implements OnInit {
                 and U-Haul truck rental questions! Simply call or drop us a line!`
     });
     this.titleService.setTitle('Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414');
+    this.metaService.createCanonicalURL();
   }
 
   ngOnInit() {
