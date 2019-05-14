@@ -21,7 +21,6 @@ import { SafePipe } from './safe.pipe';
 import { StorageUnitComponent } from './storage-unit/storage-unit.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
-import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
 import { TabsComponent } from './tabs/tabs.component';
@@ -51,7 +50,6 @@ import { ErrorHandlerService } from './services/error-handler.service';
     StorageUnitComponent,
     UnitSizerComponent,
     ReserveUnitComponent,
-    PhotosComponent,
     AboutUsComponent,
     DirectionsComponent,
     TabsComponent,
