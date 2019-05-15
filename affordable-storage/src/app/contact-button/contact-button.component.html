@@ -55,6 +55,9 @@
               <small class="form-text text-muted" *ngIf="f.emailCB.errors.email">Please enter a valid email</small>
           </div>
           </div>
+          <div class="form-group">
+            <input type="text" formControlName="subjectCB" placeholder="Enter subject" class="form-control" />
+        </div>
 
       <div class="form-group">
         <textarea type="text" formControlName="messageCB" placeholder="Enter Message*" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.messageCB.errors }" ></textarea>

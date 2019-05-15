@@ -41,12 +41,6 @@ export class ContactComponent implements OnInit {
       Use our contact form or the contact information here!`
     });
     this.titleService.setTitle('Contact Us | Affordable Storage Solutions');
-  }
-
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchHours();
-    this.window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -55,6 +49,12 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: ['']
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchHours();
+    window.scrollTo(0, 0);
   }
 
   get f() { return this.contactForm.controls; }
@@ -88,7 +88,7 @@ export class ContactComponent implements OnInit {
             email: this.contactForm.value.email,
             receiveremail: this.receiveremail,
             message: this.completeMessage,
-            subject: this.contactForm.value.subject
+            subject: this.contactForm.value.subject,
           };
           this.emailService.sendEmail(body)
             .subscribe((response: any) => {

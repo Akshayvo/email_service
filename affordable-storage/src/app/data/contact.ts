@@ -9,8 +9,7 @@ export const contact = [
         id: 1,
         redirect: 'mailto:hcihq0164@gmail.com',
         label: 'Email:',
-        // data: 'hcihq0164@gmail.com',
-        data: 'sanghmitra.v@codeparva.in',
+        data: 'hcihq0164@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
