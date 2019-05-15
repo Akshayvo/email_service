@@ -1,13 +1,15 @@
 export const dataViewRates = [
     {
-        p: `Drayton Harbor Mini Storage is run with your convenience at the forefront of our operation.
-            In need of packing and moving supplies? We have a fully stocked retail store with boxes,
-            tape, wrap and other supplies to make your move that much easier!`,
+        p: `Affordable Storage Solutions is conveniently located just north of Eureka Springs on AR-23 and offers
+        a variety of storage unit sizes, and parking spaces for your convenience!`,
     },
     {
-        p: `We are an excellent solution for the business in need of that little extra space. Our units
-            and parking spaces can be accessed from 6:00AM to 11:00PM so you are free to work around your schedule,
-            not just standard business hours! Drayton Harbor Mini Storage is proud to serve Blaine, Bellingham, Custer,
-            and Fraser Valley areas!`,
+        p: `Our facility is also well-lit, fully fenced, and our staff perform regular lot checks to ensure your
+        vehicles and belongings are kept safe. We are proud to serve Eureka Springs and surrounding communities with
+        high quality service at such affordable rates.`,
     },
+    {
+        p: `Do you have questions or concerns regarding the storage and parking services we offer? We would love to
+        help! Simply call (479) 253-6117 and a member of our team will be happy to assist you!`
+    }
 ];

@@ -1,4 +1,3 @@
-export const featuresHead = 'The Only Self Storage in Greene County With All of The Following';
 
 export const featuresList = [
     {
@@ -18,25 +17,25 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: '',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Affordable_Storage_Solutions/convenient-location.svg',
         label: 'Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Affordable_Storage_Solutions/online-bill.svg',
         label: 'Online Reservation & Bill Pay',
         alt: 'Icon art displaying a screen with cursor'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Affordable_Storage_Solutions/garage.svg',
         label: 'Boat and Vehicle Storage',
         alt: 'Icon art displaying boat and motorcycle'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Affordable_Storage_Solutions/fence.svg',
         label: 'Fully-Fenced Facility',
         alt: 'Icon of a section of fencing'
     },
@@ -66,29 +65,8 @@ export const aboutUs = [
 ];
 
 
-export const serviceOffered = [
-    {
-        p: `We are the only self storage provider in Drayton Harbor to offer climate controlled units,
-            secure access to your units 24 hours a day,
-            and a fully lit facility for safe and easy access.`,
-    },
-    {
-        p: `We offer a wide selection of easy to access, clean,
-            well maintained units secured by fences and pin-coded activated gates all
-            at extremely competitive prices!
-            Reserve your unit and pay your rent with our convenient online tenant portal!`,
-    },
-    {
-        p: `Are you in need of a truck during your big move?
-            We've got you covered with an ample supply of U-Haul trucks in
-            a variety of sizes,a perfect solution for your next big move!`,
-    },
-
-];
-
-
-export const gettingStarted = `Are you ready to de-clutter your life with Drayton Habor Mini Storage?
-                               Check out our unit pricing and reserve your unit or parking space today!`;
+export const gettingStarted = `Are you ready to start de-cluttering your life or making room in the yard? Give the
+Affordable Storage Solutions team a call and let us help you find the right solution for you!`;
 
 export const blurb = [
     {

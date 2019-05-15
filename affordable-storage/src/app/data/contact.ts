@@ -9,7 +9,8 @@ export const contact = [
         id: 1,
         redirect: 'mailto:hcihq0164@gmail.com',
         label: 'Email:',
-        data: 'hcihq0164@gmail.com',
+        // data: 'hcihq0164@gmail.com',
+        data: 'sanghmitra.v@codeparva.in',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
@@ -36,10 +37,4 @@ export const hours = [
     }
 ];
 
-export const socialLinks = [
-    {
-        label: 'facebook',
-        path: 'https://www.facebook.com/pages/Drayton-Harbor-Mini-Storage/126481870738770',
-        class: 'fab fa-facebook-square',
-    },
-];
+

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailService } from '../services/email.service';
-import { contact, hours, socialLinks } from '../data/contact';
+import { contact, hours } from '../data/contact';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { Router } from '@angular/router';
 @Component({
@@ -37,7 +37,6 @@ export class ContactButtonComponent implements OnInit {
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
-    this.fetchsocialLinks();
     this.contactForm = this.formBuilder.group({
       nameCB: ['', Validators.required],
       phoneCB: ['', [Validators.required,
@@ -57,9 +56,6 @@ export class ContactButtonComponent implements OnInit {
     this.hours = hours;
   }
 
-  public fetchsocialLinks() {
-    this.socialLinks = socialLinks;
-  }
 
   onSubmit() {
     this.submitted = true;

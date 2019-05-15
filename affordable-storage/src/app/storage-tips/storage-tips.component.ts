@@ -22,10 +22,10 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We're here to make your storage experience an easy and
-                straightforward one so here are some tips on how to get the most out of your self storage.`
+      content: `Use our handy storage tips to make your experience easier! Do you have any questions
+      about your unit or storage? Call (479) 253-6117 for assistance!`
     });
-    this.titleService.setTitle('Storage Tips | Drayton Harbor Mini Storage');
+    this.titleService.setTitle('Storage Tips | Affordable Storage Solutions');
   }
 
   ngOnInit() {

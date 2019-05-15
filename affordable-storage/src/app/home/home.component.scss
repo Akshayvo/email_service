@@ -21,14 +21,14 @@
 
 // Get started Section
 .getStarted {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Drayton_Images/jumbotorn.jpg") center top no-repeat fixed;
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Affordable_Storage_Solutions/outdoor-units-affordable-storage-solutions.jpg") center top no-repeat fixed;
   background-size: cover;
 
   .get-started {
     left: 0;
     right: 0;
     top: 10;
-    background: rgba(238, 238, 238, 0.7);
+    background: rgba(238, 238, 238, 0.9);
     z-index: 9;
   }
 
@@ -44,7 +44,7 @@
   height: 80vh;
 
   .jumbotron {
-    background: url("../../assets/images/outdoor-units-affordable-storage-solutions.jpg");
+    background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Affordable_Storage_Solutions/outdoor-units-affordable-storage-solutions.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -54,7 +54,7 @@
     padding: 0;
     position: relative;
 
-    h1 {
+    h2 {
       text-transform: uppercase;
       font-weight: 600;
       font-size: 2em;
@@ -135,16 +135,6 @@
       }
     }
   }
-
-  .disp {
-    p {
-      font-size: 0.8rem;
-    }
-
-    h1 {
-      font-size: 1.8rem;
-    }
-  }
 }
 
 @media only screen and (min-width: 1200px) and (max-height: 480px) {
@@ -205,7 +195,7 @@
       }
 
       .jumbotron-skew-text {
-        width: 35%;
+        width: 475px;
         position: absolute;
         bottom: 0;
       }
@@ -264,16 +254,6 @@
       top: 25%;
     }
   }
-
-  .disp {
-    p {
-      font-size: 0.8rem;
-    }
-
-    h1 {
-      font-size: 1.8rem;
-    }
-  }
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 480px) {
@@ -324,7 +304,7 @@
       }
 
       .jumbotron-skew-text {
-        width: 40%;
+        width: 400px;
         position: absolute;
         bottom: 0;
       }
@@ -344,15 +324,6 @@
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 830px) and (min-height: 641px) {
-  .disp {
-    p {
-      font-size: 0.8rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-    }
-  }
 
   .jumbotron-bottom {
     display: flex;
@@ -390,7 +361,7 @@
 
   .disp {
     p {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
 
     h1 {
@@ -452,7 +423,8 @@
       }
 
       .jumbotron-skew-text {
-        width: 44%;
+        width: 300px;
+        top: 40%;
       }
     }
 
@@ -462,7 +434,7 @@
       }
 
       h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
     }
 
@@ -484,7 +456,7 @@
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
-        top: 20%;
+        top: 30%;
       }
     }
   }
