@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'unit-sizer', component: UnitSizerComponent},
-  { path: 'pay-rent', component: PayRentComponent },
+  // { path: 'pay-rent', component: PayRentComponent },
   { path: 'review', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
