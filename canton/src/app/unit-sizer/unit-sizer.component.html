@@ -1,0 +1,26 @@
+<div class="unit-sizer-container">
+  <div class="container px-0">
+    <h2 class="text-center">{{h2tag}}</h2>
+    <p class="text-center">{{description}}</p>
+    <div class="container py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 p-2" *ngFor="let unit of unitSizer">
+            <div class="bg-white" style="height: 100%;">
+              <div class="text-center">
+                <img [src]="unit?.img" height="auto" width="100%" alt="Unit Sizer in Affordable Rate" class="pt-4 px-4">
+              </div>
+              <div class="p-3">
+                <h5 class="text-center"> {{unit.size}} </h5>
+                <p class="text-center" > {{unit.data}} </p>                
+                <ul>
+                 <li *ngFor="let amenity of unit?.amenities"> {{amenity.content}} </li>
+                </ul>
+              </div>      
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>

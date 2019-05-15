@@ -1,0 +1,120 @@
+<div class="jumbotron-home">
+  <!-- <div class="for-desktop-view">
+    <div class="jumbotron-desktop">
+      <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/pittsburgh-area-storage-centers.jpg" width="100%" height="100%" alt="">
+    </div>
+  </div> -->
+
+    
+  <!-- <div class="for-mobile-view"> -->
+    <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselJumbo" data-slide-to="1"></li>
+       
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="jumbotron-top jumbotron-top-style">
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron-top1 jumbotron-top-style">
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron-top2 jumbotron-top-style">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+    
+  <!--Feature Box-->
+    <div class="container feature-block disp">
+      <div class="row h-100">
+        <div class="col-3 my-auto" *ngFor= "let feature of features">
+          <p class="text-center f-block-img"> 
+            <img src="{{feature.data}}"alt="feature.alt"  class="f-img">
+          </p>
+          <p class="text-center f-text">
+            {{feature.label}}
+          </p>
+        </div>
+      </div>
+    </div>
+  <!--Feature Box Ends Here-->
+</div>
+
+<!--Contact Details-->
+<div class="bg-light for-location"> 
+  <div class="locaion-selection">
+    <app-select-location (click)="receiveMessage()"></app-select-location>
+  </div> 
+    <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <span *ngIf="locationId == 1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.672405502645!2d-81.63062818449204!3d38.35656368624566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8848d334571013f1%3A0xa6e7d1e74704d6f!2sMovin&#39;on+Storage+Center!5e0!3m2!1sen!2sus!4v1547507975675" width="100%" height="100%" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="locationId == 2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.7152950109976!2d-79.96360028444201!3d40.54787875557631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88348d1dbeac6833%3A0x96666d804a43a62!2sShaler+Self+Storage!5e0!3m2!1sen!2sus!4v1547509488961" width="100%" height="100%" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="locationId == 3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12093.973544696319!2d-81.4216772!3d40.7291678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ff1c072ff56b022!2sFohl+Street+Storage!5e0!3m2!1sen!2sus!4v1557801283470!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+          </span>
+      </div>
+      <div class="col-md-4  pl-4 pt-3">
+        <h2>{{heading}}</h2>
+        <p> 
+          <span *ngFor="let contact of contactDetails">
+            <b>{{contact.label}}</b> {{contact.data}}<br>
+          </span>
+        </p>
+        <span *ngIf="locationId == 1" >
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/movin-on-storage/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/movin-on-storage/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
+        </span>
+        <span *ngIf="locationId == 2" >
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/shaler-self/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/shaler-self/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
+        </span>
+        <span *ngIf="locationId == 3" >
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/natrona-heights-self/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/natrona-heights-self/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>
+        </span>
+      </div>
+      <div class="col-md-3 contact-hours pt-3">
+          <h2>Hours:</h2>
+          <p>
+            <span *ngFor="let hour of hoursDetails">
+              <b>{{hour.label}}</b>{{hour.data}}<br>
+            </span>
+          </p>
+      </div>
+    </div>
+  </div>  
+</div>
+<!--Contact Details Ends Here-->
+
+
+<!--Service-->
+  <div class="service">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 pt-2">
+            <h1  class="pb-4">Affordable Self Storage Near Canton, Ohio</h1>
+            <div *ngFor="let para of serviceOffered">
+              <p>{{ para.p }}</p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="../../assets/recreational-vehicles.jpg" alt="Photograph of recreational vehicles">
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Service Ends Here-->
