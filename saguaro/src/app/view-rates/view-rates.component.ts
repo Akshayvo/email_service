@@ -20,8 +20,8 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Check out our affordable self storage unit rates, then make your reservation online! 
-                If you have questions, call Nancy at (480) 837-3100!`
+      content: `Check out our affordable self storage unit rates, then make your reservation online! If you have questions, 
+                call Scott, Denise, or Ken at (480) 837-3100!`
     });
     this.titleService.setTitle('View Rates | Saguaro Self Storage');
   } 

@@ -25,7 +25,7 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Saguaro_Self_Storage/location.svg',
-        label: 'Location Pin'
+        label: 'CONVENIENT LOCATION'
     },
     {
         // tslint:disable-next-line:max-line-length
@@ -70,13 +70,13 @@ export const aboutUs = [
 
 
 
-export const gettingStarted = `Are you ready to begin de-cluttering today? Click below or call Nancy at (480) 837-3100 and make your reservation!`;
+export const gettingStarted = `Are you ready to begin de-cluttering today? Click below or call Scott, Denise, or Ken at (480) 837-3100 and make your reservation!`;
 
 export const blurb = [
     {
         h1: `Affordable Self Storage Units`,
-        p: `Saguaro Self Storage is locally owned & operated, and has been providing Fountain Hills with
-            affordable self storage, and stellar customer service since 1996. Whether you're looking for a little
-            extra room at home, or are a growing business, we have the perfect unit for you! Learn more by calling Nancy today! (480) 837-3100`,
+        p: `Saguaro Self Storage has been providing the Fountain Hills community with affordable self storage and stellar customer service since 1996.
+            Whether you're looking for a little extra room at home or are a growing business, our website can efficiently make reservations thru a contract
+            without calling the facility. We have the right unit for you! Learn more by calling Scott, Denise or Ken today! (480) 837-3100`,
     }
 ];
