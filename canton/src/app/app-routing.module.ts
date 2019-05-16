@@ -62,7 +62,7 @@ const routes: Routes = [
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ8RMQVzTTSIgRb01wdB59bgo'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJx32Lt_3bNogRIrBW_3LA8U8'
     }
   },
   { path: 'review/location2', component: HomeComponent,
@@ -70,7 +70,7 @@ const routes: Routes = [
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJM2isvh2NNIgRYjqkBNhmZgk'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJx32Lt_3bNogRIrBW_3LA8U8'
     }
   },
   { path: 'review/location3', component: HomeComponent,

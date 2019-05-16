@@ -410,92 +410,92 @@ export const aboutUsLocation3 = [
     }
 ];
 
-export const directionLocation1 = [
-    {
-        label: 'Directions from Malden, WV',
-        datas: [
-        { content: 'Head north on Malden Dr toward Georges Dr - 33 ft'},
-        { content: 'Turn right onto Georges Dr - 387 ft'},
-        { content: 'Turn right to merge onto US-60 W - 1.6 mi'},
-        { content: 'Merge onto I-64 W/I-77 N - 3.8 mi'},
-        { content: 'Take exit 100 toward Leon Sullivan Way/Capital St - 0.5 mi'},
-        { content: 'Keep right at the fork to continue toward Shrewsbury St - 354 ft'},
-        { content: 'Turn right onto Shrewsbury St (signs for Smith Street) - 371 ft'},
-        { content: 'Turn left onto Smith St - 0.2 mi'},
-        { content: 'Turn right onto Court St - 348 ft'},
-        { content: 'Turn left onto Piedmont Rd'},
-        { content: 'Movin\' On Storage Center will be on the right - 0.1 mi'},
-        ],
-    },
-    {
-        label: 'Directions from 119 West of the Kanawha River',
-        datas: [
-        { content: 'Head northeast on Oakwood Rd toward Lambert Pl - 0.2 mi'},
-        { content: 'Turn right onto Cantley Dr - 305 ft'},
-        { content: 'Turn left onto Corridor G - 0.2 mi'},
-        { content: 'Turn left onto US-119 N - 0.4 mi'},
-        { content: `Keep right at the fork, follow signs for I-64 E/I-77/I-79/Charleston/Beckley
-                    and merge onto I-64 E - 0.4 mi`},
-        { content: 'Take exit 58C for US-60/Lee St - 0.3 mi'},
-        { content: 'Merge onto Pennsylvania Ave N - 371 ft'},
-        { content: 'Keep right to continue on US-119 N/Pennsylvania Ave'},
-        { content: 'Continue to follow US-119 N - 0.6 mi'},
-        { content: 'Slight right onto Pennsylvania Ave - 0.1 mi'},
-        { content: 'Turn right at the 1st cross street onto Spring St - 0.2 mi'},
-        { content: 'Turn right onto Bullitt St- 413 ft'},
-        { content: 'Turn left onto Piedmont Rd'},
-        { content: 'Movin\' On Storage Center will be on your left.'},
-        ],
-    },
-] ;
+// export const directionLocation1 = [
+//     {
+//         label: 'Directions from Malden, WV',
+//         datas: [
+//         { content: 'Head north on Malden Dr toward Georges Dr - 33 ft'},
+//         { content: 'Turn right onto Georges Dr - 387 ft'},
+//         { content: 'Turn right to merge onto US-60 W - 1.6 mi'},
+//         { content: 'Merge onto I-64 W/I-77 N - 3.8 mi'},
+//         { content: 'Take exit 100 toward Leon Sullivan Way/Capital St - 0.5 mi'},
+//         { content: 'Keep right at the fork to continue toward Shrewsbury St - 354 ft'},
+//         { content: 'Turn right onto Shrewsbury St (signs for Smith Street) - 371 ft'},
+//         { content: 'Turn left onto Smith St - 0.2 mi'},
+//         { content: 'Turn right onto Court St - 348 ft'},
+//         { content: 'Turn left onto Piedmont Rd'},
+//         { content: 'Movin\' On Storage Center will be on the right - 0.1 mi'},
+//         ],
+//     },
+//     {
+//         label: 'Directions from 119 West of the Kanawha River',
+//         datas: [
+//         { content: 'Head northeast on Oakwood Rd toward Lambert Pl - 0.2 mi'},
+//         { content: 'Turn right onto Cantley Dr - 305 ft'},
+//         { content: 'Turn left onto Corridor G - 0.2 mi'},
+//         { content: 'Turn left onto US-119 N - 0.4 mi'},
+//         { content: `Keep right at the fork, follow signs for I-64 E/I-77/I-79/Charleston/Beckley
+//                     and merge onto I-64 E - 0.4 mi`},
+//         { content: 'Take exit 58C for US-60/Lee St - 0.3 mi'},
+//         { content: 'Merge onto Pennsylvania Ave N - 371 ft'},
+//         { content: 'Keep right to continue on US-119 N/Pennsylvania Ave'},
+//         { content: 'Continue to follow US-119 N - 0.6 mi'},
+//         { content: 'Slight right onto Pennsylvania Ave - 0.1 mi'},
+//         { content: 'Turn right at the 1st cross street onto Spring St - 0.2 mi'},
+//         { content: 'Turn right onto Bullitt St- 413 ft'},
+//         { content: 'Turn left onto Piedmont Rd'},
+//         { content: 'Movin\' On Storage Center will be on your left.'},
+//         ],
+//     },
+// ] ;
 
-export const directionLocation2 = [
-    {
-        label: 'Directions from Ross Township, PA',
-        datas: [
-          { content: `Head southwest on Buehner Dr toward Evergreen Rd - 112 ft` },
-          { content: `Turn left onto Evergreen Rd - 0.5 mi` },
-          { content: `Turn left onto Siebert Rd - 1.5 mi` },
-          { content: `Turn right onto Thompson Run Rd - 0.2 mi` },
-          { content: `Turn left onto Vilsack Rd - 0.9 mi` },
-          { content: `Turn left onto Iola St - 0.4 mi` },
-          { content: `Turn left onto Mt Royal Blvd - 0.8 mi` },
-          { content: `Turn right onto Willett Rd - 0.6 mi` },
-          { content: `Turn right onto Elfinwild Rd - 0.1 mi` },
-          { content: `Turn right -118 ft` },
-          { content: `Keep right` },
-          { content: `Shaler Self Storage will be on the right` },
-        ],
-    },
-    {
-        label: 'Directions from Etna, PA',
-        datas: [
-          { content: `Head northwest on Grant Ave/Mt Royal Blvd toward Weible St` },
-          { content: `Continue to follow Mt Royal Blvd - 3.5 mi` },
-          { content: `Turn right onto Willett Rd - 0.6 mi` },
-          { content: `Turn right onto Elfinwild Rd - 0.1 mi` },
-          { content: `Turn right - 118 ft` },
-          { content: `Keep right` },
-          { content: `Shaler Self Storage will be on the right` },
-        ],
-    },
-] ;
+// export const directionLocation2 = [
+//     {
+//         label: 'Directions from Ross Township, PA',
+//         datas: [
+//           { content: `Head southwest on Buehner Dr toward Evergreen Rd - 112 ft` },
+//           { content: `Turn left onto Evergreen Rd - 0.5 mi` },
+//           { content: `Turn left onto Siebert Rd - 1.5 mi` },
+//           { content: `Turn right onto Thompson Run Rd - 0.2 mi` },
+//           { content: `Turn left onto Vilsack Rd - 0.9 mi` },
+//           { content: `Turn left onto Iola St - 0.4 mi` },
+//           { content: `Turn left onto Mt Royal Blvd - 0.8 mi` },
+//           { content: `Turn right onto Willett Rd - 0.6 mi` },
+//           { content: `Turn right onto Elfinwild Rd - 0.1 mi` },
+//           { content: `Turn right -118 ft` },
+//           { content: `Keep right` },
+//           { content: `Shaler Self Storage will be on the right` },
+//         ],
+//     },
+//     {
+//         label: 'Directions from Etna, PA',
+//         datas: [
+//           { content: `Head northwest on Grant Ave/Mt Royal Blvd toward Weible St` },
+//           { content: `Continue to follow Mt Royal Blvd - 3.5 mi` },
+//           { content: `Turn right onto Willett Rd - 0.6 mi` },
+//           { content: `Turn right onto Elfinwild Rd - 0.1 mi` },
+//           { content: `Turn right - 118 ft` },
+//           { content: `Keep right` },
+//           { content: `Shaler Self Storage will be on the right` },
+//         ],
+//     },
+// ] ;
 
-export const directionLocation3 = [
-    {
-        label: 'Directions to Natrona Heights Self Storage From Harwick',
-        datas: [
-          { content: `Head northwest on Spring St toward Jacoby Rd - 121 ft` },
-          { content: `Turn left onto Jacoby Rd - 0.1 mi` },
-          { content: `Continue onto Hite Rd - 0.1 mi` },
-          { content: `Turn right onto the ramp to Kittanning - 0.1 mi` },
-          { content: `Merge onto PA-28 N - 6.5 mi` },
-          { content: `Take exit 15 toward Natrona Heights - 0.2 mi` },
-          { content: `Turn right onto Burtner Rd - 0.8 mi` },
-          { content: `Turn left onto Freeport Rd - 1.6 mi` },
-          { content: `Turn left onto Veterans Drive - 472 ft` },
-          { content: `Natrona Heights Self Storage will be on the left` },
-        ],
-    },
-] ;
+// export const directionLocation3 = [
+//     {
+//         label: 'Directions to Natrona Heights Self Storage From Harwick',
+//         datas: [
+//           { content: `Head northwest on Spring St toward Jacoby Rd - 121 ft` },
+//           { content: `Turn left onto Jacoby Rd - 0.1 mi` },
+//           { content: `Continue onto Hite Rd - 0.1 mi` },
+//           { content: `Turn right onto the ramp to Kittanning - 0.1 mi` },
+//           { content: `Merge onto PA-28 N - 6.5 mi` },
+//           { content: `Take exit 15 toward Natrona Heights - 0.2 mi` },
+//           { content: `Turn right onto Burtner Rd - 0.8 mi` },
+//           { content: `Turn left onto Freeport Rd - 1.6 mi` },
+//           { content: `Turn left onto Veterans Drive - 472 ft` },
+//           { content: `Natrona Heights Self Storage will be on the left` },
+//         ],
+//     },
+// ] ;
 

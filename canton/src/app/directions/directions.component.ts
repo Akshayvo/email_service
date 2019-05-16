@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { directionLocation1, directionLocation2, directionLocation3 } from '../data/location';
+// import { directionLocation1, directionLocation2, directionLocation3 } from '../data/location';
 @Component({
   selector: 'app-directions',
   templateUrl: './directions.component.html',
@@ -28,19 +28,19 @@ export class DirectionsComponent implements OnInit {
  }
 
  public fetchDetailsLocation1() {
-  this.directionPoints = directionLocation1;
-  this.directionHeading = `Directions to Movin' On Storage Center`;
+  // this.directionPoints = directionLocation1;
+  this.directionHeading = `Directions to fohl street storage`;
   this.id = 1;
 }
   public fetchDetailsLocation2() {
-    this.directionPoints = directionLocation2;
-    this.directionHeading = `Directions to Shaler Storage`;
+    // this.directionPoints = directionLocation2;
+    this.directionHeading = `Directions to location2 `;
     this.id = 2;
   }
 
   public fetchDetailsLocation3() {
-    this.directionPoints = directionLocation3;
-    this.directionHeading = `Directions to Natrona Heights Self Storage`;
+    // this.directionPoints = directionLocation3;
+    this.directionHeading = `Directions to location3`;
     this.id = 3;
   }
 }
