@@ -1,71 +1,71 @@
 export const contactsLocation1 = [
+    
     {
         label: 'Address:',
-        data: '200 Piedmont Rd, Charleston, WV 25301',
+        data: '3700 Fohl St, SW Canton, OH 44706',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
+
     {
         label: 'Phone:',
-        data: '(304) 344-1104',
+        data: '(330) 484-1370',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
         label: 'Email:',
-        data: 'movinonstoragecenter@gmail.com',
+        data: 'fohlstorage@outlook.com',
+        
         class: 'fas fa-envelope-open mr-2 iconColor',
     },
 ];
 
 export const hoursLocation1 = [
+    
     {
         label: 'Monday - Friday: ',
-        data: '9:00AM - 5:00PM',
+        data: '9:30AM - 5:00PM',
     },
     {
-        label: 'Saturday: ',
-        data: '9:00AM - 2:00PM',
-    },
-    {
-        label: 'Sunday: ',
-        data: 'Closed',
+        label: 'Saturday to Sunday: ',
+        data: 'CLOSED',
     },
     {
         label: 'Access hours: ',
-        data: 'Office Hours',
+        data: '7 Days a Week - 6:00AM - 10:00PM',
     },
 ];
 
 export const contactsLocation2 = [
     {
         label: 'Address:',
-        data: '422 Elfinwild Rd, Allison Park, PA 15101',
+        data: '3700 Fohl St, SW Canton, OH 44706',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
 
     {
         label: 'Phone:',
-        data: '(412) 486-4852',
+        data: '(330) 484-1370',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
         label: 'Email:',
-        data: 'shalerselfstorage@gmail.com',
+        data: 'fohlstorage@outlook.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
     },
 ];
 
 export const hoursLocation2 = [
     {
-        label: 'Tuesday-Friday: ',
-        data: '10:00AM - 4:00PM',
+        label: 'Monday - Friday: ',
+        data: '9:30AM - 5:00PM',
     },
     {
-        label: 'Saturday: ',
-        data: '10:00AM - 2:00PM',
+        label: 'Saturday to Sunday: ',
+        data: 'CLOSED',
     },
     {
         label: 'Access hours: ',
-        data: '7 Days a Week: 7:00AM - 7:00PM',
+        data: '7 Days a Week - 6:00AM - 10:00PM',
     },
 ];
 

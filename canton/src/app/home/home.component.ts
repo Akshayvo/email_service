@@ -58,19 +58,19 @@ export class HomeComponent implements OnInit {
   }
 
     public fetchContactDetailsLocation1() {
-      this.heading = `Movin' On Storage Center`;
+      this.heading = `Fohl Street Storage`;
       this.contactDetails = contactsLocation1;
       this.hoursDetails = hoursLocation1;
     }
 
     public fetchContactDetailsLocation2() {
-      this.heading = `Shaler Self Storage`;
+      this.heading = `Location 2`;
       this.contactDetails = contactsLocation2;
       this.hoursDetails = hoursLocation2;
     }
 
     public fetchContactDetailsLocation3() {
-      this.heading = `Fohl Street Storage`;
+      this.heading = `Location 3`;
       this.contactDetails = contactsLocation3;
       this.hoursDetails = hoursLocation3;
     }

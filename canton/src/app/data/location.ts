@@ -1,4 +1,4 @@
-export const tabs1 = [
+export const tabs = [
     {
         id: '1',
         name: 'Storage Units',
@@ -17,33 +17,33 @@ export const tabs1 = [
         path: './reserveUnit',
         active: false,
     },
+    // {
+    //     id: '4',
+    //     name: 'Gallery',
+    //     path: './photos',
+    //     active: false,
+    // },
     {
         id: '4',
-        name: 'Gallery',
-        path: './photos',
-        active: false,
-    },
-    {
-        id: '5',
         name: 'About Us',
         path: './about',
         active: false,
     },
-    {
-        id: '6',
-        name: 'Truck Rentals',
-        path: './truck-rentals',
-        active: false,
-    },
-    {
-        id: '7',
-        name: 'Directions',
-        path: './directions',
-        active: false,
-    },
+    // {
+    //     id: '6',
+    //     name: 'Truck Rentals',
+    //     path: './truck-rentals',
+    //     active: false,
+    // },
+    // {
+    //     id: '7',
+    //     name: 'Directions',
+    //     path: './directions',
+    //     active: false,
+    // },
 ];
 
-export const tabs = [
+export const tabs1 = [
     {
         id: '1',
         name: 'Storage Units',
@@ -78,13 +78,13 @@ export const tabs = [
 ];
 
 
-export const headingLocation1 = `Movin' On Storage Center`;
+export const headingLocation1 = `Fohl Street Storage`;
 
-export const headingLocation2 = `Shaler Self Storage`;
+export const headingLocation2 = `Location 1`;
 
-export const headingLocation3 = `Fohl Street Storage`;
+export const headingLocation3 = `Location 2`;
 
-export const unitSizerLocation1 = [
+export const unitSizerLocation3 = [
     {
         size: '5\' x 5\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
@@ -149,58 +149,119 @@ export const unitSizerLocation1 = [
 ];
 
 export const unitSizerLocation2 = [
+    // {
+    //     size: '5\' x 5\'',
+    //     img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
+    //     data: `25 sq. ft. Hall Closet, small bedroom or office, boxes,
+    //            clothing, small furniture, toys, business records or about 50 file boxes.`,
+    // },
+
+    // {
+    //     size: '5\' x 10\'',
+    //     img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
+    //     data: `50 sq. ft. Walk-in closet, Mattress set, sofa, chest of drawers, dining
+    //             room set or about 100 file boxes.`,
+    // },
+    // {
+    //     size: '5\' x 15\'',
+    //     img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
+    //     data: `75 sq. ft. Large walk-in closet, furniture of a one bedroom apartment,
+    //            washer and dryer, desk, patio furniture or about 150 file boxes.`,
+    // },
+    // {
+    //     size: '10\' x 10\'',
+    //     img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+    //     data: `100 sq. ft. Average size bedroom, the furniture of a one bedroom
+    //     apartment with a refrigerator, washer and dryer or about 200 file boxes`,
+    // },
+    // {
+    //     size: '10\' x 15\'',
+    //     img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+    //     data: `150 sq. ft. Large size bedroom, furniture of a 2 bedroom apartment or
+    //             a small house with refrigerator, washer & dryer, patio furniture or about 300 file boxes`,
+    // },
+    // {
+    //     size: `10' x 20'`,
+    //     img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
+    //     data: `200 sq. ft. One car garage, furniture of a 3 or 4 bedroom house with all the appliances,
+    //             patio furniture or about 400 file boxes`,
+    // },
+    // {
+    //     size: '10\' x 25\'',
+    //     img: 'https://s3.amazonaws.location3com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
+    //     data: `250 sq. ft. One car garage, furniture of a 4 bedroom house with all the appliances,
+    //             patio furniture, lawn mower, bikes, small trailer`,
+    // },
+    // {
+    //     size: '10\' x 30\'',
+    //     img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
+    //     data: `300 sq. ft. Extra large garage, the furniture of a 4 or 5 bedroom house with
+    //             all the appliances, a small boat or utility trailer`,
+    // }
     {
         size: '5\' x 5\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
-        data: `25 sq. ft. Hall Closet, small bedroom or office, boxes,
-               clothing, small furniture, toys, business records or about 50 file boxes.`,
+        data: `This unit is approximately 25 sq feet of space that can hold the contents of one small closet, such as:`,
+        alt: '5\' 5\' Storage Unit Graphic ',
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small Bookcases', },
+            { content: 'Suitcases', },
+            { content: 'Lamps', },
+            { content: 'Kitchenware' },
+          ],
     },
 
     {
         size: '5\' x 10\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
-        data: `50 sq. ft. Walk-in closet, Mattress set, sofa, chest of drawers, dining
-                room set or about 100 file boxes.`,
+        data: `This unit is approximately 50 sq feet of space that can hold the contents of one small room, such as:`,
+        alt: '5\' 10\' Storage Unit Graphic ',
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small Desks', },
+            { content: 'Small Bookcases', },
+            { content: 'Suitcases', },
+            { content: 'Lamps', },
+            { content: 'Kitchenware' },
+            { content: 'Mattresses' }
+            ],
     },
-    {
-        size: '5\' x 15\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
-        data: `75 sq. ft. Large walk-in closet, furniture of a one bedroom apartment,
-               washer and dryer, desk, patio furniture or about 150 file boxes.`,
-    },
+    
     {
         size: '10\' x 10\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
-        data: `100 sq. ft. Average size bedroom, the furniture of a one bedroom
-        apartment with a refrigerator, washer and dryer or about 200 file boxes`,
+        data: `This unit is approximately 100 sq feet of space that can hold the contents of two rooms, such as:`,
+        alt: '10\' 10\' Storage Unit Graphic ',
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small Desks', },
+            { content: 'Bookcases', },
+            { content: 'Furniture', },
+            { content: 'Suitcases', },
+            { content: 'Mattresses' },
+            { content: 'Kitchen Appliances' },   
+            ],
+
     },
     {
         size: '10\' x 15\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
-        data: `150 sq. ft. Large size bedroom, furniture of a 2 bedroom apartment or
-                a small house with refrigerator, washer & dryer, patio furniture or about 300 file boxes`,
+        data: `This unit is approximately 150 sq feet of space that can hold the contents of three to four rooms`,
+        alt: '10\' 15\' Storage Unit Graphic ',
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small Desks', },
+            { content: 'Bookcases', },
+            { content: 'Furniture', },
+            { content: 'Suitcases', },
+            { content: 'Kitchen Appliances' },     
+            ],
     },
-    {
-        size: `10' x 20'`,
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
-        data: `200 sq. ft. One car garage, furniture of a 3 or 4 bedroom house with all the appliances,
-                patio furniture or about 400 file boxes`,
-    },
-    {
-        size: '10\' x 25\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
-        data: `250 sq. ft. One car garage, furniture of a 4 bedroom house with all the appliances,
-                patio furniture, lawn mower, bikes, small trailer`,
-    },
-    {
-        size: '10\' x 30\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
-        data: `300 sq. ft. Extra large garage, the furniture of a 4 or 5 bedroom house with
-                all the appliances, a small boat or utility trailer`,
-    }
+
 ];
 
-export const unitSizerLocation3 = [
+export const unitSizerLocation1 = [
        {
         size: '5\' x 5\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
@@ -263,55 +324,66 @@ export const unitSizerLocation3 = [
     },
 ];
 
-export const aboutUsHeadingLocation1 = `About Movin' On Storage Center`;
+export const aboutUsHeadingLocation1 = `About Us`;
 
-export const aboutUsHeadingLocation2 = `About Shaler Self Storage`;
+export const aboutUsHeadingLocation2 = `About location 1`;
 
-export const aboutUsHeadingLocation3 = `About Us `;
+export const aboutUsHeadingLocation3 = `About location2 `;
 
-export const aboutUsImageLocation1 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/movin-on-storage/movin-on-storage-center-climate-control.jpg`;
-
-// tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation2 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/shaler-self-storage/shaler-self-storage-retail-store.jpg`;
+export const aboutUsImageLocation1 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/packing-box.png`;
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation3 = `../../assets/packing-box.png`;
+export const aboutUsImageLocation2 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/packing-box.png`;
+
+// tslint:disable-next-line:max-line-length
+export const aboutUsImageLocation3 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/packing-box.png`;
 
 export const aboutUsLocation1 = [
     {
-        p: `The #1 priority for the professional storage associates at Movin' On Storage Center is
-            our customer service. Clean, dry facilities are a dime a dozen but when you're in a
-            bind and need customer service that goes the extra mile, Movin' On Storage Center is where you go!`,
+        p: `Fohl Street Storage's easy highway access, off of Interstate-77, at Exit 99, makes us one of Canton's most accessible self storage,
+            and recreational vehicle parking facilities. `,
     },
     {
-        p: `We opened our doors in 2000, and our commitment to the members of our community has been at the
-            forefront of our minds from day one. Since we opened our doors, our customers have been served
-            by high quality, well-trained self storage professionals who assist them in finding the appropriate
-            unit and informing them of the amenities we offer to make their stay a convenient one!`,
+        p: `We offer a wide variety of affordable self storage unit options, and parking for recreational vehicles, boats, cars, or trailers.
+            With over 400 units, self storage users can always find the appropriate sized unit for their needs available at Fohl Street Storage.
+        `,
     },
     {
-        p: `We offer multiple sizes of units to store that extra closet's worth of belongings up to shops
-            full of equipment! Our temperature controlled units are available for better protection from
-            the elements, and our video surveillance plus well lit facilities are here to help you feel safe.`,
+        p: `If you're not sure what sized unit you require, call our knowledgeable self storage specialists. The team at Fohl Street Storage is here to help you find the perfect unit,
+            answer any questions you might have, and reserve a unit at your request!`,
     },
+    {
+        p: `Security is a top priority at Fohl Street Storage! That's why we have security cameras monitoring the facility, and our management team performs daily lock checks on all units.
+            We also have electronic gates with personal pin-codes for enhanced security and convenience!`,
+    },
+    {
+        p:`Speaking of convenience, Fohl Street Storage has extended access hours! Your belongings are always accessible between 6:00AM to 10:00PM! The real world doesn't operate on banker's hours,
+            why should your self storage facility?`
+    }
 ];
 
 export const aboutUsLocation2 = [
     {
-        p: `Our clean, well-maintained units are ready to give you that extra few feet of space at
-            home or in the garage. Whether you're preparing for family to visit or discovered you
-            have one too many tote boxes of holiday decorations, one of our storage units is a a perfect fit!`,
+        p: `Fohl Street Storage's easy highway access, off of Interstate-77, at Exit 99, makes us one of Canton's most accessible self storage,
+            and recreational vehicle parking facilities. `,
     },
     {
-        p: `Are you in need of long term storage for your boat or recreational vehicle? We've got outdoor
-            parking spaces perfect for any vehicle! Let us free up that space in your yard until
-            you're ready for another adventure!`,
+        p: `We offer a wide variety of affordable self storage unit options, and parking for recreational vehicles, boats, cars, or trailers.
+            With over 400 units, self storage users can always find the appropriate sized unit for their needs available at Fohl Street Storage.
+        `,
     },
     {
-        p: `Our fully stocked retail store is the ideal place to pick up tape, boxes, bubble wrap and all
-            the necessities for packing and moving! Don't forget to ask about our easy auto-pay program
-            and online account access!`,
+        p: `If you're not sure what sized unit you require, call our knowledgeable self storage specialists. The team at Fohl Street Storage is here to help you find the perfect unit,
+            answer any questions you might have, and reserve a unit at your request!`,
     },
+    {
+        p: `Security is a top priority at Fohl Street Storage! That's why we have security cameras monitoring the facility, and our management team performs daily lock checks on all units.
+            We also have electronic gates with personal pin-codes for enhanced security and convenience!`,
+    },
+    {
+        p:`Speaking of convenience, Fohl Street Storage has extended access hours! Your belongings are always accessible between 6:00AM to 10:00PM! The real world doesn't operate on banker's hours,
+            why should your self storage facility?`
+    }
 ];
 
 export const aboutUsLocation3 = [

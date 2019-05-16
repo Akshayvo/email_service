@@ -25,21 +25,21 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.fetchNavigationLinks();
     this.router.events.subscribe(path => {
-      this.isSomePage();
+      // this.isSomePage();
     });
   }
 
-  public isSomePage() {
-    if (this.router.url.includes('/location/movin-on-storage')) {
-        this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/movin-on-logo.png';
-    } else if (this.router.url.includes('/location/shaler-self')) {
-      this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/shaler-logo.png';
-    } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
-        this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/natrona-logo.png';
-    } else {
-      this.logo = '../../assets/canton-ohio.png';
-    }
-  }
+  // public isSomePage() {
+  //   if (this.router.url.includes('/location/location3')) {
+  //       this.logo = '';
+  //   } else if (this.router.url.includes('')) {
+  //     this.logo = '';
+  //   } else  if (this.router.url.includes(''))  {
+  //       this.logo = '';
+  //   } else {
+  //     this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/canton-ohio.png';
+  //   }
+  // }
 
   public navigate (location: any) {
     this.router.navigate([location]);

@@ -11,18 +11,18 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: '',
-                path: '/location/movin-on-storage',
+                label: 'Fohl Street Storage',
+                path: '/location/fohl-street-storage',
               },
               {
                   id: '2',
-                  label: '',
-                  path: '/location/shaler-self',
+                  label: 'Location 2',
+                  path: '/location/location2',
               },
               {
                   id: '3',
-                  label: 'Fohl Street Storage',
-                  path: '/location/natrona-heights-self',
+                  label: 'Location 3',
+                  path: '/location/location3',
               },
         ]
     },

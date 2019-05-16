@@ -14,15 +14,15 @@ export class SelectLocationComponent implements OnInit {
   places = [
     {
       id: 1,
-      name: '1',
+      name: 'Fohl Street Storage',
     },
     {
       id: 2,
-      name: '2',
+      name: 'Location 2',
     },
     {
       id: 3,
-      name: 'Fohl Street Storage',
+      name: 'Location 3',
     },
  ];
 
@@ -34,6 +34,7 @@ export class SelectLocationComponent implements OnInit {
   this.data.currentLocation.subscribe(locationId => this.locationId = locationId);
   this.getLocation = this.formBuilder.group({
     location: [this.locationId],
+    // location: 1,
   });
  }
 

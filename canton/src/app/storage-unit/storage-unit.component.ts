@@ -19,13 +19,13 @@ export class StorageUnitComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/movin-on-storage')) {
+    if (this.router.url.includes('/location/fohl-street-storage')) {
       this.id = 1;
       this.heading = headingLocation1;
-    } else if (this.router.url.includes('/location/shaler-self')) {
+    } else if (this.router.url.includes('/location/location2')) {
       this.id = 2;
       this.heading = headingLocation2;
-    } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+    } else  if (this.router.url.includes('/location/location3'))  {
       this.id = 3;
       this.heading = headingLocation3;
     }

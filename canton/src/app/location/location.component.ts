@@ -32,21 +32,21 @@ export class LocationComponent implements OnInit {
     private router: Router,
     private titleService: Title,
     ) {
-      if (this.router.url.includes('/location/movin-on-storage')) {
+      if (this.router.url.includes('/location/fohl-street-storage')) {
             this.meta.addTag({
               name: 'description',
               content: `Welcome to Movin' On Storage Center of Charleston, WV!
                         We have a wide selection of storage units and Penske truck rentals!`
             });
             this.titleService.setTitle('Storage Units in Charleston, WV | Movin\' On  Storage Center');
-    } else if (this.router.url.includes('/location/shaler-self')) {
+    } else if (this.router.url.includes('/location/location2')) {
            this.meta.addTag({
              name: 'description',
              content: `Whether you're looking to clear a room for a family gathering or use our
                       seasonal vehicle parking, Shaler Self Storage has your self storage needs covered!`
            });
            this.titleService.setTitle('Storage Units in Alison Park, PA | Shaler Self Storage');
-    } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+    } else  if (this.router.url.includes('/location/location3'))  {
           this.meta.addTag({
             name: 'description',
             content: `Our Fohl Street location offers an on-site manager, wide variety of self storage units, and RV parking spaces! We are Canton's #1 self storage choice!`
@@ -61,24 +61,24 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/movin-on-storage')) {
+    if (this.router.url.includes('/location/fohl-street-storage')) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes('/location/shaler-self')) {
+    } else if (this.router.url.includes('/location/location2')) {
       this.fetchDetailsLocation2();
-    } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+    } else  if (this.router.url.includes('/location/location3'))  {
       this.fetchDetailsLocation3();
     }
  }
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate(['/location/movin-on-storage/reserveUnit'],
+    this.router.navigate(['/location/fohl-street-storage/reserveUnit'],
           { queryParams: { name: 'Movin\' On  Storage Center', currentTab: 'Reserve Unit' }});
   } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/shaler-self/reserveUnit'],
+    this.router.navigate(['/location/location1/reserveUnit'],
           { queryParams: { name: 'Shaler Self Storage', currentTab: 'Reserve Unit' }});
   } else if ( this.locationId === 3) {
-    this.router.navigate(['/location/natrona-heights-self/reserveUnit'],
+    this.router.navigate(['/location/location2/reserveUnit'],
           { queryParams: { name: 'Natrona Heights Self Storage', currentTab: 'Reserve Unit' }});
   }
  }

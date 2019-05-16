@@ -12,7 +12,7 @@ import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
-import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
+
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { PayRentShalerComponent } from './pay-rent-shaler/pay-rent-shaler.component';
@@ -20,32 +20,20 @@ import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.com
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'location/movin-on-storage',
+  { path: 'location/fohl-street-storage',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
       { path: 'storageUnits', component: StorageUnitComponent },
       { path: 'unitSizer', component: UnitSizerComponent },
       { path: 'reserveUnit', component: ReserveUnitComponent },
-      { path: 'truck-rentals', component: TruckRentalsComponent },
+      
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/shaler-self',
-    component: LocationComponent,
-    children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
-      { path: 'reserveUnit', component: ReserveUnitComponent },
-      { path: 'photos', component: PhotosComponent },
-      { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
-    ]
-  },
-  { path: 'location/natrona-heights-self',
+  { path: 'location/location2',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -57,7 +45,19 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/movin-on-storage', component: HomeComponent,
+  { path: 'location/location3',
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      { path: 'storageUnits', component: StorageUnitComponent },
+      { path: 'unitSizer', component: UnitSizerComponent },
+      { path: 'reserveUnit', component: ReserveUnitComponent },
+      { path: 'photos', component: PhotosComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ]
+  },
+  { path: 'review/fohl-street-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -65,7 +65,7 @@ const routes: Routes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ8RMQVzTTSIgRb01wdB59bgo'
     }
   },
-  { path: 'review/shaler-self', component: HomeComponent,
+  { path: 'review/location2', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -73,7 +73,7 @@ const routes: Routes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJM2isvh2NNIgRYjqkBNhmZgk'
     }
   },
-  { path: 'review/natrona-heights-self', component: HomeComponent,
+  { path: 'review/location3', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -85,7 +85,7 @@ const routes: Routes = [
   { path: 'payment', component: PaymentComponent },
   { path: 'pay-rent', component: PayRentComponent },
   { path: 'pay-rent-shaler', component: PayRentShalerComponent },
-  { path: 'pay-rent-natrona', component: PayRentNatronaComponent },
+  { path: 'pay-rent-fohl-street-storage', component: PayRentNatronaComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: ErrorComponent },

@@ -18,11 +18,11 @@ export class DirectionsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/movin-on-storage')) {
+    if (this.router.url.includes('/location/fohl-street-storage')) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes('/location/shaler-self')) {
+     } else if (this.router.url.includes('/location/location2')) {
        this.fetchDetailsLocation2();
-     } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+     } else  if (this.router.url.includes('/location/location3'))  {
        this.fetchDetailsLocation3();
      }
  }

@@ -26,7 +26,7 @@ export class StorageTipsComponent implements OnInit {
       content: `We've been in the self storage business for twenty years.
                 When it comes to properly packing a unit, we've learned a thing or two! `
     });
-    this.titleService.setTitle('Storage Tips | Pittsburgh Area Storage Centers');
+    this.titleService.setTitle('Storage Tips | Canton Self Storage');
   }
 
   ngOnInit() {
