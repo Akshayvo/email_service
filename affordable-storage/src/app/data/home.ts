@@ -18,7 +18,7 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Affordable_Storage_Solutions/convenient-location.svg',
-        label: 'Located',
+        label: 'CONVENIENTLY LOCATED',
         alt: 'Icon art displaying a location pin'
     },
     {

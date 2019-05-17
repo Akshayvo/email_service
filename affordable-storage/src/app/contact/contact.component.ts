@@ -1,10 +1,9 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { WINDOW } from '@ng-toolkit/universal';
-import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-import { EmailService } from '../services/email.service';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
-
+import { EmailService } from '../services/email.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,12 +12,11 @@ import { contact, hours } from '../data/contact';
 })
 export class ContactComponent implements OnInit {
 
-  // form: FormGroup;
   currentActive: any = 'CONTACT US';
+  contactDetails: any;
   hours: any;
   name: string;
   email: any;
-  phone: any;
   message: string;
   contactInfo: any;
   receiveremail: string;
@@ -26,21 +24,28 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;
-  subject: string;
+  head: any;
+  phone: any;
 
   constructor(
-    @Inject(WINDOW) private window: Window,
+    private router: Router,
     private emailService: EmailService,
     private titleService: Title,
     private meta: Meta,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Do you have questions about our self storage units or parking spaces?
-      Use our contact form or the contact information here!`
+      content: `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
+                and U-Haul truck rental questions! Simply call or drop us a line!`
     });
-    this.titleService.setTitle('Contact Us | Affordable Storage Solutions');
+    this.titleService.setTitle('Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414');
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchHours();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -51,57 +56,55 @@ export class ContactComponent implements OnInit {
   });
   }
 
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchHours();
-    window.scrollTo(0, 0);
+  get f() { return this.contactForm.controls; }
+  public navigate(location: any) {
+    this.router.navigate([location]);
   }
 
-  get f() { return this.contactForm.controls; }
   public fetchContactDetails() {
-    this.contactInfo = contact;
+    this.contactDetails = contact;
   }
 
   public fetchHours() {
     this.hours = hours;
   }
 
+
   onSubmit() {
-     this.submitted = true;
+    this.submitted = true;
 
-    // stop here if form is invalid
-    if (this.contactForm.invalid) {
-        return;
-    } else {
-
-      if ( !this.contactForm.value.subject) {
-        this.contactForm.value.subject = 'Website Form Submission';
-      }
-
-      this.receiveremail = this.contactInfo[1].data;
-
-          this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
-                                 message: ${this.contactForm.value.message}`;
-
-          const body = {
-            name: this.contactForm.value.name,
-            email: this.contactForm.value.email,
-            receiveremail: this.receiveremail,
-            message: this.completeMessage,
-            subject: this.contactForm.value.subject,
-          };
-          this.emailService.sendEmail(body)
-            .subscribe((response: any) => {
-              if (response.result != null) {
-                this.mailSent = true;
-              } else {
-              }
-            }, (err) => {
-
-            });
-          this.submitted = false;
-          // MailService(body);
-          this.contactForm.reset();
+   // stop here if form is invalid
+   if (this.contactForm.invalid) {
+       return;
+   } else {
+    if ( !this.contactForm.value.subject) {
+      this.contactForm.value.subject = 'Website Form Submission';
     }
-  }
+
+     this.receiveremail = this.contactDetails[1].data;
+
+     this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
+     message: ${this.contactForm.value.message}`;
+
+         const body = {
+           name: this.contactForm.value.name,
+           email: this.contactForm.value.email,
+           receiveremail: this.receiveremail,
+           message: this.completeMessage,
+           subject: this.contactForm.value.subject,
+         };
+         this.emailService.sendEmail(body)
+           .subscribe((response: any) => {
+             if (response.result != null) {
+                 this.mailSent = true;
+             } else {
+             }
+           }, (err) => {
+           });
+         this.submitted = false;
+         this.mailSent = false;
+         // MailService(body);
+         this.contactForm.reset();
+   }
+ }
 }
