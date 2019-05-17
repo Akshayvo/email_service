@@ -6,7 +6,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { UnitSizerComponent} from './unit-sizer/unit-sizer.component';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -42,6 +42,7 @@ import { ErrorHandlerService } from './services/error-handler.service';
     ContactButtonComponent,
     PayRentComponent,
     ReserveComponent,
+    UnitSizerComponent,
   ],
   imports: [
     CommonModule,

@@ -7,12 +7,13 @@
 
 .disp {
   display: block;
+  
 
   img {
     padding: 10px;
   }
 }
-
+ 
 .font-xs-device {
   a {
     color: black;
@@ -73,18 +74,24 @@
 
     .jumbotron-skew-style {
       width: 72%;
-      float: left;
-      left: -20%;
+      float: right;
+      right: -20%;
       position: relative;
-      transform: skew(15deg);
+      transform: skew(-15deg);
       min-height: 100%;
+    }
+    .jumbotron-skew-text-align{
+      display: flex;
+      justify-content: flex-end;
     }
 
     .jumbotron-skew-text {
-      width: 24%;
+      width: 450px;
       position: absolute;
       top: 30%;
       color: $fontColor;
+      text-align: right;
+      
     }
   }
 }
@@ -106,7 +113,7 @@
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
-        width: 425px;
+        width: 480px;
       }
     }
   }
@@ -129,6 +136,9 @@
 
       .jumbotron {
         height: 100vh;
+      }
+      .jumbotron-skew-style{
+        float: right;
       }
 
       .jumbotron-skew-text {
@@ -198,10 +208,10 @@
     .jumbotron {
       .jumbotron-skew-style {
         width: 84%;
-        float: left;
-        left: -24%;
+        float: right;
+        right: -24%;
         position: relative;
-        transform: skew(15deg);
+        transform: skew(-15deg);
         min-height: 100%;
       }
 
@@ -209,6 +219,7 @@
         width: 480px;
         position: absolute;
         bottom: 0;
+        height: 60px;
       }
 
       .button-width {
@@ -234,6 +245,9 @@
   .jumbotron-bottom {
     display: flex;
     align-items: center;
+    .jumbotron-skew-style{
+      float: right;
+    }
   }
 
   .disp {
@@ -318,14 +332,14 @@
       .jumbotron-skew-style {
         width: 84%;
         float: left;
-        left: -24%;
+        right: -24%;
         position: relative;
-        transform: skew(15deg);
+        transform: skew(-15deg);
         min-height: 100%;
       }
 
       .jumbotron-skew-text {
-        width: 400px;
+        width: 425px;
         position: absolute;
         bottom: 0;
       }
@@ -590,4 +604,9 @@
       height: 200px;
     }
   }
+
+}
+
+a {
+  color: #000 !important;
 }

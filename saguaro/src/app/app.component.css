@@ -1,7 +1,7 @@
 /* Sticky Buttons  */
 .contact-button {
   position: fixed;
-  right: 0;
+  left: 0;
   top: 100px;
   z-index: 16;
   padding-top:30px; 
@@ -15,8 +15,8 @@ button {
   min-width: 40px;
   background-color: #7A2221;
   padding: 10px;
-  border-right: 1px solid #7A2221;
-  border-left: 1px solid white;
+  border-left: 1px solid #7A2221;
+  border-right: 1px solid white;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   cursor: pointer;

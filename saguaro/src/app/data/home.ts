@@ -25,22 +25,26 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Saguaro_Self_Storage/location.svg',
-        label: 'CONVENIENT LOCATION'
+        label: 'CONVENIENT LOCATION',
+        alt: '',
     },
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Saguaro_Self_Storage/online.svg',
-        label: 'Online Reservation & Bill Pay'
+        label: 'Online Reservation & Bill Pay',
+        alt: '',
     },
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Saguaro_Self_Storage/24-hours.svg',
-        label: '24 Hour Facility Access'
+        label: '24 Hour Facility Access',
+        alt: '',
     },
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Saguaro_Self_Storage/stellar.svg',
-        label: 'Stellar Customer Service'
+        label: 'Stellar Customer Service',
+        alt: '',
     },
 ];
 
@@ -70,13 +74,13 @@ export const aboutUs = [
 
 
 
-export const gettingStarted = `Are you ready to begin de-cluttering today? Click below or call Scott, Denise, or Ken at (480) 837-3100 and make your reservation!`;
+export const gettingStarted = `Are you ready to begin de-cluttering today? Click below or call Scott, Denise, or Ken at <a href="tel:4808373100" >(480) 837-3100 </a> and make your reservation!`;
 
 export const blurb = [
     {
         h1: `Affordable Self Storage Units`,
         p: `Saguaro Self Storage has been providing the Fountain Hills community with affordable self storage and stellar customer service since 1996.
             Whether you're looking for a little extra room at home or are a growing business, our website can efficiently make reservations thru a contract
-            without calling the facility. We have the right unit for you! Learn more by calling Scott, Denise or Ken today! (480) 837-3100`,
+            without calling the facility. We have the right unit for you! Learn more by calling Scott, Denise or Ken today! <a id="anchor" href="tel:4808373100">(480) 837-3100</a>`,
     }
 ];

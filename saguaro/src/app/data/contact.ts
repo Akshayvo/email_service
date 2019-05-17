@@ -24,15 +24,15 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Monday-Friday: ',
+        label: 'Monday-Saturday: ',
         data: '9:00AM to 5:00PM'
     },
     {
-        label: 'Saturday-Sunday: ',
+        label: 'Sunday: ',
         data: 'CLOSED'
     },
     {
-        label: 'Access Hours: ',
+        label: 'Gate Access Hours: ',
         data: '24/7'
     },
 ];
