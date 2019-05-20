@@ -70,5 +70,5 @@ export class HomeComponent implements OnInit {
   public fetchFeature () {
     this.feature = feature;
   }
-
+  th
 }

@@ -1,0 +1,26 @@
+<div class="gallery-content">
+  <div class="container px-0">
+    <div class="row image1">
+      <div class="col-lg-12">
+        <div id="selectedImageM" class="text-center selectedImageM">
+          <img *ngIf="selectedImage" src="{{selectedImage.url}}" alt="{{selectedImage.alt}}"  width="100%">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="data">
+          <p class="text-justify gallery-heading"><b> Gallery</b> </p>         
+          <div id="thumbnailsList" class="thumbnailsList">
+            <span *ngFor="let image of galleryImages; let i = index" class="m-1">
+             <img src="{{image.url}}" class="tn" width="70px" height="70px" 
+              data-toggle="image.url" alt="{{image.alt}}"   data-target="#selectedImageM"
+              (click)=setSelectedImage(image)>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- photo gallary1 -->

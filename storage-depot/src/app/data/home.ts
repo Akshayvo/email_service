@@ -28,16 +28,16 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `The Storage Depot has been serving Poughkeepsie, Arlington, Red Oaks Mill, and other communities in Dutchess
-            and Ulster Counties with quality, affordable self storage since 2005. `,
+        p: `The Storage Depot has been serving Poughkeepsie, Arlington, Red Oaks Mill, and other communities in Dutchess and Ulster
+            Counties with quality, affordable self storage since 2005. `,
     },
     {
-        p: `We offer regular self storage units and dedicated single level climate controlled units to protect your belongings
-            from the elements while making loading and unloading easier! `,
+        p: `We are a single level climate controlled self storage facility with a wide variety of unit sizes to protect your belongings
+            from the elements while making loading and unloading easier!`,
     },
     {
-        p: `Do you have extra bulky items or are you looking for convenient unloading? Use our drive-thru loading area, or ask about
-            the available loading docks! Businesses may also sign up to have our staff accept packages for a small fee.`,
+        p: `Do you have extra bulky items or are you looking for convenient unloading? Use our drive-thru loading area, or ask about the available loading docks!
+            Businesses may also sign up to have our staff accept packages for a small fee.`,
     },
     {
         p: `We are also only a few miles from Vassar College, Marist College, Dutchess Community College and the Culinary Institute of America.
