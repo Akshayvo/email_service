@@ -10,7 +10,7 @@ import { WINDOW } from '@ng-toolkit/universal';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'Storage WOrld Mobile';
+  title = 'Storage World Mobile';
   flag: boolean;
   x: any;
 

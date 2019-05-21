@@ -13,15 +13,15 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'Storage world Mobile'`, async(() => {
+  it(`should have as title 'Storage World Mobile'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('Storage world Mobile');
+    expect(app.title).toEqual('Storage World Mobile');
   }));
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Storage world Mobile!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Storage World Mobile!');
   }));
 });
