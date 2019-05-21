@@ -14,7 +14,7 @@ export const storageTips = [
         id: '1',
         label: 'Furniture & Appliances',
         contents: [
-            { data: 'Rent, or purchase an appliance dolly for furniture, major appliances, and stacks of boxes.'},
+            // { data: 'Rent, or purchase an appliance dolly for furniture, major appliances, and stacks of boxes.'},
             { data: 'Remember, loading heavy furniture and appliances is not a one-person job. Get help.'},
             { data: 'For major appliances, consult your user\'s manuals for specific moving and safety instructions.'},
             { data: 'Wipe and dry the interiors of all appliances.'},
@@ -28,7 +28,7 @@ export const storageTips = [
             { data: `Disassemble the bed frame and
             mark each piece so you will have an easy time putting it back together.
             (Use packing tape to tie rails together.)`},
-            { data: 'Wrap mattresses in plastic mattress covers.'},
+            { data: 'Wrap mattresses in an old sheet to keep them dust free.'},
         ],
     },
     {
