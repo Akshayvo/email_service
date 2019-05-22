@@ -1,7 +1,7 @@
 export const contactsLocation1 = [
     {
         label: 'Address:',
-        data: '200 Piedmont Rd, Charleston, WV 25301',
+        data: '200 Piedmont Road, Charleston, WV 25301',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
@@ -11,8 +11,7 @@ export const contactsLocation1 = [
     },
     {
         label: 'Email:',
-        // data: 'movinonstoragecenter@gmail.com',
-        data: 'sanghmitra.v@codeparva.in',
+        data: 'movinonstoragecenter@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
     },
 ];

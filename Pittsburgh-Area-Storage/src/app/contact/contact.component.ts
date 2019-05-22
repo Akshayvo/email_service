@@ -27,6 +27,7 @@ export class ContactComponent implements OnInit {
   receiveremail: string;
   completeMessage: string;
   locationId: any;
+  subject: string;
 
   contactForm: FormGroup;
   submitted = false;
