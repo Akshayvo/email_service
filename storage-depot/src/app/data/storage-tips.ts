@@ -17,6 +17,7 @@ export const storageTips = [
             // { data: 'Rent, or purchase an appliance dolly for furniture, major appliances, and stacks of boxes.'},
             { data: 'Remember, loading heavy furniture and appliances is not a one-person job. Get help.'},
             { data: 'For major appliances, consult your user\'s manuals for specific moving and safety instructions.'},
+            { data: 'We offer flatbeds and dolly carts at the front office for large pieces of furniture and appliances.'},
             { data: 'Wipe and dry the interiors of all appliances.'},
             { data: 'Tape and/or tie down all movable parts.'},
         ],

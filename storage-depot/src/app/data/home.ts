@@ -34,15 +34,16 @@ export const aboutUs = [
     },
     {
         p: `We are a single level climate controlled self storage facility, with a wide variety of unit sizes to protect your belongings 
-            from the elements while making loading, and unloading easier!`,
+            from the elements while making loading, and unloading easier! If you've got large pieces of furniture or appliances, request a flatbed
+            or dolly cart from the front office! `,
     },
     {
-        p: `Do you have extra bulky items, or are you looking for convenient unloading? Use our drive-thru loading area, or ask about the available 
-            loading docks! Businesses may also sign up to have our staff accept packages for a small fee.`,
+        p: `Do you have extra bulky items, or are you looking for convenient unloading? Use our drive-thru loading area, or ask about the available loading
+            docks! Businesses may also sign up to have our staff accept packages for a small fee.`,
     },
     {
-        p: `We are also only a few miles from Vassar College, Marist College, Dutchess Community College and the Culinary Institute of America. College 
-            students love our reasonable rates and convenient access hours!`
+        p: `We are also only a few miles from Vassar College, Marist College, Dutchess Community College and the Culinary Institute of America. College students
+            love our reasonable rates and convenient access hours!`
     }
 ];
 
