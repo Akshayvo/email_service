@@ -11,7 +11,8 @@ export const contactsLocation1 = [
     },
     {
         label: 'Email:',
-        data: 'movinonstoragecenter@gmail.com',
+        // data: 'movinonstoragecenter@gmail.com',
+        data: 'sanghmitra.v@codeparva.in',
         class: 'fas fa-envelope-open mr-2 iconColor',
     },
 ];
@@ -72,7 +73,7 @@ export const hoursLocation2 = [
 export const contactsLocation3 = [
     {
         label: 'Address:',
-        data: '896 Veterans Drive, Natrona Heights, PA 15065',
+        data: '896 Veterans Lane, Natrona Heights, PA 15065',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
 
