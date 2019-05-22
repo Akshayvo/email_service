@@ -23,8 +23,8 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Tuesday to Thursday ',
-        data: '3:00PM - 6:00PM',
+        label: 'Office Hours:',
+        data: 'Tuesday to Thursday  3:00PM - 6:00PM',
     },
     // {
     //     label: 'Gate Access: ',
@@ -36,8 +36,4 @@ export const hours = [
     // },
 ];
 
-// export const socialLink = [
-//     {
-//         
-//     }
-// ];
+
