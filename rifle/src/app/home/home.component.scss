@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .jumbotron {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Rifle_Storage/rifle-self-storage-outdoor-units.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Rifle_Storage/rifle-self-storage-jumbotron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -21,6 +21,7 @@
 
 .btn-outline-primary {
   margin: 8px;
+  border: 2px solid $primary;
 }
 
 .primary-margin {
@@ -56,7 +57,7 @@
   text-align: center;
 
   .heading {
-    border-bottom: 1px solid $primary;
+    border-bottom: 2px solid $primary;
     max-width: 300px;
     margin: auto;
   }
@@ -87,7 +88,7 @@
 
 .locate-us {
   .heading {
-    border-bottom: 1px solid $primary;
+    border-bottom: 2px solid $primary;
     max-width: 500px;
     margin: auto;
   }
@@ -153,7 +154,7 @@
 
 .about-us {
   .heading {
-    border-bottom: 1px solid $primary;
+    border-bottom: 2px solid $primary;
     max-width: 650px;
     margin: auto;
   }
@@ -193,7 +194,7 @@
   }
 }
 
-@media only screen and (min-width: 992px) and (max-height: 480px) {
+@media only screen and (min-width: 992px) and (max-height: 490px) {
   .jumbotron {
     .arrow {
       display: none;
