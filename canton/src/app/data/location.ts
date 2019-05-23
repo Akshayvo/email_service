@@ -80,9 +80,9 @@ export const tabs1 = [
 
 export const headingLocation1 = `Fohl Street Storage`;
 
-export const headingLocation2 = `Location 1`;
+export const headingLocation2 = `Location 2`;
 
-export const headingLocation3 = `Location 2`;
+export const headingLocation3 = `Location 3`;
 
 export const unitSizerLocation3 = [
     {
