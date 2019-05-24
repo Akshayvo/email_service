@@ -17,7 +17,7 @@ export const storageTips = [
             // { data: 'Rent, or purchase an appliance dolly for furniture, major appliances, and stacks of boxes.'},
             { data: 'Remember, loading heavy furniture and appliances is not a one-person job. Get help.'},
             { data: 'For major appliances, consult your user\'s manuals for specific moving and safety instructions.'},
-            { data: 'We offer flatbeds and dolly carts at the front office for large pieces of furniture and appliances.'},
+            { data: 'We offer flatbed carts throughout the storage areas to help move your items.'},
             { data: 'Wipe and dry the interiors of all appliances.'},
             { data: 'Tape and/or tie down all movable parts.'},
         ],
@@ -44,7 +44,7 @@ export const storageTips = [
         id: '4',
         label: 'Clothing',
         contents: [
-            { data: 'Hang clothing from closets in wardrobe boxes or plastic garment bags.'},
+            { data: 'Wardrobe boxes are beneficial for hanging clothes from your closets.'},
             { data: `Store clothing from dresser drawers in sturdy cardboard boxes.
             If the boxes still have some space, consider filling them with bubble wrap.`},
         ],

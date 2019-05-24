@@ -1,13 +1,11 @@
 export const dataViewRates = [
     {
-        p: `The Storage Depot serves Dutchess, and Ulster Counties with high-quality, affordable, self storage services. We are a single level, 
-            climate controlled self storage facility with a variety of unit sizes to help protect your belongings from the elements, and give you 
-            that extra elbow room around the house. Business customers love us too, thanks to our extended access hours and convenient drive-thru 
-            loading areas. If you have a large piece of furniture or appliance, request a flatbed or dolly cart from our front office!`,
+        p: `The Storage Depot serves Dutchess, and Ulster Counties with high-quality, affordable, self storage services. We are an indoor, single level, 
+            climate controlled, drive-thru self storage facility. We offer a variety of unit sizes from a small closet to a large garage, benefiting the 
+            apartment dweller, homeowner or business storage.`,
     },
     {
-        p: `Your belongings will be stored in an enclosed building, with key-pad activated entrance, covered by security cameras 24 hours a day. 
-            Our facility's management team also performs daily lock checks to ensure all units are secured. Don't forget to ask about key-pad access 
-            at the loading docks!`
+        p: `Convenient drive-thru loading area accessible 6:00AM to 11:00PM daily, with key-pad activated entry. Security cameras on premises. 
+            Our facility's management team also performs daily lock checks to ensure all units are secured. `
     }
 ];

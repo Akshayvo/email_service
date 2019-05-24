@@ -33,17 +33,16 @@ export const aboutUs = [
             and Ulster Counties with quality, affordable self storage since 2005.`,
     },
     {
-        p: `We are a single level climate controlled self storage facility, with a wide variety of unit sizes to protect your belongings 
-            from the elements while making loading, and unloading easier! If you've got large pieces of furniture or appliances, request a flatbed
-            or dolly cart from the front office! `,
+        p: `We are an indoor, single level, climate controlled, drive-thru self storage facility. We offer a variety of unit sizes from a small closet 
+            to a large garage. Our drive-thru makes loading and unloading easier!  As a convenience to our customers, flatbed carts are located 
+            throughout the building, to make moving your items easier.  Our Facility also has loading docks available. `,
     },
     {
-        p: `Do you have extra bulky items, or are you looking for convenient unloading? Use our drive-thru loading area, or ask about the available loading
-            docks! Businesses may also sign up to have our staff accept packages for a small fee.`,
+        p: `Businesses may also sign up to have our staff accept packages for a small fee.`,
     },
     {
-        p: `We are also only a few miles from Vassar College, Marist College, Dutchess Community College and the Culinary Institute of America. College students
-            love our reasonable rates and convenient access hours!`
+        p: `We are also only a few miles from Vassar College, Marist College, Dutchess Community College and the Culinary Institute of America. 
+            College students love our reasonable rates and convenient access hours!`
     }
 ];
 
