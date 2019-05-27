@@ -1,0 +1,28 @@
+<div class="view-rates-top">
+  <div class="bg-translucent">
+      <div class="container jumbotorn-top text-center" *ngFor="let viewRates of viewRates">
+          <h1 class="pb-4">{{viewRates.heading}}</h1>
+          <p>{{viewRates.blurb}}</p>
+        </div>
+  </div>
+</div>
+
+<div class="content-Holder bg-dark-background view-rates-bottom">
+  <div class="container py-5">
+    <!-- <h2 class="pb-3">View Rates</h2> -->
+    <div class="row content-margin-top">
+      <div class="col-lg-8 col-md-12 py-3 view-rates-map scroll-wrapper">
+        <iframe id="advanced_iframe" name="advanced_iframe" src="https://hwy412.sim.syrasoft.com/unitavailability" width="100%"
+       scrolling="yes" frameborder="0" border="0" allowtransparency="true" onload=";aiResizeIframe(this, 'true','1');"></iframe>
+      </div>
+      <div class="col-lg-4 col-md-12  py-3 margin-top">
+        <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Hwy_412_Mini_Storage/hwy-412-front-office.jpg" alt="Photograph of a blue roll up self storage unit at St. Joe Self Storage" width="100%" >
+        <div class="py-4"> 
+          <p class="" *ngFor="let viewRate of viewRate ">
+            {{viewRate.p}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

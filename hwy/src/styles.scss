@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+
+//Basic color and font styles
+$primary: #b82025;
+$primaryDark: #690509;
+
+// $primary: #FF9800;
+// $primaryDark: #EF6C00;
+$secondary: #212121;
+
+$dark: rgba(0, 0, 0, 0.2);
+$light: #efefef;
+$white: #fff;
+
+$border: #707070;
+$shadow: #000;
+
+$dark-background: #404040;
+
+$fontColor: $white;
+// $primaryFont: 'Roboto';
+$primaryFont: "Lato", sans-serif;
+
+html,
+body {
+  // font: $primaryFont;
+  font-family: $primaryFont;
+}
+
+.justify {
+  text-align: justify;
+}
+
+// Different Background colors
+.bg-secondary {
+  background: $secondary !important;
+}
+
+// .bg-dark {
+//   background: $dark !important;
+// }
+
+.bg-light {
+  background: $light !important;
+}
+
+.bg-translucent {
+  background: rgba(0, 0, 0, 0.72);
+  width: auto !important;
+  height: 100vh;
+}
+
+.bg-dark-background {
+  background: $dark-background;
+}
+
+.bg-custom {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+// Content Holder Styles
+.contentHolder {
+  min-height: 94vh;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  color: $white !important;
+  min-width: 200px;
+  border-radius: 25px;
+}
+
+.btn-primary:hover {
+  background-color: $primaryDark;
+  border-color: $primaryDark;
+  border-radius: 25px;
+}
+
+.btn-primary:active {
+  background-color: $primary !important;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border-color: $primary;
+  border: 2px solid $primary;
+  min-width: 200px;
+  color: $white !important;
+  border-radius: 25px;
+}
+
+.btn-outline-primary:hover {
+  background-color: $primaryDark;
+  border-color: $primaryDark;
+  border-radius: 25px;
+  color: $white !important;
+}
+
+.btn-outline-primary:active {
+  background-color: $primary !important;
+}
+
+.section-headings {
+  font-weight: 200;
+}
+
+.contact-map {
+  width: 100%;
+}
+
+.heading {
+  font-weight: 400;
+}
+
+.sectionImage {
+  width: 100%;
+}

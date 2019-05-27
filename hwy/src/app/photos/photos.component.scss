@@ -1,0 +1,28 @@
+@import '../../styles.scss';
+
+.gallery-content {
+    background-color: $light;
+    #selectedImageM {
+        img {
+            border: 2px solid $white;
+        }
+    }
+    .data {
+        h3 {
+            text-transform: capitalize;
+            font-size: 1.5rem;
+        }
+    }
+    #thumbnailsList {
+        img {
+            box-shadow: none;
+            border: 1px solid $white;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+        
