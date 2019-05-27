@@ -22,6 +22,7 @@ export class ContactComponent implements OnInit {
   receiveremail: string;
   completeMessage: string;
   contactForm: FormGroup;
+  subject: string;
   submitted = false;
   mailSent = false;
   head: any;
@@ -37,10 +38,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
-                and U-Haul truck rental questions! Simply call or drop us a line!`
+      content: `Do you have questions about our self storage units or parking spaces? Use
+      our contact form or the contact information here!`
     });
-    this.titleService.setTitle('Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414');
+    this.titleService.setTitle('Contact Us | Affordable Storage Solutions');
   }
 
   ngOnInit() {

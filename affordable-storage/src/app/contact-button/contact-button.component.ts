@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailService } from '../services/email.service';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
-import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
-import { Router } from '@angular/router';
-import { StringLiteral } from 'babel-types';
+
 @Component({
   selector: 'app-contact-button',
   templateUrl: './contact-button.component.html',
@@ -13,34 +12,30 @@ export class ContactButtonComponent implements OnInit {
 
   // form: FormGroup;
   hours: any;
-  nameCB: string;
-  emailCB: any;
-  phoneCB: any;
-  messageCB: any;
+  name: string;
+  email: any;
+  phone: any;
+  message: string;
   contactInfo: any;
   receiveremail: string;
   completeMessage: string;
-  subjectCB: StringLiteral;
-  socialLinks: any;
   contactForm: FormGroup;
-
-  valid = true;
   submitted = false;
+  socialLink: any;
+  subject: string;
   mailSent = false;
-  head: any;
-  flag: boolean;
 
   constructor(
     private emailService: EmailService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
   ) {
     this.contactForm = this.formBuilder.group({
-      nameCB: ['', Validators.required],
-      phoneCB: ['', [Validators.required,
-      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      emailCB: ['', [Validators.required, Validators.email]],
-      messageCB: ['', Validators.required],
-      subjectCB: ['']
+      name: ['', Validators.required],
+      phone: ['', [Validators.required,
+              Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required],
+      subject: [''],
   });
   }
 
@@ -63,26 +58,25 @@ export class ContactButtonComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
 
-   // stop here if form is invalid
+   // stop here if form is
    if (this.contactForm.invalid) {
        return;
    } else {
-
-    if ( !this.contactForm.value.subjectCB) {
-      this.contactForm.value.subjectCb = 'Website Form Submission';
-    }
-
      this.receiveremail = this.contactInfo[1].data;
 
-         this.completeMessage = `phone: ${this.contactForm.value.phoneCB}, <br/>
-                                message: ${this.contactForm.value.messageCB}`;
+         this.completeMessage = `<strong>Phone: </strong> ${this.contactForm.value.phone}, <br/>
+                                <strong>Message: </strong> ${this.contactForm.value.message}`;
+
+         if (!this.contactForm.value.subject) {
+          this.contactForm.value.subject = 'Website Contact Form';
+         }
 
          const body = {
-           name: this.contactForm.value.nameCB,
-           email: this.contactForm.value.emailCB,
+           name: this.contactForm.value.name,
+           email: this.contactForm.value.email,
            receiveremail: this.receiveremail,
            message: this.completeMessage,
-           subjectCB: this.contactForm.value.subjectCB,
+           subject: this.contactForm.value.subject
          };
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
@@ -95,8 +89,8 @@ export class ContactButtonComponent implements OnInit {
 
            });
          this.submitted = false;
-         // MailService(body);
-        this.contactForm.reset();
+         this.mailSent = false;
+         this.contactForm.reset();
    }
  }
 }
