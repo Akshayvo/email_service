@@ -519,10 +519,10 @@ export const aboutUsImageLocation1 = `https://s3.amazonaws.com/syrasoft-tenant-f
 export const aboutUsImageLocation2 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave-small.jpg`;
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation3 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg`;
+export const aboutUsImageLocation3 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-4.jpg`;
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation4 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-4.jpg`;
+export const aboutUsImageLocation4 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg`;
 
 
 export const aboutUsLocation1 = [
@@ -545,61 +545,57 @@ export const aboutUsLocation1 = [
 
 export const aboutUsLocation2 = [
     {
-        p: `The StorageTown Rental Spaces Chester location is conveniently located right off of Route 6 at Exit
-        126! Our well-lit, fully-fenced self storage facility is the perfect place to store your belongings during
-        a move or if your growing business just needs a little extra space!`,
+        p: `The StorageTown Rental Spaces Chester location is conveniently located right off of Route 6 at Exit 126! Our well-lit, fully-fenced self 
+            storage facility is the perfect place to store your belongings during a move or if your growing business just needs a little extra space!`,
     },
     {
-        p: `We also offer recreational vehicle and boat parking for seasonal customers! Our facility is covered
-        by CCTV and has a pin-code activated gate to make sure you feel safe at all times.`,
+        p: `We also offer recreational vehicle and boat parking for seasonal customers! Our facility is covered by CCTV and has a pin-code activated 
+            gate for added security.`,
     },
     {
-        p: `We are proud to serve Orange County, Westchester, and all points south with affordable, well maintained
-        self storage units and RV/Boat storage! Storagetown Rental Spaces at Chester also has a fully stocked retail
-        store with all of the boxes, tape, and packing supplies you'll need to make your stay with us a breeze!`,
+        p: `We are proud to serve Orange County, Westchester, and all points south with affordable, well-maintained self storage units and RV/Boat 
+            storage! Storagetown Rental Spaces at Chester also sells you'll need to make your stay with us a breeze! `,
     },
 ];
 
 export const aboutUsLocation3 = [
     {
-        p: `StorageTown Rental Spaces at Montgomery serves Montgomery, Walden, and Maybrook. We also serve many
-        customers in Orange, Ulster, and Dutchess County.`,
+        p: `StorageTown Rental Spaces at Montgomery serves Montgomery, Walden, and Maybrook. We also serve many customers in Orange, Ulster, 
+            and Dutchess County.`,
     },
     {
-        p: `We are conveniently located off of Exit 5 on Route 84! StorageTown Rental offers both self storage
-        units and parking spaces for recreational vehicles or boats. Whether you are a residential storage user just
-        looking for a little extra room for seasonal belongings or need a large unit during a major move, we have units
-        to suit your needs! Our commercial customers love our extended gate hours! Pick up or drop off your supplies and
-        inventory outside of regular business hours!`,
+        p: `We are conveniently located off of Exit 5 on Route 84! StorageTown Rental offers both self storage units and parking spaces for 
+            recreational vehicles or boats. Whether you are a residential storage user just looking for a little extra room for seasonal belongings 
+            or need a large unit during a major move, we have units to suit your needs! Pick up or drop off your supplies and inventory outside of 
+            regular business hours! `,
     },
     {
-        p: `The safety of your belongings is of the utmost importance to us. That's why our Montgomery facility is
-        well-lit and covered by security cameras. The entire facility is fenced and accessible via pin-code activated
-        gate!`,
+
+        p: `Your belongings are of the utmost importance to us. That's why our Montgomery facility is well-lit and covered by security cameras. 
+            The entire facility is fenced and accessible via pin-code activated gate!`,
     },
     {
-        p: `We even offer online reservations and online bill-pay. Check your balance and pay your rent online 24/7 by
-        simply following the instructions on the Pay Rent page!`
+        p: `We even offer online reservations and online bill-pay. Check your balance and pay your rent online 24/7 by simply following the instructions 
+            on the Pay Rent page!`
     }
 ];
 
 
 export const aboutUsLocation4 = [
     {
-        p: `The StorageTown Rental Spaces Middletown location serves Middletown, Wallkill, Goshen and surrounding areas
-        with affordable, well maintained self storage units and recreational vehicle parking spaces. We understand your
-        access needs don't always follow standard business hours which is why we offer extended gate access 7 days
-        a week as standard.`,
+        p: `The StorageTown Rental Spaces Middletown location serves Middletown, Wallkill, Goshen and surrounding areas with affordable, 
+            well maintained self storage units and recreational vehicle parking spaces. `,
     },
     {
-        p: `Our well-lit, fully-fenced facility comes complete with fully alarmed self storage units to protect
-        your belongings and provide a sense of safety while loading or unloading your vehicle. Boat and RV owners can
-        rest easy knowing their property is covered by 24 hour CCTV.`,
+        p: `Our well-lit, fully-fenced facility comes complete with fully alarmed self storage units. Boat and RV owners can rest 
+            easy knowing their property is covered by 24 hour CCTV.`,
     },
     {
-        p: `Use our easy online reservation system to reserve your unit 24/7 and existing tenants may use our convenient
-        online tenant portal to pay their rent! Whether you're moving and need some temporary extra space or a business
-        with excess inventory or supplies, StorageTown Rental Space of Middletown has you covered!`,
+        p: `Use our easy online reservation system to reserve your unit 24/7 and existing tenants may use our convenient online tenant 
+            portal to pay their rent! Whether you're moving and need some temporary extra space or a business with excess inventory or supplies, 
+            StorageTown Rental Space of Middletown has you covered!
+
+        `,
     },
 ];
 

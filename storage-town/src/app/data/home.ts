@@ -24,20 +24,18 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `StorageTown Rental Spaces offers a wide variety of units and parking spaces for cars, recreational vehicles,
-        boats and trailers. We are proud to serve the Orange County communities with facilities in conveniently located
-        in Chester, Montgomery and Middleton.`,
+        p: `StorageTown Rental Spaces offers self storage units and parking spaces for recreational vehicles, and boats(requiring title, insurance, 
+            and current registration). We are proud to serve the Orange County communities with facilities conveniently located in Chester, Montgomery, 
+            and Middletown.`,
     },
     {
-        p: `Each facility offers a full retail store where you can pick up packing boxes, tape, dust covers, locks,
-        bubble wrap and other moving or self storage related supplies! We offer easy online reservations and bill-pay
-        to make your stay with us a convenient one!`,
+        p: `Each facility offers packing boxes, tape, locks, dust-covers, furniture, and mattress covers! We offer easy online reservations and bill-pay 
+            to make your stay with us a convenient one!`,
     },
     {
-        p: `All StorageTown Rental Spaces facilities are fully fenced, well-lit and covered by surveillance cameras!
-        All units have high, 9' ceilings and are ground-level for easy accessibility. We have both short and long term
-        rental agreements so whether you're in need of residential storage for a brief move or long term inventory and
-        supplies storage, we've got you covered!`,
+        p: `All StorageTown Rental Spaces facilities are fully fenced, well-lit, and covered by security cameras! Each facility is secured behind a 
+            pin-code activated gate for added security. All units have high, 9' ceilings and are ground-level for easy accessibility. We have both short 
+            and long term rental agreements so whether you're in need of residential storage for a brief move or long term inventory and supplies storage, we've got you covered!`,
     },
 ];
 

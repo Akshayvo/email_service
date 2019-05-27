@@ -57,13 +57,13 @@ export const storageTips = [
             { data: 'Artwork & mirrors should be wrapped in paper, covered with cardboard.'},
         ],
     },
-    {
-        id: '6',
-        label: 'Collectables',
-        contents: [
-            { data: 'Wrap each fragile item separately with bubble wrap and packing tape.'},
-            { data: 'Layer wrapped items in sturdy cardboard box using large peanuts or wadded paper between.'},
-            { data: 'Place a final layer of peanuts or wadded paper on top, seal and mark.'},
-        ],
-    },
+    // {
+    //     id: '6',
+    //     label: 'Collectables',
+    //     contents: [
+    //         { data: 'Wrap each fragile item separately with bubble wrap and packing tape.'},
+    //         { data: 'Layer wrapped items in sturdy cardboard box using large peanuts or wadded paper between.'},
+    //         { data: 'Place a final layer of peanuts or wadded paper on top, seal and mark.'},
+    //     ],
+    // },
 ];

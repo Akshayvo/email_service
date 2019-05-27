@@ -28,7 +28,10 @@
 
 
 .active-tab {
-  background-color: $light !important;
+  background-color: $primary !important;
+  a {
+    color: white;
+  };
 }
 
 @media only screen and (min-width: 770px) {
