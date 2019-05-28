@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://www.highway-staging.syrasoft.com/sitemap.xml
+Sitemap: https://www.412ministorage.com/sitemap.xml
 User-agent: *
 Disallow:

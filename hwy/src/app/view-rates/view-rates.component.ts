@@ -22,7 +22,7 @@ export class ViewRatesComponent implements OnInit {
       content: `Check out our affordable self storage unit rates, and make your reservation here
       with our handy online tenant portal!`
     });
-    this.titleService.setTitle('Affordable Storage in Springdale, AR | Hwy 412 Mini Storage');
+    this.titleService.setTitle('Storage Units In Springdale, AR | Hwy 412 Mini Storage');
   }
 
   ngOnInit() {

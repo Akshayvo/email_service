@@ -25,7 +25,7 @@ export class UnitSizerComponent implements OnInit {
       content: `Are you having trouble figuring out what sized unit to select? Use our
       handy self storage unit sizer to help you decide!`
     });
-    this.titleService.setTitle('Unit Sizer | Hwy 312 Mini Storage');
+    this.titleService.setTitle('Unit Sizer | Hwy 412 Mini Storage');
   }
 
   ngOnInit() {
