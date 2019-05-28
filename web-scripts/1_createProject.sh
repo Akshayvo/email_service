@@ -25,15 +25,19 @@ else
 	mkdir "${project_name}"
       	echo "Project created successfully"         
 fi
-# To modify the template source path   			
-source="/home/sagar/Websites/Universal_Template/"
+# To modify the template source path   	
+echo $(pwd)	
+echo "enter Universal Template path"
+read source
+# source="/home/prabhakar/websites/Websites/Universal_Template/"
+echo $source
 if [ -d "$source" ]; then
 	continue
 else 
 	echo "The source path doesn't exists"
 	exit 1
 fi        
-# create a project 
+# create a project copy the universal template files to new project exluding dist and node_modules
 rsync -av --progress "$source" "${dest_path}"/"${project_name}" --exclude dist --exclude node_modules
 # Renaming the project name
 export camel_to_under
@@ -44,9 +48,9 @@ cd $cwd
 sh ./2_Rename_proj_filename.sh
 
 cd "${dest_path}"/"${project_name}"
-
+echo $(pwd)
 while true; do
-    		read -p "Do you want to start ?" yn
+    		read -p "Do you want to install npm?" yn
     		case $yn in
         		[Yy]* ) $(pwd | npm install);
 				ng serve -o;

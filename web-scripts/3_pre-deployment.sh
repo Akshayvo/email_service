@@ -22,12 +22,12 @@ timestamp=`date "+%d-%m-%Y"`
 dest_folder=$(echo "${directory}"_dist.zip)
 backup_file=$(echo "${directory}"_backup.zip)
 echo "$backup_file"
-dist_folder_path=$(echo "${folder_path}"dist/)
-if [ -e "${folder_path}"dist ];then
+dist_folder_path=$(echo "${folder_path}"/dist/)
+if [ -e "${folder_path}"/dist ];then
 	echo "Folder already exists"
 	# zip the file dist 
 	
-		if [ -e "${dist_folder_path}"server.js ];then
+		if [ -e "${dist_folder_path}"/server.js ];then
 			echo " server.js file exists in the dist folder"
 			#cp "${folder_path}"/server.js "${prev_folder}"/server.js
 	
@@ -45,13 +45,13 @@ if [ -e "${folder_path}"dist ];then
 	zip -r "${dest_folder}" dist/
         zip -r "${backup_file}" dist/
 else
-	echo "Folder doesnot exists"
+	echo "dist Folder doesnot exists"
 	while true; do
     		read -p "do you want to create the folder?" yn
     		case $yn in
         		[Yy]* ) cd "${folder_path}"
 				npm run build:ssr;
-					if [ -e "${dist_folder_path}"server.js ];then
+					if [ -e "${dist_folder_path}"/server.js ];then
 						echo " server.js file exists in the dist folder"
 						#cp "${folder_path}"/server.js "${prev_folder}"/server.js
 	
