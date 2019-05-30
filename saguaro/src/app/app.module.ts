@@ -23,7 +23,6 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
-import { ReserveComponent } from './reserve/reserve.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 
 @NgModule({
@@ -41,7 +40,6 @@ import { ErrorHandlerService } from './services/error-handler.service';
     AccordionComponent,
     ContactButtonComponent,
     PayRentComponent,
-    ReserveComponent,
     UnitSizerComponent,
   ],
   imports: [
