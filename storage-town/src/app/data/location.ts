@@ -564,10 +564,10 @@ export const aboutUsLocation3 = [
             and Dutchess County.`,
     },
     {
-        p: `We are conveniently located off of Exit 5 on Route 84! StorageTown Rental offers both self storage units and parking spaces for 
-            recreational vehicles or boats. Whether you are a residential storage user just looking for a little extra room for seasonal belongings 
-            or need a large unit during a major move, we have units to suit your needs! Pick up or drop off your supplies and inventory outside of 
-            regular business hours! `,
+        p: `We are conveniently located off of Exit 5 on Route 84! StorageTown Rental offers both self storage units and parking spaces for recreational 
+            vehicles or boats. We also sell boxes, tape, locks, furniture, and dust covers. Whether you are a residential storage user just looking for 
+            a little extra room for seasonal belongings or need a large unit during a major move, we have units to suit your needs! Pick up, or drop off 
+            your supplies, and inventory outside of regular business hours!`,
     },
     {
 
