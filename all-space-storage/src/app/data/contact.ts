@@ -23,17 +23,9 @@ export const contactsLocation1 = [
 
 export const hoursLocation1 = [
     {
-        label: 'Mon, Wed, Fri: ',
-        data: '10am-5pm',
+        label: 'Mon - Sat: ',
+        data: '10am - 2pm',
         // class: 'bg-light'
-    },
-    {
-        label: 'Tues,Thurs: ',
-        data: '10am-2pm',
-    },
-    {
-        label: 'Saturday: ',
-        data: '10am-4pm',
     },
     {
         label: 'Sunday: ',
