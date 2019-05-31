@@ -17,7 +17,7 @@ export class TablesComponent implements OnInit {
   ngOnInit() {
     this.th = this.tHead;
     this.tds = this.tBody;
-    this.objectKeys = Object.keys(this.tds[0]);
+    this.objectKeys = this.tds && this.tds[0] ? Object.keys(this.tds[0]) : [];
   }
 
 }
