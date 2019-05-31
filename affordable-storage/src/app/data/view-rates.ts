@@ -13,3 +13,21 @@ export const dataViewRates = [
         help! Simply call (479) 253-6117 and a member of our team will be happy to assist you!`
     }
 ];
+
+export const rate = [
+    {
+        td3: 'SIZE',
+        td4: 'RATE ',
+        td5: 'Deposit'
+    },
+    {
+        td3: '10 X 10',
+        td4: ' $45.00',
+        td5: '$45.00'
+    },
+    {
+        td3: 'Outside',
+        td4: '$30.00',
+        td5: '0.00'
+    }
+];

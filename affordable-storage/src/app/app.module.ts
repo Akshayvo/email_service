@@ -20,7 +20,6 @@ import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
-import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
@@ -40,7 +39,6 @@ import { ErrorHandlerService } from './services/error-handler.service';
     StorageTipsComponent,
     AccordionComponent,
     ContactButtonComponent,
-    PayRentComponent,
     ReserveUnitComponent,
   ],
   imports: [

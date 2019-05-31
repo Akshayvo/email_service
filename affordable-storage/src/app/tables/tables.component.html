@@ -5,7 +5,7 @@
         <th colspan="2" class="table-head">{{th}}</th>
       </tr>
     </tHead>
-    <tbody>
+    <tbody class="custo-styling">
       <tr *ngFor="let td of tds">
         <td *ngFor="let key of objectKeys;">
           <p *ngIf="(key === 'label')">
@@ -14,6 +14,7 @@
           <p *ngIf="(key === 'data')">{{td[key]}}</p>
           <p class="text-align-right" *ngIf="(key === 'rate')">{{td[key]}}</p>
           <ul *ngIf="(key === 'td1' || key === 'td2' && td[key] !== undefined)"><li>{{td[key]}}</li></ul>
+          <p *ngIf="(key === 'td3' || key === 'td4' || key === 'td5' && td[key] !== undefined)">{{td[key]}}</p>
         </td>
       </tr>
     </tbody>
