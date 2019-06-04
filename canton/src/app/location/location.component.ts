@@ -38,18 +38,18 @@ export class LocationComponent implements OnInit {
               content: `Our Fohl Street location offers an on-site manager, wide variety of self storage units, and RV parking spaces! We are Canton's #1 self storage choice!`
             });
             this.titleService.setTitle('Affordable Storage in Canton, Ohio | Self Storage of Canton');
-    } else if (this.router.url.includes('/location/location2')) {
+    } else if (this.router.url.includes('/location/louisville-self-storage')) {
            this.meta.addTag({
              name: 'description',
-             content: ``
+             content: `We offer affordable, clean, well-maintained units, and excellent customer service to Louisville, Hartville, Canton, and the surrounding communities!`
            });
-           this.titleService.setTitle('');
-    } else  if (this.router.url.includes('/location/location3'))  {
+           this.titleService.setTitle('Affordable Storage Units | Louisville Self Storage');
+    } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
           this.meta.addTag({
             name: 'description',
-            content: ``
+            content: `Are you looking for self storage in an affordable, well-lit, fully-fenced facility? Lincoln Street Storage has you covered! `
           });
-          this.titleService.setTitle('');
+          this.titleService.setTitle('Affordable Storage Units in Canton | Lincoln Street Storage');
     }
     }
 
@@ -61,9 +61,9 @@ export class LocationComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/fohl-street-storage')) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes('/location/location2')) {
+    } else if (this.router.url.includes('/location/louisville-self-storage')) {
       this.fetchDetailsLocation2();
-    } else  if (this.router.url.includes('/location/location3'))  {
+    } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
       this.fetchDetailsLocation3();
     }
  }
@@ -73,10 +73,10 @@ export class LocationComponent implements OnInit {
     this.router.navigate(['/location/fohl-street-storage/reserveUnit'],
           { queryParams: { name: 'fohl street storage', currentTab: 'Reserve Unit' }});
   } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/location1/reserveUnit'],
+    this.router.navigate(['/location/louisville-self-storage/reserveUnit'],
           { queryParams: { name: 'Location2', currentTab: 'Reserve Unit' }});
   } else if ( this.locationId === 3) {
-    this.router.navigate(['/location/location2/reserveUnit'],
+    this.router.navigate(['/location/lincoln-street-storage/reserveUnit'],
           { queryParams: { name: 'Location3', currentTab: 'Reserve Unit' }});
   }
  }

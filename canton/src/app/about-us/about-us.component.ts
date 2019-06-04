@@ -29,9 +29,9 @@ export class AboutUsComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/fohl-street-storage')) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes('/location/location2')) {
+  } else if (this.router.url.includes('/location/louisville-self-storage')) {
     this.fetchDetailsLocation2();
-  } else  if (this.router.url.includes('/location/location3'))  {
+  } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
     this.fetchDetailsLocation3();
   }
   }
@@ -47,14 +47,14 @@ export class AboutUsComponent implements OnInit {
     this.aboutPara = aboutUsLocation2;
     this.heading = aboutUsHeadingLocation2;
     this.image = aboutUsImageLocation2;
-    this.alt = 'Photograph of a cardboard box being opened';
+    this.alt = 'Photograph of an open cardboard box';
   }
 
   public fetchDetailsLocation3() {
     this.aboutPara = aboutUsLocation3;
     this.heading = aboutUsHeadingLocation3;
     this.image = aboutUsImageLocation3;
-    this.alt = 'Photograph of a cardboard box being opened';
+    this.alt = 'Photograph of an open cardboard box';
   }
 
   public fetchServiceOffered() {

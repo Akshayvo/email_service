@@ -18,11 +18,11 @@ export class SelectLocationComponent implements OnInit {
     },
     {
       id: 2,
-      name: 'Location 2',
+      name: 'Louisville Self Storage',
     },
     {
       id: 3,
-      name: 'Location 3',
+      name: 'Lincoln Street Storage',
     },
  ];
 

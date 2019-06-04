@@ -26,9 +26,9 @@ export class PhotosComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/fohl-street-storage')) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes('/location/location2')) {
+  } else if (this.router.url.includes('/location/louisville-self-storage')) {
     this.fetchDetailsLocation2();
-  } else  if (this.router.url.includes('/location/location3'))  {
+  } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
     this.fetchDetailsLocation3();
   }
   }

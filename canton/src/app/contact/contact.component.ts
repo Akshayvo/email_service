@@ -75,10 +75,10 @@ export class ContactComponent implements OnInit {
   public dataupdate() {
     if ( this.locationId === '1' || this.locationId === 1 ) {
       this.fetchContactDetailsLocation1();
-    // } else if ( this.locationId === '2' ) {
-    //   this.fetchContactDetailsLocation2();
-    // } else if ( this.locationId === '3' ) {
-    //   this.fetchContactDetailsLocation3();
+    } else if ( this.locationId === '2' ) {
+      this.fetchContactDetailsLocation2();
+    } else if ( this.locationId === '3' ) {
+      this.fetchContactDetailsLocation3();
     }
   }
 
@@ -88,17 +88,17 @@ export class ContactComponent implements OnInit {
     this.hoursDetails = hoursLocation1;
   }
 
-  // public fetchContactDetailsLocation2() {
-  //   this.heading = `Shaler Self Storage`;
-  //   this.contactDetails = contactsLocation2;
-  //   this.hoursDetails = hoursLocation2;
-  // }
+  public fetchContactDetailsLocation2() {
+    this.heading = `Louisville Self Storage`;
+    this.contactDetails = contactsLocation2;
+    this.hoursDetails = hoursLocation2;
+  }
 
-  // public fetchContactDetailsLocation3() {
-  //   this.heading = `Fohl Street Storage`;
-  //   this.contactDetails = contactsLocation3;
-  //   this.hoursDetails = hoursLocation3;
-  // }
+  public fetchContactDetailsLocation3() {
+    this.heading = `Lincoln Street Storage`;
+    this.contactDetails = contactsLocation3;
+    this.hoursDetails = hoursLocation3;
+  }
 
 onSubmit() {
   this.submitted = true;

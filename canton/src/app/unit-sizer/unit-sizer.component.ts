@@ -23,9 +23,9 @@ export class UnitSizerComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/fohl-street-storage')) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes('/location/location2')) {
+  } else if (this.router.url.includes('/location/louisville-self-storage')) {
     this.fetchDetailsLocation2();
-  } else  if (this.router.url.includes('/location/location3'))  {
+  } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
     this.fetchDetailsLocation3();
   }
   }
@@ -33,27 +33,23 @@ export class UnitSizerComponent implements OnInit {
   public fetchDetailsLocation1() {
     this.unitSizer = unitSizerLocation1;
     this.h2tag = 'Unit Sizer';
-    this.description = `Finding the right size is easy, below you will find some
-                        of the common storage units, by size and what typically fits.
-                        TIP: remember to think 'cubic', do your items just need floor
-                        space or can they stack and fit together? *Actual contents
-                        vary depending of the size of your belongings.`;
+    this.description = `Are you having trouble figuring out what sized unit you need? Use this handy unit sizer to help visualize what
+                        fits into what size units or call (330) 484-1370 and one of our self storage specialists will be happy to assist you!`;
   }
 
   public fetchDetailsLocation2() {
     this.h2tag = 'Unit Sizer';
-    this.description = `Finding the right size is easy, below you will find some of
-                        the common storage units, by size and what typically fits.
-                        TIP: remember to think 'cubic', do your items just need floor
-                        space or can they stack and fit together?
-                        *Actual contents vary depending of the size of your belongings`;
+    this.description = `Unit Sizer Finding the right size is easy, below you will find some of the common storage units, by size and what typically fits. 
+                        TIP: remember to think 'cubic', do your items just need floor space or can they stack and fit together? *Actual contents vary 
+                        depending of the size of your belongings.`;
     this.unitSizer = unitSizerLocation2;
   }
 
   public fetchDetailsLocation3() {
     this.h2tag = 'Unit Sizer';
-    this.description = `Are you having trouble figuring out what sized unit you need? Use this handy unit sizer to help visualize what
-                        fits into what size units or call (330) 484-1370 and one of our self storage specialists will be happy to assist you!`;
+    this.description = `Finding the right size is easy, below you will find some of the common storage units, by size and what typically fits. 
+                        TIP: remember to think 'cubic', do your items just need floor space or can they stack and fit together? *Actual contents vary 
+                        depending of the size of your belongings.`;
     this.unitSizer = unitSizerLocation3;
   }
 }

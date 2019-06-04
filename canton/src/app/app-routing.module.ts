@@ -33,7 +33,7 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/location2',
+  { path: 'location/louisville-self-storage',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -45,7 +45,7 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/location3',
+  { path: 'location/lincoln-street-storage',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -65,26 +65,26 @@ const routes: Routes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJx32Lt_3bNogRIrBW_3LA8U8'
     }
   },
-  { path: 'review/location2', component: HomeComponent,
+  { path: 'review/louisville-self-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJx32Lt_3bNogRIrBW_3LA8U8'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJN-OSxhzMNogRU44CHDYQuT0'
     }
   },
-  { path: 'review/location3', component: HomeComponent,
+  { path: 'review/lincoln-street-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJx32Lt_3bNogRIrBW_3LA8U8'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJb8wEymTFNogRYZrBZBX-ZO4'
     }
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'payment', component: PaymentComponent },
-  { path: 'pay-rent', component: PayRentComponent },
-  { path: 'pay-rent-shaler', component: PayRentShalerComponent },
+  { path: 'pay-rent-lincoln-street-storage', component: PayRentComponent },
+  { path: 'pay-rent-louisville-self-storage', component: PayRentShalerComponent },
   { path: 'pay-rent-fohl-street-storage', component: PayRentNatronaComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },

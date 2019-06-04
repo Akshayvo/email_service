@@ -16,13 +16,13 @@ export const navLinks = [
               },
               {
                   id: '2',
-                  label: 'Location 2',
-                  path: '/location/location2',
+                  label: 'Louisville Self Storage',
+                  path: '/location/louisville-self-storage',
               },
               {
                   id: '3',
-                  label: 'Location 3',
-                  path: '/location/location3',
+                  label: 'Lincoln Street Storage',
+                  path: '/location/lincoln-street-storage',
               },
         ]
     },

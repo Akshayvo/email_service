@@ -20,9 +20,9 @@ export class DirectionsComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/fohl-street-storage')) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes('/location/location2')) {
+     } else if (this.router.url.includes('/location/louisville-self-storage')) {
        this.fetchDetailsLocation2();
-     } else  if (this.router.url.includes('/location/location3'))  {
+     } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
        this.fetchDetailsLocation3();
      }
  }
@@ -34,13 +34,13 @@ export class DirectionsComponent implements OnInit {
 }
   public fetchDetailsLocation2() {
     // this.directionPoints = directionLocation2;
-    this.directionHeading = `Directions to location2 `;
+    this.directionHeading = `Directions to Louisville Self Storage`;
     this.id = 2;
   }
 
   public fetchDetailsLocation3() {
     // this.directionPoints = directionLocation3;
-    this.directionHeading = `Directions to location3`;
+    this.directionHeading = `Directions to Lincoln Street Storage`;
     this.id = 3;
   }
 }
