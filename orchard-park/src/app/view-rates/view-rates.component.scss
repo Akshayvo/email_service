@@ -24,7 +24,11 @@
       min-width: 100%;
     }
   }
-
+  .row{
+    iframe{
+      height: 50vh;
+    }
+  }
   .coming {
     div {
       height: 35rem;
