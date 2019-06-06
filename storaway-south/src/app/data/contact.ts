@@ -10,7 +10,7 @@ export const contact = [
         id: 1,
         redirect: 'mailto:storawaysouth17@gmail.com',
         label: 'Email:',
-        data: 'storawaysouth17@gmail.com', 
+        data: 'storawaysouth17@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {

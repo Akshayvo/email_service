@@ -65,7 +65,7 @@ export class UnitSizerComponent implements OnInit {
     if ( this.i === 0 ) {
       this.h = 4;
       this.j = this.i + 1;
-    } else if ( this.i === 5 ) {
+    } else if ( this.i === 4 ) {
       this.j = 0;
       this.h = this.i - 1;
     } else {

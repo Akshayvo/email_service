@@ -26,25 +26,25 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/location.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_South/location.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/hand.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_South/hand.svg',
         label: 'Affordable Self Storage Rates',
         alt: 'Icon of a hand holding money'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/garage.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_South/garage.svg',
         label: 'Boat and Vehicle Storage',
         alt: ' Icon art displaying boat and motorcycle'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/fence.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_South/fence.svg',
         label: 'Fully-Fenced Facility',
         alt: 'Icon of a section of fencing'
     },

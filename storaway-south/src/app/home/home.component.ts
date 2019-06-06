@@ -33,7 +33,8 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Our Bridgeville location offers over 400 fully-fenced, well-lit self storage units at extremely affordable rates. Click or call today to learn more!`
+      content: `Our Bridgeville location offers over 400 fully-fenced, well-lit self storage units at extremely affordable rates. Click or call 
+                today to learn more!`
     });
     this.titleService.setTitle('Affordable Storage Units in Bridgeville | Stor-A-Way South');
   }

@@ -37,7 +37,8 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Do you have a question about our services or your account? Use our contact form or the information listed here to contact Stor-A-Way South.`
+      content: `Do you have a question about our services or your account? Use our contact form or the information listed here to contact Stor-A-Way 
+                South.`
     });
     this.titleService.setTitle('Contact Us | Stor-A-Way South');
     this.contactForm = this.formBuilder.group({

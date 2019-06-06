@@ -1,5 +1,5 @@
  # www.robotstxt.org/
  # Allow crawling of all content
-Sitemap: https://www.storawaynorth-staging.syrasoft.com//sitemap.xml
+Sitemap: https://www.storawaysouth-staging.syrasoft.com/sitemap.xml
  User-agent: *
  Disallow:
