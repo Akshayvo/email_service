@@ -13,14 +13,14 @@
   
           <div class="col-lg-4 col-md-6 rent-example padding-for-small-device">
             <h2> How to Login </h2>
-            <p class="pt-3"> <b>Username:</b> First initial + Last Name </p>
-            <p> <b>Password:</b> Your Gate Code</p>
+            <p class="pt-3"> <b>Username:</b>  First initial + Last Name </p>
+            <p> <b>Password:</b> Your Full Phone Number</p>
         
             <p class="py-3"> <b>Example</b> </p>
-            <p class="pb-3">John Smith's Gate Code is 1234</p>
+            <p class="pb-3">John Smith's phone number is 555-555-5555</p>
         
             <p> <b>John's Username:</b> jsmith </p>
-            <p class="pb-3"> <b>John's Password:</b> 1234 </p>
+            <p class="pb-3"> <b>John's Password:</b>5555555555 </p>
         
             <p><b>Have questions about your account?</b><br>
               <span *ngFor="let contact of contact"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
