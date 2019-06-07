@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+
+//Basic color and font styles
+$primary: #4ecca6;
+$primaryDark: rgb(51, 161, 128);
+
+// $primary: #FF9800;
+// $primaryDark: #EF6C00;
+$secondary: #212121;
+
+$dark: #333;
+$light: #efefef;
+$white: #fff;
+
+$border: #707070;
+$shadow: #000;
+
+$fontColor: #707070;
+// $primaryFont: 'Roboto';
+$primaryFont: "Lato", sans-serif;
+
+body {
+  // font: $primaryFont;
+  font-family: $primaryFont;
+}
+
+.justify {
+  text-align: justify;
+}
+
+// Different Background colors
+.bg-secondary {
+  background: $secondary !important;
+}
+
+.bg-dark {
+  background: $dark !important;
+}
+
+.bg-light {
+  background: $light !important;
+}
+
+.bg-translucent {
+  background: rgba(0, 0, 0, 0.6);
+  // position: relative;
+}
+
+// Content Holder Styles
+.contentHolder {
+  min-height: 90vh;
+}
+
+.btn-primary {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  color: $white !important;
+  min-width: 200px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border-color: $primary !important;
+  border: 2px solid $primary !important;
+  min-width: 200px;
+  color: $white !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
+}
+
+.section-headings {
+  font-weight: 200;
+}
+
+.contact-map {
+  width: 100%;
+}
+
+.heading {
+  font-weight: 400;
+}
+
+.sectionImage {
+  width: 100%;
+}
