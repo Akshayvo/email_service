@@ -30,7 +30,14 @@ import { SelectLocationComponent } from './select-location/select-location.compo
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
-
+import { PayRentComponent } from './pay-rent-florida/pay-rent-florida.component';
+import { PayRentChesterComponent } from './pay-rent-chester/pay-rent-chester.component'
+import { PayRentMontgomeryComponent } from './pay-rent-montgomery/pay-rent-montgomery.component';
+import { PayRentMiddletownComponent } from './pay-rent-middletown/pay-rent-middletown.component';
+import { ContactFloridaComponent } from './contact-florida/contact-florida.component';
+import { ContactMontgomeryComponent } from './contact-montgomery/contact-montgomery.component';
+import { ContactChesterComponent } from './contact-chester/contact-chester.component';
+import { ContactMiddletownComponent } from './contact-middletown/contact-middletown.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +59,15 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
     TabsComponent,
     AccordionComponent,
     SelectLocationComponent,
-    ErrorHandlerComponent
+    ErrorHandlerComponent,
+    PayRentComponent,
+    PayRentChesterComponent,
+    PayRentMontgomeryComponent,
+    PayRentMiddletownComponent,
+    ContactFloridaComponent,
+    ContactMontgomeryComponent,
+    ContactChesterComponent,
+    ContactMiddletownComponent
   ],
   imports: [
     NgtUniversalModule,

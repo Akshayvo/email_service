@@ -12,6 +12,14 @@ import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { PayRentComponent } from './pay-rent-florida/pay-rent-florida.component';
+import { PayRentChesterComponent } from './pay-rent-chester/pay-rent-chester.component';
+import { PayRentMontgomeryComponent } from './pay-rent-montgomery/pay-rent-montgomery.component';
+import { PayRentMiddletownComponent } from './pay-rent-middletown/pay-rent-middletown.component';
+import { ContactFloridaComponent } from './contact-florida/contact-florida.component';
+import { ContactChesterComponent } from './contact-chester/contact-chester.component';
+import { ContactMontgomeryComponent } from './contact-montgomery/contact-montgomery.component';
+import { ContactMiddletownComponent } from './contact-middletown/contact-middletown.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -93,6 +101,14 @@ const routes: Routes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
+  { path: 'pay-rent-florida-and-warwick',component: PayRentComponent},
+  { path: 'pay-rent-chester', component: PayRentChesterComponent},
+  { path: 'pay-rent-montgomery-walden', component: PayRentMontgomeryComponent},
+  { path: 'pay-rent-middletown-wallkill',component:PayRentMiddletownComponent},
+  { path: 'contact-florida-and-warwick', component:ContactFloridaComponent},
+  { path: 'contact-chester', component:ContactChesterComponent},
+  { path: 'contact-montgomery-walden', component:ContactMontgomeryComponent},
+  { path: 'contact-middletown-wallkill', component:ContactMiddletownComponent},
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },
