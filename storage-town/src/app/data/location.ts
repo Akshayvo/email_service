@@ -230,6 +230,19 @@ export const unitSizerLocation1 = [
 
 export const unitSizerLocation2 = [
     {
+        text: '3.2\' x 5\' Storage Unit',
+        alt: '3.2\' x 5\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
+        data: `This unit is approximately 17.5 sq feet of space that can hold the contents of one small closet, such as:`,
+        amenities: [
+        { content: 'Chairs', },
+        { content: 'Small Bookcases', },
+        { content: 'Suitcases', },
+        { content: 'Lamps', },
+        { content: 'Kitchenware' },
+        ],
+    },
+    {
         text: '5\' x 5\' Storage Unit',
         alt: '5\' x 5\' Storage Unit Graphic ',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
