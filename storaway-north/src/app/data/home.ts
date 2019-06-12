@@ -80,6 +80,7 @@ export const gettingStarted = `Start de-cluttering your life with Stor-A-Way Nor
 export const blurb = [
     {
         h1: `Convenient & Affordable Self Storage`,
-        p: `Since 1987, Stor-A-Way North has been serving Ben Avon, Avalon, Franklin Park, and the surrounding area with `,
+        p: `Since 1987, Stor-A-Way North has been serving Ben Avon, Avalon, Franklin Park, and the surrounding area with quality self storage and the 
+            quality customer service you only get from locally owned and operated enterprises.  `,
     }
 ];
