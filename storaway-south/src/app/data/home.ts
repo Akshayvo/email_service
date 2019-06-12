@@ -54,12 +54,21 @@ export const feature = [
 export const aboutUs = [
     {
         p: `Stor-A-Way - South has been providing the surrounding communities with quality self storage at affordable rates since 1987. 
-            Our long-time commitment to the community is what sets us apart from the competition. Our friendly staff, reasonable terms and 
-            affordable rates help make those big life-changing events easier!`,
+            Our long-time commitment to the community is what sets us apart from the competition. Our friendly staff, reasonable terms, 
+            and affordable rates help make those big life-changing events easier! `,
     },
     {
-        p: `We serve a wide range of customers with our storage units and outdoor vehicle parking. Our`,
+        p: `Our facility is conveniently located right off of Mayview Rd in Bridgeville, a mile north of Lawrence with customers in Lakemont Gardens, 
+            Valleyfield Apartments and surrounding developments!`,
     },
+    {
+        p: `We serve a wide range of customers with our storage units and outdoor vehicle parking. Whether you're a business looking to store 
+            excess inventory, supplies, and equipment, or a residential storage user in the process of moving, renovating, or decluttering, we've 
+            got the right unit at the right price! We also offer 24-hour access once approved with our staff!`
+    },
+    {
+        p:`If you have questions about our services, contact us to learn more! We look forward to meeting you!`
+    }
     
 ];
 
