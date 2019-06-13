@@ -1,5 +1,0 @@
- # www.robotstxt.org/
- # Allow crawling of all content
-Sitemap: https://www.mystoragedepot.com/sitemap.xml
- User-agent: *
- Disallow:
