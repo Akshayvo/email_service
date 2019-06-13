@@ -88,13 +88,13 @@ export class ContactComponent implements OnInit {
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `StorageTown Rental Spaces - Florida and Warwick `;
+    this.heading = `StorageTown Rental Spaces - Chester - Andrews Lane `;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
 
   public fetchContactDetailsLocation2() {
-    this.heading = `StorageTown Rental Spaces - Chester`;
+    this.heading = `StorageTown Rental Spaces - Chester - Brookside Ave`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }

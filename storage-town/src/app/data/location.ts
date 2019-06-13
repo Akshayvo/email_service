@@ -129,9 +129,9 @@ export const tabs3 = [
     },
 ];
 
-export const headingLocation1 = `StorageTown Rental Spaces - Florida and Warwick`;
+export const headingLocation1 = `StorageTown Rental Spaces - Chester - Andrews Lane`;
 
-export const headingLocation2 = `StorageTown Rental Spaces - Chester`;
+export const headingLocation2 = `StorageTown Rental Spaces - Chester - Brookside Ave`;
 
 export const headingLocation3 = `StorageTown Rental Spaces - Montgomery/Walden`;
 
