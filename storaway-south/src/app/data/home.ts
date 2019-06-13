@@ -39,7 +39,7 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_South/garage.svg',
-        label: 'Boat and Vehicle Storage',
+        label: 'VEHICLE STORAGE',
         alt: ' Icon art displaying boat and motorcycle'
     },
     {
@@ -77,7 +77,7 @@ export const aboutUs = [
 
 
 export const gettingStarted = `Start de-cluttering your home, or begin making extra room around the office with our affordable self storage options! 
-                            Click below to see our rates, or call  (412) 257-4422 today!`;
+                            Click below to see our rates, or call (412) 257-4422 today!`;
 
 export const blurb = [
     {
