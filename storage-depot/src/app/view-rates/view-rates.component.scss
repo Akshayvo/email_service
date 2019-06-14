@@ -17,12 +17,16 @@
   .scroll-wrapper {
     -webkit-overflow-scrolling: touch;
     overflow: auto;
+  
 
     iframe {
       width: 100%;
-      overflow: auto;
+      overflow: hidden;
       min-width: 100%;
+    
+      
     }
+
   }
 
   .coming {
