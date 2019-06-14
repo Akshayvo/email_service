@@ -28,7 +28,8 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Offering affordable, secure, self storage, and vehicle storage to Canton, Louisville, and the surrounding communities!`
+      content: `Offering affordable, secure, self storage, and vehicle storage to Canton,
+       Louisville, and the surrounding communities!`
     });
     this.titleService.setTitle('Affordable Storage Near Canton, OH | Self Storage of Canton');
   }
