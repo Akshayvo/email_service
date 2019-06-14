@@ -17,6 +17,15 @@ a {
     outline: 5px auto $primary;
   }
 }
+.stickytop{
+  text-align: center;
+  color: #fff;
+  background-color: #3598db;
+  padding: 4px;
+  a{
+    color:yellow;
+  }
+}
 
 .nav-link {
   color: $fontColor;

@@ -38,9 +38,9 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_North/hand.svg',
-        label: 'Affordable Self Storage Rates',
-        alt: 'Icon of a hand holding money'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_North/garage.svg',
+        label: 'Vehicle Storage',
+        alt: 'Icon art displaying boat and motorcycle'
     },
     {
         // tslint:disable-next-line:max-line-length
@@ -54,16 +54,16 @@ export const feature = [
 export const aboutUs = [
     {
         p: `Our facility is conveniently located on Lowries Run Rd between the Sams Club and the Rochester Rd intersection with Lowries Run Rd. 
-            We are just a stone's throw from Franklin Park and West View. `,
+            We are just a stone's throw from Franklin Park and West View.`,
     },
     {
-        p: `We offer a wide selection of well-lit, properly-maintained, self storage units that are secured behind a pin-code 
-            activated gate at the lowest prices in town!`,
+        p: `We offer a wide selection of well-lit, fully-fenced, properly-maintained, self storage units that are secured behind a pin-code 
+            activated gate at the lowest prices in town! 24-hour access is available, pending approval!`,
     },
     {
-        p: `Stor-A-Way North has been serving our friends and family in the community for over three decades. That time has made us experts 
-            in self storage and customer service. We believe the best way to do business is by providing quality service at reasonable prices, 
-            and building relationships with our community. `,
+        p: `Stor-A-Way North has been serving our friends and family in the community for over three decades. That time has made us experts in 
+            self storage and customer service. We believe the best way to do business is by providing quality service at reasonable prices, and 
+            building relationships with our community.`,
     },
     {
         p: `So if you're a residential storage user looking for a little extra elbow room around the house or are a business in need of equipment 

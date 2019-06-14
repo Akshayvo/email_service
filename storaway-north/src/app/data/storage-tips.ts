@@ -6,6 +6,9 @@ export const storagePoints = [
     { data: 'Seal boxes tightly with wide packing tape.' },
     { data: 'Pack records and CDs vertically! Don\'t stack them flat, they will warp or bend!' },
     { data: 'Place heavier items in the bottom of the box and lighter items on top.' },
+    { data: 'We recommend using plastic bins for clothing storage.' },
+    { data: 'We recommend keeping cardboard boxes off the concrete floors and pallets are available at no charge.' },
+    { data: 'We recommend that you insure your stored items.' },
 ];
 
 
@@ -17,7 +20,6 @@ export const storageTips = [
             // { data: 'Rent, or purchase an appliance dolly for furniture, major appliances, and stacks of boxes.'},
             { data: 'Remember, loading heavy furniture and appliances is not a one-person job. Get help.'},
             { data: 'For major appliances, consult your user\'s manuals for specific moving and safety instructions.'},
-            { data: 'We offer flatbed carts throughout the storage areas to help move your items.'},
             { data: 'Wipe and dry the interiors of all appliances.'},
             { data: 'Tape and/or tie down all movable parts.'},
         ],
