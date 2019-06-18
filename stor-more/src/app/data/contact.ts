@@ -7,9 +7,9 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:stormoreministorage@gmail.com',
+        redirect: 'mailto:allspacestorage@aol.com',
         label: 'Email:',
-        data: 'stormoreministorage@gmail.com',
+        data: 'allspacestorage@aol.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
