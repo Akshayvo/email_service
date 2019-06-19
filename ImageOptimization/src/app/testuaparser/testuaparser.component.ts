@@ -1,10 +1,13 @@
-import { Component, OnInit,Inject } from '@angular/core';
+import { Component, OnInit,Injectable } from '@angular/core';
 import { UAParser } from 'ua-parser-js';
 
 @Component({
   selector: 'app-testuaparser',
   templateUrl: './testuaparser.component.html',
   styleUrls: ['./testuaparser.component.scss']
+})
+@Injectable({
+  providedIn: 'root'
 })
 export class TestuaparserComponent implements OnInit {
   uaparser: any;
@@ -34,10 +37,10 @@ export class TestuaparserComponent implements OnInit {
     // browser
     // result.browser.name
     // result.browser.version
-    this.browsername = parser.getBrowser().name;
-    this.browserversion = parser.getBrowser().version;
-    console.log(this.browsername);
-    console.log(this.browserversion);
-
+    // this.browsername = parser.getBrowser().name;
+    // this.browserversion = parser.getBrowser().version;
+    // console.log(this.browsername);
+    // console.log(this.browserversion);
+    // return(this.browsername,this.browserversion) 
   }  
 }

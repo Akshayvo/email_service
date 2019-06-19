@@ -2,6 +2,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { Component, OnInit, Inject } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { UaParserService } from './ua-parser.service';
 
 
 @Component({
@@ -14,6 +15,7 @@ export class AppComponent implements OnInit {
   constructor(
     private router: Router,
     private angulatics: Angulartics2GoogleAnalytics,
+    private uaParserService: UaParserService,
   ) {
 
   }

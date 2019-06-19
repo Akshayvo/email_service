@@ -3,7 +3,6 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-// import { UAParser } from 'ua-parser-js';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -23,6 +22,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { TestuaparserComponent } from './testuaparser/testuaparser.component';
+import { UaParserService } from './ua-parser.service';
 
 
 @NgModule({
@@ -40,7 +40,7 @@ import { TestuaparserComponent } from './testuaparser/testuaparser.component';
     ErrorHandlerComponent,
     StorageTipsComponent,
     AccordionComponent,
-    TestuaparserComponent,
+    TestuaparserComponent
     
   ],
   imports: [
@@ -50,21 +50,20 @@ import { TestuaparserComponent } from './testuaparser/testuaparser.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    // UAParser,
   ],
   providers: [
+    UaParserService,
     Title,
     {
       provide: ErrorHandler,
-      useClass: ErrorHandlerService
+      useClass: ErrorHandlerService,
     },
-    Title,
     {
       provide: 'externalUrlRedirectResolver',
       useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
           window.location.href = (route.data as any).externalUrl;
       }
-    }
+    },
   ],
   bootstrap: [AppComponent]
 })
