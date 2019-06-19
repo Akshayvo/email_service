@@ -1,9 +1,9 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
-import { UAParser } from '../../node_modules/@types/ua-parser-js/index';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { UAParser } from 'ua-parser-js';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -22,8 +22,8 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
-import { TestService } from './services/test.service';
-import { UAParser } from 'ua-parser-js';
+import { TestuaparserComponent } from './testuaparser/testuaparser.component';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +40,8 @@ import { UAParser } from 'ua-parser-js';
     ErrorHandlerComponent,
     StorageTipsComponent,
     AccordionComponent,
-    TestService,
+    TestuaparserComponent,
+    
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -49,6 +50,7 @@ import { UAParser } from 'ua-parser-js';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    // UAParser,
   ],
   providers: [
     Title,

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { navLinks } from '../data/nav';
 import { contact, socialLinks } from '../data/contact';
+import { TestuaparserComponent } from '../testuaparser/testuaparser.component';
 
 
 @Component({
@@ -14,16 +15,20 @@ export class HeaderComponent implements OnInit {
   navLinks: any;
   socialLinks: any;
   navbarCollapsed = true;
+  // browsername1 = TestuaparserComponent
 
   constructor(
     private router: Router,
-  ) { }
+    // private browser: TestuaparserComponent
+  ) {
+    // console.log(this.browsername1)
+   }
 
   ngOnInit() {
     this.fetchNavigationLinks();
     this.fetchSocialLinks();
     this.fetchContactDetails();
-  }
+    }
 
   public fetchContactDetails() {
     this.contactDetails = contact;
@@ -37,6 +42,8 @@ export class HeaderComponent implements OnInit {
   public fetchNavigationLinks() {
     this.navLinks = navLinks;
   }
+
+  // public fetch
 
   public navigate (location: any) {
     this.router.navigate([location]);
