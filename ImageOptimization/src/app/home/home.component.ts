@@ -122,10 +122,6 @@ export class HomeComponent implements OnInit {
   public fetchJumbotron() {
     this.jumbotron = jumbotron;
   }
-
-  public getImageUrl(imageName: String){
-    const extension = this.imagetype.toLowerCase();
-    return `${this.imageBaseUrl}/${imageName}.${extension}`;
-  }
+  
 
 }
