@@ -23,11 +23,10 @@ const routes: Routes = [
   { path: 'location/fohl-street-storage',
     component: LocationComponent,
     children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      { path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
       { path: 'storageUnits', component: StorageUnitComponent },
       { path: 'unitSizer', component: UnitSizerComponent },
       { path: 'reserveUnit', component: ReserveUnitComponent },
-      
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
@@ -36,7 +35,7 @@ const routes: Routes = [
   { path: 'location/louisville-self-storage',
     component: LocationComponent,
     children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      { path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
       { path: 'storageUnits', component: StorageUnitComponent },
       { path: 'unitSizer', component: UnitSizerComponent },
       { path: 'reserveUnit', component: ReserveUnitComponent },

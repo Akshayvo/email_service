@@ -26,8 +26,11 @@
   }
 }
 
-
 .active-tab {
+  background-color: $light !important;
+}
+
+.tab-active {
   background-color: $light !important;
 }
 

@@ -2,80 +2,56 @@ export const tabs = [
     {
         id: '1',
         name: 'Storage Units',
-        path: './',
+        path: './storageUnits',
         active: true,
     },
     {
         id: '2',
         name: 'Unit Sizer',
         path: './unitSizer',
-        active: false,
+        // active: false,
     },
     {
         id: '3',
         name: 'Reserve Unit',
         path: './reserveUnit',
-        active: false,
+        // active: false,
     },
-    // {
-    //     id: '4',
-    //     name: 'Gallery',
-    //     path: './photos',
-    //     active: false,
-    // },
     {
         id: '4',
         name: 'About Us',
         path: './about',
-        active: false,
+        // active: false,
     },
-    // {
-    //     id: '6',
-    //     name: 'Truck Rentals',
-    //     path: './truck-rentals',
-    //     active: false,
-    // },
-    // {
-    //     id: '7',
-    //     name: 'Directions',
-    //     path: './directions',
-    //     active: false,
-    // },
 ];
 
-export const tabs1 = [
-    {
-        id: '1',
-        name: 'Storage Units',
-        path: './',
-        active: true,
-    },
-    {
-        id: '2',
-        name: 'Unit Sizer',
-        path: './unitSizer',
-        active: false,
-    },
-    {
-        id: '3',
-        name: 'Reserve Unit',
-        path: './reserveUnit',
-        active: false,
-    },
-    
-    {
-        id: '4',
-        name: 'About Us',
-        path: './about',
-        active: false,
-    },
-    // {
-    //     id: '5',
-    //     name: 'Directions',
-    //     path: './directions',
-    //     active: false,
-    // },
-];
+// export const tabs1 = [
+//     {
+//         id: '1',
+//         name: 'Storage Units',
+//         path: './storageUnits',
+//         // active: true,
+//     },
+//     {
+//         id: '2',
+//         name: 'Unit Sizer',
+//         path: './unitSizer',
+//         active: false,
+//     },
+//     {
+//         id: '3',
+//         name: 'Reserve Unit',
+//         path: './reserveUnit',
+//         // active: false,
+//     },
+
+//     {
+//         id: '4',
+//         name: 'About Us',
+//         path: './about',
+//         // active: false,
+//     },
+// ];
 
 
 export const headingLocation1 = `Fohl Street Storage`;
@@ -116,7 +92,6 @@ export const unitSizerLocation3 = [
             { content: 'Kitchen Aplliances' }
             ],
     },
-    
     {
         size: '10\' x 15\' Storage Unit',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
@@ -128,7 +103,7 @@ export const unitSizerLocation3 = [
             { content: 'Bookcases', },
             { content: 'Furniture', },
             { content: 'Suitcases', },
-            { content: 'Kitchen Appliances' },   
+            { content: 'Kitchen Appliances' },
             ],
 
     },
@@ -142,7 +117,7 @@ export const unitSizerLocation3 = [
             { content: 'Car or Small Boat', },
             { content: 'Furniture', },
             { content: 'Bookcases', },
-            { content: 'Tow Trailer' },     
+            { content: 'Tow Trailer' },
             ],
     },
 ];
@@ -177,7 +152,6 @@ export const unitSizerLocation2 = [
             { content: 'Mattresses' }
             ],
     },
-    
     {
         size: '6\' x 10\' Storage Unit',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
@@ -190,7 +164,7 @@ export const unitSizerLocation2 = [
             { content: 'Suitcases', },
             { content: 'Lamps', },
             { content: 'Kitchenware' },
-            { content: 'Mattresses' },   
+            { content: 'Mattresses' },
             ],
 
     },
@@ -206,7 +180,7 @@ export const unitSizerLocation2 = [
             { content: 'Furniture', },
             { content: 'Suitcases', },
             { content: 'Mattresses' },
-            { content: 'Kitchen Appliances' },     
+            { content: 'Kitchen Appliances' },
             ],
     },
     {
@@ -219,7 +193,7 @@ export const unitSizerLocation2 = [
             { content: 'Car or Small Boat', },
             { content: 'Furniture', },
             { content: 'Bookcases', },
-            { content: 'Tow Trailer' },     
+            { content: 'Tow Trailer' },
             ],
     },
 
@@ -255,7 +229,6 @@ export const unitSizerLocation1 = [
             { content: 'Mattresses' }
             ],
     },
-    
     {
         size: '10\' x 10\' Storage Unit',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
@@ -268,7 +241,7 @@ export const unitSizerLocation1 = [
             { content: 'Furniture', },
             { content: 'Suitcases', },
             { content: 'Mattresses' },
-            { content: 'Kitchen Appliances' },   
+            { content: 'Kitchen Appliances' },
             ],
 
     },
@@ -283,7 +256,7 @@ export const unitSizerLocation1 = [
             { content: 'Bookcases', },
             { content: 'Furniture', },
             { content: 'Suitcases', },
-            { content: 'Kitchen Appliances' },     
+            { content: 'Kitchen Appliances' },
             ],
     },
 ];
@@ -304,154 +277,80 @@ export const aboutUsImageLocation3 = `https://s3.amazonaws.com/syrasoft-tenant-f
 
 export const aboutUsLocation1 = [
     {
-        p: `Fohl Street Storage's easy highway access, off of Interstate-77, at Exit 99, makes us one of Canton's most accessible self storage,
+        p: `Fohl Street Storage's easy highway access, off of Interstate-77, at Exit 99,
+        makes us one of Canton's most accessible self storage,
             and recreational vehicle parking facilities. `,
     },
     {
-        p: `We offer a wide variety of affordable self storage unit options, and parking for recreational vehicles, boats, cars, or trailers.
-            With over 400 units, self storage users can always find the appropriate sized unit for their needs available at Fohl Street Storage.
+        p: `We offer a wide variety of affordable self storage unit options, and parking
+        for recreational vehicles, boats, cars, or trailers.
+            With over 400 units, self storage users can always find the appropriate sized
+            unit for their needs available at Fohl Street Storage.
         `,
     },
     {
-        p: `If you're not sure what sized unit you require, call our knowledgeable self storage specialists. The team at Fohl Street Storage is here to help you find the perfect unit,
+        p: `If you're not sure what sized unit you require, call our knowledgeable self storage
+        specialists. The team at Fohl Street Storage is here to help you find the perfect unit,
             answer any questions you might have, and reserve a unit at your request!`,
     },
     {
-        p: `Security is a top priority at Fohl Street Storage! That's why we have security cameras monitoring the facility, and our management team performs daily lock checks on all units.
+        p: `Security is a top priority at Fohl Street Storage! That's why we have security cameras
+        monitoring the facility, and our management team performs daily lock checks on all units.
             We also have electronic gates with personal pin-codes for enhanced security and convenience!`,
     },
     {
-        p:`Speaking of convenience, Fohl Street Storage has extended access hours! Your belongings are always accessible between 6:00AM to 10:00PM! The real world doesn't operate on banker's hours,
+        p: `Speaking of convenience, Fohl Street Storage has extended access hours! Your belongings
+        are always accessible between 6:00AM to 10:00PM! The real world doesn't operate on banker's hours,
             why should your self storage facility?`
     }
 ];
 
 export const aboutUsLocation2 = [
     {
-        p: `Louisville Self Storage offers affordable self storage to both residential and commercial customers in Louisville, Hartville, Alliance, 
-            Canton, and Green. We have proudly served the region since 1977 with our clean, well-maintained self storage units and friendly customer 
+        p: `Louisville Self Storage offers affordable self storage to both residential and commercial
+        customers in Louisville, Hartville, Alliance,
+            Canton, and Green. We have proudly served the region since 1977 with our clean,
+            well-maintained self storage units and friendly customer
             service!`,
     },
     {
-        p: `Our business customers love the 24 hour access! No office hours should stand between a company and its inventory or supplies. Residential 
-            users enjoy easy month to month leases with no deposit, perfect for that temporary move or a renovation. Louisville Self Storage is all 
+        p: `Our business customers love the 24 hour access! No office hours should stand
+        between a company and its inventory or supplies. Residential
+            users enjoy easy month to month leases with no deposit, perfect for that
+            temporary move or a renovation. Louisville Self Storage is all
             about making your stay with us a breeze!`,
     },
     {
-        p: `Start de-cluttering today with a storage unit at Louisville Self Storage. Whether you're downsizing for good, or just need a place to store 
+        p: `Start de-cluttering today with a storage unit at Louisville Self Storage.
+        Whether you're downsizing for good, or just need a place to store
             some seasonal belongings, make your life easier by reserving your unit today!`,
     },
-    
+
 ];
 
 export const aboutUsLocation3 = [
     {
-        p: `Welcome to Lincoln Street Storage! We are one of Canton's best self storage operations! We are conveniently located between East Canton and 
+        p: `Welcome to Lincoln Street Storage! We are one of Canton's best self storage
+        operations! We are conveniently located between East Canton and
             the intersection of Lincoln Street and Trump Ave NE.`,
     },
     {
-        p: `Our facility services both residential and commercial self storage users in Canton, East Canton, Lousiville, and East Sparta. Residential 
-            customers love out easy month-to-month leasing with no deposit and convenient online payments. Commercial customers enjoy our year-round 
+        p: `Our facility services both residential and commercial self storage users in Canton,
+        East Canton, Lousiville, and East Sparta. Residential
+            customers love out easy month-to-month leasing with no deposit and convenient online
+            payments. Commercial customers enjoy our year-round
             access and extended access hours! `,
     },
     {
-        p: `We are excited to offer brand new buildings for 2019, as part of our commitment to serve the community with quality self storage services at 
+        p: `We are excited to offer brand new buildings for 2019, as part of our commitment to
+        serve the community with quality self storage services at
             affordable rates!`,
     },
     {
-        p: `We take your safety and the security of your belongings seriously. That's why Lincoln Street Storage is fully-fenced, well-lit, and uses an 
-            electronic, pin-code activated gate. We even have 24-hour security camera coverage, and our staff performs regular lot checks for added 
+        p: `We take your safety and the security of your belongings seriously.
+        That's why Lincoln Street Storage is fully-fenced, well-lit, and uses an
+            electronic, pin-code activated gate. We even have 24-hour security camera
+            coverage, and our staff performs regular lot checks for added
             security.`,
     },
-    
 ];
-
-// export const directionLocation1 = [
-//     {
-//         label: 'Directions from Malden, WV',
-//         datas: [
-//         { content: 'Head north on Malden Dr toward Georges Dr - 33 ft'},
-//         { content: 'Turn right onto Georges Dr - 387 ft'},
-//         { content: 'Turn right to merge onto US-60 W - 1.6 mi'},
-//         { content: 'Merge onto I-64 W/I-77 N - 3.8 mi'},
-//         { content: 'Take exit 100 toward Leon Sullivan Way/Capital St - 0.5 mi'},
-//         { content: 'Keep right at the fork to continue toward Shrewsbury St - 354 ft'},
-//         { content: 'Turn right onto Shrewsbury St (signs for Smith Street) - 371 ft'},
-//         { content: 'Turn left onto Smith St - 0.2 mi'},
-//         { content: 'Turn right onto Court St - 348 ft'},
-//         { content: 'Turn left onto Piedmont Rd'},
-//         { content: 'Movin\' On Storage Center will be on the right - 0.1 mi'},
-//         ],
-//     },
-//     {
-//         label: 'Directions from 119 West of the Kanawha River',
-//         datas: [
-//         { content: 'Head northeast on Oakwood Rd toward Lambert Pl - 0.2 mi'},
-//         { content: 'Turn right onto Cantley Dr - 305 ft'},
-//         { content: 'Turn left onto Corridor G - 0.2 mi'},
-//         { content: 'Turn left onto US-119 N - 0.4 mi'},
-//         { content: `Keep right at the fork, follow signs for I-64 E/I-77/I-79/Charleston/Beckley
-//                     and merge onto I-64 E - 0.4 mi`},
-//         { content: 'Take exit 58C for US-60/Lee St - 0.3 mi'},
-//         { content: 'Merge onto Pennsylvania Ave N - 371 ft'},
-//         { content: 'Keep right to continue on US-119 N/Pennsylvania Ave'},
-//         { content: 'Continue to follow US-119 N - 0.6 mi'},
-//         { content: 'Slight right onto Pennsylvania Ave - 0.1 mi'},
-//         { content: 'Turn right at the 1st cross street onto Spring St - 0.2 mi'},
-//         { content: 'Turn right onto Bullitt St- 413 ft'},
-//         { content: 'Turn left onto Piedmont Rd'},
-//         { content: 'Movin\' On Storage Center will be on your left.'},
-//         ],
-//     },
-// ] ;
-
-// export const directionLocation2 = [
-//     {
-//         label: 'Directions from Ross Township, PA',
-//         datas: [
-//           { content: `Head southwest on Buehner Dr toward Evergreen Rd - 112 ft` },
-//           { content: `Turn left onto Evergreen Rd - 0.5 mi` },
-//           { content: `Turn left onto Siebert Rd - 1.5 mi` },
-//           { content: `Turn right onto Thompson Run Rd - 0.2 mi` },
-//           { content: `Turn left onto Vilsack Rd - 0.9 mi` },
-//           { content: `Turn left onto Iola St - 0.4 mi` },
-//           { content: `Turn left onto Mt Royal Blvd - 0.8 mi` },
-//           { content: `Turn right onto Willett Rd - 0.6 mi` },
-//           { content: `Turn right onto Elfinwild Rd - 0.1 mi` },
-//           { content: `Turn right -118 ft` },
-//           { content: `Keep right` },
-//           { content: `Shaler Self Storage will be on the right` },
-//         ],
-//     },
-//     {
-//         label: 'Directions from Etna, PA',
-//         datas: [
-//           { content: `Head northwest on Grant Ave/Mt Royal Blvd toward Weible St` },
-//           { content: `Continue to follow Mt Royal Blvd - 3.5 mi` },
-//           { content: `Turn right onto Willett Rd - 0.6 mi` },
-//           { content: `Turn right onto Elfinwild Rd - 0.1 mi` },
-//           { content: `Turn right - 118 ft` },
-//           { content: `Keep right` },
-//           { content: `Shaler Self Storage will be on the right` },
-//         ],
-//     },
-// ] ;
-
-// export const directionLocation3 = [
-//     {
-//         label: 'Directions to Natrona Heights Self Storage From Harwick',
-//         datas: [
-//           { content: `Head northwest on Spring St toward Jacoby Rd - 121 ft` },
-//           { content: `Turn left onto Jacoby Rd - 0.1 mi` },
-//           { content: `Continue onto Hite Rd - 0.1 mi` },
-//           { content: `Turn right onto the ramp to Kittanning - 0.1 mi` },
-//           { content: `Merge onto PA-28 N - 6.5 mi` },
-//           { content: `Take exit 15 toward Natrona Heights - 0.2 mi` },
-//           { content: `Turn right onto Burtner Rd - 0.8 mi` },
-//           { content: `Turn left onto Freeport Rd - 1.6 mi` },
-//           { content: `Turn left onto Veterans Drive - 472 ft` },
-//           { content: `Natrona Heights Self Storage will be on the left` },
-//         ],
-//     },
-// ] ;
-

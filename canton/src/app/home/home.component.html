@@ -38,10 +38,10 @@
       <div class="row h-100">
         <div class="col-3 my-auto" *ngFor= "let feature of features">
           <p class="text-center f-block-img"> 
-            <img src="{{feature.data}}"alt="feature.alt"  class="f-img">
+            <img src="{{feature.data}}" alt="{{feature.alt}}"  class="f-img" />
           </p>
           <p class="text-center f-text">
-            {{feature.label}}
+            {{feature.label}}alt
           </p>
         </div>
       </div>

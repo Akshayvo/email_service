@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  errorsMails: ['sanghmitra.v@codeparva.in, sagar.g@codeparva.in'],
+  errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   appId: 'canton ohio',
   VERSION: require('../../package.json').version
