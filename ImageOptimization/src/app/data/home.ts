@@ -50,7 +50,7 @@ export const gettingStarted = `Are you ready to move in today or just looking to
                                answer any questions you might have and set up your reservation today!
                                Or you can simply click below and reserve your unit online for free!`;
 
-export const feature = [
+export const features = [
     {
         // tslint:disable-next-line:max-line-length
         name: 'safe',

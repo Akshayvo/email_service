@@ -2,7 +2,7 @@ import { Component, OnInit, Renderer2, Inject} from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
-import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../data/home';
+import { featuresList, aboutUs, gettingStarted, features, jumbotron} from '../data/home';
 import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { UaParserService } from '../ua-parser.service';
@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
     });
     this.titleService.setTitle('Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage');
     this.metaService.createCanonicalURL();
-    this.imagetype = this.uaParserService.typeOfImages
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
     console.log('Home Component Base Url:', this.imageBaseUrl);
     console.log('Home Component Image Type:',this.imagetype);
@@ -116,7 +116,7 @@ export class HomeComponent implements OnInit {
   }
 
   public fetchFeature () {
-    this.feature = feature;
+    this.feature = features;
   }
 
   public fetchJumbotron() {
@@ -124,8 +124,8 @@ export class HomeComponent implements OnInit {
   }
 
   public getImageUrl(imageName: String){
-        const extension = this.imagetype.toLowerCase();
-        return `${this.imageBaseUrl}/${imageName}.${extension}`;
+        // const extension = this.imagetype.toLowerCase();
+        return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
       }
     
   

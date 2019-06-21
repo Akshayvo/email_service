@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { navLinks } from '../data/nav';
 import { contact, socialLinks } from '../data/contact';
 import { TestuaparserComponent} from '../testuaparser/testuaparser.component';
+import { UaParserService } from '../ua-parser.service';
+
 
 
 @Component({
@@ -15,15 +17,19 @@ export class HeaderComponent implements OnInit {
   navLinks: any;
   socialLinks: any;
   navbarCollapsed = true;
+  imagetype:any;
+  imageBaseUrl:any;
   // browsername1 = this.browser.browsername;
 
   
 
   constructor(
     private router: Router,
+    private uaParserService: UaParserService,
     // private browser: TestuaparserComponent
   ) {
-    // console.log(this.browsername1)
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
    }
 
    

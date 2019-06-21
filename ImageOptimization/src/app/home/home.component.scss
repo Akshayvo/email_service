@@ -1,7 +1,8 @@
 @import "../../styles.scss";
 
 .jumbotron {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/catskill-hero.jpg");
+  // -webkit-background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/CatskillImages/self-storage-units.webp");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/catskill-hero.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -23,10 +24,13 @@ h1 {
 }
 
 .feature-icon-style {
+  -moz-border-bottom-color: black;
+  border-bottom-color: blue;
   padding: 24px;
   text-align: center;
 
   img {
+   
     padding: 10px;
   }
 }

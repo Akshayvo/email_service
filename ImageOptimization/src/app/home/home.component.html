@@ -2,7 +2,7 @@
 <div class="">
   <div class="jumbotron-container">
     <div class="jumbotron-top">
-    <div class="jumbotron px-0 m-0">
+    <div class="jumbotron px-0 m-0" >
       <div class="bg-translucent jumbotorn-skew-style">
       </div>
       <div class="container">
@@ -14,7 +14,7 @@
           <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button">
-            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View "Rates</a>
             <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a></div>
           </div>
         </div>
@@ -69,7 +69,7 @@
   <div class="section py-5 m-0">
     <div class="row">
       <div class="col-lg-6 py-3">
-        <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/self-storage-units.jpg" width="100%" alt="storage unit picture" class="sectionImage">
+        <img src="{{imageBaseUrl}}/self-storage-units.{{imagetype}}" width="100%" alt="storage unit picture" class="sectionImage">
       </div>
       <div class="col-lg-6 py-3">
         <h1 class="heading pb-4">Affordable Storage Near Catskill, NY</h1>

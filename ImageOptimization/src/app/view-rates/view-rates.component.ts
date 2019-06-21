@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { viewRates } from '../data/view-rates';
 import { MetaService } from '../services/link.service';
+import { UaParserService } from '../ua-parser.service';
 
 @Component({
   selector: 'app-view-rates',
@@ -12,11 +13,14 @@ export class ViewRatesComponent implements OnInit {
 
   currentActive: any = 'VIEW RATES';
   viewRates: any;
+  imageBaseUrl: any;
+  imagetype: any;
 
   constructor(
     private titleService: Title,
     private meta: Meta,
     private MetaService: MetaService,
+    private uaParserService: UaParserService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -25,6 +29,8 @@ export class ViewRatesComponent implements OnInit {
     });
     this.titleService.setTitle('Affordable Self Storage Near Catskill, NY, 12414 | Catskill Self Storage');
     this.MetaService.createCanonicalURL();
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
 
   }
 
