@@ -28,13 +28,21 @@ export const hours = [
         data: '9:00AM - 2:00PM'
     },
     {
-        label: 'Saturday-Sunday: ',
+        label: 'Saturday: ',
         data: '9:00AM - 3:00PM'
+    },
+    {
+        label: 'Sunday: ',
+        data: 'CLOSED'
     },
     {
         label: 'Access Hours: ',
         data: '7 Days a Week 6:00AM - 10:00PM'
     },
+    {
+        label: '',
+        data: '24 Hour Access Available Upon Approval'
+    }
 ];
 
 export const socialLinks = [

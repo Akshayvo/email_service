@@ -16,9 +16,11 @@ export const featuresList = [
     },
     {
         td1: 'Fully-Fenced',
-        td2: 'Electronic Pin-Code Gate',
-        
+        td2: 'Electronic Pin-Code Gate', 
     },
+    {
+        td1: 'Security Cameras'
+    }
     
 ];
 
