@@ -20,9 +20,9 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Check out our competitive unit rates for residential, business, and outdoor vehicle storage. `
+      content: `Check our availability and see how affordable our storage unit rates are by clicking here!`
     });
-    this.titleService.setTitle('View Rates | Stor-A-Way South');
+    this.titleService.setTitle('View Unit Rates | The Store House');
   } 
 
   ngOnInit() {

@@ -1,11 +1,10 @@
 export const dataViewRates = [
     {
-        p: `Stor-A-Way South provides clean, well-maintained self storage units at the lowest rates in the area. We've been proudly serving our 
-            friends and family the community for over three decades. We also offer outdoor boat, RV, and vehicle storage. Free up some space on the 
-            lawn today, and store your vehicles with Stor-A-Way South! `,
+        p: `Are you in need of a place to store your jetski, motorcycle, ATV, or snowmobile in the off-season? Our units are are the ideal 
+            solution for many customers with vehicles that require off-season storage.`,
     },
     {
-        p: `So, whether you just need temporary storage for odds and ends during a move or long term storage for a permanent downsizing, 
-            Stor-A-Way has a unit for you!`
+        p: `Local businesses love our 24 hour access for commercial storage. Our units are a great place to stow your equipment, supplies, 
+            or excess inventory. You'll never be unable to access your belongings outside of standard business hours  with The Store House!`
     }
 ];

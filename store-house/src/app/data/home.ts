@@ -26,49 +26,44 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_South/location.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_House/location.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_South/hand.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_House/hand.svg',
         label: 'Affordable Self Storage Rates',
         alt: 'Icon of a hand holding money'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_South/garage.svg',
-        label: 'VEHICLE STORAGE',
-        alt: ' Icon art displaying boat and motorcycle'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_House/cctv .svg',
+        label: 'Security Cameras on Premises',
+        alt: ' Icon of a security camera'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_South/fence.svg',
-        label: 'Fully-Fenced Facility',
-        alt: 'Icon of a section of fencing'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_House/garage.svg',
+        label: 'Boat and Vehicle Storage',
+        alt: 'Icon art displaying boat and motorcycle'
     },
 ];
 
 
 export const aboutUs = [
     {
-        p: `Stor-A-Way - South has been providing the surrounding communities with quality self storage at affordable rates since 1987. 
-            Our long-time commitment to the community is what sets us apart from the competition. Our friendly staff, reasonable terms, 
-            and affordable rates help make those big life-changing events easier! `,
+        p: `The Store House has been serving customers from Adam's Center, Watertown, Black River and surrounding communities since 2009. 
+            We offer a variety of self storage unit sizes to accommodate every storage need from classical vehicles to household goods. We also 
+            have outdoor parking for boats, recreational vehicles and large vehicles.`,
     },
     {
-        p: `Our facility is conveniently located right off of Mayview Rd in Bridgeville, a mile north of Lawrence with customers in Lakemont Gardens, 
-            Valleyfield Apartments and surrounding developments!`,
+        p: `We believe in offering a quality product and excellent customer service. As such, our units are clean, well-maintained, and well-lit, 
+            with a large, paved driveway for easy maneuverability when loading or unloading. We have priority plowing in the winter, so you won't
+            have to worry about your unit being buried during the long winter months. We also offer 24 hour access to your unit! You won't find better 
+            customer service than at The Store House!`,
     },
-    {
-        p: `We serve a wide range of customers with our storage units and outdoor vehicle parking. Whether you're a business looking to store 
-            excess inventory, supplies, and equipment, or a residential storage user in the process of moving, renovating, or decluttering, we've 
-            got the right unit at the right price! We also offer 24-hour access once approved with our staff!`
-    },
-    {
-        p:`If you have questions about our services, contact us to learn more! We look forward to meeting you!`
-    }
+    
     
 ];
 
@@ -76,14 +71,14 @@ export const aboutUs = [
 
 
 
-export const gettingStarted = `Start de-cluttering your home, or begin making extra room around the office with our affordable self storage options! 
-                            Click below to see our rates, or call (412) 257-4422 today!`;
+export const gettingStarted = `Are you ready to start de-cluttering your life or freeing up the limited space in your yard with one of our 
+                               indoor self storage units or outdoor parking spaces? Click below to check our unit availability and reserve your unit today!`;
 
 export const blurb = [
     {
-        h1: `Conveniently Located & Affordable Storage Units`,
-        p: `We have been proudly serving Brideville, Hendersonville, Thompsonville and the surrounding area with well-maintained storage, and 
-            stellar customer service since 1987. Whether you're a residential user looking to downsize or a growing business that's run out of room 
-            for inventory, Stor-A-Way South has the perfect unit for you!`,
+        h1: `Conveniently Located & Affordable Self Storage`,
+        p: `The Store House is conveniently located on Route 11, just south of downtown Watertown, NY and a stone's throw from Route 81! 
+            We have been proudly serving the Watertown community with high-quality, affordable self storage and vehicle storage since 2009! 
+            Whether you're a member of the armed forces, a residential or commercial customer, we have the perfect unit for you! `,
     }
 ];

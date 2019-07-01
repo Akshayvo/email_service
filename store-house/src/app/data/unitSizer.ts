@@ -1,59 +1,43 @@
 export const unitSizer = [
   {
     id: 0,
-    size: '5\' x 5\'',
-    heading: '5\' x 5\' Storage Unit',
-    alt: '5\' x 5\' Storage Unit Graphic ',
+    size: '10\' x 5\'',
+    heading: '10\' x 5\' Storage Unit',
+    alt: '10\' x 5\' Storage Unit Graphic ',
     unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
-    data: `This unit is approximately 25 sq feet of space that can hold the contents of one small closet, such as:`,
+    data: `This unit is approximately 50 sq feet of space that can hold the contents of one small room, such as:`,
     amenities: [
       { content: 'Chairs', },
+      { content: 'Small desks'},
       { content: 'Small bookcases', },
       { content: 'Suitcases', },
       { content: 'Lamps', },
       { content: 'Kitchenware', },
+      { content: 'Mattresses'}
     ],
   },
   {
     id: 1,
-    size: '5\' x 10\'',
-    heading: '5\' x 10\' Storage Unit',
-    alt: '5\' x 10\' Storage Unit Graphic ',
-    unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
-    data: `This unit is approximately 50 sq feet of space that can hold the contents of one small room, such as:`,
-    amenities: [
-      { content: 'Chairs', },
-      { content: 'Small desks', },
-      { content: 'Small bookcases', },
-      { content: 'Suitcases', },
-      { content: 'Lamps', },
-      { content: 'Kitchenware', },
-      { content: 'Mattresses', },
-    ],
-  },
-  {
-    id: 2,
     size: '10\' x 10\'',
     heading: '10\' x 10\' Storage Unit',
-    alt: '10\' x 10\' Storage Unit Graphic',
+    alt: '10\' x 10\' Storage Unit Graphic ',
     unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
     data: `This unit is approximately 100 sq feet of space that can hold the contents of two rooms, such as:`,
     amenities: [
       { content: 'Chairs', },
       { content: 'Small desks', },
       { content: 'Bookcases', },
-      { content: 'Furniture', },
+      { content: 'Furniture' },
       { content: 'Suitcases', },
-      { content : 'Mattresses' },
-      { content: 'Kitchen Appliances' }
+      { content: 'Mattresses', },
+      { content: 'Kitchen Appliances'}
     ],
   },
-
   {
-    id: 3,
+    id: 2,
     size: '10\' x 15\'',
     heading: '10\' x 15\' Storage Unit',
-    alt: '10\' x 15\' Storage Unit Graphic ',
+    alt: '10\' x 15\' Storage Unit Graphic',
     unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
     data: `This unit is approximately 150 sq feet of space that can hold the contents of three to four rooms.`,
     amenities: [
@@ -65,10 +49,9 @@ export const unitSizer = [
       { content: 'Kitchen Appliances' }
     ],
   },
-  
 
   {
-    id: 4,
+    id: 3,
     size: '10\' x 20\'',
     heading: '10\' x 20\' Storage Unit',
     alt: '10\' x 20\' Storage Unit Graphic ',
@@ -78,7 +61,24 @@ export const unitSizer = [
       { content: 'Appliances', },
       { content: 'Car or Small Boat', },
       { content: 'Furniture', },
+      { content: 'Bookcases', },
+      { content: 'Tow Trailer', },
+    ],
+  },
+  
+
+  {
+    id: 4,
+    size: '10\' x 30\'',
+    heading: '10\' x 30\' Storage Unit',
+    alt: '10\' x 30\' Storage Unit Graphic ',
+    unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
+    data: `This unit is approximately 300sq feet of space that can store the contents of a multi-bedroom home, including`,
+    amenities: [
+      { content: 'Appliances', },
+      { content: 'Car or Small Boat', },
       { content: 'Furniture', },
+      { content: 'Mattresses', },
       { content: 'Bookcases', },
       { content: 'Tow Trailer' }
     ],

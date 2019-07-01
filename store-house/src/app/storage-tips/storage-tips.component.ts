@@ -22,9 +22,9 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Make your storage experience that much easier with these helpful storage tips!`
+      content: `Take advantage of our decade of self storage expertise, and use these storage tips to make your stay with us a breeze!`
     });
-    this.titleService.setTitle('Storage Tips | Stor-A-Way South');
+    this.titleService.setTitle('Storage Tips | The Store House');
   }
 
   ngOnInit() {

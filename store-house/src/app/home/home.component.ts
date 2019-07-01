@@ -33,10 +33,9 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Our Bridgeville location offers over 400 fully-fenced, well-lit self storage units at extremely affordable rates. Click or call 
-                today to learn more!`
+      content: `We provide high-quality, affordable self storage to residential, commercial and military self storage unit users. `
     });
-    this.titleService.setTitle('Affordable Storage Units in Bridgeville | Stor-A-Way South');
+    this.titleService.setTitle('Affordable Storage in Watertown | The Store House');
   }
 
   public navigate(location: any) {

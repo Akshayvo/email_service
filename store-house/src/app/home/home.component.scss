@@ -42,7 +42,7 @@
   height: 80vh;
 
   .jumbotron {
-    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_South/self-storage-units-doors-open.jpg");
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_House/the-store-house-outdoor-units.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -328,6 +328,7 @@
         width: 400px;
         position: absolute;
         bottom: 0;
+        top: 25%;
       }
     }
 
@@ -454,6 +455,7 @@
 
       .jumbotron-skew-text {
         width: 300px;
+        
       }
     }
 

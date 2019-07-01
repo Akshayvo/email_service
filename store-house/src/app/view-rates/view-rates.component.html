@@ -2,12 +2,16 @@
   <div class="container">
     <h1 class="py-5 text-center">View Our Rates</h1>
     <div class="row bg-light padding">
-      <div class="col-md-7 coming p-3 scroll-wrapper" >
-        <iframe id="advanced_iframe" name="advanced_iframe" src="https://storawaysouth.sim.syrasoft.com/unitavailability" width="100%"
+      <div class="col-md-12 coming p-3 scroll-wrapper" >
+        <iframe id="advanced_iframe" name="advanced_iframe" src="https://thestorehouse.sim.syrasoft.com/UnitAvailability" width="100%"
           height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true"></iframe>
       </div>
-      <div class="col-md-5 p-3">
-        <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storaway_South/about-us.jpg" alt="Photos of outdoor self storage units" class="sectionImage" width="auto"/>
+    </div>
+    <div class="row">  
+      <div class="col-md-6 p-3">
+        <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_House/packing-box.png" alt="Photograph of an open cardboard packing box" class="sectionImage" width="auto"/>
+      </div>
+      <div class="col-md-6 p-3">
         <h3 class="my-3"><b>Please contact us for unit availability.</b></h3>
         <div class="mt-4 justify" *ngFor="let data of dataViewRates">
           <p>{{data.p}}</p>

@@ -10,7 +10,7 @@ import { WINDOW } from '@ng-toolkit/universal';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'storaway-south';
+  title = 'store-house';
   flag: boolean;
   public offsets: number[];
   x: any;

@@ -19,9 +19,9 @@ export class UnitSizerComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: ``
+      content: `Use this handy storage unit sizing chart to help you visualize what will fit into what size unit! If you've still got questions, contact us today!`
     });
-    this.titleService.setTitle(`Unit Sizer | Stor-A-Way South`);
+    this.titleService.setTitle(`Unit Sizer | The Store House`);
   }
 
   ngOnInit() {
