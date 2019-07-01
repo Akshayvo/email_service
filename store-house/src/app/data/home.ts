@@ -4,19 +4,19 @@ export const featuresList = [
     
     {
         td1: 'Convenient Location',
-        td2: 'Well-Lit',
+        td2: 'Paved Parking',
     },
     {
-        td1: 'Outside Parking',
-        td2: 'Affordable Rates',
-    },
-    {
-        td1: 'Security Camera',
+        td1: 'Security Cameras',
         td2: 'Online Payments',
     },
     {
-        td1: 'Fully-Fenced',
-        td2: 'Pin-Code Secured Gate',
+        td1: 'Well-Lit Facility',
+        td2: 'Priority Plowing',
+    },
+    {
+        td1: '24 Hour Unit Access',
+        td2: 'Online Reservations',
         
     },
     

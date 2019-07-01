@@ -20,12 +20,11 @@ import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
-
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
-
 import { ErrorHandlerService } from './services/error-handler.service';
-
+import { PayRentComponent} from './pay-rent/pay-rent.component';
+import { ReserveComponent} from './reserve/reserve.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 
 @NgModule({
@@ -42,9 +41,8 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
     StorageTipsComponent,
     AccordionComponent,
     ContactButtonComponent,
-    
-    
-    
+    PayRentComponent,
+    ReserveComponent,
     UnitSizerComponent,
   ],
   imports: [

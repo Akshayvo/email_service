@@ -5,10 +5,11 @@ import { ContactComponent } from './contact/contact.component';
 import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ErrorComponent } from './error/error.component';
-
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
-
+import { PayRentComponent} from './pay-rent/pay-rent.component';
+import { ReserveComponent} from './reserve/reserve.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+import { from } from 'rxjs';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
-  
+  { path: 'reserve-unit', component: ReserveComponent },
+  { path: 'pay-rent', component: PayRentComponent },
   { path: 'unit-sizer', component: UnitSizerComponent},
   { path: 'review', component: HomeComponent,
     resolve: {
