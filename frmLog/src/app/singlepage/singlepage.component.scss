@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  background-color: #3399ff;
+}
+
+.jumbotron {
+  border: 1px solid black;
+}
+
+.filter, .columns {
+  border: 1px solid black;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+table {
+  th {
+    border: 1px solid black;
+  }
+}
+
+.columns-data {
+  border: 1px solid black;
+  height: 40vh;
+}

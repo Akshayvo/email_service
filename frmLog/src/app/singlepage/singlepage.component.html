@@ -1,0 +1,109 @@
+<div>
+    <div class="header">
+        <img class="m-2" src="../../assets/frmLogViewer.jpg" alt="frmLogViewer" width="50" height="50" />
+        <h1 class="m-2">frmLogViewer</h1>
+      </div>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-md-10">
+              <div class="row filter p-4">
+                <div class="col-md-4 display">
+                  <div class="form-group">
+                    <label>
+                      Account:&nbsp;
+                      <input type="textbox" formControlName="account">
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label>
+                        Group<img src="../../assets/direction.svg" alt="group icon" class="px-2" width="40px">:
+                        <input type="textbox" formControlName="group">
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="p-2 display-radio" *ngFor="let chooseUser of chooseUser">
+                      <input formControlName="{{chooseUser.name}}" id="chooseUser.id" type="radio" name="{{chooseUser.name}}" [value]="chooseUser.value">
+                      {{chooseUser.label}}
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label>
+                        User:&nbsp;
+                        <input type="textbox" formControlName="user">
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group p-2">
+                      <label class="example-input-wrapper">
+                          From: &nbsp;
+                          <input placeholder="Date Time"
+                                 formControlName="from"
+                                 [owlDateTimeTrigger]="dt" [owlDateTime]="dt">
+                          <owl-date-time #dt></owl-date-time>
+                      </label>
+                  </div>
+                  
+                  <div class="p-2 form-group">
+                      <label class="example-input-wrapper">
+                          To: &nbsp;
+                          <input placeholder="Date Time   "       
+                                 formControlName="to"
+                                 [owlDateTimeTrigger]="dt1" [owlDateTime]="dt1">
+                          <owl-date-time #dt1></owl-date-time>
+                      </label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>System Group: &nbsp;</label>
+                    <select formControlName="systemGroup">
+                      <option *ngFor="let system of system" [value]="system.name">{{system.name}}</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                      <label>Severity: &nbsp;</label>
+                      <select formControlName="severity"> 
+                        <option *ngFor="let severity of severity"  [value]="severity.name">{{severity.name}}</option>
+                      </select>
+                    </div>
+                </div>
+              </div>
+              <div class="columns row p-4 mt-4 form-group" >
+                <label formArrayName="columns" *ngFor="let column of form.controls.columns.controls; let i = index" class="p-2">
+                  <input type="checkbox" [formControlName]="i" value="{{columns[i].name}}" (change)="onChange($event)">
+                  {{columns[i].name}}
+                </label>
+              </div>
+              
+            </div>
+  
+            <div class="col-md-2 display-button">
+              <div class="form-row button">
+                <button (click)="form.reset();" class="p-2">Reset control</button>
+                <button class="p-2" type="submit" >Get Result</button>
+                <button (click)="form.reset();" class="p-2">Clear Grid</button>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="columns-data">
+        <table>
+          <thead>
+            <tr>
+              <th class="p-2" *ngFor="let column of result">{{column}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</div>
