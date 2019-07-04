@@ -1,32 +1,32 @@
 @import "../../styles.scss";
 
-.carousel {
-  width: 100%;
+// .carousel {
+//   width: 100%;
 
-  ul {
-    margin-bottom: 0;
-  }
-}
+//   ul {
+//     margin-bottom: 0;
+//   }
+// }
 
-.carousel-item {
-  p {
-    height: 100px;
-  }
-}
+// .carousel-item {
+//   p {
+//     height: 100px;
+//   }
+// }
 
-.carousel-indicators {
-  position: relative;
-  bottom: 0;
-}
+// .carousel-indicators {
+//   position: relative;
+//   bottom: 0;
+// }
 
-.carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-}
+// .carousel-indicators li {
+//   width: 10px;
+//   height: 10px;
+//   border-radius: 100%;
+// }
 
 .jumbotron {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Space_Place_Macedonia/space-place-jumbotron.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Space_Place_Macedonia/space-place-macedonia-homepage-jumbotron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -72,7 +72,7 @@
 }
 
 .we-provide {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Space_Place_Macedonia/space-place-jumbotron.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Space_Place_Macedonia/space-place-macedonia-homepage-jumbotron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -105,7 +105,7 @@
 }
 
 .testimonials {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Space_Place_Macedonia/space-place-jumbotron.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Space_Place_Macedonia/space-place-macedonia-homepage-jumbotron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -457,8 +457,6 @@
   }
 }
 
-
-
 @media only screen and (max-width: 600px) and (min-width: 481px) {
   .jumbotron {
     text-align: center;
@@ -479,7 +477,7 @@
       width: auto;
     }
   }
-  
+
   .we-provide {
     background-attachment: unset;
     background-position: center top;
