@@ -4,7 +4,7 @@ export const featuresList = [
     
     {
         td1: 'Brand New Facility',
-        td2: 'Climate Controlled Units Available',
+        td2: 'Temperature Controlled Units Available',
     },
     {
         td1: 'Online Reservations',
@@ -46,7 +46,7 @@ export const feature = [
 export const aboutUs = [
     {
         p: `SUM Storage is Morganton's newest self storage facility and is proud to offer a number of self storage unit sizes in both regular and 
-            climate-controlled units. We also have moving supplies to make your de-cluttering or downsizing project an easy one!`,
+            Temperature Controlled units. We also have moving supplies to make your de-cluttering or downsizing project an easy one!`,
     },
     {
         p: `We are conveniently located on East Fleming Drive in Morganton, between U.S. 70 and Stonebridge Drive. Our facility is well-lit, fully-fenced, 

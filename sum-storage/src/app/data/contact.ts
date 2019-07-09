@@ -8,7 +8,7 @@ export const contact = [
     
     {
         id: 1,
-        redirect: 'sumstoragellc@gmail.com',
+        redirect: 'mailto:sumstoragellc@gmail.com',
         label: 'Email:',
         data: 'sumstoragellc@gmail.com',   
         class: 'fas fa-envelope mr-2 iconColor',
@@ -24,8 +24,12 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Office Hours:',
-        data: '7 Days a Week 9:00AM - 5:00PM'
+        label: 'Monday to Saturday:',
+        data: ' 9:00AM - 5:00PM'
+    },
+    {
+        label: 'Sunday:',
+        data: ' CLOSED'
     },
     {
         label: 'Access Hours: ',

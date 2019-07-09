@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `SUM Storage is Morgantown's newest self storage facility. We have a wide variety of regular and climate-controlled self storage units 
+      content: `SUM Storage is Morgantown's newest self storage facility. We have a wide variety of regular and Temperature Controlled self storage units 
                 at affordable rates!`
     });
     this.titleService.setTitle('Affordable Self Storage in Morgantown | SUM Storage');

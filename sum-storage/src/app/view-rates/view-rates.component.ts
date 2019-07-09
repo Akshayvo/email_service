@@ -20,7 +20,7 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to check out our rates and availability! We have plenty of units in a variety of sizes, both regular and climate controlled!`
+      content: `Take a moment to check out our rates and availability! We have plenty of units in a variety of sizes, both regular and Temperature Controlled!`
     });
     this.titleService.setTitle('View Rates | SUM Storage');
   } 

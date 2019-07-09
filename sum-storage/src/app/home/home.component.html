@@ -54,11 +54,13 @@
             <div>
               <div class="font-xs-device" *ngFor="let contact of contactDetails">
                 <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
-                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
               </div>
+              <!-- <h3 class="py-1">Office Hours</h3> -->
               <div class="pt-3 font-xs-device">
+                  <h3 class="py-1">Office Hours</h3>
                   <div *ngFor="let hour of hours">
-                      <b>{{hour.label}}</b><br>{{hour.data}}<br>
+                      <b>{{hour.label}}</b>{{hour.data}}<br>
                     </div>    
               </div>
               </div>
