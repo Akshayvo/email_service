@@ -83,7 +83,7 @@ export class ContactButtonComponent implements OnInit {
            email: this.contactForm.value.emailCB,
            receiveremail: this.receiveremail,
            message: this.completeMessage,
-           subject:this.contactForm.value.subjectCB
+           subject: this.contactForm.value.subjectCB
          };
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
