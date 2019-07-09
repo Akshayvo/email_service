@@ -1,0 +1,86 @@
+<div class="jumbotron-home">
+
+  <div class="jumbotron-top jumbotron-top-style">
+            
+    </div>
+    
+ 
+  <!--Feature Box-->
+    <div class="container feature-block disp">
+      <div class="row h-100">
+        <div class="col-3 my-auto" *ngFor= "let feature of features">
+          <p class="text-center f-block-img"> 
+            <img src="{{feature.data}}" alt="{{feature.alt}}"  class="f-img" />
+          </p>
+          <p class="text-center f-text">
+            {{feature.label}}
+          </p>
+        </div>
+      </div>
+    </div>
+  <!--Feature Box Ends Here-->
+</div>
+
+<!--Contact Details-->
+<div class="bg-light for-location"> 
+  <div class="locaion-selection">
+    <app-select-location (click)="receiveMessage()"></app-select-location>
+  </div> 
+    <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <span *ngIf="locationId == 1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11091.796667521601!2d-94.33599!3d45.9722748!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x93cffb8e8fafa262!2sLittle+Falls+Mini+Storage!5e0!3m2!1sen!2sus!4v1562344489336!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="locationId == 2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11092.359199888218!2d-94.113672!3d45.9694659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x584f2aa35d140ec8!2sHighway+27+Storage+-+Pierz!5e0!3m2!1sen!2sus!4v1562342147643!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
+          </span>
+      </div>
+      <div class="col-md-4  pl-4 pt-3">
+        <h2>{{heading}}</h2>
+        <p> 
+          <span *ngFor="let contact of contactDetails">
+            <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+          </span>
+        </p>
+        <span *ngIf="locationId == 1" >
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/little-falls-mini-storage/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/little-falls-mini-storage/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
+        </span>
+        <span *ngIf="locationId == 2" >
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/highway-27-mini-storage/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/highway-27-mini-storage/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
+        </span>
+      </div>
+      <div class="col-md-3 contact-hours pt-3">
+          <h2>Hours</h2>
+          <p>
+            <span *ngFor="let hour of hoursDetails">
+              <b>{{hour.label}}</b>{{hour.data}}<br>
+            </span>
+          </p>
+      </div>
+    </div>
+  </div>  
+</div>
+<!--Contact Details Ends Here-->
+
+
+<!--Service-->
+  <div class="service">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 pt-2">
+            <!-- <h1  class="pb-4"></h1> -->
+            <div *ngFor="let para of serviceOffered">
+              <p>{{ para.p }}</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 text-center">
+            <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Little+Falls/little-falls-units.jpg" alt="Photograph of recreational vehicles">
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Service Ends Here-->

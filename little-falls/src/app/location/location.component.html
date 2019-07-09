@@ -1,0 +1,61 @@
+<section class="contact-details">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-8 py-0 px-0" style="background-color: #fff;">
+        <div class="social-content px-3 py-4">
+          <h1 style="text-transform: capitalize;"> {{name}}</h1>
+          <div class="row">
+            <div class="col-lg-12 px-0">
+              <span *ngFor="let contact of contacts" class="py-2 each-contact">
+                <span class="pl-3"><i class="{{contact.class}}"></i></span><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></span>
+                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-img">
+            <span *ngIf="locationId == 1"> 
+              <div class="img-box-1" alt="Photograph of self storage units and a sign by the road">
+              </div>
+            </span>
+            <span *ngIf="locationId == 2"> 
+              <div class="img-box-2" alt="Photograph of outdoor self storage units">
+              </div>
+            </span>
+        </div>
+      </div>
+      <div class="col-lg-4 pt-3" style="background-color: #fff;">
+        <div class="map-responsive">
+            <span *ngIf="locationId == 1">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11091.796667521601!2d-94.33599!3d45.9722748!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x93cffb8e8fafa262!2sLittle+Falls+Mini+Storage!5e0!3m2!1sen!2sus!4v1562344489336!5m2!1sen!2sus" 
+              width="100%" height="230" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 2">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11092.359199888218!2d-94.113672!3d45.9694659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x584f2aa35d140ec8!2sHighway+27+Storage+-+Pierz!5e0!3m2!1sen!2sus!4v1562342147643!5m2!1sen!2sus" 
+              width="100%" height="230" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
+            </span>
+        </div>
+        <div class="hours-data w-100">
+          <h2 class="pt-3">Hours</h2>
+          <div class="row">
+            <div class="col-lg-8">
+              <app-tables [tBody]="hours" ></app-tables> 
+            </div>
+            <div class="col-lg-4 btn-area text-center">
+              <a class="btn btn-outline-primary p-2" [routerLink]="['/contact']" role="button">Contact Us</a> 
+              <a class="btn btn-primary-light p-2" [routerLink]="['/payment']" role="button">Pay Rent</a> 
+              <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                       
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="sub-components">
+  <div  class="container px-0 pt-2 mt-5">
+      <app-tabs [tabs]='tabs' [name]='name' style="background-color: #f1f0ed;" [currentActiveTab]='currentTab' ></app-tabs>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+@import '../../styles.scss';
+
+.breadCrumb {
+  font-weight: 200 !important;
+  text-align: center;
+  background: #efefef;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  
+  .breadCrumb {
+    font-weight: 200 !important;
+    text-align: center;
+    background: #efefef;
+    display: block;
+  }
+}
