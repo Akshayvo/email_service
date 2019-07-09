@@ -1,13 +1,16 @@
 export const dataViewRates = [
     {
-        p: `Drayton Harbor Mini Storage is run with your convenience at the forefront of our operation.
-            In need of packing and moving supplies? We have a fully stocked retail store with boxes,
-            tape, wrap and other supplies to make your move that much easier!`,
+        p: `Sandusky Self Storage offers indoor and outdoor storage units at extremely affordable rates.
+        We also offer outdoor parking spaces for oversized vehicles that don't fit into our units.`,
     },
     {
-        p: `We are an excellent solution for the business in need of that little extra space. Our units
-            and parking spaces can be accessed from 6:00AM to 11:00PM so you are free to work around your schedule,
-            not just standard business hours! Drayton Harbor Mini Storage is proud to serve Blaine, Bellingham, Custer,
-            and Fraser Valley areas!`,
+        p: `Our whole facility is fenced in, well-lit, and covered by security cameras. We take the
+        safety of our customers and their belongings seriously, this is why our on-site manager
+        performs regular inspections.`,
     },
+    {
+        p: `Between the convenience, value, and security, there's no wonder Sandusky Self Storage
+        is Sandusky Ohio's premiere self storage facility! If you've got questions about our services,
+        simply call (419) 626-2713 and speak with one of our friendly managers today!`
+    }
 ];

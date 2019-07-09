@@ -1,94 +1,82 @@
-export const featuresHead = 'The Only Self Storage in Greene County With All of The Following';
 
 export const featuresList = [
     {
-        td1: 'Keypad Entry',
-        td2: 'Secure Fencing',
+        td1: 'Convenient Location',
+        td2: 'Fully-Fenced',
     },
     {
-        td1: 'Online payment',
-        td2: 'Security Cameras',
+        td1: 'Security Cameras On-Site',
+        td2: 'Well-Lit',
     },
     {
-        td1: 'Large Units',
+        td1: 'Online Payments',
+        td2: '24 Hour Access'
     },
+    {
+        td1: 'Manager On-Site',
+        td2: 'Online Reservations'
+    }
 ];
 
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Drayton_Images/jumbotorn-bottom-images/enviro.svg',
-        label: 'Convenient Location'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SanDusky/convenient-location.svg',
+        label: 'Conveniently Located',
+        alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Drayton_Images/jumbotorn-bottom-images/operator.svg',
-        label: 'Stellar Customer Service'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SanDusky/light-bulb.svg',
+        label: 'Well-Lit Facility',
+        alt: 'Icon of an illuminated light'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Drayton_Images/jumbotorn-bottom-images/value.svg',
-        label: 'Online Payment'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SanDusky/cctv.svg',
+        label: 'ecurity Cameras on Premises',
+        alt: 'Icon of a security camera'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Drayton_Images/jumbotorn-bottom-images/cctv (2).svg',
-        label: 'Security Cameras'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SanDusky/hand.svg',
+        label: 'Affordable Self Storage Rates',
+        alt: 'con of a hand holding money'
     },
 ];
 
 
 export const aboutUs = [
     {
-        p: `Drayton Harbor Mini Storage proudly serves Blaine, Bellingham and surrounding communities with
-            high quality customer storage, top notch customer service and
-            the amenities you need to make your storage unit experience a breeze.`,
+        p: `Sandusky Self Storage is the premiere self storage facility in Sandusky, Ohio. We are
+        conveniently located at Route 6 & 101 to make trips to and from our facility a breeze! We offer a wide
+        variety of unit sizes and unit types. Our unit sizes start at 8 foot by 8 foot, perfect for a bedroom or
+        two, and continue to our oversized 23 foot by 28 foot, an ideal solution for large vehicle storage needs!
+        We also offer outdoor parking for recreational vehicles, boats or other oversized vehicles.`,
     },
     {
-        p: `After finding a unit that suits your needs with our Size Guide, reserve your unit quickly and
-            easily through our website 24 hours a day, 7 days a week!
-            When you arrive for your move in take a moment to pick up boxes and
-            packing supplies from our fully stocked store!
-            Use our online bill pay service to pay your rent or set up auto-pay on your schedule.`,
+        p: `We are well-lit and fully-fenced, and we also have security cameras covering the facility to ensure you
+        always feel safe when loading or unloading your belongings. Our on-site managers perform regular lot checks,
+        keeping a close eye on the units, and customers.`,
     },
     {
-        p: `Drayton Harbor Mini Storage offers standard self storage units for residents in the process of
-            downsizing or searching for a little extra room during a move. Searching for RV, boat, or
-            vehicle storage? We've got that, too! Don't use up your valuable yard space storing out of season vehicles,
-            use our well lit, security camera monitored dedicated parking spaces!`,
+        p: `Our customers love our 24 hour unit access. It doesn't matter if you're a growing business that requires
+        access to documents or supplies and equipment outside of business hours, or if you're a residential user just
+        looking for a little flexibility. We're here to make your stay with us as easy as possible. As part of that
+        commitment to convenience, we offer online payments and reservations unlike other self storage facilities
+        that make you do business at their convenience.`,
     },
 ];
 
 
-export const serviceOffered = [
-    {
-        p: `We are the only self storage provider in Drayton Harbor to offer climate controlled units,
-            secure access to your units 24 hours a day,
-            and a fully lit facility for safe and easy access.`,
-    },
-    {
-        p: `We offer a wide selection of easy to access, clean,
-            well maintained units secured by fences and pin-coded activated gates all
-            at extremely competitive prices!
-            Reserve your unit and pay your rent with our convenient online tenant portal!`,
-    },
-    {
-        p: `Are you in need of a truck during your big move?
-            We've got you covered with an ample supply of U-Haul trucks in
-            a variety of sizes,a perfect solution for your next big move!`,
-    },
-
-];
-
-
-export const gettingStarted = `Are you ready to de-clutter your life with Drayton Habor Mini Storage?
-                               Check out our unit pricing and reserve your unit or parking space today!`;
+export const gettingStarted = `Are you ready to start de-cluttering your life? Click below
+to begin the reservation process with our incredible service and affordable rates!`;
 
 export const blurb = [
     {
-        h1: `Affordable, Secure Self Storage Units`,
-        p: `Drayton Harbor Mini Storage proudly serves Blaine, Bellingham, Birch Bay and surrounding communities
-        with high-quality customer storage, top notch customer service and the amenities you need to make your
-        storage unit experience a breeze.`,
+        h1: `Convenient & Affordable Self Storage Units`,
+        p: `It doesn't matter if you're a residential storage user looking for a little extra elbow
+        room at home, or if you're a business in need of indoor storage for documents and supplies.
+        Sandusky Self Storage is here to serve your self storage needs with quality storage and affordable rates!`,
     }
 ];

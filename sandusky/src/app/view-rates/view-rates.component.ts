@@ -20,15 +20,14 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Our stellar customer service and ultra-affordable pricing makes
-                Drayton Harbor Mini Storage the greatest self storage value in Blaine!
-                Check out our rates and reserve your unit today!`
+      content: `Take a moment to check our incredibly affordable self storage unit rates!
+      If you've got a question, reach out today!`
     });
-    this.titleService.setTitle('Storage Units In Blaine, WA, 98230 | Drayton Harbor Mini Storage');
+    this.titleService.setTitle('View Rates | Sandusky Self Storage');
   }
 
   ngOnInit() {
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     this.viewRates();
   }
 

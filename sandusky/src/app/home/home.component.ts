@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
-import { featuresList, featuresHead, aboutUs, serviceOffered, gettingStarted, feature, blurb} from '../data/home';
+import { featuresList, aboutUs, gettingStarted, feature, blurb} from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -33,12 +33,9 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Drayton Harbor Mini Storage provides high quality, affordable self storage,
-                RV, boat and vehicle storage to Blaine, Birch Bay, Ferndale and surrounding
-                communities. Our friendly and knowledgeable staff are ready and
-                able to answer any and all storage unit questions you have!`
+      content: `Sandusky Self Storage is Sandusky Ohio's premiere self storage facility. We offer a wide variety of `
     });
-    this.titleService.setTitle('Affordable Self Storage Units Near Blaine, WA, 98230 | Drayton Harbor Mini Storage');
+    this.titleService.setTitle('Affordable Storage in Sandusky | Sandusky Self Storage');
   }
 
   public navigate(location: any) {
@@ -51,7 +48,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 
   public fetchContactDetails() {
@@ -64,13 +61,11 @@ export class HomeComponent implements OnInit {
 
   public fetchFeatures() {
     this.featuresList = featuresList;
-    this.featuresHead = featuresHead;
     this.blurb = blurb;
   }
 
   public fetchStaticContent() {
     this.aboutUs = aboutUs;
-    this.serviceOffered = serviceOffered;
     this.gettingStarted = gettingStarted;
   }
   public fetchFeature () {

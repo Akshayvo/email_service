@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailService } from '../services/email.service';
-import { contact, hours, socialLinks } from '../data/contact';
+import { contact, hours } from '../data/contact';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { Router } from '@angular/router';
 @Component({
@@ -16,6 +16,7 @@ export class ContactButtonComponent implements OnInit {
   emailCB: any;
   phoneCB: any;
   messageCB: any;
+  subjectCB: string;
   contactInfo: any;
   receiveremail: string;
   completeMessage: string;
@@ -32,19 +33,19 @@ export class ContactButtonComponent implements OnInit {
     private emailService: EmailService,
     private formBuilder: FormBuilder
   ) {
-  }
-
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchHours();
-    this.fetchsocialLinks();
     this.contactForm = this.formBuilder.group({
       nameCB: ['', Validators.required],
       phoneCB: ['', [Validators.required,
       Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       emailCB: ['', [Validators.required, Validators.email]],
-      messageCB: ['', Validators.required]
+      messageCB: ['', Validators.required],
+      subjectCB: ['']
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchHours();
   }
 
   get f() { return this.contactForm.controls; }
@@ -57,9 +58,6 @@ export class ContactButtonComponent implements OnInit {
     this.hours = hours;
   }
 
-  public fetchsocialLinks() {
-    this.socialLinks = socialLinks;
-  }
 
   onSubmit() {
     this.submitted = true;
@@ -68,6 +66,10 @@ export class ContactButtonComponent implements OnInit {
    if (this.contactForm.invalid) {
        return;
    } else {
+
+    if ( !this.contactForm.value.subjectCB) {
+      this.contactForm.value.subjectCB = 'Website Form Submission';
+    }
 
      this.receiveremail = this.contactInfo[1].data;
 
@@ -79,6 +81,7 @@ export class ContactButtonComponent implements OnInit {
            email: this.contactForm.value.emailCB,
            receiveremail: this.receiveremail,
            message: this.completeMessage,
+           subject: this.contactForm.value.subjectCB,
          };
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {

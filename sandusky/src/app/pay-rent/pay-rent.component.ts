@@ -20,14 +20,14 @@ export class PayRentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our online bill pay service to pay your rent and manage your account through this page.
-                If you have any questions about setting up your account call (360)332-1047`
+      content: `Pay your rent online 24/7 with our handy tenant portal. Simply follow the
+      on-screen instructions and log in to your account!`
     });
-    this.titleService.setTitle('Pay Your Rent | Drayton Harbor Mini Storage');
+    this.titleService.setTitle('Pay Rent | Sandusky Self Storage');
   }
 
   ngOnInit() {
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     this.fetchContact();
   }
 

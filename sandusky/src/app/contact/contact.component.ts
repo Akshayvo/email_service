@@ -37,16 +37,11 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Have a question or concern about our self storage, RV, boat or vehicle services?
-                Use our convenient contact form or contact information to reach out today!`
+      content: `Do you have a question about our services or your account? Use the form on this page to
+      reach out to us, or use the contact information to call our staff!`
     });
-    this.titleService.setTitle('Affordable Self Storage Units Near Blaine, WA, 98230 | Drayton Harbor Mini Storage');
-  }
+    this.titleService.setTitle('Contact Us | Sandusky Self Storage');
 
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchHours();
-    this.window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -55,6 +50,12 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: ['']
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchHours();
+    window.scrollTo(0, 0);
   }
 
   get f() { return this.contactForm.controls; }

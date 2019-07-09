@@ -4,9 +4,11 @@
 
 export const environment = {
   production: false,
-  errorsMails: [ 'sanghmitra.v@codeparva.in' ],
+  errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Drayton-Harbor'
+  appId: 'Sandusky Self Storage',
+  VERSION: require('../../package.json').version
+
 };
 
 /*

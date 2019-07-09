@@ -1,41 +1,38 @@
 export const contact = [
     {
         id: 0,
-        label: 'Address:',
-        data: '8870 Blaine Rd, Blaine, WA 98230',
+        label: 'Address: ',
+        data: '2908 Venice Rd, Sandusky, OH 44870',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         id: 1,
-        redirect: 'mailto:sales@draytonharborministorage.com',
-        label: 'Email:',
-        data: 'sales@draytonharborministorage.com',
+        redirect: 'mailto:sanduskystorage@gmail.com',
+        label: 'Email: ',
+        data: 'sanduskystorage@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
         id: 2,
-        redirect: 'tel:3603321047',
-        label: 'Phone:',
-        data: '(360)332-1047',
+        redirect: 'tel:4196262713',
+        label: 'Phone: ',
+        data: '(419) 626-2713',
         class: 'fas fa-phone mr-2 iconColor',
     }
 ];
 
 export const hours = [
     {
-        label: 'Site Access: ',
-        data: '7 Days a Week: 6:00AM to 11:00PM'
+        label: 'Monday to Friday: ',
+        data: '10:00AM - 5:00PM'
     },
     {
-        label: 'Office Hours: ',
-        data: 'Tues-Sat: 12:00PM to 5:00PM'
+        label: 'Saturday to Sunday: ',
+        data: 'CLOSED'
     },
+    {
+        label: 'Access Hours: ',
+        data: '24/7/365'
+    }
 ];
 
-export const socialLinks = [
-    {
-        label: 'facebook',
-        path: 'https://www.facebook.com/pages/Drayton-Harbor-Mini-Storage/126481870738770',
-        class: 'fab fa-facebook-square',
-    },
-];
