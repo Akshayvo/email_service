@@ -16,9 +16,9 @@ export const featuresHead = [
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
-        label: 'Security Cameras on Premises',
-        data: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Little+Falls/cctv.svg',
-        alt: 'Icon of a security camera'
+        label: 'Online Reservation & Bill Pay',
+        data: '../../assets/Little+Falls/online-bill.svg',
+        alt: 'Icon art displaying a screen with cursor'
     },
 ];
 
