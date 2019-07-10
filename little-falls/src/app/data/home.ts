@@ -17,7 +17,7 @@ export const featuresHead = [
     },
     {
         label: 'Online Reservation & Bill Pay',
-        data: '../../assets/Little+Falls/online-bill.svg',
+        data: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Little+Falls/online-bill.svg',
         alt: 'Icon art displaying a screen with cursor'
     },
 ];
