@@ -23,7 +23,7 @@ export const hoursLocation1 = [
     },
     {
         label: 'Saturday: ',
-        data: '9:00AM - 5:00PM',
+        data: '9:00AM - 2:00PM',
     },
     {
         label: 'Sunday: ',
@@ -31,7 +31,7 @@ export const hoursLocation1 = [
     },
     {
         label: 'Access hours: ',
-        data: 'Office Hours',
+        data: 'Monday-Saturday 9:00AM - 5:00PM',
     },
 ];
 

@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   heading: string;
   features: any;
   serviceOffered: any;
-
+  
   constructor(
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
