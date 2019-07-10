@@ -28,10 +28,8 @@ export class PhotosComponent implements OnInit {
       this.fetchDetailsLocation1();
   } else if (this.router.url.includes('/location/highway-27-mini-storage')) {
     this.fetchDetailsLocation2();
-  } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
-    this.fetchDetailsLocation3();
   }
-  }
+}
 
   public fetchDetailsLocation1() {
     // this.galleryImages = galleryImagesLocation1;

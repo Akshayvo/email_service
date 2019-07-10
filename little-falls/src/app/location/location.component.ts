@@ -63,7 +63,7 @@ export class LocationComponent implements OnInit {
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
     this.router.navigate(['/location/little-falls-mini-storage/reserveUnit'],
-          { queryParams: { name: 'fohl street storage', currentTab: 'Reserve Unit' },
+          { queryParams: { name: 'little falls mini storage', currentTab: 'Reserve Unit' },
           skipLocationChange: true, queryParamsHandling: null }
           );
   } else if ( this.locationId === 2 ) {

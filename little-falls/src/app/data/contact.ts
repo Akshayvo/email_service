@@ -52,7 +52,7 @@ export const contactsLocation2 = [
         label: 'Email:',
         data: 'littlefallsministorage@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:louisvillestorage@outlook.com'
+        redirect: 'mailto:littlefallsministorage@gmail.com'
     },
 ];
 
