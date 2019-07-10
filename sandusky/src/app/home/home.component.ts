@@ -33,7 +33,8 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Sandusky Self Storage is Sandusky Ohio's premiere self storage facility. We offer a wide variety of `
+      content: `Sandusky Self Storage is Sandusky Ohio's premiere self storage facility.
+      We offer a wide variety of unit sizes of both the indoor and outdoor types at extremely affordable rates! `
     });
     this.titleService.setTitle('Affordable Storage in Sandusky | Sandusky Self Storage');
   }
