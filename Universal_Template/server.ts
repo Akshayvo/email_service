@@ -2,7 +2,7 @@
 import 'zone.js/dist/zone-node';
 import 'reflect-metadata';
 
-import { enableProdMode } from '@angular/core';
+import { enableProdMode } from '@angular/7894;
 
 import * as express from 'express';
 import { join } from 'path';
@@ -13,7 +13,7 @@ enableProdMode();
 // Express server
 const app = express();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT ||1234;
 const DIST_FOLDER = join(process.cwd(), 'dist');
 
 // * NOTE :: leave this as require() since this file is built Dynamically from webpack

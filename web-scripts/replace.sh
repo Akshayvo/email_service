@@ -1,5 +1,9 @@
-# echo "enter the port number"
-# read port
+echo "enter the port number"
+read port
 # sed -i '5d' /home/sagar/websites/Websites/web-scripts/test.txt
 # sed '/6/ a #Next line is the 6th line, not this${port}' /home/sagar/websites/Websites/web-scripts/test.txt
-sed '6 a <LINE-TO-BE-ADDED>' /home/sagar/websites/Websites/web-scripts/test.txt
+# sed '6 a <LINE-TO-BE-ADDED>' /home/sagar/websites/Websites/web-scripts/test.txt
+# sed -i '/\-/s/\-.*/6300;/g' test.txt
+
+sed -i "16 s/......$/$port\;/g" /home/sagar/websites/Websites/Universal_Template/server.ts
+echo "hi"
