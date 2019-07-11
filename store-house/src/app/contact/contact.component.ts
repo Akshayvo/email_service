@@ -37,7 +37,8 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Have questions about our services or your account? Use our contact form or the contact information to reach out today!`
+      content: `Have questions about our services or your account? Use our
+      contact form or the contact information to reach out today!`
     });
     this.titleService.setTitle('Contact Us | The Store House');
     this.contactForm = this.formBuilder.group({
@@ -54,7 +55,6 @@ export class ContactComponent implements OnInit {
     this.fetchContactDetails();
     this.fetchHours();
     window.scrollTo(0, 0);
-    
   }
 
   get f() { return this.contactForm.controls; }

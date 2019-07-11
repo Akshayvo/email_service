@@ -5,7 +5,7 @@ export const contact = [
         data: '19079 US-11, Watertown, NY 13601',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
-    
+
     {
         id: 1,
         redirect: 'mailto:stevewidrick@gmail.com',
@@ -39,13 +39,13 @@ export const hours = [
         label: 'Access Hours: ',
         data: '24/7/365'
     },
-    
+
 ];
 export const socialLinks = [
     {
         label: 'facebook',
         path: 'https://www.facebook.com/pages/The-Store-House/163806946972526',
         class: 'fab fa-facebook-square',
-    },  
-    
+    },
+
 ];

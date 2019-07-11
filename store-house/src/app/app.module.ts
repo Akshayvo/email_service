@@ -58,8 +58,8 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
   providers: [
     Title,
     {
-      provide: ErrorHandler,
-      useClass: ErrorHandlerService
+      provide: ErrorComponent,
+      useClass: ErrorHandlerComponent
     },
     Title,
     {

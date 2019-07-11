@@ -52,8 +52,7 @@
     padding: 0;
     position: relative;
 
-    h1 {
-      text-transform: uppercase;
+    h2 {
       font-weight: 600;
       font-size: 2em;
     }
@@ -95,10 +94,6 @@
   height: 20vh;
   img {
     color:black;
-  }
-
-  .feature-text {
-    text-transform: uppercase;
   }
 }
 
@@ -142,7 +137,7 @@
       font-size: 0.8rem;
     }
 
-    h1 {
+    h2 {
       font-size: 1.8rem;
     }
   }
@@ -222,10 +217,6 @@
       height: 20vh;
       display: flex;
       align-items: center;
-
-      .feature-text {
-        text-transform: uppercase;
-      }
     }
   }
 }
@@ -271,7 +262,7 @@
       font-size: 0.8rem;
     }
 
-    h1 {
+    h2 {
       font-size: 1.8rem;
     }
   }
@@ -337,10 +328,6 @@
       display: flex;
       align-items: center;
       height: 20vh;
-
-      .feature-text {
-        text-transform: uppercase;
-      }
     }
   }
 }
@@ -395,7 +382,7 @@
       font-size: 0.8rem;
     }
 
-    h1 {
+    h2 {
       font-size: 1.8rem;
     }
   }
@@ -454,7 +441,8 @@
       }
 
       .jumbotron-skew-text {
-        width: 300px;
+        top: 40%;
+        width: 320px;
         
       }
     }
@@ -487,7 +475,9 @@
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
-        top: 14%;
+
+        // top: 14%;
+        top: 25%;
       }
     }
   }
