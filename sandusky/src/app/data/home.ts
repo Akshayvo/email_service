@@ -34,7 +34,7 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SanDusky/cctv.svg',
-        label: 'ecurity Cameras on Premises',
+        label: 'Security Cameras on Premises',
         alt: 'Icon of a security camera'
     },
     {
