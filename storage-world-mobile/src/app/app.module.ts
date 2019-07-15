@@ -24,6 +24,7 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { TablesComponent } from './tables/tables.component';
+import { PhotosComponent } from './photos/photos.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { TablesComponent } from './tables/tables.component';
     PayRentComponent,
     ErrorHandlerComponent,
     TablesComponent,
+    PhotosComponent,
   ],
   imports: [
     CommonModule,

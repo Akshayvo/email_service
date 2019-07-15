@@ -1,0 +1,70 @@
+@import '../../styles.scss';
+
+.gallery-content {
+    background-color: $light;
+    #selectedImageM {
+        img {
+            border: 2px solid $white;
+        }
+    }
+    .data {
+        h3 {
+            text-transform: capitalize;
+            font-size: 1.5rem;
+        }
+
+        img {
+            max-width: 172px;
+        }
+    }
+    #thumbnailsList {
+        img {
+            box-shadow: none;
+            border: 1px solid $white;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .gallery-content {
+        .data {
+            img {
+                max-width: 142px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .gallery-content {
+        .data {
+            img {
+                max-width: 102px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+    .gallery-content {
+        .data {
+            img {
+                max-width: 162px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 569px) and (min-width: 350px) {
+    .gallery-content {
+        .data {
+            img {
+                max-width: 98px;
+            }
+        }
+    }
+}
