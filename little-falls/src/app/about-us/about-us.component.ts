@@ -19,6 +19,7 @@ export class AboutUsComponent implements OnInit {
   image: any;
   alt: string;
   serviceOffered: any;
+  location: string;
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -35,10 +36,9 @@ export class AboutUsComponent implements OnInit {
 }
 
   public fetchDetailsLocation1() {
+    this.location = 'little-falls-mini-storage';
     this.aboutPara = aboutUsLocation1;
     this.heading = aboutUsHeadingLocation1;
-    this.image = aboutUsImageLocation1;
-    this.alt = 'Photograph of self storage units outside';
   }
 
   public fetchDetailsLocation2() {

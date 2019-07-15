@@ -1,24 +1,27 @@
-@import "../../styles.scss";
+@import '../../styles.scss';
 
 .gallery-content {
-  padding: 64px;
   background-color: $light;
-  margin-bottom: 50px;
 
-  .selectedImageM {
+  #selectedImageM {
     img {
-      border: 2px solid $white;
+        border: 2px solid $white;
     }
   }
 
   .data {
+
+    img {
+      max-width: 82px;
+    }
+
     h3 {
       text-transform: capitalize;
       font-size: 1.5rem;
     }
   }
 
-  .thumbnailsList {
+  #thumbnailsList {
     img {
       box-shadow: none;
       border: 1px solid $white;
@@ -29,12 +32,33 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .gallery-content {
-    padding: 16px;
 
-    h3 {
-      padding-top: 16px;
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .gallery-content {
+    .data {
+      img {
+        max-width: 66px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .gallery-content {
+    .data {
+      img {
+        max-width: 106px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  .gallery-content {
+    .data {
+      img {
+        max-width: 76px;
+      }
     }
   }
 }
