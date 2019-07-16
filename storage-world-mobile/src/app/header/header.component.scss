@@ -28,6 +28,10 @@ a {
   }
 }
 
+.display-style {
+  display: flex;
+  justify-content: space-between;
+}
 
 .navbar {
   .nav-link {

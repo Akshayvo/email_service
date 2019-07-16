@@ -39,3 +39,11 @@ export const hours = [
         data: '7 Days a Week, 6:00AM - 9:00PM'
     }
 ];
+
+export const socialLinks = [
+    {
+        label: 'facebook',
+        path: 'https://www.facebook.com/Storage-World-Mobile-464548274288984/',
+        class: 'fab fa-facebook-square',
+    },
+];
