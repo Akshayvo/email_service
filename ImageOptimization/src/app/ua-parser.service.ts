@@ -24,20 +24,20 @@ export class UaParserService {
       // console.log(`Browser Name: ${name} Major: ${major}`);
       switch (name) {
         case 'Chrome':
-          this.typeOfImages = (major && major < 32) ? 'PNG' : 'WEBP'; 
+          this.typeOfImages = (major && major < 32) ? 'JPG' : 'WEBP'; 
           break;
         case 'Firefox':
-            this.typeOfImages = (major && major < 65) ? 'PNG' : 'WEBP';
+            this.typeOfImages = (major && major < 65) ? 'JPG' : 'WEBP';
           break;
         default:
-          this.typeOfImages = 'PNG';
+          this.typeOfImages = 'JPG';
           break;
       }
     }
     if(this.typeOfImages === 'WEBP') {
       this.baseUrl = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/webp`;
     } else {
-      this.baseUrl = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/png'
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/jpg'
     }
   }
 }
