@@ -13,7 +13,6 @@ fi
 if [ -w "${folder_path}" ];then
 	cd "${folder_path}"	
 fi
-sc
 directory=$( basename "${folder_path}")
 timestamp=`date "+%d-%m-%Y"`
 
@@ -35,13 +34,13 @@ if [ -e "${folder_path}"/dist ];then
 			echo "server.js File doesnot exists in the dist folder"
 			exit 1
 		fi
-		echo "Enter port number:"
-		read port_number
-		if [ $port_number -gt 10000 ]; then
-        		echo "Enter Valid Port Number"
-        		exit 1
-		fi
-		sed -i "s,|| 5000,|| $port_number,g" "${dist_folder_path}"server.js
+		# echo "Enter port number:"
+		# read port_number
+		# if [ $port_number -gt 10000 ]; then
+        # 		echo "Enter Valid Port Number"
+        # 		exit 1
+		# fi
+		# sed -i "s,|| 5000,|| $port_number,g" "${dist_folder_path}"server.js
 	zip -r "${dest_folder}" dist/
         zip -r "${backup_file}" dist/
 else
@@ -59,13 +58,13 @@ else
 						echo "server.js File doesnot exists in the dist folder"
 						exit 1
 					fi
-					echo "Enter port number:"
-					read port_number
-					if [ $port_number -gt 10000 ]; then
-        					echo "Enter Valid Port Number"
-        					exit 1
-					fi
-					sed -i "s,|| 5000,|| $port_number,g" "${dist_folder_path}"server.js
+					# echo "Enter port number:"
+					# read port_number
+					# if [ $port_number -gt 10000 ]; then
+        			# 		echo "Enter Valid Port Number"
+        			# 		exit 1
+					# fi
+					# sed -i "s,|| 5000,|| $port_number,g" "${dist_folder_path}"server.js
 				zip -r "${dest_folder}" dist/;
 
 				zip -r "${backup_file}" dist/;
