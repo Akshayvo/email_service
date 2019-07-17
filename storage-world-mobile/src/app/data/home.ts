@@ -51,7 +51,7 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Since 1971, Storage World has been serving serving Anoka County and surrounding communities
+        p: `Since 1971, Storage World has been serving Anoka County and surrounding communities
         with high-quality self storage and excellent customer service at an affordable rate.`,
     },
     {
