@@ -1,9 +1,7 @@
 // These are important and needed before anything else
 import 'zone.js/dist/zone-node';
 import 'reflect-metadata';
-
-import { enableProdMode } from '@angular/7894;
-
+import { enableProdMode } from '@angular/core';
 import * as express from 'express';
 import { join } from 'path';
 
