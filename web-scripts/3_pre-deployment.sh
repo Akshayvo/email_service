@@ -21,7 +21,7 @@ timestamp=`date "+%d-%m-%Y"`
 #dest_folder=$(echo "${directory}"_"$timestamp"_dist.zip)
 dest_folder=$(echo "${directory}"_dist.zip)
 backup_file=$(echo "${directory}"_backup.zip)
-echo "$backup_file"
+#echo "$backup_file"
 dist_folder_path=$(echo "${folder_path}"/dist/)
 if [ -e "${folder_path}"/dist ];then
 	echo "Folder already exists"
