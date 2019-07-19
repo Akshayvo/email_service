@@ -21,25 +21,25 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/location.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SI_Mini_Storage/location.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/24-hours.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SI_Mini_Storage/24-hours.svg',
         label: '24 Hour Facility Access',
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/hand.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SI_Mini_Storage/hand.svg',
         label: 'Affordable Self Storage Rates',
         alt: 'Icon of a hand holding money'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/light-bulb.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SI_Mini_Storage/light-bulb.svg',
         label: 'Well-Lit Facility',
         alt: 'Icon of an illuminated light'
     },

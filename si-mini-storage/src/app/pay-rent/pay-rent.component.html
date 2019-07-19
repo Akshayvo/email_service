@@ -17,7 +17,7 @@
             <p> <b>Password:</b> Unit Number</p>
            
         
-            <p class="pt-4"><b>Have questions about your account?</b><br>
+            <p class="pt-4"><b>Have questions about your account?</b>
               <span *ngFor="let contact of contact"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
             </span>
             </p>
