@@ -4,11 +4,11 @@ export const featuresList = [
     
     {
         td1: 'Brand New Facility',
-        td2: 'Temperature Controlled Units Available',
+        td2: 'Fully Paved',
     },
     {
         td1: 'Online Reservations',
-        td2: 'Fully Paved',
+        td2: 'Temperature Controlled Units Available',
     },
     
     
@@ -25,8 +25,8 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SUM_Storage_Images/thermometer.svg',
-        label: 'Climate-Controlled Units Available',
-        alt: 'Icon of thermometer indicating climate controlled units'
+        label: 'temperature-controlled Units Available',
+        alt: 'Icon of thermometer indicating temperature controlled units'
     },
     {
         // tslint:disable-next-line:max-line-length
@@ -70,7 +70,7 @@ export const gettingStarted = `Are you ready to start de-cluttering your home or
 export const blurb = [
     {
         h1: `Coming Soon!`,
-        p: `SUM Storage is Morganton's newest self storage facility. We have a number of self storage unit sizes in both regular and climate-controlled 
+        p: `SUM Storage is Morganton's newest self storage facility. We have a number of self storage unit sizes in both regular and temperature-controlled 
             varieties to meet any of your self storage needs! Our modern facility is well-lit, secured by pin-code activated gate, and we offer the moving 
             supplies you need to make your stay with us a breeze!`,
     }
