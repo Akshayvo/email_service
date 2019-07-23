@@ -25,6 +25,7 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { PhotosComponent } from './photos/photos.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { PhotosComponent } from './photos/photos.component';
     PayRentComponent,
     ErrorHandlerComponent,
     PhotosComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [
     CommonModule,

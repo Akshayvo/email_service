@@ -27,7 +27,8 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We offer brand new, affordable, self storage units in a wide variety of sizes. Start de-cluttering your life today with Rifle Self Storage!`
+      content: `We offer brand new, affordable, self storage units in a wide variety of sizes.
+      Start de-cluttering your life today with Rifle Self Storage!`
     });
     this.titleService.setTitle('Affordable Self Storage in Rifle, CO | Rifle Self Storage');
   }
