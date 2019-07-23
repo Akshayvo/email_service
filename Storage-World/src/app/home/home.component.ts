@@ -34,6 +34,7 @@ export class HomeComponent implements OnInit {
                 friendly on-premise manager and learn how we can make your storage experience a breeze!`
     });
     this.titleService.setTitle('Affordable Self Storage in Ham Lake, MN | Storage World');
+
   }
 
   public navigate(location: any) {
