@@ -37,24 +37,26 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Do you have questions about the self storage unit services provided by Rifle Self Storage? Use our online contact form or call today!`
+      content: `Do you have questions about the self storage unit services provided by Rifle Self Storage?
+      Use our online contact form or call today!`
     });
     this.titleService.setTitle('Contact Us | Rifle Self Storage');
+    this.contactForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      phone: ['', [Validators.required,
+      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required],
+      subject: [''],
+  });
   }
 
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchContactUs();
     this.fetchHours();
-    this.window.scrollTo(0, 0);
-    this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      phone: ['', [Validators.required,
-              Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      subject: [''],
-  });
+    window.scrollTo(0, 0);
+    
   }
 
   get f() { return this.contactForm.controls; }
