@@ -56,7 +56,7 @@ export class ContactComponent implements OnInit {
     this.fetchContactUs();
     this.fetchHours();
     window.scrollTo(0, 0);
-    
+
   }
 
   get f() { return this.contactForm.controls; }

@@ -1,6 +1,6 @@
 export const contact = [
     {
-        id: 0   ,
+        id: 0,
         label: 'Address:',
         data: '1889 Airport Road. Rifle, CO 81650',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
