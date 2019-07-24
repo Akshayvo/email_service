@@ -21,25 +21,25 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: '../assets/lois-stor-all/location.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Lois_Star/location.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../assets/lois-stor-all/hand.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Lois_Star/hand.svg',
         label: 'Affordable Self Storage Rates',
         alt: 'Icon of a hand holding money'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../assets/lois-stor-all/light-bulb.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Lois_Star/light-bulb.svg',
         label: 'Well-Lit Facility',
         alt: 'Icon of an illuminated light'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../assets/lois-stor-all/fence.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Lois_Star/fence.svg',
         label: 'Fully-Fenced Facility',
         alt: 'Icon of a section of fencing'
     },
