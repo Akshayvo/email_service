@@ -7,18 +7,23 @@
       <div class="rent-sub-holder">
         <div class="row padding bg-light">
           <div class="col-lg-8 col-md-6 coming scroll-wrapper padding-for-small-device">
-            <iframe id="advanced_iframe" name="advanced_iframe" src="https://sanduskyselfstorage.sim.syrasoft.com/PayNow" width="100%"
+            <iframe id="advanced_iframe" name="advanced_iframe" src="https://loisstor-all.sim.syrasoft.com/Home/PayNow" width="100%"
              scrolling="yes" frameborder="0" border="0" allowtransparency="true"></iframe>  
           </div>
   
           <div class="col-lg-4 col-md-6 rent-example padding-for-small-device">
             <h2> How to Login </h2>
-            <p class="pt-3"> <b>Username:</b> First initial + Last Name </p>
-            <p> <b>Password:</b> Your Unit Number</p>
+            <p class="pt-3"> <b>Username:</b> Email Address </p>
+            <p> <b>Password:</b> Access Code </p>
+            <p class="pt-3"> <b>Example:</b></p>
+            <p> John Smith's access code is 1234.</p>
+            <p> John's Username: jsmith1@email.com</p>
+            <p>John's Password: 1234</p>
         
-            <p class="pt-4"><b>Have questions about your account?</b><br>
-              <span *ngFor="let contact of contact"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
-            </span>
+            <p class="pt-3"><b>Have questions about your account?</b><br>
+              <a href="tel:2627638925">(262) 763-8925</a>
+              <br>
+              <a href="mailto:LoisStorAll@gmail.com">LoisStorAll@gmail.com</a>
             </p>
           </div>
         </div>

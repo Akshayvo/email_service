@@ -37,10 +37,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Do you have a question about our services or your account? Use the form on this page to
-      reach out to us, or use the contact information to call our staff!`
+      content: `Do you have a question about our services or your account with us? Use
+      this form or call our office today!`
     });
-    this.titleService.setTitle('Contact Us | Sandusky Self Storage');
+    this.titleService.setTitle('Contact Us | Lois Stor-All');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -79,7 +79,7 @@ export class ContactComponent implements OnInit {
         this.contactForm.value.subject = 'Website Form Submission';
       }
 
-      this.receiveremail = this.contactInfo[1].data;
+      this.receiveremail = this.contactInfo[2].data;
 
           this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
                                  message: ${this.contactForm.value.message}`;

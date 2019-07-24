@@ -1,6 +1,6 @@
 <div id="contact-button-data" class="contact-button-data">
 <div class="heading py-2">
-  <div class="row">
+  <div class="row align-item-center ">
     <h2 class="col-6 pr-0">Contact Us</h2>
     <div class="col-6">
         <span class="socialLinks" *ngFor="let data of socialLinks" >
@@ -13,11 +13,11 @@
 </div>
 
 <div class="map-responsive py-2">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d374.0127641020992!2d-82.73984199999998!3d41.43940200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc291006d1dd71974!2sSandusky+Self+Storage!5e0!3m2!1sen!2sus!4v1562678953621!5m2!1sen!2sus" width="100%" height="150px" frameborder="0"allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4044.474599712088!2d-88.26754670504626!3d42.69599643625494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880584c93b09b219%3A0xa0998c51056fe1d8!2sLois+Stor-All!5e0!3m2!1sen!2sus!4v1563911367372!5m2!1sen!2sus" width="100%" height="150px" frameborder="0"allowfullscreen></iframe>
 </div>
 
 <div *ngFor="let contact of contactInfo" class="py-1 contact-links">
-  <span> <i class="{{contact.class}}"></i></span><span class="" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+  <span> <i class="{{contact.class}}"></i></span><span class="" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
   <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
 </div>
 

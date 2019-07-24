@@ -20,10 +20,10 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to check our incredibly affordable self storage unit rates!
-      If you've got a question, reach out today!`
+      content: `Take a moment to review our affordable storage unit rates
+      and see if we have the right unit for your needs available!`
     });
-    this.titleService.setTitle('View Rates | Sandusky Self Storage');
+    this.titleService.setTitle('View Rates | Lois Stor-All');
   }
 
   ngOnInit() {

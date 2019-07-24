@@ -15,10 +15,10 @@ export class ReserveUnitComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Start de-cluttering your life today with a reservation at Sandusky Self Storage!
-      Our affordable unit rates and easy rental terms make us Sandusky's #1 choice!`
+      content: `Use this form to reserve your unit today! One of our friendly
+      managers will reach out shortly to assist you!`
     });
-    this.titleService.setTitle('Reservations | Sandusky Self Storage');
+    this.titleService.setTitle('Reserve Unit | Lois Stor-All');
   }
 
   ngOnInit() {

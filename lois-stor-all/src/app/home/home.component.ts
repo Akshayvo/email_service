@@ -33,10 +33,10 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Sandusky Self Storage is Sandusky Ohio's premiere self storage facility.
-      We offer a wide variety of unit sizes of both the indoor and outdoor types at extremely affordable rates! `
+      content: `Since 1985, Lois Stor-All has been serving the Burlington area, including Waterford, Delavan,
+      and Elkhorn with quality self storage and customer service! `
     });
-    this.titleService.setTitle('Affordable Storage in Sandusky | Sandusky Self Storage');
+    this.titleService.setTitle('Affordable Self Storage in Burlington');
   }
 
   public navigate(location: any) {

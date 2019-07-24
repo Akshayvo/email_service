@@ -1,82 +1,85 @@
 
 export const featuresList = [
     {
-        td1: 'Convenient Location',
+        td1: 'Well-Lit',
         td2: 'Fully-Fenced',
     },
     {
-        td1: 'Security Cameras On-Site',
-        td2: 'Well-Lit',
+        td1: '24 Hour Access',
+        td2: 'Online Bill-Pay',
     },
     {
-        td1: 'Online Payments',
-        td2: '24 Hour Access'
+        td1: 'Convenient Location',
+        td2: 'Online Reservations',
     },
     {
-        td1: 'Manager On-Site',
-        td2: 'Online Reservations'
+        td1: 'Pin-Code Secured Gate',
+        td2: 'Managers Available 6 Days a Week'
     }
 ];
 
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SanDusky/convenient-location.svg',
+        path: '../assets/lois-stor-all/location.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SanDusky/light-bulb.svg',
+        path: '../assets/lois-stor-all/hand.svg',
+        label: 'Affordable Self Storage Rates',
+        alt: 'Icon of a hand holding money'
+    },
+    {
+        // tslint:disable-next-line:max-line-length
+        path: '../assets/lois-stor-all/light-bulb.svg',
         label: 'Well-Lit Facility',
         alt: 'Icon of an illuminated light'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SanDusky/cctv.svg',
-        label: 'Security Cameras on Premises',
-        alt: 'Icon of a security camera'
-    },
-    {
-        // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SanDusky/hand.svg',
-        label: 'Affordable Self Storage Rates',
-        alt: 'con of a hand holding money'
+        path: '../assets/lois-stor-all/fence.svg',
+        label: 'Fully-Fenced Facility',
+        alt: 'Icon of a section of fencing'
     },
 ];
 
 
 export const aboutUs = [
     {
-        p: `Sandusky Self Storage is the premiere self storage facility in Sandusky, Ohio. We are
-        conveniently located at Route 6 & 101 to make trips to and from our facility a breeze! We offer a wide
-        variety of unit sizes and unit types. Our unit sizes start at 8 foot by 8 foot, perfect for a bedroom or
-        two, and continue to our oversized 23 foot by 28 foot, an ideal solution for large vehicle storage needs!
-        We also offer outdoor parking for recreational vehicles, boats or other oversized vehicles.`,
+        p: `Lois Stor-All has been locally owned and operated since 1985. We proudly served the Burlington
+        area, including Waterford, Delavan, Twin Lakes, and Elkhorn with affordable storage and
+        excellent customer service!`,
     },
     {
-        p: `We are well-lit and fully-fenced, and we also have security cameras covering the facility to ensure you
-        always feel safe when loading or unloading your belongings. Our on-site managers perform regular lot checks,
-        keeping a close eye on the units, and customers.`,
+        p: `Our facility is conveniently located on Droster Ave, off of Milwaukee Ave behind Otter Sales
+        & Service. Our customers love the personal pin-code secured gate access and our daily 6:00AM to
+        10:00PM access hours! You can even reserve your unit or pay your rent online!`,
     },
     {
-        p: `Our customers love our 24 hour unit access. It doesn't matter if you're a growing business that requires
-        access to documents or supplies and equipment outside of business hours, or if you're a residential user just
-        looking for a little flexibility. We're here to make your stay with us as easy as possible. As part of that
-        commitment to convenience, we offer online payments and reservations unlike other self storage facilities
-        that make you do business at their convenience.`,
+        p: `We're not just about convenience at Lois Stor-All! We also understand how important your
+        belongings are and we've gone the extra mile to provide that sense of security. We have security
+        cameras on-site, ample lighting, and are a fully-fenced storage facility! Our managers also perform
+        regular lot checks.`,
     },
+    {
+        p: `So, whether you are a residential storage user looking for a little extra elbow room around the
+        home, or a growing business seeking inventory or equipment space, we can't wait to show you why
+        we're Burlington's premiere self storage facility!`
+    }
 ];
 
 
-export const gettingStarted = `Are you ready to start de-cluttering your life? Click below
-to begin the reservation process with our incredible service and affordable rates!`;
+export const gettingStarted = `Are you ready to start de-cluttering your life or restoring that elbow room around
+the office? Click here to check out our affordable rates, and make your reservation today!`;
 
 export const blurb = [
     {
-        h1: `Convenient & Affordable Self Storage Units`,
-        p: `It doesn't matter if you're a residential storage user looking for a little extra elbow
-        room at home, or if you're a business in need of indoor storage for documents and supplies.
-        Sandusky Self Storage is here to serve your self storage needs with quality storage and affordable rates!`,
+        h1: `Convenient & Affordable Storage Units`,
+        p: `Since 1985, Lois Stor-All has provided the Burlington area with high-quality self storage and excellent
+        customer service. With over 400 units ranging from 5' x 10' to our oversized 12' x 32', Lois Stor-All has all
+        of your self storage needs covered! Use our handy online reservation form or call today and start de-cluttering
+        your life!`,
     }
 ];

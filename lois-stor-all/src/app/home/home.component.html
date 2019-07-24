@@ -31,7 +31,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-3 p-4 text-center override-padding-x-axis" *ngFor="let feature of feature">
-            <img [src]="feature?.path" alt="" height="80px" width="auto">
+            <img [src]="feature?.path" [alt]="feature?.alt" height="80px" width="auto">
               <h6 class="feature-text">{{feature.label}}</h6>
           </div>
         </div>
@@ -45,7 +45,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 py-3 map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d374.0127641020992!2d-82.73984199999998!3d41.43940200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc291006d1dd71974!2sSandusky+Self+Storage!5e0!3m2!1sen!2sus!4v1562678953621!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4044.474599712088!2d-88.26754670504626!3d42.69599643625494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880584c93b09b219%3A0xa0998c51056fe1d8!2sLois+Stor-All!5e0!3m2!1sen!2sus!4v1563911367372!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
         </div>
         
         <div class="col-lg-6 py-3">
@@ -53,7 +53,7 @@
            <h2 class="heading pb-4">Location Information</h2>
             <div>
               <div class="font-xs-device" *ngFor="let contact of contactDetails">
-                <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </div>
               <div class="pt-3 font-xs-device">
@@ -78,68 +78,15 @@
   <div class="container py-5">
     <div class="row">
       <div class="col-lg-6 py-3">
-        <video width="100%" controls>
-          <source src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SanDusky/about_us.mp4" type="video/mp4">
-        </video>
+        <img src="../../assets/lois-stor-all/self-storage-unit-outdoor-placeholder.jpg" width="100%" alt="Photos of self storage units outside" />
       </div>
       <div class="col-lg-6 py-3">
-        <h1 class="heading pb-4">Affordable Storage in Sandusky</h1>
+        <h1 class="heading pb-4">Affordable Storage Units in Burlington</h1>
         <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
       </div>
     </div>
   </div>
   <!--About Us Section Ends Here-->
-
-  <!--Testimonial-->
-  <div class="bg-light">
-    <div class="container">
-      <div class="row py-5">
-       <div class="col-md-12 text-center">
-          <h2 class="heading pb-4">Testimonials</h2>
-          <div id="demo" class="carousel slide" data-ride="carousel">
-
-              <!-- Indicators -->
-              <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-              </ul>
-            
-              <!-- The slideshow -->
-              <div class="carousel-inner ">
-                <div class="carousel-item py-5 active">
-                  <p>
-                      We needed a close to home and decent priced place to store our belongings when life was just going all wrong for us. Sondra did everything in her power to make at least this part of our life as easy as possible. She went out of her way to help us in any way that she could during our move in and move out. There are cameras and locked gates to the facility so we knew that our belongings would be safe and secure, and we could be at ease with our decision. I would highly recommend this place to anyone who needs to store their belongings.
-                  </p>
-                  <p>
-                      - Jude Leal
-                  </p>
-                </div>
-                <div class="carousel-item py-5">
-                  <p>
-                      Facility/units are kept very nice. Our storage unit is dry and not musty smelling. The staff is friendly and very accommodating. The facility is kept secure. Have never had any issues with this storage company.
-                    </p>
-                    <p>
-                        - Kimberly Schwanger
-                    </p>
-
-                </div>
-                <div class="carousel-item py-5">
-                  <p>
-                      The absolute best staff.  The manager, Sondra, will always go out of her way to make sure your needs are accommodated and you are satisfied.
-                  </p>
-                  <p>
-                      - Shelly Kennedy
-                  </p>
-                </div>
-              </div>
-            
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Testimonial section-->
 
 
 <!--Get Started Secion-->

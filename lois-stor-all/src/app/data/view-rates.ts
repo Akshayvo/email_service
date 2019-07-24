@@ -1,16 +1,13 @@
 export const dataViewRates = [
     {
-        p: `Sandusky Self Storage offers indoor and outdoor storage units at extremely affordable rates.
-        We also offer outdoor parking spaces for oversized vehicles that don't fit into our units.`,
+        p: `Our family owned and operated team has been serving the community with high-quality
+        self storage services and excellent customer service since 1985. We offer a wide variety
+        of storage unit sizes to cover every use imaginable, and all at very affordable rates!`,
     },
     {
-        p: `Our whole facility is fenced in, well-lit, and covered by security cameras. We take the
-        safety of our customers and their belongings seriously, this is why our on-site manager
-        performs regular inspections.`,
-    },
-    {
-        p: `Between the convenience, value, and security, there's no wonder Sandusky Self Storage
-        is Sandusky Ohio's premiere self storage facility! If you've got questions about our services,
-        simply call (419) 626-2713 and speak with one of our friendly managers today!`
+        p: `Whether you're looking to remodel a room and need a little space for a short while,
+        or you're downsizing and need a larger unit for a longer period of time, we have the perfect
+        unit for you! Our friendly management staff are here to help make your stay with Lois Stor-All
+        an easy one, so call today and learn how we can help you!`,
     }
 ];
