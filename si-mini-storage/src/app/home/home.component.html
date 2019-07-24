@@ -97,45 +97,24 @@
           <div id="demo" class="carousel slide" data-ride="carousel">
 
               <!-- Indicators -->
-              <ul class="carousel-indicators">
+              <ul class="carousel-indicators" >
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>
                 <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+                <li data-target="#demo" data-slide-to="5"></li>
+                <li data-target="#demo" data-slide-to="6"></li>
+                <li data-target="#demo" data-slide-to="7"></li>
               </ul>
             
               <!-- The slideshow -->
-              <div class="carousel-inner ">
-                <div class="carousel-item py-5 active">
-                  <p>
-                    Great place to rent a storage unit. The location is great, facilities are clean and dry, and management was very helpful. 
-                    I got a unit at a very reasonable price. Would definitely recommend!
-                  </p>
-                  <p>
-                    - Brian Smith
-                  </p>
-                </div>
-                <div class="carousel-item py-5">
-                  <p>
-                    Great place to rent a storage unit. The location is great, facilities are clean and dry, and management was very helpful.
-                    I got a unit at a very reasonable price. Would definitely recommend!
-
-                    </p>
-                    <p>
-                      - Shemikka Young
-                    </p>
-
-                </div>
-                <div class="carousel-item py-5">
-                  <p>
-                    Si Mini Storage was there for me when I was in a pinch and needed a storage unit ASAP. It is clean and well run. When 
-                    I needed to change units it was done effortlessly. Kudos to Aaron!
-                  </p>
-                  <p>
-                    - Laurie Kamps
-                  </p>
+              <div class="carousel-inner">
+                <div class="carousel-item py-5" *ngFor="let testimonials of testimonials" [class.active]="testimonials.id === 0">
+                  <p>{{testimonials.p}}</p>
+                  <p>{{testimonials.author}}</p>
                 </div>
               </div>
-            
             </div>
         </div>
       </div>

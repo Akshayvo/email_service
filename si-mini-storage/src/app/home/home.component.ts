@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
-import { featuresList, aboutUs, gettingStarted, feature,blurb} from '../data/home';
+import { featuresList, aboutUs, gettingStarted, feature, blurb, testimonials} from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
   aboutUs: any;
   serviceOffered: any;
   gettingStarted: any;
+  testimonials: any;
   feature: any;
   currentActive: any = 'HOME';
 
@@ -33,7 +34,8 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Since 1992 we've been serving Barberton and the surrounding communities with clean, well-maintained, and affordable self storage units. Call today!`
+      content: `Since 1992 we've been serving Barberton and the surrounding communities with clean,
+      well-maintained, and affordable self storage units. Call today!`
     });
     this.titleService.setTitle('Affordable Storage Units in Barberton | SI Mini Storage');
   }
@@ -48,11 +50,16 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
+    this.fetchTestimonials();
     window.scrollTo(0, 0);
   }
 
   public fetchContactDetails() {
     this.contactDetails = contact;
+  }
+
+  public fetchTestimonials() {
+    this.testimonials = testimonials;
   }
 
   public fetchHours() {

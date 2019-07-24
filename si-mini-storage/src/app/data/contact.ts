@@ -41,6 +41,5 @@ export const socialLinks = [
         path: 'https://www.facebook.com/SIministorage',
         class: 'fab fa-facebook-square',
     },
-    
 ];
 
