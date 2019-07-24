@@ -2,7 +2,6 @@ import { Component, OnInit,Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { navLinks } from '../data/nav';
 import { contact, socialLinks } from '../data/contact';
-import { TestuaparserComponent} from '../testuaparser/testuaparser.component';
 import { UaParserService } from '../ua-parser.service';
 
 

@@ -21,7 +21,6 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
-import { TestuaparserComponent } from './testuaparser/testuaparser.component';
 import { UaParserService } from './ua-parser.service';
 
 
@@ -40,7 +39,6 @@ import { UaParserService } from './ua-parser.service';
     ErrorHandlerComponent,
     StorageTipsComponent,
     AccordionComponent,
-    TestuaparserComponent
     
   ],
   imports: [
