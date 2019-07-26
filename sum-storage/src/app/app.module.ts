@@ -45,10 +45,7 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
     ContactButtonComponent,
     ReserveComponent,
     PayRentComponent,
-    
-    
-    
-    
+
   ],
   imports: [
     CommonModule,
