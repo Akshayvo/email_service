@@ -1,7 +1,7 @@
 
 export const viewRates = [
   {
-    heading: `View Our Text`,
+    heading: `View Our Rates`,
     blurb: `Whether you're looking for short term storage during a move or long term self storage for a permanent
     downsizing, Space Place Macedonia has the perfect unit for you! Our friendly staff and high tech facility
     is here to make your self storage experience a breeze!`,
