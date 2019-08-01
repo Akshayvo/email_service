@@ -11,24 +11,29 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Fohl Street Storage',
-                path: '/location/fohl-street-storage',
+                label: '730 Kenton Station Location',
+                path: '/location/730-kenton-station',
               },
               {
                   id: '2',
-                  label: 'Louisville Self Storage',
-                  path: '/location/louisville-self-storage',
+                  label: '751 Kenton Station Location',
+                  path: '/location/751-kenton-station',
               },
-              {
-                  id: '3',
-                  label: 'Lincoln Street Storage',
-                  path: '/location/lincoln-street-storage',
-              },
+            //   {
+            //       id: '3',
+            //       label: 'Augusta Location',
+            //       path: '/location/augusta',
+            //   },
+            //   {
+            //       id: '4',
+            //       label: 'Front Street Climate Control',
+            //       path: '/location/front-street-climate-control'
+            //   }
         ]
     },
     {
         label: 'Pay Rent',
-        path: '/payment',
+        path: '/pay-rent',
         type: 'link'
     },
     {

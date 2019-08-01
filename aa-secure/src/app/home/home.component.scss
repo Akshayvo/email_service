@@ -1,5 +1,12 @@
 @import "../../styles.scss";
 
+
+.contact-links {
+  a {
+    color: black;
+  } 
+}
+
 .carousel-caption {
   bottom: 40px;
 
@@ -60,7 +67,7 @@
 
 
 .jumbotron-top {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/architecture-wood-house-home-facade-property-560369-pxhere.com.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-storage-jumbotron-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,7 +75,15 @@
 }
 
 .jumbotron-top1 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/all-space-indoor-units.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-storage-jumbotron-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-top2 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-storage-jumbotron-3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

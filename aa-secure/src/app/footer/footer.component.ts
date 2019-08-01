@@ -22,7 +22,7 @@ export class FooterComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/fohl-street-storage')) {
+    if (this.router.url.includes('/location/730-kenton-station')) {
       this.locationId = 1;
     } else  if (this.router.url.includes('/location/location3'))  {
       this.locationId = 1;

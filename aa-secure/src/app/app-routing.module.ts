@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
-import { PaymentComponent } from './payment/payment.component';
 import { ErrorComponent } from './error/error.component';
 import { LocationComponent } from './location/location.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
@@ -15,76 +14,95 @@ import { DirectionsComponent } from './directions/directions.component';
 
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
-import { PayRentShalerComponent } from './pay-rent-shaler/pay-rent-shaler.component';
-import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'location/fohl-street-storage',
+  { path: 'location/730-kenton-station',
     component: LocationComponent,
     children: [
-      { path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      // { path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      { path: '', redirectTo: 'reservations', pathMatch: 'full'},
       { path: 'storageUnits', component: StorageUnitComponent },
       { path: 'unitSizer', component: UnitSizerComponent },
-      { path: 'reserveUnit', component: ReserveUnitComponent },
+      { path: 'reservations', component: ReserveUnitComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/louisville-self-storage',
+  { path: 'location/751-kenton-station',
     component: LocationComponent,
     children: [
-      { path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      // { path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      { path: '', redirectTo: 'reservations', pathMatch: 'full'},
+      { path: 'reservations', component: ReserveUnitComponent },
       { path: 'storageUnits', component: StorageUnitComponent },
       { path: 'unitSizer', component: UnitSizerComponent },
-      { path: 'reserveUnit', component: ReserveUnitComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/lincoln-street-storage',
+  { path: 'location/augusta',
     component: LocationComponent,
     children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      // {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      { path: '', redirectTo: 'reservations', pathMatch: 'full'},
       { path: 'storageUnits', component: StorageUnitComponent },
       { path: 'unitSizer', component: UnitSizerComponent },
-      { path: 'reserveUnit', component: ReserveUnitComponent },
+      { path: 'reservations', component: ReserveUnitComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/fohl-street-storage', component: HomeComponent,
+  { path: 'location/front-street-climate-control',
+  component: LocationComponent,
+  children: [
+    // {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+    { path: '', redirectTo: 'reservations', pathMatch: 'full'},
+    { path: 'storageUnits', component: StorageUnitComponent },
+    { path: 'unitSizer', component: UnitSizerComponent },
+    { path: 'reservations', component: ReserveUnitComponent },
+    { path: 'photos', component: PhotosComponent },
+    { path: 'about', component: AboutUsComponent },
+    { path: 'directions', component: DirectionsComponent },
+  ]
+},
+  { path: 'review/730-kenton-station', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJx32Lt_3bNogRIrBW_3LA8U8'
+        externalUrl: ''
     }
   },
-  { path: 'review/louisville-self-storage', component: HomeComponent,
+  { path: 'review/751-kenton-station', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJN-OSxhzMNogRU44CHDYQuT0'
+        externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJDem__t1aQYgRkUdtF_EG6B8'
     }
   },
-  { path: 'review/lincoln-street-storage', component: HomeComponent,
+  { path: 'review/augusta', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJb8wEymTFNogRYZrBZBX-ZO4'
+        externalUrl: ''
     }
   },
+  { path: 'review/front-street-climate-control', component: HomeComponent,
+  resolve: {
+      url: 'externalUrlRedirectResolver'
+  },
+  data: {
+      externalUrl: ''
+  }
+},
   { path: 'error', component: ErrorHandlerComponent },
-  { path: 'payment', component: PaymentComponent },
-  { path: 'pay-rent-lincoln-street-storage', component: PayRentComponent },
-  { path: 'pay-rent-louisville-self-storage', component: PayRentShalerComponent },
-  { path: 'pay-rent-fohl-street-storage', component: PayRentNatronaComponent },
+  { path: 'pay-rent', component: PayRentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: ErrorComponent },

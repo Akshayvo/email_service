@@ -29,17 +29,6 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  // public isSomePage() {
-  //   if (this.router.url.includes('/location/location3')) {
-  //       this.logo = '';
-  //   } else if (this.router.url.includes('')) {
-  //     this.logo = '';
-  //   } else  if (this.router.url.includes(''))  {
-  //       this.logo = '';
-  //   } else {
-  //     this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/canton-ohio.png';
-  //   }
-  // }
 
   public navigate (location: any) {
     this.router.navigate([location]);

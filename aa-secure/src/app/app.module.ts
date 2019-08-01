@@ -13,7 +13,6 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { PaymentComponent } from './payment/payment.component';
 import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
 import { LocationComponent } from './location/location.component';
@@ -33,8 +32,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
-import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.component';
-import { PayRentShalerComponent } from './pay-rent-shaler/pay-rent-shaler.component';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +41,6 @@ import { PayRentShalerComponent } from './pay-rent-shaler/pay-rent-shaler.compon
     HomeComponent,
     ContactComponent,
     FooterComponent,
-    PaymentComponent,
     TablesComponent,
     ErrorComponent,
     LocationComponent,
@@ -58,11 +55,8 @@ import { PayRentShalerComponent } from './pay-rent-shaler/pay-rent-shaler.compon
     TabsComponent,
     AccordionComponent,
     SelectLocationComponent,
-    
     ErrorHandlerComponent,
     PayRentComponent,
-    PayRentNatronaComponent,
-    PayRentShalerComponent
   ],
   imports: [
     NgtUniversalModule,

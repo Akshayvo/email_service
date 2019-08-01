@@ -1,7 +1,9 @@
 <nav class="navbar navbar-expand-lg bg-white">
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')">
-      <img class="pb-2" src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/canton-ohio.png" width="auto" height="70px" alt="Logo for Self Storage of Canton Ohio">
+      <!-- <img class="pb-2" src=""
+        width="auto" height="70px" alt=""> -->
+        <p><strong>AA Secure Storage</strong></p>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +19,7 @@
 
           <span *ngIf="nav?.type === 'dropdown'">
               <div class="dropdown show">  
-                <a class="dropdown-toggle nav-link text-center" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/location/fohl-street-storage')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+                <a class="dropdown-toggle nav-link text-center" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/location/730-kenton-station')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
                   <li *ngFor="let sub of nav.sublinks text-center"><a class="dropdown-item" [routerLinkActive]="'location-active'" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a></li>
                 </ul>

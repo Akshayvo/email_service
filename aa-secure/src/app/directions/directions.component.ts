@@ -18,29 +18,29 @@ export class DirectionsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/fohl-street-storage')) {
+    if (this.router.url.includes('/location/730-kenton-station')) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes('/location/louisville-self-storage')) {
+     } else if (this.router.url.includes('/location/751-kenton-station')) {
        this.fetchDetailsLocation2();
-     } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
+     } else  if (this.router.url.includes('/location/augusta'))  {
        this.fetchDetailsLocation3();
      }
  }
 
  public fetchDetailsLocation1() {
   // this.directionPoints = directionLocation1;
-  this.directionHeading = `Directions to fohl street storage`;
+  this.directionHeading = `Directions to 730 Kenton Station Location`;
   this.id = 1;
 }
   public fetchDetailsLocation2() {
     // this.directionPoints = directionLocation2;
-    this.directionHeading = `Directions to Louisville Self Storage`;
+    this.directionHeading = `Directions to 751 Kenton Station Location`;
     this.id = 2;
   }
 
   public fetchDetailsLocation3() {
     // this.directionPoints = directionLocation3;
-    this.directionHeading = `Directions to Lincoln Street Storage`;
+    this.directionHeading = `Directions to Augusta Location`;
     this.id = 3;
   }
 }

@@ -4,7 +4,8 @@ import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
-          contactsLocation3, hoursLocation3 } from '../data/contact';
+          contactsLocation3, hoursLocation3,
+          contactsLocation4, hoursLocation4 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -44,9 +45,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Find your location's contact information here or use one of our contact forms!`
+      content: `Do you have a question about your account with us or would you like to learn more
+      about our services? Use our form or call today!`
     });
-    this.titleService.setTitle('Contact Us');
+    this.titleService.setTitle('Contact Us | AA Secure Storage');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -79,25 +81,33 @@ export class ContactComponent implements OnInit {
       this.fetchContactDetailsLocation2();
     } else if ( this.locationId === '3' ) {
       this.fetchContactDetailsLocation3();
+    } else if ( this.locationId === '4' ) {
+      this.fetchContactDetailsLocation4();
     }
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `Fohl Street Storage`;
+    this.heading = `730 Kenton Station Location`;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
 
   public fetchContactDetailsLocation2() {
-    this.heading = `Louisville Self Storage`;
+    this.heading = `751 Kenton Station Location`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = `Lincoln Street Storage`;
+    this.heading = `Augusta Location`;
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
+  }
+
+  public fetchContactDetailsLocation4() {
+    this.heading = `Front Street Climate Control`;
+    this.contactDetails = contactsLocation4;
+    this.hoursDetails = hoursLocation4;
   }
 
 onSubmit() {

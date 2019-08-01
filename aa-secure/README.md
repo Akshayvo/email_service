@@ -3,9 +3,9 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace Canton-website with your project name(Hyphen Case)
+Replace aa-secure-website with your project name(Hyphen Case)
 
-Replace Canton Website with your project name(camelCase)
+Replace aa-secure Website with your project name(camelCase)
 
 Find and Replace across project
 

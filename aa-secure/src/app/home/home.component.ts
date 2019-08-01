@@ -3,7 +3,8 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
-          contactsLocation3, hoursLocation3 } from '../data/contact';
+          contactsLocation3, hoursLocation3,
+        contactsLocation4, hoursLocation4 } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
 import { LocationService } from '../services/location.service';
 
@@ -28,10 +29,10 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Offering affordable, secure, self storage, and vehicle storage to Canton,
-       Louisville, and the surrounding communities!`
+      content: `We have a wide variety of self storage units at multiple locations in the Maysville
+      area! Call or check our rates online today!`
     });
-    this.titleService.setTitle('Affordable Storage Near Canton, OH | Self Storage of Canton');
+    this.titleService.setTitle('Affordable Self Storage in Maysville | AA Secure Storage');
   }
 
   ngOnInit() {
@@ -55,25 +56,33 @@ export class HomeComponent implements OnInit {
       this.fetchContactDetailsLocation2();
     } else if ( this.locationId === '3' ) {
       this.fetchContactDetailsLocation3();
+    } else if ( this.locationId === '4' ) {
+      this.fetchContactDetailsLocation4();
     }
   }
 
     public fetchContactDetailsLocation1() {
-      this.heading = `Fohl Street Storage`;
+      this.heading = `730 Kenton Station Location`;
       this.contactDetails = contactsLocation1;
       this.hoursDetails = hoursLocation1;
     }
 
     public fetchContactDetailsLocation2() {
-      this.heading = `Location 2`;
+      this.heading = `751 Kenton Station Location`;
       this.contactDetails = contactsLocation2;
       this.hoursDetails = hoursLocation2;
     }
 
     public fetchContactDetailsLocation3() {
-      this.heading = `Location 3`;
+      this.heading = `Augusta Location`;
       this.contactDetails = contactsLocation3;
       this.hoursDetails = hoursLocation3;
+    }
+
+    public fetchContactDetailsLocation4() {
+      this.heading = `Front Street Climate Control`;
+      this.contactDetails = contactsLocation4;
+      this.hoursDetails = hoursLocation4;
     }
 
   public fetchFeatureHead() {

@@ -14,15 +14,19 @@ export class SelectLocationComponent implements OnInit {
   places = [
     {
       id: 1,
-      name: 'Fohl Street Storage',
+      name: '730 Kenton Station Location',
     },
     {
       id: 2,
-      name: 'Louisville Self Storage',
+      name: '751 Kenton Station Location',
     },
     {
       id: 3,
-      name: 'Lincoln Street Storage',
+      name: 'Augusta Location',
+    },
+    {
+      id: 4,
+      name: 'Front Street Climate Control',
     },
  ];
 

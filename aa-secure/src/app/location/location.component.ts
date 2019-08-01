@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
           contactsLocation3, hoursLocation3,
+          contactsLocation4, hoursLocation4
           } from '../data/contact';
 import { tabs } from '../data/location';
-import { headingLocation1, headingLocation2, headingLocation3 } from '../data/location';
+import { headingLocation1, headingLocation2, headingLocation3, headingLocation4 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 
@@ -32,29 +33,34 @@ export class LocationComponent implements OnInit {
     private router: Router,
     private titleService: Title,
     ) {
-      if (this.router.url.includes('/location/fohl-street-storage')) {
+      if (this.router.url.includes('/location/730-kenton-station')) {
             this.meta.addTag({
               name: 'description',
-              content: `Our Fohl Street location offers an on-site manager, wide variety of self storage units,
-              and RV parking spaces! We are Canton's #1 self storage choice!`
+              content: `Our 730 Kenton Station Location is fully-fenced and paved for added
+              convenience! Check our extremely affordable rates here!`
             });
-            this.titleService.setTitle('Affordable Storage in Canton, Ohio | Self Storage of Canton');
-    } else if (this.router.url.includes('/location/louisville-self-storage')) {
+            this.titleService.setTitle('Affordable Self Storage in Maysville | AA Secure Storage');
+    } else if (this.router.url.includes('/location/751-kenton-station')) {
            this.meta.addTag({
              name: 'description',
-             content: `We offer affordable, clean, well-maintained units, and excellent customer service to
-             Louisville, Hartville, Canton, and the surrounding communities!`
+             content: `We have a large selection of high-quality, well-maintained self
+             storage units at extremely affordable prices!`
            });
-           this.titleService.setTitle('Affordable Storage Units | Louisville Self Storage');
-    } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
+           this.titleService.setTitle('Affordable Storage Units in Maysville | AA Secure Storage');
+    } else  if (this.router.url.includes('/location/augusta'))  {
           this.meta.addTag({
             name: 'description',
-            content: `Are you looking for self storage in an affordable, well-lit, fully-fenced facility?
-            Lincoln Street Storage has you covered! `
+            content: ` `
           });
-          this.titleService.setTitle('Affordable Storage Units in Canton | Lincoln Street Storage');
-    }
-    }
+          this.titleService.setTitle('');
+    } else  if (this.router.url.includes('/location/front-street-climate-control'))  {
+      this.meta.addTag({
+        name: 'description',
+        content: ` `
+      });
+      this.titleService.setTitle('');
+}
+  }
 
   ngOnInit() {
     window.scrollTo(0, 0);
@@ -62,28 +68,35 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/fohl-street-storage')) {
+    if (this.router.url.includes('/location/730-kenton-station')) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes('/location/louisville-self-storage')) {
+    } else if (this.router.url.includes('/location/751-kenton-station')) {
       this.fetchDetailsLocation2();
-    } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
+    } else  if (this.router.url.includes('/location/augusta'))  {
       this.fetchDetailsLocation3();
+    } else  if (this.router.url.includes('/location/front-street-climate-control'))  {
+      this.fetchDetailsLocation4();
     }
  }
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate(['/location/fohl-street-storage/reserveUnit'],
-          { queryParams: { name: 'fohl street storage', currentTab: 'Reserve Unit' },
+    this.router.navigate(['/location/730-kenton-station/reserveUnit'],
+          { queryParams: { name: '730 Kenton Station Location', currentTab: 'Reserve Unit' },
           skipLocationChange: true, queryParamsHandling: null }
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/louisville-self-storage/reserveUnit'],
+    this.router.navigate(['/location/751-kenton-station/reserveUnit'],
           { queryParams: { name: 'Location2', currentTab: 'Reserve Unit' },
           skipLocationChange: true, queryParamsHandling: null}
           );
   } else if ( this.locationId === 3) {
-    this.router.navigate(['/location/lincoln-street-storage/reserveUnit'],
+    this.router.navigate(['/location/augusta/reserveUnit'],
+          { queryParams: { name: 'Location3', currentTab: 'Reserve Unit' },
+          skipLocationChange: true, queryParamsHandling: null}
+          );
+  } else if ( this.locationId === 4) {
+    this.router.navigate(['/location/front-street-climate-control/reserveUnit'],
           { queryParams: { name: 'Location3', currentTab: 'Reserve Unit' },
           skipLocationChange: true, queryParamsHandling: null}
           );
@@ -113,4 +126,12 @@ export class LocationComponent implements OnInit {
      this.hours = hoursLocation3;
      this.tabs = tabs;
    }
+
+   public fetchDetailsLocation4() {
+    this.name = headingLocation4;
+    this.locationId = 4;
+    this.contacts = contactsLocation4;
+    this.hours = hoursLocation4;
+    this.tabs = tabs;
+  }
 }

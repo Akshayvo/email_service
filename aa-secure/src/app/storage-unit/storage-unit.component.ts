@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { headingLocation1, headingLocation2, headingLocation3 } from '../data/location';
+import { headingLocation1, headingLocation2, headingLocation3, headingLocation4 } from '../data/location';
 
 @Component({
   selector: 'app-storage-unit',
@@ -19,15 +19,18 @@ export class StorageUnitComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/fohl-street-storage')) {
+    if (this.router.url.includes('/location/730-kenton-station')) {
       this.id = 1;
       this.heading = headingLocation1;
-    } else if (this.router.url.includes('/location/louisville-self-storage')) {
+    } else if (this.router.url.includes('/location/751-kenton-station')) {
       this.id = 2;
       this.heading = headingLocation2;
-    } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
+    } else  if (this.router.url.includes('/location/augusta'))  {
       this.id = 3;
       this.heading = headingLocation3;
+    } else  if (this.router.url.includes('/location/front-street-climate-control'))  {
+      this.id = 4;
+      this.heading = headingLocation4;
     }
   }
 }

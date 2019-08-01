@@ -7,22 +7,27 @@
           <div class="row">
             <div class="col-lg-12 px-0">
               <span *ngFor="let contact of contacts" class="py-2 each-contact">
-                <span class="pl-3"><i style="font-size: 1.1rem;" class="{{contact.class}}"></i></span><span>{{contact.data}}</span>
+                <span class="pl-3"><i class="{{contact.class}}"></i></span><span *ngIf="contact?.id === 2 || contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></span>
+                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
               </span>
             </div>
           </div>
         </div>
         <div class="contact-img">
             <span *ngIf="locationId == 1"> 
-              <div class="img-box-1" alt="Photograph of Fohl Street Storage Outdoor Units">
+              <div class="img-box-1" alt="Photograph of indoor self storage units">
               </div>
             </span>
             <span *ngIf="locationId == 2"> 
-              <div class="img-box-2" alt="Photograph of Louisville Self Storage front office">
+              <div class="img-box-2" alt="Photograph of the outside of a self storage front office">
               </div>
             </span>
             <span *ngIf="locationId == 3"> 
-              <div class="img-box-3" alt="Photograph of outdoor self storage units">
+              <div class="img-box-3" alt="">
+              </div>  
+            </span>
+            <span *ngIf="locationId == 4"> 
+              <div class="img-box-4" alt="">
               </div>  
             </span>
         </div>
@@ -30,15 +35,19 @@
       <div class="col-lg-4 pt-3" style="background-color: #fff;">
         <div class="map-responsive">
             <span *ngIf="locationId == 1">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12093.973544696319!2d-81.4216772!3d40.7291678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ff1c072ff56b022!2sFohl+Street+Storage!5e0!3m2!1sen!2sus!4v1557801283470!5m2!1sen!2sus" 
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HOqufTugcjwzvVlPgxO1czAdJsk_H0Qf" 
               width="100%" height="230" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
             </span>
             <span *ngIf="locationId == 2">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12067.805735601267!2d-81.264659!3d40.87294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3db910361c028e53!2sLouisville+Self+Storage!5e0!3m2!1sen!2sus!4v1559168549131!5m2!1sen!2sus" 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12466.273923458675!2d-83.7993095!3d38.6358071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1fe806f1176d4791!2sAA+Secure+Storage!5e0!3m2!1sen!2sus!4v1564525820747!5m2!1sen!2sus" 
               width="100%" height="230" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
             </span>
             <span *ngIf="locationId == 3">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2198.670825258812!2d-81.30761001011557!3d40.78683203061363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xee64fe1564c19a61!2sLincoln+Street+Storage!5e0!3m2!1sen!2sus!4v1559165118480!5m2!1sen!2sus" 
+              <iframe src="" 
+              width="100%" height="220" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 4">
+              <iframe src="" 
               width="100%" height="220" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
             </span>
         </div>

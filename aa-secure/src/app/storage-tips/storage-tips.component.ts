@@ -23,10 +23,10 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We've been in the self storage business for twenty years.
-                When it comes to properly packing a unit, we've learned a thing or two! `
+      content: `We've been in self storage since 1980, take advantage of our experience
+      and make your stay easier with these helpful hints!`
     });
-    this.titleService.setTitle('Storage Tips | Canton Self Storage');
+    this.titleService.setTitle('Storage Tips | AA Secure Storage');
   }
 
   ngOnInit() {

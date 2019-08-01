@@ -16,7 +16,7 @@ export class LocationService {
     },
     {
       id: 3,
-      name: 'Fohl Street Storage',
+      name: '730 Kenton Station Location',
     },
  ];
  private locationSource = new BehaviorSubject(this.places[0].id);

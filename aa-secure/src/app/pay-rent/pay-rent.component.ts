@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../data/contact';
+import { Title, Meta } from '@angular/platform-browser';
 
 
 @Component({
@@ -9,22 +9,22 @@ import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../data
 })
 export class PayRentComponent implements OnInit {
 
-  locationId: any;
   contact: any;
 
-  constructor() { }
+  constructor(
+    private meta: Meta,
+    private titleService: Title,
+  ) {
+    this.meta.addTag({
+      name: 'description',
+      content: `Pay your rent online in seconds with our easy to use online tenant portal!      `
+    });
+    this.titleService.setTitle('Pay Rent | AA Secure Storage');
+
+   }
 
   ngOnInit() {
-    this.dataupdate();
+
   }
 
-  public dataupdate() {
-    if ( this.locationId === '1' || this.locationId === 1 ) {
-      this.contact = contactsLocation1;
-    } else if ( this.locationId === '2' ) {
-      this.contact = contactsLocation2;
-    } else if ( this.locationId === '3' ) {
-      this.contact = contactsLocation3;
-    }
-  }
 }
