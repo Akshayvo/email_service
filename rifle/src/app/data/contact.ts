@@ -14,26 +14,26 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'tel:9702301048',
+        redirect: 'tel:9706659735',
         label: 'Phone:',
-        data: '(970) 230-1048',
+        data: '(970) 665-9735',
         class: 'fas fa-phone mx-2 iconColor',
     }
 ];
 
 export const hours = [
     {
-        label: 'Office Hours:',
-        data: 'Tuesday to Thursday  3:00PM - 6:00PM',
+        label: 'Monday to Friday: ',
+        data: '10:00AM - 6:00PM',
     },
-    // {
-    //     label: 'Gate Access: ',
-    //     data: '24/7',
-    // },
-    // {
-    //     label: 'Office Hours: ',
-    //     data: 'Mon-Fri 10:00 am - 4:00 pm'
-    // },
+    {
+        label: 'Saturday: ',
+        data: '10:00AM - 12:00PM',
+    },
+    {
+        label: 'Sunday: ',
+        data: 'CLOSED'
+    },
 ];
 
 
