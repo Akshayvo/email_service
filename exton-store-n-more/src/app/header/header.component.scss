@@ -50,6 +50,13 @@ a {
   border: 1px solid $primary;
 }
 
+
+// @media only screen and (max-width: 1199px) and (min-width: 992px) {
+//   .nav-link {
+//    font-size: 1rem;p 
+//   }
+// }
+
 @media screen and (max-width: 991px) {
   .navbar-nav {
     align-items: center;
