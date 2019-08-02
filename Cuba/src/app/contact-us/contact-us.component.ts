@@ -39,11 +39,6 @@ export class ContactUsComponent implements OnInit {
       Reach out with our contact form here or call (573) 885-2539`
     });
     this.titleService.setTitle('Contact Us | Cuba Self Storage');
-  }
-
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchHours();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -52,6 +47,12 @@ export class ContactUsComponent implements OnInit {
       message: ['', Validators.required],
       subject: [''],
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchHours();
+  
   }
 
   get f() { return this.contactForm.controls; }
