@@ -27,7 +27,7 @@ export class PaymentComponent implements OnInit {
 
   ngOnInit() {
     this.fetchContactDetails();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 
   public fetchContactDetails() {

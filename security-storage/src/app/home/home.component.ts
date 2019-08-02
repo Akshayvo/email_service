@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit {
     this.fetchStaticContent();
     this.fetchFeature();
     this.fetchJumbotronText();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 
   public fetchJumbotronText() {

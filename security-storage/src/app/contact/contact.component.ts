@@ -39,12 +39,6 @@ export class ContactComponent implements OnInit {
                 form or via phone at (361) 275-9698!`
     });
     this.titleService.setTitle('Contact Us | Security Storage Cuero, Tx 77954');
-  }
-
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.window.scrollTo(0, 0);
-    this.fetchHours();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -53,6 +47,13 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: [''],
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    window.scrollTo(0, 0);
+    this.fetchHours();
+    
   }
 
   get f() { return this.contactForm.controls; }

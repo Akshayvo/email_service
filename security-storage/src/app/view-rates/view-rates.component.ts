@@ -28,7 +28,7 @@ export class ViewRatesComponent implements OnInit {
 
   ngOnInit() {
     this.fetchViewRates();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 
   public fetchViewRates() {
