@@ -95,6 +95,7 @@ export class ContactComponent implements OnInit {
            .subscribe((response: any) => {
              if (response.result != null) {
                  this.mailSent = true;
+                 this.contactForm.reset();
              } else {
              }
            }, (err) => {
@@ -102,7 +103,6 @@ export class ContactComponent implements OnInit {
          this.submitted = false;
          // MailService(body);
          this.mailSent = false;
-         this.contactForm.reset();
    }
  }
 }
