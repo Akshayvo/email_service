@@ -5,12 +5,12 @@ export const payList = [
      td3: '<a class="btn btn-primary" [routerLink]="[`/payment/fohl-street-storage/storageUnits`]" role="button">pay-rent</a>'
   },
   {
-    td1: 'Location 2',
+    td1: 'Louisville Self Storage',
     td2: 'Address 3',
     td3: '<a class="btn btn-primary" [routerLink]="[`/payment/louisville-self-storage/storageUnits`]" [queryParams]="{ currentTab: `Storage Units` }" role="button">pay-rent</a>',
   },
   {
-     td1: 'Location 3',
+     td1: 'Lincoln Street Storage',
      td2: 'Address 3',
      td3: '<a class="btn btn-primary" [routerLink]="[`/payment/lincoln-street-storage/storageUnits`]" role="button">pay-rent</a>'
   },

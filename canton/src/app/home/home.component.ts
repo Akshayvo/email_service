@@ -65,13 +65,13 @@ export class HomeComponent implements OnInit {
     }
 
     public fetchContactDetailsLocation2() {
-      this.heading = `Location 2`;
+      this.heading = `Louisville Self Storage`;
       this.contactDetails = contactsLocation2;
       this.hoursDetails = hoursLocation2;
     }
 
     public fetchContactDetailsLocation3() {
-      this.heading = `Location 3`;
+      this.heading = `Lincoln Street Storage`;
       this.contactDetails = contactsLocation3;
       this.hoursDetails = hoursLocation3;
     }

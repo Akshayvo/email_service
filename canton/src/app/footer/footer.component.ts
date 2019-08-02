@@ -16,19 +16,10 @@ export class FooterComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.router.events.subscribe(path => {
-      this.isSomePage();
-    });
+    
   }
 
-  public isSomePage() {
-    if (this.router.url.includes('/location/fohl-street-storage')) {
-      this.locationId = 1;
-    } else  if (this.router.url.includes('/location/location3'))  {
-      this.locationId = 1;
-    } else {
-      this.locationId = 0;
-    }
-  }
 }
+
+
 
