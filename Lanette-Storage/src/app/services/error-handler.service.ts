@@ -49,6 +49,7 @@ export class ErrorHandlerService implements ErrorHandler {
     const name = error.name || null;
     const appId = environment.appId;
     const time = new Date().getTime();
+    const version = environment.VERSION;
     const id = `${appId}-${time}`;
     const location = LocationStrategy;
     const url = location instanceof PathLocationStrategy ? location.path() : '';
@@ -56,7 +57,7 @@ export class ErrorHandlerService implements ErrorHandler {
     const message = error.message || error.toString();
     const stack = error instanceof HttpErrorResponse ? null : StackTraceParser.parse(error);
 
-    const errorWithContext = {name, appId, time, id, url, status, message, stack};
+    const errorWithContext = {name, appId, time, version, id, url, status, message, stack};
     return errorWithContext;
   }
 
