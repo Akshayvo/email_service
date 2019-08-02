@@ -39,11 +39,7 @@ export class ContactComponent implements OnInit {
                 Reach out through our contact form or by phone today!`
     });
     this.titleService.setTitle('Contact Us | Lanett Storage');
-  }
 
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchHours();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -52,6 +48,11 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: [''],
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchHours();
   }
 
   get f() { return this.contactForm.controls; }
@@ -95,13 +96,13 @@ export class ContactComponent implements OnInit {
            .subscribe((response: any) => {
              if (response.result != null) {
                this.mailSent = true;
+               this.contactForm.reset();
              } else {
              }
            }, (err) => {
            });
          this.submitted = false;
          // MailService(body);
-         this.contactForm.reset();
    }
  }
 }
