@@ -7,8 +7,8 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:ss@scotiastorage.com',
         label: 'Email',
+        redirect: 'mailto:ss@scotiastorage.com',
         data: 'ss@scotiastorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },

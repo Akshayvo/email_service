@@ -28,12 +28,7 @@ export class ContactButtonComponent implements OnInit {
   constructor(
     private emailService: EmailService,
     private formBuilder: FormBuilder,
-  ) {}
-
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchHours();
-    this.fetchsocialLink();
+  ) {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -42,6 +37,13 @@ export class ContactButtonComponent implements OnInit {
       message: ['', Validators.required],
       subject: [''],
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchHours();
+    this.fetchsocialLink();
+    
   }
 
   get f() { return this.contactForm.controls; }

@@ -41,13 +41,7 @@ export class ContactComponent implements OnInit {
       convenient self storage options?Call  (518) 382-0218 or click here for our contact information!`
     });
     this.titleService.setTitle('Contact Scotia Self Storage');
-  }
 
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchContactUs();
-    this.fetchHours();
-    this.window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -56,6 +50,14 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: [''],
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchContactUs();
+    this.fetchHours();
+    window.scrollTo(0, 0);
+  
   }
 
   get f() { return this.contactForm.controls; }
