@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'reserve', component: ReserveComponent },
   // { path: 'unit-sizer', component: UnitSizerComponent },
-  { path: 'payment', component: PaymentComponent },
+  { path: 'pay-rent', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'review',
   component: HomeComponent,

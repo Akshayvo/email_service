@@ -15,7 +15,7 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'tel:2563733647',
+        redirect: 'tel:3345599500',
         label: 'Phone:',
         data: '(334) 559-9500 - Text Messages Accepted',
         class: 'fas fa-phone mx-2 iconColor',

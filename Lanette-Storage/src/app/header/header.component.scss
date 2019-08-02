@@ -9,6 +9,12 @@ a {
   color: $white;
 }
 
+.contact-links {
+  a {
+    color: white;
+  }
+}
+
 .contact-header {
   display: inline;
 
@@ -87,6 +93,14 @@ a {
 
   .nav-link {
     text-align: center;
+  }
+
+  .navbar-nav {
+    align-items: center;
+
+    li {
+      width: fit-content;
+    }
   }
 }
 
