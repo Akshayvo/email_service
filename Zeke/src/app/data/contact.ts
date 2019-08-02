@@ -7,8 +7,8 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:info@zekespa.com',
         label: 'Email:',
+        redirect: 'mailto:info@zekespa.com',
         data: 'info@zekespa.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },

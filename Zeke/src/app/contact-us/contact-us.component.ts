@@ -39,11 +39,6 @@ export class ContactUsComponent implements OnInit {
       Use our easy online form or call (412) 751-2300!`
     });
     this.titleService.setTitle(`Contact Us | Zeke's Self Storage`);
-  }
-
-  ngOnInit() {
-    this.fetchContactDetails();
-    this.fetchHours();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -52,6 +47,11 @@ export class ContactUsComponent implements OnInit {
       message: ['', Validators.required],
       subject: [''],
   });
+  }
+
+  ngOnInit() {
+    this.fetchContactDetails();
+    this.fetchHours();
   }
 
   get f() { return this.contactForm.controls; }

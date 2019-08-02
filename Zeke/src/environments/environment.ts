@@ -3,10 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  errorsMails: [ 'vinay.g@codeparva.in', 'preetha.ts@codeparva.in' ],
+  production: true,
+  errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Catskill'
+  appId: 'Zeke',
+  VERSION: require('../../package.json').version
 };
 
 // export const environment = {

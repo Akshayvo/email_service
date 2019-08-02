@@ -36,12 +36,11 @@ export class ErrorHandlerService implements ErrorHandler {
     }
     const errorWithContext = this.addContextInfo(error);
     // Generic route /error -> Error Handler Component
-    if ( errorWithContext.message === 'window is not defined' ) {
+    if ( errorWithContext.message.includes('window is not defined') ) {
       console.log('window is not defined');
     } else {
       this.reportError(errorWithContext);
       router.navigate(['/error']);
-
     }
   }
 
@@ -49,6 +48,7 @@ export class ErrorHandlerService implements ErrorHandler {
     // You can include context details here (usually coming from other services: UserService...)
     const name = error.name || null;
     const appId = environment.appId;
+    const version = environment.VERSION;
     const time = new Date().getTime();
     const id = `${appId}-${time}`;
     const location = LocationStrategy;
@@ -57,7 +57,7 @@ export class ErrorHandlerService implements ErrorHandler {
     const message = error.message || error.toString();
     const stack = error instanceof HttpErrorResponse ? null : StackTraceParser.parse(error);
 
-    const errorWithContext = {name, appId, time, id, url, status, message, stack};
+    const errorWithContext = {name, appId, version, time, id, url, status, message, stack};
     return errorWithContext;
   }
 
