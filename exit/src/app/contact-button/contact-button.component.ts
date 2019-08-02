@@ -80,14 +80,14 @@ export class ContactButtonComponent implements OnInit {
            .subscribe((response: any) => {
              if (response.result != null) {
               this.mailSent = true;
-             } else {
-
-             }
-           }, (err) => {
-
-           });
-         this.submitted = false;
-         this.contactForm.reset();
+            } else {
+            }
+          }, (err) => {
+          });
+          this.submitted = false;
+          if (this.mailSent) {
+            this.contactForm.reset();
+          }
    }
  }
 }

@@ -7,8 +7,8 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:Exit120storage@yahoo.com',
         label: 'Email',
+        redirect: 'mailto:Exit120storage@yahoo.com',
         data: 'Exit120storage@yahoo.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
