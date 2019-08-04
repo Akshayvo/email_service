@@ -77,14 +77,14 @@ export class ContactComponent implements OnInit {
    if (this.contactForm.invalid) {
        return;
    } else {
-
-     if ( !this.contactForm.value.subject) {
+    if ( !this.contactForm.value.subject) {
       this.contactForm.value.subject = 'Website Form Submission';
     }
+
      this.receiveremail = this.contactDetails[1].data;
 
-     this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
-                            <strong>Message:</strong> ${this.contactForm.value.message}`;
+     this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
+     message: ${this.contactForm.value.message}`;
 
          const body = {
            name: this.contactForm.value.name,
@@ -96,16 +96,15 @@ export class ContactComponent implements OnInit {
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {
-               this.mailSent = true;
+                 this.mailSent = true;
+                 this.contactForm.reset();
              } else {
              }
            }, (err) => {
            });
          this.submitted = false;
+         this.mailSent = false;
          // MailService(body);
-         this.contactForm.reset();
    }
  }
 }
-
-
