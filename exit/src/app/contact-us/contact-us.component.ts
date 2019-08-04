@@ -46,7 +46,7 @@ export class ContactUsComponent implements OnInit {
     this.fetchContactDetails();
     this.fetchContactUs();
     this.fetchHours();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,

@@ -30,7 +30,7 @@ export class StorageTipsComponent implements OnInit {
     this.fetchStorageTip();
     this.fetchStorageTipAccordion();
     this.fetchStorageTips();
-    this.window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 
   public fetchStorageTip() {
