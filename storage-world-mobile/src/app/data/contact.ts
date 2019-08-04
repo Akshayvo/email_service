@@ -7,8 +7,8 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:steve@storageworldmn.com',
         label: 'Email',
+        redirect: 'mailto:steve@storageworldmn.com',
         data: 'steve@storageworldmn.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
