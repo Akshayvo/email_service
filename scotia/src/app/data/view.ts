@@ -19,59 +19,59 @@ export const slideShow = [
     {
         class: `active`,
         id: `1`,
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/1.jpg`,
-        alt: `view-rate-1`,
+        path: `scotia-storage-1`,
+        alt: `Photograph of self storage facility front gate with access control pinpad`,
     },
     {
         id: `2`,
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/2.jpg`,
-        alt: `view-rate-2`,
+        path: `scotia-storage-2`,
+        alt: `Photograph of two-story self storage building with external stairs`,
     },
     {
         id: `3`,
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/3.jpg`,
-        alt: `view-rate-3`,
+        path: `scotia-storage-3`,
+        alt: `Photograph of electronic lock secured self storage building entrance`,
     },
     {
         id: `4`,
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/scotia-self-storage-4.jpg`,
-        alt: `view-rate-4`,
+        path: `scotia-storage-4`,
+        alt: `Photograph of self storage facility roadside sign`,
     },
     {
         id: `5`,
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/scotia-self-storage-building.jpg`,
-        alt: `view-rate-5`,
+        path: `scotia-storage-5`,
+        alt: `Photograph of two-story self storage units with a gate pinpad in the foreground`,
     },
     {
         id: `6`,
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/scotia-self-storage-gate.jpg`,
-        alt: `view-rate-6`,
+        path: `scotia-storage-6`,
+        alt: `Photograph of indoor self storage units`,
     },
-    {
-        id: `7`,
-        // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/scotia-self-storage-sign.jpg`,
-        alt: `view-rate-7`,
-    },
-    {
-        id: `8`,
-        // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/scotia-storage-gate.jpg`,
-        alt: `view-rate-8`,
-    },
-    {
-        id: `9`,
-        // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/scotia-storage-ramp.jpg`,
-        alt: `view-rate-9`,
-    },
-    {
-        id: `10`,
-        // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/scotia-storage-two-story.jpg`,
-        alt: `view-rate-10`,
-    },
+    // {
+    //     id: `7`,
+    //     // tslint:disable-next-line:max-line-length
+    //     path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/scotia-self-storage-sign.jpg`,
+    //     alt: `view-rate-7`,
+    // },
+    // {
+    //     id: `8`,
+    //     // tslint:disable-next-line:max-line-length
+    //     path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/scotia-storage-gate.jpg`,
+    //     alt: `view-rate-8`,
+    // },
+    // {
+    //     id: `9`,
+    //     // tslint:disable-next-line:max-line-length
+    //     path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/scotia-storage-ramp.jpg`,
+    //     alt: `view-rate-9`,
+    // },
+    // {
+    //     id: `10`,
+    //     // tslint:disable-next-line:max-line-length
+    //     path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/slide-show/scotia-storage-two-story.jpg`,
+    //     alt: `view-rate-10`,
+    // },
 ];

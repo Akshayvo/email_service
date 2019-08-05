@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { viewRate, slideShow } from '../data/view';
 import { viewRates } from '../data/blurb';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-view-rates',
@@ -13,11 +14,14 @@ export class ViewRatesComponent implements OnInit {
   viewRate: any;
   slideShow: any;
   viewRates: any;
+  imageBaseUrl: any;
+  imagetype: any;
   currentActive: any = 'VIEW RATES';
 
   constructor(
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private uaParserService: UaParserService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -25,6 +29,9 @@ export class ViewRatesComponent implements OnInit {
       units to our oversized 24'x30' garage units.`
     });
     this.titleService.setTitle('Storage Units Near Scotia, NY, 12302 | View Rates');
+
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {
@@ -43,4 +50,5 @@ export class ViewRatesComponent implements OnInit {
   public fetchViewRates() {
     this.viewRates = viewRates;
   }
+
 }

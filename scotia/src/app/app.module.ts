@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -24,6 +24,7 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { ErrorHandlerService } from './services/error-handler.service';
 
 
 @NgModule({
@@ -53,6 +54,11 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
     HttpClientModule,
   ],
   providers: [
+    Title,
+    {
+      provide: ErrorHandler,
+      useClass: ErrorHandlerService
+    },
     Title,
     {
       provide: 'externalUrlRedirectResolver',

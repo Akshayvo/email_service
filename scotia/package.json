@@ -1,6 +1,6 @@
 {
   "name": "scotia",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -31,11 +31,13 @@
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
     "@types/jest": "^24.0.9",
     "@types/mocha": "^5.2.6",
+    "@types/ua-parser-js": "^0.7.32",
     "angulartics2": "^6.0.0",
     "core-js": "^2.5.4",
     "error-stack-parser": "^2.0.2",
     "hads": "^1.7.0",
     "rxjs": "~6.2.0",
+    "ua-parser-js": "^0.7.20",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

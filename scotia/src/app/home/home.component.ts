@@ -4,6 +4,10 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, feature } from '../data/home';
+import { UaParserService } from '../../app/services/ua-parser.service';
+
+import { slideShow } from '../data/view';
+
 
 @Component({
   selector: 'app-home',
@@ -17,13 +21,17 @@ export class HomeComponent implements OnInit {
   featuresList: any;
   aboutUs: any;
   feature: any;
+  imageBaseUrl: any;
+  imagetype: any;
+  slideShow: any;
   currentActive: any = 'HOME';
 
 
   constructor(
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private uaParserService: UaParserService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -31,6 +39,10 @@ export class HomeComponent implements OnInit {
                 and stellar customer service, all at an affordable price!`
     });
     this.titleService.setTitle('Affordable Storage Units Near Scotia, NY, 12302 | Scotia Storage');
+
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
+
   }
 
   public navigate(location: any) {
@@ -43,6 +55,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
+    this.fetchSlideShow();
     window.scrollTo(0, 0);
   }
 
@@ -68,4 +81,14 @@ export class HomeComponent implements OnInit {
    public scroll(el: any) {
     el.scrollIntoView();
 }
+
+public fetchSlideShow() {
+  this.slideShow = slideShow;
+}
+
+public getImageUrl(imageName: String) {
+  // const extension = this.imagetype.toLowerCase();
+  return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
+}
+
 }

@@ -9,6 +9,24 @@
   background-position: center;
 }
 
+.view-rates-top-jpg {
+  height: 60vh;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Scotia_Images/jpg/self-storage-hallway.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.view-rates-top-webp {
+  height: 60vh;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Scotia_Images/webp/self-storage-hallway.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .jumbotorn-top {
   padding: 0 8%;
 }
@@ -68,7 +86,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .view-rates-top {
+  .view-rates-top-jpg,
+  .view-rates-top-webp {
     height: 40vh;
     background-size: cover;
     background-position: initi;

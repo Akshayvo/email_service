@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .jumbotron {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/scotia-self-storage-hero.jpg");
+  // background: url("../../assets/scotia_images/Scotia_Images_JPG/moving-boxes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -14,6 +14,25 @@
     margin-top: 20px;
   }
 }
+
+.jumbotorn-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Scotia_Images/webp/scotia-self-storage-hero.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  height: 100vh;
+}
+
+.jumbotorn-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Scotia_Images/jpg/scotia-self-storage-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  height: 100vh;
+}
+
 
 .btn-primary {
   margin: 8px;
@@ -46,8 +65,15 @@
   }
 }
 
+.we-provide-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Scotia_Images/jpg/moving-boxes.jpg");
+}
+
+.we-provide-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Scotia_Images/webp/moving-boxes.webp");
+}
+
 .we-provide {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/jumbotorn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { contact } from '../data/contact';
 import { navLinks } from '../data/nav';
+import { UaParserService } from '../../app/services/ua-parser.service';
+
 
 @Component({
   selector: 'app-header',
@@ -13,10 +15,16 @@ export class HeaderComponent implements OnInit {
   contactDetails: any;
   navLinks: any;
   socialLinks: any;
+  imagetype: any;
+  imageBaseUrl: any;
 
   constructor(
     private router: Router,
-  ) { }
+    private uaParserService: UaParserService,
+  ) {
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
+   }
 
   ngOnInit() {
     this.fetchContactDetails();
