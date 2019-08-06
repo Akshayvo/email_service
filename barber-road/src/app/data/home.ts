@@ -21,25 +21,25 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/Barber_Road_Images/convenient-location.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Barber_Road/convenient-location.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/Barber_Road_Images/garage.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Barber_Road/garage.svg',
         label: 'Boat + Motorcycle Icon',
         alt: 'Icon art displaying boat and motorcycle'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/Barber_Road_Images/24-hours.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Barber_Road/24-hours.svg',
         label: '24 Hour Facility Access',
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/Barber_Road_Images/hand.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Barber_Road/hand.svg',
         label: 'Affordable Self Storage Rates',
         alt: 'Icon of a hand holding money'
     },

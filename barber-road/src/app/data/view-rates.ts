@@ -9,10 +9,5 @@ export const dataViewRates = [
         needs access to their belongings, or equipment outside of regular business hours! So
         whether you're remodeling your home, and in need of temporary storage, or are looking for
         long term storage solutions, Barber Road Storage has options for you!`,
-    },
-    {
-        p: `Between the convenience, value, and security, there's no wonder barber-road Self Storage
-        is barber-road Ohio's premiere self storage facility! If you've got questions about our services,
-        simply call (419) 626-2713 and speak with one of our friendly managers today!`
     }
 ];
