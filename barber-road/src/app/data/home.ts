@@ -28,7 +28,7 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Barber_Road/garage.svg',
-        label: 'Boat + Motorcycle Icon',
+        label: ' Boat and RV Storage',
         alt: 'Icon art displaying boat and motorcycle'
     },
     {
