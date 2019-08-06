@@ -4,6 +4,19 @@
 a {
   cursor: pointer;
 }
+.contact-header {
+  display: inline;
+
+  .contact-details {
+    color: $white;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+    a {
+      color: $white;
+    }
+  }
+}
 
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
@@ -15,6 +28,14 @@ a {
 
   button:focus {
     outline: 5px auto $primary;
+  }
+}
+.bg-secondary{
+  background-color: #005da0 !important;
+  color:#fff;
+  font-size: 0.82rem;
+  a{
+    color: #fff;
   }
 }
 .navbar-brand{
@@ -60,9 +81,9 @@ a {
   }
 }
 
-@media only screen and (max-width: 767px) and (max-height: 480px) {
-  .navbar-nav-scroll {
-    height: 200px;
-    overflow-y: scroll;
-  }
+
+@media only screen and (max-width: 767px){
+ .bg-secondary{
+   display: none;
+ }
 }

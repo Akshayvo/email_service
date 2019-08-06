@@ -11,6 +11,7 @@ export const contact = [
         data: ' 16 Industrial Blvd #100, Paoli, PA 19301',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
+    
     {
         id: 2,
         redirect: 'mailto:Info@Store-N-More.com',

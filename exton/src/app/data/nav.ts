@@ -8,6 +8,10 @@ export const navLinks = [
         path: '/view-rates',
     },
     {
+        label: 'RESERVE A UNIT',
+        path: '/reserve-unit'
+    },
+    {
         label: 'UNIT SIZER',
         path: '/unit-sizer',
     },
@@ -19,8 +23,8 @@ export const navLinks = [
         label: 'STORAGE TIPS',
         path: 'storage-tips',
     },
-    {
-        label: 'CONTACT US',
-        path: 'contact-us'
-    },
+    // {
+    //     label: 'CONTACT US',
+    //     path: 'contact-us'
+    // },
 ];
