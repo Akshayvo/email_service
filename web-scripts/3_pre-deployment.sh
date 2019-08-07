@@ -108,3 +108,4 @@ echo $(pwd)
 cd ..
 echo $(pwd)
 scp -i Codeparva-dev.pem 4_deploy-website.sh $user_name@$ip_addr:"${remote_dest}" 
+ssh -i Codeparva-dev.pem ubuntu@13.232.104.125 ./4_deploy-website.sh
