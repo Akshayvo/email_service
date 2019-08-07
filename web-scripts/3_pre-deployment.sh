@@ -107,4 +107,4 @@ fi
 echo $(pwd)
 cd ..
 echo $(pwd)
-scp -i Codeparva-dev.pem 5_redirect-domain.sh $user_name@$ip_addr:"${remote_dest}" 
+scp -i Codeparva-dev.pem 4_deploy-website.sh $user_name@$ip_addr:"${remote_dest}" 
