@@ -4,6 +4,14 @@
 a {
   cursor: pointer;
 }
+.bg-secondary{
+  background-color: #CE7229 !important;
+  .contact-header{
+    text-align: center;
+    color: #fff;
+  }
+}
+
 
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
@@ -47,6 +55,7 @@ a {
   border: 1px solid $primary;
 }
 
+
 @media only screen and (max-width: 1199px) and (min-width: 992px){
   .navbar-brand{
     font-size: 1.13rem;
@@ -58,13 +67,20 @@ a {
   }
 } 
 @media screen and (max-width: 991px) {
+  .container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .navbar-nav {
     align-items: center;
 
     li {
       width: fit-content;
     }
-    
+  }
+
+  .bg-secondary{
+    display: none;
   }
 }
 

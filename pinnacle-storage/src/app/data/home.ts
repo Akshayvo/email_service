@@ -72,7 +72,7 @@ export const gettingStarted = `Are you ready to start de-cluttering your home or
 export const blurb = [
     {
         h1: `Affordable Self Storage Units in Slingerlands`,
-        p: `Pinnacle Storage Solutions is Slinderlands newest self storage facility! From our convenient location to full online tenant portal, 
+        p: `Pinnacle Storage Solutions is Slingerlands newest self storage facility! From our convenient location to full online tenant portal, 
             our modern facility has all of the amenities you need to make your stay with us a breeze! `,
     }
 ];
