@@ -48,25 +48,22 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Lois Stor-All has been locally owned and operated since 1985. We proudly served the Burlington
-        area, including Waterford, Delavan, Twin Lakes, and Elkhorn with affordable storage and
-        excellent customer service!`,
+        p: `Lois Stor-All has been locally owned and operated since 1985. We proudly serve the Burlington area, including Waterford, Delavan, 
+            Twin Lakes, and Elkhorn with affordable storage and excellent customer service.`,
     },
     {
-        p: `Our facility is conveniently located on Droster Ave, off of Milwaukee Ave behind Otter Sales
-        & Service. Our customers love the personal pin-code secured gate access and our daily 6:00AM to
-        10:00PM access hours! You can even reserve your unit or pay your rent online!`,
+        p: `Our facility is conveniently located on Droster Ave, off of Milwaukee Ave behind Otter Sales & Service. Our customers love the 
+            personal pin-code secured gate access and our daily 6:00AM to 10:00PM access hours! You can even reserve your unit or pay your 
+            rent online.`,
     },
     {
-        p: `We're not just about convenience at Lois Stor-All! We also understand how important your
-        belongings are and we've gone the extra mile to provide that sense of security. We have security
-        cameras on-site, ample lighting, and are a fully-fenced storage facility! Our managers also perform
-        regular lot checks.`,
+        p: `We're not just about convenience at Lois Stor-All. We also understand how important your belongings are and we've gone the extra 
+            mile to provide that sense of security. We have security cameras on-site, ample lighting, and are a fully-fenced storage facility. 
+            Our managers also perform regular lot checks.`,
     },
     {
-        p: `So, whether you are a residential storage user looking for a little extra elbow room around the
-        home, or a growing business seeking inventory or equipment space, we can't wait to show you why
-        we're Burlington's premiere self storage facility!`
+        p: `So, whether you are a residential storage user looking for a little extra elbow room around the home, or a growing business seeking 
+            inventory or equipment space, we can't wait to show you why we're Burlington's premier self storage facility.`
     }
 ];
 
