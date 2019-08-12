@@ -126,7 +126,7 @@ exports.ɵEmptyOutletComponentNgFactory = ɵEmptyOutletComponentNgFactory;
 /*! exports provided: name, version, scripts, private, dependencies, devDependencies, default */
 /***/ (function(module) {
 
-module.exports = {"name":"scotia","version":"0.0.2","scripts":{"ng":"ng","start":"ng serve","build":"ng build","test":"ng test","lint":"ng lint","docs":"hads ./docs -o","e2e":"ng e2e","build:ssr":"npm run build:client-and-server-bundles && npm run webpack:server","serve:ssr":"node dist/server.js","build:client-and-server-bundles":"ng build --prod && ng run scotia:server","webpack:server":"webpack --config webpack.server.config.js --progress --colors"},"private":true,"dependencies":{"@angular/animations":"^6.1.0","@angular/common":"^6.1.0","@angular/compiler":"^6.1.0","@angular/core":"^6.1.0","@angular/forms":"^6.1.0","@angular/http":"^6.1.0","@angular/platform-browser":"^6.1.0","@angular/platform-browser-dynamic":"^6.1.0","@angular/platform-server":"^6.1.0","@angular/router":"^6.1.0","@ng-toolkit/universal":"^1.1.47","@nguniversal/express-engine":"^6.0.0","@nguniversal/module-map-ngfactory-loader":"^6.0.0","@types/jest":"^24.0.9","@types/mocha":"^5.2.6","@types/ua-parser-js":"^0.7.32","angulartics2":"^6.0.0","core-js":"^2.5.4","error-stack-parser":"^2.0.2","hads":"^1.7.0","rxjs":"~6.2.0","ua-parser-js":"^0.7.20","zone.js":"~0.8.26"},"devDependencies":{"@angular-devkit/build-angular":"~0.8.0","@angular/cli":"^7.1.1","@angular/compiler-cli":"^6.1.0","@angular/language-service":"^6.1.0","@types/jasmine":"~2.8.8","@types/jasminewd2":"~2.0.3","@types/node":"~8.9.4","codelyzer":"~4.3.0","htmlhint":"^0.10.0","jasmine-core":"~2.99.1","jasmine-spec-reporter":"~4.2.1","karma":"~3.0.0","karma-chrome-launcher":"~2.2.0","karma-coverage-istanbul-reporter":"~2.0.1","karma-jasmine":"~1.1.2","karma-jasmine-html-reporter":"^0.2.2","protractor":"~5.4.0","stylelint":"~9.5.0","stylelint-config-recommended-scss":"~3.2.0","stylelint-config-standard":"~18.2.0","stylelint-scss":"~3.3.0","ts-loader":"^4.2.0","ts-node":"~7.0.0","tslint":"~5.11.0","typescript":"~2.9.2","webpack-cli":"^2.0.14"}};
+module.exports = {"name":"scotia","version":"0.0.3","scripts":{"ng":"ng","start":"ng serve","build":"ng build","test":"ng test","lint":"ng lint","docs":"hads ./docs -o","e2e":"ng e2e","build:ssr":"npm run build:client-and-server-bundles && npm run webpack:server","serve:ssr":"node dist/server.js","build:client-and-server-bundles":"ng build --prod && ng run scotia:server","webpack:server":"webpack --config webpack.server.config.js --progress --colors"},"private":true,"dependencies":{"@angular/animations":"^6.1.0","@angular/common":"^6.1.0","@angular/compiler":"^6.1.0","@angular/core":"^6.1.0","@angular/forms":"^6.1.0","@angular/http":"^6.1.0","@angular/platform-browser":"^6.1.0","@angular/platform-browser-dynamic":"^6.1.0","@angular/platform-server":"^6.1.0","@angular/router":"^6.1.0","@ng-toolkit/universal":"^1.1.47","@nguniversal/express-engine":"^6.0.0","@nguniversal/module-map-ngfactory-loader":"^6.0.0","@types/jest":"^24.0.9","@types/mocha":"^5.2.6","@types/ua-parser-js":"^0.7.32","angulartics2":"^6.0.0","core-js":"^2.5.4","error-stack-parser":"^2.0.2","hads":"^1.7.0","rxjs":"~6.2.0","ua-parser-js":"^0.7.20","zone.js":"~0.8.26"},"devDependencies":{"@angular-devkit/build-angular":"~0.8.0","@angular/cli":"^7.1.1","@angular/compiler-cli":"^6.1.0","@angular/language-service":"^6.1.0","@types/jasmine":"~2.8.8","@types/jasminewd2":"~2.0.3","@types/node":"~8.9.4","codelyzer":"~4.3.0","htmlhint":"^0.10.0","jasmine-core":"~2.99.1","jasmine-spec-reporter":"~4.2.1","karma":"~3.0.0","karma-chrome-launcher":"~2.2.0","karma-coverage-istanbul-reporter":"~2.0.1","karma-jasmine":"~1.1.2","karma-jasmine-html-reporter":"^0.2.2","protractor":"~5.4.0","stylelint":"~9.5.0","stylelint-config-recommended-scss":"~3.2.0","stylelint-config-standard":"~18.2.0","stylelint-scss":"~3.3.0","ts-loader":"^4.2.0","ts-node":"~7.0.0","tslint":"~5.11.0","typescript":"~2.9.2","webpack-cli":"^2.0.14"}};
 
 /***/ }),
 
@@ -1084,6 +1084,46 @@ exports.socialLink = [
 
 /***/ }),
 
+/***/ "./src/app/data/galleryImage.ts":
+/*!**************************************!*\
+  !*** ./src/app/data/galleryImage.ts ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.galleryImagesLocation1 = [
+    {
+        url: "scotia-storage-1",
+        alt: "Photograph of self storage facility front gate with access control pinpad",
+    },
+    {
+        url: 'scotia-storage-2',
+        alt: "Photograph of two-story self storage building with external stairs",
+    },
+    {
+        url: 'scotia-storage-3',
+        alt: "Photograph of electronic lock secured self storage building entrance",
+    },
+    {
+        url: 'scotia-storage-4',
+        alt: "Photograph of self storage facility roadside sign",
+    },
+    {
+        url: 'scotia-storage-5',
+        alt: "Photograph of two-story self storage units with a gate pinpad in the foreground",
+    },
+    {
+        url: 'scotia-storage-6',
+        alt: "Photograph of indoor self storage units",
+    },
+];
+
+
+/***/ }),
+
 /***/ "./src/app/data/home.ts":
 /*!******************************!*\
   !*** ./src/app/data/home.ts ***!
@@ -1918,22 +1958,23 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = __webpack_require__(/*! ./home.component.scss.shim.ngstyle */ "./src/app/home/home.component.scss.shim.ngstyle.js");
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var i3 = __webpack_require__(/*! ./home.component */ "./src/app/home/home.component.ts");
-var i4 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var i5 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i3 = __webpack_require__(/*! ../photos/photos.component.ngfactory */ "./src/app/photos/photos.component.ngfactory.js");
+var i4 = __webpack_require__(/*! ../photos/photos.component */ "./src/app/photos/photos.component.ts");
+var i5 = __webpack_require__(/*! @angular/router */ "@angular/router");
 var i6 = __webpack_require__(/*! ../services/ua-parser.service */ "./src/app/services/ua-parser.service.ts");
+var i7 = __webpack_require__(/*! ./home.component */ "./src/app/home/home.component.ts");
+var i8 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
 var styles_HomeComponent = [i0.styles];
 var RenderType_HomeComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_HomeComponent, data: {} });
 exports.RenderType_HomeComponent = RenderType_HomeComponent;
 function View_HomeComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "p", [["class", "justify"]], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.p; _ck(_v, 1, 0, currVal_0); }); }
-function View_HomeComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "carousel-item"]], null, null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), (_l()(), i1.ɵeld(2, 0, null, null, 0, "img", [["width", "100%"]], [[8, "src", 4], [8, "alt", 0]], null, null, null, null))], function (_ck, _v) { var currVal_0 = "carousel-item"; var currVal_1 = ((((_v.context.$implicit == null) ? null : _v.context.$implicit.id) == 1) && "active"); _ck(_v, 1, 0, currVal_0, currVal_1); }, function (_ck, _v) { var _co = _v.component; var currVal_2 = _co.getImageUrl(_v.context.$implicit.path); var currVal_3 = ((_v.context.$implicit == null) ? null : _v.context.$implicit.alt); _ck(_v, 2, 0, currVal_2, currVal_3); }); }
-function View_HomeComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "div", [["class", "col-md-3 col-6 p-4 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "div", [["class", "p-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 0, "img", [["alt", ""], ["height", "75px"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h6", [["class", "feature-text"]], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = ((_v.context.$implicit == null) ? null : _v.context.$implicit.path); _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.label; _ck(_v, 4, 0, currVal_1); }); }
-function View_HomeComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "li", [["class", "col-md-6 col-lg-4 py-2 text-left"]], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.li; _ck(_v, 1, 0, currVal_0); }); }
-function View_HomeComponent_6(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "td", [["class", "contact-data"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "a", [], [[8, "href", 4]], null, null, null, null)), (_l()(), i1.ɵted(2, null, [" ", ""]))], null, function (_ck, _v) { var currVal_0 = ((_v.parent.context.$implicit == null) ? null : _v.parent.context.$implicit.redirect); _ck(_v, 1, 0, currVal_0); var currVal_1 = _v.parent.context.$implicit.data; _ck(_v, 2, 0, currVal_1); }); }
-function View_HomeComponent_7(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "td", [], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.data; _ck(_v, 1, 0, currVal_0); }); }
-function View_HomeComponent_5(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "tr", [["valign", "top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "td", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "strong", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_6)), i1.ɵdid(5, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"], ngIfElse: [1, "ngIfElse"] }, null), (_l()(), i1.ɵand(0, [["other_content", 2]], null, 0, null, View_HomeComponent_7))], function (_ck, _v) { var currVal_1 = ((((_v.context.$implicit == null) ? null : _v.context.$implicit.id) === 1) || (((_v.context.$implicit == null) ? null : _v.context.$implicit.id) === 2)); var currVal_2 = i1.ɵnov(_v, 6); _ck(_v, 5, 0, currVal_1, currVal_2); }, function (_ck, _v) { var currVal_0 = _v.context.$implicit.label; _ck(_v, 3, 0, currVal_0); }); }
-function View_HomeComponent_8(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "tr", [["valign", "top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "td", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "strong", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""])), (_l()(), i1.ɵeld(4, 0, null, null, 1, "td", [], null, null, null, null, null)), (_l()(), i1.ɵted(5, null, [" ", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.label; _ck(_v, 3, 0, currVal_0); var currVal_1 = _v.context.$implicit.data; _ck(_v, 5, 0, currVal_1); }); }
-function View_HomeComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 74, "div", [["class", ""]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 20, "div", [["class", "jumbotron p-0 m-0"]], null, null, null, null, null)), i1.ɵdid(2, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), (_l()(), i1.ɵeld(3, 0, null, null, 18, "div", [["class", "bg-translucent  text-align"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 15, "div", [["class", "container display"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 14, "div", [["class", "row justify-content-center width margin-bottom"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 13, "div", [["class", "col-md-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 7, "div", [["class", "disp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 3, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["SAFE & SECURE"])), (_l()(), i1.ɵeld(10, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["SELF STORAGE"])), (_l()(), i1.ɵeld(12, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Scotia Storage is proud to serve the community with clean, well maintained self storage units at affordable prices! Whether you're just looking for a little extra room at home or need a place to store commercial equipment, Scotia Storage has your needs covered!"])), (_l()(), i1.ɵeld(15, 0, null, null, 4, "div", [["class", "button-top-margin"]], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 1, "a", [["class", "btn btn-lg btn-outline-primary"], ["role", "button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+function View_HomeComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "div", [["class", "col-md-3 col-6 p-4 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "div", [["class", "p-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 0, "img", [["alt", ""], ["height", "75px"]], [[8, "src", 4]], null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h6", [["class", "feature-text"]], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = ((_v.context.$implicit == null) ? null : _v.context.$implicit.path); _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.label; _ck(_v, 4, 0, currVal_1); }); }
+function View_HomeComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "li", [["class", "col-md-6 col-lg-4 py-2 text-left"]], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.li; _ck(_v, 1, 0, currVal_0); }); }
+function View_HomeComponent_5(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "td", [["class", "contact-data"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "a", [], [[8, "href", 4]], null, null, null, null)), (_l()(), i1.ɵted(2, null, [" ", ""]))], null, function (_ck, _v) { var currVal_0 = ((_v.parent.context.$implicit == null) ? null : _v.parent.context.$implicit.redirect); _ck(_v, 1, 0, currVal_0); var currVal_1 = _v.parent.context.$implicit.data; _ck(_v, 2, 0, currVal_1); }); }
+function View_HomeComponent_6(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "td", [], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.data; _ck(_v, 1, 0, currVal_0); }); }
+function View_HomeComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "tr", [["valign", "top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "td", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "strong", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_5)), i1.ɵdid(5, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"], ngIfElse: [1, "ngIfElse"] }, null), (_l()(), i1.ɵand(0, [["other_content", 2]], null, 0, null, View_HomeComponent_6))], function (_ck, _v) { var currVal_1 = ((((_v.context.$implicit == null) ? null : _v.context.$implicit.id) === 1) || (((_v.context.$implicit == null) ? null : _v.context.$implicit.id) === 2)); var currVal_2 = i1.ɵnov(_v, 6); _ck(_v, 5, 0, currVal_1, currVal_2); }, function (_ck, _v) { var currVal_0 = _v.context.$implicit.label; _ck(_v, 3, 0, currVal_0); }); }
+function View_HomeComponent_7(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "tr", [["valign", "top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "td", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "strong", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""])), (_l()(), i1.ɵeld(4, 0, null, null, 1, "td", [], null, null, null, null, null)), (_l()(), i1.ɵted(5, null, [" ", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.label; _ck(_v, 3, 0, currVal_0); var currVal_1 = _v.context.$implicit.data; _ck(_v, 5, 0, currVal_1); }); }
+function View_HomeComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 64, "div", [["class", ""]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 20, "div", [["class", "jumbotron p-0 m-0"]], null, null, null, null, null)), i1.ɵdid(2, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), (_l()(), i1.ɵeld(3, 0, null, null, 18, "div", [["class", "bg-translucent  text-align"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 15, "div", [["class", "container display"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 14, "div", [["class", "row justify-content-center width margin-bottom"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 13, "div", [["class", "col-md-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 7, "div", [["class", "disp"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 3, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["SAFE & SECURE"])), (_l()(), i1.ɵeld(10, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["SELF STORAGE"])), (_l()(), i1.ɵeld(12, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Scotia Storage is proud to serve the community with clean, well maintained self storage units at affordable prices! Whether you're just looking for a little extra room at home or need a place to store commercial equipment, Scotia Storage has your needs covered!"])), (_l()(), i1.ɵeld(15, 0, null, null, 4, "div", [["class", "button-top-margin"]], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 1, "a", [["class", "btn btn-lg btn-outline-primary"], ["role", "button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.navigate("/contact-us") !== false);
         ad = (pd_0 && ad);
     } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Contact Us"])), (_l()(), i1.ɵeld(18, 0, null, null, 1, "a", [["class", "btn btn-lg btn-primary"], ["role", "button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
@@ -1942,11 +1983,11 @@ function View_HomeComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, 
     } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["View Rates"])), (_l()(), i1.ɵeld(20, 0, null, null, 1, "div", [["class", "arrow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(21, 0, null, null, 0, "img", [["alt", ""], ["src", "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Scotia_Images/down.svg"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.scroll(i1.ɵnov(_v, 22)) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(22, 0, [["target", 1]], null, 21, "div", [["class", "about-us bg-dark-background"]], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 20, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 19, "div", [["class", "section py-5 m-0"]], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 1, "h2", [["class", "heading pb-3 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["About Us"])), (_l()(), i1.ɵeld(27, 0, null, null, 16, "div", [["class", "row content-margin-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(28, 0, null, null, 2, "div", [["class", "col-md-6 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_1)), i1.ɵdid(30, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(31, 0, null, null, 12, "div", [["class", "col-md-6 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 11, "div", [["class", "carousel slide"], ["data-ride", "carousel"], ["id", "carouselExampleIndicatorsClick"]], null, null, null, null, null)), (_l()(), i1.ɵeld(33, 0, null, null, 2, "div", [["class", "carousel-inner"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_2)), i1.ɵdid(35, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(36, 0, null, null, 3, "a", [["class", "carousel-control-prev"], ["data-slide", "prev"], ["href", "#carouselExampleIndicatorsClick"], ["role", "button"]], null, null, null, null, null)), (_l()(), i1.ɵeld(37, 0, null, null, 0, "span", [["aria-hidden", "true"], ["class", "carousel-control-prev-icon"]], null, null, null, null, null)), (_l()(), i1.ɵeld(38, 0, null, null, 1, "span", [["class", "sr-only"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Previous"])), (_l()(), i1.ɵeld(40, 0, null, null, 3, "a", [["class", "carousel-control-next"], ["data-slide", "next"], ["href", "#carouselExampleIndicatorsClick"], ["role", "button"]], null, null, null, null, null)), (_l()(), i1.ɵeld(41, 0, null, null, 0, "span", [["aria-hidden", "true"], ["class", "carousel-control-next-icon"]], null, null, null, null, null)), (_l()(), i1.ɵeld(42, 0, null, null, 1, "span", [["class", "sr-only"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Next"])), (_l()(), i1.ɵeld(44, 0, null, null, 15, "div", [["class", "we-provide"]], null, null, null, null, null)), i1.ɵdid(45, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), (_l()(), i1.ɵeld(46, 0, null, null, 13, "div", [["class", "we-provide-background py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(47, 0, null, null, 12, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(48, 0, null, null, 11, "div", [["class", "section  m-0"]], null, null, null, null, null)), (_l()(), i1.ɵeld(49, 0, null, null, 10, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(50, 0, null, null, 9, "div", [["class", "col-md-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(51, 0, null, null, 1, "h2", [["class", "heading pb-3 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["We Provide"])), (_l()(), i1.ɵeld(53, 0, null, null, 2, "div", [["class", "row primary-margin"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_3)), i1.ɵdid(55, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(56, 0, null, null, 3, "div", [["class", "feature-list"]], null, null, null, null, null)), (_l()(), i1.ɵeld(57, 0, null, null, 2, "ul", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_4)), i1.ɵdid(59, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(60, 0, null, null, 14, "div", [["class", "locate-us bg-dark-background"]], null, null, null, null, null)), (_l()(), i1.ɵeld(61, 0, null, null, 13, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(62, 0, null, null, 12, "div", [["class", "section py-5 m-0"]], null, null, null, null, null)), (_l()(), i1.ɵeld(63, 0, null, null, 1, "h2", [["class", "heading pb-3 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Locate Us"])), (_l()(), i1.ɵeld(65, 0, null, null, 9, "div", [["class", "row content-margin-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(66, 0, null, null, 1, "div", [["class", "col-md-6 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(67, 0, null, null, 0, "iframe", [["allowfullscreen", ""], ["frameborder", "0"], ["height", "250"], ["src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.533752182271!2d-73.94262538438662!3d42.84046171261981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6e7c26c4b959%3A0x88f2e4056402869c!2sScotia+Storage+Co!5e0!3m2!1sen!2sus!4v1542138509038"], ["width", "100%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(68, 0, null, null, 6, "div", [["class", "col-md-6 py-3 locate-us-style"]], null, null, null, null, null)), (_l()(), i1.ɵeld(69, 0, null, null, 5, "table", [], null, null, null, null, null)), (_l()(), i1.ɵeld(70, 0, null, null, 4, "tbody", [], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_5)), i1.ɵdid(72, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_8)), i1.ɵdid(74, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = "jumbotron p-0 m-0"; var currVal_1 = ((_co.imagetype === "jpg") ? "jumbotorn-background-jpg" : "jumbotorn-background-webp"); _ck(_v, 2, 0, currVal_0, currVal_1); var currVal_2 = _co.aboutUs; _ck(_v, 30, 0, currVal_2); var currVal_3 = _co.slideShow; _ck(_v, 35, 0, currVal_3); var currVal_4 = "we-provide"; var currVal_5 = ((_co.imagetype === "jpg") ? "we-provide-jpg" : "we-provide-webp"); _ck(_v, 45, 0, currVal_4, currVal_5); var currVal_6 = _co.feature; _ck(_v, 55, 0, currVal_6); var currVal_7 = _co.featuresList; _ck(_v, 59, 0, currVal_7); var currVal_8 = _co.contactDetails; _ck(_v, 72, 0, currVal_8); var currVal_9 = _co.hours; _ck(_v, 74, 0, currVal_9); }, null); }
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(22, 0, [["target", 1]], null, 11, "div", [["class", "about-us bg-dark-background"]], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 10, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 9, "div", [["class", "section py-5 m-0"]], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 1, "h2", [["class", "heading pb-3 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["About Us"])), (_l()(), i1.ɵeld(27, 0, null, null, 6, "div", [["class", "row content-margin-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(28, 0, null, null, 2, "div", [["class", "col-md-6 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_1)), i1.ɵdid(30, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(31, 0, null, null, 2, "div", [["class", "col-md-6 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 1, "app-photos", [], null, null, null, i3.View_PhotosComponent_0, i3.RenderType_PhotosComponent)), i1.ɵdid(33, 114688, null, 0, i4.PhotosComponent, [i5.Router, i6.UaParserService], null, null), (_l()(), i1.ɵeld(34, 0, null, null, 15, "div", [["class", "we-provide"]], null, null, null, null, null)), i1.ɵdid(35, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), (_l()(), i1.ɵeld(36, 0, null, null, 13, "div", [["class", "we-provide-background py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(37, 0, null, null, 12, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(38, 0, null, null, 11, "div", [["class", "section  m-0"]], null, null, null, null, null)), (_l()(), i1.ɵeld(39, 0, null, null, 10, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(40, 0, null, null, 9, "div", [["class", "col-md-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(41, 0, null, null, 1, "h2", [["class", "heading pb-3 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["We Provide"])), (_l()(), i1.ɵeld(43, 0, null, null, 2, "div", [["class", "row primary-margin"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_2)), i1.ɵdid(45, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(46, 0, null, null, 3, "div", [["class", "feature-list"]], null, null, null, null, null)), (_l()(), i1.ɵeld(47, 0, null, null, 2, "ul", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_3)), i1.ɵdid(49, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(50, 0, null, null, 14, "div", [["class", "locate-us bg-dark-background"]], null, null, null, null, null)), (_l()(), i1.ɵeld(51, 0, null, null, 13, "div", [["class", "container py-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(52, 0, null, null, 12, "div", [["class", "section py-5 m-0"]], null, null, null, null, null)), (_l()(), i1.ɵeld(53, 0, null, null, 1, "h2", [["class", "heading pb-3 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Locate Us"])), (_l()(), i1.ɵeld(55, 0, null, null, 9, "div", [["class", "row content-margin-top"]], null, null, null, null, null)), (_l()(), i1.ɵeld(56, 0, null, null, 1, "div", [["class", "col-md-6 py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(57, 0, null, null, 0, "iframe", [["allowfullscreen", ""], ["frameborder", "0"], ["height", "250"], ["src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.533752182271!2d-73.94262538438662!3d42.84046171261981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6e7c26c4b959%3A0x88f2e4056402869c!2sScotia+Storage+Co!5e0!3m2!1sen!2sus!4v1542138509038"], ["width", "100%"]], null, null, null, null, null)), (_l()(), i1.ɵeld(58, 0, null, null, 6, "div", [["class", "col-md-6 py-3 locate-us-style"]], null, null, null, null, null)), (_l()(), i1.ɵeld(59, 0, null, null, 5, "table", [], null, null, null, null, null)), (_l()(), i1.ɵeld(60, 0, null, null, 4, "tbody", [], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_4)), i1.ɵdid(62, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HomeComponent_7)), i1.ɵdid(64, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = "jumbotron p-0 m-0"; var currVal_1 = ((_co.imagetype === "jpg") ? "jumbotorn-background-jpg" : "jumbotorn-background-webp"); _ck(_v, 2, 0, currVal_0, currVal_1); var currVal_2 = _co.aboutUs; _ck(_v, 30, 0, currVal_2); _ck(_v, 33, 0); var currVal_3 = "we-provide"; var currVal_4 = ((_co.imagetype === "jpg") ? "we-provide-jpg" : "we-provide-webp"); _ck(_v, 35, 0, currVal_3, currVal_4); var currVal_5 = _co.feature; _ck(_v, 45, 0, currVal_5); var currVal_6 = _co.featuresList; _ck(_v, 49, 0, currVal_6); var currVal_7 = _co.contactDetails; _ck(_v, 62, 0, currVal_7); var currVal_8 = _co.hours; _ck(_v, 64, 0, currVal_8); }, null); }
 exports.View_HomeComponent_0 = View_HomeComponent_0;
-function View_HomeComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-home", [], null, null, null, View_HomeComponent_0, RenderType_HomeComponent)), i1.ɵdid(1, 114688, null, 0, i3.HomeComponent, [i4.Router, i5.Title, i5.Meta, i6.UaParserService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_HomeComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-home", [], null, null, null, View_HomeComponent_0, RenderType_HomeComponent)), i1.ɵdid(1, 114688, null, 0, i7.HomeComponent, [i5.Router, i8.Title, i8.Meta, i6.UaParserService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_HomeComponent_Host_0 = View_HomeComponent_Host_0;
-var HomeComponentNgFactory = i1.ɵccf("app-home", i3.HomeComponent, View_HomeComponent_Host_0, {}, {}, []);
+var HomeComponentNgFactory = i1.ɵccf("app-home", i7.HomeComponent, View_HomeComponent_Host_0, {}, {}, []);
 exports.HomeComponentNgFactory = HomeComponentNgFactory;
 
 
@@ -2153,6 +2194,111 @@ var PayRentComponent = /** @class */ (function () {
     return PayRentComponent;
 }());
 exports.PayRentComponent = PayRentComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/photos/photos.component.ngfactory.js":
+/*!******************************************************!*\
+  !*** ./src/app/photos/photos.component.ngfactory.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./photos.component.scss.shim.ngstyle */ "./src/app/photos/photos.component.scss.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i3 = __webpack_require__(/*! ./photos.component */ "./src/app/photos/photos.component.ts");
+var i4 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i5 = __webpack_require__(/*! ../services/ua-parser.service */ "./src/app/services/ua-parser.service.ts");
+var styles_PhotosComponent = [i0.styles];
+var RenderType_PhotosComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_PhotosComponent, data: {} });
+exports.RenderType_PhotosComponent = RenderType_PhotosComponent;
+function View_PhotosComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 0, "img", [["height", "auto"], ["width", "100%"]], [[8, "src", 4], [8, "alt", 0]], null, null, null, null))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.getImageUrl(_co.selectedImage.url); var currVal_1 = i1.ɵinlineInterpolate(1, "", _co.selectedImage.alt, ""); _ck(_v, 0, 0, currVal_0, currVal_1); }); }
+function View_PhotosComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "span", [["class", "m-1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [["class", "tn"], ["data-target", "#selectedImageM"], ["data-toggle", "image.url"], ["height", "75px"], ["width", "75px"]], [[8, "src", 4], [8, "alt", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.setSelectedImage(_v.context.$implicit) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.getImageUrl(_v.context.$implicit.url); var currVal_1 = i1.ɵinlineInterpolate(1, "", _v.context.$implicit.alt, ""); _ck(_v, 1, 0, currVal_0, currVal_1); }); }
+function View_PhotosComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 11, "div", [["class", "gallery-content"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 10, "div", [["class", "container px-0"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 9, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 3, "div", [["class", "col-lg-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 2, "div", [["class", "text-center selectedImageM"], ["id", "selectedImageM"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_PhotosComponent_1)), i1.ɵdid(6, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(7, 0, null, null, 4, "div", [["class", "col-lg-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 3, "div", [["class", "data"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 2, "div", [["class", "thumbnailsList"], ["id", "thumbnailsList"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_PhotosComponent_2)), i1.ɵdid(11, 278528, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.selectedImage; _ck(_v, 6, 0, currVal_0); var currVal_1 = _co.galleryImages; _ck(_v, 11, 0, currVal_1); }, null); }
+exports.View_PhotosComponent_0 = View_PhotosComponent_0;
+function View_PhotosComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-photos", [], null, null, null, View_PhotosComponent_0, RenderType_PhotosComponent)), i1.ɵdid(1, 114688, null, 0, i3.PhotosComponent, [i4.Router, i5.UaParserService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_PhotosComponent_Host_0 = View_PhotosComponent_Host_0;
+var PhotosComponentNgFactory = i1.ɵccf("app-photos", i3.PhotosComponent, View_PhotosComponent_Host_0, {}, {}, []);
+exports.PhotosComponentNgFactory = PhotosComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/photos/photos.component.scss.shim.ngstyle.js":
+/*!**************************************************************!*\
+  !*** ./src/app/photos/photos.component.scss.shim.ngstyle.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  font-family: \"Lato\", sans-serif; }\n.justify[_ngcontent-%COMP%] {\n  text-align: justify; }\n.bg-secondary[_ngcontent-%COMP%] {\n  background: #212121 !important; }\n.bg-light[_ngcontent-%COMP%] {\n  background: #efefef !important; }\n.bg-translucent[_ngcontent-%COMP%] {\n  background: rgba(0, 0, 0, 0.72);\n  width: auto !important;\n  height: 100vh; }\n.bg-dark-background[_ngcontent-%COMP%] {\n  background: #404040; }\n.contentHolder[_ngcontent-%COMP%] {\n  min-height: 94vh; }\n.btn-primary[_ngcontent-%COMP%] {\n  background-color: #ffde03;\n  border-color: #ffde03;\n  color: black !important;\n  min-width: 200px;\n  border-radius: 25px; }\n.btn-primary[_ngcontent-%COMP%]:hover, .btn-primary[_ngcontent-%COMP%]:active, .btn-primary[_ngcontent-%COMP%]:focus {\n  background-color: #fbc02d !important;\n  border-color: #fbc02d !important;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%] {\n  background-color: transparent;\n  border-color: #ffde03;\n  border: 1px solid #ffde03;\n  min-width: 200px;\n  color: #fff !important;\n  border-radius: 25px; }\n.btn-outline-primary[_ngcontent-%COMP%]:hover, .btn-outline-primary[_ngcontent-%COMP%]:active, .btn-outline-primary[_ngcontent-%COMP%]:focus {\n  background-color: #fbc02d !important;\n  border-color: #fbc02d !important;\n  border-radius: 25px;\n  color: #000 !important; }\n.section-headings[_ngcontent-%COMP%] {\n  font-weight: 200; }\n.contact-map[_ngcontent-%COMP%] {\n  width: 100%; }\n.heading[_ngcontent-%COMP%] {\n  font-weight: 400; }\n.sectionImage[_ngcontent-%COMP%] {\n  width: 100%; }\n.gallery-content[_ngcontent-%COMP%] {\n  padding: 20px;\n  background-color: #efefef;\n  margin-bottom: 50px; }\n.gallery-content[_ngcontent-%COMP%]   .selectedImageM[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    border: 2px solid #fff; }\n.gallery-content[_ngcontent-%COMP%]   .image1[_ngcontent-%COMP%] {\n    margin-bottom: 10px; }\n.gallery-content[_ngcontent-%COMP%]   .data[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n    text-transform: capitalize;\n    font-size: 1.5rem;\n    padding-top: 10px;\n    color: black; }\n.gallery-content[_ngcontent-%COMP%]   .thumbnailsList[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    box-shadow: none;\n    border: 1px solid #fff;\n    margin-top: 5px;\n    margin-bottom: 5px;\n    cursor: pointer; }\n@media only screen and (max-width: 600px) {\n  .gallery-content[_ngcontent-%COMP%] {\n    padding: 16px; }\n    .gallery-content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n      padding-top: 16px; } }"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/photos/photos.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/photos/photos.component.ts ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var galleryImage_1 = __webpack_require__(/*! ../data/galleryImage */ "./src/app/data/galleryImage.ts");
+var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var ua_parser_service_1 = __webpack_require__(/*! ../../app/services/ua-parser.service */ "./src/app/services/ua-parser.service.ts");
+var PhotosComponent = /** @class */ (function () {
+    function PhotosComponent(router, uaParserService) {
+        this.router = router;
+        this.uaParserService = uaParserService;
+        this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+        this.imageBaseUrl = this.uaParserService.baseUrl;
+    }
+    PhotosComponent.prototype.ngOnInit = function () {
+        this.fetchDetailsLocation1();
+        this.setSelectedImage(this.galleryImages[0]);
+    };
+    PhotosComponent.prototype.fetchDetailsLocation1 = function () {
+        this.galleryImages = galleryImage_1.galleryImagesLocation1;
+        this.id = 1;
+    };
+    PhotosComponent.prototype.setSelectedImage = function (image) {
+        this.selectedImage = image;
+    };
+    PhotosComponent.prototype.getImageUrl = function (imageName) {
+        // const extension = this.imagetype.toLowerCase();
+        return this.imageBaseUrl + "/" + imageName + "." + this.imagetype;
+    };
+    return PhotosComponent;
+}());
+exports.PhotosComponent = PhotosComponent;
 
 
 /***/ }),
@@ -2762,7 +2908,8 @@ exports.ViewRatesComponent = ViewRatesComponent;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.environment = {
     production: false,
-    errorsMails: ['website.dev@codeparva.in'],
+    errorsMails: [''],
+    // website.dev@codeparva.in
     senderEmail: 'errors@codeparva.in',
     appId: 'scotia',
     VERSION: __webpack_require__(/*! ../../package.json */ "./package.json").version
