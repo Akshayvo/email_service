@@ -5,6 +5,8 @@ import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../data/home';
 import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
+import { FetchDataService } from '../services/fetch-data.service';
+
 
 
 @Component({
@@ -13,6 +15,7 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
 
   contactDetails: any;
   hours: any;
@@ -25,12 +28,16 @@ export class HomeComponent implements OnInit {
   jumbotron: any;
   currentActive: any = 'HOME';
 
+
+
   constructor(
     private router: Router,
     private titleService: Title,
     private meta: Meta,
     private _renderer2: Renderer2,
     private metaService: MetaService,
+    public fetchDataService: FetchDataService,
+    
     @Inject(DOCUMENT) private _document: any,
   ) {
     this.meta.addTag({
@@ -54,7 +61,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
-
+    // this.showConfig();
     // const s = this._renderer2.createElement('script');
     // s.type = `application/ld+json`;
     // s.text = `
@@ -89,6 +96,16 @@ export class HomeComponent implements OnInit {
 
     // this._renderer2.appendChild(this._document.body, s);
   }
+
+  // showConfig() {
+  //   this.fetchDataService.getConfig()
+  //   .subscribe(() => {
+  //     console.log('show config is working');
+  //   }
+  //   );
+  // }
+
+
 
   public fetchContactDetails() {
     this.contactDetails = contact;
