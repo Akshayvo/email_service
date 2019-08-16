@@ -4,7 +4,7 @@ import { viewRates } from '../data/view-rates';
 import { MetaService } from '../services/link.service';
 // import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { FetchDataService } from '../services/fetch-data.service';
-
+import { UnitTypes } from '../models/UnitTypes';
 
 @Component({
   selector: 'app-view-rates',
@@ -15,11 +15,7 @@ export class ViewRatesComponent implements OnInit {
 
   currentActive: any = 'VIEW RATES';
   viewRates: any;
-  posts: any;
-
-
-  // private url = `https://simapi.syrasoft.com/10.1.0.999/api/facility/unittypes`;
-
+  UnitTypes: UnitTypes;
 
   constructor(
     private titleService: Title,
@@ -41,24 +37,18 @@ export class ViewRatesComponent implements OnInit {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.fetchViewRates();
-    // this.getPosts();
-    this.getData();
+    this.getData(this.UnitTypes);
   }
   public fetchViewRates() {
     this.viewRates = viewRates;
   }
 
-//   getPosts() {
-//     this.posts = this.http.get(this.url);
-//     console.log(this.posts);
-//  }
-
-  getData() {
+  getData(UnitTypes) {
     console.log('method is working');
-    this.fetchDataService.getData()
+    this.fetchDataService.getData(UnitTypes)
     .subscribe(data => {
-      console.log('service is');
+      console.log('service is working');
+      console.log(UnitTypes);
     });
-
   }
 }
