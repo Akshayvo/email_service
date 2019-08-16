@@ -4,7 +4,7 @@ import { viewRates } from '../data/view-rates';
 import { MetaService } from '../services/link.service';
 // import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { FetchDataService } from '../services/fetch-data.service';
-import { UnitTypes } from '../models/UnitTypes';
+import { UnitTypes, LstUnitTypes } from '../models/UnitTypes';
 
 @Component({
   selector: 'app-view-rates',
@@ -15,7 +15,9 @@ export class ViewRatesComponent implements OnInit {
 
   currentActive: any = 'VIEW RATES';
   viewRates: any;
-  UnitTypes: UnitTypes;
+  unitTypes: UnitTypes;
+
+  LstUnitTypes: LstUnitTypes;
 
   constructor(
     private titleService: Title,
@@ -37,7 +39,7 @@ export class ViewRatesComponent implements OnInit {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.fetchViewRates();
-    this.getData(this.UnitTypes);
+    this.getData(this.unitTypes);
   }
   public fetchViewRates() {
     this.viewRates = viewRates;
@@ -46,9 +48,10 @@ export class ViewRatesComponent implements OnInit {
   getData(UnitTypes) {
     console.log('method is working');
     this.fetchDataService.getData(UnitTypes)
-    .subscribe(data => {
+    .subscribe(UnitTypes => {
       console.log('service is working');
       console.log(UnitTypes);
+      this.LstUnitTypes = UnitTypes.lstUnitTypes
     });
   }
 }

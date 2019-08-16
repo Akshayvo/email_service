@@ -19,5 +19,4 @@ export class TablesComponent implements OnInit {
     this.tds = this.tBody;
     this.objectKeys = Object.keys(this.tds[0]);
   }
-
 }

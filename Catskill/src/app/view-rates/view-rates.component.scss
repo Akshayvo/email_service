@@ -1,5 +1,26 @@
 @import "../../styles.scss";
 
+
+//table style
+
+table {
+  thead {
+    background: $dark;
+    th {
+      color: $primary;
+    }
+  }
+  tbody {
+    tr {
+      td {
+
+      }
+    }
+  }
+}
+
+// table style
+
 .view-rate-heading {
   display: none;
 }
