@@ -1,16 +1,4 @@
 export const tabs = [
-    // {
-    //     id: '1',
-    //     name: 'Storage Units',
-    //     path: './storageUnits',
-    //     active: true,
-    // },
-    // {
-    //     id: '2',
-    //     name: 'Unit Sizer',
-    //     path: './unitSizer',
-    //     // active: false,
-    // },
     {
         id: '1',
         name: 'Reservations',
@@ -26,7 +14,20 @@ export const tabs = [
         id: '3',
         name: 'About Us',
         path: './about',
-        // active: false,
+    },
+];
+
+export const tabs1 = [
+    {
+        id: '1',
+        name: 'Reservations',
+        path: './reservations',
+        active: true,
+    },
+    {
+        id: '2',
+        name: 'About Us',
+        path: './about',
     },
 ];
 
@@ -37,7 +38,7 @@ export const headingLocation2 = `751 Kenton Station Location`;
 
 export const headingLocation3 = `Augusta Location`;
 
-export const headingLocation4 = `Front Street Climate Control`;
+export const headingLocation4 = `113 McDonald Parkway`;
 
 export const unitSizerLocation1 = [
        {
@@ -105,9 +106,9 @@ export const aboutUsHeadingLocation1 = `About Our 730 Kenton Station Rd Location
 
 export const aboutUsHeadingLocation2 = `About AA Secure Storage`;
 
-export const aboutUsHeadingLocation3 = ``;
+export const aboutUsHeadingLocation3 = `About AA Secure Storage`;
 
-export const aboutUsHeadingLocation4 = ``;
+export const aboutUsHeadingLocation4 = `About AA Secure Storage`;
 
 // tslint:disable-next-line:max-line-length
 export const aboutUsImageLocation1 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-storage-6.jpg`;
@@ -116,9 +117,9 @@ export const aboutUsImageLocation1 = `https://syrasoft-tenant-facing-websites.s3
 export const aboutUsImageLocation2 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-security-storage-3.jpg`;
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation3 = ``;
+export const aboutUsImageLocation3 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-2.jpg`;
 
-export const aboutUsImageLocation4 = ``;
+export const aboutUsImageLocation4 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-storage_mc.jpg`;
 
 export const aboutUsLocation1 = [
     {
@@ -150,13 +151,27 @@ export const aboutUsLocation2 = [
 
 export const aboutUsLocation3 = [
     {
-        p: ``,
+        p: `Since 1980, AA Secure Storage has been serving the Augusta community with well-maintained,
+        high-quality self storage units and excellent customer service at affordable rates!`,
     },
+    {
+        p: `Our outdoor units and car wash are accessible 24 hours a day, 7 days a week for additional
+        convenience! Drive up to your unit anytime you need access to your belongings or supplies! `
+    }
 ];
 
 export const aboutUsLocation4 = [
     {
-        p: ``,
+        p: `Since 1980, AA Secure Storage has been serving the Maysville community with well-maintained, high-quality
+        self storage units and excellent customer service at affordable rates!`,
     },
+    {
+        p: `Our 113 E Mcdonald Pkw location offers climate-controlled units in a comfortable, well-lit setting. We are
+        located conveniently between W Front Street and W 2nd Street in Maysville! Our access hours run from 7:00AM to Dusk,
+        7 days a week! We know not everyone has time to access their units during traditional business hours.`
+    },
+    {
+        p: `Take advantage of our low rates and awesome customer service! Call to make your reservation today!`
+    }
 ];
 

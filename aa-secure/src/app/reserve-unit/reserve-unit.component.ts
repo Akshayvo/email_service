@@ -69,11 +69,11 @@ export class ReserveUnitComponent implements OnInit {
       this.heading = headingLocation2;
     } else  if (this.router.url.includes('/location/augusta'))  {
       this.id = 3;
-      this.contactDetails = contactsLocation1;
+      this.contactDetails = contactsLocation3;
       this.heading = headingLocation3;
-    } else  if (this.router.url.includes('/location/front-street-climate-control'))  {
+    } else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
       this.id = 4;
-      this.contactDetails = contactsLocation1;
+      this.contactDetails = contactsLocation4;
       this.heading = headingLocation4;
     }
   }
@@ -89,7 +89,7 @@ export class ReserveUnitComponent implements OnInit {
       this.contactForm.value.subject = 'Website Form Submission';
     }
   
-    this.receiveremail = this.contactDetails[1].data;
+    this.receiveremail = this.contactDetails[2].data;
     this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                             <strong>Message:</strong> ${this.contactForm.value.message}`;
   
@@ -104,13 +104,13 @@ export class ReserveUnitComponent implements OnInit {
            .subscribe((response: any) => {
              if (response.result != null) {
               this.mailSent = true;
+              this.contactForm.reset();
              } else {
              }
            }, (err) => {
              console.log('Error :', err);
            });
          this.submitted = false;
-         this.contactForm.reset();
    }
   }
 }

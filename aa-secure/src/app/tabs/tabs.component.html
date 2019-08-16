@@ -4,7 +4,8 @@
     <span *ngFor="let tab of tabData" class="grid-item" >
         <!-- [ngClass]="{'active-tab': selectedTab == tab?.name}" -->
       <span>
-          <a [routerLink]="tab?.path"  class="px-3 py-2 btn" [routerLinkActive]="'tab-active'" [routerLinkActiveOptions]="{exact:true}" [ngClass]="{'active-tab': selectedTab == tab?.name}">{{tab.name}}</a>
+          <a [routerLink]="tab?.path"  class="px-3 py-2 btn" [routerLinkActive]="'tab-active'" [routerLinkActiveOptions]="{exact:true}"
+          [ngClass]="{'active-tab': selectedTab == tab?.name}">{{tab.name}}</a>
         
         <!-- [routerLinkActive]="'tab-active'" [routerLinkActiveOptions]="{exact: true}" -->
 

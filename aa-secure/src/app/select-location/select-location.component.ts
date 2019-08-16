@@ -26,7 +26,7 @@ export class SelectLocationComponent implements OnInit {
     },
     {
       id: 4,
-      name: 'Front Street Climate Control',
+      name: '113 McDonald Parkway',
     },
  ];
 

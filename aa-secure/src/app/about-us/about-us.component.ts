@@ -33,7 +33,7 @@ export class AboutUsComponent implements OnInit {
     this.fetchDetailsLocation2();
   } else  if (this.router.url.includes('/location/augusta'))  {
     this.fetchDetailsLocation3();
-  } else  if (this.router.url.includes('/location/front-street-climate-control'))  {
+  } else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
     this.fetchDetailsLocation4();
   }
 }
@@ -56,14 +56,14 @@ export class AboutUsComponent implements OnInit {
     this.aboutPara = aboutUsLocation3;
     this.heading = aboutUsHeadingLocation3;
     this.image = aboutUsImageLocation3;
-    this.alt = '';
+    this.alt = 'photograph of outdoor self storage units on gravel parking';
   }
 
   public fetchDetailsLocation4() {
     this.aboutPara = aboutUsLocation4;
     this.heading = aboutUsHeadingLocation4;
     this.image = aboutUsImageLocation4;
-    this.alt = '';
+    this.alt = 'photograph of the interior of a climate controlled self storage facility with carpeted floors';
   }
 
   public fetchServiceOffered() {

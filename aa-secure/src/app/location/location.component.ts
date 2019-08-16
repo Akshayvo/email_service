@@ -5,7 +5,7 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation3, hoursLocation3,
           contactsLocation4, hoursLocation4
           } from '../data/contact';
-import { tabs } from '../data/location';
+import { tabs, tabs1} from '../data/location';
 import { headingLocation1, headingLocation2, headingLocation3, headingLocation4 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -46,19 +46,20 @@ export class LocationComponent implements OnInit {
              content: `We have a large selection of high-quality, well-maintained self
              storage units at extremely affordable prices!`
            });
-           this.titleService.setTitle('Affordable Storage Units in Maysville | AA Secure Storage');
+           this.titleService.setTitle('');
     } else  if (this.router.url.includes('/location/augusta'))  {
           this.meta.addTag({
             name: 'description',
-            content: ` `
+            content: `Our Augusta location has a large selection of storage units with very easy access right off of`
           });
-          this.titleService.setTitle('');
-    } else  if (this.router.url.includes('/location/front-street-climate-control'))  {
+          this.titleService.setTitle('Affordable Self Storage in Augusta | AA Secure Storage');
+    } else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
       this.meta.addTag({
         name: 'description',
-        content: ` `
+        content: `Our 113 McDonald Parkway location is completely fenced in, and paved for additional
+        convenience! Call today for your reservation!`
       });
-      this.titleService.setTitle('');
+      this.titleService.setTitle('Affordable Storage Units in Maysville | AA Secure Storage');
 }
   }
 
@@ -74,29 +75,29 @@ export class LocationComponent implements OnInit {
       this.fetchDetailsLocation2();
     } else  if (this.router.url.includes('/location/augusta'))  {
       this.fetchDetailsLocation3();
-    } else  if (this.router.url.includes('/location/front-street-climate-control'))  {
+    } else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
       this.fetchDetailsLocation4();
     }
  }
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate(['/location/730-kenton-station/reserveUnit'],
+    this.router.navigate(['/location/730-kenton-station/reservations'],
           { queryParams: { name: '730 Kenton Station Location', currentTab: 'Reserve Unit' },
           skipLocationChange: true, queryParamsHandling: null }
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/751-kenton-station/reserveUnit'],
+    this.router.navigate(['/location/751-kenton-station/reservations'],
           { queryParams: { name: 'Location2', currentTab: 'Reserve Unit' },
           skipLocationChange: true, queryParamsHandling: null}
           );
   } else if ( this.locationId === 3) {
-    this.router.navigate(['/location/augusta/reserveUnit'],
+    this.router.navigate(['/location/augusta/reservations'],
           { queryParams: { name: 'Location3', currentTab: 'Reserve Unit' },
           skipLocationChange: true, queryParamsHandling: null}
           );
   } else if ( this.locationId === 4) {
-    this.router.navigate(['/location/front-street-climate-control/reserveUnit'],
+    this.router.navigate(['/location/113-mcDonald-parkway/reservations'],
           { queryParams: { name: 'Location3', currentTab: 'Reserve Unit' },
           skipLocationChange: true, queryParamsHandling: null}
           );
@@ -106,7 +107,7 @@ export class LocationComponent implements OnInit {
   public fetchDetailsLocation1() {
       this.name = headingLocation1;
       this.locationId = 1;
-      this.contacts = contactsLocation1;
+      this.contacts = contactsLocation2;
       this.hours = hoursLocation1;
       this.tabs = tabs;
     }
@@ -122,7 +123,7 @@ export class LocationComponent implements OnInit {
    public fetchDetailsLocation3() {
      this.name = headingLocation3;
      this.locationId = 3;
-     this.contacts = contactsLocation3;
+     this.contacts = contactsLocation2;
      this.hours = hoursLocation3;
      this.tabs = tabs;
    }
@@ -130,8 +131,8 @@ export class LocationComponent implements OnInit {
    public fetchDetailsLocation4() {
     this.name = headingLocation4;
     this.locationId = 4;
-    this.contacts = contactsLocation4;
+    this.contacts = contactsLocation2;
     this.hours = hoursLocation4;
-    this.tabs = tabs;
+    this.tabs = tabs1;
   }
 }

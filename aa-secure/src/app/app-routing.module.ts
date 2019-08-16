@@ -5,13 +5,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ErrorComponent } from './error/error.component';
 import { LocationComponent } from './location/location.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
-import { StorageUnitComponent } from './storage-unit/storage-unit.component';
-import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { DirectionsComponent } from './directions/directions.component';
-
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 
@@ -22,12 +18,9 @@ const routes: Routes = [
     children: [
       // { path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
       { path: '', redirectTo: 'reservations', pathMatch: 'full'},
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
       { path: 'reservations', component: ReserveUnitComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
     ]
   },
   { path: 'location/751-kenton-station',
@@ -36,11 +29,8 @@ const routes: Routes = [
       // { path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
       { path: '', redirectTo: 'reservations', pathMatch: 'full'},
       { path: 'reservations', component: ReserveUnitComponent },
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
     ]
   },
   { path: 'location/augusta',
@@ -48,25 +38,17 @@ const routes: Routes = [
     children: [
       // {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
       { path: '', redirectTo: 'reservations', pathMatch: 'full'},
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
       { path: 'reservations', component: ReserveUnitComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/front-street-climate-control',
+  { path: 'location/113-mcDonald-parkway',
   component: LocationComponent,
   children: [
-    // {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
     { path: '', redirectTo: 'reservations', pathMatch: 'full'},
-    { path: 'storageUnits', component: StorageUnitComponent },
-    { path: 'unitSizer', component: UnitSizerComponent },
     { path: 'reservations', component: ReserveUnitComponent },
-    { path: 'photos', component: PhotosComponent },
     { path: 'about', component: AboutUsComponent },
-    { path: 'directions', component: DirectionsComponent },
   ]
 },
   { path: 'review/730-kenton-station', component: HomeComponent,
@@ -93,7 +75,7 @@ const routes: Routes = [
         externalUrl: ''
     }
   },
-  { path: 'review/front-street-climate-control', component: HomeComponent,
+  { path: 'review/113-mcDonald-parkway', component: HomeComponent,
   resolve: {
       url: 'externalUrlRedirectResolver'
   },

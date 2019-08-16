@@ -80,7 +80,7 @@ export class HomeComponent implements OnInit {
     }
 
     public fetchContactDetailsLocation4() {
-      this.heading = `Front Street Climate Control`;
+      this.heading = `113 McDonald Parkway`;
       this.contactDetails = contactsLocation4;
       this.hoursDetails = hoursLocation4;
     }

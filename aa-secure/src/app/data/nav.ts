@@ -19,16 +19,16 @@ export const navLinks = [
                   label: '751 Kenton Station Location',
                   path: '/location/751-kenton-station',
               },
-            //   {
-            //       id: '3',
-            //       label: 'Augusta Location',
-            //       path: '/location/augusta',
-            //   },
-            //   {
-            //       id: '4',
-            //       label: 'Front Street Climate Control',
-            //       path: '/location/front-street-climate-control'
-            //   }
+              {
+                  id: '3',
+                  label: 'Augusta Location',
+                  path: '/location/augusta',
+              },
+              {
+                  id: '4',
+                  label: '113 McDonald Parkway',
+                  path: '/location/113-mcDonald-parkway'
+              }
         ]
     },
     {

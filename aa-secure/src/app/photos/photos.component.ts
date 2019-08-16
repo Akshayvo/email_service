@@ -30,7 +30,7 @@ export class PhotosComponent implements OnInit {
     this.fetchDetailsLocation2();
   } else  if (this.router.url.includes('/location/augusta'))  {
     this.fetchDetailsLocation3();
-  }  else  if (this.router.url.includes('/location/front-street-climate-control'))  {
+  }  else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
     this.fetchDetailsLocation4();
   }
 }

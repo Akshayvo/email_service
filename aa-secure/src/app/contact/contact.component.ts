@@ -105,7 +105,7 @@ export class ContactComponent implements OnInit {
   }
 
   public fetchContactDetailsLocation4() {
-    this.heading = `Front Street Climate Control`;
+    this.heading = `113 McDonald Parkway`;
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
   }
@@ -136,13 +136,13 @@ onSubmit() {
          .subscribe((response: any) => {
            if (response.result != null) {
             this.mailSent = true;
+            this.contactForm.reset();
            } else {
            }
          }, (err) => {
            console.log('Error :', err);
          });
        this.submitted = false;
-       this.contactForm.reset();
  }
 }
 

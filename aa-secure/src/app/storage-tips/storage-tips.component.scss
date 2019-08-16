@@ -29,12 +29,30 @@
   .storage-content {
     padding: 50px;
     background-color: $light;
+    min-height: 559px;
 
     ul {
       padding-left: 30px;
     }
   }
 }
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .storage-tip-holder {
+    .storage-content {
+      min-height: 643px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  .storage-tip-holder {
+    .storage-content {
+      min-height: 702px;
+    }
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   .storage-tip-holder {
