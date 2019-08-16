@@ -8,7 +8,7 @@ export const navLinks = [
         path: '/view-rates',
     },
     {
-        label: 'RESERVE A UNIT',
+        label: 'RENT UNIT',
         path: '/reserve-unit'
     },
     {
