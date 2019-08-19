@@ -6,23 +6,36 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  // <Layout>
+  //   <SEO title="Home" />
+  //   <h1>Hi people</h1>
+  //   <p>Welcome to your new Gatsby site.</p>
+  //   <p>Now go build something great.</p>
+  //   {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+  //     <Image />
+  //   </div> */}
+  //   <Link to="/about">About</Link>
+  // </Layout>
+<div className="navbar bg-dark">  
+  <div className="container">
+    <div >
+      <a class="navbar-brand" >
+        <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/logo.png" hight="auto" alt="Logo artwork that spells out SI Mini Storage" />
+      </a>
+        <b>Home</b>
+        <b>about</b>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
-
-export default () => (<div style={{color:'purple'}}>
-  <Link to="/about/">Contact</Link>
-  <h1>Hello sagar</h1>
-  <p>what a world</p>
-  {/* <PrimaryButton>click me</PrimaryButton> */}
-  <img src="https://source.unsplash.com/random/400x200" alt="catskill image"/>
   </div>
+  <Link to="/about">About</Link>
+</div>
   )
+
+export default IndexPage
+// () => (<div style={{color:'purple'}}>
+//   <Link to="/about/">Contact</Link>
+//   <h1>Hello sagar</h1>
+//   <p>what a world</p>
+//   {/* <PrimaryButton>click me</PrimaryButton> */}
+//   <img src="https://source.unsplash.com/random/400x200" alt="catskill image"/>
+//   </div>
+//   )
