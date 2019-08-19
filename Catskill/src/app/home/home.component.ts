@@ -6,6 +6,9 @@ import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../dat
 import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { FetchDataService } from '../services/fetch-data.service';
+import { Auth } from '../models/auth';
+import { AuthService } from '../services/auth.service';
+
 
 
 
@@ -26,8 +29,16 @@ export class HomeComponent implements OnInit {
   gettingStarted: any;
   feature: any;
   jumbotron: any;
+  authData: string;
   currentActive: any = 'HOME';
 
+
+
+  data = {
+    strUserName: 'Sanghmitra',
+    strPassword: 'codeparva',
+    intAuthMethod: 1
+  };
 
 
   constructor(
@@ -37,7 +48,9 @@ export class HomeComponent implements OnInit {
     private _renderer2: Renderer2,
     private metaService: MetaService,
     public fetchDataService: FetchDataService,
-    
+    private authService: AuthService,
+
+
     @Inject(DOCUMENT) private _document: any,
   ) {
     this.meta.addTag({
@@ -47,6 +60,8 @@ export class HomeComponent implements OnInit {
     });
     this.titleService.setTitle('Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage');
     this.metaService.createCanonicalURL();
+    this.auth(this.data);
+
   }
 
   public navigate(location: any) {
@@ -61,6 +76,9 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
+    // this.getTokenValue();
+
+
     // this.showConfig();
     // const s = this._renderer2.createElement('script');
     // s.type = `application/ld+json`;
@@ -105,6 +123,22 @@ export class HomeComponent implements OnInit {
   //   );
   // }
 
+
+  auth(data: any): void {
+    this.authService.auth(data)
+      .subscribe(
+        Auth => {
+          this.authData = Auth.strTenantToken;
+          // console.log(this.authData);
+          localStorage.setItem('strTenantToken', this.authData);
+        }
+      );
+
+  }
+
+  // getTokenValue() {
+  //   console.log(localStorage.getItem('strTenantToken'));
+  // }
 
 
   public fetchContactDetails() {

@@ -22,6 +22,7 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
+import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ErrorHandlerService } from './services/error-handler.service';
     ErrorComponent,
     ErrorHandlerComponent,
     StorageTipsComponent,
-    AccordionComponent
+    AccordionComponent,
+    ReserveUnitFormComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {tap} from 'rxjs/internal/operators';
-import { UnitTypes, LstUnitTypes } from '../models/UnitTypes';
+import { UnitTypes, LstUnitTypes, RentalPeriod } from '../models/unittypes';
 
 
 const httpOptions = {
@@ -21,9 +21,11 @@ export class FetchDataService {
 
   // private url = `http://localhost:4200/api/facility/unittypes`;
 
-  private url = `https://simapi.syrasoft.com/1/api/facility/unittypes`; 
+  private url = `https://simapi.syrasoft.com/1/api/facility/unittypes`;
 
-  // private url = `https://simapi.syrasoft.com/1/api/facility/contactus`; 
+  private rentalPeriodUrl = `https://simapi.syrasoft.com/1/api/facility/rentalperiods`;
+
+  // private url = `https://simapi.syrasoft.com/1/api/facility/contactus`;
 
 
 
@@ -31,5 +33,9 @@ export class FetchDataService {
 
   getData(UnitTypes: UnitTypes): Observable<UnitTypes> {
     return this.http.get<UnitTypes>(this.url, httpOptions);
+  }
+
+  getRentalPeriod(RentalPeriod: RentalPeriod): Observable<RentalPeriod> {
+    return this.http.get<RentalPeriod>(this.rentalPeriodUrl, httpOptions);
   }
 }

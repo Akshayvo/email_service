@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-
 @Component({
   selector: 'app-reserve',
   templateUrl: './reserve.component.html',
@@ -12,7 +11,7 @@ export class ReserveComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
   ) {
     this.meta.addTag({
       name: 'description',

@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,9 +11,13 @@ import { filter } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit {
   title = 'Catskill';
+
+
+
   constructor(
     private router: Router,
-    private angulatics: Angulartics2GoogleAnalytics
+    private angulatics: Angulartics2GoogleAnalytics,
+
   ) {
 
   }
@@ -20,4 +25,7 @@ export class AppComponent implements OnInit {
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
     const onNavigationEnd = this.router.events.pipe(filter(event => event instanceof NavigationEnd));
   }
+
+  
 }
+
