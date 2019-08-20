@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
-import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../data/contact';
+import { contactsLocation1,contactsLocation3 } from '../data/contact';
 import { payList } from '../data/pay-rent';
 
 @Component({
@@ -25,8 +25,8 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Click here to pay your rent online for Natrona Heights Self Storage,
-                Shaler Self Storage or Movin' On Storage Center`
+      content: `Click here to pay your rent online for Natrona Heights Self Storage
+                 or Movin' On Storage Center`
     });
     this.titleService.setTitle('Pay Rent Online');
   }
@@ -47,8 +47,6 @@ export class PaymentComponent implements OnInit {
   public dataupdate() {
     if ( this.locationId === '1' || this.locationId === 1 ) {
       this.contact = contactsLocation1;
-    } else if ( this.locationId === '2' ) {
-      this.contact = contactsLocation2;
     } else if ( this.locationId === '3' ) {
       this.contact = contactsLocation3;
     }

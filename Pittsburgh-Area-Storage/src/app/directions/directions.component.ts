@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { directionLocation1, directionLocation2, directionLocation3 } from '../data/location';
+import { directionLocation1, directionLocation3 } from '../data/location';
 @Component({
   selector: 'app-directions',
   templateUrl: './directions.component.html',
@@ -20,8 +20,6 @@ export class DirectionsComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/movin-on-storage')) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes('/location/shaler-self')) {
-       this.fetchDetailsLocation2();
      } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
        this.fetchDetailsLocation3();
      }
@@ -32,11 +30,6 @@ export class DirectionsComponent implements OnInit {
   this.directionHeading = `Directions to Movin' On Storage Center`;
   this.id = 1;
 }
-  public fetchDetailsLocation2() {
-    this.directionPoints = directionLocation2;
-    this.directionHeading = `Directions to Shaler Storage`;
-    this.id = 2;
-  }
 
   public fetchDetailsLocation3() {
     this.directionPoints = directionLocation3;

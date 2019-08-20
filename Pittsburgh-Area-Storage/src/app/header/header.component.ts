@@ -32,8 +32,6 @@ export class HeaderComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/movin-on-storage')) {
         this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/movin-on-logo.png';
-    } else if (this.router.url.includes('/location/shaler-self')) {
-      this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/shaler-logo.png';
     } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
         this.logo = 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/natrona-logo.png';
     } else {

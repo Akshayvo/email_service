@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { aboutUsLocation1, aboutUsLocation2, aboutUsLocation3,
-          aboutUsHeadingLocation1, aboutUsHeadingLocation2, aboutUsHeadingLocation3,
-          aboutUsImageLocation1, aboutUsImageLocation2,
+import { aboutUsLocation1,aboutUsLocation3,
+          aboutUsHeadingLocation1, aboutUsHeadingLocation3,
+          aboutUsImageLocation1,
           aboutUsImageLocation3 } from '../data/location';
 import { serviceOffered } from '../data/home';
 
@@ -29,8 +29,6 @@ export class AboutUsComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/movin-on-storage')) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes('/location/shaler-self')) {
-    this.fetchDetailsLocation2();
   } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
     this.fetchDetailsLocation3();
   }
@@ -42,14 +40,6 @@ export class AboutUsComponent implements OnInit {
     this.image = aboutUsImageLocation1;
     this.alt = 'Indoor Units at Movin\' On Storage Center';
   }
-
-  public fetchDetailsLocation2() {
-    this.aboutPara = aboutUsLocation2;
-    this.heading = aboutUsHeadingLocation2;
-    this.image = aboutUsImageLocation2;
-    this.alt = 'Shaler Self Storage Retail Store';
-  }
-
   public fetchDetailsLocation3() {
     this.aboutPara = aboutUsLocation3;
     this.heading = aboutUsHeadingLocation3;

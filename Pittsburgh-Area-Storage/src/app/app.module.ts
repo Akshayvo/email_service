@@ -34,7 +34,6 @@ import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.component';
-import { PayRentShalerComponent } from './pay-rent-shaler/pay-rent-shaler.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +61,6 @@ import { PayRentShalerComponent } from './pay-rent-shaler/pay-rent-shaler.compon
     ErrorHandlerComponent,
     PayRentComponent,
     PayRentNatronaComponent,
-    PayRentShalerComponent
   ],
   imports: [
     NgtUniversalModule,

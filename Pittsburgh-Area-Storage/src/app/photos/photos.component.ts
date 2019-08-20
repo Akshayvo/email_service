@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { galleryDataLocation1, galleryDataLocation2, galleryDataLocation3,
-        galleryImagesLocation1, galleryImagesLocation2, galleryImagesLocation3 } from '../data/galleryImage';
+import { galleryDataLocation1, galleryDataLocation3,
+        galleryImagesLocation1,galleryImagesLocation3 } from '../data/galleryImage';
 import { Router } from '@angular/router';
 
 @Component({
@@ -26,9 +26,7 @@ export class PhotosComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/movin-on-storage')) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes('/location/shaler-self')) {
-    this.fetchDetailsLocation2();
-  } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+  }else  if (this.router.url.includes('/location/natrona-heights-self'))  {
     this.fetchDetailsLocation3();
   }
   }
@@ -37,12 +35,6 @@ export class PhotosComponent implements OnInit {
     this.galleryImages = galleryImagesLocation1;
     // this.galleryData = galleryDataLocation1;
     this.id = 1;
-  }
-
-  public fetchDetailsLocation2() {
-    this.galleryImages = galleryImagesLocation2;
-    // this.galleryData = galleryDataLocation2;
-    this.id = 2;
   }
 
   public fetchDetailsLocation3() {

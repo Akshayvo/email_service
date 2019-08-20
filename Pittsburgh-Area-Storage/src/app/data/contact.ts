@@ -35,40 +35,7 @@ export const hoursLocation1 = [
     },
 ];
 
-export const contactsLocation2 = [
-    {
-        label: 'Address:',
-        data: '422 Elfinwild Rd, Allison Park, PA 15101',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-    },
-
-    {
-        label: 'Phone:',
-        data: '(412) 486-4852',
-        class: 'fas fa-phone mr-2 iconColor',
-    },
-    {
-        label: 'Email:',
-        data: 'shalerselfstorage@gmail.com',
-        class: 'fas fa-envelope-open mr-2 iconColor',
-    },
-];
-
-export const hoursLocation2 = [
-    {
-        label: 'Tuesday-Friday: ',
-        data: '10:00AM - 4:00PM',
-    },
-    {
-        label: 'Saturday: ',
-        data: '10:00AM - 2:00PM',
-    },
-    {
-        label: 'Access hours: ',
-        data: '7 Days a Week: 7:00AM - 7:00PM',
-    },
-];
-
+// 
 export const contactsLocation3 = [
     {
         label: 'Address:',

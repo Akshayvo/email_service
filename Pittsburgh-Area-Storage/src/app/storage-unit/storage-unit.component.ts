@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { headingLocation1, headingLocation2, headingLocation3 } from '../data/location';
+import { headingLocation1, headingLocation3 } from '../data/location';
 
 @Component({
   selector: 'app-storage-unit',
@@ -22,9 +22,6 @@ export class StorageUnitComponent implements OnInit {
     if (this.router.url.includes('/location/movin-on-storage')) {
       this.id = 1;
       this.heading = headingLocation1;
-    } else if (this.router.url.includes('/location/shaler-self')) {
-      this.id = 2;
-      this.heading = headingLocation2;
     } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
       this.id = 3;
       this.heading = headingLocation3;

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../data/contact';
+import { contactsLocation1, contactsLocation3 } from '../data/contact';
 
 
 @Component({
@@ -21,8 +21,6 @@ export class PayRentComponent implements OnInit {
   public dataupdate() {
     if ( this.locationId === '1' || this.locationId === 1 ) {
       this.contact = contactsLocation1;
-    } else if ( this.locationId === '2' ) {
-      this.contact = contactsLocation2;
     } else if ( this.locationId === '3' ) {
       this.contact = contactsLocation3;
     }

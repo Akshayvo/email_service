@@ -1,11 +1,10 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
-          contactsLocation2, hoursLocation2,
           contactsLocation3, hoursLocation3,
           } from '../data/contact';
 import { tabs, tabs1 } from '../data/location';
-import { headingLocation1, headingLocation2, headingLocation3 } from '../data/location';
+import { headingLocation1, headingLocation3 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 
@@ -39,13 +38,6 @@ export class LocationComponent implements OnInit {
                         We have a wide selection of storage units and Penske truck rentals!`
             });
             this.titleService.setTitle('Storage Units in Charleston, WV | Movin\' On  Storage Center');
-    } else if (this.router.url.includes('/location/shaler-self')) {
-           this.meta.addTag({
-             name: 'description',
-             content: `Whether you're looking to clear a room for a family gathering or use our
-                      seasonal vehicle parking, Shaler Self Storage has your self storage needs covered!`
-           });
-           this.titleService.setTitle('Storage Units in Alison Park, PA | Shaler Self Storage');
     } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
           this.meta.addTag({
             name: 'description',
@@ -64,9 +56,8 @@ export class LocationComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/movin-on-storage')) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes('/location/shaler-self')) {
-      this.fetchDetailsLocation2();
-    } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+    } 
+     else  if (this.router.url.includes('/location/natrona-heights-self'))  {
       this.fetchDetailsLocation3();
     }
  }
@@ -75,9 +66,6 @@ export class LocationComponent implements OnInit {
   if ( this.locationId === 1 ) {
     this.router.navigate(['/location/movin-on-storage/reserveUnit'],
           { queryParams: { name: 'Movin\' On  Storage Center', currentTab: 'Reserve Unit' }});
-  } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/shaler-self/reserveUnit'],
-          { queryParams: { name: 'Shaler Self Storage', currentTab: 'Reserve Unit' }});
   } else if ( this.locationId === 3) {
     this.router.navigate(['/location/natrona-heights-self/reserveUnit'],
           { queryParams: { name: 'Natrona Heights Self Storage', currentTab: 'Reserve Unit' }});
@@ -92,13 +80,7 @@ export class LocationComponent implements OnInit {
       this.tabs = tabs1;
     }
 
-   public fetchDetailsLocation2() {
-     this.name = headingLocation2;
-     this.locationId = 2;
-     this.contacts = contactsLocation2;
-     this.hours = hoursLocation2;
-     this.tabs = tabs;
-   }
+  
 
    public fetchDetailsLocation3() {
      this.name = headingLocation3;

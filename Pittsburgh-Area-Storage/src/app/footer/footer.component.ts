@@ -22,9 +22,7 @@ export class FooterComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/shaler-self')) {
-      this.locationId = 1;
-    } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+   if (this.router.url.includes('/location/natrona-heights-self'))  {
       this.locationId = 1;
     } else {
       this.locationId = 0;

@@ -1,7 +1,7 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: '3 Convenient Locations',
+        label: '2 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/jumbotron-bottom-images/location.svg',
     },
     {

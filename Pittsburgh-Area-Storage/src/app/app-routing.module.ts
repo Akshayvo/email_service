@@ -15,7 +15,6 @@ import { DirectionsComponent } from './directions/directions.component';
 import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
-import { PayRentShalerComponent } from './pay-rent-shaler/pay-rent-shaler.component';
 import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.component';
 
 const routes: Routes = [
@@ -33,18 +32,7 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/shaler-self',
-    component: LocationComponent,
-    children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
-      { path: 'reserveUnit', component: ReserveUnitComponent },
-      { path: 'photos', component: PhotosComponent },
-      { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
-    ]
-  },
+  
   { path: 'location/natrona-heights-self',
     component: LocationComponent,
     children: [
@@ -65,14 +53,7 @@ const routes: Routes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ8RMQVzTTSIgRb01wdB59bgo'
     }
   },
-  { path: 'review/shaler-self', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJM2isvh2NNIgRYjqkBNhmZgk'
-    }
-  },
+  
   { path: 'review/natrona-heights-self', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
@@ -84,7 +65,6 @@ const routes: Routes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'pay-rent', component: PayRentComponent },
-  { path: 'pay-rent-shaler', component: PayRentShalerComponent },
   { path: 'pay-rent-natrona', component: PayRentNatronaComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
