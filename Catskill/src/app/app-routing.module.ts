@@ -8,6 +8,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ErrorComponent } from './error/error.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'pay-rent', component: PaymentComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent},
   { path: 'review', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'

@@ -23,6 +23,9 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
+import { LoginComponent } from './login/login.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.
     ErrorHandlerComponent,
     StorageTipsComponent,
     AccordionComponent,
-    ReserveUnitFormComponent
+    ReserveUnitFormComponent,
+    LoginComponent,
+    ForgotPasswordComponent,
+    PayRentFormComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

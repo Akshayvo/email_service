@@ -17,7 +17,7 @@ export class ViewRatesComponent implements OnInit {
   viewRates: any;
   showTable = false;
   unitTypes: UnitTypes;
-  LstUnitTypes: LstUnitTypes;
+  LstUnitTypes: LstUnitTypes[];
 
   constructor(
     private titleService: Title,

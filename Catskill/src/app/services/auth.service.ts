@@ -7,7 +7,7 @@ import { Auth } from '../models/auth';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'APIKey':  'MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    'APIKey':  'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
     'Content-Type': 'application/json'
   })
 };
@@ -18,13 +18,13 @@ const httpOptions = {
 })
 export class AuthService {
 
-  private url = `https://simapi.syrasoft.com/1/api/auth/signin`;
+  private url = `https://simapi.syrasoft.com/10.1.0.999/api/auth/signin`;
 
 
   constructor(private http: HttpClient) {
   }
 
-  auth(Auth: Auth): Observable<Auth> {
-    return this.http.post<Auth>(this.url, Auth, httpOptions);
+  auth(auth: Auth): Observable<Auth> {
+    return this.http.post<Auth>(this.url, auth, httpOptions);
   }
 }

@@ -6,9 +6,9 @@ import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../dat
 import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { FetchDataService } from '../services/fetch-data.service';
-import { Auth } from '../models/auth';
 import { AuthService } from '../services/auth.service';
-
+import { LstPayTypes } from '../models/payment';
+import { TenantInfoService } from '../services/tenant-info.service';
 
 
 
@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit {
 
   contactDetails: any;
   hours: any;
+  lstPayTypes: LstPayTypes[];
   featuresHead: any;
   featuresList: any;
   aboutUs: any;
@@ -32,13 +33,17 @@ export class HomeComponent implements OnInit {
   authData: string;
   currentActive: any = 'HOME';
 
+data = {
+  strUserName: 'Codeparva',
+  strPassword: 'newPassword',
+  intAuthMethod: 1
+};
 
-
-  data = {
-    strUserName: 'Sanghmitra',
-    strPassword: 'codeparva',
-    intAuthMethod: 1
-  };
+  // data = {
+  //   strUserName: 'Sanghmitra',
+  //   strPassword: 'codeparva',
+  //   intAuthMethod: 1
+  // };
 
 
   constructor(
@@ -49,7 +54,7 @@ export class HomeComponent implements OnInit {
     private metaService: MetaService,
     public fetchDataService: FetchDataService,
     private authService: AuthService,
-
+    private tenantInfoService: TenantInfoService,
 
     @Inject(DOCUMENT) private _document: any,
   ) {
@@ -76,6 +81,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
+    this.getPayMethods(this.lstPayTypes);
     // this.getTokenValue();
 
 
@@ -123,17 +129,24 @@ export class HomeComponent implements OnInit {
   //   );
   // }
 
+  getPayMethods(lstPayTypes: any): void {
+    this.fetchDataService.getPayMethods(lstPayTypes)
+    .subscribe(
+      result => {
+        console.log(result);
+      }
+    );
+  }
+
 
   auth(data: any): void {
     this.authService.auth(data)
       .subscribe(
-        Auth => {
-          this.authData = Auth.strTenantToken;
-          // console.log(this.authData);
+        auth => {
+          this.authData = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
         }
       );
-
   }
 
   // getTokenValue() {

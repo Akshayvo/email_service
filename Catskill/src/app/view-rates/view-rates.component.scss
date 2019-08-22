@@ -8,12 +8,17 @@ table {
     background: $dark;
     th {
       color: $primary;
+      font-size: 1.2rem;
     }
   }
   tbody {
     tr {
       td {
-
+        .btn {
+          min-width: 150px;
+          font-size: 1rem;
+          padding: 0.2rem 0.8rem;
+        }
       }
     }
   }

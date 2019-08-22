@@ -1,7 +1,7 @@
 export class UnitTypes {
-    lstUnitTypes: LstUnitTypes;
+    lstUnitTypes: LstUnitTypes[];
 
-    constructor(lstUnitTypes: LstUnitTypes) {
+    constructor(lstUnitTypes: LstUnitTypes[]) {
         this.lstUnitTypes = lstUnitTypes;
     }
 }
@@ -24,9 +24,9 @@ export class LstUnitTypes {
 
 
 export class RentalPeriod {
-    lstRentalPeriods: LstRentalPeriods;
+    lstRentalPeriods: LstRentalPeriods[];
 
-    constructor(lstRentalPeriods: LstRentalPeriods) {
+    constructor(lstRentalPeriods: LstRentalPeriods[]) {
         this.lstRentalPeriods = lstRentalPeriods;
     }
 }

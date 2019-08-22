@@ -1,3 +1,11 @@
+export class ObjTenantDetail {
+  objTenant: ObjTenant;
+
+  constructor(objTenant: ObjTenant) {
+    this.objTenant = objTenant;
+  }
+}
+
 export class ObjTenant {
   FirstName: string;
   LastName: string;
@@ -29,5 +37,22 @@ export class ObjTenant {
     this.City = City;
     this.State = State;
     this.ZIP = ZIP;
+  }
+}
+
+
+export class TenantInfo {
+  tenant: Tenant;
+
+  constructor( tenant: Tenant) {
+    this.tenant = tenant;
+  }
+}
+
+export class Tenant {
+  Balance: number;
+
+  constructor(Balance: number) {
+    this.Balance = Balance;
   }
 }

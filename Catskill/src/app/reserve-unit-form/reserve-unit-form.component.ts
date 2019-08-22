@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
+
 import { AddTenantService } from '../services/add-tenant.service';
-import { ObjTenant } from '../models/tenant';
 import { FetchDataService } from '../services/fetch-data.service';
 import { MoveInService } from '../services/move-in.service';
+
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods } from '../models/unittypes';
+
 import { MoveIn } from '../models/moveIn';
+import { ObjTenantDetail, ObjTenant } from '../models/tenant';
+import { setFlagsFromString } from 'v8';
 
 
 @Component({
@@ -13,18 +17,27 @@ import { MoveIn } from '../models/moveIn';
   templateUrl: './reserve-unit-form.component.html',
   styleUrls: ['./reserve-unit-form.component.scss']
 })
+
 export class ReserveUnitFormComponent implements OnInit {
 
-  submitted = false;
   unitTypes: UnitTypes;
-  LstUnitTypes: LstUnitTypes;
+  lstUnitTypes: LstUnitTypes[];
   rentalPeriod: RentalPeriod;
-  LstRentalPeriods: LstRentalPeriods;
+  LstRentalPeriods: LstRentalPeriods[];
+  objTenant: ObjTenant;
+  objTenantDetail: ObjTenantDetail;
+
   reserveUnitForm: FormGroup;
+
+
+  submitted = false;
   rate: string;
   PeriodDescription: string;
   MoveIn: Date;
-  selectedDay: string;
+  selectedDescription: string;
+  ReservationFee: number;
+
+  MonthlyRateValue: number;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -33,41 +46,73 @@ export class ReserveUnitFormComponent implements OnInit {
     private moveInService: MoveInService,
     ) {
     this.reserveUnitForm = this.formBuilder.group({
-      FirstName: ['', Validators.required],
-      LastName: ['', Validators.required],
-      Phone: ['', [Validators.required,
-      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      EmailAddress: ['', [Validators.required, Validators.email]],
-      AddressLine1: ['', Validators.required],
-      AddressLine2: [''],
-      City: ['', Validators.required],
-      State: ['', Validators.required],
-      ZIP: ['', Validators.required],
-      Description: [''],
-      MonthlyRate: [''],
-      PeriodDescription: [''],
-      ReservationFee: ['']
+      objTenant: this.formBuilder.group({
+        FirstName: ['', Validators.required],
+        LastName: ['', Validators.required],
+        Phone: ['', [Validators.required,
+        Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+        EmailAddress: ['', [Validators.required, Validators.email]],
+        AddressLine1: ['', Validators.required],
+        AddressLine2: [''],
+        City: ['', Validators.required],
+        State: ['', Validators.required],
+        ZIP: ['', Validators.required],
+      }),
+
+      lstUnitTypes: new FormArray([
+        this.initLstUnitTypes(),
+      ]),
+
+      lstRentalPeriods: new FormArray([
+        this.initPeriodDescription(),
+      ]),
+      dteMoveIn: ['']
     });
   }
 
+  initPeriodDescription() {
+    return this.formBuilder.group({
+      PeriodDescription: ['']
+    });
+  }
+
+  initLstUnitTypes() {
+    return this.formBuilder.group({
+      Description: [''],
+      MonthlyRate: [''],
+      ReservationFee: 0,
+    });
+  }
+
+  // PeriodDescription: [''],
   ngOnInit() {
     this.getData(this.unitTypes);
     this.getRentalPeriod(this.rentalPeriod);
+
   }
 
   get f() { return this.reserveUnitForm.controls; }
 
   selectChangeHandler (event: any) {
-    this.selectedDay = JSON.stringify(event.target.value);
-    console.log(this.selectedDay);
+
+    this.selectedDescription = JSON.stringify(event.target.value);
+
+    const indexValue  = event.target.value;
+   const  index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
+
+   this.MonthlyRateValue = this.lstUnitTypes[index].MonthlyRate;
+
   }
 
   getData(UnitTypes) {
     this.fetchDataService.getData(UnitTypes)
-    .subscribe(UnitTypes => {
-      this.LstUnitTypes = UnitTypes.lstUnitTypes;
-      console.log(this.LstUnitTypes.ReservationFee);
-      console.log(this.LstUnitTypes[0].MonthlyRate);
+      .subscribe(UnitTypes => {
+      this.lstUnitTypes = UnitTypes.lstUnitTypes;
+
+      if (this.lstUnitTypes[0].ReservationFee === undefined) {
+        this.lstUnitTypes[0].ReservationFee = 0;
+        this.ReservationFee =  this.lstUnitTypes[0].ReservationFee;
+      }
     });
   }
 
@@ -78,17 +123,23 @@ export class ReserveUnitFormComponent implements OnInit {
       });
   }
 
-  moveIn(MoveIn) {
-    this.moveInService.moveIn(MoveIn)
-      .subscribe(MoveIn => {
-        this.MoveIn = MoveIn.dteMoveIn;
-        console.log(this.MoveIn);
+  addTenant(objTenantDetail: any): void {
+    console.log('add tenant method is working');
+    this.addTenantService.addTenant(objTenantDetail)
+      .subscribe(result => {
+        // console.log(result);
+        // console.log('add tenant service is working');
       });
   }
 
   onSubmit() {
     this.submitted = true;
-    console.log(this.reserveUnitForm);
+    if (this.reserveUnitForm.invalid) {
+      return;
+    } else {
+      this.addTenant(this.reserveUnitForm.value);
+    }
+    console.log(this.reserveUnitForm.value);
   }
-
 }
+
