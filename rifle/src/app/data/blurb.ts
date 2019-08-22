@@ -11,7 +11,7 @@ export const viewRates = [
   {
     heading: `View Unit Rates`,
     blurb: `Whether you're looking for a short term storage contract during a move, or long term self storage to help you downsize,
-            Rifle Self Storage has the unit for you! Fill out a contact form or call (970) 230-1048 today!`,
+            Rifle Self Storage has the unit for you! Fill out a contact form or call (970) 665-9735 today!`,
   },
 ];
 
