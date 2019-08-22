@@ -28,6 +28,14 @@ export class ContactComponent implements OnInit {
   receiveremail: string;
   completeMessage: string;
   locationId: any;
+  contactsLocation1:any;
+  contactsLocation2:any;
+  contactsLocation3:any;
+  contactsLocation4:any;
+  hoursLocation1:any;
+  hoursLocation2:any;
+  hoursLocation3:any;
+  hoursLocation4:any;
 
   contactForm: FormGroup;
   submitted = false;
@@ -63,52 +71,67 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
     window.scrollTo(0, 0);
   this.receiveMessage();
-}
+  this.fetchContactDetails();
+    this.fetchHours();
+  }
 
+  public fetchContactDetails(){
+    this.contactsLocation1 = contactsLocation1;
+    this.contactsLocation2 = contactsLocation2;
+    this.contactsLocation3 = contactsLocation3;
+    this.contactsLocation4 = contactsLocation4;
+  }
+
+  public fetchHours(){
+    this.hoursLocation1 = hoursLocation1;
+    this.hoursLocation2 = hoursLocation2;
+    this.hoursLocation3 = hoursLocation3;
+    this.hoursLocation4 = hoursLocation4;
+  }
   get f() { return this.contactForm.controls; }
 
   receiveMessage() {
     this.data.currentLocation.subscribe(locationId => {
       this.locationId = locationId;
-      this.dataupdate();
+      // this.dataupdate();
     });
   }
 
-  public dataupdate() {
-    if ( this.locationId === '1' || this.locationId === 1 ) {
-      this.fetchContactDetailsLocation1();
-    } else if ( this.locationId === '2' ) {
-      this.fetchContactDetailsLocation2();
-    } else if ( this.locationId === '3' ) {
-      this.fetchContactDetailsLocation3();
-    } else if ( this.locationId === '4' ) {
-      this.fetchContactDetailsLocation4();
-    }
-  }
+  // public dataupdate() {
+  //   if ( this.locationId === '1' || this.locationId === 1 ) {
+  //     this.fetchContactDetailsLocation1();
+  //   } else if ( this.locationId === '2' ) {
+  //     this.fetchContactDetailsLocation2();
+  //   } else if ( this.locationId === '3' ) {
+  //     this.fetchContactDetailsLocation3();
+  //   } else if ( this.locationId === '4' ) {
+  //     this.fetchContactDetailsLocation4();
+  //   }
+  // }
 
-  public fetchContactDetailsLocation1() {
-    this.heading = `730 Kenton Station Location`;
-    this.contactDetails = contactsLocation1;
-    this.hoursDetails = hoursLocation1;
-  }
+  // public fetchContactDetailsLocation1() {
+  //   this.heading = `730 Kenton Station Location`;
+  //   this.contactDetails = contactsLocation1;
+  //   this.hoursDetails = hoursLocation1;
+  // }
 
-  public fetchContactDetailsLocation2() {
-    this.heading = `751 Kenton Station Location`;
-    this.contactDetails = contactsLocation2;
-    this.hoursDetails = hoursLocation2;
-  }
+  // public fetchContactDetailsLocation2() {
+  //   this.heading = `751 Kenton Station Location`;
+  //   this.contactDetails = contactsLocation2;
+  //   this.hoursDetails = hoursLocation2;
+  // }
 
-  public fetchContactDetailsLocation3() {
-    this.heading = `Augusta Location`;
-    this.contactDetails = contactsLocation3;
-    this.hoursDetails = hoursLocation3;
-  }
+  // public fetchContactDetailsLocation3() {
+  //   this.heading = `Augusta Location`;
+  //   this.contactDetails = contactsLocation3;
+  //   this.hoursDetails = hoursLocation3;
+  // }
 
-  public fetchContactDetailsLocation4() {
-    this.heading = `113 McDonald Parkway`;
-    this.contactDetails = contactsLocation4;
-    this.hoursDetails = hoursLocation4;
-  }
+  // public fetchContactDetailsLocation4() {
+  //   this.heading = `113 McDonald Parkway`;
+  //   this.contactDetails = contactsLocation4;
+  //   this.hoursDetails = hoursLocation4;
+  // }
 
 onSubmit() {
   this.submitted = true;

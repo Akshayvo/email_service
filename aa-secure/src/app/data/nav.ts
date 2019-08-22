@@ -10,25 +10,26 @@ export const navLinks = [
         path: '/location',
         sublinks: [
             {
+                id: '2',
+                label: '751 Kenton Station Location',
+                path: '/location/751-kenton-station',
+            },
+            {
                 id: '1',
                 label: '730 Kenton Station Location',
                 path: '/location/730-kenton-station',
               },
-              {
-                  id: '2',
-                  label: '751 Kenton Station Location',
-                  path: '/location/751-kenton-station',
-              },
-              {
-                  id: '3',
-                  label: 'Augusta Location',
-                  path: '/location/augusta',
-              },
-              {
-                  id: '4',
-                  label: '113 McDonald Parkway',
-                  path: '/location/113-mcDonald-parkway'
-              }
+            
+            {
+                id: '4',
+                label: '113 McDonald Parkway',
+                path: '/location/113-mcDonald-parkway'
+            },
+            {
+                id: '3',
+                label: 'Augusta Location',
+                path: '/location/augusta',
+            },
         ]
     },
     {

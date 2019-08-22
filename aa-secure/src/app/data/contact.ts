@@ -1,19 +1,19 @@
 export const contactsLocation1 = [
     {
-        id: 1,
+        id: 0,
         label: 'Address:',
         data: '730 Kenton Station Rd, Maysville, KY 41056',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
-        id: 2,
+        id: 1,
         label: 'Phone:',
         data: '(606) 584-3434',
         redirect: 'tel:6065843434',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
-        id: 3,
+        id: 2,
         label: 'Email:',
         data: 'aasecurestorage751@gmail.com',
         redirect: 'mailto:aasecurestorage751@gmail.com',
@@ -38,21 +38,21 @@ export const hoursLocation1 = [
 
 export const contactsLocation2 = [
     {
-        id: 1,
+        id: 0,
         label: 'Address:',
         data: '751 Kenton Station Rd, Maysville, KY 41056',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
 
     {
-        id: 2,
+        id: 1,
         label: 'Phone:',
         data: '(606) 584-3434',
         redirect: 'tel:6065843434',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
-        id: 3,
+        id: 2,
         label: 'Email:',
         data: 'aasecurestorage751@gmail.com',
         redirect: 'mailto:aasecurestorage751@gmail.com',
@@ -77,21 +77,21 @@ export const hoursLocation2 = [
 
 export const contactsLocation3 = [
     {
-        id: 1,
+        id: 0,
         label: 'Address:',
         data: '306 Heather Renee French Blvd Augusta, KY 41002',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
 
     {
-        id: 2,
+        id: 1,
         label: 'Phone:',
         data: '(606) 584-3434',
         redirect: 'tel:6065843434',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
-        id: 3,
+        id: 2,
         label: 'Email:',
         data: 'aasecurestorage751@gmail.com',
         redirect: 'mailto:aasecurestorage751@gmail.com',
@@ -116,21 +116,21 @@ export const hoursLocation3 = [
 
 export const contactsLocation4 = [
     {
-        id: 1,
+        id: 0,
         label: 'Address:',
         data: '113 E Mcdonald Pkwy, Maysville, KY 41056',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
 
     {
-        id: 2,
+        id: 1,
         label: 'Phone:',
         data: '(606) 584-3434',
         redirect: 'tel:6065843434',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
-        id: 3,
+        id: 2,
         label: 'Email:',
         data: 'aasecurestorage751@gmail.com',
         redirect: 'mailto:aasecurestorage751@gmail.com',

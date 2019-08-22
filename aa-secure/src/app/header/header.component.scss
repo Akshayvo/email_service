@@ -4,6 +4,12 @@ a {
   cursor: pointer;
 }
 
+
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
 .navbar {
   padding-bottom: 0;
 
@@ -104,6 +110,7 @@ a {
         left: -50px;
         text-align: -webkit-center;
       }
+      
     }
   }
 

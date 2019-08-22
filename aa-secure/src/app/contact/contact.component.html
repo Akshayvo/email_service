@@ -4,9 +4,9 @@
         <h1 class="text-center pt-5">Contact AA Secure Storage</h1>
       </div>
       <div class="contact-data p-5">
-        <div class="location-selection">
+        <!-- <div class="location-selection">
           <app-select-location (click)="receiveMessage()"></app-select-location>
-        </div>
+        </div> -->
         <div class="row">
           <div class="col-md-8">
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
@@ -78,7 +78,7 @@
           <div class="col-md-4"> 
 
 
-                <div class="for-mall">
+                <!-- <div class="for-mall">
                   <div class="map-responsive">
                     <span *ngIf="locationId == 1">
                       <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HOqufTugcjwzvVlPgxO1czAdJsk_H0Qf" width="100%" height="230" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
@@ -96,7 +96,7 @@
                   <h5 class="pt-3"> {{heading}} </h5>
                   <div class="py-2">
                     <span *ngFor="let contact of contactDetails">
-                      <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                      <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 || contact?.id === 4 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                       <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                     </span>
                   </div>
@@ -105,7 +105,67 @@
                       <b>{{hour.label}}</b>{{hour.data}}<br>
                     </span>              
                   </div>
-                </div>
+                </div> -->
+                <div class="for-mall ">
+                  <h2> 751 Kenton Station Location</h2>
+                   <div class="py-2">
+                       <span *ngFor="let contact of contactsLocation2">
+                         <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                         <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                       </span>
+                   </div>
+                   
+                  
+                   <!--  <span><b> Office: </b></span> <br> -->
+                   <span *ngFor="let hour of hoursLocation2">
+                     <b>{{hour.label}}</b>{{hour.data}}<br>
+                   </span>  
+                 </div>
+                <div class="for-village pt-5">
+                  <h2> 730 Kenton Station Location</h2>
+                   <div class="py-2">
+                       <span *ngFor="let contact of contactsLocation1">
+                         <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                         <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                       </span>
+                   </div>
+                   
+                  
+                   <!--  <span><b> Office: </b></span> <br> -->
+                   <span *ngFor="let hour of hoursLocation1">
+                     <b>{{hour.label}}</b>{{hour.data}}<br>
+                   </span>  
+                 </div>
+                 <div class="for-mall pt-5">
+                  <h2> 113 McDonald Parkway</h2>
+                   <div class="py-2">
+                       <span *ngFor="let contact of contactsLocation4">
+                         <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                         <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                       </span>
+                   </div>
+                   
+                  
+                   <!--  <span><b> Office: </b></span> <br> -->
+                   <span *ngFor="let hour of hoursLocation4">
+                     <b>{{hour.label}}</b>{{hour.data}}<br>
+                   </span>  
+                 </div>
+                 <div class="for-village pt-5">
+                  <h2> Augusta Location</h2>
+                   <div class="py-2">
+                       <span *ngFor="let contact of contactsLocation3">
+                         <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                         <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                       </span>
+                   </div>
+                   
+                  
+                   <!--  <span><b> Office: </b></span> <br> -->
+                   <span *ngFor="let hour of hoursLocation3">
+                     <b>{{hour.label}}</b>{{hour.data}}<br>
+                   </span>  
+                 </div>
           </div>
       </div>
   </div>
