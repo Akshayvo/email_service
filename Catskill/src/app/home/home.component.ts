@@ -7,7 +7,6 @@ import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { FetchDataService } from '../services/fetch-data.service';
 import { AuthService } from '../services/auth.service';
-import { LstPayTypes } from '../models/payment';
 import { TenantInfoService } from '../services/tenant-info.service';
 
 
@@ -22,7 +21,6 @@ export class HomeComponent implements OnInit {
 
   contactDetails: any;
   hours: any;
-  lstPayTypes: LstPayTypes[];
   featuresHead: any;
   featuresList: any;
   aboutUs: any;
@@ -81,7 +79,6 @@ data = {
     this.fetchFeature();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
-    this.getPayMethods(this.lstPayTypes);
     // this.getTokenValue();
 
 
@@ -129,14 +126,6 @@ data = {
   //   );
   // }
 
-  getPayMethods(lstPayTypes: any): void {
-    this.fetchDataService.getPayMethods(lstPayTypes)
-    .subscribe(
-      result => {
-        console.log(result);
-      }
-    );
-  }
 
 
   auth(data: any): void {

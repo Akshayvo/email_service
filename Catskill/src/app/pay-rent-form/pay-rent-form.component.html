@@ -1,2 +1,19 @@
 <form [formGroup]="payRentForm" (ngSubmit)="onSubmit()">
+  <div formArrayName="lstPayTypes">
+    <div *ngFor="let item of payRentForm.controls.lstPayTypes.controls; let i = index">
+      <div [formGroupName]="i">
+          <label for="lstPayTypes">Card Type*</label>&nbsp;
+          <select formControlName="PayTypeDescription" [id]="lstPayTypes?.PayTypeDescription" 
+          (change)="selectChangeHandler($event)">
+              <option *ngFor="let lstPayTypes of lstPayTypes"
+              [value]="lstPayTypes?.PayTypeDescription"
+              >
+              {{lstPayTypes.PayTypeDescription}}
+              </option>
+          </select>
+      </div>
+    </div>
+  </div>
 </form>
+
+<pre>{{ payRentForm.value | json }}</pre>
