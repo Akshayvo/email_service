@@ -28,7 +28,7 @@ export const featuresList = [
 export const feature = [
     {
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Cornwall_Storage_Box/convenient-location.svg',
-        label: 'Located',
+        label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
@@ -38,7 +38,7 @@ export const feature = [
     },
     {
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Cornwall_Storage_Box/24-hours.svg',
-        label: 'ONLINE BILL PAYMENT',
+        label: '24-Hour Access',
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
