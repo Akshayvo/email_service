@@ -27,6 +27,10 @@ export class ContactComponent implements OnInit {
   completeMessage: string;
   locationId: any;
   subject: string;
+  contactsLocation1:any;
+  contactsLocation3:any;
+  hoursLocation1:any;
+  hoursLocation3:any;
 
   contactForm: FormGroup;
   submitted = false;
@@ -61,8 +65,18 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
     window.scrollTo(0, 0);
   this.receiveMessage();
+  this.fetchContactDetails();
+  this.fetchHours();
 }
 
+public fetchContactDetails(){
+  this.contactsLocation1 = contactsLocation1;
+  this.contactsLocation3 = contactsLocation3;
+}
+public fetchHours(){
+  this.hoursLocation1 = hoursLocation1;
+  this.hoursLocation3 = hoursLocation3;
+}
   get f() { return this.contactForm.controls; }
 
   receiveMessage() {
