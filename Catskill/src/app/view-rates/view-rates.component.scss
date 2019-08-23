@@ -54,15 +54,9 @@ table {
   }
 
   .scroll-wrapper {
-    -webkit-overflow-scrolling: touch;
-    // overflow: auto;
+    width: 100%;
     display: flex;
-
-    // iframe {
-    //   width: 100%;
-    //   overflow: auto;
-    //   min-width: 100%;
-    // }
+    flex-direction: column;
   }
 }
 

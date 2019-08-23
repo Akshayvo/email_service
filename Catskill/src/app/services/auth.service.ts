@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {tap} from 'rxjs/internal/operators';
-import { Auth } from '../models/auth';
+import { Auth, ForgotPassword } from '../models/auth';
 
 
 const httpOptions = {
@@ -20,11 +20,17 @@ export class AuthService {
 
   private url = `https://simapi.syrasoft.com/10.1.0.999/api/auth/signin`;
 
+  private forgotPasswordUrl = `https://simapi.syrasoft.com/10.1.0.999/api/auth/verifyemail`;
+
 
   constructor(private http: HttpClient) {
   }
 
   auth(auth: Auth): Observable<Auth> {
     return this.http.post<Auth>(this.url, auth, httpOptions);
+  }
+
+  forgotPassword(forgotPassword: ForgotPassword) {
+    return this.http.post<ForgotPassword>(this.forgotPasswordUrl, forgotPassword, httpOptions);
   }
 }

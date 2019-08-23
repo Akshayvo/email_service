@@ -101,7 +101,6 @@ export class ReserveUnitFormComponent implements OnInit {
    const  index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
 
    this.MonthlyRateValue = this.lstUnitTypes[index].MonthlyRate;
-
   }
 
   getData(UnitTypes) {

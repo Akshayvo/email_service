@@ -5,3 +5,11 @@ export class Auth {
     this.strTenantToken = strTenantToken;
   }
 }
+
+export class ForgotPassword {
+  strEmailID: string;
+
+  constructor(strEmailID: string) {
+    this.strEmailID = strEmailID;
+  }
+}

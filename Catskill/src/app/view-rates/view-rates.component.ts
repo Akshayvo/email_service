@@ -19,6 +19,8 @@ export class ViewRatesComponent implements OnInit {
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
 
+  openComponent = false;
+
   constructor(
     private titleService: Title,
     private meta: Meta,
@@ -43,6 +45,12 @@ export class ViewRatesComponent implements OnInit {
   }
   public fetchViewRates() {
     this.viewRates = viewRates;
+  }
+
+  handleClick(event: Event) {
+    console.log(event);
+
+    this.openComponent = true;
   }
 
   getData(UnitTypes) {

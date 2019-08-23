@@ -46,7 +46,7 @@ export class FetchDataService {
     return this.http.get<RentalPeriod>(this.rentalPeriodUrl, httpOptions);
   }
 
-  getPayMethods(lstPayTypes: LstPayTypes): Observable<LstPayTypes> {
-    return this.http.get<LstPayTypes>(this.payMethodUrl, httpOptions);
+  getPayMethods(PayTypes: PayTypes): Observable<PayTypes> {
+    return this.http.get<PayTypes>(this.payMethodUrl, httpOptions);
   }
 }

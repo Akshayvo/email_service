@@ -51,8 +51,10 @@ export class TenantInfo {
 
 export class Tenant {
   Balance: number;
+  Name: string;
 
-  constructor(Balance: number) {
+  constructor(Balance: number, Name: string) {
     this.Balance = Balance;
+    this.Name = Name;
   }
 }

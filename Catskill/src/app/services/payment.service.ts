@@ -23,7 +23,7 @@ export class PaymentService {
 
   constructor(private http: HttpClient) { }
 
-  getPayment(lstPayTypes: LstPayTypes): Observable<LstPayTypes> {
-    return this.http.post<LstPayTypes>(this.paymentUrl, LstPayTypes, httpOptions);
+  getPayment(lstPayTypes: LstPayTypes[]): Observable<LstPayTypes[]> {
+    return this.http.post<LstPayTypes[]>(this.paymentUrl, lstPayTypes, httpOptions);
   }
 }

@@ -15,6 +15,13 @@ export class LoginComponent implements OnInit {
   submitted = false;
   credentialsInvalid = false;
 
+  allowedToshow = false;
+
+  showForgotPassword = false;
+  showPayRent = false;
+
+  showLoader = false;
+
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
@@ -32,12 +39,22 @@ export class LoginComponent implements OnInit {
 
   get f() { return this.loginForm.controls; }
 
+  handleForgotPassword() {
+    this.showForgotPassword = true;
+  }
+
+  handleShowLoader() {
+    this.showLoader = true;
+  }
+
   auth(data: any): void {
     this.authService.auth(data)
         .subscribe(
           auth => {
+            this.showPayRent = true;
           }, (err) => {
             this.credentialsInvalid = true;
+            this.showLoader = false;
           }
         );
   }
@@ -49,6 +66,8 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.invalid) {
       return;
     } else {
+
+      this.allowedToshow = true;
       this.auth(this.loginForm.value);
     }
   }

@@ -26,6 +26,7 @@ import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.
 import { LoginComponent } from './login/login.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
+import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
     ReserveUnitFormComponent,
     LoginComponent,
     ForgotPasswordComponent,
-    PayRentFormComponent
+    PayRentFormComponent,
+    ConfirmationDataComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

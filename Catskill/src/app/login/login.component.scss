@@ -1,0 +1,30 @@
+
+@import "../../styles.scss";
+
+.button-as-a-link {
+  button {
+    background: none  !important;
+    border: none;
+    padding: 0 !important;
+    font-family: arial, sans-serif;
+    color: $primary;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid $primary;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

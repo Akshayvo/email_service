@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 
 import { TenantInfo, Tenant} from '../models/tenant';
-import { LstPayTypes } from '../models/payment';
+import { LstPayTypes, PayTypes } from '../models/payment';
 
 
 import { TenantInfoService } from '../services/tenant-info.service';
@@ -18,8 +18,11 @@ export class PayRentFormComponent implements OnInit {
   tenantInfo: TenantInfo;
   tenant: Tenant;
   payRentForm: FormGroup;
+  payTypes: PayTypes;
   lstPayTypes: LstPayTypes[];
   selectedDescription: string;
+  result: any;
+  balance: number;
 
   submitted = false;
 
@@ -33,12 +36,23 @@ export class PayRentFormComponent implements OnInit {
       lstPayTypes: new FormArray([
         this.initLstPayTypes(),
       ]),
+
+      objPayment: this.formBuilder.group({
+        CCAccountNumber: ['', Validators.required],
+        CCAccountName: [''],
+        expirationDate: [''],
+        CCAccountCVV2: [''],
+        CCAccountBillingAddress: [''],
+        CCAccountZIP: [''],
+        SignUpForAutoPay: false,
+        PaymentAmount: ['', Validators.required]
+      }),
     });
    }
 
   ngOnInit() {
     this.getTenantInfo(this.tenant);
-    this.getPayMethods(this.lstPayTypes);
+    this.getPayMethods(this.payTypes);
   }
 
   get f() { return this.payRentForm.controls; }
@@ -55,22 +69,20 @@ export class PayRentFormComponent implements OnInit {
 
   }
 
-  getPayMethods(lstPayTypes: any): void {
-    this.fetchDataService.getPayMethods(lstPayTypes)
-    .subscribe(
-      result => {
-        this.LstPayTypes = result;
+  getPayMethods(PayTypes) {
+    this.fetchDataService.getPayMethods(PayTypes)
+    .subscribe( PayTypes => {
+        this.lstPayTypes = PayTypes.lstPayTypes;
       }
     );
   }
 
-  getTenantInfo(tenant: any) {
+  getTenantInfo(tenant) {
     this.tenantInfoService.getTenantInfo(tenant)
-      .subscribe( tenantInfo => {
-        console.log(tenantInfo);
-        // console.log(tenant.Balance);
-        // const BalanceValue = this.tenant.Balance;
-        // console.log(BalanceValue);
+      .subscribe( tenant => {
+        console.log('tenant info', tenant);
+        this.balance = tenant.Balance;
+        
       });
   }
 
@@ -79,7 +91,6 @@ export class PayRentFormComponent implements OnInit {
     if (this.payRentForm.invalid) {
       return;
     } else {
-      // this.addTenant(this.payRentForm.value);
     }
     console.log(this.payRentForm.value);
   }

@@ -1,5 +1,12 @@
 <div>
-    
+        <ng-template #other>
+<app-pay-rent-form *ngIf="showPayRent; else content"></app-pay-rent-form>
+</ng-template>
+
+<div [class.loader]="showLoader"  *ngIf="!showPayRent && allowedToshow">
+    </div>
+
+<ng-template #content>
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
             <div [hidden]="" *ngIf="submitted && credentialsInvalid" class="alert alert-success alert-danger fade show">
@@ -32,14 +39,21 @@
               </div>
           </div>
         </div>
-        <!-- <a href="/forgot-password" class="pb-5" >Forgot Password</a> -->
+
+   
+
       <div class="form-group">
-          <button type="submit" class="btn btn-primary"
+          <button type="submit" class="btn btn-primary" (click)="handleShowLoader()"
           >Login</button>
       </div>
     </form>
-    <app-pay-rent-form></app-pay-rent-form>
 
+    <div class="button-as-a-link">
+            <button (click)="handleForgotPassword()">Forgot Password</button>
+        </div>
+    </ng-template>
+
+    <app-forgot-password *ngIf="showForgotPassword; else other"></app-forgot-password>
 </div>    
 
 <!-- <pre>{{loginForm.value | json }}</pre>   -->
