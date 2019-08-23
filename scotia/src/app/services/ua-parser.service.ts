@@ -26,7 +26,7 @@ export class UaParserService {
           this.typeOfImages = (major && major < 32) ? 'JPG' : 'WEBP';
           break;
         case 'Firefox':
-            this.typeOfImages = (major && major < 65) ? 'JPG' : 'WEBP';
+          this.typeOfImages = (major && major < 65) ? 'JPG' : 'WEBP';
           break;
         default:
           this.typeOfImages = 'JPG';
