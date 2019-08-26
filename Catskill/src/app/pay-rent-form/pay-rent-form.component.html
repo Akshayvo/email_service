@@ -1,7 +1,7 @@
 <div class="payRent">
   <h2 class="pb-1">Payment</h2>
   <form [formGroup]="payRentForm" (ngSubmit)="onSubmit()" class="pt-3">
-    <div formArrayName="lstPayTypes">
+    <!-- <div formArrayName="lstPayTypes">
       <div *ngFor="let item of payRentForm.controls.lstPayTypes.controls; let i = index">
         <div [formGroupName]="i">
             <label for="lstPayTypes">Card Type*</label>&nbsp;
@@ -17,9 +17,27 @@
             <input type="hidden" formControlName="PayTypeID" />
         </div>
       </div>  
-    </div>
-  
-    <div formGroupName="objPayment" class="">
+    </div> -->
+
+      <div formGroupName="objPayment" class="">
+        <div formGroupName="PayType">
+          <div  class="form-group">
+            <label for="lstPayTypes">Card Type*</label>&nbsp;
+            <select formControlName="PayTypeDescription" [id]="lstPayTypes?.PayTypeDescription" 
+            (change)="selectChangeHandler($event)">
+                <option *ngFor="let lstPayTypes of lstPayTypes"
+                [value]="lstPayTypes?.PayTypeDescription"
+                >
+                {{lstPayTypes.PayTypeDescription}}   
+                
+                </option>
+            </select>
+          </div>
+          <div class="form-group">
+              <input type="hidden" formControlName="PayTypeID" />
+          </div>
+        </div>
+    
       <div class="form-group display">
         <label>Amount*</label>
         <div class="">
@@ -92,7 +110,6 @@
               </small>
           </div>
         </div>
-  
     </div>
   
   

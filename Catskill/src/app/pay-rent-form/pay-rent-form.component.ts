@@ -39,9 +39,6 @@ export class PayRentFormComponent implements OnInit {
     private paymentService: PaymentService,
   ) {
     this.payRentForm = this.formBuilder.group({
-      lstPayTypes: new FormArray([
-        this.initLstPayTypes(),
-      ]),
 
       objPayment: this.formBuilder.group({
         CCAccountNumber: ['', Validators.required],
@@ -52,6 +49,10 @@ export class PayRentFormComponent implements OnInit {
         CCAccountZIP: [''],
         SignUpForAutoPay: false,
         PaymentAmount: ['', Validators.required],
+        PayType: this.formBuilder.group({
+          PayTypeDescription: [''],
+          PayTypeID: [''],
+        })
       }),
     });
    }
@@ -62,13 +63,6 @@ export class PayRentFormComponent implements OnInit {
   }
 
   get f() { return this.payRentForm.controls; }
-
-  initLstPayTypes() {
-    return this.formBuilder.group({
-      PayTypeDescription: [''],
-      PayTypeID: ['']
-    });
-  }
 
   selectChangeHandler (event: any) {
     this.selectedDescription = JSON.stringify(event.target.value);
@@ -81,12 +75,11 @@ export class PayRentFormComponent implements OnInit {
 
    console.log('pay type id ', this.PayTypeIDValue);
 
-   this.payRentForm.patchValue ({
-       lstPayTypes: ([{
-         PayTypeID: this.PayTypeIDValue
-       }])
-     }
-   );
+  this.payRentForm.patchValue({
+    PayType: {
+      PayTypeID: this.PayTypeIDValue,
+    }
+  });
   }
 
   handleChange(event: any) {
