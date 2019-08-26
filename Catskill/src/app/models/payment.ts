@@ -14,6 +14,7 @@ export class Payment {
   CCAccountZIP: string;
   SignUpForAutoPay: boolean;
   PaymentAmount: number;
+  // payTypes: PayTypes;
 
   constructor(
     CCAccountNumber: string,
@@ -23,6 +24,7 @@ export class Payment {
     CCAccountZIP: string,
     SignUpForAutoPay: boolean,
     PaymentAmount: number,
+    // payTypes: PayTypes
   ) {
     this.CCAccountNumber = CCAccountNumber;
     this.CCAccountName = CCAccountName;
@@ -31,6 +33,7 @@ export class Payment {
     this.CCAccountZIP = CCAccountZIP;
     this.SignUpForAutoPay = SignUpForAutoPay;
     this.PaymentAmount = PaymentAmount;
+    // this.payTypes = payTypes;
   }
  }
 

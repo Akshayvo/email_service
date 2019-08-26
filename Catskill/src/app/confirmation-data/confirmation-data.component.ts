@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-confirmation-data',
@@ -7,9 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfirmationDataComponent implements OnInit {
 
-  constructor() { }
+
+@Input()  reserveUnitForm: FormGroup;
+
+@Input() submitted = false;
+
+@Output() childEvent = new EventEmitter();
+
+constructor() { }
+
+
+addTenant(event: any) {
+  this.childEvent.emit();
+}
+
 
   ngOnInit() {
+  }
+
+  onSubmit() {
+    this.submitted = true;
+    if (this.reserveUnitForm.invalid) {
+      return;
+    } else {
+      this.addTenant(this.reserveUnitForm.value);
+    }
+    console.log(this.reserveUnitForm.value);
   }
 
 }

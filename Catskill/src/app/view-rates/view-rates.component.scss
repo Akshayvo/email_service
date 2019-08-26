@@ -1,9 +1,15 @@
 @import "../../styles.scss";
 
 
+.display-content {
+  display: contents;
+}
+
 //table style
 
 table {
+  width: -webkit-fill-available;
+
   thead {
     background: $dark;
     th {

@@ -27,6 +27,10 @@ export class ReserveUnitFormComponent implements OnInit {
   objTenant: ObjTenant;
   objTenantDetail: ObjTenantDetail;
 
+  successMessage = false;
+
+  count = 0;
+
   reserveUnitForm: FormGroup;
 
 
@@ -36,6 +40,7 @@ export class ReserveUnitFormComponent implements OnInit {
   MoveIn: Date;
   selectedDescription: string;
   ReservationFee: number;
+  ReservationFeeValue: number;
 
   MonthlyRateValue: number;
 
@@ -80,7 +85,7 @@ export class ReserveUnitFormComponent implements OnInit {
     return this.formBuilder.group({
       Description: [''],
       MonthlyRate: [''],
-      ReservationFee: 0,
+      ReservationFee: [''],
     });
   }
 
@@ -88,10 +93,27 @@ export class ReserveUnitFormComponent implements OnInit {
   ngOnInit() {
     this.getData(this.unitTypes);
     this.getRentalPeriod(this.rentalPeriod);
-
   }
 
   get f() { return this.reserveUnitForm.controls; }
+
+  handleClick() {
+    this.submitted = true;
+    if (this.reserveUnitForm.invalid) {
+      return;
+    } else {
+      if (this.count <= 1 ) {
+        this.count = this.count + 1;
+      console.log(this.count);
+      }
+    }
+  }
+
+  handlePrevious() {
+    if (this.count >= 0) {
+      this.count = this.count - 1;
+    }
+  }
 
   selectChangeHandler (event: any) {
 
@@ -101,17 +123,22 @@ export class ReserveUnitFormComponent implements OnInit {
    const  index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
 
    this.MonthlyRateValue = this.lstUnitTypes[index].MonthlyRate;
+
+   console.log(this.lstUnitTypes[0].Description);
+
+    this.reserveUnitForm.patchValue({
+      lstUnitTypes: ([{
+        MonthlyRate: this.MonthlyRateValue,
+        ReservationFee: 0.00,
+      }
+      ])
+    });
   }
 
   getData(UnitTypes) {
     this.fetchDataService.getData(UnitTypes)
       .subscribe(UnitTypes => {
       this.lstUnitTypes = UnitTypes.lstUnitTypes;
-
-      if (this.lstUnitTypes[0].ReservationFee === undefined) {
-        this.lstUnitTypes[0].ReservationFee = 0;
-        this.ReservationFee =  this.lstUnitTypes[0].ReservationFee;
-      }
     });
   }
 
@@ -126,8 +153,7 @@ export class ReserveUnitFormComponent implements OnInit {
     console.log('add tenant method is working');
     this.addTenantService.addTenant(objTenantDetail)
       .subscribe(result => {
-        // console.log(result);
-        // console.log('add tenant service is working');
+      this.successMessage = true;
       });
   }
 

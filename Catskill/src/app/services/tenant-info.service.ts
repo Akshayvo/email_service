@@ -22,8 +22,8 @@ export class TenantInfoService {
 
   constructor(private http: HttpClient) { }
 
-  getTenantInfo(tenant: Tenant): Observable<Tenant> {
-    return this.http.get<Tenant>(this.url,  httpOptions);
+  getTenantInfo(tenant: any): Observable<any> {
+    return this.http.get<any>(this.url,  httpOptions);
   }
 
   // getToken() {

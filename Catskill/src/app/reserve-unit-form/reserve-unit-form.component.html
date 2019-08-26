@@ -1,156 +1,160 @@
-<form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()">
-    <div formGroupName="objTenant">
-        <h2 class="pb-3">Tenant Data</h2>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 form-group">
-                  <label>First Name*</label>
-                  <input type="text" formControlName="FirstName" class="form-control" placeholder="Enter First Name"
-                  [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.FirstName.errors }"
-                  />
-                  <div *ngIf="submitted && f.objTenant.controls.FirstName.errors" class="invalid-feedback">
-                      <small class="form-text text-muted" *ngIf="f.objTenant.controls.FirstName.errors.required">Please fill out this field</small>
-                  </div>
-          </div>
-         <div class="col-lg-4 col-md-6 form-group">
-                  <label>Last Name*</label>
-                  <input type="text" formControlName="LastName" class="form-control" placeholder="Enter Last Name"
-                  [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.LastName.errors }"/>
-                  <div *ngIf="submitted && f.objTenant.controls.LastName.errors" class="invalid-feedback">
-                      <small class="form-text text-muted" *ngIf="f.objTenant.controls.LastName.errors.required">Please fill out this field</small>
-                  </div>
-          </div>
-           <div class="col-lg-4 col-md-6 form-group">
-                  <label>Phone Number*</label>
-                  <input type="tel" formControlName="Phone" placeholder="Enter Phone Number" class="form-control" 
-                  [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.Phone.errors }" />
-                  <div *ngIf="submitted && f.objTenant.controls.Phone.errors" class="invalid-feedback">
-                      <small class="form-text text-muted" *ngIf="f.objTenant.controls.Phone.errors.required">Please fill out this field</small>
-                  </div>
-                  <div *ngIf="f.objTenant.controls.Phone.errors" >
-                      <small class="form-text text-muted" *ngIf="f.objTenant.controls.Phone.errors.pattern">Please enter valid number</small>
-                  </div>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 form-group">
-                    <label>Email Address*</label>
-                    <input type="text" formControlName="EmailAddress" placeholder="Enter Email" class="form-control" 
-                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.EmailAddress.errors }" />
-                    <div *ngIf="submitted && f.objTenant.controls.EmailAddress.errors" class="invalid-feedback">
-                        <small class="form-text text-muted" *ngIf="f.objTenant.controls.EmailAddress.errors.required">Please fill out this field</small>                                  
-                    </div>
-                    <div *ngIf="f.objTenant.controls.EmailAddress.errors" >
-                        <small class="form-text text-muted" *ngIf="f.objTenant.controls.EmailAddress.errors.email">Please enter a valid email address</small>
-                    </div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-                      <label>Address Line 1*</label>
-                      <input type="text" formControlName="AddressLine1" class="form-control" placeholder="Enter Address Line 1"
-                      [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AddressLine1.errors }"/>
-                      <div *ngIf="submitted && f.objTenant.controls.AddressLine1.errors" class="invalid-feedback">
-                          <small class="form-text text-muted" *ngIf="f.objTenant.controls.AddressLine1.errors.required">Please fill out this field</small>
-                      </div>
-              </div>
-              <div class="col-lg-4 col-md-6 form-group">
-                          <label>Address Line 2</label>
-                          <input type="text" formControlName="AddressLine2" class="form-control" 
-                          placeholder="Enter Address Line 2"
-                          />
-                  </div>
-          </div>
-          <div class="row">
-               <div class="col-lg-4 col-md-6 form-group">
-                  <label>City*</label>
-                  <input type="text" formControlName="City" class="form-control" placeholder="Enter City"
-                  [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.City.errors }"/>
-                  <div *ngIf="submitted && f.objTenant.controls.City.errors" class="invalid-feedback">
-                      <small class="form-text text-muted" *ngIf="f.objTenant.controls.City.errors.required">Please fill out this field</small>
-                  </div>
-              </div>
-         <div class="col-lg-4 col-md-6 form-group">
-                      <label>State/Province*</label>
-                      <input type="text" formControlName="State" class="form-control" placeholder="Enter State/Province"
-                      [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }"/>
-                      <div *ngIf="submitted && f.objTenant.controls.State.errors" class="invalid-feedback">
-                          <small class="form-text text-muted" *ngIf="f.objTenant.controls.State.errors.required">Please fill out this field</small>
-                      </div>
-                  </div>
+<div>
+    <div class="pb-4" *ngIf="successMessage; else other_content">
+        Thank you for showing interest in Caskill Self Storage!
+    </div>
+    <ng-template #other_content>
+     <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
+         <div *ngIf="count == 0 ">
+             <div formGroupName="objTenant">
+                 <h2 class="pb-3">Tenant Data</h2>
+         
+                 <div class="row">
                    <div class="col-lg-4 col-md-6 form-group">
-                          <label>Zip/Postal Code*</label>
-                          <input type="text" formControlName="ZIP" class="form-control" placeholder="Enter Zip/Postal Code"
-                          [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.ZIP.errors }"/>
-                          <div *ngIf="submitted && f.objTenant.controls.ZIP.errors" class="invalid-feedback">
-                              <small class="form-text text-muted" *ngIf="f.objTenant.controls.ZIP.errors.required">Please fill out this field</small>
-                          </div>
-                      </div> 
-          </div>
-        </div>
-        <div formArrayName="lstUnitTypes">
-            <h2 class="py-3">Unit</h2>
-            <div *ngFor="let item of reserveUnitForm.controls.lstUnitTypes.controls; let i = index">
-                <div class="row" [formGroupName]="i">
-                    <div class="col-md-4">
-                        <label for="lstUnitTypes">Unit Type*</label>&nbsp;
-                        <select formControlName="Description" [id]="lstUnitTypes?.Description" 
-                        (change)="selectChangeHandler($event)">
-                            <option *ngFor="let lstUnitTypes of lstUnitTypes"
-                            [value]="lstUnitTypes?.Description"
-                            >
-                            {{lstUnitTypes.Description}}
-                            </option>
-                        </select>
-                    </div>
-                    <div class="col-md-4 form-group">
-                        <label>Rate</label>&nbsp;
-                        <!-- <div *ngFor="let lstUnitTypes of lstUnitTypes" >
-                            <div *ngIf="lstUnitTypes?.MonthlyRate === MonthlyRateValue">
-                                <input type="hidden" formControlName="MonthlyRate" class="form-control" [value]="lstUnitTypes?.MonthlyRate">
-                                {{lstUnitTypes.MonthlyRate}}
-                            </div>
-                        </div> -->
-                        <input type="hidden" formControlName="MonthlyRate" [value]="MonthlyRateValue"
-                        >
-                        ${{MonthlyRateValue}}
-                    </div>
-                    <div class="form-group col-md-4">
-                    <label>Reservation Charges</label>&nbsp;
-                    <input type="hidden" formControlName="ReservationFee" value="0">
-                    ${{ReservationFee}}
-                </div> 
-                </div>
+                           <label>First Name*</label>
+                           <input type="text" formControlName="FirstName" class="form-control" placeholder="Enter First Name"
+                           [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.FirstName.errors }"
+                           />
+                           <div *ngIf="submitted && f.objTenant.controls.FirstName.errors" class="invalid-feedback">
+                               <small class="form-text text-muted" *ngIf="f.objTenant.controls.FirstName.errors.required">Please fill out this field</small>
+                           </div>
+                   </div>
+                  <div class="col-lg-4 col-md-6 form-group">
+                           <label>Last Name*</label>
+                           <input type="text" formControlName="LastName" class="form-control" placeholder="Enter Last Name"
+                           [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.LastName.errors }"/>
+                           <div *ngIf="submitted && f.objTenant.controls.LastName.errors" class="invalid-feedback">
+                               <small class="form-text text-muted" *ngIf="f.objTenant.controls.LastName.errors.required">Please fill out this field</small>
+                           </div>
+                   </div>
+                    <div class="col-lg-4 col-md-6 form-group">
+                           <label>Phone Number*</label>
+                           <input type="tel" formControlName="Phone" placeholder="Enter Phone Number" class="form-control" 
+                           [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.Phone.errors }" />
+                           <div *ngIf="submitted && f.objTenant.controls.Phone.errors" class="invalid-feedback">
+                               <small class="form-text text-muted" *ngIf="f.objTenant.controls.Phone.errors.required">Please fill out this field</small>
+                           </div>
+                           <div *ngIf="f.objTenant.controls.Phone.errors" >
+                               <small class="form-text text-muted" *ngIf="f.objTenant.controls.Phone.errors.pattern">Please enter valid number</small>
+                           </div>
+                   </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-lg-4 col-md-6 form-group">
+                             <label>Email Address*</label>
+                             <input type="text" formControlName="EmailAddress" placeholder="Enter Email" class="form-control" 
+                             [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.EmailAddress.errors }" />
+                             <div *ngIf="submitted && f.objTenant.controls.EmailAddress.errors" class="invalid-feedback">
+                                 <small class="form-text text-muted" *ngIf="f.objTenant.controls.EmailAddress.errors.required">Please fill out this field</small>                                  
+                             </div>
+                             <div *ngIf="f.objTenant.controls.EmailAddress.errors" >
+                                 <small class="form-text text-muted" *ngIf="f.objTenant.controls.EmailAddress.errors.email">Please enter a valid email address</small>
+                             </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 form-group">
+                               <label>Address Line 1*</label>
+                               <input type="text" formControlName="AddressLine1" class="form-control" placeholder="Enter Address Line 1"
+                               [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AddressLine1.errors }"/>
+                               <div *ngIf="submitted && f.objTenant.controls.AddressLine1.errors" class="invalid-feedback">
+                                   <small class="form-text text-muted" *ngIf="f.objTenant.controls.AddressLine1.errors.required">Please fill out this field</small>
+                               </div>
+                       </div>
+                       <div class="col-lg-4 col-md-6 form-group">
+                                   <label>Address Line 2</label>
+                                   <input type="text" formControlName="AddressLine2" class="form-control" 
+                                   placeholder="Enter Address Line 2"
+                                   />
+                           </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-lg-4 col-md-6 form-group">
+                           <label>City*</label>
+                           <input type="text" formControlName="City" class="form-control" placeholder="Enter City"
+                           [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.City.errors }"/>
+                           <div *ngIf="submitted && f.objTenant.controls.City.errors" class="invalid-feedback">
+                               <small class="form-text text-muted" *ngIf="f.objTenant.controls.City.errors.required">Please fill out this field</small>
+                           </div>
+                       </div>
+                  <div class="col-lg-4 col-md-6 form-group">
+                               <label>State/Province*</label>
+                               <input type="text" formControlName="State" class="form-control" placeholder="Enter State/Province"
+                               [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }"/>
+                               <div *ngIf="submitted && f.objTenant.controls.State.errors" class="invalid-feedback">
+                                   <small class="form-text text-muted" *ngIf="f.objTenant.controls.State.errors.required">Please fill out this field</small>
+                               </div>
+                           </div>
+                            <div class="col-lg-4 col-md-6 form-group">
+                                   <label>Zip/Postal Code*</label>
+                                   <input type="text" formControlName="ZIP" class="form-control" placeholder="Enter Zip/Postal Code"
+                                   [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.ZIP.errors }"/>
+                                   <div *ngIf="submitted && f.objTenant.controls.ZIP.errors" class="invalid-feedback">
+                                       <small class="form-text text-muted" *ngIf="f.objTenant.controls.ZIP.errors.required">Please fill out this field</small>
+                                   </div>
+                               </div> 
+                   </div>
+                 </div>
+                 <div formArrayName="lstUnitTypes">
+                     <h2 class="py-3">Unit</h2>
+                     <div *ngFor="let item of reserveUnitForm.controls.lstUnitTypes.controls; let i = index">
+                         <div class="row" [formGroupName]="i">
+                             <div class="col-md-4">
+                                 <label for="lstUnitTypes">Unit Type*</label>&nbsp;
+                                 <select formControlName="Description" [id]="lstUnitTypes?.Description" 
+                                 (change)="selectChangeHandler($event)">
+                                     <option *ngFor="let lstUnitTypes of lstUnitTypes"
+                                     [value]="lstUnitTypes?.Description"
+                                     >
+                                     {{lstUnitTypes.Description}}
+                                     </option>
+                                 </select>
+                             </div>
+                             <div class="col-md-4 form-group">
+                                 <label>Rate</label>&nbsp;
+                                 <input type="hidden" formControlName="MonthlyRate" [value]="MonthlyRateValue"
+                                 >
+                                 ${{MonthlyRateValue}}
+                             </div>
+                             <div class="form-group col-md-4">
+                             <label>Reservation Charges</label>&nbsp;
+                             <input type="hidden" formControlName="ReservationFee" [value]="0">
+                             $0.00
+                         </div> 
+                         </div>
+                     </div>
+                 </div>
+         
+                 <div class="row pb-5">
+                     <div class="col-6 form-group">
+                         <label>Move In Date</label>&nbsp;
+                         <input type="date" formControlName="dteMoveIn" />
+                     </div>
+                     <div formArrayName="lstRentalPeriods" class="col-md-4">
+                         <div *ngFor="let itemRental of reserveUnitForm.controls.lstUnitTypes.controls; let i = index">
+                             <div  [formGroupName]="i">
+                                 <label for="PeriodDescription">Period*</label>&nbsp;
+                                 <select formControlName="PeriodDescription" [id]="LstRentalPeriods?.PeriodDescription">
+                                     <option *ngFor="let LstRentalPeriods of LstRentalPeriods" [value]="LstRentalPeriods?.PeriodDescription" >
+                                         {{LstRentalPeriods.PeriodDescription}}
+                                     </option>
+                                 </select>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+         </div>
+            
+       
+            <app-confirmation-data *ngIf="count == 1" [reserveUnitForm]="reserveUnitForm"></app-confirmation-data>
+            <div class="form-group text-right">
+                <button type="button" class="btn btn-primary" *ngIf="count === 0" (click)="handleClick()">Next</button>
+                <button type="button" class="btn btn-primary" *ngIf="count === 1" (click)="handlePrevious()">Previous</button>
+                <button type="submit" class="btn btn-primary ml-4" *ngIf="count === 1">Submit</button>
             </div>
-        </div>
+        </form>
+    </ng-template>
 
-        <div class="row pb-5">
-            <div class="col-4 form-group">
-                <label>Move In Date</label>&nbsp;
-                <input type="date" formControlName="dteMoveIn" />
-            </div>
-            <div formArrayName="lstRentalPeriods" class="col-md-4">
-                <div *ngFor="let itemRental of reserveUnitForm.controls.lstUnitTypes.controls; let i = index">
-                    <div  [formGroupName]="i">
-                        <label for="PeriodDescription">Period*</label>&nbsp;
-                        <select formControlName="PeriodDescription" [id]="LstRentalPeriods?.PeriodDescription">
-                            <option *ngFor="let LstRentalPeriods of LstRentalPeriods" [value]="LstRentalPeriods?.PeriodDescription" >
-                                {{LstRentalPeriods.PeriodDescription}}
-                            </option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-   
-  <div class="form-group">
-      <button type="submit" class="btn btn-primary">Next</button>
-  </div>
-</form>
+</div>
 
-
- 
-
-<pre>{{reserveUnitForm.value | json}}</pre>
+<!-- <pre>{{reserveUnitForm.value | json}}</pre> -->
 
 
  

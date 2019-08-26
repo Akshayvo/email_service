@@ -14,11 +14,7 @@
   .scroll-wrapper {
     -webkit-overflow-scrolling: touch;
     overflow: auto;
-
-    iframe {
-      overflow: auto;
-      max-width: 100%;
-    }
+    height: max-content;
   }
 }
 
@@ -41,16 +37,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .scroll-wrapper {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
-
-    iframe {
-      width: 100%;
-      overflow: scroll;
-    }
-  }
-
   .background-padding {
     padding: 24px 0;
   }
