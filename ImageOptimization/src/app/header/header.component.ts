@@ -35,7 +35,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.fetchNavigationLinks();
     this.fetchSocialLinks();
-    // this.fetchContactDetails();
+    this.fetchContactDetails();
     }
 
   public fetchContactDetails() {
