@@ -23,6 +23,7 @@ export class HomeComponent implements OnInit {
   serviceOffered: any;
   gettingStarted: any;
   feature: any;
+  year = [];
   jumbotron: any;
   authData: string;
   currentActive: any = 'HOME';
@@ -44,6 +45,7 @@ export class HomeComponent implements OnInit {
     });
     this.titleService.setTitle('Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage');
     this.metaService.createCanonicalURL();
+
   }
 
   public navigate(location: any) {
@@ -58,6 +60,8 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
+    console.log(new Date().getFullYear());
+
 
 
     // this.showConfig();

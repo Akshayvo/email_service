@@ -2,6 +2,12 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+import { environment } from '../../environments/environment';
+
+
+const baseUrl = environment.baseUrl;
+
+
 const token = localStorage.getItem('strTenantToken');
 const httpOptions = {
   headers: new HttpHeaders({
@@ -16,7 +22,7 @@ const httpOptions = {
 })
 export class SignOutService {
 
-  private signOutUrl = `https://simapi.syrasoft.com/10.1.0.999/api/auth/signout`;
+  private signOutUrl = `${baseUrl}auth/signout`;
 
   constructor(private http: HttpClient) { }
 

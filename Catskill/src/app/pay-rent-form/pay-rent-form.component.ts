@@ -8,6 +8,8 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { PaymentService } from '../services/payment.service';
 import { SignOutService } from '../services/sign-out.service';
 
+import {  month } from '../data/date';
+
 @Component({
   selector: 'app-pay-rent-form',
   templateUrl: './pay-rent-form.component.html',
@@ -23,6 +25,9 @@ export class PayRentFormComponent implements OnInit {
   selectedDescription: string;
   result: any;
 
+  month: any;
+
+  year = [];
   textBox: any;
 
   PayTypeIDValue: number;
@@ -32,8 +37,8 @@ export class PayRentFormComponent implements OnInit {
   submitted = false;
   marked = false;
 
-
   signUp = {};
+
 
   constructor(
     private formBuilder: FormBuilder,
@@ -47,7 +52,8 @@ export class PayRentFormComponent implements OnInit {
       objPayment: this.formBuilder.group({
         CCAccountNumber: ['', Validators.required],
         CCAccountName: [''],
-        expirationDate: [''],
+        CCExpirationMonth: [''],
+        CCExpirationYear: [''],
         CCAccountCVV2: [''],
         CCAccountBillingAddress: [''],
         CCAccountZIP: [''],
@@ -59,13 +65,25 @@ export class PayRentFormComponent implements OnInit {
         })
       }),
     });
+
+    let newYear = new Date().getFullYear(); 
+    for(let i = 1; i<15; i++) {
+      newYear = newYear + 1;
+      this.year.push(newYear);
+    }
    }
 
   ngOnInit() {
     this.getPayMethods(this.payTypes);
+    this.fetchMonth();
   }
 
   get f() { return this.payRentForm.controls; }
+
+  public fetchMonth() {
+    this.month = month;
+  }
+
 
   selectChangeHandler (event: any) {
     this.selectedDescription = JSON.stringify(event.target.value);

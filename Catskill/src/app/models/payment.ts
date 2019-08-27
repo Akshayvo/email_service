@@ -12,6 +12,8 @@ export class Payment {
   CCAccountCVV2: string;
   CCAccountBillingAddress: string;
   CCAccountZIP: string;
+  CCExpirationMonth: string;
+  CCExpirationYear: string;
   SignUpForAutoPay: boolean;
   PaymentAmount: number;
   // payTypes: PayTypes;
@@ -22,6 +24,8 @@ export class Payment {
     CCAccountCVV2: string,
     CCAccountBillingAddress: string,
     CCAccountZIP: string,
+    CCExpirationMonth: string,
+    CCExpirationYear: string,
     SignUpForAutoPay: boolean,
     PaymentAmount: number,
     // payTypes: PayTypes
@@ -31,6 +35,8 @@ export class Payment {
     this.CCAccountCVV2 = CCAccountCVV2;
     this.CCAccountBillingAddress = CCAccountBillingAddress;
     this.CCAccountZIP = CCAccountZIP;
+    this.CCExpirationMonth = CCExpirationMonth;
+    this.CCExpirationYear = CCExpirationYear
     this.SignUpForAutoPay = SignUpForAutoPay;
     this.PaymentAmount = PaymentAmount;
     // this.payTypes = payTypes;

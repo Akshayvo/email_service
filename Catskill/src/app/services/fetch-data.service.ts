@@ -5,6 +5,8 @@ import {tap} from 'rxjs/internal/operators';
 import { UnitTypes, LstUnitTypes, RentalPeriod } from '../models/unittypes';
 import { PayTypes, LstPayTypes } from '../models/payment';
 
+import { environment } from '../../environments/environment';
+
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -14,6 +16,9 @@ const httpOptions = {
 };
 
 // 'APIKey':  'MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+
+const baseUrl = environment.baseUrl;
+
 
 @Injectable({
   providedIn: 'root'
@@ -30,11 +35,11 @@ export class FetchDataService {
 
   // private url = `https://simapi.syrasoft.com/1/api/facility/contactus`;
 
-  private url = `https://simapi.syrasoft.com/10.1.0.999/api/facility/unittypes`;
+  private url = `${baseUrl}/facility/unittypes`;
 
-  private rentalPeriodUrl = `https://simapi.syrasoft.com/10.1.0.999/api/facility/rentalperiods`;
+  private rentalPeriodUrl = `${baseUrl}/facility/rentalperiods`;
 
-  private payMethodUrl = `https://simapi.syrasoft.com/10.1.0.999/api/facility/paymethods`;
+  private payMethodUrl = `${baseUrl}/facility/paymethods`;
 
   constructor(private http: HttpClient) { }
 

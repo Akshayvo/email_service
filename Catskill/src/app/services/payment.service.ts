@@ -3,6 +3,10 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Payment, LstPayTypes } from '../models/payment';
 
+import { environment } from '../../environments/environment';
+
+const baseUrl = environment.baseUrl;
+
 
 const token = localStorage.getItem('strTenantToken');
 const httpOptions = {
@@ -19,7 +23,7 @@ const httpOptions = {
 })
 export class PaymentService {
 
-  private paymentUrl = `https://simapi.syrasoft.com/10.1.0.999/api/payment`;
+  private paymentUrl = `${baseUrl}/payment`;
 
   constructor(private http: HttpClient) { }
 

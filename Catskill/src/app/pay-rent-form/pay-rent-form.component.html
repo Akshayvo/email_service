@@ -64,7 +64,27 @@
   
       <div class="form-group">
         <label>Expiration Date*</label>&nbsp;
-        <input type="date" formControlName="expirationDate"/> 
+        <!-- <input type="text" formControlName="CCExpirationYear"/> &nbsp; -->
+        <!-- <input type=text formControlName="CCExpirationMonth" /> -->
+        <span  class="">
+          <select formControlName="CCExpirationYear" [id]="year" >
+              <option *ngFor="let year of year"
+              [value]="year"
+              >
+              {{year}}   
+              </option>
+          </select>
+      </span>
+      &nbsp;
+        <span  class="">
+          <select formControlName="CCExpirationMonth" [id]="month?.id" >
+              <option *ngFor="let month of month"
+              [value]="month?.id"
+              >
+              {{month.label}}   
+              </option>
+          </select>
+        </span>
       </div>
   
       <div class="form-group">

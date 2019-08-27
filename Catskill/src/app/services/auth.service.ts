@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 import {tap} from 'rxjs/internal/operators';
 import { Auth, ForgotPassword } from '../models/auth';
 
+import { environment } from '../../environments/environment';
+
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -13,14 +15,17 @@ const httpOptions = {
 };
 
 
+const baseUrl = environment.baseUrl;
+// const baseUrl = `https://simapi.syrasoft.com/10.1.0.999/api/`
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  private url = `https://simapi.syrasoft.com/10.1.0.999/api/auth/signin`;
+  private url = `${baseUrl}/auth/signin`;
 
-  private forgotPasswordUrl = `https://simapi.syrasoft.com/10.1.0.999/api/auth/verifyemail`;
+  private forgotPasswordUrl = `${baseUrl}/auth/verifyemail`;
 
 
   constructor(private http: HttpClient) {

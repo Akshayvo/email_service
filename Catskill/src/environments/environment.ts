@@ -8,7 +8,10 @@ export const environment = {
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   appId: 'Catskill',
-  VERSION: require('../../package.json').version
+  VERSION: require('../../package.json').version,
+  baseUrl: `https://simapi.syrasoft.com/10.1.0.999/api/`,
+  authToken: ``,
+  // baseUrl: `http://localhost:60444/api/`
 };
 
 /*

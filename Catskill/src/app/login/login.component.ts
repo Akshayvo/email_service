@@ -6,6 +6,7 @@ import { throwError } from 'rxjs';
 import { TenantInfo, Tenant} from '../models/tenant';
 import { TenantInfoService } from '../services/tenant-info.service';
 
+import { environment } from '../../environments/environment';
 
 
 @Component({
@@ -32,13 +33,14 @@ export class LoginComponent implements OnInit {
   balance: number;
 
 
+
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
-    private tenantInfoService: TenantInfoService,
+    private tenantInfoService: TenantInfoService, 
 
   ) {
-
+  const authToken = environment.authToken;
   }
 
   ngOnInit() {
@@ -80,6 +82,8 @@ export class LoginComponent implements OnInit {
           this.showPayRent = true;
           this.authData = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
+          // environment.authToken = this.authData;
+
           this.getTenantInfo(this.tenant);
         }, (err) => {
           this.credentialsInvalid = true;
