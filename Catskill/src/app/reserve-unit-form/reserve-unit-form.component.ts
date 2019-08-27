@@ -3,11 +3,8 @@ import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 
 import { AddTenantService } from '../services/add-tenant.service';
 import { FetchDataService } from '../services/fetch-data.service';
-import { MoveInService } from '../services/move-in.service';
 
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods } from '../models/unittypes';
-
-import { MoveIn } from '../models/moveIn';
 import { ObjTenantDetail, ObjTenant } from '../models/tenant';
 import { setFlagsFromString } from 'v8';
 
@@ -48,7 +45,6 @@ export class ReserveUnitFormComponent implements OnInit {
     private formBuilder: FormBuilder,
     private addTenantService: AddTenantService,
     private fetchDataService: FetchDataService,
-    private moveInService: MoveInService,
     ) {
     this.reserveUnitForm = this.formBuilder.group({
       objTenant: this.formBuilder.group({

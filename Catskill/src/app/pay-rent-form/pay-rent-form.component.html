@@ -1,24 +1,6 @@
 <div class="payRent">
   <h2 class="pb-1">Payment</h2>
   <form [formGroup]="payRentForm" (ngSubmit)="onSubmit()" class="pt-3">
-    <!-- <div formArrayName="lstPayTypes">
-      <div *ngFor="let item of payRentForm.controls.lstPayTypes.controls; let i = index">
-        <div [formGroupName]="i">
-            <label for="lstPayTypes">Card Type*</label>&nbsp;
-            <select formControlName="PayTypeDescription" [id]="lstPayTypes?.PayTypeDescription" 
-            (change)="selectChangeHandler($event)">
-                <option *ngFor="let lstPayTypes of lstPayTypes"
-                [value]="lstPayTypes?.PayTypeDescription"
-                >
-                {{lstPayTypes.PayTypeDescription}}   
-                
-                </option>
-            </select>
-            <input type="hidden" formControlName="PayTypeID" />
-        </div>
-      </div>  
-    </div> -->
-
       <div formGroupName="objPayment" class="">
         <div formGroupName="PayType">
           <div  class="form-group">
@@ -34,7 +16,7 @@
             </select>
           </div>
           <div class="form-group">
-              <input type="hidden" formControlName="PayTypeID" />
+              <input type="hidden" formControlName="PayTypeID" [value]="PayTypeIDValue" />
           </div>
         </div>
     
@@ -42,14 +24,17 @@
         <label>Amount*</label>
         <div class="">
           <label>&nbsp;
-            <input type="radio" id=1  [value]="balance" (onchange)="handleChange($event)" formControlName="PaymentAmount">
+            <input type="radio" [value]="balance" (change)="handleChange(1)" formControlName="PaymentAmount" [checked]="checked">
               <span>Balance Due</span> &nbsp; ${{balance}}
           </label><br/>
           <label>&nbsp;
-            <input type="radio" id=2 [value]="1" (onchange)="handleChange($event)" formControlName="PaymentAmount">
+            <input type="radio" [value]="'otherValue'"  (change)="handleChange(1)"  formControlName="PaymentAmount">
               <span>Other Amount</span>
-             &nbsp; <input type="text" *ngIf="!options" />
           </label>
+          &nbsp;
+          <span *ngIf="showInput == true">
+            <input (keyup)="onKey($event)" type="text" [(ngModel)]="textBox" [ngModelOptions]="{standalone: true}"/>
+          </span>
         </div>
       </div>
       
@@ -110,12 +95,21 @@
               </small>
           </div>
         </div>
+        <div class="form-group">
+          <input type="checkbox" formControlName="SignUpForAutoPay" (change)="toggleEvent()"/> &nbsp;
+          <label>Sign up for Auto Pay</label>
+        </div>
     </div>
-  
+
+
   
     <div class="form-group">
-        <button type="submit" class="btn btn-primary">Make a Payment</button>
+        <button type="submit" (click)="getPayment(this.payRentForm.value)" class="btn btn-primary">Make a Payment</button>
     </div>
+
+    <div class="form-group">
+        <button (click)="signOut(event)" class="btn btn-primary">LogOff</button>
+    </div>  
   </form>
 </div>
 

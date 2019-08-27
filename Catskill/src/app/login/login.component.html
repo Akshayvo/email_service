@@ -1,14 +1,14 @@
 <div>
-        <ng-template #other>
-<app-pay-rent-form *ngIf="showPayRent; else content"></app-pay-rent-form>
-</ng-template>
+    <ng-template #other>
+        <app-pay-rent-form *ngIf="showPayRent; else content"  [balance]="balance"></app-pay-rent-form>
+    </ng-template>
 
-<div [class.loader]="showLoader"  *ngIf="!showPayRent && allowedToshow">
+    <div [class.loader]="showLoader"  *ngIf="!showPayRent && allowedToshow">
     </div>
 
 
 
-<ng-template #content>
+    <ng-template #content>
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
             <div [hidden]="" *ngIf="submitted && credentialsInvalid" class="button-display alert alert-success alert-danger fade show">
@@ -59,4 +59,4 @@
 </div>    
 
 <!-- <pre>{{loginForm.value | json }}</pre>   -->
-<app-pay-rent-form ></app-pay-rent-form>
+<!-- <app-pay-rent-form ></app-pay-rent-form> -->

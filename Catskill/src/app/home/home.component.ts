@@ -5,10 +5,6 @@ import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../data/home';
 import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
-import { FetchDataService } from '../services/fetch-data.service';
-import { AuthService } from '../services/auth.service';
-import { TenantInfoService } from '../services/tenant-info.service';
-
 
 
 @Component({
@@ -31,18 +27,6 @@ export class HomeComponent implements OnInit {
   authData: string;
   currentActive: any = 'HOME';
 
-data = {
-  strUserName: 'Codeparva',
-  strPassword: 'newPassword',
-  intAuthMethod: 1
-};
-
-  // data = {
-  //   strUserName: 'Sanghmitra',
-  //   strPassword: 'codeparva',
-  //   intAuthMethod: 1
-  // };
-
 
   constructor(
     private router: Router,
@@ -50,9 +34,6 @@ data = {
     private meta: Meta,
     private _renderer2: Renderer2,
     private metaService: MetaService,
-    public fetchDataService: FetchDataService,
-    private authService: AuthService,
-    private tenantInfoService: TenantInfoService,
 
     @Inject(DOCUMENT) private _document: any,
   ) {
@@ -63,8 +44,6 @@ data = {
     });
     this.titleService.setTitle('Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage');
     this.metaService.createCanonicalURL();
-    this.auth(this.data);
-
   }
 
   public navigate(location: any) {
@@ -79,7 +58,6 @@ data = {
     this.fetchFeature();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
-    // this.getTokenValue();
 
 
     // this.showConfig();
@@ -124,22 +102,6 @@ data = {
   //     console.log('show config is working');
   //   }
   //   );
-  // }
-
-
-
-  auth(data: any): void {
-    this.authService.auth(data)
-      .subscribe(
-        auth => {
-          this.authData = auth.strTenantToken;
-          localStorage.setItem('strTenantToken', this.authData);
-        }
-      );
-  }
-
-  // getTokenValue() {
-  //   console.log(localStorage.getItem('strTenantToken'));
   // }
 
 

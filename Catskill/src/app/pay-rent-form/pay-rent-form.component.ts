@@ -1,13 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 
-import { TenantInfo, Tenant} from '../models/tenant';
 import { LstPayTypes, PayTypes } from '../models/payment';
-
 
 import { TenantInfoService } from '../services/tenant-info.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { PaymentService } from '../services/payment.service';
+import { SignOutService } from '../services/sign-out.service';
 
 @Component({
   selector: 'app-pay-rent-form',
@@ -16,27 +15,32 @@ import { PaymentService } from '../services/payment.service';
 })
 export class PayRentFormComponent implements OnInit {
 
-  tenantInfo: TenantInfo;
-  tenant: any;
+  @Input() balance: number;
+
   payRentForm: FormGroup;
   payTypes: PayTypes;
   lstPayTypes: LstPayTypes[];
   selectedDescription: string;
   result: any;
-  balance: number;
+
+  textBox: any;
 
   PayTypeIDValue: number;
 
-  options = false;
+  showInput = false;
 
   submitted = false;
+  marked = false;
 
+
+  signUp = {};
 
   constructor(
     private formBuilder: FormBuilder,
     private tenantInfoService: TenantInfoService,
     private fetchDataService: FetchDataService,
     private paymentService: PaymentService,
+    private signOutService: SignOutService,
   ) {
     this.payRentForm = this.formBuilder.group({
 
@@ -58,7 +62,6 @@ export class PayRentFormComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.getTenantInfo(this.tenant);
     this.getPayMethods(this.payTypes);
   }
 
@@ -66,26 +69,28 @@ export class PayRentFormComponent implements OnInit {
 
   selectChangeHandler (event: any) {
     this.selectedDescription = JSON.stringify(event.target.value);
-
     const indexValue  = event.target.value;
-    console.log(indexValue);
-   const  index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
+    const  index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
 
-   this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
+    this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
 
-   console.log('pay type id ', this.PayTypeIDValue);
+    this.payRentForm.patchValue({
+      objPayment: {
+        PayType: {
+          PayTypeID: this.PayTypeIDValue,
+        }
+      }
+    });
+  }
 
-  this.payRentForm.patchValue({
-    PayType: {
-      PayTypeID: this.PayTypeIDValue,
+  handleChange()  {
+    if (this.payRentForm.value.objPayment.PaymentAmount === 'otherValue') {
+      this.showInput = true;
+    } else {
+      this.showInput = false;
     }
-  });
   }
 
-  handleChange(event: any) {
-    this.options = !this.options;
-    console.log('id is', event.id);
-  }
 
   getPayMethods(PayTypes) {
     this.fetchDataService.getPayMethods(PayTypes)
@@ -95,35 +100,50 @@ export class PayRentFormComponent implements OnInit {
     );
   }
 
-  getTenantInfo(tenant) {
-    this.tenantInfoService.getTenantInfo(tenant)
-      .subscribe( tenantData => {
-        console.log('tenant info', tenantData);
-        if (tenantData) {
-          const { Tenant } = tenantData;
-          this.balance = Tenant.Balance;
-          // console.log(this.balance);
-        }
-      });
-  }
-
   getPayment(paymentData) {
     this.paymentService.getPayment(paymentData)
       .subscribe( paymentData => {
         console.log('payment service worked', paymentData);
+      }, (err) => {
+      }
+      );
+  }
+
+  signOut(signOut: any) {
+    console.log('sign out method is working');
+    localStorage.removeItem('strTenantToken');
+    this.signOutService.signOut(signOut)
+    .subscribe( result => {
+      console.log('logged out', result);
+    }, (err) => {
+    }
+    );
+  }
+
+  toggleEvent(e: any) {
+    console.log(this.payRentForm.value.objPayment.SignUpForAutoPay);
+    if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
+      this.signUpAutoPay(this.signUp);
+    }
+  }
+
+  signUpAutoPay(signUp: any) {
+    this.tenantInfoService.signUpAutoPay(signUp)
+      .subscribe( result => {
+        console.log(result);
+      }, (err) => {
       });
+  }
+
+  onKey(e: any) {
+    this.payRentForm.patchValue({
+      objPayment: {
+        PaymentAmount: this.textBox,
+      }
+    });
   }
 
   onSubmit() {
     this.submitted = true;
-
-    console.log('pay rent is working');
-
-    // if (this.payRentForm.invalid) {
-    //   return;
-    // } else {
-    // }
-    this.getPayment(this.payRentForm.value);
-    console.log(this.payRentForm.value);
   }
 }

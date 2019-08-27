@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MoveInService } from './move-in.service';
+import { SignOutService } from './sign-out.service';
 
-describe('MoveInService', () => {
+describe('SignOutService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: MoveInService = TestBed.get(MoveInService);
+    const service: SignOutService = TestBed.get(SignOutService);
     expect(service).toBeTruthy();
   });
 });

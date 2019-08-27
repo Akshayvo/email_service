@@ -3,6 +3,10 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 import { throwError } from 'rxjs';
 
+import { TenantInfo, Tenant} from '../models/tenant';
+import { TenantInfoService } from '../services/tenant-info.service';
+
+
 
 @Component({
   selector: 'app-login',
@@ -22,9 +26,17 @@ export class LoginComponent implements OnInit {
 
   showLoader = false;
 
+  authData: string;
+  tenantInfo: TenantInfo;
+  tenant: any;
+  balance: number;
+
+
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
+    private tenantInfoService: TenantInfoService,
+
   ) {
 
   }
@@ -47,16 +59,33 @@ export class LoginComponent implements OnInit {
     this.showLoader = true;
   }
 
+  getTenantInfo(tenant) {
+    this.tenantInfoService.getTenantInfo(tenant)
+      .subscribe( tenantData => {
+        console.log('tenant info', tenantData);
+        if (tenantData) {
+          const { Tenant } = tenantData;
+          this.balance = Tenant.Balance;
+          console.log(this.balance);
+        }
+      }
+      , (err) => {
+      });
+  }
+
   auth(data: any): void {
     this.authService.auth(data)
-        .subscribe(
-          auth => {
-            this.showPayRent = true;
-          }, (err) => {
-            this.credentialsInvalid = true;
-            this.showLoader = false;
-          }
-        );
+      .subscribe(
+        auth => {
+          this.showPayRent = true;
+          this.authData = auth.strTenantToken;
+          localStorage.setItem('strTenantToken', this.authData);
+          this.getTenantInfo(this.tenant);
+        }, (err) => {
+          this.credentialsInvalid = true;
+          this.showLoader = false;
+        }
+      );
   }
 
 
@@ -66,7 +95,6 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.invalid) {
       return;
     } else {
-
       this.allowedToshow = true;
       this.auth(this.loginForm.value);
     }

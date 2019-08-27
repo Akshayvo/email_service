@@ -100,7 +100,7 @@ export class ContactComponent implements OnInit {
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {
-                 this.mailSent = true;
+                this.mailSent = true;
              } else {
              }
            }, (err) => {

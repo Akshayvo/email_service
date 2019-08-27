@@ -19,6 +19,8 @@ export class TenantInfoService {
 
   private url = `https://simapi.syrasoft.com/10.1.0.999/api/tenant`;
 
+  private signUpAutoPayUrl = `https://simapi.syrasoft.com/10.1.0.999/api/tenant/autopaysignup`;
+
 
   constructor(private http: HttpClient) { }
 
@@ -26,8 +28,8 @@ export class TenantInfoService {
     return this.http.get<any>(this.url,  httpOptions);
   }
 
-  // getToken() {
-  //   return localStorage.getItem('strTenantToken');
-  // }
+  signUpAutoPay(signUp: any): Observable<any> {
+    return this.http.post<any>(this.signUpAutoPayUrl, signUp, httpOptions);
+  }
 
 }
