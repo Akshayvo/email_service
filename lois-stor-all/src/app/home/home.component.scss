@@ -32,8 +32,8 @@
 
 // Get started Section
 .getStarted {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Lois_Star/self-storage-unit-placeholder.jpg") center top no-repeat fixed;
-  background-size: cover;
+  background: url("../../assets/Lois_Star/lois-stor-all-image.jpg") center top no-repeat fixed;
+  // background-size: cover;
   background-position: top;
 
   .get-started {
@@ -56,7 +56,7 @@
   height: 80vh;
 
   .jumbotron {
-    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Lois_Star/self-storage-unit-placeholder.jpg");
+    background: url("../../assets/Lois_Star/lois-stor-all-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

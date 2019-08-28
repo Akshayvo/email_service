@@ -12,18 +12,18 @@ export const contact = [
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
-        id: 2,
-        redirect: 'mailto:loisstorall@gmail.com',
-        label: 'Email: ',
-        data: 'loisstorall@gmail.com',
-        class: 'fas fa-envelope mr-2 iconColor',
-    },
-    {
         id: 3,
         redirect: 'tel:2627638925',
         label: 'Phone: ',
         data: '(262) 763-8925',
         class: 'fas fa-phone mr-2 iconColor',
+    },
+    {
+        id: 2,
+        redirect: 'mailto:loisstorall@gmail.com',
+        label: 'Email: ',
+        data: 'loisstorall@gmail.com',
+        class: 'fas fa-envelope mr-2 iconColor',
     }
 ];
 
