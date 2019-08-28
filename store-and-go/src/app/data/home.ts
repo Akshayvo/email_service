@@ -44,25 +44,25 @@ with Store & Go!`;
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/Store&Go/convenient-location_black.svg`,
+        path: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_Go/convenient-location_black.svg`,
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin',
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/Store&Go/garage.svg`,
+        path: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_Go/garage.svg`,
         label: 'Boat and Vehicle Storage',
         alt: 'Icon art displaying boat and motorcycle',
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/Store&Go/hand_black.svg`,
+        path: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_Go/hand_black.svg`,
         label: 'Affordable Self Storage Rates',
         alt: 'Icon of a hand holding money',
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `../../assets/Store&Go/fence.svg`,
+        path: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_Go/fence.svg`,
         label: 'Fully-Fenced Facility',
         alt: 'Icon of a section of fencing',
     },

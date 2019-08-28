@@ -35,8 +35,8 @@ export const hours = [
         data: '10:00 am - 3:00 pm'
     },
     {
-        label: 'Access Hours',
-        data: '7:00AM to 7:00PM 365 Days a Year'
+        label: 'Access Hours: ',
+        data: '7:00 AM to 7:00 PM 365 Days a Year'
     }
 ];
 
