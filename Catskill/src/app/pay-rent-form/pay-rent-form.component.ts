@@ -186,16 +186,13 @@ export class PayRentFormComponent implements OnInit {
 
   onKey(e: any) {
      this.otherValue  = e.target.value;
-
-     console.log(this.otherValue);
-
      setTimeout(() => {
        this.payRentForm.patchValue({
          objPayment: {
            PaymentAmount: e.target.value,
          }
        });
- }, 1000);
+ }, 0);
 
   }
 
