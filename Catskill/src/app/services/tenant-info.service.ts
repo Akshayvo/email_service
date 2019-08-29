@@ -13,7 +13,7 @@ const token = localStorage.getItem('strTenantToken');
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'APIKey':  'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    'APIKey':  `${environment.APIKey}`,
     'Content-Type': 'application/json',
     'Authorization': `Bearer ${token}`
   })
@@ -24,16 +24,14 @@ const httpOptions = {
 })
 export class TenantInfoService {
 
-  private url = `${baseUrl}/tenant`;
+  private url = `${baseUrl}tenant`;
 
-  private signUpAutoPayUrl = `${baseUrl}/tenant/autopaysignup`;
+  private signUpAutoPayUrl = `${baseUrl}tenant/autopaysignup`;
 
 
   constructor(private http: HttpClient) { }
 
   getTenantInfo(tenant: any): Observable<any> {
-    console.log(token);
-
     return this.http.get<any>(this.url,  httpOptions);
   }
 

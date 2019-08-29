@@ -54,11 +54,8 @@ export class ViewRatesComponent implements OnInit {
   }
 
   getData(UnitTypes) {
-    console.log('method is working');
     this.fetchDataService.getData(UnitTypes)
     .subscribe(UnitTypes => {
-      console.log('service is working');
-      console.log(UnitTypes);
       this.showTable =  true;
       this.LstUnitTypes = UnitTypes.lstUnitTypes;
     });

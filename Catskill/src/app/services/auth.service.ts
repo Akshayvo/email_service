@@ -9,7 +9,7 @@ import { environment } from '../../environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'APIKey':  'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    'APIKey':  `${environment.APIKey}`,
     'Content-Type': 'application/json'
   })
 };
@@ -23,9 +23,9 @@ const baseUrl = environment.baseUrl;
 })
 export class AuthService {
 
-  private url = `${baseUrl}/auth/signin`;
+  private url = `${baseUrl}auth/signin`;
 
-  private forgotPasswordUrl = `${baseUrl}/auth/verifyemail`;
+  private forgotPasswordUrl = `${baseUrl}auth/verifyemail`;
 
 
   constructor(private http: HttpClient) {

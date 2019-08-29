@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SimpleChange, SimpleChanges } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 
 import { LstPayTypes, PayTypes } from '../models/payment';
@@ -10,6 +10,9 @@ import { SignOutService } from '../services/sign-out.service';
 
 import {  month } from '../data/date';
 
+import { Router } from '@angular/router';
+
+
 @Component({
   selector: 'app-pay-rent-form',
   templateUrl: './pay-rent-form.component.html',
@@ -17,8 +20,7 @@ import {  month } from '../data/date';
 })
 export class PayRentFormComponent implements OnInit {
 
-  @Input() balance: number;
-
+  balance: number;
   payRentForm: FormGroup;
   payTypes: PayTypes;
   lstPayTypes: LstPayTypes[];
@@ -29,6 +31,7 @@ export class PayRentFormComponent implements OnInit {
 
   year = [];
   textBox: any;
+  tenant: any;
 
   PayTypeIDValue: number;
 
@@ -41,15 +44,17 @@ export class PayRentFormComponent implements OnInit {
 
   logOut = {};
 
+  otherValue = 0;
+
   constructor(
     private formBuilder: FormBuilder,
     private tenantInfoService: TenantInfoService,
     private fetchDataService: FetchDataService,
     private paymentService: PaymentService,
     private signOutService: SignOutService,
+    public router: Router,
   ) {
     this.payRentForm = this.formBuilder.group({
-
       objPayment: this.formBuilder.group({
         CCAccountNumber: ['', Validators.required],
         CCAccountName: [''],
@@ -72,11 +77,16 @@ export class PayRentFormComponent implements OnInit {
       this.year.push(newYear);
       newYear = newYear + 1;
     }
+
+
    }
 
   ngOnInit() {
     this.getPayMethods(this.payTypes);
     this.fetchMonth();
+    this.getTenantInfo(this.tenant);
+
+    // this.onChanges();
   }
 
   get f() { return this.payRentForm.controls; }
@@ -102,14 +112,27 @@ export class PayRentFormComponent implements OnInit {
     });
   }
 
-  handleChange()  {
-    if (this.payRentForm.value.objPayment.PaymentAmount === 'otherValue') {
+  handleChange(e)  {
+    if (e.target.id === '2') {
       this.showInput = true;
     } else {
       this.showInput = false;
     }
   }
 
+  getTenantInfo(tenant) {
+    this.tenantInfoService.getTenantInfo(tenant)
+      .subscribe( tenantData => {
+        console.log('tenant info', tenantData);
+        if (tenantData) {
+          const { Tenant } = tenantData;
+          this.balance = Tenant.Balance;
+          console.log(this.balance);
+        }
+      }
+      , (err) => {
+      });
+  }
 
   getPayMethods(PayTypes) {
     this.fetchDataService.getPayMethods(PayTypes)
@@ -120,6 +143,11 @@ export class PayRentFormComponent implements OnInit {
   }
 
   getPayment(paymentData) {
+   this.payRentForm.patchValue({
+      objPayment: {
+        PaymentAmount: this.otherValue,
+      }
+    });
     this.paymentService.getPayment(paymentData)
       .subscribe( paymentData => {
         console.log('payment service worked', paymentData);
@@ -134,6 +162,8 @@ export class PayRentFormComponent implements OnInit {
     .subscribe( result => {
       console.log('logged out', result);
       localStorage.removeItem('strTenantToken');
+      this.router.navigate(['/pay-rent/login']);
+
     }, (err) => {
     }
     );
@@ -155,12 +185,21 @@ export class PayRentFormComponent implements OnInit {
   }
 
   onKey(e: any) {
-    this.payRentForm.patchValue({
-      objPayment: {
-        PaymentAmount: this.textBox,
-      }
-    });
+     this.otherValue  = e.target.value;
+
+     console.log(this.otherValue);
+
+     setTimeout(() => {
+       this.payRentForm.patchValue({
+         objPayment: {
+           PaymentAmount: e.target.value,
+         }
+       });
+ }, 1000);
+
   }
+
+
 
   onSubmit() {
     this.submitted = true;

@@ -10,7 +10,7 @@ import { environment } from '../../environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'APIKey':  'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    'APIKey':  `${environment.APIKey}`,
     'Content-Type': 'application/json'
   })
 };
@@ -35,11 +35,11 @@ export class FetchDataService {
 
   // private url = `https://simapi.syrasoft.com/1/api/facility/contactus`;
 
-  private url = `${baseUrl}/facility/unittypes`;
+  private url = `${baseUrl}facility/unittypes`;
 
-  private rentalPeriodUrl = `${baseUrl}/facility/rentalperiods`;
+  private rentalPeriodUrl = `${baseUrl}facility/rentalperiods`;
 
-  private payMethodUrl = `${baseUrl}/facility/paymethods`;
+  private payMethodUrl = `${baseUrl}facility/paymethods`;
 
   constructor(private http: HttpClient) { }
 

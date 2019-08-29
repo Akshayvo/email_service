@@ -24,16 +24,16 @@
         <label>Amount*</label>
         <div class="">
           <label>&nbsp;
-            <input type="radio" [value]="balance" (change)="handleChange(1)" formControlName="PaymentAmount" [checked]="checked">
+            <input type="radio" [value]="balance" id="1" (change)="handleChange($event)" formControlName="PaymentAmount">
               <span>Balance Due</span> &nbsp; ${{balance}}
           </label><br/>
           <label>&nbsp;
-            <input type="radio" [value]="'otherValue'"  (change)="handleChange(1)"  formControlName="PaymentAmount">
+            <input type="radio" [value]="otherValue" id="2" (change)="handleChange($event)" formControlName="PaymentAmount">
               <span>Other Amount</span>
           </label>
           &nbsp;
           <span *ngIf="showInput == true">
-            <input (keyup)="onKey($event)" type="text" [(ngModel)]="textBox" [ngModelOptions]="{standalone: true}"/>
+            <input type="text" [value]="otherValue" (keyup)="onKey($event)" name="text" >
           </span>
         </div>
       </div>

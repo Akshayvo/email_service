@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
+import { Router } from '@angular/router';
+
 import { throwError } from 'rxjs';
 
 import { TenantInfo, Tenant} from '../models/tenant';
@@ -27,6 +29,8 @@ export class LoginComponent implements OnInit {
 
   showLoader = false;
 
+  showLoginPage = true;
+
   authData: string;
   tenantInfo: TenantInfo;
   tenant: any;
@@ -37,10 +41,10 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
-    private tenantInfoService: TenantInfoService, 
+    // private tenantInfoService: TenantInfoService,
+    public router: Router,
 
   ) {
-  const authToken = environment.authToken;
   }
 
   ngOnInit() {
@@ -53,6 +57,12 @@ export class LoginComponent implements OnInit {
 
   get f() { return this.loginForm.controls; }
 
+
+  public navigate (location: any) {
+    this.router.navigate([location]);
+  }
+
+
   handleForgotPassword() {
     this.showForgotPassword = true;
   }
@@ -61,19 +71,19 @@ export class LoginComponent implements OnInit {
     this.showLoader = true;
   }
 
-  getTenantInfo(tenant) {
-    this.tenantInfoService.getTenantInfo(tenant)
-      .subscribe( tenantData => {
-        console.log('tenant info', tenantData);
-        if (tenantData) {
-          const { Tenant } = tenantData;
-          this.balance = Tenant.Balance;
-          console.log(this.balance);
-        }
-      }
-      , (err) => {
-      });
-  }
+  // getTenantInfo(tenant) {
+  //   this.tenantInfoService.getTenantInfo(tenant)
+  //     .subscribe( tenantData => {
+  //       console.log('tenant info', tenantData);
+  //       if (tenantData) {
+  //         const { Tenant } = tenantData;
+  //         this.balance = Tenant.Balance;
+  //         console.log(this.balance);
+  //       }
+  //     }
+  //     , (err) => {
+  //     });
+  // }
 
   auth(data: any): void {
     this.authService.auth(data)
@@ -83,8 +93,9 @@ export class LoginComponent implements OnInit {
           this.authData = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
           // environment.authToken = this.authData;
+          this.router.navigate(['/pay-rent/payment']);
+            // this.getTenantInfo(this.tenant);
 
-          this.getTenantInfo(this.tenant);
         }, (err) => {
           this.credentialsInvalid = true;
           this.showLoader = false;

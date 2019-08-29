@@ -1,12 +1,8 @@
 
 @import "../../styles.scss";
 
-.button-as-a-link {
-  button {
-    background: none  !important;
-    border: none;
-    padding: 0 !important;
-    font-family: arial, sans-serif;
+.forgot-link {
+  a {
     color: $primary;
     text-decoration: underline;
     cursor: pointer;

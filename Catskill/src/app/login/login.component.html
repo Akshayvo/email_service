@@ -1,62 +1,52 @@
-<div>
-    <ng-template #other>
-        <app-pay-rent-form *ngIf="showPayRent; else content"  [balance]="balance"></app-pay-rent-form>
-    </ng-template>
-
+ <div>
     <div [class.loader]="showLoader"  *ngIf="!showPayRent && allowedToshow">
     </div>
 
-
-
-    <ng-template #content>
-        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-        <div class="form-group">
-            <div [hidden]="" *ngIf="submitted && credentialsInvalid" class="button-display alert alert-success alert-danger fade show">
-                    Either the supplied username does not exist, or the supplied credentials are incorrect. Please try again.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+        <div>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <div [hidden]="" *ngIf="submitted && credentialsInvalid" class="button-display alert alert-success alert-danger fade show">
+                        Either the supplied username does not exist, or the supplied credentials are incorrect. Please try again.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-lg-6 col-12">
-              <label>UserName</label> &nbsp;
-              <input type="text" formControlName="strUserName"  
-              class="form-control" 
-              [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }"
-              />
-              <div *ngIf="submitted && f.strUserName.errors" class="invalid-feedback">
-                  <small class="form-text text-muted" *ngIf="f.strUserName.errors.required">Please fill out this field</small>
+            <div class="row">
+              <div class="form-group col-lg-6 col-12">
+                  <label>UserName</label> &nbsp;
+                  <input type="text" formControlName="strUserName"  
+                  class="form-control" 
+                  [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }"
+                  />
+                  <div *ngIf="submitted && f.strUserName.errors" class="invalid-feedback">
+                      <small class="form-text text-muted" *ngIf="f.strUserName.errors.required">Please fill out this field</small>
+                  </div>
               </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-lg-6 col-12">
-              <label>Password</label> &nbsp;
-              <input type="password" formControlName="strPassword" class="form-control" 
-              [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }"  
-              />
-              <div *ngIf="submitted && f.strPassword.errors" class="invalid-feedback">
-                  <small class="form-text text-muted" *ngIf="f.strPassword.errors.required">Please fill out this field</small>
+            </div>
+            <div class="row">
+              <div class="form-group col-lg-6 col-12">
+                  <label>Password</label> &nbsp;
+                  <input type="password" formControlName="strPassword" class="form-control" 
+                  [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }"  
+                  />
+                  <div *ngIf="submitted && f.strPassword.errors" class="invalid-feedback">
+                      <small class="form-text text-muted" *ngIf="f.strPassword.errors.required">Please fill out this field</small>
+                  </div>
               </div>
+            </div>
+    
+       
+    
+          <div class="form-group">
+              <button type="submit" class="btn btn-primary" (click)="handleShowLoader()"
+              >Login</button>
           </div>
+        </form>
         </div>
 
-   
-
-      <div class="form-group">
-          <button type="submit" class="btn btn-primary" (click)="handleShowLoader()"
-          >Login</button>
-      </div>
-    </form>
-
-    <div class="button-as-a-link">
-            <button (click)="handleForgotPassword()">Forgot Password</button>
+        <div class="forgot-link">
+            <a (click)="navigate('/pay-rent/forgotPassword')">Forgot Password</a>
         </div>
-    </ng-template>
-
-    <app-forgot-password *ngIf="showForgotPassword; else other"></app-forgot-password>
 </div>    
-
-<!-- <pre>{{loginForm.value | json }}</pre>   -->
-<!-- <app-pay-rent-form ></app-pay-rent-form> -->
+ 

@@ -60,9 +60,6 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
-    console.log(new Date().getFullYear());
-
-
 
     // this.showConfig();
     // const s = this._renderer2.createElement('script');

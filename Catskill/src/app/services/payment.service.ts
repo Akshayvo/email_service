@@ -11,7 +11,7 @@ const baseUrl = environment.baseUrl;
 const token = localStorage.getItem('strTenantToken');
 const httpOptions = {
   headers: new HttpHeaders({
-    'APIKey':  'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    'APIKey':  `${environment.APIKey}`,
     'Content-Type': 'application/json',
     'Authorization': `Bearer ${token}`
   })
@@ -23,7 +23,7 @@ const httpOptions = {
 })
 export class PaymentService {
 
-  private paymentUrl = `${baseUrl}/payment`;
+  private paymentUrl = `${baseUrl}payment`;
 
   constructor(private http: HttpClient) { }
 

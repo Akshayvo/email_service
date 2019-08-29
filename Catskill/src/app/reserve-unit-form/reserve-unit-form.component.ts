@@ -100,7 +100,6 @@ export class ReserveUnitFormComponent implements OnInit {
     } else {
       if (this.count <= 1 ) {
         this.count = this.count + 1;
-      console.log(this.count);
       }
     }
   }
@@ -119,9 +118,6 @@ export class ReserveUnitFormComponent implements OnInit {
    const  index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
 
    this.MonthlyRateValue = this.lstUnitTypes[index].MonthlyRate;
-
-   console.log(this.lstUnitTypes[0].Description);
-
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
         MonthlyRate: this.MonthlyRateValue,
@@ -146,7 +142,6 @@ export class ReserveUnitFormComponent implements OnInit {
   }
 
   addTenant(objTenantDetail: any): void {
-    console.log('add tenant method is working');
     this.addTenantService.addTenant(objTenantDetail)
       .subscribe(result => {
       this.successMessage = true;
