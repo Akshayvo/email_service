@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { navLinks } from '../data/nav';
+import {contactsLocation1 } from '../data/contact';
 
 @Component({
   selector: 'app-header',
@@ -26,9 +27,13 @@ export class HeaderComponent implements OnInit {
     this.fetchNavigationLinks();
     this.router.events.subscribe(path => {
       // this.isSomePage();
+    this.fetchContactDetails();
     });
   }
 
+  public fetchContactDetails(){
+    this.contactDetails = contactsLocation1;
+  }
 
   public navigate (location: any) {
     this.router.navigate([location]);

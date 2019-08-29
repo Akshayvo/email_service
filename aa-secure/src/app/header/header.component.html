@@ -1,3 +1,24 @@
+<div class="col-md-12 display bg-primary py-2">
+  <div class="container">
+    <div class="contact-header">
+      <div class="row">
+        <div class="col-md-10">
+          <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
+            <span  class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><i [class]="contact?.class"></i><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+            <!-- <ng-template #other_content>&nbsp;{{contact.data}}</ng-template> -->
+          </span>
+        </div>
+        <!-- <div class="col-md-2 ml-auto text-right">
+          <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
+            <a [href]="social?.path" target="_blank">
+              <i [class]="social?.class"></i>
+            </a>
+          </span>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
 <nav class="navbar navbar-expand-lg bg-white">
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')">

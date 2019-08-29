@@ -119,7 +119,7 @@ export const aboutUsImageLocation2 = `https://syrasoft-tenant-facing-websites.s3
 // tslint:disable-next-line:max-line-length
 export const aboutUsImageLocation3 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-2.jpg`;
 
-export const aboutUsImageLocation4 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-storage_mc.jpg`;
+export const aboutUsImageLocation4 = `../../assets/aa-secure-storage-1.jpg`;
 
 export const aboutUsLocation1 = [
     {

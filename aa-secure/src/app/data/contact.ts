@@ -5,13 +5,7 @@ export const contactsLocation1 = [
         data: '730 Kenton Station Rd, Maysville, KY 41056',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
-    {
-        id: 1,
-        label: 'Phone:',
-        data: '(606) 584-3434',
-        redirect: 'tel:6065843434',
-        class: 'fas fa-phone mr-2 iconColor',
-    },
+    
     {
         id: 2,
         label: 'Email:',
@@ -19,6 +13,13 @@ export const contactsLocation1 = [
         redirect: 'mailto:aasecurestorage751@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
     },
+    {
+        id: 1,
+        label: 'Phone:',
+        data: '(606) 584-3434',
+        redirect: 'tel:6065843434',
+        class: 'fas fa-phone mr-2 iconColor',
+    }
 ];
 
 export const hoursLocation1 = [
@@ -44,13 +45,7 @@ export const contactsLocation2 = [
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
 
-    {
-        id: 1,
-        label: 'Phone:',
-        data: '(606) 584-3434',
-        redirect: 'tel:6065843434',
-        class: 'fas fa-phone mr-2 iconColor',
-    },
+    
     {
         id: 2,
         label: 'Email:',
@@ -58,6 +53,13 @@ export const contactsLocation2 = [
         redirect: 'mailto:aasecurestorage751@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
     },
+    {
+        id: 1,
+        label: 'Phone:',
+        data: '(606) 584-3434',
+        redirect: 'tel:6065843434',
+        class: 'fas fa-phone mr-2 iconColor',
+    }
 ];
 
 export const hoursLocation2 = [
@@ -83,13 +85,7 @@ export const contactsLocation3 = [
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
 
-    {
-        id: 1,
-        label: 'Phone:',
-        data: '(606) 584-3434',
-        redirect: 'tel:6065843434',
-        class: 'fas fa-phone mr-2 iconColor',
-    },
+    
     {
         id: 2,
         label: 'Email:',
@@ -97,6 +93,13 @@ export const contactsLocation3 = [
         redirect: 'mailto:aasecurestorage751@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
     },
+    {
+        id: 1,
+        label: 'Phone:',
+        data: '(606) 584-3434',
+        redirect: 'tel:6065843434',
+        class: 'fas fa-phone mr-2 iconColor',
+    }
 ];
 
 export const hoursLocation3 = [
@@ -122,13 +125,7 @@ export const contactsLocation4 = [
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
 
-    {
-        id: 1,
-        label: 'Phone:',
-        data: '(606) 584-3434',
-        redirect: 'tel:6065843434',
-        class: 'fas fa-phone mr-2 iconColor',
-    },
+    
     {
         id: 2,
         label: 'Email:',
@@ -136,6 +133,13 @@ export const contactsLocation4 = [
         redirect: 'mailto:aasecurestorage751@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
     },
+    {
+        id: 1,
+        label: 'Phone:',
+        data: '(606) 584-3434',
+        redirect: 'tel:6065843434',
+        class: 'fas fa-phone mr-2 iconColor',
+    }
 ];
 
 export const hoursLocation4 = [
