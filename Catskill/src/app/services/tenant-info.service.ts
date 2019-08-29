@@ -7,7 +7,7 @@ import { environment } from '../../environments/environment';
 
 const baseUrl = environment.baseUrl;
 
-var token = localStorage.getItem('strTenantToken');
+const token = localStorage.getItem('strTenantToken');
 
 // const token = environment.authToken;
 

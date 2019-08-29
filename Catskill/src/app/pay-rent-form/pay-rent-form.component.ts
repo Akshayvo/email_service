@@ -39,6 +39,7 @@ export class PayRentFormComponent implements OnInit {
 
   signUp = {};
 
+  logOut = {};
 
   constructor(
     private formBuilder: FormBuilder,
@@ -66,10 +67,10 @@ export class PayRentFormComponent implements OnInit {
       }),
     });
 
-    let newYear = new Date().getFullYear(); 
-    for(let i = 1; i<15; i++) {
-      newYear = newYear + 1;
+    let newYear = new Date().getFullYear();
+    for (let i = 1; i < 15; i++) {
       this.year.push(newYear);
+      newYear = newYear + 1;
     }
    }
 
@@ -127,12 +128,12 @@ export class PayRentFormComponent implements OnInit {
       );
   }
 
-  signOut(signOut: any) {
+  signOut(logOut: any) {
     console.log('sign out method is working');
-    localStorage.removeItem('strTenantToken');
-    this.signOutService.signOut(signOut)
+    this.signOutService.signOut(logOut)
     .subscribe( result => {
       console.log('logged out', result);
+      localStorage.removeItem('strTenantToken');
     }, (err) => {
     }
     );

@@ -26,7 +26,7 @@ export class SignOutService {
 
   constructor(private http: HttpClient) { }
 
-  signOut(signOut: any): Observable<any> {
-    return this.http.post<any>(this.signOutUrl, httpOptions);
+  signOut(logOut: any): Observable<any> {
+    return this.http.post<any>(this.signOutUrl, logOut, httpOptions);
   }
 }
