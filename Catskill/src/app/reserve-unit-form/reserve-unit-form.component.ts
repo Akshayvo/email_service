@@ -41,6 +41,9 @@ export class ReserveUnitFormComponent implements OnInit {
 
   MonthlyRateValue: number;
 
+  defaultValue: number;
+
+
   constructor(
     private formBuilder: FormBuilder,
     private addTenantService: AddTenantService,
@@ -73,13 +76,13 @@ export class ReserveUnitFormComponent implements OnInit {
 
   initPeriodDescription() {
     return this.formBuilder.group({
-      PeriodDescription: ['']
+      PeriodDescription: ['Monthly']
     });
   }
 
   initLstUnitTypes() {
     return this.formBuilder.group({
-      Description: [''],
+      Description: ['05 x 10 - Tall Door'],
       MonthlyRate: [''],
       ReservationFee: [''],
     });
@@ -89,6 +92,9 @@ export class ReserveUnitFormComponent implements OnInit {
   ngOnInit() {
     this.getData(this.unitTypes);
     this.getRentalPeriod(this.rentalPeriod);
+    const currentdate = new Date();
+    console.log(currentdate);
+    
   }
 
   get f() { return this.reserveUnitForm.controls; }
@@ -131,6 +137,7 @@ export class ReserveUnitFormComponent implements OnInit {
     this.fetchDataService.getData(UnitTypes)
       .subscribe(UnitTypes => {
       this.lstUnitTypes = UnitTypes.lstUnitTypes;
+      this.defaultValue = UnitTypes.lstUnitTypes[0].MonthlyRate;
     });
   }
 
@@ -138,6 +145,7 @@ export class ReserveUnitFormComponent implements OnInit {
     this.fetchDataService.getRentalPeriod(RentalPeriod)
       .subscribe(RentalPeriod => {
         this.LstRentalPeriods = RentalPeriod.lstRentalPeriods;
+
       });
   }
 

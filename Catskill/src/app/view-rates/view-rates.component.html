@@ -13,9 +13,9 @@
             <table>
               <tHead [class.display]="!showTable">
                   <tr >
-                    <th colspan="2" class="px-4 " >Size</th>
-                    <th colspan="2" class="px-4 " >Rate</th>
-                    <th colspan="2" class="px-4 " >Reserve a Unit</th>
+                    <th colspan="2" class="px-4 py-1" >Size</th>
+                    <th colspan="2" class="px-4 py-1" >Rate</th>
+                    <th colspan="2" class="px-4 py-1" >Reserve a Unit</th>
                   </tr>
                 </tHead>
             <tbody  >
@@ -24,10 +24,11 @@
                     {{LstUnitTypes.Description}}
                 </td>
                 <td colspan="2" class="px-4 border">
-                    ${{LstUnitTypes.MonthlyRate}}
+                    <span *ngIf="LstUnitTypes.MonthlyRate != null">$</span>{{LstUnitTypes.MonthlyRate}}
                 </td>
                 <td colspan="2" class="py-2 px-4 border">
-                    <a class="btn btn-lg btn-primary" (click)="handleClick($event)" role="button">Reserve</a>
+                    <!-- <a class="btn btn-lg " (click)="handleClick($event)" role="button">Reserve</a> -->
+                    <button (click)="handleClick($event)"> Reserve</button>
                 </td>
                 </tr>
             </tbody>
