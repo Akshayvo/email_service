@@ -57,16 +57,16 @@ export class PayRentFormComponent implements OnInit {
     this.payRentForm = this.formBuilder.group({
       objPayment: this.formBuilder.group({
         CCAccountNumber: ['', Validators.required],
-        CCAccountName: [''],
-        CCExpirationMonth: [''],
-        CCExpirationYear: [''],
+        CCAccountName: ['', Validators.required],
+        CCExpirationMonth: ['', Validators.required],
+        CCExpirationYear: ['', Validators.required],
         CCAccountCVV2: [''],
-        CCAccountBillingAddress: [''],
-        CCAccountZIP: [''],
+        CCAccountBillingAddress: ['', Validators.required],
+        CCAccountZIP: ['', Validators.required],
         SignUpForAutoPay: false,
         PaymentAmount: ['', Validators.required],
         PayType: this.formBuilder.group({
-          PayTypeDescription: [''],
+          PayTypeDescription: ['', Validators.required],
           PayTypeID: [''],
         })
       }),
@@ -200,5 +200,11 @@ export class PayRentFormComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
+
+    if (this.payRentForm.invalid) {
+      return;
+    } else {
+      this.getPayment(this.payRentForm.value);
+    }
   }
 }

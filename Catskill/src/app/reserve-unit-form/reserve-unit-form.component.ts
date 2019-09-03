@@ -70,7 +70,7 @@ export class ReserveUnitFormComponent implements OnInit {
       lstRentalPeriods: new FormArray([
         this.initPeriodDescription(),
       ]),
-      dteMoveIn: ['']
+      dteMoveIn: ['', Validators.required]
     });
   }
 
@@ -83,8 +83,8 @@ export class ReserveUnitFormComponent implements OnInit {
   initLstUnitTypes() {
     return this.formBuilder.group({
       Description: ['05 x 10 - Tall Door'],
-      MonthlyRate: [''],
-      ReservationFee: [''],
+      MonthlyRate: ['65'],
+      ReservationFee: ['0.00'],
     });
   }
 
@@ -94,7 +94,6 @@ export class ReserveUnitFormComponent implements OnInit {
     this.getRentalPeriod(this.rentalPeriod);
     const currentdate = new Date();
     console.log(currentdate);
-    
   }
 
   get f() { return this.reserveUnitForm.controls; }

@@ -1,6 +1,5 @@
  <div>
-    <div [class.loader]="showLoader"  *ngIf="!showPayRent && allowedToshow">
-    </div>
+    
 
         <div>
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
@@ -12,6 +11,8 @@
                     </button>
                 </div>
             </div>
+            <div [class.loader]="showLoader"  *ngIf="!showPayRent && allowedToshow">
+                </div>
             <div class="row">
               <div class="form-group col-lg-6 col-12">
                   <label>UserName</label> &nbsp;

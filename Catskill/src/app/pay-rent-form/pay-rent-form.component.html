@@ -2,11 +2,13 @@
   <h2 class="pb-1">Payment</h2>
   <form [formGroup]="payRentForm" (ngSubmit)="onSubmit()" class="pt-3">
       <div formGroupName="objPayment" class="">
-        <div formGroupName="PayType">
-          <div  class="form-group">
+        <div formGroupName="PayType" class="row">
+          <div  class="form-group col-lg-4">
             <label for="lstPayTypes">Card Type*</label>&nbsp;
-            <select formControlName="PayTypeDescription" [id]="lstPayTypes?.PayTypeDescription" 
-            (change)="selectChangeHandler($event)">
+            <select class="form-control" formControlName="PayTypeDescription" [id]="lstPayTypes?.PayTypeDescription" 
+            (change)="selectChangeHandler($event)"
+            [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.PayType.controls.PayTypeDescription.errors }"
+            >
                 <option *ngFor="let lstPayTypes of lstPayTypes"
                 [value]="lstPayTypes?.PayTypeDescription"
                 >
@@ -14,6 +16,11 @@
                 
                 </option>
             </select>
+            <div *ngIf="submitted && f.objPayment.controls.PayType.controls.PayTypeDescription.errors" class="invalid-feedback">
+                <small class="form-text text-muted" *ngIf="f.objPayment.controls.PayType.controls.PayTypeDescription.errors.required">
+                  Please fill out this field
+                </small>
+            </div>
           </div>
           <div class="form-group">
               <input type="hidden" formControlName="PayTypeID" [value]="PayTypeIDValue" />
@@ -37,80 +44,106 @@
           </span>
         </div>
       </div>
-      
-      <div class="form-group">
-        <label>Credit Card Number*</label>&nbsp;
-        <input type="text" formControlName="CCAccountNumber" 
-        [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountNumber.errors }"
-        />
-        <div *ngIf="submitted && f.objPayment.controls.CCAccountNumber.errors" class="invalid-feedback">
-            <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountNumber.errors.required">
-              Please fill out this field
-            </small>
-        </div>
-      </div>
-  
-      <div class="form-group">
-        <label>Cardholder's Name*</label>&nbsp;
-        <input type="text" formControlName="CCAccountName" 
-        [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountName.errors }"
-        />
-        <div *ngIf="submitted && f.objPayment.controls.CCAccountName.errors" class="invalid-feedback">
-            <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountName.errors.required">
-              Please fill out this field
-            </small>
-        </div>
-      </div>
-  
-      <div class="form-group">
-        <label>Expiration Date*</label>&nbsp;
-            <span  class="">
-          <select formControlName="CCExpirationMonth" [id]="month?.id" >
-              <option *ngFor="let month of month"
-              [value]="month?.id"
-              >
-              {{month.label}}   
-              </option>
-          </select>
-        </span>
-        &nbsp;
-        <span  class="">
-          <select formControlName="CCExpirationYear" [id]="year" >
-              <option *ngFor="let year of year"
-              [value]="year"
-              >
-              {{year}}   
-              </option>
-          </select>
-      </span>
-      </div>
-  
-      <div class="form-group">
-        <label>CVV2</label>&nbsp;
-        <input type="text" formControlName="CCAccountCVV2" />
-      </div>
-  
-      <div class="form-group">
-        <label>Cardholder's Address*</label>&nbsp;
-        <input type="text" formControlName="CCAccountBillingAddress" 
-        [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountBillingAddress.errors }"
-        />
-        <div *ngIf="submitted && f.objPayment.controls.CCAccountBillingAddress.errors" class="invalid-feedback">
-            <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountBillingAddress.errors.required">
-              Please fill out this field
-            </small>
-        </div>
-      </div>
-      
-        <div class="form-group">
-          <label>Zip/Postal Code*</label>&nbsp;
-          <input type="text" formControlName="CCAccountZIP" 
-          [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountZIP.errors }"
+
+      <div class="form-group row">
+        <div class="col-lg-4">
+          <label>Cardholder's Name*</label>&nbsp;
+          <input type="text" class="form-control" formControlName="CCAccountName" 
+          [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountName.errors }"
           />
-          <div *ngIf="submitted && f.objPayment.controls.CCAccountZIP.errors" class="invalid-feedback">
-              <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountZIP.errors.required">
+          <div *ngIf="submitted && f.objPayment.controls.CCAccountName.errors" class="invalid-feedback">
+              <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountName.errors.required">
                 Please fill out this field
               </small>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-lg-4">
+            <label>Credit Card Number*</label>&nbsp;
+            <input  class="form-control" type="text" formControlName="CCAccountNumber" 
+            [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountNumber.errors }"
+            />
+            <div *ngIf="submitted && f.objPayment.controls.CCAccountNumber.errors" class="invalid-feedback">
+                <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountNumber.errors.required">
+                  Please fill out this field
+                </small>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="row ">
+          <div class="form-group col-lg-12">
+            <label>Expiration Date*</label>&nbsp;
+              <div  class="display-select">
+                <select  class="form-control custom-style" formControlName="CCExpirationMonth" [id]="month?.id" 
+                [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCExpirationMonth.errors }">
+
+                    <option *ngFor="let month of month"
+                    [value]="month?.id"
+                    >
+                    {{month.label}}   
+                    </option>
+                </select>
+                <div *ngIf="submitted && f.objPayment.controls.CCExpirationMonth.errors" class="invalid-feedback">
+                    <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCExpirationMonth.errors.required">
+                      Please fill out this field
+                    </small>
+                </div>
+                &nbsp;
+                <select class="form-control custom-style" formControlName="CCExpirationYear" [id]="year" 
+                [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCExpirationYear.errors }">
+                >
+                    <option *ngFor="let year of year"
+                    [value]="year"
+                    >
+                    {{year}}   
+                    </option>
+                </select>
+                <div *ngIf="submitted && f.objPayment.controls.CCExpirationYear.errors" class="invalid-feedback">
+                    <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCExpirationYear.errors.required">
+                      Please fill out this field
+                    </small>
+                </div>
+              </div>
+            </div>
+        </div>
+  
+        <div class="row">
+          <div class="form-group col-lg-4">
+            <label>CVV2</label>&nbsp;
+            <input type="text" class="form-control" formControlName="CCAccountCVV2" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-lg-4">
+            <label>Cardholder's Address*</label>&nbsp;
+            <input type="text" class="form-control" formControlName="CCAccountBillingAddress" 
+            [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountBillingAddress.errors }"
+            />
+            <div *ngIf="submitted && f.objPayment.controls.CCAccountBillingAddress.errors" class="invalid-feedback">
+                <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountBillingAddress.errors.required">
+                  Please fill out this field
+                </small>
+            </div>
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="form-group col-lg-4">
+            <label>Zip Code*</label>&nbsp;
+            <input type="text" class="form-control" formControlName="CCAccountZIP" 
+            [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountZIP.errors }"
+            />
+            <div *ngIf="submitted && f.objPayment.controls.CCAccountZIP.errors" class="invalid-feedback">
+                <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountZIP.errors.required">
+                  Please fill out this field
+                </small>
+            </div>
           </div>
         </div>
         <div class="form-group">
@@ -120,14 +153,15 @@
     </div>
 
 
+    <div class="row button-style">
+      <div class="form-group mr-3 col-lg-6">
+          <button type="submit" class="btn btn-primary">Make a Payment</button>
+      </div>
   
-    <div class="form-group">
-        <button type="submit" (click)="getPayment(this.payRentForm.value)" class="btn btn-primary">Make a Payment</button>
+      <div class="form-group col-lg-6">
+          <button (click)="signOut()" class="btn btn-primary">LogOff</button>
+      </div>  
     </div>
-
-    <div class="form-group">
-        <button (click)="signOut()" class="btn btn-primary">LogOff</button>
-    </div>  
   </form>
 </div>
 

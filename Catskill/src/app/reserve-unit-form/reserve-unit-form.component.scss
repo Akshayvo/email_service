@@ -11,3 +11,13 @@
     font-size: 1.8rem;
   }
 }
+
+.justify-content {
+  justify-content: space-between;
+}
+
+.readonly-form-control {
+  .form-control {
+    background-color: white;
+  }
+}
