@@ -89,6 +89,11 @@ h1 {
 .disp-mob {
   display: none;
 }
+@media screen and (min-width: 992px){
+  .pt-lg-4{
+    padding-top: 0.5rem!important;
+  }
+}
 
 @media screen and (max-width: 991px) {
   .col-1 {
