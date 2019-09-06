@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
   constructor(
     private router: Router,
     private angulatics: Angulartics2GoogleAnalytics,
-
   ) {
 
   }
@@ -25,7 +24,5 @@ export class AppComponent implements OnInit {
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
     const onNavigationEnd = this.router.events.pipe(filter(event => event instanceof NavigationEnd));
   }
-
-  
 }
 

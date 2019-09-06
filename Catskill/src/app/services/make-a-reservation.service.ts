@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { Payment, LstPayTypes } from '../models/payment';
 
 import { environment } from '../../environments/environment';
+import { Observable } from 'rxjs';
+
+import { MoveIn } from '../models/movein';
 
 const baseUrl = environment.baseUrl;
 
@@ -11,13 +12,13 @@ const baseUrl = environment.baseUrl;
 @Injectable({
   providedIn: 'root'
 })
-export class PaymentService {
+export class MakeAReservationService {
 
-  private paymentUrl = `${baseUrl}payment`;
+  private url = `${baseUrl}movein/reserve`
 
-  constructor(private http: HttpClient ) { }
+  constructor(private http: HttpClient) { }
 
-  getPayment(lstPayTypes: LstPayTypes[]): Observable<any> {
+  makeAReservation(MoveIn: MoveIn): Observable<any> {
     const token = localStorage.getItem('strTenantToken');
 
     const httpOptions = {
@@ -27,6 +28,7 @@ export class PaymentService {
         'Authorization': `Bearer ${token}`
       })
     };
-    return this.http.post<any>(this.paymentUrl, lstPayTypes, httpOptions);
+
+    return this.http.post<any>(this.url, MoveIn, httpOptions);
   }
 }

@@ -7,6 +7,7 @@ import { TenantInfoService } from '../services/tenant-info.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { PaymentService } from '../services/payment.service';
 import { SignOutService } from '../services/sign-out.service';
+import { PayTypeForResult } from '../models/payment';
 
 import {  month } from '../data/date';
 
@@ -24,27 +25,26 @@ export class PayRentFormComponent implements OnInit {
   payRentForm: FormGroup;
   payTypes: PayTypes;
   lstPayTypes: LstPayTypes[];
+  payTypeForResult: PayTypeForResult;
   selectedDescription: string;
   result: any;
-
   month: any;
-
+  PaymentAmount: number;
+  CCApprovalCode: string;
   year = [];
   textBox: any;
   tenant: any;
-
   PayTypeIDValue: number;
-
+  displayBalance: number;
   showInput = false;
-
   submitted = false;
   marked = false;
-
   signUp = {};
-
   logOut = {};
 
   otherValue = 0;
+
+  showSuccessPayment = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -85,11 +85,13 @@ export class PayRentFormComponent implements OnInit {
     this.getPayMethods(this.payTypes);
     this.fetchMonth();
     this.getTenantInfo(this.tenant);
-
-    // this.onChanges();
   }
 
   get f() { return this.payRentForm.controls; }
+
+  public navigate(location: any) {
+    this.router.navigate([location]);
+  }
 
   public fetchMonth() {
     this.month = month;
@@ -102,6 +104,7 @@ export class PayRentFormComponent implements OnInit {
     const  index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
 
     this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
+    
 
     this.payRentForm.patchValue({
       objPayment: {
@@ -127,7 +130,18 @@ export class PayRentFormComponent implements OnInit {
         if (tenantData) {
           const { Tenant } = tenantData;
           this.balance = Tenant.Balance;
-          console.log(this.balance);
+          if (this.balance < 0) {
+            this.displayBalance = Math.abs(this.balance);
+          } else {
+            this.displayBalance = this.balance;
+          }
+
+          
+          this.payRentForm.patchValue({
+            objPayment: {
+              PaymentAmount: this.balance,
+            }
+          })
         }
       }
       , (err) => {
@@ -138,32 +152,36 @@ export class PayRentFormComponent implements OnInit {
     this.fetchDataService.getPayMethods(PayTypes)
     .subscribe( PayTypes => {
         this.lstPayTypes = PayTypes.lstPayTypes;
+        const defaultDescription = this.lstPayTypes[3].PayTypeDescription;
+        const defaultPayTypeID = this.lstPayTypes[3].PayTypeID;
+        this.payRentForm.patchValue({
+          objPayment: {
+            PayType: {
+              PayTypeDescription: defaultDescription,
+              PayTypeID: defaultPayTypeID,
+            }
+          }
+        });
       }
     );
   }
 
   getPayment(paymentData) {
-   this.payRentForm.patchValue({
-      objPayment: {
-        PaymentAmount: this.otherValue,
-      }
-    });
     this.paymentService.getPayment(paymentData)
       .subscribe( paymentData => {
-        console.log('payment service worked', paymentData);
+        this.showSuccessPayment = true;
+        this.PaymentAmount = paymentData.PayTypeForResult.PaymentAmount;
+        this.CCApprovalCode = paymentData.PayTypeForResult.CCApprovalCode;
       }, (err) => {
       }
       );
   }
 
   signOut(logOut: any) {
-    console.log('sign out method is working');
     this.signOutService.signOut(logOut)
     .subscribe( result => {
-      console.log('logged out', result);
       localStorage.removeItem('strTenantToken');
       this.router.navigate(['/pay-rent/login']);
-
     }, (err) => {
     }
     );
@@ -179,7 +197,6 @@ export class PayRentFormComponent implements OnInit {
   signUpAutoPay(signUp: any) {
     this.tenantInfoService.signUpAutoPay(signUp)
       .subscribe( result => {
-        console.log(result);
       }, (err) => {
       });
   }
@@ -192,9 +209,8 @@ export class PayRentFormComponent implements OnInit {
            PaymentAmount: e.target.value,
          }
        });
- }, 0);
-
-  }
+      }, 0);
+    }
 
 
 

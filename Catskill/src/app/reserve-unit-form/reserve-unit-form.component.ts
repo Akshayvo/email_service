@@ -6,7 +6,8 @@ import { FetchDataService } from '../services/fetch-data.service';
 
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant } from '../models/tenant';
-import { setFlagsFromString } from 'v8';
+import { SignOutService } from '../services/sign-out.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -48,6 +49,8 @@ export class ReserveUnitFormComponent implements OnInit {
     private formBuilder: FormBuilder,
     private addTenantService: AddTenantService,
     private fetchDataService: FetchDataService,
+    private signOutService: SignOutService,
+    public router: Router,
     ) {
     this.reserveUnitForm = this.formBuilder.group({
       objTenant: this.formBuilder.group({
@@ -76,15 +79,15 @@ export class ReserveUnitFormComponent implements OnInit {
 
   initPeriodDescription() {
     return this.formBuilder.group({
-      PeriodDescription: ['Monthly']
+      PeriodDescription: ['']
     });
   }
 
   initLstUnitTypes() {
     return this.formBuilder.group({
-      Description: ['05 x 10 - Tall Door'],
-      MonthlyRate: ['65'],
-      ReservationFee: ['0.00'],
+      Description: [''],
+      MonthlyRate: [''],
+      ReservationFee: [''],
     });
   }
 
@@ -93,10 +96,13 @@ export class ReserveUnitFormComponent implements OnInit {
     this.getData(this.unitTypes);
     this.getRentalPeriod(this.rentalPeriod);
     const currentdate = new Date();
-    console.log(currentdate);
   }
 
   get f() { return this.reserveUnitForm.controls; }
+
+  public navigate(location: any) {
+    this.router.navigate([location]);
+  }
 
   handleClick() {
     this.submitted = true;
@@ -123,10 +129,13 @@ export class ReserveUnitFormComponent implements OnInit {
    const  index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
 
    this.MonthlyRateValue = this.lstUnitTypes[index].MonthlyRate;
+   const unitTypeId = this.lstUnitTypes[index].UnitTypeID;
+   console.log(unitTypeId);
+   
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
         MonthlyRate: this.MonthlyRateValue,
-        ReservationFee: 0.00,
+        // ReservationFee: 0.00,
       }
       ])
     });
@@ -137,6 +146,14 @@ export class ReserveUnitFormComponent implements OnInit {
       .subscribe(UnitTypes => {
       this.lstUnitTypes = UnitTypes.lstUnitTypes;
       this.defaultValue = UnitTypes.lstUnitTypes[0].MonthlyRate;
+      const defaultUnitTypeValue = UnitTypes.lstUnitTypes[0].Description;
+      this.reserveUnitForm.patchValue({
+        lstUnitTypes: ([{
+          Description: defaultUnitTypeValue,
+          MonthlyRate: this.defaultValue,
+          ReservationFee: 0.00,
+        }])
+      })
     });
   }
 
@@ -144,8 +161,14 @@ export class ReserveUnitFormComponent implements OnInit {
     this.fetchDataService.getRentalPeriod(RentalPeriod)
       .subscribe(RentalPeriod => {
         this.LstRentalPeriods = RentalPeriod.lstRentalPeriods;
-
+        const defaultPeriodDescription = RentalPeriod.lstRentalPeriods[0].PeriodDescription;
+        this.reserveUnitForm.patchValue({
+          lstRentalPeriods: ([{
+            PeriodDescription: defaultPeriodDescription,
+          }])
+        })
       });
+
   }
 
   addTenant(objTenantDetail: any): void {
@@ -153,6 +176,17 @@ export class ReserveUnitFormComponent implements OnInit {
       .subscribe(result => {
       this.successMessage = true;
       });
+  }
+
+  signOut(logOut: any) {
+    this.signOutService.signOut(logOut)
+    .subscribe( result => {
+      console.log('logged out', result);
+      localStorage.removeItem('strTenantToken');
+      this.router.navigate(['/pay-rent/login']);
+    }, (err) => {
+    }
+    );
   }
 
   onSubmit() {

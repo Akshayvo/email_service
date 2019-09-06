@@ -28,6 +28,9 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
 
+import { SelectDropDownModule } from 'ngx-select-dropdown'
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +59,7 @@ import { ConfirmationDataComponent } from './confirmation-data/confirmation-data
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    SelectDropDownModule
   ],
   providers: [
     Title,

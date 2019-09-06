@@ -65,3 +65,14 @@ export class LstPayTypes {
     this.IsCreditCard = IsCreditCard;
   }
 }
+
+
+export class PayTypeForResult {
+  CCApprovalCode: string;
+  PaymentAmount: number;
+
+  constructor(CCApprovalCode: string, PaymentAmount: number) {
+    this.CCApprovalCode = CCApprovalCode;
+    this.PaymentAmount = PaymentAmount;
+  }
+}
