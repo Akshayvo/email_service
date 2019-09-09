@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { ObjTenant, ObjTenantDetail } from '../models/tenant';
+import { ObjTenant, ObjTenantDetail, StrTempTenantToken} from '../models/tenant';
 
 import { environment } from '../../environments/environment';
 
@@ -30,8 +30,8 @@ export class AddTenantService {
 
   constructor(private http: HttpClient) { }
 
-  addTenant(objTenantDetail: ObjTenantDetail): Observable<ObjTenantDetail> {
-    return this.http.post<ObjTenantDetail>(this.url, objTenantDetail, httpOptions);
+  addTenant(StrTempTenantToken: StrTempTenantToken): Observable<StrTempTenantToken> {
+    return this.http.post<StrTempTenantToken>(this.url, StrTempTenantToken, httpOptions);
   }
 
 }

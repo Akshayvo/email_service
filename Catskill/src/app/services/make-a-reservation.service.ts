@@ -4,7 +4,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Observable } from 'rxjs';
 
-import { MoveIn } from '../models/movein';
+import { StrConfirmation } from '../models/movein';
 
 const baseUrl = environment.baseUrl;
 
@@ -18,8 +18,8 @@ export class MakeAReservationService {
 
   constructor(private http: HttpClient) { }
 
-  makeAReservation(MoveIn: MoveIn): Observable<any> {
-    const token = localStorage.getItem('strTenantToken');
+  makeAReservation(StrConfirmation: StrConfirmation): Observable<any> {
+    const token = localStorage.getItem('strTempTenantToken');
 
     const httpOptions = {
       headers: new HttpHeaders({
@@ -29,6 +29,6 @@ export class MakeAReservationService {
       })
     };
 
-    return this.http.post<any>(this.url, MoveIn, httpOptions);
+    return this.http.post<any>(this.url, StrConfirmation, httpOptions);
   }
 }

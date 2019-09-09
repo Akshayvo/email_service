@@ -58,3 +58,12 @@ export class Tenant {
     this.Name = Name;
   }
 }
+
+
+export class StrTempTenantToken {
+  strTempTenantToken: string;
+
+  constructor(strTempTenantToken: string) {
+    this.strTempTenantToken = strTempTenantToken;
+  }
+}

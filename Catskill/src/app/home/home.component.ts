@@ -28,7 +28,6 @@ export class HomeComponent implements OnInit {
   authData: string;
   currentActive: any = 'HOME';
 
-
   constructor(
     private router: Router,
     private titleService: Title,
@@ -61,6 +60,7 @@ export class HomeComponent implements OnInit {
     this.fetchJumbotron();
     window.scrollTo(0, 0);
 
+  
     // this.showConfig();
     // const s = this._renderer2.createElement('script');
     // s.type = `application/ld+json`;
@@ -104,6 +104,8 @@ export class HomeComponent implements OnInit {
   //   }
   //   );
   // }
+
+
 
 
   public fetchContactDetails() {

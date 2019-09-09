@@ -126,7 +126,6 @@ export class PayRentFormComponent implements OnInit {
   getTenantInfo(tenant) {
     this.tenantInfoService.getTenantInfo(tenant)
       .subscribe( tenantData => {
-        console.log('tenant info', tenantData);
         if (tenantData) {
           const { Tenant } = tenantData;
           this.balance = Tenant.Balance;
@@ -188,7 +187,6 @@ export class PayRentFormComponent implements OnInit {
   }
 
   toggleEvent(e: any) {
-    console.log(this.payRentForm.value.objPayment.SignUpForAutoPay);
     if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
       this.signUpAutoPay(this.signUp);
     }

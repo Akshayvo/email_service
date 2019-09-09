@@ -4,5 +4,10 @@ export const environment = {
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   appId: 'Catskill',
-  VERSION: require('../../package.json').version
+  VERSION: require('../../package.json').version,
+  baseUrl: `https://simapi.syrasoft.com/10.1.0.999/api/`,
+  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
+  // baseUrl: `https://simapi.syrasoft.com/1/api/`,
+  APIKey: `MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
+  // baseUrl: `http://localhost:60444/api/`,
 };

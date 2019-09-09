@@ -8,8 +8,7 @@ export class MoveIn {
     }
 }
 
-
-export class MoveInResponse {
+export class StrConfirmation {
     strConfirmation: string;
 
     constructor(strConfirmation: string) {

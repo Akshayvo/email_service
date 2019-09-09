@@ -48,8 +48,6 @@ export class ViewRatesComponent implements OnInit {
   }
 
   handleClick(event: Event) {
-    console.log(event);
-
     this.openComponent = true;
   }
 

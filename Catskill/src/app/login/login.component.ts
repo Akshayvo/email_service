@@ -100,11 +100,7 @@ export class LoginComponent implements OnInit {
         auth => {
           this.showPayRent = true;
           this.authData = auth.strTenantToken;
-
-          const tokenVariable = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
-          environment.authToken = this.authData;
-          console.log(environment.authToken);
           this.router.navigate(['/pay-rent/payment']);
             // this.getTenantInfo(this.tenant);
             // setTimeout(() => {

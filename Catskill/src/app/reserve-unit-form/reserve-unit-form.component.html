@@ -1,14 +1,38 @@
 <div class="reserve-unit-form">
+        <!-- *ngIf="successMessage; else other_content"  -->
     <div class="pb-4" *ngIf="successMessage; else other_content">
-       Your reservation was successful.
+       Your reservation was successful. 
+       <div class="py-4">
+           <table>
+               <tbody>
+                   <tr>
+                       <td class="td-1">Confirmation Number </td>
+                       <td> <div class="loader" *ngIf="!strConfirmation"></div>{{strConfirmation}}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-1">Unit Type</td>
+                        <td>{{this.reserveUnitForm.value.lstUnitTypes[0].Description}}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-1">Rate</td>
+                        <td> {{this.reserveUnitForm.value.lstUnitTypes[0].MonthlyRate}}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-1">Move-In date</td>
+                        <td>{{this.reserveUnitForm.value.dteMoveIn}}</td>
+                    </tr>
+                </tbody>
+           </table>
+       </div>
        <div>
-            <button (click)="signOut()" class="btn btn-primary">LogOff</button>
+            <button *ngIf="tokenExit" (click)="signOut()" class="btn btn-primary">LogOff</button>
+            <div class="py-3 home-link"><a (click)="navigate('/')">Go to Home</a></div>
         </div>
     </div>
     <ng-template #other_content>
         
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
-         <div *ngIf="count == 0 " class="row justify-content">
+         <div *ngIf="count == 0" class="row justify-content">
              <div formGroupName="objTenant" class="col-lg-7 ">
                  <h2 class="pb-3">Tenant Data</h2>
          
@@ -84,22 +108,29 @@
                                <small class="form-text text-muted" *ngIf="f.objTenant.controls.City.errors.required">Please fill out this field</small>
                            </div>
                        </div>
-                  <div class="col-lg-4 col-md-6 form-group">
-                               <label>State*</label>
-                               <input type="text" formControlName="State" class="form-control" placeholder="Enter State"
-                               [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }"/>
-                               <div *ngIf="submitted && f.objTenant.controls.State.errors" class="invalid-feedback">
-                                   <small class="form-text text-muted" *ngIf="f.objTenant.controls.State.errors.required">Please fill out this field</small>
-                               </div>
-                           </div>
-                            <div class="col-lg-4 col-md-6 form-group">
-                                   <label>Zip Code*</label>
-                                   <input type="text" formControlName="ZIP" class="form-control" placeholder="Enter Zip Code"
-                                   [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.ZIP.errors }"/>
-                                   <div *ngIf="submitted && f.objTenant.controls.ZIP.errors" class="invalid-feedback">
-                                       <small class="form-text text-muted" *ngIf="f.objTenant.controls.ZIP.errors.required">Please fill out this field</small>
-                                   </div>
-                               </div> 
+                <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
+                    <label>State*</label>
+                    <ngx-select-dropdown (change)="selectionChanged($event)" formControlName="State"
+                    [config]="config"  [options]="option"
+                    [style]="style"
+                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }"
+                    class="form-control  custom"
+                    ></ngx-select-dropdown>
+
+                    <!-- <input type="text" formControlName="State" class="form-control" placeholder="Enter State"
+                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }"/> -->
+                    <div *ngIf="submitted && f.objTenant.controls.State.errors" class="invalid-feedback">
+                        <small class="form-text text-muted" *ngIf="f.objTenant.controls.State.errors.required">Please fill out this field</small>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                    <label>Zip Code*</label>
+                    <input type="text" formControlName="ZIP" class="form-control" placeholder="Enter Zip Code"
+                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.ZIP.errors }"/>
+                    <div *ngIf="submitted && f.objTenant.controls.ZIP.errors" class="invalid-feedback">
+                        <small class="form-text text-muted" *ngIf="f.objTenant.controls.ZIP.errors.required">Please fill out this field</small>
+                    </div>
+                </div> 
                    </div>
                  </div>
                  
@@ -139,7 +170,8 @@
                  <div class=" pb-5">
                      <div class=" form-group">
                          <label>Move In Date*</label>&nbsp;
-                         <input type="date" class="form-control" [value]="currentdate" formControlName="dteMoveIn" [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }" />
+                         <input type="date" [min]="MinDate" [max]="MaxDate"
+                         class="form-control" [value]="currentDate" formControlName="dteMoveIn" [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }" />
                          <div *ngIf="submitted && f.dteMoveIn.errors" class="invalid-feedback">
                             <small class="form-text text-muted" *ngIf="f.dteMoveIn.errors.required">Please fill out this field</small>
                         </div>
@@ -162,7 +194,7 @@
          </div>
 
        
-            <app-confirmation-data *ngIf="count == 1" [reserveUnitForm]="reserveUnitForm"></app-confirmation-data>
+            <app-confirmation-data *ngIf="count == 1" [reserveUnitForm]="reserveUnitForm" [showConfirmation]=showConfirmation></app-confirmation-data>
 
             <div class="form-group text-right">
                 <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12" *ngIf="count === 0" (click)="handleClick()">Next</button>
@@ -175,8 +207,3 @@
 
 
 </div>
-
-<!-- <pre>{{reserveUnitForm.value | json}}</pre> -->
-
-
- 

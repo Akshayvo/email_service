@@ -5,9 +5,13 @@ import { AddTenantService } from '../services/add-tenant.service';
 import { FetchDataService } from '../services/fetch-data.service';
 
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods } from '../models/unittypes';
-import { ObjTenantDetail, ObjTenant } from '../models/tenant';
+import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { SignOutService } from '../services/sign-out.service';
 import { Router } from '@angular/router';
+import { MoveIn } from '../models/movein';
+import { MakeAReservationService } from '../services/make-a-reservation.service';
+
+import { option } from '../data/view-rates';
 
 
 @Component({
@@ -25,31 +29,69 @@ export class ReserveUnitFormComponent implements OnInit {
   objTenant: ObjTenant;
   objTenantDetail: ObjTenantDetail;
 
+  strTempTenantToken: StrTempTenantToken;
+
+  strConfirmation: string;
+
   successMessage = false;
 
   count = 0;
 
+  option: any;
+
   reserveUnitForm: FormGroup;
 
-
+  tokenExit: string;
+  
   submitted = false;
   rate: string;
   PeriodDescription: string;
-  MoveIn: Date;
   selectedDescription: string;
   ReservationFee: number;
   ReservationFeeValue: number;
-
+  
   MonthlyRateValue: number;
-
+  
   defaultValue: number;
+  unitTypeId: number;
+  currentdate: Date;
+  currentDate: string; 
+  minDate: Date;
+  maxDate: Date;
+  MinDate: string;
+  MaxDate: string;
 
+  showConfirmation = false;
+  options: any;
+
+  intLeadDaysFrom = 0;
+  intLeadDaysTo = 999; 
+
+  MoveIn = {
+    dteMoveIn: '',
+    intUnitTypeID: '',
+  }
+
+
+  config = {
+    displayKey:"description", //if objects array passed which key to be displayed defaults to description
+    search:true, //true/false for the search functionlity defaults to false,
+    height: '140px', //height of the list so that if there are more no of items it can show a scroll defaults to auto. With auto height scroll will never appear
+    placeholder:'Select State', // text to be displayed when no item is selected defaults to Select,
+    customComparator: ()=>{}, // a custom function using which user wants to sort the items. default is undefined and Array.sort() will be used in that case,
+    // limitTo: this.options.length, // a number thats limits the no of options displayed in the UI similar to angular's limitTo pipe
+    moreText: 'more', // text to be displayed whenmore than one items are selected like Option 1 + 5 more
+    noResultsFound: 'No results found!', // text to be displayed when no items are found while searching
+    searchPlaceholder:'Search', // label thats displayed in search input,
+    searchOnKey: 'name' // key on which search should be performed this will be selective search. if undefined this will be extensive search on all keys
+  }
 
   constructor(
     private formBuilder: FormBuilder,
     private addTenantService: AddTenantService,
     private fetchDataService: FetchDataService,
     private signOutService: SignOutService,
+    private makeAReservationService: MakeAReservationService,
     public router: Router,
     ) {
     this.reserveUnitForm = this.formBuilder.group({
@@ -91,12 +133,37 @@ export class ReserveUnitFormComponent implements OnInit {
     });
   }
 
-  // PeriodDescription: [''],
   ngOnInit() {
     this.getData(this.unitTypes);
     this.getRentalPeriod(this.rentalPeriod);
-    const currentdate = new Date();
+    localStorage.removeItem('strTempTenantToken');
+    const today = new Date();
+    this.minDate = new Date(today.getFullYear(),today.getMonth(),today.getDate()-this.intLeadDaysFrom);
+    this.maxDate = new Date(today.getFullYear(),today.getMonth(),today.getDate()+this.intLeadDaysTo);
+    this.currentdate = new Date(today.getFullYear(),today.getMonth(),today.getDate());
+    this.MinDate =  this.formatDate(this.minDate);
+    this.MaxDate = this.formatDate(this.maxDate);
+    this.currentDate = this.formatDate(this.currentdate);
+    this.fetchUSState();
   }
+
+   formatDate(date) {
+    let d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [year, month, day].join('-');
+}
+
+    public fetchUSState() {
+      this.option = option;
+    }
 
   get f() { return this.reserveUnitForm.controls; }
 
@@ -121,6 +188,10 @@ export class ReserveUnitFormComponent implements OnInit {
     }
   }
 
+  selectionChanged(event: any) {
+    
+  }
+
   selectChangeHandler (event: any) {
 
     this.selectedDescription = JSON.stringify(event.target.value);
@@ -129,13 +200,12 @@ export class ReserveUnitFormComponent implements OnInit {
    const  index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
 
    this.MonthlyRateValue = this.lstUnitTypes[index].MonthlyRate;
-   const unitTypeId = this.lstUnitTypes[index].UnitTypeID;
-   console.log(unitTypeId);
+    this.unitTypeId = this.lstUnitTypes[index].UnitTypeID;
+    this.MoveIn.intUnitTypeID = JSON.stringify(this.unitTypeId);
    
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
         MonthlyRate: this.MonthlyRateValue,
-        // ReservationFee: 0.00,
       }
       ])
     });
@@ -147,6 +217,7 @@ export class ReserveUnitFormComponent implements OnInit {
       this.lstUnitTypes = UnitTypes.lstUnitTypes;
       this.defaultValue = UnitTypes.lstUnitTypes[0].MonthlyRate;
       const defaultUnitTypeValue = UnitTypes.lstUnitTypes[0].Description;
+      this.MoveIn.intUnitTypeID = JSON.stringify(UnitTypes.lstUnitTypes[0].UnitTypeID);
       this.reserveUnitForm.patchValue({
         lstUnitTypes: ([{
           Description: defaultUnitTypeValue,
@@ -171,18 +242,30 @@ export class ReserveUnitFormComponent implements OnInit {
 
   }
 
-  addTenant(objTenantDetail: any): void {
-    this.addTenantService.addTenant(objTenantDetail)
+  addTenant(data: any): void {
+    this.addTenantService.addTenant(data)
       .subscribe(result => {
       this.successMessage = true;
-      });
+      localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
+      this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+      this.makeAReservation(this.MoveIn);
+    });
   }
 
+  makeAReservation(strConfirmation: any) {
+    this.makeAReservationService.makeAReservation(strConfirmation)
+    .subscribe(strConfirmation => {
+      this.strConfirmation = strConfirmation.strConfirmation;
+      this.showConfirmation = false;
+       this.tokenExit = localStorage.getItem('strTenantToken');
+    }); 
+  }
+  
   signOut(logOut: any) {
     this.signOutService.signOut(logOut)
     .subscribe( result => {
-      console.log('logged out', result);
       localStorage.removeItem('strTenantToken');
+      localStorage.removeItem('strTempTenantToken');
       this.router.navigate(['/pay-rent/login']);
     }, (err) => {
     }
@@ -191,12 +274,12 @@ export class ReserveUnitFormComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
+    this.showConfirmation = true;
     if (this.reserveUnitForm.invalid) {
       return;
     } else {
       this.addTenant(this.reserveUnitForm.value);
     }
-    console.log(this.reserveUnitForm.value);
   }
 }
 

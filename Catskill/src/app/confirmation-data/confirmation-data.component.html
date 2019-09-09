@@ -1,4 +1,5 @@
 <div [formGroup]="reserveUnitForm">
+        <div [class.loader]="showConfirmation"></div>
     <div class="row">
         <div class="col-lg-6 p-3">
             <h3 class="mb-3">Tenant Information</h3>
@@ -62,7 +63,7 @@
                     </tr>
                     <tr>
                         <td>
-                            State/Province
+                            State
                         </td>
                         <td>
                             {{this.reserveUnitForm.value.objTenant.State}}

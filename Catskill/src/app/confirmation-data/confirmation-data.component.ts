@@ -15,6 +15,8 @@ export class ConfirmationDataComponent implements OnInit {
 
 @Output() childEvent = new EventEmitter();
 
+@Input() showConfirmation = false;
+
 constructor() { }
 
 
@@ -28,6 +30,7 @@ addTenant(event: any) {
 
   onSubmit() {
     this.submitted = true;
+    // this.showConfirmation = true;
     if (this.reserveUnitForm.invalid) {
       return;
     } else {
