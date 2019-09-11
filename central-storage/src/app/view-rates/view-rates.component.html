@@ -13,7 +13,7 @@
         <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Central_Storage/central-storage-3.jpg" alt="photograph of a loading area with push carts and a large roll-up door" class="sectionImage" width="auto"/>
         <h3 class="my-3"><b>Please contact us for unit availability.</b></h3>
         <div class="mt-4 justify" *ngFor="let data of dataViewRates">
-          <p>{{data.p}}</p>
+          <p [innerHTML]="data.p"></p>
         </div>
       </div>
     </div>
