@@ -53,22 +53,22 @@ export const gettingStarted = `Are you ready to move in today or just looking to
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/jumbotorn-bottom-images/safe.png`,
-        label: 'Safe & Secure'
+        name: 'safe',
+        label: 'Safe & Secure',
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/jumbotorn-bottom-images/easy.png`,
+        name: 'easy',
         label: 'Temperature Controlled Units Available'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/jumbotorn-bottom-images/enviro.png`,
+        name: 'enviro',
         label: 'Convenient Location'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/jumbotorn-bottom-images/value.png`,
+        name: 'value',
         label: 'Easy Online Access'
     },
 ];

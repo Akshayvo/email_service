@@ -1,7 +1,13 @@
 @import "../../styles.scss";
+.jumbotron-background-webp{
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/webp/catskill-self-storage.webp");
+}
+.jombotron-background-jpg{
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/jpg/catskill-self-storage.jpg");
+}
 
 .jumbotron {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/catskill-hero.jpg");
+  // background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/catskill-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -96,7 +102,7 @@ h1 {
 
 @media only screen and (min-width: 1200px) {
   .jumbotorn-skew-text {
-    width: 425px;
+    width: 500px;
   }
 }
 

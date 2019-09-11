@@ -1,7 +1,6 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
-
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -22,6 +21,7 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
+import { UaParserService } from '../app/services/ua-parser.service';
 
 @NgModule({
   declarations: [

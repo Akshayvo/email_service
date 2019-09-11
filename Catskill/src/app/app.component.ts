@@ -2,6 +2,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { UaParserService } from '../app/services/ua-parser.service';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ export class AppComponent implements OnInit {
   title = 'Catskill';
   constructor(
     private router: Router,
-    private angulatics: Angulartics2GoogleAnalytics
+    private angulatics: Angulartics2GoogleAnalytics,
+    private uaParserService: UaParserService,
   ) {
 
   }
