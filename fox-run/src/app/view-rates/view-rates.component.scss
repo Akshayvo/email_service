@@ -26,27 +26,33 @@
   }
 
   .coming {
+    height: 389px;
     div {
-      height: 35rem;
+      height: 80rem;
       width: 100%;
       background: #efefef;
       font-size: 2rem;
       padding-top: 40%;
     }
   }
-}
-
-@media only screen and (max-width: 767px) {
-  iframe {
-    min-height: 600px;
+  .row{
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
+
+// @media only screen and (max-width: 767px) {
+//   iframe {
+//     min-height: 600px;
+//   }
+// }
 
 
 @media screen and (max-width: 600px) {
   iframe {
     overflow: hidden;
     overflow-x: auto;
+    // height:400px;
   }
 
   .contentHolder {
