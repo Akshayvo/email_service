@@ -7,9 +7,9 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:storeia@consolidated.net',
+        redirect: 'mailto:Storeit120vip@gmail.com',
         label: 'Email: ',
-        data: 'storeia@consolidated.net',
+        data: 'Storeit120vip@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
