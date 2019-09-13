@@ -26,7 +26,6 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
 import { ErrorHandlerService } from './services/error-handler.service';
 
-import { ReserveComponent } from './reserve/reserve.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 
 @NgModule({
@@ -43,7 +42,6 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
     StorageTipsComponent,
     AccordionComponent,
     ContactButtonComponent,
-    ReserveComponent,
     PayRentComponent,
     
   ],

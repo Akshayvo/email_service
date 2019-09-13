@@ -32,7 +32,7 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Central_Storage/online.svg',
-        label: 'Online Reservation & Bill Pay',
+        label: 'ONLINE BILL PAY',
         alt: 'Icon art displaying a screen with cursor'
     },
     {
@@ -52,32 +52,22 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Central Storage offers a variety of storage unit sizes in both regular outdoor units and climate-controlled units accessible 
-            24 hours a day, 7 days a week. We are conveniently located on Umptanum Road in Ellensburg, between the Interstate 90 overpass 
-            and Ruby Street.  You won't find a more convenient, and well-maintained facility than ours! `,
+        p: `Central Storage offers a variety of storage unit sizes in both regular outdoor units and climate-controlled units 
+            accessible 24 hours a day, 7 days a week. We are conveniently located on Umptanum Road in Ellensburg, between the Interstate 
+            90 overpass and Ruby Street. You won't find a more convenient, and well-maintained facility than ours!`,
     },
     {
-        p: `We understand that self storage is about more than just convenient hours and affordable rates. You need to know that the 
-            facility takes the safety of its customers and their belongings seriously. Our facility is well-lit and fully-fenced, to 
-            ensure our customers always feel safe when loading or unloading their units. Access is guarded by pin-code activated gate, 
-            and we have security cameras across the facility.`,
+        p: `We understand that self storage is about more than just convenient hours and affordable rates. You need to know that the facility
+            takes the safety of its customers and their belongings seriously. Our facility is well-lit and fully-fenced, to ensure our customers 
+            always feel safe when loading or unloading their units. Access is guarded by pin-code activated gate, and we have security cameras 
+            across the facility.`,
     },
     {
-        p: `Our friendly management team is here to help you find the perfect unit for your needs, and get settled in. Use our online 
-            tenant portal, or call today, and make your reservation!`
+        p: `Our friendly management team is here to help you find the perfect unit for your needs, and get settled in. Call today, and make your
+            reservation!`
     },    
 ];
 
 
 
 
-
-export const gettingStarted = `Are you ready to start de-cluttering your home, or recovering some of that elbow room around the office? 
-                               Click here to begin reserving your unit, or call our office and speak with our friendly management team!`;
-
-// export const blurb = [
-//     {
-//         h1: ``,
-//         p: ``,
-//     }
-// ];
