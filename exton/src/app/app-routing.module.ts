@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'unit-sizer', component: UnitSizerComponent},
   { path: 'pay-rent', component: PayRentComponent },
-  { path: 'reserve-unit', component: ReserveUnitComponent },
+  { path: 'rent-unit', component: ReserveUnitComponent },
   { path: 'review', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'

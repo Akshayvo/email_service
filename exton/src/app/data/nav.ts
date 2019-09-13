@@ -9,7 +9,7 @@ export const navLinks = [
     },
     {
         label: 'RENT UNIT',
-        path: '/reserve-unit'
+        path: '/rent-unit'
     },
     {
         label: 'UNIT SIZER',
