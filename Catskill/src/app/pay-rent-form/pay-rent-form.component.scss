@@ -18,12 +18,27 @@
 }
 
 .custom-style {
-  width: 80px;
+  width: 86px;
 }
 
 
 .display-none {
   display: none;
+}
+
+.modal-custom-style {
+  .btn {
+    display: contents;
+  }
+
+  .btn-link {
+    padding: 0;
+    text-decoration: underline;
+  }
+}
+
+.custom-balance-width {
+  min-width: 100px;
 }
 
 .loader {
@@ -44,9 +59,38 @@
   100% { transform: rotate(360deg); }
 }
 
+.loaderForPayment {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid $primary;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  left: 195px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 15%;
+}
+
 .go-to-home {
   a {
     text-decoration: underline;
     color: $primary;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+
+  .modal {
+    td, th {
+      font-size: 0.8rem;
+    }
+  }
+
+  .modal-dialog {
+      max-width: 650px;
+      margin: 1.75rem auto;
   }
 }

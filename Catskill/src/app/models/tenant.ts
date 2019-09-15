@@ -52,10 +52,52 @@ export class TenantInfo {
 export class Tenant {
   Balance: number;
   Name: string;
+  IsAutoPaymentsEnabled: boolean;
+  LastPaymentOn: Date;
+  LastPaymentAmount: number;
+  UnpaidAR: UnpaidAR;
 
-  constructor(Balance: number, Name: string) {
+  constructor(Balance: number, 
+    Name: string, 
+    IsAutoPaymentsEnabled: boolean,
+    LastPaymentOn: Date,
+    LastPaymentAmount: number,
+    UnpaidAR: UnpaidAR) {
+
     this.Balance = Balance;
     this.Name = Name;
+    this.IsAutoPaymentsEnabled = IsAutoPaymentsEnabled;
+    this.LastPaymentOn = LastPaymentOn;
+    this.LastPaymentAmount = LastPaymentAmount;
+    this.UnpaidAR = UnpaidAR;
+  }
+}
+
+export class UnpaidAR {
+  FromDate: string;
+  ToDate: Date;
+  Description: string;
+  Amount: number;
+  AmountOwed: number;
+  demoAmountOwed: number;
+  Comments: string;
+
+  constructor(
+    FromDate: string,
+    ToDate: Date,
+    Description: string,
+    Amount: number,
+    AmountOwed: number,
+    demoAmountOwed: number,
+    Comments: string
+  ) {
+    this.FromDate = FromDate;
+    this.ToDate = ToDate;
+    this.Description = Description;
+    this.Amount = Amount;
+    this.AmountOwed = AmountOwed;
+    this.demoAmountOwed = demoAmountOwed;
+    this.Comments = Comments;
   }
 }
 

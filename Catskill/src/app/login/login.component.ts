@@ -106,7 +106,7 @@ export class LoginComponent implements OnInit {
             // setTimeout(() => {
             //  localStorage.removeItem('strTenantToken');
             //  this.router.navigate(['/pay-rent/login']);
-            // }, 1000 * 60);
+            // }, 1000 * 3);
         }, (err) => {
           this.credentialsInvalid = true;
           this.showLoader = false;

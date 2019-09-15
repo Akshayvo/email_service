@@ -13,6 +13,11 @@ import { MakeAReservationService } from '../services/make-a-reservation.service'
 
 import { option } from '../data/view-rates';
 
+import { DatePipe } from '@angular/common';
+
+import {  environment } from "../../environments/environment";
+
+
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -37,8 +42,9 @@ export class ReserveUnitFormComponent implements OnInit {
 
   count = 0;
 
-  option: any;
+  // option: any;
 
+  option =  [];
   reserveUnitForm: FormGroup;
 
   tokenExit: string;
@@ -61,11 +67,14 @@ export class ReserveUnitFormComponent implements OnInit {
   MinDate: string;
   MaxDate: string;
 
+  From: string;
+  To: string;
+
   showConfirmation = false;
   options: any;
 
-  intLeadDaysFrom = 0;
-  intLeadDaysTo = 999; 
+  // intLeadDaysFrom = 0;
+  // intLeadDaysTo = 999; 
 
   MoveIn = {
     dteMoveIn: '',
@@ -93,6 +102,8 @@ export class ReserveUnitFormComponent implements OnInit {
     private signOutService: SignOutService,
     private makeAReservationService: MakeAReservationService,
     public router: Router,
+    private datePipe: DatePipe,
+
     ) {
     this.reserveUnitForm = this.formBuilder.group({
       objTenant: this.formBuilder.group({
@@ -117,6 +128,9 @@ export class ReserveUnitFormComponent implements OnInit {
       ]),
       dteMoveIn: ['', Validators.required]
     });
+
+    // this.reserveUnitForm.valueChanges.subscribe(data => console.log('Form changes', data));
+
   }
 
   initPeriodDescription() {
@@ -137,32 +151,44 @@ export class ReserveUnitFormComponent implements OnInit {
     this.getData(this.unitTypes);
     this.getRentalPeriod(this.rentalPeriod);
     localStorage.removeItem('strTempTenantToken');
-    const today = new Date();
-    this.minDate = new Date(today.getFullYear(),today.getMonth(),today.getDate()-this.intLeadDaysFrom);
-    this.maxDate = new Date(today.getFullYear(),today.getMonth(),today.getDate()+this.intLeadDaysTo);
-    this.currentdate = new Date(today.getFullYear(),today.getMonth(),today.getDate());
-    this.MinDate =  this.formatDate(this.minDate);
-    this.MaxDate = this.formatDate(this.maxDate);
-    this.currentDate = this.formatDate(this.currentdate);
+    // const today = new Date();
+    // this.minDate = new Date(today.getFullYear(),today.getMonth(),today.getDate()+this.intLeadDaysFrom);
+    // this.maxDate = new Date(today.getFullYear(),today.getMonth(),today.getDate()+this.intLeadDaysTo);
+    // this.currentdate = new Date(today.getFullYear(),today.getMonth(),today.getDate());
+    // this.MinDate =  this.formatDate(this.minDate);
+    // this.MaxDate = this.formatDate(this.maxDate);
+    // this.currentDate = this.formatDate(this.currentdate);
+
+    // console.log(this.currentDate, this.MinDate, this.MaxDate);
+    
+
+    this.currentdate = new Date();
+    
     this.fetchUSState();
+    
+    this.currentDate = this.datePipe.transform(new Date(), "yyyy-MM-dd");
+    let FromDate = this.currentdate.setDate(this.currentdate.getDate() + environment.intLeadDaysFrom);
+    let ToDate = this.currentdate.setDate(this.currentdate.getDate() + environment.intLeadDaysTo);
+    this.From = this.datePipe.transform(FromDate, "yyyy-MM-dd");
+    this.To = this.datePipe.transform(ToDate, "yyyy-MM-dd");
   }
 
-   formatDate(date) {
-    let d = new Date(date),
-        month = '' + (d.getMonth() + 1),
-        day = '' + d.getDate(),
-        year = d.getFullYear();
+//    formatDate(date) {
+//     let d = new Date(date),
+//         month = '' + (d.getMonth() + 1),
+//         day = '' + d.getDate(),
+//         year = d.getFullYear();
 
-    if (month.length < 2) 
-        month = '0' + month;
-    if (day.length < 2) 
-        day = '0' + day;
+//     if (month.length < 2) 
+//         month = '0' + month;
+//     if (day.length < 2) 
+//         day = '0' + day;
 
-    return [year, month, day].join('-');
-}
+//     return [year, month, day].join('-');
+// }
 
-    public fetchUSState() {
-      this.option = option;
+    public fetchUSState() {   
+    this.option = option.map(x => x.name);  
     }
 
   get f() { return this.reserveUnitForm.controls; }
@@ -189,7 +215,12 @@ export class ReserveUnitFormComponent implements OnInit {
   }
 
   selectionChanged(event: any) {
-    
+    console.log(event.value);
+    const index =  option.findIndex(x => x.name === event.value)
+    console.log(index);
+    console.log(option[index].abbreviation);
+    event.value = option[index].abbreviation;
+    console.log(event.value);
   }
 
   selectChangeHandler (event: any) {

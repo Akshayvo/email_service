@@ -28,7 +28,9 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
 
-import { SelectDropDownModule } from 'ngx-select-dropdown'
+import { SelectDropDownModule } from 'ngx-select-dropdown';
+import { DatePipe } from '@angular/common';
+
 
 
 @NgModule({
@@ -62,6 +64,7 @@ import { SelectDropDownModule } from 'ngx-select-dropdown'
     SelectDropDownModule
   ],
   providers: [
+    DatePipe,
     Title,
     {
       provide: ErrorHandler,

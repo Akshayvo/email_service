@@ -28,6 +28,8 @@ export class HomeComponent implements OnInit {
   authData: string;
   currentActive: any = 'HOME';
 
+  data: any;
+
   constructor(
     private router: Router,
     private titleService: Title,
@@ -59,7 +61,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
-
+    // this.getSimSettings(this.data);
   
     // this.showConfig();
     // const s = this._renderer2.createElement('script');
@@ -105,7 +107,12 @@ export class HomeComponent implements OnInit {
   //   );
   // }
 
-
+  // getSimSettings(data: any) {
+  //   this.simSettingsService.getSimSettings(data)
+  //     .subscribe(result => {
+  //       console.log(result);
+  //     });
+  // }
 
 
   public fetchContactDetails() {

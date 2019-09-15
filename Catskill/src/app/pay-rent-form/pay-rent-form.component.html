@@ -1,6 +1,6 @@
 <div class="payRent">
   <h2 class="pb-1">Payment</h2>
-  <div *ngIf="CCApprovalCode; else other"  class="go-to-home pt-4">
+  <div *ngIf="showSuccessPayment; else other"  class="go-to-home pt-4">
       Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .
       <div class="py-3"><a (click)="navigate('/')">Go to Home</a>
         <!-- &nbsp; &nbsp; &nbsp;<a (click)="navigate('/pay-rent/payment')">Make another payment</a> -->
@@ -8,9 +8,14 @@
   </div>
 
 <ng-template #other>
-
   <form [formGroup]="payRentForm" (ngSubmit)="onSubmit()" class="pt-3">
-      <div formGroupName="objPayment" class="">
+      <strong ><i  *ngIf="showloaderForPayment">Payment is under Processing...</i></strong>
+      <strong><i *ngIf="invalidPayment">{{invalidPayment}}</i></strong>
+    <div 
+    [class.loaderForPayment]="showloaderForPayment" 
+      >
+      </div>
+      <div formGroupName="objPayment" class="pt-3">
         <div formGroupName="PayType" class="row">
           <div  class="form-group col-lg-5">
             <label for="lstPayTypes">Card Type*</label>&nbsp;
@@ -37,26 +42,104 @@
               <input type="hidden" formControlName="PayTypeID" [value]="PayTypeIDValue" />
           </div>
         </div>
-    
-      <div class="form-group display">
-        <label>Amount*</label>
-        <div class="">
-          <label>&nbsp;
-            <input type="radio" [value]="balance" id="1" (change)="handleChange($event)" formControlName="PaymentAmount"  [checked]="balance">
-            <span class="loader" *ngIf="!balance"></span>
-            <span>Balance Due</span> &nbsp; <span *ngIf="balance < 0 ; else other"> (${{displayBalance}}) </span> 
-            <ng-template #other ><span *ngIf="balance">$</span>{{displayBalance}}</ng-template>
-          </label><br/>
-          <label>&nbsp;
-            <input type="radio" [value]="otherValue" id="2" (change)="handleChange($event)" formControlName="PaymentAmount">
-              <span>Other Amount</span>
-          </label>
-          &nbsp;
-          <span *ngIf="showInput == true">
-            <input type="text" [value]="otherValue" (keyup)="onKey($event)" name="text" >
+
+          <div class="form-group display">
+            <label>Amount*</label>
+            <div class="">
+              <label>&nbsp;
+                <input type="radio" [value]="balance" id="1" (change)="handleChange($event)" formControlName="PaymentAmount"  [checked]="balance != null">
+                <span class="loader" *ngIf="balance == null"></span>
+                <!-- *ngIf="balance == null" -->
+                <span>Balance Due</span> &nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance}}) </span> 
+                <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance}}</ng-template>
+              </label><br/>
+              
+              <label>&nbsp;
+                <input type="radio" [value]="otherValue" id="2" (change)="handleChange($event)" formControlName="PaymentAmount">
+                  <span>Other Amount</span>
+              </label>
+              &nbsp;
+              <span *ngIf="showInput == true">
+                <input type="text" formControlName="PaymentAmount" >
+              </span>
+            </div>
+           &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="modal-custom-style">
+                <!-- Button trigger modal -->
+            <button type="button" class="btn  btn-link ml-4" data-toggle="modal" data-target="#exampleModalLong">
+              Balance Detail
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"> Balance Detail</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <span>Balance</span> &nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance}}) </span> 
+                      <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance}}</ng-template>
+                    </div>
+                    <div>
+                      Last payment received: &nbsp;{{LastPaymentOn}}
+                    </div>
+                    <div>
+                        Last payment amount: <span *ngIf="LastPaymentAmount != null">$</span>{{LastPaymentAmount}}
+                    </div>
+                    <div  class="py-3"><strong>Detail:</strong></div>
+  
+                    <table> 
+                      <thead>
+                          <tr >
+                            <th colspan="2" class="px-2 py-1" >From Date</th>
+                            <th colspan="2" class="px-2 py-1" >To Date</th>
+                            <th colspan="2" class="px-2 py-1" >Description</th>
+                            <th colspan="2" class="px-2 py-1" >Amount</th>
+                            <th colspan="2" class="px-2 py-1" >Amount Owed</th>
+                            <th colspan="2" class="px-2 py-1" >Comments</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let UnpaidAR of UnpaidAR">
+                          <td  colspan="2" class="px-2 py-1">
+                              {{UnpaidAR.FromDate}}
+                          </td>
+                          <td  colspan="2" class="px-2 py-1">
+                              {{UnpaidAR.ToDate}}
+                          </td>
+                          <td  colspan="2" class="px-2 py-1">
+                              {{UnpaidAR.Description}}
+                          </td>
+                          <td  colspan="2" class="px-2 py-1 " *ngIf="UnpaidAR.Amount">
+                              ${{UnpaidAR.Amount}}
+                          </td>
+                          <td  colspan="2" class="px-2 py-1 ">
+                              {{UnpaidAR.demoAmountOwed}}
+                          </td>
+                          <td  colspan="2" class="px-2 py-1">
+                              {{UnpaidAR.Comments}}
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- <div *ngFor="let UnpaidAR of UnpaidAR"> 
+                      
+                      {{UnpaidAR.FromDate}}
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
           </span>
-        </div>
-      </div>
+          </div>
+    
+    
+
 
       <div class="form-group row">
         <div class="col-lg-5">
@@ -164,14 +247,14 @@
           </div>
         </div>
         <div class="form-group">
-          <input type="checkbox" formControlName="SignUpForAutoPay" (change)="toggleEvent()"/> &nbsp;
+          <input type="checkbox" formControlName="SignUpForAutoPay" (change)="toggleEvent()"  [checked]="IsAutoPaymentsEnabled" /> &nbsp;
           <label>Sign up for Auto Pay</label>
         </div>
     </div>
 
 
       <div class="form-group mr-3 row button-style">
-        <div class="col-lg-6 text-center">
+        <div class="col-lg-6">
           <button type="submit" class="btn btn-primary">Make a Payment</button>
         </div>
       </div>
@@ -186,3 +269,5 @@
     </div>
   </div>  
 </div>
+
+<pre>{{payRentForm.value | json}}</pre>
