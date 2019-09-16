@@ -11,11 +11,14 @@ import { Router } from '@angular/router';
 import { MoveIn } from '../models/movein';
 import { MakeAReservationService } from '../services/make-a-reservation.service';
 
+
+
 import { option } from '../data/view-rates';
 
 import { DatePipe } from '@angular/common';
 
 import {  environment } from "../../environments/environment";
+import { TenantInfoService } from '../services/tenant-info.service';
 
 
 
@@ -39,6 +42,8 @@ export class ReserveUnitFormComponent implements OnInit {
   strConfirmation: string;
 
   successMessage = false;
+
+  dataModel: any;
 
   count = 0;
 
@@ -76,6 +81,10 @@ export class ReserveUnitFormComponent implements OnInit {
   // intLeadDaysFrom = 0;
   // intLeadDaysTo = 999; 
 
+  optionAbbreviation: any;
+
+  valueOfString: any;
+
   MoveIn = {
     dteMoveIn: '',
     intUnitTypeID: '',
@@ -92,7 +101,7 @@ export class ReserveUnitFormComponent implements OnInit {
     moreText: 'more', // text to be displayed whenmore than one items are selected like Option 1 + 5 more
     noResultsFound: 'No results found!', // text to be displayed when no items are found while searching
     searchPlaceholder:'Search', // label thats displayed in search input,
-    searchOnKey: 'name' // key on which search should be performed this will be selective search. if undefined this will be extensive search on all keys
+    searchOnKey: 'name', // key on which search should be performed this will be selective search. if undefined this will be extensive search on all keys
   }
 
   constructor(
@@ -101,6 +110,7 @@ export class ReserveUnitFormComponent implements OnInit {
     private fetchDataService: FetchDataService,
     private signOutService: SignOutService,
     private makeAReservationService: MakeAReservationService,
+    private tenantInfoService: TenantInfoService,
     public router: Router,
     private datePipe: DatePipe,
 
@@ -189,6 +199,8 @@ export class ReserveUnitFormComponent implements OnInit {
 
     public fetchUSState() {   
     this.option = option.map(x => x.name);  
+    // this.optionAbbreviation = option.map(x => x.abbreviation);
+    // this.option = option;
     }
 
   get f() { return this.reserveUnitForm.controls; }
@@ -215,12 +227,11 @@ export class ReserveUnitFormComponent implements OnInit {
   }
 
   selectionChanged(event: any) {
-    console.log(event.value);
-    const index =  option.findIndex(x => x.name === event.value)
-    console.log(index);
-    console.log(option[index].abbreviation);
-    event.value = option[index].abbreviation;
-    console.log(event.value);
+    this.valueOfString = option.find(x => x.name === event.value);
+    console.log(event.value.abbreviation);
+    this.optionAbbreviation = this.valueOfString.abbreviation;
+    console.log(this.valueOfString.abbreviation, event.value)
+    
   }
 
   selectChangeHandler (event: any) {
@@ -228,9 +239,9 @@ export class ReserveUnitFormComponent implements OnInit {
     this.selectedDescription = JSON.stringify(event.target.value);
 
     const indexValue  = event.target.value;
-   const  index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
+    const  index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
 
-   this.MonthlyRateValue = this.lstUnitTypes[index].MonthlyRate;
+    this.MonthlyRateValue = this.lstUnitTypes[index].MonthlyRate;
     this.unitTypeId = this.lstUnitTypes[index].UnitTypeID;
     this.MoveIn.intUnitTypeID = JSON.stringify(this.unitTypeId);
    
@@ -276,11 +287,19 @@ export class ReserveUnitFormComponent implements OnInit {
   addTenant(data: any): void {
     this.addTenantService.addTenant(data)
       .subscribe(result => {
-      this.successMessage = true;
       localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
       this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
       this.makeAReservation(this.MoveIn);
     });
+  }
+
+  updateTenant(data: any) {
+    this.tenantInfoService.updateTenant(data)
+      .subscribe(result => {
+        console.log(result);
+        this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+        this.makeAReservation(this.MoveIn);
+      });
   }
 
   makeAReservation(strConfirmation: any) {
@@ -304,12 +323,18 @@ export class ReserveUnitFormComponent implements OnInit {
   }
 
   onSubmit() {
+     const existingTenantToken = localStorage.getItem('strTenantToken');
+
     this.submitted = true;
     this.showConfirmation = true;
     if (this.reserveUnitForm.invalid) {
       return;
     } else {
-      this.addTenant(this.reserveUnitForm.value);
+      if (existingTenantToken) {
+        this.updateTenant(this.reserveUnitForm.value);
+      } else {
+        this.addTenant(this.reserveUnitForm.value);
+      }
     }
   }
 }

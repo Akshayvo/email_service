@@ -13,6 +13,8 @@ export class TenantInfoService {
 
   private url = `${baseUrl}tenant`;
 
+  private updateTenantUrl = `${baseUrl}tenant/`;
+
   private signUpAutoPayUrl = `${baseUrl}tenant/autopaysignup`;
 
   private OptionOutOfAutoPayUrl = `${baseUrl}tenant/autopayoptout`;
@@ -31,6 +33,18 @@ export class TenantInfoService {
       })
     };
     return this.http.get<any>(this.url,  httpOptions);
+  }
+
+  updateTenant(tenant: any): Observable<any> {
+    const token = localStorage.getItem('strTenantToken');
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'APIKey':  `${environment.APIKey}`,
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
+      })
+    };
+    return this.http.post<any>(this.updateTenantUrl, tenant, httpOptions);
   }
 
   signUpAutoPay(signUp: any): Observable<any> {

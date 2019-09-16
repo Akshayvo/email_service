@@ -31,6 +31,8 @@ import { ConfirmationDataComponent } from './confirmation-data/confirmation-data
 import { SelectDropDownModule } from 'ngx-select-dropdown';
 import { DatePipe } from '@angular/common';
 
+import { NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 
 
 @NgModule({
@@ -62,6 +64,10 @@ import { DatePipe } from '@angular/common';
     ReactiveFormsModule,
     HttpClientModule,
     SelectDropDownModule
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
   ],
   providers: [
     DatePipe,

@@ -159,16 +159,13 @@ export class PayRentFormComponent implements OnInit {
           console.log( typeof(this.UnpaidAR), Tenant.UnpaidAR);
 
           for (let i in this.UnpaidAR) {
-            // const date = UnpaidAR[i].FromDate;
+            // const date = this.UnpaidAR[i].FromDate;
             // console.log(date);
-            // this.UnpaidAR[i].FromDate = this.datePipe.transform(UnpaidAR[i].FromDate, "dd/MM/yyyy");
+            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, "dd/MM/yyyy");
+            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, "dd/MM/yyyy");
+
             if (this.UnpaidAR[i].AmountOwed < 0) {
-              // this.UnpaidAR[i].demoAmountOwed = Math.abs(this.UnpaidAR[i].AmountOwed);
-              // console.log(this.UnpaidAR[i].AmountOwed);
-              return this.UnpaidAR[i].demoAmountOwed;
-            } else {
               this.UnpaidAR[i].demoAmountOwed = Math.abs(this.UnpaidAR[i].AmountOwed);
-              return ;
             }
           }
         

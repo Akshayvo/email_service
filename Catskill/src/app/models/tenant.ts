@@ -75,7 +75,7 @@ export class Tenant {
 
 export class UnpaidAR {
   FromDate: string;
-  ToDate: Date;
+  ToDate: string;
   Description: string;
   Amount: number;
   AmountOwed: number;
@@ -84,7 +84,7 @@ export class UnpaidAR {
 
   constructor(
     FromDate: string,
-    ToDate: Date,
+    ToDate: string,
     Description: string,
     Amount: number,
     AmountOwed: number,

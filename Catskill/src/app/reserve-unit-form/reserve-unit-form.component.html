@@ -1,6 +1,6 @@
 <div class="reserve-unit-form">
         <!-- *ngIf="successMessage; else other_content"  -->
-    <div class="pb-4" *ngIf="successMessage; else other_content">
+    <div class="pb-4" *ngIf="strConfirmation; else other_content">
        Your reservation was successful. 
        <div class="py-4">
            <table>
@@ -110,15 +110,29 @@
                        </div>
                 <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
                     <label>State*</label>
+                    <!-- *ngFor="let option of option" -->
                     <ngx-select-dropdown
                     (change)="selectionChanged($event)" 
-                    formControlName="State"
-                    [config]="config" 
                     [options]="option"
+                    [(value)]="optionAbbreviation"
+                    formControlName="State"
+                    [(ngModel)]="optionAbbreviation"
+                    [config]="config" 
                     [style]="style"
+                    [multiple]="false"
                     [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }"
                     class="form-control  custom"
-                    ></ngx-select-dropdown>
+                    >
+                </ngx-select-dropdown>
+
+                    <!-- <ngx-select formControlName="State"
+                [allowClear]="true"
+                [items]="option"
+                [optionValueField]="option"
+                [optionTextField]="optionAbbreviation"
+                placeholder="No city selected"
+                (typed)="inputTyped('ngx-select', $event)"></ngx-select> -->
+        
 
                     <!-- <input type="text" formControlName="State" class="form-control" placeholder="Enter State"
                     [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }"/> -->

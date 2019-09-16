@@ -19,7 +19,7 @@ export class MakeAReservationService {
   constructor(private http: HttpClient) { }
 
   makeAReservation(StrConfirmation: StrConfirmation): Observable<any> {
-    const token = localStorage.getItem('strTempTenantToken');
+    const token = localStorage.getItem('strTempTenantToken') || localStorage.getItem('strTenantToken');
 
     const httpOptions = {
       headers: new HttpHeaders({

@@ -1,5 +1,25 @@
 @import "../../styles.scss";
 
+
+table {
+  width: -webkit-fill-available;
+}
+
+.table {
+  overflow-x: auto;
+}
+
+.modal {
+  td, th {
+    font-size: 0.8rem;
+  }
+}
+
+.modal-dialog {
+    max-width: 650px;
+    margin: 1.75rem auto;
+}
+
 .display {
   display: flex;
 }
