@@ -111,12 +111,12 @@
                 <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
                     <label>State*</label>
                     <!-- *ngFor="let option of option" -->
+                    <!-- [(value)]="optionAbbreviation" -->
+                    <!-- [(ngModel)]="optionAbbreviation" -->
                     <ngx-select-dropdown
                     (change)="selectionChanged($event)" 
                     [options]="option"
-                    [(value)]="optionAbbreviation"
                     formControlName="State"
-                    [(ngModel)]="optionAbbreviation"
                     [config]="config" 
                     [style]="style"
                     [multiple]="false"
@@ -226,4 +226,4 @@
 </div>
 
 
-<pre>{{reserveUnitForm.value | json }}</pre>
+<!-- <pre>{{reserveUnitForm.value | json }}</pre> -->

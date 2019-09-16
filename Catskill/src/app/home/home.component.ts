@@ -5,6 +5,7 @@ import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../data/home';
 import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
+import { UaParserService } from '../services/ua-parser.service'
 
 
 @Component({
@@ -27,6 +28,8 @@ export class HomeComponent implements OnInit {
   jumbotron: any;
   authData: string;
   currentActive: any = 'HOME';
+  imageBaseUrl:any;
+  imagetype:any;
 
   data: any;
 
@@ -37,6 +40,7 @@ export class HomeComponent implements OnInit {
     private _renderer2: Renderer2,
     private metaService: MetaService,
 
+    private uaParserService: UaParserService,
     @Inject(DOCUMENT) private _document: any,
   ) {
     this.meta.addTag({
@@ -47,6 +51,10 @@ export class HomeComponent implements OnInit {
     this.titleService.setTitle('Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage');
     this.metaService.createCanonicalURL();
 
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
+    console.log('home component Base Url:', this.imageBaseUrl);
+    console.log('Home component image type:',this.imagetype)
   }
 
   public navigate(location: any) {
@@ -138,6 +146,9 @@ export class HomeComponent implements OnInit {
 
   public fetchJumbotron() {
     this.jumbotron = jumbotron;
+  }
+  public getImageUrl(imageName:string){
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 
 }

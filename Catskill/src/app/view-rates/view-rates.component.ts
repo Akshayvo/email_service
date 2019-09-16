@@ -5,6 +5,7 @@ import { MetaService } from '../services/link.service';
 // import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-view-rates',
@@ -20,6 +21,8 @@ export class ViewRatesComponent implements OnInit {
   LstUnitTypes: LstUnitTypes[];
 
   openComponent = false;
+  imagetype:any;
+  imageBaseUrl:any;
 
   constructor(
     private titleService: Title,
@@ -27,6 +30,8 @@ export class ViewRatesComponent implements OnInit {
     private metaService: MetaService,
     // private http: HttpClient,
     private fetchDataService: FetchDataService,
+    private MetaService: MetaService,
+    private uaParserService: UaParserService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -35,6 +40,9 @@ export class ViewRatesComponent implements OnInit {
     });
     this.titleService.setTitle('Affordable Self Storage Near Catskill, NY, 12414 | Catskill Self Storage');
     this.metaService.createCanonicalURL();
+    this.MetaService.createCanonicalURL();
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
 
   }
 
@@ -46,6 +54,7 @@ export class ViewRatesComponent implements OnInit {
   public fetchViewRates() {
     this.viewRates = viewRates;
   }
+  
 
   handleClick(event: Event) {
     this.openComponent = true;

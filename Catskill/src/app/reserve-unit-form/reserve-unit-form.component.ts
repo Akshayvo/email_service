@@ -227,10 +227,10 @@ export class ReserveUnitFormComponent implements OnInit {
   }
 
   selectionChanged(event: any) {
-    this.valueOfString = option.find(x => x.name === event.value);
-    console.log(event.value.abbreviation);
-    this.optionAbbreviation = this.valueOfString.abbreviation;
-    console.log(this.valueOfString.abbreviation, event.value)
+    // this.valueOfString = option.find(x => x.name === event.value);
+    // console.log(event.value.abbreviation);
+    // this.optionAbbreviation = this.valueOfString.abbreviation;
+    // console.log(this.valueOfString.abbreviation, event.value)
     
   }
 

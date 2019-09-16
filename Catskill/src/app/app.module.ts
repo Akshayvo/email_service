@@ -1,7 +1,6 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
-
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -34,6 +33,7 @@ import { DatePipe } from '@angular/common';
 import { NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
+import { UaParserService } from '../app/services/ua-parser.service';
 
 @NgModule({
   declarations: [
