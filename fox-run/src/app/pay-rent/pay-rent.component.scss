@@ -49,6 +49,16 @@
   top: 12%;
   z-index: 16;
 }
+@media only screen and (max-width:1199px) and (min-width:992px){
+  .rent-holder{
+    .rent-sub-holder{
+      .row{
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .rent-holder {
@@ -68,6 +78,7 @@
   .rent-holder {
     .padding {
       padding: 0;
+
     }
 
     .padding-for-small-device {
@@ -93,6 +104,7 @@
       border-left: none;
       padding-bottom: 20px;
     }
+    // 
   }
 
   // Sticky Buttons

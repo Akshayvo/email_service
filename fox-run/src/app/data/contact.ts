@@ -12,19 +12,20 @@ export const contact = [
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
+        id: 2,
+        redirect: 'mailto:foxrunstorage@comcast.net',
+        label: 'Email: ',
+        data: 'foxrunstorage@comcast.net',
+        class: 'fas fa-envelope mr-2 iconColor',
+    },
+    {
         id: 3,
         redirect: 'tel:6107610300',
         label: 'Phone: ',
         data: '(610) 761-0300',
         class: 'fas fa-phone mr-2 iconColor',
     },
-    {
-        id: 2,
-        redirect: 'mailto:foxrunstorage@comcast.net',
-        label: 'Email: ',
-        data: 'foxrunstorage@comcast.net',
-        class: 'fas fa-envelope mr-2 iconColor',
-    }
+    
 ];
 
 export const hours = [
