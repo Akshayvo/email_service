@@ -40,6 +40,7 @@
                    <div class="col-lg-6 form-group">
                            <label>First Name*</label>
                            <input type="text" formControlName="FirstName" class="form-control" placeholder="Enter First Name"
+                           [value]=""
                            [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.FirstName.errors }"
                            />
                            <div *ngIf="submitted && f.objTenant.controls.FirstName.errors" class="invalid-feedback">
@@ -154,16 +155,16 @@
                  <div class="col-lg-4">
                      <div formArrayName="lstUnitTypes">
                          <h2 class="pb-3">Unit</h2>
+                         <i><strong *ngIf="showMoveInDateError">Please fill out the correct move in date.</strong></i>
                      <div *ngFor="let item of reserveUnitForm.controls.lstUnitTypes.controls; let i = index">
                          <div  [formGroupName]="i">
                              <div class="form-group">
                                  <label for="lstUnitTypes">Unit Type*</label>&nbsp;
                                  <select class="form-control" formControlName="Description" [id]="lstUnitTypes?.Description" 
                                  (change)="selectChangeHandler($event)" 
-                                 
                                 >
                                      <option *ngFor="let lstUnitTypes of lstUnitTypes"
-                                     [value]="lstUnitTypes?.Description"
+                                     [value]="lstUnitTypes?.Description || DescriptionVR"
                                     
                                      >
                                      {{lstUnitTypes.Description}}
@@ -172,7 +173,7 @@
                                 </div>
                                 <div class="form-group readonly-form-control" >
                                     <label>Rate*</label>&nbsp;
-                                    <input type="text" formControlName="MonthlyRate" class="form-control" [value]="MonthlyRateValue || defaultValue || ''"
+                                    <input type="text" formControlName="MonthlyRate" class="form-control" [value]="MonthlyRateValue || MonthlyRateVR || defaultValue ||''"
                                     readonly>
                                  <!-- ${{MonthlyRateValue}} -->
                                 </div>
@@ -189,7 +190,7 @@
                          <label>Move In Date*</label>&nbsp;
                          <input type="date" [min]="From" [max]="To"
                          class="form-control" [value]="currentDate" formControlName="dteMoveIn" [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }" />
-                         <div *ngIf="submitted && f.dteMoveIn.errors" class="invalid-feedback">
+                         <div *ngIf="submitted  && f.dteMoveIn.errors" class="invalid-feedback">
                             <small class="form-text text-muted" *ngIf="f.dteMoveIn.errors.required">Please fill out this field</small>
                         </div>
                         </div>
@@ -226,4 +227,4 @@
 </div>
 
 
-<!-- <pre>{{reserveUnitForm.value | json }}</pre> -->
+<pre>{{reserveUnitForm.value | json }}</pre>

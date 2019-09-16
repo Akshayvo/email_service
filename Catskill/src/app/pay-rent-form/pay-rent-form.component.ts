@@ -146,7 +146,7 @@ export class PayRentFormComponent implements OnInit {
   getTenantInfo(tenant) {
     this.tenantInfoService.getTenantInfo(tenant)
       .subscribe(tenantData => {
-        console.log(tenantData);
+        // console.log(tenantData);
         if (tenantData) {
           const { Tenant } = tenantData;
           this.balance = Tenant.Balance;
@@ -156,7 +156,7 @@ export class PayRentFormComponent implements OnInit {
           this.LastPaymentAmount = Tenant.LastPaymentAmount;
 
           this.UnpaidAR =  Tenant.UnpaidAR;
-          console.log( typeof(this.UnpaidAR), Tenant.UnpaidAR);
+          // console.log( typeof(this.UnpaidAR), Tenant.UnpaidAR);
 
           for (let i in this.UnpaidAR) {
             // const date = this.UnpaidAR[i].FromDate;

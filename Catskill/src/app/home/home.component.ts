@@ -53,8 +53,6 @@ export class HomeComponent implements OnInit {
 
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
-    console.log('home component Base Url:', this.imageBaseUrl);
-    console.log('Home component image type:',this.imagetype)
   }
 
   public navigate(location: any) {

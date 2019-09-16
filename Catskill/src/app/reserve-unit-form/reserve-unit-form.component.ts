@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 
 import { AddTenantService } from '../services/add-tenant.service';
@@ -29,6 +29,9 @@ import { TenantInfoService } from '../services/tenant-info.service';
 })
 
 export class ReserveUnitFormComponent implements OnInit {
+
+  @Input() DescriptionVR: string;
+  @Input() MonthlyRateVR: number;
 
   unitTypes: UnitTypes;
   lstUnitTypes: LstUnitTypes[];
@@ -76,11 +79,13 @@ export class ReserveUnitFormComponent implements OnInit {
   To: string;
 
   showConfirmation = false;
+  showMoveInDateError = false;
   options: any;
 
   // intLeadDaysFrom = 0;
   // intLeadDaysTo = 999; 
 
+  tenant: any;
   optionAbbreviation: any;
 
   valueOfString: any;
@@ -139,7 +144,7 @@ export class ReserveUnitFormComponent implements OnInit {
       dteMoveIn: ['', Validators.required]
     });
 
-    // this.reserveUnitForm.valueChanges.subscribe(data => console.log('Form changes', data));
+    this.reserveUnitForm.controls.objTenant.valueChanges.subscribe(data => console.log('Form changes', data));
 
   }
 
@@ -160,7 +165,7 @@ export class ReserveUnitFormComponent implements OnInit {
   ngOnInit() {
     this.getData(this.unitTypes);
     this.getRentalPeriod(this.rentalPeriod);
-    localStorage.removeItem('strTempTenantToken');
+    // localStorage.removeItem('strTempTenantToken');
     // const today = new Date();
     // this.minDate = new Date(today.getFullYear(),today.getMonth(),today.getDate()+this.intLeadDaysFrom);
     // this.maxDate = new Date(today.getFullYear(),today.getMonth(),today.getDate()+this.intLeadDaysTo);
@@ -181,6 +186,20 @@ export class ReserveUnitFormComponent implements OnInit {
     let ToDate = this.currentdate.setDate(this.currentdate.getDate() + environment.intLeadDaysTo);
     this.From = this.datePipe.transform(FromDate, "yyyy-MM-dd");
     this.To = this.datePipe.transform(ToDate, "yyyy-MM-dd");
+
+    if (localStorage.getItem('strTenantToken')) {
+      this.getTenantInfo(this.tenant);
+    }
+
+    console.log(this.DescriptionVR, this.MonthlyRateVR);
+    
+    this.reserveUnitForm.patchValue({
+      lstUnitTypes: ([{
+        Description: this.DescriptionVR,
+        MonthlyRate: this.MonthlyRateVR,
+        ReservationFee: 0.00,
+      }])
+    });
   }
 
 //    formatDate(date) {
@@ -204,6 +223,8 @@ export class ReserveUnitFormComponent implements OnInit {
     }
 
   get f() { return this.reserveUnitForm.controls; }
+
+
 
   public navigate(location: any) {
     this.router.navigate([location]);
@@ -253,6 +274,33 @@ export class ReserveUnitFormComponent implements OnInit {
     });
   }
 
+  getTenantInfo(tenant) {
+    this.tenantInfoService.getTenantInfo(tenant)
+      .subscribe(tenantData => {
+        if (tenantData) {
+          const { Tenant } = tenantData;
+          this.reserveUnitForm.patchValue({
+            objTenant: ({
+              FirstName: Tenant.FirstName,
+              LastName: Tenant.LastName,
+              Phone: Tenant.Phone,
+              EmailAddress: Tenant.EmailAddress,
+              AddressLine1: Tenant.AddressLine1,
+              AddressLine2: Tenant.AddressLine2,
+              City: Tenant.City,
+              State: Tenant.State,
+              ZIP: Tenant.ZIP,
+            }),
+          })
+        }
+      }
+      , (err: any) => {
+        if(err.status === 401) {
+          localStorage.removeItem('strTenantToken');
+        }
+      });
+  }
+  
   getData(UnitTypes) {
     this.fetchDataService.getData(UnitTypes)
       .subscribe(UnitTypes => {
@@ -260,13 +308,16 @@ export class ReserveUnitFormComponent implements OnInit {
       this.defaultValue = UnitTypes.lstUnitTypes[0].MonthlyRate;
       const defaultUnitTypeValue = UnitTypes.lstUnitTypes[0].Description;
       this.MoveIn.intUnitTypeID = JSON.stringify(UnitTypes.lstUnitTypes[0].UnitTypeID);
-      this.reserveUnitForm.patchValue({
-        lstUnitTypes: ([{
-          Description: defaultUnitTypeValue,
-          MonthlyRate: this.defaultValue,
-          ReservationFee: 0.00,
-        }])
-      })
+
+      if(!this.DescriptionVR && !this.MonthlyRateVR) {    
+        this.reserveUnitForm.patchValue({
+          lstUnitTypes: ([{
+            Description: defaultUnitTypeValue,
+            MonthlyRate: this.defaultValue,
+            ReservationFee: 0.00,
+          }])
+        })
+      }
     });
   }
 
@@ -290,6 +341,7 @@ export class ReserveUnitFormComponent implements OnInit {
       localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
       this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
       this.makeAReservation(this.MoveIn);
+      console.log(result);
     });
   }
 
@@ -308,7 +360,14 @@ export class ReserveUnitFormComponent implements OnInit {
       this.strConfirmation = strConfirmation.strConfirmation;
       this.showConfirmation = false;
        this.tokenExit = localStorage.getItem('strTenantToken');
-    }); 
+    }, (err: any) => {
+      if (err.status === 403) {
+        this.showConfirmation = false;
+        this.showMoveInDateError = true;
+        this.count = 0;
+      }
+    }
+    ); 
   }
   
   signOut(logOut: any) {
@@ -324,7 +383,7 @@ export class ReserveUnitFormComponent implements OnInit {
 
   onSubmit() {
      const existingTenantToken = localStorage.getItem('strTenantToken');
-
+    const existTempToken = localStorage.getItem('strTempTenantToken');
     this.submitted = true;
     this.showConfirmation = true;
     if (this.reserveUnitForm.invalid) {
@@ -333,7 +392,12 @@ export class ReserveUnitFormComponent implements OnInit {
       if (existingTenantToken) {
         this.updateTenant(this.reserveUnitForm.value);
       } else {
-        this.addTenant(this.reserveUnitForm.value);
+        if(existTempToken) {
+          this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+          this.makeAReservation(this.MoveIn);
+        } else {
+          this.addTenant(this.reserveUnitForm.value);
+        }
       }
     }
   }

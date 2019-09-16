@@ -95,6 +95,7 @@ export class LoginComponent implements OnInit {
   // }
 
   auth(data: any): void {
+    localStorage.removeItem('strTempTenantToken');
     this.authService.auth(data)
       .subscribe(
         auth => {

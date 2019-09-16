@@ -14,8 +14,8 @@ export const environment = {
   // baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // APIKey: `MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
   // baseUrl: `http://localhost:60444/api/`,
-  intLeadDaysFrom: 3,
-  intLeadDaysTo: 10,
+  intLeadDaysFrom: 2,
+  intLeadDaysTo: 9,
 };
 
 /*

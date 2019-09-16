@@ -20,6 +20,9 @@ export class ViewRatesComponent implements OnInit {
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
 
+  DescriptionVR: string;
+  MonthlyRateVR: number;
+
   openComponent = false;
   imagetype:any;
   imageBaseUrl:any;
@@ -56,8 +59,13 @@ export class ViewRatesComponent implements OnInit {
   }
   
 
-  handleClick(event: Event) {
+  handleClick(event: Event, event1: Event) {
     this.openComponent = true;
+    this.DescriptionVR = JSON.parse(JSON.stringify(event));
+    this.MonthlyRateVR = parseFloat(JSON.stringify(event1));
+    
+    // console.log(event, event1, this.DescriptionVR, this.MonthlyRateVR);
+    
   }
 
   getData(UnitTypes) {
