@@ -41,19 +41,45 @@ a {
 .display {
   display: block;
 }
+.bg-secondary{
+  background-color: $primary !important;
+  color:#fff;
+  font-size: 0.82rem;
+  a{
+    color: #fff;
+  }
+}
+
 
 .navbar-toggler:focus,
 .navbar-toggler:hover {
   border: 1px solid $primary;
 }
+@media screen and (max-width: 1199px) and (min-width: 992px){
+  .navbar-nav{
+    .text-center{
+      padding-left: 0.1rem !important;
+      padding-right: 0.1rem !important;
+    }
+
+  }
+}
 
 @media screen and (max-width: 991px) {
   .navbar-nav {
     align-items: center;
-
     li {
       width: fit-content;
     }
+  }
+  .px-2{
+    padding-left: 0.1rem !important;
+    padding-right: 0.1rem !important;
+  }
+}
+@media screen and (max-width:767px){
+  .bg-secondary{
+    display: none;
   }
 }
 

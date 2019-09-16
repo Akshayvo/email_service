@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'pay-rent', component: PayRentComponent },
-  { path: 'reserve-unit', component: ReserveUnitComponent },
+  { path: 'rent-unit', component: ReserveUnitComponent },
   { path: 'unit-sizer', component: UnitSizerComponent},
   { path: 'review', component: HomeComponent,
     resolve: {

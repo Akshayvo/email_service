@@ -15,10 +15,9 @@ export class ReserveUnitComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Are you ready to make some elbow room around the home, office, or workshop? Reserve your unit online with our tenant portal, 
-                and start de-cluttering today!`
+      content: `You can fill out our easy online form, pay your rent and deposit, then sign your lease in a 100% online move in, right here!`
     });
-    this.titleService.setTitle('Reserve Unit | Fox Run Self Storage');
+    this.titleService.setTitle('Rent A Unit | Fox Run Self Storage');
   }
 
   ngOnInit() {
