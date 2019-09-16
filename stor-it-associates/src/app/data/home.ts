@@ -14,6 +14,7 @@ export const featuresList = [
     },
     {
         td1: 'Pin-Code Activated Gate',
+        td2: 'Security Cameras',
     }
 ];
 
