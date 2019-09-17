@@ -1,0 +1,35 @@
+<div class="rent-holder">
+  <div class="container px-0">
+    <div class="rent-heading pb-5">
+      <h1 class="text-center pt-5">Resident Login</h1>
+    </div>
+    
+    <div class="rent-sub-holder">
+      <div class="container px-0">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 p-4">
+              <iframe id="advanced_iframe" name="advanced_iframe" src="https://coach-house.sim.syrasoft.com/Home/PayNow" width="100%"
+              height="300" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>
+            </div>
+            
+            <div class="col-md-4  rent-example px-4" >
+              <h2> How to Login </h2>
+              <p class="pt-3 fontsize"> <b>Username:</b> Tenant's First Initial + Last Name </p>
+              <p class="fontsize"> <b>Password:</b> Tenant Full Phone Number Minus Non-Numerical Characters</p>
+          
+              <p class="py-3 fontsize"> <b>Example</b> </p>
+              <p class="pb-3 fontsize">John Smith's Phone Number is 555-555-5555</p>
+          
+              <p class="fontsize"> <b>John's Username:</b> Jsmith </p>
+              <p class="pb-3 fontsize"> <b>John's Password:</b> 5555555555 </p>
+          
+              <p class="pt-4 fontsize"><b>Have questions about your account?</b>
+                <span class="fontsize" *ngFor="let contact of contactInfo"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
+              </span>
+              </p>
+            </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
