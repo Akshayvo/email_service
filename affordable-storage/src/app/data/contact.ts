@@ -7,9 +7,9 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:hcihq0164@gmail.com',
+        redirect: 'mailto:affordabless7055@gmail.com',
         label: 'Email:',
-        data: 'hcihq0164@gmail.com',
+        data: 'affordabless7055@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
@@ -23,11 +23,11 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Monday to Friday: ',
+        label: 'Tuesday to Friday: ',
         data: '1:00PM - 5:00PM'
     },
     {
-        label: 'Saturday to Sunday: ',
+        label: 'Saturday to Monday: ',
         data: 'CLOSED'
     },
     {

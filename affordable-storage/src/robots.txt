@@ -1,5 +1,5 @@
  # www.robotstxt.org/
  # Allow crawling of all content
-Sitemap: http://www.affordablestoragesolutions.info/sitemap.xml
+Sitemap: https://www.affordablestoragesolutions.info/sitemap.xml
  User-agent: *
  Disallow:
