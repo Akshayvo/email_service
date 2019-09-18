@@ -23,24 +23,29 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Monday - Friday: ',
-        data: '9:00AM to 5:00PM '
-    },
-    {
-        label: 'Saturday:',
-        data: '9:00AM to 4:00PM'
-    },
-    {
-        label: 'Sunday: ',
-        data: 'CLOSED'
-    },
-    {
+        id: 0,
         label: 'Access Hours: ',
         data: '7 Days a Week 7:00AM to 9:00PM'
     },
     {
+        id: 1,
         label: '',
         data: '24 Hour Access Available Upon Approval'
-    }
+    },
+    {
+        id: 2,
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 5:00PM '
+    },
+    {
+        id: 3,
+        label: 'Saturday:',
+        data: '9:00AM to 4:00PM'
+    },
+    {
+        id: 4,
+        label: 'Sunday: ',
+        data: 'CLOSED'
+    }  
 ];
 

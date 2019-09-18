@@ -5,7 +5,7 @@
         <h1 class="text-center pt-5 disp">Contact Sto and Go</h1>
       </div>
       <div class="contact-data">
-        <div class="row bg-light padding">
+        <div class="row bg-secondary padding">
           <div class="col-lg-7 p-4">
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
@@ -85,15 +85,32 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.0123981509983!2d-78.6936463854879!3d33.889334533746315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89007d4e9d2705b9%3A0x85d993fdf6981ac3!2sSto%20and%20Go%20LLC!5e0!3m2!1sen!2sus!4v1568590571640!5m2!1sen!2sus" width="100%" height="400px" frameborder="0"  allowfullscreen></iframe>
               </div>
               <div class="contact-details pt-4">
-                <h2 class="py-1">Sto and Go</h2>
-                <span class="font-xs-device" *ngFor="let contact of contactInfo">
+                <h3 class="py-1">Sto and Go</h3>
+                <!-- <span class="font-xs-device" *ngFor="let contact of contactInfo">
                     <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                 </span>
                 <h3 class="py-1"><strong>Office:</strong></h3>
                 <span class="font-xs-device" *ngFor="let hour of hours">
                   <b>{{hour.label}}</b> {{hour.data}}<br>
-                </span>
+                </span> -->
+                <div>
+                        <div class="font-xs-device" *ngFor="let contact of contactInfo">
+                          <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                          <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                        </div>
+                        <div class=" font-xs-device">
+                          <h3 class="py-1">Access Hours</h3>
+                            <div *ngFor="let hour of hours">
+                                <span class="hour-links" *ngIf="hour?.id === 0 || hour?.id === 1 else elseblock">{{hour.data}}</span>
+                              </div>
+                              <h3 class="py-1">Office Hours</h3>
+                              <div *ngFor="let hour of hours">
+                                <span class="hour-links" *ngIf="hour?.id === 2 || hour?.id === 3 || hour?.id === 4 "><b>{{hour.label}}</b>&nbsp;{{hour.data}}</span>
+                                <!-- <span  *ngIf="hour?.id !== 0 || hour?.id !== 1 "><b>{{hour.label}}</b>&nbsp;{{hour.data}}</span> -->
+                              </div>      
+                        </div>
+                        </div>
               </div>
           </div>
       </div>

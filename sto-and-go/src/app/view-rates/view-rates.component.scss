@@ -9,10 +9,10 @@
     padding: 48px;
   }
 
-  iframe {
-    overflow: hidden;
-    overflow-x: hidden;
-  }
+  // iframe {
+  //   overflow: hidden;
+  //   overflow-x: hidden;
+  // }
 
   .scroll-wrapper {
     -webkit-overflow-scrolling: touch;
@@ -33,6 +33,16 @@
       font-size: 2rem;
       padding-top: 40%;
     }
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width:992px){
+  iframe{
+    min-height: 778px;
+  }
+}
+@media only screen and (max-width:991px){
+  iframe{
+    min-height: 886px;
   }
 }
 

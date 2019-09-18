@@ -18,11 +18,14 @@ export const featuresList = [
     },
     {
         td1: 'Security Cameras',
-        td2: 'Customer Restrooms'
+        td2: 'No Insurance Required'
     },
     {
-        td1: 'Dump Station Coming Soon',
+        td1: 'Facility Access at Cloverleaf Dr and Hwy 9E Stoplight ',
         td2: 'Climate Controlled Units Available'
+    },
+    {
+        td1: 'Dump Station Coming Soon'
     }
 ];
 

@@ -41,7 +41,7 @@
   <!--Jumbotron Ends Here-->
 
   <!--Map and Contact Section-->
-  <div class="bg-light py-5">
+  <div class="bg-secondary py-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 py-3 map">
@@ -50,16 +50,22 @@
         
         <div class="col-lg-6 py-3">
           <div class="mb-4">
-           <h2 class="heading pb-4">Location Information</h2>
+           <h2 class="heading pb-1">Location Information</h2>
             <div>
               <div class="font-xs-device" *ngFor="let contact of contactDetails">
                 <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </div>
               <div class="pt-3 font-xs-device">
+                <h2 class="heading pb-1">Access Hours</h2>
                   <div *ngFor="let hour of hours">
-                      <b>{{hour.label}}</b>{{hour.data}}<br>
-                    </div>    
+                      <span class="hour-links" *ngIf="hour?.id === 0 || hour?.id === 1 else elseblock">{{hour.data}}</span>
+                    </div> <br>
+                    <h2 class="heading pb-1">Office Hours</h2>
+                    <div *ngFor="let hour of hours">
+                      <span class="hour-links" *ngIf="hour?.id === 2 || hour?.id === 3 || hour?.id === 4 "><b>{{hour.label}}</b>&nbsp;{{hour.data}}</span>
+                      <!-- <span  *ngIf="hour?.id !== 0 || hour?.id !== 1 "><b>{{hour.label}}</b>&nbsp;{{hour.data}}</span> -->
+                    </div>      
               </div>
               </div>
           </div>
@@ -89,7 +95,7 @@
   <!--About Us Section Ends Here-->
 
   <!--Testimonial-->
-  <div class="bg-light">
+  <div class="bg-secondary">
     <div class="container">
       <div class="row py-5">
        <div class="col-md-12 text-center">
