@@ -93,45 +93,45 @@ export class ContactComponent implements OnInit {
   receiveMessage() {
     this.data.currentLocation.subscribe(locationId => {
       this.locationId = locationId;
-      // this.dataupdate();
+      this.dataupdate();
     });
   }
 
-  // public dataupdate() {
-  //   if ( this.locationId === '1' || this.locationId === 1 ) {
-  //     this.fetchContactDetailsLocation1();
-  //   } else if ( this.locationId === '2' ) {
-  //     this.fetchContactDetailsLocation2();
-  //   } else if ( this.locationId === '3' ) {
-  //     this.fetchContactDetailsLocation3();
-  //   } else if ( this.locationId === '4' ) {
-  //     this.fetchContactDetailsLocation4();
-  //   }
-  // }
+  public dataupdate() {
+    if ( this.locationId === '1' || this.locationId === 1 ) {
+      this.fetchContactDetailsLocation1();
+    } else if ( this.locationId === '2' ) {
+      this.fetchContactDetailsLocation2();
+    } else if ( this.locationId === '3' ) {
+      this.fetchContactDetailsLocation3();
+    } else if ( this.locationId === '4' ) {
+      this.fetchContactDetailsLocation4();
+    }
+  }
 
-  // public fetchContactDetailsLocation1() {
-  //   this.heading = `730 Kenton Station Location`;
-  //   this.contactDetails = contactsLocation1;
-  //   this.hoursDetails = hoursLocation1;
-  // }
+  public fetchContactDetailsLocation1() {
+    this.heading = `730 Kenton Station Location`;
+    this.contactDetails = contactsLocation1;
+    this.hoursDetails = hoursLocation1;
+  }
 
-  // public fetchContactDetailsLocation2() {
-  //   this.heading = `751 Kenton Station Location`;
-  //   this.contactDetails = contactsLocation2;
-  //   this.hoursDetails = hoursLocation2;
-  // }
+  public fetchContactDetailsLocation2() {
+    this.heading = `751 Kenton Station Location`;
+    this.contactDetails = contactsLocation2;
+    this.hoursDetails = hoursLocation2;
+  }
 
-  // public fetchContactDetailsLocation3() {
-  //   this.heading = `Augusta Location`;
-  //   this.contactDetails = contactsLocation3;
-  //   this.hoursDetails = hoursLocation3;
-  // }
+  public fetchContactDetailsLocation3() {
+    this.heading = `Augusta Location`;
+    this.contactDetails = contactsLocation3;
+    this.hoursDetails = hoursLocation3;
+  }
 
-  // public fetchContactDetailsLocation4() {
-  //   this.heading = `113 McDonald Parkway`;
-  //   this.contactDetails = contactsLocation4;
-  //   this.hoursDetails = hoursLocation4;
-  // }
+  public fetchContactDetailsLocation4() {
+    this.heading = `113 McDonald Parkway`;
+    this.contactDetails = contactsLocation4;
+    this.hoursDetails = hoursLocation4;
+  }
 
 onSubmit() {
   this.submitted = true;
@@ -144,7 +144,7 @@ onSubmit() {
     this.contactForm.value.subject = 'Website Form Submission';
   }
 
-  this.receiveremail = this.contactDetails[2].data;
+  this.receiveremail = this.contactDetails[1].data;
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
 
