@@ -49,6 +49,14 @@ body {
   width: auto !important;
   height: 100vh;
 }
+.bg-translucent1 {
+  width: auto !important;
+  height: 100vh;
+}
+
+.bg-jumbotron{
+  background: rgba(0, 0, 0, 0.72);
+}
 
 .bg-dark-background {
   background: $dark-background;

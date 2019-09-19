@@ -9,6 +9,7 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { FaqComponent } from './faq/faq.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'pay-rent', component: PayRentComponent },
+  { path: 'faq', component:FaqComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'review', component: HomeComponent,
     resolve: {

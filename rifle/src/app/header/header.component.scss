@@ -9,8 +9,8 @@ a {
 }
 
 .link-padding {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .contact-header {
@@ -69,20 +69,16 @@ b{
 }
 
 
-@media screen and (max-width: 1200px) {
-  a {
-    font-size: 0.9em;
-  }
-  // .navbar-brand{
-  //   font-size: 1.35rem;
-  // }
-}
+
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
 
+  .nav-link {
+    font-size: 0.9rem;
+  }
 .link-padding {
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 0px ;
+  padding-right: 0px ;
 }
 }
 

@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .jumbotron {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Rifle_Storage/rifle-self-storage-jumbotron.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Rifle_Storage/rifle-self-storage-jumbotron-paved.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -221,7 +221,7 @@
 }
 
 
-@media screen and (max-width: 991px) and (min-width: 768px) {
+@media screen and (max-width: 991px) and (min-width: 768px) and (min-height: 701px) {
   .jumbotron {
     background-attachment: unset;
     background-position: center top;
@@ -301,7 +301,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 649px) and (min-height: 481px) {
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 700px) and (min-height: 481px) {
   .jumbotron {
     background-attachment: unset;
     background-position: center top;

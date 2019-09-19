@@ -1,6 +1,6 @@
 <div class="view-rates-top">
   <div class="bg-translucent">
-      <div class="container jumbotorn-top text-center" *ngFor="let viewRates of viewRates">
+      <div class="container jumbotorn-top text-center " *ngFor="let viewRates of viewRates">
           <h1 class="pb-4">{{viewRates.heading}}</h1>
           <p>{{viewRates.blurb}}</p>
         </div>
@@ -31,11 +31,11 @@
               <span class="sr-only">Next</span>
             </a> -->
 
-            <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Rifle_Storage/row-of-outdoor-self-storage-units.jpg" alt="Photograph of outdoor self storage units on paved blacktop" class="sectionImage">
+            <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Rifle_Storage/rifle-self-storage-unit-row.jpg" alt="photograph of two rows of self storage units on either side of a paved aisle" class="sectionImage">
         </div>
-        <div class="py-4"> 
-          <p class="" *ngFor="let viewRate of viewRate ">
-            {{viewRate.p}}
+        <div class="anti"  *ngFor="let viewRate of viewRate"> 
+          <p id="anchor" [innerHTML]="viewRate.p">
+            <!-- {{viewRate.p}} -->
           </p>
         </div>
       </div>

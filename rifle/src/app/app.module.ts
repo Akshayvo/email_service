@@ -27,6 +27,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { PhotosComponent } from './photos/photos.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { ErrorHandlerService } from './services/error-handler.service';
+import { FaqComponent } from './faq/faq.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { ErrorHandlerService } from './services/error-handler.service';
     ErrorHandlerComponent,
     PhotosComponent,
     PrivacyPolicyComponent,
+    FaqComponent,
   ],
   imports: [
     CommonModule,
