@@ -1,5 +1,13 @@
 @import '../../styles.scss';
 
+.custom-date-css::ng-deep {
+  .example-custom-date-class {
+    background: orange !important;
+    border-radius: 100%;
+    background-color: orange;
+  }
+}
+
 .home-link {
   a {
     text-decoration: underline;
@@ -49,35 +57,36 @@ table {
 }
 
 
-.ngx-select-dropdown::ng-deep {
-  .form-control {
-    padding: 0;
-    // border: none;
-  }
+// .ngx-select-dropdown::ng-deep {
+//   // .form-control {
+//   //   padding: 0;
+//   //   border: none;
+//   // }
 
-  .ngx-dropdown-container {
-    .ngx-dropdown-list-container {
-      z-index: 1 !important;
-    }
-    ul {
-      li {
-        padding: 2px 10px !important;
-      }
-    }
-    .ngx-dropdown-button {
-      width: 100%;
-      min-height: 36px !important;
-      padding: 5px 10px 5px 10px;
-      background-color: white;
-      border: 1px solid #fff;
-      // border-radius: 0.25rem;
+//   .ngx-dropdown-container {
+//     .ngx-dropdown-list-container {
+//       z-index: 1 !important;
+//     }
+//     ul {
+//       li {
+//         padding: 2px 10px !important;
+//       }
+//     }
+//     .ngx-dropdown-button {
+//       width: 100%;
+//       min-height: 36px !important;
+//       padding: 5px 10px 5px 10px;
+//       background-color: white;
+//       border: 1px solid #fff;
+//       // border-radius: 0.25rem;
 
-      span {
-        color: #495057;
-      }
-  }
-  } 
-}
+//       span {
+//         color: #495057;
+//       }
+//   }
+//   } 
+// }
+
 
 
 .loader {

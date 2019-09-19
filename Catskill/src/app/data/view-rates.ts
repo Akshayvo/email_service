@@ -10,239 +10,239 @@ export const viewRates = [
 export const option =  [
 	// ...this.option,
 	{
-		name: "Alabama",
-		abbreviation: "AL"
+		description: "Alabama",
+		id: "AL"
 	},
 	{
-		name: "Alaska",
-		abbreviation: "AK"
+		description: "Alaska",
+		id: "AK"
 	},
 	{
-		name: "American Samoa",
-		abbreviation: "AS"
+		description: "American Samoa",
+		id: "AS"
 	},
 	{
-		name: "Arizona",
-		abbreviation: "AZ"
+		description: "Arizona",
+		id: "AZ"
 	},
 	{
-		name: "Arkansas",
-		abbreviation: "AR"
+		description: "Arkansas",
+		id: "AR"
 	},
 	{
-		name: "California",
-		abbreviation: "CA"
+		description: "California",
+		id: "CA"
 	},
 	{
-		name: "Colorado",
-		abbreviation: "CO"
+		description: "Colorado",
+		id: "CO"
 	},
 	{
-		name: "Connecticut",
-		abbreviation: "CT"
+		description: "Connecticut",
+		id: "CT"
 	},
 	{
-		name: "Delaware",
-		abbreviation: "DE"
+		description: "Delaware",
+		id: "DE"
 	},
 	{
-		name: "District Of Columbia",
-		abbreviation: "DC"
+		description: "District Of Columbia",
+		id: "DC"
 	},
 	{
-		name: "Federated States Of Micronesia",
-		abbreviation: "FM"
+		description: "Federated States Of Micronesia",
+		id: "FM"
 	},
 	{
-		name: "Florida",
-		abbreviation: "FL"
+		description: "Florida",
+		id: "FL"
 	},
 	{
-		name: "Georgia",
-		abbreviation: "GA"
+		description: "Georgia",
+		id: "GA"
 	},
 	{
-		name: "Guam",
-		abbreviation: "GU"
+		description: "Guam",
+		id: "GU"
 	},
 	{
-		name: "Hawaii",
-		abbreviation: "HI"
+		description: "Hawaii",
+		id: "HI"
 	},
 	{
-		name: "Idaho",
-		abbreviation: "ID"
+		description: "Idaho",
+		id: "ID"
 	},
 	{
-		name: "Illinois",
-		abbreviation: "IL"
+		description: "Illinois",
+		id: "IL"
 	},
 	{
-		name: "Indiana",
-		abbreviation: "IN"
+		description: "Indiana",
+		id: "IN"
 	},
 	{
-		name: "Iowa",
-		abbreviation: "IA"
+		description: "Iowa",
+		id: "IA"
 	},
 	{
-		name: "Kansas",
-		abbreviation: "KS"
+		description: "Kansas",
+		id: "KS"
 	},
 	{
-		name: "Kentucky",
-		abbreviation: "KY"
+		description: "Kentucky",
+		id: "KY"
 	},
 	{
-		name: "Louisiana",
-		abbreviation: "LA"
+		description: "Louisiana",
+		id: "LA"
 	},
 	{
-		name: "Maine",
-		abbreviation: "ME"
+		description: "Maine",
+		id: "ME"
 	},
 	{
-		name: "Marshall Islands",
-		abbreviation: "MH"
+		description: "Marshall Islands",
+		id: "MH"
 	},
 	{
-		name: "Maryland",
-		abbreviation: "MD"
+		description: "Maryland",
+		id: "MD"
 	},
 	{
-		name: "Massachusetts",
-		abbreviation: "MA"
+		description: "Massachusetts",
+		id: "MA"
 	},
 	{
-		name: "Michigan",
-		abbreviation: "MI"
+		description: "Michigan",
+		id: "MI"
 	},
 	{
-		name: "Minnesota",
-		abbreviation: "MN"
+		description: "Minnesota",
+		id: "MN"
 	},
 	{
-		name: "Mississippi",
-		abbreviation: "MS"
+		description: "Mississippi",
+		id: "MS"
 	},
 	{
-		name: "Missouri",
-		abbreviation: "MO"
+		description: "Missouri",
+		id: "MO"
 	},
 	{
-		name: "Montana",
-		abbreviation: "MT"
+		description: "Montana",
+		id: "MT"
 	},
 	{
-		name: "Nebraska",
-		abbreviation: "NE"
+		description: "Nebraska",
+		id: "NE"
 	},
 	{
-		name: "Nevada",
-		abbreviation: "NV"
+		description: "Nevada",
+		id: "NV"
 	},
 	{
-		name: "New Hampshire",
-		abbreviation: "NH"
+		description: "New Hampshire",
+		id: "NH"
 	},
 	{
-		name: "New Jersey",
-		abbreviation: "NJ"
+		description: "New Jersey",
+		id: "NJ"
 	},
 	{
-		name: "New Mexico",
-		abbreviation: "NM"
+		description: "New Mexico",
+		id: "NM"
 	},
 	{
-		name: "New York",
-		abbreviation: "NY"
+		description: "New York",
+		id: "NY"
 	},
 	{
-		name: "North Carolina",
-		abbreviation: "NC"
+		description: "North Carolina",
+		id: "NC"
 	},
 	{
-		name: "North Dakota",
-		abbreviation: "ND"
+		description: "North Dakota",
+		id: "ND"
 	},
 	{
-		name: "Northern Mariana Islands",
-		abbreviation: "MP"
+		description: "Northern Mariana Islands",
+		id: "MP"
 	},
 	{
-		name: "Ohio",
-		abbreviation: "OH"
+		description: "Ohio",
+		id: "OH"
 	},
 	{
-		name: "Oklahoma",
-		abbreviation: "OK"
+		description: "Oklahoma",
+		id: "OK"
 	},
 	{
-		name: "Oregon",
-		abbreviation: "OR"
+		description: "Oregon",
+		id: "OR"
 	},
 	{
-		name: "Palau",
-		abbreviation: "PW"
+		description: "Palau",
+		id: "PW"
 	},
 	{
-		name: "Pennsylvania",
-		abbreviation: "PA"
+		description: "Pennsylvania",
+		id: "PA"
 	},
 	{
-		name: "Puerto Rico",
-		abbreviation: "PR"
+		description: "Puerto Rico",
+		id: "PR"
 	},
 	{
-		name: "Rhode Island",
-		abbreviation: "RI"
+		description: "Rhode Island",
+		id: "RI"
 	},
 	{
-		name: "South Carolina",
-		abbreviation: "SC"
+		description: "South Carolina",
+		id: "SC"
 	},
 	{
-		name: "South Dakota",
-		abbreviation: "SD"
+		description: "South Dakota",
+		id: "SD"
 	},
 	{
-		name: "Tennessee",
-		abbreviation: "TN"
+		description: "Tennessee",
+		id: "TN"
 	},
 	{
-		name: "Texas",
-		abbreviation: "TX"
+		description: "Texas",
+		id: "TX"
 	},
 	{
-		name: "Utah",
-		abbreviation: "UT"
+		description: "Utah",
+		id: "UT"
 	},
 	{
-		name: "Vermont",
-		abbreviation: "VT"
+		description: "Vermont",
+		id: "VT"
 	},
 	{
-		name: "Virgin Islands",
-		abbreviation: "VI"
+		description: "Virgin Islands",
+		id: "VI"
 	},
 	{
-		name: "Virginia",
-		abbreviation: "VA"
+		description: "Virginia",
+		id: "VA"
 	},
 	{
-		name: "Washington",
-		abbreviation: "WA"
+		description: "Washington",
+		id: "WA"
 	},
 	{
-		name: "West Virginia",
-		abbreviation: "WV"
+		description: "West Virginia",
+		id: "WV"
 	},
 	{
-		name: "Wisconsin",
-		abbreviation: "WI"
+		description: "Wisconsin",
+		id: "WI"
 	},
 	{
-		name: "Wyoming",
-		abbreviation: "WY"
+		description: "Wyoming",
+		id: "WY"
 	}
 ]

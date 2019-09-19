@@ -8,7 +8,6 @@ import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods } from '../model
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { SignOutService } from '../services/sign-out.service';
 import { Router } from '@angular/router';
-import { MoveIn } from '../models/movein';
 import { MakeAReservationService } from '../services/make-a-reservation.service';
 
 
@@ -21,7 +20,6 @@ import {  environment } from "../../environments/environment";
 import { TenantInfoService } from '../services/tenant-info.service';
 
 
-
 @Component({
   selector: 'app-reserve-unit-form',
   templateUrl: './reserve-unit-form.component.html',
@@ -32,6 +30,7 @@ export class ReserveUnitFormComponent implements OnInit {
 
   @Input() DescriptionVR: string;
   @Input() MonthlyRateVR: number;
+
 
   unitTypes: UnitTypes;
   lstUnitTypes: LstUnitTypes[];
@@ -48,9 +47,9 @@ export class ReserveUnitFormComponent implements OnInit {
 
   dataModel: any;
 
-  count = 0;
+  objTenantCopy: any;
 
-  // option: any;
+  count = 0;
 
   option =  [];
   reserveUnitForm: FormGroup;
@@ -74,7 +73,6 @@ export class ReserveUnitFormComponent implements OnInit {
   maxDate: Date;
   MinDate: string;
   MaxDate: string;
-
   From: string;
   To: string;
 
@@ -82,19 +80,25 @@ export class ReserveUnitFormComponent implements OnInit {
   showMoveInDateError = false;
   options: any;
 
-  // intLeadDaysFrom = 0;
-  // intLeadDaysTo = 999; 
+  minDay: number;
+  maxDay: number;
+
+
+  MoveInStringParent: string;
 
   tenant: any;
   optionAbbreviation: any;
 
   valueOfString: any;
 
+  isValueUpdated = true;
   MoveIn = {
     dteMoveIn: '',
     intUnitTypeID: '',
   }
 
+  examplaParent: string;
+  
 
   config = {
     displayKey:"description", //if objects array passed which key to be displayed defaults to description
@@ -141,11 +145,10 @@ export class ReserveUnitFormComponent implements OnInit {
       lstRentalPeriods: new FormArray([
         this.initPeriodDescription(),
       ]),
-      dteMoveIn: ['', Validators.required]
+      dteMoveIn: ['', Validators.required],
     });
 
-    this.reserveUnitForm.controls.objTenant.valueChanges.subscribe(data => console.log('Form changes', data));
-
+    this.MoveInStringParent = this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, "yyyy-MM-dd");
   }
 
   initPeriodDescription() {
@@ -165,18 +168,7 @@ export class ReserveUnitFormComponent implements OnInit {
   ngOnInit() {
     this.getData(this.unitTypes);
     this.getRentalPeriod(this.rentalPeriod);
-    // localStorage.removeItem('strTempTenantToken');
-    // const today = new Date();
-    // this.minDate = new Date(today.getFullYear(),today.getMonth(),today.getDate()+this.intLeadDaysFrom);
-    // this.maxDate = new Date(today.getFullYear(),today.getMonth(),today.getDate()+this.intLeadDaysTo);
-    // this.currentdate = new Date(today.getFullYear(),today.getMonth(),today.getDate());
-    // this.MinDate =  this.formatDate(this.minDate);
-    // this.MaxDate = this.formatDate(this.maxDate);
-    // this.currentDate = this.formatDate(this.currentdate);
-
-    // console.log(this.currentDate, this.MinDate, this.MaxDate);
-    
-
+  
     this.currentdate = new Date();
     
     this.fetchUSState();
@@ -186,6 +178,9 @@ export class ReserveUnitFormComponent implements OnInit {
     let ToDate = this.currentdate.setDate(this.currentdate.getDate() + environment.intLeadDaysTo);
     this.From = this.datePipe.transform(FromDate, "yyyy-MM-dd");
     this.To = this.datePipe.transform(ToDate, "yyyy-MM-dd");
+
+    // this.minDay = this.From.getDate();
+    // this.maxDay = this.To.getDate();
 
     if (localStorage.getItem('strTenantToken')) {
       this.getTenantInfo(this.tenant);
@@ -202,29 +197,27 @@ export class ReserveUnitFormComponent implements OnInit {
     });
   }
 
-//    formatDate(date) {
-//     let d = new Date(date),
-//         month = '' + (d.getMonth() + 1),
-//         day = '' + d.getDate(),
-//         year = d.getFullYear();
-
-//     if (month.length < 2) 
-//         month = '0' + month;
-//     if (day.length < 2) 
-//         day = '0' + day;
-
-//     return [year, month, day].join('-');
-// }
-
     public fetchUSState() {   
-    this.option = option.map(x => x.name);  
-    // this.optionAbbreviation = option.map(x => x.abbreviation);
-    // this.option = option;
+    // this.option = option.map(x => x.name);  
+    this.option = option;
     }
 
   get f() { return this.reserveUnitForm.controls; }
 
+  dateClass = (d: Date) => {
+   
+     
 
+    const date = d.getDate();
+
+    console.log(this.minDay, this.maxDay, date);
+
+
+    // Highlight the 1st and 20th day of each month.
+    // return ( this.minDay <= date && date <= this.maxDay) ? 'example-custom-date-class' : undefined;
+    return ( 20 === date || date === 22) ? `example-custom-date-class` : undefined;
+
+  }
 
   public navigate(location: any) {
     this.router.navigate([location]);
@@ -244,15 +237,12 @@ export class ReserveUnitFormComponent implements OnInit {
   handlePrevious() {
     if (this.count >= 0) {
       this.count = this.count - 1;
+      // this.currentDate = this.reserveUnitForm.value.dteMoveIn;
     }
   }
 
   selectionChanged(event: any) {
     // this.valueOfString = option.find(x => x.name === event.value);
-    // console.log(event.value.abbreviation);
-    // this.optionAbbreviation = this.valueOfString.abbreviation;
-    // console.log(this.valueOfString.abbreviation, event.value)
-    
   }
 
   selectChangeHandler (event: any) {
@@ -279,6 +269,17 @@ export class ReserveUnitFormComponent implements OnInit {
       .subscribe(tenantData => {
         if (tenantData) {
           const { Tenant } = tenantData;
+          const tempObject = {
+            FirstName: Tenant.FirstName,
+            LastName: Tenant.LastName,
+            Phone: Tenant.Phone,
+            EmailAddress: Tenant.EmailAddress,
+            AddressLine1: Tenant.AddressLine1,
+            AddressLine2: Tenant.AddressLine2,
+            City: Tenant.City,
+            State: Tenant.State,
+            ZIP: Tenant.ZIP,
+          }
           this.reserveUnitForm.patchValue({
             objTenant: ({
               FirstName: Tenant.FirstName,
@@ -292,6 +293,18 @@ export class ReserveUnitFormComponent implements OnInit {
               ZIP: Tenant.ZIP,
             }),
           })
+
+      this.reserveUnitForm.controls.objTenant.valueChanges.subscribe(data => {
+        this.objTenantCopy = data;
+        console.log('Form changes', data)  
+        console.log("new object", this.objTenantCopy);
+        console.log("initial values", tempObject);
+        console.log(JSON.stringify(this.objTenantCopy) === JSON.stringify(tempObject));
+        this.isValueUpdated = JSON.stringify(this.objTenantCopy) === JSON.stringify(tempObject);
+        console.log(this.isValueUpdated);
+        
+      }
+      );
         }
       }
       , (err: any) => {
@@ -331,8 +344,8 @@ export class ReserveUnitFormComponent implements OnInit {
             PeriodDescription: defaultPeriodDescription,
           }])
         })
-      });
-
+      }
+    );
   }
 
   addTenant(data: any): void {
@@ -365,6 +378,12 @@ export class ReserveUnitFormComponent implements OnInit {
         this.showConfirmation = false;
         this.showMoveInDateError = true;
         this.count = 0;
+        // localStorage.removeItem('strTempTenantToken');
+      } else {
+        if (err.status === 401 ) {
+          localStorage.removeItem('strTempTenantToken');
+          this.count = 0;
+        }
       }
     }
     ); 
@@ -381,8 +400,8 @@ export class ReserveUnitFormComponent implements OnInit {
     );
   }
 
-  onSubmit() {
-     const existingTenantToken = localStorage.getItem('strTenantToken');
+  onSubmit() {      
+    const existingTenantToken = localStorage.getItem('strTenantToken');
     const existTempToken = localStorage.getItem('strTempTenantToken');
     this.submitted = true;
     this.showConfirmation = true;
@@ -390,13 +409,19 @@ export class ReserveUnitFormComponent implements OnInit {
       return;
     } else {
       if (existingTenantToken) {
-        this.updateTenant(this.reserveUnitForm.value);
+        if(this.isValueUpdated) {
+          this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+          this.makeAReservation(this.MoveIn);
+        } else {
+          this.updateTenant(this.reserveUnitForm.value);
+        }
       } else {
         if(existTempToken) {
           this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
           this.makeAReservation(this.MoveIn);
         } else {
           this.addTenant(this.reserveUnitForm.value);
+          this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
         }
       }
     }

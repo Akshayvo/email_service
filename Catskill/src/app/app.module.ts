@@ -34,6 +34,8 @@ import { NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
 import { UaParserService } from '../app/services/ua-parser.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './modules/material/material.module';
 
 @NgModule({
   declarations: [
@@ -63,7 +65,9 @@ import { UaParserService } from '../app/services/ua-parser.service';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    SelectDropDownModule
+    SelectDropDownModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
