@@ -59,9 +59,14 @@ export class LoginComponent implements OnInit {
       intAuthMethod: 1
     });
 
-    const token = localStorage.getItem('strTenantToken');
-    if (token != null) {
-      this.router.navigate(['/pay-rent/payment']);    }
+    if(window.localStorage) {
+      const token = localStorage.getItem('strTenantToken');
+      if (token != null) {
+        this.router.navigate(['/pay-rent/payment']);   
+       }
+    }
+
+   
   }
 
   get f() { return this.loginForm.controls; }
@@ -95,7 +100,6 @@ export class LoginComponent implements OnInit {
   // }
 
   auth(data: any): void {
-    localStorage.removeItem('strTempTenantToken');
     this.authService.auth(data)
       .subscribe(
         auth => {
@@ -122,6 +126,9 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.invalid) {
       return;
     } else {
+      if(window.localStorage) {
+        localStorage.removeItem('strTempTenantToken');
+      }
       this.allowedToshow = true;
       this.auth(this.loginForm.value);
     }

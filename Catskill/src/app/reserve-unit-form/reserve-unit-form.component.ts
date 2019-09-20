@@ -98,6 +98,9 @@ export class ReserveUnitFormComponent implements OnInit {
   }
 
   examplaParent: string;
+
+  existingTenantToken: string;
+  existTempToken: string;
   
 
   config = {
@@ -181,10 +184,12 @@ export class ReserveUnitFormComponent implements OnInit {
 
     // this.minDay = this.From.getDate();
     // this.maxDay = this.To.getDate();
-
-    if (localStorage.getItem('strTenantToken')) {
-      this.getTenantInfo(this.tenant);
+    if(window.localStorage) {
+      if (localStorage.getItem('strTenantToken')) {
+        this.getTenantInfo(this.tenant);
+      }
     }
+
 
     console.log(this.DescriptionVR, this.MonthlyRateVR);
     
@@ -392,8 +397,13 @@ export class ReserveUnitFormComponent implements OnInit {
   signOut(logOut: any) {
     this.signOutService.signOut(logOut)
     .subscribe( result => {
-      localStorage.removeItem('strTenantToken');
-      localStorage.removeItem('strTempTenantToken');
+      // localStorage.removeItem('strTenantToken');
+      // localStorage.removeItem('strTempTenantToken');
+      if (localStorage.getItem('strTenantToken')) {
+        localStorage.removeItem('strTenantToken');
+      } else {
+        localStorage.removeItem('strTempTenantToken');
+      }
       this.router.navigate(['/pay-rent/login']);
     }, (err) => {
     }
@@ -401,14 +411,20 @@ export class ReserveUnitFormComponent implements OnInit {
   }
 
   onSubmit() {      
-    const existingTenantToken = localStorage.getItem('strTenantToken');
-    const existTempToken = localStorage.getItem('strTempTenantToken');
+    if (window.localStorage) {
+      if (localStorage.getItem('strTenantToken')) {
+        this.existingTenantToken = localStorage.getItem('strTenantToken');
+      } else {
+        this.existTempToken = localStorage.getItem('strTempTenantToken');
+      }
+    }
+    
     this.submitted = true;
     this.showConfirmation = true;
     if (this.reserveUnitForm.invalid) {
       return;
     } else {
-      if (existingTenantToken) {
+      if (this.existingTenantToken) {
         if(this.isValueUpdated) {
           this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
           this.makeAReservation(this.MoveIn);
@@ -416,7 +432,7 @@ export class ReserveUnitFormComponent implements OnInit {
           this.updateTenant(this.reserveUnitForm.value);
         }
       } else {
-        if(existTempToken) {
+        if(this.existTempToken) {
           this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
           this.makeAReservation(this.MoveIn);
         } else {
