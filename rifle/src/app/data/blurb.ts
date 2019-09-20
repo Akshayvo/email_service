@@ -1,6 +1,6 @@
 export const jumbotronHome = [
   {
-    heading: `Brand New Self Storage Units, Coming Soon!`,
+    heading: `Brand New Self Storage Units, Open Now!`,
     blurb: `Rifle Self Storage is Rifle, Colorado's newest self storage facility. We offer high-quality, conveniently located, 
             affordable self storage units in a fully-fenced facility that is protected by electronic gates! Whether you're a residential 
             or business storage user, Rifle Self Storage has the perfect unit for your needs!`,

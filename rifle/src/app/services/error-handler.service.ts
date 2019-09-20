@@ -49,6 +49,7 @@ export class ErrorHandlerService implements ErrorHandler {
     // You can include context details here (usually coming from other services: UserService...)
     const name = error.name || null;
     const appId = environment.appId;
+
     const version = environment.VERSION;
     const time = new Date().getTime();
     const id = `${appId}-${time}`;
