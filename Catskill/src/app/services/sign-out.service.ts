@@ -16,7 +16,7 @@ export class SignOutService {
   constructor(private http: HttpClient) { }
 
   signOut(logOut: any): Observable<any> {
-    const token = localStorage.getItem('strTenantToken');
+    const token = localStorage.getItem('strTenantToken') || localStorage.getItem('strTempTenantToken');
     const httpOptions = {
       headers: new HttpHeaders({
         'APIKey': `${environment.APIKey}`,

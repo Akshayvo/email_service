@@ -43,7 +43,6 @@ addTenant(event: any) {
   ngOnInit() {
     this.index = this.option.findIndex(x => x.id === this.reserveUnitForm.value.objTenant.State);
     this.stateString = this.option[this.index].description;
-
     this.MoveInString = this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, "yyyy-MM-dd");   
   }
 

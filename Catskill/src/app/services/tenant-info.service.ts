@@ -11,6 +11,9 @@ const baseUrl = environment.baseUrl;
 })
 export class TenantInfoService {
 
+  token: string;
+
+
   private url = `${baseUrl}tenant`;
 
   private updateTenantUrl = `${baseUrl}tenant/`;
@@ -23,13 +26,15 @@ export class TenantInfoService {
   constructor(private http: HttpClient) { }
 
   getTenantInfo(tenant: any): Observable<any> {
-    const token = localStorage.getItem('strTenantToken');
+    if(window.localStorage) {
+      this.token = localStorage.getItem('strTenantToken');
+    }
 
     const httpOptions = {
       headers: new HttpHeaders({
         'APIKey':  `${environment.APIKey}`,
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
+        'Authorization': `Bearer ${this.token}`
       })
     };
     return this.http.get<any>(this.url,  httpOptions);

@@ -32,6 +32,8 @@ export class HomeComponent implements OnInit {
   imagetype:any;
 
   data: any;
+ 
+ 
 
   constructor(
     private router: Router,
@@ -39,7 +41,6 @@ export class HomeComponent implements OnInit {
     private meta: Meta,
     private _renderer2: Renderer2,
     private metaService: MetaService,
-
     private uaParserService: UaParserService,
     @Inject(DOCUMENT) private _document: any,
   ) {
@@ -67,7 +68,6 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
-    // this.getSimSettings(this.data);
   
     // this.showConfig();
     // const s = this._renderer2.createElement('script');
@@ -111,13 +111,6 @@ export class HomeComponent implements OnInit {
   //     console.log('show config is working');
   //   }
   //   );
-  // }
-
-  // getSimSettings(data: any) {
-  //   this.simSettingsService.getSimSettings(data)
-  //     .subscribe(result => {
-  //       console.log(result);
-  //     });
   // }
 
 

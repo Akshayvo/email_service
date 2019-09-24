@@ -1,5 +1,6 @@
 <div class="reserve-unit-form">
         <!-- *ngIf="successMessage; else other_content"  -->
+        <!-- *ngIf="strConfirmation; else other_content" -->
     <div class="pb-4" *ngIf="strConfirmation; else other_content">
        Your reservation was successful. 
        <div class="py-4">
@@ -25,8 +26,8 @@
            </table>
        </div>
        <div>
-            <button *ngIf="tokenExit" (click)="signOut()" class="btn btn-primary">LogOff</button>
-            <div class="py-3 home-link"><a (click)="navigate('/')">Go to Home</a></div>
+            <button (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
+            <div *ngIf="tokenExit" class="py-3 home-link"><a (click)="navigate('/')">Go to Home</a></div>
         </div>
     </div>
     <ng-template #other_content>
@@ -208,18 +209,20 @@
                  <div class=" pb-5">
                      <div class=" form-group custom-date-css">
                          <label>Move In Date*</label>&nbsp;
-                         <!-- <mat-form-field class="example-full-width form-control">
-                            <input matInput [matDatepicker]="picker" formControlName="dteMoveIn"  [min]="From" [max]="To" placeholder="Select Move in" 
-                            [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }">
+                         <mat-form-field class="example-full-width " class="form-control" placeholder="select your date" [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }">
+                            <input matInput [matDatepicker]="picker" formControlName="dteMoveIn"  [min]="From" [max]="To"
+                           >
+                            
                             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                            <mat-datepicker [dateClass]="dateClass" #picker></mat-datepicker>
-                          </mat-form-field> -->
-                          
-                         <input type="date" [min]="From" [max]="To"
-                         class="form-control" [value]="currentDate" formControlName="dteMoveIn" [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }" />
-                         <div *ngIf="submitted  && f.dteMoveIn.errors" class="invalid-feedback">
+                            <mat-datepicker  [dateClass]="dateClass" #picker></mat-datepicker>
+                            
+                          </mat-form-field>
+                          <div *ngIf="submitted  && f.dteMoveIn.errors" class="invalid-feedback">
                             <small class="form-text text-muted" *ngIf="f.dteMoveIn.errors.required">Please fill out this field</small>
-                        </div>
+                        </div> 
+                         <!-- <input type="date" [min]="From" [max]="To"
+                         class="form-control" [value]="currentDate" formControlName="dteMoveIn" [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }" /> -->
+                         
                     </div>
                     <div formArrayName="lstRentalPeriods">
                         <div *ngFor="let itemRental of reserveUnitForm.controls.lstUnitTypes.controls; let i = index">
@@ -254,4 +257,4 @@
 </div>
 
 
-<!-- <pre>{{reserveUnitForm.value | json }}</pre> -->
+<pre>{{reserveUnitForm.value | json }}</pre>

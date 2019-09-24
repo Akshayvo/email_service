@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 
 import { AddTenantService } from '../services/add-tenant.service';
@@ -16,14 +16,15 @@ import { option } from '../data/view-rates';
 
 import { DatePipe } from '@angular/common';
 
-import {  environment } from "../../environments/environment";
 import { TenantInfoService } from '../services/tenant-info.service';
+import { LeadDaysService } from '../services/lead-days.service';
+import { MatCalendarCellCssClasses } from '@angular/material/datepicker';
 
 
 @Component({
   selector: 'app-reserve-unit-form',
   templateUrl: './reserve-unit-form.component.html',
-  styleUrls: ['./reserve-unit-form.component.scss']
+  styleUrls: ['./reserve-unit-form.component.scss'],
 })
 
 export class ReserveUnitFormComponent implements OnInit {
@@ -101,7 +102,12 @@ export class ReserveUnitFormComponent implements OnInit {
 
   existingTenantToken: string;
   existTempToken: string;
+  data: any;
   
+  intLeadDaysFrom: number;
+  intLeadDaysTo: number;
+
+  logOut = {};
 
   config = {
     displayKey:"description", //if objects array passed which key to be displayed defaults to description
@@ -125,6 +131,7 @@ export class ReserveUnitFormComponent implements OnInit {
     private tenantInfoService: TenantInfoService,
     public router: Router,
     private datePipe: DatePipe,
+    private leadDaysService: LeadDaysService,
 
     ) {
     this.reserveUnitForm = this.formBuilder.group({
@@ -171,16 +178,15 @@ export class ReserveUnitFormComponent implements OnInit {
   ngOnInit() {
     this.getData(this.unitTypes);
     this.getRentalPeriod(this.rentalPeriod);
+    this.getLeadDays(this.data);
+// console.log(this.intLeadDaysFrom, this.intLeadDaysTo);
+
   
     this.currentdate = new Date();
     
     this.fetchUSState();
     
-    this.currentDate = this.datePipe.transform(new Date(), "yyyy-MM-dd");
-    let FromDate = this.currentdate.setDate(this.currentdate.getDate() + environment.intLeadDaysFrom);
-    let ToDate = this.currentdate.setDate(this.currentdate.getDate() + environment.intLeadDaysTo);
-    this.From = this.datePipe.transform(FromDate, "yyyy-MM-dd");
-    this.To = this.datePipe.transform(ToDate, "yyyy-MM-dd");
+    
 
     // this.minDay = this.From.getDate();
     // this.maxDay = this.To.getDate();
@@ -210,18 +216,11 @@ export class ReserveUnitFormComponent implements OnInit {
   get f() { return this.reserveUnitForm.controls; }
 
   dateClass = (d: Date) => {
-   
-     
-
     const date = d.getDate();
-
     console.log(this.minDay, this.maxDay, date);
-
-
     // Highlight the 1st and 20th day of each month.
     // return ( this.minDay <= date && date <= this.maxDay) ? 'example-custom-date-class' : undefined;
-    return ( 20 === date || date === 22) ? `example-custom-date-class` : undefined;
-
+    return ( date === 27 || date === 28) ? `example-custom-date-class` : undefined;
   }
 
   public navigate(location: any) {
@@ -235,6 +234,10 @@ export class ReserveUnitFormComponent implements OnInit {
     } else {
       if (this.count <= 1 ) {
         this.count = this.count + 1;
+
+        this.reserveUnitForm.patchValue({
+          dteMoveIn: this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, "yyyy-MM-dd")
+        })
       }
     }
   }
@@ -268,6 +271,21 @@ export class ReserveUnitFormComponent implements OnInit {
       ])
     });
   }
+
+  getLeadDays(data) {
+    this.leadDaysService.getLeadDays(data)
+    .subscribe(result => {
+      this.intLeadDaysFrom = result.intLeadDaysFrom;
+      this.intLeadDaysTo = result.intLeadDaysTo;
+      this.currentDate = this.datePipe.transform(new Date(), "yyyy-MM-dd");
+      let FromDate = this.currentdate.setDate(this.currentdate.getDate() + this.intLeadDaysFrom);
+      let ToDate = this.currentdate.setDate(this.currentdate.getDate() + this.intLeadDaysTo);
+      this.From = this.datePipe.transform(FromDate, "yyyy-MM-dd");
+      this.To = this.datePipe.transform(ToDate, "yyyy-MM-dd");
+    })
+  }
+
+
 
   getTenantInfo(tenant) {
     this.tenantInfoService.getTenantInfo(tenant)
@@ -399,12 +417,12 @@ export class ReserveUnitFormComponent implements OnInit {
     .subscribe( result => {
       // localStorage.removeItem('strTenantToken');
       // localStorage.removeItem('strTempTenantToken');
-      if (localStorage.getItem('strTenantToken')) {
-        localStorage.removeItem('strTenantToken');
-      } else {
-        localStorage.removeItem('strTempTenantToken');
-      }
-      this.router.navigate(['/pay-rent/login']);
+      // if (localStorage.getItem('strTenantToken')) {
+      //   localStorage.removeItem('strTenantToken');
+      // } else {
+      // }
+      localStorage.removeItem('strTempTenantToken');
+      this.router.navigate(['/reserve-unit']);
     }, (err) => {
     }
     );
