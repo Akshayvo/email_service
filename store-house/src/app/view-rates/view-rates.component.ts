@@ -22,7 +22,7 @@ export class ViewRatesComponent implements OnInit {
       name: 'description',
       content: `Check our availability and see how affordable our storage unit rates are by clicking here!`
     });
-    this.titleService.setTitle('View Unit Rates | The Store House');
+    this.titleService.setTitle('View Unit Rates | The Storehouse');
   } 
 
   ngOnInit() {

@@ -18,7 +18,7 @@ export class ReserveComponent implements OnInit {
       name: 'description',
       content: `Simply fill out our form and reserve your unit today! Or call (315) 779-2121 and speak with our friendly storage specialists!`
     });
-    this.titleService.setTitle('Reserve Your Unit | The Store House');
+    this.titleService.setTitle('Reserve Your Unit | The Storehouse');
   }
 
   ngOnInit() {

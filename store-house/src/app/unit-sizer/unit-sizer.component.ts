@@ -21,7 +21,7 @@ export class UnitSizerComponent implements OnInit {
       name: 'description',
       content: `Use this handy storage unit sizing chart to help you visualize what will fit into what size unit! If you've still got questions, contact us today!`
     });
-    this.titleService.setTitle(`Unit Sizer | The Store House`);
+    this.titleService.setTitle(`Unit Sizer | The Storehouse`);
   }
 
   ngOnInit() {

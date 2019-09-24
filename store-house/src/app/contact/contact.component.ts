@@ -40,7 +40,7 @@ export class ContactComponent implements OnInit {
       content: `Have questions about our services or your account? Use our
       contact form or the contact information to reach out today!`
     });
-    this.titleService.setTitle('Contact Us | The Store House');
+    this.titleService.setTitle('Contact Us | The Storehouse');
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,

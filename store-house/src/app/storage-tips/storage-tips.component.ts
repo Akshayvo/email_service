@@ -24,7 +24,7 @@ export class StorageTipsComponent implements OnInit {
       name: 'description',
       content: `Take advantage of our decade of self storage expertise, and use these storage tips to make your stay with us a breeze!`
     });
-    this.titleService.setTitle('Storage Tips | The Store House');
+    this.titleService.setTitle('Storage Tips | The Storehouse');
   }
 
   ngOnInit() {
