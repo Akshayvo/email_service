@@ -24,6 +24,9 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { PhotosComponent } from './photos/photos.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { AmenitiesComponent } from './amenities/amenities.component';
+import { RvSiteRentalComponent } from './rv-site-rental/rv-site-rental.component';
+import { LocationComponent } from './location/location.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,9 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
     StorageTipsComponent,
     AccordionComponent,
     PhotosComponent,
+    AmenitiesComponent,
+    RvSiteRentalComponent,
+    LocationComponent,
   ],
   imports: [
     CommonModule,

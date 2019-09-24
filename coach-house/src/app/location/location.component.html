@@ -1,0 +1,28 @@
+<div class="contentHolder">
+  <div class="container">
+    <div>
+      <h1 class="py-5 text-center">A 55 Plus Community in the Heart of it All </h1>
+    </div>
+    <div class="container px-0"> 
+      <div class="row view-rates">
+        <div class="col-lg-6 col-md-12 scroll-wrapper">
+          <h2 class="mb-3" >Nearby Attractions</h2>
+          <ul>
+            <div class="attraction fontsize" *ngFor="let list of nearbyAttractions">
+              <li [innerHTML]="list.data" ></li>
+            </div>
+          </ul>
+          <h2 class="mb-3">The Coach House is also located near grocery stores, area interstates, and hospitals. </h2>
+          <ul class="fontsize">
+            <li  *ngFor="let list of locatedNear">{{list.data}}</li>
+          </ul>
+          <p>{{locationContent.p}}</p>
+        </div>
+        <div class="col-lg-6 col-md-12 view-rates-padding">
+          <app-photos></app-photos>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

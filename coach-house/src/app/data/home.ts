@@ -46,23 +46,23 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `At Security STORAGE we pride ourselves on our customer service. That means clean units, convenient hours,
-        and online access to your account. Our services are designed to operate on your terms.`,
+        p: `The Coach House is located on the beautiful West Coast of Florida, tucked away in the Palmetto countryside, 
+            yet only five miles from Bradenton, where you’ll find shopping, entertainment, fine restaurants, medical facilities 
+            and miles of white sandy beaches. `,
     },
     {
-        p: `Our broad selection of storage units serves a wide variety of clients in need of that extra space. From
-        local businesses in need of an extra room for supplies and equipment to the residential customer we've got
-        your self storage needs covered!`,
+        p: `Ours is a warm, friendly mobile home and RV Park community, with large landscaped lots and a variety of lovely 
+            manufactured homes. Residents often gather at the fully-equipped clubhouse to chat with neighbors or join in the many 
+            social activities. Nearby Bradenton and Sarasota offer many attractions, including Jungle Gardens, Van Wezel Performing 
+            Arts Hall and Ringling Museum. There are a variety of festivals and cultural and sporting events in the area.  `,
     },
     {
-        p: `We also cater to local businesses with our high-quality office suites! Lease office space today in 6-month
-        or 12-month contracts and restore your work/life balance! Some offices are even partially furnished.`,
+        p: `When you choose a home or an RV site at the Coach House, you’ll be joining one of the area’s finest communities. Your 
+            lot rental includes water and sewer fees, garbage Pick-up, use of all recreational facilities and all outside maintenance. 
+            Our streets are lighted for your safety. Our residents are proud of our well-kept community and we think you’ll agree, the 
+            Coach House offers both excellent value and a delightful community. `,
     },
-    {
-        p: `Our extra-large units function as warehouse space for a wide range of local businesses who need to
-        store equipment or inventory off-site. Drive right up to your unit to load or unload with no problem!
-        Be sure to ask about our drive up indoor units for moving goods during inclement weather.`,
-    },
+    
 ];
 
 export const gettingStarted = `Are you ready to reserve your unit,

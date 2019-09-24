@@ -1,0 +1,112 @@
+@import "../../styles.scss";
+li::ng-deep {
+  color: black;
+}
+
+
+.nearby:ng-deep {
+  color: black;
+}
+.contentHolder {
+  padding-top: 100px;
+  min-height: 96vh;
+  margin-bottom: 50px;
+  .container{.row{.scroll-wrapper{
+    
+    ul{.attaraction{
+      li{
+        a{
+          color: black;
+        }
+      }
+    }
+  }}}
+  }
+  
+
+  .attaraction{
+    a{
+      color:black;
+    }
+  }
+  .scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    a{
+      color: black;
+    }
+
+    iframe {
+      width: 100%;
+      overflow: auto;
+    }
+  }
+}
+.fontsize{
+    font-size: 1.3rem;
+  }
+.attraction{
+    li{
+        a{
+        color: black;
+    }}
+}
+
+.view-rates {
+  background-color: #edf1ee;
+  padding: 64px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .contentHolder {
+    padding-top: 60px;
+  }
+
+  // .view-rates {
+  //   padding: 32px;
+  // }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .contentHolder {
+    padding-top: 60px;
+  }
+
+  .view-rates {
+    padding: 40px;
+  }
+
+  .view-rates-padding {
+    padding-top: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contentHolder {
+    padding-top: 60px;
+  }
+
+  .view-rates {
+    background-color: #edf1ee;
+    padding: 16px 0;
+  }
+
+  .scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+
+    iframe {
+      width: 100%;
+      overflow: scroll;
+    }
+  }
+
+  img {
+    height: 200px;
+    width: 100%;
+  }
+
+  .view-rates-padding {
+    padding-top: 24px;
+  }
+}

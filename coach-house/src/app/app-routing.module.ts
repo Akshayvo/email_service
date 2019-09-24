@@ -8,14 +8,17 @@ import { PaymentComponent } from './payment/payment.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ErrorComponent } from './error/error.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { AmenitiesComponent } from './amenities/amenities.component';
+import { RvSiteRentalComponent } from './rv-site-rental/rv-site-rental.component';
+import { LocationComponent } from './location/location.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
   { path: '', component: HomeComponent },
-  // { path: 'unit-sizer', component: UnitSizerComponent },
-  // { path: 'storageTips', component: StorageTipsComponent },
+  { path: 'rv-site-rental', component: RvSiteRentalComponent },
+  { path: 'location', component: LocationComponent },
   { path: 'contact-us', component: ContactComponent },
-  // { path: 'view-rates', component: ViewRatesComponent },
+  { path: 'amenities', component: AmenitiesComponent},
   { path: 'pay-rent', component: PaymentComponent },
   { path: 'review', component: HomeComponent,
   resolve: {

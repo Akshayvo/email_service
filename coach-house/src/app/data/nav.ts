@@ -3,20 +3,25 @@ export const navLinks = [
         label: 'HOME',
         path: '/',
     },
-    // {
-    //     label: 'VIEW RATES',
-    //     path: '/view-rates',
-    // },
-    // {
-    //     label: 'UNIT SIZER',
-    //     path: 'unit-sizer',
-    // },
     {
-        label: 'PAY RENT',
+        label: 'AMENITIES',
+        path: 'amenities',
+    },
+    {
+        label: 'RV SITE RENTAL',
+        path: 'rv-site-rental',
+    },
+    {
+        label: 'LOCATION',
+        path: 'location'
+    },
+    {
+        label: 'RESIDENT LOGIN',
         path: 'pay-rent'
     },
     {
         label: 'CONTACT US',
         path: 'contact-us'
     },
+    
 ];

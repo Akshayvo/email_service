@@ -1,0 +1,25 @@
+<div class="contentHolder">
+  <div class="container">
+    <div>
+      <h1 class="py-5 text-center">RV Site Rental</h1>
+    </div>
+    <div class="container px-0"> 
+      <div class="row view-rates">
+        <div class="col-lg-6 col-md-12 scroll-wrapper">
+          <div class="fontsize" *ngFor="let content of rvSiteRentalContent">
+            <p>{{content.p}}</p>
+          </div>
+          <!-- <ul>
+            <li *ngFor="let list of amenitieList">{{list.data}}</li>
+          </ul> -->
+          
+        </div>
+        <div class="col-lg-6 col-md-12 view-rates-padding">
+          <app-photos></app-photos>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
