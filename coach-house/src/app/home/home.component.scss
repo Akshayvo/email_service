@@ -146,8 +146,13 @@
     }
   }
 }
+@media only screen and (max-width:460px){
+  .navbar-brand{
+    margin-right: 0px;
+  }
+}
 
-@media only screen and (max-height: 480px) {
+@media only screen and  (max-height: 480px) {
   .jumbotron-container {
     .jumbotron-bottom {
       p {

@@ -1,39 +1,19 @@
 @import "../../styles.scss";
-li::ng-deep {
-  color: black;
-}
 
-
-.nearby:ng-deep {
-  color: black;
-}
 .contentHolder {
-  padding-top: 100px;
+  padding-top: 110px;
   min-height: 96vh;
   margin-bottom: 50px;
-  .container{.row{.scroll-wrapper{
-    
-    ul{.attaraction{
-      li{
-        a{
-          color: black;
-        }
-      }
-    }
-  }}}
-  }
-  
-
-  .attaraction{
-    a{
-      color:black;
-    }
-  }
   .scroll-wrapper {
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
-    a{
-      color: black;
+    .attraction{
+      color:green;
+        li{
+          color:red;
+            a{
+              color: $fontColor;
+        }}
     }
 
     iframe {
@@ -42,15 +22,11 @@ li::ng-deep {
     }
   }
 }
+
 .fontsize{
     font-size: 1.3rem;
   }
-.attraction{
-    li{
-        a{
-        color: black;
-    }}
-}
+
 
 .view-rates {
   background-color: #edf1ee;

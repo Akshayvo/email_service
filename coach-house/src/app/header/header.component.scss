@@ -104,9 +104,12 @@ a {
     overflow-y: scroll;
   }
 }
-@media only screen and (max-width:400px){
-  .navbar-brand{
-    margin-right: 0px;
+@media only screen and (max-width:450px){
+  .navbar-brand{ 
+    margin-right: 1px;
+    img{
+      width:300px
+    }
   }
   .fontsize{
     font-size: 1rem !important;
