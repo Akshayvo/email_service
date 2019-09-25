@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'location', component: LocationComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'amenities', component: AmenitiesComponent},
-  { path: 'pay-rent', component: PaymentComponent },
+  { path: 'resident-login', component: PaymentComponent },
   { path: 'review', component: HomeComponent,
   resolve: {
       url: 'externalUrlRedirectResolver'

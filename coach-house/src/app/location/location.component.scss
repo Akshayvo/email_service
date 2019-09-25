@@ -7,14 +7,7 @@
   .scroll-wrapper {
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
-    .attraction{
-      color:green;
-        li{
-          color:red;
-            a{
-              color: $fontColor;
-        }}
-    }
+    
 
     iframe {
       width: 100%;
@@ -77,12 +70,15 @@
     }
   }
 
-  img {
-    height: 200px;
-    width: 100%;
-  }
+  // img {
+  //   height: 200px;
+  //   width: 100%;
+  // }
 
   .view-rates-padding {
     padding-top: 24px;
   }
 }
+li{a{
+  color: #5b9bd5 !important;
+}}

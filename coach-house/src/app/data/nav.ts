@@ -17,7 +17,7 @@ export const navLinks = [
     },
     {
         label: 'RESIDENT LOGIN',
-        path: 'pay-rent'
+        path: 'resident-login'
     },
     {
         label: 'CONTACT US',

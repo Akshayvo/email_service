@@ -1,6 +1,6 @@
 export const nearbyAttractions = [
     {
-        data:`<a id="nearby" href="https://www.ringling.org/">The John and Mable Ringling Museum of Art</a>`,
+        data:`<a id="anchor" href="https://www.ringling.org/">The John and Mable Ringling Museum of Art</a>`,
     },
     {
         data:`<a id="nearby" href="https://www.sarasotacarmuseum.org/">Sarasota Classic Car Museum</a>`,

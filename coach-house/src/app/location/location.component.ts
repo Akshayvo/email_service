@@ -7,7 +7,7 @@ import { nearbyAttractions, locatedNear, locationContent } from '../data/locatio
   selector: 'app-location',
   templateUrl: './location.component.html',
   styleUrls: ['./location.component.scss'],
-
+  encapsulation:ViewEncapsulation.None,
 })
 export class LocationComponent implements OnInit {
   nearbyAttractions:any;

@@ -6,7 +6,7 @@
     <div class="container"> 
       <div class="row view-rates">
         <div class="col-lg-6 col-md-12 scroll-wrapper">
-          <h2 class="mb-3">Designed for the 55 Plus Active Lifestyle </h2>
+          <h2 class="pb-3">Designed for the 55 Plus Active Lifestyle </h2>
           <p class="fontsize" *ngFor="let content of amenitieContent">{{content.p}}</p>
           <ul class="fontsize">
             <li *ngFor="let list of amenitieList">{{list.data}}</li>
@@ -15,9 +15,6 @@
         </div>
         <div class="col-lg-6 col-md-12 view-rates-padding">
           <app-photos></app-photos>
-          <p class="my-4 text-justify" *ngFor='let para of viewrates'>
-            <!-- <app-photos></app-photos> -->
-          </p>
         </div>
       </div>
     </div>

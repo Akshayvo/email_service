@@ -3,16 +3,16 @@
     <div>
       <h1 class="py-5 text-center">A 55 Plus Community in the Heart of it All </h1>
     </div>
-    <div class="container px-0"> 
+    <div class="container "> 
       <div class="row view-rates">
         <div class="col-lg-6 col-md-12 scroll-wrapper">
-          <h2 class="mb-3" >Nearby Attractions</h2>
+          <h2 class="pb-3" >Nearby Attractions</h2>
           <ul class="attraction">
-            <div class="fontsize" *ngFor="let list of nearbyAttractions">
-              <li [innerHTML]="list.data" ></li>
-            </div>
+            <li class="fontsize" *ngFor="let list of nearbyAttractions">
+              <p [innerHTML]="list.data" ></p>
+            </li>
           </ul>
-          <h2 class="mb-3">The Coach House is also located near grocery stores, area interstates, and hospitals. </h2>
+          <h2 class="pb-3">The Coach House is also located near grocery stores, area interstates, and hospitals. </h2>
           <ul class="fontsize">
             <li  *ngFor="let list of locatedNear"><p>{{list.data}}</p></li>
           </ul>
