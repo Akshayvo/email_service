@@ -1,3 +1,19 @@
+<div class="header-style">
+    <div class="container  p-2 display-style">
+      <div>
+          Rent a unit this October, and receive your second month free!<strong>
+          <a (click)="navigate('/view-rates')" rel="nofollow" target="_"> Click Here</a></strong>
+          to learn more!
+      </div>
+      <div>
+          <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
+              <a [href]="social?.path" target="_blank">
+                <i [class]="social?.class"></i>
+              </a>
+            </span>
+      </div>
+    </div>
+  </div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
   <div class="container navbar-button">
     <a class="navbar-brand" (click)="navigate('/')">

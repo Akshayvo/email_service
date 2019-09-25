@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailService } from '../services/email.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { contact, hours} from '../data/contact';
+import { contact, hours, socialLinks} from '../data/contact';
 
 @Component({
   selector: 'app-contact-button',
@@ -42,7 +42,7 @@ export class ContactButtonComponent implements OnInit {
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
-    // this.fetchsocialLink();
+    this.fetchsocialLink();
   }
 
   get f() { return this.contactForm.controls; }
@@ -55,9 +55,9 @@ export class ContactButtonComponent implements OnInit {
     this.hours = hours;
   }
 
-  // public fetchsocialLink() {
-  //   this.socialLink = socialLink;
-  // }
+  public fetchsocialLink() {
+    this.socialLink = socialLinks;
+  }
 
   onSubmit() {
     this.submitted = true;

@@ -37,3 +37,10 @@ export const hours = [
 ];
 
 
+export const socialLinks = [
+    {
+        label: 'facebook',
+        path: 'https://www.facebook.com/Rifleselfstorage/',
+        class: 'fab fa-facebook-square',
+    },
+];

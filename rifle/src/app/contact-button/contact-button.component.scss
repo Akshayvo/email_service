@@ -12,22 +12,24 @@
   overflow-y: auto;
 
   .heading {
+    align-items: center;
     h2 {
       color: $white;
       font-size: 1.5rem;
+      margin-bottom: 0;
     }
   }
 
   .iconColor {
-    color: $primary;
+    color: white;
   }
 }
 
 
 .socialLink {
   a {
-    color: $primary;
-    font-size: 22px;
+    color: white;
+    font-size: 18px;
   }
 
   text-align: right;

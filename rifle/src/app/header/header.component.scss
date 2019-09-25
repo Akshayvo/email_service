@@ -4,6 +4,21 @@ a {
   cursor: pointer;
 }
 
+.display-style {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-style {
+  background-color: $primary;
+  color: white;
+  font-size: 0.87rem;
+  a {
+    color: white;
+    font-weight: 800;
+  }
+}
+
 .iconColor {
   color: $primary;
 }

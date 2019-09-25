@@ -1,37 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc>http://www.riflestorageunits.com</loc>
+    <loc>https://www.riflestorageunits.com</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.riflestorageunits.com/view-rates</loc>
+    <loc>https://www.riflestorageunits.com/view-rates</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.riflestorageunits.com/pay-rent</loc>
+    <loc>https://www.riflestorageunits.com/pay-rent</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.riflestorageunits.com/unit-sizer</loc>
+    <loc>https://www.riflestorageunits.com/unit-sizer</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.riflestorageunits.com/contact-us</loc>
+    <loc>https://www.riflestorageunits.com/contact-us</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.riflestorageunits.com/privacy-policy</loc>
+    <loc>https://www.riflestorageunits.com/privacy-policy</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.riflestorageunits.com/storage-tips</loc>
+    <loc>https://www.riflestorageunits.com/storage-tips</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+   <url>
+    <loc>https://www.riflestorageunits.com/faq</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
