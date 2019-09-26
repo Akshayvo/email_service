@@ -23,6 +23,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+import { ContactButtonComponent } from './contact-button/contact-button.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,9 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
     ErrorHandlerComponent,
     StorageTipsComponent,
     AccordionComponent,
-    UnitSizerComponent
+    UnitSizerComponent,
+    ContactButtonComponent,
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
