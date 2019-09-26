@@ -98,3 +98,27 @@ export const galleryDataLocation3 = [
   { p: `Access hours at our Augusta location are 24/7! Stop by and access your unit whenever you need to!`, }
 ];
 
+
+export const galleryImagesHome = [
+    {
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-security-storage-1.jpg',
+        alt: `photograph of self storage units with concrete parking under a blue sky`,
+    },
+    {
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-security-storage-2.jpg',
+        alt: `photograph of the exterior of the main office building at AA Secure Storage`,
+    },
+    {
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-security-storage-4.jpg',
+        alt: `photograph of two rows of self storage units on either side of a paved surface`,
+    },
+    {
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-security-storage-5.jpg',
+        alt: ` photograph of a large self storage unit building`,
+    },
+     {
+        url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-security-storage-6.jpg`,
+        alt: ` photograph of a self storage building with oversized roll-up doors`,
+    },
+];
+    

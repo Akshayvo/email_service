@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { galleryDataLocation1, galleryDataLocation2, galleryDataLocation3,
-        galleryImagesLocation1, galleryImagesLocation2, galleryImagesLocation3 } from '../data/galleryImage';
+        galleryImagesLocation1, galleryImagesLocation2, galleryImagesLocation3, galleryImagesHome } from '../data/galleryImage';
 import { Router } from '@angular/router';
 
 @Component({
@@ -32,6 +32,8 @@ export class PhotosComponent implements OnInit {
     this.fetchDetailsLocation3();
   }  else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
     this.fetchDetailsLocation4();
+  } else {
+    this.fetchDetailsHome();
   }
 }
 
@@ -57,6 +59,11 @@ export class PhotosComponent implements OnInit {
     this.galleryImages = galleryImagesLocation3;
     this.galleryData = galleryDataLocation3;
     this.id = 4;
+  }
+
+  public fetchDetailsHome() {
+    this.galleryImages = galleryImagesHome;
+    this.id = 5;
   }
 
 
