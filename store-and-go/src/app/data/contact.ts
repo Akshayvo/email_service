@@ -8,8 +8,8 @@ export const contact = [
     {
         id: 1,
         redirect: 'mailto:manager@sacramentostoreandgo.com',
-        label: 'Email:',
         data: 'manager@sacramentostoreandgo.com',
+        label: 'Email:',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
@@ -39,6 +39,11 @@ export const hours = [
         data: '7:00 AM to 7:00 PM 365 Days a Year'
     }
 ];
+export const complaintMail = [
+    {
+        data:'sandymunson@cox.net',
+    }
+]
 
 // export const socialLinks = [
 //     {

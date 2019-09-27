@@ -3,10 +3,14 @@
 .contentHolder {
   display: flex;
   min-height: 98vh;
+  .row{
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .padding-top {
-  padding-top: 110px;
+  padding-top: 101px;
 }
 
 .background-padding {

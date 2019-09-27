@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailService } from '../services/email.service';
-import { contact, hours} from '../data/contact';
+import { contact, hours, complaintMail} from '../data/contact';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { Router } from '@angular/router';
 @Component({
@@ -22,6 +22,7 @@ export class ContactButtonComponent implements OnInit {
   completeMessage: string;
   socialLinks: any;
   contactForm: FormGroup;
+  complaintMail: any;
 
   valid = true;
   submitted = false;
@@ -52,6 +53,7 @@ export class ContactButtonComponent implements OnInit {
 
   public fetchContactDetails() {
     this.contactInfo = contact;
+    this.complaintMail = complaintMail;
   }
 
   public fetchHours() {
@@ -71,7 +73,7 @@ export class ContactButtonComponent implements OnInit {
       this.contactForm.value.subjectCB = 'Website Form Submission';
     }
 
-     this.receiveremail = this.contactInfo[2].data;
+     this.receiveremail = this.complaintMail[0].data;
 
          this.completeMessage = `phone: ${this.contactForm.value.phoneCB}, <br/>
                                 message: ${this.contactForm.value.messageCB}`;

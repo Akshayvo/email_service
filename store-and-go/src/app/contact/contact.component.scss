@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .padding-top {
-  padding-top: 110px;
+  padding-top: 101px;
 }
 
 .btn-outline-primary {
@@ -33,6 +33,10 @@
 .contentHolder {
   h1 {
     margin-block-end: 0;
+  }
+  .row{
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

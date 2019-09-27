@@ -10,6 +10,9 @@ import { filter } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit {
   title = 'Store & Go Self Storage';
+  flag: boolean;
+  public offsets: number[];
+  x: any;
   constructor(
     private router: Router,
     private angulatics: Angulartics2GoogleAnalytics
@@ -17,7 +20,22 @@ export class AppComponent implements OnInit {
 
   }
   ngOnInit() {
+    this.x = window.matchMedia('(max-width: 600px)');
+    this.flag = false;
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
     const onNavigationEnd = this.router.events.pipe(filter(event => event instanceof NavigationEnd));
+  }
+  public dataShow() {
+    if (!this.flag) {
+      this.flag = !this.flag;
+      if (this.x.matches) {
+      document.body.style.overflow = 'hidden';
+      }
+    } else {
+      this.flag = !this.flag;
+      if (this.x.matches) {
+        document.body.style.overflow = 'auto';
+        }
+    }
   }
 }
