@@ -205,10 +205,10 @@ export const unitSizerLocation1 = [
         `,
         amenities: [
             { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
+           
             { content: 'Furniture', },
             { content: 'Bookcases', },
-            { content: 'Tow Trailer' },
+            
             ],
     },
     {
@@ -219,11 +219,11 @@ export const unitSizerLocation1 = [
         including.`,
         amenities: [
             { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
+           
             { content: 'Furniture', },
             { content: 'Mattresses', },
             { content: 'Bookcases', },
-            { content: 'Tow Trailer' },
+            
             ],
     }
 ];
@@ -309,10 +309,10 @@ export const unitSizerLocation2 = [
         `,
         amenities: [
             { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
+           
             { content: 'Furniture', },
             { content: 'Bookcases', },
-            { content: 'Tow Trailer' },
+            
             ],
     },
     {
@@ -323,11 +323,11 @@ export const unitSizerLocation2 = [
         including.`,
         amenities: [
             { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
+           
             { content: 'Furniture', },
             { content: 'Mattresses', },
             { content: 'Bookcases', },
-            { content: 'Tow Trailer' },
+            
             ],
     }
 ];
@@ -400,10 +400,10 @@ export const unitSizerLocation3 = [
         `,
         amenities: [
             { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
+           
             { content: 'Furniture', },
             { content: 'Bookcases', },
-            { content: 'Tow Trailer' },
+            
             ],
     },
     {
@@ -414,11 +414,11 @@ export const unitSizerLocation3 = [
         including.`,
         amenities: [
             { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
+           
             { content: 'Furniture', },
             { content: 'Mattresses', },
             { content: 'Bookcases', },
-            { content: 'Tow Trailer' },
+            
             ],
     }
 ];
@@ -477,10 +477,10 @@ export const unitSizerLocation4 = [
         `,
         amenities: [
             { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
+           
             { content: 'Furniture', },
             { content: 'Bookcases', },
-            { content: 'Tow Trailer' },
+            
             ],
     },
     {
@@ -491,11 +491,11 @@ export const unitSizerLocation4 = [
         including.`,
         amenities: [
             { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
+           
             { content: 'Furniture', },
             { content: 'Mattresses', },
             { content: 'Bookcases', },
-            { content: 'Tow Trailer' },
+            
             ],
     },
     {
@@ -505,11 +505,10 @@ export const unitSizerLocation4 = [
         data: `This unit is approximately 400 sq feet of space that can hold the contents of a small house.`,
         amenities: [
         { content: 'Appliances', },
-        { content: 'Car or Small Boat', },
+       
         { content: 'Furniture', },
         { content: 'Mattresses', },
         { content: 'Bookcases' },
-        { content: 'Tow Trailer' }
         ],
     },
 
@@ -569,6 +568,9 @@ export const aboutUsLocation2 = [
         p: `We are proud to serve Orange County, Westchester, and all points south with affordable, well-maintained self storage units and RV/Boat 
             storage! Storagetown Rental Spaces at Chester also sells you'll need to make your stay with us a breeze! `,
     },
+    {
+        p: `You can also purchase boxes and packing supplies at the front office!`,
+    }
 ];
 
 export const aboutUsLocation3 = [

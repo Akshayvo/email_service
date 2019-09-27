@@ -49,9 +49,9 @@ export class HomeComponent implements OnInit {
 
   public dataupdate() {
     if ( this.locationId === '1' || this.locationId === 1) {
-      this.fetchContactDetailsLocation1();
-    } else if ( this.locationId === '2' ) {
       this.fetchContactDetailsLocation2();
+    } else if ( this.locationId === '2' ) {
+      this.fetchContactDetailsLocation1();
     } else if ( this.locationId === '3' ) {
       this.fetchContactDetailsLocation3();
     } else if ( this.locationId === '4' ) {

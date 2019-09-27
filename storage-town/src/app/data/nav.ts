@@ -10,14 +10,14 @@ export const navLinks = [
         path: '/location',
         sublinks: [
             {
+                id: '2',
+                label: 'Chester - Brookside Ave',
+                path: '/location/chester',
+            },
+            {
                 id: '1',
                 label: 'Chester - Andrews Lane',
                 path: '/location/florida-and-warwick',
-              },
-              {
-                  id: '2',
-                  label: 'Chester - Brookside Ave',
-                  path: '/location/chester',
               },
               {
                 id: '3',
