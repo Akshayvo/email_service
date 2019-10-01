@@ -8,7 +8,10 @@
   .padding {
     padding: 48px;
   }
-
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+  }
   // iframe {
   //   overflow: hidden;
   //   overflow-x: hidden;
@@ -41,6 +44,9 @@
   }
 }
 @media only screen and (max-width:991px){
+  .contentHolder{
+    padding-top:60px;
+  }
   iframe{
     min-height: 886px;
   }
