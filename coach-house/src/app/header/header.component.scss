@@ -45,6 +45,7 @@ a {
   color: $primary !important;
   font-weight: 600;
   padding: 21px;
+  font-size: 1.1vw;
 }
 
 .nav-link:hover {
@@ -79,23 +80,39 @@ a {
     color: #212529;
   }
 }
+@media only screen and(min-width:1700px){
+  .container{
+    .nav-link{
+      font-size: 1.1rem;
+    }
+  }
+}
+// @media only screen and (max-width:1699) and (min-width:991){
+//   .container{
+//     .nav-link{
+//       font-size: 1.1vw;
+//     }
+//   }
+// }
 @media only screen and (min-width:1200px){
   .container{
-   .nav-link{
-     font-size: 0.8rem;
-   }
+    max-width: 1400px;
+  //  .nav-link{
+  //    font-size: 100%;
+  //  }
   }  
 }
 
 @media only screen and (max-width:1199px) and (min-width:992px){
   .container{
+    max-width: 1200px;
     .nav-link{
       padding-right: 0.4rem;
       padding-left:0.4rem;
-      font-size: 0.65rem ;
+      // font-size: 60% ;
     }
     img{
-      width:300px;
+      width:270px;
     }
     
 
@@ -109,6 +126,7 @@ a {
 
   .nav-link {
     text-align: center;
+    font-size: 1rem;
   }
 
   .navbar-nav {
