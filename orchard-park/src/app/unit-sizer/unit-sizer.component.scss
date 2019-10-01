@@ -3,6 +3,10 @@
 .contentHolder {
   display: flex;
   min-height: 98vh;
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .padding-top {
