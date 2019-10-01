@@ -11,6 +11,7 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { AmenitiesComponent } from './amenities/amenities.component';
 import { RvSiteRentalComponent } from './rv-site-rental/rv-site-rental.component';
 import { LocationComponent } from './location/location.component';
+import { HomeForSaleComponent } from './home-for-sale/home-for-sale.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'contact-us', component: ContactComponent },
   { path: 'amenities', component: AmenitiesComponent},
   { path: 'resident-login', component: PaymentComponent },
+  { path: 'homes-for-sale', component: HomeForSaleComponent},
   { path: 'review', component: HomeComponent,
   resolve: {
       url: 'externalUrlRedirectResolver'

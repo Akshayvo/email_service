@@ -1,24 +1,24 @@
 export const nearbyAttractions = [
     {
-        data:`<a id="anchor" href="https://www.ringling.org/">The John and Mable Ringling Museum of Art</a>`,
+        data:`<a target="_blank" href="https://www.ringling.org/">The John and Mable Ringling Museum of Art</a>`,
     },
     {
-        data:`<a id="nearby" href="https://www.sarasotacarmuseum.org/">Sarasota Classic Car Museum</a>`,
+        data:`<a target="_blank" href="https://www.sarasotacarmuseum.org/">Sarasota Classic Car Museum</a>`,
     },
     {
-        data:`<a class="nearby" href="https://sarasotajunglegardens.com/">Sarasota Jungle Gardens</a>`,
+        data:`<a target="_blank" href="https://sarasotajunglegardens.com/">Sarasota Jungle Gardens</a>`,
     },
     {
-        data:`<a class="nearby" href="https://selby.org/">Marie Selby Botanical Gardens </a>`,
+        data:`<a target="_blank" href="https://selby.org/">Marie Selby Botanical Gardens </a>`,
     },
     {
-        data:`<a class="nearby" href="https://mote.org/">Mote Marine Laboratory & Aquarium</a>`,
+        data:`<a target="_blank" href="https://mote.org/">Mote Marine Laboratory & Aquarium</a>`,
     },
     {
-        data:`<a class="nearby" href="https://bigcathabitat.org/">Big Cat Habitat Gulf Coast Sanctuary </a>`,
+        data:`<a target="_blank" href="https://bigcathabitat.org/">Big Cat Habitat Gulf Coast Sanctuary </a>`,
     },
     {
-        data:`<a class="nearby" href="https://www.vanwezel.org/">Van Wezel Performing Arts Hall</a>`,
+        data:`<a target="_blank" href="https://www.vanwezel.org/">Van Wezel Performing Arts Hall</a>`,
     },
     {
         data:`And more!`

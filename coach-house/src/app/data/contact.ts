@@ -9,8 +9,8 @@ export const contact = [
         id: 1,
         label: 'Email:',
         class: 'fas fa-envelope mx-2 iconColor',
-        data: 'coachhousetestemail@gmail.com',
-        redirect: 'mailto:coachhousetestemail@gmail.com'
+        data: 'thecoachhouse@coachhousepark.com',
+        redirect: 'mailto:thecoachhouse@coachhousepark.com'
     },
     {
         id: 2,

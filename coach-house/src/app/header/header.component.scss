@@ -79,12 +79,20 @@ a {
     color: #212529;
   }
 }
+@media only screen and (min-width:1200px){
+  .container{
+   .nav-link{
+     font-size: 0.8rem;
+   }
+  }  
+}
+
 @media only screen and (max-width:1199px) and (min-width:992px){
   .container{
     .nav-link{
       padding-right: 0.4rem;
       padding-left:0.4rem;
-      font-size: 0.8rem ;
+      font-size: 0.65rem ;
     }
     img{
       width:300px;

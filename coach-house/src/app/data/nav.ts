@@ -20,6 +20,10 @@ export const navLinks = [
         path: 'resident-login'
     },
     {
+        label: 'HOMES FOR SALE',
+        path: 'homes-for-sale'
+    },
+    {
         label: 'CONTACT US',
         path: 'contact-us'
     },

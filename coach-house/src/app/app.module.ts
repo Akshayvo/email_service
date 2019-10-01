@@ -27,6 +27,7 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { AmenitiesComponent } from './amenities/amenities.component';
 import { RvSiteRentalComponent } from './rv-site-rental/rv-site-rental.component';
 import { LocationComponent } from './location/location.component';
+import { HomeForSaleComponent } from './home-for-sale/home-for-sale.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { LocationComponent } from './location/location.component';
     AmenitiesComponent,
     RvSiteRentalComponent,
     LocationComponent,
+    HomeForSaleComponent,
   ],
   imports: [
     CommonModule,
