@@ -8,6 +8,10 @@
       </div>
       <div class="col-md-5 p-3">
         <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Stor_It/recreational-vehicles.jpg" alt="photograph of outdoor parking at a storage facility" class="sectionImage" width="auto"/>
+        <h2 class="my-2">Current Discounts</h2>
+        <div class="" *ngFor="let data of currentDiscounts">
+          <p class="discounts">{{data.data}}</p>
+        </div>
         <div class="mt-4 justify" *ngFor="let data of dataViewRates">
           <p>{{data.p}}</p>
         </div>
