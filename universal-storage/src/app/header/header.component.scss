@@ -21,7 +21,7 @@ a {
 .nav-link {
   color: $fontColor;
   font-weight: 600;
-  padding: 30px;
+  padding: 43px;
 }
 
 .nav-link:hover {
@@ -54,6 +54,10 @@ a {
     li {
       width: fit-content;
     }
+  }
+  
+  .nav-link {
+    padding: 30px;
   }
 }
 
