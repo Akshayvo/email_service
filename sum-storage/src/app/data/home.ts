@@ -69,7 +69,7 @@ export const gettingStarted = `Are you ready to start de-cluttering your home or
 
 export const blurb = [
     {
-        h1: `Coming Soon!`,
+        h1: ``,
         p: `SUM Storage is Morganton's newest self storage facility. We have a number of self storage unit sizes in both regular and temperature-controlled 
             varieties to meet any of your self storage needs! Our modern facility is well-lit, secured by pin-code activated gate, and we offer the moving 
             supplies you need to make your stay with us a breeze!`,
