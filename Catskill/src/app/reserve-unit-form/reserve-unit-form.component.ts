@@ -139,7 +139,8 @@ export class ReserveUnitFormComponent implements OnInit {
         FirstName: ['', Validators.required],
         LastName: ['', Validators.required],
         Phone: ['', [Validators.required,
-        Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+        Validators.pattern('^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$')
+      ]],
         EmailAddress: ['', [Validators.required, Validators.email]],
         AddressLine1: ['', Validators.required],
         AddressLine2: [''],
