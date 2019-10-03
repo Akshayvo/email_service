@@ -67,7 +67,11 @@
 small {
   font-size: 0.8rem;
 }
-
+@media only screen and (max-width:991px){
+  .contentHolder{
+    padding-top: 72px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .contentHolder {
     .padding {

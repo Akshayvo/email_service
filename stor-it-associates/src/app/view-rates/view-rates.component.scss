@@ -43,6 +43,11 @@
     }
   }
 }
+@media only screen and (max-width: 991px){
+  .contentHolder{
+    padding-top: 72px;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   iframe {
