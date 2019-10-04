@@ -19,9 +19,9 @@ export class UnitSizerComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our helpful unit sizer chart to help figure out what will fit into your self storage unit! `
+      content: `Take a minute and review our unit sizing chart to help visualize what sized unit you require for your belongings`
     });
-    this.titleService.setTitle(`Unit Sizer | Crows Run Self Storage`);
+    this.titleService.setTitle(`Unit Sizer | Sauquoit Self Storage`);
   }
 
   ngOnInit() {

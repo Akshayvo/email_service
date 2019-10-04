@@ -20,9 +20,9 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to look at our extremely reasonable self storage rates! Then, use our online form to submit your reservation! `
+      content: `Take a moment to review our rates, then use our handy online form to make your reservation! `
     });
-    this.titleService.setTitle('View Rates | Crows Run Self Storage');
+    this.titleService.setTitle('View Rates | Sauquoit Self Storage');
   }
 
   ngOnInit() {

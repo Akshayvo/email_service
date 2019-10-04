@@ -4,13 +4,16 @@
   padding-top: 90px;
   min-height: 86vh;
   margin-bottom: 50px;
-
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+  }
   .padding {
     padding: 72px 48px;
   }
 
   .padding-for-small-device {
-    padding: 0 24px 24px 24px;
+    padding: 0 0 24px 0;
   }
 
   .scroll-wrapper {
@@ -37,7 +40,7 @@
 
     .rent-example {
       border-left: 1px $border solid;
-      padding-left: 5%;
+      padding-left: 2%;
     }
   }
 }

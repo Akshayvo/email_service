@@ -21,54 +21,49 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/location.svg',
-        label: 'Conveniently Located',
-        alt: 'Icon art displaying a location pin'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sauquoit_Self_storage/hand.svg',
+        label: 'Affordable Self Storage Rates',
+        alt: ' Icon of a hand holding money'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/24-hours.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sauquoit_Self_storage/24-hours.svg',
         label: '24 Hour Facility Access',
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/operator.svg',
-        label: 'Stellar Customer Service',
-        alt: 'Customer Service Representative Icon'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sauquoit_Self_storage/cctv.svg',
+        label: 'Security Cameras on Premises',
+        alt: ' Icon of a security camera'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/team.svg',
-        label: 'Family Owned & Operated',
-        alt: 'Icon of people standing together '
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sauquoit_Self_storage/light-bulb.svg',
+        label: 'Well-Lit Facility',
+        alt: 'Icon of an illuminated light'
     },
 ];
 
 
 export const aboutUs = [
     {
-        p: `When you move your belongings into a storage unit, you want to rent from a company you can trust. In Conway, Pennsylvania, 
-            Crows Run Self Storage is dedicated to making sure your belongings are secure at our facility. We’re confident that once you 
-            talk to our manager, you’ll see that we really care about each customer that comes through our doors. When you choose to rent 
-            from us, you’ll know we care.`,
+        p: `Sauquoit Self Storage has been serving Sauquoit, Utica, and southern Oneida County with quality, affordable self storage services since 2000. 
+            Our facility is conveniently located on Mill Street, a stone's throw from the Route 8 Pinnacle Rd Exit! We are well-lit, and paved for your convenience.`,
     },
     {
-        p: `Our drive-up access units can turn a big haul into a short trip. Just park you vehicle at the door of the unit and unload. 
-            Plus, you can move in or out anytime because our tenants have 24-hour access to the facility.. We keep our security cameras 
-            running constantly to ensure the safety of your unit.`,
+        p: `Our units are accessible 24 hours a day, 7 days a week to meet the needs of our tenants' busy schedules. Whether you're a business 
+            that requires access to equipment or inventory outside of standard business hours, or a residential user that wants regular access 
+            to seasonal goods, we've got you covered!`,
     },
     {
-        p: `Need a place to park your RV, boat or car? Use one of our outside spots. Find us off of Crows Run Road along RT 65 between 
-            Conway and Freedom, PA. Whether you live or work in Conway, Baden, Beaver Falls, Ambridge, Rochester, East Rochester, Beaver, 
-            New Brighton, Monaca, Economy Borough, Freedom, Leetsdale, Sewickley, Cranberry or Aliquippa, Pennsylvania, Crows Run Self Storage 
-            is just a short drive away. Give us a call today to learn more about all our storage options.`,
+        p: `Take a moment to review our rates, and you'll see that Sauquoit Self Storage is the facility for you, and all of your self storage needs! 
+            Still have questions? Call (315) 507-2527 today!`,
     },
 ];
 
 
-export const gettingStarted = `Are you ready to begin de-cluttering your life, and regaining some of that elbow room around the house? 
-                               Click here to get started with Crows Run Self Storage!`;
+export const gettingStarted = ``;
 
 export const blurb = [
     {

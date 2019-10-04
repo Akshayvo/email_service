@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address: ',
-        data: '1901 Crows Run Rd  Conway, PA 15027 ',
+        data: '2966 Mill Street, Sauquoit, NY 13456',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
@@ -49,7 +49,7 @@ export const hours = [
 export const socialLinks = [
     // {
     //     label: 'facebook',
-    //     path: 'https://www.facebook.com/Crows-Run-Self-Storage-563126960369408/',
+    //     path: '',
     //     class: 'fab fa-facebook-square',
     // }
 ];

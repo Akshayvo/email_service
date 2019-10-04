@@ -37,9 +37,9 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our handy contact form or contact information to drop us a line! One of our friendly managers will reach out shortly!`
+      content: `Use our handy form to submit questions about our services, or your existing account with us.`
     });
-    this.titleService.setTitle('Contact Us | Crows Run Self Storage');
+    this.titleService.setTitle('Contact Us | Sauquoit Self Storage');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -78,7 +78,7 @@ export class ContactComponent implements OnInit {
         this.contactForm.value.subject = 'Website Form Submission';
       }
 
-      this.receiveremail = this.contactInfo[1].data;
+      this.receiveremail = this.contactInfo[2].data;
 
           this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
                                  message: ${this.contactForm.value.message}`;
