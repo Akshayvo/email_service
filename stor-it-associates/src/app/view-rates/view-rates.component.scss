@@ -8,11 +8,14 @@
   .padding {
     padding: 48px;
   }
+
   .row {
     margin-left: 0;
     margin-right: 0;
   }
-  .discounts{
+
+
+  .discounts {
     margin-bottom: 0px;
     margin-top: 1px;
   }
@@ -43,8 +46,13 @@
     }
   }
 }
-@media only screen and (max-width: 991px){
-  .contentHolder{
+
+.background-discount {
+  background-color: $primary;
+}
+
+@media only screen and (max-width: 991px) {
+  .contentHolder {
     padding-top: 72px;
   }
 }

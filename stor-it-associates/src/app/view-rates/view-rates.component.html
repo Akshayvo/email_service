@@ -8,12 +8,12 @@
       </div>
       <div class="col-md-5 p-3">
         <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Stor_It/recreational-vehicles.jpg" alt="photograph of outdoor parking at a storage facility" class="sectionImage" width="auto"/>
-        <h2 class="my-2">Current Discounts</h2>
-        <div class="" *ngFor="let data of currentDiscounts">
-          <p class="discounts">{{data.data}}</p>
+        <div class="mt-4 p-3 background-discount">
+          <h2 class="mb-2">Current Discounts</h2>
+          <p class="discounts" *ngFor="let data of currentDiscounts">{{data.data}}</p>
         </div>
-        <div class="mt-4 justify" *ngFor="let data of dataViewRates">
-          <p>{{data.p}}</p>
+        <div class="mt-4 justify">
+          <p  *ngFor="let data of dataViewRates">{{data.p}}</p>
         </div>
       </div>
     </div>
