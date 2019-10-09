@@ -24,7 +24,7 @@ const routes: Routes = [
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJRR_kgKZIOogRdBnXHW0AkcI'
+        externalUrl: 'https://g.page/pinnacle-storage-solutions/review'
     }
   },
   { path: 'error', component: ErrorHandlerComponent },

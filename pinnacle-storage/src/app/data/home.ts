@@ -51,28 +51,32 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Pinnacle Storage Solutions is Slingerlands' newest self storage facility. Our modern facility offers brand new, clean self storage units, and 
-            amazing customer service, all at affordable rates.`,
+        p: `Pinnacle Storage Solutions is Slingerlands' newest self storage facility. Our modern
+        facility offers brand new, clean self storage units, and amazing customer service, all at affordable rates.`,
     },
     {
-        p: `We are conveniently located on New Scotland Road, between Slingerlands and New Scotland, making us an ideal solution for Vooreheesville, 
-            Guilderland, Berne, and the surrounding communities. We service both residential users looking for that little extra elbow room around home, 
-            and growing businesses in need of inventory or equipment storage`,
+        // tslint:disable-next-line:max-line-length
+        p: `We are conveniently located on New Scotland Road, between Slingerlands and New Scotland, making us an ideal solution for Vooreheesville,
+            Guilderland, Berne, and the surrounding communities. We service both residential users looking for that
+            little extra elbow room around home, and growing businesses in need of inventory or equipment storage.`,
     },
     {
-        p: `We're about more than just convenience! Our self storage units are secured behind a pin-code activated gate system, and our facility has 
-            security cameras on-site. Our managers also perform regular lot-checks to provide a sense of safety for tenants and their belongings.`,
+        // tslint:disable-next-line:max-line-length
+        p: `We're about more than just convenience! Our self storage units are secured behind a pin-code activated gate system, and our facility has
+            security cameras on-site. Our managers also perform regular lot-checks to provide a sense of safety for
+            tenants and their belongings.`,
     },
 ];
 
 
-export const gettingStarted = `Are you ready to start de-cluttering your home or reclaiming space around the office? Check out our affordable rates today, 
-                                and reserve your unit today!`;
+export const gettingStarted = `Are you ready to start de-cluttering your home or reclaiming space around the office?
+Check out our affordable rates today, and reserve your unit today!`;
 
 export const blurb = [
     {
         h1: `Affordable Self Storage Units in Slingerlands`,
-        p: `Pinnacle Storage Solutions is Slingerlands newest self storage facility! From our convenient location to full online tenant portal, 
-            our modern facility has all of the amenities you need to make your stay with us a breeze! `,
+        p: `Pinnacle Storage Solutions is Slingerlands newest self storage facility! From our convenient
+        location to full online tenant portal, our modern facility has all of the amenities
+        you need to make your stay with us a breeze! `,
     }
 ];
