@@ -52,21 +52,22 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `When you move your belongings into a storage unit, you want to rent from a company you can trust. In Conway, Pennsylvania, 
-            Crows Run Self Storage is dedicated to making sure your belongings are secure at our facility. We’re confident that once you 
-            talk to our manager, you’ll see that we really care about each customer that comes through our doors. When you choose to rent 
-            from us, you’ll know we care.`,
+        p: `Crows Run Self Storage is Conway, Pennsylvania's premier self storage facility, with regular units ranging from 5'x10'
+            to 10'x'30'. Our regular units are the ideal solution for residential storage users in the middle of a hectic move, renovation, 
+            or those preparing to downsize their accommodations. Business customers take advantage of our 24 hour access to pick up and drop 
+            off their inventory, supplies, and equipment. Why pay commercial real estate prices when you can use 
+            Crows Run Self Storage at a fraction of the cost?`,
     },
     {
-        p: `Our drive-up access units can turn a big haul into a short trip. Just park you vehicle at the door of the unit and unload. 
-            Plus, you can move in or out anytime because our tenants have 24-hour access to the facility.. We keep our security cameras 
-            running constantly to ensure the safety of your unit.`,
+        p: `The facility is conveniently located right off of Route 65, between Baden and Freedom. We are a fully-fenced facility 
+            with a password protected front gate to ensure a provide a sense of safety to our customers and their belongings. All 
+            of our units are drive-up, making loading and unloading a breeze.`,
     },
     {
-        p: `Need a place to park your RV, boat or car? Use one of our outside spots. Find us off of Crows Run Road along RT 65 between 
-            Conway and Freedom, PA. Whether you live or work in Conway, Baden, Beaver Falls, Ambridge, Rochester, East Rochester, Beaver, 
-            New Brighton, Monaca, Economy Borough, Freedom, Leetsdale, Sewickley, Cranberry or Aliquippa, Pennsylvania, Crows Run Self Storage 
-            is just a short drive away. Give us a call today to learn more about all our storage options.`,
+        p: `We even have recreational vehicle, boat, and car parking to help you reclaim space on your lawn! Whether you are a 
+            residential user trying to de-clutter, a business person in need of a cheaper storage solution, or if you just need a 
+            place to park that RV for the season, we've got you covered! Our friendly management team is ready 
+            to make your storage experience an easy one!`,
     },
 ];
 
@@ -77,9 +78,9 @@ export const gettingStarted = `Are you ready to begin de-cluttering your life, a
 export const blurb = [
     {
         h1: `Affordable Storage Units in Conway`,
-        p: `With our wide variety of sizes and options, we can store just about anything. From furniture to boats, we have a 
-            storage solution for you in Conway, PA! From our 5’x10’ to 10’x30’, we always have the unit you're looking for, and 
-            our customer service is amazing! Make your moving or long-term storage experience a breeze by 
-            calling our friendly management team today.`,
+        p: `Crows Run Self Storage proudly serves Conway, Pennsylvania, and the surrounding communities with quality self storage units, 
+            and recreational vehicle parking. Our regular storage units range from 5'x10' to 10'x30', and they reside in a fully-fenced, 
+            well-lit self storage facility that is covered by security cameras, and accessible via pin-code activated gate. Our friendly 
+            management team looks forward to meeting you! Call today!`,
     }
 ];
