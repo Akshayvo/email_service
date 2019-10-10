@@ -63,7 +63,7 @@ export const aboutUs = [
 ];
 
 
-export const gettingStarted = ``;
+export const gettingStarted = `Are you ready to start de-cluttering your life with Sauquoit's high-quality, affordable self storage services? Click below!`;
 
 export const blurb = [
     {
