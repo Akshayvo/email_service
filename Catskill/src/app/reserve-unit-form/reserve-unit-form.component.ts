@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 
 import { AddTenantService } from '../services/add-tenant.service';
@@ -20,6 +20,8 @@ import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
 import { MatCalendarCellCssClasses } from '@angular/material/datepicker';
 
+import { Subscription } from 'rxjs';
+
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -27,7 +29,7 @@ import { MatCalendarCellCssClasses } from '@angular/material/datepicker';
   styleUrls: ['./reserve-unit-form.component.scss'],
 })
 
-export class ReserveUnitFormComponent implements OnInit {
+export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   @Input() DescriptionVR: string;
   @Input() MonthlyRateVR: number;
@@ -108,6 +110,16 @@ export class ReserveUnitFormComponent implements OnInit {
   intLeadDaysTo: number;
 
   logOut = {};
+
+  private  getLeadDaysUnsubscribe$: Subscription;
+  private  getTenantInfoUnsubscribe$: Subscription;
+  private  getDataUnsubscribe$: Subscription;
+  private  getRentalPeriodUnsubscribe$: Subscription;
+  private  addTenantUnsubscribe$: Subscription;
+  private  updateTenantUnsubscribe$: Subscription;
+  private  makeAReservationUnsubscribe$: Subscription;
+  private  signOutUnsubscribe$: Subscription;
+  
 
   config = {
     displayKey:"description", //if objects array passed which key to be displayed defaults to description
@@ -274,7 +286,7 @@ export class ReserveUnitFormComponent implements OnInit {
   }
 
   getLeadDays(data) {
-    this.leadDaysService.getLeadDays(data)
+  this.getLeadDaysUnsubscribe$ =  this.leadDaysService.getLeadDays(data)
     .subscribe(result => {
       this.intLeadDaysFrom = result.intLeadDaysFrom;
       this.intLeadDaysTo = result.intLeadDaysTo;
@@ -289,7 +301,7 @@ export class ReserveUnitFormComponent implements OnInit {
 
 
   getTenantInfo(tenant) {
-    this.tenantInfoService.getTenantInfo(tenant)
+  this.getTenantInfoUnsubscribe$ =  this.tenantInfoService.getTenantInfo(tenant)
       .subscribe(tenantData => {
         if (tenantData) {
           const { Tenant } = tenantData;
@@ -339,7 +351,7 @@ export class ReserveUnitFormComponent implements OnInit {
   }
   
   getData(UnitTypes) {
-    this.fetchDataService.getData(UnitTypes)
+   this.getDataUnsubscribe$ = this.fetchDataService.getData(UnitTypes)
       .subscribe(UnitTypes => {
       this.lstUnitTypes = UnitTypes.lstUnitTypes;
       this.defaultValue = UnitTypes.lstUnitTypes[0].MonthlyRate;
@@ -359,7 +371,7 @@ export class ReserveUnitFormComponent implements OnInit {
   }
 
   getRentalPeriod(RentalPeriod) {
-    this.fetchDataService.getRentalPeriod(RentalPeriod)
+   this.getRentalPeriodUnsubscribe$ = this.fetchDataService.getRentalPeriod(RentalPeriod)
       .subscribe(RentalPeriod => {
         this.LstRentalPeriods = RentalPeriod.lstRentalPeriods;
         const defaultPeriodDescription = RentalPeriod.lstRentalPeriods[0].PeriodDescription;
@@ -373,7 +385,7 @@ export class ReserveUnitFormComponent implements OnInit {
   }
 
   addTenant(data: any): void {
-    this.addTenantService.addTenant(data)
+  this.addTenantUnsubscribe$ =  this.addTenantService.addTenant(data)
       .subscribe(result => {
       localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
       this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
@@ -383,7 +395,7 @@ export class ReserveUnitFormComponent implements OnInit {
   }
 
   updateTenant(data: any) {
-    this.tenantInfoService.updateTenant(data)
+   this.updateTenantUnsubscribe$ = this.tenantInfoService.updateTenant(data)
       .subscribe(result => {
         console.log(result);
         this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
@@ -392,7 +404,7 @@ export class ReserveUnitFormComponent implements OnInit {
   }
 
   makeAReservation(strConfirmation: any) {
-    this.makeAReservationService.makeAReservation(strConfirmation)
+  this.makeAReservationUnsubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
     .subscribe(strConfirmation => {
       this.strConfirmation = strConfirmation.strConfirmation;
       this.showConfirmation = false;
@@ -459,6 +471,33 @@ export class ReserveUnitFormComponent implements OnInit {
           this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
         }
       }
+    }
+  }
+
+  public ngOnDestroy(): void {
+    if(this.getLeadDaysUnsubscribe$ && this.getLeadDaysUnsubscribe$.closed) {
+      this.getLeadDaysUnsubscribe$.unsubscribe();
+    } 
+    if(this.getTenantInfoUnsubscribe$ && this.getTenantInfoUnsubscribe$.closed) {
+      this.getTenantInfoUnsubscribe$.unsubscribe();
+    }
+    if(this.getDataUnsubscribe$ && this.getDataUnsubscribe$.closed) {
+      this.getDataUnsubscribe$.unsubscribe();
+    }
+    if(this.getRentalPeriodUnsubscribe$ && this.getRentalPeriodUnsubscribe$) {
+      this.getRentalPeriodUnsubscribe$.unsubscribe();
+    }
+    if(this.addTenantUnsubscribe$ && this.addTenantUnsubscribe$.closed) {
+      this.addTenantUnsubscribe$.unsubscribe();
+    }
+    if(this.updateTenantUnsubscribe$&& this.updateTenantUnsubscribe$.closed) {
+      this.updateTenantUnsubscribe$.unsubscribe();
+    }
+    if(this.makeAReservationUnsubscribe$ && this.makeAReservationUnsubscribe$.closed) {
+      this.makeAReservationUnsubscribe$.unsubscribe();
+    }
+    if (this.signOutUnsubscribe$ && this.signOutUnsubscribe$.closed) {
+      this.signOutUnsubscribe$.unsubscribe();
     }
   }
 }

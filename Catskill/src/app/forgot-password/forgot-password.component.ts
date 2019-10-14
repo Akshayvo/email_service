@@ -1,16 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
+
+import { Subscription } from 'rxjs';
+
 
 @Component({
   selector: 'app-forgot-password',
   templateUrl: './forgot-password.component.html',
   styleUrls: ['./forgot-password.component.scss']
 })
-export class ForgotPasswordComponent implements OnInit {
+export class ForgotPasswordComponent implements OnInit, OnDestroy {
 
   forgotPasswordForm: FormGroup;
   submitted = false;
+
+   private forgotPasswordUnsubscribe$: Subscription;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -27,7 +32,7 @@ export class ForgotPasswordComponent implements OnInit {
   get f() { return this.forgotPasswordForm.controls; }
 
   forgotPassword(data: any): void {
-    this.authService.forgotPassword(data)
+  this.forgotPasswordUnsubscribe$ =  this.authService.forgotPassword(data)
     .subscribe(
       result => {
         console.log(result);
@@ -35,7 +40,6 @@ export class ForgotPasswordComponent implements OnInit {
       }
     );
   }
-
 
   onSubmit() {
     this.submitted = true;
@@ -47,4 +51,11 @@ export class ForgotPasswordComponent implements OnInit {
     }
     console.log(this.forgotPasswordForm.value);
   }
+
+  public ngOnDestroy(): void  {
+    if(this.forgotPasswordUnsubscribe$ && !this.forgotPasswordUnsubscribe$.closed) {
+      this.forgotPasswordUnsubscribe$.unsubscribe();
+    }
+  }
+
 }

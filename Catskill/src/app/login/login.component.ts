@@ -1,10 +1,9 @@
-import { Component, OnInit, Injectable } from '@angular/core';
+import { Component, OnInit, Injectable, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
 
-import { throwError } from 'rxjs';
-
+import { Subscription } from 'rxjs';
 import { TenantInfo, Tenant} from '../models/tenant';
 import { TenantInfoService } from '../services/tenant-info.service';
 
@@ -19,7 +18,7 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./login.component.scss']
 })
 
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit, OnDestroy {
 
   loginForm: FormGroup;
   submitted = false;
@@ -39,6 +38,7 @@ export class LoginComponent implements OnInit {
   tenant: any;
   balance: number;
 
+  private authUnsubscribe$: Subscription;
 
 
   constructor(
@@ -100,7 +100,7 @@ export class LoginComponent implements OnInit {
   // }
 
   auth(data: any): void {
-    this.authService.auth(data)
+  this.authUnsubscribe$ =  this.authService.auth(data)
       .subscribe(
         auth => {
           this.showPayRent = true;
@@ -119,6 +119,12 @@ export class LoginComponent implements OnInit {
       );
   }
 
+
+public ngOnDestroy(): void {
+  if(this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
+    this.authUnsubscribe$.unsubscribe();
+  }
+}
 
   onSubmit() {
     this.submitted = true;

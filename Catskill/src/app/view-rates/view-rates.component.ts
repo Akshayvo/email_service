@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { viewRates } from '../data/view-rates';
 import { MetaService } from '../services/link.service';
@@ -7,12 +7,14 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { UaParserService } from '../services/ua-parser.service';
 
+import { Subscription } from 'rxjs';
+
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
   styleUrls: ['./view-rates.component.scss']
 })
-export class ViewRatesComponent implements OnInit {
+export class ViewRatesComponent implements OnInit, OnDestroy {
 
   currentActive: any = 'VIEW RATES';
   viewRates: any;
@@ -22,6 +24,8 @@ export class ViewRatesComponent implements OnInit {
 
   DescriptionVR: string;
   MonthlyRateVR: number;
+
+ private isUnsubscribe$: Subscription;
 
   openComponent = false;
   imagetype:any;
@@ -69,10 +73,16 @@ export class ViewRatesComponent implements OnInit {
   }
 
   getData(UnitTypes) {
-    this.fetchDataService.getData(UnitTypes)
+  this.isUnsubscribe$ = this.fetchDataService.getData(UnitTypes)
     .subscribe(UnitTypes => {
       this.showTable =  true;
       this.LstUnitTypes = UnitTypes.lstUnitTypes;
     });
+  }
+
+  public ngOnDestroy(): void {
+    if (this.isUnsubscribe$ && this.isUnsubscribe$.closed) {
+      this.isUnsubscribe$.unsubscribe();
+    }
   }
 }

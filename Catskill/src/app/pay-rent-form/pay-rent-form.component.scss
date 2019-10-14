@@ -1,6 +1,20 @@
 @import "../../styles.scss";
 
 
+.readonly-form-control {
+  .form-control {
+    background-color: white;
+  }
+}
+.display-surcharge {
+  display: none;
+}
+
+.modal-position {
+  position: absolute;
+  left: 260px;
+}
+
 table {
   width: -webkit-fill-available;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, SimpleChange, SimpleChanges } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input, SimpleChange, SimpleChanges } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 
 
@@ -6,8 +6,9 @@ import { TenantInfoService } from '../services/tenant-info.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { PaymentService } from '../services/payment.service';
 import { SignOutService } from '../services/sign-out.service';
-import { LstPayTypes, PayTypes, PayTypeForResult } from '../models/payment';
+import { LstPayTypes, PayTypes, PayTypeForResult, ObjPayment } from '../models/payment';
 import { UnpaidAR } from "../models/tenant";
+
 
 import { month } from '../data/date';
 
@@ -16,13 +17,17 @@ import { HttpErrorResponse } from '@angular/common/http';
 
 import { DatePipe } from '@angular/common';
 
+import { Subscription } from 'rxjs';
+import { SurchargeService } from '../services/surcharge.service';
+
+
 
 @Component({
   selector: 'app-pay-rent-form',
   templateUrl: './pay-rent-form.component.html',
   styleUrls: ['./pay-rent-form.component.scss']
 })
-export class PayRentFormComponent implements OnInit {
+export class PayRentFormComponent implements OnInit, OnDestroy {
 
   balance: number;
   payRentForm: FormGroup;
@@ -52,11 +57,14 @@ export class PayRentFormComponent implements OnInit {
   MinDate: string
   minDate: Date;
 
+  surcharge: number;
+
   marked = false;
   signUp = {};
   logOut = {};
 
   otherValue = '0';
+  id: string;
 
   UnpaidAR: UnpaidAR[];
 
@@ -65,12 +73,28 @@ export class PayRentFormComponent implements OnInit {
   LastPaymentOn: string;
   LastPaymentAmount: string;
 
+  paytypeid: number;
+  AmountToPay: number;
+
+  customOtherValue: number;
+  errorMessage: string;
+  showError = false;
+  count = 0;
+
+  private OptionOutOfAutoPayUnsubscribe$: Subscription;
+  private signUpAutoPayUnsubscribe$: Subscription;
+  private signOutUnsubscribe$: Subscription;
+  private getPaymentUnsubscribe$: Subscription;
+  private getPayMethodsUnsubscribe$: Subscription;
+  private getTenantInfoUnsubscribe$: Subscription;
+
   constructor(
     private formBuilder: FormBuilder,
     private tenantInfoService: TenantInfoService,
     private fetchDataService: FetchDataService,
     private paymentService: PaymentService,
     private signOutService: SignOutService,
+    private surchargeService: SurchargeService,
     public router: Router,
     private datePipe: DatePipe,
   ) {
@@ -94,7 +118,11 @@ export class PayRentFormComponent implements OnInit {
 
     let newYear = new Date().getFullYear();
     for (let i = 1; i < 15; i++) {
-      this.year.push(newYear);
+      this.year.push({
+        id: newYear.toString().slice(-2),
+        label: newYear,
+      });
+      
       newYear = newYear + 1;
     }
 
@@ -105,6 +133,7 @@ export class PayRentFormComponent implements OnInit {
     this.getPayMethods(this.payTypes);
     this.fetchMonth();
     this.getTenantInfo(this.tenant);
+    
   }
 
   get f() { return this.payRentForm.controls; }
@@ -125,6 +154,8 @@ export class PayRentFormComponent implements OnInit {
 
     this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
 
+    this.surchargeService.getIdPaytype(this.PayTypeIDValue);
+
 
     this.payRentForm.patchValue({
       objPayment: {
@@ -133,23 +164,66 @@ export class PayRentFormComponent implements OnInit {
         }
       }
     });
+
+    
+    if( this.showInput) {
+      console.log("other value is", this.otherValue);
+      console.log("can't calculate surcharge");
+      if (this.customOtherValue) {
+        this.surchargeService.getAmt(this.customOtherValue);
+        this.getSurCharge();
+      }
+    } else {
+      this.getSurCharge();
+    }
+    
   }
 
+  
   handleChange(e) {
+    
+    console.log("handle change", this.count+1);
+    
     if (e.target.id === '2') {
       this.showInput = true;
+      this.id = e.target.id;
+      this.surcharge = 0;
     } else {
+      console.log("balance after handle click", this.balance);
+      // this.surcharge = 0;
+      this.surchargeService.getAmt(this.balance);
+      this.getSurCharge();
       this.showInput = false;
+      
+    }
+    console.log(this.showInput);
+
+  }
+
+  onKeyUp(e) {  
+    console.log(" onchange is working, searchValue", this.customOtherValue, this.otherValue);
+    if(e.target.value) {
+      this.customOtherValue = e.target.value;
+      this.surchargeService.getAmt(e.target.value);
+      setTimeout(()=>{   
+        this.getSurCharge();
+   }, 1000);
+  
+    } else {      
+        this.surcharge = 0;
     }
   }
 
   getTenantInfo(tenant) {
-    this.tenantInfoService.getTenantInfo(tenant)
+  this.getTenantInfoUnsubscribe$ =  this.tenantInfoService.getTenantInfo(tenant)
       .subscribe(tenantData => {
-        // console.log(tenantData);
+        console.log(tenantData);
         if (tenantData) {
           const { Tenant } = tenantData;
+          console.log(Tenant); 
           this.balance = Tenant.Balance;
+          this.surchargeService.getAmt(this.balance);
+          this.surchargeService.getIdPaytype(this.paytypeid);
           this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled,
           this.date = Tenant.LastPaymentOn; 
           this.LastPaymentOn = this.datePipe.transform(this.date, "dd/MM/yyyy");
@@ -169,22 +243,26 @@ export class PayRentFormComponent implements OnInit {
             }
           }
         
-
-          this.payRentForm.patchValue({
-            objPayment: {
-              SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
-            }
-          });
           if (this.balance < 0) {
             this.displayBalance = Math.abs(this.balance);
           } else {
             this.displayBalance = this.balance;
           }
+
           this.payRentForm.patchValue({
             objPayment: {
+              CCAccountNumber: Tenant.CCNumber,
+              CCAccountName: Tenant.CCBillingAccountName,
+              CCExpirationMonth: Tenant.CCExpirationMonth,
+              CCExpirationYear: Tenant.CCExpirationYear,
+              CCAccountBillingAddress: Tenant.CCBillingAddress,
+              CCAccountZIP: Tenant.CCBillingZIP,
+              SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
               PaymentAmount: this.balance,
             }
           })
+
+          this.getSurCharge();          
         }
       }
       , (err: any) => {
@@ -198,19 +276,22 @@ export class PayRentFormComponent implements OnInit {
   }
 
   getPayMethods(PayTypes) {
-    this.fetchDataService.getPayMethods(PayTypes)
+   this.getPayMethodsUnsubscribe$ = this.fetchDataService.getPayMethods(PayTypes)
       .subscribe(PayTypes => {
         this.lstPayTypes = PayTypes.lstPayTypes;
-        // const defaultDescription = this.lstPayTypes[3].PayTypeDescription;
-        // const defaultPayTypeID = this.lstPayTypes[3].PayTypeID;
-        // this.payRentForm.patchValue({
-        //   objPayment: {
-        //     PayType: {
-        //       PayTypeDescription: defaultDescription,
-        //       PayTypeID: defaultPayTypeID,
-        //     }
-        //   }
-        // });
+        const defaultDescription = this.lstPayTypes[1].PayTypeDescription;
+        const defaultPayTypeID = this.lstPayTypes[1].PayTypeID;
+        this.paytypeid = this.lstPayTypes[1].PayTypeID;
+        this.surchargeService.getIdPaytype(defaultPayTypeID);
+        this.payRentForm.patchValue({
+          objPayment: {
+            PayType: {
+              PayTypeDescription: defaultDescription,
+              PayTypeID: defaultPayTypeID,
+            }
+          }
+        });
+       
       }
       );
   }
@@ -219,6 +300,33 @@ export class PayRentFormComponent implements OnInit {
     this.toggleSignUp = true;
   }
 
+  getSurCharge() {
+    this.surcharge = 0;
+    this.surchargeService.getSurCharge()
+    .subscribe(result => {
+      console.log(result.decTotalAmount);
+      this.AmountToPay = result.decTotalAmount;
+
+      if(this.showInput) {
+        // console.log("other value from surcharge", this.customOtherValue);
+       if (this.customOtherValue) {
+         this.surcharge = result.decTotalAmount - this.customOtherValue;
+       }
+      } else {
+        this.surcharge = result.decTotalAmount - this.balance;
+      }
+      console.log("surcharge is", this.surcharge);
+      // this.balance = this.AmountToPay;
+      // console.log("balance after surcharge is", this.balance);
+      
+      },(err: any) => {
+        if(err.status === 400) {
+          this.showError = true;
+          this.errorMessage = "Please enter the valid amount";
+        }
+      }
+    )
+  }
 
   getPayment(paymentData) {
     if (this.toggleSignUp === true) {
@@ -230,7 +338,7 @@ export class PayRentFormComponent implements OnInit {
     }
     }
     this.invalidPayment = null,
-    this.paymentService.getPayment(paymentData)
+   this.getPaymentUnsubscribe$ = this.paymentService.getPayment(paymentData)
       .subscribe(paymentData => {
         this.showloaderForPayment = false;
         this.PaymentAmount = paymentData.PayTypeForResult.PaymentAmount;
@@ -253,7 +361,7 @@ export class PayRentFormComponent implements OnInit {
   }
 
   signOut(logOut: any) {
-    this.signOutService.signOut(logOut)
+   this.signOutUnsubscribe$ = this.signOutService.signOut(logOut)
       .subscribe(result => {
         localStorage.removeItem('strTenantToken');
         this.router.navigate(['/pay-rent/login']);
@@ -272,17 +380,43 @@ export class PayRentFormComponent implements OnInit {
   // }
 
   signUpAutoPay(signUp: any) {
-    this.tenantInfoService.signUpAutoPay(signUp)
+  this.signUpAutoPayUnsubscribe$ =  this.tenantInfoService.signUpAutoPay(signUp)
       .subscribe(result => {
       }, (err) => {
       });
   }
 
   OptionOutOfAutoPay(signUp: any) {
-    this.tenantInfoService.OptionOutOfAutoPay(signUp)
+   this.OptionOutOfAutoPayUnsubscribe$ = this.tenantInfoService.OptionOutOfAutoPay(signUp)
       .subscribe(result => {
       }, (err) => {
       });
+  }
+
+  public ngOnDestroy(): void {
+    if(this.OptionOutOfAutoPayUnsubscribe$ && this.OptionOutOfAutoPayUnsubscribe$.closed) {
+      this.OptionOutOfAutoPayUnsubscribe$.unsubscribe();
+    }
+
+    if(this.signUpAutoPayUnsubscribe$ && this.signUpAutoPayUnsubscribe$.closed) {
+      this.signUpAutoPayUnsubscribe$.unsubscribe();
+    }
+
+    if (this.signOutUnsubscribe$ && this.signOutUnsubscribe$.closed) {
+      this.signOutUnsubscribe$.unsubscribe();
+    }
+
+    if(this.getPaymentUnsubscribe$ && this.getPaymentUnsubscribe$.closed) {
+      this.getPaymentUnsubscribe$.unsubscribe();
+    }
+
+    if (this.getPayMethodsUnsubscribe$ && this.getPayMethodsUnsubscribe$.closed) {
+      this.getPayMethodsUnsubscribe$.unsubscribe();
+    }
+
+    if(this.getTenantInfoUnsubscribe$ && this.getTenantInfoUnsubscribe$.closed) {
+      this.getTenantInfoUnsubscribe$.unsubscribe();
+    }
   }
 
   onSubmit() {
