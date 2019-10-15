@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
       name: 'description',
       content: `We provide high-quality, affordable self storage to residential, commercial and military self storage unit users. `
     });
-    this.titleService.setTitle('Affordable Storage in Watertown | The Storehouse');
+    this.titleService.setTitle('Affordable Self Storage Near Fort Drum | The Storehouse');
   }
 
   public navigate(location: any) {
@@ -72,5 +72,4 @@ export class HomeComponent implements OnInit {
   public fetchFeature () {
     this.feature = feature;
   }
-  th
 }

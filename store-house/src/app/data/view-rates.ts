@@ -11,3 +11,30 @@ export const dataViewRates = [
         p: `We support our troops! Don't forget to ask about your military discount when you apply! `
     }
 ];
+
+export const militaryData = [
+    {
+        td1: 'outside',
+        td2: '$40'
+    },
+    {
+        td1: '10\' x 5\'',
+        td2: '$50'
+    },
+    {
+        td1: '10\' x 10\'',
+        td2: '$75'
+    },
+    {
+        td1: '10\' x 15\'',
+        td2: '$90'
+    },
+    {
+        td1: '10\' x 20\'',
+        td2: '$100'
+    },
+    {
+        td1: '10\' x 30\'',
+        td2: '$150'
+    },
+]

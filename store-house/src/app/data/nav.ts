@@ -23,4 +23,8 @@ export const navLinks = [
         label: 'CONTACT US',
         path: 'contact-us'
     },
+    {
+        label: 'MILITARY DISCOUNT',
+        path: 'military-discount'
+    }
 ];

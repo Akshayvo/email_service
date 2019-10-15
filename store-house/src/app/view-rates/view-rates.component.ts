@@ -1,7 +1,7 @@
 import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { dataViewRates } from '../data/view-rates';
+import { dataViewRates, militaryData } from '../data/view-rates';
 
 @Component({
   selector: 'app-view-rates',
@@ -12,6 +12,7 @@ export class ViewRatesComponent implements OnInit {
 
   currentActive: any = 'VIEW RATES';
   dataViewRates: any;
+  militaryData: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -32,5 +33,6 @@ export class ViewRatesComponent implements OnInit {
 
   public viewRates() {
     this.dataViewRates = dataViewRates;
+    this.militaryData = militaryData;
   }
 }

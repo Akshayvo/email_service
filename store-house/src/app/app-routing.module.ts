@@ -10,6 +10,7 @@ import { PayRentComponent} from './pay-rent/pay-rent.component';
 import { ReserveComponent} from './reserve/reserve.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { from } from 'rxjs';
+import { MilitaryServiceComponent } from './military-service/military-service.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'reserve-unit', component: ReserveComponent },
   { path: 'pay-rent', component: PayRentComponent },
+  { path: 'military-discount', component: MilitaryServiceComponent },
   { path: 'unit-sizer', component: UnitSizerComponent},
   { path: 'review', component: HomeComponent,
     resolve: {
