@@ -11,15 +11,22 @@ h2{
 .iconColor {
   color: $white;
 }
+.display{
+  padding-top: 1rem !important;
+}
 
 .contact-header {
   display: inline;
+  text-align: center;
 
   .contact-details {
     color: $white;
     font-size: 0.82em;
     font-weight: 500;
     width: 100%;
+    a{
+      color: $white;
+    }
   }
 }
 
@@ -36,6 +43,29 @@ h2{
 
 .social :hover {
   color: $primary;
+}
+.dropdown-menu {
+  border-radius: 0;
+  border: none;
+  background-color: $primary;
+  padding: 0;
+  li {
+    a {
+      color: $white;
+      font-weight: 400;
+    }
+  }
+  li:hover {
+    background-color: $white;
+    a {
+      color: $primary;
+      font-weight: 400;
+    }
+  }
+}
+.dropdown-item:active{
+  background-color:transparent;
+  color: $white;
 }
 
 .navbar {
@@ -55,7 +85,10 @@ h2{
     color: $primary;
     border-bottom: 5px solid $primary;
   }
-
+  .location-active {
+    color: $primary !important;
+    font-weight: 600;
+  }
   button {
     border-color: $white;
 
@@ -78,13 +111,31 @@ h2{
     color: white;
   }
 }
-@media screen and (min-width: 992px)
+@media screen and (min-width: 1200px)
 {
-  .navbar {
+ 
+
+  .navbar {  
     .nav-link {
       padding: 15px;
+      
     }
   }
+}
+@media screen and (max-width: 1200px) and (min-width: 991px){
+  .navbar-brand{
+    h2{
+      font-size: 1.7rem;
+    }
+  }
+  .navbar {  
+    .nav-link {
+      padding-left: 7px;
+      padding-right: 7px;
+      
+    }
+  }
+
 }
 @media screen and (max-width: 991px) {
   .display {
@@ -97,10 +148,15 @@ h2{
 
   .navbar-nav {
     align-items: center;
+    
 
     li {
       width: fit-content;
     }
+  }
+  .dropdown-menu{
+    position: absolute;
+    align-content: center
   }
 }
 

@@ -70,9 +70,8 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h1: `Coming Soon!`,
-        blurb: `We are excited to be the newest self storage facility in Cocoa, Florida! Our facility offers a variety of units and vehicle parking
-         spaces at affordable rates! Whether you are moving, downsizing, or a local business in need of extra space,
-          give us a call to learn more today!`,
+        h1: `Affordable Storage and Parking in Cocoa`,
+        blurb: `Our facility offers a variety of units and vehicle parking spaces at affordable rates! Whether you are moving, downsizing, 
+                or a local business in need of extra space, give us a call to learn more today!`,
     }
 ];
