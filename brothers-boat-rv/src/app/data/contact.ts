@@ -13,9 +13,9 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'mailto:Jmmarcoaldi@gmail.com',
+        redirect: 'mailto:jesse@brothers-storage.com',
         label: 'Email:',
-        data: 'Jmmarcoaldi@gmail.com',
+        data: 'jesse@brothers-storage.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
