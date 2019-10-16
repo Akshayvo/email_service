@@ -121,43 +121,7 @@
                              </option>
                        </select>
 
-                    <!-- *ngFor="let option of option" -->
-                    <!-- [(value)]="optionAbbreviation" -->
-                    <!-- [(ngModel)]="optionAbbreviation" -->
-                    <!-- <ngx-select-dropdown
-                    (change)="selectionChanged($event)" 
-                    [options]="option"
-                    [(value)]="dataModel"
-                    formControlName="State"
-                    [config]="config" 
-                    [style]="style"
-                    [multiple]="false"
-                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }"
-                    class="form-control  custom"
-                    >
-                </ngx-select-dropdown> -->
-                <!-- <mat-form-field>
-                    <input type="text" matInput  formControlName="State" [matAutocomplete]="auto">
-                  </mat-form-field>
-                  
-                  <mat-autocomplete #auto="matAutocomplete">
-                    <mat-option *ngFor="let option of option" [value]="option.id">{{option.description}}</mat-option>
-                  </mat-autocomplete> -->
-                  <!-- (change)="selectChangeHandler($event)"  -->
-                
-
-
-                    <!-- <ngx-select formControlName="State"
-                [allowClear]="true"
-                [items]="option"
-                [optionValueField]="option"
-                [optionTextField]="optionAbbreviation"
-                placeholder="No city selected"
-                (typed)="inputTyped('ngx-select', $event)"></ngx-select> -->
-        
-
-                    <!-- <input type="text" formControlName="State" class="form-control" placeholder="Enter State"
-                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }"/> -->
+                   
                     <div *ngIf="submitted && f.objTenant.controls.State.errors" class="invalid-feedback">
                         <small class="form-text text-muted" *ngIf="f.objTenant.controls.State.errors.required">Please fill out this field</small>
                     </div>

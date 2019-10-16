@@ -14,8 +14,12 @@
         <p>John Smith's code is 1234</p>
         <p>John's Username: smith<br>
         John's Password: 1234</p>
-        <p>Have questions about your account?<br>
-        <span *ngFor="let contact of contactDetails"><span class="contact-links" *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
+        <p><strong>Have questions about your account?</strong><br>
+        <span *ngFor="let contact of contactDetails" class="contact-links" [class.display-none]="contact?.id == 0">
+          <a  *ngIf="contact?.id == 1 || contact?.id == 2" [href]="contact?.redirect">
+            {{contact.data}}
+          </a>
+        <br>
       </span>
       </p>
       </div>
