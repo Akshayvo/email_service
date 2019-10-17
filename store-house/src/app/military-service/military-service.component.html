@@ -5,34 +5,56 @@
       </div>
       
       <div class="rent-sub-holder">
-        <div class="row padding bg-light">
-          <div class="col-md-6 p-4 ">
-              <table class="table-bordered table-striped">
-                  <tHead >
-                      <tr >
-                        <th colspan="2" class="px-4 py-1" >Size</th>
-                        <th colspan="2" class="px-4 py-1" >Military Rate</th>
-                      </tr>
-                    </tHead>
-                <tbody>
-                  <tr *ngFor="let militaryData of militaryData">
-                    <td  colspan="2" class="px-4 py-1"   >
-                      {{militaryData.td1}}
-                    </td>
-                    <td colspan="2" class="px-4 py-1" >
-                      {{militaryData.td2}}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-          </div>
+        <div class=" padding bg-light">
+          <div class="row">
+            <div class="col-md-6 p-4 ">
+                <table class="table-bordered table-striped">
+                    <tHead >
+                        <tr >
+                          <th colspan="2" class="px-4 py-1" >Size</th>
+                          <th colspan="2" class="px-4 py-1" >Military Rate</th>
+                        </tr>
+                      </tHead>
+                  <tbody>
+                    <tr *ngFor="let militaryData of militaryData">
+                      <td  colspan="2" class="px-4 py-1"   >
+                        {{militaryData.td1}}
+                      </td>
+                      <td colspan="2" class="px-4 py-1" >
+                        {{militaryData.td2}}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
   
-          <div class="col-md-6 ">
-            <img class="p-4" src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_House/fort-drum-soldiers.jpg" width="100%"
-             alt="Photograph of soldiers at Fort Drum walking across a tarmac to board a plane" />
-            <p class="p-4 text-justify">{{military}}</p>
+                <p class="pt-4 text-justify">{{military}}</p>
+  
+            </div>
+    
+            <div class="col-md-6 ">
+              <img class="p-2 pb-4" src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_House/fort-drum-soldiers.jpg" width="100%"
+               alt="Photograph of soldiers at Fort Drum walking across a tarmac to board a plane" />
+            </div>
           </div>
+          <h2 class="p-4 text-center">Organizations We Support</h2>
+          <div class="row additional-link">
+              <div class="col-md-6 p-4 text-center custom-border-right">
+                <a href="https://www.woundedwarriorproject.org/" target="blank">
+                  <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_House/wounded-warrior-project.png"
+                   alt="logo artwork for the wounded warrior project"  />
+                </a>
+                <h3 class="pt-4"><a href="https://www.woundedwarriorproject.org/" target="blank">Wounded Warrior Project</a></h3>
+              </div>
+              <div class="col-md-6 p-4 text-center">
+             <a href="https://www.woundedwarriorproject.org/" target="blank">
+               <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store_House/hope-for-the-warriors.png"
+               alt="logo artwork for the hope for the warriors non-profit" />
+             </a> 
+             <h3 class="pt-4"> <a href="https://www.woundedwarriorproject.org/" target="blank">Hope For The Warriors</a></h3>
+                </div>
+            </div>
         </div>
+  
       </div>
     </div>
   </div>

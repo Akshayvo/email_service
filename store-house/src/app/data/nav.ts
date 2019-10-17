@@ -20,11 +20,11 @@ export const navLinks = [
         path: 'storage-tips',
     },
     {
+        label: 'MILITARY DISCOUNT',
+        path: 'military-discount'
+    },
+    {
         label: 'CONTACT US',
         path: 'contact-us'
     },
-    {
-        label: 'MILITARY DISCOUNT',
-        path: 'military-discount'
-    }
 ];

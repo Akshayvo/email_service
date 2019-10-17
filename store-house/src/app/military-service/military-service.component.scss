@@ -1,5 +1,19 @@
 @import "../../styles.scss";
 
+.custom-border-right {
+  border-right: 1px solid grey;
+}
+
+.additional-link {
+  img, a {
+    cursor: pointer;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
 .rent-holder {
   padding-top: 110px;
   min-height: 86vh;
@@ -54,7 +68,11 @@
   z-index: 16;
 }
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 767px) {
+  .custom-border-right {
+    border-right: 0;
+  }
   .rent-holder {
     .rent-sub-holder {
       .rent-example {
