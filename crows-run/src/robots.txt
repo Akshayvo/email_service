@@ -1,5 +1,0 @@
- # www.robotstxt.org/
- # Allow crawling of all content
-Sitemap: http://crows-staging.syrasoft.com/sitemap.xml
- User-agent: *
- Disallow:

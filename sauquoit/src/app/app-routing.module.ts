@@ -24,7 +24,7 @@ const routes: Routes = [
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: ''
+        externalUrl: 'https://g.page/sauquoit-self-storage/review'
     }
   },
   { path: 'error', component: ErrorHandlerComponent },

@@ -28,20 +28,8 @@ export const contact = [
 ];
 
 export const hours = [
-    // {
-    //     label: 'SUN: ',
-    //     data: 'Closed '
-    // },
-    // {
-    //     label: 'MON-FRI: ',
-    //     data: '9:00 AM - 5:00 PM'
-    // },
-    // {
-    //     label: 'SAT: ',
-    //     data: 'By Appointment Only'
-    // },
     {
-        label: 'Access Hours: ',
+        label: 'Facility Access Hours: ',
         data: '24 Hours a Day 7 Days a Week'
     }
 ];
