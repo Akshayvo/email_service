@@ -25,6 +25,7 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { PhotosComponent } from './photos/photos.component';
+import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { PhotosComponent } from './photos/photos.component';
     AccordionComponent,
     ContactButtonComponent,
     PayRentComponent,
-    PhotosComponent
+    PhotosComponent,
+    ReserveUnitComponent
   ],
   imports: [
     CommonModule,

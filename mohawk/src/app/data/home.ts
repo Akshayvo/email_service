@@ -21,25 +21,25 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/location.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Mohawk/location.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/24-hours.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Mohawk/24-hours.svg',
         label: '24 Hour Facility Access Available',
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/thermometer.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Mohawk/thermometer.svg',
         label: 'Climate Controlled Units Available',
         alt: 'Icon of thermometer indicating climate controlled units'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/cctv.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Mohawk/cctv.svg',
         label: 'Security Cameras on Premises',
         alt: 'Icon of a security camera'
     },
@@ -70,9 +70,6 @@ export const gettingStarted = `Start de-cluttering your home, or reclaiming some
 export const blurb = [
     // {
     //     h1: `Affordable Storage Units in Wexford`,
-    //     p: `Since 1993, Store-It Associates has proudly served the Wexford community with friendly service, and high-quality, well-maintained 
-    //         self storage units, and parking spaces. Store-It Associates has the best prices on a number of self storage unit sizes and types. 
-    //         We are a well-lit, and fully fenced self storage, and outdoor parking facility conveniently located right off of Interstate 79 
-    //         at Exit 73. Call, and make your reservation today!`,
+    //     p: ``,
     // }
 ];

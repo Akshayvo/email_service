@@ -4,8 +4,8 @@
   <div class="jumbotron-container">
     <div class="jumbotron-top">
       <div class="jumbotron px-0 m-0">
-        <div class="bg-translucent jumbotron-skew-style">
-        </div>
+        <!-- <div class="bg-translucent jumbotron-skew-style">
+        </div> -->
           <div class="container">
             <div class="jumbotron-skew-text">
               <div class="jum-text disp" *ngFor="let blurb of blurb">
@@ -13,7 +13,7 @@
                 <p>{{blurb.p}}
                 </p>
               </div>
-              <div class="button-width">
+              <!-- <div class="button-width">
                   <div class="row mx-0 px-0">
                     <div class="col-6 mx-0 px-0">
                      <a class="btn btn-outline-primary mr-2" (click)="navigate('/contact-us')" role="button">Contact Us</a>
@@ -22,7 +22,7 @@
                      <a class="btn btn-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
                     </div>
                   </div>
-              </div>
+              </div> -->
             </div>
           </div>
       </div>
@@ -79,7 +79,7 @@
     <div class="row">
       <div class="col-lg-6 py-3">
         <app-photos></app-photos>
-        <!-- <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Stor_It/store-it-associates-home.jpg" width="100%" alt="photograph of open self storage unit with personal belongings stacked inside" /> -->
+        <!-- <img src="" width="100%" alt="photograph of open self storage unit with personal belongings stacked inside" /> -->
       </div>
       <div class="col-lg-6 py-3">
         <h1 class="heading pb-4">Affordabel Self Storage & Truck Rental in Mohawk</h1>
@@ -95,9 +95,9 @@
      <div class="py-5 m-0">
        <div class="row">
          <div class="col-md-12">
-           <h2 class="heading pb-4">Get Started</h2>
+           <h2 class="heading pb-4">Getting Started</h2>
            <p class="pb-4">{{gettingStarted}}</p>
-           <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">Reserve Your Unit!</a>
+           <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Your Unit!</a>
          </div>
        </div>
      </div>
