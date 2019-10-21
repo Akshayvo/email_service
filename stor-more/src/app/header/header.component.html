@@ -42,7 +42,7 @@
           </span>
           <span *ngIf="nav?.type === 'dropdown'">
               <div class="dropdown show">  
-                <a class="dropdown-toggle nav-link py-4" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/location/linden-storage') || router.isActive('/location/macedon-storage')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+                <a class="dropdown-toggle nav-link py-4" role="button" id="dropdownMenuLink"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
                   <li *ngFor="let sub of nav.sublinks text-center"><a class="dropdown-item" [routerLinkActive]="'location-active'" href="{{sub.path}}" target="_blank"  (click)="onClick(menu)" >{{sub.label}}</a></li>
                 </ul>
