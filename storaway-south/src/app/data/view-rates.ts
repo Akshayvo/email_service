@@ -9,3 +9,27 @@ export const dataViewRates = [
             Stor-A-Way has a unit for you!`
     }
 ];
+
+export const currentDiscounts = [
+    {
+        p:`Multi unit discount - 5% discount on second unit`
+    },
+    {
+        p:`6 months prepaid - 5% discount`
+    },
+    {
+        p:`Fireman, Police, EMS and Vets - 10% discount`
+    },
+    {
+        p:`Internet discount 10% off first month`
+    },
+    {
+        p:`Active Duty Military - 20% off must have military ID`
+    },
+    {
+        p:`New customers - 3 month minimum, 4th month free`
+    },
+    {
+        p:`1 year prepaid - Prepay 11 months, 12 month free`
+    }
+] 
