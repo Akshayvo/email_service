@@ -90,6 +90,14 @@
     width: 300px;
   }
 }
+@media screen and (min-height:831px){
+  .contact-button-data {
+    overflow: auto;
+    overflow-y: scroll;
+    height: 75vh;
+    width: 300px;
+  }
+}
 
 @media only screen and (max-height: 480px) {
   .contact-button-data {
