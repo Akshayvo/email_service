@@ -1,0 +1,88 @@
+@import "../../styles.scss";
+
+.contentHolder {
+  padding-top: 100px;
+  margin-bottom: 50px;
+  min-height: 96vh;
+  max-height: auto;
+  display: block;
+
+  .contact-data {
+    padding: 64px;
+    background-color: $light;
+
+    label {
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+
+    .btn {
+      padding: 5px 140px;
+      min-width: 140px;
+      float: right;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 200px;
+  }
+
+  h3 {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+}
+
+.form-control {
+  font-size: 0.8rem;
+}
+
+.contact-links {
+  a {
+    color: #212529;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .contentHolder {
+    padding-top: 60px;
+
+    .contact-data {
+      // padding: 32px;
+      height: 600px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .contentHolder {
+    padding-top: 60px;
+  }
+
+  .contact-data {
+    .btn {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .contentHolder {
+    padding-top: 60px;
+
+    .heading {
+      padding-bottom: 30px;
+    }
+
+    .contact-data {
+      padding: 16px 16px 50px 16px;
+
+      .btn {
+        width: 100%;
+        margin: 5px 0 10px 5px;
+      }
+    }
+  }
+}
