@@ -34,11 +34,11 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Do you have any questions about Security Storage's self storage units,
+      content: `Do you have any questions about State Storage Largo's self storage units,
                 warehouse space or office leases? Drop us a line through our contact
                 form or via phone at (361) 275-9698!`
     });
-    this.titleService.setTitle('Contact Us | Security Storage Cuero, Tx 77954');
+    this.titleService.setTitle('State Storage Largo | Contact');
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,

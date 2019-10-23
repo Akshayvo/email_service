@@ -5,7 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, officeHours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs,
-          gettingStarted, feature, blurbHeading, blurbText } from '../data/home';
+          gettingStarted, feature, blurb, } from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -26,6 +26,7 @@ export class HomeComponent implements OnInit {
   blurbHeading: any;
   blurbText: any;
   slideShow: any;
+  blurb: any;
 
 
   constructor(@Inject(WINDOW) private window: Window,
@@ -35,11 +36,9 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Security Storage has been providing clean, affordable self storage units to Cuero,
-                Texas since 1993 and is proud to offer a wide selection of sizes and
-                services to make your self storage experience a hassle free one!`
+      content: ``
     });
-    this.titleService.setTitle('Storage Units in Cuero, Tx | Security Storage');
+    this.titleService.setTitle('State Storage Largo | Home');
   }
 
   public navigate(location: any) {
@@ -57,8 +56,9 @@ export class HomeComponent implements OnInit {
   }
 
   public fetchJumbotronText() {
-    this.blurbHeading = blurbHeading;
-    this.blurbText = blurbText;
+    // this.blurbHeading = blurbHeading;
+    // this.blurbText = blurbText;
+    this.blurb = blurb;
   }
 
   public fetchContactDetails() {

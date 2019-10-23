@@ -20,10 +20,9 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Check out the competitive rates for our high quality self storage units,
-                warehouse space, and office suites! Security Storage is the premiere storage facility in Cuero, Texas!`
+      content: ``
     });
-    this.titleService.setTitle('Storage Units in Cuero, Tx | View Rates');
+    this.titleService.setTitle('');
   }
 
   ngOnInit() {

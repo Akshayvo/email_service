@@ -11,10 +11,10 @@ export const navLinks = [
     //     label: 'UNIT SIZER',
     //     path: 'unit-sizer',
     // },
-    // {
-    //     label: 'PAY RENT',
-    //     path: 'pay-rent'
-    // },
+    {
+        label: 'PAY RENT',
+        path: 'pay-rent'
+    },
     {
         label: 'CONTACT US',
         path: 'contact-us'

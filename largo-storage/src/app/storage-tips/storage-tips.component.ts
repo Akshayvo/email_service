@@ -23,10 +23,9 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `When you store with Security Storage it's our #1 goal
-                to make your storage unit experience a hassle-free experience!`
+      content: ``
     });
-    this.titleService.setTitle('Storage Tips | Security Storage Cuero, Tx 77954');
+    this.titleService.setTitle('');
   }
 
   ngOnInit() {

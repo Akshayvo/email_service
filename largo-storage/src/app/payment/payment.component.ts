@@ -10,7 +10,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 })
 export class PaymentComponent implements OnInit {
 
-  contactInfo: any;
+  contact: any;
 
   constructor(
     private titleService: Title,
@@ -22,7 +22,7 @@ export class PaymentComponent implements OnInit {
       content: `Access your account and securely pay your rent through our online bill pay service.
                 For information on accessing your account call (361) 275-9698.`
     });
-    this.titleService.setTitle('Pay Your Rent Online | Security Storage Cuero, Tx 77954');
+    this.titleService.setTitle('State Storage Largo | Payment');
   }
 
   ngOnInit() {
@@ -31,6 +31,6 @@ export class PaymentComponent implements OnInit {
   }
 
   public fetchContactDetails() {
-    this.contactInfo = contact;
+    this.contact = contact;
   }
 }

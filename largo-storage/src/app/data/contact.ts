@@ -36,7 +36,7 @@ export const hours = [
 export const officeHours = [
     {
         label: 'Office: ',
-        data: 'Sunday - saturday 8:00am-9:00pm'
+        data: 'Sunday - Saturday 8:00am-9:00pm'
     },
     // {
     //     label: '',
@@ -54,19 +54,19 @@ export const officeHours = [
 
 
 export const socialLinks = [
-    // {
-    //     label: 'twitter',
-    //     path: 'https://twitter.com/CatskillSS',
-    //     class: 'fab fa-twitter-square',
-    // },
-    // {
-        // label: 'facebook',
-        // path: 'https://www.facebook.com/security-storage',
-        // class: 'fab fa-facebook-square',
-    // },
-    // {
-    //     label: 'google plus',
-    //     path: '#',
-    //     class: 'fab fa-google-plus-square',
-    // },
+    {
+        label: 'twitter',
+        path: 'https://twitter.com/',
+        class: 'fab fa-twitter-square',
+    },
+    {
+        label: 'facebook',
+        path: 'https://www.facebook.com/',
+        class: 'fab fa-facebook-square',
+    },
+    {
+        label: 'google plus',
+        path: '#',
+        class: 'fab fa-google-plus-square',
+    },
 ];

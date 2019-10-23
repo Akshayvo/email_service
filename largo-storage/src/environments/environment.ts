@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'security-storage'
+  appId: 'largo-storage'
 };
 /*
  * For easier debugging in development mode, you can import the following file

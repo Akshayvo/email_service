@@ -12,17 +12,17 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 const routes: Routes = [
   // Fallback when no prior route is matched
   { path: '', component: HomeComponent },
-  { path: 'unit-sizer', component: UnitSizerComponent },
-  { path: 'storageTips', component: StorageTipsComponent },
+  // { path: 'unit-sizer', component: UnitSizerComponent },
+  // { path: 'storageTips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'view-rates', component: ViewRatesComponent },
+  // { path: 'view-rates', component: ViewRatesComponent },
   { path: 'pay-rent', component: PaymentComponent },
   { path: 'review', component: HomeComponent,
   resolve: {
       url: 'externalUrlRedirectResolver'
   },
   data: {
-      externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJdxECf-bkQoYRQh92ekNC-tU'
+      externalUrl: ''
   }
 },
   { path: 'error', component: ErrorHandlerComponent },

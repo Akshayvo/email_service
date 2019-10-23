@@ -6,7 +6,7 @@ a {
 }
 
 .iconColor {
-  color: $primary;
+  color: $secondary;
 }
 
 .contact-header {
@@ -24,7 +24,7 @@ a {
   text-align: right;
 
   a {
-    color: $dark;
+    color: $secondary;
     text-decoration: none;
   }
 }
@@ -34,7 +34,7 @@ a {
 }
 
 .navbar {
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
 
   button:focus {
     outline: 5px auto $primary;
@@ -52,7 +52,8 @@ a {
 }
 
 .nav-link-active {
-  color: $secondary !important;
+  // color: $secondary !important;
+  background-color: $secondary;
   border-bottom: 5px solid $secondary;
 }
 
@@ -61,11 +62,12 @@ a {
 }
 
 .navbar-toggler {
-  border-color: $border;
-
+  border-color: $primary;
+  color: $primary;
   i {
     color: $fontColor;
   }
+  
 }
 
 
@@ -78,11 +80,18 @@ a {
   a {
     color: #212529;
   }
+ 
 }
 
 @media screen and (max-width: 991px) {
   .display {
     display: none;
+  }
+  
+  .nav-link-active {
+    // color: $primary !important;
+    background-color: transparent ;
+    border-bottom: 5px solid $secondary;
   }
 
   .nav-link {
