@@ -26,7 +26,7 @@ const routes: Routes = [
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: ''
+        externalUrl: 'https://g.page/rifle-self-storage/review'
     }
   },
   { path: 'error', component: ErrorHandlerComponent },
