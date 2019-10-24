@@ -61,7 +61,11 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   public fetchViewRates() {
     this.viewRates = viewRates;
   }
-  
+  /**
+   * 
+   * @param event 
+   * @param event1 
+   */
 
   handleClick(event: Event, event1: Event) {
     this.openComponent = true;

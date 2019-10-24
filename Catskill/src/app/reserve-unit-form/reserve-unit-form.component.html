@@ -26,8 +26,8 @@
            </table>
        </div>
        <div>
-            <button (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
-            <div *ngIf="tokenExit" class="py-3 home-link"><a (click)="navigate('/')">Go to Home</a></div>
+            <button *ngIf="tokenExit" (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
+            <div class="py-3 home-link"><a (click)="navigate('/')">Go to Home</a></div>
         </div>
     </div>
     <ng-template #other_content>
@@ -221,4 +221,4 @@
 </div>
 
 
-<!-- <pre>{{reserveUnitForm.value | json }}</pre> -->
+<pre>{{reserveUnitForm.value | json }}</pre>
