@@ -4,14 +4,13 @@ import { Observable } from 'rxjs';
 
 import { environment } from '../../environments/environment';
 
-const baseUrl = environment.baseUrl;
 
 @Injectable({
   providedIn: 'root'
 })
 export class SignOutService {
 
-  private signOutUrl = `${baseUrl}auth/signout`;
+  private signOutUrl = `auth/signout`;
 
   constructor(private http: HttpClient) { }
 
