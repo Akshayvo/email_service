@@ -4,8 +4,6 @@ import { Observable } from 'rxjs';
 import { TenantInfo, Tenant } from '../models/tenant';
 import { environment } from '../../environments/environment';
 
-const baseUrl = environment.baseUrl;
-
 @Injectable({
   providedIn: 'root'
 })
@@ -14,67 +12,30 @@ export class TenantInfoService {
   token: string;
 
 
-  private url = `${baseUrl}tenant`;
+  private url = `tenant`;
 
-  private updateTenantUrl = `${baseUrl}tenant/`;
+  private updateTenantUrl = `tenant/`;
 
-  private signUpAutoPayUrl = `${baseUrl}tenant/autopaysignup`;
+  private signUpAutoPayUrl = `tenant/autopaysignup`;
 
-  private OptionOutOfAutoPayUrl = `${baseUrl}tenant/autopayoptout`;
+  private OptionOutOfAutoPayUrl = `tenant/autopayoptout`;
 
 
   constructor(private http: HttpClient) { }
 
-  getTenantInfo(tenant: any): Observable<any> {
-    if(window.localStorage) {
-      this.token = localStorage.getItem('strTenantToken');
-    }
-
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'APIKey':  `${environment.APIKey}`,
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${this.token}`
-      })
-    };
-    return this.http.get<any>(this.url,  httpOptions);
+  getTenantInfo(): Observable<any> {
+    return this.http.get<any>(this.url);
   }
 
   updateTenant(tenant: any): Observable<any> {
-    const token = localStorage.getItem('strTenantToken');
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'APIKey':  `${environment.APIKey}`,
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
-      })
-    };
-    return this.http.post<any>(this.updateTenantUrl, tenant, httpOptions);
+    return this.http.post<any>(this.updateTenantUrl, tenant);
   }
 
   signUpAutoPay(signUp: any): Observable<any> {
-    const token = localStorage.getItem('strTenantToken');
-
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'APIKey':  `${environment.APIKey}`,
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
-      })
-    };
-    return this.http.post<any>(this.signUpAutoPayUrl, signUp, httpOptions);
+    return this.http.post<any>(this.signUpAutoPayUrl, signUp);
   }
 
   OptionOutOfAutoPay(signUp: any): Observable<any> {
-    const token = localStorage.getItem('strTenantToken');
-
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'APIKey':  `${environment.APIKey}`,
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
-      })
-    };
-    return this.http.post<any>(this.OptionOutOfAutoPayUrl, signUp, httpOptions);
+    return this.http.post<any>(this.OptionOutOfAutoPayUrl, signUp);
   }
 }

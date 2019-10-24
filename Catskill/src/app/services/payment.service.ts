@@ -5,28 +5,17 @@ import { Payment, LstPayTypes } from '../models/payment';
 
 import { environment } from '../../environments/environment';
 
-const baseUrl = environment.baseUrl;
-
 
 @Injectable({
   providedIn: 'root'
 })
 export class PaymentService {
 
-  private paymentUrl = `${baseUrl}payment`;
+  private paymentUrl = `payment`;
 
   constructor(private http: HttpClient ) { }
 
   getPayment(lstPayTypes: LstPayTypes[]): Observable<any> {
-    const token = localStorage.getItem('strTenantToken');
-
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'APIKey':  `${environment.APIKey}`,
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
-      })
-    };
-    return this.http.post<any>(this.paymentUrl, lstPayTypes, httpOptions);
+    return this.http.post<any>(this.paymentUrl, lstPayTypes);
   }
 }

@@ -31,6 +31,8 @@ import { Subscription } from 'rxjs';
 
 export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
+  get f() { return this.reserveUnitForm.controls; }
+
   @Input() DescriptionVR: string;
   @Input() MonthlyRateVR: number;
 
@@ -58,20 +60,20 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   reserveUnitForm: FormGroup;
 
   tokenExit: string;
-  
+
   submitted = false;
   rate: string;
   PeriodDescription: string;
   selectedDescription: string;
   ReservationFee: number;
   ReservationFeeValue: number;
-  
+
   MonthlyRateValue: number;
-  
+
   defaultValue: number;
   unitTypeId: number;
   currentdate: Date;
-  currentDate: string; 
+  currentDate: string;
   minDate: Date;
   maxDate: Date;
   MinDate: string;
@@ -98,18 +100,32 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   MoveIn = {
     dteMoveIn: '',
     intUnitTypeID: '',
-  }
+  };
 
   examplaParent: string;
 
   existingTenantToken: string;
   existTempToken: string;
   data: any;
-  
+
   intLeadDaysFrom: number;
   intLeadDaysTo: number;
 
   logOut = {};
+
+
+  config = {
+    displayKey: 'description', // if objects array passed which key to be displayed defaults to description
+    search: true, // true/false for the search functionlity defaults to false,
+    height: '140px', // height of the list so that if there are more no of items it can show a scroll defaults to auto. With auto height scroll will never appear
+    placeholder: 'Select State', // text to be displayed when no item is selected defaults to Select,
+    customComparator: () => {}, // a custom function using which user wants to sort the items. default is undefined and Array.sort() will be used in that case,
+    // limitTo: this.options.length, // a number thats limits the no of options displayed in the UI similar to angular's limitTo pipe
+    moreText: 'more', // text to be displayed whenmore than one items are selected like Option 1 + 5 more
+    noResultsFound: 'No results found!', // text to be displayed when no items are found while searching
+    searchPlaceholder: 'Search', // label thats displayed in search input,
+    searchOnKey: 'name', // key on which search should be performed this will be selective search. if undefined this will be extensive search on all keys
+  };
 
   private  getLeadDaysUnsubscribe$: Subscription;
   private  getTenantInfoUnsubscribe$: Subscription;
@@ -119,20 +135,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   private  updateTenantUnsubscribe$: Subscription;
   private  makeAReservationUnsubscribe$: Subscription;
   private  signOutUnsubscribe$: Subscription;
-  
-
-  config = {
-    displayKey:"description", //if objects array passed which key to be displayed defaults to description
-    search:true, //true/false for the search functionlity defaults to false,
-    height: '140px', //height of the list so that if there are more no of items it can show a scroll defaults to auto. With auto height scroll will never appear
-    placeholder:'Select State', // text to be displayed when no item is selected defaults to Select,
-    customComparator: ()=>{}, // a custom function using which user wants to sort the items. default is undefined and Array.sort() will be used in that case,
-    // limitTo: this.options.length, // a number thats limits the no of options displayed in the UI similar to angular's limitTo pipe
-    moreText: 'more', // text to be displayed whenmore than one items are selected like Option 1 + 5 more
-    noResultsFound: 'No results found!', // text to be displayed when no items are found while searching
-    searchPlaceholder:'Search', // label thats displayed in search input,
-    searchOnKey: 'name', // key on which search should be performed this will be selective search. if undefined this will be extensive search on all keys
-  }
 
   constructor(
     private formBuilder: FormBuilder,
@@ -171,7 +173,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       dteMoveIn: ['', Validators.required],
     });
 
-    this.MoveInStringParent = this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, "yyyy-MM-dd");
+    this.MoveInStringParent = this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, 'yyyy-MM-dd');
   }
 
   initPeriodDescription() {
@@ -194,16 +196,16 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.getLeadDays(this.data);
 // console.log(this.intLeadDaysFrom, this.intLeadDaysTo);
 
-  
+
     this.currentdate = new Date();
-    
+
     this.fetchUSState();
-    
-    
+
+
 
     // this.minDay = this.From.getDate();
     // this.maxDay = this.To.getDate();
-    if(window.localStorage) {
+    if (window.localStorage) {
       if (localStorage.getItem('strTenantToken')) {
         this.getTenantInfo(this.tenant);
       }
@@ -211,7 +213,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
 
     console.log(this.DescriptionVR, this.MonthlyRateVR);
-    
+
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
         Description: this.DescriptionVR,
@@ -221,12 +223,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     });
   }
 
-    public fetchUSState() {   
-    // this.option = option.map(x => x.name);  
+    public fetchUSState() {
+    // this.option = option.map(x => x.name);
     this.option = option;
     }
-
-  get f() { return this.reserveUnitForm.controls; }
 
   dateClass = (d: Date) => {
     const date = d.getDate();
@@ -249,8 +249,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.count = this.count + 1;
 
         this.reserveUnitForm.patchValue({
-          dteMoveIn: this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, "yyyy-MM-dd")
-        })
+          dteMoveIn: this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, 'yyyy-MM-dd')
+        });
       }
     }
   }
@@ -276,7 +276,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.MonthlyRateValue = this.lstUnitTypes[index].MonthlyRate;
     this.unitTypeId = this.lstUnitTypes[index].UnitTypeID;
     this.MoveIn.intUnitTypeID = JSON.stringify(this.unitTypeId);
-   
+
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
         MonthlyRate: this.MonthlyRateValue,
@@ -290,18 +290,18 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     .subscribe(result => {
       this.intLeadDaysFrom = result.intLeadDaysFrom;
       this.intLeadDaysTo = result.intLeadDaysTo;
-      this.currentDate = this.datePipe.transform(new Date(), "yyyy-MM-dd");
-      let FromDate = this.currentdate.setDate(this.currentdate.getDate() + this.intLeadDaysFrom);
-      let ToDate = this.currentdate.setDate(this.currentdate.getDate() + this.intLeadDaysTo);
-      this.From = this.datePipe.transform(FromDate, "yyyy-MM-dd");
-      this.To = this.datePipe.transform(ToDate, "yyyy-MM-dd");
-    })
+      this.currentDate = this.datePipe.transform(new Date(), 'yyyy-MM-dd');
+      const FromDate = this.currentdate.setDate(this.currentdate.getDate() + this.intLeadDaysFrom);
+      const ToDate = this.currentdate.setDate(this.currentdate.getDate() + this.intLeadDaysTo);
+      this.From = this.datePipe.transform(FromDate, 'yyyy-MM-dd');
+      this.To = this.datePipe.transform(ToDate, 'yyyy-MM-dd');
+    });
   }
 
 
 
   getTenantInfo(tenant) {
-  this.getTenantInfoUnsubscribe$ =  this.tenantInfoService.getTenantInfo(tenant)
+  this.getTenantInfoUnsubscribe$ =  this.tenantInfoService.getTenantInfo()
       .subscribe(tenantData => {
         if (tenantData) {
           const { Tenant } = tenantData;
@@ -315,7 +315,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
-          }
+          };
           this.reserveUnitForm.patchValue({
             objTenant: ({
               FirstName: Tenant.FirstName,
@@ -328,28 +328,28 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
               State: Tenant.State,
               ZIP: Tenant.ZIP,
             }),
-          })
+          });
 
       this.reserveUnitForm.controls.objTenant.valueChanges.subscribe(data => {
         this.objTenantCopy = data;
-        console.log('Form changes', data)  
-        console.log("new object", this.objTenantCopy);
-        console.log("initial values", tempObject);
+        console.log('Form changes', data);
+        console.log('new object', this.objTenantCopy);
+        console.log('initial values', tempObject);
         console.log(JSON.stringify(this.objTenantCopy) === JSON.stringify(tempObject));
         this.isValueUpdated = JSON.stringify(this.objTenantCopy) === JSON.stringify(tempObject);
         console.log(this.isValueUpdated);
-        
+
       }
       );
         }
       }
       , (err: any) => {
-        if(err.status === 401) {
+        if (err.status === 401) {
           localStorage.removeItem('strTenantToken');
         }
       });
   }
-  
+
   getData(UnitTypes) {
    this.getDataUnsubscribe$ = this.fetchDataService.getData(UnitTypes)
       .subscribe(UnitTypes => {
@@ -358,14 +358,14 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       const defaultUnitTypeValue = UnitTypes.lstUnitTypes[0].Description;
       this.MoveIn.intUnitTypeID = JSON.stringify(UnitTypes.lstUnitTypes[0].UnitTypeID);
 
-      if(!this.DescriptionVR && !this.MonthlyRateVR) {    
+      if (!this.DescriptionVR && !this.MonthlyRateVR) {
         this.reserveUnitForm.patchValue({
           lstUnitTypes: ([{
             Description: defaultUnitTypeValue,
             MonthlyRate: this.defaultValue,
             ReservationFee: 0.00,
           }])
-        })
+        });
       }
     });
   }
@@ -379,7 +379,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           lstRentalPeriods: ([{
             PeriodDescription: defaultPeriodDescription,
           }])
-        })
+        });
       }
     );
   }
@@ -422,9 +422,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         }
       }
     }
-    ); 
+    );
   }
-  
+
   signOut(logOut: any) {
     this.signOutService.signOut(logOut)
     .subscribe( result => {
@@ -441,7 +441,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     );
   }
 
-  onSubmit() {      
+  onSubmit() {
     if (window.localStorage) {
       if (localStorage.getItem('strTenantToken')) {
         this.existingTenantToken = localStorage.getItem('strTenantToken');
@@ -449,21 +449,21 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.existTempToken = localStorage.getItem('strTempTenantToken');
       }
     }
-    
+
     this.submitted = true;
     this.showConfirmation = true;
     if (this.reserveUnitForm.invalid) {
       return;
     } else {
       if (this.existingTenantToken) {
-        if(this.isValueUpdated) {
+        if (this.isValueUpdated) {
           this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
           this.makeAReservation(this.MoveIn);
         } else {
           this.updateTenant(this.reserveUnitForm.value);
         }
       } else {
-        if(this.existTempToken) {
+        if (this.existTempToken) {
           this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
           this.makeAReservation(this.MoveIn);
         } else {
@@ -475,25 +475,25 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
 
   public ngOnDestroy(): void {
-    if(this.getLeadDaysUnsubscribe$ && this.getLeadDaysUnsubscribe$.closed) {
+    if (this.getLeadDaysUnsubscribe$ && this.getLeadDaysUnsubscribe$.closed) {
       this.getLeadDaysUnsubscribe$.unsubscribe();
-    } 
-    if(this.getTenantInfoUnsubscribe$ && this.getTenantInfoUnsubscribe$.closed) {
+    }
+    if (this.getTenantInfoUnsubscribe$ && this.getTenantInfoUnsubscribe$.closed) {
       this.getTenantInfoUnsubscribe$.unsubscribe();
     }
-    if(this.getDataUnsubscribe$ && this.getDataUnsubscribe$.closed) {
+    if (this.getDataUnsubscribe$ && this.getDataUnsubscribe$.closed) {
       this.getDataUnsubscribe$.unsubscribe();
     }
-    if(this.getRentalPeriodUnsubscribe$ && this.getRentalPeriodUnsubscribe$) {
+    if (this.getRentalPeriodUnsubscribe$ && this.getRentalPeriodUnsubscribe$) {
       this.getRentalPeriodUnsubscribe$.unsubscribe();
     }
-    if(this.addTenantUnsubscribe$ && this.addTenantUnsubscribe$.closed) {
+    if (this.addTenantUnsubscribe$ && this.addTenantUnsubscribe$.closed) {
       this.addTenantUnsubscribe$.unsubscribe();
     }
-    if(this.updateTenantUnsubscribe$&& this.updateTenantUnsubscribe$.closed) {
+    if (this.updateTenantUnsubscribe$ && this.updateTenantUnsubscribe$.closed) {
       this.updateTenantUnsubscribe$.unsubscribe();
     }
-    if(this.makeAReservationUnsubscribe$ && this.makeAReservationUnsubscribe$.closed) {
+    if (this.makeAReservationUnsubscribe$ && this.makeAReservationUnsubscribe$.closed) {
       this.makeAReservationUnsubscribe$.unsubscribe();
     }
     if (this.signOutUnsubscribe$ && this.signOutUnsubscribe$.closed) {

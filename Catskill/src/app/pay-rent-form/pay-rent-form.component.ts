@@ -7,7 +7,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { PaymentService } from '../services/payment.service';
 import { SignOutService } from '../services/sign-out.service';
 import { LstPayTypes, PayTypes, PayTypeForResult, ObjPayment } from '../models/payment';
-import { UnpaidAR } from "../models/tenant";
+import { UnpaidAR } from '../models/tenant';
 
 
 import { month } from '../data/date';
@@ -54,7 +54,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   date: Date;
 
-  MinDate: string
+  MinDate: string;
   minDate: Date;
 
   surcharge: number;
@@ -122,7 +122,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         id: newYear.toString().slice(-2),
         label: newYear,
       });
-      
+
       newYear = newYear + 1;
     }
 
@@ -133,7 +133,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.getPayMethods(this.payTypes);
     this.fetchMonth();
     this.getTenantInfo(this.tenant);
-    
+
   }
 
   get f() { return this.payRentForm.controls; }
@@ -165,10 +165,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       }
     });
 
-    
-    if( this.showInput) {
-      console.log("other value is", this.otherValue);
-      console.log("can't calculate surcharge");
+
+    if ( this.showInput) {
+      console.log('other value is', this.otherValue);
+      console.log('can\'t calculate surcharge');
       if (this.customOtherValue) {
         this.surchargeService.getAmt(this.customOtherValue);
         this.getSurCharge();
@@ -176,73 +176,74 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     } else {
       this.getSurCharge();
     }
-    
+
   }
 
-  
+
   handleChange(e) {
-    
-    console.log("handle change", this.count+1);
-    
+
+    console.log('handle change', this.count + 1);
+
     if (e.target.id === '2') {
       this.showInput = true;
       this.id = e.target.id;
       this.surcharge = 0;
     } else {
-      console.log("balance after handle click", this.balance);
+      console.log('balance after handle click', this.balance);
       // this.surcharge = 0;
       this.surchargeService.getAmt(this.balance);
       this.getSurCharge();
       this.showInput = false;
-      
+
     }
     console.log(this.showInput);
 
   }
 
-  onKeyUp(e) {  
-    console.log(" onchange is working, searchValue", this.customOtherValue, this.otherValue);
-    if(e.target.value) {
+  onKeyUp(e) {
+    console.log(' onchange is working, searchValue', this.customOtherValue, this.otherValue);
+    if (e.target.value) {
       this.customOtherValue = e.target.value;
       this.surchargeService.getAmt(e.target.value);
-      setTimeout(()=>{   
+      setTimeout(() => {
         this.getSurCharge();
    }, 1000);
-  
-    } else {      
+
+    } else {
         this.surcharge = 0;
     }
   }
 
-  getTenantInfo(tenant) {
-  this.getTenantInfoUnsubscribe$ =  this.tenantInfoService.getTenantInfo(tenant)
+  getTenantInfo(tenant: any) {
+  this.getTenantInfoUnsubscribe$ =  this.tenantInfoService.getTenantInfo()
       .subscribe(tenantData => {
         console.log(tenantData);
         if (tenantData) {
           const { Tenant } = tenantData;
-          console.log(Tenant); 
+          console.log(Tenant);
           this.balance = Tenant.Balance;
           this.surchargeService.getAmt(this.balance);
           this.surchargeService.getIdPaytype(this.paytypeid);
           this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled,
-          this.date = Tenant.LastPaymentOn; 
-          this.LastPaymentOn = this.datePipe.transform(this.date, "dd/MM/yyyy");
+          this.date = Tenant.LastPaymentOn;
+          this.LastPaymentOn = this.datePipe.transform(this.date, 'dd/MM/yyyy');
           this.LastPaymentAmount = Tenant.LastPaymentAmount;
 
           this.UnpaidAR =  Tenant.UnpaidAR;
           // console.log( typeof(this.UnpaidAR), Tenant.UnpaidAR);
 
-          for (let i in this.UnpaidAR) {
+          // tslint:disable-next-line:forin
+          for (const i in this.UnpaidAR) {
             // const date = this.UnpaidAR[i].FromDate;
             // console.log(date);
-            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, "dd/MM/yyyy");
-            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, "dd/MM/yyyy");
+            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, 'dd/MM/yyyy');
+            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, 'dd/MM/yyyy');
 
             if (this.UnpaidAR[i].AmountOwed < 0) {
               this.UnpaidAR[i].demoAmountOwed = Math.abs(this.UnpaidAR[i].AmountOwed);
             }
           }
-        
+
           if (this.balance < 0) {
             this.displayBalance = Math.abs(this.balance);
           } else {
@@ -260,17 +261,17 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
               PaymentAmount: this.balance,
             }
-          })
+          });
 
-          this.getSurCharge();          
+          this.getSurCharge();
         }
       }
       , (err: any) => {
-        if(err.status === 401) {
+        if (err.status === 401) {
           localStorage.removeItem('strTenantToken');
           this.router.navigate(['/pay-rent/login']);
-          this.sessionExpire = "Session Expired. Please Login for completing the payment."
-          console.log('session expired.')
+          this.sessionExpire = 'Session Expired. Please Login for completing the payment.';
+          console.log('session expired.');
         }
       });
   }
@@ -291,7 +292,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             }
           }
         });
-       
+
       }
       );
   }
@@ -307,7 +308,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       console.log(result.decTotalAmount);
       this.AmountToPay = result.decTotalAmount;
 
-      if(this.showInput) {
+      if (this.showInput) {
         // console.log("other value from surcharge", this.customOtherValue);
        if (this.customOtherValue) {
          this.surcharge = result.decTotalAmount - this.customOtherValue;
@@ -315,17 +316,17 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       } else {
         this.surcharge = result.decTotalAmount - this.balance;
       }
-      console.log("surcharge is", this.surcharge);
+      console.log('surcharge is', this.surcharge);
       // this.balance = this.AmountToPay;
       // console.log("balance after surcharge is", this.balance);
-      
-      },(err: any) => {
-        if(err.status === 400) {
+
+      }, (err: any) => {
+        if (err.status === 400) {
           this.showError = true;
-          this.errorMessage = "Please enter the valid amount";
+          this.errorMessage = 'Please enter the valid amount';
         }
       }
-    )
+    );
   }
 
   getPayment(paymentData) {
@@ -343,17 +344,17 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         this.showloaderForPayment = false;
         this.PaymentAmount = paymentData.PayTypeForResult.PaymentAmount;
         this.CCApprovalCode = paymentData.PayTypeForResult.CCApprovalCode;
-        console.log(paymentData.intErrorCode, "error code for payment");
+        console.log(paymentData.intErrorCode, 'error code for payment');
         if ( paymentData.intErrorCode === 1 ) {
           this.showSuccessPayment = true;
         } else {
-          this.invalidPayment = "Unable to make the payment. Please check your card detail."
+          this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
       }, (err: any) => {
-        if(err instanceof HttpErrorResponse){
-          if(err.status === 400) {
+        if (err instanceof HttpErrorResponse) {
+          if (err.status === 400) {
             this.showloaderForPayment = false;
-            this.invalidPayment = "Invalid Amount, Payment Amount must be greater than 0.";
+            this.invalidPayment = 'Invalid Amount, Payment Amount must be greater than 0.';
           }
         }
       }
@@ -394,11 +395,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   public ngOnDestroy(): void {
-    if(this.OptionOutOfAutoPayUnsubscribe$ && this.OptionOutOfAutoPayUnsubscribe$.closed) {
+    if (this.OptionOutOfAutoPayUnsubscribe$ && this.OptionOutOfAutoPayUnsubscribe$.closed) {
       this.OptionOutOfAutoPayUnsubscribe$.unsubscribe();
     }
 
-    if(this.signUpAutoPayUnsubscribe$ && this.signUpAutoPayUnsubscribe$.closed) {
+    if (this.signUpAutoPayUnsubscribe$ && this.signUpAutoPayUnsubscribe$.closed) {
       this.signUpAutoPayUnsubscribe$.unsubscribe();
     }
 
@@ -406,7 +407,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.signOutUnsubscribe$.unsubscribe();
     }
 
-    if(this.getPaymentUnsubscribe$ && this.getPaymentUnsubscribe$.closed) {
+    if (this.getPaymentUnsubscribe$ && this.getPaymentUnsubscribe$.closed) {
       this.getPaymentUnsubscribe$.unsubscribe();
     }
 
@@ -414,7 +415,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.getPayMethodsUnsubscribe$.unsubscribe();
     }
 
-    if(this.getTenantInfoUnsubscribe$ && this.getTenantInfoUnsubscribe$.closed) {
+    if (this.getTenantInfoUnsubscribe$ && this.getTenantInfoUnsubscribe$.closed) {
       this.getTenantInfoUnsubscribe$.unsubscribe();
     }
   }
@@ -424,7 +425,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     if (this.payRentForm.invalid) {
       return;
     } else {
-      this.showloaderForPayment = true
+      this.showloaderForPayment = true;
       this.getPayment(this.payRentForm.value);
     }
   }

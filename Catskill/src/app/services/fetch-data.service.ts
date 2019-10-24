@@ -7,19 +7,6 @@ import { PayTypes, LstPayTypes } from '../models/payment';
 
 import { environment } from '../../environments/environment';
 
-
-const httpOptions = {
-  headers: new HttpHeaders({
-    'APIKey':  `${environment.APIKey}`,
-    'Content-Type': 'application/json'
-  })
-};
-
-// 'APIKey':  'MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-
-const baseUrl = environment.baseUrl;
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -35,23 +22,23 @@ export class FetchDataService {
 
   // private url = `https://simapi.syrasoft.com/1/api/facility/contactus`;
 
-  private url = `${baseUrl}facility/unittypes`;
+  private url = `facility/unittypes`;
 
-  private rentalPeriodUrl = `${baseUrl}facility/rentalperiods`;
+  private rentalPeriodUrl = `facility/rentalperiods`;
 
-  private payMethodUrl = `${baseUrl}facility/paymethods`;
+  private payMethodUrl = `facility/paymethods`;
 
   constructor(private http: HttpClient) { }
 
   getData(UnitTypes: UnitTypes): Observable<UnitTypes> {
-    return this.http.get<UnitTypes>(this.url, httpOptions);
+    return this.http.get<UnitTypes>(this.url);
   }
 
   getRentalPeriod(RentalPeriod: RentalPeriod): Observable<RentalPeriod> {
-    return this.http.get<RentalPeriod>(this.rentalPeriodUrl, httpOptions);
+    return this.http.get<RentalPeriod>(this.rentalPeriodUrl);
   }
 
   getPayMethods(PayTypes: PayTypes): Observable<PayTypes> {
-    return this.http.get<PayTypes>(this.payMethodUrl, httpOptions);
+    return this.http.get<PayTypes>(this.payMethodUrl);
   }
 }

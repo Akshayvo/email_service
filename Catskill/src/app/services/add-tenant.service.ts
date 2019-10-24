@@ -6,28 +6,18 @@ import { StrTempTenantToken} from '../models/tenant';
 
 import { environment } from '../../environments/environment';
 
-
-const httpOptions = {
-  headers: new HttpHeaders({
-    'APIKey':  `${environment.APIKey}`,
-    'Content-Type': 'application/json'
-  })
-};
-
-const baseUrl = environment.baseUrl;
-
 @Injectable({
   providedIn: 'root'
 })
 export class AddTenantService {
 
-  private url = `${baseUrl}tenant/add`;
+  private url = `tenant/add`;
 
 
   constructor(private http: HttpClient) { }
 
-  addTenant(StrTempTenantToken: StrTempTenantToken): Observable<StrTempTenantToken> {
-    return this.http.post<StrTempTenantToken>(this.url, StrTempTenantToken, httpOptions);
+  addTenant(strTempTenantToken: StrTempTenantToken): Observable<StrTempTenantToken> {
+    return this.http.post<StrTempTenantToken>(this.url, strTempTenantToken);
   }
 
 }
