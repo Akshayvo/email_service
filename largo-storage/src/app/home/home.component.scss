@@ -162,127 +162,7 @@ h2{
 }
 
 /* Extra small devices (phones, 600px and down) */
-// @media only screen and (min-width:1200px) and (max-height:750px) and (min-height:600px){
-//   .bottomHeading{
-//     margin-bottom: 5px !important;
-//     margin-top: 5px !important;
-//   }
-//   .jumbotron-bottom{
-//     height: 40vh;
-//   }
-  
-// }
-// @media only screen and (max-width:1199px) and (min-width:992px) {
-//   .jumbotron-top{
-//     .jumbotron{
-//   .jumbotron-skew-text {
-//     width: 485px;
-//     // position: absolute;
-//     top: 30%;
-//     // color: #fff;
-//       }
-//     }
-//   }
-// }
 
-// @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 664px) and (min-height: 481px) {
-//   .jumbotron-top{
-//     .jumbotron{
-//   .jumbotron-skew-text {
-//     width: 360px;
-//     // position: absolute;
-//     top: 22%;
-//     // color: #fff;
-//       }
-//     }
-//   }
- 
-  
-// }
-
-// @media only screen and (max-width: 991px) and (min-width: 768px) {
-//   .jumbotron-top{
-//     .jumbotron{
-//   .jumbotron-skew-text {
-//     width: 360px;
-//     // position: absolute;
-//     top: 22%;
-//     // color: #fff;
-//       }
-//     }
-//   }
-//   .jumbotron-container {
-//     .jumbotron-bottom {
-//       height: 22vh;
-//       .row{
-//         p {
-//         font-size: 0.9rem;
-//       }
-//     }
-//     }
-//   }
-// }
-
-// @media only screen and (max-width: 767px) and (min-width: 601px) {
-//   .jumbotron-top{
-//     .jumbotron{
-//   .jumbotron-skew-text {
-//     width: 265px;
-//     // position: absolute;
-//     top: 23%;
-//     // color: #fff;
-//       }
-//     }
-//   }
-//   .jumbotron-container {
-//     .jumbotron-bottom {
-//       height: 28vh;
-//       .bottomHeading{
-//         // margin-top: 5px !important;
-//         // margin-bottom: 5px !important;
-//       }
-//       .row{
-//         p {
-//         font-size: 0.8rem;
-//       }
-//     }
-//     }
-//   }
-// }
-
-// @media only screen and (max-width: 600px) {
-  
-//   .jumbotron-skew-style {
-//     display: none;   
-//   }
-//   .jumbotron-skew-text{
-//     display: none;
-//   }
-//   .jumbotron-container {
-//     .jumbotron-bottom {
-//       height: 28vh;
-//       .bottomHeading{
-//         margin: 2px !important;
-//       }
-//       .row{
-//         p {
-//         font-size: 0.8rem;
-//       }
-//     }
-//     }
-//   }
-//   }
-
-
-// @media only screen and (max-height: 480px) {
-//   .jumbotron-container {
-//     .jumbotron-bottom {
-//       p {
-//         font-size: 0.8rem;
-//       }
-//     }
-//   }
-// }
 @media only screen and (min-width: 1200px) {
   .jumbotron-top {
     .jumbotron {
@@ -613,14 +493,12 @@ h2{
   .disp {
     display: none;
   }
+  
   .jumbotron-bottom {
     display: flex;
     align-items: center;
     height: 200px !important;
-
-    h6 {
-      font-size: 0.8rem;
-    }
+   
   }
 
   .jumbotron-top {
@@ -773,7 +651,7 @@ h2{
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (min-width:469px) {
   .disp {
     display: none;
   }
@@ -813,17 +691,61 @@ h2{
         background: rgba(0, 0, 0, 0.6);
       }
     }
-
-
-    .jumbotron-bottom {
-      display: none;
-      height: 0;
-    }
+  
   }
 
   .map-responsive {
     iframe {
       height: 200px;
     }
+  }
+}
+@media only screen and (max-width:468px){
+  .disp {
+    display: none;
+  }
+  
+  .jumbotron-bottom {
+    display: flex;
+    align-items: center;
+    height: 300px !important;
+    .bottomHeading{
+      margin-bottom: 5px !important;
+    }
+    p{
+      font-size: 0.85rem !important;
+    }
+
+    
+  }
+  .jumbotron-top {
+    height: 95vh;
+
+    .button-width {
+      padding: 0 15px;
+      top: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .jumbotron {
+      height: 95vh;
+
+      .jumbotron-skew-style {
+        display: none;
+      }
+
+      .jumbotron-skew-text {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        top: auto;
+        height: 80px;
+        background: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+
+    
   }
 }
