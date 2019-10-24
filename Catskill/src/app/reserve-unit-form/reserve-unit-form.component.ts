@@ -409,6 +409,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.strConfirmation = strConfirmation.strConfirmation;
       this.showConfirmation = false;
        this.tokenExit = localStorage.getItem('strTenantToken');
+
+      this.existTempToken = localStorage.getItem('strTempTenantToken');
+
+      if(this.existTempToken) {
+        localStorage.removeItem('strTempTenantToken');
+      }
+
     }, (err: any) => {
       if (err.status === 403) {
         this.showConfirmation = false;
@@ -434,8 +441,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       //   localStorage.removeItem('strTenantToken');
       // } else {
       // }
-      localStorage.removeItem('strTempTenantToken');
-      this.router.navigate(['/reserve-unit']);
+      localStorage.removeItem('strTenantToken');
+
+      if(!(localStorage.getItem('strTenantToken'))) {
+        console.log('logged out');
+        this.router.navigate(['/']);
+      }
+     
     }, (err) => {
     }
     );
@@ -445,7 +457,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     if (window.localStorage) {
       if (localStorage.getItem('strTenantToken')) {
         this.existingTenantToken = localStorage.getItem('strTenantToken');
-      } else {
+      } 
+      else {
         this.existTempToken = localStorage.getItem('strTempTenantToken');
       }
     }
