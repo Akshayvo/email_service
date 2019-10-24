@@ -6,22 +6,22 @@
         <!-- &nbsp; &nbsp; &nbsp;<a (click)="navigate('/pay-rent/payment')">Make another payment</a> -->
       </div>
   </div>
-  
+
 
 
 <ng-template #other>
   <form [formGroup]="payRentForm" (ngSubmit)="onSubmit()" class="pt-3">
       <strong ><i  *ngIf="showloaderForPayment">Payment is under Processing...</i></strong>
       <strong><i *ngIf="invalidPayment">{{invalidPayment}}</i></strong>
-    <div 
-    [class.loaderForPayment]="showloaderForPayment" 
+    <div
+    [class.loaderForPayment]="showloaderForPayment"
       >
       </div>
       <div formGroupName="objPayment" class="pt-3">
         <div formGroupName="PayType" class="row">
           <div  class="form-group col-lg-5">
             <label for="lstPayTypes">Card Type*</label>&nbsp;
-            <select class="form-control" formControlName="PayTypeDescription" [id]="lstPayTypes?.PayTypeDescription" 
+            <select class="form-control" formControlName="PayTypeDescription" [id]="lstPayTypes?.PayTypeDescription"
             (change)="selectChangeHandler($event)"
             [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.PayType.controls.PayTypeDescription.errors }"
             >
@@ -52,10 +52,10 @@
                 <input type="radio" [value]="balance" id="1" (change)="handleChange($event)" formControlName="PaymentAmount"  [checked]="balance != null">
                 <span class="loader" *ngIf="balance == null"></span>
                 <!-- *ngIf="balance == null" -->
-                <span>Balance Due</span> &nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance}}) </span> 
+                <span>Balance Due</span> &nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance}}) </span>
                 <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance}}</ng-template>
               </label><br/>
-              
+
               <label>&nbsp;
                 <input type="radio" [value]="otherValue" id="2" (change)="handleChange($event)" formControlName="PaymentAmount" >
                   <span>Other Amount</span>
@@ -71,7 +71,7 @@
               <button type="button" class="btn  btn-link ml-4" data-toggle="modal" data-target="#exampleModalLong">
                 Balance Detail
               </button>
-            
+
             <!-- Modal -->
             <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
               <div class="modal-dialog" role="document">
@@ -84,7 +84,7 @@
                   </div>
                   <div class="modal-body">
                     <div>
-                      <span>Balance</span> &nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance}}) </span> 
+                      <span>Balance</span> &nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance}}) </span>
                       <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance}}</ng-template>
                     </div>
                     <div>
@@ -95,7 +95,7 @@
                     </div>
                     <div  class="py-3"><strong>Detail:</strong></div>
                     <div class="table">
-                      <table> 
+                      <table>
                         <thead>
                             <tr >
                               <th colspan="3" class="pr-2 py-1" >From Date</th>
@@ -131,9 +131,9 @@
                         </tbody>
                       </table>
                     </div>
-  
-                    <!-- <div *ngFor="let UnpaidAR of UnpaidAR"> 
-                      
+
+                    <!-- <div *ngFor="let UnpaidAR of UnpaidAR">
+
                       {{UnpaidAR.FromDate}}
                     </div> -->
                   </div>
@@ -142,7 +142,7 @@
             </div>
           </span>
           </div>
-    
+
 
           <div class="row"  [class.display-surcharge]="surcharge <= 0 || !surcharge">
             <div class="col-lg-5 form-group readonly-form-control">
@@ -150,20 +150,20 @@
               <input class="form-control " readonly type="text" [value]="surcharge"/>
             </div>
           </div>
-    
+
           <div class="row"   [class.display-surcharge]="surcharge <= 0 || !surcharge">
             <div class="col-lg-5 form-group readonly-form-control">
               <label>Amount to pay</label>&nbsp;
               <input class="form-control" readonly type="text" [value]="AmountToPay" formControlName="PaymentAmount"/>
             </div>
           </div>
-    
+
 
 
       <div class="form-group row">
         <div class="col-lg-5">
           <label>Cardholder's Name*</label>&nbsp;
-          <input type="text" class="form-control" formControlName="CCAccountName" 
+          <input type="text" class="form-control" formControlName="CCAccountName"
           [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountName.errors }"
           />
           <div *ngIf="submitted && f.objPayment.controls.CCAccountName.errors" class="invalid-feedback">
@@ -174,12 +174,12 @@
         </div>
       </div>
 
-     
+
 
       <div class="row">
         <div class="form-group col-lg-5">
           <label>Credit Card Number*</label>&nbsp;
-          <input  class="form-control" type="text" formControlName="CCAccountNumber" 
+          <input  class="form-control" type="text" formControlName="CCAccountNumber"
           [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountNumber.errors }"
           />
           <div *ngIf="submitted && f.objPayment.controls.CCAccountNumber.errors" class="invalid-feedback">
@@ -189,21 +189,21 @@
           </div>
         </div>
       </div>
-  
-  
-  
+
+
+
         <div class="row ">
           <div class="form-group col-lg-12">
             <label>Expiration Date*</label>&nbsp;
               <div  class="row display-select">
                 <div class="col-lg-2 col-md-3 col-sm-3 col-5">
-                  <select  class="form-control custom-style " formControlName="CCExpirationMonth" [id]="month?.id" 
+                  <select  class="form-control custom-style " formControlName="CCExpirationMonth" [id]="month?.id"
                   [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCExpirationMonth.errors }">
-  
+
                       <option *ngFor="let month of month"
                       [value]="month?.id"
                       >
-                      {{month.label}}   
+                      {{month.label}}
                       </option>
                   </select>
                   <div *ngIf="submitted && f.objPayment.controls.CCExpirationMonth.errors" class="invalid-feedback">
@@ -214,13 +214,13 @@
                 </div>
                 &nbsp;
                 <div class="col-lg-2 col-md-3 col-sm-3 col-5">
-                  <select class="form-control custom-style" formControlName="CCExpirationYear" [id]="year" 
+                  <select class="form-control custom-style" formControlName="CCExpirationYear" [id]="year"
                   [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCExpirationYear.errors }">
                   >
                       <option *ngFor="let year of year"
                       [value]="year.id"
                       >
-                      {{year.label}}   
+                      {{year.label}}
                       </option>
                   </select>
                   <div *ngIf="submitted && f.objPayment.controls.CCExpirationYear.errors" class="invalid-feedback">
@@ -232,7 +232,7 @@
               </div>
             </div>
         </div>
-  
+
         <div class="row">
           <div class="form-group col-lg-5">
             <label>CVV2</label>&nbsp;
@@ -243,7 +243,7 @@
         <div class="row">
           <div class="form-group col-lg-5">
             <label>Cardholder's Address*</label>&nbsp;
-            <input type="text" class="form-control" formControlName="CCAccountBillingAddress" 
+            <input type="text" class="form-control" formControlName="CCAccountBillingAddress"
             [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountBillingAddress.errors }"
             />
             <div *ngIf="submitted && f.objPayment.controls.CCAccountBillingAddress.errors" class="invalid-feedback">
@@ -253,11 +253,11 @@
             </div>
           </div>
         </div>
-      
+
         <div class="row">
           <div class="form-group col-lg-5">
             <label>Zip Code*</label>&nbsp;
-            <input type="text" class="form-control" formControlName="CCAccountZIP" 
+            <input type="text" class="form-control" formControlName="CCAccountZIP"
             [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountZIP.errors }"
             />
             <div *ngIf="submitted && f.objPayment.controls.CCAccountZIP.errors" class="invalid-feedback">
@@ -279,16 +279,14 @@
           <button type="submit" class="btn btn-primary">Make a Payment</button>
         </div>
       </div>
-  
+
   </form>
 </ng-template>
 
-  
+
   <div class="form-group row button-style mt-4">
     <div class="col-lg-6">
       <button (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
     </div>
-  </div>  
+  </div>
 </div>
-
-<pre>{{payRentForm.value | json}}</pre>
