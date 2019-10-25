@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-// import { viewRates } from '../data/view-rates';
+import { viewrates } from '../data/view-rates';
 import { MetaService } from '../services/link.service';
 // import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { FetchDataService } from '../services/fetch-data.service';
@@ -54,12 +54,12 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     window.scrollTo(0, 0);
-    // this.fetchViewRates();
+    this.fetchViewRates();
     this.getData();
   }
-  // public fetchViewRates() {
-  //   this.viewRates = viewRates;
-  // }
+  public fetchViewRates() {
+    this.viewRates = viewrates;
+  }
   /**
    *
    * @param event

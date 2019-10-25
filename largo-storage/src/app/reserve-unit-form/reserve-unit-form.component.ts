@@ -27,6 +27,7 @@ import { Subscription } from 'rxjs';
   selector: 'app-reserve-unit-form',
   templateUrl: './reserve-unit-form.component.html',
   styleUrls: ['./reserve-unit-form.component.scss'],
+  providers:[DatePipe],
 })
 
 export class ReserveUnitFormComponent implements OnInit, OnDestroy {

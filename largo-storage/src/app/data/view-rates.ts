@@ -1,6 +1,8 @@
 export const viewrates = [
     {
-        p: ``,
+        p: `The wait is almost over! Rates starting at just $21.75 per month!
+        Locally owned and operated. We believe in building long term relationships 
+        and treating our customers like customers.`,
     },
    
 ];
