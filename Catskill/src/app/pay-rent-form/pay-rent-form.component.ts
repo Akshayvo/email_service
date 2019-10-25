@@ -167,8 +167,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
 
     if ( this.showInput) {
-      console.log('other value is', this.otherValue);
-      console.log('can\'t calculate surcharge');
       if (this.customOtherValue) {
         this.surchargeService.getAmt(this.customOtherValue);
         this.getSurCharge();
@@ -192,8 +190,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.showInput = false;
 
     }
-    console.log(this.showInput);
-
   }
 
   onKeyUp(e: any) {
@@ -215,7 +211,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         console.log(tenantData);
         if (tenantData) {
           const { Tenant } = tenantData;
-          console.log(Tenant);
           this.balance = Tenant.Balance;
           this.surchargeService.getAmt(this.balance);
           this.surchargeService.getIdPaytype(this.paytypeid);
@@ -266,7 +261,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           localStorage.removeItem('strTenantToken');
           this.router.navigate(['/pay-rent/login']);
           this.sessionExpire = 'Session Expired. Please Login for completing the payment.';
-          console.log('session expired.');
         }
       });
   }
@@ -300,21 +294,16 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.surcharge = 0;
     this.surchargeService.getSurCharge()
     .subscribe(result => {
-      console.log(result.decTotalAmount);
       this.AmountToPay = result.decTotalAmount;
 
       if (this.showInput) {
         // console.log("other value from surcharge", this.customOtherValue);
        if (this.customOtherValue) {
-         this.surcharge = result.decTotalAmount - this.customOtherValue;
-       }
-      } else {
-        this.surcharge = result.decTotalAmount - this.balance;
-      }
-      console.log('surcharge is', this.surcharge);
-      // this.balance = this.AmountToPay;
-      // console.log("balance after surcharge is", this.balance);
-
+          this.surcharge = result.decTotalAmount - this.customOtherValue;
+        }
+        } else {
+          this.surcharge = result.decTotalAmount - this.balance;
+        }
       }, (err: any) => {
         if (err.status === 400) {
           this.showError = true;
@@ -329,7 +318,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
       this.signUpAutoPay(this.signUp);
     } else {
-      console.log('sign off');
       this.OptionOutOfAutoPay(this.signUp);
     }
     }
