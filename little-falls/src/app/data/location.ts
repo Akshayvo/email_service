@@ -30,7 +30,7 @@ export const tabs = [
 
 export const headingLocation1 = `Little Falls Mini Storage - Little Falls`;
 
-export const headingLocation2 = `Highway 27 Mini Storage`;
+export const headingLocation2 = `Highway 27 Mini Storage - Pierz`;
 
 
 export const unitSizerLocation1 = [

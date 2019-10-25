@@ -43,7 +43,7 @@ export class LocationComponent implements OnInit {
              content: `Highway 27 Mini Storage offers 24 hour access to a variety of unit sizes,
              and is located conveniently on Route 27 in Pierz, Minnesota!`
            });
-           this.titleService.setTitle('Affordable Storage Units in Pierz | Highway 27 Mini Storage');
+           this.titleService.setTitle('Affordable Storage Units in Pierz | Highway 27 Mini Storage - Pierz');
     }
   }
 

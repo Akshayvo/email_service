@@ -12,7 +12,7 @@ export class LocationService {
     },
     {
       id: 2,
-      name: 'HIghway 27 Mini Storage',
+      name: 'Highway 27 Mini Storage - Pierz',
     },
  ];
  private locationSource = new BehaviorSubject(this.places[0].id);

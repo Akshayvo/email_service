@@ -16,7 +16,7 @@ export const navLinks = [
               },
               {
                   id: '2',
-                  label: 'Highway 27 Mini Storage',
+                  label: 'Highway 27 Mini Storage - Pierz',
                   path: '/location/highway-27-mini-storage',
               },
         ]
