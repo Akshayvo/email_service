@@ -21,7 +21,7 @@ export class PaymentComponent implements OnInit {
       content: `Pay your rent online with our easy to use tenant portal. Follow the instructions
       on the page or call our office to activate your account.`
     });
-    this.titleService.setTitle('Pay Rent | Store & Go Self Storage');
+    this.titleService.setTitle('Pay Rent | Stor N Lok Self Storage');
   }
 
   ngOnInit() {

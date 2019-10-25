@@ -36,9 +36,9 @@ export class HomeComponent implements OnInit {
     this.meta.addTag({
       name: 'description',
       content: `If you're looking for conveniently located, affordable storage units, and friendly service,
-      Store & Go has everything you're looking for!`
+      Stor N Lok has everything you're looking for!`
     });
-    this.titleService.setTitle('Affordable Storage in Sacramento | Store & Go Self Storage');
+    this.titleService.setTitle('Affordable Storage in Sacramento | Stor N Lok Self Storage');
     this.metaService.createCanonicalURL();
   }
 

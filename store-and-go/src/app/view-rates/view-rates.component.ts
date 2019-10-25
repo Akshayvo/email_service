@@ -22,7 +22,7 @@ export class ViewRatesComponent implements OnInit {
       name: 'description',
       content: `Take a moment to review our extremely affordable rates, and start your reservation today! `
     });
-    this.titleService.setTitle('View Rates | Store & Go Self Storage');
+    this.titleService.setTitle('View Rates | Stor N Lok Self Storage');
     this.MetaService.createCanonicalURL();
 
   }

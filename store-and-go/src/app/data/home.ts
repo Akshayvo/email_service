@@ -19,7 +19,7 @@ export const featuresList = [
 
 export const aboutUs = [
     {
-        p: `Store & Go is the ideal solution for storage users seeking conveniently located,
+        p: `Stor N Lok is the ideal solution for storage users seeking conveniently located,
         affordable self storage units in the Sacramento, Stockton Blvd, and Elk Grove communities.
         Our fully-fenced, well-lit facility is designed to make you feel safe while loading, and
         unloading your storage unit.`,
@@ -31,7 +31,7 @@ export const aboutUs = [
         `,
     },
     {
-        p: `Store & Go offers many conveniences to make your stay with us a breeze! You may reserve your
+        p: `Stor N Lok offers many conveniences to make your stay with us a breeze! You may reserve your
         unit online, 24 hours a day, 7 days a week! Our online tenant portal also allows you to pay your
         bill regardless of whether you're available during office hours!`,
     }
@@ -39,7 +39,7 @@ export const aboutUs = [
 
 export const gettingStarted = `Whether you're downsizing your accommodations or expanding your business,
 we have the storage space you need at the prices you're looking for! Start de-cluttering your life today,
-with Store & Go!`;
+with Stor N Lok!`;
 
 export const feature = [
     {
@@ -72,7 +72,7 @@ export const jumbotron = [
     {
         h1: `Affordable Storage in Sacramento`,
         blurb: `Whether you're a business searching for extra space for inventory without paying commercial real estate
-        rates, or if you're a residential storage user seeking extra elbow room around the house, Store & Go has you
+        rates, or if you're a residential storage user seeking extra elbow room around the house, Stor N Lok has you
         covered! Our reasonable rates and convenient location make us the ideal solution!`,
     }
 ];

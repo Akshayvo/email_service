@@ -9,7 +9,7 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Store & Go Self Storage';
+  title = 'Stor N Lok Self Storage';
   flag: boolean;
   public offsets: number[];
   x: any;

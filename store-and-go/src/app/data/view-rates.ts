@@ -1,6 +1,6 @@
 export const viewRates = [
   {
-    p: `Store & Go is under new management, and is ready to begin serving your self storage needs!
+    p: `Stor N Lok is under new management, and is ready to begin serving your self storage needs!
 		It doesn't matter if you're a residential user looking for a little extra space around the house,
 		or if you're a growing business tired of paying commercial real estate rates for excess inventory, we can help!`,
 	},
