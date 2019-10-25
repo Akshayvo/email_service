@@ -57,19 +57,19 @@ export class Tenant {
   LastPaymentAmount: number;
   UnpaidAR: UnpaidAR;
 
-  constructor(Balance: number, 
-    Name: string, 
+  constructor(Balance: number,
+    Name: string,
     IsAutoPaymentsEnabled: boolean,
     LastPaymentOn: Date,
     LastPaymentAmount: number,
-    UnpaidAR: UnpaidAR) {
+    unpaidAR: UnpaidAR) {
 
     this.Balance = Balance;
     this.Name = Name;
     this.IsAutoPaymentsEnabled = IsAutoPaymentsEnabled;
     this.LastPaymentOn = LastPaymentOn;
     this.LastPaymentAmount = LastPaymentAmount;
-    this.UnpaidAR = UnpaidAR;
+    this.UnpaidAR = unpaidAR;
   }
 }
 

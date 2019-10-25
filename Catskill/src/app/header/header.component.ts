@@ -15,13 +15,13 @@ export class HeaderComponent implements OnInit {
   navLinks: any;
   socialLinks: any;
   navbarCollapsed = true;
-  imagetype:any;
-  imageBaseUrl:any;
+  imagetype: any;
+  imageBaseUrl: any;
 
   constructor(
     private router: Router,
-    private uaParserService:UaParserService,
-  ) { 
+    private uaParserService: UaParserService,
+  ) {
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
   }

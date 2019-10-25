@@ -25,11 +25,11 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   DescriptionVR: string;
   MonthlyRateVR: number;
 
- private isUnsubscribe$: Subscription;
-
   openComponent = false;
-  imagetype:any;
-  imageBaseUrl:any;
+  imagetype: any;
+  imageBaseUrl: any;
+
+ private isUnsubscribe$: Subscription;
 
   constructor(
     private titleService: Title,
@@ -37,7 +37,6 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private metaService: MetaService,
     // private http: HttpClient,
     private fetchDataService: FetchDataService,
-    private MetaService: MetaService,
     private uaParserService: UaParserService,
   ) {
     this.meta.addTag({
@@ -47,7 +46,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     });
     this.titleService.setTitle('Affordable Self Storage Near Catskill, NY, 12414 | Catskill Self Storage');
     this.metaService.createCanonicalURL();
-    this.MetaService.createCanonicalURL();
+    this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
 
@@ -56,31 +55,31 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.fetchViewRates();
-    this.getData(this.unitTypes);
+    this.getData();
   }
   public fetchViewRates() {
     this.viewRates = viewRates;
   }
   /**
-   * 
-   * @param event 
-   * @param event1 
+   *
+   * @param event
+   * @param event1
    */
 
   handleClick(event: Event, event1: Event) {
     this.openComponent = true;
     this.DescriptionVR = JSON.parse(JSON.stringify(event));
     this.MonthlyRateVR = parseFloat(JSON.stringify(event1));
-    
+
     // console.log(event, event1, this.DescriptionVR, this.MonthlyRateVR);
-    
+
   }
 
-  getData(UnitTypes) {
-  this.isUnsubscribe$ = this.fetchDataService.getData(UnitTypes)
-    .subscribe(UnitTypes => {
+  getData() {
+  this.isUnsubscribe$ = this.fetchDataService.getData()
+    .subscribe(unitTypesResponse => {
       this.showTable =  true;
-      this.LstUnitTypes = UnitTypes.lstUnitTypes;
+      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
     });
   }
 

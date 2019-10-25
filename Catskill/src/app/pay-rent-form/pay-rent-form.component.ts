@@ -130,7 +130,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.getPayMethods(this.payTypes);
+    this.getPayMethods();
     this.fetchMonth();
     this.getTenantInfo(this.tenant);
 
@@ -180,16 +180,12 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
 
-  handleChange(e) {
-
-    console.log('handle change', this.count + 1);
-
+  handleChange(e: any) {
     if (e.target.id === '2') {
       this.showInput = true;
       this.id = e.target.id;
       this.surcharge = 0;
     } else {
-      console.log('balance after handle click', this.balance);
       // this.surcharge = 0;
       this.surchargeService.getAmt(this.balance);
       this.getSurCharge();
@@ -200,8 +196,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   }
 
-  onKeyUp(e) {
-    console.log(' onchange is working, searchValue', this.customOtherValue, this.otherValue);
+  onKeyUp(e: any) {
     if (e.target.value) {
       this.customOtherValue = e.target.value;
       this.surchargeService.getAmt(e.target.value);
@@ -276,10 +271,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       });
   }
 
-  getPayMethods(PayTypes) {
-   this.getPayMethodsUnsubscribe$ = this.fetchDataService.getPayMethods(PayTypes)
-      .subscribe(PayTypes => {
-        this.lstPayTypes = PayTypes.lstPayTypes;
+  getPayMethods() {
+   this.getPayMethodsUnsubscribe$ = this.fetchDataService.getPayMethods()
+      .subscribe(payTypesResponse => {
+        this.lstPayTypes = payTypesResponse.lstPayTypes;
         const defaultDescription = this.lstPayTypes[1].PayTypeDescription;
         const defaultPayTypeID = this.lstPayTypes[1].PayTypeID;
         this.paytypeid = this.lstPayTypes[1].PayTypeID;
@@ -329,7 +324,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     );
   }
 
-  getPayment(paymentData) {
+  getPayment(paymentData: any) {
     if (this.toggleSignUp === true) {
       if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
       this.signUpAutoPay(this.signUp);
@@ -340,12 +335,12 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     }
     this.invalidPayment = null,
    this.getPaymentUnsubscribe$ = this.paymentService.getPayment(paymentData)
-      .subscribe(paymentData => {
+      .subscribe(paymentDataResponse => {
         this.showloaderForPayment = false;
-        this.PaymentAmount = paymentData.PayTypeForResult.PaymentAmount;
-        this.CCApprovalCode = paymentData.PayTypeForResult.CCApprovalCode;
-        console.log(paymentData.intErrorCode, 'error code for payment');
-        if ( paymentData.intErrorCode === 1 ) {
+        this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmount;
+        this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
+        console.log(paymentDataResponse.intErrorCode, 'error code for payment');
+        if ( paymentDataResponse.intErrorCode === 1 ) {
           this.showSuccessPayment = true;
         } else {
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
@@ -370,15 +365,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       }
       );
   }
-
-  // toggleSignUpForAutoPay(e: any) {
-  //   if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
-  //     this.signUpAutoPay(this.signUp);
-  //   } else {
-  //     console.log('sign off');
-  //     this.OptionOutOfAutoPay(this.signUp);
-  //   }
-  // }
 
   signUpAutoPay(signUp: any) {
   this.signUpAutoPayUnsubscribe$ =  this.tenantInfoService.signUpAutoPay(signUp)

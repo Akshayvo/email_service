@@ -36,7 +36,7 @@ export class Payment {
     this.CCAccountBillingAddress = CCAccountBillingAddress;
     this.CCAccountZIP = CCAccountZIP;
     this.CCExpirationMonth = CCExpirationMonth;
-    this.CCExpirationYear = CCExpirationYear
+    this.CCExpirationYear = CCExpirationYear;
     this.SignUpForAutoPay = SignUpForAutoPay;
     this.PaymentAmount = PaymentAmount;
     // this.payTypes = payTypes;

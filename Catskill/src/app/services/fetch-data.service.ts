@@ -30,15 +30,15 @@ export class FetchDataService {
 
   constructor(private http: HttpClient) { }
 
-  getData(UnitTypes: UnitTypes): Observable<UnitTypes> {
+  getData(): Observable<UnitTypes> {
     return this.http.get<UnitTypes>(this.url);
   }
 
-  getRentalPeriod(RentalPeriod: RentalPeriod): Observable<RentalPeriod> {
+  getRentalPeriod(): Observable<RentalPeriod> {
     return this.http.get<RentalPeriod>(this.rentalPeriodUrl);
   }
 
-  getPayMethods(PayTypes: PayTypes): Observable<PayTypes> {
+  getPayMethods(): Observable<PayTypes> {
     return this.http.get<PayTypes>(this.payMethodUrl);
   }
 }

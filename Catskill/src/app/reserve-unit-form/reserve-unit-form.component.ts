@@ -115,16 +115,29 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
 
   config = {
-    displayKey: 'description', // if objects array passed which key to be displayed defaults to description
-    search: true, // true/false for the search functionlity defaults to false,
-    height: '140px', // height of the list so that if there are more no of items it can show a scroll defaults to auto. With auto height scroll will never appear
-    placeholder: 'Select State', // text to be displayed when no item is selected defaults to Select,
-    customComparator: () => {}, // a custom function using which user wants to sort the items. default is undefined and Array.sort() will be used in that case,
-    // limitTo: this.options.length, // a number thats limits the no of options displayed in the UI similar to angular's limitTo pipe
-    moreText: 'more', // text to be displayed whenmore than one items are selected like Option 1 + 5 more
-    noResultsFound: 'No results found!', // text to be displayed when no items are found while searching
-    searchPlaceholder: 'Search', // label thats displayed in search input,
-    searchOnKey: 'name', // key on which search should be performed this will be selective search. if undefined this will be extensive search on all keys
+    // if objects array passed which key to be displayed defaults to description
+    displayKey: 'description',
+    // true/false for the search functionlity defaults to false,
+    search: true,
+    // height of the list so that if there are more no of items
+    // it can show a scroll defaults to auto. With auto height scroll will never appear
+    height: '140px',
+    // text to be displayed when no item is selected defaults to Select,
+    placeholder: 'Select State',
+    // a custom function using which user wants to sort the items.
+    // default is undefined and Array.sort() will be used in that case,
+    customComparator: () => {},
+    // limitTo: this.options.length,
+    // a number thats limits the no of options displayed in the UI similar to angular's limitTo pipe
+    // text to be displayed whenmore than one items are selected like Option 1 + 5 more
+    moreText: 'more',
+    // text to be displayed when no items are found while searching
+    noResultsFound: 'No results found!',
+    // label thats displayed in search input,
+    searchPlaceholder: 'Search',
+    // key on which search should be performed this will
+    // be selective search. if undefined this will be extensive search on all keys
+    searchOnKey: 'name',
   };
 
   private  getLeadDaysUnsubscribe$: Subscription;
@@ -153,7 +166,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         FirstName: ['', Validators.required],
         LastName: ['', Validators.required],
         Phone: ['', [Validators.required,
-        Validators.pattern('^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$')
+        Validators.pattern(
+          '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
+          )
       ]],
         EmailAddress: ['', [Validators.required, Validators.email]],
         AddressLine1: ['', Validators.required],
@@ -191,8 +206,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.getData(this.unitTypes);
-    this.getRentalPeriod(this.rentalPeriod);
+    this.getData();
+    this.getRentalPeriod();
     this.getLeadDays(this.data);
 // console.log(this.intLeadDaysFrom, this.intLeadDaysTo);
 
@@ -207,7 +222,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     // this.maxDay = this.To.getDate();
     if (window.localStorage) {
       if (localStorage.getItem('strTenantToken')) {
-        this.getTenantInfo(this.tenant);
+        this.getTenantInfo();
       }
     }
 
@@ -285,7 +300,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     });
   }
 
-  getLeadDays(data) {
+  getLeadDays(data: any) {
   this.getLeadDaysUnsubscribe$ =  this.leadDaysService.getLeadDays(data)
     .subscribe(result => {
       this.intLeadDaysFrom = result.intLeadDaysFrom;
@@ -300,7 +315,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
 
 
-  getTenantInfo(tenant) {
+  getTenantInfo() {
   this.getTenantInfoUnsubscribe$ =  this.tenantInfoService.getTenantInfo()
       .subscribe(tenantData => {
         if (tenantData) {
@@ -332,13 +347,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
       this.reserveUnitForm.controls.objTenant.valueChanges.subscribe(data => {
         this.objTenantCopy = data;
-        console.log('Form changes', data);
-        console.log('new object', this.objTenantCopy);
-        console.log('initial values', tempObject);
-        console.log(JSON.stringify(this.objTenantCopy) === JSON.stringify(tempObject));
         this.isValueUpdated = JSON.stringify(this.objTenantCopy) === JSON.stringify(tempObject);
-        console.log(this.isValueUpdated);
-
       }
       );
         }
@@ -350,13 +359,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       });
   }
 
-  getData(UnitTypes) {
-   this.getDataUnsubscribe$ = this.fetchDataService.getData(UnitTypes)
-      .subscribe(UnitTypes => {
-      this.lstUnitTypes = UnitTypes.lstUnitTypes;
-      this.defaultValue = UnitTypes.lstUnitTypes[0].MonthlyRate;
-      const defaultUnitTypeValue = UnitTypes.lstUnitTypes[0].Description;
-      this.MoveIn.intUnitTypeID = JSON.stringify(UnitTypes.lstUnitTypes[0].UnitTypeID);
+  getData() {
+   this.getDataUnsubscribe$ = this.fetchDataService.getData()
+      .subscribe(unitTypesResponse => {
+      this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
+      this.defaultValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
+      const defaultUnitTypeValue = unitTypesResponse.lstUnitTypes[0].Description;
+      this.MoveIn.intUnitTypeID = JSON.stringify(unitTypesResponse.lstUnitTypes[0].UnitTypeID);
 
       if (!this.DescriptionVR && !this.MonthlyRateVR) {
         this.reserveUnitForm.patchValue({
@@ -370,11 +379,11 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     });
   }
 
-  getRentalPeriod(RentalPeriod) {
-   this.getRentalPeriodUnsubscribe$ = this.fetchDataService.getRentalPeriod(RentalPeriod)
-      .subscribe(RentalPeriod => {
-        this.LstRentalPeriods = RentalPeriod.lstRentalPeriods;
-        const defaultPeriodDescription = RentalPeriod.lstRentalPeriods[0].PeriodDescription;
+  getRentalPeriod() {
+   this.getRentalPeriodUnsubscribe$ = this.fetchDataService.getRentalPeriod()
+      .subscribe(rentalPeriodResponse => {
+        this.LstRentalPeriods = rentalPeriodResponse.lstRentalPeriods;
+        const defaultPeriodDescription = rentalPeriodResponse.lstRentalPeriods[0].PeriodDescription;
         this.reserveUnitForm.patchValue({
           lstRentalPeriods: ([{
             PeriodDescription: defaultPeriodDescription,
@@ -405,14 +414,14 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   makeAReservation(strConfirmation: any) {
   this.makeAReservationUnsubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
-    .subscribe(strConfirmation => {
-      this.strConfirmation = strConfirmation.strConfirmation;
+    .subscribe(strConfirmationResponse => {
+      this.strConfirmation = strConfirmationResponse.strConfirmation;
       this.showConfirmation = false;
        this.tokenExit = localStorage.getItem('strTenantToken');
 
       this.existTempToken = localStorage.getItem('strTempTenantToken');
 
-      if(this.existTempToken) {
+      if (this.existTempToken) {
         localStorage.removeItem('strTempTenantToken');
       }
 
@@ -435,19 +444,11 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   signOut(logOut: any) {
     this.signOutService.signOut(logOut)
     .subscribe( result => {
-      // localStorage.removeItem('strTenantToken');
-      // localStorage.removeItem('strTempTenantToken');
-      // if (localStorage.getItem('strTenantToken')) {
-      //   localStorage.removeItem('strTenantToken');
-      // } else {
-      // }
       localStorage.removeItem('strTenantToken');
-
-      if(!(localStorage.getItem('strTenantToken'))) {
+      if (!(localStorage.getItem('strTenantToken'))) {
         console.log('logged out');
         this.router.navigate(['/']);
       }
-     
     }, (err) => {
     }
     );
@@ -457,8 +458,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     if (window.localStorage) {
       if (localStorage.getItem('strTenantToken')) {
         this.existingTenantToken = localStorage.getItem('strTenantToken');
-      } 
-      else {
+      } else {
         this.existTempToken = localStorage.getItem('strTempTenantToken');
       }
     }
