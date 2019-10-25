@@ -12,10 +12,12 @@ import { LoginComponent } from './login/login.component';
 import { ForgotPassword } from './models/auth';
 import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ReserveComponent } from './reserve/reserve.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
   { path: '', component: HomeComponent },
+  { path: 'reserve-unit', component: ReserveComponent },
   // { path: 'unit-sizer', component: UnitSizerComponent },
   { path: 'storageTips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
