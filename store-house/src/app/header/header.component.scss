@@ -5,6 +5,19 @@ a {
   cursor: pointer;
 }
 
+.social {
+  text-align: right !important;
+
+  a {
+    color: $secondary;
+    text-decoration: none;
+  }
+}
+
+.social:hover {
+  color: $primary;
+}
+
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
   
@@ -45,6 +58,14 @@ a {
 .display {
   display: block;
 }
+.bg-secondary{
+  background-color: $primary !important;
+  color:#fff;
+  font-size: 0.82rem;
+  a{
+    color: #fff;
+  }
+}
 
 .navbar-toggler:focus,
 .navbar-toggler:hover {
@@ -70,7 +91,9 @@ a {
       width: fit-content;
     }
   }
-
+  .display{
+    display:none;
+  }
   .nav-link {
     padding: 18px;
   }
