@@ -20,9 +20,9 @@ export const contact = [
     },
     {
         id: 3,
-        redirect: 'tel:6107610300',
+        redirect: 'tel:8564687747',
         label: 'Phone: ',
-        data: '(610) 761-0300',
+        data: '(856) 468-7747',
         class: 'fas fa-phone mr-2 iconColor',
     },
     
