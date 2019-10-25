@@ -84,7 +84,7 @@ import { PortalModule } from '@angular/cdk/portal';
     ],
 //   providers: [
 //     {
-//         provide: MATERIAL_COMPATIBILITY_MODE, 
+//         provide: MATERIAL_COMPATIBILITY_MODE,
 //         useValue: true
 //     },
 //   ],

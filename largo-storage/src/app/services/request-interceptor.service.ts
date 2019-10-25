@@ -14,7 +14,6 @@ export class RequestInterceptorService implements HttpInterceptor {
     const tenantToken = localStorage.getItem('strTenantToken');
     const token = tenantToken || localStorage.getItem('strTempTenantToken');
     const baseUrl = environment.baseUrl;
-    console.log('Base Url:'+baseUrl);
     const emailUrl = environment.emailBaseUrl;
     // Modify Request, by keeping reference to previous
     const modifiedAPIKey = request.clone({

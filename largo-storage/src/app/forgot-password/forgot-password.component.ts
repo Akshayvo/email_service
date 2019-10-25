@@ -53,7 +53,7 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
   }
 
   public ngOnDestroy(): void  {
-    if(this.forgotPasswordUnsubscribe$ && !this.forgotPasswordUnsubscribe$.closed) {
+    if (this.forgotPasswordUnsubscribe$ && !this.forgotPasswordUnsubscribe$.closed) {
       this.forgotPasswordUnsubscribe$.unsubscribe();
     }
   }

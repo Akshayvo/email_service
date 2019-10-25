@@ -26,8 +26,6 @@ index: string;
 stateString: string;
 MoveInString: string;
 
-exampleChild: string = "hello angular 8"
-
 constructor(
   private datePipe: DatePipe,
 
@@ -36,26 +34,26 @@ constructor(
 
 addTenant(event: any) {
   this.childEvent.emit();
-  
+
 }
 
 
   ngOnInit() {
     this.index = this.option.findIndex(x => x.id === this.reserveUnitForm.value.objTenant.State);
     this.stateString = this.option[this.index].description;
-    this.MoveInString = this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, "yyyy-MM-dd");   
+    this.MoveInString = this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, 'yyyy-MM-dd');
   }
 
   onSubmit() {
     this.submitted = true;
     // this.showConfirmation = true;
     if (this.reserveUnitForm.invalid) {
-      console.log("error from confirmation")
+      console.log('error from confirmation');
 
       return;
     } else {
       this.addTenant(this.reserveUnitForm.value);
-      console.log("add tenanat worked from confirmation");
+      console.log('add tenanat worked from confirmation');
     }
     console.log(this.reserveUnitForm.value);
   }

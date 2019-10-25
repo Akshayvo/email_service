@@ -4,10 +4,8 @@ import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
 
 import { Subscription } from 'rxjs';
-import { TenantInfo, Tenant} from '../models/tenant';
-import { TenantInfoService } from '../services/tenant-info.service';
+import { TenantInfo } from '../models/tenant';
 
-import { environment } from '../../environments/environment';
 
 
 @Injectable()
@@ -49,7 +47,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   ) {
 
-    
+
   }
 
   ngOnInit() {
@@ -58,15 +56,12 @@ export class LoginComponent implements OnInit, OnDestroy {
       strPassword: ['', Validators.required],
       intAuthMethod: 1
     });
-
-    if(window.localStorage) {
+    if (window.localStorage) {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
-        this.router.navigate(['/pay-rent/payment']);   
+        this.router.navigate(['/pay-rent/payment']);
        }
     }
-
-   
   }
 
   get f() { return this.loginForm.controls; }
@@ -121,7 +116,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
 
 public ngOnDestroy(): void {
-  if(this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
+  if (this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
     this.authUnsubscribe$.unsubscribe();
   }
 }
@@ -132,7 +127,7 @@ public ngOnDestroy(): void {
     if (this.loginForm.invalid) {
       return;
     } else {
-      if(window.localStorage) {
+      if (window.localStorage) {
         localStorage.removeItem('strTempTenantToken');
       }
       this.allowedToshow = true;
