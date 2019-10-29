@@ -1,6 +1,10 @@
 export const environment = {
   production: false,
-  errorsMails: ['website.dev@codeparva.in'],
+  errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'largo-storage'
+  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
+  appId: 'largo-storage',
+  VERSION:  require('../../package.json').version,
+  baseUrl: `https://simapi.syrasoft.com/1/api/`,
+  APIKey: `dzJ0OVcySjIqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
 };
