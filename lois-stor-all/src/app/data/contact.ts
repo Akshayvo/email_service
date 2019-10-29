@@ -8,7 +8,7 @@ export const contact = [
     {
         id: 1,
         label: 'Office Address: ',
-        data: '916 Milwaukee Ave, South Milwaukee, WI 53172',
+        data: '916 Milwaukee Ave, Burlington, WI 53105',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {

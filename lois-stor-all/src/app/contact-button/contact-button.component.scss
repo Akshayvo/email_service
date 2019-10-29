@@ -50,7 +50,15 @@
     font-size: 1.5rem;
   }
 }
-@media screen and(max-width:1200)  and (min-width:992) {
+@media screen  and(min-width:1200px){
+  .contact-button-data {
+    overflow: auto;
+    overflow-y: scroll;
+    height: 80vh;
+    width: 300px;
+  }
+}
+@media screen and(max-width:1200px)  and (min-width:992px) {
   .contact-button-data {
     overflow: auto;
     overflow-y: scroll;
