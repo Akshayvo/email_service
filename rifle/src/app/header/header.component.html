@@ -1,9 +1,13 @@
 <div class="header-style">
     <div class="container  p-2 display-style">
       <div>
-          Rent a unit this October, and receive your second month free!<strong>
+          <!-- Rent a unit this October, and receive your second month free!<strong>
           <a (click)="navigate('/view-rates')" rel="nofollow" target="_"> Click Here</a></strong>
-          to learn more!
+          to learn more! -->
+          <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
+            <i [class]="contact?.class"></i><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
+          </span>
       </div>
       <div>
           <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
