@@ -12,6 +12,7 @@ export const environment = {
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   APIKey: `dzJ0OVcySjIqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
 };
+2
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
