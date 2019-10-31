@@ -37,6 +37,7 @@ import { UaParserService } from '../app/services/ua-parser.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { RequestInterceptorService } from './services/request-interceptor.service';
+import { SpinnerWithModalComponent } from './spinner-with-modal/spinner-with-modal.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { RequestInterceptorService } from './services/request-interceptor.servic
     LoginComponent,
     ForgotPasswordComponent,
     PayRentFormComponent,
-    ConfirmationDataComponent
+    ConfirmationDataComponent,
+    SpinnerWithModalComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
