@@ -44,7 +44,7 @@ export const hours = [
 export const socialLinks = [
     {
         label: 'facebook',
-        path: 'https://www.facebook.com/pages/The-Store-House/163806946972526',
+        path: 'https://www.facebook.com/thestorehousewatertown/',
         class: 'fab fa-facebook-square',
     },
 
