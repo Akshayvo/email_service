@@ -19,11 +19,15 @@ export class RequestInterceptorService implements HttpInterceptor {
     const modifiedAPIKey = request.clone({
       headers: request.headers.set('APIKey', `${environment.APIKey}`),
     });
-    const authAPIKey = modifiedAPIKey.clone({
-      headers: token && request.url.startsWith('tenant') ?
-        modifiedAPIKey.headers.set('Authorization', `Bearer ${tenantToken}`)
-        : modifiedAPIKey.headers.set('Authorization', `Bearer ${token}`)
-    });
+    let authAPIKey = modifiedAPIKey;
+    if (token) {
+      authAPIKey = modifiedAPIKey.clone({
+        headers: token && request.url.startsWith('tenant') ?
+          modifiedAPIKey.headers.set('Authorization', `Bearer ${tenantToken}`)
+          : modifiedAPIKey.headers.set('Authorization', `Bearer ${token}`)
+      });
+    }
+
     const contentAPIKey = authAPIKey.clone({
       headers: authAPIKey.headers.set('Content-Type', 'application/json'),
       url:  request.url.startsWith('email') ? `${emailUrl}` : `${baseUrl}${request.url}`

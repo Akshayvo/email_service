@@ -69,7 +69,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   selectedDescription: string;
   ReservationFee: number;
   ReservationFeeValue: number;
-
+  reservationInProgress = false;
   MonthlyRateValue: number;
 
   defaultValue: number;
@@ -412,10 +412,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
 
   makeAReservation(strConfirmation: any) {
+  this.reservationInProgress = true;
   this.makeAReservationUnsubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
     .subscribe(strConfirmationResponse => {
       this.strConfirmation = strConfirmationResponse.strConfirmation;
       this.showConfirmation = false;
+      this.submitted = false;
        this.tokenExit = localStorage.getItem('strTenantToken');
 
       this.existTempToken = localStorage.getItem('strTempTenantToken');
@@ -423,7 +425,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       if (this.existTempToken) {
         localStorage.removeItem('strTempTenantToken');
       }
-
+      this.reservationInProgress = false;
     }, (err: any) => {
       if (err.status === 403) {
         this.showConfirmation = false;
@@ -436,6 +438,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           this.count = 0;
         }
       }
+      this.reservationInProgress = false;
     }
     );
   }
@@ -464,6 +467,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
     this.submitted = true;
     this.showConfirmation = true;
+    this.reservationInProgress = true;
     if (this.reserveUnitForm.invalid) {
       return;
     } else {
