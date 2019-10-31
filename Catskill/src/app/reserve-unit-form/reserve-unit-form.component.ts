@@ -21,7 +21,7 @@ import { LeadDaysService } from '../services/lead-days.service';
 import { MatCalendarCellCssClasses } from '@angular/material/datepicker';
 
 import { Subscription } from 'rxjs';
-
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -305,11 +305,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     .subscribe(result => {
       this.intLeadDaysFrom = result.intLeadDaysFrom;
       this.intLeadDaysTo = result.intLeadDaysTo;
-      this.currentDate = this.datePipe.transform(new Date(), 'yyyy-MM-dd');
-      const FromDate = this.currentdate.setDate(this.currentdate.getDate() + this.intLeadDaysFrom);
-      const ToDate = this.currentdate.setDate(this.currentdate.getDate() + this.intLeadDaysTo);
-      this.From = this.datePipe.transform(FromDate, 'yyyy-MM-dd');
-      this.To = this.datePipe.transform(ToDate, 'yyyy-MM-dd');
+      this.From = moment().add(this.intLeadDaysFrom, 'days').format('YYYY-MM-DD');
+      this.To = moment().add(this.intLeadDaysTo, 'days').format('YYYY-MM-DD');
     });
   }
 
