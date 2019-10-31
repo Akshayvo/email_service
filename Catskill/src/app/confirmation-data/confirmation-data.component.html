@@ -1,6 +1,7 @@
 <div [formGroup]="reserveUnitForm">
-        <div [class.loader]="showConfirmation"></div>
-        <strong><i *ngIf="showConfirmation">Reservation is under process...</i></strong>
+        <!-- <div [class.loader]="showConfirmation"></div>
+        <strong><i *ngIf="showConfirmation">Reservation is under process...</i></strong> -->
+        <app-spinner-with-modal message="Reservation In Progress.." *ngIf="showConfirmation"></app-spinner-with-modal>
     <div class="row">
         <div class="col-lg-6 p-3">
             <h3 class="mb-3">Tenant Information</h3>
@@ -16,7 +17,7 @@
                     </tr>
                     <tr>
                         <td>
-                            LastName 
+                            LastName
                         </td>
                         <td>
                             {{this.reserveUnitForm.value.objTenant.LastName}}
@@ -24,7 +25,7 @@
                     </tr>
                     <tr>
                         <td>
-                            Phone Number 
+                            Phone Number
                         </td>
                         <td>
                             {{this.reserveUnitForm.value.objTenant.Phone}}

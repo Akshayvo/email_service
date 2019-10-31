@@ -1,3 +1,4 @@
+<app-spinner-with-modal message="Fetching Profile Information" *ngIf="fetchingTenantInfo"></app-spinner-with-modal>
 <div class="reserve-unit-form">
         <!-- *ngIf="successMessage; else other_content"  -->
         <!-- *ngIf="strConfirmation; else other_content" -->
@@ -207,7 +208,6 @@
 
 
             <app-confirmation-data *ngIf="count == 1" [reserveUnitForm]="reserveUnitForm" [showConfirmation]="showConfirmation" [option]="option"></app-confirmation-data>
-            <app-spinner-with-modal message="Loading..."></app-spinner-with-modal>
             <div class="form-group text-right">
                 <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12" *ngIf="count === 0" (click)="handleClick()">Next</button>
                 <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 my-2" *ngIf="count === 1" (click)="handlePrevious()">Previous</button>

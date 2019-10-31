@@ -110,7 +110,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   intLeadDaysFrom: number;
   intLeadDaysTo: number;
-
+  fetchingTenantInfo = false;
   logOut = {};
 
 
@@ -316,6 +316,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
 
   getTenantInfo() {
+  this.fetchingTenantInfo = true;
   this.getTenantInfoUnsubscribe$ =  this.tenantInfoService.getTenantInfo()
       .subscribe(tenantData => {
         if (tenantData) {
@@ -345,17 +346,18 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
             }),
           });
 
-      this.reserveUnitForm.controls.objTenant.valueChanges.subscribe(data => {
-        this.objTenantCopy = data;
-        this.isValueUpdated = JSON.stringify(this.objTenantCopy) === JSON.stringify(tempObject);
-      }
-      );
+          this.reserveUnitForm.controls.objTenant.valueChanges.subscribe(data => {
+            this.objTenantCopy = data;
+            this.isValueUpdated = JSON.stringify(this.objTenantCopy) === JSON.stringify(tempObject);
+          });
         }
+        this.fetchingTenantInfo = false;
       }
       , (err: any) => {
         if (err.status === 401) {
           localStorage.removeItem('strTenantToken');
         }
+        this.fetchingTenantInfo = false;
       });
   }
 
