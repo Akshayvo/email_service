@@ -1,5 +1,9 @@
 <div [formGroup]="reserveUnitForm">
-        <div [class.loader]="showConfirmation"></div>
+    <div class="loaderBg" *ngIf="showConfirmation">
+        <div [class.loader]="showConfirmation ">   
+        </div>
+        <p class="px-2 my-2"><b>Confirming your Reservation,please wait...</b></p>
+    </div>
         <strong><i *ngIf="showConfirmation">Reservation is under process...</i></strong>
     <div class="row">
         <div class="col-lg-6 p-3">

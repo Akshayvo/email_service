@@ -17,6 +17,10 @@ export const option =  [
       id: 'AK'
     },
     {
+      description: 'Alberta',
+      id: 'AB'
+    },
+    {
       description: 'American Samoa',
       id: 'AS'
     },
@@ -27,6 +31,10 @@ export const option =  [
     {
       description: 'Arkansas',
       id: 'AR'
+    },
+    {
+      description: 'British Columbia',
+      id: 'BC'
     },
     {
       description: 'California',
@@ -101,6 +109,10 @@ export const option =  [
       id: 'ME'
     },
     {
+      description: 'Manitoba',
+      id: 'MB'
+    },
+    {
       description: 'Marshall Islands',
       id: 'MH'
     },
@@ -141,6 +153,14 @@ export const option =  [
       id: 'NV'
     },
     {
+      description: 'Newfoundland and Labrador',
+      id: 'NL'
+    },
+    {
+      description: 'New Brunswick',
+      id: 'NB'
+    },
+    {
       description: 'New Hampshire',
       id: 'NH'
     },
@@ -157,6 +177,10 @@ export const option =  [
       id: 'NY'
     },
     {
+      description: 'Northwest Territories',
+      id: 'NT'
+    },
+    {
       description: 'North Carolina',
       id: 'NC'
     },
@@ -169,12 +193,24 @@ export const option =  [
       id: 'MP'
     },
     {
+      description: 'Nova Scotia',
+      id: 'NS'
+    },
+    {
+      description: 'Nunavut',
+      id: 'NU'
+    },
+    {
       description: 'Ohio',
       id: 'OH'
     },
     {
       description: 'Oklahoma',
       id: 'OK'
+    },
+    {
+      description: 'Ontario',
+      id: 'ON'
     },
     {
       description: 'Oregon',
@@ -189,12 +225,24 @@ export const option =  [
       id: 'PA'
     },
     {
+      description: 'Prince Edward Island',
+      id: 'PE'
+    },
+    {
       description: 'Puerto Rico',
       id: 'PR'
     },
     {
+      description: 'Quebec',
+      id: 'QC'
+    },
+    {
       description: 'Rhode Island',
       id: 'RI'
+    },
+    {
+      description: 'Saskatchewan',
+      id: 'SK'
     },
     {
       description: 'South Carolina',
@@ -243,5 +291,9 @@ export const option =  [
     {
       description: 'Wyoming',
       id: 'WY'
-    }
+    },
+    {
+      description: 'Yukon',
+      id: 'YT'
+    },
 ];

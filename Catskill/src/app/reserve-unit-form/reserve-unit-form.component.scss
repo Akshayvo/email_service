@@ -131,8 +131,8 @@ table {
 // }
 
 
-
 .loader {
+  content: "loading";
   border: 2px solid #f3f3f3;
   border-top: 2px solid $primary;
   border-radius: 50%;
