@@ -58,7 +58,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   option =  [];
   reserveUnitForm: FormGroup;
-
+  reservationInProgress = false;
   tokenExit: string;
 
   submitted = false;
@@ -424,7 +424,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       if (this.existTempToken) {
         localStorage.removeItem('strTempTenantToken');
       }
-
+      this.reservationInProgress = false;
     }, (err: any) => {
       if (err.status === 403) {
         this.showConfirmation = false;
@@ -437,6 +437,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           this.count = 0;
         }
       }
+      this.reservationInProgress = false;
     }
     );
   }
@@ -465,6 +466,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
     this.submitted = true;
     this.showConfirmation = true;
+    this.reservationInProgress = true;
     if (this.reserveUnitForm.invalid) {
       return;
     } else {

@@ -211,7 +211,7 @@
             <div class="form-group text-right">
                 <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12" *ngIf="count === 0" (click)="handleClick()">Next</button>
                 <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 my-2" *ngIf="count === 1" (click)="handlePrevious()">Previous</button>
-                <button type="submit" class="btn btn-primary ml-lg-4 ml-md-2 ml-sm-auto col-lg-3 col-md-4 col-sm-12 " *ngIf="count === 1">Reserve</button>
+                <button type="submit" class="btn btn-primary ml-lg-4 ml-md-2 ml-sm-auto col-lg-3 col-md-4 col-sm-12 " *ngIf="count === 1" [disabled]="!!reservationInProgress">Reserve</button>
             </div>
         </form>
     </ng-template>
