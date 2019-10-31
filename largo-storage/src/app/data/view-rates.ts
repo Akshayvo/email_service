@@ -1,8 +1,8 @@
 export const viewrates = [
     {
-        p: `The wait is almost over! Rates starting at just $21.75 per month!
-        Locally owned and operated. We believe in building long term relationships 
-        and treating our customers like customers.`,
+        p: `State Storage Largo is Largo's newest self storage facility! We are the perfect solution to provide a little extra elbow room during
+            a renovation or permanent downsizing. We're not just for residential users, either. Our business customers love our 24 hour access for 
+            their inventory, equipment and supplies.  Call our friendly management team or reserve your unit through our form, today!`,
     },
    
 ];

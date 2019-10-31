@@ -4,6 +4,17 @@
 .disp {
   display: block;
 }
+.features-con{
+  .feature{
+    text-align: center;
+    img{
+      margin-bottom: 5px;
+      margin-top: 5px;
+      height:100px;
+    }
+
+  }
+}
 h2{
   text-align: center;
 }
@@ -25,7 +36,7 @@ h2{
   // background-size: cover;
   height: 80vh;
   .jumbotron {
-    background: url("https://storageunitsoftware-assets.s3.amazonaws.com/uploads/widget_image/image/32436/large_71917240_371800310364546_1762541006458191872_n.jpg");
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Largo_Storage/largo-storage-home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -90,11 +101,11 @@ h2{
 // }
 
 // HOME jUMBOTRON
-.jumbotron-container {
+
   .jumbotron-bottom {
     display: flex;
     align: center;
-    height: 22vh;
+    height: 20vh;
 
     .feature-text {
       text-transform: uppercase;
@@ -113,7 +124,7 @@ h2{
     //   font-size: 1.3rem;
     // }
   }
-}
+
 
 
 // Testimonial
@@ -137,7 +148,7 @@ h2{
 // Get started Section
 
 .getStarted {
-  background: url("https://storageunitsoftware-assets.s3.amazonaws.com/uploads/widget_image/image/32436/large_71917240_371800310364546_1762541006458191872_n.jpg") center top no-repeat fixed;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Largo_Storage/largo-storage-home.jpg") center top no-repeat fixed;
   background-size: cover;
   background-position: top;
 
@@ -168,7 +179,8 @@ h2{
     .jumbotron {
       .jumbotron-skew-text {
         width: 480px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        top:25%;
       }
     }
   }
@@ -274,7 +286,7 @@ h2{
         width: 500px;
         position: absolute;
         bottom: 0;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
       }
 
       .button-width {
@@ -331,7 +343,7 @@ h2{
     .jumbotron-skew-text {
       top: 25%;
       p{
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
   }
@@ -408,6 +420,8 @@ h2{
         width: 400px;
         position: absolute;
         bottom: 0;
+        text-align: center;
+        top:25%;
       }
     }
 
@@ -471,9 +485,9 @@ h2{
     }
 
     .jumbotron-skew-text {
-      top: 25%;
+      top: 20%;
       p{
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
     }
   }
@@ -548,10 +562,7 @@ h2{
         min-width: 140px;
       }
 
-      .jumbotron-skew-text {
-        width: 300px;
-        // top: 35%;
-      }
+      
     }
 
     .disp {
@@ -582,11 +593,11 @@ h2{
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
-        top: 28%;
+        top: 25%;
         width:260px;
         padding-left: 20px;
         p{
-          font-size: 1rem;
+          font-size: 0.9rem;
         }  
       }
     }
@@ -607,11 +618,11 @@ h2{
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
-        top: 22%;
+        top: 20%;
         width:260px;
         padding-left: 20px;
         p{
-          font-size: 1rem;
+          font-size: 0.8rem;
         }  
       }
     }

@@ -19,10 +19,9 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Access your account and securely pay your rent through our online bill pay service.
-                For information on accessing your account call (361) 275-9698.`
+      content: `Follow the instructions on the page to access your account or call our office, and let one of our friendly managers show you how to manage your account online!`
     });
-    this.titleService.setTitle('State Storage Largo | Payment');
+    this.titleService.setTitle(' Pay Rent | State Storage Largo');
   }
 
   ngOnInit() {

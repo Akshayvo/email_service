@@ -34,11 +34,9 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Do you have any questions about State Storage Largo's self storage units,
-                warehouse space or office leases? Drop us a line through our contact
-                form or via phone at (361) 275-9698!`
+      content: `Do you have questions about our services or your existing account with us? Use the contact form on this page or call to speak with one of our friendly managers!`
     });
-    this.titleService.setTitle('State Storage Largo | Contact');
+    this.titleService.setTitle('Contact Us | State Storage Largo');
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,

@@ -41,10 +41,9 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Our units range from closet sized 5'x5' units to 10'x20' multi-bedroom home sized units.
-      We strive to provide the highest level of service at the best prices! `
+      content: `Take a moment and review our affordable self storage unit rates, then make your reservation with our easy reservation form!`
     });
-    this.titleService.setTitle('State Storage Largo | View Rates');
+    this.titleService.setTitle('View Rates | State Storage Largo');
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();

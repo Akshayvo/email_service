@@ -36,9 +36,9 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: ``
+      content: `We are Largo's newest self storage facility with a wide variety of units at extremely affordable rates! Reserve your self storage unit today!`
     });
-    this.titleService.setTitle('State Storage Largo | Home');
+    this.titleService.setTitle('Affordable Self Storage Units in Largo | State Storage Largo');
   }
 
   public navigate(location: any) {

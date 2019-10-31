@@ -24,7 +24,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-navbg py-0">
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')">
-      <img src="../../assets/state-storage-largo-logo.png" width="auto" height="60" alt="Logo" style="padding-top: 2px; padding-bottom: 2px;">
+      <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Largo_Storage/state-storage-largo-logo.png" width="auto"   alt="logo artwork for state storage largo" >
     </a>
     <button class="navbar-toggler py-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
    aria-label="Toggle navigation">
@@ -34,9 +34,9 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
       <ul class="navbar-nav ml-auto navbar-nav-scroll">
         <li class="nav-item px-2" *ngFor="let nav of navLinks">
-          <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          <a class="nav-link " [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
           [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)" *ngIf="nav?.path != '/pay-rent'">{{nav.label}}</a>
-          <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          <a class="nav-link " [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
           [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)" *ngIf="nav?.path === '/pay-rent'">{{nav.label}}</a>
         </li>
       </ul>

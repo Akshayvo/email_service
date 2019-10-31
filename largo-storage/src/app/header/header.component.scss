@@ -45,6 +45,9 @@ a {
   color: $primary !important;
   font-weight: 600;
   padding: 21px;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+
 }
 
 .nav-link:hover {
@@ -83,7 +86,7 @@ a {
  
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 991px) {
   .display {
     display: none;
   }
