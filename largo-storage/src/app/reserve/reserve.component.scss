@@ -1,6 +1,6 @@
 @import "../../styles.scss";
 .contentHolder {
-  padding-top: 140px;
+  padding-top: 130px;
   min-height: 96vh;
   margin-bottom: 50px;
 
@@ -34,13 +34,16 @@ h1 {
 }
 
 @media only screen and (max-width: 991px) {
-  .padding-top {
-    padding-top: 56px;
+  .contentHolder {
+    padding-top: 90px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .background-padding {
     padding: 24px 9px;
+  }
+  .contentHolder {
+    padding-top: 90px;
   }
 }

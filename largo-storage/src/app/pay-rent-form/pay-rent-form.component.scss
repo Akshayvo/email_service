@@ -95,7 +95,7 @@ table {
 
 .loaderForPayment {
   border: 3px solid #f3f3f3;
-  border-top: 3px solid $primary;
+  border-top: 3px solid $secondary;
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -110,8 +110,13 @@ table {
 .go-to-home {
   a {
     text-decoration: underline;
-    color: $primary;
+    color: $secondary;
     cursor: pointer;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .rent-holder{
+    padding-top: 100px;
   }
 }
 
