@@ -40,6 +40,32 @@
     }
   }
 }
+.form-control {
+  display: block;
+  width: 100%;
+  // height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
+  
+  background-color: #f8d7da;
+  border: 3px solid #dc3545;
+}
+
+
+.text-muted{
+  color: red !important;
+  font-weight: 700 !important;
+}
 
 ::ng-deep.mat-datepicker-content .mat-calendar{
   .mat-calendar-body-cell-content {
