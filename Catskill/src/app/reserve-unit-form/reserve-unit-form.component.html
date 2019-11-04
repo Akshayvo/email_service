@@ -173,12 +173,11 @@
                  <div class=" pb-5">
                      <div class=" form-group custom-date-css">
                          <label>Move In Date*</label>&nbsp;
-                         <mat-form-field class="example-full-width " class="form-control" placeholder="select your date" [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }">
-                            <input matInput [matDatepicker]="picker" formControlName="dteMoveIn"  [min]="From" [max]="To" 
-                           >
+                         <mat-form-field class="example-full-width " class="form-control" placeholder="select your date" [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }" >
+                            <input matInput [matDatepicker]="picker" formControlName="dteMoveIn"  [min]="From" [max]="To" readonly (click)="picker.open()" >
 
-                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                            <mat-datepicker  [dateClass]="dateClass" #picker></mat-datepicker>
+                            <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+                            <mat-datepicker  [dateClass]="dateClass"  #picker ></mat-datepicker>
 
                           </mat-form-field>
                           <div *ngIf="submitted  && f.dteMoveIn.errors" class="invalid-feedback">
