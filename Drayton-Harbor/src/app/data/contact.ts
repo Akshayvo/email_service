@@ -28,7 +28,7 @@ export const hours = [
     },
     {
         label: 'Office Hours: ',
-        data: 'Tues-Sat: 12:00PM to 5:00PM'
+        data: 'Tues-Fri: 12:00PM to 5:00PM'
     },
 ];
 
