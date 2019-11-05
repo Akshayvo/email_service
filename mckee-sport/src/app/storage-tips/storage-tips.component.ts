@@ -22,9 +22,9 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our helpful self storage tips list to make your stay at Mohawk Self Storage an easy and enjoyable one! `
+      content: `Take advantage of our self storage and vehicle storage expertise. Use our list of storage tips to make your stay with us a breeze!`
     });
-    this.titleService.setTitle('Storage Tips | Mohawk Self Storage');
+    this.titleService.setTitle('Storage Tips | McKeesport Storage');
   }
 
   ngOnInit() {

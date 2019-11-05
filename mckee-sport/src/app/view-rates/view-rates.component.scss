@@ -46,14 +46,36 @@
     }
   }
 }
+.easycode{
+  align-items: center;
+  background-color: #FFCC00;
+  text-align: center; 
+  color: #000;
+  img{
+    margin-left: auto;
+    margin-right: auto
+    
+  }
+}
+.key{
+  background-color: #003189;
+}
+.easycode-viewrates{
+  color: #fff;
+  background-color: #000;
+}
 
 .background-discount {
   background-color: $primary;
 }
+.app-link{
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media only screen and (max-width: 991px) {
   .contentHolder {
-    padding-top: 72px;
+    padding-top: 100px;
      iframe {
         width: 100%;
         overflow: scroll;

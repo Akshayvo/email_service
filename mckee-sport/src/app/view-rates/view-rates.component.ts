@@ -21,9 +21,9 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment and review our affordable regular, or climate-controlled unit rates, then make your reservation with our easy online form!`
+      content: `Take a moment to view our rates, and unit availability, then make your reservation by filling out a short form, or calling our management team, today!`
     });
-    this.titleService.setTitle('View Rates | Mohawk Self Storage');
+    this.titleService.setTitle('View Rates | McKeesport Storage');
   }
 
   ngOnInit() {

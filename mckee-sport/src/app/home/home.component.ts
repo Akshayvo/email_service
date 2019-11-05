@@ -33,9 +33,9 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Mohawk Self Storage provides high-quality, affordable self storage units in Mohawk NY`
+      content: `McKeesport Storage is your one-stop-shop for all things storage in McKeesport, PA`
     });
-    this.titleService.setTitle('Affordable Self Storage in Mohawk | Mohawk Self Storage');
+    this.titleService.setTitle('Self, Boat & RV Storage in McKeesport| McKeesport Storage');
   }
 
   public navigate(location: any) {

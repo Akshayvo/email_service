@@ -37,9 +37,9 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our helpful contact form to reach out with any questions you may have about the services we offer or your account with us.`
+      content: `Do you have a question about your account, or our self storage, boat and recreational vehicle storage? Use our contact form, or call us today!`
     });
-    this.titleService.setTitle('Contact Us | Mohawk Self Storage');
+    this.titleService.setTitle('Contact Us | McKeesport Storage');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],

@@ -1,29 +1,25 @@
 @import "../../styles.scss";
 
-.unit-sizer-holder {
-  padding-top: 100px;
-  min-height: 96vh;
-  margin-bottom: 50px;
+.contentHolder {
+  display: flex;
+  min-height: 98vh;
 }
 
-.content-Holder {
-  h2 {
-    border-bottom: 1px solid $primary;
-    width: 250px;
-    margin: auto;
-    font-size: 2.25rem;
-    text-align: center;
-  }
+.padding-top {
+  padding-top: 90px;
+}
 
-  padding: 64px;
-  background-color: #edf1ee;
+.background-padding {
+  height: 750px;
+  padding: 34px 18px;
+}
+
+h1 {
+  margin-block-end: 0;
 }
 
 .unit-sizer-container {
-  color: black;
-
   .unit-sizer-box {
-    border: 1px solid $primary;
     padding: 64px;
   }
 
@@ -82,7 +78,8 @@
 
 
 .active-unit-border {
-  border: 1px solid $primary;
+  background-color: $primary;
+  // height: 300px;
 }
 
 .disp {
@@ -100,15 +97,15 @@
     }
   }
 
+  .padding-top {
+    padding-top: 100px;
+  }
+
   .unit-dimention {
     .active-unit {
       color: $primary;
       font-size: 1.1rem;
     }
-  }
-
-  .unit-sizer-holder {
-    padding-top: 60px;
   }
 }
 
@@ -145,12 +142,13 @@
 }
 
 @media screen and (max-width: 600px) {
-  .content-Holder {
-    padding: 16px;
+  .padding-top {
+    padding-top: 142px;
   }
 
-  .unit-sizer-holder {
-    padding-top: 60px;
+  .background-padding {
+    padding: 24px 0;
+    height: 600px;
   }
 
   .unit-sizer-top {

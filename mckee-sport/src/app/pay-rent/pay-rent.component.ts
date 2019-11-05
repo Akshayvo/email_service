@@ -20,9 +20,9 @@ export class PayRentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent 24 hours a day with our easy online tenant portal. Follow the instructions `
+      content: `Pay your rent, and manage your account with our handy tenant portal! Follow the instructions, or call our office to learn how to access your account!`
     });
-    this.titleService.setTitle('Pay Rent | Mohawk Self Storage');
+    this.titleService.setTitle('Pay Rent | McKeesport Storage');
   }
 
   ngOnInit() {
