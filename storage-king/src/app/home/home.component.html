@@ -51,7 +51,19 @@
           <div class="row">
             <div class="col-md-7">
               <div class="mb-4">
-                <p>
+                  <div>
+                      <div class="font-xs-device" *ngFor="let contact of contactDetails">
+                        <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                        <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                      </div>
+                      <div class="pt-3 font-xs-device">
+                          <span style="font-size: 1.1rem;"><strong> Office Hours: </strong></span>
+                          <div *ngFor="let hour of hours">
+                              <b>{{hour.label}}</b>{{hour.data}}<br>
+                            </div>    
+                      </div>
+                      </div>
+                <!-- <p>
                   <span *ngFor="let contact of contactDetails">
                       <div *ngIf="contact?.label == 'Address:' || contact?.label == 'Email:' ">
                           <b>{{contact.label}}</b><span *ngIf="contact?.id == 2"><a [href]="contact?.redirect"> {{contact.data}}</a></span>
@@ -74,7 +86,7 @@
                           {{hour.label}} <a [href]="hour?.redirect"> {{hour.data}}</a>
                       </div>
                   </span>
-                </p>
+                </p> -->
               </div>
             </div>
             <div class="col-md-5 text-align">

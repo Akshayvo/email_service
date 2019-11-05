@@ -3,7 +3,7 @@ export const truckRentals = [
         heading: 'We are a Penske Truck Agent',
         data: `Whether you are moving locally or across the country, we have a fleet of fuel
               efficient trucks and FREE 24/7 emergency roadside assistance.
-              Call Robin at (603) 778-6149 for a free quote and book your reservation today.`,
+              Call an associate at (603) 778-6149 for a free quote and book your reservation today.`,
     },
     // {
     //     heading: 'Why Penske?',

@@ -72,5 +72,4 @@ export const aboutUs = [
     }
 ];
 
-export const gettingStarted = `To get started simply call (603) 772-4500, or (603) 396-2706 after normal
-                                business hours, or click below to use our handy contact form!`;
+export const gettingStarted = `To get started simply call (603) 772-4500, or click below to use our handy contact form!`;

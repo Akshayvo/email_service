@@ -1,24 +1,16 @@
 export const contact = [
     {
-        id: 1,
+        id: 0,
         label: 'Address:',
         data: '6 Kingsway Avenue, Exeter, NH 03833',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
-        id: 3,
+        id: 1,
         label: 'Phone:',
         data: '(603) 772-4500',
         redirect: 'tel:6037724500',
         time: ' - Business Hours',
-        class: 'fas fa-phone mr-2 iconColor',
-    },
-    {
-        id: 4,
-        label: 'Phone:',
-        data: '(603) 396-2706',
-        redirect: 'tel:6033962706',
-        time: ' - Outside Normal Business Hours',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
@@ -32,20 +24,16 @@ export const contact = [
 
 export const officeHours = [
     {
-        id: 1,
         label: 'Monday – Friday: ',
-        data: '8:30 a.m. – 5 p.m.'
+        data: '8:30AM – 5:00PM'
     },
     {
-        id: 2,
         label: 'Saturday: ',
-        data: '9:00 a.m. – 12:00 p.m.'
+        data: '9:00AM – 12:00PM'
     },
     {
-        id: 3,
-        label: 'Additional times available by calling ',
-        data: '603-396-2706',
-        redirect: 'tel:6033962706'
+        label: 'Sunday: ',
+        data: 'CLOSED',
     }
 ];
 

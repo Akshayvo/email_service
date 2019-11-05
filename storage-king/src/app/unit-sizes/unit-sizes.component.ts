@@ -24,9 +24,9 @@ export class UnitSizesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: ``
+      content: `Are you not sure what sized unit you require? Use our visual guide to find the right unit for you!`
     });
-    this.titleService.setTitle('');
+    this.titleService.setTitle('Unit Sizes | Storage King');
   }
 
   ngOnInit() {

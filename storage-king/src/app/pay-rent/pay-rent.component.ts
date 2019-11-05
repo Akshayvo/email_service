@@ -27,7 +27,7 @@ export class PayRentComponent implements OnInit {
       content: `Need to pay your bill online? Follow the instructions
                 here or contact us and start paying at your convenience, 24/7!`
     });
-    this.titleService.setTitle('Pay Your Bill Online');
+    this.titleService.setTitle('Pay Rent | Storage King');
   }
 
   ngOnInit() {
