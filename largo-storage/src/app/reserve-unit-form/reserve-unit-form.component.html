@@ -156,16 +156,17 @@
                                      </option>
                                     </select>
                                 </div>
-                                <div class="form-group readonly-form-control" >
-                                    <label>Rate*</label>&nbsp;
-                                    <input type="text" formControlName="MonthlyRate" class="form-control" [value]="MonthlyRateValue || MonthlyRateVR || defaultValue ||''"
-                                    readonly>
-                                 <!-- ${{MonthlyRateValue}} -->
+                                <!-- <div class="form-group readonly-form-control" >
+                                    <label>Rate:</label>&nbsp; -->
+                                    <!-- <input type="text" formControlName="MonthlyRate" class="form-control" [value]="MonthlyRateValue || MonthlyRateVR || defaultValue ||''"
+                                    readonly> -->
+                                 <!-- ${{MonthlyRateValue || MonthlyRateVR || defaultValue}} 
                                 </div>
                                 <div class="form-group readonly-form-control">
-                                    <label>Reservation Charges</label>&nbsp;
-                                    <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly>
-                                </div>
+                                    <label>Reservation Charges:</label>&nbsp; -->
+                                    <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
+                                    <!-- 0.00
+                                </div> -->
                             </div>
                         </div>
                  </div>
@@ -187,7 +188,7 @@
                          class="form-control" [value]="currentDate" formControlName="dteMoveIn" [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }" /> -->
 
                     </div>
-                    <div formArrayName="lstRentalPeriods">
+                    <div class="pb-4" formArrayName="lstRentalPeriods">
                         <div *ngFor="let itemRental of reserveUnitForm.controls.lstUnitTypes.controls; let i = index">
                             <div  [formGroupName]="i">
                                 <label for="PeriodDescription">Period*</label>&nbsp;
@@ -199,6 +200,17 @@
 
                             </div>
                         </div>
+                    </div>
+                    <div class="form-group readonly-form-control" >
+                        <label>Rate:</label>&nbsp;
+                        <!-- <input type="text" formControlName="MonthlyRate" class="form-control" [value]="MonthlyRateValue || MonthlyRateVR || defaultValue ||''"
+                        readonly> -->
+                     ${{MonthlyRateValue || MonthlyRateVR || defaultValue}} 
+                    </div>
+                    <div class="form-group readonly-form-control">
+                        <label>Reservation Charges:</label>&nbsp;
+                        <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
+                        0.00
                     </div>
                 </div>
             </div>
