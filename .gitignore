@@ -43,3 +43,6 @@ testem.log
 Thumbs.db
 **/vinay_test*
 **/package-lock.json
+
+# Local Netlify folder
+.netlify
