@@ -106,8 +106,9 @@
                   </div>
                   <div class="py-2">
                     <span *ngFor="let hour of hoursDetails">
-                      <b>{{hour.label}}</b>{{hour.data}}<br>
-                    </span>              
+                      <b>{{hour.label}}</b><span *ngIf="hour?.id === 1 else other_content ">&nbsp;{{hour.data}}</span>
+                      <ng-template #other_content>&nbsp;{{hour.data}}</ng-template><br>
+                    </span>             
                   </div>
                 </div>
             </div>

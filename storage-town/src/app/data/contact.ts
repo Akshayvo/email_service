@@ -23,9 +23,14 @@ export const contactsLocation1 = [
 
 export const hoursLocation1 = [
     {
+        id: 1,
         label: 'Access hours: ',
-        data: '7 Days a Week 6:00AM to 8:00PM',
-    },
+        // datahours: {
+        //     data1:'7 Days a Week ',
+        //     data2:'6:00AM to 8:00PM'
+        // },
+        data:'7 Days a Week 6:00AM to 8:00PM'
+    }
 ];
 
 export const contactsLocation2 = [

@@ -102,8 +102,13 @@
       <div class="col-md-3 contact-hours pt-3">
           <h2>Hours:</h2>
           <p>
+            
+            <!-- <span *ngFor="let hour of hoursDetails">
+              <b>{{hour.label}}</b><br><span *ngIf="hour?.id === 1 else other_content ">&nbsp;{{hour.datahours.data1}}<br>{{hour.datahours.data2}}</span>
+              <ng-template #other_content>&nbsp;{{hour.data}}</ng-template><br>
+            </span> -->
             <span *ngFor="let hour of hoursDetails">
-              <b>{{hour.label}}</b>{{hour.data}}<br>
+              <b>{{hour.label}}</b><br>{{hour.data}}<br>
             </span>
           </p>
       </div>

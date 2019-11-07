@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
-  contactsLocation3, contactsLocation4, hoursLocation3, hoursLocation4 } from '../data/contact';
+  contactsLocation3, contactsLocation4, hoursLocation3, hoursLocation4, } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
 import { LocationService } from '../services/location.service';
 
