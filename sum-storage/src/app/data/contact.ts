@@ -16,7 +16,7 @@ export const contact = [
         id: 2,
         redirect: 'tel:8284437577',
         label: 'Phone:',
-        data: '(828) 443-7577',
+        data: '828-391-8711',
         class: 'fas fa-phone mr-2 iconColor',
     }
 ];
