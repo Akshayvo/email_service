@@ -54,7 +54,9 @@
   z-index: 16;
 }
 
-
+.display-none {
+  display: none;
+}
 @media only screen and (max-width: 991px) {
   .rent-holder {
     padding-top: 90px;

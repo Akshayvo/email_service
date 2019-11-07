@@ -19,7 +19,12 @@ export const contact = [
         data: '(315) 866-5901',
         class: 'fas fa-phone mr-2 iconColor',
     },
-    
+    {
+        id: 3,
+        redirect: 'tel:3158674444',
+        data: '(315) 867-4444',
+        class: 'fas fa-phone mr-2 iconColor',
+    },
 ];
 
 export const hours = [

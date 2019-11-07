@@ -15,6 +15,10 @@ export const featuresList = [
     {
         td1: 'Paved Parking',
         td2: 'Climate-Controlled Units Available',
+    },
+    {
+        td1: 'Indoor Vehicle Storage',
+        td2: 'Secured Camper and Boat Storage',
     }
 ];
 
