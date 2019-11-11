@@ -1,0 +1,147 @@
+// For Date Picker
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$Catskill-primary: mat-palette($mat-indigo);
+$Catskill-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$Catskill-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$Catskill-theme: mat-light-theme($Catskill-primary, $Catskill-accent, $Catskill-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($Catskill-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+//Basic color and font styles
+$primary: #fff;
+$primaryDark: #720404;
+$secondary: #CE0909;
+// $secondary: rgb(139, 39, 39);
+$dark: #333;
+$light: #edf1ee;
+$white: #fff;
+$navbg: #333333;
+$border: #707070;
+$shadow: #000;
+$fontColor: #707070;
+
+$primaryFont: "Lato", sans-serif;
+
+html,
+body {
+  font-family: $primaryFont;
+  font-size: 1rem;
+}
+
+// Different Background colors
+.bg-secondary {
+  background: $secondary !important;
+}
+
+.bg-dark {
+  background: $dark !important;
+}
+
+.bg-light {
+  background: $light !important;
+}
+
+.bg-white {
+  background: $white;
+}
+
+.bg-translucent {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.bg-navbg {
+  background: $navbg;
+}
+
+
+.btn {
+  min-width: 160px;
+}
+
+.btn-primary {
+  background-color: $secondary;
+  border-color: $secondary;
+  color: $white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border-color: $secondary;
+  border: 2px solid $secondary;
+  color: $secondary !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark;
+  color: $white !important;
+}
+
+.section-headings {
+  font-weight: 200;
+}
+
+.contact-map {
+  width: 100%;
+}
+
+.heading {
+  font-weight: 400;
+}
+
+.sectionImage {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin-bottom: 0;
+}

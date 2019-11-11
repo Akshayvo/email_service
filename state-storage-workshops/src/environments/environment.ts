@@ -7,14 +7,12 @@ export const environment = {
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'largo-storage',
+  appId: 'largoshops',
   VERSION:  require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   APIKey: `dzJ0OVcySjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
   //29229:dzJ0OVcySjIqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O
-  //29235:dzJ0OVcySjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O /*LARGO STORAGE
-  //29237:dzJ0OVcySjMqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O /* STATE STORAGE WORKSHOPS
-
+  //29235:dzJ0OVcySjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O
 };
 2
 /*

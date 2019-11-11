@@ -1,0 +1,71 @@
+<!-- <div class="contentHolder">
+  <div class="container">
+    <div>
+      <h1 class="py-5 text-center">View Rates</h1>
+    </div>
+    <div class="container px-0"> 
+      <div class="row view-rates">
+        <div class="col-lg-6 col-md-12 scroll-wrapper">
+          <iframe id="advanced_iframe" name="advanced_iframe" src="" width="100%"
+          height="1000" scrolling="yes" frameborder="0" border="0" style="max-width:100%;"></iframe>
+        </div>
+        <div class="col-lg-6 col-md-12 view-rates-padding">
+          <app-photos></app-photos>
+          <p class="my-4 text-justify" *ngFor='let para of viewrates'>
+            {{para.p}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+
+<div class="contentHolder">
+  <div class="container pb-5   padding-top">
+    <h1 class="py-5 text-center">View Our Rates</h1>
+    <div class="row bg-light background-padding">
+      <div class="col-lg-6 col-md-12 px-4 scroll-wrapper pb-lg-0 pb-md-5" [class.col-lg-12]="openComponent">
+        <div [class.loader]="!showTable">
+        </div>
+        <div>
+            <app-reserve-unit-form *ngIf="openComponent; else content" [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR"></app-reserve-unit-form>
+            <ng-template #content >
+            <table>
+              <tHead [class.display]="!showTable">
+                  <tr >
+                    <th colspan="2" class="px-4 py-1" >Size</th>
+                    <th colspan="2" class="px-4 py-1" >Rate</th>
+                    <th colspan="2" class="px-4 py-1" >Reserve a Unit</th>
+                  </tr>
+                </tHead>
+            <tbody  >
+              <tr *ngFor="let LstUnitTypes of LstUnitTypes">
+                <td colspan="2" class="px-4 border">
+                    {{LstUnitTypes.Description}}
+                </td>
+                <td colspan="2" class="px-4 border">
+                    <span *ngIf="LstUnitTypes.MonthlyRate != null">$</span>{{LstUnitTypes.MonthlyRate}}
+                </td>
+                <td colspan="2" class="py-2 px-4 border">
+                    <!-- <a class="btn btn-lg " (click)="handleClick($event)" role="button">Reserve</a> -->
+                    <button (click)="handleClick(LstUnitTypes.Description, LstUnitTypes.MonthlyRate)"> Reserve</button>
+                </td>
+                </tr>
+            </tbody>
+          </table>
+        </ng-template>
+
+
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 px-4" [class.col-lg-12]="openComponent">
+        <h3 class="view-rate-heading">Amenities</h3>
+        <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/State_Storage_Workshop/state-storage-workshops.jpg" alt="photograph of several self storage unit buildings with square red doors" class="sectionImage" />
+        <p class="view-rate-text text-justify" *ngFor="let viewRates of viewRates">
+          {{viewRates.p}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
