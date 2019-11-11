@@ -27,6 +27,7 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ReserveComponent} from './reserve/reserve.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
     ContactButtonComponent,
     ReserveComponent,
     PayRentComponent,
+    UnitSizerComponent,
 
   ],
   imports: [

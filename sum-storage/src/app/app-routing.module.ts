@@ -9,6 +9,7 @@ import { ErrorComponent } from './error/error.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ReserveComponent} from './reserve/reserve.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'reserve-unit', component: ReserveComponent },
-  { path: 'pay-rent', component:PayRentComponent},
+  { path: 'pay-rent', component:PayRentComponent },
+  { path: 'unit-sizer', component: UnitSizerComponent },
   { path: 'review', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
