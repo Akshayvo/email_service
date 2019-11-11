@@ -24,25 +24,25 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/location.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/location.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/online.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/online.svg',
         label: 'Online Reservation & Bill Pay',
         alt: 'Icon art displaying a screen with cursor'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/24-hours.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/24-hours.svg',
         label: 'Stellar Customer Service',
         alt: '24 Hour Facility Access'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/thermometer.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/thermometer.svg',
         label: 'Climate Controlled Units Available',
         alt: 'Icon of thermometer indicating climate controlled units'
     },
