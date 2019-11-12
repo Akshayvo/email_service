@@ -51,17 +51,17 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.loginForm = this.formBuilder.group({
-      strUserName: ['', Validators.required],
-      strPassword: ['', Validators.required],
-      intAuthMethod: 1
-    });
-    if (window.localStorage) {
-      const token = localStorage.getItem('strTenantToken');
-      if (token != null) {
-        this.router.navigate(['/pay-rent/payment']);
-       }
-    }
+    // this.loginForm = this.formBuilder.group({
+    //   strUserName: ['', Validators.required],
+    //   strPassword: ['', Validators.required],
+    //   intAuthMethod: 1
+    // });
+    // if (window.localStorage) {
+    //   const token = localStorage.getItem('strTenantToken');
+    //   if (token != null) {
+    //     this.router.navigate(['/pay-rent/payment']);
+    //    }
+    // }
   }
 
   get f() { return this.loginForm.controls; }

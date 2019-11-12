@@ -54,7 +54,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.fetchViewRates();
-    this.getData();
+    // this.getData();
   }
   public fetchViewRates() {
     this.viewRates = viewrates;
