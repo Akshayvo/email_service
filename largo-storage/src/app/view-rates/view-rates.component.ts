@@ -8,7 +8,7 @@ import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { UaParserService } from '../services/ua-parser.service';
 
 import { Subscription } from 'rxjs';
-import { GetMoveinChargesService } from '../services/get-movein-charges.service';
+import { MoveInService } from '../services/moveIn.service';
 
 @Component({
   selector: 'app-view-rates',
@@ -39,10 +39,11 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     // private http: HttpClient,
     private fetchDataService: FetchDataService,
     private uaParserService: UaParserService,
-    private getMoveinChargesService: GetMoveinChargesService,
+    private getMoveinChargesService: MoveInService,
   ) {
     this.meta.addTag({
       name: 'description',
+      // tslint:disable-next-line:max-line-length
       content: `Take a moment and review our affordable self storage unit rates, then make your reservation with our easy reservation form!`
     });
     this.titleService.setTitle('View Rates | State Storage Largo');
@@ -58,7 +59,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     this.fetchViewRates();
     this.getData();
   }
-  
+
   public fetchViewRates() {
     this.viewRates = viewrates;
   }
@@ -82,14 +83,14 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     this.getMoveinChargesService.getMoveInCharges(e)
       .subscribe(result => {
         console.log(result);
-      })
+      });
   }
 
   getData() {
   this.isUnsubscribe$ = this.fetchDataService.getData( )
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;      
+      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
     });
   }
 
