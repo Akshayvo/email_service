@@ -8,6 +8,7 @@ import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { UaParserService } from '../services/ua-parser.service';
 
 import { Subscription } from 'rxjs';
+import { GetMoveinChargesService } from '../services/get-movein-charges.service';
 
 @Component({
   selector: 'app-view-rates',
@@ -38,6 +39,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     // private http: HttpClient,
     private fetchDataService: FetchDataService,
     private uaParserService: UaParserService,
+    private getMoveinChargesService: GetMoveinChargesService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -56,6 +58,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     this.fetchViewRates();
     this.getData();
   }
+  
   public fetchViewRates() {
     this.viewRates = viewrates;
   }
@@ -74,11 +77,19 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
   }
 
+  getMoveInCharges(e: Event) {
+    console.log(e);
+    this.getMoveinChargesService.getMoveInCharges(e)
+      .subscribe(result => {
+        console.log(result);
+      })
+  }
+
   getData() {
   this.isUnsubscribe$ = this.fetchDataService.getData( )
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;      
     });
   }
 

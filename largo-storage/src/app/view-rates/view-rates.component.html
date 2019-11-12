@@ -25,7 +25,7 @@
   <div class="container pb-5   padding-top">
     <h1 class="py-5 text-center">Affordable Storage</h1>
     <div class="row bg-light background-padding">
-      <div class="col-lg-6 col-md-12 px-4 scroll-wrapper pb-lg-0 pb-md-5" [class.col-lg-12]="openComponent">
+      <div class="col-lg-7 col-md-12 px-4 scroll-wrapper pb-lg-0 pb-md-5" [class.col-lg-12]="openComponent">
         <div [class.loader]="!showTable">
         </div>
         <div>
@@ -37,6 +37,7 @@
                     <th colspan="2" class="px-4 py-1" >Size</th>
                     <th colspan="2" class="px-4 py-1" >Rate</th>
                     <th colspan="2" class="px-4 py-1" >Reserve a Unit</th>
+                    <th colspan="2" class="px-4 py-1" >Move In</th>
                   </tr>
                 </tHead>
             <tbody  >
@@ -51,6 +52,15 @@
                     <!-- <a class="btn btn-lg " (click)="handleClick($event)" role="button">Reserve</a> -->
                     <button (click)="handleClick(LstUnitTypes.Description, LstUnitTypes.MonthlyRate)"> Reserve</button>
                 </td>
+                <td colspan="2" class="py-2 px-4 border" *ngIf="LstUnitTypes.IsUnitsAvailable; else other">
+                  <!-- <a class="btn btn-lg " (click)="handleClick($event)" role="button">Reserve</a> -->
+                  <button (click)="getMoveInCharges(LstUnitTypes.UnitTypeID)"> Move In</button>
+              </td>
+              <ng-template #other>
+                <td colspan="2" class="py-2 px-4 border">
+                 <div class="text-center">Please call the facility to move in.</div>
+              </td>
+              </ng-template>
                 </tr>
             </tbody>
           </table>
@@ -59,7 +69,7 @@
 
         </div>
       </div>
-      <div class="col-lg-6 col-md-12 px-4" [class.col-lg-12]="openComponent">
+      <div class="col-lg-5 col-md-12 px-4" [class.col-lg-12]="openComponent">
         <h3 class="view-rate-heading">Amenities</h3>
         <img src="https://storageunitsoftware-assets.s3.amazonaws.com/uploads/widget_image/image/32436/large_71917240_371800310364546_1762541006458191872_n.jpg" alt="self-storage-view-rates" class="sectionImage" />
         <p class="view-rate-text text-justify" *ngFor="let viewRates of viewRates">
