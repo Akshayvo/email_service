@@ -30,7 +30,7 @@
         </div>
         <div>
             <app-reserve-unit-form *ngIf="curStage === 1" [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR"></app-reserve-unit-form>
-            <app-reserve-unit-form *ngIf="curStage === 2" [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR" [deposit]="deposit"></app-reserve-unit-form>
+            <app-reserve-unit-form *ngIf="curStage === 2" [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR" [proRateAmount]="ProrateAmt"></app-reserve-unit-form>
             <div *ngIf="curStage === 0">
                 <table>
                     <tHead [class.display]="!showTable">

@@ -207,15 +207,15 @@
                         readonly> -->
                      ${{MonthlyRateValue || MonthlyRateVR || defaultValue}}
                     </div>
-                    <div class="form-group readonly-form-control" *ngIf="deposit === undefined">
+                    <div class="form-group readonly-form-control" *ngIf="proRateAmount === undefined">
                         <label>Reservation Charges:</label>&nbsp;
                         <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
                         0.00
                     </div>
-                    <div class="form-group readonly-form-control" *ngIf="deposit !== undefined">
-                        <label>Deposit Charges:</label>&nbsp;
+                    <div class="form-group readonly-form-control" *ngIf="proRateAmount !== undefined">
+                        <label>Amount Due:</label>&nbsp;
                         <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
-                        ${{deposit}}
+                        ${{proRateAmount}}
                     </div>
                 </div>
             </div>

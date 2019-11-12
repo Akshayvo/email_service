@@ -37,7 +37,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   @Input() DescriptionVR: string;
   @Input() MonthlyRateVR: number;
-  @Input() deposit?: number;
+  @Input() proRateAmount?: number;
 
   unitTypes: UnitTypes;
   lstUnitTypes: LstUnitTypes[];
