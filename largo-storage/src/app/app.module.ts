@@ -39,6 +39,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { RequestInterceptorService } from './services/request-interceptor.service';
 import { ForgotPassword } from './models/auth';
+import { MoveinComponent } from './movein/movein.component';
 
 
 @NgModule({
@@ -62,14 +63,14 @@ import { ForgotPassword } from './models/auth';
     LoginComponent,
     ForgotPasswordComponent,
     PayRentFormComponent,
-    ConfirmationDataComponent
-
+    ConfirmationDataComponent,
+    MoveinComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
     NO_ERRORS_SCHEMA
   ],
- 
+
   imports: [
     CommonModule,
     NgtUniversalModule,

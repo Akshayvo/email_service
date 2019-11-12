@@ -160,7 +160,7 @@
                                     <label>Rate:</label>&nbsp; -->
                                     <!-- <input type="text" formControlName="MonthlyRate" class="form-control" [value]="MonthlyRateValue || MonthlyRateVR || defaultValue ||''"
                                     readonly> -->
-                                 <!-- ${{MonthlyRateValue || MonthlyRateVR || defaultValue}} 
+                                 <!-- ${{MonthlyRateValue || MonthlyRateVR || defaultValue}}
                                 </div>
                                 <div class="form-group readonly-form-control">
                                     <label>Reservation Charges:</label>&nbsp; -->
@@ -205,12 +205,17 @@
                         <label>Rate:</label>&nbsp;
                         <!-- <input type="text" formControlName="MonthlyRate" class="form-control" [value]="MonthlyRateValue || MonthlyRateVR || defaultValue ||''"
                         readonly> -->
-                     ${{MonthlyRateValue || MonthlyRateVR || defaultValue}} 
+                     ${{MonthlyRateValue || MonthlyRateVR || defaultValue}}
                     </div>
-                    <div class="form-group readonly-form-control">
+                    <div class="form-group readonly-form-control" *ngIf="deposit === undefined">
                         <label>Reservation Charges:</label>&nbsp;
                         <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
                         0.00
+                    </div>
+                    <div class="form-group readonly-form-control" *ngIf="deposit !== undefined">
+                        <label>Deposit Charges:</label>&nbsp;
+                        <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
+                        ${{deposit}}
                     </div>
                 </div>
             </div>

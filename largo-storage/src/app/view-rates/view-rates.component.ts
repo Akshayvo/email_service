@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { viewrates } from '../data/view-rates';
@@ -25,10 +26,13 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
   DescriptionVR: string;
   MonthlyRateVR: number;
-
+  unitTypeId: any;
+  deposit: any;
   openComponent = false;
+  showMoveIn = false;
   imagetype: any;
   imageBaseUrl: any;
+  curStage = 0;
 
  private isUnsubscribe$: Subscription;
 
@@ -40,6 +44,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private fetchDataService: FetchDataService,
     private uaParserService: UaParserService,
     private getMoveinChargesService: MoveInService,
+    private router: Router,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -69,20 +74,25 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
    * @param event1
    */
 
-  handleClick(event: Event, event1: Event) {
-    this.openComponent = true;
-    this.DescriptionVR = JSON.parse(JSON.stringify(event));
-    this.MonthlyRateVR = parseFloat(JSON.stringify(event1));
-
-    // console.log(event, event1, this.DescriptionVR, this.MonthlyRateVR);
-
+  handleClick(unitDescription: any, monthlyRate: any) {
+    this.curStage = 1;
+    this.DescriptionVR = unitDescription;
+    this.MonthlyRateVR = monthlyRate;
   }
 
-  getMoveInCharges(e: Event) {
-    console.log(e);
-    this.getMoveinChargesService.getMoveInCharges(e)
-      .subscribe(result => {
-        console.log(result);
+  getMoveInCharges(description: any, monthlyRate: any, intUnitTypeID: any) {
+      this.getMoveinChargesService.getMoveInCharges({
+        intUnitTypeID
+      }).subscribe(result => {
+        const {objCharges: { deposit = 0}} = result;
+        console.log('TCL: ViewRatesComponent -> getMoveInCharges -> deposit', deposit);
+        this.deposit = deposit;
+        this.DescriptionVR = description;
+        this.MonthlyRateVR = monthlyRate;
+        this.unitTypeId = intUnitTypeID;
+        this.curStage = 2;
+      }, err => {
+        console.error('Error while fetching moveIn Charges', err);
       });
   }
 
