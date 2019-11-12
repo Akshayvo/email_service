@@ -28,6 +28,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   MonthlyRateVR: number;
   unitTypeId: any;
   ProrateAmt: any;
+  Deposit: any;
   openComponent = false;
   showMoveIn = false;
   imagetype: any;
@@ -84,9 +85,12 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
       this.getMoveinChargesService.getMoveInCharges({
         intUnitTypeID
       }).subscribe(result => {
-        const {objCharges: { ProrateAmt = 0}} = result;
+        const {objCharges: { ProrateAmt = 0, Deposit = 0}} = result;
         this.ProrateAmt = ProrateAmt;
-        console.log('TCL: ViewRatesComponent -> getMoveInCharges -> this.ProrateAmt', this.ProrateAmt);
+        this.Deposit = Deposit;
+        console.log(result);
+        
+        console.log('TCL: ViewRatesComponent -> getMoveInCharges -> this.ProrateAmt', this.ProrateAmt, this.Deposit);
         this.DescriptionVR = description;
         this.MonthlyRateVR = monthlyRate;
         this.unitTypeId = intUnitTypeID;
@@ -100,7 +104,9 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   this.isUnsubscribe$ = this.fetchDataService.getData( )
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;     
+      console.log(unitTypesResponse);
+       
     });
   }
 

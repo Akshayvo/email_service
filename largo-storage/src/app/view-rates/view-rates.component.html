@@ -29,8 +29,8 @@
         <div [class.loader]="!showTable">
         </div>
         <div>
-            <app-reserve-unit-form *ngIf="curStage === 1" [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR"></app-reserve-unit-form>
-            <app-reserve-unit-form *ngIf="curStage === 2" [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR" [proRateAmount]="ProrateAmt"></app-reserve-unit-form>
+            <app-reserve-unit-form *ngIf="curStage === 1" [curStage]="curStage" [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR" [Deposit]="Deposit"></app-reserve-unit-form>
+            <app-reserve-unit-form *ngIf="curStage === 2" [curStage]="curStage" [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR" [proRateAmount]="ProrateAmt"></app-reserve-unit-form>
             <div *ngIf="curStage === 0">
                 <table>
                     <tHead [class.display]="!showTable">
@@ -54,7 +54,8 @@
                             <button (click)="handleClick(LstUnitTypes.Description, LstUnitTypes.MonthlyRate)"> Reserve</button>
                         </td>
                         <td colspan="2" class="py-2 px-4 border" *ngIf="LstUnitTypes.IsUnitsAvailable; else other">
-                          <!-- <a class="btn btn-lg " (click)="handleClick($event)" role="button">Reserve</a> -->
+                          <!-- <a class="btn btn-lg " (click)="ha
+                            $event)" role="button">Reserve</a> -->
                           <button (click)="getMoveInCharges(LstUnitTypes.Description, LstUnitTypes.MonthlyRate, LstUnitTypes.UnitTypeID)"> Move In</button>
                         </td>
                         <ng-template #other>

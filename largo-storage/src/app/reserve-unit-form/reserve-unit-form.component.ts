@@ -23,6 +23,7 @@ import { MatCalendarCellCssClasses } from '@angular/material/datepicker';
 import { Subscription } from 'rxjs';
 import * as moment from 'moment';
 
+import { MoveInService } from '../services/moveIn.service';
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -38,6 +39,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   @Input() DescriptionVR: string;
   @Input() MonthlyRateVR: number;
   @Input() proRateAmount?: number;
+  @Input() curStage: number;
+  @Input() Deposit: number;
 
   unitTypes: UnitTypes;
   lstUnitTypes: LstUnitTypes[];
@@ -115,32 +118,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   logOut = {};
 
+  // ProrateAmt: any;
 
-  config = {
-    // if objects array passed which key to be displayed defaults to description
-    displayKey: 'description',
-    // true/false for the search functionlity defaults to false,
-    search: true,
-    // height of the list so that if there are more no of items
-    // it can show a scroll defaults to auto. With auto height scroll will never appear
-    height: '140px',
-    // text to be displayed when no item is selected defaults to Select,
-    placeholder: 'Select State',
-    // a custom function using which user wants to sort the items.
-    // default is undefined and Array.sort() will be used in that case,
-    customComparator: () => {},
-    // limitTo: this.options.length,
-    // a number thats limits the no of options displayed in the UI similar to angular's limitTo pipe
-    // text to be displayed whenmore than one items are selected like Option 1 + 5 more
-    moreText: 'more',
-    // text to be displayed when no items are found while searching
-    noResultsFound: 'No results found!',
-    // label thats displayed in search input,
-    searchPlaceholder: 'Search',
-    // key on which search should be performed this will
-    // be selective search. if undefined this will be extensive search on all keys
-    searchOnKey: 'name',
-  };
 
   private  getLeadDaysUnsubscribe$: Subscription;
   private  getTenantInfoUnsubscribe$: Subscription;
@@ -161,7 +140,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     public router: Router,
     private datePipe: DatePipe,
     private leadDaysService: LeadDaysService,
-
+    private moveInService: MoveInService,
     ) {
     this.reserveUnitForm = this.formBuilder.group({
       objTenant: this.formBuilder.group({
@@ -286,21 +265,37 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   selectChangeHandler (event: any) {
 
     this.selectedDescription = JSON.stringify(event.target.value);
-
     const indexValue  = event.target.value;
     const  index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
-
     this.MonthlyRateValue = this.lstUnitTypes[index].MonthlyRate;
     this.unitTypeId = this.lstUnitTypes[index].UnitTypeID;
+    console.log(this.unitTypeId);
+    
     this.MoveIn.intUnitTypeID = JSON.stringify(this.unitTypeId);
-
+    
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
         MonthlyRate: this.MonthlyRateValue,
       }
-      ])
-    });
+    ])
+  });
+  if(this.curStage === 2) {
+    this.getMoveInCharges(this.unitTypeId);
   }
+  }
+
+  getMoveInCharges(intUnitTypeID: any) {
+    this.moveInService.getMoveInCharges({
+      intUnitTypeID
+    }).subscribe(result => {
+      const {objCharges: { ProrateAmt = 0}} = result;
+      this.proRateAmount = ProrateAmt;
+
+    }, err => {
+      console.error('Error while fetching moveIn Charges', err);
+    });
+}
+
 
   getLeadDays(data: any) {
     this.getLeadDaysUnsubscribe$ =  this.leadDaysService.getLeadDays(data)

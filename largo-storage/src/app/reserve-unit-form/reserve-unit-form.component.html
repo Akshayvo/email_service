@@ -17,7 +17,7 @@
                     <tr>
                         <td class="td-1">Rate</td>
                         <td> ${{this.reserveUnitForm.value.lstUnitTypes[0].MonthlyRate}}</td>
-                    </tr>
+                    </tr> 
                     <tr>
                         <td class="td-1">Move-In date</td>
                         <td>{{ this.reserveUnitForm.value.dteMoveIn }}</td>
@@ -210,10 +210,15 @@
                     <div class="form-group readonly-form-control" *ngIf="proRateAmount === undefined">
                         <label>Reservation Charges:</label>&nbsp;
                         <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
-                        0.00
+                        $0.00
                     </div>
                     <div class="form-group readonly-form-control" *ngIf="proRateAmount !== undefined">
-                        <label>Amount Due:</label>&nbsp;
+                        <label>Prorate Amout:</label>&nbsp;
+                        <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
+                        ${{proRateAmount}}
+                    </div>
+                    <div class="form-group readonly-form-control" *ngIf="proRateAmount !== undefined">
+                        <label>Prorate Amout:</label>&nbsp;
                         <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
                         ${{proRateAmount}}
                     </div>
