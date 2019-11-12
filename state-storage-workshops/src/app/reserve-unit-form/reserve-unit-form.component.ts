@@ -208,36 +208,36 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.getData();
-    this.getRentalPeriod();
-    this.getLeadDays(this.data);
+    // this.getData();
+    // this.getRentalPeriod();
+    // this.getLeadDays(this.data);
 // console.log(this.intLeadDaysFrom, this.intLeadDaysTo);
 
 
-    this.currentdate = new Date();
+    // this.currentdate = new Date();
 
-    this.fetchUSState();
+    // this.fetchUSState();
 
 
 
     // this.minDay = this.From.getDate();
     // this.maxDay = this.To.getDate();
-    if (window.localStorage) {
-      if (localStorage.getItem('strTenantToken')) {
-        this.getTenantInfo();
-      }
-    }
+    // if (window.localStorage) {
+    //   if (localStorage.getItem('strTenantToken')) {
+    //     this.getTenantInfo();
+    //   }
+    // }
 
 
-    console.log(this.DescriptionVR, this.MonthlyRateVR);
+  //   console.log(this.DescriptionVR, this.MonthlyRateVR);
 
-    this.reserveUnitForm.patchValue({
-      lstUnitTypes: ([{
-        Description: this.DescriptionVR,
-        MonthlyRate: this.MonthlyRateVR,
-        ReservationFee: 0.00,
-      }])
-    });
+  //   this.reserveUnitForm.patchValue({
+  //     lstUnitTypes: ([{
+  //       Description: this.DescriptionVR,
+  //       MonthlyRate: this.MonthlyRateVR,
+  //       ReservationFee: 0.00,
+  //     }])
+  //   });
   }
 
     public fetchUSState() {
