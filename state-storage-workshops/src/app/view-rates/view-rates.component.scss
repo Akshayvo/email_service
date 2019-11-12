@@ -78,6 +78,16 @@
 @import "../../styles.scss";
 
 
+.coming {
+  div {
+    height: 35rem;
+    width: 100%;
+    background: #efefef;
+    font-size: 2rem;
+    padding-top: 40%;
+  }
+}
+
 .display-content {
   display: contents;
 }
