@@ -40,11 +40,33 @@
     div {
       height: 35rem;
       width: 100%;
-      background: #efefef;
+      background: #bbcef6;
       font-size: 2rem;
       padding-top: 40%;
     }
   }
+}
+.minico {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #000;
+  .btn-primary{
+    font-size: 0.7rem
+  }
+  .boldtext{
+    font-weight: 800;
+  }
+  .boldtext1{
+    font-size: 0.8rem
+  }
+  .minico-insure{
+    img{
+      width: 120px;
+    }
+  }
+}
+.key{
+  width: -webkit-fill-available;
 }
 .easycode{
   align-items: center;
@@ -57,9 +79,7 @@
     
   }
 }
-.key{
-  background-color: #003189;
-}
+
 .easycode-viewrates{
   color: #fff;
   background-color: #000;

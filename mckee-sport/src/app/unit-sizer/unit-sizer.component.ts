@@ -21,7 +21,7 @@ export class UnitSizerComponent implements OnInit {
       name: 'description',
       content: `If you're not sure how much self storage space you need, use our unit sizer page to help visualize what will fit in our self storage unit sizes.`
     });
-    this.titleService.setTitle(`Unit Sizer | McKeesport Storage`);
+    this.titleService.setTitle(`Unit Sizer | McKeesport Storage: Christy Park`);
   }
 
   ngOnInit() {

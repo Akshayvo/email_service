@@ -39,7 +39,7 @@ export class ContactComponent implements OnInit {
       name: 'description',
       content: `Do you have a question about your account, or our self storage, boat and recreational vehicle storage? Use our contact form, or call us today!`
     });
-    this.titleService.setTitle('Contact Us | McKeesport Storage');
+    this.titleService.setTitle('Contact Us | McKeesport Storage: Christy Park');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],

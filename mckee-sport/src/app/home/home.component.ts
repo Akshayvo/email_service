@@ -33,9 +33,9 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `McKeesport Storage is your one-stop-shop for all things storage in McKeesport, PA`
+      content: ` McKeesport Storage: Christy Park is your one-stop-shop for all things storage in McKeesport, PA`
     });
-    this.titleService.setTitle('Self, Boat & RV Storage in McKeesport| McKeesport Storage');
+    this.titleService.setTitle('Self, Boat & RV Storage in McKeesport | McKeesport Storage: Christy Park');
   }
 
   public navigate(location: any) {

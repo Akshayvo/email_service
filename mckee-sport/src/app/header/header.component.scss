@@ -20,7 +20,7 @@ a {
 }
 
 .nav-link {
-  color: $fontColor;
+  color: $primary;
   font-weight: 600;
   padding: 30px;
 }
@@ -35,8 +35,8 @@ a {
 }
 
 .nav-link-active {
-  color: $primary;
-  border-bottom: 5px solid $primary;
+  color: #eb2927 !important;
+  border-bottom: 5px solid #eb2927;
 }
 
 .display {
@@ -54,6 +54,9 @@ a {
       height: 100%;
     }
   }
+  .nav-item{
+    font-size: 0.9rem;
+    }
 
 }
 @media screen and (max-width:1199px) and (min-width:992px){
@@ -61,10 +64,9 @@ a {
     img{
       width: 300px;
     }
-    // .nav-item{
-    //  padding-left :0.3rem;
-    //  padding-right: 0.3rem;
-    // }
+    .nav-item{
+    font-size: 0.9rem;
+    }
     // .nav-link{
     //   padding: 4px;
     // }

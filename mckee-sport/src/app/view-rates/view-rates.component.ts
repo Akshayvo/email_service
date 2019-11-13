@@ -21,9 +21,9 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to view our rates, and unit availability, then make your reservation by filling out a short form, or calling our management team, today!`
+      content: ` Take a moment to view  our unit availability, then make your reservation by filling out a short form, or calling our management team, today!`
     });
-    this.titleService.setTitle('View Rates | McKeesport Storage');
+    this.titleService.setTitle('Unit Availability | McKeesport Storage: Christy Park');
   }
 
   ngOnInit() {

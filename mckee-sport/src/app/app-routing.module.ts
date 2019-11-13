@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'view-rates', component: ViewRatesComponent },
+  { path: 'unit-availability', component: ViewRatesComponent },
   { path: 'pay-rent', component: PayRentComponent},
   { path: 'unit-sizer', component: UnitSizerComponent},
   { path: 'review', component: HomeComponent,

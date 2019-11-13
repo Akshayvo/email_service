@@ -24,7 +24,7 @@ export class StorageTipsComponent implements OnInit {
       name: 'description',
       content: `Take advantage of our self storage and vehicle storage expertise. Use our list of storage tips to make your stay with us a breeze!`
     });
-    this.titleService.setTitle('Storage Tips | McKeesport Storage');
+    this.titleService.setTitle('Storage Tips | McKeesport Storage: Christy Park');
   }
 
   ngOnInit() {

@@ -22,7 +22,7 @@ export class PayRentComponent implements OnInit {
       name: 'description',
       content: `Pay your rent, and manage your account with our handy tenant portal! Follow the instructions, or call our office to learn how to access your account!`
     });
-    this.titleService.setTitle('Pay Rent | McKeesport Storage');
+    this.titleService.setTitle('Pay Rent | McKeesport Storage: Christy Park');
   }
 
   ngOnInit() {
