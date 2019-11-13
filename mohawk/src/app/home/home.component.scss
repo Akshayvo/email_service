@@ -32,9 +32,9 @@
 
 // Get started Section
 .getStarted {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Mohawk/mohawk-self-storage-jumbotron-outdoor.jpg") center top no-repeat fixed;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Mohawk/mohawk-self-storage-front-lawn.jpg") center top no-repeat fixed;
   // background-size: cover;
-  background-position: top;
+  background-position: center;
 
   .get-started {
     left: 0;
@@ -56,10 +56,10 @@
   height: 80vh;
 
   .jumbotron {
-    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Mohawk/mohawk-self-storage-jumbotron-outdoor.jpg");
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Mohawk/mohawk-self-storage-front-lawn.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 80vh;
     color: $fontColor;
     overflow: hidden;
@@ -580,8 +580,16 @@
 
     .jumbotron {
       height: 95vh;
-      background-position: center left;
-
+      background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        color: $fontColor;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+    
 
       .jumbotron-skew-style {
         display: none;
