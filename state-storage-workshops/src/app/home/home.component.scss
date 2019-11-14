@@ -432,8 +432,7 @@ h2{
         width: 400px;
         position: absolute;
         bottom: 0;
-        text-align: center;
-        top:25%;
+        top: 30%;
       }
     }
 
@@ -448,18 +447,19 @@ h2{
       }
     }
   }
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 768px) and (max-height: 853px) and (min-height: 641px) {
   .disp {
     p {
       font-size: 0.8rem;
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) and (max-height: 853px) and (min-height: 641px) {
+
   .jumbotron-skew-text {
     top: 25%;
     p{
@@ -475,10 +475,19 @@ h2{
       font-size: 0.8rem;
     }
   }
+  .disp {
+    p {
+      font-size: 0.8rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
 }
 
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) and (max-height: 640px) and (min-height: 481px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) and (max-height: 640px) and (min-height: 572px) {
   .jumbotron-bottom {
     display: flex;
     align-items: center;
@@ -503,20 +512,20 @@ h2{
       }
     }
   }
-
   .disp {
     p {
       font-size: 0.8rem;
     }
 
     h1 {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
     }
   }
+  
 }
 
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) and (max-height: 480px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) and (max-height: 571px) {
   .disp {
     display: none;
   }
@@ -559,12 +568,16 @@ h2{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (max-width: 767px) and (min-width: 481px) {
+@media only screen and (max-width: 767px) and (min-width: 576px) {
   .jumbotron-top {
     height: 100vh;
 
     .jumbotron {
       height: 100vh;
+
+      .jumbotron-skew-text {
+        width: 325px;
+      }
 
       .jumbotron-skew-style {
         width: 85%;
@@ -601,12 +614,12 @@ h2{
   }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 481px)  and (max-height: 853px) and (min-height: 700px) {
+@media only screen and (max-width: 767px) and (min-width: 576px)  and (max-height: 853px) and (min-height: 700px) {
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
-        top: 18%;
-        width:260px;
+        // top: 18%;
+        // width:260px;
         padding-left: 20px;
         p{
           font-size: 0.9rem;
@@ -626,12 +639,16 @@ h2{
     }
   }
 }
-@media only screen and (max-width: 767px) and (min-width: 481px)  and (max-height: 699px) and (min-height: 594px) {
+@media only screen and (max-width: 767px) and (min-width: 576px)  and (max-height: 699px) and (min-height: 594px) {
   .jumbotron-top {
     .jumbotron {
+
+      h1 {
+        font-size: 1.5rem;
+      }
       .jumbotron-skew-text {
-        top: 15%;
-        width:260px;
+        top: 35%;
+        // width:260px;
         padding-left: 20px;
         p{
           font-size: 0.8rem;
@@ -653,7 +670,7 @@ h2{
 }
 
 
-@media only screen and (max-width: 767px) and (min-width: 481px)  and (max-height: 593px) {
+@media only screen and (max-width: 767px) and (min-width: 576px)  and (max-height: 593px) {
   .disp {
     display: none;
   }
@@ -703,7 +720,7 @@ h2{
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 480px) and (min-width:360px) {
+@media only screen and (max-width: 575px) and (min-width:360px) {
   .disp {
     display: none;
   }

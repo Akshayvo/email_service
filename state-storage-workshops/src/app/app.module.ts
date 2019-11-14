@@ -39,6 +39,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { RequestInterceptorService } from './services/request-interceptor.service';
 import { ForgotPassword } from './models/auth';
+import { RentNowComponent } from './rent-now/rent-now.component';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { ForgotPassword } from './models/auth';
     LoginComponent,
     ForgotPasswordComponent,
     PayRentFormComponent,
-    ConfirmationDataComponent
+    ConfirmationDataComponent,
+    RentNowComponent
 
   ],
   schemas: [

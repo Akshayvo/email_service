@@ -13,6 +13,7 @@ import { ForgotPassword } from './models/auth';
 import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ReserveComponent } from './reserve/reserve.component';
+import { RentNowComponent } from './rent-now/rent-now.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'storageTips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
+  { path: 'rent-now', component: RentNowComponent },
   { path: 'pay-rent', 
   component: PaymentComponent,
   children: [
