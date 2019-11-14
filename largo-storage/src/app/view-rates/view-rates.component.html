@@ -22,15 +22,31 @@
 </div> -->
 
 <div class="contentHolder">
+  
   <div class="container pb-5   padding-top">
     <h1 class="py-5 text-center">Affordable Storage</h1>
     <div class="row bg-light background-padding">
       <div class="col-lg-7 col-md-12 px-4 scroll-wrapper pb-lg-0 pb-md-5" [class.col-lg-12]="curStage !== 0">
         <div [class.loader]="!showTable">
         </div>
+        <div [class.loader]="showLoader" class="loader-position"> 
+          </div>
         <div>
-            <app-reserve-unit-form *ngIf="curStage === 1" [curStage]="curStage" [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR" [Deposit]="Deposit"></app-reserve-unit-form>
-            <app-reserve-unit-form *ngIf="curStage === 2" [curStage]="curStage" [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR" [proRateAmount]="ProrateAmt"></app-reserve-unit-form>
+            <app-reserve-unit-form *ngIf="curStage === 1" [curStage]="curStage" [clickedReserve]="clickedReserve"
+              [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR">
+            </app-reserve-unit-form>
+            <app-reserve-unit-form *ngIf="curStage === 2" 
+              [curStage]="curStage" [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR" 
+              [proRateAmount]="ProrateAmt"
+              [ProrateAmtTax]="ProrateAmtTax"
+              [RateTax]="RateTax"
+              [Deposit]="Deposit"
+              [DepositTax]="DepositTax"
+              [OthDeposit]="OthDeposit"
+              [Setup]="Setup"
+              [SetupTax]="SetupTax"
+            >
+            </app-reserve-unit-form>
             <div *ngIf="curStage === 0">
                 <table>
                     <tHead [class.display]="!showTable">

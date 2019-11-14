@@ -21,6 +21,10 @@ export class ConfirmationDataComponent implements OnInit {
 
 @Input() option: any;
 
+@Input() TotalChargesAmount: number;
+
+@Input() TotalTaxAmount: number;
+
 index: string;
 
 stateString: string;

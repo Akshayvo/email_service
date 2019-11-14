@@ -101,18 +101,35 @@
                             Rate
                         </td>
                         <td>
-                            {{this.reserveUnitForm.value.lstUnitTypes[0].MonthlyRate}}
+                            ${{this.reserveUnitForm.value.lstUnitTypes[0].MonthlyRate}}
                         </td>
                     </tr>
-                    <tr>
+                    <tr >
                         <td>
                             Reservation Charges
                         </td>
                         <td>
-                            ${{this.reserveUnitForm.value.lstUnitTypes[0].ReservationFee}}
+                            ${{this.reserveUnitForm.value.lstUnitTypes[0].ReservationFee}} + {{this.reserveUnitForm.value.lstUnitTypes[0].ReservationFeeTax}}
                         </td>
                     </tr>
+                    <tr >
+                            <td>
+                                Total Charges
+                            </td>
+                            <td>
+                                ${{TotalChargesAmount}}
+                            </td>
+                        </tr>
                     <tr>
+                        <tr >
+                                <td>
+                                    Total Tax Amount
+                                </td>
+                                <td>
+                                    ${{TotalTaxAmount}}
+                                </td>
+                            </tr>
+                        <tr>
                         <td>
                             Move In Date
                         </td>

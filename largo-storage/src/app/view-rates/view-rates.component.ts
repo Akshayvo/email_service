@@ -10,6 +10,7 @@ import { UaParserService } from '../services/ua-parser.service';
 
 import { Subscription } from 'rxjs';
 import { MoveInService } from '../services/moveIn.service';
+import { objCharges } from '../models/movein';
 
 @Component({
   selector: 'app-view-rates',
@@ -34,6 +35,17 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   imagetype: any;
   imageBaseUrl: any;
   curStage = 0;
+  DepositTax: number;
+  Rate: number;
+  RateTax: number;
+  ProrateAmtTax: number;
+  OthDeposit: number;
+  Setup: number;
+  SetupTax: number;
+  showLoader = false;
+
+  clickedReserve = false;
+  objCharges: objCharges;
 
  private isUnsubscribe$: Subscription;
 
@@ -79,16 +91,37 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     this.curStage = 1;
     this.DescriptionVR = unitDescription;
     this.MonthlyRateVR = monthlyRate;
+    this.clickedReserve = true;
   }
 
   getMoveInCharges(description: any, monthlyRate: any, intUnitTypeID: any) {
+    this.showLoader = true;
       this.getMoveinChargesService.getMoveInCharges({
         intUnitTypeID
       }).subscribe(result => {
-        const {objCharges: { ProrateAmt = 0, Deposit = 0}} = result;
+        this.showLoader = false;
+        const {objCharges: { 
+          ProrateAmt = 0, 
+          Deposit = 0, 
+          DepositTax = 0,
+          Rate = 0,
+          RateTax= 0,
+          ProrateAmtTax = 0,
+          OthDeposit = 0,
+          Setup = 0,
+          SetupTax = 0
+         }} = result;
         this.ProrateAmt = ProrateAmt;
         this.Deposit = Deposit;
-        console.log(result);
+        this.DepositTax = DepositTax;
+        this.Rate = Rate;
+        this.RateTax = RateTax;
+        this.ProrateAmtTax = ProrateAmtTax;
+        this.OthDeposit = OthDeposit;
+        this.Setup = Setup;
+        this.SetupTax = SetupTax;
+
+        console.log(this.objCharges, result);
         
         console.log('TCL: ViewRatesComponent -> getMoveInCharges -> this.ProrateAmt', this.ProrateAmt, this.Deposit);
         this.DescriptionVR = description;

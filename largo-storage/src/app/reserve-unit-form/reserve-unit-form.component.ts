@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, OnDestroy, ViewEncapsulation } from '@angular/core';
-import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, FormArray, AbstractControl, ValidatorFn } from '@angular/forms';
 
 import { AddTenantService } from '../services/add-tenant.service';
 import { FetchDataService } from '../services/fetch-data.service';
@@ -40,7 +40,15 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   @Input() MonthlyRateVR: number;
   @Input() proRateAmount?: number;
   @Input() curStage: number;
-  @Input() Deposit: number;
+  @Input() Deposit?: number;
+  @Input() DepositTax?: number;
+  @Input() ProrateAmtTax?: number;
+  @Input() OthDeposit?: number;
+  @Input() Setup?: number;
+  @Input() SetupTax?: number;
+  @Input() RateTax?: number;
+  @Input() clickedReserve?: boolean;
+  
 
   unitTypes: UnitTypes;
   lstUnitTypes: LstUnitTypes[];
@@ -74,7 +82,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   ReservationFeeValue: number;
   reservationInProgress = false;
   MonthlyRateValue: number;
-
+  defaultReservationFee: number;
+  defaultReservationFeeTax: number;
   defaultValue: number;
   unitTypeId: number;
   currentdate: Date;
@@ -118,6 +127,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   logOut = {};
 
+  TotalTaxAmount: number;
+  TotalChargesAmount: number;
   // ProrateAmt: any;
 
 
@@ -166,12 +177,28 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       lstRentalPeriods: new FormArray([
         this.initPeriodDescription(),
       ]),
-      dteMoveIn: ['', Validators.required],
+      dteMoveIn: ['', 
+      conditionalValidator(
+        (() => this.clickedReserve === true),
+        Validators.required
+      )
+    ],
     });
+    
+
+    function conditionalValidator(condition: (() => boolean), validator: ValidatorFn): ValidatorFn {
+      return (control: AbstractControl): {[key: string]: any} => {
+        if (! condition()) {
+          return null;
+        }
+        return validator(control);
+      }
+    }
 
     this.MoveInStringParent = this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, 'yyyy-MM-dd');
   }
 
+  
   initPeriodDescription() {
     return this.formBuilder.group({
       PeriodDescription: ['']
@@ -192,6 +219,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.getLeadDays(this.data);
 // console.log(this.intLeadDaysFrom, this.intLeadDaysTo);
 
+console.log("clicked reserve", this.clickedReserve);
 
     this.currentdate = new Date();
 
@@ -214,7 +242,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       lstUnitTypes: ([{
         Description: this.DescriptionVR,
         MonthlyRate: this.MonthlyRateVR,
-        ReservationFee: 0.00,
+        ReservationFee: this.ReservationFee,
       }])
     });
   }
@@ -288,8 +316,32 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.moveInService.getMoveInCharges({
       intUnitTypeID
     }).subscribe(result => {
-      const {objCharges: { ProrateAmt = 0}} = result;
+      // const {objCharges: { ProrateAmt = 0}} = result;
+      // this.proRateAmount = ProrateAmt;
+      
+      const {objCharges: { 
+        ProrateAmt = 0, 
+        Deposit = 0, 
+        DepositTax = 0,
+        Rate = 0,
+        RateTax= 0,
+        ProrateAmtTax = 0,
+        OthDeposit = 0,
+        Setup = 0,
+        SetupTax = 0,
+        TotalTaxAmount = 0,
+        TotalChargesAmount = 0,
+       }} = result;
       this.proRateAmount = ProrateAmt;
+      this.Deposit = Deposit;
+      this.DepositTax = DepositTax;
+      this.RateTax = RateTax;
+      this.ProrateAmtTax = ProrateAmtTax;
+      this.OthDeposit = OthDeposit;
+      this.Setup = Setup;
+      this.SetupTax = SetupTax;
+      this.TotalTaxAmount = TotalTaxAmount;
+      this.TotalChargesAmount = TotalChargesAmount;
 
     }, err => {
       console.error('Error while fetching moveIn Charges', err);
@@ -359,6 +411,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
       this.defaultValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
       const defaultUnitTypeValue = unitTypesResponse.lstUnitTypes[0].Description;
+      this.defaultReservationFee = unitTypesResponse.lstUnitTypes[0].ReservationFee;
+      this.defaultReservationFeeTax = unitTypesResponse.lstUnitTypes[0].ReservationFeeTax;
       this.MoveIn.intUnitTypeID = JSON.stringify(unitTypesResponse.lstUnitTypes[0].UnitTypeID);
 
       if (!this.DescriptionVR && !this.MonthlyRateVR) {
@@ -366,7 +420,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           lstUnitTypes: ([{
             Description: defaultUnitTypeValue,
             MonthlyRate: this.defaultValue,
-            ReservationFee: 0.00,
+            ReservationFee: this.defaultReservationFee,
           }])
         });
       }
@@ -391,8 +445,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   this.addTenantUnsubscribe$ =  this.addTenantService.addTenant(data)
       .subscribe(result => {
       localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
-      this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
-      this.makeAReservation(this.MoveIn);
+      if (this.clickedReserve == true) { 
+        this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+        this.makeAReservation(this.MoveIn);
+      } else {
+        this.moveIn(this.MoveIn);
+      }
       console.log(result);
     });
   }
@@ -401,8 +459,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
    this.updateTenantUnsubscribe$ = this.tenantInfoService.updateTenant(data)
       .subscribe(result => {
         console.log(result);
-        this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
-        this.makeAReservation(this.MoveIn);
+        if (this.clickedReserve == true) { 
+          this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+          this.makeAReservation(this.MoveIn);
+        } else {
+          this.moveIn(this.MoveIn);
+        }
       });
   }
 
@@ -438,6 +500,39 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     );
   }
 
+  moveIn(strConfirmation: any) {
+    this.reservationInProgress = true;
+    this.makeAReservationUnsubscribe$ =  this.moveInService.moveIn(strConfirmation)
+      .subscribe(strConfirmationResponse => {
+        this.strConfirmation = strConfirmationResponse.strConfirmation;
+        this.showConfirmation = false;
+        this.submitted = false;
+         this.tokenExit = localStorage.getItem('strTenantToken');
+  
+        this.existTempToken = localStorage.getItem('strTempTenantToken');
+  
+        if (this.existTempToken) {
+          localStorage.removeItem('strTempTenantToken');
+        }
+        this.reservationInProgress = false;
+      }, (err: any) => {
+        if (err.status === 403) {
+          this.showConfirmation = false;
+          this.showMoveInDateError = true;
+          this.count = 0;
+          // localStorage.removeItem('strTempTenantToken');
+        } else {
+          if (err.status === 401 ) {
+            localStorage.removeItem('strTempTenantToken');
+            this.count = 0;
+          }
+        }
+        this.reservationInProgress = false;
+      }
+      );
+    }
+
+    
   signOut(logOut: any) {
     this.signOutService.signOut(logOut)
     .subscribe( result => {
@@ -468,15 +563,25 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     } else {
       if (this.existingTenantToken) {
         if (this.isValueUpdated) {
-          this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
-          this.makeAReservation(this.MoveIn);
+          if(this.clickedReserve == true) {
+            this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+            this.makeAReservation(this.MoveIn);
+          } else {
+            this.moveIn(this.MoveIn);
+            console.log("move in", this.clickedReserve);
+          }
         } else {
           this.updateTenant(this.reserveUnitForm.value);
         }
       } else {
         if (this.existTempToken) {
-          this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
-          this.makeAReservation(this.MoveIn);
+          if (this.clickedReserve == true) {
+            this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+            this.makeAReservation(this.MoveIn);
+          } else {
+            this.moveIn(this.MoveIn);
+            console.log("move in", this.clickedReserve);
+          }
         } else {
           this.addTenant(this.reserveUnitForm.value);
           this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;

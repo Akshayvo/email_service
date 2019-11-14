@@ -129,7 +129,8 @@
                 <div class="col-lg-4 col-md-6 form-group">
                     <label>Zip Code*</label>
                     <input type="text" formControlName="ZIP" class="form-control" placeholder="Enter Zip Code"
-                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.ZIP.errors }"/>
+                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.ZIP.errors }"
+                    />
                     <div *ngIf="submitted && f.objTenant.controls.ZIP.errors" class="invalid-feedback">
                         <small class="form-text text-muted" *ngIf="f.objTenant.controls.ZIP.errors.required">Please fill out this field</small>
                     </div>
@@ -170,20 +171,22 @@
                             </div>
                         </div>
                  </div>
-
-                 <div class=" pb-5">
-                     <div class=" form-group custom-date-css">
+                 <!-- *ngIf="proRateAmount === undefined" -->
+                 <div class=" pb-5" >
+                     <div class=" form-group custom-date-css" *ngIf="clickedReserve">
                          <label>Move In Date*</label>&nbsp;
-                         <mat-form-field class="example-full-width " class="form-control" placeholder="select your date" [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }">
+                         <mat-form-field class="example-full-width " class="form-control" placeholder="select your date" 
+                         [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }"
+                         >
                             <input matInput [matDatepicker]="picker" formControlName="dteMoveIn"  [min]="From" [max]="To" readonly (click)="picker.open()">
 
                             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                             <mat-datepicker  [dateClass]="dateClass" #picker></mat-datepicker>
 
                           </mat-form-field>
-                          <div *ngIf="submitted  && f.dteMoveIn.errors" class="invalid-feedback">
-                            <small class="form-text text-muted" *ngIf="f.dteMoveIn.errors.required">Please fill out this field</small>
-                        </div>
+                              <div *ngIf="submitted  && f.dteMoveIn.errors" class="invalid-feedback">
+                                <small class="form-text text-muted" *ngIf="f.dteMoveIn.errors.required">Please fill out this field</small>
+                            </div>
                          <!-- <input type="date" [min]="From" [max]="To"
                          class="form-control" [value]="currentDate" formControlName="dteMoveIn" [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }" /> -->
 
@@ -201,26 +204,53 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group readonly-form-control" >
+                    <!-- class="form-group readonly-form-control" -->
+                    <div  >
                         <label>Rate:</label>&nbsp;
                         <!-- <input type="text" formControlName="MonthlyRate" class="form-control" [value]="MonthlyRateValue || MonthlyRateVR || defaultValue ||''"
                         readonly> -->
                      ${{MonthlyRateValue || MonthlyRateVR || defaultValue}}
+                     <span *ngIf="RateTax > 0">
+                         + ${{RateTax}} (Tax)
+                     </span>
                     </div>
-                    <div class="form-group readonly-form-control" *ngIf="proRateAmount === undefined">
+                    <div class="form-group readonly-form-control" *ngIf="proRateAmount === undefined && defaultReservationFee !== undefined">
                         <label>Reservation Charges:</label>&nbsp;
                         <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
-                        $0.00
+                        ${{ ReservationFee || defaultReservationFee}}
+                        <span *ngIf="defaultReservationFeeTax !== undefined">
+                                + ${{defaultReservationFeeTax }} (Tax)
+                            </span>
                     </div>
-                    <div class="form-group readonly-form-control" *ngIf="proRateAmount !== undefined">
-                        <label>Prorate Amout:</label>&nbsp;
+                
+                    <div  *ngIf="proRateAmount !== undefined">
+                        <label>Prorate Amount:</label>&nbsp;
                         <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
-                        ${{proRateAmount}}
+                        ${{proRateAmount}} 
+                        <span *ngIf="proRateTax > 0">
+                                + ${{ProrateTax}} (Tax)
+                            </span>
                     </div>
-                    <div class="form-group readonly-form-control" *ngIf="proRateAmount !== undefined">
-                        <label>Prorate Amout:</label>&nbsp;
+                    <div  *ngIf="Deposit > 0">
+                        <label>Deposit Amount:</label>&nbsp;
                         <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
-                        ${{proRateAmount}}
+                        ${{Deposit}}
+                        <span *ngIf="DepositTax > 0.0">
+                                + ${{DepositTax}} (Tax)
+                            </span>
+                    </div>
+                    <div  *ngIf="OthDeposit > 0">
+                        <label>Other Deposit:</label>&nbsp;
+                        <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
+                        ${{OthDeposit}}
+                    </div>
+                    <div  *ngIf="Setup > 0">
+                        <label>Set Up:</label>&nbsp;
+                        <!-- <input type="text" class="form-control" formControlName="ReservationFee" [value]="0.00" readonly> -->
+                        ${{Setup}}
+                        <span *ngIf="SetupTax > 0.0">
+                                + ${{SetupTax}} (Tax)
+                            </span>
                     </div>
                 </div>
             </div>
@@ -234,12 +264,20 @@
 
 
 
-            <app-confirmation-data *ngIf="count == 1" [reserveUnitForm]="reserveUnitForm" [showConfirmation]=showConfirmation [option]="option"></app-confirmation-data>
+            <app-confirmation-data *ngIf="count == 1" 
+            [reserveUnitForm]="reserveUnitForm" 
+            [showConfirmation]="showConfirmation"
+            [TotalTaxAmount]="TotalTaxAmount"
+            [TotalChargesAmount]="TotalChargesAmount"
+            [option]="option"></app-confirmation-data>
 
             <div class="form-group text-right">
                 <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12" *ngIf="count === 0" (click)="handleClick()">Next</button>
                 <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 my-2" *ngIf="count === 1" (click)="handlePrevious()">Previous</button>
-                <button type="submit" class="btn btn-primary ml-lg-4 ml-md-2 ml-sm-auto col-lg-3 col-md-4 col-sm-12 " [disabled]="!!reservationInProgress" *ngIf="count === 1">Reserve</button>
+                <button type="submit" class="btn btn-primary ml-lg-4 ml-md-2 ml-sm-auto col-lg-3 col-md-4 col-sm-12 " 
+                [disabled]="!!reservationInProgress" *ngIf="count === 1 && clickedReserve">Reserve</button>
+                <button type="submit" class="btn btn-primary ml-lg-4 ml-md-2 ml-sm-auto col-lg-3 col-md-4 col-sm-12 "
+                [disabled]="!!reservationInProgress" *ngIf="count === 1 && !clickedReserve">Move In</button>
             </div>
         </form>
     </ng-template>
