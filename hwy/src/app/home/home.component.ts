@@ -5,6 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, feature } from '../data/home';
 import { jumbotronHome } from '../data/blurb';
+import { CanonicalService } from '../services/canonical.service';
 
 
 @Component({
@@ -26,15 +27,17 @@ export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
     private titleService: Title,
-    private meta: Meta
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Hwy 412 Mini Storage offers a wide variety of clean, affordable mini storage
-      units, and parking for RVs, boats, or other vehicles! `
-    });
-    this.titleService.setTitle('Storage Units In Sprindale, AR | Hwy 214 Mini Storage');
-  }
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `Hwy 412 Mini Storage offers a wide variety of clean, affordable mini storage
+        units, and parking for RVs, boats, or other vehicles! `
+      });
+      this.titleService.setTitle('Storage Units In Sprindale, AR | Hwy 214 Mini Storage');
+    }
 
   public navigate(location: any) {
     this.router.navigate([location]);

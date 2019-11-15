@@ -3,6 +3,7 @@ import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { storageTip, storageTipAccordion } from '../data/storage';
 import { storageTips } from '../data/blurb';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-storage-tips',
@@ -18,13 +19,15 @@ export class StorageTipsComponent implements OnInit {
   constructor(@Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Make your self storage experience a carefree one with our helpful storage tips!`
-    });
-    this.titleService.setTitle('Storage Tips | Hwy 412 Mini Storage');
-  }
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `Make your self storage experience a carefree one with our helpful storage tips!`
+      });
+      this.titleService.setTitle('Storage Tips | Hwy 412 Mini Storage');
+    }
 
   ngOnInit() {
     this.fetchStorageTip();

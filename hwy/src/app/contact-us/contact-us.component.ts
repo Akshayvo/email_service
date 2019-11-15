@@ -5,6 +5,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
 import { contactUs } from '../data/blurb';
+import { CanonicalService } from '../services/canonical.service';
 
 
 @Component({
@@ -34,22 +35,24 @@ export class ContactUsComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     private formBuilder: FormBuilder,
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Do you have a question about our self storage or vehicle storage solutions?
-      Use our helpful contact form or call (479) 202-3911 today!`
-    });
-    this.titleService.setTitle('Contact Us | Hwy 412 Mini Storage');
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `Do you have a question about our self storage or vehicle storage solutions?
+        Use our helpful contact form or call (479) 202-3911 today!`
+      });
+      this.titleService.setTitle('Contact Us | Hwy 412 Mini Storage');
 
-    this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      phone: ['', [Validators.required,
-              Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      subject: [''],
-  });
+      this.contactForm = this.formBuilder.group({
+        name: ['', Validators.required],
+        phone: ['', [Validators.required,
+                Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+        email: ['', [Validators.required, Validators.email]],
+        message: ['', Validators.required],
+        subject: [''],
+    });
   }
 
   ngOnInit() {

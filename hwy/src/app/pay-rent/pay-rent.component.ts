@@ -3,6 +3,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { payment} from '../data/payment';
 import { contact } from '../data/contact';
 import { payRent } from '../data/blurb';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-pay-rent',
@@ -18,14 +19,16 @@ export class PayRentComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Pay your rent online here by following the instructions on this page.`
-    });
-    this.titleService.setTitle('Pay Rent | Hwy 412 Mini Storage');
-  }
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `Pay your rent online here by following the instructions on this page.`
+      });
+      this.titleService.setTitle('Pay Rent | Hwy 412 Mini Storage');
+    }
 
   ngOnInit() {
     this.fetchPayment();
