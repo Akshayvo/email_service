@@ -4,6 +4,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-contact',
@@ -31,25 +32,27 @@ export class ContactComponent implements OnInit {
     private emailService: EmailService,
     private titleService: Title,
     private formBuilder: FormBuilder,
-    private meta: Meta
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Have a question about our self storage units or RV parking spaces?
-                Use our convenient contact form or the contact information here to
-                speak with one of our friendly and knowledgeable managers!`
-    });
-    this.titleService.setTitle('Contact Us | Fortress Mini Storage');
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `Have a question about our self storage units or RV parking spaces?
+                  Use our convenient contact form or the contact information here to
+                  speak with one of our friendly and knowledgeable managers!`
+      });
+      this.titleService.setTitle('Contact Us | Fortress Mini Storage');
 
-    this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      phone: ['', [Validators.required,
-              Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      subject: [''],
-  });
-  }
+      this.contactForm = this.formBuilder.group({
+          name: ['', Validators.required],
+          phone: ['', [Validators.required,
+                  Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+          email: ['', [Validators.required, Validators.email]],
+          message: ['', Validators.required],
+          subject: [''],
+      });
+    }
 
   ngOnInit() {
     this.fetchContactDetails();

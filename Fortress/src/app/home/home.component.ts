@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, feature } from '../data/home';
+import { CanonicalService } from '../services/canonical.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -21,16 +22,18 @@ export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
     private titleService: Title,
-    private meta: Meta
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Fortress Mini Storage has been providing Orchards and
-                Clifton with friendly, high quality customer service and convenient,
-                clean self storage access all at an affordable price since 1989!`
-    });
-    this.titleService.setTitle('Family Owned Storage Units Near Vancouver, WA | Fortress Mini Storage');
-  }
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `Fortress Mini Storage has been providing Orchards and
+                  Clifton with friendly, high quality customer service and convenient,
+                  clean self storage access all at an affordable price since 1989!`
+      });
+      this.titleService.setTitle('Family Owned Storage Units Near Vancouver, WA | Fortress Mini Storage');
+    }
 
   public navigate(location: any) {
     this.router.navigate([location]);

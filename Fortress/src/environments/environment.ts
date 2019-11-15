@@ -7,7 +7,8 @@ export const environment = {
   errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   appId: 'Fortress',
-  VERSION: require('../../package.json').version
+  VERSION: require('../../package.json').version,
+  websiteUrl: 'https://fortressministorage.com'
 };
 /*
  * For easier debugging in development mode, you can import the following file

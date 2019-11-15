@@ -2,6 +2,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { storagePoints, storageTips } from '../data/storage';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-storage-tips',
@@ -17,14 +18,16 @@ export class StorageTipsComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `We know moving can be a hassle so we've compiled a short list of
-                top self storage tips to help make your experience easier!`
-    });
-    this.titleService.setTitle('Storage Tips | Fortress Mini Storage');
-  }
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `We know moving can be a hassle so we've compiled a short list of
+                  top self storage tips to help make your experience easier!`
+      });
+      this.titleService.setTitle('Storage Tips | Fortress Mini Storage');
+    }
 
   ngOnInit() {
     this.fetchStorageTip();
