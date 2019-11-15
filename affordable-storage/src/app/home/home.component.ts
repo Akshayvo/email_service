@@ -5,6 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, blurb} from '../data/home';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-home',
@@ -29,7 +30,8 @@ export class HomeComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private canonical: CanonicalService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -37,6 +39,7 @@ export class HomeComponent implements OnInit {
       Affordable Storage Solutions has you covered!`
     });
     this.titleService.setTitle('Storage in Eureka Springs | Affordable Storage Solutions');
+    this.canonical.create();
   }
 
   public navigate(location: any) {

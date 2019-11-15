@@ -5,6 +5,7 @@ import { dataViewRates, rate } from '../data/view-rates';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { EmailService } from '../services/email.service';
 import { contact } from '../data/contact';
+import { CanonicalService } from '../services/canonical.service';
 
 
 @Component({
@@ -40,6 +41,7 @@ export class ViewRatesComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     private formBuilder: FormBuilder,
+    private canonical: CanonicalService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -47,7 +49,7 @@ export class ViewRatesComponent implements OnInit {
       then make a reservation with our easy-to-use form!`
     });
     this.titleService.setTitle('View Rates | Affordable Storage Solutions');
-
+    this.canonical.create();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,

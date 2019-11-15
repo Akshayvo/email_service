@@ -4,6 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-contact',
@@ -34,6 +35,7 @@ export class ContactComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     private formBuilder: FormBuilder,
+    private canonical: CanonicalService,
 
   ) {
     this.meta.addTag({
@@ -42,6 +44,7 @@ export class ContactComponent implements OnInit {
       our contact form or the contact information here!`
     });
     this.titleService.setTitle('Contact Us | Affordable Storage Solutions');
+    this.canonical.create();
   }
 
   ngOnInit() {
