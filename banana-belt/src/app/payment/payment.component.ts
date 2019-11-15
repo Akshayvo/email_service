@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact } from '../data/contact';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-payment',
@@ -14,14 +15,16 @@ export class PaymentComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Check your balance and manage your account with our convenient online tenant portal.
-      Follow the instructions or call (719) 966-2240 to learn how!`
-    });
-    this.titleService.setTitle('Pay Rent Online | Banana Belt Storage');
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `Check your balance and manage your account with our convenient online tenant portal.
+        Follow the instructions or call (719) 966-2240 to learn how!`
+      });
+      this.titleService.setTitle('Pay Rent Online | Banana Belt Storage');
   }
 
   ngOnInit() {

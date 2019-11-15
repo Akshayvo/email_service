@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-reserve',
@@ -12,14 +13,16 @@ export class ReserveComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Start making extra room at home today! Reserve your storage unit at Banana Belt Storage.
-      Call (719) 966-2240 or use our reservation form!`
-    });
-    this.titleService.setTitle('Reserve Your Unit | Banana Belt Storage');
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `Start making extra room at home today! Reserve your storage unit at Banana Belt Storage.
+        Call (719) 966-2240 or use our reservation form!`
+      });
+      this.titleService.setTitle('Reserve Your Unit | Banana Belt Storage');
   }
 
   ngOnInit() {
