@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, blurbHeading, blurbText } from '../data/home';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-home',
@@ -26,15 +27,17 @@ export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
     private titleService: Title,
-    private meta: Meta
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Convenient location and the lowest prices in town! Lanett Storage
-                has the perfect self storage solution for you!`
-    });
-    this.titleService.setTitle('Cheap Self Storage Units in Lanett, AL | Lanett Storage');
-  }
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `Convenient location and the lowest prices in town! Lanett Storage
+                  has the perfect self storage solution for you!`
+      });
+      this.titleService.setTitle('Cheap Self Storage Units in Lanett, AL | Lanett Storage');
+    }
 
   public navigate(location: any) {
     this.router.navigate([location]);

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact } from '../data/contact';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-payment',
@@ -14,15 +15,17 @@ export class PaymentComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Pay your rent online 24/7 with our easy online account service!
-                Follow the instructions here or call and find out how to access your account!`
-    });
-    this.titleService.setTitle('Pay Rent | Lanett Storage');
-  }
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `Pay your rent online 24/7 with our easy online account service!
+                  Follow the instructions here or call and find out how to access your account!`
+      });
+      this.titleService.setTitle('Pay Rent | Lanett Storage');
+    }
 
   ngOnInit() {
     window.scrollTo(0, 0);

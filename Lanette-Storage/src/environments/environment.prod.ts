@@ -3,6 +3,6 @@ export const environment = {
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   appId: 'Lanett',
-  VERSION: require('../../package.json').version
-
+  VERSION: require('../../package.json').version,
+  websiteUrl: 'https://lanettstorage.com'
 };
