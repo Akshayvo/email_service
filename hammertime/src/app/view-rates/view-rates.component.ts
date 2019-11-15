@@ -2,6 +2,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { dataViewRates } from '../data/view-rates';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-view-rates',
@@ -16,15 +17,17 @@ export class ViewRatesComponent implements OnInit {
   constructor(
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
-    private meta: Meta
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `View unit rates for Hammertime Self Storage outdoor units and vehicle parking,
-                 then make a reservation right here!`
-    });
-    this.titleService.setTitle('Unit Rates | Hammertime Self Storage');
-  }
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `View unit rates for Hammertime Self Storage outdoor units and vehicle parking,
+                  then make a reservation right here!`
+      });
+      this.titleService.setTitle('Unit Rates | Hammertime Self Storage');
+    }
 
   ngOnInit() {
     window.scrollTo(0, 0);

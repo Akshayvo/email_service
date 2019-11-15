@@ -5,6 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs,  gettingStarted, feature, blurb} from '../data/home';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-home',
@@ -29,8 +30,10 @@ export class HomeComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
-    private meta: Meta
-  ) {
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Hammertime Self Storage offers conveniently located, well-lit self

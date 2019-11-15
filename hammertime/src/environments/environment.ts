@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'HAMMERTIME'
+  appId: 'HAMMERTIME',
+  websiteUrl: 'https://hammertimeselfstorage.com'
 };
 
 /*
