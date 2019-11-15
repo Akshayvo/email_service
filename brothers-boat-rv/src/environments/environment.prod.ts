@@ -1,7 +1,8 @@
 export const environment = {
-  production: false,
+  production: true,
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   appId: 'Brothers Boat RV & Self Storage',
-  VERSION: require('../../package.json').version
+  VERSION: require('../../package.json').version,
+  websiteUrl: 'https://brothers-storage.com'
 };

@@ -5,6 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs, gettingStarted, feature, blurb} from '../data/home';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-home',
@@ -29,15 +30,17 @@ export class HomeComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
-    private meta: Meta
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Our brand new location offers conveniently located, safe storage for boats, recreational vehicles,
-      classic cars, and regular self storage!`
-    });
-    this.titleService.setTitle('Storage Units in Placida | Brothers Boat RV & Self Storage');
-  }
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `Our brand new location offers conveniently located, safe storage for boats, recreational vehicles,
+        classic cars, and regular self storage!`
+      });
+      this.titleService.setTitle('Storage Units in Placida | Brothers Boat RV & Self Storage');
+    }
 
   public navigate(location: any) {
     this.router.navigate([location]);

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
+import { CanonicalService } from '../services/canonical.service';
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -15,15 +16,17 @@ export class UnitSizerComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Having trouble figuring out what sized unit is right for you? Use this handy guide or
-      call (518) 767-9002!`
-    });
-    this.titleService.setTitle(`Unit Sizer | Selkirk Self Storage`);
-  }
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
+      this.meta.addTag({
+        name: 'description',
+        content: `Having trouble figuring out what sized unit is right for you? Use this handy guide or
+        call (518) 767-9002!`
+      });
+      this.titleService.setTitle(`Unit Sizer | Selkirk Self Storage`);
+    }
 
   ngOnInit() {
     this.i = 0;

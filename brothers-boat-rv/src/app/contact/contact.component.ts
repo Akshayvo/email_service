@@ -4,6 +4,7 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, hours } from '../data/contact';
+import { CanonicalService } from '../services/canonical.service';
 
 
 @Component({
@@ -33,24 +34,26 @@ export class ContactComponent implements OnInit {
     private emailService: EmailService,
     private titleService: Title,
     private meta: Meta,
-    private formBuilder: FormBuilder
-  ) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Have a questions about the parking and storage services offered by Brothers Boat
-      RV & Self Storage? Call (239) 339-7440 or use our contact form.`
-    });
-    this.titleService.setTitle('Contact Us');
+    private formBuilder: FormBuilder,
+    private canonical: CanonicalService,
+    ) {
+        this.canonical.create();
+        this.meta.addTag({
+          name: 'description',
+          content: `Have a questions about the parking and storage services offered by Brothers Boat
+          RV & Self Storage? Call (239) 339-7440 or use our contact form.`
+        });
+        this.titleService.setTitle('Contact Us');
 
-    this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      phone: ['', [Validators.required,
-      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      subject: ['']
-  });
-  }
+        this.contactForm = this.formBuilder.group({
+          name: ['', Validators.required],
+          phone: ['', [Validators.required,
+          Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+          email: ['', [Validators.required, Validators.email]],
+          message: ['', Validators.required],
+          subject: ['']
+      });
+    }
 
   ngOnInit() {
     this.fetchContactDetails();
