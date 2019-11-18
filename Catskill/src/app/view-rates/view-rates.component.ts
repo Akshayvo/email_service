@@ -24,6 +24,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
   DescriptionVR: string;
   MonthlyRateVR: number;
+  ReservationFee: number;
 
   openComponent = false;
   imagetype: any;
@@ -66,10 +67,11 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
    * @param event1
    */
 
-  handleClick(event: Event, event1: Event) {
+  handleClick(event: Event, event1: Event, event2:Event) {
     this.openComponent = true;
     this.DescriptionVR = JSON.parse(JSON.stringify(event));
     this.MonthlyRateVR = parseFloat(JSON.stringify(event1));
+    // this.R
 
     // console.log(event, event1, this.DescriptionVR, this.MonthlyRateVR);
 

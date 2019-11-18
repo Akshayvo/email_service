@@ -36,7 +36,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   @Input() DescriptionVR: string;
   @Input() MonthlyRateVR: number;
-
+  @Input() ReservationFee: number;
 
   unitTypes: UnitTypes;
   lstUnitTypes: LstUnitTypes[];
@@ -66,10 +66,11 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   rate: string;
   PeriodDescription: string;
   selectedDescription: string;
-  ReservationFee: number;
   ReservationFeeValue: number;
 
   MonthlyRateValue: number;
+  defaultReservationFee: number;
+  defaultReservationFeeTax: number;
 
   defaultValue: number;
   unitTypeId: number;
@@ -228,13 +229,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     }
 
 
-    console.log(this.DescriptionVR, this.MonthlyRateVR);
+    console.log(this.DescriptionVR, this.MonthlyRateVR, this.ReservationFee);
 
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
         Description: this.DescriptionVR,
         MonthlyRate: this.MonthlyRateVR,
-        ReservationFee: 0.00,
+        ReservationFee: this.ReservationFee,
       }])
     });
   }
@@ -363,6 +364,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
       this.defaultValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
       const defaultUnitTypeValue = unitTypesResponse.lstUnitTypes[0].Description;
+      this.defaultReservationFee = unitTypesResponse.lstUnitTypes[0].ReservationFee;
+      // this.defaultReservationFeeTax = unitTypesResponse.lstUnitTypes[0].ReservationFeeTax;
       this.MoveIn.intUnitTypeID = JSON.stringify(unitTypesResponse.lstUnitTypes[0].UnitTypeID);
 
       if (!this.DescriptionVR && !this.MonthlyRateVR) {
@@ -370,7 +373,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           lstUnitTypes: ([{
             Description: defaultUnitTypeValue,
             MonthlyRate: this.defaultValue,
-            ReservationFee: 0.00,
+            ReservationFee: this.ReservationFee,
           }])
         });
       }
