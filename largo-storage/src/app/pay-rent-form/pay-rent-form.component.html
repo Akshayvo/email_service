@@ -44,10 +44,23 @@
               <input type="hidden" formControlName="PayTypeID" [value]="PayTypeIDValue" />
           </div>
         </div>
+        <div class="row" *ngIf="(showPaymentForReserve || showPaymentForMoveIn); else showAmount">
+          <div class="form-group cl-md-6"  *ngIf="showPaymentForReserve; else showPaymentForMoveIn">    
+            <label>Total Reservation Fee</label>&nbsp;
+            <input type="text" class="form-control" formControlName="PaymentAmount" readonly  [value]="TotalReserveAmount"/>
+          </div>
 
+          <ng-template #showPaymentForMoveIn>
+            <div class="form-group" *ngIf="ReservationFee">    
+              <label>Total Move In Fee</label>&nbsp;
+              <input type="text" class="form-control" formControlName="PaymentAmount" readonly  [value]="TotalMoveInAmount"/>
+            </div>
+            </ng-template>
+        </div>
+        <ng-template #showAmount> 
           <div class="form-group display">
             <label>Amount*</label>
-            <div class="">
+            <div>
               <label>&nbsp;
                 <input type="radio" [value]="balance" id="1" (change)="handleChange($event)" formControlName="PaymentAmount"  [checked]="balance != null">
                 <span class="loader" *ngIf="balance == null"></span>
@@ -65,7 +78,7 @@
                 <input type="text" formControlName="PaymentAmount" [value]="otherValue" (keyup)="onKeyUp($event)">
               </span>
             </div>
-           &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;
             <span class="modal-custom-style modal-position">
                 <!-- Button trigger modal -->
               <button type="button" class="btn  btn-link ml-4" data-toggle="modal" data-target="#exampleModalLong">
@@ -142,6 +155,7 @@
             </div>
           </span>
           </div>
+        </ng-template>
 
 
           <div class="row"  [class.display-surcharge]="surcharge <= 0 || !surcharge">
@@ -290,3 +304,6 @@
     </div>
   </div>
 </div>
+
+
+<pre>{{payRentForm.value | json}}</pre>

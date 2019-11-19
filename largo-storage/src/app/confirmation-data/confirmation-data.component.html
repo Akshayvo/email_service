@@ -102,34 +102,34 @@
                         </td>
                         <td>
                             ${{this.reserveUnitForm.value.lstUnitTypes[0].MonthlyRate}}
+                            <span *ngIf="RateTax > 0">
+                               + ${{RateTax}} (Tax)
+                            </span>
                         </td>
+                        
                     </tr>
-                    <tr >
+                    <tr *ngIf="ReservationFee !== undefined && !clickedMoveIn">
                         <td>
                             Reservation Charges
                         </td>
                         <td>
-                            ${{this.reserveUnitForm.value.lstUnitTypes[0].ReservationFee}} + {{this.reserveUnitForm.value.lstUnitTypes[0].ReservationFeeTax}}
+                            ${{ReservationFee}} + ${{ReservationFeeTax}}(Tax)
                         </td>
                     </tr>
-                    <tr >
+                    <tr *ngIf="clickedMoveIn && (defaultTotalChargesAmount || TotalChargesAmount)">
                             <td>
                                 Total Charges
                             </td>
                             <td>
-                                ${{TotalChargesAmount}}
+                                ${{defaultTotalChargesAmount || TotalChargesAmount}}
+                                <span *ngIf="defaultTotalTaxAmount > 0 || TotalTaxAmount > 0">
+                                      + ${{defaultTotalTaxAmount || TotalTaxAmount}} (Tax)
+                                </span>
                             </td>
+                          
                         </tr>
                     <tr>
-                        <tr >
-                                <td>
-                                    Total Tax Amount
-                                </td>
-                                <td>
-                                    ${{TotalTaxAmount}}
-                                </td>
-                            </tr>
-                        <tr>
+                        <tr *ngIf="!clickedMoveIn">
                         <td>
                             Move In Date
                         </td>

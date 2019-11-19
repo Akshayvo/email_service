@@ -13,7 +13,6 @@ import { ForgotPassword } from './models/auth';
 import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ReserveComponent } from './reserve/reserve.component';
-import { MoveinComponent } from './movein/movein.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -25,10 +24,10 @@ const routes: Routes = [
   {
     path: 'view-rates',
     component: ViewRatesComponent,
-    children: [{
-      path: 'movein',
-      component: MoveinComponent
-    }]
+    // children: [{
+    //   path: 'movein',
+    //   component: MoveinComponent
+    // }]
   },
   { path: 'pay-rent',
     component: PaymentComponent,

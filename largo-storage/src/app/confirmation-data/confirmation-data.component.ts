@@ -25,6 +25,18 @@ export class ConfirmationDataComponent implements OnInit {
 
 @Input() TotalTaxAmount: number;
 
+@Input() ReservationFee: number;
+
+@Input() ReservationFeeTax: number;
+
+@Input() clickedMoveIn: boolean;
+
+@Input() defaultTotalChargesAmount: number;
+
+@Input() defaultTotalTaxAmount: number;
+
+@Input() RateTax: number;
+
 index: string;
 
 stateString: string;
@@ -46,6 +58,8 @@ addTenant(event: any) {
     this.index = this.option.findIndex(x => x.id === this.reserveUnitForm.value.objTenant.State);
     this.stateString = this.option[this.index].description;
     this.MoveInString = this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, 'yyyy-MM-dd');
+    
+    
   }
 
   onSubmit() {

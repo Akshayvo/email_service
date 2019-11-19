@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, Input, SimpleChange, SimpleChanges } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input, SimpleChange, SimpleChanges,  Output, EventEmitter} from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 
 
@@ -30,6 +30,13 @@ import { SurchargeService } from '../services/surcharge.service';
 })
 export class PayRentFormComponent implements OnInit, OnDestroy {
 
+  @Input() ReservationFee: number;
+  @Input() showPaymentForReserve: boolean;
+  @Input() showPaymentForMoveIn: boolean; 
+  @Input() ReservationFeeTax: number;
+
+
+
   balance: number;
   payRentForm: FormGroup;
   payTypes: PayTypes;
@@ -52,7 +59,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   showloaderForPayment = false;
   toggleSignUp = false;
   IsAutoPaymentsEnabled = false;
-
+  TotalReserveAmount: number;
+  TotalMoveInAmount: number;
+  TotalTaxAmount: number;
+  TotalChargesAmount: number;
   date: Date;
 
   MinDate: string;
@@ -133,8 +143,21 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.getPayMethods();
     this.fetchMonth();
-    this.getTenantInfo(this.tenant);
+    if(localStorage.getItem('strTenantToken')) {
+      this.getTenantInfo(this.tenant);
+    }
 
+    this.TotalReserveAmount = this.ReservationFee + this.ReservationFeeTax;
+    this.TotalMoveInAmount = this.TotalChargesAmount + this.TotalTaxAmount;
+
+    this.payRentForm.patchValue({
+      objPayment: {
+       PaymentAmount: (this.ReservationFee + this.ReservationFeeTax)
+      }
+    });
+
+    console.log("show payment for movein and reservation", this.showPaymentForReserve, this.showPaymentForMoveIn);
+    
   }
 
   get f() { return this.payRentForm.controls; }
@@ -342,7 +365,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           }
         }
       }
-      );
+    );
   }
 
   signOut(logOut: any) {

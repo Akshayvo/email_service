@@ -13,6 +13,7 @@ export class LstUnitTypes {
     ReservationFeeTax: number;
     UnitTypeID: number;
     IsUnitsAvailable: boolean;
+    IsClimateControlled: boolean
 
     constructor(
         Description: string,
@@ -21,6 +22,7 @@ export class LstUnitTypes {
         ReservationFee: number,
         UnitTypeID: number,
         IsUnitsAvailable: boolean,
+        IsClimateControlled: boolean,
         ) {
         this.Description = Description,
         this.MonthlyRate = MonthlyRate;
@@ -28,6 +30,7 @@ export class LstUnitTypes {
         this.ReservationFee = ReservationFee;
         this.UnitTypeID = UnitTypeID;
         this.IsUnitsAvailable = IsUnitsAvailable;
+        this.IsClimateControlled = IsClimateControlled;
     }
 }
 

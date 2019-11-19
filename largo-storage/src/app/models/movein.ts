@@ -10,9 +10,11 @@ export class MoveIn {
 
 export class StrConfirmation {
     strConfirmation: string;
+    strAccessCode: string;
 
-    constructor(strConfirmation: string) {
+    constructor(strConfirmation: string, strAccessCode: string) {
         this.strConfirmation = strConfirmation;
+        this.strAccessCode = strAccessCode;
     }
 }
 

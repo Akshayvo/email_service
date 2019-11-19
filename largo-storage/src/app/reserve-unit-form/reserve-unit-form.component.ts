@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnDestroy, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy, ViewEncapsulation, Output, ViewChild, AfterViewInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray, AbstractControl, ValidatorFn } from '@angular/forms';
 
 import { AddTenantService } from '../services/add-tenant.service';
@@ -24,6 +24,7 @@ import { Subscription } from 'rxjs';
 import * as moment from 'moment';
 
 import { MoveInService } from '../services/moveIn.service';
+import { PayRentFormComponent } from '../pay-rent-form/pay-rent-form.component';
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -36,6 +37,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   get f() { return this.reserveUnitForm.controls; }
 
+  // @ViewChild(PayRentFormComponent) childReference;
+
   @Input() DescriptionVR: string;
   @Input() MonthlyRateVR: number;
   @Input() proRateAmount?: number;
@@ -47,8 +50,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   @Input() Setup?: number;
   @Input() SetupTax?: number;
   @Input() RateTax?: number;
-  @Input() clickedReserve?: boolean;
-  
+  @Input() clickedMoveIn?: boolean;
+  @Input() defaultTotalTaxAmount?: number;
+  @Input() defaultTotalChargesAmount?: number;
+  @Input() unitTypeIdVR: number;
+  @Input() showPaymentForMoveIn: boolean;
+  @Input() showPaymentForReserve: boolean;
 
   unitTypes: UnitTypes;
   lstUnitTypes: LstUnitTypes[];
@@ -60,6 +67,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   strTempTenantToken: StrTempTenantToken;
 
   strConfirmation: string;
+
+  // strAccessCode: string;
 
   successMessage = false;
 
@@ -80,6 +89,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   selectedDescription: string;
   ReservationFee: number;
   ReservationFeeValue: number;
+  ReservationFeeTax: number;
   reservationInProgress = false;
   MonthlyRateValue: number;
   defaultReservationFee: number;
@@ -113,7 +123,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   isValueUpdated = true;
   MoveIn = {
     dteMoveIn: '',
-    intUnitTypeID: '',
+    intUnitTypeID: 0,
   };
 
   examplaParent: string;
@@ -129,8 +139,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   TotalTaxAmount: number;
   TotalChargesAmount: number;
+  ProrateTax: number;
+  strAccessCode: string;
+  parentShowSuccessPayment: Boolean;
+  unitTypeNotAvailability = false;
   // ProrateAmt: any;
 
+  showPaymentPage = false;
 
   private  getLeadDaysUnsubscribe$: Subscription;
   private  getTenantInfoUnsubscribe$: Subscription;
@@ -179,7 +194,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       ]),
       dteMoveIn: ['', 
       conditionalValidator(
-        (() => this.clickedReserve === true),
+        (() => this.clickedMoveIn === true),
         Validators.required
       )
     ],
@@ -188,7 +203,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
     function conditionalValidator(condition: (() => boolean), validator: ValidatorFn): ValidatorFn {
       return (control: AbstractControl): {[key: string]: any} => {
-        if (! condition()) {
+        if (condition()) {
           return null;
         }
         return validator(control);
@@ -213,13 +228,22 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     });
   }
 
+
+  // ngAfterViewInit() {
+  //   this.parentShowSuccessPayment = this.childReference.showSuccessPayment;
+  // }
+
   ngOnInit() {
     this.getData();
     this.getRentalPeriod();
     this.getLeadDays(this.data);
 // console.log(this.intLeadDaysFrom, this.intLeadDaysTo);
+this.MoveIn.intUnitTypeID = this.unitTypeIdVR;
 
-console.log("clicked reserve", this.clickedReserve);
+console.log("clicked movein", this.clickedMoveIn);
+
+console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTypeID);
+
 
     this.currentdate = new Date();
 
@@ -264,6 +288,13 @@ console.log("clicked reserve", this.clickedReserve);
     this.router.navigate([location]);
   }
 
+  close() {
+    this.unitTypeNotAvailability = false;
+    console.log("close os working");
+    
+  }
+
+
   handleClick() {
     this.submitted = true;
     if (this.reserveUnitForm.invalid) {
@@ -297,9 +328,11 @@ console.log("clicked reserve", this.clickedReserve);
     const  index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
     this.MonthlyRateValue = this.lstUnitTypes[index].MonthlyRate;
     this.unitTypeId = this.lstUnitTypes[index].UnitTypeID;
-    console.log(this.unitTypeId);
+    this.ReservationFee = this.lstUnitTypes[index].ReservationFee;
+    this.ReservationFeeTax = this.lstUnitTypes[index].ReservationFeeTax;
+    console.log(this.unitTypeId, "reservation fee", this.ReservationFeeValue);
     
-    this.MoveIn.intUnitTypeID = JSON.stringify(this.unitTypeId);
+    this.MoveIn.intUnitTypeID = this.unitTypeId;
     
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
@@ -411,9 +444,9 @@ console.log("clicked reserve", this.clickedReserve);
       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
       this.defaultValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
       const defaultUnitTypeValue = unitTypesResponse.lstUnitTypes[0].Description;
-      this.defaultReservationFee = unitTypesResponse.lstUnitTypes[0].ReservationFee;
-      this.defaultReservationFeeTax = unitTypesResponse.lstUnitTypes[0].ReservationFeeTax;
-      this.MoveIn.intUnitTypeID = JSON.stringify(unitTypesResponse.lstUnitTypes[0].UnitTypeID);
+      this.ReservationFee = unitTypesResponse.lstUnitTypes[0].ReservationFee;
+      this.ReservationFeeTax = unitTypesResponse.lstUnitTypes[0].ReservationFeeTax;
+      this.MoveIn.intUnitTypeID = this.unitTypeIdVR || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
 
       if (!this.DescriptionVR && !this.MonthlyRateVR) {
         this.reserveUnitForm.patchValue({
@@ -445,11 +478,24 @@ console.log("clicked reserve", this.clickedReserve);
   this.addTenantUnsubscribe$ =  this.addTenantService.addTenant(data)
       .subscribe(result => {
       localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
-      if (this.clickedReserve == true) { 
-        this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
-        this.makeAReservation(this.MoveIn);
+      if (this.clickedMoveIn == true) { 
+        if( this.proRateAmount) {
+
+        } else {
+          this.moveIn(this.MoveIn);
+        }
       } else {
-        this.moveIn(this.MoveIn);
+        if(this.ReservationFee > 0) {
+          this.showPaymentPage = true;
+       
+
+          // console.log("showPaymentPage and confirmation of payment", this.showPaymentPage, this.parentShowSuccessPayment);
+          this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+          this.makeAReservation(this.MoveIn);
+        } else {
+          this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+          this.makeAReservation(this.MoveIn);
+        }
       }
       console.log(result);
     });
@@ -459,11 +505,11 @@ console.log("clicked reserve", this.clickedReserve);
    this.updateTenantUnsubscribe$ = this.tenantInfoService.updateTenant(data)
       .subscribe(result => {
         console.log(result);
-        if (this.clickedReserve == true) { 
+        if (this.clickedMoveIn == true) { 
+          this.moveIn(this.MoveIn); 
+        } else {
           this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
           this.makeAReservation(this.MoveIn);
-        } else {
-          this.moveIn(this.MoveIn);
         }
       });
   }
@@ -500,12 +546,11 @@ console.log("clicked reserve", this.clickedReserve);
     );
   }
 
-  moveIn(strConfirmation: any) {
+  moveIn(strAccessCode: any) {
     this.reservationInProgress = true;
-    this.makeAReservationUnsubscribe$ =  this.moveInService.moveIn(strConfirmation)
+    this.makeAReservationUnsubscribe$ =  this.moveInService.moveIn(strAccessCode)
       .subscribe(strConfirmationResponse => {
-        this.strConfirmation = strConfirmationResponse.strConfirmation;
-        this.showConfirmation = false;
+        this.strAccessCode = strConfirmationResponse.strAccessCode;
         this.submitted = false;
          this.tokenExit = localStorage.getItem('strTenantToken');
   
@@ -516,15 +561,18 @@ console.log("clicked reserve", this.clickedReserve);
         }
         this.reservationInProgress = false;
       }, (err: any) => {
-        if (err.status === 403) {
+        if (err.status === 403) {    
           this.showConfirmation = false;
-          this.showMoveInDateError = true;
           this.count = 0;
           // localStorage.removeItem('strTempTenantToken');
         } else {
           if (err.status === 401 ) {
             localStorage.removeItem('strTempTenantToken');
             this.count = 0;
+          }
+          if (err.status === 500 ) {
+            this.count = 0;
+            this.unitTypeNotAvailability = true;
           }
         }
         this.reservationInProgress = false;
@@ -563,24 +611,24 @@ console.log("clicked reserve", this.clickedReserve);
     } else {
       if (this.existingTenantToken) {
         if (this.isValueUpdated) {
-          if(this.clickedReserve == true) {
+          if(this.clickedMoveIn == true) {
+            this.moveIn(this.MoveIn);
+            console.log("move in", this.clickedMoveIn);
+          } else {
             this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
             this.makeAReservation(this.MoveIn);
-          } else {
-            this.moveIn(this.MoveIn);
-            console.log("move in", this.clickedReserve);
           }
         } else {
           this.updateTenant(this.reserveUnitForm.value);
         }
       } else {
         if (this.existTempToken) {
-          if (this.clickedReserve == true) {
+          if (this.clickedMoveIn == true) {
+            this.moveIn(this.MoveIn);
+            console.log("move in", this.clickedMoveIn);
+          } else {
             this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
             this.makeAReservation(this.MoveIn);
-          } else {
-            this.moveIn(this.MoveIn);
-            console.log("move in", this.clickedReserve);
           }
         } else {
           this.addTenant(this.reserveUnitForm.value);

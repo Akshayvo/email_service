@@ -27,7 +27,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
   DescriptionVR: string;
   MonthlyRateVR: number;
-  unitTypeId: any;
+  unitTypeIdVR: number;
   ProrateAmt: any;
   Deposit: any;
   openComponent = false;
@@ -43,8 +43,14 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   Setup: number;
   SetupTax: number;
   showLoader = false;
+  defaultTotalChargesAmount: number;
+  defaultTotalTaxAmount: number;
+  defaultClimateString = "-"
 
-  clickedReserve = false;
+  clickedMoveIn = false;
+
+  showPaymentForMoveIn = false;
+  showPaymentForReserve = false;
   objCharges: objCharges;
 
  private isUnsubscribe$: Subscription;
@@ -87,46 +93,53 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
    * @param event1
    */
 
-  handleClick(unitDescription: any, monthlyRate: any) {
+  handleClick(unitDescription: any, monthlyRate: any, unitTypeId: number) {
     this.curStage = 1;
     this.DescriptionVR = unitDescription;
     this.MonthlyRateVR = monthlyRate;
-    this.clickedReserve = true;
+    this.unitTypeIdVR = unitTypeId;
+    this.clickedMoveIn = true;
+    this.showPaymentForReserve = true;
   }
 
   getMoveInCharges(description: any, monthlyRate: any, intUnitTypeID: any) {
     this.showLoader = true;
-      this.getMoveinChargesService.getMoveInCharges({
-        intUnitTypeID
-      }).subscribe(result => {
-        this.showLoader = false;
-        const {objCharges: { 
-          ProrateAmt = 0, 
-          Deposit = 0, 
-          DepositTax = 0,
-          Rate = 0,
-          RateTax= 0,
-          ProrateAmtTax = 0,
-          OthDeposit = 0,
-          Setup = 0,
-          SetupTax = 0
-         }} = result;
-        this.ProrateAmt = ProrateAmt;
-        this.Deposit = Deposit;
-        this.DepositTax = DepositTax;
-        this.Rate = Rate;
-        this.RateTax = RateTax;
-        this.ProrateAmtTax = ProrateAmtTax;
-        this.OthDeposit = OthDeposit;
-        this.Setup = Setup;
-        this.SetupTax = SetupTax;
-
+    this.getMoveinChargesService.getMoveInCharges({
+      intUnitTypeID
+    }).subscribe(result => {
+      this.showLoader = false;
+      const {objCharges: { 
+        ProrateAmt = 0, 
+        Deposit = 0, 
+        DepositTax = 0,
+        Rate = 0,
+        RateTax= 0,
+        ProrateTax = 0,
+        OthDeposit = 0,
+        Setup = 0,
+        SetupTax = 0,
+        TotalTaxAmount = 0,
+        TotalChargesAmount = 0,
+      }} = result;
+      this.ProrateAmt = ProrateAmt;
+      this.Deposit = Deposit;
+      this.DepositTax = DepositTax;
+      this.Rate = Rate;
+      this.RateTax = RateTax;
+      this.ProrateAmtTax = ProrateTax;
+      this.OthDeposit = OthDeposit;
+      this.Setup = Setup;
+      this.SetupTax = SetupTax;
+      this.defaultTotalTaxAmount = TotalTaxAmount;
+      this.defaultTotalChargesAmount = TotalChargesAmount;
+      
+      this.showPaymentForMoveIn = true;
         console.log(this.objCharges, result);
         
         console.log('TCL: ViewRatesComponent -> getMoveInCharges -> this.ProrateAmt', this.ProrateAmt, this.Deposit);
         this.DescriptionVR = description;
         this.MonthlyRateVR = monthlyRate;
-        this.unitTypeId = intUnitTypeID;
+        this.unitTypeIdVR = intUnitTypeID;
         this.curStage = 2;
       }, err => {
         console.error('Error while fetching moveIn Charges', err);

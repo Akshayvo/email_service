@@ -26,16 +26,19 @@
   <div class="container pb-5   padding-top">
     <h1 class="py-5 text-center">Affordable Storage</h1>
     <div class="row bg-light background-padding">
-      <div class="col-lg-7 col-md-12 px-4 scroll-wrapper pb-lg-0 pb-md-5" [class.col-lg-12]="curStage !== 0">
+      <div class="col-lg-12 col-md-12 px-4 scroll-wrapper pb-lg-0 pb-md-5" [class.col-lg-12]="curStage !== 0">
         <div [class.loader]="!showTable">
         </div>
         <div [class.loader]="showLoader" class="loader-position"> 
           </div>
         <div>
-            <app-reserve-unit-form *ngIf="curStage === 1" [curStage]="curStage" [clickedReserve]="clickedReserve"
-              [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR">
+            <app-reserve-unit-form *ngIf="curStage === 1" [curStage]="curStage" 
+              [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR" [unitTypeIdVR]="unitTypeIdVR"
+              [showPaymentForReserve]="showPaymentForReserve">
             </app-reserve-unit-form>
-            <app-reserve-unit-form *ngIf="curStage === 2" 
+            <app-reserve-unit-form 
+            [clickedMoveIn]="!clickedMoveIn"
+            *ngIf="curStage === 2" 
               [curStage]="curStage" [DescriptionVR]="DescriptionVR" [MonthlyRateVR]="MonthlyRateVR" 
               [proRateAmount]="ProrateAmt"
               [ProrateAmtTax]="ProrateAmtTax"
@@ -45,16 +48,22 @@
               [OthDeposit]="OthDeposit"
               [Setup]="Setup"
               [SetupTax]="SetupTax"
+              [defaultTotalTaxAmount]="defaultTotalTaxAmount"
+              [defaultTotalChargesAmount]="defaultTotalChargesAmount"
+              [unitTypeIdVR]="unitTypeIdVR"
+              [showPaymentForMoveIn]="showPaymentForMoveIn"
             >
             </app-reserve-unit-form>
             <div *ngIf="curStage === 0">
                 <table>
                     <tHead [class.display]="!showTable">
                         <tr>
-                          <th colspan="2" class="px-4 py-1" >Size</th>
-                          <th colspan="2" class="px-4 py-1" >Rate</th>
-                          <th colspan="2" class="px-4 py-1" >Reserve a Unit</th>
-                          <th colspan="2" class="px-4 py-1" >Move In</th>
+                          <th colspan="2" class="px-4 py-1 text-center" >Size</th>
+                          <th colspan="2" class="px-4 py-1 text-center" >Rate</th>
+                          <th colspan="2" class="px-4 py-1 text-center" >Unit Deposit</th>
+                          <th colspan="2" class="px-4 py-1 text-center" >Reserve a Unit</th>
+                          <th colspan="2" class="px-4 py-1 text-center" >Move In</th>
+                          <th colspan="2" class="px-4 py-1 text-center" >Climate Control</th>
                         </tr>
                     </tHead>
                     <tbody>
@@ -65,14 +74,20 @@
                         <td colspan="2" class="px-4 border">
                             <span *ngIf="LstUnitTypes.MonthlyRate != null">$</span>{{LstUnitTypes.MonthlyRate}}
                         </td>
+                        <td colspan="2" class="px-4 border text-center">
+                            ${{LstUnitTypes.ReservationFee || 0.00}}
+                        </td>
                         <td colspan="2" class="py-2 px-4 border">
                             <!-- <a class="btn btn-lg " (click)="handleClick($event)" role="button">Reserve</a> -->
-                            <button (click)="handleClick(LstUnitTypes.Description, LstUnitTypes.MonthlyRate)"> Reserve</button>
+                            <button (click)="handleClick(LstUnitTypes.Description, LstUnitTypes.MonthlyRate, LstUnitTypes.UnitTypeID)"> Reserve</button>
                         </td>
-                        <td colspan="2" class="py-2 px-4 border" *ngIf="LstUnitTypes.IsUnitsAvailable; else other">
+                        <td colspan="2" class="py-2 px-4 border text-center" *ngIf="LstUnitTypes.IsUnitsAvailable; else other">
                           <!-- <a class="btn btn-lg " (click)="ha
                             $event)" role="button">Reserve</a> -->
                           <button (click)="getMoveInCharges(LstUnitTypes.Description, LstUnitTypes.MonthlyRate, LstUnitTypes.UnitTypeID)"> Move In</button>
+                        </td>
+                        <td colspan="2" class="px-4 border text-center">
+                            {{LstUnitTypes.IsClimateControlled || defaultClimateString}} 
                         </td>
                         <ng-template #other>
                           <td colspan="2" class="py-2 px-4 border">
@@ -85,12 +100,19 @@
             </div>
         </div>
       </div>
-      <div class="col-lg-5 col-md-12 px-4" [class.col-lg-12]="curStage !== 0">
-        <h3 class="view-rate-heading">Amenities</h3>
-        <img src="https://storageunitsoftware-assets.s3.amazonaws.com/uploads/widget_image/image/32436/large_71917240_371800310364546_1762541006458191872_n.jpg" alt="self-storage-view-rates" class="sectionImage" />
-        <p class="view-rate-text text-justify" *ngFor="let viewRates of viewRates">
-          {{viewRates.p}}
-        </p>
+      <div class="col-lg-12 col-md-12 px-4 pt-3" [class.col-lg-12]="curStage !== 0">
+        <div class="row">
+          <div class="col-md-6 pt-3">
+            <h3 class="view-rate-heading">Amenities</h3>
+            <img src="https://storageunitsoftware-assets.s3.amazonaws.com/uploads/widget_image/image/32436/large_71917240_371800310364546_1762541006458191872_n.jpg" alt="self-storage-view-rates" class="sectionImage" />
+          </div>
+          <div class="col-md-6 pt-3">
+            <p class="view-rate-text text-justify" *ngFor="let viewRates of viewRates">
+              {{viewRates.p}}
+            </p>
+            </div>
+        </div>
+
       </div>
     </div>
   </div>
