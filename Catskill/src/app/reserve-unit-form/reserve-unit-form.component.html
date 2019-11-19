@@ -12,15 +12,15 @@
                     </tr>
                     <tr>
                         <td class="td-1">Unit Type</td>
-                        <td>{{this.reserveUnitForm.value.lstUnitTypes[0].Description}}</td>
+                        <td>{{reserveUnitForm.value.lstUnitTypes[0].Description}}</td>
                     </tr>
                     <tr>
                         <td class="td-1">Rate</td>
-                        <td> ${{this.reserveUnitForm.value.lstUnitTypes[0].MonthlyRate}}</td>
+                        <td> {{reserveUnitForm.value.lstUnitTypes[0].MonthlyRate}}</td>
                     </tr>
                     <tr>
                         <td class="td-1">Move-In date</td>
-                        <td>{{ this.reserveUnitForm.value.dteMoveIn }}</td>
+                        <td>{{ formattedMoveInDate }}</td>
                     </tr>
                 </tbody>
            </table>
@@ -219,7 +219,7 @@
                                 + ${{defaultReservationFeeTax }} (Tax)
                             </span>
                     </div>
-                    
+
                 </div>
             </div>
          </div>

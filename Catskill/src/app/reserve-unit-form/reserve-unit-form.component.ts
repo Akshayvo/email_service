@@ -82,7 +82,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   MaxDate: string;
   From: any;
   To: any;
-
+  formattedMoveInDate: any;
   showConfirmation = false;
   showMoveInDateError = false;
   options: any;
@@ -252,10 +252,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     } else {
       if (this.count <= 1 ) {
         this.count = this.count + 1;
-
-        this.reserveUnitForm.patchValue({
-          dteMoveIn: this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, 'yyyy-MM-dd')
-        });
+        this.formattedMoveInDate = moment(this.reserveUnitForm.value.dteMoveIn).format('YYYY-MM-DD');
       }
     }
   }
