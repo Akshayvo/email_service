@@ -80,8 +80,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   maxDate: Date;
   MinDate: string;
   MaxDate: string;
-  From: string;
-  To: string;
+  From: any;
+  To: any;
 
   showConfirmation = false;
   showMoveInDateError = false;
@@ -227,10 +227,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.getTenantInfo();
       }
     }
-
-
-    console.log(this.DescriptionVR, this.MonthlyRateVR, this.ReservationFee);
-
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
         Description: this.DescriptionVR,
@@ -244,14 +240,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     // this.option = option.map(x => x.name);
     this.option = option;
     }
-
-  dateClass = (d: Date) => {
-    const date = d.getDate();
-    console.log(this.minDay, this.maxDay, date);
-    // Highlight the 1st and 20th day of each month.
-    // return ( this.minDay <= date && date <= this.maxDay) ? 'example-custom-date-class' : undefined;
-    return ( date === 27 || date === 28) ? `example-custom-date-class` : undefined;
-  }
 
   public navigate(location: any) {
     this.router.navigate([location]);
@@ -307,8 +295,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       .subscribe(result => {
         this.intLeadDaysFrom = result.intLeadDaysFrom;
         this.intLeadDaysTo = result.intLeadDaysTo;
-        this.From = moment().add(this.intLeadDaysFrom, 'days').format('YYYY-MM-DD');
-        this.To = moment().add(this.intLeadDaysTo, 'days').format('YYYY-MM-DD');
+        this.From = moment().add(this.intLeadDaysFrom, 'days').toISOString();
+        this.To = moment().add(this.intLeadDaysTo, 'days').toISOString();
       });
     }
 
