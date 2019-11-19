@@ -53,11 +53,10 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotronText();
     window.scrollTo(0, 0);
+    
   }
 
   public fetchJumbotronText() {
-    // this.blurbHeading = blurbHeading;
-    // this.blurbText = blurbText;
     this.blurb = blurb;
   }
 

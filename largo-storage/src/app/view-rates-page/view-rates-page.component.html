@@ -1,0 +1,40 @@
+<div>
+    <div [class.loader]="!showTable">
+    </div>
+    <div [class.loader]="showLoader" class="loader-position"> 
+    </div>
+  <table>
+      <tHead [class.display]="!showTable">
+          <tr>
+            <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th">{{th.data}}</th>
+          </tr>
+      </tHead>
+      <tbody>
+        <tr *ngFor="let LstUnitType of LstUnitTypes">
+          <td colspan="2" class="px-4 border">
+              {{LstUnitType.Description}}
+          </td>
+          <td colspan="2" class="px-4 border">
+              <span *ngIf="LstUnitType.MonthlyRate != null">$</span>{{LstUnitType.MonthlyRate}}
+          </td>
+          <td colspan="2" class="px-4 border text-center">
+              ${{LstUnitType.ReservationFee || 0.00}}
+          </td>
+          <td colspan="2" class="py-2 px-4 border">
+              <button (click)="navigate('/view-rates/reserve', LstUnitType )">Reserve</button>
+          </td>
+          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="LstUnitType.IsUnitsAvailable; else other">
+            <button (click)="navigate('/view-rates/move-in', LstUnitType)"> Move In</button>
+          </td>
+          <td colspan="2" class="px-4 border text-center">
+              {{LstUnitType.IsClimateControlled || defaultClimateString}} 
+          </td>
+          <ng-template #other>
+            <td colspan="2" class="py-2 px-4 border">
+            <div class="text-center">Please call the facility to move in.</div>
+          </td>
+          </ng-template>
+        </tr>
+      </tbody>
+  </table>
+</div>

@@ -25,6 +25,7 @@ import * as moment from 'moment';
 
 import { MoveInService } from '../services/moveIn.service';
 import { PayRentFormComponent } from '../pay-rent-form/pay-rent-form.component';
+import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -56,6 +57,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   @Input() unitTypeIdVR: number;
   @Input() showPaymentForMoveIn: boolean;
   @Input() showPaymentForReserve: boolean;
+
+
+  navigateToReserve: boolean;
+  navigateToMoveIn: boolean;
 
   unitTypes: UnitTypes;
   lstUnitTypes: LstUnitTypes[];
@@ -104,7 +109,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   MaxDate: string;
   From: string;
   To: string;
-
+  formattedMoveInDate: any;
   showConfirmation = false;
   showMoveInDateError = false;
   options: any;
@@ -155,9 +160,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   private  updateTenantUnsubscribe$: Subscription;
   private  makeAReservationUnsubscribe$: Subscription;
   private  signOutUnsubscribe$: Subscription;
-
+  
   constructor(
     private formBuilder: FormBuilder,
+    private  dataSharingService: DataSharingService,
     private addTenantService: AddTenantService,
     private fetchDataService: FetchDataService,
     private signOutService: SignOutService,
@@ -194,7 +200,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       ]),
       dteMoveIn: ['', 
       conditionalValidator(
-        (() => this.clickedMoveIn === true),
+        (() => this.navigateToMoveIn === true),
         Validators.required
       )
     ],
@@ -211,6 +217,17 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     }
 
     this.MoveInStringParent = this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, 'yyyy-MM-dd');
+
+      if((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve-unit')) {
+        this.navigateToReserve = true;
+      } else {
+
+        if(this.router.url ===  '/view-rates/move-in' ) {
+          this.navigateToMoveIn = true;
+        }
+      }
+ 
+
   }
 
   
@@ -228,72 +245,47 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     });
   }
 
-
-  // ngAfterViewInit() {
-  //   this.parentShowSuccessPayment = this.childReference.showSuccessPayment;
-  // }
-
   ngOnInit() {
+    this.DescriptionVR  = this.dataSharingService.getReservationData().DescriptionVR;
+    this.MonthlyRateVR = this.dataSharingService.getReservationData().MonthlyRateVR;
+    this.unitTypeId = this.dataSharingService.getReservationData().unitTypeIdVR;
+    
     this.getData();
     this.getRentalPeriod();
     this.getLeadDays(this.data);
-// console.log(this.intLeadDaysFrom, this.intLeadDaysTo);
-this.MoveIn.intUnitTypeID = this.unitTypeIdVR;
-
-console.log("clicked movein", this.clickedMoveIn);
-
-console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTypeID);
-
+    this.MoveIn.intUnitTypeID = this.unitTypeId;
 
     this.currentdate = new Date();
 
     this.fetchUSState();
-
-
-
-    // this.minDay = this.From.getDate();
-    // this.maxDay = this.To.getDate();
     if (window.localStorage) {
       if (localStorage.getItem('strTenantToken')) {
         this.getTenantInfo();
       }
     }
-
-
-    console.log(this.DescriptionVR, this.MonthlyRateVR);
-
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
         Description: this.DescriptionVR,
         MonthlyRate: this.MonthlyRateVR,
         ReservationFee: this.ReservationFee,
       }])
-    });
+    });          
   }
 
+  
     public fetchUSState() {
-    // this.option = option.map(x => x.name);
     this.option = option;
     }
-
-  dateClass = (d: Date) => {
-    const date = d.getDate();
-    console.log(this.minDay, this.maxDay, date);
-    // Highlight the 1st and 20th day of each month.
-    // return ( this.minDay <= date && date <= this.maxDay) ? 'example-custom-date-class' : undefined;
-    return ( date === 27 || date === 28) ? `example-custom-date-class` : undefined;
-  }
 
   public navigate(location: any) {
     this.router.navigate([location]);
   }
 
   close() {
-    this.unitTypeNotAvailability = false;
-    console.log("close os working");
-    
+    this.unitTypeNotAvailability = false;    
   }
 
+  
 
   handleClick() {
     this.submitted = true;
@@ -302,10 +294,10 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
     } else {
       if (this.count <= 1 ) {
         this.count = this.count + 1;
-
-        this.reserveUnitForm.patchValue({
-          dteMoveIn: this.datePipe.transform(this.reserveUnitForm.value.dteMoveIn, 'yyyy-MM-dd')
-        });
+        this.formattedMoveInDate = moment(this.reserveUnitForm.value.dteMoveIn).format();
+        // this.dataSharingService.ReservationData.formattedMoveInDate = this.formattedMoveInDate;
+        console.log("formatted date", this.formattedMoveInDate);
+        this.MoveIn.dteMoveIn = this.formattedMoveInDate;
       }
     }
   }
@@ -313,12 +305,10 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
   handlePrevious() {
     if (this.count >= 0) {
       this.count = this.count - 1;
-      // this.currentDate = this.reserveUnitForm.value.dteMoveIn;
     }
   }
 
   selectionChanged(event: any) {
-    // this.valueOfString = option.find(x => x.name === event.value);
   }
 
   selectChangeHandler (event: any) {
@@ -330,7 +320,6 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
     this.unitTypeId = this.lstUnitTypes[index].UnitTypeID;
     this.ReservationFee = this.lstUnitTypes[index].ReservationFee;
     this.ReservationFeeTax = this.lstUnitTypes[index].ReservationFeeTax;
-    console.log(this.unitTypeId, "reservation fee", this.ReservationFeeValue);
     
     this.MoveIn.intUnitTypeID = this.unitTypeId;
     
@@ -340,17 +329,15 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
       }
     ])
   });
-  if(this.curStage === 2) {
+  
     this.getMoveInCharges(this.unitTypeId);
-  }
+  
   }
 
   getMoveInCharges(intUnitTypeID: any) {
     this.moveInService.getMoveInCharges({
       intUnitTypeID
     }).subscribe(result => {
-      // const {objCharges: { ProrateAmt = 0}} = result;
-      // this.proRateAmount = ProrateAmt;
       
       const {objCharges: { 
         ProrateAmt = 0, 
@@ -387,8 +374,8 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
       .subscribe(result => {
         this.intLeadDaysFrom = result.intLeadDaysFrom;
         this.intLeadDaysTo = result.intLeadDaysTo;
-        this.From = moment().add(this.intLeadDaysFrom, 'days').format('YYYY-MM-DD');
-        this.To = moment().add(this.intLeadDaysTo, 'days').format('YYYY-MM-DD');
+        this.From = moment().add(this.intLeadDaysFrom, 'days').toISOString();
+        this.To = moment().add(this.intLeadDaysTo, 'days').toISOString();
       });
     }
 
@@ -447,6 +434,10 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
       this.ReservationFee = unitTypesResponse.lstUnitTypes[0].ReservationFee;
       this.ReservationFeeTax = unitTypesResponse.lstUnitTypes[0].ReservationFeeTax;
       this.MoveIn.intUnitTypeID = this.unitTypeIdVR || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
+      this.unitTypeId = this.dataSharingService.getReservationData().unitTypeIdVR || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
+      this.getMoveInCharges(this.unitTypeId);
+
+      // this.setMoveInData();
 
       if (!this.DescriptionVR && !this.MonthlyRateVR) {
         this.reserveUnitForm.patchValue({
@@ -459,6 +450,10 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
       }
     });
   }
+
+  // setMoveInData() {
+  //   this.dataSharingService.setMoveInData();
+  // }
 
   getRentalPeriod() {
    this.getRentalPeriodUnsubscribe$ = this.fetchDataService.getRentalPeriod()
@@ -488,8 +483,6 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
         if(this.ReservationFee > 0) {
           this.showPaymentPage = true;
        
-
-          // console.log("showPaymentPage and confirmation of payment", this.showPaymentPage, this.parentShowSuccessPayment);
           this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
           this.makeAReservation(this.MoveIn);
         } else {
@@ -497,14 +490,12 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
           this.makeAReservation(this.MoveIn);
         }
       }
-      console.log(result);
     });
   }
 
   updateTenant(data: any) {
    this.updateTenantUnsubscribe$ = this.tenantInfoService.updateTenant(data)
       .subscribe(result => {
-        console.log(result);
         if (this.clickedMoveIn == true) { 
           this.moveIn(this.MoveIn); 
         } else {
@@ -515,6 +506,8 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
   }
 
   makeAReservation(strConfirmation: any) {
+    this.MoveIn.dteMoveIn = this.formattedMoveInDate;
+    this.MoveIn.intUnitTypeID = this.dataSharingService.getReservationData().unitTypeIdVR;
   this.reservationInProgress = true;
   this.makeAReservationUnsubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
     .subscribe(strConfirmationResponse => {
@@ -586,7 +579,6 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
     .subscribe( result => {
       localStorage.removeItem('strTenantToken');
       if (!(localStorage.getItem('strTenantToken'))) {
-        console.log('logged out');
         this.router.navigate(['/']);
       }
     }, (err) => {
@@ -613,9 +605,8 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
         if (this.isValueUpdated) {
           if(this.clickedMoveIn == true) {
             this.moveIn(this.MoveIn);
-            console.log("move in", this.clickedMoveIn);
           } else {
-            this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+            this.MoveIn.dteMoveIn = this.formattedMoveInDate;
             this.makeAReservation(this.MoveIn);
           }
         } else {
@@ -625,14 +616,13 @@ console.log("unitTypeIdVR", this.unitTypeIdVR, "unit id ", this.MoveIn.intUnitTy
         if (this.existTempToken) {
           if (this.clickedMoveIn == true) {
             this.moveIn(this.MoveIn);
-            console.log("move in", this.clickedMoveIn);
           } else {
-            this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+            this.MoveIn.dteMoveIn = this.formattedMoveInDate;
             this.makeAReservation(this.MoveIn);
           }
         } else {
           this.addTenant(this.reserveUnitForm.value);
-          this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+          this.MoveIn.dteMoveIn = this.formattedMoveInDate;
         }
       }
     }

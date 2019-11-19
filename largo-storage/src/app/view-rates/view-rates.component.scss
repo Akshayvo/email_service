@@ -1,79 +1,3 @@
-// @import "../../styles.scss";
-
-// .contentHolder {
-//   padding-top: 100px;
-//   min-height: 96vh;
-//   margin-bottom: 50px;
-
-//   .scroll-wrapper {
-//     -webkit-overflow-scrolling: touch;
-//     overflow-x: auto;
-
-//     iframe {
-//       width: 100%;
-//       overflow: auto;
-//     }
-//   }
-// }
-
-// .view-rates {
-//   background-color: #edf1ee;
-//   padding: 64px;
-// }
-
-// @media only screen and (max-width: 991px) and (min-width: 768px) {
-//   .contentHolder {
-//     padding-top: 60px;
-//   }
-
-//   // .view-rates {
-//   //   padding: 32px;
-//   // }
-// }
-
-// @media only screen and (max-width: 767px) and (min-width: 601px) {
-//   .contentHolder {
-//     padding-top: 60px;
-//   }
-
-//   .view-rates {
-//     padding: 40px;
-//   }
-
-//   .view-rates-padding {
-//     padding-top: 24px;
-//   }
-// }
-
-// @media screen and (max-width: 600px) {
-//   .contentHolder {
-//     padding-top: 60px;
-//   }
-
-//   .view-rates {
-//     background-color: #edf1ee;
-//     padding: 16px 0;
-//   }
-
-//   .scroll-wrapper {
-//     -webkit-overflow-scrolling: touch;
-//     overflow-x: scroll;
-
-//     iframe {
-//       width: 100%;
-//       overflow: scroll;
-//     }
-//   }
-
-//   img {
-//     height: 200px;
-//     width: 100%;
-//   }
-
-//   .view-rates-padding {
-//     padding-top: 24px;
-//   }
-// }
 
 @import "../../styles.scss";
 
@@ -82,24 +6,14 @@
   display: contents;
 }
 
+.scroll {
+  overflow-x: auto;
+}
 
 .contentHolder {
   padding-top: 140px;
   min-height: 96vh;
   margin-bottom: 50px;
-
-  .scroll-wrapper {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-
-    iframe {
-      width: 100%;
-      overflow: auto;
-    }
-    .background-padding{
-      height: 1500px;
-    }
-  }
 }
 
 .view-rates {
@@ -107,62 +21,6 @@
   padding: 64px;
 }
 
-table {
-  width: -webkit-fill-available;
-
-  thead {
-    background: $secondary;
-    th {
-      color: $white;
-      font-size: 1rem;
-    }
-  }
-  tbody {
-    tr:nth-child(even){
-      background-color: #dcdcdc;
-    }
-    tr {
-      td {
-
-        button {
-          font-size: 0.8rem;
-          min-width: 120px;
-        }
-
-        .btn {
-          min-width: 120px;
-          font-size: 0.9rem;
-          padding: 0.2rem 0.8rem;
-        }
-
-        .btn-primary {
-          background-color: #3f3c3c !important;
-          border-color: #212121 !important;
-        }
-      }
-    }
-  }
-}
-
-.loader {
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid $secondary;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  animation: spin 2s linear infinite;
-  margin: auto;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.display {
-  display: none;
-}
-// table style
 
 .view-rate-heading {
   display: none;
@@ -172,20 +30,8 @@ table {
   h1 {
     margin-block-end: 0;
   }
-
-  .scroll-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
 }
 
-
-
-
-// .padding-top {
-//   padding-top: 100px;
-// }
 
 .background-padding {
   padding: 64px;
@@ -199,52 +45,10 @@ table {
   right: 50%;
 }
 
-// @media only screen and (max-width: 600px) {
-//   .scroll-wrapper {
-//     -webkit-overflow-scrolling: touch;
-//     overflow-x: scroll;
-//   }
-
-//   .background-padding {
-//     padding: 24px 0;
-
-//     p {
-//       margin-block-end: 0;
-//     }
-//   }
-
-//   .view-rate-heading {
-//     display: inline;
-//   }
-
-//   .padding-top {
-//     padding-top: 56px;
-//   }
-// }
-
-
-// @media only screen and (max-width: 767px) {
-//   .view-rate-heading {
-//     display: block;
-//     margin-block-start: 36px;
-//     margin-block-end: 16px;
-//   }
-// }
-
-
-// @media only screen and (max-width: 991px) {
-//   .padding-top {
-//     padding-top: 56px;
-//   }
-// }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
     .contentHolder {
       padding-top: 100px;
     }
-  
-    // .view-rates {
-    //   padding: 32px;
-    // }
   }
   
   @media only screen and (max-width: 767px) and (min-width: 601px) {
@@ -271,18 +75,7 @@ table {
       background-color: #edf1ee;
       padding: 16px 0;
     }
-  
-    .scroll-wrapper {
-      -webkit-overflow-scrolling: touch;
-      overflow-x: scroll;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-  
-      iframe {
-        width: 100%;
-        overflow: scroll;
-      }
-    }
+
   
     img {
       height: 200px;

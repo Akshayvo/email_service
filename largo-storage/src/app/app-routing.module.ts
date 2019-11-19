@@ -13,6 +13,8 @@ import { ForgotPassword } from './models/auth';
 import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ReserveComponent } from './reserve/reserve.component';
+import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
+import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -24,10 +26,11 @@ const routes: Routes = [
   {
     path: 'view-rates',
     component: ViewRatesComponent,
-    // children: [{
-    //   path: 'movein',
-    //   component: MoveinComponent
-    // }]
+    children: [
+      { path: '', component: ViewRatesPageComponent },
+      { path: 'reserve', component: ReserveUnitFormComponent },
+      { path: 'move-in', component: ReserveUnitFormComponent }
+    ]
   },
   { path: 'pay-rent',
     component: PaymentComponent,
@@ -39,7 +42,6 @@ const routes: Routes = [
     ]
   },
   { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'review', component: HomeComponent,
   resolve: {
       url: 'externalUrlRedirectResolver'

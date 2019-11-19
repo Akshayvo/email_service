@@ -39,6 +39,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { RequestInterceptorService } from './services/request-interceptor.service';
 import { ForgotPassword } from './models/auth';
+import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
 
 
 
@@ -64,6 +65,7 @@ import { ForgotPassword } from './models/auth';
     ForgotPasswordComponent,
     PayRentFormComponent,
     ConfirmationDataComponent,
+    ViewRatesPageComponent,
 
   ],
   schemas: [

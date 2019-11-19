@@ -1,3 +1,25 @@
+
+export const th = [
+  {
+    data: `Size`
+  },
+  {
+    data: `Rate`
+  },
+  {
+    data: `Unit Deposit`
+  },
+  {
+    data: `Reserve a Unit`
+  },
+  {
+    data: `Move In`
+  },
+  {
+    data: `Climate Control`
+  },
+]
+
 export const viewrates = [
     {
         p: `State Storage Largo is Largo's newest self storage facility! We are the perfect solution to provide a little extra elbow room during
