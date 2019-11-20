@@ -15,6 +15,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { ReserveComponent } from './reserve/reserve.component';
 import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
 import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
+import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -29,7 +30,10 @@ const routes: Routes = [
     children: [
       { path: '', component: ViewRatesPageComponent },
       { path: 'reserve', component: ReserveUnitFormComponent },
-      { path: 'move-in', component: ReserveUnitFormComponent }
+      { path: 'move-in', component: ReserveUnitFormComponent },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
     ]
   },
   { path: 'pay-rent',

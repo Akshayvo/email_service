@@ -1,4 +1,6 @@
-<div [formGroup]="reserveUnitForm">
+<!-- [disabled]="!!reservationInProgress"  -->
+
+<!-- <div [formGroup]="reserveUnitForm" >
     <div class="loaderBg" *ngIf="showConfirmation">
         <div [class.loader]="showConfirmation ">   
         </div>
@@ -128,25 +130,167 @@
                             </td>
                           
                         </tr>
-                    <tr>
-                        <tr *ngIf="!clickedMoveIn">
-                        <td>
-                            Move In Date
-                        </td>
-                        <td>
-                            {{MoveInString}}
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Period
-                        </td>
-                        <td>
-                            {{this.reserveUnitForm.value.lstRentalPeriods[0].PeriodDescription}}
-                        </td>
-                    </tr>
+                   
+                    
                 </tbody>
             </table>
         </div>
     </div>
-</div>
+</div> -->
+
+
+    <div class="row">
+        <div class="col-md-6 p-3">
+                <h3 class="mb-3">Tenant Information</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                    FirstName
+                            </td>
+                            <td>
+                                {{FirstName}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    LastName
+                            </td>
+                            <td>
+                                {{LastName}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Phone Number 
+                            </td>
+                            <td>
+                                {{Phone}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Email Adddress
+                            </td>
+                            <td>
+                                {{EmailAddress}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Address Line 1
+                            </td>
+                            <td>
+                                {{AddressLine1}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Address Line 2
+                            </td>
+                            <td>
+                                {{AddressLine2}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    City
+                            </td>
+                            <td>
+                                {{City}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                State
+                        </td>
+                            <td>
+                                {{stateString}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    ZIP
+                            </td>
+                            <td>
+                                {{ZIP}}
+                            </td>
+                        </tr>                     
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6 p-3 confirmation-style">
+                <h3 class="mb-3">Unit Information</h3>
+                <table class="p-2">
+                    <tbody>
+                        <tr>
+                            <td>
+                                Unit Type
+                            </td>
+                            <td>
+                                {{Description}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Rate
+                            </td>
+                            <td>
+                                ${{MonthlyRate}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToReserve && ReservationFee > 0">
+                            <td>
+                                Reservation Charges
+                            </td>
+                            <td>
+                                ${{ReservationFee}} + ${{ReservationFeeTax}}(Tax)
+                            </td>
+                        </tr>
+                        <tr *ngIf="!navigateToMoveIn">
+                            <td>
+                                Move In Date
+                            </td>
+                            <td>
+                                {{MoveIn.dteMoveIn}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                                <td>
+                                    Total Charges
+                                </td>
+                                <td>
+                                    ${{TotalChargesAmount}}
+                                    <span *ngIf="TotalTaxAmount > 0">
+                                          + ${{TotalTaxAmount}} (Tax)
+                                    </span>
+                                </td>
+                              
+                            </tr>
+                       
+                        <tr>
+                            <td>
+                                Period
+                            </td>
+                            <td>
+                                {{period}}
+                            </td>
+                        </tr>
+                </tbody>
+                </table>
+            </div>
+    <div class="form-group text-right button">
+        <!-- *ngIf="count === 1"  -->
+        <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 my-2"
+        (click)="navigateToPrevious('/view-rates/reserve')">Previous</button>
+
+
+        <!-- *ngIf="count === 1 && !clickedMoveIn" -->
+        <button type="submit" (click)="onSubmit()" class="btn btn-primary ml-lg-4 ml-md-2 ml-sm-auto col-lg-3 col-md-4 col-sm-12 " 
+        *ngIf="navigateToReserve">Reserve</button>
+
+        <!-- [disabled]="!!reservationInProgress" -->
+        <!-- *ngIf="count === 1 && clickedMoveIn" -->
+        <button type="submit" (click)="onSubmit()" class="btn btn-primary ml-lg-4 ml-md-2 ml-sm-auto col-lg-3 col-md-4 col-sm-12 "
+        *ngIf="navigateToMoveIn" >Move In</button>
+    </div>

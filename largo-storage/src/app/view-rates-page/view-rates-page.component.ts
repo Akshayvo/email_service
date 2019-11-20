@@ -72,10 +72,12 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.th = th;
   }
 
-  public navigate(location: any, data) {
-    this.dataSharingService.setReservationData(data);
+  public navigate(location: any, unitData) {
+    this.dataSharingService.setReservationData(unitData);
     this.router.navigate([location]);    
-    
+    console.log("unit data setting from view rates", unitData);
+    this.dataSharingService.LstUnitTypes = unitData;
+    console.log("unit data getting from view rates", this.dataSharingService.LstUnitTypes);
   }
 
   // handleClick(unitDescription: any, monthlyRate: any, unitTypeId: number) {
@@ -135,7 +137,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   this.isUnsubscribe$ = this.fetchDataService.getData( )
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;            
+      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;     
+            
     });
   }
 

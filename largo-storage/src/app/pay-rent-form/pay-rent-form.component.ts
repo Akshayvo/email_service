@@ -19,6 +19,9 @@ import { DatePipe } from '@angular/common';
 
 import { Subscription } from 'rxjs';
 import { SurchargeService } from '../services/surcharge.service';
+import { DataSharingService } from '../services/data-sharing.service';
+import { MakeAReservationService } from '../services/make-a-reservation.service';
+import { MoveInService } from '../services/moveIn.service';
 
 
 
@@ -64,11 +67,12 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   TotalTaxAmount: number;
   TotalChargesAmount: number;
   date: Date;
-
+  reservationInProgress: boolean;
   MinDate: string;
   minDate: Date;
-
+  strAccessCode: string;
   surcharge: number;
+  unitTypeNotAvailability: boolean;
 
   marked = false;
   signUp = {};
@@ -91,13 +95,24 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   errorMessage: string;
   showError = false;
   count = 0;
+  navigateToReserve: boolean;
+  navigateToMoveIn: boolean;
+  existTempToken: string;
+  tokenExit: string;
+  showConfirmation: boolean;
+  strConfirmation: string;
 
+  MoveIn = {
+    dteMoveIn: '',
+    intUnitTypeID: 0,
+  };
   private OptionOutOfAutoPayUnsubscribe$: Subscription;
   private signUpAutoPayUnsubscribe$: Subscription;
   private signOutUnsubscribe$: Subscription;
   private getPaymentUnsubscribe$: Subscription;
   private getPayMethodsUnsubscribe$: Subscription;
   private getTenantInfoUnsubscribe$: Subscription;
+  private makeAReservationUnsubscribe$ : Subscription;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -108,6 +123,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     private surchargeService: SurchargeService,
     public router: Router,
     private datePipe: DatePipe,
+    private  dataSharingService: DataSharingService,
+    private makeAReservationService: MakeAReservationService,
+    private moveInService: MoveInService,
+
   ) {
     this.payRentForm = this.formBuilder.group({
       objPayment: this.formBuilder.group({
@@ -138,6 +157,43 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     }
 
 
+    this.navigateToReserve = this.dataSharingService.navigateToReserve;
+    this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
+    this.TotalReserveAmount = this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax;
+    this.TotalMoveInAmount = this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount;
+
+
+    if(this.router.url === '/view-rates/payReservationCharges') {
+      this.navigateToReserve = true;
+      this.navigateToMoveIn = false;
+      this.payRentForm.patchValue({
+        objPayment: {
+         PaymentAmount: (this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax)
+        }
+      });
+     
+    } else {
+      if(this.router.url === '/view-rates/payMoveInCharges') {
+        this.navigateToReserve = false;
+        this.navigateToMoveIn = true;
+        this.payRentForm.patchValue({
+          objPayment: {
+           PaymentAmount: (this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount)
+          }
+        });
+      } else {
+        if(this.router.url ===  '/pay-rent/payment' ) {
+          this.navigateToMoveIn = false;
+          this.navigateToReserve = false;
+        }
+
+      }
+
+  
+    }
+
+    this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
+    this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
   }
 
   ngOnInit() {
@@ -147,14 +203,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.getTenantInfo(this.tenant);
     }
 
-    this.TotalReserveAmount = this.ReservationFee + this.ReservationFeeTax;
-    this.TotalMoveInAmount = this.TotalChargesAmount + this.TotalTaxAmount;
+   
 
-    this.payRentForm.patchValue({
-      objPayment: {
-       PaymentAmount: (this.ReservationFee + this.ReservationFeeTax)
-      }
-    });
 
     console.log("show payment for movein and reservation", this.showPaymentForReserve, this.showPaymentForMoveIn);
     
@@ -357,6 +407,17 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         } else {
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
+
+        if(this.navigateToReserve) {
+          this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
+
+          this.makeAReservation(this.MoveIn);
+        } else {
+          this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
+
+          this.moveIn(this.MoveIn);
+        }
+
       }, (err: any) => {
         if (err instanceof HttpErrorResponse) {
           if (err.status === 400) {
@@ -391,6 +452,68 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       }, (err) => {
       });
   }
+
+  makeAReservation(strConfirmation: any) {
+    // this.MoveIn.intUnitTypeID = this.dataSharingService.getReservationData().UnitTypeID;
+  // this.reservationInProgress = true;
+  this.makeAReservationUnsubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
+    .subscribe(strConfirmationResponse => {
+      this.strConfirmation = strConfirmationResponse.strConfirmation;
+      this.showConfirmation = false;
+      this.submitted = false;
+       this.tokenExit = localStorage.getItem('strTenantToken');
+
+      this.existTempToken = localStorage.getItem('strTempTenantToken');
+
+      if (this.existTempToken) {
+        localStorage.removeItem('strTempTenantToken');
+      }
+      // this.reservationInProgress = false;
+    }, (err: any) => {
+      if (err.status === 403) {
+        // this.showConfirmation = false;
+        // this.showMoveInDateError = true;
+        
+      } else {
+        if (err.status === 401 ) {
+          localStorage.removeItem('strTempTenantToken');
+        }
+      }
+      // this.reservationInProgress = false;
+    }
+    );
+  }
+
+  moveIn(strAccessCode: any) {
+    this.reservationInProgress = true;
+    this.makeAReservationUnsubscribe$ =  this.moveInService.moveIn(strAccessCode)
+      .subscribe(strConfirmationResponse => {
+        this.strAccessCode = strConfirmationResponse.strAccessCode;
+        this.submitted = false;
+         this.tokenExit = localStorage.getItem('strTenantToken');
+  
+        this.existTempToken = localStorage.getItem('strTempTenantToken');
+  
+        if (this.existTempToken) {
+          localStorage.removeItem('strTempTenantToken');
+        }
+        this.reservationInProgress = false;
+      }, (err: any) => {
+        if (err.status === 403) {    
+          this.showConfirmation = false;
+
+        } else {
+          if (err.status === 401 ) {
+            localStorage.removeItem('strTempTenantToken');
+          }
+          if (err.status === 500 ) {
+            this.unitTypeNotAvailability = true;
+          }
+        }
+        this.reservationInProgress = false;
+      }
+      );
+    }
 
   public ngOnDestroy(): void {
     if (this.OptionOutOfAutoPayUnsubscribe$ && this.OptionOutOfAutoPayUnsubscribe$.closed) {

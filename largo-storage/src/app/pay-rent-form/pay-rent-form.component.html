@@ -1,7 +1,15 @@
 <div class="payRent">
   <h2 class="pb-1">Payment</h2>
   <div *ngIf="showSuccessPayment; else other"  class="go-to-home pt-4">
+    <div *ngIf="!navigateToMoveIn && !navigateToReserve">
       Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .
+    </div>
+    <div *ngIf="navigateToReserve">
+        Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> . Your reservation is confirmed.
+      </div>
+      <div *ngIf="navigateToMoveIn">
+          Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> . Move In successful.
+        </div>
       <div class="py-3"><a (click)="navigate('/')">Go to Home</a>
         <!-- &nbsp; &nbsp; &nbsp;<a (click)="navigate('/pay-rent/payment')">Make another payment</a> -->
       </div>
@@ -44,20 +52,21 @@
               <input type="hidden" formControlName="PayTypeID" [value]="PayTypeIDValue" />
           </div>
         </div>
-        <div class="row" *ngIf="(showPaymentForReserve || showPaymentForMoveIn); else showAmount">
-          <div class="form-group cl-md-6"  *ngIf="showPaymentForReserve; else showPaymentForMoveIn">    
+        <div class="row">
+          <div class="form-group col-lg-5"  *ngIf="navigateToReserve">    
             <label>Total Reservation Fee</label>&nbsp;
             <input type="text" class="form-control" formControlName="PaymentAmount" readonly  [value]="TotalReserveAmount"/>
           </div>
-
-          <ng-template #showPaymentForMoveIn>
-            <div class="form-group" *ngIf="ReservationFee">    
-              <label>Total Move In Fee</label>&nbsp;
-              <input type="text" class="form-control" formControlName="PaymentAmount" readonly  [value]="TotalMoveInAmount"/>
-            </div>
-            </ng-template>
         </div>
-        <ng-template #showAmount> 
+        <div class="row">
+          <div class="form-group col-lg-5 " *ngIf="navigateToMoveIn">    
+            <label>Total Move In Fee</label>&nbsp;
+            <input type="text" class="form-control" formControlName="PaymentAmount" readonly  [value]="TotalMoveInAmount"/>
+          </div>
+        </div>
+
+
+        <div *ngIf="!navigateToReserve && !navigateToMoveIn"> 
           <div class="form-group display">
             <label>Amount*</label>
             <div>
@@ -155,7 +164,7 @@
             </div>
           </span>
           </div>
-        </ng-template>
+        </div>
 
 
           <div class="row"  [class.display-surcharge]="surcharge <= 0 || !surcharge">
