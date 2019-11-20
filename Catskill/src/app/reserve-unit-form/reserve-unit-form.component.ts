@@ -383,7 +383,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   this.addTenantUnsubscribe$ =  this.addTenantService.addTenant(data)
       .subscribe(result => {
       localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
-      this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+      this.MoveIn.dteMoveIn = this.convertDate(this.reserveUnitForm.value.dteMoveIn);
       this.makeAReservation(this.MoveIn);
       console.log(result);
     });
@@ -393,7 +393,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
    this.updateTenantUnsubscribe$ = this.tenantInfoService.updateTenant(data)
       .subscribe(result => {
         console.log(result);
-        this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+        this.MoveIn.dteMoveIn = this.convertDate(this.reserveUnitForm.value.dteMoveIn);
         this.makeAReservation(this.MoveIn);
       });
   }
@@ -441,6 +441,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     );
   }
 
+  convertDate(date: any) {
+    const formattedNormalDate = new Date(date);
+    // tslint:disable-next-line:max-line-length
+    return `${formattedNormalDate.getFullYear()}-${formattedNormalDate.getMonth() + 1}-${formattedNormalDate.getDate()}`;
+  }
+
   onSubmit() {
     if (window.localStorage) {
       if (localStorage.getItem('strTenantToken')) {
@@ -458,18 +464,18 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     } else {
       if (this.existingTenantToken) {
         if (this.isValueUpdated) {
-          this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+          this.MoveIn.dteMoveIn = this.convertDate(this.reserveUnitForm.value.dteMoveIn);
           this.makeAReservation(this.MoveIn);
         } else {
           this.updateTenant(this.reserveUnitForm.value);
         }
       } else {
         if (this.existTempToken) {
-          this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+          this.MoveIn.dteMoveIn = this.convertDate(this.reserveUnitForm.value.dteMoveIn);
           this.makeAReservation(this.MoveIn);
         } else {
           this.addTenant(this.reserveUnitForm.value);
-          this.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
+          this.MoveIn.dteMoveIn = this.convertDate(this.reserveUnitForm.value.dteMoveIn);
         }
       }
     }
