@@ -8,6 +8,7 @@ import { ErrorComponent } from './error/error.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+import { PhotosComponent } from './photos/photos.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
