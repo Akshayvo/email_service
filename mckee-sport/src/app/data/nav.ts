@@ -13,6 +13,10 @@ export const navLinks = [
         path: '/pay-rent'
     },
     {
+        label: 'BOAT & RV STORAGE',
+        path: '/boat-rv-parking'
+    },
+    {
         label: 'UNIT SIZER',
         path: '/unit-sizer'
     },

@@ -50,22 +50,22 @@ a {
 @media screen and (min-width:1200px){
   .navbar{
     img{
-      width: 380px;
+      width: 330px;
       height: 100%;
     }
   }
   .nav-item{
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     }
 
 }
 @media screen and (max-width:1199px) and (min-width:992px){
   .navbar{
     img{
-      width: 300px;
+      width: 295px;
     }
     .nav-item{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     }
     // .nav-link{
     //   padding: 4px;

@@ -26,6 +26,7 @@ import { ErrorHandlerService } from './services/error-handler.service';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { PhotosComponent } from './photos/photos.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+import { BotAndRvComponent } from './bot-and-rv/bot-and-rv.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
     ContactButtonComponent,
     PayRentComponent,
     PhotosComponent,
-    UnitSizerComponent
+    UnitSizerComponent,
+    BotAndRvComponent
   ],
   imports: [
     CommonModule,

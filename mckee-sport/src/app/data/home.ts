@@ -64,7 +64,8 @@ export const aboutUs = [
     }
 ];
 
-export const gettingStarted = ``;
+export const gettingStarted = `Are you ready to start de-cluttering your home or reclaiming that spot in your yard? Click below to reach out today! 
+                               One of our friendly managers will help you find the storage unit or parking space that best suits your needs!`;
 
 
 export const blurb = [
