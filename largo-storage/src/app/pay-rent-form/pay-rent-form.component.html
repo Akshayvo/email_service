@@ -8,7 +8,7 @@
         Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> . Your reservation is confirmed.
       </div>
       <div *ngIf="navigateToMoveIn">
-          Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> . Move In successful.
+          Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> . Please check your email to sign your digital lease agreement. Your move-in is not complete without a signed lease agreement.
         </div>
       <div class="py-3"><a (click)="navigate('/')">Go to Home</a>
         <!-- &nbsp; &nbsp; &nbsp;<a (click)="navigate('/pay-rent/payment')">Make another payment</a> -->
@@ -299,7 +299,10 @@
 
       <div class="form-group mr-3 row button-style">
         <div class="col-lg-6">
-          <button type="submit" class="btn btn-primary">Make a Payment</button>
+          <button type="submit" *ngIf="!navigateToMoveIn && !navigateToReserve" class="btn btn-primary">Make a Payment</button>
+          <button type="submit" *ngIf="navigateToMoveIn" class="btn btn-primary">Pay and Complete Move-In</button>
+          <button type="submit" *ngIf="navigateToReserve" class="btn btn-primary">Make a Payment</button>
+
         </div>
       </div>
 
@@ -309,10 +312,10 @@
 
   <div class="form-group row button-style mt-4">
     <div class="col-lg-6">
-      <button (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
+      <button *ngIf="existTempToken || tokenExit "  (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
     </div>
   </div>
 </div>
 
 
-<pre>{{payRentForm.value | json}}</pre>
+<!-- <pre>{{payRentForm.value | json}}</pre> -->
