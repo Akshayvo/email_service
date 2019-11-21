@@ -1,0 +1,38 @@
+<div class="containHolder">
+  <div class="container">
+    <h1 class="text-center py-5">Pay Rent for Inez Storage</h1>
+    <div class="pay-rent-holder py-5">
+      <div class="row">
+          <div class="col-md-8 mx-0">
+              <iframe id="advanced_iframe" name="advanced_iframe" src="https://inezstorage.sim.syrasoft.com/paynow" width="100%"
+              height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width: 100%; "></iframe>
+            <!-- <span *ngIf="locationId == 1" >
+              <iframe id="advanced_iframe" name="advanced_iframe" src="" width="100%"
+              height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>
+            </span>
+            <span *ngIf="locationId == 3" class="py-2">
+              <iframe id="advanced_iframe" name="advanced_iframe" src="" width="100%"
+              height="300px" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>  
+            </span> -->
+          </div>
+          <div class="col-md-4 rent-example" >
+              <h2> How to Login </h2>
+              <p> <b>Username:</b> Tenant's First Initial + Last Name<br>
+              <p> <b>Password:</b>  Tenant's gate access code<br> 
+              <p> <b>Example</b> <br>
+              <p>John Smith's code is 1234 <br>
+              <p> <b>John's Username:</b>  jsmith <br>
+              <p> <b>John's Password:</b> 1234 <br>
+              <p> <b>Have question about your account?</b> </p>
+              <!-- <p> {{contact[1].data}} </p> -->
+              <p>
+                  <!-- <a href="tel:3043441104">(304) 344-1104</a> -->
+                  <span *ngFor="let contact of contact"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
+            </span>
+              </p>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+
