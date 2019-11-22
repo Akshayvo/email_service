@@ -50,42 +50,42 @@ export const tabs = [
         path: './',
         active: true,
     },
+    // {
+    //     id: '2',
+    //     name: 'Unit Sizer',
+    //     path: './unitSizer',
+    //     active: false,
+    // },
     {
         id: '2',
-        name: 'Unit Sizer',
-        path: './unitSizer',
-        active: false,
-    },
-    {
-        id: '3',
         name: 'Reserve Unit',
         path: './reserveUnit',
         active: false,
     },
     {
-        id: '4',
+        id: '3',
         name: 'Gallery',
         path: './photos',
         active: false,
     },
     {
-        id: '5',
+        id: '4',
         name: 'About Us',
         path: './about',
         active: false,
     },
-    {
-        id: '6',
-        name: 'Directions',
-        path: './directions',
-        active: false,
-    },
+    // {
+    //     id: '6',
+    //     name: 'Directions',
+    //     path: './directions',
+    //     active: false,
+    // },
 ];
 
 
 export const headingLocation1 = `Inez Storage`;
 
-export const headingLocation3 = `Inez Storage 2`;
+export const headingLocation3 = `Beck Road Self Storage`;
 
 export const unitSizerLocation1 = [
     {
@@ -261,14 +261,14 @@ export const unitSizerLocation3 = [
 
 export const aboutUsHeadingLocation1 = ``;
 
-export const aboutUsHeadingLocation3 = ``;
+export const aboutUsHeadingLocation3 = `About Us`;
 
 export const aboutUsImageLocation1 = ``;
 
 // tslint:disable-next-line:max-line-length
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation3 = ``;
+export const aboutUsImageLocation3 = `../../assets/beck-road-11.jpg`;
 
 export const aboutUsLocation1 = [
     {
@@ -285,13 +285,17 @@ export const aboutUsLocation1 = [
 
 export const aboutUsLocation3 = [
     {
-        p: ``,
+        p: `Our Beck Road location is Inez' newest self storage facility! We offer several options for self storage units that give our 
+            friends and neighbors access to top-notch storage space for their personal belongings or seasonal vehicles. `,
     },
     {
-        p: ``,
+        p: `Beck Road Storage has all the amenities you'd expect from a family owned & operated facility! All concrete driveways make your 
+            loading and unloading a breeze. Top off your tires with our complementary air compressor and fill that cooler with free ice from 
+            our on-site ice machine! If you're bringing your boat back from a day on the water, use our wash-off area to prepare it for storage. `,
     },
     {
-        p: ``,
+        p: `We're about more than just convenience. We understand your recreational vehicles and belongings require thoughtful security. Beck Road 
+            Storage is covered with 24 hour video surveillance, and uses pin-code activated gates to ensure a sense of safety for you, and your belongings.`,
     },
 ];
 

@@ -64,23 +64,30 @@ a{
     }
   }
 }
-
-
-.jumbotron-top {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-storage-mini-jumbotron.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
+.video{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 80vh;
 }
 
-.jumbotron-top2 {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-storage-mini-jumbotron.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-}
+
+// .jumbotron-top {
+//   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-storage-mini-jumbotron.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
+
+// .jumbotron-top2 {
+//   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-storage-mini-jumbotron.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
 
 .content-align {
   text-align: right;

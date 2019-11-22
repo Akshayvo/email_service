@@ -33,7 +33,7 @@ export class DirectionsComponent implements OnInit {
 
   public fetchDetailsLocation3() {
     this.directionPoints = directionLocation3;
-    this.directionHeading = `Directions to Inez Storage 2`;
+    this.directionHeading = `Directions to Beck Road Self Storage`;
     this.id = 3;
   }
 }

@@ -41,9 +41,10 @@ export class LocationComponent implements OnInit {
     } else  if (this.router.url.includes('/location/inezstorage-2'))  {
           this.meta.addTag({
             name: 'description',
-            content: ``
+            content: `Beck Road Storage is Inez' newest self storage facility! We offer a variety of affordable storage 
+                      unit sizes and types with 24 hour access via unique pin-code accessible gate!`
           });
-          this.titleService.setTitle('Inez storage 2');
+          this.titleService.setTitle('Affordable Storage Units in Inez, TX | Beck Road Storage');
     }
     }
 
@@ -87,7 +88,7 @@ export class LocationComponent implements OnInit {
             { queryParams: { name: 'Inez storage', currentTab: 'Reserve Unit' }});
     } else if ( this.locationId === 3) {
       this.router.navigate(['/location/inezstorage-2'],
-            { queryParams: { name: 'Inez Storage 2', currentTab: 'Reserve Unit' }});
+            { queryParams: { name: 'Beck Road Self Storage', currentTab: 'Reserve Unit' }});
     }
    }
 

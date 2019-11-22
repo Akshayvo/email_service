@@ -44,7 +44,7 @@ export class AboutUsComponent implements OnInit {
     this.aboutPara = aboutUsLocation3;
     this.heading = aboutUsHeadingLocation3;
     this.image = aboutUsImageLocation3;
-    this.alt = 'Inez Storage 2';
+    this.alt = 'photograph of a boat inside of a brand new, clean self storage unit';
   }
 
   public fetchServiceOffered() {

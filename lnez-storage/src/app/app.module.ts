@@ -35,6 +35,7 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.component';
 import { AboutusPhotosComponent } from './aboutus-photos/aboutus-photos.component';
+import { RvRentalComponent } from './rv-rental/rv-rental.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { AboutusPhotosComponent } from './aboutus-photos/aboutus-photos.componen
     PayRentComponent,
     PayRentNatronaComponent,
     AboutusPhotosComponent,
+    RvRentalComponent,
   ],
   imports: [
     NgtUniversalModule,

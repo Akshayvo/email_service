@@ -12,7 +12,7 @@ export class LocationService {
     },
     {
       id: 3,
-      name: 'Inez Storage 2',
+      name: 'Beck Road Self Storage',
     },
  ];
  private locationSource = new BehaviorSubject(this.places[0].id);

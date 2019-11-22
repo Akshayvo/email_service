@@ -16,11 +16,17 @@ export const navLinks = [
               },
               {
                   id: '3',
-                  label: 'Inez Storage 2',
+                  label: 'Beck Road Self Storage',
                   path: '/location/inezstorage-2',
               },
         ]
     },
+    {
+        label: 'Rv Rentals',
+        path: '/rv-rentals',
+        type: 'link'
+    },
+    
     {
         label: 'Pay Rent',
         path: '/payment',

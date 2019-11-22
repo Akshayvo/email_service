@@ -19,12 +19,57 @@ export const galleryImagesLocation1 = [
     { 
         url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-storage-5.jpg',
         alt: `photograph of a security camera mounted on the side of an all-metal self storage building`
-    }
+    },
+    
 ];
 
 
 
 export const galleryImagesLocation3 = [
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-6.jpg',
+        alt: `aerial photograph of two self storage buildings with red doors and gravel parking`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-1.jpg',
+        alt: `photograph of a pickup truck parking a boat on a trailer between two self storage units`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-2.jpg',
+        alt: `photograph of the ice machine that is available for all tenants to freely use`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-3.jpg',
+        alt: `close up photograph of a closed and locked self storage unit door highlighting the built in lock on the door`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-4.jpg',
+        alt: `photograph of a closed self storage unit door showing how new the construction is`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-5.jpg',
+        alt: `photograph of a closed self storage unit door taken at dusk`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-7.jpg',
+        alt: `aerial photograph of self storage units with the sun setting in the background`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-8.jpg',
+        alt: `aerial photograph of self storage unit buildings lined up between gravel parking`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-9.jpg',
+        alt: `photograph of the self storage facility's security camera screen displaying a rotating stream of camera angles around the property `
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-10.jpg',
+        alt: `photograph of a security camera mounted on a metal building`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-11.jpg',
+        alt: `photograph of a boat inside of a brand new, clean self storage unit`
+    },
     // 
 ];
 
@@ -56,5 +101,49 @@ export const aboutusGallery = [
     { 
         url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-storage-5.jpg',
         alt: `photograph of a security camera mounted on the side of an all-metal self storage building`
-    }
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-6.jpg',
+        alt: `aerial photograph of two self storage buildings with red doors and gravel parking`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-1.jpg',
+        alt: `photograph of a pickup truck parking a boat on a trailer between two self storage units`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-2.jpg',
+        alt: `photograph of the ice machine that is available for all tenants to freely use`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-3.jpg',
+        alt: `close up photograph of a closed and locked self storage unit door highlighting the built in lock on the door`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-4.jpg',
+        alt: `photograph of a closed self storage unit door showing how new the construction is`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-5.jpg',
+        alt: `photograph of a closed self storage unit door taken at dusk`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-7.jpg',
+        alt: `aerial photograph of self storage units with the sun setting in the background`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-8.jpg',
+        alt: `aerial photograph of self storage unit buildings lined up between gravel parking`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-9.jpg',
+        alt: `photograph of the self storage facility's security camera screen displaying a rotating stream of camera angles around the property `
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-10.jpg',
+        alt: `photograph of a security camera mounted on a metal building`
+    },
+    { 
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-11.jpg',
+        alt: `photograph of a boat inside of a brand new, clean self storage unit`
+    },
 ];
