@@ -35,7 +35,7 @@ a{
 }
 
 .jumbotron-home {
-  height: 100vh;
+  height: 110vh;
 
   .for-mobile-view {
     display: none;
@@ -49,9 +49,33 @@ a{
       height: 80vh;
     }
   }
+  .video{
+    margin: 0 auto;
+    margin-left: 0 auto;
+    background-position: right;
+    position: relative;
+    // height:80vh;
+    height: 100%;
+    width:100%;
+  }
 
+  // .feature-block {
+  //   height: 20vh ;
+
+  //   img {
+  //     height: 60px;
+  //   }
+
+  //   .f-text {
+  //     color: $dark;
+  //     font-weight: 600;
+  //     font-size: 1.2rem;
+  //   }
+  // }
+}
+.feature-home{
   .feature-block {
-    height: 20vh;
+    height: 20vh ;
 
     img {
       height: 60px;
@@ -64,13 +88,14 @@ a{
     }
   }
 }
-.video{
-      background-position: center;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 80vh;
-}
+// .video{
+//       background-position: center;
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       background-size: cover;
+//       height: 80vh;
+// }
+
 
 
 // .jumbotron-top {
