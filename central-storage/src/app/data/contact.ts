@@ -19,7 +19,14 @@ export const contact = [
         label: 'Phone:',
         data: '(509) 925-9242',
         class: 'fas fa-phone mr-2 iconColor',
-    }
+    },
+    {
+        id: 3,
+        label: 'Fax Number:',
+        data: '509-925-9243',
+        class: 'fas fa-fax mr-2 iconColor',
+    },
+    
 ];
 
 export const hours = [
