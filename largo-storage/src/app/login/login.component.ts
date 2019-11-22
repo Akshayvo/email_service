@@ -80,19 +80,9 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.showLoader = true;
   }
 
-  // getTenantInfo(tenant) {
-  //   this.tenantInfoService.getTenantInfo(tenant)
-  //     .subscribe( tenantData => {
-  //       console.log('tenant info', tenantData);
-  //       if (tenantData) {
-  //         const { Tenant } = tenantData;
-  //         this.balance = Tenant.Balance;
-  //         console.log(this.balance);
-  //       }
-  //     }
-  //     , (err) => {
-  //     });
-  // }
+  close() {
+    this.credentialsInvalid = false;
+  }
 
   auth(data: any): void {
   this.authUnsubscribe$ =  this.authService.auth(data)
@@ -102,11 +92,6 @@ export class LoginComponent implements OnInit, OnDestroy {
           this.authData = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
           this.router.navigate(['/pay-rent/payment']);
-            // this.getTenantInfo(this.tenant);
-            // setTimeout(() => {
-            //  localStorage.removeItem('strTenantToken');
-            //  this.router.navigate(['/pay-rent/login']);
-            // }, 1000 * 3);
         }, (err) => {
           this.credentialsInvalid = true;
           this.showLoader = false;

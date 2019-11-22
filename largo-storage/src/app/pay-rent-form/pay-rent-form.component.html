@@ -312,10 +312,10 @@
 
   <div class="form-group row button-style mt-4">
     <div class="col-lg-6">
-      <button *ngIf="existTempToken || tokenExit "  (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
+      <button *ngIf="!tokenRemoved"  (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
     </div>
   </div>
 </div>
 
 
-<!-- <pre>{{payRentForm.value | json}}</pre> -->
+<pre>{{payRentForm.value | json}}</pre>

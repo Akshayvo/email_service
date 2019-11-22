@@ -99,7 +99,6 @@ constructor(
   private tenantInfoService: TenantInfoService,
 
 ) { 
-
   this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
   this.navigateToReserve  = this.dataSharingService.navigateToReserve;
   this.tenantData.objTenant = this.dataSharingService.objTenant;
@@ -215,7 +214,7 @@ MonthlyRate: number;
     }
   
     makeAReservation(strConfirmation: any) {
-      // this.MoveIn.dteMoveIn = this.formattedMoveInDate;
+      this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
     this.reservationInProgress = true;
     this.makeAReservationUnsubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
@@ -229,6 +228,7 @@ MonthlyRate: number;
   
         if (this.existTempToken) {
           localStorage.removeItem('strTempTenantToken');
+          console.log("removed temp tenant token ");
         }
         this.reservationInProgress = false;
       }, (err: any) => {
@@ -247,11 +247,18 @@ MonthlyRate: number;
       }
       );
     }
+
+    convertDate(date: any) {
+      const formattedNormalDate = new Date(date);
+      // tslint:disable-next-line:max-line-length
+      return `${formattedNormalDate.getFullYear()}-${formattedNormalDate.getMonth() + 1}-${formattedNormalDate.getDate()}`;
+    }
   
     moveIn(strAccessCode: any) {
       this.reservationInProgress = true;
       this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-
+      this.MoveIn.dteMoveIn = this.convertDate(new Date());
+      this.MoveIn["blnGenerateDocuments"] = true;
       this.makeAReservationUnsubscribe$ =  this.moveInService.moveIn(strAccessCode)
         .subscribe(strConfirmationResponse => {
           this.strAccessCode = strConfirmationResponse.strAccessCode;

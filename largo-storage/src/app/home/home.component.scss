@@ -82,47 +82,26 @@ h2{
     }
   }
 }
-
-
-// .jumbotron-top1 {
-//   background: url("");
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 80vh;
-// }
-
-// .jumbotron-top2 {
-//   background: url("");
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 80vh;
-// }
-
 // HOME jUMBOTRON
 
   .jumbotron-bottom {
     display: flex;
-    align: center;
+    text-align: center;
     height: 20vh;
+    display: flex;
+    align-items: center;
 
     .feature-text {
       text-transform: uppercase;
     }
+
     .bottomHeading{
-      // padding: 20px;
       text-align: center
     }
     .bottomContent{
       font-size: 1rem;
     }
 
-    // p {
-    //   text-align: center;
-    //   margin-bottom: 0;
-    //   font-size: 1.3rem;
-    // }
   }
 
 
@@ -749,9 +728,7 @@ h2{
     display: flex;
     align-items: center;
     height: 350px !important;
-    .bottomHeading{
-      // margin-bottom: 5px !important;
-    }
+   
     p{
       font-size: 0.85rem !important;
     }

@@ -81,7 +81,6 @@ constructor() {
   }
 
   getUnitData() {
-    console.log("Unit data from service", this.LstUnitTypes);
     return this.LstUnitTypes;
   }
 

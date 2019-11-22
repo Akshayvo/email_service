@@ -4,7 +4,7 @@
             <div class="form-group">
                 <div [hidden]="" *ngIf="submitted && credentialsInvalid" class="button-display alert alert-success alert-danger fade show">
                         Either the supplied username does not exist, or the supplied credentials are incorrect. Please try again.
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="close()">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>

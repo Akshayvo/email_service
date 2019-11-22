@@ -290,44 +290,24 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   
 
  public navigateToConfirmation(location: any) {
-   
    this.submitted = true;
    this.dataSharingService.objTenant = this.reserveUnitForm.value.objTenant;
-   console.log("confirmation data from reserva page", this.dataSharingService.objTenant);
-
-   this.dataSharingService.MoveIn.dteMoveIn = this.reserveUnitForm.value.dteMoveIn;
-
-   console.log("date ", this.dataSharingService.MoveIn.dteMoveIn);
-   
+   this.dataSharingService.MoveIn.dteMoveIn = this.convertDate(this.reserveUnitForm.value.dteMoveIn);   
    if (this.reserveUnitForm.invalid) {
      return;
     } else {
-      if (this.count <= 1 ) {
-        this.count = this.count + 1;
-        this.formattedMoveInDate = moment(this.reserveUnitForm.value.dteMoveIn).format();
-        this.dataSharingService.ReservationData.formattedMoveInDate = this.formattedMoveInDate;
-        console.log("formatted date", this.formattedMoveInDate);
-        this.MoveIn.dteMoveIn = this.formattedMoveInDate;
-      }
+    
     }
     this.router.navigate([location]);
-  }
-
-  handlePrevious() {
-    if (this.count >= 0) {
-      this.count = this.count - 1;
-    }
   }
 
   selectionChanged(event: any) {
   }
 
   selectChangeHandler (event: any) {
-console.log("", event.target.value);
-
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue  = event.target.value;
-    const  index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
+    const index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
     this.MonthlyRate = this.lstUnitTypes[index].MonthlyRate;
     this.unitTypeId = this.lstUnitTypes[index].UnitTypeID;
     this.ReservationFee = this.lstUnitTypes[index].ReservationFee;
@@ -446,6 +426,13 @@ console.log("move in chnarges",  this.dataSharingService.MoveInData.TotalTaxAmou
         }
       });
   }
+
+  convertDate(date: any) {
+    const formattedNormalDate = new Date(date);
+    // tslint:disable-next-line:max-line-length
+    return `${formattedNormalDate.getFullYear()}-${formattedNormalDate.getMonth() + 1}-${formattedNormalDate.getDate()}`;
+  }
+
 
   getData() {
    this.getDataUnsubscribe$ = this.fetchDataService.getData()

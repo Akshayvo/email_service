@@ -101,11 +101,13 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   tokenExit: string;
   showConfirmation: boolean;
   strConfirmation: string;
-
+  tokenRemoved = false;
   MoveIn = {
     dteMoveIn: '',
     intUnitTypeID: 0,
   };
+  navigateToMoveInPayment: boolean;
+
   private OptionOutOfAutoPayUnsubscribe$: Subscription;
   private signUpAutoPayUnsubscribe$: Subscription;
   private signOutUnsubscribe$: Subscription;
@@ -157,6 +159,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     }
 
 
+
     this.navigateToReserve = this.dataSharingService.navigateToReserve;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
     this.TotalReserveAmount = this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax;
@@ -168,7 +171,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.navigateToMoveIn = false;
       this.payRentForm.patchValue({
         objPayment: {
-         PaymentAmount: (this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax)
+         PaymentAmount: this.TotalReserveAmount
         }
       });
      
@@ -178,7 +181,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         this.navigateToMoveIn = true;
         this.payRentForm.patchValue({
           objPayment: {
-           PaymentAmount: (this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount)
+           PaymentAmount: this.TotalMoveInAmount
           }
         });
       } else {
@@ -194,7 +197,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-  }
+    if(this.router.url ===  '/pay-rent/payment' ) {
+      this.navigateToMoveInPayment = true;
+      
+    }  }
 
   ngOnInit() {
     this.getPayMethods();
@@ -202,12 +208,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     if(localStorage.getItem('strTenantToken')) {
       this.getTenantInfo(this.tenant);
     }
-
-   
-
-
-    console.log("show payment for movein and reservation", this.showPaymentForReserve, this.showPaymentForMoveIn);
-    
   }
 
   get f() { return this.payRentForm.controls; }
@@ -314,6 +314,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             this.displayBalance = this.balance;
           }
 
+
+
           this.payRentForm.patchValue({
             objPayment: {
               CCAccountNumber: Tenant.CCNumber,
@@ -323,7 +325,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               CCAccountBillingAddress: Tenant.CCBillingAddress,
               CCAccountZIP: Tenant.CCBillingZIP,
               SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
-              PaymentAmount: this.balance,
+              PaymentAmount: (this.navigateToMoveInPayment ? this.balance: (this.navigateToReserve ?  this.TotalReserveAmount : this.TotalMoveInAmount)),
             }
           });
 
@@ -410,12 +412,12 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
         if(this.navigateToReserve) {
           this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-
           this.makeAReservation(this.MoveIn);
         } else {
-          this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-
-          this.moveIn(this.MoveIn);
+          if(this.navigateToMoveIn) {
+            this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID; 
+            this.moveIn(this.MoveIn);
+          }
         }
 
       }, (err: any) => {
@@ -455,7 +457,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   makeAReservation(strConfirmation: any) {
     // this.MoveIn.intUnitTypeID = this.dataSharingService.getReservationData().UnitTypeID;
-  // this.reservationInProgress = true;
+  this.reservationInProgress = true;
   this.makeAReservationUnsubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
     .subscribe(strConfirmationResponse => {
       this.strConfirmation = strConfirmationResponse.strConfirmation;
@@ -466,9 +468,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.existTempToken = localStorage.getItem('strTempTenantToken');
 
       if (this.existTempToken) {
-        localStorage.removeItem('strTempTenantToken');
+        this.tokenRemoved = true;
+        localStorage.removeItem('strTempTenantToken');        
       }
-      // this.reservationInProgress = false;
+      this.reservationInProgress = false;
     }, (err: any) => {
       if (err.status === 403) {
         // this.showConfirmation = false;
@@ -479,13 +482,21 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           localStorage.removeItem('strTempTenantToken');
         }
       }
-      // this.reservationInProgress = false;
+      this.reservationInProgress = false;
     }
     );
   }
 
+  convertDate(date: any) {
+    const formattedNormalDate = new Date(date);
+    // tslint:disable-next-line:max-line-length
+    return `${formattedNormalDate.getFullYear()}-${formattedNormalDate.getMonth() + 1}-${formattedNormalDate.getDate()}`;
+  }
+
   moveIn(strAccessCode: any) {
     this.reservationInProgress = true;
+    this.MoveIn["blnGenerateDocuments"] = true;
+    this.MoveIn.dteMoveIn = this.convertDate(new Date());
     this.makeAReservationUnsubscribe$ =  this.moveInService.moveIn(strAccessCode)
       .subscribe(strConfirmationResponse => {
         this.strAccessCode = strConfirmationResponse.strAccessCode;
@@ -495,6 +506,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         this.existTempToken = localStorage.getItem('strTempTenantToken');
   
         if (this.existTempToken) {
+          this.tokenRemoved = true;
           localStorage.removeItem('strTempTenantToken');
         }
         this.reservationInProgress = false;

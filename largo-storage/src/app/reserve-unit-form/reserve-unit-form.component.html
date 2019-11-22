@@ -44,7 +44,7 @@
     <ng-template #other_content>
 
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
-         <div *ngIf="count == 0" class="row justify-content">
+         <div  class="row justify-content">
              <div formGroupName="objTenant" class="col-lg-7 ">
                  <h2 class="pb-3">Tenant Data</h2>
 
@@ -251,8 +251,8 @@
         </div>
 
             <div class="form-group text-right">
-                <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 mr-2" *ngIf="count === 0" (click)="navigate('/view-rates')">Previous</button>
-                <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12" *ngIf="count === 0" (click)="navigateToConfirmation('/view-rates/confirmation')">Next</button>
+                <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 mr-2" (click)="navigate('/view-rates')">Previous</button>
+                <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12"  (click)="navigateToConfirmation('/view-rates/confirmation')">Next</button>
             </div>
         </form>
     </ng-template>
