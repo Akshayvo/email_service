@@ -4,6 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { military } from '../data/military';
 import { militaryData } from '../data/view-rates';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-military-service',
@@ -19,8 +20,10 @@ export class MilitaryServiceComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private canonical: CanonicalService,
   ) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: ` We offer discounts to our valued military service personnel stationed at Fort Drum and deployed around the globe! `

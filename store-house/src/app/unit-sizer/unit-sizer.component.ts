@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
+import { CanonicalService } from '../services/canonical.service';
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -15,8 +16,10 @@ export class UnitSizerComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private canonical: CanonicalService,
   ) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Use this handy storage unit sizing chart to help you visualize what will fit into what size unit! If you've still got questions, contact us today!`

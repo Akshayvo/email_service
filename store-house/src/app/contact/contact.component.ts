@@ -4,6 +4,7 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, hours } from '../data/contact';
+import { CanonicalService } from '../services/canonical.service';
 
 
 @Component({
@@ -33,8 +34,10 @@ export class ContactComponent implements OnInit {
     private emailService: EmailService,
     private titleService: Title,
     private meta: Meta,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private canonical: CanonicalService,
   ) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Have questions about our services or your account? Use our
