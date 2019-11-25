@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address: ',
-        data: '201 31st St, McKeesport, PA 15132',
+        data: 'P.O. Box 162, Mckeesport, PA 15134',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {

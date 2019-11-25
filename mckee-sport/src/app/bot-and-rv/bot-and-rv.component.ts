@@ -20,9 +20,9 @@ export class BotAndRvComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `at McKeesport Storage, we offer short-term contracts, which are perfect for your boat, or recreational vehicle parking during the offseason!`
+      content: `At McKeesport Storage, we offer short-term contracts, which are perfect for your car, boat, or recreational vehicle parking during the offseason!`
     });
-    this.titleService.setTitle('Boat & Recreational Vehicle Parking | McKeesport Storage: Christy Park');
+    this.titleService.setTitle('Car, Boat & RV Storage | McKeeSport Storage: Christy Park');
    }
 
   ngOnInit() {

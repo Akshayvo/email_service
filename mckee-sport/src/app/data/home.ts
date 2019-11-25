@@ -48,10 +48,11 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `McKeesport Storage: Christy Park is your one-stop-storage-stop in McKeesport, PA! We have been proudly serving our community as 
-            a locally owned and operated storage facility since 2000. McKeesport Storage: Christy Park offers boat, recreational vehicle, and 
-            regular self storage units to both residential, and commercial storage users. Our facility is well-lit, fully-fenced, and covered 
-            by security cameras. We even offer a pin-code operated security gate for both safety and convenience.`,
+        p: `McKeesport Storage: Christy Park is your one-stop-storage-stop in McKeesport, PA! We have been proudly serving our community 
+            as a locally owned and operated storage facility since June of 2000. McKeesport Storage: Christy Park offers car, boat, recreational 
+            vehicle, and regular self storage services to both residential, and commercial storage users. Our facility is well-lit, fully-fenced, 
+            and covered by security cameras. We even offer a pin-code operated security gate for both safety and convenience. We are located conveniently 
+            along the beautiful Youghiogheny River Bike Trail, making McKeesport Storage a perfect place to stow gear for your rides!`,
     },
     {
         p: `Our affordable storage units, and vehicle storage are accessible 24 hours a day, 7 days a week, making them the perfect solution for 
