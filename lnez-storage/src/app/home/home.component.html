@@ -1,26 +1,31 @@
 
 <div>
-  
+
   <div class="jumbotron-home">
   <!-- <div class="for-desktop-view">
     <div class="jumbotron-desktop">
       <img src="" width="100%" height="100%" alt="">
     </div>
   </div> -->
-  <div class="jumbotron-top"> 
+  <!-- <div class="jumbotron-top">
     <video class="video text-center"  preload="auto" playsinline autoplay muted loop>
-      <source src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-jumbotron.mp4" type="video/mp4">
+      <source src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/Inez-Jumbotron-720p.m4v" type="video/mp4">
+    </video>
+  </div> -->
+  <div class="jumbotron">
+    <video id="video-background" preload muted autoplay loop>
+      <source src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/Inez-Jumbotron-720p.m4v" type="video/mp4">
     </video>
   </div>
-      
-  
+
+
 </div>
     <!--Feature Box-->
   <div class="feature-home jumbotron-bottom">
       <div class="container feature-block disp">
         <div class="row h-100">
           <div class="col-3 my-auto" *ngFor= "let feature of features">
-            <p class="text-center f-block-img"> 
+            <p class="text-center f-block-img">
               <img src="{{feature.data}}" class="f-img">
             </p>
             <p class="text-center f-text">
@@ -31,10 +36,10 @@
       </div>
     </div>
     <!--Feature Box Ends Here-->
-  
-    
 
-    
+
+
+
   <!-- <div class="for-mobile-view"> -->
     <!-- <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel"> -->
       <!-- <ol class="carousel-indicators">
@@ -49,7 +54,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="carousel-item">
           <div class="jumbotron-top2 jumbotron-top-style">
             <div class="carousel-caption">
@@ -58,7 +63,7 @@
           </div>
         </div>
       </div> -->
-     
+
     <!-- </div> -->
   <!-- </div> -->
 
@@ -66,10 +71,10 @@
 <!-- </div> -->
 
 <!--Contact Details-->
-<!-- <div class="bg-light for-location"> 
+<!-- <div class="bg-light for-location">
   <div class="locaion-selection">
     <app-select-location (click)="receiveMessage()"></app-select-location>
-  </div> 
+  </div>
     <div class="container">
     <div class="row">
       <div class="col-md-5">
@@ -82,18 +87,18 @@
       </div>
       <div class="col-md-4  pl-4 pt-3">
         <h2>{{heading}}</h2>
-        <p> 
+        <p>
           <span *ngFor="let contact of contactDetails">
             <b>{{contact.label}}</b> {{contact.data}}<br>
           </span>
         </p>
         <span *ngIf="locationId == 1" >
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/movin-on-storage/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/movin-on-storage/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/movin-on-storage/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/movin-on-storage/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>
         </span>
-        
+
         <span *ngIf="locationId == 3" >
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/natrona-heights-self/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/natrona-heights-self/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>
           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/natrona-heights-self/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>
         </span>
       </div>
@@ -106,9 +111,9 @@
           </p>
       </div>
     </div>
-  </div>  
+  </div>
 </div> -->
-<div class="pb-5 pt-5 bg-light">  
+<div class="pb-5 pt-5 bg-light">
   <div class="container">
     <div class="row">
       <div class="col-md-5">
@@ -116,14 +121,14 @@
       </div>
       <div class="col-md-4  pl-4 pt-3">
         <h2>Inez Storage</h2>
-        <p> 
+        <p>
           <span *ngFor="let contact of contactsLocation1">
             <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
             <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
           </span>
         </p>
-        <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/inez-storage/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
-        <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/inez-storage/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
+        <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/inez-storage/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>
+        <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/inez-storage/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>
       </div>
       <div class="col-md-3 contact-hours pt-3">
           <h2>Hours:</h2>
@@ -134,9 +139,9 @@
           </p>
       </div>
     </div>
-  </div>  
+  </div>
 </div>
-<div class="pb-5 pt-5 ">  
+<div class="pb-5 pt-5 ">
   <div class="container">
     <div class="row">
       <div class="col-md-5">
@@ -144,13 +149,13 @@
       </div>
       <div class="col-md-4  pl-4 pt-3">
         <h2>Beck Road Self Storage</h2>
-        <p> 
+        <p>
           <span *ngFor="let contact of contactsLocation3">
             <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
             <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
           </span>
         </p>
-        <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/inezstorage-2/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+        <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/inezstorage-2/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>
         <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/inezstorage-2/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>
       </div>
       <div class="col-md-3 contact-hours pt-3">
@@ -162,7 +167,7 @@
           </p>
       </div>
     </div>
-  </div>  
+  </div>
 </div>
 <!--Contact Details Ends Here-->
 
@@ -197,7 +202,7 @@
            </div>
          </div>
        </div>
-     </div>      
+     </div>
     </div>
   </div>
 <!--Get Started Secion Ends Here-->

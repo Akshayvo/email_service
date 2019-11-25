@@ -17,14 +17,14 @@ export class HomeComponent implements OnInit {
   locationId: any;
   features: any;
   serviceOffered: any;
-  contactsLocation1:any;
-  contactsLocation3:any;
-  hoursLocation1:any;
-  hoursLocation3:any;
-  gettingStarted:any;
+  contactsLocation1: any;
+  contactsLocation3: any;
+  hoursLocation1: any;
+  hoursLocation3: any;
+  gettingStarted: any;
 
 
-  
+
   constructor(
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
@@ -48,11 +48,11 @@ export class HomeComponent implements OnInit {
 
   }
 
-  public fetchContactDetails(){
+  public fetchContactDetails() {
     this.contactsLocation1 = contactsLocation1;
     this.contactsLocation3 = contactsLocation3;
   }
-  public fetchHours(){
+  public fetchHours() {
     this.hoursLocation1 = hoursLocation1;
     this.hoursLocation3 = hoursLocation3;
   }
@@ -77,7 +77,7 @@ export class HomeComponent implements OnInit {
   //     this.hoursDetails = hoursLocation1;
   //   }
 
-    
+
     // public fetchContactDetailsLocation3() {
     //   this.heading = `Natrona Heights Self Storage`;
     //   this.contactDetails = contactsLocation3;
