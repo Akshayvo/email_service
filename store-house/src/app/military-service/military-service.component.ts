@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { military } from '../data/military';
+import { military, heading } from '../data/military';
 import { militaryData } from '../data/view-rates';
 import { CanonicalService } from '../services/canonical.service';
 
@@ -15,6 +15,7 @@ export class MilitaryServiceComponent implements OnInit {
 
   military: any;
   militaryData: any;
+  heading: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -42,5 +43,6 @@ export class MilitaryServiceComponent implements OnInit {
   public fetchMilitary() {
     this.military = military;
     this.militaryData = militaryData;
+    this.heading = heading;
   }
 }
