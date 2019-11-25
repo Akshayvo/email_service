@@ -2,6 +2,15 @@
     min-height: 94vh;
     padding-top: 100px;
   }
+  .rvbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn{
+    max-width: 100%;
+  
+  }
   
   .pay-rent-holder {
     background-color: #f1f0ed;
@@ -14,4 +23,18 @@
   
   a {
     color: black;
+  }
+
+  @media only screen and (max-width:480px){
+    .outdoorsy{
+      display: none;
+    }
+  }
+  @media only screen and (min-width:481px){
+    .rvbutton{
+      display: none;
+    }
+    .btn{
+      width: 100%;
+    }
   }

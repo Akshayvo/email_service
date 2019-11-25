@@ -81,6 +81,6 @@ export const socialLinks = [
     {
         label: 'facebook',
         path: 'http://www.facebook.com/inezstorage',
-        class: 'fab fa-facebook-square',
+        class: 'fab fa-facebook-square mr-2 iconColor',
     },  
 ];

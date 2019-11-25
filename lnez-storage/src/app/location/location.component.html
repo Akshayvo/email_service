@@ -5,21 +5,23 @@
         <div class="social-content px-3 py-4">
           <h1 style="text-transform: capitalize;"> {{name}}</h1>
           <div class="row">
-            <div class="col-lg-12 px-0">
+            <div class="col-md-10 px-0">
               <span *ngFor="let contact of contacts" class="py-2 each-contact">
                 <span class="pl-3"><i style="font-size: 1.1rem;" class="{{contact.class}}"></i></span><span>{{contact.data}}</span>
               </span>
             </div>
-            <!-- <div class="col-lg-1">
-              <span class="disp">
-               <a href="https://www.facebook.com/southernstoreall/" target="_blank"><img src="../../assets/facebook.png" alt=""></a> 
+            <div class="col-md-2 ml-auto text-right">
+              <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
+                <a [href]="social?.path" target="_blank">
+                  <i [class]="social?.class" style="font-size: 20px;"></i>
+                </a>
               </span>
-            </div> -->
+             </div>
           </div>
         </div>
         <div class="contact-img">
             <span *ngIf="locationId == 1"> 
-              <!-- <div class="img-box-1"> -->
+              <div class="img-box-1"></div>
                   <video class="video text-center" width="100%" height="100%" preload="auto" playsinline autoplay muted loop>
                       <source src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-jumbotron.mp4" type="video/mp4">
                     </video>
@@ -30,8 +32,39 @@
               </div>
             </span> -->
             <span *ngIf="locationId == 3"> 
-              <div class="img-box-3">
-              </div>  
+              <!-- <div class="img-box-3">
+              </div>   -->
+              <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
+              <ol class="carousel-indicators">
+        <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselJumbo" data-slide-to="1"></li>
+        <li data-target="#carouselJumbo" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="jumbotron-top jumbotron-top-style">
+            <div class="carousel-caption">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="jumbotron-top2 jumbotron-top-style">
+            <div class="carousel-caption">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron-top3 jumbotron-top-style">
+            <div class="carousel-caption">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
             </span>
         </div>
       </div>

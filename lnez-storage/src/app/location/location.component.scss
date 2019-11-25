@@ -4,6 +4,66 @@
   background-color: $light;
   padding-top: 90px;
 }
+.carousel-caption {
+  bottom: 40px;
+
+  img {
+    height: 80px;
+  }
+}
+.carousel-indicators {
+  li {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px $primary solid;
+    position: relative;
+    flex: 0 1 auto;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: $primary;
+  }
+}
+
+.carousel-item {
+  max-width: 100%;
+
+  .active {
+    background-position: center center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+.jumbotron-top {
+    background: url("../../assets/beck-road-aerial.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+  }
+  
+  .jumbotron-top2 {
+    background: url("../../assets/beck-road-parking.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+  }
+  .jumbotron-top3 {
+    background: url("../../assets/beck-road-lock.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+  }
 
 .display-special {
   width: -webkit-fill-available;
@@ -65,6 +125,11 @@
 
 .disp {
   display: block;
+}
+@media only screen and (min-width:601px){
+  .img-box-1{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -245,6 +310,9 @@
     .btn-area {
       padding-bottom: 15px;
     }
+  }
+  .video{
+    display: none;
   }
 
   .sub-components {

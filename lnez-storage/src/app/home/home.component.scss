@@ -1,5 +1,13 @@
 @import "../../styles.scss";
 
+.jumbotron-top {
+  height: 80vh;
+}
+
+.jumbotron-bottom {
+  height: 20vh;
+}
+
 .carousel-caption {
   bottom: 40px;
 
@@ -54,9 +62,6 @@ a{
     margin-left: 0 auto;
     background-position: right;
     position: relative;
-    // height:80vh;
-    height: 100%;
-    width:100%;
   }
 
   // .feature-block {
@@ -98,21 +103,6 @@ a{
 
 
 
-// .jumbotron-top {
-//   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-storage-mini-jumbotron.jpg");
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 80vh;
-// }
-
-// .jumbotron-top2 {
-//   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-storage-mini-jumbotron.jpg");
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 80vh;
-// }
 
 .content-align {
   text-align: right;
@@ -190,6 +180,14 @@ a{
     }
   }
 }
+@media screen and (min-width:1200px){
+  .video{
+    margin: 0 auto;
+    margin-left: 0 auto;
+    background-position: right;
+    position: relative;
+  }
+}
 
 @media screen and (max-height: 700px) and (min-width: 600px) {
   .carousel-caption {
@@ -199,10 +197,12 @@ a{
       height: 60px;
     }
   }
+  
 
   .jumbotron-home {
     height: auto;
-
+    width: auto;
+    
     .feature-block {
       height: 160px;
     }
@@ -294,17 +294,7 @@ a{
     }
   }
 
-  .jumbotron-top {
-    height: 60vh;
-  }
 
-  .jumbotron-top1 {
-    height: 60vh;
-  }
-
-  .jumbotron-top2 {
-    height: 60vh;
-  }
 
   .content-align {
     text-align: center;

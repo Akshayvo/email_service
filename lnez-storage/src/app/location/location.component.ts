@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
-          contactsLocation3, hoursLocation3,
+          contactsLocation3, hoursLocation3, socialLinks
           } from '../data/contact';
 import { tabs, tabs1 } from '../data/location';
 import { headingLocation1, headingLocation3 } from '../data/location';
@@ -24,6 +24,7 @@ export class LocationComponent implements OnInit {
   iframeAdd: any;
   head: any;
   tabs: any;
+  socialLinks: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -70,6 +71,7 @@ export class LocationComponent implements OnInit {
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
       this.tabs = tabs1;
+      this.socialLinks = socialLinks;
     }
 
   
