@@ -164,22 +164,23 @@
             </div>
           </span>
           </div>
+          <div class="row"  [class.display-surcharge]="surcharge <= 0 || !surcharge">
+              <div class="col-lg-5 form-group readonly-form-control">
+                <label>Surcharge</label>&nbsp;
+                <input class="form-control " readonly type="text" [value]="surcharge"/>
+              </div>
+            </div>
+  
+            <div class="row"   [class.display-surcharge]="surcharge <= 0 || !surcharge">
+              <div class="col-lg-5 form-group readonly-form-control">
+                <label>Amount to pay</label>&nbsp;
+                <input class="form-control" readonly type="text" [value]="AmountToPay" formControlName="PaymentAmount"/>
+              </div>
+            </div>
         </div>
 
 
-          <div class="row"  [class.display-surcharge]="surcharge <= 0 || !surcharge">
-            <div class="col-lg-5 form-group readonly-form-control">
-              <label>Surcharge</label>&nbsp;
-              <input class="form-control " readonly type="text" [value]="surcharge"/>
-            </div>
-          </div>
-
-          <div class="row"   [class.display-surcharge]="surcharge <= 0 || !surcharge">
-            <div class="col-lg-5 form-group readonly-form-control">
-              <label>Amount to pay</label>&nbsp;
-              <input class="form-control" readonly type="text" [value]="AmountToPay" formControlName="PaymentAmount"/>
-            </div>
-          </div>
+         
 
 
 
