@@ -2,11 +2,11 @@
   <div class="container">
     <h1 class="py-5 text-center">View Rates</h1>
     <div class="row bg-light padding">
-      <div class="col-md-7 coming p-3 " >
+      <div class="col-md-8 coming p-3 " >
         <iframe id="advanced_iframe" name="advanced_iframe" src="https://lindenstorage.sim.syrasoft.com/unitavailability" width="100%"
           height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true"></iframe>
       </div>
-      <div class="col-md-5 p-3">
+      <div class="col-md-4 p-3">
         <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/climate-controlled-self-storage-units.jpg" alt="photograph of the exterior of the linden self storage facility building" class="sectionImage" width="auto"/>
         <div class="mt-4 justify" *ngFor="let data of dataViewRates">
           <p>{{data.p}}</p>
