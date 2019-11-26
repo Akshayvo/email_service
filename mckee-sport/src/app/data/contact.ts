@@ -2,18 +2,24 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address: ',
-        data: 'P.O. Box 162, Mckeesport, PA 15134',
+        data: '201 31st St, McKeesport, PA 15132',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         id: 1,
+        label: 'Mailing Address:',
+        data: 'P.O. Box 162, Mckeesport, PA 15134',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+    {
+        id: 2,
         redirect: 'mailto:Storageinmck@gmail.com',
         label: 'Email: ',
         data: 'Storageinmck@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
-        id: 2,
+        id: 3,
         redirect: 'tel:4126737867',
         label: 'Phone: ',
         data: '(412) 673-7867',
