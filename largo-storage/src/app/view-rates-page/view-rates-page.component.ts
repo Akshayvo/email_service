@@ -45,6 +45,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showPaymentForReserve = false;
   objCharges: ObjCharges;
   th: any;
+  tenant: any;
 
   private getDataSubscribe$: Subscription;
   constructor(

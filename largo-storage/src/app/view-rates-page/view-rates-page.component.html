@@ -27,7 +27,7 @@
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </td>
           <td colspan="2" class="px-4 border text-center">
-              {{LstUnitType.IsClimateControlled || defaultClimateString}} 
+              {{lstUnitType.IsClimateControlled || defaultClimateString}} 
           </td>
           <ng-template #other>
             <td colspan="2" class="py-2 px-4 border">
