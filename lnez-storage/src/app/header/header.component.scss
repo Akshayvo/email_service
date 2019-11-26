@@ -20,6 +20,12 @@ a {
   }
  
 }
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navbar-toggler:hover{
+  display: block;
+}
 
 
 .navbar {

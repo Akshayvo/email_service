@@ -43,7 +43,7 @@
   }
 }
 .jumbotron-top {
-    background: url("../../assets/beck-road-aerial.jpg");
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-aerial.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,14 +51,14 @@
   }
   
   .jumbotron-top2 {
-    background: url("../../assets/beck-road-parking.jpg");
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-parking.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 45vh;
   }
   .jumbotron-top3 {
-    background: url("../../assets/beck-road-lock.jpg");
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-lock.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,6 +179,11 @@
   }
 }
 
+@media only screen and (min-width: 1200px) {
+ .social{
+   margin-left: 80px;
+ }
+}
 @media only screen and (max-width: 992px) {
   .social-content {
     h1 {

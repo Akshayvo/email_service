@@ -18,6 +18,7 @@
 .started{
   font-size: 1.5rem;
   line-height: 2rem;
+  font-family: 'Kaushan Script', cursive;
 }
 a{
   color:#000;
@@ -181,6 +182,15 @@ a{
     }
   }
 }
+
+@media screen and (min-width:1200px) and (max-height:580px) and (min-height:480px){
+  .feature-home{
+    .f-text{
+      font-size: 1rem !important;
+    }
+  }
+}
+
 @media screen and (min-width:1200px){
   .video{
     margin: 0 auto;
@@ -211,10 +221,20 @@ a{
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1199px) {
   .content-align {
     text-align: right;
   }
+  .feature-home{
+    img{
+      height: 40px !important;
+    }
+  .f-text {
+    font-weight: 600;
+    font-size: 1rem !important;
+  }
+
+}
 }
 
 @media screen and (max-width: 991px) {
@@ -223,15 +243,20 @@ a{
       img {
         height: 40px;
       }
-
-      .f-text {
-        color: $dark;
-        font-weight: 600;
-        font-size: 1rem;
-      }
     }
   }
+  .feature-home{
+      img{
+        height: 40px !important;
+      }
+    .f-text {
+      font-weight: 600;
+      font-size: 1rem !important;
+    }
+  
 }
+}
+
 
 @media screen and (max-width: 800px) {
   .content-align {
@@ -266,6 +291,16 @@ a{
   .disp {
     display: block;
   }
+  .feature-home{
+    img{
+      height: 40px !important;
+    }
+  .f-text {
+    font-weight: 600;
+    font-size: 0.7rem !important;
+  }
+
+}
 
   .for-location {
     .btn {
@@ -273,14 +308,45 @@ a{
     }
   }
 }
+// @media screen and (max-width:601px){
+//   .jumbotron-top{
+//     display: none;
+//   }
+// }
+@media screen and (min-width:600px) and (max-height:480px){
+  .feature-home{
+    display: none;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
+  .jumbotron-top {
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/jumbotron-photo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .jumbotron {
+    padding: 0;
+    margin: 0px !important;
+    /* margin-bottom: 2rem; */
+    /* background-color: #e9ecef; */
+    /* border-radius: .3rem; */
+}
   .carousel-caption {
     bottom: 40px;
 
     img {
       height: 60px;
     }
+  }
+  .video-background{
+    display: none;
+  }
+  .feature-home{
+    display: none;
   }
 
   .jumbotron-home {
@@ -355,7 +421,7 @@ a{
 }
 
 
-#video-background {
+.video-background {
   position: absolute;
   height: auto;
   width: auto;

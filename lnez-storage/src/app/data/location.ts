@@ -268,7 +268,7 @@ export const aboutUsImageLocation1 = ``;
 // tslint:disable-next-line:max-line-length
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation3 = `../../assets/beck-road-11.jpg`;
+export const aboutUsImageLocation3 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-11.jpg`;
 
 export const aboutUsLocation1 = [
     {

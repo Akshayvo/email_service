@@ -13,9 +13,10 @@
     </video>
   </div> -->
   <div class="jumbotron">
-    <video id="video-background" preload muted autoplay loop>
-      <source src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/Inez-Jumbotron-720p.m4v" type="video/mp4">
+    <video class="video-background " oncanplay="this.play()" onloadedmetadata="this.muted = true" autoplay loop>
+      <source src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/showing+all+enclosed+RV+units.mp4" type="video/mp4">
     </video>
+    <div class="jumbotron-top"></div>
   </div>
 
 
@@ -28,9 +29,9 @@
             <p class="text-center f-block-img">
               <img src="{{feature.data}}" class="f-img">
             </p>
-            <p class="text-center f-text">
+            <h6 class="text-center f-text">
               {{feature.label}}
-            </p>
+            </h6>
           </div>
         </div>
       </div>
