@@ -36,7 +36,8 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We are Largo's newest self storage facility with a wide variety of units at extremely affordable rates! Reserve your self storage unit today!`
+      content: `We are Largo's newest self storage facility with a wide
+      variety of units at extremely affordable rates! Reserve your self storage unit today!`
     });
     this.titleService.setTitle('Affordable Self Storage Units in Largo | State Storage Largo');
   }
@@ -53,7 +54,6 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotronText();
     window.scrollTo(0, 0);
-    
   }
 
   public fetchJumbotronText() {

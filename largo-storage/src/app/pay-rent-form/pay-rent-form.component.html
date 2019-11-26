@@ -33,12 +33,12 @@
             (change)="selectChangeHandler($event)"
             [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.PayType.controls.PayTypeDescription.errors }"
             >
-              <option *ngFor="let lstPayTypes of lstPayTypes"
-              [value]="lstPayTypes?.PayTypeDescription"
-              [class.display-none]="lstPayTypes?.PayTypeID === -8"
+              <option *ngFor="let lstPayType of lstPayTypes"
+              [value]="lstPayType?.PayTypeDescription"
+              [class.display-none]="lstPayType?.PayTypeID === -8"
               >
-              <div *ngIf="lstPayTypes?.PayTypeID != -8">
-                {{lstPayTypes.PayTypeDescription}}
+              <div *ngIf="lstPayType?.PayTypeID != -8">
+                {{lstPayType.PayTypeDescription}}
               </div>
               </option>
             </select>
@@ -61,7 +61,7 @@
         <div class="row">
           <div class="form-group col-lg-5 " *ngIf="navigateToMoveIn">    
             <label>Total Move In Fee</label>&nbsp;
-            <input type="text" class="form-control" formControlName="PaymentAmount" readonly  [value]="TotalMoveInAmount"/>
+            <input type="text" class="form-control" formControlName="PaymentAmount" readonly  [value]="totalMoveInAmount"/>
           </div>
         </div>
 
@@ -110,10 +110,10 @@
                       <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance}}</ng-template>
                     </div>
                     <div>
-                      Last payment received: &nbsp;{{LastPaymentOn}}
+                      Last payment received: &nbsp;{{lastPaymentOn}}
                     </div>
                     <div>
-                        Last payment amount: <span *ngIf="LastPaymentAmount != null">$</span>{{LastPaymentAmount}}
+                        Last payment amount: <span *ngIf="lastPaymentAmount != null">$</span>{{lastPaymentAmount}}
                     </div>
                     <div  class="py-3"><strong>Detail:</strong></div>
                     <div class="table">
@@ -153,11 +153,6 @@
                         </tbody>
                       </table>
                     </div>
-
-                    <!-- <div *ngFor="let UnpaidAR of UnpaidAR">
-
-                      {{UnpaidAR.FromDate}}
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -319,4 +314,3 @@
 </div>
 
 
-<pre>{{payRentForm.value | json}}</pre>

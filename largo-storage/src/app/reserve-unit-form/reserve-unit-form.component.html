@@ -160,10 +160,10 @@
                                  <select class="form-control" formControlName="Description" [id]="lstUnitTypes?.Description"
                                  (change)="selectChangeHandler($event)"
                                 >
-                                     <option *ngFor="let lstUnitTypes of lstUnitTypes"
-                                     [value]="lstUnitTypes?.Description "
+                                     <option *ngFor="let lstUnitType of lstUnitTypes"
+                                     [value]="lstUnitType?.Description "
                                      >
-                                     {{lstUnitTypes.Description}}
+                                     {{lstUnitType.Description}}
                                      </option>
                                     </select>
                                 </div>
@@ -190,8 +190,8 @@
                         <div *ngFor="let itemRental of reserveUnitForm.controls.lstUnitTypes.controls; let i = index">
                             <div  [formGroupName]="i">
                                 <label for="PeriodDescription">Period*</label>&nbsp;
-                                <select class="form-control" formControlName="PeriodDescription" [id]="LstRentalPeriods?.PeriodDescription">
-                                    <option *ngFor="let LstRentalPeriods of LstRentalPeriods" [value]="LstRentalPeriods?.PeriodDescription" >
+                                <select class="form-control" formControlName="PeriodDescription" [id]="LstRentalPeriod?.PeriodDescription">
+                                    <option *ngFor="let LstRentalPeriod of LstRentalPeriods" [value]="LstRentalPeriod?.PeriodDescription" >
                                         {{LstRentalPeriods.PeriodDescription}}
                                     </option>
                                 </select>
@@ -203,8 +203,8 @@
                         <label>Rate:</label>&nbsp;
         
                      ${{serviceMonthlyValue || MonthlyRate}}
-                     <span *ngIf="RateTax > 0">
-                         + ${{RateTax}} (Tax)
+                     <span *ngIf="rateTax > 0">
+                         + ${{rateTax}} (Tax)
                      </span>
                     </div>
                     <div class="form-group readonly-form-control" *ngIf="navigateToReserve && ReservationFee !== undefined">
@@ -218,26 +218,26 @@
                     <div  *ngIf="navigateToMoveIn && proRateAmount">
                         <label>Prorate Amount:</label>&nbsp;
                         ${{proRateAmount}} 
-                        <span *ngIf="ProrateAmtTax > 0">
-                                + ${{ProrateAmtTax}} (Tax)
+                        <span *ngIf="prorateAmtTax > 0">
+                                + ${{prorateAmtTax}} (Tax)
                             </span>
                     </div>
-                    <div  *ngIf=" navigateToMoveIn && Deposit > 0">
+                    <div  *ngIf=" navigateToMoveIn && deposit > 0">
                         <label>Deposit Amount:</label>&nbsp;
-                        ${{Deposit}}
-                        <span *ngIf="DepositTax > 0.0">
-                                + ${{DepositTax}} (Tax)
+                        ${{deposit}}
+                        <span *ngIf="depositTax > 0.0">
+                                + ${{depositTax}} (Tax)
                             </span>
                     </div>
-                    <div  *ngIf="navigateToMoveIn && OthDeposit > 0">
+                    <div  *ngIf="navigateToMoveIn && othDeposit > 0">
                         <label>Other Deposit:</label>&nbsp;
-                        ${{OthDeposit}}
+                        ${{othDeposit}}
                     </div>
-                    <div  *ngIf="navigateToMoveIn && Setup > 0">
+                    <div  *ngIf="navigateToMoveIn && setup > 0">
                         <label>Set Up:</label>&nbsp;
-                        ${{Setup}}
-                        <span *ngIf="SetupTax > 0.0">
-                                + ${{SetupTax}} (Tax)
+                        ${{setup}}
+                        <span *ngIf="setupTax > 0.0">
+                                + ${{setupTax}} (Tax)
                             </span>
                     </div>
                 </div>
@@ -261,5 +261,3 @@
 
 </div>
 
-
-<!-- <pre>{{reserveUnitForm.value | json}}</pre> -->

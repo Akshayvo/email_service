@@ -20,7 +20,7 @@ export class StrConfirmation {
 
 
 
-export class objCharges {
+export class ObjCharges {
     Rate: number;
     Setup: number;
     SecondMonthProrate: number;

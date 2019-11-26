@@ -19,7 +19,8 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Follow the instructions on the page to access your account or call our office, and let one of our friendly managers show you how to manage your account online!`
+      content: `Follow the instructions on the page to access your account or call our office,
+      and let one of our friendly managers show you how to manage your account online!`
     });
     this.titleService.setTitle(' Pay Rent | State Storage Largo');
   }

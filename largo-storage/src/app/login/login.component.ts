@@ -36,17 +36,14 @@ export class LoginComponent implements OnInit, OnDestroy {
   tenant: any;
   balance: number;
 
-  private authUnsubscribe$: Subscription;
+  private authSubscribe$: Subscription;
 
 
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
-    // private tenantInfoService: TenantInfoService,
     public router: Router,
-
   ) {
-
 
   }
 
@@ -85,7 +82,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   auth(data: any): void {
-  this.authUnsubscribe$ =  this.authService.auth(data)
+  this.authSubscribe$ =  this.authService.auth(data)
       .subscribe(
         auth => {
           this.showPayRent = true;
@@ -101,14 +98,13 @@ export class LoginComponent implements OnInit, OnDestroy {
 
 
 public ngOnDestroy(): void {
-  if (this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
-    this.authUnsubscribe$.unsubscribe();
+  if (this.authSubscribe$ && !this.authSubscribe$.closed) {
+    this.authSubscribe$.unsubscribe();
   }
 }
 
   onSubmit() {
     this.submitted = true;
-
     if (this.loginForm.invalid) {
       return;
     } else {

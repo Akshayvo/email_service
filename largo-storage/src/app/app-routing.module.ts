@@ -21,7 +21,6 @@ const routes: Routes = [
   // Fallback when no prior route is matched
   { path: '', component: HomeComponent },
   { path: 'reserve-unit', component: ReserveComponent },
-  // { path: 'unit-sizer', component: UnitSizerComponent },
   { path: 'storageTips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   {

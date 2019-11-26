@@ -2,5 +2,4 @@ export const aboutUs = [
     {
         p: ` `,
     },
-    
 ];

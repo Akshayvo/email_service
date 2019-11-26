@@ -18,15 +18,15 @@ export const th = [
   {
     data: `Climate Control`
   },
-]
+];
 
 export const viewrates = [
     {
-        p: `State Storage Largo is Largo's newest self storage facility! We are the perfect solution to provide a little extra elbow room during
-            a renovation or permanent downsizing. We're not just for residential users, either. Our business customers love our 24 hour access for 
-            their inventory, equipment and supplies.  Call our friendly management team or reserve your unit through our form, today!`,
+        p: `State Storage Largo is Largo's newest self storage facility! We are the perfect solution to
+        provide a little extra elbow room during a renovation or permanent downsizing. We're not just for
+        residential users, either. Our business customers love our 24 hour access for their inventory, equipment
+        and supplies.  Call our friendly management team or reserve your unit through our form, today!`,
     },
-   
 ];
 
 export const option =  [

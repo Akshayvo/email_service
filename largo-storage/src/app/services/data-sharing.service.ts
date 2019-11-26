@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-import { FormGroup } from '@angular/forms';
-
 
 @Injectable({
   providedIn: 'root'
@@ -42,7 +40,7 @@ export class DataSharingService {
     ReservationFee: 0,
     ReservationFeeTax: 0,
     UnitTypeID: 0,
-  }
+  };
 
   objTenant = {
     FirstName: '',
@@ -54,7 +52,7 @@ export class DataSharingService {
     City: '',
     State: '',
     ZIP: '',
-  }
+  };
 
 
   MoveIn = {
@@ -66,9 +64,8 @@ export class DataSharingService {
 
 constructor() {
  this.getUnitData();
-  
 }
-  setTenantData(value) {
+  setTenantData(value: any) {
     this.objTenant = value;
   }
 
@@ -76,7 +73,7 @@ constructor() {
     return this.objTenant;
   }
 
-  setUnitData(value) {
+  setUnitData(value: any) {
     this.LstUnitTypes = value;
   }
 
@@ -85,17 +82,17 @@ constructor() {
   }
 
 
-  setReservationData(value) {
+  setReservationData(value: any) {
     this.ReservationData.Description  = value.Description;
     this.ReservationData.MonthlyRate = value.MonthlyRate;
-    this.ReservationData.UnitTypeID = value.UnitTypeID;    
+    this.ReservationData.UnitTypeID = value.UnitTypeID;
   }
 
   getReservationData() {
     return this.ReservationData;
   }
 
-  setMoveInData(value) {
+  setMoveInData(value: any) {
     this.MoveInData.Description  = value.Description;
     this.MoveInData.MonthlyRate = value.MonthlyRate;
     this.MoveInData.UnitTypeID = value.UnitTypeID;

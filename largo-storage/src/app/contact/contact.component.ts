@@ -34,7 +34,8 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Do you have questions about our services or your existing account with us? Use the contact form on this page or call to speak with one of our friendly managers!`
+      content: `Do you have questions about our services or your existing account with us? Use the contact form on this
+      page or call to speak with one of our friendly managers!`
     });
     this.titleService.setTitle('Contact Us | State Storage Largo');
     this.contactForm = this.formBuilder.group({
@@ -51,7 +52,6 @@ export class ContactComponent implements OnInit {
     this.fetchContactDetails();
     window.scrollTo(0, 0);
     this.fetchHours();
-    
   }
 
   get f() { return this.contactForm.controls; }
