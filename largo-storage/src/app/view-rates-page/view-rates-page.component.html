@@ -10,21 +10,21 @@
           </tr>
       </tHead>
       <tbody>
-        <tr *ngFor="let LstUnitType of LstUnitTypes">
+        <tr *ngFor="let lstUnitType of LstUnitTypes">
           <td colspan="2" class="px-4 border">
-              {{LstUnitType.Description}}
+              {{lstUnitType.Description}}
           </td>
           <td colspan="2" class="px-4 border">
-              <span *ngIf="LstUnitType.MonthlyRate != null">$</span>{{LstUnitType.MonthlyRate}}
+              <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
           </td>
           <td colspan="2" class="px-4 border text-center">
-              ${{LstUnitType.ReservationFee || 0.00}}
+              ${{lstUnitType.ReservationFee || 0.00}}
           </td>
           <td colspan="2" class="py-2 px-4 border">
-              <button (click)="navigate('/view-rates/reserve', LstUnitType )">Reserve</button>
+              <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>
-          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="LstUnitType.IsUnitsAvailable; else other">
-            <button (click)="navigate('/view-rates/move-in', LstUnitType)"> Move In</button>
+          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other">
+            <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </td>
           <td colspan="2" class="px-4 border text-center">
               {{LstUnitType.IsClimateControlled || defaultClimateString}} 

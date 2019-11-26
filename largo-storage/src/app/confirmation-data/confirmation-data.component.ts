@@ -35,7 +35,6 @@ options = [ {
 }];
 
 stateString: string;
-MoveInString: string;
 navigateToReserve: boolean;
 navigateToMoveIn: boolean;
 reservationInProgress = false;
@@ -79,8 +78,6 @@ unitData = {
 
 };
 
-MoveInData: {
-};
 
 period: string;
 
@@ -176,7 +173,7 @@ public navigateToPrevious(location: any) {
     }
 
     makeAReservation(strConfirmation: any) {
-      this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
+    this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
     this.reservationInProgress = true;
     this.makeAReservationSubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
@@ -299,5 +296,4 @@ public navigateToPrevious(location: any) {
         this.makeAReservationSubscribe$.unsubscribe();
       }
     }
-
 }

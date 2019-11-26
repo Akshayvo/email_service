@@ -3,9 +3,6 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import { UnitTypes, RentalPeriod } from '../models/unittypes';
 import { PayTypes } from '../models/payment';
-
-import { environment } from '../../environments/environment';
-
 @Injectable({
   providedIn: 'root'
 })

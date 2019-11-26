@@ -85,10 +85,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   currentDate: string;
   minDate: Date;
   maxDate: Date;
-  MinDate: string;
-  MaxDate: string;
-  From: string;
-  To: string;
+  from: string;
+  to: string;
   formattedMoveInDate: any;
   showConfirmation = false;
   showMoveInDateError = false;
@@ -325,8 +323,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       .subscribe(result => {
         this.intLeadDaysFrom = result.intLeadDaysFrom;
         this.intLeadDaysTo = result.intLeadDaysTo;
-        this.From = moment().add(this.intLeadDaysFrom, 'days').toISOString();
-        this.To = moment().add(this.intLeadDaysTo, 'days').toISOString();
+        this.from = moment().add(this.intLeadDaysFrom, 'days').toISOString();
+        this.to = moment().add(this.intLeadDaysTo, 'days').toISOString();
       });
     }
 

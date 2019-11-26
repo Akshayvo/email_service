@@ -176,7 +176,7 @@
                          <mat-form-field class="example-full-width " class="form-control" placeholder="select your date" 
                          [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }"
                          >
-                            <input matInput [matDatepicker]="picker" formControlName="dteMoveIn"  [min]="From" [max]="To" readonly (click)="picker.open()">
+                            <input matInput [matDatepicker]="picker" formControlName="dteMoveIn"  [min]="from" [max]="to" readonly (click)="picker.open()">
 
                             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                             <mat-datepicker  #picker></mat-datepicker>
@@ -256,8 +256,5 @@
             </div>
         </form>
     </ng-template>
-
-
-
 </div>
 
