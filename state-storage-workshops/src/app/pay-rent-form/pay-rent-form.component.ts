@@ -26,7 +26,7 @@ import { SurchargeService } from '../services/surcharge.service';
   selector: 'app-pay-rent-form',
   templateUrl: './pay-rent-form.component.html',
   styleUrls: ['./pay-rent-form.component.scss'],
-  providers:[DatePipe],
+  providers: [DatePipe],
 })
 export class PayRentFormComponent implements OnInit, OnDestroy {
 
