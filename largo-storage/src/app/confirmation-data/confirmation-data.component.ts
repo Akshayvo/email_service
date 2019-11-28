@@ -124,6 +124,11 @@ public navigateToPrevious(location: any) {
 }
 
 
+public navigate(location: any) {
+  this.router.navigate([location]);
+}
+
+
   ngOnInit() {
 
     this.firstName = this.dataSharingService.objTenant.FirstName;
@@ -138,21 +143,28 @@ public navigateToPrevious(location: any) {
     this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
     this.description = this.dataSharingService.LstUnitTypes.Description;
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
+
+
   }
 
   addTenant(data: any): void {
     this.addTenantSubscribe$ = this.addTenantService.addTenant(data)
         .subscribe(result => {
         localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
+        console.log('reservation charges are', this.dataSharingService.LstUnitTypes.ReservationFee );
+
         if (this.navigateToMoveIn ) {
           if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
             this.router.navigate(['/view-rates/payMoveInCharges']);
+          } else {
+            this.moveIn(this.MoveIn);
           }
-
         } else {
           if (this.navigateToReserve) {
             if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
               this.router.navigate(['/view-rates/payReservationCharges']);
+            } else {
+              this.makeAReservation(this.MoveIn);
             }
           }
         }
@@ -162,11 +174,27 @@ public navigateToPrevious(location: any) {
     updateTenant(data: any) {
      this.updateTenantSubscribe$ = this.tenantInfoService.updateTenant(data)
         .subscribe(result => {
-          if (this.navigateToMoveIn) {
-            this.moveIn(this.MoveIn);
+          // if (this.navigateToMoveIn) {
+          //   this.moveIn(this.MoveIn);
+          // } else {
+          //   if (this.navigateToReserve) {
+          //     this.makeAReservation(this.MoveIn);
+          //   }
+          // }
+
+          if (this.navigateToMoveIn ) {
+            if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
+              this.router.navigate(['/view-rates/payMoveInCharges']);
+            } else {
+              this.moveIn(this.MoveIn);
+            }
           } else {
             if (this.navigateToReserve) {
-              this.makeAReservation(this.MoveIn);
+              if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
+                this.router.navigate(['/view-rates/payReservationCharges']);
+              } else {
+                this.makeAReservation(this.MoveIn);
+              }
             }
           }
         });

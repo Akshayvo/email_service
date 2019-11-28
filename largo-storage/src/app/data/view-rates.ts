@@ -7,9 +7,6 @@ export const th = [
     data: `Rate`
   },
   {
-    data: `Unit Deposit`
-  },
-  {
     data: `Reserve a Unit`
   },
   {

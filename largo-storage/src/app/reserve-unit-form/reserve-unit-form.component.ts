@@ -446,6 +446,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     );
   }
 
+  onSubmit() {
+
+  }
+
   public ngOnDestroy(): void {
     if (this.getLeadDaysSubscribe$ && this.getLeadDaysSubscribe$.closed) {
       this.getLeadDaysSubscribe$.unsubscribe();

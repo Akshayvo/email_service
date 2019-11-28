@@ -1,47 +1,10 @@
 <div class="reserve-unit-form">
-
         <div [hidden]="" *ngIf="unitTypeNotAvailability" class="alert alert-danger alert-dismissible fade show">
-                There is no Unit available, Please choose the other unit type or call the facility for more detail
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="close()">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        <div class="pb-4" *ngIf="strConfirmation || strAccessCode; else other_content">
-        
-        <div *ngIf="ReservationFee <= 0">
-            Your reservation was successful.
-            <div class="py-4">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td class="td-1">Confirmation Number </td>
-                            <td>
-                                 <!-- <div class="loader" *ngIf="!strConfirmation && strAccessCode"></div> -->
-                             {{strConfirmation || strAccessCode}}</td>
-                         </tr>
-                         <tr>
-                             <td class="td-1">Unit Type</td>
-                             <td>{{reserveUnitForm.value.lstUnitTypes[0].Description}} </td>
-                         </tr>
-                         <tr>
-                             <td class="td-1">Rate</td>
-                             <td> ${{reserveUnitForm.value.lstUnitTypes[0].MonthlyRate}}</td>
-                         </tr> 
-                         <tr *ngIf="!clickedMoveIn">
-                             <td class="td-1">Move-In date</td>
-                             <td>{{ formattedMoveInDate }}</td>
-                         </tr>
-                     </tbody>
-                </table>
-            </div>
-            <div>
-                 <button *ngIf="tokenExit" (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
-                 <div class="py-3 home-link"><a (click)="navigate('/')">Go to Home</a></div>
-             </div>
+            There is no Unit available, Please choose the other unit type or call the facility for more detail
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="close()">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
-    </div>
-
-    <ng-template #other_content>
 
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div  class="row justify-content">
@@ -172,7 +135,7 @@
                  </div>
                  <div class=" pb-5" >
                      <div class=" form-group custom-date-css" *ngIf="navigateToReserve">
-                        <label>Move In Date*</label>&nbsp;
+                         <label>Move In Date*</label>&nbsp;
                          <mat-form-field class="example-full-width " class="form-control" placeholder="select your date" 
                          [ngClass]="{ 'is-invalid': submitted && f.dteMoveIn.errors }"
                          >
@@ -199,10 +162,10 @@
                             </div>
                         </div>
                     </div>
-                    <div  >
+                    <div *ngIf=" MonthlyRate " >
                         <label>Rate:</label>&nbsp;
         
-                     ${{serviceMonthlyValue || MonthlyRate}}
+                     ${{ MonthlyRate}}
                      <span *ngIf="rateTax > 0">
                          + ${{rateTax}} (Tax)
                      </span>
@@ -255,6 +218,5 @@
                 <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12"  (click)="navigateToConfirmation('/view-rates/confirmation')">Next</button>
             </div>
         </form>
-    </ng-template>
 </div>
 

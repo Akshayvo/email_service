@@ -18,6 +18,12 @@ table {
     }
   }
 }
+.home-link {
+  a {
+    color: $secondary;
+    text-decoration: underline;
+  }
+}
 
 .loaderBg {
   width: 300px;

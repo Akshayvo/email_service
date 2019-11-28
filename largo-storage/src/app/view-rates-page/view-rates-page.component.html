@@ -17,9 +17,6 @@
           <td colspan="2" class="px-4 border">
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
           </td>
-          <td colspan="2" class="px-4 border text-center">
-              ${{lstUnitType.ReservationFee || 0.00}}
-          </td>
           <td colspan="2" class="py-2 px-4 border">
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>
