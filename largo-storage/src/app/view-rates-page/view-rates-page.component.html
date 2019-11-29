@@ -3,7 +3,7 @@
     </div>
     <div [class.loader]="showLoader" class="loader-position"> 
     </div>
-  <table>
+  <table class="viewrates-desktop">
       <tHead [class.display]="!showTable">
           <tr>
             <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th">{{th.data}}</th>
@@ -34,4 +34,37 @@
         </tr>
       </tbody>
   </table>
+  <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes">
+    <div class="col-6 text-center ">  
+    <div class=" py-1 ">{{lstUnitType.Description}}</div>
+    <div class="row">
+        
+        <div class="col-6 text-center ">
+            <p class=" "><b><u>Rate</u></b></p>
+            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</div>
+        </div>
+        <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" >
+                <!-- <p class="px-4 "><b><u>Unit Type</u></b></p> -->
+                <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
+            </div>
+
+    </div>
+    </div>
+      <div class="col-6  text-right">
+      <div class=" py-1 buttons">
+          <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
+      </div>
+      <div class="py-1 buttons" *ngIf="lstUnitType.IsUnitsAvailable; else other">
+          <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
+      </div>
+      <ng-template #other>
+          <div class=" text-right">
+            <i class="fas fa-question-circle"></i>
+            <!-- <div class="text-center">Please call the facility to move in.</div> -->
+        </div>
+
+          </ng-template>
+    </div>
+     
+  </div>
 </div>

@@ -13,7 +13,8 @@ export class LstUnitTypes {
     ReservationFeeTax: number;
     UnitTypeID: number;
     IsUnitsAvailable: boolean;
-    IsClimateControlled: boolean
+    IsClimateControlled: boolean;
+    ClimateControlled: string;
 
     constructor(
         Description: string,
@@ -31,6 +32,7 @@ export class LstUnitTypes {
         this.UnitTypeID = UnitTypeID;
         this.IsUnitsAvailable = IsUnitsAvailable;
         this.IsClimateControlled = IsClimateControlled;
+        this.ClimateControlled = 'Climate Controlled';
     }
 }
 

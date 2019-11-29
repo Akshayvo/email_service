@@ -4,6 +4,7 @@
     display: none;
   }
 
+
 table {
     width: -webkit-fill-available;
   
@@ -54,4 +55,41 @@ table {
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  }
+
+  // try to use div
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // width: 100%;
+    // border-bottom: thin solid lightgray;
+  }
+  p{
+    margin: 0;
+  }
+  .ClimateControlled { 
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ClimateBorder {
+    border-left: 1px solid #000;
+    text-align: left;
+  }
+
+  @media only screen and (min-width:992px) {
+    .viewrates-mobile{
+      display: none;
+    }
+  }
+  @media only screen and (max-width:991px) {
+    .viewrates-desktop{
+      display: none;
+    }
   }
