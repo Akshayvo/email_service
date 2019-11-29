@@ -1,0 +1,37 @@
+<div>
+    <div [class.loader]="!showTable">
+    </div>
+    <div [class.loader]="showLoader" class="loader-position"> 
+    </div>
+  <table>
+      <tHead [class.display]="!showTable">
+          <tr>
+            <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th">{{th.data}}</th>
+          </tr>
+      </tHead>
+      <tbody>
+        <tr *ngFor="let lstUnitType of LstUnitTypes">
+          <td colspan="2" class="px-4 border">
+              {{lstUnitType.Description}}
+          </td>
+          <td colspan="2" class="px-4 border">
+              <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
+          </td>
+          <td colspan="2" class="py-2 px-4 border">
+              <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
+          </td>
+          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other">
+            <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
+          </td>
+          <td colspan="2" class="px-4 border text-center">
+              {{lstUnitType.IsClimateControlled || defaultClimateString}} 
+          </td>
+          <ng-template #other>
+            <td colspan="2" class="py-2 px-4 border">
+            <div class="text-center">Please call the facility to move in.</div>
+          </td>
+          </ng-template>
+        </tr>
+      </tbody>
+  </table>
+</div>

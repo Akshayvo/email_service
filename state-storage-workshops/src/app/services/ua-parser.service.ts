@@ -35,9 +35,9 @@ export class UaParserService {
       }
     }
     if (this.typeOfImages === 'WEBP') {
-      this.baseUrl = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/_Images/webp`;
+      this.baseUrl = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/webp`;
     } else {
-      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/_Images/jpg';
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/jpg';
     }
   }
 }

@@ -40,6 +40,7 @@ import { MaterialModule } from './modules/material/material.module';
 import { RequestInterceptorService } from './services/request-interceptor.service';
 import { ForgotPassword } from './models/auth';
 import { RentNowComponent } from './rent-now/rent-now.component';
+import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
 
 
 @NgModule({
@@ -64,14 +65,14 @@ import { RentNowComponent } from './rent-now/rent-now.component';
     ForgotPasswordComponent,
     PayRentFormComponent,
     ConfirmationDataComponent,
-    RentNowComponent
+    RentNowComponent,
+    ViewRatesPageComponent,
 
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
     NO_ERRORS_SCHEMA
   ],
- 
   imports: [
     CommonModule,
     NgtUniversalModule,

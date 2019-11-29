@@ -14,6 +14,9 @@ import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ReserveComponent } from './reserve/reserve.component';
 import { RentNowComponent } from './rent-now/rent-now.component';
+import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
+import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
+import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -22,9 +25,20 @@ const routes: Routes = [
   // { path: 'unit-sizer', component: UnitSizerComponent },
   { path: 'storageTips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'view-rates', component: ViewRatesComponent },
+  {
+    path: 'view-rates',
+    component: ViewRatesComponent,
+    children: [
+      { path: '', component: ViewRatesPageComponent },
+      { path: 'reserve', component: ReserveUnitFormComponent },
+      { path: 'move-in', component: ReserveUnitFormComponent },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+    ]
+   },
   { path: 'rent-now', component: RentNowComponent },
-  { path: 'pay-rent', 
+  { path: 'pay-rent',
   component: PaymentComponent,
   children: [
     {path: '', redirectTo: 'login', pathMatch: 'full'},

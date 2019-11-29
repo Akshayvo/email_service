@@ -4,8 +4,6 @@ import { Observable } from 'rxjs';
 
 import { StrTempTenantToken} from '../models/tenant';
 
-import { environment } from '../../environments/environment';
-
 @Injectable({
   providedIn: 'root'
 })
