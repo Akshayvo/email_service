@@ -86,7 +86,8 @@
                        </div>
                 <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
                     <label>State*</label>
-                    <select class="form-control" formControlName="State" [id]="option?.id"   [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }">
+                    <select class="form-control" formControlName="State"  
+                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }">
                         <option value="" disabled  selected >Select your State</option>
                              <option *ngFor="let option of option"
                              [value]="option.id"
@@ -116,7 +117,7 @@
                      <div formArrayName="lstUnitTypes">
                          <h2 class="pb-3">Unit</h2>
                          <i><strong *ngIf="showMoveInDateError">Please fill out the correct move in date.</strong></i>
-                     <div *ngFor="let item of reserveUnitForm.controls.lstUnitTypes.controls; let i = index">
+                     <div *ngFor="let item of f.lstUnitTypes.controls; let i = index">
                          <div  [formGroupName]="i">
                              <div class="form-group">
                                  <label for="lstUnitTypes">Unit Type*</label>&nbsp;
@@ -150,7 +151,7 @@
                             </div>
                     </div>
                     <div class="pb-4" formArrayName="lstRentalPeriods">
-                        <div *ngFor="let itemRental of reserveUnitForm.controls.lstUnitTypes.controls; let i = index">
+                        <div *ngFor="let itemRental of f.lstUnitTypes.controls; let i = index">
                             <div  [formGroupName]="i">
                                 <label for="PeriodDescription">Period*</label>&nbsp;
                                 <select class="form-control" formControlName="PeriodDescription" [id]="LstRentalPeriod?.PeriodDescription">

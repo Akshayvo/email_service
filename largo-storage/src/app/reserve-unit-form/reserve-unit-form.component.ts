@@ -22,7 +22,7 @@ import { DataSharingService } from '../services/data-sharing.service';
 
 export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
-  get f() { return this.reserveUnitForm.controls; }
+
 
   proRateAmount?: number;
   curStage: number;
@@ -242,6 +242,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   public navigate(location: any) {
     this.router.navigate([location]);
+  }
+
+  get f(): any { return this.reserveUnitForm.controls; }
+
+  getError(form: {controls: any}) {
+    return form.controls;
   }
 
   close() {

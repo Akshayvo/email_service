@@ -384,20 +384,20 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmount;
         this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         if ( paymentDataResponse.intErrorCode === 1 ) {
+          if (this.navigateToReserve) {
+            this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
+            this.makeAReservation(this.MoveIn);
+          } else {
+            if (this.navigateToMoveIn) {
+              this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
+              this.moveIn(this.MoveIn);
+            }
+          }
           this.showSuccessPayment = true;
         } else {
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
 
-        if (this.navigateToReserve) {
-          this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-          this.makeAReservation(this.MoveIn);
-        } else {
-          if (this.navigateToMoveIn) {
-            this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-            this.moveIn(this.MoveIn);
-          }
-        }
 
       }, (err: any) => {
         if (err instanceof HttpErrorResponse) {
