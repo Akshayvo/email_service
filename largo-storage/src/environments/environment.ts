@@ -10,8 +10,8 @@ export const environment = {
   appId: 'largo-storage',
   VERSION:  require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  // APIKey: `dzJ0OVcySjIqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 29229
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
+  APIKey: `dzJ0OVcySjIqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 29229
+  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
   // APIKey: `UzJCOFY4SDQqMlA6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // sto & go
   // APIKey: `MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, //catskill
   // 29235:dzJ0OVcySjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O

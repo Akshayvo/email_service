@@ -13,7 +13,7 @@ export class LstUnitTypes {
     ReservationFeeTax: number;
     UnitTypeID: number;
     IsUnitsAvailable: boolean;
-    IsClimateControlled: boolean
+    IsClimateControlled: boolean;
 
     constructor(
         Description: string,
