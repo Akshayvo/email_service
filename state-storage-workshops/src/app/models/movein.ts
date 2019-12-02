@@ -18,6 +18,8 @@ export class StrConfirmation {
     }
 }
 
+
+
 export class ObjCharges {
     Rate: number;
     Setup: number;

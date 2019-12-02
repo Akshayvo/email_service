@@ -10,18 +10,27 @@ export class LstUnitTypes {
     Description: string;
     MonthlyRate: number;
     ReservationFee: number;
+    ReservationFeeTax: number;
     UnitTypeID: number;
+    IsUnitsAvailable: boolean;
+    IsClimateControlled: boolean;
 
     constructor(
         Description: string,
         MonthlyRate: number,
+        ReservationFeeTax: number,
         ReservationFee: number,
         UnitTypeID: number,
+        IsUnitsAvailable: boolean,
+        IsClimateControlled: boolean,
         ) {
         this.Description = Description,
         this.MonthlyRate = MonthlyRate;
+        this.ReservationFeeTax  = ReservationFeeTax;
         this.ReservationFee = ReservationFee;
         this.UnitTypeID = UnitTypeID;
+        this.IsUnitsAvailable = IsUnitsAvailable;
+        this.IsClimateControlled = IsClimateControlled;
     }
 }
 

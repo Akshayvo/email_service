@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef, HostListener } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
@@ -46,6 +46,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   objCharges: ObjCharges;
   th: any;
   tenant: any;
+  text = false;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -53,6 +54,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     private fetchDataService: FetchDataService,
     private router: Router,
     private dataSharingService: DataSharingService,
+    private eRef: ElementRef,
   ) {
    }
 
@@ -65,6 +67,17 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   public fetchThData() {
     this.th = th;
   }
+
+  @HostListener('document:click', ['$event'])
+  clickout(event: any, unitData: any) {
+    console.log(event.target, unitData);
+    if (this.eRef.nativeElement.contains(event.target)) {
+      this.text = true;
+    } else {
+      this.text = false;
+    }
+  }
+
 
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);

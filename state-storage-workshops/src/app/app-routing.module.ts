@@ -37,7 +37,17 @@ const routes: Routes = [
       { path: 'payMoveInCharges', component: PayRentFormComponent },
     ]
    },
-  { path: 'rent-now', component: RentNowComponent },
+  { 
+    path: 'rent-now', component: RentNowComponent,
+    children: [
+      { path: '', component: ViewRatesPageComponent },
+      { path: 'reserve', component: ReserveUnitFormComponent },
+      { path: 'move-in', component: ReserveUnitFormComponent },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+    ]
+  },
   { path: 'pay-rent',
   component: PaymentComponent,
   children: [
