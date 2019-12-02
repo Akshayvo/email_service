@@ -2,7 +2,6 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { viewrates } from '../data/view-rates';
 import { MetaService } from '../services/link.service';
-// import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { UaParserService } from '../services/ua-parser.service';
