@@ -30,10 +30,6 @@ h2{
 
 
 .jumbotron-top {
-  // background: url("https://storageunitsoftware-assets.s3.amazonaws.com/uploads/widget_image/image/32436/large_71917240_371800310364546_1762541006458191872_n.jpg");
-  // background-position: bottom;
-  // background-repeat: no-repeat;
-  // background-size: cover;
   height: 80vh;
   .jumbotron {
     background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Largo_Storage/largo-storage-home.jpg");
@@ -83,46 +79,21 @@ h2{
   }
 }
 
-
-// .jumbotron-top1 {
-//   background: url("");
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 80vh;
-// }
-
-// .jumbotron-top2 {
-//   background: url("");
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 80vh;
-// }
-
 // HOME jUMBOTRON
 
   .jumbotron-bottom {
     display: flex;
-    align: center;
+    align-items: center;
     height: 20vh;
 
     .feature-text {
       text-transform: uppercase;
     }
-    .bottomHeading{
-      // padding: 20px;
-      text-align: center
-    }
+ 
     .bottomContent{
       font-size: 1rem;
     }
 
-    // p {
-    //   text-align: center;
-    //   margin-bottom: 0;
-    //   font-size: 1.3rem;
-    // }
   }
 
 
@@ -187,7 +158,6 @@ h2{
 }
 
 @media only screen and (min-width: 1441px) and (max-height: 720px) and (min-height: 481px) {
-  .jumbotron-container {
     .jumbotron-bottom {
       height: 177px;
       display: flex;
@@ -214,7 +184,7 @@ h2{
         }
       }
     }
-  }
+  
 
   .disp {
     p {
@@ -420,7 +390,6 @@ h2{
         width: 400px;
         position: absolute;
         bottom: 0;
-        text-align: center;
         top:25%;
       }
     }
@@ -558,12 +527,22 @@ h2{
         width: 85%;
       }
 
+      .jumbotron-skew-text {
+        top: 32%;
+        width: 260px;
+        h1 {
+          font-size: 1.4rem;
+        }
+      }
+
       a {
         min-width: 140px;
       }
 
       
     }
+
+   
 
     .disp {
       p {
@@ -575,11 +554,13 @@ h2{
       }
     }
 
-    .jumbotron-bottom {
-      display: flex;
-      align-items: center;
-      height: 180px;
-    }
+
+  }
+
+  .jumbotron-bottom {
+    display: flex;
+    align-items: center;
+    height: 270px;
   }
 
   .map-responsive {
@@ -593,10 +574,10 @@ h2{
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
-        top: 25%;
+        top: 28%;
         width:260px;
-        padding-left: 20px;
-        p{
+         
+        p {
           font-size: 0.9rem;
         }  
       }
@@ -749,9 +730,7 @@ h2{
     display: flex;
     align-items: center;
     height: 350px !important;
-    .bottomHeading{
-      // margin-bottom: 5px !important;
-    }
+
     p{
       font-size: 0.85rem !important;
     }
@@ -784,8 +763,5 @@ h2{
         background: rgba(0, 0, 0, 0.6);
       }
     }
-
-
-    
   }
 }
