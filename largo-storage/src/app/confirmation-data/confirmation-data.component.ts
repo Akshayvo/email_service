@@ -8,6 +8,7 @@ import { AddTenantService } from '../services/add-tenant.service';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { Subscription } from 'rxjs';
 import { option } from '../data/view-rates';
+import { SignOutService } from '../services/sign-out.service';
 
 
 @Component({
@@ -86,6 +87,8 @@ private  addTenantSubscribe$: Subscription;
 private  updateTenantSubscribe$: Subscription;
 private  makeAReservationSubscribe$: Subscription;
 private  getTenantInfoSubscribe$: Subscription;
+private  signOutSubscribe$: Subscription;
+
 
 constructor(
   private  dataSharingService: DataSharingService,
@@ -94,12 +97,13 @@ constructor(
   private makeAReservationService: MakeAReservationService,
   private addTenantService: AddTenantService,
   private tenantInfoService: TenantInfoService,
-
+  private signOutService: SignOutService,
 ) {
   this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
   this.navigateToReserve  = this.dataSharingService.navigateToReserve;
   this.tenantData.objTenant = this.dataSharingService.objTenant;
   this.unitData = this.dataSharingService.LstUnitTypes;
+
   this.fetchOption();
 
   this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
@@ -266,6 +270,15 @@ public navigate(location: any) {
         );
       }
 
+      signOut(logOut: any) {
+        this.signOutSubscribe$ = this.signOutService.signOut(logOut)
+           .subscribe(result => {
+             localStorage.removeItem('strTenantToken');
+           }, (err) => {
+           }
+           );
+       }
+
     onSubmit() {
       if (window.localStorage) {
         if (localStorage.getItem('strTenantToken')) {
@@ -322,6 +335,9 @@ public navigate(location: any) {
       }
       if (this.makeAReservationSubscribe$ && this.makeAReservationSubscribe$.closed) {
         this.makeAReservationSubscribe$.unsubscribe();
+      }
+      if (this.signOutSubscribe$ && this.signOutSubscribe$.closed) {
+        this.signOutSubscribe$.unsubscribe();
       }
     }
 }

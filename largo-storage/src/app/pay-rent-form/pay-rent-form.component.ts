@@ -95,6 +95,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     intUnitTypeID: 0,
   };
   navigateToMoveInPayment: boolean;
+  tenantTokenExist = false;
 
   private OptionOutOfAutoPaySubscribe$: Subscription;
   private signUpAutoPaySubscribe$: Subscription;
@@ -192,6 +193,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.getPayMethods();
     this.fetchMonth();
     if (localStorage.getItem('strTenantToken')) {
+      this.tenantTokenExist = true;
       this.getTenantInfo();
     }
   }
@@ -443,11 +445,15 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.submitted = false;
        this.tokenExit = localStorage.getItem('strTenantToken');
 
+       if (this.tokenExit) {
+         this.tenantTokenExist = true;
+       }
+
       this.existTempToken = localStorage.getItem('strTempTenantToken');
 
       if (this.existTempToken) {
-        this.tokenRemoved = true;
         localStorage.removeItem('strTempTenantToken');
+        this.tokenRemoved = true;
       }
       this.reservationInProgress = false;
     }, (err: any) => {
@@ -478,10 +484,13 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         this.strAccessCode = strConfirmationResponse.strAccessCode;
         this.submitted = false;
          this.tokenExit = localStorage.getItem('strTenantToken');
+         if (this.tokenExit) {
+           this.tenantTokenExist = true;
+         }
         this.existTempToken = localStorage.getItem('strTempTenantToken');
         if (this.existTempToken) {
-          this.tokenRemoved = true;
           localStorage.removeItem('strTempTenantToken');
+          this.tokenRemoved = true;
         }
         this.reservationInProgress = false;
       }, (err: any) => {

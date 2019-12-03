@@ -124,12 +124,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   unitTypeNotAvailability = false;
 
   showPaymentPage = false;
+  gettingTenantData = false;
 
   private  getLeadDaysSubscribe$: Subscription;
   private  getTenantInfoSubscribe$: Subscription;
   private  getDataSubscribe$: Subscription;
   private  getRentalPeriodSubscribe$: Subscription;
-  private  signOutSubscribe$: Subscription;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -226,6 +226,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     if (window.localStorage) {
       if (localStorage.getItem('strTenantToken')) {
         this.getTenantInfo();
+        this.gettingTenantData = true;
       }
     }
     this.reserveUnitForm.patchValue({
@@ -339,6 +340,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   getTenantInfo() {
   this.getTenantInfoSubscribe$ =  this.tenantInfoService.getTenantInfo()
       .subscribe(tenantData => {
+        this.gettingTenantData = false;
         if (tenantData) {
           const { Tenant } = tenantData;
           const tempObject = {
@@ -452,6 +454,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     );
   }
 
+
+
   onSubmit() {
 
   }
@@ -468,9 +472,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     }
     if (this.getRentalPeriodSubscribe$ && this.getRentalPeriodSubscribe$) {
       this.getRentalPeriodSubscribe$.unsubscribe();
-    }
-    if (this.signOutSubscribe$ && this.signOutSubscribe$.closed) {
-      this.signOutSubscribe$.unsubscribe();
     }
   }
 }
