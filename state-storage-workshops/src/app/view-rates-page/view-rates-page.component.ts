@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef, HostListener, } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
@@ -39,7 +39,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showLoader = false;
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
-  defaultClimateString = '-';
+  defaultClimateString = ' ';
 
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
@@ -54,7 +54,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     private fetchDataService: FetchDataService,
     private router: Router,
     private dataSharingService: DataSharingService,
-    private eRef: ElementRef,
+    private eRef: ElementRef
   ) {
    }
 
@@ -78,14 +78,10 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     }
   }
 
-
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);
     this.router.navigate([location]);
     this.dataSharingService.LstUnitTypes = unitData;
-
-    console.log('service unit data', this.dataSharingService.LstUnitTypes);
-
   }
 
   getMoveInCharges(description: any, monthlyRate: any, intUnitTypeID: any) {

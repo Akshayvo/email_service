@@ -1,5 +1,9 @@
 @import '../../styles.scss';
 
+.button {
+  width: -webkit-fill-available;
+}
+
 table {
   tbody {
     tr:nth-child(even){
@@ -12,6 +16,13 @@ table {
         border: 1px solid #dee2e6;
       }
     }
+  }
+}
+.home-link {
+  a {
+    color: $secondary;
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -36,7 +47,7 @@ table {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  animation: spin 2s linear infinite;
+  animation: spin 1s linear infinite;
   margin-top: 20%;
   margin-left:35%;
   // margin-bottom: 10px;
