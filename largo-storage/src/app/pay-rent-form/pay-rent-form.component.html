@@ -290,20 +290,15 @@
     </div>
 
 
-      <div class="row">
-        <div class="col-md-12 d-flex justify-content-end"> 
-          <div>
-              <button *ngIf="navigateToMoveIn || navigateToReserve" (click)="navigateToConfirmation('/view-rates/confirmation')" class="btn btn-primary mr-4">Go Back</button>
-          </div>
-          <div>
-            <button type="submit" *ngIf="!navigateToMoveIn && !navigateToReserve" class="btn btn-primary">Make a Payment</button>
-            <button type="submit" *ngIf="navigateToMoveIn" class="btn btn-primary">Pay and Complete Move-In</button>
-            <button type="submit" *ngIf="navigateToReserve" class="btn btn-primary">Make a Payment</button>
-          </div>
-          <div class="ml-4">
-            <button *ngIf="tenantTokenExist" (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
-          </div>
-        </div>
+      <div class="text-right">
+        <button *ngIf="navigateToMoveIn || navigateToReserve"  (click)="navigateToConfirmation('/view-rates/confirmation')" 
+        class="btn btn-primary col-lg-3 col-sm-12 mr-lg-4 mr-sm-0 mb-lg-0 mb-sm-2 mb-2">Go Back</button>
+        <button type="submit" *ngIf="!navigateToMoveIn && !navigateToReserve" 
+        class="btn btn-primary col-lg-3 col-sm-12">Make a Payment</button>
+        <button type="submit" *ngIf="navigateToMoveIn" 
+        class="btn btn-primary col-lg-3 col-sm-12">Pay and Complete Move-In</button>
+        <button type="submit" *ngIf="navigateToReserve" class="btn btn-primary col-lg-3 col-sm-12">Make a Payment</button>
+        <button *ngIf="tenantTokenExist" (click)="signOut(logOut)" class="btn btn-primary col-lg-3 col-sm-12 ml-lg-4 ml-sm-0 mt-lg-0 mt-sm-2 mt-2">LogOff</button>
       </div>
 
   </form>
