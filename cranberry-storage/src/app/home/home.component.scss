@@ -13,7 +13,8 @@
 
 //Common code
 .home-container {
-  color: $fontColor;
+  color: #000;
+  background-color: $primary;
 }
 
 .disp {
@@ -32,7 +33,7 @@
 
 // Get started Section
 .getStarted {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-storage-jumbotron.jpg") center top no-repeat fixed;
+  background: url("../../assets/cranberry-self-storage-jumbo.jpg") center top no-repeat fixed;
   // background-size: cover;
   background-position: bottom;
 
@@ -56,7 +57,7 @@
   height: 80vh;
 
   .jumbotron {
-    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-storage-jumbotron.jpg");
+    background: url("../../assets/cranberry-self-storage-jumbo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

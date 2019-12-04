@@ -57,7 +57,8 @@
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </div>
               <div class="pt-3 font-xs-device">
-                  <div *ngFor="let hour of hours">
+                  <div class="mb-2" *ngFor="let hour of hours">
+                    <b>{{hour.heading}}<br></b>
                       <b>{{hour.label}}</b>{{hour.data}}<br>
                     </div>    
               </div>
@@ -82,7 +83,7 @@
       <app-photos></app-photos>  
       </div>
       <div class="col-lg-6 py-3">
-        <h1 class="heading pb-4">Affordable Storage Units & Vehicle Parking in Cranberry, PA</h1>
+        <h1 class="heading pb-4">Affordable Storage Units & Offsite, Secured Vehicle Parking in Cranberry, PA</h1>
         <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
       </div>
     </div>

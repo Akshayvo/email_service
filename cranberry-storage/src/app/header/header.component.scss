@@ -19,23 +19,23 @@ a {
 }
 
 .nav-link {
-  color: $fontColor;
+  color: $secondary;
   font-weight: 600;
   padding: 30px;
 }
 
 .nav-link:hover {
-  color: $primary;
+  color: $secondary;
 }
 
 .router-link-active {
-  color: $primary;
-  border-bottom: 5px solid $primary;
+  color: $secondary;
+  border-bottom: 5px solid $secondary;
 }
 
 .nav-link-active {
-  color: $primary;
-  border-bottom: 5px solid $primary;
+  color: $secondary;
+  border-bottom: 5px solid $secondary;
 }
 
 .display {

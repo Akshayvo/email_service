@@ -86,14 +86,15 @@
               </div>
               <div class="contact-details pt-lg-4 pt-md-4 pt-sm-2">
                 <h2 class="py-1">Cranberry Storage</h2>
-                <span class="font-xs-device" *ngFor="let contact of contactInfo">
+                <span class="font-xs-device my-1" *ngFor="let contact of contactInfo">
                     <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                 </span>
-                <h3 class="py-1"><strong>Office:</strong></h3>
-                <span class="font-xs-device" *ngFor="let hour of hours">
-                  <b>{{hour.label}}</b> {{hour.data}}<br>
-                </span>
+                <h3 class="py-1"><strong></strong></h3>
+                <div class="font-xs-device mb-2" *ngFor="let hour of hours">
+                <b >{{hour.heading}}<br></b>
+                  <b >{{hour.label}}</b> {{hour.data}}<br>
+                </div>
               </div>
           </div>
       </div>

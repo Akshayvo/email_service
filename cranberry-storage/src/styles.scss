@@ -7,7 +7,7 @@ $primaryDark: #3d0414;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
-$secondary: #212121;
+$secondary: #efefef;
 
 $dark: #333;
 $light: #efefef;
@@ -16,7 +16,7 @@ $white: #fff;
 $border: #707070;
 $shadow: #000;
 
-$fontColor: #000;
+$fontColor: #fff;
 // $primaryFont: 'Roboto';
 $primaryFont: "Lato", sans-serif;
 
@@ -40,11 +40,11 @@ body {
 }
 
 .bg-light {
-  background: $light !important;
+  background: $primary !important;
 }
 
 .bg-white {
-  background: $white;
+  background: $primary !important;
 }
 
 .bg-translucent {

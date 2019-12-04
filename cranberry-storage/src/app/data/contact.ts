@@ -29,27 +29,29 @@ export const contact = [
 
 export const hours = [
     {
+        heading: `Office Hours`,
         label: 'Monday to Friday: ',
         data: '8:00AM - 5:00PM'
     },
-    {
-        label: 'Saturday: ',
-        data: '8:00AM - 5:00PM'
-    },
-    {
-        label: 'Sunday: ',
-        data: '8:00AM - 5:00PM'
-    },
     // {
-    //     label: 'Access Hours: ',
-    //     data: '6:00AM - 10:00PM 7 Days a Week'
-    // }
+    //     label: 'Saturday: ',
+    //     data: '8:00AM - 5:00PM'
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: '8:00AM - 5:00PM'
+    // },
+    {
+        heading: 'Access Hours',
+        label: '',
+        data: '24 Hours a Day 7 Days a Week'
+    }
 ];
 
 export const socialLink = [
     {
         label: `facebook`,
-        path: `https://www.facebook.com/Cranberry-Storage-2060303874186177`,
+        path: `https://www.facebook.com/Cranberry-Storage-2060303874186177/`,
         class: `fab fa-facebook-square`,
     }
 ];
