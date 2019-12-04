@@ -213,12 +213,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
-
     this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
-
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
-
-
     this.payRentForm.patchValue({
       objPayment: {
         PayType: {
@@ -297,8 +293,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             this.displayBalance = this.balance;
           }
 
-
-
           this.payRentForm.patchValue({
             objPayment: {
               CCAccountNumber: Tenant.CCNumber,
@@ -311,7 +305,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               PaymentAmount: (this.navigateToMoveInPayment ? this.balance : (this.navigateToReserve ? this.TotalReserveAmount : this.totalMoveInAmount)),
             }
           });
-
           this.getSurCharge();
         }
       }
@@ -322,6 +315,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           this.sessionExpire = 'Session Expired. Please Login for completing the payment.';
         }
       });
+  }
+
+  public navigateToConfirmation(location: any) {
+    this.router.navigate([location]);
   }
 
   getPayMethods() {

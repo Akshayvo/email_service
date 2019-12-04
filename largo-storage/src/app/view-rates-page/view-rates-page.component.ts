@@ -39,7 +39,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showLoader = false;
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
-  defaultClimateString = '-';
+  defaultClimateString = ' ';
 
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;

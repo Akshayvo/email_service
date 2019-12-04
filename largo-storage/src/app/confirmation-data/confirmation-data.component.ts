@@ -48,7 +48,7 @@ existTempToken: string;
 showMoveInDateError = false;
 
 isValueUpdated = true;
-formattedMoveInDate: any;
+// formattedMoveInDate: any;
 
 unitTypeNotAvailability = false;
 
@@ -91,8 +91,8 @@ private  signOutSubscribe$: Subscription;
 
 
 constructor(
-  private  dataSharingService: DataSharingService,
   public router: Router,
+  private dataSharingService: DataSharingService,
   private moveInService: MoveInService,
   private makeAReservationService: MakeAReservationService,
   private addTenantService: AddTenantService,
@@ -108,7 +108,6 @@ constructor(
 
   this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
   this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-
   this.isValueUpdated = this.dataSharingService.isValueUpdated;
   this.totalTaxAmount = this.dataSharingService.MoveInData.TotalTaxAmount;
   this.totalChargesAmount = this.dataSharingService.MoveInData.TotalChargesAmount;
@@ -132,24 +131,21 @@ public navigate(location: any) {
   this.router.navigate([location]);
 }
 
+ngOnInit() {
+  this.firstName = this.dataSharingService.objTenant.FirstName;
+  this.lastName = this.dataSharingService.objTenant.LastName;
+  this.phone = this.dataSharingService.objTenant.Phone;
+  this.emailAddress = this.dataSharingService.objTenant.EmailAddress;
+  this.addressLine1  = this.dataSharingService.objTenant.AddressLine1;
+  this.addressLine2 = this.dataSharingService.objTenant.AddressLine2;
+  this.city = this.dataSharingService.objTenant.City;
+  this.zip = this.dataSharingService.objTenant.ZIP;
+  this.reservationFee = this.dataSharingService.LstUnitTypes.ReservationFee;
+  this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
+  this.description = this.dataSharingService.LstUnitTypes.Description;
+  this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
 
-  ngOnInit() {
-
-    this.firstName = this.dataSharingService.objTenant.FirstName;
-    this.lastName = this.dataSharingService.objTenant.LastName;
-    this.phone = this.dataSharingService.objTenant.Phone;
-    this.emailAddress = this.dataSharingService.objTenant.EmailAddress;
-    this.addressLine1  = this.dataSharingService.objTenant.AddressLine1;
-    this.addressLine2 = this.dataSharingService.objTenant.AddressLine2;
-    this.city = this.dataSharingService.objTenant.City;
-    this.zip = this.dataSharingService.objTenant.ZIP;
-    this.reservationFee = this.dataSharingService.LstUnitTypes.ReservationFee;
-    this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
-    this.description = this.dataSharingService.LstUnitTypes.Description;
-    this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
-
-
-  }
+}
 
   addTenant(data: any): void {
     this.addTenantSubscribe$ = this.addTenantService.addTenant(data)
@@ -178,14 +174,6 @@ public navigate(location: any) {
     updateTenant(data: any) {
      this.updateTenantSubscribe$ = this.tenantInfoService.updateTenant(data)
         .subscribe(result => {
-          // if (this.navigateToMoveIn) {
-          //   this.moveIn(this.MoveIn);
-          // } else {
-          //   if (this.navigateToReserve) {
-          //     this.makeAReservation(this.MoveIn);
-          //   }
-          // }
-
           if (this.navigateToMoveIn ) {
             if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
               this.router.navigate(['/view-rates/payMoveInCharges']);
@@ -274,6 +262,7 @@ public navigate(location: any) {
         this.signOutSubscribe$ = this.signOutService.signOut(logOut)
            .subscribe(result => {
              localStorage.removeItem('strTenantToken');
+             this.router.navigate(['/']);
            }, (err) => {
            }
            );
@@ -310,15 +299,30 @@ public navigate(location: any) {
           }
         } else {
           if (this.existTempToken) {
-            if (this.navigateToMoveIn === true) {
-              this.moveIn(this.MoveIn);
-            } else {
-              this.MoveIn.dteMoveIn = this.formattedMoveInDate;
-              this.makeAReservation(this.MoveIn);
+            // if (this.navigateToMoveIn === true) {
+            //   this.moveIn(this.MoveIn);
+            // } else {
+            //   // this.MoveIn.dteMoveIn = this.formattedMoveInDate;
+            //   this.makeAReservation(this.MoveIn);
+            // }
+            if (!this.isValueUpdated) {
+              if (this.navigateToMoveIn === true) {
+                if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
+                  this.router.navigate(['/view-rates/payMoveInCharges']);
+                } else {
+                  this.moveIn(this.MoveIn);
+                }
+              } else {
+                if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
+                  this.router.navigate(['/view-rates/payReservationCharges']);
+                 } else {
+                   this.makeAReservation(this.MoveIn);
+                 }
+              }
             }
           } else {
             this.addTenant(this.tenantData);
-            this.MoveIn.dteMoveIn = this.formattedMoveInDate;
+            // this.MoveIn.dteMoveIn = this.formattedMoveInDate;
           }
         }
     }
