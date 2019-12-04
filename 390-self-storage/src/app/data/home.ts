@@ -56,28 +56,41 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `390 Self Storage is Rochester's newest self storage facility. We are locally owned & operated with 3 self storage 
-            facilities in the greater Rochester area. When it comes to self storage, we're your hometown experts! We work hard 
-            every day to provide the right mix of convenience, security, and affordability our customers seek.`,
+        p: `390 Self Storage is Rochester’s newest self storage facility. With three self storage
+        facilities in the greater Rochester area; when it comes to self storage, we are your home
+        town experts. We work hard every day to provide the right mix of convenience, affordability,
+        and security for our patrons.`,
     },
     {
-        p: `We are conveniently located on Buell Road right off of Chili Ave at the 390 Chili Ave exit right next to the Greater 
-            Rochester Airport. We offer convenient 24-hour access 7 days a week, and 24-hour account management and bill-pay through 
-            our tenant portal online!  We are a fully-fenced, and well-lit self storage facility with ample security camera coverage 
-            to ensure a sense of safety at all times!`,
+        p: `We are conveniently located just minutes from the Greater Rochester Airport.  Our address
+        is 142 Buell Road. Take Route 390 and exit at Chili Avenue, exit 19. Cross straight over Chili
+        Avenue at the light where you will see our 390 Self Storage sign at the end of the driveway.
+        Follow that straight back to our office on the left.`,
     },
     {
-        p: `Our facility is the ideal solution to help you recover some of that elbow room around the house, or to use during a move 
-            or remodeling project. Our residential users love the affordable rates and easy drive-up access, plus our climate-controlled 
-            units are ideal for the more delicate belongings like furniture or documents. Speaking of documents, businesses love our 
-            climate-controlled units for records storage! Local businesses routinely store their supplies and inventory with us to 
-            save money over expanding with commercial real estate prices!`,
+        p: `Our facility offers convenient 24-hour access, 7 days a week. We also offer 24-hour online
+        account management with bill payment available through our tenant on-line portal.`,
     },
+    {
+        p: `We offer a fully fenced facility along with a drive up security gate. Our gate is fully lit
+        with security cameras and accessible only with personal access codes.  Our security also includes
+        well-lit drive-up standard units as well as throughout our climate-controlled buildings. Our entire
+        facility has enhanced security with 24 hours state of the art security cameras. This ensures a true
+        sense of safety at all times.`
+    },
+    {
+        p: `Our facility is the ideal solution to help you recover some of that elbow room around the house,
+        or to use during a move or a remodeling project. Our residential users love the affordable rate and
+        easy drive-up access. Our climate-controlled units are ideal for more delicate belongings such as
+        furniture, pictures and important documents. Businesses love our climate-controlled units for records
+        storage. Local businesses routinely store their supplies and inventory with us to save money over
+        expanding with commercial real estate prices.`
+    }
 ];
 
 
-export const gettingStarted = `If you're ready to reclaim that space around your home, or expand your business without breaking the 
-                               bank on commercial real estate just to store supplies, give 390 Self Storage a call!`;
+export const gettingStarted = `If you're ready to reclaim that space around your home, or expand your business
+without breaking the bank on commercial real estate just to store supplies, give 390 Self Storage a call!`;
 
 export const blurb = [
     {
