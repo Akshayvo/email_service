@@ -293,7 +293,7 @@
       <div class="row">
         <div class="col-md-12 d-flex justify-content-end"> 
           <div>
-              <button (click)="navigateToConfirmation('/view-rates/confirmation')" class="btn btn-primary mr-4">Go Back</button>
+              <button *ngIf="navigateToMoveIn || navigateToReserve" (click)="navigateToConfirmation('/view-rates/confirmation')" class="btn btn-primary mr-4">Go Back</button>
           </div>
           <div>
             <button type="submit" *ngIf="!navigateToMoveIn && !navigateToReserve" class="btn btn-primary">Make a Payment</button>
