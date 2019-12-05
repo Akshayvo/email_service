@@ -1,0 +1,93 @@
+
+<div class="home-container">
+  <!--Jumbotron Container Starts Here-->
+  <div class="jumbotron-container">
+    <div class="jumbotron-top">
+      <div class="jumbotron px-0 m-0">
+       
+         
+      </div>
+    </div>
+    <div class="jumbotron-bottom disp">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-3 p-4 text-center override-padding-x-axis" *ngFor="let feature of feature">
+            <img [src]="feature?.path" [alt]="feature?.alt" height="80px" width="auto">
+              <h6 class="feature-text">{{feature.label}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Jumbotron Ends Here-->
+
+  <!--Map and Contact Section-->
+  <div class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 py-3 map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11641.722491097558!2d-77.6244158!3d43.1584843!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbdef1402091f9b1e!2sHigh%20Falls%20Self%20Storage%20LLC!5e0!3m2!1sen!2sus!4v1575315611324!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="col-lg-6 py-3">
+          <div class="mb-4">
+           <h2 class="heading pb-4">Location Information</h2>
+            <div>
+              <div class="font-xs-device" *ngFor="let contact of contactDetails">
+                <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+              </div>
+              <div class="pt-3 font-xs-device">
+                  <div *ngFor="let hour of hours">
+                      <b>{{hour.label}}</b>{{hour.data}}<br>
+                    </div>    
+              </div>
+              </div>
+          </div>
+          
+          <div class="pt-2">
+              <app-tables [tBody]="featuresList"></app-tables>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Map and Contact Section Ends Here-->
+
+
+  <!--About Us Section-->
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 py-3">
+        <!-- <app-photos></app-photos> -->
+        <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/High_Falls/moving-in-high-falls-self-storage.jpg" width="100%" alt="photograph of a woman moving a box into an open self storage unit">
+      </div>
+      <div class="col-lg-6 py-3">
+        <h1 class="heading pb-4">Affordable Self Storage Units in Rochester, NY</h1>
+        <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+      </div>
+    </div>
+  </div>
+  <!--About Us Section Ends Here-->
+
+  
+<!--Get Started Secion-->
+  <div class="getStarted text-center">
+    <div class="get-started">
+     <div class="container py-5">
+       <div class="py-5 m-0">
+         <div class="row">
+           <div class="col-md-12">
+             <h2 class="heading pb-4">Getting Started</h2>
+             <p class="pb-4">{{gettingStarted}}</p>
+             <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Your Unit!</a>
+           </div>
+         </div>
+       </div>
+     </div>      
+    </div>
+  </div>
+<!--Get Started Secion Ends Here-->
+
+</div> 
+<!--Home Cotainer Ends here-->

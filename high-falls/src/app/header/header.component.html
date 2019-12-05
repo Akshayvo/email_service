@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg bg-white py-0">
+  <div class="container ">
+    <a class="navbar-brand" (click)="navigate('/')">
+      <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/High_Falls/high-falls-logo.png" width="auto" height="80" alt="logo artwork that shows the name High Falls Self Storage inside of a shape that displays the historic warehouse building the business resides in" class="py-2">
+      <!-- <b width="auto" height="70"></b> -->
+    </a>
+    <button class="navbar-toggler py-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
+      <ul class="navbar-nav ml-auto navbar-nav-scroll">
+        <li class="nav-item px-2 text-center" *ngFor="let nav of navLinks">
+          <a class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
