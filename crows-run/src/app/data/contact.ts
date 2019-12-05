@@ -7,9 +7,9 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:selsman@crowsrunstorage.com',
+        redirect: 'mailto:contact@crowsrunselfstorage.com',
         label: 'Email: ',
-        data: 'selsman@crowsrunstorage.com',
+        data: 'contact@crowsrunselfstorage.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
@@ -23,15 +23,11 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'SUN: ',
-        data: 'Closed '
-    },
-    {
         label: 'MON-FRI: ',
         data: '9:00 AM - 5:00 PM'
     },
     {
-        label: 'SAT: ',
+        label: 'SAT-SUN: ',
         data: 'By Appointment Only'
     },
     {
