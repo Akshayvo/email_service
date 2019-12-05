@@ -12,6 +12,7 @@ import { Subscription } from 'rxjs';
 import * as moment from 'moment';
 import { MoveInService } from '../services/moveIn.service';
 import { DataSharingService } from '../services/data-sharing.service';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -76,7 +77,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   ReservationFeeValue: number;
   ReservationFeeTax: number;
   reservationInProgress = false;
-  MonthlyRate: number;
+  UnitTypeRate: number;
   Description: string;
   defaultReservationFee: number;
   defaultReservationFeeTax: number;
@@ -125,6 +126,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   showPaymentPage = false;
   gettingTenantData = false;
+  monthlyRate: number;
+  annualRate: number;
+  biAnnualRate: number;
+  quarterRate: number;
 
   private  getLeadDaysSubscribe$: Subscription;
   private  getTenantInfoSubscribe$: Subscription;
@@ -187,7 +192,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.dataSharingService.navigateToReserve = true;
         this.dataSharingService.navigateToMoveIn = false;
       } else {
-
         if (this.router.url ===  '/view-rates/move-in' ) {
           this.navigateToMoveIn = true;
           this.dataSharingService.navigateToMoveIn = true;
@@ -205,14 +209,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   initLstUnitTypes() {
     return this.formBuilder.group({
       Description: [''],
-      MonthlyRate: [''],
-      ReservationFee: [''],
     });
   }
 
   ngOnInit() {
     this.Description  = this.dataSharingService.getReservationData().Description;
-    this.MonthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
+    this.UnitTypeRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
 
     this.getData();
@@ -232,8 +234,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
         Description: this.Description,
-        MonthlyRate: this.MonthlyRate,
-        ReservationFee: this.ReservationFee,
       }])
     });
   }
@@ -273,28 +273,49 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue  = event.target.value;
     const index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
-    this.MonthlyRate = this.lstUnitTypes[index].MonthlyRate;
+    this.UnitTypeRate = this.lstUnitTypes[index].MonthlyRate;
+    this.monthlyRate = this.lstUnitTypes[index].MonthlyRate;
+    this.annualRate = this.lstUnitTypes[index].AnnualRate;
+    this.biAnnualRate = this.lstUnitTypes[index].BiAnnualRate;
+    this.quarterRate = this.lstUnitTypes[index].QuarterRate;
     this.unitTypeId = this.lstUnitTypes[index].UnitTypeID;
     this.ReservationFee = this.lstUnitTypes[index].ReservationFee;
     this.ReservationFeeTax = this.lstUnitTypes[index].ReservationFeeTax;
     this.MoveIn.intUnitTypeID = this.unitTypeId;
-    this.reserveUnitForm.patchValue({
-      lstUnitTypes: ([{
-        MonthlyRate: this.MonthlyRate,
-      }
-    ])
-  });
+    this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
+    this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
+    this.dataSharingService.LstUnitTypes.BiAnnualRate = this.biAnnualRate;
+    this.dataSharingService.LstUnitTypes.QuarterRate = this.quarterRate;
+    this.dataSharingService.LstUnitTypes.Description = this.selectedDescription;
+    this.dataSharingService.LstUnitTypes.UnitTypeID = this.unitTypeId;
 
-  this.dataSharingService.LstUnitTypes.MonthlyRate = this.MonthlyRate;
-  this.dataSharingService.LstUnitTypes.Description = this.selectedDescription;
-  this.dataSharingService.LstUnitTypes.UnitTypeID = this.unitTypeId;
-  this.getMoveInCharges(this.unitTypeId);
+    if (this.navigateToMoveIn) {
+      this.getMoveInCharges(this.unitTypeId);
+    }
+}
+
+  changeRate(event: any) {
+    console.log(event.target.value);
+    if (event.target.value === 'Monthly') {
+
+      console.log('Monthly FROM changeRate');
+    }
+    if (event.target.value === 'Annual') {
+      console.log('Annual FROM changeRate');
+    }
+    if (event.target.value === 'BiAnnual') {
+      console.log('BiAnnual FROM changeRate');
+    }
+    if (event.target.value === 'Quarter') {
+      console.log('Quarter FROM changeRate');
+    }
   }
 
   getMoveInCharges(intUnitTypeID: any) {
     this.moveInService.getMoveInCharges({
       intUnitTypeID
     }).subscribe(result => {
+      console.log(result);
       const {objCharges: {
         ProrateAmt = 0,
         Deposit = 0,
@@ -393,9 +414,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   getData() {
    this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
+        console.log(unitTypesResponse);
       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
       const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
-      this.MonthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
+      this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
       const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
       this.Description = unitTypesResponse.lstUnitTypes[0].Description;
       const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
@@ -405,7 +427,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.unitTypeId =
       this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
       this.UnitTypeID = unitTypesResponse.lstUnitTypes[0].UnitTypeID;
-      this.getMoveInCharges(this.unitTypeId);
+      if (this.navigateToMoveIn) {
+        this.getMoveInCharges(this.unitTypeId);
+      }
 
 
         this.dataSharingService.LstUnitTypes.ReservationFee = this.ReservationFee;
@@ -415,21 +439,21 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.reserveUnitForm.patchValue({
           lstUnitTypes: ([{
             Description: this.Description,
-            MonthlyRate: this.MonthlyRate,
-            ReservationFee: this.defaultReservationFee,
           }])
         });
 
         this.dataSharingService.LstUnitTypes.Description = this.Description;
-        this.dataSharingService.LstUnitTypes.MonthlyRate = this.MonthlyRate;
         this.dataSharingService.LstUnitTypes.UnitTypeID = this.UnitTypeID;
+        // this.dataSharingService.LstUnitTypes.MonthlyRate = this.UnitTypeRate;
+        this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
+        this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
+        this.dataSharingService.LstUnitTypes.BiAnnualRate = this.biAnnualRate;
+        this.dataSharingService.LstUnitTypes.QuarterRate = this.quarterRate;
 
       } else {
         this.reserveUnitForm.patchValue({
           lstUnitTypes: ([{
             Description: serviceDescriptionValue,
-            MonthlyRate: serviceMonthlyValue,
-            ReservationFee: this.ReservationFee,
           }])
         });
         this.dataSharingService.LstUnitTypes.Description = serviceDescriptionValue;

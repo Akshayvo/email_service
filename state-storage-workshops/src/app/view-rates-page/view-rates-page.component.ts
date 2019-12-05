@@ -68,15 +68,6 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.th = th;
   }
 
-  @HostListener('document:click', ['$event'])
-  clickout(event: any, unitData: any) {
-    console.log(event.target, unitData);
-    if (this.eRef.nativeElement.contains(event.target)) {
-      this.text = true;
-    } else {
-      this.text = false;
-    }
-  }
 
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);

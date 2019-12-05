@@ -36,10 +36,13 @@ export class DataSharingService {
 
   LstUnitTypes = {
     Description: '',
-    MonthlyRate: 0,
     ReservationFee: 0,
     ReservationFeeTax: 0,
     UnitTypeID: 0,
+    MonthlyRate: 0,
+    AnnualRate: 0,
+    BiAnnualRate: 0,
+    QuarterRate: 0,
   };
 
   objTenant = {

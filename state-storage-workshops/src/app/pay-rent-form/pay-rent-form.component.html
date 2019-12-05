@@ -42,7 +42,7 @@
                         [value]="lstPayType?.PayTypeDescription"
                         [class.display-none]="lstPayType?.PayTypeID === -8"
                         >
-                        <div *ngIf="lstPayType?.PayTypeID != -8">
+                        <div *ngIf="lstPayType?.PayTypeID !== -8">
                           {{lstPayType.PayTypeDescription}}
                         </div>
                         </option>
@@ -305,4 +305,3 @@
   </ng-template>
   </div>
   
-  <!-- <pre>{{ payRentForm.value | json }}</pre> -->

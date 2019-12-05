@@ -1,11 +1,11 @@
-export const blurb = [ 
-    { 
+export const blurb = [
+    {
         h1: `Self Storage & Workshops in North Largo Florida`,
         p: `State Storage Workshops understands the challenges behind starting a business, that's why we offer a wide range of convenient options 
             for self storage and small business operations! Our facility well-lit, fully-fenced, is accessible 24 hours a day, and has many 110v 
             and 240v electrified workshops waiting to accelerate your small business today! Call (727) 536-9860, or book online 24 hours a day!`,
     }
-];       
+];
 
 export const featuresHead = 'The Only Self Storage in Greene County With All of The Following';
 
@@ -23,12 +23,11 @@ export const featuresList = [
         td2: 'Well-Light Facility'
     },
     {
-        td1: 'Variety of Large Unit Sizes Available up to 1200 Sq Ft',
+        td1: ' Digital Video Surveillance',
         td2: 'Workshops for Small Business',
     },
-    
     {
-        td1: ' Digital Video Surveillance'
+        td1: 'Variety of Large Unit Sizes Available up to 1200 Sq Ft',
     }
 ];
 
@@ -57,14 +56,12 @@ export const feature = [
         alt: 'Icon art displaying a screen with cursor',
         p: 'Use our easy online tenant portal to manage your account from anywhere, 24 hours a day!'
     }
-    
 ];
 
 export const aboutUs = [
     {
         p: ``,
     },
-    
 ];
 
 export const gettingStarted = `Are you ready to reserve your convenient, affordable self storage unit or electrified workshop through State Storage Workshops?

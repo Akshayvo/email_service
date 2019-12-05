@@ -11,7 +11,7 @@
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div  class="row justify-content">
              <div formGroupName="objTenant" class="col-lg-7 ">
-                 <h2 class="pb-3">Tenant Data</h2>
+                 <h2 class="pb-3">Tenant Information</h2>
 
                  <div class="row">
                    <div class="col-lg-6 form-group">
@@ -156,7 +156,9 @@
                         <div *ngFor="let itemRental of f.lstUnitTypes.controls; let i = index">
                             <div  [formGroupName]="i">
                                 <label for="PeriodDescription">Period*</label>&nbsp;
-                                <select class="form-control" formControlName="PeriodDescription" [id]="LstRentalPeriod?.PeriodDescription">
+                                <select class="form-control" formControlName="PeriodDescription"
+                                 [id]="LstRentalPeriod?.PeriodDescription" 
+                                 (change)="changeRate($event)">
                                     <option *ngFor="let LstRentalPeriod of LstRentalPeriods" [value]="LstRentalPeriod?.PeriodDescription" >
                                         {{LstRentalPeriod.PeriodDescription}}
                                     </option>
@@ -165,13 +167,12 @@
                             </div>
                         </div>
                     </div>
-                    <div *ngIf=" MonthlyRate " >
+                    <div *ngIf="UnitTypeRate">
                         <label>Rate:</label>&nbsp;
-        
-                     ${{ MonthlyRate}}
-                     <span *ngIf="rateTax > 0">
-                         + ${{rateTax}} (Tax)
-                     </span>
+                        ${{UnitTypeRate}}
+                        <span *ngIf="rateTax > 0">
+                            + ${{rateTax}} (Tax)
+                        </span>
                     </div>
                     <div class="form-group readonly-form-control" *ngIf="navigateToReserve && ReservationFee !== undefined">
                         <label>Reservation Charges:</label>&nbsp;
