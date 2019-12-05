@@ -99,7 +99,7 @@ public fetchHours(){
     this.hoursDetails = hoursLocation1;
   }
   public fetchContactDetailsLocation3() {
-    this.heading = `Beck Road Self Storage`;
+    this.heading = `Beck Road Storage`;
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }

@@ -23,7 +23,7 @@ export class ReserveUnitComponent implements OnInit {
     if (this.router.url.includes('/location/inez-storage')) {
       this.id = 1;
       this.heading = headingLocation1;
-    } else  if (this.router.url.includes('/location/inezstorage-2'))  {
+    } else  if (this.router.url.includes('/location/beck-road-storage'))  {
       this.id = 3;
       this.heading = headingLocation3;
     }

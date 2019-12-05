@@ -34,7 +34,7 @@ const routes: Routes = [
     ]
   },
   
-  { path: 'location/inezstorage-2',
+  { path: 'location/beck-road-storage',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -55,7 +55,7 @@ const routes: Routes = [
     }
   },
   
-  { path: 'review/inezstorage-2', component: HomeComponent,
+  { path: 'review/beck-road-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },

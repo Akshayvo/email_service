@@ -16,8 +16,8 @@ export const navLinks = [
               },
               {
                   id: '3',
-                  label: 'Beck Road Self Storage',
-                  path: '/location/inezstorage-2',
+                  label: 'Beck Road Storage',
+                  path: '/location/beck-road-storage',
               },
         ]
     },

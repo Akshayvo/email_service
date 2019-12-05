@@ -85,7 +85,7 @@ export const tabs = [
 
 export const headingLocation1 = `Inez Storage`;
 
-export const headingLocation3 = `Beck Road Self Storage`;
+export const headingLocation3 = `Beck Road Storage`;
 
 export const unitSizerLocation1 = [
     {

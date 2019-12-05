@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/inez-storage')) {
         this.logo = '';
-    } else  if (this.router.url.includes('/location/inezstorage-2'))  {
+    } else  if (this.router.url.includes('/location/beck-road-storage'))  {
         this.logo = '';
     } else {
       this.logo = '';

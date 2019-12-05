@@ -20,7 +20,7 @@ export class DirectionsComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/inez-storage')) {
        this.fetchDetailsLocation1();
-     } else  if (this.router.url.includes('/location/inezstorage-2'))  {
+     } else  if (this.router.url.includes('/location/beck-road-storage'))  {
        this.fetchDetailsLocation3();
      }
  }
@@ -33,7 +33,7 @@ export class DirectionsComponent implements OnInit {
 
   public fetchDetailsLocation3() {
     this.directionPoints = directionLocation3;
-    this.directionHeading = `Directions to Beck Road Self Storage`;
+    this.directionHeading = `Directions to Beck Road Storage`;
     this.id = 3;
   }
 }

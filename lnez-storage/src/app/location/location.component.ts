@@ -39,7 +39,7 @@ export class LocationComponent implements OnInit {
                         as well as parking for boats, RVs, and vehicles at affordable rate!`
             });
             this.titleService.setTitle('Affordable Self Storage & Parking in Inez | Inez Storage');
-    } else  if (this.router.url.includes('/location/inezstorage-2'))  {
+    } else  if (this.router.url.includes('/location/beck-road-storage'))  {
           this.meta.addTag({
             name: 'description',
             content: `Beck Road Storage is Inez' newest self storage facility! We offer a variety of affordable storage 
@@ -58,7 +58,7 @@ export class LocationComponent implements OnInit {
     if (this.router.url.includes('/location/inez-storage')) {
         this.fetchDetailsLocation1();
     } 
-     else  if (this.router.url.includes('/location/inezstorage-2'))  {
+     else  if (this.router.url.includes('/location/beck-road-storage'))  {
       this.fetchDetailsLocation3();
     }
  }
@@ -89,8 +89,8 @@ export class LocationComponent implements OnInit {
       this.router.navigate(['/location/inez-storage'],
             { queryParams: { name: 'Inez storage', currentTab: 'Reserve Unit' }});
     } else if ( this.locationId === 3) {
-      this.router.navigate(['/location/inezstorage-2'],
-            { queryParams: { name: 'Beck Road Self Storage', currentTab: 'Reserve Unit' }});
+      this.router.navigate(['/location/beck-road-storage'],
+            { queryParams: { name: 'Beck Road Storage', currentTab: 'Reserve Unit' }});
     }
    }
 

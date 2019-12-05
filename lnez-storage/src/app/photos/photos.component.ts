@@ -26,7 +26,7 @@ export class PhotosComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/inez-storage')) {
       this.fetchDetailsLocation1();
-  }else  if (this.router.url.includes('/location/inezstorage-2'))  {
+  }else  if (this.router.url.includes('/location/beck-road-storage'))  {
     this.fetchDetailsLocation3();
   }
   }
