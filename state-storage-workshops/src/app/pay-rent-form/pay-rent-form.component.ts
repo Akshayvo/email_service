@@ -429,13 +429,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.OptionOutOfAutoPay(this.signUp);
     }
     }
-    // if (this.AmountToPay > 0) {
-    //   this.payRentForm.patchValue({
-    //     objPayment: {
-    //       PaymentAmount: this.AmountToPay
-    //     }
-    //   });
-    // }
     this.invalidPayment = null,
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
