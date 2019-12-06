@@ -7,6 +7,6 @@ export const environment = {
   VERSION:  require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // APIKey: `dzJ0OVcySjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
-  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
-  APIKey: `dzJ0OVcySjMqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 29234
+  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
+  // APIKey: `dzJ0OVcySjMqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 29234
 };

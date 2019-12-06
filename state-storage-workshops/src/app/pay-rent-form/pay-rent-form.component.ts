@@ -522,7 +522,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   convertDate(date: any) {
     const formattedNormalDate = new Date(date);
     // tslint:disable-next-line:max-line-length
-    return `${formattedNormalDate.getFullYear()}-${formattedNormalDate.getMonth() + 1}-${formattedNormalDate.getDate()}`;
+    return `${formattedNormalDate.getMonth() + 1}-${formattedNormalDate.getDate()}-${formattedNormalDate.getFullYear()}`;
   }
 
   moveIn(strAccessCode: any) {
