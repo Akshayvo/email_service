@@ -16,7 +16,7 @@ $white: #fff;
 $border: #707070;
 $shadow: #000;
 
-$fontColor: #fff;
+$fontColor: #000;
 // $primaryFont: 'Roboto';
 $primaryFont: "Lato", sans-serif;
 
@@ -32,7 +32,7 @@ body {
 
 // Different Background colors
 .bg-secondary {
-  background: $secondary;
+  background: $secondary !important;
 }
 
 .bg-dark {
@@ -98,6 +98,9 @@ body {
 
 .heading {
   font-weight: 400;
+}
+p{
+  color: #fff;
 }
 
 .sectionImage {

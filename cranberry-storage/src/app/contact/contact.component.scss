@@ -10,8 +10,43 @@
   }
 
   a {
-    color: $fontColor;
+    color: #fff;
   }
+  .btn-primary {
+    background-color: #cda500;
+    border-color: #cda500;
+    color: #fff !important;
+    border: 2px solid #cda500;
+    font-weight: 600;
+}
+.btn-outline-primary {
+  background-color: transparent;
+  /* border-color: #CDA566; */
+  border: 2px solid #cda500;
+  color: #fff !important;
+  font-weight: 600;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color:#756006 !important;
+  border-color: #756006 !important;
+  font-weight: 600;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  background-color: #756006 !important;
+  border-color: #756006 !important;
+  color: $white !important;
+  font-weight: 600;
+}
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #fff;
+}
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem #fff;
+}
 
   .form-control {
     font-size: 0.8em;
@@ -19,6 +54,7 @@
 
   label {
     font-size: 0.875rem;
+    color: #fff;
   }
 
   .contact-data {
@@ -44,7 +80,9 @@
     margin-top: 10px;
   }
 }
-
+.contact-page{
+  color: #fff;
+}
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -82,7 +120,13 @@ small {
     }
   }
 }
-
+@media only screen and(max-width:500px) {
+  .manager{
+    img{
+      height: 70;
+    }
+  }
+}
 @media only screen and (max-width: 476px) {
   .font-xs-device {
     font-size: 0.8rem;

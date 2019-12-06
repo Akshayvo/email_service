@@ -26,10 +26,11 @@ h1 {
   .unit-dimention {
     span {
       cursor: pointer;
+      color: #fff;
     }
 
     .active-unit {
-      color: $secondary;
+      color: #cda500;
       font-size: 1.2rem;
       font-weight: 900;
     }
@@ -59,6 +60,7 @@ h1 {
 .unit-data {
   width: 100%;
   margin: auto;
+  color: #fff;
 
   h3 {
     font-size: 1.3rem;

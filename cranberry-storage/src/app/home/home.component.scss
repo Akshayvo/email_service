@@ -6,6 +6,19 @@
   width: 15px;
   height: 15px;
 }
+.heading1{
+  color: #000;
+}
+.heading{
+  color: #fff;
+}
+.manager{
+  color: #000;
+}
+.container-fluid{
+  background-color: #cda500;
+  color: #000;
+}
 
 .carousel-item {
   height: 250px;
@@ -33,9 +46,9 @@
 
 // Get started Section
 .getStarted {
-  background: url("../../assets/cranberry-self-storage-jumbo.jpg") center top no-repeat fixed;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-self-storage-jumbo.jpg") center top no-repeat fixed;
   // background-size: cover;
-  background-position: bottom;
+  background-position: center;
 
   .get-started {
     left: 0;
@@ -57,7 +70,7 @@
   height: 80vh;
 
   .jumbotron {
-    background: url("../../assets/cranberry-self-storage-jumbo.jpg");
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-self-storage-jumbo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -107,6 +120,7 @@
   display: flex;
   align-items: center;
   height: 20vh;
+  color: #efefef !important;
 }
 
 @media only screen and (min-width: 1200px) {

@@ -24,25 +24,25 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/location_white.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/location_white.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/disabled.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/disabled.svg',
         label: 'Handicapped Accessible',
         alt: 'Icon art showing the universal symbol for handicapped accessible'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/24-hours_white.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/24-hours_white.svg',
         label: '24 Hour Facility Access',
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: '../../assets/garage_white.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/garage_white.svg',
         label: 'Boat and Vehicle Storage',
         alt: 'Icon art displaying boat and motorcycle'
     },
