@@ -14,7 +14,7 @@ export const featuresList = [
     },
     {
         td1: 'Drive-up Access / All Ground Floor Level',
-        td2: 'Password Activated Gate Access With Your Private Code'
+        td2: 'Keypad Activated Gate Access With Your Private Code'
     },
     {
         td1: 'Use your own disk lock or buy one from us',
@@ -65,11 +65,9 @@ export const aboutUs = [
             All of our units are drive-up at ground-level, making loading and unloading a breeze.`,
     },
     {
-        p: `We even have outdoor recreational vehicle, boat, camper, and car storage to help you reclaim space
-            on your driveway or lawn! Whether you are a residential user trying to de-clutter, a college student
-            or military personnel packing things up, a business person in need of a convenient and cost-effective
-            storage solution, or if you just need a place to park that RV or boat for the season, we've got you
-            covered! Our friendly management team is ready to make your storage experience an easy one!`,
+        p: `The facility is conveniently located right off of Route 65, between Conway and Freedom. We are a
+            fully-fenced facility, well-lit facility with a keypad-controlled entrance gate and video cameras.
+            All of our units are drive-up at ground-level, making loading and unloading a breeze.`,
     },
 ];
 
@@ -81,11 +79,11 @@ export const gettingStarted = `Are you ready to begin de-cluttering your life, a
 export const blurb = [
     {
         h1: `Affordable Storage Units in Conway`,
-        p: `Crows Run Self Storage serves Conway, Pennsylvania, and the surrounding
-            communities with quality indoor self storage units, and outdoor RV, camper,
-            boat and vehicle storage. Our indoor storage units range from 5'x10' to 10'x30',
-            and our outdoor spaces range from 10'x20' to 13'x40'. The facility is a fully-fenced,
-            well-lit self storage facility and is covered by video cameras. Access is secured
-            by the password activated gate. Our friendly management team looks forward to meeting you! Call today!`,
+        p: `Crows Run Self Storage serves Conway, Pennsylvania, and the surrounding communities with
+            quality indoor self storage units, and outdoor RV, camper, boat and vehicle storage. Our
+            indoor storage units range from 5'x10' to 10'x30', and our outdoor spaces range from 10'x20'
+            to 13'x40'. The facility is a fully-fenced, well-lit self storage facility and is covered by
+            video cameras. Access is secured by the keypad-activated gate. Our friendly management team
+            looks forward to meeting you! Call today!`,
     }
 ];

@@ -7,9 +7,9 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:contact@crowsrunselfstorage.com',
+        redirect: 'mailto:contact@crowsrunstorage.com',
         label: 'Email: ',
-        data: 'contact@crowsrunselfstorage.com',
+        data: 'contact@crowsrunstorage.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
