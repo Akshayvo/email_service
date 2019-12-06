@@ -22,9 +22,10 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We understand self storage! Take advantage of that experience, and use these helpful tips to make your experience a breeze!`
+      content: `Our quick storage tips page will help you figure out how to best
+                use our services and avoid common pitfalls in self storage!`
     });
-    this.titleService.setTitle('Storage Tips | Crows Run Self Storage');
+    this.titleService.setTitle('Storage Tips | Fort Locks Self Storage');
   }
 
   ngOnInit() {

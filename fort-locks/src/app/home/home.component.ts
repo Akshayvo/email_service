@@ -33,10 +33,10 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Are you looking for affordable self storage units in Conway, PA? Between our reasonable rates, 
-                wide selection, and awesome service, we have you covered!`
+      content: `Fort Locks Self Storage has a wide variety of clean & well-maintained self
+                storage sizes in both regular & climate-controlled types at affordable rates!`
     });
-    this.titleService.setTitle('Affordable Storage Units in Conway | Crows Run Self Storage');
+    this.titleService.setTitle('Affordable Self Storage in Danby | Fort Locks Self Storage');
   }
 
   public navigate(location: any) {

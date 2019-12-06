@@ -37,9 +37,9 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    {
-        label: 'facebook',
-        path: 'https://www.facebook.com/Crows-Run-Self-Storage-563126960369408/',
-        class: 'fab fa-facebook-square',
-    }
+    // {
+    //     label: 'facebook',
+    //     path: '',
+    //     class: 'fab fa-facebook-square',
+    // }
 ];

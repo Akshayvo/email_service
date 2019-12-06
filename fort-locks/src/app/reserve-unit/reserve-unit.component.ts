@@ -15,9 +15,10 @@ export class ReserveUnitComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to fill out our easy reservation form, and one of our friendly managers will be in touch!`
+      content: `Are you ready to start de-cluttering your life and reclaiming that space around
+                the house or work-site? Make your reservation here and store with us today!`
     });
-    this.titleService.setTitle('Reserve Unit | Crows Run Self Storage');
+    this.titleService.setTitle('Reserve Unit | Fort Locks Self Storage');
   }
 
   ngOnInit() {

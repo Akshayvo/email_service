@@ -20,9 +20,10 @@ export class PayRentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent online quickly, and easily with our tenant portal! Follow the instructions or call our office to learn how to log in!`
+      content: `Follow our simple instructions to access your account today!
+                Pay your bill and update your information 24/7!`
     });
-    this.titleService.setTitle('Pay Rent | Crows Run Self Storage');
+    this.titleService.setTitle('Pay Rent | Fort Locks Self Storage');
   }
 
   ngOnInit() {

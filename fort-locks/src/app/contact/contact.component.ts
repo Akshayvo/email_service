@@ -37,9 +37,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our handy contact form or contact information to drop us a line! One of our friendly managers will reach out shortly!`
+      content: `Do you have a question or concern about your account or about the services
+                offered at Fort Locks Self Storage? Use our handy form or call today!`
     });
-    this.titleService.setTitle('Contact Us | Crows Run Self Storage');
+    this.titleService.setTitle('Contact Us | Fort Locks Self Storage');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],

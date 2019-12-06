@@ -1,11 +1,17 @@
 export const storagePoints = [
-    { data: 'Use smaller boxes for books and heavy items.' },
-    { data: 'Use larger boxes for lighter items.' },
-    { data: 'Reinforce the bottom of boxes with at least one strip of packing tape.' },
-    { data: 'Pack boxes firmly to prevent the contents from shifting.' },
-    { data: 'Seal boxes tightly with wide packing tape.' },
-    { data: 'Pack records and CDs vertically! Don\'t stack them flat, they will warp or bend!' },
-    { data: 'Place heavier items in the bottom of the box and lighter items on top.' },
+    { data: `Pack like a professional; wrap dishes & stemware individually, remove legs from tables & store them on
+             edge, cover mirrors & glass to avoid scratching, pack clothing in boxes.  Do not wrap items in plastic
+             as it may retain moisture.` },
+    { data: `Select solid packing boxes that are easy to handle and stackable.  Label each box on the side and top.` },
+    { data: `Stack heavy unbreakable items on the bottom; lighter on top.` },
+    { data: `Place items you will need first to the front of the unit.`},
+    { data: `Use fabric covers to protect the upholstery.` },
+    { data: `Wipe tools lightly with oil, WD-40 or equal to inhibit rust.` },
+    { data: `DO NOT store food, perishables, plants, flammables, explosives, toxic or corrosive materials.` },
+    { data: `Place mothballs for linens or fabrics of any kind.` },
+    { data: `Place a plastic drop cloth on the concrete floor for garage storage.` },
+    { data: `Insurance at a storage facility is expensive for what you get.  For insurance coverage,
+             check your homeowner's or renters policy.` },
 ];
 
 

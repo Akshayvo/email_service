@@ -24,65 +24,64 @@ export const featuresList = [
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/location.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Fort_Locks/location.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/24-hours.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Fort_Locks/team.svg',
+        label: 'Family Owned & Operated',
+        alt: 'Icon of people standing together '
+    },
+    {
+        // tslint:disable-next-line:max-line-length
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Fort_Locks/24-hours.svg',
         label: '24 Hour Facility Access',
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/operator.svg',
-        label: 'Stellar Customer Service',
-        alt: 'Customer Service Representative Icon'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Fort_Locks/cctv.svg',
+        label: 'Security Cameras on Premises',
+        alt: 'Icon of a security camera'
     },
-    // {
-    //     // tslint:disable-next-line:max-line-length
-    //     path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/team.svg',
-    //     label: 'Family Owned & Operated',
-    //     alt: 'Icon of people standing together '
-    // },
 ];
 
 
 export const aboutUs = [
     {
-        p: `Crows Run Self Storage is Conway, Pennsylvania's best self storage facility, with indoor units
-            ranging from 5'x10' to 10'x'30'. Our indoor units are the ideal solution for residential storage
-            users in the middle of a hectic move, renovation, or those preparing to downsize their accommodations.
-            Business customers take advantage of our 24-hour access to pick up and drop off their inventory, supplies,
-            and equipment. Why pay commercial real estate prices when you can use Crows Run Self Storage
-            at a fraction of the cost?`,
+        p: `Fort Locks Self Storage is Danby's premier self storage facility. Our facility is located on Danby
+            Rd between Buttercup Lane and Benny Lane. We've been serving Danby, Ithaca, Trumansburg and the
+            surrounding communities for over three decades!  We are Danby's self storage experts and look
+            forward to putting that experience to good use protecting your cherished belongings.`,
     },
     {
-        p: `The facility is conveniently located right off of Route 65, between Conway and Freedom. We are a
-            fully-fenced facility, well-lit facility with a password-controlled entrance gate and video cameras.
-            All of our units are drive-up at ground-level, making loading and unloading a breeze.`,
+        p: `We offer a wide variety of unit sizes in both regular and climate-controlled varieties. Unlike many
+            facilities whose climate-control only heat and cools units, our facility offers highly sought-after humidity
+            control, making us ideal for document and antique storage. Business and residential customers alike use our
+            climate-controlled units to store antiques, furniture and records every day.`,
     },
     {
-        p: `The facility is conveniently located right off of Route 65, between Conway and Freedom. We are a
-            fully-fenced facility, well-lit facility with a keypad-controlled entrance gate and video cameras.
-            All of our units are drive-up at ground-level, making loading and unloading a breeze.`,
+        p: `Our facility also has fully-paved wide lanes between our outdoor self storage units. The ground-level units
+            are perfect for seasonal items you just don't have the room for around the home, or temporary storage during
+            a move or renovation project! Start re-claiming that elbow room around the home or office today and
+            call or reserve online!`,
     },
 ];
 
 
-export const gettingStarted = `Are you ready to begin de-cluttering your life, and regaining
-                               some of that elbow room around the house?
-                               Click here to get started with Crows Run Self Storage!`;
+export const gettingStarted = `Getting that de-cluttering project started with Fort Locks Self Storage is easy!
+                               Click here to fill out our easy online form, and start reclaiming some space
+                               around the home or work-site!`;
 
 export const blurb = [
     {
-        h1: `Affordable Storage Units in Conway`,
-        p: `Crows Run Self Storage serves Conway, Pennsylvania, and the surrounding communities with
-            quality indoor self storage units, and outdoor RV, camper, boat and vehicle storage. Our
-            indoor storage units range from 5'x10' to 10'x30', and our outdoor spaces range from 10'x20'
-            to 13'x40'. The facility is a fully-fenced, well-lit self storage facility and is covered by
-            video cameras. Access is secured by the keypad-activated gate. Our friendly management team
-            looks forward to meeting you! Call today!`,
+        h1: `Affordable Storage Units in Danby`,
+        p: `Fort Locks Self Storage is a local family-owned self storage facility that has been serving
+            the Danby, Ithaca, Newfield and the surrounding communities since 1987. We have a wide variety
+            of clean, and well-maintained self storage unit sizes in both regular and climate-controlled types.
+            We understand that the storage experience can be a stressful one, so our staff strives to make your
+            experience an easy one! Call today and learn more!`,
     }
 ];
