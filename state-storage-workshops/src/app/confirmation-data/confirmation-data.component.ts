@@ -144,6 +144,7 @@ ngOnInit() {
   this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
+  console.log('firstname from confirmation page', this.firstName);
 
 }
 

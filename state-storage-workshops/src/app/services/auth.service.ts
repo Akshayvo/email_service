@@ -28,4 +28,8 @@ export class AuthService {
   forgotPassword(forgotPassword: ForgotPassword) {
     return this.http.post<ForgotPassword>(this.forgotPasswordUrl, forgotPassword);
   }
+
+  isUserAuthenticated() {
+    return !!localStorage.getItem('strTenantToken');
+  }
 }

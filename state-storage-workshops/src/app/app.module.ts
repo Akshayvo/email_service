@@ -38,9 +38,10 @@ import { SelectDropDownModule } from 'ngx-select-dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { RequestInterceptorService } from './services/request-interceptor.service';
-import { ForgotPassword } from './models/auth';
 import { RentNowComponent } from './rent-now/rent-now.component';
 import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from '../app/auth.gurad';
 
 
 @NgModule({
@@ -88,6 +89,8 @@ import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.compon
   ],
   providers: [
     DatePipe,
+    AuthService,
+    AuthGuard,
     Title,
     {
       provide: ErrorHandler,

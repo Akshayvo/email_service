@@ -17,6 +17,7 @@ import { RentNowComponent } from './rent-now/rent-now.component';
 import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
 import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
 import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
+import { AuthGuard } from './auth.gurad';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -37,7 +38,7 @@ const routes: Routes = [
       { path: 'payMoveInCharges', component: PayRentFormComponent },
     ]
    },
-  { 
+  {
     path: 'rent-now', component: RentNowComponent,
     children: [
       { path: '', component: ViewRatesPageComponent },
@@ -54,7 +55,7 @@ const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full'},
     {path: 'login', component: LoginComponent },
     {path: 'forgotPassword', component: ForgotPasswordComponent },
-    {path: 'payment', component: PayRentFormComponent}
+    {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
   ]
 },
   { path: 'storage-tips', component: StorageTipsComponent },
