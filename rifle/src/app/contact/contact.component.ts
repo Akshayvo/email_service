@@ -5,6 +5,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
 import { contactUs } from '../data/blurb';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-contact',
@@ -34,7 +35,9 @@ export class ContactComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     private formBuilder: FormBuilder,
-  ) {
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Do you have questions about the self storage unit services provided by Rifle Self Storage?

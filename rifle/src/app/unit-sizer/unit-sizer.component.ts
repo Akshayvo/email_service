@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
 import { unitSizers } from '../data/blurb';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-unit-sizer',
@@ -18,8 +19,10 @@ export class UnitSizerComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
-  ) {
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `If you're not sure what will fit into the storage units we offer, check out our handy unit sizer page for a visual reference!`

@@ -7,7 +7,8 @@ export const environment = {
   errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   appId: 'rifle',
-  VERSION: require('../../package.json').version
+  VERSION: require('../../package.json').version,
+  websiteUrl: 'https://riflestorageunits.com/'
 
 };
 

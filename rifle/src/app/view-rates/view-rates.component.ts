@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { viewRate} from '../data/view';
 import { viewRates } from '../data/blurb';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-view-rates',
@@ -16,8 +17,10 @@ export class ViewRatesComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
-  ) {
+    private meta: Meta, 
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Check out our extremely affordable self storage unit rates, then make your reservation with our online form!`
