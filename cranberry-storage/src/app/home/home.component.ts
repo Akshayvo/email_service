@@ -5,6 +5,8 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, blurb} from '../data/home';
+import { CanonicalService } from '../services/canonical.service';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -29,11 +31,14 @@ export class HomeComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private canonical: CanonicalService,
   ) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Cranberry Storage is Cranberry, PA's newest self storage facility! We offer a wide range of unit sizes at extremely affordable rates!`
+      content: `Cranberry Storage is Cranberry, PA's newest self storage facility! We offer
+                a wide range of unit sizes at extremely affordable rates!`
     });
     this.titleService.setTitle('Affordable Storage Units in Cranberry | Cranberry Storage');
   }

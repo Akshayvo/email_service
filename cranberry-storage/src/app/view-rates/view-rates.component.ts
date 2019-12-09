@@ -2,6 +2,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { dataViewRates } from '../data/view-rates';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-view-rates',
@@ -16,11 +17,14 @@ export class ViewRatesComponent implements OnInit {
   constructor(
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
-    private meta: Meta
-  ) {
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to check out our extremely affordable rates on both regular and climate-controlled self storage units.`
+      content: `Take a moment to check out our extremely affordable rates on both
+                regular and climate-controlled self storage units.`
     });
     this.titleService.setTitle('View Rates | Cranberry Storage');
   }

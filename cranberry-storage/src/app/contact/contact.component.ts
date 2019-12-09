@@ -4,6 +4,8 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, hours } from '../data/contact';
+import { CanonicalService } from '../services/canonical.service';
+import { from } from 'rxjs';
 
 
 @Component({
@@ -33,11 +35,14 @@ export class ContactComponent implements OnInit {
     private emailService: EmailService,
     private titleService: Title,
     private meta: Meta,
-    private formBuilder: FormBuilder
-  ) {
+    private formBuilder: FormBuilder,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Use the contact information or the contact form on this page to speak with one of our friendly managers!`
+      content: `Use the contact information or the contact form on this page to speak
+                with one of our friendly managers!`
     });
     this.titleService.setTitle('Contact Us | Cranberry Storage');
 
