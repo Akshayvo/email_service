@@ -17,7 +17,7 @@ export class ViewRatesComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta, 
+    private meta: Meta,
     private canonical: CanonicalService,
     ) {
       this.canonical.create();

@@ -24,7 +24,8 @@ export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
     private titleService: Title,
-    private meta: Meta,private canonical: CanonicalService,
+    private meta: Meta,
+    private canonical: CanonicalService,
     ) {
       this.canonical.create();
     this.meta.addTag({
