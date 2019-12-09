@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../data/home';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-home',
@@ -23,8 +24,10 @@ export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
     private titleService: Title,
-    private meta: Meta
-  ) {
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Cuba Self Storage has been serving Cuba with high quality, affordable, boat, RV, commercial and

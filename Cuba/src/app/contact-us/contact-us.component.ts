@@ -4,6 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-contact-us',
@@ -31,8 +32,10 @@ export class ContactUsComponent implements OnInit {
     private emailService: EmailService,
     private titleService: Title,
     private meta: Meta,
-    private formBuilder: FormBuilder
-  ) {
+    private formBuilder: FormBuilder,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Have a question about our self storage units, RV, or vehicle storage?

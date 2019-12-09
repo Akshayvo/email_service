@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { CanonicalService } from '../services/canonical.service';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-reserve',
@@ -10,8 +12,10 @@ export class ReserveComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
-  ) {
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Ready to reserve an affordable, high quality self storage unit at

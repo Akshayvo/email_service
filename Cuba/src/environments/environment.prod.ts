@@ -1,6 +1,7 @@
 export const environment = {
-  production: false,
+  production: true,
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Cuba'
+  appId: 'Cuba',
+  websiteUrl: 'https://www.cubamostorage.com'
 };

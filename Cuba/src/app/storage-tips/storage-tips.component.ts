@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { storageTip, storageTipAccordion } from '../data/storage';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-storage-tips',
@@ -15,7 +16,9 @@ export class StorageTipsComponent implements OnInit {
   constructor(
     private titleService: Title,
     private meta: Meta,
-  ) {
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `We understand moving isn't easy so we came up with these helpful hints
