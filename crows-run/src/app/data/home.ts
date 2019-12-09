@@ -52,22 +52,23 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Crows Run Self Storage is Conway, Pennsylvania's best self storage facility, with indoor units
-            ranging from 5'x10' to 10'x'30'. Our indoor units are the ideal solution for residential storage
-            users in the middle of a hectic move, renovation, or those preparing to downsize their accommodations.
-            Business customers take advantage of our 24-hour access to pick up and drop off their inventory, supplies,
+        p: `Crows Run Self Storage is Conway, Pennsylvania's premier self storage facility, with regular units ranging
+            from 5'x10' to 10'x'30'. Our regular units are the ideal solution for residential storage users in the
+            middle of a hectic move, renovation, or those preparing to downsize their accommodations. Business
+            customers take advantage of our 24-hour access to pick up and drop off their inventory, supplies,
             and equipment. Why pay commercial real estate prices when you can use Crows Run Self Storage
             at a fraction of the cost?`,
     },
     {
-        p: `The facility is conveniently located right off of Route 65, between Conway and Freedom. We are a
-            fully-fenced facility, well-lit facility with a password-controlled entrance gate and video cameras.
-            All of our units are drive-up at ground-level, making loading and unloading a breeze.`,
+        p: `The facility is conveniently located right off of Route 65, between Baden and Freedom. We are a fully-fenced
+            facility with a keypad-protected front gate to ensure a provide a sense of safety to our customers and their
+            belongings. All of our units are drive-up, making loading and unloading a breeze.`,
     },
     {
-        p: `The facility is conveniently located right off of Route 65, between Conway and Freedom. We are a
-            fully-fenced facility, well-lit facility with a keypad-controlled entrance gate and video cameras.
-            All of our units are drive-up at ground-level, making loading and unloading a breeze.`,
+        p: `We even have recreational vehicle, boat, and car parking to help you reclaim space on your lawn! Whether you
+            are a residential user trying to de-clutter, a business person in need of a cheaper storage solution, or
+            if you just need a place to park that RV for the season, we've got you covered! Our friendly management
+            team is ready to make your storage experience an easy one!`,
     },
 ];
 
