@@ -51,21 +51,21 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Fort Locks Self Storage is Danby's premier self storage facility. Our facility is located on Danby
-            Rd between Buttercup Lane and Benny Lane. We've been serving Danby, Ithaca, Trumansburg and the
-            surrounding communities for over three decades!  We are Danby's self storage experts and look
-            forward to putting that experience to good use protecting your cherished belongings.`,
+        p: `Fort Locks Self Storage is Danby's premier self storage facility. Our facility is located on Danby Rd
+            between Buttercup Lane and Benny Lane. We've been serving Danby, Ithaca, Trumansburg and the surrounding
+            communities for over three decades! We are Danby's self storage experts and look forward to putting that
+            experience to good use protecting your cherished belongings.`,
     },
     {
-        p: `We offer a wide variety of unit sizes in both regular and climate-controlled varieties. Unlike many
-            facilities whose climate-control only heat and cools units, our facility offers highly sought-after humidity
-            control, making us ideal for document and antique storage. Business and residential customers alike use our
-            climate-controlled units to store antiques, furniture and records every day.`,
+        p: `We offer a wide variety of unit sizes in both standard and climate-controlled varieties. Unlike many
+            facilities whose climate-control only heat and cools units, our facility offers highly sought-after
+            humidity control, making us ideal for document and antique storage. Business and residential customers
+            alike use our climate-controlled units to store antiques, furniture and records every day.`,
     },
     {
-        p: `Our facility also has fully-paved wide lanes between our outdoor self storage units. The ground-level units
-            are perfect for seasonal items you just don't have the room for around the home, or temporary storage during
-            a move or renovation project! Start re-claiming that elbow room around the home or office today and
+        p: `Our facility also has fully-paved wide lanes between our standard self storage units. The ground-level
+            units are perfect for seasonal items you just don't have the room for around the home, or temporary storage
+            during a move or renovation project! Start re-claiming that elbow room around the home or office today and
             call or reserve online!`,
     },
 ];
@@ -78,10 +78,10 @@ export const gettingStarted = `Getting that de-cluttering project started with F
 export const blurb = [
     {
         h1: `Affordable Storage Units in Danby`,
-        p: `Fort Locks Self Storage is a local family-owned self storage facility that has been serving
-            the Danby, Ithaca, Newfield and the surrounding communities since 1987. We have a wide variety
-            of clean, and well-maintained self storage unit sizes in both regular and climate-controlled types.
-            We understand that the storage experience can be a stressful one, so our staff strives to make your
-            experience an easy one! Call today and learn more!`,
+        p: `Fort Locks Self Storage is a local family-owned self storage facility that has been serving the Danby,
+            Ithaca, Newfield and the surrounding communities since 1987. We have a wide variety of clean, and
+            well-maintained self storage unit sizes in both standard and climate-controlled types. We understand that
+            the storage experience can be a stressful one, so our staff strives to make your experience an easy one!
+            Call today and learn more!`,
     }
 ];

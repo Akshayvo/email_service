@@ -33,8 +33,8 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Fort Locks Self Storage has a wide variety of clean & well-maintained self
-                storage sizes in both regular & climate-controlled types at affordable rates!`
+      content: `Fort Locks Self Storage has a wide variety of clean & well-maintained self storage
+                sizes in both standard & climate-controlled types at affordable rates!`
     });
     this.titleService.setTitle('Affordable Self Storage in Danby | Fort Locks Self Storage');
   }
