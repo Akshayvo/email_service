@@ -294,22 +294,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     }
 }
 
-  changeRate(event: any) {
-    console.log(event.target.value);
-    if (event.target.value === 'Monthly') {
-
-      console.log('Monthly FROM changeRate');
-    }
-    if (event.target.value === 'Annual') {
-      console.log('Annual FROM changeRate');
-    }
-    if (event.target.value === 'BiAnnual') {
-      console.log('BiAnnual FROM changeRate');
-    }
-    if (event.target.value === 'Quarter') {
-      console.log('Quarter FROM changeRate');
-    }
-  }
 
   getMoveInCharges(intUnitTypeID: any) {
     this.moveInService.getMoveInCharges({

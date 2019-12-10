@@ -263,7 +263,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     } else {
       this.getSurCharge();
     }
-
+    console.log(this.PayTypeIDValue);
   }
 
 
