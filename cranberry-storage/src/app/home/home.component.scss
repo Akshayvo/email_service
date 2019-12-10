@@ -1,5 +1,9 @@
 @import "../../styles.scss";
 
+.custom-margin {
+  margin-top: 56px;
+}
+
 .carousel-indicators li {
   background-color: black;
   border-radius: 50%;
@@ -161,6 +165,10 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-height: 640px) and (min-height: 481px) {
+  .custom-margin {
+    margin-top: 0;
+  }
+
   .jumbotron-container {
     .jumbotron-bottom {
       height: 150px;
@@ -187,6 +195,10 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-height: 480px) {
+  .custom-margin {
+    margin-top: 0;
+  }
+
   .disp {
     display: none;
   }
@@ -337,6 +349,10 @@
   .jumbotron-bottom {
     height: 140px;
   }
+  .custom-margin {
+    margin-top: 0;
+  }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -440,6 +456,10 @@
   .jumbotron-bottom {
     height: 140px;
   }
+
+  .custom-margin {
+    margin-top: 0;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -484,6 +504,10 @@
 
 @media only screen and (max-width: 767px) and (min-width: 601px)  and (max-height: 640px) {
 
+  .custom-margin {
+    margin-top: 0;
+  }
+
   .jumbotron-top {
     height: 100vh;
 
@@ -516,6 +540,11 @@
   .disp {
     display: none;
   }
+
+  .custom-margin {
+    margin-top: 0;
+  }
+
 
   .special-row {
     position: relative;
@@ -554,7 +583,6 @@
 
     .jumbotron-bottom {
       display: none;
-      height: 0;
     }
   }
 
