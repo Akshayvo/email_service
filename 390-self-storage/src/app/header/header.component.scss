@@ -5,6 +5,10 @@ a {
   cursor: pointer;
 }
 
+img  {
+  height: 80px;  
+}
+
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
@@ -58,6 +62,10 @@ a {
     li {
       width: fit-content;
     }
+  }
+
+  img {
+    height: 60px;
   }
 }
 

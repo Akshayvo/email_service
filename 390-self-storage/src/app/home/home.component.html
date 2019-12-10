@@ -2,17 +2,19 @@
 <div class="home-container">
   <!--Jumbotron Container Starts Here-->
   <div class="jumbotron-container">
+    <div class="text-center py-3 special-row px-2">
+      <h2><strong>Grand Opening Discount!</strong></h2>
+      <p class="mb-0 pt-2"> We are celebrating our grand opening event with 25% off your rent for 1 year to our first 100 customers!</p>
+    </div>
     <div class="jumbotron-top">
       <div class="jumbotron px-0 m-0">
-       
-         
       </div>
     </div>
     <div class="jumbotron-bottom disp">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-3 p-4 text-center override-padding-x-axis" *ngFor="let feature of feature">
-            <img [src]="feature?.path" [alt]="feature?.alt" height="80px" width="auto">
+            <img [src]="feature?.path" [alt]="feature?.alt"  width="auto">
               <h6 class="feature-text">{{feature.label}}</h6>
           </div>
         </div>
@@ -22,7 +24,7 @@
   <!--Jumbotron Ends Here-->
 
   <!--Map and Contact Section-->
-  <div class="bg-light py-5">
+  <div class="bg-light py-5 custom-padding">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 py-3 map">
