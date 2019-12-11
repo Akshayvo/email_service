@@ -7,7 +7,9 @@ import { environment } from '../../environments/environment';
 })
 export class CanonicalService {
 
-  constructor(@Inject(DOCUMENT) private dom: any) { }
+  constructor(
+    @Inject(DOCUMENT) private dom: any,
+    ) { }
 
    create() {
      const { location: {pathname} } = window;

@@ -12,7 +12,7 @@
 }
 
 .storage-tip-holder {
-  padding-top: 90px;
+  padding-top: 130px;
   min-height: 86vh;
   margin-bottom: 50px;
 
@@ -36,8 +36,11 @@
   z-index: 16;
 }
 
+
+
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .storage-tip-holder {
+    padding-top: 164px;
     .storage-content {
       .padding {
         min-height: 735px;
@@ -48,6 +51,7 @@
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .storage-tip-holder {
+    padding-top: 164px;
     .storage-content {
       .padding {
         min-height: 1014px;
@@ -58,7 +62,7 @@
 
 @media screen and (max-width: 600px) {
   .storage-tip-holder {
-    padding-top: 70px;
+    padding-top: 164px;
     .storage-content {
       .padding {
         padding: 0;

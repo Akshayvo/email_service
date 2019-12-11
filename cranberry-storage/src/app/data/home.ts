@@ -51,25 +51,23 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Cranberry Storage is Cranberry, PA's newest self storage facility! We offer a wide selection
-            of self storage unit sizes, in both regular and temperature-controlled varieties! Our facility
-            is conveniently located in the heart of Cranberry, PA, on the south side of Route 322 across from Sheetz.`,
+        p: `Cranberry Storage is Cranberry, PA's newest self storage facility! We offer a wide selection of self
+        storage unit sizes, in both regular and temperature-controlled varieties! Our facility is conveniently
+        located in the heart of Cranberry, PA, on the south side of Route 322 across from Sheetz.`,
     },
     {
-        p: `Our units are brand new and well-lit. You'll have access to your unit 24/7/365, and you can
-        even pay online! Not only are we incredibly convenient, but our rates are extremely affordable.
-        You simply won't find a better deal for self storage in town! Our parking lanes are extra wide
-        for easy maneuvering of boats, recreational vehicles, campers or trailers for our vehicle parking
-        service! We even offer special rates when signing a longer-term contract! `,
+        p: `Our units are brand new and well-lit. You'll have access to your unit 24/7/365, and you can even pay
+        online! Not only are we incredibly convenient, but our rates are extremely affordable. You simply won't find
+        a better deal for self storage in town! We even offer special rates when signing a longer-term contract!`,
     },
     {
-        p: `Businesses love our services, too! Why waste money storing inventory, equipment, and supplies
-            at commercial real estate prices when you can use a temperature-controlled self storage unit?
-            We are accessible 24 hours a day, so your growing business has access whenever you need it!`,
+        p: `Businesses love our services, too! Why waste money storing inventory, equipment, and supplies at commercial
+        real estate prices when you can use a temperature-controlled self storage unit? We are accessible 24 hours a
+        day, so your growing business has access whenever you need it!`,
     },
     {
-        p: `Our offsite parking lanes are extra wide for easy maneuvering of boats, recreational vehicles,
-        campers or trailers for our vehicle parking service with the option for temperature-controlled spaces as well.`
+        p: `Our offsite parking lanes are extra wide for easy maneuvering of boats, recreational vehicles, campers or
+        trailers for our vehicle parking service with the option for temperature-controlled spaces as well.`
     }
 
 ];

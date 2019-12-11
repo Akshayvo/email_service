@@ -5,9 +5,33 @@ a {
   cursor: pointer;
 }
 
+.display-none {
+  display: none;
+}
+
+// .iconColor {
+//   color: $primary;
+// }
+
+
 .navbar-brand {
   img {
     height: 90px;
+  }
+}
+
+.contact-header {
+  display: inline;
+
+  .contact-details {
+    color: $white;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  a {
+    color: white;
   }
 }
 

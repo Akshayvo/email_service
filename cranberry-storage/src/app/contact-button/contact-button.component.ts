@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { EmailService } from '../services/email.service';
 import { contact, hours, socialLink } from '../data/contact';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
@@ -6,7 +6,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-contact-button',
   templateUrl: './contact-button.component.html',
-  styleUrls: ['./contact-button.component.scss']
+  styleUrls: ['./contact-button.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ContactButtonComponent implements OnInit {
 

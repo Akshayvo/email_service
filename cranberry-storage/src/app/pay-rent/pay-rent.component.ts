@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, ViewEncapsulation } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contact } from '../data/contact';
@@ -7,7 +7,9 @@ import { CanonicalService } from '../services/canonical.service';
 @Component({
   selector: 'app-pay-rent',
   templateUrl: './pay-rent.component.html',
-  styleUrls: ['./pay-rent.component.scss']
+  styleUrls: ['./pay-rent.component.scss'],
+  encapsulation: ViewEncapsulation.None,
+
 })
 export class PayRentComponent implements OnInit {
 
