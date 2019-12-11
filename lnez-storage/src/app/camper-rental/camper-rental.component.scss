@@ -1,0 +1,15 @@
+.camper {
+    border-left: 2px solid #4e4848;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+  }
+  wildwood {
+    
+  }
+
+  @media only screen and (max-width:991px) {
+    .camper {
+      border: none;
+    }
+  }

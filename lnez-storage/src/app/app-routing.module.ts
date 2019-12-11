@@ -17,6 +17,9 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.component';
 import { RvRentalComponent } from './rv-rental/rv-rental.component';
+import { WildwoodComponent } from './wildwood/wildwood.component';
+import { PrimeTimeComponent } from './prime-time/prime-time.component';
+import { CamperRentalComponent } from './camper-rental/camper-rental.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -69,7 +72,16 @@ const routes: Routes = [
   { path: 'pay-rent-natrona', component: PayRentNatronaComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'rv-rentals', component: RvRentalComponent},
+  { path: 'camper-rentals',
+   component: RvRentalComponent,
+   children: [
+   { path: '', component: CamperRentalComponent },
+    { path: '2018-wildwood-27REI', component: WildwoodComponent},
+    { path: '2019-prime-time-tracer', component: PrimeTimeComponent},
+   ]},
+  // { path: '2018-wildwood-27REI', component: WildwoodComponent},
+  // { path: '2019-prime-time-tracer', component: PrimeTimeComponent},
+  
   { path: '**', component: ErrorComponent },
 ];
 

@@ -36,6 +36,9 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.component';
 import { AboutusPhotosComponent } from './aboutus-photos/aboutus-photos.component';
 import { RvRentalComponent } from './rv-rental/rv-rental.component';
+import { WildwoodComponent } from './wildwood/wildwood.component';
+import { PrimeTimeComponent } from './prime-time/prime-time.component';
+import { CamperRentalComponent } from './camper-rental/camper-rental.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +68,9 @@ import { RvRentalComponent } from './rv-rental/rv-rental.component';
     PayRentNatronaComponent,
     AboutusPhotosComponent,
     RvRentalComponent,
+    WildwoodComponent,
+    PrimeTimeComponent,
+    CamperRentalComponent,
   ],
   imports: [
     NgtUniversalModule,

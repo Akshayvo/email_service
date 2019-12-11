@@ -22,11 +22,18 @@ export const navLinks = [
         ]
     },
     {
-        label: 'Rv Rentals',
-        path: '/rv-rentals',
-        type: 'link'
+        label: 'Camper Rentals',
+        path: '/camper-rentals',
+        type: 'link',
+        // sublinks: [
+        //     {
+        //         path: '/camper-rentals/2018-wildwood-27REI',
+        //       },
+        //       {
+        //           path: '/camper-rentals/2019-prime-time-tracer',
+        //       },
+        // ]
     },
-    
     {
         label: 'Pay Rent',
         path: '/payment',
