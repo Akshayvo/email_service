@@ -144,7 +144,7 @@ ngOnInit() {
   this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
-  console.log('firstname from confirmation page', this.firstName);
+
 
 }
 
@@ -152,7 +152,6 @@ ngOnInit() {
     this.addTenantSubscribe$ = this.addTenantService.addTenant(data)
         .subscribe(result => {
         localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
-        console.log('reservation charges are', this.dataSharingService.LstUnitTypes.ReservationFee );
 
         if (this.navigateToMoveIn ) {
           if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {

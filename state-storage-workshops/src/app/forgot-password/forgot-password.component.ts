@@ -35,7 +35,6 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
   this.forgotPasswordUnsubscribe$ =  this.authService.forgotPassword(data)
     .subscribe(
       result => {
-        console.log(result);
        }, (err) => {
       }
     );

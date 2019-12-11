@@ -70,8 +70,6 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     this.DescriptionVR = JSON.parse(JSON.stringify(event));
     this.MonthlyRateVR = parseFloat(JSON.stringify(event1));
 
-    // console.log(event, event1, this.DescriptionVR, this.MonthlyRateVR);
-
   }
 
   getData() {

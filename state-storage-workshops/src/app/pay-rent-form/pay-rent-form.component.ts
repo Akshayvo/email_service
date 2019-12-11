@@ -153,9 +153,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.navigateToReserve = this.dataSharingService.navigateToReserve;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
     this.TotalReserveAmount =
-    this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax;
+   // tslint:disable-next-line: max-line-length
+   parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
     this.totalMoveInAmount =
-    this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount;
+    // tslint:disable-next-line: max-line-length
+    parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
 
 
     if (this.router.url === '/view-rates/payReservationCharges') {
@@ -263,7 +265,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     } else {
       this.getSurCharge();
     }
-    console.log(this.PayTypeIDValue);
   }
 
 

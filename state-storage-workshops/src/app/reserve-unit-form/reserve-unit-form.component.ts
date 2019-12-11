@@ -299,7 +299,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.moveInService.getMoveInCharges({
       intUnitTypeID
     }).subscribe(result => {
-      console.log(result);
       const {objCharges: {
         ProrateAmt = 0,
         Deposit = 0,
@@ -322,9 +321,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.setupTax = SetupTax;
       this.totalTaxAmount = TotalTaxAmount;
       this.totalChargesAmount = TotalChargesAmount;
-      this.dataSharingService.MoveInData.TotalChargesAmount = this.totalChargesAmount;
-      this.dataSharingService.MoveInData.TotalTaxAmount = this.totalTaxAmount;
-
+      this.dataSharingService.MoveInData.TotalChargesAmount = parseFloat(this.totalChargesAmount.toFixed(2));
+      this.dataSharingService.MoveInData.TotalTaxAmount = parseFloat(this.totalTaxAmount.toFixed(2));
     }, err => {
     });
 }
