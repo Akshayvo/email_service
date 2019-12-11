@@ -226,7 +226,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
     this.fetchUSState();
     if (window.localStorage) {
-      if (localStorage.getItem('strTenantToken')) {
+      if (!!localStorage.getItem('strTenantToken')) {
         this.getTenantInfo();
         this.gettingTenantData = true;
       }
@@ -398,7 +398,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   getData() {
    this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
-        console.log(unitTypesResponse);
       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
       const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
       this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;

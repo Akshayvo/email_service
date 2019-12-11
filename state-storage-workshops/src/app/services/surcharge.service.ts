@@ -7,8 +7,8 @@ import {Observable} from 'rxjs';
 })
 export class SurchargeService {
 
-  idpaytype = '';
-  amt = '';
+  idpaytype = 0;
+  amt = 0;
 
   constructor(private http: HttpClient) { }
 
@@ -16,8 +16,12 @@ export class SurchargeService {
     this.idpaytype = value;
   }
 
-  public getAmt(value: any) {
+  public setAmt(value: any) {
     this.amt = value;
+  }
+
+  getAmt() {
+    return this.amt;
   }
 
   getSurCharge(): Observable<any> {

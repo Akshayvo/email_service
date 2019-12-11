@@ -67,7 +67,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   logOut = {};
   defaultCardType: string;
 
-  otherValue = '0';
+  otherValue = 0;
   id: string;
 
   UnpaidAR: UnpaidAR[];
@@ -257,7 +257,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     if ( this.showInput) {
       if (this.customOtherValue) {
-        this.surchargeService.getAmt(this.customOtherValue);
+        this.surchargeService.setAmt(this.customOtherValue);
         this.getSurCharge();
       }
     } else {
@@ -273,7 +273,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.id = e.target.id;
       this.surcharge = 0;
     } else {
-      this.surchargeService.getAmt(this.balance);
+      this.surchargeService.setAmt(this.balance);
       this.getSurCharge();
       this.showInput = false;
 
@@ -281,15 +281,17 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   onKeyUp(e: any) {
-    if (e.target.value) {
+    if (e.target.value > 0) {
       this.customOtherValue = e.target.value;
-      this.surchargeService.getAmt(e.target.value);
-      setTimeout(() => {
-        this.getSurCharge();
-   }, 1000);
-
+      this.surchargeService.setAmt(e.target.value);
+      const amoutForCharge = this.surchargeService.getAmt();
+      if (amoutForCharge > 0) {
+            setTimeout(() => {
+            this.getSurCharge();
+        }, 1000);
+      }
     } else {
-        this.surcharge = 0;
+        this.AmountToPay = 0;
     }
   }
 
@@ -299,7 +301,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         if (tenantData) {
           const { Tenant } = tenantData;
           this.balance = Tenant.Balance;
-          this.surchargeService.getAmt(this.balance);
+          this.surchargeService.setAmt(this.balance);
           this.surchargeService.getIdPaytype(this.paytypeid);
           this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled,
           this.date = Tenant.LastPaymentOn;
@@ -374,8 +376,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   getPayMethods() {
    this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
       .subscribe(payTypesResponse => {
-
-        console.log(payTypesResponse);
         this.lstPayTypes = payTypesResponse.lstPayTypes;
         if (!localStorage.getItem('strTenantToken')) {
           const defaultDescription = this.lstPayTypes[1].PayTypeDescription;
