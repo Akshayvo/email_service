@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "../../styles.scss";
+
+a {
+  cursor: pointer;
+}
+
+.iconColor {
+  color: #fff;
+}
+.display {
+  background-color: $secondary;
+  color: #fff;
+  a{
+    color: #fff;
+  }
+}
+
+.contact-header {
+  display: inline;
+
+  .contact-details {
+    color: $white;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+  }
+}
+
+.social {
+  text-align: right;
+
+  a {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+.navbar {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+
+  button {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  button:focus {
+    outline: 5px auto $primary;
+  }
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: 600;
+  padding: 30px;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.router-link-active {
+  color: #fff;
+  border-bottom: 5px solid $secondary;
+}
+
+.nav-link-active {
+  color: #fff;
+  border-bottom: 5px solid $secondary;
+}
+
+.display {
+  display: block;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  border: 1px solid $primary;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-nav {
+    align-items: center;
+
+    li {
+      width: fit-content;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .display {
+    display: none;
+  }
+  .nav-link {
+    padding: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 991px) and (max-height: 600px) {
+  .navbar-nav-scroll {
+    height: 200px;
+    overflow-y: scroll;
+  }
+  
+}
