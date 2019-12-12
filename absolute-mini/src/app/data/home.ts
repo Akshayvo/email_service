@@ -69,9 +69,10 @@ export const aboutUs = [
 ];
 
 
-export const gettingStarted = `Are you ready to reclaim that spot on your lawn by stowing your RV,
-                               camper, boat or trailer with All Valley RV Storage? Click below to
-                               begin your reservation process!`;
+export const gettingStarted = `Are you ready to start reclaiming some of that elbow room around the home or
+                               work-site? Our affordable self storage units come in sizes ranging from 5'x10'
+                               to 10'x30'! We are certain to have the right-sized unit for your needs! Click
+                               below to reserve your unit!`;
 
 export const blurb = [
     {
