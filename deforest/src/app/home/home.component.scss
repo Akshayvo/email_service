@@ -1,0 +1,232 @@
+@import "../../styles.scss";
+
+//Common code
+.disp {
+  display: block;
+  img {
+    padding: 10px;
+  }
+}
+
+
+.jumbotron-top {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storage-jumbotron.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+// .jumbotron-top1 {
+//   background: url("");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
+
+// .jumbotron-top2 {
+//   background: url("");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
+
+// HOME jUMBOTRON
+.jumbotron-container {
+  .jumbotron-bottom {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    justify-content: center;
+
+    .feature-text {
+      text-transform: uppercase;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 0;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+
+// Testimonial
+.carousel {
+  .carousel-indicators {
+    li {
+      width: 0.825rem;
+      height: 0.825rem;
+      border: 2px solid $primary;
+      // -webkit-border-radius: 50%;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: $primary;
+    }
+  }
+}
+
+// Get started Section
+
+.getStarted {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storage-jumbotron.jpg") center top no-repeat fixed;
+  background-size: cover;
+  background-position: top;
+
+  .get-started {
+    left: 0;
+    right: 0;
+    top: 10;
+    background: rgba(238, 238, 238, 0.9);
+    z-index: 9;
+  }
+
+  .btn {
+    min-width: 250px;
+    font-size: 1.2rem;
+  }
+}
+
+.contact-links {
+  a {
+    color: #212529;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 1200px) and (max-height: 480px) {
+  .disp {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 830px) and (min-height: 641px) {
+  .jumbotron-bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  .disp {
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 640px) and (min-height: 481px) {
+  .disp {
+    h6 {
+      font-size: 0.8rem ;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 480px) {
+  .disp {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 480px) {
+  .disp {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 650px) and (min-height: 545px) {
+  .disp {
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 545px) and (min-height: 481px ) {
+  .disp {
+    h6 {
+      font-size: 0.65rem;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 601px)  and (max-height: 500px) {
+  .disp {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 664px) and (min-height: 481px) {
+  .jumbotron-container {
+    .jumbotron-bottom {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .jumbotron-bottom {
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 601px)  and (max-height: 500px) {
+  .disp {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 700px) and (min-height: 501px) {
+  .jumbotron-container {
+    .jumbotron-bottom {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .disp{
+    h6{
+      font-size: 0.8rem !important;
+    }
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 601px) and (min-height: 501px) {
+  .disp{
+    img{
+      height: 60;
+    }
+    h6{
+      font-size: 0.65rem !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron-container {
+    .jumbotron-bottom {
+      display: none;
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  
+}
+
+@media only screen and (max-height: 480px) {
+  .jumbotron-container {
+    .jumbotron-bottom {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

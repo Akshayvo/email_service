@@ -1,0 +1,68 @@
+@import "../../styles.scss";
+
+.rent-holder {
+  padding-top: 110px;
+  min-height: 96vh;
+  margin-bottom: 50px;
+
+  .rent-sub-holder {
+    padding: 64px;
+    background-color: $light;
+  }
+}
+
+.rent-example {
+  border-left: 1px $border solid;
+  padding-left: 5%;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+p{
+  a {
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .rent-holder {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .rent-holder {
+    padding-top: 60px;
+  }
+
+  .rent-example {
+    border-left: none;
+    padding-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rent-holder {
+    padding-top: 60px;
+
+    .rent-sub-holder {
+      padding: 16px;
+    }
+
+    .rent-heading {
+      padding-bottom: 30px;
+    }
+
+    iframe {
+      min-height: 400px;
+    }
+
+    .rent-example {
+      border-left: none;
+      padding-bottom: 20px;
+    }
+  }
+}
