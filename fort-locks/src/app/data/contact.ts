@@ -26,10 +26,10 @@ export const hours = [
         label: 'Monday to Friday: ',
         data: '9:00 AM - 5:00 PM'
     },
-    // {
-    //     label: 'SAT-SUN: ',
-    //     data: 'By Appointment Only'
-    // },
+    {
+        label: '',
+        data: 'Our friendly management team is available on the weekends by appointment.'
+    },
     // {
     //     label: 'Access Hours: ',
     //     data: '24 Hours a day 7 Days a Week'

@@ -5,6 +5,37 @@ a {
   cursor: pointer;
 }
 
+.iconColor {
+  color: #fff;
+}
+.display {
+  background-color: $primary;
+  color: #fff;
+  a{
+    color: #fff;
+  }
+}
+
+.contact-header {
+  display: inline;
+
+  .contact-details {
+    color: $white;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+  }
+}
+
+.social {
+  text-align: right;
+
+  a {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
@@ -55,7 +86,12 @@ a {
       width: fit-content;
     }
   }
+  .display {
+    display: none;
+  }
 }
+
+
 
 @media only screen and (max-width: 767px) and (max-height: 480px) {
   .navbar-nav-scroll {

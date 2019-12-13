@@ -1,5 +1,5 @@
  # www.robotstxt.org/
  # Allow crawling of all content
-Sitemap: http://fortlocks-staging.syrasoft.com/sitemap.xml
+Sitemap: https://www.ithacaselfstorage.com/sitemap.xml
  User-agent: *
  Disallow:

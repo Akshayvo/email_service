@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { navLinks } from '../data/nav';
+import { contact, socialLinks } from '../data/contact';
 
 
 @Component({
@@ -9,7 +10,8 @@ import { navLinks } from '../data/nav';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  contactDetails: any;
+  socialLinks: any;
   navLinks: any;
   navbarCollapsed = true;
 
@@ -19,8 +21,13 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.fetchNavigationLinks();
+    this.fetchContactDetails();
   }
 
+  public fetchContactDetails() {
+    this.contactDetails = contact;
+    this.socialLinks = socialLinks;
+  }
   public fetchNavigationLinks() {
     this.navLinks = navLinks;
   }
