@@ -1,6 +1,6 @@
 export const dataViewRates = [
     {
-        p: `The High Falls Self Storage warehouse is listed as a City of Rochester designated landmark building.
+        p: `The High Falls Self Storage, LLC warehouse is listed as a City of Rochester designated landmark building.
             Built in 1830, our 90,000 square foot warehouse has been a storage facility for over 190 years.
             The building’s two-foot thick medina sandstone façade and solid post and beam construction allow for
             thousands of pounds of storage material to be stored safely and securely.  `,

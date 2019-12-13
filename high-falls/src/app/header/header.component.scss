@@ -5,12 +5,16 @@ a {
   cursor: pointer;
 }
 
+.button {
+  font-size: 16px ;
+}
+
 .navbar {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
   button {
-    color: #707070;
-    border-color: #707070;
+    color: #be2428;
+    border-color: #be2428;
   }
 
   button:focus {
@@ -21,7 +25,7 @@ a {
 .nav-link {
   color: $fontColor;
   font-weight: 600;
-  padding: 30px;
+  padding: 53px;
 }
 
 .nav-link:hover {
@@ -47,6 +51,22 @@ a {
   border: 1px solid $primary;
 }
 
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .nav-link {
+    font-size: 0.8rem;
+    
+  }
+  .button {
+    a{
+    font-size: 0.8rem !important;
+  }
+}
+  .nav-item {
+    padding-left: .25rem !important;
+    padding-right: .25rem !important;
+  }
+}
+
 @media screen and (max-width: 991px) {
 
   .navbar-nav {
@@ -55,6 +75,13 @@ a {
     li {
       width: fit-content;
     }
+  }
+  .button {
+    display: none;
+  }
+  .nav-link {
+    
+    padding: 20px;
   }
 }
 

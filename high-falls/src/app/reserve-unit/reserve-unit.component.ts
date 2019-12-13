@@ -18,7 +18,7 @@ export class ReserveUnitComponent implements OnInit {
       content: `Reserve your unit within seconds by filling out easy-to-use
                 form right here. Reclaim that space around the home or job-site today!`
     });
-    this.titleService.setTitle('Reserve Unit | High Falls Self Storage');
+    this.titleService.setTitle('Reserve Unit | High Falls Self Storage, LLC');
   }
 
   ngOnInit() {

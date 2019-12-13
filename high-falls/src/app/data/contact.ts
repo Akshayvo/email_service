@@ -36,7 +36,11 @@ export const hours = [
     },
     {
         label: 'Access Hours: ',
-        data: '24 Hours a day 7 Days a Week'
+        data: '6:00AM to 9:00PM 7 Days a Week'
+    },
+    {
+        label: '',
+        data: '24 Hour Facility Access Available Upon Approval'
     }
 ];
 

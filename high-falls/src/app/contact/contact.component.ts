@@ -40,7 +40,7 @@ export class ContactComponent implements OnInit {
       content: `Use the contact information or the contact form on this
                 page to speak to one of our friendly self storage managers!`
     });
-    this.titleService.setTitle('Contact Us | High Falls Self Storage');
+    this.titleService.setTitle('Contact Us | High Falls Self Storage, LLC');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],

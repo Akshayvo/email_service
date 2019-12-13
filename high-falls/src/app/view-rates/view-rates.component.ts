@@ -23,7 +23,7 @@ export class ViewRatesComponent implements OnInit {
       content: `Review our current rates and availability, then reserve your unit
                 in minutes with our easy online reservation form!`
     });
-    this.titleService.setTitle('View Rates | High Falls Self Storage');
+    this.titleService.setTitle('View Rates | High Falls Self Storage, LLC');
   }
 
   ngOnInit() {

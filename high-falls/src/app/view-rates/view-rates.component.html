@@ -1,18 +1,24 @@
 <div class="contentHolder">
   <div class="container">
     <h1 class="py-5 text-center">View Rates</h1>
-    <div class="row bg-light padding">
-      <div class="col-md-7 coming p-3 " >
+    <div class="bg-light">
+    <div class="row padding">
+      <div class="col-md-12 coming p-3 " >
         <iframe id="advanced_iframe" name="advanced_iframe" src="https://highfalls.sim.syrasoft.com/Home/UnitAvailability" width="100%"
-          height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true"></iframe>
+          height="1200px" scrolling="yes" frameborder="0" border="0" allowtransparency="true"></iframe>
       </div>
-      <div class="col-md-5 p-3">
+    </div>
+    <div class="row pt-0 padding">
+      <div class="col-md-6 p-3">
         <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/High_Falls/high-falls-self-storage-packing.jpg" alt="photograph of a man stacking boxes inside a self storage unit" class="sectionImage" width="auto"/>
-        <h3 class="mt-4">High Falls Self Storage History</h3>
+      </div>
+        <div class="col-md-6 p-3">
+        <h3 class="mt-4">High Falls Self Storage, LLC History</h3>
         <div class="mt-3 justify" *ngFor="let data of dataViewRates">
           <p>{{data.p}}</p>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </div>

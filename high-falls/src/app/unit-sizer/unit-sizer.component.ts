@@ -22,7 +22,7 @@ export class UnitSizerComponent implements OnInit {
       content: `Use our handy unit sizing chart to help visualize what sized unit you
                 need for your personal belongings or business' equipment!`
     });
-    this.titleService.setTitle(`Unit Sizer | High Falls Self Storage`);
+    this.titleService.setTitle(`Unit Sizer | High Falls Self Storage, LLC`);
   }
 
   ngOnInit() {

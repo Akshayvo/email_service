@@ -22,7 +22,7 @@ export class PayRentComponent implements OnInit {
       name: 'description',
       content: `Follow the simple instructions on this page and pay your bill online 24 hours a day 7 days a week.`
     });
-    this.titleService.setTitle('Pay Rent | High Falls Self Storage');
+    this.titleService.setTitle('Pay Rent | High Falls Self Storage, LLC');
   }
 
   ngOnInit() {

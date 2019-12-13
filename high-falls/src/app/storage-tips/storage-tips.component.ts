@@ -25,7 +25,7 @@ export class StorageTipsComponent implements OnInit {
       content: `We've been providing self storage services since 1998.
                 We know self storage! Take our tips and make your stay with us a breeze!`
     });
-    this.titleService.setTitle('Storage Tips | High Falls Self Storage');
+    this.titleService.setTitle('Storage Tips | High Falls Self Storage, LLC');
   }
 
   ngOnInit() {
