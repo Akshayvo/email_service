@@ -5,7 +5,7 @@ export const featuresList = [
         td2: '24 Hour Access',
     },
     {
-        td1: 'Security Cameras ',
+        td1: 'Video Cameras ',
         td2: 'Monthly & Longer Leases',
     },
     {
@@ -52,23 +52,25 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Crows Run Self Storage is Conway, Pennsylvania's premier self storage facility, with regular units ranging
-            from 5'x10' to 10'x'30'. Our regular units are the ideal solution for residential storage users in the
+        p: `Crows Run Self Storage is Conway, Pennsylvania's best self storage facility, with indoor units ranging
+            from 5'x10' to 10'x'30'. Our indoor units are the ideal solution for residential storage users in the
             middle of a hectic move, renovation, or those preparing to downsize their accommodations. Business
             customers take advantage of our 24-hour access to pick up and drop off their inventory, supplies,
             and equipment. Why pay commercial real estate prices when you can use Crows Run Self Storage
             at a fraction of the cost?`,
     },
     {
-        p: `The facility is conveniently located right off of Route 65, between Baden and Freedom. We are a fully-fenced
-            facility with a keypad-protected front gate to ensure a provide a sense of safety to our customers and their
-            belongings. All of our units are drive-up, making loading and unloading a breeze.`,
+        p: `The facility is conveniently located right off of Route 65, between Conway and Freedom. We are a
+            fully-fenced, well-lit facility with a password-controlled entrance gate and video cameras All
+            of our units are drive-up at ground level, making loading and unloading a breeze.`,
     },
     {
-        p: `We even have recreational vehicle, boat, and car parking to help you reclaim space on your lawn! Whether you
-            are a residential user trying to de-clutter, a business person in need of a cheaper storage solution, or
-            if you just need a place to park that RV for the season, we've got you covered! Our friendly management
-            team is ready to make your storage experience an easy one!`,
+        p: `We even have outdoor recreational vehicle, boat, camper and car storage to help you reclaim
+            space on your driveway or lawn! Whether you are a residential user trying to de-clutter, a
+            college student or military personnel packing things up, a business person in need of a
+            convenient and cost-effective storage solution, or if you just need a place to park that
+            RV or boat for the season, we've got you covered! Our friendly management team is ready
+            to make your storage experience an easy one!`,
     },
 ];
 
@@ -80,11 +82,10 @@ export const gettingStarted = `Are you ready to begin de-cluttering your life, a
 export const blurb = [
     {
         h1: `Affordable Storage Units in Conway`,
-        p: `Crows Run Self Storage serves Conway, Pennsylvania, and the surrounding communities with
-            quality indoor self storage units, and outdoor RV, camper, boat and vehicle storage. Our
-            indoor storage units range from 5'x10' to 10'x30', and our outdoor spaces range from 10'x20'
-            to 13'x40'. The facility is a fully-fenced, well-lit self storage facility and is covered by
-            video cameras. Access is secured by the keypad-activated gate. Our friendly management team
-            looks forward to meeting you! Call today!`,
+        p: `Crows Run Self Storage  serves Conway, Pennsylvania, and the surrounding communities with quality
+            indoor self storage units, and outdoor RV, camper, boat and vehicle storage. Our indoor storage units
+            range from 5'x10' to 10'x30' and our outdoor spaces range from 10' x 20' to 13' x 40'.  The facility
+            is fully-fenced, well-lit and covered by video cameras.  Access is by the password activated gate.
+            Our friendly management team looks forward to meeting you! Call today!`,
     }
 ];
