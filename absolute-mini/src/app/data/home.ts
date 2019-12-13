@@ -64,7 +64,7 @@ export const aboutUs = [
         p: `We also understand that using a self storage service can come at a stressful point in one's life. That's why
             we offer online reservations, online bill-pay, and auto pay options, among other modern conveniences.
             You haveenough on your plate already, so we make it our job to  provide the most convenient storage
-            experience. Reserve your unit online, or call our offices at (336) 307-3000`,
+            experience. Reserve your unit online, or call our offices at (336) 307-3000. `,
     },
 ];
 
