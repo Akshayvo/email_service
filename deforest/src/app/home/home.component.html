@@ -20,18 +20,41 @@
               </div>
             </div>
           </div> -->
-          <div class="jumbotron-container">
-            <div class="jumbotron-top jumbotron-top-style"></div>
-          </div> 
+          <div class="jumbotron-top">
+            <div class="jumbotron px-0 m-0" >
+              <div class="bg-translucent jumbotron-skew-style">
+              </div>
+                <div class="container">
+                  <div class="jumbotron-skew-text">
+                    <div class="jum-text disp" >
+                      <h2 class="my-4">{{blurbHeading}}</h2>
+                      <!-- <h3 class="my-2">{{blurb.h3}}</h3> -->
+                      <p class="text-justify">{{blurbText}}
+                      </p>
+                    </div>
+                    <div class="button-width">
+                        <div class="row mx-0 px-0">
+                          <div class="col-6 mx-0 px-0">
+                           <a class="contact-btn btn btn-primary mr-2" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
+                          </div>
+                          <div class="col-6 mx-0 px-0">
+                           <a class="btn btn-primary" (click)="navigate('/view-rates')"  role="button">Rent Now</a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
        
     <!-- </div> -->
-    <div class="jumbotron-bottom disp">
+    <div class="jumbotron-bottom">
       <div class="container">
         <!-- <p> {{blurbText}} </p> -->
         <div class="row">
             <div class="col-md-3 col-3 p-4 text-center override-padding-x-axis" *ngFor="let feature of feature">
-              <img [src]="feature?.path" [alt]="feature?.alt" height="80px" width="auto">
-                <h6 class="feature-text">{{feature.label}}</h6>
+              <img [src]="feature?.path" [alt]="feature?.alt" width="auto">
+              <h5 class="feature-text pt-2">{{feature.label}}</h5>
             </div>
           </div>
       </div>

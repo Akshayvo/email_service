@@ -9,19 +9,14 @@
         <div class="row">
             <div class="col-md-8 p-4">
               <iframe id="advanced_iframe" name="advanced_iframe" src="https://deforest.sim.syrasoft.com/Payment" width="100%"
-              height="300" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>
+              height="700" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>
             </div>
             
             <div class="col-md-4 rent-example px-4" >
               <h2> How to Login </h2>
               <p class="pt-3"> <b>Username:</b> Tenant's Email Address </p>
               <p> <b>Password:</b> Tenant's Gate Access Code </p>
-          
-              <!-- <p class="py-3"> <b>Example</b> </p>
-              <p class="pb-3">John Smith's unit number is 1234</p>
-          
-              <p> <b>John's Username:</b> Jsmith </p>
-              <p class="pb-3"> <b>John's Password:</b> 1234 </p> -->
+        
           
               <p class="mt-3"> <b >Have question about your account?</b>
                 <span *ngFor="let contact of contactInfo"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>

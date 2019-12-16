@@ -3,12 +3,12 @@ export const contact = [
         id: 0,
         label: 'Address:',
         data:  '7227 Gene St, DeForest, WI 53532',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         id: 1,
         label: 'Email:',
-        class: 'fas fa-envelope mx-2 iconColor',
+        class: 'fas fa-envelope mr-2 iconColor',
         data: 'info@deforestselfstorage.com',
         redirect: 'mailto:info@deforestselfstorage.com'
     },
@@ -16,7 +16,7 @@ export const contact = [
         id: 2,
         label: 'Phone:',
         data: '(608) 277-5601',
-        class: 'fas fa-phone mx-2 iconColor',
+        class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:6082775601'
     },
 

@@ -1,8 +1,8 @@
-export const blurbHeading = `Affordable, Convenient Self Storage`;
+export const blurbHeading = `Affordable Self Storage in DeForest`;
 
-export const blurbText = `Our self storage units, warehouse space, and office suites are second
-to none! We've been serving the DeWitt County area and surrounding communities with quality,
-affordable storage units, warehouse space, and office suites since 1993!`;
+export const blurbText = `Deforest Self Storage is locally owned and operated and has been
+providing high-quality, well-maintained self storage services in Deforest, Sun Prairie, Madison
+and the surrounding areas since 2000!`;
 
 export const featuresHead = 'The Only Self Storage in Greene County With All of The Following';
 
@@ -31,24 +31,24 @@ export const featuresList = [
 
 export const feature = [
     {
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/garage.svg',
-        label: 'Boat and Vehicle Storage',
-        alt: 'Icon art displaying boat and motorcycle'
-    },
-    {
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/location.svg',
-        label: 'Conveniently Located',
-        alt: 'Icon art displaying a location pin'
-    },
-    {
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/24-hours.svg',
         label: '24 Hour Facility Access',
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/cctv.svg',
+        label: 'Security Cameras on Premises',
+        alt: 'Icon of a security camera'
+    },
+    {
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/thermometer.svg',
         label: 'Climate Controlled',
-        alt: 'Icon of thermometer indicating climate controlled units'
+        alt: 'Icon of thermometer indicating climate-controlled units'
+    },
+    {
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/support.svg',
+        label: 'Convenience',
+        alt: 'Convenience Icon'
     },
 ];
 
