@@ -14,6 +14,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
 import { RentSubComponent } from './rent-sub/rent-sub.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { PayRentAgricolaComponent } from './pay-rent-agricola/pay-rent-agricola.component';
+import { PayRentRockyCreekComponent } from './pay-rent-rocky-creek/pay-rent-rocky-creek.component';
+import { PayRentBartonComponent } from './pay-rent-barton/pay-rent-barton.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -56,12 +59,12 @@ const routes: Routes = [
 
   { path: 'pay-rent',
     component: PaymentComponent,
-    children: [
-      {path: '', redirectTo: 'agricola' , pathMatch: 'full' },
-      { path: 'rocky-creek', component: RentSubComponent },
-      { path: 'agricola', component: RentSubComponent },
-      { path: 'barton', component: RentSubComponent },
-    ]
+    // children: [
+    //   {path: '', redirectTo: 'agricola' , pathMatch: 'full' },
+    //   { path: 'rocky-creek', component: RentSubComponent },
+    //   { path: 'agricola', component: RentSubComponent },
+    //   { path: 'barton', component: RentSubComponent },
+    // ]
   },
   { path: 'review/agricola', component: HomeComponent,
     resolve: {
@@ -89,6 +92,9 @@ const routes: Routes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
+  { path: 'pay-rent-agricola', component: PayRentAgricolaComponent },
+  { path: 'pay-rent-rocky-creek', component: PayRentRockyCreekComponent },
+  { path: 'pay-rent-barton', component: PayRentBartonComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },
 ];

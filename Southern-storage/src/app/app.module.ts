@@ -32,6 +32,9 @@ import { SelectLocationComponent } from './select-location/select-location.compo
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { PayRentAgricolaComponent } from './pay-rent-agricola/pay-rent-agricola.component';
+import { PayRentRockyCreekComponent } from './pay-rent-rocky-creek/pay-rent-rocky-creek.component';
+import { PayRentBartonComponent } from './pay-rent-barton/pay-rent-barton.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,10 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
     AccordionComponent,
     RentSubComponent,
     SelectLocationComponent,
-    ErrorHandlerComponent
+    ErrorHandlerComponent,
+    PayRentAgricolaComponent,
+    PayRentRockyCreekComponent,
+    PayRentBartonComponent
   ],
   imports: [
     NgtUniversalModule,
