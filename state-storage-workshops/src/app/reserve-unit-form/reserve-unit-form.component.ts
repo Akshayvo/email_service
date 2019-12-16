@@ -12,7 +12,6 @@ import { Subscription } from 'rxjs';
 import * as moment from 'moment';
 import { MoveInService } from '../services/moveIn.service';
 import { DataSharingService } from '../services/data-sharing.service';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -72,7 +71,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   submitted = false;
   rate: string;
   PeriodDescription: string;
-  selectedDescription: string;
   ReservationFee: number;
   ReservationFeeValue: number;
   ReservationFeeTax: number;
@@ -270,7 +268,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
 
   selectChangeHandler (event: any) {
-    this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue  = event.target.value;
     const index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
     this.UnitTypeRate = this.lstUnitTypes[index].MonthlyRate;
@@ -286,7 +283,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
     this.dataSharingService.LstUnitTypes.BiAnnualRate = this.biAnnualRate;
     this.dataSharingService.LstUnitTypes.QuarterRate = this.quarterRate;
-    this.dataSharingService.LstUnitTypes.Description = this.selectedDescription;
+    this.dataSharingService.LstUnitTypes.Description = indexValue;
     this.dataSharingService.LstUnitTypes.UnitTypeID = this.unitTypeId;
 
     if (this.navigateToMoveIn) {

@@ -48,7 +48,6 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
     } else {
       this.forgotPassword(this.forgotPasswordForm.value);
     }
-    console.log(this.forgotPasswordForm.value);
   }
 
   public ngOnDestroy(): void  {

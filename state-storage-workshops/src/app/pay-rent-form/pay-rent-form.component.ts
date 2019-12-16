@@ -61,6 +61,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   strAccessCode: string;
   surcharge: number;
   unitTypeNotAvailability: boolean;
+  showLoader = false;
 
   marked = false;
   signUp = {};
@@ -195,8 +196,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.getPayMethods();
     this.fetchMonth();
-    if (localStorage.getItem('strTenantToken')) {
+    if (!!localStorage.getItem('strTenantToken')) {
       this.tenantTokenExist = true;
+      this.showLoader = true;
       this.getTenantInfo();
     }
   }
@@ -358,6 +360,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               PaymentAmount: (this.navigateToMoveInPayment ? this.balance : (this.navigateToReserve ? this.TotalReserveAmount : this.totalMoveInAmount)),
             }
           });
+          this.showLoader = false;
           this.getSurCharge();
         }
       }
