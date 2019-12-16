@@ -21,7 +21,7 @@
   <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
 </div> -->
 <div *ngFor="let contact of contactInfo" class="contact-links">
-  <span class="contact-data" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect"><span> <i class="{{contact.class}}"></i></span>{{contact.data}}</a></span>
+  <span class="contact-data" *ngIf="contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect"><span> <i class="{{contact.class}}"></i></span>{{contact.data}}</a></span>
   <ng-template #other_content><b class="contact-data">{{contact.label}}</b><br><span class="contact-data"><i class="{{contact.class}}"></i>{{contact.data}}</span></ng-template>
   <div [innerHTML]="contact.altrenateContact"></div>
 </div>

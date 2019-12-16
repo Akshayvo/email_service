@@ -5,7 +5,7 @@
 // }
 
 .contentHolder {
-  padding-top: 130px;
+  padding-top: 163px;
   margin-bottom: 50px;
   min-height: 86vh;
 
@@ -14,7 +14,7 @@
   }
 
   a {
-    color: #fff;
+    color: #fff !important;
   }
   .btn-primary {
     background-color: #cda500;
@@ -86,6 +86,7 @@
 }
 .managername {
   font-size: 0.8rem;
+  color: #fff;
 }
 .contact-page{
   color: #fff;
@@ -112,13 +113,12 @@ small {
 
 @media only screen and (max-width: 991px) {
   .contentHolder {
-    padding-top: 164px;
+    padding-top: 124px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .contentHolder {
-    padding-top: 164px;
     .padding {
       padding: 0;
     }
@@ -152,5 +152,11 @@ small {
 
   h2 {
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .contentHolder {
+    padding-top: 90px;
   }
 }

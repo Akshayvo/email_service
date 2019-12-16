@@ -8,8 +8,15 @@ export const contact = [
     {
         id: 1,
         label: 'Office Address: ',
-        data: '7082 US-322 Box 417, Cranberry, PA 16319',
+        data: '2361 Cranberry-Rockland Rd, Cranberry, PA, 16319',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+    {
+        id: 2,
+        label: 'Mailing Address: ',
+        data: 'P.O. Box 282, Cranberry, PA, 16319',
+        class: 'fas fa-envelope mr-2 iconColor',
+        // class: 'fas fa-envelope mr-2 iconcolor'
     },
     {
         id: 3,
@@ -21,7 +28,7 @@ export const contact = [
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
-        id: 2,
+        id: 4,
         redirect: 'mailto:liz@cranberrystorage.com',
         label: 'Email: ',
         data: 'liz@cranberrystorage.com',

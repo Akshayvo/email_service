@@ -73,7 +73,7 @@ export class ContactButtonComponent implements OnInit {
       this.contactForm.value.subjectCB = 'Website Form Submission';
     }
 
-     this.receiveremail = this.contactInfo[3].data;
+     this.receiveremail = this.contactInfo[4].data;
 
          this.completeMessage = `phone: ${this.contactForm.value.phoneCB}, <br/>
                                 message: ${this.contactForm.value.messageCB}`;

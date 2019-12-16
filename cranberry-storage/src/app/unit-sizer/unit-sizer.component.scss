@@ -3,11 +3,12 @@
 .contentHolder {
   display: flex;
   min-height: 98vh;
+  padding-top: 163px;
 }
 
-.padding-top {
-  padding-top: 130px;
-}
+// .padding-top {
+//   padding-top: 163px !important;
+// }
 
 .background-padding {
   height: 750px;
@@ -100,8 +101,8 @@ h1 {
     }
   }
 
-  .padding-top {
-    padding-top: 164px;
+  .contentHolder {
+    padding-top: 124px;
   }
 
   .unit-dimention {
@@ -120,9 +121,10 @@ h1 {
 
   .disp-mob {
     display: block;
+    color: #fff;
 
     .active-unit {
-      color: $primary;
+      color: #fff;
       font-size: 1.4rem;
     }
   }
@@ -145,9 +147,7 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-  .padding-top {
-    padding-top: 164px;
-  }
+  
 
   .background-padding {
     padding: 24px 0;
@@ -189,4 +189,11 @@ h1 {
       }
     }
   }
+}
+
+@media screen and (max-width:350px) {
+ 
+.padding-top {
+  padding-top: 90px;
+}
 }

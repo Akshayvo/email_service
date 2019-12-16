@@ -6,11 +6,6 @@ export const galleryHome = [
     },
     {
         // tslint:disable-next-line: max-line-length
-        url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-storage-end-units-open.jpg`,
-        alt: ` open self storage unit doors on the end of a long building made of self storage units`
-    },
-    {
-        // tslint:disable-next-line: max-line-length
         url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-storage-large-self-storage-units.jpg`,
         alt: `a long row of large square roll up doors containing self storage units`
     },

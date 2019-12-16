@@ -3,9 +3,12 @@
 .display-none {
   display: none;
 }
+.altrenateContact {
+  color: #fff !important;
+}
 
 .rent-holder {
-  padding-top: 130px;
+  padding-top: 163px;
   min-height: 86vh;
   margin-bottom: 50px;
 
@@ -56,8 +59,9 @@
 }
 
 @media only screen and (max-width: 991px) {
+  
   .rent-holder {
-    padding-top: 164px;
+    padding-top: 124px;
   }
 }
 
@@ -80,7 +84,6 @@
     .padding {
       padding: 0;
     }
-    padding-top: 164px;
     .padding-for-small-device {
       padding: 24px;
     }
@@ -116,4 +119,10 @@
     overflow-x: hidden;
     z-index: 16;
   }
+}
+
+@media screen and (max-width:350px) {
+  .rent-holder {
+    padding-top: 90px;
+}
 }
