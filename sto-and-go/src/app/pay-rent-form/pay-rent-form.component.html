@@ -42,9 +42,9 @@
                         [value]="lstPayType?.PayTypeDescription"
                         [class.display-none]="lstPayType?.PayTypeID === -8"
                         >
-                        <div *ngIf="lstPayType?.PayTypeID !== -8">
-                          {{lstPayType.PayTypeDescription}}
-                        </div>
+                          <div *ngIf="lstPayType?.PayTypeID !== -8">
+                            {{lstPayType.PayTypeDescription}}
+                          </div>
                         </option>
                       </select>
                       <div *ngIf="submitted && f.objPayment.controls.PayType.controls.PayTypeDescription.errors" class="invalid-feedback">

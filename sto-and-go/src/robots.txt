@@ -1,5 +1,5 @@
  # www.robotstxt.org/
  # Allow crawling of all content
-Sitemap: https://stoandgo1.com/sitemap.xml
+Sitemap: https://www.stoandgo-staging.syrasoft.com/sitemap.xml
  User-agent: *
  Disallow:
