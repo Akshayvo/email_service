@@ -9,15 +9,23 @@ export class UnitTypes {
 export class LstUnitTypes {
     Description: string;
     MonthlyRate: number;
+    DailyRate: number;
+    AnnualRate: number;
+    BiAnnualRate: number;
+    QuarterRate: number;
     ReservationFee: number;
     ReservationFeeTax: number;
     UnitTypeID: number;
     IsUnitsAvailable: boolean;
-    IsClimateControlled: boolean
+    IsClimateControlled: boolean;
 
     constructor(
         Description: string,
         MonthlyRate: number,
+        DailyRate: number,
+        AnnualRate: number,
+        BiAnnualRate: number,
+        QuarterRate: number,
         ReservationFeeTax: number,
         ReservationFee: number,
         UnitTypeID: number,
@@ -26,6 +34,10 @@ export class LstUnitTypes {
         ) {
         this.Description = Description,
         this.MonthlyRate = MonthlyRate;
+        this.DailyRate = DailyRate;
+        this.AnnualRate = AnnualRate;
+        this.BiAnnualRate = BiAnnualRate;
+        this.QuarterRate = QuarterRate;
         this.ReservationFeeTax  = ReservationFeeTax;
         this.ReservationFee = ReservationFee;
         this.UnitTypeID = UnitTypeID;

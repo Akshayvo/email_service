@@ -7,7 +7,6 @@ import { Auth, ForgotPassword } from '../models/auth';
 import { environment } from '../../environments/environment';
 
 
-// const baseUrl = `https://simapi.syrasoft.com/10.1.0.999/api/`
 
 @Injectable({
   providedIn: 'root'
@@ -28,5 +27,9 @@ export class AuthService {
 
   forgotPassword(forgotPassword: ForgotPassword) {
     return this.http.post<ForgotPassword>(this.forgotPasswordUrl, forgotPassword);
+  }
+
+  isUserAuthenticated() {
+    return !!localStorage.getItem('strTenantToken');
   }
 }

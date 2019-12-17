@@ -20,8 +20,8 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to review our extremely affordable rates, and unit or parking availability, then place your reservation quickly,
-                 and easily with our form.`
+      content: `Take a moment to review our extremely affordable rates, and unit or parking availability,
+      then place your reservation quickly, and easily with our form.`
     });
     this.titleService.setTitle('View Rates | Sto and Go');
   }

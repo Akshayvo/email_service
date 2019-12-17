@@ -26,6 +26,7 @@
     "@angular/core": "^6.1.0",
     "@angular/forms": "^6.1.0",
     "@angular/http": "^6.1.0",
+    "@angular/material": "^6.4.7",
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/platform-server": "^6.1.0",
@@ -41,8 +42,10 @@
     "hads": "^1.7.0",
     "rxjs": "~6.2.0",
     "ts-loader": "4.2.0",
+    "ua-parser-js": "^0.7.20",
     "webpack-cli": "^2.1.4",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "@angular/cdk": "^6.2.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.8.0",

@@ -25,10 +25,25 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { ErrorHandlerService } from './services/error-handler.service';
+import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
+import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { LoginComponent } from './login/login.component';
+import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
+import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './modules/material/material.module';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { RequestInterceptorService } from './services/request-interceptor.service';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    ConfirmationDataComponent,
+    ForgotPasswordComponent,
+    LoginComponent,
     HeaderComponent,
     HomeComponent,
     ContactComponent,
@@ -41,7 +56,10 @@ import { ErrorHandlerService } from './services/error-handler.service';
     AccordionComponent,
     ContactButtonComponent,
     PayRentComponent,
+    PayRentFormComponent,
     ReserveUnitComponent,
+    ReserveUnitFormComponent,
+    ViewRatesPageComponent
   ],
   imports: [
     CommonModule,
@@ -52,6 +70,8 @@ import { ErrorHandlerService } from './services/error-handler.service';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [
     Title,
@@ -65,7 +85,12 @@ import { ErrorHandlerService } from './services/error-handler.service';
       useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
           window.location.href = (route.data as any).externalUrl;
       }
-    }
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: RequestInterceptorService,
+      multi: true
+    },
   ],
   bootstrap: [AppComponent],
 })

@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Payment, LstPayTypes } from '../models/payment';
+import { LstPayTypes } from '../models/payment';
 
-import { environment } from '../../environments/environment';
 
 
 @Injectable({
@@ -15,7 +14,7 @@ export class PaymentService {
 
   constructor(private http: HttpClient ) { }
 
-  getPayment(lstPayTypes: LstPayTypes[]): Observable<any> {
+  makePayment(lstPayTypes: LstPayTypes[]): Observable<any> {
     return this.http.post<any>(this.paymentUrl, lstPayTypes);
   }
 }
