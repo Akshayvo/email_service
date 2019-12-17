@@ -196,11 +196,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.getPayMethods();
     this.fetchMonth();
-    if (!!localStorage.getItem('strTenantToken')) {
-      this.tenantTokenExist = true;
-      this.showLoader = true;
-      this.getTenantInfo();
-    }
+
   }
 
   get f() { return this.payRentForm.controls; }
@@ -381,6 +377,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
    this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
       .subscribe(payTypesResponse => {
         this.lstPayTypes = payTypesResponse.lstPayTypes;
+        if (!!localStorage.getItem('strTenantToken')) {
+          this.tenantTokenExist = true;
+          this.showLoader = true;
+          this.getTenantInfo();
+        }
         if (!localStorage.getItem('strTenantToken')) {
           const defaultDescription = this.lstPayTypes[1].PayTypeDescription;
           const defaultPayTypeID = this.lstPayTypes[1].PayTypeID;
