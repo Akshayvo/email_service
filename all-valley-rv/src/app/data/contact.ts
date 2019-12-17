@@ -7,9 +7,9 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:abc@xyz.com',
+        redirect: 'mailto:info@allvalleyrvstorage.com',
         label: 'Email: ',
-        data: 'abc@xyz.com',
+        data: 'info@allvalleyrvstorage.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
@@ -18,7 +18,11 @@ export const contact = [
         label: 'Phone: ',
         data: '(951) 603-5133',
         class: 'fas fa-phone mr-2 iconColor',
-    }
+    },
+    // {
+    //     id: 3,
+    //     data: 'This number may be called or texted',
+    // }
 ];
 
 export const hours = [

@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
       content: `Are you in search of affordable RV Storage near Sun City, CA? All Valley
                 RV Storage has plenty of spots for seasonal vehicle storage and excellent service!`
     });
-    this.titleService.setTitle('Affordable Self Storage in Sun City | All Valley RV Storage');
+    this.titleService.setTitle('Affordable RV, Boat, and Vehicle Storage | All Valley RV Storage');
   }
 
   public navigate(location: any) {
