@@ -37,6 +37,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   @Input() DescriptionVR: string;
   @Input() MonthlyRateVR: number;
   @Input() ReservationFee: number;
+  @Input() UnitTypeID: number;
 
   unitTypes: UnitTypes;
   lstUnitTypes: LstUnitTypes[];
@@ -227,6 +228,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.getTenantInfo();
       }
     }
+
+
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
         Description: this.DescriptionVR,
@@ -351,7 +354,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       const defaultUnitTypeValue = unitTypesResponse.lstUnitTypes[0].Description;
       this.defaultReservationFee = unitTypesResponse.lstUnitTypes[0].ReservationFee;
       // this.defaultReservationFeeTax = unitTypesResponse.lstUnitTypes[0].ReservationFeeTax;
-      this.MoveIn.intUnitTypeID = JSON.stringify(unitTypesResponse.lstUnitTypes[0].UnitTypeID);
+
+
+
+      // tslint:disable-next-line: max-line-length
+      this.MoveIn.intUnitTypeID = (JSON.stringify(this.UnitTypeID) || JSON.stringify(unitTypesResponse.lstUnitTypes[0].UnitTypeID));
+console.log( 'move in unit type id', this.MoveIn.intUnitTypeID, JSON.stringify(this.UnitTypeID));
 
       if (!this.DescriptionVR && !this.MonthlyRateVR) {
         this.reserveUnitForm.patchValue({
@@ -465,6 +473,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       if (this.existingTenantToken) {
         if (this.isValueUpdated) {
           this.MoveIn.dteMoveIn = this.convertDate(this.reserveUnitForm.value.dteMoveIn);
+          console.log('move in object', this.MoveIn);
           this.makeAReservation(this.MoveIn);
         } else {
           this.updateTenant(this.reserveUnitForm.value);

@@ -104,7 +104,7 @@
                             {{this.reserveUnitForm.value.lstUnitTypes[0].MonthlyRate}}
                         </td>
                     </tr>
-                    <tr>
+                    <tr *ngIf="this.reserveUnitForm.value.lstUnitTypes[0].ReservationFee > 0">
                         <td>
                             Reservation Charges
                         </td>

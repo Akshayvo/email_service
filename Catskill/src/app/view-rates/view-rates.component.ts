@@ -29,6 +29,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   openComponent = false;
   imagetype: any;
   imageBaseUrl: any;
+  UnitTypeID: number;
 
  private isUnsubscribe$: Subscription;
 
@@ -67,10 +68,11 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
    * @param event1
    */
 
-  handleClick(event: Event, event1: Event, event2:Event) {
+  handleClick(event: Event, event1: Event, event2: Event, event3: Event) {
     this.openComponent = true;
     this.DescriptionVR = JSON.parse(JSON.stringify(event));
     this.MonthlyRateVR = parseFloat(JSON.stringify(event1));
+    this.UnitTypeID =  parseFloat(JSON.stringify(event3));
     // this.R
 
     // console.log(event, event1, this.DescriptionVR, this.MonthlyRateVR);
