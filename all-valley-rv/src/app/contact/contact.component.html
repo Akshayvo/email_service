@@ -67,7 +67,8 @@
                 </div>
                 <div class="form-group">
                     <label>Message*</label>
-                    <textarea type="text" formControlName="message" placeholder="Enter Message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
+                    <textarea type="text" formControlName="message" placeholder="Enter Message" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
                     <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
                         <small class="form-text text-muted" *ngIf="f.message.errors.required">Please fill out this field</small>
                     </div>
@@ -90,7 +91,7 @@
                     <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                 </span>
-                This number may be called or texted
+                This number may be called or texted.
                 <h3 class="py-1"><strong>Office Hours</strong></h3>
                 <span class="font-xs-device" *ngFor="let hour of hours">
                   <b>{{hour.label}}</b> {{hour.data}}<br>
