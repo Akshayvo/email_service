@@ -89,13 +89,16 @@
     margin-top: 10px;
   }
 }
+
 .managername {
   font-size: 0.8rem;
   color: #fff;
 }
-.contact-page{
+
+.contact-page {
   color: #fff;
 }
+
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -114,6 +117,12 @@
 
 small {
   font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .managername {
+    font-size: 0.718rem;
+  }
 }
 
 @media only screen and (max-width: 991px) {

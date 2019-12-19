@@ -23,16 +23,18 @@
   z-index: 1;
 }
 
-.heading1{
+.heading1 {
   color: #000;
 }
-.heading{
+
+.heading {
   color: #fff;
 }
 
-.managername1{
+.managername1 {
   color: #000;
 }
+
 .container-fluid{
   background-color: #cda500;
   color: #000;
@@ -289,6 +291,10 @@
 
   .carousel-item {
     height: 300px;
+  }
+
+  .managername1 {
+    font-size: 0.8rem;
   }
 }
 
