@@ -89,8 +89,8 @@
               <div class="contact-details pt-lg-4 pt-md-4 pt-sm-2">
                 <h2 class="py-1">Cranberry Storage</h2>
                 
-                <span class="font-xs-device mb-1" *ngFor="let contact of contactInfo">
-                    <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <span class="font-xs-device mb-1" class="contact-links" *ngFor="let contact of contactInfo">
+                    <b>{{contact.label}}</b><span  *ngIf="contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                     <div [innerHTML]="contact.altrenateContact"></div>
                 </span>
