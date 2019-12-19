@@ -24,9 +24,9 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
-import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { PhotosComponent } from './photos/photos.component';
+import { RentNowComponent } from './rent-now/rent-now.component';
 
 @NgModule({
   declarations: [
@@ -44,8 +44,8 @@ import { PhotosComponent } from './photos/photos.component';
     ContactButtonComponent,
     PayRentComponent,
     UnitSizerComponent,
-    ReserveUnitComponent,
     PhotosComponent,
+    RentNowComponent,
   ],
   imports: [
     CommonModule,

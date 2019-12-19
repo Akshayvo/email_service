@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { galleryHome } from '../data/galleryImage';
-import { ActivatedRoute,Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-photos',

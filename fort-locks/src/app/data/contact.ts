@@ -4,6 +4,8 @@ export const contact = [
         label: 'Address: ',
         data: '1395 Danby Rd, Ithaca, NY 14850 ',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: `https://www.google.com/maps/place/Fort+Locks+Storage+Mall/@42.3839992,-76.4924272,
+                   15z/data=!4m2!3m1!1s0x0:0xb1490cd6c84d9137?sa=X&ved=2ahUKEwjRlr-YqMDmAhUihOAKHajKB_MQ_BIwCnoECA0QCA`
     },
     {
         id: 1,

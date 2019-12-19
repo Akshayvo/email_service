@@ -8,7 +8,7 @@ import { ErrorComponent } from './error/error.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
-import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
+import { RentNowComponent } from './rent-now/rent-now.component';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'unit-sizer', component: UnitSizerComponent},
   { path: 'pay-rent', component: PayRentComponent },
-  { path: 'reserve-unit', component: ReserveUnitComponent },
+  { path: 'rent-now', component: RentNowComponent },
   { path: 'review', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'

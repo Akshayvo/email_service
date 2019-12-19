@@ -48,24 +48,22 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Fort Locks Self Storage is Danby's premier self storage facility. Our facility is located
-            on 96B just 2 miles south of Ithaca College and Longview. We've been serving Danby, Ithaca,
-            Trumansburg and the surrounding communities for over three decades! We are Danby's self
-            storage experts and look forward to putting that experience to good use protecting your
-            cherished belongings.`,
+        p: `Fort Locks Self Storage is Ithaca’s premier self-storage facility.  We are a family-owned facility
+            located just 2 miles south of Ithaca College and Longview.  We’ve been serving Ithaca and the surrounding
+            communities for over three decades! We are Ithaca's self storage experts and look forward to putting
+            that experience to good use protecting your cherished belongings.`,
     },
     {
-        p: `We offer a wide variety of unit sizes in both standard and climate-controlled varieties.
-            Unlike many facilities whose climate-control only heat and cools units, our facility offers
-            highly sought-after humidity control, making us ideal for document and antique storage.
-            Business and residential customers alike use our climate-controlled units to store
-            antiques, furniture and records every day.`,
+        p: `We offer a wide variety of unit sizes in both standard and climate-controlled varieties. Unlike many
+            facilities whose climate-control only heat and cools units, our facility offers highly sought-after
+            humidity control, making us ideal for document and antique storage. Business and residential customers
+            alike use our climate-controlled units to store antiques, furniture and records every day.`,
     },
     {
-        p: `Our facility also has fully-paved wide lanes between our standard self storage units.
-            The ground-level units are perfect for seasonal items you just don't have the room for
-            around the home, or temporary storage during a move or renovation project! Start
-            re-claiming that elbow room around the home or office today and call or move-in online!`,
+        p: `Our facility also has fully-paved wide lanes between our standard self storage units. The ground-level
+            units are perfect for seasonal items you just don't have the room for around the home, or temporary storage
+            during a move or renovation project! Start re-claiming that elbow room around the home or office today
+            and call or move-in online!`,
     },
 ];
 
