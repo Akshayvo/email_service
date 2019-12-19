@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { primeTime } from '../data/camper';
+import { primeTime, primeTimeLeftColumn, primeTimeRightColumn } from '../data/camper';
 
 @Component({
   selector: 'app-prime-time',
@@ -10,6 +10,8 @@ import { primeTime } from '../data/camper';
 })
 export class PrimeTimeComponent implements OnInit {
   primeTimeImages: any;
+  primeTimeLeftColumn: any;
+  primeTimeRightColumn: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -29,6 +31,8 @@ export class PrimeTimeComponent implements OnInit {
   }
   public fetchGallery() {
     this.primeTimeImages = primeTime;
+    this.primeTimeLeftColumn = primeTimeLeftColumn;
+    this.primeTimeRightColumn = primeTimeRightColumn;
   }
 
 }

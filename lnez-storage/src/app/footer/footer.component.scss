@@ -27,6 +27,18 @@
 .bg-light{
   background: #dedede !important;
 }
+.tssa-logo{
+  align-items: center;
+
+  img{
+    height: 70px;
+    align-items: center;
+  }
+}
+.row{
+  display: flex;
+  align-items: center;
+}
 
 .pittusburgh-image {
   img {
@@ -38,6 +50,19 @@
   .pittusburgh-image {
     img {
       height: 38px;
+    }
+  }
+  .syrasoft {
+    img {
+      height: 30px
+    }
+  }
+  .tssa-logo{
+    align-items: center;
+  
+    img{
+      height: 50px;
+      align-items: center;
     }
   }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { wildwood } from '../data/camper';
+import { wildwood, wildwoodLeftColumn, wildwoodRightColumn } from '../data/camper';
 import { from } from 'rxjs';
 
 @Component({
@@ -11,6 +11,8 @@ import { from } from 'rxjs';
 })
 export class WildwoodComponent implements OnInit {
   wildwoodImages: any;
+  wildwoodLeftColumn: any;
+  wildwoodRightColumn: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -30,5 +32,7 @@ export class WildwoodComponent implements OnInit {
   }
  public fetchGallery() {
    this.wildwoodImages = wildwood;
+   this.wildwoodLeftColumn = wildwoodLeftColumn;
+   this.wildwoodRightColumn = wildwoodRightColumn;
  }
 }

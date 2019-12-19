@@ -19,7 +19,7 @@
   
   .pay-rent-holder {
     background-color: #f1f0ed;
-    
+    padding: 50px;
 
   }
   
@@ -34,6 +34,13 @@
   @media only screen and (max-width:991px) {
     .camper {
       border: none;
+    }
+    
+  }
+
+  @media only screen and (max-width: 600px ) {
+    .pay-rent-holder {
+      padding: 16px;
     }
   }
 
