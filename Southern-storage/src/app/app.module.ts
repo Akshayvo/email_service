@@ -35,6 +35,19 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentAgricolaComponent } from './pay-rent-agricola/pay-rent-agricola.component';
 import { PayRentRockyCreekComponent } from './pay-rent-rocky-creek/pay-rent-rocky-creek.component';
 import { PayRentBartonComponent } from './pay-rent-barton/pay-rent-barton.component';
+import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
+import { LoginComponent } from './login/login.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
+import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
+import { MaterialModule } from './modules/material/material.module';
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from '../app/auth.gurad';
+import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { DatePipe } from '@angular/common';
+import {  HTTP_INTERCEPTORS } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RequestInterceptorService } from './services/request-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -62,7 +75,16 @@ import { PayRentBartonComponent } from './pay-rent-barton/pay-rent-barton.compon
     ErrorHandlerComponent,
     PayRentAgricolaComponent,
     PayRentRockyCreekComponent,
-    PayRentBartonComponent
+    PayRentBartonComponent,
+    ConfirmationDataComponent,
+    LoginComponent,
+    ForgotPasswordComponent,
+    ViewRatesPageComponent,
+    ReserveUnitFormComponent
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
   ],
   imports: [
     NgtUniversalModule,
@@ -72,8 +94,13 @@ import { PayRentBartonComponent } from './pay-rent-barton/pay-rent-barton.compon
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MaterialModule,
+    BrowserAnimationsModule,
     ],
   providers: [
+    DatePipe,
+    AuthService,
+    AuthGuard,
     Title,
     {
       provide: ErrorHandler,
@@ -84,7 +111,12 @@ import { PayRentBartonComponent } from './pay-rent-barton/pay-rent-barton.compon
       useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
           window.location.href = (route.data as any).externalUrl;
       }
-  }
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: RequestInterceptorService,
+      multi: true
+    },
   ],
   bootstrap: [AppComponent]
 })

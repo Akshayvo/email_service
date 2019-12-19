@@ -33,8 +33,5 @@ export class TabsComponent implements OnInit {
         this.currentActiveTab = params['currentTab'];
         this.selectedTab = this.currentActiveTab;
       });
-      if ( this.currentActiveTab === undefined ) {
-        this.selectedTab = this.tabData[0].name;
-      }
     }
 }

@@ -13,7 +13,6 @@ export class PaymentComponent implements OnInit {
 
   breadcrumbActive: any = 'Pay Rent';
   currentActive: any = 'Pay Rent';
-  currentTab: any;
   tabs: any = [
     { id: '0',
     name: 'Southern Storage - Agricola',
@@ -47,7 +46,6 @@ export class PaymentComponent implements OnInit {
 
   ngOnInit() {
     this.sub = this.route.queryParams.subscribe(params => {
-      this.currentTab = params['currentTab'];
     });
     window.scrollTo(0, 0);
   }

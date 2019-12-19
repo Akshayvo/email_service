@@ -66,39 +66,6 @@ export class HomeComponent implements OnInit {
     this.hoursBarton = hoursBarton;
    }
 
-  // receiveMessage($event: any) {
-  //   this.locationId = $event;
-  //   console.log($event);
-  //   if ( this.locationId === '0' ) {
-  //     this.fetchContactDetailsAgricola();
-  //   } else if ( this.locationId === '1' ) {
-  //     this.fetchContactDetailsRockyCreek();
-  //   } else if ( this.locationId === '2' ) {
-  //     this.fetchContactDetailsBarton();
-  //   }
-  //   console.log(this.contactDetails);
-  //   console.log(this.hoursDetails);
-
-  // }
-
-    // public fetchContactDetailsAgricola() {
-    //   this.heading = `Southern Storage - Agricola`;
-    //   this.contactDetails = contactsAgricola;
-    //   this.hoursDetails = hoursAgricola;
-    // }
-
-    // public fetchContactDetailsRockyCreek() {
-    //   this.heading = `Southern Storage - Rocky Creek`;
-    //   this.contactDetails = contactsRockyCreek;
-    //   this.hoursDetails = hoursRockyCreek;
-    // }
-
-    // public fetchContactDetailsBarton() {
-    //   this.heading = `Southern Storage - Barton`;
-    //   this.contactDetails = contactsBarton;
-    //   this.hoursDetails = hoursBarton;
-    // }
-
   public fetchFeatureHead() {
     this.features = featuresHead;
   }

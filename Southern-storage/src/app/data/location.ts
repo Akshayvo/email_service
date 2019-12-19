@@ -2,7 +2,7 @@ export const tabs = [
     {
         id: '1',
         name: 'Storage Units',
-        path: './',
+        path: './storageUnits',
         active: true,
     },
     {
@@ -41,7 +41,7 @@ export const tabsBarton = [
     {
         id: '1',
         name: 'Storage Units',
-        path: './',
+        path: './storageUnits',
         active: true,
     },
     {

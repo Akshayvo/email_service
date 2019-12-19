@@ -10,7 +10,6 @@ export class UnitSizerComponent implements OnInit {
   name: any;
   unitSizer: any;
   tabs: any;
-  currentTab = 'Unit Sizer';
   id: number;
   constructor( private router: Router ) {
    }

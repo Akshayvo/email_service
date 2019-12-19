@@ -17,7 +17,6 @@ export class LocationComponent implements OnInit {
 
   name: any;
   id: number;
-  currentTab: any;
   contacts: any;
   hours: any;
   iframeAdd: any;
@@ -76,24 +75,24 @@ export class LocationComponent implements OnInit {
 
   public navigateToPayment() {
     if ( this.id === 0 ) {
-      this.router.navigate(['/pay-rent/rocky-creek'], { queryParams: { currentTab: 'Southern Storage - Rocky Creek' }});
+      this.router.navigate(['/pay-rent-rocky-creek']);
     } else if ( this.id === 1 ) {
-      this.router.navigate(['/pay-rent/agricola'], { queryParams: { currentTab: 'Southern Storage - Agricola' }});
+      this.router.navigate(['/pay-rent-agricola']);
     } else if ( this.id === 2) {
-      this.router.navigate(['/pay-rent/barton'], { queryParams: { currentTab: 'Southern Storage - Barton' }});
+      this.router.navigate(['/pay-rent-barton']);
     }
    }
 
    public navigateToReserve() {
     if ( this.id === 0 ) {
       this.router.navigate(['/location/rocky-creek/reserveUnit'],
-      { queryParams: { name: 'Rocky-Creek', currentTab: 'Reserve Unit' }});
+      );
     } else if ( this.id === 1 ) {
       this.router.navigate(['/location/agricola/reserveUnit'],
-      { queryParams: { name: 'Agricola', currentTab: 'Reserve Unit' }});
+     );
     } else if ( this.id === 2) {
       this.router.navigate(['/location/barton/reserveUnit'],
-      { queryParams: { name: 'Barton', currentTab: 'Reserve Unit' }});
+      );
     }
    }
 
