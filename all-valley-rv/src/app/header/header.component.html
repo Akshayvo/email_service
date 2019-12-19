@@ -7,13 +7,15 @@
             <i [class]="contact?.class"></i><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
             <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
           </span>
+          <span class="coming-soon"><b>COMING SOON !</b></span>
         </div>
-        <div class="col-md-2 ml-auto text-right">
-          <span class="social pl-2" *ngFor="let social of socialLinks">
+        <div class="col-md-2 ml-auto text-left">
+          <!-- <span class="social pl-2" *ngFor="let social of socialLinks">
             <a [href]="social?.path" target="_blank">
               <i [class]="social?.class" style="font-size: 1.2rem;"></i>
             </a>
-          </span>
+          </span> -->
+          
         </div>
       </div>
     </div>
