@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
   socialLinks: any;
   data: any;
   logo: any;
+  imgAlt: any;
   @Input() currentActive: any;
   locationId: any;
 
@@ -33,11 +34,14 @@ export class HeaderComponent implements OnInit {
 
   public isSomePage() {
     if (this.router.url.includes('/location/inez-storage')) {
-        this.logo = '';
+        this.logo = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-storage-logo-small.png';
+        this.imgAlt = 'logo artwork displaying the words Inez Storage';
     } else  if (this.router.url.includes('/location/beck-road-storage'))  {
-        this.logo = '';
+        this.logo = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/Beck-Road-Storage-logo-small.png';
+        this.imgAlt = 'logo artwork that has the words Beck Road Storage';
     } else {
-      this.logo = '';
+      this.logo = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-storage-logo-small.png';
+      this.imgAlt = 'logo artwork displaying the words Inez Storage';
     }
   }
 

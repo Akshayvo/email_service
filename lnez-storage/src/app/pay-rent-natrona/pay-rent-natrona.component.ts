@@ -13,7 +13,7 @@ export class PayRentNatronaComponent implements OnInit {
   ngOnInit() {
     this.dataupdate();
   }
-public dataupdate(){
+public dataupdate() {
   this.contact = contactsLocation3;
   }
 }

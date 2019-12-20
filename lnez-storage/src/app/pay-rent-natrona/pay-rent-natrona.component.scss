@@ -2,7 +2,7 @@
 
 .containHolder {
   min-height: 94vh;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 .pay-rent-holder {
@@ -20,4 +20,10 @@ a {
 
 .display-none {
   display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .containHolder {
+    padding-top: 90px;
+  }
 }

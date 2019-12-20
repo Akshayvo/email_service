@@ -11,7 +11,7 @@
 }
 
 .storage-tip-holder {
-  padding-top: 100px;
+  padding-top: 120px;
   min-height: 88vh;
   margin-bottom: 50px;
 
@@ -33,6 +33,12 @@
     ul {
       padding-left: 30px;
     }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .storage-tip-holder {
+    padding-top: 90px;
   }
 }
 

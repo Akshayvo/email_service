@@ -2,7 +2,7 @@
 
 .contact-details {
   background-color: $light;
-  padding-top: 90px;
+  padding-top: 116px;
 }
 .carousel-caption {
   bottom: 40px;
@@ -184,12 +184,15 @@
    margin-left: 80px;
  }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .social-content {
     h1 {
       font-size: 1.4rem;
     }
   }
+  .contact-details {
+    padding-top: 90px;
+}
 
   .iconColor {
     font-size: 1rem;

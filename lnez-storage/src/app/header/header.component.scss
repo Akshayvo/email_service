@@ -41,20 +41,16 @@ a {
     font-weight: 600;
   }
 
-  .navbar-brand {
-    img {
-      position: absolute;
-      top: 9px;
-    }
-  }
+
 
   .nav-link {
     color: $dark;
     font-size: 1.2rem;
     font-weight: 400;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    // padding-top: 25px;
+    // padding-bottom: 25px;
     transition: none;
+    padding: 41px .5rem;
   }
 
   button {
@@ -104,6 +100,9 @@ a {
   .display {
     display: none;
   }
+  .nav-link {
+    padding: 20px .5rem !important;
+  }
 
   .navbar {
     .navbar-nav {
@@ -119,7 +118,7 @@ a {
 
     .navbar-brand {
       img {
-        height: 45px;
+        height: 70px;
       }
     }
 

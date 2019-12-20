@@ -36,7 +36,6 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  
   { path: 'location/beck-road-storage',
     component: LocationComponent,
     children: [
@@ -57,7 +56,6 @@ const routes: Routes = [
         externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJkYKn9LZBQoYRZJQPYQwI8OE'
     }
   },
-  
   { path: 'review/beck-road-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
@@ -69,7 +67,7 @@ const routes: Routes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'pay-rent', component: PayRentComponent },
-  { path: 'pay-rent-natrona', component: PayRentNatronaComponent },
+  { path: 'pay-rent-beck-road', component: PayRentNatronaComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'camper-rentals',
@@ -81,7 +79,6 @@ const routes: Routes = [
    ]},
   // { path: '2018-wildwood-27REI', component: WildwoodComponent},
   // { path: '2019-prime-time-tracer', component: PrimeTimeComponent},
-  
   { path: '**', component: ErrorComponent },
 ];
 
