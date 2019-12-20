@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ElementRef, HostListener, } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef, HostListener, ViewEncapsulation, } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
@@ -12,7 +12,8 @@ import { DataSharingService } from '../services/data-sharing.service';
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
-  styleUrls: ['./view-rates-page.component.scss']
+  styleUrls: ['./view-rates-page.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ViewRatesPageComponent implements OnInit, OnDestroy {
 

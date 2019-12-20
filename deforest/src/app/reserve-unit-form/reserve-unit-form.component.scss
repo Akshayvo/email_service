@@ -1,5 +1,9 @@
 @import '../../styles.scss';
 
+.text-style {
+    font-size: 1rem;
+}
+
 .mat-form-field::ng-deep {
 
   .mat-form-field-wrapper {
@@ -94,11 +98,10 @@
   font-size: 0.8rem;
 }
 
-.reserve-unit-form {
-  h2 {
-    font-size: 1.8rem;
-  }
+.heading {
+  font-size: 1.8rem;
 }
+
 
 .justify-content {
   justify-content: space-between;

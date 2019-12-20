@@ -9,10 +9,11 @@
         <div class="loader" *ngIf="gettingTenantData"></div>
 
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
+        <h2 class="text-justify pb-3 text-style" *ngIf="navigateToReserve">{{reserveText}}</h2>
+        <h2 class="text-justify pb-3 text-style" *ngIf="navigateToMoveIn">{{moveInText}}</h2>
          <div  class="row justify-content">
              <div formGroupName="objTenant" class="col-lg-7 ">
-                 <h2 class="pb-3">Tenant Information</h2>
-
+                 <h2 class="heading pb-3">Tenant Information</h2>
                  <div class="row">
                    <div class="col-lg-6 form-group">
                            <label>First Name*</label>
@@ -117,7 +118,7 @@
 
                  <div class="col-lg-4">
                      <div formArrayName="lstUnitTypes">
-                         <h2 class="pb-3">Unit</h2>
+                         <h2 class="heading pb-3">Unit</h2>
                          <i><strong *ngIf="showMoveInDateError">Please fill out the correct move in date.</strong></i>
                      <div *ngFor="let item of f.lstUnitTypes.controls; let i = index">
                          <div  [formGroupName]="i">

@@ -1,4 +1,8 @@
 @import "../../styles.scss";
+
+.text-style {
+  font-size: 0.8rem;
+}
  
 .display {
     display: none;
@@ -75,15 +79,7 @@ table {
    100% { transform: rotate(360deg); }
   }
 
-  // try to use div
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    // width: 100%;
-    // border-bottom: thin solid lightgray;
-  }
-  p{
+  p {
     margin: 0;
   }
   .ClimateControlled { 
@@ -102,7 +98,7 @@ table {
   }
 
   @media only screen and (min-width:992px) {
-    .viewrates-mobile{
+    .viewrates-mobile {
       display: none;
     }
   }

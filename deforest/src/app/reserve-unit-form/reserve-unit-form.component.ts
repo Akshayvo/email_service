@@ -12,7 +12,7 @@ import { Subscription } from 'rxjs';
 import * as moment from 'moment';
 import { MoveInService } from '../services/moveIn.service';
 import { DataSharingService } from '../services/data-sharing.service';
-
+import { reserveText, moveInText } from '../data/reserveMoveIn';
 @Component({
   selector: 'app-reserve-unit-form',
   templateUrl: './reserve-unit-form.component.html',
@@ -23,7 +23,8 @@ import { DataSharingService } from '../services/data-sharing.service';
 export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
 
-
+  reserveText: string;
+  moveInText: string;
   proRateAmount?: number;
   curStage: number;
   deposit?: number;
@@ -185,12 +186,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       };
     }
 
-      if ((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve-unit')) {
+      // tslint:disable-next-line: max-line-length
+      if ((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve-unit') ) {
         this.navigateToReserve = true;
         this.dataSharingService.navigateToReserve = true;
         this.dataSharingService.navigateToMoveIn = false;
       } else {
-        if (this.router.url ===  '/view-rates/move-in' ) {
+        if (this.router.url ===  '/view-rates/move-in' )  {
           this.navigateToMoveIn = true;
           this.dataSharingService.navigateToMoveIn = true;
           this.dataSharingService.navigateToReserve = false;
@@ -237,6 +239,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
     public fetchUSState() {
     this.option = option;
+    this.reserveText = reserveText;
+    this.moveInText = moveInText;
     }
 
   public navigate(location: any) {

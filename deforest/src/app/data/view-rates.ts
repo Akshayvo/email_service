@@ -26,10 +26,10 @@ export const th = [
       data: `Deposit`
     },
     {
-      data: `Reserve a Unit`
+      data: 'Move In<div class="text-style">(Move In Today)</div>'
     },
     {
-      data: 'Move In'
+      data: `Reserve a Unit<div class="text-style">(Future Move In Date)</div`
     },
     {
       data: 'Climate Control'
