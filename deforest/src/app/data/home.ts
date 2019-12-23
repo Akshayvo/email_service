@@ -46,9 +46,9 @@ export const feature = [
         alt: 'Icon of thermometer indicating climate-controlled units'
     },
     {
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/support.svg',
-        label: 'Convenience',
-        alt: 'Convenience Icon'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/team.svg',
+        label: 'Family-Owned and Operated',
+        alt: 'Icon of people standing together'
     },
 ];
 
@@ -78,6 +78,17 @@ export const aboutUs = [
             more about how we can serve you.`,
     }
 ];
+
+export const aboutFamily = [
+    {
+        p: `For many years Deforest Self Storage has been the first call for all kinds of residential and
+            commercial projects. No job is too big or small and our friendly, skilled professionals will be
+            happy to help you with a long-lasting solution. We are based in DeForest, and also provide Storage
+            Rental Services in Deforest, Windsor, Waunakee, Dane, Arlington, Sun Prairie, Madison and surrounding
+            areas. We are committed to the highest standards of professionalism. We want you to experience great
+            Storage Rental Services and realize it's required to maintain a happy client base.`
+    }
+]
 
 export const gettingStarted = `Are you ready to start reclaiming that space around your home, worksite or yard?
                                Call or reserve online today and start de-cluttering with one of DeForest Self

@@ -5,7 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, officeHours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs,
-          gettingStarted, feature, blurbHeading, blurbText } from '../data/home';
+          gettingStarted, feature, blurbHeading, blurbText, aboutFamily } from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -26,6 +26,7 @@ export class HomeComponent implements OnInit {
   blurbHeading: any;
   blurbText: any;
   slideShow: any;
+  aboutFamily: any;
 
 
   constructor(@Inject(WINDOW) private window: Window,
@@ -75,6 +76,7 @@ export class HomeComponent implements OnInit {
 
   public fetchStaticContent() {
     this.aboutUs = aboutUs;
+    this.aboutFamily = aboutFamily;
     this.gettingStarted = gettingStarted;
   }
 
