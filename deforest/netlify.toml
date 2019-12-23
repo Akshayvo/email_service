@@ -30,3 +30,39 @@
   from = "/*"
   to = "/index.html"
   status = 200
+[[redirects]]
+  from = "/services"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/about-us"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/area-info"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/services/sizes"
+  to = "/unit-sizer"
+  status = 301
+[[redirects]]
+  from = "/specials"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/faq"
+  to = "/storage-tips"
+  status = 301
+[[redirects]]
+  from = "/faq/climate"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/faq/boat-storage"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/faq/storage-tips"
+  to = "/storage-tips"
+  status = 301
