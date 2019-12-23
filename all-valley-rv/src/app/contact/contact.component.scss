@@ -68,9 +68,15 @@ small {
 }
 
 @media only screen and (max-width: 991px) {
+  .contentHolder {
+    padding-top: 130px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   
   .contentHolder {
-    padding-top: 90px;
+    padding-top: 154px;
   }
 }
 
@@ -90,6 +96,14 @@ small {
     }
   }
 }
+
+@media only screen and (max-width: 455px) {
+  
+  .contentHolder {
+    padding-top: 170px;
+  }
+}
+
 
 @media only screen and (max-width: 376px) {
   .font-xs-device {

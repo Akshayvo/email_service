@@ -3,6 +3,9 @@
     <h1 class="py-5 text-center">View Rates</h1>
     <div class="row bg-light padding">
       <div class="col-lg-6 col-md-12" >
+        <div class="pt-3">
+            <app-rates-table [tBody]="rates"></app-rates-table>
+        </div>
         <h2 class="pb-3 pt-4">We're almost ready for you! Join our waiting list today!</h2>
           <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
               <div class="form-group">

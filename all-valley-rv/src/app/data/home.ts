@@ -22,7 +22,7 @@ export const featuresList = [
     },
     {
         td1: 'Fully-Fenced',
-        td2: 'Vehicle Storage'
+        td2: 'Wide Stalls'
     },
 ];
 

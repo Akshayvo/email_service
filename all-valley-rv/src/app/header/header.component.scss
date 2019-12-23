@@ -93,11 +93,14 @@ a {
 }
 
 @media only screen and (max-width: 991px) {
-  .display {
-    display: none;
-  }
+  // .display {
+  //   display: none;
+  // }
   .nav-link {
     padding: 20px;
+  }
+  .custom-padding {
+    padding: 0;
   }
 }
 

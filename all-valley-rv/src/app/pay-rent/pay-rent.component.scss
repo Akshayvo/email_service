@@ -52,7 +52,7 @@
 
 @media only screen and (max-width: 991px) {
   .rent-holder {
-    padding-top: 90px;
+    padding-top: 130px;
   }
 }
 
@@ -63,6 +63,9 @@
         border-left: none;
       }
     }
+  }
+  .rent-holder {
+    padding-top: 154px;
   }
 
   .coming {
@@ -112,3 +115,9 @@
     z-index: 16;
   }
 }
+
+@media only screen and (max-width:455px) {
+  .rent-holder {
+    padding-top: 170px;
+  }
+  }

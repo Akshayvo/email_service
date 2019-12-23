@@ -19,10 +19,7 @@ export const contact = [
         data: '(951) 603-5133',
         class: 'fas fa-phone mr-2 iconColor',
     },
-    // {
-    //     id: 3,
-    //     data: 'This number may be called or texted',
-    // }
+  
 ];
 
 export const hours = [

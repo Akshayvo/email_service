@@ -45,7 +45,7 @@ button {
 }
 @media only screen and (max-width: 991px) {
   .contact-button {
-    top: 110px;
+    top: 170px;
   }
 }
 
@@ -57,5 +57,11 @@ button {
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 16;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .contact-button {
+    top: 185px;
   }
 }

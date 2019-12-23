@@ -34,13 +34,16 @@
 
 @media only screen and (max-width: 991px) {
   .contentHolder {
-    padding-top: 90px;
+    padding-top: 130px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   iframe {
     min-height: 600px;
+  }
+  .contentHolder {
+    padding-top: 154px;
   }
 }
 
@@ -67,6 +70,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 455px) {
+  .contentHolder {
+    padding-top: 170px;
+  }
+}
+
 
 @media only screen and (max-width: 365px) {
   .button {

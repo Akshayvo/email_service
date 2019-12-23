@@ -16,6 +16,17 @@ h1 {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width:767px) {
+  .padding-top {
+  padding-top: 155px;
+}
+}
+@media only screen and (max-width:455px) {
+.padding-top {
+  padding-top: 170px;
+}
+}
+
 @media only screen and (max-width: 600px) {
   .background-padding {
     padding: 24px 9px;

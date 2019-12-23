@@ -1,7 +1,7 @@
 import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { dataViewRates } from '../data/view-rates';
+import { dataViewRates, rates } from '../data/view-rates';
 import { contact, hours } from '../data/contact';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { EmailService } from '../services/email.service';
@@ -26,6 +26,7 @@ export class ViewRatesComponent implements OnInit {
   submitted = false;
   mailSent = false;
   subject: string;
+  rates: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -64,6 +65,7 @@ export class ViewRatesComponent implements OnInit {
 
   public viewRates() {
     this.dataViewRates = dataViewRates;
+    this.rates = rates;
   }
 
 

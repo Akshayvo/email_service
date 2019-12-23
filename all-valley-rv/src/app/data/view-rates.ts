@@ -14,3 +14,19 @@ export const dataViewRates = [
             use our contact form, today!`
     },
 ];
+
+export const rates = [
+    {
+        td1: 'SIZE',
+        td2: 'RATE ',
+    },
+    {
+        td1: `Up to 32'`,
+        td2: `$70`
+    },
+    {
+        td1: `Up to 42'`,
+        td2: `$90`
+    }
+];
+

@@ -82,12 +82,12 @@
   .contact-button-data {
     overflow: auto;
     overflow-y: scroll;
-    height: 80vh;
+    height: 70vh;
     width: 325px;
   }
 }
 
-@media only screen and (max-height: 480px) {
+@media only screen and (max-height: 510px) {
   .contact-button-data {
     height: 55vh;
   }
