@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
-import { contact, hours,accesshours } from '../data/contact';
+import { contact, hours, accesshours } from '../data/contact';
 import { EmailService } from '../services/email.service';
 
 @Component({
@@ -37,7 +37,8 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use the convenient contact form or our contact information to reach out to our management team or any questions you may have.!`
+      content: `Use the convenient contact form or our contact information to reach
+                out to our management team or any questions you may have.!`
     });
     this.titleService.setTitle('Contact Us | Stor More Self Storage');
   }

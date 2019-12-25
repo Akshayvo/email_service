@@ -38,7 +38,7 @@ export const accesshours = [
     {
         data: '24 Hour access is available. Please call for more information.'
     }
-]
+];
 
 export const socialLinks = [
     {
