@@ -7,7 +7,7 @@
 }
 
 .jumbotron {
-  // background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/catskill-hero.jpg");
+  // background: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -48,7 +48,7 @@ h1 {
 }
 
 .getStarted {
-  color: $secondary;
+  color: #000;
   text-align: center;
 
   h2 {
@@ -209,7 +209,7 @@ h1 {
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .jumbotorn-skew-text {
-    width: 35%;
+    width: 425px;
 
     a {
       min-width: 160px;

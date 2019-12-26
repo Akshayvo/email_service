@@ -4,6 +4,11 @@
 a {
   cursor: pointer;
 }
+.navbar-brand {
+  b {
+    color: #fff;
+  }
+}
 
 .iconColor {
   color: $primary;
@@ -76,6 +81,17 @@ a {
   }
 }
 
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .nav-item {
+    padding-left: 0.3rem !important;
+    padding-right: 0.3rem !important;
+  
+  .nav-link {
+    font-size: 0.8rem;
+    }
+  }
+}
+
 @media screen and (max-width: 991px) {
   .display {
     display: none;
@@ -94,7 +110,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 991px) and (max-height: 480px) {
+@media only screen and (max-width: 991px) and (max-height: 500px) {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;
