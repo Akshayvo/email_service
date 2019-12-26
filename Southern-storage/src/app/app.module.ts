@@ -48,6 +48,7 @@ import { DatePipe } from '@angular/common';
 import {  HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RequestInterceptorService } from './services/request-interceptor.service';
+import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { RequestInterceptorService } from './services/request-interceptor.servic
     LoginComponent,
     ForgotPasswordComponent,
     ViewRatesPageComponent,
-    ReserveUnitFormComponent
+    ReserveUnitFormComponent,
+    PayRentFormComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

@@ -17,6 +17,10 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentAgricolaComponent } from './pay-rent-agricola/pay-rent-agricola.component';
 import { PayRentRockyCreekComponent } from './pay-rent-rocky-creek/pay-rent-rocky-creek.component';
 import { PayRentBartonComponent } from './pay-rent-barton/pay-rent-barton.component';
+import { LoginComponent } from './login/login.component';
+import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { AuthGuard } from './auth.gurad';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -92,9 +96,30 @@ const routes: Routes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'pay-rent-agricola', component: PayRentAgricolaComponent },
-  { path: 'pay-rent-rocky-creek', component: PayRentRockyCreekComponent },
-  { path: 'pay-rent-barton', component: PayRentBartonComponent },
+  { path: 'pay-rent-agricola', component: PayRentAgricolaComponent,
+  children: [
+    {path: '', redirectTo: 'login', pathMatch: 'full'},
+    {path: 'login', component: LoginComponent },
+    {path: 'forgotPassword', component: ForgotPasswordComponent },
+    {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
+  ]
+  },
+  { path: 'pay-rent-rocky-creek', component: PayRentRockyCreekComponent,
+  children: [
+    {path: '', redirectTo: 'login', pathMatch: 'full'},
+    {path: 'login', component: LoginComponent },
+    {path: 'forgotPassword', component: ForgotPasswordComponent },
+    {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
+  ]
+  },
+  { path: 'pay-rent-barton', component: PayRentBartonComponent,
+  children: [
+    {path: '', redirectTo: 'login', pathMatch: 'full'},
+    {path: 'login', component: LoginComponent },
+    {path: 'forgotPassword', component: ForgotPasswordComponent },
+    {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
+  ]
+  },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },
 ];
