@@ -7,7 +7,7 @@
       <div class="data">
         <div id="thumbnailsList" class="thumbnailsList">
           <span *ngFor="let image of galleryImages; let i = index" class="p-1">
-             <img src="{{image.url}}" alt="{{image.alt}}" class="tn" height="auto" 
+             <img src="{{image.thumb}}" alt="{{image.alt}}" class="tn" height="auto" 
                 data-toggle="image.url"   data-target="#selectedImageM"
                   (click)=setSelectedImage(image)>
           </span>
