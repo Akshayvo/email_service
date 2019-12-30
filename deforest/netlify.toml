@@ -27,10 +27,6 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-[[redirects]]
   from = "/services"
   to = "/"
   status = 301
@@ -47,7 +43,7 @@
   to = "/unit-sizer"
   status = 301
 [[redirects]]
-  from = "/specials"
+  from = "/services/specials/"
   to = "/"
   status = 301
 [[redirects]]
@@ -66,3 +62,7 @@
   from = "/faq/storage-tips"
   to = "/storage-tips"
   status = 301
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
