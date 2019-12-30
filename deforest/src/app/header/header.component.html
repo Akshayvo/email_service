@@ -2,13 +2,20 @@
   <div class="container">
     <div class="contact-header">
       <div class="row">
-        <div class="col-xl-10 col-11">
-          <span class="contact-details pr-md-4 pr-2" *ngFor="let contact of contactDetails">
-          <i [class]="contact?.class"></i>
-            <span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content">
-              <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a>
+        <div class="col-md-10 col-11 custom-padding">
+          <span class="contact-details pr-lg-4 pr-md-2 pr-2" *ngFor="let contact of contactDetails">
+            <span  *ngIf="contact?.id !== 1 else other_content">
+              <span style="display: inline-block;">
+
+                <i [class]="contact?.class"></i>
+                <a style="white-space: nowrap;" [href]="contact?.redirect">{{contact.data}}</a>
+              </span>
             </span>
-            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
+            <ng-template #other_content>
+              <span style="display: inline-block;">
+                <i [class]="contact?.class"></i><span style="white-space: nowrap;">{{contact.data}}</span>
+              </span>
+              </ng-template>
           </span>
         </div>
         <div class="col-xl-2 col-1  text-right">
