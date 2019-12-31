@@ -7,7 +7,7 @@ import { contactsRockyCreek, hoursRockyCreek,
          contactsBarton, hoursBarton } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
 import {  SelectLocationComponent } from '../select-location/select-location.component';
-
+import { AppResolver } from '../resolver/app.resolver';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,17 +15,12 @@ import {  SelectLocationComponent } from '../select-location/select-location.com
 })
 export class HomeComponent implements OnInit {
 
-  // @ViewChild(SelectLocationComponent) gettingLocation;
   contactsRockyCreek: any;
   contactsBarton: any;
   contactsAgricola: any;
   hoursRockyCreek: any;
   hoursBarton: any;
   hoursAgricola: any;
-  // contactDetails: any;
-  // hoursDetails: any;
-  // locationId: string;
-  // heading: string;
   features: any;
   serviceOffered: any;
 

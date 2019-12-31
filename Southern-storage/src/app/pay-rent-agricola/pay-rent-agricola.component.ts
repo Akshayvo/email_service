@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-pay-rent-agricola',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PayRentAgricolaComponent implements OnInit {
 
-  constructor() { }
+  data: any;
+  constructor(
+    // private route: ActivatedRoute,
+  ) {
+    // this.data = this.route.snapshot.data;
+
+  }
 
   ngOnInit() {
   }

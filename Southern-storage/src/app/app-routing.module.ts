@@ -21,54 +21,78 @@ import { LoginComponent } from './login/login.component';
 import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { AuthGuard } from './auth.gurad';
+import { AppResolver } from './resolver/app.resolver';
+import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
+import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
+import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent  },
   { path: 'location/rocky-creek',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent },
+      { path: 'storageUnits', component: StorageUnitComponent,
+      children: [
+        { path: '', component: ViewRatesPageComponent },
+        { path: 'reserve', component: ReserveUnitFormComponent },
+        { path: 'move-in', component: ReserveUnitFormComponent },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+      ] },
       { path: 'unitSizer', component: UnitSizerComponent },
       { path: 'reserveUnit', component: ReserveUnitComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
-    ]
+    ],
+    resolve: { data: AppResolver }
   },
   { path: 'location/agricola',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
+      { path: 'storageUnits', component: StorageUnitComponent,
+      children: [
+        { path: '', component: ViewRatesPageComponent },
+        { path: 'reserve', component: ReserveUnitFormComponent },
+        { path: 'move-in', component: ReserveUnitFormComponent },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+      ] },
+      { path: 'unitSizer', component: UnitSizerComponent},
       { path: 'reserveUnit', component: ReserveUnitComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
-    ]
+    ],
+    resolve: { data: AppResolver }
   },
   { path: 'location/barton',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent },
+      { path: 'storageUnits', component: StorageUnitComponent,
+      children: [
+        { path: '', component: ViewRatesPageComponent },
+        { path: 'reserve', component: ReserveUnitFormComponent },
+        { path: 'move-in', component: ReserveUnitFormComponent },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+      ] },
       { path: 'unitSizer', component: UnitSizerComponent },
       { path: 'reserveUnit', component: ReserveUnitComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
-    ]
+    ],
+    resolve: { data: AppResolver }
   },
-
   { path: 'pay-rent',
     component: PaymentComponent,
-    // children: [
-    //   {path: '', redirectTo: 'agricola' , pathMatch: 'full' },
-    //   { path: 'rocky-creek', component: RentSubComponent },
-    //   { path: 'agricola', component: RentSubComponent },
-    //   { path: 'barton', component: RentSubComponent },
-    // ]
   },
   { path: 'review/agricola', component: HomeComponent,
     resolve: {
@@ -97,28 +121,28 @@ const routes: Routes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'pay-rent-agricola', component: PayRentAgricolaComponent,
-  children: [
-    {path: '', redirectTo: 'login', pathMatch: 'full'},
-    {path: 'login', component: LoginComponent },
-    {path: 'forgotPassword', component: ForgotPasswordComponent },
-    {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
-  ]
+    children: [
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent },
+      {path: 'forgotPassword', component: ForgotPasswordComponent },
+      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
+    ]
   },
   { path: 'pay-rent-rocky-creek', component: PayRentRockyCreekComponent,
-  children: [
-    {path: '', redirectTo: 'login', pathMatch: 'full'},
-    {path: 'login', component: LoginComponent },
-    {path: 'forgotPassword', component: ForgotPasswordComponent },
-    {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
-  ]
+    children: [
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent },
+      {path: 'forgotPassword', component: ForgotPasswordComponent },
+      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
+    ]
   },
   { path: 'pay-rent-barton', component: PayRentBartonComponent,
-  children: [
-    {path: '', redirectTo: 'login', pathMatch: 'full'},
-    {path: 'login', component: LoginComponent },
-    {path: 'forgotPassword', component: ForgotPasswordComponent },
-    {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
-  ]
+    children: [
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent },
+      {path: 'forgotPassword', component: ForgotPasswordComponent },
+      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
+    ]
   },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },
@@ -126,6 +150,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [AppResolver]
 })
 export class AppRoutingModule { }

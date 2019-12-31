@@ -122,8 +122,9 @@ public fetchOption() {
   this.stateString = this.options[this.index].description;
 }
 
-public navigateToPrevious(location: any) {
-  this.router.navigate([location]);
+public navigateToPrevious() {
+  console.log('confirmation page working', this.dataSharingService.navigateToPrevious);
+  this.router.navigate([this.dataSharingService.navigateToPrevious]);
 }
 
 

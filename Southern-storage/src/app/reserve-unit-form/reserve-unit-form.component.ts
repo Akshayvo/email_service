@@ -185,12 +185,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       };
     }
 
-      if ((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve-unit')) {
+      if (this.router.url.includes('/reserve-unit')) {
         this.navigateToReserve = true;
         this.dataSharingService.navigateToReserve = true;
         this.dataSharingService.navigateToMoveIn = false;
       } else {
-        if (this.router.url ===  '/view-rates/move-in' ) {
+        if (this.router.url.includes('/move-in') ) {
           this.navigateToMoveIn = true;
           this.dataSharingService.navigateToMoveIn = true;
           this.dataSharingService.navigateToReserve = false;
@@ -261,7 +261,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
      return;
     } else {
     }
-    this.router.navigate([location]);
+    const navTo = this.dataSharingService.navigationTo;
+    this.dataSharingService.navigateToPrevious = this.router.url;
+    this.router.navigate([`${navTo}/${location}`]);
+  }
+
+  public navigateToPrevious() {
+    this.router.navigate([this.dataSharingService.navigateToPrevious]);
   }
 
   selectionChanged(event: any) {

@@ -5,10 +5,19 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
+  navigationTo: string;
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
   isValueUpdated: boolean;
+  navigateToPrevious: string;
 
+  locationAPIKey = {
+    loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    loc3: 'YzI+OEs0ejZqNUg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  };
+
+  apiKey = '';
 
   MoveInData = {
     Description: '',
@@ -84,6 +93,9 @@ constructor() {
     return this.LstUnitTypes;
   }
 
+  getAPIKey() {
+    return this.apiKey;
+  }
 
   setReservationData(value: any) {
     this.ReservationData.Description  = value.Description;

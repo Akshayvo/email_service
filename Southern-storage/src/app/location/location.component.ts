@@ -1,11 +1,12 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { contactsRockyCreek, hoursRockyCreek,
          contactsAgricola, hoursAgricola,
          contactsBarton, hoursBarton, socialLinks } from '../data/contact';
 import { tabs, tabsBarton } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
+import { DataSharingService } from '../services/data-sharing.service';
 
 
 @Component({
@@ -23,13 +24,20 @@ export class LocationComponent implements OnInit {
   head: any;
   tabs: any;
   socialLinks: any;
+  data: any;
+  location: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
     private meta: Meta,
+    private route: ActivatedRoute,
+    private dataSharingService: DataSharingService,
+
     ) {
+      this.location = this.router.url;
+      console.log('navigation url', this.router.url, this.location);
       if (this.router.url.includes('/location/rocky-creek')) {
           this.meta.addTag({
             name: 'description',
@@ -37,6 +45,7 @@ export class LocationComponent implements OnInit {
                       Storage at Rocky Creek offers units from 5' x 10' to 10' x 15'! Call or reserve today!`
           });
           this.titleService.setTitle('Self Storage Units Near Rocky Creek | Southern Storage');
+          this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       } else if (this.router.url.includes('/location/agricola')) {
           this.meta.addTag({
             name: 'description',
@@ -44,19 +53,24 @@ export class LocationComponent implements OnInit {
                       controlled storage units perfect for your needs! Reserve online or call today!`
           });
           this.titleService.setTitle('Affordable Storage Units in Agricola | Southern Storage');
-      } else {
+          this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+      } else if (this.router.url.includes('/location/barton')) {
           this.meta.addTag({
             name: 'description',
             content: `Southern Storage now offers a fully fenced self storage facility in Lucedale,
                       MS! Free online bill pay and the same stellar customer service!`
           });
           this.titleService.setTitle('Convenient Storage Units Near Lucedale, MS | Southern Storage');
+          this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       }
     }
 
   ngOnInit() {
     window.scrollTo(0, 0);
     this.isSomePage();
+        this.data = this.route.snapshot.data;
+        console.log('location is', this.router.url );
+
   }
 
   public isSomePage() {
