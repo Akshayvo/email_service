@@ -192,7 +192,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
     if (this.router.url ===  '/pay-rent/payment' ) {
       this.navigateToMoveInPayment = true;
-    }  }
+    }  
+  }
 
   ngOnInit() {
     this.getPayMethods();
@@ -208,6 +209,14 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   public fetchMonth() {
     this.month = month;
+  }
+
+  disabledRadio() {
+    if (this.balance === 0) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
    getCardType(number: any) {
@@ -245,8 +254,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
-    console.log('index from select change', this.lstPayTypes, indexValue, index);
-
     this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.payRentForm.patchValue({
@@ -300,7 +307,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   getTenantInfo() {
   this.getTenantInfoSubscribe$ =  this.tenantInfoService.getTenantInfo()
       .subscribe(tenantData => {
-        console.log('pay rent form not getting fiilled 1');
         if (tenantData) {
           const { Tenant } = tenantData;
           this.balance = Tenant.Balance;
@@ -330,11 +336,13 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             this.displayBalance = this.balance;
           }
 
-          this.defaultCardType =  this.getCardType(Tenant.CCNumber);
+            // tslint:disable-next-line: max-line-length
+            this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[1].PayTypeDescription);
 
-          const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
+            const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
 
-          const defaultCardPayTypeId =  this.lstPayTypes[index].PayTypeID;
+             // tslint:disable-next-line: max-line-length
+             const defaultCardPayTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
 
 
 
@@ -366,7 +374,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               PaymentAmount: (this.navigateToMoveInPayment ? this.balance : (this.navigateToReserve ? this.TotalReserveAmount : this.totalMoveInAmount)),
             }
           });
-          console.log('pay rent form not getting fiilled 3');
           this.showLoader = false;
           this.getSurCharge();
         }
@@ -479,9 +486,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   signOut(logOut: any) {
+    this.showLoader = true;
    this.signOutSubscribe$ = this.signOutService.signOut(logOut)
       .subscribe(result => {
         localStorage.removeItem('strTenantToken');
+        this.showLoader = false;
         this.router.navigate(['/pay-rent/login']);
       }, (err) => {
       }

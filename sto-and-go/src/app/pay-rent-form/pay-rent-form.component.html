@@ -13,7 +13,7 @@
         <div>
         <div class="py-3 d-flex align-items-center">
           <a (click)="navigate('/')">Go to Home</a>
-          <button *ngIf="tenantTokenExist" (click)="signOut(logOut)" class="btn btn-primary ml-3">LogOff</button>
+          <button type="button" *ngIf="tenantTokenExist" (click)="signOut(logOut)" class="btn btn-primary ml-3">LogOff</button>
         </div>
       </div>
     </div>
@@ -76,11 +76,12 @@
                       <label>Amount*</label>
                       <div>
                         <label>&nbsp;
-                          <input type="radio" [value]="balance" id="1" (change)="handleChange($event)" formControlName="PaymentAmount"  [checked]="balance != null">
+                          <input type="radio" [value]="balance" id="1" (change)="handleChange($event)"
+                           formControlName="PaymentAmount" [checked]="balance !== null || balance !== 0" [disabled]="disabledRadio()">
                           <span class="loader" *ngIf="balance == null"></span>
                           <!-- *ngIf="balance == null" -->
                           <span>Balance Due</span> &nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance}}) </span>
-                          <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance}}</ng-template>
+                          <ng-template #other ><span  *ngIf="balance >= 0"  >$</span>{{displayBalance}}</ng-template>
                         </label><br/>
           
                         <label>&nbsp;
@@ -88,7 +89,7 @@
                             <span>Other Amount</span>
                         </label>
                         &nbsp;
-                        <span *ngIf="showInput == true">
+                        <span *ngIf="showInput == true || balance == 0">
                           <input type="number" formControlName="PaymentAmount" [value]="otherValue" (keyup)="onKeyUp($event)">
                         </span>
                       </div>
@@ -298,7 +299,8 @@
           <button type="submit" *ngIf="navigateToMoveIn" 
           class="btn btn-primary col-lg-3 col-sm-12">Pay and Complete Move-In</button>
           <button type="submit" *ngIf="navigateToReserve" class="btn btn-primary col-lg-3 col-sm-12">Make a Payment</button>
-          <button *ngIf="tenantTokenExist" [disabled]="showLoader"  (click)="signOut(logOut)" class="btn btn-primary col-lg-3 col-sm-12 ml-lg-4 ml-sm-0 mt-lg-0 mt-sm-2 mt-2">LogOff</button>
+          <button type="button" *ngIf="tenantTokenExist" [disabled]="showLoader"  (click)="signOut(logOut)" 
+          class="btn btn-primary col-lg-3 col-sm-12 ml-lg-4 ml-sm-0 mt-lg-0 mt-sm-2 mt-2">LogOff</button>
         </div>
   
     </form>
