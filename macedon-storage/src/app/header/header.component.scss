@@ -79,6 +79,12 @@ a {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .navbar-nav {
     align-items: center;
@@ -89,6 +95,12 @@ a {
   }
   .nav-link {
     padding: 20px;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    align-content: center;
+    left: -18px;
   }
 }
 
