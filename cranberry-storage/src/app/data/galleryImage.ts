@@ -1,9 +1,9 @@
 export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-storage-end-units.jpg`,
+    url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-storage-units-corner-units-wide-angle.jpg`,
     // tslint:disable-next-line:max-line-length
-    thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-storage-end-units-thumb.jpg`,
+    thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-storage-units-corner-units-wide-angle-thumb.jpg`,
     alt: `A self storage unit building with doors closed under a cloudy sky`
   },
   {
@@ -22,9 +22,9 @@ export const galleryHome = [
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-self-storage-accessible.jpg`,
+    url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-self-storage-accessible-unit.jpg`,
     // tslint:disable-next-line:max-line-length
-    thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-self-storage-accessible-thumb.jpg`,
+    thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-self-storage-accessible-unit-thumb.jpg`,
     alt: `Close up photograph of a self storage unit with a wheelchair accessible sign mounted on the unit`
   },
   {
@@ -40,5 +40,20 @@ export const galleryHome = [
     // tslint:disable-next-line:max-line-length
     thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-self-storage-locks-thumb.jpg`,
     alt: `Photograph of a self storage unit with a padlocked keeping the unit secure`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-storage-units-straight-on.jpg`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-storage-units-straight-on-thumb.jpg`,
+    alt: `photograph of two closed self storage unit doors side by side under a cloudy sky`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-storage-corner-unit-handicapped.jpg`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Cranberry_Storage/cranberry-storage-corner-unit-handicapped-thumb.jpg`,
+    alt: `photograph of the corner of a self storage unit building with bright yellow bollards
+          and a handicap accessible unit sign`
   },
 ];

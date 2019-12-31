@@ -83,27 +83,6 @@
             <div class="col-lg-5 p-4 contact-page">
                 <div class="map-responsive">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3699.2918303911583!2d-79.71393681283759!3d41.34928701938698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95aa711f9d7d577c!2sCranberry%20Storage%20LLC!5e0!3m2!1sen!2sus!4v1574196734029!5m2!1sen!2sus" width="100%"  frameborder="0"  allowfullscreen></iframe>
-<<<<<<< HEAD
-              </div>
-              <div class="row">
-                    <div class="col-lg-8">    
-              <div class="contact-details pt-lg-4 pt-md-4 pt-sm-2">
-                <h2 class="py-1">Cranberry Storage</h2>
-                
-                <span class="font-xs-device mb-1" class="contact-links" *ngFor="let contact of contactInfo">
-                    <b>{{contact.label}}</b><span  *ngIf="contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
-                    <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
-                    <div [innerHTML]="contact.altrenateContact"></div>
-                </span>
-            </div>
-        
-                
-                <!-- <h3 class="pb-1"><strong></strong></h3> -->
-                <div class="font-xs-device mb-1" *ngFor="let hour of hours">
-                <b >{{hour.heading}}<br></b>
-                  <b >{{hour.label}}</b> {{hour.data}}<br>
-=======
->>>>>>> c83a10bac4db6c97e8d1d5facb56f04c324cb42c
                 </div>
                 <div class="row">
                     <div class="col-lg-8">    
@@ -112,7 +91,7 @@
                             <span class="font-xs-device mb-1" *ngFor="let contact of contactInfo">
                                 <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
-                                <div [innerHTML]="contact.altrenateContact"></div>
+                                <div class="alternate" [innerHTML]="contact.altrenateContact"></div>
                             </span>
                         </div>
                             <!-- <h3 class="pb-1"><strong></strong></h3> -->
