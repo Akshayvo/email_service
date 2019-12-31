@@ -76,7 +76,7 @@
                       <label>Amount*</label>
                       <div>
                         <label>&nbsp;
-                          <input type="radio" [value]="balance" id="1" (change)="handleChange($event)" formControlName="PaymentAmount"  [checked]="balance != null">
+                          <input type="radio" [value]="balance" id="1" (change)="handleChange($event)" formControlName="PaymentAmount"  [checked]="balance != null || balance !== 0">
                           <span class="loader" *ngIf="balance == null"></span>
                           <!-- *ngIf="balance == null" -->
                           <span>Balance Due</span> &nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance}}) </span>
@@ -88,7 +88,7 @@
                             <span>Other Amount</span>
                         </label>
                         &nbsp;
-                        <span *ngIf="showInput == true">
+                        <span *ngIf="showInput == true || balance == 0">
                           <input type="number" formControlName="PaymentAmount" [value]="otherValue" (keyup)="onKeyUp($event)">
                         </span>
                       </div>

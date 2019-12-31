@@ -324,10 +324,15 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             this.displayBalance = this.balance;
           }
 
-         this.defaultCardType =  this.getCardType(Tenant.CCNumber);
+            // tslint:disable-next-line: max-line-length
+            this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[1].PayTypeDescription);
 
-          const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
-          const defaultCardPayTypeId =  this.lstPayTypes[index].PayTypeID;
+            const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
+
+             // tslint:disable-next-line: max-line-length
+             const defaultCardPayTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
+
+
 
           if (localStorage.getItem('strTenantToken')) {
             this.paytypeid =  defaultCardPayTypeId;
