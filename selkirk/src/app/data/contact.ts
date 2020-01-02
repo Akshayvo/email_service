@@ -14,8 +14,8 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        redirect: 'mailto:info@selkirkselfstorage.com',
-        data: 'info@selkirkselfstorage.com',
+        redirect: 'mailto:selkirkstorage@gmail.com',
+        data: 'selkirkstorage@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
