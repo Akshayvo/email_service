@@ -4,6 +4,7 @@ import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
+import { DataSharingService } from '../services/data-sharing.service';
 
 @Injectable()
 
@@ -32,6 +33,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   tenantInfo: TenantInfo;
   tenant: any;
   balance: number;
+  navTo: any;
 
   private authUnsubscribe$: Subscription;
 
@@ -40,6 +42,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     private formBuilder: FormBuilder,
     private authService: AuthService,
     public router: Router,
+    private  dataSharingService: DataSharingService,
   ) {
 
 
@@ -51,10 +54,12 @@ export class LoginComponent implements OnInit, OnDestroy {
       strPassword: ['', Validators.required],
       intAuthMethod: 1
     });
+     this.navTo = this.dataSharingService.paymentNavigation;
+     console.log('paymentNavigation from login page', this.dataSharingService.paymentNavigation );
     if (window.localStorage) {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
-        this.router.navigate(['/pay-rent/payment']);
+        this.router.navigate([`${this.navTo}/payment`]);
        }
     }
   }
@@ -82,7 +87,7 @@ export class LoginComponent implements OnInit, OnDestroy {
           this.showPayRent = true;
           this.authData = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
-          this.router.navigate(['/pay-rent/payment']);
+          this.router.navigate([`${this.navTo}/payment`]);
         }, (err) => {
           this.credentialsInvalid = true;
           this.showLoader = false;

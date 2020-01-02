@@ -98,6 +98,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   };
   navigateToMoveInPayment: boolean;
   tenantTokenExist = false;
+  navTo: any;
 
   private OptionOutOfAutoPaySubscribe$: Subscription;
   private signUpAutoPaySubscribe$: Subscription;
@@ -121,6 +122,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     private moveInService: MoveInService,
 
   ) {
+    this.navTo = this.dataSharingService.paymentNavigation;
     this.payRentForm = this.formBuilder.group({
       objPayment: this.formBuilder.group({
         CCAccountNumber: ['', Validators.required],
@@ -179,7 +181,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           }
         });
       } else {
-        if (this.router.url ===  '/pay-rent/payment' ) {
+        if (this.router.url.includes('/payment') ) {
           this.navigateToMoveIn = false;
           this.navigateToReserve = false;
         }
@@ -189,9 +191,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-    if (this.router.url ===  '/pay-rent/payment' ) {
-      this.navigateToMoveInPayment = true;
-    }  }
+    // if (this.router.url ===  '/pay-rent/payment' ) {
+    //   this.navigateToMoveInPayment = true;
+    // }
+  }
 
   ngOnInit() {
     this.getPayMethods();
@@ -363,7 +366,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       , (err: any) => {
         if (err.status === 401) {
           localStorage.removeItem('strTenantToken');
-          this.router.navigate(['/pay-rent/login']);
+          this.router.navigate([`${this.navTo}/login`]);
           this.sessionExpire = 'Session Expired. Please Login for completing the payment.';
         }
       });
@@ -471,7 +474,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
    this.signOutSubscribe$ = this.signOutService.signOut(logOut)
       .subscribe(result => {
         localStorage.removeItem('strTenantToken');
-        this.router.navigate(['/pay-rent/login']);
+        this.router.navigate([`${this.navTo}/login`]);
       }, (err) => {
       }
     );

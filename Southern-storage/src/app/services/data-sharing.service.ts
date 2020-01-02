@@ -10,6 +10,10 @@ export class DataSharingService {
   navigateToMoveIn: boolean;
   isValueUpdated: boolean;
   navigateToPrevious: string;
+  paymentNavigation: string;
+
+  console.log('paymentNavigation from servioce', this.paymentNavigation );
+  
 
   locationAPIKey = {
     loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',

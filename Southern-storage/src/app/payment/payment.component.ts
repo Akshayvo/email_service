@@ -27,8 +27,8 @@ export class PaymentComponent implements OnInit {
       path: './barton'
     }
   ];
+  strTenantToken: string;
   private sub: any;
-
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -46,6 +46,7 @@ export class PaymentComponent implements OnInit {
 
   ngOnInit() {
     this.sub = this.route.queryParams.subscribe(params => {
+
     });
     window.scrollTo(0, 0);
   }

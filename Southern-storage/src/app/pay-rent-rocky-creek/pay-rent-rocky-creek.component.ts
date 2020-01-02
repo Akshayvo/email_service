@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
   selector: 'app-pay-rent-rocky-creek',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PayRentRockyCreekComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private dataSharingService: DataSharingService,
+  ) { }
 
   ngOnInit() {
+    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
+    this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[0].path;
+    
   }
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import {  ActivatedRoute } from '@angular/router';
+import { DataSharingService } from '../services/data-sharing.service';
 
 
 @Component({
@@ -9,15 +10,16 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class PayRentAgricolaComponent implements OnInit {
 
-  data: any;
   constructor(
-    // private route: ActivatedRoute,
-  ) {
-    // this.data = this.route.snapshot.data;
+    private activatedRoute: ActivatedRoute,
+    private dataSharingService: DataSharingService,
 
+  ) {
   }
 
   ngOnInit() {
+    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+    this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[0].path;
   }
 
 }

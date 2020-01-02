@@ -81,6 +81,7 @@ unitData = {
 
 
 period: string;
+navTo: any;
 
 
 private  addTenantSubscribe$: Subscription;
@@ -146,6 +147,8 @@ ngOnInit() {
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
   console.log('monthly rate is', this.monthlyRate);
+  this.navTo = this.dataSharingService.navigationTo;
+
 }
 
   addTenant(data: any): void {
@@ -155,14 +158,14 @@ ngOnInit() {
 
         if (this.navigateToMoveIn ) {
           if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
-            this.router.navigate(['/view-rates/payMoveInCharges']);
+            this.router.navigate([`${this.navTo}/payMoveInCharges`]);
           } else {
             this.moveIn(this.MoveIn);
           }
         } else {
           if (this.navigateToReserve) {
             if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
-              this.router.navigate(['/view-rates/payReservationCharges']);
+              this.router.navigate([`${this.navTo}/payReservationCharges`]);
             } else {
               this.makeAReservation(this.MoveIn);
             }
@@ -176,14 +179,14 @@ ngOnInit() {
         .subscribe(result => {
           if (this.navigateToMoveIn ) {
             if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
-              this.router.navigate(['/view-rates/payMoveInCharges']);
+              this.router.navigate([`${this.navTo}/payMoveInCharges`]);
             } else {
               this.moveIn(this.MoveIn);
             }
           } else {
             if (this.navigateToReserve) {
               if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
-                this.router.navigate(['/view-rates/payReservationCharges']);
+                this.router.navigate([`${this.navTo}/payReservationCharges`]);
               } else {
                 this.makeAReservation(this.MoveIn);
               }
@@ -283,13 +286,13 @@ ngOnInit() {
           if (!this.isValueUpdated) {
             if (this.navigateToMoveIn === true) {
               if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
-                this.router.navigate(['/view-rates/payMoveInCharges']);
+                this.router.navigate([`${this.navTo}/payMoveInCharges`]);
               } else {
                 this.moveIn(this.MoveIn);
               }
             } else {
               if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
-                this.router.navigate(['/view-rates/payReservationCharges']);
+                this.router.navigate([`${this.navTo}/payReservationCharges`]);
                } else {
                  this.makeAReservation(this.MoveIn);
                }
@@ -308,13 +311,13 @@ ngOnInit() {
             if (!this.isValueUpdated) {
               if (this.navigateToMoveIn === true) {
                 if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
-                  this.router.navigate(['/view-rates/payMoveInCharges']);
+                  this.router.navigate([`${this.navTo}/payMoveInCharges`]);
                 } else {
                   this.moveIn(this.MoveIn);
                 }
               } else {
                 if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
-                  this.router.navigate(['/view-rates/payReservationCharges']);
+                  this.router.navigate([`${this.navTo}/payReservationCharges`]);
                  } else {
                    this.makeAReservation(this.MoveIn);
                  }
