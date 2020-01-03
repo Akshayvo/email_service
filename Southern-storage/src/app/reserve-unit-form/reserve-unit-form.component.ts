@@ -3,7 +3,7 @@ import { FormGroup, FormBuilder, Validators, FormArray, AbstractControl, Validat
 import { FetchDataService } from '../services/fetch-data.service';
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { option } from '../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
@@ -142,6 +142,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     private leadDaysService: LeadDaysService,
     private moveInService: MoveInService,
     public router: Router,
+    private activatedRoute: ActivatedRoute,
     ) {
     this.reserveUnitForm = this.formBuilder.group({
       objTenant: this.formBuilder.group({
@@ -229,11 +230,16 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.gettingTenantData = true;
       }
     }
+
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
         Description: this.Description,
       }])
     });
+
+    if (this.activatedRoute.snapshot.url[1].path === 'agricola') {
+      console.log('yes its ', this.activatedRoute.snapshot.url[1].path);
+    }
   }
     public fetchUSState() {
     this.option = option;

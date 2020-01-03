@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://southernstoragems.com/sitemap.xml
+Sitemap: http://southernstorage-staging.syrasoft.com/sitemap.xml
 User-agent: *
 Disallow:

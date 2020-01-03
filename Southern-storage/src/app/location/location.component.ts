@@ -89,11 +89,11 @@ export class LocationComponent implements OnInit {
 
   public navigateToPayment() {
     if ( this.id === 0 ) {
-      this.router.navigate(['/pay-rent-rocky-creek']);
+      this.router.navigate(['/pay-rent/rocky-creek']);
     } else if ( this.id === 1 ) {
-      this.router.navigate(['/pay-rent-agricola']);
+      this.router.navigate(['/pay-rent/agricola']);
     } else if ( this.id === 2) {
-      this.router.navigate(['/pay-rent-barton']);
+      this.router.navigate(['/pay-rent/barton']);
     }
    }
 

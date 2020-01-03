@@ -6,8 +6,7 @@ import { contactsRockyCreek, hoursRockyCreek,
          contactsAgricola, hoursAgricola,
          contactsBarton, hoursBarton } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
-import {  SelectLocationComponent } from '../select-location/select-location.component';
-import { AppResolver } from '../resolver/app.resolver';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

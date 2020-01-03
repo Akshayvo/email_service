@@ -122,7 +122,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     private moveInService: MoveInService,
 
   ) {
-    this.navTo = this.dataSharingService.paymentNavigation;
     this.payRentForm = this.formBuilder.group({
       objPayment: this.formBuilder.group({
         CCAccountNumber: ['', Validators.required],
@@ -366,7 +365,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       , (err: any) => {
         if (err.status === 401) {
           localStorage.removeItem('strTenantToken');
-          this.router.navigate([`${this.navTo}/login`]);
+          const navTo = localStorage.getItem('paymentNavigationUrl');
+          this.router.navigate([`${navTo}/login`]);
           this.sessionExpire = 'Session Expired. Please Login for completing the payment.';
         }
       });
@@ -473,8 +473,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   signOut(logOut: any) {
    this.signOutSubscribe$ = this.signOutService.signOut(logOut)
       .subscribe(result => {
+        this.router.navigate([`pay-rent`]);
+        localStorage.removeItem('paymentNavigationUrl');
         localStorage.removeItem('strTenantToken');
-        this.router.navigate([`${this.navTo}/login`]);
       }, (err) => {
       }
     );

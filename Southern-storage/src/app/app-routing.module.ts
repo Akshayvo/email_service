@@ -120,7 +120,7 @@ const routes: Routes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'pay-rent-agricola', component: PayRentAgricolaComponent,
+  { path: 'pay-rent/agricola', component: PayRentAgricolaComponent,
     children: [
       {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'login', component: LoginComponent },
@@ -128,7 +128,7 @@ const routes: Routes = [
       {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
     ]
   },
-  { path: 'pay-rent-rocky-creek', component: PayRentRockyCreekComponent,
+  { path: 'pay-rent/rocky-creek', component: PayRentRockyCreekComponent,
     children: [
       {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'login', component: LoginComponent },
@@ -136,7 +136,7 @@ const routes: Routes = [
       {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
     ]
   },
-  { path: 'pay-rent-barton', component: PayRentBartonComponent,
+  { path: 'pay-rent/barton', component: PayRentBartonComponent,
     children: [
       {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'login', component: LoginComponent },

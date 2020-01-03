@@ -12,13 +12,13 @@ export class DataSharingService {
   navigateToPrevious: string;
   paymentNavigation: string;
 
-  console.log('paymentNavigation from servioce', this.paymentNavigation );
-  
-
   locationAPIKey = {
-    loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-    loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-    loc3: 'YzI+OEs0ejZqNUg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    loc1: 'dzJ0OFc4SjYqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    loc2: 'dzJ0OVcwSjcqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    loc3: 'dzJ0OVcwSjkqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    // loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    // loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    // loc3: 'YzI+OEs0ejZqNUg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   };
 
   apiKey = '';

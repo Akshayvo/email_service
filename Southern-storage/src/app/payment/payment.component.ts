@@ -2,6 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WINDOW } from '@ng-toolkit/universal';
+import { DataSharingService } from '../services/data-sharing.service';
 
 
 @Component({
@@ -34,7 +35,9 @@ export class PaymentComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private route: ActivatedRoute,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    public router: Router,
+    private  dataSharingService: DataSharingService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -49,5 +52,13 @@ export class PaymentComponent implements OnInit {
 
     });
     window.scrollTo(0, 0);
+
+    if (!!(localStorage.getItem('strTenantToken'))) {
+      console.log('payment navigation from payment', this.dataSharingService.paymentNavigation);
+      const navTo = localStorage.getItem('paymentNavigationUrl');
+      if (!!navTo) {
+        this.router.navigate([`/pay-rent/${navTo}/payment`]);
+      }
+    }
   }
 }

@@ -19,7 +19,8 @@ export class PayRentAgricolaComponent implements OnInit {
 
   ngOnInit() {
     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
-    this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[0].path;
+    this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[1].path;
+    localStorage.setItem('paymentNavigationUrl', this.dataSharingService.paymentNavigation) ;
   }
 
 }

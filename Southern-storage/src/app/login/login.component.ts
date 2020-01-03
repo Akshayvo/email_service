@@ -54,12 +54,13 @@ export class LoginComponent implements OnInit, OnDestroy {
       strPassword: ['', Validators.required],
       intAuthMethod: 1
     });
-     this.navTo = this.dataSharingService.paymentNavigation;
-     console.log('paymentNavigation from login page', this.dataSharingService.paymentNavigation );
+    //  this.navTo = this.dataSharingService.paymentNavigation;
+    this.navTo = localStorage.getItem('paymentNavigationUrl');
+
     if (window.localStorage) {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
-        this.router.navigate([`${this.navTo}/payment`]);
+        this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
        }
     }
   }
@@ -87,7 +88,7 @@ export class LoginComponent implements OnInit, OnDestroy {
           this.showPayRent = true;
           this.authData = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
-          this.router.navigate([`${this.navTo}/payment`]);
+          this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
         }, (err) => {
           this.credentialsInvalid = true;
           this.showLoader = false;
