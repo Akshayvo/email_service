@@ -30,3 +30,15 @@
   from = "/*"
   to = "/index.html"
   status = 200
+[[headers]]
+  for = "*.js" # js files should be set this way
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "*.css" # css files too
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "*.jpg" # jpg format too
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

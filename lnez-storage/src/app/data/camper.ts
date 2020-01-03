@@ -1,45 +1,45 @@
 export const wildwood = [
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-1.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-1-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-2.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-2-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-3.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-3-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-4.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-4-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-5.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-5-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-6.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-6-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-7.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-7-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-8.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-8-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-9.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-9-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-10.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-10-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-11.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-11-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-12.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-12-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-13.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-13-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-14.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2018-wildwood-rv-14-thumb.jpg',
     },
 ];
 
@@ -63,7 +63,7 @@ export const wildwoodLeftColumn = [
         p: `Pre-paid cleaning fee $75`,
     },
     {
-        p: `Delivery within 50 miles $90 (includes set up and picking up) This would include Brackenridge,
+        p: `Delivery within 50 miles $125 (includes set up and picking up) This would include Brackenridge,
             Texana Park, and Coleto Creek Park. (have your reservation ready before renting camper)`,
     },
     {
@@ -113,40 +113,40 @@ export const wildwoodRightColumn = [
 
 export const primeTime = [
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-1.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-1-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-2.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-2-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-3.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-3-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-4.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-4-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-5.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-5-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-6.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-6-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-7.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-7-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-8.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-8-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-9.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-9-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-10.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-10-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-11.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-11-thumb.jpg',
     },
     {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-12.jpg',
+        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/2019-prime-time-tracer-12-thumb.jpg',
     },
 ];
 
@@ -170,7 +170,7 @@ export const primeTimeLeftColumn = [
         p: `Pre-paid cleaning fee $75`,
     },
     {
-        p: `Delivery within 50 miles $90 (includes set up and picking up) This would include Brackenridge,
+        p: `Delivery within 50 miles $125 (includes set up and picking up) This would include Brackenridge,
             Texana Park, and Coleto Creek Park. (have your reservation ready before renting camper)`,
     },
     {

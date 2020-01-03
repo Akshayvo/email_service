@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { galleryDataLocation1, galleryDataLocation3,
-        galleryImagesLocation1,galleryImagesLocation3 } from '../data/galleryImage';
+        galleryImagesLocation1, galleryImagesLocation3 } from '../data/galleryImage';
 import { Router } from '@angular/router';
 
 @Component({
@@ -26,7 +26,7 @@ export class PhotosComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/inez-storage')) {
       this.fetchDetailsLocation1();
-  }else  if (this.router.url.includes('/location/beck-road-storage'))  {
+  } else  if (this.router.url.includes('/location/beck-road-storage'))  {
     this.fetchDetailsLocation3();
   }
   }
