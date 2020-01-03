@@ -5,19 +5,18 @@ export const contact = [
         data: '3917 114th St, Lubbock, TX 79424',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
-    
     {
         id: 1,
         redirect: 'mailto:info@opselfstorage.com',
         label: 'Email:',
-        data: 'info@opselfstorage.com',  
+        data: 'info@opselfstorage.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
         id: 2,
-        redirect: 'tel:5555555555',
+        redirect: 'tel:8063683315',
         label: 'Phone:',
-        data: '(555) 555-5555',
+        data: '806-368-3315',
         class: 'fas fa-phone mr-2 iconColor',
     }
 ];
@@ -42,5 +41,4 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    
 ];
