@@ -24,16 +24,23 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Thank you for taking the time to check out Inez Storage! We are blessed to be the owners & operators of 2 conveniently located storage facilities in Inez. Our first location is right off of HWY 59 on Garcitas Creek Rd, and our second location is [Need Exact Street Address].`,
+        p: `Thank you for taking the time to check out Inez Storage! We are blessed to be the owners & operators of 2
+            conveniently located storage facilities in Inez. Our first location is right off of HWY 59 on Garcitas 
+            Creek Rd, and our second location is 96 Beck Rd E, Inez, TX 77968.`,
     },
     {
-        p: `We started this journey in March of 2013, and have expanded our facility 3 times to accommodate the self storage needs of our friends and neighbors! Customer Service is our top priority. That's why when you call Inez Storage, you'll always find a friendly voice eager to provide stellar service at affordable rates. `,
+        p: `We started this journey in March of 2013, and have expanded our facility 3 times to accommodate the self
+            storage needs of our friends and neighbors! Customer Service is our top priority. That's why when you call
+            Inez Storage, you'll always find a friendly voice eager to provide stellar service at affordable rates. `,
     },
     {
-        p: `Our facilities are fully-fenced with a security-card activated gate, and are covered by security cameras with ample lighting. We always want our customers to feel safe and secure while loading and unloading their vehicles.`,
+        p: `Our facilities are fully-fenced with a security-card activated gate, and are covered by security cameras with
+            ample lighting. We always want our customers to feel safe and secure while loading and unloading their vehicles.`,
     },
     {
-        p: `We appreciate our customers, and we are always available via call or text message at (361) 235-2109.  We look forward to answering any questions you may have, and helping you find the right storage or parking solution for your needs! `,
+        p: `We appreciate our customers, and we are always available via call or text message at (361) 235-2109.  We look
+            forward to answering any questions you may have, and helping you find the right storage or parking solution
+            for your needs! `,
     },
     {
         p: `Lastly, we want you to know that Jesus Loves ya! We thank God for the success He has given us in our venture. `,

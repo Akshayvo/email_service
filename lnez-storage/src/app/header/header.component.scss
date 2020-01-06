@@ -20,9 +20,7 @@ a {
   }
  
 }
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
+
 .navbar-toggler:hover{
   display: block;
 }
@@ -93,6 +91,12 @@ a {
         // text-align: center;
       }
     }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
   }
 }
 
