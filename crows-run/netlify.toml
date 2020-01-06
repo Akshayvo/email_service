@@ -27,6 +27,66 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/self-storage-conway-pa-96232"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/about"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/self-storage-calculator"
+  to = "/unit-sizer"
+  status = 301
+[[redirects]]
+  from = "/terms"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/privacy"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/locations.kml"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/payonline"
+  to = "/pay-rent"
+  status = 301
+[[redirects]]
+  from = "/reviews"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/self-storage/conway-pa-96232/reviews"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/storage-tips/car-storage-we-offer-both-outside-and-inside-car-storage-615a75e5f3faed7c1bf038f86b01193b"
+  to = "/storage-tips"
+  status = 301
+[[redirects]]
+  from = "/storage-tips/choosing-a-storage-facility-or-storage-unit-615a75e5f3faed7c1bf038f86b00a7b0"
+  to = "/storage-tips"
+  status = 301
+[[redirects]]
+  from = "/storage-tips/college-lifestyle-what-to-store-615a75e5f3faed7c1bf038f86b010a05"
+  to = "/storage-tips"
+  status = 301
+[[redirects]]
+  from = "/storage-tips/decluttering-store-or-keep-615a75e5f3faed7c1bf038f86b00ca74"
+  to = "/storage-tips"
+  status = 301
+[[redirects]]
+  from = "/storage-tips/document-storage-overview-615a75e5f3faed7c1bf038f86b00f088"
+  to = "/storage-tips"
+  status = 301 
+[[redirects]]
+  from = "/storage-tips/spring-cleaning-and-storage-615a75e5f3faed7c1bf038f86b00e6d3"
+  to = "/storage-tips"
+  status = 301       
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
