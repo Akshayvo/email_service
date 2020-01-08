@@ -4,7 +4,7 @@
   <div class="container pb-5 my-3 padding-top">
     <h1 class="py-5 text-center">Affordable Storage</h1>
     <div class="row bg-light background-padding">
-      <div class="col-lg-6 col-md-12 px-4 scroll-wrapper pb-lg-0 pb-md-5" [class.col-lg-12]="openComponent">
+      <div class="col-lg-6 col-md-12 px-4  scroll-wrapper pb-lg-0 pb-md-5" [class.col-lg-12]="openComponent">
         <div [class.loader]="!showTable">
         </div>
         <div>
@@ -40,14 +40,20 @@
 
         </div>
       </div>
-      <div class="col-lg-6 col-md-12 px-4" [class.col-lg-12]="openComponent">
-        <h3 class="view-rate-heading">Amenities</h3>
+      <div class="col-lg-6 col-md-12" [class.col-lg-12]="openComponent">
+        <div class="" [class.row]="openComponent">
+          <div class="col-lg-6 col-md-12 mb-4" [class.col-lg-6]="openComponent" >
+            <!-- <h3 class="view-rate-heading">Amenities</h3> -->
 
-        <!-- <img src="{{imageBaseUrl}}/self-storage-view-rates.{{imagetype}}" alt="self-storage-view-rates" class="sectionImage" /> -->
-        <app-photos></app-photos>
-        <p class="view-rate-text text-justify" *ngFor="let viewRates of viewRates">
-          {{viewRates.p}}
-        </p>
+            <!-- <img src="{{imageBaseUrl}}/self-storage-view-rates.{{imagetype}}" alt="self-storage-view-rates" class="sectionImage" /> -->
+            <app-photos></app-photos>
+          </div>
+          <div class="col-lg-6 col-md-12" [class.col-lg-6]="openComponent"  >
+            <p class=" text-justify" *ngFor="let viewRates of viewRates">
+              {{viewRates.p}}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
