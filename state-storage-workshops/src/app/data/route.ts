@@ -22,6 +22,7 @@ import { ChangePasswordComponent } from '../api-bundle/change-password/change-pa
 import { LoginModalComponent } from '../api-bundle/login-modal/login-modal.component';
 import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.component';
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
+import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 
 
  export const apiRoutes = [
@@ -62,8 +63,8 @@ import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-passw
         {path: 'forgotPassword', component: ForgotPasswordComponent },
         {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
         {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-        { path: 'verifyCode', component: VerifyCodeComponent },
-        { path: 'reset', component: ResetPasswordComponent}
+        { path: 'verifyCode', component: VerifyCodeComponent, canActivate: [VerifictionCodeGuard] },
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
       ]
     },
     { path: 'forgot-password', component: ForgotPasswordComponent },

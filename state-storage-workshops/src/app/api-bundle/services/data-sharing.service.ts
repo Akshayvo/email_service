@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
+  verificationCode: string;
+
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
   isValueUpdated: boolean;

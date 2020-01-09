@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, OnDestroy } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnDestroy, ViewChild } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { DataSharingService } from '../services/data-sharing.service';
 import { Router } from '@angular/router';
@@ -6,10 +6,9 @@ import { MoveInService } from '../services/moveIn.service';
 import { MakeAReservationService } from '../services/make-a-reservation.service';
 import { AddTenantService } from '../services/add-tenant.service';
 import { TenantInfoService } from '../services/tenant-info.service';
-import { Subscription } from 'rxjs';
+import { Subscription, Subject } from 'rxjs';
 import { option } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
-
 
 @Component({
   selector: 'app-confirmation-data',
@@ -18,6 +17,7 @@ import { SignOutService } from '../services/sign-out.service';
 })
 
 export class ConfirmationDataComponent implements OnInit, OnDestroy {
+  [x: string]: any;
 
 reserveUnitForm: FormGroup;
 submitted = false;
@@ -81,6 +81,7 @@ unitData = {
 
 
 period: string;
+public destroyed = new Subject<any>();
 
 
 private  addTenantSubscribe$: Subscription;
@@ -88,6 +89,8 @@ private  updateTenantSubscribe$: Subscription;
 private  makeAReservationSubscribe$: Subscription;
 private  getTenantInfoSubscribe$: Subscription;
 private  signOutSubscribe$: Subscription;
+
+
 
 
 constructor(
@@ -99,13 +102,15 @@ constructor(
   private tenantInfoService: TenantInfoService,
   private signOutService: SignOutService,
 ) {
+  this.fetchOption();
+  this.fetchSharedData();
+}
+
+fetchSharedData() {
   this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
   this.navigateToReserve  = this.dataSharingService.navigateToReserve;
   this.tenantData.objTenant = this.dataSharingService.objTenant;
   this.unitData = this.dataSharingService.LstUnitTypes;
-
-  this.fetchOption();
-
   this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
   this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
   this.isValueUpdated = this.dataSharingService.isValueUpdated;
@@ -114,16 +119,20 @@ constructor(
   this.period = this.dataSharingService.period;
 }
 
-
-
 public fetchOption() {
   this.options = option;
    this.index = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.State));
   this.stateString = this.options[this.index].description;
 }
 
-public navigateToPrevious(location: any) {
-  this.router.navigate([location]);
+public navigateToPrevious() {
+  if (this.dataSharingService.navigateToMoveIn) {
+    this.router.navigate(['/view-rates/move-in']);
+  } else {
+    if (this.dataSharingService.navigateToReserve) {
+      this.router.navigate(['/view-rates/reserve']);
+    }
+  }
 }
 
 
@@ -132,6 +141,30 @@ public navigate(location: any) {
 }
 
 ngOnInit() {
+  this.getTenantUnitData();
+
+  // this.router.events.pipe(
+  //   filter((event: RouterEvent) => event instanceof NavigationEnd),
+  //     pairwise(),
+  //     filter((events: RouterEvent[]) => events[0].url === events[1].url),
+  //     startWith('Initial call'),
+  //   takeUntil(this.destroyed)
+  // ).subscribe(() => {
+  //   this.fetchOption();
+  //   this.fetchSharedData();
+  //   this.getTenantUnitData();
+  //   console.log('refresh is working');
+
+  // });
+
+  // this.router.events.subscribe(e => {
+  //   if (e instanceof ActivationStart && e.snapshot.outlet === 'confirmation') {
+  //     this.outlet.deactivate();
+  //   }
+  // });
+}
+
+getTenantUnitData() {
   this.firstName = this.dataSharingService.objTenant.FirstName;
   this.lastName = this.dataSharingService.objTenant.LastName;
   this.phone = this.dataSharingService.objTenant.Phone;
@@ -342,5 +375,7 @@ ngOnInit() {
       if (this.signOutSubscribe$ && this.signOutSubscribe$.closed) {
         this.signOutSubscribe$.unsubscribe();
       }
+      this.destroyed.next();
+      this.destroyed.complete();
     }
 }

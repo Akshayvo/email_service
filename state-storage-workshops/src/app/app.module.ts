@@ -48,6 +48,7 @@ import { ChangePasswordComponent } from './api-bundle/change-password/change-pas
 import { LoginModalComponent } from './api-bundle/login-modal/login-modal.component';
 import { VerifyCodeComponent } from './api-bundle/verify-code/verify-code.component';
 import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
+import { VerifictionCodeGuard } from './auth-guard/verificationCode.guard';
 
 @NgModule({
   declarations: [
@@ -104,6 +105,7 @@ import { ResetPasswordComponent } from './api-bundle/reset-password/reset-passwo
     DatePipe,
     AuthService,
     AuthGuard,
+    VerifictionCodeGuard,
     Title,
     {
       provide: ErrorHandler,

@@ -1,13 +1,11 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild  } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { viewrates } from '../../data/view-rates';
 import { MetaService } from '../../services/link.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { UaParserService } from '../../services/ua-parser.service';
-
 import { Subscription } from 'rxjs';
-
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -15,7 +13,6 @@ import { Subscription } from 'rxjs';
 })
 export class ViewRatesComponent implements OnInit, OnDestroy {
 
-  currentActive: any = 'VIEW RATES';
   viewRates: any;
   showTable = false;
   unitTypes: UnitTypes;
@@ -34,7 +31,6 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private titleService: Title,
     private meta: Meta,
     private metaService: MetaService,
-    // private http: HttpClient,
     private fetchDataService: FetchDataService,
     private uaParserService: UaParserService,
   ) {
