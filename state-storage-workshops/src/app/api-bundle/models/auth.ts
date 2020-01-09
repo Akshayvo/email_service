@@ -35,11 +35,14 @@ export class VerifyCode {
     strEmailID: string;
     strPasswordToken: String;
     intErrorCode: number;
+    blnSuccess: boolean;
 
-    constructor(strEmailID: string, strPasswordToken: String, intErrorCode: number) {
+    constructor(strEmailID: string, strPasswordToken: String, intErrorCode: number,
+      blnSuccess: boolean) {
       this.strEmailID = strEmailID;
       strPasswordToken = strPasswordToken;
       this.intErrorCode = intErrorCode;
+      this.blnSuccess = blnSuccess;
     }
 }
 
@@ -49,6 +52,7 @@ export class ResetPassword {
     strOldPassword: string;
     strNewPassword: string;
     intErrorCode: number;
+    blnSuccess: boolean;
 
     constructor(
       emailID: string,
@@ -56,11 +60,13 @@ export class ResetPassword {
       strOldPassword: string,
       strNewPassword: string,
       intErrorCode: number,
+      blnSuccess: boolean
     ) {
       this.emailID = emailID;
       this.strPasswordToken = strPasswordToken;
       this.strOldPassword = strOldPassword;
       this.strNewPassword = strNewPassword;
       this.intErrorCode = intErrorCode;
+      this.blnSuccess = blnSuccess;
     }
 }

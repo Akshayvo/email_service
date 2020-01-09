@@ -63,8 +63,9 @@ import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
         {path: 'forgotPassword', component: ForgotPasswordComponent },
         {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
         {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-        { path: 'verifyCode', component: VerifyCodeComponent, canActivate: [VerifictionCodeGuard] },
+        { path: 'verifyCode', component: VerifyCodeComponent },
         { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+        // canActivate: [VerifictionCodeGuard]
       ]
     },
     { path: 'forgot-password', component: ForgotPasswordComponent },

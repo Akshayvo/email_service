@@ -191,7 +191,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
     if (this.router.url ===  '/pay-rent/payment' ) {
       this.navigateToMoveInPayment = true;
-    }  }
+    }
+  }
 
   ngOnInit() {
     this.getPayMethods();
@@ -325,6 +326,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             this.displayBalance = this.balance;
           }
 
+          if (this.balance <= 0 ) {
+            this.showInput = true;
+          }
+
         // tslint:disable-next-line: max-line-length
           this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[1].PayTypeDescription);
           const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
@@ -410,13 +415,22 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.surchargeService.getSurCharge()
     .subscribe(result => {
       this.AmountToPay = result.decTotalAmount;
+      // this.otherValue = result.decTotalAmount;
+
+      // this.payRentForm.patchValue({
+      //   objPayment: {
+      //     PaymentAmount: result.decTotalAmount
+      //   }
+      // });
 
       if (this.showInput) {
        if (this.customOtherValue) {
           this.surcharge = result.decTotalAmount - this.customOtherValue;
         }
         } else {
-          this.surcharge = result.decTotalAmount - this.balance;
+          if (this.balance > 0) {
+            this.surcharge = result.decTotalAmount - this.balance;
+          }
         }
       }, (err: any) => {
         if (err.status === 400) {
@@ -435,6 +449,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.OptionOutOfAutoPay(this.signUp);
     }
     }
+
     this.invalidPayment = null,
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
@@ -601,6 +616,13 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       return;
     } else {
       this.showloaderForPayment = true;
+      if (this.surcharge > 0) {
+        this.payRentForm.patchValue({
+        objPayment: {
+          PaymentAmount: this.AmountToPay
+        }
+      });
+    }
       this.makePayment(this.payRentForm.value);
     }
   }

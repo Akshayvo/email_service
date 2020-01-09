@@ -4,6 +4,7 @@ import { AuthService } from '../services/auth.service';
 
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { DataSharingService } from '../services/data-sharing.service';
 
 
 @Component({
@@ -15,6 +16,7 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
 
   forgotPasswordForm: FormGroup;
   submitted = false;
+  showLoader = false;
 
    private forgotPasswordUnsubscribe$: Subscription;
 
@@ -22,6 +24,7 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
     private formBuilder: FormBuilder,
     private authService: AuthService,
     public router: Router,
+    private dataSharingService: DataSharingService,
 
   ) {
     this.forgotPasswordForm = this.formBuilder.group({
@@ -43,6 +46,7 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
     .subscribe(
       result => {
         if (result.intErrorCode === 1) {
+          this.showLoader = false;
           this.router.navigate(['pay-rent/verifyCode']);
         }
        }, (err) => {
@@ -56,6 +60,7 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
     if (this.forgotPasswordForm.invalid) {
       return;
     } else {
+      this.showLoader = true;
       this.forgotPassword(this.forgotPasswordForm.value);
     }
   }

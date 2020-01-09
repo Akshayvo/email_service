@@ -15,7 +15,7 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
   resetPasswordForm: FormGroup;
   submitted = false;
   passwordResetted = false;
-
+  showLoader = false;
    private resetPasswordUnsubscribe$: Subscription;
 
   constructor(
@@ -31,9 +31,9 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
       strNewPassword: ['', Validators.required],
     });
 
-    // this.resetPasswordForm.patchValue({
-    //   strPasswordToken : this.dataSharingService.verificationCode
-    // });
+    this.resetPasswordForm.patchValue({
+      strPasswordToken : this.dataSharingService.verificationCode
+    });
   }
 
   ngOnInit() {
@@ -53,7 +53,8 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
   this.resetPasswordUnsubscribe$ =  this.authService.resetPassword(data)
     .subscribe(
       result => {
-        if (result.intErrorCode === 1) {
+        if (result.blnSuccess === true) {
+          this.showLoader = false;
           this.passwordResetted = true;
         }
        }, (err) => {
@@ -67,6 +68,7 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
     if (this.resetPasswordForm.invalid) {
       return;
     } else {
+      this.showLoader = true;
       this.resetPassword(this.resetPasswordForm.value);
     }
   }

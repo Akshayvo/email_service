@@ -4,6 +4,7 @@ import { AuthService } from '../services/auth.service';
 
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
   selector: 'app-verify-code',
@@ -14,6 +15,7 @@ export class VerifyCodeComponent implements OnInit, OnDestroy {
 
   verifyCodeForm: FormGroup;
   submitted = false;
+  showLoader = false;
 
    private verifyCodeUnsubscribe$: Subscription;
 
@@ -21,6 +23,7 @@ export class VerifyCodeComponent implements OnInit, OnDestroy {
     private formBuilder: FormBuilder,
     private authService: AuthService,
     public router: Router,
+    private dataSharingService: DataSharingService,
 
   ) {
     this.verifyCodeForm = this.formBuilder.group({
@@ -42,7 +45,8 @@ export class VerifyCodeComponent implements OnInit, OnDestroy {
   this.verifyCodeUnsubscribe$ =  this.authService.verifyCode(data)
     .subscribe(
       result => {
-        if (result.intErrorCode === 1) {
+        if (result.blnSuccess === true) {
+          this.showLoader = false;
           this.router.navigate(['pay-rent/reset']);
         }
        }, (err) => {
@@ -56,7 +60,9 @@ export class VerifyCodeComponent implements OnInit, OnDestroy {
     if (this.verifyCodeForm.invalid) {
       return;
     } else {
+      this.showLoader = true;
       this.verifyCode(this.verifyCodeForm.value);
+      this.dataSharingService.verificationCode = this.verifyCodeForm.value.strPasswordToken;
     }
   }
 
