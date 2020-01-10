@@ -22,9 +22,10 @@ export class UnitSizerComponent implements OnInit {
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Use this handy storage unit sizing chart to help you visualize what will fit into what size unit! If you've still got questions, contact us today!`
+      content: `Use this handy storage unit sizing chart to help you visualize what will fit into what
+                size unit! If you've still got questions, contact us today!`
     });
-    this.titleService.setTitle(`Unit Sizer | The Storehouse`);
+    this.titleService.setTitle(`Unit Sizer | The Store House`);
   }
 
   ngOnInit() {

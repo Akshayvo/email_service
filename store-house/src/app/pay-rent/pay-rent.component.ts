@@ -25,7 +25,7 @@ export class PayRentComponent implements OnInit {
       name: 'description',
       content: `Follow the instructions on the page to find your credentials, and pay your rent online 24/7.`
     });
-    this.titleService.setTitle('Pay Rent | The Storehouse');
+    this.titleService.setTitle('Pay Rent | The Store House');
   }
 
   ngOnInit() {

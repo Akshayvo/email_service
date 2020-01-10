@@ -65,7 +65,7 @@ export const unitSizer = [
       { content: 'Tow Trailer', },
     ],
   },
-  
+
 
   {
     id: 4,
@@ -73,7 +73,8 @@ export const unitSizer = [
     heading: '10\' x 30\' Storage Unit',
     alt: '10\' x 30\' Storage Unit Graphic ',
     unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
-    data: `This unit is approximately 300sq feet of space that can store the contents of a multi-bedroom home, including`,
+    data: `This unit is approximately 300sq feet of space that can store the contents of a multi-bedroom home,
+           including`,
     amenities: [
       { content: 'Appliances', },
       { content: 'Car or Small Boat', },
@@ -83,6 +84,6 @@ export const unitSizer = [
       { content: 'Tow Trailer' }
     ],
   },
-  
+
 
 ];

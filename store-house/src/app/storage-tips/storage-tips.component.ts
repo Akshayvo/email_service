@@ -28,7 +28,7 @@ export class StorageTipsComponent implements OnInit {
       // tslint:disable-next-line:max-line-length
       content: `Take advantage of our decade of self storage expertise, and use these storage tips to make your stay with us a breeze!`
     });
-    this.titleService.setTitle('Storage Tips | The Storehouse');
+    this.titleService.setTitle('Storage Tips | The Store House');
   }
 
   ngOnInit() {

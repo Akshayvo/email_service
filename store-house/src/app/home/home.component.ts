@@ -36,9 +36,10 @@ export class HomeComponent implements OnInit {
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `We provide high-quality, affordable self storage to residential, commercial and military self storage unit users. `
+      content: `We provide high-quality, affordable self storage to residential,
+                commercial and military self storage unit users. `
     });
-    this.titleService.setTitle('Affordable Self Storage Near Fort Drum | The Storehouse');
+    this.titleService.setTitle('Affordable Self Storage Near Fort Drum | The Store House');
   }
 
   public navigate(location: any) {
