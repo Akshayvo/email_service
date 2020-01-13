@@ -227,7 +227,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
     this.fetchUSState();
     if (window.localStorage) {
-      if (!!localStorage.getItem('strTenantToken')) {
+      const loginUrl = localStorage.getItem('paymentNavigationUrl');
+      if (!!localStorage.getItem('strTenantToken') && (this.router.url.includes(`${loginUrl}`))) {
         this.getTenantInfo();
         this.gettingTenantData = true;
       }

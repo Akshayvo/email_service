@@ -285,7 +285,8 @@ ngOnInit() {
     onSubmit() {
       this.updateNavigation('confirmation');
       if (window.localStorage) {
-        if (localStorage.getItem('strTenantToken')) {
+        const loginUrl = localStorage.getItem('paymentNavigationUrl');
+        if (localStorage.getItem('strTenantToken') && (this.router.url.includes(`${loginUrl}`))) {
           this.existingTenantToken = localStorage.getItem('strTenantToken');
         } else {
           this.existTempToken = localStorage.getItem('strTempTenantToken');
