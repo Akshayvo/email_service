@@ -49,6 +49,7 @@ import {  HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RequestInterceptorService } from './services/request-interceptor.service';
 import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
+import { CanDeactivateGuard } from './preventRouteChange.guard';
 
 @NgModule({
   declarations: [
@@ -103,6 +104,7 @@ import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
     DatePipe,
     AuthService,
     AuthGuard,
+    CanDeactivateGuard,
     Title,
     {
       provide: ErrorHandler,

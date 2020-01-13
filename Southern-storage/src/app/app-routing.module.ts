@@ -25,6 +25,7 @@ import { AppResolver } from './resolver/app.resolver';
 import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
 import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
 import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
+import { CanDeactivateGuard } from './preventRouteChange.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent  },
@@ -37,7 +38,7 @@ const routes: Routes = [
         { path: '', component: ViewRatesPageComponent },
         { path: 'reserve', component: ReserveUnitFormComponent },
         { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
       ] },
@@ -58,7 +59,7 @@ const routes: Routes = [
         { path: '', component: ViewRatesPageComponent },
         { path: 'reserve', component: ReserveUnitFormComponent },
         { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
       ] },
@@ -79,7 +80,7 @@ const routes: Routes = [
         { path: '', component: ViewRatesPageComponent },
         { path: 'reserve', component: ReserveUnitFormComponent },
         { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
       ] },
