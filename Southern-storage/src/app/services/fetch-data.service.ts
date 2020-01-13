@@ -1,6 +1,6 @@
-import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { UnitTypes, RentalPeriod } from '../models/unittypes';
 import { PayTypes } from '../models/payment';
 @Injectable({
@@ -23,6 +23,7 @@ export class FetchDataService {
   }
 
   getRentalPeriod(): Observable<RentalPeriod> {
+    console.log('TCL: FetchDataService -> constructor -> this.rentalPeriodUrl', this.rentalPeriodUrl);
     return this.http.get<RentalPeriod>(this.rentalPeriodUrl);
   }
 

@@ -71,6 +71,26 @@ export class DataSharingService {
   };
 
 
+  navLinksForComponent = {
+    reservationForm: {
+      next: '',
+      prev: '',
+    },
+    confirmationData: {
+      next: '',
+      prev: '',
+    },
+    payRentForm: {
+      next: '',
+      prev: '',
+    },
+    viewRates: {
+      next: '',
+      prev: ''
+    }
+
+  };
+
   MoveIn = {
     dteMoveIn: '',
     intUnitTypeID: 0,
@@ -78,9 +98,9 @@ export class DataSharingService {
 
   period: string;
 
-constructor() {
- this.getUnitData();
-}
+  constructor() {
+    this.getUnitData();
+  }
   setTenantData(value: any) {
     this.objTenant = value;
   }
@@ -101,8 +121,28 @@ constructor() {
     return this.apiKey;
   }
 
+  initMyNavLinks = (componentName, myCurUrl) => {
+    console.log('TCL: DataSharingService -> initMyNavLinks -> this.navLinksForComponent', this.navLinksForComponent);
+    if (this.navLinksForComponent[componentName]) {
+      this.navLinksForComponent[componentName].next = myCurUrl;
+      this.navLinksForComponent[componentName].prev = myCurUrl;
+    }
+  }
+
+  getMyNavLinks = (componentName) => {
+    return this.navLinksForComponent[componentName];
+  }
+
+  updateMyNavLink = (componentName, linkType, url) => {
+    if (this.navLinksForComponent[componentName]) {
+      if (this.navLinksForComponent[componentName][linkType]) {
+        this.navLinksForComponent[componentName][linkType] = url;
+      }
+    }
+  }
+
   setReservationData(value: any) {
-    this.ReservationData.Description  = value.Description;
+    this.ReservationData.Description = value.Description;
     this.ReservationData.MonthlyRate = value.MonthlyRate;
     this.ReservationData.UnitTypeID = value.UnitTypeID;
   }
@@ -112,7 +152,7 @@ constructor() {
   }
 
   setMoveInData(value: any) {
-    this.MoveInData.Description  = value.Description;
+    this.MoveInData.Description = value.Description;
     this.MoveInData.MonthlyRate = value.MonthlyRate;
     this.MoveInData.UnitTypeID = value.UnitTypeID;
   }
