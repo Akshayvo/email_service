@@ -145,6 +145,14 @@ ngOnInit() {
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
   console.log('monthly rate is', this.monthlyRate);
+
+  if (!this.dataSharingService.objTenant) {
+    console.log('back to reserve');
+  }
+
+//   this.router.navigateByUrl('/view-rates/confirmation', { skipLocationChange: true }).then(() => {
+//     this.router.navigate(['/reserve-unit']);
+// });
 }
 
   addTenant(data: any): void {
