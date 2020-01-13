@@ -99,6 +99,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   navigateToMoveInPayment: boolean;
   tenantTokenExist = false;
   navTo: any;
+  myNavLinks: any;
 
   private OptionOutOfAutoPaySubscribe$: Subscription;
   private signUpAutoPaySubscribe$: Subscription;
@@ -198,7 +199,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.getPayMethods();
     this.fetchMonth();
-
+    this.dataSharingService.initMyNavLinks('payRentForm', window.location.pathname);
+    this.myNavLinks = this.dataSharingService.getMyNavLinks('payRentForm');
   }
 
   get f() { return this.payRentForm.controls; }
@@ -238,6 +240,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     }
 
     return '';
+}
+
+
+public navigateToPrevious() {
+  this.router.navigate([this.dataSharingService.navLinksForComponent.confirmationData.next]);
 }
 
 
@@ -327,6 +334,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             this.displayBalance = this.balance;
           }
 
+          if (this.balance <= 0) {
+            this.showInput = true;
+          }
+
          this.defaultCardType =  this.getCardType(Tenant.CCNumber);
 
           const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
@@ -410,15 +421,17 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   getSurCharge() {
     this.surcharge = 0;
     this.surchargeService.getSurCharge()
-    .subscribe(result => {
-      this.AmountToPay = result.decTotalAmount;
+      .subscribe(result => {
+        this.AmountToPay = result.decTotalAmount;
 
-      if (this.showInput) {
-       if (this.customOtherValue) {
-          this.surcharge = result.decTotalAmount - this.customOtherValue;
-        }
+        if (this.showInput) {
+          if (this.customOtherValue) {
+            this.surcharge = result.decTotalAmount - this.customOtherValue;
+          }
         } else {
-          this.surcharge = result.decTotalAmount - this.balance;
+          if (this.balance > 0) {
+            this.surcharge = result.decTotalAmount - this.balance;
+          }
         }
       }, (err: any) => {
         if (err.status === 400) {
@@ -604,6 +617,25 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       return;
     } else {
       this.showloaderForPayment = true;
+      if (this.surcharge > 0) {
+        this.payRentForm.patchValue({
+          objPayment: {
+            PaymentAmount: this.AmountToPay
+          }
+        });
+      } else if (this.otherValue > 0) {
+        this.payRentForm.patchValue({
+          objPayment: {
+            PaymentAmount: this.otherValue
+          }
+        });
+      } else {
+        this.payRentForm.patchValue({
+          objPayment: {
+            PaymentAmount: this.balance
+          }
+        });
+      }
       this.makePayment(this.payRentForm.value);
     }
   }

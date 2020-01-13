@@ -272,7 +272,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const navTo = this.dataSharingService.navigationTo;
     this.dataSharingService.navigateToPrevious = this.router.url;
     this.dataSharingService.updateMyNavLink('reservationForm', 'next', `${navTo}/${location}`);
-    this.dataSharingService.updateMyNavLink('reservationForm', 'prev', `${navTo}/view-rates`);
+    this.dataSharingService.updateMyNavLink('reservationForm', 'prev', `${this.dataSharingService.navLinksForComponent.viewRates.next}`);
     const myCurNavLinks = this.dataSharingService.getMyNavLinks('reservationForm');
     this.router.navigate([this.dataSharingService.navLinksForComponent.reservationForm.next]);
   }

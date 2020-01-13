@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, OnDestroy } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnDestroy, HostListener} from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { DataSharingService } from '../services/data-sharing.service';
 import { Router } from '@angular/router';
@@ -64,6 +64,7 @@ reservationFee: number;
 reservationFeeTax: number;
 description: string;
 monthlyRate: number;
+myNavLinks: any;
 
 tenantData = {
   objTenant: {}
@@ -91,6 +92,7 @@ private  getTenantInfoSubscribe$: Subscription;
 private  signOutSubscribe$: Subscription;
 
 
+
 constructor(
   public router: Router,
   private dataSharingService: DataSharingService,
@@ -114,6 +116,7 @@ constructor(
   this.totalChargesAmount = this.dataSharingService.MoveInData.TotalChargesAmount;
   this.period = this.dataSharingService.period;
 }
+
 
 
 
@@ -148,6 +151,9 @@ ngOnInit() {
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
   console.log('monthly rate is', this.monthlyRate);
   this.navTo = this.dataSharingService.navigationTo;
+  this.dataSharingService.initMyNavLinks('confirmationData', window.location.pathname);
+
+  this.myNavLinks = this.dataSharingService.getMyNavLinks('confirmationData');
 
 }
 
@@ -271,7 +277,13 @@ ngOnInit() {
            );
        }
 
+    updateNavigation(location: any) {
+      this.dataSharingService.updateMyNavLink('confirmationData', 'next', `${this.navTo}/${location}`);
+      this.dataSharingService.updateMyNavLink('confirmationData', 'prev', `${this.navTo}/view-rates`);
+    }
+
     onSubmit() {
+      this.updateNavigation('confirmation');
       if (window.localStorage) {
         if (localStorage.getItem('strTenantToken')) {
           this.existingTenantToken = localStorage.getItem('strTenantToken');
