@@ -233,6 +233,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.gettingTenantData = true;
       }
     }
+    console.log('TCL: navigateToConfirmation -> this.dataSharingService.objTenant', this.dataSharingService.objTenant);
 
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
