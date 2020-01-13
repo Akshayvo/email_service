@@ -9,30 +9,36 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+import { environment } from '../environments/environment';
+import { apiRoutes, iFrameRoutes } from './data/route';
 
-const routes: Routes = [
-  // Fallback when no prior route is matched
-  { path: '', component: HomeComponent },
-  { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'contact-us', component: ContactComponent },
-  { path: 'view-rates', component: ViewRatesComponent },
-  { path: 'pay-rent', component: PayRentComponent },
-  { path: 'reserve-unit', component: ReserveUnitComponent },
-  { path: 'unit-sizer', component: UnitSizerComponent},
-  { path: 'review', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJGbIJO8mEBYgR2OFvBVGMmaA'
-    }
-  },
-  { path: 'error', component: ErrorHandlerComponent },
-  { path: '**', component: ErrorComponent }
-];
+// const routes: Routes = [
+//   // Fallback when no prior route is matched
+//   { path: '', component: HomeComponent },
+//   { path: 'storage-tips', component: StorageTipsComponent },
+//   { path: 'contact-us', component: ContactComponent },
+//   { path: 'view-rates', component: ViewRatesComponent },
+//   { path: 'pay-rent', component: PayRentComponent },
+//   { path: 'reserve-unit', component: ReserveUnitComponent },
+//   { path: 'unit-sizer', component: UnitSizerComponent},
+//   { path: 'review', component: HomeComponent,
+//     resolve: {
+//         url: 'externalUrlRedirectResolver'
+//     },
+//     data: {
+//         externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJGbIJO8mEBYgR2OFvBVGMmaA'
+//     }
+//   },
+//   { path: 'error', component: ErrorHandlerComponent },
+//   { path: '**', component: ErrorComponent }
+// ];
+
+export const routes: Routes = environment.type ?  iFrameRoutes : apiRoutes;
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    onSameUrlNavigation: 'reload'
+  })],
   exports: [RouterModule],
   providers: []
 })
