@@ -4,7 +4,7 @@
     <h6 class="modal-title"><strong>Login required for changing the password.</strong></h6>
   </div>
   <div class="modal-body">
-    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <form [formGroup]="loginModalForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
           <div [hidden]="" *ngIf="submitted && credentialsInvalid" class="button-display alert alert-success alert-danger fade show">
                   Either the supplied username does not exist, or the supplied credentials are incorrect. Please try again.

@@ -415,13 +415,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.surchargeService.getSurCharge()
     .subscribe(result => {
       this.AmountToPay = result.decTotalAmount;
-      // this.otherValue = result.decTotalAmount;
 
-      // this.payRentForm.patchValue({
-      //   objPayment: {
-      //     PaymentAmount: result.decTotalAmount
-      //   }
-      // });
 
       if (this.showInput) {
        if (this.customOtherValue) {
@@ -616,13 +610,27 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       return;
     } else {
       this.showloaderForPayment = true;
-      if (this.surcharge > 0) {
-        this.payRentForm.patchValue({
-        objPayment: {
-          PaymentAmount: this.AmountToPay
+      if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
+        if (this.surcharge > 0) {
+          this.payRentForm.patchValue({
+            objPayment: {
+              PaymentAmount: this.AmountToPay
+            }
+          });
+        } else if (this.otherValue > 0) {
+          this.payRentForm.patchValue({
+            objPayment: {
+              PaymentAmount: this.otherValue
+            }
+          });
+        } else {
+          this.payRentForm.patchValue({
+            objPayment: {
+              PaymentAmount: this.balance
+            }
+          });
         }
-      });
-    }
+      }
       this.makePayment(this.payRentForm.value);
     }
   }

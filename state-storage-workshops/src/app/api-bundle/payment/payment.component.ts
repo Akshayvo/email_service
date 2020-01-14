@@ -2,6 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact } from '../../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
+import { DataSharingService } from '../services/data-sharing.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-payment',
@@ -14,6 +16,9 @@ export class PaymentComponent implements OnInit {
 
   constructor(
     private titleService: Title,
+    public router: Router,
+    private  dataSharingService: DataSharingService,
+
     @Inject(WINDOW) private window: Window,
     private meta: Meta
   ) {

@@ -4,6 +4,7 @@ import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
+import { DataSharingService } from '../services/data-sharing.service';
 
 @Injectable()
 
@@ -39,6 +40,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
+    private dataSharingService: DataSharingService,
     public router: Router,
     public elementRef: ElementRef
 
@@ -55,7 +57,11 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (window.localStorage) {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
-        this.router.navigate(['/pay-rent/payment']);
+        if (this.dataSharingService.changePassword === true) {
+          this.router.navigate(['/pay-rent/changePassword']);
+        } else {
+          this.router.navigate(['/pay-rent/payment']);
+        }
        }
     }
   }

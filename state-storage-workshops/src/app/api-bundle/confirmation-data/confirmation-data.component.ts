@@ -24,9 +24,6 @@ submitted = false;
 showConfirmation = false;
 totalChargesAmount: number;
 totalTaxAmount: number;
-clickedMoveIn: boolean;
-defaultTotalChargesAmount: number;
-defaultTotalTaxAmount: number;
 
 index: string;
 
@@ -142,26 +139,6 @@ public navigate(location: any) {
 
 ngOnInit() {
   this.getTenantUnitData();
-
-  // this.router.events.pipe(
-  //   filter((event: RouterEvent) => event instanceof NavigationEnd),
-  //     pairwise(),
-  //     filter((events: RouterEvent[]) => events[0].url === events[1].url),
-  //     startWith('Initial call'),
-  //   takeUntil(this.destroyed)
-  // ).subscribe(() => {
-  //   this.fetchOption();
-  //   this.fetchSharedData();
-  //   this.getTenantUnitData();
-  //   console.log('refresh is working');
-
-  // });
-
-  // this.router.events.subscribe(e => {
-  //   if (e instanceof ActivationStart && e.snapshot.outlet === 'confirmation') {
-  //     this.outlet.deactivate();
-  //   }
-  // });
 }
 
 getTenantUnitData() {
@@ -177,7 +154,6 @@ getTenantUnitData() {
   this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
-  console.log('monthly rate is', this.monthlyRate);
 }
 
   addTenant(data: any): void {

@@ -4,6 +4,7 @@ import { AuthService } from '../services/auth.service';
 
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
   selector: 'app-change-password',
@@ -22,6 +23,7 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
+    private dataSharingService: DataSharingService,
     public router: Router,
 
   ) {
@@ -40,6 +42,8 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
   get f() { return this.changePasswordForm.controls; }
 
   goBack() {
+    this.dataSharingService.changePassword = false;
+    localStorage.removeItem('strTenantToken');
     this.router.navigate(['pay-rent/login']);
   }
 
@@ -54,7 +58,6 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
       result => {
         if (result.intErrorCode === 1) {
           localStorage.removeItem('strTenantToken');
-          console.log('password changed');
           this.passwordChanged = true;
         } else {
           this.incorrectPassword = true;

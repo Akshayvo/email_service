@@ -22,7 +22,7 @@ if (environment.type === 0) {
         },
         {
             label: 'PAY RENT',
-            path: 'pay-rent/login'
+            path: '/pay-rent'
         },
         {
             label: 'CONTACT US',
