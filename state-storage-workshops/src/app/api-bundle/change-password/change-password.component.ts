@@ -15,6 +15,7 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
 
   changePasswordForm: FormGroup;
   submitted = false;
+  showLoader = false;
   incorrectPassword = false;
 
   passwordChanged = false;
@@ -53,11 +54,13 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
 
 
   changePassword(data: any): void {
+    this.showLoader = true;
   this.changePasswordUnsubscribe$ =  this.authService.changePassword(data)
     .subscribe(
       result => {
         if (result.intErrorCode === 1) {
           localStorage.removeItem('strTenantToken');
+          this.showLoader = false;
           this.passwordChanged = true;
         } else {
           this.incorrectPassword = true;
