@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { viewrates } from '../../data/view-rates';
+import { dataViewRates } from '../../data/view-rates';
 import { MetaService } from '../../services/link.service';
 // import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { FetchDataService } from '../services/fetch-data.service';
@@ -57,7 +57,7 @@ export class RentNowComponent implements OnInit, OnDestroy {
     // this.getData();
   }
   public fetchViewRates() {
-    this.viewRates = viewrates;
+    this.viewRates = dataViewRates;
   }
   /**
    *

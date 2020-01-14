@@ -23,11 +23,13 @@ import { LoginModalComponent } from '../api-bundle/login-modal/login-modal.compo
 import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.component';
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
+import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
+    { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storage-tips', component: StorageTipsComponent },
     { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },

@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy, ViewChild  } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { viewrates } from '../../data/view-rates';
+import { dataViewRates } from '../../data/view-rates';
 import { MetaService } from '../../services/link.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
@@ -53,7 +53,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     // this.getData();
   }
   public fetchViewRates() {
-    this.viewRates = viewrates;
+    this.viewRates = dataViewRates;
   }
   /**
    *
