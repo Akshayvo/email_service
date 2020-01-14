@@ -140,6 +140,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   public navigateToPrevious() {
     console.log('confirmation page working', this.dataSharingService.navigateToPrevious);
     this.router.navigate([this.dataSharingService.navigateToPrevious]);
+    
   }
 
   public hasUnsavedData() {

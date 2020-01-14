@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import {tap} from 'rxjs/internal/operators';
-import { Auth, ForgotPassword } from '../models/auth';
+import { Auth, ForgotPassword, ChangePassword, VerifyCode, ResetPassword } from '../models/auth';
 
-import { environment } from '../../environments/environment';
 
 
 
@@ -17,12 +15,30 @@ export class AuthService {
 
   private forgotPasswordUrl = `auth/verifyemail`;
 
+  private verifyCodeUrl = `auth/verifycode`;
+
+  private resetPasswordUrl = `auth/resetpassword`;
+
+  private changePasswordUrl = `auth/changepassword`;
+
 
   constructor(private http: HttpClient) {
   }
 
   auth(auth: Auth): Observable<Auth> {
     return this.http.post<Auth>(this.url, auth);
+  }
+
+  verifyCode(verifyCode: VerifyCode) {
+    return this.http.post<VerifyCode>(this.verifyCodeUrl, verifyCode);
+  }
+
+  resetPassword(resetPassword: ResetPassword) {
+    return this.http.post<ResetPassword>(this.resetPasswordUrl, resetPassword);
+  }
+
+  changePassword(changePassword: ChangePassword) {
+    return this.http.post<ChangePassword>(this.changePasswordUrl, changePassword);
   }
 
   forgotPassword(forgotPassword: ForgotPassword) {

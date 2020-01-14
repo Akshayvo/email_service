@@ -1,7 +1,7 @@
 import { Component, OnInit, Injectable, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
@@ -34,6 +34,8 @@ export class LoginComponent implements OnInit, OnDestroy {
   tenant: any;
   balance: number;
   navTo: any;
+  open = false;
+
 
   private authUnsubscribe$: Subscription;
 
@@ -42,6 +44,8 @@ export class LoginComponent implements OnInit, OnDestroy {
     private formBuilder: FormBuilder,
     private authService: AuthService,
     public router: Router,
+    private activatedRoute: ActivatedRoute,
+
     private  dataSharingService: DataSharingService,
   ) {
 
@@ -60,16 +64,20 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (window.localStorage) {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
-        this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
+          this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
        }
     }
   }
 
   get f() { return this.loginForm.controls; }
 
+  openBox() {
+    this.open = !this.open;
+  }
+
 
   public navigate (location: any) {
-    this.router.navigate([location]);
+    this.router.navigate([`/pay-rent/${this.navTo}/${location}`]);
   }
 
 
@@ -88,7 +96,11 @@ export class LoginComponent implements OnInit, OnDestroy {
           this.showPayRent = true;
           this.authData = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
-          this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
+          // if (this.activatedRoute.snapshot.url[1].path === 'changePassword') {
+          //   this.router.navigate([`/pay-rent/${this.navTo}/changePassword`]);
+          // } else {
+            this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
+          // }
         }, (err) => {
           this.credentialsInvalid = true;
           this.showLoader = false;

@@ -25,6 +25,10 @@ import { AppResolver } from './resolver/app.resolver';
 import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
 import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
 import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { VerifyCodeComponent } from './verify-code/verify-code.component';
+import { VerifictionCodeGuard } from './verificationCode.guard';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 // import { CanDeactivateGuard } from './preventRouteChange.guard';
 
 const routes: Routes = [
@@ -129,7 +133,10 @@ const routes: Routes = [
       {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'login', component: LoginComponent },
       {path: 'forgotPassword', component: ForgotPasswordComponent },
-      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
+      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+      { path: 'verifyCode', component: VerifyCodeComponent },
+      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
     ]
   },
   { path: 'pay-rent/rocky-creek', component: PayRentRockyCreekComponent,
@@ -137,7 +144,10 @@ const routes: Routes = [
       {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'login', component: LoginComponent },
       {path: 'forgotPassword', component: ForgotPasswordComponent },
-      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
+      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      { path: 'verifyCode', component: VerifyCodeComponent },
+      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
     ]
   },
   { path: 'pay-rent/barton', component: PayRentBartonComponent,
@@ -145,7 +155,10 @@ const routes: Routes = [
       {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'login', component: LoginComponent },
       {path: 'forgotPassword', component: ForgotPasswordComponent },
-      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]}
+      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+      { path: 'verifyCode', component: VerifyCodeComponent },
+      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
     ]
   },
   { path: 'contact-us', component: ContactComponent },

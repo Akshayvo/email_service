@@ -235,11 +235,26 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     }
     console.log('TCL: navigateToConfirmation -> this.dataSharingService.objTenant', this.dataSharingService.objTenant);
 
-    this.reserveUnitForm.patchValue({
-      lstUnitTypes: ([{
-        Description: this.Description,
-      }])
-    });
+      this.reserveUnitForm.patchValue({
+        objTenant: ({
+          FirstName: this.dataSharingService.objTenant.FirstName,
+          LastName: this.dataSharingService.objTenant.LastName,
+          Phone: this.dataSharingService.objTenant.Phone,
+          EmailAddress: this.dataSharingService.objTenant.EmailAddress,
+          AddressLine1: this.dataSharingService.objTenant.AddressLine1,
+          AddressLine2: this.dataSharingService.objTenant.AddressLine2,
+          City: this.dataSharingService.objTenant.City,
+          State: this.dataSharingService.objTenant.State,
+          ZIP: this.dataSharingService.objTenant.ZIP,
+        }),
+      });
+
+      this.reserveUnitForm.patchValue({
+        lstUnitTypes: ([{
+          Description: this.Description,
+        }])
+      });
+
 
     /* if (this.activatedRoute.snapshot.url[1].path === 'agricola') {
       console.log('yes its ', this.activatedRoute.snapshot.url[1].path);

@@ -50,6 +50,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RequestInterceptorService } from './services/request-interceptor.service';
 import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 import { CanDeactivateGuard } from './preventRouteChange.guard';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { LoginModalComponent } from './login-modal/login-modal.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { VerifyCodeComponent } from './verify-code/verify-code.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +88,10 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
     ViewRatesPageComponent,
     ReserveUnitFormComponent,
     PayRentFormComponent,
+    ChangePasswordComponent,
+    LoginModalComponent,
+    ResetPasswordComponent,
+    VerifyCodeComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
