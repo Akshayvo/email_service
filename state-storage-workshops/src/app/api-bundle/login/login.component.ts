@@ -120,5 +120,4 @@ public ngOnDestroy(): void {
       this.auth(this.loginForm.value);
     }
   }
-
 }

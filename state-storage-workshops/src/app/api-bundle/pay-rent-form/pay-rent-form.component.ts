@@ -276,7 +276,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.surchargeService.setAmt(this.balance);
       this.getSurCharge();
       this.showInput = false;
-
     }
   }
 
@@ -575,6 +574,37 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       );
     }
 
+    onSubmit() {
+      this.submitted = true;
+      if (this.payRentForm.invalid) {
+        return;
+      } else {
+        this.showloaderForPayment = true;
+        if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
+          if (this.surcharge > 0) {
+            this.payRentForm.patchValue({
+              objPayment: {
+                PaymentAmount: this.AmountToPay
+              }
+            });
+          } else if (this.otherValue > 0) {
+            this.payRentForm.patchValue({
+              objPayment: {
+                PaymentAmount: this.otherValue
+              }
+            });
+          } else {
+            this.payRentForm.patchValue({
+              objPayment: {
+                PaymentAmount: this.balance
+              }
+            });
+          }
+        }
+        this.makePayment(this.payRentForm.value);
+      }
+    }
+
   public ngOnDestroy(): void {
     if (this.OptionOutOfAutoPaySubscribe$ && this.OptionOutOfAutoPaySubscribe$.closed) {
       this.OptionOutOfAutoPaySubscribe$.unsubscribe();
@@ -601,37 +631,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     }
     if (this.makeAReservationSubscribe$ && this.makeAReservationSubscribe$.closed) {
       this.makeAReservationSubscribe$.unsubscribe();
-    }
-  }
-
-  onSubmit() {
-    this.submitted = true;
-    if (this.payRentForm.invalid) {
-      return;
-    } else {
-      this.showloaderForPayment = true;
-      if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
-        if (this.surcharge > 0) {
-          this.payRentForm.patchValue({
-            objPayment: {
-              PaymentAmount: this.AmountToPay
-            }
-          });
-        } else if (this.otherValue > 0) {
-          this.payRentForm.patchValue({
-            objPayment: {
-              PaymentAmount: this.otherValue
-            }
-          });
-        } else {
-          this.payRentForm.patchValue({
-            objPayment: {
-              PaymentAmount: this.balance
-            }
-          });
-        }
-      }
-      this.makePayment(this.payRentForm.value);
     }
   }
 }

@@ -422,7 +422,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
         this.dataSharingService.LstUnitTypes.Description = this.Description;
         this.dataSharingService.LstUnitTypes.UnitTypeID = this.UnitTypeID;
-        // this.dataSharingService.LstUnitTypes.MonthlyRate = this.UnitTypeRate;
         this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
         this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
         this.dataSharingService.LstUnitTypes.BiAnnualRate = this.biAnnualRate;

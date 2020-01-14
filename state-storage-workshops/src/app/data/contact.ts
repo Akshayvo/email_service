@@ -11,8 +11,6 @@ export const contact = [
         class: 'fas fa-envelope mx-2 iconColor',
         data: 'largon@statestoragegroup.com',
         redirect: 'mailto:largon@statestoragegroup.com',
-        // data: 'sanghmitra.v@codeparva.in',
-        // redirect: 'mailto:sanghmitra.v@codeparva.in'
     },
     {
         id: 2,

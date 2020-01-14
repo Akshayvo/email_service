@@ -96,5 +96,4 @@ export class LoginModalComponent implements OnInit, OnDestroy {
       this.auth(this.loginModalForm.value);
     }
   }
-
 }
