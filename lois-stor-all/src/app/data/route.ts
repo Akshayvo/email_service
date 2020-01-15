@@ -24,6 +24,7 @@ import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.compo
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
+import { UnitSizerIframePageComponent } from '../iframe-bundle/unit-sizer-iframe-page/unit-sizer-iframe-page.component';
 
 
  export const apiRoutes = [
@@ -93,6 +94,7 @@ export const iFrameRoutes = [
     { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
+    { path: 'unit-sizer', component: UnitSizerIframePageComponent},
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'

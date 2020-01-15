@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -50,6 +50,9 @@ import { SelectDropDownModule } from 'ngx-select-dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
+import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
+import { RentNowIframePageComponent } from './iframe-bundle/rent-now-iframe-page/rent-now-iframe-page.component';
+import { UnitSizerIframePageComponent } from './iframe-bundle/unit-sizer-iframe-page/unit-sizer-iframe-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,6 +87,8 @@ import { ResetPasswordComponent } from './api-bundle/reset-password/reset-passwo
     ChangePasswordComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
+    RentNowIframePageComponent,
+    UnitSizerIframePageComponent,
   ],
   imports: [
     CommonModule,
@@ -114,7 +119,12 @@ import { ResetPasswordComponent } from './api-bundle/reset-password/reset-passwo
       useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
           window.location.href = (route.data as any).externalUrl;
       }
-    }
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: RequestInterceptorService,
+      multi: true
+    },
   ],
   bootstrap: [AppComponent],
 })

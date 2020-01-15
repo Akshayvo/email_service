@@ -20,12 +20,12 @@ export const th = [
     {
       data: `Reserve a Unit`
     },
-    {
-      data: `Move In`
-    },
-    {
-      data: `Climate Control`
-    },
+    // {
+    //   data: `Move In`
+    // },
+    // {
+    //   data: `Climate Control`
+    // },
   ];
 
   export const option =  [

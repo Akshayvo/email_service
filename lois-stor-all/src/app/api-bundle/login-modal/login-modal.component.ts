@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
   selector: 'app-login-modal',
@@ -14,7 +15,7 @@ export class LoginModalComponent implements OnInit, OnDestroy {
 
   @Output() someEvent = new EventEmitter<string>();
 
-  loginForm: FormGroup;
+  loginModalForm: FormGroup;
   showForgotPassword: boolean;
   showLoader: boolean;
   submitted: boolean;
@@ -28,12 +29,13 @@ export class LoginModalComponent implements OnInit, OnDestroy {
     private formBuilder: FormBuilder,
     private authService: AuthService,
     public router: Router,
+    private dataSharingService: DataSharingService,
     public elementRef: ElementRef,
   ) {
   }
 
   ngOnInit() {
-    this.loginForm = this.formBuilder.group({
+    this.loginModalForm = this.formBuilder.group({
       strUserName: ['', Validators.required],
       strPassword: ['', Validators.required],
       intAuthMethod: 1
@@ -42,7 +44,7 @@ export class LoginModalComponent implements OnInit, OnDestroy {
 
 
 
-  get f() { return this.loginForm.controls; }
+  get f() { return this.loginModalForm.controls; }
 
   closeBox() {
     this.someEvent.next();
@@ -63,6 +65,8 @@ export class LoginModalComponent implements OnInit, OnDestroy {
             this.showPayRent = true;
             this.authData = auth.strTenantToken;
             localStorage.setItem('strTenantToken', this.authData);
+            this.dataSharingService.changePassword = true;
+
             this.router.navigate(['/pay-rent/changePassword']);
           }, (err) => {
             this.credentialsInvalid = true;
@@ -82,14 +86,14 @@ export class LoginModalComponent implements OnInit, OnDestroy {
   onSubmit() {
     this.submitted = true;
 
-    if (this.loginForm.invalid) {
+    if (this.loginModalForm.invalid) {
       return;
     } else {
       if (window.localStorage) {
         localStorage.removeItem('strTempTenantToken');
       }
       this.allowedToshow = true;
-      this.auth(this.loginForm.value);
+      this.auth(this.loginModalForm.value);
     }
   }
 
