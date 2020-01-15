@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, OnDestroy, ViewChild } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnDestroy, ViewChild, HostListener } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { DataSharingService } from '../services/data-sharing.service';
 import { Router } from '@angular/router';
@@ -78,8 +78,8 @@ MoveIn = {
 unitData = {
 
 };
-
-
+canExit = true;
+navTo: any;
 period: string;
 public destroyed = new Subject<any>();
 
@@ -125,15 +125,29 @@ public fetchOption() {
   this.stateString = this.options[this.index].description;
 }
 
-public navigateToPrevious() {
-  if (this.dataSharingService.navigateToMoveIn) {
-    this.router.navigate(['/view-rates/move-in']);
-  } else {
-    if (this.dataSharingService.navigateToReserve) {
-      this.router.navigate(['/view-rates/reserve']);
-    }
+@HostListener('window:beforeunload', ['$event'])
+  unloadNotification($event: any) {
+    $event.returnValue = true;
   }
+
+// public navigateToPrevious() {
+//   if (this.dataSharingService.navigateToMoveIn) {
+//     this.router.navigate(['/view-rates/move-in']);
+//   } else {
+//     if (this.dataSharingService.navigateToReserve) {
+//       this.router.navigate(['/view-rates/reserve']);
+//     }
+//   }
+// }
+public navigateToPrevious() {
+  console.log('confirmation page working', this.dataSharingService.navigateToPrevious);
+  this.router.navigate([this.dataSharingService.navigateToPrevious]);
 }
+
+public hasUnsavedData() {
+  return this.canExit;
+}
+
 
 
 public navigate(location: any) {
