@@ -53,6 +53,7 @@ import { ResetPasswordComponent } from './api-bundle/reset-password/reset-passwo
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
 import { RentNowIframePageComponent } from './iframe-bundle/rent-now-iframe-page/rent-now-iframe-page.component';
 import { UnitSizerIframePageComponent } from './iframe-bundle/unit-sizer-iframe-page/unit-sizer-iframe-page.component';
+import { CanDeactivateGuard } from './preventRouteChange.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -109,6 +110,7 @@ import { UnitSizerIframePageComponent } from './iframe-bundle/unit-sizer-iframe-
     AuthGuard,
     VerifictionCodeGuard,
     Title,
+    CanDeactivateGuard,
     {
       provide: ErrorHandler,
       useClass: ErrorHandlerService
