@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address:',
-        data: '3917 114th St, Lubbock, TX 79424',
+        data: '3917 114th St, Lubbock, TX 79423',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
