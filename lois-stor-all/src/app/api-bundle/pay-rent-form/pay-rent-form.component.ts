@@ -153,9 +153,14 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     this.navigateToReserve = this.dataSharingService.navigateToReserve;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
-    this.TotalReserveAmount =
-   // tslint:disable-next-line: max-line-length
-   parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
+
+    if (!!this.dataSharingService.LstUnitTypes.ReservationFeeTax) {
+      this.TotalReserveAmount =
+     // tslint:disable-next-line: max-line-length
+     parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
+    } else {
+      this.TotalReserveAmount = this.dataSharingService.LstUnitTypes.ReservationFee;
+    }
     this.totalMoveInAmount =
     // tslint:disable-next-line: max-line-length
     parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
@@ -640,6 +645,4 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.makeAReservationSubscribe$.unsubscribe();
     }
   }
-
- 
 }
