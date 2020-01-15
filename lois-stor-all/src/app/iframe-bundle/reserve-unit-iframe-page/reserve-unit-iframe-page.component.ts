@@ -12,9 +12,10 @@ export class ReserveUnitIframePageComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Are you ready to reserve your unit or workshop? Start here with our easy reservation form, and one of our friendly managers will reach out shortly to confirm!`
+      content: `Use this form to reserve your unit today! One of our friendly
+      managers will reach out shortly to assist you!`
     });
-    this.titleService.setTitle('Reservations | State Storage Workshops');
+    this.titleService.setTitle('Reserve Unit | Lois Stor-All');
   }
 
   ngOnInit() {

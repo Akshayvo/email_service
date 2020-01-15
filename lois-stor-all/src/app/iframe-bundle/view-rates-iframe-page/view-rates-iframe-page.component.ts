@@ -23,10 +23,10 @@ export class ViewRatesIframePageComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment and view our self storage, and electrified workshop rates! We have a wide
-      variety of options with many amenities available, today!`
+      content: `Take a moment to review our affordable storage unit rates
+      and see if we have the right unit for your needs available!`
     });
-    this.titleService.setTitle('View Rates | State Storage Workshops');
+    this.titleService.setTitle('View Rates | Lois Stor-All');
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
