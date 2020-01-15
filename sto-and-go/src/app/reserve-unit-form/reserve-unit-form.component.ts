@@ -393,7 +393,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   getData() {
    this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
-        
       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
       const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
       this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
@@ -412,6 +411,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
 
         this.dataSharingService.LstUnitTypes.ReservationFee = this.ReservationFee;
+        console.log('reservation fee', this.dataSharingService.LstUnitTypes.ReservationFee);
         this.dataSharingService.LstUnitTypes.ReservationFeeTax = this.ReservationFeeTax;
 
       if (!serviceDescriptionValue && !serviceMonthlyValue) {

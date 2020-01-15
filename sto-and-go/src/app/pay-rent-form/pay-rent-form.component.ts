@@ -154,13 +154,17 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     this.navigateToReserve = this.dataSharingService.navigateToReserve;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
-    this.TotalReserveAmount =
-   // tslint:disable-next-line: max-line-length
-   parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
-    this.totalMoveInAmount =
-    // tslint:disable-next-line: max-line-length
-    parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
 
+    if (!!this.dataSharingService.LstUnitTypes.ReservationFeeTax) {
+      // tslint:disable-next-line: max-line-length
+      this.TotalReserveAmount =  parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
+    } else {
+      this.TotalReserveAmount = this.dataSharingService.LstUnitTypes.ReservationFee;
+    }
+
+
+   // tslint:disable-next-line: max-line-length
+   this.totalMoveInAmount = parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
 
     if (this.router.url === '/view-rates/payReservationCharges') {
       this.navigateToReserve = true;
@@ -192,7 +196,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
     if (this.router.url ===  '/pay-rent/payment' ) {
       this.navigateToMoveInPayment = true;
-    }  
+    }
   }
 
   ngOnInit() {
@@ -334,6 +338,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             this.displayBalance = Math.abs(this.balance);
           } else {
             this.displayBalance = this.balance;
+          }
+
+
+          if (this.balance <= 0 ) {
+            this.showInput = true;
           }
 
             // tslint:disable-next-line: max-line-length
@@ -620,6 +629,27 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       return;
     } else {
       this.showloaderForPayment = true;
+      if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
+        if (this.surcharge > 0) {
+          this.payRentForm.patchValue({
+            objPayment: {
+              PaymentAmount: this.AmountToPay
+            }
+          });
+        } else if (this.otherValue > 0) {
+          this.payRentForm.patchValue({
+            objPayment: {
+              PaymentAmount: this.otherValue
+            }
+          });
+        } else {
+          this.payRentForm.patchValue({
+            objPayment: {
+              PaymentAmount: this.balance
+            }
+          });
+        }
+      }
       this.makePayment(this.payRentForm.value);
     }
   }

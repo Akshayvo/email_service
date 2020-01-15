@@ -20,7 +20,7 @@ export class PayRentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent online quickly, and easily, with our handy tenant portal. Simply follow the instructions, 
+      content: `Pay your rent online quickly, and easily, with our handy tenant portal. Simply follow the instructions,
                 or call our office to access your account!`
     });
     this.titleService.setTitle('Pay Rent | Sto and Go');
