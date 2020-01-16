@@ -263,7 +263,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     if ( this.showInput) {
       if (this.customOtherValue) {
-        this.surchargeService.setAmt(this.customOtherValue);
+        this.surchargeService.setAmt(Math.round(this.customOtherValue));
         this.getSurCharge();
       }
     } else {
@@ -278,7 +278,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.id = e.target.id;
       this.surcharge = 0;
     } else {
-      this.surchargeService.setAmt(this.balance);
+      this.surchargeService.setAmt(Math.round(this.balance));
       this.getSurCharge();
       this.showInput = false;
 
@@ -288,7 +288,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   onKeyUp(e: any) {
     if (e.target.value > 0) {
       this.customOtherValue = e.target.value;
-      this.surchargeService.setAmt(e.target.value);
+      this.surchargeService.setAmt(Math.round(e.target.value));
       const amoutForCharge = this.surchargeService.getAmt();
       if (amoutForCharge > 0) {
             setTimeout(() => {
@@ -306,7 +306,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         if (tenantData) {
           const { Tenant } = tenantData;
           this.balance = Tenant.Balance;
-          this.surchargeService.setAmt(this.balance);
+          this.surchargeService.setAmt(Math.round(this.balance));
           this.surchargeService.getIdPaytype(this.paytypeid);
           this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled,
           this.date = Tenant.LastPaymentOn;
@@ -430,11 +430,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
       if (this.showInput) {
        if (this.customOtherValue) {
-          this.surcharge = result.decTotalAmount - this.customOtherValue;
+          this.surcharge = Math.round(result.decTotalAmount - this.customOtherValue);
         }
         } else {
           if (this.balance > 0) {
-            this.surcharge = result.decTotalAmount - this.balance;
+            this.surcharge = Math.round(result.decTotalAmount - this.balance);
           }
         }
       }, (err: any) => {
