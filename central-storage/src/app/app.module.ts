@@ -119,7 +119,7 @@ import { PaymentIframePageComponent } from './iframe-bundle/payment-iframe-page/
       useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
           window.location.href = (route.data as any).externalUrl;
       }
-    }
+    },
     {
       provide: HTTP_INTERCEPTORS,
       useClass: RequestInterceptorService,

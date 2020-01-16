@@ -41,9 +41,9 @@ export class RentNowComponent implements OnInit, OnDestroy {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Move into one of our self storage units or 110v or 220v electrified workshop units in minutes! Fill out our lease, pay online, and you'll receive your unique secure gate code!`
+      content: ``
     });
-    this.titleService.setTitle('Rent Now | State Storage Workshops');
+    this.titleService.setTitle('');
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();

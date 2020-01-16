@@ -19,9 +19,10 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Small businesses don't always operate on normal business hours, that's why we offer 24 hour access to your account!`
+      content: `Pay your rent online in minutes with our easy tenant portal!
+                Follow the instructions on this page or call our managers any time!`
     });
-    this.titleService.setTitle('Pay Rent | State Storage Workshops');
+    this.titleService.setTitle('Pay Rent | Central Storage');
   }
 
   ngOnInit() {
