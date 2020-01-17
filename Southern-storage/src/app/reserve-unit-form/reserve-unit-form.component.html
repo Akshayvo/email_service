@@ -127,9 +127,10 @@
                                  (change)="selectChangeHandler($event)"
                                 >
                                      <option *ngFor="let lstUnitType of lstUnitTypes"
-                                     [value]="lstUnitType?.Description "
+                                     [value]="lstUnitType?.Description"
+                                     [class.display-none]="!lstUnitType.IsUnitsAvailable"
                                      >
-                                     {{lstUnitType.Description}}
+                                         {{lstUnitType.Description}}
                                      </option>
                                     </select>
                                 </div>
@@ -159,7 +160,7 @@
                                 <select class="form-control" formControlName="PeriodDescription"
                                  [id]="LstRentalPeriod?.PeriodDescription" 
                                  (change)="changeRate($event)">
-                                    <option *ngFor="let LstRentalPeriod of LstRentalPeriods" [value]="LstRentalPeriod?.PeriodDescription" >
+                                    <option *ngFor="let LstRentalPeriod of LstRentalPeriods"  [value]="LstRentalPeriod?.PeriodDescription" >
                                         {{LstRentalPeriod.PeriodDescription}}
                                     </option>
                                 </select>
