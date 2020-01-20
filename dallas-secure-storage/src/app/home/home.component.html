@@ -1,0 +1,169 @@
+<div class="jumbotron-home">
+  <!-- <div class="for-desktop-view">
+    <div class="jumbotron-desktop">
+      <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Pittsburgh_Images/pittsburgh-area-storage-centers.jpg" width="100%" height="100%" alt="">
+    </div>
+  </div> -->
+
+    
+  <!-- <div class="for-mobile-view"> -->
+    <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselJumbo" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="jumbotron-top jumbotron-top-style">
+            <!-- <div class="carousel-caption">
+              <img src="" alt="">
+            </div> -->
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="jumbotron-top2 jumbotron-top-style">
+            <!-- <div class="carousel-caption">
+              <img src="" alt="">
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+    
+  <!--Feature Box-->
+    <div class="container feature-block disp">
+      <div class="row h-100">
+        <div class="col-3 my-auto" *ngFor= "let feature of features">
+          <p class="text-center f-block-img"> 
+            <img src="{{feature.data}}" alt="{{feature.alt}}" class="f-img">
+          </p>
+          <p class="text-center f-text">
+            {{feature.label}}
+          </p>
+        </div>
+      </div>
+    </div>
+  <!--Feature Box Ends Here-->
+</div>
+
+<!--Contact Details-->
+<!-- <div class="bg-light for-location"> 
+  <div class="locaion-selection">
+    <app-select-location (click)="receiveMessage()"></app-select-location>
+  </div> 
+    <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <span *ngIf="locationId == 1">
+            <iframe src="" width="100%" height="100%" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+          </span>
+          <span *ngIf="locationId == 3">
+            <iframe src="" width="100%" height="100%" frameborder="0" style="border:2px #fff solid;" allowfullscreen></iframe>
+          </span>
+      </div>
+      <div class="col-md-4  pl-4 pt-3">
+        <h2>{{heading}}</h2>
+        <p> 
+          <span *ngFor="let contact of contactDetails">
+            <b>{{contact.label}}</b> {{contact.data}}<br>
+          </span>
+        </p>
+        <span *ngIf="locationId == 1" >
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
+        </span>
+        
+        <span *ngIf="locationId == 3" >
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>
+        </span>
+      </div>
+      <div class="col-md-3 contact-hours pt-3">
+          <h2>Hours:</h2>
+          <p>
+            <span class="hourdata" *ngFor="let hour of hoursDetails">
+              <b>{{hour.label}}</b>{{hour.data}}<br>
+            </span>
+          </p>
+      </div>
+    </div>
+  </div>  
+</div> -->
+<div class="pb-5 pt-5 bg-light">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11302.0830489133!2d-123.2925867!3d44.9127443!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9c24dffa3cb9d5e2!2sDallas%20Secure%20Storage%2FGodsey!5e0!3m2!1sen!2sus!4v1579480306904!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-4  pl-4 pt-3">
+        <h2>Dallas Secure Storage</h2>
+        <p> 
+          <span *ngFor="let contact of contactsLocation1">
+            <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+          </span>
+        </p>
+        <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/dallas-secure-storage/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+        <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/dallas-secure-storage/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
+      </div>
+      <div class="col-md-3 contact-hours pt-3">
+          <h2>Hours:</h2>
+          <p>
+            <span class="hourdata" *ngFor="let hour of hoursLocation1">
+              <b>{{hour.label}}</b>{{hour.data}}<br>
+            </span>
+          </p>
+      </div>
+    </div>
+  </div>  
+</div>
+<div class="pb-5 pt-5 ">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11301.48985172141!2d-123.2929286!3d44.9157606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x40ab5e7d466539ee!2sGodsey%20Secure%20Storage!5e0!3m2!1sen!2sus!4v1579482740174!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-4  pl-4 pt-3">
+        <h2>Godsey Secure Storage</h2>
+        <p> 
+          <span *ngFor="let contact of contactsLocation3">
+            <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+          </span>
+        </p>
+        <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/godsey-secure-storage/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
+        <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/godsey-secure-storage/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>
+      </div>
+      <div class="col-md-3 contact-hours pt-3">
+          <h2>Hours:</h2>
+          <p>
+            <span class="hourdata" *ngFor="let hour of hoursLocation3">
+              <b>{{hour.label}}</b>{{hour.data}}<br>
+            </span>
+          </p>
+      </div>
+    </div>
+  </div>  
+</div>
+<!--Contact Details Ends Here-->
+
+
+<!--Service-->
+  <div class="service bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 pt-2">
+            <h1  class="pb-4">Storage Units in Dallas, Oregon</h1>
+            <div *ngFor="let para of serviceOffered">
+              <p>{{ para.p }}</p>
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <app-aboutus-photos></app-aboutus-photos>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Service Ends Here-->

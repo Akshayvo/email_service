@@ -1,0 +1,19 @@
+.carousel-indicators li {
+    background-color: black;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+  }
+  .carousel-item {
+    height: 175px;
+  }
+  .storageUnitHolder {
+    margin-bottom: 50px;
+    padding: 64px;
+    background-color: #f1f0ed;
+  
+    .coming-soon {
+      font-size: 2rem;
+      padding: 20%;
+    }
+  }
