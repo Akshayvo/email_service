@@ -14,15 +14,14 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'tel:5853816557',
+        redirect: 'tel:5856733140',
         label: 'Phone: ',
-        data: '(585) 381-6557',
+        data: '(585) 673-3140',
         class: 'fas fa-phone mr-2 iconColor',
     }
 ];
 
 export const hours = [
-   
     {
         label: 'Monday - Friday: ',
         data: '9:00AM - 4:00PM'
