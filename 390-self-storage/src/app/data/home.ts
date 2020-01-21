@@ -107,7 +107,7 @@ export const testimonials = [
     },
     {
         p: `Clean and well-managed`,
-        name: 'Fred Dewey'
+        name: '- Fred Dewey'
     },
     {
         p: `Great place. Customer service seems to be a priority. Clean and maintained.`,
