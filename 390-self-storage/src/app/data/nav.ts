@@ -42,6 +42,11 @@ export const navLinks = [
         type: 'link',
     },
     {
+        label: 'TESTIMONIALS',
+        path: 'testimonials',
+        type: 'link',
+    },
+    {
         label: 'CONTACT US',
         path: 'contact-us',
         type: 'link',

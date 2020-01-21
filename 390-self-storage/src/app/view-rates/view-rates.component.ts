@@ -20,7 +20,7 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to review our self storage unit rates, then click the Reserve button and 
+      content: `Take a moment to review our self storage unit rates, then click the Reserve button and
                 reserve a space at the newest self storage facility in Rochester!`
     });
     this.titleService.setTitle('View Rates | 390 Self Storage');

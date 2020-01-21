@@ -88,6 +88,10 @@ img  {
     padding-right: .3rem;
     padding-left: .3rem;
   }
+  .nav-item {
+    font-size: 0.85rem;
+  }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -122,7 +126,7 @@ img  {
   }
 }
 
-@media only screen and (max-width: 991px) and (max-height: 555px) {
+@media only screen and (max-width: 991px) and (max-height: 620px) {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;

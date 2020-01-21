@@ -88,6 +88,37 @@ export const aboutUs = [
     }
 ];
 
+export const testimonials = [
+    {
+        p: `I've rented a storage unit here for about 7 years.  The units and area around them are clean
+            and well kept and the people in the office are nice and pleasant to work with.  They also offer
+            climate controlled units and the prices are very reasonable.  They are convenient to where I
+            live so are readily accessible.`,
+        name: '- Porlebeke'
+    },
+    {
+        p: `Very friendly staff and a great, safe location to store your things!`,
+        name: `- Z Daily`
+    },
+    {
+        p: `Rented a space here for over a year. Very clean and safe place to store your items.
+            They offer climate-controlled storage as well.`,
+        name: `- SF`
+    },
+    {
+        p: `Clean and well-managed`,
+        name: 'Fred Dewey'
+    },
+    {
+        p: `Great place. Customer service seems to be a priority. Clean and maintained.`,
+        name: `- Andy Dickason`
+    },
+    {
+        p: `Great service. Secure and clean.`,
+        name: `- Lisa D`
+    }
+];
+
 
 export const gettingStarted = `If you're ready to reclaim that space around your home, or expand your business
 without breaking the bank on commercial real estate just to store supplies, give 390 Self Storage a call!`;
