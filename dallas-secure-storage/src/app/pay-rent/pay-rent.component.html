@@ -24,8 +24,6 @@
               <p> <b>John's Username:</b>  jsmith <br>
               <p> <b>John's Password:</b> 1234 <br>
               <p> <b>Have question about your account?</b> </p>
-              <!-- <p> {{contact.data}} </p> -->
-              <!-- <p><a href="tel:3043441104">(304) 344-1104</a></p> -->
               <p>
                   <span *ngFor="let contact of contact" [class.display-none]="contact?.id == 0"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
                 </span>
