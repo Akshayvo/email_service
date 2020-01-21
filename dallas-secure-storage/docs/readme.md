@@ -3,9 +3,9 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace Pittsburgh-website with your project name(Hyphen Case)
+Replace dallas-secure-storage with your project name(Hyphen Case)
 
-Replace PittsburghWebsite with your project name(camelCase)
+Replace dallas-secure-storage with your project name(camelCase)
 
 Find and Replace across project
 

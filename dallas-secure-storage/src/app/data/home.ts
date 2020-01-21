@@ -2,22 +2,22 @@
 export const featuresHead = [
     {
         label: '2 Convenient Locations',
-        data: '../../assets/location.svg',
+        data: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/location.svg',
         alt: 'Icon art displaying a location pin'
     },
     {
         label: 'Online Reservation & Bill Pay',
-        data: '../../assets/online.svg',
+        data: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/online.svg',
         alt: ' Icon art displaying a screen with cursor'
     },
     {
         label: 'Well-Lit Facilities',
-        data: '../../assets/light-bulb.svg',
+        data: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/light-bulb.svg',
         alt: 'Icon of an illuminated light'
     },
     {
         label: 'Locally Owned and Operated',
-        data: '../../assets/team.svg',
+        data: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/team.svg',
         alt: 'Icon of people standing together '
     },
 ];

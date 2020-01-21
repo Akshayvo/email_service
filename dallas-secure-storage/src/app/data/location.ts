@@ -224,12 +224,12 @@ export const aboutUsHeadingLocation1 = `About Dallas Secure Storage`;
 
 export const aboutUsHeadingLocation3 = `About Us`;
 
-export const aboutUsImageLocation1 = `../../assets/all-space-indoor-units.jpg`;
+export const aboutUsImageLocation1 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/all-space-indoor-units.jpg`;
 
 // tslint:disable-next-line:max-line-length
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation3 = `../../assets/godsey-secure-storage-front-gate.jpg`;
+export const aboutUsImageLocation3 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/godsey-secure-storage-front-gate.jpg`;
 
 export const aboutUsLocation1 = [
     {

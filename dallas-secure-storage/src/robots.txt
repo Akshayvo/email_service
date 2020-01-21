@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://pittsburghareastoragecenters.com/sitemap.xml
+Sitemap: http://dallassecure-staging.syrasoft.com/sitemap.xml
 User-agent: *
 Disallow:

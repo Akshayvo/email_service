@@ -31,11 +31,11 @@ export class HeaderComponent implements OnInit {
 
   public isSomePage() {
     if (this.router.url.includes('/location/dallas-secure-storage')) {
-        this.logo = '../../assets/dollas_txtlogo.gif';
+        this.logo = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/dollas_txtlogo.gif';
     } else  if (this.router.url.includes('/location/godsey-secure-storage'))  {
-        this.logo = '../../assets/dollas_txtlogo.gif';
+        this.logo = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/dollas_txtlogo.gif';
     } else {
-      this.logo = '../../assets/dollas_txtlogo.gif';
+      this.logo = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/dollas_txtlogo.gif';
     }
   }
 
