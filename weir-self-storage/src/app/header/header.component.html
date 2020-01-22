@@ -1,0 +1,39 @@
+<div class="col-md-12 bg-secondary display py-3">
+  <div class="container">
+    <div class="contact-header">
+      <div class="row">
+        <div class="col-md-10">
+          <span class="contact-details" *ngFor="let contact of contactDetails" [class.display-none]="contact.id ===1"  >
+            <i class="icon" *ngIf="contact.id !== 1" [class]="contact?.class"></i><span class="contact-links pr-4" *ngIf="contact?.id > 1 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+            <ng-template #other_content>&nbsp;<span class="contact-links pr-4" *ngIf="contact.id === 0">{{contact.data}}</span></ng-template>
+          </span>
+        </div>
+        <div class="col-md-2 ml-auto" style="text-align: right">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-white py-0">
+  <div class="container">
+    <a class="navbar-brand" (click)="navigate('/')">
+      <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Weir_Self_Storage/weir-moving-and-storage-logo.png" width="auto" height="80" alt="logo artwork that spells the words Weir Moving & Storage" class="py-2">
+    </a>
+    <button class="navbar-toggler py-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
+      <ul class="navbar-nav ml-auto navbar-nav-scroll">
+        <li class="nav-item px-xl-2 px-lg-0" *ngFor="let nav of navLinks">
+                  <a class="nav-link " [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+                  [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)" *ngIf="nav?.path != '/pay-rent'">{{nav.label}}</a>
+                  <a class="nav-link " [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+                  [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)" *ngIf="nav?.path === '/pay-rent'">{{nav.label}}</a>
+                </li>
+      </ul>
+    </div>
+  </div>
+</nav>
