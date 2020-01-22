@@ -613,7 +613,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       } else {
         this.showloaderForPayment = true;
         if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
-          if (this.surcharge > 0) {
+          if (this.AmountToPay > 0) {
             this.payRentForm.patchValue({
               objPayment: {
                 PaymentAmount: this.AmountToPay
