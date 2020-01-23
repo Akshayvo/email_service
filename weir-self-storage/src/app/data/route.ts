@@ -30,10 +30,10 @@ import { UnitSizerIframePageComponent } from '../iframe-bundle/unit-sizer-iframe
  export const apiRoutes = [
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
-    { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storage-tips', component: StorageTipsComponent },
     { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
+    {path: 'unit-sizer', component: UnitSizerIframePageComponent},
     { path: 'contact-us', component: ContactComponent },
     {
       path: 'view-rates',

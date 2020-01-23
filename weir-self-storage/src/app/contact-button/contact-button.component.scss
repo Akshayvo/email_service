@@ -50,7 +50,17 @@
     font-size: 1.5rem;
   }
 }
-@media screen  and(min-width:1200px){
+
+@media screen  and (min-width: 1200px) {
+  .contact-button-data {
+    overflow: auto;
+    overflow-y: scroll;
+    height: 70vh;
+    width: 300px;
+  }
+}
+
+@media screen and(max-width: 1200px)  and (min-width: 992px) {
   .contact-button-data {
     overflow: auto;
     overflow-y: scroll;
@@ -58,14 +68,7 @@
     width: 300px;
   }
 }
-@media screen and(max-width:1200px)  and (min-width:992px) {
-  .contact-button-data {
-    overflow: auto;
-    overflow-y: scroll;
-    height: 80vh;
-    width: 300px;
-  }
-}
+
 @media screen and (max-width: 600px) {
   .contact-button-data {
     overflow: auto;
@@ -96,11 +99,12 @@
     font-size: 1.3rem;
   }
 }
+
 @media screen and (max-height: 950px) and (min-height: 751px) {
   .contact-button-data {
     overflow: auto;
     overflow-y: scroll;
-    height: 85vh;
+    height: 70vh;
     width: 300px;
   }
 }

@@ -19,7 +19,7 @@
 
 
 .contentHolder {
-  padding-top: 90px;
+  padding-top: 146px;
   min-height: 96vh;
   margin-bottom: 50px;
 
@@ -31,7 +31,8 @@
       width: 100%;
       overflow: auto;
     }
-    .background-padding{
+
+    .background-padding {
       height: 1500px;
     }
   }
@@ -47,17 +48,16 @@ table {
 
   thead {
     background: $secondary;
+
     th {
       color: $white;
       font-size: 1rem;
     }
   }
+
   tbody {
-    tr:nth-child(even){
-      background-color: #dcdcdc;
-    }
     tr {
-      td {
+        td {
 
         button {
           font-size: 0.8rem;
@@ -76,6 +76,10 @@ table {
         }
       }
     }
+    tr:nth-child(even) {
+      background-color: #dcdcdc;
+    }
+
   }
 }
 
@@ -122,47 +126,46 @@ table {
 @media only screen and (max-width: 991px) and (min-width: 768px) {
     .contentHolder {
       padding-top: 100px;
-    }
-  
-  }
-  
+ }
+}
+
   @media only screen and (max-width: 767px) and (min-width: 601px) {
     .contentHolder {
       padding-top: 100px;
-    }
-  
+  }
+
     .view-rates {
       padding: 40px;
-    }
-  
+  }
+
     .view-rates-padding {
       padding-top: 24px;
-    }
   }
-  
+}
+
   @media screen and (max-width: 600px) {
     .contentHolder {
       padding-top: 100px;
-      
-    }
-  
-    .view-rates {
-      background-color: #edf1ee;
-      padding: 16px 0;
-    }
-  
+  }
+
+  .view-rates {
+    background-color: #edf1ee;
+    padding: 16px 0;
+  }
+
+
     .scroll-wrapper {
-      -webkit-overflow-scrolling: touch;
-      overflow-x: scroll;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-  
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
       iframe {
         width: 100%;
         overflow: scroll;
-      }
-    }
-  
+   }
+}
+
     img {
       height: 200px;
       width: 100%;
@@ -170,12 +173,7 @@ table {
     .background-padding{
       padding: 20px;
   }
-  
     .view-rates-padding {
-      padding-top: 24px;
-    }
+        padding-top: 24px;
   }
-
-
-
-  
+}
