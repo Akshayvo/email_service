@@ -306,18 +306,26 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   onKeyUp(e: any) {
-    if (e.target.value > 0) {
-      this.customOtherValue = e.target.value;
-      this.surchargeService.setAmt(Math.round(e.target.value));
-      const amoutForCharge = this.surchargeService.getAmt();
-      if (amoutForCharge > 0) {
-            setTimeout(() => {
-            this.getSurCharge();
-        }, 1000);
-      }
-    } else {
-        this.AmountToPay = 0;
-    }
+
+    // if (e.target.value > 0) {
+    //   this.customOtherValue = e.target.value;
+    //   this.surchargeService.setAmt(Math.round(e.target.value));
+    //   const amoutForCharge = this.surchargeService.getAmt();
+    //   if (amoutForCharge > 0) {
+    //         setTimeout(() => {
+    //         this.getSurCharge();
+    //     }, 1000);
+    //   }
+    // } else {
+    //     this.AmountToPay = 0;
+    // }
+
+
+    this.customOtherValue = e.target.value;
+    this.surchargeService.setAmt(Math.round(e.target.value));
+        setTimeout(() => {
+        this.getSurCharge();
+    }, 1000);
   }
 
   getTenantInfo() {
