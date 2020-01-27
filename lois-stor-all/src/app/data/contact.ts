@@ -20,9 +20,9 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'mailto:loisstorall@gmail.com',
         label: 'Email: ',
         data: 'loisstorall@gmail.com',
+        redirect: 'mailto:loisstorall@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     }
 ];
