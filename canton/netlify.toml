@@ -27,6 +27,70 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "selfstorage"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "selfstorage/index.html"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "selfstorage/feed/index.html"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "contact-us"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "key-points-about-undercover-boat-storage"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "self-storage/self-storage-tips"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "selfstorage/sizeguide"
+  to = "/location/lincoln-street-storage/unitSizer?currentTab=Unit%20Sizer"
+  status = 301
+[[redirects]]
+  from = "selfstorage/selfstoragetips"
+  to = "/storage-tips "
+  status = 301
+[[redirects]]
+  from = "selfstorage/selfstoragefaq"
+  to = "/storage-tips "
+  status = 301
+[[redirects]]
+  from = "selfstorage/findselfstorage"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "selfstorage/undercoverboatstorage"
+  to = "/storage-tips "
+  status = 301
+[[redirects]]
+  from = "selfstorage/rvstorage"
+  to = "/storage-tips "
+  status = 301
+[[redirects]]
+  from = "storageinsurance"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "aboutus"
+  to = "/location/lincoln-street-storage/about?currentTab=About%20Us"
+  status = 301
+[[redirects]]
+  from = "calculator"
+  to = "/location/lincoln-street-storage/unitSizer?currentTab=Unit%20Sizer"
+  status = 301
+[[redirects]]
+  from = "contactus"
+  to = "/contact"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
