@@ -27,7 +27,6 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
     this.resetPasswordForm = this.formBuilder.group({
       emailID: ['', [Validators.required, Validators.email]],
       strPasswordToken: ['', Validators.required],
-      // strOldPassword: ['', Validators.required],
       strNewPassword: ['', Validators.required],
     });
 

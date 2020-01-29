@@ -204,7 +204,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.getPayMethods();
     this.fetchMonth();
-
   }
 
   get f() { return this.payRentForm.controls; }

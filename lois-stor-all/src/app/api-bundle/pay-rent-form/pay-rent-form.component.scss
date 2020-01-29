@@ -9,6 +9,7 @@
     background-color: white;
   }
 }
+
 .display-surcharge {
   display: none;
 }
@@ -27,14 +28,16 @@ table {
 }
 
 .modal {
-  td, th {
-    font-size: 0.8rem;
+  td {
+    th {
+      font-size: 0.8rem;
+    }
   }
 }
 
 .modal-dialog {
-    max-width: 650px;
-    margin: 1.75rem auto;
+  max-width: 650px;
+  margin: 1.75rem auto;
 }
 
 .display {
@@ -107,7 +110,6 @@ table {
   position: absolute;
   z-index: 1;
   top: 45%;
-  left: 45%;
 }
 
 .go-to-home {
@@ -117,7 +119,6 @@ table {
     cursor: pointer;
   }
 }
-
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .btn-link {
@@ -136,15 +137,16 @@ table {
 }
 
 @media only screen and (min-width: 576px) {
-
   .modal {
-    td, th {
-      font-size: 0.8rem;
+    td {
+      th {
+        font-size: 0.8rem;
+      }
     }
   }
 
   .modal-dialog {
-      max-width: 650px;
-      margin: 1.75rem auto;
+    max-width: 650px;
+    margin: 1.75rem auto;
   }
 }
