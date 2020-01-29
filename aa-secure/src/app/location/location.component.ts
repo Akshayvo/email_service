@@ -82,24 +82,16 @@ export class LocationComponent implements OnInit {
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate(['/location/730-kenton-station/reservations'],
-          { queryParams: { name: '730 Kenton Station Location', currentTab: 'Reserve Unit' },
-          skipLocationChange: true, queryParamsHandling: null }
-          );
+    this.router.navigate(['/location/730-kenton-station/reservations']
+    );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/751-kenton-station/reservations'],
-          { queryParams: { name: 'Location2', currentTab: 'Reserve Unit' },
-          skipLocationChange: true, queryParamsHandling: null}
+    this.router.navigate(['/location/751-kenton-station/reservations']
           );
   } else if ( this.locationId === 3) {
-    this.router.navigate(['/location/augusta/reservations'],
-          { queryParams: { name: 'Location3', currentTab: 'Reserve Unit' },
-          skipLocationChange: true, queryParamsHandling: null}
+    this.router.navigate(['/location/augusta/reservations']
           );
   } else if ( this.locationId === 4) {
-    this.router.navigate(['/location/113-mcDonald-parkway/reservations'],
-          { queryParams: { name: 'Location3', currentTab: 'Reserve Unit' },
-          skipLocationChange: true, queryParamsHandling: null}
+    this.router.navigate(['/location/113-mcDonald-parkway/reservations']
           );
   }
  }

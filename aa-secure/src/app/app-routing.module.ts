@@ -17,7 +17,7 @@ const routes: Routes = [
     component: LocationComponent,
     children: [
       // { path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: '', redirectTo: 'reservations', pathMatch: 'full'},
+      { path: '', redirectTo: 'reservations', pathMatch: 'prefix'},
       { path: 'reservations', component: ReserveUnitComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
@@ -27,7 +27,7 @@ const routes: Routes = [
     component: LocationComponent,
     children: [
       // { path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: '', redirectTo: 'reservations', pathMatch: 'full'},
+      { path: '', redirectTo: 'reservations', pathMatch: 'prefix'},
       { path: 'reservations', component: ReserveUnitComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
@@ -37,7 +37,7 @@ const routes: Routes = [
     component: LocationComponent,
     children: [
       // {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: '', redirectTo: 'reservations', pathMatch: 'full'},
+      { path: '', redirectTo: 'reservations', pathMatch: 'prefix'},
       { path: 'reservations', component: ReserveUnitComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
@@ -46,7 +46,7 @@ const routes: Routes = [
   { path: 'location/113-mcDonald-parkway',
   component: LocationComponent,
   children: [
-    { path: '', redirectTo: 'reservations', pathMatch: 'full'},
+    { path: '', redirectTo: 'reservations', pathMatch: 'prefix'},
     { path: 'reservations', component: ReserveUnitComponent },
     { path: 'about', component: AboutUsComponent },
   ]

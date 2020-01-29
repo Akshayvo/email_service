@@ -5,7 +5,6 @@ export const contactsLocation1 = [
         data: '730 Kenton Station Rd, Maysville, KY 41056',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
-    
     {
         id: 2,
         label: 'Email:',
@@ -44,8 +43,6 @@ export const contactsLocation2 = [
         data: '751 Kenton Station Rd, Maysville, KY 41056',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
-
-    
     {
         id: 2,
         label: 'Email:',
@@ -84,8 +81,6 @@ export const contactsLocation3 = [
         data: '306 Heather Renee French Blvd Augusta, KY 41002',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
-
-    
     {
         id: 2,
         label: 'Email:',
@@ -124,8 +119,6 @@ export const contactsLocation4 = [
         data: '113 E Mcdonald Pkwy, Maysville, KY 41056',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
-
-    
     {
         id: 2,
         label: 'Email:',

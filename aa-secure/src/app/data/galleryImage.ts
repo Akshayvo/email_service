@@ -84,7 +84,7 @@ export const galleryImagesLocation3 = [
         alt: `Photograph of car wash bays with self storage units`,
     },
   ];
-  
+
 export const galleryDataLocation1 = [
   { p: `We are proud of our high-quality, well-maintained self storage units. Our climate - controlled units at the 730 Kenton Station Rd location
   are ready and waiting for those belongings or equipment that require a little extra protection from the elements. ` }
@@ -121,4 +121,3 @@ export const galleryImagesHome = [
         alt: ` photograph of a self storage building with oversized roll-up doors`,
     },
 ];
-    
