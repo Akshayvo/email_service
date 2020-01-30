@@ -27,6 +27,18 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/author/stoandgo1"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/rates"
+  to = "/view-rates"
+  status = 301
+[[redirects]]
+  from = "/climate-controlled-indoor-storage"
+  to = "/"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
