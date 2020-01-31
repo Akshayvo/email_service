@@ -11,6 +11,7 @@ export class DataSharingService {
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
   isValueUpdated: boolean;
+  insuranceChoiceId: number;
 
 
   MoveInData = {

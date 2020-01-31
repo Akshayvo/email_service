@@ -5,7 +5,7 @@ import { AuthService } from '../services/auth.service';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
-
+import { MustMatch } from './_helpers/must-match.validator';
 @Component({
   selector: 'app-change-password',
   templateUrl: './change-password.component.html',
@@ -15,22 +15,25 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
 
   changePasswordForm: FormGroup;
   submitted = false;
-  showLoader = false;
   incorrectPassword = false;
-
+  showLoader = false;
   passwordChanged = false;
-   private changePasswordUnsubscribe$: Subscription;
+  private changePasswordUnsubscribe$: Subscription;
 
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
-    private dataSharingService: DataSharingService,
     public router: Router,
+    private dataSharingService: DataSharingService,
 
   ) {
     this.changePasswordForm = this.formBuilder.group({
       strOldPassword: ['', [Validators.required]],
       strNewPassword: ['', [Validators.required]],
+      confirmPassword: ['', [Validators.required]]
+    },
+    {
+      validator: MustMatch('strNewPassword', 'confirmPassword')
     });
   }
 
@@ -58,10 +61,11 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
   this.changePasswordUnsubscribe$ =  this.authService.changePassword(data)
     .subscribe(
       result => {
+        this.showLoader = false;
         if (result.intErrorCode === 1) {
           localStorage.removeItem('strTenantToken');
-          this.showLoader = false;
           this.passwordChanged = true;
+          this.dataSharingService.changePassword = false;
         } else {
           this.incorrectPassword = true;
         }
@@ -84,5 +88,4 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
       this.changePasswordUnsubscribe$.unsubscribe();
     }
   }
-
 }

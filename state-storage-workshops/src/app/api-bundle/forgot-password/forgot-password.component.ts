@@ -17,6 +17,7 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
   forgotPasswordForm: FormGroup;
   submitted = false;
   showLoader = false;
+  showNoError = false;
 
    private forgotPasswordUnsubscribe$: Subscription;
 
@@ -45,9 +46,13 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
   this.forgotPasswordUnsubscribe$ =  this.authService.forgotPassword(data)
     .subscribe(
       result => {
+        this.showLoader = false;
         if (result.intErrorCode === 1) {
-          this.showLoader = false;
           this.router.navigate(['pay-rent/verifyCode']);
+        } else {
+          if (result.intErrorCode === 0) {
+            this.showNoError = true;
+          }
         }
        }, (err) => {
       }

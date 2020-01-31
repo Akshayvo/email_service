@@ -99,6 +99,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   navigateToMoveInPayment: boolean;
   tenantTokenExist = false;
 
+  cardType: string;
+
   private OptionOutOfAutoPaySubscribe$: Subscription;
   private signUpAutoPaySubscribe$: Subscription;
   private signOutSubscribe$: Subscription;
@@ -153,9 +155,14 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     this.navigateToReserve = this.dataSharingService.navigateToReserve;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
-    this.TotalReserveAmount =
-   // tslint:disable-next-line: max-line-length
-   parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
+
+    if (!!this.dataSharingService.LstUnitTypes.ReservationFeeTax) {
+      this.TotalReserveAmount =
+     // tslint:disable-next-line: max-line-length
+     parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
+    } else {
+      this.TotalReserveAmount = this.dataSharingService.LstUnitTypes.ReservationFee;
+    }
     this.totalMoveInAmount =
     // tslint:disable-next-line: max-line-length
     parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
@@ -197,7 +204,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.getPayMethods();
     this.fetchMonth();
-
   }
 
   get f() { return this.payRentForm.controls; }
@@ -208,6 +214,23 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   public fetchMonth() {
     this.month = month;
+  }
+
+  autoCardType(number: any) {
+   this.cardType = this.getCardType(number.target.value);
+   const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.cardType);
+   // tslint:disable-next-line: max-line-length
+   const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
+   this.paytypeid =  cardTypeId;
+   this.surchargeService.getIdPaytype(this.paytypeid);
+   this.payRentForm.patchValue({
+     objPayment: {
+       PayType: {
+         PayTypeDescription: this.cardType,
+         PayTypeID: cardTypeId,
+       }
+     }
+   });
   }
 
    getCardType(number: any) {
@@ -262,6 +285,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         this.getSurCharge();
       }
     } else {
+      this.surchargeService.setAmt(this.balance);
       this.getSurCharge();
     }
   }
@@ -271,27 +295,22 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     if (e.target.id === '2') {
       this.showInput = true;
       this.id = e.target.id;
-      this.surcharge = 0;
+      this.surchargeService.setAmt(0);
+      this.getSurCharge();
     } else {
       this.surchargeService.setAmt(this.balance);
       this.getSurCharge();
       this.showInput = false;
+
     }
   }
 
   onKeyUp(e: any) {
-    if (e.target.value > 0) {
-      this.customOtherValue = e.target.value;
-      this.surchargeService.setAmt(e.target.value);
-      const amoutForCharge = this.surchargeService.getAmt();
-      if (amoutForCharge > 0) {
-            setTimeout(() => {
-            this.getSurCharge();
-        }, 1000);
-      }
-    } else {
-        this.AmountToPay = 0;
-    }
+    this.customOtherValue = e.target.value;
+    this.surchargeService.setAmt(e.target.value);
+        setTimeout(() => {
+        this.getSurCharge();
+    }, 1000);
   }
 
   getTenantInfo() {
@@ -414,7 +433,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.surchargeService.getSurCharge()
     .subscribe(result => {
       this.AmountToPay = result.decTotalAmount;
-
 
       if (this.showInput) {
        if (this.customOtherValue) {
@@ -581,16 +599,16 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       } else {
         this.showloaderForPayment = true;
         if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
-          if (this.surcharge > 0) {
+          if (this.AmountToPay > 0) {
             this.payRentForm.patchValue({
               objPayment: {
                 PaymentAmount: this.AmountToPay
               }
             });
-          } else if (this.otherValue > 0) {
+          } else if (this.customOtherValue > 0) {
             this.payRentForm.patchValue({
               objPayment: {
-                PaymentAmount: this.otherValue
+                PaymentAmount: this.customOtherValue
               }
             });
           } else {
