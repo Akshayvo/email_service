@@ -13,7 +13,7 @@ export const featuresList = [
         td2: 'Drive-Up Units',
     },
     {
-        td1: 'Truck Rentals',
+        td1: 'Affordable Rates',
         td2: 'Auto-Pay Available'
     },
     {
@@ -22,7 +22,6 @@ export const featuresList = [
     },
     {
         td1: 'Pin-Pad Activated Security Gate',
-        td2: 'Affordable Rates',
     },
 ];
 
