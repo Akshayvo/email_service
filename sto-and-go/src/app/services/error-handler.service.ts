@@ -6,12 +6,9 @@ import { ErrorReportingService } from './error-reporting.service';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import * as StackTraceParser from 'error-stack-parser';
 
-
 @Injectable({
   providedIn: 'root'
 })
-
-
 export class ErrorHandlerService implements ErrorHandler {
 
   constructor(
@@ -21,17 +18,13 @@ export class ErrorHandlerService implements ErrorHandler {
     console.log('Error reporting initialized');
   }
 
-  // public navigate(location: any) {
-  //   this.router.navigate([location]);
-  // }
-
   handleError(error: Error | HttpErrorResponse) {
     console.log('Error');
     const router = this.injector.get(Router);
 
     if (error instanceof HttpErrorResponse) {
       // Server error happened
-      if (navigator && !navigator.onLine) {
+      if (!navigator.onLine) {
         // No Internet Connection
         console.log('App Error -> Not Online');
       } else {
@@ -43,11 +36,12 @@ export class ErrorHandlerService implements ErrorHandler {
     }
     const errorWithContext = this.addContextInfo(error);
     // Generic route /error -> Error Handler Component
-    if ( errorWithContext.message.includes('window is not defined') ) {
+    if ( errorWithContext.message === 'window is not defined' ) {
       console.log('window is not defined');
     } else {
       this.reportError(errorWithContext);
       router.navigate(['/error']);
+
     }
   }
 
