@@ -96,7 +96,7 @@
     .jumbotron-skew-text {
       width: 24%;
       position: absolute;
-      top: 35%;
+      top: 30%;
       color: $fontColor;
     }
   }
@@ -112,7 +112,8 @@
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
-        width: 472px;
+        width: 480px;
+        // top: 27%;
       }
     }
   }
@@ -139,6 +140,9 @@
 
       .jumbotron-skew-text {
         top: 30%;
+        p {
+          font-size: 0.9rem
+        }
       }
     }
   }
@@ -173,6 +177,9 @@
         top: auto;
         height: 80px;
         background: rgba(255, 255, 255, 0.9);
+        p {
+          font-size: 0.9rem;
+        }
       }
     }
   }
@@ -202,10 +209,10 @@
       }
 
       .jumbotron-skew-text {
-        width: 472px;
+        width: 480px;
         position: absolute;
         bottom: 0;
-        top: 30%;
+        top: 28%;
       }
 
       .button-width {

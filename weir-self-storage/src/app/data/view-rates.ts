@@ -1,9 +1,9 @@
 export const dataViewRates = [
     {
-        p: `Weir Self Storage has been around for over fifty years, serving the Sault Ste. Marie community with moving,
-          then self storage and vehicle parking. We know a thing or two about this industry. We understand that for many
-          families and businesses, the need for self storage comes at times of stressful change. Making your storage
-          experience as seamless and convenient as possible is our top priority.`,
+        p: `Weir Self Storage has been around for over 75 years, serving the Sault Ste. Marie community with
+            storage and vehicle parking. That experience means we know a thing or two about storage. We understand
+            that for many families and businesses, the need for self storage comes at times of stressful change.
+            Making your storage experience as seamless and convenient as possible is our top priority.`,
     },
     {
         p: `That's why while our staff is always available during office hours, we have added an online tenant portal to

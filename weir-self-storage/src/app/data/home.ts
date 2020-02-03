@@ -6,7 +6,7 @@ export const featuresList = [
     },
     {
         td1: 'Well-Lit Facility',
-        td2: 'Security Camerasy',
+        td2: 'Security Cameras',
     },
     {
         td1: 'Single-Level Facility',
@@ -56,11 +56,11 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Weir Self Storage has been serving the community of Sault Ste. Marie for over half a century with quality
-            service and great prices. Our brand new self storage units are just one more example of how our family
-            continues to find new ways to serve yours. Our new single-level, drive-up self storage units were built
-            with wide, paved lanes to make loading and unloading a breeze. You'll be able to access your belongings
-            24 hours a day, 7 days a week thanks to the ample lighting and security cameras.`,
+        p: `Weir Self Storage has been serving the community of Sault Ste. Marie for over 75 years with quality service
+            and great prices. Our brand new self storage units are just one more example of how our family continues to
+            find new ways to serve yours. Our new single-level, drive-up self storage units were built with wide, paved
+            lanes to make loading and unloading a breeze. You'll be able to access your belongings 24 hours a day,
+            7 days a week thanks to the ample lighting and security cameras.`,
     },
     {
         p: `Our self storage units and easy short term leases are the ideal solution to make a move or renovation
@@ -86,7 +86,7 @@ the office? Click here to check out our affordable rates, and make your reservat
 
 export const blurb = [
     {
-        h1: `Moving & Self Storage Services`,
+        h1: `Affordable Self Storage in Sault Ste. Marie`,
         p: `Weir Self Storage Storage has been serving Sault Ste. Marie, the eastern upper peninsula, and lower
             Michigan since 1945! Our clean, well-maintained self storage units come in a number of sizes, are
             accessible 24 hours a day, and are very competitively priced! We even offer seasonal vehicle storage
