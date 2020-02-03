@@ -8,9 +8,9 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Phone:',
-        data: '(304) 344-1104',
+        data: '(503) 623-3703',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:3043441104'
+        redirect: 'tel:5036233703'
     },
     {
         id: 2,

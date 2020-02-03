@@ -38,13 +38,13 @@ export class AboutUsComponent implements OnInit {
     this.aboutPara = aboutUsLocation1;
     this.heading = aboutUsHeadingLocation1;
     this.image = aboutUsImageLocation1;
-    this.alt = 'photograph of an open self storage unit with personal belongings inside';
+    this.alt = 'photograph of the owners, a man and a woman standing side by side';
   }
   public fetchDetailsLocation3() {
     this.aboutPara = aboutUsLocation3;
     this.heading = aboutUsHeadingLocation3;
     this.image = aboutUsImageLocation3;
-    this.alt = 'photograph of a self storage facility front gate';
+    this.alt = 'photograph of the owners, a man and a woman standing side by side';
   }
 
   public fetchServiceOffered() {

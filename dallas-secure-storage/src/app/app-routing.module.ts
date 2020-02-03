@@ -65,7 +65,7 @@ const routes: Routes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'payment', component: PaymentComponent },
-  { path: 'pay-rent', component: PayRentComponent },
+  { path: 'pay-rent-dallas', component: PayRentComponent },
   { path: 'pay-rent-godsey', component: PayRentNatronaComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },

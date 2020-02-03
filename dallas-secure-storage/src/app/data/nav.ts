@@ -5,7 +5,7 @@ export const navLinks = [
         type: 'link'
     },
     {
-        label: 'Location',
+        label: 'Locations',
         type: 'dropdown',
         path: '/location',
         sublinks: [

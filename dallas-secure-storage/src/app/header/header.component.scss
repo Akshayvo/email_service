@@ -4,16 +4,20 @@ a {
   cursor: pointer;
 }
 
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
 .navbar {
   padding-bottom: 0;
 
   .nav-link-active {
     border-bottom: 5px $primary solid;
-    color: $primary !important;
+    color: $primary;
   }
 
   .location-active {
-    color: $primary !important;
+    color: $primary;
     font-weight: 600;
   }
 
@@ -63,6 +67,14 @@ a {
 .navbar-toggler:focus,
 .navbar-toggler:hover {
   border: 1px #efefef solid;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar-brand {
+    img {
+      height: 60px;
+    }
+  }
 }
 
 @media (min-width: 768px) {

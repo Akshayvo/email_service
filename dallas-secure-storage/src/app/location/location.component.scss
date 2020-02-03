@@ -1,5 +1,66 @@
 @import "../../styles.scss";
 
+$dallas: #27ace2;
+$dallasDark: #06465f;
+$dallasLight: #84d0ee;
+
+.btn-outline1 {
+  background-color: transparent;
+  border: 1px solid $dallas;
+  color: $primary;
+  min-width: 120px;
+  border-radius: 3px;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.btn-outline1:hover,
+.btn-outline1:active,
+.btn-outline1:focus,
+.btn-outline1:not([disabled]):not(.disabled):active {
+  background-color: $dallasDark;
+  border-color: $dallasDark;
+  color: $white;
+  box-shadow: none;
+}
+
+.btn-light1 {
+  background-color: $dallasLight;
+  border: 1px solid $dallasLight;
+  color: $white;
+  min-width: 120px;
+  border-radius: 3px;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.btn-light1:hover,
+.btn-light1:focus,
+.btn-light1:active {
+  background-color: $dallasDark;
+  border-color: $dallasDark;
+  color: $white;
+}
+
+.btn-dallas {
+  background-color: $dallas;
+  border: 1px solid $dallas; 
+  color: $white !important;
+  min-width: 120px;
+  border-radius: 3px;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.btn-dallas:hover,
+.btn-dallas:focus,
+.btn-dallas:active,
+.btn-dallas:not([disabled]):not(.disabled):active {
+  background-color: $dallasDark;
+  border-color: $dallasDark;
+  color: $white !important;
+  box-shadow: none;
+}
 .contact-details {
   background-color: $light;
   padding-top: 90px;
@@ -30,6 +91,17 @@
     color: $white;
   }
 }
+
+.social-content1 {
+  background-color: #27ace2;
+  color: $white;
+
+  .iconColor {
+    color: $white;
+  }
+}
+
+
 
 .img-box-1 {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/dallas-secure-storage-location-page.jpg");
