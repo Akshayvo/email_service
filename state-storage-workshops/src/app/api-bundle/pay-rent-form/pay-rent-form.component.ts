@@ -202,7 +202,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.getPayMethods();
+    if (!!localStorage.getItem('strTenantToken')) {
+      this.getPayMethods();
+    } else {
+      this.router.navigate(['/pay-rent/login']);
+    }
     this.fetchMonth();
   }
 
