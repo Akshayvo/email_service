@@ -1,0 +1,5 @@
+ # www.robotstxt.org/
+ # Allow crawling of all content
+Sitemap: https://hwy77selfstorage-staging.syrasoft.com/sitemap.xml
+ User-agent: *
+ Disallow:
