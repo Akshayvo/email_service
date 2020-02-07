@@ -97,4 +97,13 @@ a {
     height: 200px;
     overflow-y: scroll;
   }
+ 
+}
+
+@media only screen and (max-width:500px) {
+  .navbar-brand {
+    img {
+      height: 50px;
+    }
+  }
 }
