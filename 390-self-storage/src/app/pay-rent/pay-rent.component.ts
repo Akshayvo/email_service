@@ -20,9 +20,10 @@ export class PayRentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent online quickly and easily with our online payment portal. Follow the instructions on the page and pay your rent 24/7!`
+      content: `Do you need to pay your storage bill online? At 390 Self Storage,
+      we offer an online rent payment facility. Pay rent from the comfort of your home.!`
     });
-    this.titleService.setTitle('Pay Rent | 390 Self Storage');
+    this.titleService.setTitle('Pay Storage Rent Online, Rochester NY, Gates, Brighton');
   }
 
   ngOnInit() {

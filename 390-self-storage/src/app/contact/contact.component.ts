@@ -37,9 +37,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our easy online form or our contact information to reach out to our friendly management team! We can't wait to hear from you!`
+      content: `Are you looking for affordable units and service with a smile?
+      We are a self storage company in Rochester NY. Contact 390 Self Storage for awesome services!`
     });
-    this.titleService.setTitle('Contact Us | 390 Self Storage');
+    this.titleService.setTitle('Self Storage Company Rochester NY, Secure Storage, Gates NY');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],

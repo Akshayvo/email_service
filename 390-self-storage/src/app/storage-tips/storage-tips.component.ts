@@ -22,9 +22,10 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Follow these easy self storage tips to make your stay with 390 Self Storage a breeze!`
+      content: `Take advantage of everything self storage has to offer
+      while making packing and organizing easier with this helpful guide from 390 Self Storage.`
     });
-    this.titleService.setTitle('Storage Tips | 390 Self Storage');
+    this.titleService.setTitle('Self Storage Tips For Bedroom And Clothing, Rochester NY, Gates');
   }
 
   ngOnInit() {

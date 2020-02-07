@@ -19,9 +19,10 @@ export class UnitSizerComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to review our unit sizing chart to help you visualize what type of unit will suit your needs. `
+      content: `390 Self Storage offers clean and secure storage facility.
+      We offer storage space from 25 sq feet to 300 sq feet. Serving Rochester, Gates and Brighton NY.`
     });
-    this.titleService.setTitle(`Unit Sizer | 390 Self Storage`);
+    this.titleService.setTitle(`Storage Facility Rochester NY, Size Estimator Gates, Brighton NY`);
   }
 
   ngOnInit() {

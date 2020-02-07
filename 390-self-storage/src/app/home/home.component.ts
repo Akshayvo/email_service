@@ -33,10 +33,10 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `390 Self Storage is Rochester's newest self storage facility! We offer a range of brand new, 
-                regular and climate controlled self storage units!`
+      content: `Conveniently located in Rochester NY, we offer the best storage deals
+      with our climate controlled self storage units. Trust Us to Keep Your Things Safe. Contact us today!`
     });
-    this.titleService.setTitle('Affordable Storage Units in Rochester | 390 Self Storage');
+    this.titleService.setTitle('Self Storage Units Rochester NY, Climate Controlled Storage Gates');
   }
 
   public navigate(location: any) {
