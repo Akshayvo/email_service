@@ -128,7 +128,8 @@
                                  (change)="selectChangeHandler($event)"
                                 >
                                      <option *ngFor="let lstUnitType of lstUnitTypes"
-                                     [value]="lstUnitType?.Description "
+                                     [value]="lstUnitType?.Description"
+                                     [class.display-none]="!lstUnitType.IsUnitsAvailable"
                                      >
                                      {{lstUnitType.Description}}
                                      </option>
