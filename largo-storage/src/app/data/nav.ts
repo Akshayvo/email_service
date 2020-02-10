@@ -13,7 +13,7 @@ export const navLinks = [
     // },
     {
         label: 'PAY RENT',
-        path: 'pay-rent/login'
+        path: 'pay-rent'
     },
     {
         label: 'CONTACT US',
