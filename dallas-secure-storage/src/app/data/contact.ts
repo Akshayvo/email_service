@@ -25,15 +25,18 @@ export const hoursLocation1 = [
     {
         label: 'Monday - Friday: ',
         data: '9:00AM - 5:00PM',
+        normalData: '9:00AM - 5:00PM',
     },
     {
-        label: 'Saturday - Sunday: ',
-        data: 'Closed',
+        label: 'Saturday - Sunday:  ',
+        data: 'CLOSED',
+        normalData: 'CLOSED',
     },
 
     {
         label: 'Access hours: ',
-        data: '6:00AM - 10:00PM 7 Days a Week',
+        data: '6:00AM - 10:00PM <br> 7 Days a Week',
+        normalData: '6:00AM to 10:00PM 7 Days a Week',
     },
 ];
 
@@ -65,14 +68,16 @@ export const contactsLocation3 = [
 export const hoursLocation3 = [
     {
         label: 'Monday - Friday: ',
-        data: '9:00AM - 5:00PM',
+        normalData: '9:00AM - 5:00PM',
     },
     {
         label: 'Saturday - Sunday: ',
         data: 'CLOSED',
+        normalData: 'CLOSED',
     },
     {
         label: 'Access hours: ',
-        data: '6:00AM to 10:00PM 7 Days a Week',
+        data: '6:00AM to 10:00PM <br> 7 Days a Week',
+        normalData: '6:00AM to 10:00PM 7 Days a Week',
     },
 ];
