@@ -14,9 +14,9 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'tel:5184874930',
+        redirect: 'tel:5188989295',
         label: 'Phone: ',
-        data: '(518) 487-4930',
+        data: '(518) 898-9295',
         class: 'fas fa-phone mr-2 iconColor',
     }
 ];
@@ -28,7 +28,7 @@ export const hours = [
     },
     {
         label: 'Saturday & Sunday: ',
-        data: '10:00AM to 2:00PM'
+        data: '9:00AM to 4:00PM'
     },
     {
         label: 'Access Hours: ',
