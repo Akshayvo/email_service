@@ -1,4 +1,4 @@
-export const viewRates = [
+export const dataViewRates = [
     {
       p: `Catskill Self Storage offers many amenities to make your storage experience
       a fast, easy, and hassle-free one! Located conveniently off of Route 87 at Exit 21 just west of downtown Leeds,
@@ -6,6 +6,25 @@ export const viewRates = [
       Ask about out online payments and EZ Auto-Pay option!`,
     }
 ];
+
+export const th = [
+  {
+    data: `Size`
+  },
+  {
+    data: `Rate`
+  },
+  {
+    data: `Reserve a Unit`
+  },
+  // {
+  //   data: `Move In`
+  // },
+  // {
+  //   data: `Climate Control`
+  // },
+];
+
 
 export const option =  [
     {

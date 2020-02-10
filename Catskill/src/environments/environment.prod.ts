@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
-  // errorsMails: ['website.dev@codeparva.in'],
-  errorsMails: ['sanghmitra.v@codeparva.in'],
+  type: 0,  // { API: 0, iframe: 1 }
+  errorsMails: ['website.dev@codeparva.in'],
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   senderEmail: 'errors@codeparva.in',
   appId: 'Catskill',

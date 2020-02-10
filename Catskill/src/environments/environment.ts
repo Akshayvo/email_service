@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  // errorsMails: [ 'website.dev@codeparva.in' ],
-  errorsMails: [ 'sanghmitra.v@codeparva.in' ],
+  type: 0,  // { API: 0, iframe: 1 }
+  errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   appId: 'Catskill',
