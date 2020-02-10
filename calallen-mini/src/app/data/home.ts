@@ -77,9 +77,9 @@ export const feature = [
 export const jumbotron = [
     {
         h1: `Affordable Mini Storage Units in Calallen`,
-        blurb: `Calallen Mini Storage serves Calallen, Robstown, Bluntzer, and the surrounding communities
+        blurb: `Calallen Mini Storage serves Calallen, Robstown, Bluntzer  and the surrounding communities
                 with a variety of high-quality, clean, and affordable self storage unit types! Whether you're
                 a local business with extra inventory, or if you're just looking for some extra elbow room
-                around the house; we've got the storage solution for you!`,
+                around the house, we've got the storage solution for you!`,
     }
 ];
