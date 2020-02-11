@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +23,7 @@ export class EmailService {
       }
     };
 
-    return this.http.post(`https://emailsvc-ext.syrasoft.com/v1/email`, cont);
+    return this.http.post(`email`, cont, {});
 
   }
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { viewRates } from '../data/view-rates';
+import { dataViewRates } from '../data/view-rates';
 import { CanonicalService } from '../services/canonical.service';
 
 @Component({
@@ -31,7 +31,7 @@ export class ViewRatesComponent implements OnInit {
     this.fetchViewRates();
   }
   public fetchViewRates() {
-    this.viewRates = viewRates;
+    this.viewRates = dataViewRates;
   }
 
 }
