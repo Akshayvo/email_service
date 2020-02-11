@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Title, Meta } from '@angular/platform-browser';
+import { Title, Meta, } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, feature } from '../data/home';
 import { CanonicalService } from '../services/canonical.service';
+import { script } from '../data/script';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ export class HomeComponent implements OnInit {
   hours: any;
   featuresList: any;
   aboutUs: any;
+  script: any;
   feature: any;
   currentActive: any = 'HOME';
 
@@ -46,7 +48,12 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
+    this.fetchScript();
     window.scrollTo(0, 0);
+  }
+
+  public fetchScript() {
+    this.script = script;
   }
 
   public fetchContactDetails() {

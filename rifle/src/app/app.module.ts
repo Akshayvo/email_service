@@ -28,6 +28,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { FaqComponent } from './faq/faq.component';
+import { ScriptHackComponent } from './scripthack/scripthack.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { FaqComponent } from './faq/faq.component';
     PhotosComponent,
     PrivacyPolicyComponent,
     FaqComponent,
+    ScriptHackComponent,
   ],
   imports: [
     CommonModule,
