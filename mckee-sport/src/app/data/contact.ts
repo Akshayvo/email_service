@@ -13,9 +13,9 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'mailto:Storageinmck@gmail.com',
+        redirect: 'mailto:mckstorage@outlook.com',
         label: 'Email: ',
-        data: 'Storageinmck@gmail.com',
+        data: 'mckstorage@outlook.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
@@ -25,7 +25,6 @@ export const contact = [
         data: '(412) 673-7867',
         class: 'fas fa-phone mr-2 iconColor',
     },
-    
 ];
 
 export const hours = [

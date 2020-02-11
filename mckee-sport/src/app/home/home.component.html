@@ -46,6 +46,23 @@
     <div class="get-started">
      <div class="container py-2">
        <div class="row p-3 minico">
+          <div class="col-lg-6 py-2">
+              <h3><b>Use our FREE app to make entry to the facility incredibly easy! Simply pull up to the gate, tap one button in the app, and the gate will open without requiring you to roll down your window or exit your vehicle! Never worry about forgetting your pin-code!</b></h3>
+              <p class="my-1"><b>Easy Gate Access - Easy Pin-Code Recovery - Easy Payments From Your Phone</b></p>
+              <div class="row links ">
+                <div class="col-md-4 py-2 ">
+                   <a href=" https://play.google.com/store/apps/details?id=com.easy_code2&hl=en" target="_blank">
+                     <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/McKeesport+Storage/get-it-on-google-play.png" alt="icon indicating a link to Google's Play Store to download the Easy Code application "/></a>
+                </div>
+                <div class="col-md-4 py-2">
+                   <a href="https://itunes.apple.com/us/app/easycode-2-0/id1304572599?mt=8" target="_blank">
+                     <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/McKeesport+Storage/download-it-on-the-app-store.png" alt="icon indicating a link to Apple's App Store to download the Easy Code application"/></a>
+                </div>
+              </div>
+              <div class="key py-2">
+                 <p><b>Enter Site Code : qjB6XHGQQ3</b></p>
+             </div>
+            </div>
          <div class="col-lg-6 col-sm-12 minico-insure py-2">
            <div class="row">
               <div class="col-md-7 py-2">
@@ -58,23 +75,7 @@
               </div>
            </div>
          </div>
-         <div class="col-lg-6 py-2">
-           <h3><b>Make your stay at McKeesport Storage an easy one with EasyCode App!</b></h3>
-           <p class="my-1"><b>Easy Gate Access - Easy Pin-Code Recovery - Easy Payments From Your Phone</b></p>
-           <div class="row links ">
-             <div class="col-md-4 py-2 ">
-                <a href=" https://play.google.com/store/apps/details?id=com.easy_code2&hl=en" target="_blank">
-                  <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/McKeesport+Storage/get-it-on-google-play.png" alt="icon indicating a link to Google's Play Store to download the Easy Code application "/></a>
-             </div>
-             <div class="col-md-4 py-2">
-                <a href="https://itunes.apple.com/us/app/easycode-2-0/id1304572599?mt=8" target="_blank">
-                  <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/McKeesport+Storage/download-it-on-the-app-store.png" alt="icon indicating a link to Apple's App Store to download the Easy Code application"/></a>
-             </div>
-           </div>
-           <div class="key py-2">
-              <p><b>Enter Site Code : qjB6XHGQQ3</b></p>
-          </div>
-         </div>
+        
        </div>
      </div>
     </div>
@@ -97,6 +98,7 @@
                 <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </div>
+              <p>Call or text anytime!</p>
               <div class="pt-3 font-xs-device">
                   <div *ngFor="let hour of hours">
                       <b>{{hour.label}}</b>{{hour.data}}<br>

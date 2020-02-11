@@ -23,8 +23,9 @@
             <p> <b>John's Username:</b> jsmith@email.com </p>
             <p class="pb-3"> <b>John's Password:</b> 1234 </p>
         
-            <p><b>Have questions about your account?</b><br>
-              <span *ngFor="let contact of contact"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
+            <p><b>Have questions about your account?</b>
+              <span *ngFor="let contact of contact">
+                <span *ngIf="contact?.id == 2 || contact?.id == 3"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
             </span>
             </p>
           </div>
