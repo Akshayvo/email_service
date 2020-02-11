@@ -5,6 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, blurb} from '../data/home';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-home',
@@ -23,13 +24,17 @@ export class HomeComponent implements OnInit {
   gettingStarted: any;
   feature: any;
   currentActive: any = 'HOME';
+  imageBaseUrl: any;
+  imagetype: any;
+  jumbotron: any;
 
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private uaParserService: UaParserService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -37,6 +42,8 @@ export class HomeComponent implements OnInit {
                 has a wide variety of sizes and excellent customer service!`
     });
     this.titleService.setTitle('Affordable Self Storage Units in Odem | HWY 77 Self Storage');
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   public navigate(location: any) {
@@ -71,6 +78,9 @@ export class HomeComponent implements OnInit {
   }
   public fetchFeature () {
     this.feature = feature;
+  }
+  public getImageUrl(imageName: string) {
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 
 }

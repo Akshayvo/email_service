@@ -3,7 +3,7 @@
   <!--Jumbotron Container Starts Here-->
   <div class="jumbotron-container">
     <div class="jumbotron-top">
-      <div class="jumbotron px-0 m-0">
+      <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp' ">
         <div class="bg-translucent jumbotron-skew-style">
         </div>
           <div class="container">
@@ -78,7 +78,8 @@
   <div class="container py-5">
     <div class="row">
       <div class="col-lg-6 py-3">
-        <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Hwy_77_Self_Storage/hwy-77-self-storage-sunlit-units.jpg" width="100%" alt="photograph of a row of self storage units with orange doors under a blue sky " />
+        <!-- <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Hwy_77_Self_Storage/hwy-77-self-storage-sunlit-units.jpg" width="100%" alt="photograph of a row of self storage units with orange doors under a blue sky " /> -->
+        <img src="{{imageBaseUrl}}/hwy-77-self-storage-sunlit-units.{{imagetype}}" width="100%" alt="photograph of a row of self storage units with orange doors under a blue sky " />
       </div>
       <div class="col-lg-6 py-3">
         <h1 class="heading pb-4">Find Your Storage Unit Today at HWY 77 Self Storage</h1>
@@ -90,7 +91,7 @@
 
 
 <!--Get Started Secion-->
-  <div class="getStarted text-center">
+  <div class="getStarted text-center" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp' ">
     <div class="get-started">
      <div class="container py-5">
        <div class="py-5 m-0">

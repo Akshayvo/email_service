@@ -32,9 +32,9 @@
 
 // Get started Section
 .getStarted {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Hwy_77_Self_Storage/hwy-77-self-storage-jumbotron.jpg") center top no-repeat fixed;
+  //background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Hwy_77_Self_Storage/hwy-77-self-storage-jumbotron.jpg") center top no-repeat fixed;
   // background-size: cover;
-  background-position: top;
+  background-position: center;
 
   .get-started {
     left: 0;
@@ -51,12 +51,18 @@
 }
 
 // HOME jUMBOTRON
+.jumbotron-background-webp{
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hwy_77_Self_Storage/webp/hwy-77-self-storage-jumbotron.webp");
+}
+.jumbotron-background-jpg{
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hwy_77_Self_Storage/jpg/hwy-77-self-storage-jumbotron.jpg");
+}
 
 .jumbotron-top {
   height: 80vh;
 
   .jumbotron {
-    background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Hwy_77_Self_Storage/hwy-77-self-storage-jumbotron.jpg");
+   // background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Hwy_77_Self_Storage/hwy-77-self-storage-jumbotron.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -460,7 +466,7 @@
 
 
       .jumbotron-skew-style {
-        width: 86%;
+        width: 90%;
       }
 
       a {

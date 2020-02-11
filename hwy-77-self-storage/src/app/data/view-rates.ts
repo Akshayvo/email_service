@@ -1,14 +1,13 @@
 export const dataViewRates = [
     {
-        p: `HWY 77 Self Storage is conveniently located between the communities of Odem and Sinton,
-            and offers a number of unit size types that make for the ideal storage solution for any
-            home or business! Our units are clean, well-maintained, and secured behind a keypad-activated
-            gate. You'll have access to your unit 24 hours a day, 7 days a week with no one standing
-            between you and your belongings, or business supplies. `,
+        p: `HWY 77 Self Storage is conveniently located between the communities of Odem and Sinton, and offers a
+            number of unit size types that make for the ideal storage solution for any home or business! Our units
+            are clean, well-maintained and secured behind a keypad-activated gate. You'll have access to your unit
+            24 hours a day, 7 days a week with no one standing between you and your belongings or business supplies.`,
     },
     {
         p: `Our management team is ready to help make your move-in experience a breeze. You can fill
-        out our handy reservation form, or call (361) 215-6637 today to learn more about HWY 77 Self Storage!`,
+            out our handy reservation form, or call (361) 215-6637 today to learn more about HWY 77 Self Storage!`,
     }
 ];
 

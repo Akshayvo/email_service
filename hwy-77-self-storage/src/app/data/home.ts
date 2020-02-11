@@ -79,10 +79,10 @@ export const gettingStarted = `Reserve your unit and start de-cluttering your li
 export const blurb = [
     {
         h1: `Affordable Storage in Odem`,
-        p: `HWY 77 Self Storage takes pride in serving Odem, Sinton, and the surrounding communities with clean,
-        well-maintained self storage units in a keypad-activated fully-fenced facility. We are conveniently located
-        between Odem and Sinton on, you guessed it, Highway 77! Our units are accessible in our well-lit
-        24 hours a day, so you'll never have to wait for business hours to grab your belongings, or business supplies.
-        Reserve your unit online today and start making some elbow room around the home or work-site!`,
+        p: `HWY 77 Self Storage takes pride in serving Odem, Sinton and the surrounding communities with clean,
+            well-maintained self storage units in a keypad-activated, fully-fenced facility. We are conveniently located
+            between Odem and Sinton on, you guessed it, Highway 77! Our units are accessible and well-lit 24 hours a
+            day,so you'll never have to wait for business hours to grab your belongings or business supplies. Reserve
+            your unit online today and start making some elbow room around the home or work-site!`,
     }
 ];
