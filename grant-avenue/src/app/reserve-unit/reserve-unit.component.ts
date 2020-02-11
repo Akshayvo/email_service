@@ -15,10 +15,10 @@ export class ReserveUnitComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Ready to reserve your regular, climate-controlled self storage unit,
-                or outdoor parking space? Click here or call (336) 307-3000 today!`
+      content: `Simply fill out our easy reservation form and one of our friendly
+                self storage associates will be ready and waiting for your arrival!`
     });
-    this.titleService.setTitle('Reserve Now | Absolute Mini Storage');
+    this.titleService.setTitle('Reserve Unit  | Grant Avenue Storage');
   }
 
   ngOnInit() {

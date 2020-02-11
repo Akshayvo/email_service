@@ -20,10 +20,10 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to view our affordable self storage unit rates,
-                then make your reservation by filling out our form or calling our office today!`
+      content: `Check out the competitive rates for our high-quality self storage units! Grant
+                Avenue Storage is the premier storage facility in Junction City, KS`
     });
-    this.titleService.setTitle('View Rates  | Absolute Mini Storage');
+    this.titleService.setTitle('View Rates  | Grant Avenue Storage');
   }
 
   ngOnInit() {

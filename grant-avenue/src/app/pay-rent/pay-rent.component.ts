@@ -20,10 +20,10 @@ export class PayRentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent online 24/7 with our handy tenant portal! Just follow
-                the instructions, or call our office to learn how to access your account!`
+      content: `Pay your rent online 24/7, with our easy tenant portal! Just follow the
+                instructions on the page, or call our office, and one of our friendly managers will be glad to help!`
     });
-    this.titleService.setTitle('Pay Rent  | Absolute Mini Storage');
+    this.titleService.setTitle('Pay Rent  | Grant Avenue Storage');
   }
 
   ngOnInit() {

@@ -35,6 +35,12 @@
   z-index: 16;
 }
 
+@media only screen and (max-width: 991px) {
+  .storage-tip-holder {
+    padding-top: 90px;
+  }
+}
+
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .storage-tip-holder {
     .storage-content {

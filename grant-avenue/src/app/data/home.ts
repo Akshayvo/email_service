@@ -48,27 +48,28 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Absolute Mini Storage is the solution to your cramped, cluttered, or otherwise in-need-of elbow-room home
-            or work-site.We offer a number of self storage unit sizes at extremely affordable rates, conveniently
-            located off of Prospect Street between Thomasville, High Point, and Archdale! `,
+        p: `Grant Avenue Storage has a wide variety of climate-controlled, and unconditioned self storage units in
+            a well-lit, keypad secured self storage facility just north of the Junction City center. We serve residents
+            and businesses in Junction City, the surrounding communities, and our service people stationed
+            at Fort Riley.`,
     },
     {
-        p: `Our fully-fenced facility is well-lit, and is accessible only by pin-code activated gate. You can rest easy
-            knowing our storage professionals perform regular walk-arounds to ensure all is well on the grounds. `,
+        p: `We pride ourselves in our quality customer service, and we strive to go above and beyond for our tenants
+            each and every day. Our service starts with our online reservation form. Simply fill out the form, and one
+            of our friendly management staff will be in touch to confirm your reservation. Once you've moved into your
+            new unit, you can pay your rent online 24/7. We're with you every step of the way, making your self storage
+            experience a convenient, and affordable one!`,
     },
     {
-        p: `We also understand that using a self storage service can come at a stressful point in one's life. That's why
-            we offer online reservations, online bill-pay, and auto pay options, among other modern conveniences.
-            You haveenough on your plate already, so we make it our job to  provide the most convenient storage
-            experience. Reserve your unit online, or call our offices at (336) 307-3000. `,
+        p: `From local businesses in need of a little extra room for supplies or inventory to homeowners and renters
+            de-cluttering, renovating, or moving, Grant Avenue Storage is your ideal self storage solution. Take a
+            moment to fill out our reservation form, or give our friendly managers a call!`,
     },
 ];
 
 
-export const gettingStarted = `Are you ready to start reclaiming some of that elbow room around the home or
-                               work-site? Our affordable self storage units come in sizes ranging from 5'x10'
-                               to 10'x30'! We are certain to have the right-sized unit for your needs! Click
-                               below to reserve your unit!`;
+export const gettingStarted = `Are you ready to start de-cluttering now? Click below to fill out our reservation
+                               form, and start reclaiming that elbow room today!`;
 
 export const blurb = [
     {

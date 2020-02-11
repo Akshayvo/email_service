@@ -10,7 +10,7 @@ import { WINDOW } from '@ng-toolkit/universal';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Absolute Mini Storage';
+  title = 'Grant Avenue Storage';
   flag: boolean;
   public offsets: number[];
   x: any;

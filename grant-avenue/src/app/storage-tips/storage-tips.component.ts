@@ -22,10 +22,10 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We know self storage, so use our knowledge and take this list of Storage
-                Tips to make your stay with us even more convenient!`
+      content: `Follow these easy self storage tips to make your stay with Grant
+                Avenue Storage a breeze! Have questions? Call (785) 761-2400, today!`
     });
-    this.titleService.setTitle('Storage Tips  | Absolute Mini Storage');
+    this.titleService.setTitle('Storage Tips | Grant Avenue Storage');
   }
 
   ngOnInit() {

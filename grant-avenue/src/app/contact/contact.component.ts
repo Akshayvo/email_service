@@ -37,10 +37,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Do you have a question about our services, or would you like help with your account?
-                Use our form or contact information to reach out, today!`
+      content: `Use the contact information or the contact form on this page to speak
+                to one of our friendly self storage managers!`
     });
-    this.titleService.setTitle('Contact Us  | Absolute Mini Storage');
+    this.titleService.setTitle('Contact Us  | Grant Avenue Storage');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
