@@ -536,7 +536,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
       this.existTempToken = localStorage.getItem('strTempTenantToken');
 
-      if (this.existTempToken) {
+      if (!!localStorage.getItem('strTempTenantToken')) {
         localStorage.removeItem('strTempTenantToken');
         this.tokenRemoved = true;
       }
@@ -573,7 +573,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
            this.tenantTokenExist = true;
          }
         this.existTempToken = localStorage.getItem('strTempTenantToken');
-        if (this.existTempToken) {
+        if (!!localStorage.getItem('strTempTenantToken')) {
           localStorage.removeItem('strTempTenantToken');
           this.tokenRemoved = true;
         }

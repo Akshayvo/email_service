@@ -249,7 +249,7 @@ getTenantUnitData() {
         this.submitted = false;
          this.tokenExit = localStorage.getItem('strTenantToken');
         this.existTempToken = localStorage.getItem('strTempTenantToken');
-        if (this.existTempToken) {
+        if (!!localStorage.getItem('strTempTenantToken')) {
           localStorage.removeItem('strTempTenantToken');
         }
         this.reservationInProgress = false;
@@ -284,7 +284,7 @@ getTenantUnitData() {
           this.submitted = false;
            this.tokenExit = localStorage.getItem('strTenantToken');
           this.existTempToken = localStorage.getItem('strTempTenantToken');
-          if (this.existTempToken) {
+          if (!!localStorage.getItem('strTempTenantToken')) {
             localStorage.removeItem('strTempTenantToken');
           }
           this.reservationInProgress = false;
@@ -316,7 +316,7 @@ getTenantUnitData() {
 
     onSubmit() {
       if (window.localStorage) {
-        if (localStorage.getItem('strTenantToken')) {
+        if (!!localStorage.getItem('strTenantToken')) {
           this.existingTenantToken = localStorage.getItem('strTenantToken');
         } else {
           this.existTempToken = localStorage.getItem('strTempTenantToken');
