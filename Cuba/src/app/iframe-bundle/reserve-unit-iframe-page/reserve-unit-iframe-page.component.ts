@@ -12,10 +12,10 @@ export class ReserveUnitIframePageComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use this form to reserve your unit today! One of our friendly
-      managers will reach out shortly to assist you!`
+      content: `Ready to reserve an affordable, high quality self storage unit at
+      Cuba Self Storage? Click here to complete your reservation online!`
     });
-    this.titleService.setTitle('Reserve Unit | Lois Stor-All');
+    this.titleService.setTitle('Reserve Your Unit');
   }
 
   ngOnInit() {

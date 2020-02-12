@@ -7,9 +7,9 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:cubaselfstorage@gmail.com',
         label: 'Email:',
         data: 'cubaselfstorage@gmail.com',
+        redirect: 'mailto:cubaselfstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {

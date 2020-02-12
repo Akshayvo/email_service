@@ -17,7 +17,6 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
-import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
@@ -30,7 +29,6 @@ import { ReserveUnitFormComponent } from './api-bundle/reserve-unit-form/reserve
 import { ReserveUnitIframePageComponent } from './iframe-bundle/reserve-unit-iframe-page/reserve-unit-iframe-page.component';
 import { ConfirmationDataComponent } from './api-bundle/confirmation-data/confirmation-data.component';
 import { PayRentFormComponent } from './api-bundle/pay-rent-form/pay-rent-form.component';
-import { RentNowComponent } from './api-bundle/rent-now/rent-now.component';
 import { PaymentComponent } from './api-bundle/payment/payment.component';
 import { PaymentIframePageComponent } from './iframe-bundle/payment-iframe-page/payment-iframe-page.component';
 import { LoginComponent } from './api-bundle/login/login.component';
@@ -47,8 +45,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
-import { RentNowIframePageComponent } from './iframe-bundle/rent-now-iframe-page/rent-now-iframe-page.component';
-import { UnitSizerIframePageComponent } from './iframe-bundle/unit-sizer-iframe-page/unit-sizer-iframe-page.component';
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 @NgModule({
@@ -64,7 +60,6 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     ErrorHandlerComponent,
     StorageTipsComponent,
     AccordionComponent,
-    PayRentComponent,
     UnitSizerComponent,
     ReserveComponent,
     ViewRatesComponent,
@@ -74,7 +69,6 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     ReserveUnitIframePageComponent,
     ConfirmationDataComponent,
     PayRentFormComponent,
-    RentNowComponent,
     PaymentComponent,
     PaymentIframePageComponent,
     LoginComponent,
@@ -83,8 +77,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     ChangePasswordComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
-    RentNowIframePageComponent,
-    UnitSizerIframePageComponent,
+    UnitSizerComponent,
   ],
   imports: [
     CommonModule,

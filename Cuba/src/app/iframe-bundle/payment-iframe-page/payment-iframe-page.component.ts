@@ -2,6 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact } from '../../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
+import { CanonicalService } from '../../services/canonical.service';
+
 @Component({
   selector: 'app-payment-iframe-page',
   templateUrl: './payment-iframe-page.component.html',
@@ -9,27 +11,28 @@ import { WINDOW } from '@ng-toolkit/universal';
 })
 export class PaymentIframePageComponent implements OnInit {
 
-  contact: any;
+  contactDetails: any;
 
   constructor(
     private titleService: Title,
-    @Inject(WINDOW) private window: Window,
-    private meta: Meta
-  ) {
+    private meta: Meta,
+    private canonical: CanonicalService,
+    ) {
+      this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent online with our easy-to-use tenant portal. Follow the instructions
-      here or call our office to learn how to access your account.`
+      content: `Pay your rent online 24 hours a day, 7 days a week right here! Simply follow
+      the instructions or call (573) 885-2539 to begin!`
     });
-    this.titleService.setTitle('Pay Rent | Lois Stor-All');
+    this.titleService.setTitle('Pay Your Rent Online');
   }
 
   ngOnInit() {
-    this.fetchContactDetails();
     window.scrollTo(0, 0);
+    this.fetchContact();
   }
 
-  public fetchContactDetails() {
-    this.contact = contact;
+  public fetchContact() {
+    this.contactDetails = contact;
   }
 }

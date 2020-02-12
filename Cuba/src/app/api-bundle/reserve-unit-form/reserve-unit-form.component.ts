@@ -185,7 +185,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       };
     }
 
-      if ((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve-unit')) {
+      if ((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve')) {
         this.navigateToReserve = true;
         this.dataSharingService.navigateToReserve = true;
         this.dataSharingService.navigateToMoveIn = false;

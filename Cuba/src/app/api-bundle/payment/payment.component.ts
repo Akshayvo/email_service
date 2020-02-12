@@ -19,10 +19,10 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent online with our easy-to-use tenant portal. Follow the instructions
-      here or call our office to learn how to access your account.`
+      content: `Pay your rent online 24 hours a day, 7 days a week right here! Simply follow
+      the instructions or call (573) 885-2539 to begin!`
     });
-    this.titleService.setTitle('Pay Rent | Lois Stor-All');
+    this.titleService.setTitle('Pay Your Rent Online');
   }
 
   ngOnInit() {

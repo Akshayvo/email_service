@@ -23,10 +23,10 @@ export class ViewRatesIframePageComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to review our affordable storage unit rates
-      and see if we have the right unit for your needs available!`
+      content: `Check out the rates to the wide variety of self storage unit sizes and
+      services at Cuba Self Storage here!`
     });
-    this.titleService.setTitle('View Rates | Lois Stor-All');
+    this.titleService.setTitle('Affordable Units in Cuba, MO | Cuba Self Storage');
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();

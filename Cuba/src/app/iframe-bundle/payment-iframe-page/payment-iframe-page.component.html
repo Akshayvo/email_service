@@ -1,58 +1,27 @@
-<div class="rent-holder">
-  <div class="container px-0">
-    <div class="rent-heading pb-5">
-      <h1 class="text-center pt-5">Pay Rent</h1>
-    </div>
-    
-    <div class="rent-sub-holder">
-      <div class="container px-0">
-        <div class="row">
-            <div class="col-md-8 p-4">
-              <iframe id="advanced_iframe" name="advanced_iframe" src="https://loisstor-all.sim.syrasoft.com/Home/PayNow" width="100%" height="500" scrolling="yes"
-              frameborder="0" border="0" allowtransparency="true" style="max-width:100%;"></iframe>
-            </div> 
-            
-            <div class="col-md-4 rent-example px-4" >
-              <!-- <h2> How to Login </h2>
-              <p class="pt-3"> <b>Username:</b> First initial + Last Name </p>
-              <p> <b>Password:</b> Your Unit Number</p>
-          
-              <p class="py-3"> <b>Example</b> </p>
-              <p class="pb-3">John Smith's unit number is 1234</p>
-          
-              <p> <b>John's Username:</b> Jsmith </p>
-              <p class="pb-3"> <b>John's Password:</b> 1234 </p>
-          
-              <p> <b>Have question about your account?</b> </p>
-              
-              <span *ngFor="let contact of contact" [class.display-none]="contact?.id == 0">
-                <span class="contact-data" *ngIf="contact?.id == 1 || contact?.id == 2">
-                  <a [href]="contact?.redirect">{{contact.data}}</a>
-                </span><br>
-              </span> -->
-              <h2> How to Login </h2>
-              <p class="pt-3"> <b>Username:</b> Email Address </p>
-              <p> <b>Password:</b> Access Code </p>
-              <p class="py-3"> <b>Example:</b></p>
-              <p class="pb-2"> John Smith's access code is 123456.</p>
-              <p class="pb-2"> John's Username: jsmith1@email.com</p>
-              <p>John's Password: 123456</p>
-          
-              <!-- <p class="pt-3"><b>Have questions about your account?</b><br>
-                <a href="tel:2627638925">(262) 763-8925</a>
-                <br>
-                <a href="mailto:LoisStorAll@gmail.com">LoisStorAll@gmail.com</a>
-              </p> -->
-              <p class="pt-3"><b>Have questions about your account?</b><br>
-              <span *ngFor="let contact of contact" [class.display-none]="contact?.id == 0">
-                <span class="contact-data" *ngIf="contact?.id == 2 || contact?.id == 3">
-                  <a [href]="contact?.redirect">{{contact.data}}</a>
-                </span><br>
-              </span>
-            </div>
+<div class="contentHolder">
+  <div class="container my-3 pb-5 padding-top">
+    <h1 class="py-lg-5 py-md-5 py-4 text-center">Pay Rent Online</h1>
+    <div class="row bg-light background-padding">
+      <div class="col-lg-8 col-md-7 scroll-wrapper small-screen-padding">
+          <div class="iframe-container">
+          <iframe id="advanced_iframe" name="advanced_iframe" src="https://CubaSelfStorage.sim.syrasoft.com/PayNow" width="100%"
+            height="400" scrolling="yes" frameborder="0" border="0" allowtransparency="true" onload=";aiResizeIframe(this, 'true','1');"></iframe>
         </div>
       </div>
+      <div class="col-lg-4 col-md-5 vertical-line">
+        <h3>How to Login</h3>
+        <p><b>Username:</b>&nbsp; First Initial + Last Name<br>
+        <b>Password:</b>&nbsp; Full Phone Number</p>
+        <p><b>Example:</b></p>
+        <p>John jsmith's Phone Number is (555) 555-5555</p>
+        <p>John's Username: jsmith<br>
+        John's Password: 5555555555</p>
+        <p><strong>Have questions about your account or would like your password changed? Call our office or email us today!</strong><br>
+        <span *ngFor="let contact of contactDetails" [class.display-none]="contact?.id === 0" ><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+        <br>
+      </span>
+      </p>
       </div>
+    </div>
   </div>
 </div>
-

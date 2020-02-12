@@ -19,7 +19,7 @@
 
 
 .contentHolder {
-  padding-top: 90px;
+  padding-top: 110px;
   min-height: 96vh;
   margin-bottom: 50px;
 
@@ -123,16 +123,14 @@ table {
   padding: 64px;
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px) {
+@media only screen and (max-width: 991px) {
     .contentHolder {
-      padding-top: 100px;
+      padding-top: 56px;
     }
   }
   
   @media only screen and (max-width: 767px) and (min-width: 601px) {
-    .contentHolder {
-      padding-top: 100px;
-    }
+
   
     .view-rates {
       padding: 40px;
@@ -144,11 +142,6 @@ table {
   }
   
   @media screen and (max-width: 600px) {
-    .contentHolder {
-      padding-top: 100px;
-      
-    }
-  
     .view-rates {
       background-color: #edf1ee;
       padding: 16px 0;
