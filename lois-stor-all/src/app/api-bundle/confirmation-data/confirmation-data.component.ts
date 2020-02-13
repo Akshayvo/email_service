@@ -130,19 +130,20 @@ public fetchOption() {
     $event.returnValue = true;
   }
 
-// public navigateToPrevious() {
-//   if (this.dataSharingService.navigateToMoveIn) {
-//     this.router.navigate(['/view-rates/move-in']);
-//   } else {
-//     if (this.dataSharingService.navigateToReserve) {
-//       this.router.navigate(['/view-rates/reserve']);
-//     }
-//   }
-// }
 public navigateToPrevious() {
-  console.log('confirmation page working', this.dataSharingService.navigateToPrevious);
-  this.router.navigate([this.dataSharingService.navigateToPrevious]);
+  if (this.dataSharingService.navigateToMoveIn) {
+    this.router.navigate(['/view-rates/move-in']);
+  } else {
+    if (this.dataSharingService.navigateToReserve) {
+      this.router.navigate(['/view-rates/reserve']);
+    }
+  }
 }
+
+// public navigateToPrevious() {
+//   console.log('confirmation page working', this.dataSharingService.navigateToPrevious);
+//   this.router.navigate([this.dataSharingService.navigateToPrevious]);
+// }
 
 public hasUnsavedData() {
   return this.canExit;
