@@ -10,9 +10,12 @@
   display: none;
 }
 
+h1 {
+  margin-bottom: 0;
+}
 
 .rent-holder {
-  padding-top: 90px;
+  padding-top: 110px;
   min-height: 96vh;
   margin-bottom: 50px;
 
@@ -25,8 +28,6 @@
 .rent-example {
   border-left: 1px $border solid;
   padding-left: 5%;
-
- 
 }
 
 .contact-data {
@@ -41,17 +42,13 @@
   }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px) {
+@media only screen and (max-width: 991px) {
   .rent-holder {
-    padding-top: 100px;
+    padding-top: 56px;
   }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
-  .rent-holder {
-    padding-top: 100px;
-  }
-
   .rent-example {
     border-left: none;
     padding-top: 16px;
@@ -60,14 +57,8 @@
 
 @media only screen and (max-width: 600px) {
   .rent-holder {
-    padding-top: 100px;
-
     .rent-sub-holder {
       padding: 16px;
-    }
-
-    .rent-heading {
-      padding-bottom: 30px;
     }
 
     iframe {

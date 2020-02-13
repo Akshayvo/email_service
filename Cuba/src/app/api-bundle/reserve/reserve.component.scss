@@ -1,6 +1,7 @@
 @import "../../../styles.scss";
+
 .contentHolder {
-  padding-top: 90px;
+  padding-top: 110px;
   min-height: 96vh;
   margin-bottom: 50px;
 
@@ -12,14 +13,12 @@
       width: 100%;
       overflow: auto;
     }
-    .background-padding{
+
+    .background-padding {
       height: 1500px;
     }
   }
 }
-// .padding-top {
-//   padding-top: 110px;
-// }
 
 iframe {
   max-width: 100%;
@@ -35,15 +34,12 @@ h1 {
 
 @media only screen and (max-width: 991px) {
   .contentHolder {
-    padding-top: 90px;
+    padding-top: 56px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .background-padding {
     padding: 24px 9px;
-  }
-  .contentHolder {
-    padding-top: 90px;
   }
 }
