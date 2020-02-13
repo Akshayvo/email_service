@@ -10,7 +10,7 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss"
+          "style": "scss"
         }
       },
       "architect": {
@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "crows-run"
+  "defaultProject": "crows-run",
+  "cli": {
+    "analytics": "73cf1090-5038-4aac-a033-18957bd70f7b"
+  }
 }
