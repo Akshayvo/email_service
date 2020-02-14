@@ -3,16 +3,6 @@
 @import "../../../styles.scss";
 
 
-.coming {
-  div {
-    height: 35rem;
-    width: 100%;
-    background: #efefef;
-    font-size: 2rem;
-    padding-top: 40%;
-  }
-}
-
 .display-content {
   display: contents;
 }
@@ -22,20 +12,6 @@
   padding-top: 110px;
   min-height: 96vh;
   margin-bottom: 50px;
-
-  .scroll-wrapper {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-
-    iframe {
-      width: 100%;
-      overflow: auto;
-    }
-
-    .background-padding {
-      height: 1500px;
-    }
-  }
 }
 
 .view-rates {
@@ -54,7 +30,7 @@ table {
     }
   }
   tbody {
-    tr:nth-child(even){
+    tr:nth-child(even) {
       background-color: #dcdcdc;
     }
     tr {
@@ -108,12 +84,6 @@ table {
   h1 {
     margin-block-end: 0;
   }
-
-  .scroll-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .background-padding {
@@ -141,18 +111,6 @@ table {
   .view-rates {
     background-color: #edf1ee;
     padding: 16px 0;
-  }
-
-  .scroll-wrapper {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-
-    iframe {
-      width: 100%;
-      overflow: scroll;
-    }
   }
 
   img {

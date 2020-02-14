@@ -5,6 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
+  strAccessCode: string;
+  strConfirmation: string;
+
+
   verificationCode: string;
   navigateToPrevious: string;
   navigateToReserve: boolean;

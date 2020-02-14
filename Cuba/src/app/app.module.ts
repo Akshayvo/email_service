@@ -47,6 +47,7 @@ import { ResetPasswordComponent } from './api-bundle/reset-password/reset-passwo
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -78,6 +79,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     VerifyCodeComponent,
     ResetPasswordComponent,
     UnitSizerComponent,
+    ConfirmationPageComponent,
   ],
   imports: [
     CommonModule,
