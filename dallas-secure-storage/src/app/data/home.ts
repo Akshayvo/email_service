@@ -24,7 +24,7 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Dallas Secure Storage and Godsey Storage are your one-stop-shop for all things self storage in Dallas, Monmouth,
+        p: `Dallas Secure Storage and Godsey Secure Storage are your one-stop-shop for all things self storage in Dallas, Monmouth,
             Independence, and the surrounding communities. The units at our two locations are clean, well-maintained, and
             secured behind a pin-code activated electronic gate.`,
     },

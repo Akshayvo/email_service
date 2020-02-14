@@ -4,9 +4,9 @@
         <h1 class="text-center pt-5">Contact Us</h1>
       </div>
       <div class="contact-data p-5">
-        <!-- <div class="location-selection">
+        <div class="location-selection">
           <app-select-location (click)="receiveMessage()"></app-select-location>
-        </div> -->
+        </div>
         <div class="row">
           <div class="col-md-8">
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
@@ -76,41 +76,44 @@
           <div class="col-md-4"> 
 
 
-                <!-- <div class="for-mall">
+                <div class="for-mall">
                   <div class="map-responsive">
                     <span *ngIf="locationId == 1">
-                      <iframe src="" width="100%" height="220" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11302.0830489133!2d-123.2925867!3d44.9127443!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9c24dffa3cb9d5e2!2sDallas%20Secure%20Storage%2FGodsey!5e0!3m2!1sen!2sus!4v1579480306904!5m2!1sen!2sus" width="100%" height="220" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
                     </span>
                     <span *ngIf="locationId == 3">
-                      <iframe src="" width="100%" height="230" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11301.48985172141!2d-123.2929286!3d44.9157606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x40ab5e7d466539ee!2sGodsey%20Secure%20Storage!5e0!3m2!1sen!2sus!4v1579482740174!5m2!1sen!2sus" width="100%" height="230" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
                     </span>
                   </div>
                   <h5 class="pt-3"> {{heading}} </h5>
                   <div class="py-2">
                     <span *ngFor="let contact of contactDetails; let i = index">
-                      <span *ngIf = "i !== 0">
+                      <!-- <span >
                         <b>{{contact.label}}</b> {{contact.data}}<br>
-                      </span>
+                      </span> -->
+                      <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                         <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                       
                     </span>
                   </div>
                   <div class="py-2">
                     <span *ngFor="let hour of hoursDetails">
-                      <b>{{hour.label}}</b>{{hour.data}}<br>
+                      <b>{{hour.label}}</b>{{hour.normalData}}<br>
                     </span>              
                   </div>
-                </div> -->
-                <div class="for-village">
+                </div>
+                <!-- <div class="for-village">
                   <h2> Dallas Secure Storage</h2>
                    <div class="py-2">
                        <span *ngFor="let contact of contactsLocation1">
                          <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                          <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                        </span>
-                   </div>
+                   </div> -->
                    
                   
                    <!--  <span><b> Office: </b></span> <br> -->
-                   <span *ngFor="let hour of hoursLocation1">
+                   <!-- <span *ngFor="let hour of hoursLocation1">
                      <b>{{hour.label}}</b>{{hour.normalData}}<br>
                    </span>  
                  </div>
@@ -122,13 +125,13 @@
                         <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                       </span>
                   </div>
-                  
+                   -->
                  
                   <!--  <span><b> Office: </b></span> <br> -->
-                  <span *ngFor="let hour of hoursLocation3">
+                  <!-- <span *ngFor="let hour of hoursLocation3">
                     <b>{{hour.label}}</b>{{hour.normalData}}<br>
                   </span>
-                 </div>
+                 </div> -->
           </div>
       </div>
   </div>
