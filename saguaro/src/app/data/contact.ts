@@ -5,7 +5,6 @@ export const contact = [
         data: '17013 East Enterprise Dr, Fountain Hills, AZ, 85268',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
-    
     {
         id: 1,
         label: 'Email:',
@@ -38,5 +37,5 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    
+
 ];
