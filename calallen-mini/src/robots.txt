@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: http://calallenmini-staging.syrasoft.com/sitemap.xml
+Sitemap: https://www.calallenministorage.com/sitemap.xml
 User-agent: *
 Disallow:
