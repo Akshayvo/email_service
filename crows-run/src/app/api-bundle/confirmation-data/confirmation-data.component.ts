@@ -88,10 +88,6 @@ private  addTenantSubscribe$: Subscription;
 private  updateTenantSubscribe$: Subscription;
 private  makeAReservationSubscribe$: Subscription;
 private  getTenantInfoSubscribe$: Subscription;
-private  signOutSubscribe$: Subscription;
-
-
-
 
 constructor(
   public router: Router,
@@ -100,7 +96,6 @@ constructor(
   private makeAReservationService: MakeAReservationService,
   private addTenantService: AddTenantService,
   private tenantInfoService: TenantInfoService,
-  private signOutService: SignOutService,
 ) {
   this.fetchOption();
   this.fetchSharedData();
@@ -139,43 +134,14 @@ public navigateToPrevious() {
     }
   }
 }
-// public navigateToPrevious() {
-//   console.log('confirmation page working', this.dataSharingService.navigateToPrevious);
-//   this.router.navigate([this.dataSharingService.navigateToPrevious]);
-// }
 
 public hasUnsavedData() {
   return this.canExit;
 }
 
 
-
-public navigate(location: any) {
-  this.router.navigate([location]);
-}
-
 ngOnInit() {
   this.getTenantUnitData();
-
-  // this.router.events.pipe(
-  //   filter((event: RouterEvent) => event instanceof NavigationEnd),
-  //     pairwise(),
-  //     filter((events: RouterEvent[]) => events[0].url === events[1].url),
-  //     startWith('Initial call'),
-  //   takeUntil(this.destroyed)
-  // ).subscribe(() => {
-  //   this.fetchOption();
-  //   this.fetchSharedData();
-  //   this.getTenantUnitData();
-  //   console.log('refresh is working');
-
-  // });
-
-  // this.router.events.subscribe(e => {
-  //   if (e instanceof ActivationStart && e.snapshot.outlet === 'confirmation') {
-  //     this.outlet.deactivate();
-  //   }
-  // });
 }
 
 getTenantUnitData() {
@@ -245,6 +211,7 @@ getTenantUnitData() {
     this.makeAReservationSubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
       .subscribe(strConfirmationResponse => {
         this.strConfirmation = strConfirmationResponse.strConfirmation;
+        this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
         this.showConfirmation = false;
         this.submitted = false;
          this.tokenExit = localStorage.getItem('strTenantToken');
@@ -253,6 +220,9 @@ getTenantUnitData() {
           localStorage.removeItem('strTempTenantToken');
         }
         this.reservationInProgress = false;
+        if (strConfirmationResponse.strConfirmation) {
+          this.router.navigate(['/view-rates/confirmation-page']);
+        }
       }, (err: any) => {
         if (err.status === 403) {
           this.showConfirmation = false;
@@ -281,6 +251,7 @@ getTenantUnitData() {
       this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
         .subscribe(strConfirmationResponse => {
           this.strAccessCode = strConfirmationResponse.strAccessCode;
+          this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
           this.submitted = false;
            this.tokenExit = localStorage.getItem('strTenantToken');
           this.existTempToken = localStorage.getItem('strTempTenantToken');
@@ -304,15 +275,7 @@ getTenantUnitData() {
         );
       }
 
-      signOut(logOut: any) {
-        this.signOutSubscribe$ = this.signOutService.signOut(logOut)
-           .subscribe(result => {
-             localStorage.removeItem('strTenantToken');
-             this.router.navigate(['/']);
-           }, (err) => {
-           }
-           );
-       }
+
 
     onSubmit() {
       if (window.localStorage) {
@@ -385,9 +348,6 @@ getTenantUnitData() {
       }
       if (this.makeAReservationSubscribe$ && this.makeAReservationSubscribe$.closed) {
         this.makeAReservationSubscribe$.unsubscribe();
-      }
-      if (this.signOutSubscribe$ && this.signOutSubscribe$.closed) {
-        this.signOutSubscribe$.unsubscribe();
       }
       this.destroyed.next();
       this.destroyed.complete();

@@ -6,7 +6,7 @@
 
 table {
   tbody {
-    tr:nth-child(even){
+    tr:nth-child(even) {
       background-color: #dcdcdc;
     }
 
@@ -18,13 +18,7 @@ table {
     }
   }
 }
-.home-link {
-  a {
-    color: $secondary;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-}
+
 
 .loaderBg {
   width: 300px;

@@ -15,6 +15,7 @@ import { ErrorHandlerComponent } from '../error-handler/error-handler.component'
 import { ErrorComponent } from '../error/error.component';
 import { PaymentIframePageComponent } from '../iframe-bundle/payment-iframe-page/payment-iframe-page.component';
 import { ViewRatesIframePageComponent } from '../iframe-bundle/view-rates-iframe-page/view-rates-iframe-page.component';
+// tslint:disable-next-line:max-line-length
 import { ReserveUnitIframePageComponent } from '../iframe-bundle/reserve-unit-iframe-page/reserve-unit-iframe-page.component';
 import { ChangePasswordComponent } from '../api-bundle/change-password/change-password.component';
 import { LoginModalComponent } from '../api-bundle/login-modal/login-modal.component';
@@ -22,6 +23,7 @@ import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.compo
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
+import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confirmation-page.component';
 
 
  export const apiRoutes = [
@@ -40,6 +42,7 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
         { path: 'reserve', component: ReserveUnitFormComponent },
         { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'confirmation-page', component: ConfirmationPageComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
       ]
