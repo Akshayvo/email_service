@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { headingLocation1, headingLocation2, headingLocation3 } from '../data/location';
+import { rates } from '../data/view-rates';
 
 @Component({
   selector: 'app-storage-unit',
@@ -11,6 +12,7 @@ export class StorageUnitComponent implements OnInit {
   id: number;
   tabs: any;
   heading: string;
+  rates: any;
 
   constructor(private router: Router) { }
 
@@ -28,6 +30,7 @@ export class StorageUnitComponent implements OnInit {
     } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
       this.id = 3;
       this.heading = headingLocation3;
+      this.rates = rates;
     }
   }
 }
