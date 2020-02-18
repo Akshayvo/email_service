@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { payment} from '../data/payment';
-import { contact } from '../data/contact';
-import { payRent } from '../data/blurb';
+import { payment} from '../../data/payment';
+import { contact } from '../../data/contact';
+import { payRent } from '../../data/blurb';
 
 @Component({
-  selector: 'app-pay-rent',
-  templateUrl: './pay-rent.component.html',
-  styleUrls: ['./pay-rent.component.scss']
+  selector: 'app-payment-iframe-page',
+  templateUrl: './payment-iframe-page.component.html',
+  styleUrls: ['./payment-iframe-page.component.scss']
 })
-
-export class PayRentComponent implements OnInit {
-
+export class PaymentIframePageComponent implements OnInit {
   payment: any;
   contact: any;
   payRent: any;

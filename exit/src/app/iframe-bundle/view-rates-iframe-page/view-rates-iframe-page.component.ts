@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { viewRate } from '../data/view';
-import { viewRates } from '../data/blurb';
+import { viewRate } from '../../data/view';
+import { viewRates } from '../../data/blurb';
 
 @Component({
-  selector: 'app-view-rates',
-  templateUrl: './view-rates.component.html',
-  styleUrls: ['./view-rates.component.scss']
+  selector: 'app-view-rates-iframe-page',
+  templateUrl: './view-rates-iframe-page.component.html',
+  styleUrls: ['./view-rates-iframe-page.component.scss']
 })
-export class ViewRatesComponent implements OnInit {
+export class ViewRatesIframePageComponent implements OnInit {
 
   viewRate: any;
   viewRates: any;

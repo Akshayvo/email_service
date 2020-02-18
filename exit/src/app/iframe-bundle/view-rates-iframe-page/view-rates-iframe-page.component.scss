@@ -1,8 +1,8 @@
-@import "../../styles.scss";
+@import "../../../styles.scss";
 
-.payment-top {
+.view-rates-top {
   height: 60vh;
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Exit_120_Images/pay-rent.jpg");
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Exit_120_Images/exit-120-self-storage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -13,7 +13,7 @@
   padding: 0 8%;
 }
 
-.payment-bottom {
+.view-rates-bottom {
   padding: 48px 0;
 }
 
@@ -37,19 +37,6 @@
   margin-top: 64px;
 }
 
-.content-Holder {
-  text-align: center;
-  color: $fontColor;
-
-  h2 {
-    color: $white;
-    border-bottom: 2px solid $primary;
-    margin: auto;
-    font-size: 2.25rem;
-    width: 285px;
-  }
-}
-
 .scroll-wrapper {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
@@ -60,38 +47,58 @@
   }
 }
 
-.payment-link {
-  a {
-    color: $white;
-  }
+.view-rates-map {
+  max-width: 100%;
 }
 
-.payment-map {
-  iframe {
-    max-width: 100%;
+.content-Holder {
+  p {
+    color: $fontColor;
+    text-align: justify;
+  }
+
+  h2 {
+    color: $white;
+    border-bottom: 2px solid $primary;
+    width: 250px;
+    margin: auto;
+    font-size: 2.25rem;
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .payment-top {
+  .view-rates-top {
     height: 40vh;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: initi;
     background-attachment: scroll;
-    background-position: center;
+  }
+
+  .scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    height: 600px;
+    overflow-y: scroll;
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      overflow: scroll;
+    }
   }
 
   .content-margin-top {
     margin-top: 36px;
   }
 
-  .payment-bottom {
+  .view-rates-bottom {
     padding: 16px 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .payment-top {
+  .view-rates-top {
     .jumbotorn-top {
       display: none;
     }
@@ -113,7 +120,7 @@
     }
   }
 
-  .payment-top {
+  .view-rates-top {
     .jumbotorn-top {
       display: none;
     }
@@ -128,7 +135,7 @@
     }
   }
 
-  .payment-top {
+  .view-rates-top {
     .jumbotorn-top {
       h1 {
         font-size: 2.5rem;
@@ -148,7 +155,7 @@
     }
   }
 
-  .payment-top {
+  .view-rates-top {
     .jumbotorn-top {
       top: 10%;
       position: relative;
@@ -157,7 +164,7 @@
 }
 
 @media only screen and (min-width: 992px) and (min-height: 601px) and(max-height: 950px) {
-  .payment-top {
+  .view-rates-top {
     .jumbotorn-top {
       h1 {
         font-size: 2.5rem;
@@ -177,18 +184,4 @@
   .jumbotorn-top {
     display: none;
   }
-
-  .scroll-wrapper {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
-    height: 600px;
-    overflow-y: scroll;
-
-    iframe {
-      width: 100%;
-      overflow: scroll;
-    }
-  }
 }
-
-

@@ -1,0 +1,44 @@
+
+@import "../../../styles.scss";
+
+label {
+  color: white;
+}
+
+.modal-open {
+  .modal-backdrop {
+    background: none;
+  }
+}
+
+.forgot-link {
+  a {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid $primary;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  z-index: 1;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.button-display {
+  display: flex;
+  align-items: end;
+}
