@@ -1,11 +1,15 @@
 import { isPlatformBrowser } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, Inject, Input, PLATFORM_ID, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Inject, Input, PLATFORM_ID, ViewChild, OnDestroy } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Component({
     selector: 'app-script-hack',
     templateUrl: './scripthack.component.html'
 })
-export class ScriptHackComponent implements AfterViewInit {
+export class ScriptHackComponent implements AfterViewInit, OnDestroy {
+
+    public destroyed = new Subject<any>();
+
     @Input()
     src: string;
 
@@ -38,4 +42,9 @@ export class ScriptHackComponent implements AfterViewInit {
             this.convertToScript();
         }
     }
+
+    ngOnDestroy() {
+        this.destroyed.next();
+        this.destroyed.complete();
+      }
 }

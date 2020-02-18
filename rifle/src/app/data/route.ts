@@ -25,6 +25,8 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 import { ContactComponent } from '../contact/contact.component';
 import { FaqComponent } from '../faq/faq.component';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
+import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confirmation-page.component';
+
 
 
  export const apiRoutes = [
@@ -45,6 +47,7 @@ import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.compone
         { path: 'reserve', component: ReserveUnitFormComponent },
         { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'confirmation-page', component: ConfirmationPageComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
       ]

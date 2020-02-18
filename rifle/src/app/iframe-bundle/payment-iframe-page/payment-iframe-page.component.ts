@@ -1,7 +1,8 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { payment} from '../../data/payment';
 import { contact } from '../../data/contact';
-import { WINDOW } from '@ng-toolkit/universal';
+import { payRent } from '../../data/blurb';
 import { CanonicalService } from '../../services/canonical.service';
 
 @Component({
@@ -11,7 +12,10 @@ import { CanonicalService } from '../../services/canonical.service';
 })
 export class PaymentIframePageComponent implements OnInit {
 
-  contactDetails: any;
+  payment: any;
+  contact: any;
+  payRent: any;
+  currentActive: any = 'PAY RENT';
 
   constructor(
     private titleService: Title,
@@ -21,18 +25,28 @@ export class PaymentIframePageComponent implements OnInit {
       this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent online 24 hours a day, 7 days a week right here! Simply follow
-      the instructions or call (573) 885-2539 to begin!`
+      content: `Pay your rent online with our easy-to-use tenant bill-pay service! Follow the
+      instructions on the page or call (970) 230-1048 for help!`
     });
-    this.titleService.setTitle('Pay Your Rent Online');
+    this.titleService.setTitle('Pay Rent | Rifle Self Storage');
   }
 
   ngOnInit() {
-    window.scrollTo(0, 0);
+    this.fetchPayment();
     this.fetchContact();
+    this.fetchPayRent();
+    window.scrollTo(0, 0);
+  }
+
+  public fetchPayment() {
+    this.payment = payment;
   }
 
   public fetchContact() {
-    this.contactDetails = contact;
+    this.contact = contact;
+  }
+
+  public fetchPayRent() {
+    this.payRent = payRent;
   }
 }

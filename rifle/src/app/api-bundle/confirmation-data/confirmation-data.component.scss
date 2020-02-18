@@ -1,4 +1,8 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
+
+h3 {
+  color: white;
+}
 
 .button {
   width: -webkit-fill-available;
@@ -6,11 +10,13 @@
 
 table {
   tbody {
-    tr:nth-child(even){
+    tr:nth-child(even) {
       background-color: #dcdcdc;
+      color: black;
     }
 
     tr {
+      color: white;
       td {
         padding: 10px 20px;
         border: 1px solid #dee2e6;
@@ -18,13 +24,7 @@ table {
     }
   }
 }
-.home-link {
-  a {
-    color: $secondary;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-}
+
 
 .loaderBg {
   width: 300px;
@@ -112,7 +112,7 @@ table {
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.7);
     p{
-      text-align: center
+      text-align: center;
     }
   }
 }

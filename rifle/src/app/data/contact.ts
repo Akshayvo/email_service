@@ -7,8 +7,8 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:info@riflestorageunits.com',
         label: 'Email',
+        redirect: 'mailto:info@riflestorageunits.com',
         data: 'info@riflestorageunits.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
