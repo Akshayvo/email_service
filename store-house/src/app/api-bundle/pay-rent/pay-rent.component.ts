@@ -1,8 +1,8 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { contact } from '../data/contact';
-import { CanonicalService } from '../services/canonical.service';
+import { contact } from '../../data/contact';
+import { CanonicalService } from 'src/app/services/canonical.service';
 
 @Component({
   selector: 'app-pay-rent',

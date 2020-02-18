@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "store-house"
+  "defaultProject": "store-house",
+  "cli": {
+    "analytics": "407bad0a-1076-4b9b-b9f8-bdd150a3edf0"
+  }
 }

@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { CanonicalService } from '../services/canonical.service';
+import { CanonicalService } from '../../services/canonical.service';
 
 @Component({
-  selector: 'app-reserve',
-  templateUrl: './reserve.component.html',
-  styleUrls: ['./reserve.component.scss']
+  selector: 'app-reserve-unit-iframe-page',
+  templateUrl: './reserve-unit-iframe-page.component.html',
+  styleUrls: ['./reserve-unit-iframe-page.component.scss']
 })
-export class ReserveComponent implements OnInit {
-
-  currentActive: any = 'RESERVE';
+export class ReserveUnitIframePageComponent implements OnInit {
 
   constructor(
     private titleService: Title,

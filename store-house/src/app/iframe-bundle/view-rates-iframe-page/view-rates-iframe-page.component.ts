@@ -1,17 +1,16 @@
 import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { dataViewRates, militaryData } from '../data/view-rates';
-import { CanonicalService } from '../services/canonical.service';
+import { dataViewRates, militaryData } from '../../data/view-rates';
+import { CanonicalService } from '../../services/canonical.service';
 
 @Component({
-  selector: 'app-view-rates',
-  templateUrl: './view-rates.component.html',
-  styleUrls: ['./view-rates.component.scss']
+  selector: 'app-view-rates-iframe-page',
+  templateUrl: './view-rates-iframe-page.component.html',
+  styleUrls: ['./view-rates-iframe-page.component.scss']
 })
-export class ViewRatesComponent implements OnInit {
+export class ViewRatesIframePageComponent implements OnInit {
 
-  currentActive: any = 'VIEW RATES';
   dataViewRates: any;
   militaryData: any;
 

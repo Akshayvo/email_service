@@ -1,8 +1,13 @@
 export const environment = {
-  production: true,
-  errorsMails: ['website.dev@codeparva.in'],
+  production: false,
+  type: 0,  // { API: 0, iframe: 1 }
+  errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
+  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
+  websiteUrl: 'https://thestorehousewatertown.com',
   appId: 'store-house',
   VERSION: require('../../package.json').version,
-  websiteUrl: 'https://thestorehousewatertown.com'
+  baseUrl: `https://simapi.syrasoft.com/1/api/`,
+  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
+  APIKey: ``, // store-house 16374
 };
