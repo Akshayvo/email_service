@@ -14,6 +14,7 @@ import { ErrorHandlerComponent } from '../error-handler/error-handler.component'
 import { ErrorComponent } from '../error/error.component';
 import { PaymentIframePageComponent } from '../iframe-bundle/payment-iframe-page/payment-iframe-page.component';
 import { ViewRatesIframePageComponent } from '../iframe-bundle/view-rates-iframe-page/view-rates-iframe-page.component';
+// tslint:disable-next-line:max-line-length
 import { ReserveUnitIframePageComponent } from '../iframe-bundle/reserve-unit-iframe-page/reserve-unit-iframe-page.component';
 import { ChangePasswordComponent } from '../api-bundle/change-password/change-password.component';
 import { LoginModalComponent } from '../api-bundle/login-modal/login-modal.component';
@@ -22,6 +23,8 @@ import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-passw
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 import { ContactComponent } from '../contact/contact.component';
+import { FaqComponent } from '../faq/faq.component';
+import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 
 
  export const apiRoutes = [
@@ -32,6 +35,8 @@ import { ContactComponent } from '../contact/contact.component';
     { path: 'reserve', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
+    { path: 'faq', component: FaqComponent },
     {
       path: 'view-rates',
       component: ViewRatesComponent,
@@ -78,8 +83,10 @@ export const iFrameRoutes = [
     { path: 'view-rates', component: ViewRatesIframePageComponent },
     { path: 'reserve', component: ReserveUnitIframePageComponent },
     { path: 'storageTips', component: StorageTipsComponent },
-    { path: 'contact-us', component: ContactUsComponent },
+    { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent},
+    { path: 'faq', component: FaqComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'

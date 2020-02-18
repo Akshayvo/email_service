@@ -13,7 +13,7 @@ export class ReserveUnitIframePageComponent implements OnInit {
     this.meta.addTag({
       name: 'description',
       content: `Ready to reserve an affordable, high quality self storage unit at
-      Cuba Self Storage? Click here to complete your reservation online!`
+      rifle Self Storage? Click here to complete your reservation online!`
     });
     this.titleService.setTitle('Reserve Your Unit');
   }

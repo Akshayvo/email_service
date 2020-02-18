@@ -24,9 +24,9 @@ export class ViewRatesIframePageComponent implements OnInit {
     this.meta.addTag({
       name: 'description',
       content: `Check out the rates to the wide variety of self storage unit sizes and
-      services at Cuba Self Storage here!`
+      services at rifle Self Storage here!`
     });
-    this.titleService.setTitle('Affordable Units in Cuba, MO | Cuba Self Storage');
+    this.titleService.setTitle('Affordable Units in rifle, MO | rifle Self Storage');
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();

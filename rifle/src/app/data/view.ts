@@ -18,9 +18,9 @@ export const th = [
     {
       data: `Rate`
     },
-    {
-      data: `Deposit`
-    },
+    // {
+    //   data: `Deposit`
+    // },
     {
       data: `Reserve a Unit`
     },
@@ -31,7 +31,7 @@ export const th = [
     //   data: `Climate Control`
     // },
   ];
-  
+
   export const option =  [
     {
       description: 'Alabama',

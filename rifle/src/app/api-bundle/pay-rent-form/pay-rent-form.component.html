@@ -1,6 +1,6 @@
 <div class="payRent">
-    <h2 class="pb-1">Payment</h2>
-    <div *ngIf="showSuccessPayment; else other"  class="go-to-home pt-4">
+    <h2 class="pb-2">Payment</h2>
+    <div *ngIf="showSuccessPayment; else other"  class="go-to-home pt-4 pay-rent-message">
       <div *ngIf="!navigateToMoveIn && !navigateToReserve">
         Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .
       </div>
@@ -22,8 +22,8 @@
   
   <ng-template #other>
     <form [formGroup]="payRentForm" (ngSubmit)="onSubmit()" class="pt-3">
-        <strong ><i  *ngIf="showloaderForPayment">Processing payment, please wait...</i></strong>
-        <strong><i *ngIf="invalidPayment">{{invalidPayment}}</i></strong>
+        <strong class="customStyle"><i  *ngIf="showloaderForPayment" >Processing payment, please wait...</i></strong>
+        <strong class="customStyle"><i *ngIf="invalidPayment">{{invalidPayment}}</i></strong>
       <div
       [class.loaderForPayment]="showloaderForPayment || showLoader"
         >
@@ -168,7 +168,7 @@
                         <div class="col-lg-12 form-group readonly-form-control">
                           <label>Surcharge: </label>&nbsp;
                           <!-- <input class="form-control " readonly type="text" [value]="surcharge"/> -->
-                          <span>${{surcharge}}</span>
+                          <span class="customStyle">${{surcharge}}</span>
                         </div>
                       </div>
             
@@ -176,7 +176,7 @@
                         <div class="col-lg-12 form-group readonly-form-control">
                           <label>Amount to pay: </label>&nbsp;
                           <!-- <input class="form-control" readonly type="text" [value]="AmountToPay" /> -->
-                          <span>${{AmountToPay}}</span>
+                          <span class="customStyle">${{AmountToPay}}</span>
                         </div>
                       </div>
                   </div>

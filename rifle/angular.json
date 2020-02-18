@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "rifle"
+  "defaultProject": "rifle",
+  "cli": {
+    "analytics": "11705a99-431d-4d9c-870f-f52ee8c785f4"
+  }
 }
