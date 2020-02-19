@@ -35,8 +35,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
       <ul class="navbar-nav ml-auto navbar-nav-scroll">
         <li class="nav-item px-1 text-center" *ngFor="let nav of navLinks">
-          <a class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          <a class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path"  *ngIf="nav?.path != '/pay-rent'"
           [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
+          <a class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path"  *ngIf="nav?.path === '/pay-rent'"
+          [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)">{{nav.label}}</a>
         </li>
       </ul>
     </div>

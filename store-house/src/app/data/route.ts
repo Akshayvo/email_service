@@ -23,6 +23,7 @@ import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-passw
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 import { ContactComponent } from '../contact/contact.component';
+import { MilitaryServiceComponent } from '../military-service/military-service.component';
 
 
  export const apiRoutes = [
@@ -30,9 +31,10 @@ import { ContactComponent } from '../contact/contact.component';
     { path: '', component: HomeComponent },
     { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'reserve', component: ReserveComponent },
+    { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
+    { path: 'military-discount', component: MilitaryServiceComponent },
     {
       path: 'view-rates',
       component: ViewRatesComponent,
@@ -77,10 +79,11 @@ export const iFrameRoutes = [
     { path: 'pay-rent', component: PaymentIframePageComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
     { path: 'view-rates', component: ViewRatesIframePageComponent },
-    { path: 'reserve', component: ReserveUnitIframePageComponent },
+    { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent},
+    { path: 'military-discount', component: MilitaryServiceComponent },
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'

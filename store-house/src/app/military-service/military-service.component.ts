@@ -27,7 +27,8 @@ export class MilitaryServiceComponent implements OnInit {
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: ` We offer discounts to our valued military service personnel stationed at Fort Drum and deployed around the globe! `
+      content: ` We offer discounts to our valued military service personnel stationed
+      at Fort Drum and deployed around the globe! `
     });
     this.titleService.setTitle('Self Storage Serving Fort Drum | The Store House');
   }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailService } from '../services/email.service';
 import { contact, hours, socialLinks } from '../data/contact';
-import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
+import {FormGroup, FormBuilder, Validators,  } from '@angular/forms';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-contact-button',
@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 })
 export class ContactButtonComponent implements OnInit {
 
-  // form: FormGroup;
   hours: any;
   nameCB: string;
   emailCB: any;

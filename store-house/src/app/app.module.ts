@@ -49,12 +49,15 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { ContactComponent } from './contact/contact.component';
 import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
+import { ContactButtonComponent } from './contact-button/contact-button.component';
+import { MilitaryServiceComponent } from './military-service/military-service.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
     ContactComponent,
+    ContactButtonComponent,
     FooterComponent,
     ViewRatesComponent,
     TablesComponent,
@@ -80,6 +83,7 @@ import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confir
     VerifyCodeComponent,
     ResetPasswordComponent,
     UnitSizerComponent,
+    MilitaryServiceComponent,
     ConfirmationPageComponent,
   ],
   imports: [
