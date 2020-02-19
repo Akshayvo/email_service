@@ -8,16 +8,16 @@ export class LocationService {
   places = [
     {
       id: 1,
-      name: '',
+      name: 'Agricola',
     },
     {
       id: 2,
-      name: '',
+      name: 'Rocky Creek',
     },
     {
       id: 3,
-      name: '730 Kenton Station Location',
-    },
+      name: 'Barton'
+    }
  ];
  private locationSource = new BehaviorSubject(this.places[0].id);
  // tslint:disable-next-line:member-ordering

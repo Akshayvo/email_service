@@ -27,11 +27,23 @@ import { DirectionsComponent } from './directions/directions.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { SelectLocationComponent } from './select-location/select-location.component';
+import { MaterialModule } from './modules/material/material.module';
 
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './login/login.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { VerifyCodeComponent } from './verify-code/verify-code.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { LoginModalComponent } from './login-modal/login-modal.component';
+import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
+import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
+import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
 
 
 @NgModule({
@@ -56,7 +68,17 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
     AccordionComponent,
     SelectLocationComponent,
     ErrorHandlerComponent,
+    LoginComponent,
+    PayRentFormComponent,
+    ResetPasswordComponent,
+    VerifyCodeComponent,
+    ForgotPasswordComponent,
+    ChangePasswordComponent,
+    LoginModalComponent,
     PayRentComponent,
+    ConfirmationDataComponent,
+    ReserveUnitFormComponent,
+    ViewRatesPageComponent,
   ],
   imports: [
     NgtUniversalModule,
@@ -66,6 +88,8 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MaterialModule,
+    BrowserAnimationsModule,
     ],
   providers: [
     Title,

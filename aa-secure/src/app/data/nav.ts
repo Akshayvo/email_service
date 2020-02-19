@@ -19,7 +19,6 @@ export const navLinks = [
                 label: '730 Kenton Station Location',
                 path: '/location/730-kenton-station',
               },
-            
             {
                 id: '4',
                 label: '113 McDonald Parkway',

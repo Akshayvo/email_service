@@ -35,7 +35,11 @@
       <ul class="navbar-nav ml-auto nav-scroll">
         <li class="nav-item mx-2" *ngFor="let nav of navLinks">
           <span *ngIf="nav?.type === 'link'">
-            <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
+            <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" *ngIf="nav?.path !== '/pay-rent'"
+            [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
+            <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" *ngIf="nav?.path === '/pay-rent'"
+            [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)">{{nav.label}}</a>
+
           </span>
 
           <span *ngIf="nav?.type === 'dropdown'">

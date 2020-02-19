@@ -10,6 +10,14 @@ import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { LoginComponent } from './login/login.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { AuthGuard } from './auth.gurad';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { VerifictionCodeGuard } from './verificationCode.guard';
+import { VerifyCodeComponent } from './verify-code/verify-code.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -84,7 +92,16 @@ const routes: Routes = [
   }
 },
   { path: 'error', component: ErrorHandlerComponent },
-  { path: 'pay-rent', component: PayRentComponent },
+  { path: 'pay-rent', component: PayRentComponent,
+  children: [
+    { path: '', redirectTo: 'login', pathMatch: 'full'},
+    { path: 'login', component: LoginComponent },
+    { path: 'forgotPassword', component: ForgotPasswordComponent },
+    { path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+    {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+    { path: 'verifyCode', component: VerifyCodeComponent },
+    { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+  ]},
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: ErrorComponent },
