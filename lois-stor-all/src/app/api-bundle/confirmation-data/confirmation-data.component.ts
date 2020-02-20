@@ -102,11 +102,23 @@ constructor(
   private tenantInfoService: TenantInfoService,
   private signOutService: SignOutService,
 ) {
+
+  console.log("reseration fee", this.dataSharingService.LstUnitTypes.ReservationFee);
+  
   this.fetchOption();
   this.fetchSharedData();
 }
 
+ngOnInit() {
+  console.log('confirmatin age in ngoninit', this.navigateToMoveIn, this.navigateToReserve);
+
+  this.getTenantUnitData();
+  console.log('confirmatin age in ngoninit 1', this.navigateToMoveIn, this.navigateToReserve);
+
+}
+
 fetchSharedData() {
+  console.log('shared data ', this.navigateToMoveIn, this.navigateToReserve);
   this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
   this.navigateToReserve  = this.dataSharingService.navigateToReserve;
   this.tenantData.objTenant = this.dataSharingService.objTenant;
@@ -155,29 +167,7 @@ public navigate(location: any) {
   this.router.navigate([location]);
 }
 
-ngOnInit() {
-  this.getTenantUnitData();
 
-  // this.router.events.pipe(
-  //   filter((event: RouterEvent) => event instanceof NavigationEnd),
-  //     pairwise(),
-  //     filter((events: RouterEvent[]) => events[0].url === events[1].url),
-  //     startWith('Initial call'),
-  //   takeUntil(this.destroyed)
-  // ).subscribe(() => {
-  //   this.fetchOption();
-  //   this.fetchSharedData();
-  //   this.getTenantUnitData();
-  //   console.log('refresh is working');
-
-  // });
-
-  // this.router.events.subscribe(e => {
-  //   if (e instanceof ActivationStart && e.snapshot.outlet === 'confirmation') {
-  //     this.outlet.deactivate();
-  //   }
-  // });
-}
 
 getTenantUnitData() {
   this.firstName = this.dataSharingService.objTenant.FirstName;
@@ -200,6 +190,8 @@ getTenantUnitData() {
         .subscribe(result => {
         localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
 
+        console.log("move", this.navigateToMoveIn, "reserve", this.navigateToReserve);
+        
         if (this.navigateToMoveIn ) {
           if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
             this.router.navigate(['/view-rates/payMoveInCharges']);

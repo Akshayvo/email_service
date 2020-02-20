@@ -17,6 +17,7 @@ import { ErrorComponent } from '../error/error.component';
 import { RentNowIframePageComponent } from '../iframe-bundle/rent-now-iframe-page/rent-now-iframe-page.component';
 import { PaymentIframePageComponent } from '../iframe-bundle/payment-iframe-page/payment-iframe-page.component';
 import { ViewRatesIframePageComponent } from '../iframe-bundle/view-rates-iframe-page/view-rates-iframe-page.component';
+// tslint:disable-next-line:max-line-length
 import { ReserveUnitIframePageComponent } from '../iframe-bundle/reserve-unit-iframe-page/reserve-unit-iframe-page.component';
 import { ChangePasswordComponent } from '../api-bundle/change-password/change-password.component';
 import { LoginModalComponent } from '../api-bundle/login-modal/login-modal.component';
@@ -47,17 +48,6 @@ import { UnitSizerIframePageComponent } from '../iframe-bundle/unit-sizer-iframe
         { path: 'payMoveInCharges', component: PayRentFormComponent },
       ]
      },
-    {
-      path: 'rent-now', component: RentNowComponent,
-      children: [
-        { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
-      ]
-    },
     {
       path: 'pay-rent', component: PaymentComponent,
       children: [
