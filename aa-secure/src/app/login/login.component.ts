@@ -64,7 +64,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (window.localStorage) {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
-          this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
+          this.router.navigate([`/pay-rent/payment`]);
        }
     }
   }
@@ -103,7 +103,7 @@ export class LoginComponent implements OnInit, OnDestroy {
           // if (this.activatedRoute.snapshot.url[1].path === 'changePassword') {
           //   this.router.navigate([`/pay-rent/${this.navTo}/changePassword`]);
           // } else {
-            this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
+            this.router.navigate([`/pay-rent/payment`]);
           // }
         }, (err) => {
           this.credentialsInvalid = true;

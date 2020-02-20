@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://www.aasecurestorage.com/sitemap.xml
+Sitemap: https://www.aasecure-staging.syrasoft.com/sitemap.xml
 User-agent: *
 Disallow:
