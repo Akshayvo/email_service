@@ -68,6 +68,7 @@ export const contactsLocation3 = [
 export const hoursLocation3 = [
     {
         label: 'Monday - Friday: ',
+        data: '9:00AM - 5:00PM',
         normalData: '9:00AM - 5:00PM',
     },
     {
