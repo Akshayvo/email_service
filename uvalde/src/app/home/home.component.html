@@ -1,0 +1,119 @@
+<div class="jumbotron-container">
+  <div class="jumbotron-top">
+  <div class="jumbotron px-0 m-0">
+    <div class="bg-translucent jumbotorn-skew-style">
+    </div>
+    <div class="container">
+      <div class="jumbotorn-skew-text">
+        <div class="disp" *ngFor="let jumbotron of jumbotron">
+          <h2  class="my-4">
+            {{jumbotron.h1}}
+          </h2>
+        <p class="text-justify">{{jumbotron.blurb}}</p>
+        </div>
+        <div class="jumbotorn-button">
+          <a class="btn btn-lg btn-outline-primary" (click)="navigate('/location/260-n-grove/storageUnits')" role="button">View Rates</a>
+          <a class="btn btn-lg btn-primary" (click)="navigate('/location/260-n-grove/reserveUnit')" role="button">Reserve Unit</a></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+  <!--Feature Box-->
+  <div class="jumbotron-bottom">
+    <div class="container feature-block disp ">
+      <div class="row">
+        <div class="col-md-3 col-sm-3" *ngFor= "let feature of features">
+          <p class="text-center f-block-img py-2 mb-0"> 
+            <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}">
+          </p>
+          <h6 class="text-center f-text py-2 mb-0">
+            {{feature.label}}
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Feature Box Ends Here-->
+
+
+<!--For individual location-->
+<div class="pb-5 pt-5 bg-light">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1K0Hzz3Y4qk2v-RH6_gCfSXL9a5TJhCbC" width="100%" height="480"></iframe>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--For individual location-->
+
+<!--location information-->
+<div class="">
+  <div class="container py-4">
+    <div class="section py-4 m-0">
+      <div class="row">
+        <div class="col-lg-6 py-3 home-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6889.883101799224!2d-99.79744752223074!3d29.210172296544446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7372c54e142f60f!2sAffordable%20Storage!5e0!3m2!1sen!2sus!4v1582163678285!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
+        </div>
+
+        <div class="col-lg-6 py-3">
+          <div class="mb-4">
+            
+            <p>
+              <span *ngFor="let contact of contactDetails">
+                <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content">
+                  <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+              </span>
+            </p>
+            <b>Hours:</b>
+            <p>
+              <span *ngFor="let hour of hours">
+                <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+              </span>
+            </p>
+          </div>
+          <div>
+            <app-tables [showBorder]="true" [tBody]="featuresList"></app-tables>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--location information end-->
+
+
+<!--Service-->
+  <div class="service bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 pt-2">
+            <h1  class="pb-4">Affordable Self Storage Units in Uvalde</h1>
+            <div *ngFor="let para of serviceOffered">
+              <p>{{ para.p }}</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Uvalde_Affordable_Storage/affordable-storage-uvalde.jpg" alt="climate controlled indoor self storage units">
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Service Ends Here-->
+
+
+<div class="pb-5 pt-5">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center" *ngFor="let data of gettingStarted">
+        <h3 class="pb-4">{{data.heading}}</h3>
+        <p>{{data.para}}</p>
+      </div>
+    </div>
+  </div>
+</div>
