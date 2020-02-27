@@ -4,6 +4,7 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, hours } from '../data/contact';
+import { contactScript } from '../data/script';
 
 
 @Component({
@@ -27,6 +28,7 @@ export class ContactComponent implements OnInit {
   submitted = false;
   mailSent = false;
   subject: string;
+  script: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -55,12 +57,17 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
+    this.fetchScript();
     window.scrollTo(0, 0);
   }
 
   get f() { return this.contactForm.controls; }
   public fetchContactDetails() {
     this.contactInfo = contact;
+  }
+
+  public fetchScript() {
+    this.script = contactScript;
   }
 
   public fetchHours() {

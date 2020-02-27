@@ -28,6 +28,7 @@ import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { PhotosComponent } from './photos/photos.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { ScriptHackComponent } from './script-hack/script-hack.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     ReserveUnitComponent,
     PhotosComponent,
     TestimonialsComponent,
+    ScriptHackComponent,
   ],
   imports: [
     CommonModule,
