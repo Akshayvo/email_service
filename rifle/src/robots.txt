@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://rifle-staging.syrasoft.com.com/sitemap.xml
+Sitemap: https://riflestorageunits.com/sitemap.xml
 User-agent: *
 Disallow:
