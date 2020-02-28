@@ -18,6 +18,24 @@ export const viewRates = [
     }
 ];
 
+export const th = [
+  {
+    data: `Size`
+  },
+  {
+    data: `Rate`
+  },
+  {
+    data: `Reserve a Unit`
+  },
+  // {
+  //   data: `Move In`
+  // },
+  // {
+  //   data: `Climate Control`
+  // },
+];
+
 export const option =  [
     {
       description: 'Alabama',
