@@ -27,6 +27,42 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/contact-us"
+  to = "/contact"
+  status = 301
+[[redirects]]
+  from = "/webdeals"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/supplies"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/tracker-safes"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/web-deals/itemlist/category/3"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/pay-online/godsey-location"
+  to = "/pay-rent-godsey"
+  status = 301
+[[redirects]]
+  from = "/locations/godsey"
+  to = "/location/godsey-secure-storage/storageUnits"
+  status = 301
+[[redirects]]
+  from = "/locations/dallas"
+  to = "/location/dallas-secure-storage/storageUnits"
+  status = 301
+[[redirects]]
+  from = "/pay-online/dallas-location"
+  to = "/pay-rent-dallas"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
