@@ -17,16 +17,13 @@ export const featuresList = [
         td2: 'No Deposit'
     },
     {
-        td1: 'Security Cameras',
+        td1: 'Dump Station Coming Soon',
         td2: 'No Insurance Required'
     },
     {
         td1: 'Facility Access at Cloverleaf Dr and Hwy 9E Stoplight ',
         td2: 'Climate Controlled Units Available'
     },
-    {
-        td1: 'Dump Station Coming Soon'
-    }
 ];
 
 export const feature = [
@@ -48,12 +45,6 @@ export const feature = [
         label: 'Climate Controlled Units Available',
         alt: 'Icon of thermometer indicating climate controlled units'
     },
-    {
-        // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sto_And_Go/cctv.svg',
-        label: 'Security Cameras on Premises',
-        alt: 'Icon of a security camera'
-    },
 ];
 
 
@@ -69,9 +60,8 @@ export const aboutUs = [
             campers, or other recreational vehicles.`,
     },
     {
-        p: `Rest easy, knowing our facility has on-site management, security cameras, and pin-code activated gates for added security. 
-            Need access to your unit outside of regular business hours? Inquire about our 24 hour access, and your belongings, or vehicle 
-            will always be accessible!`,
+        p: `Rest easy, knowing our facility has on-site management, and pin-code activated gates for added security. Need access to your
+        unit outside of regular business hours? Inquire about our 24 hour access, and your belongings, or vehicle will always be accessible!`,
     },
 ];
 
