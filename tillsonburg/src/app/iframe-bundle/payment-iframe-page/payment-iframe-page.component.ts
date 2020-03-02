@@ -2,6 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact } from '../../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
+import { payRentPageContent, payRentPageTitle } from '../../data/title';
+
 @Component({
   selector: 'app-payment-iframe-page',
   templateUrl: './payment-iframe-page.component.html',
@@ -10,23 +12,32 @@ import { WINDOW } from '@ng-toolkit/universal';
 export class PaymentIframePageComponent implements OnInit {
 
   contact: any;
+  payRentPageTitle: string;
+  payRentPageContent: string;
 
   constructor(
     private titleService: Title,
     @Inject(WINDOW) private window: Window,
     private meta: Meta
   ) {
+    this.fetchMetaData();
+
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent online by following our easy instructions. If you have a
-                question about how to access your account, call (361) 215-6637 today!`
+      content: `${this.payRentPageContent}`
+
     });
-    this.titleService.setTitle('Pay Rent  | Calallen Mini Storage');
+    this.titleService.setTitle(`${this.payRentPageTitle}`);
   }
 
   ngOnInit() {
     this.fetchContactDetails();
     window.scrollTo(0, 0);
+  }
+
+  public fetchMetaData() {
+    this.payRentPageTitle = payRentPageTitle;
+    this.payRentPageContent = payRentPageContent;
   }
 
   public fetchContactDetails() {

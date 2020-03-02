@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { reservePageTitle, reservePageContent } from '../../data/title';
+
 @Component({
   selector: 'app-reserve',
   templateUrl: './reserve.component.html',
@@ -7,22 +9,29 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class ReserveComponent implements OnInit {
 
-  currentActive: any = 'RESERVE';
+  reservePageContent: string;
+  reservePageTitle: string;
+
 
   constructor(
     private titleService: Title,
     private meta: Meta,
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Reserve your unit quickly and easily with our handy online reservation form.
-                Fill out your information and we'll be in touch!`
+      content: `${this.reservePageContent}`
     });
-    this.titleService.setTitle('Reserve Unit  | Calallen Mini Storage');
+    this.titleService.setTitle(`${this.reservePageTitle}`);
   }
 
   ngOnInit() {
     window.scrollTo(0, 0);
+  }
+
+  public fetchMetaData() {
+    this.reservePageTitle = reservePageTitle;
+    this.reservePageContent = reservePageContent;
   }
 
 }

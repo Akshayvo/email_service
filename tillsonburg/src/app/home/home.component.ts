@@ -6,7 +6,7 @@ import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../dat
 import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { UaParserService } from '../services/ua-parser.service';
-
+import { homePageTitle, homePageContent } from '../data/title';
 
 @Component({
   selector: 'app-home',
@@ -30,7 +30,8 @@ export class HomeComponent implements OnInit {
   currentActive: any = 'HOME';
   imageBaseUrl: any;
   imagetype: any;
-
+  homePageTitle: string;
+  homePageContent: string;
   data: any;
 
 
@@ -44,14 +45,13 @@ export class HomeComponent implements OnInit {
     private uaParserService: UaParserService,
     @Inject(DOCUMENT) private _document: any,
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Tillsonburg Mini Storage offers convenient 24/7 access to your belongings, online payments
-      and a variety of unit sizes for all of your self storage needs.`
+      content: `${this.homePageContent}`
     });
-    this.titleService.setTitle('Mini Storage Units in Tillsonburg | Tillsonburg Mini Storage');
+    this.titleService.setTitle(`${this.homePageTitle}`);
     this.metaService.createCanonicalURL();
-
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
   }
@@ -94,6 +94,13 @@ export class HomeComponent implements OnInit {
   public fetchJumbotron() {
     this.jumbotron = jumbotron;
   }
+
+  public fetchMetaData() {
+    this.homePageTitle = homePageTitle;
+    this.homePageContent = homePageContent;
+  }
+
+
   public getImageUrl(imageName: string) {
     return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }

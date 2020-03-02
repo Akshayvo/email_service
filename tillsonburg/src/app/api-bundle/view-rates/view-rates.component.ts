@@ -5,6 +5,7 @@ import { MetaService } from '../../services/link.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { UaParserService } from '../../services/ua-parser.service';
+import { viewRatesPageContent, viewRatesPageTitle } from '../../data/title';
 import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-view-rates',
@@ -20,6 +21,8 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
   DescriptionVR: string;
   MonthlyRateVR: number;
+  viewRatesPageContent: string;
+  viewRatesPageTitle: string;
 
   openComponent = false;
   imagetype: any;
@@ -34,12 +37,12 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private fetchDataService: FetchDataService,
     private uaParserService: UaParserService,
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Check out the competitive rates for our high-quality self storage units!
-                Calallen Mini Storage is the premier storage facility in Robstown, TX`
+      content: `${this.viewRatesPageContent}`
     });
-    this.titleService.setTitle('View Rates  | Calallen Mini Storage');
+    this.titleService.setTitle(`${this.viewRatesPageTitle}`);
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
@@ -52,14 +55,15 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     this.fetchViewRates();
     // this.getData();
   }
+
   public fetchViewRates() {
     this.viewRates = viewRates;
   }
-  /**
-   *
-   * @param event
-   * @param event1
-   */
+
+  public fetchMetaData () {
+    this.viewRatesPageContent = viewRatesPageContent;
+    this.viewRatesPageTitle = viewRatesPageTitle;
+  }
 
   handleClick(event: Event, event1: Event) {
     this.openComponent = true;

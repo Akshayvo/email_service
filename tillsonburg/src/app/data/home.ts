@@ -23,63 +23,60 @@ export const featuresList = [
 
 export const aboutUs = [
     {
-        p: `Calallen Mini Storage is Robtown's premier family owned & operated self storage facility!
-            Our facility has ample lighting, and is clean, and well-maintained to make sure your
-            business or personal belongings remain safe until you need them. Our 24 hour access
-            policy means you'll never be without access to the belongings stored with us!`,
+        p: `Welcome to Tillsonburg Mini Storage! We offer a large number of unit sizes from 5' x 10'
+        units big enough to store the furniture, and clothing of a bedroom, to our super-sized 10' x 30'
+        units ideal to stow an entire home during a move! We are locally owned and operated, and are conveniently
+        located on the corner of Highway 3 and Clearview Drive in Tillsonburg, Ontario. Need boxes, tape, and other
+        packing supplies for your storage project? We've got your packing needs covered; just ask our management team!`,
     },
     {
-        p: `Our local business customers love our affordable rates and 24 hour access. Why pay
-            the extra to store your inventory, and supplies in a commercial building when you
-            can grab what you need for the job site 24 hours a day?  Come and go as you please
-            with Calallen Mini Storage!`,
+        p: `Our facility is the perfect solution for your indoor or outdoor storage needs. Are you looking to de-clutter
+        your garage or basement, organize your home, and reclaim some elbow room in the Tillsonburg, Port Burwell, Almer or
+        surrounding communities? Make your reservation online today! Have a recreational vehicle, boat, or trailer that needs
+        seasonal parking? Give us a call! Our outdoor parking units are an ideal solution for keeping your yard free of
+        trailers, boats, or other large seasonal vehicles.`,
     },
     {
-        p: `Residential users can rest easy knowing their belongings are covered by security
-            cameras in a well-lit facility secured with an electronic pin-code activated gate!
-            Start reclaiming that elbow room during your renovation or downsizing project with
-            our easy terms and friendly service! Call today to learn more, or reserve your
-            unit online immediately!`,
+        p: `We serve both residential and business storage users who enjoy the same conveniences at Tillsonburg Mini Storage.
+        Our online reservations make booking a breeze, and automatic payments save our customers time and avoid late fees.
+        Don't forget about our 24-hour access! You'll always have access to your seasonal items, furniture, documents, or parked
+        vehicles whenever you need it! Call or reserve online today!`,
     },
 ];
 
-export const gettingStarted = `Are you ready to start decluttering your home or office with
-                               well-lit, affordable self storage services and friendly customer
-                               service?  Reserve your unit online today by clicking below!`;
+export const gettingStarted = `Are you ready to get started with Tillsonburg Mini Storage? Simply click below and fill out our contact
+form! A member of our team will reach out promptly!`;
 
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Calallen_Mini/location.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Calallen_Mini/24-hours.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
         label: '24 Hour Facility Access',
         alt: ' Icon art displaying clock hands and the number 24'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Calallen_Mini/hand.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
         label: ' Affordable Self Storage Rates',
         alt: 'Icon of a hand holding money'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Calallen_Mini/light-bulb.svg',
-        label: 'Well-Lit Facility',
-        alt: 'Icon of an illuminated light'
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
+        label: 'Seurity Cameras on Premises',
+        alt: 'Icon of an security camera'
     },
 ];
 
 export const jumbotron = [
     {
-        h1: `Affordable Mini Storage Units in Calallen`,
-        blurb: `Calallen Mini Storage serves Calallen, Robstown, Bluntzer  and the surrounding communities
-                with a variety of high-quality, clean, and affordable self storage unit types! Whether you're
-                a local business with extra inventory, or if you're just looking for some extra elbow room
-                around the house, we've got the storage solution for you!`,
+        h1: ``,
+        blurb: ``,
     }
 ];

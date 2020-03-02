@@ -5,6 +5,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
 import { MetaService } from '../services/link.service';
+import { contactPageContent, contactPageTitle } from '../data/title';
 
 @Component({
   selector: 'app-contact',
@@ -27,6 +28,8 @@ export class ContactComponent implements OnInit {
   mailSent = false;
   head: any;
   phone: any;
+  contactPageContent: string;
+  contactPageTitle: string;
 
   constructor(
     private router: Router,
@@ -37,12 +40,12 @@ export class ContactComponent implements OnInit {
     private metaService: MetaService,
 
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `If you have questions about your account or the services we offer,
-                take a moment to fill our out form, or use the contact information to speak with us!`
+      content: `${this.contactPageContent}`
     });
-    this.titleService.setTitle('Contact Us  | Calallen Mini Storage');
+    this.titleService.setTitle(`${this.contactPageTitle}`);
     this.metaService.createCanonicalURL();
   }
 
@@ -62,6 +65,11 @@ export class ContactComponent implements OnInit {
   get f() { return this.contactForm.controls; }
   public navigate(location: any) {
     this.router.navigate([location]);
+  }
+
+  public fetchMetaData() {
+    this.contactPageTitle = contactPageTitle;
+    this.contactPageContent = contactPageContent;
   }
 
   public fetchContactDetails() {

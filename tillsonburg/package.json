@@ -1,6 +1,6 @@
 {
-  "name": "calallen",
-  "version": "0.0.4",
+  "name": "tillsonburg",
+  "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxyconfig.json",
@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server.js",
-    "build:client-and-server-bundles": "ng build --prod && ng run calallen:server",
+    "build:client-and-server-bundles": "ng build --prod && ng run tillsonburg:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
     "ssr": "npm run build:ssr && npm run serve:ssr"
   },

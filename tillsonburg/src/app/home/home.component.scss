@@ -1,9 +1,22 @@
 @import "../../styles.scss";
-.jumbotron-background-webp{
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Calallen_Mini/webp/calallen-mini-storage-jumbotron.webp");
+
+.carousel-indicators li {
+  background-color: black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
 }
-.jumbotron-background-jpg{
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Calallen_Mini/jpg/calallen-mini-storage-jumbotron.jpg");
+
+.carousel-item {
+  height: 250px;
+}
+
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Tillsonburg_Storage/webp/tillsonburg-mini-storage-jumbotron.webp");
+}
+
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Tillsonburg_Storage/jpg/tillsonburg-mini-storage-jumbotron.png");
 }
 
 .jumbotron {

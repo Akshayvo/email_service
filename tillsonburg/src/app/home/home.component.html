@@ -3,7 +3,7 @@
   <div class="jumbotron-container">
     <div class="jumbotron-top">
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp' ">
-      <div class="bg-translucent jumbotorn-skew-style">
+      <!-- <div class="bg-translucent jumbotorn-skew-style">
       </div>
       <div class="container">
         <div class="jumbotorn-skew-text">
@@ -11,13 +11,13 @@
             <h2  class="my-4">
               {{jumbotron.h1}}
             </h2>
-          <p class="text-justify">{{jumbotron.blurb}}</p>
+            <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button">
             <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
             <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a></div>
           </div>
-        </div>
+        </div> -->
       </div>
       </div>
     <div class="jumbotron-bottom">
@@ -50,7 +50,7 @@
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </span>
             </p>
-            <b>Office Hours:</b>
+            <!-- <b>Office Hours:</b> -->
             <p>
               <span *ngFor="let hour of hours">
                 <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
@@ -73,19 +73,79 @@
         <app-photos></app-photos>
       </div>
       <div class="col-lg-6 py-3">
-        <h1 class="heading pb-4">Affordable Self Storage in Calallen</h1>
+        <h1 class="heading pb-4">Affordable Mini Storage and Vehicle Parking in Tillsonburg</h1>
         <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="getStarted bg-light">
+  <!--Testimonial-->
+  <div class="bg-light">
+    <div class="container">
+      <div class="row py-5">
+       <div class="col-md-12 text-center">
+          <h2 class="heading pb-4">Testimonials</h2>
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+            
+              <!-- The slideshow -->
+              <div class="carousel-inner ">
+                <div class="carousel-item py-5 active">
+                  <p>
+                    Great business! Fenced in with security gate buildings are in perfect condition highly maintained. Unit was Dry and clean. I would only store my stuff here!
+                  </p>
+                  <p>
+                    - Chris Campbell
+                  </p>
+                </div>
+                <div class="carousel-item py-5">
+                  <p>
+                    Tillsonburg Mini Storage units on Clearview Dr. are protected with controlled entry and cameras. There are a number of different sized units and they are very accommodating when you need to size up or down. I highly recommend them.
+                    </p>
+                    <p>
+                      - Kimberly Fleming
+                    </p>
+
+                </div>
+                <div class="carousel-item py-5">
+                  <p>
+                    I rented a unit and stored my trailer here. I would recommend Tillsonburg mini storage to anyone, they are always there to help.
+                  </p>
+                  <p>
+                    - Toby St. Louis
+                  </p>
+                </div>
+                <div class="carousel-item py-5">
+                  <p>
+                    Very new, clean, and secure facility with friendly staff. Great location and very well kept. Never had a problem here and will continue to use Tilsonburg Mini Storage!
+                  </p>
+                  <p>
+                    - Caitlin Korff
+                  </p>
+                </div>
+              </div>
+            
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Testimonial section-->
+
+
+<div class="getStarted ">
   <div class="container">
     <div class="section py-5 m-0">
       <div class="row">
         <div class="col-md-12 py-3">
-          <h2 class="heading pb-4">Get Started</h2>
+          <h2 class="heading pb-4">Getting Started</h2>
           <p class="pb-4">{{gettingStarted}}</p>
           <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit Now!</a>
         </div>

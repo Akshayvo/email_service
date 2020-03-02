@@ -3,6 +3,8 @@ import { Title, Meta } from '@angular/platform-browser';
 import { viewRates } from '../../data/view-rates';
 import { MetaService } from '../../services/link.service';
 import { UaParserService } from '../../services/ua-parser.service';
+import { viewRatesPageContent, viewRatesPageTitle } from '../../data/title';
+
 
 @Component({
   selector: 'app-view-rates-iframe-page',
@@ -14,6 +16,8 @@ export class ViewRatesIframePageComponent implements OnInit {
   viewRates: any;
   imagetype: any;
   imageBaseUrl: any;
+  viewRatesPageContent: string;
+  viewRatesPageTitle: string;
 
   constructor(
     private titleService: Title,
@@ -21,12 +25,13 @@ export class ViewRatesIframePageComponent implements OnInit {
     private metaService: MetaService,
     private uaParserService: UaParserService,
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Check out the competitive rates for our high-quality self storage units!
-                Calallen Mini Storage is the premier storage facility in Robstown, TX`
+      content: `${this.viewRatesPageContent}`
+
     });
-    this.titleService.setTitle('View Rates  | Calallen Mini Storage');
+    this.titleService.setTitle(`${this.viewRatesPageTitle}`);
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
@@ -38,6 +43,12 @@ export class ViewRatesIframePageComponent implements OnInit {
     window.scrollTo(0, 0);
     this.fetchViewRates();
   }
+
+  public fetchMetaData () {
+    this.viewRatesPageContent = viewRatesPageContent;
+    this.viewRatesPageTitle = viewRatesPageTitle;
+  }
+
   public fetchViewRates() {
     this.viewRates = viewRates;
   }

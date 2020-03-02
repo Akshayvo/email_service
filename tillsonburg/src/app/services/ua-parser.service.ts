@@ -35,9 +35,9 @@ export class UaParserService {
       }
     }
     if (this.typeOfImages === 'WEBP') {
-      this.baseUrl = `../../assets/Tillsonburgstorage_web`;
+      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Tillsonburg_Storage/webp`;
     } else {
-      this.baseUrl = '../../assets/Tillsonburgstorage_png';
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Tillsonburg_Storage/jpg';
     }
   }
 }

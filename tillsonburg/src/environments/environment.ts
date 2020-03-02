@@ -8,6 +8,6 @@ export const environment = {
   appId: 'tillsonburg',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  // APIKey: ``, // 29265
+  // APIKey: `dzJ0OVcySjYqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29265
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
 };

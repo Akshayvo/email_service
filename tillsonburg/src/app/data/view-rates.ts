@@ -1,21 +1,16 @@
 export const viewRates = [
     {
-      p: `Calallen Mini Storage is the premier self storage facility in Robstown, TX. We
-          serve Calallen, Robstown, Bluntzer, and the surrounding communities with high-quality,
-          affordable self storage units. We understand that renting a storage unit typically comes
-          at a stressful point in life, so we strive to make the experience a convenient one.`,
+      p: `Our facility is the perfect solution for all of your self storage and vehicle parking
+      needs. We are well-lit, fully-fenced, and secured by a keypad access code. We even have
+      security cameras covering the facility to ensure a sense of safety at all times. We understand
+      how important your belongings are, and do our best to make you feel at home!`,
     },
     {
-      p: `Our 24-hour access means you'll never get stuck in need of something in storage without
-          access, and our pin-code activated security gate makes coming and going both convenient
-          and secure! Pay your rent online easily with our handy tenant portal! You can even sign
-          yourself up for automatic payment in seconds!`
+      p: `Self storage services are about more than just security, at Tillsonburg Mini Storage, you
+      can reserve a unit 24/7, pay your rent online 24/7, and access your unit or vehicle 24/7! Our
+      many conveniences are here to make your storage experience that much easier! Call today, or
+      reserve your unit by filling out a simple form, and our team will be in touch!`
     },
-    {
-      p: `We can't wait to help make your storage experience an easy one! If you have questions or
-          are unsure what size unit you require, feel free to call our office (361) 215-6637 and one
-          of our friendly self storage managers will be happy to assist you!`
-    }
 ];
 
 export const th = [

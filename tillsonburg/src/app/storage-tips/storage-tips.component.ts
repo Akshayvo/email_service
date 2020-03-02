@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { storageTip, storageTipAccordion } from '../data/storage';
 import { MetaService } from '../services/link.service';
+import { storageTipsTitle, storageTipsContent } from '../data/title';
 
 @Component({
   selector: 'app-storage-tips',
@@ -13,18 +14,20 @@ export class StorageTipsComponent implements OnInit {
   storageTip: any;
   storageTipAccordion: any;
   currentActive: any = 'STORAGE TIPS';
+  storageTipsTitle: string;
+  storageTipsContent: string;
 
   constructor(
     private titleService: Title,
     private meta: Meta,
     private metaService: MetaService,
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `We know self storage, so use our knowledge and take this list of Storage Tips to make
-                your stay with us even more convenient!`
+      content: `${this.storageTipsContent}`
     });
-    this.titleService.setTitle('Storage Tips  | Calallen Mini Storage');
+    this.titleService.setTitle(`${this.storageTipsTitle}`);
     this.metaService.createCanonicalURL();
   }
 
@@ -41,5 +44,9 @@ export class StorageTipsComponent implements OnInit {
     this.storageTipAccordion = storageTipAccordion;
   }
 
+  public fetchMetaData() {
+    this.storageTipsTitle = storageTipsTitle;
+    this.storageTipsContent = storageTipsContent;
+  }
 
 }
