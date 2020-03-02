@@ -2,7 +2,7 @@ export const homeScript = {
   '@context': 'http://www.schema.org',
   '@type': 'SelfStorage',
   'name': '390 Self Storage',
-  'telephone': '(585) 381-6557',
+  'telephone': '(585) 673-3140',
   'priceRange': '$$',
   'url': 'https://www.390selfstorage.com/',
   'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/390-self-storage-logo.png',
@@ -31,7 +31,7 @@ export const contactScript = {
 
     'name': '390 Self Storage',
 
-    'telephone': '(585) 381-6557',
+    'telephone': '(585) 673-3140',
 
     'priceRange': '$$',
 

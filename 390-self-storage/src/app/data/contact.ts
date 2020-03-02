@@ -16,7 +16,7 @@ export const contact = [
     id: 2,
     redirect: 'tel:5856733140',
     label: 'Phone: ',
-    data: '585-673-3140',
+    data: '(585) 673-3140',
     class: 'fas fa-phone mr-2 iconColor',
   }
 ];
