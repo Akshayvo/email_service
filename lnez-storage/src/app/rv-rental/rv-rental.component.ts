@@ -18,10 +18,10 @@ export class RvRentalComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Are you in need of a high-quality, well maintained recreational vehicle for an
-                upcoming trip? We have several to pick from! Click to learn more!`
+      content: `Inez Storage offers camper rentals to our clients in Inez & Victoria, TX.
+                Contact us to see what campers we have available at our storage facility!`
     });
-    this.titleService.setTitle('Camper Rentals | Inez Storage');
+    this.titleService.setTitle('Camper Rentals in Inez & Victoria TX | Inez Storage');
    }
    public navigate(location: any) {
     this.router.navigate([location]);

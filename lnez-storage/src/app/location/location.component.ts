@@ -35,17 +35,17 @@ export class LocationComponent implements OnInit {
       if (this.router.url.includes('/location/inez-storage')) {
             this.meta.addTag({
               name: 'description',
-              content: `We offer both regular and climate-controlled self storage units in a variety of sizes, 
-                        as well as parking for boats, RVs, and vehicles at affordable rate!`
+              content: `Inez Storage is a storage facility that provides storage units in Inez TX.
+                        We offer boat, climate controlled, RV, and self storage at our storage facility.`
             });
-            this.titleService.setTitle('Affordable Self Storage & Parking in Inez | Inez Storage');
+            this.titleService.setTitle('Self Storage Facility in Inez TX | Inez Storage');
     } else  if (this.router.url.includes('/location/beck-road-storage'))  {
           this.meta.addTag({
             name: 'description',
-            content: `Beck Road Storage is Inez' newest self storage facility! We offer a variety of affordable storage 
-                      unit sizes and types with 24 hour access via unique pin-code accessible gate!`
+            content: `Beck Road Storage is a storage facility that provides boat & RV storage in
+                      Victoria TX. We offer a variety of storage unit sizes at our storage facility.`
           });
-          this.titleService.setTitle('Affordable Storage Units in Inez, TX | Beck Road Storage');
+          this.titleService.setTitle('Boat & RV Storage in Victoria TX | Beck Road Storage');
     }
     }
 

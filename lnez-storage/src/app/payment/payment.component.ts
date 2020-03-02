@@ -25,9 +25,10 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Just follow the instructions with our online portal and you can pay your rent or sign up for auto-pay 24/7! Need help? Call or text (360) 235-2109 today!`
+      content: `Inez Storage offers online rentals and payments for our tenants in Inez & Victoria,
+                TX. Use our online portal on our website to rent or pay your bill online.`
     });
-    this.titleService.setTitle('Pay Rent | Inez Storage');
+    this.titleService.setTitle('Pay & Rent Storage Online | Inez Storage');
   }
 
   ngOnInit() {

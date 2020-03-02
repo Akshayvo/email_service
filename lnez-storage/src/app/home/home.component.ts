@@ -33,9 +33,10 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Inez Storage offers 2 convenient, affordable, family-owned self storage & vehicle parking facilities in Inez, Texas! Call or visit our locations today!`
+      content: `Inez Storage has storage facilities that provides storage units in
+                Inez & Victoria, TX. We offer boat, climate control, rv, and self storage at our facilities.`
     });
-    this.titleService.setTitle('Affordable Storage Units in Inez, TX | Inez Storage');
+    this.titleService.setTitle('Self Storage Facilities in Inez & Victoria TX | Inez Storage');
   }
 
   ngOnInit() {

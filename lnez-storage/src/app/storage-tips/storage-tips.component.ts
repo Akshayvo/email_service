@@ -23,9 +23,10 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a lesson from us about caring for your self storage unit! Follow these tips to keep your belongings safe and dry!`
+      content: `Inez Storage offers storage tips to our clients in Inez & Victoria, TX.
+                See what information we can provide you to make your experience as seamless as possible!`
     });
-    this.titleService.setTitle('Storage Tips | Inez Storage');
+    this.titleService.setTitle('Storage Tips in Inez & Victoria TX | Inez Storage');
   }
 
   ngOnInit() {

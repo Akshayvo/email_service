@@ -47,9 +47,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Do you have questions about your self storage unit, or parking space? Maybe you would like more information about Inez Storage. Click here to learn more!`
+      content: `Contact Inez Storage in Inez & Victoria, TX for all your storage needs.
+                Give us a call or send an email for any questions you have about our storage units.`
     });
-    this.titleService.setTitle('Contact Us | Inez Storage');
+    this.titleService.setTitle('Contact Us | Storage in Inez & Victoria TX | Inez Storage');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
