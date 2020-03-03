@@ -4,6 +4,8 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
 import { contactsLocation1,contactsLocation3 } from '../data/contact';
 import { payList } from '../data/pay-rent';
+import { DataSharingService } from '../services/data-sharing.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-payment',
@@ -21,7 +23,9 @@ export class PaymentComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
-    private data: LocationService
+    private data: LocationService,
+    public router: Router,
+    private  dataSharingService: DataSharingService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -35,6 +39,18 @@ export class PaymentComponent implements OnInit {
     window.scrollTo(0, 0);
     this.receiveMessage();
     this.fetchPayList();
+
+
+    if (!!(localStorage.getItem('strTenantToken'))) {
+      const navTo = localStorage.getItem('paymentNavigationUrl');
+      if (!!navTo) {
+        if (this.dataSharingService.changePassword === true) {
+          this.router.navigate([`/pay-rent/${navTo}/changePassword`]);
+        } else {
+          this.router.navigate([`/pay-rent/${navTo}/payment`]);
+        }
+      }
+    }
   }
 
   receiveMessage() {

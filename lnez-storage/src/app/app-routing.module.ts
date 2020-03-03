@@ -20,6 +20,14 @@ import { RvRentalComponent } from './rv-rental/rv-rental.component';
 import { WildwoodComponent } from './wildwood/wildwood.component';
 import { PrimeTimeComponent } from './prime-time/prime-time.component';
 import { CamperRentalComponent } from './camper-rental/camper-rental.component';
+import { LoginComponent } from './login/login.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { AuthGuard } from './auth.gurad';
+import { VerifyCodeComponent } from './verify-code/verify-code.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { VerifictionCodeGuard } from './verificationCode.guard';
+import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -66,8 +74,28 @@ const routes: Routes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'payment', component: PaymentComponent },
-  { path: 'pay-rent', component: PayRentComponent },
-  { path: 'pay-rent-beck-road', component: PayRentNatronaComponent },
+  { path: 'pay-rent', component: PayRentComponent,
+  children: [
+    {path: '', redirectTo: 'login', pathMatch: 'full'},
+    {path: 'login', component: LoginComponent },
+    {path: 'forgotPassword', component: ForgotPasswordComponent },
+    {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+    {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+    { path: 'verifyCode', component: VerifyCodeComponent },
+    { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+  ]
+},
+  { path: 'pay-rent-beck-road', component: PayRentNatronaComponent,
+    children: [
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent },
+      {path: 'forgotPassword', component: ForgotPasswordComponent },
+      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+      { path: 'verifyCode', component: VerifyCodeComponent },
+      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+    ]
+  },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'camper-rentals',

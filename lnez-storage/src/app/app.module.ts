@@ -39,6 +39,13 @@ import { RvRentalComponent } from './rv-rental/rv-rental.component';
 import { WildwoodComponent } from './wildwood/wildwood.component';
 import { PrimeTimeComponent } from './prime-time/prime-time.component';
 import { CamperRentalComponent } from './camper-rental/camper-rental.component';
+import { LoginComponent } from './login/login.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
+import { VerifyCodeComponent } from './verify-code/verify-code.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { LoginModalComponent } from './login-modal/login-modal.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +78,13 @@ import { CamperRentalComponent } from './camper-rental/camper-rental.component';
     WildwoodComponent,
     PrimeTimeComponent,
     CamperRentalComponent,
+    LoginComponent,
+    ForgotPasswordComponent,
+    ChangePasswordComponent,
+    PayRentFormComponent,
+    VerifyCodeComponent,
+    ResetPasswordComponent,
+    LoginModalComponent
   ],
   imports: [
     NgtUniversalModule,
