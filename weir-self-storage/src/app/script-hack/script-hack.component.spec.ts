@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RentNowComponent } from './rent-now.component';
+import { ScriptHackComponent } from './script-hack.component';
 
-describe('RentNowComponent', () => {
-  let component: RentNowComponent;
-  let fixture: ComponentFixture<RentNowComponent>;
+describe('ScriptHackComponent', () => {
+  let component: ScriptHackComponent;
+  let fixture: ComponentFixture<ScriptHackComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RentNowComponent ]
+      declarations: [ ScriptHackComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RentNowComponent);
+    fixture = TestBed.createComponent(ScriptHackComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

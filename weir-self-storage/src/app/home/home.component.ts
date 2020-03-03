@@ -5,6 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { galleryHome } from '../data/galleryImage';
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, blurb} from '../data/home';
+import { homeScript } from '../data/script';
 
 @Component({
   selector: 'app-home',
@@ -22,6 +23,7 @@ export class HomeComponent implements OnInit {
   serviceOffered: any;
   gettingStarted: any;
   feature: any;
+  script: any;
   currentActive: any = 'HOME';
 
 
@@ -50,11 +52,16 @@ export class HomeComponent implements OnInit {
     this.fetchStaticContent();
     this.fetchFeature();
     window.scrollTo(0, 0);
+    this.fetchScript();
     this.fetchGalleryImages();
   }
 
   public fetchContactDetails() {
     this.contactDetails = contact;
+  }
+
+  public fetchScript() {
+    this.script = homeScript;
   }
 
   public fetchGalleryImages() {

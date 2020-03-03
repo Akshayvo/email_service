@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address: ',
-        data: '605 Ridge St, Sault Ste. Marie, MI 49783',
+        data: '613 Ridge St, Sault Ste. Marie, MI 49783',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
