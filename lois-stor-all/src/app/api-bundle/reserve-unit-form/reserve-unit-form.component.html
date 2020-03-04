@@ -126,9 +126,10 @@
                                  <select class="form-control" formControlName="Description" [id]="lstUnitTypes?.Description"
                                  (change)="selectChangeHandler($event)"
                                 >
+                                <!-- [class.display-none]="!lstUnitType.IsUnitsAvailable"-->
                                      <option *ngFor="let lstUnitType of lstUnitTypes"
-                                     [value]="lstUnitType?.Description "
-                                     [class.display-none]="!lstUnitType.IsUnitsAvailable"
+                                     [value]="lstUnitType.IsUnitsAvailable || lstUnitType?.Description "
+                                     [attr.disabled]="lstUnitType.IsUnitsAvailable === 'false'"
                                      >
                                      {{lstUnitType.Description}}
                                      </option>

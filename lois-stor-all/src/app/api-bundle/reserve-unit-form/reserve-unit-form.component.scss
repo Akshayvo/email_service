@@ -5,7 +5,7 @@
   .mat-form-field-wrapper {
     padding-bottom: 0;
 
-    .mat-form-field-underline  {
+    .mat-form-field-underline {
       display: none;
     }
 
@@ -68,13 +68,13 @@
 }
 
 ::ng-deep.mat-datepicker-content .mat-calendar{
-  .mat-calendar-body-cell-content {
-    font-weight: 600
-    }
+.mat-calendar-body-cell-content {
+    font-weight: 600;
+  }
 
-    .mat-calendar-body-disabled > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected) {
-      font-weight: 200
-    }
+  .mat-calendar-body-disabled > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected) {
+    font-weight: 200;
+  }
 }
 
 .home-link {
@@ -86,7 +86,8 @@
 }
 
 .display-none {
-  display: none;
+  display: none !important;
+  visibility: hidden;
 }
 
 .display {
@@ -115,7 +116,7 @@
 
 table {
   tbody {
-    tr:nth-child(even){
+    tr:nth-child(even) {
       background-color: #dcdcdc;
     }
 
