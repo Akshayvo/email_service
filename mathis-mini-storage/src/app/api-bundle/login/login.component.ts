@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
+import { contact } from '../../data/contact';
 
 @Injectable()
 
@@ -28,6 +29,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   showLoader = false;
 
   showLoginPage = true;
+  contact: any;
 
   authData: string;
   tenantInfo: TenantInfo;
@@ -54,6 +56,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       strPassword: ['', Validators.required],
       intAuthMethod: 1
     });
+    this.fetchContactDetails();
     if (window.localStorage) {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
@@ -64,6 +67,9 @@ export class LoginComponent implements OnInit, OnDestroy {
         }
        }
     }
+  }
+  public fetchContactDetails() {
+    this.contact = contact;
   }
 
   get f() { return this.loginForm.controls; }
