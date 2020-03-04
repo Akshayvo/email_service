@@ -62,7 +62,7 @@ import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJ03d_1qYrLIgR4Wju0ANFgJ8'
+          externalUrl: ''
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -83,7 +83,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJ03d_1qYrLIgR4Wju0ANFgJ8'
+          externalUrl: ''
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
