@@ -1,0 +1,22 @@
+<div class="contentHolder">
+  <div class="container pb-5 my-3  padding-top">
+    <h1 class="py-5 text-center">{{heading}}</h1>
+    <div class="row bg-light background-padding">
+      <div class="col-lg-12 col-md-12 coming p-3" >
+        <router-outlet></router-outlet>
+      </div>
+      <div class="row">
+        <h3 class="view-rate-heading">Amenities</h3>
+        <div class="col-md-6 p-3">
+          <img src="{{imageBaseUrl}}/locker-storage-ltd-homepage.{{imagetype}}" width="100%" alt="climate-controlled self storage unit with the door opened to reveal belongings packed inside" class="sectionImage">
+
+          <!-- <app-photos></app-photos> -->
+        </div>
+        <div class="col-md-6 p-3">
+          <p class="view-rate-text text-justify" *ngFor="let viewRates of viewRates">
+            {{viewRates.p}}
+          </p>
+    </div>
+    </div>
+  </div>
+</div>

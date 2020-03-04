@@ -1,0 +1,23 @@
+
+<div class="contentHolder my-3">
+  <div class="container pb-5   padding-top">
+    <h1 class="py-5 text-center">{{heading}}</h1>
+    <div class="row bg-light background-padding">
+      <div class=" col-lg-7 col-md-7 p-3 scroll-wrapper" >
+        <div class="align-self-center" style="font-size: 2rem;"><strong>Coming Soon</strong></div>
+        <iframe id="advanced_iframe" name="advanced_iframe" src="" width="100%"
+          height="500px" scrolling="yes" frameborder="0" border="0" allowtransparency="true"></iframe>
+      </div>
+      <div class="col-lg-5 col-md-5 px-4">
+        <h3 class="view-rate-heading">Amenities</h3>
+        <img src="{{imageBaseUrl}}/locker-storage-ltd-homepage.{{imagetype}}" width="100%"
+        alt="indoor climate controlled self storage unit with an open door displaying belongings packed inside" class="sectionImage">
+
+        <!-- <app-photos></app-photos> -->
+        <p class="view-rate-text text-justify" *ngFor="let viewRates of viewRates">
+          {{viewRates.p}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
