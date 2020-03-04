@@ -6,7 +6,7 @@ export const homeScript = {
     'logo': 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Weir_Self_Storage/weir-self-storage-logo.png',
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': '612 Ridge St',
+      'streetAddress': '613 Ridge St',
       'addressLocality': 'Sault Ste. Marie',
       'addressRegion': 'MI',
       'postalCode': '49783',
