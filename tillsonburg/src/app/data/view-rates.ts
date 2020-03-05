@@ -17,8 +17,11 @@ export const th = [
   {
     data: `Size`
   },
+  // {
+  //   data: `Rate`
+  // },
   {
-    data: `Rate`
+    data: 'Deposit'
   },
   {
     data: `Reserve a Unit`
