@@ -1,0 +1,59 @@
+
+@import "../../../styles.scss";
+
+.modal-open {
+  .modal-backdrop {
+    background: none;
+  }
+}
+
+.contact-links {
+  a {
+    color: black;
+  }
+}
+
+.vertical-line {
+  border-left: 1px solid darkgray;
+  position: right;
+  // padding: 0 0 0 48px;
+}
+
+.forgot-link {
+  a {
+    color: $shadow;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid $secondary;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  z-index: 1;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.button-display {
+  display: flex;
+  align-items: end;
+}
+
+@media only screen and (max-width: 991px) {
+  .vertical-line {
+    border: none;
+  }
+}

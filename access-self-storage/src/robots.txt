@@ -1,0 +1,5 @@
+# www.robotstxt.org/
+# Allow crawling of all content
+Sitemap: http://accessself-storage-stging.syrasoft.com/sitemap.xml
+User-agent: *
+Disallow:
