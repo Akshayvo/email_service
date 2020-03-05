@@ -1,4 +1,4 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
 .mat-form-field::ng-deep {
 
@@ -87,7 +87,7 @@
 
 .display-none {
   display: none !important;
-  visibility: hidden;
+  visibility: hidden !important;
 }
 
 .display {

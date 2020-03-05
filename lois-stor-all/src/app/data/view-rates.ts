@@ -1,3 +1,9 @@
+
+export const grid = `A $5 reservation fee is required to hold a unit.  Upon move-in,
+each unit will require a security deposit equal to one month's rent, which is returned
+when the unit is emptied.  Rent is prorated upon move-in and after that is always due
+on the 1st.  There is a minimum rental of one month.`;
+
 export const dataViewRates = [
     {
         p: `Our family-owned and operated team has been serving the community with

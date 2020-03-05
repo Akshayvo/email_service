@@ -11,7 +11,7 @@
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div  class="row justify-content">
              <div formGroupName="objTenant" class="col-lg-7 ">
-                 <h2 class="pb-3">Tenant Information</h2>
+                 <h2 class="pb-3">Tenant Information</h2> 
 
                  <div class="row">
                    <div class="col-lg-6 form-group">
@@ -126,10 +126,9 @@
                                  <select class="form-control" formControlName="Description" [id]="lstUnitTypes?.Description"
                                  (change)="selectChangeHandler($event)"
                                 >
-                                <!-- [class.display-none]="!lstUnitType.IsUnitsAvailable"-->
                                      <option *ngFor="let lstUnitType of lstUnitTypes"
-                                     [value]="lstUnitType.IsUnitsAvailable || lstUnitType?.Description "
-                                     [attr.disabled]="lstUnitType.IsUnitsAvailable === 'false'"
+                                     [value]="lstUnitType?.Description "
+                                     [class.display-none]="!lstUnitType.IsUnitsAvailable"
                                      >
                                      {{lstUnitType.Description}}
                                      </option>
@@ -153,6 +152,21 @@
                               <div *ngIf="submitted  && f.dteMoveIn.errors" class="invalid-feedback">
                                 <small class="form-text text-muted" *ngIf="f.dteMoveIn.errors.required">Please fill out this field</small>
                             </div>
+                    </div>
+                    <div class="pb-4" formArrayName="lstInsuranceChoices" *ngIf="navigateToMoveIn">
+                        <div *ngFor="let itemInsuranceChoice of f.lstUnitTypes.controls; let i = index">
+                            <div  [formGroupName]="i">
+                                <label for="CoverageDescription">Insurance Choice*</label>&nbsp;
+                                <select class="form-control" formControlName="CoverageDescription"
+                                 [id]="LstInsuranceChoices?.CoverageDescription" 
+                                 (change)="selectInsuranceChoice($event)">
+                                    <option *ngFor="let LstInsuranceChoice of LstInsuranceChoices" [value]="LstInsuranceChoice?.CoverageDescription" >
+                                        {{LstInsuranceChoice.CoverageDescription}}
+                                    </option>
+                                </select>
+    
+                            </div>
+                        </div>
                     </div>
                     <div class="pb-4" formArrayName="lstRentalPeriods">
                         <div *ngFor="let itemRental of f.lstUnitTypes.controls; let i = index">

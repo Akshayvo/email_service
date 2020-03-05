@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { dataViewRates } from '../../data/view-rates';
+import { dataViewRates, grid } from '../../data/view-rates';
 import { MetaService } from '../../services/link.service';
 import { UaParserService } from '../../services/ua-parser.service';
 
@@ -14,6 +14,7 @@ export class ViewRatesIframePageComponent implements OnInit {
   viewRates: any;
   imagetype: any;
   imageBaseUrl: any;
+  grid: string;
 
   constructor(
     private titleService: Title,
@@ -40,6 +41,7 @@ export class ViewRatesIframePageComponent implements OnInit {
   }
   public fetchViewRates() {
     this.viewRates = dataViewRates;
+    this.grid = grid;
   }
 }
 
