@@ -50,12 +50,12 @@ export const feature = [
 
 
 export const aboutUs = [
-    {
-        p: `Mention Promo Code 2020 when you call to get $20 off your first month's rent!`,
-    },
-    {
-        p: `Prepay for six months and receive $50 off!`,
-    },
+    // {
+    //     p: `Mention Promo Code 2020 when you call to get $20 off your first month's rent!`,
+    // },
+    // {
+    //     p: `Prepay for six months and receive $50 off!`,
+    // },
     {
         p: `McKeesport Storage: Christy Park is your one-stop-storage-stop in McKeesport, PA! We have been
             proudly serving our community as a family-owned and operated storage facility for over 20 years! McKeesport Storage:
