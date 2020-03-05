@@ -1,19 +1,25 @@
 export const contact = [
     {
         id: 0,
-        label: 'Address:',
+        label: 'Facility Address:',
         data: '9932 loop, 459, Mathis, TX 78368',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 1,
-        redirect: 'mailto:Wesley.deer@yahoo.com',
-        data: 'Wesley.deer@yahoo.com',
+        label: 'Mailing Address:',
+        data: 'P.O. 260194, Corpus Christi, TX 78426',
+        class: 'fas fa-map-marker-alt mx-2 iconColor',
+    },
+    {
+        id: 2,
+        redirect: 'mailto:Mathis.ministorage@gmail.com',
+        data: 'Mathis.ministorage@gmail.com',
         label: 'Email:',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
-        id: 2,
+        id: 3,
         redirect: 'tel:3615471218',
         label: 'Phone:',
         data: '(361) 547-1218',

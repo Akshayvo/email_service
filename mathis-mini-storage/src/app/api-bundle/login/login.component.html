@@ -65,7 +65,7 @@
                         John's Password: 12345555</p>
                     <p><strong>Have questions about your account?</strong><br>
                         <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
-                            <a *ngIf="contact?.id == 1 || contact?.id == 2" [href]="contact?.redirect">
+                            <a *ngIf="contact?.id == 2 || contact?.id == 3" [href]="contact?.redirect">
                                 {{contact.data}}
                             </a>
                             <br>
