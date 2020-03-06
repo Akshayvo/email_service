@@ -46,6 +46,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   unitTypes: UnitTypes;
   lstUnitTypes: LstUnitTypes[];
+  filterLstUnitTypes: LstUnitTypes[];
   rentalPeriod: RentalPeriod;
   LstRentalPeriods: LstRentalPeriods[];
   LstInsuranceChoices: LstInsuranceChoices[];
@@ -413,10 +414,15 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     return `${formattedNormalDate.getMonth() + 1}-${formattedNormalDate.getDate()}-${formattedNormalDate.getFullYear()}`;
   }
 
+  getFilterLstUnitTypes(unitTypesResponse: any) {
+    this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
+    this.filterLstUnitTypes = this.lstUnitTypes.filter(x => x.IsUnitsAvailable === true);
+  }
 
   getData() {
    this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
+        this.getFilterLstUnitTypes(unitTypesResponse);
       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
       const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
       this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
@@ -429,11 +435,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.unitTypeId =
       this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
       this.UnitTypeID = unitTypesResponse.lstUnitTypes[0].UnitTypeID;
+
       if (this.navigateToMoveIn) {
         this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId);
       }
 
-
+    
         this.dataSharingService.LstUnitTypes.ReservationFee = this.ReservationFee;
         this.dataSharingService.LstUnitTypes.ReservationFeeTax = this.ReservationFeeTax;
 
