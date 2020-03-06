@@ -6,6 +6,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
 import { featuresHead, aboutUs,  gettingStarted, feature, blurb, featuresList} from '../data/home';
 import { CanonicalService } from '../services/canonical.service';
+import { script } from '../data/script';
 
 @Component({
   selector: 'app-home',
@@ -22,6 +23,7 @@ export class HomeComponent implements OnInit {
   serviceOffered: any;
   gettingStarted: any;
   feature: any;
+  script: any;
   featuresList: any;
   currentActive: any = 'HOME';
 
@@ -52,6 +54,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
+    this.fetchScript();
     window.scrollTo(0, 0);
   }
 
@@ -76,4 +79,9 @@ export class HomeComponent implements OnInit {
   public fetchFeature () {
     this.feature = feature;
   }
+
+  public fetchScript() {
+    this.script = script;
+  }
+
 }

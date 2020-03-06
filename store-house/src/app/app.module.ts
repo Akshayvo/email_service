@@ -51,6 +51,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { MilitaryServiceComponent } from './military-service/military-service.component';
+import { ScriptHackComponent } from './script-hack/script-hack.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -85,6 +86,7 @@ import { MilitaryServiceComponent } from './military-service/military-service.co
     UnitSizerComponent,
     MilitaryServiceComponent,
     ConfirmationPageComponent,
+    ScriptHackComponent,
   ],
   imports: [
     CommonModule,
