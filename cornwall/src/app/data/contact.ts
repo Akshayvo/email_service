@@ -13,9 +13,9 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'mailto:gary.jans@rayjans.com',
+        redirect: 'mailto:storagebox@rayjans.com',
         label: 'Email',
-        data: 'gary.jans@rayjans.com',
+        data: 'storagebox@rayjans.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
