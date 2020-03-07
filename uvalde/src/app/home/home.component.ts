@@ -4,6 +4,8 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contact, hours } from '../data/contact';
 import { featuresHead, serviceOffered, gettingStarted, jumbotron, featuresList } from '../data/home';
+import { UaParserService } from '../services/ua-parser.service';
+
 
 @Component({
   selector: 'app-home',
@@ -19,12 +21,16 @@ export class HomeComponent implements OnInit {
   contactDetails: any;
   featuresList: any;
   hours: any;
+  imageBaseUrl: any;
+  imagetype: any;
+  
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private route: ActivatedRoute,
     private router: Router,
     private titleService: Title,
+    private uaParserService: UaParserService,
     private meta: Meta
   ) {
     this.meta.addTag({
@@ -33,6 +39,9 @@ export class HomeComponent implements OnInit {
       of well-maintained and affordable self storage units, accessible 24 hours a day!`
     });
     this.titleService.setTitle('Affordable Self Storage in Uvalde | Affordable Storage');
+
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {

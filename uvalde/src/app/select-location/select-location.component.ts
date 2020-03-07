@@ -11,27 +11,27 @@ export class SelectLocationComponent implements OnInit {
   places = [
     {
       id: 0,
-      name: 'Affordable Storage - 260 N Grove St',
+      name: 'AFFORDABLE STORAGE #1 - 260 N GROVE',
     },
     {
       id: 1,
-      name: 'Affordable Storage - 201 N Grove St',
+      name: 'AFFORDABLE STORAGE #2 - 201 N GROVE',
     },
     {
       id: 2,
-      name: 'Affordable Storage - 246 West South Lane',
+      name: 'AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE',
     },
     {
       id: 2,
-      name: 'Affordable Storage - 817 South Getty Street',
+      name: 'AFFORDABLE STORAGE #4 - 817 S. GETTY',
     },
     {
       id: 2,
-      name: 'Affordable Storage - 430 South Highway 83',
+      name: 'AFFORDABLE STORAGE #5 - 430 S HWY 83',
     },
     {
       id: 2,
-      name: 'Affordable Storage - 500 East Garden Street',
+      name: 'AFFORDABLE STORAGE #6 - 500 E. GARDEN',
     },
  ];
 

@@ -9,6 +9,7 @@ import { tabs } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../services/data-sharing.service';
+import { UaParserService } from '../services/ua-parser.service';
 
 
 @Component({
@@ -28,6 +29,10 @@ export class LocationComponent implements OnInit {
   socialLinks: any;
   data: any;
   location: any;
+  imageBaseUrl: any;
+  imagetype: any;
+  photo: any;
+
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -35,6 +40,7 @@ export class LocationComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     private route: ActivatedRoute,
+    private uaParserService: UaParserService,
     private dataSharingService: DataSharingService,
 
     ) {
@@ -89,6 +95,8 @@ export class LocationComponent implements OnInit {
           this.titleService.setTitle('Self Storage Units in Uvalde, TX | Affordable Self Storage');
           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
       }
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
     }
 
   ngOnInit() {
@@ -158,50 +166,56 @@ export class LocationComponent implements OnInit {
    }
 
   public fetchDetails260Grove() {
-      this.name = '260 N Grove St';
+      this.name = 'AFFORDABLE STORAGE #1 - 260 N GROVE';
       this.id = 0;
       this.contacts = contacts260NGrove;
       this.hours = hours260NGrove;
       this.tabs = tabs;
+      this.photo = `${this.imageBaseUrl}/affordable-storage-1.${this.imagetype}`;
     }
 
    public fetchDetails201Grove() {
-     this.name = '201 N Grove St';
+     this.name = 'AFFORDABLE STORAGE #2 - 201 N GROVE';
      this.id = 1;
      this.contacts = contacts201Grove;
      this.hours = hours201Grove;
      this.tabs = tabs;
+     this.photo = `${this.imageBaseUrl}/affordable-storage-2.${this.imagetype}`;
    }
 
    public fetchDetails246WSouthLane() {
-     this.name = '246 West South Lane';
+     this.name = 'AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE';
      this.id = 2;
      this.contacts = contacts246WSouthLane;
      this.hours = hours246WSouthLane;
      this.tabs = tabs;
+     this.photo = `${this.imageBaseUrl}/affordable-storage-3.${this.imagetype}`;
    }
 
    public fetchDetails817SGetty() {
-    this.name = '817 South Getty Street';
+    this.name = 'AFFORDABLE STORAGE #4 - 817 S. GETTY';
      this.id = 3;
      this.contacts = contacts817SGetty;
      this.hours = hours817SGetty;
      this.tabs = tabs;
+     this.photo = `${this.imageBaseUrl}/affordable-storage-4.${this.imagetype}`;
    }
 
    public fetchDetails430SHwy83() {
-    this.name = '430 South Highway 83';
+    this.name = 'AFFORDABLE STORAGE #5 - 430 S HWY 83';
      this.id = 4;
      this.contacts = contacts430SHwy83;
      this.hours = hours430SHwy83;
      this.tabs = tabs;
+     this.photo = `${this.imageBaseUrl}/affordable-storage-5.${this.imagetype}`;
    }
 
    public fetchDetails500EastGardenStreet() {
-    this.name = '500 East Garden Street';
+    this.name = 'AFFORDABLE STORAGE #6 - 500 E. GARDEN';
      this.id = 5;
      this.contacts = contacts500EastGardenStreet;
      this.hours = hours500EastGardenStreet;
      this.tabs = tabs;
+     this.photo = `${this.imageBaseUrl}/affordable-storage-6.${this.imagetype}`;
    }
 }

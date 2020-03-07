@@ -1,6 +1,6 @@
 <div class="jumbotron-container">
   <div class="jumbotron-top">
-  <div class="jumbotron px-0 m-0">
+ <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp' ">    
     <div class="bg-translucent jumbotorn-skew-style">
     </div>
     <div class="container">
@@ -99,7 +99,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Uvalde_Affordable_Storage/affordable-storage-uvalde.jpg" alt="climate controlled indoor self storage units">
+            <img src="{{imageBaseUrl}}/affordable-storage-uvalde.{{imagetype}}" alt="climate controlled indoor self storage units">
           </div>
         </div>
       </div>

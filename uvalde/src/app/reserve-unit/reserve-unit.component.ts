@@ -22,22 +22,22 @@ export class ReserveUnitComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('260-n-grove')) {
         this.id = 0;
-        this.heading = 'Reserve Your Unit at Our 260 North Grove St Location';
+        this.heading = 'Reserve Your Unit at Our AFFORDABLE STORAGE #1 - 260 N GROVE';
     } else if (this.router.url.includes('201-n-grove')) {
       this.id = 1;
-      this.heading = 'Reserve Your Unit at Our 201 North Grove St Location';
+      this.heading = 'Reserve Your Unit at Our AFFORDABLE STORAGE #2 - 201 N GROVE';
     } else if (this.router.url.includes('/246-w-south-lane')) {
       this.id = 2;
-      this.heading = 'Reserve Your Unit at Our 246 West South Lane Location';
+      this.heading = 'Reserve Your Unit at Our AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE';
     } else if (this.router.url.includes('/817-s-getty')) {
       this.id = 3;
-      this.heading = 'Reserve Your Unit at Our 817 South Getty Street Location';
+      this.heading = 'Reserve Your Unit at Our AFFORDABLE STORAGE #4 - 817 S. GETTY';
     } else if (this.router.url.includes('/430-s-hwy-83')) {
       this.id = 4;
-      this.heading = 'Reserve Your Unit at Our 430 South Highway 83 Location';
+      this.heading = 'Reserve Your Unit at Our AFFORDABLE STORAGE #5 - 430 S HWY 83';
     } else if (this.router.url.includes('/500-east-garden-street')) {
       this.id = 5;
-      this.heading = 'Reserve Your Unit at Our 500 East Garden Street Location';
+      this.heading = 'Reserve Your Unit at Our AFFORDABLE STORAGE #6 - 500 E. GARDEN';
     }
   }
 }

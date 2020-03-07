@@ -11,37 +11,37 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: '260 N Grove St Location',
+                label: 'AFFORDABLE STORAGE #1 - 260 N GROVE',
                 path: '/location/260-n-grove',
                 name: '260-n-grove'
               },
               {
                   id: '2',
-                  label: '201 N Grove St Location',
+                  label: 'AFFORDABLE STORAGE #2 - 201 N GROVE',
                   path: '/location/201-n-grove',
                   name: '201-n-grove'
               },
               {
                   id: '3',
-                  label: '246 W South Lane Location',
+                  label: 'AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE',
                   path: '/location/246-w-south-lane',
                   name: '246-w-south-lane'
               },
               {
                 id: '4',
-                label: '817 S Getty St Location',
+                label: 'AFFORDABLE STORAGE #4 - 817 S. GETTY',
                 path: '/location/817-s-getty',
                 name: '817-s-getty'
             },
             {
                 id: '5',
-                label: '430 S Hwy 83 Location',
+                label: 'AFFORDABLE STORAGE #5 - 430 S HWY 83',
                 path: '/location/430-s-hwy-83',
                 name: '430-s-hwy-83'
             },
             {
                 id: '6',
-                label: '500 East Garden Street Location',
+                label: 'AFFORDABLE STORAGE #6 - 500 E. GARDEN',
                 path: '/location/500-east-garden-street',
                 name: '500-east-garden-street'
             },

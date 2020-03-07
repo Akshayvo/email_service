@@ -16,6 +16,10 @@ h3 {
   }
 }
 
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
 .iconColor {
   color: $primary;
 }
@@ -137,7 +141,7 @@ h3 {
     }
 
     .dropdown-menu {
-      left: -100px;
+      left: -151px;
     }
   }
 

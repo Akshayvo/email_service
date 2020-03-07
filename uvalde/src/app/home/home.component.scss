@@ -11,9 +11,15 @@ a {
 iframe {
   border: 2px solid #fff;
 }
+.jumbotron-background-webp{
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Uvalde_Affordable_Storage/webp/affordable-storage-uvalde-jumbotron.webp");
+}
+.jumbotron-background-jpg{
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Uvalde_Affordable_Storage/jpg/affordable-storage-uvalde-jumbotron.jpg");
+}
 
 .jumbotron {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Uvalde_Affordable_Storage/affordable-storage-uvalde-jumbotron.jpg");
+  // background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Uvalde_Affordable_Storage/affordable-storage-uvalde-jumbotron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

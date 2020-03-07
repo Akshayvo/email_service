@@ -31,27 +31,27 @@ export class ContactComponent implements OnInit {
   places = [
     {
       id: 0,
-      name: 'Affordable Storage - 260 N Grove St',
+      name: 'AFFORDABLE STORAGE #1 - 260 N GROVE',
     },
     {
       id: 1,
-      name: 'Affordable Storage - 201 N Grove St',
+      name: 'AFFORDABLE STORAGE #2 - 201 N GROVE',
     },
     {
       id: 2,
-      name: 'Affordable Storage - 246 West South Lane',
+      name: 'AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE',
     },
     {
       id: 3,
-      name: 'Affordable Storage - 817 South Getty Street',
+      name: 'AFFORDABLE STORAGE #4 - 817 S. GETTY',
     },
     {
       id: 4,
-      name: 'Affordable Storage - 430 South Highway 83',
+      name: 'AFFORDABLE STORAGE #5 - 430 S HWY 83',
     },
     {
       id: 5,
-      name: 'Affordable Storage - 500 East Garden Street',
+      name: 'AFFORDABLE STORAGE #6 - 500 E. GARDEN',
     },
  ];
 
@@ -156,17 +156,17 @@ onSubmit() {
     this.contactForm.value.subject = 'Website Form Submission';
   }
 
-   if (this.contactForm.value.location === 'Affordable Storage - 260 N Grove St') {
+   if (this.contactForm.value.location === 'AFFORDABLE STORAGE #1 - 260 N GROVE') {
     this.receiveremail = this.contacts260NGrove[2].data;
-  } else if (this.contactForm.value.location === 'Affordable Storage - 201 N Grove St') {
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #2 - 201 N GROVE') {
     this.receiveremail = this.contacts201Grove[2].data;
-  } else if (this.contactForm.value.location === 'Affordable Storage - 246 West South Lane') {
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE') {
     this.receiveremail = this.contacts246WSouthLane[2].data;
-  } else if (this.contactForm.value.location === 'Affordable Storage - 817 South Getty Street') {
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #4 - 817 S. GETTY') {
     this.receiveremail = this.contacts817SGetty[2].data;
-  } else if (this.contactForm.value.location === 'Affordable Storage - 430 South Highway 83') {
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #5 - 430 S HWY 83') {
     this.receiveremail = this.contacts430SHwy83[2].data;
-  } else if (this.contactForm.value.location === 'Affordable Storage - 500 East Garden Street') {
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #6 - 500 E. GARDEN') {
     this.receiveremail = this.contacts500EastGardenStreet[2].data;
   }
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>

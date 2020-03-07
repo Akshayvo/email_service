@@ -23,27 +23,27 @@ export class PayRentComponent implements OnInit {
   ngOnInit() {
     if (this.router.url.includes('260-n-grove')) {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
-      this.name = '260 N Grove St';
+      this.name = 'AFFORDABLE STORAGE #1 - 260 N GROVE';
       this.contact = contacts260NGrove;
     } else  if (this.router.url.includes('201-n-grove')) {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-      this.name = '201 N Grove St';
+      this.name = 'AFFORDABLE STORAGE #2 - 201 N GROVE';
       this.contact = contacts201Grove;
     } else  if (this.router.url.includes('246-w-south-lane')) {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
-      this.name = '246 West South Lane';
+      this.name = 'AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE';
       this.contact = contacts246WSouthLane;
     } else  if (this.router.url.includes('817-s-getty')) {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
-      this.name = '817 South Getty Street';
+      this.name = 'AFFORDABLE STORAGE #4 - 817 S. GETTY';
       this.contact = contacts817SGetty;
     } else  if (this.router.url.includes('430-s-hwy-83')) {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
-      this.name = '430 South Highway 83';
+      this.name = 'AFFORDABLE STORAGE #5 - 430 S HWY 83';
       this.contact = contacts430SHwy83;
     } else  if (this.router.url.includes('500-east-garden-street')) {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
-      this.name = '500 East Garden Street';
+      this.name = 'AFFORDABLE STORAGE #6 - 500 E. GARDEN';
       this.contact = contacts500EastGardenStreet;
     }
 
