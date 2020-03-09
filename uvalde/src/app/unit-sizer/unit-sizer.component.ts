@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { unitSizer260NGrove, unitSizer201NGrove, unitSizer246WSouthLane, unitSizer817SGetty, unitSizer430SHwy83, unitSizer500EastGardenStreet } from '../data/location';
+import { unitSizer260NGrove, unitSizer201NGrove, unitSizer246WSouthLane,
+  unitSizer817SGetty, unitSizer430SHwy83, unitSizer500EastGardenStreet,
+  unitSizer2633EastMainStreet } from '../data/location';
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -65,6 +67,13 @@ export class UnitSizerComponent implements OnInit {
       by size and what typically fits. TIP: remember to think 'cubic', do your items just need floor space
       or can they stack and fit together? *Actual contents vary depending of the size of your belongings.`;
       this.unitSizer = unitSizer500EastGardenStreet;
+    } else if (this.router.url.includes('/2633-east-main-street')) {
+      this.id = 6;
+      this.heading = 'Unit Sizer';
+      this.para = `Finding the right size is easy, below you will find some of the common storage units, by
+      size and what typically fits. TIP: remember to think 'cubic', do your items just need floor space or
+      can they stack and fit together? *Actual contents vary depending of the size of your belongings.`;
+      this.unitSizer = unitSizer2633EastMainStreet;
     }
   }
 }

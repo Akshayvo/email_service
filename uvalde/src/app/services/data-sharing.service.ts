@@ -23,6 +23,7 @@ export class DataSharingService {
     loc4: 'dzJ0OVcwSjMqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
     loc5: 'dzJ0OVcwSjMqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
     loc6: 'dzJ0OVcwSjMqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    loc7: 'dzJ0OVcySjgqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O'
   };
 
   // locationAPIKey = {                                                     // demo north
@@ -32,6 +33,7 @@ export class DataSharingService {
   //   loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   //   loc5: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   //   loc6: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  //   loc7: 'YzI+OEs0ejZqNUg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O'
   // };
 
   apiKey = '';
@@ -135,7 +137,6 @@ export class DataSharingService {
   }
 
   initMyNavLinks = (componentName, myCurUrl) => {
-    console.log('TCL: DataSharingService -> initMyNavLinks -> this.navLinksForComponent', this.navLinksForComponent);
     if (this.navLinksForComponent[componentName]) {
       this.navLinksForComponent[componentName].next = myCurUrl;
       this.navLinksForComponent[componentName].prev = myCurUrl;

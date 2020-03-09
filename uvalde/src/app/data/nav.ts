@@ -45,6 +45,12 @@ export const navLinks = [
                 path: '/location/500-east-garden-street',
                 name: '500-east-garden-street'
             },
+            {
+                id: '7',
+                label: 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST',
+                path: '/location/2633-east-main-street',
+                name: '2633-east-main-street'
+            },
         ]
     },
     {

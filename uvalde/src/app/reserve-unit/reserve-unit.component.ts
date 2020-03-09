@@ -38,6 +38,9 @@ export class ReserveUnitComponent implements OnInit {
     } else if (this.router.url.includes('/500-east-garden-street')) {
       this.id = 5;
       this.heading = 'Reserve Your Unit at Our AFFORDABLE STORAGE #6 - 500 E. GARDEN';
+    } else if (this.router.url.includes('/2633-east-main-street')) {
+      this.id = 6;
+      this.heading = 'Reserve Your Unit at Our AFFORDABLE STORAGE #7 - 2633 E. MAIN ST';
     }
   }
 }

@@ -4,7 +4,9 @@ import { contacts260NGrove, hours260NGrove,
   contacts201Grove, hours201Grove, contacts246WSouthLane,
   hours246WSouthLane, contacts817SGetty, hours817SGetty,
   contacts430SHwy83, hours430SHwy83, contacts500EastGardenStreet,
-  hours500EastGardenStreet } from '../data/contact';
+  hours500EastGardenStreet,
+  contacts2633EastMainStreet,
+  hours2633EastMainStreet } from '../data/contact';
 import { tabs } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -45,7 +47,6 @@ export class LocationComponent implements OnInit {
 
     ) {
       this.location = this.router.url;
-      console.log('navigation url', this.router.url, this.location);
       if (this.router.url.includes('/location/260-n-grove')) {
           this.meta.addTag({
             name: 'description',
@@ -94,7 +95,15 @@ export class LocationComponent implements OnInit {
           });
           this.titleService.setTitle('Self Storage Units in Uvalde, TX | Affordable Self Storage');
           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
-      }
+      }  else if (this.router.url.includes('/location/2633-east-main-street')) {
+        this.meta.addTag({
+          name: 'description',
+          content: `Check out our affordable rates and availability at our 2633 East Main
+          Street location! Reserve online or call today!`
+        });
+        this.titleService.setTitle('Self Storage Units in Uvalde, TX | Affordable Self Storage');
+        this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc7;
+    }
       this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
     }
@@ -103,7 +112,6 @@ export class LocationComponent implements OnInit {
     window.scrollTo(0, 0);
     this.isSomePage();
         this.data = this.route.snapshot.data;
-        console.log('location is', this.router.url );
 
   }
 
@@ -120,6 +128,8 @@ export class LocationComponent implements OnInit {
       this.fetchDetails430SHwy83();
     } else if (this.router.url.includes('/location/500-east-garden-street')) {
       this.fetchDetails500EastGardenStreet();
+    } else if (this.router.url.includes('/location/2633-east-main-street')) {
+      this.fetchDetails2633EastMainStreet();
     }
  }
 
@@ -140,6 +150,8 @@ export class LocationComponent implements OnInit {
       this.router.navigate(['/pay-rent/430-s-hwy-83']);
     } else if ( this.id === 5) {
       this.router.navigate(['/pay-rent/500-east-garden-street']);
+    } else if ( this.id === 6) {
+      this.router.navigate(['/pay-rent/2633-east-main-street']);
     }
    }
 
@@ -161,6 +173,9 @@ export class LocationComponent implements OnInit {
       );
     } else if ( this.id === 5) {
       this.router.navigate(['/location/500-east-garden-street/reserveUnit'],
+      );
+    } else if ( this.id === 6) {
+      this.router.navigate(['/location/2633-east-main-street/reserveUnit'],
       );
     }
    }
@@ -217,5 +232,14 @@ export class LocationComponent implements OnInit {
      this.hours = hours500EastGardenStreet;
      this.tabs = tabs;
      this.photo = `${this.imageBaseUrl}/affordable-storage-6.${this.imagetype}`;
+   }
+
+   public fetchDetails2633EastMainStreet() {
+    this.name = 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST';
+    this.id = 6;
+    this.contacts = contacts2633EastMainStreet;
+    this.hours = hours2633EastMainStreet;
+    this.tabs = tabs;
+    this.photo = `${this.imageBaseUrl}/affordable-storage-7.${this.imagetype}`;
    }
 }

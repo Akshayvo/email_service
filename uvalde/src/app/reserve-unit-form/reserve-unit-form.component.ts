@@ -187,7 +187,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       };
     }
 
-    if (this.router.url.includes('/reserve-unit')) {
+    if (this.router.url.includes('/reserve')) {
       this.navigateToReserve = true;
       this.dataSharingService.navigateToReserve = true;
       this.dataSharingService.navigateToMoveIn = false;
@@ -233,7 +233,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.gettingTenantData = true;
       }
     }
-    console.log('TCL: navigateToConfirmation -> this.dataSharingService.objTenant', this.dataSharingService.objTenant);
 
       this.reserveUnitForm.patchValue({
         objTenant: ({
@@ -257,7 +256,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
 
     /* if (this.activatedRoute.snapshot.url[1].path === 'grove') {
-      console.log('yes its ', this.activatedRoute.snapshot.url[1].path);
     } */
   }
   public fetchUSState() {
@@ -281,7 +279,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   public navigateToConfirmation(location: any) {
     this.submitted = true;
     this.dataSharingService.objTenant = this.reserveUnitForm.value.objTenant;
-    //  this.dataSharingService.MoveIn.dteMoveIn = this.convertDate(this.reserveUnitForm.value.dteMoveIn);
+     this.dataSharingService.MoveIn.dteMoveIn = this.convertDate(this.reserveUnitForm.value.dteMoveIn);
     if (this.reserveUnitForm.invalid) {
       return;
     } else {
@@ -289,6 +287,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const navTo = this.dataSharingService.navigationTo;
     this.dataSharingService.navigateToPrevious = this.router.url;
     this.dataSharingService.updateMyNavLink('reservationForm', 'next', `${navTo}/${location}`);
+    // tslint:disable-next-line:max-line-length
     this.dataSharingService.updateMyNavLink('reservationForm', 'prev', `${this.dataSharingService.navLinksForComponent.viewRates.next}`);
     const myCurNavLinks = this.dataSharingService.getMyNavLinks('reservationForm');
     this.router.navigate([this.dataSharingService.navLinksForComponent.reservationForm.next]);

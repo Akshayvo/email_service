@@ -17,6 +17,8 @@ import {
   hours817SGetty,
   hours430SHwy83,
   hours500EastGardenStreet,
+  contacts2633EastMainStreet,
+  hours2633EastMainStreet,
 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
@@ -53,6 +55,10 @@ export class ContactComponent implements OnInit {
       id: 5,
       name: 'AFFORDABLE STORAGE #6 - 500 E. GARDEN',
     },
+    {
+      id: 6,
+      name: 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST',
+    },
  ];
 
   contacts201Grove: any;
@@ -65,6 +71,8 @@ export class ContactComponent implements OnInit {
   hours201Grove: any;
   hours246WSouthLane: any;
   hours430SHwy83: any;
+  hours2633EastMainStreet: any;
+  contacts2633EastMainStreet: any;
   hours500EastGardenStreet: any;
   hours817SGetty: any;
   placeName: string;
@@ -132,6 +140,7 @@ export class ContactComponent implements OnInit {
     this.contacts817SGetty = contacts817SGetty;
     this.contacts500EastGardenStreet = contacts500EastGardenStreet;
     this.contacts430SHwy83 = contacts430SHwy83;
+    this.contacts2633EastMainStreet = contacts2633EastMainStreet;
   }
 
   public fetchHours() {
@@ -142,6 +151,7 @@ export class ContactComponent implements OnInit {
     this.hours430SHwy83 = hours430SHwy83;
     this.hours817SGetty = hours817SGetty;
     this.hours500EastGardenStreet = hours500EastGardenStreet;
+    this.hours2633EastMainStreet = hours2633EastMainStreet;
   }
 
 onSubmit() {
@@ -168,6 +178,8 @@ onSubmit() {
     this.receiveremail = this.contacts430SHwy83[2].data;
   } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #6 - 500 E. GARDEN') {
     this.receiveremail = this.contacts500EastGardenStreet[2].data;
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST') {
+    this.receiveremail = this.contacts2633EastMainStreet[2].data;
   }
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;

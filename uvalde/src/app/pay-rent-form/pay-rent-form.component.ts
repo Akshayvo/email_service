@@ -50,7 +50,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   showloaderForPayment = false;
   toggleSignUp = false;
   IsAutoPaymentsEnabled = false;
-  TotalReserveAmount: number;
+  totalReserveAmount: number;
   totalMoveInAmount: number;
   date: Date;
   reservationInProgress: boolean;
@@ -154,20 +154,23 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     this.navigateToReserve = this.dataSharingService.navigateToReserve;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
-    this.TotalReserveAmount =
-   // tslint:disable-next-line: max-line-length
-   parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
+    if (!!this.dataSharingService.LstUnitTypes.ReservationFeeTax) {
+      this.totalReserveAmount =
+     // tslint:disable-next-line: max-line-length
+     parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
+    } else {
+      this.totalReserveAmount = this.dataSharingService.LstUnitTypes.ReservationFee;
+    }
     this.totalMoveInAmount =
     // tslint:disable-next-line: max-line-length
     parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
-
 
     if (this.router.url.includes('/payReservationCharges') ) {
       this.navigateToReserve = true;
       this.navigateToMoveIn = false;
       this.payRentForm.patchValue({
         objPayment: {
-         PaymentAmount: this.TotalReserveAmount
+         PaymentAmount: this.totalReserveAmount
         }
       });
     } else {
@@ -373,7 +376,7 @@ public navigateToPrevious() {
               CCAccountZIP: Tenant.CCBillingZIP,
               SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
               // tslint:disable-next-line: max-line-length
-              PaymentAmount: (this.navigateToMoveInPayment ? this.balance : (this.navigateToReserve ? this.TotalReserveAmount : this.totalMoveInAmount)),
+              PaymentAmount: (this.navigateToMoveInPayment ? this.balance : (this.navigateToReserve ? this.totalReserveAmount : this.totalMoveInAmount)),
             }
           });
           this.showLoader = false;

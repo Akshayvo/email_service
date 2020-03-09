@@ -263,6 +263,44 @@ export const hours500EastGardenStreet = [
     }
 ];
 
+export const contacts2633EastMainStreet = [
+    {
+        id: 0,
+        label: 'Address: ',
+        data: '2633 E Main St, Uvalde, TX 78801',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+    {
+        id: 1,
+        label: 'Phone: ',
+        data: '(830) 278-5065',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:8302785065'
+    },
+    {
+        id: 2,
+        label: 'Email: ',
+        data: 'uvaldeaffordablestorage@yahoo.com',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:uvaldeaffordablestorage@yahoo.com'
+    },
+];
+
+export const hours2633EastMainStreet = [
+    {
+        label: 'Mon - Fri: ',
+        data: '8:00AM to 4:00PM'
+    },
+    {
+        label: 'Sat - Sun ',
+        data: 'CLOSED'
+    },
+    {
+        label: 'Access Hours: ',
+        data: '24 hours a day, 7 days a week'
+    }
+];
+
 // export const socialLinks = [
 //     {
 //         label: 'facebook',

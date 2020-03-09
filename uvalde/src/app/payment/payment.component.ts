@@ -39,15 +39,11 @@ export class PaymentComponent implements OnInit {
     window.scrollTo(0, 0);
 
     if (!!(localStorage.getItem('strTenantToken'))) {
-      console.log('payment navigation from payment', this.dataSharingService.paymentNavigation, this.dataSharingService.changePassword);
       const navTo = localStorage.getItem('paymentNavigationUrl');
       if (!!navTo) {
         if (this.dataSharingService.changePassword === true) {
-          console.log('got chnage password');
-
           this.router.navigate([`/pay-rent/${navTo}/changePassword`]);
         } else {
-          console.log('got payment page ');
           this.router.navigate([`/pay-rent/${navTo}/payment`]);
         }
       }

@@ -192,6 +192,22 @@
                   <b>{{hour.label}}</b>{{hour.data}}<br>
               </span>  
             </div>
+            <div class=" pt-5">
+              <h2>AFFORDABLE STORAGE #7 - 2633 E. MAIN ST</h2>
+              <div class="py-2">
+                  <span *ngFor="let contact of contacts2633EastMainStreet; let i = index">
+                    <span><b>{{contact.label}}</b></span><span class="contact-links"
+                    *ngIf="contact?.id === 1 || contact?.id === 2 else other_content">
+                      <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                    <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                  </span>
+              </div>
+            
+              <!-- <span><b> Office: </b></span> <br> -->
+              <span *ngFor="let hour of hours2633EastMainStreet">
+                  <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>  
+            </div>
         </div>
       </div>
   </div>
