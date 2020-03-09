@@ -12,7 +12,7 @@ import { Subscription } from 'rxjs';
 import * as moment from 'moment';
 import { MoveInService } from '../services/moveIn.service';
 import { DataSharingService } from '../services/data-sharing.service';
-
+import { grid } from '../../data/view-rates';
 @Component({
   selector: 'app-reserve-unit-form',
   templateUrl: './reserve-unit-form.component.html',
@@ -23,7 +23,7 @@ import { DataSharingService } from '../services/data-sharing.service';
 export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
 
-
+  grid: string;
   proRateAmount?: number;
   curStage: number;
   deposit?: number;
@@ -229,6 +229,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
 
     this.getData();
+    this.fetchGridData();
     this.getRentalPeriod();
     if (this.navigateToMoveIn === true ) {
       this.getInsuranceChoices();
@@ -267,6 +268,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   close() {
     this.unitTypeNotAvailability = false;
+  }
+
+  public fetchGridData() {
+    this.grid = grid;
   }
 
  public navigateToConfirmation(location: any) {
