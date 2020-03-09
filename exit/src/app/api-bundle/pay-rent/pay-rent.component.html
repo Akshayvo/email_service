@@ -16,22 +16,13 @@
         </div>
         
         <div class=" col-lg-4  py-4 text-justify payment-link">
-          <div class="row">
-            <div class="col-md-12  ng scroll-wrapper trouble">
-                <h5>Having trouble logging in on this page?</h5>
-                <p>If you're having trouble logging in from an iOS device, please click below, or you may try logging in from a desktop or laptop machine.</p>
-                <div CLASS="text-center pb-3">
-                  <a class="btn btn-primary " href="https://exit120ss.sim.syrasoft.com/PayNow" role="button">Pay Rent</a>
-                </div>
-            </div>
-          </div>
           <div class="row ">
               <div class="col-md-12">
                 <h5>How to Login</h5>
                 <p>Please note that</p>
                 <p><b>Username:</b>&nbsp;First Initial + Last Name<br>
                 <b>Password:</b>&nbsp;Your Unit Number</p>
-                <p>Unit numbers begin with a letter and are followed by four digits, using 0s as placeholders.</p>
+                <p>Unit numbers begin with a letter and are followed by four digits, using 0s as placeholders. All letters in Unit Numbers must be capitalized.</p>
                 <p><b>Example 1:</b></p>
                 <p>John Smith's unit is X0015</p>
                 <p>John's Username: jsmith<br>
@@ -41,7 +32,7 @@
                 <p>John's Username: jsmith<br>
                   John's Password: X0001</p>
                 <p>Have questions about your account?<br>
-                <span *ngFor="let contact of contact">
+                <span *ngFor="let contact of contact" [class.display-none]="contact?.id == 0">
                   <a *ngIf="contact?.id == 1 || contact?.id == 2" href="contact?.redirect">{{contact.data}}</a><br>
                 </span>
               </p>
