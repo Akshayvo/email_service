@@ -5,8 +5,26 @@ a {
   cursor: pointer;
 }
 
+.navbar-brand {
+  img {
+    width: 200px;
+  }
+}
+
+.contact-details {
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.iconColor {
+  color: white;
+}
+
 .button {
-  font-size: 16px ;
+  font-size: 16px;
 }
 
 .navbar {
@@ -89,5 +107,14 @@ a {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;
+  }
+}
+
+
+@media only screen and (max-width: 454px) {
+  .navbar-brand {
+    img {
+      width: 130px;
+    }
   }
 }

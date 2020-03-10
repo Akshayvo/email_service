@@ -45,9 +45,9 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    // {
-    //     label: 'facebook',
-    //     path: '',
-    //     class: 'fab fa-facebook-square',
-    // }
+    {
+        label: 'facebook',
+        path: 'https://www.facebook.com/pages/High-Falls-Self-Storage-LLC/125775177478431',
+        class: 'fab fa-facebook-square iconColor',
+    }
 ];

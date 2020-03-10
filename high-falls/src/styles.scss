@@ -18,7 +18,9 @@ $shadow: #000;
 
 $fontColor: #000;
 // $primaryFont: 'Roboto';
-$primaryFont: "Lato", sans-serif;
+// $primaryFont: "Lato", sans-serif;
+
+$primaryFont: "Calibri";
 
 html,
 body {
@@ -33,6 +35,10 @@ body {
 // Different Background colors
 .bg-secondary {
   background: $secondary;
+}
+
+.bg-primary {
+  background: $primary !important;
 }
 
 .bg-dark {
