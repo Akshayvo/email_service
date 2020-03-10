@@ -2,7 +2,7 @@ export const tabs1 = [
     {
         id: '1',
         name: 'Storage Units',
-        path: './',
+        path: './storageUnits',
         active: true,
     },
     {
@@ -23,39 +23,15 @@ export const tabs1 = [
         path: './photos',
         active: false,
     },
-    // {
-    //     id: '5',
-    //     name: 'About Us',
-    //     path: './about',
-    //     active: false,
-    // },
-    // {
-    //     id: '6',
-    //     name: 'Truck Rentals',
-    //     path: './truck-rentals',
-    //     active: false,
-    // },
-    // {
-    //     id: '7',
-    //     name: 'Directions',
-    //     path: './directions',
-    //     active: false,
-    // },
 ];
 
 export const tabs = [
     {
         id: '1',
         name: 'Storage Units',
-        path: './',
+        path: './storageUnits',
         active: true,
     },
-    // {
-    //     id: '2',
-    //     name: 'Unit Sizer',
-    //     path: './unitSizer',
-    //     active: false,
-    // },
     {
         id: '2',
         name: 'Reserve Unit',
@@ -99,7 +75,7 @@ export const unitSizerLocation1 = [
                 { content: 'Suitcases', },
                 { content: 'Lamps', },
                 { content: 'Kitchenware' },
-        ],       
+        ],
     },
 
     {
@@ -211,7 +187,7 @@ export const unitSizerLocation3 = [
     //     img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
     //     data: `25 sq. ft. Hall Closet, small bedroom or office, boxes,
     //            clothing, small furniture, toys, business records or about 50 file boxes.`,
-        
+
     // },
 
     // {
@@ -285,17 +261,20 @@ export const aboutUsLocation1 = [
 
 export const aboutUsLocation3 = [
     {
-        p: `Our Beck Road location is Inez' newest self storage facility! We offer several options for self storage units that give our 
-            friends and neighbors access to top-notch storage space for their personal belongings or seasonal vehicles. `,
+        p: `Our Beck Road location is Inez' newest self storage facility! We offer several options for
+        self storage units that give our friends and neighbors access to top-notch storage space for their
+        personal belongings or seasonal vehicles. `,
     },
     {
-        p: `Beck Road Storage has all the amenities you'd expect from a family owned & operated facility! All concrete driveways make your 
-            loading and unloading a breeze. Top off your tires with our complementary air compressor and fill that cooler with free ice from 
-            our on-site ice machine! If you're bringing your boat back from a day on the water, use our wash-off area to prepare it for storage. `,
+        p: `Beck Road Storage has all the amenities you'd expect from a family owned & operated facility!
+        All concrete driveways make your loading and unloading a breeze. Top off your tires with our complementary
+        air compressor and fill that cooler with free ice from our on-site ice machine! If you're bringing your boat
+        back from a day on the water, use our wash-off area to prepare it for storage. `,
     },
     {
-        p: `We're about more than just convenience. We understand your recreational vehicles and belongings require thoughtful security. Beck Road 
-            Storage is covered with 24 hour video surveillance, and uses pin-code activated gates to ensure a sense of safety for you, and your belongings.`,
+        p: `We're about more than just convenience. We understand your recreational vehicles and belongings require
+        thoughtful security. Beck Road Storage is covered with 24 hour video surveillance, and uses pin-code activated
+        gates to ensure a sense of safety for you, and your belongings.`,
     },
 ];
 

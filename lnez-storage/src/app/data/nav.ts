@@ -25,18 +25,10 @@ export const navLinks = [
         label: 'Camper Rentals',
         path: '/camper-rentals',
         type: 'link',
-        // sublinks: [
-        //     {
-        //         path: '/camper-rentals/2018-wildwood-27REI',
-        //       },
-        //       {
-        //           path: '/camper-rentals/2019-prime-time-tracer',
-        //       },
-        // ]
     },
     {
         label: 'Pay Rent',
-        path: '/payment',
+        path: '/pay-rent',
         type: 'link'
     },
     {

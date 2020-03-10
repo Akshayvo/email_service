@@ -7,6 +7,7 @@ import { tabs, tabs1 } from '../data/location';
 import { headingLocation1, headingLocation3 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
+import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 
 
 @Component({
@@ -18,7 +19,6 @@ export class LocationComponent implements OnInit {
 
   name: any;
   locationId: number;
-  currentTab: any;
   contacts: any;
   hours: any;
   iframeAdd: any;
@@ -31,6 +31,8 @@ export class LocationComponent implements OnInit {
     private meta: Meta,
     private router: Router,
     private titleService: Title,
+    private dataSharingService: DataSharingService,
+
     ) {
       if (this.router.url.includes('/location/inez-storage')) {
             this.meta.addTag({
@@ -39,6 +41,7 @@ export class LocationComponent implements OnInit {
                         We offer boat, climate controlled, RV, and self storage at our storage facility.`
             });
             this.titleService.setTitle('Self Storage Facility in Inez TX | Inez Storage');
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
     } else  if (this.router.url.includes('/location/beck-road-storage'))  {
           this.meta.addTag({
             name: 'description',
@@ -46,6 +49,8 @@ export class LocationComponent implements OnInit {
                       Victoria TX. We offer a variety of storage unit sizes at our storage facility.`
           });
           this.titleService.setTitle('Boat & RV Storage in Victoria TX | Beck Road Storage');
+          this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+
     }
     }
 
@@ -57,8 +62,7 @@ export class LocationComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/inez-storage')) {
         this.fetchDetailsLocation1();
-    } 
-     else  if (this.router.url.includes('/location/beck-road-storage'))  {
+    } else  if (this.router.url.includes('/location/beck-road-storage'))  {
       this.fetchDetailsLocation3();
     }
  }
@@ -74,23 +78,19 @@ export class LocationComponent implements OnInit {
       this.socialLinks = socialLinks;
     }
 
-  
-
    public fetchDetailsLocation3() {
      this.name = headingLocation3;
      this.locationId = 3;
      this.contacts = contactsLocation3;
      this.hours = hoursLocation3;
      this.tabs = tabs;
-   } 
-   
+   }
+
    public navigateToReserve() {
     if ( this.locationId === 1 ) {
-      this.router.navigate(['/location/inez-storage'],
-            { queryParams: { name: 'Inez storage', currentTab: 'Reserve Unit' }});
+      this.router.navigate(['/location/inez-storage']);
     } else if ( this.locationId === 3) {
-      this.router.navigate(['/location/beck-road-storage'],
-            { queryParams: { name: 'Beck Road Storage', currentTab: 'Reserve Unit' }});
+      this.router.navigate(['/location/beck-road-storage']);
     }
    }
 

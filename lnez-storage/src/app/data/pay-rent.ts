@@ -1,13 +1,25 @@
-export const payList = [
+
+export const tableHeader = [
   {
-    td1: 'Inez Storage',
-    td2: '2149 Garcitas Creek Rd, Inez, TX 77968',
-    td3: '<a class="btn btn-primary" [routerLink]="[`/payment/inez-storage/storageUnits`]" [queryParams]="{ currentTab: `Storage Units` }" role="button">pay-rent</a>',
+    data: 'Facility',
   },
-  
   {
-     td1: 'Beck Road Storage',
-     td2: '2149 Garcitas Creek Rd, Inez, TX 77968',
-     td3: '<a class="btn btn-primary" [routerLink]="[`/payment/beck-road-storage/storageUnits`]" role="button">pay-rent</a>'
+    data: 'Address'
   },
+  {
+    data: ''
+  }
+];
+
+export const tableData = [
+  {
+    facility: 'Inez Storage',
+    address: '2149 Garcitas Creek Rd, Inez, TX 77968',
+    url: 'inez-storage'
+  },
+  {
+    facility: 'Beck Road Storage',
+    address: '96 Beck Rd E, Inez, TX 77968',
+    url: 'beck-road-storage'
+  }
 ];

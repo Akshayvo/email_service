@@ -8,35 +8,23 @@
       <div class="rent-sub-holder">
           <div class="container px-0">
             <table class="col-md-12">
-              <thead>
+              <thead >
                 <tr>
-                  <th>Facility</th>
-                  <th>Address</th>
-                  <th></th>
+                  <th  *ngFor="let tableHeader of tableHeader">{{tableHeader.data}}</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr *ngFor="let tableData of tableData">
                   <td class="table-data">
-                      Inez Storage
+                    {{tableData.facility}}
                   </td>
                   <td class="table-data">
-                      2149 Garcitas Creek Rd, Inez, TX 77968
+                    {{tableData.address}}
                   </td>
-                  <td class="text-right px-3">
-                    <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent']" role="button">Pay Here</a>            
+                  <td class="table-data" >
+                    <!-- <div [innerHtml]="{{tableData.url}}"></div> -->
+                    <a class="btn btn-primary p-2 ml-0" [routerLink]="'/pay-rent/'+tableData.url" role="button">Pay Here</a>
                   </td>
-                </tr>
-                <tr>
-                    <td class="table-data">
-                      Beck Road Storage
-                    </td>
-                    <td class="table-data">
-                      96 Beck Rd E, Inez, TX 77968
-                    </td>
-                    <td class="text-right px-3">
-                      <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent-beck-road']" role="button">Pay Here</a>            
-                    </td>
                 </tr>
               </tbody>
              </table>

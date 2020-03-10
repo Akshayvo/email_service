@@ -6,14 +6,14 @@ export const th = [
       data: `Rate`
     },
     {
-      data: `Reserve a Unit`
+      data: `Deposit`
     },
-    // {
-    //   data: `Move In`
-    // },
-    // {
-    //   data: `Climate Control`
-    // },
+    {
+      data: `Climate Control`
+    },
+    {
+      data: `Reserve a Unit`
+    }
   ];
 
   export const option =  [

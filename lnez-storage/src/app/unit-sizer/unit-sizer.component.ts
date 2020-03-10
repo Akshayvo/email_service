@@ -10,7 +10,6 @@ export class UnitSizerComponent implements OnInit {
   name: any;
   unitSizer: any;
   tabs: any;
-  currentTab = 'Unit Sizer';
   h2tag: string;
   description: string;
   constructor( private router: Router ) {
@@ -23,7 +22,7 @@ export class UnitSizerComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/inez-storage')) {
       this.fetchDetailsLocation1();
-  }else  if (this.router.url.includes('/location/beck-road-storage'))  {
+  } else  if (this.router.url.includes('/location/beck-road-storage'))  {
     this.fetchDetailsLocation3();
   }
   }

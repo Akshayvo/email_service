@@ -2,10 +2,10 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
-import { contactsLocation1,contactsLocation3 } from '../data/contact';
-import { payList } from '../data/pay-rent';
-import { DataSharingService } from '../services/data-sharing.service';
+import { contactsLocation1, contactsLocation3 } from '../data/contact';
+import { tableHeader, tableData } from '../data/pay-rent';
 import { Router } from '@angular/router';
+import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 
 @Component({
   selector: 'app-payment',
@@ -17,7 +17,8 @@ export class PaymentComponent implements OnInit {
   breadcrumbActive: any = 'Pay Rent';
   locationId: any;
   contact: any;
-  payList: any;
+  tableData: any;
+  tableHeader = [];
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -38,7 +39,8 @@ export class PaymentComponent implements OnInit {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.receiveMessage();
-    this.fetchPayList();
+    this.fetchTableHeader();
+    this.fetchTableData();
 
 
     if (!!(localStorage.getItem('strTenantToken'))) {
@@ -60,15 +62,19 @@ export class PaymentComponent implements OnInit {
     });
   }
 
+  public fetchTableHeader() {
+    this.tableHeader = tableHeader;
+  }
+
+  public fetchTableData() {
+    this.tableData = tableData;
+  }
+
   public dataupdate() {
     if ( this.locationId === '1' || this.locationId === 1 ) {
       this.contact = contactsLocation1;
     } else if ( this.locationId === '3' ) {
       this.contact = contactsLocation3;
     }
-  }
-
-  public fetchPayList() {
-    this.payList = payList;
   }
 }
