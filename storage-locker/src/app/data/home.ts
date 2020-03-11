@@ -20,20 +20,20 @@ export const aboutUsHeading = `Climate-Controlled Storage in Hendersonville`;
 
 export const aboutUs = [
     {
-        p: `Storage Locker is Henderson's premier climate-controlled self storage facility! We are conveniently
-        located on the Greenville Highway(NC-225) just south of the Spartanburg intersection in Henderson. We are
-        a completely indoor, climate-controlled self storage facility catering to both businesses and residential
-        storage users.`,
+        p: `Storage Locker is Hendersonville's premier climate-controlled self storage facility! We are
+        conveniently located on the Greenville Highway(NC-225) just south of the Spartanburg intersection
+        in Hendersonville. We are a completely indoor, climate-controlled self storage facility catering to
+        both businesses and residential storage users.`,
     },
     {
-        p: `Our facility is the perfect storage solution for those belongings that require a little extra protection
-        from the elements. Many customers store furniture, luggage, clothing, and seasonal items that just can't
-        handle the shifts in temperature that come with outdoor storage units. Businesses love our facility's services
-        for equipment and documents that need that extra level of protection!`,
+        p: `Our facility is the perfect storage solution for those belongings that require a little extra
+        protection from the elements. Many customers store furniture, luggage, clothing, and seasonal items
+        that just can't handle the shifts in temperature that come with outdoor storage units. Businesses love
+        our facility's services for equipment and documents that need that extra level of protection!`,
     },
     {
         p: `We understand self storage can be needed during stressful times, so we go the extra mile to make your
-        stay easy. Our extended access hours and convenient location mean your unit is just like having an extra\
+        stay easy. Our extended access hours and convenient location mean your unit is just like having an extra
         closet to a second garage just around the corner! All of our customers have access to their accounts 24 hours
         a day, 7 days a week with our handy online tenant portal. Reserve your unit, check your balance, or pay your
         bill online right from your phone! Don't forget to ask about our automatic payment service!`,

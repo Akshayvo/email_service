@@ -52,6 +52,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   showloaderForPayment = false;
   toggleSignUp = false;
   IsAutoPaymentsEnabled = false;
+  makePaymentForUnit = false;
   TotalReserveAmount: number;
   totalMoveInAmount: number;
   date: Date;
@@ -531,6 +532,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     .subscribe(strConfirmationResponse => {
       this.strConfirmation = strConfirmationResponse.strConfirmation;
       this.showConfirmation = false;
+      this.makePaymentForUnit = false;
       this.submitted = false;
        this.tokenExit = localStorage.getItem('strTenantToken');
 
@@ -572,6 +574,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       .subscribe(strConfirmationResponse => {
         this.strAccessCode = strConfirmationResponse.strAccessCode;
         this.submitted = false;
+        this.makePaymentForUnit = false;
          this.tokenExit = localStorage.getItem('strTenantToken');
          if (this.tokenExit) {
            this.tenantTokenExist = true;
@@ -601,6 +604,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     onSubmit() {
       this.submitted = true;
+      this.makePaymentForUnit = true;
       if (this.payRentForm.invalid) {
         return;
       } else {

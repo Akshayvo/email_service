@@ -9,6 +9,10 @@ a {
   strong {
     color: white;
   }
+
+  img {
+    width: 220px;
+  }
 }
 
 img {
@@ -107,6 +111,12 @@ img {
 
     li {
       width: fit-content;
+    }
+  }
+
+  .navbar-brand {
+    img {
+      width: 160px;
     }
   }
 }
