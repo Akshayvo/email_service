@@ -31,7 +31,7 @@ export class UnitSizerComponent implements OnInit {
   ngOnInit() {
     this.i = 0;
     this.h = 4;
-    this.j = this.i + 4;
+    this.j = this.i + 1;
     this.fetchUnitSizer();
     window.scrollTo(0, 0);
   }
@@ -76,10 +76,10 @@ export class UnitSizerComponent implements OnInit {
       this.j = this.i + 4;
     } else if ( this.i === 4 ) {
       this.j = 0;
-      this.h = this.i - 4;
+      this.h = this.i - 1;
     } else {
-      this.h = this.i - 4;
-      this.j = this.i + 4;
+      this.h = this.i - 1;
+      this.j = this.i + 1;
     }
 
   }

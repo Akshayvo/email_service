@@ -70,7 +70,8 @@ export const unitSizer = [
     heading: '10\' x 30\' Storage Unit',
     alt: '10\' x 30\' Storage Unit Graphic ',
     unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
-    data: `This unit is approximately 300 sq feet of space that can hold the contents of two rooms, such as:`,
+    data: `This unit is approximately 300 sq feet of space that can hold the contents of a whole house. These are pull-through
+    units with a door on either end. Our 10x30s can hold many of the following items:`,
     amenities: [
       { content: 'Appliances', },
       { content: 'Car or Small Boat', },
