@@ -240,6 +240,6 @@ export class LocationComponent implements OnInit {
     this.contacts = contacts2633EastMainStreet;
     this.hours = hours2633EastMainStreet;
     this.tabs = tabs;
-    this.photo = `${this.imageBaseUrl}/affordable-storage-7.${this.imagetype}`;
+    // this.photo = `${this.imageBaseUrl}/affordable-storage-7.${this.imagetype}`;
    }
 }
