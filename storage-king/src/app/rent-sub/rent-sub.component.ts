@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { contact } from '../data/contact';
 
 @Component({
   selector: 'app-rent-sub',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RentSubComponent implements OnInit {
 
+  contact: any;
+
   constructor() { }
 
   ngOnInit() {
+    this.fetchContact();
+  }
+
+  public fetchContact() {
+    this.contact = contact;
   }
 
 }
