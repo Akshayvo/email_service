@@ -12,8 +12,8 @@ export const environment = {
   appId: 'Barber Road Storage LLC',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  // APIKey: `dzJ0OVcySjYqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29265
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
+  APIKey: `bjMvNC03YjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 3475
+  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
 };
 
 /*
