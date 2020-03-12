@@ -32,7 +32,7 @@ export class LocationComponent implements OnInit {
     private router: Router,
     private titleService: Title,
     ) {
-      if (this.router.url.includes('/location/florida-and-warwick')) {
+      if (this.router.url.includes('/location/andrews')) {
             this.meta.addTag({
               name: 'description',
               content: `Our Florida/Warwick location has a variety of unit sizes and all storage units
@@ -69,7 +69,7 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/florida-and-warwick')) {
+    if (this.router.url.includes('/location/andrews')) {
         this.fetchDetailsLocation1();
     } else if (this.router.url.includes('/location/chester')) {
       this.fetchDetailsLocation2();
@@ -82,7 +82,7 @@ export class LocationComponent implements OnInit {
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate(['/location/florida-and-warwick/reserveUnit'],
+    this.router.navigate(['/location/andrews/reserveUnit'],
           { queryParams: { name: 'Linden Self Storage', currentTab: 'Reserve Unit' }});
   } else if ( this.locationId === 2 ) {
     this.router.navigate(['/location/chester/reserveUnit'],

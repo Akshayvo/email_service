@@ -53,73 +53,11 @@
   <!--Feature Box Ends Here-->
 </div>
 
-<!--Contact Details-->
-<div class="bg-light for-location"> 
-  <div class="locaion-selection">
-    <app-select-location (click)="receiveMessage()"></app-select-location>
-  </div> 
-    <div class="container">
-    <div class="row">
-      <div class="col-md-5 map-responsive">
-        <span *ngIf="locationId == 1">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8471.12809906556!2d-74.30388798029414!3d41.35243932966004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c329270ac4efb9%3A0x33eb3f04f7cb48e0!2sStoragetown!5e0!3m2!1sen!2sus!4v1553632552654" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
-        </span>
-        <span *ngIf="locationId == 2">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11980.134768296723!2d-74.2779668!3d41.3516214!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x870033f00cd1403d!2sStoragetown!5e0!3m2!1sen!2sus!4v1553043103588" width="100%" height="100%" frameborder="0"  allowfullscreen></iframe>
-        </span>
-        <span *ngIf="locationId == 3">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d34934.789722081085!2d-74.22076834806867!3d41.50820404113331!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99616e089b6324eb!2sStoragetown!5e0!3m2!1sen!2sus!4v1553601504739" width="100%" height="100%" frameborder="0"  allowfullscreen></iframe>
-        </span>
-        <span *ngIf="locationId == 4">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11959.050406855393!2d-74.345391!3d41.466064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d6cc8085d6e3188!2sStorageTown!5e0!3m2!1sen!2sus!4v1552837481481" width="100%" height="100%" frameborder="0"  allowfullscreen></iframe>
-        </span>
-      </div>
-      <div class="col-md-4  pl-4 pt-3">
-        <h2>{{heading}}</h2>
-        <p> 
-          <span *ngFor="let contact of contactDetails">
-            <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
-            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
-          </span>
-        </p>
-        <span *ngIf="locationId == 1" >
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/florida-and-warwick/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/florida-and-warwick/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
-        </span>
-        <span *ngIf="locationId == 2" >
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/chester/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/chester/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
-        </span>
-        <span *ngIf="locationId == 3" >
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/montgomery-walden/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/montgomery-walden/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
-        </span>
-        <span *ngIf="locationId == 4" >
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/middletown-wallKill/storageUnits']" [queryParams]="{ currentTab: 'Storage Units' }" role="button">View Rates</a>            
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/middletown-wallKill/reserveUnit']" [queryParams]="{  currentTab: 'Reserve Unit' }" role="button">Reserve Unit</a>                        
-        </span>
-      </div>
-      <div class="col-md-3 contact-hours pt-3">
-          <h2>Hours:</h2>
-          <p>
-            
-            <!-- <span *ngFor="let hour of hoursDetails">
-              <b>{{hour.label}}</b><br><span *ngIf="hour?.id === 1 else other_content ">&nbsp;{{hour.datahours.data1}}<br>{{hour.datahours.data2}}</span>
-              <ng-template #other_content>&nbsp;{{hour.data}}</ng-template><br>
-            </span> -->
-            <span *ngFor="let hour of hoursDetails">
-              <b>{{hour.label}}</b><br>{{hour.data}}<br>
-            </span>
-          </p>
-      </div>
-    </div>
-  </div>  
-</div>
-<!--Contact Details Ends Here-->
 
+<app-list-of-facility></app-list-of-facility>
 
 <!--Service-->
-  <div class="service">
+  <div class="service bg-light">
       <div class="container py-5">
         <div class="row">
           <div class="col-md-6 pt-2">

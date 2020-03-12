@@ -23,7 +23,7 @@ import { ContactMiddletownComponent } from './contact-middletown/contact-middlet
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'location/florida-and-warwick',
+  { path: 'location/andrews',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -67,7 +67,7 @@ const routes: Routes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/florida-and-warwick', component: HomeComponent,
+  { path: 'review/andrews', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -101,14 +101,14 @@ const routes: Routes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
-  { path: 'pay-rent-florida-and-warwick',component: PayRentComponent},
+  { path: 'pay-rent-andrews', component: PayRentComponent},
   { path: 'pay-rent-chester', component: PayRentChesterComponent},
   { path: 'pay-rent-montgomery-walden', component: PayRentMontgomeryComponent},
-  { path: 'pay-rent-middletown-wallkill',component:PayRentMiddletownComponent},
-  { path: 'contact-florida-and-warwick', component:ContactFloridaComponent},
-  { path: 'contact-chester', component:ContactChesterComponent},
-  { path: 'contact-montgomery-walden', component:ContactMontgomeryComponent},
-  { path: 'contact-middletown-wallkill', component:ContactMiddletownComponent},
+  { path: 'pay-rent-middletown-wallkill', component: PayRentMiddletownComponent},
+  { path: 'contact-andrews', component: ContactFloridaComponent},
+  { path: 'contact-chester', component: ContactChesterComponent},
+  { path: 'contact-montgomery-walden', component: ContactMontgomeryComponent},
+  { path: 'contact-middletown-wallkill', component: ContactMiddletownComponent},
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },

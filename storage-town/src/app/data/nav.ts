@@ -17,7 +17,7 @@ export const navLinks = [
             {
                 id: '1',
                 label: 'Chester - Andrews Lane',
-                path: '/location/florida-and-warwick',
+                path: '/location/andrews',
               },
               {
                 id: '3',

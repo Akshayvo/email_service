@@ -1,0 +1,12 @@
+@import "../../styles.scss";
+
+.contact-links {
+    a {
+        color: black;
+    }
+}
+
+.partition-border {
+    border-left: 2px solid $border;
+    padding-left: 5%;
+}

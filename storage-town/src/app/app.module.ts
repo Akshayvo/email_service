@@ -38,6 +38,7 @@ import { ContactFloridaComponent } from './contact-florida/contact-florida.compo
 import { ContactMontgomeryComponent } from './contact-montgomery/contact-montgomery.component';
 import { ContactChesterComponent } from './contact-chester/contact-chester.component';
 import { ContactMiddletownComponent } from './contact-middletown/contact-middletown.component';
+import { ListOfFacilityComponent } from './list-of-facility/list-of-facility.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +68,8 @@ import { ContactMiddletownComponent } from './contact-middletown/contact-middlet
     ContactFloridaComponent,
     ContactMontgomeryComponent,
     ContactChesterComponent,
-    ContactMiddletownComponent
+    ContactMiddletownComponent,
+    ListOfFacilityComponent
   ],
   imports: [
     NgtUniversalModule,

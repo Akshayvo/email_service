@@ -27,17 +27,20 @@
 }
 
 
-.active-tab {
+.tab-active {
   background-color: $primary !important;
-  a {
-    color: white;
-  };
+  color: white !important;
 }
+
+// .active-tab {
+//   background-color: $primary !important;
+//   color: white !important;
+// }
 
 @media only screen and (min-width: 770px) {
   .grid {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(90px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
 
     .grid-item {
       position: relative;

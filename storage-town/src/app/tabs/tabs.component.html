@@ -1,9 +1,10 @@
-
 <div class="container px-0">
   <div class="grid text-center mx-0 horizontal-scroll-wrapper tab">
-    <span *ngFor="let tab of tabData" class="grid-item" [ngClass]="{'active-tab': selectedTab == tab?.name}" >
+    <span *ngFor="let tab of tabData" class="grid-item"  >
       <span>
-          <a [routerLink]="tab?.path" [queryParams]="{ currentTab: tab?.name }" [id]="tab?.id" class="px-3 py-2 btn">{{tab.name}}</a>
+          <a [routerLink]="tab?.path"  [id]="tab?.id" class="px-3 py-2 btn"
+          [routerLinkActive]="'tab-active'" [routerLinkActiveOptions]="{exact:true}" 
+          [ngClass]="{'active-tab': selectedTab == tab?.name}">{{tab.name}}</a>
       </span>
     </span>
   </div>

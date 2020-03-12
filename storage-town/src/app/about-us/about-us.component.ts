@@ -23,7 +23,7 @@ export class AboutUsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/florida-and-warwick')) {
+    if (this.router.url.includes('/location/andrews')) {
       this.fetchDetailsLocation1();
   } else if (this.router.url.includes('/location/chester')) {
     this.fetchDetailsLocation2();
