@@ -39,9 +39,9 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use the contact information or the contact form on this page to speak to one of our friendly self storage managers!`
+      content: `Do you have a question about your account, or our self storage, boat and recreational vehicle storage? Use our contact form, or call us today!`
     });
-    this.titleService.setTitle('Contact Us  | Mathis Mini Storage');
+    this.titleService.setTitle('Contact Us  | Advantage Climate Controlled Self Storage');
     this.metaService.createCanonicalURL();
   }
 
@@ -84,7 +84,7 @@ export class ContactComponent implements OnInit {
       this.contactForm.value.subject = 'Website Form Submission';
     }
 
-     this.receiveremail = this.contactDetails[2].data;
+     this.receiveremail = this.contactDetails[1].data;
 
      this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
      message: ${this.contactForm.value.message}`;

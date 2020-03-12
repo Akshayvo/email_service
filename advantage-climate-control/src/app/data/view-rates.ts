@@ -1,12 +1,17 @@
 export const viewRates = [
     {
-      p: `Mathis Mini Storage is conveniently-located, affordably priced, and designed to make sure you feel safe when
-          loading your unit, parking your vehicle, or accessing your belongings 24/7. We are Mathis, Texas' one-stop-storage stop! `,
+      p: `Load or unload your unit in our well-lit, and electronic keypad-secured facility knowing that
+          our state-of-the-art security cameras have you covered from the moment you enter until the moment you leave.  `,
     },
     {
-      p: `Start de-cluttering your life today with an affordable, well-maintained unit at Mathis Mini Storage! Check out our
-          rates, and use our handy Unit Sizer to help assess the sized unit you need. If you've still got questions, give our
-          office a call (361) 547-1218 and one of our friendly management staff will help you select the perfect unit for you!`
+      p: `We know moving can be an exhausting process. Take a break while loading or unloading your unit in
+          our ultra-comfortable customer lounge before getting back to work! Our facility is here to take the
+          stress out of your move, so take full advantage of every amenity while you're here!`
+    },
+    {
+      p: `Even if you're just moving a few rooms worth of furniture, clothing, and equipment from the garage,
+          why not save time and gas by renting a U-Haul truck? You'll find that the convenience of a single
+          trip is well worth the few extra dollars!`
     },
 ];
 
@@ -20,9 +25,9 @@ export const th = [
   {
     data: `Reserve a Unit`
   },
-  {
-    data: `Move In`
-  },
+  // {
+  //   data: `Move In`
+  // },
   // {
   //   data: `Climate Control`
   // },

@@ -21,9 +21,9 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our helpful self storage tips list to make your stay at Mathis Mini Storage an easy and enjoyable one!`
+      content: `Use our helpful self storage tips list to make your stay at Advantage Climate Controlled Self Storage an easy and enjoyable one!`
     });
-    this.titleService.setTitle('Storage Tips  | Mathis Mini Storage');
+    this.titleService.setTitle('Storage Tips  | Advantage Climate Controlled Self Storage');
     this.metaService.createCanonicalURL();
   }
 

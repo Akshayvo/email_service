@@ -11,7 +11,7 @@ import { UaParserService } from '../app/services/ua-parser.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Mathis Mini Storage';
+  title = 'Advantage Climate Controlled Self Storage';
 
 
 

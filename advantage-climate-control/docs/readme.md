@@ -5,7 +5,7 @@ Welcome to the project documentation!
 ## Changing the project name
 Replace ng-starter-pack with your project name(Hyphen Case)
 
-Replace mathis-mini with your project name(camelCase)
+Replace advantage-climate with your project name(camelCase)
 
 Find and Replace across project
 

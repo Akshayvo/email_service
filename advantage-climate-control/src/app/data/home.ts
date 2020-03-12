@@ -31,22 +31,32 @@ export const featuresList = [
 
 export const aboutUs = [
     {
-        p: `We understand the stress that typically accompanies a storage experience, that's why we've designed our facility and services from the ground up to make the entire storage process a hassle-free one.`,
+        p: `We understand the stress that typically accompanies a storage experience, that's why we've designed
+            our facility and services from the ground up to make the entire storage process a hassle-free one.`,
     },
     {
-        p: `Begin your stay with an easy online reservation, or a quick call to one of our friendly managers! Grab some packing supplies in our retail store, and rent a U-Haul truck for a day! Pull up to our loading dock for easy access to your climate controlled unit! You can even pay your rent online, 24/7 with our handy. It doesn't matter if you're a residential storage user in the middle of a remodel, or if you're downsizing and need space for seasonal items that isn't your garage; we even service growing local businesses who need room for document, or equipment storage!`,
+        p: `Begin your stay with an easy online reservation, or a quick call to one of our friendly managers!
+            Grab some packing supplies in our retail store, and rent a U-Haul truck for a day! Pull up to our
+            loading dock for easy access to your climate controlled unit! You can even pay your rent online,
+            24/7 with our handy. It doesn't matter if you're a residential storage user in the middle of a remodel,
+            or if you're downsizing and need space for seasonal items that isn't your garage; we even service growing
+            local businesses who need room for document, or equipment storage!`,
     },
     {
-        p: `Rest easy knowing that your belongings are stored in an entirely enclosed environment, apart from the elements. Access to the well-lit interior is granted by unique keypad code, and our entire facility is covered by security cameras to ensure a constant sense of safety. `,
+        p: `Rest easy knowing that your belongings are stored in an entirely enclosed environment, apart from the
+            elements. Access to the well-lit interior is granted by unique keypad code, and our entire facility is
+            covered by security cameras to ensure a constant sense of safety. `,
     },
     {
-        p: `Security is a critical aspect of every self storage facility. You can rest easy knowing your belongings, or vehicles,
-            are in a fully-fenced facility with ample lighting and are covered by security cameras. The Mathis Mini Storage staff
-            perform regular walkarounds to monitor the units and recreational vehicles or trailers parked in our facility. `
+        p: `We can't wait to help make your self storage experience a convenient one! Call our office, or fill
+            out our reservation form today!`
     }
 ];
 
-export const gettingStarted = `Are you ready to reclaim some of that elbow room around the home, or free up space at the job-site or in the office? Click below to start the reservation process today!`;
+export const gettingStarted = `Whether you're a home-owner or renter with a garage busting at the seams, or a business
+                               owner that needs some extra elbow room but doesn't want to pay for commercial real estate,
+                               we've got a climate-controlled unit for you! Click below to make a reservation today,
+                               and reclaim that space!`;
 
 export const feature = [
     {

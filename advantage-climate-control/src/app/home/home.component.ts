@@ -46,9 +46,9 @@ export class HomeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Mathis Mini Storage offers convenient 24/7 access to your belongings, online payments and a variety of unit sizes for all of your self storage needs.`
+      content: `Advantage Climate Controlled Self Storage serves the Huntsville, AL area with a variety of well-maintained and affordable self storage units.`
     });
-    this.titleService.setTitle('Self Storage Units in Mathis | Mathis Mini Storage');
+    this.titleService.setTitle('Storage Units in Huntsville, AL | Advantage Climate Controlled Self Storage');
     this.metaService.createCanonicalURL();
 
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();

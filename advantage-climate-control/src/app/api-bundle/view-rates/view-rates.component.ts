@@ -36,9 +36,9 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Check out our affordable self storage unit rates and start the reservation process right here! Have a question? Call (361) 547-1218!`
+      content: `Take a moment to view our affordable self storage unit rates, then make your reservation by filling out our form or calling our office today!`
     });
-    this.titleService.setTitle('View Rates  | Mathis Mini Storage');
+    this.titleService.setTitle('View Rates  | Advantage Climate Controlled Self Storage');
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();

@@ -25,10 +25,10 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent online 24 hours a day, 7 days a week with our handy tenant portal!
-                Follow the instructions and manage your account on your schedule!`
+      content: `Pay your rent online 24/7 with our free tenant portal! Just follow the instructions
+                on the page, or call our office to learn more!`
     });
-    this.titleService.setTitle('Pay Rent  | Mathis Mini Storage');
+    this.titleService.setTitle('Pay Rent | Advantage Climate Controlled Self Storage');
   }
 
   ngOnInit() {

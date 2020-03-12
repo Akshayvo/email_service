@@ -9,6 +9,6 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to Mathis Mini Storage!');
+    expect(page.getParagraphText()).toEqual('Welcome to Advantage Climate Controlled Self Storage!');
   });
 });
