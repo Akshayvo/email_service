@@ -57,7 +57,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-navbg py-0 bg-dark">
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')">
-      <img src="{{imageBaseUrl}}/advantage-climate-controlled.{{imagetype}}" width="160" height="70" alt="logo for advantage climate controlled self storage with a polar bear mascot lounging on its back">
+      <img src="{{imageBaseUrl}}/advantage-climate-controlled.{{imagetype}}" width="auto" height="100"  alt="logo for advantage climate controlled self storage with a polar bear mascot lounging on its back">
       <!-- <img src="../../assets/advantage-climate-controlled.png" width="160" height="70"  alt="logo for advantage climate controlled self storage with a polar bear mascot lounging on its back"> -->
       <!-- <b height="70" width="auto"></b> -->
     </a>
@@ -70,9 +70,9 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
       <ul class="navbar-nav ml-auto navbar-nav-scroll">
         <li class="nav-item px-2" *ngFor="let nav of navLinks">
-          <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          <a class="nav-link py-5" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
           [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)" *ngIf="nav?.path != '/pay-rent'">{{nav.label}}</a>
-          <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          <a class="nav-link py-5" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
           [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)" *ngIf="nav?.path === '/pay-rent'">{{nav.label}}</a>
         </li>
       </ul>

@@ -135,6 +135,13 @@ h1 {
   }
   .jumbotorn-skew-text {
   font-size: 0.9rem;
+  top: 36%;
+  h2 {
+    line-height: 1;
+  }
+  p {
+    line-height: 1.1;
+  }
   }
   .jumbotron-top {
     height: 100vh;
@@ -237,7 +244,13 @@ h1 {
     }
   }
   .jumbotorn-skew-text {
-  top: 21%;
+  top: 26%;
+  h2 {
+    line-height: 1;
+  }
+  // p {
+  //   line-height: 1.1;
+  // }
   }
 }
 
@@ -258,11 +271,12 @@ h1 {
     height: 100vh;
   }
   .jumbotorn-skew-text {
+    top: 33.5%;
     h2 {
       line-height: 1;
     }
     p {
-      line-height: 1.3;
+      line-height: 1;
 }
     }
   
