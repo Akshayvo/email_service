@@ -112,3 +112,12 @@ table {
       display: none;
     }
  }
+ @media only screen and (max-width:450px) {
+  .btn-primary {
+    min-width: unset;
+  }
+  .btn-outline-primary {
+    min-width: unset;
+  }
+}
+ 
