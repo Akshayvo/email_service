@@ -1,7 +1,9 @@
+
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contact } from '../data/contact';
+import { instruction, policy, payRent, policyHeading } from '../data/pay-rent';
 
 @Component({
   selector: 'app-pay-rent',
@@ -10,8 +12,11 @@ import { contact } from '../data/contact';
 })
 export class PayRentComponent implements OnInit {
 
-  currentActive: any = 'PAY RENT';
   contact: any;
+  instruction: string;
+  payRent: any;
+  policy: any;
+  policyHeading: string;
 
   constructor(
     private titleService: Title,
@@ -29,10 +34,18 @@ export class PayRentComponent implements OnInit {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.fetchContact();
+    this.fetchPayRentData();
   }
 
   public fetchContact() {
     this.contact = contact;
+  }
+
+  public fetchPayRentData() {
+    this.instruction = instruction;
+    this.payRent = payRent;
+    this.policy = policy;
+    this.policyHeading = policyHeading;
   }
 
 }

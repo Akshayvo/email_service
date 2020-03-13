@@ -42,6 +42,16 @@
   }
 }
 
+.policyHeading {
+  ul {
+    padding-left: 0;
+
+    ol {
+      padding-left: 0;
+    }
+  }
+}
+
 // Sticky Buttons
 .contact-button {
   position: fixed;

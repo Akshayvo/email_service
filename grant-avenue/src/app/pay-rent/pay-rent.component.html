@@ -5,25 +5,49 @@
       </div>
       
       <div class="rent-sub-holder">
-        <div class="row padding bg-light">
-          <div class="col-lg-8 col-md-6 coming scroll-wrapper padding-for-small-device">
-            <iframe id="advanced_iframe" name="advanced_iframe" src="https://grantave.sim.syrasoft.com/paynow" width="100%"
-             scrolling="yes" frameborder="0" border="0" allowtransparency="true"></iframe>  
+        <div class="padding bg-light">
+          <div class="row">
+            <div class="col-md-12">
+              <p>{{instruction}}</p>
+              <div class="payRent">
+                <ul>
+                  <li *ngFor="let payRent  of payRent">
+                    {{payRent.p}}
+                  </li>
+                </ul>
+                <div class="policyHeading">
+                  <h6 class="pb-2
+                  "><strong>{{policyHeading}}</strong></h6>
+                  <ul >
+                    <ol *ngFor="let policy of policy" class="pb-2">
+                      <strong>{{policy.heading}}</strong>
+                      <p class="text-justify">{{policy.data}}</p>
+                    </ol>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-  
-          <div class="col-lg-4 col-md-6 rent-example padding-for-small-device">
-            <h2> How to Login </h2>
-            <p class="pt-3"> <b>Username:</b> Email Address</p>
-            <p> <b>Password:</b> Your Unit Number + Keypad Code</p><br>
-            <!-- <p><b>Example:</b></p>
-            <p>John Smith's code is 1234</p><br>
-            <p>John's Username: jsmith<br>
-              John's Password:1234</p> -->
-        
-            <p class="pt-4"><b>Have questions about your account?</b>
-              <span *ngFor="let contact of contact"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
-            </span>
-            </p>
+          <div class="row">
+            <div class="col-lg-8 col-md-6 coming scroll-wrapper padding-for-small-device">
+              <iframe id="advanced_iframe" name="advanced_iframe" src="https://grantave.sim.syrasoft.com/paynow" width="100%"
+              scrolling="yes" frameborder="0" border="0" allowtransparency="true"></iframe>  
+            </div>
+    
+            <div class="col-lg-4 col-md-6 rent-example padding-for-small-device">
+              <h2> How to Login </h2>
+              <p class="pt-3"> <b>Username:</b> Email Address</p>
+              <p> <b>Password:</b> Your Unit Number + Keypad Code</p><br>
+              <!-- <p><b>Example:</b></p>
+              <p>John Smith's code is 1234</p><br>
+              <p>John's Username: jsmith<br>
+                John's Password:1234</p> -->
+          
+              <p class="pt-4"><b>Have questions about your account?</b>
+                <span *ngFor="let contact of contact"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
+              </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
