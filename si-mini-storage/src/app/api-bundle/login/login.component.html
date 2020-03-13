@@ -1,0 +1,94 @@
+<div>
+    <div>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <div [hidden]="" *ngIf="submitted && credentialsInvalid" class="button-display alert alert-success alert-danger fade show">
+                    Either the supplied username does not exist, or the supplied credentials are incorrect. Please try
+                    again.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div [class.loader]="showLoader" *ngIf="!showPayRent && allowedToshow">
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 p-4">
+                    <div class="row">
+                        <div class="form-group col-lg-6 col-12">
+                            <label>UserName</label> &nbsp;
+                            <input type="text" formControlName="strUserName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }" />
+                            <div *ngIf="submitted && f.strUserName.errors" class="invalid-feedback">
+                                <small class="form-text text-muted" *ngIf="f.strUserName.errors.required">Please fill
+                                    out this field</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-6 col-12">
+                            <label>Password</label> &nbsp;
+                            <input type="password" formControlName="strPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }" />
+                            <div *ngIf="submitted && f.strPassword.errors" class="invalid-feedback">
+                                <small class="form-text text-muted" *ngIf="f.strPassword.errors.required">Please fill
+                                    out this field</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" (click)="handleShowLoader()">Login</button>
+                    </div>
+                    <div class="forgot-link">
+                        <a (click)="navigate('/pay-rent/forgotPassword')">Forgot Password</a>
+                    </div>
+                    <div class="forgot-link">
+                        <a (click)="openBox()">Change Your Password</a>
+                        <!-- <a  data-toggle="modal" data-target="#myModal">Change Your Password</a> -->
+
+                        <!-- Modal -->
+                        <!-- <div id="myModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog"> -->
+                        <!-- Modal content-->
+                        <app-login-modal *ngIf="!!open" (someEvent)="openBox()"></app-login-modal>
+                        <!-- </div>
+                        </div> -->
+                    </div>
+
+                </div>
+                <div class="col-lg-4 p-4  vertical-line">
+                    <h3>How to Login</h3>
+                    <p><b>Username:</b>&nbsp;First Initial + Tenant's Last Name<br>
+                        <b>Password:</b>&nbsp;Tenant's Access Code + Last 4 of Phone Number</p>
+                    <p><b>Example:</b></p>
+                    <p>John Smith's code is 1234 and his Phone Number is 555-555-5555</p>
+                    <p>John's Username: jsmith<br>
+                        John's Password: 12345555</p>
+                    <p><strong>Have questions about your account?</strong><br>
+                        <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
+                            <a *ngIf="contact?.id == 2 || contact?.id == 1" [href]="contact?.redirect">
+                                {{contact.data}}
+                            </a>
+                            <br>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div class="forgot-link pl-4">
+        <a (click)="navigate('/pay-rent/forgotPassword')">Forgot Password</a>
+    </div>
+    <div class="forgot-link pl-4"> -->
+        <!-- <a (click)="openBox()">Change Your Password</a> -->
+        <!-- <a  data-toggle="modal" data-target="#myModal">Change Your Password</a> -->
+
+        <!-- Modal -->
+        <!-- <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog"> -->
+        <!-- Modal content-->
+        <!-- <app-login-modal *ngIf="!!open" (someEvent)="openBox()"></app-login-modal> -->
+        <!-- </div>
+        </div> -->
+    <!-- </div> -->
+</div>
