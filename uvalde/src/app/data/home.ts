@@ -1,7 +1,7 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: '6 Convenient Locations',
+        label: '7 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -16,7 +16,7 @@ export const featuresHead = [
         alt: 'Icon of thermometer indicating climate controlled units'
     },
     {
-        label: 'Hand with Coin and $ over it',
+        label: 'Affordable Self Storage Rates',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
         alt: 'Icon of a hand holding money'
     },
@@ -24,7 +24,7 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Affordable Storage in Uvalde has 6 well-lit, well-maintained locations across town with a wide variety of self storage
+        p: `Affordable Storage in Uvalde has 7 well-lit, well-maintained locations across town with a wide variety of self storage
         unit sizes in both climate-controlled and regular unconditioned units with keypad secured fenced access. Our convenient
         locations and the number of options make us the ideal solution for any storage purpose.`,
     },
@@ -46,7 +46,7 @@ export const serviceOffered = [
 export const gettingStarted = [
     {
         heading: `Getting Started`,
-        para: `Take a moment to review the rates at each of our 6 storage locations, then fill out our reservation
+        para: `Take a moment to review the rates at each of our 7 storage locations, then fill out our reservation
         form, or give us a call and let our friendly management team help you figure out exactly what sized unit
         will best suit your needs!`
     }
@@ -62,7 +62,7 @@ export const jumbotron = [
 
 export const featuresList = [
     {
-        td1: '6 Convenient Locations',
+        td1: '7 Convenient Locations',
         td2: 'Affordable Rates'
     },
     {
