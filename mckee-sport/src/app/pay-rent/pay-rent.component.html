@@ -24,7 +24,7 @@
             <p class="pb-3"> <b>John's Password:</b> 1234 </p>
         
             <p><b>Have questions about your account?</b>
-              <span *ngFor="let contact of contact">
+              <span *ngFor="let contact of contact" [class.display-none]="contact?.id === 1">
                 <span *ngIf="contact?.id == 2 || contact?.id == 3"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
             </span>
             </p>

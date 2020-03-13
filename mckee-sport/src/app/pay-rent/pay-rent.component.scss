@@ -1,5 +1,10 @@
 @import "../../styles.scss";
 
+.display-none {
+  display: none;
+  visibility: hidden;
+}
+
 .rent-holder {
   padding-top: 90px;
   min-height: 86vh;
