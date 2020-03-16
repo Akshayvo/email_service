@@ -10,6 +10,7 @@ export const viewRates = [
       can reserve a unit 24/7, pay your rent online 24/7, and access your unit or vehicle 24/7! Our
       many conveniences are here to make your storage experience that much easier! Call today, or
       reserve your unit by filling out a simple form, and our team will be in touch!`
+      
     },
 ];
 
@@ -17,12 +18,12 @@ export const th = [
   {
     data: `Size`
   },
-  // {
-  //   data: `Rate`
-  // },
   {
-    data: `Annual Rate`,
+    data: `Rate`
   },
+  // {
+  //   data: `Annual Rate`,
+  // },
   {
     data: 'Deposit'
   },
