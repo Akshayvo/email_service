@@ -20,18 +20,18 @@ export const aboutUsHeading = `Storage Units & Boat or RV Parking in Elephant Bu
 export const aboutUs = [
     {
         p: `181 Storage has been serving Elephant Butte, Truth or Consequences, and the surrounding communities with clean,
-        well-lit, and affordable storage units, in addition to vehicle parking since 2009. Our facility is conveniently
-        located on NM-181 between CanAm Highway Exit 79 and 83 with easy access to the highway! `,
+        well-lit, and affordable storage units, in addition to vehicle parking since 2009. Our facility is conveniently located
+        on NM-181 between CanAm Highway Exit 79 and 83 with easy access to the highway! `,
     },
     {
-        p: `Our storage and parking terms are easy, and our 24 hour-a-day access to your storage unit or vehicle makes the
-        decision to store with 181 Storage a no-brainer. You can even reserve your unit online, or pay your bill at your
-        convenience! 181 Storage is about more than just convenience; our units are clean and well-maintained, and the
-        facility is well-lit for easy access anytime. Whether you're remodeling and need an extra room's worth of space,
-        or looking for long term business storage, we've got you covered!`,
+        p: `Our storage and parking terms are easy, and our 24 hour-a-day access to your storage unit or vehicle makes the decision
+        to store with 181 Storage a no-brainer. You can even reserve your unit online, or pay your bill at your convenience! 181
+        Storage is about more than just convenience; our units are clean and well-maintained, and the facility is well-lit for easy access anytime.`,
     },
     {
-        p: `Take a moment to review our rates and the available units or parking spaces at 181 Storage, then reserve online, or call our office to learn more!`,
+        p: `So, whether you’re remodeling and need an extra room’s worth of space, or looking for long term business storage, we’ve got
+        you covered! Take a moment to review our rates and the available units or parking spaces at 181 Storage, then reserve online, or
+        call our office to learn more!`,
     },
 ];
 

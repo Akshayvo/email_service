@@ -1,14 +1,14 @@
 export const viewRates = [
     {
-      p: `181 is Elephant Butte's self storage and vehicle parking go-to solution! Our easy terms and
-      economical rental rates make your short, or long-term storage project a practical one. Our online reservations,
-      24-hour access, and tenant portal will mean you have access to your unit, account, and our services whenever you need it! `,
+      p: `181 is Elephant Butte’s self storage and vehicle parking go-to solution! Our easy terms and economical rental
+      rates make your short, or long-term storage project a practical one. Our online reservations, 24-hour access, and
+      tenant portal will mean you have access to your unit, account, and our services whenever you need it! `,
     },
     {
-      p: `Take a moment to review our self storage unit and parking rates, then reserve your unit in seconds with our handy form.
-      Not sure what size unit you need to keep your furniture, appliances, clothes, or memorabilia? Take a look at our Unit Sizer
-      page for a visual representation of what will fit into each size of storage unit. If you have any questions, give us a call!
-      Our friendly staff is happy to help!`
+      p: `Take a moment to review our self storage unit and parking rates, then reserve your unit in seconds with
+      our handy form. Not sure what size unit you need to keep your furniture, appliances, clothes, or memorabilia?
+      Take a look at our Unit Sizer page for a visual representation of what will fit into each size self storage unit.
+      If you have any questions, give us a call! Our friendly staff is happy to help!`
     }
 ];
 
