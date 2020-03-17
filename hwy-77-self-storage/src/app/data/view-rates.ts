@@ -19,14 +19,17 @@ export const th = [
       data: `Rate`
     },
     {
+      data: `Deposit`
+    },
+    {
       data: `Reserve a Unit`
     },
-    // {
-    //   data: `Move In`
-    // },
-    // {
-    //   data: `Climate Control`
-    // },
+    {
+      data: `Move In`
+    },
+    {
+      data: `Climate Control`
+    },
   ];
 
   export const option =  [

@@ -31,10 +31,10 @@ import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component
 import { ViewRatesIframePageComponent } from './iframe-bundle/view-rates-iframe-page/view-rates-iframe-page.component';
 import { ViewRatesPageComponent } from './api-bundle/view-rates-page/view-rates-page.component';
 import { ReserveUnitFormComponent } from './api-bundle/reserve-unit-form/reserve-unit-form.component';
+// tslint:disable-next-line:max-line-length
 import { ReserveUnitIframePageComponent } from './iframe-bundle/reserve-unit-iframe-page/reserve-unit-iframe-page.component';
 import { ConfirmationDataComponent } from './api-bundle/confirmation-data/confirmation-data.component';
 import { PayRentFormComponent } from './api-bundle/pay-rent-form/pay-rent-form.component';
-import { RentNowComponent } from './api-bundle/rent-now/rent-now.component';
 import { PaymentComponent } from './api-bundle/payment/payment.component';
 import { PaymentIframePageComponent } from './iframe-bundle/payment-iframe-page/payment-iframe-page.component';
 import { LoginComponent } from './api-bundle/login/login.component';
@@ -51,8 +51,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
-import { RentNowIframePageComponent } from './iframe-bundle/rent-now-iframe-page/rent-now-iframe-page.component';
-import { UnitSizerIframePageComponent } from './iframe-bundle/unit-sizer-iframe-page/unit-sizer-iframe-page.component';
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 @NgModule({
   declarations: [
@@ -79,7 +77,6 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
     ReserveUnitIframePageComponent,
     ConfirmationDataComponent,
     PayRentFormComponent,
-    RentNowComponent,
     PaymentComponent,
     PaymentIframePageComponent,
     LoginComponent,
@@ -88,8 +85,6 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
     ChangePasswordComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
-    RentNowIframePageComponent,
-    UnitSizerIframePageComponent,
   ],
   imports: [
     CommonModule,

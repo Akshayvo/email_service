@@ -19,10 +19,10 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent online with our easy-to-use tenant portal. Follow the instructions
-      here or call our office to learn how to access your account.`
+      content: `Pay your rent online in minutes with our easy-to-use tenant portal.
+      Simply follow the instructions, or call our office, and one of our managers will be happy to help!`
     });
-    this.titleService.setTitle('');
+    this.titleService.setTitle('Pay Rent | HWY 77 Self Storage');
   }
 
   ngOnInit() {

@@ -7,16 +7,15 @@ import { ViewRatesPageComponent } from '../api-bundle/view-rates-page/view-rates
 import { ReserveUnitFormComponent } from '../api-bundle/reserve-unit-form/reserve-unit-form.component';
 import { ConfirmationDataComponent } from '../api-bundle/confirmation-data/confirmation-data.component';
 import { PayRentFormComponent } from '../api-bundle/pay-rent-form/pay-rent-form.component';
-import { RentNowComponent } from '../api-bundle/rent-now/rent-now.component';
 import { PaymentComponent } from '../api-bundle/payment/payment.component';
 import { LoginComponent } from '../api-bundle/login/login.component';
 import { ForgotPasswordComponent } from '../api-bundle/forgot-password/forgot-password.component';
 import { AuthGuard } from '../auth-guard/auth.gurad';
 import { ErrorHandlerComponent } from '../error-handler/error-handler.component';
 import { ErrorComponent } from '../error/error.component';
-import { RentNowIframePageComponent } from '../iframe-bundle/rent-now-iframe-page/rent-now-iframe-page.component';
 import { PaymentIframePageComponent } from '../iframe-bundle/payment-iframe-page/payment-iframe-page.component';
 import { ViewRatesIframePageComponent } from '../iframe-bundle/view-rates-iframe-page/view-rates-iframe-page.component';
+// tslint:disable-next-line:max-line-length
 import { ReserveUnitIframePageComponent } from '../iframe-bundle/reserve-unit-iframe-page/reserve-unit-iframe-page.component';
 import { ChangePasswordComponent } from '../api-bundle/change-password/change-password.component';
 import { LoginModalComponent } from '../api-bundle/login-modal/login-modal.component';
@@ -24,7 +23,6 @@ import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.compo
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
-import { UnitSizerIframePageComponent } from '../iframe-bundle/unit-sizer-iframe-page/unit-sizer-iframe-page.component';
 
 
  export const apiRoutes = [
@@ -47,17 +45,6 @@ import { UnitSizerIframePageComponent } from '../iframe-bundle/unit-sizer-iframe
         { path: 'payMoveInCharges', component: PayRentFormComponent },
       ]
      },
-    {
-      path: 'rent-now', component: RentNowComponent,
-      children: [
-        { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
-      ]
-    },
     {
       path: 'pay-rent', component: PaymentComponent,
       children: [
@@ -87,7 +74,6 @@ import { UnitSizerIframePageComponent } from '../iframe-bundle/unit-sizer-iframe
 export const iFrameRoutes = [
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
-    { path: 'rent-now', component: RentNowIframePageComponent },
     { path: 'pay-rent', component: PaymentIframePageComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
     { path: 'view-rates', component: ViewRatesIframePageComponent },

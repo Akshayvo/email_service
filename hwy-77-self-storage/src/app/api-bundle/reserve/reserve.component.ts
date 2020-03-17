@@ -15,10 +15,10 @@ export class ReserveComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use this form to reserve your unit today! One of our friendly
-      managers will reach out shortly to assist you!`
+      content: `Simply fill out our easy reservation form and one of our friendly
+      self storage associates will be ready and waiting for your arrival!`
     });
-    this.titleService.setTitle('');
+    this.titleService.setTitle('Reserve Unit | HWY 77 Self Storage');
   }
 
   ngOnInit() {

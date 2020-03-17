@@ -52,6 +52,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   showloaderForPayment = false;
   toggleSignUp = false;
   IsAutoPaymentsEnabled = false;
+  makePaymentForUnit = false;
   TotalReserveAmount: number;
   totalMoveInAmount: number;
   date: Date;
@@ -202,7 +203,15 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.getPayMethods();
+    if (!!localStorage.getItem('strTenantToken')) {
+      this.getPayMethods();
+    } else {
+      if (!localStorage.getItem('strTempTenantToken')) {
+        this.router.navigate(['/pay-rent/login']);
+      } else {
+        this.getPayMethods();
+      }
+    }
     this.fetchMonth();
   }
 
@@ -523,6 +532,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     .subscribe(strConfirmationResponse => {
       this.strConfirmation = strConfirmationResponse.strConfirmation;
       this.showConfirmation = false;
+      this.makePaymentForUnit = false;
       this.submitted = false;
        this.tokenExit = localStorage.getItem('strTenantToken');
 
@@ -563,6 +573,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
       .subscribe(strConfirmationResponse => {
         this.strAccessCode = strConfirmationResponse.strAccessCode;
+        this.makePaymentForUnit = false;
         this.submitted = false;
          this.tokenExit = localStorage.getItem('strTenantToken');
          if (this.tokenExit) {
@@ -593,6 +604,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     onSubmit() {
       this.submitted = true;
+      this.makePaymentForUnit = true;
       if (this.payRentForm.invalid) {
         return;
       } else {

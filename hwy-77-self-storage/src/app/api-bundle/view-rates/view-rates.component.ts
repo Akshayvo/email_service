@@ -36,10 +36,10 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to review our affordable storage unit rates
-      and see if we have the right unit for your needs available!`
+      content: `Review our current rates and availability, then reserve your unit
+        in minutes with our easy online reservation form!`
     });
-    this.titleService.setTitle('');
+    this.titleService.setTitle('View Rates  | HWY 77 Self Storage');
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
