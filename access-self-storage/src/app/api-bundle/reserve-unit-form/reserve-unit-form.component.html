@@ -171,7 +171,7 @@
                     </div>
                     <div *ngIf="UnitTypeRate">
                         <label>Rate:</label>&nbsp;
-                        ${{UnitTypeRate}}
+                        ${{UnitTypeRate | number : '1.2-2'}}
                         <span *ngIf="rateTax > 0">
                             + ${{rateTax}} (Tax)
                         </span>
