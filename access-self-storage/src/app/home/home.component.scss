@@ -1,9 +1,9 @@
 @import "../../styles.scss";
 .jumbotron-background-webp{
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Access_Self_Storage/Webp/access-self-storage-office-homepage.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Access_Self_Storage/Webp/access-self-storage-office-homepage-1.webp");
 }
 .jumbotron-background-jpg{
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Access_Self_Storage/JPG/access-self-storage-office-homepage.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Access_Self_Storage/JPG/access-self-storage-office-homepage-1.jpg");
 }
 
 .jumbotron {
@@ -31,9 +31,12 @@ h1 {
     border: 2px solid white;
   }
 }
+.feature {
+  text-align: center;
+}
 
 .feature-icon-style {
-  padding: 24px;
+  padding: 35px;
   text-align: center;
 
   img {
@@ -78,6 +81,10 @@ h1 {
   height: 20vh;
   display: flex;
   align-items: center;
+}
+.review {
+  display: flex;
+  text-align: center;
 }
 
 .jumbotorn-skew-style {
@@ -323,6 +330,12 @@ h1 {
 
   .jumbotron-bottom {
     height: 150px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .review {
+    text-align: center;
   }
 }
 

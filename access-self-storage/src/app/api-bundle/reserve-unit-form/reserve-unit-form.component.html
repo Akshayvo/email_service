@@ -9,6 +9,7 @@
         <div class="loader" *ngIf="gettingTenantData"></div>
 
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
+            <p class="py-2">Rates do not include tax.</p>
          <div  class="row justify-content">
              <div formGroupName="objTenant" class="col-lg-7 ">
                  <h2 class="pb-3">Tenant Information</h2>

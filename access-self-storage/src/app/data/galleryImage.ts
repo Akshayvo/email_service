@@ -27,11 +27,11 @@ export const galleryHome = [
     thumb: `access-self-storage-units-thumb`,
     alt: `several self storage buildings with paved parking between them`
   },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `access-self-storage-vehicle-and-boat-parking`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `access-self-storage-vehicle-and-boat-parking-thumb`,
-    alt: `parked vehicles under a covered pavilion on a paved surface`
-  },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `access-self-storage-vehicle-and-boat-parking`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `access-self-storage-vehicle-and-boat-parking-thumb`,
+  //   alt: `parked vehicles under a covered pavilion on a paved surface`
+  // },
 ];

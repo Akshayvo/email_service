@@ -21,12 +21,14 @@
       </div>
       </div>
     <div class="jumbotron-bottom">
-      <div class="container">
+      <div class="container ">
+        <div class="row text-center">
         <div class="feature row">
-          <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
+          <div class="col feature-icon-style " *ngFor="let feature of feature">
             <img [src]="feature?.path" [alt]="feature.alt" height="80px" width="auto"/>
               <h6 class="feature-text">{{feature.label}}</h6>
           </div>
+        </div>
         </div>
       </div>
     </div>
@@ -36,6 +38,7 @@
 <div class="bg-light">
   <div class="container py-4">
     <div class="section py-4 m-0">
+      <h3 class="text-center">We Also Offer a 10% Military Discount</h3>
       <div class="row">
         <div class="col-lg-6 py-3 home-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1732.2123583165635!2d-98.08409298397146!3d29.736419095800642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865ca3292dd754f1%3A0x9af80d180b1d88c3!2sAccess%20Self%20Storage%20Inc!5e0!3m2!1sen!2sus!4v1582485550818!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
@@ -72,14 +75,36 @@
         <app-photos></app-photos>
       </div>
       <div class="col-lg-6 py-3">
-        <h1 class="heading pb-4">Storage Units and Boat or Vehicle Parking in New Braunfels, TX</h1>
+        <h1 class="heading pb-4">We can fill your storage needs!</h1>
         <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="getStarted bg-light">
+<div class="review bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4 p-3">
+          <a href="http://search.google.com/local/writereview?placeid=ChIJ8VTXLSmjXIYRw4gdCxgN-Jo" target="_blank" rel="nofollow" >
+            <img src="{{imageBaseUrl}}/review-us-on-google.{{imagetype}}"  alt="review us on google button" width="300" height="157" > 
+        </a>
+      </div>
+      <div class="col-lg-4 p-3">
+          <a href="https://www.facebook.com/accessselfstoragenb" target="_blank" rel="nofollow" >
+            <img src="{{imageBaseUrl}}/find-us-on-facebook-logo.{{imagetype}}"  alt="review us on facebook button" width="300" height="100" > 
+        </a>
+      </div>
+      <div class="col-lg-4 p-3">
+          <a href="https://www.yelp.com/biz/access-self-storage-new-braunfels" target="_blank" rel="nofollow" >
+            <img src="{{imageBaseUrl}}/review-us-on-yelp.{{imagetype}}"  alt="review us on yelp button" width="300" height="157" > 
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="getStarted">
   <div class="container">
     <div class="section py-5 m-0">
       <div class="row">
