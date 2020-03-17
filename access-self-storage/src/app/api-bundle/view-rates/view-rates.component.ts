@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './view-rates.component.html',
   styleUrls: ['./view-rates.component.scss']
 })
-export class ViewRatesComponent implements OnInit, OnDestroy {
+export class ViewRatesComponent implements OnInit {
 
   viewRates: any;
   showTable = false;
@@ -49,35 +49,8 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.fetchViewRates();
-    // this.getData();
   }
   public fetchViewRates() {
     this.viewRates = viewRates;
-  }
-  /**
-   *
-   * @param event
-   * @param event1
-   */
-
-  handleClick(event: Event, event1: Event) {
-    this.openComponent = true;
-    this.DescriptionVR = JSON.parse(JSON.stringify(event));
-    // this.MonthlyRateVR = parseFloat(JSON.stringify(event1)).toFixed(2);
-    this.MonthlyRateVR = parseFloat(JSON.stringify(event1)).toFixed(2);
-  }
-
-  getData() {
-  this.isUnsubscribe$ = this.fetchDataService.getData()
-    .subscribe(unitTypesResponse => {
-      this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
-    });
-  }
-
-  public ngOnDestroy(): void {
-    if (this.isUnsubscribe$ && this.isUnsubscribe$.closed) {
-      this.isUnsubscribe$.unsubscribe();
-    }
   }
 }
