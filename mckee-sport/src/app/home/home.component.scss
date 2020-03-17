@@ -243,6 +243,8 @@ p{
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .jumbotron-top {
     .jumbotron {
+      background-position: 15%;
+
       .jumbotron-skew-style {
         width: 84%;
         float: left;
@@ -377,6 +379,7 @@ p{
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .jumbotron-top {
     .jumbotron {
+      background-position: 15%;
       .jumbotron-skew-style {
         width: 84%;
         float: left;
@@ -517,7 +520,7 @@ p{
 
     .jumbotron {
       height: 100vh;
-      background-position: left;
+      background-position: 15%;
 
 
       .jumbotron-skew-style {
@@ -645,7 +648,7 @@ p{
 
     .jumbotron {
       height: 95vh;
-      background-position: left;
+      background-position: 15%;
 
 
       .jumbotron-skew-style {
