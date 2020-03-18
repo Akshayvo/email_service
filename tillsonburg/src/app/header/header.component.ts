@@ -13,6 +13,9 @@ import { UaParserService } from '../services/ua-parser.service';
 export class HeaderComponent implements OnInit {
   contactDetails: any;
   navLinks: any;
+  jpgImage: any;
+  image: any;
+  pngImage: any;
   socialLinks: any;
   navbarCollapsed = true;
   imagetype: any;
@@ -30,6 +33,9 @@ export class HeaderComponent implements OnInit {
     this.fetchNavigationLinks();
     this.fetchSocialLinks();
     this.fetchContactDetails();
+    console.log(`${this.imageBaseUrl}/logo.png`);
+    this.image = `${this.imageBaseUrl}/logo.${this.imagetype}`;
+    this.pngImage = `${this.imageBaseUrl}/logo.png`;
   }
 
   public fetchContactDetails() {
