@@ -50,6 +50,9 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { PhotosComponent } from './photos/photos.component';
+// import { PayRentComponent } from './pay-rent/pay-rent.component';
+// import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
+// import { ViewRatesComponent } from './view-rates/view-rates.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -81,7 +84,10 @@ import { PhotosComponent } from './photos/photos.component';
     PhotosComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
-    ContactButtonComponent
+    ContactButtonComponent,
+    // PayRentComponent,
+    // ReserveUnitComponent,
+    // ViewRatesComponent
   ],
   imports: [
     CommonModule,

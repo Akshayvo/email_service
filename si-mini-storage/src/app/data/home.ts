@@ -2,7 +2,7 @@
 export const featuresList = [
     {
         td1: 'Well-Lit',
-        td2: 'Fully-Fenced',
+        td2: 'Full-Time Manager'
     },
     {
         td1: 'Convenient Location',
@@ -14,7 +14,7 @@ export const featuresList = [
     },
     {
         td1: 'Online Payments',
-        td2: 'Full-Time Manager'
+        
     }
 ];
 
@@ -48,20 +48,20 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `SI Mini Storage has been serving Barberton, Akron, Norton, and the surrounding communities with
-        high-quality, affordable self storage units since 1992. We are conveniently located about a mile south
-        of State Route 76 between the Barber Rd and South Cleveland Massillon Rd.`,
+        p: `SI Mini Storage has been serving Barberton, Akron, Norton, and the surrounding communities with high-quality,
+            affordable self storage units since 1992. We are conveniently located about a mile south of State Route 76
+            between the Barber Rd and South Cleveland Massillon Rd.`,
     },
     {
-        p: `We offer a wide variety of unit types, from our 5 foot by 5 foot units, that are perfect for
-        stowing furniture while renovating a room, to our 11 foot by 30 foot units that can accommodate a
-        large multi-bedroom home. It doesn't matter if you're a residential user looking for some seasonal storage
-        to make extra room at home, or a business, searching for long term storage of equipment or supplies,
-        we've got you covered!`,
+        p: `We offer a wide variety of unit types, from our 5 foot by 5 foot units, that are perfect for a small room,
+            or for seasonal items such as holiday décor, sporting equipment or clothing, to our 11 foot by 30 foot units
+            that can accommodate a large multi-bedroom home. It doesn't matter if you're a residential user looking for
+            some seasonal storage to make extra room at home, or a business, searching for long term storage of
+            equipment or supplies, we've got you covered!`,
     },
     {
-        p: `Our facility is well-lit, wide drive aisles, a full-time manager, and security cameras, to
-        ensure our customers always feel safe. You'll even have access to your units 24 hours a day, 7 days a week.`,
+        p: `Our facility is well-lit, wide drive aisles, a full-time manager, and security cameras, to ensure our
+            customers always feel safe. You'll even have access to your units 24 hours a day, 7 days a week.`,
     },
     {
         p: `Call today to learn how our friendly managers can help you find the perfect self storage unit!`,

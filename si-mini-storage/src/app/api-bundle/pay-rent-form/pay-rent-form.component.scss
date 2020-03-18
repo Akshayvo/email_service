@@ -82,8 +82,8 @@ table {
 }
 
 .loader {
-  border: 2px solid $primary;
-  border-top: 2px solid $secondary;
+  border: 2px solid $white;
+  border-top: 2px solid $primary;
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -100,8 +100,8 @@ table {
 }
 
 .loaderForPayment {
-  border: 3px solid $primary;
-  border-top: 3px solid $secondary;
+  border: 3px solid $white;
+  border-top: 3px solid $primary;
   border-radius: 50%;
   width: 80px;
   height: 80px;

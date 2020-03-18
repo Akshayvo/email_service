@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { navLinks } from '../data/nav';
+import { UaParserService } from '../services/ua-parser.service';
 
 
 @Component({
@@ -12,10 +13,16 @@ export class HeaderComponent implements OnInit {
 
   navLinks: any;
   navbarCollapsed = true;
+  imagetype: any;
+  imageBaseUrl: any;
 
   constructor(
     private router: Router,
-  ) { }
+    private uaParserService: UaParserService,
+  ) { 
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
+  }
 
   ngOnInit() {
     this.fetchNavigationLinks();

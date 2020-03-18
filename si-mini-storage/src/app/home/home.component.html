@@ -3,7 +3,7 @@
   <!--Jumbotron Container Starts Here-->
   <div class="jumbotron-container">
     <div class="jumbotron-top">
-      <div class="jumbotron px-0 m-0">
+      <div class="jumbotron px-0 m-0 "[ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
         <div class="bg-translucent jumbotron-skew-style">
         </div>
           <div class="container">
@@ -78,7 +78,7 @@
   <div class="container py-5">
     <div class="row">
       <div class="col-lg-6 py-3">
-          <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SI_Mini_Storage/si-mini-storage-unit.jpg" alt="Photograph of a self storage unit building" >
+          <img src="{{imageBaseUrl}}/si-mini-storage-unit.{{imagetype}}" alt="Photograph of a self storage unit building" >
       </div>
       <div class="col-lg-6 py-3">
         <h1 class="heading pb-4">Affordable Storage Units in Barberton Ohio</h1>

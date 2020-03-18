@@ -1,7 +1,10 @@
 import { WINDOW } from '@ng-toolkit/universal';
-import { Component, OnInit , Inject} from '@angular/core';
+import { Component, OnInit, Renderer2, Inject} from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
+import { UaParserService } from '../services/ua-parser.service';
+import { DOCUMENT } from '@angular/common';
+import { MetaService } from '../services/link.service';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, blurb, testimonials} from '../data/home';
@@ -24,13 +27,20 @@ export class HomeComponent implements OnInit {
   testimonials: any;
   feature: any;
   currentActive: any = 'HOME';
+  imageBaseUrl: any;
+  imagetype: any;
+  jumbotron: any;
 
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private _renderer2: Renderer2,
+    private metaService: MetaService,
+    private uaParserService: UaParserService,
+    @Inject(DOCUMENT) private _document: any,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -38,6 +48,9 @@ export class HomeComponent implements OnInit {
       well-maintained, and affordable self storage units. Call today!`
     });
     this.titleService.setTitle('Affordable Storage Units in Barberton | SI Mini Storage');
+    this.metaService.createCanonicalURL();
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   public navigate(location: any) {
@@ -51,6 +64,7 @@ export class HomeComponent implements OnInit {
     this.fetchStaticContent();
     this.fetchFeature();
     this.fetchTestimonials();
+    // this.fetchJumbotron();
     window.scrollTo(0, 0);
   }
 
@@ -77,6 +91,9 @@ export class HomeComponent implements OnInit {
   }
   public fetchFeature () {
     this.feature = feature;
+  }
+  public getImageUrl(imageName: string) {
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 
 }

@@ -1,5 +1,13 @@
 @import "../../styles.scss";
 
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SI_Mini_Storage/webp/self-storage-units-si.webp");
+}
+
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SI_Mini_Storage/jpg/self-storage-units-si.jpg");
+}
+
 .carousel-indicators li {
   background-color: black;
   border-radius: 50%;
@@ -56,7 +64,7 @@
   height: 80vh;
 
   .jumbotron {
-    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SI_Mini_Storage/self-storage-units-si.jpg");
+    // background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/SI_Mini_Storage/self-storage-units-si.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

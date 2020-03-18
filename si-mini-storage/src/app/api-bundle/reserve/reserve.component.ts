@@ -15,10 +15,9 @@ export class ReserveComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Simply fill out our easy reservation form and one of our friendly self storage
-                associates will be ready and waiting for your arrival!`
+      content: `Are you ready to reserve your unit with SI Mini Storage? Fill out this short form and one of our friendly managers will be in touch!`
     });
-    this.titleService.setTitle('Reserve Unit | Mathis Mini Storage');
+    this.titleService.setTitle('Reserve a Unit | SI Mini Storage');
   }
 
   ngOnInit() {
