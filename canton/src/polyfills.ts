@@ -1,5 +1,5 @@
 
-
+import 'core-js/es7/reflect';
 
 /**
  * Web Animations `@angular/platform-browser/animations`

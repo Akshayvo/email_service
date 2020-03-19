@@ -28,7 +28,6 @@ import { DirectionsComponent } from './directions/directions.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { SelectLocationComponent } from './select-location/select-location.component';
-
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
@@ -58,7 +57,6 @@ import { PayRentShalerComponent } from './pay-rent-shaler/pay-rent-shaler.compon
     TabsComponent,
     AccordionComponent,
     SelectLocationComponent,
-    
     ErrorHandlerComponent,
     PayRentComponent,
     PayRentNatronaComponent,
