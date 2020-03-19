@@ -8,6 +8,7 @@ import { tabs } from '../data/location';
 import { headingLocation1, headingLocation2, headingLocation3 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
+import { DataSharingService } from '../services/data-sharing.service';
 
 
 @Component({
@@ -31,6 +32,7 @@ export class LocationComponent implements OnInit {
     private meta: Meta,
     private router: Router,
     private titleService: Title,
+    private dataSharingService: DataSharingService,
     ) {
       if (this.router.url.includes('/location/fohl-street-storage')) {
             this.meta.addTag({
@@ -39,13 +41,16 @@ export class LocationComponent implements OnInit {
               and RV parking spaces! We are Canton's #1 self storage choice!`
             });
             this.titleService.setTitle('Affordable Storage in Canton, Ohio | Self Storage of Canton');
-    } else if (this.router.url.includes('/location/louisville-self-storage')) {
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+          } else if (this.router.url.includes('/location/louisville-self-storage')) {
            this.meta.addTag({
              name: 'description',
              content: `We offer affordable, clean, well-maintained units, and excellent customer service to
              Louisville, Hartville, Canton, and the surrounding communities!`
            });
            this.titleService.setTitle('Affordable Storage Units | Louisville Self Storage');
+           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+
     } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
           this.meta.addTag({
             name: 'description',
@@ -53,6 +58,8 @@ export class LocationComponent implements OnInit {
             Lincoln Street Storage has you covered! `
           });
           this.titleService.setTitle('Affordable Storage Units in Canton | Lincoln Street Storage');
+          this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+
     }
     }
 

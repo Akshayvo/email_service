@@ -28,7 +28,7 @@ export const navLinks = [
     },
     {
         label: 'Pay Rent',
-        path: '/payment',
+        path: '/pay-rent',
         type: 'link'
     },
     {

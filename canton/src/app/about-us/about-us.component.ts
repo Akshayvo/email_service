@@ -5,6 +5,7 @@ import { aboutUsLocation1, aboutUsLocation2, aboutUsLocation3,
           aboutUsImageLocation1, aboutUsImageLocation2,
           aboutUsImageLocation3 } from '../data/location';
 import { serviceOffered } from '../data/home';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-about-us',
@@ -18,8 +19,15 @@ export class AboutUsComponent implements OnInit {
   heading: string;
   image: any;
   alt: string;
+  imageBaseUrl: any;
+  imagetype: any;
   serviceOffered: any;
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+    private uaParserService: UaParserService,
+    ) {
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
+  }
 
   ngOnInit() {
     this.isSomePage();
@@ -39,7 +47,8 @@ export class AboutUsComponent implements OnInit {
   public fetchDetailsLocation1() {
     this.aboutPara = aboutUsLocation1;
     this.heading = aboutUsHeadingLocation1;
-    this.image = aboutUsImageLocation1;
+    // this.image = aboutUsImageLocation1;
+    this.image = `${this.imageBaseUrl}/packing-box.${this.imagetype}`;
     this.alt = 'Photograph of a cardboard box being opened';
   }
 
@@ -47,6 +56,7 @@ export class AboutUsComponent implements OnInit {
     this.aboutPara = aboutUsLocation2;
     this.heading = aboutUsHeadingLocation2;
     this.image = aboutUsImageLocation2;
+    this.image = `${this.imageBaseUrl}/packing-box.${this.imagetype}`;
     this.alt = 'Photograph of an open cardboard box';
   }
 
@@ -54,6 +64,7 @@ export class AboutUsComponent implements OnInit {
     this.aboutPara = aboutUsLocation3;
     this.heading = aboutUsHeadingLocation3;
     this.image = aboutUsImageLocation3;
+    this.image = `${this.imageBaseUrl}/packing-box.${this.imagetype}`;
     this.alt = 'Photograph of an open cardboard box';
   }
 

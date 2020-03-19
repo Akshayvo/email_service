@@ -6,6 +6,7 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation3, hoursLocation3 } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
 import { LocationService } from '../services/location.service';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-home',
@@ -18,13 +19,17 @@ export class HomeComponent implements OnInit {
   locationId: any;
   heading: string;
   features: any;
+  imageBaseUrl: any;
+  imagetype: any;
   serviceOffered: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
-    private data: LocationService
+    private data: LocationService,
+    private uaParserService: UaParserService,
+
   ) {
     this.meta.addTag({
       name: 'description',
@@ -32,6 +37,8 @@ export class HomeComponent implements OnInit {
        Louisville, and the surrounding communities!`
     });
     this.titleService.setTitle('Affordable Storage Near Canton, OH | Self Storage of Canton');
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {
@@ -46,6 +53,11 @@ export class HomeComponent implements OnInit {
       this.locationId = locationId;
       this.dataupdate();
     });
+  }
+
+
+  public getImageUrl(imageName: string) {
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 
   public dataupdate() {

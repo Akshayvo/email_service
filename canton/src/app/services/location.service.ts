@@ -16,8 +16,8 @@ export class LocationService {
     },
     {
       id: 3,
-      name: 'Fohl Street Storage',
-    },
+      name: ''
+    }
  ];
  private locationSource = new BehaviorSubject(this.places[0].id);
  // tslint:disable-next-line:member-ordering

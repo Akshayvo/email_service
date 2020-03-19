@@ -14,15 +14,15 @@
         </div>
         <div class="contact-img">
             <span *ngIf="locationId == 1"> 
-              <div class="img-box-1" alt="Photograph of Fohl Street Storage Outdoor Units">
+              <div class="img-box-1" [ngClass]="imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp' " alt="Photograph of Fohl Street Storage Outdoor Units">
               </div>
             </span>
             <span *ngIf="locationId == 2"> 
-              <div class="img-box-2" alt="Photograph of Louisville Self Storage front office">
+              <div class="img-box-2" [ngClass]="imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp' " alt="Photograph of Louisville Self Storage front office">
               </div>
             </span>
             <span *ngIf="locationId == 3"> 
-              <div class="img-box-3" alt="Photograph of outdoor self storage units">
+              <div class="img-box-3" [ngClass]="imagetype === 'jpg' ? 'img-box-3-jpg' : 'img-box-3-webp' " alt="Photograph of outdoor self storage units">
               </div>  
             </span>
         </div>
@@ -50,7 +50,7 @@
             </div>
             <div class="col-lg-4 btn-area text-center">
               <a class="btn btn-outline-primary p-2" [routerLink]="['/contact']" role="button">Contact Us</a> 
-              <a class="btn btn-primary-light p-2" [routerLink]="['/payment']" role="button">Pay Rent</a> 
+              <a class="btn btn-primary-light p-2" [routerLink]="['/pay-rent']" role="button">Pay Rent</a> 
               <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                       
             </div>
           </div>

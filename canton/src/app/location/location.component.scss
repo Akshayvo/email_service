@@ -31,26 +31,48 @@
   }
 }
 
-.img-box-1 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/fohl-street-storage.jpg");
+.img-box-1-jpg {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/jpg/fohl-street-storage.jpg");
   background-size: cover;
   height: 390px;
   background-position: center right;
 }
 
-.img-box-2 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/columbus-road.jpg");
+.img-box-2-jpg {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/jpg/columbus-road.jpg");
   background-size: cover;
   height: 370px;
   background-position: center;
 }
 
-.img-box-3 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/fohl-street-storage.jpg");
+.img-box-3-jpg {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/jpg/fohl-street-storage.jpg");
   background-size: cover;
   height: 400px;
   background-position: center right;
 }
+
+.img-box-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Canton/webp/fohl-street-storage.webp");
+  background-size: cover;
+  height: 400px;
+  background-position: center right;
+}
+
+.img-box-2-webp {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/webp/columbus-road.webp");
+  background-size: cover;
+  height: 400px;
+  background-position: center right;
+}
+
+.img-box-3-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Canton/webp/fohl-street-storage.webp");
+  background-size: cover;
+  height: 400px;
+  background-position: center right;
+}
+
 
 .hours-data {
   .col-lg-4 {

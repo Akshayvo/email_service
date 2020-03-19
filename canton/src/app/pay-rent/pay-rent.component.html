@@ -1,31 +1,29 @@
 <div class="containHolder">
   <div class="container">
-    <h1 class="text-center py-5">Pay Rent for Lincoln Street Storage </h1>
-    <div class="pay-rent-holder py-5">
+    <h1 class="text-center py-5">Pay Rent for {{name}}</h1>
+    <div class="pay-rent-holder p-5 mb-3">
       <div class="row">
           <div class="col-md-8 mx-0">
-              <!-- <div style="height: 400px; display: flex; align-items: center; justify-content: center;">
-                  <h2 style="font-size: 3rem;">Coming Soon</h2>
-                </div> -->
-              <iframe id="advanced_iframe" name="advanced_iframe" src="https://lincolnstreetstorage.sim.syrasoft.com/PayNow" width="100%"
-              height="100%" scrolling="yes" frameborder="0" border="0" allowtransparency="true" style="max-width: 100%; "></iframe>
-           
+              <router-outlet></router-outlet>
+
           </div>
           <div class="col-md-4 rent-example" >
             <h2> How to Login </h2>
-            <p> <b>Username:</b> First Initial + Last Name<br>
-            <p> <b>Password:</b>  Unit Number
-              <br> 
-            <p> <b>Example</b> <br>
-            <p>John Smith's unit number is 1234
-              <br>
-            <p> <b>John's Username:</b> jsmith<br>
-            <p> <b>John's Password:</b> 1234 <br>
-            <p> <b>Do you have a questions about your account?</b> </p>
-            <p> <a href="tel:3304841370">(330) 488-0129</a> </p>
-        </div> 
+            <div *ngFor="let loginDetail of loginDetail">
+              <p><b>Username</b>&nbsp;{{loginDetail.userName}}<br>
+              <b>Password:</b>&nbsp;{{loginDetail.password}}</p>
+                <p><b>Example:</b></p>
+                <p>John Smith's code is {{loginDetail.example.code}}</p>
+                <p>John's Username: {{loginDetail.example.userName}}<br>
+                  John's Password: {{loginDetail.example.password}}</p>
+            <p class="mb-0"> <b>Have question about your account?</b> </p>
+              <span *ngFor="let contact of contact" [class.display-none]="contact?.id == 0">
+                <span class="contact-links" *ngIf="contact?.id == 1 || contact?.id == 2">
+                  <a [href]="contact?.redirect">{{contact.data}}</a>
+                </span><br>
+              </span>
+         </div>
       </div>
     </div>
   </div>
 </div>
-

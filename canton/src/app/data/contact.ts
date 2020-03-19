@@ -1,27 +1,25 @@
 export const contactsLocation1 = [
-    
     {
+        id: 0,
         label: 'Address:',
         data: '3700 Fohl St, SW Canton, OH 44706',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
-
     {
+        id: 1,
         label: 'Phone:',
         data: '(330) 484-1370',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
+        id: 2,
         label: 'Email:',
-        
         data: 'fohlstorage@outlook.com',
-        
         class: 'fas fa-envelope-open mr-2 iconColor',
     },
 ];
 
 export const hoursLocation1 = [
-    
     {
         label: 'Monday - Friday: ',
         data: '9:30AM - 5:00PM',
@@ -38,17 +36,19 @@ export const hoursLocation1 = [
 
 export const contactsLocation2 = [
     {
+        id: 0,
         label: 'Address:',
         data: '7100 Columbus Rd NE, Louisville, OH 44641',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
-
     {
+        id: 1,
         label: 'Phone:',
         data: '(330) 875-8030',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
+        id: 2,
         label: 'Email:',
         data: 'louisvillestorage@outlook.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
@@ -72,17 +72,19 @@ export const hoursLocation2 = [
 
 export const contactsLocation3 = [
     {
+        id: 0,
         label: 'Address:',
         data: '5136 Lincoln St E, East Canton, OH 44730',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
-
     {
+        id: 1,
         label: 'Phone:',
         data: '(330) 488-0129',
         class: 'fas fa-phone mr-2 iconColor',
     },
     {
+        id: 2,
         label: 'Email:',
         data: 'lincolnstorage@outlook.com',
         class: 'fas fa-envelope-open mr-2 iconColor',

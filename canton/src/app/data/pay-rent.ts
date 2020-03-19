@@ -15,3 +15,40 @@ export const payList = [
      td3: '<a class="btn btn-primary" [routerLink]="[`/payment/lincoln-street-storage/storageUnits`]" role="button">pay-rent</a>'
   },
 ];
+
+
+export const loginFoul = [
+  {
+    userName: `Tenant's Last Name`,
+    password: `Tenant's gate access code`,
+    example: {
+        code: '1234',
+        userName: 'smith',
+        password: '1234'
+    }
+}
+];
+
+export const loginLouisville = [
+  {
+    userName: `Tenant's Last Name`,
+    password: `Tenant's gate access code`,
+    example: {
+        code: '1234',
+        userName: 'smith',
+        password: '1234'
+    }
+}
+];
+
+export const loginLincoln = [
+  {
+    userName: `Tenant's Last Name`,
+    password: `Tenant's gate access code`,
+    example: {
+        code: '1234',
+        userName: 'smith',
+        password: '1234'
+    }
+}
+];

@@ -59,16 +59,33 @@
 }
 
 
-.jumbotron-top {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/architecture-wood-house-home-facade-property-560369-pxhere.com.jpg");
+.jumbotron-top-jpg {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/jpg/architecture-wood-house-home-facade-property-560369-pxhere.com.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
 }
 
-.jumbotron-top1 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/all-space-indoor-units.jpg");
+.jumbotron-top1-jpg {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/jpg/all-space-indoor-units.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+
+.jumbotron-top-webp {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/webp/architecture-wood-house-home-facade-property-560369-pxhere.com.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-top1-webp {
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/webp/all-space-indoor-units.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
