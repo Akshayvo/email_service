@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '800 Greenville Hwy, Hendersonville, NC, 28792',
+        data: '800 Greenville Hwy, Suite 10, Hendersonville, NC, 28792',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
