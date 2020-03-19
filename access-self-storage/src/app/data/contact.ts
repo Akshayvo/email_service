@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '452 FM306, New Braunfels, TX 78130',
+        data: '452 FM 306, New Braunfels, TX 78130',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
