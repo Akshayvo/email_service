@@ -27,6 +27,21 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/"
+  to = "/contact-us"
+  query = { page_id = "43" }
+  status = 301
+[[redirects]]
+  from = "/"
+  to = "/view-rates"
+  query = { page_id = "37" }
+  status = 301
+[[redirects]]
+  from = "/"
+  to = "/view-rates"
+  query = { page_id = "35" }
+  status = 301  
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
