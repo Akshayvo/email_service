@@ -65,6 +65,10 @@ a {
   border: 1px #efefef solid;
 }
 
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .navbar-nav {
     li {
@@ -101,7 +105,7 @@ a {
 
     .dropdown {
       ul {
-        left: -50px;
+        left: -25px;
         text-align: -webkit-center;
       }
     }
