@@ -83,7 +83,7 @@
     .jumbotron-skew-text {
       width: 24%;
       position: absolute;
-      top: 30%;
+      top: 35%;
       color: $fontColor;
     }
   }
@@ -112,7 +112,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-height: 720px) and (min-height: 481px) {
+@media only screen and (min-width: 1200px) and (max-height: 720px) and (min-height: 520px) {
   .jumbotron-container {
     .jumbotron-bottom {
       height: 170px;
@@ -131,15 +131,15 @@
         height: 100vh;
       }
 
-      .jumbotron-skew-text {
-        top:25%;
-      }
+      // .jumbotron-skew-text {
+      //   top:25%;
+      // }
     }
   }
 
   .disp {
     p {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
 
     h1 {
@@ -148,7 +148,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-height: 480px) {
+@media only screen and (min-width: 1200px) and (max-height: 519px) {
   .disp {
     display: none;
   }
@@ -268,7 +268,7 @@
 
   .disp {
     p {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
 
     h1 {
@@ -277,7 +277,7 @@
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 480px) {
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 510px) {
   .disp {
     display: none;
   }
@@ -347,11 +347,23 @@
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 830px) and (min-height: 641px) {
   .disp {
     p {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
 
-    h2 {
-      font-size: 2rem;
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+  .jumbotron-top {
+    .jumbotron {
+      a {
+        margin-top: 0;
+       }
+
+      h1 {
+        font-size: 1.8rem;
+      }
     }
   }
 
@@ -382,6 +394,11 @@
 
     .jumbotron {
       height: 100vh;
+
+      a {
+        margin-top: 0;
+      }
+
     }
 
     .jumbotron-skew-text {
@@ -395,7 +412,7 @@
     }
 
     h1 {
-      font-size: 1.8rem;
+      font-size: 1rem;
     }
   }
 }
@@ -419,6 +436,7 @@
     .jumbotron {
       height: 95vh;
 
+      
       .jumbotron-skew-style {
         display: none;
       }
@@ -444,6 +462,11 @@
     .jumbotron {
       height: 100vh;
 
+   
+      h1 {
+        font-size: 1.5rem;
+      }
+
       .jumbotron-skew-style {
         width: 85%;
       }
@@ -453,7 +476,7 @@
       }
 
       .jumbotron-skew-text {
-        width: 300px;
+        width: 325px;
       }
     }
 
@@ -484,8 +507,13 @@
 @media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 700px) and (min-height: 501px) {
   .jumbotron-top {
     .jumbotron {
+
+      a {
+        margin-top: 0;
+      }
+
       .jumbotron-skew-text {
-        top: 20%;
+        top: 35%;
       }
     }
   }
