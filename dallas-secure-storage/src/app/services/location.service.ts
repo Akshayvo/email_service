@@ -8,12 +8,16 @@ export class LocationService {
   places = [
     {
       id: 1,
-      name: 'Dallas Secure Storage',
+      name: '',
+    },
+    {
+      id: 2,
+      name: '',
     },
     {
       id: 3,
-      name: 'Godsey Secure Storage',
-    },
+      name: ''
+    }
  ];
  private locationSource = new BehaviorSubject(this.places[0].id);
  // tslint:disable-next-line:member-ordering
