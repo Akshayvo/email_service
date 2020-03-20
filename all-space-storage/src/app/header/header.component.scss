@@ -1,5 +1,14 @@
 @import "../../styles.scss";
 
+.additional-top-bar {
+  background: red;
+  color: white;
+
+  p {
+    font-size: 1rem;
+  }
+}
+
 a {
   cursor: pointer;
 }
