@@ -267,13 +267,13 @@ export const aboutUsHeadingLocation2 = `About Us`;
 
 export const aboutUsHeadingLocation3 = `About Us `;
 
-export const aboutUsImageLocation1 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/packing-box.png`;
+export const aboutUsImageLocation1 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/jpg/packing-box.png`;
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation2 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/packing-box.png`;
+export const aboutUsImageLocation2 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/jpg/packing-box.png`;
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation3 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/packing-box.png`;
+export const aboutUsImageLocation3 = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Canton/jpg/packing-box.png`;
 
 export const aboutUsLocation1 = [
     {
