@@ -27,6 +27,30 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/Affordable_Storage.html"
+  to = "/location/260-n-grove/storageUnits"
+  status = 301
+[[redirects]]
+  from = "/properties.html"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/resources.html"
+  to = "/storage-tips"
+  status = 301
+[[redirects]]
+  from = "/siteerror404.html"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/~site/Elements/404.ffhtml"
+  to = "/"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
