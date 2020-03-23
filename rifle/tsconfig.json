@@ -7,6 +7,8 @@
       ],
       "core-js/es6/*": ["node_modules/core-js/es"]
     },
+    
+    // "disableTypeScriptVersionCheck": true,
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,

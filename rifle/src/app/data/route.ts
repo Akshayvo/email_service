@@ -71,7 +71,7 @@ import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confi
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAfOJNF8_QYcRMnViRCCF79w'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -95,7 +95,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAfOJNF8_QYcRMnViRCCF79w'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
