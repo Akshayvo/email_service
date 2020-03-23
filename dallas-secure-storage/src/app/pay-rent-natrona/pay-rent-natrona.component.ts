@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { contactsLocation1, contactsLocation3 } from '../data/contact';
+import { contactsLocation1, contactsLocation2 } from '../data/contact';
 
 @Component({
   selector: 'app-pay-rent-natrona',
@@ -12,9 +12,9 @@ export class PayRentNatronaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.fetchContactLocation3();
+    this.fetchContactLocation2();
   }
-  public fetchContactLocation3() {
-    this.contact = contactsLocation3;
+  public fetchContactLocation2() {
+    this.contact = contactsLocation2;
   }
 }

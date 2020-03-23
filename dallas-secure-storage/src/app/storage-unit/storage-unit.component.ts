@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { headingLocation1, headingLocation3 } from '../data/location';
+import { headingLocation1, headingLocation2 } from '../data/location';
 
 @Component({
   selector: 'app-storage-unit',
@@ -23,8 +23,8 @@ export class StorageUnitComponent implements OnInit {
       this.id = 1;
       this.heading = headingLocation1;
     } else  if (this.router.url.includes('/location/godsey-secure-storage'))  {
-      this.id = 3;
-      this.heading = headingLocation3;
+      this.id = 2;
+      this.heading = headingLocation2;
     }
   }
 }

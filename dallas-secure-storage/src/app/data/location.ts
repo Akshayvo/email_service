@@ -85,7 +85,7 @@ export const tabs = [
 
 export const headingLocation1 = `Dallas Secure Storage`;
 
-export const headingLocation3 = `Godsey Secure Storage`;
+export const headingLocation2 = `Godsey Secure Storage`;
 
 export const unitSizerLocation1 = [
     {
@@ -192,7 +192,7 @@ export const unitSizerLocation1 = [
 
 ];
 
-export const unitSizerLocation3 = [
+export const unitSizerLocation2 = [
     {
         size: '5\' x 5\' Storage Unit',
         alt: '5\' x 5\' Storage Unit Graphic',
@@ -313,14 +313,14 @@ export const unitSizerLocation3 = [
 
 export const aboutUsHeadingLocation1 = `About Dallas Secure Storage`;
 
-export const aboutUsHeadingLocation3 = `About Us`;
+export const aboutUsHeadingLocation2 = `About Us`;
 
 export const aboutUsImageLocation1 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/dallas-secure-storage-family-owned-and-operated.jpg`;
 
 // tslint:disable-next-line:max-line-length
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation3 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/dallas-secure-storage-family-owned-and-operated.jpg`;
+export const aboutUsImageLocation2 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Dallas_Secure_Storage/dallas-secure-storage-family-owned-and-operated.jpg`;
 
 export const aboutUsLocation1 = [
     {
@@ -339,7 +339,7 @@ export const aboutUsLocation1 = [
 ];
 
 
-export const aboutUsLocation3 = [
+export const aboutUsLocation2 = [
     {
         p: `Godsey Security Storage offers affordable self storage units in a well-lit, well-maintained self storage
             facility just north of our Dallas Secure Storage location in Dallas, Oregon. Our Godsey facility is paved,
@@ -364,7 +364,7 @@ export const directionLocation1 = [
 
 ] ;
 
-export const directionLocation3 = [
+export const directionLocation2 = [
     {
 
     },

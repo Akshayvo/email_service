@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { aboutUsLocation1, aboutUsLocation3,
-          aboutUsHeadingLocation1, aboutUsHeadingLocation3,
+import { aboutUsLocation1,
+          aboutUsHeadingLocation1,
           aboutUsImageLocation1,
-          aboutUsImageLocation3 } from '../data/location';
+          aboutUsLocation2,
+          aboutUsHeadingLocation2,
+          aboutUsImageLocation2} from '../data/location';
 import { serviceOffered } from '../data/home';
 
 @Component({
@@ -30,7 +32,7 @@ export class AboutUsComponent implements OnInit {
     if (this.router.url.includes('/location/dallas-secure-storage')) {
       this.fetchDetailsLocation1();
   } else  if (this.router.url.includes('/location/godsey-secure-storage'))  {
-    this.fetchDetailsLocation3();
+    this.fetchDetailsLocation2();
   }
   }
 
@@ -40,10 +42,10 @@ export class AboutUsComponent implements OnInit {
     this.image = aboutUsImageLocation1;
     this.alt = 'photograph of the owners, a man and a woman standing side by side';
   }
-  public fetchDetailsLocation3() {
-    this.aboutPara = aboutUsLocation3;
-    this.heading = aboutUsHeadingLocation3;
-    this.image = aboutUsImageLocation3;
+  public fetchDetailsLocation2() {
+    this.aboutPara = aboutUsLocation2;
+    this.heading = aboutUsHeadingLocation2;
+    this.image = aboutUsImageLocation2;
     this.alt = 'photograph of the owners, a man and a woman standing side by side';
   }
 

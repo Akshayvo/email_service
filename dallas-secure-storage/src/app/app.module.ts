@@ -1,12 +1,12 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule, ErrorHandler, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 
 // import '@material/tab/mdc-tab-scroller';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { HeaderComponent } from './header/header.component';
@@ -36,6 +36,23 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.component';
 import { AboutusPhotosComponent } from './aboutus-photos/aboutus-photos.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
+import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
+import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
+import { VerifyCodeComponent } from './verify-code/verify-code.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { LoginComponent } from './login/login.component';
+import { LoginModalComponent } from './login-modal/login-modal.component';
+import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { MaterialModule } from './modules/material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DatePipe } from '@angular/common';
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from './auth.gurad';
+import { CanDeactivateGuard } from './preventRouteChange.guard';
+import { RequestInterceptorService } from './services/request-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -65,6 +82,20 @@ import { ReviewsComponent } from './reviews/reviews.component';
     PayRentNatronaComponent,
     AboutusPhotosComponent,
     ReviewsComponent,
+    ViewRatesPageComponent,
+    ReserveUnitFormComponent,
+    ConfirmationDataComponent,
+    VerifyCodeComponent,
+    ForgotPasswordComponent,
+    ResetPasswordComponent,
+    LoginComponent,
+    LoginModalComponent,
+    PayRentFormComponent,
+    ChangePasswordComponent
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
   ],
   imports: [
     NgtUniversalModule,
@@ -74,8 +105,14 @@ import { ReviewsComponent } from './reviews/reviews.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MaterialModule,
+    BrowserAnimationsModule,
     ],
   providers: [
+    DatePipe,
+    AuthService,
+    AuthGuard,
+    CanDeactivateGuard,
     Title,
     {
       provide: ErrorHandler,
@@ -86,7 +123,12 @@ import { ReviewsComponent } from './reviews/reviews.component';
       useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
           window.location.href = (route.data as any).externalUrl;
       }
-  }
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: RequestInterceptorService,
+      multi: true
+    },
   ],
   bootstrap: [AppComponent]
 })

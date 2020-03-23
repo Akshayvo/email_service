@@ -2,8 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsLocation1, hoursLocation1,
-          contactsLocation3, hoursLocation3 } from '../data/contact';
+import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
+           } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -71,11 +71,11 @@ export class ContactComponent implements OnInit {
 
 public fetchContactDetails() {
   this.contactsLocation1 = contactsLocation1;
-  this.contactsLocation3 = contactsLocation3;
+  this.contactsLocation3 = contactsLocation2;
 }
 public fetchHours() {
   this.hoursLocation1 = hoursLocation1;
-  this.hoursLocation3 = hoursLocation3;
+  this.hoursLocation3 = hoursLocation2;
 }
   get f() { return this.contactForm.controls; }
 
@@ -89,8 +89,8 @@ public fetchHours() {
   public dataupdate() {
     if ( this.locationId === '1' || this.locationId === 1 ) {
       this.fetchContactDetailsLocation1();
-    } else if ( this.locationId === '3' ) {
-      this.fetchContactDetailsLocation3();
+    } else if ( this.locationId === '2' ) {
+      this.fetchContactDetailsLocation2();
     }
   }
 
@@ -99,10 +99,10 @@ public fetchHours() {
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
-  public fetchContactDetailsLocation3() {
+  public fetchContactDetailsLocation2() {
     this.heading = `Godsey Secure Storage`;
-    this.contactDetails = contactsLocation3;
-    this.hoursDetails = hoursLocation3;
+    this.contactDetails = contactsLocation2;
+    this.hoursDetails = hoursLocation2;
   }
 
 onSubmit() {

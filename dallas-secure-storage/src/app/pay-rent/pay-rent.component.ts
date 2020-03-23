@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { contactsLocation1, contactsLocation3 } from '../data/contact';
+import { contactsLocation1, contactsLocation2 } from '../data/contact';
+import { DataSharingService } from '../services/data-sharing.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -11,23 +13,27 @@ export class PayRentComponent implements OnInit {
 
   locationId: any;
   contact: any;
+  name: string;
 
-  constructor() { }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private dataSharingService: DataSharingService,
+    private router: Router,
+  ) { }
 
   ngOnInit() {
     // this.dataupdate();
-    this.fetchContactLocation1();
-  }
 
-  public fetchContactLocation1() {
-    this.contact = contactsLocation1;
+    if (this.router.url.includes('dallas-secure-storage')) {
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+      this.name = 'Pay Rent for Dallas Secure Storage';
+      this.contact = contactsLocation1;
+    } else  if (this.router.url.includes('godsey-secure-storage')) {
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+      this.name = 'Pay Rent for Godsey Secure Storage';
+      this.contact = contactsLocation2;
+    }
+    this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[1].path;
+    localStorage.setItem('paymentNavigationUrl', this.dataSharingService.paymentNavigation);
   }
-
-  // public dataupdate() {
-  //   if ( this.locationId === '1' ) {
-  //     this.contact = contactsLocation1;
-  //   } else if ( this.locationId === '3' ) {
-  //     this.contact = contactsLocation3;
-  //   }
-  // }
 }

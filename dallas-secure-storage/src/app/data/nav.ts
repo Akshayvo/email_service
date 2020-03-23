@@ -15,7 +15,7 @@ export const navLinks = [
                 path: '/location/dallas-secure-storage',
               },
               {
-                  id: '3',
+                  id: '2',
                   label: 'Godsey Secure Storage',
                   path: '/location/godsey-secure-storage',
               },
@@ -23,7 +23,7 @@ export const navLinks = [
     },
     {
         label: 'Pay Rent',
-        path: '/payment',
+        path: '/pay-rent',
         type: 'link'
     },
     {

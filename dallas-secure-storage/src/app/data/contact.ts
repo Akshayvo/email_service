@@ -41,7 +41,7 @@ export const hoursLocation1 = [
 ];
 
 //
-export const contactsLocation3 = [
+export const contactsLocation2 = [
     {
         id: 0,
         label: 'Address:',
@@ -65,7 +65,7 @@ export const contactsLocation3 = [
     },
 ];
 
-export const hoursLocation3 = [
+export const hoursLocation2 = [
     {
         label: 'Monday - Friday: ',
         data: '9:00AM - 5:00PM',
