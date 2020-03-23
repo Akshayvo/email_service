@@ -4,6 +4,10 @@
     display: none;
   }
 
+  .btn-outline-primary {
+    color: $primary !important;
+  }
+
   .iconStyle {
     cursor: pointer;
   }
@@ -111,4 +115,13 @@ table {
     .viewrates-desktop{
       display: none;
     }
+ }
+
+ @media only screen and (max-width: 450px) {
+   .btn-primary {
+     min-width: unset;
+   }
+   .btn-outline-primary {
+     min-width: unset;
+   }
  }

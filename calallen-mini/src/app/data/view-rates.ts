@@ -28,9 +28,9 @@ export const th = [
   {
     data: `Reserve a Unit`
   },
-  // {
-  //   data: `Move In`
-  // },
+  {
+    data: `Move In`
+  },
   // {
   //   data: `Climate Control`
   // },

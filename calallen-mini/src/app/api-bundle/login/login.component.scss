@@ -6,6 +6,17 @@
     background: none;
   }
 }
+.contact-links {
+  a {
+    color: black;
+  }
+}
+
+.vertical-line {
+  border-left: 1px solid darkgray;
+  position: right;
+  // padding: 0 0 0 48px;
+}
 
 .forgot-link {
   a {
@@ -39,4 +50,10 @@
 .button-display {
   display: flex;
   align-items: end;
+}
+
+@media only screen and (max-width: 991px) {
+  .vertical-line {
+    border: none;
+  }
 }
