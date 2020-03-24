@@ -11,7 +11,12 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+.custom-padding {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media only screen and (max-width: 767px) {
   .storageUnitHolder {
     padding: 16px;
 

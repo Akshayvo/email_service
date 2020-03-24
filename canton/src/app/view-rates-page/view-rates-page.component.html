@@ -41,11 +41,11 @@
             <div class="text-center">Please call the facility to reserve a unit.</div>
           </td>
           </ng-template>
-          <ng-template #other_moveIn>
+          <!-- <ng-template #other_moveIn>
             <td colspan="2" class="py-2 px-4 border">
             <div class="text-center">Please call the facility to move in.</div>
           </td>
-          </ng-template>
+          </ng-template> -->
         </tr>
       </tbody>
   </table>
@@ -70,9 +70,9 @@
           <div class=" py-1 buttons" >
               <button class="btn  btn-primary" (click)="navigate('reserve', lstUnitType )">Reserve</button>
           </div>
-          <div class="py-1 buttons">
+          <!-- <div class="py-1 buttons">
               <button class=" btn btn-outline-primary" (click)="navigate('move-in', lstUnitType)"> Move In</button>
-          </div>
+          </div> -->
         </div>
         <ng-template #other> 
           <div class="text-right" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
