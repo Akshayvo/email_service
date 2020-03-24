@@ -27,7 +27,8 @@ export class PaymentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: ``
+      content: `Do you have a unit at one of our 7 locations? Follow our easy instructions
+      on this page and pay your rent 24/7 with our handy online tenant portal!`
     });
     this.titleService.setTitle('Pay Rent  | Affordable Storage');
   }
