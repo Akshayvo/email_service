@@ -31,7 +31,7 @@
   background-color: $light !important;
 }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 767px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
@@ -48,7 +48,7 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .disp {
     display: block;
   }
