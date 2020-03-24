@@ -29,7 +29,7 @@ export class PaymentComponent implements OnInit {
       name: 'description',
       content: ``
     });
-    this.titleService.setTitle('');
+    this.titleService.setTitle('Pay Rent  | Affordable Storage');
   }
 
   ngOnInit() {

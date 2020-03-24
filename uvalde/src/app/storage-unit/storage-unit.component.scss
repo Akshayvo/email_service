@@ -7,16 +7,13 @@
   background-color: #f1f0ed;
 }
 
-iframe {
-  max-width: 100%;
+.custom-padding {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @media only screen and (max-width: 600px) {
   .storageUnitHolder {
     padding: 16px;
-
-    iframe {
-      min-height: 1100px;
-    }
   }
 }
