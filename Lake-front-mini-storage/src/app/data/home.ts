@@ -65,15 +65,15 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/stellar.svg',
-        label: 'Stellar Customer Service',
-        alt: 'Customer Service Representative Icon'
-    },
-    {
-        // tslint:disable-next-line:max-line-length
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
         label: 'Stellar Customer Service',
         alt: 'Icon of a customer service agent'
+    },
+    {
+        // tslint:disable-next-line:max-line-length
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        label: 'Affordable Self Storage Rates',
+        alt: 'Icon of a hand holding money'
     },
 ];
 

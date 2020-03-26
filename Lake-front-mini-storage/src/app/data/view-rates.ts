@@ -13,9 +13,9 @@ export const th = [
   {
     data: `Size`
   },
-  {
-    data: `Rate`
-  },
+  // {
+  //   data: `Rate`
+  // },
   // {
   //   data: `Annual Rate`,
   // },
