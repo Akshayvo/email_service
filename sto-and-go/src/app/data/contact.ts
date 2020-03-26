@@ -14,9 +14,9 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'tel:8432834396',
+        redirect: 'tel:8433900019',
         label: 'Phone: ',
-        data: '(843) 283-4396',
+        data: '(843) 390-0019',
         class: 'fas fa-phone mr-2 iconColor',
     }
 ];
