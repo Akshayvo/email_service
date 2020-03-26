@@ -17,7 +17,7 @@ export const featuresList = [
         td2: 'Spacious Freight Elevator'
     },
     {
-        td1: 'Secure Keypad Access',
+        td1: 'Online Payments',
         td2: 'Individually Alarmed Units'
     },
     {
@@ -41,7 +41,7 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/High_Falls/24-hours.svg',
-        label: '24 Hour Clock',
+        label: '24/7 Access',
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
@@ -55,23 +55,32 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `High Falls Self Storage, LLC is conveniently located in the High Falls District one block west of
-        the Red Wings Baseball stadium. Our facility is easily accessible to Route 490 and a short 10-minute drive
-        from the surrounding suburbs, Brighton, Gates, Greece, Henrietta, Irondequoit, Penfield, Pittsford, and
-        Spencerport are all within a 10-minute drive. The University of Rochester, St. John Fisher, RIT, MCC, and
-        Nazareth are all within a 10-minute drive. We are proud to serve Rochester and surrounding communities.`,
+        p: `High Falls Self Storage is conveniently located in the City of Rochester’s High Falls District one
+            block west of the Red Wings baseball stadium.  Our facility is easily accessible to Route 490 and
+            a short 10-minute drive from surrounding suburbs: Brighton, Gates, Greece, Irondequoit, Penfield,
+            Pittsford, and Ogden.  The University of Rochester, St. John Fisher, RIT, MCC, and Nazareth College
+            are also within our service area.  We are proud to service the City of Rochester and surrounding
+            communities for over twenty years. `,
     },
     {
-        p: `In 1998 our building underwent a historic renovation. A multi-phased project, all with a major emphasis
-        placed on maintaining the historic nature of the building. The result was a storage facility that incorporates
-        historic characteristics with modern amenities.`,
+        p: `Our facility offers a variety of unit sizes, video surveillance and security monitoring, key-pad access,
+            and a full-time on-site manager.  Extended access hours, loading docks, and a large freight elevator
+            with ample room for your belongings is offered to make those move-ins a breeze.   An online cloud-based
+            property management application is accessible for mobile payments and account management. `,
     },
     {
-        p: `Our online payment portal gives our customers the same 24/7 access to their account that they to their
-        units at High Falls Self Storage, LLC. We are well-lit, and our freight elevator has ample room for your
-        belongings to make those move-ins a breeze. Take a moment to review our rates and current availability,
-        and reserve your unit with High Falls Self Storage, LLC today!`,
+        p: `The High Falls Storage warehouse is listed as a City of Rochester designated landmark.  Built in 1830,
+            our 90,000 square foot warehouse has remained a storage facility for over 190 years.  The building’s
+            two-foot thick medina sandstone façade and solid post and beam construction allow for thousands of
+            pounds of storage material to be stowed safely and securely.  In 1998 our building underwent a historic
+            renovation. A multi-phased project, all with a major emphasis placed on maintaining the historic nature
+            of the building. The result was a storage facility that incorporates historic characteristics with
+            modern amenities.`,
     },
+    {
+        p: `Come visit our historic 90,000 square foot 5-story facility and let High Falls Storage take the
+            frustration out of finding enough space for your things.  Call or reserve your unit today! `
+    }
 ];
 
 
