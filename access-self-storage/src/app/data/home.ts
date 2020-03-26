@@ -31,23 +31,21 @@ export const featuresList = [
 
 export const aboutUs = [
     {
-        p: `Since 2008, ACCESS SELF STORAGE has been providing the community of New Braunfels,
-            Texas with quality self storage, climate-controlled storage and boat/recreational
-            vehicle parking. We offer a large variety of unit sizes, making us an ideal solution
-            for homeowners, renters, and businesses regardless of your specific storage needs!
-            Check out our great customer reviews on google to see why other people chose us to
-            fill their storage needs! `,
+        p: `Since 2008, ACCESS SELF STORAGE has been providing the community of New Braunfels, Texas
+            with quality self storage, climate-controlled storage and boat/recreational vehicle parking.
+            We offer a large variety of unit sizes, making us an ideal solution for homeowners, renters,
+            and businesses regardless of your specific storage needs! Check out our great customer reviews
+            on google to see why other people chose us to fill their storage needs!`,
     },
     {
-        p: `We are conveniently located off of FM 306 between Big League Car Wash and La Sierra
-            Apartments, across the street from the Budweiser distribution center, approximately
-            one mile off IH 35 and HEB Plus! `,
+        p: `We are conveniently located on FM 306 between Big League Car Wash and La Sierra Apartments,
+            across the street from the Budweiser distribution center, approximately one mile from IH 35 and HEB Plus!`,
     },
     {
-        p: `It’s not just about a convenient location! We offer On-Site Managers that live on the
-            property as well as a Fully-Fenced, Well Lit Facility with Security Cameras, Electronic
-            Gate and Private Gate Codes. We also sell boxes in the office as well as having dollies,
-            box crates and moving blankets free to use for 5 days to help make your move a little easier!`,
+        p: `It’s not just about a convenient location! We offer On-Site Managers that live on the property as
+            well as a Fully-Fenced, Well Lit Facility with Security Cameras, Electronic Gate and Private Gate Codes.
+            We also sell boxes in the office as well as having dollies, box crates and moving blankets free to use
+            for 5 days to help make your move a little easier!`,
     },
 ];
 

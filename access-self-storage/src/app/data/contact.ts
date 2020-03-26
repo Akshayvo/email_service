@@ -28,7 +28,7 @@ export const hours = [
     },
     {
         label: 'Sunday:',
-        data: 'By Appontment Only'
+        data: 'By Appointment Only'
     },
     {
         label: 'Access Hours: ',
