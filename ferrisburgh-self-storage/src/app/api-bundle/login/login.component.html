@@ -67,11 +67,11 @@
           <p><b>Username</b>&nbsp;{{loginDetail.userName}}<br>
           <b>Password:</b>&nbsp;{{loginDetail.password}}</p>
             <p><b>Example:</b></p>
-            <p>John Smith's code is {{loginDetail.example.code}}</p>
+            <p>John Smith's {{loginDetail.example.code}}</p>
             <p>John's Username: {{loginDetail.example.userName}}<br>
               John's Password: {{loginDetail.example.password}}</p>
             <p><strong>Have questions about your account?</strong><br>
-            <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
+            <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id === 0 || contact?.id === 1">
               <a  *ngIf="contact?.id == 2 || contact?.id == 3" [href]="contact?.redirect">
                 {{contact.data}}
               </a>
