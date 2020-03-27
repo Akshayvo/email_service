@@ -50,6 +50,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   text = false;
   navTo: any;
   windowLocation: any;
+  hideMoveInButton = false;
   showDiscount = false;
 
   private getDataSubscribe$: Subscription;
@@ -74,6 +75,12 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.showDiscount = true;
     } else {
       this.showDiscount = false;
+    }
+
+    if (this.router.url.includes('fohl-street-storage')) {
+      this.hideMoveInButton = true;
+    } else {
+      this.hideMoveInButton = false;
     }
   }
 

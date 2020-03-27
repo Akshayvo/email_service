@@ -35,9 +35,9 @@ export const th = [
     {
       data: `Reserve a Unit`
     },
-    // {
-    //   data: `Move In`
-    // },
+    {
+      data: `Move In`
+    },
     {
       data: `Climate Control`
     },
@@ -333,4 +333,3 @@ export const th = [
       id: 'YT'
     },
   ];
-  

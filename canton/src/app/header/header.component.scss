@@ -43,6 +43,10 @@ a {
   }
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .nav-link:hover {
   color: $primary;
 }
