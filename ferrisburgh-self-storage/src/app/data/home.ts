@@ -5,7 +5,7 @@ export const featuresList = [
     },
     {
         td1: 'Brand New Units',
-        td2: 'ingle-Level Facility'
+        td2: 'Single-Level Facility'
     },
     {
         td1: 'Drive-Up Units',
