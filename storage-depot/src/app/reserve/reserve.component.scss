@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .padding-top {
-  padding-top: 100px;
+  padding-top: 197px;
 }
 
 iframe {
@@ -16,6 +16,11 @@ h1 {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .padding-top {
+    padding-top: 258px;
+  }
+}
 
 
 @media only screen and (max-width: 600px) {

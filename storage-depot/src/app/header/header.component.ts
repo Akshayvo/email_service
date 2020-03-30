@@ -12,6 +12,10 @@ export class HeaderComponent implements OnInit {
 
   navLinks: any;
   navbarCollapsed = true;
+  dots: any;
+  moreText: any;
+  btnText = 'Show More';
+
 
   constructor(
     private router: Router,
@@ -32,5 +36,11 @@ export class HeaderComponent implements OnInit {
   public onClick(menu: any) {
     menu.classList.remove('show');
   }
-
+  toggle(): void {
+    if (this.btnText === 'Show More') {
+      this.btnText = 'Show Less';
+    } else {
+      this.btnText = 'Show More';
+    }
+  }
 }

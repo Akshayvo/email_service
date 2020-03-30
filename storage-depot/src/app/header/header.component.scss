@@ -4,7 +4,16 @@
 a {
   cursor: pointer;
 }
-
+// .heading{
+//   font-size: 16px;
+//   line-height: 16px;
+//   height: 32px;
+//   overflow: hidden;
+// }
+// .show {
+//   overflow: visible;
+//   height: auto;
+// }
 .additional-top-bar {
  background: red;
  color: white;
@@ -56,6 +65,12 @@ a {
   border: 1px solid $primary;
 }
 
+// @media screen and (min-width: 992px) {
+//   .read_more {
+//     display: none;
+//   }
+// }
+
 @media screen and (max-width: 991px) {
   .navbar-nav {
     align-items: center;
@@ -63,6 +78,9 @@ a {
     li {
       width: fit-content;
     }
+  }
+  .nav-link {
+    padding: 21px;
   }
 }
 
