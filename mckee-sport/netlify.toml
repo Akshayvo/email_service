@@ -36,7 +36,7 @@
   status = 301
 [[redirects]]
   from = "/storage-info-availability/3703715"
-  to = "/view-rates"
+  to = "/unit-availability"
   status = 301
 [[redirects]]
   from = "/contact-us/3703699"
