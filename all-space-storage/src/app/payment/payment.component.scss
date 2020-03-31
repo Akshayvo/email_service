@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .rent-holder {
-  padding-top: 138px;
+  padding-top: 213px;
   min-height: 88vh;
   margin-bottom: 50px;
 
@@ -47,7 +47,7 @@
 
 @media only screen and (max-width: 991px) {
   .rent-holder {
-    padding-top: 125px;
+    padding-top: 223px;
   }
 }
 
@@ -85,5 +85,11 @@
 
   iframe {
     min-height: 400px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .rent-holder {
+    padding-top: 286px;
   }
 }

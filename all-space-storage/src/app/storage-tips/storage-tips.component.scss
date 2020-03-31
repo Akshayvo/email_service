@@ -11,7 +11,7 @@
 }
 
 .storage-tip-holder {
-  padding-top: 138px;
+  padding-top: 213px;
   min-height: 88vh;
   margin-bottom: 50px;
 
@@ -39,7 +39,7 @@
 
 @media only screen and (max-width: 991px) {
   .storage-tip-holder {
-    padding-top: 125px;
+    padding-top: 223px;
   }
 }
 
@@ -48,5 +48,11 @@
     .storage-content {
       padding: 16px;
     }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .storage-tip-holder {
+    padding-top: 286px;
   }
 }
