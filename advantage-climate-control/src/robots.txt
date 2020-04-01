@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: http://advantageclimate-staging.syrasoft.com/sitemap.xml
+Sitemap: http://www.advantageclimatecontrol.com/sitemap.xml
 User-agent: *
 Disallow:
