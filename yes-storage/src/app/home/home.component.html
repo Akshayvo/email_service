@@ -1,0 +1,96 @@
+<app-script-hack type="application/ld+json">
+  {{script | json}}
+</app-script-hack>
+
+<div class="">
+  <div class="jumbotron p-0 m-0">
+    <div class="bg-translucent1  text-align">
+      <div class="container display">
+        <div class="row justify-content-center width margin-bottom">
+          <div class="bg-jumbotron col-md-12 p-4">
+            <div class=" disp">
+              <h1>{{jumbotron.heading}}</h1><br>
+              <p>{{jumbotron.text}}</p>
+            </div>
+            <div class="button-top-margin">
+              <a class="btn btn-lg btn-outline-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+              <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow" >
+        <img (click)="scroll(target)" src="../../assets/Yes_Storage/down.svg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="about-us bg-dark-background"  #target>
+    <div class="container py-5">
+      <div class="section py-5 m-0">
+        <h2 class="heading pb-3 text-center">Affordable Self Storage in Rifle, Colorado</h2>
+        <div class="row content-margin-top">
+          <div class="col-md-6 py-3">
+            <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+          </div>
+          <div class="col-md-6 py-3" >
+              <app-photos> </app-photos>
+            <!-- <img src="" alt="storage unit picture" class="sectionImage"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="we-provide">
+    <div class="we-provide-background py-5">
+      <div class="container py-5">
+        <div class="section  m-0">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="heading pb-3 text-center">What We Provide</h2>
+              <div class="row primary-margin">
+                <div class="col-md-3 col-6 p-4 text-center" *ngFor="let feature of feature">
+                  <div class="p-4">
+                    <img [src]="feature?.path" height="75px" [alt]="feature?.alt" />
+                  </div>
+                  <h6 class="feature-text">{{feature.label}}</h6>
+                </div>
+              </div>
+              <div class="feature-list">
+                <ul class="row" > 
+                  <li class="col-md-6 col-lg-4 py-2 text-left" *ngFor="let featuresList of featuresList">{{featuresList.li}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="locate-us bg-dark-background">
+    <div class="container py-5">
+      <div class="section py-5 m-0">
+          <h2 class="heading pb-3 text-center">How to Find Rifle Self Storage</h2>
+        <div class="row content-margin-top">
+            <div class="col-md-6 py-3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.7641363128455!2d-87.48297042843889!3d36.88428662938108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8865344ad2ff0987%3A0xf6a4a74f03184326!2s1009%20N%20Main%20St%2C%20Hopkinsville%2C%20KY%2042240!5e0!3m2!1sen!2sus!4v1585495613955!5m2!1sen!2sus" width="100%" height="250" frameborder="0" allowfullscreen></iframe>
+              </div>
+          <div class="col-md-6 py-3 locate-us-style">
+            <table>
+              <tr valign="top" *ngFor="let contact of contactDetails">
+                <td ><strong>{{contact.label}}</strong></td><td class="contact-data" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect"> {{contact.data}}</a></td>
+                <ng-template #other_content><td >{{contact.data}}</td></ng-template>
+              </tr>
+              <tr valign="top" *ngFor="let hour of hours">
+                <td ><strong>{{hour.label}}</strong></td><td> {{hour.data}}</td>
+              </tr>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

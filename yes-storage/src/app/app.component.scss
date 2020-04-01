@@ -1,0 +1,44 @@
+/* Sticky Buttons  */
+
+@import "../styles.scss";
+
+.contact-button {
+  position: fixed;
+  right: 0;
+  top: 150px;
+  z-index: 16;
+}
+
+button {
+  min-width: 52px;
+  min-height: 52px;
+  background-color: $primary;
+  border: 1px solid $primary;
+  border-radius: 50% 0 0 50%;
+  cursor: pointer;
+  float: right;
+}
+
+button:focus {
+  outline: none;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  /* position: fixe; */
+}
+
+@media only screen and (max-width: 991px) {
+  .contact-button {
+    top: 115px;
+  }
+}
+
+@media only screen and (max-height: 480px) {
+  .contact-button {
+    top: 110px;
+  }
+}
