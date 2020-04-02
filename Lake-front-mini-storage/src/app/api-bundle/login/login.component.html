@@ -1,6 +1,6 @@
 
 <div class="row">
-    <div class="col-md-7">
+    <div class="col-lg-7 p-4">
         <div>
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
@@ -61,13 +61,13 @@
     </div>    
 
 
-    <div class="col-md-5  vertical-line"  >
+    <div class="col-lg-5 p-4  vertical-line"  >
         <h3>How to Login</h3>
         <div *ngFor="let loginDetail of loginDetail">
           <p><b>Username</b>&nbsp;{{loginDetail.userName}}<br>
           <b>Password:</b>&nbsp;{{loginDetail.password}}</p>
             <p><b>Example:</b></p>
-            <p>John Smith's code is {{loginDetail.example.code}}</p>
+            <p>{{loginDetail.example.code}}</p>
             <p>John's Username: {{loginDetail.example.userName}}<br>
               John's Password: {{loginDetail.example.password}}</p>
             <p><strong>Have questions about your account?</strong><br>
