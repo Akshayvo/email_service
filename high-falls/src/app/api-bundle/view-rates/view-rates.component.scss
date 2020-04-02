@@ -19,7 +19,7 @@
 
 
 .contentHolder {
-  padding-top: 110px;
+  padding-top: 190px;
   min-height: 96vh;
   margin-bottom: 50px;
 
@@ -81,7 +81,7 @@ table {
 
 .loader {
   border: 5px solid #f3f3f3;
-  border-top: 5px solid $secondary;
+  border-top: 5px solid $primary;
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -121,14 +121,14 @@ table {
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .contentHolder {
-    padding-top: 56px;
+    padding-top: 190px;
   }
 
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .contentHolder {
-    padding-top: 56px;
+    padding-top: 190px;
   }
 
   .view-rates {
@@ -142,7 +142,7 @@ table {
 
 @media screen and (max-width: 600px) {
   .contentHolder {
-    padding-top: 56px;
+    padding-top: 190px;
   }
 
   .view-rates {

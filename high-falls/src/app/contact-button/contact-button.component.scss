@@ -78,11 +78,20 @@
   }
 }
 
+@media screen and (min-height: 833px) {
+  .contact-button-data {
+    overflow: auto;
+    overflow-y: scroll;
+    height: 70vh;
+    width: 300px;
+  }
+}
+
 @media screen and (min-height: 481px) and (max-height: 833px) {
   .contact-button-data {
     overflow: auto;
     overflow-y: scroll;
-    height: 80vh;
+    height: 70vh;
     width: 300px;
   }
 }

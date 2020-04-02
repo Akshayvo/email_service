@@ -22,6 +22,7 @@ export const featuresList = [
     },
     {
         td1: 'On-Site Management',
+        td2: 'Commercial & Residential Units'
     },
 ];
 

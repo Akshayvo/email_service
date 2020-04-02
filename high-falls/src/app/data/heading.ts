@@ -8,4 +8,4 @@ export const storageTipsHeading = `Storage Tips`;
 
 export const unitSizerHeading = `Unit Sizer`;
 
-export const contactHeading = `Contact Hillside Self Storage`;
+export const contactHeading = `Contact `;
