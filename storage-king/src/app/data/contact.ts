@@ -29,7 +29,7 @@ export const officeHours = [
     },
     {
         label: 'Saturday: ',
-        data: '9:00AM – 3:00PM'
+        data: 'CLOSED(Temporarily Due to Covid-19)'
     },
     {
         label: 'Sunday: ',
