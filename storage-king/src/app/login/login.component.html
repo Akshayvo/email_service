@@ -1,0 +1,90 @@
+<div>
+    <div>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <div [hidden]="" *ngIf="submitted && credentialsInvalid" class="button-display alert alert-success alert-danger fade show">
+                    Either the supplied username does not exist, or the supplied credentials are incorrect. Please try
+                    again.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div [class.loader]="showLoader" *ngIf="!showPayRent && allowedToshow">
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 p-4">
+                    <div class="row">
+                        <div class="form-group col-lg-6 col-12">
+                            <label>UserName</label> &nbsp;
+                            <input type="text" formControlName="strUserName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }" />
+                            <div *ngIf="submitted && f.strUserName.errors" class="invalid-feedback">
+                                <small class="form-text text-muted" *ngIf="f.strUserName.errors.required">Please fill
+                                    out this field</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-6 col-12">
+                            <label>Password</label> &nbsp;
+                            <input type="password" formControlName="strPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.strPassword.errors }" />
+                            <div *ngIf="submitted && f.strPassword.errors" class="invalid-feedback">
+                                <small class="form-text text-muted" *ngIf="f.strPassword.errors.required">Please fill
+                                    out this field</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" (click)="handleShowLoader()">Login</button>
+                    </div>
+                    <div class="forgot-link">
+                        <a (click)="navigate('/pay-rent/rent-sub/forgotPassword')">Forgot Password</a>
+                    </div>
+                    <div class="forgot-link">
+                        <a (click)="openBox()">Change Your Password</a>
+                        <!-- <a  data-toggle="modal" data-target="#myModal">Change Your Password</a> -->
+
+                        <!-- Modal -->
+                        <!-- <div id="myModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog"> -->
+                        <!-- Modal content-->
+                        <app-login-modal *ngIf="!!open" (someEvent)="openBox()"></app-login-modal>
+                        <!-- </div>
+                        </div> -->
+                    </div>
+
+                </div>
+                <div class="col-md-4 custom-border pl-lg-5 pl-md-4 pl-sm-2">
+                    <h3>How to Login</h3>
+                    <p><b>Username:</b>&nbsp;Tenant's Email Address<br>
+                      <b>Password:</b>&nbsp;Your 4 digit unit number. If you are in unit 123, your 4 digit unit number is 0123.</p>
+                      <p><b>Example:</b></p>
+                      <p>John Smith's unit is 123</p>
+                      <p >John's Username: jsmith@mail.com<br>
+                        John's Password: 0123</p>
+              
+                        <p class="text-justify">If you have multiple units, your password is the 4 digit unit number of the first unit you moved into. If your first attempt does not work, you may try your other unit numbers.</p>
+              
+                      <p class="text-justify">Having trouble logging in? Call <a href="tel:6037724500">(603) 772-4500</a> and one of our self storage management professionals will be happy to assist you!</p>
+                    </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div class="forgot-link pl-4">
+        <a (click)="navigate('/pay-rent/rent-sub/forgotPassword')">Forgot Password</a>
+    </div>
+    <div class="forgot-link pl-4"> -->
+        <!-- <a (click)="openBox()">Change Your Password</a> -->
+        <!-- <a  data-toggle="modal" data-target="#myModal">Change Your Password</a> -->
+
+        <!-- Modal -->
+        <!-- <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog"> -->
+        <!-- Modal content-->
+        <!-- <app-login-modal *ngIf="!!open" (someEvent)="openBox()"></app-login-modal> -->
+        <!-- </div>
+        </div> -->
+    <!-- </div> -->
+</div>

@@ -1,10 +1,10 @@
 import { NgtUniversalModule } from '@ng-toolkit/universal';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -30,6 +30,19 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { RentSubComponent } from './rent-sub/rent-sub.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { VerifyCodeComponent } from './verify-code/verify-code.component';
+import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { LoginComponent } from './login/login.component';
+import { LoginModalComponent } from './login-modal/login-modal.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './modules/material/material.module';
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from './auth-guard/auth.gurad';
+import { VerifictionCodeGuard } from './auth-guard/verificationCode.guard';
+import { RequestInterceptorService } from './services/request-interceptor.service';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +64,14 @@ import { TabsComponent } from './tabs/tabs.component';
     PayRentComponent,
     RentSubComponent,
     SignUpComponent,
-    TabsComponent
+    VerifyCodeComponent,
+    TabsComponent,
+    PayRentFormComponent,
+    ResetPasswordComponent,
+    LoginComponent,
+    LoginModalComponent,
+    ForgotPasswordComponent,
+    ChangePasswordComponent,
   ],
   imports: [
     CommonModule,
@@ -62,19 +82,33 @@ import { TabsComponent } from './tabs/tabs.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    // SelectDropDownModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [
+    DatePipe,
+    AuthService,
+    AuthGuard,
+    VerifictionCodeGuard,
     Title,
+    // CanDeactivateGuard,
     {
       provide: ErrorHandler,
       useClass: ErrorHandlerService
     },
+    Title,
     {
       provide: 'externalUrlRedirectResolver',
       useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
           window.location.href = (route.data as any).externalUrl;
       }
-    }
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: RequestInterceptorService,
+      multi: true
+    },
   ],
   bootstrap: [AppComponent],
 })

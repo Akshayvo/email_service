@@ -1,9 +1,5 @@
 @import "../../styles.scss";
 
-.padding {
-  padding: 64px;
-}
-
 .tab {
   margin-bottom: 0;
   width: 100%;
@@ -17,8 +13,7 @@
 
   a {
     text-decoration: none;
-    color: #212529;
-    font-weight: 600;
+    color: $dark;
     background-color: transparent;
     width: 100%;
   }
@@ -31,13 +26,15 @@
   }
 }
 
-
 .active-tab {
   background-color: $light !important;
 }
 
+.tab-active {
+  background-color: $light !important;
+}
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 767px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
@@ -54,7 +51,7 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .disp {
     display: block;
   }
@@ -68,6 +65,10 @@
       position: relative;
       background-color: #cac2a6;
       width: 100%;
+    }
+
+    .payment-tab {
+      width: 50%;
     }
   }
 }

@@ -22,7 +22,6 @@ export class HomeComponent implements OnInit {
   serviceOffered: any;
   gettingStarted: any;
   feature: any;
-  currentActive: any = 'HOME';
   blurbHeading: any;
   blurbText: any;
   slideShow: any;

@@ -14,7 +14,6 @@ export class PayRentComponent implements OnInit {
 
   tabs: any;
   id: number;
-  currentTab: any;
 
   constructor(
     private titleService: Title,

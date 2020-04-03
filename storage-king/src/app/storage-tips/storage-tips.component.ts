@@ -13,7 +13,6 @@ import { WINDOW } from '@ng-toolkit/universal';
 export class StorageTipsComponent implements OnInit {
   storagePoints: any;
   storageTips: any;
-  currentActive: any = 'STORAGE TIPS';
   breadcrumbActive: any = 'STORAGE TIPS';
 
   constructor(

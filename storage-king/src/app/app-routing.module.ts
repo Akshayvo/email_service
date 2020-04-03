@@ -13,6 +13,14 @@ import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { RentSubComponent } from './rent-sub/rent-sub.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { LoginComponent } from './login/login.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { AuthGuard } from './auth-guard/auth.gurad';
+import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
+import { VerifyCodeComponent } from './verify-code/verify-code.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { VerifictionCodeGuard } from './auth-guard/verificationCode.guard';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -25,7 +33,17 @@ const routes: Routes = [
   { path: 'pay-rent', component: PayRentComponent,
   children: [
     { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
-    { path: 'rent-sub', component: RentSubComponent },
+    { path: 'rent-sub', component: RentSubComponent,
+      children: [
+        {path: '', redirectTo: 'login', pathMatch: 'full'},
+        {path: 'login', component: LoginComponent },
+        {path: 'forgotPassword', component: ForgotPasswordComponent },
+        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+        {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+        { path: 'verifyCode', component: VerifyCodeComponent },
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+        // canActivate: [VerifictionCodeGuard]
+      ] },
     { path: 'sign-up', component: SignUpComponent }
   ] },
   { path: 'error', component: ErrorHandlerComponent },
