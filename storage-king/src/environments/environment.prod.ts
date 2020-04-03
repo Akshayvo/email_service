@@ -9,6 +9,6 @@ export const environment = {
   VERSION: require('../../package.json').version,
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  APIKey: `dzJ0OFcxSjEqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28113
+  APIKey: `dzF0NFcwSjEqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 14014
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
 };
