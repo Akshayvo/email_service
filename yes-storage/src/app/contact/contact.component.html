@@ -1,4 +1,4 @@
-<div class="contact-top">
+<div class="contact-top" [ngClass]="imagetype === 'jpg' ? 'contact-top-jpg' : 'contact-top-webp' ">
     <div class="bg-translucent">
       <div class="container jumbotorn-top text-center" *ngFor="let contactUs of contactUs">
         <h1 class="pb-4" >{{contactUs.heading}}</h1>

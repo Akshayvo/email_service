@@ -7,6 +7,8 @@ import { EmailService } from '../services/email.service';
 import { contactUs } from '../data/blurb';
 import { CanonicalService } from '../services/canonical.service';
 import { contactHeading } from '../data/heading';
+import { contactPageContent, contactPageTitle } from '../data/title';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-contact',
@@ -29,8 +31,11 @@ export class ContactComponent implements OnInit {
   contactHeading: string;
   submitted = false;
   contactUs: any;
-  
+  contactPageTitle: string;
+  contactPageContent: string;
   mailSent = false;
+  imageBaseUrl: any;
+  imagetype: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -39,14 +44,20 @@ export class ContactComponent implements OnInit {
     private meta: Meta,
     private formBuilder: FormBuilder,
     private canonical: CanonicalService,
+    private uaParserService: UaParserService,
+
     ) {
       this.canonical.create();
-    this.meta.addTag({
-      name: 'description',
-      content: `Do you have questions about the self storage unit services provided by Rifle Self Storage?
-      Use our online contact form or call today!`
-    });
-    this.titleService.setTitle('Contact Us | Rifle Self Storage');
+
+      this.fetchMetaData();
+
+      this.meta.addTag({
+        name: 'description',
+        content: `${this.contactPageContent}`
+      });
+      this.titleService.setTitle(`${this.contactPageTitle}`);
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+      this.imageBaseUrl = this.uaParserService.baseUrl;
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -67,6 +78,11 @@ export class ContactComponent implements OnInit {
 
   get f() { return this.contactForm.controls; }
 
+  public fetchMetaData () {
+    this.contactPageContent = contactPageContent;
+    this.contactPageTitle = contactPageTitle;
+  }
+
   public fetchContactDetails() {
     this.contactDetails = contact;
     this.contactHeading = contactHeading;
@@ -78,6 +94,10 @@ export class ContactComponent implements OnInit {
 
   public fetchContactUs() {
     this.contactUs = contactUs;
+  }
+
+  public getImageUrl(imageName: string) {
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 
   onSubmit() {

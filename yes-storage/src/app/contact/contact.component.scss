@@ -1,7 +1,20 @@
 @import "../../styles.scss";
 
-.contact-top {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Rifle_Storage/contact-us-optimized.jpg");
+.contact-top-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/webp/contact-us.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  height: 60vh;
+
+  .jumbotorn-top {
+    padding: 0% 8%;
+  }
+}
+
+.contact-top-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/jpg/contact-us.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;

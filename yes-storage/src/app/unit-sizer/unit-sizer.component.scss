@@ -1,9 +1,23 @@
 @import "../../styles.scss";
 
-.unit-sizer-top {
+.unit-sizer-top-webp {
   color: $white;
   height: 60vh;
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Rifle_Storage/storage-tips-optimized.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/webp/clutter.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+
+  .jumbotorn-top {
+    padding: 0% 8%;
+  }
+}
+
+.unit-sizer-top-jpg {
+  color: $white;
+  height: 60vh;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/jpg/clutter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;

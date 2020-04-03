@@ -1,7 +1,22 @@
 @import "../../styles.scss";
 
-.jumbotron {
-  background: url("../../assets/Yes_Storage/jpg/yes-storage-outdoor-self-storage-units.jpg");
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/jpg/yes-storage-outdoor-self-storage-units.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  height: 100vh;
+  color: $white;
+  border-radius: 0;
+
+  a {
+    margin-top: 20px;
+  }
+}
+
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/webp/yes-storage-outdoor-self-storage-units.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -77,6 +92,17 @@
       color: $primary;
       padding: 10px;
     }
+  }
+}
+
+.get-started--background {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+
+  .heading {
+    border-bottom: 2px solid $primary;
+    max-width: 300px;
+    margin: auto;
   }
 }
 
@@ -474,7 +500,7 @@
   .content-margin-top {
     margin-top: 36px;
   }
-  
+
   .bg-jumbotron {
     margin-top: 150px;
   }

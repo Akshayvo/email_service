@@ -14,9 +14,9 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'tel:2709850516',
+        redirect: 'tel:2704984573',
         label: 'Phone:',
-        data: '(270) 985-0516',
+        data: '(270) 498-4573',
         class: 'fas fa-phone mx-2 iconColor',
     }
 ];

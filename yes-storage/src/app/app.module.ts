@@ -52,6 +52,7 @@ import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confir
 import { PhotosComponent } from './photos/photos.component';
 import { ScriptHackComponent } from './scripthack/scripthack.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
+import { ReserveUnitComponent } from './api-bundle/reserve-unit/reserve-unit.component';
 
 @NgModule({
   declarations: [
@@ -88,6 +89,7 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
     UnitSizerComponent,
     ConfirmationPageComponent,
     ScriptHackComponent,
+    ReserveUnitComponent,
   ],
   imports: [
     CommonModule,

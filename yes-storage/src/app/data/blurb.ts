@@ -34,6 +34,13 @@ export const payRent = [
   },
 ];
 
+export const reserve = [
+  {
+    heading: ``,
+    blurb: ``,
+  },
+];
+
 export const contactUs = [
   {
     heading: ``,

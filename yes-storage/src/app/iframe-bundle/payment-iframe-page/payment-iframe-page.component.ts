@@ -7,6 +7,7 @@ import { CanonicalService } from '../../services/canonical.service';
 import { loginDetail } from '../../data/pay-rent';
 import { payRentHeading } from '../../data/heading';
 import { payRentPageContent, payRentPageTitle } from '../../data/title';
+import { UaParserService } from '../../services/ua-parser.service';
 
 @Component({
   selector: 'app-payment-iframe-page',
@@ -22,11 +23,15 @@ export class PaymentIframePageComponent implements OnInit {
   payRentPageTitle: string;
   payRentPageContent: string;
   payRentHeading: string;
+  imageBaseUrl: any;
+  imagetype: any;
 
   constructor(
     private titleService: Title,
     private meta: Meta,
     private canonical: CanonicalService,
+    private uaParserService: UaParserService,
+
     ) {
       this.fetchLoginDetail();
       this.fetchContactDetails();
@@ -38,7 +43,9 @@ export class PaymentIframePageComponent implements OnInit {
         content: `${this.payRentPageContent}`
       });
       this.titleService.setTitle(`${this.payRentPageTitle}`);
-  }
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+      this.imageBaseUrl = this.uaParserService.baseUrl;
+    }
 
   ngOnInit() {
     this.fetchPayment();
@@ -78,4 +85,9 @@ export class PaymentIframePageComponent implements OnInit {
   public fetchPayRent() {
     this.payRent = payRent;
   }
+
+  public getImageUrl(imageName: string) {
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
+  }
+
 }

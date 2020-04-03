@@ -4,6 +4,8 @@ import { Title, Meta } from '@angular/platform-browser';
 import { unitSizers } from '../data/blurb';
 import { CanonicalService } from '../services/canonical.service';
 import { unitSizerHeading } from '../data/heading';
+import { unitSizerPageContent, unitSizerPageTitle } from '../data/title';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-unit-sizer',
@@ -18,18 +20,28 @@ export class UnitSizerComponent implements OnInit {
   next: number;
   unitSizers: any;
   unitSizerHeading: any;
+  unitSizerPageTitle: string;
+  unitSizerPageContent: string;
+  imageBaseUrl: any;
+  imagetype: any;
+
 
   constructor(
     private titleService: Title,
     private meta: Meta,
     private canonical: CanonicalService,
+    private uaParserService: UaParserService,
     ) {
       this.canonical.create();
-    this.meta.addTag({
-      name: 'description',
-      content: `If you're not sure what will fit into the storage units we offer, check out our handy unit sizer page for a visual reference!`
-    });
-    this.titleService.setTitle('Unit Sizer | Rifle Self Storage');
+      this.fetchMetaData();
+
+      this.meta.addTag({
+        name: 'description',
+        content: `${this.unitSizerPageContent}`
+      });
+      this.titleService.setTitle(`${this.unitSizerPageTitle}`);
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+      this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {
@@ -50,6 +62,11 @@ export class UnitSizerComponent implements OnInit {
    */
   public fetchUnitSizer() {
     this.unitsizer = unitSizer;
+  }
+
+  public fetchMetaData() {
+    this.unitSizerPageContent = unitSizerPageContent;
+    this.unitSizerPageTitle = unitSizerPageTitle;
   }
 
   public fetchUnitsizers() {
@@ -89,5 +106,9 @@ export class UnitSizerComponent implements OnInit {
       this.next = this.current + 1;
     }
 
+  }
+
+  public getImageUrl(imageName: string) {
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 }

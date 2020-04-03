@@ -1,35 +1,40 @@
 @import "../../../styles.scss";
 
-img {
-  color: white;
-}
-
-.view-rates-top-webp {
+.reserve-top-webp {
   height: 60vh;
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/webp/row-of-units.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/webp/moving-boxes.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
-.view-rates-top-jpg {
+.reserve-top-jpg {
   height: 60vh;
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/jpg/row-of-units.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/jpg/moving-boxes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
-
-
 
 .jumbotorn-top {
   padding: 0 8%;
 }
 
-.view-rates-bottom {
+.payment-bottom {
   padding: 48px 0;
+}
+
+.display-none {
+  display: none;
+  visibility: hidden;
+}
+
+.vertical-line {
+  a {
+    color: white;
+  }
 }
 
 .bg-translucent {
@@ -52,46 +57,62 @@ img {
   margin-top: 64px;
 }
 
-
-.view-rates-map {
-  max-width: 100%;
-}
-
 .content-Holder {
-  p {
-    color: $fontColor;
-    text-align: justify;
-  }
+  // text-align: center;
+  color: $fontColor;
 
   h2 {
     color: $white;
     border-bottom: 1px solid $primary;
-    width: 250px;
     margin: auto;
     font-size: 2.25rem;
-    text-align: center;
+    width: 250px  ;
+  }
+}
+
+.scroll-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+
+  iframe {
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+.payment-link {
+  a {
+    color: $white;
+  }
+}
+
+.payment-map {
+  iframe {
+    max-width: 100%;
+    height: 350px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .view-rates-top {
+  .reserve-top {
     height: 40vh;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: initi;
     background-attachment: scroll;
+    background-position: center;
   }
 
   .content-margin-top {
     margin-top: 36px;
   }
 
-  .view-rates-bottom {
+  .payment-bottom {
     padding: 16px 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .view-rates-top {
+  .reserve-top {
     .jumbotorn-top {
       display: none;
     }
@@ -113,7 +134,7 @@ img {
     }
   }
 
-  .view-rates-top {
+  .reserve-top {
     .jumbotorn-top {
       display: none;
     }
@@ -128,7 +149,7 @@ img {
     }
   }
 
-  .view-rates-top {
+  .reserve-top {
     .jumbotorn-top {
       h1 {
         font-size: 2.5rem;
@@ -148,7 +169,7 @@ img {
     }
   }
 
-  .view-rates-top {
+  .reserve-top {
     .jumbotorn-top {
       top: 10%;
       position: relative;
@@ -157,7 +178,7 @@ img {
 }
 
 @media only screen and (min-width: 992px) and (min-height: 601px) and(max-height: 950px) {
-  .view-rates-top {
+  .reserve-top {
     .jumbotorn-top {
       h1 {
         font-size: 2.5rem;
@@ -176,5 +197,17 @@ img {
 @media only screen and (min-width: 992px) and (max-height: 600px) {
   .jumbotorn-top {
     display: none;
+  }
+
+  .scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    height: 600px;
+    overflow-y: scroll;
+
+    iframe {
+      width: 100%;
+      overflow: scroll;
+    }
   }
 }

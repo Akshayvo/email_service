@@ -1,4 +1,4 @@
-<div class="view-rates-top">
+<div class="view-rates-top" [ngClass]="imagetype === 'jpg' ? 'view-rates-top-jpg' : 'view-rates-top-webp' ">
   <div class="bg-translucent">
       <div class="container jumbotorn-top text-center " *ngFor="let viewRates of viewRates">
           <h1 class="pb-4">{{viewRates.heading}}</h1>
@@ -32,8 +32,7 @@
             </a> -->
 
             <img
-            src="../../../assets/Yes_Storage/jpg/yes-storage-outdoor-self-storage-units-square.jpg" alt="{{alt}}"
-            class="sectionImage">
+            src="{{imageBaseUrl}}/yes-storage-outdoor-self-storage-units-square.{{imagetype}}"            class="sectionImage">
         </div>
         <div class="anti pt-4"  *ngFor="let viewRate of viewRate"> 
           <p id="anchor" [innerHTML]="viewRate.p">

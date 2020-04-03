@@ -1,4 +1,4 @@
-<div class="payment-top">
+<div class="payment-top" [ngClass]="imagetype === 'jpg' ? 'payment-top-jpg' : 'payment-top-webp' ">
   <div class="bg-translucent">
     <div class="container jumbotorn-top text-center" *ngFor="let payRent of payRent">
         <h1 class="pb-4">{{payRent.heading}}</h1>

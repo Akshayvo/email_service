@@ -24,6 +24,7 @@ import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 import { ContactComponent } from '../contact/contact.component';
 import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confirmation-page.component';
+import { ReserveUnitComponent } from '../api-bundle/reserve-unit/reserve-unit.component';
 
 
 
@@ -32,7 +33,7 @@ import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confi
     { path: '', component: HomeComponent },
     { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'reserve', component: ReserveComponent },
+    { path: 'reserve', component: ReserveUnitComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     {

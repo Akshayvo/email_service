@@ -7,7 +7,7 @@ export const environment = {
   type: 0,  // { API: 0, iframe: 1 }
   errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  websiteUrl: 'https://riflestorageunits.com/',
+  websiteUrl: 'https://yesstorageusa.com/',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   appId: 'Yes Storage',
   VERSION: require('../../package.json').version,

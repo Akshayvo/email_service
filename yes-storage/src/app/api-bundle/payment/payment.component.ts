@@ -4,7 +4,11 @@ import { payment} from '../../data/payment';
 import { contact } from '../../data/contact';
 import { payRent } from '../../data/blurb';
 import { CanonicalService } from '../../services/canonical.service';
+import { loginDetail } from '../../data/pay-rent';
 import { payRentHeading } from '../../data/heading';
+import { payRentPageContent, payRentPageTitle } from '../../data/title';
+import { UaParserService } from '../../services/ua-parser.service';
+
 
 @Component({
   selector: 'app-payment',
@@ -16,32 +20,61 @@ export class PaymentComponent implements OnInit {
   payment: any;
   contact: any;
   payRent: any;
+  loginDetail = [];
+  payRentPageTitle: string;
+  payRentPageContent: string;
+  imageBaseUrl: any;
+  imagetype: any;
+
   payRentHeading: string;
 
   constructor(
     private titleService: Title,
     private meta: Meta,
     private canonical: CanonicalService,
+    private uaParserService: UaParserService,
     ) {
+      this.fetchLoginDetail();
+      this.fetchContactDetails();
       this.canonical.create();
-      this.fetchPayRentHeading();
-    this.meta.addTag({
-      name: 'description',
-    content: `Pay your rent online with our easy-to-use tenant bill-pay service!
-      Follow the instructions on the page or call (970) 230-1048 for help!`
-    });
-    this.titleService.setTitle('Pay Rent | Rifle Self Storage');
+      this.fetchMetaData();
+
+      this.meta.addTag({
+        name: 'description',
+        content: `${this.payRentPageContent}`
+      });
+      this.titleService.setTitle(`${this.payRentPageTitle}`);
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+      this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {
     this.fetchPayment();
     this.fetchContact();
     this.fetchPayRent();
+    this.fetchPayRentHeading();
     window.scrollTo(0, 0);
   }
 
   public fetchPayRentHeading() {
     this.payRentHeading = payRentHeading;
+  }
+
+
+  public fetchLoginDetail() {
+    this.loginDetail = loginDetail;
+  }
+
+
+  public fetchMetaData() {
+    this.payRentPageTitle = payRentPageTitle;
+    this.payRentPageContent = payRentPageContent;
+  }
+
+
+
+  public fetchContactDetails() {
+    this.contact = contact;
   }
 
   public fetchPayment() {
@@ -54,5 +87,9 @@ export class PaymentComponent implements OnInit {
 
   public fetchPayRent() {
     this.payRent = payRent;
+  }
+
+  public getImageUrl(imageName: string) {
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 }

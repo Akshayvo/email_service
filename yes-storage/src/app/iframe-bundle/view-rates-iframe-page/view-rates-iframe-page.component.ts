@@ -5,6 +5,7 @@ import { viewRates } from '../../data/blurb';
 import { CanonicalService } from '../../services/canonical.service';
 import { viewRatesHeading } from '../../data/heading';
 import { viewRatesPageContent, viewRatesPageTitle } from '../../data/title';
+import { UaParserService } from '../../services/ua-parser.service';
 
 @Component({
   selector: 'app-view-rates-iframe-page',
@@ -19,12 +20,17 @@ export class ViewRatesIframePageComponent implements OnInit {
   alt: string;
   viewRatesPageContent: string;
   viewRatesPageTitle: string;
+  imageBaseUrl: any;
+  imagetype: any;
+
 
 
   constructor(
     private titleService: Title,
     private meta: Meta,
     private canonical: CanonicalService,
+    private uaParserService: UaParserService,
+
     ) {
       this.fetchMetaData();
       this.canonical.create();
@@ -33,6 +39,8 @@ export class ViewRatesIframePageComponent implements OnInit {
         content: `${this.viewRatesPageContent}`
       });
       this.titleService.setTitle(`${this.viewRatesPageTitle}`);
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+      this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
 
@@ -55,6 +63,10 @@ export class ViewRatesIframePageComponent implements OnInit {
   public fetchMetaData () {
     this.viewRatesPageContent = viewRatesPageContent;
     this.viewRatesPageTitle = viewRatesPageTitle;
+  }
+
+  public getImageUrl(imageName: string) {
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 
 }

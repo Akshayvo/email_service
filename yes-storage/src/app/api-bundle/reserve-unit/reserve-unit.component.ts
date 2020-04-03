@@ -2,35 +2,32 @@ import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { reserveUnitHeading } from '../../data/heading';
 import { reservePageTitle, reservePageContent } from '../../data/title';
+import { reserve } from '../../data/blurb'; 
 import { UaParserService } from '../../services/ua-parser.service';
 import { CanonicalService } from '../../services/canonical.service';
-import { reserve } from '../../data/blurb';
 
 @Component({
-  selector: 'app-reserve-unit-iframe-page',
-  templateUrl: './reserve-unit-iframe-page.component.html',
-  styleUrls: ['./reserve-unit-iframe-page.component.scss']
+  selector: 'app-reserve-unit',
+  templateUrl: './reserve-unit.component.html',
+  styleUrls: ['./reserve-unit.component.scss']
 })
-export class ReserveUnitIframePageComponent implements OnInit {
+export class ReserveUnitComponent implements OnInit {
 
   reservePageContent: string;
   reservePageTitle: string;
   reserveUnitHeading: string;
+  reserve: any;
   imageBaseUrl: any;
   imagetype: any;
-  reserve: any;
-
 
   constructor(
     private titleService: Title,
-    private meta: Meta,
     private uaParserService: UaParserService,
     private canonical: CanonicalService,
+
+    private meta: Meta,
   ) {
     this.fetchMetaData();
-    this.canonical.create();
-    
-    this.fetchReserveUnitHeading();
     this.meta.addTag({
       name: 'description',
       content: `${this.reservePageContent}`
@@ -44,7 +41,6 @@ export class ReserveUnitIframePageComponent implements OnInit {
     window.scrollTo(0, 0);
     this.fetchReserveUnitHeading();
     this.fetchBlurb();
-
   }
 
   public fetchMetaData() {
@@ -60,8 +56,8 @@ export class ReserveUnitIframePageComponent implements OnInit {
     this.reserve = reserve;
   }
 
+  
   public getImageUrl(imageName: string) {
     return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
-
-}
+ }

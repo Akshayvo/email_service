@@ -5,6 +5,7 @@ import { viewRates } from '../../data/blurb';
 import { viewRatesHeading } from '../../data/heading';
 import { viewRatesPageContent, viewRatesPageTitle } from '../../data/title';
 import { CanonicalService } from '../../services/canonical.service';
+import { UaParserService } from '../../services/ua-parser.service';
 
 @Component({
   selector: 'app-view-rates',
@@ -20,11 +21,14 @@ export class ViewRatesComponent implements OnInit {
   alt: string;
   viewRatesPageContent: string;
   viewRatesPageTitle: string;
+  imageBaseUrl: any;
+  imagetype: any;
 
   constructor(
     private titleService: Title,
     private meta: Meta,
     private canonical: CanonicalService,
+    private uaParserService: UaParserService,
     ) {
       this.fetchMetaData();
       this.canonical.create();
@@ -33,6 +37,8 @@ export class ViewRatesComponent implements OnInit {
         content: `${this.viewRatesPageContent}`
       });
       this.titleService.setTitle(`${this.viewRatesPageTitle}`);
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+      this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {
@@ -54,5 +60,9 @@ export class ViewRatesComponent implements OnInit {
 
   public fetchViewRates() {
     this.viewRates = viewRates;
+  }
+
+  public getImageUrl(imageName: string) {
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 }

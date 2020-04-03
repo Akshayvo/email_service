@@ -1,13 +1,23 @@
 @import "../../../styles.scss";
 
-.payment-top {
+.payment-top-webp {
   height: 60vh;
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Rifle_Storage/pay-rent-optimized.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/webp/pay-rent.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
+
+.payment-top-jpg {
+  height: 60vh;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/jpg/pay-rent.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 
 .jumbotorn-top {
   padding: 0 8%;

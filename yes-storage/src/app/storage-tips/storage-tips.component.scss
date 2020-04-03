@@ -2,8 +2,17 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
 
-.storage-tips-top {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Rifle_Storage/rifle-self-storage-long-row-of-units.jpg");
+.storage-tips-top-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/webp/de-cluttered.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  height: 60vh;
+}
+
+.storage-tips-top-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/jpg/de-cluttered.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

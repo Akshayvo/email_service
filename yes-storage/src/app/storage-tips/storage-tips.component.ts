@@ -3,8 +3,10 @@ import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { storageTip, storageTipAccordion } from '../data/storage';
 import { storageTips } from '../data/blurb';
-import { CanonicalService } from '../services/canonical.service'
+import { CanonicalService } from '../services/canonical.service';
 import { storageTipsHeading } from '../data/heading';
+import { storageTipsTitle, storageTipsContent } from '../data/title';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-storage-tips',
@@ -17,19 +19,29 @@ export class StorageTipsComponent implements OnInit {
   storageTipAccordion: any;
   storageTips: any;
   storageTipsHeading: string;
+  storageTipsContent: string;
+  storageTipsTitle: string;
+  imageBaseUrl: any;
+  imagetype: any;
 
   constructor(@Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
     private canonical: CanonicalService,
+    private uaParserService: UaParserService,
+
     ) {
       this.canonical.create();
       this.fetchStorageTipsHeading();
-    this.meta.addTag({
-      name: 'description',
-      content: `Moving is stressful enough, use our handy storage tips page to make your experience a stress-free one! `
-    });
-    this.titleService.setTitle('Storage Tips | Rifle Self Storage');
+      this.fetchMetaData();
+
+      this.meta.addTag({
+        name: 'description',
+        content: `${this.storageTipsContent}`
+      });
+      this.titleService.setTitle(`${this.storageTipsTitle}`);
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+      this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {
@@ -37,6 +49,11 @@ export class StorageTipsComponent implements OnInit {
     this.fetchStorageTipAccordion();
     this.fetchStorageTips();
     window.scrollTo(0, 0);
+  }
+
+  public fetchMetaData() {
+    this.storageTipsTitle = storageTipsTitle;
+    this.storageTipsContent = storageTipsContent;
   }
 
   public fetchStorageTip() {
@@ -53,5 +70,9 @@ export class StorageTipsComponent implements OnInit {
 
   public fetchStorageTipsHeading() {
     this.storageTipsHeading = storageTipsHeading;
+  }
+
+  public getImageUrl(imageName: string) {
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 }

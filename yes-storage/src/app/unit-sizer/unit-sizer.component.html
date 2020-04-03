@@ -1,4 +1,4 @@
-<div class="unit-sizer-top">
+<div class="unit-sizer-top"  [ngClass]="imagetype === 'jpg' ? 'unit-sizer-top-jpg' : 'unit-sizer-top-webp' ">
   <div class="bg-translucent">
     <div class="container jumbotorn-top text-center" *ngFor="let unitSizers of unitSizers">
       <h1 class="pb-4">{{unitSizers.heading}}</h1>
@@ -58,7 +58,7 @@
                   <!--Image Carousel Starts Here-->
                   <div class="row image-carosel">
                     <div class="col-1 navigate-arrows-left text-center">
-                      <img src="../../assets/Yes_Storage/left.svg" alt="" (click)="moveLeft()">
+                      <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/left.svg" alt="" (click)="moveLeft()">
                     </div>
 
                     <div class="col-3 mx-0 px-0 text-center">
@@ -74,7 +74,7 @@
                     </div>
 
                     <div class="col-1 navigate-arrows-right text-center">
-                      <img src="../../assets/Yes_Storage/right.svg" alt="" (click)="moveRight()">
+                      <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/right.svg" alt="" (click)="moveRight()">
                     </div>
                   </div>
                   <!--Image Carousel Ends Here-->
