@@ -26,6 +26,9 @@ export const th = [
     data: `Rate`
   },
   {
+    data: 'Deposit'
+  },
+  {
     data: `Reserve a Unit`
   },
   {

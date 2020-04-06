@@ -17,6 +17,9 @@
           <td colspan="2" class="px-4 border text-center">
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
           </td>
+          <td colspan="2" class="px-4 border text-center">
+            <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount}}
+          </td>
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>
@@ -57,6 +60,13 @@
         <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" >
                 <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
             </div>
+        <!-- <div class="col-6 text-center">
+          <p class=" " *ngIf="lstUnitType.DepositAmount != null" ><b><u>Deposit</u></b></p>
+          <div class="" [class.climateBorder]="lstUnitType.DepositAmount != null">
+              <div class=" ClimateControlled" *ngIf="lstUnitType.DepositAmount != null" >{{lstUnitType.DepositAmount}}</div>
+          </div>
+
+        </div> -->
 
     </div>
     </div>
