@@ -1,5 +1,10 @@
 @import "../../../styles.scss";
 
+.display-temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .vertical-line {
   border-left: 1px solid black;

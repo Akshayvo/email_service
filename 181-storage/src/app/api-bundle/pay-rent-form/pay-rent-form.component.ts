@@ -408,7 +408,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   getPayMethods() {
    this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
       .subscribe(payTypesResponse => {
-        if (payTypesResponse.lstPayTypes == null ) {
+        if (!payTypesResponse.lstPayTypes) {
           console.log('lstPayTypes is empty');
         }
         this.lstPayTypes = payTypesResponse.lstPayTypes;
