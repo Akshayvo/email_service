@@ -10,7 +10,7 @@ export const viewRatesPageContent = `Review our current rates and availability, 
 export const reservePageTitle = `Reserve  | 181 Storage`;
 export const reservePageContent = `Are you ready to start de-cluttering your life and reclaiming that space around the house or work-site? Make your reservation here and store with us today!`;
 
-export const payRentPageTitle = `Pay Rent  | Storage Locker Ltd`;
+export const payRentPageTitle = `Pay Rent  | 181 Storage`;
 export const payRentPageContent = `Just follow the instructions on the page, or call our office to learn how to log into your account, pay your rent, or check your balance.`;
 
 
