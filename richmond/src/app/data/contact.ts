@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address:',
-        data: '3214 E Main St, Richmond, VT 05477',
+        data: '3170 E Main St, Richmond, VT 05477',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
@@ -30,7 +30,7 @@ export const contact = [
 export const hours = [
     {
         label: 'Monday - Friday: ',
-        data: '9:00AM to 5:00PM'
+        data: '6:00AM to 9:00PM'
     },
     {
         label: 'Saturday - Sunday',

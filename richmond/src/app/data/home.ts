@@ -5,19 +5,12 @@ export const featuresList = [
     },
     {
         td1: 'Online Bill Pay',
-        td2: 'Security Cameras'
+        td2: 'Affordable Rates'
     },
     {
         td1: 'Well-Lit Facility',
-        td2: 'Security System',
+        td2: 'Climate-Controlled Units Available',
     },
-    {
-        td1: 'Pin-Pad Activated Security Gate',
-        td2: 'Affordable Rates',
-    },
-    {
-        td1: 'Climate-Controlled Units Available'
-    }
 ];
 
 export const altText = `halfway open blue metal self storage unit revealing household belongings inside`;
@@ -37,10 +30,10 @@ export const aboutUs = [
         bill on your own schedule, just follow the instructions on the Pay Rent page. `,
     },
     {
-        p: `Not only are we a convenient storage facility, we also understand how important your belongings are, and we do our best to
-        provide a constant sense of security at Richmond Self Storage. Our well-lit, indoor units are behind a keypad activated entrance
-        and are covered by security cameras around the facility. Our convenience and security features come at extremely competitive rates!
-        Reserve your unit, or move in online, today! We look forward to meeting you!`,
+        p: `Not only are we a convenient storage facility, we also understand how important your belongings are,
+            and we do our best to provide a constant sense of security at Richmond Self Storage. Our convenience
+            and security features come at extremely competitive rates! Reserve your unit, or move in online, today!
+            We look forward to meeting you!`,
     },
 ];
 
