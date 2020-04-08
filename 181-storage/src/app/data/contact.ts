@@ -37,6 +37,10 @@ export const hours = [
         data: '11:00AM - 2:00PM'
     },
     {
+        label: 'Sunday: ',
+        data: 'By Appointment Only',
+    },
+    {
         label: 'Access Hours: ',
         data: '24 Hours a Day 7 Days a Week'
     }
