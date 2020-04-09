@@ -21,7 +21,7 @@ export const rates = [
         td2: 'RATE ',
     },
     {
-        td1: `Up to 32'`,
+        td1: `Up to 36'`,
         td2: `$70`
     },
     {
