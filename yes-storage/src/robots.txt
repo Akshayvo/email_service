@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://yesstorage-syrasoft.staging.com/sitemap.xml
+Sitemap: https://www.yesstorageusa.com/sitemap.xml
 User-agent: *
 Disallow:
