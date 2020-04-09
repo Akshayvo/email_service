@@ -23,9 +23,9 @@ export class ViewRatesIframePageComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: ``
+      content: `Check out the competitive rates for our high-quality self storage units! Access Storage is the premier storage facility in New Braunfels, TX`
     });
-    this.titleService.setTitle('');
+    this.titleService.setTitle('View Rates  | Access Self Storage');
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();

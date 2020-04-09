@@ -9,13 +9,10 @@
 }
 
 .jumbotron-overlay {
-  top: 40%;
-  position: absolute;
-  width: 800px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  // width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .offer {
@@ -165,10 +162,6 @@ h1 {
   .jumbotron-bottom {
     height: 120px;
   }
-
-  .jumbotron-overlay {
-    top: 50%;
-  }
 }
 
 @media only screen and (min-width: 1200px) and (max-height: 450px) {
@@ -180,17 +173,6 @@ h1 {
     h1 {
       font-size: 2em;
     }
-
-    .container {
-      height: 100%;
-      display: flex;
-    }
-  }
-
-  .jumbotron-overlay {
-    top: auto;
-    bottom: 0;
-    width: 100%;
   }
 
   .disp {
@@ -289,10 +271,6 @@ h1 {
   .jumbotron-bottom {
     height: 130px;
   }
-  
-  .jumbotron-overlay {
-    top: 50%;
-  }
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 450px) {
@@ -306,10 +284,6 @@ h1 {
       font-size: 2em;
     }
 
-    .container {
-      height: 100%;
-      display: flex;
-    }
   }
 
   .disp {
@@ -362,11 +336,6 @@ h1 {
     height: 150px;
   }
 
-  .jumbotron-overlay {
-    top: auto;
-    bottom: 0;
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -380,9 +349,6 @@ h1 {
     width: 85%;
   }
 
-  .jumbotron-overlay {
-    width: 600px;
-  }
 
   .feature-icon-style {
     padding: 12px 24px;
@@ -425,10 +391,6 @@ h1 {
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 700px) and (min-height: 481px) {
-  .jumbotron-overlay {
-    top: 50%;
-  }
-
   .jumbotron-top {
     height: 100vh;
   }
@@ -468,12 +430,6 @@ h1 {
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 480px) {
-  .jumbotron-overlay {
-    top: auto;
-    bottom: 0;
-    width: 100%;
-  }
-
   .jumbotron {
     text-align: center;
     background-attachment: unset;
@@ -482,11 +438,6 @@ h1 {
 
     h1 {
       font-size: 2em;
-    }
-
-    .container {
-      height: 100%;
-      display: flex;
     }
   }
 
@@ -531,12 +482,6 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
-  .jumbotron-overlay {
-    width: 100%;
-    top: auto;
-    bottom: 0;
-  }
-
   .jumbotron-top {
     height: 100vh;
   }
@@ -586,16 +531,11 @@ h1 {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: left;
+    background-position: center;
     height: 100vh;
 
     h1 {
       font-size: 2em;
-    }
-
-    .container {
-      height: 100%;
-      display: flex;
     }
   }
 
@@ -645,16 +585,9 @@ h1 {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    background-position: center;
     height: 100vh;
   }
-
-  .jumbotron-overlay {
-    width: 100%;
-    top: auto;
-    bottom: 0;
-  }
-
 
   .feature {
     display: none;
@@ -686,16 +619,11 @@ h1 {
 }
 
 @media only screen and (max-width: 429px) {
-  .jumbotron-overlay {
-    width: 100%;
-    top: auto;
-    bottom: 0;
-  }
 
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    background-position: center;
     height: 100vh;
   }
 

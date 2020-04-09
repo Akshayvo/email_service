@@ -12,9 +12,9 @@ export class ReserveUnitIframePageComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: ``
+      content: `Ready to reserve your unit at Access Storage? Click here to begin storing with New Braunfels's premier self storage facility!`
     });
-    this.titleService.setTitle('');
+    this.titleService.setTitle('Reserve Unit | Access Self Storage');
   }
 
   ngOnInit() {
