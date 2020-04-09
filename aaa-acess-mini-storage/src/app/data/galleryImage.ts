@@ -8,9 +8,9 @@ export const galleryHome = [
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `aaa-access-mini-storage-paved-parking`,
+    url: `aaa-access-mini-storage-climate-controlled`,
     // tslint:disable-next-line:max-line-length
-    thumb: `aaa-access-mini-storage-paved-parking`,
+    thumb: `aaa-access-mini-storage-climate-controlled`,
     alt: ` climate-controlled self storage units under bright lights in an enclosed and insulated building`
   },
   {
