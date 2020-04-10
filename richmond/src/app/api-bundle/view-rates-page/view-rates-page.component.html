@@ -14,9 +14,9 @@
           <td colspan="2" class="px-4 border text-center">
               {{lstUnitType.Description}}
           </td>
-          <td colspan="2" class="px-4 border text-center">
+          <!-- <td colspan="2" class="px-4 border text-center">
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
-          </td>
+          </td> -->
           <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount}}
         </td>
@@ -53,10 +53,10 @@
     <div class=" py-1 ">{{lstUnitType.Description}}</div>
     <div class="row">
         
-        <div class="col-6 text-center ">
+        <!-- <div class="col-6 text-center ">
             <p class=" "><b><u>Rate</u></b></p>
             <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</div>
-        </div>
+        </div> -->
         <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" >
                 <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
             </div>
