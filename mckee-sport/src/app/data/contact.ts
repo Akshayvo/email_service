@@ -13,9 +13,9 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'mailto:storagemck@gmail.com',
+        redirect: 'mailto:storageinmck@gmail.com',
         label: 'Email: ',
-        data: 'storagemck@gmail.com',
+        data: 'storageinmck@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
