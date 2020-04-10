@@ -1,16 +1,13 @@
 export const viewRates = [
     {
-      p: `Keypers Storage services both residential and commercial storage users with
-      high-quailty self storage options, and awesome customer service! Our facility has a
-      unit perfect for whatever your storage needs might be! From our 5-by-10 units with
-      enough space to store a bedroom and some boxes, to our super-sized 13-by-35 sized units,
-      we've got a perfect fit for you!`,
+      p: `Keypers Storage services both residential and commercial storage users with high-quailty self-storage options.
+      Our facility has a unit perfect for your storage needs! From our 10x10 units with enough space to store a bedroom
+      and some boxes, to our super-sized 12x35 units, we've got a fit for you!`,
     },
     {
-      p: `Do you need some extra protection from the elements for documents, antique furniture,
-      or other valuables? Try one of our climate-controlled self storage units! We also offer a
-      number of outdoor parking areas for recreational vehicles, boats or trailers. Store your
-      vehicle with us in the off-season, and re-claim that spot in your yard, today!`
+      p: `Do you need some extra peace-of-mind for those important documents, heirloom pieces, or other valuables?
+      Try one of our climate-controlled self-storage units! We also offer several outdoor parking areas for recreational
+      vehicles, boats or trailers. Store your vehicle with us in the off-season and re-claim that spot in your yard today!`
     }
 ];
 

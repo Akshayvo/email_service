@@ -19,7 +19,7 @@ export const storageTipsTitle = `Storage Tips  | Keypers Storage`;
 export const storageTipsContent = `Follow these easy self storage tips to make your stay with Keypers Storage a breeze! Have questions? Call (479) 474-4101, today!`;
 
 
-export const unitSizerPageTitle = `Unit Sizer  | Keypers Storage`;
+export const unitSizerPageTitle = `Unit Sizes | Keypers Storage`;
 export const unitSizerPageContent = `Are you not sure what size unit you require? Use this guide to help you figure out what fits inside the units offered at Keypers Storage!`;
 
 

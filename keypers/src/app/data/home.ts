@@ -35,37 +35,33 @@ export const featuresList = [
 
 export const altText = `self storage units with paved parking spaces around the building`;
 
-export const aboutUsHeading = `Affordable, 24-Hour Access Self Storage in Van Buren`;
+export const aboutUsHeading = `Affordable 24-Hour Access Self Storage & Parking in Van Buren`;
 
 export const aboutUs = [
     {
-        p: `Keypers Storage has been serving Van Buren and surrounding communities in Crawford and Sebastian County with
-        affordable, well-maintained regular, and climate-controlled self storage units, and awesome customer service since 2007.
-        Our facility is conveniently located on Pointer Trail between the Malco Van Buren Cinema, and the Van Buren Fine Arts Center,
-        so whether you're a business storing equipment, or, if you're a homeowner/renter storing furniture and clothing. `,
+        p: `Keypers Storage has been serving Van Buren and surrounding communities in Crawford and Sebastian County with since
+        2007. Whether you're a business storing equipment or a homeowner storing furniture, we can meet your needs with one of
+        our regular or climate-controlled units. Our facility is conveniently located on Pointer Trail between the Malco Van
+        Buren Cinema and the Van Buren High School. `,
     },
     {
-        p: `We know that self storage tends to come at stressful times in life, which is why our facility was built with
-        convenience in mind. We provide 24-hour access to your unit(s) with an electronic, keypad-activated gate, and a
-        24-hour helpline to assist any tenant with questions or a payment. Our website also offers online reservations,
-        and move-ins, as well as a payment portal for existing tenants to pay their rent around-the-clock. We are here to
-        make your storage project an easy one.`,
+        p: `We know that self-storage tends to come at stressful times in life, which is why our facility was built with convenience
+        in mind. We provide 24-hour access to your unit with an electronic, keypad-activated gate, and a 24-hour helpline to assist
+        any tenant with questions or payments. Our website also offers online reservations and move-ins, as well as a payment portal
+        for existing tenants to pay their rent around-the-clock. We are here to make your storage project an easy one.`,
     },
     {
-        p: `The staff at Keypers Storage also understands that security is a primary concern for self storage users, which is why
-        our facility is fully-fenced, well-lit, and covered by security cameras. Our managers also perform walkarounds to monitor
-        the facility, and ensure a sense of safety to our customers.`,
+        p: `The staff at Keypers Storage also understands that security is a primary concern for self-storage customers, which is
+        why our facility is fully fenced, well-lit, and covered by security cameras. Our managers also perform walkarounds to monitor
+        the facility and ensure a sense of safety for our customers.`,
     },
     {
-        p: `Whether you're a growing business searching for equipment, inventory, or supply storage at affordable rates,
-        or are a homeowner or renter with a move, renovation, or downsizing project coming, we've got you covered! Call
-        our facility, and learn more today!`
+        p: `Whether you're a business searching for equipment, inventory, or supply storage, or a homeowner preparing for a move,
+        renovation, or downsizing project, we've got you covered with our affordable rates. Call our facility and learn more today!`
     }
 ];
 
-export const gettingStarted = `Start that renovation, or home project you've been putting off today, and store
-your belongings at Keypers Storage!
-`;
+export const gettingStarted = `Start that home renovation project you've been putting off by storing your belongings at Keypers Storage!`;
 
 export const feature = [
     {
