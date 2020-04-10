@@ -61,9 +61,9 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
-        label: 'Security Cameras On Premises',
-        alt: 'Icon of security camera'
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+        label: 'Well-Lit Facility',
+        alt: 'Icon of an illuminated light'
     },
 ];
 
