@@ -1,7 +1,7 @@
 <div class="col-md-12 display bg-primary py-lg-3 py-md-2 py-1">
   <div class="container">
     <div class="contact-header">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-md-10 col-11 custom-padding">
           <span class="contact-details pr-lg-4 pr-md-2 pr-2" *ngFor="let contact of contact">
             <span  *ngIf="contact?.id !== 0 else other_content">
@@ -45,7 +45,12 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
       <ul class="navbar-nav ml-auto navbar-nav-scroll">
         <li class="nav-item px-2 text-center" *ngFor="let nav of navLinks">
-          <a class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
+          <!-- <a class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" [routerLinkActiveOptions]="{exact: true}"
+          (click)="onClick(menu)">{{nav.label}}</a> -->
+          <a class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)" *ngIf="nav?.path != '/pay-rent'">{{nav.label}}</a>
+          <a class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)" *ngIf="nav?.path === '/pay-rent'">{{nav.label}}</a>
         </li>
       </ul>
     </div>

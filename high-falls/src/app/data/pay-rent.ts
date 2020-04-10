@@ -1,7 +1,7 @@
 export const loginDetail = [
     {
         userName: `Tenant's Last Name`,
-        password: `Tenant's gate access code`,
+        password: `Tenant's gate access code without the * at the end.`,
         example: {
             code: '1234',
             userName: 'smith',
