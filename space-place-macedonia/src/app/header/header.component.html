@@ -1,0 +1,39 @@
+<div class="header-style">
+    <div class="container  p-2 display-style">
+      <div>
+        <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
+          <i [class]="contact?.class"></i><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+          <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
+        </span>
+      </div>
+      <!-- <div>
+          <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
+              <a [href]="social?.path" target="_blank">
+                <i [class]="social?.class"></i>
+              </a>
+            </span>
+      </div> -->
+    </div>
+  </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
+  <div class="container navbar-button">
+    <a class="navbar-brand" (click)="navigate('/')">
+      <img src="{{imageBaseUrl}}/yes-storage.{{imagetype}}" width="auto" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
+      <ul class="navbar-nav ml-auto navbar-nav-scroll">
+        <li class="nav-item link-padding" *ngFor="let nav of navLinks">
+         <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLinkActiveOptions]="{exact: true}" 
+         *ngIf="nav?.path != '/pay-rent'" [routerLink]="nav?.path" (click)="onClick(menu)">{{nav.label}}</a>
+         <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLinkActiveOptions]="{exact: false}" 
+         *ngIf="nav?.path === '/pay-rent'" [routerLink]="nav?.path" (click)="onClick(menu)">{{nav.label}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

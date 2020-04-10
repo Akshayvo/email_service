@@ -1,0 +1,146 @@
+
+// // Custom Theming for Angular Material
+// // For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// // Plus imports for other components in your app.
+
+// // Include the common styles for Angular Material. We include this here so that you only
+// // have to load a single css file for Angular Material in your app.
+// // Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// // Define the palettes for your theme using the Material Design palettes available in palette.scss
+// // (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// // hue. Available color palettes: https://material.io/design/color/
+$yes-storage-primary: mat-palette($mat-indigo);
+$yes-storage-accent: mat-palette($mat-pink, a200, a100, a400);
+
+// // The warn palette is optional (defaults to red).
+$yes-storage-warn: mat-palette($mat-red);
+
+// // Create the theme object (a Sass map containing all of the palettes).
+$yes-storage-theme: mat-light-theme($yes-storage-primary, $yes-storage-accent, $yes-storage-warn);
+
+// // Include theme styles for core and each component used in your app.
+// // Alternatively, you can import and @include the theme mixins for each component
+// // that you are using.
+@include angular-material-theme($yes-storage-theme);/* You can add global styles to this file, and also import other style files */
+
+
+//Basic color and font styles
+$primary: #cf301e;
+$primaryDark: #831b0f;
+
+// $primary: #FF9800;
+// $primaryDark: #EF6C00;
+$secondary: #212121;
+
+$dark: rgba(0, 0, 0, 0.2);
+$light: #efefef;
+$white: #fff;
+
+$border: #707070;
+$shadow: #0000;
+
+$dark-background: #404040;
+
+$fontColor: $white;
+// $primaryFont: 'Roboto';
+$primaryFont: "Lato", sans-serif;
+
+html,
+body {
+  // font: $primaryFont;
+  font-family: $primaryFont;
+}
+
+.justify {
+  text-align: justify;
+}
+
+// Different Background colors
+.bg-secondary {
+  background: $secondary !important;
+}
+
+// .bg-dark {
+//   background: $dark !important;
+// }
+
+.bg-light {
+  background: $light !important;
+}
+
+.bg-translucent {
+  background: rgba(0, 0, 0, 0.72);
+  width: auto !important;
+  height: 100vh;
+}
+
+.bg-translucent1 {
+  width: auto !important;
+  height: 100vh;
+}
+
+.bg-jumbotron-background {
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.bg-dark-background {
+  background: $dark-background;
+}
+
+// Content Holder Styles
+.contentHolder {
+  min-height: 94vh;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  color: white !important;
+  min-width: 200px;
+  border-radius: 25px;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
+  border-radius: 25px;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border-color: $primary;
+  border: 1px solid $primary;
+  min-width: 200px;
+  color: $white !important;
+  border-radius: 25px;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  background-color: $primaryDark !important;
+  border-color: $primaryDark !important;
+  border-radius: 25px;
+  color: white !important;
+}
+
+.section-headings {
+  font-weight: 200;
+}
+
+.contact-map {
+  width: 100%;
+}
+
+.heading {
+  font-weight: 400;
+}
+
+.sectionImage {
+  width: 100%;
+}
