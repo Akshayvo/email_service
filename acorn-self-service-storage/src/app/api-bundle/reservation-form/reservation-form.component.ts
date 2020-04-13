@@ -2,60 +2,39 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { contact, hours, accesshours } from '../data/contact';
-import { EmailService } from '../services/email.service';
-import { MetaService } from '../services/link.service';
-import { contactPageContent, contactPageTitle } from '../data/title';
-import { contactHeading } from '../data/heading';
+import { contact, hours, accesshours } from '../../data/contact';
+import { EmailService } from '../../services/email.service';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  selector: 'app-reservation-form',
+  templateUrl: './reservation-form.component.html',
+  styleUrls: ['./reservation-form.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class ReservationFormComponent implements OnInit {
 
-  contactHeading: string;
+  contactForm: FormGroup;
   contactDetails: any;
   hours: any;
-  name: string;
-  email: any;
-  message: string;
-  contactInfo: any;
+  accesshours: any;
+  submitted = false;
   receiveremail: string;
   completeMessage: string;
-  contactForm: FormGroup;
-  submitted = false;
   mailSent = false;
-  head: any;
-  phone: any;
-  contactPageContent: string;
-  contactPageTitle: string;
-  accesshours: any;
+  fullName: string;
+
 
   constructor(
+    private formBuilder: FormBuilder,
     private router: Router,
     private emailService: EmailService,
-    private titleService: Title,
-    private meta: Meta,
-    private formBuilder: FormBuilder,
-    private metaService: MetaService,
 
-  ) {
-    this.fetchMetaData();
-    this.meta.addTag({
-      name: 'description',
-      content: `${this.contactPageContent}`
-    });
-    this.titleService.setTitle(`${this.contactPageTitle}`);
-    this.metaService.createCanonicalURL();
-  }
-
+  ) { }
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
     this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
       phone: ['', [Validators.required,
       Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
       email: ['', [Validators.required, Validators.email]],
@@ -69,14 +48,8 @@ export class ContactComponent implements OnInit {
     this.router.navigate([location]);
   }
 
-  public fetchMetaData() {
-    this.contactPageTitle = contactPageTitle;
-    this.contactPageContent = contactPageContent;
-  }
-
   public fetchContactDetails() {
     this.contactDetails = contact;
-    this.contactHeading = contactHeading;
   }
 
   public fetchHours() {
@@ -94,7 +67,7 @@ export class ContactComponent implements OnInit {
        return;
    } else {
     if ( !this.contactForm.value.subject) {
-      this.contactForm.value.subject = 'Website Form Submission';
+      this.contactForm.value.subject = 'Website Reservation Request';
     }
 
      this.receiveremail = this.contactDetails[2].data;
@@ -102,12 +75,14 @@ export class ContactComponent implements OnInit {
      this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
      message: ${this.contactForm.value.message}`;
 
+     this.fullName = `${this.contactForm.value.firstName} ${this.contactForm.value.lastName}`;
+
          const body = {
-           name: this.contactForm.value.name,
-           email: this.contactForm.value.email,
-           receiveremail: this.receiveremail,
-           message: this.completeMessage,
-           subject: this.contactForm.value.subject,
+          name: this.fullName,
+          email: this.contactForm.value.email,
+          receiveremail: this.receiveremail,
+          message: this.completeMessage,
+          subject: this.contactForm.value.subject,
          };
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {

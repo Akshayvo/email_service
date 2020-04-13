@@ -50,6 +50,7 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { PhotosComponent } from './photos/photos.component';
+import { ReservationFormComponent } from './api-bundle/reservation-form/reservation-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -81,6 +82,7 @@ import { PhotosComponent } from './photos/photos.component';
     PhotosComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
+    ReservationFormComponent,
   ],
   imports: [
     CommonModule,
