@@ -39,8 +39,8 @@ export const aboutUsHeading = `Affordable 24-Hour Access Self Storage & Parking 
 
 export const aboutUs = [
     {
-        p: `Keypers Storage has been serving Van Buren and surrounding communities in Crawford and Sebastian County with since
-        2007. Whether you're a business storing equipment or a homeowner storing furniture, we can meet your needs with one of
+        p: `Keypers Storage has been serving Van Buren and surrounding communities in Crawford and Sebastian County since 2007.
+        Whether you're a business storing equipment or a homeowner storing furniture, we can meet your needs with one of
         our regular or climate-controlled units. Our facility is conveniently located on Pointer Trail between the Malco Van
         Buren Cinema and the Van Buren High School. `,
     },

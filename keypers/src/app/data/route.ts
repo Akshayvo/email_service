@@ -28,7 +28,7 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
  export const apiRoutes = [
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
-    { path: 'unit-sizer', component: UnitSizerComponent},
+    { path: 'unit-sizes', component: UnitSizerComponent},
     { path: 'storage-tips', component: StorageTipsComponent },
     { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
@@ -78,7 +78,7 @@ export const iFrameRoutes = [
     { path: 'storage-tips', component: StorageTipsComponent },
     { path: 'view-rates', component: ViewRatesIframePageComponent },
     { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
-    { path: 'unit-sizer', component: UnitSizerComponent},
+    { path: 'unit-sizes', component: UnitSizerComponent},
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'review', component: HomeComponent,

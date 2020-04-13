@@ -34,7 +34,7 @@ export const unitSizer = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     size: '10\' x 20\'',
     heading: '10\' x 20\' Storage Unit',
     alt: '10\' x 20\' Storage Unit Graphic ',
@@ -49,7 +49,7 @@ export const unitSizer = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     size: '10\' x 30\'',
     heading: '10\' x 30\' Storage Unit',
     alt: '10\' x 30\' Storage Unit Graphic ',

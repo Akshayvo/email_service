@@ -12,8 +12,8 @@ export const navLinks = [
         path: '/pay-rent',
     },
     {
-        label: 'UNIT SIZER',
-        path: '/unit-sizer',
+        label: 'UNIT SIZES',
+        path: '/unit-sizes',
     },
     {
         label: 'STORAGE TIPS',
