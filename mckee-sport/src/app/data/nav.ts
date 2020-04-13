@@ -9,7 +9,6 @@ export const navLinks = [
         path: '/unit-availability',
         type: 'link'
     },
- 
     {
         label: 'PAY RENT',
         path: '/pay-rent',

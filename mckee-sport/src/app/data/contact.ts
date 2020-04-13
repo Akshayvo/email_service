@@ -13,7 +13,7 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'mailto:storageinmck@gmail.com',
+    redirect: 'mailto:storageinmck@gmail.com',
         label: 'Email: ',
         data: 'storageinmck@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',

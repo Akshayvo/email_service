@@ -1,7 +1,9 @@
 import { Component, OnInit , Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { dataViewRates } from '../data/view-rates';
+import { viewRates } from '../data/view-rates';
+import { carBotRvTitle, carBotRvContent } from '../data/title';
+import { carBotRvHeading } from '../data/heading';
 
 @Component({
   selector: 'app-bot-and-rv',
@@ -12,25 +14,37 @@ export class BotAndRvComponent implements OnInit {
 
   currentActive: any = 'BOAT & RV STORAGE';
   dataViewRates: any;
+  carBotRvTitle: any;
+  carBotRvContent: any;
+  carBotRvHeading: string;
+
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `At McKeesport Storage, we offer short-term contracts, which are perfect for your car, boat, or recreational vehicle parking during the offseason!`
+      content: `${this.carBotRvContent}`
     });
-    this.titleService.setTitle('Car, Boat & RV Storage | McKeeSport Storage: Christy Park');
+    this.titleService.setTitle(`${this.carBotRvTitle}`);
    }
 
   ngOnInit() {
     window.scrollTo(0, 0);
     this.viewRates();
   }
+
+  public fetchMetaData() {
+    this.carBotRvTitle = carBotRvTitle;
+    this.carBotRvContent = carBotRvContent;
+  }
+
   public viewRates() {
-    this.dataViewRates = dataViewRates;
+    this.dataViewRates = viewRates;
+    this.carBotRvHeading = carBotRvHeading;
   }
 }
 

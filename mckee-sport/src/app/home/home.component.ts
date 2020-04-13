@@ -5,6 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, feature, blurb, gettingStarted} from '../data/home';
+import { homePageTitle, homePageContent } from '../data/title';
 
 @Component({
   selector: 'app-home',
@@ -23,6 +24,8 @@ export class HomeComponent implements OnInit {
   feature: any;
   gettingStarted: any;
   currentActive: any = 'HOME';
+  homePageTitle: string;
+  homePageContent: string;
 
 
   constructor(
@@ -31,11 +34,12 @@ export class HomeComponent implements OnInit {
     private titleService: Title,
     private meta: Meta
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: ` McKeesport Storage: Christy Park is your one-stop-shop for all things storage in McKeesport, PA`
+      content: `${this.homePageContent}`
     });
-    this.titleService.setTitle('Self, Boat & RV Storage in McKeesport | McKeesport Storage: Christy Park');
+    this.titleService.setTitle(`${this.homePageTitle}`);
   }
 
   public navigate(location: any) {
@@ -53,6 +57,11 @@ export class HomeComponent implements OnInit {
 
   public fetchContactDetails() {
     this.contactDetails = contact;
+  }
+
+  public fetchMetaData() {
+    this.homePageTitle = homePageTitle;
+    this.homePageContent = homePageContent;
   }
 
   public fetchHours() {

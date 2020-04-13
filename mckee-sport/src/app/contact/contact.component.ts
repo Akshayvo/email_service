@@ -4,6 +4,8 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, hours } from '../data/contact';
+import { contactPageTitle, contactPageContent } from '../data/title';
+import { contactHeading } from '../data/heading';
 
 
 @Component({
@@ -27,6 +29,9 @@ export class ContactComponent implements OnInit {
   submitted = false;
   mailSent = false;
   subject: string;
+  contactPageContent: any;
+  contactPageTitle: any;
+  contactHeading: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -35,11 +40,12 @@ export class ContactComponent implements OnInit {
     private meta: Meta,
     private formBuilder: FormBuilder
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Do you have a question about your account, or our self storage, boat and recreational vehicle storage? Use our contact form, or call us today!`
+      content: `${this.contactPageContent}`
     });
-    this.titleService.setTitle('Contact Us | McKeesport Storage: Christy Park');
+    this.titleService.setTitle(`${this.contactPageTitle}`);
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -60,10 +66,17 @@ export class ContactComponent implements OnInit {
   get f() { return this.contactForm.controls; }
   public fetchContactDetails() {
     this.contactInfo = contact;
+    this.contactHeading = contactHeading;
+
   }
 
   public fetchHours() {
     this.hours = hours;
+  }
+
+  public fetchMetaData() {
+    this.contactPageTitle = contactPageTitle;
+    this.contactPageContent = contactPageContent;
   }
 
   onSubmit() {
