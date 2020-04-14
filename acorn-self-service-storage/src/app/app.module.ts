@@ -12,7 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-// import { ViewRatesComponent } from './view-rates/view-rates.component';
+// import { ViewRatesComponent } from './view-units/view-rates.component';
 import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
 import { AccordionComponent } from './accordion/accordion.component';

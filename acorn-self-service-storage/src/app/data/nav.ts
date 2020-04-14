@@ -4,8 +4,8 @@ export const navLinks = [
         path: '/',
     },
     {
-        label: 'VIEW RATES',
-        path: '/view-rates',
+        label: 'VIEW UNITS',
+        path: '/view-units',
     },
     {
         label: 'PAY RENT',

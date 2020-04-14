@@ -34,7 +34,7 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     {
-      path: 'view-rates',
+      path: 'view-units',
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
@@ -76,7 +76,7 @@ export const iFrameRoutes = [
     { path: '', component: HomeComponent },
     { path: 'pay-rent', component: PaymentIframePageComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'view-rates', component: ViewRatesIframePageComponent },
+    { path: 'view-units', component: ViewRatesIframePageComponent },
     { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
     { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storageTips', component: StorageTipsComponent },

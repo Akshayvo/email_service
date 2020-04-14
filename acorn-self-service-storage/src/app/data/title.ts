@@ -3,9 +3,9 @@ export const homePageContent = `Acorn Self Storage serves Westbrook and the surr
 with a variety of well-maintained and affordable self storage units. Reserve your unit, today!`;
 
 
-export const viewRatesPageTitle = `View Rates  | Acorn Self Storage`;
-export const viewRatesPageContent = `Review our current rates and availability, then reserve your unit
-                                     in minutes with our easy online reservation form!`;
+export const viewRatesPageTitle = `View Units  | Acorn Self Storage`;
+export const viewRatesPageContent = `Take a moment to review the unit sizes that we have available,
+and submit your reservation request with our form, or call our friendly management team! We can't wait to meet you!`;
 
 
 export const reservePageTitle = `Reserve Unit | Acorn Self Storage`;
