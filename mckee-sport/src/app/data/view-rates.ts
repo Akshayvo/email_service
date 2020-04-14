@@ -19,18 +19,18 @@ export const th = [
   {
     data: `Size`
   },
-//   {
-//     data: `Rate`
-//   },
+  {
+    data: `Rate`
+  },
   // {
   //   data: `Annual Rate`,
   // },
 //   {
 //     data: 'Deposit'
 //   },
-//   {
-//     data: `Reserve a Unit`
-//   },
+  {
+    data: `Reserve a Unit`
+  },
   // {
   //   data: `Move In`
   // },

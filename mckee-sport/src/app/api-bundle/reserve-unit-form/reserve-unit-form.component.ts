@@ -186,12 +186,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       };
     }
 
-      if ((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve-unit')) {
+      if ((this.router.url === '/unit-availability/reserve') || (this.router.url === '/reserve-unit')) {
         this.navigateToReserve = true;
         this.dataSharingService.navigateToReserve = true;
         this.dataSharingService.navigateToMoveIn = false;
       } else {
-        if (this.router.url ===  '/view-rates/move-in' ) {
+        if (this.router.url ===  '/unit-availability/move-in' ) {
           this.navigateToMoveIn = true;
           this.dataSharingService.navigateToMoveIn = true;
           this.dataSharingService.navigateToReserve = false;
