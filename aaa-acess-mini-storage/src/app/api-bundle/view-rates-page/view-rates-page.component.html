@@ -20,9 +20,9 @@
           <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount}}
         </td>
-          <!-- <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
+          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-          </td> -->
+          </td>
           <!-- <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </td> -->
@@ -34,12 +34,12 @@
             {{defaultClimateString}}
           </td>
           </ng-template>
-          <!-- <ng-template #other_reserve>
+          <ng-template #other_reserve>
             <td colspan="2" class="py-2 px-4 border">
             <div class="text-center">Please call the facility to reserve a unit.</div>
           </td>
           </ng-template>
-          <ng-template #other_moveIn>
+          <!-- <ng-template #other_moveIn>
             <td colspan="2" class="py-2 px-4 border">
             <div class="text-center">Please call the facility to move in.</div>
           </td>
