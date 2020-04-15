@@ -2,7 +2,7 @@
 .contact-button {
   position: fixed;
   right: 0;
-  top: 110px;
+  top: 170px;
   z-index: 16;
 }
 
@@ -53,5 +53,18 @@ button {
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 16;
+  }
+}
+
+
+@media only screen and (max-width: 517px) and (min-width: 363px) {
+  .contact-button {
+    top: 200px;
+  }
+}
+
+@media only screen and (max-width: 362px) {
+  .contact-button {
+    top: 230px;
   }
 }
