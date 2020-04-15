@@ -5,6 +5,9 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
 import { contactUs } from '../data/blurb';
+import { contactPageTitle, contactPageContent } from '../data/title';
+import { contactHeading } from '../data/heading';
+
 
 @Component({
   selector: 'app-contact',
@@ -27,6 +30,9 @@ export class ContactComponent implements OnInit {
   submitted = false;
   contactUs: any;
   mailSent = false;
+  contactPageTitle: string;
+  contactPageContent: string;
+  contactheading: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -35,12 +41,12 @@ export class ContactComponent implements OnInit {
     private meta: Meta,
     private formBuilder: FormBuilder,
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `If you've got a question about our services or your account,
-      you can find information on how to contact us here!`
+      content: `${this.contactPageContent}`
     });
-    this.titleService.setTitle('Contact US | Space Place Macedonia');
+    this.titleService.setTitle(`${this.contactPageTitle}`);
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -65,12 +71,18 @@ export class ContactComponent implements OnInit {
     this.contactDetails = contact;
   }
 
+  public fetchMetaData () {
+    this.contactPageContent = contactPageContent;
+    this.contactPageTitle = contactPageTitle;
+  }
+
   public fetchHours() {
     this.hours = hours;
   }
 
   public fetchContactUs() {
     this.contactUs = contactUs;
+    this.contactheading = contactHeading;
   }
 
   onSubmit() {

@@ -68,7 +68,7 @@ import { ReserveUnitComponent } from '../api-bundle/reserve-unit/reserve-unit.co
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: ''
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJwy2tOdUfMYgRj16cc9LEhXcg'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -90,7 +90,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: ''
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJwy2tOdUfMYgRj16cc9LEhXcg'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },

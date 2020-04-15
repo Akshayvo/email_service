@@ -8,6 +8,10 @@ export const navLinks = [
         path: '/view-rates',
     },
     {
+        label: 'RESERVE UNIT',
+        path: '/reserve',
+    },
+    {
         label: 'UNIT SIZER',
         path: '/unit-sizer',
     },

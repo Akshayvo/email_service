@@ -11,6 +11,9 @@
 .display-card {
   display: block;
 }
+.mobile {
+  color: #fff;
+}
 
 .card-text {
   width: 150px;
@@ -110,5 +113,11 @@ p{
 @media only screen and (max-width:991px) {
   .viewrates-desktop{
     display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .btn-primary {
+    min-width: unset;
   }
 }

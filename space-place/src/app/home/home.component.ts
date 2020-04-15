@@ -4,6 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, feature } from '../data/home';
+import { homePageTitle, homePageContent } from '../data/title';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,8 @@ export class HomeComponent implements OnInit {
   aboutUs: any;
   feature: any;
   currentActive: any = 'HOME';
+  homePageTitle: string;
+  homePageContent: string;
 
 
   constructor(
@@ -25,12 +28,12 @@ export class HomeComponent implements OnInit {
     private titleService: Title,
     private meta: Meta
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `We are the number one self storage facility in Macedonia, serving communities in Summit
-      County Ohio with high quality self storage and customer service.`
+      content: `${this.homePageContent}`
     });
-    this.titleService.setTitle('Affordable Storage in Macedonia | Space Place Macedonia, LLC');
+    this.titleService.setTitle(`${this.homePageTitle}`);
   }
 
   public navigate(location: any) {
@@ -48,6 +51,11 @@ export class HomeComponent implements OnInit {
 
   public fetchContactDetails() {
     this.contactDetails = contact;
+  }
+
+  public fetchMetaData () {
+    this.homePageTitle = homePageTitle;
+    this.homePageContent = homePageContent;
   }
 
   public fetchHours() {

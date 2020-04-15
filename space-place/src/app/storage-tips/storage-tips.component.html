@@ -9,7 +9,8 @@
 
 <div class="content-Holder bg-dark-background storage-tips-bottom">
   <div class="container py-5 ">
-    <div class="row accordion-background">
+      <h2 class="pb-3">{{storageTipsHeading}}</h2>
+    <div class="row accordion-background content-margin-top">
       <div class="col-md-6 py-3 ul-padding">
         <ul class="text-left"><li class="storage-left" *ngFor="let store of storageTip" >{{store.data}}</li ></ul>
       </div>

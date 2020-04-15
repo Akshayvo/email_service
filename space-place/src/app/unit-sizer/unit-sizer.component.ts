@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
 import { unitSizers } from '../data/blurb';
+import { unitSizerPageTitle, unitSizerPageContent } from '../data/title';
+import { unitSizerHeading } from '../data/heading';
 
 @Component({
   selector: 'app-unit-sizer',
@@ -15,17 +17,20 @@ export class UnitSizerComponent implements OnInit {
   current: number;
   next: number;
   unitSizers: any;
+  unitSizerHeading: string;
+  unitSizerPageTitle: string;
+  unitSizerPageContent: string;
 
   constructor(
     private titleService: Title,
     private meta: Meta
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `If you're not sure what size unit you require, use our sizing chart to figure
-      out what will suit your needs!`
+      content: `${this.unitSizerPageContent}`
     });
-    this.titleService.setTitle('Unit Sizer | Space Place Macedonia, LLC');
+    this.titleService.setTitle(`${this.unitSizerPageTitle}`);
   }
 
   ngOnInit() {
@@ -41,8 +46,13 @@ export class UnitSizerComponent implements OnInit {
   /**
    * fetchUnitSizer
    */
+  public fetchMetaData () {
+    this.unitSizerPageContent = unitSizerPageContent;
+    this.unitSizerPageTitle = unitSizerPageTitle;
+  }
   public fetchUnitSizer() {
     this.unitsizer = unitSizer;
+    this.unitSizerHeading = unitSizerHeading;
   }
 
   public fetchUnitsizers() {

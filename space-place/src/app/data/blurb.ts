@@ -34,6 +34,14 @@ export const payRent = [
   },
 ];
 
+export const reserve = [
+  {
+    heading: `Reserve Unit`,
+    blurb: `Reserve your unit, and start de-cluttering your home, office, or worksite by filling out
+    the form below! Our on-site manager will be in touch shortly!`,
+  },
+];
+
 export const contactUs = [
   {
     heading: `Contact Space Place Macedonia

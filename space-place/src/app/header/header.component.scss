@@ -8,6 +8,11 @@ a {
   color: $primary;
 }
 
+.link-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .contact-header {
   display: inline;
 
@@ -31,7 +36,7 @@ a {
   }
 
   .nav-link-active {
-    color: $primary;
+    color: $primary ;
     border-bottom: 1px solid $primary;
   }
 
@@ -60,9 +65,16 @@ a {
 
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0;
+  .nav-link[_ngcontent-app-root-c1] {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+  }
+  .link-padding {
     padding-left: 0;
+    padding-right: 0;
   }
 }
 

@@ -3,6 +3,8 @@ import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { storageTip, storageTipAccordion } from '../data/storage';
 import { storageTips } from '../data/blurb';
+import { storageTipsTitle, storageTipsContent } from '../data/title';
+import { storageTipsHeading } from '../data/heading';
 
 @Component({
   selector: 'app-storage-tips',
@@ -15,16 +17,20 @@ export class StorageTipsComponent implements OnInit {
   storageTipAccordion: any;
   storageTips: any;
   currentActive: any = 'STORAGE TIPS';
+  storageTipsTitle: string;
+  storageTipsContent: string;
+  storageTipsHeading: string;
 
   constructor(@Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Use these helpful self storage tips to make your stay with Space Place Macedonia even easier!`
+      content: `${this.storageTipsContent}`
     });
-    this.titleService.setTitle('Storage Tips | Space Place Macedonia');
+    this.titleService.setTitle(`${this.storageTipsTitle}`);
   }
 
   ngOnInit() {
@@ -34,6 +40,10 @@ export class StorageTipsComponent implements OnInit {
     window.scrollTo(0, 0);
   }
 
+  public fetchMetaData () {
+    this.storageTipsContent = storageTipsContent;
+    this.storageTipsTitle = storageTipsTitle;
+  }
   public fetchStorageTip() {
     this.storageTip = storageTip;
   }
@@ -44,6 +54,7 @@ export class StorageTipsComponent implements OnInit {
 
   public fetchStorageTips() {
     this.storageTips = storageTips;
+    this.storageTipsHeading = storageTipsHeading;
   }
 
 }
