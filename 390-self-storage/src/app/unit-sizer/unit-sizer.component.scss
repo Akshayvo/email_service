@@ -6,7 +6,7 @@
 }
 
 .padding-top {
-  padding-top: 90px;
+  padding-top: 130px;
 }
 
 .background-padding {
@@ -90,6 +90,25 @@ h1 {
   display: none;
 }
 
+@media only screen and (max-width: 1199px) and (min-width: 518px) {
+  .padding-top {
+    padding-top: 156px;
+  }
+}
+
+
+@media only screen and (max-width: 517px) and (min-width: 363px) {
+  .padding-top {
+    padding-top: 180px;
+  }
+}
+
+@media only screen and (max-width: 362px) {
+  .padding-top {
+    padding-top: 200px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .col-1 {
     img {
@@ -97,9 +116,9 @@ h1 {
     }
   }
 
-  .padding-top {
-    padding-top: 90px;
-  }
+  // .padding-top {
+  //   padding-top: 90px;
+  // }
 
   .unit-dimention {
     .active-unit {
