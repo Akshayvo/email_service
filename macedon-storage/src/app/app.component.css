@@ -2,7 +2,7 @@
 .contact-button {
   position: fixed;
   right: 0;
-  top: 110px;
+  top: 170px;
   z-index: 16;
 }
 
@@ -29,6 +29,7 @@ button {
   /* position: fixe; */
 }
 
+
 @media only screen and (max-width: 600px) {
   .contact-button {
     position: fixed;
@@ -53,5 +54,11 @@ button {
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 16;
+  }
+}
+
+@media only screen and (max-width: 517px) {
+  .contact-button {
+    top: 210px;
   }
 }
