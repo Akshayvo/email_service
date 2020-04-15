@@ -22,7 +22,7 @@
             <span *ngIf="lstUnitType.ReservationFee != null">$</span>{{lstUnitType.ReservationFee}}
         </td>
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
-              <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
+              <button (click)="navigate('/view-rates/reserve', lstUnitType )">Rent Unit</button>
           </td>
           <!-- <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
@@ -67,7 +67,7 @@
       <div class="col-6 d-flex justify-content-center" >
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other" >
           <div class=" py-1 buttons" >
-              <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
+              <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Rent Unit</button>
           </div>
           <!-- <div class="py-1 buttons">
               <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
