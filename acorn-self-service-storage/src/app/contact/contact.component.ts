@@ -62,7 +62,7 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required],
       subject: ['']
   });
-  }
+ }
 
   get f() { return this.contactForm.controls; }
   public navigate(location: any) {
@@ -97,7 +97,8 @@ export class ContactComponent implements OnInit {
       this.contactForm.value.subject = 'Website Form Submission';
     }
 
-     this.receiveremail = this.contactDetails[2].data;
+    const index = contact.findIndex(x => x.label === 'Email:');
+    this.receiveremail = this.contactDetails[index].data;
 
      this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
      message: ${this.contactForm.value.message}`;

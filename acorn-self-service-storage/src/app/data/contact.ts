@@ -5,21 +5,21 @@ export const contact = [
         data: '201 Larrabee Rd, Westbrook, ME 04092',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
+    // {
+    //     id: 1,
+    //     label: 'Office Address:',
+    //     data: 'P.O. Box 881 Natick, MA 01760',
+    //     class: 'fas fa-map-marker-alt mx-2 iconColor',
+    // },
     {
         id: 1,
-        label: 'Office Address:',
-        data: 'P.O. Box 881 Natick, MA 01760',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
-    },
-    {
-        id: 2,
         redirect: 'mailto:acorn201@outlook.com',
         data: 'acorn201@outlook.com',
         label: 'Email:',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
-        id: 3,
+        id: 2,
         redirect: 'tel:2078545403',
         label: 'Phone:',
         data: '(207) 854-5403',

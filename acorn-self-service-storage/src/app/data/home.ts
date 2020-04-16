@@ -4,12 +4,12 @@ export const featuresList = [
         td2: 'On-Site Manager'
     },
     {
-        td1: 'Moving Van Available',
+        td1: 'Contractor Friendly',
         td2: 'Individually Alarmed Units'
     },
     {
         td1: 'Moving Truck & Tractor Trailer Accessible',
-        td2: 'Pin-Pad Activated Security Gate'
+        td2: 'Promotional Offers Available - Please Inquire'
     },
 ];
 
