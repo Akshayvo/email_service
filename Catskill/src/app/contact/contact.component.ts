@@ -5,6 +5,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
 import { MetaService } from '../services/link.service';
+import { contactPageTitle, contactPageContent } from '../data/title';
+import { contactHeading } from '../data/heading';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +15,6 @@ import { MetaService } from '../services/link.service';
 })
 export class ContactComponent implements OnInit {
 
-  currentActive: any = 'CONTACT US';
   contactDetails: any;
   hours: any;
   name: string;
@@ -27,6 +28,9 @@ export class ContactComponent implements OnInit {
   mailSent = false;
   head: any;
   phone: any;
+  contactPageTitle: string;
+  contactPageContent: string;
+  contactHeading: string;
 
   constructor(
     private router: Router,
@@ -35,20 +39,20 @@ export class ContactComponent implements OnInit {
     private meta: Meta,
     private formBuilder: FormBuilder,
     private metaService: MetaService,
-
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
-                and U-Haul truck rental questions! Simply call or drop us a line!`
+      content: `${this.contactPageContent}`
     });
-    this.titleService.setTitle('Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414');
+    this.titleService.setTitle(`${this.contactPageTitle}`);
     this.metaService.createCanonicalURL();
   }
 
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
+    this.fetchContactHeading();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -64,8 +68,17 @@ export class ContactComponent implements OnInit {
     this.router.navigate([location]);
   }
 
+  public fetchMetaData() {
+    this.contactPageTitle = contactPageTitle;
+    this.contactPageContent = contactPageContent;
+  }
+
   public fetchContactDetails() {
     this.contactDetails = contact;
+  }
+
+  public fetchContactHeading() {
+    this.contactHeading = contactHeading;
   }
 
   public fetchHours() {
@@ -85,7 +98,8 @@ export class ContactComponent implements OnInit {
       this.contactForm.value.subject = 'Website Form Submission';
     }
 
-     this.receiveremail = this.contactDetails[1].data;
+    const index = contact.findIndex(x => x.label === 'Email:');
+    this.receiveremail = this.contactDetails[index].data;
 
      this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
      message: ${this.contactForm.value.message}`;

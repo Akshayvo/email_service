@@ -1,24 +1,9 @@
 <div class="contentHolder">
   <div class="container my-3 pb-5 padding-top">
-    <h1 class="py-5 text-center">Pay Rent Online</h1>
+    <h1 class="py-5 text-center">{{payRentHeading}}</h1>
     <div class="row bg-light background-padding">
-      <div class="col-xl-9   small-screen-padding">
+      <div class="col-md-12">
           <router-outlet></router-outlet>
-      </div>
-      <div class="col-xl-3  vertical-line">
-        <h3>How to Login</h3>
-        <p><b>Username:</b>&nbsp;Tenant's Last Name<br>
-        <b>Password:</b>&nbsp;Tenant's gate access code</p>
-        <p><b>Example:</b></p>
-        <p>John Smith's code is 1234</p>
-        <p>John's Username: smith<br>
-        John's Password: 1234</p>
-        <p><strong>Have questions about your account?</strong><br>
-        <span *ngFor="let contact of contact" [class.display-none]="contact?.id == 0">
-          <span class="contact-links" *ngIf="contact?.id == 1 || contact?.id == 2">
-            <a [href]="contact?.redirect">{{contact.data}}</a></span><br>
-      </span>
-      </p>
       </div>
     </div>
   </div>

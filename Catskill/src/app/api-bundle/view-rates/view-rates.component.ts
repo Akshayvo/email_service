@@ -6,6 +6,8 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { UaParserService } from '../../services/ua-parser.service';
 import { Subscription } from 'rxjs';
+import { viewRatesHeading } from '../../data/heading';
+import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -24,6 +26,9 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   openComponent = false;
   imagetype: any;
   imageBaseUrl: any;
+  viewRatesHeading: string;
+  viewRatesPageContent: string;
+  viewRatesPageTitle: string;
 
  private isUnsubscribe$: Subscription;
 
@@ -33,12 +38,12 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private metaService: MetaService,
     private uaParserService: UaParserService,
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Our units range from closet sized 5'x5' units to 10'x20' multi-bedroom home sized units.
-      We strive to provide the highest level of service at the best prices! `
+      content: `${this.viewRatesPageContent}`
     });
-    this.titleService.setTitle('Affordable Self Storage Near Catskill, NY, 12414 | Catskill Self Storage');
+    this.titleService.setTitle(`${this.viewRatesPageTitle}`);
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
@@ -48,15 +53,22 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.fetchViewRates();
+    this.fetchViewRatesHeading();
   }
+
   public fetchViewRates() {
     this.viewRates = dataViewRates;
   }
-  /**
-   *
-   * @param event
-   * @param event1
-   */
+
+  public fetchViewRatesHeading() {
+    this.viewRatesHeading = viewRatesHeading;
+  }
+
+  public fetchMetaData () {
+    this.viewRatesPageContent = viewRatesPageContent;
+    this.viewRatesPageTitle = viewRatesPageTitle;
+  }
+
 
   handleClick(event: Event, event1: Event) {
     this.openComponent = true;

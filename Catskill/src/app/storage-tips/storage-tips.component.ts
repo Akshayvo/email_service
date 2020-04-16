@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { storageTip, storageTipAccordion } from '../data/storage';
 import { MetaService } from '../services/link.service';
+import { storageTipsTitle, storageTipsContent } from '../data/title';
+import { storageTipsHeading } from '../data/heading';
 
 @Component({
   selector: 'app-storage-tips',
@@ -12,26 +14,38 @@ export class StorageTipsComponent implements OnInit {
 
   storageTip: any;
   storageTipAccordion: any;
-  currentActive: any = 'STORAGE TIPS';
+  storageTipsHeading: string;
+  storageTipsTitle: string;
+  storageTipsContent: string;
 
   constructor(
     private titleService: Title,
     private meta: Meta,
     private metaService: MetaService,
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `We know moving can be stressful, let our helpful hints and tips make your experience that much easier.
-      Use this tips to save yourself time and frustration!`
+      content: `${this.storageTipsContent}`
     });
-    this.titleService.setTitle('Self Storage Tips | Catskill Self Storage, Catskill, NY, 12414');
+    this.titleService.setTitle(`${this.storageTipsTitle}`);
     this.metaService.createCanonicalURL();
   }
 
   ngOnInit() {
     this.fetchStorageTip();
     this.fetchStorageTipAccordion();
+    this.fetchStorageTipsHeading();
     window.scrollTo(0, 0);
+  }
+
+  public fetchMetaData() {
+    this.storageTipsTitle = storageTipsTitle;
+    this.storageTipsContent = storageTipsContent;
+  }
+
+  public fetchStorageTipsHeading() {
+    this.storageTipsHeading = storageTipsHeading;
   }
 
   public fetchStorageTip() {

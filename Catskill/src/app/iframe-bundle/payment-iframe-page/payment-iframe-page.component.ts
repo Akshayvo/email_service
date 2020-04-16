@@ -1,6 +1,10 @@
 import { Component, OnInit  } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact } from '../../data/contact';
+import { payRentPageContent, payRentPageTitle } from '../../data/title';
+import { payRentHeading } from '../../data/heading';
+import { loginDetail } from '../../data/pay-rent';
+
 
 @Component({
   selector: 'app-payment-iframe-page',
@@ -9,26 +13,47 @@ import { contact } from '../../data/contact';
 })
 export class PaymentIframePageComponent implements OnInit {
 
-  contactDetails: any;
+  contact: any;
+  payRentPageTitle: string;
+  payRentPageContent: string;
+  payRentHeading: string;
+  loginDetail = [];
 
   constructor(
     private titleService: Title,
     private meta: Meta
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `We make it easy for you to pay your rent and check your balance online, 24/7.
-      Simply login with the credentials supplied by our office to gain access!`
+      content: `${this.payRentPageContent}`
     });
-    this.titleService.setTitle('Pay Your Rent Online | Catskill Self Storage, Catskill, NY, 12414 ');
+    this.titleService.setTitle(`${this.payRentPageTitle}`);
   }
 
   ngOnInit() {
     window.scrollTo(0, 0);
-    this.fetchContact();
+    this.fetchLoginDetail();
+    this.fetchpayRentHeading();
+    this.fetchContactDetails();
   }
 
-  public fetchContact() {
-    this.contactDetails = contact;
+  public fetchMetaData() {
+    this.payRentPageContent = payRentPageContent;
+    this.payRentPageTitle = payRentPageTitle;
   }
+
+  public fetchLoginDetail() {
+    this.loginDetail = loginDetail;
+  }
+
+  public fetchContactDetails() {
+    this.contact = contact;
+  }
+
+
+  public fetchpayRentHeading() {
+    this.payRentHeading = payRentHeading;
+  }
+
 }

@@ -11,6 +11,7 @@ export class DataSharingService {
   navigateToMoveIn: boolean;
   isValueUpdated: boolean;
   changePassword: boolean;
+  showLogin: boolean;
 
 
   MoveInData = {

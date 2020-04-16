@@ -6,6 +6,7 @@ import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../dat
 import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { UaParserService } from '../services/ua-parser.service';
+import { homePageTitle, homePageContent } from '../data/title';
 
 
 @Component({
@@ -30,7 +31,8 @@ export class HomeComponent implements OnInit {
   currentActive: any = 'HOME';
   imageBaseUrl: any;
   imagetype: any;
-
+  homePageContent: string;
+  homePageTitle: string;
   data: any;
 
 
@@ -44,12 +46,12 @@ export class HomeComponent implements OnInit {
     private uaParserService: UaParserService,
     @Inject(DOCUMENT) private _document: any,
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Catskill Self Storage has been proudly serving Catskill, Cairo, Leeds, and surrounding communities with
-      affordable storage units since 2004!`
+      content: `${this.homePageContent}`
     });
-    this.titleService.setTitle('Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage');
+    this.titleService.setTitle(`${this.homePageTitle}`);
     this.metaService.createCanonicalURL();
 
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
@@ -68,6 +70,11 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
+  }
+
+  public fetchMetaData() {
+    this.homePageTitle = homePageTitle;
+    this.homePageContent = homePageContent;
   }
 
   public fetchContactDetails() {
