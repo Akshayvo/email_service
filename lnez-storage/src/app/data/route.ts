@@ -32,6 +32,7 @@ import { MakePaymentComponent } from '../iframe-bundle/make-payment/make-payment
 import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
 import { ViewRatesComponent } from '../api-bundle/view-rates/view-rates.component';
 import { ReserveComponent } from '../api-bundle/reserve/reserve.component';
+import { WinnebagoComponent } from '../winnebago/winnebago.component';
 
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
@@ -132,6 +133,7 @@ export const apiRoutes = [
    children: [
    { path: '', component: CamperRentalComponent },
     { path: '2018-wildwood-27REI', component: WildwoodComponent},
+    { path: 'winnebago-outlook-22-c', component: WinnebagoComponent },
     { path: '2019-prime-time-tracer', component: PrimeTimeComponent},
    ]
   },
@@ -195,6 +197,7 @@ export const iFrameRoutes = [
      children: [
      { path: '', component: CamperRentalComponent },
       { path: '2018-wildwood-27REI', component: WildwoodComponent},
+      { path: 'winnebago-outlook-22-c', component: WinnebagoComponent },
       { path: '2019-prime-time-tracer', component: PrimeTimeComponent},
      ]},
     { path: '**', component: ErrorComponent },

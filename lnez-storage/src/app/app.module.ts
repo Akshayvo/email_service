@@ -59,6 +59,7 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ReserveComponent } from './api-bundle/reserve/reserve.component';
+import { WinnebagoComponent } from './winnebago/winnebago.component';
 
 
 @NgModule({
@@ -103,7 +104,8 @@ import { ReserveComponent } from './api-bundle/reserve/reserve.component';
     ConfirmationDataComponent,
     PayRentComponent,
     ViewRatesComponent,
-    ReserveComponent
+    ReserveComponent,
+    WinnebagoComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
