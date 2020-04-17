@@ -34,4 +34,30 @@ export const galleryHome = [
     thumb: `aaa-access-mini-storage-front-gate`,
     alt: `entrance to the self storage building displaying paved parking, an electronic security gate, and front office`
   },
+  {
+    url: `aaa-access-mini-storage-aerial-image`,
+    thumb: `aaa-access-mini-storage-aerial-image`,
+    alt: `aerial photograph of a self storage facility with wide paved parking lanes
+    between multiple storage buildings`,
+  },
+  {
+    url: `aaa-access-mini-storage-aerial-shot`,
+    thumb: `aaa-access-mini-storage-aerial-shot`,
+    alt: `aerial photograph of six self storage buildings connected by wide parking lanes.`,
+  },
+  {
+    url: `aaa-access-mini-storage-front-parking`,
+    thumb: `aaa-access-mini-storage-front-parking`,
+    alt: `electronic pinpad controlled entrance gate to a self storage facility and the main office to the right of the gate.`,
+  },
+  {
+    url: `aaa-access-mini-storage-units-overview`,
+    thumb: `aaa-access-mini-storage-units-overview`,
+    alt: `self storage buildings with red unit doors under a clear blue sky.`,
+  },
+  {
+    url: `aaa-access-mini-storage-front-desk`,
+    thumb: `aaa-access-mini-storage-front-desk`,
+    alt: ` front office of a self storage facility with a woman standing behind the counter.`,
+  },
 ];

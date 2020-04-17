@@ -79,9 +79,9 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Climate - Controlled & Regular Storage Units`,
-        blurb: `AAA Access Mini Storage has been serving Berryville, Pleasant Valley and surrounding communities Northwest
-        Arkansas with affordable storage solutions and stellar service in since 2003. Our climate-controlled and regular
-        storage units come in a variety of sizes, and are ideal for any storage uses from seasonal items and furniture to
-        long term document storage! Call or reserve online, today!`,
+        blurb: `AAA Access Mini Storage has been serving Berryville, and the surrounding communities Northwest
+        Arkansas with affordable storage solutions and stellar service in since 2003. Our climate-controlled and
+        regular storage units come in a variety of sizes, and are ideal for any storage uses from seasonal items
+        and furniture to long term document storage! Call or reserve online, today!`,
     }
 ];
