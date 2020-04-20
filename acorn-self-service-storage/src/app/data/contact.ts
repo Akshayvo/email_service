@@ -33,9 +33,14 @@ export const hours = [
         data: '8:00AM to 6:00PM'
     },
     {
-        label: 'Saturday - Sunday: ',
+        label: 'Saturday: ',
+        data: '8:00AM to 5:00PM'
+    },
+    {
+        label: 'Sunday: ',
         data: '10:00AM to 3:00PM'
     },
+
 ];
 export const accesshours = [
     {
@@ -43,13 +48,13 @@ export const accesshours = [
         data: '8:00AM to 6:00PM'
     },
     {
-        label: 'Saturday - Sunday: ',
-        data: '10:00AM to 3:00PM'
+        label: 'Saturday: ',
+        data: '8:00AM to 5:00PM'
     },
     {
-        label: '',
-        data: 'Extended Hours Available'
-    }
+        label: 'Sunday: ',
+        data: '10:00AM to 3:00PM'
+    },
 ];
 
 export const socialLinks = [
