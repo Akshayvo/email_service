@@ -4,8 +4,8 @@ export const reserveUnitHeading = `Reserve Your Unit`;
 
 export const payRentHeading = `Pay Rent`;
 
-export const storageTipsHeading = `Storage Tips`;
+export const storageTipsHeading = ``;
 
-export const unitSizerHeading = `Unit Sizer`;
+export const unitSizerHeading = ``;
 
-export const contactHeading = `Contact Hillside Self Storage`;
+export const contactHeading = ``;
