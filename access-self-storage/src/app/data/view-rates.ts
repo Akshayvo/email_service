@@ -26,7 +26,7 @@ export const th = [
     data: `Deposit`
   },
   {
-    data: `Reserve a Unit`
+    data: `Rent a Unit`
   },
   // {
   //   data: `Move In`
