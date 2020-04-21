@@ -30,7 +30,7 @@
     <div class="container">
       <div class="contact-header">
         <div class="row">
-          <div class="col-md-10 col-11 custom-padding">
+          <div class="col-md-12 col-12 custom-padding text-center">
             <span class="contact-details pr-lg-4 pr-md-2 pr-2" *ngFor="let contact of contactDetails">
               <span  *ngIf="contact?.id !== 0 else other_content">
                 <span style="display: inline-block;">
@@ -46,13 +46,13 @@
                 </ng-template>
             </span>
           </div>
-          <div class="col-md-2 col-1 ml-auto">
+          <!-- <div class="col-md-2 col-1 ml-auto">
             <span class="social pl-lg-2 pl-md-2 pl-0" *ngFor="let social of socialLinks">
               <a [href]="social?.path" target="_blank">
                 <i [class]="social?.class"></i>
               </a>
             </span>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
