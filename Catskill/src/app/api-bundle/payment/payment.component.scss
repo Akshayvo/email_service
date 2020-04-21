@@ -21,10 +21,6 @@
   padding: 64px;
 }
 
-.padding-top {
-  padding-top: 110px;
-}
-
 .contact-links {
   a {
     color: #212529;
@@ -44,9 +40,6 @@
     border: none;
   }
 
-  .padding-top {
-    padding-top: 56px;
-  }
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
@@ -58,10 +51,6 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-
-  .padding-top {
-    padding-top: 56px;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -72,9 +61,5 @@
   .vertical-line {
     border: none;
     padding: 24px;
-  }
-
-  .padding-top {
-    padding-top: 56px;
   }
 }

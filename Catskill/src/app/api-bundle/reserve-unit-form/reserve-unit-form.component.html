@@ -151,6 +151,21 @@
                                 <small class="form-text text-muted" *ngIf="f.dteMoveIn.errors.required">Please fill out this field</small>
                             </div>
                     </div>
+                    <div class="pb-4" formArrayName="lstInsuranceChoices" *ngIf="navigateToMoveIn">
+                        <div *ngFor="let itemInsuranceChoice of f.lstUnitTypes.controls; let i = index">
+                            <div  [formGroupName]="i">
+                                <label for="CoverageDescription">Insurance Choice*</label>&nbsp;
+                                <select class="form-control" formControlName="CoverageDescription"
+                                 [id]="LstInsuranceChoices?.CoverageDescription" 
+                                 (change)="selectInsuranceChoice($event)">
+                                    <option *ngFor="let LstInsuranceChoice of LstInsuranceChoices" [value]="LstInsuranceChoice?.CoverageDescription" >
+                                        {{LstInsuranceChoice.CoverageDescription}}
+                                    </option>
+                                </select>
+    
+                            </div>
+                        </div>
+                    </div>
                     <div class="pb-4" formArrayName="lstRentalPeriods">
                         <div *ngFor="let itemRental of f.lstUnitTypes.controls; let i = index">
                             <div  [formGroupName]="i">

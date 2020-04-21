@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray, AbstractControl, ValidatorFn } from '@angular/forms';
 import { FetchDataService } from '../services/fetch-data.service';
-import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods } from '../models/unittypes';
+import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
 import { option } from '../../data/view-rates';
@@ -49,6 +49,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   lstUnitTypes: LstUnitTypes[];
   rentalPeriod: RentalPeriod;
   LstRentalPeriods: LstRentalPeriods[];
+  LstInsuranceChoices: LstInsuranceChoices[];
+
   objTenant: ObjTenant;
   objTenantDetail: ObjTenantDetail;
 
@@ -134,6 +136,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   private  getTenantInfoSubscribe$: Subscription;
   private  getDataSubscribe$: Subscription;
   private  getRentalPeriodSubscribe$: Subscription;
+  private  getInsuranceChoiceSubscribe$: Subscription;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -163,6 +166,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
       lstUnitTypes: new FormArray([
         this.initLstUnitTypes(),
+      ]),
+
+      lstInsuranceChoices: new FormArray([
+        this.initLstInsuranceChoices(),
       ]),
 
       lstRentalPeriods: new FormArray([
@@ -199,6 +206,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       }
   }
 
+  initLstInsuranceChoices() {
+    return this.formBuilder.group({
+      CoverageDescription: ['']
+    });
+  }
+
+
   initPeriodDescription() {
     return this.formBuilder.group({
       PeriodDescription: ['']
@@ -218,6 +232,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
     this.getData();
     this.getRentalPeriod();
+    if (this.navigateToMoveIn === true ) {
+      this.getInsuranceChoices();
+    }
     this.getLeadDays(this.data);
     this.MoveIn.intUnitTypeID = this.unitTypeId;
 
@@ -268,6 +285,15 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   selectionChanged(event: any) {
   }
 
+  selectInsuranceChoice(event: any) {
+    const indexValue = event.target.value;
+    const index = this.LstInsuranceChoices.findIndex(x => x.CoverageDescription === indexValue);
+    this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[index].InsuranceChoiceID;
+    console.log(indexValue, index, this.dataSharingService.insuranceChoiceId);
+    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId);
+  }
+
+
   selectChangeHandler (event: any) {
     const indexValue  = event.target.value;
     const index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
@@ -288,43 +314,43 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.dataSharingService.LstUnitTypes.UnitTypeID = this.unitTypeId;
 
     if (this.navigateToMoveIn) {
-      this.getMoveInCharges(this.unitTypeId);
+      this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId);
     }
 }
 
 
-  getMoveInCharges(intUnitTypeID: any) {
-    this.moveInService.getMoveInCharges({
-      intUnitTypeID
-    }).subscribe(result => {
-      const {objCharges: {
-        ProrateAmt = 0,
-        Deposit = 0,
-        DepositTax = 0,
-        RateTax= 0,
-        ProrateAmtTax = 0,
-        OthDeposit = 0,
-        Setup = 0,
-        SetupTax = 0,
-        TotalTaxAmount = 0,
-        TotalChargesAmount = 0,
-       }} = result;
-      this.proRateAmount = ProrateAmt;
-      this.deposit = Deposit;
-      this.depositTax = DepositTax;
-      this.rateTax = RateTax;
-      this.prorateAmtTax = ProrateAmtTax;
-      this.othDeposit = OthDeposit;
-      this.setup = Setup;
-      this.setupTax = SetupTax;
-      this.totalTaxAmount = TotalTaxAmount;
-      this.totalChargesAmount = TotalChargesAmount;
-      this.dataSharingService.MoveInData.TotalChargesAmount = parseFloat(this.totalChargesAmount.toFixed(2));
-      this.dataSharingService.MoveInData.TotalTaxAmount = parseFloat(this.totalTaxAmount.toFixed(2));
-    }, err => {
-    });
+getMoveInCharges(intUnitTypeID: any, intInsuranceID: number) {
+  this.moveInService.getMoveInCharges({
+    intUnitTypeID,
+    intInsuranceID
+  }).subscribe(result => {
+    const {objCharges: {
+      ProrateAmt = 0,
+      Deposit = 0,
+      DepositTax = 0,
+      RateTax= 0,
+      ProrateAmtTax = 0,
+      OthDeposit = 0,
+      Setup = 0,
+      SetupTax = 0,
+      TotalTaxAmount = 0,
+      TotalChargesAmount = 0,
+     }} = result;
+    this.proRateAmount = ProrateAmt;
+    this.deposit = Deposit;
+    this.depositTax = DepositTax;
+    this.rateTax = RateTax;
+    this.prorateAmtTax = ProrateAmtTax;
+    this.othDeposit = OthDeposit;
+    this.setup = Setup;
+    this.setupTax = SetupTax;
+    this.totalTaxAmount = TotalTaxAmount;
+    this.totalChargesAmount = TotalChargesAmount;
+    this.dataSharingService.MoveInData.TotalChargesAmount = parseFloat(this.totalChargesAmount.toFixed(2));
+    this.dataSharingService.MoveInData.TotalTaxAmount = parseFloat(this.totalTaxAmount.toFixed(2));
+  }, err => {
+  });
 }
-
 
   getLeadDays(data: any) {
     this.getLeadDaysSubscribe$ =  this.leadDaysService.getLeadDays(data)
@@ -412,7 +438,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
       this.UnitTypeID = unitTypesResponse.lstUnitTypes[0].UnitTypeID;
       if (this.navigateToMoveIn) {
-        this.getMoveInCharges(this.unitTypeId);
+        this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId);
       }
 
 
@@ -462,7 +488,21 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     );
   }
 
-
+  getInsuranceChoices() {
+    this.getInsuranceChoiceSubscribe$ = this.fetchDataService.getInsuranceChoices()
+    .subscribe(insuranceChoicesResponse => {
+      if (insuranceChoicesResponse.blnSuccess === true) {
+        this.LstInsuranceChoices = insuranceChoicesResponse.lstInsuranceChoices;
+        const defaultInsuranceChoice = insuranceChoicesResponse.lstInsuranceChoices[0].CoverageDescription;
+        this.dataSharingService.insuranceChoiceId = insuranceChoicesResponse.lstInsuranceChoices[0].InsuranceChoiceID;
+        this.reserveUnitForm.patchValue({
+          lstInsuranceChoices: ([{
+            CoverageDescription: defaultInsuranceChoice,
+          }])
+        });
+      }
+    });
+  }
 
   onSubmit() {
 
@@ -477,6 +517,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     }
     if (this.getDataSubscribe$ && this.getDataSubscribe$.closed) {
       this.getDataSubscribe$.unsubscribe();
+    }
+    if (this.getInsuranceChoiceSubscribe$ && this.getInsuranceChoiceSubscribe$) {
+      this.getInsuranceChoiceSubscribe$.unsubscribe();
     }
     if (this.getRentalPeriodSubscribe$ && this.getRentalPeriodSubscribe$) {
       this.getRentalPeriodSubscribe$.unsubscribe();

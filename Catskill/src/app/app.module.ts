@@ -47,6 +47,8 @@ import { MaterialModule } from './modules/material/material.module';
 import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
 import { CanDeactivateGuard } from './preventRouteChange.guard';
+import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,6 +78,8 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
     ChangePasswordComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
+    UnitSizerComponent,
+    UnitSizesComponent,
   ],
   imports: [
     CommonModule,

@@ -41,3 +41,4 @@ export class LstRentalPeriods {
         this.PeriodDescription = PeriodDescription;
     }
 }
+

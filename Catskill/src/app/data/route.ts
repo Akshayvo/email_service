@@ -20,6 +20,7 @@ import { ChangePasswordComponent } from '../api-bundle/change-password/change-pa
 import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.component';
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
+import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
@@ -28,6 +29,7 @@ import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
     { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
+    { path: 'unit-sizer', component: UnitSizerComponent },
     {
       path: 'view-rates',
       component: ViewRatesComponent,
@@ -75,6 +77,7 @@ export const iFrameRoutes = [
     { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
+    { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'
