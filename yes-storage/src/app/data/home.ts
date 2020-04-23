@@ -9,9 +9,6 @@ export const featuresList = [
         li: `Well-Lit Facility`,
     },
     {
-        li: 'Brand New Units'
-    },
-    {
         li: `Single-Level Facility`,
     },
     {
@@ -56,22 +53,21 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Yes Storage is Hopkinsville's newest self storage facility! We offer a number of unit sizes, from our 5-by-10
-        units ideal for the contents of a single room, to our 10-by-20s, which are a perfect fit for the furniture, appliances,
-        and personal belongings of a small home. Our units are conveniently located on North Main Street in Hopkinsville, directly
-        across from Quarry Road, just north of the Kangaroo Express.`,
+        p: `Yes Storage is Hopkinsville's newest self storage facility! We offer a number of unit sizes, from our 5-by-10 units
+        ideal for the contents of a single room, to our 10-by-20s, which are a perfect fit for the furniture, appliances,
+        and personal belongings of a small home. Our units are conveniently located on North Main Street in Hopkinsville,
+        directly across from Quarry Road, just north of the Kangaroo Express.`,
     },
     {
         p: `We are family owned & operated, so our number one concern is customer satisfaction! Yes Storage strives to make your
-        stay with your us a breeze! We offer online reservations, move-ins, and payments to give you the same 24-hour access
-        to our services as you have to your unit!`,
+        stay with your us a breeze! We offer online payments to give you the same 24-hour access to our services as you have to
+        your unit!`,
     },
     {
-        p: `The facility is also well-lit, and our units receive regular manager walkarounds to ensure all is well with the
-        facility. Our facility even has paved parking lanes between them to increase the cleanliness of the units. Do you have
-        any questions about our services or your account with us? You are welcomed to check our available inventory and rates,
-        and reserve or move into your unit online! Still have questions? Call our offices at (270) 985-0516, and one of our
-        friendly storage managers will be happy to help!`,
+        p: `The facility is also well-lit, and our units receive regular manager walkarounds to ensure all is well with the facility.
+        Our facility even has paved parking lanes between them to increase the cleanliness of the units. Do you have any questions
+        about our services or your account with us? Call our offices at (270) 498-4573, and one of our friendly storage managers will
+        be happy to help!`,
     },
 ];
 
@@ -87,6 +83,4 @@ export const aboutUsText = '24 Hour Access Self Storage in Hopkinsville';
 
 export const aboutUsAlt = 'storage units with paved parking spaces';
 
-export const gettingStarted = `Are you ready to start de-cluttering your home, or making some extra room around the office
-or work site? Take a moment to review our rates and availability, then reserve your unit in minutes! Ready to just move in? Fill
-out our form, and we'll send you a lease for your e-signature, then you're free to move in!`;
+export const gettingStarted = ``;

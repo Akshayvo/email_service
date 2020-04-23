@@ -8,8 +8,8 @@ export const contact = [
     {
         id: 1,
         label: 'Email',
-        redirect: 'mailto:rent.yesstorageuse@gmail.com',
-        data: 'rent.yesstorageuse@gmail.com',
+        redirect: 'mailto:rent.yesstorageusa@gmail.com',
+        data: 'rent.yesstorageusa@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {

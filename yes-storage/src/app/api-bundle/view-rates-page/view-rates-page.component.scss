@@ -17,6 +17,7 @@
   padding: 10px;
   background-color: #edf1ee;
   text-align: center;
+  color: black;
 }
 
 table {
@@ -101,14 +102,19 @@ p{
   text-align: left;
 }
 
-@media only screen and (min-width:992px) {
-  .viewrates-mobile{
+@media only screen and (min-width: 992px) {
+  .viewrates-mobile {
     display: none;
   }
+
 }
 
-@media only screen and (max-width:991px) {
-  .viewrates-desktop{
+@media only screen and (max-width: 991px) {
+  .viewrates-desktop {
     display: none;
+  }
+
+  .viewrates-mobile {
+    color: white;
   }
 }
