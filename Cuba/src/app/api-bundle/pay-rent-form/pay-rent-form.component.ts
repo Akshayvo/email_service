@@ -337,8 +337,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
           // tslint:disable-next-line:forin
           for (const i in this.UnpaidAR) {
-            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, 'dd/MM/yyyy');
-            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, 'dd/MM/yyyy');
+            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, 'MM/dd/yyyy');
+            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, 'MM/dd/yyyy');
 
             if (this.UnpaidAR[i].AmountOwed < 0) {
               this.UnpaidAR[i].demoAmountOwed = Math.abs(this.UnpaidAR[i].AmountOwed);
