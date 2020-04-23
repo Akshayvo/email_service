@@ -15,14 +15,6 @@ export const rates = [
         td1: `10 x 15`,
         td2: `$64.95`
     },
-    {
-        td1: `10 x 20`,
-        td2: `$79.95`
-    },
-    {
-        td1: `10 x 30`,
-        td2: `$129.95`
-    },
 ];
 
 export const th = [
