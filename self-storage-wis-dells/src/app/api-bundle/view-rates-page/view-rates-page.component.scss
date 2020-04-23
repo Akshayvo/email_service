@@ -12,6 +12,10 @@
   display: block;
 }
 
+.ratesButton {
+  color: #9B2743;
+}
+
 .card-text {
   width: 150px;
   padding: 10px;
@@ -112,6 +116,10 @@ p {
 @media only screen and (max-width: 991px) {
   .viewrates-desktop {
     display: none;
+  }
+
+  .btn-outline-primary {
+    color: $primary !important;
   }
 }
 
