@@ -35,7 +35,7 @@ export class UaParserService {
       }
     }
     if (this.typeOfImages === 'WEBP') {
-      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Keypers_Storage_Image/jpg`;
+      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Keypers_Storage_Image/webp`;
     } else {
       this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Keypers_Storage_Image/jpg';
     }
