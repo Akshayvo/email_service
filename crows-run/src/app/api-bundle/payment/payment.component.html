@@ -7,23 +7,8 @@
     <div class="rent-sub-holder">
       <div class="container px-0">
         <div class="row">
-            <div class="col-xl-9 p-4">
+            <div class="col-md-12 p-4">
                <router-outlet></router-outlet>
-            </div> 
-            
-            <div class="col-xl-3 rent-example px-4" >
-              <h2> How to Login </h2>
-              <p class="pt-3"> <b>Username:</b> First initial + Last Name </p>
-              <p> <b>Password:</b> Your Gate Access Code</p><br>
-              <p><b>Example:</b></p>
-              <p>John Smith's code is 1234</p><br>
-              <p>John's Username: jsmith<br>
-                John's Password: 1234</p>
-          
-              <p class="pt-4"><b>Have questions about your account?</b>
-                <span *ngFor="let contact of contact"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
-              </span>
-              </p>
             </div>
         </div>
       </div>
