@@ -1,12 +1,29 @@
 
 @import "../../../styles.scss";
 
-.modal-open {
-  .modal-backdrop {
-      background: none;
+.vertical-line {
+  border-left: 1px solid black;
+  padding-left: 50px;
+}
+
+
+.display-none {
+  display: none;
+  visibility: hidden;
+}
+
+.contact-links {
+  a {
+    color: black;
   }
 }
-  
+
+.modal-open {
+  .modal-backdrop {
+    background: none;
+  }
+}
+
 .forgot-link {
   a {
     color: $primary;
@@ -14,8 +31,6 @@
     cursor: pointer;
   }
 }
-
-
 
 .loader {
   border: 5px solid #f3f3f3;

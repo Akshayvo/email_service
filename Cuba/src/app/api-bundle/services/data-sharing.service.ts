@@ -8,13 +8,13 @@ export class DataSharingService {
   strAccessCode: string;
   strConfirmation: string;
 
-
   verificationCode: string;
   navigateToPrevious: string;
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
   isValueUpdated: boolean;
   changePassword: boolean;
+  showLogin: boolean;
 
 
   MoveInData = {

@@ -52,6 +52,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   showloaderForPayment = false;
   toggleSignUp = false;
   IsAutoPaymentsEnabled = false;
+  makePaymentForUnit = false;
   TotalReserveAmount: number;
   totalMoveInAmount: number;
   date: Date;
@@ -206,9 +207,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.getPayMethods();
     } else {
       if (!localStorage.getItem('strTempTenantToken')) {
-          this.router.navigate(['/pay-rent/login']);
-        } else {
-          this.getPayMethods();
+        this.router.navigate(['/pay-rent/login']);
+      } else {
+        this.getPayMethods();
       }
     }
     this.fetchMonth();
@@ -330,15 +331,15 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           this.surchargeService.getIdPaytype(this.paytypeid);
           this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled,
           this.date = Tenant.LastPaymentOn;
-          this.lastPaymentOn = this.datePipe.transform(this.date, 'MM/dd/yyyy');
+          this.lastPaymentOn = this.datePipe.transform(this.date, 'dd/MM/yyyy');
           this.lastPaymentAmount = Tenant.LastPaymentAmount;
 
           this.UnpaidAR = Tenant.UnpaidAR;
 
           // tslint:disable-next-line:forin
           for (const i in this.UnpaidAR) {
-            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, 'MM/dd/yyyy');
-            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, 'MM/dd/yyyy');
+            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, 'dd/MM/yyyy');
+            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, 'dd/MM/yyyy');
 
             if (this.UnpaidAR[i].AmountOwed < 0) {
               this.UnpaidAR[i].demoAmountOwed = Math.abs(this.UnpaidAR[i].AmountOwed);
@@ -531,6 +532,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     .subscribe(strConfirmationResponse => {
       this.strConfirmation = strConfirmationResponse.strConfirmation;
       this.showConfirmation = false;
+      this.makePaymentForUnit = false;
       this.submitted = false;
        this.tokenExit = localStorage.getItem('strTenantToken');
 
@@ -571,6 +573,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
       .subscribe(strConfirmationResponse => {
         this.strAccessCode = strConfirmationResponse.strAccessCode;
+        this.makePaymentForUnit = false;
         this.submitted = false;
          this.tokenExit = localStorage.getItem('strTenantToken');
          if (this.tokenExit) {
@@ -601,6 +604,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     onSubmit() {
       this.submitted = true;
+      this.makePaymentForUnit = true;
       if (this.payRentForm.invalid) {
         return;
       } else {

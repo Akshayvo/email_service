@@ -39,6 +39,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   UnitTypeID: number;
   showPaymentForMoveIn: boolean;
   showPaymentForReserve: boolean;
+  filterLstUnitTypes: LstUnitTypes[];
 
 
   navigateToReserve: boolean;
@@ -185,7 +186,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       };
     }
 
-      if ((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve')) {
+      if ((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve-unit')) {
         this.navigateToReserve = true;
         this.dataSharingService.navigateToReserve = true;
         this.dataSharingService.navigateToMoveIn = false;
@@ -389,11 +390,16 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     return `${formattedNormalDate.getMonth() + 1}-${formattedNormalDate.getDate()}-${formattedNormalDate.getFullYear()}`;
   }
 
+  getFilterLstUnitTypes(unitTypesResponse: any) {
+    this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
+    this.filterLstUnitTypes = this.lstUnitTypes.filter(x => x.IsUnitsAvailable === true);
+  }
 
   getData() {
    this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
+      this.getFilterLstUnitTypes(unitTypesResponse);
       const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
       this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
       const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
