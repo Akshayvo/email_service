@@ -10,8 +10,8 @@ export const viewRates = [
     },
     {
       p: `Whether you're a business with extra storage requirements or a homeowner or renter who needs some extra
-          elbow room; stow your documents, furniture, and seasonal equipment or hobby supplies with us! Reserve your
-          unit today, we can't wait to meet you!`
+          elbow room; stow your documents, furniture, and seasonal equipment or hobby supplies with us!
+          Reserve/Rent your unit today, we can't wait to fulfill your storage needs!`
     }
 ];
 
