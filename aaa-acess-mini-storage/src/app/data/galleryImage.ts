@@ -41,9 +41,9 @@ export const galleryHome = [
     between multiple storage buildings`,
   },
   {
-    url: `aaa-access-mini-storage-aerial-shot`,
-    thumb: `aaa-access-mini-storage-aerial-shot`,
-    alt: `aerial photograph of six self storage buildings connected by wide parking lanes.`,
+    url: `aaa-access-mini-storage-front-office-road`,
+    thumb: `aaa-access-mini-storage-front-office-road`,
+    alt: `self storage front office building with cars parked out front under a blue sky with white clouds`,
   },
   {
     url: `aaa-access-mini-storage-front-parking`,
