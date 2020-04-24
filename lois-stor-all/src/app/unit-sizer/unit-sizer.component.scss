@@ -6,7 +6,7 @@
 }
 
 .padding-top {
-  padding-top: 90px;
+  padding-top: 154px;
 }
 
 .background-padding {
@@ -103,7 +103,7 @@ h1 {
   }
 
   .padding-top {
-    padding-top: 100px;
+    padding-top: 158px;
   }
 
   .unit-dimention {
@@ -116,6 +116,10 @@ h1 {
 
 
 @media screen and (max-width: 767px) {
+  .padding-top {
+    padding-top: 182px;
+  }
+
   .disp {
     display: none;
   }
@@ -148,7 +152,7 @@ h1 {
 
 @media screen and (max-width: 600px) {
   .padding-top {
-    padding-top: 70px;
+    padding-top: 182px;
   }
 
   .background-padding {

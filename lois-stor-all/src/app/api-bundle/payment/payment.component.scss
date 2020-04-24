@@ -8,7 +8,7 @@
 
 
 .rent-holder {
-  padding-top: 90px;
+  padding-top: 154px;
   min-height: 96vh;
   margin-bottom: 50px;
 
@@ -42,13 +42,13 @@
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .rent-holder {
-    padding-top: 100px;
+    padding-top: 158px;
   }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .rent-holder {
-    padding-top: 100px;
+    padding-top: 182px;
   }
 
   .rent-example {
@@ -59,7 +59,7 @@
 
 @media only screen and (max-width: 600px) {
   .rent-holder {
-    padding-top: 100px;
+    padding-top: 182px;
 
     .rent-sub-holder {
       padding: 16px;
