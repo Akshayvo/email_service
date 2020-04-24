@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  type: 0,  // { API: 0, iframe: 1 }
+  type: 1,  // { API: 0, iframe: 1 }
   errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',

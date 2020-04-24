@@ -66,7 +66,7 @@ import { MilitaryServiceComponent } from '../military-service/military-service.c
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJvULcmZ5v2IkRltcV9L9sGjA'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -89,7 +89,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJvULcmZ5v2IkRltcV9L9sGjA'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
