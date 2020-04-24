@@ -119,13 +119,6 @@ export class LoginComponent implements OnInit, OnDestroy {
       );
   }
 
-
-public ngOnDestroy(): void {
-  if (this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
-    this.authUnsubscribe$.unsubscribe();
-  }
-}
-
   onSubmit() {
     this.submitted = true;
 
@@ -140,4 +133,10 @@ public ngOnDestroy(): void {
     }
   }
 
+
+  public ngOnDestroy(): void {
+      if (this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
+      this.authUnsubscribe$.unsubscribe();
+    }
+  }
 }

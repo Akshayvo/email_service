@@ -49,6 +49,7 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
+import { PhotosComponent } from './photos/photos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -80,6 +81,7 @@ import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
     ResetPasswordComponent,
     UnitSizerComponent,
     UnitSizesComponent,
+    PhotosComponent,
   ],
   imports: [
     CommonModule,

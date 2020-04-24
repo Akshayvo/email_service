@@ -53,23 +53,28 @@ export const gettingStarted = `Are you ready to move in today or just looking to
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        name: 'safe',
-        label: 'Safe & Secure',
+        label: 'Convenient Location',
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg`,
+        alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        name: 'easy',
-        label: 'Temperature Controlled Units Available'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
+        label: 'Stellar Customer Service',
+        alt: 'Customer Service Representative Icon'
     },
     {
         // tslint:disable-next-line:max-line-length
-        name: 'enviro',
-        label: 'Convenient Location'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
+        label: 'Affordable Self Storage Rates',
+        alt: 'Icon of a hand holding money'
+
     },
     {
         // tslint:disable-next-line:max-line-length
-        name: 'value',
-        label: 'Easy Online Access'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg`,
+        label: 'Security Cameras on Premises',
+        alt: 'Icon of a security camera'
     },
 ];
 
