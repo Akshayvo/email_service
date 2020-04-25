@@ -80,7 +80,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   lastPaymentAmount: string;
 
   paytypeid: number;
-  AmountToPay: number;
+  amountToPay: number;
 
   customOtherValue: number;
   errorMessage: string;
@@ -440,7 +440,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.surcharge = 0;
     this.surchargeService.getSurCharge()
     .subscribe(result => {
-      this.AmountToPay = result.decTotalAmount;
+      this.amountToPay = result.decTotalAmount;
 
       if (this.showInput) {
        if (this.customOtherValue) {
@@ -610,10 +610,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       } else {
         this.showloaderForPayment = true;
         if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
-          if (this.AmountToPay > 0) {
+          if (this.amountToPay > 0) {
             this.payRentForm.patchValue({
               objPayment: {
-                PaymentAmount: this.AmountToPay
+                PaymentAmount: this.amountToPay
               }
             });
           } else if (this.customOtherValue > 0) {

@@ -191,7 +191,6 @@ getTenantUnitData() {
         localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
 
         console.log("move", this.navigateToMoveIn, "reserve", this.navigateToReserve);
-        
         if (this.navigateToMoveIn ) {
           if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
             this.router.navigate(['/view-rates/payMoveInCharges']);
@@ -246,6 +245,9 @@ getTenantUnitData() {
           localStorage.removeItem('strTempTenantToken');
         }
         this.reservationInProgress = false;
+        if (strConfirmationResponse.strConfirmation) {
+          this.router.navigate(['/view-rates/confirmation-page']);
+        }
       }, (err: any) => {
         if (err.status === 403) {
           this.showConfirmation = false;

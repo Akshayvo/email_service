@@ -127,6 +127,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   showPaymentPage = false;
   gettingTenantData = false;
+  showReservationButton = false;
   monthlyRate: number;
   annualRate: number;
   biAnnualRate: number;
@@ -191,6 +192,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         }
         return validator(control);
       };
+    }
+
+    if (this.router.url.includes('view-rates')) {
+      this.showReservationButton = true;
+    } else {
+      this.showReservationButton = false;
     }
 
       if ((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve-unit')) {

@@ -13,6 +13,8 @@ export class DataSharingService {
   changePassword: boolean;
   showLogin: boolean;
   insuranceChoiceId: number;
+  strAccessCode: string;
+  strConfirmation: string;
 
 
   MoveInData = {
