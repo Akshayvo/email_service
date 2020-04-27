@@ -2,13 +2,13 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address:',
-        data: '11234 Hillman Rd, Baraboo, WI 53913',
+        data: 'E11234 Hillman Rd, Baraboo, WI 53913',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 1,
-        label: 'Office Address:',
-        data: '69 Old Mason Center Rd, Greenville, NH 03048',
+        label: 'Mail payments to:',
+        data: '651 W Prairie St, Columbus WI 53925',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
