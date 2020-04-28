@@ -26,10 +26,10 @@ export const aboutUsHeading = `Affordable Storage Units in Berryville, Arkansas`
 
 export const aboutUs = [
     {
-        p: `AAA Access Mini Storage is Berryville's premier self storage facility! We are conveniently located on Highway
-        62 just Northwest of the town center, right across the street from Carroll County Golf Course!  We are locally owned
-        & operated, so you know our customer service is awesome! We take pride in providing quality services to our friends,
-        family, and neighbors! That's why all of our climate-controlled and regular storage units are clean, well-lit, and well-maintained.`,
+        p: `AAA Access Mini Storage has been serving Berryville, and the surrounding communities in Northwest Arkansas
+        with affordable storage solutions and stellar service in since 2003. Our climate-controlled and regular storage
+        units come in a variety of sizes, and are ideal for any storage uses from seasonal items and furniture to long
+        term document storage! Call or reserve online, today`,
     },
     {
         p: `Our mini storage facility is secured by a unique pin-code keypad, allowing only customers and staff entrance

@@ -5,10 +5,10 @@
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp' ">
       <div class="bg-translucent jumbotorn-skew-style">
       </div>
-      <div class="container">
-        <div class="jumbotorn-skew-text">
-          <div class="disp" *ngFor="let jumbotron of jumbotron">
-            <h2  class="my-4">
+      <div class="container display-text ">
+        <div class="jumbotorn-skew-text text-right">
+          <div class="disp text-right" *ngFor="let jumbotron of jumbotron">
+            <h2  class="my-4 text-right">
               {{jumbotron.h2}}
             </h2>
             <p class="text-justify">{{jumbotron.blurb}}</p>

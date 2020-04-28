@@ -1,5 +1,10 @@
 @import "../../styles.scss";
 
+.display-text {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .carousel-indicators li {
   background-color: black;
   border-radius: 50%;
@@ -106,10 +111,10 @@ h2 {
 
 .jumbotorn-skew-style {
   width: 75%;
-  float: left;
-  left: -25%;
+  float: right;
+  right: -25%;
   position: relative;
-  transform: skew(15deg);
+  transform: skew(-15deg);
   height: 100%;
 
   a {
@@ -196,7 +201,7 @@ h2 {
   .jumbotorn-skew-style {
     transform: skew(0deg);
     width: 100%;
-    left: auto;
+    right: auto;
     height: 90px;
     bottom: 0;
     position: absolute;
@@ -204,7 +209,7 @@ h2 {
 
   .jumbotorn-skew-text {
     width: 100%;
-    left: 0;
+    right: 0;
     top: auto;
     bottom: 10px;
 
@@ -216,6 +221,8 @@ h2 {
 
   .jumbotorn-button {
     padding: 10px;
+    text-align: center;
+
   }
 
   .feature-icon-style {
@@ -311,7 +318,7 @@ h2 {
   .jumbotorn-skew-style {
     transform: skew(0deg);
     width: 100%;
-    left: auto;
+    right: auto;
     height: 90px;
     bottom: 0;
     position: absolute;
@@ -331,6 +338,7 @@ h2 {
 
   .jumbotorn-button {
     padding: 10px;
+    text-align: center;
   }
 
   .feature-icon-style {
@@ -459,7 +467,7 @@ h2 {
   .jumbotorn-skew-style {
     transform: skew(0deg);
     width: 100%;
-    left: auto;
+    right: auto;
     height: 90px;
     bottom: 0;
     position: absolute;
@@ -479,6 +487,7 @@ h2 {
 
   .jumbotorn-button {
     padding: 10px;
+    text-align: center;
   }
 }
 
@@ -562,7 +571,7 @@ h2 {
   .jumbotorn-skew-style {
     transform: skew(0deg);
     width: 100%;
-    left: auto;
+    right: auto;
     height: 90px;
     bottom: 0;
     position: absolute;
@@ -582,6 +591,7 @@ h2 {
 
   .jumbotorn-button {
     padding: 10px;
+    text-align: center;
   }
 }
 
@@ -604,7 +614,7 @@ h2 {
   .jumbotorn-skew-style {
     transform: skew(0deg);
     width: 100%;
-    left: auto;
+    right: auto;
     height: 90px;
     bottom: 0;
     position: absolute;
@@ -619,6 +629,7 @@ h2 {
 
   .jumbotorn-button {
     padding: 10px;
+    text-align: center;
   }
 }
 
@@ -641,7 +652,7 @@ h2 {
   .jumbotorn-skew-style {
     transform: skew(0deg);
     width: 100%;
-    left: auto;
+    right: auto;
     height: 150px;
     bottom: 0;
     position: absolute;
@@ -664,6 +675,7 @@ h2 {
 
     .jumbotorn-button {
       padding: 15px;
+      text-align: center;
     }
   }
 }
