@@ -2,24 +2,18 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address:',
-        data: '1527 Pointer Trail, Van Buren, AR 72956',
+        data: 'N721 US HWY 12/16 Wisconsin Dells, WI  53965',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 1,
-        label: 'Office Address:',
-        data: '1527 Pointer Trail, Van Buren, AR 72956',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
-    },
-    {
-        id: 2,
         redirect: 'mailto:info@secureselfstorage.com ',
         data: 'info@secureselfstorage.com ',
         label: 'Email:',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
-        id: 3,
+        id: 2,
         redirect: 'tel:6083934596',
         label: 'Phone:',
         data: '(608) 393-4596',
