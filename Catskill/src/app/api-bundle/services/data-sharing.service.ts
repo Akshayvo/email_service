@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataSharingService {
-
+  strTenantToken: string;
+  strTempTenantToken: string;
   verificationCode: string;
   navigateToPrevious: string;
   navigateToReserve: boolean;

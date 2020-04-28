@@ -7,6 +7,7 @@ import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { UaParserService } from '../services/ua-parser.service';
 import { homePageTitle, homePageContent } from '../data/title';
+import { objSIMSetting } from '../data/configuration';
 
 
 @Component({
@@ -34,6 +35,7 @@ export class HomeComponent implements OnInit {
   homePageContent: string;
   homePageTitle: string;
   data: any;
+  objSIMSetting: any;
 
 
 
@@ -63,6 +65,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.objSIMSetting = objSIMSetting;
     this.fetchContactDetails();
     this.fetchHours();
     this.fetchFeatures();
@@ -70,6 +73,8 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
+    console.log('Display settings', this.objSIMSetting.objActionSetting);
+
   }
 
   public fetchMetaData() {

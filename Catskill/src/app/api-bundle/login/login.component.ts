@@ -111,6 +111,7 @@ export class LoginComponent implements OnInit, OnDestroy {
           this.showPayRent = true;
           this.authData = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
+          // this.dataSharingService.strTenantToken = this.authData;
           this.router.navigate(['/pay-rent/payment']);
         }, (err) => {
           this.credentialsInvalid = true;

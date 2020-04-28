@@ -189,8 +189,9 @@ getTenantUnitData() {
     this.addTenantSubscribe$ = this.addTenantService.addTenant(data)
         .subscribe(result => {
         localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
+        // this.dataSharingService.strTempTenantToken = result.strTempTenantToken;
 
-        console.log("move", this.navigateToMoveIn, "reserve", this.navigateToReserve);
+        console.log('move', this.navigateToMoveIn, 'reserve', this.navigateToReserve);
         if (this.navigateToMoveIn ) {
           if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
             this.router.navigate(['/view-rates/payMoveInCharges']);
@@ -241,6 +242,8 @@ getTenantUnitData() {
         this.submitted = false;
          this.tokenExit = localStorage.getItem('strTenantToken');
         this.existTempToken = localStorage.getItem('strTempTenantToken');
+        // this.tokenExit = this.dataSharingService.strTenantToken;
+        // this.existTempToken = this.dataSharingService.strTempTenantToken;
         if (this.existTempToken) {
           localStorage.removeItem('strTempTenantToken');
         }
@@ -279,6 +282,8 @@ getTenantUnitData() {
           this.submitted = false;
            this.tokenExit = localStorage.getItem('strTenantToken');
           this.existTempToken = localStorage.getItem('strTempTenantToken');
+          // this.tokenExit = this.dataSharingService.strTenantToken;
+          // this.existTempToken = this.dataSharingService.strTempTenantToken;
           if (this.existTempToken) {
             localStorage.removeItem('strTempTenantToken');
           }
@@ -317,6 +322,13 @@ getTenantUnitData() {
           this.existTempToken = localStorage.getItem('strTempTenantToken');
         }
       }
+
+      // if (!!this.dataSharingService.strTenantToken) {
+      //   this.existingTenantToken = this.dataSharingServices.strTenantToken;
+      // } else {
+      //   this.existTempToken = this.dataSharingService.strTempTenantToken;
+      // }
+
       this.submitted = true;
       this.showConfirmation = true;
       this.reservationInProgress = true;

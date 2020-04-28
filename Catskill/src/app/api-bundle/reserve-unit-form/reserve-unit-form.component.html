@@ -218,8 +218,12 @@
                         <label>Set Up:</label>&nbsp;
                         ${{setup}}
                         <span *ngIf="setupTax > 0.0">
-                                + ${{setupTax}} (Tax)
-                            </span>
+                            + ${{setupTax}} (Tax)
+                        </span>
+                    </div>
+                    <div  *ngIf="navigateToMoveIn && premium > 0">
+                        <label>Premium:</label>&nbsp;
+                        {{premium}}
                     </div>
                 </div>
             </div>

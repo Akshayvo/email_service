@@ -65,6 +65,7 @@ export class LoginModalComponent implements OnInit, OnDestroy {
             this.showPayRent = true;
             this.authData = auth.strTenantToken;
             localStorage.setItem('strTenantToken', this.authData);
+            // this.dataSharingService.strTenantToken = this.authData;
             this.dataSharingService.changePassword = true;
 
             this.router.navigate(['/pay-rent/changePassword']);

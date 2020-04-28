@@ -93,7 +93,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   showConfirmation = false;
   showMoveInDateError = false;
   options: any;
-
+  premium: number;
   minDay: number;
   maxDay: number;
 
@@ -296,6 +296,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const indexValue = event.target.value;
     const index = this.LstInsuranceChoices.findIndex(x => x.CoverageDescription === indexValue);
     this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[index].InsuranceChoiceID;
+    this.premium = this.LstInsuranceChoices[index].Premium;
     console.log(indexValue, index, this.dataSharingService.insuranceChoiceId);
     this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId);
   }
@@ -323,6 +324,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     if (this.navigateToMoveIn) {
       this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId);
     }
+}
+
+changeRate(event: any) {
+  console.log('change rate according to period', event);
 }
 
 
