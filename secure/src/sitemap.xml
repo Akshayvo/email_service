@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+  <url>
+    <loc>https://www.secure-staging.syrasoft.com/</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.secure-staging.syrasoft.com/view-rates</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.secure-staging.syrasoft.com/reserve-unit</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+   <url>
+    <loc>https://www.secure-staging.syrasoft.com/pay-rent</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+   <url>
+    <loc>https://www.secure-staging.syrasoft.com/storage-tips</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.secure-staging.syrasoft.com/contact-us</loc>
+    <lastmod>2018-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+</urlset>
