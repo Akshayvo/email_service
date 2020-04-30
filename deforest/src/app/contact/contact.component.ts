@@ -4,6 +4,8 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, officeHours } from '../data/contact';
+import { contactPageContent, contactPageTitle } from '../data/title';
+import { contactHeading } from '../data/heading';
 
 @Component({
   selector: 'app-contact',
@@ -23,7 +25,9 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;
-  subject: any;
+  contactPageContent: string;
+  contactPageTitle: string;
+  contactHeading: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -32,12 +36,12 @@ export class ContactComponent implements OnInit {
     private formBuilder: FormBuilder,
     private meta: Meta
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `If you have questions about your account or the services we offer,
-                take a moment to fill our out form, or use the contact information to speak with us!`
+      content: `${this.contactPageContent}`
     });
-    this.titleService.setTitle('Contact Us  | Deforest Self Storage');
+    this.titleService.setTitle(`${this.contactPageTitle}`);
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -57,8 +61,15 @@ export class ContactComponent implements OnInit {
   get f() { return this.contactForm.controls; }
 
 
+  public fetchMetaData() {
+    this.contactPageTitle = contactPageTitle;
+    this.contactPageContent = contactPageContent;
+  }
+
+
   public fetchContactDetails() {
     this.contactInfo = contact;
+    this.contactHeading = contactHeading;
   }
 
   public fetchHours() {

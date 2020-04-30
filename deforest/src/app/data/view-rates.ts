@@ -1,4 +1,4 @@
-export const viewrates = [
+export const viewRates = [
     {
         p: `Deforest Self Storage is committed to giving our clients the personalized service they
             expect, and quality Storage Rental Services they will enjoy for many years to come. We

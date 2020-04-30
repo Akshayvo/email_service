@@ -2,7 +2,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-
+import { homePageTitle, homePageContent } from '../data/title';
 import { contact, officeHours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs,
           gettingStarted, feature, blurbHeading, blurbText, aboutFamily } from '../data/home';
@@ -27,6 +27,8 @@ export class HomeComponent implements OnInit {
   blurbText: any;
   slideShow: any;
   aboutFamily: any;
+  homePageTitle: string;
+  homePageContent: string;
 
 
   constructor(@Inject(WINDOW) private window: Window,
@@ -34,12 +36,12 @@ export class HomeComponent implements OnInit {
     private titleService: Title,
     private meta: Meta
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Deforest Self Storage offers convenient 24/7 access to your belongings,
-                online payments and a variety of unit sizes for all of your self storage needs.`
+      content: `${this.homePageContent}`
     });
-    this.titleService.setTitle('Affordable Self Storage in DeForest | Deforest Self Storage');
+    this.titleService.setTitle(`${this.homePageTitle}`);
   }
 
   public navigate(location: any) {
@@ -67,6 +69,11 @@ export class HomeComponent implements OnInit {
 
   public fetchHours() {
     this.hours = officeHours;
+  }
+
+  public fetchMetaData() {
+    this.homePageTitle = homePageTitle;
+    this.homePageContent = homePageContent;
   }
 
   public fetchFeatures() {

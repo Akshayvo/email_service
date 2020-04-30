@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
+import { unitSizerPageContent, unitSizerPageTitle } from '../data/title';
+import { unitSizerHeading } from '../data/heading';
+
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -9,6 +12,9 @@ import { Title, Meta } from '@angular/platform-browser';
 export class UnitSizerComponent implements OnInit {
   unitsizers: any;
   selectedUnit: any;
+  unitSizerPageTitle: string;
+  unitSizerPageContent: string;
+  unitSizerHeading: string;
   h: number;
   i: number;
   j: number;
@@ -17,12 +23,12 @@ export class UnitSizerComponent implements OnInit {
     private titleService: Title,
     private meta: Meta
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Are you not sure what size unit you require? Use this guide to help
-                you figure out what fits inside the units offered at Deforest Self Storage!`
+      content: `${this.unitSizerPageContent}`
     });
-    this.titleService.setTitle('Unit Sizer  | Deforest Self Storage');
+    this.titleService.setTitle(`${this.unitSizerPageTitle}`);
   }
 
   ngOnInit() {
@@ -31,8 +37,17 @@ export class UnitSizerComponent implements OnInit {
     this.j = this.i + 1;
     this.fetchUnitSizer();
     window.scrollTo(0, 0);
+    this.fetchUnitSizerHeading();
   }
 
+  public fetchMetaData() {
+    this.unitSizerPageTitle = unitSizerPageTitle;
+    this.unitSizerPageContent = unitSizerPageContent;
+  }
+
+  public fetchUnitSizerHeading() {
+    this.unitSizerHeading = unitSizerHeading;
+  }
 
   /**
    * fetchUnitSizer
