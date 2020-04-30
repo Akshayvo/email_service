@@ -15,6 +15,10 @@ a {
 //   color: $primary;
 // }
 
+.btn-primary {
+  font-size: 1rem;
+}
+
 .contact-header {
   display: inline;
 
@@ -47,7 +51,7 @@ a {
   .nav-link {
     color: #000;
     font-weight: 600;
-    padding: 21px;
+    padding: 10px;
   }
 
   .nav-link:hover {
@@ -89,6 +93,7 @@ a {
   
   .nav-link {
     font-size: 0.8rem;
+    padding: 6px;
     }
   }
 }
@@ -116,5 +121,24 @@ a {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .mobile-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btn-primary {
+    font-size: 0.9rem;
+    min-width: 142px;
+  }
+.desktop-button {
+  display: none;
+}
+  .navbar-brand {
+    margin-right: 0px;
   }
 }

@@ -20,12 +20,13 @@
           <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.ReservationFee != null">$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}
         </td>
-          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
-              <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve a Unit</button>
-          </td>
+          
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Rent a Unit</button>
           </td>
+          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
+            <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve a Unit</button>
+        </td>
           <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled; else other_climate">
             <strong> Yes</strong>
           </td>
@@ -41,7 +42,7 @@
           </ng-template>
           <ng-template #other_moveIn>
             <td colspan="2" class="py-2 px-4 border">
-            <div class="text-center">Please call the facility to move in.</div>
+            <div class="text-center">Please call the facility to rent a unit.</div>
           </td>
           </ng-template>
         </tr>
@@ -65,15 +66,15 @@
     </div>
       <div class="col-6 d-flex justify-content-center" >
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other" >
-          <div class=" py-1 buttons" >
-              <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve a Unit</button>
-          </div>
           <div class="py-1 buttons">
               <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)">Rent a Unit</button>
           </div>
+          <div class=" py-1 buttons" >
+            <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve a Unit</button>
+        </div>
         </div>
         <ng-template #other> 
-          <div class="text-right" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
+          <div class="text-right" ><p class="card-text ">Please call the facility to reserve a unit or rent a unit.</p></div>
         </ng-template>
     </div>
   
