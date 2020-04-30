@@ -1,0 +1,53 @@
+<div class="truck-rentels-holder">
+  <div class="container">
+    <div class="heading">
+      <h1 class="text-center">Penske Truck Rentals</h1>
+    </div>
+    <div class="truck-rentals-content">
+      <div class="row top-block">
+        <div class="col-md-5 align-self-center">
+        <p class="text-justify">{{truckRentalblurb}} <br/>
+          <a class="btn btn-primary w-100 my-3 mx-0" href="http://www.pensketruckrental.com/locations/west_virginia/charleston/009720/" target="_blank"> Reserve Your Truck Online </a>
+        </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites//truck.png" height="auto" width="100%" alt="Truck Rentals">
+        </div>
+      </div>
+
+      <div class="row central-block">
+        <p class="text-center px-2 mb-0 pb-4">
+          Check out the size suggestions. Need to tow a vehicle with you? We can set that up! Moving pads and hand trucks available. Students and Military get a discount too, just ask and show your ID at pickup! Member of AAA? Make sure to tell us for an extra discount!
+        </p>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 p-2" *ngFor="let truck of tuckRentalSizes">
+              <div class="text-center truck-sizes p-2">
+                <div class="py-2 image-box">
+                  <img src="{{truck.img}}" class="mx-auto" alt="{{truck.altImg}}">
+                </div>
+                <h5>{{truck.title}}</h5>
+                <p class="mb-0">{{truck.data}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4">
+            <p class="text-center">Penske participates in the EPA's SmartWay, offers high-quality trucks and great value, as well as all the information you need to arrange a hassle-free move.  Plus 24/7 Roadside Assistance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row bottom-block">
+        <div class="col-md-6 text-center">
+          <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites//packing-box.png" height="100%" width="90%" alt="Packing Box Available">
+        </div>
+        <div class="col-md-6 text-center align-self-center">
+          <div class="pt-5">
+            <h3>Moving?</h3>
+            <p>Make sure you ask about boxes and tape! Our front office has plenty in stock to make your move easier!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,329 @@
+@import "../../styles.scss";
+
+.contact-details {
+  background-color: $light;
+  padding-top: 116px;
+}
+.carousel-caption {
+  bottom: 40px;
+
+  img {
+    height: 80px;
+  }
+}
+.carousel-indicators {
+  li {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px $primary solid;
+    position: relative;
+    flex: 0 1 auto;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: $primary;
+  }
+}
+
+.carousel-item {
+  max-width: 100%;
+
+  .active {
+    background-position: center center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+.jumbotron-top {
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-aerial.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+  }
+  
+  .jumbotron-top2 {
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-parking.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+  }
+  .jumbotron-top3 {
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/beck-road-lock.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+  }
+
+.display-special {
+  width: -webkit-fill-available;
+}
+
+.special {
+  background-color: $primary;
+  display: flex;
+  color: $white;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.social-content {
+  background-color: $primary;
+  color: $white;
+
+  .iconColor {
+    color: $white;
+  }
+}
+
+.img-box-1 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-storage-mini-jumbotron.jpg");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+}
+
+.img-box-3 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/inez-storage-mini-jumbotron.jpg");
+  background-size: cover;
+  height: 400px;
+  background-position: center right;
+}
+
+.hours-data {
+  .col-lg-4 {
+    padding-left: 0;
+
+    .btn {
+      margin-left: 0;
+    }
+  }
+}
+
+.social-links {
+  float: right;
+  padding-right: 0;
+  position: relative;
+  padding-left: 10%;
+  padding-top: 5px;
+}
+
+.disp {
+  display: block;
+}
+@media only screen and (min-width:601px){
+  .img-box-1{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .disp {
+    display: none;
+  }
+
+  .social-content {
+    .col-lg-12 {
+      .each-contact {
+        display: block;
+      }
+    }
+  }
+
+
+  .img-box-1 {
+    height: 410px;
+    background-position: center right;
+  }
+
+  .img-box-2 {
+    height: 420px;
+    background-position: center;
+  }
+
+  .img-box-3 {
+    height: 380px;
+  }
+
+  .hours-data {
+    .col-lg-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .col-lg-4 {
+      padding-left: 15px;
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      .btn {
+        width: 100%;
+        // margin: 5px 30px 5px 15px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+ .social{
+   margin-left: 80px;
+ }
+}
+@media only screen and (max-width: 991px) {
+  .social-content {
+    h1 {
+      font-size: 1.4rem;
+    }
+  }
+  .contact-details {
+    padding-top: 90px;
+}
+
+  .iconColor {
+    font-size: 1rem;
+  }
+
+  td {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .img-box-1 {
+    height: 300px;
+    background-position: center right;
+  }
+
+  .img-box-2 {
+    height: 300px;
+    background-position: center;
+  }
+
+  .img-box-3 {
+    height: 300px;
+    background-position: center right;
+  }
+
+  .hours-data {
+    h1 {
+      font-size: 1.2rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .col-lg-4 {
+      .btn {
+        width: 32.5%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .social-content {
+    .col-lg-11 {
+      .each-contact {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  .img-box-1 {
+    height: 250px;
+    background-position: center right;
+  }
+
+  .img-box-2 {
+    height: 250px;
+    background-position: center;
+  }
+
+  .img-box-3 {
+    height: 250px;
+    background-position: center right;
+  }
+
+  .btn {
+    width: 30%;
+    margin-left: 5px;
+  }
+
+  .hours-data {
+    .col-lg-4 {
+      .btn {
+        width: 32%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-details {
+    padding-top: 60px;
+    background-color: $light;
+
+    .row {
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    .social-content {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+      padding-left: 0 !important;
+
+      h1 {
+        padding-left: 15px;
+      }
+
+      span {
+        padding-top: 0 !important;
+      }
+    }
+
+    .hours-data {
+      .col-lg-8 {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 20px;
+      }
+
+      .col-lg-4 {
+        padding-right: 0;
+        padding-left: 0;
+
+        .btn {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+
+    .btn-area {
+      padding-bottom: 15px;
+    }
+  }
+  .video{
+    display: none;
+  }
+
+  .sub-components {
+    padding: 0 16px;
+  }
+}

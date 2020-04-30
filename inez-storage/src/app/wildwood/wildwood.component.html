@@ -1,0 +1,25 @@
+<!-- <div class="containHolder"> -->
+    <div class="container">
+      <h1 class="text-center py-2">2018 Wildwood 27REI with 2 Slide Outs</h1>
+      <div class="row ">
+        <div class="col-md-6 py-2 prime" >
+          <div  *ngFor="let leftColumn of wildwoodLeftColumn"> 
+          <b>{{leftColumn.p}}</b>
+          </div>
+        </div>
+        <div class="col-md-6 py-2 prime" >
+          <div  *ngFor="let rightColumn of wildwoodRightColumn"> 
+              {{rightColumn.p}}
+          </div>
+        </div>
+      </div> 
+      <div class="pay-rent-holder mb-5">
+        <div class="row ">
+            <div class="col-lg-4 col-md-6  my-2" *ngFor= "let image of wildwoodImages">
+                <img src="{{image.url}}" width="100%" class="f-img">
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
