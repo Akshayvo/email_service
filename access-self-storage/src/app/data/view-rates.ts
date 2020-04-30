@@ -26,10 +26,10 @@ export const th = [
     data: `Deposit`
   },
   {
-    data: `Rent a Unit`
+    data: `Reserve a Unit`
   },
   {
-    data: `Move In`
+    data: `Rent a Unit`
   },
   {
     data: `Climate Control`
