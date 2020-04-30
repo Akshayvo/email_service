@@ -28,9 +28,9 @@
               <button (click)="navigate('reserve', lstUnitType )">Reserve</button>
           </td>
 
-          <!-- <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
+          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
             <button (click)="navigate('move-in', lstUnitType)"> Move In</button>
-          </td> -->
+          </td>
       
           <ng-template #other_climate>
             <td colspan="2"  class="px-4 border text-center">
