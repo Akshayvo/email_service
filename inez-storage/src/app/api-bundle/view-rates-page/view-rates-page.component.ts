@@ -78,7 +78,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   public fetchUrl() {
     if (this.router.url.includes('/inez-storage')) {
-      this.showSpecialData = [`20% off first three months of 10x20 (non climate)`,
+      this.showSpecialData = [`50% off first three months 10x10 (non climate)`,
         `50% off first three months 10x15 (non climate)` ];
     } else {
       if (this.router.url.includes('/beck-road-storage')) {
