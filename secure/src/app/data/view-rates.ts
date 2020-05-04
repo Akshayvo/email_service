@@ -11,7 +11,7 @@ export const viewRates = [
     }
 ];
 
-export const altText = `a row of self storage unit doors with paved parking spaces in front of them`;
+export const altText = `metal self storage unit doors with one door open showing toys, shelves, and boxes`;
 
 export const th = [
   {
