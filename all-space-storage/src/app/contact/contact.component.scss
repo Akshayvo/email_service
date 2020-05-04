@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .contentHolder {
-  padding-top: 213px;
+  padding-top: 172px;
   margin-bottom: 50px;
   min-height: 90vh;
   max-height: auto;
@@ -54,7 +54,7 @@
 
 @media only screen and (max-width: 991px) {
   .contentHolder {
-    padding-top: 223px;
+    padding-top: 160px;
   }
 }
 
@@ -82,6 +82,6 @@
 
 @media only screen and (max-width: 450px) {
   .contentHolder {
-    padding-top: 286px;
+    padding-top: 182px;
   }
 }
