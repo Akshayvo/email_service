@@ -5,6 +5,14 @@
   color: $fontColor;
 }
 
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Selkirk_Images/webp/selkirk-self-storage-front-gate.webp");
+}
+
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Selkirk_Images/jpg/selkirk-self-storage-front-gate.jpg");
+}
+
 .map {
   iframe {
     border: 2px solid white;
@@ -75,7 +83,7 @@
   }
 
   .jumbotron {
-    background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Selkirk_Images/self-storage-units.jpg");
+    // background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Selkirk_Images/self-storage-units.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

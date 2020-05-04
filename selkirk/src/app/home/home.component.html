@@ -4,7 +4,7 @@
   <div class="jumbotron-container">
 
     <div class="jumbotron-top">
-      <div class="jumbotron px-0 m-0">
+      <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp' ">
         <div class="bg-translucent jumbotron-skew-style">
         </div>
           <div class="container">
@@ -92,7 +92,8 @@
   <div class="container py-5">
     <div class="row">
       <div class="col-lg-6 py-3">
-        <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Selkirk_Images/selkirk-self-storage.jpg" width="100%"  alt="A photograph of Selkirk Self Storage's outdoor units and paved driveway" class="sectionImage">
+        <!-- <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Selkirk_Images/selkirk-self-storage.jpg" width="100%"  alt="A photograph of Selkirk Self Storage's outdoor units and paved driveway" class="sectionImage"> -->
+      <app-photos></app-photos>
       </div>
       <div class="col-lg-6 py-3">
         <h1 class="heading pb-4">Convenient & Affordable Self Storage in Selkirk, NY</h1>

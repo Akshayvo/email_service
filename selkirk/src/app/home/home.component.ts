@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
+import { UaParserService } from '../services/ua-parser.service';
 import { featuresList, featuresHead, aboutUs, serviceOffered, gettingStarted, feature, blurb} from '../data/home';
 
 @Component({
@@ -22,6 +23,8 @@ export class HomeComponent implements OnInit {
   serviceOffered: any;
   gettingStarted: any;
   feature: any;
+  imageBaseUrl: any;
+  imagetype: any;
   currentActive: any = 'HOME';
 
 
@@ -29,7 +32,8 @@ export class HomeComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private uaParserService: UaParserService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -37,6 +41,8 @@ export class HomeComponent implements OnInit {
       Selkirk Self Storage has a wide variety of sizes and excellent customer service!`
     });
     this.titleService.setTitle('Affordable Units in Selkirk, NY | Selkirk Self Storage');
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   public navigate(location: any) {
