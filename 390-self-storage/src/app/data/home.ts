@@ -1,28 +1,32 @@
 
 export const featuresList = [
     {
-        td1: 'Convenient Location',
+        td1: 'Key-Pad Operated Gate',
+        td2: 'Convenient Location',
+    },
+    {
+        td1: 'Fully-Fenced with Barbed Wire',
         td2: 'Brand New Facility',
     },
     {
-        td1: 'Climate-Controlled Units Available',
-        td2: 'Security Cameras',
+        td1: 'Security Cameras with Replay',
+        td2: 'Online Reservations'
     },
     {
-        td1: 'Online Reservations',
-        td2: 'Pin-Code Activated Gate'
-    },
-    {
-        td1: 'Paved Parking',
-        td2: 'Fully-Fenced Facility'
-    },
-    {
-        td1: 'Excellent Customer Service',
-        td2: 'Drive-Up Units'
-    },
-    {
-        td1: 'Well-Lit Facility',
+        td1: 'Well-lit, Inside & Out',
         td2: 'Online Payment'
+    },
+    {
+        td1: 'Fire Sprinklers (Climate-Controlled Units)',
+        td2: 'Drive-Up Accessible'
+    },
+    {
+        td1: 'Completely Asphalt Paved',
+        td2: 'Climate-Controlled & Standard Units Available'
+    },
+    {
+        td1: '24-7 Access',
+        td: ''
     }
 ];
 

@@ -35,10 +35,6 @@ export const hours = [
     label: 'Sunday: ',
     data: 'Closed '
   },
-  {
-    label: 'Access Hours: ',
-    data: '24 Hours a day 7 Days a Week'
-  }
 ];
 
 export const socialLinks = [
