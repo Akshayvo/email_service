@@ -1,9 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { AuthService } from '../services/auth.service';
-
-import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { AuthService } from '../services/auth.service';
 import { DataSharingService } from '../services/data-sharing.service';
 import { MustMatch } from './_helpers/must-match.validator';
 @Component({
@@ -13,11 +12,11 @@ import { MustMatch } from './_helpers/must-match.validator';
 })
 export class ChangePasswordComponent implements OnInit, OnDestroy {
 
-  changePasswordForm: FormGroup;
   submitted = false;
-  incorrectPassword = false;
   showLoader = false;
   passwordChanged = false;
+  incorrectPassword = false;
+  changePasswordForm: FormGroup;
   private changePasswordUnsubscribe$: Subscription;
 
   constructor(
@@ -58,7 +57,7 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
 
   changePassword(data: any): void {
     this.showLoader = true;
-  this.changePasswordUnsubscribe$ =  this.authService.changePassword(data)
+    this.changePasswordUnsubscribe$ =  this.authService.changePassword(data)
     .subscribe(
       result => {
         this.showLoader = false;

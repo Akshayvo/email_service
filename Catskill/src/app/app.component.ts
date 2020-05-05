@@ -11,20 +11,15 @@ import { UaParserService } from '../app/services/ua-parser.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Catskill';
-
-
-
+  title = 'Catskill Self Storage';
   constructor(
     private router: Router,
     private angulatics: Angulartics2GoogleAnalytics,
-    private uaParserService: UaParserService,
   ) {
 
   }
   ngOnInit() {
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
-    const onNavigationEnd = this.router.events.pipe(filter(event => event instanceof NavigationEnd));
   }
 }
 

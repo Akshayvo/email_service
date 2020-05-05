@@ -8,7 +8,7 @@ import { storageTipAccordion } from '../data/storage';
 })
 export class AccordionComponent implements OnInit {
 
-  storageTipAccordion: any ;
+  storageTipAccordion: any;
 
   constructor() { }
 
