@@ -55,12 +55,12 @@ img {
   }
 
   .nav-link:hover {
-    color: $secondary;
+    color: $white;
   }
 
   .nav-link-active {
-    color: $secondary;
-    border-bottom: 5px solid $secondary;
+    color: $white;
+    border-bottom: 5px solid $primary;
   }
 
   button {
