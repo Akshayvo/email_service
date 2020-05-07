@@ -11,7 +11,7 @@ export const viewRates = [
     }
 ];
 
-export const altText = `metal self storage unit doors with one door open showing toys, shelves, and boxes`;
+export const altText = `self storage units in a row with green metal doors all closed `;
 
 export const th = [
   {
@@ -23,18 +23,18 @@ export const th = [
   // {
   //   data: `Annual Rate`,
   // },
-  {
-    data: 'Deposit'
-  },
+  // {
+  //   data: 'Deposit'
+  // },
   {
     data: `Reserve a Unit`
   },
-  // {
-  //   data: `Move In`
-  // },
   {
-    data: `Climate Control`
+    data: `Move In`
   },
+  // {
+  //   data: `Climate Control`
+  // },
 ];
 
 export const option =  [

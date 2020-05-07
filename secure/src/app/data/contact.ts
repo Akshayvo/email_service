@@ -7,8 +7,8 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:info@secureselfstorage.com ',
-        data: 'info@secureselfstorage.com ',
+        redirect: 'mailto:SecureSelfStorageWI@gmail.com',
+        data: 'SecureSelfStorageWI@gmail.com',
         label: 'Email:',
         class: 'fas fa-envelope mx-2 iconColor',
     },

@@ -80,7 +80,7 @@
 .home-link {
   a {
     text-decoration: underline;
-    color: $secondary;
+    color: $primary;
     cursor: pointer;
   }
 }
@@ -130,7 +130,7 @@ table {
 
 .loader {
   border: 3px solid #f3f3f3;
-  border-top: 3px solid $secondary;
+  border-top: 3px solid $primary;
   border-radius: 50%;
   width: 80px;
   height: 80px;

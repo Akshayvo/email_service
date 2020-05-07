@@ -21,7 +21,7 @@ export const featuresList = [
     },
 ];
 
-export const altText = `metal self storage unit doors with one door open showing toys, shelves, and boxes`;
+export const altText = `self storage units in a row with green metal doors all closed `;
 
 export const aboutUsHeading = `Self Storage Units in Wisconsin Dells`;
 
