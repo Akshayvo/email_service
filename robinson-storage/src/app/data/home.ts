@@ -5,7 +5,7 @@ export const featuresList = [
     },
     {
         td1: 'Secure Fencing',
-        td2: 'Black Top Paving'
+        td2: 'Large Units'
     },
     {
         td1: 'Well-Lit Facility',
@@ -13,7 +13,6 @@ export const featuresList = [
     },
     {
         td1: 'Convenient Location',
-        td2: 'Large Units'
     }
 ];
 
@@ -26,7 +25,7 @@ export const aboutUs = [
         p: `Robinson Storage is Ennismore's newest self storage facility! Our brand new ground-level, drive-up units
             are clean, and well-maintained to protect your belongings from the elements. We are conveniently located
             on Robinson Road, kitty-corner from Young Street, and directly across from Jesse's Tap & Grill, so you'll
-            always have your furniture, or seasonal decorations, and clothing within reach!`,
+            always have your furniture, or seasonal decorations, and cottage toys within reach!`,
     },
     {
         p: `We understand that the need for self storage can come at a stressful time, which is why we go to great
