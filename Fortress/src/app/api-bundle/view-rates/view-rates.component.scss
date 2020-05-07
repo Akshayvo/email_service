@@ -1,116 +1,92 @@
-
-
 @import "../../../styles.scss";
 
-.display-content {
-  display: contents;
-}
+.view-rates-top {
+  height: 60vh;
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/backImg/about-us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
 
-.view-rates {
-  background-color: #edf1ee;
-  padding: 64px;
-}
-
-table {
-  width: -webkit-fill-available;
-
-  thead {
-    background: $secondary;
-    th {
-      color: $white;
-      font-size: 1rem;
-    }
-  }
-
-  tbody {
-    tr:nth-child(even) {
-      background-color: #dcdcdc;
-    }
-
-    tr {
-      td {
-
-        button {
-          font-size: 0.8rem;
-          min-width: 120px;
-        }
-
-        .btn {
-          min-width: 120px;
-          font-size: 0.9rem;
-          padding: 0.2rem 0.8rem;
-        }
-
-        .btn-primary {
-          background-color: #3f3c3c !important;
-          border-color: #212121 !important;
-        }
-      }
-    }
+  .jumbotorn-top {
+    padding: 0% 8%;
   }
 }
 
-.loader {
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid $secondary;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  animation: spin 1s linear infinite;
-  margin: auto;
+.view-rates-bottom {
+  padding: 48px 0;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+.bg-translucent {
+  height: 60vh;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.display {
-  display: none;
-}
-// table style
-
-.view-rate-heading {
-  display: none;
-}
-
-.contentHolder {
   h1 {
-    margin-block-end: 0;
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 }
 
-.background-padding {
-  padding: 64px;
-}
-
-@media only screen and (max-width: 767px) and (min-width: 601px) {
-  .view-rates {
-    padding: 40px;
+.content-Holder {
+  p {
+    color: $fontColor;
+    text-align: justify;
   }
 
-  .view-rates-padding {
-    padding-top: 24px;
+  h2 {
+    color: $white;
+    border-bottom: 1px solid $primary;
+    margin: auto;
+    font-size: 1.7rem;
+    text-align: center;
+    display: none;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .view-rates {
-    background-color: #edf1ee;
+@media only screen and (max-width: 767px) {
+  .content-Holder {
+    h2 {
+      display: block;
+      width: 70%;
+    }
+  }
+
+  .col-md-6 {
+    img {
+      padding-top: 10px;
+    }
+  }
+
+  .jumbotorn-top {
+    display: none;
+  }
+
+  .p-sec-block {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .view-rates-top {
+    height: 40vh;
+  }
+
+  .view-rates-bottom {
     padding: 16px 0;
   }
 
+}
 
-  img {
-    height: 200px;
-    width: 100%;
-  }
 
-  .background-padding {
-    padding: 20px;
-  }
-
-  .view-rates-padding {
-    padding-top: 24px;
+@media only screen and (max-width: 575) {
+  .content-margin-top {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

@@ -29,15 +29,23 @@ table {
   thead {
     background: $primary;
     th {
-      color: $white;
+      // color: $white;
       font-size: 1rem;
     }
   }
+
   tbody {
     tr:nth-child(even) {
       background-color: #dcdcdc;
+      color: $black;
     }
+
+    tr:nth-child(odd) {
+      color: $white;
+    }
+
     tr {
+
       td {
 
         button {
@@ -110,6 +118,11 @@ p {
 @media only screen and (max-width: 991px) {
   .viewrates-desktop {
     display: none;
+  }
+
+  .viewrates-mobile {
+   
+    color: $white;
   }
 }
 

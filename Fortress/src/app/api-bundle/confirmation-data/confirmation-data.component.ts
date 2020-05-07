@@ -7,7 +7,7 @@ import { MakeAReservationService } from '../services/make-a-reservation.service'
 import { AddTenantService } from '../services/add-tenant.service';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { Subscription, Subject } from 'rxjs';
-import { option } from '../../data/view-rates';
+import { option } from '../../data/view';
 import { SignOutService } from '../services/sign-out.service';
 
 @Component({

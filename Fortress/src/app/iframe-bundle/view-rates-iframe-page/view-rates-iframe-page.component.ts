@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { dataViewRates } from '../../data/view-rates';
+import { viewRate } from '../../data/view';
 import { MetaService } from '../../services/link.service';
 import { UaParserService } from '../../services/ua-parser.service';
-import { viewRatesHeading } from '../..//data/heading';
+import { viewRatesHeading } from '../../data/heading';
 import { viewRatesPageContent, viewRatesPageTitle } from '../../data/title';
 
 @Component({
@@ -55,7 +55,7 @@ export class ViewRatesIframePageComponent implements OnInit {
 
 
   public fetchViewRates() {
-    this.viewRates = dataViewRates;
+    this.viewRates = viewRate;
   }
 }
 

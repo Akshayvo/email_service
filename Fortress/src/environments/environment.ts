@@ -12,8 +12,8 @@ export const environment = {
   websiteUrl: 'https://fortressministorage.com',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  APIKey: `dzF0MFcxSjcqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` //  Fortess 10176
-  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
+  // APIKey: `dzF0MFcxSjcqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` //  Fortess 10176
+  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
 };
 /*
  * For easier debugging in development mode, you can import the following file

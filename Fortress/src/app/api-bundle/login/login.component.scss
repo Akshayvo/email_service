@@ -2,10 +2,15 @@
 @import "../../../styles.scss";
 
 .vertical-line {
-  border-left: 1px solid black;
+  border-left: 1px solid $white;
   padding-left: 50px;
+  color: $white;
 }
 
+
+label {
+  color: $fontColor;
+}
 
 .display-none {
   display: none;
@@ -14,7 +19,7 @@
 
 .contact-links {
   a {
-    color: black;
+    color: $white;
   }
 }
 
@@ -58,7 +63,7 @@
 
 @media only screen and (max-width: 767px) {
   .vertical-line {
-    border-left: 0 solid black;
+    border-left: 0 solid $white;
     padding-left: 20px;
     padding-top: 20px;
   }

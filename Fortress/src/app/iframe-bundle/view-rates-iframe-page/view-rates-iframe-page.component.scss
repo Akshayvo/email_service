@@ -1,82 +1,83 @@
 @import "../../../styles.scss";
 
-.view-rate-heading {
-  display: none;
+.view-rates-top {
+  height: 60vh;
+  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Fortress_Images/backImg/about-us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+
+  .jumbotorn-top {
+    padding: 0% 8%;
+  }
 }
 
-.contentHolder {
+.view-rates-bottom {
+  padding: 48px 0;
+}
+
+.bg-translucent {
+  height: 60vh;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   h1 {
-    margin-block-end: 0;
+    font-size: 3.5rem;
   }
 
-  .scroll-wrapper {
-    -webkit-overflow-scrolling: touch;
-    overflow: auto;
+  p {
+    font-size: 1.2rem;
+  }
+}
 
-    iframe {
-      width: 100%;
-      overflow: auto;
-      min-width: 100%;
+.content-Holder {
+  p {
+    color: $fontColor;
+    text-align: justify;
+  }
+
+  h2 {
+    color: $white;
+    border-bottom: 1px solid $primary;
+    margin: auto;
+    font-size: 1.7rem;
+    text-align: center;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .content-Holder {
+    h2 {
+      display: block;
+      width: 70%;
     }
   }
-}
 
-.view-rate-text {
-  margin-top: 36px;
-}
+  .col-md-6 {
+    img {
+      padding-top: 10px;
+    }
+  }
 
-.iframe-container {
-  background-color: white;
-}
+  .jumbotorn-top {
+    display: none;
+  }
 
-.padding-top {
-  padding-top: 110px;
-}
-
-.background-padding {
-  padding: 64px;
+  .p-sec-block {
+    padding-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .scroll-wrapper {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
-
-    iframe {
-      width: 100%;
-      overflow: scroll;
-    }
+  .view-rates-top {
+    height: 40vh;
   }
 
-  .background-padding {
-    padding: 24px 0;
-
-    p {
-      margin-block-end: 0;
-    }
-  }
-
-  .view-rate-heading {
-    display: inline;
-  }
-
-  .padding-top {
-    padding-top: 56px;
-  }
-}
-
-
-@media only screen and (max-width: 767px) {
-  .view-rate-heading {
-    display: block;
-    margin-block-start: 36px;
-    margin-block-end: 16px;
-  }
-}
-
-
-@media only screen and (max-width: 991px) {
-  .padding-top {
-    padding-top: 56px;
+  .view-rates-bottom {
+    padding: 16px 0;
   }
 }
