@@ -19,6 +19,12 @@ export const tabs1 = [
     },
     {
         id: '4',
+        name: 'Move In',
+        path: './moveIn',
+        active: false,
+    },
+    {
+        id: '5',
         name: 'Gallery',
         path: './photos',
         active: false,
@@ -40,12 +46,18 @@ export const tabs = [
     },
     {
         id: '3',
+        name: 'Move In',
+        path: './moveIn',
+        active: false,
+    },
+    {
+        id: '4',
         name: 'Gallery',
         path: './photos',
         active: false,
     },
     {
-        id: '4',
+        id: '5',
         name: 'About Us',
         path: './about',
         active: false,

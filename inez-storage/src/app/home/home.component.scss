@@ -245,6 +245,7 @@ a{
       }
     }
   }
+  
   .feature-home{
       img{
         height: 40px !important;
@@ -282,7 +283,7 @@ a{
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .contact-hours {
     border-left: none;
     padding-left: 5%;
