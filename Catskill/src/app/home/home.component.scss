@@ -1,13 +1,14 @@
 @import "../../styles.scss";
-.jumbotron-background-webp{
+
+.jumbotron-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/webp/catskill-self-storage.webp");
 }
-.jumbotron-background-jpg{
+
+.jumbotron-background-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/jpg/catskill-self-storage.jpg");
 }
 
 .jumbotron {
-  // background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/catskill-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -1,3 +1,5 @@
+import { objSIMSetting } from './configuration';
+
 export const dataViewRates = [
     {
       p: `Catskill Self Storage offers many amenities to make your storage experience
@@ -7,24 +9,34 @@ export const dataViewRates = [
     }
 ];
 
+export const viewRatesAltText = `photograph of several self storage unit buildings with square red doors`;
+
+console.log('view-rates initiated', objSIMSetting.objActionSetting.blnAllowMoveIn);
+
 export const th = [
   {
-    data: `Size`
+    data: `Size`,
+    state: objSIMSetting.objActionSetting.blnAllowMoveIn
   },
   {
-    data: `Rate`
+    data: `Rate`,
+    state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
   {
-    data: 'Deposit'
+    data: 'Deposit',
+    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   },
   {
-    data: `Reserve a Unit`
+    data: `Reserve a Unit`,
+    state: objSIMSetting.objActionSetting.blnAllowReservation
   },
   {
-    data: `Move In`
+    data: `Move In`,
+    state: objSIMSetting.objActionSetting.blnAllowMoveIn
   },
   {
-    data: `Climate Control`
+    data: `Climate Control`,
+    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
   },
 ];
 

@@ -71,9 +71,13 @@ body {
   background: $light !important;
 }
 
-.bg-translucent {
+.bg-translucent-dark {
   background: rgba(0, 0, 0, 0.6);
   // position: relative;
+}
+
+.bg-translucent-light {
+  background: rgba(255, 255, 255, 0.9);
 }
 
 // Content Holder Styles

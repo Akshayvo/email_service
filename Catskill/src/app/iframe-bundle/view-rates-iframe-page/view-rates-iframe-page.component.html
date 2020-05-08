@@ -10,7 +10,8 @@
       </div>
       <div class="col-md-5 px-4">
         <h3 class="view-rate-heading">Amenities</h3>
-        <img src="{{imageBaseUrl}}/self-storage-view-rates.{{imagetype}}" alt="self-storage-view-rates" class="sectionImage" />
+        <img src="{{imageBaseUrl}}/self-storage-view-rates.{{imagetype}}"
+        alt="{{viewRatesAltText}}" class="sectionImage" />
         <p class="view-rate-text text-justify" *ngFor="let viewRates of viewRates">
           {{viewRates.p}}
         </p>

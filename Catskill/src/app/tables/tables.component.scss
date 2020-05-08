@@ -14,3 +14,20 @@ table {
   background: $primary;
   color: $white;
 }
+
+td {
+  padding-left: 5%;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #dee2e6;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-inline-start: 10px;
+}

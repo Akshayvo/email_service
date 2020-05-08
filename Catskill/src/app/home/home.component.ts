@@ -2,13 +2,13 @@ import { Component, OnInit, Renderer2, Inject} from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
-import { featuresList, aboutUs, gettingStarted, feature, jumbotron} from '../data/home';
+import { featuresList, aboutUs, gettingStarted, feature, jumbotron, aboutUsAlt, aboutUsHeading } from '../data/home';
 import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { UaParserService } from '../services/ua-parser.service';
 import { homePageTitle, homePageContent } from '../data/title';
 import { objSIMSetting } from '../data/configuration';
-
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -35,8 +35,10 @@ export class HomeComponent implements OnInit {
   homePageContent: string;
   homePageTitle: string;
   data: any;
+  aboutUsAlt: string;
+  aboutUsHeading: string;
   objSIMSetting: any;
-
+  template: string;
 
 
   constructor(
@@ -72,8 +74,16 @@ export class HomeComponent implements OnInit {
     this.fetchStaticContent();
     this.fetchFeature();
     this.fetchJumbotron();
+    this.fetchTemplate();
     window.scrollTo(0, 0);
     console.log('Display settings', this.objSIMSetting.objActionSetting);
+
+  }
+
+  public fetchTemplate() {
+    this.template = environment.template;
+
+    console.log('template is', this.template);
 
   }
 
@@ -96,6 +106,8 @@ export class HomeComponent implements OnInit {
 
   public fetchStaticContent() {
     this.aboutUs = aboutUs;
+    this.aboutUsAlt = aboutUsAlt;
+    this.aboutUsHeading = aboutUsHeading;
     this.gettingStarted = gettingStarted;
   }
 

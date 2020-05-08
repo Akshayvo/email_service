@@ -17,9 +17,12 @@ export const featuresList = [
     },
     {
         td1: 'Packing Material',
-        td2: 'Tenant Insurance'
     }
 ];
+
+export const aboutUsAlt = `aboutUsAlt`;
+
+export const aboutUsHeading = `Affordable Storage Near Catskill, NY`;
 
 export const aboutUs = [
     {
