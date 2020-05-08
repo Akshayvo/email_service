@@ -35,7 +35,7 @@
       <div class="container ">
         <div class="row text-center">
         <div class="feature row">
-          <div class="col feature-icon-style " *ngFor="let feature of feature">
+          <div class="col col-sm feature-icon-style " *ngFor="let feature of feature">
             <img [src]="feature?.path" [alt]="feature.alt" height="80px" width="auto"/>
               <h6 class="feature-text">{{feature.label}}</h6>
           </div>
@@ -70,6 +70,7 @@
                 <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
               </span>
             </p>
+            <p><b>COMPLETE EVERYTHING ONLINE. No need to visit the office!</b></p>
           </div>
           <div>
             <app-tables [tBody]="featuresList"></app-tables>
@@ -115,7 +116,7 @@
   </div>
 </div>
 
-<div class="getStarted">
+<!-- <div class="getStarted">
   <div class="container">
     <div class="section py-5 m-0">
       <div class="row">
@@ -127,6 +128,6 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 </div> 

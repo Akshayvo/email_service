@@ -28,9 +28,9 @@ export const th = [
   {
     data: `Rent a Unit`
   },
-  // {
-  //   data: `Move In`
-  // },
+  {
+    data: `Reserve a Unit`
+  },
   {
     data: `Climate Control`
   },
