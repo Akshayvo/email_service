@@ -81,6 +81,7 @@ export class UnpaidAR {
   AmountOwed: number;
   demoAmountOwed: number;
   Comments: string;
+  UnitNo: string;
 
   constructor(
     FromDate: string,
@@ -89,7 +90,8 @@ export class UnpaidAR {
     Amount: number,
     AmountOwed: number,
     demoAmountOwed: number,
-    Comments: string
+    Comments: string,
+    UnitNo: string
   ) {
     this.FromDate = FromDate;
     this.ToDate = ToDate;
@@ -98,6 +100,7 @@ export class UnpaidAR {
     this.AmountOwed = AmountOwed;
     this.demoAmountOwed = demoAmountOwed;
     this.Comments = Comments;
+    this.UnitNo = UnitNo;
   }
 }
 
