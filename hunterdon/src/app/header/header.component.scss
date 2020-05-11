@@ -1,0 +1,156 @@
+@import "../../styles.scss";
+
+//temporary
+h3 {
+  color: $white;
+}
+
+
+
+.contact-detail {
+  color: white;
+
+  a {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+.iconColor {
+  color: $primary;
+}
+
+.navbar {
+  padding-bottom: 0;
+
+  .navbar-brand {
+    img {
+      position: absolute;
+      height: auto;
+      top: 9px;
+    }
+  }
+
+  button {
+    border: 1px $dark solid;
+    margin-right: 20px;
+    color: $white;
+    outline: 5px auto $white;
+  }
+}
+
+.nav-link {
+  color: $white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  transition: none;
+}
+
+.nav-link:hover {
+  color: $primary;
+}
+
+.nav-link-active {
+  border-bottom: 5px $primary solid;
+  // color: $primary;
+}
+
+.display {
+  display: block;
+}
+
+.navbar-toggler {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  border: 1px #efefef solid;
+}
+
+
+// @media (min-width: 768px) {
+//   .navbar-nav {
+//     li {
+//       a {
+//         line-height: 1.5rem;
+//         text-align: center;
+//       }
+//     }
+//   }
+// }
+
+.dropdown {
+  a {
+    color: white;
+  }
+
+  .dropdown-menu {
+    .dropdown-item {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $fontColor;
+    }
+
+    .dropdown-item:hover {
+      color: $primary;
+    }
+  }
+}
+
+.location-active {
+  color: $primary !important;
+}
+
+@media screen and (max-width: 991px) {
+  .display {
+    display: none;
+  }
+
+  .navbar {
+    padding-bottom: 7.2px;
+
+    .navbar-nav {
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+
+      li {
+        width: fit-content;
+      }
+    }
+
+    .navbar-brand {
+      img {
+        width: 80px;
+        height: auto;
+        top: 10px;
+      }
+    }
+
+    .dropdown {
+      ul {
+        text-align: -webkit-center;
+      }
+    }
+
+    .dropdown-menu {
+      left: -151px;
+    }
+  }
+
+  @media screen and (max-height: 476px) {
+    .nav-scroll {
+      height: 70vh;
+      overflow-y: auto;
+    }
+  }
+}
