@@ -12,12 +12,16 @@ export class UaParserService {
   constructor() {
     this.uaParser = new UAParser();
     this.browserDetails = this.uaParser.getResult();
+    // console.log('The Browser Details:', this.browserDetails);
     this.determineBaseUrl();
+    // console.log('Base Url:', this.baseUrl);
+
   }
 
   determineBaseUrl() {
     if (this.browserDetails) {
       const { browser: { name = 'Chrome', major = '32 '} } = this.browserDetails;
+      // console.log(`Browser Name: ${name} Major: ${major}`);
       switch (name) {
         case 'Chrome':
           this.typeOfImages = (major && major < 32) ? 'JPG' : 'WEBP';
@@ -26,18 +30,14 @@ export class UaParserService {
             this.typeOfImages = (major && major < 65) ? 'JPG' : 'WEBP';
           break;
         default:
-          this.typeOfImages = 'PNG';
+          this.typeOfImages = 'JPG';
           break;
       }
     }
     if (this.typeOfImages === 'WEBP') {
       this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/BlueGrass_Storage_Images/webp`;
     } else {
-      if (this.typeOfImages === 'JPG') {
-        this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/BlueGrass_Storage_Images/jpg';
-      } else {
-        this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/BlueGrass_Storage_Images/png';
-      }
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/BlueGrass_Storage_Images/jpg';
     }
   }
 }
