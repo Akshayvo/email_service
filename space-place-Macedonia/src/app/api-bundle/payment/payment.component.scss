@@ -1,0 +1,177 @@
+@import "../../../styles.scss";
+
+.payment-top-webp {
+  height: 60vh;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/webp/pay-rent.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.payment-top-jpg {
+  height: 60vh;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/jpg/pay-rent.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.jumbotorn-top {
+  padding: 0 8%;
+}
+
+label {
+  color: white;
+}
+
+.payment-bottom {
+  padding: 48px 0;
+}
+
+.bg-translucent {
+  height: 60vh;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.content-margin-top {
+  margin-top: 64px;
+}
+
+.content-Holder {
+  h2 {
+    color: $white;
+    border-bottom: 1px solid $primary;
+    margin: auto;
+    font-size: 2.25rem;
+    width: 200px;
+  }
+}
+
+.payment-link {
+  color: white;
+
+  a {
+    color: $white;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .payment-top {
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+  }
+
+  .content-margin-top {
+    margin-top: 36px;
+  }
+
+  .payment-bottom {
+    padding: 16px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .payment-top {
+    .jumbotorn-top {
+      display: none;
+    }
+  }
+
+  .content-Holder {
+    h2 {
+      font-size: 2rem;
+      width: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 767px) {
+  .content-Holder {
+    h2 {
+      font-size: 2rem;
+      width: auto;
+    }
+  }
+
+  .payment-top {
+    .jumbotorn-top {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 900px)  and (min-height: 768px) {
+  .content-Holder {
+    h2 {
+      font-size: 2rem;
+      width: auto;
+    }
+  }
+
+  .payment-top {
+    .jumbotorn-top {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .content-Holder {
+    h2 {
+      width: auto;
+    }
+  }
+
+  .payment-top {
+    .jumbotorn-top {
+      top: 10%;
+      position: relative;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (min-height: 601px) and(max-height: 950px) {
+  .payment-top {
+    .jumbotorn-top {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      position: relative;
+      top: 10%;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-height: 600px) {
+  .jumbotorn-top {
+    display: none;
+  }
+}
