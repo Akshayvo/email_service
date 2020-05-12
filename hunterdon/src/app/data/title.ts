@@ -1,6 +1,6 @@
-export const  homePageTitle = `24 Hour Access Self Storage in Bardstown | Bluegrass Storage`;
-export const homePageContent = `Bluegrass Storage offers convenient 24/7 access to your belongings,
-online payments and a variety of unit sizes for all of your self storage needs.`;
+export const  homePageTitle = `3 Self Storage Facilities in Flemington | Hunterdon Storage`;
+export const homePageContent = `Hunterdon Storage serves Flemington and the surrounding communities
+with a variety of well-maintained and affordable self storage units.`;
 
 export const viewRatesPageTitle = ``;
 export const viewRatesPageContent = ``;
@@ -8,25 +8,30 @@ export const viewRatesPageContent = ``;
 export const reservePageTitle = ``;
 export const reservePageContent = ``;
 
-export const payRentPageTitle = `Pay Rent | Bluegrass Storage`;
-export const payRentPageContent = `Pay your rent online 24 hours a day, 7 days a week. Just follow the
-instructions on the page, or call our office to learn how to access your account!`;
+export const payRentPageTitle = `Pay Rent | Hunterdon Storage`;
+export const payRentPageContent = `Follow the instructions on this page, or call one of our 3 locations
+to learn how to access your account, and pay your bill 24 hours a day!`;
 
-export const storageTipsTitle = `Storage Tips | Bluegrass Storage`;
-export const storageTipsContent = `Follow these easy self storage tips to make your stay with Bluegrass
-Storage a breeze! Have questions? Call (502) 348-2532, today!`;
+export const storageTipsTitle = `Storage Tips  | Hunterdon Storage`;
+export const storageTipsContent = `Our quick storage tips page will help you figure out how to
+best use our services and avoid common pitfalls in self storage!`;
 
 export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
 
-export const contactPageTitle = `Contact Us | Bluegrass Storage`;
-export const contactPageContent = `Do you have a question about our services, or would you like help with
-your account? Use our form or contact information to reach out, today!`;
+export const contactPageTitle = `Contact Us  | Hunterdon Storage`;
+export const contactPageContent = `If you have questions about your account or the services we offer,
+take a moment to fill our out form, or use the contact information to speak with us!`;
 
-export const locationPage1Title = `24 Hour Access Storage Units in Bardstown, KY | Bluegrass Storage`;
-export const locationPage1Content = `Take a look at our storage unit rates and availability at our Filitreau
-Lane location! Reserve online or call our team today!`;
+export const locationPage1Title = `Affordable Self Storage Units in Flemington | Hunterdon Storage`;
+export const locationPage1Content = `Check out our rates and availability at our Hunterdon Storage at
+Ringoes location! We offer units from our closet-sized 5x5 units to our oversized 10x20!`;
 
-export const locationPage2Title = `24 Hour Access Self Storage in Bardstown, KY | Bluegrass Storage`;
-export const locationPage2Content = `Take a look at our storage unit rates and availability at our Filitreau
-Lane location! Reserve online or call our team today!`;
+export const locationPage2Title = `Self Storage Units in Flemington | Hunterdon Storage`;
+export const locationPage2Content = `Check out our rates and availability at our Hunterdon Storage I
+location! We offer units from our closet-sized 5x5 units to our oversized 10x20!`;
+
+
+export const locationPage3Title = `Convenient Self Storage in Flemington | Hunterdon Storage`;
+export const locationPage3Content = `Check out our rates and availability at our Hunterdon Storage II
+location! We offer units from our closet-sized 5x5 units to our oversized 10x20!`;

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Bluegrass": {
+    "Hunterdon": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -60,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Bluegrass:build"
+            "browserTarget": "Hunterdon:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Bluegrass:build:production"
+              "browserTarget": "Hunterdon:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Bluegrass:build"
+            "browserTarget": "Hunterdon:build"
           }
         },
         "test": {
@@ -116,7 +116,7 @@
         }
       }
     },
-    "Bluegrass-e2e": {
+    "Hunterdon-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -124,11 +124,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Bluegrass:serve"
+            "devServerTarget": "Hunterdon:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Bluegrass:serve:production"
+              "devServerTarget": "Hunterdon:serve:production"
             }
           }
         },
@@ -144,5 +144,5 @@
       }
     }
   },
-  "defaultProject": "Bluegrass"
+  "defaultProject": "Hunterdon"
 }

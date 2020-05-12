@@ -1,45 +1,46 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: 'Conveniently Located',
+        label: '3 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: '24 Hour Clock',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: 'Online Reservation & Bill Pay',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+        alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: 'Stellar Customer Service',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Customer Service Representative Icon'
+        label: 'Affordable Self Storage Rates',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        alt: 'Icon of a hand holding money'
     },
     {
-        label: 'Security Cameras on Premises',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
-        alt: 'Icon of a security camera'
+        label: 'Fully-Fenced Facility',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/fence.svg',
+        alt: 'Icon of a section of fencing'
     },
 ];
 
 export const serviceOffered = [
     {
-        p: `Bluegrass Storage is your one-stop-storage-stop for renters, homeowners, and businesses in Bardstown, Kentucky.
-        We have  2 conveniently located self storage facilities with drive-up, 24-hour access via a keypad activated
-        electronic security gate to make sure you have access to your unit and your belongings whenever you need them!
-        Rent or reserve your unit(s) online, then pay your bill around the clock with our easy tenant portal.`,
+        p: `Hunterdon Storage has been serving Flemington, and the surrounding communities in Central, New Jersey since 1984.
+        Our facilities are conveniently located, well-lit, and well-maintained to make your next self storage experience a breeze!`,
     },
     {
-        p: `We understand that self storage is about more than just convenience. Our facilities are well-lit, fenced,
-        and covered by security cameras, plus our managers perform regular walkarounds to ensure a constant sense of
-        safety to our valued customers.`,
+        p: `We offer a large number of self storage unit sizes at each of our three convenient locations. All of our units are drive-up,
+        to make the loading and unloading of your vehicle easy! You'll find our affordable rental rates, and our stellar customer service
+        make Hunterdon Storage your best value storage solution!`,
     },
     {
-        p: `So, whether you're a renter or homeowner looking for some extra elbow-room around the house, or a growing
-        local business in need of room for supplies, inventory, or equipment, we've got a unit for you! Take a moment to
-        review our availability, then reserve your unit in seconds, or call our office today and let our friendly management
-        team guide you to your next de-cluttering project!`,
+        p: `Take advantage of the Hunterdon Storage self storage experience, and give your nearest location a call, or reserve your unit
+        online, today! Once our friendly team reaches out and gets your account set up, you'll be able to pay online 24/7 with our
+        handy customer portal! `,
     },
+    {
+        p: `Are you ready to start your next home project, move, or are you just looking to de-clutter the garage, basement,
+        or attic? Give us a shout, and let Hunterdon Storage help make your next self storage project a success!`
+    }
 ];
 
 export const gettingStarted = [
@@ -53,33 +54,33 @@ export const gettingStarted = [
 
 export const jumbotron = [
     {
-        h1: `24-Hour Access Self Storage in Bardstown`,
-        blurb: `Bluegrass Storage proudly serves Bardstown, and the surrounding communities in Nelson county with high-quality,
-        affordable self storage services with 24-hour access, and a variety of amenities! Our management team is here to make your
-        self storage experience a simple, stress-free one! You may rent or reserve your unit online, or just give our friendly managers
-        a call, and start de-cluttering your life, today!`,
+        h1: ``,
+        blurb: ``,
     }
 ];
 
-export const aboutUsHeading = `Affordable, Convenient Self Storage in Bardstown, KY`;
+export const aboutUsHeading = `3 Conveniently Located Self Storage Facilities in Flemington`;
 
 export const aboutUsAlt = `self storage units with paved parking spaces in front of them`;
 
 export const featuresList = [
-    {
-        td1: '7 Convenient Locations',
-        td2: 'Affordable Rates'
-    },
     {
         td1: 'Online Bill Pay',
         td2: 'Security Cameras'
     },
     {
         td1: 'Well-Lit Facility',
+        td2: 'Single-Level Facility'
+    },
+    {
+        td1: 'Drive-Up Units',
         td2: 'Auto-Pay Available'
     },
     {
-        td1: 'Friendly Customer Service',
-        td2: 'Climate-Controlled Units Available',
+        td1: 'Fully-Paved Facility',
+        td2: 'Affordable Rates',
     },
+    {
+        td1:  '3 Convenient Locations'
+    }
 ];

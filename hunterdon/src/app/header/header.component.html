@@ -24,7 +24,8 @@
 <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')">
-      <img src="{{imageBaseUrl}}/bluegrass-storage-logo.{{imagetype}}" width="100px" height="" alt="bluegrass storage logo" class="py-1">
+      <img src="{{imageBaseUrl}}/logo.{{imagetype}}" width="140px" height="" 
+      alt="logo artwork that spells out Hunterdon Storage Flemington" class="py-1">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +45,7 @@
           <span *ngIf="nav?.type === 'dropdown'">
               <div class="dropdown show">  
                 <a class="dropdown-toggle nav-link text-center" role="button" id="dropdownMenuLink" 
-                [class.nav-link-active]="router.isActive('/location/filitreau-lane') || router.isActive('/location/springfield-road') || router.isActive('/location/246-w-south-lane') || router.isActive('/location/817-s-getty') || router.isActive('/location/430-s-hwy-83') || router.isActive('/location/500-east-garden-street')" 
+                [class.nav-link-active]="router.isActive('/location/hunterdon-storage-ringoes') || router.isActive('/location/hunterdon-storage-1') || router.isActive('/location/hunterdon-storage-2')" 
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
                   <li *ngFor="let sub of nav.sublinks text-left"><a class="dropdown-item" 

@@ -6,23 +6,22 @@ export const th = [
     data: `Rate`
   },
   {
+    data: `Deposit`
+  },
+  {
     data: `Reserve a Unit`
   },
   // {
   //   data: `Move In`
   // },
-  {
-    data: `Climate Control`
-  },
+  // {
+  //   data: `Climate Control`
+  // },
 ];
 
 export const viewrates = [
     {
-        p: `Do you like the facility, and it's extremely affordable self storage and workshop pricing?
-            You can reserve or move in immediately just by filling out a form! Start saving on small
-            business expenses with storage units that are a fraction of the cost of commercial space,
-            or grow that small business out of the garage and give it the dedicated space it
-            deserves!`,
+        p: ``,
     },
 ];
 

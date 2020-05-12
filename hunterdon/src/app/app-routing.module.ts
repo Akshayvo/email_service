@@ -31,7 +31,7 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent  },
-  { path: 'location/filitreau-lane',
+  { path: 'location/hunterdon-storage-ringoes',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -53,7 +53,29 @@ const routes: Routes = [
     ],
     resolve: { data: AppResolver }
   },
-  { path: 'location/springfield-road',
+  { path: 'location/hunterdon-storage-1',
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+      { path: 'storageUnits', component: StorageUnitComponent,
+      children: [
+        { path: '', component: ViewRatesPageComponent },
+        { path: 'reserve', component: ReserveUnitFormComponent },
+        { path: 'move-in', component: ReserveUnitFormComponent },
+        // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+      ] },
+      { path: 'unitSizer', component: UnitSizerComponent},
+      { path: 'reserveUnit', component: ReserveUnitComponent },
+      { path: 'photos', component: PhotosComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ],
+    resolve: { data: AppResolver }
+  },
+  { path: 'location/hunterdon-storage-2',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -78,7 +100,7 @@ const routes: Routes = [
   { path: 'pay-rent',
     component: PaymentComponent,
   },
-  { path: 'review/filitreau-lane', component: HomeComponent,
+  { path: 'review/hunterdon-storage-ringoes', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -86,7 +108,7 @@ const routes: Routes = [
         externalUrl: ''
     }
   },
-  { path: 'review/springfield-road', component: HomeComponent,
+  { path: 'review/hunterdon-storage-1', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -94,9 +116,17 @@ const routes: Routes = [
         externalUrl: ''
     }
   },
+  { path: 'review/hunterdon-storage-2', component: HomeComponent,
+  resolve: {
+      url: 'externalUrlRedirectResolver'
+  },
+  data: {
+      externalUrl: ''
+  }
+},
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'pay-rent/filitreau-lane', component: PayRentComponent,
+  { path: 'pay-rent/hunterdon-storage-ringoes', component: PayRentComponent,
     children: [
       {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'login', component: LoginComponent },
@@ -107,7 +137,7 @@ const routes: Routes = [
       { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
     ]
   },
-  { path: 'pay-rent/springfield-road', component: PayRentComponent,
+  { path: 'pay-rent/hunterdon-storage-1', component: PayRentComponent,
     children: [
       {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'login', component: LoginComponent },
@@ -118,6 +148,17 @@ const routes: Routes = [
       { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
     ]
   },
+  { path: 'pay-rent/hunterdon-storage-2', component: PayRentComponent,
+  children: [
+    {path: '', redirectTo: 'login', pathMatch: 'full'},
+    {path: 'login', component: LoginComponent },
+    {path: 'forgotPassword', component: ForgotPasswordComponent },
+    {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+    {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+    { path: 'verifyCode', component: VerifyCodeComponent },
+    { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+  ]
+},
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },
 ];

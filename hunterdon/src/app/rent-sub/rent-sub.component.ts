@@ -18,18 +18,12 @@ export class RentSubComponent implements OnInit {
   
 
   public isSomePage() {
-    if (this.router.url.includes('/filitreau-lane')) {
+    if (this.router.url.includes('/hunterdon-storage-ringoes')) {
         this.tabId = 0;
-    } else if (this.router.url.includes('/springfield-road')) {
+    } else if (this.router.url.includes('/hunterdon-storage-1')) {
       this.tabId = 1;
-    } else if (this.router.url.includes('/246-w-south-lane')) {
+    } else if (this.router.url.includes('/hunterdon-storage-2')) {
       this.tabId = 2;
-    }  else if (this.router.url.includes('/817-s-getty')) {
-      this.tabId = 3;
-    }  else if (this.router.url.includes('/430-s-hwy-83')) {
-      this.tabId = 4;
-    }  else if (this.router.url.includes('/500-east-garden-street')) {
-      this.tabId = 5;
     }
   }
 }

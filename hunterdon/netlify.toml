@@ -32,7 +32,7 @@
   status = 301
 [[redirects]]
   from = "/Affordable_Storage.html"
-  to = "/location/filitreau-lane/storageUnits"
+  to = "/location/hunterdon-storage-ringoes/storageUnits"
   status = 301
 [[redirects]]
   from = "/properties.html"

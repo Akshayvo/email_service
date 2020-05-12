@@ -17,12 +17,15 @@ export class StorageUnitComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/filitreau-lane')) {
+    if (this.router.url.includes('/hunterdon-storage-ringoes')) {
         this.id = 0;
-        this.name = 'Reserve Your Unit at Our Filitreau Lane Location';
-    } else if (this.router.url.includes('/springfield-road')) {
+        this.name = 'Reserve Your Unit at our Hunterdon Storage at Ringoes Location';
+    } else if (this.router.url.includes('/hunterdon-storage-1')) {
       this.id = 1;
-      this.name = 'Reserve Your Unit at Our Springfield Road Location';
+      this.name = 'Reserve Your Unit at our Hunterdon Storage I Location';
+    } else if (this.router.url.includes('/hunterdon-storage-2')) {
+      this.id = 2;
+      this.name = 'Reserve Your Unit at our Hunterdon Storage II Location';
     }
   }
 }

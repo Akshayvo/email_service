@@ -11,16 +11,22 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Bluegrass Storage - Filitreau Lane',
-                path: '/location/filitreau-lane',
-                name: 'filitreau-lane'
+                label: 'Hunterdon Storage at Ringoes',
+                path: '/location/hunterdon-storage-ringoes',
+                name: 'hunterdon-storage-ringoes'
               },
               {
                   id: '2',
-                  label: 'Bluegrass Storage - Springfield Road',
-                  path: '/location/springfield-road',
-                  name: 'springfield-road'
+                  label: 'Hunterdon Storage I',
+                  path: '/location/hunterdon-storage-1',
+                  name: 'hunterdon-storage-1'
               },
+              {
+                id: '3',
+                label: 'Hunterdon Storage II',
+                path: '/location/hunterdon-storage-2',
+                name: 'hunterdon-storage-2'
+            },
         ]
     },
     {

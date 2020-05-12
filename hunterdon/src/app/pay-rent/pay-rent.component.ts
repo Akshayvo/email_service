@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataSharingService } from '../services/data-sharing.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { contact, contactsLocation2, contactsLocation1 } from '../data/contact';
+import { contact, contactsLocation2, contactsLocation1, contactsLocation3 } from '../data/contact';
 
 @Component({
   selector: 'app-pay-rent',
@@ -20,14 +20,18 @@ export class PayRentComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    if (this.router.url.includes('filitreau-lane')) {
+    if (this.router.url.includes('hunterdon-storage-ringoes')) {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
-      this.name = 'Bluegrass Storage - Filitreau Lane';
+      this.name = 'Hunterdon Storage at Ringoes';
       this.contact = contactsLocation1;
-    } else  if (this.router.url.includes('springfield-road')) {
+    } else  if (this.router.url.includes('hunterdon-storage-1')) {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-      this.name = 'Bluegrass Storage - Springfield Road';
+      this.name = 'Hunterdon Storage I';
       this.contact = contactsLocation2;
+    } else  if (this.router.url.includes('hunterdon-storage-2')) {
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+      this.name = 'Hunterdon Storage II';
+      this.contact = contactsLocation3;
     }
     // this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
     this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[1].path;

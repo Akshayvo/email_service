@@ -6,9 +6,11 @@ import {
   contact,
   contactsLocation1,
   contactsLocation2,
+  contactsLocation3,
   hours,
   hoursLocation1,
   hoursLocation2,
+  hoursLocation3,
 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
@@ -24,28 +26,20 @@ export class ContactComponent implements OnInit {
   places = [
     {
       id: 0,
-      name: 'Bluegrass Storage - Filitreau Lane',
+      name: 'Hunterdon Storage at Ringoes',
     },
     {
       id: 1,
-      name: 'Bluegrass Storage - Springfield Road',
+      name: 'Hunterdon Storage I',
     },
  ];
 
   contactsLocation2: any;
   contactsLocation1: any;
-  contacts500EastGardenStreet: any;
-  contacts817SGetty: any;
-  contacts246WSouthLane: any;
-  contacts430SHwy83: any;
+  contactsLocation3: any;
   hoursLocation1: any;
   hoursLocation2: any;
-  hours246WSouthLane: any;
-  hours430SHwy83: any;
-  hours2633EastMainStreet: any;
-  contacts2633EastMainStreet: any;
-  hours500EastGardenStreet: any;
-  hours817SGetty: any;
+  hoursLocation3: any;
   placeName: string;
   name: string;
   email: any;
@@ -114,12 +108,14 @@ export class ContactComponent implements OnInit {
     this.contact = contact;
     this.contactsLocation1 = contactsLocation1;
     this.contactsLocation2 = contactsLocation2;
+    this.contactsLocation3 = contactsLocation3;
   }
 
   public fetchHours() {
     this.hours = hours;
     this.hoursLocation2 = hoursLocation2;
     this.hoursLocation1 = hoursLocation1;
+    this.hoursLocation3 = hoursLocation3;
   }
 
 onSubmit() {
@@ -134,10 +130,12 @@ onSubmit() {
     this.contactForm.value.subject = 'Website Form Submission';
   }
 
-   if (this.contactForm.value.location === 'Bluegrass Storage - Filitreau Lane') {
+   if (this.contactForm.value.location === 'Hunterdon Storage at Ringoes') {
     this.receiveremail = this.contactsLocation1[2].data;
-  } else if (this.contactForm.value.location === 'Bluegrass Storage - Springfield Road') {
+  } else if (this.contactForm.value.location === 'Hunterdon Storage I') {
     this.receiveremail = this.contactsLocation2[2].data;
+  } else if (this.contactForm.value.location === 'Hunterdon Storage II') {
+    this.receiveremail = this.contactsLocation3[2].data;
   }
 
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>

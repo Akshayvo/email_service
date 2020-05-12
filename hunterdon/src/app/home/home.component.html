@@ -1,24 +1,22 @@
-<div class="jumbotron-container">
-  <div class="jumbotron-top">
- <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp' ">    
-    <div class="bg-translucent jumbotorn-skew-style">
-    </div>
-    <div class="container">
-      <div class="jumbotorn-skew-text">
-        <div class="disp" *ngFor="let jumbotron of jumbotron">
-          <h2  class="my-4">
-            {{jumbotron.h1}}
-          </h2>
-        <p class="text-justify">{{jumbotron.blurb}}</p>
-        </div>
-        <div class="jumbotorn-button">
-          <a class="btn btn-lg btn-outline-primary" (click)="navigate('/location/filitreau-lane/storageUnits')" role="button">View Rates</a>
-          <a class="btn btn-lg btn-primary" (click)="navigate('/location/filitreau-lane/reserveUnit')" role="button">Reserve Unit</a>
-        </div>
-        </div>
+<!-- <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp' ">     -->
+  <div id="carouselJumbo" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselJumbo" data-slide-to="1"></li>
+      <li data-target="#carouselJumbo" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="jumbotron jumbotron-top"  [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp' "></div>
+      </div>
+      <div class="carousel-item">
+          <div class="jumbotron jumbotron-top1"  [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg1' : 'jumbotron-background-webp1' "></div>
+      </div>
+      <div class="carousel-item">
+          <div class="jumbotron jumbotron-top2"  [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg2' : 'jumbotron-background-webp2' "></div>
       </div>
     </div>
-    </div>
+  </div>
   
   <!--Feature Box-->
   <div class="jumbotron-bottom">
@@ -42,10 +40,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.84634187461!2d-85.40700588438042!3d37.817067979751826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88684dcf98886fd5:0x66c8e4673450b678!2s2049 Filiatreau Ln, Bardstown, KY 40004!5e0!3m2!1sen!2sus!4v1587077408541!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12146.054411224257!2d-74.85800231135308!3d40.4417680488134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x720da960a6cc0fc1!2sHunterdon%20Storage%20Ringoes!5e0!3m2!1sen!2sus!4v1589159743674!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
       </div>
         <div class="col-md-4  pl-4 pt-3">
-          <h2>Bluegrass Storage - Filitreau Lane</h2>
+          <h2>Hunterdon Storage at Ringoes</h2>
           <p> 
             <span *ngFor="let contact of contactsLocation1">
               <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content">
@@ -54,8 +52,8 @@
               <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
             </span>
           </p>
-           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/filitreau-lane/storageUnits']" role="button">View Rates</a>            
-           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent/filitreau-lane']"  role="button">Pay Rent</a>                     
+           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/hunterdon-storage-ringoes/storageUnits']" role="button">View Rates</a>            
+           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent/hunterdon-storage-ringoes']"  role="button">Pay Rent</a>                     
         </div>
         <div class="col-md-3 contact-hours pt-3">
             <h2>Hours:</h2>
@@ -69,18 +67,18 @@
     </div>  
   </div>
   
-  <!--Contact Filitreau  Ends Here-->
+  <!--Contact Hunterdon Ringoes  Ends Here-->
   
   
-  <!--Contact Springfield -->
+  <!--Contact Hunterdon I -->
   <div class="pb-5 pt-5 for-village">  
       <div class="container">
         <div class="row">          
           <div class="col-md-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1143001493547!2d-85.4084892486035!3d37.78736101910792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88684e663149ffd5:0x38a57b1dfe80a0a1!2s3964 Springfield Rd, Bardstown, KY 40004!5e0!3m2!1sen!2sus!4v1587566587677!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6069.369863372136!2d-74.86536293899232!3d40.482234784341834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3f1288d249e65%3A0x4d81da98d04c92e6!2s191%20US-202%2C%20Flemington%2C%20NJ%2008822!5e0!3m2!1sen!2sus!4v1589161994731!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="col-md-4 pl-4 pt-3">
-            <h2>Bluegrass Storage - Springfield Road</h2>
+            <h2>Hunterdon Storage I</h2>
             <p> 
               <span *ngFor="let contact of contactsLocation2">
                 <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content">
@@ -89,8 +87,8 @@
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </span>
             </p>
-            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/springfield-road/storageUnits']" role="button">View Rates</a>                
-            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent/springfield-road']" role="button"> Pay Rent</a>                                  
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/hunterdon-storage-1/storageUnits']" role="button">View Rates</a>                
+            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent/hunterdon-storage-1']" role="button"> Pay Rent</a>                                  
           </div>
           <div class="col-md-3 contact-hours pt-3">
               <h2>Hours:</h2>
@@ -103,7 +101,80 @@
       </div>
       </div>      
     </div>
-    <!--Contact Springfield Ends Here-->
+    <!--Contact Hunterdon I Ends Here-->
+
+
+     <!--Contact Hunterdon II -->
+  <div class="pb-5 pt-5   bg-light for-village">  
+    <div class="container">
+      <div class="row">          
+        <div class="col-md-5">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12139.34901900552!2d-74.8647311!3d40.4788653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x260d9c9d29241436!2sHunterdon%20Storage!5e0!3m2!1sen!2sus!4v1589161254360!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4 pl-4 pt-3">
+          <h2>Hunterdon Storage II</h2>
+          <p> 
+            <span *ngFor="let contact of contactsLocation3">
+              <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content">
+                <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a>
+              </span>
+              <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+            </span>
+          </p>
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/hunterdon-storage-2/storageUnits']" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent/hunterdon-storage-2']" role="button"> Pay Rent</a>                                  
+        </div>
+        <div class="col-md-3 contact-hours pt-3">
+            <h2>Hours:</h2>
+            <p>
+              <span *ngFor="let hour of hoursLocation3">
+                <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>
+            </p>
+        </div>
+    </div>
+    </div>      
+  </div>
+  <!--Contact Hunterdon II Ends Here-->
+
+
+  <!--location information-->
+<div class="">
+  <div class="container py-4">
+    <div class="section py-4 m-0">
+      <div class="row">
+        <div class="col-lg-6 py-3 home-map">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5109868191935!2d-74.86152748429325!3d40.44182596203611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3f1cf1f82f497%3A0x15f3b12e14c26490!2s1012%20US-202%2C%20Ringoes%2C%20NJ%2008551%2C%20USA!5e0!3m2!1sen!2sin!4v1589293615267!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
+        </div>
+
+        <div class="col-lg-6 py-3">
+          <div class="mb-4">
+            <h2>Visit the Hunterdon Storage Main Office Below</h2>
+            <p>
+              <span *ngFor="let contact of contactDetails">
+                <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content">
+                  <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+              </span>
+            </p>
+            <b>Hours:</b>
+            <p>
+              <span *ngFor="let hour of hours">
+                <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+              </span>
+            </p>
+          </div>
+          <div>
+            <app-tables [showBorder]="true" [tBody]="featuresList"></app-tables>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--location information end-->
   
 
 
@@ -118,7 +189,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <img src="{{imageBaseUrl}}/bluegrass-storage-units.{{imagetype}}" alt="{{aboutUsAlt}}" width="100%">
+            <app-photos></app-photos>
           </div>
         </div>
       </div>

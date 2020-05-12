@@ -11,27 +11,15 @@ export class SelectLocationComponent implements OnInit {
   places = [
     {
       id: 0,
-      name: 'Bluegrass Storage - Filitreau Lane',
+      name: 'Hunterdon Storage at Ringoes',
     },
     {
       id: 1,
-      name: 'Bluegrass Storage - Springfield Road',
+      name: 'Hunterdon Storage I',
     },
     {
       id: 2,
-      name: 'AFFORDABLE STORAGE #3 - 246 W. SOUTH LANE',
-    },
-    {
-      id: 2,
-      name: 'AFFORDABLE STORAGE #4 - 817 S. GETTY',
-    },
-    {
-      id: 2,
-      name: 'AFFORDABLE STORAGE #5 - 430 S HWY 83',
-    },
-    {
-      id: 2,
-      name: 'AFFORDABLE STORAGE #6 - 500 E. GARDEN',
+      name: 'Hunterdon Storage II',
     },
  ];
 

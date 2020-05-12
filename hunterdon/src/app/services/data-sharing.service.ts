@@ -17,8 +17,9 @@ export class DataSharingService {
   paymentNavigation: string;
 
   locationAPIKey = {
-    loc1: 'dzJ0OVcxSjYqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29169
-    loc2: 'dzJ0OVcxSjcqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29170
+    loc1: 'dzF0M1c5SjAqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 13903
+    loc2: 'dzF0NVczSjYqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 15368
+    loc3: 'dzF0NVczSjYqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 15369
   };
 
   // locationAPIKey = {                                                     // demo north

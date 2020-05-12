@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {  gallery, galleryData } from '../data/galleryImage';
-import { Router } from '@angular/router';
+import { galleryHome } from '../data/galleryImage';
+import { ActivatedRoute, Router } from '@angular/router';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-photos',
@@ -9,31 +10,31 @@ import { Router } from '@angular/router';
 })
 export class PhotosComponent implements OnInit {
   name: string;
-  id: number;
-  currentActiveTab: any = 'Photos';
   selectedImage: any;
   galleryImages: any;
-  galleryData: any;
+  imageBaseUrl: any;
+  imagetype: any;
 
-  constructor(private router: Router) { }
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private uaParserService: UaParserService,
+    ) {
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
+    }
 
   ngOnInit() {
-    this.isSomePage();
+    this.fetchGallery();
     this.setSelectedImage(this.galleryImages[0]);
   }
 
-  public isSomePage() {
-  this.fetchGallery();
- }
-
-
   public fetchGallery() {
-    this.galleryImages = gallery;
-    this.galleryData = galleryData;
+    this.galleryImages = galleryHome;
   }
 
   setSelectedImage(image: any) {
     this.selectedImage = image;
  }
-
 }

@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  errorsMails: ['website.dev@codeparva.in'],
+  errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  appId: 'BlueGrass Affordable Storage',
+  appId: 'Hunterdon Storage - Staging',
   VERSION: require('../../package.json').version,
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
