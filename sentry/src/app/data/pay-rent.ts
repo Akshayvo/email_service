@@ -1,11 +1,17 @@
 export const loginDetail = [
     {
         userName: `First initial + Last Name`,
-        password: ` Unit Number`,
-        example: {
+        password: ` 5 Digit Unit Number`,
+        instruction: `All unit numbers are stored in our system using 5 digits. If your unit number does not have 5 digits, you will need to use preceding zeroes.`,
+        example1: {
             code: `John Smith's Unit number is 1450`,
             userName: 'jsmith',
-            password: '1450'
+            password: '01450'
+        },
+        example2: {
+            code: `John Smith's Unit number is 123`,
+            userName: 'jsmith',
+            password: '00123'
         }
     }
 ];
