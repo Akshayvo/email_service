@@ -9,11 +9,11 @@ export const environment = {
   senderEmail: 'errors@codeparva.in',
   websiteUrl: 'http://www.spaceplacemacedonia.com',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Space Place Macedonia LLC ',
+  appId: 'Space Place Macedonia LLC -Staging',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
-  // APIKey: `dzJ0OFc0SjgqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`  // 28484 
+  // APIKey: `dzJ0OFc0SjgqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`  // 28484
   APIKey: `dzJ0N1c2SjkqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` //  Space Place Madeconia 27696
 };
 
