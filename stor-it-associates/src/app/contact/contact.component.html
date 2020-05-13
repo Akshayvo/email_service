@@ -2,7 +2,7 @@
 <div class="contentHolder">
   <div class="container">
       <div class="heading pb-5">
-        <h1 class="text-center pt-5 disp">Contact Store-It Associates</h1>
+        <h1 class="text-center pt-5 disp">{{contactHeading}}</h1>
       </div>
       <div class="contact-data">
         <div class="row bg-light padding">
@@ -65,13 +65,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label>Message*</label>
-                    <textarea type="text" formControlName="message" placeholder="Enter Message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
-                    <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
-                        <small class="form-text text-muted" *ngIf="f.message.errors.required">Please fill out this field</small>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Message*</label>
+                            <textarea type="text" formControlName="message" placeholder="Enter Message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
+                            <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                                <small class="form-text text-muted" *ngIf="f.message.errors.required">Please fill out this field</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+            
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary px-4 mx-1">Submit</button>
                     <button type="button" class="btn btn-outline-primary mx-1 px-4" (click)="contactForm.reset()">Clear</button>

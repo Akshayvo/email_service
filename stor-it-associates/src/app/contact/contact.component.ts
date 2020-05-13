@@ -4,6 +4,8 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, hours } from '../data/contact';
+import { contactPageTitle, contactPageContent } from '../data/title';
+import { contactHeading } from '../data/heading';
 
 
 @Component({
@@ -27,6 +29,10 @@ export class ContactComponent implements OnInit {
   submitted = false;
   mailSent = false;
   subject: string;
+  contactPageTitle: string;
+  contactPageContent: string;
+  contactHeading: string;
+
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -35,12 +41,12 @@ export class ContactComponent implements OnInit {
     private meta: Meta,
     private formBuilder: FormBuilder
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `If you have any questions about our services, or your account with us, use the contact form here,
-                or the contact information to drop us a line!`
+      content: `${this.contactPageContent}`
     });
-    this.titleService.setTitle('Contact Us | Store-It Associates');
+    this.titleService.setTitle(`${this.contactPageTitle}`);
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -55,6 +61,7 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
+    this.fetchContactHeading();
     window.scrollTo(0, 0);
   }
 
@@ -62,6 +69,16 @@ export class ContactComponent implements OnInit {
   public fetchContactDetails() {
     this.contactInfo = contact;
   }
+
+  public fetchMetaData() {
+    this.contactPageTitle = contactPageTitle;
+    this.contactPageContent = contactPageContent;
+  }
+
+  public fetchContactHeading() {
+    this.contactHeading = contactHeading;
+  }
+
 
   public fetchHours() {
     this.hours = hours;

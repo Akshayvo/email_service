@@ -2,6 +2,9 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { storagePoints, storageTips } from '../data/storage-tips';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
+import { storageTipsTitle, storageTipsContent } from '../data/title';
+import { storageTipsHeading } from '../data/heading';
+
 
 @Component({
   selector: 'app-storage-tips',
@@ -13,33 +16,45 @@ import { WINDOW } from '@ng-toolkit/universal';
 export class StorageTipsComponent implements OnInit {
   storagePoints: any;
   storageTips: any;
-  currentActive: any = 'STORAGE TIPS';
+  storageTipsHeading: string;
+  storageTipsTitle: string;
+  storageTipsContent: string;
 
   constructor(
     private titleService: Title,
     private meta: Meta,
     @Inject(WINDOW) private window: Window,
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Use this list of storage tips to make your stay with us easier! `
+      content: `${this.storageTipsContent}`
     });
-    this.titleService.setTitle('Store-It Associates | Storage Tips');
+    this.titleService.setTitle(`${this.storageTipsTitle}`);
   }
 
   ngOnInit() {
     this.fetchstoragePoints();
     this.fetchstorageTips();
+    this.fetchStorageTipsHeading();
     window.scrollTo(0, 0);
 
   }
 
 
+  public fetchMetaData() {
+    this.storageTipsTitle = storageTipsTitle;
+    this.storageTipsContent = storageTipsContent;
+  }
   /**
    * fetchstoragePoints
    */
   public fetchstoragePoints() {
     this.storagePoints = storagePoints;
+  }
+
+  public fetchStorageTipsHeading() {
+    this.storageTipsHeading = storageTipsHeading;
   }
 
   public fetchstorageTips() {

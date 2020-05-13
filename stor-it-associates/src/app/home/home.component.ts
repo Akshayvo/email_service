@@ -2,7 +2,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-
+import { homePageTitle, homePageContent } from '../data/title';
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, feature, blurb} from '../data/home';
 
@@ -20,8 +20,9 @@ export class HomeComponent implements OnInit {
   featuresList: any;
   aboutUs: any;
   serviceOffered: any;
+  homePageContent: string;
+  homePageTitle: string;
   feature: any;
-  currentActive: any = 'HOME';
 
 
   constructor(
@@ -30,12 +31,12 @@ export class HomeComponent implements OnInit {
     private titleService: Title,
     private meta: Meta
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `We are a well-lit, fully-fenced, self storage facility with the best prices and customer service in town!
-                Call or visit our site to learn more, today!`
+      content: `${this.homePageContent}`
     });
-    this.titleService.setTitle('Affordable Storage Units in Wexford | Store-It Associates');
+    this.titleService.setTitle(`${this.homePageTitle}`);
   }
 
   public navigate(location: any) {
@@ -51,6 +52,11 @@ export class HomeComponent implements OnInit {
     window.scrollTo(0, 0);
   }
 
+  public fetchMetaData() {
+    this.homePageTitle = homePageTitle;
+    this.homePageContent = homePageContent;
+  }
+  
   public fetchContactDetails() {
     this.contactDetails = contact;
   }
