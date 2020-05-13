@@ -1,33 +1,30 @@
 
 export const featuresList = [
+
     {
-        td1: 'Key-Pad Operated Gate',
-        td2: 'Convenient Location',
+        td1: 'Fully Fenced with Barbed Wire',
+        td2: 'Well-Lit, Inside & Out',
     },
     {
-        td1: 'Fully-Fenced with Barbed Wire',
-        td2: 'Brand New Facility',
+        td1: 'Climate Controlled & Standard Units',
+        td2: 'Asphalt Paved'
     },
     {
-        td1: 'Security Cameras with Replay',
-        td2: 'Online Reservations'
+        td1: 'Brand New, Clean Facility',
+        td2: 'On-Site Management'
     },
     {
-        td1: 'Well-lit, Inside & Out',
-        td2: 'Online Payment'
+        td1: 'Online Reservations & Payment',
+        td2: 'Easy Access of I-390'
     },
     {
-        td1: 'Fire Sprinklers (Climate-Controlled Units)',
-        td2: 'Drive-Up Accessible'
+        td1: 'Key-Pad Operated Gate with 24-7 Access',
+        td2: 'Security Cameras with Replay',
     },
     {
-        td1: 'Completely Asphalt Paved',
-        td2: 'Climate-Controlled & Standard Units Available'
+        td1: 'Fire Sprinklers for Climate Controlled Units ',
+        td2: 'Units are Drive-Up Accessible'
     },
-    {
-        td1: '24-7 Access',
-        td: ''
-    }
 ];
 
 export const feature = [
