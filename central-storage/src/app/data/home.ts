@@ -7,18 +7,13 @@ export const featuresList = [
         td2: 'Well-Lit Facility',
     },
     {
-        td1: 'Online Reservations',
+        td1: 'Manager On-Premises Weekly',
         td2: 'Fully-Fenced',
     },
     {
         td1: 'Security Cameras',
         td2: 'Online Payments',
     },
-    {
-        td1: 'Manager On-Premises Weekly',
-        
-    },
-    
 ];
 
 
