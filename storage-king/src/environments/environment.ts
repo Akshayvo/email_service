@@ -11,7 +11,7 @@ export const environment = {
   s3_powered_by_url: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby',
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Storage King',
+  appId: 'Storage King - Production',
   VERSION: require('../../package.json').version,
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
