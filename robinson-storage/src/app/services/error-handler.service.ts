@@ -57,8 +57,9 @@ export class ErrorHandlerService implements ErrorHandler {
     const status = error.status || null;
     const message = error.message || error.toString();
     const stack = error instanceof HttpErrorResponse ? null : StackTraceParser.parse(error);
+    const currentLocation = window.location.href;
 
-    const errorWithContext = {name, appId, version, time, id, url, status, message, stack};
+    const errorWithContext = {name, appId, version, time, id, url, status, message, stack, currentLocation};
     return errorWithContext;
   }
 

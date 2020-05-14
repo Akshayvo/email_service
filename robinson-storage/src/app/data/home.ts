@@ -9,7 +9,7 @@ export const featuresList = [
     },
     {
         td1: 'Well-Lit Facility',
-        td2: 'Tenant Insurance'
+        td2: 'Tenant Insurance Included'
     },
     {
         td1: 'Convenient Location',

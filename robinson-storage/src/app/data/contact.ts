@@ -28,7 +28,7 @@ export const hours = [
     },
     {
         label: 'Saturday - Sunday: ',
-        data: 'CLOSED'
+        data: 'By Appointment'
     },
     {
         label: 'Access Hours: ',

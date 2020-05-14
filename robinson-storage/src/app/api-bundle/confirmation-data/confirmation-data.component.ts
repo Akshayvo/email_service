@@ -9,6 +9,8 @@ import { TenantInfoService } from '../services/tenant-info.service';
 import { Subscription, Subject } from 'rxjs';
 import { option } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
+import { ObjTenant } from '../models/tenant';
+import { KeyValue } from '@angular/common';
 
 @Component({
   selector: 'app-confirmation-data',
@@ -81,6 +83,8 @@ unitData = {
 canExit = true;
 navTo: any;
 period: string;
+
+objTenant: ObjTenant;
 public destroyed = new Subject<any>();
 
 
@@ -103,8 +107,8 @@ constructor(
   private signOutService: SignOutService,
 ) {
 
-  console.log("reseration fee", this.dataSharingService.LstUnitTypes.ReservationFee);
-  
+  console.log('reseration fee', this.dataSharingService.LstUnitTypes.ReservationFee);
+
   this.fetchOption();
   this.fetchSharedData();
 }
@@ -115,6 +119,11 @@ ngOnInit() {
   this.getTenantUnitData();
   console.log('confirmatin age in ngoninit 1', this.navigateToMoveIn, this.navigateToReserve);
 
+}
+
+// Preserve original property order
+originalOrder = (a: KeyValue<number, string>, b: KeyValue<number, string>): number => {
+  return 0;
 }
 
 fetchSharedData() {
@@ -129,6 +138,7 @@ fetchSharedData() {
   this.totalTaxAmount = this.dataSharingService.MoveInData.TotalTaxAmount;
   this.totalChargesAmount = this.dataSharingService.MoveInData.TotalChargesAmount;
   this.period = this.dataSharingService.period;
+  this.objTenant = this.dataSharingService.objTenant;
 }
 
 public fetchOption() {
@@ -170,14 +180,6 @@ public navigate(location: any) {
 
 
 getTenantUnitData() {
-  this.firstName = this.dataSharingService.objTenant.FirstName;
-  this.lastName = this.dataSharingService.objTenant.LastName;
-  this.phone = this.dataSharingService.objTenant.Phone;
-  this.emailAddress = this.dataSharingService.objTenant.EmailAddress;
-  this.addressLine1  = this.dataSharingService.objTenant.AddressLine1;
-  this.addressLine2 = this.dataSharingService.objTenant.AddressLine2;
-  this.city = this.dataSharingService.objTenant.City;
-  this.zip = this.dataSharingService.objTenant.ZIP;
   this.reservationFee = this.dataSharingService.LstUnitTypes.ReservationFee;
   this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
   this.description = this.dataSharingService.LstUnitTypes.Description;
@@ -190,8 +192,8 @@ getTenantUnitData() {
         .subscribe(result => {
         localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
 
-        console.log("move", this.navigateToMoveIn, "reserve", this.navigateToReserve);
-        
+        console.log('move', this.navigateToMoveIn, 'reserve', this.navigateToReserve);
+
         if (this.navigateToMoveIn ) {
           if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
             this.router.navigate(['/view-rates/payMoveInCharges']);
