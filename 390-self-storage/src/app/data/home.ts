@@ -1,79 +1,79 @@
 // for production
 
-// export const featuresList = [
-
-//     {
-//         td1: 'Fully Fenced with Barbed Wire',
-//         td2: 'Well-Lit, Inside & Out',
-//     },
-//     {
-//         td1: 'Climate Controlled & Standard Units',
-//         td2: 'Asphalt Paved'
-//     },
-//     {
-//         td1: 'Brand New, Clean Facility',
-//         td2: 'On-Site Management'
-//     },
-//     {
-//         td1: 'Online Reservations & Payment',
-//         td2: 'Easy Access of I-390'
-//     },
-//     {
-//         td1: 'Key-Pad Operated Gate with 24-7 Access',
-//         td2: 'Security Cameras with Replay',
-//     },
-//     {
-//         td1: 'Fire Sprinklers for Climate Controlled Units ',
-//         td2: 'Units are Drive-Up Accessible'
-//     },
-// ];
-
-
-// for staging site only
-
 export const featuresList = [
 
+    {
+        td1: 'Fully Fenced with Barbed Wire',
+        td2: 'Well-Lit, Inside & Out',
+    },
+    {
+        td1: 'Climate Controlled & Standard Units',
+        td2: 'Asphalt Paved'
+    },
+    {
+        td1: 'Brand New, Clean Facility',
+        td2: 'On-Site Management'
+    },
+    {
+        td1: 'Online Reservations & Payment',
+        td2: 'Easy Access of I-390'
+    },
     {
         td1: 'Key-Pad Operated Gate with 24-7 Access',
         td2: 'Security Cameras with Replay',
     },
     {
-        td1: 'Fully Fenced Barbed Wire',
-        td2: 'Well-Lit, Inside & Out'
-    },
-    {
-        td1: 'Fire Sprinklers for Climate Controlled Units',
-        td2: 'Asphalt Paved'
-    },
-    {
-        td1: 'Climate-Controlled & Standard Units',
+        td1: 'Fire Sprinklers for Climate Controlled Units ',
         td2: 'Units are Drive-Up Accessible'
-    },
-    {
-        td1: 'A Brand New, Clean Facility',
-        td2: 'On-Site Management',
-    },
-    {
-        td1: 'Online Reservations & Payment',
-        td2: 'Easy Access Off I-390'
     },
 ];
 
-export const feature = [
-    // {
-    //     // tslint:disable-next-line:max-line-length
-    //     path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/location.svg',
-    //     label: 'Conveniently Located',
-    //     alt: 'Icon art displaying a location pin'
-    // },
 
-     // for staging purpose changed location icon to lock
+// for staging site only
+
+// export const featuresList = [
+
+//     {
+//         td1: 'Key-Pad Operated Gate with 24-7 Access',
+//         td2: 'Security Cameras with Replay',
+//     },
+//     {
+//         td1: 'Fully Fenced Barbed Wire',
+//         td2: 'Well-Lit, Inside & Out'
+//     },
+//     {
+//         td1: 'Fire Sprinklers for Climate Controlled Units',
+//         td2: 'Asphalt Paved'
+//     },
+//     {
+//         td1: 'Climate-Controlled & Standard Units',
+//         td2: 'Units are Drive-Up Accessible'
+//     },
+//     {
+//         td1: 'A Brand New, Clean Facility',
+//         td2: 'On-Site Management',
+//     },
+//     {
+//         td1: 'Online Reservations & Payment',
+//         td2: 'Easy Access Off I-390'
+//     },
+// ];
+
+export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/lock.svg',
-        label: 'Secure Storage',
-        alt: 'Icon of a locked padlock'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/location.svg',
+        label: 'Conveniently Located',
+        alt: 'Icon art displaying a location pin'
     },
+
+     // for staging purpose changed location icon to lock
+    // {
+    //     // tslint:disable-next-line:max-line-length
+    //     path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/lock.svg',
+    //     label: 'Secure Storage',
+    //     alt: 'Icon of a locked padlock'
+    // },
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/thermometer.svg',
