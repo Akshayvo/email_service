@@ -229,7 +229,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
    this.cardType = this.getCardType(number.target.value);
    const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.cardType);
    // tslint:disable-next-line: max-line-length
-   const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
+   const cardTypeId = (this.lstPayTypes && this.lstPayTypes.length > 0 && (index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
    this.paytypeid =  cardTypeId;
    this.surchargeService.getIdPaytype(this.paytypeid);
    this.payRentForm.patchValue({
@@ -277,6 +277,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
+    if (this.lstPayTypes && this.lstPayTypes.length > 0) {
     this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.payRentForm.patchValue({
@@ -286,7 +287,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         }
       }
     });
-
+  }
 
     if ( this.showInput) {
       if (this.customOtherValue) {
@@ -331,15 +332,15 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           this.surchargeService.getIdPaytype(this.paytypeid);
           this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled,
           this.date = Tenant.LastPaymentOn;
-          this.lastPaymentOn = this.datePipe.transform(this.date, 'MM/dd/yyyy');
+          this.lastPaymentOn = this.datePipe.transform(this.date, 'dd/MM/yyyy');
           this.lastPaymentAmount = Tenant.LastPaymentAmount;
 
           this.UnpaidAR = Tenant.UnpaidAR;
 
           // tslint:disable-next-line:forin
           for (const i in this.UnpaidAR) {
-            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, 'MM/dd/yyyy');
-            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, 'MM/dd/yyyy');
+            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, 'dd/MM/yyyy');
+            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, 'dd/MM/yyyy');
 
             if (this.UnpaidAR[i].AmountOwed < 0) {
               this.UnpaidAR[i].demoAmountOwed = Math.abs(this.UnpaidAR[i].AmountOwed);
