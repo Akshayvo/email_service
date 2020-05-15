@@ -5,6 +5,7 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation3, hoursLocation3 } from '../data/contact';
 import { featuresHead, serviceOffered, gettingStarted } from '../data/home';
 import { LocationService } from '../services/location.service';
+import { homeScript } from '../data/script';
 
 @Component({
   selector: 'app-home',
@@ -22,7 +23,7 @@ export class HomeComponent implements OnInit {
   hoursLocation1: any;
   hoursLocation3: any;
   gettingStarted: any;
-
+  script: any;
 
 
   constructor(
@@ -46,7 +47,7 @@ export class HomeComponent implements OnInit {
     // this.receiveMessage();
     this.fetchContactDetails();
     this.fetchHours();
-
+    this.fetchScript();
   }
 
   public fetchContactDetails() {
@@ -56,6 +57,10 @@ export class HomeComponent implements OnInit {
   public fetchHours() {
     this.hoursLocation1 = hoursLocation1;
     this.hoursLocation3 = hoursLocation3;
+  }
+
+  public fetchScript() {
+    this.script = homeScript;
   }
   // receiveMessage() {
   //   this.data.currentLocation.subscribe(locationId => {

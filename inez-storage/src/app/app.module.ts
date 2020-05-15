@@ -60,6 +60,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ReserveComponent } from './api-bundle/reserve/reserve.component';
 import { WinnebagoComponent } from './winnebago/winnebago.component';
+import { ScriptHackComponent } from './script-hack/script-hack.component';
 
 
 @NgModule({
@@ -105,7 +106,8 @@ import { WinnebagoComponent } from './winnebago/winnebago.component';
     PayRentComponent,
     ViewRatesComponent,
     ReserveComponent,
-    WinnebagoComponent
+    WinnebagoComponent,
+    ScriptHackComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
