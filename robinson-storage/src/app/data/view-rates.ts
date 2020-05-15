@@ -1,11 +1,7 @@
 export const viewRates = [
+
     {
-      p: `Robinson Storage offers online reservations and move-ins to make your stay convenient from the start!
-          Reserve your unit here, or use our online move in process to complete your lease and receive your gate code!`,
-    },
-    {
-      p: `One of our managers will be in touch shortly to confirm your request, and answer any questions you might have
-          about our services! Do you have questions before settling on a unit? Use our contact form on the Contact Us page
+      p: `Do you have questions before settling on a unit? Use our contact form on the Contact Us page
           to drop us a line! One of our managers will be in touch shortly!`
     }
 ];
@@ -25,12 +21,12 @@ export const th = [
   {
     data: 'Deposit'
   },
-  {
-    data: `Reserve a Unit`
-  },
-  {
-    data: `Move In`
-  },
+  // {
+  //   data: `Reserve a Unit`
+  // },
+  // {
+  //   data: `Move In`
+  // },
   // {
   //   data: `Climate Control`
   // },

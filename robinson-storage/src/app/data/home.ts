@@ -43,13 +43,11 @@ export const aboutUs = [
     {
         p: `Whether you're a residential storage user searching for a little extra elbow-room, or a growing
             business seeking commercial storage space without paying commercial real estate prices, we've got
-            a unit for you! Call, or use our online move in form, today!`
+            a unit for you!`
     }
 ];
 
-export const gettingStarted = `Are you ready to start that home repair or renovation project you've been putting off? How
-                               about making room in the garage, attic, or shed? Maybe you're a business looking to store documents,
-                               equipment, or inventory off-site! We've got a unit with easy terms just for you!`;
+export const gettingStarted = ``;
 
 export const feature = [
     {
@@ -73,7 +71,7 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Bill Pay',
         alt: 'Icon art displaying a screen with cursor'
     },
 ];
