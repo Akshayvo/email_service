@@ -45,7 +45,7 @@ export const aboutUs = [
     },
     {
         p: `We offer a wide range of storage unit sizes that range from 5' by 10', perfect for a bedroom or two's worth of furniture,
-        all the way up to our 10' by 20' units able to hold a multi-bedroom household's worth of appliances, and personal belongings.
+        all the way up to our 10' by 40' units able to hold a multi-bedroom household's worth of appliances, and personal belongings.
         Many of our larger units an ideal place to store your seasonal vehicle, or boats!`,
     },
     {
