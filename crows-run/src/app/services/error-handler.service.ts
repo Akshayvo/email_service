@@ -1,4 +1,4 @@
-import { Router, NavigationStart, NavigationEnd, NavigationCancel, NavigationError, RoutesRecognized } from '@angular/router';
+import { Router } from '@angular/router';
 import { environment } from '../../environments/environment';
 import { Injectable, ErrorHandler, Injector } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
@@ -42,7 +42,7 @@ export class ErrorHandlerService implements ErrorHandler {
     console.log('errorWithContext', errorWithContext);
 
     // Generic route /error -> Error Handler Component
-    if ( errorWithContext.message === 'window is not defined' ) {
+    if (errorWithContext.message === 'window is not defined') {
       console.log('window is not defined');
     } else {
       this.reportError(errorWithContext);
@@ -62,18 +62,20 @@ export class ErrorHandlerService implements ErrorHandler {
     const time = new Date().getTime();
     const id = `${appId}-${time}`;
     const location = LocationStrategy;
+    console.log('ErrorHandlerService -> addContextInfo -> location', location);
     const url = location instanceof PathLocationStrategy ? location.path() : '';
     const status = error.status || null;
     const message = error.message || error.toString();
     const stack = error instanceof HttpErrorResponse ? null : StackTraceParser.parse(error);
-    const currenLocation = window.location.href;
-    const previousLocation =  window.history.back();
+    const currenLocation = { url: router.url, currentNavigation: router.getCurrentNavigation() };
+    // const previousLocation = window.history.back();
 
 
-    const errorWithContext = {name, appId, version, time, id, url, status, message, stack,
+    const errorWithContext = {
+      name, appId, version, time, id, url, status, message, stack,
       currenLocation,
-      previousLocation
-      };
+      // previousLocation
+    };
     return errorWithContext;
   }
 
