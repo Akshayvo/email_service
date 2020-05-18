@@ -21,7 +21,7 @@
   
   
   <ng-template #other>
-    <form [formGroup]="payRentForm" (ngSubmit)="onSubmit()" class="pt-3">
+    <form [formGroup]="payRentForm" (ngSubmit)="onSubmit()" class="inspectlet-sensitive pt-3 ">
         <strong ><i  *ngIf="showloaderForPayment">Processing payment, please wait...</i></strong>
         <strong><i *ngIf="invalidPayment">{{invalidPayment}}</i></strong>
       <div
