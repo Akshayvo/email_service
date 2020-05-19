@@ -4,7 +4,7 @@ export const environment = {
   errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'central-storage - Staging',
+  appId: 'central-storage - Production',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   APIKey: `dzJ0Nlc1SjcqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // central
