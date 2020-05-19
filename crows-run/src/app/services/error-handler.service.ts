@@ -16,6 +16,7 @@ export class ErrorHandlerService implements ErrorHandler {
   constructor(
     private errorReport: ErrorReportingService,
     private injector: Injector,
+    private navigation: NavigationService,
   ) {
     console.log('Error reporting initialized');
   }
@@ -53,8 +54,6 @@ export class ErrorHandlerService implements ErrorHandler {
 
   addContextInfo(error: any) {
     const router = this.injector.get(Router);
-    console.log('router.getCurrentNavigation()', router.getCurrentNavigation());
-
     // You can include context details here (usually coming from other services: UserService...)
     const name = error.name || null;
     const appId = environment.appId;
@@ -62,12 +61,17 @@ export class ErrorHandlerService implements ErrorHandler {
     const time = new Date().getTime();
     const id = `${appId}-${time}`;
     const location = LocationStrategy;
-    console.log('ErrorHandlerService -> addContextInfo -> location', location);
     const url = location instanceof PathLocationStrategy ? location.path() : '';
     const status = error.status || null;
     const message = error.message || error.toString();
-    const stack = error instanceof HttpErrorResponse ? null : StackTraceParser.parse(error);
-    const currenLocation = { url: router.url, currentNavigation: router.getCurrentNavigation() };
+    const stack = error instanceof HttpErrorResponse ? {
+      headers: error.headers,
+      status: error.status,
+      url: error.url,
+      type: error.type,
+      referrer: document && document.referrer,
+    } : StackTraceParser.parse(error);
+    const currenLocation = { url: router.url, navigationLogs: this.navigation.getHistoryLog() };
     // const previousLocation = window.history.back();
 
 

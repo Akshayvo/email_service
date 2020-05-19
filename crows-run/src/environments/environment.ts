@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  errorsMails: [ 'sanghmitra.v@codeparva.in' ],
+  errorsMails: ['sanghmitra.v@codeparva.in', 'vinay.g@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   appId: 'Crows Run Self Storage - Production',
