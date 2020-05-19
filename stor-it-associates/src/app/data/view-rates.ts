@@ -1,7 +1,7 @@
 export const dataViewRates = [
     {
-        p: `Store-It Associates offers both outdoor parking spaces for boats, and recreational
-        vehicles, and self storage units for residential, or commercial customers. We are a well-lit,
+        p: `Store-It Associates offers outdoor parking spaces for vehicles and trailers less than 20 feet
+        in length, and self-storage units for residential or commercial customers. We are a well-lit,
         fully-fenced facility with extremely affordable rates!`,
     },
     {
@@ -29,6 +29,9 @@ export const currentDiscounts = [
     },
     {
         data: `Student Discount - 20%`
+    },
+    {
+        data: `Police, Fire, EMS, and Veterans Discount 10%`
     }
 ];
 

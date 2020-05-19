@@ -58,8 +58,8 @@ export const aboutUs = [
     },
     {
         p: `We service a wide range of customers, from the residential storage user looking for some elbow room around the house, to the commercial 
-            customer looking to store equipment and supplies but avoid commercial real estate rates. We also have parking spaces for your boat or 
-            recreational vehicle. Call and reserve your unit, today!`,
+            customer looking to store equipment and supplies but avoid commercial real estate rates. We also have outside parking spaces available
+            for vehicles and trailers less than 20 feet in length. Call and reserve your unit, today!`,
     }
 ];
 
