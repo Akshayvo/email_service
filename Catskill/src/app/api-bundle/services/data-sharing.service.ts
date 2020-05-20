@@ -14,6 +14,7 @@ export class DataSharingService {
   changePassword: boolean;
   showLogin: boolean;
   insuranceChoiceId: number;
+  periodID: number;
   strAccessCode: string;
   strConfirmation: string;
 

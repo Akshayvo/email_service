@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
-  errorsMails: [ 'website.dev@codeparva.in' ],
+  errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   appId: 'Catskill Self Storage',
