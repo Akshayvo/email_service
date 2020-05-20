@@ -7,7 +7,7 @@ export const environment = {
   type: 0,  // { API: 0, iframe: 1 }
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Stor-it Associates - Staging',
+  appId: 'Stor-it Associates - Production',
   VERSION: require('../../package.json').version,
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
