@@ -45,6 +45,18 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
         { path: 'payMoveInCharges', component: PayRentFormComponent },
       ]
      },
+     {
+      path: 'rent-now',
+      component: ViewRatesComponent,
+      children: [
+        { path: '', component: ViewRatesPageComponent },
+        { path: 'reserve', component: ReserveUnitFormComponent },
+        { path: 'move-in', component: ReserveUnitFormComponent },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+      ]
+     },
     {
       path: 'pay-rent', component: PaymentComponent,
       children: [
@@ -77,6 +89,7 @@ export const iFrameRoutes = [
     { path: 'pay-rent', component: PaymentIframePageComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
     { path: 'view-rates', component: ViewRatesIframePageComponent },
+    { path: 'rent-now', component: ViewRatesIframePageComponent },
     { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
     { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storageTips', component: StorageTipsComponent },

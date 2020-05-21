@@ -51,7 +51,7 @@ img {
   .nav-link {
     color: #000;
     font-weight: 600;
-    padding: 21px;
+    padding: 14px;
   }
 
   .nav-link:hover {
@@ -93,6 +93,7 @@ img {
   
   .nav-link {
     font-size: 0.8rem;
+    padding: 16px
     }
   }
 }
@@ -104,6 +105,8 @@ img {
 
   .nav-link {
     text-align: center;
+    padding-bottom: 1.20rem !important;
+    padding-top: 1.20rem !important;
   }
 
   .navbar-nav {
