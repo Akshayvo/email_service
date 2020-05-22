@@ -18,9 +18,9 @@ export const th = [
   // {
   //   data: `Annual Rate`,
   // },
-  {
-    data: 'Deposit'
-  },
+  // {
+  //   data: 'Deposit'
+  // },
   {
     data: `Reserve a Unit`
   },

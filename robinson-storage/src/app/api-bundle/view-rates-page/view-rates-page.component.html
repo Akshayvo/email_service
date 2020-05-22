@@ -17,9 +17,9 @@
           <td colspan="2" class="px-4 border text-center">
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
           </td>
-          <td colspan="2" class="px-4 border text-center">
+          <!-- <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount}}
-        </td>
+        </td> -->
            <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>
