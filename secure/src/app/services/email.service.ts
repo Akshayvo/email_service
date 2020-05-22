@@ -23,7 +23,7 @@ export class EmailService {
       }
     };
 
-    return this.http.post(`email`, cont, {});
+    return this.http.post(`email`, cont);
 
   }
 }
