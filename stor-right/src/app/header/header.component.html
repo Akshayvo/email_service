@@ -36,9 +36,10 @@
       <ul class="navbar-nav ml-auto navbar-nav-scroll">
         <li class="nav-item px-2" *ngFor="let nav of navLinks">
           <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
-          [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)" *ngIf="nav?.path != '/pay-rent'">{{nav.label}}</a>
+          [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)" *ngIf="nav?.path != '/pay-rent' && nav.id == 1 ">{{nav.label}}</a>
           <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
-          [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)" *ngIf="nav?.path === '/pay-rent'">{{nav.label}}</a>
+          [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)" *ngIf="nav?.path === '/pay-rent' && nav.id == 1">{{nav.label}}</a>
+          <a class="nav-link py-4" *ngIf="nav.id == 0" href="https://www.riverbendapt.com/apartments/" target="_blank">{{nav.label}}</a>
         </li>
       </ul>
     </div>

@@ -82,4 +82,20 @@ export const unitSizer = [
         { content : 'Tow Trailer'}
       ],
     },
+    {
+      id: 5,
+      size: '10\' x 40\'',
+      heading: '10\' x 40\' Storage Unit',
+      alt: '10\' x 40\' Storage Unit Graphic ',
+      unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/15x42.png',
+      data: `This unit is approximately 400sq feet of space that can store the contents of a large home, including.`,
+      amenities: [
+        { content: 'Appliances', },
+        { content: 'Car or Small Boat', },
+        { content: 'Furniture', },
+        { content : 'Mattresses', },
+        { content: 'Bookcases', },
+        { content : 'Tow Trailer'}
+      ],
+    },
   ];

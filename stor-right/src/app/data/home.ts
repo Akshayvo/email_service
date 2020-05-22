@@ -16,15 +16,12 @@ export const featuresList = [
         td2: 'Fully-Paved Facility'
     },
     {
-        td1: 'Pin-Pad Activated Security Gate',
+        td1: `9' Doors on Most Units`,
         td2: 'Affordable Rates'
     },
     {
         td1: 'Locks Available For Purchase',
         td2: 'Handicapped Accessible Units Available'
-    },
-    {
-        td1: '9" Doors on Most Units',
     },
 ];
 
@@ -35,23 +32,25 @@ export const aboutUsHeading = `Self Storage in Wausau, Wisconsin`;
 export const aboutUs = [
     {
         p: `Since 2007, Stor-Right has been serving our friends and neighbors in Wausau, Rothschild, Schofield,
-        and the surrounding communities with high-quality storage, and friendly customer service at very affordable
-        rates. We are conveniently located on South 48th Ave in Wausau with entrances on both Sherman St, and Packer Dr. `,
+            and the surrounding communities with high-quality storage, and friendly customer service at very
+            affordable rates. We are conveniently located on South 48th Ave in Wausau with entrances on both
+            Sherman St. and Packer Dr.`,
     },
     {
-        p: `Our facility is well-lit and offers security camera coverage. Our management team also performs regular walkarounds
-        to ensure a sense of security at all times. Many of our units have been built since 2014, and our facility is paved to
-        make loading and unloading your unit a clean experience!`,
+        p: `Our facility is well-lit and offers security camera coverage. Our management team also performs
+            regular walkarounds to ensure a sense of security at all times. Many of our units have been built
+            since 2014, and our facility is paved to make loading and unloading your unit a clean experience.`,
     },
     {
-        p: `We offer a wide range of storage unit sizes that range from 5' by 10', perfect for a bedroom or two's worth of furniture,
-        all the way up to our 10' by 40' units able to hold a multi-bedroom household's worth of appliances, and personal belongings.
-        Many of our larger units an ideal place to store your seasonal vehicle, or boats!`,
+        p: `We offer a wide range of storage unit sizes that range from 5' by 10', perfect for a bedroom or
+            two's worth of furniture, all the way up to our 10' by 40' units able to hold a multi-bedroom
+            household's worth of appliances, and personal belongings. Many of our larger units an ideal place
+            to store your seasonal vehicle or boats.`,
     },
     {
-        p: `We understand that self storage can come at stressful times in life, that's why our facility offers friendly
-        managers who are ready and able to help answer your questions, and online tenant services from reservations to
-        online payments! Call today, or make your reservation online in minutes!`,
+        p: `We understand that self storage can come at stressful times in life, that's why our facility offers
+            friendly managers who are ready and able to help answer your questions, and online tenant services
+            from reservations to online payments! Call today, or make your reservation online in minutes!`,
     },
 ];
 
@@ -89,7 +88,8 @@ export const jumbotron = [
     {
         jumbotronHeading: `Affordable 24 Hour Access Self Storage Units in Wausau, WI`,
         jumbotronBlurb: `Stor-Right Storage has been serving Wausau, Marathon, Weston, and the surrounding communities
-        with high-quality, affordable self storage units since 2007. Our fully-fenced, well-lit, well-maintained self
-        storage facility is the perfect solution for your move, renovation, or other projects that require a little extra elbow room!`,
+                        with high-quality, affordable self storage units since 2007. Our well-lit, well-maintained self
+                        storage facility is the perfect solution for your move, renovation, or other projects that require
+                        a little extra elbow room!`,
     }
 ];

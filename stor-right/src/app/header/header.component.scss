@@ -43,7 +43,7 @@ img {
   .nav-link {
     color: $black;
     font-weight: 600;
-    padding: 21px;
+    padding: 9px;
   }
 
   .nav-link:hover {
@@ -81,7 +81,10 @@ img {
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   .navbar {
     .nav-link {
-      padding: 12px;
+      padding: 5px;
+    }
+    .nav-item {
+      font-size: 0.8rem;
     }
   }
 }
@@ -93,6 +96,8 @@ img {
 
   .nav-link {
     text-align: center;
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
   }
 
   .navbar-nav {
