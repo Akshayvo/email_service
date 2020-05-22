@@ -86,7 +86,7 @@
                            </div>
                        </div>
                 <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
-                    <label>State*</label>
+                    <label>Province*</label>
                     <select class="form-control" formControlName="State"  
                     [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.State.errors }">
                         <option value="" disabled  selected >Select your State</option>
@@ -103,8 +103,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 form-group">
-                    <label>Zip Code*</label>
-                    <input type="text" formControlName="ZIP" class="form-control" placeholder="Enter Zip Code"
+                    <label>Postal Code*</label>
+                    <input type="text" formControlName="ZIP" class="form-control" placeholder="Enter Postal Code"
                     [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.ZIP.errors }"
                     />
                     <div *ngIf="submitted && f.objTenant.controls.ZIP.errors" class="invalid-feedback">
@@ -114,7 +114,7 @@
                 </div>
 
                 <!-- Start of Aletrnate Contact Detail -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-6 form-group">
                          <label>Alternate First Name*</label>
                          <input type="text" formControlName="AlternateFirstName" class="form-control" placeholder="Enter Alternate First Name"
@@ -145,7 +145,7 @@
                          <div *ngIf="f.objTenant.controls.AlternatePhone.errors" >
                              <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternatePhone.errors.pattern">Please enter valid number</small>
                          </div>
-                     </div>
+                     </div> -->
  
                       <!-- <div class="col-md-6 form-group">
                               <label>Email Address*</label>
@@ -158,7 +158,7 @@
                                   <small class="form-text text-muted" *ngIf="f.objTenant.controls.EmailAddress.errors.email">Please enter a valid email address</small>
                               </div>
                       </div> -->
-                     </div>
+                     <!-- </div>
                      <div class="row">
                       <div class="col-lg-12  form-group">
                                 <label>Alternate Address Line 1*</label>
@@ -188,7 +188,7 @@
                             </div>
                         </div>
                  <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
-                     <label>Alternate State*</label>
+                     <label>Alternate Province*</label>
                      <select class="form-control" formControlName="AlternateState"
                      [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AlternateState.errors }">
                          <option value="" disabled  selected >Select your Alternate State</option>
@@ -205,7 +205,7 @@
                      </div>
                  </div>
                  <div class="col-lg-4 col-md-6 form-group">
-                     <label>Alternate ZIP Code*</label>
+                     <label>Alternate Postal Code*</label>
                      <input type="text" formControlName="AlternateZIP" class="form-control" placeholder="Enter Alternate ZIP Code"
                      [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AlternateZIP.errors }"
                      />
@@ -213,7 +213,7 @@
                          <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternateZIP.errors.required">Please fill out this field</small>
                      </div>
                  </div>
-                 </div>
+                 </div> -->
 
                 <!-- End of Aletrnate Contact Detail -->
 

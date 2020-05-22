@@ -159,18 +159,18 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
-        AlternateFirstName:  ['', Validators.required],
-        AlternateLastName: ['', Validators.required],
-        AlternatePhone:   ['', [Validators.required,
-          Validators.pattern(
-            '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
-            )
-        ]],
-        AlternateAddressLine1: ['', Validators.required],
-        AlternateAddressLine2: [''],
-        AlternateCity: ['', Validators.required],
-        AlternateState: ['', Validators.required],
-        AlternateZIP: ['', Validators.required],
+        // AlternateFirstName:  ['', Validators.required],
+        // AlternateLastName: ['', Validators.required],
+        // AlternatePhone:   ['', [Validators.required,
+        //   Validators.pattern(
+        //     '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
+        //     )
+        // ]],
+        // AlternateAddressLine1: ['', Validators.required],
+        // AlternateAddressLine2: [''],
+        // AlternateCity: ['', Validators.required],
+        // AlternateState: ['', Validators.required],
+        // AlternateZIP: ['', Validators.required],
       }),
 
       lstUnitTypes: new FormArray([
@@ -368,14 +368,14 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
-            AlternateFirstName: Tenant.AlternateFirstName,
-            AlternateLastName: Tenant.AlternateLastName,
-            AlternatePhone: Tenant.AlternatePhone,
-            AlternateAddressLine1: Tenant.AlternateAddressLine1,
-            AlternateAddressLine2: Tenant.AlternateAddressLine2,
-            AlternateCity: Tenant.AlternateCity,
-            AlternateState: Tenant.AlternateState,
-            AlternateZIP: Tenant.AlternateZIP,
+            // AlternateFirstName: Tenant.AlternateFirstName,
+            // AlternateLastName: Tenant.AlternateLastName,
+            // AlternatePhone: Tenant.AlternatePhone,
+            // AlternateAddressLine1: Tenant.AlternateAddressLine1,
+            // AlternateAddressLine2: Tenant.AlternateAddressLine2,
+            // AlternateCity: Tenant.AlternateCity,
+            // AlternateState: Tenant.AlternateState,
+            // AlternateZIP: Tenant.AlternateZIP,
           };
           this.reserveUnitForm.patchValue({
             objTenant: ({
@@ -388,14 +388,14 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
-              AlternateFirstName: Tenant.AlternateFirstName,
-              AlternateLastName: Tenant.AlternateLastName,
-              AlternatePhone: Tenant.AlternatePhone,
-              AlternateAddressLine1: Tenant.AlternateAddressLine1,
-              AlternateAddressLine2: Tenant.AlternateAddressLine2,
-              AlternateCity: Tenant.AlternateCity,
-              AlternateState: Tenant.AlternateState,
-              AlternateZIP: Tenant.AlternateZIP,
+              // AlternateFirstName: Tenant.AlternateFirstName,
+              // AlternateLastName: Tenant.AlternateLastName,
+              // AlternatePhone: Tenant.AlternatePhone,
+              // AlternateAddressLine1: Tenant.AlternateAddressLine1,
+              // AlternateAddressLine2: Tenant.AlternateAddressLine2,
+              // AlternateCity: Tenant.AlternateCity,
+              // AlternateState: Tenant.AlternateState,
+              // AlternateZIP: Tenant.AlternateZIP,
             }),
           });
 
