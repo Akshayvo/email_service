@@ -33,4 +33,16 @@ export const galleryHome = [
         alt: `fencing with parking in the background and a sign showing contact info for All Valley
         RV Storage in the foreground`
     },
+    {
+        id: `6`,
+        // tslint:disable-next-line:max-line-length
+        url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/All_Valley/all-valley-rv-storage-parking-lot.jpg`,
+        alt: `two recreational vehicles parked on a gravel driveway`,
+    },
+    {
+        id: `7`,
+        // tslint:disable-next-line:max-line-length
+        url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/All_Valley/all-valley-rv-storage-parking.jpg`,
+        alt: `several recreational vehicles and a boat on a trailer parked on a gravel driveway.`,
+    },
 ];

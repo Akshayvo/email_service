@@ -7,7 +7,7 @@ export const environment = {
   type: 0,  // { API: 0, iframe: 1 }
   errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'All Valley RV Storage',
+  appId: 'All Valley RV Storage - Production',
   VERSION: require('../../package.json').version,
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,

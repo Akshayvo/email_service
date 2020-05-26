@@ -1,7 +1,7 @@
 
 export const featuresList = [
     {
-        td1: 'Convenient Location ',
+        td1: 'Close to 215 fwy',
         td2: 'Online Bill Pay',
     },
     {
@@ -21,7 +21,7 @@ export const featuresList = [
         td2: 'Trailer Storage'
     },
     {
-        td1: 'Fully-Fenced',
+        td1: 'Personalized Keypad Entry',
         td2: 'Wide Stalls'
     },
 ];
