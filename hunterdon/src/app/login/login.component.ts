@@ -5,6 +5,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
+import { contact, contactsLocation2, contactsLocation1, contactsLocation3 } from '../data/contact';
 
 @Injectable()
 
@@ -19,7 +20,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   loginForm: FormGroup;
   submitted = false;
   credentialsInvalid = false;
-
+  contact: any;
   allowedToshow = false;
 
   showForgotPassword = false;
@@ -53,6 +54,20 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    if (this.router.url.includes('hunterdon-storage-ringoes')) {
+      // this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+      // this.name = 'Hunterdon Storage at Ringoes';
+      this.contact = contactsLocation1;
+    } else  if (this.router.url.includes('hunterdon-storage-1')) {
+      // this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+      // this.name = 'Hunterdon Storage I';
+      this.contact = contactsLocation2;
+    } else  if (this.router.url.includes('hunterdon-storage-2')) {
+      // this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+      // this.name = 'Hunterdon Storage II';
+      this.contact = contactsLocation3;
+    }
+
     this.loginForm = this.formBuilder.group({
       strUserName: ['', Validators.required],
       strPassword: ['', Validators.required],

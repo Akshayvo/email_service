@@ -9,6 +9,14 @@
   }
 }
 
+.vertical-line {
+  border-left: 1px solid black;
+  padding-left: 50px;
+}
+
+a {
+  color: black;
+}
 
 
 .loader {
@@ -33,4 +41,10 @@
 .button-display {
   display: flex;
   align-items: end;
+}
+
+@media only screen and (max-width: 767px) {
+  .vertical-line {
+    border: none;
+  }
 }

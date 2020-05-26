@@ -1,5 +1,6 @@
- <div>
-    <div>
+ <div class="row">
+    <div class="col-md-7 p-3">
+        <div>
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="form-group">
                 <div [hidden]="" *ngIf="submitted && credentialsInvalid" class="button-display alert alert-success alert-danger fade show">
@@ -57,4 +58,25 @@
         </div> -->
     </div>
 </div>    
+
+
+<div class="col-md-5 p-3 vertical-line" >
+        <h2> How to Login </h2>
+        <p class="mb-0"> <b>Username:</b> First Initial + Last Name  </p>
+        <p >  <b>Password:</b> Your Unit Number   </p>
+        <p>If you rent multiple units, your password is the unit number for the first unit you rented.</p>
+        <p class="mb-0"> <b>Example</b> </p>
+        <p class="mb-0">John Smith's Unit Number is 1234 </p>
+   
+        <p class="mb-0"> <b>John's Username:</b> jsmith  </p>
+        <p > <b>John's Password:</b> 1234</p>
+   
+        <p class="mb-0"> <b>Have question about your account?</b> </p>
+          <span *ngFor="let contact of contact" [class.display-none]="contact?.id == 0 && contact?.id == 1">
+            <span class="contact-links" *ngIf="contact?.id == 3 || contact?.id == 2">
+              <a [href]="contact?.redirect">{{contact.data}}</a>
+            </span><br>
+          </span>
+     </div>
+</div>
  

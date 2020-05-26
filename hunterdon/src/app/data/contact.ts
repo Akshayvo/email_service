@@ -38,7 +38,7 @@ export const hours = [
     {
         label: 'Access Hours: ',
         data: '24 hours a day, 7 days a week'
-    }
+    },
 ];
 
 export const contactsLocation1 = [
@@ -77,7 +77,7 @@ export const hoursLocation1 = [
     },
     {
         label: 'Saturday: ',
-        data: '9:00AM to 2:30PM'
+        data: '9:00AM to 2:45PM'
     },
     {
         label: 'Sunday - Monday: ',
@@ -86,7 +86,7 @@ export const hoursLocation1 = [
     {
         label: 'Access Hours: ',
         data: '7 Days a Week 7:00AM to 8:00PM'
-    }
+    },
 ];
 
 export const contactsLocation2 = [
@@ -125,11 +125,15 @@ export const hoursLocation2 = [
     },
     {
         label: 'Saturday: ',
-        data: '9:00AM to 2:30PM'
+        data: '9:00AM to 2:45PM'
     },
     {
         label: 'Sunday - Monday: ',
         data: 'CLOSED'
+    },
+    {
+        label: 'Access Hours:',
+        data: '7 Days a Week 7:00AM to 8:00PM'
     },
 ];
 
@@ -165,15 +169,19 @@ export const contactsLocation3 = [
 export const hoursLocation3 = [
     {
         label: 'Tuesday - Friday: ',
-        data: '8:30AM to 4:30PM'
+        data: '8:30AM to 1:30PM'
     },
     {
         label: 'Saturday: ',
-        data: '9:00AM to 2:30PM'
+        data: '9:00AM to 2:45PM'
     },
     {
         label: 'Sunday - Monday: ',
         data: 'CLOSED'
+    },
+    {
+        label: 'Access Hours:',
+        data: '7 Days a Week 7:00AM to 8:00PM'
     },
 ];
 
