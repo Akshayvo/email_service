@@ -617,7 +617,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.addTenantSubscribe$ = this.addTenantService.addTenant(data)
           .subscribe(result => {
           localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
-          console.log("move", this.navigateToMoveIn, "reserve", this.navigateToReserve);
           if (this.navigateToMoveIn ) {
             if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
               // this.router.navigate(['/view-rates/payMoveInCharges']);
@@ -666,7 +665,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           }
         }
 
-        if (!localStorage.getItem('strTempTenantToken') &&
+        if (!localStorage.getItem('strTenantToken') &&
         !localStorage.getItem('strTempTenantToken')) {
           this.addTenant(this.tenantData);
         } else {
