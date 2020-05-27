@@ -29,7 +29,7 @@ export class RequestInterceptorService implements HttpInterceptor {
     let authAPIKey = modifiedAPIKey;
     if (token) {
       authAPIKey = modifiedAPIKey.clone({
-        headers: token && request.url.startsWith('tenant') ?
+        headers: request.url.startsWith('tenant') ?
           modifiedAPIKey.headers.set('Authorization', `Bearer ${tenantToken}`)
           : modifiedAPIKey.headers.set('Authorization', `Bearer ${token}`)
       });
@@ -37,7 +37,7 @@ export class RequestInterceptorService implements HttpInterceptor {
 
     const contentAPIKey = authAPIKey.clone({
       headers: authAPIKey.headers.set('Content-Type', 'application/json'),
-      url:  request.url.startsWith('email') ? `${emailUrl}` : `${baseUrl}${request.url}`
+      url: request.url.startsWith('email') ? `${emailUrl}` : `${baseUrl}${request.url}`
     });
     return next.handle(contentAPIKey);
   }
