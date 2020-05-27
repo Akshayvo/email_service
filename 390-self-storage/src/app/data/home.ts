@@ -46,7 +46,7 @@ export const featuresList = [
         td2: 'Asphalt Paved'
     },
     {
-        td1: 'Climate-Controlled & Standard Units',
+        td1: 'Climate Controlled & Standard Units',
         td2: 'Units are Drive-Up Accessible'
     },
     {
@@ -97,7 +97,7 @@ export const feature = [
 
 export const aboutUs = [
     {
-        mainHeading: `Affordable Self Storage Units in Rochester`,
+        mainHeading: `Affordable, Secure Self Storage`,
         mainParagraph: `390 Self Storage is Rochester’s newest self storage facility. With three self
                         storage facilities in the greater Rochester area; when it comes to self storage,
                         we are your home town experts. We work hard every day to provide the right mix of
@@ -108,16 +108,16 @@ export const aboutUs = [
             p2: `From I-390 traveling North: Take the Chile Ave. Exit 19. Cross straight over Chile Ave. onto Buell Rd.
                  You'll see a sign on the left for 390 Self Storage.`,
             p3: `From I-390 traveling South: Take the Chile Ave. exit 19. Turn left onto Chile Ave. and then turn right
-                 at the traffic light onto Buell Rd. You'll see a sign on the left fro 390 Self Storage.`
+                 at the traffic light onto Buell Rd. You'll see a sign on the left for 390 Self Storage.`
         },
         subHeading2: {
-            heading: `Security for your Possessions`,
+            heading: `Security for Your Possessions`,
             p: `Beyond the standard padlock, 390 Self Storage offers additional security for your possessions.
-            The entire facility is fenced with barbed wire where more easily accessible. The security gate is
-            controlled by your unique personal access code. It is well-lit and constantly monitored by camera.
-            The entire facility is well-lit with state of the art security cameras that record 24 hours a day.
-            The climate controlled storage requires your access code to enter and has a fire protection
-            sprinkler system.`
+            The entire facility is fenced in with additional barbed wire installed to mitigate areas that might
+            be more accessible. The security gate is controlled by your unique personal access code. It is well-lit
+            and constantly monitored by camera.The entire facility is well-lit with state of the art security cameras
+            that record 24 hours a day.The climate controlled storage requires your access code to enter and has a
+            fire protection sprinkler system.`
         },
         subHeading3: {
             heading: `For Your Convenience`,
@@ -128,7 +128,7 @@ export const aboutUs = [
         subHeading4: {
             heading: `Storage Solutions`,
             p: `390 Self Storage offers a wide array of unit sizes that will fit your needs for whatever time you may
-            need it. Climate controlled units(heated and cooled) are ideal for furniture, pictures, and important
+            need it. Climate controlled units (heated and cooled) are ideal for furniture, pictures, and important
             documents. Businesses routinely store their supplies, inventory, and records to save on expensive
             commercial office rates. Outside Storage is available for boats, RVs, and cars.`
         },
