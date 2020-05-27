@@ -4,6 +4,10 @@
   display: flex;
 }
 
+.payment-warning {
+  color: red;
+}
+
 .readonly-form-control {
   .form-control {
     background-color: white;
@@ -24,7 +28,7 @@ table {
 
 .modal-position {
   position: absolute;
-  left: 260px;
+  left: 290px;
 }
 
 .modal {

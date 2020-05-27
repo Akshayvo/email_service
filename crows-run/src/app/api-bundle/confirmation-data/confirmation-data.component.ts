@@ -46,7 +46,6 @@ tokenExit: string;
 existingTenantToken: string;
 existTempToken: string;
 showMoveInDateError = false;
-
 isValueUpdated = true;
 // formattedMoveInDate: any;
 
@@ -88,6 +87,10 @@ private  addTenantSubscribe$: Subscription;
 private  updateTenantSubscribe$: Subscription;
 private  makeAReservationSubscribe$: Subscription;
 private  getTenantInfoSubscribe$: Subscription;
+private  signOutSubscribe$: Subscription;
+
+
+
 
 constructor(
   public router: Router,
@@ -96,12 +99,18 @@ constructor(
   private makeAReservationService: MakeAReservationService,
   private addTenantService: AddTenantService,
   private tenantInfoService: TenantInfoService,
+  private signOutService: SignOutService,
 ) {
   this.fetchOption();
   this.fetchSharedData();
 }
 
+ngOnInit() {
+  this.getTenantUnitData();
+}
+
 fetchSharedData() {
+  console.log('shared data ', this.navigateToMoveIn, this.navigateToReserve);
   this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
   this.navigateToReserve  = this.dataSharingService.navigateToReserve;
   this.tenantData.objTenant = this.dataSharingService.objTenant;
@@ -135,14 +144,22 @@ public navigateToPrevious() {
   }
 }
 
+// public navigateToPrevious() {
+//   console.log('confirmation page working', this.dataSharingService.navigateToPrevious);
+//   this.router.navigate([this.dataSharingService.navigateToPrevious]);
+// }
+
 public hasUnsavedData() {
   return this.canExit;
 }
 
 
-ngOnInit() {
-  this.getTenantUnitData();
+
+public navigate(location: any) {
+  this.router.navigate([location]);
 }
+
+
 
 getTenantUnitData() {
   this.firstName = this.dataSharingService.objTenant.FirstName;
@@ -164,20 +181,19 @@ getTenantUnitData() {
     this.addTenantSubscribe$ = this.addTenantService.addTenant(data)
         .subscribe(result => {
         localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
-
         if (this.navigateToMoveIn ) {
-          if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
-            this.router.navigate(['/view-rates/payMoveInCharges']);
-          } else {
+          // if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
+          //   this.router.navigate(['/view-rates/payMoveInCharges']);
+          // } else {
             this.moveIn(this.MoveIn);
-          }
+          // }
         } else {
           if (this.navigateToReserve) {
-            if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
-              this.router.navigate(['/view-rates/payReservationCharges']);
-            } else {
+            // if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
+            //   this.router.navigate(['/view-rates/payReservationCharges']);
+            // } else {
               this.makeAReservation(this.MoveIn);
-            }
+            // }
           }
         }
       });
@@ -275,7 +291,15 @@ getTenantUnitData() {
         );
       }
 
-
+      signOut(logOut: any) {
+        this.signOutSubscribe$ = this.signOutService.signOut(logOut)
+           .subscribe(result => {
+             localStorage.removeItem('strTenantToken');
+             this.router.navigate(['/']);
+           }, (err) => {
+           }
+           );
+       }
 
     onSubmit() {
       if (window.localStorage) {
@@ -330,8 +354,38 @@ getTenantUnitData() {
               }
             }
           } else {
-            this.addTenant(this.tenantData);
+            // this.addTenant(this.tenantData);
             // this.MoveIn.dteMoveIn = this.formattedMoveInDate;
+            // if ( this.dataSharingService.navigateToReserve === true &&
+            //   this.dataSharingService.navigateToMoveIn === false) {
+            //   this.dataSharingService.addingTenant = true;
+            //   this.router.navigate(['/view-rates/payReservationCharges']);
+            // } else {
+            //   if ( this.dataSharingService.navigateToMoveIn === true &&
+            //     this.dataSharingService.navigateToReserve === false) {
+            //     this.dataSharingService.addingTenant = true;
+            //     console.log('going to payMoveInCharges');
+            //     this.router.navigate(['/view-rates/payMoveInCharges']);
+            //   }
+
+            // }
+
+            if (this.navigateToMoveIn === true) {
+              if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
+                this.dataSharingService.addingTenant = true;
+                this.router.navigate(['/view-rates/payMoveInCharges']);
+              } else {
+                this.addTenant(this.tenantData);
+              }
+            } else {
+              if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
+                this.dataSharingService.addingTenant = true;
+                this.dataSharingService.addingTenant = true;
+                this.router.navigate(['/view-rates/payReservationCharges']);
+               } else {
+                this.addTenant(this.tenantData);
+              }
+            }
           }
         }
     }
@@ -340,14 +394,14 @@ getTenantUnitData() {
       if (this.getTenantInfoSubscribe$ && this.getTenantInfoSubscribe$.closed) {
         this.getTenantInfoSubscribe$.unsubscribe();
       }
-      if (this.addTenantSubscribe$ && this.addTenantSubscribe$.closed) {
-        this.addTenantSubscribe$.unsubscribe();
-      }
       if (this.updateTenantSubscribe$ && this.updateTenantSubscribe$.closed) {
         this.updateTenantSubscribe$.unsubscribe();
       }
       if (this.makeAReservationSubscribe$ && this.makeAReservationSubscribe$.closed) {
         this.makeAReservationSubscribe$.unsubscribe();
+      }
+      if (this.signOutSubscribe$ && this.signOutSubscribe$.closed) {
+        this.signOutSubscribe$.unsubscribe();
       }
       this.destroyed.next();
       this.destroyed.complete();

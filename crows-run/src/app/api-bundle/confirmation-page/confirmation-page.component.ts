@@ -62,5 +62,4 @@ export class ConfirmationPageComponent implements OnInit, OnDestroy {
       this.signOutSubscribe$.unsubscribe();
     }
    }
-
 }
