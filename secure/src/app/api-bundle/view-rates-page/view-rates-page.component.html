@@ -15,8 +15,11 @@
               {{lstUnitType.Description}}
           </td>
           <td colspan="2" class="px-4 border text-center">
-              <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
+              <span *ngIf="lstUnitType.MonthlyRate != null">$</span><del>{{lstUnitType.MonthlyRate}}</del>
           </td>
+          <td colspan="2" class="px-4 border text-center">
+            <span *ngIf="lstUnitType.WebRate != null">$</span>{{lstUnitType.WebRate}}
+        </td>
           <!-- <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount}}
         </td> -->

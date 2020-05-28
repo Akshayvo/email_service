@@ -11,17 +11,20 @@ export class LstUnitTypes {
     MonthlyRate: number;
     ReservationFee: number;
     UnitTypeID: number;
+    WebRate: number;
 
     constructor(
         Description: string,
         MonthlyRate: number,
         ReservationFee: number,
         UnitTypeID: number,
+        WebRate: number
         ) {
         this.Description = Description,
         this.MonthlyRate = MonthlyRate;
         this.ReservationFee = ReservationFee;
         this.UnitTypeID = UnitTypeID;
+        this.WebRate = WebRate;
     }
 }
 
