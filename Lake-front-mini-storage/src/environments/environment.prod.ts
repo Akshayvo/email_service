@@ -4,7 +4,7 @@ export const environment = {
   // errorsMails: ['website.dev@codeparva.in'],
   errorsMails: ['sanghmitra.v@codeparva.in'],
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  senderEmail: 'errors@codeparva.in',
+  senderEmail: 'errors@codeparva.in -Production',
   appId: 'Lake Front Mini Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
