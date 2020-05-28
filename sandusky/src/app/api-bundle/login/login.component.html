@@ -62,14 +62,18 @@
 
 
     <div class="col-md-5  vertical-line"  >
-        <h3>How to Login</h3>
+        <strong class="pb-3"><h3 >How to Login</h3></strong>
         <div *ngFor="let loginDetail of loginDetail">
           <p><b>Username</b>&nbsp;{{loginDetail.userName}}<br>
           <b>Password:</b>&nbsp;{{loginDetail.password}}</p>
+          <p>{{loginDetail.instruction}}</p>
             <p><b>Example:</b></p>
             <p>John Smith's Unit Number is {{loginDetail.example.code}}</p>
             <p>John's Username: {{loginDetail.example.userName}}<br>
               John's Password: {{loginDetail.example.password}}</p>
+              <p>John Smith's Unit Number is {{loginDetail.otherExample.code}}</p>
+              <p>John's Username: {{loginDetail.otherExample.userName}}<br>
+                John's Password: {{loginDetail.otherExample.password}}</p>
             <p><strong>Have questions about your account?</strong><br>
             <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
               <a  *ngIf="contact?.id == 1 || contact?.id == 2" [href]="contact?.redirect">

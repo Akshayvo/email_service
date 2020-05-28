@@ -25,17 +25,14 @@ export const th = [
     data: `Rate`
   },
   // {
-  //   data: `Annual Rate`,
-  // },
-  // {
   //   data: 'Deposit'
   // },
   {
     data: `Reserve a Unit`
   },
-  // {
-  //   data: `Move In`
-  // },
+  {
+    data: `Move In`
+  },
   // {
   //   data: `Climate Control`
   // },
