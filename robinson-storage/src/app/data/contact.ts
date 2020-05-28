@@ -7,18 +7,18 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:robinsonstorageca@gmail.com',
-        data: 'robinsonstorageca@gmail.com',
+        redirect: 'mailto:hello@robinsonstorage.ca',
+        data: 'hello@robinsonstorage.ca',
         label: 'Email:',
         class: 'fas fa-envelope mx-2 iconColor',
     },
-    // {
-    //     id: 2,
-    //     redirect: 'tel:',
-    //     label: 'Phone:',
-    //     data: '',
-    //     class: 'fas fa-phone mx-2 iconColor',
-    // }
+    {
+        id: 2,
+        redirect: 'tel:7059545454',
+        label: 'Phone:',
+        data: '(705) 954-5454',
+        class: 'fas fa-phone mx-2 iconColor',
+    }
 ];
 
 export const hours = [
