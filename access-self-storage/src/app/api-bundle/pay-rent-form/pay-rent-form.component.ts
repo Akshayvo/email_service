@@ -628,6 +628,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             if (this.navigateToReserve) {
               if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
                 // this.router.navigate(['/view-rates/payReservationCharges']);
+                this.makePayment(this.payRentForm.value);
               } else {
                 this.makeAReservation(this.MoveIn);
               }
