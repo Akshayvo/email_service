@@ -22,11 +22,11 @@ export const rates = [
     },
     {
         td1: `Up to 34'`,
-        td2: `$70`
+        td2: `$80`
     },
     {
         td1: `Up to 42'`,
-        td2: `$90`
+        td2: `$100`
     }
 ];
 
