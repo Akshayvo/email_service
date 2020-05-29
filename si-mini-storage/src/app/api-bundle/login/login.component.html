@@ -59,10 +59,14 @@
                     <h3>How to Login</h3>
                     <p><b>Username:</b>&nbsp;First initial + Last Name<br>
                         <b>Password:</b>&nbsp;Unit Number</p>
-                    <!-- <p><b>Example:</b></p>
-                    <p>John Smith's code is 1234 and his Phone Number is 555-555-5555</p>
+                    <p>All unit numbers are stored in our system using 5 digits. If your unit number does not have 5 digits, you will need to use preceding zeroes.</p>
+                    <p><b>Example:</b></p>
+                    <p>John Smith's Unit number is 1450</p>
                     <p>John's Username: jsmith<br>
-                        John's Password: 12345555</p> -->
+                        John's Password: 01450</p>
+                    <p>John Smith's Unit number is 123</p>
+                        <p>John's Username: jsmith<br>
+                            John's Password: 00123</p>
                     <p><strong>Have questions about your account?</strong>
                         <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
                             <a *ngIf="contact?.id == 2 || contact?.id == 1" [href]="contact?.redirect">
