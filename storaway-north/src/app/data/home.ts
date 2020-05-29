@@ -21,7 +21,6 @@ export const featuresList = [
     {
         td1: 'Security Cameras'
     }
-    
 ];
 
 
@@ -55,21 +54,24 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Our facility is conveniently located on Lowries Run Rd between the Sams Club and the Rochester Rd intersection with Lowries Run Rd. 
-            We are just a stone's throw from Franklin Park and West View.`,
+        p: `Our facility is conveniently located on Lowries Run Rd between the Sams Club and the Rochester Rd
+        intersection with Lowries Run Rd. We are just a stone's throw from Franklin Park and West View. We
+        have recently renovated units available for occupancy.`,
     },
     {
-        p: `We offer a wide selection of well-lit, fully-fenced, properly-maintained, self storage units that are secured behind a pin-code 
-            activated gate at the lowest prices in town! 24-hour access is available, pending approval!`,
+        p: `We offer a wide selection of well-lit, fully-fenced, properly-maintained, self storage units that
+        are secured behind a pin-code activated gate at the lowest prices in town! 24-hour access is available,
+        pending approval!`,
     },
     {
-        p: `Stor-A-Way North has been serving our friends and family in the community for over three decades. That time has made us experts in 
-            self storage and customer service. We believe the best way to do business is by providing quality service at reasonable prices, and 
-            building relationships with our community.`,
+        p: `Stor-A-Way North has been serving our friends and family in the community for over three decades.
+        That time has made us experts in self storage and customer service. We believe the best way to do business
+        is by providing quality service at reasonable prices, and building relationships with our community.`,
     },
     {
-        p: `So if you're a residential storage user looking for a little extra elbow room around the house or are a business in need of equipment 
-            or inventory storage, we've got your needs covered! Give us a call today!`
+        p: `So if you're a residential storage user looking for a little extra elbow room around the house
+        or are a business in need of equipment or inventory storage, we've got your needs covered!
+        Give us a call today!`
     }
 ];
 
@@ -77,12 +79,14 @@ export const aboutUs = [
 
 
 
-export const gettingStarted = `Start de-cluttering your life with Stor-A-Way North today! Click here to view our rates and learn how to reserve your unit!`;
+export const gettingStarted = `Start de-cluttering your life with Stor-A-Way North today! Click here
+to view our rates and learn how to reserve your unit!`;
 
 export const blurb = [
     {
         h1: `Convenient & Affordable Self Storage`,
-        p: `Since 1987, Stor-A-Way North has been serving Ben Avon, Avalon, Franklin Park, and the surrounding area with quality self storage and the 
-            quality customer service you only get from locally owned and operated enterprises.  `,
+        p: `Since 1987, Stor-A-Way North has been serving Ben Avon, Avalon, Franklin Park, and the surrounding
+        area with quality self storage and the quality customer service you only get from locally owned
+        and operated enterprises.`,
     }
 ];

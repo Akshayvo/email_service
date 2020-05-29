@@ -22,12 +22,15 @@ export const currentDiscounts = [
         p: `Internet discount - 10% off the first month`
     },
     {
-        p: `1 year prepaid, 1 month free`
+        p: `Prepay 11 months, receive 12th month free`
     },
     {
         p: `Fall special October - December - 3 months prepaid, 1 month free for rental of 10x20 unit.`
     },
     {
         p: `Student Discount - 20%`
+    },
+    {
+        p: `EMS to our Veterans, Police, and Fireman 10% Discount`
     }
 ];
