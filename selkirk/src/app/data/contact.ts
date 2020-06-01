@@ -6,20 +6,20 @@ export const contact = [
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
-        id: 3,
+        id: 1,
         label: 'Office Address:',
         data: ' 560 Rt 9w, Glenmont, NY 12077',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
-        id: 1,
+        id: 2,
         label: 'Email:',
         redirect: 'mailto:selkirkstorage@gmail.com',
         data: 'selkirkstorage@gmail.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
-        id: 2,
+        id: 3,
         redirect: 'tel:5187679002',
         label: 'Phone:',
         data: '(518) 767-9002',

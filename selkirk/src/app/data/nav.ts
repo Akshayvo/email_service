@@ -4,6 +4,10 @@ export const navLinks = [
         path: '/',
     },
     {
+        label: 'VIEW RATES',
+        path: '/view-rates'
+    },
+    {
         label: 'UNIT SIZER',
         path: '/unit-sizer',
     },
