@@ -52,6 +52,9 @@ import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 import { PhotosComponent } from './photos/photos.component';
 import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
 import { ScriptHackComponent } from './script-hack/script-hack.component';
+import { RentSubComponent } from '../app/rent-sub/rent-sub.component';
+import { SignUpComponent } from '../app/sign-up/sign-up.component';
+import { TabsComponent } from '../app/tabs/tabs.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -86,7 +89,10 @@ import { ScriptHackComponent } from './script-hack/script-hack.component';
     PhotosComponent,
     ConfirmationPageComponent,
     ConfirmationPageComponent,
-    ScriptHackComponent
+    ScriptHackComponent,
+    RentSubComponent,
+    SignUpComponent,
+    TabsComponent,
   ],
   imports: [
     CommonModule,

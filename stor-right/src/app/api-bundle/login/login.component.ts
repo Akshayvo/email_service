@@ -68,9 +68,9 @@ export class LoginComponent implements OnInit, OnDestroy {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
         if (this.dataSharingService.changePassword === true) {
-          this.router.navigate(['/pay-rent/changePassword']);
+          this.router.navigate(['/pay-rent/rent-sub/changePassword']);
         } else {
-          this.router.navigate(['/pay-rent/payment']);
+          this.router.navigate(['/pay-rent/rent-sub/payment']);
         }
        }
     }
@@ -112,7 +112,7 @@ export class LoginComponent implements OnInit, OnDestroy {
           this.authData = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
           // this.dataSharingService.strTenantToken = this.authData;
-          this.router.navigate(['/pay-rent/payment']);
+          this.router.navigate(['/pay-rent/rent-sub/payment']);
         }, (err) => {
           this.credentialsInvalid = true;
           this.showLoader = false;

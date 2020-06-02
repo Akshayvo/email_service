@@ -187,7 +187,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           }
         });
       } else {
-        if (this.router.url ===  '/pay-rent/payment' ) {
+        if (this.router.url ===  '/pay-rent/rent-sub/payment' ) {
           this.navigateToMoveIn = false;
           this.navigateToReserve = false;
         }
@@ -197,7 +197,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-    if (this.router.url ===  '/pay-rent/payment' ) {
+    if (this.router.url ===  '/pay-rent/rent-sub/payment' ) {
       this.navigateToMoveInPayment = true;
     }
   }
@@ -207,7 +207,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.getPayMethods();
     } else {
       if (!localStorage.getItem('strTempTenantToken')) {
-        this.router.navigate(['/pay-rent/login']);
+        this.router.navigate(['/pay-rent/rent-sub/login']);
       } else {
         this.getPayMethods();
       }
@@ -395,7 +395,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       , (err: any) => {
         if (err.status === 401) {
           localStorage.removeItem('strTenantToken');
-          this.router.navigate(['/pay-rent/login']);
+          this.router.navigate(['/pay-rent/rent-sub/login']);
           this.sessionExpire = 'Session Expired. Please Login for completing the payment.';
         }
       });
@@ -506,7 +506,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
    this.signOutSubscribe$ = this.signOutService.signOut(logOut)
       .subscribe(result => {
         localStorage.removeItem('strTenantToken');
-        this.router.navigate(['/pay-rent/login']);
+        this.router.navigate(['/pay-rent/rent-sub/login']);
       }, (err) => {
       }
     );
