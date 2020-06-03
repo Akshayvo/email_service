@@ -1,0 +1,39 @@
+@import "../../styles.scss";
+
+.footer-text-align {
+  float: left;
+}
+
+.syrasoft-logo-align {
+  float: right;
+}
+
+.passa-logo-align{
+  align-items: center;
+
+  img{
+    height: 70px;
+    align-items: center;
+  }
+}
+.row{
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width:480px) {
+  .passa-logo-align{
+    align-items: center;
+  
+    img{
+      height: 35px;
+      align-items: center;
+    }
+  }
+  .syrasoft-logo {
+    // float: right;
+    img {
+      height: 35px;
+    }
+  }
+}

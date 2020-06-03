@@ -1,0 +1,32 @@
+<div class="rent-holder">
+    <div class="container px-0">
+      <div class="rent-heading pb-5">
+        <h1 class="text-center pt-5">Pay Rent Online</h1>
+      </div>
+      
+      <div class="rent-sub-holder">
+        <div class="row padding bg-light">
+          <div class="col-lg-8 col-md-6 coming scroll-wrapper padding-for-small-device">
+            <iframe id="advanced_iframe" name="advanced_iframe" src="https://crowsrunselfstorage.sim.syrasoft.com/paynow" width="100%"
+             scrolling="yes" frameborder="0" border="0" allowtransparency="true"></iframe>  
+          </div>
+  
+          <div class="col-lg-4 col-md-6 rent-example padding-for-small-device">
+            <h2> How to Login </h2>
+            <p class="pt-3"> <b>Username:</b> First initial + Last Name </p>
+            <p> <b>Password:</b> Your Gate Access Code</p><br>
+            <p><b>Example:</b></p>
+            <p>John Smith's code is 1234</p><br>
+            <p>John's Username: jsmith<br>
+              John's Password: 1234</p>
+        
+            <p class="pt-4"><b>Have questions about your account?</b>
+              <span *ngFor="let contact of contact"><span *ngIf="contact?.id == 1 || contact?.id == 2"><a [href]="contact?.redirect">{{contact.data}}</a></span><br>
+            </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
