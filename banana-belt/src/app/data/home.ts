@@ -11,16 +11,25 @@ export const featuresList = [
 
 export const aboutUs = [
     {
-        p: `Banana Belt Storage is Buena Vista's newest facility. We are proud to serve the Buena Visa
-        community and surrounding communities with affordable, high-quality self storage services and
-        stellar customer service.`,
+        p: `Banana Belt Storage is Buena Vista's newest facility. We are proud to serve the Buena Visa community
+        and surrounding communities with affordable, high-quality self storage services,
+        and excellent customer service.`,
     },
     {
-        p: `Our brand new storage units offer a variety of sizes perfect for all of your residential or
-        commercial needs. Whether you're in the process of de-cluttering at home and searching for a little
-        extra room at home or are a local business in need of equipment or inventory storage,
-        Banana Belt Storage has you covered!`,
+        p: `Our brand new storage units offer a variety of sizes perfect for all of your residential or commercial
+        needs. Whether you're in the process of de-cluttering at home and searching for a little extra room at
+        home or are a local business in need of equipment or inventory storage, Banana Belt Storage has you covered!`,
     },
+    {
+        p: `We offer units that range from 5'x10' units that are an ideal solution to store a bedroom's worth of
+        furniture, and boxes of personal belongings to our oversized 10'x30' units ready to fill with the contents
+        of an entire multi-bedroom home during a move or renovation. Businesses love our 24-hour access that
+        ensures you're able to operate without working around someone else's office hours!`
+    },
+    {
+        p: `Give us a call today, and start enjoying the convenience and customer service of Banana
+        Belt Storage, today!`
+    }
 ];
 
 export const gettingStarted = `Are you ready to make some extra room at home or expand your business inventory
@@ -47,9 +56,9 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Banana_Belt/fence.svg`,
-        label: 'Fully-Fenced Facility',
-        alt: 'Icon of a section of fencing'
+        path: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/stellar.svg`,
+        label: 'Stellar Customer Service',
+        alt: 'Customer Service Representative Icon'
     },
 ];
 
