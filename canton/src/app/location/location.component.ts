@@ -49,7 +49,7 @@ export class LocationComponent implements OnInit {
              Louisville, Hartville, Canton, and the surrounding communities!`
            });
            this.titleService.setTitle('Affordable Storage Units | Louisville Self Storage');
-           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
 
     } else  if (this.router.url.includes('/location/lincoln-street-storage'))  {
           this.meta.addTag({
@@ -58,7 +58,7 @@ export class LocationComponent implements OnInit {
             Lincoln Street Storage has you covered! `
           });
           this.titleService.setTitle('Affordable Storage Units in Canton | Lincoln Street Storage');
-          this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+          this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
 
     }
     }
