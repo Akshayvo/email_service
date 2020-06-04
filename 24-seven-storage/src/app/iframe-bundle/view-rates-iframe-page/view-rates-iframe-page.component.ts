@@ -23,10 +23,9 @@ export class ViewRatesIframePageComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to look at our extremely reasonable self storage rates!
-      Then, use our online form to submit your reservation! `
+      content: ` `
     });
-    this.titleService.setTitle('View Rates | Crows Run Self Storage');
+    this.titleService.setTitle('');
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();

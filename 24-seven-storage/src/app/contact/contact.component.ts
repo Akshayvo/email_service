@@ -37,9 +37,10 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our handy contact form or contact information to drop us a line! One of our friendly managers will reach out shortly!`
+      content: `If you have questions about your account or the services we offer, take a moment
+      to fill our out form, or use the contact information to speak with us!`
     });
-    this.titleService.setTitle('Contact Us | Crows Run Self Storage');
+    this.titleService.setTitle('Contact Us  | 24 Seven Storage ');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],

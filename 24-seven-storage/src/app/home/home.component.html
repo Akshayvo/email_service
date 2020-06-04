@@ -3,7 +3,7 @@
   <!--Jumbotron Container Starts Here-->
   <div class="jumbotron-container">
     <div class="jumbotron-top">
-      <div class="jumbotron px-0 m-0">
+      <div class="jumbotron px-0 m-0 " [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'" >
         <div class="bg-translucent jumbotron-skew-style">
         </div>
           <div class="container">
@@ -30,7 +30,7 @@
     <div class="jumbotron-bottom disp">
       <div class="container ">
         <div class="row">
-          <div class="col-md-4 col-4 p-4 text-center override-padding-x-axis" *ngFor="let feature of feature">
+          <div class="col-md-3 col-3 p-4 text-center override-padding-x-axis" *ngFor="let feature of feature">
             <img [src]="feature?.path" alt="" height="80px" width="auto">
               <h6 class="feature-text">{{feature.label}}</h6>
           </div>
@@ -45,7 +45,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 py-3 map">
-          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1BIOt3Hz6Bqrl51m2mRcIb7_cbpO5aYH_" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12773.221761297173!2d-76.0000384!3d36.8351603!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf3907287b9b9f35!2s24%20Seven%20Storage!5e0!3m2!1sen!2sus!4v1591043203385!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
         </div>
         
         <div class="col-lg-6 py-3">
@@ -62,11 +62,7 @@
                     </div>    
               </div>
               </div>
-          </div>
-          <div class="p-2" style="background-color: red; color: white;">
-            Due to the COVID-19 situation, our office is closed. PLEASE CALL AS WE ARE OPEN REMOTELY. For payments, try our new online payment option by clicking the Pay Rent menu option.
-          </div>
-          
+          </div>         
           <div class="pt-2">
               <app-tables [tBody]="featuresList"></app-tables>
           </div>
@@ -81,10 +77,11 @@
   <div class="container py-5">
     <div class="row">
       <div class="col-lg-6 py-3">
-        <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/crows-run-self-storage-home.jpg" width="100%" alt="photo of a one-story front office building in front of a key-pad activated white wrought-iron security gate ">
+        <!-- <img src="" width="100%" alt=""> -->
+        <app-photos></app-photos>
       </div>
       <div class="col-lg-6 py-3">
-        <h1 class="heading pb-4">Affordable Storage Units in Conway</h1>
+        <h1 class="heading pb-4">24 Hour Access Self Storage in Virginia Beach</h1>
         <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
       </div>
     </div>
@@ -92,22 +89,22 @@
   <!--About Us Section Ends Here-->
 
   <!--Testimonial-->
-  <div class="bg-light">
+  <!-- <div class="bg-light">
     <div class="container">
       <div class="row py-5">
        <div class="col-md-12 text-center">
           <h2 class="heading pb-4">Reviews</h2>
-          <div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000">
+          <div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000"> -->
 
               <!-- Indicators -->
-              <ul class="carousel-indicators">
+              <!-- <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>
                 <li data-target="#demo" data-slide-to="2"></li>
-              </ul>
+              </ul> -->
             
               <!-- The slideshow -->
-              <div class="carousel-inner ">
+              <!-- <div class="carousel-inner ">
                 <div class="carousel-item py-5 active">
                   <p>
                     A well run clean, safe and reasonably priced storage location to store your belongings. Highly recommended for anyone in the area looking for self storage. Both the owner and manager working on site are excellent at customer service and very accommodating.
@@ -139,12 +136,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--Testimonial section-->
 
 
 <!--Get Started Secion-->
-  <div class="getStarted text-center">
+  <!-- <div class="getStarted text-center">
     <div class="get-started">
      <div class="container py-5">
        <div class="py-5 m-0">
@@ -158,7 +155,7 @@
        </div>
      </div>      
     </div>
-  </div>
+  </div> -->
 <!--Get Started Secion Ends Here-->
 
 </div> 

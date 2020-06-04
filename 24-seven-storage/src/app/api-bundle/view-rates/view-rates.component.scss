@@ -18,7 +18,7 @@
 
 
 .contentHolder {
-  padding-top: 90px;
+  padding-top: 146px;
   min-height: 96vh;
   margin-bottom: 50px;
 }
@@ -103,6 +103,12 @@ table {
 
 .background-padding {
   padding: 64px;
+}
+
+@media only screen and (max-width: 991px) {
+  .contentHolder {
+    padding-top: 60px;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {

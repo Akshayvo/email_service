@@ -1,15 +1,25 @@
 export const dataViewRates = [
     {
-        p: `At Crows Run Self Storage, we take great pride in our clean, well-maintained self storage units,
-            and easy-access RV, boat, camper and vehicle storage. Our friendly management team is ready and
-            waiting to answer any questions you might have!`,
+        p: `24 Seven Storage has been serving friends and neighbors in the Virginia Beach community with friendly customer
+        service, and clean, well-maintained self storage units for over two decades. We understand that the need for self
+        storage can come during stressful times. `,
     },
     {
-        p: `Our business and residential customers come from all over Beaver County and surrounding areas.
-            So if you're from Conway, Baden, Freedom, Beaver, New Brighton, Ambridge, Aliquippa, Monaca,
-            Economy Borough, Rochester or anywhere in between, give us a call, today, and let our team
-            make your self storage stay a success.`,
+        p: `That's why 24 Seven Storage goes the extra mile between our customer service, and our amenities. Once you've
+        found the unit that's right for you, simply click the Reserve button, and fill out our easy form. One of our
+        on-site managers will reach out, confirm the details of your reservation, and help you prepare for your move-in.
+        We're available on-site to answer questions, and ensure your storage experience at 24 Seven Storage is a great one!`,
     },
+    {
+      p: `Once you've moved into your unit, you'll have 24-hour access to your personal belongings, seasonal decorations,
+      equipment, or business inventory! All of our tenants are also issued a username and password upon move-in to access
+      their account through our website on their schedule. Check your balance or pay your rent 24 hours a day, 7 days a
+      week without waiting for business hours!`
+    },
+    {
+      p: `The staff at 24 Seven Storage can't wait to meet you, and help you start de-cluttering your life!
+      Call (757) 428-6801 today, or just fill out the simple form, and one of our friendly managers will be in touch!`
+    }
 ];
 
 export const th = [

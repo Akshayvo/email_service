@@ -52,6 +52,8 @@ import { ResetPasswordComponent } from './api-bundle/reset-password/reset-passwo
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
+import { PhotosComponent } from '../app/photos/photos.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -85,6 +87,7 @@ import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confir
     VerifyCodeComponent,
     ResetPasswordComponent,
     ConfirmationPageComponent,
+    PhotosComponent,
   ],
   imports: [
     CommonModule,

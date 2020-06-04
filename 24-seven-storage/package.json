@@ -1,5 +1,5 @@
 {
-  "name": "crows-run",
+  "name": "24-seven",
   "version": "0.1.5",
   "scripts": {
     "ng": "ng",
@@ -11,9 +11,9 @@
     "e2e": "ng e2e",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server.js",
-    "build:client-and-server-bundles": "ng build --prod && ng run crows-run:server",
+    "build:client-and-server-bundles": "ng build --prod && ng run 24-seven:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
-    "build:server:prod": "ng run crows-run:server && webpack --config webpack.server.config.js --progress --colors",
+    "build:server:prod": "ng run 24-seven:server && webpack --config webpack.server.config.js --progress --colors",
     "build:browser:prod": "ng build --prod",
     "build:prod": "npm run build:server:prod && npm run build:browser:prod",
     "server": "node local.js"

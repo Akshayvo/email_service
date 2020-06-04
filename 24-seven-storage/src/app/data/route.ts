@@ -66,7 +66,7 @@ import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confi
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJmUqGRyTquokRNZ-beygHOQ8'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },

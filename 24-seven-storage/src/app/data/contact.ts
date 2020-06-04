@@ -2,33 +2,37 @@ export const contact = [
     {
         id: 0,
         label: 'Address: ',
-        data: '1901 Crows Run Rd  Conway, PA 15027 ',
+        data: '1101 Jensen Dr # A, Virginia Beach, VA 23451',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         id: 1,
         label: 'Email: ',
-        redirect: 'mailto:contact@crowsrunstorage.com',
-        data: 'contact@crowsrunstorage.com',
+        redirect: 'mailto:info@24sevenstorage.com',
+        data: 'info@24sevenstorage.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
         id: 2,
-        redirect: 'tel:7242425600',
+        redirect: 'tel:7574286801',
         label: 'Phone: ',
-        data: '(724) 242-5600',
+        data: '(757) 428-6801',
         class: 'fas fa-phone mr-2 iconColor',
     }
 ];
 
 export const hours = [
     {
-        label: 'MON-FRI: ',
-        data: '9:00 AM - 5:00 PM'
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 5:00PM'
     },
     {
-        label: 'SAT-SUN: ',
-        data: 'By Appointment Only'
+        label: 'Saturday: ',
+        data: '9:00AM-2:00PM'
+    },
+    {
+        label: 'Sunday: ',
+        data: 'CLOSED'
     },
     {
         label: 'Access Hours: ',
@@ -37,9 +41,9 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    {
-        label: 'facebook',
-        path: 'https://www.facebook.com/Crows-Run-Self-Storage-563126960369408/',
-        class: 'fab fa-facebook-square',
-    }
+    // {
+    //     label: 'facebook',
+    //     path: '',
+    //     class: 'fab fa-facebook-square',
+    // }
 ];

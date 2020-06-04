@@ -22,9 +22,9 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `We understand self storage! Take advantage of that experience, and use these helpful tips to make your experience a breeze!`
+      content: `Follow these easy self storage tips to make your stay with 24 Seven Storage  a breeze! Have questions? Call (757) 428-6801, today!`
     });
-    this.titleService.setTitle('Storage Tips | Crows Run Self Storage');
+    this.titleService.setTitle('Storage Tips  | 24 Seven Storage ');
   }
 
   ngOnInit() {

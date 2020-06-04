@@ -36,10 +36,10 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to look at our extremely reasonable self storage rates!
-      Then, use our online form to submit your reservation! `
+      content: `Take a moment to view our affordable self storage unit rates, then make your
+      reservation by filling out our form or calling our office today!`
     });
-    this.titleService.setTitle('View Rates | Crows Run Self Storage');
+    this.titleService.setTitle('View Rates  | 24 Seven Storage ');
     this.metaService.createCanonicalURL();
     this.metaService.createCanonicalURL();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();

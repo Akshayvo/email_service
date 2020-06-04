@@ -39,7 +39,7 @@ $carousel-transition: transform .1s ease-in-out !default;
 
 // Get started Section
 .getStarted {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/crows-run-self-storage.jpg") center top no-repeat fixed;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/24_Seven_Storage/jpg/24-seven-storage-front-office.jpg") center top no-repeat fixed;
   background-size: cover;
   background-position: top;
 
@@ -57,13 +57,21 @@ $carousel-transition: transform .1s ease-in-out !default;
   }
 }
 
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/24_Seven_Storage/webp/24-seven-storage-front-office.webp");
+}
+
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/24_Seven_Storage/jpg/24-seven-storage-front-office.jpg");
+}
+
 // HOME jUMBOTRON
 
 .jumbotron-top {
   height: 80vh;
 
   .jumbotron {
-    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/crows-run-self-storage.jpg");
+    // background: url("");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -121,10 +129,21 @@ $carousel-transition: transform .1s ease-in-out !default;
     .jumbotron {
       .jumbotron-skew-text {
         width: 512px;
+        top: 30%;
       }
     }
   }
-}
+  }
+
+  @media only screen and (min-width: 1200px) and (max-height: 556px) and (min-height: 481px) {
+    .jumbotron-skew-text {
+      .jum-text {
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+    }
+  }
 
 @media only screen and (min-width: 1200px) and (max-height: 690px) and (min-height: 481px) {
   .jumbotron-container {
@@ -252,6 +271,7 @@ $carousel-transition: transform .1s ease-in-out !default;
   }
 }
 
+
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 640px) and (min-height: 481px) {
   .jumbotron-bottom {
     display: flex;
@@ -271,7 +291,7 @@ $carousel-transition: transform .1s ease-in-out !default;
     }
 
     .jumbotron-skew-text {
-      top: 25%;
+      top: 27% !important;
     }
   }
 
@@ -362,8 +382,16 @@ $carousel-transition: transform .1s ease-in-out !default;
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
+  }
+
+  .jumbotron-skew-text {
+    .jum-text {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
   }
 
   .jumbotron-bottom {
@@ -376,6 +404,15 @@ $carousel-transition: transform .1s ease-in-out !default;
   }
 }
 
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 530px) and (min-height: 481px) {
+  .jumbotron-skew-text {
+    .jum-text {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  }
+}
 
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 640px) and (min-height: 481px) {
   .jumbotron-bottom {
@@ -464,7 +501,7 @@ $carousel-transition: transform .1s ease-in-out !default;
       }
 
       .jumbotron-skew-text {
-        top: 40%;
+        top: 25%;
         width: 328px;
       }
     }
@@ -501,7 +538,7 @@ $carousel-transition: transform .1s ease-in-out !default;
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
-        top: 30%;
+        top: 17%;
         .disp {
           p {
             font-size: 0.8rem;

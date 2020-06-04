@@ -35,9 +35,9 @@ export class UaParserService {
       }
     }
     if (this.typeOfImages === 'WEBP') {
-      this.baseUrl = ``;
+      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/24_Seven_Storage/webp`;
     } else {
-      this.baseUrl = '';
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/24_Seven_Storage/jpg';
     }
   }
 }

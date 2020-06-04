@@ -1,91 +1,87 @@
 
 export const featuresList = [
     {
-        td1: 'Fully-Fenced',
-        td2: '24 Hour Access',
+        td1: 'Convenient Location',
+        td2: 'On-Site Manager',
     },
     {
-        td1: 'Video Cameras ',
-        td2: 'Monthly & Longer Leases',
+        td1: 'Online Bill Pay',
+        td2: 'Security Cameras',
     },
     {
-        td1: 'Clean & Neat',
-        td2: 'On-Site Office / Staff'
+        td1: 'Well-Lit Facility',
+        td2: 'Drive-Up Units'
     },
     {
-        td1: 'Drive-up Access / All Ground Floor Level',
-        td2: 'Keypad Activated Gate Access With Your Private Code'
+        td1: 'Auto-Pay Available',
+        td2: 'Friendly Customer Service'
     },
     {
-        td1: 'Use your own disk lock or buy one from us',
-        td2: 'Outside RV, Car, Boat & Camper Storage'
+        td1: 'Affordable Rates',
+        td2: 'Climate-Controlled Units Available'
     }
 ];
 
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/location.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/location.svg',
         label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/24-hours.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/24-hours.svg',
         label: '24 Hour Facility Access',
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/operator.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/stellar.svg',
         label: 'Stellar Customer Service',
         alt: 'Customer Service Representative Icon'
     },
-    // {
-    //     // tslint:disable-next-line:max-line-length
-    //     path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Crows_Run/team.svg',
-    //     label: 'Family Owned & Operated',
-    //     alt: 'Icon of people standing together '
-    // },
+    {
+        // tslint:disable-next-line:max-line-length
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/team.svg',
+        label: 'Family Owned and Operated',
+        alt: 'Icon of people standing together '
+    },
 ];
 
 
 export const aboutUs = [
     {
-        p: `Crows Run Self Storage is Conway, Pennsylvania's best self storage facility, with indoor units ranging
-            from 5'x10' to 10'x'30'. Our indoor units are the ideal solution for residential storage users in the
-            middle of a hectic move, renovation, or those preparing to downsize their accommodations. Business
-            customers take advantage of our 24-hour access to pick up and drop off their inventory, supplies,
-            and equipment. Why pay commercial real estate prices when you can use Crows Run Self Storage
-            at a fraction of the cost?`,
+        p: `With so many self storage options available these days, we understand it can be overwhelming to choose
+        a storage facility. 24 Seven Storage offers its valued customers many different size options to store their
+        belongings. We take pride in dealing with each client on a one-on-one basis, helping you fulfill your storage
+        needs. No matter if you want to store personal or business items, we have you covered! Your belongings are
+        accessible 24 hours a day, seven days a week!`,
     },
     {
-        p: `The facility is conveniently located right off of Route 65, between Conway and Freedom. We are a
-            fully-fenced, well-lit facility with a password-controlled entrance gate and video cameras All
-            of our units are drive-up at ground level, making loading and unloading a breeze.`,
+        p: `Our facility has units in both regular, and climate control varieties designed for equipment, furniture,
+        or belongings that need some extra protection from the elements. Many of our clean, well-maintained storage
+        units are extra high with 10-foot ceilings, instead of the standard 8 foot. Since we have units ranging from
+        a walk-in-closet 5-foot-by-5 foot up to our over-sized 20-foot-by-35-foot, we are positive we've got your next
+        storage project covered!`,
     },
     {
-        p: `We even have outdoor recreational vehicle, boat, camper and car storage to help you reclaim
-            space on your driveway or lawn! Whether you are a residential user trying to de-clutter, a
-            college student or military personnel packing things up, a business person in need of a
-            convenient and cost-effective storage solution, or if you just need a place to park that
-            RV or boat for the season, we've got you covered! Our friendly management team is ready
-            to make your storage experience an easy one!`,
+        p: `We understand that the need for self storage typically comes during stressful points in life, which is why
+        our family-owned and operated facility has on-site management. Our management team employs seamless modern
+        technology to give you the convenience of 24-hour reservations, and account access combined with the personal
+        touch of a family-owned and operated business.`,
     },
 ];
 
 
-export const gettingStarted = `Are you ready to begin de-cluttering your life, and regaining
-                               some of that elbow room around the house?
-                               Click here to get started with Crows Run Self Storage!`;
+export const gettingStarted = ``;
 
 export const blurb = [
     {
-        h1: `Affordable Storage Units in Conway`,
-        p: `Crows Run Self Storage  serves Conway, Pennsylvania, and the surrounding communities with quality
-            indoor self storage units, and outdoor RV, camper, boat and vehicle storage. Our indoor storage units
-            range from 5'x10' to 10'x30' and our outdoor spaces range from 10' x 20' to 13' x 40'.  The facility
-            is fully-fenced, well-lit and covered by video cameras.  Access is by the password activated gate.
-            Our friendly management team looks forward to meeting you! Call today!`,
+        h1: `Family Owned & Operated 24 Hour Access Self Storage in Virginia Beach`,
+        p: `24 Seven Storage has been providing our customers with a safe and secure place to store their belongings since 1999!
+        Our experience as a family owned and operated self storage facility makes us the ideal choice for your next move,
+        renovation, or seasonal storage project! Call (757) 617-5330, or use our handy online portal to reserve your unit,
+        and start enjoying our quality service, and our affordable rates today!`,
     }
 ];

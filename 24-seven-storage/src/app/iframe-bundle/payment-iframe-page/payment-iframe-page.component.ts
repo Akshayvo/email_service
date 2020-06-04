@@ -18,10 +18,9 @@ export class PaymentIframePageComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent online quickly, and easily with our tenant portal!
-      Follow the instructions or call our office to learn how to log in!`
+      content: ``
     });
-    this.titleService.setTitle('Pay Rent | Crows Run Self Storage');
+    this.titleService.setTitle('');
   }
 
   ngOnInit() {

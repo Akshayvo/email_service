@@ -32,12 +32,12 @@ $Catskill-theme: mat-light-theme($Catskill-primary, $Catskill-accent, $Catskill-
 
 //Basic color and font styles
 // $primary: #3c8fb4;
-$primary: #22894a;
-$primaryDark: #084921;
+$primary: #264ead;
+$primaryDark: #03194d;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
-$secondary: #212121;
+$secondary: #c93232;
 
 $dark: #333;
 $light: #efefef;
@@ -62,7 +62,7 @@ body {
 
 // Different Background colors
 .bg-secondary {
-  background: $secondary;
+  background: $secondary !important ;
 }
 
 .bg-dark {

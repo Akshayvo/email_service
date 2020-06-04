@@ -12,7 +12,7 @@ selector: 'app-root',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Crows Run Self Storage';
+  title = '24 Seven Storage';
   flag: boolean;
   public offsets: number[];
   x: any;

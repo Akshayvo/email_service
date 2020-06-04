@@ -8,7 +8,7 @@ export const environment = {
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Crows Run Self Storage - Production',
+  appId: '24 Seven Storage - Staging',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // APIKey: `dzJ0MFcwSjgqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 20085 crowns-run

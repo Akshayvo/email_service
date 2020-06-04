@@ -5,6 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, blurb} from '../data/home';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-home',
@@ -23,20 +24,25 @@ export class HomeComponent implements OnInit {
   gettingStarted: any;
   feature: any;
   currentActive: any = 'HOME';
+  imagetype: any;
+  imageBaseUrl: any;
 
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private uaParserService: UaParserService,
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Are you looking for affordable self storage units in Conway, PA? Between our reasonable rates, 
-                wide selection, and awesome service, we have you covered!`
+      content: `24 Seven Storage offers convenient 24/7 access to your belongings,
+      online payments and a variety of unit sizes for all of your self storage needs.`
     });
-    this.titleService.setTitle('Affordable Storage Units in Conway | Crows Run Self Storage');
+    this.titleService.setTitle('24 Hour Access Self Storage in Virginia Beach | 24 Seven Storage');
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   public navigate(location: any) {
@@ -71,6 +77,10 @@ export class HomeComponent implements OnInit {
   }
   public fetchFeature () {
     this.feature = feature;
+  }
+
+  public getImageUrl(imageName: string) {
+    return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 
 }

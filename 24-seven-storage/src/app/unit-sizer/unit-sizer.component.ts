@@ -19,14 +19,14 @@ export class UnitSizerComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our helpful unit sizer chart to help figure out what will fit into your self storage unit! `
+      content: `If you're having trouble visualizing what will fit in any given unit, check out our unit sizer page for help! `
     });
-    this.titleService.setTitle(`Unit Sizer | Crows Run Self Storage`);
+    this.titleService.setTitle(`Unit Sizer  | 24 Seven Storage `);
   }
 
   ngOnInit() {
     this.i = 0;
-    this.h = 4;
+    this.h = 7;
     this.j = this.i + 1;
     this.fetchUnitSizer();
     window.scrollTo(0, 0);
@@ -44,7 +44,7 @@ export class UnitSizerComponent implements OnInit {
     this.j = this.i;
     this.i = this.h;
     if ( this.h === 0 ) {
-      this.h = 4;
+      this.h = 7;
     } else {
       this.h = this.h - 1;
     }
@@ -53,7 +53,7 @@ export class UnitSizerComponent implements OnInit {
   public moveRight() {
     this.h = this.i;
     this.i = this.j;
-    if ( this.j === 4 ) {
+    if ( this.j === 7 ) {
       this.j = 0;
     } else {
     this.j = this.j + 1;
@@ -63,9 +63,9 @@ export class UnitSizerComponent implements OnInit {
   public activeUnit(unitId: number) {
     this.i = unitId;
     if ( this.i === 0 ) {
-      this.h = 4;
+      this.h = 7;
       this.j = this.i + 1;
-    } else if ( this.i === 4 ) {
+    } else if ( this.i === 7 ) {
       this.j = 0;
       this.h = this.i - 1;
     } else {

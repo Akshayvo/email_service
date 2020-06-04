@@ -22,8 +22,8 @@ a {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
   button {
-    color: #707070;
-    border-color: #707070;
+    color: #000;
+    border-color: #000;
   }
 
   button:focus {
@@ -38,7 +38,7 @@ a {
 }
 
 .nav-link:hover {
-  color: $primary;
+  color: $secondary;
 }
 
 .router-link-active {
@@ -47,8 +47,8 @@ a {
 }
 
 .nav-link-active {
-  color: $primary;
-  border-bottom: 5px solid $primary;
+  color: $secondary;
+  border-bottom: 5px solid $secondary;
 }
 
 .display {
@@ -67,6 +67,13 @@ a {
     li {
       width: fit-content;
     }
+  }
+  .display {
+    display: none
+  }
+  .navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 }
 

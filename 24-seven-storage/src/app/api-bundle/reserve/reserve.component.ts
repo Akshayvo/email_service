@@ -15,9 +15,9 @@ export class ReserveComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to fill out our easy reservation form, and one of our friendly managers will be in touch!`
+      content: `Ready to reserve your unit at 24 Seven Storage ? Click here to begin storing with Virginia Beach's premier self storage facility!`
     });
-    this.titleService.setTitle('Reserve Unit | Crows Run Self Storage');
+    this.titleService.setTitle('Reserve Your Unit | 24 Seven Storage');
   }
 
   ngOnInit() {
