@@ -9,3 +9,5 @@ export const storageTipsHeading = `Storage Tips`;
 export const unitSizerHeading = `Unit Sizer`;
 
 export const contactHeading = `Contact Self Storage of Wis Dells`;
+
+export const faqHeading = `Frequently Asked Questions`;

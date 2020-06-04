@@ -23,3 +23,6 @@ export const unitSizerPageContent = `Are you not sure what size unit you require
 
 export const contactPageTitle = `Contact Us | Self Storage of Wis Dells`;
 export const contactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
+
+export const faqPageTitle = `Frequently Asked Questions | Self Storage of Wis Dells`;
+export const faqPagecontent = ``;

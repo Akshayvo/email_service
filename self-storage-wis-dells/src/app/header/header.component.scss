@@ -9,6 +9,10 @@ a {
   a {
     color: white;
   }
+
+  img {
+    width: 160px;
+  }
 }
 
 img {
@@ -51,7 +55,6 @@ img {
   .nav-link {
     color: #000;
     font-weight: 600;
-    padding: 14px;
   }
 
   .nav-link:hover {
@@ -90,10 +93,10 @@ img {
   .nav-item {
     padding-left: 0.1rem !important;
     padding-right: 0.1rem !important;
-  
+
   .nav-link {
     font-size: 0.8rem;
-    padding: 16px
+    // padding: 16px
     }
   }
 }
@@ -123,7 +126,8 @@ img {
     height: 200px;
     overflow-y: scroll;
   }
-  .navbar-brand{
+
+  .navbar-brand {
     padding-bottom: 10px;
     padding-top: 10px;
   }

@@ -50,6 +50,8 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { PhotosComponent } from './photos/photos.component';
+import { FaqComponent } from './faq/faq.component';
+import { ScriptHackComponent } from './script-hack/script-hack.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -81,6 +83,8 @@ import { PhotosComponent } from './photos/photos.component';
     PhotosComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
+    FaqComponent,
+    ScriptHackComponent,
   ],
   imports: [
     CommonModule,

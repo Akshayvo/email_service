@@ -19,6 +19,14 @@ export const storageTip = [
     },
     {
         data: `Place heavier items in the bottom of the box and lighter items on top.`
+    },
+    {
+        data: `Moisture sensitive items such as cardboard boxes or upholstered furniture should be
+        stored on pallets or 2x4” blocks to raise them off the floor. Weather fluctuations may occasionally
+        cause condensation or dampness on the concrete floors of any storage unit or garage.`
+    },
+    {
+        data: `Do not store any food, bird seed or grass seed in your storage unit.`
     }
 ];
 

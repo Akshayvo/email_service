@@ -240,7 +240,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
    this.cardType = this.getCardType(number.target.value);
    const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.cardType);
    // tslint:disable-next-line: max-line-length
-   const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
+  //  const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
+  // tslint:disable-next-line:max-line-length
+  const cardTypeId = (this.lstPayTypes && this.lstPayTypes.length > 0 && (index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
    this.paytypeid =  cardTypeId;
    this.surchargeService.getIdPaytype(this.paytypeid);
    this.payRentForm.patchValue({
@@ -288,6 +290,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
+    if (this.lstPayTypes && this.lstPayTypes.length > 0) {
     this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.payRentForm.patchValue({
@@ -297,7 +300,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         }
       }
     });
-
+  }
 
     if ( this.showInput) {
       if (this.customOtherValue) {

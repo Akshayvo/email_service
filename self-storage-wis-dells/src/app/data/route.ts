@@ -23,6 +23,7 @@ import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.compo
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
+import { FaqComponent } from '../faq/faq.component';
 
 
  export const apiRoutes = [
@@ -71,6 +72,7 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
       ]
     },
     { path: 'forgot-password', component: ForgotPasswordComponent },
+    { path: 'frequently-asked-questions', component: FaqComponent },
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'
