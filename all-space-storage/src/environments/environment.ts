@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'all-space-storage',
+  appId: 'all-space-storage - Production',
   VERSION: require('../../package.json').version
 };
 

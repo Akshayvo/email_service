@@ -189,11 +189,11 @@ export const contactsLocation5 = [
 export const hoursLocation5 = [
     {
         label: 'Mon-Fri: ',
-        data: '9am-5pm',
+        data: '9:00AM-5:00PM',
     },
     {
         label: 'Saturday: ',
-        data: '9am-4pm',
+        data: '10:00AM-4:00PM',
     },
     {
         label: 'Sunday: ',
