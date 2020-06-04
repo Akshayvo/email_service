@@ -9,7 +9,8 @@ export const contact = [
         id: 1,
         redirect: 'mailto:fortressministorage@gmail.com',
         label: 'Email:',
-        data: 'fortressministorage@gmail.com',
+        // data: 'fortressministorage@gmail.com',
+        data: 'sagar.g@codeparva.in',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {

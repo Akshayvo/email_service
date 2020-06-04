@@ -3,7 +3,7 @@ export const environment = {
   type: 0,  // { API: 0, iframe: 1 }
   errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Fortress',
+  appId: 'Fortress - Production',
   VERSION: require('../../package.json').version,
   websiteUrl: 'https://fortressministorage.com',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
