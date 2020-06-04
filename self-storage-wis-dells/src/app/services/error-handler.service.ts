@@ -71,13 +71,13 @@ export class ErrorHandlerService implements ErrorHandler {
       type: error.type,
       referrer: document && document.referrer,
     } : StackTraceParser.parse(error);
-    const currenLocation = { url: router.url, navigationLogs: this.navigation.getHistoryLog() };
+    // const currenLocation = { url: router.url, navigationLogs: this.navigation.getHistoryLog() };
     // const previousLocation = window.history.back();
 
 
     const errorWithContext = {
       name, appId, version, time, id, url, status, message, stack,
-      currenLocation,
+      // currenLocation,
       // previousLocation
     };
     return errorWithContext;

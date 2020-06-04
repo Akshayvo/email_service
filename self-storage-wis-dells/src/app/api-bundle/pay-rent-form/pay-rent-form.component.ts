@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy, Input, SimpleChange, SimpleChanges,  Output, EventEmitter} from '@angular/core';
-import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 
 import { TenantInfoService } from '../services/tenant-info.service';
@@ -142,7 +142,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         PayType: this.formBuilder.group({
           PayTypeDescription: ['', Validators.required],
           PayTypeID: [''],
-        })
+        }),
       }),
     });
 
@@ -498,6 +498,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           }
           this.showSuccessPayment = true;
         } else {
+          this.makePaymentForUnit = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
 
@@ -628,6 +629,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             if (this.navigateToReserve) {
               if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
                 // this.router.navigate(['/view-rates/payReservationCharges']);
+                this.makePayment(this.payRentForm.value);
               } else {
                 this.makeAReservation(this.MoveIn);
               }

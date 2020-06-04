@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray, AbstractControl, ValidatorFn } from '@angular/forms';
 import { FetchDataService } from '../services/fetch-data.service';
-import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
+import { UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
 import { option } from '../../data/view-rates';
@@ -21,9 +21,6 @@ import { DataSharingService } from '../services/data-sharing.service';
 })
 
 export class ReserveUnitFormComponent implements OnInit, OnDestroy {
-
-
-
   proRateAmount?: number;
   curStage: number;
   deposit?: number;
@@ -156,13 +153,28 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         Validators.pattern(
           '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
           )
-      ]],
+        ]],
         EmailAddress: ['', [Validators.required, Validators.email]],
         AddressLine1: ['', Validators.required],
         AddressLine2: [''],
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
+        // DriversLicense: ['', Validators.required],
+        // DriversLicenseExpDate: ['', Validators.required],
+        // DateOfBirth: ['', Validators.required],
+        // AlternateFirstName: ['', Validators.required],
+        // AlternateLastName: ['', Validators.required],
+        // AlternatePhone: ['', [Validators.required,
+        //   Validators.pattern(
+        //     '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
+        //     )
+        //   ]],
+        // AlternateAddressLine1: ['', Validators.required],
+        // AlternateAddressLine2: [''],
+        // AlternateCity: ['', Validators.required],
+        // AlternateState: ['', Validators.required],
+        // AlternateZIP: ['', Validators.required],
       }),
 
       lstUnitTypes: new FormArray([

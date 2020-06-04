@@ -16,6 +16,17 @@ export class ObjTenant {
   City: string;
   State: string;
   ZIP: string;
+  DriversLicense: string;
+  DriversLicenseExpDate: Date;
+  DateOfBirth: Date;
+  AlternateAddressLine1: string;
+  AlternateAddressLine2: string;
+  AlternateCity: string;
+  AlternateFirstName: string;
+  AlternateLastName: string;
+  AlternatePhone: string;
+  AlternateState: string;
+  AlternateZIP: string;
 
   constructor(
     FirstName: string,
@@ -26,7 +37,18 @@ export class ObjTenant {
     AddressLine2: string,
     City: string,
     State: string,
-    ZIP: string
+    ZIP: string,
+    DriversLicense: string,
+    DriversLicenseExpDate: Date,
+    DateOfBirth: Date,
+    AlternateAddressLine1: string,
+    AlternateAddressLine2: string,
+    AlternateCity: string,
+    AlternateFirstName: string,
+    AlternateLastName: string,
+    AlternatePhone: string,
+    AlternateState: string,
+    AlternateZIP: string,
   ) {
     this.FirstName = FirstName;
     this.LastName = LastName;
@@ -37,6 +59,17 @@ export class ObjTenant {
     this.City = City;
     this.State = State;
     this.ZIP = ZIP;
+    this.DriversLicense = DriversLicense;
+    this.DriversLicenseExpDate = DriversLicenseExpDate;
+    this.DateOfBirth = DateOfBirth;
+    this.AlternateAddressLine1 = AlternateAddressLine1;
+    this.AlternateAddressLine2 = AlternateAddressLine2;
+    this.AlternateCity = AlternateCity;
+    this.AlternateFirstName = AlternateFirstName;
+    this.AlternateLastName = AlternateLastName;
+    this.AlternatePhone = AlternatePhone;
+    this.AlternateState = AlternateState;
+    this.AlternateZIP = AlternateZIP;
   }
 }
 
