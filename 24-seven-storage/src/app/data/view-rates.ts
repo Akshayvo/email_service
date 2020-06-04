@@ -35,9 +35,9 @@ export const th = [
     // {
     //   data: `Move In`
     // },
-    // {
-    //   data: `Climate Control`
-    // },
+    {
+      data: `Climate Control`
+    },
   ];
 
   export const option =  [
