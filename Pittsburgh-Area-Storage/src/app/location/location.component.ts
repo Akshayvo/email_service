@@ -24,6 +24,7 @@ export class LocationComponent implements OnInit {
   iframeAdd: any;
   head: any;
   tabs: any;
+  specialRow: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -56,8 +57,7 @@ export class LocationComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/movin-on-storage')) {
         this.fetchDetailsLocation1();
-    } 
-     else  if (this.router.url.includes('/location/natrona-heights-self'))  {
+    } else  if (this.router.url.includes('/location/natrona-heights-self'))  {
       this.fetchDetailsLocation3();
     }
  }
@@ -78,9 +78,11 @@ export class LocationComponent implements OnInit {
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
       this.tabs = tabs1;
+      this.specialRow  = `Due to COVID-19 the office area will be closed to the public until further
+      notice.  We can be contacted by phone if you have any questions.  Sorry for any inconvenience this
+      might cause anyone.  Payments can still be made online, by mail or simply call. Your units
+      will still be available to you!`;
     }
-
-  
 
    public fetchDetailsLocation3() {
      this.name = headingLocation3;
@@ -88,5 +90,8 @@ export class LocationComponent implements OnInit {
      this.contacts = contactsLocation3;
      this.hours = hoursLocation3;
      this.tabs = tabs;
+     this.specialRow  = `Due to COVID-19, our temporary office hours are:  Monday, Wednesday, Friday
+     10:00AM - 2:00PM. Sorry for any inconvenience this might cause anyone. Payments can still be made
+     online, by mail or simply call. Your units will still be available to you!`;
    }
 }
