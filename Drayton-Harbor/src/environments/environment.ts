@@ -4,9 +4,16 @@
 
 export const environment = {
   production: false,
+  type: 0,  // { API: 0, iframe: 1 }
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Drayton-Harbor'
+  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
+  appId: 'Drayton-Harbor - Testing',
+  VERSION: require('../../package.json').version,
+  baseUrl: `https://simapi.syrasoft.com/1/api/`,
+  // APIKey: `dzJ0MFcwSjgqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 20085 crowns-run
+  APIKey: `dzJ0OVcwSjgqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 29083 drayton
+  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
 };
 
 /*
