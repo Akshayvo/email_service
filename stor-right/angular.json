@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "stor-right"
+  "defaultProject": "stor-right",
+  "cli": {
+    "analytics": "d37568f5-99b4-4890-b1ab-23921323bbe1"
+  }
 }

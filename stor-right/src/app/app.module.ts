@@ -53,8 +53,9 @@ import { PhotosComponent } from './photos/photos.component';
 import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
 import { ScriptHackComponent } from './script-hack/script-hack.component';
 import { RentSubComponent } from '../app/rent-sub/rent-sub.component';
-import { SignUpComponent } from '../app/sign-up/sign-up.component';
 import { TabsComponent } from '../app/tabs/tabs.component';
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -91,14 +92,15 @@ import { TabsComponent } from '../app/tabs/tabs.component';
     ConfirmationPageComponent,
     ScriptHackComponent,
     RentSubComponent,
-    SignUpComponent,
     TabsComponent,
+    AutoPayComponent,
+    SignUpComponent
   ],
   imports: [
     CommonModule,
     NgtUniversalModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
+    Angulartics2Module.forRoot(),
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,

@@ -1,0 +1,169 @@
+<div class="payRent">
+  <h2 class="pb-1">Sign Up For Automatic Payments</h2>
+  <div *ngIf="showSuccessStatus; else other"  class="go-to-home pt-4">
+    <div><strong><i>{{successMessage}}</i></strong></div>
+      <div class="py-3 d-flex align-items-center">
+        <a (click)="goBack()">Go Back</a>
+        <button type="button" *ngIf="tenantTokenExist" (click)="signOut(logOut)" class="btn btn-primary ml-3">LogOff</button>
+      </div>
+</div>
+  
+<ng-template #other>
+<form [formGroup]="autoPayForm" (ngSubmit)="onSubmit()" class="pt-3">
+  <strong ><i  *ngIf="makeAutoPayStatus">Processing {{progressMessage}}, please wait...</i></strong>
+  <!-- <strong><i *ngIf="showSuccessStatus">{{successMessage}}</i></strong> -->
+  <div
+    [class.loaderForPayment]="showloaderForPayment || showLoader"
+  >
+  </div>
+  <div formGroupName="objPayment" class="pt-3">
+
+    <div class="row">
+      <div class="col-md-6">
+        <div formGroupName="PayType" class="row">
+          <div  class="form-group col-lg-12">
+            <label for="lstPayTypes">Card Type*</label>&nbsp;
+            <select class="form-control" formControlName="PayTypeDescription" [id]="lstPayTypes?.PayTypeDescription"
+            (change)="selectChangeHandler($event)"
+            [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.PayType.controls.PayTypeDescription.errors }"
+            >
+              <option *ngFor="let lstPayType of lstPayTypes"
+              [value]="lstPayType?.PayTypeDescription"
+              [class.display-none]="lstPayType?.PayTypeID === -8"
+              >
+              <div *ngIf="lstPayType?.PayTypeID !== -8">
+                {{lstPayType.PayTypeDescription}}
+              </div>
+              </option>
+            </select>
+            <div *ngIf="submitted && f.objPayment.controls.PayType.controls.PayTypeDescription.errors" class="invalid-feedback">
+                <small class="form-text text-muted" *ngIf="f.objPayment.controls.PayType.controls.PayTypeDescription.errors.required">
+                  Please fill out this field
+                </small>
+            </div>
+          </div>
+          <div class="form-group">
+              <input type="hidden" formControlName="PayTypeID" [value]="PayTypeIDValue" />
+          </div>
+        </div>
+          <div class="form-group row">
+            <div class="col-lg-12">
+                <label>Cardholder's Name*</label>&nbsp;
+                <input type="text" class="form-control" formControlName="CCAccountName"
+                [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountName.errors }"
+              />
+              <div *ngIf="submitted && f.objPayment.controls.CCAccountName.errors" class="invalid-feedback">
+                <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountName.errors.required">
+                  Please fill out this field
+                </small>
+              </div>
+            </div>
+          </div>       
+        
+          <div class="row">
+            <div class="form-group col-lg-6">
+              <label>Credit Card Number*</label>&nbsp;
+              <input  class="form-control" type="text" formControlName="CCAccountNumber"  (keyup)="autoCardType($event)"
+              [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountNumber.errors }"
+              />
+              <div *ngIf="submitted && f.objPayment.controls.CCAccountNumber.errors" class="invalid-feedback">
+                  <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountNumber.errors.required">
+                    Please fill out this field
+                  </small>
+              </div>
+            </div>
+            <div class="form-group col-lg-6">
+              <label>Expiration Date*</label>&nbsp;
+                <div  class="display-expiration-date">
+                  <div class="">
+                    <select  class="form-control custom-style " formControlName="CCExpirationMonth" [id]="month?.id"
+                    [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCExpirationMonth.errors }">
+  
+                        <option *ngFor="let month of month"
+                        [value]="month?.id"
+                        >
+                        {{month.label}}
+                        </option>
+                    </select>
+                    <div *ngIf="submitted && f.objPayment.controls.CCExpirationMonth.errors" class="invalid-feedback">
+                        <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCExpirationMonth.errors.required">
+                          Please fill out this field
+                        </small>
+                    </div>
+                  </div>
+                  &nbsp;
+                  <div class="">
+                    <select class="form-control custom-style" formControlName="CCExpirationYear" [id]="year"
+                    [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCExpirationYear.errors }">
+                    >
+                        <option *ngFor="let year of year"
+                        [value]="year.id"
+                        >
+                        {{year.label}}
+                        </option>
+                    </select>
+                    <div *ngIf="submitted && f.objPayment.controls.CCExpirationYear.errors" class="invalid-feedback">
+                        <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCExpirationYear.errors.required">
+                          Please fill out this field
+                        </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+
+          <div class="col-md-6">
+            <div class="row">
+              <div class="form-group col-lg-12">
+                <label>CVV2</label>&nbsp;
+                <input type="text" class="form-control" formControlName="CCAccountCVV2" />
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="form-group col-lg-12">
+                <label>Cardholder's Address*</label>&nbsp;
+                <input type="text" class="form-control" formControlName="CCAccountBillingAddress"
+                [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountBillingAddress.errors }"
+                />
+                <div *ngIf="submitted && f.objPayment.controls.CCAccountBillingAddress.errors" class="invalid-feedback">
+                    <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountBillingAddress.errors.required">
+                      Please fill out this field
+                    </small>
+                </div>
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="form-group col-lg-12">
+                <label>Zip Code*</label>&nbsp;
+                <input type="text" class="form-control" formControlName="CCAccountZIP"
+                [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountZIP.errors }"
+                />
+                <div *ngIf="submitted && f.objPayment.controls.CCAccountZIP.errors" class="invalid-feedback">
+                    <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountZIP.errors.required">
+                      Please fill out this field
+                    </small>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="form-group checkbox-style col-lg-6">
+              <input type="checkbox" formControlName="SignUpForAutoPay" (change)="toggleEvent()"  [checked]="IsAutoPaymentsEnabled" /> &nbsp;
+              <label>Check box, and click Update Autopay Status to turn autopay on. Unchecked box and click Update Autopay Status to turn autopay off.</label>
+            </div>
+        </div>
+      </div>
+      <div class="text-right">
+        <button type="submit"  class="btn btn-primary col-lg-3 col-sm-12" [disabled]="makeAutoPayStatus || (count === 0)">
+          Update Autopay Status
+        </button>
+        <button type="button" *ngIf="tenantTokenExist" [disabled]="showLoader"  
+        (click)="signOut(logOut)" class="btn btn-primary col-lg-3 col-sm-12 ml-lg-4 ml-sm-0 mt-lg-0 mt-sm-2 mt-2">LogOff</button>
+      </div>
+    </form>
+  </ng-template>
+</div>
+  

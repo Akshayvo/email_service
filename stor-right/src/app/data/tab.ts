@@ -8,7 +8,7 @@ export const tabs = [
   {
     id: '2',
     name: 'Sign Up For Auto Pay',
-    path: './sign-up',
+    path: './sign-up/login',
     active: false,
   },
 ];

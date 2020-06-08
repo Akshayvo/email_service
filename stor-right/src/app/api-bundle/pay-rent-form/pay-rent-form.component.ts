@@ -1,7 +1,5 @@
 import { Component, OnInit, OnDestroy, Input, SimpleChange, SimpleChanges,  Output, EventEmitter} from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
-
-
 import { TenantInfoService } from '../services/tenant-info.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { PaymentService } from '../services/payment.service';
@@ -50,7 +48,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   showInput = false;
   submitted = false;
   showloaderForPayment = false;
-  toggleSignUp = false;
+  // toggleSignUp = false;
   IsAutoPaymentsEnabled = false;
   makePaymentForUnit = false;
   TotalReserveAmount: number;
@@ -432,9 +430,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     );
   }
 
-  toggleEvent(e: any) {
-    this.toggleSignUp = true;
-  }
+  // toggleEvent(e: any) {
+  //   this.toggleSignUp = true;
+  // }
 
   getSurCharge() {
     this.surcharge = 0;
@@ -461,13 +459,13 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   makePayment(paymentData: any) {
-    if (this.toggleSignUp === true) {
-      if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
-      this.signUpAutoPay(this.signUp);
-    } else {
-      this.OptionOutOfAutoPay(this.signUp);
-    }
-    }
+    // if (this.toggleSignUp === true) {
+    //   if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
+    //   this.signUpAutoPay(this.signUp);
+    // } else {
+    //   this.OptionOutOfAutoPay(this.signUp);
+    // }
+    // }
 
     this.invalidPayment = null,
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
@@ -512,19 +510,19 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     );
   }
 
-  signUpAutoPay(signUp: any) {
-  this.signUpAutoPaySubscribe$ =  this.tenantInfoService.signUpAutoPay(signUp)
-      .subscribe(result => {
-      }, (err) => {
-      });
-  }
+  // signUpAutoPay(signUp: any) {
+  // this.signUpAutoPaySubscribe$ =  this.tenantInfoService.signUpAutoPay(signUp)
+  //     .subscribe(result => {
+  //     }, (err) => {
+  //     });
+  // }
 
-  OptionOutOfAutoPay(signUp: any) {
-   this.OptionOutOfAutoPaySubscribe$ = this.tenantInfoService.OptionOutOfAutoPay(signUp)
-      .subscribe(result => {
-      }, (err) => {
-      });
-  }
+  // OptionOutOfAutoPay(signUp: any) {
+  //  this.OptionOutOfAutoPaySubscribe$ = this.tenantInfoService.OptionOutOfAutoPay(signUp)
+  //     .subscribe(result => {
+  //     }, (err) => {
+  //     });
+  // }
 
   makeAReservation(strConfirmation: any) {
   this.reservationInProgress = true;

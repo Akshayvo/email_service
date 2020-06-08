@@ -22,8 +22,6 @@ import { DataSharingService } from '../services/data-sharing.service';
 
 export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
-
-
   proRateAmount?: number;
   curStage: number;
   deposit?: number;

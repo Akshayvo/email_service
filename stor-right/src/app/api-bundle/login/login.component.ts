@@ -70,7 +70,11 @@ export class LoginComponent implements OnInit, OnDestroy {
         if (this.dataSharingService.changePassword === true) {
           this.router.navigate(['/pay-rent/rent-sub/changePassword']);
         } else {
-          this.router.navigate(['/pay-rent/rent-sub/payment']);
+          if (this.router.url.includes('rent-sub')) {
+            this.router.navigate(['/pay-rent/rent-sub/payment']);
+          } else {
+            this.router.navigate(['/pay-rent/sign-up/auto-pay']);
+          }
         }
        }
     }
@@ -90,7 +94,6 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.loginDetail = loginDetail;
   }
 
-  
   public fetchContactDetails() {
     this.contact = contact;
   }
@@ -112,7 +115,13 @@ export class LoginComponent implements OnInit, OnDestroy {
           this.authData = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
           // this.dataSharingService.strTenantToken = this.authData;
-          this.router.navigate(['/pay-rent/rent-sub/payment']);
+          if (this.router.url.includes('rent-sub')) {
+            this.router.navigate(['/pay-rent/rent-sub/payment']);
+          } else {
+            if (this.router.url.includes('sign-up')) {
+              this.router.navigate(['/pay-rent/sign-up/auto-pay']);
+            }
+          }
         }, (err) => {
           this.credentialsInvalid = true;
           this.showLoader = false;
