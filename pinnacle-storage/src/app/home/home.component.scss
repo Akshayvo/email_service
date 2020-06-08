@@ -1,5 +1,10 @@
 @import "../../styles.scss";
 
+.specialRow {
+  background-color: $primary;
+  color: white;
+}
+
 .carousel-indicators li {
   background-color: black;
   border-radius: 50%;
@@ -54,6 +59,8 @@
 
 .jumbotron-top {
   height: 80vh;
+  display: flex;
+  flex-direction: column-reverse;
 
   .jumbotron {
     background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Pinnacle_Storage/pinnacle-self-storage-jumbotron.jpg");
@@ -96,7 +103,7 @@
     .jumbotron-skew-text {
       width: 24%;
       position: absolute;
-      top: 35%;
+      top: 33%;
       color: $fontColor;
     }
   }
@@ -112,7 +119,7 @@
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
-        width: 425px;
+        width: 524px;
       }
     }
   }
@@ -230,7 +237,7 @@
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 830px) and (min-height: 641px) {
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 830px) and (min-height: 684px) {
   .jumbotron-bottom {
     display: flex;
     align-items: center;
@@ -243,7 +250,7 @@
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 640px) and (min-height: 481px) {
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 683px) and (min-height: 549px) {
   .jumbotron-bottom {
     display: flex;
     align-items: center;
@@ -273,7 +280,7 @@
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 480px) {
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 548px) {
   .disp {
     display: none;
   }
@@ -366,7 +373,7 @@
 }
 
 
-@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 640px) and (min-height: 481px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 640px) and (min-height: 531px) {
   .jumbotron-bottom {
     display: flex;
     align-items: center;
@@ -401,7 +408,7 @@
 }
 
 
-@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 480px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 530px) {
   .disp {
     display: none;
   }
@@ -486,7 +493,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 700px) and (min-height: 501px) {
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 700px) and (min-height: 561px) {
   .jumbotron-top {
     .jumbotron {
       .jumbotron-skew-text {
@@ -508,7 +515,7 @@
 }
 
 
-@media only screen and (max-width: 767px) and (min-width: 601px)  and (max-height: 500px) {
+@media only screen and (max-width: 767px) and (min-width: 601px)  and (max-height: 560px) {
   .disp {
     display: none;
   }

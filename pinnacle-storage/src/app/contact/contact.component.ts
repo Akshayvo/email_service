@@ -4,7 +4,7 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contact, hours } from '../data/contact';
-
+import { specialRow } from '../data/home';
 
 @Component({
   selector: 'app-contact',
@@ -27,7 +27,7 @@ export class ContactComponent implements OnInit {
   submitted = false;
   mailSent = false;
   subject: string;
-
+  specialRow: any;
   constructor(
     @Inject(WINDOW) private window: Window,
     private emailService: EmailService,
@@ -64,6 +64,7 @@ export class ContactComponent implements OnInit {
 
   public fetchHours() {
     this.hours = hours;
+    this.specialRow = specialRow;
   }
 
   onSubmit() {

@@ -3,6 +3,10 @@
   <!--Jumbotron Container Starts Here-->
   <div class="jumbotron-container">
     <div class="jumbotron-top">
+      <div *ngFor="let specialRow of specialRow" class="specialRow text-center">
+        <h2 class="pt-3 pb-2"><strong>{{specialRow.h2}}</strong></h2>
+        <p>{{specialRow.para}}</p>
+      </div>
       <div class="jumbotron px-0 m-0">
         <div class="bg-translucent jumbotron-skew-style">
         </div>
@@ -39,6 +43,7 @@
     </div>
   </div>
   <!--Jumbotron Ends Here-->
+
 
   <!--Map and Contact Section-->
   <div class="bg-light py-5">

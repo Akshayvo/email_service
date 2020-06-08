@@ -80,3 +80,10 @@ export const blurb = [
         you need to make your stay with us a breeze! `,
     }
 ];
+
+export const specialRow = [
+    {
+        h2: `Grand Opening Special`,
+        para: `50% Off Your First Month + A Free Lock!`
+    }
+]

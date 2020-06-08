@@ -28,11 +28,11 @@ export const hours = [
     },
     {
         label: 'Saturday: ',
-        data: '9:00AM to 4:00PM'
+        data: '9:00AM to 1:00PM'
     },
     {
         label: 'Sunday: ',
-        data: '10:00AM to 2:00PM'
+        data: 'By Appointment Only'
     },
     {
         label: 'Access Hours: ',
