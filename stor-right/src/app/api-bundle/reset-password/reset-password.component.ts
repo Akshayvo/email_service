@@ -45,7 +45,7 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
   }
 
   goToLogin() {
-    this.router.navigate(['/pay-rent/login']);
+    this.router.navigate(['/pay-rent/rent-sub/login']);
   }
 
   resetPassword(data: any): void {

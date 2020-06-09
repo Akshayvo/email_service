@@ -16,7 +16,7 @@
     [class.loaderForPayment]="showloaderForPayment || showLoader"
   >
   </div>
-  <div formGroupName="objPayment" class="pt-3">
+  <div formGroupName="objTenant" class="pt-3">
 
     <div class="row">
       <div class="col-md-6">
@@ -25,7 +25,7 @@
             <label for="lstPayTypes">Card Type*</label>&nbsp;
             <select class="form-control" formControlName="PayTypeDescription" [id]="lstPayTypes?.PayTypeDescription"
             (change)="selectChangeHandler($event)"
-            [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.PayType.controls.PayTypeDescription.errors }"
+            [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.PayType.controls.PayTypeDescription.errors }"
             >
               <option *ngFor="let lstPayType of lstPayTypes"
               [value]="lstPayType?.PayTypeDescription"
@@ -36,8 +36,8 @@
               </div>
               </option>
             </select>
-            <div *ngIf="submitted && f.objPayment.controls.PayType.controls.PayTypeDescription.errors" class="invalid-feedback">
-                <small class="form-text text-muted" *ngIf="f.objPayment.controls.PayType.controls.PayTypeDescription.errors.required">
+            <div *ngIf="submitted && f.objTenant.controls.PayType.controls.PayTypeDescription.errors" class="invalid-feedback">
+                <small class="form-text text-muted" *ngIf="f.objTenant.controls.PayType.controls.PayTypeDescription.errors.required">
                   Please fill out this field
                 </small>
             </div>
@@ -50,10 +50,10 @@
             <div class="col-lg-12">
                 <label>Cardholder's Name*</label>&nbsp;
                 <input type="text" class="form-control" formControlName="CCAccountName"
-                [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountName.errors }"
+                [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.CCAccountName.errors }"
               />
-              <div *ngIf="submitted && f.objPayment.controls.CCAccountName.errors" class="invalid-feedback">
-                <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountName.errors.required">
+              <div *ngIf="submitted && f.objTenant.controls.CCAccountName.errors" class="invalid-feedback">
+                <small class="form-text text-muted" *ngIf="f.objTenant.controls.CCAccountName.errors.required">
                   Please fill out this field
                 </small>
               </div>
@@ -64,10 +64,10 @@
             <div class="form-group col-lg-6">
               <label>Credit Card Number*</label>&nbsp;
               <input  class="form-control" type="text" formControlName="CCAccountNumber"  (keyup)="autoCardType($event)"
-              [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountNumber.errors }"
+              [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.CCAccountNumber.errors }"
               />
-              <div *ngIf="submitted && f.objPayment.controls.CCAccountNumber.errors" class="invalid-feedback">
-                  <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountNumber.errors.required">
+              <div *ngIf="submitted && f.objTenant.controls.CCAccountNumber.errors" class="invalid-feedback">
+                  <small class="form-text text-muted" *ngIf="f.objTenant.controls.CCAccountNumber.errors.required">
                     Please fill out this field
                   </small>
               </div>
@@ -77,7 +77,7 @@
                 <div  class="display-expiration-date">
                   <div class="">
                     <select  class="form-control custom-style " formControlName="CCExpirationMonth" [id]="month?.id"
-                    [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCExpirationMonth.errors }">
+                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.CCExpirationMonth.errors }">
   
                         <option *ngFor="let month of month"
                         [value]="month?.id"
@@ -85,8 +85,8 @@
                         {{month.label}}
                         </option>
                     </select>
-                    <div *ngIf="submitted && f.objPayment.controls.CCExpirationMonth.errors" class="invalid-feedback">
-                        <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCExpirationMonth.errors.required">
+                    <div *ngIf="submitted && f.objTenant.controls.CCExpirationMonth.errors" class="invalid-feedback">
+                        <small class="form-text text-muted" *ngIf="f.objTenant.controls.CCExpirationMonth.errors.required">
                           Please fill out this field
                         </small>
                     </div>
@@ -94,7 +94,7 @@
                   &nbsp;
                   <div class="">
                     <select class="form-control custom-style" formControlName="CCExpirationYear" [id]="year"
-                    [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCExpirationYear.errors }">
+                    [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.CCExpirationYear.errors }">
                     >
                         <option *ngFor="let year of year"
                         [value]="year.id"
@@ -102,8 +102,8 @@
                         {{year.label}}
                         </option>
                     </select>
-                    <div *ngIf="submitted && f.objPayment.controls.CCExpirationYear.errors" class="invalid-feedback">
-                        <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCExpirationYear.errors.required">
+                    <div *ngIf="submitted && f.objTenant.controls.CCExpirationYear.errors" class="invalid-feedback">
+                        <small class="form-text text-muted" *ngIf="f.objTenant.controls.CCExpirationYear.errors.required">
                           Please fill out this field
                         </small>
                     </div>
@@ -126,10 +126,10 @@
               <div class="form-group col-lg-12">
                 <label>Cardholder's Address*</label>&nbsp;
                 <input type="text" class="form-control" formControlName="CCAccountBillingAddress"
-                [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountBillingAddress.errors }"
+                [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.CCAccountBillingAddress.errors }"
                 />
-                <div *ngIf="submitted && f.objPayment.controls.CCAccountBillingAddress.errors" class="invalid-feedback">
-                    <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountBillingAddress.errors.required">
+                <div *ngIf="submitted && f.objTenant.controls.CCAccountBillingAddress.errors" class="invalid-feedback">
+                    <small class="form-text text-muted" *ngIf="f.objTenant.controls.CCAccountBillingAddress.errors.required">
                       Please fill out this field
                     </small>
                 </div>
@@ -140,10 +140,10 @@
               <div class="form-group col-lg-12">
                 <label>Zip Code*</label>&nbsp;
                 <input type="text" class="form-control" formControlName="CCAccountZIP"
-                [ngClass]="{ 'is-invalid': submitted && f.objPayment.controls.CCAccountZIP.errors }"
+                [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.CCAccountZIP.errors }"
                 />
-                <div *ngIf="submitted && f.objPayment.controls.CCAccountZIP.errors" class="invalid-feedback">
-                    <small class="form-text text-muted" *ngIf="f.objPayment.controls.CCAccountZIP.errors.required">
+                <div *ngIf="submitted && f.objTenant.controls.CCAccountZIP.errors" class="invalid-feedback">
+                    <small class="form-text text-muted" *ngIf="f.objTenant.controls.CCAccountZIP.errors.required">
                       Please fill out this field
                     </small>
                 </div>

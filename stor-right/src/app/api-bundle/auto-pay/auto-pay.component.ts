@@ -3,8 +3,8 @@ import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { SignOutService } from '../services/sign-out.service';
-import { LstPayTypes, PayTypes, PayTypeForResult, ObjPayment } from '../models/payment';
-import { UnpaidAR } from '../models/tenant';
+import { LstPayTypes, PayTypes, PayTypeForResult, } from '../models/payment';
+import { UnpaidAR, ObjTenant} from '../models/tenant';
 import { month } from '../../data/date';
 import { Router } from '@angular/router';
 
@@ -19,6 +19,7 @@ import { SurchargeService } from '../services/surcharge.service';
 })
 export class AutoPayComponent implements OnInit, OnDestroy {
 
+  objTenant: ObjTenant;
   showPaymentForReserve: boolean;
   showPaymentForMoveIn: boolean;
   balance: number;
@@ -112,7 +113,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
 
   ) {
     this.autoPayForm = this.formBuilder.group({
-      objPayment: this.formBuilder.group({
+      objTenant: this.formBuilder.group({
         CCAccountNumber: ['', Validators.required],
         CCAccountName: ['', Validators.required],
         CCExpirationMonth: ['', Validators.required],
@@ -175,7 +176,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
    this.paytypeid =  cardTypeId;
    this.surchargeService.getIdPaytype(this.paytypeid);
    this.autoPayForm.patchValue({
-     objPayment: {
+     objTenant: {
        PayType: {
          PayTypeDescription: this.cardType,
          PayTypeID: cardTypeId,
@@ -220,7 +221,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.autoPayForm.patchValue({
-      objPayment: {
+      objTenant: {
         PayType: {
           PayTypeID: this.PayTypeIDValue,
         }
@@ -251,7 +252,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
             this.paytypeid =  defaultCardPayTypeId;
             this.surchargeService.getIdPaytype(this.paytypeid);
             this.autoPayForm.patchValue({
-              objPayment: {
+              objTenant: {
                 PayType: {
                   PayTypeDescription: this.defaultCardType,
                   PayTypeID: defaultCardPayTypeId,
@@ -261,7 +262,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
           }
 
           this.autoPayForm.patchValue({
-            objPayment: {
+            objTenant: {
               CCAccountNumber: Tenant.CCNumber,
               CCAccountName: Tenant.CCBillingAccountName,
               CCExpirationMonth: Tenant.CCExpirationMonth,
@@ -302,7 +303,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
           this.paytypeid =  this.lstPayTypes[1].PayTypeID;
           this.surchargeService.getIdPaytype(defaultPayTypeID);
           this.autoPayForm.patchValue({
-            objPayment: {
+            objTenant: {
               PayType: {
                 PayTypeDescription: defaultDescription,
                 PayTypeID: defaultPayTypeID,
@@ -370,8 +371,8 @@ export class AutoPayComponent implements OnInit, OnDestroy {
 
   autoPayStatus() {
     if (this.toggleSignUp === true) {
-      if (this.autoPayForm.value.objPayment.SignUpForAutoPay === true) {
-      this.signUpAutoPay(this.signUp);
+      if (this.autoPayForm.value.objTenant.SignUpForAutoPay === true) {
+      this.signUpAutoPay(this.autoPayForm.value);
       } else {
         this.OptionOutOfAutoPay(this.signUp);
       }

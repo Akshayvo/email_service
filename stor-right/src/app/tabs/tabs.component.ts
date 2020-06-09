@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input  } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-tabs',
@@ -12,6 +12,7 @@ export class TabsComponent implements OnInit {
   @Input() currentActiveTab: any;
   placeName: string;
   selectedTab: any;
+  link: string;
   private sub: any;
   constructor(
     private route: ActivatedRoute,
@@ -20,6 +21,7 @@ export class TabsComponent implements OnInit {
     ngOnInit() {
       this.fetchTabs();
       this.fetchPlace();
+      this.link = this.router.url;
       }
 
     public fetchPlace() {
@@ -28,10 +30,5 @@ export class TabsComponent implements OnInit {
 
     public fetchTabs() {
       this.tabData = this.tabs;
-      this.sub = this.route.queryParams.subscribe(params => {
-        this.name = params['name'],
-        this.currentActiveTab = params['currentTab'];
-        this.selectedTab = this.currentActiveTab;
-      });
     }
 }

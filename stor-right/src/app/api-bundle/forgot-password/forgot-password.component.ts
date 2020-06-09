@@ -39,7 +39,7 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
   get f() { return this.forgotPasswordForm.controls; }
 
   goBack() {
-    this.router.navigate(['pay-rent/login']);
+    this.router.navigate(['pay-rent/rent-sub/login']);
   }
 
   forgotPassword(data: any): void {

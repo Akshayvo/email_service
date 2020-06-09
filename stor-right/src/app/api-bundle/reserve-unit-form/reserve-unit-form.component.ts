@@ -22,6 +22,8 @@ import { DataSharingService } from '../services/data-sharing.service';
 
 export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
+
+
   proRateAmount?: number;
   curStage: number;
   deposit?: number;
@@ -258,9 +260,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       }])
     });
   }
-    public fetchUSState() {
+
+  public fetchUSState() {
     this.option = option;
-    }
+  }
 
   public navigate(location: any) {
     this.router.navigate([location]);
@@ -287,8 +290,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.router.navigate([location]);
   }
 
-  selectionChanged(event: any) {
-  }
 
   selectInsuranceChoice(event: any) {
     const indexValue = event.target.value;
@@ -296,9 +297,19 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[index].InsuranceChoiceID;
     this.premium = this.LstInsuranceChoices[index].Premium;
     console.log(indexValue, index, this.dataSharingService.insuranceChoiceId);
-    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId);
+    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
   }
 
+
+  changeRate(event: any) {
+    console.log('change rate according to period', event.target.value);
+    const indexValue = event.target.value;
+    const index = this.LstRentalPeriods.findIndex(x => x.PeriodDescription === indexValue);
+    this.dataSharingService.periodID = this.LstRentalPeriods[index].PeriodID;
+    console.log('indexValue', indexValue, 'index', index, 'periodID', this.dataSharingService.periodID);
+
+    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+  }
 
   selectChangeHandler (event: any) {
     const indexValue  = event.target.value;
@@ -320,19 +331,18 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.dataSharingService.LstUnitTypes.UnitTypeID = this.unitTypeId;
 
     if (this.navigateToMoveIn) {
-      this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId);
+      // tslint:disable-next-line:max-line-length
+      this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
     }
 }
 
-changeRate(event: any) {
-  console.log('change rate according to period', event);
-}
 
 
-getMoveInCharges(intUnitTypeID: any, intInsuranceID: number) {
+getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number) {
   this.moveInService.getMoveInCharges({
     intUnitTypeID,
-    intInsuranceID
+    intInsuranceID,
+    intPeriodID
   }).subscribe(result => {
     const {objCharges: {
       ProrateAmt = 0,
@@ -448,7 +458,8 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number) {
       this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
       this.UnitTypeID = unitTypesResponse.lstUnitTypes[0].UnitTypeID;
       if (this.navigateToMoveIn) {
-        this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId);
+        // tslint:disable-next-line:max-line-length
+        this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
       }
 
 
@@ -488,6 +499,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number) {
       .subscribe(rentalPeriodResponse => {
         this.LstRentalPeriods = rentalPeriodResponse.lstRentalPeriods;
         const defaultPeriodDescription = rentalPeriodResponse.lstRentalPeriods[0].PeriodDescription;
+        this.dataSharingService.periodID = rentalPeriodResponse.lstRentalPeriods[0].PeriodID;
         this.reserveUnitForm.patchValue({
           lstRentalPeriods: ([{
             PeriodDescription: defaultPeriodDescription,
