@@ -101,11 +101,11 @@ constructor(
   private tenantInfoService: TenantInfoService,
   private signOutService: SignOutService,
 ) {
-  this.fetchOption();
   this.fetchSharedData();
 }
 
 ngOnInit() {
+  this.fetchOption();
   this.getTenantUnitData();
 }
 
@@ -125,8 +125,12 @@ fetchSharedData() {
 
 public fetchOption() {
   this.options = option;
-   this.index = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.State));
-  this.stateString = this.options[this.index].description;
+  if (this.dataSharingService.objTenant.State) {
+    this.index = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.State));
+    if (!!this.options[this.index].description) {
+      this.stateString = this.options[this.index].description;
+    }
+  }
 }
 
 @HostListener('window:beforeunload', ['$event'])
