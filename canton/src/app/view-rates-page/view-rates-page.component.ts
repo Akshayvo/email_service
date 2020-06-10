@@ -77,7 +77,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.showDiscount = false;
     }
 
-    if (this.router.url.includes('fohl-street-storage')) {
+    if (this.router.url.includes('louisville-self-storage')) {
       this.hideMoveInButton = true;
     } else {
       this.hideMoveInButton = false;
