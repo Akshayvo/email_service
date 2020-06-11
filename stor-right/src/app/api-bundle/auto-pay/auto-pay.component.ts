@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 
 import { Subscription } from 'rxjs';
 import { SurchargeService } from '../services/surcharge.service';
+import { DataSharingService } from '../services/data-sharing.service';
 
 
 @Component({
@@ -109,19 +110,18 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     private fetchDataService: FetchDataService,
     private signOutService: SignOutService,
     private surchargeService: SurchargeService,
+    private  dataSharingService: DataSharingService,
     public router: Router,
 
   ) {
     this.autoPayForm = this.formBuilder.group({
       objTenant: this.formBuilder.group({
-        CCAccountNumber: ['', Validators.required],
-        CCAccountName: ['', Validators.required],
+        CCNumber: ['', Validators.required],
+        CCBillingAccountName: ['', Validators.required],
         CCExpirationMonth: ['', Validators.required],
         CCExpirationYear: ['', Validators.required],
-        CCAccountCVV2: [''],
-        CCAccountBillingAddress: ['', Validators.required],
-        CCAccountZIP: ['', Validators.required],
-        SignUpForAutoPay:  [],
+        CCBillingAddress: ['', Validators.required],
+        CCBillingZIP: ['', Validators.required],
         PayType: this.formBuilder.group({
           PayTypeDescription: ['', Validators.required],
           PayTypeID: [''],
@@ -177,6 +177,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
    this.surchargeService.getIdPaytype(this.paytypeid);
    this.autoPayForm.patchValue({
      objTenant: {
+      // PreferredPaymentMethod: cardTypeId,
        PayType: {
          PayTypeDescription: this.cardType,
          PayTypeID: cardTypeId,
@@ -222,6 +223,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.autoPayForm.patchValue({
       objTenant: {
+        // PreferredPaymentMethod: this.PayTypeIDValue,
         PayType: {
           PayTypeID: this.PayTypeIDValue,
         }
@@ -240,6 +242,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
           this.surchargeService.getIdPaytype(this.paytypeid);
           this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled,
           this.date = Tenant.LastPaymentOn;
+          this.dataSharingService.signUpForAutoPay = Tenant.IsAutoPaymentsEnabled,
 
 
         // tslint:disable-next-line: max-line-length
@@ -253,6 +256,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
             this.surchargeService.getIdPaytype(this.paytypeid);
             this.autoPayForm.patchValue({
               objTenant: {
+                // PreferredPaymentMethod: defaultCardPayTypeId,
                 PayType: {
                   PayTypeDescription: this.defaultCardType,
                   PayTypeID: defaultCardPayTypeId,
@@ -263,13 +267,13 @@ export class AutoPayComponent implements OnInit, OnDestroy {
 
           this.autoPayForm.patchValue({
             objTenant: {
-              CCAccountNumber: Tenant.CCNumber,
-              CCAccountName: Tenant.CCBillingAccountName,
+              CCNumber: Tenant.CCNumber,
+              CCBillingAccountName: Tenant.CCBillingAccountName,
               CCExpirationMonth: Tenant.CCExpirationMonth,
               CCExpirationYear: Tenant.CCExpirationYear,
-              CCAccountBillingAddress: Tenant.CCBillingAddress,
-              CCAccountZIP: Tenant.CCBillingZIP,
-              SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
+              CCBillingAddress: Tenant.CCBillingAddress,
+              CCBillingZIP: Tenant.CCBillingZIP,
+              // SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
             }
           });
           this.showLoader = false;
@@ -304,6 +308,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
           this.surchargeService.getIdPaytype(defaultPayTypeID);
           this.autoPayForm.patchValue({
             objTenant: {
+              // PreferredPaymentMethod: defaultPayTypeID,
               PayType: {
                 PayTypeDescription: defaultDescription,
                 PayTypeID: defaultPayTypeID,
@@ -318,11 +323,14 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   toggleEvent() {
     this.count = this.count + 1;
     this.toggleSignUp = true;
+    this.dataSharingService.signUpForAutoPay = !this.dataSharingService.signUpForAutoPay;
+    console.log('this.toggleSignUp', this.toggleSignUp, 'signUpForAutoPay', this.dataSharingService.signUpForAutoPay);
   }
 
   goBack() {
     this.showSuccessStatus = false;
     this.showloaderForPayment = false;
+    this.IsAutoPaymentsEnabled = this.dataSharingService.signUpForAutoPay;
   }
 
   signOut(logOut: any) {
@@ -371,8 +379,20 @@ export class AutoPayComponent implements OnInit, OnDestroy {
 
   autoPayStatus() {
     if (this.toggleSignUp === true) {
-      if (this.autoPayForm.value.objTenant.SignUpForAutoPay === true) {
-      this.signUpAutoPay(this.autoPayForm.value);
+      // if (this.autoPayForm.value.objTenant.SignUpForAutoPay === true) {
+      if (this.dataSharingService.signUpForAutoPay === true) {
+        const data = {
+          objTenant: {
+            CCNumber: this.autoPayForm.value.objTenant.CCNumber,
+            CCBillingAccountName: this.autoPayForm.value.objTenant.CCBillingAccountName,
+            CCExpirationMonth: this.autoPayForm.value.objTenant.CCExpirationMonth,
+            CCExpirationYear: this.autoPayForm.value.objTenant.CCExpirationYear,
+            CCBillingAddress: this.autoPayForm.value.objTenant.CCBillingAddress,
+            CCBillingZIP: this.autoPayForm.value.objTenant.CCBillingZIP,
+            PreferredPaymentMethod: this.autoPayForm.value.objTenant.PayType.PayTypeID,
+          }
+        };
+      this.signUpAutoPay(data);
       } else {
         this.OptionOutOfAutoPay(this.signUp);
       }

@@ -19,6 +19,7 @@ export class DataSharingService {
   addingTenant = false;
   periodID: number;
   period: string;
+  signUpForAutoPay: boolean;
 
   MoveInData = {
     Description: '',
