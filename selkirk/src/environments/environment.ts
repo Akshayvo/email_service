@@ -7,13 +7,13 @@ export const environment = {
   production: false,
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Selkirk - Staging',
+  appId: 'Selkirk - Testing',
   VERSION: require('../../package.json').version,
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28463 north demo
+  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28463 north demo
   //  APIKey: `KTJbNF8xZzM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 2413
-   APIKey: `dzJ0OFc1SjkqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28599 Selkirk
+  //  APIKey: `dzJ0OFc1SjkqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28599 Selkirk
 };
 
 // export const environment = {

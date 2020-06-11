@@ -30,8 +30,8 @@ $Catskill-theme: mat-light-theme($Catskill-primary, $Catskill-accent, $Catskill-
 
 //Basic color and font styles
 // $primary: #3c8fb4;
-$primary: #4089ae;
-$primaryDark: #0a77ad;
+$primary: #1e4f2c;
+$primaryDark: #043512;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
@@ -80,7 +80,7 @@ body {
 }
 
 .bg-translucent {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .btn {
