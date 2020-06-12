@@ -114,10 +114,9 @@ export const aboutUs = [
             heading: `Security for Your Possessions`,
             p: `Beyond the standard padlock, 390 Self Storage offers additional security for your possessions. The
             entire facility is fenced in with additional barbed wire installed to mitigate areas that might be more
-            accessible. The security gate is controlled by your unique personal access code. It is well-lit and
-            constantly monitored by cameras. The entire facility is well-lit with state of the art security cameras
-            that record 24 hours a day. The climate controlled storage requires your access code to enter and has
-            a fire protection sprinkler system.`
+            accessible. The security gate is controlled by your unique personal access code. The entire facility is
+            well-lit with state of the art security cameras that record 24 hours a day. The climate controlled\
+            storage requires your access code to enter and has a fire protection sprinkler system.`
         },
         subHeading3: {
             heading: `For Your Convenience`,
