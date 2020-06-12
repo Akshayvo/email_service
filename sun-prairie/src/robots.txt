@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: http://deforestselfstorage.com/sitemap.xml
+Sitemap: https://sunprairie-staging.syrasoft.com/sitemap.xml
 User-agent: *
 Disallow:

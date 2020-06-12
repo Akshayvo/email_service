@@ -6,6 +6,9 @@ a {
   color: #fff;
 }
 
+.nav-link {
+  font-size: 0.9rem;    
+}
 
 
 .iconColor {
@@ -69,17 +72,17 @@ a {
 }
 
 .navbar-toggler {
-  border-color: $border;
+  border-color: $secondary;
 
   i {
-    color: $fontColor;
+    color: $secondary;
   }
 }
 
 
 .navbar-toggler:focus,
 .navbar-toggler:hover {
-  border: 1px solid $primary;
+  border: 1px solid $secondary;
 }
 
 .contact-links {
@@ -90,8 +93,12 @@ a {
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .nav-link {
-      font-size: 0.9rem;    
+      font-size: 0.8rem;    
   }
+  .nav-link {
+    padding-right: .4rem !important;
+    padding-left: .4rem !important;
+}
 }
 
 @media screen and (max-width: 991px) {

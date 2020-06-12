@@ -28,7 +28,7 @@ table {
     thead {
       background: $secondary;
       th {
-        color: $shadow;
+        color: $primary;
         font-size: 1rem;
       }
     }
@@ -112,11 +112,27 @@ table {
     }
  }
 
- @media only screen and (max-width: 450px) {
-   .btn-primary {
-     min-width: unset;
-   }
-   .btn-outline-primary {
-     min-width: 127px;
-   }
- }
+//  @media only screen and (max-width: 450px) {
+//    .btn-primary {
+//      min-width: unset;
+//    }
+//    .btn-outline-primary {
+//      min-width: unset;
+//    }
+//  }
+
+@media only screen and (max-width: 767px)  and (min-width: 381px) {
+  .buttons {
+    .btn {
+      min-width: 150px;
+    }
+  }
+}
+
+ @media only screen and (max-width: 380px) {
+  .buttons {
+    .btn {
+      min-width: 127px;
+    }
+  }
+}

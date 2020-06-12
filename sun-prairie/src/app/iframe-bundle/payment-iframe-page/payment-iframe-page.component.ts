@@ -18,9 +18,9 @@ export class PaymentIframePageComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Simply follow the instructions on the page to log into your account at Access Self Storage. If you have any questions, please call our offices today!`
+      content: ``
     });
-    this.titleService.setTitle('Pay Rent | Access Self Storage');
+    this.titleService.setTitle('');
   }
 
   ngOnInit() {

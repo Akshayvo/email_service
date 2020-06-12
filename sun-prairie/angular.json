@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "deforest": {
+    "sun-prairie": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -60,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "deforest:build"
+            "browserTarget": "sun-prairie:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "deforest:build:production"
+              "browserTarget": "sun-prairie:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "deforest:build"
+            "browserTarget": "sun-prairie:build"
           }
         },
         "test": {
@@ -116,7 +116,7 @@
         }
       }
     },
-    "deforest-e2e": {
+    "sun-prairie-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -124,11 +124,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "deforest:serve"
+            "devServerTarget": "sun-prairie:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "deforest:serve:production"
+              "devServerTarget": "sun-prairie:serve:production"
             }
           }
         },
@@ -144,5 +144,5 @@
       }
     }
   },
-  "defaultProject": "deforest"
+  "defaultProject": "sun-prairie"
 }

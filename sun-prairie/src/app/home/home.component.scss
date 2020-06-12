@@ -1,10 +1,19 @@
 @import "../../styles.scss";
 
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sun_Prairie/webp/sun-prairie-self-storage-jumbotron.webp");
+}
+
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sun_Prairie/jpg/sun-prairie-self-storage-jumbotron.jpg");
+}
+
+
 .jumbotron-top {
 
   height: 80vh;
   .jumbotron {
-    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storage-jumbotron-auxiliary.jpg");
+    // background: url("");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
@@ -87,7 +96,7 @@
 // Get started Section
 
 .getStarted {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storage-jumbotron-auxiliary.jpg") center top no-repeat fixed;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sun_Prairie/jpg/sun-prairie-self-storage-jumbotron.jpg") center top no-repeat fixed;
   background-size: cover;
   background-position: top;
 

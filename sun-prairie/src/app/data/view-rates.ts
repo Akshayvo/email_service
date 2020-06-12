@@ -22,7 +22,7 @@ export const th = [
       data: `Rate`
     },
     {
-      data: `Deposit`
+      data: `Setup Fee`
     },
     {
       data: 'Move In<div class="text-style">(Move In Today)</div>'

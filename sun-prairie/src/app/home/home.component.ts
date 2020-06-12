@@ -6,6 +6,7 @@ import { homePageTitle, homePageContent } from '../data/title';
 import { contact, officeHours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs,
           gettingStarted, feature, blurbHeading, blurbText, aboutFamily } from '../data/home';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-home',
@@ -29,12 +30,15 @@ export class HomeComponent implements OnInit {
   aboutFamily: any;
   homePageTitle: string;
   homePageContent: string;
+  imagetype: any;
+  imageBaseUrl: any;
 
 
   constructor(@Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private uaParserService: UaParserService,
   ) {
     this.fetchMetaData();
     this.meta.addTag({
@@ -42,6 +46,8 @@ export class HomeComponent implements OnInit {
       content: `${this.homePageContent}`
     });
     this.titleService.setTitle(`${this.homePageTitle}`);
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   public navigate(location: any) {
