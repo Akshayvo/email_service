@@ -38,7 +38,12 @@
       </div>
     </div>
   </div>
+
   <!--Jumbotron Ends Here-->
+    <div *ngFor="let specialRow of specialRow" class="specialRow text-center">
+      <h2 class="pt-3 pb-2"><strong>{{specialRow.h2}}</strong></h2>
+      <p class="pb-4">{{specialRow.text}}</p>
+    </div>
 
   <!--Map and Contact Section-->
   <div class="bg-light py-5">

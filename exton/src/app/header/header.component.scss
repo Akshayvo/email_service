@@ -4,6 +4,7 @@
 a {
   cursor: pointer;
 }
+
 .contact-header {
   display: inline;
 
@@ -12,6 +13,7 @@ a {
     font-size: 0.82em;
     font-weight: 500;
     width: 100%;
+
     a {
       color: $white;
     }
@@ -30,16 +32,23 @@ a {
     outline: 5px auto $primary;
   }
 }
-.bg-secondary{
+
+.bg-secondary {
   background-color: #005da0 !important;
-  color:#fff;
+  color: #fff;
   font-size: 0.82rem;
-  a{
+
+  a {
     color: #fff;
   }
 }
-.navbar-brand{
+
+.navbar-brand {
   font-size: 1.4rem;
+
+  img {
+    width: 210px;
+  }
 }
 
 .nav-link {
@@ -82,8 +91,8 @@ a {
 }
 
 
-@media only screen and (max-width: 767px){
- .bg-secondary{
-   display: none;
- }
+@media only screen and (max-width: 767px) {
+  .bg-secondary {
+    display: none;
+  }
 }

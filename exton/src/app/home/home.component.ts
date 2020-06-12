@@ -2,9 +2,8 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-
 import { contact, hours } from '../data/contact';
-import { featuresList, aboutUs, gettingStarted, feature, blurb} from '../data/home';
+import { featuresList, aboutUs, gettingStarted, feature, blurb, specialRow} from '../data/home';
 
 @Component({
   selector: 'app-home',
@@ -22,8 +21,7 @@ export class HomeComponent implements OnInit {
   serviceOffered: any;
   gettingStarted: any;
   feature: any;
-  currentActive: any = 'HOME';
-
+  specialRow: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -68,6 +66,7 @@ export class HomeComponent implements OnInit {
   public fetchStaticContent() {
     this.aboutUs = aboutUs;
     this.gettingStarted = gettingStarted;
+    this.specialRow = specialRow;
   }
   public fetchFeature () {
     this.feature = feature;
