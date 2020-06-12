@@ -235,6 +235,9 @@ getTenantUnitData() {
           localStorage.removeItem('strTempTenantToken');
         }
         this.reservationInProgress = false;
+        if (strConfirmationResponse.strConfirmation) {
+          this.router.navigate(['/view-rates/confirmation-page']);
+        }
       }, (err: any) => {
         if (err.status === 403) {
           this.showConfirmation = false;
