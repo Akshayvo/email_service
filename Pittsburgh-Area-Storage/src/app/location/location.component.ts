@@ -78,10 +78,10 @@ export class LocationComponent implements OnInit {
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
       this.tabs = tabs1;
-      this.specialRow  = `Due to COVID-19 the office area will be closed to the public until further
-      notice.  We can be contacted by phone if you have any questions.  Sorry for any inconvenience this
-      might cause anyone.  Payments can still be made online, by mail or simply call. Your units
-      will still be available to you!`;
+      this.specialRow  = `Due to COVID-19, our temporary office hours are: Mon, Wed, and Friday
+      9:00AM - 1:00PN. We can be contacted by phone if you have any questions. Sorry for any
+      inconvenience this might cause anyone. Payments can still be made online, by mail or simply
+      call. Your units will still be available to you!`;
     }
 
    public fetchDetailsLocation3() {
