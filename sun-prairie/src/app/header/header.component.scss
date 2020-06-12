@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "../../styles.scss";
+
+a {
+  cursor: pointer;
+  color: #fff;
+}
+
+
+
+.iconColor {
+  color: $primary;
+}
+
+.bg-color {
+  background-color: #733635;
+  color: #fff;
+}
+
+.contact-header {
+  display: inline;
+
+  .contact-details {
+    color: $primary;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+  }
+}
+
+.social {
+  text-align: right;
+
+  a {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+.social:hover {
+  color: $secondary;
+}
+
+.navbar {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+
+  button:focus {
+    outline: 5px auto $primary;
+  }
+}
+
+.nav-link {
+  color: #000 !important;
+  font-weight: 600;
+  padding: 21px;
+}
+
+.nav-link:hover {
+  color: $secondary;
+}
+
+.nav-link-active {
+  color: $secondary !important;
+  border-bottom: 5px solid $secondary;
+}
+
+.display {
+  display: block;
+}
+
+.navbar-toggler {
+  border-color: $border;
+
+  i {
+    color: $fontColor;
+  }
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  border: 1px solid $primary;
+}
+
+.contact-links {
+  a {
+    color: $primary;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .nav-link {
+      font-size: 0.9rem;    
+  }
+}
+
+@media screen and (max-width: 991px) {
+  // .display {
+  //   display: none;
+  // }
+
+  .nav-link {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    align-items: center;
+
+    li {
+      width: fit-content;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (max-height: 620px) {
+  .navbar-nav-scroll {
+    height: 200px;
+    overflow-y: scroll;
+  }
+}
