@@ -6,11 +6,11 @@
 }
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Selkirk_Images/webp/selkirk-self-storage-lighter.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Selkirk_Images/webp/selkirk-self-storage-front.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Selkirk_Images/jpg/selkirk-self-storage-lighter.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Selkirk_Images/jpg/selkirk-self-storage-front.jpg");
 }
 
 .map {
@@ -78,9 +78,9 @@
 .jumbotron-top {
   height: 70vh;
 
-  .button-width {
-    width: 50%;
-  }
+  // .button-width {
+  //   width: 50%;
+  // }
 
   .jumbotron {
     // background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Selkirk_Images/self-storage-units.jpg");
@@ -288,7 +288,7 @@
       }
 
       .button-width {
-        // width: 100%;
+        width: 100%;
         text-align: center;
       }
     }

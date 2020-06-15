@@ -100,7 +100,7 @@ p {
 }
 
 .ClimateBorder {
-  border-left: 1px solid #fff;
+  border-left: 1px solid #000;
   text-align: left;
 }
 
@@ -119,9 +119,11 @@ p {
 @media only screen and (max-width: 450px) {
   .btn-primary {
     min-width: unset;
+    font-size: 0.7rem;
   }
 
   .btn-outline-primary {
     min-width: 127px;
+    font-size: 0.7rem;
   }
 }

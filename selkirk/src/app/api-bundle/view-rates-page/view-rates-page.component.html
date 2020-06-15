@@ -51,18 +51,19 @@
   <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes">
     <div class="col-6 text-center ">  
       <strong>Unit Size</strong>
-    <div class=" py-1 ">{{lstUnitType.Description}}</div>
-    <div class="row">
+    <!-- <div class=" py-1 ">{{lstUnitType.Description}} <span *ngIf="lstUnitType.IsClimateControlled">CC</span></div> -->
+    <div>{{checkDescription(lstUnitType)}}</div>
+    <!-- <div class="row">
         
         <div class="col-6 text-center ">
             <p class=" "><b><u>Rate</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.WebRate | number : '1.2-2'}}</div>
+            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span><del>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</del></div>
         </div>
         <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" >
                 <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
             </div>
 
-    </div>
+    </div> -->
     </div>
       <div class="col-6 d-flex justify-content-center" >
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other" >
@@ -70,7 +71,7 @@
               <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)">Move In</button>
           </div> -->
           <div class=" py-1 buttons" >
-            <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve a Unit</button>
+            <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve @ <del>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</del> ${{lstUnitType.WebRate | number : '1.2-2'}}</button>
         </div>
         </div>
         <ng-template #other> 

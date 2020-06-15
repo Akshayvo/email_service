@@ -40,6 +40,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
   defaultClimateString = ' ';
+  checkClimateControl: any;
 
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
@@ -62,6 +63,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.getData();
     this.fetchThData();
+    // this.checkDescription(description: any);
   }
 
   public fetchThData() {
@@ -121,6 +123,24 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
     });
   }
+
+  checkDescription(unitType: any) {
+    console.log('function working');
+    // if (description.includes('CC')) {
+    //   this.checkClimateControl = '';
+
+    //   console.log('yes');
+    // } else {
+    //   this.checkClimateControl = 'CC';
+    //   console.log('No');
+    // }
+    const description = unitType.Description;
+    if (unitType.IsClimateControlled) {
+        return description.toUpperCase().includes('CC') ? description : description + ' CC';
+    }
+    return description;
+  }
+
 
   public ngOnDestroy(): void {
     if (this.getDataSubscribe$ && this.getDataSubscribe$.closed) {
