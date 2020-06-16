@@ -290,6 +290,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
+    if (this.lstPayTypes && this.lstPayTypes.length > 0) {
     this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.payRentForm.patchValue({
@@ -299,6 +300,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         }
       }
     });
+  }
 
 
     if ( this.showInput) {
