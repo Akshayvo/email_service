@@ -117,39 +117,40 @@
                 <div *ngIf="navigateToMoveIn">
                     <h2 class="pb-1 pt-2 border-bottom border-dark  ">Alternate Contact Information</h2>
                     <div class="pt-3 row">
-                        <div class="col-lg-6 form-group">
-                             <label>First Name*</label>
-                             <input type="text" formControlName="AlternateFirstName" class="form-control" placeholder="Enter Alternate First Name"
+                        <div class="col-md-6 form-group">
+                             <label>Name*</label>
+                             <input type="text" formControlName="AlternateName" class="form-control" placeholder="Enter Alternate Name"
                              [value]=""
-                             [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AlternateFirstName.errors }"
+                             [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AlternateName.errors }"
                              />
-                             <div *ngIf="submitted && f.objTenant.controls.AlternateFirstName.errors" class="invalid-feedback">
-                                 <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternateFirstName.errors.required">Please fill out this field</small>
+                             <div *ngIf="submitted && f.objTenant.controls.AlternateName.errors" class="invalid-feedback">
+                                 <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternateName.errors.required">Please fill out this field</small>
                              </div>
                         </div>
-                       <div class="col-lg-6 form-group">
+                        <div class=" col-md-6 form-group">
+                            <label>Phone Number*</label>
+                            <input type="tel" formControlName="AlternatePhone" placeholder="Enter Alternate Phone Number" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AlternatePhone.errors }" />
+                            <div *ngIf="submitted && f.objTenant.controls.AlternatePhone.errors" class="invalid-feedback">
+                                <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternatePhone.errors.required">Please fill out this field</small>
+                            </div>
+                            <div *ngIf="f.objTenant.controls.AlternatePhone.errors" >
+                                <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternatePhone.errors.pattern">Please enter valid number</small>
+                            </div>
+                        </div> 
+    
+                       <!-- <div class="col-lg-6 form-group">
                              <label>Last Name*</label>
                              <input type="text" formControlName="AlternateLastName" class="form-control" placeholder="Enter Alternate Last Name"
                              [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AlternateLastName.errors }"/>
                              <div *ngIf="submitted && f.objTenant.controls.AlternateLastName.errors" class="invalid-feedback">
                                  <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternateLastName.errors.required">Please fill out this field</small>
                              </div>
-                        </div>
+                        </div> -->
                      </div>
-                     <div class="row">
-                         <div class=" col-md-6 form-group">
-                             <label>Phone Number*</label>
-                             <input type="tel" formControlName="AlternatePhone" placeholder="Enter Alternate Phone Number" class="form-control"
-                             [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AlternatePhone.errors }" />
-                             <div *ngIf="submitted && f.objTenant.controls.AlternatePhone.errors" class="invalid-feedback">
-                                 <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternatePhone.errors.required">Please fill out this field</small>
-                             </div>
-                             <div *ngIf="f.objTenant.controls.AlternatePhone.errors" >
-                                 <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternatePhone.errors.pattern">Please enter valid number</small>
-                             </div>
-                         </div> 
-     
-                         <div class="col-md-6 form-group">
+                     <!-- <div class="row"> -->
+                         
+                         <!-- <div class="col-md-6 form-group">
                                   <label>Email Address*</label>
                                   <input type="text" formControlName="EmailAddress" placeholder="Enter Email" class="form-control"
                                   [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.EmailAddress.errors }" />
@@ -159,8 +160,8 @@
                                   <div *ngIf="f.objTenant.controls.EmailAddress.errors" >
                                       <small class="form-text text-muted" *ngIf="f.objTenant.controls.EmailAddress.errors.email">Please enter a valid email address</small>
                                   </div>
-                          </div> 
-                          </div>
+                          </div>  -->
+                          <!-- </div> -->
                          <div class="row">
                           <div class="col-lg-12  form-group">
                                     <label>Address Line 1*</label>

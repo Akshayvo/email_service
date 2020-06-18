@@ -180,8 +180,7 @@ getTenantUnitData() {
   this.addressLine2 = this.dataSharingService.objTenant.AddressLine2;
   this.city = this.dataSharingService.objTenant.City;
   this.zip = this.dataSharingService.objTenant.ZIP;
-  this.alternateFirstName = this.dataSharingService.objTenant.AlternateFirstName;
-  this.alternateLastName = this.dataSharingService.objTenant.AlternateLastName;
+  this.alternateName = this.dataSharingService.objTenant.AlternateName;
   this.alternatePhone = this.dataSharingService.objTenant.AlternatePhone;
   this.alternateAddressLine1 = this.dataSharingService.objTenant.AlternateAddressLine1;
   this.alternateAddressLine2 = this.dataSharingService.objTenant.AlternateAddressLine2;
