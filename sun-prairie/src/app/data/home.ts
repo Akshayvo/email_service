@@ -46,6 +46,21 @@ export const feature = [
         label: 'Well-Lit Facility',
         alt: 'Icon of an illuminated light'
     },
+    {
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/team.svg',
+        label: 'Family Owned and Operated',
+        alt: 'Icon of people standing together'
+    },
+    {
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/thermometer.svg',
+        label: 'Climate Controlled',
+        alt: 'Icon of thermometer indicating climate-controlled units'
+    },
+    {
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/cctv.svg',
+        label: 'Security Camera',
+        alt: 'Icon of a security camera'
+    },
     // {
     //     path: '',
     //     label: 'Family-Owned and Operated',

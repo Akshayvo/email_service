@@ -52,7 +52,7 @@
       <div class="container">
         <!-- <p> {{blurbText}} </p> -->
         <div class="row">
-            <div class="col-md-4 col-4 p-4 text-center override-padding-x-axis" *ngFor="let feature of feature">
+            <div class="col col p-3 text-center override-padding-x-axis" *ngFor="let feature of feature">
               <img [src]="feature?.path" [alt]="feature?.alt" width="auto">
               <h5 class="feature-text pt-2">{{feature.label}}</h5>
             </div>

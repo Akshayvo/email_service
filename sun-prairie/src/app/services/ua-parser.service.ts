@@ -37,7 +37,7 @@ export class UaParserService {
     if (this.typeOfImages === 'WEBP') {
       this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sun_Prairie/webp`;
     } else {
-      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sun_Prairie/JPG';
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sun_Prairie/jpg';
     }
   }
 }
