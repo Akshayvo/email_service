@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray, AbstractControl, ValidatorFn } from '@angular/forms';
 import { FetchDataService } from '../services/fetch-data.service';
-import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods } from '../models/unittypes';
+import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
 import { option } from '../../data/view-rates';
@@ -49,6 +49,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   lstUnitTypes: LstUnitTypes[];
   rentalPeriod: RentalPeriod;
   LstRentalPeriods: LstRentalPeriods[];
+  LstInsuranceChoices: LstInsuranceChoices[];
+
   objTenant: ObjTenant;
   objTenantDetail: ObjTenantDetail;
 
@@ -91,7 +93,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   showConfirmation = false;
   showMoveInDateError = false;
   options: any;
-
+  premium: number;
   minDay: number;
   maxDay: number;
 
@@ -125,6 +127,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   showPaymentPage = false;
   gettingTenantData = false;
+  showReservationButton = false;
   monthlyRate: number;
   annualRate: number;
   biAnnualRate: number;
@@ -134,6 +137,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   private  getTenantInfoSubscribe$: Subscription;
   private  getDataSubscribe$: Subscription;
   private  getRentalPeriodSubscribe$: Subscription;
+  private  getInsuranceChoiceSubscribe$: Subscription;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -159,22 +163,47 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
-        // AlternateFirstName:  ['', Validators.required],
-        // AlternateLastName: ['', Validators.required],
-        // AlternatePhone:   ['', [Validators.required,
-        //   Validators.pattern(
-        //     '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
-        //     )
-        // ]],
-        // AlternateAddressLine1: ['', Validators.required],
-        // AlternateAddressLine2: [''],
-        // AlternateCity: ['', Validators.required],
-        // AlternateState: ['', Validators.required],
-        // AlternateZIP: ['', Validators.required],
+        AlternateFirstName:  ['',  conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
+        AlternateLastName: ['',  conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
+        AlternatePhone:   ['', [ conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        ),
+          Validators.pattern(
+            '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
+            )
+        ]],
+        AlternateAddressLine1: ['',  conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
+        AlternateAddressLine2: [''],
+        AlternateCity: ['', conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
+        AlternateState: ['', conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
+        AlternateZIP: ['', conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
       }),
 
       lstUnitTypes: new FormArray([
         this.initLstUnitTypes(),
+      ]),
+
+      lstInsuranceChoices: new FormArray([
+        this.initLstInsuranceChoices(),
       ]),
 
       lstRentalPeriods: new FormArray([
@@ -198,6 +227,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       };
     }
 
+    if (this.router.url.includes('view-rates')) {
+      this.showReservationButton = true;
+    } else {
+      this.showReservationButton = false;
+    }
+
       if ((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve-unit')) {
         this.navigateToReserve = true;
         this.dataSharingService.navigateToReserve = true;
@@ -210,6 +245,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         }
       }
   }
+
+  initLstInsuranceChoices() {
+    return this.formBuilder.group({
+      CoverageDescription: ['']
+    });
+  }
+
 
   initPeriodDescription() {
     return this.formBuilder.group({
@@ -230,6 +272,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
     this.getData();
     this.getRentalPeriod();
+    if (this.navigateToMoveIn === true ) {
+      this.getInsuranceChoices();
+    }
     this.getLeadDays(this.data);
     this.MoveIn.intUnitTypeID = this.unitTypeId;
 
@@ -248,9 +293,14 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       }])
     });
   }
-    public fetchUSState() {
+
+  closeErrorMessage() {
+    this.submitted = false;
+  }
+
+  public fetchUSState() {
     this.option = option;
-    }
+  }
 
   public navigate(location: any) {
     this.router.navigate([location]);
@@ -277,7 +327,25 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.router.navigate([location]);
   }
 
-  selectionChanged(event: any) {
+
+  selectInsuranceChoice(event: any) {
+    const indexValue = event.target.value;
+    const index = this.LstInsuranceChoices.findIndex(x => x.CoverageDescription === indexValue);
+    this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[index].InsuranceChoiceID;
+    this.premium = this.LstInsuranceChoices[index].Premium;
+    console.log(indexValue, index, this.dataSharingService.insuranceChoiceId);
+    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+  }
+
+
+  changeRate(event: any) {
+    console.log('change rate according to period', event.target.value);
+    const indexValue = event.target.value;
+    const index = this.LstRentalPeriods.findIndex(x => x.PeriodDescription === indexValue);
+    this.dataSharingService.periodID = this.LstRentalPeriods[index].PeriodID;
+    console.log('indexValue', indexValue, 'index', index, 'periodID', this.dataSharingService.periodID);
+
+    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
   }
 
   selectChangeHandler (event: any) {
@@ -300,43 +368,46 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.dataSharingService.LstUnitTypes.UnitTypeID = this.unitTypeId;
 
     if (this.navigateToMoveIn) {
-      this.getMoveInCharges(this.unitTypeId);
+      // tslint:disable-next-line:max-line-length
+      this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
     }
 }
 
 
-  getMoveInCharges(intUnitTypeID: any) {
-    this.moveInService.getMoveInCharges({
-      intUnitTypeID
-    }).subscribe(result => {
-      const {objCharges: {
-        ProrateAmt = 0,
-        Deposit = 0,
-        DepositTax = 0,
-        RateTax= 0,
-        ProrateAmtTax = 0,
-        OthDeposit = 0,
-        Setup = 0,
-        SetupTax = 0,
-        TotalTaxAmount = 0,
-        TotalChargesAmount = 0,
-       }} = result;
-      this.proRateAmount = ProrateAmt;
-      this.deposit = Deposit;
-      this.depositTax = DepositTax;
-      this.rateTax = RateTax;
-      this.prorateAmtTax = ProrateAmtTax;
-      this.othDeposit = OthDeposit;
-      this.setup = Setup;
-      this.setupTax = SetupTax;
-      this.totalTaxAmount = TotalTaxAmount;
-      this.totalChargesAmount = TotalChargesAmount;
-      this.dataSharingService.MoveInData.TotalChargesAmount = parseFloat(this.totalChargesAmount.toFixed(2));
-      this.dataSharingService.MoveInData.TotalTaxAmount = parseFloat(this.totalTaxAmount.toFixed(2));
-    }, err => {
-    });
-}
 
+getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number) {
+  this.moveInService.getMoveInCharges({
+    intUnitTypeID,
+    intInsuranceID,
+    intPeriodID
+  }).subscribe(result => {
+    const {objCharges: {
+      ProrateAmt = 0,
+      Deposit = 0,
+      DepositTax = 0,
+      RateTax= 0,
+      ProrateAmtTax = 0,
+      OthDeposit = 0,
+      Setup = 0,
+      SetupTax = 0,
+      TotalTaxAmount = 0,
+      TotalChargesAmount = 0,
+     }} = result;
+    this.proRateAmount = ProrateAmt;
+    this.deposit = Deposit;
+    this.depositTax = DepositTax;
+    this.rateTax = RateTax;
+    this.prorateAmtTax = ProrateAmtTax;
+    this.othDeposit = OthDeposit;
+    this.setup = Setup;
+    this.setupTax = SetupTax;
+    this.totalTaxAmount = TotalTaxAmount;
+    this.totalChargesAmount = TotalChargesAmount;
+    this.dataSharingService.MoveInData.TotalChargesAmount = parseFloat(this.totalChargesAmount.toFixed(2));
+    this.dataSharingService.MoveInData.TotalTaxAmount = parseFloat(this.totalTaxAmount.toFixed(2));
+  }, err => {
+  });
+}
 
   getLeadDays(data: any) {
     this.getLeadDaysSubscribe$ =  this.leadDaysService.getLeadDays(data)
@@ -356,8 +427,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.gettingTenantData = false;
         if (tenantData) {
           const { Tenant } = tenantData;
-          console.log('Tenant detail getTenantInfo', Tenant);
-          
           const tempObject = {
             FirstName: Tenant.FirstName,
             LastName: Tenant.LastName,
@@ -368,14 +437,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
-            // AlternateFirstName: Tenant.AlternateFirstName,
-            // AlternateLastName: Tenant.AlternateLastName,
-            // AlternatePhone: Tenant.AlternatePhone,
-            // AlternateAddressLine1: Tenant.AlternateAddressLine1,
-            // AlternateAddressLine2: Tenant.AlternateAddressLine2,
-            // AlternateCity: Tenant.AlternateCity,
-            // AlternateState: Tenant.AlternateState,
-            // AlternateZIP: Tenant.AlternateZIP,
           };
           this.reserveUnitForm.patchValue({
             objTenant: ({
@@ -388,14 +449,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
-              // AlternateFirstName: Tenant.AlternateFirstName,
-              // AlternateLastName: Tenant.AlternateLastName,
-              // AlternatePhone: Tenant.AlternatePhone,
-              // AlternateAddressLine1: Tenant.AlternateAddressLine1,
-              // AlternateAddressLine2: Tenant.AlternateAddressLine2,
-              // AlternateCity: Tenant.AlternateCity,
-              // AlternateState: Tenant.AlternateState,
-              // AlternateZIP: Tenant.AlternateZIP,
             }),
           });
 
@@ -442,7 +495,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
       this.UnitTypeID = unitTypesResponse.lstUnitTypes[0].UnitTypeID;
       if (this.navigateToMoveIn) {
-        this.getMoveInCharges(this.unitTypeId);
+        // tslint:disable-next-line:max-line-length
+        this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
       }
 
 
@@ -482,6 +536,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       .subscribe(rentalPeriodResponse => {
         this.LstRentalPeriods = rentalPeriodResponse.lstRentalPeriods;
         const defaultPeriodDescription = rentalPeriodResponse.lstRentalPeriods[0].PeriodDescription;
+        this.dataSharingService.periodID = rentalPeriodResponse.lstRentalPeriods[0].PeriodID;
         this.reserveUnitForm.patchValue({
           lstRentalPeriods: ([{
             PeriodDescription: defaultPeriodDescription,
@@ -492,10 +547,24 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     );
   }
 
-
+  getInsuranceChoices() {
+    this.getInsuranceChoiceSubscribe$ = this.fetchDataService.getInsuranceChoices()
+    .subscribe(insuranceChoicesResponse => {
+      if (insuranceChoicesResponse.blnSuccess === true) {
+        this.LstInsuranceChoices = insuranceChoicesResponse.lstInsuranceChoices;
+        const defaultInsuranceChoice = insuranceChoicesResponse.lstInsuranceChoices[0].CoverageDescription;
+        this.dataSharingService.insuranceChoiceId = insuranceChoicesResponse.lstInsuranceChoices[0].InsuranceChoiceID;
+        this.reserveUnitForm.patchValue({
+          lstInsuranceChoices: ([{
+            CoverageDescription: defaultInsuranceChoice,
+          }])
+        });
+      }
+    });
+  }
 
   onSubmit() {
-
+    this.submitted = true;
   }
 
   public ngOnDestroy(): void {
@@ -507,6 +576,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     }
     if (this.getDataSubscribe$ && this.getDataSubscribe$.closed) {
       this.getDataSubscribe$.unsubscribe();
+    }
+    if (this.getInsuranceChoiceSubscribe$ && this.getInsuranceChoiceSubscribe$) {
+      this.getInsuranceChoiceSubscribe$.unsubscribe();
     }
     if (this.getRentalPeriodSubscribe$ && this.getRentalPeriodSubscribe$) {
       this.getRentalPeriodSubscribe$.unsubscribe();

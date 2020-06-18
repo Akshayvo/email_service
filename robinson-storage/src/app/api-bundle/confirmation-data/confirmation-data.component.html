@@ -42,10 +42,151 @@
                 <h3 class="mb-3">Tenant Information</h3>
                 <table>
                     <tbody>
-                        <tr *ngFor="let objTenant of objTenant | keyvalue: originalOrder">
-                           <td> {{objTenant.key}}</td>
-                           <td>{{objTenant.value}}</td>
-                        </tr>                  
+                        <tr>
+                            <td>
+                                    First Name
+                            </td>
+                            <td>
+                                {{firstName}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Last Name
+                            </td>
+                            <td>
+                                {{lastName}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Phone Number 
+                            </td>
+                            <td>
+                                {{phone}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Email Adddress
+                            </td>
+                            <td>
+                                {{emailAddress}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Address Line 1
+                            </td>
+                            <td>
+                                {{addressLine1}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Address Line 2
+                            </td>
+                            <td>
+                                {{addressLine2}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    City
+                            </td>
+                            <td>
+                                {{city}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Province
+                        </td>
+                            <td>
+                                {{stateString}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Postal Code
+                            </td>
+                            <td>
+                                {{zip}}
+                            </td>
+                        </tr>
+                       
+                                           
+                    </tbody>
+                </table>
+
+                <h3 class="mb-3 mt-5">Alternate Tenant Information</h3>
+                <table>
+                    <tbody>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate First Name
+                            </td>
+                            <td>
+                                {{alternateFirstName}}
+                            </td>
+                        </tr>
+                        
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Last Name
+                            </td>
+                            <td>
+                                {{alternateLastName}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn" class="mt-2">
+                            <td>
+                                Alternate Phone
+                            </td>
+                            <td>
+                                {{alternatePhone}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Address Line1
+                            </td>
+                            <td>
+                                {{alternateAddressLine1}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Address Line2
+                            </td>
+                            <td>
+                                {{alternateAddressLine2}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate City
+                            </td>
+                            <td>
+                                {{alternateCity}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Province
+                            </td>
+                            <td>
+                                {{alternateState}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Postal Code
+                            </td>
+                            <td>
+                                {{alternateZIP}}
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -74,7 +215,7 @@
                                 Reservation Charges
                             </td>
                             <td>
-                                ${{reservationFee}} + ${{reservationFeeTax}}(Tax)
+                                ${{reservationFee}} <div *ngIf="reservationFeeTax > 0"> + ${{reservationFeeTax}}(Tax)</div>
                             </td>
                         </tr>
                         <tr *ngIf="!navigateToMoveIn">
@@ -96,14 +237,14 @@
                                 </span>
                             </td>                   
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td>
                                 Period
                             </td>
                             <td>
                                 {{period}}
                             </td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
