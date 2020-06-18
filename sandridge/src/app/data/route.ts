@@ -30,21 +30,21 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
     { path: '', component: HomeComponent },
     // { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'reserve-unit', component: ReserveComponent },
+    // { path: 'reserve-unit', component: ReserveComponent },
     // { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
-    {
-      path: 'view-rates',
-      component: ViewRatesComponent,
-      children: [
-        { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
-      ]
-     },
+    // {
+    //   path: 'view-rates',
+    //   component: ViewRatesComponent,
+    //   children: [
+    //     { path: '', component: ViewRatesPageComponent },
+    //     // { path: 'reserve', component: ReserveUnitFormComponent },
+    //     // { path: 'move-in', component: ReserveUnitFormComponent },
+    //     { path: 'confirmation', component: ConfirmationDataComponent },
+    //     { path: 'payReservationCharges', component: PayRentFormComponent },
+    //     { path: 'payMoveInCharges', component: PayRentFormComponent },
+    //   ]
+    //  },
     {
       path: 'pay-rent',
       component: PaymentComponent,

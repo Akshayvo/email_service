@@ -1,9 +1,6 @@
-export const blurbHeading = `24-Hour Access Self Storage and RV Parking in Sun Prairie`;
+export const blurbHeading = ``;
 
-export const blurbText = `Sun Prairie Self Storage is a locally owned and operated facility
-that provides high-quality, affordable 24-hour access self storage units and recreational
-vehicle parking services. No matter your self storage or vehicle parking needs, Sun Prairie
-Self Storage has you covered! Book online, or use our 24-hour kiosk today!`;
+export const blurbText = ``;
 
 export const featuresHead = 'The Only Self Storage in Greene County With All of The Following';
 
@@ -46,12 +43,12 @@ export const feature = [
     },
     {
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/location.svg',
-        label: 'Icon art displaying a location pin',
-        alt: 'Conveniently Located'
+        label: 'Conveniently Located',
+        alt: 'Icon art displaying a location pin'
     },
     {
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/online.svg',
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Bill Pay',
         alt: 'Icon art displaying a screen with cursor'
     },
     {
@@ -91,6 +88,4 @@ export const aboutFamily = [
     }
 ]
 
-export const gettingStarted = `Are you ready to start reclaiming that space around your home, worksite or yard? Call
-                               or reserve one of Sun Prairie Self Storage's affordable self storage units, or vehicle
-                               parking spaces, today!`;
+export const gettingStarted = ``;

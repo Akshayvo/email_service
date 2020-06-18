@@ -5,7 +5,7 @@ Welcome to the project documentation!
 ## Changing the project name
 Replace ng-starter-pack with your project name(Hyphen Case)
 
-Replace sun-prairie with your project name(camelCase)
+Replace sandridge with your project name(camelCase)
 
 Find and Replace across project
 
@@ -22,7 +22,7 @@ ng generate component <componentName> --module app
 
 Use `npm run docs` for easier navigation.
 
-# sun-prairie
+# sandridge
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 

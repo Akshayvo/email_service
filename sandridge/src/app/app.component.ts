@@ -9,7 +9,7 @@ import { filter, map, mergeMap } from 'rxjs/operators';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Sun Prairie Self Storage';
+  title = 'Sandridge RV & Boat Storage';
   flag: boolean;
   public offsets: number[];
   constructor(
