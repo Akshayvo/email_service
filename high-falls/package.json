@@ -1,6 +1,6 @@
 {
   "name": "high-falls",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -54,6 +54,7 @@
     "@angular/cli": "^7.1.4",
     "@angular/compiler-cli": "^7.2.10",
     "@angular/language-service": "^7.2.10",
+    "@schematics/angular": "^7.0.7",
     "@types/jasmine": "^2.8.16",
     "@types/jasminewd2": "^2.0.6",
     "@types/node": "^8.10.54",

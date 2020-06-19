@@ -11,7 +11,12 @@ export class DataSharingService {
   navigateToMoveIn: boolean;
   isValueUpdated: boolean;
   changePassword: boolean;
-  showLogin: boolean;
+  // showLoginDetail: boolean;
+  insuranceChoiceId: number;
+  periodID: number;
+  period: string;
+
+  addingTenant = false;
 
 
   MoveInData = {
@@ -67,7 +72,6 @@ export class DataSharingService {
     intUnitTypeID: 0,
   };
 
-  period: string;
 
 constructor() {
  this.getUnitData();
