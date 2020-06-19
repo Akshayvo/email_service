@@ -7,8 +7,8 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:info@highfallsselfstorage.com',
         label: 'Email: ',
+        redirect: 'mailto:info@highfallsselfstorage.com',
         data: 'info@highfallsselfstorage.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
