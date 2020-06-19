@@ -58,7 +58,7 @@ export const feature = [
     },
     {
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/cctv.svg',
-        label: 'Security Camera',
+        label: 'Security Cameras',
         alt: 'Icon of a security camera'
     },
     // {
