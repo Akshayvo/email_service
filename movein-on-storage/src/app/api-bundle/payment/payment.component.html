@@ -1,0 +1,37 @@
+<div class="rent-holder ">
+  <div class="container px-0">
+    <div class="rent-heading pb-5">
+      <h1 class="text-center pt-5">Pay Your Rent</h1>
+    </div>
+    
+    <div class="rent-sub-holder">
+        <!-- <h3 class="text-center">To setup Auto Pay, please contact the office!</h3> -->
+      <div class="container px-0">
+        <div class="row">
+            <div class="col-12 p-4">
+              <!-- <h3 class="text-center">To setup Auto Pay, please contact the office!</h3> -->
+               <router-outlet></router-outlet>
+            </div> 
+            
+      <!-- <div class="col-lg-3  vertical-line" *ngIf="showLoginDetail"> -->
+        <!-- <div class="col-lg-3  vertical-line">
+        <h3>How to Login</h3>
+        <p><b>Username:</b>&nbsp;First Initial + Tenant's Last Name<br>
+        <b>Password:</b>&nbsp;Tenant's Access Code + Last 4 of Phone Number</p>
+        <p><b>Example:</b></p>
+        <p>John Smith's code is 1234 and his Phone Number is 555-555-5555</p>
+        <p>John's Username: jsmith<br>
+          John's Password: 12345555</p>
+        <p><strong>Have questions about your account?</strong><br>
+        <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
+          <a  *ngIf="contact?.id == 1 || contact?.id == 2" [href]="contact?.redirect">
+            {{contact.data}}
+          </a>
+        <br>
+      </span>
+      </p>
+      </div> -->
+    </div>
+  </div>
+</div>
+      

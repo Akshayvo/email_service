@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "../../styles.scss";
+
+a {
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav-link {
+  font-size: 1rem;    
+}
+
+
+.iconColor {
+  color: #fff;
+}
+
+.bg-color {
+  background-color: $primary;
+  color: #fff;
+}
+
+.contact-header {
+  display: inline;
+
+  .contact-details {
+    color: #fff;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+  }
+}
+
+.social {
+  text-align: right;
+
+  a {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+.social:hover {
+  color: $secondary;
+}
+
+.navbar {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+
+  button:focus {
+    outline: 5px auto $primary;
+  }
+}
+
+.nav-link {
+  color: $shadow !important;
+  font-weight: 600;
+  padding: 21px;
+}
+
+.nav-link:hover {
+  color: $primary;
+}
+
+.nav-link-active {
+  color: $primary !important;
+  border-bottom: 5px solid $primary;
+}
+
+.display {
+  display: block;
+}
+
+.navbar-toggler {
+  border-color: $primary;
+
+  i {
+    color: $secondary;
+  }
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  border: 1px solid $primary;
+}
+
+.contact-links {
+  a {
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .nav-link {
+      font-size: 1rem;    
+  }
+  .nav-link {
+    padding-right: .4rem !important;
+    padding-left: .4rem !important;
+}
+}
+
+@media screen and (max-width: 991px) {
+  // .display {
+  //   display: none;
+  // }
+
+  .nav-link {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    align-items: center;
+
+    li {
+      width: fit-content;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (max-height: 620px) {
+  .navbar-nav-scroll {
+    height: 200px;
+    overflow-y: scroll;
+  }
+}
