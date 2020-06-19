@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { contactsLocation3, contactsLocation1 } from '../../data/contact';
 import { Router, ActivatedRoute } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 
@@ -21,24 +20,24 @@ export class PayRentComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.fetchContactDetail();
+    // this.fetchContactDetail();
     this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[1].path;
     localStorage.setItem('paymentNavigationUrl', this.dataSharingService.paymentNavigation) ;
   }
 
-  public fetchContactDetail() {
-    if (this.router.url.includes('inez-storage')) {
-      this.id = 1;
-      this.name = 'Inez Storage';
-      this.contact = contactsLocation1;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
-    } else  if (this.router.url.includes('beck-road-storage')) {
-      this.id = 2;
-      this.name = 'Beck Road Storage';
-      this.contact = contactsLocation3;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+  // public fetchContactDetail() {
+  //   if (this.router.url.includes('inez-storage')) {
+  //     this.id = 1;
+  //     this.name = 'Inez Storage';
+  //     this.contact = contactsLocation1;
+  //     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+  //   } else  if (this.router.url.includes('beck-road-storage')) {
+  //     this.id = 2;
+  //     this.name = 'Beck Road Storage';
+  //     this.contact = contactsLocation3;
+  //     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
 
-    }
-  }
+  //   }
+  // }
 
 }

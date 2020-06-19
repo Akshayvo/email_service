@@ -3,27 +3,9 @@
     <h1 class="text-center py-5">Pay Rent for {{name}}</h1>
     <div class="pay-rent-holder p-5">
       <div class="row">
-          <div class="col-md-8 mx-0">
+          <div class="col-md-12 mx-0">
         <router-outlet></router-outlet>
           </div>
-         <div class="col-md-4 rent-example" >
-            <h2> How to Login </h2>
-            <p> <b>Username:</b> Email Address<br>
-            <p> <b>Password:</b>  Full Phone Number (Minus Non-Numerical Characters)<br> 
-            <p> <b>Example</b> <br>
-            <p>John Smith's Phone Number is 555-555-5555 <br>
-            <p> <b>John's Username:</b>   jsmith@email.com <br>
-            <p> <b>John's Password:</b> 5555555555 <br>
-            <p> <b>Have question about your account?</b><br>
-              <span *ngFor="let contact of contact" [class.display-none]="contact?.id == 0">
-                <span *ngIf="contact?.id == 1 || contact?.id == 2">
-                  <a [href]="contact?.redirect">
-                    {{contact.data}}
-                  </a>
-                </span><br>
-              </span>
-            </p>
-        </div> 
       </div>
     </div>
   </div>

@@ -60,8 +60,40 @@ export class RentalPeriod {
 
 export class LstRentalPeriods {
     PeriodDescription: string;
+    PeriodID: number;
 
-    constructor(PeriodDescription: string) {
+    constructor(PeriodDescription: string, PeriodID: number) {
         this.PeriodDescription = PeriodDescription;
+        this.PeriodID = PeriodID;
     }
 }
+
+export class InsuranceChoice {
+    lstInsuranceChoices: LstInsuranceChoices[];
+    blnSuccess: boolean;
+
+    constructor(lstInsuranceChoices: LstInsuranceChoices[], blnSuccess: boolean) {
+        this.lstInsuranceChoices = lstInsuranceChoices;
+        this.blnSuccess = blnSuccess;
+    }
+}
+
+export class LstInsuranceChoices {
+    InsuranceChoiceID: number;
+    CoverageDescription: string;
+    Premium: number;
+    ActualCoverageAmount: number;
+
+    constructor(
+        InsuranceChoiceID: number,
+        CoverageDescription: string,
+        Premium: number,
+        ActualCoverageAmount: number
+    ) {
+        this.InsuranceChoiceID = InsuranceChoiceID;
+        this.CoverageDescription =  CoverageDescription;
+        this.Premium = Premium;
+        this.ActualCoverageAmount = ActualCoverageAmount;
+    }
+}
+

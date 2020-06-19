@@ -5,15 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
-  verificationCode: string;
-  changePassword: boolean;
-  navigationTo: string;
-  navigateToReserve: boolean;
-  navigateToMoveIn: boolean;
-  isValueUpdated: boolean;
-  navigateToPrevious: string;
-  paymentNavigation: string;
 
+  
   locationAPIKey = {
     loc1: 'dzJ0OVcwSjIqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29020 Inez
     loc2: 'dzJ0OVcxSjUqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29156 Beck road
@@ -23,6 +16,20 @@ export class DataSharingService {
   //   loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   //   loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   // };
+
+
+  verificationCode: string;
+  changePassword: boolean;
+  navigationTo: string;
+  navigateToReserve: boolean;
+  navigateToMoveIn: boolean;
+  isValueUpdated: boolean;
+  navigateToPrevious: string;
+  paymentNavigation: string;
+  periodID: number;
+  period: string;
+  addingTenant = false;
+  insuranceChoiceId: number;
 
 
   apiKey = '';
@@ -100,7 +107,6 @@ export class DataSharingService {
     intUnitTypeID: 0,
   };
 
-  period: string;
 
   constructor() {
     this.getUnitData();

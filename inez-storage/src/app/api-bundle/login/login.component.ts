@@ -5,6 +5,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
+import { contactsLocation3, contactsLocation1 } from '../../data/contact';
+
 
 @Injectable()
 
@@ -36,7 +38,9 @@ export class LoginComponent implements OnInit, OnDestroy {
   navTo: any;
   open = false;
 
-
+  contact: any;
+  name: string;
+  id: number;
   private authUnsubscribe$: Subscription;
 
 
@@ -67,6 +71,8 @@ export class LoginComponent implements OnInit, OnDestroy {
           this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
        }
     }
+    this.fetchContactDetail();
+
   }
 
   get f() { return this.loginForm.controls; }
@@ -75,6 +81,20 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.open = !this.open;
   }
 
+  public fetchContactDetail() {
+    if (this.router.url.includes('inez-storage')) {
+      this.id = 1;
+      this.name = 'Inez Storage';
+      this.contact = contactsLocation1;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+    } else  if (this.router.url.includes('beck-road-storage')) {
+      this.id = 2;
+      this.name = 'Beck Road Storage';
+      this.contact = contactsLocation3;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+
+    }
+  }
 
   public navigate (location: any) {
     this.router.navigate([`/pay-rent/${this.navTo}/${location}`]);

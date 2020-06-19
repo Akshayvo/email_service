@@ -9,6 +9,19 @@
   }
 }
 
+.rent-example {
+  border-left: 1px solid black;
+  padding-left: 50px;
+
+  a {
+    color: black;
+  }
+}
+
+.display-none {
+  display: none;
+}
+
 .loader {
   border: 5px solid #f3f3f3;
   border-top: 5px solid $primary;
