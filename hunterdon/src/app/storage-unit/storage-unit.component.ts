@@ -10,6 +10,7 @@ export class StorageUnitComponent implements OnInit {
   id: number;
   tabs: any;
  name: string;
+ showParagraph = false;
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -26,6 +27,7 @@ export class StorageUnitComponent implements OnInit {
     } else if (this.router.url.includes('/hunterdon-storage-2')) {
       this.id = 2;
       this.name = 'Reserve Your Unit at our Hunterdon Storage II Location';
+      this.showParagraph = true;
     }
   }
 }

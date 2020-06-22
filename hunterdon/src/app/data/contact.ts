@@ -64,9 +64,9 @@ export const contactsLocation1 = [
     {
         id: 3,
         label: 'Email: ',
-        data: 'hunterdonstorage1@gmail.com',
+        data: 'hunterdonstorage3@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:hunterdonstorage1@gmail.com'
+        redirect: 'mailto:hunterdonstorage3@gmail.com'
     },
 ];
 
