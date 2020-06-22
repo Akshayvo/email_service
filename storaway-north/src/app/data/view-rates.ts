@@ -13,7 +13,7 @@ export const dataViewRates = [
 
 export const currentDiscounts = [
     {
-        p: `Veterans, Police and Fireman - 10% discount`
+        p: `Veterans, Police, Fireman, and EMS – 10%`
     },
     {
         p: `Active duty military - 20% `
@@ -30,7 +30,4 @@ export const currentDiscounts = [
     {
         p: `Student Discount - 20%`
     },
-    {
-        p: `EMS to our Veterans, Police, and Fireman 10% Discount`
-    }
 ];
