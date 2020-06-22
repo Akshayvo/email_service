@@ -90,7 +90,6 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.loginDetail = loginDetail;
   }
 
-  
   public fetchContactDetails() {
     this.contact = contact;
   }
