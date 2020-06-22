@@ -11,7 +11,7 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Bluegrass Storage - Filitreau Lane',
+                label: 'Bluegrass Storage - Filiatreau Lane',
                 path: '/location/filitreau-lane',
                 name: 'filitreau-lane'
               },

@@ -24,9 +24,9 @@ export const contactPageContent = `Do you have a question about our services, or
 your account? Use our form or contact information to reach out, today!`;
 
 export const locationPage1Title = `24 Hour Access Storage Units in Bardstown, KY | Bluegrass Storage`;
-export const locationPage1Content = `Take a look at our storage unit rates and availability at our Filitreau
+export const locationPage1Content = `Take a look at our storage unit rates and availability at our Filiatreau
 Lane location! Reserve online or call our team today!`;
 
 export const locationPage2Title = `24 Hour Access Self Storage in Bardstown, KY | Bluegrass Storage`;
-export const locationPage2Content = `Take a look at our storage unit rates and availability at our Filitreau
+export const locationPage2Content = `Take a look at our storage unit rates and availability at our Filiatreau
 Lane location! Reserve online or call our team today!`;

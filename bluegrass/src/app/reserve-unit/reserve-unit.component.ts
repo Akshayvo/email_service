@@ -22,7 +22,7 @@ export class ReserveUnitComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('filitreau-lane')) {
         this.id = 0;
-        this.heading = 'Reserve Your Unit at Our Filitreau Lane Location';
+        this.heading = 'Reserve Your Unit at Our Filiatreau Lane Location';
     } else if (this.router.url.includes('springfield-road')) {
       this.id = 1;
       this.heading = 'Reserve Your Unit at Our Springfield Road Location';

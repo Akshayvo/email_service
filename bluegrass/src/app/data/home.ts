@@ -24,21 +24,20 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Bluegrass Storage is your one-stop-storage-stop for renters, homeowners, and businesses in Bardstown, Kentucky.
-        We have  2 conveniently located self storage facilities with drive-up, 24-hour access via a keypad activated
-        electronic security gate to make sure you have access to your unit and your belongings whenever you need them!
-        Rent or reserve your unit(s) online, then pay your bill around the clock with our easy tenant portal.`,
+        p: `Bluegrass Storage is your storage-stop for renters, homeowners, and businesses in Bardstown,
+        Kentucky. We have 2 conveniently located self storage facilities with drive-up, 24-hour access to your unit,
+        and your belongings whenever you need them! Rent or reserve your unit(s) online, then pay your bill around
+        the clock with our easy tenant portal.`,
     },
     {
-        p: `We understand that self storage is about more than just convenience. Our facilities are well-lit, fenced,
-        and covered by security cameras, plus our managers perform regular walkarounds to ensure a constant sense of
-        safety to our valued customers.`,
+        p: `We understand that self storage is about more than just convenience. Our facilities are well-lit,
+        and our managers perform regular walkarounds to ensure a constant sense of safety to our valued customers.`,
     },
     {
         p: `So, whether you're a renter or homeowner looking for some extra elbow-room around the house, or a growing
-        local business in need of room for supplies, inventory, or equipment, we've got a unit for you! Take a moment to
-        review our availability, then reserve your unit in seconds, or call our office today and let our friendly management
-        team guide you to your next de-cluttering project!`,
+        local business in need of room for supplies, inventory, or equipment, we've got a unit for you! Take a moment
+        to review our availability, then reserve your unit in seconds, or call our office today and let our friendly
+        management team guide you to your next de-cluttering project!`,
     },
 ];
 

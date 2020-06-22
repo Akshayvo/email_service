@@ -22,7 +22,7 @@ export class PayRentComponent implements OnInit {
   ngOnInit() {
     if (this.router.url.includes('filitreau-lane')) {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
-      this.name = 'Bluegrass Storage - Filitreau Lane';
+      this.name = 'Bluegrass Storage - Filiatreau Lane';
       this.contact = contactsLocation1;
     } else  if (this.router.url.includes('springfield-road')) {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;

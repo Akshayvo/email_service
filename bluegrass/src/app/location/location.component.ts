@@ -110,7 +110,7 @@ export class LocationComponent implements OnInit {
    }
 
   public fetchDetailsLocation1() {
-      this.name = 'Bluegrass Storage - Filitreau Lane';
+      this.name = 'Bluegrass Storage - Filiatreau Lane';
       this.id = 0;
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;

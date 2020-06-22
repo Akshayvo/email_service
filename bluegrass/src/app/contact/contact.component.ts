@@ -24,7 +24,7 @@ export class ContactComponent implements OnInit {
   places = [
     {
       id: 0,
-      name: 'Bluegrass Storage - Filitreau Lane',
+      name: 'Bluegrass Storage - Filiatreau Lane',
     },
     {
       id: 1,
@@ -134,7 +134,7 @@ onSubmit() {
     this.contactForm.value.subject = 'Website Form Submission';
   }
 
-   if (this.contactForm.value.location === 'Bluegrass Storage - Filitreau Lane') {
+   if (this.contactForm.value.location === 'Bluegrass Storage - Filiatreau Lane') {
     this.receiveremail = this.contactsLocation1[2].data;
   } else if (this.contactForm.value.location === 'Bluegrass Storage - Springfield Road') {
     this.receiveremail = this.contactsLocation2[2].data;

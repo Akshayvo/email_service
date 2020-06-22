@@ -32,7 +32,7 @@ export const hours = [
         data: '8:00AM to 3:00PM'
     },
     {
-        label: 'Saturday: ',
+        label: 'Sunday: ',
         data: 'CLOSED'
     },
     {
@@ -51,7 +51,7 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Facility Address: ',
-        data: '2049 Filitreau Lane, Bardstown, KY, 4004',
+        data: '2049 Filiatreau Lane, Bardstown, KY, 4004',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
@@ -80,7 +80,7 @@ export const hoursLocation1 = [
         data: '8:00AM to 3:00PM'
     },
     {
-        label: 'Saturday: ',
+        label: 'Sunday: ',
         data: 'CLOSED'
     },
     {
@@ -128,7 +128,7 @@ export const hoursLocation2 = [
         data: '8:00AM to 3:00PM'
     },
     {
-        label: 'Saturday: ',
+        label: 'Sunday: ',
         data: 'CLOSED'
     },
     {
