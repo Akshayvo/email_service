@@ -56,6 +56,7 @@ export const unitSizer = [
     unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
     data: `This unit is approximately 100 sq feet of space that can hold the contents of two rooms, such as:`,
     amenities: [
+      { content: 'Motorcycles' },
       { content: 'Chairs', },
       { content: 'Small desks', },
       { content: 'Bookcases', },
@@ -73,6 +74,7 @@ export const unitSizer = [
     unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
     data: `This unit is approximately 150 sq feet of space that can hold the contents of three to four rooms.`,
     amenities: [
+      { content: 'Motorcycles' },
       { content: 'Chairs', },
       { content: 'Small desks', },
       { content: 'Bookcases', },
@@ -89,6 +91,7 @@ export const unitSizer = [
     unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
     data: `This unit is approximately 200 sq feet of space that can hold the contents of about five rooms.`,
     amenities: [
+      { content: 'Cars' },
       { content: 'Appliances', },
       { content: 'Car or Small Boat', },
       { content: 'Furniture', },
@@ -104,6 +107,7 @@ export const unitSizer = [
     unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
     data: `This unit is approximately 250 sq feet of space that can hold the contents of a small house.`,
     amenities: [
+      { content: 'Cars' },
       { content: 'Appliances', },
       { content: 'Car or Small Boat', },
       { content: 'Entertainment Sets', },
@@ -121,6 +125,7 @@ export const unitSizer = [
     data: `This unit is approximately 300 sq feet of space that can store the contents of a multi-bedroom home, including.
     `,
     amenities: [
+      { content: 'Cars' },
       { content: 'Appliances', },
       { content: 'Car or Small Boat', },
       { content: 'Furniture', },

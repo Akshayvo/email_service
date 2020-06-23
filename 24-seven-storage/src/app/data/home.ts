@@ -19,6 +19,10 @@ export const featuresList = [
     {
         td1: 'Affordable Rates',
         td2: 'Climate-Controlled Units Available'
+    },
+    {
+        td1: 'Wide Range of Sizes',
+        td2: 'Office & Warehouse Spaces Available'
     }
 ];
 
