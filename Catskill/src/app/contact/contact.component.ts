@@ -99,7 +99,10 @@ export class ContactComponent implements OnInit {
     }
 
     const index = contact.findIndex(x => x.label === 'Email:');
-    this.receiveremail = this.contactDetails[index].data;
+
+    if (!!index) {
+      this.receiveremail = this.contactDetails[index].data;
+    }
 
      this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
      message: ${this.contactForm.value.message}`;

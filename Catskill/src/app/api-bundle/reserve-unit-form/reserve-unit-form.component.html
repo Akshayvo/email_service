@@ -167,7 +167,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pb-4" formArrayName="lstRentalPeriods">
+                    <div class="pb-4" formArrayName="lstRentalPeriods" *ngIf="navigateToMoveIn">
                         <div *ngFor="let itemRental of f.lstUnitTypes.controls; let i = index">
                             <div  [formGroupName]="i">
                                 <label for="PeriodDescription">Period*</label>&nbsp;
