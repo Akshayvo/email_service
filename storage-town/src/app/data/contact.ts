@@ -8,9 +8,9 @@ export const contactsLocation1 = [
     {
         id: 2,
         label: 'Email:',
-        data: 'storagetowninfo@frontier.com',
+        data: 'storagetownchester@gmail.com ',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:storagetowninfo@frontier.com'
+        redirect: 'mailto:storagetownchester@gmail.com '
     },
     {
         id: 3,
@@ -43,9 +43,9 @@ export const contactsLocation2 = [
     {
         id: 2,
         label: 'Email:',
-        data: 'storagetowninfo@frontier.com',
+        data: 'storagetownchester@gmail.com ',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:storagetowninfo@frontier.com'
+        redirect: 'mailto:storagetownchester@gmail.com '
     },
     {
         id: 3,
@@ -81,9 +81,9 @@ export const contactsLocation3 = [
     {
         id: 2,
         label: 'Email:',
-        data: 'montgomerystorage@frontier.com',
+        data: 'storagetownmontgomery@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:montgomerystorage@frontier.com'
+        redirect: 'mailto:storagetownmontgomery@gmail.com'
     },
     {
         id: 3,
@@ -119,9 +119,9 @@ export const contactsLocation4 = [
     {
         id: 2,
         label: 'Email:',
-        data: 'islandia@frontier.com',
+        data: 'storagetownmiddletown@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:islandia@frontier.com'
+        redirect: 'mailto:storagetownmiddletown@gmail.com'
     },
     {
         id: 3,
