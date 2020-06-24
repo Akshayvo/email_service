@@ -59,11 +59,11 @@
               <div class="pt-3 font-xs-device">
                 <h2 class="heading pb-1">Access Hours</h2>
                   <div *ngFor="let hour of hours">
-                      <span class="hour-links" *ngIf="hour?.id === 0 || hour?.id === 1 else elseblock">{{hour.data}}</span>
+                      <span class="hour-links" *ngIf="hour?.id === 0 else elseblock">{{hour.data}}</span>
                     </div> <br>
                     <h2 class="heading pb-1">Office Hours</h2>
                     <div *ngFor="let hour of hours">
-                      <span class="hour-links" *ngIf="hour?.id === 2 || hour?.id === 3 || hour?.id === 4 "><b>{{hour.label}}</b>&nbsp;{{hour.data}}</span>
+                      <span class="hour-links" *ngIf="hour?.id === 2 || hour?.id === 3 || hour?.id === 1 "><b>{{hour.label}}</b>&nbsp;{{hour.data}}</span>
                       <!-- <span  *ngIf="hour?.id !== 0 || hour?.id !== 1 "><b>{{hour.label}}</b>&nbsp;{{hour.data}}</span> -->
                     </div>      
               </div>

@@ -29,23 +29,18 @@ export const hours = [
     },
     {
         id: 1,
-        label: '',
-        data: '24 Hour Access Available Upon Approval'
-    },
-    {
-        id: 2,
         label: 'Monday - Friday: ',
         data: '9:00AM to 5:00PM '
     },
     {
-        id: 3,
+        id: 2,
         label: 'Saturday:',
         data: '9:00AM to 4:00PM'
     },
     {
-        id: 4,
+        id: 3,
         label: 'Sunday: ',
         data: 'CLOSED'
-    }  
+    }
 ];
 

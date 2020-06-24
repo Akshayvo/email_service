@@ -5,7 +5,7 @@ export const featuresList = [
         td2: 'Gated Key-Pad Entry',
     },
     {
-        td1: '24 Hour Access Available',
+        td1: 'No Deposit',
         td2: 'On-Site Management',
     },
     {
@@ -14,15 +14,14 @@ export const featuresList = [
     },
     {
         td1: 'No Administration Fees',
-        td2: 'No Deposit'
-    },
-    {
-        td1: 'Dump Station Coming Soon',
         td2: 'No Insurance Required'
     },
     {
-        td1: 'Facility Access at Cloverleaf Dr and Hwy 9E Stoplight ',
+        td1: 'Dump Station Coming Soon',
         td2: 'Climate Controlled Units Available'
+    },
+    {
+        td1: 'Facility Access at Cloverleaf Dr and Hwy 9E Stoplight ',
     },
 ];
 
@@ -63,8 +62,7 @@ export const aboutUs = [
     },
     {
         p: `Rest easy, knowing our facility has on-site management, and pin-code activated gates for added
-        security. Need access to your unit outside of regular business hours? Inquire about our 24 hour access,
-        and your belongings, or vehicle will always be accessible!`,
+        security.`,
     },
 ];
 
