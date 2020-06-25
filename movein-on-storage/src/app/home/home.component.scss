@@ -9,15 +9,19 @@
 }
 
 
-.jumbotron-top {
+.covid-style {
+  color: $white;
+}
 
-  height: 80vh;
+.jumbotron-top {
+  height: calc(80vh - 80px);
+
   .jumbotron {
     // background: url("");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    height: 80vh;
+    height: calc(80vh - 80px);
     color: $fontColor;
     overflow: hidden;
     padding: 0;
@@ -66,9 +70,9 @@
     display: flex;
     align-items: center;
     height: 20vh;
-    justify-content: center; 
+    justify-content: center;
 
-    img  {
+    img {
       height: 80px;
     }
   }
@@ -190,9 +194,27 @@
   }
 }
 
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .jumbotron-top {
+    height: calc(80vh - 104px);
+
+    .jumbotron {
+      height: calc(80vh - 104px);
+
+      .jumbotron-skew-text {
+        top: 28%;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 735px) and (min-height: 576px) {
   .jumbotron-top {
+    height: calc(80vh - 104px);
+
     .jumbotron {
+      height: calc(80vh - 104px);
+
       .jumbotron-skew-text {
         top: 28%;
       }
@@ -202,11 +224,11 @@
   .jumbotron-container {
     .jumbotron-bottom {
       img {
-        height: 60px;
+        height: 40px;
       }
 
       h5 {
-        font-size: 1rem;;
+        font-size: 1rem;
       }
     }   
   }
@@ -260,8 +282,10 @@
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .jumbotron-top {
-    .jumbotron {
+    height: calc(80vh - 128px);
 
+    .jumbotron {
+      height: calc(80vh - 128px);
       a {
         margin-top: 10px;
       }
@@ -348,12 +372,12 @@
   }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 575px) {
+@media only screen and (max-width: 767px) and (min-width: 576px) {
   .jumbotron-top {
-    height: 100vh;
+    height: calc(100vh - 150px - 152px);
 
     .jumbotron {
-      height: 100vh;
+      height: calc(100vh - 150px - 152px);
 
 
 
@@ -380,6 +404,7 @@
     }
 
   }
+
   .custom-padding {
     padding: 0;
   }
@@ -400,16 +425,23 @@
 }
 
 
-@media only screen and (max-width: 767px) and (min-width: 575px) and (max-height: 575px) {
+@media only screen and (max-width: 767px) and (min-width: 576px) and (max-height: 575px) {
   .disp {
     display: none;
   }
+
+  .jumbotron-container {
+    .jumbotron-bottom {
+      height: 150px;
+   }
+  }
+
   .custom-padding {
     padding: 0;
   }
 
   .jumbotron-top {
-    height: 100vh;
+    height: calc(100vh - 150px - 152px);
 
     .button-width {
       padding: 0 15px;
@@ -419,7 +451,7 @@
     }
 
     .jumbotron {
-      height: 100vh;
+      height: calc(100vh - 150px - 152px);
 
       .jumbotron-skew-style {
         display: none;
@@ -434,7 +466,6 @@
         background: rgba(0, 0, 0, 0.6);
       }
     }
-  
   }
 }
 
@@ -450,7 +481,7 @@
   }
 
   .jumbotron-top {
-    height: 92vh;
+    height: calc(100vh - 152px);
 
     .button-width {
       padding: 0 15px;
@@ -460,7 +491,7 @@
     }
 
     .jumbotron {
-      height: 92vh;
+      height: calc(100vh - 152px);
       background-position: center;
 
       .jumbotron-skew-style {
@@ -476,6 +507,5 @@
         background: rgba(0, 0, 0, 0.6);
       }
     }
-  
   }
 }
