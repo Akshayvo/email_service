@@ -4,8 +4,9 @@ export const galleryHome = [
     url: `sun-prairie-self-storage-units-at-dusk`,
     // tslint:disable-next-line:max-line-length
     thumb: `sun-prairie-self-storage-units-at-dusk-thumb`,
-    alt: `aerial photograph of rows of recreational vehicles, boats, and trailers parked in a storage facility`
-  },
+    alt: `aerial photograph of rows of recreational vehicles, boats, and trailers parked in a storage facility`,
+    caption: '35’ deep units for Class B and C RV’s',
+   },
   // {
   //   // tslint:disable-next-line: max-line-length
   //   url: `sun-prairie-self-storage-front-office-exterior`,
@@ -27,41 +28,73 @@ export const galleryHome = [
     // tslint:disable-next-line:max-line-length
     thumb: `sun-prairie-self-storage-truck-parking-thumb`,
     alt: `van parked halfway inside a self storage unit with a door high enough for
-    large vehicles to back into and pull out of`
+    large vehicles to back into and pull out of`,
+    caption: '35’ deep units for Class B and C RV’s',
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `sun-prairie-self-storage-vehicle-storage-unit`,
     // tslint:disable-next-line:max-line-length
     thumb: `sun-prairie-self-storage-vehicle-storage-unit-thumb`,
-    alt: `a tractor trailer parked partially inside an oversized self storage unit door`
+    alt: `a tractor trailer parked partially inside an oversized self storage unit door`,
+    caption: '11’ wide X 12’tall door for large trucks',
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `sun-prairie-self-storage-unit-doors`,
     // tslint:disable-next-line:max-line-length
     thumb: `sun-prairie-self-storage-unit-doors-thumb`,
-    alt: `closed self storage unit doors behind concrete parking spaces`
+    alt: `closed self storage unit doors behind concrete parking spaces`,
+    caption: ' Exterior access climate control for added convenience',
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `sun-prairie-self-storage-at-night`,
     // tslint:disable-next-line:max-line-length
     thumb: `sun-prairie-self-storage-at-night-thumb`,
-    alt: `a large single story self storage front office made of decorative brick and glass taken at dusk`
+    alt: `a large single story self storage front office made of decorative brick and glass taken at dusk`,
+    caption: '35’ deep units for Class B and C RV’s',
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `sun-prairie-self-storage-climate-controlled`,
     // tslint:disable-next-line:max-line-length
     thumb: `sun-prairie-self-storage-climate-controlled-thumb`,
-    alt: `two rows of climate controlled self storage units on either side of a polished concrete floor in a well-lit facility`
+    alt: `two rows of climate controlled self storage units on either side of
+    a polished concrete floor in a well-lit facility`,
+    caption: '35’ deep units for Class B and C RV’s',
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `sun-prairie-self-storage-open-units`,
     // tslint:disable-next-line:max-line-length
     thumb: `sun-prairie-self-storage-open-units-thumb`,
-    alt: `a self storage unit with an open roll-up door showing a clean concrete floor inside`
+    alt: `a self storage unit with an open roll-up door showing a clean concrete floor inside`,
+    caption: 'Regular units have 9’0” wide by 8’0” tall  doors for added convenience',
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `sun-prairie-self-storage-power-in-units`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `sun-prairie-self-storage-power-in-units`,
+    alt: `bright lights running along the metal ceiling of a clean self storage unit`,
+    caption: 'Power is available in some units.',
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `sun-prairie-boat-storage-unit`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `sun-prairie-boat-storage-unit`,
+    alt: `boat on a boat trailer parked partially inside an open self storage unit`,
+    caption: 'Boat storage with plenty of backup space.',
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `sun-prairie-self-storage-security-cameras`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `sun-prairie-self-storage-security-cameras`,
+    alt: `interior of a self storage facility office with a front desk in the foreground and security
+    cameras on large screen televisions in the background`,
+    caption: ' Facility has Security Camera’s.',
   },
 ];

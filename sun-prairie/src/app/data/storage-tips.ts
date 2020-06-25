@@ -66,4 +66,25 @@ export const storageTips = [
             { data: 'Place a final layer of peanuts or wadded paper on top, seal and mark.'},
         ],
     },
+    {
+        id: '7',
+        label: 'Standard non-climate-controlled units',
+        contents: [
+            { data: `Perfect for all items you would normally store in your garage. This includes cars, boats, campers,
+            sports and camping equipment. Moisture sensitive items such as cardboard boxes or upholstered furniture
+            should be stored on pallets, plastic tubs, or 2x4” blocks to raise them off the floor. Weather
+            fluctuations may occasionally cause condensation or dampness on the concrete floors of any
+            non-climate-controlled storage unit or garage.`},
+        ],
+    },
+    {
+        id: '8',
+        label: 'Climate-controlled Units',
+        contents: [
+            { data: `If you are storing sensitive items where they can be damaged with temperature variations or
+            humidity, it is recommended to use a climate-controlled unit. The temperature range is from 50 to 80
+            degrees and we have dehumidifiers to limit humidity to 60%. These units are ideal for antiques, furniture,
+            electronics, paper documents and books.`},
+        ],
+    },
 ];
