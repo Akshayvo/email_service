@@ -16,9 +16,9 @@ export const featuresHead = [
         alt: 'Customer Service Representative Icon'
     },
     {
-        label: 'Security Cameras on Premises',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
-        alt: 'Icon of a security camera'
+        label: 'Affordable Self Storage Rates',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        alt: 'Icon of a hand holding money'
     },
 ];
 

@@ -51,7 +51,7 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Facility Address: ',
-        data: '2049 Filiatreau Lane, Bardstown, KY, 4004',
+        data: '2049 Filiatreau Lane, Bardstown, KY, 40004',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
@@ -99,7 +99,7 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Facility Address: ',
-        data: '3964 Springfield Road, Bardstown, KY, 4004',
+        data: '3964 Springfield Road, Bardstown, KY, 40004',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
