@@ -18,7 +18,6 @@ export class LstUnitTypes {
     UnitTypeID: number;
     IsUnitsAvailable: boolean;
     IsClimateControlled: boolean;
-    DepositAmount: number;
 
     constructor(
         Description: string,
@@ -32,7 +31,6 @@ export class LstUnitTypes {
         UnitTypeID: number,
         IsUnitsAvailable: boolean,
         IsClimateControlled: boolean,
-        DepositAmount: number
         ) {
         this.Description = Description,
         this.MonthlyRate = MonthlyRate;
@@ -45,7 +43,6 @@ export class LstUnitTypes {
         this.UnitTypeID = UnitTypeID;
         this.IsUnitsAvailable = IsUnitsAvailable;
         this.IsClimateControlled = IsClimateControlled;
-        this.DepositAmount = DepositAmount;
     }
 }
 
@@ -60,8 +57,39 @@ export class RentalPeriod {
 
 export class LstRentalPeriods {
     PeriodDescription: string;
+    PeriodID: number;
 
-    constructor(PeriodDescription: string) {
+    constructor(PeriodDescription: string, PeriodID: number) {
         this.PeriodDescription = PeriodDescription;
+        this.PeriodID = PeriodID;
+    }
+}
+
+export class InsuranceChoice {
+    lstInsuranceChoices: LstInsuranceChoices[];
+    blnSuccess: boolean;
+
+    constructor(lstInsuranceChoices: LstInsuranceChoices[], blnSuccess: boolean) {
+        this.lstInsuranceChoices = lstInsuranceChoices;
+        this.blnSuccess = blnSuccess;
+    }
+}
+
+export class LstInsuranceChoices {
+    InsuranceChoiceID: number;
+    CoverageDescription: string;
+    Premium: number;
+    ActualCoverageAmount: number;
+
+    constructor(
+        InsuranceChoiceID: number,
+        CoverageDescription: string,
+        Premium: number,
+        ActualCoverageAmount: number
+    ) {
+        this.InsuranceChoiceID = InsuranceChoiceID;
+        this.CoverageDescription =  CoverageDescription;
+        this.Premium = Premium;
+        this.ActualCoverageAmount = ActualCoverageAmount;
     }
 }

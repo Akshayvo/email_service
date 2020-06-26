@@ -142,7 +142,7 @@
                                 Reservation Charges
                             </td>
                             <td>
-                                ${{reservationFee}} + ${{reservationFeeTax}}(Tax)
+                                ${{reservationFee}} <span *ngIf="reservationFeeTax > 0">+ ${{reservationFeeTax}}(Tax)</span>
                             </td>
                         </tr>
                         <tr *ngIf="!navigateToMoveIn">
