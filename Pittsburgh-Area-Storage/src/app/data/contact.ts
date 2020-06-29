@@ -1,6 +1,6 @@
 export const contactsLocation1 = [
     {
-        id:0,
+        id: 0,
         label: 'Address:',
         data: '200 Piedmont Road, Charleston, WV 25301',
         class: 'fas fa-map-marker-alt mr-2 iconColor',

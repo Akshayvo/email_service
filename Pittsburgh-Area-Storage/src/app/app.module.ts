@@ -34,6 +34,7 @@ import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { PayRentNatronaComponent } from './pay-rent-natrona/pay-rent-natrona.com
     ErrorHandlerComponent,
     PayRentComponent,
     PayRentNatronaComponent,
+    LayoutComponent,
   ],
   imports: [
     NgtUniversalModule,
