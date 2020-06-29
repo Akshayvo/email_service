@@ -30,7 +30,7 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
     { path: '', component: HomeComponent },
     { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storage-tips', component: StorageTipsComponent },
-    // { path: 'reserve-unit', component: ReserveComponent },
+    { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     {
