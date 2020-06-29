@@ -10,13 +10,13 @@
 
 
 .jumbotron-top {
-
   height: 80vh;
+
   .jumbotron {
     // background: url("");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom right;
+    background-position: center;
     height: 80vh;
     color: $fontColor;
     overflow: hidden;
@@ -275,7 +275,7 @@
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .jumbotron-top {
     .jumbotron {
-
+      background-position: 70%;
       a {
         margin-top: 10px;
       }
@@ -370,8 +370,7 @@
 
     .jumbotron {
       height: 100vh;
-
-
+      background-position: 65%;
 
       .jumbotron-skew-style {
         width: 80%;
@@ -481,7 +480,7 @@
 
     .jumbotron {
       height: 92vh;
-      background-position: center;
+      background-position: 70%;
 
       .jumbotron-skew-style {
         display: none;

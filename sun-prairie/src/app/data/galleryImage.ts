@@ -5,7 +5,7 @@ export const galleryHome = [
     // tslint:disable-next-line:max-line-length
     thumb: `sun-prairie-self-storage-units-at-dusk-thumb`,
     alt: `aerial photograph of rows of recreational vehicles, boats, and trailers parked in a storage facility`,
-    caption: '35’ deep units for Class B and C RV’s',
+    caption: 'Well-lit facility with 24 hour access',
    },
   // {
   //   // tslint:disable-next-line: max-line-length
@@ -53,7 +53,7 @@ export const galleryHome = [
     // tslint:disable-next-line:max-line-length
     thumb: `sun-prairie-self-storage-at-night-thumb`,
     alt: `a large single story self storage front office made of decorative brick and glass taken at dusk`,
-    caption: '35’ deep units for Class B and C RV’s',
+    caption: 'Office has a kiosk to rent 24 hours a day',
   },
   {
     // tslint:disable-next-line: max-line-length
@@ -62,7 +62,7 @@ export const galleryHome = [
     thumb: `sun-prairie-self-storage-climate-controlled-thumb`,
     alt: `two rows of climate controlled self storage units on either side of
     a polished concrete floor in a well-lit facility`,
-    caption: '35’ deep units for Class B and C RV’s',
+    caption: 'Climate controlled units available in well lit hallways or with outside access',
   },
   {
     // tslint:disable-next-line: max-line-length
