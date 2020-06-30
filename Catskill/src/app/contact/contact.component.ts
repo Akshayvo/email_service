@@ -124,7 +124,6 @@ export class ContactComponent implements OnInit {
            });
          this.submitted = false;
          this.mailSent = false;
-         // MailService(body);
          this.contactForm.reset();
    }
  }

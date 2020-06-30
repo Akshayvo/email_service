@@ -86,5 +86,4 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
       this.changePasswordUnsubscribe$.unsubscribe();
     }
   }
-
 }

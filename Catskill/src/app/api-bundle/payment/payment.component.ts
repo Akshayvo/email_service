@@ -16,7 +16,6 @@ export class PaymentComponent implements OnInit {
   payRentPageTitle: string;
   payRentPageContent: string;
   payRentHeading: string;
-  
 
   constructor(
     private titleService: Title,

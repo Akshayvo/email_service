@@ -175,46 +175,38 @@ getTenantUnitData() {
 
   addTenant(data: any): void {
     this.addTenantSubscribe$ = this.addTenantService.addTenant(data)
-        .subscribe(result => {
-        localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
-        if (this.navigateToMoveIn ) {
-          // if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
-          //   this.router.navigate(['/view-rates/payMoveInCharges']);
-          // } else {
-            this.moveIn(this.MoveIn);
-          // }
+      .subscribe(result => {
+      localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
+      if (this.navigateToMoveIn ) {
+          this.moveIn(this.MoveIn);
+      } else {
+        if (this.navigateToReserve) {
+            this.makeAReservation(this.MoveIn);
+        }
+      }
+    });
+  }
+
+  updateTenant(data: any) {
+    this.updateTenantSubscribe$ = this.tenantInfoService.updateTenant(data)
+    .subscribe(result => {
+      if (this.navigateToMoveIn ) {
+        if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
+          this.router.navigate(['/view-rates/payMoveInCharges']);
         } else {
-          if (this.navigateToReserve) {
-            // if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
-            //   this.router.navigate(['/view-rates/payReservationCharges']);
-            // } else {
-              this.makeAReservation(this.MoveIn);
-            // }
+          this.moveIn(this.MoveIn);
+        }
+      } else {
+        if (this.navigateToReserve) {
+          if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
+            this.router.navigate(['/view-rates/payReservationCharges']);
+          } else {
+            this.makeAReservation(this.MoveIn);
           }
         }
-      });
-    }
-
-    updateTenant(data: any) {
-     this.updateTenantSubscribe$ = this.tenantInfoService.updateTenant(data)
-        .subscribe(result => {
-          if (this.navigateToMoveIn ) {
-            if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
-              this.router.navigate(['/view-rates/payMoveInCharges']);
-            } else {
-              this.moveIn(this.MoveIn);
-            }
-          } else {
-            if (this.navigateToReserve) {
-              if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
-                this.router.navigate(['/view-rates/payReservationCharges']);
-              } else {
-                this.makeAReservation(this.MoveIn);
-              }
-            }
-          }
-        });
-    }
+      }
+    });
+  }
 
     makeAReservation(strConfirmation: any) {
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
@@ -313,12 +305,6 @@ getTenantUnitData() {
           }
         } else {
           if (this.existTempToken) {
-            // if (this.navigateToMoveIn === true) {
-            //   this.moveIn(this.MoveIn);
-            // } else {
-            //   // this.MoveIn.dteMoveIn = this.formattedMoveInDate;
-            //   this.makeAReservation(this.MoveIn);
-            // }
             if (!this.isValueUpdated) {
               if (this.navigateToMoveIn === true) {
                 if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {

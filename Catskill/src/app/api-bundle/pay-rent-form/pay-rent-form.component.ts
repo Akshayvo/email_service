@@ -645,7 +645,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
          localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
          if (this.navigateToMoveIn ) {
            if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
-             // this.router.navigate(['/view-rates/payMoveInCharges']);
              this.makePayment(this.payRentForm.value);
            } else {
              this.moveIn(this.MoveIn);
@@ -653,7 +652,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
          } else {
            if (this.navigateToReserve) {
              if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
-               // this.router.navigate(['/view-rates/payReservationCharges']);
                this.makePayment(this.payRentForm.value);
              } else {
                this.makeAReservation(this.MoveIn);
