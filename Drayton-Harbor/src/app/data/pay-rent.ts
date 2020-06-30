@@ -1,9 +1,9 @@
 export const loginDetail = [
     {
         userName: `First initial + Last Name`,
-        password: `Your Gate Access Code`,
+        password: `Your Unit Number`,
         example: {
-            code: 'code is 1234',
+            code: 'unit number is 1234',
             userName: 'jsmith',
             password: '1234'
         }

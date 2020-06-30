@@ -19,7 +19,6 @@ import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
-import { PayRentComponent } from './pay-rent/pay-rent.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 // import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
@@ -52,7 +51,7 @@ import { ResetPasswordComponent } from './api-bundle/reset-password/reset-passwo
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
-import { PhotosComponent } from './photos/photos.component'
+import { PhotosComponent } from './photos/photos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +65,6 @@ import { PhotosComponent } from './photos/photos.component'
     StorageTipsComponent,
     AccordionComponent,
     ContactButtonComponent,
-    PayRentComponent,
     // ReserveUnitComponent,
     UnitSizerComponent,
     ReserveComponent,
