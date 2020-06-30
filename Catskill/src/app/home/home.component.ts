@@ -9,6 +9,7 @@ import { UaParserService } from '../services/ua-parser.service';
 import { homePageTitle, homePageContent } from '../data/title';
 import { objSIMSetting } from '../data/configuration';
 import { environment } from '../../environments/environment';
+import { script } from '../data/script';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,6 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
 
   contactDetails: any;
   hours: any;
@@ -29,7 +29,6 @@ export class HomeComponent implements OnInit {
   year = [];
   jumbotron: any;
   authData: string;
-  currentActive: any = 'HOME';
   imageBaseUrl: any;
   imagetype: any;
   homePageContent: string;
@@ -39,7 +38,7 @@ export class HomeComponent implements OnInit {
   aboutUsHeading: string;
   objSIMSetting: any;
   template: string;
-
+  script: any;
 
   constructor(
     private router: Router,
@@ -75,6 +74,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotron();
     this.fetchTemplate();
+    this.fetchScript();
     window.scrollTo(0, 0);
   }
 
@@ -113,6 +113,11 @@ export class HomeComponent implements OnInit {
   public fetchJumbotron() {
     this.jumbotron = jumbotron;
   }
+
+  public fetchScript() {
+    this.script = script;
+  }
+
   public getImageUrl(imageName: string) {
     return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
