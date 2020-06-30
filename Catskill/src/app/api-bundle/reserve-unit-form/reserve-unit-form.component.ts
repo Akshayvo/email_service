@@ -295,18 +295,14 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const index = this.LstInsuranceChoices.findIndex(x => x.CoverageDescription === indexValue);
     this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[index].InsuranceChoiceID;
     this.premium = this.LstInsuranceChoices[index].Premium;
-    console.log(indexValue, index, this.dataSharingService.insuranceChoiceId);
     this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
   }
 
 
   changeRate(event: any) {
-    console.log('change rate according to period', event.target.value);
     const indexValue = event.target.value;
     const index = this.LstRentalPeriods.findIndex(x => x.PeriodDescription === indexValue);
     this.dataSharingService.periodID = this.LstRentalPeriods[index].PeriodID;
-    console.log('indexValue', indexValue, 'index', index, 'periodID', this.dataSharingService.periodID);
-
     this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
   }
 

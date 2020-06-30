@@ -11,8 +11,6 @@ export const dataViewRates = [
 
 export const viewRatesAltText = `photograph of several self storage unit buildings with square red doors`;
 
-console.log('view-rates initiated', objSIMSetting.objActionSetting.blnAllowMoveIn);
-
 export const th = [
   {
     data: `Size`,

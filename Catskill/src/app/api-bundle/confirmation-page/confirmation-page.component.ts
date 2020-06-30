@@ -35,6 +35,10 @@ export class ConfirmationPageComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     if (!!localStorage.getItem('strTenantToken')) {
       this.tokenExit = localStorage.getItem('strTenantToken');
+    } else {
+      if (!!localStorage.getItem('strTempTenantToken')) {
+        localStorage.removeItem('strTempTenantToken');
+      }
     }
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;

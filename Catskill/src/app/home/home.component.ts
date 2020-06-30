@@ -76,8 +76,6 @@ export class HomeComponent implements OnInit {
     this.fetchJumbotron();
     this.fetchTemplate();
     window.scrollTo(0, 0);
-    console.log('Display settings', this.objSIMSetting.objActionSetting);
-
   }
 
   public fetchTemplate() {

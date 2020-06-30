@@ -110,7 +110,6 @@ ngOnInit() {
 }
 
 fetchSharedData() {
-  console.log('shared data ', this.navigateToMoveIn, this.navigateToReserve);
   this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
   this.navigateToReserve  = this.dataSharingService.navigateToReserve;
   this.tenantData.objTenant = this.dataSharingService.objTenant;
@@ -147,11 +146,6 @@ public navigateToPrevious() {
   }
 }
 
-// public navigateToPrevious() {
-//   console.log('confirmation page working', this.dataSharingService.navigateToPrevious);
-//   this.router.navigate([this.dataSharingService.navigateToPrevious]);
-// }
-
 public hasUnsavedData() {
   return this.canExit;
 }
@@ -177,7 +171,6 @@ getTenantUnitData() {
   this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
-  console.log('monthly rate is', this.monthlyRate);
 }
 
   addTenant(data: any): void {
@@ -229,14 +222,9 @@ getTenantUnitData() {
     this.reservationInProgress = true;
     this.makeAReservationSubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
       .subscribe(strConfirmationResponse => {
-        this.strConfirmation = strConfirmationResponse.strConfirmation;
+        this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
         this.showConfirmation = false;
-        this.submitted = false;
-         this.tokenExit = localStorage.getItem('strTenantToken');
-        this.existTempToken = localStorage.getItem('strTempTenantToken');
-        if (this.existTempToken) {
-          localStorage.removeItem('strTempTenantToken');
-        }
+        this.router.navigate(['/view-rates/confirmation-page']);
         this.reservationInProgress = false;
       }, (err: any) => {
         if (err.status === 403) {
@@ -265,13 +253,8 @@ getTenantUnitData() {
       this.MoveIn['blnGenerateDocuments'] = true;
       this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
         .subscribe(strConfirmationResponse => {
-          this.strAccessCode = strConfirmationResponse.strAccessCode;
-          this.submitted = false;
-           this.tokenExit = localStorage.getItem('strTenantToken');
-          this.existTempToken = localStorage.getItem('strTempTenantToken');
-          if (this.existTempToken) {
-            localStorage.removeItem('strTempTenantToken');
-          }
+          this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
+          this.router.navigate(['/view-rates/confirmation-page']);
           this.reservationInProgress = false;
         }, (err: any) => {
           if (err.status === 403) {
@@ -352,22 +335,6 @@ getTenantUnitData() {
               }
             }
           } else {
-            // this.addTenant(this.tenantData);
-            // this.MoveIn.dteMoveIn = this.formattedMoveInDate;
-            // if ( this.dataSharingService.navigateToReserve === true &&
-            //   this.dataSharingService.navigateToMoveIn === false) {
-            //   this.dataSharingService.addingTenant = true;
-            //   this.router.navigate(['/view-rates/payReservationCharges']);
-            // } else {
-            //   if ( this.dataSharingService.navigateToMoveIn === true &&
-            //     this.dataSharingService.navigateToReserve === false) {
-            //     this.dataSharingService.addingTenant = true;
-            //     console.log('going to payMoveInCharges');
-            //     this.router.navigate(['/view-rates/payMoveInCharges']);
-            //   }
-
-            // }
-
             if (this.navigateToMoveIn === true) {
               if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
                 this.dataSharingService.addingTenant = true;
