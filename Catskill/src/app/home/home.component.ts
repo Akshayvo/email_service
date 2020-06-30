@@ -80,9 +80,6 @@ export class HomeComponent implements OnInit {
 
   public fetchTemplate() {
     this.template = environment.template;
-
-    console.log('template is', this.template);
-
   }
 
   public fetchMetaData() {
