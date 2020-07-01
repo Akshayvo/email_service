@@ -1,0 +1,29 @@
+<div>
+  <p><strong>Your reservation was successful.</strong></p>
+  <div class="py-4">
+      <table>
+          <tbody>
+              <tr>
+                  <td class="td-1">Confirmation Number </td>
+                  <td>{{strConfirmation || strAccessCode}}</td>
+              </tr>
+              <tr>
+                  <td class="td-1">Unit Type</td>
+                  <td>{{description}} </td>
+              </tr>
+              <tr>
+                  <td class="td-1">Rate</td>
+                  <td> <span *ngIf="monthlyRate > 0 || monthlyRate !== undefined">$</span>{{monthlyRate}}</td>
+              </tr> 
+              <tr>
+                  <td> Move In Date</td>
+                  <td>{{MoveIn.dteMoveIn}}</td>
+              </tr>
+              </tbody>
+      </table>
+  </div>
+  <div>
+      <button *ngIf="tokenExit" (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
+      <div class="py-3 home-link"><a (click)="navigate('/')">Go to Home</a></div>
+  </div>
+</div>
