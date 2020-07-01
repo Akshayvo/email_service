@@ -5,6 +5,7 @@ import { MetaService } from '../../services/link.service';
 import { UaParserService } from '../../services/ua-parser.service';
 import { viewRatesHeading } from '../..//data/heading';
 import { viewRatesPageContent, viewRatesPageTitle } from '../../data/title';
+import { specialRow } from '../../data/home';
 
 @Component({
   selector: 'app-view-rates-iframe-page',
@@ -20,6 +21,7 @@ export class ViewRatesIframePageComponent implements OnInit {
   viewRatesPageContent: string;
   viewRatesPageTitle: string;
   viewRatesAltText: string;
+  specialRow: any;
 
   constructor(
     private titleService: Title,
@@ -43,6 +45,7 @@ export class ViewRatesIframePageComponent implements OnInit {
     this.fetchViewRatesHeading();
     window.scrollTo(0, 0);
     this.fetchViewRates();
+    this.fetchSpecialRow();
   }
 
   public fetchViewRatesHeading() {
@@ -54,6 +57,9 @@ export class ViewRatesIframePageComponent implements OnInit {
     this.viewRatesPageTitle = viewRatesPageTitle;
   }
 
+  public fetchSpecialRow() {
+    this.specialRow = specialRow;
+  }
 
   public fetchViewRates() {
     this.viewRates = dataViewRates;

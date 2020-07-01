@@ -14,7 +14,6 @@ import { specialRow } from '../data/home';
 export class ContactComponent implements OnInit {
 
   // form: FormGroup;
-  currentActive: any = 'CONTACT US';
   hours: any;
   name: string;
   email: any;

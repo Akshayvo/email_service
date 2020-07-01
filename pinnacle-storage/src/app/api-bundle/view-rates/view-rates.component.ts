@@ -8,6 +8,7 @@ import { UaParserService } from '../../services/ua-parser.service';
 import { Subscription } from 'rxjs';
 import { viewRatesHeading } from '../../data/heading';
 import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
+import { specialRow } from '../../data/home';
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -15,6 +16,7 @@ import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
 })
 export class ViewRatesComponent implements OnInit, OnDestroy {
 
+  specialRow: any;
   viewRates: any;
   showTable = false;
   unitTypes: UnitTypes;
@@ -54,6 +56,11 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     window.scrollTo(0, 0);
     this.fetchViewRates();
     this.fetchViewRatesHeading();
+    this.fetchSpecialRow();
+  }
+
+  public fetchSpecialRow () {
+    this.specialRow = specialRow;
   }
 
   public fetchViewRates() {

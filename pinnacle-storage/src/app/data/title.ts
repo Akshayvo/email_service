@@ -1,30 +1,27 @@
-export const  homePageTitle = `Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage`;
-export const homePageContent = `Catskill Self Storage has been proudly serving Catskill, Cairo, Leeds, and surrounding communities with
-affordable storage units since 2004!`;
+export const  homePageTitle = `Storage Units in Slingerlands | Pinnacle Storage Solutions`;
+export const homePageContent = `We are Slingerlands' newest self storage facility! Pinnacle Storage Solutions offers a wide variety
+of storage units at very affordable rates!`;
 
 
-export const viewRatesPageTitle = `Affordable Self Storage Near Catskill, NY, 12414 | Catskill Self Storage`;
-export const viewRatesPageContent = `Our units range from closet sized 5'x5' units to 10'x20' multi-bedroom home sized units.
-We strive to provide the highest level of service at the best prices!`;
+export const viewRatesPageTitle = `View Rates | Pinnacle Storage Solutions`;
+export const viewRatesPageContent = `Take a moment and check out our affordable storage rates! Use our easy tenant portal to make your reservation!`;
 
 
-export const reservePageTitle = `Reserve A Storage Unit Near Catskill, NY | 12414 - Catskill Self Storage`;
-export const reservePageContent = `Current description works fine.`;
+export const reservePageTitle = `Reservations | Pinnacle Storage Solutions`;
+export const reservePageContent = `Use our easy online form to submit your reservation request! One of our managers will reach out shortly to confirm the reservation.`;
 
-export const payRentPageTitle = `Pay Your Rent Online | Catskill Self Storage, Catskill, NY, 12414 `;
-export const payRentPageContent = `We make it easy for you to pay your rent and check your balance online, 24/7.
-Simply login with the credentials supplied by our office to gain access!`;
-
-
-export const storageTipsTitle = `Self Storage Tips | Catskill Self Storage, Catskill, NY, 12414`;
-export const storageTipsContent = `We know moving can be stressful, let our helpful hints and tips make your experience that much easier.
-Use this tips to save yourself time and frustration!`;
+export const payRentPageTitle = `Pay Rent | Pinnacle Storage Solutions `;
+export const payRentPageContent = `Use the information provided on this page or call our office to learn how to access your account, and pay your bill online.`;
 
 
-export const unitSizerPageTitle = `Unit Sizer | Catskill Self Storage, Catskill, NY, 12414`;
-export const unitSizerPageContent = ``;
+export const storageTipsTitle = `Storage Tips | Pinnacle Storage Solutions`;
+export const storageTipsContent = `Use our storage tips page to help make your stay with us a breeze!`;
 
 
-export const contactPageTitle = `Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414`;
-export const contactPageContent = `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
-and U-Haul truck rental questions! Simply call or drop us a line!`;
+export const unitSizerPageTitle = `Unit Sizer | Pinnacle Storage Solutions`;
+export const unitSizerPageContent = `Our unit sizer page helps visualize what will
+fit in what sized self storage unit.`;
+
+
+export const contactPageTitle = `Contact Us | Pinnacle Storage Solutions`;
+export const contactPageContent = `Do you have a question about our services or your account with us? Use our contact form or the contact information listed here.`;

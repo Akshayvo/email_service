@@ -11,7 +11,6 @@ export const dataViewRates = [
             temperature controlled environment. Access hours from 6:00AM to 9:00PM, 7 days a week make us an ideal solution 
             for business storage, too!`,
     }
-    
 ];
 
 export const viewRatesAltText = `photograph of several self storage unit buildings with square red doors`;
@@ -25,6 +24,10 @@ export const th = [
   },
   {
     data: `Rate`,
+    state: objSIMSetting.objUnitSizesSetting.blnShowRate
+  },
+  {
+    data: `Discounted Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
   {
