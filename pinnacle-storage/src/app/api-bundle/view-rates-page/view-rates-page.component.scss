@@ -85,6 +85,9 @@ table {
 p {
   margin: 0;
 }
+.description {
+  width: 132px;
+}
 
 .ClimateControlled {
   font-size: 0.8rem;
@@ -99,6 +102,12 @@ p {
 .ClimateBorder {
   border-left: 1px solid $black;
   text-align: left;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .description {
+    width: 164px;
+  }
 }
 
 @media only screen and (min-width: 992px) {

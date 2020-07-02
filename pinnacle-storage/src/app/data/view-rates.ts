@@ -27,7 +27,7 @@ export const th = [
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
   {
-    data: `Discounted Rate`,
+    data: `First Month's Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
   {
@@ -38,10 +38,10 @@ export const th = [
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
-  {
-    data: `Move In`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
-  },
+//   {
+//     data: `Move In`,
+//     state: objSIMSetting.objActionSetting.blnAllowMoveIn
+//   },
   {
     data: `Climate Control`,
     state: objSIMSetting.objUnitSizesSetting.blnClimateControl
