@@ -5,15 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
-
-  
   locationAPIKey = {
     loc1: 'dzJ0OVcwSjIqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29020 Inez
     loc2: 'dzJ0OVcxSjUqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29156 Beck road
   };
 
   // locationAPIKey = {                                                     // demo north
-  //   loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  // loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   //   loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   // };
 
