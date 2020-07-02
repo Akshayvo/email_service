@@ -97,4 +97,28 @@ export const galleryHome = [
     cameras on large screen televisions in the background`,
     caption: ' Facility has Security Camera’s.',
   },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `sun-prairie-self-storage-open-unit`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `sun-prairie-self-storage-open-unit-thumb`,
+    alt: `interior of a metal self storage unit with clean walls and concrete floor`,
+    caption: ' Outside Access Climate Controlled Units',
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `sun-prairie-self-storage-climate-controlled-dolly`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `sun-prairie-self-storage-climate-controlled-dolly-thumb`,
+    alt: `a woman rolling a hand cart loaded with tools up to an open climate-controlled self storage unit`,
+    caption: 'Carts are supplied for Climate Controlled Units',
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `sun-prairie-self-storage-full-service-24-hour-kiosk`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `sun-prairie-self-storage-full-service-24-hour-kiosk-thumb`,
+    alt: `a woman holding a cylinder lock standing next to a 24-hour full-service kiosk built into a wall`,
+    caption: 'Self-Serve Kiosk to rent a unit 24 hours a day',
+  },
 ];
