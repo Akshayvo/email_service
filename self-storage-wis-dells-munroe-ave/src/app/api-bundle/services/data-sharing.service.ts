@@ -61,6 +61,15 @@ export class DataSharingService {
     City: '',
     State: '',
     ZIP: '',
+    AlternateFirstName: '',
+    AlternateLastName: '',
+    AlternateName: '',
+    AlternatePhone: '',
+    AlternateAddressLine1: '',
+    AlternateAddressLine2: '',
+    AlternateCity: '',
+    AlternateState: '',
+    AlternateZIP: '',
   };
 
 

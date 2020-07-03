@@ -4,7 +4,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
-import { option } from '../../data/view-rates';
+import { option, option1 } from '../../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
@@ -64,6 +64,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   count = 0;
 
   option =  [];
+  option1 = [];
   reserveUnitForm: FormGroup;
 
   tokenExit: string;
@@ -162,19 +163,19 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         ZIP: ['', Validators.required],
         // DriversLicense: ['', Validators.required],
         // DriversLicenseExpDate: ['', Validators.required],
-        // DateOfBirth: ['', Validators.required],
-        // AlternateFirstName: ['', Validators.required],
-        // AlternateLastName: ['', Validators.required],
-        // AlternatePhone: ['', [Validators.required,
-        //   Validators.pattern(
-        //     '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
-        //     )
-        //   ]],
-        // AlternateAddressLine1: ['', Validators.required],
-        // AlternateAddressLine2: [''],
-        // AlternateCity: ['', Validators.required],
-        // AlternateState: ['', Validators.required],
-        // AlternateZIP: ['', Validators.required],
+        DateOfBirth: ['', Validators.required],
+        AlternateFirstName: ['', Validators.required],
+        AlternateLastName: ['', Validators.required],
+        AlternatePhone: ['', [Validators.required,
+          Validators.pattern(
+            '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
+            )
+          ]],
+        AlternateAddressLine1: ['', Validators.required],
+        AlternateAddressLine2: [''],
+        AlternateCity: ['', Validators.required],
+        AlternateState: ['', Validators.required],
+        AlternateZIP: ['', Validators.required],
       }),
 
       lstUnitTypes: new FormArray([
@@ -275,6 +276,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   public fetchUSState() {
     this.option = option;
+    this.option1 = option1;
   }
 
   public navigate(location: any) {

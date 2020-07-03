@@ -4,6 +4,9 @@
         <p class="px-2 my-2" *ngIf="!navigateToMoveIn"><b>Confirming your reservation, please wait...</b></p>
         <!-- <p class="px-2 my-2" *ngIf="navigateToMoveIn"><b>Confirming your Move in, please wait...</b></p> -->
     </div>
+    <div class="text-center"> After you have completed your move in by signing the electronic lease, please contact our on-site manager at (608) 566-5948 to obtain your key.</div>
+        <div class="pb-3 text-center"> In the event that we cannot contact you regarding your storage unit, we will reach out to your alternate contact.
+             An alternate contact may access the unit if you share your key and gate code, but is not authorized to request lock cutting or contractual changes</div>
 <div class="pb-4" *ngIf="strConfirmation || strAccessCode; else other_content">
     <div *ngIf="ReservationFee === undefined">
         Your reservation was successful! One of our managers will be reaching out shortly to confirm your reservation details!
@@ -114,6 +117,76 @@
                                 {{zip}}
                             </td>
                         </tr>                     
+                    </tbody>
+                </table>
+                <h3 class="mb-3 mt-5">Alternate Tenant Information</h3>
+                <table>
+                    <tbody>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate First Name
+                            </td>
+                            <td>
+                                {{alternateFirstName}}
+                            </td>
+                        </tr>
+                        
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Last Name
+                            </td>
+                            <td>
+                                {{alternateLastName}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn" class="mt-2">
+                            <td>
+                                Alternate Phone
+                            </td>
+                            <td>
+                                {{alternatePhone}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Address Line1
+                            </td>
+                            <td>
+                                {{alternateAddressLine1}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Address Line2
+                            </td>
+                            <td>
+                                {{alternateAddressLine2}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate City
+                            </td>
+                            <td>
+                                {{alternateCity}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Province
+                            </td>
+                            <td>
+                                {{alternateState}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Postal Code
+                            </td>
+                            <td>
+                                {{alternateZIP}}
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

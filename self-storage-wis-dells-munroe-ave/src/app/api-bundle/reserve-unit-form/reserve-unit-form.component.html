@@ -1,12 +1,18 @@
 <div class="reserve-unit-form">
+       
         <div [hidden]="" *ngIf="unitTypeNotAvailability" class="alert alert-danger alert-dismissible fade show">
             There is no Unit available, Please choose the other unit type or call the facility for more detail
             <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="close()">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
+       
 
         <div class="loader" *ngIf="gettingTenantData"></div>
+        <div class="text-center"> After you have completed your move in by signing the electronic lease, please contact our on-site manager at (608) 566-5948 to obtain your key.</div>
+        <div class="pb-3 text-center"> In the event that we cannot contact you regarding your storage unit, we will reach out to your alternate contact.
+            An alternate contact may access the unit if you share your key and gate code, but is not authorized to request lock cutting or contractual changes</div>
+        
 
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div  class="row justify-content">
@@ -113,8 +119,8 @@
                             </div>
                         </div>
                    </div>
-                <!--    <div class="row">
-                    <div class="col-lg-6 form-group">
+                   <div class="row" >
+                    <div class="col-lg-6 form-group" *ngIf="navigateToMoveIn">
                             <label>Alternate First Name*</label>
                             <input type="text" formControlName="AlternateFirstName" class="form-control" placeholder="Enter Alternate First Name"
                             [value]=""
@@ -124,7 +130,7 @@
                                 <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternateFirstName.errors.required">Please fill out this field</small>
                             </div>
                     </div>
-                   <div class="col-lg-6 form-group">
+                   <div class="col-lg-6 form-group" *ngIf="navigateToMoveIn">
                             <label>Alternate Last Name*</label>
                             <input type="text" formControlName="AlternateLastName" class="form-control" placeholder="Enter Alternate Last Name"
                             [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AlternateLastName.errors }"/>
@@ -133,7 +139,7 @@
                             </div>
                     </div>
                  </div>
-                 <div class="row">
+                 <div class="row" *ngIf="navigateToMoveIn">
                     <div class=" col-md-6 form-group">
                         <label>Alternate Phone Number*</label>
                         <input type="tel" formControlName="AlternatePhone" placeholder="Enter Alternate Phone Number" class="form-control"
@@ -161,7 +167,7 @@
                        </div>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row" *ngIf="navigateToMoveIn">
                     <div class=" col-md-6 form-group">
                         <label>Drivers License Number*</label>
                         <input type="tel" formControlName="DriversLicense" placeholder="Enter Drivers License Number" class="form-control"
@@ -185,8 +191,8 @@
                             <small class="form-text text-muted" *ngIf="f.DriversLicenseExpDate.errors.required">Please fill out this field</small>
                         </div>
                     </div>
-                </div>
-                <div class="row">
+                </div> -->
+                <div class="row" *ngIf="navigateToMoveIn">
                     <div class="col-lg-12  form-group">
                               <label>Address Alternate Line 1*</label>
                               <input type="text" formControlName="AlternateAddressLine1" class="form-control" placeholder="Enter Alternate Address Line 1"
@@ -204,9 +210,9 @@
                             />
                         </div>
                    </div>
-                  <div class="row">
+                  <div class="row" *ngIf="navigateToMoveIn">
                        <div class="col-lg-4 col-md-6 form-group">
-                          <label>Alternate ity*</label>
+                          <label>Alternate City*</label>
                           <input type="text" formControlName="AlternateCity" class="form-control" placeholder="Enter Alternate City"
                           [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AlternateCity.errors }"/>
                           <div *ngIf="submitted && f.objTenant.controls.AlternateCity.errors" class="invalid-feedback">
@@ -218,11 +224,20 @@
                            <select class="form-control" formControlName="AlternateState"  
                            [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.AlternateState.errors }">
                                <option value="" disabled  selected >Select your Alternate State</option>
+                               <optgroup label="U.S. States/Territories">
                                    <option *ngFor="let option of option"
                                    [value]="option.id"
                                    >
                                    {{option.description}}
                                    </option>
+                                </optgroup>
+                                   <optgroup label="Canadian Provinces">
+                                        <option *ngFor="let option of option1"
+                                        [value]="option.id"
+                                        >
+                                        {{option.description}}
+                                        </option>
+                                    </optgroup>
                            </select>
 
                            <div *ngIf="submitted && f.objTenant.controls.AlternateState.errors" class="invalid-feedback">
@@ -238,7 +253,7 @@
                                <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternateZIP.errors.required">Please fill out this field</small>
                            </div>
                        </div>
-                  </div> -->
+                  </div>
                 </div>
 
                  <div class="col-lg-4">
