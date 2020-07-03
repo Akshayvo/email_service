@@ -78,7 +78,7 @@ export const galleryHome = [
     // tslint:disable-next-line:max-line-length
     thumb: `sun-prairie-self-storage-power-in-units`,
     alt: `bright lights running along the metal ceiling of a clean self storage unit`,
-    caption: 'Power is available in some units.',
+    caption: 'Power is available in some units',
   },
   {
     // tslint:disable-next-line: max-line-length
@@ -86,7 +86,7 @@ export const galleryHome = [
     // tslint:disable-next-line:max-line-length
     thumb: `sun-prairie-boat-storage-unit`,
     alt: `boat on a boat trailer parked partially inside an open self storage unit`,
-    caption: 'Boat storage with plenty of backup space.',
+    caption: 'Boat storage with plenty of backup space',
   },
   {
     // tslint:disable-next-line: max-line-length
@@ -95,7 +95,7 @@ export const galleryHome = [
     thumb: `sun-prairie-self-storage-security-cameras`,
     alt: `interior of a self storage facility office with a front desk in the foreground and security
     cameras on large screen televisions in the background`,
-    caption: ' Facility has Security Camera’s.',
+    caption: 'Facility has Security Cameras',
   },
   {
     // tslint:disable-next-line: max-line-length
