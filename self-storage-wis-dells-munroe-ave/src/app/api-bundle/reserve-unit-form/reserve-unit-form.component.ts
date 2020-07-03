@@ -163,7 +163,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         ZIP: ['', Validators.required],
         // DriversLicense: ['', Validators.required],
         // DriversLicenseExpDate: ['', Validators.required],
-        DateOfBirth: ['', Validators.required],
+        // DateOfBirth: ['', Validators.required],
         AlternateFirstName: ['', Validators.required],
         AlternateLastName: ['', Validators.required],
         AlternatePhone: ['', [Validators.required,
