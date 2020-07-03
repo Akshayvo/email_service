@@ -37,7 +37,7 @@ import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confi
       children: [
         { path: '', component: ViewRatesPageComponent },
         { path: 'reserve', component: ReserveUnitFormComponent },
-        // { path: 'move-in', component: ReserveUnitFormComponent },
+        { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
         { path: 'confirmation-page', component: ConfirmationPageComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },

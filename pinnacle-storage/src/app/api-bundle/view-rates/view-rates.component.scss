@@ -65,7 +65,7 @@ table {
 
 .loader {
   border: 5px solid #f3f3f3;
-  border-top: 5px solid $secondary;
+  border-top: 5px solid $primary;
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -91,6 +91,12 @@ table {
 
 .background-padding {
   padding: 64px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .background-padding {
+    padding: 40px;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
