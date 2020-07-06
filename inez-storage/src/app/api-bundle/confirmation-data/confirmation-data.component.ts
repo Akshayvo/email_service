@@ -128,9 +128,6 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     $event.returnValue = true;
   }
 
-
-
-
   public fetchOption() {
     this.options = option;
     if (!!this.dataSharingService.objTenant.State) {

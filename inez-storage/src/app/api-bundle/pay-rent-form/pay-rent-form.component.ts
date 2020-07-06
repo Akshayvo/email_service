@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { FetchDataService } from '../services/fetch-data.service';
@@ -207,6 +207,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     // if (this.router.url ===  '/pay-rent/payment' ) {
     //   this.navigateToMoveInPayment = true;
     // }
+  }
+
+  @HostListener('window:beforeunload', ['$event'])
+  unloadNotification($event: any) {
+    $event.returnValue = true;
   }
 
   ngOnInit() {

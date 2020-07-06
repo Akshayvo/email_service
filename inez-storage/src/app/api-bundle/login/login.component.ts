@@ -92,7 +92,6 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.name = 'Beck Road Storage';
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-
     }
   }
 

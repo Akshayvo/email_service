@@ -17,6 +17,7 @@ export class AppResolver implements Resolve<any> {
   ) {}
 
   resolve() {
-  return this.dataSharingService.getAPIKey();
+    console.log('this.dataSharingService.getAPIKey', this.dataSharingService.getAPIKey());
+    return this.dataSharingService.getAPIKey();
   }
 }

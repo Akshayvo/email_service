@@ -155,7 +155,8 @@ export const apiRoutes = [
       {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
       { path: 'verifyCode', component: VerifyCodeComponent },
       { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-    ]
+    ],
+    resolve: { data: AppResolver }
   },
   { path: 'pay-rent/beck-road-storage', component: PayRentComponent,
     children: [
@@ -166,7 +167,8 @@ export const apiRoutes = [
       {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
       { path: 'verifyCode', component: VerifyCodeComponent },
       { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-    ]
+    ],
+    resolve: { data: AppResolver }
   },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
