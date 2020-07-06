@@ -4,7 +4,7 @@ import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { FetchDataService } from '../services/fetch-data.service';
-import { th } from '../../data/view-rates';
+import { th, staticSizes } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 
@@ -47,6 +47,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   th: any;
   tenant: any;
   text = false;
+  staticSizes: any;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -66,6 +67,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   public fetchThData() {
     this.th = th;
+    this.staticSizes = staticSizes;
   }
 
 

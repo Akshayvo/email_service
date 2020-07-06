@@ -47,6 +47,23 @@
         </tr>
       </tbody>
   </table>
+<div class="pt-5" >
+  <table [class.display]="!showTable">
+    <tHead [class.display]="!showTable">
+      <tr>
+        <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th">{{th.data}}</th>
+      </tr>
+    </tHead>
+    <tbody>
+      <tr *ngFor="let staticSizes of staticSizes">
+        <td colspan="2" class="px-4 border text-center">
+            {{staticSizes.size}}
+        </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
   <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes">
     <div class="col-6 text-center ">  
       <strong>Unit Size</strong>

@@ -9,11 +9,34 @@ export const viewRates = [
             security at all times. So, stop killing the grass in your yard or racking up expensive fees at the marina! McKeesport Storage has everything 
             you need to make your next winter vehicle storage project a success!`,
     },
-    
 ];
 
 
 export const altText = ``;
+
+export const staticSizes = [
+  {
+    size: '5x5 will hold approx. boxes & bags'
+  },
+  {
+    size: '5x10  1 & ½ rooms of furniture'
+  },
+  {
+    size: '5x15 2-4 rooms'
+  },
+  {
+    size: '10x10 3-5 rooms'
+  },
+  {
+    size: '10x15 5-7 rooms'
+  },
+  {
+    size: '10x20 car or a whole house 9 rooms'
+  },
+  {
+    size: '10x30 car/household/ contractor use'
+  },
+];
 
 export const th = [
   {
