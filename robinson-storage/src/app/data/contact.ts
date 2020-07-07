@@ -37,14 +37,14 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    // {
-    //     label: 'twitter',
-    //     path: '',
-    //     class: 'fab fa-twitter-square',
-    // },
-    // {
-    //     label: 'facebook',
-    //     path: '',
-    //     class: 'fab fa-facebook-square',
-    // },
+    {
+        label: 'instagram',
+        path: 'https://www.instagram.com/robinson.storage/',
+        class: 'fab fa-instagram'
+    },
+    {
+        label: 'facebook',
+        path: 'https://www.facebook.com/robinsonstorageK0L1T0/',
+        class: 'fab fa-facebook-square',
+    },
 ];
