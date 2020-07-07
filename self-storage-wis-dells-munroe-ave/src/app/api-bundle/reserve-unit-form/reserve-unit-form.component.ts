@@ -164,18 +164,39 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         // DriversLicense: ['', Validators.required],
         // DriversLicenseExpDate: ['', Validators.required],
         // DateOfBirth: ['', Validators.required],
-        AlternateFirstName: ['', Validators.required],
-        AlternateLastName: ['', Validators.required],
-        AlternatePhone: ['', [Validators.required,
+        AlternateName:  ['',  conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
+        // AlternateLastName: ['',  conditionalValidator(
+        //   (() => this.navigateToReserve === true),
+        //   Validators.required
+        // )],
+        AlternatePhone:   ['', [ conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        ),
           Validators.pattern(
             '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
             )
-          ]],
-        AlternateAddressLine1: ['', Validators.required],
+        ]],
+        AlternateAddressLine1: ['',  conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
         AlternateAddressLine2: [''],
-        AlternateCity: ['', Validators.required],
-        AlternateState: ['', Validators.required],
-        AlternateZIP: ['', Validators.required],
+        AlternateCity: ['', conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
+        AlternateState: ['', conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
+        AlternateZIP: ['', conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
       }),
 
       lstUnitTypes: new FormArray([
