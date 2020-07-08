@@ -22,6 +22,7 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { PaymentComponent } from './payment/payment.component';
 
 import { ErrorHandlerService } from './services/error-handler.service';
 
@@ -41,6 +42,7 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
     StorageTipsComponent,
     AccordionComponent,
     ContactButtonComponent,
+    PaymentComponent,
     
     UnitSizerComponent,
   ],

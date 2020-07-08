@@ -6,7 +6,7 @@ import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ErrorComponent } from './error/error.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
-
+import { PaymentComponent } from './payment/payment.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 
 const routes: Routes = [
@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
   { path: 'unit-sizer', component: UnitSizerComponent},
+  { path: 'pay-rent', component: PaymentComponent },
   { path: 'review', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
