@@ -71,6 +71,7 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
           this.showLoader = false;
           localStorage.removeItem('strTenantToken');
           localStorage.removeItem('paymentNavigationUrl');
+          localStorage.removeItem('APIKey');
           console.log('password changed');
           this.passwordChanged = true;
         } else {

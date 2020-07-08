@@ -17,7 +17,14 @@ export class PayRentComponent implements OnInit {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private dataSharingService: DataSharingService,
-  ) { }
+  ) { 
+    if (!!localStorage.getItem('APIKey')) {
+      this.dataSharingService.apiKey = localStorage.getItem('APIKey');
+    }
+    // if (this.router.url.includes('inez-storage')) {
+    // } else  if (this.router.url.includes('beck-road-storage'))  {
+    // }
+  }
 
   ngOnInit() {
     this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[1].path;

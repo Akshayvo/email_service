@@ -287,6 +287,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.signOutSubscribe$ = this.signOutService.signOut(logOut)
       .subscribe(result => {
         localStorage.removeItem('strTenantToken');
+        if (!!localStorage.getItem('APIKey')) {
+          localStorage.removeItem('APIKey');
+        }
         this.router.navigate(['/']);
       }, (err) => {
       }

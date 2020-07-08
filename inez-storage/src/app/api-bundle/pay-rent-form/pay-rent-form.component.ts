@@ -546,6 +546,9 @@ public navigateToPrevious() {
       .subscribe(result => {
         this.router.navigate([`pay-rent`]);
         localStorage.removeItem('paymentNavigationUrl');
+        if (!!localStorage.getItem('APIKey')){
+          localStorage.removeItem('APIKey');
+        }
         localStorage.removeItem('strTenantToken');
       }, (err) => {
       }
