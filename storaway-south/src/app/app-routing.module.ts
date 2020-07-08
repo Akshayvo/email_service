@@ -5,6 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { ErrorComponent } from './error/error.component';
+import { PaymentComponent } from './payment/payment.component';
 
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 
@@ -16,7 +17,7 @@ const routes: Routes = [
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'view-rates', component: ViewRatesComponent },
-  
+  { path: 'pay-rent', component: PaymentComponent },
   { path: 'unit-sizer', component: UnitSizerComponent},
   { path: 'review', component: HomeComponent,
     resolve: {
