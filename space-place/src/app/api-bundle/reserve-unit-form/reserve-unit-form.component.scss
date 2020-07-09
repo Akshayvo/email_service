@@ -1,9 +1,5 @@
 @import '../../../styles.scss';
 
-// label {
-//   color: white;
-// }
-
 .mat-form-field::ng-deep {
   .mat-form-field-wrapper {
     padding-bottom: 0;
@@ -25,14 +21,14 @@
           font-size: 1rem;
           line-height: 1.5;
           color: #495057;
-          background-color: #fff;
+          background-color: $white;
           background-clip: padding-box;
           border: 1px solid #ced4da;
           border-radius: 0.25rem;
           transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         }
 
-        .form-control.is-invalid,.was-validated .custom-select:invalid, .was-validated .form-control:invalid {
+        .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
           border-color: #dc3545;
         }
       }
@@ -52,11 +48,11 @@
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: $white;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color .15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
@@ -65,12 +61,12 @@
 }
 
 
-.text-muted {
+.text-muted{
   color: red !important;
   font-weight: 700 !important;
 }
 
-::ng-deep.mat-datepicker-content .mat-calendar{
+::ng-deep.mat-datepicker-content .mat-calendar {
   .mat-calendar-body-cell-content {
     font-weight: 600;
   }
@@ -101,8 +97,7 @@
 }
 
 .reserve-unit-form {
-  color: white;
-
+  color: #fff;
   h2 {
     font-size: 1.8rem;
   }
@@ -120,7 +115,7 @@
 
 table {
   tbody {
-    tr:nth-child(even){
+    tr:nth-child(even) {
       background-color: #dcdcdc;
     }
 
@@ -135,7 +130,7 @@ table {
 
 .loader {
   border: 3px solid #f3f3f3;
-  border-top: 3px solid $secondary;
+  border-top: 3px solid $primary;
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -143,7 +138,7 @@ table {
   z-index: 1;
   position: absolute;
   left: 45%;
-  top: 45%
+  top: 45%;
 }
 
 @keyframes spin {

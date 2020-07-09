@@ -4,6 +4,14 @@
   display: none;
 }
 
+.viewrates-mobile {
+  color: $white;
+}
+
+.btn-primary {
+  color: $black !important;
+}
+
 .iconStyle {
   cursor: pointer;
 }
@@ -11,15 +19,17 @@
 .display-card {
   display: block;
 }
-.mobile {
-  color: #fff;
-}
 
 .card-text {
   width: 150px;
   padding: 10px;
   background-color: #edf1ee;
   text-align: center;
+  color: $black;
+  // position: absolute;
+  // right: 30px;
+  // bottom: -60px;
+  // z-index: 1;
 }
 
 table {
@@ -33,10 +43,9 @@ table {
     }
   }
   tbody {
-    tr:nth-child(even){
+    tr:nth-child(even) {
       background-color: #dcdcdc;
       color: black;
-
     }
     tr {
       color: $white;
@@ -70,7 +79,6 @@ table {
   height: 80px;
   animation: spin 1s linear infinite;
   margin: auto;
-  vertical-align: middle;
 }
 
 @keyframes spin {
@@ -83,13 +91,13 @@ table {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // width: 100%;
-  // border-bottom: thin solid lightgray;
 }
-p{
+
+p {
   margin: 0;
 }
-.ClimateControlled { 
+
+.ClimateControlled {
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -100,24 +108,38 @@ p{
 }
 
 .ClimateBorder {
-  border-left: 1px solid #000;
+  border-left: 1px solid $white;
   text-align: left;
 }
 
-@media only screen and (min-width:992px) {
-  .viewrates-mobile{
+@media only screen and (min-width: 992px) {
+  .viewrates-mobile {
     display: none;
   }
 }
 
-@media only screen and (max-width:991px) {
-  .viewrates-desktop{
+@media only screen and (max-width: 991px) {
+  .viewrates-desktop {
     display: none;
   }
 }
 
-@media only screen and (max-width: 450px) {
-  .btn-primary {
-    min-width: unset;
+@media only screen and (max-width: 767px)  and (min-width: 381px) {
+  .buttons {
+    .btn {
+      min-width: 150px;
+    }
+
+    .btn-outline-primary {
+      color: $primary !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .buttons {
+    .btn {
+      min-width: auto;
+    }
   }
 }

@@ -12,16 +12,12 @@ export class UaParserService {
   constructor() {
     this.uaParser = new UAParser();
     this.browserDetails = this.uaParser.getResult();
-    // console.log('The Browser Details:', this.browserDetails);
     this.determineBaseUrl();
-    // console.log('Base Url:', this.baseUrl);
-
   }
 
   determineBaseUrl() {
     if (this.browserDetails) {
       const { browser: { name = 'Chrome', major = '32 '} } = this.browserDetails;
-      // console.log(`Browser Name: ${name} Major: ${major}`);
       switch (name) {
         case 'Chrome':
           this.typeOfImages = (major && major < 32) ? 'JPG' : 'WEBP';
@@ -35,9 +31,9 @@ export class UaParserService {
       }
     }
     if (this.typeOfImages === 'WEBP') {
-      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/webp`;
+      this.baseUrl = `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Catskill_Images/webp`;
     } else {
-      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Yes_Storage/jpg';
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/jpg';
     }
   }
 }

@@ -1,7 +1,7 @@
-@import "../../../styles.scss";
+@import '../../../styles.scss';
 
 h3 {
-  color: white;
+  color: $white;
 }
 
 .button {
@@ -10,13 +10,13 @@ h3 {
 
 table {
   tbody {
-    tr:nth-child(even) {
+    tr:nth-child(even){
       background-color: #dcdcdc;
-      color: black;
+      color: $black;
     }
 
     tr {
-      color: white;
+      color: $white;
       td {
         padding: 10px 20px;
         border: 1px solid #dee2e6;
@@ -24,7 +24,13 @@ table {
     }
   }
 }
-
+.home-link {
+  a {
+    color: $secondary;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
 
 .loaderBg {
   width: 300px;
@@ -43,7 +49,7 @@ table {
 
 .loader {
   border: 5px solid #f3f3f3;
-  border-top: 5px solid $secondary;
+  border-top: 5px solid $primary;
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -112,7 +118,7 @@ table {
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.7);
     p{
-      text-align: center;
+      text-align: center
     }
   }
 }

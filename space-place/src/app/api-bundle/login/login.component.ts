@@ -4,9 +4,10 @@ import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
+import { DataSharingService } from '../services/data-sharing.service';
 import { loginDetail } from '../../data/pay-rent';
 import { contact } from '../../data/contact';
-import { DataSharingService } from '../services/data-sharing.service';
+
 
 @Injectable()
 
@@ -24,13 +25,16 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   allowedToshow = false;
 
+  loginDetail = [];
+  contact: any;
+
+
   showForgotPassword = false;
   showPayRent = false;
-  contact: any;
+
   showLoader = false;
 
   showLoginPage = true;
-  loginDetail = [];
 
   authData: string;
   tenantInfo: TenantInfo;
@@ -90,6 +94,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.contact = contact;
   }
 
+
   handleForgotPassword() {
     this.showForgotPassword = true;
   }
@@ -113,13 +118,6 @@ export class LoginComponent implements OnInit, OnDestroy {
       );
   }
 
-
-public ngOnDestroy(): void {
-  if (this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
-    this.authUnsubscribe$.unsubscribe();
-  }
-}
-
   onSubmit() {
     this.submitted = true;
 
@@ -134,4 +132,10 @@ public ngOnDestroy(): void {
     }
   }
 
+
+  public ngOnDestroy(): void {
+      if (this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
+      this.authUnsubscribe$.unsubscribe();
+    }
+  }
 }

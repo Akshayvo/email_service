@@ -1,6 +1,6 @@
 @import "../../../styles.scss";
 
-.payRent {
+payRent {
   h2 {
     color: white;
   }
@@ -64,7 +64,8 @@ table {
 
 .payRent {
   h2 {
-    border-bottom: 1px solid white;
+    color: $white;
+    border-bottom: 1px solid $white;
   }
 }
 
@@ -87,7 +88,6 @@ table {
 .modal-custom-style {
   .btn {
     display: contents;
-    color: white;
   }
 
   .btn-link {
@@ -124,7 +124,7 @@ table {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  left: 45%;
+  left: 195px;
   animation: spin 1s linear infinite;
   position: absolute;
   z-index: 1;
@@ -134,7 +134,7 @@ table {
 .go-to-home {
   a {
     text-decoration: underline;
-    color: white;
+    color: $primary;
     cursor: pointer;
   }
 }
