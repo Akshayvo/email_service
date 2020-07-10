@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "inez-storage"
+  "defaultProject": "inez-storage",
+  "cli": {
+    "analytics": "fd22581d-cefd-479b-9e4f-f0fc7f0f83de"
+  }
 }

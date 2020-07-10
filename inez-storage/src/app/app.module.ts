@@ -115,7 +115,7 @@ import { ScriptHackComponent } from './script-hack/script-hack.component';
   imports: [
     NgtUniversalModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
+    Angulartics2Module.forRoot(),
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
