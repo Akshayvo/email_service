@@ -1,0 +1,409 @@
+@import "../../styles.scss";
+
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Secure_Storage/webp/affordable-secure-storage-unit-row.webp");
+}
+
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Secure_Storage/jpg/affordable-secure-storage-unit-row.jpg");
+}
+
+.jumbotron-top {
+  height: 80vh;
+}
+
+.jumbotron {
+  height: 100vh;
+}
+
+.jumbotron-bottom {
+  height: 20vh;
+}
+
+.carousel-caption {
+  bottom: 40px;
+
+  img {
+    height: 120px;
+  }
+}
+
+.carousel-indicators li {
+  background-color: black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-item {
+  height: 200px;
+}
+
+.started {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: 'Kaushan Script', cursive;
+}
+
+// a {
+//   color:#000;
+// }
+
+.service {
+  color: $dark;
+  text-align: left;
+
+  h1 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+
+  img {
+    width: 70%;
+    height: 100%;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+.jumbotron-home {
+  .for-mobile-view {
+    display: none;
+  }
+
+  .for-desktop-view {
+    display: block;
+
+    .jumbotron-desktop {
+      padding-top: 55px;
+      height: 80vh;
+    }
+  }
+
+
+
+  // .feature-block {
+  //   height: 20vh ;
+
+  //   img {
+  //     height: 60px;
+  //   }
+
+  //   .f-text {
+  //     color: $dark;
+  //     font-weight: 600;
+  //     font-size: 1.2rem;
+  //   }
+  // }
+}
+
+.feature-home {
+  .feature-block {
+    height: 20vh;
+
+    img {
+      height: 60px;
+    }
+
+    .f-text {
+      color: $dark;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.content-align {
+  text-align: right;
+}
+
+.contact-hours {
+  border-left: 2px solid $border;
+  padding-left: 5%;
+}
+
+.for-location {
+  padding: 35px 0 64px 0;
+
+  .locaion-selection {
+    padding-bottom: 35px;
+  }
+
+  .btn-outline-primary {
+    margin-right: 10px;
+  }
+}
+
+
+.content-left {
+  text-align: left;
+}
+
+
+.disp {
+  display: block;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+}
+
+.testimonial {
+  background: $light;
+  height: auto;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-indicators {
+    li {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 1px $primary solid;
+      position: relative;
+      flex: 0 1 auto;
+      margin-right: 3px;
+      margin-left: 3px;
+      text-indent: -999px;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: $primary;
+    }
+  }
+
+  .carousel-item {
+    max-width: 100%;
+
+    .active {
+      background-position: center center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-height: 580px) and (min-height: 480px) {
+  .feature-home{
+    .f-text{
+      font-size: 1rem !important;
+    }
+  }
+}
+
+@media screen and (max-height: 700px) and (min-width: 600px) {
+  .carousel-caption {
+    bottom: 40px;
+
+    img {
+      height: 60px;
+    }
+  }
+
+
+  .jumbotron-home {
+    .feature-block {
+      height: 160px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1199px) {
+  .content-align {
+    text-align: right;
+  }
+  .feature-home{
+    img{
+      height: 40px !important;
+    }
+  .f-text {
+    font-weight: 600;
+    font-size: 1rem !important;
+  }
+
+}
+}
+
+@media screen and (max-width: 991px) {
+  .jumbotron-home {
+    .feature-block {
+      img {
+        height: 40px;
+      }
+    }
+  }
+  
+  .feature-home{
+      img{
+        height: 40px !important;
+      }
+    .f-text {
+      font-weight: 600;
+      font-size: 1rem !important;
+    }
+  
+}
+}
+
+
+@media screen and (max-width: 800px) {
+  .content-align {
+    text-align: right;
+  }
+
+  .myCarousel {
+    .carousel-item {
+      min-height: 40vh;
+      background-size: cover;
+      background-position: center center;
+      background-position-x: center;
+      background-position-y: center;
+      image-rendering: inherit;
+
+      img {
+        min-height: 40vh;
+        width: auto;
+        block-size: 100%;
+        position: relative;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-hours {
+    border-left: none;
+    padding-left: 5%;
+  }
+
+  .disp {
+    display: block;
+  }
+
+  .feature-home {
+    img {
+      height: 40px !important;
+    }
+
+    .f-text {
+      font-weight: 600;
+      font-size: 0.7rem !important;
+    }
+  }
+
+  .for-location {
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .carousel-item {
+    height: 240px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-height: 480px) {
+  .feature-home {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .jumbotron-top {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .jumbotron {
+    padding: 0;
+    margin: 0 !important;
+  }
+
+  .carousel-caption {
+    bottom: 40px;
+
+    img {
+      height: 60px;
+    }
+  }
+
+  .feature-home { 
+    display: none;
+  }
+
+  .jumbotron-home {
+    .for-mobile-view {
+      display: block;
+    }
+
+    .for-desktop-view {
+      display: none;
+    }
+  }
+
+  .content-align {
+    text-align: center;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .f-block-img {
+    padding-top: 10px;
+
+    .f-img {
+      height: 40%;
+      width: 40%;
+    }
+  }
+
+  .f-text {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .myCarousel {
+    .carousel-item {
+      min-height: 40vh;
+      width: 200%;
+      background-size: cover;
+      background-position: center center;
+      background-position-x: center;
+      background-position-y: center;
+      image-rendering: inherit;
+
+      img {
+        min-height: 40vh;
+        width: auto;
+        block-size: 100%;
+        position: relative;
+      }
+    }
+  }
+
+  .contact-hours {
+    border-left: none;
+    padding-left: 5%;
+  }
+}
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+

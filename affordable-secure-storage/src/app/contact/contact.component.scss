@@ -1,0 +1,80 @@
+@import "../../styles.scss";
+
+.contentHolder {
+  padding-top: 120px;
+  margin-bottom: 50px;
+  min-height: 90vh;
+  max-height: auto;
+  display: block;
+
+  .location-selection {
+    padding-bottom: 35px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .contact-data {
+    background-color: $light;
+
+    label {
+      font-size: 1rem;
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+
+    .btn {
+      padding: 5px 140px;
+      min-width: 160px;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 200px;
+  }
+
+  form {
+    button {
+      float: right;
+    }
+  }
+}
+
+.form-control {
+  font-size: 0.9rem;
+}
+a{
+  color:#000;
+}
+
+@media only screen and (max-width: 991px) {
+  .contentHolder {
+    padding-top: 90px
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contentHolder {
+    padding-top: 70px;
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .for-mall {
+    margin-top: 20px;
+  }
+
+  .for-village {
+    margin-top: 20px;
+  }
+}
