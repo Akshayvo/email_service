@@ -6,7 +6,7 @@
 }
 
 .padding-top {
-  padding-top: 130px;
+  padding-top: 90px;
 }
 
 .background-padding {
@@ -88,25 +88,6 @@ h1 {
 
 .disp-mob {
   display: none;
-}
-
-@media only screen and (max-width: 1199px) and (min-width: 518px) {
-  .padding-top {
-    padding-top: 156px;
-  }
-}
-
-
-@media only screen and (max-width: 517px) and (min-width: 363px) {
-  .padding-top {
-    padding-top: 180px;
-  }
-}
-
-@media only screen and (max-width: 362px) {
-  .padding-top {
-    padding-top: 200px;
-  }
 }
 
 @media screen and (max-width: 991px) {
