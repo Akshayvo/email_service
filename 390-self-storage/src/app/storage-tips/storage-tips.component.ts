@@ -22,8 +22,8 @@ export class StorageTipsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Take advantage of everything self storage has to offer
-      while making packing and organizing easier with this helpful guide from 390 Self Storage.`
+      content: `Storage tips by - 390 Self Storage. Use smaller boxes for books and heavy items,
+      use larger boxes for lighter items, visit the URL for more useful information. `
     });
     this.titleService.setTitle('Self Storage Tips For Bedroom And Clothing, Rochester NY, Gates');
   }

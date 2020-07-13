@@ -39,8 +39,8 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Are you looking for affordable units and service with a smile?
-      We are a self storage company in Rochester NY. Contact 390 Self Storage for awesome services!`
+      content: `390 Self Storage offers affordable storage units and services with a smile.
+      Looking forward to helping you with your storage requirements in Rochester NY. `
     });
     this.titleService.setTitle('Self Storage Company Rochester NY, Secure Storage, Gates NY');
 

@@ -40,8 +40,8 @@ export class HomeComponent implements OnInit {
     // })
     this.meta.addTag({
       name: 'description',
-      content: `Conveniently located in Rochester NY, we offer the best storage deals
-      with our climate controlled self storage units. Trust Us to Keep Your Things Safe. Contact us today!`
+      content: `390 Self Storage offers the best storage deals in Rochester NY. Keep your things safe with
+      our climate-controlled self-storage units. Contact us today!`
     });
     // this.meta.addTag({
     //   name: 'google-site-verification',

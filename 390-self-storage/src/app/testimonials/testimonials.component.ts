@@ -18,9 +18,10 @@ export class TestimonialsComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: ``
+      content: `Visit the URL and find out what customers are saying about our unbeatable service
+      and quality. Serving Rochester Gates and Brighton NY.`
     });
-    this.titleService.setTitle('Testimonials | 390 Self Storage');
+    this.titleService.setTitle('390 Self Storage Rochester NY - Testimonials |  Gates, Brighton NY');
    }
 
   ngOnInit() {

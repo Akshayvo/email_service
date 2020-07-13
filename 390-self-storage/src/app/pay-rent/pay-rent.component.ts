@@ -20,8 +20,8 @@ export class PayRentComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Do you need to pay your storage bill online? At 390 Self Storage,
-      we offer an online rent payment facility. Pay rent from the comfort of your home.!`
+      content: `At 390 Self Storage, we offer an online rent payment facility. Pay the storage bill
+      from the comfort of your home.! Serving Rochester, Gates, and Brighton NY.`
     });
     this.titleService.setTitle('Pay Storage Rent Online, Rochester NY, Gates, Brighton');
   }

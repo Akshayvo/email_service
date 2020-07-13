@@ -20,8 +20,8 @@ export class ViewRatesComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Cheap self-storage units with prices starting at $50/month.
-      Browse our affordable storage deals and the greatest variety of storage. Reserve today!`
+      content: `390 Self Storage is Rochester's newest self-storage facility available at a very
+      affordable price. Reserve your unit in our brand new facility today!`
     });
     this.titleService.setTitle('Cheap Storage Units Rochester NY, Affordable Storage Units');
   }
