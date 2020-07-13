@@ -37,7 +37,8 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `If you have questions about your account or the services we offer, take a moment to fill our out form, or use the contact information to speak with us!`
+      content: `If you have questions about your account or the services we offer,
+      take a moment to fill our out form, or use the contact information to speak with us!`
     });
     this.titleService.setTitle('Contact Us | Macedon Storage');
 
