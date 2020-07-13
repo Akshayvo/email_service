@@ -7,9 +7,9 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:contact-linden@lindenstorage.com',
+        redirect: 'mailto:support@lindenstorage.com',
         label: 'Email: ',
-        data: 'contact-linden@lindenstorage.com',
+        data: 'support@lindenstorage.com',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
