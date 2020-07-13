@@ -35,6 +35,15 @@
   height: 15px;
 }
 
+.carousel-indicators .active {
+  background-color: white;
+  border-radius: 50%;
+  // border-color: black;
+  border: 2px solid black;
+  width: 15px;
+  height: 15px;
+}
+
 .carousel-item {
   height: 200px;
 }
@@ -45,15 +54,15 @@
   font-family: 'Kaushan Script', cursive;
 }
 
-// a {
-//   color:#000;
-// }
+a {
+  color: #000;
+}
 
 .service {
   color: $dark;
   text-align: left;
 
-  h1 {
+h1 {
     line-height: 2.5rem;
     font-size: 2rem;
   }

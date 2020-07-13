@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { aboutUsLocation1,aboutUsLocation3,
-          aboutUsHeadingLocation1, aboutUsHeadingLocation3,
+import { aboutUsLocation1,
+          aboutUsHeadingLocation1,
           aboutUsImageLocation1,
-          aboutUsImageLocation3 } from '../data/location';
+       } from '../data/location';
 import { serviceOffered } from '../data/home';
 
 @Component({

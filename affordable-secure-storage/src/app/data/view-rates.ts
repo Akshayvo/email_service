@@ -5,18 +5,18 @@ export const th = [
     {
       data: `Rate`
     },
-    {
-      data: `Deposit`
-    },
-    {
-      data: `Climate Control`
-    },
+    // {
+    //   data: `Deposit`
+    // },
+    // {
+    //   data: `Climate Control`
+    // },
     {
       data: `Reserve a Unit`
     },
-    {
-      data: `Move In`
-    }
+    // {
+    //   data: `Move In`
+    // }
   ];
 
   export const option =  [

@@ -25,15 +25,10 @@ import { DirectionsComponent } from './directions/directions.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { SelectLocationComponent } from './select-location/select-location.component';
-import { TruckRentalsComponent } from './truck-rentals/truck-rentals.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { AboutusPhotosComponent } from './aboutus-photos/aboutus-photos.component';
-import { RvRentalComponent } from './rv-rental/rv-rental.component';
-import { WildwoodComponent } from './wildwood/wildwood.component';
-import { PrimeTimeComponent } from './prime-time/prime-time.component';
-import { CamperRentalComponent } from './camper-rental/camper-rental.component';
 import { LoginComponent } from './api-bundle/login/login.component';
 import { ForgotPasswordComponent } from './api-bundle/forgot-password/forgot-password.component';
 import { ChangePasswordComponent } from './api-bundle/change-password/change-password.component';
@@ -59,7 +54,6 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ReserveComponent } from './api-bundle/reserve/reserve.component';
-import { WinnebagoComponent } from './winnebago/winnebago.component';
 import { ScriptHackComponent } from './script-hack/script-hack.component';
 
 @NgModule({
@@ -84,13 +78,8 @@ import { ScriptHackComponent } from './script-hack/script-hack.component';
     TabsComponent,
     AccordionComponent,
     SelectLocationComponent,
-    TruckRentalsComponent,
     ErrorHandlerComponent,
     AboutusPhotosComponent,
-    RvRentalComponent,
-    WildwoodComponent,
-    PrimeTimeComponent,
-    CamperRentalComponent,
     LoginComponent,
     ForgotPasswordComponent,
     ChangePasswordComponent,
@@ -105,7 +94,6 @@ import { ScriptHackComponent } from './script-hack/script-hack.component';
     PayRentComponent,
     ViewRatesComponent,
     ReserveComponent,
-    WinnebagoComponent,
     ScriptHackComponent
   ],
   schemas: [
@@ -115,7 +103,7 @@ import { ScriptHackComponent } from './script-hack/script-hack.component';
   imports: [
     NgtUniversalModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    Angulartics2Module.forRoot(),
+    Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,

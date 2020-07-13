@@ -22,10 +22,8 @@ export class FooterComponent implements OnInit {
   }
 
   public isSomePage() {
-   if (this.router.url.includes('/location/beck-road-storage'))  {
+   if (this.router.url.includes('/location/affordable-secure-storage-floral-city'))  {
       this.locationId = 1;
-    } else {
-      this.locationId = 0;
     }
   }
 }

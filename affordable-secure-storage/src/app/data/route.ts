@@ -21,67 +21,16 @@ import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-passw
 import { VerifictionCodeGuard } from '../verificationCode.guard';
 import { ContactComponent } from '../contact/contact.component';
 import { ErrorComponent } from '../error/error.component';
-import { TruckRentalsComponent } from '../truck-rentals/truck-rentals.component';
-import { RvRentalComponent } from '../rv-rental/rv-rental.component';
-import { CamperRentalComponent } from '../camper-rental/camper-rental.component';
-import { WildwoodComponent } from '../wildwood/wildwood.component';
-import { PrimeTimeComponent } from '../prime-time/prime-time.component';
 import { StorageUnitComponent } from '../iframe-bundle/storage-unit/storage-unit.component';
 import { ReserveUnitComponent } from '../iframe-bundle/reserve-unit/reserve-unit.component';
 import { MakePaymentComponent } from '../iframe-bundle/make-payment/make-payment.component';
 import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
 import { ViewRatesComponent } from '../api-bundle/view-rates/view-rates.component';
 import { ReserveComponent } from '../api-bundle/reserve/reserve.component';
-import { WinnebagoComponent } from '../winnebago/winnebago.component';
 
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'location/affordable-secure-storage-floral-city',
-      component: LocationComponent,
-      children: [
-        {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-        { path: 'storageUnits', component: ViewRatesComponent,
-          children: [
-            { path: '', component: ViewRatesPageComponent },
-            { path: 'reserve', component: ReserveUnitFormComponent },
-            { path: 'move-in', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-          ]
-        },
-        { path: 'unitSizer', component: UnitSizerComponent },
-        { path: 'reserveUnit', component: ReserveComponent,
-          children: [
-            // { path: '', component: ViewRatesPageComponent },
-            { path: '', component: ReserveUnitFormComponent },
-            { path: 'reserve', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-          ]
-        },
-        { path: 'moveIn', component: ReserveComponent,
-          children: [
-            // { path: '', component: ViewRatesPageComponent },
-            { path: '', component: ReserveUnitFormComponent },
-            { path: 'move-in', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-          ]
-        },
-        { path: 'truck-rentals', component: TruckRentalsComponent },
-        { path: 'photos', component: PhotosComponent },
-        { path: 'about', component: AboutUsComponent },
-        { path: 'directions', component: DirectionsComponent },
-      ],
-      resolve: { data: AppResolver }
-    },
-    { path: 'location/beck-road-storage',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -136,14 +85,6 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/beck-road-storage', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   { path: 'pay-rent/affordable-secure-storage-floral-city', component: PayRentComponent,
@@ -153,18 +94,6 @@ export const apiRoutes = [
       {path: 'forgotPassword', component: ForgotPasswordComponent },
       {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
       {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-      { path: 'verifyCode', component: VerifyCodeComponent },
-      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-    ],
-    resolve: { data: AppResolver }
-  },
-  { path: 'pay-rent/beck-road-storage', component: PayRentComponent,
-    children: [
-      {path: '', redirectTo: 'login', pathMatch: 'full'},
-      {path: 'login', component: LoginComponent },
-      {path: 'forgotPassword', component: ForgotPasswordComponent },
-      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
       { path: 'verifyCode', component: VerifyCodeComponent },
       { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
     ],
@@ -187,19 +116,6 @@ export const iFrameRoutes = [
         { path: 'storageUnits', component: StorageUnitComponent },
         { path: 'unitSizer', component: UnitSizerComponent },
         { path: 'reserveUnit', component: ReserveUnitComponent },
-        { path: 'truck-rentals', component: TruckRentalsComponent },
-        { path: 'photos', component: PhotosComponent },
-        { path: 'about', component: AboutUsComponent },
-        { path: 'directions', component: DirectionsComponent },
-      ]
-    },
-    { path: 'location/beck-road-storage',
-      component: LocationComponent,
-      children: [
-        {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-        { path: 'storageUnits', component: StorageUnitComponent },
-        { path: 'unitSizer', component: UnitSizerComponent },
-        { path: 'reserveUnit', component: ReserveUnitComponent },
         { path: 'photos', component: PhotosComponent },
         { path: 'about', component: AboutUsComponent },
         { path: 'directions', component: DirectionsComponent },
@@ -213,18 +129,9 @@ export const iFrameRoutes = [
           externalUrl: ''
       }
     },
-    { path: 'review/beck-road-storage', component: HomeComponent,
-      resolve: {
-          url: 'externalUrlRedirectResolver'
-      },
-      data: {
-          externalUrl: ''
-      }
-    },
     { path: 'error', component: ErrorHandlerComponent },
     { path: 'pay-rent', component: PaymentComponent },
     { path: 'pay-rent/affordable-secure-storage-floral-city', component: MakePaymentComponent },
-    { path: 'pay-rent/beck-road-storage', component: MakePaymentComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
     { path: 'contact', component: ContactComponent },
     { path: '**', component: ErrorComponent },

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { directionLocation1, directionLocation3 } from '../data/location';
+import { directionLocation1 } from '../data/location';
 @Component({
   selector: 'app-directions',
   templateUrl: './directions.component.html',

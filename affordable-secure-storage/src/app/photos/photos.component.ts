@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { galleryDataLocation1, galleryDataLocation3,
-        galleryImagesLocation1, galleryImagesLocation3 } from '../data/galleryImage';
+        galleryImagesLocation1, galleryImagesLocation3, aboutusGallery } from '../data/galleryImage';
 import { Router } from '@angular/router';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-photos',
@@ -15,8 +16,15 @@ export class PhotosComponent implements OnInit {
   selectedImage: any;
   galleryImages: any;
   galleryData: any;
+  imagetype: any;
+  imageBaseUrl: any;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+    private uaParserService: UaParserService,
+    ) {
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
+   }
 
   ngOnInit() {
     this.isSomePage();
@@ -30,15 +38,10 @@ export class PhotosComponent implements OnInit {
   }
 
   public fetchDetailsLocation1() {
-    this.galleryImages = galleryImagesLocation1;
+    // this.galleryImages = galleryImagesLocation1;
     // this.galleryData = galleryDataLocation1;
+    this.galleryImages = aboutusGallery;
     this.id = 1;
-  }
-
-  public fetchDetailsLocation3() {
-    this.galleryImages = galleryImagesLocation3;
-    // this.galleryData = galleryDataLocation3;
-    this.id = 3;
   }
 
   setSelectedImage(image: any) {

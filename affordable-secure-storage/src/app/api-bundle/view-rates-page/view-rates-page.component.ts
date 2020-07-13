@@ -69,20 +69,11 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.getData();
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
-    this.fetchUrl();
   }
 
   public fetchThData() {
     this.th = th;
   }
-
-  public fetchUrl() {
-    if (this.router.url.includes('/affordable-secure-storage-floral-city')) {
-      this.showSpecialData = [`50% off first three months 10x10 (non climate)`,
-        `50% off first three months 10x15 (non climate)` ];
-    }
-  }
-
 
   public navigate(location: any, unitData: any) {
 

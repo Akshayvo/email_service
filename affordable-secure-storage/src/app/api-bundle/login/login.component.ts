@@ -5,7 +5,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsLocation3, contactsLocation1 } from '../../data/contact';
+import { contactsLocation1 } from '../../data/contact';
+import { loginDetail } from '../../data/pay-rent';
+
 
 
 @Injectable()
@@ -37,6 +39,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   balance: number;
   navTo: any;
   open = false;
+  loginDetail = [];
 
   contact: any;
   name: string;
@@ -57,6 +60,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.fetchLoginDetail();
     this.loginForm = this.formBuilder.group({
       strUserName: ['', Validators.required],
       strPassword: ['', Validators.required],
@@ -79,6 +83,10 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   openBox() {
     this.open = !this.open;
+  }
+
+  public fetchLoginDetail() {
+    this.loginDetail = loginDetail;
   }
 
   public fetchContactDetail() {

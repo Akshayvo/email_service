@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { headingLocation1, headingLocation3 } from '../../data/location';
+import { headingLocation1 } from '../../data/location';
 import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({

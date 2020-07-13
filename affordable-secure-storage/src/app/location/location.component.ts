@@ -1,10 +1,10 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
-          contactsLocation3, hoursLocation3, socialLinks
+       socialLinks
           } from '../data/contact';
 import { tabs, tabs1 } from '../data/location';
-import { headingLocation1, headingLocation3 } from '../data/location';
+import { headingLocation1 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
@@ -52,8 +52,6 @@ export class LocationComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/affordable-secure-storage-floral-city')) {
         this.fetchDetailsLocation1();
-    } else  if (this.router.url.includes('/location/beck-road-storage'))  {
-      this.fetchDetailsLocation3();
     }
  }
 
@@ -68,21 +66,10 @@ export class LocationComponent implements OnInit {
       this.socialLinks = socialLinks;
     }
 
-   public fetchDetailsLocation3() {
-     this.name = headingLocation3;
-     this.locationId = 3;
-     this.contacts = contactsLocation3;
-     this.hours = hoursLocation3;
-     this.tabs = tabs;
-   }
 
    public navigateToReserve() {
     if ( this.locationId === 1 ) {
       this.router.navigate(['/location/affordable-secure-storage-floral-city/reserveUnit']);
-    } else if ( this.locationId === 3) {
-      this.router.navigate(['/location/beck-road-storage/reserveUnit']);
     }
    }
-
-
 }
