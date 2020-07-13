@@ -1,12 +1,12 @@
 export const viewRates = [
     {
       p: `Do you need some extra elbow-room around the house or office on a budget? Self Storage of Wis Dells - Munroe
-      Ave is the ideal storage solution for you! Our facility offers many self storage conveniences at extremely affordable rates! `,
+      Ave is the ideal storage solution for you! Our facility offers many self storage conveniences at extremely affordable rates!`,
     },
     {
-      p: `You'll have 24 hour access to your clean storage unit in our conveniently located and well-lit facility 7 days
-      a week at Self Storage of Wis Dells - Munroe Ave. On top of that, our online rental and bill-pay portal means you can
-      move in, or access your account on your schedule! Do you have questions about the services we offer? Call today, and
+      p: `You'll have 24-hour access to your clean storage unit in our conveniently located facility 7 days a week at
+      Self Storage of Wis Dells - Munroe Ave. On top of that, our online rental and bill-pay portal means you can move
+      in, or access your account on your schedule! Do you have questions about the services we offer? Call today, and
       our staff will be happy to assist in any way possible!`,
     },
 ];

@@ -4,10 +4,6 @@ export const featuresList = [
         td2: 'Online Bill Pay'
     },
     {
-        td1: 'Security Cameras',
-        td2: 'Well-Lit Facility'
-    },
-    {
         td1: 'Single-Level Facility',
         td2: 'Drive-Up Units'
     },
@@ -27,18 +23,20 @@ export const aboutUsHeading = `24 Hour Access Self Storage in Wisconsin Dells`;
 
 export const aboutUs = [
     {
-        p: `Self Storage of Wis Dells - Munroe Ave is Wis Dells' best value storage solution. Our units are conveniently
-        located on Munroe Ave/WI-23, across the street from La Canasta Mexicana and Americas Best Value Inn. We are also
-        less than a mile from I-90, making us an ideal location for residents and businesses in Wisconsin Dells!`,
+        p: `Self Storage of Wis Dells - Munroe Ave is Lake Delton's best value storage solution. Our units
+        are conveniently located on Munroe Ave/WI-23, across the street from the Crystal Grand Music Theatre.
+        We are also less than a mile from I-90, making us an ideal location for residents and businesses in Wisconsin Dells!`,
     },
     {
-        p: `At Self Storage of Wis Dells - Munroe Ave you'll have access to your unit 24 hours a day, 7 days a week. Our
-        online bill-pay service also provides round-the-clock access to your belongings, furniture, or office and worksite equipment.`,
+        p: `At Self Storage of Wis Dells - Munroe Ave you'll have around-the-clock access to your belongings, furniture,
+        or office, and worksite equipment. Our online bill-pay service provides 24/7 access to your account for easy
+        payments on your schedule.`,
     },
     {
         p: `So, if you're preparing for a move, running out of space at the office or job site, or maybe just need an extra
         walk-in closet for seasonal belongings, take a look at our inventory and give us a call! Our units are always clean,
-        and priced to make your next storage project an affordable one! You may also rent online in minutes with our handy contactless rental process!`,
+        and priced to make your next storage project an affordable one! You may also rent online in minutes with our handy
+        contactless rental process!`,
     },
 ];
 
