@@ -2,22 +2,22 @@ export const contactsLocation1 = [
     {
         id: 0,
         label: 'Address:',
-        data: 'Coming Soon',
+        data: '8425 E Rosko Ct, Floral City, FL 34436',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         id: 1,
         label: 'Phone:',
-        data: '(123) 456-7890',
+        data: '(352) 419-7116',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:1234567890'
+        redirect: 'tel:3524197116'
     },
     {
         id: 2,
         label: 'Email:',
-        data: 'xyz@gmail.com',
+        data: 'floralcity@affordablesecureselfstorage.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:xyz@gmail.com'
+        redirect: 'mailto:floralcity@affordablesecureselfstorage.com'
     },
 ];
 

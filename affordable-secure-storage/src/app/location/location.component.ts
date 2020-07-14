@@ -8,6 +8,7 @@ import { headingLocation1 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
+import { UaParserService } from '../services/ua-parser.service';
 
 
 @Component({
@@ -25,6 +26,8 @@ export class LocationComponent implements OnInit {
   head: any;
   tabs: any;
   socialLinks: any;
+  imageBaseUrl: any;
+  imagetype: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -32,16 +35,20 @@ export class LocationComponent implements OnInit {
     private router: Router,
     private titleService: Title,
     private dataSharingService: DataSharingService,
+    private uaParserService: UaParserService,
 
     ) {
       if (this.router.url.includes('/location/affordable-secure-storage-floral-city')) {
             this.meta.addTag({
               name: 'description',
-              content: ``
+              content: `Check out our affordable rates for self storage units and boat, RV, or vehicle parking
+              spaces in Floral City, then reserve your unit online, or call our friendly team!`
             });
-            this.titleService.setTitle('');
+            this.titleService.setTitle('Storage Units & Vehicle Parking in Floral City | Affordable Secure Storage');
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       }
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+      this.imageBaseUrl = this.uaParserService.baseUrl;
     }
 
   ngOnInit() {
