@@ -1,6 +1,7 @@
 <div class="gallery-content">
   <div class="container px-0">
-    <div class="row">
+    <h2 class="text-center">Facility Photos</h2>
+    <div class="row pt-2">
       <div class="col-lg-6">
         <div id="selectedImageM" class="text-center selectedImageM">
           <img *ngIf="selectedImage" src="{{imageBaseUrl}}/{{selectedImage.url}}.{{imagetype}}" alt="{{selectedImage.alt}}" height="auto" width="100%">
@@ -9,7 +10,6 @@
 
       <div class="col-lg-6">
         <div class="data">
-          <h3>Gallery</h3>
           <!-- <p class="text-justify" *ngFor='let data of galleryData'> {{data.p}} </p> -->
           <div id="thumbnailsList" class="thumbnailsList">
             <span *ngFor="let image of galleryImages; let i = index" class="m-1">

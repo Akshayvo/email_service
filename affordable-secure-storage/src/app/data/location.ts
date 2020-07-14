@@ -23,12 +23,12 @@ export const tabs1 = [
     //     path: './moveIn',
     //     active: false,
     // },
-    // {
-    //     id: '5',
-    //     name: 'Gallery',
-    //     path: './photos',
-    //     active: false,
-    // },
+    {
+        id: '5',
+        name: 'Gallery',
+        path: './photos',
+        active: false,
+    },
 ];
 
 export const tabs = [

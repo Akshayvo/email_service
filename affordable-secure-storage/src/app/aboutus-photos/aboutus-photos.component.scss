@@ -12,6 +12,7 @@
       text-transform: capitalize;
       font-size: 1.5rem;
     }
+
     .thumbnailsList {
       text-align: left;
     }
@@ -19,7 +20,7 @@
 
   .thumbnailsList {
     img {
-      width: 78px;
+      width: 100px;
       box-shadow: none;
       border: 1px solid $white;
       margin-top: 5px;
@@ -30,11 +31,22 @@
   }
 }
 
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .gallery-content {
+    .thumbnailsList {
+      img {
+        width: 82px;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .gallery-content {
     .thumbnailsList {
       img {
-        width: 95px;
+        width: 58px;
       }
     }
   }
@@ -44,23 +56,23 @@
   .gallery-content {
     .thumbnailsList {
       img {
-        width: 90px;
+        width: 94px;
       }
     }
   }
 }
 
-@media only screen and (max-width: 575px) and (min-width: 448px) {
+@media only screen and (max-width: 575px) and (min-width: 566px) {
   .gallery-content {
     .thumbnailsList {
       img {
-        width: 78px;
+        min-width: 78px;
       }
     }
   }
 }
 
-@media only screen and (max-width: 447px) {
+@media only screen and (max-width: 565px) {
   .gallery-content {
     .thumbnailsList {
       img {

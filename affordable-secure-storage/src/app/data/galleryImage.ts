@@ -31,9 +31,38 @@ export const aboutusGallery = [
 
 export const galleryImagesLocation1 = [
     {
-        url: '',
-        thumb: '',
-        alt: ``
+        url: 'affordable-secure-storage-end-units',
+        thumb: 'affordable-secure-storage-end-units',
+        alt: `a row of self storage units with bollards in front of each unit surrounded
+        by wide paved parking lanes`
+    },
+    {
+        url: 'affordable-secure-storage-vehicle-parking',
+        thumb: 'affordable-secure-storage-vehicle-parking',
+        alt: `recreational vehicles parked at the end an aisle
+        of self storage units with paved parking lanes between the units`
+    },
+    {
+        url: 'affordable-secure-storage-office',
+        thumb: 'affordable-secure-storage-office',
+        alt: `a self storage front office with security cameras streaming on
+        a screen and packing supplies stacked neatly around the walls`
+    },
+    {
+        url: 'affordable-secure-storage-building',
+        thumb: 'affordable-secure-storage-building',
+        alt: `a row of self storage units with a rustic facade on the endcap of the row of closed metal doors`
+    },
+    {
+        url: 'affordable-secure-storage-stagecoach',
+        thumb: 'affordable-secure-storage-stagecoach',
+        alt: `a stagecoach parked near the entrance of the self storage
+        facility a spart of the landscaping`
+    },
+    {
+        url: 'affordable-secure-storage-retail-goods',
+        thumb: 'affordable-secure-storage-retail-goods',
+        alt: `boxes and packing supplies stacked neatly behind chairs in the self storage facility's office`
     },
 ];
 

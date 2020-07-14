@@ -38,9 +38,8 @@ export class PhotosComponent implements OnInit {
   }
 
   public fetchDetailsLocation1() {
-    // this.galleryImages = galleryImagesLocation1;
+    this.galleryImages = galleryImagesLocation1;
     // this.galleryData = galleryDataLocation1;
-    this.galleryImages = aboutusGallery;
     this.id = 1;
   }
 
