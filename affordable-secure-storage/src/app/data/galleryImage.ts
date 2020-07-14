@@ -1,6 +1,12 @@
 /* tslint:disable:max-line-length */
 export const aboutusGallery = [
     {
+        url: 'affordable-secure-storage-end-units',
+        thumb: 'affordable-secure-storage-end-units',
+        alt: `a row of self storage units with bollards in front of each unit surrounded
+        by wide paved parking lanes`
+    },
+    {
         url: 'affordable-secure-storage-vehicle-parking',
         thumb: 'affordable-secure-storage-vehicle-parking',
         alt: `recreational vehicles parked at the end an aisle of self storage units with paved parking lanes between the units`
