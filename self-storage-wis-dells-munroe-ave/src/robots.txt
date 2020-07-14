@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://selfstorageofwisdells23-staging.syrasoft.com/sitemap.xml
+Sitemap: https://www.selfstorageofwisdells23.com/sitemap.xml
 User-agent: *
 Disallow:
