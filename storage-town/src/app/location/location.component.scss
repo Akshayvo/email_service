@@ -2,7 +2,7 @@
 
 .contact-details {
   background-color: $light;
-  padding-top: 90px;
+  padding-top: 140px;
 }
 .alarm{
   background-color: #BE2926;
@@ -189,6 +189,19 @@
   }
 }
 
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .contact-details {
+    padding-top: 160px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .contact-details {
+    padding-top: 134px;
+  }
+}
+
+
 @media only screen and (max-width: 768px) {
   .social-content {
     .col-lg-11 {
@@ -228,9 +241,14 @@
   }
 }
 
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .contact-details {
+    padding-top: 174px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .contact-details {
-    padding-top: 60px;
     background-color: $light;
 
     .row {
@@ -279,4 +297,23 @@
   .sub-components {
     padding: 0 16px;
   }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 576px) {
+  .contact-details {
+    padding-top: 182px;
+  }
+}
+
+
+@media screen and (max-width: 575px) and (min-width: 453px) {
+  .contact-details {
+    padding-top: 172px;
+  } 
+}
+
+@media screen and (max-width: 452px) {
+  .contact-details {
+    padding-top: 200px;
+  } 
 }

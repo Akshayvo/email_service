@@ -11,7 +11,7 @@
 }
 
 .storage-tip-holder {
-  padding-top: 100px;
+  padding-top: 140px;
   min-height: 88vh;
   margin-bottom: 50px;
 
@@ -37,8 +37,16 @@
   }
 }
 
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .storage-tip-holder {
+    padding-top: 160px;
+  }
+}
+
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .storage-tip-holder {
+    padding-top: 134px;
     .storage-content {
       min-height: 760px;
     }
@@ -47,6 +55,7 @@
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .storage-tip-holder {
+    padding-top: 174px;
     .storage-content {
       min-height: 940px;
     }
@@ -55,11 +64,28 @@
 
 @media screen and (max-width: 600px) {
   .storage-tip-holder {
-    padding-top: 70px;
-
     .storage-content {
       padding: 16px;
       min-height: 800px;
     }
   }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 576px) {
+  .storage-tip-holder {
+    padding-top: 152px;
+  }
+}
+
+
+@media screen and (max-width: 575px) and (min-width: 453px) {
+  .storage-tip-holder {
+    padding-top: 172px;
+  } 
+}
+
+@media screen and (max-width: 452px) {
+  .storage-tip-holder {
+    padding-top: 200px;
+  } 
 }

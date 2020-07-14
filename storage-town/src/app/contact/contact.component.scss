@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .rent-holder {
-  padding-top: 100px;
+  padding-top: 140px;
   min-height: 88vh;
   margin-bottom: 50px;
 
@@ -74,6 +74,18 @@ table {
   }
 }
 
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .rent-holder {
+    padding-top: 160px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .rent-holder {
+    padding-top: 134px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .rent-sub-holder {
     .coming-soon {
@@ -89,6 +101,14 @@ table {
     }
   }
 }
+
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .rent-holder {
+    padding-top: 174px;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .rent-holder {
@@ -111,6 +131,25 @@ table {
   iframe {
     min-height: 400px;
   }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 576px) {
+  .rent-holder {
+    padding-top: 152px;
+  }
+}
+
+
+@media screen and (max-width: 575px) and (min-width: 453px) {
+  .rent-holder {
+    padding-top: 172px;
+  } 
+}
+
+@media screen and (max-width: 452px) {
+  .rent-holder {
+    padding-top: 200px;
+  } 
 }
 
 @media only screen and (max-width: 370px) {
