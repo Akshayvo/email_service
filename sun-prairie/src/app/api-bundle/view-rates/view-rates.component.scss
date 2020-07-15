@@ -120,6 +120,9 @@ table {
 
 .background-padding {
   padding: 64px;
+  .electric {
+    text-align: center !important;
+  }
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {

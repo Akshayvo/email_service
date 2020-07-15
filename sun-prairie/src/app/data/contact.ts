@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data:  '2425 WI-19, Sun Prairie, WI 53590',
+        data:  '2425 HWY 19, Sun Prairie, WI 53590',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
