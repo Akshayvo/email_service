@@ -71,24 +71,10 @@ export const tabs = [
 ];
 
 
-export const headingLocation1 = `Affordable Secure Storage - Floral City, LLC`;
+export const headingLocation1 = `Reserve Your Unit at Our Floral City Location`;
 
 
 export const unitSizerLocation1 = [
-    {
-        size: '5\' x 5\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
-        data: `25 sq. ft. Hall Closet, small bedroom or office, boxes,
-               clothing, small furniture, toys, business records or about 50 file boxes.`,
-        amenities: [
-                { content: 'Chairs', },
-                { content: 'Small Bookcases', },
-                { content: 'Suitcases', },
-                { content: 'Lamps', },
-                { content: 'Kitchenware' },
-        ],
-    },
-
     {
         size: '5\' x 10\'',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
@@ -103,21 +89,6 @@ export const unitSizerLocation1 = [
                     { content: 'Kitchenware' },
                     { content: 'Mattresses' }
             ],
-    },
-    {
-        size: '5\' x 15\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
-        data: `75 sq. ft. Large walk-in closet, furniture of a one bedroom apartment,
-               washer and dryer, desk, patio furniture or about 150 file boxes.`,
-               amenities: [
-                { content: 'Chairs', },
-                { content: 'Small Desks', },
-                { content: 'Small Bookcases', },
-                { content: 'Suitcases', },
-                { content: 'Lamps', },
-                { content: 'Kitchenware' },
-                { content: 'Mattresses' }
-                ],
     },
     {
         size: '10\' x 10\'',
@@ -162,34 +133,6 @@ export const unitSizerLocation1 = [
                     { content: 'Tow Trailer' },
                     ],
     },
-    {
-        size: '10\' x 25\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
-        data: `250 sq. ft. One car garage, furniture of a 4 bedroom house with all the appliances,
-                patio furniture, lawn mower, bikes, small trailer`,
-                amenities: [
-                    { content: 'Appliances', },
-                    { content: 'Car or Small Boat', },
-                    { content: 'Entertainment Sets'},
-                    { content: 'Furniture', },
-                    { content: 'Bookcases', },
-                    { content: 'Tow Trailer' },
-                    ],
-    },
-    {
-        size: '10\' x 30\'',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
-        data: `300 sq. ft. Extra large garage, the furniture of a 4 or 5 bedroom house with
-                all the appliances, a small boat or utility trailer`,
-                amenities: [
-                    { content: 'Appliances', },
-                    { content: 'Car or Small Boat', },
-                    { content: 'Furniture', },
-                    { content: 'Mattresses', },
-                    { content: 'Bookcases', },
-                    { content: 'Tow Trailer' },
-                    ],
-    }
 ];
 
 export const unitSizerLocation3 = [

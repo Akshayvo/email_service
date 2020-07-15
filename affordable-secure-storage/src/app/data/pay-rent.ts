@@ -14,7 +14,7 @@ export const tableHeader = [
 export const tableData = [
   {
     facility: 'Affordable Secure Storage - Floral City, LLC',
-    address: 'Coming Soon',
+    address: '8425 E Rosko Ct, Floral City, FL 34436',
     url: 'affordable-secure-storage-floral-city'
   },
 ];
