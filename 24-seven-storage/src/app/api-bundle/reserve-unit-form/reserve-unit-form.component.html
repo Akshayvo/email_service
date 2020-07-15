@@ -7,7 +7,7 @@
         </div>
 
         <div class="loader" *ngIf="gettingTenantData"></div>
-        <p class="text-center p-3">A reservation is not a guarantee of a unit. After the form is filled out, a representative will reach out to complete the inquiry process.</p>
+        <p class="text-center p-3"><b>A reservation is not a guarantee of a unit. After the form is filled out, a representative will reach out to complete the inquiry process.</b></p>
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div  class="row justify-content">
              <div formGroupName="objTenant" class="col-lg-7 ">
