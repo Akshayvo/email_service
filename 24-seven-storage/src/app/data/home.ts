@@ -22,7 +22,7 @@ export const featuresList = [
     },
     {
         td1: 'Wide Range of Sizes',
-        td2: 'Office & Warehouse Spaces Available'
+        td2: 'Warehouse & Office Spaces Available'
     }
 ];
 
@@ -83,9 +83,9 @@ export const gettingStarted = ``;
 export const blurb = [
     {
         h1: `Family Owned & Operated 24 Hour Access Self Storage in Virginia Beach`,
-        p: `24 Seven Storage has been providing our customers with a safe and secure place to store their belongings since 1999!
-        Our experience as a family owned and operated self storage facility makes us the ideal choice for your next move,
-        renovation, or seasonal storage project! Call (757) 617-5330, or use our handy online portal to reserve your unit,
-        and start enjoying our quality service, and our affordable rates today!`,
+        p: `24 Seven Storage has been providing our customers with a safe and secure place to store their belongings
+        since 1999! Our experience as a family owned and operated self storage facility makes us the ideal choice for
+        your next move, renovation, or seasonal storage project! Call (757) 428-6801, and start enjoying our quality
+        service, and our affordable rates today!`,
     }
 ];

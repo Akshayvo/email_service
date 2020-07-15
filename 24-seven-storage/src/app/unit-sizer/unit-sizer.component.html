@@ -85,8 +85,12 @@
                                     <h3 class="mb-1">{{unitsizers[i].heading}}</h3>
                                     <p class="pr-2 text-justify"> {{unitsizers[i].data}} </p>
                                     <ul class="pl-0">
-                                      <li *ngFor="let amenity of unitsizers[i]?.amenities"> {{amenity.content}} </li>
-                                    </ul>
+                                      <!-- <li class="list_heading" >{{unitsizers[i].size}}</li> -->
+                                      <!-- <ul class="pl-5 sub_list"> -->
+                                        <li *ngFor="let amenity of unitsizers[i]?.amenities"> {{amenity.content}} </li>
+                                      </ul>
+                                    
+                                    <!-- </ul> -->
                                   </div>
                                 </div>
                                 <!--Unit Sizer Data Row Ends Here-->
