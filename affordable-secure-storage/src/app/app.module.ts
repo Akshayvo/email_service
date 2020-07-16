@@ -55,6 +55,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ReserveComponent } from './api-bundle/reserve/reserve.component';
 import { ScriptHackComponent } from './script-hack/script-hack.component';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+
 
 @NgModule({
   declarations: [
@@ -94,7 +98,10 @@ import { ScriptHackComponent } from './script-hack/script-hack.component';
     PayRentComponent,
     ViewRatesComponent,
     ReserveComponent,
-    ScriptHackComponent
+    ScriptHackComponent,
+    RentSubComponent,
+    AutoPayComponent,
+    SignUpComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

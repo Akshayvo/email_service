@@ -27,6 +27,9 @@ import { MakePaymentComponent } from '../iframe-bundle/make-payment/make-payment
 import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
 import { ViewRatesComponent } from '../api-bundle/view-rates/view-rates.component';
 import { ReserveComponent } from '../api-bundle/reserve/reserve.component';
+import { RentSubComponent } from '../api-bundle/rent-sub/rent-sub.component';
+import { SignUpComponent } from '../api-bundle/sign-up/sign-up.component';
+import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
 
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
@@ -74,9 +77,6 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'pay-rent',
-      component: PaymentComponent,
-    },
     { path: 'review/affordable-secure-storage-floral-city', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
@@ -87,17 +87,47 @@ export const apiRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
-  { path: 'pay-rent/affordable-secure-storage-floral-city', component: PayRentComponent,
+  // { path: 'pay-rent/affordable-secure-storage-floral-city', component: PayRentComponent,
+  //   children: [
+  //     {path: '', redirectTo: 'login', pathMatch: 'full'},
+  //     {path: 'login', component: LoginComponent },
+  //     {path: 'forgotPassword', component: ForgotPasswordComponent },
+  //     {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+  //     {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+  //     { path: 'verifyCode', component: VerifyCodeComponent },
+  //     { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+  //   ],
+  //   resolve: { data: AppResolver }
+  // },
+  {
+    path: 'pay-rent/affordable-secure-storage-floral-city', component: PayRentComponent,
     children: [
-      {path: '', redirectTo: 'login', pathMatch: 'full'},
-      {path: 'login', component: LoginComponent },
-      {path: 'forgotPassword', component: ForgotPasswordComponent },
-      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-      { path: 'verifyCode', component: VerifyCodeComponent },
-      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-    ],
-    resolve: { data: AppResolver }
+      { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
+      { path: 'rent-sub', component: RentSubComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      },
+      { path: 'sign-up', component: SignUpComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      }
+    ]
   },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { headingLocation1 } from '../../data/location';
+import { headingLocation1, headingStorageUnit1 } from '../../data/location';
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -21,7 +21,7 @@ export class ViewRatesComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('affordable-secure-storage-floral-city')) {
       this.id = 1;
-      this.heading = headingLocation1;
+      this.heading = headingStorageUnit1;
     }
   }
 }

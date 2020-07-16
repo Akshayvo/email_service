@@ -6,11 +6,14 @@ import { Injectable } from '@angular/core';
 export class DataSharingService {
 
   locationAPIKey = {
-    loc1: 'XjJ7OUYzVzJHOUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29020 Affordable Secure Storage - Floral City, LLC
+    /**
+     * 29020 Affordable Secure Storage - Floral City, LLC
+     */
+    loc1: 'XjJ7OUYzVzJHOUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   };
 
   // locationAPIKey = {
-  // loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // demo north 28463
+  //   loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // demo north 28463
   // };
 
 
@@ -26,7 +29,9 @@ export class DataSharingService {
   period: string;
   addingTenant = false;
   insuranceChoiceId: number;
+  signUpForAutoPay: boolean;
 
+  paymentTab: string;
 
   apiKey = '';
 

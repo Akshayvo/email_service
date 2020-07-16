@@ -52,6 +52,8 @@ export class PaymentComponent implements OnInit {
         }
       }
     }
+    // console.log('current url is', this.router.url);
+
   }
 
   receiveMessage() {

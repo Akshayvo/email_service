@@ -71,7 +71,9 @@ export const tabs = [
 ];
 
 
-export const headingLocation1 = `Reserve Your Unit at Our Floral City Location`;
+export const headingLocation1 = `Affordable Secure Storage - Floral City, LLC`;
+
+export const headingStorageUnit1 = 'Reserve Your Unit at Our Floral City Location';
 
 
 export const unitSizerLocation1 = [

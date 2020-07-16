@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { headingLocation1 } from '../../data/location';
+import { headingStorageUnit1 } from '../../data/location';
 
 @Component({
   selector: 'app-storage-unit',
@@ -21,7 +21,7 @@ export class StorageUnitComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/affordable-secure-storage-floral-city')) {
       this.id = 1;
-      this.heading = headingLocation1;
+      this.heading = headingStorageUnit1;
     }
   }
 }

@@ -44,8 +44,8 @@ export class LoginComponent implements OnInit, OnDestroy {
   contact: any;
   name: string;
   id: number;
+  paymentTab: string;
   private authUnsubscribe$: Subscription;
-
 
   constructor(
     private formBuilder: FormBuilder,
@@ -56,7 +56,9 @@ export class LoginComponent implements OnInit, OnDestroy {
     private  dataSharingService: DataSharingService,
   ) {
 
-
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
   }
 
   ngOnInit() {
@@ -72,7 +74,16 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (window.localStorage) {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
-          this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
+          // this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
+          if (this.dataSharingService.changePassword === true) {
+            this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/changePassword`]);
+          } else {
+            if (this.router.url.includes('rent-sub')) {
+              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/payment`]);
+            } else {
+              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
+            }
+          }
        }
     }
     this.fetchContactDetail();
@@ -100,7 +111,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public navigate (location: any) {
-    this.router.navigate([`/pay-rent/${this.navTo}/${location}`]);
+    this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/${location}`]);
   }
 
 
@@ -122,7 +133,13 @@ export class LoginComponent implements OnInit, OnDestroy {
           // if (this.activatedRoute.snapshot.url[1].path === 'changePassword') {
           //   this.router.navigate([`/pay-rent/${this.navTo}/changePassword`]);
           // } else {
-            this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
+            if (this.router.url.includes('rent-sub')) {
+              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/payment`]);
+            } else {
+              if (this.router.url.includes('sign-up')) {
+                this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
+              }
+            }
           // }
         }, (err) => {
           this.credentialsInvalid = true;

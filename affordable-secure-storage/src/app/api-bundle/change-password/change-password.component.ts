@@ -19,6 +19,7 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
   showLoader = false;
 
   passwordChanged = false;
+  paymentTab: string;
   navTo: string;
    private changePasswordUnsubscribe$: Subscription;
 
@@ -33,6 +34,10 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
       strOldPassword: ['', [Validators.required]],
       strNewPassword: ['', [Validators.required]],
     });
+
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
   }
 
   ngOnInit() {
@@ -40,8 +45,9 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
       this.navTo = localStorage.getItem('paymentNavigationUrl');
 
     }
+
     if (this.passwordChanged === true) {
-      this.router.navigate([`pay-rent/${this.navTo}/login`]);
+      this.router.navigate([`pay-rent/${this.navTo}/${this.paymentTab}/login`]);
     }
   }
 
@@ -50,11 +56,11 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
   goBack() {
     localStorage.removeItem('strTenantToken');
     this.dataSharingService.changePassword = false;
-    this.router.navigate([`pay-rent/${this.navTo}/login`]);
+    this.router.navigate([`pay-rent/${this.navTo}/${this.paymentTab}/login`]);
   }
 
   public navigate(location: any) {
-    this.router.navigate([`pay-rent/${this.navTo}/${location}`]);
+    this.router.navigate([`pay-rent/${this.navTo}/${this.paymentTab}/${location}`]);
   }
 
   public navigateToHOme(location: any) {
