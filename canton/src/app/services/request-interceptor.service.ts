@@ -28,7 +28,7 @@ export class RequestInterceptorService implements HttpInterceptor {
     let authAPIKey = modifiedAPIKey;
     if (token) {
       authAPIKey = modifiedAPIKey.clone({
-        headers: token && request.url.startsWith('tenant') ?
+        headers: request.url.startsWith('tenant') ?
           modifiedAPIKey.headers.set('Authorization', `Bearer ${tenantToken}`)
           : modifiedAPIKey.headers.set('Authorization', `Bearer ${token}`)
       });
