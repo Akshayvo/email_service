@@ -4,7 +4,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
-import { option } from '../../data/view-rates';
+import { option, option1 } from '../../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
@@ -67,6 +67,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   count = 0;
 
   option =  [];
+  option1 = [];
   reserveUnitForm: FormGroup;
 
   tokenExit: string;
@@ -296,6 +297,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   public fetchUSState() {
     this.option = option;
+    this.option1 = option1;
   }
 
   public navigate(location: any) {
