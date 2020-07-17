@@ -18,15 +18,14 @@ export class AppComponent implements OnInit {
     private router: Router,
     private angulatics: Angulartics2GoogleAnalytics,
     @Inject(WINDOW) private window: Window,
-
   ) {
-
-  }
-  ngOnInit() {
-    this.x = window.matchMedia('(max-width: 600px)');
+    this.x = this.window.matchMedia('(max-width: 600px)');
     this.flag = false;
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
     const onNavigationEnd = this.router.events.pipe(filter(event => event instanceof NavigationEnd));
+  }
+  ngOnInit() {
+
   }
 
   public dataShow() {
