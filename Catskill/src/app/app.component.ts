@@ -5,15 +5,15 @@ import { filter, map, mergeMap, pairwise } from 'rxjs/operators';
 import { WINDOW } from '@ng-toolkit/universal';
 import { BehaviorSubject } from 'rxjs';
 import { NavigationService } from './services/navigation.service';
-
-
+import { messages } from './data/message';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
-  title = 'Catskill Self Storage';
+  title = `${messages.routeChangePrevent}`;
   flag: boolean;
   public offsets: number[];
   x: any;
@@ -33,7 +33,6 @@ export class AppComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private activatedRoute: ActivatedRoute,
     private angulatics: Angulartics2GoogleAnalytics,
     private routerHistoryService: NavigationService,
     @Inject(WINDOW) private window: Window,

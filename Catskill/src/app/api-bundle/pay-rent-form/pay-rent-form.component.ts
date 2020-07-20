@@ -345,7 +345,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           this.balance = Tenant.Balance;
           this.surchargeService.setAmt(this.balance);
           this.surchargeService.getIdPaytype(this.paytypeid);
-          this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled,
+          this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled;
           this.date = Tenant.LastPaymentOn;
           this.lastPaymentOn = this.datePipe.transform(this.date, 'dd/MM/yyyy');
           this.lastPaymentAmount = Tenant.LastPaymentAmount;
@@ -358,7 +358,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, 'dd/MM/yyyy');
 
             if (this.UnpaidAR[i].AmountOwed < 0) {
-              this.UnpaidAR[i].demoAmountOwed = Math.abs(this.UnpaidAR[i].AmountOwed);
+              this.UnpaidAR[i].amountOwed = Math.abs(this.UnpaidAR[i].AmountOwed);
             }
           }
 
@@ -496,7 +496,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     }
     }
 
-    this.invalidPayment = null,
+    this.invalidPayment = null;
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
         this.showloaderForPayment = false;
