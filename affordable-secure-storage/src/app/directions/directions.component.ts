@@ -25,7 +25,7 @@ export class DirectionsComponent implements OnInit {
 
  public fetchDetailsLocation1() {
   this.directionPoints = directionLocation1;
-  this.directionHeading = `Directions to Affordable Secure Storage - Floral City, LLC`;
+  this.directionHeading = `Directions to Affordable Secure Storage - Floral City`;
   this.id = 1;
 }
 

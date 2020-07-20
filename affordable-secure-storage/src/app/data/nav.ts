@@ -11,7 +11,7 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Affordable Secure Storage - Floral City, LLC',
+                label: 'Affordable Secure Storage - Floral City',
                 path: '/location/affordable-secure-storage-floral-city',
             },
         ]

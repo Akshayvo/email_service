@@ -94,7 +94,7 @@ public fetchHours() {
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `Affordable Secure Storage - Floral City, LLC`;
+    this.heading = `Affordable Secure Storage - Floral City`;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }

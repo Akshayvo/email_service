@@ -24,7 +24,7 @@ export class MakePaymentComponent implements OnInit {
   public fetchContactDetail() {
     if (this.router.url.includes('affordable-secure-storage-floral-city')) {
       this.id = 1;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
+      this.name = 'Affordable Secure Storage - Floral City';
       this.contact = contactsLocation1;
     }
   }

@@ -8,7 +8,7 @@ export class LocationService {
   places = [
     {
       id: 1,
-      name: 'Affordable Secure Storage - Floral City, LLC',
+      name: 'Affordable Secure Storage - Floral City',
     },
  ];
  private locationSource = new BehaviorSubject(this.places[0].id);

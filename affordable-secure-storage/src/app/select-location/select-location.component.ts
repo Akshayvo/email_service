@@ -14,7 +14,7 @@ export class SelectLocationComponent implements OnInit {
   places = [
     {
       id: 1,
-      name: 'Affordable Secure Storage - Floral City, LLC',
+      name: 'Affordable Secure Storage - Floral City',
     },
  ];
 

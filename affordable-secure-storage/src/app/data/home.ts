@@ -24,21 +24,22 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Affordable Secure Storage offers a number of self storage facilities in Florida and Georgia with a variety of
-        amenities to make your next storage project a convenient one. We offer climate-controlled storage units, boat, RV,
-        and vehicle storage to cater to all of your self storage needs. `,
+        p: `Affordable Secure Storage offers a number of self storage facilities in Florida with a variety
+        of amenities to make your next storage project a convenient one. We offer climate-controlled storage
+        units, boat, RV, and vehicle storage to cater to all of your self storage needs.`,
     },
     {
-        p: `Our 24/7 gate access means your vehicle or belongings will always be available whenever you need them! You'll
-        find the moving and packing supplies available in the office at each location make your next move easier. `,
+        p: `Our 24/7 gate access means your vehicle or belongings will always be available whenever you need
+        them! You'll find the moving and packing supplies available in the office at each location make your
+        next move easier.`,
     },
     {
-        p: `All of our self storage facilities are well-lit, and covered by recorded video surveillance. Our management
-        team also performs regular lot-checks to monitor the safety and condition of the facility. `,
+        p: `All of our self storage facilities are well-lit, and covered by recorded video surveillance. Our
+        management team also performs regular lot-checks to monitor the safety and condition of the facility.`,
     },
     {
-        p: `We take great pride in giving our tenants convenient and affordable storage services. Take a moment to check out
-        our availability and pricing, then give us a call, or reserve your unit with our easy online form! `,
+        p: `We take great pride in giving our tenants convenient and affordable storage services. Take a moment
+        to check out our availability and pricing, then give us a call, or reserve your unit with our easy online form!`,
     },
 ];
 

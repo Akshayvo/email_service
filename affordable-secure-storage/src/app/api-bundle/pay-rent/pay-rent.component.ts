@@ -20,7 +20,7 @@ export class PayRentComponent implements OnInit {
     private dataSharingService: DataSharingService,
   ) {
     if (this.router.url.includes('affordable-secure-storage-floral-city')) {
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
+      this.name = 'Affordable Secure Storage - Floral City';
   }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
