@@ -8,6 +8,7 @@ import { tabs, tabs1, tabs2, headingLocation3, tabs3, headingLocation4 } from '.
 import { headingLocation1, headingLocation2 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
+import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 
 
 @Component({
@@ -31,6 +32,7 @@ export class LocationComponent implements OnInit {
     private meta: Meta,
     private router: Router,
     private titleService: Title,
+    private dataSharingService: DataSharingService,
     ) {
       if (this.router.url.includes('/location/andrews')) {
             this.meta.addTag({
@@ -39,6 +41,7 @@ export class LocationComponent implements OnInit {
               are individually alarmed for your safety!`
             });
             this.titleService.setTitle('Storage Units in Chester, NY | StorageTown Rental Spaces');
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
     } else if (this.router.url.includes('/location/chester')) {
            this.meta.addTag({
              name: 'description',
@@ -46,6 +49,7 @@ export class LocationComponent implements OnInit {
              storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!`
            });
            this.titleService.setTitle('Self Storage Units in Chester | StorageTown Rental Spaces');
+           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       } else if (this.router.url.includes('/location/montgomery-walden')) {
         this.meta.addTag({
           name: 'description',
@@ -53,6 +57,7 @@ export class LocationComponent implements OnInit {
           fully-fenced storage facility! Call (845) 457-3500 to learn more!`
         });
         this.titleService.setTitle('Storage Units in Montgomery, NY | StorageTown Rental Spaces');
+        this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
    } else if (this.router.url.includes('/location/middletown-wallKill')) {
     this.meta.addTag({
       name: 'description',
@@ -60,6 +65,7 @@ export class LocationComponent implements OnInit {
       well maintained, fully-fenced in self storage units 7 days a week!`
     });
     this.titleService.setTitle('Self Storage Units in Middletown | StorageTown Rental Spaces');
+    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
   }
 }
 
@@ -83,16 +89,16 @@ export class LocationComponent implements OnInit {
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
     this.router.navigate(['/location/andrews/reserveUnit'],
-          { queryParams: { name: 'Linden Self Storage', currentTab: 'Reserve Unit' }});
+          );
   } else if ( this.locationId === 2 ) {
     this.router.navigate(['/location/chester/reserveUnit'],
-          { queryParams: { name: 'chester', currentTab: 'Reserve Unit' }});
+          );
   }  else if ( this.locationId === 3 ) {
     this.router.navigate(['/location/montgomery-walden/reserveUnit'],
-          { queryParams: { name: 'chester', currentTab: 'Reserve Unit' }});
+         );
   }  else if ( this.locationId === 4 ) {
     this.router.navigate(['/location/middletown-wallKill/reserveUnit'],
-          { queryParams: { name: 'chester', currentTab: 'Reserve Unit' }});
+          );
   }
  }
 

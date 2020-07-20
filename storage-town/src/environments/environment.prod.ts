@@ -1,7 +1,10 @@
 export const environment = {
   production: true,
+  type: 0,  // { API: 0, iframe: 1 }
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  appId: 'storage-town',
-  VERSION: require('../../package.json').version
+  appId: 'Storage- Town - Staging',
+  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
+  VERSION: require('../../package.json').version,
+  baseUrl: `https://simapi.syrasoft.com/1/api/`,
 };

@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../data/contact';
 
-
-
 @Component({
-  selector: 'app-pay-rent',
+  selector: 'app-pay-rent-florida',
   templateUrl: './pay-rent-florida.component.html',
   styleUrls: ['./pay-rent-florida.component.scss']
 })
-export class PayRentComponent implements OnInit {
+export class PayRentFloridaComponent implements OnInit {
 
   locationId: any;
   contact: any;

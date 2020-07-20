@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { headingLocation1, headingLocation2, headingLocation3, headingLocation4 } from '../data/location';
+import { headingLocation1, headingLocation2, headingLocation3,
+  headingLocation4 } from '../data/location';
 
 @Component({
   selector: 'app-storage-unit',

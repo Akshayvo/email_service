@@ -1,25 +1,23 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule, ErrorHandler, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 
 // import '@material/tab/mdc-tab-scroller';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { PaymentComponent } from './payment/payment.component';
 import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
 import { LocationComponent } from './location/location.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { SafePipe } from './safe.pipe';
-import { StorageUnitComponent } from './storage-unit/storage-unit.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -30,8 +28,8 @@ import { SelectLocationComponent } from './select-location/select-location.compo
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
-import { PayRentComponent } from './pay-rent-florida/pay-rent-florida.component';
-import { PayRentChesterComponent } from './pay-rent-chester/pay-rent-chester.component'
+import { PayRentFloridaComponent } from './pay-rent-florida/pay-rent-florida.component';
+import { PayRentChesterComponent } from './pay-rent-chester/pay-rent-chester.component';
 import { PayRentMontgomeryComponent } from './pay-rent-montgomery/pay-rent-montgomery.component';
 import { PayRentMiddletownComponent } from './pay-rent-middletown/pay-rent-middletown.component';
 import { ContactFloridaComponent } from './contact-florida/contact-florida.component';
@@ -39,6 +37,32 @@ import { ContactMontgomeryComponent } from './contact-montgomery/contact-montgom
 import { ContactChesterComponent } from './contact-chester/contact-chester.component';
 import { ContactMiddletownComponent } from './contact-middletown/contact-middletown.component';
 import { ListOfFacilityComponent } from './list-of-facility/list-of-facility.component';
+import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component';
+import { ViewRatesPageComponent } from './api-bundle/view-rates-page/view-rates-page.component';
+import { ReserveUnitFormComponent } from './api-bundle/reserve-unit-form/reserve-unit-form.component';
+import { ConfirmationDataComponent } from './api-bundle/confirmation-data/confirmation-data.component';
+import { PayRentFormComponent } from './api-bundle/pay-rent-form/pay-rent-form.component';
+import { ReserveComponent } from './api-bundle/reserve/reserve.component';
+import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
+import { LoginComponent } from './api-bundle/login/login.component';
+import { ForgotPasswordComponent } from './api-bundle/forgot-password/forgot-password.component';
+import { ChangePasswordComponent } from './api-bundle/change-password/change-password.component';
+import { VerifyCodeComponent } from './api-bundle/verify-code/verify-code.component';
+import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
+import { MaterialModule } from './api-bundle/modules/material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DatePipe } from '@angular/common';
+import { AuthService } from './api-bundle/services/auth.service';
+import { AuthGuard } from './auth.gurad';
+import { CanDeactivateGuard } from './preventRouteChange.guard';
+import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
+import { LoginModalComponent } from './api-bundle/login-modal/login-modal.component';
+import { StorageUnitComponent } from './storage-unit/storage-unit.component';
+import { PaymentIframeComponent } from './payment-iframe/payment-iframe.component';
+import { PaymentComponent } from './api-bundle/payment/payment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +70,6 @@ import { ListOfFacilityComponent } from './list-of-facility/list-of-facility.com
     HomeComponent,
     ContactComponent,
     FooterComponent,
-    PaymentComponent,
     TablesComponent,
     ErrorComponent,
     LocationComponent,
@@ -69,7 +92,32 @@ import { ListOfFacilityComponent } from './list-of-facility/list-of-facility.com
     ContactMontgomeryComponent,
     ContactChesterComponent,
     ContactMiddletownComponent,
-    ListOfFacilityComponent
+    ListOfFacilityComponent,
+    ViewRatesComponent,
+    ViewRatesPageComponent,
+    ReserveUnitFormComponent,
+    ConfirmationDataComponent,
+    PayRentFormComponent,
+    ReserveComponent,
+    PayRentComponent,
+    PayRentComponent,
+    RentSubComponent,
+    PayRentFloridaComponent,
+    LoginComponent,
+    ForgotPasswordComponent,
+    ChangePasswordComponent,
+    VerifyCodeComponent,
+    ResetPasswordComponent,
+    SignUpComponent,
+    AutoPayComponent,
+    StorageUnitComponent,
+    LoginModalComponent,
+    PaymentIframeComponent,
+    PaymentComponent,
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
   ],
   imports: [
     NgtUniversalModule,
@@ -79,8 +127,14 @@ import { ListOfFacilityComponent } from './list-of-facility/list-of-facility.com
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MaterialModule,
+    BrowserAnimationsModule,
     ],
   providers: [
+    DatePipe,
+    AuthService,
+    AuthGuard,
+    CanDeactivateGuard,
     Title,
     {
       provide: ErrorHandler,
@@ -91,7 +145,12 @@ import { ListOfFacilityComponent } from './list-of-facility/list-of-facility.com
       useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
           window.location.href = (route.data as any).externalUrl;
       }
-  }
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: RequestInterceptorService,
+      multi: true
+    },
   ],
   bootstrap: [AppComponent]
 })

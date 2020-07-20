@@ -5,13 +5,12 @@ import { LocationService } from '../services/location.service';
 import { contactsLocation1, contactsLocation2, contactsLocation4, contactsLocation3, } from '../data/contact';
 
 @Component({
-  selector: 'app-payment',
-  templateUrl: './payment.component.html',
-  styleUrls: ['./payment.component.scss']
+  selector: 'app-payment-iframe',
+  templateUrl: './payment-iframe.component.html',
+  styleUrls: ['./payment-iframe.component.scss']
 })
-export class PaymentComponent implements OnInit {
+export class PaymentIframeComponent implements OnInit {
 
-  breadcrumbActive: any = 'Pay Rent';
   locationId: any;
   contact: any;
 
