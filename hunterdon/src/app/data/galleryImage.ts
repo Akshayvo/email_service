@@ -1,65 +1,46 @@
 export const galleryHome = [
     {
       // tslint:disable-next-line: max-line-length
-      url: `hunterdon-storage-front-gate`,
+      url: `hunterdon-self-storage-2-front-office-and-unit`,
       // tslint:disable-next-line:max-line-length
-      thumb: `hunterdon-storage-front-gate`,
-      alt: `self storage office building behind the electronic front gate`
+      thumb: `hunterdon-self-storage-2-front-office-and-unit-thumb`,
+      alt: `a sign that reads Hunterdon Storage II Flemington with a road in the background`
     },
     {
         // tslint:disable-next-line: max-line-length
-        url: `hunterdon-storage-sign`,
+        url: `hunterdon-self-storage-2-unit-interior`,
         // tslint:disable-next-line:max-line-length
-        thumb: `hunterdon-storage-sign`,
-        alt: `large sign on the end of a pole that reads Hunterdon Storage II Flemington`
+        thumb: `hunterdon-self-storage-2-unit-interior-thumb`,
+        alt: `an open self storage building revealing a clean, well-maintained
+        interior with metal walls and concrete floor`
       },
       {
         // tslint:disable-next-line: max-line-length
-        url: `hunterdon-storage-gate`,
+        url: `hunterdon-self-storage-ringoes-front-sign`,
         // tslint:disable-next-line:max-line-length
-        thumb: `hunterdon-storage-gate`,
-        alt: `closed security gate with a small sign that says "Now Open"`
+        thumb: `hunterdon-self-storage-ringoes-front-sign-thumb`,
+        alt: `a sign that reads Hunterdon Storage Ringoes with sculpted bushes surrounding the sign`
       },
       {
         // tslint:disable-next-line: max-line-length
-        url: `hunterdon-storage-office`,
+        url: `hunterdon-self-storage-ringoes-keypad`,
         // tslint:disable-next-line:max-line-length
-        thumb: `hunterdon-storage-office`,
-        alt: `block self storage facility front office behind some low bushes.`
+        thumb: `hunterdon-self-storage-ringoes-keypad-thumb`,
+        alt: `a security gate pin-pad with bollards on either side of the pin-pad, and a
+        locked security gate in the background`
       },
       {
         // tslint:disable-next-line: max-line-length
-        url: `hunterdon-storage-self-storage-units`,
+        url: `hunterdon-self-storage-1-front-sign`,
         // tslint:disable-next-line:max-line-length
-        thumb: `hunterdon-storage-self-storage-units`,
-        alt: `several tan block self storage buildings with brown metal rollup doors`
+        thumb: `hunterdon-self-storage-1-front-sign-thumb`,
+        alt: `a sign that reads Hunterdon Storage Flemington with pine trees and a road in the background`
       },
       {
         // tslint:disable-next-line: max-line-length
-        url: `hunterdon-storage-units`,
+        url: `hunterdon-self-storage-1-aerial-photograph`,
         // tslint:disable-next-line:max-line-length
-        thumb: `hunterdon-storage-units`,
-        alt: ` A tan block self storage building with brown metal doors closed`
-      },
-      {
-        // tslint:disable-next-line: max-line-length
-        url: `hunterdon-storage-front-gate-paved-parking`,
-        // tslint:disable-next-line:max-line-length
-        thumb: `hunterdon-storage-front-gate-paved-parking`,
-        alt: ` bluegreen self storage buildings behind a tall security gate with an electronic pin-pad`
-      },
-      {
-        // tslint:disable-next-line: max-line-length
-        url: `hunterdon-storage-front-office-building`,
-        // tslint:disable-next-line:max-line-length
-        thumb: `hunterdon-storage-front-office-building`,
-        alt: `single story block self storage front office with bushes and nice landscaping`
-      },
-      {
-        // tslint:disable-next-line: max-line-length
-        url: `hunterdon-storage-units-and-paved-parking`,
-        // tslint:disable-next-line:max-line-length
-        thumb: `hunterdon-storage-units-and-paved-parking`,
-        alt: `a row of bluegreen self storage buildings surrounded by paved parking spaces`
+        thumb: `hunterdon-self-storage-1-aerial-photograph-thumb`,
+        alt: `aerial photography of five single story self storage buildings surrounded by wide paved parking lanes`
       },
   ];

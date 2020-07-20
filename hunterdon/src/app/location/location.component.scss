@@ -39,22 +39,45 @@ h1 {
   }
 }
 
+.img-box-0-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/webp/hunterdon-storage-ringoes-units.webp");
+}
+
+.img-box-0-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-storage-ringoes-units.jpg");
+}
+.img-box-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/webp/hunterdon-storage-office-and-unit.webp");
+}
+
+.img-box-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-storage-office-and-unit.jpg");
+}
+
+.img-box-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/webp/hunterdon-storage-units-garden.webp");
+}
+
+.img-box-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-storage-units-garden.jpg");
+}
+
 .img-box-0 {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-self-storage-3.jpg");
+  // background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-self-storage-3.jpg");
   background-size: cover;
   height: 370px;
   background-position: center right;
 }
 
 .img-box-1 {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-self-storage-2.jpg");
+  // background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-self-storage-2.jpg");
   background-size: cover;
   height: 370px;
   background-position: center;
 }
 
 .img-box-2 {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-self-storage-1.jpg");
+  // background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-self-storage-1.jpg");
   background-size: cover;
   height: 370px;
   background-position: center;

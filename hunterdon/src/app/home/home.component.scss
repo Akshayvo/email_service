@@ -1,27 +1,27 @@
 @import "../../styles.scss";
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/webp/hunterdon-self-storage-2.webp");
-}
-
-.jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-self-storage-2.jpg");
-}
-
-.jumbotron-background-webp1 {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/webp/hunterdon-self-storage-1.webp");
 }
 
-.jumbotron-background-jpg1 {
+.jumbotron-background-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-self-storage-1.jpg");
 }
 
+.jumbotron-background-webp1 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/webp/hunterdon-self-storage-2.webp");
+}
+
+.jumbotron-background-jpg1 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-self-storage-2.jpg");
+}
+
 .jumbotron-background-webp2 {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/webp/hunterdon-self-storage-3.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/webp/hunterdon-self-storage-ringoes.webp");
 }
 
 .jumbotron-background-jpg2 {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-self-storage-3.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-self-storage-ringoes.jpg");
 }
 
 .jumbotron {

@@ -28,17 +28,17 @@
         <div class="contact-img">
             <span *ngIf="id == 0"> 
               <!-- <div class="img-box-0" [ngStyle]="{'background-image': 'url('+ photo +')'}"> -->
-              <div class="img-box-0">
+              <div class="img-box-0" [ngClass]="imagetype === 'jpg' ? 'img-box-0-jpg' : 'img-box-0-webp'">
               </div>
             </span>
             <span *ngIf="id == 1"> 
               <!-- <div class="img-box-1" [ngStyle]="{'background-image': 'url('+ photo +')'}"> -->
-                <div class="img-box-1">
+                <div class="img-box-1" [ngClass]="imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'">
               </div>
             </span>
             <span *ngIf="id == 2"> 
               <!-- <div class="img-box-1" [ngStyle]="{'background-image': 'url('+ photo +')'}"> -->
-                <div class="img-box-2">
+                <div class="img-box-2" [ngClass]="imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'">
               </div>
             </span>
         </div>
