@@ -16,13 +16,13 @@
               </thead>
               <tbody>
                 <tr *ngFor="let tableData of tableData">
-                  <td class="table-data py-1">
+                  <td class="table-data">
                     {{tableData.facility}}
                   </td>
-                  <td class="table-data py-1">
+                  <td class="table-data ">
                     {{tableData.address}}
                   </td>
-                  <td class="table-data py-1">
+                  <td class="table-data ">
                     <!-- <div [innerHtml]="{{tableData.url}}"></div> -->
                     <a class="btn btn-primary p-2 ml-0" [routerLink]="'/pay-rent/'+tableData.url" role="button">Pay Here</a>
                   </td>

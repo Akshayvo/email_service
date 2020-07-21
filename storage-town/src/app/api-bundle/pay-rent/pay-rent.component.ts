@@ -19,8 +19,12 @@ export class PayRentComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private dataSharingService: DataSharingService,
   ) {
-    if (this.router.url.includes('chester')) {
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
+    if (this.router.url.includes('chester') || this.router.url.includes('andrews')) {
+      this.name = 'Chester - Andrews Lane & Brookside Ave';
+  }  else if (this.router.url.includes('montgomery-walden')) {
+    this.name = 'Montgomery/Walden';
+  } else if (this.router.url.includes('middletown-wallKill')) {
+    this.name = 'Middletown/WallKill';
   }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');

@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .contentHolder {
-  padding-top: 100px;
+  padding-top: 140px;
   margin-bottom: 50px;
   min-height: 90vh;
   max-height: auto;
@@ -57,10 +57,26 @@
   }
 }
 
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .contentholder {
+    padding-top: 160px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .contentholder {
+    padding-top: 134px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .contentholder {
+    padding-top: 174px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .contentHolder {
-    padding-top: 70px;
-
     .container {
       padding-left: 0;
       padding-right: 0;
@@ -79,4 +95,23 @@
   .for-village {
     margin-top: 20px;
   }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 576px) {
+  .contentholder {
+    padding-top: 152px;
+  }
+}
+
+
+@media screen and (max-width: 575px) and (min-width: 453px) {
+  .contentholder {
+    padding-top: 172px;
+  } 
+}
+
+@media screen and (max-width: 452px) {
+  .contentHolder {
+    padding-top: 200px;
+  } 
 }
