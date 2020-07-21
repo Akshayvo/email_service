@@ -17,8 +17,6 @@ export class PhotosComponent implements OnInit {
 
 
   constructor(
-    private route: ActivatedRoute,
-    private router: Router,
     private uaParserService: UaParserService,
     ) {
       this.imagetype = this.uaParserService.typeOfImages.toLowerCase();

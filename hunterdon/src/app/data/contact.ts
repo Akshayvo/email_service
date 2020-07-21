@@ -153,16 +153,16 @@ export const contactsLocation3 = [
     {
         id: 2,
         label: 'Phone: ',
-        data: '(908) 788-9553',
+        data: '(908) 788-9595',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:9087889553'
+        redirect: 'tel:9087889595'
     },
     {
         id: 3,
         label: 'Email: ',
-        data: 'hunterdonstorage1@gmail.com',
+        data: 'hunterdonstorage2@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:hunterdonstorage1@gmail.com'
+        redirect: 'mailto:hunterdonstorage2@gmail.com'
     },
 ];
 

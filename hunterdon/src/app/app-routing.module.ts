@@ -27,6 +27,7 @@ import { VerifyCodeComponent } from './verify-code/verify-code.component';
 import { VerifictionCodeGuard } from './verificationCode.guard';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { GalleryComponent } from './gallery/gallery.component';
 // import { CanDeactivateGuard } from './preventRouteChange.guard';
 
 const routes: Routes = [
@@ -47,7 +48,7 @@ const routes: Routes = [
       ] },
       { path: 'unitSizer', component: UnitSizerComponent },
       { path: 'reserveUnit', component: ReserveUnitComponent },
-      { path: 'photos', component: PhotosComponent },
+      { path: 'photos', component: GalleryComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
     ],
@@ -69,7 +70,7 @@ const routes: Routes = [
       ] },
       { path: 'unitSizer', component: UnitSizerComponent},
       { path: 'reserveUnit', component: ReserveUnitComponent },
-      { path: 'photos', component: PhotosComponent },
+      { path: 'photos', component: GalleryComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
     ],
@@ -91,7 +92,7 @@ const routes: Routes = [
       ] },
       { path: 'unitSizer', component: UnitSizerComponent},
       { path: 'reserveUnit', component: ReserveUnitComponent },
-      { path: 'photos', component: PhotosComponent },
+      { path: 'photos', component: GalleryComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
     ],

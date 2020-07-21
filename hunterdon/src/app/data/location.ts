@@ -17,12 +17,12 @@ export const tabs = [
         path: './reserveUnit',
         active: false,
     },
-    // {
-    //     id: '4',
-    //     name: 'Gallery',
-    //     path: './photos',
-    //     active: false,
-    // },
+    {
+        id: '4',
+        name: 'Gallery',
+        path: './photos',
+        active: false,
+    },
     // {
     //     id: '5',
     //     name: 'About Us',
@@ -134,7 +134,6 @@ export const unitSizerLocation2 = [
                 { content: 'Mattresses' }
             ],
         },
-    
         {
             size: '10\' x 10\'  Storage Unit Graphic',
             alt: '10\' x 10\' Storage Unit',
