@@ -103,13 +103,13 @@ p {
   text-align: left;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 600px) {
   .viewrates-mobile {
     display: none;
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 601px) {
   .viewrates-desktop {
     display: none;
   }
