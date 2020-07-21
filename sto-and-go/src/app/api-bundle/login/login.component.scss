@@ -1,6 +1,26 @@
 
 @import "../../../styles.scss";
 
+.display-none {
+  display: none;
+}
+
+.rent-example {
+  border-left: 1px $border solid;
+  padding-left: 5%;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.contact-data {
+  a {
+    color: black;
+  }
+}
+
 .modal-open {
   .modal-backdrop {
     background: none;
@@ -37,4 +57,12 @@
 .button-display {
   display: flex;
   align-items: end;
+}
+
+@media only screen and (max-width: 767px) {
+  .rent-example {
+    border-left: none;
+    // padding-left: 20px;
+    // padding-top: 20px;
+  }
 }

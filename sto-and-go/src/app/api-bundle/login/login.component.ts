@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
+import { contact } from '../../data/contact';
 
 @Injectable()
 
@@ -19,6 +20,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   loginForm: FormGroup;
   submitted = false;
   credentialsInvalid = false;
+  contact: any;
 
   allowedToshow = false;
 
@@ -49,6 +51,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.fetchContactDetails();
     this.loginForm = this.formBuilder.group({
       strUserName: ['', Validators.required],
       strPassword: ['', Validators.required],
@@ -70,6 +73,10 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   openBox() {
     this.open = !this.open;
+  }
+
+  public fetchContactDetails() {
+    this.contact = contact;
   }
 
   public navigate (location: any) {
