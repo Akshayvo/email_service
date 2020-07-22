@@ -97,7 +97,7 @@ export const feature = [
 
 export const aboutUs = [
     {
-        mainHeading: `Affordable, Secure Self Storage`,
+        mainHeading: `Secure Storage Units Rochester NY`,
         mainParagraph: `390 Self Storage is Rochester’s newest self storage facility. With three self
                         storage facilities in the greater Rochester area; when it comes to self storage,
                         we are your home town experts. We work hard every day to provide the right mix of
