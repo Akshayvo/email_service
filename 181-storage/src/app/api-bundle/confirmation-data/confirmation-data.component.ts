@@ -102,9 +102,6 @@ constructor(
   private tenantInfoService: TenantInfoService,
   private signOutService: SignOutService,
 ) {
-
-  console.log("reseration fee", this.dataSharingService.LstUnitTypes.ReservationFee);
-  
   this.fetchOption();
   this.fetchSharedData();
 }
@@ -133,8 +130,12 @@ fetchSharedData() {
 
 public fetchOption() {
   this.options = option;
-   this.index = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.State));
-  this.stateString = this.options[this.index].description;
+  if (!!this.dataSharingService.objTenant.State) {
+    this.index = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.State));
+    if (!!this.options) {
+      this.stateString = this.options[this.index].description;
+    }
+   }
 }
 
 @HostListener('window:beforeunload', ['$event'])
@@ -189,9 +190,6 @@ getTenantUnitData() {
     this.addTenantSubscribe$ = this.addTenantService.addTenant(data)
         .subscribe(result => {
         localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
-
-        console.log("move", this.navigateToMoveIn, "reserve", this.navigateToReserve);
-        
         if (this.navigateToMoveIn ) {
           if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
             this.router.navigate(['/view-rates/payMoveInCharges']);
