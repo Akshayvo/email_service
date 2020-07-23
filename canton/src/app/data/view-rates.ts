@@ -4,10 +4,6 @@ export const rates = [
         td2: 'RATE ',
     },
     {
-        td1: `5 x 10`,
-        td2: `$34.95`
-    },
-    {
         td1: `10 x 10`,
         td2: `$58.95`
     },
@@ -15,6 +11,10 @@ export const rates = [
         td1: `10 x 15`,
         td2: `$64.95`
     },
+    {
+      td1: `10 x 20`,
+      td2: `$79.95`
+  },
 ];
 
 export const th = [
