@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
       content: `High Falls Self Storage, LLC offers many affordable storage units, located in
                 the High Falls District one block west of the Red Wings Baseball stadium.`
     });
-    this.titleService.setTitle('Cheap Self Storage in Rochester | High Falls Self Storage, LLC');
+    this.titleService.setTitle('Affordable Self Storage Units in Rochester | High Falls Self Storage, LLC');
   }
 
   public navigate(location: any) {
