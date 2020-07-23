@@ -54,13 +54,9 @@ img {
     padding: 21px;
   }
 
-  .nav-link:hover {
-    color: $secondary;
-  }
-
   .nav-link-active {
-    color: $secondary;
-    border-bottom: 5px solid $secondary;
+    // color: $secondary;
+    border-bottom: 5px solid $white;
   }
 
   button {
@@ -72,7 +68,7 @@ img {
   }
 
   button:focus {
-    outline: 5px auto $secondary;
+    outline: 5px auto $white;
   }
 }
 
