@@ -34,4 +34,25 @@ export const galleryHome = [
     thumb: `calellen-mini-storage-5-thumb`,
     alt: `photograph of three self storage unit doors under a clear blue sky`
   },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `calallen-mini-storage-rows-of-units`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `calallen-mini-storage-rows-of-units-thumb`,
+    alt: `row of self storage units with their red metal doors closed under a blue sky`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `calallen-mini-storage-unit-row`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `calallen-mini-storage-unit-row-thumb`,
+    alt: `a single-story white self storage building with red doors under a blue sky`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `calallen-mini-storage-units`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `calallen-mini-storage-units-thumb`,
+    alt: `a row of storage units in a white metal self storage building under a clear sky`
+  },
 ];
