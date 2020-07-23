@@ -1,0 +1,145 @@
+@import "../../styles.scss";
+
+a {
+  cursor: pointer;
+}
+
+.iconColor {
+  color: $primary;
+  font-size: 17px;
+}
+
+.social {
+  a {
+    color: #fff;
+  }
+}
+
+.contact-details {
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+.navbar-toggler:hover {
+  display: block;
+}
+
+.navbar-brand {
+  color: $white !important;
+}
+
+
+.navbar {
+  padding-bottom: 0;
+  
+
+  .nav-link-active {
+    border-bottom: 5px $primary solid;
+    color: $primary !important;
+  }
+
+  .location-active {
+    color: $primary !important;
+    font-weight: 600;
+  }
+
+  .nav-link {
+    color: $white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: none;
+    padding: 24px;
+  }
+
+  button {
+    border: 1px $dark solid;
+    margin-right: 20px;
+  }
+
+  button:focus {
+    outline: 5px auto $primary;
+  }
+}
+
+.nav-link:hover {
+  color: $primary;
+}
+
+.display {
+  display: block;
+}
+
+.navbar-toggler {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  outline: 1px white solid;
+
+  i {
+    color: white;
+  }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  outline: 1px $primary solid;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    li {
+      a {
+        line-height: 1.5rem;
+        // text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .display {
+    display: none;
+  }
+
+  .nav-link {
+    padding: 20px 0.5rem !important;
+  }
+
+  .navbar {
+ 
+
+    .navbar-nav {
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+
+      li {
+        width: fit-content;
+      }
+    }
+
+
+    .dropdown {
+      ul {
+        left: -90px;
+        text-align: -webkit-center;
+      }
+    }
+  }
+
+  @media screen and (max-height: 476px) {
+    .nav-scroll {
+      height: 70vh;
+      overflow-y: auto;
+    }
+  }
+}

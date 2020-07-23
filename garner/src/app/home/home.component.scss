@@ -1,0 +1,536 @@
+@import "../../styles.scss";
+
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Garners_U_Store/webp/self-storage-facility-aerial-photo.webp");
+}
+
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Garners_U_Store/jpg/self-storage-facility-aerial-photo.jpg");
+}
+
+.jumbotron-top {
+  height: 80vh;
+}
+
+.jumbotron {
+  height: 80vh;
+  padding: 0;
+}
+
+.jumbotron-bottom {
+  height: 20vh;
+}
+
+.getStarted {
+  color: white;
+}
+
+.getStarted-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Garners_U_Store/webp/self-storage-facility-aerial-photo.webp");
+  background-position: center;
+}
+
+.getStarted-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Garners_U_Store/jpg/self-storage-facility-aerial-photo.jpg");
+  background-position: center;
+}
+
+.jumbotorn-skew-style {
+  width: 75%;
+  float: left;
+  left: -25%;
+  position: relative;
+  transform: skew(15deg);
+  height: 100%;
+
+  a {
+    margin-top: 20px;
+  }
+}
+
+.jumbotorn-skew-text {
+  transform: skew(0deg);
+  width: 470px;
+  position: absolute;
+  top: 30%;
+  color: $white;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+
+
+  .btn-outline-primary {
+    margin-right: 10px;
+  }
+}
+
+.carousel-caption {
+  bottom: 40px;
+
+  img {
+    height: 120px;
+  }
+}
+
+.carousel-indicators li {
+  background-color: black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-indicators .active {
+  background-color: white;
+  border-radius: 50%;
+  // border-color: black;
+  border: 2px solid black;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-item {
+  height: 200px;
+}
+
+.started {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: 'Kaushan Script', cursive;
+}
+
+a {
+  color: #000;
+}
+
+.service {
+  color: $dark;
+  text-align: left;
+
+h1 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+
+  img {
+    width: 70%;
+    height: 100%;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+.jumbotron-home {
+  .for-mobile-view {
+    display: none;
+  }
+
+  .for-desktop-view {
+    display: block;
+
+    .jumbotron-desktop {
+      padding-top: 55px;
+      height: 80vh;
+    }
+  }
+}
+
+.feature-home {
+  .feature-block {
+    height: 20vh;
+
+    img {
+      height: 60px;
+    }
+
+    .f-text {
+      color: $dark;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.content-align {
+  text-align: right;
+}
+
+.contact-hours {
+  border-left: 2px solid $border;
+  padding-left: 5%;
+}
+
+.for-location {
+  padding: 35px 0 64px 0;
+
+  .locaion-selection {
+    padding-bottom: 35px;
+  }
+
+  .btn-outline-primary {
+    margin-right: 10px;
+  }
+}
+
+
+.content-left {
+  text-align: left;
+}
+
+
+.disp {
+  display: block;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+}
+
+.testimonial {
+  background: $light;
+  height: auto;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-indicators {
+    li {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 1px $primary solid;
+      position: relative;
+      flex: 0 1 auto;
+      margin-right: 3px;
+      margin-left: 3px;
+      text-indent: -999px;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: $primary;
+    }
+  }
+
+  .carousel-item {
+    max-width: 100%;
+
+    .active {
+      background-position: center center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-height: 580px) and (min-height: 480px) {
+  .feature-home{
+    .f-text{
+      font-size: 1rem !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1199px) {
+  .content-align {
+    text-align: right;
+  }
+  .feature-home{
+    img{
+      height: 40px !important;
+    }
+  .f-text {
+    font-weight: 600;
+    font-size: 1rem !important;
+  }
+
+}
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .jumbotorn-skew-text {
+    width: 460px;
+
+    h2 {
+      font-size: 1.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .jumbotron-home {
+    .feature-block {
+      img {
+        height: 40px;
+      }
+    }
+  }
+  
+  .feature-home{
+      img{
+        height: 40px !important;
+      }
+    .f-text {
+      font-weight: 600;
+      font-size: 1rem !important;
+    }
+  
+}
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .jumbotorn-skew-text {
+    width: 340px;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) and (max-height: 620px) {
+  .jumbotorn-skew-text {
+    top: 15%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content-align {
+    text-align: right;
+  }
+
+  .myCarousel {
+    .carousel-item {
+      min-height: 40vh;
+      background-size: cover;
+      background-position: center center;
+      background-position-x: center;
+      background-position-y: center;
+      image-rendering: inherit;
+
+      img {
+        min-height: 40vh;
+        width: auto;
+        block-size: 100%;
+        position: relative;
+      }
+    }
+  }
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .contact-hours {
+    border-left: none;
+    padding-left: 5%;
+  }
+
+  .disp {
+    display: block;
+  }
+
+  .feature-home {
+    img {
+      height: 40px !important;
+    }
+
+    .f-text {
+      font-weight: 600;
+      font-size: 0.7rem !important;
+    }
+  }
+
+  .for-location {
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .carousel-item {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .jumbotron {
+    height: 100%;
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotorn-skew-style {
+    width: 90%;
+  }
+
+  .jumbotorn-skew-text {
+    width: 300px;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-height: 480px) {
+  .feature-home {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-height: 700px) {
+  .carousel-caption {
+    bottom: 40px;
+
+    img {
+      height: 60px;
+    }
+  }
+
+
+  .jumbotron-home {
+    .feature-block {
+      height: 160px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jumbotron-top {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .jumbotron {
+    padding: 0;
+    margin: 0 !important;
+  }
+
+  .carousel-caption {
+    bottom: 40px;
+
+    img {
+      height: 60px;
+    }
+  }
+
+  .feature-home { 
+    display: none;
+  }
+
+  .jumbotron-home {
+    .for-mobile-view {
+      display: block;
+    }
+
+    .for-desktop-view {
+      display: none;
+    }
+  }
+
+  .content-align {
+    text-align: center;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .f-block-img {
+    padding-top: 10px;
+
+    .f-img {
+      height: 40%;
+      width: 40%;
+    }
+  }
+
+  .f-text {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .myCarousel {
+    .carousel-item {
+      min-height: 40vh;
+      width: 200%;
+      background-size: cover;
+      background-position: center center;
+      background-position-x: center;
+      background-position-y: center;
+      image-rendering: inherit;
+
+      img {
+        min-height: 40vh;
+        width: auto;
+        block-size: 100%;
+        position: relative;
+      }
+    }
+  }
+
+  .contact-hours {
+    border-left: none;
+    padding-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .jumbotron {
+    height: 100vh;
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotorn-skew-style {
+    width: 90%;
+  }
+
+  .jumbotorn-skew-text {
+    width: 322px;
+  }
+}
+
+
+@media only screen and (max-height: 480px) {
+  .jumbotron {
+    height: 100vh;
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotorn-skew-style {
+    display: none;
+  }
+
+  .jumbotorn-skew-text {
+    display: none;
+  }
+}
