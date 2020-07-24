@@ -7,9 +7,8 @@ a {
 }
 
 .nav-link {
-  font-size: 1.25rem;    
+  font-size: 1.25rem;
 }
-
 
 .iconColor {
   color: #fff;
@@ -50,12 +49,16 @@ a {
   button:focus {
     outline: 5px auto $primary;
   }
+
+  img {
+    width: 180px;
+  }
 }
 
 .nav-link {
   color: $primary !important;
   font-weight: 600;
-  padding: 21px;
+  padding: 47px;
 }
 
 .nav-link:hover {
@@ -93,21 +96,22 @@ a {
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .nav-link {
-      font-size: 1rem;    
+    font-size: 1rem;
+    padding-right: 0.4rem !important;
+    padding-left: 0.4rem !important;
   }
-  .nav-link {
-    padding-right: .4rem !important;
-    padding-left: .4rem !important;
-}
 }
 
-@media screen and (max-width: 991px) {
-  // .display {
-  //   display: none;
-  // }
+@media only screen and (max-width: 991px) {
+  .navbar {
+    img {
+      width: 100px;
+    }
+  }
 
   .nav-link {
     text-align: center;
+    padding: 20px;
   }
 
   .navbar-nav {

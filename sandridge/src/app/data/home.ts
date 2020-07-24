@@ -60,25 +60,25 @@ export const feature = [
 
 export const aboutUs = [
     {
-        p: `Sandridge Boat & RV Storage has been serving Sandridge, the surrounding communities,
-        and vacationers from around the U.S. and Canada with quality vehicle storage at affordable
-        rates since 1996. We are conveniently located on Sandridge Road just north of Moores Corner,
-        right next to Wirkkala Construction.`,
+        p: `Sandridge Boat & RV Storage has been serving the Long Beach Peninsula, surrounding
+        communities, and vacationers from around the U.S. and Canada with quality vehicle storage
+        at affordable rates since 1996. We are conveniently located on Sandridge Road next to the
+        Pacific County Services Building.`,
     },
     {
-        p: `Our on-site managers are here to make your stay with an easy one and to ensure a sense
-        of safety for you and your boat or recreational vehicle. We can accept a reservation over
-        the phone, and have your enclosed or outdoor unit ready by the time you arrive! Once you're
-        a customer of Sandridge Boat & RV Storage, you'll be able to check your balance online, and
+        p: `Our on-site managers are here to make your stay with an easy one and to ensure a
+        sense of safety for you and your boat or recreational vehicle. We can accept a reservation over
+        the phone, and have your enclosed or outdoor unit ready by the time you arrive! Once you're a
+        customer of Sandridge Boat & RV Storage, you'll be able to check your balance online, and
         pay your rent online 24 hours a day.`,
     },
     {
-        p: `We offer a number of other amenities to make your stay with us safe and easy. Our buildings
-        have extra wide lanes for easy maneuvering when picking up or dropping off your boat, camper, or
-        recreational vehicle. Our facility is also well-lit, fully-fenced, and is covered by security
-        cameras. All enclosed units also have a concrete floor to help keep your vehicle clean during
-        storage. We even supply power to our units! Call today to learn more about the services Sandridge
-        Boat & RV Storage offers!`,
+        p: `WWe offer a number of other amenities to make your stay with us safe and easy. Our
+        buildings have extra wide lanes for easy maneuvering when picking up or dropping off your
+        boat, camper, or recreational vehicle. Our facility is also well-lit, fully-fenced, and is
+        covered by security cameras. All enclosed units also have a concrete floor to help keep your
+        vehicle clean during storage. We even supply power to our units! Call today to learn more
+        about the services Sandridge Boat & RV Storage offers!`,
     },
 ];
 
