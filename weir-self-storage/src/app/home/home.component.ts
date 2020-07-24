@@ -6,6 +6,7 @@ import { galleryHome } from '../data/galleryImage';
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, blurb} from '../data/home';
 import { homeScript } from '../data/script';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-home',
@@ -25,13 +26,16 @@ export class HomeComponent implements OnInit {
   feature: any;
   script: any;
   currentActive: any = 'HOME';
+  imageBaseUrl: any;
+  imagetype: any;
 
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private uaParserService: UaParserService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -39,6 +43,8 @@ export class HomeComponent implements OnInit {
                 a variety of unit sizes for all of your self storage needs.`
     });
     this.titleService.setTitle('Self Storage Units in Sault Ste. Marie | Weir Self Storage');
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   public navigate(location: any) {

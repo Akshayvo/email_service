@@ -32,7 +32,7 @@
 
 // Get started Section
 .getStarted {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Weir_Self_Storage/weir-self-storage-jumbotron.jpg") center top no-repeat fixed;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Weir_Self_Storage/jpg/weir-self-storage-jumbotron-image.jpg") center top no-repeat fixed;
   // background-size: cover;
   background-position: top;
 
@@ -52,11 +52,19 @@
 
 // HOME jUMBOTRON
 
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Weir_Self_Storage/webp/weir-self-storage-jumbotron-image.webp");
+}
+
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Weir_Self_Storage/jpg/weir-self-storage-jumbotron-image.jpg");
+}
+
 .jumbotron-top {
   height: 80vh;
 
   .jumbotron {
-    background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Weir_Self_Storage/weir-self-storage-jumbotron.jpg");
+    // background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Weir_Self_Storage/weir-self-storage-jumbotron.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

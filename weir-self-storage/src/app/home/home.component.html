@@ -5,7 +5,7 @@
   <!--Jumbotron Container Starts Here-->
   <div class="jumbotron-container">
     <div class="jumbotron-top">
-      <div class="jumbotron px-0 m-0">
+      <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
         <div class="bg-translucent jumbotron-skew-style">
         </div>
           <div class="container">

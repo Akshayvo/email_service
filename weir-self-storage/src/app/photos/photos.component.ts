@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { galleryHome } from '../data/galleryImage';
 import { ActivatedRoute, Router } from '@angular/router';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-photos',
@@ -11,12 +12,18 @@ export class PhotosComponent implements OnInit {
   name: string;
   selectedImage: any;
   galleryImages: any;
+  imageBaseUrl: any;
+  imagetype: any;
 
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router
-    ) { }
+    private router: Router,
+    private uaParserService: UaParserService,
+    ) {
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
+    }
 
   ngOnInit() {
     this.fetchGallery();
