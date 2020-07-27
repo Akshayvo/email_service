@@ -73,7 +73,7 @@ export const aboutUs = [
         pay your rent online 24 hours a day.`,
     },
     {
-        p: `WWe offer a number of other amenities to make your stay with us safe and easy. Our
+        p: `We offer a number of other amenities to make your stay with us safe and easy. Our
         buildings have extra wide lanes for easy maneuvering when picking up or dropping off your
         boat, camper, or recreational vehicle. Our facility is also well-lit, fully-fenced, and is
         covered by security cameras. All enclosed units also have a concrete floor to help keep your
