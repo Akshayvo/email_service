@@ -1,5 +1,5 @@
 <div class="payRent">
-    <p class="text-center" *ngIf="navigateToMoveIn"> <b>This move-in is not complete until contacted by Access Self Storage, and provided a Gate Access Code.</b></p>
+    <p class="text-center moveIn-text"  *ngIf="navigateToMoveIn"> <b>This move-in is not complete until contacted by Access Self Storage, and provided a Gate Access Code.</b></p>
     <h2 class="pb-1">Payment</h2>
     <div *ngIf="showSuccessPayment; else other"  class="go-to-home pt-4">
       <div *ngIf="!navigateToMoveIn && !navigateToReserve">

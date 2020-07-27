@@ -8,7 +8,7 @@
 
         <div class="loader" *ngIf="gettingTenantData"></div>
         
-        <p class="text-center" *ngIf="navigateToMoveIn"> <b>This move-in is not complete until contacted by Access Self Storage, and provided a Gate Access Code.</b></p>
+        <p class="text-center moveIn-text" *ngIf="navigateToMoveIn"> <b>This move-in is not complete until contacted by Access Self Storage, and provided a Gate Access Code.</b></p>
 
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div  class="row justify-content">
