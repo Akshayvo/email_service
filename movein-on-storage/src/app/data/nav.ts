@@ -24,6 +24,10 @@ export const navLinks = [
         path: '/pay-rent'
     },
     {
+        label: 'TRUCK RENTAL',
+        path: '/penske-truck-rentals',
+    },
+    {
         label: 'STORAGE TIPS',
         path: 'storage-tips',
     },

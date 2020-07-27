@@ -30,3 +30,7 @@ help you figure out what fits inside the units offered at Movin' On Storage Cent
 export const contactPageTitle = `Contact Us  | Movin' On Storage Center`;
 export const contactPageContent = `Do you have a question about our services, or would you like help
 with your account? Use our form or contact information to reach out, today!`;
+
+export const TruckRentalPageTitle = `Penske Truck Rentals | Movin' On Storage Center`;
+export const TruckRentalPageContent = `Need a truck rental to make your move easier?
+Check out our Penske truck rental service! We have affordable truck rentals you can reserve online in minutes!`;

@@ -6,20 +6,9 @@
   width: 100%;
 }
 
-.coming {
-  div {
-    height: 35rem;
-    width: 100%;
-    background: #efefef;
-    font-size: 2rem;
-    padding-top: 40%;
-  }
-}
-
 .display-content {
   display: contents;
 }
-
 
 .contentHolder {
   padding-top: 110px;
@@ -34,7 +23,8 @@
       width: 100%;
       overflow: auto;
     }
-    .background-padding{
+
+    .background-padding {
       height: 1500px;
     }
   }

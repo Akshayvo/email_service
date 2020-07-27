@@ -23,6 +23,7 @@ import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.compo
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
+import { TruckRentalComponent } from '../truck-rental/truck-rental.component';
 
 
  export const apiRoutes = [
@@ -33,6 +34,7 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
     { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
+    { path: 'penske-truck-rentals', component: TruckRentalComponent },
     {
       path: 'view-rates',
       component: ViewRatesComponent,
@@ -83,6 +85,7 @@ export const iFrameRoutes = [
     { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
+    { path: 'penske-truck-rentals', component: TruckRentalComponent },
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'
