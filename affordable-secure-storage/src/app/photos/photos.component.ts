@@ -3,6 +3,7 @@ import { galleryDataLocation1, galleryDataLocation3,
         galleryImagesLocation1, galleryImagesLocation3, aboutusGallery } from '../data/galleryImage';
 import { Router } from '@angular/router';
 import { UaParserService } from '../services/ua-parser.service';
+import { aboutus } from '../data/home';
 
 @Component({
   selector: 'app-photos',
@@ -18,6 +19,7 @@ export class PhotosComponent implements OnInit {
   galleryData: any;
   imagetype: any;
   imageBaseUrl: any;
+  aboutus: any;
 
   constructor(private router: Router,
     private uaParserService: UaParserService,
@@ -27,6 +29,7 @@ export class PhotosComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.fetchAboutUs();
     this.isSomePage();
     this.setSelectedImage(this.galleryImages[0]);
   }
@@ -34,7 +37,12 @@ export class PhotosComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/affordable-secure-storage-floral-city')) {
       this.fetchDetailsLocation1();
+      this.aboutus = aboutus ;
     }
+  }
+
+  public fetchAboutUs() {
+    this.aboutus = aboutus ;
   }
 
   public fetchDetailsLocation1() {

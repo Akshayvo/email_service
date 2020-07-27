@@ -1,35 +1,35 @@
 /* tslint:disable:max-line-length */
 export const aboutusGallery = [
     {
-        url: 'affordable-secure-storage-end-units',
-        thumb: 'affordable-secure-storage-end-units-thumb',
-        alt: `a row of self storage units with bollards in front of each unit surrounded
-        by wide paved parking lanes`
+        url: 'affordable-secure-storage-water-tower',
+        thumb: 'affordable-secure-storage-water-tower-thumb',
+        alt: `a wooden water tower on brown wooden legs with signs spelling
+        out the services available at this location fastened all the way down the wooden legs`
     },
     {
-        url: 'affordable-secure-storage-vehicle-parking',
-        thumb: 'affordable-secure-storage-vehicle-parking-thumb',
-        alt: `recreational vehicles parked at the end an aisle of self storage units with paved parking lanes between the units`
+        url: 'affordable-secure-storage-front',
+        thumb: 'affordable-secure-storage-front-thumb',
+        alt: `three self storage units with decorative endcaps making the units look like old western storefronts`
+    },
+    {
+        url: 'affordable-secure-storage-row',
+        thumb: 'affordable-secure-storage-row-thumb',
+        alt: `two rows of self storage units on either side of a paved parking area`
+    },
+    {
+        url: 'affordable-secure-storage-window',
+        thumb: 'affordable-secure-storage-window-thumb',
+        alt: `a window that has western style font decals that read Affordable Secure Storage surrounded by wooden siding`
     },
     {
         url: 'affordable-secure-storage-office',
         thumb: 'affordable-secure-storage-office-thumb',
-        alt: `a self storage front office with security cameras streaming on a screen and packing supplies stacked neatly around the walls`
+        alt: `interior of a self storage office with two rocking chairs and packing boxes plus tape and supplies stacked neatly around the room`
     },
     {
-        url: 'affordable-secure-storage-building',
-        thumb: 'affordable-secure-storage-building-thumb',
-        alt: `a row of self storage units with a rustic facade on the endcap of the row of closed metal doors`
-    },
-    {
-        url: 'affordable-secure-storage-stagecoach',
-        thumb: 'affordable-secure-storage-stagecoach-thumb',
-        alt: `a stagecoach parked near the entrance of the self storage facility a spart of the landscaping`
-    },
-    {
-        url: 'affordable-secure-storage-retail-goods',
-        thumb: 'affordable-secure-storage-retail-goods-thumb',
-        alt: `boxes and packing supplies stacked neatly behind chairs in the self storage facility's office`
+        url: 'affordable-secure-storage-office-desk',
+        thumb: 'affordable-secure-storage-office-desk-thumb',
+        alt: `interior of a self storage office with a front desk and boxes plus packing material stacked neatly against the wall`
     },
 ];
 
@@ -37,38 +37,35 @@ export const aboutusGallery = [
 
 export const galleryImagesLocation1 = [
     {
-        url: 'affordable-secure-storage-end-units',
-        thumb: 'affordable-secure-storage-end-units-thumb',
-        alt: `a row of self storage units with bollards in front of each unit surrounded
-        by wide paved parking lanes`
+        url: 'affordable-secure-storage-water-tower',
+        thumb: 'affordable-secure-storage-water-tower-thumb',
+        alt: `a wooden water tower on brown wooden legs with signs spelling
+        out the services available at this location fastened all the way down the wooden legs`
     },
     {
-        url: 'affordable-secure-storage-vehicle-parking',
-        thumb: 'affordable-secure-storage-vehicle-parking-thumb',
-        alt: `recreational vehicles parked at the end an aisle
-        of self storage units with paved parking lanes between the units`
+        url: 'affordable-secure-storage-front',
+        thumb: 'affordable-secure-storage-front-thumb',
+        alt: `three self storage units with decorative endcaps making the units look like old western storefronts`
+    },
+    {
+        url: 'affordable-secure-storage-row',
+        thumb: 'affordable-secure-storage-row-thumb',
+        alt: `two rows of self storage units on either side of a paved parking area`
+    },
+    {
+        url: 'affordable-secure-storage-window',
+        thumb: 'affordable-secure-storage-window-thumb',
+        alt: `a window that has western style font decals that read Affordable Secure Storage surrounded by wooden siding`
     },
     {
         url: 'affordable-secure-storage-office',
         thumb: 'affordable-secure-storage-office-thumb',
-        alt: `a self storage front office with security cameras streaming on
-        a screen and packing supplies stacked neatly around the walls`
+        alt: `interior of a self storage office with two rocking chairs and packing boxes plus tape and supplies stacked neatly around the room`
     },
     {
-        url: 'affordable-secure-storage-building',
-        thumb: 'affordable-secure-storage-building-thumb',
-        alt: `a row of self storage units with a rustic facade on the endcap of the row of closed metal doors`
-    },
-    {
-        url: 'affordable-secure-storage-stagecoach',
-        thumb: 'affordable-secure-storage-stagecoach-thumb',
-        alt: `a stagecoach parked near the entrance of the self storage
-        facility a spart of the landscaping`
-    },
-    {
-        url: 'affordable-secure-storage-retail-goods',
-        thumb: 'affordable-secure-storage-retail-goods-thumb',
-        alt: `boxes and packing supplies stacked neatly behind chairs in the self storage facility's office`
+        url: 'affordable-secure-storage-office-desk',
+        thumb: 'affordable-secure-storage-office-desk-thumb',
+        alt: `interior of a self storage office with a front desk and boxes plus packing material stacked neatly against the wall`
     },
 ];
 

@@ -25,7 +25,7 @@ export const tabs1 = [
     // },
     {
         id: '5',
-        name: 'Gallery',
+        name: 'About Us',
         path: './photos',
         active: false,
     },

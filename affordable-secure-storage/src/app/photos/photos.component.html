@@ -1,14 +1,17 @@
 <div class="gallery-content">
   <div class="container px-0">
-    <h2 class="text-center">Facility Photos</h2>
+    <!-- <h2 class="text-center">Facility Photos</h2> -->
     <div class="row pt-2">
+      <div class="col-lg-6 aboutus">
+        <div *ngFor="let para of aboutus">
+          <!-- <p> {{ para.p }}</p> -->
+          <p> {{para.p}}</p>
+        </div>
+      </div>
       <div class="col-lg-6">
         <div id="selectedImageM" class="text-center selectedImageM">
           <img *ngIf="selectedImage" src="{{imageBaseUrl}}/{{selectedImage.url}}.{{imagetype}}" alt="{{selectedImage.alt}}" height="auto" width="100%">
         </div>
-      </div>
-
-      <div class="col-lg-6">
         <div class="data">
           <!-- <p class="text-justify" *ngFor='let data of galleryData'> {{data.p}} </p> -->
           <div id="thumbnailsList" class="thumbnailsList">
@@ -20,6 +23,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
