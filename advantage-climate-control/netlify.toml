@@ -27,6 +27,14 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "https://www.advantageclimatecontrol.com/jordan-lane"
+  to = "https://www.advantageclimatecontrol.com"
+  status = 301
+[[redirects]]
+  from = "https://www.advantageclimatecontrol.com/jordan-lane/contact_us.html"
+  to = "https://www.advantageclimatecontrol.com/contact-us"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
