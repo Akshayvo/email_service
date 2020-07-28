@@ -103,6 +103,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   tenantData = {
     objTenant: {}
   };
+  signUpMssage: string;
   cardType: string;
 
   private OptionOutOfAutoPaySubscribe$: Subscription;
@@ -174,6 +175,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
 
     if (this.router.url === '/view-rates/payReservationCharges') {
+      this.signUpMssage = 'Sign up for Auto Pay';
       this.navigateToReserve = true;
       this.navigateToMoveIn = false;
       this.payRentForm.patchValue({
@@ -183,6 +185,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       });
     } else {
       if (this.router.url === '/view-rates/payMoveInCharges') {
+        this.signUpMssage = `By ticking this AutoPay box,
+        you are acknowledging that you understand that rent is due on the
+        first of the month, and your payment information on file will be charged automatically.`;
         this.navigateToReserve = false;
         this.navigateToMoveIn = true;
         this.payRentForm.patchValue({
@@ -192,10 +197,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         });
       } else {
         if (this.router.url ===  '/pay-rent/payment' ) {
+          this.signUpMssage = 'Sign up for Auto Pay';
           this.navigateToMoveIn = false;
           this.navigateToReserve = false;
         }
-
       }
     }
 
