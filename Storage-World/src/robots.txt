@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://www.storageworldmn.com/sitemap.xml
+Sitemap: https://www.storage-world-staging.netlify.app/sitemap.xml
 User-agent: *
 Disallow:
