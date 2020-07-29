@@ -15,15 +15,13 @@ export const payRentPageContent = `Pay your rent online 24/7/365! Follow the ins
 call our office to learn how to pay at your convenience!`;
 
 
-export const storageTipsTitle = `Self Storage Tips | Catskill Self Storage, Catskill, NY, 12414`;
-export const storageTipsContent = `We know moving can be stressful, let our helpful hints and tips make your experience that much easier.
-Use this tips to save yourself time and frustration!`;
+export const storageTipsTitle = ``;
+export const storageTipsContent = ``;
 
 
 export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
 
 
-export const contactPageTitle = `Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414`;
-export const contactPageContent = `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
-and U-Haul truck rental questions! Simply call or drop us a line!`;
+export const contactPageTitle = ``;
+export const contactPageContent = ``;

@@ -9,6 +9,6 @@ export const environment = {
   VERSION: require('../../package.json').version,
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://catskillselfstorage.com',
+  websiteUrl: 'https://storage-world-staging.netlify.app',
   APIKey: 'ZjJWMHc5UDM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O' // 2093
 };
