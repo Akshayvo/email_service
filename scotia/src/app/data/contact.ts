@@ -7,7 +7,7 @@ export const contact = [
     },
     {
         id: 1,
-        label: 'Email',
+        label: 'Email: ',
         redirect: 'mailto:ss@scotiastorage.com',
         data: 'ss@scotiastorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
@@ -15,7 +15,7 @@ export const contact = [
     {
         id: 2,
         redirect: 'tel:5183820218',
-        label: 'Phone:',
+        label: 'Phone: ',
         data: '518-382-0218',
         class: 'fas fa-phone mx-2 iconColor',
     }
