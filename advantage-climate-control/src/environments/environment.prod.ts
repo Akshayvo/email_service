@@ -5,7 +5,7 @@ export const environment = {
   errorsMails: ['sanghmitra.v@codeparva.in'],
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   senderEmail: 'errors@codeparva.in',
-  appId: 'Advantage Climate Controlled Self Storagei',
+  appId: 'Advantage Climate Controlled Self Storage - Production',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
