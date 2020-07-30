@@ -47,9 +47,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
-
+import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { PhotosComponent } from './photos/photos.component';
+import { from } from 'rxjs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -81,6 +82,7 @@ import { PhotosComponent } from './photos/photos.component';
     PhotosComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
+    ConfirmationPageComponent
   ],
   imports: [
     CommonModule,
