@@ -30,7 +30,7 @@ export class RequestInterceptorService implements HttpInterceptor {
 
     const contentAPIKey = authAPIKey.clone({
       headers: authAPIKey.headers.set('Content-Type', 'application/json'),
-      url:  request.url.startsWith('email') ? `${emailUrl}` : `${baseUrl}${request.url}`
+      url: request.url.startsWith('email') ? `${emailUrl}` : `${baseUrl}${request.url}`
     });
     return next.handle(contentAPIKey);
   }

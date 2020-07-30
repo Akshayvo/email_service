@@ -63,7 +63,6 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
 
   onSubmit() {
     this.submitted = true;
-
     if (this.resetPasswordForm.invalid) {
       return;
     } else {

@@ -2,6 +2,8 @@ export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
   // errorsMails: ['website.dev@codeparva.in'],
+  template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
+  cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: ['sanghmitra.v@codeparva.in'],
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   senderEmail: 'errors@codeparva.in',
