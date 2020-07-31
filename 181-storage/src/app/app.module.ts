@@ -51,6 +51,7 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { PhotosComponent } from './photos/photos.component';
 import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
+import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,6 +69,7 @@ import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
     ReserveComponent,
     ViewRatesComponent,
     ViewRatesIframePageComponent,
+    ConfirmationPageComponent,
     ViewRatesPageComponent,
     ReserveUnitFormComponent,
     ReserveUnitIframePageComponent,

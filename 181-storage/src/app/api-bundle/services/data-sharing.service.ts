@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataSharingService {
-
+  strTenantToken: string;
+  strTempTenantToken: string;
   verificationCode: string;
   navigateToPrevious: string;
   navigateToReserve: boolean;
@@ -12,7 +13,12 @@ export class DataSharingService {
   isValueUpdated: boolean;
   changePassword: boolean;
   showLogin: boolean;
-
+  insuranceChoiceId: number;
+  periodID: number;
+  strAccessCode: string;
+  strConfirmation: string;
+  addingTenant = false;
+  period: string;
 
   MoveInData = {
     Description: '',
@@ -67,7 +73,6 @@ export class DataSharingService {
     intUnitTypeID: 0,
   };
 
-  period: string;
 
 constructor() {
  this.getUnitData();
