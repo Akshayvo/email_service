@@ -1,27 +1,27 @@
 <div class="">
-    <div class="jumbotron-container">
-      <div class="jumbotron-tops">
-      <div class="jumbotront px-0 m-0">
-    <div id="carouselJumbo" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselJumbo" data-slide-to="1"></li>
-      <li data-target="#carouselJumbo" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="jumbotron jumbotron-top"  [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp' "></div>
+  <div class="jumbotron-container">
+    <div class="jumbotron-top">
+    <div class="px-0 m-0">
+      <div id="carouselJumbo" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselJumbo" data-slide-to="1"></li>
+        <li data-target="#carouselJumbo" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="jumbotron jumbotron-top"  [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp' "></div>
+        </div>
+        <div class="carousel-item">
+            <div class="jumbotron jumbotron-top1"  [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg1' : 'jumbotron-background-webp1' "></div>
+        </div>
+        <div class="carousel-item">
+            <div class="jumbotron jumbotron-top2"  [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg2' : 'jumbotron-background-webp2' "></div>
+        </div>  
       </div>
-      <div class="carousel-item">
-          <div class="jumbotron jumbotron-top1"  [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg1' : 'jumbotron-background-webp1' "></div>
-      </div>
-      <div class="carousel-item">
-          <div class="jumbotron jumbotron-top2"  [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg2' : 'jumbotron-background-webp2' "></div>
-      </div>  
     </div>
-  </div>
-  </div>
-  <div class="jumbotron-overlay">
+    </div>
+    <div class="jumbotron-overlay">
       <div class="bg-translucent  py-2" style="width: 100%;">
         <div class="container text-center">
           <h2>Move-In Special</h2>
@@ -30,7 +30,7 @@
         </div>
       </div>
     </div>
-      </div>
+  </div>
   
   
   <!--Feature Box-->

@@ -2,7 +2,7 @@
 
 .contact-details {
   background-color: $light;
-  padding-top: 120px;
+  padding-top: 154px;
 }
 
 .display-none {
@@ -155,6 +155,10 @@ h1 {
 }
 
 @media only screen and (max-width: 991px) {
+  .contact-details {
+    padding-top: 98px;
+  }
+
   .social-content {
     h1 {
       font-size: 1.4rem;
@@ -304,5 +308,11 @@ h1 {
 
   .sub-components {
     padding: 0 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-details {
+    padding-top: 100px;
   }
 }

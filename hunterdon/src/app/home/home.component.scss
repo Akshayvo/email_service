@@ -1,5 +1,9 @@
 @import "../../styles.scss";
 
+.jumbotron-container {
+  height: 100vh;
+}
+
 .jumbotron-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/webp/hunterdon-self-storage-1.webp");
 }
@@ -24,20 +28,16 @@
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Hunterdon_Images/jpg/hunterdon-self-storage-ringoes.jpg");
 }
 
+.jumbotron-top {
+  height: 80vh;
+}
+
 .jumbotron {
   margin-bottom: 0;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
-}
-
-.jumbotron-tops {
-  height: 80vh;
-}
-
-.jumbotrons {
-  height: 80vh;
+  height: calc(80vh - 114px);
 }
 
 .jumbotron-overlay {
@@ -63,26 +63,26 @@ iframe {
   border: 2px solid #fff;
 }
 
-.jumbotron-top {
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-}
+// .jumbotron-top {
+//   background-position: bottom;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
 
-.jumbotron-top1 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-}
+// .jumbotron-top1 {
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
 
-.jumbotron-top2 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-}
+// .jumbotron-top2 {
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
 
 .jumbotron-bottom {
   height: 20vh;
@@ -360,16 +360,11 @@ iframe {
 
 @media screen and (max-width: 600px) {
   .jumbotron-top {
-    height: 50vh;
+    height: calc(100vh - 113px);
   }
 
-  .jumbotron-top1 {
-    background-position: right;
-    height: 50vh;
-  }
-
-  .jumbotron-top2 {
-    height: 50vh;
+  .jumbotron {
+    height: calc(100vh - 113px);
   }
 
   .content-align {

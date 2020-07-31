@@ -2,7 +2,7 @@
 
 .containHolder {
   min-height: 94vh;
-  padding-top: 130px;
+  padding-top: 154px;
 }
 
 .display-none {
@@ -22,9 +22,32 @@ a {
   color: black;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .containHolder {
+    padding-top: 98px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .containHolder {
+    padding-top: 98px;
+  }
+
   .rent-example {
     border-left: none;
     padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .containHolder {
+    padding-top: 70px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .containHolder {
+    padding-top: 100px;
   }
 }

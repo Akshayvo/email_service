@@ -1,31 +1,13 @@
 <div class="containHolder">
   <div class="container">
-    <h1 class="text-center py-5">Pay Rent for {{name}}</h1>
-    <p class="text-center" style="color: red; font-size: 1rem"><b>If your unit has a facility lock over your lock due to delinquency,
+    <h1 class="text-center pt-5 pb-2">Pay Rent for {{name}}</h1>
+    <p class="text-center pb-5" style="color: red; font-size: 1rem;"><b>If your unit has a facility lock over your lock due to delinquency,
       it will be removed on the next business day after payment is rendered.</b></p>
     <div class="pay-rent-holder p-5 mb-3">
       <div class="row">
           <div class="col-md-12 mx-0">
               <router-outlet></router-outlet>
           </div>
-          <!-- <div class="col-md-4 rent-example" >
-            <h2> How to Login </h2>
-            <p class="mb-0"> <b>Username:</b> First Initial + Last Name  </p>
-            <p >  <b>Password:</b> Your Unit Number   </p>
-            <p>If you rent multiple units, your password is the unit number for the first unit you rented.</p>
-            <p class="mb-0"> <b>Example</b> </p>
-            <p class="mb-0">John Smith's Unit Number is 1234 </p>
-       
-            <p class="mb-0"> <b>John's Username:</b> jsmith  </p>
-            <p > <b>John's Password:</b> 1234</p>
-       
-            <p class="mb-0"> <b>Have question about your account?</b> </p>
-              <span *ngFor="let contact of contact" [class.display-none]="contact?.id == 0">
-                <span class="contact-links" *ngIf="contact?.id == 1 || contact?.id == 2">
-                  <a [href]="contact?.redirect">{{contact.data}}</a>
-                </span><br>
-              </span>
-         </div> -->
       </div>
     </div>
   </div>

@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .rent-holder {
-  padding-top: 120px;
+  padding-top: 154px;
   min-height: 88vh;
   margin-bottom: 50px;
 
@@ -40,10 +40,6 @@
   }
 }
 
-// .btn-primary {
-//   min-width: 125px !important;
-// }
-
 table {
   border: 1px solid #bab3a3;
 
@@ -71,6 +67,12 @@ table {
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .rent-holder {
+    padding-top: 98px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .rent-sub-holder {
     .coming-soon {
@@ -85,13 +87,12 @@ table {
       border-left: none;
       padding-left: 50px;
     }
-   
   }
 }
 
 @media only screen and (max-width: 600px) {
   .rent-holder {
-    padding-top: 70px;
+    padding-top: 100px;
 
     .container {
       padding-left: 0;
@@ -109,6 +110,12 @@ table {
 
   iframe {
     min-height: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .rent-holder {
+    padding-top: 100px;
   }
 }
 
