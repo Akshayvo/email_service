@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   navLinks: any;
   navbarCollapsed = true;
 
-  constructor(
+  constructor (
     private router: Router,
   ) { }
 
@@ -32,5 +32,4 @@ export class HeaderComponent implements OnInit {
   public onClick(menu: any) {
     menu.classList.remove('show');
   }
-
 }

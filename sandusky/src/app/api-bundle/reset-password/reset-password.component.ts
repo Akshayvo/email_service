@@ -40,6 +40,10 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
 
   get f() { return this.resetPasswordForm.controls; }
 
+  goBack() {
+    this.router.navigate(['pay-rent/verifyCode']);
+  }
+
   goToHome() {
     this.router.navigate(['/']);
   }
