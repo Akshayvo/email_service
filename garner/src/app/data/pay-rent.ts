@@ -13,12 +13,12 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: `Garner's U Store - 1687 US-441 Location`,
+    facility: `Garner's U Store - 1321 North Jefferson St`,
     address: '1321 N Jefferson St, Dublin, GA 31021',
     url: '1321-north-jefferson-st-location'
   },
   {
-    facility: `Garner's U Store - 1687 US-441 Location`,
+    facility: `Garner's U Store - 1687 US-441`,
     address: '1687 US-441, Dublin, GA 31021',
     url: '1687-US-441-location'
   },

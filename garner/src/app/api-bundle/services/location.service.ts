@@ -12,7 +12,7 @@ export class LocationService {
     },
     {
       id: 2,
-      name: `Garner's U Store - 1687 US-441 Location`,
+      name: `Garner's U Store - 1687 US-441`,
     },
  ];
  private locationSource = new BehaviorSubject(this.places[0].id);

@@ -20,7 +20,9 @@ export class PayRentComponent implements OnInit {
     private dataSharingService: DataSharingService,
   ) {
     if (this.router.url.includes('1321-north-jefferson-st-location')) {
-      this.name = ``;
+      this.name = `Garner's U Store - 1321 North Jefferson St`;
+  } else {
+    this.name = `Garner's U Store - 1687 US-441`;
   }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');

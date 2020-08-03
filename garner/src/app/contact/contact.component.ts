@@ -101,7 +101,7 @@ public fetchHours() {
   }
 
   public fetchContactDetailsLocation2() {
-    this.heading = `Garner's U Store - 1687 US-441 Location`;
+    this.heading = `Garner's U Store - 1687 US-441`;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }

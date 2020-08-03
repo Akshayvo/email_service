@@ -11,12 +11,12 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: `1321 North Jefferson St Location`,
+                label: `1321 North Jefferson St`,
                 path: '/location/1321-north-jefferson-st-location',
             },
             {
                 id: '2',
-                label: `1687 US-441 Location`,
+                label: `1687 US-441`,
                 path: '/location/1687-US-441-location',
             },
         ]

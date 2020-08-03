@@ -73,11 +73,11 @@ export const tabs = [
 
 export const headingLocation1 = `Garner's U Store - 1321 North Jefferson St`;
 
-export const headingLocation2 = `Garner's U Store - 1687 US-441 Location`;
+export const headingLocation2 = `Garner's U Store - 1687 US-441`;
 
-export const headingStorageUnit1 = 'Reserve Your Unit at Our 1321 North Jefferson St Location';
+export const headingStorageUnit1 = 'Reserve Your Unit at Our 1321 North Jefferson St';
 
-export const headingStorageUnit2 = 'Reserve Your Unit at Our 1687 US-441 Location';
+export const headingStorageUnit2 = 'Reserve Your Unit at Our 1687 US-441';
 
 
 export const unitSizerLocation1 = [
