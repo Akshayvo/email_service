@@ -37,7 +37,7 @@ a {
 
   .nav-link-active {
     border-bottom: 5px $primary solid;
-    color: $primary !important;
+    color: $white !important;
   }
 
   .location-active {
@@ -64,7 +64,7 @@ a {
 }
 
 .nav-link:hover {
-  color: $primary;
+  color: $white;
 }
 
 .display {

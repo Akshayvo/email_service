@@ -50,7 +50,7 @@ export const contactsLocation1 = [
     },
     {
         id: 1,
-        label: 'Office Address:',
+        label: 'Location Address:',
         data: '1321 N Jefferson St, Dublin, GA 31021',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
@@ -94,7 +94,7 @@ export const contactsLocation2 = [
     },
     {
         id: 1,
-        label: 'Office Address:',
+        label: 'Location Address:',
         data: '1687 US-441, Dublin, GA 31021',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
