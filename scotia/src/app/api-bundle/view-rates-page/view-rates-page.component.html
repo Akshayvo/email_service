@@ -5,14 +5,14 @@
     </div>
   <table  class="viewrates-desktop">
       <tHead [class.display]="!showTable">
-          <tr>
-            <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th">
-              {{th.data}}
-            </th>
-          </tr>
+        <tr>
+          <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th">
+            {{th.data}}
+          </th>
+        </tr>
       </tHead>
       <tbody>
-      <tr *ngFor="let lstUnitType of LstUnitTypes">
+        <tr *ngFor="let lstUnitType of LstUnitTypes">
           <td colspan="2" class="px-4 border text-center">
               {{lstUnitType.Description}}
           </td>
