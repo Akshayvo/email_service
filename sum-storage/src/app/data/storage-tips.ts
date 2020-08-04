@@ -7,7 +7,6 @@ export const storagePoints = [
     { data: 'Pack records and CDs vertically! Don\'t stack them flat, they will warp or bend!' },
     { data: 'Place heavier items in the bottom of the box and lighter items on top.' },
     { data: 'We recommend using plastic bins for clothing storage.' },
-    { data: 'We recommend keeping cardboard boxes off the concrete floors and pallets are available at no charge.' },
     { data: 'We recommend that you insure your stored items.' },
 ];
 
