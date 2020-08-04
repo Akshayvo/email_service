@@ -307,6 +307,7 @@ public navigateToPrevious() {
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
+    if (this.lstPayTypes && this.lstPayTypes.length > 0) {
     this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.payRentForm.patchValue({
@@ -316,6 +317,7 @@ public navigateToPrevious() {
         }
       }
     });
+  }
 
 
     if ( this.showInput) {
@@ -510,7 +512,9 @@ public navigateToPrevious() {
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
         this.showloaderForPayment = false;
-        this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
+        if (!!paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
+               this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
+          }
         this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         if ( paymentDataResponse.intErrorCode === 1 ) {
           if (this.navigateToReserve) {

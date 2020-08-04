@@ -21,12 +21,12 @@ export const tableData = [
 
 export const loginDetail = [
   {
-      userName: `Tenant's Last Name`,
-      password: `Tenant's gate access code`,
+      userName: `Tenant's First Initial + Last Name`,
+      password: `Tenant's Unit Number`,
       example: {
-          code: 'code is 1234',
-          userName: 'smith',
-          password: '1234'
+          code: 'Unit Number Is 123',
+          userName: 'jsmith',
+          password: '123'
       }
   }
 ];
