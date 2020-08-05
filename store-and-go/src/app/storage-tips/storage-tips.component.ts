@@ -24,7 +24,7 @@ export class StorageTipsComponent implements OnInit {
       content: `Take advantage of our self storage expertise, and use this sheet
       of storage tips to make your stay an easy one!`
     });
-    this.titleService.setTitle('Storage Tips | Stor N Lok Self Storage');
+    this.titleService.setTitle('Storage Tips | Store & Go Self Storage');
     this.metaService.createCanonicalURL();
   }
 

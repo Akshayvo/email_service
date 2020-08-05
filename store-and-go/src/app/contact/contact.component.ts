@@ -39,9 +39,9 @@ export class ContactComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Use our online form to submit any questions or concerns you might have about Stor N Lok Self Storage.`
+      content: `Use our online form to submit any questions or concerns you might have about Store & Go Self Storage.`
     });
-    this.titleService.setTitle('Contact Us | Stor N Lok Self Storage');
+    this.titleService.setTitle('Contact Us | Store & Go Self Storage');
     this.metaService.createCanonicalURL();
   }
 

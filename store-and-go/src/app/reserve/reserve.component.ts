@@ -19,7 +19,7 @@ export class ReserveComponent implements OnInit {
       content: `Use this short form to make a reservation with us today. One of our management
       team will be reaching out shortly to confirm your reservation!.`
     });
-    this.titleService.setTitle('Reserve Unit | Stor N Lok Self Storage');
+    this.titleService.setTitle('Reserve Unit | Store & Go Self Storage');
   }
 
   ngOnInit() {

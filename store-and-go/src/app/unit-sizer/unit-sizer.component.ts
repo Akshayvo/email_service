@@ -21,7 +21,7 @@ export class UnitSizerComponent implements OnInit {
       name: 'description',
       content: `Use this handy chart to help visualize what will fit into each storage unit size!`
     });
-    this.titleService.setTitle(`Unit Sizer | Stor N Lok Self Storage`);
+    this.titleService.setTitle(`Unit Sizer | Store & Go Self Storage`);
   }
 
   ngOnInit() {
