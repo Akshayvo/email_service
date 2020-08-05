@@ -42,12 +42,12 @@ export const hours = [
 ];
 
 export const contactsLocation1 = [
-    {
-        id: 0,
-        label: 'Office Address: ',
-        data: '1012 US-202, Ringoes, NJ 08551',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-    },
+    // {
+    //     id: 0,
+    //     label: 'Office Address: ',
+    //     data: '1012 US-202, Ringoes, NJ 08551',
+    //     class: 'fas fa-map-marker-alt mr-2 iconColor',
+    // },
     {
         id: 1,
         label: 'Facility Address: ',
@@ -90,12 +90,12 @@ export const hoursLocation1 = [
 ];
 
 export const contactsLocation2 = [
-    {
-        id: 0,
-        label: 'Office Address: ',
-        data: '1012 US-202, Ringoes, NJ 08551',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-    },
+    // {
+    //     id: 0,
+    //     label: 'Office Address: ',
+    //     data: '1012 US-202, Ringoes, NJ 08551',
+    //     class: 'fas fa-map-marker-alt mr-2 iconColor',
+    // },
     {
         id: 1,
         label: 'Facility Address: ',
@@ -138,12 +138,12 @@ export const hoursLocation2 = [
 ];
 
 export const contactsLocation3 = [
-    {
-        id: 0,
-        label: 'Office Address: ',
-        data: '1012 US-202, Ringoes, NJ 08551',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-    },
+    // {
+    //     id: 0,
+    //     label: 'Office Address: ',
+    //     data: '1012 US-202, Ringoes, NJ 08551',
+    //     class: 'fas fa-map-marker-alt mr-2 iconColor',
+    // },
     {
         id: 1,
         label: 'Facility Address: ',

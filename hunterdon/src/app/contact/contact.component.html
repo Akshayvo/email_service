@@ -100,7 +100,7 @@
              <h2> Hunterdon Storage at Ringoes</h2>
               <div class="py-2">
                   <span *ngFor="let contact of contactsLocation1">
-                    <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                    <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                   </span>
               </div>
@@ -118,7 +118,7 @@
               <div class="py-2">
                   <span *ngFor="let contact of contactsLocation2; let i = index">
                     <span><b>{{contact.label}}</b></span><span class="contact-links"
-                    *ngIf="contact?.id === 1 || contact?.id === 2 else other_content">
+                    *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
                     <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                   </span>
@@ -134,7 +134,7 @@
               <div class="py-2">
                   <span *ngFor="let contact of contactsLocation3; let i = index">
                     <span><b>{{contact.label}}</b></span><span class="contact-links"
-                    *ngIf="contact?.id === 1 || contact?.id === 2 else other_content">
+                    *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
                     <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                     <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                   </span>
