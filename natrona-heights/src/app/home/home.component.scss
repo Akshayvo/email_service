@@ -17,7 +17,7 @@
   background-size: cover;
   background-position: top left;
   padding: 0;
-  height: calc(80vh - 80px);
+  height: 80vh;
   color: $white;
   overflow: hidden;
   border-radius: 0;
@@ -71,7 +71,7 @@ h1 {
 }
 
 .jumbotron-top {
-  height: calc(80vh - 80px);
+  height: 80vh;
 }
 
 .jumbotron-bottom {
@@ -123,7 +123,7 @@ h1 {
 
 @media only screen and (min-width: 1200px) and (max-height: 640px) and (min-height: 451px) {
   .jumbotron {
-    height: calc(80vh - 80px);
+    height: 80vh;
   }
 
   .feature-icon-style {
@@ -135,7 +135,7 @@ h1 {
   }
 
   .jumbotron-top {
-    height: calc(80vh - 80px);
+    height: 80vh;
   }
 
   // .jumbotron-bottom {
@@ -238,7 +238,7 @@ h1 {
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 640px) and (min-height: 451px) {
   .jumbotron {
-    height: calc(80vh - 80px);
+    height: 80vh;
   }
 
   .feature-icon-style {
@@ -250,7 +250,7 @@ h1 {
   }
 
   .jumbotron-top {
-    height: calc(80vh - 80px);
+    height: 80vh;
   }
 
   // .jumbotron-bottom {
@@ -328,11 +328,11 @@ h1 {
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .jumbotron-top {
-    height: calc(80vh - 104px);
+    height: 80vh;
   }
 
   .jumbotron {
-    height: calc(80vh - 104px);
+    height: 80vh;
   }
 
   .jumbotorn-skew-style {
@@ -371,11 +371,11 @@ h1 {
 
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 700px) and (min-height: 481px) {
   .jumbotron-top {
-    height: calc(100vh - 160px - 104px);
+    height: 100vh;
   }
 
   .jumbotron {
-    height: calc(100vh - 160px - 104px);
+    height: 100vh;
   }
 
   .jumbotron-bottom {
@@ -467,11 +467,11 @@ h1 {
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .jumbotron-top {
-    height: calc(100vh - 200px - 128px);
+    height: 100vh;
   }
 
   .jumbotron {
-    height: calc(100vh - 200px - 128px);
+    height: 100vh;
   }
 
   .jumbotron-bottom {
@@ -508,7 +508,7 @@ h1 {
     text-align: center;
     background-attachment: unset;
     background-position: top left;
-    height: calc(100vh - 128px);
+    height: 100vh;
 
     h1 {
       font-size: 2em;
@@ -521,7 +521,7 @@ h1 {
   }
 
   .jumbotron-top {
-    height: calc(100vh - 128px);
+    height: 100vh;
   }
 
   .jumbotron-bottom {
@@ -564,7 +564,7 @@ h1 {
 
 @media only screen and (max-width: 600px) and (min-width: 420px) {
   .jumbotron-top {
-    height: calc(100vh - 128px);
+    height: 100vh;
   }
 
   .jumbotron-bottom {
@@ -575,7 +575,7 @@ h1 {
     text-align: center;
     background-attachment: unset;
     background-position: top left;
-    height: calc(100vh - 128px);
+    height: 100vh;
   }
 
   .feature {
@@ -612,7 +612,7 @@ h1 {
     text-align: center;
     background-attachment: unset;
     background-position: top left;
-    height: calc(100vh - 176px);
+    height: 100vh;
   }
 
   .jumbotron-bottom {
@@ -620,7 +620,7 @@ h1 {
   }
 
   .jumbotron-top {
-    height: calc(100vh - 176px);
+    height: 100vh;
   }
 
   .feature {
