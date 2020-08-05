@@ -38,6 +38,10 @@
   from = "/photos-video"
   to = "/"
   status = 301
+  [[redirects]]
+  from = "https://affordablesecurestorage.com/sign-up/login"
+  to = "https://affordablesecurestorage.com/pay-rent/affordable-secure-storage-floral-city/rent-sub/login"
+  status = 301
 [[redirects]]
   from = "/*"
   to = "/index.html"
