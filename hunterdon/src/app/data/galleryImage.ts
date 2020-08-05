@@ -115,13 +115,6 @@ export const galleryHome = [
       },
       {
         // tslint:disable-next-line: max-line-length
-        url: `hunterdon-self-storage-1-front-sign`,
-        // tslint:disable-next-line:max-line-length
-        thumb: `hunterdon-self-storage-1-front-sign`,
-        alt: ` a sign on a pole that reads Hunterdon Storage Flemington with pine trees in the background`
-      },
-      {
-        // tslint:disable-next-line: max-line-length
         url: `hunterdon-self-storage-1-office-and-landscaping`,
         // tslint:disable-next-line:max-line-length
         thumb: `hunterdon-self-storage-1-office-and-landscaping`,
