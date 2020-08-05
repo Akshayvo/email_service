@@ -155,47 +155,8 @@
   <!--Contact Hunterdon II Ends Here-->
 
 
-  <!--location information-->
-<div class="">
-  <div class="container py-4">
-    <div class="section py-4 m-0">
-      <div class="row">
-        <div class="col-lg-6 py-3 home-map">
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6247.189908329526!2d-74.8645479404397!3d40.48251441408218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3f1288d249e65%3A0x4d81da98d04c92e6!2s191%20US-202%2C%20Flemington%2C%20NJ%2008822!5e0!3m2!1sen!2sus!4v1594233728579!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
-        </div>
-
-        <div class="col-lg-6 py-3">
-          <div class="mb-4">
-            <p>
-              <span *ngFor="let contact of contactDetails">
-                <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content">
-                  <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
-                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
-              </span>
-            </p>
-            <b>Hours:</b>
-            <p>
-              <span *ngFor="let hour of hours">
-                <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
-              </span>
-            </p>
-          </div>
-          <div>
-            <app-tables [showBorder]="true" [tBody]="featuresList"></app-tables>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--location information end-->
-  
-
-
 <!--Service-->
-  <div class="service bg-light">
+  <div class="service">
       <div class="container py-5">
         <div class="row">
           <div class="col-md-6 pt-2">
