@@ -8,7 +8,7 @@ export const environment = {
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: `Garner's U Store - Staging`,
+  appId: `Garner's U Store - Testing`,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   VERSION: require('../../package.json').version,
 };
