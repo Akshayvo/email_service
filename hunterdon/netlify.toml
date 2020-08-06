@@ -51,6 +51,18 @@
   to = "/"
   status = 301
 [[redirects]]
+  from = "/hours-%26-locations"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/rates"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/contact"
+  to = "/contact-us"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

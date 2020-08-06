@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Hunterdon Storage - Staging',
+  appId: 'Hunterdon Storage - Testing',
   VERSION: require('../../package.json').version,
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
