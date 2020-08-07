@@ -48,6 +48,10 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
     this.router.navigate(['/pay-rent/login']);
   }
 
+  goBack() {
+    this.router.navigate(['/pay-rent/verifyCode']);
+  }
+
   resetPassword(data: any): void {
   this.resetPasswordUnsubscribe$ =  this.authService.resetPassword(data)
     .subscribe(
@@ -63,7 +67,6 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
 
   onSubmit() {
     this.submitted = true;
-
     if (this.resetPasswordForm.invalid) {
       return;
     } else {

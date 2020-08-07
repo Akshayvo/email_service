@@ -5,7 +5,9 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
+import { loginDetail } from '../../data/pay-rent';
 import { contact } from '../../data/contact';
+
 
 @Injectable()
 
@@ -23,13 +25,16 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   allowedToshow = false;
 
+  loginDetail = [];
+  contact: any;
+
+
   showForgotPassword = false;
   showPayRent = false;
 
   showLoader = false;
 
   showLoginPage = true;
-  contact: any;
 
   authData: string;
   tenantInfo: TenantInfo;
@@ -51,12 +56,14 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.fetchLoginDetail();
+    this.fetchContactDetails();
+
     this.loginForm = this.formBuilder.group({
       strUserName: ['', Validators.required],
       strPassword: ['', Validators.required],
       intAuthMethod: 1
     });
-    this.fetchContactDetails();
     if (window.localStorage) {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
@@ -68,9 +75,6 @@ export class LoginComponent implements OnInit, OnDestroy {
        }
     }
   }
-  public fetchContactDetails() {
-    this.contact = contact;
-  }
 
   get f() { return this.loginForm.controls; }
 
@@ -80,6 +84,14 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   public navigate (location: any) {
     this.router.navigate([location]);
+  }
+
+  public fetchLoginDetail() {
+    this.loginDetail = loginDetail;
+  }
+
+  public fetchContactDetails() {
+    this.contact = contact;
   }
 
 
@@ -106,13 +118,6 @@ export class LoginComponent implements OnInit, OnDestroy {
       );
   }
 
-
-public ngOnDestroy(): void {
-  if (this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
-    this.authUnsubscribe$.unsubscribe();
-  }
-}
-
   onSubmit() {
     this.submitted = true;
 
@@ -127,4 +132,10 @@ public ngOnDestroy(): void {
     }
   }
 
+
+  public ngOnDestroy(): void {
+      if (this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
+      this.authUnsubscribe$.unsubscribe();
+    }
+  }
 }

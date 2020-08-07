@@ -4,7 +4,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
-import { option, option1 } from '../../data/view-rates';
+import { option,option1 } from '../../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
@@ -294,11 +294,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       }])
     });
   }
-
-  public fetchUSState() {
+    public fetchUSState() {
     this.option = option;
-    this.option1 = option1;
-  }
+    this.option1 =  option1;
+    }
 
   public navigate(location: any) {
     this.router.navigate([location]);
@@ -329,34 +328,34 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   selectInsuranceChoice(event: any) {
     const indexValue = event.target.value;
     const index = this.LstInsuranceChoices.findIndex(x => x.CoverageDescription === indexValue);
-    this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[index].InsuranceChoiceID;
-    this.premium = this.LstInsuranceChoices[index].Premium;
-    console.log(indexValue, index, this.dataSharingService.insuranceChoiceId);
+    if (!!index) {
+      this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[index].InsuranceChoiceID;
+      this.premium = this.LstInsuranceChoices[index].Premium;
+    }
     this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
   }
 
 
   changeRate(event: any) {
-    console.log('change rate according to period', event.target.value);
     const indexValue = event.target.value;
     const index = this.LstRentalPeriods.findIndex(x => x.PeriodDescription === indexValue);
     this.dataSharingService.periodID = this.LstRentalPeriods[index].PeriodID;
-    console.log('indexValue', indexValue, 'index', index, 'periodID', this.dataSharingService.periodID);
-
     this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
   }
 
   selectChangeHandler (event: any) {
     const indexValue  = event.target.value;
     const index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
-    this.UnitTypeRate = this.lstUnitTypes[index].MonthlyRate;
-    this.monthlyRate = this.lstUnitTypes[index].MonthlyRate;
-    this.annualRate = this.lstUnitTypes[index].AnnualRate;
-    this.biAnnualRate = this.lstUnitTypes[index].BiAnnualRate;
-    this.quarterRate = this.lstUnitTypes[index].QuarterRate;
-    this.unitTypeId = this.lstUnitTypes[index].UnitTypeID;
-    this.ReservationFee = this.lstUnitTypes[index].ReservationFee;
-    this.ReservationFeeTax = this.lstUnitTypes[index].ReservationFeeTax;
+    if (!!index) {
+      this.UnitTypeRate = this.lstUnitTypes[index].MonthlyRate;
+      this.monthlyRate = this.lstUnitTypes[index].MonthlyRate;
+      this.annualRate = this.lstUnitTypes[index].AnnualRate;
+      this.biAnnualRate = this.lstUnitTypes[index].BiAnnualRate;
+      this.quarterRate = this.lstUnitTypes[index].QuarterRate;
+      this.unitTypeId = this.lstUnitTypes[index].UnitTypeID;
+      this.ReservationFee = this.lstUnitTypes[index].ReservationFee;
+      this.ReservationFeeTax = this.lstUnitTypes[index].ReservationFeeTax;
+    }
     this.MoveIn.intUnitTypeID = this.unitTypeId;
     this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
     this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
@@ -510,7 +509,6 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
 
         this.dataSharingService.LstUnitTypes.Description = this.Description;
         this.dataSharingService.LstUnitTypes.UnitTypeID = this.UnitTypeID;
-        // this.dataSharingService.LstUnitTypes.MonthlyRate = this.UnitTypeRate;
         this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
         this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
         this.dataSharingService.LstUnitTypes.BiAnnualRate = this.biAnnualRate;
