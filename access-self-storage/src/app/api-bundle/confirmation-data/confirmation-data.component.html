@@ -36,8 +36,6 @@
     </div>
 </div>
 
-
-
 <ng-template #other_content>
         <p class="text-center moveIn-text" *ngIf="navigateToMoveIn"> <b>This move-in is not complete until contacted by Access Self Storage, and provided a Gate Access Code.</b></p>
     <div class="row">
@@ -117,6 +115,76 @@
                                 {{zip}}
                             </td>
                         </tr>                     
+                    </tbody>
+                </table>
+                <h3 class="mb-3 mt-5" *ngIf="navigateToMoveIn">Alternate Tenant Information</h3>
+                <table>
+                    <tbody>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Name
+                            </td>
+                            <td>
+                                {{alternateName}}
+                            </td>
+                        </tr>
+                        
+                        <!-- <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Last Name
+                            </td>
+                            <td>
+                                {{alternateLastName}}
+                            </td>
+                        </tr> -->
+                        <tr *ngIf="navigateToMoveIn" class="mt-2">
+                            <td>
+                                Alternate Phone
+                            </td>
+                            <td>
+                                {{alternatePhone}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Address Line1
+                            </td>
+                            <td>
+                                {{alternateAddressLine1}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Address Line2
+                            </td>
+                            <td>
+                                {{alternateAddressLine2}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate City
+                            </td>
+                            <td>
+                                {{alternateCity}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Province
+                            </td>
+                            <td>
+                                {{alternateState}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="navigateToMoveIn">
+                            <td>
+                                Alternate Postal Code
+                            </td>
+                            <td>
+                                {{alternateZIP}}
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
