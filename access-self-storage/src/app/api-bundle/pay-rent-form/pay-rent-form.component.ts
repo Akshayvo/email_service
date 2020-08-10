@@ -428,15 +428,16 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   getPayMethods() {
    this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
       .subscribe(payTypesResponse => {
+        this.lstPayTypes = payTypesResponse.lstPayTypes;
 
-        this.cards.forEach(element => {
-          if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
-            const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
-             if (index > -1) {
-                this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
-              }
-          }
-        });
+        // this.cards.forEach(element => {
+        //   if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
+        //     const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
+        //      if (index > -1) {
+        //         this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
+        //       }
+        //   }
+        // });
 
         if (!!localStorage.getItem('strTenantToken')) {
           this.tenantTokenExist = true;
