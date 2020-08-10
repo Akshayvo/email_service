@@ -510,7 +510,9 @@ public navigateToPrevious() {
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
         this.showloaderForPayment = false;
-        this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
+        if (paymentDataResponse.PayTypeForResult.PaymentAmountTotal !== undefined) {
+          this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
+        }
         this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         if ( paymentDataResponse.intErrorCode === 1 ) {
           if (this.navigateToReserve) {
@@ -546,7 +548,7 @@ public navigateToPrevious() {
       .subscribe(result => {
         this.router.navigate([`pay-rent`]);
         localStorage.removeItem('paymentNavigationUrl');
-        if (!!localStorage.getItem('APIKey')){
+        if (!!localStorage.getItem('APIKey')) {
           localStorage.removeItem('APIKey');
         }
         localStorage.removeItem('strTenantToken');
