@@ -9,7 +9,7 @@ export const environment = {
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['sanghmitra.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Storage World',
+  appId: 'Storage World - Production',
   VERSION: require('../../package.json').version,
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
