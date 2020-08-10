@@ -49,6 +49,8 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
     this.router.navigate(['/pay-rent/login']);
   }
 
+  
+
   resetPassword(data: any): void {
   this.resetPasswordUnsubscribe$ =  this.authService.resetPassword(data)
     .subscribe(
