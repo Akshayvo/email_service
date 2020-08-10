@@ -18,6 +18,7 @@ import { DataSharingService } from '../services/data-sharing.service';
 import { MakeAReservationService } from '../services/make-a-reservation.service';
 import { MoveInService } from '../services/moveIn.service';
 import { AddTenantService } from '../services/add-tenant.service';
+import { environment } from '../../../environments/environment';
 
 
 
@@ -64,6 +65,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   surcharge: number;
   unitTypeNotAvailability: boolean;
   showLoader = false;
+  cards: any;
 
   marked = false;
   signUp = {};
@@ -204,6 +206,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     if (this.router.url ===  '/pay-rent/payment' ) {
       this.navigateToMoveInPayment = true;
     }
+    this.fetchCards();
+  }
+
+  public fetchCards() {
+    this.cards = environment.cards;
   }
 
   ngOnInit() {
@@ -421,7 +428,16 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   getPayMethods() {
    this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
       .subscribe(payTypesResponse => {
-        this.lstPayTypes = payTypesResponse.lstPayTypes;
+
+        this.cards.forEach(element => {
+          if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
+            const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
+             if (index > -1) {
+                this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
+              }
+          }
+        });
+
         if (!!localStorage.getItem('strTenantToken')) {
           this.tenantTokenExist = true;
           this.showLoader = true;
