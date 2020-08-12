@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  type: 0,  // { API: 0, iframe: 1 }
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   appId: 'Hunterdon Storage - Testing',

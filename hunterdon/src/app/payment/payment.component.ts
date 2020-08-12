@@ -2,8 +2,11 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WINDOW } from '@ng-toolkit/universal';
-import { DataSharingService } from '../services/data-sharing.service';
+import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { payRentPageContent, payRentPageTitle } from '../data/title';
+import { LocationService } from '../services/location.service';
+import { contactsLocation1, contactsLocation3, contactsLocation2 } from '../data/contact';
+import { tableHeader, tableData } from '../data/pay-rent';
 
 
 @Component({
@@ -18,6 +21,10 @@ export class PaymentComponent implements OnInit {
   strTenantToken: string;
   payRentPageContent: any;
   payRentPageTitle: any;
+  locationId: any;
+  contact: any;
+  tableData: any;
+  tableHeader = [];
   private sub: any;
 
   constructor(
@@ -26,6 +33,7 @@ export class PaymentComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     public router: Router,
+    private data: LocationService,
     private  dataSharingService: DataSharingService,
   ) {
     this.fetchMetaData();
@@ -37,10 +45,10 @@ export class PaymentComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.sub = this.route.queryParams.subscribe(params => {
-
-    });
     window.scrollTo(0, 0);
+    this.receiveMessage();
+    this.fetchTableHeader();
+    this.fetchTableData();
 
     if (!!(localStorage.getItem('strTenantToken'))) {
       const navTo = localStorage.getItem('paymentNavigationUrl');
@@ -57,5 +65,30 @@ export class PaymentComponent implements OnInit {
   public fetchMetaData() {
     this.payRentPageContent = payRentPageContent;
     this.payRentPageTitle = payRentPageTitle;
+  }
+
+  receiveMessage() {
+    this.data.currentLocation.subscribe(locationId => {
+      this.locationId = locationId;
+      this.dataupdate();
+    });
+  }
+
+  public fetchTableHeader() {
+    this.tableHeader = tableHeader;
+  }
+
+  public fetchTableData() {
+    this.tableData = tableData;
+  }
+
+  public dataupdate() {
+    if ( this.locationId === '1' || this.locationId === 1 ) {
+      this.contact = contactsLocation1;
+    } else if ( this.locationId === '2' ) {
+      this.contact = contactsLocation2;
+    } else if ( this.locationId === '3' ) {
+      this.contact = contactsLocation3;
+    }
   }
 }

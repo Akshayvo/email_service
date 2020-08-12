@@ -32,6 +32,10 @@ export class ContactComponent implements OnInit {
       id: 1,
       name: 'Hunterdon Storage I',
     },
+    {
+      id: 2,
+      name: 'Hunterdon Storage II',
+    },
  ];
 
   contactsLocation2: any;

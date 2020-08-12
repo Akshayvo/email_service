@@ -249,6 +249,12 @@ export const unitSizerLocation3 = [
 
 export const heading = ``;
 
+export const headingLocation1 = `Reserve Your Unit at our Hunterdon Storage at Ringoes Location`;
+
+export const headingLocation2 = `Reserve Your Unit at our Hunterdon Storage I Location`;
+
+export const headingLocation3 = `Reserve Your Unit at our Hunterdon Storage II Location`;
+
 export const aboutUsImage = ``;
 
 export const aboutUs = [

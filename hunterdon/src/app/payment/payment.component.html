@@ -6,53 +6,30 @@
     </div>
     <div  class="container pt-5">
       <div class="rent-sub-holder">
-          <div class="container px-0">
-            <table class="col-md-12">
-              <thead>
-                <tr>
-                  <th>Facility</th>
-                  <th>Address</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="table-data">
-                    Hunterdon Storage at Ringoes
-                  </td>
-                  <td class="table-data">
-                    1012 US-202, Ringoes, NJ 08551
-                  </td>
-                  <td class="text-right px-3">
-                    <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent/hunterdon-storage-ringoes']" role="button">Pay Here</a>            
-                  </td>
-                </tr>
-                <tr>
-                  <td class="table-data">
-                    Hunterdon Storage I
-                  </td>
-                  <td class="table-data">
-                    191 US-202, Flemington, NJ 08822
-                  </td>
-                  <td class="text-right px-3">
-                    <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent/hunterdon-storage-1']" role="button">Pay Here</a>            
-                  </td>
-                </tr>
-                <tr>
-                  <td class="table-data">
-                    Hunterdon Storage II
-                  </td>
-                  <td class="table-data">
-                    177 NJ-31, Flemington, NJ 08822
-                  </td>
-                  <td class="text-right px-3">
-                    <a class="btn btn-primary p-2 ml-0" [routerLink]="['/pay-rent/hunterdon-storage-2']" role="button">Pay Here</a>            
-                  </td>
-                </tr>
-              </tbody>
-             </table>
-          </div>
+        <div class="container px-0">
+          <table class="col-md-12">
+            <thead >
+              <tr>
+                <th  *ngFor="let tableHeader of tableHeader">{{tableHeader.data}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let tableData of tableData">
+                <td class="table-data">
+                  {{tableData.facility}}
+                </td>
+                <td class="table-data">
+                  {{tableData.address}}
+                </td>
+                <td class="table-data" >
+                  <!-- <div [innerHtml]="{{tableData.url}}"></div> -->
+                  <a class="btn btn-primary p-2 ml-0" [routerLink]="'/pay-rent/'+tableData.url" role="button">Pay Here</a>
+                </td>
+              </tr>
+            </tbody>
+           </table>
         </div>
+      </div>
     </div>
   </div>
 </div>

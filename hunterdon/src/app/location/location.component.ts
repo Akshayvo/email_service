@@ -5,7 +5,7 @@ import { contactsLocation1, hoursLocation1,
 import { tabs } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { DataSharingService } from '../services/data-sharing.service';
+import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { UaParserService } from '../services/ua-parser.service';
 import { locationPage1Title, locationPage1Content, locationPage2Title, locationPage2Content,
   locationPage3Title, locationPage3Content } from '../data/title';
