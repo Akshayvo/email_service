@@ -5,17 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
-  // locationAPIKey = {
-  //   loc1: 'dzF0M1c5SjAqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 13903
-  //   loc2: 'dzF0NVczSjYqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 15368
-  //   loc3: 'dzF0NVczSjYqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 15369
-  // };
-
-  locationAPIKey = {                                                     // demo north
-    loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-    loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-    loc3: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  locationAPIKey = {
+    loc1: 'dzF0M1c5SjAqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 13903
+    loc2: 'dzF0NVczSjYqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 15368
+    loc3: 'dzF0NVczSjYqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 15369
   };
+
+  // locationAPIKey = {                                                     // demo north
+  //   loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  //   loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  //   loc3: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  // };
 
   verificationCode: string;
   changePassword: boolean;
