@@ -24,7 +24,7 @@ export const contact = [
 export const hours = [
     {
         label: 'Office Hours: ',
-        data: '7 Days a Week - 9:00AM - 5:00PM'
+        data: '7 Days a Week - By Appointment Only'
     },
     {
         label: 'Access Hours: ',
