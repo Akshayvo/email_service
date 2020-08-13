@@ -4,6 +4,7 @@
   background-color: $light;
   padding-top: 116px;
 }
+
 .carousel-caption {
   bottom: 40px;
 
@@ -11,6 +12,7 @@
     height: 80px;
   }
 }
+
 .carousel-indicators {
   li {
     width: 0.8rem;
@@ -152,21 +154,16 @@
   }
 }
 
-@media only screen and (min-width: 1199px) {
-  .social {
-    margin-left: 16px;
-  }
-}
-
 @media only screen and (max-width: 991px) {
   .social-content {
     h1 {
       font-size: 1.4rem;
     }
   }
+
   .contact-details {
     padding-top: 90px;
-}
+  }
 
   .iconColor {
     font-size: 1rem;
@@ -293,7 +290,8 @@
       padding-bottom: 15px;
     }
   }
-  .video{
+
+  .video {
     display: none;
   }
 

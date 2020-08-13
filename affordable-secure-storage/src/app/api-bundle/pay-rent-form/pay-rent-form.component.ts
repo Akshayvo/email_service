@@ -17,8 +17,6 @@ import { MakeAReservationService } from '../services/make-a-reservation.service'
 import { MoveInService } from '../services/moveIn.service';
 import { AddTenantService } from '../services/add-tenant.service';
 
-
-
 @Component({
   selector: 'app-pay-rent-form',
   templateUrl: './pay-rent-form.component.html',
@@ -550,7 +548,7 @@ public navigateToPrevious() {
       .subscribe(result => {
         this.router.navigate([`pay-rent`]);
         localStorage.removeItem('paymentNavigationUrl');
-        if (!!localStorage.getItem('APIKey')){
+        if (!!localStorage.getItem('APIKey')) {
           localStorage.removeItem('APIKey');
         }
         localStorage.removeItem('strTenantToken');

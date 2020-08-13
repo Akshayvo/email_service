@@ -9,7 +9,7 @@
               <span *ngFor="let contact of contacts" class="py-2 each-contact">
                 <span class="pl-3"><i style="font-size: 1.1rem;" class="{{contact.class}}"></i></span><span>{{contact.data}}</span>
               </span>
-              <span class="social  text-right" *ngFor="let social of socialLinks">
+              <span class="social  text-right ml-3" *ngFor="let social of socialLinks">
                 <a [href]="social?.path" target="_blank">
                   <i [class]="social?.class" ></i>
                 </a>

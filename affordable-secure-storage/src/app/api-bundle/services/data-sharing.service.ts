@@ -10,7 +10,7 @@ export class DataSharingService {
   };
 
   // locationAPIKey = {
-  //   loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // demo north 28463
+  //   loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // demo north 28464
   // };
 
 

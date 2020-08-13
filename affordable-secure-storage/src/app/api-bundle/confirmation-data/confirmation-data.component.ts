@@ -361,7 +361,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           if (this.navigateToMoveIn === true) {
             if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
               this.dataSharingService.addingTenant = true;
-              this.router.navigate([`${this.navTo}//payMoveInCharges`]);
+              this.router.navigate([`${this.navTo}/payMoveInCharges`]);
             } else {
               this.addTenant(this.tenantData);
             }

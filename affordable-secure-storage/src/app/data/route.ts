@@ -105,11 +105,11 @@ export const apiRoutes = [
       { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
       { path: 'rent-sub', component: RentSubComponent,
         children: [
-          {path: '', redirectTo: 'login', pathMatch: 'full'},
-          {path: 'login', component: LoginComponent },
-          {path: 'forgotPassword', component: ForgotPasswordComponent },
-          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+          { path: '', redirectTo: 'login', pathMatch: 'full'},
+          { path: 'login', component: LoginComponent },
+          { path: 'forgotPassword', component: ForgotPasswordComponent },
+          { path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          { path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
           { path: 'verifyCode', component: VerifyCodeComponent },
           { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
           // canActivate: [VerifictionCodeGuard]

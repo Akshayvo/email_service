@@ -1,9 +1,11 @@
 <nav class="navbar navbar-expand-lg bg-white">
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')">
-      <img class="pb-2" src="{{imageBaseUrl}}/affordable-secure-storage-logo.{{imagetype}}" width="auto" height="100" alt="logo artwork that reads Affordable Secure Storage with the words inside a drawing of a storage building">
+      <img class="pb-2" src="{{imageBaseUrl}}/affordable-secure-storage-logo.{{imagetype}}" width="auto" height="100"
+      alt="logo artwork that reads Affordable Secure Storage with the words inside a drawing of a storage building">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </button>
@@ -14,7 +16,7 @@
           <span *ngIf="nav?.type === 'link'"> 
             <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" *ngIf="nav?.path !== '/pay-rent'"
             [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
-            <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'"  *ngIf="nav?.path === '/pay-rent'"
+            <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" *ngIf="nav?.path === '/pay-rent'"
             [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)">{{nav.label}}</a>
 
           </span>

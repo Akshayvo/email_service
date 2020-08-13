@@ -15,19 +15,18 @@
               {{lstUnitType.Description}}
           </td>
           <td colspan="2" class="px-4 border text-center">
-              <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
+            <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
           </td>
           <!-- <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount}}
-        </td> -->
-        <!-- <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled; else other_climate">
-          <strong> Yes</strong>
-        </td> -->
+          </td> -->
+          <!-- <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled; else other_climate">
+            <strong> Yes</strong>
+          </td> -->
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
               <button (click)="navigate('reserve', lstUnitType )">Reserve</button>
           </td>
-<!-- 
-          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
+          <!-- <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
             <button (click)="navigate('move-in', lstUnitType)"> Move In</button>
           </td> -->
       
@@ -53,17 +52,18 @@
     <div class="col-6 text-center ">  
       <strong>Unit Size</strong>
     <div class=" py-1 ">{{lstUnitType.Description}}</div>
-    <div class="row">
-        
-        <div class="col-6 text-center ">
-            <p class=" "><b><u>Rate</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</div>
-        </div>
-        <!-- <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" >
-            <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
-        </div> -->
+      <div class="row">
+          
+          <div class="col-6 text-center ">
+              <p class=" "><b><u>Rate</u></b></p>
+              <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</div>
+          </div>
 
-    </div>
+          <!-- <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" >
+              <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
+          </div> -->
+
+      </div>
     </div>
       <div class="col-6 d-flex justify-content-center" >
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other" >
