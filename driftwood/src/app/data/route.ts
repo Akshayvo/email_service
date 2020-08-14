@@ -22,6 +22,10 @@ import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-passw
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confirmation-page.component';
+import { RentSubComponent } from '../rent-sub/rent-sub.component';
+import { SignUpComponent } from '../api-bundle/sign-up/sign-up.component';
+import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
+
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
@@ -47,6 +51,9 @@ import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confi
     {
       path: 'pay-rent', component: PaymentComponent,
       children: [
+        { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
+        { path: 'rent-sub', component: RentSubComponent,
+        children: [
         {path: '', redirectTo: 'login', pathMatch: 'full'},
         {path: 'login', component: LoginComponent },
         {path: 'forgotPassword', component: ForgotPasswordComponent },
@@ -55,8 +62,19 @@ import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confi
         { path: 'verifyCode', component: VerifyCodeComponent },
         { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
         // canActivate: [VerifictionCodeGuard]
-      ]
-    },
+      ] },
+      { path: 'sign-up', component: SignUpComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]  }
+      ] },
     { path: 'forgot-password', component: ForgotPasswordComponent },
     { path: 'review', component: HomeComponent,
       resolve: {

@@ -4,6 +4,7 @@ import { contact } from '../../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import { payRentPageContent, payRentPageTitle } from '../../data/title';
 import { payRentHeading } from '../../data/heading';
+import { tabs } from '../../data/tab';
 
 @Component({
   selector: 'app-payment',
@@ -16,6 +17,7 @@ export class PaymentComponent implements OnInit {
   payRentPageTitle: string;
   payRentPageContent: string;
   payRentHeading: string;
+  tabs: any;
 
   constructor(
     private titleService: Title,
@@ -47,5 +49,6 @@ export class PaymentComponent implements OnInit {
 
   public fetchContactDetails() {
     this.contact = contact;
+    this.tabs = tabs;
   }
 }

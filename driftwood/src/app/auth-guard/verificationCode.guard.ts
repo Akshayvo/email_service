@@ -14,7 +14,7 @@ export class VerifictionCodeGuard implements CanActivate {
       if (this.dataSharingService.verificationCode) {
           return true;
       } else {
-          this.router.navigate(['/pay-rent/forgotPassword']);
+          this.router.navigate(['/pay-rent/rent-sub/forgotPassword']);
           return false;
       }
   }

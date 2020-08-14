@@ -38,7 +38,7 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     if (this.passwordChanged === true) {
-      this.router.navigate(['pay-rent/login']);
+      this.router.navigate(['pay-rent/rent-sub/login']);
     }
   }
 
@@ -47,7 +47,7 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
   goBack() {
     this.dataSharingService.changePassword = false;
     localStorage.removeItem('strTenantToken');
-    this.router.navigate(['pay-rent/login']);
+    this.router.navigate(['pay-rent/rent-sub/login']);
   }
 
   public navigate(location: any) {
@@ -86,4 +86,5 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
       this.changePasswordUnsubscribe$.unsubscribe();
     }
   }
+
 }

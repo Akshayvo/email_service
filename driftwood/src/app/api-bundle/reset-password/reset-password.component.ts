@@ -45,11 +45,11 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
   }
 
   goToLogin() {
-    this.router.navigate(['/pay-rent/login']);
+    this.router.navigate(['/pay-rent/rent-sub/login']);
   }
 
   goBack() {
-    this.router.navigate(['/pay-rent/verifyCode']);
+    this.router.navigate(['/pay-rent/rent-sub/verifyCode']);
   }
 
   resetPassword(data: any): void {

@@ -9,6 +9,6 @@ export const environment = {
   appId: 'Driftwood Village Self Storage - Staging',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  APIKey: ``, // demo north
+  APIKey: `dTJXNkQ2UDRINE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Driftwood Village
   websiteUrl: ''
 };

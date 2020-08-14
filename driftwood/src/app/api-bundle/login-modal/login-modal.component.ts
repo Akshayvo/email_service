@@ -60,26 +60,23 @@ export class LoginModalComponent implements OnInit, OnDestroy {
 
   auth(data: any): void {
     this.authUnsubscribe$ =  this.authService.auth(data)
-        .subscribe(
-          auth => {
-            this.showPayRent = true;
-            this.authData = auth.strTenantToken;
-            localStorage.setItem('strTenantToken', this.authData);
-            this.dataSharingService.changePassword = true;
-
-            this.router.navigate(['/pay-rent/changePassword']);
-          }, (err) => {
-            this.credentialsInvalid = true;
-            this.showLoader = false;
-          }
-        );
-    }
-
-
+      .subscribe(
+        auth => {
+          this.showPayRent = true;
+          this.authData = auth.strTenantToken;
+          localStorage.setItem('strTenantToken', this.authData);
+          // this.dataSharingService.strTenantToken = this.authData;
+          this.dataSharingService.changePassword = true;
+          this.router.navigate(['/pay-rent/rent-sub/changePassword']);
+        }, (err) => {
+          this.credentialsInvalid = true;
+          this.showLoader = false;
+        }
+      );
+  }
 
   onSubmit() {
     this.submitted = true;
-
     if (this.loginModalForm.invalid) {
       return;
     } else {
@@ -96,5 +93,4 @@ export class LoginModalComponent implements OnInit, OnDestroy {
       this.authUnsubscribe$.unsubscribe();
     }
   }
-
 }

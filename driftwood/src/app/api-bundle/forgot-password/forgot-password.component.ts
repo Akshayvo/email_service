@@ -39,7 +39,7 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
   get f() { return this.forgotPasswordForm.controls; }
 
   goBack() {
-    this.router.navigate(['pay-rent/login']);
+    this.router.navigate(['pay-rent/rent-sub/login']);
   }
 
   forgotPassword(data: any): void {
@@ -48,7 +48,7 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
       result => {
         this.showLoader = false;
         if (result.intErrorCode === 1) {
-          this.router.navigate(['pay-rent/verifyCode']);
+          this.router.navigate(['pay-rent/rent-sub/verifyCode']);
         } else {
           if (result.intErrorCode === 0) {
             this.showNoError = true;
