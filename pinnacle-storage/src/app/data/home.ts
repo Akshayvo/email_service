@@ -56,7 +56,7 @@ export const aboutUs = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        p: `We are conveniently located on New Scotland Road, between Slingerlands and New Scotland, making us an ideal solution for Vooreheesville,
+        p: `We are conveniently located on New Scotland Road, between Slingerlands and New Scotland, making us an ideal solution for Voorheesville,
             Guilderland, Berne, and the surrounding communities. We service both residential users looking for that
             little extra elbow room around home, and growing businesses in need of inventory or equipment storage.`,
     },
