@@ -25,10 +25,10 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    data: 'Deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  },
+  // {
+  //   data: 'Deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
   {
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
