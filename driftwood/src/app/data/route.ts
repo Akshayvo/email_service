@@ -81,7 +81,7 @@ import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+          externalUrl: ''
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -103,7 +103,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+          externalUrl: ''
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
