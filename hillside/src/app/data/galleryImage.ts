@@ -3,7 +3,7 @@ export const galleryHome = [
     // tslint:disable-next-line: max-line-length
     url: `hillside-self-storage-aerial-photograph`,
     // tslint:disable-next-line:max-line-length
-    thumb: `hillside-self-storage-aerial-photograph`,
+    thumb: `hillside-self-storage-aerial-photograph-thumb`,
     alt: `aerial photograph of brand new metal self storage buildings with green roofs and tan walls`
   },
   {
@@ -40,5 +40,12 @@ export const galleryHome = [
     // tslint:disable-next-line:max-line-length
     thumb: `hillside-self-storage-closeup`,
     alt: `self storage unit doors at the end of a metal self storage building`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `storage-units-at-dusk`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `storage-units-at-dusk-thumb`,
+    alt: `a self storage front office and single story storage units in the background at dusk`
   },
 ];
