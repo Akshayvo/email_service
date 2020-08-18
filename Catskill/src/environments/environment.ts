@@ -5,10 +5,10 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  errorsMails: [ 'website.dev@codeparva.in' ],
+  errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Catskill Self Storage',
+  appId: 'Catskill Self Storage - Production',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   APIKey: `MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
