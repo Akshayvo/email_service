@@ -70,7 +70,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h1: `Affordable Storage in Sacramento`,
+        h1: `Store & Go in Sacramento`,
         blurb: `Whether you're a business searching for extra space for inventory without paying commercial real estate
         rates, or if you're a residential storage user seeking extra elbow room around the house, Store & Go has you
         covered! Our reasonable rates and convenient location make us the ideal solution!`,
