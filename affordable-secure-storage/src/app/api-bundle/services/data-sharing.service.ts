@@ -3,15 +3,16 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+
 export class DataSharingService {
 
-  locationAPIKey = {
-    loc1: 'XjJ7OUYzVzNHM0k6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29333 Affordable Secure Storage - Floral City
-  };
-
   // locationAPIKey = {
-  //   loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // demo north 28464
+  //   loc1: 'XjJ7OUYzVzNHM0k6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29333 Affordable Secure Storage - Floral City
   // };
+
+  locationAPIKey = {
+    loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // demo north 28464
+  };
 
 
   verificationCode: string;
@@ -20,6 +21,7 @@ export class DataSharingService {
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
   isValueUpdated: boolean;
+  isDataUpdated: boolean;
   navigateToPrevious: string;
   paymentNavigation: string;
   periodID: number;
