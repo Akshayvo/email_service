@@ -20,7 +20,7 @@ export const payList = [
 export const loginFoul = [
   {
     userName: `Tenant's Last Name`,
-    password: `Tenant's gate access code`,
+    password: `Tenant's Unit Number`,
     example: {
         code: '1234',
         userName: 'smith',
@@ -32,7 +32,7 @@ export const loginFoul = [
 export const loginLouisville = [
   {
     userName: `Tenant's Last Name`,
-    password: `Tenant's gate access code`,
+    password: `Tenant's Unit Number`,
     example: {
         code: '1234',
         userName: 'smith',
@@ -44,7 +44,7 @@ export const loginLouisville = [
 export const loginLincoln = [
   {
     userName: `Tenant's Last Name`,
-    password: `Tenant's gate access code`,
+    password: `Tenant's Unit Number`,
     example: {
         code: '1234',
         userName: 'smith',
