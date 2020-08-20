@@ -4,6 +4,8 @@ import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { UaParserService } from '../app/services/ua-parser.service';
 
+declare var logInMessage;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,10 +18,18 @@ export class AppComponent implements OnInit {
     private angulatics: Angulartics2GoogleAnalytics,
     private uaParserService: UaParserService,
   ) {
-
+    // this.logIn();
+    // logInMessage ();
   }
+
+  // logIn () {
+  //   logInMessage ();
+  // }
+
   ngOnInit() {
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
     const onNavigationEnd = this.router.events.pipe(filter(event => event instanceof NavigationEnd));
+    // this.logIn();
+    logInMessage ();
   }
 }
