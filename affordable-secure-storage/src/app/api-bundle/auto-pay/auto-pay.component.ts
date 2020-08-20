@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { FetchDataService } from '../services/fetch-data.service';
@@ -7,11 +7,9 @@ import { LstPayTypes, PayTypes, PayTypeForResult, } from '../models/payment';
 import { UnpaidAR, ObjTenant} from '../models/tenant';
 import { month } from '../../data/date';
 import { Router } from '@angular/router';
-
 import { Subscription } from 'rxjs';
 import { SurchargeService } from '../services/surcharge.service';
 import { DataSharingService } from '../services/data-sharing.service';
-
 
 @Component({
   selector: 'app-auto-pay',
@@ -55,8 +53,6 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   surcharge: number;
   unitTypeNotAvailability: boolean;
   showLoader = false;
-  isDataUpdated = false;
-
   marked = false;
   signUp = {};
   logOut = {};
@@ -99,6 +95,11 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   successMessage: string;
   progressMessage: string;
   paymentTab: string;
+  isDataUpdated = false;
+  canExit = true;
+  messageSavedData: string;
+  isDataSaved = false;
+
   private OptionOutOfAutoPaySubscribe$: Subscription;
   private signUpAutoPaySubscribe$: Subscription;
   private signOutSubscribe$: Subscription;
@@ -143,6 +144,8 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     }
 
 
+
+
     if (this.router.url ===  '/pay-rent/sign-up/payment' ) {
       this.navigateToMoveInPayment = true;
     }
@@ -154,8 +157,18 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     }
   }
 
+  @HostListener('window:beforeunload', ['$event'])
+  unloadNotification($event: any) {
+    $event.returnValue = true;
+  }
+
+  public hasUnsavedData() {
+    return this.canExit;
+  }
+
+
   ngOnInit() {
-    console.log('value changing', this.isDataUpdated);
+    console.log('value changing', this.dataSharingService.isDataUpdated);
     if (!!localStorage.getItem('strTenantToken')) {
       this.getPayMethods();
     } else {
@@ -166,6 +179,11 @@ export class AutoPayComponent implements OnInit, OnDestroy {
       }
     }
     this.fetchMonth();
+
+    if (!!this.dataSharingService.isDataSaved && !!this.dataSharingService.isDataUpdated) {
+      this.isDataUpdated = this.dataSharingService.isDataUpdated;
+      this.count = this.count + 1;
+    }
   }
 
   get f() { return this.autoPayForm.controls; }
@@ -177,6 +195,8 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   public fetchMonth() {
     this.month = month;
   }
+
+
 
   autoCardType(number: any) {
    this.cardType = this.getCardType(number.target.value);
@@ -225,6 +245,13 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     return '';
 }
 
+  saveDetail() {
+    this.dataSharingService.cardDetailsObject = Object.assign({}, this.autoPayForm.controls.objTenant.value);
+    this.isDataSaved = true;
+    this.dataSharingService.isDataSaved = true;
+    this.messageSavedData = 'Card Details saved.';
+  }
+
   selectChangeHandler(event: any) {
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue = event.target.value;
@@ -247,13 +274,14 @@ export class AutoPayComponent implements OnInit, OnDestroy {
       .subscribe(tenantData => {
         if (tenantData) {
           const { Tenant } = tenantData;
-          const tempObject = {
-            CCBillingAccountName: Tenant.CCBillingAccountName,
-            CCExpirationMonth: Tenant.CCExpirationMonth,
-            CCExpirationYear: Tenant.CCExpirationYear,
-            CCBillingAddress: Tenant.CCBillingAddress,
-            CCBillingZIP: Tenant.CCBillingZIP,
-          };
+          // const tempObject = {
+          //   CCNumber: Tenant.CCNumber,
+          //   CCBillingAccountName: Tenant.CCBillingAccountName,
+          //   CCExpirationMonth: Tenant.CCExpirationMonth,
+          //   CCExpirationYear: Tenant.CCExpirationYear,
+          //   CCBillingAddress: Tenant.CCBillingAddress,
+          //   CCBillingZIP: Tenant.CCBillingZIP,
+          // };
           this.balance = Tenant.Balance;
           this.surchargeService.setAmt(this.balance);
           this.surchargeService.getIdPaytype(this.paytypeid);
@@ -279,25 +307,51 @@ export class AutoPayComponent implements OnInit, OnDestroy {
               }
             });
           }
-
-          this.autoPayForm.patchValue({
-            objTenant: {
-              CCNumber: Tenant.CCNumber,
-              CCBillingAccountName: Tenant.CCBillingAccountName,
-              CCExpirationMonth: Tenant.CCExpirationMonth,
-              CCExpirationYear: Tenant.CCExpirationYear,
-              CCBillingAddress: Tenant.CCBillingAddress,
-              CCBillingZIP: Tenant.CCBillingZIP,
-              // SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
+          const tempObject = {
+            CCNumber: Tenant.CCNumber,
+            CCBillingAccountName: Tenant.CCBillingAccountName,
+            CCExpirationMonth: Tenant.CCExpirationMonth,
+            CCExpirationYear: Tenant.CCExpirationYear,
+            CCBillingAddress: Tenant.CCBillingAddress,
+            CCBillingZIP: Tenant.CCBillingZIP,
+            PayType: {
+              PayTypeDescription: this.defaultCardType,
+              PayTypeID: defaultCardPayTypeId,
             }
-          });
+          };
+
+          if (!!this.dataSharingService.isDataUpdated && !!this.dataSharingService.isDataSaved) {
+            this.autoPayForm.patchValue({
+              objTenant: {
+                CCNumber: this.dataSharingService.cardDetailsObject.CCNumber,
+                CCBillingAccountName: this.dataSharingService.cardDetailsObject.CCBillingAccountName,
+                CCExpirationMonth: this.dataSharingService.cardDetailsObject.CCExpirationMonth,
+                CCExpirationYear: this.dataSharingService.cardDetailsObject.CCExpirationYear,
+                CCBillingAddress: this.dataSharingService.cardDetailsObject.CCBillingAddress,
+                CCBillingZIP: this.dataSharingService.cardDetailsObject.CCBillingZIP,
+                // SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
+              }
+            });
+          } else {
+            this.autoPayForm.patchValue({
+              objTenant: {
+                CCNumber: Tenant.CCNumber,
+                CCBillingAccountName: Tenant.CCBillingAccountName,
+                CCExpirationMonth: Tenant.CCExpirationMonth,
+                CCExpirationYear: Tenant.CCExpirationYear,
+                CCBillingAddress: Tenant.CCBillingAddress,
+                CCBillingZIP: Tenant.CCBillingZIP,
+                // SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
+              }
+            });
+          }
 
           this.autoPayForm.controls.objTenant.valueChanges.subscribe(data => {
             this.objTenantCopy = data;
-            this.isDataUpdated = (JSON.stringify(this.objTenantCopy) !== JSON.stringify(tempObject));
-            this.dataSharingService.isDataUpdated = this.isDataUpdated;
+            this.dataSharingService.isDataUpdated = (JSON.stringify(this.objTenantCopy) !== JSON.stringify(tempObject));
+            console.log('this.isDataUpdated', this.dataSharingService.isDataUpdated);
+            this.isDataUpdated = this.dataSharingService.isDataUpdated;
             this.count = this.count + 1;
-            console.log('values care changing', this.dataSharingService.isDataUpdated, this.isDataUpdated);
           });
           this.showLoader = false;
         }
@@ -373,7 +427,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
         this.makeAutoPayStatus = false;
         if (result.intErrorCode === 1) {
           this.showSuccessStatus = true;
-          if (this.isDataUpdated ) {
+          if (this.dataSharingService.isDataUpdated ) {
             this.successMessage = `Card Details Updated.`;
           } else {
             this.successMessage = 'Sign Up Auto Pay is Completed.';
@@ -477,5 +531,8 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     if (this.makeAReservationSubscribe$ && this.makeAReservationSubscribe$.closed) {
       this.makeAReservationSubscribe$.unsubscribe();
     }
+    window.removeEventListener('beforeunload', (event) => {
+
+    });
   }
 }

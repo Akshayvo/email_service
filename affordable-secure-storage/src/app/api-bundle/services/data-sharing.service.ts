@@ -29,7 +29,7 @@ export class DataSharingService {
   addingTenant = false;
   insuranceChoiceId: number;
   signUpForAutoPay: boolean;
-
+  isDataSaved: boolean;
   paymentTab: string;
 
   apiKey = '';
@@ -81,6 +81,14 @@ export class DataSharingService {
     ZIP: '',
   };
 
+  cardDetailsObject = {
+    CCNumber: '',
+    CCBillingAccountName: '',
+    CCExpirationMonth: '',
+    CCExpirationYear: '',
+    CCBillingAddress: '',
+    CCBillingZIP: '',
+  };
 
   navLinksForComponent = {
     reservationForm: {

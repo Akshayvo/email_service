@@ -13,6 +13,8 @@
   <strong>
     <i  *ngIf="makeAutoPayStatus">Processing {{progressMessage}}, please wait...</i></strong>
   <!-- <strong><i *ngIf="showSuccessStatus">{{successMessage}}</i></strong> -->
+  <div *ngIf="isDataSaved"><strong><em>{{messageSavedData}}</em></strong> </div>
+  <div *ngIf="isDataUpdated"><strong><em>Auto Sign up happens while updating the card details, Please perform opt out of sign up seperately.</em></strong> </div>
   <div
     [class.loaderForPayment]="showloaderForPayment || showLoader"
   >
@@ -145,12 +147,13 @@
             </div>
           </div>
             <div class="form-group checkbox-style col-lg-6">
-              <input type="checkbox"  (change)="toggleEvent()"  [checked]="IsAutoPaymentsEnabled" /> &nbsp;
+              <input type="checkbox"  (change)="toggleEvent()" [disabled]="isDataUpdated"  [checked]="IsAutoPaymentsEnabled" /> &nbsp;
               <label>Check box, and click Update Autopay Status to turn autopay on. Unchecked box and click Update Autopay Status to turn autopay off.</label>
             </div>
         </div>
       </div>
       <div class="text-right">
+        <button type="button" *ngIf="tenantTokenExist"  (click)="saveDetail()" [disabled]="!isDataUpdated"  class="btn btn-primary col-lg-3 col-sm-12 ">Save</button>
         <button type="submit"  class="btn btn-primary col-lg-4 col-sm-12 margin-small-device" [disabled]="makeAutoPayStatus || (count === 0)">
           Update Autopay Status or Card Detail
         </button>
