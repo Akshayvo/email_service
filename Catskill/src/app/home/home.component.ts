@@ -7,8 +7,6 @@ import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { UaParserService } from '../services/ua-parser.service';
 import { homePageTitle, homePageContent } from '../data/title';
-
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

@@ -5,18 +5,26 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { ErrorReportingService } from './error-reporting.service';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import * as StackTraceParser from 'error-stack-parser';
+import { NavigationService } from './navigation.service';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class ErrorHandlerService implements ErrorHandler {
 
   constructor(
     private errorReport: ErrorReportingService,
     private injector: Injector,
+    private navigation: NavigationService,
   ) {
     console.log('Error reporting initialized');
+    if (window.logMe) {
+      window.logMe('Hello from Error Handler service');
+    }
   }
+
+
 
   handleError(error: Error | HttpErrorResponse) {
     console.log('Error');
@@ -35,8 +43,10 @@ export class ErrorHandlerService implements ErrorHandler {
       console.log('App Error -> Client Error');
     }
     const errorWithContext = this.addContextInfo(error);
+    console.log('errorWithContext', errorWithContext);
+
     // Generic route /error -> Error Handler Component
-    if ( errorWithContext.message === 'window is not defined' ) {
+    if (errorWithContext.message === 'window is not defined') {
       console.log('window is not defined');
     } else {
       this.reportError(errorWithContext);
@@ -46,6 +56,7 @@ export class ErrorHandlerService implements ErrorHandler {
   }
 
   addContextInfo(error: any) {
+    const router = this.injector.get(Router);
     // You can include context details here (usually coming from other services: UserService...)
     const name = error.name || null;
     const appId = environment.appId;
@@ -56,9 +67,22 @@ export class ErrorHandlerService implements ErrorHandler {
     const url = location instanceof PathLocationStrategy ? location.path() : '';
     const status = error.status || null;
     const message = error.message || error.toString();
-    const stack = error instanceof HttpErrorResponse ? null : StackTraceParser.parse(error);
+    const stack = error instanceof HttpErrorResponse ? {
+      headers: error.headers,
+      status: error.status,
+      url: error.url,
+      type: error.type,
+      referrer: document && document.referrer,
+    } : StackTraceParser.parse(error);
+    const currenLocation = { url: router.url, navigationLogs: this.navigation.getHistoryLog() };
+    // const previousLocation = window.history.back();
 
-    const errorWithContext = {name, appId, version, time, id, url, status, message, stack};
+
+    const errorWithContext = {
+      name, appId, version, time, id, url, status, message, stack,
+      currenLocation,
+      // previousLocation
+    };
     return errorWithContext;
   }
 

@@ -7,6 +7,7 @@ import { Auth, ForgotPassword, ChangePassword, VerifyCode, ResetPassword } from 
 @Injectable({
   providedIn: 'root'
 })
+
 export class AuthService {
 
   private url = `auth/signin`;
