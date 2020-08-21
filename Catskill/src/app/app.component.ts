@@ -4,7 +4,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { UaParserService } from '../app/services/ua-parser.service';
 
-declare var logInMessage;
+declare const logInMessage;
 
 @Component({
   selector: 'app-root',
