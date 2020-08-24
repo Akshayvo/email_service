@@ -5,7 +5,7 @@ export const environment = {
   senderEmail: 'errors@codeparva.in',
   websiteUrl: 'https://www.exit120.com/',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Exit',
+  appId: 'Exit - Production',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   APIKey: `dzF0OVc4SjcqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Exit 19870

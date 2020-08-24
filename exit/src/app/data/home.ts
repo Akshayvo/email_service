@@ -3,9 +3,6 @@ export const featuresList = [
         li: `Cold Storage Available`,
     },
     {
-        li: `Easy Online Reservations`,
-    },
-    {
         li: `Convenient Location`,
     },
     {
@@ -32,7 +29,7 @@ export const feature = [
     },
     {
         path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Exit_120_Images/online.svg',
-        label: 'Online Reservation & Bill Pay',
+        label: 'Bill Pay',
         alt: 'Icon art displaying a screen with cursor'
     },
     {
