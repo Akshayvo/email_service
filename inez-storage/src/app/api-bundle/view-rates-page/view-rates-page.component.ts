@@ -82,7 +82,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
         `50% off first three months 10x15 (non climate)` ];
     } else {
       if (this.router.url.includes('/beck-road-storage')) {
-        this.showSpecialData = [`$1 Move In For All Units!`];
+        this.showSpecialData = [``];
       }
     }
   }
