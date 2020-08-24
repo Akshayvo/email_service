@@ -21,11 +21,11 @@ export const storageTipsContent = `We've been providing self storage services fr
 make your stay with us hassle-free!`;
 
 
-export const unitSizerPageTitle = `Unit Sizer  | Driftwood Village Self Storage`;
-export const unitSizerPageContent = `Are you not sure what size unit you require? Use this guide to help you figure
-out what fits inside the units offered at Driftwood Village Self Storage!`;
+export const unitSizerPageTitle = `Unit Sizer | Red School Self Storage`;
+export const unitSizerPageContent = `Use our handy unit sizing chart to help visualize what sized unit you need for your personal
+belongings or business' equipment! `;
 
 
-export const contactPageTitle = `Contact Us  | Driftwood Village Self Storage`;
-export const contactPageContent = `Do you have a question about your account, or our self storage, boat and
-recreational vehicle storage? Use our contact form, or call us today!`;
+export const contactPageTitle = `Contact Us | Red School Self Storage`;
+export const contactPageContent = `Have questions about the services we offer? Use our easy contact form or the contact information
+on this page to speak with our friendly team!`;

@@ -13,47 +13,43 @@ export const featuresList = [
     },
     {
         td1: 'Friendly Customer Service',
-        td2: 'Pin-Pad Activated Security Gate'
+        td2: 'Family Owned & Operated'
     },
     {
         td1: 'All Units are Climate Controlled',
-        td2: 'Family Owned & Operated'
+        td2: 'Pin-Pad Activated Security Gate'
     }
 ];
 
 export const aboutUsAlt = `aboutUsAlt`;
 
-export const aboutUsHeading = `Storage Units and RV Parking in Auburn, CA`;
+export const aboutUsHeading = `Climate Controlled Units in Morgantown, PA`;
 
 export const aboutUs = [
     {
-        p: `Driftwood Village Self Storage has been providing professionally managed self storage
-        and recreational vehicle parking to Auburn, Elders Corner, Newcastle, and the surrounding
-        communities since 1965. Our decades of on-site management experience make Driftwood Village
-        Self Storage the ideal solution for your next self storage project! `,
+        p: `Red School Self-Storage has upgraded to be completely climate-controlled! All of our self
+        storage units are conveniently located in Morgantown on North Red School Road.  Family owned
+        and operated we serve residential and commercial customers with indoor access, climate-controlled
+        self-storage units. We proudly serve Eastern Lancaster, Southern Berks, and Northern Chester counties.`,
     },
     {
-        p: `We are conveniently located at the intersection of Live Oak Lane and Grass Valley Highway
-        to make accessing your vehicle or storage unit easy. We offer extended access hours to our
-        well-lit facility 7 days a week from 6:00AM to 10:00PM to make sure you can reach your
-        belongings whenever you need them.`,
+        p: `We cater to storage users with a variety of self storage needs such as local businesses with
+        document or equipment storage, or homeowners with furniture, clothing, and seasonal decorations that
+        require extra protection from the elements.`,
     },
     {
-        p: `Our customers range from residential users looking for an extra closet's worth of storage
-        space to local businesses that recognize the value of not paying commercial real estate prices
-        for storage space. We've made sure that our wide paved parking lanes provide ample room to
-        maneuver your RV or camper into its spot when coming and going. `,
+        p: `All of our units are climate-controlled, and are accessible 24 hours a day. We offer convenient
+        online reservations, payments and auto-pay signup through an easy to use tenant portal. Red School
+        Self-Storage is prepared to serve all of your self-storage needs since 1996, and we look forward to
+        serving your storage needs for many more years to come! Call our friendly management team today, or
+        you can use our easy tenant portal to reserve your unit online in minutes!`,
     },
-    {
-        p: `Take a moment and check out our available inventory on our View Rates page, then place your
-        reservation in seconds on our website, or call one of our on-site managers to learn more! We
-        can't wait to make your next storage project a hassle-free one!`,
-    },
+    
 ];
 
-export const gettingStarted = `Are you ready to start de-cluttering your home, office, or worksite? How
-about freeing up space in your yard by parking your RV off-site? Take a moment and review our availability,
-then reserve online, or give our friendly team a call!`;
+export const gettingStarted = `Start reclaiming that space around your home, office, or worksite today with
+Red School Self Storage's climate controlled self storage units! Call our friendly management team, or
+reserve your unit online today!`;
 
 export const feature = [
     {
@@ -64,32 +60,30 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
-        label: 'Stellar Customer Service',
-        alt: 'Customer Service Representative Icon'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg`,
+        label: '24 Hour Facility Access',
+        alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/fence.svg`,
-        label: 'Fully-Fenced Facility',
-        alt: 'Icon of a section of fencing'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg`,
+        label: 'Climate Controlled',
+        alt: 'Icon of thermometer indicating climate-controlled units'
 
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg`,
-        label: 'Security Cameras on Premises',
-        alt: 'Icon of a security camera'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
+        label: 'Affordable Self Storage Rates',
+        alt: 'Icon of a hand holding money'
     },
 ];
 
 export const jumbotron = [
     {
-        h1: `Storage Units & Vehicle Parking in Auburn, CA`,
-        blurb: `Driftwood Village Self Storage has served Auburn and the surrounding communities with
-        affordable self storage and RV parking since 1965. We combine decades of experience professionally
-        managing self storage and parking services with the modern amenities that make your stay with
-        us easy and hassle free! Check  our availability and pricing, then reserve your unit online in
-        seconds, or call our friendly management team today!`,
+        h1: `Climate Controlled Self Storage Units`,
+        blurb: `Red School Self Storage provides affordable, clean, climate-controlled self storage units,
+        and the quality customer service only a family owned & operated facility can offer! Call or reserve
+        online today!`,
     }
 ];

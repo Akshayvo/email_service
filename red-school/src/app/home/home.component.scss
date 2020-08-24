@@ -1,11 +1,11 @@
 @import "../../styles.scss";
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Driftwood_Village/webp/driftwood-self-storage-main-offices.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/webp/red-school-self-storage-exterior.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Driftwood_Village/jpg/driftwood-self-storage-main-offices.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg");
 }
 
 .jumbotron {
@@ -18,7 +18,7 @@
   overflow: hidden;
   border-radius: 0;
 }
-
+red-school-self-storage-exterior
 h1 {
   font-size: 2.25rem;
 }
@@ -49,8 +49,20 @@ h1 {
 }
 
 .getStarted {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Red_School/jpg/red-school-self-storage-exterior.jpg") center top no-repeat fixed;;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: $black;
   text-align: center;
+
+  .get-started {
+    left: 0;
+    right: 0;
+    top: 10;
+    background: rgba(238, 238, 238, 0.7);
+    z-index: 9;
+  }
 
   h2 {
     font-size: 2.25rem;

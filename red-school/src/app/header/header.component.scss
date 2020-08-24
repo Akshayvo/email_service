@@ -6,10 +6,10 @@ a {
   color: $white !important;
 }
 
-img {
-  width: 160px;
-  height: 61px;
-}
+// img {
+//   width: 160px;
+//   height: 61px;
+// }
 
 .iconColor {
   color: $white;
@@ -45,25 +45,25 @@ img {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
   .nav-link {
-    color: $white;
+    color: $black !important;
     font-weight: 600;
     padding: 18px;
   }
 
-  .nav-link:hover {
-    color: $white;
-  }
+  // .nav-link:hover {
+  //   color: $white;
+  // }
 
   .nav-link-active {
-    color: $primary;
-    border-bottom: 5px solid $secondary;
+    color: $primary !important;
+    border-bottom: 5px solid $primary;
   }
 
   button {
-    border-color: $white;
+    border-color: $primary;
 
     .iconColor {
-      color: $white;
+      color: $primary;
     }
   }
 
