@@ -7,8 +7,8 @@ export const contact = [
     },
     {
         id: 1,
-        redirect: 'mailto:tillsonburgstorage@gmail.com',
-        data: 'tillsonburgstorage@gmail.com',
+        redirect: 'mailto:info@tillsonburgstorage.ca',
+        data: 'info@tillsonburgstorage.ca',
         label: 'Email:',
         class: 'fas fa-envelope mx-2 iconColor',
     },
