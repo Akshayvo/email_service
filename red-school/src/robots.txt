@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://red-school-staging.netlify.app/sitemap.xml
+Sitemap: https://www.redschoolstorage.com/sitemap.xml
 User-agent: *
 Disallow:
