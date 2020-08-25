@@ -127,7 +127,7 @@ public fetchOption() {
   this.options = option;
   if (!!this.dataSharingService.objTenant.State) {
     this.index = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.State));
-    if (!!this.options) {
+    if (!!this.index) {
       this.stateString = this.options[this.index].description;
     }
    }
