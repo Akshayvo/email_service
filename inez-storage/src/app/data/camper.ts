@@ -301,7 +301,7 @@ export const winnebagoLeftColumn = [
         p: `Price List:`,
     },
     {
-        p: `Two night minimum: $200 per night`,
+        p: `Three night minimum: $200 per night`,
     },
     {
         p: `mileage allowance 200 miles per night rented:   .40 cents per mile over allowance`,
