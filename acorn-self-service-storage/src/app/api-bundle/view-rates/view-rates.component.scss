@@ -123,7 +123,12 @@ table {
   .contentHolder {
     padding-top: 56px;
   }
+}
 
+@media only screen and (max-width: 767px) {
+  .flex-direction {
+    flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {

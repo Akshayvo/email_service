@@ -5,8 +5,8 @@
     </div>
     <div class="pb-2 text-center" [class.display]="!showTable">
       <h4  ><strong>Our Sizes</strong></h4>
-      <p>Ext = External Unit</p>
-      <p>L = L shaped Unit</p>
+      <p>Ext = Drive-Up Unit</p>
+      <p>L = L Floor Plan</p>
     </div>
     
   <table  class="viewrates-desktop">
@@ -20,9 +20,9 @@
           <td colspan="2" class="px-4 border text-center">
               {{lstUnitType.Description}}
           </td>
-          <!-- <td colspan="2" class="px-4 border text-center">
+          <td colspan="2" class="px-4 border text-center">
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
-          </td> -->
+          </td>
           <!-- <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount}}
         </td> -->

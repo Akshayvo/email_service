@@ -44,6 +44,9 @@ export const hours = [
 ];
 export const accesshours = [
     {
+        label: '*Some 24-Hour Access Units Available'
+    },
+    {
         label: 'Monday - Friday: ',
         data: '8:00AM to 6:00PM'
     },

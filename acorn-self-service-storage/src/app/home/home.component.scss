@@ -1,5 +1,9 @@
 @import "../../styles.scss";
 
+.specialRow {
+  color: white;
+}
+
 .carousel-indicators li {
   background-color: black;
   border-radius: 50%;
@@ -21,11 +25,11 @@
 
 .jumbotron {
   // background: url("");
+  height: calc(100vh - 155px - 72px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 0;
-  height: 80vh;
   color: $white;
   overflow: hidden;
   border-radius: 0;
@@ -80,11 +84,11 @@ h1 {
 }
 
 .jumbotron-top {
-  height: 80vh;
+  height: calc(100vh - 155px - 72px);
 }
 
 .jumbotron-bottom {
-  height: 20vh;
+  height: 155px;
   display: flex;
   align-items: center;
 }
@@ -119,36 +123,13 @@ h1 {
   }
 }
 
-
-@media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 641px) {
-  .feature-icon-style {
-    padding: 12px 24px;
-
-    h6 {
-      font-size: 0.8rem;
-    }
-  }
-}
-
 @media only screen and (min-width: 1200px) and (max-height: 640px) and (min-height: 451px) {
   .jumbotron {
     height: 100vh;
   }
 
-  .feature-icon-style {
-    padding: 12px 24px;
-
-    h6 {
-      font-size: 0.8rem;
-    }
-  }
-
   .jumbotron-top {
     height: 100vh;
-  }
-
-  .jumbotron-bottom {
-    height: 120px;
   }
 }
 
@@ -572,6 +553,14 @@ h1 {
     height: 100vh;
   }
 
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 0;
+  }
+
   .feature {
     display: none;
   }
@@ -607,6 +596,15 @@ h1 {
     background-attachment: unset;
     background-position: center left;
     height: 100vh;
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+
+  .jumbotron-bottom {
+    height: 0;
   }
 
   .feature {
