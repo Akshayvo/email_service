@@ -8,8 +8,8 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        redirect: 'mailto:kristofer.selberg@rcmi.com',
-        data: 'kristofer.selberg@rcmi.com',
+        redirect: 'mailto:driftwoodvillage@rcmi.com',
+        data: 'driftwoodvillage@rcmi.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
@@ -24,7 +24,7 @@ export const contact = [
 export const hours = [
     {
         label: 'Monday to Friday: ',
-        data: '8:00AM - 4:00PM'
+        data: '8:00AM - 4:30PM'
     },
     {
         label: 'Saturday and Sunday: ',
@@ -32,7 +32,7 @@ export const hours = [
     },
     {
         label: 'Access Hours: ',
-        data: '7 Days a Week 6:00AM - 10:00PM'
+        data: '7 Days a Week 6:00AM - 9:00PM'
     }
 ];
 

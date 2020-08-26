@@ -33,7 +33,7 @@ export const aboutUs = [
     },
     {
         p: `We are conveniently located at the intersection of Live Oak Lane and Grass Valley Highway
-        to make accessing your vehicle or storage unit easy. We offer extended access hours to our
+        to make accessing your recreational vehicle or storage unit easy. We offer extended access hours to our
         well-lit facility 7 days a week from 6:00AM to 10:00PM to make sure you can reach your
         belongings whenever you need them.`,
     },
@@ -84,7 +84,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h1: `Storage Units & Vehicle Parking in Auburn, CA`,
+        h1: `Storage Units & RV Parking in Auburn, CA`,
         blurb: `Driftwood Village Self Storage has served Auburn and the surrounding communities with
         affordable self storage and RV parking since 1965. We combine decades of experience professionally
         managing self storage and parking services with the modern amenities that make your stay with
