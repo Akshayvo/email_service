@@ -96,6 +96,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   progressMessage: string;
   paymentTab: string;
   isDataUpdated = false;
+  enableUpdateButton = false;
   canExit = true;
   messageSavedData: string;
   isDataSaved = false;
@@ -182,7 +183,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
 
     if (!!this.dataSharingService.isDataSaved && !!this.dataSharingService.isDataUpdated) {
       this.isDataUpdated = this.dataSharingService.isDataUpdated;
-      this.count = this.count + 1;
+      this.enableUpdateButton = true;
     }
   }
 
@@ -274,14 +275,6 @@ export class AutoPayComponent implements OnInit, OnDestroy {
       .subscribe(tenantData => {
         if (tenantData) {
           const { Tenant } = tenantData;
-          // const tempObject = {
-          //   CCNumber: Tenant.CCNumber,
-          //   CCBillingAccountName: Tenant.CCBillingAccountName,
-          //   CCExpirationMonth: Tenant.CCExpirationMonth,
-          //   CCExpirationYear: Tenant.CCExpirationYear,
-          //   CCBillingAddress: Tenant.CCBillingAddress,
-          //   CCBillingZIP: Tenant.CCBillingZIP,
-          // };
           this.balance = Tenant.Balance;
           this.surchargeService.setAmt(this.balance);
           this.surchargeService.getIdPaytype(this.paytypeid);
@@ -351,7 +344,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
             this.dataSharingService.isDataUpdated = (JSON.stringify(this.objTenantCopy) !== JSON.stringify(tempObject));
             console.log('this.isDataUpdated', this.dataSharingService.isDataUpdated);
             this.isDataUpdated = this.dataSharingService.isDataUpdated;
-            this.count = this.count + 1;
+            this.enableUpdateButton = true;
           });
           this.showLoader = false;
         }
@@ -398,6 +391,8 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   }
 
   toggleEvent() {
+    this.enableUpdateButton = true;
+    console.log('this.enableUpdateButton', this.enableUpdateButton);
     this.count = this.count + 1;
     this.toggleSignUp = true;
     this.dataSharingService.signUpForAutoPay = !this.dataSharingService.signUpForAutoPay;
@@ -429,10 +424,18 @@ export class AutoPayComponent implements OnInit, OnDestroy {
           this.showSuccessStatus = true;
           if (this.dataSharingService.isDataUpdated ) {
             this.successMessage = `Card Details Updated.`;
+            if (this.toggleSignUp === true) {
+              this.customSignUp();
+            }
+            if (this.IsAutoPaymentsEnabled === false && this.toggleSignUp === false) {
+              this.OptionOutOfAutoPay(this.signUp);
+            }
           } else {
             this.successMessage = 'Sign Up Auto Pay is Completed.';
           }
         }
+        this.toggleSignUp = false;
+        this.dataSharingService.isDataUpdated = false;
       }, (err) => {
     });
   }
@@ -445,8 +448,19 @@ export class AutoPayComponent implements OnInit, OnDestroy {
         this.makeAutoPayStatus = false;
         if (result.intErrorCode === 1) {
           this.showSuccessStatus = true;
-          this.successMessage = 'Option Out Of AutoPay is Completed';
+          switch (true) {
+            case (this.isDataUpdated && this.count > 0):
+              this.successMessage = 'Card Details Updated and Option Out Of AutoPay is Completed';
+              break;
+            case (this.isDataUpdated && this.count === 0):
+              this.successMessage = 'Card Details Updated.';
+              break;
+            default:
+              this.successMessage = 'Option Out Of AutoPay is Completed.';
+          }
         }
+        this.toggleSignUp = false;
+        this.dataSharingService.isDataUpdated = false;
       }, (err) => {
     });
   }
@@ -457,39 +471,55 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     return `${formattedNormalDate.getMonth() + 1}-${formattedNormalDate.getDate()}-${formattedNormalDate.getFullYear()}`;
   }
 
-  autoPayStatus() {
-    if (this.toggleSignUp === true) {
-      if (this.dataSharingService.signUpForAutoPay === true) {
-        const data = {
-          objTenant: {
-            CCNumber: this.autoPayForm.value.objTenant.CCNumber,
-            CCBillingAccountName: this.autoPayForm.value.objTenant.CCBillingAccountName,
-            CCExpirationMonth: this.autoPayForm.value.objTenant.CCExpirationMonth,
-            CCExpirationYear: this.autoPayForm.value.objTenant.CCExpirationYear,
-            CCBillingAddress: this.autoPayForm.value.objTenant.CCBillingAddress,
-            CCBillingZIP: this.autoPayForm.value.objTenant.CCBillingZIP,
-            PreferredPaymentMethod: this.autoPayForm.value.objTenant.PayType.PayTypeID,
-          }
-        };
-      this.signUpAutoPay(data);
-      } else {
-        this.OptionOutOfAutoPay(this.signUp);
-      }
+  customSignUp () {
+    if (this.dataSharingService.signUpForAutoPay === true) {
+      const signUpData = {
+        objTenant: {
+          CCNumber: this.autoPayForm.value.objTenant.CCNumber,
+          CCBillingAccountName: this.autoPayForm.value.objTenant.CCBillingAccountName,
+          CCExpirationMonth: this.autoPayForm.value.objTenant.CCExpirationMonth,
+          CCExpirationYear: this.autoPayForm.value.objTenant.CCExpirationYear,
+          CCBillingAddress: this.autoPayForm.value.objTenant.CCBillingAddress,
+          CCBillingZIP: this.autoPayForm.value.objTenant.CCBillingZIP,
+          PreferredPaymentMethod: this.autoPayForm.value.objTenant.PayType.PayTypeID,
+        }
+      };
+    this.signUpAutoPay(signUpData);
     } else {
-      if (this.dataSharingService.isDataUpdated ===  true) {
-        const data = {
-          objTenant: {
-            CCNumber: this.autoPayForm.value.objTenant.CCNumber,
-            CCBillingAccountName: this.autoPayForm.value.objTenant.CCBillingAccountName,
-            CCExpirationMonth: this.autoPayForm.value.objTenant.CCExpirationMonth,
-            CCExpirationYear: this.autoPayForm.value.objTenant.CCExpirationYear,
-            CCBillingAddress: this.autoPayForm.value.objTenant.CCBillingAddress,
-            CCBillingZIP: this.autoPayForm.value.objTenant.CCBillingZIP,
-            PreferredPaymentMethod: this.autoPayForm.value.objTenant.PayType.PayTypeID,
-          }
-        };
-      this.signUpAutoPay(data);
+      this.OptionOutOfAutoPay(this.signUp);
+    }
+  }
+
+  customDataUpdate() {
+    const data = {
+      objTenant: {
+        CCNumber: this.autoPayForm.value.objTenant.CCNumber,
+        CCBillingAccountName: this.autoPayForm.value.objTenant.CCBillingAccountName,
+        CCExpirationMonth: this.autoPayForm.value.objTenant.CCExpirationMonth,
+        CCExpirationYear: this.autoPayForm.value.objTenant.CCExpirationYear,
+        CCBillingAddress: this.autoPayForm.value.objTenant.CCBillingAddress,
+        CCBillingZIP: this.autoPayForm.value.objTenant.CCBillingZIP,
+        PreferredPaymentMethod: this.autoPayForm.value.objTenant.PayType.PayTypeID,
       }
+    };
+  this.signUpAutoPay(data);
+  }
+
+  autoPayStatus() {
+    switch (true) {
+      case ((this.dataSharingService.isDataUpdated ===  true) && (this.toggleSignUp === true)):
+        console.log('both are working case 1');
+        this.customDataUpdate();
+        // this.customSignUp();
+        break;
+      case (this.toggleSignUp === true):
+        console.log('checkbox is working case 2');
+        this.customSignUp();
+        break;
+      case (this.dataSharingService.isDataUpdated === true):
+        console.log('data updated case 3');
+        this.customDataUpdate();
+        break;
     }
   }
 
