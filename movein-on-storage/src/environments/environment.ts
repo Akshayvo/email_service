@@ -12,9 +12,9 @@ export const environment = {
   appId: 'Movin On Storage Center - testing',
   VERSION:  require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
+  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
   // APIKey: `dzF0OFc4SjIqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 18824 sandridge
-  APIKey: `dTFXMkQxUDRIOjIyfCU4Nzg3NyQoOD1iVzBzaGRkOWtlb2NeTg==`, // movein on storage
+  // APIKey: `dTFXMkQxUDRIOjIyfCU4Nzg3NyQoOD1iVzBzaGRkOWtlb2NeTg==`, // movein on storage
 };
 
 /*

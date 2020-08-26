@@ -28,9 +28,9 @@ export const th = [
     {
       data: `Setup Fee`
     },
-    {
-      data: 'Move In'
-    },
+    // {
+    //   data: 'Move In'
+    // },
     {
       data: `Reserve a Unit`
     },

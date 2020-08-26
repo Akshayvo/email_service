@@ -41,7 +41,7 @@ import { TruckRentalComponent } from '../truck-rental/truck-rental.component';
       children: [
         { path: '', component: ViewRatesPageComponent },
         { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
+        // { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
