@@ -23,6 +23,7 @@ import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.compo
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
+import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confirmation-page.component';
 
 
  export const apiRoutes = [
@@ -41,6 +42,7 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
         { path: 'reserve', component: ReserveUnitFormComponent },
         // { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'confirmation-page', component: ConfirmationPageComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
       ]
