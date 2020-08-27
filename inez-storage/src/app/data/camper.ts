@@ -311,8 +311,7 @@ export const winnebagoLeftColumn = [
     },
     {
         p: `Optional Linen package: $50, includes sheets and pillows (memory foam), ten bath towels,
-        ten wash cloths, five hand towels for bath. Holiday weekends will be limited to a minimum of
-        three nights rental.`,
+        ten wash cloths, five hand towels for bath.`,
     }
 ];
 
