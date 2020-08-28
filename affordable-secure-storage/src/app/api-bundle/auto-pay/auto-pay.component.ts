@@ -121,14 +121,14 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   ) {
     this.autoPayForm = this.formBuilder.group({
       objTenant: this.formBuilder.group({
-        CCNumber: ['', Validators.required],
-        CCBillingAccountName: ['', Validators.required],
-        CCExpirationMonth: ['', Validators.required],
-        CCExpirationYear: ['', Validators.required],
-        CCBillingAddress: ['', Validators.required],
-        CCBillingZIP: ['', Validators.required],
+        CCNumber: [''],
+        CCBillingAccountName: [''],
+        CCExpirationMonth: [''],
+        CCExpirationYear: [''],
+        CCBillingAddress: [''],
+        CCBillingZIP: [''],
         PayType: this.formBuilder.group({
-          PayTypeDescription: ['', Validators.required],
+          PayTypeDescription: ['', ],
           PayTypeID: [''],
         })
       }),
