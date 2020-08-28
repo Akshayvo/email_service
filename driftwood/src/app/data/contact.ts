@@ -8,8 +8,8 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        redirect: 'mailto:kristofer.selberg@rcmi.com',
-        data: 'kristofer.selberg@rcmi.com',
+        redirect: 'mailto:driftwoodvillage@rcmi.com',
+        data: 'driftwoodvillage@rcmi.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {

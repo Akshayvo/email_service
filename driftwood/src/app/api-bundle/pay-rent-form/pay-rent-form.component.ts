@@ -222,7 +222,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         if (this.dataSharingService.addingTenant === true) {
           this.getPayMethods();
         } else {
-          this.router.navigate(['/pay-rent/rent-sub/login']);
+          this.router.navigate(['/pay-rent/login']);
         }
       } else {
         this.getPayMethods();
@@ -293,7 +293,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
-    if (this.lstPayTypes && this.lstPayTypes.length > 0) {
     this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.payRentForm.patchValue({
@@ -303,7 +302,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         }
       }
     });
-  }
 
 
     if ( this.showInput) {
@@ -413,7 +411,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       , (err: any) => {
         if (err.status === 401) {
           localStorage.removeItem('strTenantToken');
-          this.router.navigate(['/pay-rent/rent-sub/login']);
+          this.router.navigate(['/pay-rent/login']);
           this.sessionExpire = 'Session Expired. Please Login for completing the payment.';
         }
       });
@@ -502,7 +500,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
         this.showloaderForPayment = false;
-        if (paymentDataResponse && paymentDataResponse.PayTypeForResult && paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
+        if (!!paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
           this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
         }
         this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
@@ -541,7 +539,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
    this.signOutSubscribe$ = this.signOutService.signOut(logOut)
       .subscribe(result => {
         localStorage.removeItem('strTenantToken');
-        this.router.navigate(['/pay-rent/rent-sub/login']);
+        this.router.navigate(['/pay-rent/login']);
       }, (err) => {
       }
     );
