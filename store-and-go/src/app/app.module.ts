@@ -24,6 +24,7 @@ import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
+import { NgtUniversalModule } from '@ng-toolkit/universal';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
     AppRoutingModule,
+    NgtUniversalModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
