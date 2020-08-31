@@ -18,10 +18,10 @@ export class ErrorHandlerService implements ErrorHandler {
     private injector: Injector,
     private navigation: NavigationService,
   ) {
-    console.log('Error reporting initialized');
-    if (window.logMe) {
-      window.logMe('Hello from Error Handler service');
-    }
+    // console.log('Error reporting initialized');
+    // if (window.logMe) {
+    //   window.logMe('Hello from Error Handler service');
+    // }
   }
 
 

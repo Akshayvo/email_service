@@ -59,7 +59,7 @@ import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -80,7 +80,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },

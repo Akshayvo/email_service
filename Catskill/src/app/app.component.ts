@@ -79,9 +79,9 @@ export class AppComponent implements OnInit {
           this.currentUrlViaRoutesRecognized$.next(current.urlAfterRedirects);
         }
       );
-      if (window.logMe) {
-        window.logMe('Hello from app');
-      }
+      // if (window.logMe) {
+      //   window.logMe('Hello from app');
+      // }
   }
 
   ngOnInit() {
