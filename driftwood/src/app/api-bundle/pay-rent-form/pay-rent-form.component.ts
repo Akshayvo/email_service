@@ -174,7 +174,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
 
 
-    if (this.router.url === '/view-rates/payReservationCharges') {
+    if (this.router.url.includes('/payReservationCharges')) {
       this.navigateToReserve = true;
       this.navigateToMoveIn = false;
       this.payRentForm.patchValue({
@@ -183,7 +183,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         }
       });
     } else {
-      if (this.router.url === '/view-rates/payMoveInCharges') {
+      if (this.router.url.includes('/payMoveInCharges')) {
         this.navigateToReserve = false;
         this.navigateToMoveIn = true;
         this.payRentForm.patchValue({
@@ -192,7 +192,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           }
         });
       } else {
-        if (this.router.url ===  '/pay-rent/payment' ) {
+        if (this.router.url.includes('/payment')) {
           this.navigateToMoveIn = false;
           this.navigateToReserve = false;
         }
@@ -670,6 +670,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       } else {
         this.showloaderForPayment = true;
         if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
+console.log('this.payRentForm.value.objPayment.PaymentAmount', this.payRentForm.value.objPayment.PaymentAmount);
           if (this.amountToPay > 0) {
             this.payRentForm.patchValue({
               objPayment: {
