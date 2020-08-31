@@ -539,7 +539,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
    this.signOutSubscribe$ = this.signOutService.signOut(logOut)
       .subscribe(result => {
         localStorage.removeItem('strTenantToken');
-        this.router.navigate(['/pay-rent/login']);
+        this.router.navigate(['/pay-rent/rent-sub/login']);
       }, (err) => {
       }
     );
