@@ -60,13 +60,14 @@
     </div>
     <div class="col-md-4 rent-example" >
         <h2> How to Login </h2>
+        <p><b>Your username will need to be in all capital letters to function.</b></p>
         <p class="mb-0"> <b>Username:</b> First Initial + Last Name  </p>
         <p >  <b>Password:</b> Your Unit Number   </p>
         <p>If you rent multiple units, your password is the unit number for the first unit you rented.</p>
         <p class="mb-0"> <b>Example</b> </p>
         <p class="mb-0">John Smith's Unit Number is 1234 </p>
    
-        <p class="mb-0"> <b>John's Username:</b> jsmith  </p>
+        <p class="mb-0"> <b>John's Username:</b> JSMITH  </p>
         <p > <b>John's Password:</b> 1234</p>
         <p> <b>Have question about your account?</b><br>
           <span *ngFor="let contact of contact" [class.display-none]="contact?.id == 0">
