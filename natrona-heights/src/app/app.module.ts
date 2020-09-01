@@ -50,6 +50,8 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 import { PhotosComponent } from './photos/photos.component';
+import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,6 +84,7 @@ import { PhotosComponent } from './photos/photos.component';
     UnitSizerComponent,
     UnitSizesComponent,
     PhotosComponent,
+    ConfirmationPageComponent,
   ],
   imports: [
     CommonModule,
