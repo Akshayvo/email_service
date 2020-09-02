@@ -231,23 +231,14 @@ getTenantUnitData() {
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
     this.reservationInProgress = true;
     this.makeAReservationSubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
-      .subscribe(strConfirmationResponse => {
-        this.strConfirmation = strConfirmationResponse.strConfirmation;
+    .subscribe(strConfirmationResponse => {
+      if (strConfirmationResponse.intErrorCode === 1) {
+        this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
         this.showConfirmation = false;
-        this.submitted = false;
-         this.tokenExit = localStorage.getItem('strTenantToken');
-        this.existTempToken = localStorage.getItem('strTempTenantToken');
-        if (this.existTempToken) {
-          localStorage.removeItem('strTempTenantToken');
-        }
+        this.router.navigate(['/view-rates/confirmation-page']);
         this.reservationInProgress = false;
-        if (strConfirmationResponse.strConfirmation) {
-          // this.strConfirmation = strConfirmationResponse.strConfirmation;
-          // this.strConfirmation = this.dataSharingService.strConfirmation;
-          // console.log(strConfirmationResponse);
-          console.log('working');
-          this.router.navigate(['/view-rates/confirmation-page']);
-        }
+      }
+
       }, (err: any) => {
         if (err.status === 403) {
           this.showConfirmation = false;

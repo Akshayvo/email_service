@@ -4,6 +4,10 @@
   display: none;
 }
 
+.payment_text {
+  font-size: 1.5rem;
+}
+
 .vertical-line {
   border-left: 1px solid darkgray;
   position: right;
@@ -37,6 +41,10 @@
 @media only screen and (max-width: 991px) {
   .contentHolder {
     padding-top: 100px;
+  }
+
+  .payment_text {
+    font-size: 1.25rem;
   }
 }
 
