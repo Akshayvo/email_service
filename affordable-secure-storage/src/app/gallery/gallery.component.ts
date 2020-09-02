@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { galleryImagesLocation1 } from '../data/galleryImage';
+import { galleryImagesLocation2 } from '../data/galleryImage';
 import { Router } from '@angular/router';
 import { UaParserService } from '../services/ua-parser.service';
-import { aboutus } from '../data/home';
 
 @Component({
-  selector: 'app-photos',
-  templateUrl: './photos.component.html',
-  styleUrls: ['./photos.component.scss']
+  selector: 'app-gallery',
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.scss']
 })
-export class PhotosComponent implements OnInit {
+export class GalleryComponent implements OnInit {
+
   name: string;
   id: number;
   currentActiveTab: any = 'Photos';
@@ -18,7 +18,6 @@ export class PhotosComponent implements OnInit {
   galleryData: any;
   imagetype: any;
   imageBaseUrl: any;
-  aboutus: any;
 
   constructor(private router: Router,
     private uaParserService: UaParserService,
@@ -28,24 +27,18 @@ export class PhotosComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.fetchAboutUs();
     this.isSomePage();
     this.setSelectedImage(this.galleryImages[0]);
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/affordable-secure-storage-floral-city')) {
-      this.fetchDetailsLocation1();
-      this.aboutus = aboutus ;
+    if (this.router.url.includes('affordable-secure-storage-west-hernando')) {
+      this.fetchDetailsLocation2();
     }
   }
 
-  public fetchAboutUs() {
-    this.aboutus = aboutus ;
-  }
-
-  public fetchDetailsLocation1() {
-    this.galleryImages = galleryImagesLocation1;
+  public fetchDetailsLocation2() {
+    this.galleryImages = galleryImagesLocation2;
     // this.galleryData = galleryDataLocation1;
     this.id = 1;
   }
@@ -53,5 +46,4 @@ export class PhotosComponent implements OnInit {
   setSelectedImage(image: any) {
     this.selectedImage = image;
  }
-
 }

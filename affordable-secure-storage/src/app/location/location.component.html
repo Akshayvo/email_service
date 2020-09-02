@@ -7,7 +7,7 @@
           <div class="row">
             <div class="col-lg-12 px-0">
               <span *ngFor="let contact of contacts" class="py-2 each-contact">
-                <span class="pl-3"><i style="font-size: 1.1rem;" class="{{contact.class}}"></i></span><span>{{contact.data}}</span>
+                <span class="pl-3"><i *ngIf="contact.data" style="font-size: 1.1rem;" class="{{contact.class}}"></i></span><span>{{contact.data}}</span>
               </span>
               <span class="social  text-right" *ngFor="let social of socialLinks">
                 <a [href]="social?.path" target="_blank">
@@ -26,13 +26,16 @@
         </div>
         <div class="contact-img">
             <span *ngIf="locationId == 1"> 
-              <div class="img-box-1" [ngClass]="imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'"></div>
-              <!-- </div> -->
-            </span>
-            <!-- <span *ngIf="locationId == 2"> 
-              <div class="img-box-2">
+              <div class="img-box-1" [ngClass]="imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'">
               </div>
-            </span> -->
+            </span>
+            <span *ngIf="locationId == 2"> 
+              <div class="img-box-2" [ngClass]="imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'">
+                <iframe style="
+                height: inherit;
+                width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.758504007038!2d-82.38068478491124!3d28.905523582310813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8720de4f76d69%3A0xc48e5e13138b2a!2s2912%20N%20Florida%20Ave%2C%20Hernando%2C%20FL%2034442!5e0!3m2!1sen!2sus!4v1598929976890!5m2!1sen!2sus" ></iframe>
+              </div>
+            </span>
             <span *ngIf="locationId == 3"> 
               <!-- <div class="img-box-3">
               </div>   -->
@@ -74,6 +77,9 @@
         <div class="map-responsive">
             <span *ngIf="locationId == 1">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13988.9463395945!2d-82.2944085!3d28.7722018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5127968742488662!2sAffordable%20Secure%20Storage!5e0!3m2!1sen!2sus!4v1594181820791!5m2!1sen!2sus" width="100%" height="220" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 2">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.758504007038!2d-82.38068478491124!3d28.905523582310813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8720de4f76d69%3A0xc48e5e13138b2a!2s2912%20N%20Florida%20Ave%2C%20Hernando%2C%20FL%2034442!5e0!3m2!1sen!2sus!4v1598929976890!5m2!1sen!2sus" width="100%" height="220" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
             </span>
         </div>
         <div class="hours-data w-100">

@@ -14,6 +14,11 @@ export const navLinks = [
                 label: 'Affordable Secure Storage - Floral City',
                 path: '/location/affordable-secure-storage-floral-city',
             },
+            {
+                id: '2',
+                label: 'Affordable Secure Storage - West Hernando',
+                path: '/location/affordable-secure-storage-west-hernando',
+            },
         ]
     },
     {

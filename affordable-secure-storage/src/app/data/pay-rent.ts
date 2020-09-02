@@ -17,6 +17,11 @@ export const tableData = [
     address: '8425 E Rosko Ct, Floral City, FL 34436',
     url: 'affordable-secure-storage-floral-city'
   },
+  {
+    facility: 'Affordable Secure Storage - West Hernando',
+    address: '2912 N Florida Ave, Hernando, FL 34442',
+    url: 'affordable-secure-storage-west-hernando'
+  },
 ];
 
 export const loginDetail = [

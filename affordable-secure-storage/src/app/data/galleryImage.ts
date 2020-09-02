@@ -79,9 +79,24 @@ export const galleryDataLocation3 = [
 
 export const galleryImagesLocation2 = [
     {
-        url: '',
-        thumb: '',
-        alt: ``
+        url: 'affordable-secure-storage-exterior-office',
+        thumb: 'affordable-secure-storage-exterior-office',
+        alt: `the exterior of a climate-controlled self storage facility taken from the parking lot`
+    },
+    {
+        url: 'affordable-secure-storage-front-gate',
+        thumb: 'affordable-secure-storage-front-gate',
+        alt: `a self storage facility electronic access control gate and parking spaces behind the pin-pad secured gate`
+    },
+    {
+        url: 'affordable-secure-storage-gates',
+        thumb: 'affordable-secure-storage-gates',
+        alt: `a pin-pad activated access control gate outside of a self storage facility`
+    },
+    {
+        url: 'affordable-secure-storage-interior-office',
+        thumb: 'affordable-secure-storage-interior-office',
+        alt: `the interior of a self storage facility office showing a screen filled with security cameras placed around the facility`
     },
 ];
 

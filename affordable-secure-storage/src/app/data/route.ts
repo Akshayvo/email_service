@@ -30,6 +30,8 @@ import { ReserveComponent } from '../api-bundle/reserve/reserve.component';
 import { RentSubComponent } from '../api-bundle/rent-sub/rent-sub.component';
 import { SignUpComponent } from '../api-bundle/sign-up/sign-up.component';
 import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
+import { AboutusPhotosComponent } from '../aboutus-photos/aboutus-photos.component';
+import { GalleryComponent } from '../gallery/gallery.component';
 
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
@@ -77,6 +79,50 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
+    { path: 'location/affordable-secure-storage-west-hernando',
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+        { path: 'storageUnits', component: ViewRatesComponent,
+          children: [
+            { path: '', component: ViewRatesPageComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+          ]
+        },
+        { path: 'unitSizer', component: UnitSizerComponent },
+        { path: 'reserveUnit', component: ReserveComponent,
+          children: [
+            // { path: '', component: ViewRatesPageComponent },
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+          ]
+        },
+        { path: 'moveIn', component: ReserveComponent,
+          children: [
+            // { path: '', component: ViewRatesPageComponent },
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+          ]
+        },
+        { path: 'photos', component: GalleryComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
     { path: 'review/affordable-secure-storage-floral-city', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
@@ -85,6 +131,14 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
+  { path: 'review/affordable-secure-storage-west-hernando', component: HomeComponent,
+  resolve: {
+      url: 'externalUrlRedirectResolver'
+  },
+  data: {
+      externalUrl: ''
+  }
+},
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   // { path: 'pay-rent/affordable-secure-storage-floral-city', component: PayRentComponent,
@@ -101,6 +155,36 @@ export const apiRoutes = [
   // },
   {
     path: 'pay-rent/affordable-secure-storage-floral-city', component: PayRentComponent,
+    children: [
+      { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
+      { path: 'rent-sub', component: RentSubComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      },
+      { path: 'sign-up', component: SignUpComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      }
+    ]
+  },
+  {
+    path: 'pay-rent/affordable-secure-storage-west-hernando', component: PayRentComponent,
     children: [
       { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
       { path: 'rent-sub', component: RentSubComponent,

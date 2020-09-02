@@ -7,10 +7,12 @@ export class DataSharingService {
 
   locationAPIKey = {
     loc1: 'XjJ7OUYzVzNHM0k6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29333 Affordable Secure Storage - Floral City
+    loc2: 'XjJ7OUYzVzNHOUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O' // 29339
   };
 
   // locationAPIKey = {
-  //   loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // demo north 28463
+    //   loc1: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    //   loc2: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // demo north 28463
   // };
 
 

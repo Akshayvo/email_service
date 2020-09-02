@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { headingLocation1 } from '../../data/location';
+import { headingLocation1, headingLocation2 } from '../../data/location';
 import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
@@ -28,6 +28,11 @@ export class ReserveComponent implements OnInit {
     if (this.router.url.includes('affordable-secure-storage-floral-city')) {
       this.id = 1;
       this.heading = headingLocation1;
+    } else {
+      if (this.router.url.includes('affordable-secure-storage-west-hernando')) {
+        this.id = 2;
+        this.heading = headingLocation2;
+      }
     }
   }
 

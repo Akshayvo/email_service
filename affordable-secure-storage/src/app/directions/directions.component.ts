@@ -20,6 +20,10 @@ export class DirectionsComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/affordable-secure-storage-floral-city')) {
        this.fetchDetailsLocation1();
+     } else {
+      if (this.router.url.includes('/location/affordable-secure-storage-west-hernando')) {
+        this.fetchDetailsLocation2();
+      }
      }
  }
 
@@ -27,6 +31,13 @@ export class DirectionsComponent implements OnInit {
   this.directionPoints = directionLocation1;
   this.directionHeading = `Directions to Affordable Secure Storage - Floral City`;
   this.id = 1;
+}
+
+
+public fetchDetailsLocation2() {
+  this.directionPoints = directionLocation1;
+  this.directionHeading = `Directions to Affordable Secure Storage - West Hernando`;
+  this.id = 2;
 }
 
 }

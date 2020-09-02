@@ -58,6 +58,7 @@ import { ScriptHackComponent } from './script-hack/script-hack.component';
 import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
 import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 @NgModule({
@@ -101,7 +102,8 @@ import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
     ScriptHackComponent,
     RentSubComponent,
     AutoPayComponent,
-    SignUpComponent
+    SignUpComponent,
+    GalleryComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

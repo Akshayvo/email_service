@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { contactsLocation1, hoursLocation1,
+import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
        } from '../data/contact';
 import { featuresHead, serviceOffered, gettingStarted } from '../data/home';
 import { LocationService } from '../services/location.service';
@@ -20,9 +20,9 @@ export class HomeComponent implements OnInit {
   features: any;
   serviceOffered: any;
   contactsLocation1: any;
-  contactsLocation3: any;
+  contactsLocation2: any;
   hoursLocation1: any;
-  hoursLocation3: any;
+  hoursLocation2: any;
   gettingStarted: any;
   script: any;
   imageBaseUrl: any;
@@ -57,9 +57,12 @@ export class HomeComponent implements OnInit {
 
   public fetchContactDetails() {
     this.contactsLocation1 = contactsLocation1;
+    this.contactsLocation2 = contactsLocation2;
   }
+
   public fetchHours() {
     this.hoursLocation1 = hoursLocation1;
+    this.hoursLocation2 = hoursLocation2;
   }
 
   public fetchScript() {

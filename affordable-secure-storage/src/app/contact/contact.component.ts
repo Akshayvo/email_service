@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsLocation1, hoursLocation1,
+import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
        } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
@@ -16,6 +16,8 @@ import { LocationService } from '../services/location.service';
 export class ContactComponent implements OnInit {
 
   contactDetails: any;
+  hoursLocation1: any;
+  hoursLocation2: any;
   heading: string;
   hoursDetails: any;
   placeName: string;
@@ -28,9 +30,7 @@ export class ContactComponent implements OnInit {
   locationId: any;
   subject: string;
   contactsLocation1: any;
-  contactsLocation3: any;
-  hoursLocation1: any;
-  hoursLocation3: any;
+  contactsLocation2: any;
 
   contactForm: FormGroup;
   submitted = false;
@@ -70,10 +70,12 @@ export class ContactComponent implements OnInit {
 
   public fetchContactDetails() {
     this.contactsLocation1 = contactsLocation1;
+    this.contactsLocation2 = contactsLocation2;
   }
 
 public fetchHours() {
   this.hoursLocation1 = hoursLocation1;
+  this.hoursLocation2 = hoursLocation2;
 }
   get f() { return this.contactForm.controls; }
 
@@ -87,16 +89,19 @@ public fetchHours() {
   public dataupdate() {
     if ( this.locationId === '1' || this.locationId === 1 ) {
       this.fetchContactDetailsLocation1();
+    } else if ( this.locationId === 2 ) {
+      this.fetchContactDetailsLocation2();
     }
-    // else if ( this.locationId === '3' ) {
-    //   this.fetchContactDetailsLocation3();
-    // }
   }
 
   public fetchContactDetailsLocation1() {
     this.heading = `Affordable Secure Storage - Floral City`;
     this.contactDetails = contactsLocation1;
-    this.hoursDetails = hoursLocation1;
+  }
+
+  public fetchContactDetailsLocation2() {
+    this.heading = `Affordable Secure Storage - West Hernando`;
+    // this.contactDetails = contactsLocation2;
   }
 
 onSubmit() {

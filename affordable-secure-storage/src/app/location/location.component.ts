@@ -1,9 +1,11 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
-       socialLinks
+       socialLinks,
+       contactsLocation2,
+       hoursLocation2
           } from '../data/contact';
-import { tabs, tabs1 } from '../data/location';
+import { tabs1, tabs2, headingLocation2 } from '../data/location';
 import { headingLocation1 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -46,6 +48,15 @@ export class LocationComponent implements OnInit {
             });
             this.titleService.setTitle('Storage Units & Vehicle Parking in Floral City | Affordable Secure Storage');
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+      } else {
+        if (this.router.url.includes('/location/affordable-secure-storage-west-hernando')) {
+          this.meta.addTag({
+            name: 'description',
+            content: `Take a moment to review our units and rates at our 7th location at 2633 East. Main Street! Then reserve online in a jiffy with our form!`
+          });
+          this.titleService.setTitle('Self Storage Units in Hernango | Affordable Secure Storage');
+          this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+    }
       }
       this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
       this.imageBaseUrl = this.uaParserService.baseUrl;
@@ -59,7 +70,11 @@ export class LocationComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/affordable-secure-storage-floral-city')) {
         this.fetchDetailsLocation1();
+    } else {
+      if (this.router.url.includes('/location/affordable-secure-storage-west-hernando')) {
+        this.fetchDetailsLocation2();
     }
+  }
  }
 
 
@@ -73,10 +88,23 @@ export class LocationComponent implements OnInit {
       this.socialLinks = socialLinks;
     }
 
+    public fetchDetailsLocation2() {
+      this.name = headingLocation2;
+      this.locationId = 2;
+      this.contacts = contactsLocation2;
+      this.hours = hoursLocation2;
+      this.tabs = tabs2;
+      this.socialLinks = socialLinks;
+    }
+
 
    public navigateToReserve() {
     if ( this.locationId === 1 ) {
       this.router.navigate(['/location/affordable-secure-storage-floral-city/reserveUnit']);
+    } else {
+      if ( this.locationId === 2 ) {
+        this.router.navigate(['/location/affordable-secure-storage-west-hernando/reserveUnit']);
+      }
     }
    }
 }

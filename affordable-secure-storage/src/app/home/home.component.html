@@ -63,8 +63,42 @@
 <!--Contact Details Ends Here-->
 
 
+<div class="pb-5 pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.758504007038!2d-82.38068478491124!3d28.905523582310813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8720de4f76d69%3A0xc48e5e13138b2a!2s2912%20N%20Florida%20Ave%2C%20Hernando%2C%20FL%2034442!5e0!3m2!1sen!2sus!4v1598929976890!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-xl-5 col-lg-6 col-md-8  pl-4 pt-3 mt-lg-0 mt-md-3">
+        <h2>Affordable Secure Storage - West Hernando</h2>
+        <p>
+          <span *ngFor="let contact of contactsLocation2">
+            <span *ngIf="contact.data"><b>{{contact.label}}</b></span><span class="contact-links"
+            *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+          </span>
+        </p>
+        <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/affordable-secure-storage-west-hernando/storageUnits']"
+        role="button">View Rates</a>
+         <!-- <a class="btn btn-primary-light p-2 ml-0" [routerLink]="['/location/affordable-secure-storage-west-hernando/moveIn']" 
+         role="button">Move In</a> -->
+        <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/affordable-secure-storage-west-hernando/reserveUnit']" 
+         role="button">Reserve Unit</a>
+      </div>
+      <div class="col-xl-3 col-lg-2 col-md-4 mt-lg-0 mt-md-3 contact-hours pt-3 ">
+          <h2>Hours:</h2>
+          <p>
+            <span class="hourdata" *ngFor="let hour of hoursLocation2">
+              <b>{{hour.label}}</b>{{hour.data}}<br>
+            </span>
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--Service-->
-  <div class="service ">
+  <div class="service bg-light">
       <div class="container py-5">
         <div class="row">
           <div class="col-md-6 pt-2">
@@ -84,7 +118,7 @@
 <!--Service Ends Here-->
 
 <!--Testimonial-->
-<div class="bg-light">
+<div class="">
   <div class="container">
     <div class="row py-5">
      <div class="col-md-12 text-center">

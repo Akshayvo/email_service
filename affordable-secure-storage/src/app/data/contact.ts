@@ -36,6 +36,43 @@ export const hoursLocation1 = [
     }
 ];
 
+export const contactsLocation2 = [
+    {
+        id: 0,
+        label: 'Address:',
+        data: '2912 N Florida Ave, Hernando, FL 34442',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+    {
+        id: 1,
+        label: 'Phone:',
+        data: '(352) 419-4131',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:3524194131'
+    },
+    {
+        id: 2,
+        label: 'Email:',
+        data: '',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:'
+    },
+];
+
+export const hoursLocation2 = [
+    {
+        label: 'Mon - Fri: ',
+        data: '9:00AM to 5:00PM',
+    },
+    {
+        label: 'Sat - Sun: ',
+        data: 'CLOSED'
+    },
+    {
+        label: 'Access Hours: ',
+        data: '24 Hours a Day 7 Days a Week'
+    }
+];
 
 export const socialLinks = [
     {
