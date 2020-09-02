@@ -39,7 +39,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   UnitTypeID: number;
   showPaymentForMoveIn: boolean;
   showPaymentForReserve: boolean;
-
+  showUnitAvailabiltyMessage: string;
 
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
@@ -56,11 +56,11 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   strTempTenantToken: StrTempTenantToken;
 
   strConfirmation: string;
-
+  disabledNextButton = false;
   successMessage = false;
 
   dataModel: any;
-
+  gettingUnitData = false;
   objTenantCopy: any;
 
   count = 0;
@@ -123,6 +123,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   strAccessCode: string;
   parentShowSuccessPayment: Boolean;
   unitTypeNotAvailability = false;
+  showReservationButton = false;
 
   showPaymentPage = false;
   gettingTenantData = false;
@@ -190,6 +191,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         }
         return validator(control);
       };
+    }
+
+    
+    if (this.router.url.includes('view-rates')) {
+      this.showReservationButton = true;
+    } else {
+      this.showReservationButton = false;
     }
 
       if ((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve-unit')) {
@@ -422,9 +430,15 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   getFilterLstUnitTypes(unitTypesResponse: any) {
     this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
     this.filterLstUnitTypes = this.lstUnitTypes.filter(x => x.IsUnitsAvailable === true);
+    console.log('this.filterLstUnitTypes', this.filterLstUnitTypes);
+    if (!this.filterLstUnitTypes) {
+      this.showUnitAvailabiltyMessage = 'There is no Unit available to reserve, Please contact to the facility.';
+      this.disabledNextButton = true;
+    }
   }
 
   getData() {
+    this.gettingUnitData = true;
    this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
         this.getFilterLstUnitTypes(unitTypesResponse);
@@ -473,6 +487,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.dataSharingService.LstUnitTypes.Description = serviceDescriptionValue;
         this.dataSharingService.LstUnitTypes.MonthlyRate = serviceMonthlyValue;
       }
+      this.gettingUnitData = false;
     });
   }
 

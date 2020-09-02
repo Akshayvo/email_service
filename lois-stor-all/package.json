@@ -1,6 +1,6 @@
 {
   "name": "lois-stor-all",
-  "version": "0.2.9",
+  "version": "0.3.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
