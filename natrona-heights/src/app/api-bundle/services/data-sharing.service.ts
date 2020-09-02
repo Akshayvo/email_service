@@ -43,6 +43,7 @@ export class DataSharingService {
     UnitTypeID: 0,
     RateTax: 0,
     formattedMoveInDate: '',
+    strConfirmation: ''
   };
 
   LstUnitTypes = {

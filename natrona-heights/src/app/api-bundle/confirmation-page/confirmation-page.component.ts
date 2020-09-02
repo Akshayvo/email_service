@@ -41,6 +41,8 @@ export class ConfirmationPageComponent implements OnInit, OnDestroy {
     this.description = this.dataSharingService.LstUnitTypes.Description;
     this.strAccessCode = this.dataSharingService.strAccessCode;
     this.strConfirmation = this.dataSharingService.strConfirmation;
+    console.log(this.strConfirmation);
+    console.log('confirmation page');
   }
 
   public navigate(location: any) {

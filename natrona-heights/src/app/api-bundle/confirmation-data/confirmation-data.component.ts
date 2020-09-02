@@ -178,7 +178,9 @@ getTenantUnitData() {
   this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
+  this.strConfirmation = this.dataSharingService.strConfirmation;
   console.log('monthly rate is', this.monthlyRate);
+  console.log('strConfirmation is', this.strConfirmation);
 }
 
   addTenant(data: any): void {
@@ -214,11 +216,11 @@ getTenantUnitData() {
             }
           } else {
             if (this.navigateToReserve) {
-              if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
-                this.router.navigate(['/view-rates/payReservationCharges']);
-              } else {
+              // if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
+              //   this.router.navigate(['/view-rates/payReservationCharges']);
+              // } else {
                 this.makeAReservation(this.MoveIn);
-              }
+              // }
             }
           }
         });
@@ -240,6 +242,10 @@ getTenantUnitData() {
         }
         this.reservationInProgress = false;
         if (strConfirmationResponse.strConfirmation) {
+          // this.strConfirmation = strConfirmationResponse.strConfirmation;
+          // this.strConfirmation = this.dataSharingService.strConfirmation;
+          // console.log(strConfirmationResponse);
+          console.log('working');
           this.router.navigate(['/view-rates/confirmation-page']);
         }
       }, (err: any) => {
@@ -323,11 +329,11 @@ getTenantUnitData() {
                 this.moveIn(this.MoveIn);
               }
             } else {
-              if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
-                this.router.navigate(['/view-rates/payReservationCharges']);
-               } else {
+            //   if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
+            //     this.router.navigate(['/view-rates/payReservationCharges']);
+            //    } else {
                  this.makeAReservation(this.MoveIn);
-               }
+            //    }
             }
           } else {
             this.updateTenant(this.tenantData);
@@ -348,11 +354,11 @@ getTenantUnitData() {
                   this.moveIn(this.MoveIn);
                 }
               } else {
-                if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
-                  this.router.navigate(['/view-rates/payReservationCharges']);
-                 } else {
+                // if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
+                //   this.router.navigate(['/view-rates/payReservationCharges']);
+                //  } else {
                    this.makeAReservation(this.MoveIn);
-                 }
+                //  }
               }
             }
           } else {
@@ -380,13 +386,13 @@ getTenantUnitData() {
                 this.addTenant(this.tenantData);
               }
             } else {
-              if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
-                this.dataSharingService.addingTenant = true;
-                this.dataSharingService.addingTenant = true;
-                this.router.navigate(['/view-rates/payReservationCharges']);
-               } else {
+              // if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
+              //   this.dataSharingService.addingTenant = true;
+              //   this.dataSharingService.addingTenant = true;
+              //   this.router.navigate(['/view-rates/payReservationCharges']);
+              //  } else {
                 this.addTenant(this.tenantData);
-              }
+              // }
             }
           }
         }
