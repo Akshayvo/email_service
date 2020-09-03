@@ -16,6 +16,7 @@ export class DataSharingService {
   // };
 
 
+  isDataUpdated: boolean;
   verificationCode: string;
   changePassword: boolean;
   navigationTo: string;
@@ -29,10 +30,20 @@ export class DataSharingService {
   addingTenant = false;
   insuranceChoiceId: number;
   signUpForAutoPay: boolean;
-
+  isDataSaved: boolean;
   paymentTab: string;
 
   apiKey = '';
+
+  cardDetailsObject = {
+    CCNumber: '',
+    CCBillingAccountName: '',
+    CCExpirationMonth: '',
+    CCExpirationYear: '',
+    CCBillingAddress: '',
+    CCBillingZIP: '',
+  };
+
 
   MoveInData = {
     Description: '',

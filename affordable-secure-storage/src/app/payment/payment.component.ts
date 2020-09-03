@@ -19,6 +19,7 @@ export class PaymentComponent implements OnInit {
   contact: any;
   tableData: any;
   tableHeader = [];
+  paymentTab: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -36,6 +37,9 @@ export class PaymentComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
     window.scrollTo(0, 0);
     this.receiveMessage();
     this.fetchTableHeader();
@@ -46,9 +50,17 @@ export class PaymentComponent implements OnInit {
       const navTo = localStorage.getItem('paymentNavigationUrl');
       if (!!navTo) {
         if (this.dataSharingService.changePassword === true) {
-          this.router.navigate([`/pay-rent/${navTo}/changePassword`]);
+          this.router.navigate([`/pay-rent/${navTo}/${this.paymentTab}/changePassword`]);
         } else {
-          this.router.navigate([`/pay-rent/${navTo}/payment`]);
+          // this.router.navigate([`/pay-rent/${navTo}/${this.paymentTab}/payment`]);
+          if (this.paymentTab === 'rent-sub') {
+            this.router.navigate([`/pay-rent/${navTo}/${this.paymentTab}/payment`]);
+          } else {
+            console.log("navigation is", `/pay-rent/${navTo}/${this.paymentTab}/auto-pay`);
+            // if (this.paymentTab === 'sign-up') {
+              this.router.navigate([`/pay-rent/${navTo}/${this.paymentTab}/auto-pay`]);
+            }
+          // }
         }
       }
     }
