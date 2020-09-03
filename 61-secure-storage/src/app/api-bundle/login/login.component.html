@@ -54,7 +54,7 @@
             <!-- <div id="myModal" class="modal fade" role="dialog">
                 <div class="modal-dialog"> -->
                     <!-- Modal content-->
-                    <app-login-modal *ngIf="!!open" (someEvent)="openBox()"></app-login-modal>
+                    <app-login-modal *ngIf="!!open" (closeLoginPrompt)="openBox()"></app-login-modal>
                 <!-- </div>
             </div> -->
         </div>
@@ -66,10 +66,10 @@
         <div *ngFor="let loginDetail of loginDetail">
           <p><b>Username</b>&nbsp;{{loginDetail.userName}}<br>
           <b>Password:</b>&nbsp;{{loginDetail.password}}</p>
-            <!-- <p><b>Example:</b></p>
+            <p><b>Example:</b></p>
             <p>{{loginDetail.example.code}}</p>
             <p>John's Username: {{loginDetail.example.userName}}<br>
-              John's Password: {{loginDetail.example.password}}</p> -->
+              John's Password: {{loginDetail.example.password}}</p>
             <p><strong>Have questions about your account?</strong><br>
             <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
               <a  *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content" [href]="contact?.redirect">

@@ -13,15 +13,15 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'driftwood'`, async(() => {
+  it(`should have as title '61-280 Storage'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('driftwood');
+    expect(app.title).toEqual('61-280 Storage');
   }));
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Driftwood Village Self Storage !');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to 61-280 Storage !');
   }));
 });

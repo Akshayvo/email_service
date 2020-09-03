@@ -2,16 +2,12 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Driftwood Village Self Storage is a locally owned & operated self storage and RV parking
-      facility on the north side of Auburn, CA. We have proudly served our friends and neighbors since
-      1965 with well-maintained, affordable self storage units backed by amazing customer service!`,
+      p: `61 Secure Storage is Davenport's premier self storage facility. Our storage units
+      are clean, well-maintained, and are fully-fenced. We are accessible 24 hours a day through
+      an electronic keypad and security gate, and our facility's conveniences are backed by 20
+      years of top notch customer service! All of this is available at our extremely competitive
+      prices! Call or reserve your unit online today! `,
     },
-    {
-      p: `Our on-site management team can't wait to meet you and make your next self storage project
-      an easy and hassle-free one! Take a moment to review our availability, then reserve your unit online,
-      or call our offices to speak with one of our on-site managers! We look forward to helping you reclaim
-      that space around the home, office, or worksite. `
-    }
 ];
 
 export const viewRatesAltText = `photograph of several self storage unit buildings with square red doors`;
@@ -25,18 +21,18 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  // {
-  //   data: 'Deposit',
-  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  // },
+  {
+    data: 'Deposit',
+    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  },
   {
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
-  {
-    data: `Move In`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
-  },
+  // {
+  //   data: `Move In`,
+  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  // },
   // {
   //   data: `Climate Control`,
   //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
