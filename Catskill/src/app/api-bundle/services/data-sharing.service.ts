@@ -19,6 +19,21 @@ export class DataSharingService {
   strConfirmation: string;
   addingTenant = false;
   period: string;
+  apiKey = '';
+  paymentNavigation: string;
+  isDataUpdated: boolean;
+  isDataSaved: boolean;
+  signUpForAutoPay: boolean;
+
+  cardDetailsObject = {
+    CCNumber: '',
+    CCBillingAccountName: '',
+    CCExpirationMonth: '',
+    CCExpirationYear: '',
+    CCBillingAddress: '',
+    CCBillingZIP: '',
+  };
+
 
   MoveInData = {
     Description: '',

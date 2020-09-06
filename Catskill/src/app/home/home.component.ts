@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2, Inject} from '@angular/core';
+import { Component, OnInit, Renderer2, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';

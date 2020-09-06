@@ -5,6 +5,7 @@ import { apiRoutes, iFrameRoutes } from './data/route';
 
 export const routes: Routes = environment.type ?  iFrameRoutes : apiRoutes;
 
+
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     onSameUrlNavigation: 'reload'

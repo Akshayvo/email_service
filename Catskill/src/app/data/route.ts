@@ -22,6 +22,53 @@ import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-passw
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confirmation-page.component';
+import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
+import { RentSubComponent } from '../api-bundle/rent-sub/rent-sub.component';
+import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
+import { SignUpComponent } from '../api-bundle/sign-up/sign-up.component';
+import { environment } from 'src/environments/environment';
+
+const withoutTab = [
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
+        {path: 'login', component: LoginComponent },
+        {path: 'forgotPassword', component: ForgotPasswordComponent },
+        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+        {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+        { path: 'verifyCode', component: VerifyCodeComponent },
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+        // canActivate: [VerifictionCodeGuard]
+];
+
+const withTab = [
+  { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
+      { path: 'rent-sub', component: RentSubComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      },
+      { path: 'sign-up', component: SignUpComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      }
+];
+
+// const reservationForm = environment
+const childroute = environment.paymentPageType ? withTab : withoutTab;
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
@@ -45,17 +92,8 @@ import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confi
       ]
      },
     {
-      path: 'pay-rent', component: PaymentComponent,
-      children: [
-        {path: '', redirectTo: 'login', pathMatch: 'full'},
-        {path: 'login', component: LoginComponent },
-        {path: 'forgotPassword', component: ForgotPasswordComponent },
-        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-        {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-        { path: 'verifyCode', component: VerifyCodeComponent },
-        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-        // canActivate: [VerifictionCodeGuard]
-      ]
+      path: 'pay-rent', component: PayRentComponent,
+      children: childroute
     },
     { path: 'forgot-password', component: ForgotPasswordComponent },
     { path: 'review', component: HomeComponent,
@@ -63,7 +101,7 @@ import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confi
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -85,7 +123,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJu81QPs_6wogRwrH8unQ4YvU'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
