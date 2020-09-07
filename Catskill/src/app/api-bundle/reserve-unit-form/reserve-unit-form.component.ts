@@ -163,6 +163,40 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
+
+        AlternateName:  ['',  conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
+        // AlternateLastName: ['',  conditionalValidator(
+        //   (() => this.navigateToReserve === true),
+        //   Validators.required
+        // )],
+        AlternatePhone:   ['', [ conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        ),
+          Validators.pattern(
+            '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
+            )
+        ]],
+        AlternateAddressLine1: ['',  conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
+        AlternateAddressLine2: [''],
+        AlternateCity: ['', conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
+        AlternateState: ['', conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
+        AlternateZIP: ['', conditionalValidator(
+          (() => this.navigateToReserve === true),
+          Validators.required
+        )],
       }),
 
       lstUnitTypes: new FormArray([
