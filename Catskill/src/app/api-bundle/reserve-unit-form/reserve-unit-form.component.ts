@@ -12,6 +12,7 @@ import { Subscription } from 'rxjs';
 import * as moment from 'moment';
 import { MoveInService } from '../services/moveIn.service';
 import { DataSharingService } from '../services/data-sharing.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -21,8 +22,6 @@ import { DataSharingService } from '../services/data-sharing.service';
 })
 
 export class ReserveUnitFormComponent implements OnInit, OnDestroy {
-
-
 
   proRateAmount?: number;
   curStage: number;
@@ -40,17 +39,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   showPaymentForMoveIn: boolean;
   showPaymentForReserve: boolean;
   filterLstUnitTypes: LstUnitTypes[];
-
-
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
-
   unitTypes: UnitTypes;
   lstUnitTypes: LstUnitTypes[];
   rentalPeriod: RentalPeriod;
   LstRentalPeriods: LstRentalPeriods[];
   LstInsuranceChoices: LstInsuranceChoices[];
-
   objTenant: ObjTenant;
   objTenantDetail: ObjTenantDetail;
 
@@ -133,6 +128,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   biAnnualRate: number;
   quarterRate: number;
 
+  alternateTenantDetail: any;
+
   private  getLeadDaysSubscribe$: Subscription;
   private  getTenantInfoSubscribe$: Subscription;
   private  getDataSubscribe$: Subscription;
@@ -163,40 +160,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
-
-        AlternateName:  ['',  conditionalValidator(
-          (() => this.navigateToReserve === true),
-          Validators.required
-        )],
-        // AlternateLastName: ['',  conditionalValidator(
-        //   (() => this.navigateToReserve === true),
-        //   Validators.required
-        // )],
-        AlternatePhone:   ['', [ conditionalValidator(
-          (() => this.navigateToReserve === true),
-          Validators.required
-        ),
-          Validators.pattern(
-            '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
-            )
-        ]],
-        AlternateAddressLine1: ['',  conditionalValidator(
-          (() => this.navigateToReserve === true),
-          Validators.required
-        )],
-        AlternateAddressLine2: [''],
-        AlternateCity: ['', conditionalValidator(
-          (() => this.navigateToReserve === true),
-          Validators.required
-        )],
-        AlternateState: ['', conditionalValidator(
-          (() => this.navigateToReserve === true),
-          Validators.required
-        )],
-        AlternateZIP: ['', conditionalValidator(
-          (() => this.navigateToReserve === true),
-          Validators.required
-        )],
       }),
 
       lstUnitTypes: new FormArray([
@@ -227,6 +190,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         return validator(control);
       };
     }
+
+    this.alternateTenantDetail = environment.alternateTenant;
+
+    console.log('this.alternateTenantDetail', this.alternateTenantDetail);
 
     if (this.router.url.includes('view-rates')) {
       this.showReservationButton = true;

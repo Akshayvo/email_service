@@ -106,7 +106,6 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   private makePaymentSubscribe$: Subscription;
   private getPayMethodsSubscribe$: Subscription;
   private getTenantInfoSubscribe$: Subscription;
-  private makeAReservationSubscribe$: Subscription;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -149,7 +148,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     if (this.router.url ===  '/pay-rent/sign-up/payment' ) {
       this.navigateToMoveInPayment = true;
     }
- 
+
     if (!!localStorage.getItem('paymentTab')) {
       this.paymentTab = localStorage.getItem('paymentTab');
     }
@@ -554,9 +553,6 @@ export class AutoPayComponent implements OnInit, OnDestroy {
 
     if (this.getTenantInfoSubscribe$ && this.getTenantInfoSubscribe$.closed) {
       this.getTenantInfoSubscribe$.unsubscribe();
-    }
-    if (this.makeAReservationSubscribe$ && this.makeAReservationSubscribe$.closed) {
-      this.makeAReservationSubscribe$.unsubscribe();
     }
     window.removeEventListener('beforeunload', (event) => {
 
