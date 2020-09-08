@@ -2,7 +2,7 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `61 Secure Storage is Davenport's premier self storage facility. Our storage units
+      p: `61-280 Storage Storage is Davenport's premier self storage facility. Our storage units
       are clean, well-maintained, and are fully-fenced. We are accessible 24 hours a day through
       an electronic keypad and security gate, and our facility's conveniences are backed by 20
       years of top notch customer service! All of this is available at our extremely competitive
