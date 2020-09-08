@@ -2,6 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { storagePoints, storageTips } from '../data/storage-tips';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
+import { CanonicalService } from '../services/canonical.service';
+
 
 @Component({
   selector: 'app-storage-tips',
@@ -20,7 +22,10 @@ export class StorageTipsComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private meta: Meta,
     private titleService: Title,
+    private canonical: CanonicalService
+
   ) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `AllSpace Storage has been making the storage experience

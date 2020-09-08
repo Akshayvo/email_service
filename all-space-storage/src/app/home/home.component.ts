@@ -8,6 +8,8 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation5, hoursLocation5, } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
 import { LocationService } from '../services/location.service';
+import { CanonicalService } from '../services/canonical.service';
+
 
 @Component({
   selector: 'app-home',
@@ -26,8 +28,10 @@ export class HomeComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
-    private data: LocationService
+    private data: LocationService,
+    private canonical: CanonicalService
   ) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `If you're looking for affordable storage units and stellar

@@ -3,6 +3,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-payment',
@@ -20,8 +21,11 @@ export class PaymentComponent implements OnInit {
     private route: ActivatedRoute,
     private titleService: Title,
     private meta: Meta,
-    private data: LocationService
+    private data: LocationService,
+    private canonical: CanonicalService
+
   ) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `AllSpace Storage  offers convenient online bill pay!
