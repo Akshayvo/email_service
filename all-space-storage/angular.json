@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "all-space-storage"
+  "defaultProject": "all-space-storage",
+  "cli": {
+    "analytics": "e4c86bda-3a91-4993-8173-513035a42332"
+  }
 }

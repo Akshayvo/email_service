@@ -8,6 +8,7 @@ import { contactsLocation1, hoursLocation1,
 import { tabs } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
+import { CanonicalService } from '../services/canonical.service';
 
 
 @Component({
@@ -31,8 +32,11 @@ export class LocationComponent implements OnInit {
     private meta: Meta,
     private router: Router,
     private titleService: Title,
+    private canonical: CanonicalService
     ) {
+
       if (this.router.url.includes('/location/poughkeepsie/arlington')) {
+        this.canonical.create();
             this.meta.addTag({
               name: 'description',
               content: `Our Route 55 Poughkeepsie location has 24 hour access available, pin-code activated gates,
@@ -40,6 +44,7 @@ export class LocationComponent implements OnInit {
             });
             this.titleService.setTitle('Storage Units in Poughkeepsie, NY | AllSpace Storage');
     } else if (this.router.url.includes('/location/poughkeepsie/hyde-park')) {
+      this.canonical.create();
       this.meta.addTag({
         name: 'description',
         content: `Whether you own a home, rent an apartment, go to school or run a business,
@@ -47,6 +52,7 @@ export class LocationComponent implements OnInit {
       });
       this.titleService.setTitle('Self Storage Units In Poughkeepsie, NY | AllSpace Storage');
     } else if (this.router.url.includes('/location/highland')) {
+      this.canonical.create();
            this.meta.addTag({
              name: 'description',
              content: `Our Highland location is fully lit, has boxes and moving supplies, pin-code
@@ -54,6 +60,7 @@ export class LocationComponent implements OnInit {
            });
            this.titleService.setTitle('Convenient Storage Units in Highland | AllSpace Storage');
     } else  if (this.router.url.includes('/location/lake-katrine'))  {
+      this.canonical.create();
           this.meta.addTag({
             name: 'description',
             content: `Are you looking for well-maintained, affordable self storage units near Lake Katrine, NY?
@@ -61,6 +68,7 @@ export class LocationComponent implements OnInit {
           });
           this.titleService.setTitle('Storage Units In Lake Katrine, NY | AllSpace Storage');
     } else {
+      this.canonical.create();
           this.meta.addTag({
             name: 'description',
             content: `Are you looking for a well maintained, fully lit self storage facility with great
