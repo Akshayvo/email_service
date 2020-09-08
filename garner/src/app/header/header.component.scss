@@ -87,24 +87,18 @@ a {
   outline: 1px $primary solid;
 }
 
-@media (min-width: 768px) {
-  .navbar-nav {
-    li {
-      a {
-        line-height: 1.5rem;
-        // text-align: center;
-      }
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .navbar {
+    .nav-link {
+      padding: 22px;
     }
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 991px) {
   .dropdown:hover .dropdown-menu {
     display: block;
   }
-}
-
-@media screen and (max-width: 991px) {
   .display {
     display: none;
   }
@@ -130,12 +124,24 @@ a {
 
     .dropdown {
       ul {
-        left: -90px;
+        left: 30px;
         text-align: -webkit-center;
       }
     }
   }
 
+  @media (min-width: 768px) {
+    .navbar-nav {
+      li {
+        a {
+          line-height: 1.5rem;
+          // text-align: center;
+        }
+      }
+    }
+  }
+
+  
   @media screen and (max-height: 476px) {
     .nav-scroll {
       height: 70vh;
