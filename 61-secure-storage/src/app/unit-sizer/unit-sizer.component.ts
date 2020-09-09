@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { unitSizerHeading } from '../data/heading';
 import { unitSizerPageTitle, unitSizerPageContent } from '../data/title';
 import { Title, Meta } from '@angular/platform-browser';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-unit-sizer',
@@ -13,11 +14,13 @@ export class UnitSizerComponent implements OnInit {
   unitSizerHeading: string;
   unitSizerPageTitle: string;
   unitSizerPageContent: string;
+  imageBaseUrl: any;
+  imagetype: any;
 
   constructor(
     private titleService: Title,
     private meta: Meta,
-
+    private uaParserService: UaParserService,
   ) {
     this.fetchMetaData();
     this.meta.addTag({
@@ -25,6 +28,8 @@ export class UnitSizerComponent implements OnInit {
       content: `${this.unitSizerPageContent}`
     });
     this.titleService.setTitle(`${this.unitSizerPageTitle}`);
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {

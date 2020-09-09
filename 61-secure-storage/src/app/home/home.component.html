@@ -5,27 +5,28 @@
   <div class="jumbotron-container">
     <div class="jumbotron-top">
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
-      <!-- <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
-      </div> -->
-      <!-- <div class="container">
-        <div class="jumbotorn-skew-text">
-          <div class="disp" *ngFor="let jumbotron of jumbotron">
-            <h2  class="my-4">
-              {{jumbotron.h1}}
-            </h2>
-          <p class="text-justify">{{jumbotron.blurb}}</p>
+      <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+        <div class="container text-center display">
+          <img src="{{imageBaseUrl}}/61-280-storage-logo.{{imagetype}}" width="140" alt="" />
+          <div class="jumbotorn-skew-text text-center">
+            <div class="disp" *ngFor="let jumbotron of jumbotron">
+              <h2  class="my-4">
+                {{jumbotron.h1}}
+              </h2>
+            <p class="text-center">{{jumbotron.blurb}}</p>
+            </div>
+            <div class="jumbotorn-button">
+              <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+              <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">Reserve Now</a></div>
+            </div>
           </div>
-          <div class="jumbotorn-button">
-            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a></div>
-          </div>
-        </div> -->
+      </div>
       </div>
       </div>
     <div class="jumbotron-bottom">
       <div class="container">
         <div class="feature row">
-          <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-6 feature-icon-style" *ngFor="let feature of feature">
             <img [src]="feature?.path" [alt]="feature?.alt" height="100px"/>
               <h6 class="feature-text">{{feature.label}}</h6>
           </div>

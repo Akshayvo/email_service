@@ -5,6 +5,8 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { payRentPageContent, payRentPageTitle } from '../../data/title';
 import { payRentHeading } from '../../data/heading';
 import { tabs } from '../../data/tab';
+import { UaParserService } from '../../services/ua-parser.service';
+
 
 @Component({
   selector: 'app-payment',
@@ -18,11 +20,14 @@ export class PaymentComponent implements OnInit {
   payRentPageContent: string;
   payRentHeading: string;
   tabs: any;
+  imagetype: any;
+  imageBaseUrl: any;
 
   constructor(
     private titleService: Title,
     @Inject(WINDOW) private window: Window,
-    private meta: Meta
+    private meta: Meta,
+    private uaParserService: UaParserService,
   ) {
     this.fetchMetaData();
     this.meta.addTag({
@@ -30,6 +35,9 @@ export class PaymentComponent implements OnInit {
       content: `${this.payRentPageContent}`
     });
     this.titleService.setTitle(`${this.payRentPageTitle}`);
+
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {

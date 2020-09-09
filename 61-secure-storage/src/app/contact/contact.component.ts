@@ -7,6 +7,7 @@ import { EmailService } from '../services/email.service';
 import { MetaService } from '../services/link.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
 import { contactHeading } from '../data/heading';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-contact',
@@ -31,6 +32,8 @@ export class ContactComponent implements OnInit {
   contactPageTitle: string;
   contactPageContent: string;
   contactHeading: string;
+  imageBaseUrl: any;
+  imagetype: any;
 
   constructor(
     private router: Router,
@@ -39,6 +42,8 @@ export class ContactComponent implements OnInit {
     private meta: Meta,
     private formBuilder: FormBuilder,
     private metaService: MetaService,
+    private uaParserService: UaParserService,
+
   ) {
     this.fetchMetaData();
     this.meta.addTag({
@@ -47,6 +52,8 @@ export class ContactComponent implements OnInit {
     });
     this.titleService.setTitle(`${this.contactPageTitle}`);
     this.metaService.createCanonicalURL();
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {

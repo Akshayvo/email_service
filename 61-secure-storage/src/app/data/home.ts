@@ -92,7 +92,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h1: ``,
-        blurb: ``,
+        h1: `Affordable Storage Units in Davenport`,
+        blurb: `61-280 Storage is Davenport’s premier self storage facility! Our clean, well-maintained units are accessible 24-hours a day behind a pin-code activated security gate. Our talented on-site manager is ready to help you make your next self storage project a convenient one!`,
     }
 ];

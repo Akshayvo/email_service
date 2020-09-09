@@ -50,14 +50,14 @@ img {
   }
 
   .nav-link-active {
-    border-bottom: 5px solid $secondary;
+    border-bottom: 5px solid $primary;
   }
 
   button {
-    border-color: $white;
+    border-color: $primary;
 
     .iconColor {
-      color: $white;
+      color: $primary;
     }
   }
 

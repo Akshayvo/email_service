@@ -4,6 +4,7 @@ import { storageTip, storageTipAccordion } from '../data/storage';
 import { MetaService } from '../services/link.service';
 import { storageTipsTitle, storageTipsContent } from '../data/title';
 import { storageTipsHeading } from '../data/heading';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-storage-tips',
@@ -17,12 +18,15 @@ export class StorageTipsComponent implements OnInit {
   storageTipsHeading: string;
   storageTipsTitle: string;
   storageTipsContent: string;
-
-  constructor(
+  imageBaseUrl: any;
+  imagetype: any;
+  
+  constructor(    
     private titleService: Title,
     private meta: Meta,
     private metaService: MetaService,
-  ) {
+    private uaParserService: UaParserService,
+    ) {
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
@@ -30,6 +34,8 @@ export class StorageTipsComponent implements OnInit {
     });
     this.titleService.setTitle(`${this.storageTipsTitle}`);
     this.metaService.createCanonicalURL();
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {
