@@ -18,6 +18,7 @@ export const objSIMSetting = {
         blnShowDeposit: true,
         blnShowRate: true,
         blnShowUnavailableUnitTypes: true,
-        blnShowUnitAvailability: true
+        blnShowUnitAvailability: true,
+        blnShowSetupFee: true
     },
 };

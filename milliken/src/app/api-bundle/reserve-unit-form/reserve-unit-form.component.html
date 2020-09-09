@@ -8,6 +8,8 @@
 
         <div class="loader" *ngIf="gettingTenantData"></div>
 
+        <p class="text-center pb-4"><b>Note: A $25 refundable deposit will be due at the time of move in.</b></p>
+
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div  class="row justify-content">
              <div formGroupName="objTenant" class="col-lg-7 ">

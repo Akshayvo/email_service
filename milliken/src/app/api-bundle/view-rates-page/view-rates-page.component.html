@@ -3,6 +3,7 @@
     </div>
     <div [class.loader]="showLoader" class="loader-position"> 
     </div>
+    <p class="text-center viewrate_note pb-4"><b>We have outdoor vehicle parking available with pricing based on size, please call for more information.</b></p>
   <table  class="viewrates-desktop">
       <tHead [class.display]="!showTable">
           <tr>
@@ -20,7 +21,7 @@
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
           </td>
           <td colspan="2" class="px-4 border text-center">
-            <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
+            <span *ngIf="lstUnitType.SetupFee != null">$</span>{{lstUnitType.SetupFee | number : '1.2-2'}}
           </td>
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
@@ -58,9 +59,9 @@
             <p class=" "><b><u>Rate</u></b></p>
             <div class=" "><span >$</span>{{lstUnitType.MonthlyRate}}</div>
         </div>
-        <div class="col-6 text-center"  *ngIf="lstUnitType.DepositAmount" [class.ClimateBorder]="lstUnitType.DepositAmount" >
-          <p class=" "><b><u>Deposit</u></b></p>
-            <div class=" ClimateControlled" >{{lstUnitType.DepositAmount}}</div>
+        <div class="col-6 text-center"  *ngIf="lstUnitType.SetupFee" [class.ClimateBorder]="lstUnitType.SetupFee" >
+          <p class=" "><b><u>Setup Fee</u></b></p>
+            <div class=" ClimateControlled" >{{lstUnitType.SetupFee}}</div>
         </div>
       </div>
     </div>
