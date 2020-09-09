@@ -2,19 +2,19 @@ export const tabs1 = [
     {
         id: '1',
         name: 'Storage Units',
-        path: './storageUnits',
+        path: './storage-units',
         active: true,
     },
     {
         id: '2',
         name: 'Unit Sizer',
-        path: './unitSizer',
+        path: './unit-sizer',
         active: false,
     },
     {
         id: '3',
         name: 'Reserve Unit',
-        path: './reserveUnit',
+        path: './reserve-unit',
         active: false,
     },
     {
@@ -35,19 +35,19 @@ export const tabs = [
     {
         id: '1',
         name: 'Storage Units',
-        path: './storageUnits',
+        path: './storage-units',
         active: true,
     },
     {
         id: '2',
         name: 'Unit Sizer',
-        path: './unitSizer',
+        path: './unit-sizer',
         active: false,
     },
     {
         id: '3',
         name: 'Reserve Unit',
-        path: './reserveUnit',
+        path: './reserve-unit',
         active: false,
     },
     {
@@ -68,19 +68,19 @@ export const tabs2 = [
     {
         id: '1',
         name: 'Storage Units',
-        path: './storageUnits',
+        path: './storage-units',
         active: true,
     },
     {
         id: '2',
         name: 'Unit Sizer',
-        path: './unitSizer',
+        path: './unit-sizer',
         active: false,
     },
     {
         id: '3',
         name: 'Reserve Unit',
-        path: './reserveUnit',
+        path: './reserve-unit',
         active: false,
     },
     {
@@ -100,19 +100,19 @@ export const tabs3 = [
     {
         id: '1',
         name: 'Storage Units',
-        path: './storageUnits',
+        path: './storage-units',
         active: true,
     },
     {
         id: '2',
         name: 'Unit Sizer',
-        path: './unitSizer',
+        path: './unit-sizer',
         active: false,
     },
     {
         id: '3',
         name: 'Reserve Unit',
-        path: './reserveUnit',
+        path: './reserve-unit',
         active: false,
     },
     {

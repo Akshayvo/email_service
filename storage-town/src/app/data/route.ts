@@ -44,8 +44,8 @@ export const apiRoutes = [
     { path: 'location/chester',
       component: LocationComponent,
       children: [
-        {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-        { path: 'storageUnits', component: ViewRatesComponent,
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent,
           children: [
             { path: '', component: ViewRatesPageComponent },
             { path: 'reserve', component: ReserveUnitFormComponent },
@@ -56,7 +56,7 @@ export const apiRoutes = [
             { path: 'payMoveInCharges', component: PayRentFormComponent },
           ]
         },
-        { path: 'unitSizer', component: UnitSizerComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserveUnit', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
@@ -88,8 +88,8 @@ export const apiRoutes = [
     { path: 'location/andrews',
       component: LocationComponent,
       children: [
-        {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-        { path: 'storageUnits', component: ViewRatesComponent,
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent,
           children: [
             { path: '', component: ViewRatesPageComponent },
             { path: 'reserve', component: ReserveUnitFormComponent },
@@ -100,7 +100,7 @@ export const apiRoutes = [
             { path: 'payMoveInCharges', component: PayRentFormComponent },
           ]
         },
-        { path: 'unitSizer', component: UnitSizerComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserveUnit', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
@@ -132,8 +132,8 @@ export const apiRoutes = [
     { path: 'location/montgomery-walden',
       component: LocationComponent,
       children: [
-        {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-        { path: 'storageUnits', component: ViewRatesComponent,
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent,
           children: [
             { path: '', component: ViewRatesPageComponent },
             { path: 'reserve', component: ReserveUnitFormComponent },
@@ -144,7 +144,7 @@ export const apiRoutes = [
             { path: 'payMoveInCharges', component: PayRentFormComponent },
           ]
         },
-        { path: 'unitSizer', component: UnitSizerComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserveUnit', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
@@ -176,8 +176,8 @@ export const apiRoutes = [
     { path: 'location/middletown-wallKill',
       component: LocationComponent,
       children: [
-        {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-        { path: 'storageUnits', component: ViewRatesComponent,
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent,
           children: [
             { path: '', component: ViewRatesPageComponent },
             { path: 'reserve', component: ReserveUnitFormComponent },
@@ -188,7 +188,7 @@ export const apiRoutes = [
             { path: 'payMoveInCharges', component: PayRentFormComponent },
           ]
         },
-        { path: 'unitSizer', component: UnitSizerComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserveUnit', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
@@ -387,9 +387,9 @@ export const iFrameRoutes = [
   { path: 'location/andrews',
     component: LocationComponent,
     children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
       { path: 'reserveUnit', component: ReserveUnitComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
@@ -398,9 +398,9 @@ export const iFrameRoutes = [
   { path: 'location/chester',
     component: LocationComponent,
     children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
       { path: 'reserveUnit', component: ReserveUnitComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
@@ -409,9 +409,9 @@ export const iFrameRoutes = [
   { path: 'location/montgomery-walden',
     component: LocationComponent,
     children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
       { path: 'reserveUnit', component: ReserveUnitComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
@@ -420,9 +420,9 @@ export const iFrameRoutes = [
   { path: 'location/middletown-wallKill',
     component: LocationComponent,
     children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent },
-      { path: 'unitSizer', component: UnitSizerComponent },
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
       { path: 'reserveUnit', component: ReserveUnitComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },

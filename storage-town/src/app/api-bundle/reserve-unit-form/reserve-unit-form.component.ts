@@ -281,7 +281,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       console.log('yes its ', this.activatedRoute.snapshot.url[1].path);
     } */
 
-    if (this.router.url.includes('reserveUnit')) {
+    if (this.router.url.includes('reserve-unit')) {
       this.showPrevious = true;
     }
   }

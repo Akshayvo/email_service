@@ -88,16 +88,16 @@ export class LocationComponent implements OnInit {
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate(['/location/andrews/reserveUnit'],
+    this.router.navigate(['/location/andrews/reserve-unit'],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/chester/reserveUnit'],
+    this.router.navigate(['/location/chester/reserve-unit'],
           );
   }  else if ( this.locationId === 3 ) {
-    this.router.navigate(['/location/montgomery-walden/reserveUnit'],
+    this.router.navigate(['/location/montgomery-walden/reserve-unit'],
          );
   }  else if ( this.locationId === 4 ) {
-    this.router.navigate(['/location/middletown-wallKill/reserveUnit'],
+    this.router.navigate(['/location/middletown-wallKill/reserve-unit'],
           );
   }
  }
