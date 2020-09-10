@@ -87,21 +87,35 @@
           <h1 class="pb-1">{{data.mainHeading}}</h1>
           <p>{{data.mainParagraph}}</p>
           <h3 class="pb-1"><b>{{data.subHeading1.heading}}</b></h3>
-          <p>{{data.subHeading1.p1}}</p>
-          <p>{{data.subHeading1.p2}}</p>
-          <p>{{data.subHeading1.p3}}</p>
+          <p >{{data.subHeading1.p1}}</p>
+          <p [innerHTML]="data.subHeading1.p2"></p>
+          <p [innerHTML]="data.subHeading1.p3"></p>
           <h3 class="py-1"><b>{{data.subHeading2.heading}}</b></h3>
           <p>{{data.subHeading2.p}}</p>
           <h3 class="py-1"><b>{{data.subHeading3.heading}}</b></h3>
           <p>{{data.subHeading3.p}}</p>
           <h3 class="py-1"><b>{{data.subHeading4.heading}}</b></h3>
-          <p>{{data.subHeading4.p}}</p>
+          <p>{{data.subHeading4.p1}}</p>
+          <ul>
+            <li [innerHTML]="data.subHeading4.l1"></li>
+            <li [innerHTML]="data.subHeading4.l2"></li>
+            <li [innerHTML]="data.subHeading4.l3"></li>
+          </ul>
         </div>
         <!--Staging changes ends here-->  
         </div>
     </div>
   </div>
   <!--About Us Section Ends Here-->
+  <div class="bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12 py-3">
+          <p class="mb-0" >Visit some of our additional properties: <a href="www.lindenstorage.com" target="_blank">www.lindenstorage.com   </a> <a href="www.pittsfordofficespace.com" target="_blank">www.pittsfordofficespace.com</a>  and <a href="www.rentstonebrook.com" target="_blank">www.rentstonebrook.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   
 <!--Get Started Secion-->
@@ -111,7 +125,7 @@
        <div class="py-5 m-0">
          <div class="row">
            <div class="col-md-12">
-             <h2 class="heading pb-4">Getting Started</h2>
+             <h1 class="heading pb-4">Getting Started</h1>
              <p class="pb-4">{{gettingStarted}}</p>
              <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Your Unit!</a>
            </div>

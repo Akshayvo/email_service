@@ -105,9 +105,9 @@ export const aboutUs = [
         subHeading1: {
             heading: `Conveniently Located`,
             p1: `Just a couple minutes from the Greater Rochester Airport.`,
-            p2: `From I-390 traveling North: Take the Chile Ave. Exit 19. Cross straight over Chile Ave. onto Buell Rd.
+            p2: `<b>From I-390 traveling North:</b> Take the Chile Ave. Exit 19. Cross straight over Chile Ave. onto Buell Rd.
                  You'll see a sign on the left for 390 Self Storage.`,
-            p3: `From I-390 traveling South: Take the Chile Ave. exit 19. Turn left onto Chile Ave. and then turn right
+            p3: `<b>From I-390 traveling South:</b> Take the Chile Ave. exit 19. Turn left onto Chile Ave. and then turn right
                  at the traffic light onto Buell Rd. You'll see a sign on the left for 390 Self Storage.`
         },
         subHeading2: {
@@ -126,10 +126,11 @@ export const aboutUs = [
         },
         subHeading4: {
             heading: `Storage Solutions`,
-            p: `390 Self Storage offers a wide array of unit sizes that will fit your needs for whatever time you may
-            need it. Climate controlled units (heated and cooled) are ideal for furniture, pictures, and important
-            documents. Businesses routinely store their supplies, inventory, and records to save on expensive
-            commercial office rates. Outside Storage is available for boats, RVs, and cars.`
+            p1: `390 Self Storage offers a wide array of unit sizes that will fit your needs for whatever time you may need it.`,
+            l1: `<b>Standard</b>, drive-up accessible units`,
+            l2: `<b>Climate Controlled</b> (heated & cooled) units, ideal for furniture, pictures, and important documents.  Businesses
+            routinely store their supplies, inventory, and records to save on expensive commercial office space.`,
+            l3: `<b>Outside Storage</b> for boats, RVs, and cars.`
         },
 
     }
@@ -201,8 +202,8 @@ export const testimonials = [
 ];
 
 
-export const gettingStarted = `If you're ready to reclaim that space around your home, or expand your business
-without breaking the bank on commercial real estate just to store supplies, give 390 Self Storage a call!`;
+export const gettingStarted = `If you're ready to reclaim that space around the house, or expand your business
+without taking on more expensive commercial real estate space just to store supplies, give 390 Self Storage a Call!`;
 
 export const blurb = [
     {

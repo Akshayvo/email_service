@@ -15,13 +15,13 @@ export const galleryHome = [
         alt: `Self Storage Rochester NY`
     },
     {
-        url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/storage-facilities.jpg`,
-        thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/storage-facilities-thumb1.jpg`,
+        url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/self-storage-unit-corner.jpg`,
+        thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/self-storage-unit-corner-thumb.jpg`,
         alt: `Storage Facilities`
     },
     {
-        url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/secure-storage.jpg`,
-        thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/secure-storage-thumb1.jpg`,
+        url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/woman-behind-counter.jpg`,
+        thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/woman-behind-counter-thumb.jpg`,
         alt: `Secure Storage`
     },
 
