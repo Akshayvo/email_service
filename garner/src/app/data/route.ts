@@ -36,8 +36,8 @@ export const apiRoutes = [
     { path: 'location/1321-north-jefferson-st-location',
       component: LocationComponent,
       children: [
-        {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-        { path: 'storageUnits', component: ViewRatesComponent,
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent,
           children: [
             { path: '', component: ViewRatesPageComponent },
             { path: 'reserve', component: ReserveUnitFormComponent },
@@ -48,8 +48,8 @@ export const apiRoutes = [
             { path: 'payMoveInCharges', component: PayRentFormComponent },
           ]
         },
-        { path: 'unitSizer', component: UnitSizerComponent },
-        { path: 'reserveUnit', component: ReserveComponent,
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
             { path: '', component: ReserveUnitFormComponent },
@@ -80,8 +80,8 @@ export const apiRoutes = [
     { path: 'location/1687-US-441-location',
     component: LocationComponent,
     children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: ViewRatesComponent,
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: ViewRatesComponent,
         children: [
           { path: '', component: ViewRatesPageComponent },
           { path: 'reserve', component: ReserveUnitFormComponent },
@@ -92,8 +92,8 @@ export const apiRoutes = [
           { path: 'payMoveInCharges', component: PayRentFormComponent },
         ]
       },
-      { path: 'unitSizer', component: UnitSizerComponent },
-      { path: 'reserveUnit', component: ReserveComponent,
+      { path: 'unit-sizer', component: UnitSizerComponent },
+      { path: 'reserve-unit', component: ReserveComponent,
         children: [
           // { path: '', component: ViewRatesPageComponent },
           { path: '', component: ReserveUnitFormComponent },
@@ -224,10 +224,10 @@ export const iFrameRoutes = [
     { path: 'location/1321-north-jefferson-st-location',
       component: LocationComponent,
       children: [
-        {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-        { path: 'storageUnits', component: StorageUnitComponent },
-        { path: 'unitSizer', component: UnitSizerComponent },
-        { path: 'reserveUnit', component: ReserveUnitComponent },
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: StorageUnitComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveUnitComponent },
         { path: 'photos', component: PhotosComponent },
         { path: 'about', component: AboutUsComponent },
         { path: 'directions', component: DirectionsComponent },

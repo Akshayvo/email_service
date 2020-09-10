@@ -97,7 +97,11 @@ export class LocationComponent implements OnInit {
 
    public navigateToReserve() {
     if ( this.locationId === 1 ) {
-      this.router.navigate(['/location/1321-north-jefferson-st-location/reserveUnit']);
+      this.router.navigate(['/location/1321-north-jefferson-st-location/reserve-unit']);
+    } else {
+      if (this.locationId === 2) {
+        this.router.navigate(['/location/1687-US-441-location/reserve-unit']);
+      }
     }
    }
 }
