@@ -18,12 +18,12 @@ export const featuresList = [
 
 export const altText = `storage unit buildings surrounded by gravel parking with trees in the background`;
 
-export const aboutUsHeading = `Affordable Storage Units with 24 Hour Access in Hillside, NH`;
+export const aboutUsHeading = `Affordable Storage Units with 24 Hour Access in Greenville, NH`;
 
 export const aboutUs = [
     {
-        p: `Hillside Self Storage is Greenville’s newest self storage facility! We are conveniently located east of downtown
-        Greenville right off of NH-31 just south of the Mill st and Adam’s Hill Rd intersection. We serve customers from Greenville,
+        p: `Hillside Self Storage is Greenville’s newest self storage facility! We are conveniently located east of downtown Greenville
+        right off of NH-31 just south of the Mill St and Adam’s Hill Rd intersection.  We serve customers from Greenville,
         Temple, Mason, New Ipswitch, and the surrounding communities with clean, well-maintained storage units and friendly customer
         service at affordable prices!`,
     },
