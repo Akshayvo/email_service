@@ -246,18 +246,20 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   autoCardType(number: any) {
    this.cardType = this.getCardType(number.target.value);
    const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.cardType);
-   // tslint:disable-next-line: max-line-length
-   const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
-   this.paytypeid =  cardTypeId;
-   this.surchargeService.getIdPaytype(this.paytypeid);
-   this.payRentForm.patchValue({
-     objPayment: {
-       PayType: {
-         PayTypeDescription: this.cardType,
-         PayTypeID: cardTypeId,
-       }
-     }
-   });
+   if (!!index) {
+     // tslint:disable-next-line: max-line-length
+     const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
+     this.paytypeid =  cardTypeId;
+     this.surchargeService.getIdPaytype(this.paytypeid);
+     this.payRentForm.patchValue({
+       objPayment: {
+         PayType: {
+           PayTypeDescription: this.cardType,
+           PayTypeID: cardTypeId,
+          }
+        }
+      });
+    }
   }
 
    getCardType(number: any) {
@@ -296,7 +298,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
     if (this.lstPayTypes && this.lstPayTypes.length > 0) {
-    this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
+      if (!!index) {
+        this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
+      }
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.payRentForm.patchValue({
       objPayment: {
@@ -379,6 +383,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         // tslint:disable-next-line: max-line-length
           this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[1].PayTypeDescription);
           const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
+          if (!!index) {
           // tslint:disable-next-line: max-line-length
           const defaultCardPayTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
 
@@ -394,6 +399,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               }
             });
           }
+        }
 
           this.payRentForm.patchValue({
             objPayment: {
