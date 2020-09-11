@@ -1,5 +1,5 @@
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject  } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter, map, mergeMap } from 'rxjs/operators';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -22,7 +22,14 @@ export class AppComponent implements OnInit {
   ) {
   }
   ngOnInit() {
-    this.x = this.window.matchMedia('(max-width: 600px)');
+    if ( window && window.matchMedia) {
+      this.x = this.window.matchMedia('(max-width: 600px)');
+    }
+    // if (this.x.matches) {
+    //   console.log('matches');
+    // } else {
+    //   console.log('not matched');
+    // }
     this.flag = false;
     this.angulatics.eventTrack('Dev', {category: 'App initialized'});
   }
