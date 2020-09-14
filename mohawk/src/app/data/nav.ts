@@ -9,7 +9,7 @@ export const navLinks = [
     },
     {
         label: 'PAY RENT',
-        path: '/pay-rent'
+        path: 'pay-rent'
     },
     {
         label: 'UNIT SIZER',
