@@ -23,10 +23,22 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
-import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
 import { PhotosComponent } from './photos/photos.component';
 import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
+import { LoginComponent } from './api-bundle/login/login.component';
+import { ForgotPasswordComponent } from './api-bundle/forgot-password/forgot-password.component';
+import { ChangePasswordComponent } from './api-bundle/change-password/change-password.component';
+import { PayRentFormComponent } from './api-bundle/pay-rent-form/pay-rent-form.component';
+import { VerifyCodeComponent } from './api-bundle/verify-code/verify-code.component';
+import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { LoginModalComponent } from './api-bundle/login-modal/login-modal.component';
+
 
 @NgModule({
   declarations: [
@@ -45,7 +57,18 @@ import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
     PayRentComponent,
     PhotosComponent,
     ReserveUnitComponent,
-    UnitSizerComponent
+    UnitSizerComponent,
+    RentSubComponent,
+    LoginComponent,
+    ForgotPasswordComponent,
+    ChangePasswordComponent,
+    PayRentFormComponent,
+    VerifyCodeComponent,
+    ResetPasswordComponent,
+    SignUpComponent,
+    AutoPayComponent,
+    TabsComponent,
+    LoginModalComponent
   ],
   imports: [
     CommonModule,
