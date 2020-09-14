@@ -63,6 +63,8 @@ import { LoginModalComponent } from './api-bundle/login-modal/login-modal.compon
 import { StorageUnitComponent } from './storage-unit/storage-unit.component';
 import { PaymentIframeComponent } from './payment-iframe/payment-iframe.component';
 import { PaymentComponent } from './api-bundle/payment/payment.component';
+import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
+import { ScriptHackComponent } from './script-hack/script-hack.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -114,6 +116,8 @@ import { PaymentComponent } from './api-bundle/payment/payment.component';
     LoginModalComponent,
     PaymentIframeComponent,
     PaymentComponent,
+    ThankYouComponent,
+    ScriptHackComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

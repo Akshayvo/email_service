@@ -223,15 +223,25 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.reservationInProgress = true;
     this.makeAReservationSubscribe$ = this.makeAReservationService.makeAReservation(strConfirmation)
       .subscribe(strConfirmationResponse => {
-        this.strConfirmation = strConfirmationResponse.strConfirmation;
-        this.showConfirmation = false;
-        this.submitted = false;
-        this.tokenExit = localStorage.getItem('strTenantToken');
-        this.existTempToken = localStorage.getItem('strTempTenantToken');
-        if (this.existTempToken) {
-          localStorage.removeItem('strTempTenantToken');
+
+        if (strConfirmationResponse.intErrorCode === 1) {
+          this.strConfirmation = strConfirmationResponse.strConfirmation;
+
+          this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
+          this.showConfirmation = false;
+          this.submitted = false;
+          this.tokenExit = localStorage.getItem('strTenantToken');
+          this.existTempToken = localStorage.getItem('strTempTenantToken');
+          if (this.existTempToken) {
+            localStorage.removeItem('strTempTenantToken');
+          }
+  
+          this.reservationInProgress = false;
+
+          this.router.navigate([`${this.navTo}/thank-you`]);
         }
-        this.reservationInProgress = false;
+
+
       }, (err: any) => {
         if (err.status === 403) {
           this.showConfirmation = false;
@@ -259,14 +269,20 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.MoveIn['blnGenerateDocuments'] = true;
     this.makeAReservationSubscribe$ = this.moveInService.moveIn(strAccessCode)
       .subscribe(strConfirmationResponse => {
-        this.strAccessCode = strConfirmationResponse.strAccessCode;
-        this.submitted = false;
-        this.tokenExit = localStorage.getItem('strTenantToken');
-        this.existTempToken = localStorage.getItem('strTempTenantToken');
-        if (this.existTempToken) {
-          localStorage.removeItem('strTempTenantToken');
+
+        if (strConfirmationResponse.intErrorCode === 1) {
+          this.strAccessCode = strConfirmationResponse.strAccessCode;
+
+          this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
+          this.submitted = false;
+          this.tokenExit = localStorage.getItem('strTenantToken');
+          this.existTempToken = localStorage.getItem('strTempTenantToken');
+          if (this.existTempToken) {
+            localStorage.removeItem('strTempTenantToken');
+          }
+          this.reservationInProgress = false;
+          this.router.navigate([`${this.navTo}/thank-you`]);
         }
-        this.reservationInProgress = false;
       }, (err: any) => {
         if (err.status === 403) {
           this.showConfirmation = false;

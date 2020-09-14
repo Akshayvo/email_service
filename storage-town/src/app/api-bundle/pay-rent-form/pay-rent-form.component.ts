@@ -577,8 +577,9 @@ public navigateToPrevious() {
   this.reservationInProgress = true;
   this.makeAReservationSubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
     .subscribe(strConfirmationResponse => {
-      this.strConfirmation = strConfirmationResponse.strConfirmation;
-      this.showConfirmation = false;
+      if (strConfirmationResponse.intErrorCode === 1) {
+        this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
+        this.showConfirmation = false;
       this.makePaymentForUnit = false;
       this.submitted = false;
        this.tokenExit = localStorage.getItem('strTenantToken');
@@ -594,6 +595,10 @@ public navigateToPrevious() {
         this.tokenRemoved = true;
       }
       this.reservationInProgress = false;
+      
+      this.router.navigate([`${this.navTo}/thank-you`]);
+
+    }
     }, (err: any) => {
       if (err.status === 403) {
 
@@ -619,9 +624,10 @@ public navigateToPrevious() {
     this.MoveIn.dteMoveIn = this.convertDate(new Date());
     this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
       .subscribe(strConfirmationResponse => {
-        this.strAccessCode = strConfirmationResponse.strAccessCode;
+        this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
         if (strConfirmationResponse.intErrorCode === 1  ) {
           this.makePaymentForUnit = false;
+          this.router.navigate([`${this.navTo}/thank-you`]);
         } else {
           this.makePaymentForUnit = true;
         }

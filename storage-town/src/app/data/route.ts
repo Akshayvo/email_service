@@ -38,6 +38,7 @@ import { ReserveUnitComponent } from '../reserve-unit/reserve-unit.component';
 import { StorageUnitComponent } from '../storage-unit/storage-unit.component';
 import { PaymentComponent } from '../api-bundle/payment/payment.component';
 import { PaymentIframeComponent } from '../payment-iframe/payment-iframe.component';
+import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
@@ -54,6 +55,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent }
           ]
         },
         { path: 'unit-sizer', component: UnitSizerComponent },
@@ -98,6 +100,8 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent }
+
           ]
         },
         { path: 'unit-sizer', component: UnitSizerComponent },
@@ -142,6 +146,8 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent }
+
           ]
         },
         { path: 'unit-sizer', component: UnitSizerComponent },
@@ -198,6 +204,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent }
           ]
         },
         { path: 'moveIn', component: ReserveComponent,
