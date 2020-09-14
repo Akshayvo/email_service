@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   appId: 'SouthernStorage',
