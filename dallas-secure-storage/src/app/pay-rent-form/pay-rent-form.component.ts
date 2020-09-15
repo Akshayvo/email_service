@@ -259,7 +259,10 @@ public navigateToPrevious() {
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
-    this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
+    if (this.lstPayTypes && this.lstPayTypes.length > 0) {
+      if (!!index) {
+        this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
+      }
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.payRentForm.patchValue({
       objPayment: {
@@ -268,6 +271,7 @@ public navigateToPrevious() {
         }
       }
     });
+  }
 
 
     if ( this.showInput) {
@@ -348,7 +352,7 @@ public navigateToPrevious() {
             this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[1].PayTypeDescription);
 
             const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
-
+            if (!!index) {
              // tslint:disable-next-line: max-line-length
              const defaultCardPayTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
 
@@ -365,6 +369,7 @@ public navigateToPrevious() {
               }
             });
           }
+        }
 
           this.payRentForm.patchValue({
             objPayment: {
@@ -464,7 +469,7 @@ public navigateToPrevious() {
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
         this.showloaderForPayment = false;
-        if (!!paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
+        if (paymentDataResponse && paymentDataResponse.PayTypeForResult && paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
           this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
         }
         this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
