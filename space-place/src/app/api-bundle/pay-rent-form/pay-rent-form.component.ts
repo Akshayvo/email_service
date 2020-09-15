@@ -244,6 +244,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   autoCardType(number: any) {
    this.cardType = this.getCardType(number.target.value);
    const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.cardType);
+   if (!!index) {
    // tslint:disable-next-line: max-line-length
    const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
    this.paytypeid =  cardTypeId;
@@ -256,6 +257,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
        }
      }
    });
+  }
   }
 
    getCardType(number: any) {
@@ -294,7 +296,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
     if (this.lstPayTypes && this.lstPayTypes.length > 0) {
-    this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
+      if (!!index) {
+        this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
+      }
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.payRentForm.patchValue({
       objPayment: {
@@ -377,6 +381,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         // tslint:disable-next-line: max-line-length
           this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[0].PayTypeDescription);
           const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
+          if (!!index) {
           // tslint:disable-next-line: max-line-length
           const defaultCardPayTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
 
@@ -392,6 +397,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               }
             });
           }
+        }
 
           this.payRentForm.patchValue({
             objPayment: {
@@ -502,7 +508,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
         this.showloaderForPayment = false;
-        this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
+        if ( paymentDataResponse && paymentDataResponse.PayTypeForResult && paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
+          this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
+        }
         this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         if ( paymentDataResponse.intErrorCode === 1 ) {
           this.makePaymentForUnit = false;
