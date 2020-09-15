@@ -8,23 +8,20 @@ export const viewRatesPageContent = `Our units range from closet sized 5'x5' uni
 We strive to provide the highest level of service at the best prices!`;
 
 
-export const reservePageTitle = `Reserve A Storage Unit Near Catskill, NY | 12414 - Catskill Self Storage`;
-export const reservePageContent = `Current description works fine.`;
+export const reservePageTitle = `Reserve Your Unit | Mohawk Self Storage`;
+export const reservePageContent = `Are you ready to reserve a unit at Mohawk Self Storage? Use our handy form to send us your information, and one of our staff will reach out shortly!`;
 
-export const payRentPageTitle = `Pay Your Rent Online | Catskill Self Storage, Catskill, NY, 12414 `;
-export const payRentPageContent = `We make it easy for you to pay your rent and check your balance online, 24/7.
-Simply login with the credentials supplied by our office to gain access!`;
-
-
-export const storageTipsTitle = `Self Storage Tips | Catskill Self Storage, Catskill, NY, 12414`;
-export const storageTipsContent = `We know moving can be stressful, let our helpful hints and tips make your experience that much easier.
-Use this tips to save yourself time and frustration!`;
+export const payRentPageTitle = `Pay Rent | Mohawk Self Storage`;
+export const payRentPageContent = `Pay your rent 24 hours a day with our easy online tenant portal. Follow the instructions `;
 
 
-export const unitSizerPageTitle = `Unit Sizer | Catskill Self Storage, Catskill, NY, 12414`;
+export const storageTipsTitle = ``;
+export const storageTipsContent = ``;
+
+
+export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
 
 
-export const contactPageTitle = `Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414`;
-export const contactPageContent = `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
-and U-Haul truck rental questions! Simply call or drop us a line!`;
+export const contactPageTitle = ``;
+export const contactPageContent = ``;

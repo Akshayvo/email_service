@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
+  production: true,
   type: 0,  // { API: 0, iframe: 1 }
   alternateTenant: `navigateToMoveIn`, // {0, 1, navigateToReserve, navigateToMoveIn},
   paymentPageType: 0, // { withoutTab: 0, withTab: 1}
@@ -13,6 +13,5 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: '',
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
-
+  APIKey: `XjF7M0Y3VzZHOEk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Mohawk 13768
 };

@@ -1,18 +1,17 @@
 import { NgtUniversalModule } from '@ng-toolkit/universal';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
-
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewRatesComponent } from './view-rates/view-rates.component';
+import { ViewRatesComponent as ViewRates} from './api-bundle/view-rates/view-rates.component';
 import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
 import { AccordionComponent } from './accordion/accordion.component';
@@ -24,6 +23,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
+import { PayRentComponent as pay } from './pay-rent/pay-rent.component';
 import { PhotosComponent } from './photos/photos.component';
 import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
@@ -38,15 +38,32 @@ import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
 import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { LoginModalComponent } from './api-bundle/login-modal/login-modal.component';
-
+import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './modules/material/material.module';
+import { AuthService } from './api-bundle/services/auth.service';
+import { AuthGuard } from './auth-guard/auth.gurad';
+import { VerifictionCodeGuard } from './auth-guard/verificationCode.guard';
+import { CanDeactivateGuard } from './preventRouteChange.guard';
+import { SelectDropDownModule } from 'ngx-select-dropdown';
+import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
+import { ReserveComponent } from './api-bundle/reserve/reserve.component';
+import { ReserveUnitFormComponent } from './api-bundle/reserve-unit-form/reserve-unit-form.component';
+import { ScriptHackComponent } from './script-hack/script-hack.component';
+import { PaymentComponent } from './api-bundle/payment/payment.component';
+import { AlternateDetailsReservationFormComponent } from './api-bundle/alternate-details-reservation-form/alternate-details-reservation-form.component';
+import { ViewRatesPageComponent } from './api-bundle/view-rates-page/view-rates-page.component';
+import { ConfirmationDataComponent } from './api-bundle/confirmation-data/confirmation-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    pay,
     HeaderComponent,
     HomeComponent,
     ContactComponent,
     FooterComponent,
+    ViewRates,
     ViewRatesComponent,
     TablesComponent,
     ErrorComponent,
@@ -61,14 +78,22 @@ import { LoginModalComponent } from './api-bundle/login-modal/login-modal.compon
     RentSubComponent,
     LoginComponent,
     ForgotPasswordComponent,
+    ReserveComponent,
+    ReserveUnitFormComponent,
     ChangePasswordComponent,
+    ScriptHackComponent,
+    PaymentComponent,
+    AlternateDetailsReservationFormComponent,
+    ViewRatesPageComponent,
     PayRentFormComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
     SignUpComponent,
     AutoPayComponent,
     TabsComponent,
-    LoginModalComponent
+    LoginModalComponent,
+    ConfirmationPageComponent,
+    ConfirmationDataComponent
   ],
   imports: [
     CommonModule,
@@ -79,9 +104,17 @@ import { LoginModalComponent } from './api-bundle/login-modal/login-modal.compon
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    SelectDropDownModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [
+    DatePipe,
+    AuthService,
+    AuthGuard,
+    VerifictionCodeGuard,
     Title,
+    CanDeactivateGuard,
     {
       provide: ErrorHandler,
       useClass: ErrorHandlerService
@@ -92,7 +125,12 @@ import { LoginModalComponent } from './api-bundle/login-modal/login-modal.compon
       useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
           window.location.href = (route.data as any).externalUrl;
       }
-    }
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: RequestInterceptorService,
+      multi: true
+    },
   ],
   bootstrap: [AppComponent],
 })

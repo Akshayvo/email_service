@@ -134,6 +134,7 @@ export class LoginComponent implements OnInit, OnDestroy {
               this.router.navigate(['/pay-rent/sign-up/auto-pay']);
             } else {
               this.router.navigate(['/pay-rent/payment']);
+              
             }
           }
         }, (err) => {
