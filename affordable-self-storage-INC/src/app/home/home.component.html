@@ -112,7 +112,7 @@
 
               <!-- The slides to show -->
               <div class="carousel-inner">
-                <div class="carousel-item" [ngClass]="{'active': i === 1}" *ngFor="let testimonial of carouselData; index as i">
+                <div class="carousel-item" [ngClass]="{'active': i === 0}" *ngFor="let testimonial of carouselData; index as i">
                   <p>{{testimonial.p}}</p>
                   <p>{{testimonial.author}}</p>
                 </div>
