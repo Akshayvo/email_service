@@ -47,7 +47,7 @@ a {
   .nav-link {
     color: $white;
     font-weight: 600;
-    padding: 18px;
+    padding: 9px;
   }
 
   .nav-link:hover {
@@ -85,8 +85,9 @@ a {
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   .navbar {
     .nav-item {
-      padding-left: 0.4rem!important;
-      padding-right: 0.4rem!important;
+      padding-left: 0.3rem!important;
+      padding-right: 0.3rem!important;
+      font-size: 0.9rem;
     }
     .nav-link {
       padding: 4px;
@@ -101,6 +102,8 @@ a {
 
   .nav-link {
     text-align: center;
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
   }
 
   .navbar-nav {
@@ -116,5 +119,11 @@ a {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  img {
+    width: 215px;
   }
 }

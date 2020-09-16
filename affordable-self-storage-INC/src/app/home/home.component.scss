@@ -7,6 +7,10 @@
   height: 15px;
 }
 
+.carousel-indicators .active {
+  background-color: #1e6047;
+}
+
 .carousel-item {
   height: 300px;
 }
@@ -660,5 +664,11 @@ h1 {
     .jumbotorn-button {
       padding: 15px;
     }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .carousel-item {
+    height: 575px;
   }
 }

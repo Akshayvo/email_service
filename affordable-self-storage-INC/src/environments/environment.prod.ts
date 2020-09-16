@@ -6,9 +6,9 @@ export const environment = {
   errorsMails: ['website.dev@codeparva.in'],
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   senderEmail: 'errors@codeparva.in',
-  appId: 'Driftwood Village Self Storage - Production',
+  appId: 'Affordable Self Storage INC - Production',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  APIKey: `dTJXNkQ2UDRINE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Driftwood Village
+  APIKey: `dzF0NVcxSjJOOjIyfCU4Nzg3NyQoOD1iVzBzaGRkOWtlb2NeTg==`, // Affordable self storage INC 1512
   websiteUrl: ''
 };
