@@ -1,0 +1,158 @@
+@import "../../../styles.scss";
+
+.checkbox-style {
+  display: flex;
+  align-items: baseline;
+}
+
+
+.display-expiration-date {
+  display: flex;
+}
+
+.readonly-form-control {
+  .form-control {
+    background-color: white;
+  }
+}
+
+.display-surcharge {
+  display: none;
+}
+
+table {
+  width: -webkit-fill-available;
+}
+
+.table {
+  overflow-x: auto;
+}
+
+.modal-position {
+  position: absolute;
+  left: 260px;
+}
+
+.modal {
+  td {
+    th {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.modal-dialog {
+  max-width: 650px;
+  margin: 1.75rem auto;
+}
+
+.display {
+  display: flex;
+}
+
+.payRent {
+  h2 {
+    border-bottom: 1px solid black;
+  }
+}
+
+.button-style {
+  button {
+    min-width: 140px;
+    font-size: 0.9rem;
+  }
+}
+
+.custom-style {
+  width: 86px;
+}
+
+
+.display-none {
+  display: none;
+}
+
+.modal-custom-style {
+  .btn {
+    display: contents;
+  }
+
+  .btn-link {
+    padding: 0;
+    text-decoration: underline;
+  }
+}
+
+.custom-balance-width {
+  min-width: 100px;
+}
+
+.loader {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid $secondary;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  left: 195px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  z-index: 1;
+  margin-top: 3px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loaderForPayment {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid $secondary;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  left: 195px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+}
+
+.go-to-home {
+  a {
+    text-decoration: underline;
+    color: $secondary;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .btn-link {
+    font-size: 0.7rem;
+  }
+
+  .modal-position {
+    left: 240px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .rent-holder {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .modal {
+    td {
+      th {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .modal-dialog {
+    max-width: 650px;
+    margin: 1.75rem auto;
+  }
+}

@@ -1,0 +1,17 @@
+
+<div class="container px-0">
+  <div class="grid text-center mx-0 horizontal-scroll-wrapper tab">
+    <span *ngFor="let tab of tabData" class="grid-item" >
+      <span>
+        <a 
+        class="px-3 py-2 btn" 
+        [routerLinkActive]="'tab-active'" 
+          [routerLink]="tab?.path" 
+          [routerLinkActiveOptions]="{exact: true}"
+        >{{tab.name}}</a>
+      </span>
+    </span>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
