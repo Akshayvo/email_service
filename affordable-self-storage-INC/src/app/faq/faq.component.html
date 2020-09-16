@@ -9,7 +9,7 @@
         <ol>
           <li *ngFor="let faq of faq">
             <h2><strong>{{faq.h2}}</strong></h2>
-            <p>{{faq.paragraph}}</p>
+            <p [innerHTML]="faq.paragraph"></p>
           </li>
         </ol>
       </div>

@@ -2,21 +2,21 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '1545 Grass Valley Hwy #49, Auburn, CA 95603',
+        data: '1337 NJ-179, Lambertville, NJ 08530',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 1,
         label: 'Email:',
-        redirect: 'mailto:driftwoodvillage@rcmi.com',
-        data: 'driftwoodvillage@rcmi.com',
+        redirect: 'mailto:affordableselfstoragenj@gmail.com',
+        data: 'affordableselfstoragenj@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
         id: 2,
-        redirect: 'tel:5308852690',
+        redirect: 'tel:6093976397',
         label: 'Phone:',
-        data: '(530) 885-2690',
+        data: '(609) 397-6397',
         class: 'fas fa-phone mx-2 iconColor',
     }
 ];
@@ -24,7 +24,11 @@ export const contact = [
 export const hours = [
     {
         label: 'Monday to Friday: ',
-        data: '8:00AM - 4:30PM'
+        data: '9:00AM to 2:00PM'
+    },
+    {
+        label: 'After Hours: ',
+        data: 'By Appointment'
     },
     {
         label: 'Saturday and Sunday: ',
@@ -32,19 +36,19 @@ export const hours = [
     },
     {
         label: 'Access Hours: ',
-        data: '7 Days a Week 6:00AM - 9:00PM'
+        data: '24 Hours a Day 7 Days a Week'
     }
 ];
 
 export const socialLinks = [
-    // {
-    //     label: 'twitter',
-    //     path: '',
-    //     class: 'fab fa-twitter-square',
-    // },
-    // {
-    //     label: 'facebook',
-    //     path: '',
-    //     class: 'fab fa-facebook-square',
-    // },
+    {
+        label: 'instagram',
+        path: 'https://www.instagram.com/affordableselfstoragenj',
+        class: 'fab fa-instagram',
+    },
+    {
+        label: 'facebook',
+        path: 'https://www.facebook.com/AffordableSelfStorageNJ',
+        class: 'fab fa-facebook-square',
+    },
 ];

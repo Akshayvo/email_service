@@ -2,15 +2,14 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Driftwood Village Self Storage is a locally owned & operated self storage and RV parking
-      facility on the north side of Auburn, CA. We have proudly served our friends and neighbors since
-      1965 with well-maintained, affordable self storage units backed by amazing customer service!`,
+      p: `Take a moment to review our online rates and availability, then reserve your unit in seconds
+      with our online reservation form! Not sure what size you need? Use our Unit Sizer page to figure
+      out what fits into what unit! Once you’ve reserved your unit, one of our friendly on-call managers
+      will reach out to confirm your details! `,
     },
     {
-      p: `Our on-site management team can't wait to meet you and make your next self storage project
-      an easy and hassle-free one! Take a moment to review our availability, then reserve your unit online,
-      or call our offices to speak with one of our on-site managers! We look forward to helping you reclaim
-      that space around the home, office, or worksite. `
+      p: `Need more information before reserving? Give us a call today, and let us wow you with our awesome
+      customer service! We look forward to making your storage experience a convenient one! `
     }
 ];
 

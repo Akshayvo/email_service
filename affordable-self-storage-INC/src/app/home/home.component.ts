@@ -10,6 +10,7 @@ import { homePageTitle, homePageContent } from '../data/title';
 import { objSIMSetting } from '../data/configuration';
 import { environment } from '../../environments/environment';
 import { script } from '../data/script';
+import { carouselData } from '../data/carousel';
 
 @Component({
   selector: 'app-home',
@@ -39,6 +40,7 @@ export class HomeComponent implements OnInit {
   objSIMSetting: any;
   template: string;
   script: any;
+  carouselData: any;
 
   constructor(
     private router: Router,
@@ -89,6 +91,7 @@ export class HomeComponent implements OnInit {
 
   public fetchContactDetails() {
     this.contactDetails = contact;
+    this.carouselData = carouselData;
   }
 
   public fetchHours() {

@@ -29,12 +29,12 @@ $driftwood-theme: mat-light-theme($driftwood-primary, $driftwood-accent, $driftw
 /* You can add global styles to this file, and also import other style files */
 
 //Basic color and font styles
-$primary: #0055C0;
-$primaryDark: #02234b;
+$primary: #1e6047;
+$primaryDark: #03291a;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
-$secondary: #C06B00;
+$secondary: #601E37;
 
 $dark: #333;
 $light: #efefef;
@@ -60,7 +60,7 @@ body {
 
 // Different Background colors
 .bg-primary {
-  background: $primary;
+  background: $primary !important;
 }
 
 .bg-secondary {

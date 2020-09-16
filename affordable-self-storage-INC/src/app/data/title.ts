@@ -1,35 +1,35 @@
-export const  homePageTitle = `Affordable Self Storage Units & RV Parking in Auburn, CA`;
-export const homePageContent = `Driftwood Village Self Storage serves Auburn and the surrounding communities with a
-variety of well-maintained and affordable self storage units`;
+export const  homePageTitle = `Self Storage Units in Lambertville In Lambertville`;
+export const homePageContent = `Affordable Self Storage, INC. offers convenient 24/7 access to your belongings,
+online payments and a variety of unit sizes for all of your self storage needs.`;
 
 
-export const viewRatesPageTitle = `View Rates  | Driftwood Village Self Storage`;
-export const viewRatesPageContent = `Take a moment to view our affordable self storage unit rates, then make your
-reservation by filling out our form or calling our office today!`;
+export const viewRatesPageTitle = `View Rates  | Affordable Self Storage, INC.`;
+export const viewRatesPageContent = `Review our current rates and availability, then reserve your unit in
+minutes with our easy online reservation form!`;
 
 
-export const reservePageTitle = `Reserve a Unit | Driftwood Village Self Storage`;
-export const reservePageContent = `Ready to reserve your unit at Driftwood Village Self Storage? Click here to begin
-storing with Auburn's premier self storage facility!`;
+export const reservePageTitle = `Reserve a Unit | Sample Self Storage - North`;
+export const reservePageContent = `Ready to reserve your unit at Affordable Self Storage, INC.? Click here
+to begin storing with Lambertville's premier self storage facility!`;
 
-export const payRentPageTitle = `Pay Rent  | Driftwood Village Self Storage`;
-export const payRentPageContent = `Take a moment to review our easy login instructions, or call our friendly management
-team and start paying your rent online 24 hours a day!`;
-
-
-export const storageTipsTitle = `Storage Tips  | Driftwood Village Self Storage`;
-export const storageTipsContent = `Follow these easy self storage tips to make your stay with Driftwood Village Self
-Storage a breeze! Have questions? Call (530) 885-2690, today!`;
+export const payRentPageTitle = `Pay Rent  | Affordable Self Storage, INC.`;
+export const payRentPageContent = `Simply follow the on-page instructions, or call one of our friendly
+management professionals to learn how to access your account, today!`;
 
 
-export const unitSizerPageTitle = `Unit Sizer  | Driftwood Village Self Storage`;
-export const unitSizerPageContent = `Are you not sure what size unit you require? Use this guide to help you figure
-out what fits inside the units offered at Driftwood Village Self Storage!`;
+export const storageTipsTitle = `Storage Tips  | Sample Self Storage - North`;
+export const storageTipsContent = `We know self storage, so use our knowledge and take this list of
+Storage Tips to make your stay with us even more convenient!`;
 
 
-export const contactPageTitle = `Contact Us  | Driftwood Village Self Storage`;
-export const contactPageContent = `Do you have a question about your account, or our self storage, boat and
-recreational vehicle storage? Use our contact form, or call us today!`;
+export const unitSizerPageTitle = `Unit Sizer  | Affordable Self Storage, INC.`;
+export const unitSizerPageContent = `Not sure what sized unit you need? Use our handy chart to
+determine what unit will fit your belongings!`;
 
-export const faqPageTitle = `Frequently Asked Questions | Self Storage of Wis Dells`;
-export const faqPagecontent = ``;
+
+export const contactPageTitle = `Contact Us  | Affordable Self Storage, INC.`;
+export const contactPageContent = `If you have questions about your account or the services we offer,
+take a moment to fill our out form, or use the contact information to speak with us!`;
+
+export const faqPageTitle = `Frequently Asked Questions | Affordable Self Storage, INC.`;
+export const faqPagecontent = `Have some questions about the services at Affordable Self Storage, INC.? Check out our FAQ page!`;

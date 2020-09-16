@@ -83,7 +83,7 @@ import { FaqComponent } from '../faq/faq.component';
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: ''
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJk4cAjwX5w4kRPBmVEo2UOCI'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -105,7 +105,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: ''
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJk4cAjwX5w4kRPBmVEo2UOCI'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },

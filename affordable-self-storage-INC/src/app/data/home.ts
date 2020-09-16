@@ -8,51 +8,54 @@ export const featuresList = [
         td2: 'Well-Lit Facility'
     },
     {
-        td1: 'Auto-Pay Available',
-        td2: 'Friendly Customer Service'
+        td1: 'Drive-Up Units',
+        td2: 'Auto-Pay Available'
+    },
+    {
+        td1: 'Friendly Customer Service',
+        td2: 'Fully-Paved Facility'
     },
     {
         td1: 'Pin-Pad Activated Security Gate',
-        td2: 'Recreational Vehicle Storage'
+        td2: 'Affordable Rates'
     },
     {
-        td1: 'Boat Storage',
+        td1: 'Climate-Controlled Units Available',
+        td2: 'Fully-Fenced Facility'
     }
 ];
 
 export const aboutUsAlt = `aboutUsAlt`;
 
-export const aboutUsHeading = `Storage Units and RV Parking in Auburn, CA`;
+export const aboutUsHeading = `Affordable Self Storage in Lambertville`;
 
 export const aboutUs = [
     {
-        p: `Driftwood Village Self Storage has been providing professionally managed self storage
-        and recreational vehicle parking to Auburn, Elders Corner, Newcastle, and the surrounding
-        communities since 1965. Our decades of on-site management experience make Driftwood Village
-        Self Storage the ideal solution for your next self storage project! `,
+        p: `At Affordable Self Storage, INC. it is our mission to offer the communities we serve an excellent
+        self storage experience by providing secure, clean, and well maintained regular or climate controlled
+        storage units. We take pride in being family owned and operated, and we are always willing to go the
+        extra mile to provide our customers with unparalleled support throughout their stay with us.`,
     },
     {
-        p: `We are conveniently located at the intersection of Live Oak Lane and Grass Valley Highway
-        to make accessing your recreational vehicle or storage unit easy. We offer extended access hours to our
-        well-lit facility 7 days a week from 6:00AM to 10:00PM to make sure you can reach your
-        belongings whenever you need them.`,
+        p: `Since 1998, the staff at Affordable Self Storage, INC. constantly goes above and beyond to make our
+        customers’ stay an easy one. That’s why we offer a number of amenities and services to make your stay with
+        us a breeze. After you complete the rental process with our friendly on-call staff, you’ll have access to
+        your unit in our well-maintained grounds 24-7 through our keypad secured access gate.`,
     },
     {
-        p: `Our customers range from residential users looking for an extra closet's worth of storage
-        space to local businesses that recognize the value of not paying commercial real estate prices
-        for storage space. We've made sure that our wide paved parking lanes provide ample room to
-        maneuver your RV or camper into its spot when coming and going. `,
+        p: `Our fully-fenced facility is well-lit, and security cameras are placed throughout to ensure a sense of
+        safety and security. We also offer online account access, and automatic payment capabilities. You can even
+        request moving supplies during the rental process!`,
     },
     {
-        p: `Take a moment and check out our available inventory on our View Rates page, then place your
-        reservation in seconds on our website, or call one of our on-site managers to learn more! We
-        can't wait to make your next storage project a hassle-free one!`,
+        p: `As a locally owned and operated company, we strive to foster good relationships with our business and
+        residential customers. We look forward to meeting you, and showing you how Affordable Self Storage,  INC.
+        can be your next storage space solution!`,
     },
 ];
 
-export const gettingStarted = `Are you ready to start de-cluttering your home, office, or worksite? How
-about freeing up space in your yard by parking your RV off-site? Take a moment and review our availability,
-then reserve online, or give our friendly team a call!`;
+export const gettingStarted = `Are you ready to start de-cluttering your home, office, or worksite? Let Affordable
+Self Storage, INC make your next storage project a breeze! Click below to check out our rates and availability!`;
 
 export const feature = [
     {
@@ -63,15 +66,15 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
-        label: 'Stellar Customer Service',
-        alt: 'Customer Service Representative Icon'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg`,
+        label: '24 Hour Facility Access',
+        alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/fence.svg`,
-        label: 'Fully-Fenced Facility',
-        alt: 'Icon of a section of fencing'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg`,
+        label: 'Climate Controlled',
+        alt: 'Icon of thermometer indicating climate-controlled units'
 
     },
     {
@@ -84,11 +87,10 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h1: `Storage Units & RV Parking in Auburn, CA`,
-        blurb: `Driftwood Village Self Storage has served Auburn and the surrounding communities with
-        affordable self storage and RV parking since 1965. We combine decades of experience professionally
-        managing self storage and parking services with the modern amenities that make your stay with
-        us easy and hassle free! Check  our availability and pricing, then reserve your unit online in
-        seconds, or call our friendly management team today!`,
+        h1: `Affordable Self Storage Units in Lambertville`,
+        blurb: `Since 1998 Affordable Self Storage, INC. has been providing Lambertville, Stockton, New Hope,
+        and the surrounding communities with high-quality self storage, and awesome customer service! Whether
+        you're in the middle of a move, a renovation, or are a growing business looking for some extra storage
+        space, we're your self storage solution!`,
     }
 ];
