@@ -1,12 +1,15 @@
 @import "../../styles.scss";
 
-.carousel-indicators li {
+/*.carousel-indicators li {
   background-color: black;
   border-radius: 50%;
   width: 15px;
   height: 15px;
-}
+}*/
 
+.carousel-indicators .active {
+    background-color: #4e4e4e;
+}
 .carousel-item {
   height: 300px;
 }
