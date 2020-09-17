@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://https://rock-lake.netlify.app/sitemap.xml
+Sitemap: https://rocklakestorage.com/sitemap.xml
 User-agent: *
 Disallow:
