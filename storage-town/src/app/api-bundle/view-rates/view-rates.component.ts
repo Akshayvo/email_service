@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { headingLocation1, headingLocation2, headingLocation3, headingLocation4  } from '../../data/location';
 @Component({
   selector: 'app-view-rates',
@@ -12,7 +12,8 @@ export class ViewRatesComponent implements OnInit {
   tabs: any;
   heading: string;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+    ) { }
 
   ngOnInit() {
     this.isSomePage();

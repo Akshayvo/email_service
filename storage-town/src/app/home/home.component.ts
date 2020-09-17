@@ -4,6 +4,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
   contactsLocation3, contactsLocation4, hoursLocation3, hoursLocation4, } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
+import { CanonicalService } from '../services/canonical.service';
 import { LocationService } from '../services/location.service';
 
 @Component({
@@ -23,8 +24,10 @@ export class HomeComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
-    private data: LocationService
+    private data: LocationService,
+    private canonical: CanonicalService
   ) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `We offer a wide range of self storage, car, RV and boat storage!

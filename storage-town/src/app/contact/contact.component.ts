@@ -8,6 +8,7 @@ import { contactsLocation1, hoursLocation1,
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-contact',
@@ -40,8 +41,11 @@ export class ContactComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     private formBuilder: FormBuilder,
-    private data: LocationService
+    private data: LocationService,
+    private canonical: CanonicalService
+
   ) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Want to reserve a unit or find information about your account? Use our contact

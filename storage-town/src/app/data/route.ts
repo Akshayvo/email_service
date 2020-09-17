@@ -68,6 +68,8 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent }
+
           ]
         },
         { path: 'moveIn', component: ReserveComponent,
@@ -79,6 +81,8 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent }
+
           ]
         },
         // { path: 'photos', component: PhotosComponent },
@@ -114,6 +118,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent }
           ]
         },
         { path: 'moveIn', component: ReserveComponent,
@@ -125,6 +130,8 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent }
+
           ]
         },
         // { path: 'photos', component: PhotosComponent },
@@ -160,6 +167,8 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent }
+
           ]
         },
         { path: 'moveIn', component: ReserveComponent,
@@ -171,6 +180,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent }
           ]
         },
         // { path: 'photos', component: PhotosComponent },
@@ -192,6 +202,8 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent }
+
           ]
         },
         { path: 'unit-sizer', component: UnitSizerComponent },
@@ -216,6 +228,8 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent }
+
           ]
         },
         // { path: 'photos', component: PhotosComponent },

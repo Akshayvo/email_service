@@ -9,6 +9,7 @@ import { headingLocation1, headingLocation2 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
+import { CanonicalService } from '../services/canonical.service';
 
 
 @Component({
@@ -33,8 +34,10 @@ export class LocationComponent implements OnInit {
     private router: Router,
     private titleService: Title,
     private dataSharingService: DataSharingService,
+    private canonical: CanonicalService
     ) {
       if (this.router.url.includes('/location/andrews')) {
+        this.canonical.create();
             this.meta.addTag({
               name: 'description',
               content: `Our Florida/Warwick location has a variety of unit sizes and all storage units
@@ -43,6 +46,7 @@ export class LocationComponent implements OnInit {
             this.titleService.setTitle('Storage Units in Chester, NY | StorageTown Rental Spaces');
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
     } else if (this.router.url.includes('/location/chester')) {
+      this.canonical.create();
            this.meta.addTag({
              name: 'description',
              content: `Our Chester location offers a variety of well-lit, fully-fenced self
@@ -51,6 +55,7 @@ export class LocationComponent implements OnInit {
            this.titleService.setTitle('Self Storage Units in Chester | StorageTown Rental Spaces');
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       } else if (this.router.url.includes('/location/montgomery-walden')) {
+        this.canonical.create();
         this.meta.addTag({
           name: 'description',
           content: `Our Montgomery location offers a wide variety of affordable self storage units in a well-lit,
@@ -59,6 +64,7 @@ export class LocationComponent implements OnInit {
         this.titleService.setTitle('Storage Units in Montgomery, NY | StorageTown Rental Spaces');
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
    } else if (this.router.url.includes('/location/middletown-wallKill')) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable,
