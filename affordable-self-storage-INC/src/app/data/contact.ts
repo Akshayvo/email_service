@@ -27,18 +27,21 @@ export const hours = [
         data: '9:00AM to 2:00PM'
     },
     {
-        label: 'After Hours: ',
-        data: 'By Appointment'
-    },
-    {
         label: 'Saturday and Sunday: ',
         data: 'CLOSED'
     },
     {
+        label: 'Outside of Regular Hours: ',
+        data: 'By Appointment'
+    },
+];
+
+export const accessHours = [
+    {
         label: 'Access Hours: ',
         data: '24 Hours a Day 7 Days a Week'
     }
-];
+]
 
 export const socialLinks = [
     {

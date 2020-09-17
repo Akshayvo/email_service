@@ -1,7 +1,7 @@
 <app-script-hack type="application/ld+json">
   {{script | json}}
  </app-script-hack>
-<div class="">
+<!-- <div class=""> -->
   <div class="jumbotron-container">
     <div class="jumbotron-top">
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
@@ -16,8 +16,8 @@
           <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button">
-            <a class="btn btn-lg btn-primary viewRatesbtn" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a></div>
+            <a href="tel:6093976397" class="btn btn-lg btn-primary viewRatesbtn"  role="button">Call Today!</a></div>
+            <!-- <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a> -->
           </div>
         </div>
       </div>
@@ -30,6 +30,20 @@
               <h6 class="feature-text">{{feature.label}}</h6>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout1">
+    <div class="climate-control">
+      <div class="container">
+        <div class="section py-5 m-0">
+          <div class="row">
+            <div class="col-md-12 py-3">
+             <p class="m-0">Climate Controlled Storage Coming Soon!<br> Available Spring 2021!</p>
+            </div>
+          </div>
+        </div>  
       </div>
     </div>
   </div>
@@ -53,11 +67,14 @@
                   <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                 </span>
               </p>
-              <b>Hours:</b>
+              <b>Office Hours:</b>
               <p>
                 <span *ngFor="let hour of hours">
                   <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
-                </span>
+                </span><br>
+                <span *ngFor="let hour of accessHours">
+                    <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+                  </span>
               </p>
             </div>
             <div>
@@ -70,13 +87,14 @@
   </div>
   <div class="container">
     <div class="section py-5 m-0">
+      <h1 class="heading pb-4 text-center">{{aboutUsHeading}}</h1>
       <div class="row">
         <div class="col-lg-6 py-3">
           <!-- <img src="{{imageBaseUrl}}/outdoor-self-storage-units.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
           <app-photos></app-photos>
         </div>
         <div class="col-lg-6 py-3">
-          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
+          <h2>About Us</h2>
           <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
         </div>
       </div>
@@ -112,6 +130,7 @@
                     <p>{{testimonial.author}}</p>
                   </div>
                 </div>
+                
   
                 <!--  Controls (Left and right) -->
                 <!-- <a class="carousel-control-prev" href="#bootstrapCarousel" data-slide="prev">
@@ -125,6 +144,7 @@
           </div>
         </div>
       </div>
+    </div>
   <!--Testimonial section-->
 
 
@@ -136,11 +156,11 @@
           <div class="col-md-12 py-3">
             <h2 class="heading pb-4">Getting Started</h2>
             <p class="pb-4">{{gettingStarted}}</p>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit Now!</a>
+            <a href="tel:6093976397" class="btn btn-lg btn-primary"  role="button">Call Today!</a>
           </div>
         </div>
       </div>
     </div>
   </div>
   </div>
-</div> 
+<!-- </div> -->

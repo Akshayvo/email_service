@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { contact, hours } from '../data/contact';
+import { contact, hours, accessHours } from '../data/contact';
 import { EmailService } from '../services/email.service';
 import { MetaService } from '../services/link.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
@@ -31,6 +31,7 @@ export class ContactComponent implements OnInit {
   contactPageTitle: string;
   contactPageContent: string;
   contactHeading: string;
+  accessHours: any;
 
   constructor(
     private router: Router,
@@ -83,6 +84,7 @@ export class ContactComponent implements OnInit {
 
   public fetchHours() {
     this.hours = hours;
+    this.accessHours = accessHours;
   }
 
 

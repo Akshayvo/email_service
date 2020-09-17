@@ -89,11 +89,14 @@
             <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
           </span>
         </p>
-        <b>Hours:</b>
+        <b>Office Hours:</b>
         <p>
           <span *ngFor="let hour of hours">
             <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
-          </span>
+          </span><br>
+          <span *ngFor="let hour of accessHours">
+              <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+            </span>
         </p>
       </div>
     </div>

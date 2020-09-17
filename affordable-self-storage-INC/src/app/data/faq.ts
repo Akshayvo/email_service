@@ -25,11 +25,11 @@ export const faq = [
     },
     {
         h2: `When can I move in? `,
-        paragraph: `As there is availability, you can move in any time after the rental agreement paperwork is complete. The rental agreement paperwork can be completed during office hours or electronically through email. *(We can add that it can also be completed on our website AFTER the site is up and running) `
+        paragraph: `As there is availability, you can move in any time after the rental agreement paperwork is complete. The rental agreement paperwork can be completed during office hours or electronically through email.`
     },
     {
         h2: `How much storage space will I need? `,
-        paragraph: `You can either look at our storage space descriptions on our website or call our management for assistance. *(Look at the storage space calculator on the website / call management for assistance) `
+        paragraph: `You can either look at our storage space descriptions on our website or call our management for assistance.`
     },
     {
         h2: `How long is the rental period? `,
@@ -47,6 +47,6 @@ export const faq = [
         h2: `What forms of payment do you accept?`,
         paragraph: `Cash, checks, and money orders<br>
         ACH Payments<br>
-        Visa, MasterCard, American Express *(Discover ... can be added after we are integrated with WorldPay`
+        Visa, MasterCard, American Express `
     },
 ];

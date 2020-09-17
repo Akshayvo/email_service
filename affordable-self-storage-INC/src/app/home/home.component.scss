@@ -63,6 +63,27 @@ h1 {
   text-align: right;
 }
 
+.layout1 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Self_storage_Inc/jpg/self-storage-cilmate-control-mockup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $black;
+  text-align: center;
+
+  .climate-control {
+    left: 0;
+    right: 0;
+    top: 10;
+    background: rgba(238, 238, 238, 0.7);
+    z-index: 9;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+}
+
 .getStarted {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Self_storage_Inc/jpg/affordable-self-storage-office.jpg") center top no-repeat fixed;;
   background-repeat: no-repeat;
@@ -121,7 +142,7 @@ h1 {
   transform: skew(0deg);
   width: 24%;
   position: absolute;
-  top: 25%;
+  top: 32%;
 
   .viewRatesbtn {
     margin-right: 10px;
@@ -146,7 +167,7 @@ h1 {
   }
   .jumbotorn-skew-text {
     width: 520px;
-    top: 22%;
+    top: 32%;
   }
 }
 

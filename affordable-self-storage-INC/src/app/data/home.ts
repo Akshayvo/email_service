@@ -1,7 +1,7 @@
 export const featuresList = [
     {
         td1: 'Convenient Location',
-        td2: 'Online Bill Pay'
+        td2: 'Fully-Fenced Facility'
     },
     {
         td1: 'Security Cameras',
@@ -21,7 +21,6 @@ export const featuresList = [
     },
     {
         td1: 'Climate-Controlled Units Available',
-        td2: 'Fully-Fenced Facility'
     }
 ];
 
@@ -31,31 +30,18 @@ export const aboutUsHeading = `Affordable Self Storage in Lambertville`;
 
 export const aboutUs = [
     {
-        p: `At Affordable Self Storage, INC. it is our mission to offer the communities we serve an excellent
-        self storage experience by providing secure, clean, and well maintained regular or climate controlled
-        storage units. We take pride in being family owned and operated, and we are always willing to go the
-        extra mile to provide our customers with unparalleled support throughout their stay with us.`,
+        p: `At Affordable Self Storage, INC. it is our mission to offer the communities we serve an excellent self storage experience by providing secure, clean, and well maintained standard and climate controlled storage units. We take pride in being family owned and operated, and are always willing to go the extra mile to provide our customers with unparalleled support.`,
     },
     {
-        p: `Since 1998, the staff at Affordable Self Storage, INC. constantly goes above and beyond to make our
-        customers’ stay an easy one. That’s why we offer a number of amenities and services to make your stay with
-        us a breeze. After you complete the rental process with our friendly on-call staff, you’ll have access to
-        your unit in our well-maintained grounds 24-7 through our keypad secured access gate.`,
+        p: `We are located minutes from Lambertville, Stockton, Ringoes, and Flemington; New Hope, Solebury, Buckingham, Carversville, and Doylestown. We have an on site rental office, well maintained grounds, and offer 24-7 access through secure keypad entry. Our facility is fully fenced, well-lit, and equipped with 24-7 video surveillance.`,
     },
     {
-        p: `Our fully-fenced facility is well-lit, and security cameras are placed throughout to ensure a sense of
-        safety and security. We also offer online account access, and automatic payment capabilities. You can even
-        request moving supplies during the rental process!`,
-    },
-    {
-        p: `As a locally owned and operated company, we strive to foster good relationships with our business and
-        residential customers. We look forward to meeting you, and showing you how Affordable Self Storage,  INC.
-        can be your next storage space solution!`,
+        p: `We strive to foster excellent relationships with all our customers and look forward to helping you with all your self storage needs! `,
     },
 ];
 
 export const gettingStarted = `Are you ready to start de-cluttering your home, office, or worksite? Let Affordable
-Self Storage, INC make your next storage project a breeze! Click below to check out our rates and availability!`;
+Self Storage, INC make your next storage project a breeze! Click below to call our facility and learn more!`;
 
 export const feature = [
     {
@@ -87,7 +73,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h1: `Affordable Self Storage Units in Lambertville`,
+        h1: ``,
         blurb: `Since 1998 Affordable Self Storage, INC. has been providing Lambertville, Stockton, New Hope,
         and the surrounding communities with high-quality self storage, and awesome customer service! Whether
         you're in the middle of a move, a renovation, or are a growing business looking for some extra storage

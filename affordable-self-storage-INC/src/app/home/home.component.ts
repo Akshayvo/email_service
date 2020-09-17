@@ -1,7 +1,7 @@
 import { Component, OnInit, Renderer2, Inject} from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-import { contact, hours } from '../data/contact';
+import { contact, hours, accessHours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, jumbotron, aboutUsAlt, aboutUsHeading } from '../data/home';
 import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
@@ -41,6 +41,7 @@ export class HomeComponent implements OnInit {
   template: string;
   script: any;
   carouselData: any;
+  accessHours: any;
 
   constructor(
     private router: Router,
@@ -96,6 +97,7 @@ export class HomeComponent implements OnInit {
 
   public fetchHours() {
     this.hours = hours;
+    this.accessHours = accessHours;
   }
 
   public fetchFeatures() {
