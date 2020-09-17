@@ -1,24 +1,22 @@
 <div class="">
   <div class="jumbotron p-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotorn-background-jpg' :  'jumbotorn-background-webp'">
-    <div class="bg-translucent  text-align">
-      <div class="container display">
-        <div class="row justify-content-center width margin-bottom">
-          <div class="col-md-12">
-            <div class="disp">
-              <h1><br></h1><br>
-              <p> </p>
+      <div class="container display text-center">
+        <div class="row justify-content-center width">
+          <div class="bg-jumbotron bg-translucent col-md-12 p-4">
+            <div class=" disp">
+              <h1>Storage Units in Lake Mills, Wisconsin</h1><br>
+              <p>Rock Lake Storage provides affordable, clean, well-maintained self storage services to Lake Mills and the surrounding communities. We also offer a number of vehicle parking options for your recreational vehicles, trailers, or boats! If you're looking for self storage or parking options, let Rock Lake Storage make your project a breeze! Scroll down to learn more or click below to get started!</p>
             </div>
-            <!-- <div class="button-top-margin">
-              <a class="btn btn-lg btn-outline-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+            <div class="button-top-margin">
+              <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
               <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
-      <div class="arrow" >
+      <div class="arrow text-center" >
         <img (click)="scroll(target)" src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Rock_Lake_Images/down.svg" alt="" />
       </div>
-    </div>
   </div>
 
   <div class="about-us bg-dark-background"  #target>
