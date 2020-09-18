@@ -40,8 +40,7 @@ export const aboutUs = [
     },
 ];
 
-export const gettingStarted = `Are you ready to start de-cluttering your home, office, or worksite? Let Affordable
-Self Storage, INC make your next storage project a breeze! Click below to call our facility and learn more!`;
+export const gettingStarted = ``;
 
 export const feature = [
     {

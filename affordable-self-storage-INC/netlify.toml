@@ -27,6 +27,14 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/about-us"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/storage"
+  to = "/"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
