@@ -47,7 +47,7 @@ export class VerifyCodeComponent implements OnInit, OnDestroy {
       result => {
         if (result.blnSuccess === true) {
           this.showLoader = false;
-          this.router.navigate(['pay-rent/reset']);
+          this.router.navigate(['pay-rent/rent-sub/reset']);
         }
        }, (err) => {
       }
