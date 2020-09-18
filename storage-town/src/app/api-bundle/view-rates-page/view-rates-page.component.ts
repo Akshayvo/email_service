@@ -50,6 +50,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   navTo: any;
   windowLocation: any;
   showSpecialData = [];
+  facilityLocation: string;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -62,6 +63,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.windowLocation = window.location;
     // this.moveinUrl = `${path}\move-in`;
     // console.log('Window Loction:', this.windowLocation);
+
    }
 
 
@@ -69,6 +71,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.getData();
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
+    this.facilityLocation = this.dataSharingService.facilityLocation;
   }
 
   public fetchThData() {
@@ -86,7 +89,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.dataSharingService.updateMyNavLink('viewRates', 'prev', `${this.router.url}`);
     const myNavLinks = this.dataSharingService.getMyNavLinks('viewRates');
     console.log('TCL: ViewRatesPageComponent -> navigate -> myNavLinks', myNavLinks);
-    this.router.navigate([`${this.navTo}/${location}`]);
+    this.router.navigate([`location/${this.facilityLocation}/${location}`]);
     this.dataSharingService.LstUnitTypes = unitData;
   }
 

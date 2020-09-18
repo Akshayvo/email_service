@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, hoursLocation3, contactsLocation3, contactsLocation4, hoursLocation4,
           // contactsLocation3, hoursLocation3,
@@ -34,8 +34,14 @@ export class LocationComponent implements OnInit {
     private router: Router,
     private titleService: Title,
     private dataSharingService: DataSharingService,
-    private canonical: CanonicalService
+    private canonical: CanonicalService,
+    private activatedRoute: ActivatedRoute,
+
     ) {
+      if (this.activatedRoute.snapshot.url[1].path) {
+        console.log('this.activatedRoute.snapshot.url[1].path', this.activatedRoute.snapshot.url[1].path);
+        this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
+      }
       if (this.router.url.includes('/location/andrews')) {
         this.canonical.create();
             this.meta.addTag({

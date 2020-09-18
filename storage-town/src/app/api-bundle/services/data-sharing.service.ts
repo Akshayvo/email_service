@@ -21,7 +21,7 @@ export class DataSharingService {
 
   strConfirmation: string;
   strAccessCode: string;
-
+ facilityLocation: string;
   verificationCode: string;
   changePassword: boolean;
   navigationTo: string;
