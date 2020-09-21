@@ -27,6 +27,10 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/location/augusta"
+  to = "/"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
