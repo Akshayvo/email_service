@@ -47,7 +47,11 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
     }
 
     if (this.passwordChanged === true) {
-      this.router.navigate([`pay-rent/${this.navTo}/${this.paymentTab}/login`]);
+      if (!!localStorage.getItem('paymentTab')) {
+        this.router.navigate([`pay-rent/${this.navTo}/${this.paymentTab}/login`]);
+      } else {
+        this.router.navigate([`pay-rent/${this.navTo}/login`]);
+      }
     }
   }
 
@@ -56,11 +60,19 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
   goBack() {
     localStorage.removeItem('strTenantToken');
     this.dataSharingService.changePassword = false;
-    this.router.navigate([`pay-rent/${this.navTo}/${this.paymentTab}/login`]);
+    if (!!localStorage.getItem('paymentTab')) {
+      this.router.navigate([`pay-rent/${this.navTo}/${this.paymentTab}/login`]);
+    } else {
+      this.router.navigate([`pay-rent/${this.navTo}/login`]);
+    }  
   }
 
   public navigate(location: any) {
-    this.router.navigate([`pay-rent/${this.navTo}/${this.paymentTab}/${location}`]);
+    if (!!localStorage.getItem('paymentTab')) {
+      this.router.navigate([`pay-rent/${this.navTo}/${this.paymentTab}/login`]);
+    } else {
+      this.router.navigate([`pay-rent/${this.navTo}/login`]);
+    }
   }
 
   public navigateToHOme(location: any) {

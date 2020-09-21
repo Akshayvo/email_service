@@ -13,9 +13,18 @@ a {
   color: black;
 }
 
+.background-padding {
+  padding: 64px;
+}
 
 @media only screen and (max-width: 991px) {
   .containHolder {
     padding-top: 90px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .background-padding {
+    padding: 24px 0;
   }
 }

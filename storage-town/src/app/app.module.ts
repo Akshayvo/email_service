@@ -155,6 +155,10 @@ import { ScriptHackComponent } from './script-hack/script-hack.component';
       useClass: RequestInterceptorService,
       multi: true
     },
+    // { 
+    //   provide: 'googleTagManagerId',
+    //   useValue: `GTM-MN7WC8L`
+    // }
   ],
   bootstrap: [AppComponent]
 })

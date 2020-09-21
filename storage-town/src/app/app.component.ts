@@ -37,6 +37,10 @@ export class AppComponent {
     private routerHistoryService: NavigationService,
     @Inject(WINDOW) private window: Window,
   ) {
+
+    if (!localStorage.getItem('strTenantToken') && !localStorage.getItem('strTempTenantToken')) {
+      localStorage.clear();
+    }
     // Event logging only
     router.events.subscribe(event => {
       if (event instanceof NavigationStart) {

@@ -10,8 +10,6 @@ import { Subscription } from 'rxjs';
 import { option } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
 
-
-
 @Component({
   selector: 'app-confirmation-data',
   templateUrl: './confirmation-data.component.html',
@@ -86,6 +84,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   period: string;
   navTo: any;
 
+  facilityLocation: string;
 
   private addTenantSubscribe$: Subscription;
   private updateTenantSubscribe$: Subscription;
@@ -171,6 +170,10 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
 
     this.myNavLinks = this.dataSharingService.getMyNavLinks('confirmationData');
 
+    if (this.dataSharingService.facilityLocation) {
+      this.facilityLocation = this.dataSharingService.facilityLocation;
+    }
+
   }
 
   addTenant(data: any): void {
@@ -235,10 +238,13 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           if (this.existTempToken) {
             localStorage.removeItem('strTempTenantToken');
           }
-  
           this.reservationInProgress = false;
 
-          this.router.navigate([`${this.navTo}/thank-you`]);
+          if (!!localStorage.getItem('paymentTab')) {
+            this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+          } else {
+            this.router.navigate([`location/${this.facilityLocation}/reserve-unit/thank-you`]);
+          }
         }
 
 
@@ -281,7 +287,11 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
             localStorage.removeItem('strTempTenantToken');
           }
           this.reservationInProgress = false;
-          this.router.navigate([`${this.navTo}/thank-you`]);
+          if (!!localStorage.getItem('paymentTab')) {
+            this.router.navigate([`location/${this.facilityLocation}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
+          } else {
+            this.router.navigate([`location/${this.facilityLocation}/moveIn/thank-you`]);
+          }
         }
       }, (err: any) => {
         if (err.status === 403) {

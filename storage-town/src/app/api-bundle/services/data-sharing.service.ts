@@ -21,7 +21,7 @@ export class DataSharingService {
 
   strConfirmation: string;
   strAccessCode: string;
- facilityLocation: string;
+  facilityLocation: string;
   verificationCode: string;
   changePassword: boolean;
   navigationTo: string;
@@ -35,6 +35,8 @@ export class DataSharingService {
   addingTenant = false;
   insuranceChoiceId: number;
   signUpForAutoPay: boolean;
+  PaymentAmount: number;
+  CCApprovalCode: string;
 
   paymentTab: string;
 

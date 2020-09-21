@@ -1,6 +1,7 @@
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
+  paymentPageType: 1, // { withoutTab: 0, withTab: 1}
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   appId: 'Storage- Town - Production',

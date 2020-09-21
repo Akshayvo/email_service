@@ -16,6 +16,8 @@ export class VerifyCodeComponent implements OnInit, OnDestroy {
   verifyCodeForm: FormGroup;
   submitted = false;
   showLoader = false;
+  navTo: string;
+  paymentTab: string;
 
    private verifyCodeUnsubscribe$: Subscription;
 
@@ -33,12 +35,26 @@ export class VerifyCodeComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    if (window.localStorage) {
+      this.navTo = localStorage.getItem('paymentNavigationUrl');
+    }
+
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
   }
 
   get f() { return this.verifyCodeForm.controls; }
 
   goBack() {
     this.router.navigate(['pay-rent/forgotPassword']);
+
+    if (!!localStorage.getItem('paymentTab')) {
+      this.router.navigate([`pay-rent/${this.navTo}/${this.paymentTab}/forgotPassword`]);
+    } else {
+      this.router.navigate([`pay-rent/${this.navTo}/forgotPassword`]);
+    }
+    
   }
 
   verifyCode(data: any): void {
@@ -48,6 +64,11 @@ export class VerifyCodeComponent implements OnInit, OnDestroy {
         if (result.blnSuccess === true) {
           this.showLoader = false;
           this.router.navigate(['pay-rent/reset']);
+          if (!!localStorage.getItem('paymentTab')) {
+            this.router.navigate([`pay-rent/${this.navTo}/${this.paymentTab}/reset`]);
+          } else {
+            this.router.navigate([`pay-rent/${this.navTo}/reset`]);
+          }
         }
        }, (err) => {
       }

@@ -72,7 +72,11 @@ export class LoginModalComponent implements OnInit, OnDestroy {
             localStorage.setItem('strTenantToken', this.authData);
             this.navTo = localStorage.getItem('paymentNavigationUrl');
             this.dataSharingService.changePassword = true;
-            this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/changePassword`]);
+            if (!!localStorage.getItem('paymentTab')) {
+              this.router.navigate([`pay-rent/${this.navTo}/${this.paymentTab}/changePassword`]);
+            } else {
+              this.router.navigate([`pay-rent/${this.navTo}/changePassword`]);
+            }
           }, (err) => {
             this.credentialsInvalid = true;
             this.showLoader = false;
