@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { aboutUsLocation1, aboutUsLocation2, aboutUsLocation3, aboutUsLocation4,
+import { aboutUsLocation1, aboutUsLocation2, aboutUsLocation4,
           aboutUsHeadingLocation1, aboutUsHeadingLocation2, aboutUsHeadingLocation3, aboutUsHeadingLocation4,
           aboutUsImageLocation1, aboutUsImageLocation2,
-          aboutUsImageLocation3, aboutUsImageLocation4 } from '../data/location';
+           aboutUsImageLocation4 } from '../data/location';
 import { serviceOffered } from '../data/home';
 
 @Component({
@@ -31,8 +31,6 @@ export class AboutUsComponent implements OnInit {
       this.fetchDetailsLocation1();
   } else if (this.router.url.includes('/location/751-kenton-station')) {
     this.fetchDetailsLocation2();
-  } else  if (this.router.url.includes('/location/augusta'))  {
-    this.fetchDetailsLocation3();
   } else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
     this.fetchDetailsLocation4();
   }
@@ -50,13 +48,6 @@ export class AboutUsComponent implements OnInit {
     this.heading = aboutUsHeadingLocation2;
     this.image = aboutUsImageLocation2;
     this.alt = 'Photograph of an office with two employees sitting at their desk';
-  }
-
-  public fetchDetailsLocation3() {
-    this.aboutPara = aboutUsLocation3;
-    this.heading = aboutUsHeadingLocation3;
-    this.image = aboutUsImageLocation3;
-    this.alt = 'photograph of outdoor self storage units on gravel parking';
   }
 
   public fetchDetailsLocation4() {

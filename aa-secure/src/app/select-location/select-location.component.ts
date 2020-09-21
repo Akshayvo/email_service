@@ -21,10 +21,6 @@ export class SelectLocationComponent implements OnInit {
       name: '751 Kenton Station Location',
     },
     {
-      id: 3,
-      name: 'Augusta Location',
-    },
-    {
       id: 4,
       name: '113 McDonald Parkway',
     },

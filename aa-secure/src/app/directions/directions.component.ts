@@ -22,9 +22,7 @@ export class DirectionsComponent implements OnInit {
        this.fetchDetailsLocation1();
      } else if (this.router.url.includes('/location/751-kenton-station')) {
        this.fetchDetailsLocation2();
-     } else  if (this.router.url.includes('/location/augusta'))  {
-       this.fetchDetailsLocation3();
-     }
+     } 
  }
 
  public fetchDetailsLocation1() {
@@ -38,9 +36,5 @@ export class DirectionsComponent implements OnInit {
     this.id = 2;
   }
 
-  public fetchDetailsLocation3() {
-    // this.directionPoints = directionLocation3;
-    this.directionHeading = `Directions to Augusta Location`;
-    this.id = 3;
-  }
+  
 }

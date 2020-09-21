@@ -4,7 +4,6 @@ import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
-          contactsLocation3, hoursLocation3,
           contactsLocation4, hoursLocation4 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
@@ -78,14 +77,12 @@ export class ContactComponent implements OnInit {
   public fetchContactDetails(){
     this.contactsLocation1 = contactsLocation1;
     this.contactsLocation2 = contactsLocation2;
-    this.contactsLocation3 = contactsLocation3;
     this.contactsLocation4 = contactsLocation4;
   }
 
   public fetchHours(){
     this.hoursLocation1 = hoursLocation1;
     this.hoursLocation2 = hoursLocation2;
-    this.hoursLocation3 = hoursLocation3;
     this.hoursLocation4 = hoursLocation4;
   }
   get f() { return this.contactForm.controls; }
@@ -102,8 +99,6 @@ export class ContactComponent implements OnInit {
       this.fetchContactDetailsLocation1();
     } else if ( this.locationId === '2' ) {
       this.fetchContactDetailsLocation2();
-    } else if ( this.locationId === '3' ) {
-      this.fetchContactDetailsLocation3();
     } else if ( this.locationId === '4' ) {
       this.fetchContactDetailsLocation4();
     }
@@ -121,11 +116,6 @@ export class ContactComponent implements OnInit {
     this.hoursDetails = hoursLocation2;
   }
 
-  public fetchContactDetailsLocation3() {
-    this.heading = `Augusta Location`;
-    this.contactDetails = contactsLocation3;
-    this.hoursDetails = hoursLocation3;
-  }
 
   public fetchContactDetailsLocation4() {
     this.heading = `113 McDonald Parkway`;

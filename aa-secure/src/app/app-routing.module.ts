@@ -41,16 +41,6 @@ const routes: Routes = [
       { path: 'about', component: AboutUsComponent },
     ]
   },
-  { path: 'location/augusta',
-    component: LocationComponent,
-    children: [
-      // {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: '', redirectTo: 'reservations', pathMatch: 'prefix'},
-      { path: 'reservations', component: ReserveUnitComponent },
-      { path: 'photos', component: PhotosComponent },
-      { path: 'about', component: AboutUsComponent },
-    ]
-  },
   { path: 'location/113-mcDonald-parkway',
   component: LocationComponent,
   children: [
@@ -73,14 +63,6 @@ const routes: Routes = [
     },
     data: {
         externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJDem__t1aQYgRkUdtF_EG6B8'
-    }
-  },
-  { path: 'review/augusta', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
     }
   },
   { path: 'review/113-mcDonald-parkway', component: HomeComponent,

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { galleryDataLocation1, galleryDataLocation2, galleryDataLocation3,
-        galleryImagesLocation1, galleryImagesLocation2, galleryImagesLocation3, galleryImagesHome } from '../data/galleryImage';
+import { galleryDataLocation1, galleryDataLocation2,
+        galleryImagesLocation1, galleryImagesLocation2,  galleryImagesHome } from '../data/galleryImage';
 import { Router } from '@angular/router';
 
 @Component({
@@ -28,9 +28,7 @@ export class PhotosComponent implements OnInit {
       this.fetchDetailsLocation1();
   } else if (this.router.url.includes('/location/751-kenton-station')) {
     this.fetchDetailsLocation2();
-  } else  if (this.router.url.includes('/location/augusta'))  {
-    this.fetchDetailsLocation3();
-  }  else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
+  } else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
     this.fetchDetailsLocation4();
   } else {
     this.fetchDetailsHome();
@@ -49,15 +47,11 @@ export class PhotosComponent implements OnInit {
     this.id = 2;
   }
 
-  public fetchDetailsLocation3() {
-    this.galleryImages = galleryImagesLocation3;
-    this.galleryData = galleryDataLocation3;
-    this.id = 3;
-  }
+
 
   public fetchDetailsLocation4() {
-    this.galleryImages = galleryImagesLocation3;
-    this.galleryData = galleryDataLocation3;
+    // this.galleryImages = galleryImagesLocation3;
+    // this.galleryData = galleryDataLocation3;
     this.id = 4;
   }
 

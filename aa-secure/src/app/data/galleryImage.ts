@@ -54,36 +54,36 @@ export const galleryImagesLocation2 = [
   },
 ];
 
-export const galleryImagesLocation3 = [
-    {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-1.jpg',
-        alt: ` a photograph of an outdoor self storage unit with gravel parking and a carwash attached to the storage building`,
-    },
-    {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-2.jpg',
-        alt: ` A photograph of self storage buildings with attached car wash bays`,
-    },
-    {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-3.jpg',
-        alt: `Photograph of outdoor self storage units with gravel parking`,
-    },
-    {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-4.jpg',
-        alt: `Photograph of outdoor self storage units with blue roof and gravel parking`,
-    },
-    {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-5.jpg',
-        alt: `Photograph of self storage units and attached car wash bays taken from the road`,
-    },
-    {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-10.jpg',
-        alt: `Photograph of outdoor self storage units taken from the road`,
-    },
-    {
-        url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-12.jpg',
-        alt: `Photograph of car wash bays with self storage units`,
-    },
-  ];
+// export const galleryImagesLocation3 = [
+//     {
+//         url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-1.jpg',
+//         alt: ` a photograph of an outdoor self storage unit with gravel parking and a carwash attached to the storage building`,
+//     },
+//     {
+//         url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-2.jpg',
+//         alt: ` A photograph of self storage buildings with attached car wash bays`,
+//     },
+//     {
+//         url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-3.jpg',
+//         alt: `Photograph of outdoor self storage units with gravel parking`,
+//     },
+//     {
+//         url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-4.jpg',
+//         alt: `Photograph of outdoor self storage units with blue roof and gravel parking`,
+//     },
+//     {
+//         url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-5.jpg',
+//         alt: `Photograph of self storage units and attached car wash bays taken from the road`,
+//     },
+//     {
+//         url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-10.jpg',
+//         alt: `Photograph of outdoor self storage units taken from the road`,
+//     },
+//     {
+//         url: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-12.jpg',
+//         alt: `Photograph of car wash bays with self storage units`,
+//     },
+//   ];
 
 export const galleryDataLocation1 = [
   { p: `We are proud of our high-quality, well-maintained self storage units. Our climate - controlled units at the 730 Kenton Station Rd location

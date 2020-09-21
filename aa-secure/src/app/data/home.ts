@@ -1,7 +1,7 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: '4 Convenient Locations',
+        label: '3 Convenient Locations',
         data: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/placeholder.svg',
         alt: 'Icon art displaying a location pin'
     },

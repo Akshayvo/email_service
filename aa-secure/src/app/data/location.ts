@@ -36,7 +36,7 @@ export const headingLocation1 = `730 Kenton Station Location`;
 
 export const headingLocation2 = `751 Kenton Station Location`;
 
-export const headingLocation3 = `Augusta Location`;
+export const headingLocation3 = ``;
 
 export const headingLocation4 = `113 McDonald Parkway`;
 
@@ -117,7 +117,6 @@ export const aboutUsImageLocation1 = `https://syrasoft-tenant-facing-websites.s3
 export const aboutUsImageLocation2 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-security-storage-3.jpg`;
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation3 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-augusta-storage-2.jpg`;
 
 export const aboutUsImageLocation4 = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-storage-1.jpg`;
 
@@ -149,16 +148,7 @@ export const aboutUsLocation2 = [
     },
 ];
 
-export const aboutUsLocation3 = [
-    {
-        p: `Since 1980, AA Secure Storage has been serving the Augusta community with well-maintained,
-        high-quality self storage units and excellent customer service at affordable rates!`,
-    },
-    {
-        p: `Our outdoor units and car wash are accessible 24 hours a day, 7 days a week for additional
-        convenience! Drive up to your unit anytime you need access to your belongings or supplies! `
-    }
-];
+
 
 export const aboutUsLocation4 = [
     {

@@ -25,9 +25,7 @@ export class UnitSizerComponent implements OnInit {
       this.fetchDetailsLocation1();
   } else if (this.router.url.includes('/location/751-kenton-station')) {
     this.fetchDetailsLocation2();
-  } else  if (this.router.url.includes('/location/augusta'))  {
-    this.fetchDetailsLocation3();
-  }  else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
+  } else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
     this.fetchDetailsLocation4();
   }
 }

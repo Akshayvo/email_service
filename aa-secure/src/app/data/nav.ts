@@ -24,11 +24,6 @@ export const navLinks = [
                 label: '113 McDonald Parkway',
                 path: '/location/113-mcDonald-parkway'
             },
-            {
-                id: '3',
-                label: 'Augusta Location',
-                path: '/location/augusta',
-            },
         ]
     },
     {

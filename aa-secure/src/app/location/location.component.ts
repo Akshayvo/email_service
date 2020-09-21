@@ -2,7 +2,6 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
-          contactsLocation3, hoursLocation3,
           contactsLocation4, hoursLocation4
           } from '../data/contact';
 import { tabs, tabs1} from '../data/location';
@@ -47,12 +46,6 @@ export class LocationComponent implements OnInit {
              storage units at extremely affordable prices!`
            });
            this.titleService.setTitle('');
-    } else  if (this.router.url.includes('/location/augusta'))  {
-          this.meta.addTag({
-            name: 'description',
-            content: `Our Augusta location has a large selection of storage units with very easy access right off of`
-          });
-          this.titleService.setTitle('Affordable Self Storage in Augusta | AA Secure Storage');
     } else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
       this.meta.addTag({
         name: 'description',
@@ -73,8 +66,6 @@ export class LocationComponent implements OnInit {
         this.fetchDetailsLocation1();
     } else if (this.router.url.includes('/location/751-kenton-station')) {
       this.fetchDetailsLocation2();
-    } else  if (this.router.url.includes('/location/augusta'))  {
-      this.fetchDetailsLocation3();
     } else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
       this.fetchDetailsLocation4();
     }
@@ -86,9 +77,6 @@ export class LocationComponent implements OnInit {
     );
   } else if ( this.locationId === 2 ) {
     this.router.navigate(['/location/751-kenton-station/reservations']
-          );
-  } else if ( this.locationId === 3) {
-    this.router.navigate(['/location/augusta/reservations']
           );
   } else if ( this.locationId === 4) {
     this.router.navigate(['/location/113-mcDonald-parkway/reservations']
@@ -112,13 +100,7 @@ export class LocationComponent implements OnInit {
      this.tabs = tabs;
    }
 
-   public fetchDetailsLocation3() {
-     this.name = headingLocation3;
-     this.locationId = 3;
-     this.contacts = contactsLocation2;
-     this.hours = hoursLocation3;
-     this.tabs = tabs;
-   }
+ 
 
    public fetchDetailsLocation4() {
     this.name = headingLocation4;
