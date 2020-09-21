@@ -64,7 +64,8 @@ h1 {
 }
 
 .layout1 {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Self_storage_Inc/jpg/self-storage-cilmate-control-mockup.jpg");
+  // background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Self_storage_Inc/jpg/self-storage-cilmate-control-mockup.jpg");
+  background: #ECE52B;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -79,9 +80,31 @@ h1 {
     z-index: 9;
   }
 
-  p {
-    font-size: 3rem;
+  // p {
+  //   font-size: 3rem;
+  // }
+}
+
+.layout2 {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Self_storage_Inc/jpg/self-storage-cilmate-control-mockup.jpg");
+  // background: #ECE52B;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $black;
+  text-align: center;
+
+  .climate-control {
+    // left: 0;
+    // right: 0;
+    // top: 10;
+    // background: rgba(238, 238, 238, 0.7);
+    // z-index: 9;
   }
+
+  // p {
+  //   font-size: 3rem;
+  // }
 }
 
 .getStarted {
