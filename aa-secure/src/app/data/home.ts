@@ -24,7 +24,7 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `AA Secure Storage has provided Maysville, Augusta, and the surrounding communities with high-quality, well-lit,
+        p: `AA Secure Storage has provided Maysville and the surrounding communities with high-quality, well-lit,
         and affordable self storage units since 1980! We offer a wide variety of self storage unit sizes and types,
         including climate-controlled units and Boat/RV parking!`,
     },
