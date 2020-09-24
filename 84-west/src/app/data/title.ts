@@ -8,9 +8,8 @@ export const viewRatesPageContent = `Check out the competitive rates for our hig
 units! 84 West Self Storage is the premier storage facility in Valdosta, GA`;
 
 
-export const reservePageTitle = `Reserve a Unit | Driftwood Village Self Storage`;
-export const reservePageContent = `Ready to reserve your unit at Driftwood Village Self Storage? Click here to begin
-storing with Auburn's premier self storage facility!`;
+export const reservePageTitle = ``;
+export const reservePageContent = ``;
 
 export const payRentPageTitle = `Pay Rent  | 84 West Self Storage`;
 export const payRentPageContent = `Take a moment to review our easy login instructions, or call our friendly

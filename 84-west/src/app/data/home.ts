@@ -20,11 +20,11 @@ export const featuresList = [
         td2: 'Affordable Rates'
     },
     {
-        td1: 'Climate-Controlled Units Available',
+        td1: 'Free Lock',
         td2: 'Semi-Truck Access'
     },
     {
-        td1: 'Free Lock',
+        td1: 'Climate-Controlled Units Available',
         td2: '10% Student & Military Discount'
     },
 ];

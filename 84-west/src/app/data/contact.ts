@@ -41,14 +41,14 @@ export const hours = [
 ];
 
 export const socialLinks = [
+    {
+        label: 'facebook',
+        path: 'https://facebook.com/84westselfstorage',
+        class: 'fab fa-facebook-square',
+    },
     // {
     //     label: 'twitter',
     //     path: '',
     //     class: 'fab fa-twitter-square',
     // },
-    {
-        label: 'facebook',
-        path: 'facebook.com/84westselfstorage',
-        class: 'fab fa-facebook-square',
-    },
 ];

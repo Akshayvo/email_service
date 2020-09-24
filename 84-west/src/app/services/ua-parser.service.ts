@@ -31,9 +31,9 @@ export class UaParserService {
       }
     }
     if (this.typeOfImages === 'WEBP') {
-      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Driftwood_Village/webp`;
+      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/84_West_Self_Storage/webp`;
     } else {
-      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Driftwood_Village/jpg';
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/84_West_Self_Storage/jpg';
     }
   }
 }
