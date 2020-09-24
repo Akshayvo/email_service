@@ -33,6 +33,7 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;
+  eventName: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -64,6 +65,7 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
+    window['dataLayer'] = window['dataLayer'] || {};
     window.scrollTo(0, 0);
   this.receiveMessage();
 }
@@ -116,6 +118,15 @@ export class ContactComponent implements OnInit {
   }
 
 onSubmit() {
+  const today = new Date();
+  this.eventName = 'ContactFormsubmission';
+  window['dataLayer'] = window['dataLayer'] || [];
+      window['dataLayer'].push({
+        'event': this.eventName,
+        'location' : this.heading,
+        'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+        'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+      });
   this.submitted = true;
 
  // stop here if form is invalid

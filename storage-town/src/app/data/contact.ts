@@ -29,7 +29,7 @@ export const hoursLocation1 = [
         //     data1:'7 Days a Week ',
         //     data2:'6:00AM to 8:00PM'
         // },
-        data:'7 Days a Week 6:00AM to 8:00PM'
+        data: '7 Days a Week 6:00AM to 8:00PM'
     }
 ];
 
@@ -45,7 +45,7 @@ export const contactsLocation2 = [
         label: 'Email:',
         data: 'storagetownchester@gmail.com ',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:storagetownchester@gmail.com '
+        redirect: 'mailto:storagetownchester@gmail.com'
     },
     {
         id: 3,

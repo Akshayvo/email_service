@@ -71,76 +71,89 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     if (localStorage.getItem('paymentNavigationUrl')) {
       this.paymentNavigationUrl = localStorage.getItem('paymentNavigationUrl');
     }
-    this.fetchScript();
+    // this.fetchScript();
+    const today = new Date();
+    this.eventName = 'reservation';
+    window['dataLayer'] = window['dataLayer'] || {};
+    window['dataLayer'] = window['dataLayer'] || [];
+        window['dataLayer'].push({
+          'event': this.eventName,
+          'location' : this.paymentNavigationUrl,
+          'confirmationNumber' : this.CCApprovalCode,
+          'unitType':  this.description,
+          'price': this.monthlyRate,
+          'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+          'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+        });
   }
 
-  public fetchScript() {
-    const today = new Date();
-    switch (true) {
-      case this.navigateToMoveIn: {
-        this.script = function dataLayer() {
-          window['dataLayer'] = window['dataLayer'] || [];
-            window['dataLayer'].push({
-            event: this.eventName,
-            'location' : 'variable_value',
-            'confirmationNumber' : 'variable_value',
-            'unitType': 'variable_value',
-            'price': 'variable_value',
-            'date': 'variable_value',
-            'time': 'variable_value'
-          });
-        };
-        this.eventName = 'move-in';
-        break;
-      }
-      case this.navigateToReserve: {
-        this.script = function dataLayer() {
-          window['dataLayer'] = window['dataLayer'] || [];
-            window['dataLayer'].push({
-            'event': this.eventName,
-            'location' : 'variable_value',
-            'confirmationNumber' : 'variable_value',
-            'unitType': 'variable_value',
-            'price': 'variable_value',
-            'date': 'variable_value',
-            'time': 'variable_value'
-          });
-        };
-        this.eventName = 'reservation';
-        break;
-      }
-      case (!this.navigateToReserve && !this.navigateToMoveIn): {
-        this.script = function dataLayer() {
-          window['dataLayer'] = window['dataLayer'] || [];
-            window['dataLayer'].push({
-            'event': this.eventName,
-            'location' : this.paymentNavigationUrl,
-            'confirmationNumber' : this.CCApprovalCode,
-            'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
-            'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
-          });
-        };
-        this.eventName = 'reservation';
-        break;
-      }
-      default: {
-        this.script = function dataLayer() {
-          window['dataLayer'] = window['dataLayer'] || [];
-            window['dataLayer'].push({
-            'event': this.eventName,
-            'location' : 'variable_value',
-            'confirmationNumber' : 'variable_value',
-            'unitType': 'variable_value',
-            'price': 'variable_value',
-            'date': 'variable_value',
-            'time': 'variable_value'
-          });
-        };
-      }
-        this.eventName = 'ContactFormsubmission';
-        break;
-    }
-  }
+  // public fetchScript() {
+  //   const today = new Date();
+  //   switch (true) {
+  //     case this.navigateToMoveIn: {
+  //       this.script = function dataLayer() {
+  //         window['dataLayer'] = window['dataLayer'] || [];
+  //           window['dataLayer'].push({
+  //           event: this.eventName,
+  //           'location' : 'variable_value',
+  //           'confirmationNumber' : 'variable_value',
+  //           'unitType': 'variable_value',
+  //           'price': 'variable_value',
+  //           'date': 'variable_value',
+  //           'time': 'variable_value'
+  //         });
+  //       };
+  //       this.eventName = 'move-in';
+  //       break;
+  //     }
+  //     case this.navigateToReserve: {
+  //       this.script = function dataLayer() {
+  //         window['dataLayer'] = window['dataLayer'] || [];
+  //           window['dataLayer'].push({
+  //           'event': this.eventName,
+  //           'location' : 'variable_value',
+  //           'confirmationNumber' : 'variable_value',
+  //           'unitType': 'variable_value',
+  //           'price': 'variable_value',
+  //           'date': 'variable_value',
+  //           'time': 'variable_value'
+  //         });
+  //       };
+  //       this.eventName = 'reservation';
+  //       break;
+  //     }
+  //     case (!this.navigateToReserve && !this.navigateToMoveIn): {
+  //       this.script = function dataLayer() {
+  //         window['dataLayer'] = window['dataLayer'] || [];
+  //           window['dataLayer'].push({
+  //           'event': this.eventName,
+  //           'location' : this.paymentNavigationUrl,
+  //           'confirmationNumber' : this.CCApprovalCode,
+  //           'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+  //           'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+  //         });
+  //       };
+  //       this.eventName = 'reservation';
+  //       break;
+  //     }
+  //     default: {
+  //       this.script = function dataLayer() {
+  //         window['dataLayer'] = window['dataLayer'] || [];
+  //           window['dataLayer'].push({
+  //           'event': this.eventName,
+  //           'location' : 'variable_value',
+  //           'confirmationNumber' : 'variable_value',
+  //           'unitType': 'variable_value',
+  //           'price': 'variable_value',
+  //           'date': 'variable_value',
+  //           'time': 'variable_value'
+  //         });
+  //       };
+  //     }
+  //       this.eventName = 'ContactFormsubmission';
+  //       break;
+  //   }
+  // }
 
   public navigate(location: any) {
     this.router.navigate([location]);
