@@ -170,9 +170,7 @@ export class LoginComponent implements OnInit, OnDestroy {
             }
           }
           } else {
-            if (this.dataSharingService.changePassword === true) {
-              console.log('I am working mam');
-              
+            if (this.dataSharingService.changePassword === true) {              
               this.router.navigate([`/pay-rent/${this.navTo}/changePassword`]);
             } else {
             this.router.navigate([`/pay-rent/${this.navTo}/payment`]);

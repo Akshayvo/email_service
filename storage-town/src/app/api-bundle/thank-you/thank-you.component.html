@@ -33,7 +33,7 @@
                     </tr>
                     <tr>
                         <td class="td-1">Rate</td>
-                        <td> <span *ngIf="monthlyRate > 0 || monthlyRate !== undefined">$</span>{{monthlyRate}}</td>
+                        <td> <span *ngIf="monthlyRate">$</span>{{monthlyRate}}</td>
                     </tr> 
                     <tr *ngIf="!navigateToMoveIn">
                         <td> Move In Date</td>

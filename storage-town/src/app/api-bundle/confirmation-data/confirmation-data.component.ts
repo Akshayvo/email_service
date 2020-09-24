@@ -138,7 +138,6 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   }
 
   public navigateToPrevious() {
-    console.log('confirmation page working', this.dataSharingService.navigateToPrevious);
     this.router.navigate([this.dataSharingService.navigateToPrevious]);
   }
 
@@ -164,7 +163,6 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
     this.description = this.dataSharingService.LstUnitTypes.Description;
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
-    console.log('monthly rate is', this.monthlyRate);
     this.navTo = this.dataSharingService.navigationTo;
     this.dataSharingService.initMyNavLinks('confirmationData', window.location.pathname);
 

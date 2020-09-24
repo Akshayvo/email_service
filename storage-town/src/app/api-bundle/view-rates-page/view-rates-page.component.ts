@@ -61,9 +61,6 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     private eRef: ElementRef
   ) {
     this.windowLocation = window.location;
-    // this.moveinUrl = `${path}\move-in`;
-    // console.log('Window Loction:', this.windowLocation);
-
    }
 
 

@@ -16,10 +16,7 @@ export class RequestInterceptorService implements HttpInterceptor {
   request: HttpRequest<any>, next: HttpHandler
   ): Observable<HttpEvent<any>> {
     // Values
-    console.log('request');
     const APIKey = this.appResolver.resolve();
-
-    console.log('const APIKey', APIKey);
     const tenantToken = (!!localStorage.getItem('strTenantToken') ? localStorage.getItem('strTenantToken') : '');
     const token = tenantToken || localStorage.getItem('strTempTenantToken');
     const baseUrl = environment.baseUrl;

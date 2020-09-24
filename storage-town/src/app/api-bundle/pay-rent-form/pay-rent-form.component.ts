@@ -16,8 +16,7 @@ import { DataSharingService } from '../services/data-sharing.service';
 import { MakeAReservationService } from '../services/make-a-reservation.service';
 import { MoveInService } from '../services/moveIn.service';
 import { AddTenantService } from '../services/add-tenant.service';
-
-
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-pay-rent-form',
@@ -32,7 +31,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   balance: number;
   payRentForm: FormGroup;
   payTypes: PayTypes;
-  lstPayTypes: LstPayTypes[];
+  lstPayTypes = [];
   payTypeForResult: PayTypeForResult;
   selectedDescription: string;
   result: any;
@@ -102,6 +101,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   loginUrl: any;
   cardType: string;
   facilityLocation: string;
+  cards: any;
+  paymentTab: string;
 
   private OptionOutOfAutoPaySubscribe$: Subscription;
   private signUpAutoPaySubscribe$: Subscription;
@@ -110,7 +111,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   private getPayMethodsSubscribe$: Subscription;
   private getTenantInfoSubscribe$: Subscription;
   private makeAReservationSubscribe$: Subscription;
-  private  addTenantSubscribe$: Subscription;
+  private addTenantSubscribe$: Subscription;
 
 
   constructor(
@@ -137,7 +138,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         CCAccountCVV2: [''],
         CCAccountBillingAddress: ['', Validators.required],
         CCAccountZIP: ['', Validators.required],
-        SignUpForAutoPay:  [],
+        // SignUpForAutoPay:  [],
         PaymentAmount: ['', Validators.required],
         PayType: this.formBuilder.group({
           PayTypeDescription: ['', Validators.required],
@@ -180,6 +181,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     }
 
 
+
     if (this.router.url.includes('/payReservationCharges') ) {
       this.navigateToReserve = true;
       this.navigateToMoveIn = false;
@@ -201,6 +203,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         if (this.router.url.includes('/payment') ) {
           this.navigateToMoveIn = false;
           this.navigateToReserve = false;
+          this.navigateToMoveInPayment = true;
         }
 
       }
@@ -209,7 +212,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
     // if (this.router.url ===  '/pay-rent/payment' ) {
-    //   this.navigateToMoveInPayment = true;
     // }
   }
 
@@ -219,6 +221,12 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.fetchCards();
+
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
+
     this.dataSharingService.initMyNavLinks('payRentForm', window.location.pathname);
     this.myNavLinks = this.dataSharingService.getMyNavLinks('payRentForm');
     if (window.localStorage) {
@@ -229,16 +237,18 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.facilityLocation = this.dataSharingService.facilityLocation;
     }
     this.tenantData.objTenant = this.dataSharingService.objTenant;
-    console.log('going to payMoveInCharges');
     if (!!localStorage.getItem('strTenantToken')) {
       this.getPayMethods();
     } else {
       if (!localStorage.getItem('strTempTenantToken')) {
-        console.log('going to payMoveInCharges');
         if (this.dataSharingService.addingTenant === true) {
           this.getPayMethods();
         } else {
-          this.router.navigate(['/pay-rent']);
+          if (!!this.paymentTab) {
+            this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
+          } else {
+            this.router.navigate(['/pay-rent']);
+          }
         }
       } else {
         this.getPayMethods();
@@ -250,6 +260,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   get f() { return this.payRentForm.controls; }
 
+  public fetchCards() {
+    this.cards = environment.cards;
+  }
+
   public navigate(location: any) {
     this.router.navigate([location]);
   }
@@ -260,19 +274,21 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   autoCardType(number: any) {
     this.cardType = this.getCardType(number.target.value);
-    const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.cardType);
-    // tslint:disable-next-line: max-line-length
-    const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
-    this.paytypeid =  cardTypeId;
-    this.surchargeService.getIdPaytype(this.paytypeid);
-    this.payRentForm.patchValue({
-      objPayment: {
-        PayType: {
-          PayTypeDescription: this.cardType,
-          PayTypeID: cardTypeId,
+    if (this.cardType) {
+      const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.cardType);
+      // tslint:disable-next-line: max-line-length
+      const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
+      this.paytypeid =  cardTypeId;
+      this.surchargeService.getIdPaytype(this.paytypeid);
+      this.payRentForm.patchValue({
+        objPayment: {
+          PayType: {
+            PayTypeDescription: this.cardType,
+            PayTypeID: cardTypeId,
+          }
         }
-      }
-    });
+      });
+    }
    }
 
    getCardType(number: any) {
@@ -314,8 +330,8 @@ public navigateToPrevious() {
   selectChangeHandler(event: any) {
     this.selectedDescription = JSON.stringify(event.target.value);
     const indexValue = event.target.value;
-    const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
     if (this.lstPayTypes && this.lstPayTypes.length > 0) {
+    const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
     this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.payRentForm.patchValue({
@@ -416,16 +432,14 @@ public navigateToPrevious() {
             this.showInput = true;
           }
 
-            // tslint:disable-next-line: max-line-length
-            this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[1].PayTypeDescription);
-
-            const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
-
-             // tslint:disable-next-line: max-line-length
-             const defaultCardPayTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[1].PayTypeID);
+          // tslint:disable-next-line: max-line-length
+          this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[0].PayTypeDescription);
+          const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
+          // tslint:disable-next-line: max-line-length
+          const defaultCardPayTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
 
 
-          if (localStorage.getItem('strTenantToken')) {
+            if (localStorage.getItem('strTenantToken')) {
             this.paytypeid =  defaultCardPayTypeId;
             this.surchargeService.getIdPaytype(this.paytypeid);
             this.payRentForm.patchValue({
@@ -438,6 +452,7 @@ public navigateToPrevious() {
             });
           }
 
+
           this.payRentForm.patchValue({
             objPayment: {
               CCAccountNumber: Tenant.CCNumber,
@@ -446,7 +461,7 @@ public navigateToPrevious() {
               CCExpirationYear: Tenant.CCExpirationYear,
               CCAccountBillingAddress: Tenant.CCBillingAddress,
               CCAccountZIP: Tenant.CCBillingZIP,
-              SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
+              // SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
               // tslint:disable-next-line: max-line-length
               PaymentAmount: (this.navigateToMoveInPayment ? this.balance : (this.navigateToReserve ? this.TotalReserveAmount : this.totalMoveInAmount)),
             }
@@ -459,29 +474,36 @@ public navigateToPrevious() {
         if (err.status === 401) {
           localStorage.removeItem('strTenantToken');
           const navTo = localStorage.getItem('paymentNavigationUrl');
-          this.router.navigate([`${navTo}/pay-rent`]);
+          this.router.navigate([`/pay-rent`]);
           this.sessionExpire = 'Session Expired. Please Login for completing the payment.';
         }
       });
   }
 
   public navigateToConfirmation(location: any) {
-    this.router.navigate([location]);
+    this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${location}`]);
   }
 
   getPayMethods() {
    this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
       .subscribe(payTypesResponse => {
-        this.lstPayTypes = payTypesResponse.lstPayTypes;
+        this.cards.forEach(element => {
+          if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
+            const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
+             if (index > -1) {
+                this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
+              }
+          }
+        });
         if ((!!localStorage.getItem('strTenantToken')) && (this.router.url.includes(`${this.loginUrl}`))) {
           this.tenantTokenExist = true;
           this.showLoader = true;
           this.getTenantInfo();
         }
         if (!localStorage.getItem('strTenantToken')) {
-          const defaultDescription = this.lstPayTypes[1].PayTypeDescription;
-          const defaultPayTypeID = this.lstPayTypes[1].PayTypeID;
-          this.paytypeid =  this.lstPayTypes[1].PayTypeID;
+          const defaultDescription = this.lstPayTypes[0].PayTypeDescription;
+          const defaultPayTypeID = this.lstPayTypes[0].PayTypeID;
+          this.paytypeid =  this.lstPayTypes[0].PayTypeID;
           this.surchargeService.getIdPaytype(defaultPayTypeID);
           this.payRentForm.patchValue({
             objPayment: {
@@ -535,13 +557,13 @@ public navigateToPrevious() {
   makePayment(paymentData: any) {
     this.makePaymentForUnit = true;
 
-    if (this.toggleSignUp === true) {
-      if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
-      this.signUpAutoPay(this.signUp);
-    } else {
-      this.OptionOutOfAutoPay(this.signUp);
-    }
-    }
+    // if (this.toggleSignUp === true) {
+    //   if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
+    //   this.signUpAutoPay(this.signUp);
+    // } else {
+    //   this.OptionOutOfAutoPay(this.signUp);
+    // }
+    // }
 
     this.invalidPayment = null,
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
@@ -640,10 +662,10 @@ public navigateToPrevious() {
       this.showloaderForPayment = false;
 
       if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
-          } else {
-            this.router.navigate([`location/${this.facilityLocation}/reserve-unit/thank-you`]);
-          }
+        this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+      } else {
+        this.router.navigate([`location/${this.facilityLocation}/reserve-unit/thank-you`]);
+      }
     }
     }, (err: any) => {
       if (err.status === 403) {
@@ -737,39 +759,45 @@ public navigateToPrevious() {
       }
 
 
-      onSubmit() {
-        this.submitted = true;
-        if (this.payRentForm.invalid) {
-          return;
-        } else {
-          this.showloaderForPayment = true;
-            if (this.amountToPay > 0) {
-              this.payRentForm.patchValue({
-                objPayment: {
-                  PaymentAmount: this.amountToPay
-                }
-              });
-            } else if (this.customOtherValue > 0) {
-              this.payRentForm.patchValue({
-                objPayment: {
-                  PaymentAmount: this.customOtherValue
-                }
-              });
-            } else {
-              this.payRentForm.patchValue({
-                objPayment: {
-                  PaymentAmount: this.balance
-                }
-              });
+  onSubmit() {
+    this.submitted = true;
+    if (this.payRentForm.invalid) {
+      console.log('form invalid');
+      return;
+    } else {
+      console.log('form is valid');
+      this.showloaderForPayment = true;
+      if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
+        if (this.amountToPay > 0) {
+          this.payRentForm.patchValue({
+            objPayment: {
+              PaymentAmount: this.amountToPay
             }
-          if (!localStorage.getItem('strTenantToken') &&
-          !localStorage.getItem('strTempTenantToken')) {
-            this.addTenant(this.tenantData);
-          } else {
-            this.makePayment(this.payRentForm.value);
-          }
+          });
+        } else if (this.customOtherValue > 0) {
+          this.payRentForm.patchValue({
+            objPayment: {
+              PaymentAmount: this.customOtherValue
+            }
+          });
+        } else {
+          this.payRentForm.patchValue({
+            objPayment: {
+              PaymentAmount: this.balance
+            }
+          });
         }
       }
+
+      if (!localStorage.getItem('strTenantToken') &&
+      !localStorage.getItem('strTempTenantToken')) {
+        this.addTenant(this.tenantData);
+      } else {
+        this.makePayment(this.payRentForm.value);
+      }
+    }
+  }
+
 
   public ngOnDestroy(): void {
     if (this.OptionOutOfAutoPaySubscribe$ && this.OptionOutOfAutoPaySubscribe$.closed) {

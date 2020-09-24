@@ -49,6 +49,5 @@ export class ReserveComponent implements OnInit {
     this.dataSharingService.updateMyNavLink('viewRates', 'next', `${this.navTo}/${location}`);
     this.dataSharingService.updateMyNavLink('viewRates', 'prev', `${this.router.url}`);
     const myNavLinks = this.dataSharingService.getMyNavLinks('viewRates');
-    console.log('TCL: ViewRatesPageComponent -> navigate -> myNavLinks', myNavLinks);
   }
 }

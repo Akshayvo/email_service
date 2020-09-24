@@ -39,7 +39,6 @@ export class LocationComponent implements OnInit {
 
     ) {
       if (this.activatedRoute.snapshot.url[1].path) {
-        console.log('this.activatedRoute.snapshot.url[1].path', this.activatedRoute.snapshot.url[1].path);
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
       if (this.router.url.includes('/location/andrews')) {

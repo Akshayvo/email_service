@@ -26,7 +26,6 @@ export class FetchDataService {
   }
 
   getRentalPeriod(): Observable<RentalPeriod> {
-    console.log('TCL: FetchDataService -> constructor -> this.rentalPeriodUrl', this.rentalPeriodUrl);
     return this.http.get<RentalPeriod>(this.rentalPeriodUrl);
   }
 

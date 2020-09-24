@@ -331,7 +331,6 @@ export class AutoPayComponent implements OnInit, OnDestroy {
     this.count = this.count + 1;
     this.toggleSignUp = true;
     this.dataSharingService.signUpForAutoPay = !this.dataSharingService.signUpForAutoPay;
-    console.log('this.toggleSignUp', this.toggleSignUp, 'signUpForAutoPay', this.dataSharingService.signUpForAutoPay);
   }
 
   goBack() {

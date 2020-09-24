@@ -254,8 +254,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.gettingTenantData = true;
       }
     }
-    console.log('TCL: navigateToConfirmation -> this.dataSharingService.objTenant', this.dataSharingService.objTenant);
-
       this.reserveUnitForm.patchValue({
         objTenant: ({
           FirstName: this.dataSharingService.objTenant.FirstName,
@@ -275,11 +273,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           Description: this.Description,
         }])
       });
-
-
-    /* if (this.activatedRoute.snapshot.url[1].path === 'agricola') {
-      console.log('yes its ', this.activatedRoute.snapshot.url[1].path);
-    } */
 
     if (this.router.url.includes('reserve-unit')) {
       this.showPrevious = true;
@@ -355,18 +348,14 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const index = this.LstInsuranceChoices.findIndex(x => x.CoverageDescription === indexValue);
     this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[index].InsuranceChoiceID;
     this.premium = this.LstInsuranceChoices[index].Premium;
-    console.log(indexValue, index, this.dataSharingService.insuranceChoiceId);
     this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
   }
 
 
   changeRate(event: any) {
-    console.log('change rate according to period', event.target.value);
     const indexValue = event.target.value;
     const index = this.LstRentalPeriods.findIndex(x => x.PeriodDescription === indexValue);
     this.dataSharingService.periodID = this.LstRentalPeriods[index].PeriodID;
-    console.log('indexValue', indexValue, 'index', index, 'periodID', this.dataSharingService.periodID);
-
     this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
   }
 

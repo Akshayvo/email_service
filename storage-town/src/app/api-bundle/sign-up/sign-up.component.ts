@@ -13,7 +13,6 @@ export class SignUpComponent implements OnInit {
     private router: Router,
     private dataSharingService: DataSharingService,
   ) {
-    console.log('', this.router.url);
     localStorage.setItem('paymentTab', 'sign-up');
   }
 

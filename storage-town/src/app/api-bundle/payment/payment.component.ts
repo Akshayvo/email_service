@@ -68,8 +68,6 @@ export class PaymentComponent implements OnInit {
     } else {
       this.router.navigate(['/pay-rent']);
     }
-    // console.log('current url is', this.router.url);
-
   }
 
   receiveMessage() {
