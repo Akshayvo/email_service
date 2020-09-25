@@ -3,9 +3,9 @@ import { Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
        socialLinks,
        contactsLocation2,
-       hoursLocation2
+       hoursLocation2, contactsLocation3, hoursLocation3, contactsLocation4, hoursLocation4
           } from '../data/contact';
-import { tabs1, tabs2, headingLocation2 } from '../data/location';
+import { tabs1, tabs2, tabs3, tabs4, headingLocation2, headingLocation3, headingLocation4  } from '../data/location';
 import { headingLocation1 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -48,16 +48,30 @@ export class LocationComponent implements OnInit {
             });
             this.titleService.setTitle('Storage Units & Vehicle Parking in Floral City | Affordable Secure Storage');
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
-      } else {
-        if (this.router.url.includes('/location/affordable-secure-storage-west-hernando')) {
+      } else if (this.router.url.includes('/location/affordable-secure-storage-west-hernando')) {
           this.meta.addTag({
             name: 'description',
             content: `Take a moment to review our units and rates at our 7th location at 2633 East. Main Street! Then reserve online in a jiffy with our form!`
           });
           this.titleService.setTitle('Self Storage Units in Hernango | Affordable Secure Storage');
           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-    }
+    } else if (this.router.url.includes('/location/affordable-secure-storage-labelle')) {
+          this.meta.addTag({
+            name: 'description',
+            content: `Check out our quality self storage units and affordable rates at our Labelle location, then reserve or call today!`
+          });
+          this.titleService.setTitle('Self Storage Units and Parking in Labelle | Affordable Secure Storage');
+          this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
+    } else {
+      if (this.router.url.includes('/location/affordable-secure-storage-hernando')) {
+        this.meta.addTag({
+          name: 'description',
+          content: `Check out our quality self storage units and affordable rates at our Labelle location, then reserve or call today!`
+        });
+        this.titleService.setTitle('Self Storage Units and Parking in Hernando | Affordable Secure Storage');
+        this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       }
+    }
       this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
       this.imageBaseUrl = this.uaParserService.baseUrl;
     }
@@ -70,11 +84,15 @@ export class LocationComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/affordable-secure-storage-floral-city')) {
         this.fetchDetailsLocation1();
-    } else {
-      if (this.router.url.includes('/location/affordable-secure-storage-west-hernando')) {
+    } else if (this.router.url.includes('/location/affordable-secure-storage-west-hernando')) {
         this.fetchDetailsLocation2();
+    } else if (this.router.url.includes('/location/affordable-secure-storage-labelle')) {
+        this.fetchDetailsLocation3();
+    } else {
+      if (this.router.url.includes('/location/affordable-secure-storage-hernando')) {
+        this.fetchDetailsLocation4();
     }
-  }
+    }
  }
 
 
@@ -97,14 +115,36 @@ export class LocationComponent implements OnInit {
       this.socialLinks = socialLinks;
     }
 
+    public fetchDetailsLocation3() {
+      this.name = headingLocation3;
+      this.locationId = 3;
+      this.contacts = contactsLocation3;
+      this.hours = hoursLocation3;
+      this.tabs = tabs3;
+      this.socialLinks = socialLinks;
+    }
+
+    public fetchDetailsLocation4() {
+      this.name = headingLocation4;
+      this.locationId = 4;
+      this.contacts = contactsLocation4;
+      this.hours = hoursLocation4;
+      this.tabs = tabs4;
+      this.socialLinks = socialLinks;
+    }
+
 
    public navigateToReserve() {
     if ( this.locationId === 1 ) {
       this.router.navigate(['/location/affordable-secure-storage-floral-city/reserveUnit']);
-    } else {
-      if ( this.locationId === 2 ) {
+    } else if ( this.locationId === 2 ) {
         this.router.navigate(['/location/affordable-secure-storage-west-hernando/reserveUnit']);
+      } else if ( this.locationId === 3 ) {
+        this.router.navigate(['/location/affordable-secure-storage-labelle/reserveUnit']);
+      } else {
+        if ( this.locationId === 4 ) {
+          this.router.navigate(['/location/affordable-secure-storage-hernando/reserveUnit']);
+        }
       }
-    }
    }
 }

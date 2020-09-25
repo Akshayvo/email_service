@@ -5,7 +5,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsLocation1, contactsLocation2 } from '../../data/contact';
+import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4 } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
 
 @Injectable()
@@ -105,15 +105,27 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
-    } else {
-      if (this.router.url.includes('affordable-secure-storage-west-hernando')) {
+    } else if (this.router.url.includes('affordable-secure-storage-west-hernando')) {
         this.id = 2;
         this.name = 'Affordable Secure Storage - West Hernando';
         this.contact = contactsLocation2;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
         localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
+      } else if (this.router.url.includes('affordable-secure-storage-labelle')) {
+        this.id = 3;
+        this.name = 'Affordable Secure Storage - Labelle';
+        this.contact = contactsLocation3;
+        this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
+        localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
+      } else {
+        if (this.router.url.includes('affordable-secure-storage-hernando')) {
+          this.id = 4;
+          this.name = 'Affordable Secure Storage - Hernando';
+          this.contact = contactsLocation4;
+          this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
+          localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
+        }
       }
-    }
   }
 
   public navigate (location: any) {

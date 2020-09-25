@@ -74,6 +74,82 @@ export const hoursLocation2 = [
     }
 ];
 
+export const contactsLocation3 = [
+    {
+        id: 0,
+        label: 'Address:',
+        data: '5775 West, FL-80, LaBelle, FL 33935',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+    {
+        id: 1,
+        label: 'Phone:',
+        data: '(863) 674-1876',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:8636741876'
+    },
+    // {
+    //     id: 2,
+    //     label: 'Email:',
+    //     data: 'floralcity@affordablesecureselfstorage.com',
+    //     class: 'fas fa-envelope-open mr-2 iconColor',
+    //     redirect: 'mailto:floralcity@affordablesecureselfstorage.com'
+    // },
+];
+
+export const hoursLocation3 = [
+    {
+        label: 'Mon - Fri: ',
+        data: '9:00AM to 5:00PM',
+    },
+    {
+        label: 'Sat - Sun: ',
+        data: 'CLOSED'
+    },
+    {
+        label: 'Access Hours: ',
+        data: '24 Hours a Day 7 Days a Week'
+    }
+];
+
+export const contactsLocation4 = [
+    {
+        id: 0,
+        label: 'Address:',
+        data: '2405 E Norvell Bryant Hwy, Hernando, FL 34442',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+    {
+        id: 1,
+        label: 'Phone:',
+        data: '(352) 765-3673',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:3527653673'
+    },
+    // {
+    //     id: 2,
+    //     label: 'Email:',
+    //     data: 'floralcity@affordablesecureselfstorage.com',
+    //     class: 'fas fa-envelope-open mr-2 iconColor',
+    //     redirect: 'mailto:floralcity@affordablesecureselfstorage.com'
+    // },
+];
+
+export const hoursLocation4 = [
+    {
+        label: 'Mon - Fri: ',
+        data: '9:00AM to 5:00PM',
+    },
+    {
+        label: 'Sat - Sun: ',
+        data: 'CLOSED'
+    },
+    {
+        label: 'Access Hours: ',
+        data: '24 Hours a Day 7 Days a Week'
+    }
+];
+
 export const socialLinks = [
     {
         label: 'facebook',

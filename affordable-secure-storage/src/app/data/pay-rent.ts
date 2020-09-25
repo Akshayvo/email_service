@@ -22,6 +22,16 @@ export const tableData = [
     address: '2912 N Florida Ave, Hernando, FL 34442',
     url: 'affordable-secure-storage-west-hernando'
   },
+  {
+    facility: 'Affordable Secure Storage - Labelle',
+    address: '5775 West, FL-80, LaBelle, FL 33935',
+    url: 'affordable-secure-storage-labelle'
+  },
+  {
+    facility: 'Affordable Secure Storage - Hernando',
+    address: '2405 E Norvell Bryant Hwy, Hernando, FL 34442',
+    url: 'affordable-secure-storage-hernando'
+  },
 ];
 
 export const loginDetail = [

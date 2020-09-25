@@ -19,6 +19,16 @@ export const navLinks = [
                 label: 'Affordable Secure Storage - West Hernando',
                 path: '/location/affordable-secure-storage-west-hernando',
             },
+            {
+                id: '3',
+                label: 'Affordable Secure Storage - Labelle',
+                path: '/location/affordable-secure-storage-labelle',
+            },
+            {
+                id: '4',
+                label: 'Affordable Secure Storage - Hernando',
+                path: '/location/affordable-secure-storage-hernando',
+            }
         ]
     },
     {

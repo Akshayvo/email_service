@@ -123,6 +123,97 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
+
+    { path: 'location/affordable-secure-storage-labelle',
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+        { path: 'storageUnits', component: ViewRatesComponent,
+          children: [
+            { path: '', component: ViewRatesPageComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+          ]
+        },
+        { path: 'unitSizer', component: UnitSizerComponent },
+        { path: 'reserveUnit', component: ReserveComponent,
+          children: [
+            // { path: '', component: ViewRatesPageComponent },
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+          ]
+        },
+        { path: 'moveIn', component: ReserveComponent,
+          children: [
+            // { path: '', component: ViewRatesPageComponent },
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+          ]
+        },
+        { path: 'photos', component: GalleryComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
+
+    { path: 'location/affordable-secure-storage-hernando',
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+        { path: 'storageUnits', component: ViewRatesComponent,
+          children: [
+            { path: '', component: ViewRatesPageComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+          ]
+        },
+        { path: 'unitSizer', component: UnitSizerComponent },
+        { path: 'reserveUnit', component: ReserveComponent,
+          children: [
+            // { path: '', component: ViewRatesPageComponent },
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+          ]
+        },
+        { path: 'moveIn', component: ReserveComponent,
+          children: [
+            // { path: '', component: ViewRatesPageComponent },
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+          ]
+        },
+        { path: 'photos', component: GalleryComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
+
     { path: 'review/affordable-secure-storage-floral-city', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
@@ -213,6 +304,69 @@ export const apiRoutes = [
       }
     ]
   },
+
+  {
+    path: 'pay-rent/affordable-secure-storage-labelle', component: PayRentComponent,
+    children: [
+      { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
+      { path: 'rent-sub', component: RentSubComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      },
+      { path: 'sign-up', component: SignUpComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      }
+    ]
+  },
+
+  {
+    path: 'pay-rent/affordable-secure-storage-hernando', component: PayRentComponent,
+    children: [
+      { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
+      { path: 'rent-sub', component: RentSubComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      },
+      { path: 'sign-up', component: SignUpComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      }
+    ]
+  },
+
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: ErrorComponent },
