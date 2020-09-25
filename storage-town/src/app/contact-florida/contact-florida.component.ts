@@ -28,6 +28,7 @@ export class ContactFloridaComponent implements OnInit {
   completeMessage: string;
   locationId: any;
   subject: any;
+  eventName: string;
 
   contactForm: FormGroup;
   submitted = false;
@@ -112,6 +113,16 @@ export class ContactFloridaComponent implements OnInit {
   }
 
 onSubmit() {
+  const today = new Date();
+    this.eventName = 'ContactFormsubmission';
+  window['dataLayer'] = window['dataLayer'] || {};
+  window['dataLayer'] = window['dataLayer'] || [];
+  window['dataLayer'].push({
+    'event': this.eventName,
+    'location' : this.heading,
+    'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+    'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+  });
   this.submitted = true;
 
  // stop here if form is invalid

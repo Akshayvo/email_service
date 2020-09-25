@@ -29,11 +29,13 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   CCApprovalCode: string;
   eventName: string;
   paymentNavigationUrl: string;
+  locationName: string;
 
   MoveIn = {
     dteMoveIn: '',
     intUnitTypeID: 0,
   };
+
 
   private signOutSubscribe$: Subscription;
 
@@ -62,6 +64,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.PaymentAmount = this.dataSharingService.PaymentAmount;
     this.CCApprovalCode = this.dataSharingService.CCApprovalCode;
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
+    this.locationName =  this.dataSharingService.locationName;
 
 
     if (localStorage.getItem('strTenantToken')) {
@@ -71,89 +74,20 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     if (localStorage.getItem('paymentNavigationUrl')) {
       this.paymentNavigationUrl = localStorage.getItem('paymentNavigationUrl');
     }
-    // this.fetchScript();
     const today = new Date();
     this.eventName = 'reservation';
     window['dataLayer'] = window['dataLayer'] || {};
     window['dataLayer'] = window['dataLayer'] || [];
         window['dataLayer'].push({
           'event': this.eventName,
-          'location' : this.paymentNavigationUrl,
-          'confirmationNumber' : this.CCApprovalCode,
+          'location' : this.locationName,
+          'confirmationNumber' : this.strConfirmation,
           'unitType':  this.description,
-          'price': this.monthlyRate,
+          'price': this.monthlyRate && this.monthlyRate || '',
           'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
           'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
         });
   }
-
-  // public fetchScript() {
-  //   const today = new Date();
-  //   switch (true) {
-  //     case this.navigateToMoveIn: {
-  //       this.script = function dataLayer() {
-  //         window['dataLayer'] = window['dataLayer'] || [];
-  //           window['dataLayer'].push({
-  //           event: this.eventName,
-  //           'location' : 'variable_value',
-  //           'confirmationNumber' : 'variable_value',
-  //           'unitType': 'variable_value',
-  //           'price': 'variable_value',
-  //           'date': 'variable_value',
-  //           'time': 'variable_value'
-  //         });
-  //       };
-  //       this.eventName = 'move-in';
-  //       break;
-  //     }
-  //     case this.navigateToReserve: {
-  //       this.script = function dataLayer() {
-  //         window['dataLayer'] = window['dataLayer'] || [];
-  //           window['dataLayer'].push({
-  //           'event': this.eventName,
-  //           'location' : 'variable_value',
-  //           'confirmationNumber' : 'variable_value',
-  //           'unitType': 'variable_value',
-  //           'price': 'variable_value',
-  //           'date': 'variable_value',
-  //           'time': 'variable_value'
-  //         });
-  //       };
-  //       this.eventName = 'reservation';
-  //       break;
-  //     }
-  //     case (!this.navigateToReserve && !this.navigateToMoveIn): {
-  //       this.script = function dataLayer() {
-  //         window['dataLayer'] = window['dataLayer'] || [];
-  //           window['dataLayer'].push({
-  //           'event': this.eventName,
-  //           'location' : this.paymentNavigationUrl,
-  //           'confirmationNumber' : this.CCApprovalCode,
-  //           'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
-  //           'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
-  //         });
-  //       };
-  //       this.eventName = 'reservation';
-  //       break;
-  //     }
-  //     default: {
-  //       this.script = function dataLayer() {
-  //         window['dataLayer'] = window['dataLayer'] || [];
-  //           window['dataLayer'].push({
-  //           'event': this.eventName,
-  //           'location' : 'variable_value',
-  //           'confirmationNumber' : 'variable_value',
-  //           'unitType': 'variable_value',
-  //           'price': 'variable_value',
-  //           'date': 'variable_value',
-  //           'time': 'variable_value'
-  //         });
-  //       };
-  //     }
-  //       this.eventName = 'ContactFormsubmission';
-  //       break;
-  //   }
-  // }
 
   public navigate(location: any) {
     this.router.navigate([location]);

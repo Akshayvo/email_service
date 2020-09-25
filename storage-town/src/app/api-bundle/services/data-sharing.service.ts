@@ -19,6 +19,7 @@ export class DataSharingService {
 //     loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
 //   };
 
+  locationName: string;
   strConfirmation: string;
   strAccessCode: string;
   facilityLocation: string;

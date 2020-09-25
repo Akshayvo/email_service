@@ -65,9 +65,19 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
+    const today = new Date();
+    this.eventName = 'ContactFormsubmission';
     window['dataLayer'] = window['dataLayer'] || {};
     window.scrollTo(0, 0);
   this.receiveMessage();
+  window['dataLayer'] = window['dataLayer'] || {};
+  window['dataLayer'] = window['dataLayer'] || [];
+  window['dataLayer'].push({
+    'event': this.eventName,
+    'location' : this.heading,
+    'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+    'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+  });
 }
 
   get f() { return this.contactForm.controls; }
@@ -118,16 +128,17 @@ export class ContactComponent implements OnInit {
   }
 
 onSubmit() {
+  this.submitted = true;
   const today = new Date();
   this.eventName = 'ContactFormsubmission';
+  window['dataLayer'] = window['dataLayer'] || {};
   window['dataLayer'] = window['dataLayer'] || [];
-      window['dataLayer'].push({
-        'event': this.eventName,
-        'location' : this.heading,
-        'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
-        'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
-      });
-  this.submitted = true;
+  window['dataLayer'].push({
+    'event': this.eventName,
+    'location' : this.heading,
+    'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+    'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+  });
 
  // stop here if form is invalid
  if (this.contactForm.invalid) {

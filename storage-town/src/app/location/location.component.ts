@@ -27,6 +27,7 @@ export class LocationComponent implements OnInit {
   iframeAdd: any;
   head: any;
   tabs: any;
+  locationName: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -49,7 +50,11 @@ export class LocationComponent implements OnInit {
               are individually alarmed for your safety!`
             });
             this.titleService.setTitle('Storage Units in Chester, NY | StorageTown Rental Spaces');
+            this.locationName = `StorageTown Rental Spaces - Chester - Brookside Ave`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+            this.dataSharingService.locationName = this.locationName;
+
+
     } else if (this.router.url.includes('/location/chester')) {
       this.canonical.create();
            this.meta.addTag({
@@ -58,7 +63,11 @@ export class LocationComponent implements OnInit {
              storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!`
            });
            this.titleService.setTitle('Self Storage Units in Chester | StorageTown Rental Spaces');
+           this.locationName = `StorageTown Rental Spaces - Chester - Andrews Lane `;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+           this.dataSharingService.locationName = this.locationName;
+
+
       } else if (this.router.url.includes('/location/montgomery-walden')) {
         this.canonical.create();
         this.meta.addTag({
@@ -67,7 +76,10 @@ export class LocationComponent implements OnInit {
           fully-fenced storage facility! Call (845) 457-3500 to learn more!`
         });
         this.titleService.setTitle('Storage Units in Montgomery, NY | StorageTown Rental Spaces');
+        this.locationName = `StorageTown Rental Spaces - Montgomery/Walden`;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
+        this.dataSharingService.locationName = this.locationName;
+
    } else if (this.router.url.includes('/location/middletown-wallKill')) {
     this.canonical.create();
     this.meta.addTag({
@@ -76,7 +88,9 @@ export class LocationComponent implements OnInit {
       well maintained, fully-fenced in self storage units 7 days a week!`
     });
     this.titleService.setTitle('Self Storage Units in Middletown | StorageTown Rental Spaces');
+    this.locationName = `StorageTown - Middletown/WallKill Location`;
     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
+    this.dataSharingService.locationName = this.locationName;
   }
 }
 
