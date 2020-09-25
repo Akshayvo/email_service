@@ -81,9 +81,9 @@ export const contactsLocation3 = [
     {
         id: 2,
         label: 'Email:',
-        data: 'sanghmitra.v@codeparva.in',
+        data: 'storagetownmontgomery@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:sanghmitra.v@codeparva.in'
+        redirect: 'mailto:storagetownmontgomery@gmail.com'
     },
     {
         id: 3,
