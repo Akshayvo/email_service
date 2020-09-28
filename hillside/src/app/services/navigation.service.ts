@@ -112,7 +112,6 @@ export class NavigationService {
 
   public updateHistoryLog(event: any) {
     this.historyLogs.push(event);
-    console.log(this.historyLogs);
   }
 
   getHistoryLog() {
