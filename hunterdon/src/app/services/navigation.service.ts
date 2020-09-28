@@ -115,6 +115,8 @@ export class NavigationService {
   }
 
   getHistoryLog() {
-    return this.historyLogs;
+    if (this.historyLogs) {
+      return this.historyLogs;
+    }
   }
 }
