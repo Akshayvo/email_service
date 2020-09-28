@@ -12,9 +12,9 @@ export const environment = {
   appId: 'Sandridge RV & Boat Storage - testing',
   VERSION:  require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
+  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // north demo
   // APIKey: `dTJXOEQ5UDJINE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 28924 sun prairie
-  APIKey: `dzF0OFc4SjIqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 18824 sandridge
+  // APIKey: `dzF0OFc4SjIqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 18824 sandridge
 };
 
 /*

@@ -492,10 +492,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
         this.showloaderForPayment = false;
+        console.log (paymentDataResponse);
         if (paymentDataResponse && paymentDataResponse.PayTypeForResult && paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
           this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
+          this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         }
-        this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         if ( paymentDataResponse.intErrorCode === 1 ) {
           if (this.navigateToReserve) {
             this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
