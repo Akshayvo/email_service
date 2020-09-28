@@ -47,6 +47,8 @@ import { MaterialModule } from './modules/material/material.module';
 import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
 import { CanDeactivateGuard } from './preventRouteChange.guard';
+import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
+import { ScriptHackComponent } from './script-hack/script-hack.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,6 +78,8 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
     ChangePasswordComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
+    ThankYouComponent,
+    ScriptHackComponent,
   ],
   imports: [
     CommonModule,

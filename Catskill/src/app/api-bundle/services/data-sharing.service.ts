@@ -12,7 +12,14 @@ export class DataSharingService {
   isValueUpdated: boolean;
   changePassword: boolean;
   showLogin: boolean;
+  strConfirmation: any;
+  strAccessCode: any;
+  CCApprovalCode: any;
+  PaymentAmount: any;
+  addingTenant = false;
+  periodID: number;
 
+  insuranceChoiceId: number;
 
   MoveInData = {
     Description: '',

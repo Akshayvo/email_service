@@ -4,39 +4,7 @@
         <p class="px-2 my-2" *ngIf="!navigateToMoveIn"><b>Confirming your Reservation, please wait...</b></p>
         <p class="px-2 my-2" *ngIf="navigateToMoveIn"><b>Confirming your Move in, please wait...</b></p>
     </div>
-<div class="pb-4" *ngIf="strConfirmation || strAccessCode; else other_content">
-    <div *ngIf="ReservationFee === undefined">
-        Your reservation was successful.
-        <div class="py-4">
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="td-1">Confirmation Number </td>
-                        <td>{{strConfirmation || strAccessCode}}</td>
-                    </tr>
-                    <tr>
-                        <td class="td-1">Unit Type</td>
-                        <td>{{description}} </td>
-                    </tr>
-                    <tr>
-                        <td class="td-1">Rate</td>
-                        <td> <span *ngIf="monthlyRate > 0 || monthlyRate !== undefined">$</span>{{monthlyRate}}</td>
-                    </tr> 
-                    <tr *ngIf="!navigateToMoveIn">
-                        <td> Move In Date</td>
-                        <td>{{MoveIn.dteMoveIn}}</td>
-                    </tr>
-                    </tbody>
-            </table>
-        </div>
-        <div>
-            <button *ngIf="tokenExit" (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
-            <div class="py-3 home-link"><a (click)="navigate('/')">Go to Home</a></div>
-        </div>
-    </div>
-</div>
 
-<ng-template #other_content>
     <div class="row">
         <div class="col-md-6 p-3">
                 <h3 class="mb-3">Tenant Information</h3>
@@ -186,4 +154,3 @@
             *ngIf="navigateToMoveIn" >Move In</button>
         </div>
     </div>
-</ng-template> 

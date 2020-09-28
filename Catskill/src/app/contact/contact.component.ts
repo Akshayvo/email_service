@@ -87,6 +87,14 @@ export class ContactComponent implements OnInit {
 
 
   onSubmit() {
+    const today = new Date();
+    window['dataLayer'] = window['dataLayer'] || {};
+    window['dataLayer'] = window['dataLayer'] || [];
+    window['dataLayer'].push({
+      'event': 'ContactFormsubmission',
+      'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+      'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+    });
 
     this.submitted = true;
 

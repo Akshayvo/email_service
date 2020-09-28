@@ -104,6 +104,7 @@ export class UnpaidAR {
 
 export class StrTempTenantToken {
   strTempTenantToken: string;
+  intErrorCode: number;
 
   constructor(strTempTenantToken: string) {
     this.strTempTenantToken = strTempTenantToken;

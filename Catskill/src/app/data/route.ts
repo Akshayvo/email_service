@@ -20,6 +20,7 @@ import { ChangePasswordComponent } from '../api-bundle/change-password/change-pa
 import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.component';
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
+import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
@@ -38,6 +39,7 @@ import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
         { path: 'confirmation', component: ConfirmationDataComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
+        { path: 'thank-you', component: ThankYouComponent }
       ]
      },
     {
@@ -49,8 +51,9 @@ import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
         {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
         {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
         { path: 'verifyCode', component: VerifyCodeComponent },
-        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
         // canActivate: [VerifictionCodeGuard]
+        { path: 'thank-you', component: ThankYouComponent }
       ]
     },
     { path: 'forgot-password', component: ForgotPasswordComponent },

@@ -28,3 +28,6 @@ export const unitSizerPageContent = ``;
 export const contactPageTitle = `Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414`;
 export const contactPageContent = `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
 and U-Haul truck rental questions! Simply call or drop us a line!`;
+
+export const thankYouPageTitle = `Thank You!`;
+export const thankYouPageContent = ``;
