@@ -108,7 +108,7 @@ h1 {
 }
 
 .getStarted {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Self_storage_Inc/jpg/affordable-self-storage-office.jpg") center top no-repeat fixed;;
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Self_storage_Inc/jpg/affordable-self-storage-office.jpg") center top no-repeat fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -628,13 +628,21 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .layout2 {
+    // background: #ECE52B;
+    background-position: 70% 0;
+  }
+}
+
 @media only screen and (max-width: 600px) and (min-width: 420px) {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    background-position: right 30% bottom 0px;
     height: 100vh;
   }
+  
 
   .feature {
     display: none;
@@ -669,7 +677,7 @@ h1 {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    background-position: right 30% bottom 0;
     height: 100vh;
   }
 

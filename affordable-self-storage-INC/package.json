@@ -1,6 +1,6 @@
 {
   "name": "affordable-self-storage",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxyconfig.json",
@@ -44,6 +44,7 @@
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "ua-parser-js": "^0.7.20",
+    "undefined": "^0.1.0",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
@@ -71,7 +72,7 @@
     "ts-loader": "^4.2.0",
     "ts-node": "~7.0.0",
     "tslint": "^5.14.0",
-    "typescript": "^3.1.6",
+    "typescript": "^3.2.4",
     "typescript-tslint-plugin": "^0.5.5",
     "webpack-cli": "^3.3.0"
   }
