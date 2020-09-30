@@ -17,7 +17,7 @@
           </div>
           <div class="jumbotorn-button">
             <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a></div>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">Reserve Unit</a></div>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@
       <div class="section py-4 m-0">
         <div class="row">
           <div class="col-lg-6 py-3 home-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12164.66894417601!2d-104.868233!3d40.338636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x834285689c647588!2sMilliken%20Self%20Storage%20Inc!5e0!3m2!1sen!2sus!4v1596389236461!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11048.111111842407!2d-122.905302!3d46.1900059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb2d73f608a3ddf!2sGordon&#39;s%20Mini-Storage!5e0!3m2!1sen!2sus!4v1600978304141!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
           </div>
 
           <div class="col-lg-6 py-3">
@@ -72,8 +72,9 @@
     <div class="section py-5 m-0">
       <div class="row">
         <div class="col-lg-6 py-3">
-          <img src="{{imageBaseUrl}}/milliken-self-storage-photo-temporary.{{imagetype}}"
-          width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
+          <!-- <img src="{{imageBaseUrl}}/.{{imagetype}}"
+          width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
+          <app-photos></app-photos>
         </div>
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
@@ -92,9 +93,9 @@
         <div id="demo" class="carousel slide" data-ride="carousel">
 
             <!-- Indicators -->
-            <ul class="carousel-indicators">
+            <!-- <ul class="carousel-indicators">
               <li data-target="#demo" *ngFor="let testimonials of testimonials" data-slide-to="testimonials?.id" [class.active]="testimonials?.id === 0"></li>
-            </ul>
+            </ul> -->
           
             <!-- The slideshow -->
             <div class="carousel-inner ">
@@ -119,7 +120,7 @@
           <div class="col-md-12 py-3">
             <h2 class="heading pb-4">{{gettingStarted.heading}}</h2>
             <p class="pb-4">{{gettingStarted.p}}</p>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit Now!</a>
+            <a class="btn btn-lg btn-primary" (click)="navigate(' /view-rates')" role="button">View Rates</a>
           </div>
         </div>
       </div>

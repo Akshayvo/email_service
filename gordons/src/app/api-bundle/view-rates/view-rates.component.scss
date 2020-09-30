@@ -15,7 +15,7 @@ table {
   width: -webkit-fill-available;
 
   thead {
-    background: $secondary;
+    background: $primary;
     th {
       color: $white;
       font-size: 1rem;
@@ -52,7 +52,7 @@ table {
 
 .loader {
   border: 5px solid #f3f3f3;
-  border-top: 5px solid $secondary;
+  border-top: 5px solid $primary;
   border-radius: 50%;
   width: 80px;
   height: 80px;

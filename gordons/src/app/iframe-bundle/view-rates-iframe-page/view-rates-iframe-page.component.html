@@ -10,8 +10,9 @@
       </div>
       <div class="col-md-5 px-4">
         <h3 class="view-rate-heading">Amenities</h3>
-        <img src="{{imageBaseUrl}}/milliken-self-storage-photo-temporary.{{imagetype}}"
-        alt="{{viewRatesAltText}}" class="sectionImage" />
+        <!-- <img src="{{imageBaseUrl}}/.{{imagetype}}"
+        alt="{{viewRatesAltText}}" class="sectionImage" /> -->
+        <app-photos></app-photos>
         <p class="view-rate-text text-justify" *ngFor="let viewRates of viewRates">
           {{viewRates.p}}
         </p>

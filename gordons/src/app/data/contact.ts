@@ -28,7 +28,7 @@ export const hours = [
     },
     {
         label: 'Saturday: ',
-        data: 'CLOSED'
+        data: '9:00AM - 2:00PM'
     },
     {
         label: 'Sunday: ',
@@ -41,14 +41,14 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    {
-        label: 'twitter',
-        path: '',
-        class: 'fab fa-twitter-square',
-    },
-    {
-        label: 'facebook',
-        path: '',
-        class: 'fab fa-facebook-square',
-    },
+    // {
+    //     label: 'twitter',
+    //     path: '',
+    //     class: 'fab fa-twitter-square',
+    // },
+    // {
+    //     label: 'facebook',
+    //     path: '',
+    //     class: 'fab fa-facebook-square',
+    // },
 ];

@@ -5,19 +5,20 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
+  template: 'lightTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Milliken Self Storage - Testing',
+  appId: `Gordon's Mini Storage - Testing`,
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://milliken-staging.netlify.app',
+  websiteUrl: '',
   // baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // APIKey: `PDFyNHQxSDVZMEE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 14150 millken
   // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
+  // APIKey: `dzJ0N1czSjUqMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // gordan's 27351
   // APIKey: `dzJ0OFc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464 (For 0 reservetion charges)
   // baseUrl: `http://localhost:60444/api/`,
 };

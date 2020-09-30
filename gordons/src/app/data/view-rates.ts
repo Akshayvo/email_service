@@ -2,14 +2,13 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Take a moment to check out our current available units, then reserve your space with a few clicks!
-      Our friendly management team will be in touch to confirm your reservation and help prepare your unit.
-      Once you've completed our easy move-in process, you'll be free to pay your rent or sign up for automatic
-      payments 24 hours a day through our tenant portal. It couldn't be any easier!`,
+      p: `Gordon's Mini Storage offers a variety of storage units from  our 5ft x 8ft units
+      perfect for seasonal decorations, or a walk-in closet's worth of belongings to our huge
+      10ft by 25ft units that will hold the contents of any storage project! `,
     },
     {
-      p: `If you have any questions before reserving a unit call our offices at (970) 587-9100,
-      and one of our friendly managers will be happy to assist you!`
+      p: `You'll find our pricing extremely affordable, and our customer service beyond compare!
+      Start your storage journey today by reserving online with our easy online form, or call our offices today!`
     }
 ];
 
@@ -24,10 +23,10 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    data: 'Reservation Setup Fee',
-    state: objSIMSetting.objUnitSizesSetting.blnShowSetupFee
-  },
+  // {
+  //   data: 'Reservation Setup Fee',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowSetupFee
+  // },
   {
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
@@ -36,10 +35,10 @@ export const th = [
   //   data: `Move In`,
   //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
   // },
-  // {
-  //   data: `Climate Control`,
-  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  // },
+  {
+    data: `Climate Control`,
+    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  },
 ];
 
 

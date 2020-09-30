@@ -23,35 +23,36 @@ export const featuresList = [
 
 export const aboutUsAlt = `open metal self storage unit revealing toys, boxes, luggage, and shelving`;
 
-export const aboutUsHeading = `Self Storage Units for Rent in Milliken, CO`;
+export const aboutUsHeading = `Affordable Storage Units in Kelso, WA`;
 
 export const aboutUs = [
     {
-        p: `Milliken Self Storage has been serving Milliken, Windsor, Loveland,  and the surrounding communities
-        with excellent service, easy rental terms, and competitive self storage rates since 2005. Our facility is
-        locally owned & operated, so you know we're invested in the community, and value the satisfaction of the
-        friends and neighbors we service.`,
+        p: `Gordon’s Mini Storage proudly serves Kelso and the surrounding communities in Southwest Washington
+        with clean, affordable self storage and amazing customer service. You’ll find our prices are very
+        affordable, and our range of regular and climate controlled self storage units covers just about
+        any storage need!`,
     },
     {
-        p: `You'll find the amenities at Milliken Self Storage to provide a modern, convenient, and security-minded
-        experience. Our facility is covered by security cameras, and our grounds are fully-fenced with a keypad
-        activated gate to control and monitor access to the units. You can review our available units and rates,
-        then reserve your unit online in seconds through our website. Once you've moved in, our online bill-pay
-        service makes paying rent 24 hours a day possible!`,
+        p: `Our facility is conveniently located off of Westside Highway across from Rainbow Way next to
+        the Lexington Fire Department. We understand security is a top concern when you rent from a storage
+        facility, which is why we are well-lit and fenced with ample security cameras placed around the
+        grounds. Every tenant also has a personal pin-code to permit access during our gate hours.`,
     },
     {
-        p: `Residential and business storage users have found Milliken Self Storage to be the perfect solution
-        to give them that extra few(or many!) square feet around the home, office, or worksite. Our residential
-        users love freeing upwards of an extra garage's worth of space for furniture, clothes, appliances or
-        yard equipment. Our business users recognize the value of self storage for inventory, equipment, or tools
-        that aren't worth paying commercial real estate prices just to store. `,
+        p: `You’ll find that our facility is also built for convenience from our easy to access location
+        to our simple online reservation form and online bill-pay service. Need tape, boxes, or unit lock?
+        We’ve got you covered with plenty of packing supplies, just stop into our front office and ask!`,
+    },
+    {
+        p: `Whether you’re a growing business in need of extra space for inventory, supplies, and equipment,
+        or if you’re a residential user preparing for a move or renovation, Gordon’s Mini Storage has you covered!`,
     },
 ];
 
 export const gettingStarted = {
     heading: 'Getting Started',
-    p: `Are you ready to start de-cluttering your home, office, or worksite today? Check out our availability and pricing,
-    then reserve your unit in minutes! Start enjoying that extra elbow room today!`
+    p: `Are you ready to start cleaning that garage or basement? How about tackling that attic or yard de-cluttering
+    project? Our affordable regular and climate controlled storage units are the perfect solution! Click below to reserve today!`
 };
 
 export const feature = [
@@ -63,15 +64,15 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
-        label: 'Stellar Customer Service',
-        alt: 'Customer Service Representative Icon'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg`,
+        label: 'Online Reservation & Bill Pay',
+        alt: 'Icon art displaying a screen with cursor'
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg`,
-        label: 'Well-Lit Facility',
-        alt: 'Icon of an illuminated light'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg`,
+        label: 'Climate Controlled',
+        alt: 'Icon of thermometer indicating climate-controlled units'
 
     },
     {
@@ -84,13 +85,10 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h1: `Affordable Storage Units in Milliken, CO`,
-        blurb: `Milliken Self Storage has been serving Milliken,
-        Johnstown, and the surrounding communities since 2005 with clean,
-        well-maintained, and affordable self storage services backed by awesome
-        customer service! We are locally owned & operated, and our management team is
-        ready to help make your next storage project an easy, and economical one! Reserve
-        your unit online, or call us today!`,
+        h1: `Regular & Climate Controlled Self Storage`,
+        blurb: `Gordon's Mini Storage serves Kelso, Longview, Castlerock, and the surrounding
+        area with a wide variety of regular and climate controlled self storage units at affordable
+        prices. Call or reserve your unit online in seconds!`,
     }
 ];
 
@@ -98,17 +96,7 @@ export const jumbotron = [
 export const testimonials = [
     {
         id: 0,
-        feedback: 'Two years of using this as storage for our RV and love it.  Fair prices and Linda is great to work with! So happy we found this place!  ',
-        name: '- Tamara S.',
-    },
-    {
-        id: 1,
-        feedback: 'Awesome storage facility and great price!',
-        name: '- Yevette M.',
-    },
-    {
-        id: 2,
-        feedback: 'Milliken Self Storage had the best customer service you could ask for.  Getting a unit was convenient and provided a great price! I highly recommend Milliken Self Storage!!! ',
-        name: '- Casey B',
+        feedback: `"Wonderful experience with this storage place. They went above and beyond in helping me meet my needs for my dad. Thank you!"`,
+        name: '- Jennifer Venard',
     },
 ];

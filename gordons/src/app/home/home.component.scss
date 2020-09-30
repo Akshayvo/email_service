@@ -1,11 +1,11 @@
 @import "../../styles.scss";
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Milliken_Self_Storage_Images/webp/milliken-self-storage-jumbotron-temporary.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Gordans_Mini_Storage/webp/gordons-mini-storage-jumbotron.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Milliken_Self_Storage_Images/jpg/milliken-self-storage-jumbotron-temporary.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Gordans_Mini_Storage/jpg/gordons-mini-storage-jumbotron.jpg");
 }
 
 .jumbotron {
@@ -60,7 +60,7 @@ h1 {
 
 .disp {
   text-align: left;
-  color: $white;
+  color: $black;
 
   h2 {
     font-size: 2.5rem;
@@ -96,9 +96,15 @@ h1 {
   width: 24%;
   position: absolute;
   top: 30%;
+  color: $black !important;
 
   .btn-outline-primary {
     margin-right: 10px;
+    color: $primary !important;
+  }
+
+  .btn-outline-primary:hover {
+    color: $white !important;
   }
 }
 
