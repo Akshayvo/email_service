@@ -222,7 +222,7 @@ getTenantUnitData() {
         if (strConfirmationResponse.intErrorCode === 1) {
           this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
           this.showConfirmation = false;
-          this.router.navigate(['/view-rates/confirmation-page']);
+          this.router.navigate([`pay-rent/thank-you`]);
           this.reservationInProgress = false;
         }
       }, (err: any) => {
@@ -253,7 +253,7 @@ getTenantUnitData() {
       this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
         .subscribe(strConfirmationResponse => {
           this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
-          this.router.navigate(['/view-rates/confirmation-page']);
+          this.router.navigate([`pay-rent/thank-you`]);
           this.reservationInProgress = false;
         }, (err: any) => {
           if (err.status === 403) {

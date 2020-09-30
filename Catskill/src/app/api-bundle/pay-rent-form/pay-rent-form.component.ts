@@ -565,7 +565,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               this.moveIn(this.MoveIn);
             } else {
               this.router.navigate([`pay-rent/thank-you`]);
-
             }
           }
           this.showSuccessPayment = true;
