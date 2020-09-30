@@ -230,7 +230,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     });
   }
 
-  ngOnInit() {
+  ngOnInit() {    
     this.Description = this.dataSharingService.getReservationData().Description;
     this.MonthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
@@ -498,12 +498,11 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
           this.dataSharingService.LstUnitTypes.Description = this.Description;
           this.dataSharingService.LstUnitTypes.UnitTypeID = this.UnitTypeID;
-          // this.dataSharingService.LstUnitTypes.MonthlyRate = this.MonthlyRate;
-          this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
+          this.dataSharingService.LstUnitTypes.MonthlyRate = this.MonthlyRate;
           this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
           this.dataSharingService.LstUnitTypes.BiAnnualRate = this.biAnnualRate;
           this.dataSharingService.LstUnitTypes.QuarterRate = this.quarterRate;
-
+          
         } else {
           this.reserveUnitForm.patchValue({
             lstUnitTypes: ([{
