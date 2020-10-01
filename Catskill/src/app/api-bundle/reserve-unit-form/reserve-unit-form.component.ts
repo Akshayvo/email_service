@@ -73,7 +73,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   ReservationFeeValue: number;
   ReservationFeeTax: number;
   reservationInProgress = false;
-  UnitTypeRate: number;
+  MonthlyRate: number;
   Description: string;
   defaultReservationFee: number;
   defaultReservationFeeTax: number;
@@ -235,7 +235,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.Description  = this.dataSharingService.getReservationData().Description;
-    this.UnitTypeRate = this.dataSharingService.getReservationData().MonthlyRate;
+    this.MonthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
 
     this.getData();
@@ -313,7 +313,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const indexValue  = event.target.value;
     const index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
     if (!!index) {
-      this.UnitTypeRate = this.lstUnitTypes[index].MonthlyRate;
+      this.MonthlyRate = this.lstUnitTypes[index].MonthlyRate;
       this.monthlyRate = this.lstUnitTypes[index].MonthlyRate;
       this.annualRate = this.lstUnitTypes[index].AnnualRate;
       this.biAnnualRate = this.lstUnitTypes[index].BiAnnualRate;
@@ -447,7 +447,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
       this.getFilterLstUnitTypes(unitTypesResponse);
       const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
-      this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
+      this.MonthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
       const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
       this.Description = unitTypesResponse.lstUnitTypes[0].Description;
       const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
@@ -475,7 +475,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
 
         this.dataSharingService.LstUnitTypes.Description = this.Description;
         this.dataSharingService.LstUnitTypes.UnitTypeID = this.UnitTypeID;
-        this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
+        this.dataSharingService.LstUnitTypes.MonthlyRate = this.MonthlyRate;
         this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
         this.dataSharingService.LstUnitTypes.BiAnnualRate = this.biAnnualRate;
         this.dataSharingService.LstUnitTypes.QuarterRate = this.quarterRate;
