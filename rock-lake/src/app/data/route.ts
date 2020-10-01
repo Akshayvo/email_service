@@ -23,6 +23,7 @@ import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confirmation-page.component';
 import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
+import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
@@ -31,6 +32,7 @@ import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
     { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent},
     { path: 'unit-sizer', component: UnitSizerComponent },
     {
       path: 'view-rates',
@@ -81,6 +83,8 @@ export const iFrameRoutes = [
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent},
+
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'

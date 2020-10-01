@@ -52,6 +52,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -87,6 +88,7 @@ import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
     PhotosComponent,
     ConfirmationPageComponent,
     ConfirmationPageComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     CommonModule,
