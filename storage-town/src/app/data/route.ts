@@ -40,6 +40,7 @@ import { PaymentComponent } from '../api-bundle/payment/payment.component';
 import { PaymentIframeComponent } from '../payment-iframe/payment-iframe.component';
 import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 import { environment } from '../../environments/environment';
+import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -87,6 +88,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
 
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'location/chester',
       component: LocationComponent,
       children: [
@@ -292,6 +294,7 @@ export const apiRoutes = [
 
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'location/andrews',
     component: LocationComponent,
     children: [

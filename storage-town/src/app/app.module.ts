@@ -65,6 +65,7 @@ import { PaymentIframeComponent } from './payment-iframe/payment-iframe.componen
 import { PaymentComponent } from './api-bundle/payment/payment.component';
 import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ScriptHackComponent } from './script-hack/script-hack.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -118,6 +119,7 @@ import { ScriptHackComponent } from './script-hack/script-hack.component';
     PaymentComponent,
     ThankYouComponent,
     ScriptHackComponent,
+    PrivacyPolicyComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
