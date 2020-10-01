@@ -1,7 +1,6 @@
 export const privacyPolicy = [
   {
-    content: `This privacy notice discloses the privacy practices for "storage-town.com".
-    This privacy notice applies solely to information collected by this website. It will notify you of the following:`,
+    content: `This privacy notice discloses the privacy practices for "rocklakestorage.com". This privacy notice applies solely to information collected by this website. It will notify you of the following:`,
     list: [
         {
           li: `What personally identifiable information is collected from you through the
