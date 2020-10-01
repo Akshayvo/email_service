@@ -29,7 +29,7 @@ export class ViewRatesComponent implements OnInit {
         this.id = 3;
         this.heading = headingStorageUnit3;
       } else {
-        if (this.router.url.includes('affordable-secure-storage-hernando')) {
+        if (this.router.url.includes('affordable-secure-storage-backyard')) {
           this.id = 4;
           this.heading = headingStorageUnit4;
         }

@@ -27,8 +27,8 @@ export class PayRentComponent implements OnInit {
   } else if (this.router.url.includes('affordable-secure-storage-labelle')) {
     this.name = 'Affordable Secure Storage - Labelle';
 } else {
-  if (this.router.url.includes('affordable-secure-storage-hernando')) {
-    this.name = 'Affordable Secure Storage - Hernando';
+  if (this.router.url.includes('affordable-secure-storage-backyard')) {
+    this.name = 'Affordable Secure Storage - Backyard';
 }
 }
 

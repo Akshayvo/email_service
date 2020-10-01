@@ -118,9 +118,9 @@ export const headingLocation3 = `Affordable Secure Storage - Labelle`;
 
 export const headingStorageUnit3 = `Reserve Your Unit at Our Labelle Location`;
 
-export const headingLocation4 = `Affordable Secure Storage - Hernando`;
+export const headingLocation4 = `Affordable Secure Storage - Backyard`;
 
-export const headingStorageUnit4 = `Reserve Your Unit at Our Hernando Location`;
+export const headingStorageUnit4 = `Reserve Your Unit at Our Backyard Location`;
 
 
 export const unitSizerLocation1 = [

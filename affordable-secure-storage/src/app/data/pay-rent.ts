@@ -28,9 +28,9 @@ export const tableData = [
     url: 'affordable-secure-storage-labelle'
   },
   {
-    facility: 'Affordable Secure Storage - Hernando',
+    facility: 'Affordable Secure Storage - Backyard',
     address: '2405 E Norvell Bryant Hwy, Hernando, FL 34442',
-    url: 'affordable-secure-storage-hernando'
+    url: 'affordable-secure-storage-backyard'
   },
 ];
 

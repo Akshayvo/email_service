@@ -7,9 +7,9 @@ export class DataSharingService {
 
   locationAPIKey = {
     loc1: 'XjJ7OUYzVzNHM0k6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29333 Affordable Secure Storage - Floral City
-    loc2: 'XjJ7OUYzVzNHOUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29339
-    loc3: 'dzJ0OVczSjQqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29346
-    loc4: 'dzJ0OVczSjQqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O' // 29345
+    loc2: 'XjJ7OUYzVzNHOUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29339  West Hernando
+    loc3: 'dzJ0OVczSjQqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29346 Labelle
+    loc4: 'dzJ0OVczSjQqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O' // 29345 Backyard
   };
 
   // locationAPIKey = {

@@ -63,7 +63,7 @@ export class LocationComponent implements OnInit {
           this.titleService.setTitle('Self Storage Units and Parking in Labelle | Affordable Secure Storage');
           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
     } else {
-      if (this.router.url.includes('/location/affordable-secure-storage-hernando')) {
+      if (this.router.url.includes('/location/affordable-secure-storage-backyard')) {
         this.meta.addTag({
           name: 'description',
           content: `Check out our quality self storage units and affordable rates at our Labelle location, then reserve or call today!`
@@ -89,7 +89,7 @@ export class LocationComponent implements OnInit {
     } else if (this.router.url.includes('/location/affordable-secure-storage-labelle')) {
         this.fetchDetailsLocation3();
     } else {
-      if (this.router.url.includes('/location/affordable-secure-storage-hernando')) {
+      if (this.router.url.includes('/location/affordable-secure-storage-backyard')) {
         this.fetchDetailsLocation4();
     }
     }
@@ -143,7 +143,7 @@ export class LocationComponent implements OnInit {
         this.router.navigate(['/location/affordable-secure-storage-labelle/reserveUnit']);
       } else {
         if ( this.locationId === 4 ) {
-          this.router.navigate(['/location/affordable-secure-storage-hernando/reserveUnit']);
+          this.router.navigate(['/location/affordable-secure-storage-backyard/reserveUnit']);
         }
       }
    }

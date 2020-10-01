@@ -169,7 +169,7 @@ export const apiRoutes = [
       resolve: { data: AppResolver }
     },
 
-    { path: 'location/affordable-secure-storage-hernando',
+    { path: 'location/affordable-secure-storage-backyard',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
@@ -337,7 +337,7 @@ export const apiRoutes = [
   },
 
   {
-    path: 'pay-rent/affordable-secure-storage-hernando', component: PayRentComponent,
+    path: 'pay-rent/affordable-secure-storage-backyard', component: PayRentComponent,
     children: [
       { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
       { path: 'rent-sub', component: RentSubComponent,
