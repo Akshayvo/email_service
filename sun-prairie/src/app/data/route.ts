@@ -23,6 +23,7 @@ import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.compo
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
+import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 
 
  export const apiRoutes = [
@@ -33,6 +34,7 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
     { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
     {
       path: 'view-rates',
       component: ViewRatesComponent,
@@ -92,6 +94,7 @@ export const iFrameRoutes = [
     { path: 'view-rates', component: ViewRatesIframePageComponent },
     { path: 'rent-now', component: ViewRatesIframePageComponent },
     { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },

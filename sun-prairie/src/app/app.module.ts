@@ -49,9 +49,9 @@ import { MaterialModule } from './modules/material/material.module';
 import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
 import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
 import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
-
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { PhotosComponent } from './photos/photos.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,6 +84,7 @@ import { PhotosComponent } from './photos/photos.component';
     VerifyCodeComponent,
     ResetPasswordComponent,
     ConfirmationPageComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [
     CommonModule,
