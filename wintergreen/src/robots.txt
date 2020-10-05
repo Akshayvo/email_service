@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://www./sitemap.xml
+Sitemap: https://wintergreen-storage.netlify.app/sitemap.xml
 User-agent: *
 Disallow:
