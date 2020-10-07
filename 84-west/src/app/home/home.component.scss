@@ -17,6 +17,16 @@
   color: $white;
   overflow: hidden;
   border-radius: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.arrow {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: example;
+  margin-bottom: 10px;
 }
 
 h1 {
