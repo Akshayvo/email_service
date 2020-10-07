@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
-         contactsLocation3, hoursLocation3, contactsLocation4, hoursLocation4} from '../data/contact';
+         contactsLocation3, hoursLocation3, contactsLocation4, hoursLocation4, contactsLocation5, hoursLocation5} from '../data/contact';
 import { featuresHead, serviceOffered, gettingStarted } from '../data/home';
 import { LocationService } from '../services/location.service';
 import { homeScript } from '../data/script';
@@ -24,7 +24,9 @@ export class HomeComponent implements OnInit {
   contactsLocation3: any;
   hoursLocation3: any;
   contactsLocation4: any;
+  contactsLocation5: any;
   hoursLocation4: any;
+  hoursLocation5: any;
   hoursLocation1: any;
   hoursLocation2: any;
   gettingStarted: any;
@@ -64,6 +66,7 @@ export class HomeComponent implements OnInit {
     this.contactsLocation2 = contactsLocation2;
     this.contactsLocation3 = contactsLocation3;
     this.contactsLocation4 = contactsLocation4;
+    this.contactsLocation5 = contactsLocation5;
   }
 
   public fetchHours() {
@@ -71,6 +74,8 @@ export class HomeComponent implements OnInit {
     this.hoursLocation2 = hoursLocation2;
     this.hoursLocation3 = hoursLocation3;
     this.hoursLocation4 = hoursLocation4;
+    this.hoursLocation5 = hoursLocation5;
+
   }
 
   public fetchScript() {

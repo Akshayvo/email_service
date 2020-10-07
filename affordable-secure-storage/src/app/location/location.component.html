@@ -44,7 +44,13 @@
               <div class="img-box-1" [ngClass]="imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'">
               </div>
             </span>
-
+            <span *ngIf="locationId == 5"> 
+              <div class="img-box-2" [ngClass]="imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'">
+                <iframe style="
+                height: inherit;
+                width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.416556118662!2d-82.376571179076!3d28.915680991011502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa093931b7832485c!2sAffordable%20Secure%20Storage%20Hernando!5e0!3m2!1sen!2sus!4v1601953905785!5m2!1sen!2sus" ></iframe>
+              </div>
+            </span>
             <!-- <span *ngIf="locationId == 3"> 
               <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -93,6 +99,9 @@
             </span>
             <span *ngIf="locationId == 4">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13971.945253062746!2d-82.3943678!3d28.8987548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9c0ff320f10dbf44!2sBack-Yard%20Self%20Storage!5e0!3m2!1sen!2sus!4v1601035166434!5m2!1sen!2sus" width="100%" height="220" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
+            </span>
+            <span *ngIf="locationId == 5">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.416556118662!2d-82.376571179076!3d28.915680991011502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa093931b7832485c!2sAffordable%20Secure%20Storage%20Hernando!5e0!3m2!1sen!2sus!4v1601953905785!5m2!1sen!2sus" width="100%" height="220" frameborder="0" style="border: 2px #fff solid;" allowfullscreen></iframe>
             </span>
         </div>
         <div class="hours-data w-100">

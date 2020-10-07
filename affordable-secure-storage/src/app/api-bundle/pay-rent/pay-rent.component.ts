@@ -22,15 +22,16 @@ export class PayRentComponent implements OnInit {
 
     if (this.router.url.includes('affordable-secure-storage-floral-city')) {
       this.name = 'Affordable Secure Storage - Floral City';
-  } else if (this.router.url.includes('affordable-secure-storage-west-hernando')) {
-      this.name = 'Affordable Secure Storage - West Hernando';
-  } else if (this.router.url.includes('affordable-secure-storage-labelle')) {
-    this.name = 'Affordable Secure Storage - Labelle';
-} else {
-  if (this.router.url.includes('affordable-secure-storage-backyard')) {
-    this.name = 'Affordable Secure Storage - Backyard';
-}
-}
+    } else if (this.router.url.includes('affordable-secure-storage-west-hernando')) {
+        this.name = 'Affordable Secure Storage - West Hernando';
+    } else if (this.router.url.includes('affordable-secure-storage-labelle')) {
+      this.name = 'Affordable Secure Storage - Labelle';
+    } else if (this.router.url.includes('affordable-secure-storage-backyard')) {
+      this.name = 'Affordable Secure Storage - Backyard';
+    } else if (this.router.url.includes('affordable-secure-storage-hernando')) {
+      this.name = 'Affordable Secure Storage - Hernando';
+  }
+
 
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');

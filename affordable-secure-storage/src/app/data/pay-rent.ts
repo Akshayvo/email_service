@@ -32,6 +32,11 @@ export const tableData = [
     address: '2405 E Norvell Bryant Hwy, Hernando, FL 34442',
     url: 'affordable-secure-storage-backyard'
   },
+  {
+    facility: 'Affordable Secure Storage - Hernando',
+    address: '3640 N Carl G Rose Hwy, Hernando, FL 34442',
+    url: 'affordable-secure-storage-hernando'
+  },
 ];
 
 export const loginDetail = [

@@ -3,9 +3,11 @@ import { Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
        socialLinks,
        contactsLocation2,
-       hoursLocation2, contactsLocation3, hoursLocation3, contactsLocation4, hoursLocation4
+       hoursLocation2,
+       contactsLocation3,
+       hoursLocation3, contactsLocation4, hoursLocation4, contactsLocation5, hoursLocation5
           } from '../data/contact';
-import { tabs1, tabs2, tabs3, tabs4, headingLocation2, headingLocation3, headingLocation4  } from '../data/location';
+import { tabs1, tabs2, tabs3, tabs4, headingLocation2, headingLocation3, headingLocation4, headingLocation5  } from '../data/location';
 import { headingLocation1 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -68,8 +70,17 @@ export class LocationComponent implements OnInit {
           name: 'description',
           content: `Check out our quality self storage units and affordable rates at our Labelle location, then reserve or call today!`
         });
-        this.titleService.setTitle('Self Storage Units and Parking in Hernando | Affordable Secure Storage');
+        this.titleService.setTitle('Self Storage Units and Parking in Backyard | Affordable Secure Storage');
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
+      } else {
+        if (this.router.url.includes('/location/affordable-secure-storage-hernando')) {
+          this.meta.addTag({
+            name: 'description',
+            content: `Check out our quality self storage units and affordable rates at our Hernando location, then reserve or call today!`
+          });
+          this.titleService.setTitle('Self Storage Units and Parking in Hernando | Affordable Secure Storage');
+          this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
+        }
       }
     }
       this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
@@ -88,10 +99,10 @@ export class LocationComponent implements OnInit {
         this.fetchDetailsLocation2();
     } else if (this.router.url.includes('/location/affordable-secure-storage-labelle')) {
         this.fetchDetailsLocation3();
-    } else {
-      if (this.router.url.includes('/location/affordable-secure-storage-backyard')) {
+    } else if (this.router.url.includes('/location/affordable-secure-storage-backyard')) {
         this.fetchDetailsLocation4();
-    }
+    } else if (this.router.url.includes('/location/affordable-secure-storage-hernando')) {
+      this.fetchDetailsLocation5();
     }
  }
 
@@ -134,17 +145,26 @@ export class LocationComponent implements OnInit {
     }
 
 
+    public fetchDetailsLocation5() {
+      this.name = headingLocation5;
+      this.locationId = 5;
+      this.contacts = contactsLocation5;
+      this.hours = hoursLocation5;
+      this.tabs = tabs4;
+      this.socialLinks = socialLinks;
+    }
+
    public navigateToReserve() {
     if ( this.locationId === 1 ) {
       this.router.navigate(['/location/affordable-secure-storage-floral-city/reserveUnit']);
     } else if ( this.locationId === 2 ) {
-        this.router.navigate(['/location/affordable-secure-storage-west-hernando/reserveUnit']);
-      } else if ( this.locationId === 3 ) {
-        this.router.navigate(['/location/affordable-secure-storage-labelle/reserveUnit']);
-      } else {
-        if ( this.locationId === 4 ) {
-          this.router.navigate(['/location/affordable-secure-storage-backyard/reserveUnit']);
-        }
-      }
+      this.router.navigate(['/location/affordable-secure-storage-west-hernando/reserveUnit']);
+    } else if ( this.locationId === 3 ) {
+      this.router.navigate(['/location/affordable-secure-storage-labelle/reserveUnit']);
+    } else if ( this.locationId === 4 ) {
+        this.router.navigate(['/location/affordable-secure-storage-backyard/reserveUnit']);
+    } else if ( this.locationId === 5 ) {
+      this.router.navigate(['/location/affordable-secure-storage-hernando/reserveUnit']);
+  }
    }
 }

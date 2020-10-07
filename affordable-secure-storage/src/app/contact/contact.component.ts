@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
-         contactsLocation3, hoursLocation3, contactsLocation4, hoursLocation4
+         contactsLocation3, hoursLocation3, contactsLocation4, hoursLocation4, contactsLocation5, hoursLocation5
        } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
@@ -36,7 +36,8 @@ export class ContactComponent implements OnInit {
   hoursLocation3: any;
   contactsLocation4: any;
   hoursLocation4: any;
-
+  contactsLocation5: any;
+  hoursLocation5: any;
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;
@@ -78,6 +79,7 @@ export class ContactComponent implements OnInit {
     this.contactsLocation2 = contactsLocation2;
     this.contactsLocation3 = contactsLocation3;
     this.contactsLocation4 = contactsLocation4;
+    this.contactsLocation5 = contactsLocation5;
   }
 
 public fetchHours() {
@@ -85,6 +87,7 @@ public fetchHours() {
   this.hoursLocation2 = hoursLocation2;
   this.hoursLocation3 = hoursLocation3;
   this.hoursLocation4 = hoursLocation4;
+  this.hoursLocation5 = hoursLocation5;
 }
   get f() { return this.contactForm.controls; }
 
@@ -99,7 +102,13 @@ public fetchHours() {
     if ( this.locationId === '1' || this.locationId === 1 ) {
       this.fetchContactDetailsLocation1();
     } else if ( this.locationId === 2 ) {
-      this.fetchContactDetailsLocation2();
+      this.fetchContactDetailsLocation1();
+    } else if ( this.locationId === 3 ) {
+      this.fetchContactDetailsLocation1();
+    } else if ( this.locationId === 4 ) {
+      this.fetchContactDetailsLocation1();
+    } else if ( this.locationId === 5 ) {
+      this.fetchContactDetailsLocation1();
     }
   }
 

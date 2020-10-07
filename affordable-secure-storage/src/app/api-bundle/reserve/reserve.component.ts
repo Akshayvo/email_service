@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { headingLocation1, headingLocation2, headingLocation3,
-         headingStorageUnit2, headingStorageUnit3, headingStorageUnit4 } from '../../data/location';
+         headingStorageUnit2, headingStorageUnit3,
+         headingStorageUnit4, headingStorageUnit5 } from '../../data/location';
 import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
@@ -35,11 +36,12 @@ export class ReserveComponent implements OnInit {
       } else if (this.router.url.includes('affordable-secure-storage-labelle')) {
         this.id = 3;
         this.heading = headingStorageUnit3;
-      } else {
-        if (this.router.url.includes('affordable-secure-storage-backyard')) {
+      } else if (this.router.url.includes('affordable-secure-storage-backyard')) {
           this.id = 4;
           this.heading = headingStorageUnit4;
-        }
+      } else if (this.router.url.includes('affordable-secure-storage-hernando')) {
+        this.id = 5;
+        this.heading = headingStorageUnit5;
       }
   }
 

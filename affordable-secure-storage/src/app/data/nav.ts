@@ -28,6 +28,11 @@ export const navLinks = [
                 id: '4',
                 label: 'Affordable Secure Storage - Backyard',
                 path: '/location/affordable-secure-storage-backyard',
+            },
+            {
+                id: '5',
+                label: 'Affordable Secure Storage - Hernando',
+                path: '/location/affordable-secure-storage-hernando',
             }
         ]
     },
