@@ -78,6 +78,10 @@ export class HomeComponent implements OnInit {
     window.scrollTo(0, 0);
   }
 
+  public scroll(el: any) {
+    el.scrollIntoView();
+}
+
   public fetchTemplate() {
     this.template = environment.template;
   }
