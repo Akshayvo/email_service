@@ -380,7 +380,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         // tslint:disable-next-line: max-line-length
           this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[0].PayTypeDescription);
           const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
-          if (!!index) {
             // tslint:disable-next-line: max-line-length
             const defaultCardPayTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
             if (localStorage.getItem('strTenantToken')) {
@@ -395,7 +394,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
                 }
               });
             }
-          }
 
 
           this.payRentForm.patchValue({
