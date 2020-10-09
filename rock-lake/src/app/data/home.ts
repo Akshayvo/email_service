@@ -31,7 +31,7 @@ export const featuresList = [
 export const feature = [
     {
         path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Rock_Lake_Images/convenient-location.svg',
-        label: 'CONVENIENTLY LOCATION',
+        label: 'CONVENIENTLY LOCATED',
         alt: 'Icon art displaying a locayion pin'
     },
     {

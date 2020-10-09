@@ -14,9 +14,9 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'tel:(920)988-6570',
+        redirect: 'tel:9209886570',
         label: 'Phone: ',
-        data: '9209886570',
+        data: '(920) 988-6570',
         class: 'fas fa-phone mx-2 iconColor',
     }
 ];

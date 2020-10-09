@@ -7,6 +7,18 @@
           <ol>
             <li *ngFor="let list of privacy.list">{{list.li}}</li>
           </ol>
+          <div *ngFor="let refund of privacy.refund ">
+            <h2 >{{refund.heading}}</h2>
+            <p *ngFor="let list of refund.list">{{list.p}}</p>
+          </div>
+          <div *ngFor="let cancellation of privacy.cancellation">
+            <h2 >{{cancellation.heading}}</h2>
+            <p *ngFor="let list of cancellation.list">{{list.p}}</p>
+          </div>
+          <div *ngFor="let shipping of privacy.shipping ">
+            <h2 >{{shipping.heading}}</h2>
+            <p *ngFor="let list of shipping.list">{{list.p}}</p>
+          </div>
           <div *ngFor="let information of privacy.information">
             <h2 >{{information.heading}}</h2>
             <p *ngFor="let list of information.list">{{list.p}}</p>

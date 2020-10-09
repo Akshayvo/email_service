@@ -16,6 +16,43 @@ export const privacyPolicy = [
           li: `How you can correct any inaccuracies in the information.`,
         }
       ],
+      refund: [
+        {
+          heading: `Refund Policy`,
+        },
+        {
+          list: [
+            {
+              p: `Refunds will be issued within 10 business days by
+              returning the funds to the original debit or credit card.`,
+            },
+          ],
+        },
+      ],
+      cancellation: [
+        {
+          heading: `Cancellation Policy`,
+        },
+        {
+          list: [
+            {
+              p: `Cancellations within 24 hours are subject to forfeiture of setup fees.`,
+            },
+          ],
+        },
+      ],
+      shipping: [
+        {
+          heading: `Shipping Policy`,
+        },
+        {
+          list: [
+            {
+              p: `No shipping takes place at this business location.`,
+            },
+          ],
+        },
+      ],
     information: [
       {
         heading: `Information Collection, Use, and Sharing `,
