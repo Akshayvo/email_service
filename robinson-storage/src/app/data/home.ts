@@ -13,6 +13,7 @@ export const featuresList = [
     },
     {
         td1: 'Convenient Location',
+        td2: 'Black Top Paving'
     }
 ];
 
