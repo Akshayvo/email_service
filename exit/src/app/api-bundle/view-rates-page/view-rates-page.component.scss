@@ -97,7 +97,7 @@ p{
 }
 
 .ClimateBorder {
-  border-left: 1px solid #000;
+  border-left: 1px solid white;
   text-align: left;
 }
 
@@ -110,5 +110,9 @@ p{
 @media only screen and (max-width:991px) {
   .viewrates-desktop{
     display: none;
+  }
+
+  .viewrates-mobile{ 
+    color: white;
   }
 }
