@@ -16,7 +16,7 @@ export const featuresList = [
     }
 ];
 
-export const altText = `metal self storage unit buildings with paved parking`;
+export const altText = `row of self storage unit roll up doors with black top paving in front of the units`;
 
 export const aboutUsHeading = `Affordable Self Storage Units in Ennismore`;
 

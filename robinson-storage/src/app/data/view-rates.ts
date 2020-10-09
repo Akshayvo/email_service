@@ -6,7 +6,7 @@ export const viewRates = [
     }
 ];
 
-export const altText = `metal self storage unit buildings with paved parking around the buidling`;
+export const altText = `several security cameras on the corner of a metal self storage building`;
 
 export const th = [
   {
