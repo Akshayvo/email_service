@@ -16,29 +16,29 @@ export const dataViewRates = [
 
 export const militaryData = [
     {
-        td1: 'Outside Storage',
-        td2: '$55'
-    },
-    {
         td1: '10\' x 5\'',
         td2: '$45'
     },
     {
         td1: '10\' x 10\'',
-        td2: '$65'
+        td2: '$75'
     },
     {
         td1: '10\' x 15\'',
-        td2: '$85'
+        td2: '$95'
     },
     {
         td1: '10\' x 20\'',
-        td2: '$105'
+        td2: '$125'
     },
     {
         td1: '10\' x 30\'',
         td2: '$145'
     },
+    {
+      td1: 'Outside Storage',
+      td2: '$55'
+  },
 ];
 
 export const th = [
