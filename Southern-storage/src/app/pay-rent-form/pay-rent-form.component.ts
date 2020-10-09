@@ -104,14 +104,13 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   tenantTokenExist = false;
 
   cardType: string;
-  paymentTab: string;
   tenantData = {
     objTenant: {}
   };
 
   myNavLinks: any;
   loginUrl: any;
-  
+
   private OptionOutOfAutoPaySubscribe$: Subscription;
   private signUpAutoPaySubscribe$: Subscription;
   private signOutSubscribe$: Subscription;
