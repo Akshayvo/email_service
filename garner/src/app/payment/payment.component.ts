@@ -35,27 +35,40 @@ export class PaymentComponent implements OnInit {
     });
     this.titleService.setTitle(`Pay Rent  | Garner's U Store`);
   }
-
   ngOnInit() {
     window.scrollTo(0, 0);
     this.receiveMessage();
     this.fetchTableHeader();
     this.fetchTableData();
 
+    // if (!!localStorage.getItem('paymentTab')) {
+    //   this.paymentTab = localStorage.getItem('paymentTab');
+    // }
 
     if (!!(localStorage.getItem('strTenantToken'))) {
       const navTo = localStorage.getItem('paymentNavigationUrl');
-      if (!!navTo) {
-        if (this.dataSharingService.changePassword === true) {
-          this.router.navigate([`/pay-rent/${navTo}/changePassword`]);
-        } else {
-          this.router.navigate([`/pay-rent/${navTo}/payment`]);
+      if (!!localStorage.getItem('paymentTab')) {
+        if (!!navTo) {
+          if (this.dataSharingService.changePassword === true) {
+            this.router.navigate([`/pay-rent/${navTo}/${localStorage.getItem('paymentTab')}/changePassword`]);
+          } else {
+            this.router.navigate([`/pay-rent/${navTo}/${localStorage.getItem('paymentTab')}/payment`]);
+          }
+        }
+      } else {
+        if (!!navTo) {
+          if (this.dataSharingService.changePassword === true) {
+            this.router.navigate([`/pay-rent/${navTo}/changePassword`]);
+          } else {
+            this.router.navigate([`/pay-rent/${navTo}/payment`]);
+          }
         }
       }
+    } else {
+      this.router.navigate(['/pay-rent']);
     }
-    // console.log('current url is', this.router.url);
-
   }
+
 
   receiveMessage() {
     this.data.currentLocation.subscribe(locationId => {

@@ -15,7 +15,10 @@ export class DataSharingService {
   //      loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   // };
 
-
+  locationName: string;
+  strConfirmation: string;
+  strAccessCode: string;
+  facilityLocation: string;
   verificationCode: string;
   changePassword: boolean;
   navigationTo: string;
@@ -29,6 +32,8 @@ export class DataSharingService {
   addingTenant = false;
   insuranceChoiceId: number;
   signUpForAutoPay: boolean;
+  PaymentAmount: number;
+  CCApprovalCode: string;
 
   paymentTab: string;
 
@@ -132,7 +137,7 @@ export class DataSharingService {
   }
 
   initMyNavLinks = (componentName, myCurUrl) => {
-    console.log('TCL: DataSharingService -> initMyNavLinks -> this.navLinksForComponent', this.navLinksForComponent);
+    // console.log('TCL: DataSharingService -> initMyNavLinks -> this.navLinksForComponent', this.navLinksForComponent);
     if (this.navLinksForComponent[componentName]) {
       this.navLinksForComponent[componentName].next = myCurUrl;
       this.navLinksForComponent[componentName].prev = myCurUrl;

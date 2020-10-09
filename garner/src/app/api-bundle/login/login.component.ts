@@ -61,6 +61,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
   }
 
+
   ngOnInit() {
     this.fetchLoginDetail();
     this.loginForm = this.formBuilder.group({
@@ -74,21 +75,29 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (window.localStorage) {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
-          // this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
+        if (!!this.paymentTab) {
           if (this.dataSharingService.changePassword === true) {
             this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/changePassword`]);
           } else {
-            if (this.router.url.includes('rent-sub')) {
-              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/payment`]);
-            } else {
-              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
-            }
+          if (this.router.url.includes('rent-sub')) {
+            this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/payment`]);
+          } else {
+            this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
           }
-       }
+        }
+        } else {
+          if (this.dataSharingService.changePassword === true) {
+            this.router.navigate([`/pay-rent/${this.navTo}/changePassword`]);
+          } else {
+          this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
+          }
+        }
+      }
     }
     this.fetchContactDetail();
 
   }
+
 
   get f() { return this.loginForm.controls; }
 
@@ -117,7 +126,11 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public navigate (location: any) {
-    this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/${location}`]);
+    if (!!this.paymentTab) {
+      this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/${location}`]);
+    } else {
+      this.router.navigate([`/pay-rent/${this.navTo}/${location}`]);
+    }
   }
 
 
@@ -136,17 +149,23 @@ export class LoginComponent implements OnInit, OnDestroy {
           this.showPayRent = true;
           this.authData = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
-          // if (this.activatedRoute.snapshot.url[1].path === 'changePassword') {
-          //   this.router.navigate([`/pay-rent/${this.navTo}/changePassword`]);
-          // } else {
+          if (!!localStorage.getItem('paymentTab')) {
+            if (this.dataSharingService.changePassword === true) {
+              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/changePassword`]);
+            } else {
             if (this.router.url.includes('rent-sub')) {
               this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/payment`]);
             } else {
-              if (this.router.url.includes('sign-up')) {
-                this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
-              }
+              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
             }
-          // }
+          }
+          } else {
+            if (this.dataSharingService.changePassword === true) {
+              this.router.navigate([`/pay-rent/${this.navTo}/changePassword`]);
+            } else {
+            this.router.navigate([`/pay-rent/${this.navTo}/payment`]);
+            }
+          }
         }, (err) => {
           this.credentialsInvalid = true;
           this.showLoader = false;

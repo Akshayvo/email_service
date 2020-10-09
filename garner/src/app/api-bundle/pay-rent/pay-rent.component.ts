@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { tabs } from '../../data/tab';
+import { environment } from '../../../environments/environment';
+
 @Component({
   selector: 'app-pay-rent',
   templateUrl: './pay-rent.component.html',
@@ -13,6 +15,8 @@ export class PayRentComponent implements OnInit {
   name: string;
   id: number;
   tabs: any;
+  showPaymentPageType: number;
+
 
   constructor(
     private router: Router,
@@ -30,6 +34,7 @@ export class PayRentComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.showPaymentPageType = environment.paymentPageType;
     this.fetchContactDetails();
     this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[1].path;
     localStorage.setItem('paymentNavigationUrl', this.dataSharingService.paymentNavigation);

@@ -5,6 +5,8 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
+  paymentPageType: 1, // { withoutTab: 0, withTab: 1}
+  cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
