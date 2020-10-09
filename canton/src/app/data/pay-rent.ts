@@ -32,9 +32,9 @@ export const loginFoul = [
 export const loginLouisville = [
   {
     userName: `Tenant's Last Name`,
-    password: `Tenant's gate access code`,
+    password: `Tenant's Unit Number`,
     example: {
-        code: 'code is 1234',
+        code: 'Unit is 1234',
         userName: 'smith',
         password: '1234'
     }
