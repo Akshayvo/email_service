@@ -38,7 +38,13 @@ export class VerifyCodeComponent implements OnInit, OnDestroy {
   get f() { return this.verifyCodeForm.controls; }
 
   goBack() {
-    this.router.navigate(['pay-rent/forgotPassword']);
+    if (this.router.url.includes('rent-sub')) {
+      this.router.navigate([`/pay-rent/rent-sub/forgotPassword`]);
+    } else if (this.router.url.includes('sign-up')) {
+      this.router.navigate([`/pay-rent/sign-up/forgotPassword`]);
+    } else {
+      this.router.navigate([`pay-rent/forgotPassword`]);
+    }
   }
 
   verifyCode(data: any): void {
@@ -47,7 +53,13 @@ export class VerifyCodeComponent implements OnInit, OnDestroy {
       result => {
         if (result.blnSuccess === true) {
           this.showLoader = false;
-          this.router.navigate(['pay-rent/reset']);
+          if (this.router.url.includes('rent-sub')) {
+            this.router.navigate([`/pay-rent/rent-sub/reset`]);
+          } else if (this.router.url.includes('sign-up')) {
+            this.router.navigate([`/pay-rent/sign-up/reset`]);
+          } else {
+            this.router.navigate([`pay-rent/reset`]);
+          }
         }
        }, (err) => {
       }

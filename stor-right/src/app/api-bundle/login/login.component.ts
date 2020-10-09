@@ -87,7 +87,13 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public navigate (location: any) {
-    this.router.navigate([location]);
+    if (this.router.url.includes('rent-sub')) {
+      this.router.navigate([`/pay-rent/rent-sub/${location}`]);
+    } else if (this.router.url.includes('sign-up')) {
+      this.router.navigate([`/pay-rent/sign-up/${location}`]);
+    } else {
+      this.router.navigate([`pay-rent/${location}`]);
+    }
   }
 
   public fetchLoginDetail() {
