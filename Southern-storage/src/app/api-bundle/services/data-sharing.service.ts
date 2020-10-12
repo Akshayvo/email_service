@@ -14,17 +14,17 @@ export class DataSharingService {
   navigateToPrevious: string;
   paymentNavigation: string;
 
-// locationAPIKey = {
-//   loc1: 'dzJ0OFc4SjYqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // Agricola - 28867
-//   loc2: 'dzJ0OVcwSjcqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // Rocky Creek: 29074
-//   loc3: 'dzJ0OVcwSjkqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // Barton ID: 29090
-// };
+locationAPIKey = {
+  loc1: 'dzJ0OFc4SjYqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // Agricola - 28867
+  loc2: 'dzJ0OVcwSjcqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // Rocky Creek: 29074
+  loc3: 'dzJ0OVcwSjkqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // Barton ID: 29090
+};
 
-  locationAPIKey = {
-    loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-    loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-    loc3: 'YzI+OEs0ejZqNUg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-  };
+  // locationAPIKey = {
+  //   loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  //   loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  //   loc3: 'YzI+OEs0ejZqNUg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  // };
 
   apiKey = '';
 

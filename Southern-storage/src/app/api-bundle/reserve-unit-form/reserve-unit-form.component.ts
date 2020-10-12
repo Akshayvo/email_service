@@ -7,7 +7,7 @@ import { DatePipe } from '@angular/common';
 
 import { Subscription } from 'rxjs';
 import * as moment from 'moment';
-import { option } from 'src/app/data/view-rates';
+import { option } from '../../data/view-rates';
 import { DataSharingService } from '../services/data-sharing.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { LeadDaysService } from '../services/lead-days.service';

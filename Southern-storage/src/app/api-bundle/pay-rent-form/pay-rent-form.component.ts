@@ -8,7 +8,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { environment } from '../../../environments/environment';
-import { month } from 'src/app/data/date';
+import { month } from '../..//data/date';
 import { AddTenantService } from '../services/add-tenant.service';
 import { DataSharingService } from '../services/data-sharing.service';
 import { FetchDataService } from '../services/fetch-data.service';

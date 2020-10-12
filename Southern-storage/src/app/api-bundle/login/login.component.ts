@@ -6,7 +6,7 @@ import { TenantInfo } from '../models/tenant';
 import { loginDetail } from '../../data/pay-rent';
 import { AuthService } from '../services/auth.service';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsAgricola, contactsRockyCreek, contactsBarton } from 'src/app/data/contact';
+import { contactsAgricola, contactsRockyCreek, contactsBarton } from '../../data/contact';
 
 
 @Injectable()

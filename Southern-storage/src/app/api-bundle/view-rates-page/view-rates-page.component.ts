@@ -3,7 +3,7 @@ import { Subscription } from 'rxjs';
 import { ObjCharges } from '../models/movein';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { Router } from '@angular/router';
-import { th } from 'src/app/data/view-rates';
+import { th } from '../../data/view-rates';
 import { DataSharingService } from '../services/data-sharing.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { MoveInService } from '../services/moveIn.service';
