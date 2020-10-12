@@ -31,7 +31,7 @@ export const loginFoul = [
 
 export const loginLouisville = [
   {
-    userName: `Tenant's Last Name`,
+    userName: `Tenant's First Initial + Last Name`,
     password: `Tenant's Unit Number`,
     example: {
         code: 'Unit is 1234',
