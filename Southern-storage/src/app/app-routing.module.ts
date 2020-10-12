@@ -12,23 +12,20 @@ import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
 import { PhotosComponent } from './photos/photos.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
-import { RentSubComponent } from './rent-sub/rent-sub.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
-import { PayRentAgricolaComponent } from './pay-rent-agricola/pay-rent-agricola.component';
-import { PayRentRockyCreekComponent } from './pay-rent-rocky-creek/pay-rent-rocky-creek.component';
-import { PayRentBartonComponent } from './pay-rent-barton/pay-rent-barton.component';
-import { LoginComponent } from './login/login.component';
-import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { AuthGuard } from './auth.gurad';
-import { AppResolver } from './resolver/app.resolver';
-import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
-import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
-import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
-import { ResetPasswordComponent } from './reset-password/reset-password.component';
-import { VerifyCodeComponent } from './verify-code/verify-code.component';
 import { VerifictionCodeGuard } from './verificationCode.guard';
-import { ChangePasswordComponent } from './change-password/change-password.component';
+import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
+import { ChangePasswordComponent } from './api-bundle/change-password/change-password.component';
+import { ConfirmationDataComponent } from './api-bundle/confirmation-data/confirmation-data.component';
+import { ForgotPasswordComponent } from './api-bundle/forgot-password/forgot-password.component';
+import { LoginComponent } from './api-bundle/login/login.component';
+import { PayRentFormComponent } from './api-bundle/pay-rent-form/pay-rent-form.component';
+import { ReserveUnitFormComponent } from './api-bundle/reserve-unit-form/reserve-unit-form.component';
+import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
+import { AppResolver } from './api-bundle/resolver/app.resolver';
+import { VerifyCodeComponent } from './api-bundle/verify-code/verify-code.component';
+import { ViewRatesPageComponent } from './api-bundle/view-rates-page/view-rates-page.component';
 // import { CanDeactivateGuard } from './preventRouteChange.guard';
 
 const routes: Routes = [
@@ -128,7 +125,7 @@ const routes: Routes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'pay-rent/agricola', component: PayRentAgricolaComponent,
+  { path: 'pay-rent/agricola', component: PayRentComponent,
     children: [
       {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'login', component: LoginComponent },
@@ -139,7 +136,7 @@ const routes: Routes = [
       { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
     ]
   },
-  { path: 'pay-rent/rocky-creek', component: PayRentRockyCreekComponent,
+  { path: 'pay-rent/rocky-creek', component: PayRentComponent,
     children: [
       {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'login', component: LoginComponent },
@@ -150,7 +147,7 @@ const routes: Routes = [
       { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
     ]
   },
-  { path: 'pay-rent/barton', component: PayRentBartonComponent,
+  { path: 'pay-rent/barton', component: PayRentComponent,
     children: [
       {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'login', component: LoginComponent },

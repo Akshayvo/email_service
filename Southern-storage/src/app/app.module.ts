@@ -17,7 +17,6 @@ import { PaymentComponent } from './payment/payment.component';
 import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
 import { LocationComponent } from './location/location.component';
-import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 import { SafePipe } from './safe.pipe';
 import { StorageUnitComponent } from './storage-unit/storage-unit.component';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
@@ -27,33 +26,32 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { DirectionsComponent } from './directions/directions.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AccordionComponent } from './accordion/accordion.component';
-import { RentSubComponent } from './rent-sub/rent-sub.component';
 import { SelectLocationComponent } from './select-location/select-location.component';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
-import { PayRentAgricolaComponent } from './pay-rent-agricola/pay-rent-agricola.component';
-import { PayRentRockyCreekComponent } from './pay-rent-rocky-creek/pay-rent-rocky-creek.component';
-import { PayRentBartonComponent } from './pay-rent-barton/pay-rent-barton.component';
-import { ConfirmationDataComponent } from './confirmation-data/confirmation-data.component';
-import { LoginComponent } from './login/login.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { ViewRatesPageComponent } from './view-rates-page/view-rates-page.component';
-import { ReserveUnitFormComponent } from './reserve-unit-form/reserve-unit-form.component';
-import { MaterialModule } from './modules/material/material.module';
-import { AuthService } from './services/auth.service';
 import { AuthGuard } from '../app/auth.gurad';
 import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { DatePipe } from '@angular/common';
 import {  HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RequestInterceptorService } from './services/request-interceptor.service';
-import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 import { CanDeactivateGuard } from './preventRouteChange.guard';
-import { ChangePasswordComponent } from './change-password/change-password.component';
-import { LoginModalComponent } from './login-modal/login-modal.component';
-import { ResetPasswordComponent } from './reset-password/reset-password.component';
-import { VerifyCodeComponent } from './verify-code/verify-code.component';
+import { ChangePasswordComponent } from './api-bundle/change-password/change-password.component';
+import { ConfirmationDataComponent } from './api-bundle/confirmation-data/confirmation-data.component';
+import { ForgotPasswordComponent } from './api-bundle/forgot-password/forgot-password.component';
+import { LoginModalComponent } from './api-bundle/login-modal/login-modal.component';
+import { LoginComponent } from './api-bundle/login/login.component';
+import { MaterialModule } from './api-bundle/modules/material/material.module';
+import { PayRentFormComponent } from './api-bundle/pay-rent-form/pay-rent-form.component';
+import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
+import { ReserveUnitFormComponent } from './api-bundle/reserve-unit-form/reserve-unit-form.component';
+import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
+import { AuthService } from './api-bundle/services/auth.service';
+import { ErrorHandlerService } from './api-bundle/services/error-handler.service';
+import { RequestInterceptorService } from './api-bundle/services/request-interceptor.service';
+import { VerifyCodeComponent } from './api-bundle/verify-code/verify-code.component';
+import { ViewRatesPageComponent } from './api-bundle/view-rates-page/view-rates-page.component';
+import { StorageTipsComponent } from './storage-tips/storage-tips.component';
 
 @NgModule({
   declarations: [
@@ -79,9 +77,6 @@ import { VerifyCodeComponent } from './verify-code/verify-code.component';
     RentSubComponent,
     SelectLocationComponent,
     ErrorHandlerComponent,
-    PayRentAgricolaComponent,
-    PayRentRockyCreekComponent,
-    PayRentBartonComponent,
     ConfirmationDataComponent,
     LoginComponent,
     ForgotPasswordComponent,
@@ -92,6 +87,7 @@ import { VerifyCodeComponent } from './verify-code/verify-code.component';
     LoginModalComponent,
     ResetPasswordComponent,
     VerifyCodeComponent,
+    PayRentComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

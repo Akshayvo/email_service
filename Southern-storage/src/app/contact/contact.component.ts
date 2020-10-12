@@ -1,12 +1,12 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-import { EmailService } from '../services/email.service';
 import { contactsRockyCreek, hoursRockyCreek,
          contactsAgricola, hoursAgricola,
          contactsBarton, hoursBarton } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
+import { EmailService } from '../api-bundle/services/email.service';
 
 @Component({
   selector: 'app-contact',

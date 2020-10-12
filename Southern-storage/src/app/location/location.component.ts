@@ -6,7 +6,7 @@ import { contactsRockyCreek, hoursRockyCreek,
 import { tabs, tabsBarton } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { DataSharingService } from '../services/data-sharing.service';
+import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 
 
 @Component({

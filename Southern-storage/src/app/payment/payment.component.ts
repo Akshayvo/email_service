@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WINDOW } from '@ng-toolkit/universal';
-import { DataSharingService } from '../services/data-sharing.service';
+import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 
 
 @Component({
