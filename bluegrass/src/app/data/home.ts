@@ -24,21 +24,24 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Bluegrass Storage is your storage-stop for renters, homeowners, and businesses in Bardstown,
-        Kentucky. We have 2 conveniently located self storage facilities with drive-up, 24-hour access to your unit,
-        and your belongings whenever you need them! Rent or reserve your unit(s) online, then pay your bill around
-        the clock with our easy tenant portal.`,
+        p: `Bluegrass Storage is your storage-stop for renters, homeowners, and businesses in Bardstown, Kentucky.
+        We have 2 conveniently located self storage facilities with drive-up, 24-hour access to your unit, and your
+        belongings whenever you need them! Rent your unit(s) online, then pay your bill around the clock with our
+        easy tenant portal. `,
     },
     {
-        p: `We understand that self storage is about more than just convenience. Our facilities are well-lit,
-        and our managers perform regular walkarounds to ensure a constant sense of safety to our valued customers.`,
+        p: `We understand that self storage is about more than just convenience. Our facilities are well-lit, and
+        our managers perform regular walkarounds to ensure a constant sense of safety to our valued customers.`,
     },
     {
-        p: `So, whether you're a renter or homeowner looking for some extra elbow-room around the house, or a growing
-        local business in need of room for supplies, inventory, or equipment, we've got a unit for you! Take a moment
-        to review our availability, then reserve your unit in seconds, or call our office today and let our friendly
-        management team guide you to your next de-cluttering project!`,
+        p: `So, whether you're a renter or homeowner looking for some extra elbow-room around the house, or a
+        growing local business in need of room for supplies, inventory, or equipment, we've got a unit for you!
+        Take a moment to review our availability, then rent your unit in seconds, or call our office today and
+        let our friendly management team guide you to your next de-cluttering project!`,
     },
+    {
+        p: `Don't forget to ask about our forthcoming climate controlled units!`
+    }
 ];
 
 export const gettingStarted = [
@@ -53,10 +56,10 @@ export const gettingStarted = [
 export const jumbotron = [
     {
         h1: `24-Hour Access Self Storage in Bardstown`,
-        blurb: `Bluegrass Storage proudly serves Bardstown, and the surrounding communities in Nelson county with high-quality,
-        affordable self storage services with 24-hour access, and a variety of amenities! Our management team is here to make your
-        self storage experience a simple, stress-free one! You may rent or reserve your unit online, or just give our friendly managers
-        a call, and start de-cluttering your life, today!`,
+        blurb: `Bluegrass Storage proudly serves Bardstown, and the surrounding communities in Nelson county with
+        high-quality, affordable self storage services with 24-hour access, and a variety of amenities! Our management
+        team is here to make your self storage experience a simple, stress-free one! You may rent your unit online, or
+        just give our friendly managers a call, and start de-cluttering your life, today!`,
     }
 ];
 

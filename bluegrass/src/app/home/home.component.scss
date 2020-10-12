@@ -670,6 +670,12 @@ iframe {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .bg-translucent {
+    background: none;
+  }
+}
+
 @media only screen and (max-width: 600px) and (min-width: 420px) {
   .jumbotron {
     text-align: center;
@@ -677,6 +683,8 @@ iframe {
     background-position: center left;
     height: 100vh;
   }
+
+  
 
   .feature {
     display: none;

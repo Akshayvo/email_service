@@ -6,14 +6,17 @@ export const th = [
     data: `Rate`
   },
   {
-    data: `Reserve a Unit`
+    data: `Rental Deposit`
   },
   // {
-  //   data: `Move In`
+  //   data: `Reserve a Unit`
   // },
   {
-    data: `Climate Control`
+    data: `Move In`
   },
+  // {
+  //   data: `Climate Control`
+  // },
 ];
 
 export const viewrates = [
