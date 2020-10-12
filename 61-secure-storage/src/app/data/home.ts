@@ -35,7 +35,7 @@ export const aboutUsHeading = `Competitively Priced Storage Units in Davenport`;
 
 export const aboutUs = [
     {
-        p: `61-280 Storage Storage has been making renovations, moves, and de-cluttering projects
+        p: `61-280 Storage has been making renovations, moves, and de-cluttering projects
         a breeze with our affordable unit rates, 24 hour access, and friendly customer service
         since 2000. We are proudly serve Davenport, Milan, Moline, and the surrounding communities
         with the commitment to customer service only a locally owned & operated business can provide.`,
@@ -49,17 +49,17 @@ export const aboutUs = [
         with our electronic keypad system. `,
     },
     {
-        p: `The conveniences at 61-280 Storage Storage go beyond those physical amenities. We also offer online
+        p: `The conveniences at 61-280 Storage go beyond those physical amenities. We also offer online
         reservations and 24-hour account access. Simply check our available inventory, fill out a form, and
         one of our friendly on-site managers will reach out to confirm your stay. Once you've signed your
         lease and moved in, you'll be able to check your balance and pay your rent quickly and easily with
         our tenant portal! Are you ready to start that remodel, or finally clean out that garage? Reserve
-        your unit with us today, and regain some of that elbow room with 61-280 Storage Storage!`,
+        your unit with us today, and regain some of that elbow room with 61-280 Storage!`,
     },
 ];
 
 export const gettingStarted = `Start that de-cluttering or renovation project you've been putting off, or
-make your move easier with some extra space while you unpack. Get started with 61-280 Storage Storage simply by
+make your move easier with some extra space while you unpack. Get started with 61-280 Storage simply by
 clicking below to view our unit availability and rates!`;
 
 export const feature = [
