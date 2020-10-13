@@ -52,6 +52,11 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 import { VerifyCodeComponent } from './api-bundle/verify-code/verify-code.component';
 import { ViewRatesPageComponent } from './api-bundle/view-rates-page/view-rates-page.component';
 import { StorageTipsComponent } from './storage-tips/storage-tips.component';
+import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
+import { ReserveComponent } from './api-bundle/reserve/reserve.component';
+import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component';
 
 @NgModule({
   declarations: [
@@ -88,6 +93,11 @@ import { StorageTipsComponent } from './storage-tips/storage-tips.component';
     ResetPasswordComponent,
     VerifyCodeComponent,
     PayRentComponent,
+    ThankYouComponent,
+    SignUpComponent,
+    AutoPayComponent,
+    ReserveComponent,
+    ViewRatesComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

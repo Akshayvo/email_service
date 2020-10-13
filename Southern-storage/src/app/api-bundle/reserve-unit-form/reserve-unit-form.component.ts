@@ -22,8 +22,6 @@ import { TenantInfoService } from '../services/tenant-info.service';
 
 export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
-
-
   proRateAmount?: number;
   curStage: number;
   deposit?: number;

@@ -5,6 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
+  locationName: string;
+  strConfirmation: string;
+  strAccessCode: string;
+  facilityLocation: string;
   verificationCode: string;
   changePassword: boolean;
   navigationTo: string;
@@ -13,6 +17,15 @@ export class DataSharingService {
   isValueUpdated: boolean;
   navigateToPrevious: string;
   paymentNavigation: string;
+  periodID: number;
+  period: string;
+  addingTenant = false;
+  insuranceChoiceId: number;
+  signUpForAutoPay: boolean;
+  PaymentAmount: number;
+  CCApprovalCode: string;
+
+  paymentTab: string;
 
 locationAPIKey = {
   loc1: 'dzJ0OFc4SjYqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // Agricola - 28867
@@ -101,7 +114,6 @@ locationAPIKey = {
     intUnitTypeID: 0,
   };
 
-  period: string;
 
   constructor() {
     this.getUnitData();

@@ -2,21 +2,21 @@ export const tabs = [
     {
         id: '1',
         name: 'Storage Units',
-        path: './storageUnits',
+        path: './storage-units',
         active: true,
     },
     {
         id: '2',
         name: 'Unit Sizer',
-        path: './unitSizer',
+        path: './unit-sizer',
         active: false,
     },
-    // {
-    //     id: '3',
-    //     name: 'Reserve Unit',
-    //     path: './reserveUnit',
-    //     active: false,
-    // },
+    {
+        id: '3',
+        name: 'Move In',
+        path: './move-in',
+        active: false,
+    },
     {
         id: '4',
         name: 'Gallery',
@@ -41,21 +41,21 @@ export const tabsBarton = [
     {
         id: '1',
         name: 'Storage Units',
-        path: './storageUnits',
+        path: './storage-units',
         active: true,
     },
     {
         id: '2',
         name: 'Unit Sizer',
-        path: './unitSizer',
+        path: './unit-sizer',
         active: false,
     },
-    // {
-    //     id: '3',
-    //     name: 'Reserve Unit',
-    //     path: './reserveUnit',
-    //     active: false,
-    // },
+    {
+        id: '3',
+        name: 'Move In',
+        path: './move-in',
+        active: false,
+    },
     {
         id: '4',
         name: 'About Us',

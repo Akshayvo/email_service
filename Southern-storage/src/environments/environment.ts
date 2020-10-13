@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false,
+  type: 0,  // { API: 0, iframe: 1 }
+  paymentPageType: 0, // { withoutTab: 0, withTab: 1}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',

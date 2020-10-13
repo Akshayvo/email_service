@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnDestroy, HostListener } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { DataSharingService } from '../services/data-sharing.service';
 import { Router } from '@angular/router';
@@ -9,8 +9,6 @@ import { TenantInfoService } from '../services/tenant-info.service';
 import { Subscription } from 'rxjs';
 import { option } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
-
-
 
 @Component({
   selector: 'app-confirmation-data',
@@ -86,6 +84,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   period: string;
   navTo: any;
 
+  facilityLocation: string;
 
   private addTenantSubscribe$: Subscription;
   private updateTenantSubscribe$: Subscription;
@@ -128,17 +127,17 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     $event.returnValue = true;
   }
 
-
-
-
   public fetchOption() {
     this.options = option;
-    this.index = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.State));
-    this.stateString = this.options[this.index].description;
+    if (!!this.dataSharingService.objTenant.State) {
+      this.index = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.State));
+      if (!!this.options) {
+        this.stateString = this.options[this.index].description;
+      }
+     }
   }
 
   public navigateToPrevious() {
-    console.log('confirmation page working', this.dataSharingService.navigateToPrevious);
     this.router.navigate([this.dataSharingService.navigateToPrevious]);
   }
 
@@ -164,11 +163,14 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
     this.description = this.dataSharingService.LstUnitTypes.Description;
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
-    console.log('monthly rate is', this.monthlyRate);
     this.navTo = this.dataSharingService.navigationTo;
     this.dataSharingService.initMyNavLinks('confirmationData', window.location.pathname);
 
     this.myNavLinks = this.dataSharingService.getMyNavLinks('confirmationData');
+
+    if (this.dataSharingService.facilityLocation) {
+      this.facilityLocation = this.dataSharingService.facilityLocation;
+    }
 
   }
 
@@ -178,18 +180,18 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
         localStorage.setItem('strTempTenantToken', result.strTempTenantToken);
 
         if (this.navigateToMoveIn) {
-          if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
-            this.router.navigate([`${this.navTo}/payMoveInCharges`]);
-          } else {
+          // if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
+          //   this.router.navigate([`${this.navTo}/payMoveInCharges`]);
+          // } else {
             this.moveIn(this.MoveIn);
-          }
+          // }
         } else {
           if (this.navigateToReserve) {
-            if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
-              this.router.navigate([`${this.navTo}/payReservationCharges`]);
-            } else {
+            // if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
+            //   this.router.navigate([`${this.navTo}/payReservationCharges`]);
+            // } else {
               this.makeAReservation(this.MoveIn);
-            }
+            // }
           }
         }
       });
@@ -222,15 +224,28 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.reservationInProgress = true;
     this.makeAReservationSubscribe$ = this.makeAReservationService.makeAReservation(strConfirmation)
       .subscribe(strConfirmationResponse => {
-        this.strConfirmation = strConfirmationResponse.strConfirmation;
-        this.showConfirmation = false;
-        this.submitted = false;
-        this.tokenExit = localStorage.getItem('strTenantToken');
-        this.existTempToken = localStorage.getItem('strTempTenantToken');
-        if (this.existTempToken) {
-          localStorage.removeItem('strTempTenantToken');
+
+        if (strConfirmationResponse.intErrorCode === 1) {
+          this.strConfirmation = strConfirmationResponse.strConfirmation;
+
+          this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
+          this.showConfirmation = false;
+          this.submitted = false;
+          this.tokenExit = localStorage.getItem('strTenantToken');
+          this.existTempToken = localStorage.getItem('strTempTenantToken');
+          if (this.existTempToken) {
+            localStorage.removeItem('strTempTenantToken');
+          }
+          this.reservationInProgress = false;
+
+          if (!!localStorage.getItem('paymentTab')) {
+            this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+          } else {
+            this.router.navigate([`location/${this.facilityLocation}/reserve-unit/thank-you`]);
+          }
         }
-        this.reservationInProgress = false;
+
+
       }, (err: any) => {
         if (err.status === 403) {
           this.showConfirmation = false;
@@ -258,14 +273,24 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.MoveIn['blnGenerateDocuments'] = true;
     this.makeAReservationSubscribe$ = this.moveInService.moveIn(strAccessCode)
       .subscribe(strConfirmationResponse => {
-        this.strAccessCode = strConfirmationResponse.strAccessCode;
-        this.submitted = false;
-        this.tokenExit = localStorage.getItem('strTenantToken');
-        this.existTempToken = localStorage.getItem('strTempTenantToken');
-        if (this.existTempToken) {
-          localStorage.removeItem('strTempTenantToken');
+
+        if (strConfirmationResponse.intErrorCode === 1) {
+          this.strAccessCode = strConfirmationResponse.strAccessCode;
+
+          this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
+          this.submitted = false;
+          this.tokenExit = localStorage.getItem('strTenantToken');
+          this.existTempToken = localStorage.getItem('strTempTenantToken');
+          if (this.existTempToken) {
+            localStorage.removeItem('strTempTenantToken');
+          }
+          this.reservationInProgress = false;
+          if (!!localStorage.getItem('paymentTab')) {
+            this.router.navigate([`location/${this.facilityLocation}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
+          } else {
+            this.router.navigate([`location/${this.facilityLocation}/moveIn/thank-you`]);
+          }
         }
-        this.reservationInProgress = false;
       }, (err: any) => {
         if (err.status === 403) {
           this.showConfirmation = false;
@@ -286,6 +311,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.signOutSubscribe$ = this.signOutService.signOut(logOut)
       .subscribe(result => {
         localStorage.removeItem('strTenantToken');
+        if (!!localStorage.getItem('APIKey')) {
+          localStorage.removeItem('APIKey');
+        }
         this.router.navigate(['/']);
       }, (err) => {
       }
@@ -352,11 +380,28 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
             }
           }
         } else {
-          this.addTenant(this.tenantData);
+          // this.addTenant(this.tenantData);
           // this.MoveIn.dteMoveIn = this.formattedMoveInDate;
+          if (this.navigateToMoveIn === true) {
+            if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
+              this.dataSharingService.addingTenant = true;
+              this.router.navigate([`${this.navTo}//payMoveInCharges`]);
+            } else {
+              this.addTenant(this.tenantData);
+            }
+          } else {
+            if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
+              this.dataSharingService.addingTenant = true;
+              this.dataSharingService.addingTenant = true;
+              this.router.navigate([`${this.navTo}/payReservationCharges`]);
+             } else {
+              this.addTenant(this.tenantData);
+            }
+          }
         }
-      }
+        }
   }
+
   public ngOnDestroy(): void {
     if (this.getTenantInfoSubscribe$ && this.getTenantInfoSubscribe$.closed) {
       this.getTenantInfoSubscribe$.unsubscribe();

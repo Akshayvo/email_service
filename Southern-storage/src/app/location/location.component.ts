@@ -34,10 +34,13 @@ export class LocationComponent implements OnInit {
     private meta: Meta,
     private route: ActivatedRoute,
     private dataSharingService: DataSharingService,
-
+    private activatedRoute: ActivatedRoute,
     ) {
       this.location = this.router.url;
       console.log('navigation url', this.router.url, this.location);
+      if (this.activatedRoute.snapshot.url[1].path) {
+        this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
+      }
       if (this.router.url.includes('/location/rocky-creek')) {
           this.meta.addTag({
             name: 'description',

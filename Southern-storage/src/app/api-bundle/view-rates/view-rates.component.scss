@@ -1,0 +1,23 @@
+@import "../../../styles.scss";
+
+.storageUnitHolder {
+  margin-bottom: 50px;
+  padding: 64px;
+  background-color: #f1f0ed;
+
+  .coming-soon {
+    font-size: 2rem;
+    padding: 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .storageUnitHolder {
+    padding: 16px;
+
+    .coming-soon {
+      font-size: 1.8rem;
+      padding: 40% 10%;
+    }
+  }
+}

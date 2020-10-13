@@ -26,26 +26,92 @@ import { ResetPasswordComponent } from './api-bundle/reset-password/reset-passwo
 import { AppResolver } from './api-bundle/resolver/app.resolver';
 import { VerifyCodeComponent } from './api-bundle/verify-code/verify-code.component';
 import { ViewRatesPageComponent } from './api-bundle/view-rates-page/view-rates-page.component';
+import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
+import { environment } from '../environments/environment';
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { ReserveComponent } from './api-bundle/reserve/reserve.component';
+import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component';
 // import { CanDeactivateGuard } from './preventRouteChange.guard';
+
+const withoutTab = [
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
+        {path: 'login', component: LoginComponent },
+        {path: 'forgotPassword', component: ForgotPasswordComponent },
+        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+        {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+        { path: 'verifyCode', component: VerifyCodeComponent },
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+        { path: 'thank-you', component: ThankYouComponent }
+        // canActivate: [VerifictionCodeGuard]
+];
+
+const withTab = [
+  { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
+      { path: 'rent-sub', component: RentSubComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+          { path: 'thank-you', component: ThankYouComponent }
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      },
+      { path: 'sign-up', component: SignUpComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      }
+];
+
+// const reservationForm = environment
+const childroute = environment.paymentPageType ? withTab : withoutTab;
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent  },
   { path: 'location/rocky-creek',
     component: LocationComponent,
     children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent,
-      children: [
-        { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
-      ] },
-      { path: 'unitSizer', component: UnitSizerComponent },
-      { path: 'reserveUnit', component: ReserveUnitComponent },
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: ViewRatesComponent },
+      { path: 'reserve-unit', component: ReserveComponent,
+        children: [
+          { path: '', component: ReserveUnitFormComponent },
+          { path: 'reserve', component: ReserveUnitFormComponent },
+          // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+          { path: 'confirmation', component: ConfirmationDataComponent },
+          { path: 'payReservationCharges', component: PayRentFormComponent },
+          { path: 'payMoveInCharges', component: PayRentFormComponent },
+          { path: 'thank-you', component: ThankYouComponent }
+
+        ]
+      },
+      { path: 'move-in', component: ReserveComponent,
+        children: [
+          { path: '', component: ReserveUnitFormComponent },
+          { path: 'moveIn', component: ReserveUnitFormComponent },
+          // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+          { path: 'confirmation', component: ConfirmationDataComponent },
+          { path: 'payReservationCharges', component: PayRentFormComponent },
+          { path: 'payMoveInCharges', component: PayRentFormComponent },
+          { path: 'thank-you', component: ThankYouComponent }
+
+        ]
+      },
+      { path: 'unit-sizer', component: UnitSizerComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
@@ -55,19 +121,33 @@ const routes: Routes = [
   { path: 'location/agricola',
     component: LocationComponent,
     children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent,
-      children: [
-        { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
-      ] },
-      { path: 'unitSizer', component: UnitSizerComponent},
-      { path: 'reserveUnit', component: ReserveUnitComponent },
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: ViewRatesComponent  },
+      { path: 'reserve-unit', component: ReserveComponent,
+        children: [
+          { path: '', component: ReserveUnitFormComponent },
+          { path: 'reserve', component: ReserveUnitFormComponent },
+          // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+          { path: 'confirmation', component: ConfirmationDataComponent },
+          { path: 'payReservationCharges', component: PayRentFormComponent },
+          { path: 'payMoveInCharges', component: PayRentFormComponent },
+          { path: 'thank-you', component: ThankYouComponent }
+
+        ]
+      },
+      { path: 'move-in', component: ReserveComponent,
+        children: [
+          { path: '', component: ReserveUnitFormComponent },
+          { path: 'moveIn', component: ReserveUnitFormComponent },
+          // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+          { path: 'confirmation', component: ConfirmationDataComponent },
+          { path: 'payReservationCharges', component: PayRentFormComponent },
+          { path: 'payMoveInCharges', component: PayRentFormComponent },
+          { path: 'thank-you', component: ThankYouComponent }
+
+        ]
+      },
+      { path: 'unit-sizer', component: UnitSizerComponent},
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
@@ -77,19 +157,33 @@ const routes: Routes = [
   { path: 'location/barton',
     component: LocationComponent,
     children: [
-      {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
-      { path: 'storageUnits', component: StorageUnitComponent,
-      children: [
-        { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
-      ] },
-      { path: 'unitSizer', component: UnitSizerComponent },
-      { path: 'reserveUnit', component: ReserveUnitComponent },
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: ViewRatesComponent  },
+      { path: 'reserve-unit', component: ReserveComponent,
+        children: [
+          { path: '', component: ReserveUnitFormComponent },
+          { path: 'reserve', component: ReserveUnitFormComponent },
+          // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+          { path: 'confirmation', component: ConfirmationDataComponent },
+          { path: 'payReservationCharges', component: PayRentFormComponent },
+          { path: 'payMoveInCharges', component: PayRentFormComponent },
+          { path: 'thank-you', component: ThankYouComponent }
+
+        ]
+      },
+      { path: 'move-in', component: ReserveComponent,
+        children: [
+          { path: '', component: ReserveUnitFormComponent },
+          { path: 'moveIn', component: ReserveUnitFormComponent },
+          // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+          { path: 'confirmation', component: ConfirmationDataComponent },
+          { path: 'payReservationCharges', component: PayRentFormComponent },
+          { path: 'payMoveInCharges', component: PayRentFormComponent },
+          { path: 'thank-you', component: ThankYouComponent }
+
+        ]
+      },
+      { path: 'unit-sizer', component: UnitSizerComponent },
       { path: 'photos', component: PhotosComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
@@ -126,37 +220,13 @@ const routes: Routes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'pay-rent/agricola', component: PayRentComponent,
-    children: [
-      {path: '', redirectTo: 'login', pathMatch: 'full'},
-      {path: 'login', component: LoginComponent },
-      {path: 'forgotPassword', component: ForgotPasswordComponent },
-      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-      { path: 'verifyCode', component: VerifyCodeComponent },
-      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-    ]
+    children: childroute
   },
   { path: 'pay-rent/rocky-creek', component: PayRentComponent,
-    children: [
-      {path: '', redirectTo: 'login', pathMatch: 'full'},
-      {path: 'login', component: LoginComponent },
-      {path: 'forgotPassword', component: ForgotPasswordComponent },
-      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-      { path: 'verifyCode', component: VerifyCodeComponent },
-      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-    ]
+    children: childroute
   },
   { path: 'pay-rent/barton', component: PayRentComponent,
-    children: [
-      {path: '', redirectTo: 'login', pathMatch: 'full'},
-      {path: 'login', component: LoginComponent },
-      {path: 'forgotPassword', component: ForgotPasswordComponent },
-      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-      { path: 'verifyCode', component: VerifyCodeComponent },
-      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-    ]
+    children: childroute
   },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },
