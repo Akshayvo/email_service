@@ -70,7 +70,8 @@ export class ReservationFormComponent implements OnInit {
       this.contactForm.value.subject = 'Website Reservation Request';
     }
 
-     this.receiveremail = this.contactDetails[2].data;
+    const index = contact.findIndex(x => x.label === 'Email:');
+    this.receiveremail = this.contactDetails[index].data;
 
      this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
      message: ${this.contactForm.value.message}`;
