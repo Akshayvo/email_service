@@ -17,7 +17,7 @@ import { MakeAReservationService } from '../services/make-a-reservation.service'
 import { MoveInService } from '../services/moveIn.service';
 import { AddTenantService } from '../services/add-tenant.service';
 import { environment } from '../../../environments/environment';
-
+import { objSIMSetting } from '../../data/configuration';
 @Component({
   selector: 'app-pay-rent-form',
   templateUrl: './pay-rent-form.component.html',
@@ -61,7 +61,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   surcharge: number;
   unitTypeNotAvailability: boolean;
   showLoader = false;
-
+  blnAllowPartialPayments: boolean;
   cards: any;
 
   marked = false;
@@ -158,12 +158,17 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     }
 
 
-
     this.navigateToReserve = this.dataSharingService.navigateToReserve;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
 
     if (!!this.dataSharingService.LstUnitTypes.ReservationFeeTax) {
-      this.TotalReserveAmount =
+      // tslint:disable-next-line: max-line-length
+      const amount =  parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
+      if (amount) {
+        this.surchargeService.setAmt(amount);
+      }
+      this.getSurCharge();
+      // this.TotalReserveAmount = this.getSurCharge();
      // tslint:disable-next-line: max-line-length
      parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
      this.surchargeService.setAmt(this.TotalReserveAmount);
@@ -224,6 +229,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.paymentTab = localStorage.getItem('paymentTab');
     }
 
+    this.blnAllowPartialPayments = objSIMSetting.objPaymentSetting.blnAllowPartialPayments;
     this.tenantData.objTenant = this.dataSharingService.objTenant;
     if (!!localStorage.getItem('strTenantToken')) {
       this.getPayMethods();
@@ -300,8 +306,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     return '';
 }
-
-
 
   selectChangeHandler(event: any) {
     this.selectedDescription = JSON.stringify(event.target.value);
@@ -503,6 +507,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.surchargeService.getSurCharge()
     .subscribe(result => {
       this.amountToPay = result.decTotalAmount;
+      this.TotalReserveAmount = result.decTotalAmount;
 
 
     if (this.router.url.includes('payReservationCharges')) {
