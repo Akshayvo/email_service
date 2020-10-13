@@ -1,30 +1,32 @@
-export const  homePageTitle = `Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage`;
-export const homePageContent = `Catskill Self Storage has been proudly serving Catskill, Cairo, Leeds, and surrounding communities with
-affordable storage units since 2004!`;
+export const  homePageTitle = `24 Hour Access Regular & Climate Controlled Units`;
+export const homePageContent = `Are you in search of affordable self storage units near Oswego, NY?
+Oswego Self Storage has a wide variety of sizes and excellent customer service!`;
 
 
-export const viewRatesPageTitle = `Affordable Self Storage Near Catskill, NY, 12414 | Catskill Self Storage`;
-export const viewRatesPageContent = `Our units range from closet sized 5'x5' units to 10'x20' multi-bedroom home sized units.
-We strive to provide the highest level of service at the best prices!`;
+export const viewRatesPageTitle = `View Rates | Oswego Self Storage`;
+export const viewRatesPageContent = `Check out the competitive rates for our high-quality
+self storage units! Oswego Self Storage is the premier storage facility in Oswego, NY!`;
 
 
-export const reservePageTitle = `Reserve A Storage Unit Near Catskill, NY | 12414 - Catskill Self Storage`;
-export const reservePageContent = `Current description works fine.`;
+export const reservePageTitle = `Reserve Unit | Oswego Self Storage`;
+export const reservePageContent = `Ready to reserve your unit at Oswego Self Storage? Click here
+to begin storing with Oswego's premier self storage facility!`;
 
-export const payRentPageTitle = `Pay Your Rent Online | Catskill Self Storage, Catskill, NY, 12414 `;
-export const payRentPageContent = `We make it easy for you to pay your rent and check your balance online, 24/7.
-Simply login with the credentials supplied by our office to gain access!`;
-
-
-export const storageTipsTitle = `Self Storage Tips | Catskill Self Storage, Catskill, NY, 12414`;
-export const storageTipsContent = `We know moving can be stressful, let our helpful hints and tips make your experience that much easier.
-Use this tips to save yourself time and frustration!`;
+export const payRentPageTitle = `View Rates | Oswego Self Storage`;
+export const payRentPageContent = `Follow the instructions on this page, or you can call our office to speak with
+one of our friendly self storage managers to get access to your online account!`;
 
 
-export const unitSizerPageTitle = `Unit Sizer | Catskill Self Storage, Catskill, NY, 12414`;
-export const unitSizerPageContent = ``;
+export const storageTipsTitle = `Storage Tips | Oswego Self Storage`;
+export const storageTipsContent = `Our quick storage tips page will help you figure out how to best
+use our services and avoid common pitfalls in self storage!`;
 
 
-export const contactPageTitle = `Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414`;
-export const contactPageContent = `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
-and U-Haul truck rental questions! Simply call or drop us a line!`;
+export const unitSizerPageTitle = `Unit Sizer | Oswego Self Storage`;
+export const unitSizerPageContent = `If you're having trouble visualizing what will fit in any given unit, check
+out our unit sizer page for help!`;
+
+
+export const contactPageTitle = `Contact Us | Oswego Self Storage`;
+export const contactPageContent = `If you have questions about your account or the services we offer, take a moment
+to fill our out form, or use the contact information to speak with us!`;

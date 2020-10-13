@@ -80,6 +80,14 @@ export class DataSharingService {
     City: '',
     State: '',
     ZIP: '',
+    AlternateName: '',
+    // AlternateLastName: '',
+    AlternatePhone: '',
+    AlternateAddressLine1: '',
+    AlternateAddressLine2: '',
+    AlternateCity: '',
+    AlternateState: '',
+    AlternateZIP: '',
   };
 
 

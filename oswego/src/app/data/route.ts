@@ -101,7 +101,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJLwmJDBZ914kRP3KpYx7NbbA'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -123,7 +123,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJLwmJDBZ914kRP3KpYx7NbbA'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },

@@ -11,7 +11,7 @@ img {
 }
 
 .iconColor {
-  color: $primary;
+  color: $white;
 }
 
 .contact-header {
@@ -44,7 +44,7 @@ img {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
   .nav-link {
-    color: $white;
+    color: $black;
     font-weight: 600;
     padding: 21px;
   }
@@ -59,10 +59,10 @@ img {
   }
 
   button {
-    border-color: $white;
+    border-color: $primary;
 
     .iconColor {
-      color: $white;
+      color: $primary;
     }
   }
 

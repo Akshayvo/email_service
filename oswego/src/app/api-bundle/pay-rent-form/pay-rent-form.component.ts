@@ -208,7 +208,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-    if (this.router.url ===  '/pay-rent/payment' || (this.router.url ===  '/pay-rent/sign-up/payment')) {
+    if (this.router.url ===  '/pay-rent/rent-sub/payment' || (this.router.url ===  '/pay-rent/sign-up/payment')) {
       this.navigateToMoveInPayment = true;
     }
 
