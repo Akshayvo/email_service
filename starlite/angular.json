@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "oswego": {
+    "starlite": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "oswego:build"
+            "browserTarget": "starlite:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "oswego:build:production"
+              "browserTarget": "starlite:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "oswego:build"
+            "browserTarget": "starlite:build"
           }
         },
         "test": {
@@ -110,7 +110,7 @@
         }
       }
     },
-    "oswego-e2e": {
+    "starlite-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -118,11 +118,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "oswego:serve"
+            "devServerTarget": "starlite:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "oswego:serve:production"
+              "devServerTarget": "starlite:serve:production"
             }
           }
         },
@@ -138,5 +138,5 @@
       }
     }
   },
-  "defaultProject": "oswego"
+  "defaultProject": "starlite"
 }

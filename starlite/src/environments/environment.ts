@@ -13,7 +13,7 @@ export const environment = {
   errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Oswego Self Storage - Testing',
+  appId: 'Starlite Storage - Testing',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: '',
@@ -21,7 +21,7 @@ export const environment = {
   // AnotherLocationAPIKey: `MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
   // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
-  // APIKey: `dzJ0N1c1SjIqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 27520 Oswego
+  // APIKey: `dzJ0OVczSjMqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29338 Starlite Storage
   // APIKey: `dzJ0OFc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464 (For 0 reservetion charges)
   // baseUrl: `http://localhost:60444/api/`,
 };
