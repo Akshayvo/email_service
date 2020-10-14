@@ -7,7 +7,7 @@
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'" title="a row of self storage units where one unit is open to reveal common household belongings like boxes and furniture ">
       <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
       </div>
-      <div class="container">
+      <div class="container display">
         <div class="jumbotorn-skew-text">
           <div class="disp" *ngFor="let jumbotron of jumbotron">
             <h2  class="my-4">
@@ -17,7 +17,8 @@
           </div>
           <div class="jumbotorn-button">
             <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">Reserve Unit</a></div>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">Reserve Unit</a>
+          </div>
           </div>
         </div>
       </div>
@@ -83,6 +84,22 @@
       </div>
     </div>
   </div>
+
+  <!-- Video-->
+  <div class="video-style">
+    <div class="container">
+      <div class="row py-5">
+       <div class="col-md-12 text-center">
+        <iframe 
+       
+        src="https://www.youtube.com/embed/N0lBOICYErU" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video -->
 
   <!--Testimonial-->
 <div class="bg-light">
