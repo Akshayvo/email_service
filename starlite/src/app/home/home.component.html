@@ -1,0 +1,99 @@
+<app-script-hack type="application/ld+json">
+  {{script | json}}
+ </app-script-hack>
+<div class="">
+  <div class="jumbotron-container">
+    <div class="jumbotron-top">
+    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+      <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      </div>
+      <div class="container">
+        <div class="jumbotorn-skew-text">
+          <div class="disp" *ngFor="let jumbotron of jumbotron">
+            <h2  class="my-4">
+              {{jumbotron.h1}}
+            </h2>
+          <p class="text-justify">{{jumbotron.blurb}}</p>
+          </div>
+          <div class="jumbotorn-button">
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="jumbotron-bottom">
+      <div class="container">
+        <div class="feature row">
+          <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
+            <img [src]="feature?.path" [alt]="feature?.alt" height="100px"/>
+              <h6 class="feature-text">{{feature.label}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-light">
+    <div class="container py-4">
+      <div class="section py-4 m-0">
+        <div class="row">
+          <div class="col-lg-6 py-3 home-map">
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1dIj4DlkiUMU_fcf0mCl1ZFaT9uZ0pr_l" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
+          </div>
+
+          <div class="col-lg-6 py-3">
+            <div class="mb-4">
+              
+              <p>
+                <span *ngFor="let contact of contactDetails">
+                  <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                    <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                  <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                </span>
+              </p>
+              <b>Office Hours:</b>
+              <p>
+                <span *ngFor="let hour of hours">
+                  <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+                </span>
+              </p>
+            </div>
+            <div>
+              <app-tables [tBody]="featuresList"></app-tables>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section py-5 m-0">
+      <div class="row">
+        <div class="col-lg-6 py-3">
+          <!-- <img src="{{imageBaseUrl}}/oswego-self-storage-square.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
+          <app-photos></app-photos>
+        </div>
+        <div class="col-lg-6 py-3">
+          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
+          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="getStarted bg-light">
+    <div class="container">
+      <div class="section py-5 m-0">
+        <div class="row">
+          <div class="col-md-12 py-3">
+            <h2 class="heading pb-4">Get Started</h2>
+            <p class="pb-4">{{gettingStarted}}</p>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">Getting Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
