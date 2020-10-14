@@ -12,6 +12,6 @@ export const environment = {
   appId: 'Oswego Self Storage - Production',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  APIKey: `dzJ0OFc3SjUqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28755 oswego
+  APIKey: `dzJ0N1c1SjIqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 27520 Oswego
   websiteUrl: ''
 };
