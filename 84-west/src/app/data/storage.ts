@@ -104,7 +104,7 @@ export const storageTipAccordion = [
     },
     {
         id: '5',
-        label: `Collectables`,
+        label: `Collectibles`,
         status: false,
         data : [
             {

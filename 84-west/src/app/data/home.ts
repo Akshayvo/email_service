@@ -35,7 +35,7 @@ export const aboutUsHeading = `Affordable Storage Units in Valdosta`;
 
 export const aboutUs = [
     {
-        p: `84 West Self Storage has been serving Valdosta with and the surrounding communities with clean,
+        p: `84 West Self Storage has been serving Valdosta and the surrounding communities with clean,
         well-maintained self storage units since 2004. As a family-owned and operated business, our commitment
         to building long-lasting relationships with friends and neighbors in need of storage space is unparalleled. `,
     },
