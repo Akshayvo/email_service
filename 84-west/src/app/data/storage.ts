@@ -3,7 +3,7 @@ export const storageTip = [
         data: `Use smaller boxes for books and heavy items.`
     },
     {
-        data: `Use larger boxes for lighter items`
+        data: `Use larger boxes for lighter items.`
     },
     {
         data: `Reinforce the bottom of boxes with at least one strip of packing tape.`
