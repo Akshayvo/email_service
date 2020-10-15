@@ -114,3 +114,9 @@ p {
     display: none;
   }
 }
+
+@media only screen and (max-width:450px) {
+  .btn-primary {
+    min-width: unset;
+  }
+}
