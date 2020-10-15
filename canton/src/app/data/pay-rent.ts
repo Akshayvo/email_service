@@ -22,7 +22,7 @@ export const loginFoul = [
     userName: `Tenant's Last Name`,
     password: `Tenant's Unit Number`,
     example: {
-        code: '1234',
+        code: 'code is 1234',
         userName: 'smith',
         password: '1234'
     }
@@ -31,10 +31,10 @@ export const loginFoul = [
 
 export const loginLouisville = [
   {
-    userName: `Tenant's Last Name`,
+    userName: `Tenant's First Initial + Last Name`,
     password: `Tenant's Unit Number`,
     example: {
-        code: '1234',
+        code: 'Unit is 1234',
         userName: 'smith',
         password: '1234'
     }
@@ -46,7 +46,7 @@ export const loginLincoln = [
     userName: `Tenant's Last Name`,
     password: `Tenant's Unit Number`,
     example: {
-        code: '1234',
+        code: 'Unit Number is 1234',
         userName: 'smith',
         password: '1234'
     }
