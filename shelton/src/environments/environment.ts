@@ -13,15 +13,15 @@ export const environment = {
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Shelton Storage Solutions',
+  appId: 'Shelton Storage Solutions - Testing',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://shelton.netlify.app',
   // baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // AnotherLocationAPIKey: `MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
   // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
-  // APIKey: `XjJ7OUYzVzZHMUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29361
+  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
+  APIKey: `XjJ7OUYzVzZHMUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29361
   // APIKey: `dzJ0OFc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464 (For 0 reservetion charges)
   // baseUrl: `http://localhost:60444/api/`,
 };
