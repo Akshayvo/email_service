@@ -1,0 +1,68 @@
+<div class="jumbotron-home">
+    
+  <!-- <div class="for-mobile-view"> -->
+    <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselJumbo" data-slide-to="1"></li>
+        <li data-target="#carouselJumbo" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg1' : 'jumbotron-background-webp1'" title="">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg2' : 'jumbotron-background-webp2'" title="">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg3' : 'jumbotron-background-webp3'" title="">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+    
+  <!--Feature Box-->
+    <div class="container feature-block disp">
+      <div class="row h-100">
+        <div class="col-3 my-auto" *ngFor= "let feature of features">
+          <p class="text-center f-block-img"> 
+            <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
+          </p>
+          <p class="text-center f-text">
+            {{feature.label}}
+          </p>
+        </div>
+      </div>
+    </div>
+  <!--Feature Box Ends Here-->
+</div>
+
+
+<app-list-of-facility></app-list-of-facility>
+
+<!--Service-->
+  <div class="service bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 pt-2">
+            <h1  class="pb-4">Affordable Self Storage in Carroll County</h1>
+            <div *ngFor="let para of serviceOffered">
+              <p>{{ para.p }}</p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+              <app-about-us-photos></app-about-us-photos>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Service Ends Here-->
