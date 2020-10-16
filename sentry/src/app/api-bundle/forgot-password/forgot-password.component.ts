@@ -18,6 +18,7 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
   submitted = false;
   showLoader = false;
   showNoError = false;
+  paymentTab: string;
 
    private forgotPasswordUnsubscribe$: Subscription;
 
@@ -34,12 +35,19 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
   }
 
   get f() { return this.forgotPasswordForm.controls; }
 
   goBack() {
-    this.router.navigate(['pay-rent/login']);
+    if (!!this.paymentTab) {
+      this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
+    } else {
+      this.router.navigate([`/pay-rent/login`]);
+    }
   }
 
   forgotPassword(data: any): void {
@@ -48,7 +56,11 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
       result => {
         this.showLoader = false;
         if (result.intErrorCode === 1) {
-          this.router.navigate(['pay-rent/verifyCode']);
+          if (!!this.paymentTab) {
+            this.router.navigate([`/pay-rent/${this.paymentTab}/verifyCode`]);
+          } else {
+            this.router.navigate([`/pay-rent/verifyCode`]);
+          }
         } else {
           if (result.intErrorCode === 0) {
             this.showNoError = true;

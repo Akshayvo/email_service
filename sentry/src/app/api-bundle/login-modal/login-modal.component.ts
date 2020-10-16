@@ -13,7 +13,7 @@ import { DataSharingService } from '../services/data-sharing.service';
 export class LoginModalComponent implements OnInit, OnDestroy {
 
 
-  @Output() someEvent = new EventEmitter<string>();
+  @Output() closeLoginPrompt = new EventEmitter<string>();
 
   loginModalForm: FormGroup;
   showForgotPassword: boolean;
@@ -22,6 +22,7 @@ export class LoginModalComponent implements OnInit, OnDestroy {
   allowedToshow: boolean;
   credentialsInvalid: boolean;
   showPayRent: boolean;
+  paymentTab: string;
   authData: string;
   private authUnsubscribe$: Subscription;
 
@@ -40,6 +41,10 @@ export class LoginModalComponent implements OnInit, OnDestroy {
       strPassword: ['', Validators.required],
       intAuthMethod: 1
     });
+
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
   }
 
 
@@ -47,7 +52,7 @@ export class LoginModalComponent implements OnInit, OnDestroy {
   get f() { return this.loginModalForm.controls; }
 
   closeBox() {
-    this.someEvent.next();
+    this.closeLoginPrompt.next();
   }
 
   handleForgotPassword() {
@@ -67,7 +72,12 @@ export class LoginModalComponent implements OnInit, OnDestroy {
             localStorage.setItem('strTenantToken', this.authData);
             this.dataSharingService.changePassword = true;
 
-            this.router.navigate(['/pay-rent/changePassword']);
+            if (!!this.paymentTab) {
+              this.router.navigate([`/pay-rent/${this.paymentTab}/changePassword`]);
+            } else {
+              this.router.navigate([`/pay-rent/changePassword`]);
+            }
+            // this.router.navigate(['/pay-rent/changePassword']);
           }, (err) => {
             this.credentialsInvalid = true;
             this.showLoader = false;
@@ -75,13 +85,7 @@ export class LoginModalComponent implements OnInit, OnDestroy {
         );
     }
 
-  public ngOnDestroy(): void {
-    if (this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
-      this.authUnsubscribe$.unsubscribe();
-    }
 
-
-  }
 
   onSubmit() {
     this.submitted = true;
@@ -94,6 +98,12 @@ export class LoginModalComponent implements OnInit, OnDestroy {
       }
       this.allowedToshow = true;
       this.auth(this.loginModalForm.value);
+    }
+  }
+
+  public ngOnDestroy(): void {
+    if (this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
+      this.authUnsubscribe$.unsubscribe();
     }
   }
 

@@ -4,9 +4,6 @@ import { contact } from '../../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import { payRentPageContent, payRentPageTitle } from '../../data/title';
 import { payRentHeading } from '../../data/heading';
-import { loginDetail } from '../../data/pay-rent';
-import { Route, Router } from '@angular/router';
-import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
   selector: 'app-payment',
@@ -19,14 +16,9 @@ export class PaymentComponent implements OnInit {
   payRentPageTitle: string;
   payRentPageContent: string;
   payRentHeading: string;
-  loginDetail = [];
-
-
 
   constructor(
     private titleService: Title,
-    private router: Router,
-    private  dataSharingService: DataSharingService,
     @Inject(WINDOW) private window: Window,
     private meta: Meta
   ) {
@@ -40,25 +32,20 @@ export class PaymentComponent implements OnInit {
 
   ngOnInit() {
     this.fetchContactDetails();
-    this.fetchPayRentHeading();
-    this.fetchLoginDetail();
+    this.fetchpayRentHeading();
     window.scrollTo(0, 0);
   }
 
   public fetchMetaData() {
-    this.payRentPageTitle = payRentPageTitle;
     this.payRentPageContent = payRentPageContent;
+    this.payRentPageTitle = payRentPageTitle;
+  }
+
+  public fetchpayRentHeading() {
+    this.payRentHeading = payRentHeading;
   }
 
   public fetchContactDetails() {
     this.contact = contact;
-  }
-
-  public fetchLoginDetail() {
-    this.loginDetail = loginDetail;
-  }
-
-  public fetchPayRentHeading() {
-    this.payRentHeading = payRentHeading;
   }
 }

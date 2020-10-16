@@ -11,19 +11,19 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$Catskill-primary: mat-palette($mat-indigo);
-$Catskill-accent: mat-palette($mat-pink, A200, A100, A400);
+$sentry-primary: mat-palette($mat-indigo);
+$sentry-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$Catskill-warn: mat-palette($mat-red);
+$sentry-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$Catskill-theme: mat-light-theme($Catskill-primary, $Catskill-accent, $Catskill-warn);
+$sentry-theme: mat-light-theme($sentry-primary, $sentry-accent, $sentry-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($Catskill-theme);
+@include angular-material-theme($sentry-theme);
 /* You can add global styles to this file, and also import other style files */
 
 //Basic color and font styles
@@ -38,6 +38,8 @@ $secondary: #212121;
 $dark: #333;
 $light: #efefef;
 $white: #fff;
+
+$black: #000;
 
 $border: #707070;
 $shadow: #000;
@@ -150,4 +152,23 @@ h5,
 h6 {
   font-weight: 400;
   margin-bottom: 0;
+}
+
+
+.background-padding {
+  padding: 64px;
+}
+
+// Content Holder Styles
+.contentHolder {
+  padding-top: 90px;
+  min-height: 96vh;
+  margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .background-padding {
+    padding: 24px 0;
+  }
 }

@@ -44,7 +44,7 @@
         </div>
     
         <div class="forgot-link">
-            <a (click)="navigate('/pay-rent/forgotPassword')">Forgot Password</a>
+            <a (click)="navigate('forgotPassword')">Forgot Password</a>
         </div>
         <div class="forgot-link">
             <a (click)="openBox()" >Change Your Password</a>
@@ -54,29 +54,29 @@
             <!-- <div id="myModal" class="modal fade" role="dialog">
                 <div class="modal-dialog"> -->
                     <!-- Modal content-->
-                    <app-login-modal *ngIf="!!open" (someEvent)="openBox()"></app-login-modal>
+                    <app-login-modal *ngIf="!!open" (closeLoginPrompt)="openBox()"></app-login-modal>
                 <!-- </div>
-            </div> -->
+            </div> -->      
         </div>
     </div>    
 
 
-    <div class="col-md-5 p-3 vertical-line"  >
+    <div class="col-md-5  vertical-line"  >
         <h3>How to Login</h3>
         <div *ngFor="let loginDetail of loginDetail">
-          <p><b>Username</b>&nbsp;{{loginDetail.userName}}<br>
-          <b>Password:</b>&nbsp;{{loginDetail.password}}</p>
-          <p>{{loginDetail.instruction}}</p>
-            <p><b>Examples:</b></p>
-            <p>{{loginDetail.example1.code}}</p>
-            <p>John's Username: {{loginDetail.example1.userName}}<br>
-              John's Password: {{loginDetail.example1.password}}</p>
-            <p>{{loginDetail.example2.code}}</p>
-            <p>John's Username: {{loginDetail.example2.userName}}<br>
-                John's Password: {{loginDetail.example2.password}}</p>
-            <p><strong>Have questions about your account?</strong><br>
+            <p><b>Username:</b>&nbsp;{{loginDetail.userName}}<br>
+            <b>Password:</b>&nbsp;{{loginDetail.password}}</p>
+            <p>{{loginDetail.instruction}}</p>
+              <p><b>Examples:</b></p>
+              <p>{{loginDetail.example1.code}}</p>
+              <p>John's Username: {{loginDetail.example1.userName}}<br>
+                John's Password: {{loginDetail.example1.password}}</p>
+              <p>{{loginDetail.example2.code}}</p>
+              <p>John's Username: {{loginDetail.example2.userName}}<br>
+                  John's Password: {{loginDetail.example2.password}}</p>
+              <p><strong>Have questions about your account?</strong><br>
             <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
-              <a  *ngIf="contact?.id == 1 || contact?.id == 2" [href]="contact?.redirect">
+              <a  *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content" [href]="contact?.redirect">
                 {{contact.data}}
               </a>
             <br>

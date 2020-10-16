@@ -1,29 +1,9 @@
 @import "../../../styles.scss";
 
 .contentHolder {
-  padding-top: 90px;
+  padding-top: 100px;
   min-height: 96vh;
   margin-bottom: 50px;
-
-  .scroll-wrapper {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-
-    iframe {
-      width: 100%;
-      overflow: auto;
-    }
-    .background-padding{
-      height: 1500px;
-    }
-  }
-}
-// .padding-top {
-//   padding-top: 110px;
-// }
-
-iframe {
-  max-width: 100%;
 }
 
 .background-padding {
@@ -35,16 +15,17 @@ h1 {
 }
 
 @media only screen and (max-width: 991px) {
-  // .contentHolder {
-  //   padding-top: 56px;
-  // }
+  .contentHolder {
+    padding-top: 90px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .background-padding {
     padding: 24px 9px;
   }
-  // .contentHolder {
-  //   padding-top: 56px;
-  // }
+
+  .contentHolder {
+    padding-top: 90px;
+  }
 }

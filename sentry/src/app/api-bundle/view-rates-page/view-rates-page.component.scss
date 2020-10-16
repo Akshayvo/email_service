@@ -80,8 +80,6 @@ table {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // width: 100%;
-  // border-bottom: thin solid lightgray;
 }
 
 p {
@@ -99,7 +97,7 @@ p {
 }
 
 .ClimateBorder {
-  border-left: 1px solid #000;
+  border-left: 1px solid $black;
   text-align: left;
 }
 
@@ -113,12 +111,22 @@ p {
   .viewrates-desktop {
     display: none;
   }
+
+  .buttons {
+    .btn-outline-primary {
+      color: $primary !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 767px)  and (min-width: 381px) {
   .buttons {
     .btn {
       min-width: 150px;
+    }
+
+    .btn-outline-primary {
+      color: $primary !important;
     }
   }
 }

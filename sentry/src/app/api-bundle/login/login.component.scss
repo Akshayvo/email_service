@@ -56,8 +56,10 @@
   align-items: end;
 }
 
-@media only screen and (max-width:767px ) {
+@media only screen and (max-width: 767px) {
   .vertical-line {
-    border: none;
+    border-left: 0 solid black;
+    padding-left: 20px;
+    padding-top: 20px;
   }
 }

@@ -13,7 +13,7 @@ import { NavigationService } from './services/navigation.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Catskill Self Storage';
+  title = 'SENTRY Stor-ALL';
   flag: boolean;
   public offsets: number[];
   x: any;
