@@ -513,9 +513,11 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
     this.getInsuranceChoiceSubscribe$ = this.fetchDataService.getInsuranceChoices()
     .subscribe(insuranceChoicesResponse => {
       if (insuranceChoicesResponse.blnSuccess === true) {
-        this.LstInsuranceChoices = insuranceChoicesResponse.lstInsuranceChoices;
-        const defaultInsuranceChoice = insuranceChoicesResponse.lstInsuranceChoices[0].CoverageDescription;
-        this.dataSharingService.insuranceChoiceId = insuranceChoicesResponse.lstInsuranceChoices[0].InsuranceChoiceID;
+        this.LstInsuranceChoices = insuranceChoicesResponse.lstInsuranceChoices.filter(x => x.CoverageDescription !== 'No Coverage');
+        console.log('this.LstInsuranceChoices', this.LstInsuranceChoices);
+
+        const defaultInsuranceChoice = this.LstInsuranceChoices[0].CoverageDescription;
+        this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[0].InsuranceChoiceID;
         this.reserveUnitForm.patchValue({
           lstInsuranceChoices: ([{
             CoverageDescription: defaultInsuranceChoice,
