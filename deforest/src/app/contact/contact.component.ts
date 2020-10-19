@@ -6,6 +6,7 @@ import { EmailService } from '../services/email.service';
 import { contact, officeHours } from '../data/contact';
 import { contactPageContent, contactPageTitle } from '../data/title';
 import { contactHeading } from '../data/heading';
+import { contactscript } from '../data/script';
 
 @Component({
   selector: 'app-contact',
@@ -28,6 +29,7 @@ export class ContactComponent implements OnInit {
   contactPageContent: string;
   contactPageTitle: string;
   contactHeading: string;
+  contactscript: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -54,6 +56,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.fetchContactDetails();
+    this.fetchScript();
     window.scrollTo(0, 0);
     this.fetchHours();
   }
@@ -64,6 +67,10 @@ export class ContactComponent implements OnInit {
   public fetchMetaData() {
     this.contactPageTitle = contactPageTitle;
     this.contactPageContent = contactPageContent;
+  }
+
+  public fetchScript() {
+    this.contactscript = contactscript;
   }
 
 

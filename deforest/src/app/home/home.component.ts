@@ -6,6 +6,7 @@ import { homePageTitle, homePageContent } from '../data/title';
 import { contact, officeHours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs,
           gettingStarted, feature, blurbHeading, blurbText, aboutFamily } from '../data/home';
+import { script } from '../data/script';
 
 @Component({
   selector: 'app-home',
@@ -29,6 +30,7 @@ export class HomeComponent implements OnInit {
   aboutFamily: any;
   homePageTitle: string;
   homePageContent: string;
+  script: any;
 
 
   constructor(@Inject(WINDOW) private window: Window,
@@ -54,6 +56,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
+    this.fetchScript();
     this.fetchJumbotronText();
     window.scrollTo(0, 0);
   }
@@ -69,6 +72,10 @@ export class HomeComponent implements OnInit {
 
   public fetchHours() {
     this.hours = officeHours;
+  }
+
+  public fetchScript() {
+    this.script = script;
   }
 
   public fetchMetaData() {
