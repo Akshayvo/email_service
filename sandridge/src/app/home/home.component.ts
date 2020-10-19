@@ -7,6 +7,7 @@ import { contact, officeHours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs,
           gettingStarted, feature, blurbHeading, blurbText, aboutFamily } from '../data/home';
 import { UaParserService } from '../services/ua-parser.service';
+import { homeScript } from '../data/script';
 
 @Component({
   selector: 'app-home',
@@ -32,7 +33,7 @@ export class HomeComponent implements OnInit {
   homePageContent: string;
   imagetype: any;
   imageBaseUrl: any;
-
+  script: any;
 
   constructor(@Inject(WINDOW) private window: Window,
     private router: Router,
@@ -62,6 +63,11 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotronText();
     window.scrollTo(0, 0);
+    this.fetchScript();
+  }
+
+  public fetchScript() {
+    this.script = homeScript;
   }
 
   public fetchJumbotronText() {
