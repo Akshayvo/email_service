@@ -7,6 +7,7 @@ import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { UaParserService } from '../services/ua-parser.service';
 import { homePageTitle, homePageContent } from '../data/title';
+import { script } from '../data/script';
 
 @Component({
   selector: 'app-home',
@@ -34,6 +35,7 @@ export class HomeComponent implements OnInit {
   aboutUsHeading: string;
   data: any;
   altText: string;
+  script: any;
 
 
   constructor(
@@ -66,6 +68,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
+    this.fetchscript();
     this.fetchJumbotron();
     window.scrollTo(0, 0);
   }
@@ -76,6 +79,10 @@ export class HomeComponent implements OnInit {
 
   public fetchHours() {
     this.hours = hours;
+  }
+
+  public fetchscript() {
+    this.script = script;
   }
 
   public fetchFeatures() {

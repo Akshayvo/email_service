@@ -7,6 +7,7 @@ import { EmailService } from '../services/email.service';
 import { MetaService } from '../services/link.service';
 import { contactPageContent, contactPageTitle } from '../data/title';
 import { contactHeading } from '../data/heading';
+import { contactscript } from '../data/script';
 
 @Component({
   selector: 'app-contact',
@@ -31,6 +32,7 @@ export class ContactComponent implements OnInit {
   phone: any;
   contactPageContent: string;
   contactPageTitle: string;
+  contactscript: any;
 
   constructor(
     private router: Router,
@@ -52,6 +54,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.fetchContactDetails();
+    this.fetchscript();
     this.fetchHours();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -71,6 +74,10 @@ export class ContactComponent implements OnInit {
   public fetchMetaData() {
     this.contactPageTitle = contactPageTitle;
     this.contactPageContent = contactPageContent;
+  }
+
+  public fetchscript() {
+    this.contactscript = contactscript;
   }
 
   public fetchContactDetails() {
