@@ -10,6 +10,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
+import { Location1Script, Location2Script, Location3Script, Location4Script } from '../data/script';
 
 
 @Component({
@@ -28,6 +29,7 @@ export class LocationComponent implements OnInit {
   head: any;
   tabs: any;
   locationName: string;
+  script: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -37,7 +39,6 @@ export class LocationComponent implements OnInit {
     private dataSharingService: DataSharingService,
     private canonical: CanonicalService,
     private activatedRoute: ActivatedRoute,
-
     ) {
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
@@ -53,7 +54,7 @@ export class LocationComponent implements OnInit {
             this.locationName = `StorageTown Rental Spaces - Chester - Brookside Ave`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
             this.dataSharingService.locationName = this.locationName;
-
+            this.script = Location2Script;
 
     } else if (this.router.url.includes('/location/chester')) {
       this.canonical.create();
@@ -66,6 +67,7 @@ export class LocationComponent implements OnInit {
            this.locationName = `StorageTown Rental Spaces - Chester - Andrews Lane `;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
            this.dataSharingService.locationName = this.locationName;
+           this.script = Location1Script;
 
 
       } else if (this.router.url.includes('/location/montgomery-walden')) {
@@ -79,7 +81,7 @@ export class LocationComponent implements OnInit {
         this.locationName = `StorageTown Rental Spaces - Montgomery/Walden`;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
         this.dataSharingService.locationName = this.locationName;
-
+        this.script = Location3Script;
    } else if (this.router.url.includes('/location/middletown-wallKill')) {
     this.canonical.create();
     this.meta.addTag({
@@ -91,6 +93,7 @@ export class LocationComponent implements OnInit {
     this.locationName = `StorageTown - Middletown/WallKill Location`;
     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
     this.dataSharingService.locationName = this.locationName;
+    this.script = Location4Script;
   }
 }
 

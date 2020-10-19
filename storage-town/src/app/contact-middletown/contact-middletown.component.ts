@@ -8,6 +8,8 @@ import { contactsLocation1, hoursLocation1,
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
+import { contactPageLocation4Script } from '../data/script';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-contact-middletown',
@@ -29,6 +31,7 @@ export class ContactMiddletownComponent implements OnInit {
   locationId: any;
   subject: any;
   eventName: string;
+  script: any;
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;
@@ -40,8 +43,12 @@ export class ContactMiddletownComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     private formBuilder: FormBuilder,
-    private data: LocationService
+    private data: LocationService,
+    private canonical: CanonicalService
+
   ) {
+    this.canonical.create();
+
     this.meta.addTag({
       name: 'description',
       content: `Want to reserve a unit or find information about your account? Use our contact
@@ -62,6 +69,7 @@ export class ContactMiddletownComponent implements OnInit {
   ngOnInit() {
     window.scrollTo(0, 0);
   this.fetchContactDetailsLocation4();
+  this.fetchScript();
 }
 
   get f() { return this.contactForm.controls; }
@@ -85,6 +93,10 @@ export class ContactMiddletownComponent implements OnInit {
     } else if ( this.locationId === '4' ) {
       this.fetchContactDetailsLocation4();
     }
+  }
+
+  public fetchScript() {
+    this.script = contactPageLocation4Script;
   }
 
   public fetchContactDetailsLocation1() {

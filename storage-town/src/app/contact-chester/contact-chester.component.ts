@@ -8,6 +8,8 @@ import { contactsLocation1, hoursLocation1,
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
+import { contactPageLocation1Script } from '../data/script';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-contact-chester',
@@ -29,7 +31,7 @@ export class ContactChesterComponent implements OnInit {
   locationId: any;
   subject: any;
   eventName: string;
-
+  script: any;
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;
@@ -41,8 +43,10 @@ export class ContactChesterComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     private formBuilder: FormBuilder,
-    private data: LocationService
+    private data: LocationService,
+    private canonical: CanonicalService
   ) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Want to reserve a unit or find information about your account? Use our contact
@@ -62,10 +66,15 @@ export class ContactChesterComponent implements OnInit {
 
   ngOnInit() {
     window.scrollTo(0, 0);
+    this.fetchScript();
   this.fetchContactDetailsLocation2();
 }
 
   get f() { return this.contactForm.controls; }
+
+  public fetchScript() {
+    this.script = contactPageLocation1Script;
+  }
 
   receiveMessage() {
     this.data.currentLocation.subscribe(locationId => {

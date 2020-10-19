@@ -1,43 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc>https://www.storage-town.com/</loc>
-    <lastmod>2018-09-25</lastmod>
-    <priority>0.9</priority>
+    <loc> https://storage-town.com/</loc>
+    <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc>https://www.storage-town.com/location/andrews</loc>
-    <lastmod>2018-09-25</lastmod>
-    <priority>0.9</priority>
+    <loc> https://storage-town.com/location/andrews/reserve-unit </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+ 
+  <url>
+    <loc> https://storage-town.com/storage-tips </loc>
+    <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc>https://www.storage-town.com/location/chester</loc>
-    <lastmod>2018-09-25</lastmod>
-    <priority>0.9</priority>
+    <loc> 
+https://storage-town.com/location/montgomery-walden/storage-units
+</loc>
+    <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc>https://www.storage-town.com/location/montgomery-walden</loc>
-    <lastmod>2018-09-25</lastmod>
-    <priority>0.9</priority>
+    <loc> 
+https://storage-town.com/contact-us
+</loc>
+    <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc>https://www.storage-town.com/location/middletown-wallKill</loc>
-    <lastmod>2018-09-25</lastmod>
-    <priority>0.9</priority>
+    <loc> 
+https://storage-town.com/location/montgomery-walden
+</loc>
+    <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc>https://www.storage-town.com/pay-rent</loc>
-    <lastmod>2018-09-25</lastmod>
-    <priority>0.9</priority>
+    <loc> 
+https://storage-town.com/location/chester/storage-units
+</loc>
+    <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc>https://www.storage-town.com/storage-tips</loc>
-    <lastmod>2018-09-25</lastmod>
-    <priority>0.9</priority>
+    <loc> 
+https://storage-town.com/location/middletown-wallKill/storage-units
+</loc>
+    <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc>https://www.storage-town.com/contact-us</loc>
-    <lastmod>2018-09-25</lastmod>
-    <priority>0.9</priority>
+    <loc> 
+https://storage-town.com/location/andrews
+</loc>
+    <lastmod>2020-09-21</lastmod>
   </url>
+  <url>
+    <loc> https://storage-town.com/location/chester/reserve-unit </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/middletown-wallKill </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/chester </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+https://storage-town.com/pay-rent
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+https://storage-town.com/location/andrews/storage-units
+loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+https://storage-town.com/location/middletown-wallKill/reserve-unit
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+https://storage-town.com/location/montgomery-walden/reserve-unit
+loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+https://storage-town.com/contact-chester
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+https://storage-town.com/contact-montgomery-walden
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+https://storage-town.com/pay-rent/middletown-wallKill
+ </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+https://storage-town.com/location/middletown-wallKill/directions </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/middletown-wallKill/unit-sizer
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/contact-andrews
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/andrews/directions
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/montgomery-walden/about
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/chester/directions
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/pay-rent/montgomery-walden
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/andrews/about </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+https://storage-town.com/contact-middletown-wallkill </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/montgomery-walden/directions
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/andrews/unit-sizer </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+https://storage-town.com/pay-rent/chester
+loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/pay-rent/middletown-wallKill/rent-sub/login
+ </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/pay-rent/montgomery-walden/rent-sub/login
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/montgomery-walden/unit-sizer
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/middletown-wallKill/about
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/chester/about loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/location/chester/unit-sizer
+</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-town.com/pay-rent/chester/rent-sub/login </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+
 </urlset>

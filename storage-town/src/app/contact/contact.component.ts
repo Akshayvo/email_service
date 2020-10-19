@@ -29,7 +29,7 @@ export class ContactComponent implements OnInit {
   completeMessage: string;
   locationId: any;
   subject: any;
-
+  script: any;
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;

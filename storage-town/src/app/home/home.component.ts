@@ -4,6 +4,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
   contactsLocation3, contactsLocation4, hoursLocation3, hoursLocation4, } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
+import { homePageScript } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { LocationService } from '../services/location.service';
 
@@ -19,6 +20,7 @@ export class HomeComponent implements OnInit {
   heading: string;
   features: any;
   serviceOffered: any;
+  script: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -39,6 +41,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.fetchStaticContent();
     this.fetchFeatureHead();
+    this.fetchScript();
     window.scrollTo(0, 0);
     this.receiveMessage();
   }
@@ -60,6 +63,10 @@ export class HomeComponent implements OnInit {
     } else if ( this.locationId === '4' ) {
       this.fetchContactDetailsLocation4();
     }
+  }
+
+  public fetchScript() {
+    this.script = homePageScript;
   }
 
     public fetchContactDetailsLocation1() {
