@@ -52,6 +52,8 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { PhotosComponent } from './photos/photos.component';
 import { TruckRentalComponent } from './truck-rental/truck-rental.component';
+import { ScriptHackComponent } from './script-hack/script-hack.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,6 +86,7 @@ import { TruckRentalComponent } from './truck-rental/truck-rental.component';
     VerifyCodeComponent,
     ResetPasswordComponent,
     TruckRentalComponent,
+    ScriptHackComponent
   ],
   imports: [
     CommonModule,
