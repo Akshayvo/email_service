@@ -8,7 +8,7 @@
     <loc> https://storage-town.com/location/andrews/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
- 
+
   <url>
     <loc> https://storage-town.com/storage-tips </loc>
     <lastmod>2020-09-21</lastmod>
@@ -63,14 +63,14 @@ https://storage-town.com/location/andrews
   </url>
   <url>
     <loc> 
-https://storage-town.com/pay-rent
+    https://storage-town.com/pay-rent
 </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-https://storage-town.com/location/andrews/storage-units
-loc>
+  https://storage-town.com/location/andrews/storage-units
+</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
@@ -82,7 +82,7 @@ https://storage-town.com/location/middletown-wallKill/reserve-unit
   <url>
     <loc> 
 https://storage-town.com/location/montgomery-walden/reserve-unit
-loc>
+</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
@@ -159,7 +159,7 @@ https://storage-town.com/contact-middletown-wallkill </loc>
   <url>
     <loc> 
 https://storage-town.com/pay-rent/chester
-loc>
+</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
@@ -183,17 +183,16 @@ loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://storage-town.com/location/chester/about loc>
+    <loc> https://storage-town.com/location/chester/about </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> https://storage-town.com/location/chester/unit-sizer
-</loc>
+    </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> https://storage-town.com/pay-rent/chester/rent-sub/login </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
-
 </urlset>

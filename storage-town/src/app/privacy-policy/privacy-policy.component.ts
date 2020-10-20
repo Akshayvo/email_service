@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { privacyPolicy } from '../data/privacy-policy';
+import { CanonicalService } from '../services/canonical.service';
 
 
 
@@ -16,8 +17,11 @@ export class PrivacyPolicyComponent implements OnInit {
 
   constructor(
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private canonical: CanonicalService
+
   ) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `This page contains this website's privacy policy. For more information, please contact the business directly.`

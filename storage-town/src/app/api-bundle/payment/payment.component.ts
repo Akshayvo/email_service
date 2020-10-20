@@ -6,6 +6,7 @@ import { contactsLocation1 } from '../../data/contact';
 import { tableHeader, tableData } from '../../data/pay-rent';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
+import { CanonicalService } from '../../services/canonical.service';
 
 @Component({
   selector: 'app-payment',
@@ -28,7 +29,9 @@ export class PaymentComponent implements OnInit {
     private data: LocationService,
     public router: Router,
     private  dataSharingService: DataSharingService,
+    private canonical: CanonicalService
   ) {
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`

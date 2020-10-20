@@ -40,7 +40,7 @@ export const contactsLocation2 = [
         label: 'Address: ',
         data: '53 Brookside Ave, Chester, NY 10918',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CT1A0QzwMwCHEBA-'
+        redirect: 'https://g.page/r/CT1A0QzwMwCHEBA'
     },
     {
         id: 2,
