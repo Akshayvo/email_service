@@ -64,6 +64,17 @@ export class HomeComponent implements OnInit {
     this.fetchJumbotronText();
     window.scrollTo(0, 0);
     this.fetchScript();
+    this.loadScript();
+  }
+
+  public loadScript() {
+    const node = document.createElement('script'); // creates the script tag
+    node.type = 'application/ld+json'; // set the script type
+    node.async = true; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    document.getElementsByTagName('head')[0].appendChild(node);
   }
 
   public fetchScript() {

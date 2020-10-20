@@ -59,10 +59,21 @@ export class ContactComponent implements OnInit {
     window.scrollTo(0, 0);
     this.fetchHours();
     this.fetchScript();
+    this.loadScript();
   }
 
   get f() { return this.contactForm.controls; }
 
+
+  public loadScript() {
+    const node = document.createElement('script'); // creates the script tag
+    node.type = 'application/ld+json'; // set the script type
+    node.async = true; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    document.getElementsByTagName('head')[0].appendChild(node);
+  }
 
   public fetchScript() {
     this.script = contactScript;
