@@ -74,7 +74,7 @@
           <div class="col-md-6 py-3 locate-us-style">
             <table>
               <tr valign="top" *ngFor="let contact of contactDetails">
-                <td ><strong>{{contact.label}}</strong></td><td class="contact-data" *ngIf="contact?.label === 'Email: ' || contact?.id === 'Phone: ' else other_content"><a [href]="contact?.redirect"> {{contact.data}}</a></td>
+                <td ><strong>{{contact.label}}</strong></td><td class="contact-data" *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content"><a [href]="contact?.redirect"> {{contact.data}}</a></td>
                 <ng-template #other_content><td >{{contact.data}}</td></ng-template>
               </tr>
               <tr valign="top" *ngFor="let hour of hours">

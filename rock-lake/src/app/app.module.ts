@@ -53,6 +53,10 @@ import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confir
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
+import { TabsComponent } from './tabs/tabs.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,12 +66,15 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     FooterComponent,
     ViewRatesComponent,
     ContactButtonComponent,
-    // TablesComponent,
+    RentSubComponent,
+    AutoPayComponent,
     ErrorComponent,
+    SignUpComponent,
     PayRentComponent,
     ErrorHandlerComponent,
     StorageTipsComponent,
     AccordionComponent,
+    TabsComponent,
     ReserveComponent,
     ViewRatesComponent,
     ViewRatesIframePageComponent,

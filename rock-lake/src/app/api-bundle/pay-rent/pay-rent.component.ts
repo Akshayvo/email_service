@@ -5,6 +5,8 @@ import { contact } from '../../data/contact';
 import { payRent } from '../../data/blurb';
 import { payRentPageContent, payRentPageTitle } from '../../data/title';
 import { payRentHeading } from '../../data/heading';
+import { tabs } from '../../data/tab';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-pay-rent',
@@ -20,6 +22,9 @@ export class PayRentComponent implements OnInit {
   payRentPageTitle: string;
   payRentPageContent: string;
   payRentHeading: string;
+  tabs: any;
+  showPaymentPageType: number;
+
 
   constructor(
     private titleService: Title,
@@ -37,7 +42,11 @@ export class PayRentComponent implements OnInit {
     this.fetchPayment();
     this.fetchContact();
     this.fetchPayRent();
+    this.fetchTabs();
     window.scrollTo(0, 0);
+    this.showPaymentPageType = environment.paymentPageType;
+    console.log('this.showPaymentPageType', this.showPaymentPageType)
+
   }
 
   public fetchMetaData() {
@@ -56,5 +65,9 @@ export class PayRentComponent implements OnInit {
 
   public fetchPayRent() {
     this.payRent = payRent;
+  }
+
+  public fetchTabs() {
+    this.tabs = tabs;
   }
 }

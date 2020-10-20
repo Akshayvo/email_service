@@ -10,7 +10,7 @@ export const reservePageTitle = `Reserve a Unit | Rock Lake Storage`;
 export const reservePageContent = `Ready to reserve your unit at Rock Lake Storage? Click here to begin storing with Lake Mills's premier self storage facility!`;
 
 export const payRentPageTitle = `Pay Rent | Rock Lake Storage`;
-export const payRentPageContent = `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`;
+export const payRentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
 
 export const storageTipsTitle = `Storage Tips  | Rock Lake Storage`;

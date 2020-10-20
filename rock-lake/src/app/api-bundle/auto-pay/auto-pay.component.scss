@@ -1,5 +1,11 @@
 @import "../../../styles.scss";
 
+.checkbox-style {
+  display: flex;
+  align-items: baseline;
+}
+
+
 .display-expiration-date {
   display: flex;
 }
@@ -46,7 +52,7 @@ table {
 
 .payRent {
   h2 {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
   }
 }
 
@@ -117,6 +123,12 @@ table {
     text-decoration: underline;
     color: $secondary;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .margin-small-device {
+    margin-left: 0;
   }
 }
 

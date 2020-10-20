@@ -1,3 +1,4 @@
+
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
@@ -16,7 +17,8 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
   submitted = false;
   passwordResetted = false;
   showLoader = false;
-   private resetPasswordUnsubscribe$: Subscription;
+  paymentTab: string;
+  private resetPasswordUnsubscribe$: Subscription;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -36,6 +38,9 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
   }
 
   get f() { return this.resetPasswordForm.controls; }
@@ -45,7 +50,19 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
   }
 
   goToLogin() {
-    this.router.navigate(['/pay-rent/login']);
+    if (!!this.paymentTab) {
+      this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
+    } else {
+      this.router.navigate([`/pay-rent/login`]);
+    }
+  }
+
+  goBack() {
+    if (!!this.paymentTab) {
+      this.router.navigate([`/pay-rent/${this.paymentTab}/verifyCode`]);
+    } else {
+      this.router.navigate([`/pay-rent/verifyCode`]);
+    }
   }
 
   resetPassword(data: any): void {

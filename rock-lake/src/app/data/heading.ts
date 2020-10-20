@@ -2,7 +2,7 @@ export const viewRatesHeading = `View Rates`;
 
 export const reserveUnitHeading = `Reserve Unit`;
 
-export const payRentHeading = `Pay Rent Online`;
+export const payRentHeading = `Pay Rent`;
 
 export const storageTipsHeading = `Storage Tips`;
 
