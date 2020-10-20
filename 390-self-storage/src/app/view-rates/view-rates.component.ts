@@ -2,6 +2,8 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { dataViewRates } from '../data/view-rates';
+import { gettingStarted } from '../data/home';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-view-rates',
@@ -12,10 +14,14 @@ export class ViewRatesComponent implements OnInit {
 
   currentActive: any = 'VIEW RATES';
   dataViewRates: any;
+  gettingStarted: any;
+
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
+    private router: Router,
+
     private meta: Meta
   ) {
     this.meta.addTag({
@@ -29,9 +35,19 @@ export class ViewRatesComponent implements OnInit {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.viewRates();
+    this.fetchGetSarted();
   }
 
   public viewRates() {
     this.dataViewRates = dataViewRates;
+  }
+
+  public navigate(location: any) {
+    this.router.navigate([location]);
+  }
+
+  public fetchGetSarted() {
+    this.gettingStarted = gettingStarted;
+
   }
 }

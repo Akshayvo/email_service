@@ -15,9 +15,9 @@ export class ReserveUnitComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Reserve your unit quickly and easily with our handy online reservation form. Fill out your information and we'll be in touch!`
+      content: `Quickly reserve the perfect storage unit online at 390 Self Storage in Rochester NY. We offer secure and affordable units. Also, serving Gates and Brighton NY.`
     });
-    this.titleService.setTitle('Reserve Now | 390 Self Storage');
+    this.titleService.setTitle('Rent Storage Unit - 390 Self Storage Rochester NY, Gates, Brighton');
   }
 
   ngOnInit() {

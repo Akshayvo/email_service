@@ -3,7 +3,6 @@
 .contentHolder {
   padding-top: 90px;
   min-height: 86vh;
-  margin-bottom: 50px;
 
   .padding {
     padding: 48px;
@@ -36,6 +35,36 @@
   }
 }
 
+.special-row {
+  // position: absolute;
+  // bottom: 0;
+  background-color: $primary;
+  color: white;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.getStarted {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/390-self-storage-office.jpg") center top no-repeat fixed;
+  background-size: cover;
+  background-position: top;
+
+  .get-started {
+    left: 0;
+    right: 0;
+    top: 10;
+    background: rgba(238, 238, 238, 0.7);
+    z-index: 9;
+  }
+  p {
+    font-size: 2rem;
+  }
+
+  .btn {
+    min-width: 250px;
+    font-size: 1.2rem;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   iframe {
