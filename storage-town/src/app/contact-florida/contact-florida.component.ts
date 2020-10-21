@@ -69,7 +69,7 @@ export class ContactFloridaComponent implements OnInit {
     window.scrollTo(0, 0);
   this.fetchContactDetailsLocation1();
   this.fetchScript();
-
+this.loadScript();
 }
 
   get f() { return this.contactForm.controls; }
@@ -79,6 +79,16 @@ export class ContactFloridaComponent implements OnInit {
       this.locationId = locationId;
       this.dataupdate();
     });
+  }
+
+  public loadScript() {
+    const node = document.createElement('script'); // creates the script tag
+    node.type = 'application/ld+json'; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    document.getElementsByTagName('head')[0].appendChild(node);
   }
 
   public dataupdate() {

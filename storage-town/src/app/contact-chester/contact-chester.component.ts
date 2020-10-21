@@ -68,12 +68,23 @@ export class ContactChesterComponent implements OnInit {
     window.scrollTo(0, 0);
     this.fetchScript();
   this.fetchContactDetailsLocation2();
+  this.loadScript();
 }
 
   get f() { return this.contactForm.controls; }
 
   public fetchScript() {
     this.script = contactPageLocation1Script;
+  }
+
+  public loadScript() {
+    const node = document.createElement('script'); // creates the script tag
+    node.type = 'application/ld+json'; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    document.getElementsByTagName('head')[0].appendChild(node);
   }
 
   receiveMessage() {

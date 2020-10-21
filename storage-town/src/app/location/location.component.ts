@@ -55,7 +55,7 @@ export class LocationComponent implements OnInit {
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location2Script;
-
+            this.loadScript();
     } else if (this.router.url.includes('/location/chester')) {
       this.canonical.create();
            this.meta.addTag({
@@ -68,8 +68,7 @@ export class LocationComponent implements OnInit {
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location1Script;
-
-
+           this.loadScript();
       } else if (this.router.url.includes('/location/montgomery-walden')) {
         this.canonical.create();
         this.meta.addTag({
@@ -82,6 +81,7 @@ export class LocationComponent implements OnInit {
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
         this.dataSharingService.locationName = this.locationName;
         this.script = Location3Script;
+        this.loadScript();
    } else if (this.router.url.includes('/location/middletown-wallKill')) {
     this.canonical.create();
     this.meta.addTag({
@@ -94,12 +94,23 @@ export class LocationComponent implements OnInit {
     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
     this.dataSharingService.locationName = this.locationName;
     this.script = Location4Script;
+    this.loadScript();
   }
 }
 
   ngOnInit() {
     window.scrollTo(0, 0);
     this.isSomePage();
+  }
+
+  public loadScript() {
+    const node = document.createElement('script'); // creates the script tag
+    node.type = 'application/ld+json'; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    document.getElementsByTagName('head')[0].appendChild(node);
   }
 
   public isSomePage() {
