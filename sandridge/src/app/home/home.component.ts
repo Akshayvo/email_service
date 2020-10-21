@@ -70,7 +70,7 @@ export class HomeComponent implements OnInit {
   public loadScript() {
     const node = document.createElement('script'); // creates the script tag
     node.type = 'application/ld+json'; // set the script type
-    node.async = true; // makes script run asynchronously
+    node.async = false; // makes script run asynchronously
     // node.charset = 'utf-8';
     node.innerHTML = JSON.stringify(this.script);
     // append to head of document
