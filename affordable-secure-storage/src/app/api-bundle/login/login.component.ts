@@ -117,6 +117,12 @@ export class LoginComponent implements OnInit, OnDestroy {
         this.contact = contactsLocation3;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
         localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
+      } else if (this.router.url.includes('affordable-secure-storage-backyard')) {
+        this.id = 4;
+        this.name = 'Affordable Secure Storage - Backyard';
+        this.contact = contactsLocation4;
+        this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
+        localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
       } else if (this.router.url.includes('affordable-secure-storage-hernando')) {
         this.id = 5;
         this.name = 'Affordable Secure Storage - Hernando';

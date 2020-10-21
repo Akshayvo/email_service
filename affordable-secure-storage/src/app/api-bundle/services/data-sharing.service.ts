@@ -10,7 +10,7 @@ export class DataSharingService {
     loc2: 'XjJ7OUYzVzNHOUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29339  West Hernando
     loc3: 'dzJ0OVczSjQqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29346 Labelle
     loc4: 'dzJ0OVczSjQqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29345 Backyard
-    loc5: 'XjJ7OUYzVzVHMUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O' // 29351 Backyard
+    loc5: 'XjJ7OUYzVzVHMUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O' // 29351 hernando
   };
 
   // locationAPIKey = {
