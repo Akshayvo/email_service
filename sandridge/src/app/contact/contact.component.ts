@@ -38,6 +38,8 @@ export class ContactComponent implements OnInit {
     private formBuilder: FormBuilder,
     private meta: Meta
   ) {
+    this.fetchScript();
+    this.loadScript();
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
@@ -58,8 +60,7 @@ export class ContactComponent implements OnInit {
     this.fetchContactDetails();
     window.scrollTo(0, 0);
     this.fetchHours();
-    this.fetchScript();
-    this.loadScript();
+
   }
 
   get f() { return this.contactForm.controls; }

@@ -41,6 +41,9 @@ export class HomeComponent implements OnInit {
     private meta: Meta,
     private uaParserService: UaParserService,
   ) {
+    this.fetchScript();
+    this.loadScript();
+    console.log('consturctor');
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
@@ -63,8 +66,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotronText();
     window.scrollTo(0, 0);
-    this.fetchScript();
-    this.loadScript();
+
   }
 
   public loadScript() {
