@@ -20,3 +20,13 @@
     color: black;
   }
 }
+
+.natrona-border {
+  border-left: 1px solid #343a40;
+}
+
+@media only screen and (max-width: 767px) {
+  .natrona-border {
+    border: none;
+  }
+}
