@@ -18,6 +18,10 @@ export const featuresList = [
     {
         td1: 'Recreational Vehicle Storage',
         td2: `Fully-Fenced Facility`
+    },
+    {
+        td1: 'Oregon Family Owned',
+        td2: `On-Site Manager`
     }
 ];
 
@@ -28,22 +32,22 @@ export const aboutUsHeading = `Affordable Self Storage Units in Lebanon`;
 
 export const aboutUs = [
     {
-        p: `Starlite Storage is a family-owned & operated self storage facility in Lebanon, OR. As a
-        family-owned enterprise, we understand the value of building relationships in the community through
-        stellar customer service. That's why we've gone the extra mile to make your self storage experience
-        at Starlite Storage an easy one. `,
+        p: `Starlite Storage is an Oregon family-owned self storage facility in Lebanon, OR. As a family-owned
+        enterprise, we understand the value of building relationships in the community through stellar customer
+        service. That's why we've gone the extra mile to make your self storage experience at Starlite Storage an easy one.`,
     },
     {
-        p: `Start by taking a moment to review our unit availability and pricing on the View Rates page, then
-        make your reservation online or give one of our friendly managers a call! Once you're moved your clothes,
-        appliances, tools, and other household or business items into your new storage unit, you'll find managing
-        your account through our website a fast and simple experience. Pay your rent, or sign up for autopay in
-        seconds, 24 hours a day!`,
+        p: `Start by taking a moment to review our unit availability and pricing on the View Rates page, then make
+        your reservation online or give one of our friendly managers a call! Once you're moved your clothes, appliances,
+        tools, and other household or business items into your new storage unit, you'll find managing your account through
+        our website a fast and simple experience. Pay your rent, or sign up for autopay in seconds, 24 hours a day!`,
     },
     {
-        p: `We also offer recreational vehicle parking, and we understand how valuable your RV or camper is, which
-        is why we've gone the extra mile with security measures. Our facility is well-lit, accessible only by users
-        via personal access code, covered by digital security cameras, and is fully-fenced.`,
+        p: `We also offer recreational vehicle parking, and we understand how valuable your RV or camper is, which is why
+        we've gone the extra mile with security measures. Our facility is well-lit, accessible only by users via personal
+        access code, covered by digital security cameras, and is fully-fenced. All tenants must agree to abide by our
+        established rules and guidelines designed to aid in creating a secure environment. Our services even come with
+        an on-site manager living at our facility for additional peace of mind! `,
     },
 ];
 

@@ -2,15 +2,15 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `We are proud to be a family owned & operated self storage facility that caters to friends and neighbors
-      in Lebanon, Sweet Home, and the surrounding communities. You'll find the only thing better than our
-      unit rates is our awesome customer service! We'll walk you through the self storage process from
-      reserving your unit to tips and tricks on how to get the most out of your space!`,
+      p: `We are proud to be an Oregon family-owned self storage facility that caters to friends and
+      neighbors in Lebanon, Sweet Home, and the surrounding communities. You'll find the only thing better
+      than our unit rates is our awesome customer service! We'll walk you through the self storage process
+      from reserving your unit to tips and tricks on how to get the most out of your space!`,
     },
     {
-      p: `Start by checking out our rates, then place a reservation in our easy reservation form. One of our
-      friendly and knowledgeable managers will reach out, and confirm your details. Before you know it, you'll
-      be clearing out your basement, attic, or garage, and reclaiming that space around home!`
+      p: `Start by checking out our rates, then place a reservation in our easy reservation form. One of
+      our friendly and knowledgeable managers will reach out, and confirm your details. Before you know it,
+      you'll be clearing out your basement, attic, or garage, and reclaiming that space around home!`
     }
 ];
 
