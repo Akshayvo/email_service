@@ -31,10 +31,58 @@ export class HomeComponent implements OnInit {
   ) {
     this.canonical.create();
     this.meta.addTag({
-      name: 'description',
+      property: "og:description",
       content: `We offer a wide range of self storage, car, RV and boat storage!
-      Check out our 4 convenient locations in Orange County, NY!`
+      Check out our 4 convenient locations in Orange County, NY!`,
     });
+
+    this.meta.addTag({
+      property: "og:type",
+      content: `website`,
+    });
+    this.meta.addTag({
+      property: "og:title",
+      content: `Affordable Self Storage Units | StorageTown Rental Spaces`,
+    });
+    this.meta.addTag({
+      property: "og:site_name",
+      content: `Storage Town Rental Spaces`,
+    });
+    this.meta.addTag({
+      property: "og:url",
+      content: `https://storage-town.com`,
+    });
+    this.meta.addTag({
+      property: "og:image",
+      content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`,
+    });
+
+    this.meta.addTag({
+      property: "twitter:site",
+      content: `@StorageTown Rental Speces`,
+    });
+    this.meta.addTag({
+      property: "twitter:card",
+      content: `summary`,
+    });
+    this.meta.addTag({
+      property: "twitter:creator",
+      content: `@syrasoft_connect`,
+    });
+    this.meta.addTag({
+      property: "twitter:title",
+      content: `@StorageTown Rental Speces`,
+    });
+    this.meta.addTag({
+      property: "twitter:description",
+      content: `We offer a wide range of self storage, car, RV and boat storage!
+      Check out our 4 convenient locations in Orange County, NY!`,
+    });
+    this.meta.addTag({
+      property: "twitter:image",
+      content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`,
+    });
+
     this.titleService.setTitle('Affordable Self Storage Units | StorageTown Rental Spaces');
   }
 
