@@ -678,9 +678,13 @@ h1 {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: right 37% top 10px;
-    background-size: 297% 100%;
+    // background-position: right 37% top 10px;
+    background-size: contain;
     height: 100vh;
+  }
+
+  .jumbotron-top {
+    height: 29vh;
   }
 
   .video-style {
@@ -713,6 +717,7 @@ h1 {
     top: auto;
     bottom: 2px;
     text-align: center;
+    top:32vh;
 
     .btn-outline-primary {
       margin-right: 0;
