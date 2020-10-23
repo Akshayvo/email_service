@@ -1,11 +1,12 @@
 @import "../../styles.scss";
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Gordans_Mini_Storage/webp/gordons-mini-storage-jumbotron.webp");
+
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Gordans_Mini_Storage/webp/gordons-mini-storage-jumbotron1.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Gordans_Mini_Storage/jpg/gordons-mini-storage-jumbotron.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Gordans_Mini_Storage/jpg/gordons-mini-storage-jumbotron1.jpg");
 }
 
 .display {
@@ -23,7 +24,7 @@
 .jumbotron {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right 0 top 50px;
   padding: 0;
   height: 80vh;
   color: $white;
@@ -528,6 +529,7 @@ h1 {
 
   .jumbotron {
     height: 100vh;
+    background-position: right 30% bottom 0;
   }
 
   .jumbotron-bottom {
@@ -630,7 +632,7 @@ h1 {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    background-position: right 36% bottom 0;
     height: 100vh;
   }
 
@@ -668,7 +670,7 @@ h1 {
   }
 
   .jumbotorn-button {
-    padding: 10px;
+    padding: 5px;
   }
 }
 
@@ -676,7 +678,8 @@ h1 {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    background-position: right 37% top 10px;
+    background-size: 297% 100%;
     height: 100vh;
   }
 
@@ -725,3 +728,22 @@ h1 {
     }
   }
 }
+
+@media only screen and (min-width: 601px ) {
+ .jumbotorn-skew-style {
+   display: none;
+ } 
+ .display {
+   display: none;
+ }
+}
+
+// @media only screen and (max-width: 600px) {
+//   .jumbotron-background-webp {
+//     background: url("../../assets/gordons-mini-storage1.jpg");
+//   }
+  
+//   .jumbotron-background-jpg {
+//     background: url("../../assets/gordons-mini-storage1.jpg");
+//   }
+// } 
