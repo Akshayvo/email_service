@@ -7,6 +7,7 @@ import { tableHeader, tableData } from '../../data/pay-rent';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { CanonicalService } from '../../services/canonical.service';
+import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
 
 @Component({
   selector: 'app-payment',
@@ -21,6 +22,8 @@ export class PaymentComponent implements OnInit {
   tableData: any;
   tableHeader = [];
   paymentTab: string;
+  twitter: any;
+  og: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -32,6 +35,21 @@ export class PaymentComponent implements OnInit {
     private canonical: CanonicalService
   ) {
     this.canonical.create();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
     this.meta.addTag({
       name: 'description',
       content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
@@ -78,6 +96,14 @@ export class PaymentComponent implements OnInit {
       this.locationId = locationId;
       this.dataupdate();
     });
+  }
+
+  public fetchOg() {
+      this.og = ogPayRentPage;
+  }
+
+  public fetchTwitter() {
+      this.twitter = twitterPayRentPage;
   }
 
   public fetchTableHeader() {

@@ -29,10 +29,6 @@ import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
 import { PayRentChesterComponent } from '../pay-rent-chester/pay-rent-chester.component';
 import { PayRentMontgomeryComponent } from '../pay-rent-montgomery/pay-rent-montgomery.component';
 import { PayRentMiddletownComponent } from '../pay-rent-middletown/pay-rent-middletown.component';
-import { ContactFloridaComponent } from '../contact-florida/contact-florida.component';
-import { ContactChesterComponent } from '../contact-chester/contact-chester.component';
-import { ContactMontgomeryComponent } from '../contact-montgomery/contact-montgomery.component';
-import { ContactMiddletownComponent } from '../contact-middletown/contact-middletown.component';
 import { PayRentFloridaComponent } from '../pay-rent-florida/pay-rent-florida.component';
 import { ReserveUnitComponent } from '../reserve-unit/reserve-unit.component';
 import { StorageUnitComponent } from '../storage-unit/storage-unit.component';
@@ -41,6 +37,7 @@ import { PaymentIframeComponent } from '../payment-iframe/payment-iframe.compone
 import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 import { environment } from '../../environments/environment';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
+import { ContactUsComponent } from '../contact-us/contact-us.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -282,11 +279,11 @@ export const apiRoutes = [
     children: childroute
   },
   { path: 'storage-tips', component: StorageTipsComponent },
-  { path: 'contact-andrews', component: ContactFloridaComponent},
-  { path: 'contact-chester', component: ContactChesterComponent},
-  { path: 'contact-montgomery-walden', component: ContactMontgomeryComponent},
-  { path: 'contact-middletown-wallkill', component: ContactMiddletownComponent},
   { path: 'contact-us', component: ContactComponent },
+  { path: 'contact-us/andrews', component: ContactUsComponent},
+  { path: 'contact-us/chester', component: ContactUsComponent},
+  { path: 'contact-us/montgomery-walden', component: ContactUsComponent},
+  { path: 'contact-us/middletown-wallKill', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
 ];
@@ -377,10 +374,6 @@ export const iFrameRoutes = [
   { path: 'pay-rent-chester', component: PayRentChesterComponent},
   { path: 'pay-rent-montgomery-walden', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-middletown-wallkill', component: PayRentMiddletownComponent},
-  { path: 'contact-andrews', component: ContactFloridaComponent},
-  { path: 'contact-chester', component: ContactChesterComponent},
-  { path: 'contact-montgomery-walden', component: ContactMontgomeryComponent},
-  { path: 'contact-middletown-wallkill', component: ContactMiddletownComponent},
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },

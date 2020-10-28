@@ -32,10 +32,6 @@ import { PayRentFloridaComponent } from './pay-rent-florida/pay-rent-florida.com
 import { PayRentChesterComponent } from './pay-rent-chester/pay-rent-chester.component';
 import { PayRentMontgomeryComponent } from './pay-rent-montgomery/pay-rent-montgomery.component';
 import { PayRentMiddletownComponent } from './pay-rent-middletown/pay-rent-middletown.component';
-import { ContactFloridaComponent } from './contact-florida/contact-florida.component';
-import { ContactMontgomeryComponent } from './contact-montgomery/contact-montgomery.component';
-import { ContactChesterComponent } from './contact-chester/contact-chester.component';
-import { ContactMiddletownComponent } from './contact-middletown/contact-middletown.component';
 import { ListOfFacilityComponent } from './list-of-facility/list-of-facility.component';
 import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component';
 import { ViewRatesPageComponent } from './api-bundle/view-rates-page/view-rates-page.component';
@@ -66,6 +62,9 @@ import { PaymentComponent } from './api-bundle/payment/payment.component';
 import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ScriptHackComponent } from './script-hack/script-hack.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { NgxJsonLdModule } from '@ngx-lite/json-ld';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -91,10 +90,6 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     PayRentChesterComponent,
     PayRentMontgomeryComponent,
     PayRentMiddletownComponent,
-    ContactFloridaComponent,
-    ContactMontgomeryComponent,
-    ContactChesterComponent,
-    ContactMiddletownComponent,
     ListOfFacilityComponent,
     ViewRatesComponent,
     ViewRatesPageComponent,
@@ -120,6 +115,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     ThankYouComponent,
     ScriptHackComponent,
     PrivacyPolicyComponent,
+    ContactUsComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
@@ -135,6 +131,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     HttpClientModule,
     MaterialModule,
     BrowserAnimationsModule,
+    NgxJsonLdModule
     ],
   providers: [
     DatePipe,

@@ -4,14 +4,15 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
   contactsLocation3, contactsLocation4, hoursLocation3, hoursLocation4, } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
-import { homePageScript } from '../data/script';
+import { homePageScript, ogHomePage, twitterHomePage } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { LocationService } from '../services/location.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  // template: `<ngx-json-ld [json]="script"></ngx-json-ld>`
 })
 export class HomeComponent implements OnInit {
   contactDetails: any;
@@ -21,6 +22,8 @@ export class HomeComponent implements OnInit {
   features: any;
   serviceOffered: any;
   script: any;
+  ogHomePage: any;
+  twitterHomePage: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -29,58 +32,22 @@ export class HomeComponent implements OnInit {
     private data: LocationService,
     private canonical: CanonicalService
   ) {
+    this.fetchOgHomePage();
+    this.fetchTwitterHomePage();
     this.canonical.create();
-    this.meta.addTag({
-      property: "og:description",
-      content: `We offer a wide range of self storage, car, RV and boat storage!
-      Check out our 4 convenient locations in Orange County, NY!`,
+
+    this.ogHomePage.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
     });
 
-    this.meta.addTag({
-      property: "og:type",
-      content: `website`,
-    });
-    this.meta.addTag({
-      property: "og:title",
-      content: `Affordable Self Storage Units | StorageTown Rental Spaces`,
-    });
-    this.meta.addTag({
-      property: "og:site_name",
-      content: `Storage Town Rental Spaces`,
-    });
-    this.meta.addTag({
-      property: "og:url",
-      content: `https://storage-town.com`,
-    });
-    this.meta.addTag({
-      property: "og:image",
-      content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`,
-    });
-
-    this.meta.addTag({
-      property: "twitter:site",
-      content: `@StorageTown Rental Speces`,
-    });
-    this.meta.addTag({
-      property: "twitter:card",
-      content: `summary`,
-    });
-    this.meta.addTag({
-      property: "twitter:creator",
-      content: `@syrasoft_connect`,
-    });
-    this.meta.addTag({
-      property: "twitter:title",
-      content: `@StorageTown Rental Speces`,
-    });
-    this.meta.addTag({
-      property: "twitter:description",
-      content: `We offer a wide range of self storage, car, RV and boat storage!
-      Check out our 4 convenient locations in Orange County, NY!`,
-    });
-    this.meta.addTag({
-      property: "twitter:image",
-      content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`,
+    this.twitterHomePage.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
     });
 
     this.titleService.setTitle('Affordable Self Storage Units | StorageTown Rental Spaces');
@@ -93,6 +60,14 @@ export class HomeComponent implements OnInit {
     window.scrollTo(0, 0);
     this.receiveMessage();
     this.loadScript();
+  }
+
+  public fetchOgHomePage() {
+    this.ogHomePage = ogHomePage;
+  }
+
+  public fetchTwitterHomePage() {
+    this.twitterHomePage = twitterHomePage;
   }
 
   receiveMessage() {

@@ -454,3 +454,452 @@ export const contactPageLocation4Script = {
     ]
 
 };
+
+export const ogHomePage = [
+  {
+    property: `og:description`,
+    content: `We offer a wide range of self storage, car, RV and boat storage!
+    Check out our 4 convenient locations in Orange County, NY!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:title`,
+    content: `Affordable Self Storage Units | StorageTown Rental Spaces`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`
+  },
+];
+
+export const twitterHomePage = [
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:title`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:description`,
+    content: `We offer a wide range of self storage, car, RV and boat storage!
+    Check out our 4 convenient locations in Orange County, NY!`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`
+  },
+];
+
+
+export const ogLocation1 = [
+  {
+    property: `og:title`,
+    content: `Self Storage Units in Chester | StorageTown Rental Spaces`
+  },
+  {
+    property: `og:description`,
+    content: `Our Chester location offers a variety of well-lit, fully-fenced self
+    storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/location/chester/storage-units`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`
+  },
+];
+
+export const twitterLocation1 = [
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:title`,
+    content: `@Self Storage Units in Chester | StorageTown Rental Spaces`
+  },
+  {
+    name: `twitter:description`,
+    content: `Our Chester location offers a variety of well-lit, fully-fenced self
+    storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`
+  },
+];
+
+
+export const ogLocation2 = [
+  {
+    property: `og:title`,
+    content: `Storage Units in Chester, NY | StorageTown Rental Spaces `
+  },
+  {
+    property: `og:description`,
+    content: `Our Florida/Warwick location has a variety of unit sizes and all storage units
+    are individually alarmed for your safety!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/location/andrews/storage-units`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const twitterLocation2 = [
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:title`,
+    content: `@Storage Units in Chester, NY | StorageTown Rental Spaces`
+  },
+  {
+    name: `twitter:description`,
+    content: `Our Florida/Warwick location has a variety of unit sizes and all storage units
+    are individually alarmed for your safety!`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+
+export const ogLocation3 = [
+  {
+    property: `og:title`,
+    content: `Storage Units in Montgomery, NY | StorageTown Rental Spaces`
+  },
+  {
+    property: `og:description`,
+    content: `Our Montgomery location offers a wide variety of affordable self storage units in a well-lit,
+    fully-fenced storage facility! Call (845) 457-3500 to learn more!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/location/montgomery-walden/storage-units`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-4.jpg`
+  },
+];
+
+export const twitterLocation3 = [
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:title`,
+    content: `@Storage Units in Montgomery, NY | StorageTown Rental Spaces`
+  },
+  {
+    name: `twitter:description`,
+    content: `Our Montgomery location offers a wide variety of affordable self storage units in a well-lit,
+    fully-fenced storage facility! Call (845) 457-3500 to learn more!`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-4.jpg`
+  },
+];
+
+export const ogLocation4 = [
+  {
+    property: `og:title`,
+    content: `Self Storage Units in Middletown | StorageTown Rental Spaces`
+  },
+  {
+    property: `og:description`,
+    content: `Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable,
+    well maintained, fully-fenced in self storage units 7 days a week!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/location/middletown-wallKill/storage-units`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg`
+  },
+];
+
+export const twitterLocation4 = [
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:title`,
+    content: `@Self Storage Units in Middletown | StorageTown Rental Spaces`
+  },
+  {
+    name: `twitter:description`,
+    content: `Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable,
+    well maintained, fully-fenced in self storage units 7 days a week!`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg`
+  },
+];
+
+export const ogPayRentPage = [
+  {
+    property: `og:title`,
+    content: `Pay Rent | Affordable Secure Storage`
+  },
+  {
+    property: `og:description`,
+    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/pay-rent`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const twitterPayRentPage = [
+  {
+    name: `twitter:title`,
+    content: `@Pay Rent | Affordable Secure Storage`
+  },
+  {
+    name: `twitter:description`,
+    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+  },
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const ogStorageTipsPage = [
+  {
+    property: `og:title`,
+    content: `Storage Tips | StorageTown Rental Spaces`
+  },
+  {
+    property: `og:description`,
+    content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
+    make your stay with us a breeze!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/storage-tips`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const twitterStorageTipsPage = [
+  {
+    name: `twitter:title`,
+    content: `@Storage Tips | StorageTown Rental Spaces`
+  },
+  {
+    name: `twitter:description`,
+    content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
+    make your stay with us a breeze!`
+  },
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const ogContactPage = [
+  {
+    property: `og:title`,
+    content: `Contact Us | StorageTown Rental Spaces`
+  },
+  {
+    property: `og:description`,
+    content: `Want to reserve a unit or find information about your account? Use our contact
+    form or the contact information for your StorageTown location on this page!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/contact-us`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const twitterContactPage = [
+  {
+    name: `twitter:title`,
+    content: `@Contact Us | StorageTown Rental Spaces`
+  },
+  {
+    name: `twitter:description`,
+    content: `Want to reserve a unit or find information about your account? Use our contact
+    form or the contact information for your StorageTown location on this page!`
+  },
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];

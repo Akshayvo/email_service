@@ -9,6 +9,8 @@ import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
 import { CanonicalService } from '../services/canonical.service';
+import { ogContactPage, twitterContactPage } from '../data/script';
+import { tableDataContactPage, tableHeader } from '../data/pay-rent';
 
 @Component({
   selector: 'app-contact',
@@ -34,6 +36,10 @@ export class ContactComponent implements OnInit {
   submitted = false;
   mailSent = false;
   eventName: string;
+  og: any;
+  twitter: any;
+  tableData: any;
+  tableHeader: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -46,6 +52,21 @@ export class ContactComponent implements OnInit {
     private canonical: CanonicalService
 
   ) {
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
@@ -78,9 +99,21 @@ export class ContactComponent implements OnInit {
     'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
     'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
   });
+
+  this.fetchTableHeader();
+  this.fetchTableData();
+
 }
 
   get f() { return this.contactForm.controls; }
+
+  public fetchOg() {
+    this.og = ogContactPage;
+}
+
+public fetchTwitter() {
+    this.twitter = twitterContactPage;
+}
 
   receiveMessage() {
     this.data.currentLocation.subscribe(locationId => {
@@ -103,6 +136,14 @@ export class ContactComponent implements OnInit {
     }
   }
 
+  public fetchTableData() {
+    this.tableData = tableDataContactPage;
+  }
+  
+  public fetchTableHeader() {
+    this.tableHeader = tableHeader;
+  }
+  
   public fetchContactDetailsLocation1() {
     this.heading = `StorageTown Rental Spaces - Chester - Andrews Lane `;
     this.contactDetails = contactsLocation1;

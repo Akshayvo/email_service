@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
@@ -8,15 +8,14 @@ import { contactsLocation1, hoursLocation1,
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation3Script } from '../data/script';
+import { contactPageLocation1Script, ogContactPage, twitterContactPage } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
-
 @Component({
-  selector: 'app-contact-montgomery',
-  templateUrl: './contact-montgomery.component.html',
-  styleUrls: ['./contact-montgomery.component.scss']
+  selector: 'app-contact-us',
+  templateUrl: './contact-us.component.html',
+  styleUrls: ['./contact-us.component.scss']
 })
-export class ContactMontgomeryComponent implements OnInit {
+export class ContactUsComponent implements OnInit {
 
   contactDetails: any;
   heading: string;
@@ -35,20 +34,36 @@ export class ContactMontgomeryComponent implements OnInit {
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;
-
+  og: any;
+  twitter: any;
+  
   constructor(
     @Inject(WINDOW) private window: Window,
     private emailService: EmailService,
     private route: ActivatedRoute,
+    private router: Router,
     private titleService: Title,
     private meta: Meta,
     private formBuilder: FormBuilder,
     private data: LocationService,
     private canonical: CanonicalService
-
   ) {
-    this.canonical.create();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
 
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
+    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Want to reserve a unit or find information about your account? Use our contact
@@ -67,20 +82,25 @@ export class ContactMontgomeryComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.fetchLocationDetails();
     window.scrollTo(0, 0);
-  this.fetchContactDetailsLocation3();
-  this.fetchScript();
+    this.fetchScript();
   this.loadScript();
 }
 
   get f() { return this.contactForm.controls; }
 
-  receiveMessage() {
-    this.data.currentLocation.subscribe(locationId => {
-      this.locationId = locationId;
-      this.dataupdate();
-    });
+  public fetchScript() {
+    this.script = contactPageLocation1Script;
   }
+
+  public fetchOg() {
+    this.og = ogContactPage;
+}
+
+public fetchTwitter() {
+    this.twitter = twitterContactPage;
+}
 
   public loadScript() {
     const node = document.createElement('script'); // creates the script tag
@@ -92,49 +112,69 @@ export class ContactMontgomeryComponent implements OnInit {
     document.getElementsByTagName('head')[0].appendChild(node);
   }
 
-  public dataupdate() {
-    if ( this.locationId === '1' || this.locationId === 1 ) {
-      this.fetchContactDetailsLocation1();
-      this.mailSent = false;
-    } else if ( this.locationId === '2' ) {
+  // receiveMessage() {
+  //   this.data.currentLocation.subscribe(locationId => {
+  //     this.locationId = locationId;
+  //     this.dataupdate();
+  //   });
+  // }
+
+  // public dataupdate() {
+  //   if ( this.locationId === '1' || this.locationId === 1 ) {
+  //     this.fetchContactDetailsLocation1();
+  //     this.mailSent = false;
+  //   } else if ( this.locationId === '2' ) {
+  //     this.fetchContactDetailsLocation2();
+  //     this.mailSent = false;
+  //   } else if ( this.locationId === '3' ) {
+  //     this.fetchContactDetailsLocation3();
+  //   } else if ( this.locationId === '4' ) {
+  //     this.fetchContactDetailsLocation4();
+  //   }
+  // }
+
+  public fetchLocationDetails() {
+    if (this.router.url.includes('andrews')) {
       this.fetchContactDetailsLocation2();
-      this.mailSent = false;
-    } else if ( this.locationId === '3' ) {
+    } else if (this.router.url.includes('chester')) {
+      this.fetchContactDetailsLocation1();
+    } else if (this.router.url.includes('montgomery-walden')) {
       this.fetchContactDetailsLocation3();
-    } else if ( this.locationId === '4' ) {
+    } else if (this.router.url.includes('middletown-wallKill')) {
       this.fetchContactDetailsLocation4();
     }
   }
 
-  public fetchScript() {
-    this.script = contactPageLocation3Script;
-  }
-
   public fetchContactDetailsLocation1() {
+    this.heading = `StorageTown Rental Spaces - Chester - Brookside Ave`;
+    this.locationId = '1'
+    this.contactDetails = contactsLocation2;
+    this.hoursDetails = hoursLocation2;
+  }
+  
+  public fetchContactDetailsLocation2() {
+    this.locationId = '2'
     this.heading = `StorageTown Rental Spaces - Chester - Andrews Lane `;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
 
-  public fetchContactDetailsLocation2() {
-    this.heading = `StorageTown Rental Spaces - Chester - Brookside Ave`;
-    this.contactDetails = contactsLocation2;
-    this.hoursDetails = hoursLocation2;
-  }
-
   public fetchContactDetailsLocation3() {
     this.heading = `StorageTown Rental Spaces - Montgomery/Walden`;
+    this.locationId = '3'
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
     this.heading = `StorageTown - Middletown/WallKill Location`;
+    this.locationId = '4'
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
   }
 
 onSubmit() {
+  this.submitted = true;
   const today = new Date();
   this.eventName = 'ContactFormsubmission';
   window['dataLayer'] = window['dataLayer'] || {};
@@ -145,7 +185,6 @@ onSubmit() {
     'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
     'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
   });
-  this.submitted = true;
 
  // stop here if form is invalid
  if (this.contactForm.invalid) {

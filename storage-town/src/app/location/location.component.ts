@@ -10,7 +10,9 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
-import { Location1Script, Location2Script, Location3Script, Location4Script } from '../data/script';
+import { Location1Script, Location2Script, Location3Script, Location4Script,
+  ogLocation1, ogLocation2, ogLocation3, ogLocation4, twitterLocation1,
+  twitterLocation2, twitterLocation3, twitterLocation4 } from '../data/script';
 
 
 @Component({
@@ -30,6 +32,8 @@ export class LocationComponent implements OnInit {
   tabs: any;
   locationName: string;
   script: any;
+  twitter: any;
+  og: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -40,6 +44,21 @@ export class LocationComponent implements OnInit {
     private canonical: CanonicalService,
     private activatedRoute: ActivatedRoute,
     ) {
+      this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
@@ -56,6 +75,19 @@ export class LocationComponent implements OnInit {
             this.dataSharingService.locationName = this.locationName;
             this.script = Location2Script;
             this.loadScript();
+            this.og.forEach(element => {
+              this.meta.addTag({
+                property: element.property,
+                content: element.content
+              })
+            });
+        
+            this.twitter.forEach(element => {
+              this.meta.addTag({
+                name: element.name,
+                content: element.content
+              })
+            });
     } else if (this.router.url.includes('/location/chester')) {
       this.canonical.create();
            this.meta.addTag({
@@ -69,6 +101,19 @@ export class LocationComponent implements OnInit {
            this.dataSharingService.locationName = this.locationName;
            this.script = Location1Script;
            this.loadScript();
+           this.og.forEach(element => {
+            this.meta.addTag({
+              property: element.property,
+              content: element.content
+            })
+          });
+      
+          this.twitter.forEach(element => {
+            this.meta.addTag({
+              name: element.name,
+              content: element.content
+            })
+          });
       } else if (this.router.url.includes('/location/montgomery-walden')) {
         this.canonical.create();
         this.meta.addTag({
@@ -82,6 +127,19 @@ export class LocationComponent implements OnInit {
         this.dataSharingService.locationName = this.locationName;
         this.script = Location3Script;
         this.loadScript();
+        this.og.forEach(element => {
+          this.meta.addTag({
+            property: element.property,
+            content: element.content
+          })
+        });
+    
+        this.twitter.forEach(element => {
+          this.meta.addTag({
+            name: element.name,
+            content: element.content
+          })
+        });
    } else if (this.router.url.includes('/location/middletown-wallKill')) {
     this.canonical.create();
     this.meta.addTag({
@@ -95,6 +153,19 @@ export class LocationComponent implements OnInit {
     this.dataSharingService.locationName = this.locationName;
     this.script = Location4Script;
     this.loadScript();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
   }
 }
 
@@ -111,6 +182,30 @@ export class LocationComponent implements OnInit {
     node.innerHTML = JSON.stringify(this.script);
     // append to head of document
     document.getElementsByTagName('head')[0].appendChild(node);
+  }
+
+  public fetchOg() {
+    if (this.router.url.includes('/location/andrews')) {
+      this.og = ogLocation2;
+  } else if (this.router.url.includes('/location/chester')) {
+    this.og = ogLocation1;
+  } else if (this.router.url.includes('/location/montgomery-walden')) {
+    this.og = ogLocation3;
+  } else if (this.router.url.includes('/location/middletown-wallKill')) {
+    this.og = ogLocation4;
+  }
+  }
+
+  public fetchTwitter() {
+    if (this.router.url.includes('/location/andrews')) {
+      this.twitter = twitterLocation2;
+  } else if (this.router.url.includes('/location/chester')) {
+    this.twitter = twitterLocation1;
+  } else if (this.router.url.includes('/location/montgomery-walden')) {
+    this.twitter = twitterLocation3;
+  } else if (this.router.url.includes('/location/middletown-wallKill')) {
+    this.twitter = twitterLocation4;
+  }
   }
 
   public isSomePage() {

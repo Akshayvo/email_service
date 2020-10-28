@@ -7,7 +7,8 @@ import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
 import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4 } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-
+import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
+import { Meta } from '@angular/platform-browser';
 
 
 @Injectable()
@@ -45,17 +46,35 @@ export class LoginComponent implements OnInit, OnDestroy {
   name: string;
   id: number;
   paymentTab: string;
+  twitter: any;
+  og: any;
   private authUnsubscribe$: Subscription;
 
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
     public router: Router,
+    private meta: Meta,
     private activatedRoute: ActivatedRoute,
 
     private  dataSharingService: DataSharingService,
   ) {
 
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
     if (!!localStorage.getItem('paymentTab')) {
       this.paymentTab = localStorage.getItem('paymentTab');
     }
@@ -143,6 +162,13 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
   }
 
+  public fetchOg() {
+    this.og = ogPayRentPage;
+}
+
+public fetchTwitter() {
+    this.twitter = twitterPayRentPage;
+}
 
   handleForgotPassword() {
     this.showForgotPassword = true;

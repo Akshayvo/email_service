@@ -3,6 +3,7 @@ import { storagePoints, storageTips } from '../data/storage-tips';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { CanonicalService } from '../services/canonical.service';
+import { ogStorageTipsPage, twitterStorageTipsPage } from '../data/script';
 
 @Component({
   selector: 'app-storage-tips',
@@ -16,6 +17,8 @@ export class StorageTipsComponent implements OnInit {
   storageTips: any;
   currentActive: any = 'Storage Tips';
   breadcrumbActive: any = 'Storage Tips';
+  og: any;
+  twitter: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -24,6 +27,21 @@ export class StorageTipsComponent implements OnInit {
     private canonical: CanonicalService
     ) {
       this.canonical.create();
+      this.fetchOg();
+      this.fetchTwitter();
+      this.og.forEach(element => {
+        this.meta.addTag({
+          property: element.property,
+          content: element.content
+        })
+      });
+  
+      this.twitter.forEach(element => {
+        this.meta.addTag({
+          name: element.name,
+          content: element.content
+        })
+      });
     this.meta.addTag({
       name: 'description',
       content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
@@ -37,6 +55,15 @@ export class StorageTipsComponent implements OnInit {
     this.fetchstorageTips();
     window.scrollTo(0, 0);
   }
+
+  public fetchOg() {
+    this.og = ogStorageTipsPage;
+}
+
+public fetchTwitter() {
+    this.twitter = twitterStorageTipsPage;
+}
+
 
   public fetchstoragePoints() {
     this.storagePoints = storagePoints;
