@@ -19,7 +19,6 @@ export class ReserveComponent implements OnInit {
     private meta: Meta,
   ) {
     this.fetchMetaData();
-    this.fetchHeading();
     this.meta.addTag({
       name: 'description',
       content: `${this.reservePageContent}`
@@ -36,8 +35,7 @@ export class ReserveComponent implements OnInit {
     this.reservePageContent = reservePageContent;
   }
 
-  public fetchHeading() {
+  public fetchReserveUnitHeading() {
     this.reserveUnitHeading = reserveUnitHeading;
   }
-
 }

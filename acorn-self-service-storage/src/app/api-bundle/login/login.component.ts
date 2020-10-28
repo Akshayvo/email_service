@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   showPayRent = false;
 
   showLoader = false;
-
+  paymentTab: string;
   showLoginPage = true;
 
   authData: string;
@@ -68,11 +68,23 @@ export class LoginComponent implements OnInit, OnDestroy {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
         if (this.dataSharingService.changePassword === true) {
-          this.router.navigate(['/pay-rent/changePassword']);
+          this.router.navigate(['/pay-rent/rent-sub/changePassword']);
         } else {
-          this.router.navigate(['/pay-rent/payment']);
+          if (this.router.url.includes('rent-sub')) {
+            this.router.navigate(['/pay-rent/rent-sub/payment']);
+          } else {
+            if (this.router.url.includes('sign-up')) {
+              this.router.navigate(['/pay-rent/sign-up/auto-pay']);
+            } else {
+              this.router.navigate([`/pay-rent/payment`]);
+            }
+          }
         }
        }
+    }
+
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
     }
   }
 
@@ -83,14 +95,17 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public navigate (location: any) {
-    this.router.navigate([location]);
+    if (!!this.paymentTab) {
+      this.router.navigate([`/pay-rent/${this.paymentTab}/${location}`]);
+    } else {
+      this.router.navigate([`/pay-rent/${location}`]);
+    }
   }
 
   public fetchLoginDetail() {
     this.loginDetail = loginDetail;
   }
 
-  
   public fetchContactDetails() {
     this.contact = contact;
   }
@@ -111,20 +126,22 @@ export class LoginComponent implements OnInit, OnDestroy {
           this.showPayRent = true;
           this.authData = auth.strTenantToken;
           localStorage.setItem('strTenantToken', this.authData);
-          this.router.navigate(['/pay-rent/payment']);
+          // this.dataSharingService.strTenantToken = this.authData;
+          if (this.router.url.includes('rent-sub')) {
+            this.router.navigate(['/pay-rent/rent-sub/payment']);
+          } else {
+            if (this.router.url.includes('sign-up')) {
+              this.router.navigate(['/pay-rent/sign-up/auto-pay']);
+            } else {
+              this.router.navigate(['/pay-rent/payment']);
+            }
+          }
         }, (err) => {
           this.credentialsInvalid = true;
           this.showLoader = false;
         }
       );
   }
-
-
-public ngOnDestroy(): void {
-  if (this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
-    this.authUnsubscribe$.unsubscribe();
-  }
-}
 
   onSubmit() {
     this.submitted = true;
@@ -140,4 +157,10 @@ public ngOnDestroy(): void {
     }
   }
 
+
+  public ngOnDestroy(): void {
+      if (this.authUnsubscribe$ && !this.authUnsubscribe$.closed) {
+      this.authUnsubscribe$.unsubscribe();
+    }
+  }
 }

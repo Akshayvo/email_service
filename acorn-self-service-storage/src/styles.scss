@@ -12,19 +12,19 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$Catskill-primary: mat-palette($mat-indigo);
-$Catskill-accent: mat-palette($mat-pink, A200, A100, A400);
+$acorn-self-service-storage-primary: mat-palette($mat-indigo);
+$acorn-self-service-storage-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$Catskill-warn: mat-palette($mat-red);
+$acorn-self-service-storage-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$Catskill-theme: mat-light-theme($Catskill-primary, $Catskill-accent, $Catskill-warn);
+$acorn-self-service-storage-theme: mat-light-theme($acorn-self-service-storage-primary, $acorn-self-service-storage-accent, $acorn-self-service-storage-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($Catskill-theme);
+@include angular-material-theme($acorn-self-service-storage-theme);
 
 /* You can add global styles to this file, and also import other style files */
 
@@ -34,8 +34,8 @@ $primaryDark: #a04509;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
-$secondary: #ffffff;
-
+$secondary: #fff;
+$black: #000;
 $dark: #333;
 $light: #efefef;
 $white: #fff;
@@ -77,11 +77,6 @@ body {
 .bg-translucent {
   background: rgba(0, 0, 0, 0.6);
   // position: relative;
-}
-
-// Content Holder Styles
-.contentHolder {
-  min-height: 90vh;
 }
 
 .btn-primary {
@@ -131,3 +126,37 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+// Content Holder Styles
+.contentHolder {
+  padding-top: 110px;
+  min-height: 96vh;
+  margin-bottom: 50px;
+}
+
+.background-padding {
+  padding: 64px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .contentHolder {
+    padding-top: 56px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .contentHolder {
+    padding-top: 56px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contentHolder {
+    padding-top: 56px;
+  }
+
+  .background-padding {
+    padding: 24px 0;
+  }
+}

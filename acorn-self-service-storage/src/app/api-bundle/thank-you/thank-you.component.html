@@ -1,0 +1,44 @@
+  <div class="text-center">
+    <h1>Thank You!</h1>
+  
+    <div *ngIf="PaymentAmount > 0"  class="go-to-home py-4">
+      <div *ngIf="!navigateToMoveIn && !navigateToReserve">
+          Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .
+      </div>
+      <div *ngIf="navigateToReserve && strConfirmation">
+          Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> . Your reservation is confirmed.
+      </div>
+      <div *ngIf="navigateToMoveIn">
+          Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> . Please check your email to sign your digital lease agreement. Your move-in is not complete without a signed lease agreement.
+      </div>
+    </div>
+  
+    <div class="py-4" *ngIf="strConfirmation || strAccessCode">
+          <div class="py-4">
+              <table>
+                  <tbody>
+                      <tr>
+                          <td class="td-1">Confirmation Number </td>
+                          <td>{{strConfirmation || strAccessCode}}</td>
+                      </tr>
+                      <tr>
+                          <td class="td-1">Unit Type</td>
+                          <td>{{description}} </td>
+                      </tr>
+                      <tr>
+                          <td class="td-1">Rate</td>
+                          <td> <span *ngIf="monthlyRate">$</span>{{monthlyRate}}</td>
+                      </tr> 
+                      <tr *ngIf="!navigateToMoveIn">
+                          <td> Move In Date</td>
+                          <td>{{MoveIn.dteMoveIn}}</td>
+                      </tr>
+                      </tbody>
+              </table>
+          </div>
+    </div>
+    <div>
+      <button *ngIf="tokenExit" (click)="signOut(logOut)" class="btn btn-primary">LogOff</button>
+      <div class="py-3 home-link"><a (click)="navigate('/')">Go to Home</a></div>
+  </div>
+  </div>

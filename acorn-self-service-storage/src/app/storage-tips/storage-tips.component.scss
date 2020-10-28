@@ -19,9 +19,9 @@
   padding: 64px;
 }
 
-.padding-top {
-  padding-top: 110px;
-}
+// .padding-top {
+//   padding-top: 110px;
+// }
 
 .accordion-background {
   min-height: 718px;
@@ -38,9 +38,9 @@
 
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
-  .padding-top {
-    padding-top: 56px;
-  }
+  // .padding-top {
+  //   padding-top: 56px;
+  // }
 
   .accordion-background {
     min-height: 823px;
@@ -48,9 +48,9 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 600px) {
-  .padding-top {
-    padding-top: 56px;
-  }
+  // .padding-top {
+  //   padding-top: 56px;
+  // }
 
   .accordion-background {
     min-height: 1100px;
@@ -66,7 +66,7 @@
     }
   }
 
-  .padding-top {
-    padding-top: 56px;
-  }
+  // .padding-top {
+  //   padding-top: 56px;
+  // }
 }

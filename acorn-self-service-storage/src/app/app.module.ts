@@ -50,7 +50,12 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { PhotosComponent } from './photos/photos.component';
-import { ReservationFormComponent } from './api-bundle/reservation-form/reservation-form.component';
+import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
+import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
+import { TabsComponent } from './tabs/tabs.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,7 +87,12 @@ import { ReservationFormComponent } from './api-bundle/reservation-form/reservat
     PhotosComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
-    ReservationFormComponent,
+    ThankYouComponent,
+    PayRentComponent,
+    RentSubComponent,
+    SignUpComponent,
+    AutoPayComponent,
+    TabsComponent 
   ],
   imports: [
     CommonModule,

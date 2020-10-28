@@ -1,0 +1,88 @@
+@import "../../styles.scss";
+
+.tab {
+  margin-bottom: 0;
+  width: 100%;
+
+  .grid-item {
+    border-left: 1px solid $light;
+    border-right: 1px solid $light;
+    border-top: 1px solid $light;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: $dark;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    box-shadow: none;
+    margin: auto 0;
+    text-transform: capitalize;
+  }
+}
+
+
+.active-tab {
+  background-color: $light !important;
+}
+
+@media only screen and (min-width: 770px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+
+    .grid-item {
+      position: relative;
+      background-color: #e2e0d8;
+    }
+  }
+
+  .disp {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .disp {
+    display: block;
+  }
+
+  .horizontal-scroll-wrapper {
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+
+    .grid-item {
+      position: relative;
+      background-color: #e2e0d8;
+      width: 100%;
+    }
+
+    .payment-tab {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tab {
+    padding-right: auto;
+    padding-left: auto;
+    width: 100%;
+
+    .grid-item {
+      position: relative;
+      background-color: #e2e0d8;
+
+      .btn {
+        min-width: 110px;
+      }
+    }
+  }
+}
