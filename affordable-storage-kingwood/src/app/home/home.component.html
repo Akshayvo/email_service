@@ -5,9 +5,9 @@
   <div class="jumbotron-container">
     <div class="jumbotron-top">
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
-      <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
-      </div>
-      <div class="container">
+      <!-- <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      </div> -->
+      <!-- <div class="container">
         <div class="jumbotorn-skew-text">
           <div class="disp" *ngFor="let jumbotron of jumbotron">
             <h2  class="my-4">
@@ -19,7 +19,7 @@
             <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
             <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a></div>
           </div>
-        </div>
+        </div> -->
       </div>
       </div>
     <div class="jumbotron-bottom">
@@ -40,7 +40,7 @@
       <div class="section py-4 m-0">
         <div class="row">
           <div class="col-lg-6 py-3 home-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11812.741403016997!2d-73.9069651!3d42.2532142!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f78849841f11072!2sCatskill+Self+Storage!5e0!3m2!1sen!2sus!4v1541375613193" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13813.842590848408!2d-95.23204224477266!3d30.05232774368913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f77440cdcac5df0!2sAffordable%20Storage%20of%20Kingwood!5e0!3m2!1sen!2sus!4v1603403560128!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe> 
           </div>
 
           <div class="col-lg-6 py-3">
@@ -53,7 +53,7 @@
                   <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                 </span>
               </p>
-              <b>Hours:</b>
+              <!-- <b>Hours:</b> -->
               <p>
                 <span *ngFor="let hour of hours">
                   <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
@@ -72,7 +72,7 @@
     <div class="section py-5 m-0">
       <div class="row">
         <div class="col-lg-6 py-3">
-          <img src="{{imageBaseUrl}}/outdoor-self-storage-units.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
+          <img src="{{imageBaseUrl}}/affordable-storage-of-kingwood-home.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
         </div>
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
@@ -82,7 +82,68 @@
     </div>
   </div>
 
-  <div class="getStarted bg-light">
+  <!--Testimonial-->
+  <div class="bg-light">
+    <div class="container">
+      <div class="row py-5">
+       <div class="col-md-12 text-center">
+          <h2 class="heading pb-4">Testimonials</h2>
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+              </ul>
+            
+              <!-- The slideshow -->
+              <div class="carousel-inner ">
+                <div class="carousel-item py-5 active">
+                  <p>
+                    "You offer a well-maintained, extra clean area with easy access and great security. Thanks!"
+                  </p>
+                  <p>
+                    Kent S.,Pet Ranch, Kingwood
+                  </p>
+                  <p></p>
+                </div>
+                <div class="carousel-item py-5">
+                  <p>
+                    "I've been with you since you opened. You've given me 18 years of safe, secure, clean storage."
+                    </p>
+                    <p>
+                      T. Walker, Kingwood
+                    </p>
+
+                </div>
+                <div class="carousel-item py-5">
+                  <p>
+                    "Thanks for the outstanding service you provide."
+                  </p>
+                  <p>
+                    D.M., Kingwood
+                  </p>
+                </div>
+                <div class="carousel-item py-5">
+                  <p>
+                    "I don't know how you can provide such generous amenities for the price, but I'm not complaining! Keep up the good work ... and thanks!"
+                  </p>
+                  <p>
+                    M.B., Kingwood
+                  </p>
+                </div>
+              </div>
+            
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Testimonial section-->
+
+  <!-- <div class="getStarted">
     <div class="container">
       <div class="section py-5 m-0">
         <div class="row">
@@ -94,5 +155,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div> 

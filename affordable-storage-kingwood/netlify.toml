@@ -27,6 +27,22 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/self-storage.html"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact-us"
+  status = 301  
+[[redirects]]
+  from = "/spacious-storage-units.html"
+  to = "/"
+  status = 301 
+[[redirects]]
+  from = "/testimonials.html"
+  to = "/"
+  status = 301     
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

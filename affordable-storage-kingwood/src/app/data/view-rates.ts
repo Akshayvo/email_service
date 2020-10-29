@@ -2,10 +2,14 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Catskill Self Storage offers many amenities to make your storage experience
-      a fast, easy, and hassle-free one! Located conveniently off of Route 87 at Exit 21 just west of downtown Leeds,
-      we are situated in a perfect spot for both residential and commercial storage.
-      Ask about out online payments and EZ Auto-Pay option!`,
+      p: `Affordable Storage of Kingwood offers 24-hour access to all of our tenants to make coming
+      and going for your vehicle or belongings very convenient. All units are electrified and include
+      lighting, so you’ll never be left in the dark just because you’re coming in late! `,
+    },
+    {
+      p: `Take advantage of over thirty years of vehicle and self storage experience, and reserve your
+      unit at Affordable Storage of Kingwood! Don’t forget to ask about our 10% off promotion if you
+      pay for a year upfront! `,
     }
 ];
 
@@ -20,22 +24,22 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    data: 'Deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  },
+  // {
+  //   data: 'Deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
   {
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
-  {
-    data: `Move In`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
-  },
-  {
-    data: `Climate Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  },
+  // {
+  //   data: `Move In`,
+  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  // },
+  // {
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
 ];
 
 

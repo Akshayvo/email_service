@@ -26,7 +26,7 @@ import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
 import { RentSubComponent } from '../api-bundle/rent-sub/rent-sub.component';
 import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
 import { SignUpComponent } from '../api-bundle/sign-up/sign-up.component';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../environments/environment';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -77,7 +77,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
     { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
-    { path: 'unit-sizer', component: UnitSizerComponent },
+    // { path: 'unit-sizer', component: UnitSizerComponent },
     {
       path: 'view-rates',
       component: ViewRatesComponent,
@@ -101,7 +101,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJk_OJTquyQIYR8F2s3AxEdz8'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -117,13 +117,13 @@ export const iFrameRoutes = [
     { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
-    { path: 'unit-sizer', component: UnitSizerComponent },
+    // { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJk_OJTquyQIYR8F2s3AxEdz8'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },

@@ -1,30 +1,30 @@
-export const  homePageTitle = `Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage`;
-export const homePageContent = `Catskill Self Storage has been proudly serving Catskill, Cairo, Leeds, and surrounding communities with
-affordable storage units since 2004!`;
+export const  homePageTitle = `Affordable Self Storage & Vehicle Storage in Kingwood`;
+export const homePageContent = `Affordable Storage of Kingwood offers convenient 24/7 access to your belongings,
+online payments, and several unit sizes for all of your storage needs.`;
 
 
-export const viewRatesPageTitle = `Affordable Self Storage Near Catskill, NY, 12414 | Catskill Self Storage`;
-export const viewRatesPageContent = `Our units range from closet sized 5'x5' units to 10'x20' multi-bedroom home sized units.
-We strive to provide the highest level of service at the best prices!`;
+export const viewRatesPageTitle = `View Rates  | Affordable Storage of Kingwood`;
+export const viewRatesPageContent = `Check out the competitive rates for our high-quality self storage units!
+Affordable Storage of Kingwood is the premier storage facility in Kingwood, TX`;
 
 
-export const reservePageTitle = `Reserve A Storage Unit Near Catskill, NY | 12414 - Catskill Self Storage`;
-export const reservePageContent = `Current description works fine.`;
+export const reservePageTitle = ``;
+export const reservePageContent = ``;
 
-export const payRentPageTitle = `Pay Your Rent Online | Catskill Self Storage, Catskill, NY, 12414 `;
-export const payRentPageContent = `We make it easy for you to pay your rent and check your balance online, 24/7.
-Simply login with the credentials supplied by our office to gain access!`;
-
-
-export const storageTipsTitle = `Self Storage Tips | Catskill Self Storage, Catskill, NY, 12414`;
-export const storageTipsContent = `We know moving can be stressful, let our helpful hints and tips make your experience that much easier.
-Use this tips to save yourself time and frustration!`;
+export const payRentPageTitle = `Pay Rent  | Affordable Storage of Kingwood`;
+export const payRentPageContent = `Take a moment to review our easy login instructions, or call our friendly
+management team and start paying your rent online 24 hours a day!`;
 
 
-export const unitSizerPageTitle = `Unit Sizer | Catskill Self Storage, Catskill, NY, 12414`;
+export const storageTipsTitle = `Storage Tips  | Affordable Storage of Kingwood`;
+export const storageTipsContent = `Use our helpful self storage tips list to make your stay at Affordable Storage
+of Kingwood an easy and enjoyable one!`;
+
+
+export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
 
 
-export const contactPageTitle = `Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414`;
-export const contactPageContent = `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
-and U-Haul truck rental questions! Simply call or drop us a line!`;
+export const contactPageTitle = `Contact Us  | Affordable Storage of Kingwood`;
+export const contactPageContent = `If you have questions about your account or the services we offer, take a moment
+to fill our out form, or use the contact information to speak with us!`;
