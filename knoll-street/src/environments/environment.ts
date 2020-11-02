@@ -13,12 +13,12 @@ export const environment = {
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Affordable Storage of Kingwood - Testing',
+  appId: 'Knoll Street Storage - Testing',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: '',
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
-  // APIKey: `dzJ0OVczSjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // kingwood 29363
+  // APIKey: `dzJ0MFczSjEqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // knoll street 20312
 };
 
 /*

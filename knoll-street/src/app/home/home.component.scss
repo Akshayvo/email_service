@@ -12,11 +12,11 @@
 }
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Storage_Kingwood/webp/affordable-storage-of-kingwood.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Knoll_Street/webp/knoll-street-storage.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Storage_Kingwood/jpg/affordable-storage-of-kingwood.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Knoll_Street/jpg/knoll-street-storage.jpg");
 }
 
 .jumbotron {
@@ -115,6 +115,7 @@ h1 {
 @media only screen and (min-width: 1200px) {
   .jumbotorn-skew-text {
     width: 500px;
+    top: 22%;
   }
 }
 
@@ -340,7 +341,7 @@ h1 {
   }
 
   .jumbotorn-skew-text {
-    width: 40%;
+    width: 400px;
 
     a {
       min-width: 140px;
@@ -483,8 +484,8 @@ h1 {
   }
 
   .jumbotorn-skew-text {
-    top: 40%;
-    width: 49%;
+    top: 22%;
+    width: 337px;
 
     a {
       min-width: 140px;

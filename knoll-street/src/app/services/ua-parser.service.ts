@@ -31,9 +31,9 @@ export class UaParserService {
       }
     }
     if (this.typeOfImages === 'WEBP') {
-      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Storage_Kingwood/webp`;
+      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Knoll_Street/webp`;
     } else {
-      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Affordable_Storage_Kingwood/jpg';
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Knoll_Street/jpg';
     }
   }
 }

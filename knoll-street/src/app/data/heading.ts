@@ -2,10 +2,10 @@ export const viewRatesHeading = `View Rates`;
 
 export const reserveUnitHeading = ``;
 
-export const payRentHeading = `Pay Your Rent Online`;
+export const payRentHeading = `Pay Rent`;
 
 export const storageTipsHeading = `Storage Tips`;
 
-export const unitSizerHeading = ``;
+export const unitSizerHeading = `Unit Sizer`;
 
-export const contactHeading = `Contact Affordable Storage of Kingswood`;
+export const contactHeading = `Contact Us`;

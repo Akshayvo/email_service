@@ -14,15 +14,15 @@ export const contact = [
     {
         id: 2,
         label: 'Email:',
-        redirect: 'mailto:affordablestorageofkingwood@gmail.com',
-        data: 'affordablestorageofkingwood@gmail.com',
+        redirect: 'mailto:knollstreetstorage@gmail.com',
+        data: 'knollstreetstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
         id: 3,
-        redirect: 'tel:2813598780',
+        redirect: 'tel:2818022720',
         label: 'Phone:',
-        data: '(281) 359-8780',
+        data: '(281) 802-2720',
         class: 'fas fa-phone mx-2 iconColor',
     }
 ];
@@ -42,7 +42,7 @@ export const hours = [
     // },
     {
         label: 'Access Hours: ',
-        data: '24 Hour Access'
+        data: '24 Hours a Day 7 Days a Week'
     }
 ];
 
@@ -52,9 +52,9 @@ export const socialLinks = [
     //     path: '',
     //     class: 'fab fa-twitter-square',
     // },
-    {
-        label: 'facebook',
-        path: 'https://www.facebook.com/Affordable-Storage-of-Kingwood-315380055684716/ge',
-        class: 'fab fa-facebook-square',
-    },
+    // {
+    //     label: 'facebook',
+    //     path: '',
+    //     class: 'fab fa-facebook-square',
+    // },
 ];

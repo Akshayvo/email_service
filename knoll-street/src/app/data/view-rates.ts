@@ -2,18 +2,19 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Affordable Storage of Kingwood offers 24-hour access to all of our tenants to make coming
-      and going for your vehicle or belongings very convenient. All units are electrified and include
-      lighting, so you’ll never be left in the dark just because you’re coming in late! `,
+      p: `Take a moment to review our rates, then fill out our easy reservation form, and one of our
+      friendly managers will reach out to confirm your reservation details. Once you’ve moved in,
+      you’ll have access to your account 24-7 with our handy tenant portal. Pay your rent or sign
+      up for automatic payments at your convenience!`,
     },
     {
-      p: `Take advantage of over thirty years of vehicle and self storage experience, and reserve your
-      unit at Affordable Storage of Kingwood! Don’t forget to ask about our 10% off promotion if you
-      pay for a year upfront! `,
+      p: `Our friendly management team is here to help you get settled in and make your stay with
+      Knoll Street Storage an easy one. You can call our offices to reserve your unit, perform a
+      contactless move in, or pay your rent! Give us a call or reserve your unit online today!`,
     }
 ];
 
-export const viewRatesAltText = `photograph of several self storage unit buildings with square red doors`;
+export const viewRatesAltText = `luggage, boxes, and other personal belongings stored inside a storage unit`;
 
 export const th = [
   {

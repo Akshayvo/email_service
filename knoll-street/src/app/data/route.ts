@@ -74,7 +74,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'reserve-unit', component: ReserveComponent },
+    // { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
@@ -101,7 +101,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJk_OJTquyQIYR8F2s3AxEdz8'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJVQc291HEQIYRsfrYEuESMfM'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -114,7 +114,7 @@ export const iFrameRoutes = [
     { path: 'pay-rent', component: PaymentIframePageComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
     { path: 'view-rates', component: ViewRatesIframePageComponent },
-    { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
+    // { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
@@ -123,7 +123,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJk_OJTquyQIYR8F2s3AxEdz8'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJVQc291HEQIYRsfrYEuESMfM'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },

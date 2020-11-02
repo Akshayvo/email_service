@@ -1,59 +1,48 @@
 export const featuresList = [
     {
         td1: 'Convenient Location',
-        td2: 'Online Bill Pay'
+        td2: 'On-Site Manager.'
     },
     {
-        td1: 'Security Cameras',
-        td2: 'Well-Lit Facility'
+        td1: 'Online Bill Pay',
+        td2: 'Security Cameras'
     },
     {
-        td1: 'Single-Level Facility',
-        td2: 'Drive-Up Units'
+        td1: 'Well-Lit Facility',
+        td2: 'Single-Level Facility'
     },
     {
-        td1: 'Auto-Pay Available',
-        td2: 'Friendly Customer Service'
+        td1: 'Drive-Up Units',
+        td2: 'Auto-Pay Available'
     },
     {
-        td1: 'Affordable Rates',
-        td2: 'Recreational Vehicle Storage'
-    },
-    {
-        td1: 'Boat Storage',
-        td2: 'Fully-Fenced Facility'
+        td1: 'Friendly Customer Service',
+        td2: 'Affordable Rates'
     },
 ];
 
-export const aboutUsAlt = `a row of self storage units under a bright blue sky`;
+export const aboutUsAlt = `personal belongings packed neatly inside a self storage unit`;
 
-export const aboutUsHeading = `Affordable Self Storage & Vehicle Storage in Kingwood`;
+export const aboutUsHeading = `Affordable Self Storage in Spring Branch`;
 
 export const aboutUs = [
     {
-        p: `Affordable Storage of Kingwood has been serving Kingwood, Humble, Atascocita, and the surrounding
-        communities with clean, well-maintained, and affordable self storage and vehicle storage units in
-        several common sizes since 1986. As a family-owned operation, we understand that success comes from
-        delivering amazing service and fair prices to our friends and neighbors. That’s why we built our
-        storage facility with well-lit electrified units perfect for your boat, RV, trailer, or household
-        belongings, and we offer the highest standard in customer service.`,
+        p: `Knoll Street Storage is a locally owned and operated self storage facility, so you
+        know you’ll be getting that stellar customer service that’s a cut above the big guys! Our
+        variety of unit sizes range from 5-foot-by-5-foot that are ideal for an extra closet’s worth
+        of belongings all the way up to our 10-foot-by-30-foot units which will hold your whole home during a move!`,
     },
     {
-        p: `We are conveniently located on Green Pine Drive, off of Russel Palmer Road in the center of the
-        Greenwood Lake community. Affordable Storage of Kingwood Coming and going from our facility is a breeze.
-        Our facility has numerous security cameras recording 24/7, 24-hour access, and level concrete floors for
-        added protection for your belongings. Concerned about navigating the facility with a large vehicle? You’ll
-        love our extra-wide 60’ driveway for easy turning around and backing up!`,
+        p: `We know that self-storage tends to come at stressful times in life, which is why our
+        facility was built with convenience in mind. We provide 24-hour access to your unit, 7 days
+        a week, so you’ll never have to wait for office hours to get to your belongings again! Our
+        website offers online reservations and a payment portal for existing tenants to pay their rent around-the-clock.`,
     },
     {
-        p: `Our 24-access means if you’ve got equipment, inventory, or work supplies stored with us, you’ll have
-        round-the-clock access! Making a big move? You’ll find our units are an ideal place to store an entire
-        home’s worth of furniture, appliances, and miscellaneous items while settling in!`,
-    },
-    {
-        p: `Take a moment to check out our pricing and availability, then reserve your unit online in seconds.
-        One of our friendly staff will reach out to you and confirm your details. Before you know it, you’ll have
-        your camper, boat, or RV stored away from the worst of the elements!`,
+        p: `Whether you're a business looking for equipment, inventory, or supply storage, or if
+        you’re a homeowner preparing for a move, renovation, or downsizing project, Knoll Street
+        Storage has you covered with our wide variety of storage unit sizes and convenient rental
+        terms! Call or reserve your unit online today!`,
     },
 ];
 
@@ -65,14 +54,8 @@ export const gettingStarted = `Are you ready to move in today or just looking to
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/garage.svg`,
-        label: 'Boat and Vehicle Storage',
-        alt: 'Icon art displaying boat and motorcycle'
-    },
-    {
-        // tslint:disable-next-line:max-line-length
-        label: 'Convenient Location',
         path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg`,
+        label: 'Conveniently Located',
         alt: 'Icon art displaying a location pin'
     },
     {
@@ -83,15 +66,24 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
         label: 'Affordable Self Storage Rates',
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
         alt: 'Icon of a hand holding money'
+    },
+    {
+        // tslint:disable-next-line:max-line-length
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
+        label: 'Stellar Customer Service',
+        alt: 'Icon of a customer service agent'
     },
 ];
 
 export const jumbotron = [
     {
-        h1: ``,
-        blurb: ``,
+        h1: `Affordable Self Storage in Spring Branch`,
+        blurb: `The Store House is conveniently located on Knoll Street in northwest Houston. We proudly serve
+        our friends and neighbors with quality self storage units, friendly customer service, and affordable
+        self storage rental rates! You'll have access to your storage unit 24 hours a day, and can pay your
+        rent or check your balance through our convenient online customer portal! Call or reserve your unit online today!`,
     }
 ];
