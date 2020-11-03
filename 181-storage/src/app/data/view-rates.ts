@@ -12,8 +12,9 @@ export const viewRates = [
     }
 ];
 
-export const altText = `self storage units with closed and locked doors and gravel parking spaces
-`;
+export const altText = `self storage units with closed and locked doors and gravel parking spaces`;
+
+
 
 export const th = [
   {

@@ -52,6 +52,7 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { PhotosComponent } from './photos/photos.component';
 import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
+import { BoatAndRvComponent } from './boat-and-rv/boat-and-rv.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -85,6 +86,7 @@ import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confir
     VerifyCodeComponent,
     ResetPasswordComponent,
     UnitSizesComponent,
+    BoatAndRvComponent,
   ],
   imports: [
     CommonModule,

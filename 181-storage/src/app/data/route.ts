@@ -24,6 +24,7 @@ import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-passw
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confirmation-page.component';
+import { BoatAndRvComponent } from '../boat-and-rv/boat-and-rv.component';
 
 
  export const apiRoutes = [
@@ -34,6 +35,7 @@ import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confi
     { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
+    { path: 'boat-and-rv', component: BoatAndRvComponent },
     {
       path: 'view-rates',
       component: ViewRatesComponent,
@@ -83,6 +85,7 @@ export const iFrameRoutes = [
     { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
+    { path: 'boat-ad-rv', component: BoatAndRvComponent },
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'

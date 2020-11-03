@@ -1,0 +1,33 @@
+<div class="contentHolder">
+  <div class="container pb-5 my-3  padding-top">
+    <h1 class="pt-5 pb-3 text-center">{{boatAndRvHeading}}</h1>
+    <h2 class="pb-3 text-center">{{boatandrvH2Text}}</h2>
+    <div class="row bg-light background-padding">
+      <div class=" col-md-6 coming p-3" >
+        <app-photos></app-photos>
+        <!-- <img src="{{imageBaseUrl}}/181-storage-unit.{{imagetype}}" alt="{{altText}}" width="100%"/> -->
+      </div>
+      <!-- <div class="row"> -->
+        <div class=" col-md-6 p-3">
+            <p class="view-rate-text text-justify" *ngFor="let boarandrvParagraph of boarandrvParagraph">
+                {{boarandrvParagraph.p}}
+              </p>
+              <div class="text-center pt-2 pb-4">
+                <a class="btn btn-lg btn-primary " (click)="navigate('/view-rates')" role="button">View Rates</a>
+              </div>
+            <h3 class="view-rate-heading">Amenities</h3>
+          <!-- <app-photos></app-photos> -->
+          <div>
+              <app-tables [tBody]="boatandrvFeaturesList"></app-tables>
+            </div>
+          
+        </div>
+        <!-- <div class="col-md-6 p-3">
+          <p class="view-rate-text text-justify" *ngFor="let viewRates of viewRates">
+            {{viewRates.p}}
+          </p>
+    </div> -->
+    <!-- </div> -->
+  </div>
+</div>
+</div>
