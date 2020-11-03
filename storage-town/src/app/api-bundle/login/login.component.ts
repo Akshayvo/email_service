@@ -7,7 +7,7 @@ import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
 import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4 } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
+import { ogPayRentPage, ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4, twitterPayRentPage, twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4 } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -133,7 +133,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
-    } else  if (this.router.url.includes('chester')) {
+    } else  if (this.router.url.includes('brookside')) {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';
       this.contact = contactsLocation2;
@@ -163,11 +163,36 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    this.og = ogPayRentPage;
-}
+    if (this.router.url.includes('brookside')) {
+      this.og = ogPayRentPageLocation1;
+    } else {
+      if (this.router.url.includes('andrews')) {
+        this.og = ogPayRentPageLocation2;
+      } else {
+        if (this.router.url.includes('montgomery-walden')) {
+          this.og = ogPayRentPageLocation3;
+        } else {
+          if (this.router.url.includes('middletown-wallKill'))
+          this.og = ogPayRentPageLocation4;
+        }
+      }
+    }}
 
 public fetchTwitter() {
-    this.twitter = twitterPayRentPage;
+  if (this.router.url.includes('brookside')) {
+    this.twitter = twitterPayRentPageLocation1;
+  } else {
+    if (this.router.url.includes('andrews')) {
+      this.twitter = twitterPayRentPageLocation2;
+    } else {
+      if (this.router.url.includes('montgomery-walden')) {
+        this.twitter = twitterPayRentPageLocation3;
+      } else {
+        if (this.router.url.includes('middletown-wallKill'))
+        this.twitter = twitterPayRentPageLocation4;
+      }
+    }
+  }
 }
 
   handleForgotPassword() {

@@ -9,8 +9,8 @@ export const contactsLocation1 = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'storagetownchester@gmail.com',
-        data: `storagetownchester@gmail.com, syrasoftsoftware@gmail.com`,
+        email: 'storagetownchester@gmail.com, syrasoftsoftware@gmail.com',
+        data: `storagetownchester@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`storagetownchester@gmail.com, syrasoftsoftware@gmail.com`'
     },
@@ -46,8 +46,8 @@ export const contactsLocation2 = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'storagetownchester@gmail.com',
-        data: `storagetownchester@gmail.com, syrasoftsoftware@gmail.com`,
+        data: 'storagetownchester@gmail.com',
+        email: `storagetownchester@gmail.com, syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`storagetownchester@gmail.com, syrasoftsoftware@gmail.com`'
     },
@@ -86,8 +86,8 @@ export const contactsLocation3 = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'storagetownmontgomery@gmail.com',
-        data: `storagetownmontgomery@gmail.com, syrasoftsoftware@gmail.com`,
+        data: 'storagetownmontgomery@gmail.com',
+        email: `storagetownmontgomery@gmail.com, syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`storagetownmontgomery@gmail.com, syrasoftsoftware@gmail.com`'
     },
@@ -126,8 +126,8 @@ export const contactsLocation4 = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'storagetownmiddletown@gmail.com',
-        data: `storagetownmiddletown@gmail.com, syrasoftsoftware@gmail.com`,
+        email: 'storagetownmiddletown@gmail.com, syrasoftsoftware@gmail.com',
+        data: `storagetownmiddletown@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`storagetownmiddletown@gmail.com, syrasoftsoftware@gmail.com`'
     },

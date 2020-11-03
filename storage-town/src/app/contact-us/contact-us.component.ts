@@ -8,7 +8,7 @@ import { contactsLocation1, hoursLocation1,
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, ogContactPage, twitterContactPage } from '../data/script';
+import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3, ogContactPageLocation4, twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4 } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 @Component({
   selector: 'app-contact-us',
@@ -48,21 +48,21 @@ export class ContactUsComponent implements OnInit {
     private data: LocationService,
     private canonical: CanonicalService
   ) {
-    this.fetchOg();
-    this.fetchTwitter();
-    this.og.forEach(element => {
-      this.meta.addTag({
-        property: element.property,
-        content: element.content
-      })
-    });
+    // this.fetchOg();
+    // this.fetchTwitter();
+    // this.og.forEach(element => {
+    //   this.meta.addTag({
+    //     property: element.property,
+    //     content: element.content
+    //   })
+    // });
 
-    this.twitter.forEach(element => {
-      this.meta.addTag({
-        name: element.name,
-        content: element.content
-      })
-    });
+    // this.twitter.forEach(element => {
+    //   this.meta.addTag({
+    //     name: element.name,
+    //     content: element.content
+    //   })
+    // });
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
@@ -85,7 +85,7 @@ export class ContactUsComponent implements OnInit {
     this.fetchLocationDetails();
     window.scrollTo(0, 0);
     this.fetchScript();
-  this.loadScript();
+    this.loadScript();
 }
 
   get f() { return this.contactForm.controls; }
@@ -95,11 +95,37 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    this.og = ogContactPage;
+    if (this.router.url.includes('brookside')) {
+      this.og = ogContactPageLocation1;
+    } else {
+      if (this.router.url.includes('andrews')) {
+        this.og = ogContactPageLocation2;
+      } else {
+        if (this.router.url.includes('montgomery-walden')) {
+          this.og = ogContactPageLocation3;
+        } else {
+          if (this.router.url.includes('middletown-wallKill'))
+          this.og = ogContactPageLocation4;
+        }
+      }
+    }
 }
 
 public fetchTwitter() {
-    this.twitter = twitterContactPage;
+    if (this.router.url.includes('brookside')) {
+      this.twitter = twitterContactPageLocation1;
+    } else {
+      if (this.router.url.includes('andrews')) {
+        this.twitter = twitterContactPageLocation2;
+      } else {
+        if (this.router.url.includes('montgomery-walden')) {
+          this.twitter = twitterContactPageLocation3;
+        } else {
+          if (this.router.url.includes('middletown-wallKill'))
+          this.twitter = twitterContactPageLocation4;
+        }
+      }
+    }
 }
 
   public loadScript() {
@@ -136,7 +162,7 @@ public fetchTwitter() {
   public fetchLocationDetails() {
     if (this.router.url.includes('andrews')) {
       this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('chester')) {
+    } else if (this.router.url.includes('brookside')) {
       this.fetchContactDetailsLocation1();
     } else if (this.router.url.includes('montgomery-walden')) {
       this.fetchContactDetailsLocation3();
@@ -195,7 +221,7 @@ onSubmit() {
     this.contactForm.value.subject = 'Website Form Submission';
   }
 
-  this.receiveremail = this.contactDetails[1].data;
+  this.receiveremail = this.contactDetails[1].email;
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
 

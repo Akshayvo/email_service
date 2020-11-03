@@ -3,7 +3,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
   contactsLocation3, contactsLocation4, hoursLocation3, hoursLocation4, } from '../data/contact';
-import { featuresHead, serviceOffered } from '../data/home';
+import { featuresHead, serviceOffered, featuresList } from '../data/home';
 import { homePageScript, ogHomePage, twitterHomePage } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { LocationService } from '../services/location.service';
@@ -17,6 +17,7 @@ import { LocationService } from '../services/location.service';
 export class HomeComponent implements OnInit {
   contactDetails: any;
   hoursDetails: any;
+  featuresList: any;
   locationId: any;
   heading: string;
   features: any;
@@ -50,6 +51,12 @@ export class HomeComponent implements OnInit {
       })
     });
 
+    this.meta.addTag({
+      name: 'description',
+      content: `We offer a wide range of self storage, car, RV and boat storage!
+      Check out our 4 convenient locations in Orange County, NY!`
+    });
+
     this.titleService.setTitle('Affordable Self Storage Units | StorageTown Rental Spaces');
   }
 
@@ -60,6 +67,16 @@ export class HomeComponent implements OnInit {
     window.scrollTo(0, 0);
     this.receiveMessage();
     this.loadScript();
+    this.fetchFeatures();
+
+    // fetch(this.script)
+    // .then(response => response.text())
+    // .then(structuredDataText => {
+    //   const script = document.createElement('script');
+    //   script.setAttribute('type', 'application/ld+json');
+    //   script.textContent = structuredDataText;
+    //   document.head.appendChild(script);
+    // });
   }
 
   public fetchOgHomePage() {
@@ -84,7 +101,9 @@ export class HomeComponent implements OnInit {
     // node.charset = 'utf-8';
     node.innerHTML = JSON.stringify(this.script);
     // append to head of document
-    document.getElementsByTagName('head')[0].appendChild(node);
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+
   }
 
   public dataupdate() {
@@ -102,6 +121,12 @@ export class HomeComponent implements OnInit {
   public fetchScript() {
     this.script = homePageScript;
   }
+
+
+  public fetchFeatures() {
+    this.featuresList = featuresList;
+  }
+
 
     public fetchContactDetailsLocation1() {
       this.heading = `StorageTown Rental Spaces - Chester - Andrews Lane`;

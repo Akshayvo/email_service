@@ -129,13 +129,24 @@ export const tabs3 = [
     },
 ];
 
-export const headingLocation1 = `StorageTown Rental Spaces - Chester - Andrews Lane`;
+export const headingLocation1 = `Reserve a Storage Unit with Drive up Access Today!`;
 
-export const headingLocation2 = `StorageTown Rental Spaces - Chester - Brookside Ave`;
+export const headingLocation2 = ` Make a Free Online Reserve on a Storage Unit Today!`;
 
-export const headingLocation3 = `StorageTown Rental Spaces - Montgomery/Walden`;
+export const headingLocation3 = `Make a Free Online Reserve on a Storage Unit Today!`;
 
-export const headingLocation4 = `StorageTown - Middletown/WallKill Location`;
+export const headingLocation4 = `Make a Free Online Reserve on a Storage Unit Today!`;
+
+export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Chester`;
+
+export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Chester`;
+
+export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Montgomery`;
+
+
+export const headingReservePageLocation4 = `Ready to Reserve a Fully Alarmed Self Storage Unit in Middletown`;
+
+
 
 export const unitSizerLocation1 = [
     {
@@ -539,34 +550,33 @@ export const aboutUsImageLocation4 = `https://s3.amazonaws.com/syrasoft-tenant-f
 
 export const aboutUsLocation1 = [
     {
-        p: `Our Florida/Warwick location serves Chester, Florida, Warick, Orange County and points south. We cater to
-        both residential storage users and commercial storage clients as well. Whether you need a little extra space
-        for those seasonal items or long term storage solutions for supplies and inventory, StorageTown Rental Spaces
-        has your storage needs covered!`,
+        p: `Our Andrew's Lane location serves Chester, Florida, Warwick, Orange County, and points south.
+        We cater to both residential storage users and commercial storage clients as well. Whether you need
+        a little extra space for those seasonal items or long term storage solutions for supplies and inventory,
+        StorageTown Rental Spaces has your storage needs covered! We offer 6 different sizes from 5-foot-by-10-foot
+        to 10-foot-by-30-foot.`,
     },
     {
-        p: `We are conveniently located just a stone's throw from NY-17 off of Exit 126. Our  convenient online
-        reservation system and payment portal are here to make your stay with us a breeze! Our extended access hours
-        also make for a convenient loading experience!`,
+        p: `We are conveniently located just a stone's throw from NY 17M off of Exit 126. Our
+        convenient online reservation system and payment portal are here to make your stay with us a breeze!`,
     },
     {
-        p: `StorageTown Rental Spaces is a locally owned and operated organization with several locations in the Orange
-        County area. Our self storage professionals are friendly and experienced! We can't wait to meet you!`,
+        p: `StorageTown Rental Spaces is a locally owned and operated organization with several locations in the
+        Orange County area. Our self storage professionals are friendly and experienced! We can't wait to meet you!`,
     },
 ];
 
 export const aboutUsLocation2 = [
     {
-        p: `The StorageTown Rental Spaces Chester location is conveniently located right off of Route 6 at Exit 126! Our well-lit, fully-fenced self 
-            storage facility is the perfect place to store your belongings during a move or if your growing business just needs a little extra space!`,
+        p: `The StorageTown Rental Spaces Chester location is conveniently located right off of Route 17M at Exit 126! Our well-lit, fully-fenced
+        self storage facility is the perfect place to store your belongings during a move or if your growing business just needs
+        a little extra space! We have 7 sizes available from 5-foot-by-5-foot to 10-foot-by-10-foot.`,
     },
     {
-        p: `We also offer recreational vehicle and boat parking for seasonal customers! Our facility is covered by CCTV and has a pin-code activated 
-            gate for added security.`,
+        p: `Our facility is monitored by security cameras and has a pin-code activated gate for added security.`,
     },
     {
-        p: `We are proud to serve Orange County, Westchester, and all points south with affordable, well-maintained self storage units and RV/Boat 
-            storage! Storagetown Rental Spaces at Chester also sells you'll need to make your stay with us a breeze! `,
+        p: `We are proud to serve Orange County, Westchester, and all points south with affordable, well-maintained self storage units!`,
     },
     {
         p: `You can also purchase boxes and packing supplies at the front office!`,
@@ -575,43 +585,36 @@ export const aboutUsLocation2 = [
 
 export const aboutUsLocation3 = [
     {
-        p: `StorageTown Rental Spaces at Montgomery serves Montgomery, Walden, and Maybrook. We also serve many customers in Orange, Ulster, 
-            and Dutchess County.`,
+        p: `StorageTown Rental Spaces at Montgomery serves Montgomery, Walden, and Maybrook. We also serve many customers in Orange, Ulster, and Dutchess County.`,
     },
     {
-        p: `We are conveniently located off of Exit 5 on Route 84! StorageTown Rental offers both self storage units and parking spaces for recreational 
-            vehicles or boats. We also sell boxes, tape, locks, furniture, and dust covers. Whether you are a residential storage user just looking for 
-            a little extra room for seasonal belongings or need a large unit during a major move, we have units to suit your needs! Pick up, or drop off 
-            your supplies, and inventory outside of regular business hours!`,
+        p: `We are conveniently located off of RT84 Exist 28 formerly Exit 5. We have 7 sizes from our 5-foot-by-5-foot units
+        all the way up to 10-foot-by-30-foot units available. We also sell boxes, tape, locks, furniture, and dust covers. Whether
+        you are a residential storage user just looking for a little extra room for seasonal belongings or need a large unit during
+        a major move, we have units to suit your needs! Pick up, or drop off your supplies, and inventory outside of regular business hours!`,
     },
     {
 
-        p: `Your belongings are of the utmost importance to us. That's why our Montgomery facility is well-lit and covered by security cameras. 
-            The entire facility is fenced and accessible via pin-code activated gate!`,
+        p: `Your belongings are of the utmost importance to us. That's why our Montgomery facility is well-lit and monitored by security cameras.
+        The entire facility is fenced and accessible via a pin-code activated gate!`,
     },
     {
-        p: `We even offer online reservations and online bill-pay. Check your balance and pay your rent online 24/7 by simply following the instructions 
-            on the Pay Rent page!`
+        p: `We even offer online reservations and online bill-pay. Check your balance and pay your rent
+        online 24/7 by simply following the instructions on the Pay Rent page!`
     }
 ];
 
 
 export const aboutUsLocation4 = [
     {
-        p: `The StorageTown Rental Spaces Middletown location serves Middletown, Wallkill, Goshen and surrounding areas with affordable, 
-            well maintained self storage units and recreational vehicle parking spaces. `,
+        p: `The StorageTown Rental Spaces Middletown location serves Middletown, Wallkill, Goshen and surrounding areas with affordable,
+        well-maintained self storage units. 7 sizes available from 5-foot-by-5-foot to 10-foot-by-40-foot`,
     },
     {
-        p: `Our well-lit, fully-fenced facility comes complete with fully alarmed self storage units. Boat and RV owners can rest 
-            easy knowing their property is covered by 24 hour CCTV.`,
-    },
-    {
-        p: `Use our easy online reservation system to reserve your unit 24/7 and existing tenants may use our convenient online tenant 
-            portal to pay their rent! Whether you're moving and need some temporary extra space or a business with excess inventory or supplies, 
-            StorageTown Rental Space of Middletown has you covered!
-
-        `,
-    },
+        p: `Use our easy online reservation system to reserve your unit 24/7 and existing tenants may use our convenient online
+        tenant portal to pay their rent! Whether you're moving and need some temporary extra space or a business with excess
+        inventory or supplies, StorageTown Rental Space of Middletown has you covered!`,
+    }
 ];
 
 

@@ -90,18 +90,18 @@ export class ContactComponent implements OnInit {
     this.eventName = 'ContactFormsubmission';
     window['dataLayer'] = window['dataLayer'] || {};
     window.scrollTo(0, 0);
-  this.receiveMessage();
-  window['dataLayer'] = window['dataLayer'] || {};
-  window['dataLayer'] = window['dataLayer'] || [];
-  window['dataLayer'].push({
-    'event': this.eventName,
-    'location' : this.heading,
-    'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
-    'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
-  });
+    this.receiveMessage();
+    window['dataLayer'] = window['dataLayer'] || {};
+    window['dataLayer'] = window['dataLayer'] || [];
+    window['dataLayer'].push({
+      'event': this.eventName,
+      'location' : this.heading,
+      'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+      'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+    });
 
-  this.fetchTableHeader();
-  this.fetchTableData();
+    this.fetchTableHeader();
+    this.fetchTableData();
 
 }
 

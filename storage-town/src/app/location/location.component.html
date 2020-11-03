@@ -51,9 +51,11 @@
             </span>
         </div>
         <div class="hours-data w-100">
-          <h2 class="pt-3">Hours</h2>
           <div class="row">
             <div class="col-lg-8">
+              <div *ngIf="locationId == 1" class="text-center"><strong>Please Note:</strong><br/> The office for this location is at 53 Brookside Ave Chester Open 9-5 Monday through Saturday.
+              </div>
+              <h2 class="pt-3">Access Hours</h2>
               <app-tables [tBody]="hours" ></app-tables> 
             </div>
             <div class="col-lg-4 btn-area text-center">

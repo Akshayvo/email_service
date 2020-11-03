@@ -8,5 +8,18 @@
 
 .partition-border {
     border-left: 2px solid $border;
-    padding-left: 5%;
+    padding-left: 3%;
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.contact-label {
+    h3 {
+        font-size: 0.85rem;
+        line-height: 1.5rem;
+        width: fit-content;
+        // font-weight: 600;
+    }
 }

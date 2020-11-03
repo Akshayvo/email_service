@@ -7,22 +7,22 @@
         </div>
         <div class="col-md-4 pl-4 pt-3">
           <h2>StorageTown Rental Spaces - Chester - Brookside Ave</h2>
-          <p> 
-            <!-- <span *ngFor="let contact of contactsBarton">
-              <b>{{contact.label}}</b> {{contact.data}}<br>
-            </span> -->
-            <span *ngFor="let contact of contactsBrookside">
-              <span><b>{{contact.label}}</b></span>
-              <span class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
-                <a [href]="contact?.redirect" target="_blank">&nbsp;{{contact.data}}</a></span>
-              <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
-            </span>
-          </p>
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/chester/storage-units']" role="button">View Rates</a>                
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/chester/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          <!-- <p> -->
+            <div *ngFor="let contact of contactsBrookside" class="contact-label">
+                <div><h3>{{contact.label}}</h3></div>
+              <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+                <a [href]="contact?.redirect" target="_blank">&nbsp;
+                  <h3>{{contact.data}}</h3>
+                </a>
+              </div>
+              <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+            </div>
+          <!-- </p> -->
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/brookside/storage-units']" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/brookside/reserve-unit']" role="button"> Reserve Unit</a>                                  
         </div>
         <div class="col-md-3 partition-border contact-hours pt-3">
-            <h2>Hours:</h2>
+            <h3>Facility Hours - Storage access Hours :</h3>
             <p>
               <span *ngFor="let hour of hoursBrookside">
                 <b>{{hour.label}}</b>{{hour.data}}<br>
@@ -59,7 +59,7 @@
             <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/andrews/reserve-unit']" role="button"> Reserve Unit</a>                                  
           </div>
           <div class="col-md-3 partition-border contact-hours pt-3">
-              <h2>Hours:</h2>
+              <h3>Facility Hours - Storage access Hours :</h3>
               <p>
                 <span *ngFor="let hour of hoursAndrews">
                   <b>{{hour.label}}</b>{{hour.data}}<br>
@@ -95,7 +95,7 @@
           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/montgomery-walden/reserve-unit']" role="button"> Reserve Unit</a>                                  
         </div>
         <div class="col-md-3 partition-border contact-hours pt-3">
-            <h2>Hours:</h2>
+            <h3>Facility Hours - Storage access Hours :</h3>
             <p>
               <span *ngFor="let hour of hoursMontgomery">
                 <b>{{hour.label}}</b>{{hour.data}}<br>
@@ -131,7 +131,7 @@
             <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/middletown-wallKill/reserve-unit']" role="button"> Reserve Unit</a>                                  
           </div>
           <div class="col-md-3 partition-border contact-hours pt-3">
-              <h2>Hours:</h2>
+              <h3>Facility Hours - Storage access Hours :</h3>
               <p>
                 <span *ngFor="let hour of hoursMiddletown">
                   <b>{{hour.label}}</b>{{hour.data}}<br>

@@ -12,6 +12,14 @@
 
   ul {
     padding-inline-start: 17px;
+
+    li {
+      h2 {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1rem;
+      }
+    }
   }
 }
 

@@ -12,7 +12,7 @@ export const navLinks = [
             {
                 id: '2',
                 label: 'Chester - Brookside Ave',
-                path: '/location/chester',
+                path: '/location/brookside',
             },
             {
                 id: '1',

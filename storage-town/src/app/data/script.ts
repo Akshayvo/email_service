@@ -792,6 +792,222 @@ export const twitterPayRentPage = [
   },
 ];
 
+export const ogPayRentPageLocation1 = [
+  {
+    property: `og:title`,
+    content: `Pay Rent | Affordable Secure Storage`
+  },
+  {
+    property: `og:description`,
+    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/pay-rent/chester/login`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const twitterPayRentPageLocation1 = [
+  {
+    name: `twitter:title`,
+    content: `@Pay Rent | Affordable Secure Storage`
+  },
+  {
+    name: `twitter:description`,
+    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+  },
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const ogPayRentPageLocation2 = [
+  {
+    property: `og:title`,
+    content: `Pay Rent | Affordable Secure Storage`
+  },
+  {
+    property: `og:description`,
+    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/pay-rent/chester/login`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const twitterPayRentPageLocation2 = [
+  {
+    name: `twitter:title`,
+    content: `@Pay Rent | Affordable Secure Storage`
+  },
+  {
+    name: `twitter:description`,
+    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+  },
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const ogPayRentPageLocation3 = [
+  {
+    property: `og:title`,
+    content: `Pay Rent | Affordable Secure Storage`
+  },
+  {
+    property: `og:description`,
+    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/pay-rent/montgomery-walden/login`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const twitterPayRentPageLocation3 = [
+  {
+    name: `twitter:title`,
+    content: `@Pay Rent | Affordable Secure Storage`
+  },
+  {
+    name: `twitter:description`,
+    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+  },
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const ogPayRentPageLocation4 = [
+  {
+    property: `og:title`,
+    content: `Pay Rent | Affordable Secure Storage`
+  },
+  {
+    property: `og:description`,
+    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/pay-rent/middletown-wallKill/login`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const twitterPayRentPageLocation4 = [
+  {
+    name: `twitter:title`,
+    content: `@Pay Rent | Affordable Secure Storage`
+  },
+  {
+    name: `twitter:description`,
+    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+  },
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
 export const ogStorageTipsPage = [
   {
     property: `og:title`,
@@ -877,6 +1093,227 @@ export const ogContactPage = [
 ];
 
 export const twitterContactPage = [
+  {
+    name: `twitter:title`,
+    content: `@Contact Us | StorageTown Rental Spaces`
+  },
+  {
+    name: `twitter:description`,
+    content: `Want to reserve a unit or find information about your account? Use our contact
+    form or the contact information for your StorageTown location on this page!`
+  },
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const ogContactPageLocation1 = [
+  {
+    property: `og:title`,
+    content: `Contact Us | StorageTown Rental Spaces`
+  },
+  {
+    property: `og:description`,
+    content: `Want to reserve a unit or find information about your account? Use our contact
+    form or the contact information for your StorageTown location on this page!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/contact-chester`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const twitterContactPageLocation1 = [
+  {
+    name: `twitter:title`,
+    content: `@Contact Us | StorageTown Rental Spaces`
+  },
+  {
+    name: `twitter:description`,
+    content: `Want to reserve a unit or find information about your account? Use our contact
+    form or the contact information for your StorageTown location on this page!`
+  },
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+export const ogContactPageLocation2 = [
+  {
+    property: `og:title`,
+    content: `Contact Us | StorageTown Rental Spaces`
+  },
+  {
+    property: `og:description`,
+    content: `Want to reserve a unit or find information about your account? Use our contact
+    form or the contact information for your StorageTown location on this page!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/contact-andrews`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const twitterContactPageLocation2 = [
+  {
+    name: `twitter:title`,
+    content: `@Contact Us | StorageTown Rental Spaces`
+  },
+  {
+    name: `twitter:description`,
+    content: `Want to reserve a unit or find information about your account? Use our contact
+    form or the contact information for your StorageTown location on this page!`
+  },
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+export const ogContactPageLocation3 = [
+  {
+    property: `og:title`,
+    content: `Contact Us | StorageTown Rental Spaces`
+  },
+  {
+    property: `og:description`,
+    content: `Want to reserve a unit or find information about your account? Use our contact
+    form or the contact information for your StorageTown location on this page!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/contact-montgomery-walden`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const twitterContactPageLocation3 = [
+  {
+    name: `twitter:title`,
+    content: `@Contact Us | StorageTown Rental Spaces`
+  },
+  {
+    name: `twitter:description`,
+    content: `Want to reserve a unit or find information about your account? Use our contact
+    form or the contact information for your StorageTown location on this page!`
+  },
+  {
+    name: `twitter:site`,
+    content: `@StorageTown Rental Speces`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+export const ogContactPageLocation4 = [
+  {
+    property: `og:title`,
+    content: `Contact Us | StorageTown Rental Spaces`
+  },
+  {
+    property: `og:description`,
+    content: `Want to reserve a unit or find information about your account? Use our contact
+    form or the contact information for your StorageTown location on this page!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Storage Town Rental Spaces`
+  },
+  {
+    property: `og:url`,
+    content: `https://storage-town.com/contact-middletown-wallKill`
+  },
+  {
+    property: `og:image`,
+    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+  },
+];
+
+export const twitterContactPageLocation4 = [
   {
     name: `twitter:title`,
     content: `@Contact Us | StorageTown Rental Spaces`

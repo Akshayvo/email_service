@@ -5,7 +5,7 @@ import { tabs } from '../../data/tab';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
 import { Meta } from '@angular/platform-browser';
-import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
+import { ogPayRentPage, ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4, twitterPayRentPage, twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4 } from '../../data/script';
 @Component({
   selector: 'app-pay-rent',
   templateUrl: './pay-rent.component.html',
@@ -44,7 +44,7 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('chester') || this.router.url.includes('andrews')) {
+    if (this.router.url.includes('brookside') || this.router.url.includes('andrews')) {
       this.name = 'Chester - Andrews Lane & Brookside Ave';
   }  else if (this.router.url.includes('montgomery-walden')) {
     this.name = 'Montgomery/Walden';
@@ -64,11 +64,37 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    this.og = ogPayRentPage;
+    if (this.router.url.includes('brookside')) {
+      this.og = ogPayRentPageLocation1;
+    } else {
+      if (this.router.url.includes('andrews')) {
+        this.og = ogPayRentPageLocation2;
+      } else {
+        if (this.router.url.includes('montgomery-walden')) {
+          this.og = ogPayRentPageLocation3;
+        } else {
+          if (this.router.url.includes('middletown-wallKill'))
+          this.og = ogPayRentPageLocation4;
+        }
+      }
+    }
 }
 
 public fetchTwitter() {
-    this.twitter = twitterPayRentPage;
+    if (this.router.url.includes('brookside')) {
+      this.twitter = twitterPayRentPageLocation1;
+    } else {
+      if (this.router.url.includes('andrews')) {
+        this.twitter = twitterPayRentPageLocation2;
+      } else {
+        if (this.router.url.includes('montgomery-walden')) {
+          this.twitter = twitterPayRentPageLocation3;
+        } else {
+          if (this.router.url.includes('middletown-wallKill'))
+          this.twitter = twitterPayRentPageLocation4;
+        }
+      }
+    }
 }
 
   public fetchContactDetails() {

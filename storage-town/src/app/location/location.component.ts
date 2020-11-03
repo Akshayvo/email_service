@@ -88,15 +88,15 @@ export class LocationComponent implements OnInit {
                 content: element.content
               })
             });
-    } else if (this.router.url.includes('/location/chester')) {
+    } else if (this.router.url.includes('/location/brookside')) {
       this.canonical.create();
            this.meta.addTag({
              name: 'description',
-             content: `Our Chester location offers a variety of well-lit, fully-fenced self
+             content: `Our brookside location offers a variety of well-lit, fully-fenced self
              storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!`
            });
-           this.titleService.setTitle('Self Storage Units in Chester | StorageTown Rental Spaces');
-           this.locationName = `StorageTown Rental Spaces - Chester - Andrews Lane `;
+           this.titleService.setTitle('Self Storage Units in brookside | StorageTown Rental Spaces');
+           this.locationName = `StorageTown Rental Spaces - brookside - Andrews Lane `;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location1Script;
@@ -187,7 +187,7 @@ export class LocationComponent implements OnInit {
   public fetchOg() {
     if (this.router.url.includes('/location/andrews')) {
       this.og = ogLocation2;
-  } else if (this.router.url.includes('/location/chester')) {
+  } else if (this.router.url.includes('/location/brookside')) {
     this.og = ogLocation1;
   } else if (this.router.url.includes('/location/montgomery-walden')) {
     this.og = ogLocation3;
@@ -199,7 +199,7 @@ export class LocationComponent implements OnInit {
   public fetchTwitter() {
     if (this.router.url.includes('/location/andrews')) {
       this.twitter = twitterLocation2;
-  } else if (this.router.url.includes('/location/chester')) {
+  } else if (this.router.url.includes('/location/brookside')) {
     this.twitter = twitterLocation1;
   } else if (this.router.url.includes('/location/montgomery-walden')) {
     this.twitter = twitterLocation3;
@@ -211,7 +211,7 @@ export class LocationComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/andrews')) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes('/location/chester')) {
+    } else if (this.router.url.includes('/location/brookside')) {
       this.fetchDetailsLocation2();
     } else if (this.router.url.includes('/location/montgomery-walden')) {
       this.fetchDetailsLocation3();
@@ -225,7 +225,7 @@ export class LocationComponent implements OnInit {
     this.router.navigate(['/location/andrews/reserve-unit'],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/chester/reserve-unit'],
+    this.router.navigate(['/location/brookside/reserve-unit'],
           );
   }  else if ( this.locationId === 3 ) {
     this.router.navigate(['/location/montgomery-walden/reserve-unit'],

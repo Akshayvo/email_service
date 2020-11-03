@@ -3,13 +3,31 @@
 p {
   padding: 0;
   margin: 0;
+  color: $dark;
 }
 
 table {
-  margin: 0;
+  border: 2px solid #dee2e6;
+}
 
-  td {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
+.table-head {
+  background: $primary;
+  color: $white;
+}
+
+td {
+  padding-left: 5%;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-inline-start: 10px;
 }

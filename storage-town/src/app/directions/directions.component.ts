@@ -22,7 +22,7 @@ export class DirectionsComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/andrews')) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes('/location/chester')) {
+     } else if (this.router.url.includes('/location/brookside')) {
        this.fetchDetailsLocation2();
     } else  if (this.router.url.includes('/location/montgomery-walden'))  {
        this.fetchDetailsLocation3();
@@ -33,24 +33,24 @@ export class DirectionsComponent implements OnInit {
 
  public fetchDetailsLocation1() {
   this.directionPoints = directionLocation1;
-  this.directionHeading = `Directions`;
+  this.directionHeading = `Directions To StorageTown Rental Spaces in Chester`;
   this.id = 1;
 }
   public fetchDetailsLocation2() {
     this.directionPoints = directionLocation2;
-    this.directionHeading = `Directions to StorageTown Rental Spaces`;
+    this.directionHeading = `Directions To StorageTown Rental Spaces in Chester`;
     this.id = 2;
   }
 
   public fetchDetailsLocation3() {
     this.directionPoints = directionLocation3;
-    this.directionHeading = `Directions to StorageTown Rental Spaces`;
+    this.directionHeading = `Directions To StorageTown Rental Spaces in Montgomery`;
     this.id = 3;
   }
 
   public fetchDetailsLocation4() {
     // this.directionPoints = directionLocation4;
-    this.directionHeading = `Directions`;
+    this.directionHeading = `Directions To StorageTown Rental Spaces in Middletown`;
     this.id = 4;
   }
 }

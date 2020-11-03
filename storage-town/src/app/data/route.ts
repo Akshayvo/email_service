@@ -86,7 +86,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
-    { path: 'location/chester',
+    { path: 'location/brookside',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -236,7 +236,7 @@ export const apiRoutes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
     }
   },
-  { path: 'review/chester', component: HomeComponent,
+  { path: 'review/brookside', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -263,7 +263,7 @@ export const apiRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/chester', component: PayRentComponent,
+    path: 'pay-rent/brookside', component: PayRentComponent,
     children: childroute
   },
   {
@@ -280,10 +280,10 @@ export const apiRoutes = [
   },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-us/andrews', component: ContactUsComponent},
-  { path: 'contact-us/chester', component: ContactUsComponent},
-  { path: 'contact-us/montgomery-walden', component: ContactUsComponent},
-  { path: 'contact-us/middletown-wallKill', component: ContactUsComponent},
+  { path: 'contact-andrews', component: ContactUsComponent},
+  { path: 'contact-brookside', component: ContactUsComponent},
+  { path: 'contact-montgomery-walden', component: ContactUsComponent},
+  { path: 'contact-middletown-wallKill', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
 ];
@@ -303,7 +303,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/chester',
+  { path: 'location/brookside',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -344,7 +344,7 @@ export const iFrameRoutes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
     }
   },
-  { path: 'review/chester', component: HomeComponent,
+  { path: 'review/brookside', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -371,7 +371,7 @@ export const iFrameRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
   { path: 'pay-rent-andrews', component: PayRentFloridaComponent },
-  { path: 'pay-rent-chester', component: PayRentChesterComponent},
+  { path: 'pay-rent-brookside', component: PayRentChesterComponent},
   { path: 'pay-rent-montgomery-walden', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-middletown-wallkill', component: PayRentMiddletownComponent},
   { path: 'storage-tips', component: StorageTipsComponent },
