@@ -9,7 +9,7 @@
           <h2>StorageTown Rental Spaces - Chester - Brookside Ave</h2>
           <!-- <p> -->
             <div *ngFor="let contact of contactsBrookside" class="contact-label">
-                <div><h3>{{contact.label}}</h3></div>
+                <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
               <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
                 <a [href]="contact?.redirect" target="_blank">&nbsp;
                   <h3>{{contact.data}}</h3>
@@ -44,17 +44,15 @@
           </div>
           <div class="col-md-4 pl-4 pt-3">
             <h2>StorageTown Rental Spaces - Chester - Andrews Lane</h2>
-            <p> 
-              <!-- <span *ngFor="let contact of contactsBarton">
-                <b>{{contact.label}}</b> {{contact.data}}<br>
-              </span> -->
-              <span *ngFor="let contact of contactsAndrews">
-                <span><b>{{contact.label}}</b></span>
-                <span class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
-                  <a [href]="contact?.redirect" target="_blank">&nbsp;{{contact.data}}</a></span>
-                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
-              </span>
-            </p>
+            <div *ngFor="let contact of contactsAndrews" class="contact-label">
+              <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+            <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+              <a [href]="contact?.redirect" target="_blank">&nbsp;
+                <h3>{{contact.data}}</h3>
+              </a>
+            </div>
+            <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+          </div>
             <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/andrews/storage-units']" role="button">View Rates</a>                
             <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/andrews/reserve-unit']" role="button"> Reserve Unit</a>                                  
           </div>
@@ -80,17 +78,15 @@
         </div>
         <div class="col-md-4 pl-4 pt-3">
           <h2>StorageTown Rental Spaces - Montgomery/Walden</h2>
-          <p> 
-            <!-- <span *ngFor="let contact of contactsBarton">
-              <b>{{contact.label}}</b> {{contact.data}}<br>
-            </span> -->
-            <span *ngFor="let contact of contactsMontgomery">
-              <span><b>{{contact.label}}</b></span>
-              <span class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
-                <a [href]="contact?.redirect" target="_blank">&nbsp;{{contact.data}}</a></span>
-              <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
-            </span>
-          </p>
+          <div *ngFor="let contact of contactsMontgomery" class="contact-label">
+            <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+          <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+            <a [href]="contact?.redirect" target="_blank">&nbsp;
+              <h3>{{contact.data}}</h3>
+            </a>
+          </div>
+          <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+        </div>
           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/montgomery-walden/storage-units']" role="button">View Rates</a>                
           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/montgomery-walden/reserve-unit']" role="button"> Reserve Unit</a>                                  
         </div>
@@ -116,17 +112,15 @@
           </div>
           <div class="col-md-4 pl-4 pt-3">
             <h2>StorageTown - Middletown/WallKill Location</h2>
-            <p> 
-              <!-- <span *ngFor="let contact of contactsBarton">
-                <b>{{contact.label}}</b> {{contact.data}}<br>
-              </span> -->
-              <span *ngFor="let contact of contactsMiddletown">
-                <span><b>{{contact.label}}</b></span>
-                <span class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
-                  <a [href]="contact?.redirect" target="_blank">&nbsp;{{contact.data}}</a></span>
-                <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
-              </span>
-            </p>
+            <div *ngFor="let contact of contactsMiddletown" class="contact-label">
+              <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+            <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+              <a [href]="contact?.redirect" target="_blank">&nbsp;
+                <h3>{{contact.data}}</h3>
+              </a>
+            </div>
+            <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+          </div>
             <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/middletown-wallKill/storage-units']" role="button">View Rates</a>                
             <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/middletown-wallKill/reserve-unit']" role="button"> Reserve Unit</a>                                  
           </div>

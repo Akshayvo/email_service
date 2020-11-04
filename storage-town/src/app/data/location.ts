@@ -143,9 +143,15 @@ export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit
 
 export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Montgomery`;
 
-
 export const headingReservePageLocation4 = `Ready to Reserve a Fully Alarmed Self Storage Unit in Middletown`;
 
+export const heading1 = `Storage Town Rental Space - Chester - Brookside Ave`;
+
+export const heading2 = `Storage Town Rental Space - Chester - Andrews Lane`;
+
+export const heading3 = `Storage Town Rental Space - Montgomery/Walden`;
+
+export const heading4 = `Storage Town Rental Space - Middletown/WallKill`;
 
 
 export const unitSizerLocation1 = [

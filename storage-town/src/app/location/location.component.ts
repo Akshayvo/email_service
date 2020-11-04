@@ -4,8 +4,8 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, hoursLocation3, contactsLocation3, contactsLocation4, hoursLocation4,
           // contactsLocation3, hoursLocation3,
           } from '../data/contact';
-import { tabs, tabs1, tabs2, headingLocation3, tabs3, headingLocation4 } from '../data/location';
-import { headingLocation1, headingLocation2 } from '../data/location';
+import { tabs, tabs1, tabs2, heading3, tabs3, heading4 } from '../data/location';
+import { heading1, heading2 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
@@ -237,7 +237,7 @@ export class LocationComponent implements OnInit {
  }
 
   public fetchDetailsLocation1() {
-      this.name = headingLocation1;
+      this.name = heading2;
       this.locationId = 1;
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
@@ -245,7 +245,7 @@ export class LocationComponent implements OnInit {
     }
 
    public fetchDetailsLocation2() {
-     this.name = headingLocation2;
+     this.name = heading1;
      this.locationId = 2;
      this.contacts = contactsLocation2;
      this.hours = hoursLocation2;
@@ -253,7 +253,7 @@ export class LocationComponent implements OnInit {
    }
 
    public fetchDetailsLocation3() {
-    this.name = headingLocation3;
+    this.name = heading3;
     this.locationId = 3;
     this.contacts = contactsLocation3;
     this.hours = hoursLocation3;
@@ -261,7 +261,7 @@ export class LocationComponent implements OnInit {
   }
 
   public fetchDetailsLocation4() {
-    this.name = headingLocation4;
+    this.name = heading4;
     this.locationId = 4;
     this.contacts = contactsLocation4;
     this.hours = hoursLocation4;
