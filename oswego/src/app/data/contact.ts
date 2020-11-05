@@ -19,13 +19,13 @@ export const contact = [
         data: '(315) 341-8905',
         class: 'fas fa-phone mx-2 iconColor',
     },
-    {
-        id: 3,
-        redirect: 'tel:3158778343',
-        label: 'Phone:',
-        data: '(315) 877-8343',
-        class: 'fas fa-phone mx-2 iconColor',
-    }
+    // {
+    //     id: 3,
+    //     redirect: 'tel:3158778343',
+    //     label: 'Phone:',
+    //     data: '(315) 877-8343',
+    //     class: 'fas fa-phone mx-2 iconColor',
+    // }
 ];
 
 export const hours = [
