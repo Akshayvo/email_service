@@ -6,7 +6,7 @@ export const featuresHead = [
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: '24 Hour Clock',
+        label: '24-Hour Access',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
         alt: 'Icon art displaying clock hands and the number 24'
     },
