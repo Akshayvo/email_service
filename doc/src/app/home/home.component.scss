@@ -1,0 +1,415 @@
+@import "../../styles.scss";
+
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Doc_Images/webp/docs-hideaway-mini-storage.webp");
+}
+
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Doc_Images/jpg/docs-hideaway-mini-storage.jpg");
+}
+
+.jumbotron {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  height: 80vh;
+  color: $white;
+  overflow: hidden;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+.home-map {
+  iframe {
+    border: 2px solid white;
+  }
+}
+
+.feature-icon-style {
+  padding: 24px;
+  text-align: center;
+
+  img {
+    padding: 10px;
+  }
+}
+
+.contact-links {
+  a {
+    color: black;
+  }
+}
+
+.content-align {
+  text-align: right;
+}
+
+.getStarted {
+  color: $secondary;
+  text-align: center;
+
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+.disp {
+  color: $white;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
+
+.jumbotron-top {
+  height: 80vh;
+}
+
+.jumbotron-bottom {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+
+@media only screen and (min-width: 1200px) {
+ 
+}
+
+
+@media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 641px) {
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 640px) and (min-height: 451px) {
+  .jumbotron {
+    height: 100vh;
+  }
+
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 120px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 450px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .button-width {
+    max-width: 200px;
+    margin: auto;
+  }
+
+
+  .jumbotorn-button {
+    padding: 10px;
+  }
+
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 750px) and (min-height: 641px) {
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 640px) and (min-height: 451px) {
+  .jumbotron {
+    height: 100vh;
+  }
+
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 130px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 450px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .button-width {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .jumbotorn-button {
+    padding: 10px;
+  }
+
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 830px) and (min-height: 701px) {
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 700px) and (min-height: 481px) {
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 160px;
+  }
+
+
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 480px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .button-width {
+    max-width: 200px;
+    margin: auto;
+  }
+
+
+  .jumbotorn-button {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 500px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 0;
+  }
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+
+
+  .jumbotorn-button {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 420px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+  }
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+
+  .jumbotorn-button {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 429px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+  }
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+}
