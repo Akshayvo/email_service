@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc>https://knoll-street-staging.netlify.app/</loc>
+    <loc>http://knollstorage.net/</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://knoll-street-staging.netlify.app/view-rates</loc>
+    <loc>http://knollstorage.net/view-rates</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://knoll-street-staging.netlify.app/reserve-unit</loc>
+    <loc>http://knollstorage.net/reserve-unit</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
    <url>
-    <loc>https://knoll-street-staging.netlify.app/pay-rent/login</loc>
+    <loc>http://knollstorage.net/pay-rent/login</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
    <url>
-    <loc>https://knoll-street-staging.netlify.app/pay-rent/forgotPassword</loc>
+    <loc>http://knollstorage.net/pay-rent/forgotPassword</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
    <url>
-    <loc>https://knoll-street-staging.netlify.app/pay-rent/payment</loc>
+    <loc>http://knollstorage.net/pay-rent/payment</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
    <url>
-    <loc>https://affordable-storage-kingwood-staging.netlify.app/storage-tips</loc>
+    <loc>http://knollstorage.net/storage-tips</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://affordable-storage-kingwood-staging.netlify.app/contact-us</loc>
+    <loc>http://knollstorage.net/contact-us</loc>
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>
