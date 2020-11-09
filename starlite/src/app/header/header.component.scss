@@ -6,8 +6,8 @@ a {
 }
 
 img {
-  width: 160px;
-  height: 61px;
+  width: auto;
+  height: 100px;
 }
 
 .iconColor {
@@ -44,7 +44,7 @@ img {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
 
   .nav-link {
-    color: $white;
+    color: $black;
     font-weight: 600;
     padding: 21px;
   }

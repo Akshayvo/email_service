@@ -90,7 +90,7 @@ body {
 
 // Content Holder Styles
 .contentHolder {
-  padding-top: 110px;
+  padding-top: 164px;
   min-height: 96vh;
   margin-bottom: 50px;}
 
@@ -148,19 +148,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .contentHolder {
-    padding-top: 56px;
+    padding-top: 110px;
   }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .contentHolder {
-    padding-top: 56px;
+    padding-top: 110px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .contentHolder {
-    padding-top: 56px;
+    padding-top: 110px;
   }
 
   .background-padding {
