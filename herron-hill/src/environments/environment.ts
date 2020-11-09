@@ -18,7 +18,7 @@ export const environment = {
   // AnotherLocationAPIKey: `MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
   // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
-  // APIKey: `dTJXOUQzUDRIMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, //Herron hill
+  // APIKey: `dTJXOUQzUDRIMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Herron hill
   // APIKey: `dzJ0OFc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464 (For 0 reservetion charges)
   // baseUrl: `http://localhost:60444/api/`,
 };

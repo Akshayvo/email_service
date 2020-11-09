@@ -9,6 +9,6 @@ export const environment = {
   appId: 'Herron Hill Storage - Testing',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  APIKey: ``, // demo north
+  APIKey: `dTJXOUQzUDRIMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Herron hill
   websiteUrl: ''
 };
