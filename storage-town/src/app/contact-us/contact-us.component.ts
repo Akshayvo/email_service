@@ -48,21 +48,21 @@ export class ContactUsComponent implements OnInit {
     private data: LocationService,
     private canonical: CanonicalService
   ) {
-    // this.fetchOg();
-    // this.fetchTwitter();
-    // this.og.forEach(element => {
-    //   this.meta.addTag({
-    //     property: element.property,
-    //     content: element.content
-    //   })
-    // });
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
 
-    // this.twitter.forEach(element => {
-    //   this.meta.addTag({
-    //     name: element.name,
-    //     content: element.content
-    //   })
-    // });
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
@@ -95,10 +95,10 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('brookside')) {
+    if (this.router.url.includes('chester-brookside-ave')) {
       this.og = ogContactPageLocation1;
     } else {
-      if (this.router.url.includes('andrews')) {
+      if (this.router.url.includes('chester-andrews-lane')) {
         this.og = ogContactPageLocation2;
       } else {
         if (this.router.url.includes('montgomery-walden')) {
@@ -112,10 +112,10 @@ export class ContactUsComponent implements OnInit {
 }
 
 public fetchTwitter() {
-    if (this.router.url.includes('brookside')) {
+    if (this.router.url.includes('chester-brookside-ave')) {
       this.twitter = twitterContactPageLocation1;
     } else {
-      if (this.router.url.includes('andrews')) {
+      if (this.router.url.includes('chester-andrews-lane')) {
         this.twitter = twitterContactPageLocation2;
       } else {
         if (this.router.url.includes('montgomery-walden')) {
@@ -160,9 +160,9 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('andrews')) {
+    if (this.router.url.includes('chester-andrews-lane')) {
       this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('brookside')) {
+    } else if (this.router.url.includes('chester-brookside-ave')) {
       this.fetchContactDetailsLocation1();
     } else if (this.router.url.includes('montgomery-walden')) {
       this.fetchContactDetailsLocation3();

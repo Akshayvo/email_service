@@ -15,7 +15,7 @@ export const tableData = [
   {
     facility: 'Both Chester Locations',
     address: 'Andrews Lane & Brookside Ave',
-    url: 'brookside'
+    url: 'chester-brookside-ave'
   },
   {
     facility: 'Montgomery/Walden',
@@ -33,12 +33,12 @@ export const tableDataContactPage = [
   {
     facility: 'Chester - Brookside Ave',
     address: '53 Brookside Ave, Chester, NY 10918',
-    url: 'brookside'
+    url: 'chester-brookside-ave'
   },
   {
     facility: 'Chester - Andrews Lane',
     address: '1 Andrews Lane, Chester, NY 10918',
-    url: 'andrews'
+    url: 'chester-andrews-lane'
   },
   {
     facility: 'Montgomery/Walden',

@@ -26,7 +26,7 @@ export const contactsLocation1 = [
 export const hoursLocation1 = [
     {
         id: 1,
-        label: 'Access hours: ',
+        label: 'Storage Access Hour: ',
         // datahours: {
         //     data1:'7 Days a Week ',
         //     data2:'6:00AM to 8:00PM'
@@ -70,7 +70,7 @@ export const hoursLocation2 = [
         data: 'CLOSED',
     },
     {
-        label: 'Access Hours: ',
+        label: 'Storage Access Hour: ',
         data: '7 Days a Week 6:00AM to 8:00PM',
     },
 ];
@@ -110,7 +110,7 @@ export const hoursLocation3 = [
         data: 'CLOSED',
     },
     {
-        label: 'Access hours: ',
+        label: 'Storage Access Hour: ',
         data: '7 Days a Week 6:00AM - 8:00PM',
     },
 ];
@@ -150,7 +150,7 @@ export const hoursLocation4 = [
         data: 'CLOSED',
     },
     {
-        label: 'Access hours: ',
+        label: 'Storage Access Hour: ',
         data: '7 Days a Week 6:00AM - 8:00PM',
     },
 ];

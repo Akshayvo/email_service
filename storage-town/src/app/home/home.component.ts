@@ -33,6 +33,8 @@ export class HomeComponent implements OnInit {
     private data: LocationService,
     private canonical: CanonicalService
   ) {
+    this.fetchScript();
+    this.loadScript();
     this.fetchOgHomePage();
     this.fetchTwitterHomePage();
     this.canonical.create();
@@ -63,10 +65,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.fetchStaticContent();
     this.fetchFeatureHead();
-    this.fetchScript();
     window.scrollTo(0, 0);
     this.receiveMessage();
-    this.loadScript();
     this.fetchFeatures();
 
     // fetch(this.script)

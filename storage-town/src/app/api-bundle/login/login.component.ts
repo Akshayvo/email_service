@@ -7,7 +7,8 @@ import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
 import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4 } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPage, ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4, twitterPayRentPage, twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4 } from '../../data/script';
+import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4,
+   twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4 } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -55,11 +56,8 @@ export class LoginComponent implements OnInit, OnDestroy {
     private authService: AuthService,
     public router: Router,
     private meta: Meta,
-    private activatedRoute: ActivatedRoute,
-
     private  dataSharingService: DataSharingService,
   ) {
-
     this.fetchOg();
     this.fetchTwitter();
     this.og.forEach(element => {
@@ -75,6 +73,7 @@ export class LoginComponent implements OnInit, OnDestroy {
         content: element.content
       })
     });
+
     if (!!localStorage.getItem('paymentTab')) {
       this.paymentTab = localStorage.getItem('paymentTab');
     }
@@ -127,13 +126,13 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchContactDetail() {
-    if (this.router.url.includes('andrews')) {
+    if (this.router.url.includes('chester-andrews-lane')) {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
-    } else  if (this.router.url.includes('brookside')) {
+    } else  if (this.router.url.includes('chester-brookside-ave')) {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';
       this.contact = contactsLocation2;
@@ -163,10 +162,10 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('brookside')) {
+    if (this.router.url.includes('chester-brookside-ave')) {
       this.og = ogPayRentPageLocation1;
     } else {
-      if (this.router.url.includes('andrews')) {
+      if (this.router.url.includes('chester-andrews-lane')) {
         this.og = ogPayRentPageLocation2;
       } else {
         if (this.router.url.includes('montgomery-walden')) {
@@ -179,10 +178,10 @@ export class LoginComponent implements OnInit, OnDestroy {
     }}
 
 public fetchTwitter() {
-  if (this.router.url.includes('brookside')) {
+  if (this.router.url.includes('chester-brookside-ave')) {
     this.twitter = twitterPayRentPageLocation1;
   } else {
-    if (this.router.url.includes('andrews')) {
+    if (this.router.url.includes('chester-andrews-lane')) {
       this.twitter = twitterPayRentPageLocation2;
     } else {
       if (this.router.url.includes('montgomery-walden')) {

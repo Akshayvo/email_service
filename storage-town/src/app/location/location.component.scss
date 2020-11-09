@@ -4,6 +4,13 @@
   background-color: $light;
   padding-top: 140px;
 }
+
+.social-content {
+  .each-contact {
+  font-size: 0.8rem;
+  }
+}
+
 .alarm{
   background-color: #BE2926;
   color:#fff;
@@ -25,8 +32,11 @@
 
   h1 {
     text-transform:capitalize;
+    font-size: 1.6rem;
   }
 }
+
+
 
 .sub-component-background {
   background-color: #f1f0ed;
@@ -96,17 +106,25 @@
   display: block;
 }
 
+@media only screen and (min-width: 992px) {
+  .contact-details {
+    .btn-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   .disp {
     display: none;
   }
 
   .social-content {
-    .col-lg-12 {
       .each-contact {
         display: block;
       }
-    }
   }
 
 
@@ -143,7 +161,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .social-content {
     h1 {
       font-size: 1.4rem;
@@ -180,12 +198,6 @@
       padding: 0;
       margin: 0;
     }
-
-    .col-lg-4 {
-      .btn {
-        width: 32.5%;
-      }
-    }
   }
 }
 
@@ -204,12 +216,10 @@
 
 @media only screen and (max-width: 768px) {
   .social-content {
-    .col-lg-11 {
       .each-contact {
         width: 100%;
         display: block;
       }
-    }
   }
 
   .img-box-1 {

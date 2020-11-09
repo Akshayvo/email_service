@@ -62,7 +62,7 @@ export class LocationComponent implements OnInit {
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
-      if (this.router.url.includes('/location/andrews')) {
+      if (this.router.url.includes('/location/chester-andrews-lane')) {
         this.canonical.create();
             this.meta.addTag({
               name: 'description',
@@ -88,7 +88,7 @@ export class LocationComponent implements OnInit {
                 content: element.content
               })
             });
-    } else if (this.router.url.includes('/location/brookside')) {
+    } else if (this.router.url.includes('/location/chester-brookside-ave')) {
       this.canonical.create();
            this.meta.addTag({
              name: 'description',
@@ -185,9 +185,9 @@ export class LocationComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('/location/andrews')) {
+    if (this.router.url.includes('/location/chester-andrews-lane')) {
       this.og = ogLocation2;
-  } else if (this.router.url.includes('/location/brookside')) {
+  } else if (this.router.url.includes('/location/chester-brookside-ave')) {
     this.og = ogLocation1;
   } else if (this.router.url.includes('/location/montgomery-walden')) {
     this.og = ogLocation3;
@@ -197,9 +197,9 @@ export class LocationComponent implements OnInit {
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes('/location/andrews')) {
+    if (this.router.url.includes('/location/chester-andrews-lane')) {
       this.twitter = twitterLocation2;
-  } else if (this.router.url.includes('/location/brookside')) {
+  } else if (this.router.url.includes('/location/chester-brookside-ave')) {
     this.twitter = twitterLocation1;
   } else if (this.router.url.includes('/location/montgomery-walden')) {
     this.twitter = twitterLocation3;
@@ -209,9 +209,9 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/andrews')) {
+    if (this.router.url.includes('/location/chester-andrews-lane')) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes('/location/brookside')) {
+    } else if (this.router.url.includes('/location/chester-brookside-ave')) {
       this.fetchDetailsLocation2();
     } else if (this.router.url.includes('/location/montgomery-walden')) {
       this.fetchDetailsLocation3();
@@ -222,10 +222,10 @@ export class LocationComponent implements OnInit {
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate(['/location/andrews/reserve-unit'],
+    this.router.navigate(['/location/chester-andrews-lane/reserve-unit'],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/brookside/reserve-unit'],
+    this.router.navigate(['/location/chester-brookside-ave/reserve-unit'],
           );
   }  else if ( this.locationId === 3 ) {
     this.router.navigate(['/location/montgomery-walden/reserve-unit'],

@@ -55,7 +55,8 @@
             <div class="col-lg-8">
               <div *ngIf="locationId == 1" class="text-center"><strong>Please Note:</strong><br/> The office for this location is at 53 Brookside Ave Chester Open 9-5 Monday through Saturday.
               </div>
-              <h2 class="pt-3">Access Hours</h2>
+              <h4 class="pt-3" *ngIf="locationId == 2 else other_content" >Facility Hours</h4>
+              <ng-template #other_content>&nbsp;<h4 class="pt-3">Access Hours:</h4></ng-template>
               <app-tables [tBody]="hours" ></app-tables> 
             </div>
             <div class="col-lg-4 btn-area text-center">
@@ -75,3 +76,11 @@
       <app-tabs [tabs]='tabs' [name]='name' class="sub-component-background" [currentActiveTab]='currentTab' ></app-tabs>
   </div>
 </section>
+
+<!-- Data preloading Starts-->
+<div hidden>
+  <app-unit-sizer></app-unit-sizer>
+  <app-about-us></app-about-us>
+  <app-directions></app-directions>
+</div>
+<!-- Data preloading Ends-->

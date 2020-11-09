@@ -18,11 +18,11 @@
               <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
             </div>
           <!-- </p> -->
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/brookside/storage-units']" role="button">View Rates</a>                
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/brookside/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/chester-brookside-ave/storage-units']" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/chester-brookside-ave/reserve-unit']" role="button"> Reserve Unit</a>                                  
         </div>
         <div class="col-md-3 partition-border contact-hours pt-3">
-            <h3>Facility Hours - Storage access Hours :</h3>
+            <h3>Facility Hours:</h3>
             <p>
               <span *ngFor="let hour of hoursBrookside">
                 <b>{{hour.label}}</b>{{hour.data}}<br>
@@ -35,7 +35,7 @@
   
   <!--Contact Brookside  -  Ends Here-->
 
-    <!--Contact Andrews  Ends Here-->
+    <!--Contact chester-andrews-lane  Ends Here-->
     <div class="pb-5 pt-5 ">    
       <div class="container">
         <div class="row">          
@@ -53,11 +53,11 @@
             </div>
             <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
           </div>
-            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/andrews/storage-units']" role="button">View Rates</a>                
-            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/andrews/reserve-unit']" role="button"> Reserve Unit</a>                                  
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/chester-andrews-lane/storage-units']" role="button">View Rates</a>                
+            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/chester-andrews-lane/reserve-unit']" role="button"> Reserve Unit</a>                                  
           </div>
           <div class="col-md-3 partition-border contact-hours pt-3">
-              <h3>Facility Hours - Storage access Hours :</h3>
+              <h3>Facility Hours:</h3>
               <p>
                 <span *ngFor="let hour of hoursAndrews">
                   <b>{{hour.label}}</b>{{hour.data}}<br>
@@ -67,7 +67,7 @@
         </div>
       </div>      
     </div>
-    <!--Contact Andrews  -  Ends Here-->
+    <!--Contact chester-andrews-lane  -  Ends Here-->
 
       <!--Contact Montgomery Start Here-->
   <div class="pb-5 pt-5 bg-light">    
@@ -91,7 +91,7 @@
           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/montgomery-walden/reserve-unit']" role="button"> Reserve Unit</a>                                  
         </div>
         <div class="col-md-3 partition-border contact-hours pt-3">
-            <h3>Facility Hours - Storage access Hours :</h3>
+            <h3>Facility Hours:</h3>
             <p>
               <span *ngFor="let hour of hoursMontgomery">
                 <b>{{hour.label}}</b>{{hour.data}}<br>
@@ -125,7 +125,7 @@
             <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/middletown-wallKill/reserve-unit']" role="button"> Reserve Unit</a>                                  
           </div>
           <div class="col-md-3 partition-border contact-hours pt-3">
-              <h3>Facility Hours - Storage access Hours :</h3>
+              <h3>Facility Hours:</h3>
               <p>
                 <span *ngFor="let hour of hoursMiddletown">
                   <b>{{hour.label}}</b>{{hour.data}}<br>

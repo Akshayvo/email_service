@@ -25,3 +25,9 @@
         font-weight: 400;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .partition-border {
+        border-left: none;
+      }
+}

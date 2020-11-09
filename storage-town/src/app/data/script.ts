@@ -532,7 +532,7 @@ export const ogLocation1 = [
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/location/chester/storage-units`
+    content: `https://storage-town.com/location/chester-brookside-ave/storage-units`
   },
   {
     property: `og:image`,
@@ -589,7 +589,7 @@ export const ogLocation2 = [
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/location/andrews/storage-units`
+    content: `https://storage-town.com/location/chester-andrews-lane/storage-units`
   },
   {
     property: `og:image`,
@@ -811,7 +811,7 @@ export const ogPayRentPageLocation1 = [
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/pay-rent/chester/login`
+    content: `https://storage-town.com/pay-rent/chester-brookside-ave/login`
   },
   {
     property: `og:image`,
@@ -865,7 +865,7 @@ export const ogPayRentPageLocation2 = [
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/pay-rent/chester/login`
+    content: `https://storage-town.com/pay-rent/chester-brookside-ave/login`
   },
   {
     property: `og:image`,
@@ -1140,7 +1140,7 @@ export const ogContactPageLocation1 = [
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-chester`
+    content: `https://storage-town.com/contact-chester-brookside-ave`
   },
   {
     property: `og:image`,
@@ -1195,7 +1195,7 @@ export const ogContactPageLocation2 = [
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-andrews`
+    content: `https://storage-town.com/contact-chester-andrews-lane`
   },
   {
     property: `og:image`,

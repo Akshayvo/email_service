@@ -45,6 +45,9 @@
   .feature-block {
     height: 20vh;
 
+    h2 {
+      line-height: 1.5rem;
+    }
     img {
       height: 60px;
     }
@@ -63,7 +66,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(80vh - 48.55px);
+  height: calc(80vh - 64px);
 }
 
 .jumbotron-top1 {
@@ -71,14 +74,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(80vh - 48.55px);}
+  height: calc(80vh - 64px);}
 
 .jumbotron-top2 {
   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(80vh - 48.55px);
+  height: calc(80vh - 64px);
 }
 
 .jumbotron-top3 {
@@ -86,7 +89,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(80vh - 48.55px);
+  height: calc(80vh - 64px);
 }
 
 .contact-links {
@@ -174,23 +177,23 @@
   }
 }
 
-@media screen and (max-height: 700px) and (min-width: 600px) {
-  .carousel-caption {
-    bottom: 40px;
+// @media screen and (max-height: 700px) and (min-width: 600px) {
+//   .carousel-caption {
+//     bottom: 40px;
 
-    img {
-      height: 60px;
-    }
-  }
+//     img {
+//       height: 60px;
+//     }
+//   }
 
-  .jumbotron-home {
-    height: auto;
+//   .jumbotron-home {
+//     // height: auto;
 
-    .feature-block {
-      height: 160px;
-    }
-  }
-}
+//     // .feature-block {
+//     //   height: 160px;
+//     // }
+//   }
+// }
 
 
 @media screen and (max-width: 1024px) {
@@ -257,6 +260,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .carousel-indicators {
+    bottom: -10px;
+  }
+
   .carousel-caption {
     bottom: 40px;
 
@@ -266,7 +273,7 @@
   }
 
   .jumbotron-home {
-    height: 60vh;
+    height: 100vh;
 
     .for-mobile-view {
       display: block;
@@ -278,15 +285,19 @@
   }
 
   .jumbotron-top {
-    height: 60vh;
+    height: 100vh;
   }
 
   .jumbotron-top1 {
-    height: 60vh;
+    height: 100vh;
   }
 
   .jumbotron-top2 {
-    height: 60vh;
+    height: 100vh;
+  }
+
+  .jumbotron-top3 {
+    height: 100vh;
   }
 
   .content-align {

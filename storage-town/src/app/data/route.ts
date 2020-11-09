@@ -86,7 +86,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
-    { path: 'location/brookside',
+    { path: 'location/chester-brookside-ave',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -122,7 +122,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/andrews',
+    { path: 'location/chester-andrews-lane',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -228,7 +228,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/andrews', component: HomeComponent,
+    { path: 'review/chester-andrews-lane', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -236,7 +236,7 @@ export const apiRoutes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
     }
   },
-  { path: 'review/brookside', component: HomeComponent,
+  { path: 'review/chester-brookside-ave', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -263,11 +263,11 @@ export const apiRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/brookside', component: PayRentComponent,
+    path: 'pay-rent/chester-brookside-ave', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/andrews', component: PayRentComponent,
+    path: 'pay-rent/chester-andrews-lane', component: PayRentComponent,
     children: childroute
   },
   {
@@ -280,8 +280,8 @@ export const apiRoutes = [
   },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-andrews', component: ContactUsComponent},
-  { path: 'contact-brookside', component: ContactUsComponent},
+  { path: 'contact-chester-andrews-lane', component: ContactUsComponent},
+  { path: 'contact-chester-brookside-ave', component: ContactUsComponent},
   { path: 'contact-montgomery-walden', component: ContactUsComponent},
   { path: 'contact-middletown-wallKill', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
@@ -292,7 +292,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: 'location/andrews',
+  { path: 'location/chester-andrews-lane',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -303,7 +303,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/brookside',
+  { path: 'location/chester-brookside-ave',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -336,7 +336,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/andrews', component: HomeComponent,
+  { path: 'review/chester-andrews-lane', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -344,7 +344,7 @@ export const iFrameRoutes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
     }
   },
-  { path: 'review/brookside', component: HomeComponent,
+  { path: 'review/chester-brookside-ave', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -370,8 +370,8 @@ export const iFrameRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-andrews', component: PayRentFloridaComponent },
-  { path: 'pay-rent-brookside', component: PayRentChesterComponent},
+  { path: 'pay-rent-chester-andrews-lane', component: PayRentFloridaComponent },
+  { path: 'pay-rent-chester-brookside-ave', component: PayRentChesterComponent},
   { path: 'pay-rent-montgomery-walden', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-middletown-wallkill', component: PayRentMiddletownComponent},
   { path: 'storage-tips', component: StorageTipsComponent },
