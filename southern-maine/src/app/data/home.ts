@@ -1,51 +1,55 @@
 export const featuresList = [
     {
-        td1: 'Climate Controlled Units',
-        td2: 'Fully Lit Facility'
+        td1: 'Convenient Location',
+        td2: 'Online Bill Pay'
     },
     {
-        td1: '24 Hour Video Security',
-        td2: 'Fenced In Facility'
+        td1: 'Security Cameras',
+        td2: 'Drive-Up Units'
     },
     {
-        td1: 'Superior Customer Service',
-        td2: 'Gated Access'
+        td1: 'Pin-Pad Activated Security Gate',
+        td2: 'Affordable Rates'
     },
     {
-        td1: 'Black Top Paving',
-        td2: 'U-Haul Rentals'
+        td1: 'Recreational Vehicle Storage',
+        td2: 'Boat Storage'
     },
     {
-        td1: 'Packing Material',
+        td1: 'Climate-Controlled Units Available',
+        td2: 'Fully-Fenced Facility'
+    },
+    {
+        td1: 'Paved Parking',
+        td2: 'Packing & Moving Supplies Available'
     }
 ];
 
 export const aboutUsAlt = `aboutUsAlt`;
 
-export const aboutUsHeading = `Affordable Storage Near Catskill, NY`;
+export const aboutUsHeading = `Affordable Storage Units in Saco`;
 
 export const aboutUs = [
     {
-        p: `Catskill Self Storage has been proudly serving the Catskill, Leeds, Cairo and surrounding
-            communities since 2004 with stellar customer service, and a wide range of clean,
-            well-maintained self storage units.`,
+        p: `We offer residential and commercial storage solutions that are
+        affordable and suit your needs. Growing families and growing businesses
+        alike face the same dilemma `,
     },
     {
-        p: `Whether you're looking for a little extra space during a move or are looking for long term
-            storage we have the right unit at the right price!`,
+        p: `- There never seems to be enough storage space!`,
     },
     {
-        p: `Are you in need of convenient, affordable truck rentals? Our selection of U-Haul trucks
-            ready and waiting to make your moving experience faster and easier!`,
+        p: `Why throw it away when you can stow it away at Southern Maine Storage? Our clean,
+        convenient, and completely secure storage units can accommodate a few boxes to an entire
+        household. Whether you need storage space for a short term or on a permanent basis we have
+        the units and pricing to help solve your storage problems.
+        `,
     },
     {
-        p: `Our fully-stocked retail store has all of the tape, boxes, and packing material you'll
-            need to make your storage experience a breeze!`,
+        p: `Our storage facility has 24/7 access, electronic gated security, video surveillance and a
+        fenced perimeter. Call Southern Maine Storage for additional information on our complete
+        storage solutions, or check our rates online and begin your contactless rental process!`,
     },
-    {
-        p: `If you have any questions or concerns about renting a unit or truck with us be sure to call
-            our friendly, knowledgeable staff and let us make your storage experience a hassle-free one!`
-    }
 ];
 
 export const gettingStarted = `Are you ready to move in today or just looking to make a reservation?
@@ -62,9 +66,9 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
-        label: 'Stellar Customer Service',
-        alt: 'Customer Service Representative Icon'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg`,
+        label: 'Climate Controlled',
+        alt: ' Icon of thermometer indicating climate-controlled units'
     },
     {
         // tslint:disable-next-line:max-line-length
@@ -83,9 +87,9 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h1: `Convenient & Affordable`,
-        blurb: `With affordable truck rentals, drive-up access, temperature - controlled storage units,
-        and top notch customer service,
-        Catskill Self Storage has your storage unit needs covered! Contact us today to get started!`,
+        h1: `Regular & Climate Controlled Self Storage Units in Saco`,
+        blurb: `Southern Maine Storage offers on-site storage facilities to meet all of your short and long
+        term storage needs. We offer competitively priced storage options ranging from mini-storage units to
+        outdoor vehicle storage. Check out our rates online, then move in with our contactless rental process!`,
     }
 ];

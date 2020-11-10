@@ -79,7 +79,7 @@
       </div>
       <div class="col-lg-5 col-md-6 col-12 px-4">
         <div class="my-4 contact-map">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11812.741403016997!2d-73.9069651!3d42.2532142!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f78849841f11072!2sCatskill+Self+Storage!5e0!3m2!1sen!2sus!4v1541375613193" 
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11565.307406212965!2d-70.402578!3d43.558072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a5960f16415ed05!2sSouthern%20Maine%20Storage!5e0!3m2!1sen!2sus!4v1604871168449!5m2!1sen!2sus" 
               width="100%" height="250" frameborder="0" allowfullscreen></iframe> 
         </div>
         <p>
@@ -92,6 +92,12 @@
         <b>Hours:</b>
         <p>
           <span *ngFor="let hour of hours">
+            <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+          </span>
+        </p>
+        <b>Access Hours:</b>
+        <p>
+          <span *ngFor="let hour of accessHours">
             <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
           </span>
         </p>

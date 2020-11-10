@@ -26,7 +26,7 @@ import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
 import { RentSubComponent } from '../api-bundle/rent-sub/rent-sub.component';
 import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
 import { SignUpComponent } from '../api-bundle/sign-up/sign-up.component';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../environments/environment';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -101,7 +101,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJX3ExhFaiskwRBe0VZPFgWTo'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -123,7 +123,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJX3ExhFaiskwRBe0VZPFgWTo'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },

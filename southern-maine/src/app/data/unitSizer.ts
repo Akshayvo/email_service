@@ -1,6 +1,21 @@
 export const unitSizer = [
     {
       id: 0,
+      size: '5\' x 5\'',
+      heading: '5\' x 5\' Storage Unit',
+      alt: '5\' x 5\' Storage Unit Graphic ',
+      unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x5.png',
+      data: `This unit is approximately 25 sq feet of space that can hold the contents of one small closet, such as:`,
+      amenities: [
+        { content: 'Chairs', },
+        { content: 'Small  bookcases', },
+        { content: 'Suitcases', },
+        { content: 'Lamps', },
+        { content : 'Kitchenware', },
+      ],
+    },
+    {
+      id: 1,
       size: '5\' x 10\'',
       heading: '5\' x 10\' Storage Unit',
       alt: '5\' x 10\' Storage Unit Graphic ',
@@ -17,7 +32,24 @@ export const unitSizer = [
       ],
     },
     {
-      id: 1,
+      id: 2,
+      size: '5\' x 15\'',
+      heading: '5\' x 15\' Storage Unit',
+      alt: '5\' x 15\' Storage Unit Graphic ',
+      unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
+      data: `This unit is approximately 75 sq feet of space that can hold the contents of one small room, such as:`,
+      amenities: [
+        { content: 'Chairs', },
+        { content: 'Small desks', },
+        { content: 'Small  bookcases', },
+        { content: 'Suitcases', },
+        { content: 'Lamps', },
+        { content : 'Kitchenware', },
+        { content : 'Mattresses'}
+      ],
+    },
+    {
+      id: 3,
       size: '10\' x 10\'',
       heading: '10\' x 10\' Storage Unit',
       alt: '10\' x 10\' Storage Unit Graphic ',
@@ -34,7 +66,7 @@ export const unitSizer = [
       ],
     },
     {
-      id: 2,
+      id: 4,
       size: '10\' x 20\'',
       heading: '10\' x 20\' Storage Unit',
       alt: '10\' x 20\' Storage Unit Graphic ',
@@ -49,7 +81,7 @@ export const unitSizer = [
       ],
     },
     {
-      id: 3,
+      id: 5,
       size: '10\' x 30\'',
       heading: '10\' x 30\' Storage Unit',
       alt: '10\' x 30\' Storage Unit Graphic ',

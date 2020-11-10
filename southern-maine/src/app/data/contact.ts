@@ -2,53 +2,65 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '5877 Cauterskill Road Catskill, NY 12414',
+        data: '1030 Portland Rd, Saco, ME 04072',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 1,
         label: 'Email:',
-        redirect: 'mailto:sanghmitra.v@codeparva.in',
-        data: 'sanghmitra.v@codeparva.in',
+        redirect: 'mailto:info@southernmainestorage.com',
+        data: 'info@southernmainestorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
         id: 2,
-        redirect: 'tel:5189433003',
+        redirect: 'tel:2072824844',
         label: 'Phone:',
-        data: '518-943-3003',
+        data: '(207) 282-4844',
         class: 'fas fa-phone mx-2 iconColor',
     }
 ];
 
 export const hours = [
     {
-        label: 'Mon-Fri: ',
-        data: '9:00 am - 6:00 pm'
+        label: 'Monday - Friday : ',
+        data: '8:30 AM to 5:00 PM'
     },
     {
-        label: 'Sat: ',
-        data: '9:00 am - 3:00 pm'
+        label: 'Saturday : ',
+        data: 'By Appointment Only'
     },
     {
-        label: 'Sunday: ',
-        data: '8:00 am - 12:00 pm'
+        label: 'Sunday : ',
+        data: 'Closed'
+    },
+    // {
+    //     label: 'Facility Access With Pin Code: ',
+    //     data: '24 hours a day, 7 days a week'
+    // }
+];
+
+export const accessHours = [
+    {
+        label: `Regular Units :`,
+        data: `24 Hours a Day 7 Days a Week`
     },
     {
-        label: 'Facility Access With Pin Code: ',
-        data: '24 hours a day, 7 days a week'
-    }
+        label: ``,
+        data: `Climate Controlled Units Are Accessible 7:00AM to 9:00PM 7 Days a Week`
+    },
+
 ];
 
 export const socialLinks = [
-    {
-        label: 'twitter',
-        path: 'https://twitter.com/CatskillSS',
-        class: 'fab fa-twitter-square',
-    },
-    {
-        label: 'facebook',
-        path: 'https://www.facebook.com/catskillselfstorage',
-        class: 'fab fa-facebook-square',
-    },
+    // {
+    //     label: 'twitter',
+    //     path: '',
+    //     class: 'fab fa-twitter-square',
+    // },
+    // {
+    //     label: 'facebook',
+    //     path: '',
+    //     class: 'fab fa-facebook-square',
+    // },
 ];

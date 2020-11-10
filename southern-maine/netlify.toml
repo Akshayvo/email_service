@@ -27,6 +27,30 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/climate-control"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/pay-rent-online"
+  to = "/pay-rent"
+  status = 301
+[[redirects]]
+  from = "/directions"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/sitemap"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/moving-tips"
+  to = "/storage-tips"
+  status = 301
+[[redirects]]
+  from = "/services-pricing"
+  to = "/view-rates"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

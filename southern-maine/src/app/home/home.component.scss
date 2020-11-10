@@ -1,11 +1,11 @@
 @import "../../styles.scss";
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/webp/catskill-self-storage.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Southern_Maine/webp/southern-maine-storage-jumbotron.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/jpg/catskill-self-storage.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Southern_Maine/jpg/southern-maine-storage-jumbotron.jpg");
 }
 
 .jumbotron {
@@ -103,7 +103,8 @@ h1 {
 
 @media only screen and (min-width: 1200px) {
   .jumbotorn-skew-text {
-    width: 500px;
+    width: 520px;
+    top: 26%;
   }
 }
 
@@ -210,7 +211,7 @@ h1 {
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .jumbotorn-skew-text {
-    width: 35%;
+    width: 467px;
 
     a {
       min-width: 160px;
@@ -329,7 +330,7 @@ h1 {
   }
 
   .jumbotorn-skew-text {
-    width: 40%;
+    width: 416px;
 
     a {
       min-width: 140px;
@@ -472,8 +473,8 @@ h1 {
   }
 
   .jumbotorn-skew-text {
-    top: 40%;
-    width: 49%;
+    top: 25%;
+    width: 348px;
 
     a {
       min-width: 140px;

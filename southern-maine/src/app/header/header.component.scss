@@ -5,6 +5,12 @@ a {
   cursor: pointer;
 }
 
+.navbar-brand {
+  b {
+    color: $white;
+  }
+}
+
 img {
   width: 160px;
   height: 61px;
@@ -50,7 +56,7 @@ img {
   }
 
   .nav-link:hover {
-    color: $primary;
+    color: $white;
   }
 
   .nav-link-active {
@@ -84,7 +90,7 @@ img {
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   .navbar {
     .nav-link {
-      padding: 12px;
+      padding: 8px;
     }
   }
 }
