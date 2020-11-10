@@ -7,7 +7,7 @@ a {
 
 img {
   width: 160px;
-  height: 61px;
+  // height: 61px;
 }
 
 .iconColor {
@@ -59,10 +59,10 @@ img {
   }
 
   button {
-    border-color: $white;
+    border-color: $primary;
 
     .iconColor {
-      color: $white;
+      color: $primary;
     }
   }
 
