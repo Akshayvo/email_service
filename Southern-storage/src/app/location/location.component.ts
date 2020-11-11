@@ -37,7 +37,6 @@ export class LocationComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     ) {
       this.location = this.router.url;
-      console.log('navigation url', this.router.url, this.location);
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
@@ -72,7 +71,7 @@ export class LocationComponent implements OnInit {
     window.scrollTo(0, 0);
     this.isSomePage();
         this.data = this.route.snapshot.data;
-        console.log('location is', this.router.url );
+        
 
   }
 

@@ -770,10 +770,8 @@ public navigateToPrevious() {
   onSubmit() {
     this.submitted = true;
     if (this.payRentForm.invalid) {
-      console.log('form invalid');
       return;
     } else {
-      console.log('form is valid');
       this.showloaderForPayment = true;
       // if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
         if (this.amountToPay > 0) {

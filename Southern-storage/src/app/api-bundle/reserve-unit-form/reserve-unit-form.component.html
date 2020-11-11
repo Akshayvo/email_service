@@ -1,12 +1,18 @@
-<div class="reserve-unit-form">
-        <div [hidden]="" *ngIf="unitTypeNotAvailability" class="alert alert-danger alert-dismissible fade show">
+<!-- <div class="loader" *ngIf="showMoveForm"></div> -->
+<div *ngIf="showMoveForm"> 
+    <strong>
+        We're sorry, this location doesn't have any units available for online rental. Please contact the location to make other arrangements!
+    </strong>   
+</div>
+
+<div *ngIf="!showMoveForm" class="reserve-unit-form">
+        <!-- <div [hidden]="" *ngIf="unitTypeNotAvailability" class="alert alert-danger alert-dismissible fade show">
             There is no Unit available, Please choose the other unit type or call the facility for more detail
             <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="close()">
                 <span aria-hidden="true">&times;</span>
             </button>
-        </div>
-
-        <div class="loader" *ngIf="gettingTenantData"></div>
+        </div> -->
+       
 
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div  class="row justify-content">
@@ -126,12 +132,10 @@
                                  <select class="form-control" formControlName="Description" [id]="lstUnitTypes?.Description"
                                  (change)="selectChangeHandler($event)"
                                 >
-                                     <option *ngFor="let lstUnitType of lstUnitTypes"
-                                     [value]="lstUnitType?.Description"
-                                     [class.display-none]="!lstUnitType.IsUnitsAvailable"
-                                     >
-                                         {{lstUnitType.Description}}
-                                     </option>
+                                <option *ngFor="let lstUnitType of filterLstUnitTypes"
+                                    [value]="lstUnitType?.Description">
+                                    {{lstUnitType.Description}}
+                                </option>
                                     </select>
                                 </div>
                             </div>

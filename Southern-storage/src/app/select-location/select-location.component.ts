@@ -38,7 +38,6 @@ export class SelectLocationComponent implements OnInit {
   }
 
   sendMessage() {
-  // console.log(this.getLocation.value.location);
     this.messageEvent.emit(this.getLocation.value.location);
   }
 }

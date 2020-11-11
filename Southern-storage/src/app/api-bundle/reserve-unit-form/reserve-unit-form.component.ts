@@ -93,6 +93,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   maxDay: number;
 
 
+  filterLstUnitTypes: LstUnitTypes[];
+  showMoveForm = false;
   MoveInStringParent: string;
 
   tenant: any;
@@ -230,7 +232,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.gettingTenantData = true;
       }
     }
-    console.log('TCL: navigateToConfirmation -> this.dataSharingService.objTenant', this.dataSharingService.objTenant);
 
       this.reserveUnitForm.patchValue({
         objTenant: ({
@@ -251,11 +252,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           Description: this.Description,
         }])
       });
-
-
-    /* if (this.activatedRoute.snapshot.url[1].path === 'agricola') {
-      console.log('yes its ', this.activatedRoute.snapshot.url[1].path);
-    } */
   }
   public fetchUSState() {
     this.option = option;
@@ -421,10 +417,25 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
 
 
+  getFilterLstUnitTypes(unitTypesResponse: any) {
+    this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
+    this.filterLstUnitTypes = this.lstUnitTypes.filter(x => x.IsUnitsAvailable === true);
+    console.log(" this.filterLstUnitTypes",  this.filterLstUnitTypes, this.filterLstUnitTypes.length);
+
+    if (this.filterLstUnitTypes && this.filterLstUnitTypes.length > 0) {
+      this.showMoveForm = false;
+    } else {
+      this.showMoveForm = true;
+    }
+  }
+
   getData() {
     this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
+
         this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
+        this.getFilterLstUnitTypes(unitTypesResponse);
+        
         const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
         this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
         const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
@@ -435,7 +446,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.MoveIn.intUnitTypeID = this.UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
         this.unitTypeId =
           this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
-        this.UnitTypeID = unitTypesResponse.lstUnitTypes[0].UnitTypeID;
+        this.UnitTypeID = this.filterLstUnitTypes[0].UnitTypeID;
         if (this.navigateToMoveIn) {
           this.getMoveInCharges(this.unitTypeId);
         }
