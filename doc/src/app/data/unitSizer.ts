@@ -39,8 +39,7 @@ export const unitSizer = [
       heading: '10\' x 15\' Storage Unit',
       alt: '10\' x 15\' Storage Unit Graphic ',
       unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
-      data: `This unit is approximately 150 sq feet of space that can hold the contents of a whole house. These are pull-through
-      units with a door on either end. Our 10x30s can hold many of the following items:`,
+      data: `This unit is approximately 150 sq feet of space that can hold the contents of several large rooms:`,
       amenities: [
         { content: 'Chairs', },
         { content: 'Small desks', },

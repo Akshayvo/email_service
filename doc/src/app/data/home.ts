@@ -13,11 +13,8 @@ export const featuresList = [
     },
     {
         td1: 'Fully-Fenced Facility',
-        td2: 'Online Move In'
+        td2: 'Month-to-Month Contracts'
     },
-    {
-        td1: 'Month-to-Month Contracts'
-    }
 ];
 
 export const aboutUsAlt = `a single story self storage office in front of a gate that opens into a self storage facility with metal buildings`;

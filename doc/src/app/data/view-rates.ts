@@ -2,13 +2,13 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Doc’s Hideaway Mini Storage has proudly served the Owassa community with the awesome customer service only a locally owned
-      & operated business can provide! We are in the heart of downtown Owasso, and offer easy 24-hour access to all of our ground-level
-      units to make your loading and unloading easier.`,
+      p: `Doc’s Hideaway Mini Storage has proudly served the Owassa community with the awesome customer service only a locally
+      owned & operated business can provide! We are in the heart of downtown Owasso and offer easy 24-hour access to all of our
+      ground-level units to make your loading and unloading easier.`,
     },
     {
-      p: `You can reserve your unit just by giving us a call, and once you’re a tenant at Doc’s, you’ll have also receive 24-hour
-      access to your account online! It couldn’t be any easier! Call to reserve today!`
+      p: `Just give us a call, and once you’re a tenant at Doc’s, you’ll have also receive 24-hour access to your account
+      online! It couldn’t be any easier! Call to reserve today!`
     }
 ];
 
