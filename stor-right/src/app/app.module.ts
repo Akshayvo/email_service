@@ -56,6 +56,7 @@ import { RentSubComponent } from '../app/rent-sub/rent-sub.component';
 import { TabsComponent } from '../app/tabs/tabs.component';
 import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+
 @NgModule({
   declarations: [
     AppComponent,
