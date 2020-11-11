@@ -201,6 +201,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         if (this.router.url.includes('payment')) {
           this.navigateToMoveIn = false;
           this.navigateToReserve = false;
+          this.navigateToMoveInPayment = true;
         }
 
       }
@@ -208,9 +209,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-    if (this.router.url ===  '/pay-rent/payment' || (this.router.url ===  '/pay-rent/sign-up/payment')) {
-      this.navigateToMoveInPayment = true;
-    }
+    // if (this.router.url ===  '/pay-rent/payment' || (this.router.url ===  '/pay-rent/sign-up/payment')) {
+    //   this.navigateToMoveInPayment = true;
+    // }
 
     this.fetchCards();
   }

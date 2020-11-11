@@ -81,9 +81,9 @@ export const feature = [
 export const jumbotron = [
     {
         h1: `Affordable Self Storage in Spring Branch`,
-        blurb: `The Store House is conveniently located on Knoll Street in northwest Houston. We proudly serve
-        our friends and neighbors with quality self storage units, friendly customer service, and affordable
-        self storage rental rates! You'll have access to your storage unit 24 hours a day, and can pay your
-        rent or check your balance through our convenient online customer portal! Call or reserve your unit online today!`,
+        blurb: `Knoll Street Storage is conveniently located on Knoll Street in northwest Houston. We proudly
+        serve our friends and neighbors with quality self storage units, friendly customer service, and affordable
+        self storage rental rates! You'll have access to your storage unit 24 hours a day, and can pay your rent or
+        check your balance through our convenient online customer portal! Call or reserve your unit online today!`,
     }
 ];
