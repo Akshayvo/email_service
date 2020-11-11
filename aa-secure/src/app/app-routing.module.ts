@@ -21,6 +21,14 @@ import { PayRentFormComponent } from './pay-rent-form/pay-rent-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'review', component: HomeComponent,
+  resolve: {
+    url: 'externalUrlRedirectResolver'
+  },
+    data: {
+      externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJDem__t1aQYgRkUdtF_EG6B8'
+  }
+  },
   { path: 'location/730-kenton-station',
     component: LocationComponent,
     children: [

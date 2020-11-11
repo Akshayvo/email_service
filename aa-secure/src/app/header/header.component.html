@@ -2,11 +2,16 @@
   <div class="container">
     <div class="contact-header">
       <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-6">
           <span class="contact-details" *ngFor="let contact of contactDetails" [ngClass]="{'pr-4': contact?.id === 2}">
             <span  class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><i [class]="contact?.class"></i><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
             <!-- <ng-template #other_content>&nbsp;{{contact.data}}</ng-template> -->
           </span>
+        </div>
+        <div class="col-md-6 text-right contact-links">
+          <a href="https://maysville-online.com/wp-content/uploads/2020/09/2020BestOfTheBestWinners.pdf" target="_blank">
+            Voted Best Self Storage in Maysville 5 Years! - Ledger Independent</a>
+
         </div>
         <!-- <div class="col-md-2 ml-auto text-right">
           <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
