@@ -1,19 +1,25 @@
 export const contact = [
     {
         id: 0,
-        label: 'Address:',
-        data: '36 E Cherry Rd, Nescopeck, PA 18635',
+        label: 'Facility Address: ',
+        data: '621 Berwick Hazleton Hwy, Nescopeck, PA 18635',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 1,
+        label: 'Mailing Address: ',
+        data: '36 E Cherry Rd, Nescopeck, PA 18635',
+        class: 'fas fa-map-marker-alt mx-2 iconColor',
+    },
+    {
+        id: 2,
         label: 'Email:',
         redirect: 'mailto:info@herronhillstorage.com',
         data: 'info@herronhillstorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
-        id: 2,
+        id: 3,
         redirect: 'tel:5703949257',
         label: 'Phone:',
         data: '(570) 394-9257',
