@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { headingLocation1, headingLocation2, headingLocation3,
   headingLocation4 } from '../data/location';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-storage-unit',
@@ -13,10 +14,16 @@ export class StorageUnitComponent implements OnInit {
   tabs: any;
   heading: string;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+    private canonical: CanonicalService
+    ) {
+    this.canonical.create();
+
+   }
 
   ngOnInit() {
     this.isSomePage();
+    
   }
 
   public isSomePage() {

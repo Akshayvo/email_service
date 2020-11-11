@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CanonicalService } from '../../services/canonical.service';
 import { headingReservePageLocation1, headingReservePageLocation2, headingReservePageLocation3, headingReservePageLocation4 } from '../../data/location';
 import { DataSharingService } from '../services/data-sharing.service';
 
@@ -17,7 +18,11 @@ export class ReserveComponent implements OnInit {
 
   constructor(private router: Router,
     private dataSharingService: DataSharingService,
-    ) { }
+    private canonical: CanonicalService
+
+    ) {
+      this.canonical.create();
+     }
 
   ngOnInit() {
     this.isSomePage();

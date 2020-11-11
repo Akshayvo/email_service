@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { directionLocation1, directionLocation2, directionLocation3,
   // directionLocation4,
  } from '../data/location';
+import { CanonicalService } from '../services/canonical.service';
 @Component({
   selector: 'app-directions',
   templateUrl: './directions.component.html',
@@ -13,7 +14,11 @@ export class DirectionsComponent implements OnInit {
   id: number;
   directionPoints: any;
   directionHeading: string;
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+    private canonical: CanonicalService
+    ) { 
+      this.canonical.create();
+    }
 
   ngOnInit() {
     this.isSomePage();

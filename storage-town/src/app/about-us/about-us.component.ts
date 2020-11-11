@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { aboutUsLocation1, aboutUsLocation2, aboutUsHeadingLocation1, aboutUsHeadingLocation2,
   aboutUsImageLocation1, aboutUsImageLocation2, aboutUsLocation3, aboutUsImageLocation3,
   aboutUsHeadingLocation3, aboutUsLocation4, aboutUsHeadingLocation4, aboutUsImageLocation4, } from '../data/location';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-about-us',
@@ -16,7 +17,11 @@ export class AboutUsComponent implements OnInit {
   heading: string;
   image: any;
   alt: string;
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+    private canonical: CanonicalService
+    ) { 
+    this.canonical.create();
+  }
 
   ngOnInit() {
     this.isSomePage();

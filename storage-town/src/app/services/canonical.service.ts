@@ -16,9 +16,9 @@ export class CanonicalService {
    create() {
      const { location: {pathname} } = window;
      let str = `${environment.websiteUrl}${pathname}`;
-     let newStr1 = str.replace('storage-units', 'unit-sizer');
-     let newStr = str.replace('storage-units', 'about');
-     let newStr2 = str.replace('storage-units', 'directions');
+     let newStr1 = str.replace( 'unit-sizer', 'storage-units');
+     let newStr = str.replace('about', 'storage-units');
+     let newStr2 = str.replace('directions', 'storage-units');
 
      console.log('newStr, newStr1, newStr2', newStr, newStr1, newStr2);
      console.log('pathname', pathname);
@@ -26,28 +26,22 @@ export class CanonicalService {
       const link: HTMLLinkElement = this.dom.createElement('link');
       link.setAttribute('rel', 'canonical');
       this.dom.head.appendChild(link);
-      link.setAttribute('href', `${environment.websiteUrl}${pathname}`);
+      // link.setAttribute('href', `${environment.websiteUrl}${pathname}`);
 
-      if (str.includes("storage-units")) {
-        console.log('storage-units  included');
-        
-        const link1: HTMLLinkElement = this.dom.createElement('link');
-        link1.setAttribute('rel', 'canonical');
-        this.dom.head.appendChild(link1);
-        link1.setAttribute('href', `${newStr}`);
-      
-  
-        const link2: HTMLLinkElement = this.dom.createElement('link');
-        link2.setAttribute('rel', 'canonical');
-        this.dom.head.appendChild(link2);
-        link2.setAttribute('href', `${newStr1}`);
-  
-  
-        const link3: HTMLLinkElement = this.dom.createElement('link');
-        link3.setAttribute('rel', 'canonical');
-        this.dom.head.appendChild(link3);
-        link3.setAttribute('href', `${newStr2}`);
-       }
+      switch (true) {
+        case str.includes('unit-sizer'):
+          link.setAttribute('href', `${newStr1}`);
+          break;
+        case str.includes('about'): 
+          link.setAttribute('href', `${newStr}`);
+          break;
+        case str.includes('directions'): 
+          link.setAttribute('href', `${newStr}`);
+          break;
+        default: 
+          link.setAttribute('href', `${environment.websiteUrl}${pathname}`);
+          break;
+        }
       }
    }
 }

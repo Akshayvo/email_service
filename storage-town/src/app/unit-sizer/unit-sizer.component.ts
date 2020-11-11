@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { unitSizerLocation1, unitSizerLocation2,
    unitSizerLocation3, unitSizerLocation4
    } from '../data/location';
+import { CanonicalService } from '../services/canonical.service';
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -14,7 +15,11 @@ export class UnitSizerComponent implements OnInit {
   tabs: any;
   h2tag: string;
   description: string;
-  constructor( private router: Router ) {
+  constructor( private router: Router,
+    private canonical: CanonicalService
+    ) {
+      this.canonical.create();
+
    }
 
   ngOnInit() {
