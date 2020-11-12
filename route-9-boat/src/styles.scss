@@ -12,19 +12,19 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$Catskill-primary: mat-palette($mat-indigo);
-$Catskill-accent: mat-palette($mat-pink, A200, A100, A400);
+$route-9-boat-n-rv-primary: mat-palette($mat-indigo);
+$route-9-boat-n-rv-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$Catskill-warn: mat-palette($mat-red);
+$route-9-boat-n-rv-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$Catskill-theme: mat-light-theme($Catskill-primary, $Catskill-accent, $Catskill-warn);
+$route-9-boat-n-rv-theme: mat-light-theme($route-9-boat-n-rv-primary, $route-9-boat-n-rv-accent, $route-9-boat-n-rv-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($Catskill-theme);
+@include angular-material-theme($route-9-boat-n-rv-theme);
 
 /* You can add global styles to this file, and also import other style files */
 

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Catskill": {
+    "route-9-boat-n-rv": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Catskill:build"
+            "browserTarget": "route-9-boat-n-rv:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Catskill:build:production"
+              "browserTarget": "route-9-boat-n-rv:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Catskill:build"
+            "browserTarget": "route-9-boat-n-rv:build"
           }
         },
         "test": {
@@ -110,7 +110,7 @@
         }
       }
     },
-    "Catskill-e2e": {
+    "route-9-boat-n-rv-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -118,11 +118,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Catskill:serve"
+            "devServerTarget": "route-9-boat-n-rv:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Catskill:serve:production"
+              "devServerTarget": "route-9-boat-n-rv:serve:production"
             }
           }
         },
@@ -138,5 +138,5 @@
       }
     }
   },
-  "defaultProject": "Catskill"
+  "defaultProject": "route-9-boat-n-rv"
 }

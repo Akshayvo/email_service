@@ -25,22 +25,22 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    data: 'Deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  },
+  // {
+  //   data: 'Deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
   {
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
-  {
-    data: `Move In`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
-  },
-  {
-    data: `Climate Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  },
+  // {
+  //   data: `Move In`,
+  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  // },
+  // {
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
 ];
 
 

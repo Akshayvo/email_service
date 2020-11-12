@@ -94,7 +94,7 @@ h1 {
   transform: skew(0deg);
   width: 24%;
   position: absolute;
-  top: 30%;
+  top: 25%;
 
   .btn-outline-primary {
     margin-right: 10px;
@@ -103,7 +103,7 @@ h1 {
 
 @media only screen and (min-width: 1200px) {
   .jumbotorn-skew-text {
-    width: 500px;
+    width: 530px;
   }
 }
 
@@ -115,6 +115,11 @@ h1 {
     h6 {
       font-size: 0.8rem;
     }
+  }
+
+  .jumbotorn-skew-text {
+    width: 550px;
+    top: 26%;
   }
 }
 
@@ -210,7 +215,7 @@ h1 {
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .jumbotorn-skew-text {
-    width: 35%;
+    width: 450px;
 
     a {
       min-width: 160px;
@@ -329,7 +334,7 @@ h1 {
   }
 
   .jumbotorn-skew-text {
-    width: 40%;
+    width: 350px;
 
     a {
       min-width: 140px;
@@ -472,8 +477,8 @@ h1 {
   }
 
   .jumbotorn-skew-text {
-    top: 40%;
-    width: 49%;
+    top: 30%;
+    width: 321px;
 
     a {
       min-width: 140px;
