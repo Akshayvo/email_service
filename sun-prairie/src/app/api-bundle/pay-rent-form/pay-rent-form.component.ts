@@ -244,6 +244,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   autoCardType(number: any) {
    this.cardType = this.getCardType(number.target.value);
    const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.cardType);
+   if (index !== null && index !== undefined) {
    // tslint:disable-next-line: max-line-length
    const cardTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
    this.paytypeid =  cardTypeId;
@@ -257,6 +258,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
      }
    });
   }
+}
 
    getCardType(number: any) {
     // visa
@@ -294,7 +296,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     const indexValue = event.target.value;
     const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === indexValue);
     if (this.lstPayTypes && this.lstPayTypes.length > 0) {
-    this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
+      if (index !== null && index !== undefined) {
+        this.PayTypeIDValue = this.lstPayTypes[index].PayTypeID;
+      }
     this.surchargeService.getIdPaytype(this.PayTypeIDValue);
     this.payRentForm.patchValue({
       objPayment: {
@@ -377,6 +381,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         // tslint:disable-next-line: max-line-length
           this.defaultCardType = ((Tenant.CCNumber) ? this.getCardType(Tenant.CCNumber) : this.lstPayTypes[0].PayTypeDescription);
           const index = this.lstPayTypes.findIndex(x => x.PayTypeDescription === this.defaultCardType);
+          if (index !== null && index !== undefined) {
           // tslint:disable-next-line: max-line-length
           const defaultCardPayTypeId = ((index > -1 ) ? this.lstPayTypes[index].PayTypeID : this.lstPayTypes[0].PayTypeID);
 
@@ -392,6 +397,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               }
             });
           }
+        }
 
           this.payRentForm.patchValue({
             objPayment: {
