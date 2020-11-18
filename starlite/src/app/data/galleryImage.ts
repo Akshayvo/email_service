@@ -41,4 +41,18 @@ export const galleryHome = [
     thumb: `storage-units-and-parking-thumb`,
     alt: `storage units in a row under a blue sky with paved parking space in the foreground`
   },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `starlite-storage-parking-lot`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `starlite-storage-parking-lot-thumb`,
+    alt: `row of parked recreational vehicles, campers, trailers, and boats`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `starlite-storage-parking-lot`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `starlite-storage-parking-lot-thumb`,
+    alt: `several parked RVs, camping trailers, and boats parked in a row`
+  },
 ];
