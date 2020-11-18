@@ -16,13 +16,17 @@ export const featuresList = [
         td2: 'Boat Storage'
     },
     {
-        td1: 'Climate-Controlled Units Available',
+        td1: 'Climate-Controlled Units',
         td2: 'Fully-Fenced Facility'
     },
     {
         td1: 'Paved Parking',
         td2: 'Packing & Moving Supplies Available'
-    }
+    },
+    {
+        td1: 'Camper Storage',
+        td2: 'Trailer Storage'
+    },
 ];
 
 export const aboutUsAlt = `aboutUsAlt`;

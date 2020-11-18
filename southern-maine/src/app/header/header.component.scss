@@ -24,7 +24,6 @@ img {
   display: inline;
 
   .contact-details {
-    color: $white;
     font-size: 0.82em;
     font-weight: 500;
     width: 100%;
@@ -60,8 +59,8 @@ img {
   }
 
   .nav-link-active {
-    color: $primary;
-    border-bottom: 5px solid $primary;
+    color: $white;
+    border-bottom: 5px solid $white;
   }
 
   button {
@@ -83,7 +82,7 @@ img {
 
 .contact-links {
   a {
-    color: white;
+    color: black;
   }
 }
 

@@ -1,18 +1,18 @@
 export const galleryHome = [
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `parking-for-recreational-vehicles`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `parking-for-recreational-vehicles-thumb`,
-    alt: `campers, trailers, and recreational vehicles parked on a paved parking lot`
-  },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `recreational-vehicle-parking`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `recreational-vehicle-parking-thumb`,
-    alt: `a row of recreational vehicles parked on a paved parking lot.`
-  },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `parking-for-recreational-vehicles`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `parking-for-recreational-vehicles-thumb`,
+  //   alt: `campers, trailers, and recreational vehicles parked on a paved parking lot`
+  // },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `recreational-vehicle-parking`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `recreational-vehicle-parking-thumb`,
+  //   alt: `a row of recreational vehicles parked on a paved parking lot.`
+  // },
   {
     // tslint:disable-next-line: max-line-length
     url: `rv-parking`,
@@ -55,11 +55,18 @@ export const galleryHome = [
     thumb: `storage-unit-interior-thumb`,
     alt: `the interior of a self storage unit with metal walls and concrete floor`
   },
-  {
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `vehicle-parking-spaces`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `vehicle-parking-spaces-thumb`,
+  //   alt: `parked campers in a paved parking space`
+  // },
+    {
     // tslint:disable-next-line: max-line-length
-    url: `vehicle-parking-spaces`,
+    url: `interior-of-large-storage-unit`,
     // tslint:disable-next-line:max-line-length
-    thumb: `vehicle-parking-spaces-thumb`,
-    alt: `parked campers in a paved parking space`
+    thumb: `interior-of-large-storage-unit`,
+    alt: `interior of a large clean self storage unit with metal roll up door partially opened and a concrete floor`
   },
 ];
