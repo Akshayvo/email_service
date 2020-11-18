@@ -29,6 +29,11 @@ export const navLinks = [
         type: 'link'
     },
     {
+        label: 'Unit Sizer',
+        path: '/unit-sizer',
+        type: 'link'
+    },
+    {
         label: 'Storage Tips',
         path: '/storage-tips',
         type: 'link'

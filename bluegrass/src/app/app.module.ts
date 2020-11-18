@@ -52,6 +52,7 @@ import { LoginModalComponent } from './login-modal/login-modal.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { VerifyCodeComponent } from './verify-code/verify-code.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 
 @NgModule({
   declarations: [
@@ -88,6 +89,7 @@ import { PayRentComponent } from './pay-rent/pay-rent.component';
     ResetPasswordComponent,
     VerifyCodeComponent,
     PayRentComponent,
+    UnitSizesComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

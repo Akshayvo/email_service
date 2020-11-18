@@ -27,6 +27,7 @@ import { VerifyCodeComponent } from './verify-code/verify-code.component';
 import { VerifictionCodeGuard } from './verificationCode.guard';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { PayRentComponent } from './pay-rent/pay-rent.component';
+import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 // import { CanDeactivateGuard } from './preventRouteChange.guard';
 
 const routes: Routes = [
@@ -96,6 +97,7 @@ const routes: Routes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
+  { path: 'unit-sizer', component: UnitSizesComponent },
   { path: 'pay-rent/filitreau-lane', component: PayRentComponent,
     children: [
       {path: '', redirectTo: 'login', pathMatch: 'full'},

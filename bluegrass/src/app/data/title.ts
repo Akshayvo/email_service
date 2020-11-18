@@ -16,8 +16,8 @@ export const storageTipsTitle = `Storage Tips | Bluegrass Storage`;
 export const storageTipsContent = `Follow these easy self storage tips to make your stay with Bluegrass
 Storage a breeze! Have questions? Call (502) 348-2532, today!`;
 
-export const unitSizerPageTitle = ``;
-export const unitSizerPageContent = ``;
+export const unitSizerPageTitle = ` Unit Sizer | Bluegrass Storage`;
+export const unitSizerPageContent = `Not sure what size unit you need? Check out our unit sizer and see what will fit in each style of unit!`;
 
 export const contactPageTitle = `Contact Us | Bluegrass Storage`;
 export const contactPageContent = `Do you have a question about our services, or would you like help with

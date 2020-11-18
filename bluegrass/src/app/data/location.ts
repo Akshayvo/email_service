@@ -106,6 +106,7 @@ export const unitSizerLocation1 = [
 
 export const unitSizerLocation2 = [
     {
+        id: 0,
         size: '5\' x 10\' Storage Unit Graphic',
         alt: '5\' x 10\' Storage Unit',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
@@ -123,6 +124,7 @@ export const unitSizerLocation2 = [
     },
 
     {
+        id: 1,
         size: '10\' x 10\'  Storage Unit Graphic',
         alt: '10\' x 10\' Storage Unit',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
@@ -139,6 +141,7 @@ export const unitSizerLocation2 = [
         ],
     },
     {
+        id: 2,
         size: '10\' x 15\' Storage Unit Graphic',
         alt: '10\' x 15\' Storage Unit',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
@@ -155,6 +158,7 @@ export const unitSizerLocation2 = [
         ],
     },
     {
+        id: 3,
         size: '10\' x 20\' Storage Unit Graphic',
         alt: '10\' x 20\' Storage Unit',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
@@ -169,6 +173,7 @@ export const unitSizerLocation2 = [
         ],
     },
     {
+        id: 4,
         size: '10\' x 25\' Storage Unit Graphic',
         alt: '10\' x 25\' Storage Unit',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
