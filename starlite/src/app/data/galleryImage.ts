@@ -43,16 +43,16 @@ export const galleryHome = [
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `starlite-storage-parking-lot`,
+    url: `starlite-storage-parking`,
     // tslint:disable-next-line:max-line-length
-    thumb: `starlite-storage-parking-lot-thumb`,
+    thumb: `starlite-storage-parking`,
     alt: `row of parked recreational vehicles, campers, trailers, and boats`
   },
   {
     // tslint:disable-next-line: max-line-length
     url: `starlite-storage-parking-lot`,
     // tslint:disable-next-line:max-line-length
-    thumb: `starlite-storage-parking-lot-thumb`,
+    thumb: `starlite-storage-parking-lot`,
     alt: `several parked RVs, camping trailers, and boats parked in a row`
   },
 ];
