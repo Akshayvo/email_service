@@ -50,3 +50,55 @@ export const loginDetail = [
       }
   }
 ];
+
+
+export const backyardLoginDetail = [
+  {
+      userName: `Tenant's First Initial + Last Name`,
+      password: `Tenant's Unit Number`,
+      example: {
+          code: 'Unit Number Is 123(a minimum of 3 digits)',
+          userName: 'jsmith',
+          password: '123'
+      },
+      example1: {
+        code: 'Unit Number Is 9',
+        userName: 'jsmith',
+        password: '009'
+    }
+  }
+];
+
+export const labelleLoginDetail = [
+  {
+      userName: `Tenant's First Initial + Last Name`,
+      password: `Tenant's Unit Number`,
+      example: {
+          code: 'Unit Number Is 123(a minimum of 3 digits)',
+          userName: 'jsmith',
+          password: '123'
+      },
+      example1: {
+        code: 'Unit Number Is 9',
+        userName: 'jsmith',
+        password: '009'
+    }
+  }
+];
+
+export const hernandoLoginDetail = [
+  {
+      userName: `Tenant's First Initial + Last Name`,
+      password: `Tenant's Unit Number`,
+      example: {
+          code: 'Unit Number Is 123(a minimum of 3 digits)',
+          userName: 'jsmith',
+          password: '123'
+      },
+      example1: {
+        code: 'Unit Number Is 9',
+        userName: 'jsmith',
+        password: '009'
+    }
+  }
+];

@@ -6,7 +6,7 @@ import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
 import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5 } from '../../data/contact';
-import { loginDetail } from '../../data/pay-rent';
+import { backyardLoginDetail, hernandoLoginDetail, labelleLoginDetail, loginDetail } from '../../data/pay-rent';
 
 @Injectable()
 
@@ -60,7 +60,9 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.fetchLoginDetail();
+    // this.fetchLoginDetail();
+    this.fetchContactDetail();
+
     this.loginForm = this.formBuilder.group({
       strUserName: ['', Validators.required],
       strPassword: ['', Validators.required],
@@ -84,7 +86,6 @@ export class LoginComponent implements OnInit, OnDestroy {
           }
        }
     }
-    this.fetchContactDetail();
 
   }
 
@@ -94,39 +95,44 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.open = !this.open;
   }
 
-  public fetchLoginDetail() {
-    this.loginDetail = loginDetail;
-  }
+  // public fetchLoginDetail() {
+  //   this.loginDetail = loginDetail;
+  // }
 
   public fetchContactDetail() {
     if (this.router.url.includes('affordable-secure-storage-floral-city')) {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City';
       this.contact = contactsLocation1;
+      this.loginDetail = loginDetail;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
     } else if (this.router.url.includes('affordable-secure-storage-west-hernando')) {
         this.id = 2;
         this.name = 'Affordable Secure Storage - West Hernando';
         this.contact = contactsLocation2;
+        this.loginDetail = loginDetail;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
         localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
       } else if (this.router.url.includes('affordable-secure-storage-labelle')) {
         this.id = 3;
         this.name = 'Affordable Secure Storage - Labelle';
         this.contact = contactsLocation3;
+        this.loginDetail = labelleLoginDetail;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
         localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
       } else if (this.router.url.includes('affordable-secure-storage-backyard')) {
         this.id = 4;
         this.name = 'Affordable Secure Storage - Backyard';
         this.contact = contactsLocation4;
+        this.loginDetail = backyardLoginDetail;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
         localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
       } else if (this.router.url.includes('affordable-secure-storage-hernando')) {
         this.id = 5;
         this.name = 'Affordable Secure Storage - Hernando';
         this.contact = contactsLocation5;
+        this.loginDetail = hernandoLoginDetail;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
         localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
       }
