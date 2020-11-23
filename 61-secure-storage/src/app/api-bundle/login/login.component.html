@@ -66,10 +66,14 @@
         <div *ngFor="let loginDetail of loginDetail">
           <p><b>Username</b>&nbsp;{{loginDetail.userName}}<br>
           <b>Password:</b>&nbsp;{{loginDetail.password}}</p>
-            <p><b>Example:</b></p>
+            <p><b>Example 1:</b></p>
             <p>{{loginDetail.example.code}}</p>
             <p>John's Username: {{loginDetail.example.userName}}<br>
               John's Password: {{loginDetail.example.password}}</p>
+              <p><b>Example 2:</b></p> 
+              <p>{{loginDetail.example1.code}}</p>
+            <p>John's Username: {{loginDetail.example1.userName}}<br>
+              John's Password: {{loginDetail.example1.password}}</p>
             <p><strong>Have questions about your account?</strong><br>
             <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
               <a  *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content" [href]="contact?.redirect">
