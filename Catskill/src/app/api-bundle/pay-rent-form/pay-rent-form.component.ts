@@ -37,7 +37,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   result: any;
   month: any;
   PaymentAmount: number;
-  CCApprovalCode: string;
   year = [];
   textBox: any;
   tenant: any;
@@ -553,7 +552,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         if (!!paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
           this.dataSharingService.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
         }
-        this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
+        this.dataSharingService.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         if ( paymentDataResponse.intErrorCode === 1 ) {
           this.makePaymentForUnit = false;
           if (this.navigateToReserve) {
@@ -621,8 +620,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
   this.makeAReservationSubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
     .subscribe(strConfirmationResponse => {
+      if (strConfirmationResponse.intErrorCode === 1) {
+
       // tslint:disable-next-line: max-line-length
-      this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;        this.showConfirmation = false;
+      this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;       
+      this.showConfirmation = false;
       this.showConfirmation = false;
       this.makePaymentForUnit = false;
       this.submitted = false;
@@ -640,6 +642,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       }
       this.router.navigate([`view-rates/thank-you`]);
       this.reservationInProgress = false;
+    }
     }, (err: any) => {
       this.makePaymentForUnit = false;
 
@@ -668,6 +671,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.MoveIn.dteMoveIn = this.convertDate(new Date());
     this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
       .subscribe(strConfirmationResponse => {
+        if (strConfirmationResponse.intErrorCode === 1  ) {
         this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
         this.makePaymentForUnit = false;
         this.submitted = false;
@@ -682,6 +686,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         }
         this.reservationInProgress = false;
         this.router.navigate([`view-rates/thank-you`]);
+      }
       }, (err: any) => {
         this.makePaymentForUnit = false;
 

@@ -221,6 +221,7 @@ getTenantUnitData() {
       .subscribe(strConfirmationResponse => {
         if (strConfirmationResponse.intErrorCode === 1) {
           this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
+          this.strConfirmation = strConfirmationResponse.strConfirmation;
           this.showConfirmation = false;
           this.router.navigate([`pay-rent/thank-you`]);
           this.reservationInProgress = false;
@@ -252,9 +253,13 @@ getTenantUnitData() {
       this.MoveIn['blnGenerateDocuments'] = true;
       this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
         .subscribe(strConfirmationResponse => {
+          if (strConfirmationResponse.intErrorCode === 1) {
+
           this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
+          this.strAccessCode = strConfirmationResponse.strAccessCode;
           this.router.navigate([`pay-rent/thank-you`]);
           this.reservationInProgress = false;
+          }
         }, (err: any) => {
           if (err.status === 403) {
             this.showConfirmation = false;
