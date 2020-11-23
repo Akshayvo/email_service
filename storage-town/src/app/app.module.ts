@@ -25,7 +25,7 @@ import { DirectionsComponent } from './directions/directions.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { SelectLocationComponent } from './select-location/select-location.component';
-import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot } from '@angular/router';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PayRentFloridaComponent } from './pay-rent-florida/pay-rent-florida.component';
@@ -64,6 +64,7 @@ import { ScriptHackComponent } from './script-hack/script-hack.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ThankYouGuard } from './thank-you.guard';
 
 @NgModule({
   declarations: [
@@ -139,6 +140,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     AuthGuard,
     CanDeactivateGuard,
     Title,
+    ThankYouGuard,
     {
       provide: ErrorHandler,
       useClass: ErrorHandlerService

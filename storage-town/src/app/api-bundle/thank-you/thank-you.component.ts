@@ -78,15 +78,15 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.eventName = 'reservation';
     window['dataLayer'] = window['dataLayer'] || {};
     window['dataLayer'] = window['dataLayer'] || [];
-        window['dataLayer'].push({
-          'event': this.eventName,
-          'location' : this.locationName,
-          'confirmationNumber' : this.strConfirmation,
-          'unitType':  this.description,
-          'price': this.monthlyRate && this.monthlyRate || '',
-          'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
-          'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
-        });
+    window['dataLayer'].push({
+      'event': this.eventName,
+      'location' : this.locationName,
+      'confirmationNumber' : this.strConfirmation,
+      'unitType':  this.description,
+      'price': this.monthlyRate && this.monthlyRate || '',
+      'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+      'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+    });
   }
 
   public navigate(location: any) {

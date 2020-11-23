@@ -41,9 +41,11 @@ export class LocationComponent implements OnInit {
     private router: Router,
     private titleService: Title,
     private dataSharingService: DataSharingService,
-    private canonical: CanonicalService,
+    // private canonical: CanonicalService,
     private activatedRoute: ActivatedRoute,
     ) {
+      // this.canonical.create();
+
       this.fetchOg();
     this.fetchTwitter();
     this.og.forEach(element => {
@@ -63,14 +65,13 @@ export class LocationComponent implements OnInit {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
       if (this.router.url.includes('/location/chester-andrews-lane')) {
-        this.canonical.create();
             this.meta.addTag({
               name: 'description',
               content: `Our Florida/Warwick location has a variety of unit sizes and all storage units
               are individually alarmed for your safety!`
             });
             this.titleService.setTitle('Storage Units in Chester, NY | StorageTown Rental Spaces');
-            this.locationName = `StorageTown Rental Spaces - Chester - Brookside Ave`;
+            this.locationName = `Storage Town Rental Space - Chester - Andrews Lane`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location2Script;
@@ -89,14 +90,13 @@ export class LocationComponent implements OnInit {
               })
             });
     } else if (this.router.url.includes('/location/chester-brookside-ave')) {
-      this.canonical.create();
            this.meta.addTag({
              name: 'description',
              content: `Our brookside location offers a variety of well-lit, fully-fenced self
              storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!`
            });
            this.titleService.setTitle('Self Storage Units in brookside | StorageTown Rental Spaces');
-           this.locationName = `StorageTown Rental Spaces - brookside - Andrews Lane `;
+           this.locationName = `Storage Town Rental Space - Chester - Brookside Ave`;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location1Script;
@@ -115,7 +115,6 @@ export class LocationComponent implements OnInit {
             })
           });
       } else if (this.router.url.includes('/location/montgomery-walden')) {
-        this.canonical.create();
         this.meta.addTag({
           name: 'description',
           content: `Our Montgomery location offers a wide variety of affordable self storage units in a well-lit,
@@ -141,7 +140,6 @@ export class LocationComponent implements OnInit {
           })
         });
    } else if (this.router.url.includes('/location/middletown-wallKill')) {
-    this.canonical.create();
     this.meta.addTag({
       name: 'description',
       content: `Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable,

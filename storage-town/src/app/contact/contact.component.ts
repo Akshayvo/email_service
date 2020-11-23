@@ -86,20 +86,8 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
-    const today = new Date();
-    this.eventName = 'ContactFormsubmission';
-    window['dataLayer'] = window['dataLayer'] || {};
     window.scrollTo(0, 0);
     this.receiveMessage();
-    window['dataLayer'] = window['dataLayer'] || {};
-    window['dataLayer'] = window['dataLayer'] || [];
-    window['dataLayer'].push({
-      'event': this.eventName,
-      'location' : this.heading,
-      'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
-      'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
-    });
-
     this.fetchTableHeader();
     this.fetchTableData();
 
@@ -170,16 +158,7 @@ public fetchTwitter() {
 
 onSubmit() {
   this.submitted = true;
-  const today = new Date();
-  this.eventName = 'ContactFormsubmission';
-  window['dataLayer'] = window['dataLayer'] || {};
-  window['dataLayer'] = window['dataLayer'] || [];
-  window['dataLayer'].push({
-    'event': this.eventName,
-    'location' : this.heading,
-    'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
-    'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
-  });
+
 
  // stop here if form is invalid
  if (this.contactForm.invalid) {
@@ -190,7 +169,7 @@ onSubmit() {
     this.contactForm.value.subject = 'Website Form Submission';
   }
 
-  this.receiveremail = this.contactDetails[1].data;
+  this.receiveremail = this.contactDetails[1].email;
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
 

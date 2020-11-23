@@ -31,9 +31,7 @@ export class TabsComponent implements OnInit {
       this.tabData = this.tabs;
      
       this.sub = this.route.queryParams.subscribe(params => {
-        
         this.name = params['name'],
-        console.log('this.name', this.name);
         this.currentActiveTab = params['currentTab'];
         this.selectedTab = this.currentActiveTab;
       });

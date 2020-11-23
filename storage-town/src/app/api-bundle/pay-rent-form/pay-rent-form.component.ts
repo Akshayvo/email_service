@@ -590,6 +590,7 @@ public navigateToPrevious() {
                 this.router.navigate([`pay-rent/${this.loginUrl}/thank-you`]);
               }
             }
+            
           }
         } else {
           this.makePaymentForUnit = false;

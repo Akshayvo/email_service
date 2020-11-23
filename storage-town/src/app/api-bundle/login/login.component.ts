@@ -130,14 +130,14 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';
       this.contact = contactsLocation1;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
     } else  if (this.router.url.includes('chester-brookside-ave')) {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';
       this.contact = contactsLocation2;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
     } else  if (this.router.url.includes('montgomery-walden')) {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';

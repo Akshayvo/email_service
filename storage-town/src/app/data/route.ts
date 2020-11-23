@@ -38,6 +38,7 @@ import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 import { environment } from '../../environments/environment';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
+import { ThankYouGuard } from '../thank-you.guard';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -47,12 +48,12 @@ const withoutTab = [
         {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
         { path: 'verifyCode', component: VerifyCodeComponent },
         { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
-        { path: 'thank-you', component: ThankYouComponent }
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
         // canActivate: [VerifictionCodeGuard]
 ];
 
 const withTab = [
-  { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
+  { path: '', redirectTo: ' ', pathMatch: 'full'},
       { path: 'rent-sub', component: RentSubComponent,
         children: [
           {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -62,7 +63,7 @@ const withTab = [
           {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
           { path: 'verifyCode', component: VerifyCodeComponent },
           { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
-          { path: 'thank-you', component: ThankYouComponent }
+          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
           // canActivate: [VerifictionCodeGuard]
         ]
       },
@@ -100,8 +101,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent }
-
+            { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
           ]
         },
         { path: 'moveIn', component: ReserveComponent,
@@ -112,7 +112,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent }
+            { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
 
           ]
         },
@@ -136,7 +136,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent }
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
           ]
         },
         { path: 'moveIn', component: ReserveComponent,
@@ -147,7 +147,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent }
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
 
           ]
         },
@@ -171,7 +171,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent }
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
 
           ]
         },
@@ -183,7 +183,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent }
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
           ]
         },
         // { path: 'photos', component: PhotosComponent },
@@ -206,7 +206,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent }
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
           ]
         },
         { path: 'moveIn', component: ReserveComponent,
@@ -218,7 +218,7 @@ export const apiRoutes = [
             { path: 'confirmation', component: ConfirmationDataComponent },
             { path: 'payReservationCharges', component: PayRentFormComponent },
             { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent }
+            { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
 
           ]
         },
