@@ -24,7 +24,7 @@ export const featuresList = [
     }
 ];
 
-export const aboutUsAlt = `an open oversized metal storage unit with a boat on a trailer inside`;
+export const aboutUsAlt = `several vehicle storage units in a single story metal vehicle storage building`;
 
 export const aboutUsHeading = `Affordable Vehicle Storage in Clifton Park`;
 

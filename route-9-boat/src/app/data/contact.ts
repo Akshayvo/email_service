@@ -1,19 +1,25 @@
 export const contact = [
-    // {
-    //     id: 0,
-    //     label: 'Address:',
-    //     data: '',
-    //     class: 'fas fa-map-marker-alt mx-2 iconColor',
-    // },
     {
         id: 0,
+        label: 'Office Address:',
+        data: '1641 U.S. 9, Clifton Park, NY 12065',
+        class: 'fas fa-map-marker-alt mx-2 iconColor',
+    },
+    {
+        id: 1,
+        label: 'Facility Address:',
+        data: '1751 U.S. 9 Clifton Park, NY 12065',
+        class: 'fas fa-map-marker-alt mx-2 iconColor',
+    },
+    {
+        id: 2,
         label: 'Email:',
         redirect: 'mailto:info@route9boatnrvstorage.com',
         data: 'info@route9boatnrvstorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
-        id: 1,
+        id: 3,
         redirect: 'tel:5183360080',
         label: 'Phone:',
         data: '(518) 336-0080',

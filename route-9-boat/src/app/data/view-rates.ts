@@ -14,7 +14,7 @@ export const dataViewRates = [
     }
 ];
 
-export const viewRatesAltText = `a single story vehicle storage unit with a boat inside`;
+export const viewRatesAltText = `green metal vehicle storage unit doors`;
 
 export const th = [
   {
