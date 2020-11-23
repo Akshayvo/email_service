@@ -40,7 +40,7 @@ const routes: Routes = [
       children: [
         { path: '', component: ViewRatesPageComponent },
         { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
+        // { path: 'move-in', component: ReserveUnitFormComponent },
         // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
         { path: 'confirmation', component: ConfirmationDataComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
@@ -62,7 +62,7 @@ const routes: Routes = [
       children: [
         { path: '', component: ViewRatesPageComponent },
         { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
+        // { path: 'move-in', component: ReserveUnitFormComponent },
         // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
         { path: 'confirmation', component: ConfirmationDataComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
