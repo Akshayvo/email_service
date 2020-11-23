@@ -16,8 +16,7 @@ import { DataSharingService } from '../services/data-sharing.service';
 import { MakeAReservationService } from '../services/make-a-reservation.service';
 import { MoveInService } from '../services/moveIn.service';
 import { AddTenantService } from '../services/add-tenant.service';
-
-
+import { objSIMSetting } from '../../data/configuration';
 
 @Component({
   selector: 'app-pay-rent-form',
@@ -105,6 +104,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   myNavLinks: any;
   loginUrl: any;
   cardType: string;
+  blnAllowPartialPayments: boolean;
+
 
 
   private OptionOutOfAutoPaySubscribe$: Subscription;
@@ -215,6 +216,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.blnAllowPartialPayments = objSIMSetting.objPaymentSetting.blnAllowPartialPayments;
+
     this.dataSharingService.initMyNavLinks('payRentForm', window.location.pathname);
     this.myNavLinks = this.dataSharingService.getMyNavLinks('payRentForm');
     if (window.localStorage) {
@@ -230,7 +233,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         if (this.dataSharingService.addingTenant === true) {
           this.getPayMethods();
         } else {
-          this.router.navigate(['/pay-rent/login']);
+          this.router.navigate(['/pay-rent']);
         }
       } else {
         this.getPayMethods();
