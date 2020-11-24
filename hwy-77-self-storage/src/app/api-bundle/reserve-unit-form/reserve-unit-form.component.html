@@ -8,6 +8,8 @@
 
         <div class="loader" *ngIf="gettingTenantData"></div>
 
+        <div class="pb-4"  *ngIf="navigateToMoveIn">An electronic lease will be emailed to you after completing this form and rendering payment. You must complete the signature on the lease to complete the rental process. </div>
+
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div  class="row justify-content">
              <div formGroupName="objTenant" class="col-lg-7 ">
