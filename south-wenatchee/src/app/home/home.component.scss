@@ -94,7 +94,7 @@ h1 {
   transform: skew(0deg);
   width: 24%;
   position: absolute;
-  top: 30%;
+  top: 26%;
 
   .btn-outline-primary {
     margin-right: 10px;
@@ -210,7 +210,7 @@ h1 {
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .jumbotorn-skew-text {
-    width: 35%;
+    width: 450px;
 
     a {
       min-width: 160px;
@@ -472,7 +472,7 @@ h1 {
   }
 
   .jumbotorn-skew-text {
-    top: 40%;
+    top: 30%;
     width: 49%;
 
     a {

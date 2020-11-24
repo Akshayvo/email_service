@@ -16,7 +16,7 @@ export const payRentPageContent = `Simply follow the on-page instructions, or ca
 professionals to learn how to access your account, today!`;
 
 
-export const storageTipsTitle = `Storage Tips  | Route 9 Boat N RV Storage`;
+export const storageTipsTitle = `Storage Tips  | South Wenatchee Self Storage`;
 export const storageTipsContent = `Take a moment to review our storage tips page and make your self storage experience a breeze!`;
 
 
@@ -24,6 +24,6 @@ export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
 
 
-export const contactPageTitle = `Contact Us  | Route 9 Boat N RV Storage`;
+export const contactPageTitle = `Contact Us  | South Wenatchee Self Storage`;
 export const contactPageContent = `Use the contact information or the contact form on this page to speak to one of
 our friendly self storage managers!`;
