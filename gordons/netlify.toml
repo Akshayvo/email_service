@@ -27,6 +27,54 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "https://www.gordonsministorage.com/tips/"
+  to = "https://www.gordonsministorage.com/storage-tips"
+  status = 301
+[[redirects]]
+  from = "https://www.gordonsministorage.com/storage-units/"
+  to = "https://www.gordonsministorage.com/view-rates"
+  status = 301
+[[redirects]]
+  from = "https://www.gordonsministorage.com/contact/"
+  to = "https://www.gordonsministorage.com/contact-us"
+  status = 301
+[[redirects]]
+  from = "https://www.gordonsministorage.com/rules/"
+  to = "https://www.gordonsministorage.com"
+  status = 301
+[[redirects]]
+  from = "https://www.gordonsministorage.com/reservations/"
+  to = "https://www.gordonsministorage.com/view-rates"
+  status = 301
+[[redirects]]
+  from = "https://www.gordonsministorage.com/packing-materials/"
+  to = "https://www.gordonsministorage.com"
+  status = 301
+[[redirects]]
+  from = "https://www.gordonsministorage.com/payments/"
+  to = "https://www.gordonsministorage.com/pay-rent"
+  status = 301
+[[redirects]]
+  from = "https://www.gordonsministorage.com/payment-received/"
+  to = "https://www.gordonsministorage.com/pay-rent"
+  status = 301
+[[redirects]]
+  from = "https://www.gordonsministorage.com/payment-made-successfully/"
+  to = "https://www.gordonsministorage.com/pay-rent"
+  status = 301
+[[redirects]]
+  from = "https://www.gordonsministorage.com/business-special/"
+  to = "https://www.gordonsministorage.com"
+  status = 301
+[[redirects]]
+  from = "https://www.gordonsministorage.com/aerial-view-of-gordons-mini-storage/"
+  to = "https://www.gordonsministorage.com"
+  status = 301
+[[redirects]]
+  from = "https://www.gordonsministorage.com/hello-world/"
+  to = "https://www.gordonsministorage.com"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
