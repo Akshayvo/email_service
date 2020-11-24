@@ -556,6 +556,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
         }
         this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
+        console.log(this.CCApprovalCode);
         if ( paymentDataResponse.intErrorCode === 1 ) {
           this.makePaymentForUnit = false;
           if (this.navigateToReserve) {

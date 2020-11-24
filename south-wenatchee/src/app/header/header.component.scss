@@ -3,7 +3,9 @@
 
 a {
   cursor: pointer;
+  color: white !important;
 }
+
 
 img {
   width: 160px;
@@ -11,7 +13,7 @@ img {
 }
 
 .iconColor {
-  color: $primary;
+  color: $white;
 }
 
 .contact-header {

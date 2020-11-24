@@ -1,30 +1,29 @@
-export const  homePageTitle = `Affordable Storage Units Near Catskill, NY, 12414 | Catskill Self Storage`;
-export const homePageContent = `Catskill Self Storage has been proudly serving Catskill, Cairo, Leeds, and surrounding communities with
-affordable storage units since 2004!`;
+export const  homePageTitle = `Affordable Self Storage Units in Wenatchee `;
+export const homePageContent = `South Wenatchee Self Storage serves Wenatchee and the surrounding communities with a
+variety of well-maintained and affordable self storage units`;
 
 
-export const viewRatesPageTitle = `Affordable Self Storage Near Catskill, NY, 12414 | Catskill Self Storage`;
-export const viewRatesPageContent = `Our units range from closet sized 5'x5' units to 10'x20' multi-bedroom home sized units.
-We strive to provide the highest level of service at the best prices!`;
+export const viewRatesPageTitle = `View Rates  | South Wenatchee Self Storage`;
+export const viewRatesPageContent = `Review our current rates and availability, then reserve your unit, or rent now
+in minutes with our easy online tenant portal!`;
 
 
-export const reservePageTitle = `Reserve A Storage Unit Near Catskill, NY | 12414 - Catskill Self Storage`;
-export const reservePageContent = `Current description works fine.`;
+export const reservePageTitle = ``;
+export const reservePageContent = ``;
 
-export const payRentPageTitle = `Pay Your Rent Online | Catskill Self Storage, Catskill, NY, 12414 `;
-export const payRentPageContent = `We make it easy for you to pay your rent and check your balance online, 24/7.
-Simply login with the credentials supplied by our office to gain access!`;
-
-
-export const storageTipsTitle = `Self Storage Tips | Catskill Self Storage, Catskill, NY, 12414`;
-export const storageTipsContent = `We know moving can be stressful, let our helpful hints and tips make your experience that much easier.
-Use this tips to save yourself time and frustration!`;
+export const payRentPageTitle = `Pay Rent  | South Wenatchee Self Storage`;
+export const payRentPageContent = `Simply follow the on-page instructions, or call one of our friendly management
+professionals to learn how to access your account, today!`;
 
 
-export const unitSizerPageTitle = `Unit Sizer | Catskill Self Storage, Catskill, NY, 12414`;
+export const storageTipsTitle = `Storage Tips  | Route 9 Boat N RV Storage`;
+export const storageTipsContent = `Take a moment to review our storage tips page and make your self storage experience a breeze!`;
+
+
+export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
 
 
-export const contactPageTitle = `Contact Catskill Self Storage | Catskill Self Storage, Catskill, NY, 12414`;
-export const contactPageContent = `Our friendly and knowledgeable staff are ready and willing to answer all of your self storage
-and U-Haul truck rental questions! Simply call or drop us a line!`;
+export const contactPageTitle = `Contact Us  | Route 9 Boat N RV Storage`;
+export const contactPageContent = `Use the contact information or the contact form on this page to speak to one of
+our friendly self storage managers!`;
