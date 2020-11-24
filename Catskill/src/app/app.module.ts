@@ -49,6 +49,7 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ScriptHackComponent } from './script-hack/script-hack.component';
+import { ThankYouGuard } from './thank-you.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -101,6 +102,7 @@ import { ScriptHackComponent } from './script-hack/script-hack.component';
     VerifictionCodeGuard,
     Title,
     CanDeactivateGuard,
+    ThankYouGuard,
     {
       provide: ErrorHandler,
       useClass: ErrorHandlerService

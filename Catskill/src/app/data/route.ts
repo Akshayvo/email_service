@@ -21,6 +21,7 @@ import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.compo
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
+import { ThankYouGuard } from '../thank-you.guard';
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
@@ -39,7 +40,7 @@ import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
         { path: 'confirmation', component: ConfirmationDataComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
-        { path: 'thank-you', component: ThankYouComponent }
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
       ]
      },
     {
@@ -53,7 +54,7 @@ import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
         { path: 'verifyCode', component: VerifyCodeComponent },
         { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
         // canActivate: [VerifictionCodeGuard]
-        { path: 'thank-you', component: ThankYouComponent }
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
       ]
     },
     { path: 'forgot-password', component: ForgotPasswordComponent },

@@ -28,7 +28,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   eventName: string;
   paymentNavigationUrl: string;
   locationName: string;
-
+  CCApprovalCode: string;
   MoveIn = {
     dteMoveIn: '',
     intUnitTypeID: 0,
@@ -62,6 +62,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
     this.PaymentAmount = this.dataSharingService.PaymentAmount;
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
+    this.CCApprovalCode = this.dataSharingService.CCApprovalCode;
 
 
     if (localStorage.getItem('strTenantToken')) {

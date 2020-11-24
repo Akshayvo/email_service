@@ -5,7 +5,7 @@
   <div *ngIf="PaymentAmount > 0"  class="go-to-home py-4">
     <div *ngIf="!navigateToMoveIn && !navigateToReserve">
         <h1>Thank You </h1>
-        Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .
+        Your payment of <strong>${{PaymentAmount}}</strong> was successful. <div *ngIf="CCApprovalCode"> Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .</div>
     </div>
     <div *ngIf="navigateToReserve && strConfirmation">
         <h1> You've successfully reserved Your Unit!</h1>
@@ -15,11 +15,11 @@
             We look forward to meeting you!
           </p>
         
-        Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> . Your reservation is confirmed.
+      <div *ngIf="CCApprovalCode && PaymentAmount">  Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong></div>
     </div>
     <div *ngIf="navigateToMoveIn">
         <h1>Thank You </h1>
-        Your payment of <strong>${{PaymentAmount}}</strong> was successful. Your confirmation number is: <strong>{{CCApprovalCode}}</strong> . Please check your email to sign your digital lease agreement. Your move-in is not complete without a signed lease agreement.
+        Your payment of <strong>${{PaymentAmount}}</strong> was successful. <div *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'">  Your confirmation number is: <strong>{{CCApprovalCode}}</strong> . </div>Please check your email to sign your digital lease agreement. Your move-in is not complete without a signed lease agreement.
     </div>
   </div>
 
