@@ -12,6 +12,7 @@ export const environment = {
   appId: 'Affordable Storage of Kingwood - Production',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  APIKey: `dzJ0OVczSjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
+  APIKey: `dzJ0OVczSjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Kingwood 29363 OLD CID
+  // APIKey: `dzJ0OVczSjcqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,  // new kingwood CID 29375 
   websiteUrl: ''
 };

@@ -1,6 +1,6 @@
 {
   "name": "kingwood",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxyconfig.json",
@@ -71,7 +71,7 @@
     "ts-loader": "^4.2.0",
     "ts-node": "~7.0.0",
     "tslint": "^5.14.0",
-    "typescript": "^3.1.6",
+    "typescript": "^3.2.4",
     "typescript-tslint-plugin": "^0.5.5",
     "webpack-cli": "^3.3.0"
   }
