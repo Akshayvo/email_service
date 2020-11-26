@@ -62,7 +62,7 @@ import { PaymentComponent } from './api-bundle/payment/payment.component';
 import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ScriptHackComponent } from './script-hack/script-hack.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import { NgxJsonLdModule } from '@ngx-lite/json-ld';
+// import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ThankYouGuard } from './thank-you.guard';
 
@@ -132,7 +132,7 @@ import { ThankYouGuard } from './thank-you.guard';
     HttpClientModule,
     MaterialModule,
     BrowserAnimationsModule,
-    NgxJsonLdModule
+    // NgxJsonLdModule
     ],
   providers: [
     DatePipe,

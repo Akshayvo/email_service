@@ -156,4 +156,17 @@ table {
   .margin-bottom {
     margin-bottom: 10px;
   }
+  .btn-primary {
+    width: 200px !important;
+  }
+  .mobile-buttons {
+    text-align: center !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
 }

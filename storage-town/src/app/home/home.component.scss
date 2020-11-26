@@ -264,6 +264,10 @@
     bottom: -10px;
   }
 
+  .rent-paragraph {
+    position: relative !important;
+  }
+
   .carousel-caption {
     bottom: 40px;
 
@@ -273,7 +277,7 @@
   }
 
   .jumbotron-home {
-    height: 100vh;
+    height: 87vh;
 
     .for-mobile-view {
       display: block;
@@ -285,19 +289,19 @@
   }
 
   .jumbotron-top {
-    height: 100vh;
+    height: 87vh;
   }
 
   .jumbotron-top1 {
-    height: 100vh;
+    height: 87vh;
   }
 
   .jumbotron-top2 {
-    height: 100vh;
+    height: 87vh;
   }
 
   .jumbotron-top3 {
-    height: 100vh;
+    height: 87vh;
   }
 
   .content-align {
@@ -344,5 +348,39 @@
   .contact-hours {
     border-left: none;
     padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .jumbotron-home {
+    height: 91vh;
+
+    .for-mobile-view {
+      display: block;
+    }
+
+    .for-desktop-view {
+      display: none;
+    }
+  }
+
+  .jumbotron-top {
+    height: 91vh;
+  }
+
+  .jumbotron-top1 {
+    height: 91vh;
+  }
+
+  .jumbotron-top2 {
+    height: 91vh;
+  }
+
+  .jumbotron-top3 {
+    height: 91vh;
+  }
+
+  .rent-paragraph {
+    font-size: 1.5rem !important;
   }
 }
