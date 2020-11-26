@@ -18,12 +18,12 @@ export const tableData = [
     url: 'chester-brookside-ave'
   },
   {
-    facility: 'Montgomery/Walden',
+    facility: 'Montgomery / Walden',
     address: '130 Neelytown Rd, Montgomery, NY 12549',
     url: 'montgomery-walden'
   },
   {
-    facility: 'Middletown/WallKill',
+    facility: 'Middletown / WallKill',
     address: '2070 Goshen Turnpike, Middletown, NY 10941',
     url: 'middletown-wallKill'
   },

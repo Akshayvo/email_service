@@ -44,7 +44,7 @@
           </div>
           <div class="col-lg-4 pt-3">
             <h2>StorageTown Rental Spaces - Chester - Andrews Lane</h2>
-            <div *ngFor="let contact of contactsAndrews" class="contact-label">
+            <div *ngFor="let contact of contactsAndrews" class="contact-label pt-2">
               <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
             <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
               <a [href]="contact?.redirect" target="_blank">&nbsp;
