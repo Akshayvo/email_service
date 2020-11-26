@@ -1,5 +1,5 @@
  <div class="row">
-     <div class="col-md-8">
+     <div class="col-lg-8 p-4">
     <div>
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="form-group">
@@ -58,7 +58,7 @@
         </div> -->
     </div>
     </div>
-    <div class="col-md-4 rent-example" >
+    <div class="col-lg-4 rent-example p-4" >
         <h3>How to Login</h3>
         <div *ngFor="let loginDetail of loginDetail">
           <p><b>Username: </b>&nbsp;{{loginDetail.userName}}<br>

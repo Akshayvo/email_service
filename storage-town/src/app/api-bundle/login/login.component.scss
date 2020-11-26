@@ -45,3 +45,9 @@
   display: flex;
   align-items: end;
 }
+
+@media only screen and (max-width: 991px) {
+  .rent-example {
+    border-left: none;
+  }
+}

@@ -1,5 +1,7 @@
 @import "../../../styles.scss";
 
+
+
 .mat-form-field::ng-deep {
   .mat-form-field-wrapper {
     padding-bottom: 0;
@@ -161,6 +163,17 @@ table {
   }
   .mobile-buttons {
     text-align: center !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-group {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  h2 {
+    text-align: center;
   }
 }
 

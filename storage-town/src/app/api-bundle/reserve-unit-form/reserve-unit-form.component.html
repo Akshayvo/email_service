@@ -10,11 +10,11 @@
 
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
          <div  class="row justify-content">
-             <div formGroupName="objTenant" class="col-lg-7 ">
+             <div formGroupName="objTenant" class="col-lg-7 p-4 ">
                  <h2 class="pb-3">Tenant Information</h2>
 
                  <div class="row">
-                   <div class="col-lg-6 form-group">
+                   <div class="col-lg-6 form-group ">
                            <label>First Name*</label>
                            <input type="text" formControlName="FirstName" class="form-control" placeholder="Enter First Name"
                            [value]=""
@@ -171,7 +171,7 @@
                  <!-- </div> -->
                     <div class="pb-4" formArrayName="lstRentalPeriods">
                         <div *ngFor="let itemRental of f.lstUnitTypes.controls; let i = index">
-                            <div  [formGroupName]="i">
+                            <div  [formGroupName]="i" class="form-group">
                                 <label for="PeriodDescription">Period*</label>&nbsp;
                                 <select class="form-control" formControlName="PeriodDescription"
                                  [id]="LstRentalPeriod?.PeriodDescription" 
@@ -183,7 +183,7 @@
                             </div>
                         </div>
                     </div>
-                    <div *ngIf="MonthlyRate">
+                    <div class="form-group" *ngIf="MonthlyRate">
                         <label>Rate:</label>&nbsp;
                         ${{MonthlyRate}}
                         <span *ngIf="rateTax > 0">

@@ -20,6 +20,18 @@
   }
 }
 
+.mobile-header {
+  background-color: $primary;
+  color: $white;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.facility-contact {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .awareness{
     background-color: #BE2926;
     color:#fff;
@@ -88,7 +100,13 @@ table {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
+  .mobile-view {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .rent-sub-holder {
     .coming-soon {
       padding: 40% 10%;
@@ -101,6 +119,16 @@ table {
     .rent-example {
       border-left: 0 $border solid;
     }
+  }
+  .awareness {
+    background-color: #BE2926;
+    color: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 1.5rem;
+}
+  .desktop-view {
+    display: none;
   }
 }
 
