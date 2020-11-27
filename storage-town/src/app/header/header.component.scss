@@ -1,5 +1,11 @@
 @import "../../styles.scss";
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 a {
   cursor: pointer;
 }
@@ -81,6 +87,10 @@ a {
     display: none;
   }
 
+  .fixed-top {
+    
+  }
+
   .nav-link {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
@@ -114,6 +124,12 @@ a {
       img {
         height: 45px;
       }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .contact-bar {
+      font-size: 0.6rem !important;
     }
   }
 

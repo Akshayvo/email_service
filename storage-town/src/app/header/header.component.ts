@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { navLinks } from '../data/nav';
+import { WINDOW } from '@ng-toolkit/universal';
 
 @Component({
   selector: 'app-header',
@@ -16,8 +17,11 @@ export class HeaderComponent implements OnInit {
   logo: any;
   @Input() currentActive: any;
   locationId: any;
+  // navbar = document.getElementById('navbar');
+  // sticky = this.navbar.offsetTop;
 
   constructor(
+    @Inject(WINDOW) private window: Window,
     private route: ActivatedRoute,
     private router: Router,
   ) { }
@@ -26,6 +30,9 @@ export class HeaderComponent implements OnInit {
     this.fetchNavigationLinks();
     this.router.events.subscribe(path => {
     });
+    // window.onscroll = function() {
+    //   this.HideContent()
+    // };
   }
 
   public navigate (location: any) {
@@ -39,5 +46,13 @@ export class HeaderComponent implements OnInit {
   public onClick(menu: any) {
     menu.classList.remove('show');
   }
+
+  // public HideContent() {
+  //   if (window.pageYOffset >= this.sticky) {
+  //     this.navbar.classList.add('sticky');
+  //   } else {
+  //     this.navbar.classList.remove('sticky');
+  //   }
+  // }
 
 }

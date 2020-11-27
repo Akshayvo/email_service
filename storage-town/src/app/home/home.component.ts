@@ -68,6 +68,7 @@ export class HomeComponent implements OnInit {
     window.scrollTo(0, 0);
     this.receiveMessage();
     this.fetchFeatures();
+   
 
     // fetch(this.script)
     // .then(response => response.text())
