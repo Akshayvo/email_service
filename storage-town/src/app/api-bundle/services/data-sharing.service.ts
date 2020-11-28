@@ -38,7 +38,7 @@ export class DataSharingService {
   signUpForAutoPay: boolean;
   PaymentAmount: number;
   CCApprovalCode: string;
-
+  eventName: string;
   paymentTab: string;
 
   apiKey = '';

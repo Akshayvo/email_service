@@ -65,7 +65,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.CCApprovalCode = this.dataSharingService.CCApprovalCode;
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.locationName =  this.dataSharingService.locationName;
-
+    this.eventName = this.dataSharingService.eventName;
 
     if (localStorage.getItem('strTenantToken')) {
       this.tokenExit = localStorage.getItem('strTenantToken');
@@ -75,7 +75,6 @@ export class ThankYouComponent implements OnInit, OnDestroy {
       this.paymentNavigationUrl = localStorage.getItem('paymentNavigationUrl');
     }
     const today = new Date();
-    this.eventName = 'reservation';
     window['dataLayer'] = window['dataLayer'] || {};
     window['dataLayer'] = window['dataLayer'] || [];
     window['dataLayer'].push({

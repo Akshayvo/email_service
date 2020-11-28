@@ -229,6 +229,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           this.strConfirmation = strConfirmationResponse.strConfirmation;
 
           this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
+          this.dataSharingService.eventName = 'reservation';
           this.showConfirmation = false;
           this.submitted = false;
           this.tokenExit = localStorage.getItem('strTenantToken');
@@ -276,7 +277,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
 
         if (strConfirmationResponse.intErrorCode === 1) {
           this.strAccessCode = strConfirmationResponse.strAccessCode;
-
+          this.dataSharingService.eventName = 'moveIn'
           this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
           this.submitted = false;
           this.tokenExit = localStorage.getItem('strTenantToken');

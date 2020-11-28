@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { CanonicalService } from '../../services/canonical.service';
 import { headingLocation1, headingLocation2, headingLocation3, headingLocation4  } from '../../data/location';
 @Component({
   selector: 'app-view-rates',
@@ -13,7 +14,10 @@ export class ViewRatesComponent implements OnInit {
   heading: string;
 
   constructor(private router: Router,
-    ) { }
+    private canonical: CanonicalService
+    ) {
+      this.canonical.create();
+     }
 
   ngOnInit() {
     this.isSomePage();

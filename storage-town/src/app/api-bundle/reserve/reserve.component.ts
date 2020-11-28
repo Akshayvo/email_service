@@ -18,10 +18,10 @@ export class ReserveComponent implements OnInit {
 
   constructor(private router: Router,
     private dataSharingService: DataSharingService,
-    // private canonical: CanonicalService
+    private canonical: CanonicalService
 
     ) {
-      // this.canonical.create();
+      this.canonical.create();
      }
 
   ngOnInit() {
