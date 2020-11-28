@@ -1,5 +1,7 @@
 @import "../../styles.scss";
 
+
+
 .sticky {
   position: fixed;
   top: 0;
@@ -87,10 +89,6 @@ a {
     display: none;
   }
 
-  .fixed-top {
-    
-  }
-
   .nav-link {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
@@ -127,10 +125,65 @@ a {
     }
   }
 
+}
+
   @media screen and (max-width: 600px) {
     .contact-bar {
       font-size: 0.6rem !important;
     }
+
+    #site-header {
+      position: relative;
+      height: auto;
+      background: #fff;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      transition: all .3s ease;
+      box-shadow: 0 1px 25px rgba(0,0,0, .1);
+    }
+    #site-header.hide {
+      top: -64px;
+    }
+    
+    #nav-header {
+      // position: fixed;
+      transition: all .3s ease;
+      box-shadow: 0 1px 25px rgba(0,0,0, .1);
+    }
+    
+    #nav-header.customClass {
+      top: -64px;
+    }
+    
+  }
+
+  @media screen and (max-width: 460px) {
+
+    #site-header {
+      position: relative;
+      height: auto;
+      background: #fff;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      transition: all .3s ease;
+      box-shadow: 0 1px 25px rgba(0,0,0, .1);
+    }
+    #site-header.hide {
+      top: -86px;
+    }
+    
+    #nav-header {
+      // position: fixed;
+      transition: all .3s ease;
+      box-shadow: 0 1px 25px rgba(0,0,0, .1);
+    }
+    
+    #nav-header.customClass {
+      top: -86px;
+    }
+    
   }
 
   @media screen and (max-height: 476px) {
@@ -139,4 +192,5 @@ a {
       overflow-y: auto;
     }
   }
-}
+  
+

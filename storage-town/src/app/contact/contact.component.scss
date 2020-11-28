@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .rent-holder {
-  padding-top: 140px;
+  padding-top: 172px;
   min-height: 88vh;
   margin-bottom: 50px;
 
@@ -112,7 +112,7 @@ table {
 
 @media only screen and (max-width: 600px) {
   .rent-holder {
-    // padding-top: 70px;
+    padding-top: 115px;
 
     .container {
       padding-left: 0;
@@ -133,23 +133,23 @@ table {
   }
 }
 
-@media only screen and (max-width: 600px) and (min-width: 576px) {
-  .rent-holder {
-    padding-top: 152px;
-  }
-}
+// @media only screen and (max-width: 600px) and (min-width: 576px) {
+//   .rent-holder {
+//     padding-top: 152px;
+//   }
+// }
 
 
-@media screen and (max-width: 575px) and (min-width: 453px) {
-  .rent-holder {
-    padding-top: 172px;
-  } 
-}
+// @media screen and (max-width: 575px) and (min-width: 453px) {
+//   .rent-holder {
+//     padding-top: 172px;
+//   } 
+// }
 
 @media screen and (max-width: 452px) {
-  .rent-holder {
-    padding-top: 200px;
-  } 
+  // .rent-holder {
+  //   padding-top: 200px;
+  // } 
 
   .table-data {
     padding: 8px 10px;
