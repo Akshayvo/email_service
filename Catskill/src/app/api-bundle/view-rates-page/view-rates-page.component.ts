@@ -7,6 +7,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { th } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
+import { environment } from '../../../environments/environment';
 
 
 @Component({
@@ -71,7 +72,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);
-    this.router.navigate([location]);
+    this.router.navigate([`${environment.facilityName}/${location}`]);
     this.dataSharingService.LstUnitTypes = unitData;
   }
 

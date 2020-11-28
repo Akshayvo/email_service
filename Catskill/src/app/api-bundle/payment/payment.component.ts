@@ -4,6 +4,7 @@ import { contact } from '../../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import { payRentPageContent, payRentPageTitle } from '../../data/title';
 import { payRentHeading } from '../../data/heading';
+import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
 
 @Component({
   selector: 'app-payment',
@@ -16,6 +17,8 @@ export class PaymentComponent implements OnInit {
   payRentPageTitle: string;
   payRentPageContent: string;
   payRentHeading: string;
+  twitter: any;
+  og: any;
 
   constructor(
     private titleService: Title,
@@ -23,6 +26,21 @@ export class PaymentComponent implements OnInit {
     private meta: Meta
   ) {
     this.fetchMetaData();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
     this.meta.addTag({
       name: 'description',
       content: `${this.payRentPageContent}`
@@ -35,6 +53,17 @@ export class PaymentComponent implements OnInit {
     this.fetchpayRentHeading();
     window.scrollTo(0, 0);
   }
+
+  
+  public fetchOg() {
+
+          this.og = ogPayRentPage;
+        }
+
+public fetchTwitter() {
+        this.twitter = twitterPayRentPage;
+}
+
 
   public fetchMetaData() {
     this.payRentPageContent = payRentPageContent;

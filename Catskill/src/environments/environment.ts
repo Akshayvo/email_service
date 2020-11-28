@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
+  facilityName: 'catskill',
   alternateTenant: `navigateToMoveIn`, // {0, 1, navigateToReserve, navigateToMoveIn},
   paymentPageType: 1, // { withoutTab: 0, withTab: 1}
   reservetionFormType: 0, // { withoutAlternateDetail:0, withAlternateDetial: 1}
@@ -13,7 +14,7 @@ export const environment = {
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Catskill Self Storage',
+  appId: 'Master template(Sample site) - Catskill Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://catskillselfstorage.com',

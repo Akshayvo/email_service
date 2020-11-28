@@ -1,11 +1,21 @@
 @import "../../styles.scss";
 
+.contact-details {
+  h4 {
+    font-size: 1rem;
+  }
+}
+
 .jumbotron-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/webp/catskill-self-storage.webp");
 }
 
 .jumbotron-background-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/jpg/catskill-self-storage.jpg");
+}
+
+.display-contact {
+  display: flex;
 }
 
 .jumbotron {
@@ -35,6 +45,10 @@ h1 {
 
   img {
     padding: 10px;
+  }
+
+  h2 {
+    font-size: 1rem;
   }
 }
 
@@ -112,7 +126,7 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
+    h2 {
       font-size: 0.8rem;
     }
   }
@@ -126,7 +140,7 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
+    h2 {
       font-size: 0.8rem;
     }
   }
@@ -194,7 +208,7 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
+    h2 {
       font-size: 0.8rem;
     }
   }
@@ -227,7 +241,7 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
+    h2 {
       font-size: 0.8rem;
     }
   }
@@ -241,7 +255,7 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
+    h2 {
       font-size: 0.8rem;
     }
   }
@@ -309,7 +323,7 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
+    h2 {
       font-size: 0.8rem;
     }
   }
@@ -352,7 +366,7 @@ h1 {
   .feature-icon-style {
     padding: 12px 24px;
 
-    h6 {
+    h2 {
       font-size: 0.8rem;
     }
   }
@@ -371,6 +385,14 @@ h1 {
     height: 160px;
   }
 
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h2 {
+      font-size: 0.8rem;
+    }
+  }
+
   .jumbotorn-skew-text {
     a {
       min-width: 140px;
@@ -385,14 +407,6 @@ h1 {
       h2 {
         font-size: 2.3rem;
       }
-    }
-  }
-
-  .feature-icon-style {
-    padding: 12px 24px;
-
-    h6 {
-      font-size: 0.8rem;
     }
   }
 }

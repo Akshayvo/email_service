@@ -8,6 +8,8 @@ import { UaParserService } from '../../services/ua-parser.service';
 import { Subscription } from 'rxjs';
 import { viewRatesHeading } from '../../data/heading';
 import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
+import { Router } from '@angular/router';
+import { CanonicalService } from '../../services/canonical.service';
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -34,9 +36,11 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
   constructor(
     private titleService: Title,
+    private router: Router,
     private meta: Meta,
     private metaService: MetaService,
     private uaParserService: UaParserService,
+    private canonical: CanonicalService
   ) {
     this.fetchMetaData();
     this.meta.addTag({
@@ -44,7 +48,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
       content: `${this.viewRatesPageContent}`
     });
     this.titleService.setTitle(`${this.viewRatesPageTitle}`);
-    this.metaService.createCanonicalURL();
+    this.canonical.create();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
 
@@ -54,6 +58,10 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     window.scrollTo(0, 0);
     this.fetchViewRates();
     this.fetchViewRatesHeading();
+  }
+
+  public navigate(location: any) {
+    this.router.navigate([location]);
   }
 
   public fetchViewRates() {

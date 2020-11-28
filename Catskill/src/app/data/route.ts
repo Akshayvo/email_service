@@ -21,12 +21,15 @@ import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.compo
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
-import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confirmation-page.component';
+// import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confirmation-page.component';
 import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
 import { RentSubComponent } from '../api-bundle/rent-sub/rent-sub.component';
 import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
 import { SignUpComponent } from '../api-bundle/sign-up/sign-up.component';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../environments/environment';
+import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
+import { ThankYouGuard } from '../thank-you.guard';
+import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -35,7 +38,8 @@ const withoutTab = [
         {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
         {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
         { path: 'verifyCode', component: VerifyCodeComponent },
-        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
         // canActivate: [VerifictionCodeGuard]
 ];
 
@@ -49,7 +53,8 @@ const withTab = [
           {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
           {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
           { path: 'verifyCode', component: VerifyCodeComponent },
-          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
           // canActivate: [VerifictionCodeGuard]
         ]
       },
@@ -74,21 +79,22 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'reserve-unit', component: ReserveComponent },
-    { path: 'storageTips', component: StorageTipsComponent },
+    { path: `${environment.facilityName}/reserve-unit`, component: ReserveComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
     {
-      path: 'view-rates',
+      path: `${environment.facilityName}/view-rates`,
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
         { path: 'reserve', component: ReserveUnitFormComponent },
         { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'confirmation-page', component: ConfirmationPageComponent },
+        // { path: 'confirmation-page', component: ConfirmationPageComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
       ]
      },
     {
@@ -114,10 +120,10 @@ export const iFrameRoutes = [
     { path: 'pay-rent', component: PaymentIframePageComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
     { path: 'view-rates', component: ViewRatesIframePageComponent },
-    { path: 'reserve-unit', component: ReserveUnitIframePageComponent },
-    { path: 'storageTips', component: StorageTipsComponent },
+    { path: 'reserve-unit', component: ReserveUnitIframePageComponent },    
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'

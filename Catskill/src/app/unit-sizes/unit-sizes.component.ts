@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
+import { Router } from '@angular/router';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-unit-sizes',
@@ -16,6 +18,7 @@ export class UnitSizesComponent implements OnInit {
   j: number;
 
   constructor(
+    private router: Router,
   ) {
   }
 
@@ -27,6 +30,9 @@ export class UnitSizesComponent implements OnInit {
     window.scrollTo(0, 0);
   }
 
+  public navigate(location: any) {
+    this.router.navigate([`${environment.facilityName}/${location}`]);
+  }
 
   /**
    * fetchUnitSizer

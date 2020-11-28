@@ -1,3 +1,5 @@
+import { environment } from '../../environments/environment';
+
 export const navLinks = [
     {
         label: 'HOME',
@@ -5,7 +7,7 @@ export const navLinks = [
     },
     {
         label: 'VIEW RATES',
-        path: '/view-rates',
+        path: `${environment.facilityName}/view-rates`,
     },
     {
         label: 'PAY RENT',

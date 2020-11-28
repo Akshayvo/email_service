@@ -23,6 +23,9 @@ export class DataSharingService {
   paymentNavigation: string;
   isDataUpdated: boolean;
   isDataSaved: boolean;
+  PaymentAmount: number;
+  CCApprovalCode: string;
+
   signUpForAutoPay: boolean;
 
   cardDetailsObject = {

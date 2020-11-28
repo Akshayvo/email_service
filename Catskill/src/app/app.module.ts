@@ -58,6 +58,9 @@ import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
 import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AlternateDetailsReservationFormComponent } from './api-bundle/alternate-details-reservation-form/alternate-details-reservation-form.component';
+import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
+import { ThankYouGuard } from './thank-you.guard';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -99,7 +102,9 @@ import { AlternateDetailsReservationFormComponent } from './api-bundle/alternate
     PayRentComponent,
     SignUpComponent,
     TabsComponent,
-    AlternateDetailsReservationFormComponent
+    AlternateDetailsReservationFormComponent,
+    ThankYouComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     CommonModule,
@@ -121,6 +126,7 @@ import { AlternateDetailsReservationFormComponent } from './api-bundle/alternate
     VerifictionCodeGuard,
     Title,
     CanDeactivateGuard,
+    ThankYouGuard,
     {
       provide: ErrorHandler,
       useClass: ErrorHandlerService

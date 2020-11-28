@@ -11,13 +11,22 @@ export class CanonicalService {
     @Inject(DOCUMENT) private dom: any,
     ) { }
 
-   create() {
-     const { location: {pathname} } = window;
-     if (environment.production) {
-      const link: HTMLLinkElement = this.dom.createElement('link');
-      link.setAttribute('rel', 'canonical');
-      this.dom.head.appendChild(link);
-      link.setAttribute('href', `${environment.websiteUrl}${pathname}`);
-     }
+create() {
+  const { location: {pathname} } = window;
+
+  if (environment.production) {
+
+   const link: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
+
+   if (link === null) {
+     const link: HTMLLinkElement = this.dom.createElement('link');
+     link.setAttribute('rel', 'canonical');
+     this.dom.head.appendChild(link);
+     link.setAttribute('href', `${environment.websiteUrl}${pathname}`);
+   } else {
+    link.setAttribute('href', `${environment.websiteUrl}${pathname}`);
    }
+
+   }
+}
 }

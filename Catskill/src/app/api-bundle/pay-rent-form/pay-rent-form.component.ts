@@ -18,12 +18,14 @@ import { MoveInService } from '../services/moveIn.service';
 import { AddTenantService } from '../services/add-tenant.service';
 import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
+
 @Component({
   selector: 'app-pay-rent-form',
   templateUrl: './pay-rent-form.component.html',
   styleUrls: ['./pay-rent-form.component.scss'],
   providers: [DatePipe],
 })
+
 export class PayRentFormComponent implements OnInit, OnDestroy {
 
   showPaymentForReserve: boolean;
@@ -553,9 +555,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       .subscribe(paymentDataResponse => {
         this.showloaderForPayment = false;
         if (paymentDataResponse && paymentDataResponse.PayTypeForResult &&  paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
-          this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
+          this.dataSharingService.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
         }
-        this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
+        this.dataSharingService.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         if ( paymentDataResponse.intErrorCode === 1 ) {
           this.makePaymentForUnit = false;
           if (this.navigateToReserve) {
@@ -565,6 +567,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             if (this.navigateToMoveIn) {
               this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
               this.moveIn(this.MoveIn);
+            } else {
+              this.router.navigate([`pay-rent/thank-you`]);
             }
           }
           this.showSuccessPayment = true;
@@ -637,6 +641,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         localStorage.removeItem('strTempTenantToken');
         this.tokenRemoved = true;
       }
+      this.router.navigate([`view-rates/thank-you`]);
       this.reservationInProgress = false;
     }, (err: any) => {
       this.makePaymentForUnit = false;
@@ -678,6 +683,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           localStorage.removeItem('strTempTenantToken');
           this.tokenRemoved = true;
         }
+        this.router.navigate([`view-rates/thank-you`]);
         this.reservationInProgress = false;
       }, (err: any) => {
         this.makePaymentForUnit = false;

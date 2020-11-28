@@ -5,6 +5,7 @@ import { MetaService } from '../../services/link.service';
 import { UaParserService } from '../../services/ua-parser.service';
 import { viewRatesHeading } from '../..//data/heading';
 import { viewRatesPageContent, viewRatesPageTitle } from '../../data/title';
+import { CanonicalService } from '../../services/canonical.service';
 
 @Component({
   selector: 'app-view-rates-iframe-page',
@@ -26,6 +27,7 @@ export class ViewRatesIframePageComponent implements OnInit {
     private meta: Meta,
     private metaService: MetaService,
     private uaParserService: UaParserService,
+    private canonical: CanonicalService
   ) {
     this.fetchMetaData();
     this.meta.addTag({
@@ -33,8 +35,8 @@ export class ViewRatesIframePageComponent implements OnInit {
       content: `${this.viewRatesPageContent}`
     });
     this.titleService.setTitle(`${this.viewRatesPageTitle}`);
-    this.metaService.createCanonicalURL();
-    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.canonical.create();
+        this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
 
   }
