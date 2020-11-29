@@ -25,7 +25,7 @@ export class DataSharingService {
   isDataSaved: boolean;
   PaymentAmount: number;
   CCApprovalCode: string;
-
+  eventName: string;
   signUpForAutoPay: boolean;
 
   cardDetailsObject = {

@@ -8,16 +8,17 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        redirect: 'mailto:sales@syrasoft.com',
         data: 'sales@syrasoft.com',
         class: 'fas fa-envelope mx-2 iconColor',
+        email: 'sales@syrasoft.com, syrasoftsoftware@gmail.com',
+        redirect: 'mailto:`sales@syrasoft.com, syrasoftsoftware@gmail.com`'
     },
     {
         id: 2,
-        redirect: 'tel:5555555555',
         label: 'Phone:',
         data: '(555) 555-5555',
         class: 'fas fa-phone mx-2 iconColor',
+        redirect: 'tel:5555555555',
     }
 ];
 

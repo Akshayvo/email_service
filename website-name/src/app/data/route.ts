@@ -21,7 +21,6 @@ import { VerifyCodeComponent } from '../api-bundle/verify-code/verify-code.compo
 import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-password.component';
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
-// import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confirmation-page.component';
 import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
 import { RentSubComponent } from '../api-bundle/rent-sub/rent-sub.component';
 import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
@@ -91,7 +90,6 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
         { path: 'reserve', component: ReserveUnitFormComponent },
         { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
-        // { path: 'confirmation-page', component: ConfirmationPageComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
@@ -105,7 +103,6 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
         { path: 'reserve', component: ReserveUnitFormComponent },
         { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
-        // { path: 'confirmation-page', component: ConfirmationPageComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
@@ -121,7 +118,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
+          externalUrl: ''
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -143,7 +140,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJAbF_hDy83YkRchDxQZiEeE8'
+          externalUrl: ''
       }
     },
     { path: 'error', component: ErrorHandlerComponent },

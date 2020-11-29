@@ -66,7 +66,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.PaymentAmount = this.dataSharingService.PaymentAmount;
     this.CCApprovalCode = this.dataSharingService.CCApprovalCode;
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
-
+    this.eventName = this.dataSharingService.eventName;
 
     if (localStorage.getItem('strTenantToken')) {
       this.tokenExit = localStorage.getItem('strTenantToken');

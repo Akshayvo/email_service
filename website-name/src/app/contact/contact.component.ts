@@ -158,7 +158,7 @@ public fetchTwitter() {
     const index = contact.findIndex(x => x.label === 'Email:');
 
     if (!!index) {
-      this.receiveremail = this.contactDetails[index].data;
+      this.receiveremail = this.contactDetails[index].email;
     }
 
      this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>

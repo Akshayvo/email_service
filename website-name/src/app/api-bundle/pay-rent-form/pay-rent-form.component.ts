@@ -208,6 +208,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         if (this.router.url.includes('payment')) {
           this.navigateToMoveIn = false;
           this.navigateToReserve = false;
+          this.navigateToMoveInPayment = true;
         }
 
       }
@@ -215,9 +216,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-    if (this.router.url ===  '/pay-rent/payment' || (this.router.url ===  '/pay-rent/sign-up/payment')) {
-      this.navigateToMoveInPayment = true;
-    }
+    // if (this.router.url ===  '/pay-rent/payment' || (this.router.url ===  '/pay-rent/sign-up/payment')) {
+    //   this.navigateToMoveInPayment = true;
+    // }
 
     this.fetchCards();
   }
@@ -553,7 +554,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.invalidPayment = null;
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
-        this.showloaderForPayment = false;
+        // this.showloaderForPayment = false;
         if (paymentDataResponse && paymentDataResponse.PayTypeForResult &&  paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
           this.dataSharingService.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
         }
@@ -568,7 +569,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
               this.moveIn(this.MoveIn);
             } else {
-              this.router.navigate([`pay-rent/thank-you`]);
+              if (!!this.paymentTab) {
+                this.router.navigate([`pay-rent/${this.paymentTab}/thank-you`])
+              } else {
+                this.router.navigate([`pay-rent/thank-you`]);
+              }
             }
           }
           this.showSuccessPayment = true;
@@ -626,7 +631,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   this.makeAReservationSubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
     .subscribe(strConfirmationResponse => {
       this.strConfirmation = strConfirmationResponse.strConfirmation;
+      this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
       this.showConfirmation = false;
+      this.dataSharingService.eventName = 'reservation';
       this.makePaymentForUnit = false;
       this.submitted = false;
        this.tokenExit = localStorage.getItem('strTenantToken');
@@ -641,7 +648,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         localStorage.removeItem('strTempTenantToken');
         this.tokenRemoved = true;
       }
-      this.router.navigate([`view-rates/thank-you`]);
+      this.router.navigate([`${environment.facilityName}/view-rates/thank-you`]);
       this.reservationInProgress = false;
     }, (err: any) => {
       this.makePaymentForUnit = false;
@@ -672,6 +679,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
       .subscribe(strConfirmationResponse => {
         this.strAccessCode = strConfirmationResponse.strAccessCode;
+        this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
+        this.dataSharingService.eventName = 'MoveIn';
         this.makePaymentForUnit = false;
         this.submitted = false;
          this.tokenExit = localStorage.getItem('strTenantToken');
@@ -683,7 +692,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           localStorage.removeItem('strTempTenantToken');
           this.tokenRemoved = true;
         }
-        this.router.navigate([`view-rates/thank-you`]);
+        this.router.navigate([`${environment.facilityName}/view-rates/thank-you`]);
         this.reservationInProgress = false;
       }, (err: any) => {
         this.makePaymentForUnit = false;
