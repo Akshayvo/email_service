@@ -10,6 +10,14 @@ export const navLinks = [
         path: `${environment.facilityName}/view-rates`,
     },
     {
+        label: 'RENT NOW',
+        path: `${environment.facilityName}/rent-now`,
+    },
+    {
+        label: 'RESERVE UNIT',
+        path: `${environment.facilityName}/reserve-unit`,
+    },
+    {
         label: 'PAY RENT',
         path: '/pay-rent'
     },

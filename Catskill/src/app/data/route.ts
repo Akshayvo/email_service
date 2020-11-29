@@ -97,6 +97,20 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
       ]
      },
+     {
+      path: `${environment.facilityName}/rent-now`,
+      component: ViewRatesComponent,
+      children: [
+        { path: '', component: ViewRatesPageComponent },
+        { path: 'reserve', component: ReserveUnitFormComponent },
+        { path: 'move-in', component: ReserveUnitFormComponent },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        // { path: 'confirmation-page', component: ConfirmationPageComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+      ]
+     },
     {
       path: 'pay-rent', component: PayRentComponent,
       children: childroute

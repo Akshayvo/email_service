@@ -22,30 +22,33 @@ export const featuresList = [
 
 export const aboutUsAlt = `aboutUsAlt`;
 
-export const aboutUsHeading = `Affordable Storage Near Catskill, NY`;
+export const aboutUsHeading = `Affordable Self Storage in Baldwinsville`;
 
 export const aboutUs = [
     {
-        p: `Catskill Self Storage has been proudly serving the Catskill, Leeds, Cairo and surrounding
-            communities since 2004 with stellar customer service, and a wide range of clean,
-            well-maintained self storage units.`,
+        p: `Sample Self Storage - North has proudly served the village of Baldwinsville with friendly
+        service, and clean, well-maintained self storage units for nearly 20 years. We are a locally
+        owned business that prides itself on the trust we've earned from out friends and neighbors over
+        the past two decades.`,
     },
     {
-        p: `Whether you're looking for a little extra space during a move or are looking for long term
-            storage we have the right unit at the right price!`,
+        p: `We are located across the street from the iconic Lock 24 restaurant, and offer easy access
+        through our electronic pin-code secured front gate. Our parking lanes are extra-wide to make
+        maneuvering your moving truck to your unit a breeze. Need access outside of regular banking hours?
+        We're open 24 hours a day! Use our on-site kiosk or rent online and you can can be moving into your unit in minutes!`,
     },
     {
-        p: `Are you in need of convenient, affordable truck rentals? Our selection of U-Haul trucks
-            ready and waiting to make your moving experience faster and easier!`,
+        p: `Our units range from closet-sized 5-foot-by-5-foot units that are perfect for seasonal
+        clothing, and sports equipment to our 10-foot-by-30-foot units that will store a multi-bedroom
+        home during a move! Sample Self Storage - North has units available in regular, unconditioned
+        varieties and climate controlled for those belongings that require a little extra protection.`,
     },
     {
-        p: `Our fully-stocked retail store has all of the tape, boxes, and packing material you'll
-            need to make your storage experience a breeze!`,
-    },
-    {
-        p: `If you have any questions or concerns about renting a unit or truck with us be sure to call
-            our friendly, knowledgeable staff and let us make your storage experience a hassle-free one!`
+        p: `Whether you're a growing business in need of a place for equipment, documents, and supplies,
+        or if you're a residential storage user in the process of a move, or a renovation, we've got your
+        storage needs covered. Let Sample Self Storage - North help de-clutter your life today!`,
     }
+    
 ];
 
 export const gettingStarted = `Are you ready to move in today or just looking to make a reservation?
@@ -83,9 +86,11 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h1: `Convenient & Affordable`,
-        blurb: `With affordable truck rentals, drive-up access, temperature - controlled storage units,
-        and top notch customer service,
-        Catskill Self Storage has your storage unit needs covered! Contact us today to get started!`,
+        h1: `Affordable Climate Controlled Units in Baldwinsville`,
+        blurb: `Sample Self Storage - North was the first self storage facility we built nearly 20 years ago.
+        We recently renovated our entire operation to make sure our valued customers have another 20 years of
+        clean, affordable regular and climate controlled self storage options in Baldwinsville! Let Sample Self
+        Storage - North help you today. Our well-lit and personalized pin-code secured facility awaits your next
+        storage project!`,
     }
 ];

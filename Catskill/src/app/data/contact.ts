@@ -2,40 +2,40 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '5877 Cauterskill Road Catskill, NY 12414',
+        data: '6 Canton St, Baldwinsville, NY 13027',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 1,
         label: 'Email:',
-        redirect: 'mailto:sanghmitra.v@codeparva.in',
-        data: 'sanghmitra.v@codeparva.in',
+        redirect: 'mailto:sales@syrasoft.com',
+        data: 'sales@syrasoft.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
         id: 2,
-        redirect: 'tel:5189433003',
+        redirect: 'tel:5555555555',
         label: 'Phone:',
-        data: '518-943-3003',
+        data: '(555) 555-5555',
         class: 'fas fa-phone mx-2 iconColor',
     }
 ];
 
 export const hours = [
     {
-        label: 'Mon-Fri: ',
-        data: '9:00 am - 6:00 pm'
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 7:00PM'
     },
     {
-        label: 'Sat: ',
-        data: '9:00 am - 3:00 pm'
+        label: 'Saturday: ',
+        data: '10:00 am - 2:00 pm'
     },
     {
         label: 'Sunday: ',
-        data: '8:00 am - 12:00 pm'
+        data: 'CLOSED'
     },
     {
-        label: 'Facility Access With Pin Code: ',
+        label: 'Access Hours: ',
         data: '24 hours a day, 7 days a week'
     }
 ];
