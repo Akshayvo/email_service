@@ -502,9 +502,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     );
   }
 
-  toggleEvent(e: any) {
-    this.toggleSignUp = true;
-  }
+  // toggleEvent(e: any) {
+  //   this.toggleSignUp = true;
+  // }
 
   getSurCharge() {
     this.surcharge = 0;

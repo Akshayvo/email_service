@@ -119,7 +119,7 @@ affordable storage units since 2004!`
   },
   {
     property: `og:url`,
-    content: `https://www.catskillselfstorage.com/`
+    content: `https://sample-self-storage-staging.netlify.app/`
   },
   {
     property: `og:image`,
@@ -175,7 +175,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:url`,
-      content: `https://www.catskillselfstorage.com/pay-rent/rent-sub/login`
+      content: `https://sample-self-storage-staging.netlify.app/pay-rent/rent-sub/login`
     },
     {
       property: `og:image`,
@@ -231,7 +231,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:url`,
-      content: `https://www.catskillselfstorage.com/storage-tips`
+      content: `https://sample-self-storage-staging.netlify.app/storage-tips`
     },
     {
       property: `og:image`,
@@ -287,7 +287,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:url`,
-      content: `https://www.catskillselfstorage.com/contact-us`
+      content: `https://sample-self-storage-staging.netlify.app/contact-us`
     },
     {
       property: `og:image`,
