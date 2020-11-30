@@ -124,7 +124,7 @@ export const privacyPolicy = [
         }
       ],
       note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-      at  <a href="tel:8454573500" style="color: #000;">(845) 457-3500</a> or via email at <a href="mailto:sanghmitra.v@codeparva.in" style="color:#000;">sanghmitra.v@codeparva.in</a>.`,
+      at  <a href="tel:7603668766" style="color: #000;">(760) 366-8766</a> or via email at <a href="mailto:jtms@la.tmcbc.com" style="color:#000;">jtms@la.tmcbc.com</a>.`,
       // sharing: [
       //   {
       //     heading: `Sharing`

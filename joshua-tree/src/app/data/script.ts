@@ -15,7 +15,7 @@ export const homePageScript = [
 export const ogHomePage = [
   {
     property: `og:description`,
-    content: `Our regular and climate controlled self storage units are clean, well-lit, accessible 24 hours a day, and affordable! Reserve today!`
+    content: `Are you in search of affordable self storage units or recreational vehicle parking in Joshua Tree? We've been serving the community since 1981! Call today!`
   },
   {
     property: `og:type`,
@@ -23,7 +23,7 @@ export const ogHomePage = [
   },
   {
     property: `og:title`,
-    content: `Affordable Self Storage Units in Baldwinsville, New York, 13027`
+    content: `Affordable Self Storage Units & RV Parking in Joshua Tree`
   },
   {
     property: `og:site_name`,
@@ -54,11 +54,11 @@ export const twitterHomePage = [
   },
   {
     name: `twitter:title`,
-    content: `@Affordable Self Storage Units in Baldwinsville, New York, 13027`
+    content: `@Affordable Self Storage Units & RV Parking in Joshua Tree`
   },
   {
     name: `twitter:description`,
-    content: `Our regular and climate controlled self storage units are clean, well-lit, accessible 24 hours a day, and affordable! Reserve today!`
+    content: `Are you in search of affordable self storage units or recreational vehicle parking in Joshua Tree? We've been serving the community since 1981! Call today!`
   },
   {
     name: `twitter:image`,
@@ -73,7 +73,8 @@ export const ogPayRentPage = [
     },
     {
       property: `og:description`,
-      content: `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`
+      content: `Follow the instructions on this page, or you can call our office to
+speak with one of our friendly self storage managers to get access to your online account!`
     },
     {
       property: `og:type`,
@@ -100,7 +101,8 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:description`,
-      content: `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`
+      content: `Follow the instructions on this page, or you can call our office to
+speak with one of our friendly self storage managers to get access to your online account!`
     },
     {
       name: `twitter:site`,
@@ -127,7 +129,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:description`,
-      content: `Use our helpful self storage tips list to make your stay at Joshua Tree Mini Storage an easy and enjoyable one!`
+      content: `Our quick storage tips page will help you figure out how to best use our services and avoid common pitfalls in self storage!`
     },
     {
       property: `og:type`,
@@ -154,7 +156,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:description`,
-      content: `Use our helpful self storage tips list to make your stay at Joshua Tree Mini Storage an easy and enjoyable one!`
+      content: `Our quick storage tips page will help you figure out how to best use our services and avoid common pitfalls in self storage!`
     },
     {
       name: `twitter:site`,
@@ -181,7 +183,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:description`,
-      content: `Use the contact information or the contact form on this page to speak to one of our friendly self storage managers!`
+      content: `If you have questions about your account or the services we offer, take a moment to fill our out form, or use the contact information to speak with us!`
     },
     {
       property: `og:type`,
@@ -208,7 +210,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:description`,
-      content: `Use the contact information or the contact form on this page to speak to one of our friendly self storage managers!`
+      content: `If you have questions about your account or the services we offer, take a moment to fill our out form, or use the contact information to speak with us!`
     },
     {
       name: `twitter:site`,
