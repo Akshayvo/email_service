@@ -38,6 +38,8 @@ export class HomeComponent implements OnInit {
     private titleService: Title,
     private meta: Meta
   ) {
+    this.fetchScript();
+    this.loadScript();
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
@@ -56,7 +58,6 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchStaticContent();
     this.fetchFeature();
-    this.fetchScript();
     this.fetchJumbotronText();
     window.scrollTo(0, 0);
   }
@@ -76,6 +77,18 @@ export class HomeComponent implements OnInit {
 
   public fetchScript() {
     this.script = script;
+  }
+
+  public loadScript() {
+    const node = document.createElement('script'); // creates the script tag
+    node.type = 'application/ld+json'; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+
   }
 
   public fetchMetaData() {

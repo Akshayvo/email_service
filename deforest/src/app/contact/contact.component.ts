@@ -30,6 +30,7 @@ export class ContactComponent implements OnInit {
   contactPageTitle: string;
   contactHeading: string;
   contactscript: any;
+  script: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -39,6 +40,8 @@ export class ContactComponent implements OnInit {
     private meta: Meta
   ) {
     this.fetchMetaData();
+    this.fetchScript();
+    this.loadScript();
     this.meta.addTag({
       name: 'description',
       content: `${this.contactPageContent}`
@@ -70,7 +73,7 @@ export class ContactComponent implements OnInit {
   }
 
   public fetchScript() {
-    this.contactscript = contactscript;
+    this.script = contactscript;
   }
 
 
@@ -81,6 +84,18 @@ export class ContactComponent implements OnInit {
 
   public fetchHours() {
     this.hours = officeHours;
+  }
+
+  public loadScript() {
+    const node = document.createElement('script'); // creates the script tag
+    node.type = 'application/ld+json'; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+
   }
 
   onSubmit() {

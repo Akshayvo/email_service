@@ -1,7 +1,5 @@
 export const script = {
-  
-    
-      "@context": "https://schema.org",
+  "@context": "https://schema.org",
       "@type": "SelfStorage",
       "image": [
         "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Deforest/deforest-self-storage-units-in-WI+(1x1).jpg",
@@ -46,7 +44,6 @@ export const script = {
 };
 
 export const contactscript = {
-  
   "@context": "http://schema.org",
   "@type": "Selfstorage",
   "name": "DeForest Self Storage",
