@@ -11,7 +11,7 @@
             <div *ngFor="let contact of contactsBrookside" class="contact-label">
                 <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
               <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
-                <a [href]="contact?.redirect" target="_blank">&nbsp;
+                <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
                   <h3>{{contact.data}}</h3>
                 </a>
               </div>
@@ -47,7 +47,7 @@
             <div *ngFor="let contact of contactsAndrews" class="contact-label pt-2">
               <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
             <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
-              <a [href]="contact?.redirect" target="_blank">&nbsp;
+              <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
                 <h3>{{contact.data}}</h3>
               </a>
             </div>
@@ -81,7 +81,7 @@
           <div *ngFor="let contact of contactsMontgomery" class="contact-label">
             <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
           <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
-            <a [href]="contact?.redirect" target="_blank">&nbsp;
+            <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
               <h3>{{contact.data}}</h3>
             </a>
           </div>
@@ -115,7 +115,7 @@
             <div *ngFor="let contact of contactsMiddletown" class="contact-label">
               <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
             <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
-              <a [href]="contact?.redirect" target="_blank">&nbsp;
+              <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
                 <h3>{{contact.data}}</h3>
               </a>
             </div>

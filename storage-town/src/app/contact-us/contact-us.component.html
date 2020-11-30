@@ -102,10 +102,10 @@
                 </div>
                 <h5 class="pt-3"> {{heading}} </h5>
                 <div class="py-2">
-                  <span *ngFor="let contact of contactDetails">
+                  <span class="contact-links" *ngFor="let contact of contactDetails">
                     <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label=== 'Email: ' || contact?.label === 'Phone: ' else other_content">
                       <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
-                    <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                    <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br>
                   </span>
                 </div>
                 <div class="py-2">
