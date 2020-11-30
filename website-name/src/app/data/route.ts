@@ -78,12 +78,12 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
-    { path: `${environment.facilityName}/reserve-unit`, component: ReserveComponent },
+    { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     {
-      path: `${environment.facilityName}/view-rates`,
+      path: `${environment.locationName}/view-rates`,
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
@@ -96,7 +96,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
       ]
      },
      {
-      path: `${environment.facilityName}/rent-now`,
+      path: `${environment.locationName}/rent-now`,
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },

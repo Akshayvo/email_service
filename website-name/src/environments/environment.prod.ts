@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  facilityName: 'north',
+  locationName: 'new-york',
   type: 0,  // { API: 0, iframe: 1 }
   paymentPageType: 1, // { withoutTab: 0, withTab: 1}
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}

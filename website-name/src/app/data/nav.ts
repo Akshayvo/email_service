@@ -7,15 +7,15 @@ export const navLinks = [
     },
     {
         label: 'VIEW RATES',
-        path: `${environment.facilityName}/view-rates`,
+        path: `${environment.locationName}/view-rates`,
     },
     // {
     //     label: 'RENT NOW',
-    //     path: `${environment.facilityName}/rent-now`,
+    //     path: `${environment.locationName}/rent-now`,
     // },
     {
         label: 'RESERVE UNIT',
-        path: `${environment.facilityName}/reserve-unit`,
+        path: `${environment.locationName}/reserve-unit`,
     },
     {
         label: 'PAY RENT',

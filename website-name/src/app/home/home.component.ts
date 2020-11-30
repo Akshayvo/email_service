@@ -83,7 +83,7 @@ export class HomeComponent implements OnInit {
   }
 
   public navigate(location: any) {
-    this.router.navigate([`${environment.facilityName}/${location}`]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
   }
 
   ngOnInit() {
