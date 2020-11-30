@@ -44,6 +44,8 @@ export class ContactComponent implements OnInit {
 
   ) {
     this.fetchMetaData();
+    this.fetchScript();
+    this.loadScript();
     this.meta.addTag({
       name: 'description',
       content: `${this.contactPageContent}`
@@ -54,7 +56,6 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.fetchContactDetails();
-    this.fetchscript();
     this.fetchHours();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -76,8 +77,20 @@ export class ContactComponent implements OnInit {
     this.contactPageContent = contactPageContent;
   }
 
-  public fetchscript() {
+  public fetchScript() {
     this.contactscript = contactscript;
+  }
+
+  public loadScript() {
+    const node = document.createElement('script'); // creates the script tag
+    node.type = 'application/ld+json'; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.contactscript);
+    // append to head of document
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+
   }
 
   public fetchContactDetails() {

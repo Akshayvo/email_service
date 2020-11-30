@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { faqPageTitle } from '../data/title';
-import { faqScript } from '../data/script';
+// import { faqScript } from '../data/script';
 import { faqHeading } from '../data/heading';
 import { faq } from '../data/faq';
 
@@ -29,7 +29,7 @@ export class FaqComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.fetchScript();
+    // this.fetchScript();
     this.fetchHeading();
     this.fetchFaqData();
   }
@@ -38,9 +38,9 @@ export class FaqComponent implements OnInit {
     this.faqPageTitle = faqPageTitle;
   }
 
-  public fetchScript() {
-    this.script = faqScript;
-  }
+  // public fetchScript() {
+  //   this.script = faqScript;
+  // }
 
   public fetchHeading() {
     this.faqHeading = faqHeading;
