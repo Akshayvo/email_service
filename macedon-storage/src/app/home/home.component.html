@@ -30,21 +30,20 @@
         
         <div class="col-lg-6 py-3">
           <div class="mb-4">
-           <h2 class="heading pb-4">Location Information</h2>
             <div>
               <div class="font-xs-device" *ngFor="let contact of contactDetails">
                 <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </div>
-              <div class="pt-3 font-xs-device">
-                <h3>Office Hours</h3>
+              <div class="pt-2"><strong >Office Hours:</strong></div>
+              <div class="font-xs-device">
                   <div *ngFor="let hour of hours">
                       <b>{{hour.label}}</b>{{hour.data}}<br>
                     </div>    
               </div>
               </div>
           </div>
-          
+          <h2 class="text-center">Only 390 Self Storage Includes:</h2> 
           <div class="pt-2">
               <app-tables [tBody]="featuresList"></app-tables>
           </div>
@@ -62,12 +61,32 @@
         <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Macedon/macedon-front-gate.jpg" width="100%" alt="photograph of a driveway leading up to an electronic gate with brick storage buildings beyond the gate">
       </div>
       <div class="col-lg-6 py-3">
-        <h1 class="heading pb-4">Affordable Storage Units & RV Parking in Macedon, NY</h1>
-        <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+        <!-- <h1 class="heading pb-4">Affordable Storage Units & RV Parking in Macedon, NY</h1>
+        <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p> -->
+          
+        <div  *ngFor="let data of aboutUs">
+          <h1 class="pb-1">{{data.mainHeading}}</h1>
+          <p>{{data.mainParagraph}}</p>
+          <h3 class="py-1"><b>{{data.subHeading2.heading}}</b></h3>
+          <p>{{data.subHeading2.p}}</p>
+          <h3 class="py-1"><b>{{data.subHeading3.heading}}</b></h3>
+          <p>{{data.subHeading3.p}}</p>         
+        </div>
+
       </div>
     </div>
   </div>
   <!--About Us Section Ends Here-->
+
+  <div class="bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12 py-3">
+          <p class="mb-0" >Visit some of our additional properties: <a href="www.lindenstorage.com" target="_blank">www.lindenstorage.com   </a> <a href="www.pittsfordofficespace.com" target="_blank"> www.pittsfordofficespace.com</a>  and <a href="www.rentstonebrook.com" target="_blank">www.rentstonebrook.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--Testimonial-->
   
