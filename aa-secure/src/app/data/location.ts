@@ -32,13 +32,13 @@ export const tabs1 = [
 ];
 
 
-export const headingLocation1 = `730 Kenton Station Location`;
+export const headingLocation1 = `AA Secure Storage - 730 Kenton Station`;
 
-export const headingLocation2 = `751 Kenton Station Location`;
+export const headingLocation2 = `AA Secure Storage - 751 Kenton Station`;
 
 export const headingLocation3 = ``;
 
-export const headingLocation4 = `113 McDonald Parkway`;
+export const headingLocation4 = `AA Secure Storage - McDonald Parkway`;
 
 export const unitSizerLocation1 = [
        {
