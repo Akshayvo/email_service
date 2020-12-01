@@ -30,14 +30,14 @@
         
         <div class="col-lg-6 py-3">
           <div class="mb-4">
-           <h2 class="heading pb-4">Location Information</h2>
+           <!-- <h2 class="heading pb-4">Location Information</h2> -->
             <div>
               <div class="font-xs-device" *ngFor="let contact of contactDetails">
                 <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
               </div>
-              <div class="pt-3 font-xs-device">
-                <h3>Office Hours</h3>
+              <div class="pt-2"><strong >Office Hours:</strong></div>
+              <div class="font-xs-device">
                   <div *ngFor="let hour of hours">
                       <b>{{hour.label}}</b>{{hour.data}}<br>
                     </div>    
@@ -63,8 +63,28 @@
         <!-- <img src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Linden_Self_Storage/climate-controlled-self-storage-units.jpg" width="100%" alt="photograph of indoor climate controlled self storage units under bright lights"> -->
       </div>
       <div class="col-lg-6 py-3">
-        <h1 class="heading pb-4">Affordable Self Storage Units in Monroe County</h1>
-        <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+        <!-- <h1 class="heading pb-4">Affordable Self Storage Units in Monroe County</h1>
+        <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p> -->
+        <div  *ngFor="let data of aboutUs">
+          <h1 class="pb-1">{{data.mainHeading}}</h1>
+          <p>{{data.mainParagraph}}</p>
+          <!-- <h3 class="pb-1"><b>{{data.subHeading1.heading}}</b></h3>
+          <p >{{data.subHeading1.p1}}</p>
+          <p [innerHTML]="data.subHeading1.p2"></p>
+          <p [innerHTML]="data.subHeading1.p3"></p> -->
+          <h2 class="py-1"><b>{{data.subHeading2.heading}}</b></h2>
+          <p>{{data.subHeading2.p}}</p>
+          <h2 class="py-1"><b>{{data.subHeading3.heading}}</b></h2>
+          <p>{{data.subHeading3.p}}</p>
+          <h3 class="py-1"><b>{{data.subHeading4.heading}}</b></h3>
+          <p>{{data.subHeading4.p1}}</p>
+          <ul>
+            <li [innerHTML]="data.subHeading4.l1"></li>
+            <li [innerHTML]="data.subHeading4.l2"></li>
+            <li [innerHTML]="data.subHeading4.l3"></li>
+          </ul>
+        </div>
+      
       </div>
     </div>
   </div>
