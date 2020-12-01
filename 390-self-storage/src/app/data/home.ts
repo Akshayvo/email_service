@@ -97,7 +97,7 @@ export const feature = [
 
 export const aboutUs = [
     {
-        mainHeading: `Secure Storage Units Rochester NY`,
+        mainHeading: `Secure Self Storage Units in Rochester NY`,
         mainParagraph: `390 Self Storage is Rochester’s newest self storage facility. With three self
                         storage facilities in the greater Rochester area; when it comes to self storage,
                         we are your home town experts. We work hard every day to provide the right mix of
@@ -112,11 +112,11 @@ export const aboutUs = [
         },
         subHeading2: {
             heading: `Security for Your Possessions`,
-            p: `Beyond the standard padlock, 390 Self Storage offers additional security for your possessions. The
-            entire facility is fenced in with additional barbed wire installed to mitigate areas that might be more
-            accessible. The security gate is controlled by your unique personal access code. The entire facility is
-            well-lit with state of the art security cameras that record 24 hours a day. The climate controlled\
-            storage requires your access code to enter and has a fire protection sprinkler system.`
+            p: `Beyond the standard padlock, 390 Self Storage offers additional security for your possessions. The entire
+            facility is fenced in with additional barbed wire installed to mitigate areas that might be more accessible.
+            The security gate is controlled by your unique personal access code. The entire facility is well-lit with state
+            of the art security cameras that record 24 hours a day. State-of-the-art security cameras record 24 hours a day,
+            and the facility is well-lit.`
         },
         subHeading3: {
             heading: `For Your Convenience`,
@@ -130,7 +130,7 @@ export const aboutUs = [
             l1: `<b>Standard</b>, drive-up accessible units`,
             l2: `<b>Climate Controlled</b> (heated & cooled) units, ideal for furniture, pictures, and important documents.  Businesses
             routinely store their supplies, inventory, and records to save on expensive commercial office space.`,
-            l3: `<b>Outside Storage</b> for boats, RVs, and cars.`
+            l3: `<b>Outside Storage</b>for boats, RVs, campers, and cars.`
         },
 
     }

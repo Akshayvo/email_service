@@ -24,5 +24,10 @@ export const galleryHome = [
         thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/woman-behind-counter-thumb.jpg`,
         alt: `Secure Storage`
     },
+    {
+        url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/390-self-storage-security-camera.jpg`,
+        thumb: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/390_Self_Storage/390-self-storage-security-camera-thumb.jpg`,
+        alt: `a security camera mounted on the side of a metal self storage building`
+    },
 
 ];
