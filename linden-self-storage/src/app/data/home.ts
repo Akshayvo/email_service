@@ -103,7 +103,7 @@ export const aboutUs = [
             l1: `<b>Standard,</b> Drive-Up Accessible Units`,
             l2: `<b>Climate Controlled</b> (heated & cooled) units, ideal for furniture, pictures, and important documents. Businesses routinely
             store their supplies, inventory, and records to save on expensive commercial office space.`,
-            l3: `<b>Outside Storage</b>for boats, RVs,campers, and cars.`
+            l3: `<b>Outside Storage</b> for boats, RVs,campers, and cars.`
         },
 
     }
