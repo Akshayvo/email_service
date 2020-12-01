@@ -46,32 +46,32 @@ export const script = {
 export const contactscript = {
     // Put your script here
     "@context": "http://schema.org",
-  "@type": "Selfstorage",
-  "name": "Movin on Storage Center",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Charleston",
-    "postalCode": "25301",
-    "streetAddress": "200 Piedmont Road"
-  },
-   "url": "https://www.movinonstorage.com/",
-   "image": [
-        "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Movein_On_Storage/jpg/movin-on-storage-center-climate-control+(1x1).jpg"
-       ],
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "telephone": "(304) 344-1104",
-    "contactType": "reservations"
-  },{
-    "@type": "ContactPoint",
-    "telephone": "(304) 344-1104",
-    "contactType": "customer service"
-  }],
-  "email": "movinonstoragecenter@gmail.com",
-  "sameAs": [
-    "",
-    "",
-    ""
-  ]
+    "@type": "Selfstorage",
+    "name": "Movin on Storage Center",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Charleston",
+      "postalCode": "25301",
+      "streetAddress": "200 Piedmont Road"
+    },
+     "url": "https://www.movinonstorage.com/",
+     "image": [
+          "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Movein_On_Storage/jpg/movin-on-storage-center-climate-control+(1x1).jpg"
+         ],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "(304) 344-1104",
+      "contactType": "reservations"
+    },{
+      "@type": "ContactPoint",
+      "telephone": "(304) 344-1104",
+      "contactType": "customer service"
+    }],
+    "email": "movinonstoragecenter@gmail.com",
+    "sameAs": [
+      "",
+      "",
+      ""
+    ]
 };
 
