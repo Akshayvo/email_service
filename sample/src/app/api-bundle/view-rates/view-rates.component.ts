@@ -10,6 +10,8 @@ import { viewRatesHeading } from '../../data/heading';
 import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
 import { Router } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
+import { environment } from '../../../environments/environment';
+
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -60,8 +62,13 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     this.fetchViewRatesHeading();
   }
 
+  
   public navigate(location: any) {
-    this.router.navigate([location]);
+    if ((location === '/view-rates') || (location === '/storage-tips') || (location === '/reserve-unit')) {
+      this.router.navigate([`${environment.locationName}/${location}`]);
+    } else {
+      this.router.navigate([`${location}`]); 
+    }
   }
 
   public fetchViewRates() {

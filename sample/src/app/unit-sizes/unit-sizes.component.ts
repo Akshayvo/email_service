@@ -31,7 +31,11 @@ export class UnitSizesComponent implements OnInit {
   }
 
   public navigate(location: any) {
-    this.router.navigate([`${environment.locationName}/${location}`]);
+    if ((location === '/view-rates') || (location === '/storage-tips') || (location === '/reserve-unit')) {
+      this.router.navigate([`${environment.locationName}/${location}`]);
+    } else {
+      this.router.navigate([`${location}`]); 
+    }
   }
 
   /**
