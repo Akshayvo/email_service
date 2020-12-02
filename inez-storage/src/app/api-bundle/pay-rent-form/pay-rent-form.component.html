@@ -79,7 +79,7 @@
                   <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance}}</ng-template>
                 </label><br/>
   
-                <div *ngIf="blnAllowPartialPayments">
+                <div *ngIf="showPartialPaymentField">
                 <label >&nbsp;
                   <input type="radio" [value]="otherValue" id="2" (change)="handleChange($event)"  name="radio-btn" [checked]="balance <= 0">
                     <span>Other Amount</span>

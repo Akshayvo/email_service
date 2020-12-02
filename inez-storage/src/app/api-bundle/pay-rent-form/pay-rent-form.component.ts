@@ -105,8 +105,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   loginUrl: any;
   cardType: string;
   blnAllowPartialPayments: boolean;
-
-
+  showPartialPaymentField = false;
 
   private OptionOutOfAutoPaySubscribe$: Subscription;
   private signUpAutoPaySubscribe$: Subscription;
@@ -388,6 +387,9 @@ public navigateToPrevious() {
 
           if (this.balance <= 0) {
             this.showInput = true;
+            this.showPartialPaymentField = true; 
+          }  else {
+            this.showPartialPaymentField = false; 
           }
 
             // tslint:disable-next-line: max-line-length
