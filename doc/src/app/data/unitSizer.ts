@@ -5,7 +5,7 @@ export const unitSizer = [
       heading: '5\' x 10\' Storage Unit',
       alt: '5\' x 10\' Storage Unit Graphic ',
       unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
-      data: `This unit is approximately 50 sq feet of space that can hold the contents of two rooms, such as:`,
+      data: `This unit is approximately 50 sq feet of space that can hold the contents of one room, such as:`,
       amenities: [
         { content: 'Chairs', },
         { content: 'Small desks', },
