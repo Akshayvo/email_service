@@ -26,6 +26,10 @@
   }
 }
 
+.fullwidth {
+  width: 100%;
+}
+
 
 .tab-active {
   background-color: $primary !important;
@@ -37,7 +41,7 @@
 //   color: white !important;
 // }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 768px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
@@ -53,27 +57,37 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .mobile-view {
+    display: none;
+  }
+}
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 767px) {
   .disp {
     display: block;
   }
+  .desktop-view {
+    display: none;
+  }
 
-  .horizontal-scroll-wrapper {
-    overflow-y: hidden;
-    overflow-x: auto;
-    display: flex;
+//   .horizontal-scroll-wrapper {
+//     overflow-y: hidden;
+//     overflow-x: auto;
+//     display: flex;
 
     .grid-item {
       position: relative;
       background-color: #e2e0d8;
       width: 100%;
+      display: flex;
     }
 
     .payment-tab {
       width: 50%;
     }
-  }
+  // }
 }
 
 @media only screen and (max-width: 600px) {
