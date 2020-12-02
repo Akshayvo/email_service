@@ -60,7 +60,6 @@ import { AlternateDetailsReservationFormComponent } from './api-bundle/alternate
 import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import { MicrodataComponent } from './microdata/microdata.component';
 
 @NgModule({
   declarations: [
@@ -103,7 +102,6 @@ import { MicrodataComponent } from './microdata/microdata.component';
     AlternateDetailsReservationFormComponent,
     ThankYouComponent,
     PrivacyPolicyComponent,
-    MicrodataComponent
   ],
   imports: [
     CommonModule,

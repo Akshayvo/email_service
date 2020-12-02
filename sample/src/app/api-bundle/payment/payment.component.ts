@@ -12,13 +12,13 @@ import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
   styleUrls: ['./payment.component.scss']
 })
 export class PaymentComponent implements OnInit {
-
+  
+  og: any;
+  twitter: any;
   contact: any;
+  payRentHeading: string;
   payRentPageTitle: string;
   payRentPageContent: string;
-  payRentHeading: string;
-  twitter: any;
-  og: any;
 
   constructor(
     private titleService: Title,
@@ -56,13 +56,12 @@ export class PaymentComponent implements OnInit {
 
   
   public fetchOg() {
+    this.og = ogPayRentPage;
+  }
 
-          this.og = ogPayRentPage;
-        }
-
-public fetchTwitter() {
-        this.twitter = twitterPayRentPage;
-}
+  public fetchTwitter() {
+    this.twitter = twitterPayRentPage;
+  }
 
 
   public fetchMetaData() {

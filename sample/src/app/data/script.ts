@@ -321,3 +321,5 @@ export const ogPayRentPage = [
       content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
     },
   ];
+
+  
