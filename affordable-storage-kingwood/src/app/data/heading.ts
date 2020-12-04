@@ -8,4 +8,4 @@ export const storageTipsHeading = `Storage Tips`;
 
 export const unitSizerHeading = ``;
 
-export const contactHeading = `Contact Affordable Storage of Kingswood`;
+export const contactHeading = `Contact Affordable Storage of Kingwood`;

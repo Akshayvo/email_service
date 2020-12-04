@@ -3,6 +3,34 @@
     </div>
     <div [class.loader]="showLoader" class="loader-position"> 
     </div>
+    <div class="pb-5" [class.display]="!showTable">
+      <h3><strong>Discounted Rates</strong></h3>
+      <table > 
+        <tHead>
+          <tr>
+            <th colspan="2" class="px-4 py-1 border text-center" *ngFor="let discountRateHeader of discountRateHeader">
+              {{discountRateHeader.heading}}
+            </th>
+          </tr>
+        </tHead>
+        <tbody>
+          <tr *ngFor="let discountRate of discountRate">
+            <td colspan="2" class="px-4 py-1 border text-center" >
+              {{discountRate.size}}
+            </td>
+            <td colspan="2" class="px-4 py-1 border text-center">
+              {{discountRate.monthlyRental}}
+            </td>
+            <td colspan="2" class="px-4 py-1 border text-center" >
+              {{discountRate.semiAnnualRental}}
+            </td>
+            <td colspan="2" class="px-4 py-1 border text-center">
+              {{discountRate.discountAnnualRental}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   <table  class="viewrates-desktop">
       <tHead [class.display]="!showTable">
           <tr>
