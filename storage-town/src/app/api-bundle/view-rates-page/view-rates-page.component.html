@@ -1,9 +1,9 @@
 <div>
-    <div [class.loader]="!showTable">
-    </div>
-    <div [class.loader]="showLoader" class="loader-position"> 
-    </div>
-  <table  class="viewrates-desktop">
+  <div [class.loader]="!showTable">
+  </div>
+  <div [class.loader]="showLoader" class="loader-position"> 
+  </div>
+  <!-- <table  class="viewrates-desktop">
       <tHead [class.display]="!showTable">
           <tr>
             <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th">{{th.data}}</th>
@@ -17,19 +17,19 @@
           <td colspan="2" class="px-4 border text-center">
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
           </td>
-          <!-- <td colspan="2" class="px-4 border text-center">
+          <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount}}
-        </td> -->
-        <!-- <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled; else other_climate">
+        </td>
+        <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled; else other_climate">
           <strong> Yes</strong>
-        </td> -->
+        </td>
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
               <button (click)="navigate('reserve-unit', lstUnitType )">Reserve</button>
           </td>
-<!-- 
+
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
             <button (click)="navigate('move-in', lstUnitType)"> Move In</button>
-          </td> -->
+          </td>
       
           <ng-template #other_climate>
             <td colspan="2"  class="px-4 border text-center">
@@ -41,44 +41,62 @@
             <div class="text-center">Please call the facility to reserve a unit.</div>
           </td>
           </ng-template>
-          <!-- <ng-template #other_moveIn>
+          <ng-template #other_moveIn>
             <td colspan="2" class="py-2 px-4 border">
             <div class="text-center">Please call the facility to move in.</div>
           </td>
-          </ng-template> -->
+          </ng-template>
         </tr>
       </tbody>
-  </table>
-  <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes" style="width: 100%; margin: auto;">
-    <div class="col-6 text-center ">  
-      <strong>Unit Size</strong>
-    <div class=" py-1 ">{{lstUnitType.Description}}</div>
-    <div class="row">
-        
-        <div class="col-6 text-center ">
-            <p class=" "><b><u>Rate</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</div>
+  </table> -->
+  <div class="viewRates" [class.display]="!showTable">
+    <h3 class="text-center">
+      <strong>Unit Availability</strong>
+    </h3>
+    <div class="row py-2 my-2 unitDetail" *ngFor="let lstUnitType of LstUnitTypes">
+      <div class="col-4  unitType text-center">
+        <div class="p-2" *ngIf="lstUnitType.IsClimateControlled">  
+          <i class="fas fa-thermometer-half"></i>
         </div>
-        <!-- <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" >
-            <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
-        </div> -->
-
-    </div>
-    </div>
-      <div class="col-6 d-flex justify-content-center" >
-        <div *ngIf="lstUnitType.IsUnitsAvailable; else other" >
+        <div class="p-2">
+          <div class="p-2">
+            <strong>
+              {{lstUnitType.Description}}
+              </strong>
+          </div>
+          <div class="p-2" *ngIf="lstUnitType.IsOutdoor">
+              Outdoor Parking
+          </div>
+          <div class="" *ngIf="lstUnitType.IsMobile">
+            Mobile Unit
+          </div>
+          <div class="p-2" *ngIf="lstUnitType.IsAutomobile">
+            Vehicle Storage
+          </div>
+        </div>
+      </div>
+      <div class="col-4 text-center ">  
+        <div class="">
+          <div class=" text-center ">
+              <p class=" ">Rate</p>
+              <div class=" "><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</strong></div>
+          </div>
+          <div class="text-center" *ngIf="lstUnitType.DepositAmount != null">
+            <p>Deposit</p>
+            <div><span>$</span>{{lstUnitType.DepositAmount}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center" >
+        <div *ngIf="lstUnitType.IsUnitsAvailable" >
           <div class=" py-1 buttons" >
               <button class="btn  btn-primary" (click)="navigate('reserve-unit', lstUnitType )">Reserve</button>
           </div>
           <!-- <div class="py-1 buttons">
-              <button class=" btn btn-outline-primary" (click)="navigate('move-in', lstUnitType)"> Move In</button>
+              <button class=" btn btn-primary" (click)="navigate('move-in', lstUnitType)"> Move In</button>
           </div> -->
         </div>
-        <ng-template #other> 
-          <div class="text-right" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
-        </ng-template>
+      </div>  
     </div>
-  
-
   </div>
 </div>

@@ -19,6 +19,10 @@ export class LstUnitTypes {
     IsUnitsAvailable: boolean;
     IsClimateControlled: boolean;
     DepositAmount: number;
+    IsMobile: boolean;
+    IsAutomobile: boolean;
+    IsOutdoor: boolean;
+
 
     constructor(
         Description: string,
@@ -32,7 +36,10 @@ export class LstUnitTypes {
         UnitTypeID: number,
         IsUnitsAvailable: boolean,
         IsClimateControlled: boolean,
-        DepositAmount: number
+        DepositAmount: number,
+        IsOutdoor: boolean,
+        IsAutomobile: boolean,
+        IsMobile: boolean,
         ) {
         this.Description = Description,
         this.MonthlyRate = MonthlyRate;
@@ -46,6 +53,9 @@ export class LstUnitTypes {
         this.IsUnitsAvailable = IsUnitsAvailable;
         this.IsClimateControlled = IsClimateControlled;
         this.DepositAmount = DepositAmount;
+        this.IsAutomobile = IsAutomobile;
+        this.IsMobile = IsMobile;
+        this.IsOutdoor = IsOutdoor;
     }
 }
 

@@ -4,6 +4,36 @@
   display: none;
 }
 
+.viewRates {
+  background-color: $white;
+  h3 {
+    color: $white;
+    background-color: $primary;
+  }
+
+  .unitDetail:nth-child(odd) {
+    background: #a8a8a8;
+  }
+  
+  .unitDetail:nth-child(even) {
+    background: #fff5ee;
+  }
+
+  .unitDetail {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .unitType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .iconStyle {
   cursor: pointer;
 }
@@ -17,10 +47,6 @@
   padding: 10px;
   background-color: #edf1ee;
   text-align: center;
-  // position: absolute;
-  // right: 30px;
-  // bottom: -60px;
-  // z-index: 1;
 }
 
 table {
@@ -74,22 +100,9 @@ table {
   100% { transform: rotate(360deg); }
 }
 
-// try to use div
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  // width: 100%;
-  // border-bottom: thin solid lightgray;
-}
 
 p {
   margin: 0;
-}
-
-.ClimateControlled {
-  font-size: 0.8rem;
-  font-weight: 700;
 }
 
 .buttons {
@@ -97,19 +110,9 @@ p {
   justify-content: center;
 }
 
-.ClimateBorder {
-  border-left: 1px solid #000;
-  text-align: left;
-}
-
-@media only screen and (min-width: 992px) {
-  .viewrates-mobile {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .viewrates-desktop {
-    display: none;
+@media only screen and (max-width: 480px) {
+  .btn-primary {
+    min-width: auto;
+    font-size: 0.8rem;
   }
 }

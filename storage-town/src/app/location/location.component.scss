@@ -5,6 +5,23 @@
   padding-top: 172px;
 }
 
+.feature-block {
+  h2 {
+    line-height: 1.5rem;
+  
+  }
+
+  img {
+    height: 60px;
+  }
+
+  .f-text {
+    color: $dark;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+
 .social-content {
   .each-contact {
   font-size: 0.8rem;

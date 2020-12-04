@@ -13,6 +13,7 @@ import { CanonicalService } from '../services/canonical.service';
 import { Location1Script, Location2Script, Location3Script, Location4Script,
   ogLocation1, ogLocation2, ogLocation3, ogLocation4, twitterLocation1,
   twitterLocation2, twitterLocation3, twitterLocation4 } from '../data/script';
+import { featuresHead, featuresList } from '../data/home';
 
 
 @Component({
@@ -34,6 +35,9 @@ export class LocationComponent implements OnInit {
   script: any;
   twitter: any;
   og: any;
+  featuresList: any;
+  features: any;
+
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -168,8 +172,10 @@ export class LocationComponent implements OnInit {
 }
 
   ngOnInit() {
+    this.fetchFeatureHead();
     window.scrollTo(0, 0);
     this.isSomePage();
+    this.fetchFeatures();
   }
 
   public loadScript() {
@@ -182,6 +188,15 @@ export class LocationComponent implements OnInit {
     document.getElementsByTagName('head')[0].appendChild(node);
   }
 
+  public fetchFeatures() {
+    this.featuresList = featuresList;
+  }
+
+  public fetchFeatureHead() {
+    this.features = featuresHead;
+  }
+
+  
   public fetchOg() {
     if (this.router.url.includes('/location/chester-andrews-lane')) {
       this.og = ogLocation2;
