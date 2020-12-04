@@ -77,7 +77,6 @@ export class ThankYouComponent implements OnInit, OnDestroy {
       this.paymentNavigationUrl = localStorage.getItem('paymentNavigationUrl');
     }
     const today = new Date();
-    this.eventName = 'reservation';
     window['dataLayer'] = window['dataLayer'] || {};
     window['dataLayer'] = window['dataLayer'] || [];
     window['dataLayer'].push({

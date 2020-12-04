@@ -424,6 +424,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
         }
       }
       , (err: any) => {
+        this.gettingTenantData = false;
         if (err.status === 401) {
           localStorage.removeItem('strTenantToken');
         }
