@@ -96,8 +96,9 @@ h1 {
   position: absolute;
   top: 26%;
 
-  .btn-outline-primary {
+  .view-button {
     margin-right: 10px;
+    // color: $black;
   }
 }
 
@@ -619,7 +620,7 @@ h1 {
     top: auto;
     bottom: 2px;
 
-    .btn-outline-primary {
+    .view-button {
       margin-right: 0;
       margin-bottom: 8px;
     }

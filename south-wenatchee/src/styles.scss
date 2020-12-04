@@ -29,8 +29,8 @@ $south-wenatchee-theme: mat-light-theme($south-wenatchee-primary, $south-wenatch
 /* You can add global styles to this file, and also import other style files */
 
 //Basic color and font styles
-$primary:#f47521;
-$primaryDark: #b15213;
+$primary:#b0b0b0;
+$primaryDark:#807b7b;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
@@ -93,7 +93,7 @@ body {
 .btn-primary {
   background-color: $primary !important;
   border-color: $primary !important;
-  color: $white !important;
+  color: $black !important;
   min-width: 200px;
 }
 

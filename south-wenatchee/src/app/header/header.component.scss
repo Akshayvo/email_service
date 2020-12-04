@@ -3,7 +3,7 @@
 
 a {
   cursor: pointer;
-  color: white !important;
+  color: $white !important;
 }
 
 
@@ -13,14 +13,19 @@ img {
 }
 
 .iconColor {
-  color: $white;
+  color: $black;
 }
 
 .contact-header {
   display: inline;
+  a {
+    cursor: pointer;
+    color: $black !important;
+  }
+  
 
   .contact-details {
-    color: $white;
+    color: $black;
     font-size: 0.82em;
     font-weight: 500;
     width: 100%;
@@ -113,5 +118,11 @@ img {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .navbar-brand {
+    font-size: 15px;
   }
 }
