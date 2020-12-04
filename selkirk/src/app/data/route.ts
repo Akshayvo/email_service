@@ -58,19 +58,19 @@ import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
         { path: 'payMoveInCharges', component: PayRentFormComponent },
       ]
      },
-    {
-      path: 'pay-rent', component: PaymentComponent,
-      children: [
-        { path: '', redirectTo: 'login', pathMatch: 'full'},
-        { path: 'login', component: LoginComponent },
-        { path: 'forgotPassword', component: ForgotPasswordComponent },
-        { path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-        { path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-        { path: 'verifyCode', component: VerifyCodeComponent },
-        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-        // canActivate: [VerifictionCodeGuard]
-      ]
-    },
+    // {
+    //   path: 'pay-rent', component: PaymentComponent,
+    //   children: [
+    //     { path: '', redirectTo: 'login', pathMatch: 'full'},
+    //     { path: 'login', component: LoginComponent },
+    //     { path: 'forgotPassword', component: ForgotPasswordComponent },
+    //     { path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+    //     { path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+    //     { path: 'verifyCode', component: VerifyCodeComponent },
+    //     { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+    //     // canActivate: [VerifictionCodeGuard]
+    //   ]
+    // },
     { path: 'forgot-password', component: ForgotPasswordComponent },
     { path: 'review', component: HomeComponent,
       resolve: {

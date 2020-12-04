@@ -23,7 +23,7 @@ export const th = [
       data: `Rate`
     },
     {
-      data: `Discounted Rate`
+      data: `50% Off First Full Month`
     },
     {
       data: `Reserve a Unit`

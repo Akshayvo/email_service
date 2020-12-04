@@ -15,10 +15,10 @@ export const navLinks = [
         label: 'RESERVE UNIT',
         path: 'reserve',
     },
-    {
-        label: 'PAY RENT',
-        path: '/pay-rent',
-    },
+    // {
+    //     label: 'PAY RENT',
+    //     path: '/pay-rent',
+    // },
     {
         label: 'STORAGE TIPS',
         path: 'storage-tips',
