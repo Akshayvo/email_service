@@ -36,7 +36,7 @@ export const hours = [
         data: 'CLOSED'
     },
     {
-        label: 'Access Hours: ',
+        label: 'Storage Access Hours: ',
         data: '24 hours a day, 7 days a week'
     }
 ];
