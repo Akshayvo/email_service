@@ -1,0 +1,21 @@
+<div class="table-responsive">
+  <table class="table table-striped">
+    <tHead *ngIf="(th !== undefined)">
+      <tr>
+        <th colspan="2" class="table-head">{{th}}</th>
+      </tr>
+    </tHead>
+    <tbody>
+      <tr *ngFor="let td of tds">
+        <td *ngFor="let key of objectKeys;">
+          <p *ngIf="(key === 'label')">
+            <b>{{td[key]}}</b>
+          </p>
+          <p *ngIf="(key === 'data')">{{td[key]}}</p>
+          <p class="text-align-right" *ngIf="(key === 'rate')">{{td[key]}}</p>
+          <ul *ngIf="(key === 'td1' || key === 'td2' && td[key] !== undefined)"><li><h5 class="mb-0">{{td[key]}}</h5></li></ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
