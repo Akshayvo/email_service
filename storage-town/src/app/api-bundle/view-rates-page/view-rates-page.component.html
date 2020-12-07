@@ -3,52 +3,6 @@
   </div>
   <div [class.loader]="showLoader" class="loader-position"> 
   </div>
-  <!-- <table  class="viewrates-desktop">
-      <tHead [class.display]="!showTable">
-          <tr>
-            <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th">{{th.data}}</th>
-          </tr>
-      </tHead>
-      <tbody>
-        <tr *ngFor="let lstUnitType of LstUnitTypes">
-          <td colspan="2" class="px-4 border text-center">
-              {{lstUnitType.Description}}
-          </td>
-          <td colspan="2" class="px-4 border text-center">
-              <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
-          </td>
-          <td colspan="2" class="px-4 border text-center">
-            <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount}}
-        </td>
-        <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled; else other_climate">
-          <strong> Yes</strong>
-        </td>
-          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
-              <button (click)="navigate('reserve-unit', lstUnitType )">Reserve</button>
-          </td>
-
-          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
-            <button (click)="navigate('move-in', lstUnitType)"> Move In</button>
-          </td>
-      
-          <ng-template #other_climate>
-            <td colspan="2"  class="px-4 border text-center">
-            {{defaultClimateString}}
-          </td>
-          </ng-template>
-          <ng-template #other_reserve>
-            <td colspan="2" class="py-2 px-4 border">
-            <div class="text-center">Please call the facility to reserve a unit.</div>
-          </td>
-          </ng-template>
-          <ng-template #other_moveIn>
-            <td colspan="2" class="py-2 px-4 border">
-            <div class="text-center">Please call the facility to move in.</div>
-          </td>
-          </ng-template>
-        </tr>
-      </tbody>
-  </table> -->
   <div class="viewRates" [class.display]="!showTable">
     <h3 class="text-center">
       <strong>Unit Availability</strong>
@@ -56,10 +10,10 @@
     <div class="row py-2 my-2 unitDetail" *ngFor="let lstUnitType of LstUnitTypes">
       <div class="col-4  unitType text-center">
         <div class="p-2" *ngIf="lstUnitType.IsClimateControlled">  
-          <i class="fas fa-thermometer-half"></i>
+          <i class="fas fa-thermometer-half"></i><div>Climate Control</div>
         </div>
         <div class="p-2">
-          <div class="p-2">
+          <div class="p-2" class="custom-font">
             <strong>
               {{lstUnitType.Description}}
               </strong>
@@ -78,8 +32,8 @@
       <div class="col-4 text-center ">  
         <div class="">
           <div class=" text-center ">
-              <p class=" ">Rate</p>
-              <div class=" "><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</strong></div>
+              <p >Rate</p>
+              <div class="custom-font"><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</strong></div>
           </div>
           <div class="text-center" *ngIf="lstUnitType.DepositAmount != null">
             <p>Deposit</p>
