@@ -3,8 +3,11 @@
     <h1 class="text-center py-5 mb-0">{{payRentHeading}}</h1>
     <div class="pay-rent-holder">
       <div class="row bg-light background-padding" *ngIf="showPaymentPageType === 0">
-        <div class="col-md-12">
-            <router-outlet></router-outlet>
+        <div class="col-md-12 ">
+            <!-- <router-outlet></router-outlet> -->
+          <div class="coming ">
+            <b>COMING SOON!</b>
+          </div>
         </div>
       </div>
       <div class="row" *ngIf="showPaymentPageType === 1">

@@ -4,63 +4,58 @@ export const featuresList = [
         td2: 'Online Bill Pay',
     },
     {
-        td1: 'Security Cameras',
-        td2: 'Well-Lit Facility',
-    },
-    {
-        td1: 'Brand New Units',
+        td1: 'Drive-Up Units',
         td2: 'Auto-Pay Available',
     },
     {
-        td1: 'Fully-Paved Facility',
-        td2: 'Pin-Pad Activated Security Gate',
+        td1: 'Friendly Customer Service',
+        td2: 'Affordable Rates',
     },
     {
-        td1: 'Affordable Rates',
-        td2: 'Climate-Controlled Units Available',
+        td1: 'Recreational Vehicle Storage',
+        td2: 'Boat Storage',
     },
     {
-        td1: 'Retail Store On-Premises',
-        td2: 'Fully-Fenced Facility',
-    }
+        td1: 'Paved',
+    },
 ];
 
-export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
+export const aboutUsAlt = ``;
 
-export const aboutUsHeading = `Affordable Self Storage in Baldwinsville`;
+export const aboutUsHeading = `Affordable Self Storage Units & Outside Parking in Woodland`;
 
 export const aboutUs = [
     {
-        p: `Sample Self Storage - North has proudly served the village of Baldwinsville with friendly
-        service, and clean, well-maintained self storage units for nearly 20 years. We are a locally
-        owned business that prides itself on the trust we've earned from out friends and neighbors over
-        the past two decades.`,
+        p: `Stor-A-Wile serves Woodland, La Center, Battleground, and the surrounding area with
+        quality, 24-hour access self storage and outdoor parking services. Our friendly customer
+        service, and modern amenities such as online reservations, a 24-hour access tenant portal,
+        and automatic payments make your storage experience an easy one.
+        `,
     },
     {
-        p: `We are located across the street from the iconic Lock 24 restaurant, and offer easy access
-        through our electronic pin-code secured front gate. Our parking lanes are extra-wide to make
-        maneuvering your moving truck to your unit a breeze. Need access outside of regular banking hours?
-        We're open 24 hours a day! Use our on-site kiosk or rent online and you can can be moving into your unit in minutes!`,
+        p: `If conveniently located, 24-hour access self storage is what you're looking for, take a
+        moment to check out our Unit Sizer page, then give our friendly staff a call at (360) 225-5097
+        to learn more about our pricing and availability! In need of parking for a camper, recreational
+        vehicle, boat, or trailer? Jot down the length of your vehicle and let our helpful staff find a
+        spot in our ample parking area!`,
     },
     {
-        p: `Our units range from closet-sized 5-foot-by-5-foot units that are perfect for seasonal
-        clothing, and sports equipment to our 10-foot-by-30-foot units that will store a multi-bedroom
-        home during a move! Sample Self Storage - North has units available in regular, unconditioned
-        varieties and climate controlled for those belongings that require a little extra protection.`,
+        p: `Whether you're a local business looking to save money on equipment, inventory, and supplies
+        storage, or a homeowner or renter with an upcoming move, renovation, or downsizing, we've got a
+        storage unit for you! Call today to learn more!`,
     },
-    {
-        p: `Whether you're a growing business in need of a place for equipment, documents, and supplies,
-        or if you're a residential storage user in the process of a move, or a renovation, we've got your
-        storage needs covered. Let Sample Self Storage - North help de-clutter your life today!`,
-    }
     
 ];
 
-export const gettingStarted = `Are you ready to stop putting off cleaning out your attic, garage, or shed?
-Clear up some room around the house with Sample Self Storage - North and one of our affordable storage units,
-accessible 24 hours a day!`;
+export const gettingStarted = ``;
 
 export const feature = [
+    {
+        // tslint:disable-next-line:max-line-length
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/garage.svg`,
+        label: 'Boat and Vehicle Storage',
+        alt: 'Icon art displaying boat and motorcycle'
+    },
     {
         // tslint:disable-next-line:max-line-length
         label: 'Convenient Location',
@@ -69,32 +64,22 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
-        label: 'Stellar Customer Service',
-        alt: 'Customer Service Representative Icon'
-    },
-    {
-        // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
-        label: 'Affordable Self Storage Rates',
-        alt: 'Icon of a hand holding money'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg`,
+        label: '24 Hour Facility Access',
+        alt: 'Icon art displaying clock hands and the number 24'
 
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg`,
-        label: 'Security Cameras on Premises',
-        alt: 'Icon of a security camera'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
+        label: 'Stellar Customer Service',
+        alt: 'Customer Service Representative Icon'
     },
 ];
 
 export const jumbotron = [
     {
-        h2: `Affordable Climate Controlled Units in Baldwinsville`,
-        blurb: `Sample Self Storage - North was the first self storage facility we built nearly 20 years ago.
-        We recently renovated our entire operation to make sure our valued customers have another 20 years of
-        clean, affordable regular and climate controlled self storage options in Baldwinsville! Let Sample Self
-        Storage - North help you today. Our well-lit and personalized pin-code secured facility awaits your next
-        storage project!`,
+        h2: ``,
+        blurb: ``,
     }
 ];

@@ -93,8 +93,8 @@
         </p>
         <h4><b>Facility Hours:</b></h4>
         <p>
-          <span class="display-contact" *ngFor="let hour of hours">
-            <h4><strong>{{hour.label}}</strong></h4>&nbsp;<h4>{{hour.data}}</h4><br>
+          <span *ngFor="let hour of hours">
+            <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
           </span>
         </p>
       </div>

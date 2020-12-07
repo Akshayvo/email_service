@@ -7,18 +7,18 @@ export const environment = {
   type: 0,  // { API: 0, iframe: 1 }
   locationName: 'new-york',
   alternateTenant: `navigateToMoveIn`, // {0, 1, navigateToReserve, navigateToMoveIn},
-  paymentPageType: 1, // { withoutTab: 0, withTab: 1}
+  paymentPageType: 0, // { withoutTab: 0, withTab: 1}
   reservetionFormType: 0, // { withoutAlternateDetail:0, withAlternateDetial: 1}
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Sample Self Storage - North',
-  facilityName: 'Sample Self Storage - North',
+  appId: 'Store-A-Wile - Testing',
+  facilityName: 'Store-A-Wile',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://sample-self-storage-staging.netlify.app',
+  websiteUrl: '',
   // baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463

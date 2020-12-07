@@ -8,11 +8,11 @@
 
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/webp/sample-self-storage-north-jumbotron.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store-A-Wile/webp/store-a-wile-jumbotron.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Store-A-Wile/jpg/store-a-wile-jumbotron.jpg");
 }
 
 .display-contact {
@@ -459,6 +459,7 @@
 
   .jumbotron {
     height: 100vh;
+    background-position: right 14% bottom 0;
   }
 
   .jumbotron-bottom {
@@ -494,7 +495,8 @@
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    // background-position: center left;
+    background-position: right 12% bottom 0;
     height: 100vh;
 
     h1 {
@@ -549,11 +551,12 @@
   }
 }
 
-@media only screen and (max-width: 600px) and (min-width: 420px) {
+@media only screen and (max-width: 600px) and (min-width: 430px) {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    // background-position: center left;
+    background-position: right 30% bottom 0;
     height: 100vh;
   }
 
