@@ -26,6 +26,15 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "https://storage-town.com/pay-rent/chester/login"
+  to = "https://storage-town.com/pay-rent/chester-brookside-ave/login"
+  status = 301
+[[redirects]]
+  from = "https://storage-town.com/pay-rent/andrews/login"
+  to = "https://storage-town.com/pay-rent/chester-andrews-lane/login"
+  status = 301
+  [[redirects]]
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
