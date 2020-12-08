@@ -14,11 +14,10 @@ export const featuresList = [
     },
     {
         td1: 'Clean Facility',
-        td2: 'On-Site Management'
+        td2: `Easy Access Off Rt. 31`
     },
     {
         td1: 'Online Reservations & Payment',
-        td2: `Easy Access Off Rt. 31`
     }
 ];
 
@@ -69,20 +68,21 @@ export const feature = [
 export const aboutUs = [
     {
         mainHeading: `Affordable Storage Units and RV Parking in Macedon NY`,
-        mainParagraph: `Macedon Self Storage is proud to offer high quality self storage and RV parking since 2006.
-        When it comes to self storage services, we are your local experts with three self storage facilities in the
-        Rochester area. We work hard every day to make our facilities secure, convenient, and affordable.`,
+        mainParagraph: `We take pride in being the hometown experts with three self storage facilities in the greater Rochester
+        area and are committed to offer the right mix of affordability, security and convenience.`,
         subHeading2: {
             heading: `Security for Your Possessions`,
-            p: `Macedon Self Storage goes beyond the standard padlock on a unit to offer additional protection for
-            your belongings. Our facility is fenced with an electronic security gate that is controlled by your
-            unique access code issued during move in. We have security cameras recording 24 hours a day, and the facility is well-lit.`
+            p: `Above a standard padlock, Macedon storage includes additional safeguards for your possessions. The complete property
+            is fenced in and the security gate is controlled by you entering your unique access code. Security cameras record
+            non-stop with on-demand replay.  The lights remain on dusk til dawn.`
         },
         subHeading3: {
             heading: `For Your Convenience`,
-            p: `Our facility offers 24/7 drive-up access to your units. We also have a 24-hour account management
-            portal where your rent can be conveniently paid. For personal assistance, our management team is always
-            happy to help. Call (585) 381-6557.`
+            p: `Convenience starts with access to your belongings at anytime, just pull the car up to your unit!
+            It's easy to make a payment and to manage your account through our online portal. For personal assistance,
+            the management is happy to help by calling (585) 381-6557.
+
+            `
         },
 
     }
