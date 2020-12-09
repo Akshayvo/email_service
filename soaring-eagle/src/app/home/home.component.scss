@@ -7,13 +7,7 @@
 }
 
 
-.jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/webp/sample-self-storage-north-jumbotron.webp");
-}
 
-.jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg");
-}
 
 .display-contact {
   display: flex;
@@ -24,11 +18,87 @@
   background-size: cover;
   background-position: center;
   padding: 0;
-  height: 80vh;
+  height: 100vh;
   color: $white;
   overflow: hidden;
   border-radius: 0;
 }
+
+.carousel-caption {
+  bottom: 40px;
+
+  img {
+    height: 120px;
+  }
+}
+
+
+  .carousel-indicators {
+    li {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 1px $primary solid;
+      position: relative;
+      flex: 0 1 auto;
+      margin-right: 3px;
+      margin-left: 3px;
+      text-indent: -999px;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: $primary;
+    }
+  }
+
+  .carousel-item {
+    max-width: 100%;
+
+    .active {
+      background-position: center center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+
+
+.jumbotron-top-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Soaring_Eagle/jpg/campground-aerial-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.jumbotron-top1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Soaring_Eagle/jpg/campground-dock-sunset.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+.jumbotron-top-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Soaring_Eagle/webp/campground-aerial-image.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.jumbotron-top1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Soaring_Eagle/webp/campground-dock-sunset.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 
 .home-map {
   iframe {
@@ -83,7 +153,7 @@
 }
 
 .jumbotron-top {
-  height: 80vh;
+  height: 100vh;
 }
 
 .jumbotron-bottom {

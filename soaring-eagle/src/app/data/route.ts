@@ -77,13 +77,13 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
  export const apiRoutes = [
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
-    { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
-    { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
+    { path: `/storage-tips`, component: StorageTipsComponent },
+    { path: `/reserve-unit`, component: ReserveComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     {
-      path: `${environment.locationName}/view-rates`,
+      path: `/view-rates`,
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
@@ -96,7 +96,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
       ]
      },
      {
-      path: `${environment.locationName}/rent-now`,
+      path: `/rent-now`,
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },

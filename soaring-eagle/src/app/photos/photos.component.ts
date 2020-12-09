@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { galleryHome } from '../data/galleryImage';
+import { galleryHome, viewRateImages } from '../data/galleryImage';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UaParserService } from '../services/ua-parser.service';
 
@@ -12,6 +12,7 @@ export class PhotosComponent implements OnInit {
   name: string;
   selectedImage: any;
   galleryImages: any;
+  viewRateImages: any;
   imageBaseUrl: any;
   imagetype: any;
 
@@ -26,12 +27,24 @@ export class PhotosComponent implements OnInit {
     }
 
   ngOnInit() {
-    this.fetchGallery();
+    this.isSomePage();
     this.setSelectedImage(this.galleryImages[0]);
+  }
+
+  public isSomePage() {
+    if (this.router.url.includes('/view-rates')) {
+      this.fetchViewRateGallery();
+    } else {
+      this.fetchGallery();
+    }
   }
 
   public fetchGallery() {
     this.galleryImages = galleryHome;
+  }
+
+  public fetchViewRateGallery() {
+    this.galleryImages = viewRateImages;
   }
 
   setSelectedImage(image: any) {

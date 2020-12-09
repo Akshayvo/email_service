@@ -7,28 +7,28 @@ export const navLinks = [
     },
     {
         label: 'VIEW RATES',
-        path: `${environment.locationName}/view-rates`,
+        path: `/view-rates`,
     },
     // {
     //     label: 'RENT NOW',
-    //     path: `${environment.locationName}/rent-now`,
+    //     path: `/rent-now`,
     // },
-    {
-        label: 'RESERVE UNIT',
-        path: `${environment.locationName}/reserve-unit`,
-    },
+    // {
+    //     label: 'RESERVE UNIT',
+    //     path: `/reserve-unit`,
+    // },
     {
         label: 'PAY RENT',
         path: '/pay-rent'
     },
-    {
-        label: 'STORAGE TIPS',
-        path: `${environment.locationName}/storage-tips`
-    },
-    {
-        label: 'UNIT SIZER',
-        path: '/unit-sizer'
-    },
+    // {
+    //     label: 'STORAGE TIPS',
+    //     path: `${environment.locationName}/storage-tips`
+    // },
+    // {
+    //     label: 'UNIT SIZER',
+    //     path: '/unit-sizer'
+    // },
     {
         label: 'CONTACT US',
         path: '/contact-us'

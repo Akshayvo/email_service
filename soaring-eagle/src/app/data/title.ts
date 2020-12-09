@@ -19,8 +19,8 @@ export const unitSizerPageContent = ``;
 export const contactPageTitle = `Contact Us | Soaring Eagle Campground`;
 export const contactPageContent = `Have questions about Soaring Eagle Campground campsites, events, and amenities? Use our contact page to reach out today!`;
 
-export const thankYouPageTitle = `Thank You For Reserving Your Unit at Sample Self Storage!`;
-export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
+export const thankYouPageTitle = ``;
+export const thankYouPageContent = ``;
 
-export const privacyPolicyPageTitle = `Privacy Policy | Sample Self Storage - North`;
-export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
+export const privacyPolicyPageTitle = ``;
+export const privacyPolicyPageContent = ``;

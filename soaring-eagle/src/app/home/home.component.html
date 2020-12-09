@@ -1,26 +1,35 @@
 <div class="">
   <div class="jumbotron-container">
     <div class="jumbotron-top">
-    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
-      <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
-      </div>
-      <div class="container">
-        <div class="jumbotorn-skew-text">
-          <div class="disp" *ngFor="let jumbotron of jumbotron">
-            <h2  class="my-4">
-              {{jumbotron.h2}}
-            </h2>
-          <p class="text-justify">{{jumbotron.blurb}}</p>
+    <div class="jumbotron px-0 m-0" >
+      <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselJumbo" data-slide-to="1"></li>
+         
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-top-jpg' : 'jumbotron-top-webp' ">
+              
+            </div>
           </div>
-          <div class="jumbotorn-button">
-            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
+          <div class="carousel-item">
+            <div class="jumbotron-top1 jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-top1-jpg' : 'jumbotron-top1-webp' ">
+              
+            </div>
           </div>
-          </div>
+          <!-- <div class="carousel-item">
+            <div class="jumbotron-top2 jumbotron-top-style">
+              
+            </div>
+          </div> -->
         </div>
       </div>
+      
       </div>
-    <div class="jumbotron-bottom">
+      </div>
+    <!-- <div class="jumbotron-bottom">
       <div class="container">
         <div class="feature row">
           <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
@@ -29,7 +38,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
 
@@ -61,7 +70,7 @@
             </div>
             <div>
               <app-tables [tBody]="featuresList"></app-tables>
-              <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+              <!-- <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a> -->
             </div>
           </div>
         </div>
@@ -72,7 +81,8 @@
     <div class="section py-5 m-0">
       <div class="row">
         <div class="col-lg-6 py-3">
-          <img src="{{imageBaseUrl}}/inside-self-storage-unit.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
+          <!-- <img src="{{imageBaseUrl}}/inside-self-storage-unit.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
+          <app-photos></app-photos>
         </div>
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
@@ -82,7 +92,7 @@
     </div>
   </div>
 
-  <div class="getStarted" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+  <!-- <div class="getStarted" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
     <div class="bg-translucent-dark">
       <div class="container">
         <div class="section py-5 m-0">
@@ -96,5 +106,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div> 
