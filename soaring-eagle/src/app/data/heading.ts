@@ -9,3 +9,5 @@ export const storageTipsHeading = ``;
 export const unitSizerHeading = ``;
 
 export const contactHeading = `Contact Soaring Eagle Campground`;
+
+export const amenitiesHeading = `Amenities & Conveniences`;

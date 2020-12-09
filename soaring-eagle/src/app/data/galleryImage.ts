@@ -38,9 +38,9 @@ export const galleryHome = [
 
 export const viewRateImages = [
   {
-    url: `aerial-campground-image`,
+    url: `aerial-campground-dock-photo`,
     // tslint:disable-next-line:max-line-length
-    thumb: `aerial-campground-image-thumb`,
+    thumb: `aerial-campground-dock-photo-thumb`,
     alt: `aerial photography of campers parked in a campground `
   },
   {

@@ -29,6 +29,7 @@ import { environment } from '../../environments/environment';
 import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from '../thank-you.guard';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
+import { AmenitiesComponent } from '../amenities/amenities.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -77,13 +78,14 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
  export const apiRoutes = [
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
-    { path: `/storage-tips`, component: StorageTipsComponent },
-    { path: `/reserve-unit`, component: ReserveComponent },
+    { path: `storage-tips`, component: StorageTipsComponent },
+    { path: `reserve-unit`, component: ReserveComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
+    { path: 'amenities', component: AmenitiesComponent},
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     {
-      path: `/view-rates`,
+      path: `view-rates`,
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
@@ -96,7 +98,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
       ]
      },
      {
-      path: `/rent-now`,
+      path: `rent-now`,
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },

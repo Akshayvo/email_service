@@ -648,7 +648,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         localStorage.removeItem('strTempTenantToken');
         this.tokenRemoved = true;
       }
-      this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
+      this.router.navigate([`/view-rates/thank-you`]);
       this.reservationInProgress = false;
     }, (err: any) => {
       this.makePaymentForUnit = false;
@@ -692,7 +692,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           localStorage.removeItem('strTempTenantToken');
           this.tokenRemoved = true;
         }
-        this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
+        this.router.navigate([`/view-rates/thank-you`]);
         this.reservationInProgress = false;
       }, (err: any) => {
         this.makePaymentForUnit = false;

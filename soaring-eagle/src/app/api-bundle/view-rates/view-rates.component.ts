@@ -65,7 +65,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   
   public navigate(location: any) {
     if ((location === '/view-rates') || (location === '/storage-tips') || (location === '/reserve-unit')) {
-      this.router.navigate([`${environment.locationName}/${location}`]);
+      this.router.navigate([`${location}`]);
     } else {
       this.router.navigate([`${location}`]); 
     }

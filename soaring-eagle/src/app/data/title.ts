@@ -24,3 +24,6 @@ export const thankYouPageContent = ``;
 
 export const privacyPolicyPageTitle = ``;
 export const privacyPolicyPageContent = ``;
+
+export const amenitiesPageTitle = `Amenities | Soaring Eagle Campgrounds`;
+export const amenitiesPageContent = `From our camp store to our scenic picnic areas and campsites with WiFi, check out what we've got in store for you!`; 

@@ -61,6 +61,7 @@ import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { MicrodataComponent } from './api-bundle/microdata/microdata.component';
+import { AmenitiesComponent } from './amenities/amenities.component';
 
 @NgModule({
   declarations: [
@@ -104,6 +105,7 @@ import { MicrodataComponent } from './api-bundle/microdata/microdata.component';
     ThankYouComponent,
     PrivacyPolicyComponent,
     MicrodataComponent,
+    AmenitiesComponent,
   ],
   imports: [
     CommonModule,
