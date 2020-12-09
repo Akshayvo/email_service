@@ -20,7 +20,7 @@ export class ContactComponent implements OnInit {
   email: any;
   phone: any;
   message: string;
-  contactInfo: any;
+  contactDetails: any;
   receiveremail: string;
   completeMessage: string;
   contactForm: FormGroup;
@@ -60,7 +60,7 @@ export class ContactComponent implements OnInit {
 
   get f() { return this.contactForm.controls; }
   public fetchContactDetails() {
-    this.contactInfo = contact;
+    this.contactDetails = contact;
   }
 
   public fetchHours() {
@@ -79,7 +79,7 @@ export class ContactComponent implements OnInit {
         this.contactForm.value.subject = 'Website Form Submission';
       }
 
-      this.receiveremail = this.contactInfo[2].data;
+      this.receiveremail = this.contactDetails[2].data;
 
           this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
                                  message: ${this.contactForm.value.message}`;

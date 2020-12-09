@@ -86,14 +86,22 @@
               </div>
               <div class="contact-details pt-4">
                 <h2 class="py-1">Macedon Storage</h2>
-                <span class="font-xs-device" *ngFor="let contact of contactInfo">
-                    <b>{{contact.label}}</b><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
-                    <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
-                </span>
-                <h3 class="py-1"><strong>Office:</strong></h3>
-                <span class="font-xs-device" *ngFor="let hour of hours">
-                  <b>{{hour.label}}</b> {{hour.data}}<br>
-                </span>
+                <div class="font-xs-device" *ngFor="let contact of contactDetails" [class.mb-3]="contact?.label === 'Facility Address: '">
+                    <span class="contact-links" *ngIf="contact?.label === 'Facility Address: ' || contact?.label === 'Office Address: '"> <b>{{contact.label}}</b>&nbsp;{{contact.data}}</span>
+                     <!-- <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br> -->
+                   </div>
+                   <!-- <div class="pt-2"><strong >Office Hours:</strong></div> -->
+                   <div class="font-xs-device mb-3">
+                     <div *ngFor="let hour of hours">
+                       <b>{{hour.label}}</b>{{hour.data}}<br>
+                     </div>    
+                   </div>
+     
+                   <div class="font-xs-device" *ngFor="let contact of contactDetails">
+                     <span class="contact-links" *ngIf="contact?.label=== 'Email: ' || contact?.label === 'Phone: '"><b>{{contact.label}}</b>
+                       <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                     <!-- <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br> -->
+                   </div>
               </div>
           </div>
       </div>
