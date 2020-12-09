@@ -1,6 +1,6 @@
 {
   "name": "linden-self-storage",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
