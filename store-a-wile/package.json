@@ -1,6 +1,6 @@
 {
   "name": "store-a-wile",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxyconfig.json",
@@ -32,7 +32,6 @@
     "@ng-toolkit/universal": "^8.0.3",
     "@nguniversal/express-engine": "^6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
-    "@types/ua-parser-js": "^0.7.33",
     "angulartics2": "^6.3.1",
     "bootstrap-select-v4": "^1.12.4",
     "core-js": "^2.6.5",
@@ -43,7 +42,7 @@
     "node-sass": "^4.12.0",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
-    "ua-parser-js": "^0.7.22",
+    "ua-parser-js": "^0.7.20",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
@@ -72,7 +71,7 @@
     "ts-loader": "^4.2.0",
     "ts-node": "~7.0.0",
     "tslint": "^5.14.0",
-    "typescript": "^3.2.4",
+    "typescript": "^3.1.6",
     "typescript-tslint-plugin": "^0.5.5",
     "webpack-cli": "^3.3.0"
   }

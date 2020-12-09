@@ -226,6 +226,10 @@
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .jumbotron {
+    background-position: right 32% bottom 0;
+  }
+
   .jumbotorn-skew-text {
     width: 444px;
 
@@ -358,6 +362,10 @@
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
+  .jumbotron {
+    background-position: right 16% bottom 0;
+  }
+
   .jumbotorn-skew-style {
     width: 85%;
   }
@@ -459,7 +467,7 @@
 
   .jumbotron {
     height: 100vh;
-    background-position: right 14% bottom 0;
+    background-position: right 32% bottom 0;
   }
 
   .jumbotron-bottom {
@@ -556,7 +564,7 @@
     text-align: center;
     background-attachment: unset;
     // background-position: center left;
-    background-position: right 30% bottom 0;
+    background-position: right 32% bottom 0;
     height: 100vh;
   }
 
@@ -593,7 +601,7 @@
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    background-position: right 32% bottom 0;
     height: 100vh;
   }
 

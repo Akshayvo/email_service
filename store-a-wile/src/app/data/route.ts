@@ -81,7 +81,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
     { path: `reserve-unit`, component: ReserveComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
-    // { path: 'privacy-policy', component: PrivacyPolicyComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
     // {
     //   path: `${environment.locationName}/view-rates`,
     //   component: ViewRatesComponent,
