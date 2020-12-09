@@ -13,7 +13,6 @@ export class ThankYouGuard implements CanActivate {
     private dataSharingService: DataSharingService,
     public router: Router,
   ) {
-    console.log('constructor -  ThankYouGuard is working');
   }
   path: ActivatedRouteSnapshot[];
   route: ActivatedRouteSnapshot;

@@ -191,10 +191,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       };
     }
 
-    // this.alternateTenantDetail = environment.alternateTenant;
-
-    // console.log('this.alternateTenantDetail', this.alternateTenantDetail);
-
     if (this.router.url.includes('view-rates')) {
       this.showReservationButton = true;
     } else {
