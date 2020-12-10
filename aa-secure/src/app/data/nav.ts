@@ -24,6 +24,11 @@ export const navLinks = [
                 label: '113 McDonald Parkway',
                 path: '/location/113-mcDonald-parkway'
             },
+            {
+                id: '3',
+                label: '650 Parker Rd',
+                path: '/location/650-Parker-Rd'
+            },
         ]
     },
     {

@@ -3,7 +3,8 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
-        contactsLocation4, hoursLocation4 } from '../data/contact';
+        contactsLocation4, hoursLocation4,
+        contactsLocation3, hoursLocation3 } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
 import { LocationService } from '../services/location.service';
 
@@ -56,12 +57,14 @@ export class HomeComponent implements OnInit {
     this.contactsLocation1 = contactsLocation1;
     this.contactsLocation2 = contactsLocation2;
     this.contactsLocation4 = contactsLocation4;
+    this.contactsLocation3 = contactsLocation3;
   }
 
   public fetchHours() {
     this.hoursLocation1 = hoursLocation1;
     this.hoursLocation2 = hoursLocation2;
     this.hoursLocation4 = hoursLocation4;
+    this.hoursLocation3 = hoursLocation3;
   }
 
   // receiveMessage() {

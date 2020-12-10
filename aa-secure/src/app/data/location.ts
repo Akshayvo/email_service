@@ -31,12 +31,25 @@ export const tabs1 = [
     },
 ];
 
+export const tabs2 = [
+    {
+        id: '1',
+        name: 'Reservations',
+        path: './reservations',
+        active: true,
+    },
+    // {
+    //     id: '2',
+    //     name: 'About Us',
+    //     path: './about',
+    // },
+];
 
 export const headingLocation1 = `AA Secure Storage - 730 Kenton Station`;
 
 export const headingLocation2 = `AA Secure Storage - 751 Kenton Station`;
 
-export const headingLocation3 = ``;
+export const headingLocation3 = `AA Secure Storage - 650 Parker Rd`;
 
 export const headingLocation4 = `AA Secure Storage - McDonald Parkway`;
 

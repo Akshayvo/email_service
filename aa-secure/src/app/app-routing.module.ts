@@ -49,12 +49,21 @@ const routes: Routes = [
       { path: 'about', component: AboutUsComponent },
     ]
   },
+  
   { path: 'location/113-mcDonald-parkway',
   component: LocationComponent,
   children: [
     { path: '', redirectTo: 'reservations', pathMatch: 'prefix'},
     { path: 'reservations', component: ReserveUnitComponent },
     { path: 'about', component: AboutUsComponent },
+  ]
+},
+{ path: 'location/650-Parker-Rd',
+  component: LocationComponent,
+  children: [
+    { path: '', redirectTo: 'reservations', pathMatch: 'prefix'},
+    { path: 'reservations', component: ReserveUnitComponent },
+    // { path: 'about', component: AboutUsComponent },
   ]
 },
   { path: 'review/730-kenton-station', component: HomeComponent,

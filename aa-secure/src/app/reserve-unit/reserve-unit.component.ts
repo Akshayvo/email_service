@@ -4,7 +4,8 @@ import { EmailService } from '../services/email.service';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { contactsLocation1, hoursLocation1,
   contactsLocation2, hoursLocation2,
-  contactsLocation4, hoursLocation4 } from '../data/contact';
+  contactsLocation4, hoursLocation4,
+  contactsLocation3, hoursLocation3 } from '../data/contact';
 import { headingLocation1, headingLocation2, headingLocation3, headingLocation4} from '../data/location';
 @Component({
   selector: 'app-reserve-unit',
@@ -70,6 +71,10 @@ export class ReserveUnitComponent implements OnInit {
       this.id = 4;
       this.contactDetails = contactsLocation4;
       this.heading = headingLocation4;
+    } else  if (this.router.url.includes('/location/650-Parker-Rd'))  {
+      this.id = 3;
+      this.contactDetails = contactsLocation3;
+      this.heading = headingLocation3;
     }
   }
 

@@ -2,9 +2,10 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2,
-          contactsLocation4, hoursLocation4
+          contactsLocation4, hoursLocation4,
+          contactsLocation3, hoursLocation3
           } from '../data/contact';
-import { tabs, tabs1} from '../data/location';
+import { tabs, tabs1, tabs2} from '../data/location';
 import { headingLocation1, headingLocation2, headingLocation3, headingLocation4 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -53,6 +54,13 @@ export class LocationComponent implements OnInit {
         convenience! Call today for your reservation!`
       });
       this.titleService.setTitle('Affordable Storage Units in Maysville | AA Secure Storage');
+} else  if (this.router.url.includes('/location/650-Parker-Rd'))  {
+  this.meta.addTag({
+    name: 'description',
+    content: `We have a large selection of high-quality, well-maintained self
+    storage units at extremely affordable prices!`
+  });
+  this.titleService.setTitle('Affordable Storage Units in Maysville | AA Secure Storage');
 }
   }
 
@@ -68,6 +76,8 @@ export class LocationComponent implements OnInit {
       this.fetchDetailsLocation2();
     } else  if (this.router.url.includes('/location/113-mcDonald-parkway'))  {
       this.fetchDetailsLocation4();
+    } else  if (this.router.url.includes('/location/650-Parker-Rd'))  {
+      this.fetchDetailsLocation3();
     }
  }
 
@@ -80,6 +90,9 @@ export class LocationComponent implements OnInit {
           );
   } else if ( this.locationId === 4) {
     this.router.navigate(['/location/113-mcDonald-parkway/reservations']
+          );
+  } else if ( this.locationId === 3) {
+    this.router.navigate(['/location/650-Parker-Rd/reservations']
           );
   }
  }
@@ -108,5 +121,13 @@ export class LocationComponent implements OnInit {
     this.contacts = contactsLocation2;
     this.hours = hoursLocation4;
     this.tabs = tabs1;
+  }
+
+  public fetchDetailsLocation3() {
+    this.name = headingLocation3;
+    this.locationId = 3;
+    this.contacts = contactsLocation3;
+    this.hours = hoursLocation3;
+    this.tabs = tabs2;
   }
 }
