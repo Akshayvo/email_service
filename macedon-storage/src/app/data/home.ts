@@ -6,7 +6,7 @@ export const featuresList = [
     },
     {
         td1: 'Fully Fenced',
-        td2: 'Well-Lit, Inside & Out',
+        td2: 'Well-Lit from Dusk Til Dawn',
     },
     {
         td1: 'Asphalt Paved',
@@ -68,8 +68,10 @@ export const feature = [
 export const aboutUs = [
     {
         mainHeading: `Affordable Storage Units and RV Parking in Macedon NY`,
-        mainParagraph: `We take pride in being the hometown experts with three self storage facilities in the greater Rochester
-        area and are committed to offer the right mix of affordability, security and convenience.`,
+        mainParagraph: `Macedon Self Storage provides quality self storage and RV parking since 2006.  With three self storage
+        facilities in the Greater Rochester area, we are able to implement efficient systems and benefit from lower overhead.
+        The rent is based on the number of days you need space vs. a full month's charge. Locally owned and operated, we take
+        pride in being the hometown experts and are committed to offer our patrons the right mix of <strong>Affordability, Security and Convenience.</strong>`,
         subHeading2: {
             heading: `Security for Your Possessions`,
             p: `Above a standard padlock, Macedon storage includes additional safeguards for your possessions. The complete property

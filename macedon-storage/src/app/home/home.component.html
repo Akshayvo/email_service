@@ -30,22 +30,18 @@
         
         <div class="col-lg-6 py-3">
           <div class="mb-4">
-              <div class="font-xs-device" *ngFor="let contact of contactDetails" [class.mb-3]="contact?.label === 'Facility Address: '">
-               <span class="contact-links" *ngIf="contact?.label === 'Facility Address: ' || contact?.label === 'Office Address: '"> <b>{{contact.label}}</b>&nbsp;{{contact.data}}</span>
-                <!-- <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br> -->
-              </div>
-              <!-- <div class="pt-2"><strong >Office Hours:</strong></div> -->
-              <div class="font-xs-device mb-3">
-                <div *ngFor="let hour of hours">
-                  <b>{{hour.label}}</b>{{hour.data}}<br>
-                </div>    
-              </div>
-
-              <div class="font-xs-device" *ngFor="let contact of contactDetails">
-                <span class="contact-links" *ngIf="contact?.label=== 'Email: ' || contact?.label === 'Phone: '"><b>{{contact.label}}</b>
-                  <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
-                <!-- <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br> -->
-              </div>
+            <div class="font-xs-device" *ngFor="let contact of contactDetails" [class.mb-3]="contact?.label === 'Facility Address: '">
+              <span class="contact-links" *ngIf="contact?.label === 'Facility Address: ' || contact?.label === 'Office Address: '"> <b>{{contact.label}}</b>&nbsp;{{contact.data}}</span>
+            </div>
+            <div class="font-xs-device mb-3">
+              <div *ngFor="let hour of hours">
+                <b>{{hour.label}}</b>{{hour.data}}<br>
+              </div>    
+            </div>
+            <div class="font-xs-device" *ngFor="let contact of contactDetails">
+              <span  *ngIf="contact?.label=== 'Email: ' || contact?.label === 'Phone: '"><b>{{contact.label}}</b>
+                <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+            </div>
           </div>
           <h2 class="text-center featuresList-style" >Macedon Storage Includes:</h2> 
           <div class="pt-2">
@@ -69,8 +65,8 @@
         <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p> -->
           
         <div  *ngFor="let data of aboutUs">
-          <h1 class="pb-1">{{data.mainHeading}}</h1>
-          <p>{{data.mainParagraph}}</p>
+          <h1 class="pb-1" > data.mainHeading</h1>
+          <p  [innerHTML]="data.mainParagraph"></p>
           <h3 class="py-1"><b>{{data.subHeading2.heading}}</b></h3>
           <p>{{data.subHeading2.p}}</p>
           <h3 class="py-1"><b>{{data.subHeading3.heading}}</b></h3>

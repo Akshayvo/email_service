@@ -22,7 +22,7 @@ export const contact = [
         id: 3,
         redirect: 'tel:5853816557',
         label: 'Phone: ',
-        data: '(585) 381-6557',
+        data: '(585) 381-6557(for appointment, questions, reservation)',
         class: 'fas fa-phone mr-2 iconColor',
     }
 ];
@@ -40,10 +40,6 @@ export const hours = [
         label: 'Sunday:',
         data: 'Closed'
     },
-    {
-        label: 'Access hours: ',
-        data: '24 Hours a Day 7 Days a Week'
-    }
 ];
 
 export const socialLinks = [
