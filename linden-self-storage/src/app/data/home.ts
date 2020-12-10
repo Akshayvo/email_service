@@ -2,26 +2,26 @@
 export const featuresList = [
     {
         td1: 'Key-Pad Operated Gate with 24-7 Access',
-        td2: 'Fully Fenced',
+        td2: 'Security Cameras with Replay',
     },
     {
-        td1: 'Climate Controlled & Standard Units',
-        td2: 'Keypad Entry for Climate Controlled Units',
-    },
-    {
-        td1: 'Clean Facility',
-        td2: 'Online Reservations & Payment',
-    },
-    {
-        td1: 'Security Cameras with Replay',
+        td1: 'Fully Fenced',
         td2: 'Well-Lit, Inside & Out',
     },
     {
-        td1: 'Asphalt Paved',
+        td1: 'Climate Controlled & Standard Units',
+        td2: 'Asphalt Paved',
+    },
+    {
+        td1: 'Keypad Entry for Climate Controlled Units',
         td2: 'Units are Drive -Up Accessible'
     },
     {
-        td1: 'On-Site Management',
+        td1: 'Clean Facility',
+        td2: 'On-Site Management',
+    },
+    {
+        td1: 'Online Reservations & Payment',
         td2: 'Easy Access from Rt. 441'
     }
 ];
