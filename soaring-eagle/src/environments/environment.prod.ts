@@ -12,6 +12,6 @@ export const environment = {
   facilityName: 'Soaring Eagle Campground',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
-  websiteUrl: ''
+  APIKey: `UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464
+  websiteUrl: 'https://soaring-eagle-staging.netlify.app'
 };
