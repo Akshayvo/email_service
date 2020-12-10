@@ -559,7 +559,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) and (min-width: 430px) {
+@media only screen and (max-width: 600px) and (min-width: 420px) {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
@@ -597,12 +597,17 @@
   }
 }
 
-@media only screen and (max-width: 429px) {
+@media only screen and (max-width: 419px) {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: right 32% bottom 0;
+    background-position: right 0 top 50px;
+    background-size: contain;
     height: 100vh;
+  }
+
+  .jumbotron-top {
+    height: 10vh;
   }
 
   .feature {
