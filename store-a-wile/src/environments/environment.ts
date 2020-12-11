@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'Store-A-Wile',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://store-a-wile-staging.netlify.app/',
+  websiteUrl: 'https://www.store-a-wilestorage.com',
   // baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463

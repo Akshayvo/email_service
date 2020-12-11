@@ -8,10 +8,10 @@ export const environment = {
   errorsMails: ['website.dev@codeparva.in'],
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   senderEmail: 'errors@codeparva.in',
-  appId: 'Store-A-Wile - Staging',
+  appId: 'Store-A-Wile - Production',
   facilityName: 'Store-A-Wile',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
-  websiteUrl: 'https://store-a-wile-staging.netlify.app/'
+  websiteUrl: 'https://www.store-a-wilestorage.com'
 };
