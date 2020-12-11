@@ -34,10 +34,10 @@ export const hours = [
         label: 'Sunday:',
         data: 'Closed'
     },
-    {
-        label: 'Access hours: ',
-        data: '24/7'
-    }
+    // {
+    //     label: 'Access hours: ',
+    //     data: '24/7'
+    // }
 ];
 
 export const socialLinks = [

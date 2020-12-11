@@ -35,9 +35,9 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/team.svg',
-        label: 'Locally Owned and Operated',
-        alt: ' Icon of people standing together '
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/thermometer.svg',
+        label: 'Climate Controlled',
+        alt: 'Icon of thermometer indicating climate controlled units'
     },
     {
         // tslint:disable-next-line:max-line-length
@@ -47,9 +47,9 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/thermometer.svg',
-        label: 'Climate Controlled',
-        alt: 'Icon of thermometer indicating climate controlled units'
+        path: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/icons/team.svg',
+        label: 'Locally Owned and Operated',
+        alt: ' Icon of people standing together '
     },
 ];
 
@@ -73,8 +73,8 @@ export const feature = [
 export const aboutUs = [
     {
         mainHeading: `Affordable Self Storage Units in Monroe County, Pittsford NY`,
-        mainParagraph: `Linden Self Storage offers a state-of-the-art facility. With three self storage properties
-        in the greater Rochester area, we are the hometown experts committed to provide our patrons affordability, security and convenience.`,
+        mainParagraph: `Linden Self Storage offers a state-of-the-art facility. With three self storage properties in the greater
+        Rochester area, we are the hometown experts committed to provide our patrons affordability, security and convenience.`,
         // subHeading1: {
         //     heading: `Conveniently Located`,
         //     p1: `Just a couple minutes from the Greater Rochester Airport.`,
@@ -85,23 +85,23 @@ export const aboutUs = [
         // },
         subHeading2: {
             heading: `Security for Your Possessions`,
-            p: `Aside from the typical pad lock, Linden Self Storage affords additional security for your possessions.
-            Fencing surrounds the complete facility. The security gate is opened by your personal access code. Security
-            cameras record non-stop and the premises is well lit. Entry for the climate controlled storage requires your access code.`
+            p: `Aside from the typical pad lock, Linden Self Storage affords additional security for your possessions. Fencing
+            surrounds the complete facility. The security gate is opened by your personal access code. Security cameras record
+            non-stop and the premises is well lit. Entry for the climate controlled storage requires your access code.`
         },
         subHeading3: {
             heading: `For Your Convenience`,
-            p: `Storage units are drive-up accessible 24 hours a day. The online portal offers account management where
-            payment can be made at any time. For personal assistance during office hours, the on-site management team is always ready to help.`
+            p: `Storage units are drive-up accessible 24 hours a day. The online portal offers account management where payment
+            can be made at any time. For personal assistance during office hours, the on-site management team is always ready to help.`
         },
-        // subHeading4: {
-        //     heading: `Storage Solutions`,
-        //     p1: `Linden Self Storage offers a number of unit sizes that will fit your need for self storage however long you may have it.`,
-        //     l1: `<b>Standard,</b> Drive-Up Accessible Units`,
-        //     l2: `<b>Climate Controlled</b> (heated & cooled) units, ideal for furniture, pictures, and important documents. Businesses routinely
-        //     store their supplies, inventory, and records to save on expensive commercial office space.`,
-        //     l3: `<b>Outside Storage</b> for boats, RVs,campers, and cars.`
-        // },
+        subHeading4: {
+            heading: `Storage Solutions`,
+            p1: `Linden Self Storage offers a number of unit sizes to best fit your needs and provides storage for however long you may need it.`,
+            l1: `<b>Standard</b> units that are drive-up accessible`,
+            l2: `<b>Climate Controlled</b> (units (heated and controlled) ideal for furniture, pictures, and important documents. Businesses save
+            on expensive office space by storing their supplies, inventory, and records.`,
+            l3: `<b>Outside</b> storage for RVs, campers, boats, and cars.`
+        },
 
     }
 ]
