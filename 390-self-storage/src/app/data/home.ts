@@ -97,11 +97,12 @@ export const feature = [
 
 export const aboutUs = [
     {
-        mainHeading: `Secure Self Storage Units in Rochester NY`,
-        mainParagraph: `390 Self Storage is proud to offer a state-of-the-art, complete storage facility. When it comes to
-        self storage, we are your hometown experts with three self storage facilities in the greater Rochester area. We strive to
-        offer the right mix of affordability, security, convenience and storage solutions for our patrons.
-        `,
+        mainHeading: `Affordable Self Storage Units in Rochester NY`,
+        mainParagraph: `390 Self Storage offers our patrons a leading-edge self storage facility with parking for boats
+        and RVs. We are proud to be your hometown experts with three self storage properties in the greater Rochester
+        area - enabling us to streamline operations and reduce overhead costs.  Your rent will be based on the number
+        of days you need space vs. full monthly charges. Owned and operated locally, we strive to offer the right mix
+        of<b> Affordability, Security, Storage Solutions and Convenience.</b>`,
         subHeading1: {
             heading: `Conveniently Located`,
             p1: `Just a couple minutes from the Greater Rochester Airport.`,

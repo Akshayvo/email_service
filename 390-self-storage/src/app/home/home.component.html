@@ -81,15 +81,9 @@
         <!-- Staging changes starts-->
         <div  *ngFor="let data of aboutUs">
           <h1 class="pb-1">{{data.mainHeading}}</h1>
-          <p>{{data.mainParagraph}}</p>
-          <h3 class="pb-1"><b>{{data.subHeading1.heading}}</b></h3>
-          <p >{{data.subHeading1.p1}}</p>
-          <p [innerHTML]="data.subHeading1.p2"></p>
-          <p [innerHTML]="data.subHeading1.p3"></p>
+          <p [innerHTML]="data.mainParagraph"></p>
           <h3 class="py-1"><b>{{data.subHeading2.heading}}</b></h3>
           <p>{{data.subHeading2.p}}</p>
-          <h3 class="py-1"><b>{{data.subHeading3.heading}}</b></h3>
-          <p>{{data.subHeading3.p}}</p>
           <h3 class="py-1"><b>{{data.subHeading4.heading}}</b></h3>
           <p>{{data.subHeading4.p1}}</p>
           <ul>
@@ -97,6 +91,12 @@
             <li [innerHTML]="data.subHeading4.l2"></li>
             <li [innerHTML]="data.subHeading4.l3"></li>
           </ul>
+          <h3 class="py-1"><b>{{data.subHeading3.heading}}</b></h3>
+          <p>{{data.subHeading3.p}}</p>
+          <h3 class="pb-1"><b>{{data.subHeading1.heading}}</b></h3>
+          <p >{{data.subHeading1.p1}}</p>
+          <p [innerHTML]="data.subHeading1.p2"></p>
+          <p [innerHTML]="data.subHeading1.p3"></p>
         </div>
         <!--Staging changes ends here-->  
         </div>
