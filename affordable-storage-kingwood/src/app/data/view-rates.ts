@@ -360,7 +360,7 @@ export const discountRate = [
   },
   {
     heading: 'Monthly Rental',
-    size: `32 Footer (12'x32'x10')`,
+    size: `32 Footer (12'x32'x12')`,
     monthlyRental: '$165.00',
     semiAnnualRental: '$940.00	',
     discountAnnualRental: '$1,782.00'
@@ -370,7 +370,7 @@ export const discountRate = [
     size: `33 Footer (12'x33'x12')`,
     monthlyRental: '$165.00',
     semiAnnualRental: '$940.00',
-    discountAnnualRental: '$1,782.0'
+    discountAnnualRental: '$1,782.00'
   },
   {
     heading: 'Discount	Annual Rental with 10% discount',

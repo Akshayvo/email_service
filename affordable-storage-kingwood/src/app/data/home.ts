@@ -33,14 +33,14 @@ export const aboutUs = [
     {
         p: `Affordable Storage of Kingwood has been serving Kingwood, Humble, Atascocita, and the surrounding
         communities with clean, well-maintained, and affordable self storage and vehicle storage units in
-        several common sizes since 1986. As a family-owned operation, we understand that success comes from
+        several sizes since 1986. As a family-owned operation, we understand that success comes from
         delivering amazing service and fair prices to our friends and neighbors. That’s why we built our
         storage facility with well-lit electrified units perfect for your boat, RV, trailer, or household
         belongings, and we offer the highest standard in customer service.`,
     },
     {
         p: `We are conveniently located on Green Pine Drive, off of Russel Palmer Road in the center of the
-        Greenwood Lake community. Affordable Storage of Kingwood Coming and going from our facility is a breeze.
+        Greenwood Lake community. At Affordable Storage of Kingwood, coming and going from the facility is a breeze.
         Our facility has numerous security cameras recording 24/7, 24-hour access, and level concrete floors for
         added protection for your belongings. Concerned about navigating the facility with a large vehicle? You’ll
         love our extra-wide 60’ driveway for easy turning around and backing up!`,
