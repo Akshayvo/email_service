@@ -21,9 +21,11 @@ export class PayRentComponent implements OnInit {
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
     }
-    // if (this.router.url.includes('inez-storage')) {
-    // } else  if (this.router.url.includes('beck-road-storage'))  {
-    // }
+    if (this.router.url.includes('inez-storage')) {
+      this.name = 'Inez Storage';
+    } else  if (this.router.url.includes('beck-road-storage')) {
+      this.name = 'Beck Road Storage';
+    }
   }
 
   ngOnInit() {
