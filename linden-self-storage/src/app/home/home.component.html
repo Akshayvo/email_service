@@ -68,7 +68,7 @@
         <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p> -->
         <div  *ngFor="let data of aboutUs">
           <h1 class="pb-1">{{data.mainHeading}}</h1>
-          <p mt-1>{{data.mainParagraph}}</p>
+          <p mt-1 [innerHTML]="data.mainParagraph"></p>
           <!-- <h3 class="pb-1"><b>{{data.subHeading1.heading}}</b></h3>
           <p >{{data.subHeading1.p1}}</p>
           <p [innerHTML]="data.subHeading1.p2"></p>

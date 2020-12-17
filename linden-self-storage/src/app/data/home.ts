@@ -73,8 +73,10 @@ export const feature = [
 export const aboutUs = [
     {
         mainHeading: `Affordable Self Storage Units in Monroe County, Pittsford NY`,
-        mainParagraph: `Linden Self Storage offers a state-of-the-art facility. With three self storage properties in the greater
-        Rochester area, we are the hometown experts committed to provide our patrons affordability, security and convenience.`,
+        mainParagraph: `Linden Self Storage is a state-of-the-art facility in Pittsford, NY. Our three Greater
+        Rochester self storage facilities make for efficient operations with minimal overhead. You'll pay rent
+        only for the actual number of days you need space vs. rent for the entire month. As a locally held and
+        operated company, we're focused to provide <b>Affordability, Security, Convenience and Storage Solutions</b> for our patrons.`,
         // subHeading1: {
         //     heading: `Conveniently Located`,
         //     p1: `Just a couple minutes from the Greater Rochester Airport.`,
