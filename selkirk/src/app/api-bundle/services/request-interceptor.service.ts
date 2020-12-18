@@ -11,8 +11,8 @@ export class RequestInterceptorService implements HttpInterceptor {
     request: HttpRequest<any>, next: HttpHandler
   ): Observable<HttpEvent<any>> {
     // Values
-    const tenantToken = (!!localStorage.getItem('strTenantToken') ? localStorage.getItem('strTenantToken') : '');
-    const token = tenantToken || localStorage.getItem('strTempTenantToken');
+    const tenantToken = ( localStorage && !!localStorage.getItem('strTenantToken') ? localStorage.getItem('strTenantToken') : '');
+    const token = tenantToken || (localStorage && localStorage.getItem('strTempTenantToken'));
     const baseUrl = environment.baseUrl;
     const emailUrl = environment.emailBaseUrl;
     // Modify Request, by keeping reference to previous
