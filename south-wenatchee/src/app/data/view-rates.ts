@@ -2,14 +2,13 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Our facility serves both residential and business storage needs thanks to our variety of unit
-      sizes and amenities.  Many of our business customers love our extended access hours, allowing access
-      to equipment or inventory as their growing businesses demand. Homeowners and renters preparing for
-      a remodel, or a move love our easy month-to-month rental terms!`,
+      p: `Our facility serves both residential and business storage needs thanks to our variety of unit sizes
+      and amenities. Many of our business customers love our extended access hours, allowing access to equipment
+      or inventory as their growing businesses demand. Homeowners and renters preparing for a remodel, or a move
+      love our easy month-to-month rental terms!`,
     },
     {
-      p: `Ready to reserve or rent today? Fill out our quick form, or call the office today, and one of
-      our friendly managers will help get you started!`
+      p: `Ready to reserve or rent today? Call the office today, and one of our friendly managers will help get you started!`
     }
 ];
 

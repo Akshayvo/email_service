@@ -19,22 +19,20 @@ export const aboutUsHeading = `Affordable Storage Units in Wenatchee Washington`
 
 export const aboutUs = [
     {
-        p: `South Wenatchee Self Storage serves the Wenatchee community with clean, well-maintained self
-        storage units at extremely affordable prices. All of our units are  secured behind a pin-code
-        activated electronic gate, and we have security cameras placed around the facility.`,
+        p: `South Wenatchee Self Storage serves the Wenatchee community with clean, well-maintained self storage units
+        at extremely affordable prices. All of our units are secured behind a pin-code activated electronic gate, and
+        we have security cameras placed around the facility.`,
     },
     {
-        p: `As a locally owned and operated business, we understand the importance of offering high
-        quality services at fair prices. We live and work in the same community as our customers,
-        and it's our mission to provide the best self storage experience and customer service to
-        our friends, family, and neighbors.`,
+        p: `As a locally owned and operated business, we understand the importance of offering high quality services at
+        fair prices. We live and work in the same community as our customers, and it's our mission to provide the best
+        self storage experience and customer service to our friends, family, and neighbors.`,
     },
     {
-        p: `We understand that if you're searching for a self storage unit, odds are pretty good
-        that you're dealing with enough stress as it is. Be it a move, a home renovation, or other
-        life changing event; we're here to make your self storage experience easier! Take a moment
-        to check our rates and availability on our View Rates page, then you can either reserve your
-        unit online for a later date, or perform an immediate and contactless rental through our website!`,
+        p: `We understand that if you're searching for a self storage unit, odds are pretty good that you're dealing with
+        enough stress as it is. Be it a move, a home renovation, or other life-changing events; we're here to make your
+        self storage experience easier! Take a moment to check our rates and availability on our View Rates page, then
+        give us a call to start freeing up some elbow room at home, the office, or worksite today!`,
     },
 ];
 
@@ -71,8 +69,8 @@ export const feature = [
 export const jumbotron = [
     {
         h1: `Self Storage Units in Wenatchee`,
-        blurb: `We are a locally owned & operated self storage facility serving the Wenatchee, community! We
-        offer affordable self storage units in a variety of sizes, and our service always comes with a smile.
-        Take a moment to review our pricing and availability, then call, or reserve online to start de-cluttering today!`,
+        blurb: `We are a locally owned & operated self storage facility serving the Wenatchee, community! We offer
+        affordable self storage units in a variety of sizes, and our service always comes with a smile. Take a
+        moment to review our pricing and availability, then give us a call today!`,
     }
 ];

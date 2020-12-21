@@ -18,7 +18,8 @@ export const contact = [
         label: 'Phone:',
         data: '(509) 662-2600',
         class: 'fas fa-phone mx-2 iconColor',
-    }
+    },
+    
 ];
 
 export const hours = [
