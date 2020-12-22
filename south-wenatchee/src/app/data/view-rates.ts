@@ -27,10 +27,10 @@ export const th = [
   //   data: 'Deposit',
   //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   // },
-  {
-    data: `Reserve a Unit`,
-    state: objSIMSetting.objActionSetting.blnAllowReservation
-  },
+  // {
+  //   data: `Reserve a Unit`,
+  //   state: objSIMSetting.objActionSetting.blnAllowReservation
+  // },
   {
     data: `Move In`,
     state: objSIMSetting.objActionSetting.blnAllowMoveIn
