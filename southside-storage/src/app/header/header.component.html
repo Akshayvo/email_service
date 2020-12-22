@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
+  <div class="container navbar-button">
+    <a class="navbar-brand" (click)="navigate('/')">
+      <!-- <img src="{{imageBaseUrl}}/logo.{{imagetype}}" height="80" width="auto" alt="Logo"> -->
+      <h4 class="" style="color: white;">Southside Storage</h4>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
+      <ul class="navbar-nav ml-auto navbar-nav-scroll">
+        <li class="nav-item px-xl-3 px-lg-2 px-3" *ngFor="let nav of navLinks">
+         <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'"  *ngIf="nav?.path !== '/pay-rent'" [routerLinkActiveOptions]="{exact: true}"  [routerLink]="nav?.path" (click)="onClick(menu)">{{nav.label}}</a>
+         <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" *ngIf="nav?.path === '/pay-rent'" [routerLinkActiveOptions]="{exact: false}"  [routerLink]="nav?.path" (click)="onClick(menu)">{{nav.label}}</a>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

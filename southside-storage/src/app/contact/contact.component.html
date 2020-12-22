@@ -1,0 +1,104 @@
+<div class="contact-top">
+    <div class="bg-translucent">
+      <div class="container jumbotorn-top text-center" *ngFor="let contactUs of contactUs">
+        <h1 class="pb-4" >{{contactUs.heading}}</h1>
+        <p >{{contactUs.blurb}}</p>
+      </div>
+    </div>
+</div>
+
+<div class="content-Holder bg-dark-background contact-bottom">
+  <div class="container py-5">
+    <h2 class="pb-3">{{contactHeading}}</h2>
+    <div class="row content-margin-top">
+      <div class="col-md-6 col-12 py-3">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+              <div [hidden]="" *ngIf="submitted && !this.contactForm.valid" class="alert alert-danger alert-dismissible fade show">
+                  Please fill out all the required fields!
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+              </div>
+              <div [hidden]="" *ngIf="mailSent" class="alert alert-success alert-dismissible fade show">
+                  Thank You for contacting us, We will get back to you soon.
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group">
+                <label for="Name">Name*</label>
+                <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" placeholder="Enter Name"/>
+                <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                    <small class="form-text text-muted" *ngIf="f.name.errors.required">Please fill out this field</small>
+                </div>                      
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group">
+                <label>Phone Number*</label>
+                <input type="tel" formControlName="phone" placeholder="Enter Phone Number" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
+                <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                    <small class="form-text text-muted" *ngIf="f.phone.errors.required">Please fill out this field</small>
+                </div>
+                <div *ngIf="f.phone.errors" >
+                    <small class="form-text text-muted" *ngIf="f.phone.errors.pattern">Please enter valid number</small>
+                </div>
+            </div>
+            </div>
+               </div>
+               <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <div class="form-group">
+                      <label>Email Address*</label>
+                      <input type="text" formControlName="email" placeholder="Enter Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                          <small class="form-text text-muted" *ngIf="f.email.errors.required">Please fill out this field</small>                                  
+                      </div>
+                      <div *ngIf="f.email.errors" >
+                          <small class="form-text text-muted" *ngIf="f.email.errors.email">Please enter a valid email</small>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" formControlName="subject" placeholder="Enter subject" class="form-control" />
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Message">Message*</label>
+            <textarea type="text" formControlName="message" rows="5" placeholder="Enter Message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
+            <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                <small class="form-text text-muted" *ngIf="f.message.errors.required">Please fill out this field</small>
+            </div>
+          </div>
+          <div class="form-group text-right">
+            <button type="button" class="btn btn-outline-primary px-4" (click)="contactForm.reset()">Clear</button>
+            <button type="submit" class="btn btn-primary px-4 ">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6 col-12 py-3">
+        <div class="pb-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11173.068336474502!2d-95.898066!3d45.5650674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce147a43afab2fa1!2sSouthside%20Storage!5e0!3m2!1sen!2sus!4v1608068947570!5m2!1sen!2sus" width="100%" height="200" frameborder="0"  allowfullscreen></iframe>
+        </div>
+        <div class="py-3 locate-us-style">
+          <table>
+            <tr valign="top" *ngFor="let contact of contactDetails">
+              <td><strong>{{contact.label}}</strong></td><td *ngIf="contact?.id === 1 || contact?.id === 2; else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></td>
+              <ng-template #other_content><td >{{contact.data}}</td></ng-template>
+            </tr>
+            <tr valign="top" *ngFor="let hour of hours">
+              <td><strong>{{hour.label}}</strong></td><td> {{hour.data}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

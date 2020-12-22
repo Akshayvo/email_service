@@ -1,0 +1,113 @@
+<div class="">
+  <div class="jumbotron p-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotorn-background-jpg' :  'jumbotorn-background-webp'">
+      <div class="container display text-center">
+        <div class="row justify-content-center width">
+          <div class="bg-jumbotron bg-translucent col-md-12 p-4">
+            <div class=" disp">
+              <h1>Brand New Affordable Self Storage Units!</h1><br>
+              <p>Southside Storage is Morris' newest self storage facility! Check out our availability and pricing then
+                give us a call, or reserve your unit online!
+              </p>
+            </div>
+            <div class="button-top-margin">
+              <a class="btn btn-lg btn-outline-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+              <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow text-center" >
+        <img (click)="scroll(target)" src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Southside_Storage/down.svg" alt="" />
+      </div>
+  </div>
+
+  <div class="about-us bg-dark-background"  #target>
+    <div class="container py-5">
+      <div class="section py-5 m-0">
+        <h2 class="heading pb-3 text-center">{{aboutUsHeading}}</h2>
+        <div class="row content-margin-top">
+          <div class="col-md-6 py-3">
+            <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+          </div>
+          <div class="col-md-6 py-3" >
+              <!-- <app-photos> </app-photos>           -->
+              <img src="{{imageBaseUrl}}/storage-units-construction.{{imagetype}}" alt="self storage units under construction" class="sectionImage" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="we-provide" [ngClass]="imagetype === 'jpg' ? 'we-provide-jpg' :  'we-provide-webp'">
+    <div class="we-provide-background py-5">
+      <div class="container py-5">
+        <div class="section  m-0">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="heading pb-3 text-center">We Provide</h2>
+              <div class="row primary-margin">
+                <div class="col-md-3 col-6 p-4 text-center" *ngFor="let feature of feature">
+                  <div class="p-4">
+                    <img [src]="feature?.path" [alt]="feature?.alt" height="75px" alt="" />
+                  </div>
+                  <h6 class="feature-text">{{feature.label}}</h6>
+                </div>
+              </div>
+              <div class="feature-list">
+                <ul class="row" > 
+                  <li class="col-md-6 col-lg-4 py-2 text-left" *ngFor="let featuresList of featuresList">{{featuresList.li}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="locate-us bg-dark-background">
+    <div class="container py-5">
+      <div class="section py-5 m-0">
+          <h2 class="heading pb-3 text-center">Locate Us</h2>
+        <div class="row content-margin-top">
+            <div class="col-md-6 py-3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11173.068336474502!2d-95.898066!3d45.5650674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce147a43afab2fa1!2sSouthside%20Storage!5e0!3m2!1sen!2sus!4v1608068947570!5m2!1sen!2sus" width="100%" height="250" frameborder="0" allowfullscreen></iframe>
+              </div>
+          <div class="col-md-6 py-3 locate-us-style">
+            <table>
+              <tr valign="top" *ngFor="let contact of contactDetails">
+                <td ><strong>{{contact.label}}</strong></td><td class="contact-data" *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content"><a [href]="contact?.redirect"> {{contact.data}}</a></td>
+                <ng-template #other_content><td >{{contact.data}}</td></ng-template>
+              </tr>
+              <tr valign="top" *ngFor="let hour of hours">
+                <td ><strong>{{hour.label}}</strong></td><td> {{hour.data}}</td>
+              </tr>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="we-provide" [ngClass]="imagetype === 'jpg' ? 'we-provide-jpg' :  'we-provide-webp'">
+    <div class="we-provide-background py-5">
+      <div class="container py-5">
+        <div class="section  m-0">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="heading pb-3 text-center">Getting Started</h2>
+              <div class="row primary-margin">
+                <div class="col-md-12 p-4 text-center">
+                  <p class="p-4">
+                    Are you ready to start de-cluttering your garage, basement, or yard? Start reclaiming some of that elbow room around the office, or job site today! Click below!                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+</div>
