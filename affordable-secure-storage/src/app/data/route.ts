@@ -32,6 +32,7 @@ import { SignUpComponent } from '../api-bundle/sign-up/sign-up.component';
 import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
 import { AboutusPhotosComponent } from '../aboutus-photos/aboutus-photos.component';
 import { GalleryComponent } from '../gallery/gallery.component';
+import { ViewRatesFloralComponent } from '../api-bundle/view-rates-floral/view-rates-floral.component';
 
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
@@ -41,8 +42,8 @@ export const apiRoutes = [
         {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
         { path: 'storageUnits', component: ViewRatesComponent,
           children: [
-            { path: '', component: ViewRatesPageComponent },
-            { path: 'reserve', component: ReserveUnitFormComponent },
+            { path: '', component: ViewRatesFloralComponent },
+            // { path: 'reserve', component: ReserveUnitFormComponent },
             { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },

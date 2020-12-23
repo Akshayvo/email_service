@@ -59,6 +59,7 @@ import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
 import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ViewRatesFloralComponent } from './api-bundle/view-rates-floral/view-rates-floral.component';
 
 
 @NgModule({
@@ -103,7 +104,9 @@ import { GalleryComponent } from './gallery/gallery.component';
     RentSubComponent,
     AutoPayComponent,
     SignUpComponent,
-    GalleryComponent
+    GalleryComponent,
+    ViewRatesFloralComponent,
+    ViewRatesFloralComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

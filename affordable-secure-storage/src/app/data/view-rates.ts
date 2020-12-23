@@ -19,6 +19,27 @@ export const th = [
     // }
   ];
 
+  export const thFloral = [
+    {
+      data: `Size`
+    },
+    {
+      data: `Rate`
+    },
+    // {
+    //   data: `Deposit`
+    // },
+    // {
+    //   data: `Climate Control`
+    // },
+    // {
+    //   data: `Reserve a Unit`
+    // },
+    // {
+    //   data: `Move In`
+    // }
+  ];
+
   export const option =  [
     {
       description: 'Alabama',
