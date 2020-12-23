@@ -1,10 +1,16 @@
 @import "../../../styles.scss";
 
+p {
+  color: #ffffff;
+}
 
 table {
   tbody {
     tr:nth-child(even) {
       background-color: #dcdcdc;
+    }
+    tr:nth-child(odd) {
+      color: #ffffff ;
     }
 
     tr {

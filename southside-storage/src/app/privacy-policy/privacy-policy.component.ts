@@ -20,9 +20,9 @@ export class PrivacyPolicyComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `This page contains this website's privacy policy. For more information, please contact the business directly.`
+      content: ``
     });
-    this.titleService.setTitle('Privacy Policy | Rock Lake Storage');
+    this.titleService.setTitle('');
   }
 
   ngOnInit() {

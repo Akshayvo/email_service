@@ -90,7 +90,7 @@
         <div class="py-3 locate-us-style">
           <table>
             <tr valign="top" *ngFor="let contact of contactDetails">
-              <td><strong>{{contact.label}}</strong></td><td *ngIf="contact?.id === 1 || contact?.id === 2; else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></td>
+              <td><strong>{{contact.label}}</strong></td><td *ngIf="contact?.id === 3 || contact?.id === 2; else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></td>
               <ng-template #other_content><td >{{contact.data}}</td></ng-template>
             </tr>
             <tr valign="top" *ngFor="let hour of hours">

@@ -10,9 +10,7 @@ export const viewRate = [
         your reservation. Once completed, we'll reach out and confirm your reservation. You'll be enjoying
         that extra elbow room around the home, office, or worksite in no time! We look forward to meeting you!`,
     },
-    {
-        p: `Let Rock Lake Storage help you make your next storage project a breeze!`,
-    },
+    
 ];
 
 export const slideShow = [
