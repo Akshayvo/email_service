@@ -27,11 +27,12 @@
 .bg-light{
   background: #dedede !important;
 }
-.tssa-logo{
+
+.tssa-logo {
   align-items: center;
 
-  img{
-    height: 70px;
+  img {
+    width: 110px;
     align-items: center;
   }
 }
@@ -55,14 +56,6 @@
   .syrasoft {
     img {
       height: 30px
-    }
-  }
-  .tssa-logo{
-    align-items: center;
-  
-    img{
-      height: 50px;
-      align-items: center;
     }
   }
 }
