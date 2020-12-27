@@ -1,0 +1,246 @@
+@import "../../styles.scss";
+
+.service {
+  color: $dark;
+  text-align: left;
+
+  h1 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+.jumbotron-home {
+  height: 100vh;
+
+  .for-mobile-view {
+    display: none;
+  }
+
+  .for-desktop-view {
+    display: block;
+
+    .jumbotron-desktop {
+      padding-top: 55px;
+      height: 80vh;
+    }
+  }
+
+  .feature-block {
+    height: 20vh;
+
+    h2 {
+      line-height: 1.5rem;
+    
+    }
+    img {
+      height: 60px;
+    }
+
+    .f-text {
+      color: $dark;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/jpg/a-quality-storage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/webp/a-quality-storage.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron-top {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+
+.contact-links {
+  a {
+    color: black;
+  }
+}
+
+.map-responsive {
+  iframe {
+    border: 2px solid white;
+  }
+}
+
+.content-align {
+  text-align: right;
+}
+
+.contact-hours {
+  border-left: 2px solid $border;
+  padding-left: 5%;
+}
+
+.for-location {
+  padding: 35px 0 64px 0;
+
+  .locaion-selection {
+    padding-bottom: 35px;
+  }
+
+  .btn-outline-primary {
+    margin-right: 10px;
+  }
+}
+
+
+.content-left {
+  text-align: left;
+}
+
+
+.disp {
+  display: block;
+  color: black;
+}
+
+.testimonial {
+  background: $light;
+  height: auto;
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .content-align {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .jumbotron-home {
+    .feature-block {
+      img {
+        height: 40px;
+      }
+
+      .f-text {
+        color: $dark;
+        font-weight: 600;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content-align {
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-hours {
+    border-left: none;
+    padding-left: 5%;
+  }
+
+  .disp {
+    display: block;
+  }
+
+  .for-location {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .rent-paragraph {
+    position: relative !important;
+  }
+
+  .jumbotron-home {
+    height: 100vh;
+
+    .for-mobile-view {
+      display: block;
+    }
+
+    .for-desktop-view {
+      display: none;
+    }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .content-align {
+    text-align: center;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .f-block-img {
+    padding-top: 10px;
+
+    .f-img {
+      height: 40%;
+      width: 40%;
+    }
+  }
+
+  .f-text {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .contact-hours {
+    border-left: none;
+    padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .jumbotron-home {
+    height: 100vh;
+
+    .for-mobile-view {
+      display: block;
+    }
+
+    .for-desktop-view {
+      display: none;
+    }
+  }
+
+  .rent-paragraph {
+    font-size: 1.5rem !important;
+  }
+}

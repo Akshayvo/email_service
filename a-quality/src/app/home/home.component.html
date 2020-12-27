@@ -1,0 +1,40 @@
+
+<div class="jumbotron-home">  
+  <div class="jumbotron-top jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+  </div>
+    
+  <!--Feature Box-->
+    <div class="container feature-block disp">
+      <div class="row h-100">
+        <div class="col-3 my-auto" *ngFor= "let feature of features">
+          <p class="text-center f-block-img"> 
+            <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
+          </p>
+          <h2 class="text-center f-text">
+            {{feature.label}}
+          </h2>
+        </div>
+      </div>
+    </div>
+  <!--Feature Box Ends Here-->  
+</div>
+<app-list-of-facility></app-list-of-facility>
+
+<!--Service-->
+  <div class="service bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 pt-2">
+            <h1  class="pb-4">Self Storage Units in Pasadena, TX</h1>
+            <div *ngFor="let para of serviceOffered">
+              <p>{{ para.p }}</p>
+            </div>
+            <app-tables  [tBody]="featuresList"></app-tables>
+          </div>
+          <div class="col-lg-6 text-center">
+           <app-photos-about-us></app-photos-about-us>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Service Ends Here-->
