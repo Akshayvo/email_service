@@ -46,6 +46,12 @@
     top: 10;
     background: rgba(238, 238, 238, 0.7);
     z-index: 9;
+    p {
+      font-size: 2rem;
+      a {
+        color: #000 !important;
+      }
+    }
   }
 
   .btn {
