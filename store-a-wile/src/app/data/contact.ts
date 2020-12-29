@@ -8,10 +8,10 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'sales@draytonharborministorage.com',
+        data: 'storeawile@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        email: 'sales@draytonharborministorage.com',
-        redirect: 'mailto:`sales@draytonharborministorage.com`'
+        email: 'storeawile@gmail.com',
+        redirect: 'mailto:`storeawile@gmail.com`'
     },
     {
         id: 2,
