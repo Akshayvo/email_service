@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  locationName: 'new-york',
+  locationName: 'new-york/baldwinsville',  // state/city
   type: 0,  // { API: 0, iframe: 1 }
   paymentPageType: 1, // { withoutTab: 0, withTab: 1}
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
