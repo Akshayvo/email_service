@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -8,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 export class SignUpComponent implements OnInit {
 
   constructor(
-  ) { }
+    private router: Router,
+    private dataSharingService: DataSharingService,
+  ) {
+    localStorage.setItem('paymentTab', 'sign-up');
+  }
 
   ngOnInit() {
   }

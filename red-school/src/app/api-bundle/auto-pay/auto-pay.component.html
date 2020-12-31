@@ -10,8 +10,10 @@
   
 <ng-template #other>
 <form [formGroup]="autoPayForm" (ngSubmit)="onSubmit()" class="pt-3">
-  <strong ><i  *ngIf="makeAutoPayStatus">Processing {{progressMessage}}, please wait...</i></strong>
+  <strong>
+    <i  *ngIf="makeAutoPayStatus">Processing {{progressMessage}}, please wait...</i></strong>
   <!-- <strong><i *ngIf="showSuccessStatus">{{successMessage}}</i></strong> -->
+  <div *ngIf="isDataSaved"><strong><em>{{messageSavedData}}</em></strong> </div>
   <div
     [class.loaderForPayment]="showloaderForPayment || showLoader"
   >
@@ -144,14 +146,15 @@
             </div>
           </div>
             <div class="form-group checkbox-style col-lg-6">
-              <input type="checkbox"  (change)="toggleEvent()"  [checked]="IsAutoPaymentsEnabled" /> &nbsp;
+              <input type="checkbox"  (change)="toggleEvent()" [checked]="IsAutoPaymentsEnabled" /> &nbsp;
               <label>Check box, and click Update Autopay Status to turn autopay on. Unchecked box and click Update Autopay Status to turn autopay off.</label>
             </div>
         </div>
       </div>
       <div class="text-right">
-        <button type="submit"  class="btn btn-primary col-lg-3 col-sm-12" [disabled]="makeAutoPayStatus || (count === 0)">
-          Update Autopay Status
+        <!-- <button type="button" *ngIf="tenantTokenExist"  (click)="saveDetail()" [disabled]="!isDataUpdated"  class="btn btn-primary col-lg-3 col-sm-12 ">Save</button> -->
+        <button type="submit"  class="btn btn-primary col-lg-4 col-sm-12 margin-small-device" [disabled]="makeAutoPayStatus || !enableUpdateButton">
+          Update Autopay Status or Card Detail
         </button>
         <button type="button" *ngIf="tenantTokenExist" [disabled]="showLoader"  
         (click)="signOut(logOut)" class="btn btn-primary col-lg-3 col-sm-12 ml-lg-4 ml-sm-0 mt-lg-0 mt-sm-2 mt-2">LogOff</button>
@@ -159,4 +162,3 @@
     </form>
   </ng-template>
 </div>
-  

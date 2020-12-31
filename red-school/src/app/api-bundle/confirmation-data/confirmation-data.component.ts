@@ -10,7 +10,7 @@ import { TenantInfoService } from '../services/tenant-info.service';
 import { Subscription, Subject } from 'rxjs';
 import { option } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
-
+import { environment } from '../../../environments/environment';
 @Component({
   selector: 'app-confirmation-data',
   templateUrl: './confirmation-data.component.html',
@@ -139,10 +139,10 @@ public fetchOption() {
 
 public navigateToPrevious() {
   if (this.dataSharingService.navigateToMoveIn) {
-    this.router.navigate(['/view-rates/move-in']);
+    this.router.navigate([`${environment.locationName}/view-rates/move-in`]);
   } else {
     if (this.dataSharingService.navigateToReserve) {
-      this.router.navigate(['/view-rates/reserve']);
+      this.router.navigate([`${environment.locationName}/view-rates/reserve`]);
     }
   }
 }
@@ -168,13 +168,6 @@ getTenantUnitData() {
   this.addressLine2 = this.dataSharingService.objTenant.AddressLine2;
   this.city = this.dataSharingService.objTenant.City;
   this.zip = this.dataSharingService.objTenant.ZIP;
-  this.alternateName = this.dataSharingService.objTenant.AlternateName;
-  this.alternatePhone = this.dataSharingService.objTenant.AlternatePhone;
-  this.alternateAddressLine1 = this.dataSharingService.objTenant.AlternateAddressLine1;
-  this.alternateAddressLine2 = this.dataSharingService.objTenant.AlternateAddressLine2;
-  this.alternateCity = this.dataSharingService.objTenant.AlternateCity;
-  this.alternateState = this.dataSharingService.objTenant.AlternateState;
-  this.alternateZIP = this.dataSharingService.objTenant.AlternateZIP;
   this.reservationFee = this.dataSharingService.LstUnitTypes.ReservationFee;
   this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
   this.description = this.dataSharingService.LstUnitTypes.Description;
@@ -203,14 +196,14 @@ getTenantUnitData() {
       if (result.intErrorCode === 1 ) {
         if (this.navigateToMoveIn ) {
           if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
-            this.router.navigate(['/view-rates/payMoveInCharges']);
+            this.router.navigate([`${environment.locationName}/view-rates/payMoveInCharges`]);
           } else {
             this.moveIn(this.MoveIn);
           }
         } else {
           if (this.navigateToReserve) {
             if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
-              this.router.navigate(['/view-rates/payReservationCharges']);
+              this.router.navigate([`${environment.locationName}/view-rates/payReservationCharges`]);
             } else {
               this.makeAReservation(this.MoveIn);
             }
@@ -228,8 +221,9 @@ getTenantUnitData() {
       .subscribe(strConfirmationResponse => {
         if (strConfirmationResponse.intErrorCode === 1) {
           this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
-          this.showConfirmation = false;
-          this.router.navigate(['/view-rates/confirmation-page']);
+          this.dataSharingService.eventName = 'reservation';
+          // this.showConfirmation = false;
+          this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
           this.reservationInProgress = false;
         }
       }, (err: any) => {
@@ -260,7 +254,8 @@ getTenantUnitData() {
       this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
         .subscribe(strConfirmationResponse => {
           this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
-          this.router.navigate(['/view-rates/confirmation-page']);
+          this.dataSharingService.eventName = 'MoveIn';
+          this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
           this.reservationInProgress = false;
         }, (err: any) => {
           if (err.status === 403) {
@@ -303,13 +298,13 @@ getTenantUnitData() {
           if (!this.isValueUpdated) {
             if (this.navigateToMoveIn === true) {
               if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
-                this.router.navigate(['/view-rates/payMoveInCharges']);
+                this.router.navigate([`${environment.locationName}/view-rates/payMoveInCharges`]);
               } else {
                 this.moveIn(this.MoveIn);
               }
             } else {
               if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
-                this.router.navigate(['/view-rates/payReservationCharges']);
+                this.router.navigate([`${environment.locationName}/view-rates/payReservationCharges`]);
                } else {
                  this.makeAReservation(this.MoveIn);
                }
@@ -322,13 +317,13 @@ getTenantUnitData() {
             if (!this.isValueUpdated) {
               if (this.navigateToMoveIn === true) {
                 if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
-                  this.router.navigate(['/view-rates/payMoveInCharges']);
+                  this.router.navigate([`${environment.locationName}/view-rates/payMoveInCharges`]);
                 } else {
                   this.moveIn(this.MoveIn);
                 }
               } else {
                 if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
-                  this.router.navigate(['/view-rates/payReservationCharges']);
+                  this.router.navigate([`${environment.locationName}/view-rates/payReservationCharges`]);
                  } else {
                    this.makeAReservation(this.MoveIn);
                  }
@@ -338,7 +333,7 @@ getTenantUnitData() {
             if (this.navigateToMoveIn === true) {
               if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
                 this.dataSharingService.addingTenant = true;
-                this.router.navigate(['/view-rates/payMoveInCharges']);
+                this.router.navigate([`${environment.locationName}/view-rates/payMoveInCharges`]);
               } else {
                 this.addTenant(this.tenantData);
               }
@@ -346,7 +341,7 @@ getTenantUnitData() {
               if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
                 this.dataSharingService.addingTenant = true;
                 this.dataSharingService.addingTenant = true;
-                this.router.navigate(['/view-rates/payReservationCharges']);
+                this.router.navigate([`${environment.locationName}/view-rates/payReservationCharges`]);
                } else {
                 this.addTenant(this.tenantData);
               }

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { MatDialogRef, MatDialogConfig, MatDialog } from '@angular/material/dialog';
-// import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material';
+import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material';
 
 @Injectable()
 export class ModalService {

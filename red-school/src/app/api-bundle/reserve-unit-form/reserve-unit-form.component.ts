@@ -4,7 +4,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
-import { option, option1 } from '../../data/view-rates';
+import { option } from '../../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
@@ -12,6 +12,7 @@ import { Subscription } from 'rxjs';
 import * as moment from 'moment';
 import { MoveInService } from '../services/moveIn.service';
 import { DataSharingService } from '../services/data-sharing.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -21,8 +22,6 @@ import { DataSharingService } from '../services/data-sharing.service';
 })
 
 export class ReserveUnitFormComponent implements OnInit, OnDestroy {
-
-
 
   proRateAmount?: number;
   curStage: number;
@@ -40,17 +39,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   showPaymentForMoveIn: boolean;
   showPaymentForReserve: boolean;
   filterLstUnitTypes: LstUnitTypes[];
-
-
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
-
   unitTypes: UnitTypes;
   lstUnitTypes: LstUnitTypes[];
   rentalPeriod: RentalPeriod;
   LstRentalPeriods: LstRentalPeriods[];
   LstInsuranceChoices: LstInsuranceChoices[];
-
   objTenant: ObjTenant;
   objTenantDetail: ObjTenantDetail;
 
@@ -67,7 +62,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   count = 0;
 
   option =  [];
-  option1 = [];
   reserveUnitForm: FormGroup;
 
   tokenExit: string;
@@ -134,6 +128,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   biAnnualRate: number;
   quarterRate: number;
 
+  alternateTenantDetail: any;
+
   private  getLeadDaysSubscribe$: Subscription;
   private  getTenantInfoSubscribe$: Subscription;
   private  getDataSubscribe$: Subscription;
@@ -163,39 +159,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         AddressLine2: [''],
         City: ['', Validators.required],
         State: ['', Validators.required],
-        ZIP: ['', Validators.required],AlternateName:  ['',  conditionalValidator(
-          (() => this.navigateToReserve === true),
-          Validators.required
-        )],
-        // AlternateLastName: ['',  conditionalValidator(
-        //   (() => this.navigateToReserve === true),
-        //   Validators.required
-        // )],
-        AlternatePhone:   ['', [ conditionalValidator(
-          (() => this.navigateToReserve === true),
-          Validators.required
-        ),
-          Validators.pattern(
-            '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
-            )
-        ]],
-        AlternateAddressLine1: ['',  conditionalValidator(
-          (() => this.navigateToReserve === true),
-          Validators.required
-        )],
-        AlternateAddressLine2: [''],
-        AlternateCity: ['', conditionalValidator(
-          (() => this.navigateToReserve === true),
-          Validators.required
-        )],
-        AlternateState: ['', conditionalValidator(
-          (() => this.navigateToReserve === true),
-          Validators.required
-        )],
-        AlternateZIP: ['', conditionalValidator(
-          (() => this.navigateToReserve === true),
-          Validators.required
-        )],
+        ZIP: ['', Validators.required],
       }),
 
       lstUnitTypes: new FormArray([
@@ -233,12 +197,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.showReservationButton = false;
     }
 
-      if ((this.router.url === '/view-rates/reserve') || (this.router.url === '/reserve-unit')) {
+      if ((this.router.url.includes('reserve'))) {
         this.navigateToReserve = true;
         this.dataSharingService.navigateToReserve = true;
         this.dataSharingService.navigateToMoveIn = false;
       } else {
-        if (this.router.url ===  '/view-rates/move-in' ) {
+        if (this.router.url.includes('move-in')) {
           this.navigateToMoveIn = true;
           this.dataSharingService.navigateToMoveIn = true;
           this.dataSharingService.navigateToReserve = false;
@@ -295,11 +259,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
     public fetchUSState() {
     this.option = option;
-    this.option1 = option1;
     }
 
   public navigate(location: any) {
-    this.router.navigate([location]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
   }
 
   get f(): any { return this.reserveUnitForm.controls; }
@@ -320,7 +283,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
      return;
     } else {
     }
-    this.router.navigate([location]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
   }
 
 
@@ -457,6 +420,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
         }
       }
       , (err: any) => {
+        this.gettingTenantData = false;
         if (err.status === 401) {
           localStorage.removeItem('strTenantToken');
         }

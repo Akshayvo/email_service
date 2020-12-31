@@ -50,12 +50,15 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 import { PhotosComponent } from './photos/photos.component';
-import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
 import { ScriptHackComponent } from './script-hack/script-hack.component';
-import { RentSubComponent } from '../app/rent-sub/rent-sub.component';
 import { TabsComponent } from '../app/tabs/tabs.component';
 import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { MicrodataComponent } from './api-bundle/microdata/microdata.component';
+import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
+import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,14 +85,16 @@ import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
     LoginComponent,
     LoginModalComponent,
     ForgotPasswordComponent,
+    PayRentComponent,
+    ThankYouComponent,
+    PrivacyPolicyComponent,
     ChangePasswordComponent,
     VerifyCodeComponent,
+    MicrodataComponent,
     ResetPasswordComponent,
     UnitSizerComponent,
     UnitSizesComponent,
     PhotosComponent,
-    ConfirmationPageComponent,
-    ConfirmationPageComponent,
     ScriptHackComponent,
     RentSubComponent,
     TabsComponent,

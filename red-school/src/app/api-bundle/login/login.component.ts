@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   showPayRent = false;
 
   showLoader = false;
-
+  paymentTab: string;
   showLoginPage = true;
 
   authData: string;
@@ -73,10 +73,18 @@ export class LoginComponent implements OnInit, OnDestroy {
           if (this.router.url.includes('rent-sub')) {
             this.router.navigate(['/pay-rent/rent-sub/payment']);
           } else {
-            this.router.navigate(['/pay-rent/sign-up/auto-pay']);
+            if (this.router.url.includes('sign-up')) {
+              this.router.navigate(['/pay-rent/sign-up/auto-pay']);
+            } else {
+              this.router.navigate([`/pay-rent/payment`]);
+            }
           }
         }
        }
+    }
+
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
     }
   }
 
@@ -87,7 +95,11 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public navigate (location: any) {
-    this.router.navigate([location]);
+    if (!!this.paymentTab) {
+      this.router.navigate([`/pay-rent/${this.paymentTab}/${location}`]);
+    } else {
+      this.router.navigate([`/pay-rent/${location}`]);
+    }
   }
 
   public fetchLoginDetail() {
@@ -120,6 +132,8 @@ export class LoginComponent implements OnInit, OnDestroy {
           } else {
             if (this.router.url.includes('sign-up')) {
               this.router.navigate(['/pay-rent/sign-up/auto-pay']);
+            } else {
+              this.router.navigate(['/pay-rent/payment']);
             }
           }
         }, (err) => {

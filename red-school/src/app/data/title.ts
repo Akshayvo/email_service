@@ -29,3 +29,9 @@ belongings or business' equipment! `;
 export const contactPageTitle = `Contact Us | Red School Self Storage`;
 export const contactPageContent = `Have questions about the services we offer? Use our easy contact form or the contact information
 on this page to speak with our friendly team!`;
+
+export const thankYouPageTitle = `Thank You For Reserving Your Unit at Red School Self Storage!`;
+export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
+
+export const privacyPolicyPageTitle = `Privacy Policy | Red School Self Storage`;
+export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
