@@ -1,10 +1,6 @@
 {
   "name": "southside-storage",
-<<<<<<< HEAD
-  "version": "0.0.1",
-=======
   "version": "0.0.6",
->>>>>>> 3816cad9270931763ec663305ad6eefd3e424b23
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
