@@ -22,6 +22,21 @@
   height: auto !important;
 }
 
+.we-provide-background2 {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-indicators li {
+  background-color: $primary;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-item {
+  height: 250px;
+}
+
 .jumbotorn-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Southside_Storage/webp/southside-storage-jumbotron.webp");
   background-repeat: no-repeat;

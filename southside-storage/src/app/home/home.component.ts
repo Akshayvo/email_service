@@ -30,6 +30,7 @@ export class HomeComponent implements OnInit {
   homePageTitle: string;
   jumbotron: any;
 
+
   constructor(
     private router: Router,
     private titleService: Title,
@@ -75,6 +76,7 @@ export class HomeComponent implements OnInit {
 
   public fetchJumbotron() {
     this.jumbotron = jumbotron;
+
   }
 
   public fetchHours() {

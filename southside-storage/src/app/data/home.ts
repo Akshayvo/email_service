@@ -79,3 +79,5 @@ export const jumbotron = [
         give us a call, or reserve your unit online!`,
     }
 ];
+
+
