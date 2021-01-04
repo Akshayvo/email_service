@@ -38,11 +38,11 @@ export const ogHomePage = [
   },
   {
     property: `og:title`,
-    content: `Affordable Self Storage Units in Pasadena | A-Quality Storage`
+    content: `Affordable Self Storage Units in Pasadena | A-Quality Boat & RV Storage`
   },
   {
     property: `og:site_name`,
-    content: `A-Quality Storage`
+    content: `A-Quality Boat & RV Storage`
   },
   {
     property: `og:url`,
@@ -57,7 +57,7 @@ export const ogHomePage = [
 export const twitterHomePage = [
   {
     name: `twitter:site`,
-    content: `@A-Quality Storage`
+    content: `@A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:card`,
@@ -69,7 +69,7 @@ export const twitterHomePage = [
   },
   {
     name: `twitter:title`,
-    content: `@A-Quality Storage`
+    content: `@A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:description`,
@@ -85,7 +85,7 @@ export const twitterHomePage = [
 export const ogLocation1 = [
   {
     property: `og:title`,
-    content: `Self Storage Units and Parking in Pasadena | A-Quality Storage`
+    content: `Self Storage Units and Parking in Pasadena | A-Quality Boat & RV Storage`
   },
   {
     property: `og:description`,
@@ -97,7 +97,7 @@ export const ogLocation1 = [
   },
   {
     property: `og:site_name`,
-    content: `A-Quality Storage`
+    content: `A-Quality Boat & RV Storage`
   },
   {
     property: `og:url`,
@@ -112,7 +112,7 @@ export const ogLocation1 = [
 export const twitterLocation1 = [
   {
     name: `twitter:site`,
-    content: `@A-Quality Storage`
+    content: `@A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:card`,
@@ -124,7 +124,7 @@ export const twitterLocation1 = [
   },
   {
     name: `twitter:title`,
-    content: `@Self Storage Units and Parking in Pasadena | A-Quality Storage`
+    content: `@Self Storage Units and Parking in Pasadena | A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:description`,
@@ -140,7 +140,7 @@ export const twitterLocation1 = [
 export const ogLocation2 = [
   {
     property: `og:title`,
-    content: `Affordable Self Storage Units in Pasadena | A-Quality Storage `
+    content: `Affordable Self Storage Units in Pasadena | A-Quality Boat & RV Storage `
   },
   {
     property: `og:description`,
@@ -152,7 +152,7 @@ export const ogLocation2 = [
   },
   {
     property: `og:site_name`,
-    content: `A-Quality Storage`
+    content: `A-Quality Boat & RV Storage`
   },
   {
     property: `og:url`,
@@ -167,7 +167,7 @@ export const ogLocation2 = [
 export const twitterLocation2 = [
   {
     name: `twitter:site`,
-    content: `@A-Quality Storage`
+    content: `@A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:card`,
@@ -179,7 +179,7 @@ export const twitterLocation2 = [
   },
   {
     name: `twitter:title`,
-    content: `@Affordable Self Storage Units in Pasadena | A-Quality Storage`
+    content: `@Affordable Self Storage Units in Pasadena | A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:description`,
@@ -194,7 +194,7 @@ export const twitterLocation2 = [
 export const ogPayRentPage = [
   {
     property: `og:title`,
-    content: `Pay Rent | A-Quality Storage`
+    content: `Pay Rent | A-Quality Boat & RV Storage`
   },
   {
     property: `og:description`,
@@ -206,7 +206,7 @@ export const ogPayRentPage = [
   },
   {
     property: `og:site_name`,
-    content: `A-Quality Storage`
+    content: `A-Quality Boat & RV Storage`
   },
   {
     property: `og:url`,
@@ -221,7 +221,7 @@ export const ogPayRentPage = [
 export const twitterPayRentPage = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | A-Quality Storage`
+    content: `@Pay Rent | A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:description`,
@@ -229,7 +229,7 @@ export const twitterPayRentPage = [
   },
   {
     name: `twitter:site`,
-    content: `@A-Quality Storage`
+    content: `@A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:card`,
@@ -248,7 +248,7 @@ export const twitterPayRentPage = [
 export const ogPayRentPageLocation1 = [
   {
     property: `og:title`,
-    content: `Pay Rent | A-Quality Storage`
+    content: `Pay Rent | A-Quality Boat & RV Storage`
   },
   {
     property: `og:description`,
@@ -260,7 +260,7 @@ export const ogPayRentPageLocation1 = [
   },
   {
     property: `og:site_name`,
-    content: `A-Quality Storage`
+    content: `A-Quality Boat & RV Storage`
   },
   {
     property: `og:url`,
@@ -275,7 +275,7 @@ export const ogPayRentPageLocation1 = [
 export const twitterPayRentPageLocation1 = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | A-Quality Storage`
+    content: `@Pay Rent | A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:description`,
@@ -283,7 +283,7 @@ export const twitterPayRentPageLocation1 = [
   },
   {
     name: `twitter:site`,
-    content: `@A-Quality Storage`
+    content: `@A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:card`,
@@ -302,7 +302,7 @@ export const twitterPayRentPageLocation1 = [
 export const ogPayRentPageLocation2 = [
   {
     property: `og:title`,
-    content: `Pay Rent | A-Quality Storage`
+    content: `Pay Rent | A-Quality Boat & RV Storage`
   },
   {
     property: `og:description`,
@@ -314,7 +314,7 @@ export const ogPayRentPageLocation2 = [
   },
   {
     property: `og:site_name`,
-    content: `A-Quality Storage`
+    content: `A-Quality Boat & RV Storage`
   },
   {
     property: `og:url`,
@@ -329,7 +329,7 @@ export const ogPayRentPageLocation2 = [
 export const twitterPayRentPageLocation2 = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | A-Quality Storage`
+    content: `@Pay Rent | A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:description`,
@@ -337,7 +337,7 @@ export const twitterPayRentPageLocation2 = [
   },
   {
     name: `twitter:site`,
-    content: `@A-Quality Storage`
+    content: `@A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:card`,
@@ -357,7 +357,7 @@ export const twitterPayRentPageLocation2 = [
 export const ogStorageTipsPage = [
   {
     property: `og:title`,
-    content: `Storage Tips | A-Quality Storage`
+    content: `Storage Tips | A-Quality Boat & RV Storage`
   },
   {
     property: `og:description`,
@@ -370,7 +370,7 @@ export const ogStorageTipsPage = [
   },
   {
     property: `og:site_name`,
-    content: `A-Quality Storage`
+    content: `A-Quality Boat & RV Storage`
   },
   {
     property: `og:url`,
@@ -385,7 +385,7 @@ export const ogStorageTipsPage = [
 export const twitterStorageTipsPage = [
   {
     name: `twitter:title`,
-    content: `@Storage Tips | A-Quality Storage`
+    content: `@Storage Tips | A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:description`,
@@ -394,7 +394,7 @@ export const twitterStorageTipsPage = [
   },
   {
     name: `twitter:site`,
-    content: `@A-Quality Storage`
+    content: `@A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:card`,
@@ -413,7 +413,7 @@ export const twitterStorageTipsPage = [
 export const ogContactPage = [
   {
     property: `og:title`,
-    content: `Contact Us | A-Quality Storage`
+    content: `Contact Us | A-Quality Boat & RV Storage`
   },
   {
     property: `og:description`,
@@ -426,7 +426,7 @@ export const ogContactPage = [
   },
   {
     property: `og:site_name`,
-    content: `A-Quality Storage`
+    content: `A-Quality Boat & RV Storage`
   },
   {
     property: `og:url`,
@@ -441,7 +441,7 @@ export const ogContactPage = [
 export const twitterContactPage = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | A-Quality Storage`
+    content: `@Contact Us | A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:description`,
@@ -450,7 +450,7 @@ export const twitterContactPage = [
   },
   {
     name: `twitter:site`,
-    content: `@A-Quality Storage`
+    content: `@A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:card`,
@@ -469,7 +469,7 @@ export const twitterContactPage = [
 export const ogContactPageLocation1 = [
   {
     property: `og:title`,
-    content: `Contact Us | A-Quality Storage`
+    content: `Contact Us | A-Quality Boat & RV Storage`
   },
   {
     property: `og:description`,
@@ -482,7 +482,7 @@ export const ogContactPageLocation1 = [
   },
   {
     property: `og:site_name`,
-    content: `A-Quality Storage`
+    content: `A-Quality Boat & RV Storage`
   },
   {
     property: `og:url`,
@@ -497,7 +497,7 @@ export const ogContactPageLocation1 = [
 export const twitterContactPageLocation1 = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | A-Quality Storage`
+    content: `@Contact Us | A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:description`,
@@ -506,7 +506,7 @@ export const twitterContactPageLocation1 = [
   },
   {
     name: `twitter:site`,
-    content: `@A-Quality Storage`
+    content: `@A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:card`,
@@ -524,7 +524,7 @@ export const twitterContactPageLocation1 = [
 export const ogContactPageLocation2 = [
   {
     property: `og:title`,
-    content: `Contact Us | A-Quality Storage`
+    content: `Contact Us | A-Quality Boat & RV Storage`
   },
   {
     property: `og:description`,
@@ -537,7 +537,7 @@ export const ogContactPageLocation2 = [
   },
   {
     property: `og:site_name`,
-    content: `A-Quality Storage`
+    content: `A-Quality Boat & RV Storage`
   },
   {
     property: `og:url`,
@@ -552,7 +552,7 @@ export const ogContactPageLocation2 = [
 export const twitterContactPageLocation2 = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | A-Quality Storage`
+    content: `@Contact Us | A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:description`,
@@ -561,7 +561,7 @@ export const twitterContactPageLocation2 = [
   },
   {
     name: `twitter:site`,
-    content: `@A-Quality Storage`
+    content: `@A-Quality Boat & RV Storage`
   },
   {
     name: `twitter:card`,

@@ -2,9 +2,16 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '6936 Line Dr, Pasadena, TX 77505',
+        data: '6939 Line Drive, Pasadena, TX 77505',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
+        redirect: ''
+    },
+    {
+        id: 4,
+        label: 'PO Box Address: ',
+        data: 'P.O. Box 590005, Houston, TX 77259',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: ''
     },
     {
         id: 2,
@@ -40,7 +47,14 @@ export const contactsLocation2 = [
         label: 'Address: ',
         data: '5226 Holly Ave, Pasadena, TX 77505',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CT1A0QzwMwCHEBA'
+        redirect: ''
+    },
+    {
+        id: 4,
+        label: 'PO Box Address: ',
+        data: 'P.O. Box 590005, Houston, TX 77259',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: ''
     },
     {
         id: 2,

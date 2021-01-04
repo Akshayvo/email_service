@@ -24,7 +24,7 @@ export class PaymentIframeComponent implements OnInit {
       name: 'description',
       content: `Follow these simple instructions, and you'll be paying your rent in a matter of seconds! Have questions? Call our offices, and we'll be happy to help!`
     });
-    this.titleService.setTitle('Pay Rent | A-Quality Storage');
+    this.titleService.setTitle('Pay Rent | A-Quality Boat & RV Storage');
   }
 
   ngOnInit() {

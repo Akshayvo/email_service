@@ -133,6 +133,19 @@ a {
       line-height: 1rem !important;
     }
 
+    .navbar {
+      padding-bottom: 0;
+      .dropdown-menu {
+        min-width: 14rem;
+        a {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #4e4848;
+        padding: 10px 20px;
+       }
+      }
+    }
+
     #site-header {
       position: relative;
       height: auto;
@@ -156,6 +169,9 @@ a {
     #nav-header.customClass {
       top: -64px;
     }
+    .navbar-brand {
+      font-size: 1rem;
+    }
     
   }
 
@@ -173,6 +189,19 @@ a {
     }
     #site-header.hide {
       top:-101px;
+    }
+
+    .navbar {
+      padding-bottom: 0;
+      .dropdown-menu {
+        min-width: 14rem;
+        a {
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #4e4848;
+        padding: 10px 52px;
+       }
+      }
     }
     
     #nav-header {

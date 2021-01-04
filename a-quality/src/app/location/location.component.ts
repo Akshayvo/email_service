@@ -76,8 +76,8 @@ export class LocationComponent implements OnInit {
               name: 'description',
               content: `Check out our quality self storage units and affordable rates at our Line Drive location, then reserve or call today!`
             });
-            this.titleService.setTitle('Self Storage Units and Parking in Pasadena | A-Quality Storage');
-            this.locationName = `A-Quality Storage - Line Drive Location`;
+            this.titleService.setTitle('Self Storage Units and Parking in Pasadena | A-Quality Boat & RV Storage');
+            this.locationName = `A-Quality Boat & RV Storage - Line Drive Location`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location1Script;
@@ -100,8 +100,8 @@ export class LocationComponent implements OnInit {
              name: 'description',
              content: `Check out our quality self storage units and affordable rates at our Holly Avenue location, then reserve or call today!`
            });
-           this.titleService.setTitle('Affordable Self Storage Units in Pasadena | A-Quality Storage');
-           this.locationName = `A-Quality Storage - Holly Avenue Location`;
+           this.titleService.setTitle('Affordable Self Storage Units in Pasadena | A-Quality Boat & RV Storage');
+           this.locationName = `A-Quality Boat & RV Storage - Holly Avenue Location`;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location2Script;

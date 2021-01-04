@@ -3,9 +3,9 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace A-Quality Storage with your project name(Hyphen Case)
+Replace A-Quality Boat & RV Storage with your project name(Hyphen Case)
 
-Replace A-Quality Storage with your project name(camelCase)
+Replace A-Quality Boat & RV Storage with your project name(camelCase)
 
 Find and Replace across project
 

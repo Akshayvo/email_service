@@ -47,7 +47,7 @@ export class StorageTipsComponent implements OnInit {
       content: `Take some advice from your hometown experts. Our self
       storage tips will save you a hassle, and make your stay extra convenient!`
     });
-    this.titleService.setTitle('Storage Tips | A-Quality Storage');
+    this.titleService.setTitle('Storage Tips | A-Quality Boat & RV Storage');
   }
 
   ngOnInit() {

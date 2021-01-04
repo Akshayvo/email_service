@@ -13,12 +13,12 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: 'A-Quality Storage - Line Drive Location',
-    address: '6936 Line Dr, Pasadena, TX 77505',
+    facility: 'A-Quality Boat & RV Storage - Line Drive Location',
+    address: '6939 Line Drive, Pasadena, TX 77505',
     url: 'line-drive/rent-sub/login'
   },
   {
-    facility: 'A-Quality Storage - Holly Avenue Location',
+    facility: 'A-Quality Boat & RV Storage - Holly Avenue Location',
     address: '5226 Holly Ave, Pasadena, TX 77505',
     url: 'holly-avenue/sign-up/login'
   },
@@ -26,12 +26,12 @@ export const tableData = [
 
 export const tableDataContactPage = [
   {
-    facility: 'A-Quality Storage - Line Drive Location',
-    address: '6936 Line Dr, Pasadena, TX 77505',
+    facility: 'A-Quality Boat & RV Storage - Line Drive Location',
+    address: '6939 Line Drive, Pasadena, TX 77505',
     url: 'line-drive'
   },
   {
-    facility: 'A-Quality Storage - Holly Avenue Location',
+    facility: 'A-Quality Boat & RV Storage - Holly Avenue Location',
     address: '5226 Holly Ave, Pasadena, TX 77505',
     url: 'holly-avenue'
   },

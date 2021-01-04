@@ -24,11 +24,12 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `A-Quality Storage has served Pasadena, Deer Park, and LaPorte at our two convenient locations since 2003.
-        At A-Quality Storage,  you'll be greeted by friendly faces, and choose from two self storage facility locations
-        built from the ground up to cater to your moving, renovation, or vehicle parking needs. Our Line Drive location
-        is located off of Red Bluff Rd behind McCoy's Building Supply. The Holly Avenue location is right across the street
-        from Golden Acres Elementary School. `,
+        p: `A-Quality Boat & RV Storage has served the Greater Southeast Harris County area since 2003.
+        We were happy to add our second location in Pasadena at Holly Avenue in 2002.  At A-Quality Boat
+        & RV Storage, you will be greeted by friendly customer service and be able to choose from several
+        different unit sizes for your storage needs.  Our Line Drive location is located off of Red Bluff
+        Rd behind McCoy's Building Supply. The Holly Avenue location is right across the street from Golden
+        Acres Elementary School.`,
     },
     {
         p: `Both locations give you 24-hour access to your unit, and easy online reservations and online rentals. Don't

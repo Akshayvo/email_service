@@ -26,7 +26,7 @@ export class PrivacyPolicyComponent implements OnInit {
       name: 'description',
       content: `This page contains this website's privacy policy. For more information, please contact the business directly.`
     });
-    this.titleService.setTitle('Privacy Policy | A-Quality Storage');
+    this.titleService.setTitle('Privacy Policy | A-Quality Boat & RV Storage');
   }
 
   ngOnInit() {

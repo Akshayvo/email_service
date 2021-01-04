@@ -62,7 +62,7 @@ export class HomeComponent implements OnInit {
       content: ``
     });
 
-    this.titleService.setTitle('Affordable Self Storage Units in Pasadena | A-Quality Storage');
+    this.titleService.setTitle('Affordable Self Storage Units in Pasadena | A-Quality Boat & RV Storage');
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
   }
@@ -121,13 +121,13 @@ export class HomeComponent implements OnInit {
 
 
     public fetchContactDetailsLocation1() {
-      this.heading = `A-Quality Storage - Line Drive Location`;
+      this.heading = `A-Quality Boat & RV Storage - Line Drive Location`;
       this.contactDetails = contactsLocation1;
       this.hoursDetails = hoursLocation1;
     }
 
     public fetchContactDetailsLocation2() {
-      this.heading = `A-Quality Storage - Holly Avenue Location`;
+      this.heading = `A-Quality Boat & RV Storage - Holly Avenue Location`;
       this.contactDetails = contactsLocation2;
       this.hoursDetails = hoursLocation2;
     }

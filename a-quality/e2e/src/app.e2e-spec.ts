@@ -9,6 +9,6 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to A-Quality Storage Website!');
+    expect(page.getParagraphText()).toEqual('Welcome to A-Quality Boat & RV Storage Website!');
   });
 });

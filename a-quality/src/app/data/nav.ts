@@ -11,12 +11,12 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'A-Quality Storage - Line Drive Location',
+                label: 'A-Quality Boat & RV Storage - Line Drive Location',
                 path: '/location/line-drive',
             },
             {
                 id: '2',
-                label: 'A-Quality Storage - Holly Avenue Location',
+                label: 'A-Quality Boat & RV Storage - Holly Avenue Location',
                 path: '/location/holly-avenue',
             },
         ]

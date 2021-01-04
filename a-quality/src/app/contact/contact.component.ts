@@ -72,7 +72,7 @@ export class ContactComponent implements OnInit {
       content: `Have a question for our staff? Use this handy contact form, or
       our contact information. We'll get right back to you!`
     });
-    this.titleService.setTitle('Contact Us | A-Quality Storage');
+    this.titleService.setTitle('Contact Us | A-Quality Boat & RV Storage');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -128,13 +128,13 @@ public fetchTwitter() {
   }
   
   public fetchContactDetailsLocation1() {
-    this.heading = `A-Quality Storage - Line Drive Location`;
+    this.heading = `A-Quality Boat & RV Storage - Line Drive Location`;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
 
   public fetchContactDetailsLocation2() {
-    this.heading = `A-Quality Storage - Holly Avenue Location`;
+    this.heading = `A-Quality Boat & RV Storage - Holly Avenue Location`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }

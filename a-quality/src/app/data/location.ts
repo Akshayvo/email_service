@@ -13,9 +13,9 @@ export const tabs = [
     },
 ];
 
-export const headingLocation1 = `A-Quality Storage - Line Drive Location`;
+export const headingLocation1 = `A-Quality Boat & RV Storage - Line Drive Location`;
 
-export const headingLocation2 = `A-Quality Storage - Holly Avenue Location`;
+export const headingLocation2 = `A-Quality Boat & RV Storage - Holly Avenue Location`;
 
 export const headingStorageUnitLocation1 = `Reserve Your Unit at Our Line Drive Facility`;
 

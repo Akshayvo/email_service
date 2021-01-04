@@ -128,13 +128,13 @@ export class LoginComponent implements OnInit, OnDestroy {
   public fetchContactDetail() {
     if (this.router.url.includes('line-drive')) {
       this.id = 1;
-      this.name = 'A-Quality Storage - Line Drive Location';
+      this.name = 'A-Quality Boat & RV Storage - Line Drive Location';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
     } else  if (this.router.url.includes('holly-avenue')) {
       this.id = 2;
-      this.name = 'A-Quality Storage - Holly Avenue Location';
+      this.name = 'A-Quality Boat & RV Storage - Holly Avenue Location';
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);

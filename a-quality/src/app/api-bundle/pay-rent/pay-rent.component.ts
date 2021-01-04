@@ -47,9 +47,9 @@ export class PayRentComponent implements OnInit {
     });
     this.canonical.create();
     if (this.router.url.includes('line-drive')) {
-      this.name = 'A-Quality Storage - Line Drive Location';
+      this.name = 'A-Quality Boat & RV Storage - Line Drive Location';
   }  else if (this.router.url.includes('holly-avenue')) {
-    this.name = 'A-Quality Storage - Holly Avenue Location';
+    this.name = 'A-Quality Boat & RV Storage - Holly Avenue Location';
   }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
