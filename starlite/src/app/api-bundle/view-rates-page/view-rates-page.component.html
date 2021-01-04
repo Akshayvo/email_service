@@ -19,12 +19,15 @@
           <td colspan="2" class="px-4 border text-center">
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
           </td>
+          <td colspan="2" class="px-4 border text-center">
+            <span *ngIf="lstUnitType.ReservationFee != null">$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}
+          </td>
           <!-- <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
           </td> -->
-          <!-- <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
+          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-          </td> -->
+          </td>
           <!-- <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </td> -->
@@ -54,20 +57,21 @@
       <strong>Unit Size</strong>
     <div class=" py-1 ">{{lstUnitType.Description}}</div>
     <div class="row">
-        <div class="col-6 text-center ">
+        <div class="col-5 p-1 text-center ">
             <p class=" "><b><u>Rate</u></b></p>
             <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</div>
         </div>
-        <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" >
-            <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
+        <div class="col-7 "[class.ClimateBorder]="lstUnitType.ReservationFee" >
+          <p class=" "><b><u>Reservation Fee</u></b></p>
+            <div class=" ClimateControlled"><span *ngIf="lstUnitType.ReservationFee" >$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}</div>
         </div>
       </div>
     </div>
       <div class="col-6 d-flex justify-content-center" >
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other" >
-          <!-- <div class=" py-1 buttons" >
+          <div class=" py-1 buttons" >
               <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-          </div> -->
+          </div>
           <!-- <div class="py-1 buttons">
               <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </div> -->
