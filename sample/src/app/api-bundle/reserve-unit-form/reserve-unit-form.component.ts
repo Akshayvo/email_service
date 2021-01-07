@@ -411,6 +411,13 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
+            AlternateName: Tenant.AlternateName,
+            AlternatePhone: Tenant.AlternatePhone,
+            AlternateAddressLine1: Tenant.AlternateAddressLine2,
+            AlternateAddressLine2: Tenant.AlternateAddressLine2,
+            AlternateCity: Tenant.AlternateCity,
+            AlternateState: Tenant.AlternateState,
+            AlternateZIP: Tenant.AlternateZIP,
           };
           this.reserveUnitForm.patchValue({
             objTenant: ({
@@ -423,6 +430,13 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
+              AlternateName: Tenant.AlternateName,
+              AlternatePhone: Tenant.AlternatePhone,
+              AlternateAddressLine1: Tenant.AlternateAddressLine1,
+              AlternateAddressLine2: Tenant.AlternateAddressLine2,
+              AlternateCity: Tenant.AlternateCity,
+              AlternateState: Tenant.AlternateState,
+              AlternateZIP: Tenant.AlternateZIP,
             }),
           });
 
