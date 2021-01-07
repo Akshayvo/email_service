@@ -45,6 +45,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+
   public navigate (location: any) {
     this.router.navigate([location]);
   }
@@ -60,5 +61,4 @@ export class HeaderComponent implements OnInit {
     this.contactDetails = contactsLocation1
     this.socialLinks = socialLinks;
   }
-
 }

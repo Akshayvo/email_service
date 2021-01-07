@@ -1,6 +1,6 @@
 .containHolder {
     min-height: 94vh;
-    padding-top: 120px;
+    padding-top: 156px;
   }
   .camper {
     border-left: 2px solid #4e4848;
@@ -31,12 +31,14 @@
   a {
     color: black;
   }
-  @media only screen and (max-width:991px) {
+
+
+@media only screen and (max-width: 991px) {
     .camper {
       border: none;
     }
     .containHolder {
-      padding-top: 90px;
+      padding-top: 144px;
     }
     
   }

@@ -1,12 +1,23 @@
 @import "../../styles.scss";
 
+.mobile {
+  display: none;
+}
+
+.top-bar {
+  background-color: red;
+  color: white;
+}
+
 a {
   cursor: pointer;
 }
+
 .iconColor {
   color: #fff;
   font-size: 17px;
 }
+
 .social{
   a{
     color: #fff;
@@ -41,14 +52,14 @@ a {
 
 
 
-  .nav-link {
+ .nav-link {
     color: $dark;
     font-size: 1.2rem;
     font-weight: 400;
     // padding-top: 25px;
     // padding-bottom: 25px;
     transition: none;
-    padding: 41px .5rem;
+    padding: 42px .5rem;
   }
 
   button {
@@ -83,13 +94,20 @@ a {
   border: 1px #efefef solid;
 }
 
-@media (min-width: 768px) {
-  .navbar-nav {
-    li {
-      a {
-        line-height: 1.5rem;
-        // text-align: center;
-      }
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .desktop {
+    display: contents;
+    text-align: right;
+    width: inherit;
+
+    .btn-primary {
+      min-width: 80px !important;
+    }
+  }
+
+  .navbar {
+    .nav-link {
+      font-size: 0.9rem;
     }
   }
 }
@@ -104,6 +122,15 @@ a {
   .display {
     display: none;
   }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
   .nav-link {
     padding: 20px .5rem !important;
   }
@@ -133,11 +160,31 @@ a {
       }
     }
   }
+}
 
-  @media screen and (max-height: 476px) {
-    .nav-scroll {
-      height: 70vh;
-      overflow-y: auto;
+@media (min-width: 768px) {
+  .navbar-nav {
+    li {
+      a {
+        line-height: 1.5rem;
+        // text-align: center;
+      }
     }
   }
 }
+
+
+@media screen and (max-width: 542px) {
+  .mobile {
+    display: none;
+  }
+}
+
+
+@media screen and (max-height: 476px) {
+    .nav-scroll {
+      height: 70vh;
+      overflow-y: auto;
+  }
+}
+

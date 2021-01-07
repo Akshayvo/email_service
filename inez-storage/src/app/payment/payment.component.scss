@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .rent-holder {
-  padding-top: 120px;
+  padding-top: 156px;
   min-height: 88vh;
   margin-bottom: 50px;
 
@@ -73,7 +73,7 @@ table {
 
 @media only screen and (max-width: 991px) {
   .rent-holder {
-    padding-top: 90px;
+    padding-top: 144px;
   }
 }
 
@@ -95,7 +95,7 @@ table {
 
 @media only screen and (max-width: 600px) {
   .rent-holder {
-    padding-top: 70px;
+    padding-top: 144px;
 
     .container {
       padding-left: 0;

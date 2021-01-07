@@ -67,8 +67,8 @@ export const wildwoodLeftColumn = [
             Texana Park, and Coleto Creek Park. (have your reservation ready before renting camper)`,
     },
     {
-        p: `Linen package: $50, includes sheets and pillows (memory foam), ten bath towels, ten wash cloths,
-            five hand towels for bath. Holiday weekends will be limited to a minimum of three nights rental.`,
+        p: `Linen package: $50, includes sheets and pillows (memory foam), eight bath towels, eight wash cloths, three hand towels for the bath.
+        Holiday weekends will be limited to a minimum of three nights rental.`,
     },
 ];
 
@@ -310,8 +310,7 @@ export const winnebagoLeftColumn = [
         p: `Pre-paid cleaning fee $75`,
     },
     {
-        p: `Optional Linen package: $50, includes sheets and pillows (memory foam), ten bath towels,
-        ten wash cloths, five hand towels for bath.`,
+        p: `Optional Linen package: $50, includes sheets and pillows (memory foam), eight bath towels, eight wash cloths, three hand towels for the bath.`,
     }
 ];
 

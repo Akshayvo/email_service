@@ -1,3 +1,6 @@
+<div class="top-bar text-center p-2">
+  <strong>Don't forget to ask about how you can upgrade your rental to a Smart Unit at no additional cost!</strong>
+</div>
 <nav class="navbar navbar-expand-lg bg-white">
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')">
@@ -5,6 +8,14 @@
       <img class="pb-2" src="{{logo}}" width="auto" height="100px" alt="{{imgAlt}}">
       <!-- <b height="80" width="auto">Inez Storage</b> -->
     </a>
+    <div class="mobile">
+      <a class="btn btn-primary" href="#gallery" >
+        Gallery
+      </a>
+      <a href="http://www.storage-defender.com/inez/" target="_blank">
+        <img  src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/Smart-Units-Learn-More-Banner.png" width="200px" alt="Smart-Units-Learn-More-Banner">
+      </a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
@@ -12,7 +23,7 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
       <ul class="navbar-nav ml-auto nav-scroll">
-        <li class="nav-item mx-2" *ngFor="let nav of navLinks">
+        <li class="nav-item " *ngFor="let nav of navLinks">
           <span *ngIf="nav?.type === 'link'"> 
             <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" *ngIf="nav?.path !== '/pay-rent'"
             [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
@@ -23,7 +34,7 @@
 
           <span *ngIf="nav?.type === 'dropdown'">
               <div class="dropdown show">  
-                <a class="dropdown-toggle nav-link text-center" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/location/inez-storage')  || router.isActive('/location/beck-road-storage')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+                <a class="dropdown-toggle nav-link text-center" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/location/inez-storage') || router.isActive('/location/beck-road-storage')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
                   <li *ngFor="let sub of nav.sublinks text-center"><a class="dropdown-item" [routerLinkActive]="'location-active'" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a></li>
                 </ul>
@@ -31,6 +42,14 @@
           </span>
         </li>
       </ul>
+    </div>
+    <div class="desktop">
+      <a class="btn btn-primary" href="#gallery" >
+        Gallery
+      </a>
+      <a href="http://www.storage-defender.com/inez/" target="_blank">
+        <img  src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/Smart-Units-Learn-More-Banner.png" width="200px" alt="Smart-Units-Learn-More-Banner">
+      </a>
     </div>
   </div>
 </nav>
