@@ -44,7 +44,7 @@ export class PayRentComponent implements OnInit {
 
   ngOnInit() {
     this.fetchContactDetails();
-    this.showPaymentPageType = environment.paymentPageType;
+    this.showPaymentPageType = environment.signUpForAuotoPay;
   }
 
   public fetchMetaData() {

@@ -3,16 +3,13 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
-
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-// import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
 import { AccordionComponent } from './accordion/accordion.component';
@@ -56,11 +53,11 @@ import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
 import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
 import { TabsComponent } from './tabs/tabs.component';
-import { AlternateDetailsReservationFormComponent } from './api-bundle/alternate-details-reservation-form/alternate-details-reservation-form.component';
 import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { MicrodataComponent } from './api-bundle/microdata/microdata.component';
+import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
 
 @NgModule({
   declarations: [
@@ -100,10 +97,10 @@ import { MicrodataComponent } from './api-bundle/microdata/microdata.component';
     PayRentComponent,
     SignUpComponent,
     TabsComponent,
-    AlternateDetailsReservationFormComponent,
     ThankYouComponent,
     PrivacyPolicyComponent,
     MicrodataComponent,
+    AlternateDetailsComponent,
   ],
   imports: [
     CommonModule,

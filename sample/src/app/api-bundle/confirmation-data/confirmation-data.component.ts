@@ -8,7 +8,7 @@ import { MakeAReservationService } from '../services/make-a-reservation.service'
 import { AddTenantService } from '../services/add-tenant.service';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { Subscription, Subject } from 'rxjs';
-import { option } from '../../data/view-rates';
+import { option, option1 } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
 import { environment } from '../../../environments/environment';
 @Component({
@@ -30,13 +30,21 @@ defaultTotalChargesAmount: number;
 defaultTotalTaxAmount: number;
 
 index: string;
+alternateIndex: string;
 
 options = [ {
   description: '',
   id: ''
 }];
 
+
+options1 = [ {
+  description: '',
+  id: ''
+}];
+
 stateString: string;
+alternateStateString: string;
 navigateToReserve: boolean;
 navigateToMoveIn: boolean;
 reservationInProgress = false;
@@ -125,10 +133,21 @@ fetchSharedData() {
 
 public fetchOption() {
   this.options = option;
+  this.option1 = option1;
   if (!!this.dataSharingService.objTenant.State) {
     this.index = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.State));
     if (!!this.options) {
       this.stateString = this.options[this.index].description;
+    }
+   }
+
+   if (!!this.dataSharingService.objTenant.AlternateState) {
+    this.alternateIndex = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.AlternateState));
+    if (!!this.alternateIndex) {
+      this.alternateStateString = this.options[this.alternateIndex].description;
+    } else {
+      this.alternateIndex = JSON.stringify(this.options1.findIndex(x => x.id === this.dataSharingService.objTenant.AlternateState));
+      this.alternateStateString = this.options1[this.alternateIndex].description; 
     }
    }
 }
@@ -168,6 +187,13 @@ getTenantUnitData() {
   this.addressLine2 = this.dataSharingService.objTenant.AddressLine2;
   this.city = this.dataSharingService.objTenant.City;
   this.zip = this.dataSharingService.objTenant.ZIP;
+  this.alternateName = this.dataSharingService.objTenant.AlternateName;
+  this.alternatePhone = this.dataSharingService.objTenant.AlternatePhone;
+  this.alternateAddressLine1 = this.dataSharingService.objTenant.AlternateAddressLine1;
+  this.alternateAddressLine2 = this.dataSharingService.objTenant.AlternateAddressLine2;
+  this.alternateCity = this.dataSharingService.objTenant.AlternateCity;
+  this.alternateState = this.dataSharingService.objTenant.AlternateState;
+  this.alternateZIP = this.dataSharingService.objTenant.AlternateZIP;
   this.reservationFee = this.dataSharingService.LstUnitTypes.ReservationFee;
   this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
   this.description = this.dataSharingService.LstUnitTypes.Description;

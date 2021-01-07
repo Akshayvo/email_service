@@ -4,7 +4,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
-import { option } from '../../data/view-rates';
+import { option, option1 } from '../../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
@@ -62,6 +62,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   count = 0;
 
   option =  [];
+  option1 = [];
   reserveUnitForm: FormGroup;
 
   tokenExit: string;
@@ -128,7 +129,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   biAnnualRate: number;
   quarterRate: number;
 
-  alternateTenantDetail: any;
+  alternatetypeDetail: any;
 
   private  getLeadDaysSubscribe$: Subscription;
   private  getTenantInfoSubscribe$: Subscription;
@@ -145,6 +146,24 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     private moveInService: MoveInService,
     public router: Router,
     ) {
+      if (this.router.url.includes('view-rates')) {
+        this.showReservationButton = true;
+      } else {
+        this.showReservationButton = false;
+      }
+  
+      if ((this.router.url.includes('reserve'))) {
+        this.navigateToReserve = true;
+        this.dataSharingService.navigateToReserve = true;
+        this.dataSharingService.navigateToMoveIn = false;
+      } else {
+        if (this.router.url.includes('move-in')) {
+          this.navigateToMoveIn = true;
+          this.dataSharingService.navigateToMoveIn = true;
+          this.dataSharingService.navigateToReserve = false;
+        }
+      }
+        
     this.reserveUnitForm = this.formBuilder.group({
       objTenant: this.formBuilder.group({
         FirstName: ['', Validators.required],
@@ -160,7 +179,19 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
+        AlternateName: [''],
+        AlternatePhone:   ['', [
+          Validators.pattern(
+            '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
+            )
+        ]],
+        AlternateAddressLine1: [''],
+        AlternateAddressLine2: [''],
+        AlternateCity: [''],
+        AlternateState: [''],
+        AlternateZIP: [''],
       }),
+
 
       lstUnitTypes: new FormArray([
         this.initLstUnitTypes(),
@@ -173,6 +204,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       lstRentalPeriods: new FormArray([
         this.initPeriodDescription(),
       ]),
+
       dteMoveIn: ['',
       conditionalValidator(
         (() => this.navigateToMoveIn === true),
@@ -190,24 +222,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         return validator(control);
       };
     }
-
-    if (this.router.url.includes('view-rates')) {
-      this.showReservationButton = true;
-    } else {
-      this.showReservationButton = false;
-    }
-
-      if ((this.router.url.includes('reserve'))) {
-        this.navigateToReserve = true;
-        this.dataSharingService.navigateToReserve = true;
-        this.dataSharingService.navigateToMoveIn = false;
-      } else {
-        if (this.router.url.includes('move-in')) {
-          this.navigateToMoveIn = true;
-          this.dataSharingService.navigateToMoveIn = true;
-          this.dataSharingService.navigateToReserve = false;
-        }
-      }
   }
 
   initLstInsuranceChoices() {
@@ -259,6 +273,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
     public fetchUSState() {
     this.option = option;
+    this.option1 = option1;
     }
 
   public navigate(location: any) {
