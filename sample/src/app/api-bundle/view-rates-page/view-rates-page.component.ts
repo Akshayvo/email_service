@@ -62,7 +62,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.getData();
-    this.fetchThData();
+    this.fetchThData();    
   }
 
   public fetchThData() {

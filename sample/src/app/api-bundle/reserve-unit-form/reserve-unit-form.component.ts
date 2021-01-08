@@ -145,7 +145,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     private leadDaysService: LeadDaysService,
     private moveInService: MoveInService,
     public router: Router,
-    ) {
+    ) {      
       if (this.router.url.includes('view-rates')) {
         this.showReservationButton = true;
       } else {
