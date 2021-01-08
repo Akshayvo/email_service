@@ -67,41 +67,53 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit() {
-     this.submitted = true;
+    const today = new Date();
+    window['dataLayer'] = window['dataLayer'] || {};
+    window['dataLayer'] = window['dataLayer'] || [];
+    window['dataLayer'].push({
+      'event': 'ContactFormsubmission',
+      'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+      'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+    });
 
-    // stop here if form is invalid
-    if (this.contactForm.invalid) {
-        return;
-    } else {
 
-      if ( !this.contactForm.value.subject) {
-        this.contactForm.value.subject = 'Website Form Submission';
-      }
+    this.submitted = true;
 
-      this.receiveremail = this.contactInfo[1].data;
-
-          this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
-                                 message: ${this.contactForm.value.message}`;
-
-          const body = {
-            name: this.contactForm.value.name,
-            email: this.contactForm.value.email,
-            receiveremail: this.receiveremail,
-            message: this.completeMessage,
-            subject: this.contactForm.value.subject
-          };
-          this.emailService.sendEmail(body)
-            .subscribe((response: any) => {
-              if (response.result != null) {
-                this.mailSent = true;
-              } else {
-              }
-            }, (err) => {
-
-            });
-          this.submitted = false;
-          // MailService(body);
-          this.contactForm.reset();
+   // stop here if form is invalid
+   if (this.contactForm.invalid) {
+       return;
+   } else {
+    if ( !this.contactForm.value.subject) {
+      this.contactForm.value.subject = 'Website Form Submission';
     }
-  }
+
+    const index = contact.findIndex(x => x.label === 'Email:');
+
+    if (!!index) {
+      this.receiveremail = this.contactInfo[index].data;
+    }
+
+     this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
+     message: ${this.contactForm.value.message}`;
+
+         const body = {
+           name: this.contactForm.value.name,
+           email: this.contactForm.value.email,
+           receiveremail: this.receiveremail,
+           message: this.completeMessage,
+           subject: this.contactForm.value.subject,
+         };
+         this.emailService.sendEmail(body)
+           .subscribe((response: any) => {
+             if (response.result != null) {
+                this.mailSent = true;
+             } else {
+             }
+           }, (err) => {
+           });
+         this.submitted = false;
+         this.mailSent = false;
+         this.contactForm.reset();
+   }
+ }
 }
