@@ -72,7 +72,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);
-    this.router.navigate([`${environment.locationName}/${location}`]);
+    this.router.navigate([`/${location}`]);
     this.dataSharingService.LstUnitTypes = unitData;
   }
 

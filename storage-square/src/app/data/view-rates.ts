@@ -2,26 +2,14 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Sample Self Storage - North has been serving Baldwinsville, and the surrounding communities
-      with quality regular and climate controlled self storage units for nearly two decades. We have
-      the experience and commitment to modern conveniences you need to make your next storage project an easy one`,
+      p: `Storage Square is West Mifflin's one-stop storage-shop! Our affordable units and friendly customer service
+      will make your renovation, or attic and garage cleaning project a fast and easy one. `,
     },
     {
-      p: `At Sample Self Storage - North, you'll have access to our services with an online tenant portal
-      for contactless rentals, and online payments. If you're here after hours and want to make a payment,
-      stop into the office's foyer and use our 24-hour kiosk!`
+      p: `Take a moment to review our available units, then reserve your unit in seconds and one of our friendly
+      managers will call out to confirm your details and schedule your move in. You'll be reclaiming that elbow
+      room around the home, office, or worksite in no time!`
     },
-    {
-      p: `Our residential storage users love our convenient location and affordable rates that take the stress
-      out of their move, renovation, or seasonal de-cluttering projects. An extra closet to an extra garage's
-      worth of space makes the most out of your home's space!
-      `
-    },
-    {
-      p: `Many local businesses in use our climate controlled storage units to save money by storing in a climate
-      controlled storage unit instead of expensive commercial real estate. We are the ideal space for your extra
-    inventory, or documents. Our 24-hour access policy is the ideal solution for your local business.`
-    }
 ];
 
 export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
@@ -35,22 +23,22 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    data: 'Deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  },
+  // {
+  //   data: 'Deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
   {
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
-  {
-    data: `Move In`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
-  },
-  {
-    data: `Climate Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  },
+  // {
+  //   data: `Move In`,
+  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  // },
+  // {
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
 ];
 
 

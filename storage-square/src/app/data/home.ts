@@ -42,9 +42,7 @@ export const aboutUs = [
     
 ];
 
-export const gettingStarted = `Are you ready to stop putting off cleaning out your attic, garage, or shed?
-Clear up some room around the house with Sample Self Storage - North and one of our affordable storage units,
-accessible 24 hours a day!`;
+export const gettingStarted = ``;
 
 export const feature = [
     {
@@ -76,11 +74,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Climate Controlled Units in Baldwinsville`,
-        blurb: `Sample Self Storage - North was the first self storage facility we built nearly 20 years ago.
-        We recently renovated our entire operation to make sure our valued customers have another 20 years of
-        clean, affordable regular and climate controlled self storage options in Baldwinsville! Let Sample Self
-        Storage - North help you today. Our well-lit and personalized pin-code secured facility awaits your next
-        storage project!`,
+        h2: ``,
+        blurb: ``,
     }
 ];

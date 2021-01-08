@@ -2,9 +2,9 @@
   <div class="jumbotron-container">
     <div class="jumbotron-top">
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
-      <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
-      </div>
-      <div class="container">
+      <!-- <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      </div> -->
+      <!-- <div class="container">
         <div class="jumbotorn-skew-text">
           <div class="disp" *ngFor="let jumbotron of jumbotron">
             <h2  class="my-4">
@@ -17,7 +17,7 @@
             <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
           </div>
           </div>
-        </div>
+        </div> -->
       </div>
       </div>
     <div class="jumbotron-bottom">
@@ -52,7 +52,7 @@
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
                 </span>
               </p>
-              <h4><b>Facility Hours:</b></h4>
+              <!-- <h4><b>Facility Hours:</b></h4> -->
               <p>
                 <span class="display-contact" *ngFor="let hour of hours">
                   <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
@@ -61,7 +61,7 @@
             </div>
             <div>
               <app-tables [tBody]="featuresList"></app-tables>
-              <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+              <!-- <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a> -->
             </div>
           </div>
         </div>

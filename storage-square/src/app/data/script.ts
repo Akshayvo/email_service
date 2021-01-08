@@ -18,7 +18,7 @@ export const homePageScript = [ {
       "https://example.com/photos/16x9/photo.jpg"
      ],
     "@id": "http://davessteakhouse.example.com",
-    "name": "Sample site ",
+    "name": "Storage Square ",
      "description": "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
     "address": {
       "@type": "PostalAddress",
@@ -96,7 +96,7 @@ export const homePageScript = [ {
           "telephone": "4",
           "contactType": "customer service"
         }],
-        "email": "contact@sample.com",
+        "email": "storagesquare.wm@gmail.com",
         "sameAs": [
           "facebook.com/xxx",
           "",
@@ -129,7 +129,7 @@ export const ogHomePage = [
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
   },
 ];
 
@@ -156,7 +156,7 @@ export const twitterHomePage = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
   },
 ];
 
@@ -183,7 +183,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
     },
   ];
   
@@ -210,7 +210,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
     },
   ];
 
@@ -237,7 +237,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
     },
   ];
   
@@ -264,7 +264,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
     },
   ];
   
@@ -291,7 +291,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
     },
   ];
   
@@ -318,7 +318,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
     },
   ];
 
