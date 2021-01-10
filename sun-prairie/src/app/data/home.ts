@@ -76,10 +76,10 @@ export const aboutUs = [
             keypad activated gate system. `,
     },
     {
-        p: `Our brand new, well-maintained traditional and climate controlled units come in a
-            variety of sizes from 5'x10' to 15'x60' to accommodate all of your self storage
-            needs! Our well-lit and paved facility is the ideal RV, trailer, or boat parking
-            solution. We even offer oversized units that are perfect for select sizes of boatds and RVs.`,
+        p: `Our brand new, well-maintained traditional and climate controlled units come in a variety of
+        sizes from 5'x10' to 15'x60' to accommodate all of your self storage needs! Our well-lit and paved
+        facility is the ideal RV, trailer, or boat parking solution. We even offer oversized units that
+        are perfect for select sizes of boats and RVs.`,
     },
     {
         p: `We are a locally owned and operated self storage facility with decades of experience providing
