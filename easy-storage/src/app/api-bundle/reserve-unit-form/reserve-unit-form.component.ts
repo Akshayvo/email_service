@@ -179,17 +179,17 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
-        AlternateName: [''],
-        AlternatePhone:   ['', [
-          Validators.pattern(
-            '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
-            )
-        ]],
-        AlternateAddressLine1: [''],
-        AlternateAddressLine2: [''],
-        AlternateCity: [''],
-        AlternateState: [''],
-        AlternateZIP: [''],
+        // AlternateName: [''],
+        // AlternatePhone:   ['', [
+        //   Validators.pattern(
+        //     '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
+        //     )
+        // ]],
+        // AlternateAddressLine1: [''],
+        // AlternateAddressLine2: [''],
+        // AlternateCity: [''],
+        // AlternateState: [''],
+        // AlternateZIP: [''],
       }),
 
 
@@ -277,7 +277,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     }
 
   public navigate(location: any) {
-    this.router.navigate([`${environment.locationName}/${location}`]);
+    this.router.navigate([`${location}`]);
   }
 
   get f(): any { return this.reserveUnitForm.controls; }
@@ -298,7 +298,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
      return;
     } else {
     }
-    this.router.navigate([`${environment.locationName}/${location}`]);
+    this.router.navigate([`${location}`]);
   }
 
 

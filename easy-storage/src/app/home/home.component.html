@@ -2,9 +2,9 @@
   <div class="jumbotron-container">
     <div class="jumbotron-top">
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
-      <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
-      </div>
-      <div class="container">
+      <!-- <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      </div> -->
+      <!-- <div class="container">
         <div class="jumbotorn-skew-text">
           <div class="disp" *ngFor="let jumbotron of jumbotron">
             <h2  class="my-4">
@@ -17,7 +17,7 @@
             <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
           </div>
           </div>
-        </div>
+        </div> -->
       </div>
       </div>
     <div class="jumbotron-bottom">
@@ -38,7 +38,8 @@
       <div class="section py-4 m-0">
         <div class="row">
           <div class="col-lg-6 py-3 home-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11642.278493425898!2d-76.334158!3d43.155566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6050b46d0319b1d!2sSyrasoft%20Self%20Storage%20Software!5e0!3m2!1sen!2sus!4v1599065008554!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11259.045126408877!2d122.8494909!3d45.131173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe77cec6879164004!2sEasy%2
+              0Storage%20of%20Woodburn!5e0!3m2!1sen!2sus!4v1610138861326!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
           </div>
 
           <div class="col-lg-6 py-3">
@@ -61,7 +62,7 @@
             </div>
             <div>
               <app-tables [tBody]="featuresList"></app-tables>
-              <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+              <!-- <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a> -->
             </div>
           </div>
         </div>
@@ -72,7 +73,8 @@
     <div class="section py-5 m-0">
       <div class="row">
         <div class="col-lg-6 py-3">
-          <img src="{{imageBaseUrl}}/inside-self-storage-unit.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
+          <!-- <img src="{{imageBaseUrl}}/inside-self-storage-unit.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
+          <app-photos></app-photos>
         </div>
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
@@ -88,9 +90,9 @@
         <div class="section py-5 m-0">
           <div class="row">
             <div class="col-md-12 py-3">
-              <h2 class="heading pb-4">Getting Started</h2>
+              <h2 class="heading pb-4">COVID-19 Policies</h2>
               <p class="pb-4">{{gettingStarted}}</p>
-              <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit Now!</a>
+              <!-- <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit Now!</a> -->
             </div>
           </div>
         </div>

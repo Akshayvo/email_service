@@ -1,55 +1,61 @@
 export const contact = [
     {
         id: 0,
-        label: 'Address:',
-        data: '6 Canton St, Baldwinsville, NY 13027',
+        label: 'Facility Address:',
+        data: '535 S Pacific Hwy, Talent, OR 97540',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 1,
-        label: 'Email:',
-        data: 'sales@syrasoft.com',
-        class: 'fas fa-envelope mx-2 iconColor',
-        email: 'sales@syrasoft.com, syrasoftsoftware@gmail.com',
-        redirect: 'mailto:`sales@syrasoft.com, syrasoftsoftware@gmail.com`'
+        label: 'Office Address:',
+        data: 'P.O. Box 318, Woodburn, OR 97071',
+        class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 2,
+        label: 'Email:',
+        data: 'easystoragewoodburn@gmail.com',
+        class: 'fas fa-envelope mx-2 iconColor',
+        email: 'easystoragewoodburn@gmail.com',
+        redirect: 'mailto:`easystoragewoodburn@gmail.com`'
+    },
+    {
+        id: 3,
         label: 'Phone:',
-        data: '(555) 555-5555',
+        data: '(503) 892-6905',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:5555555555',
+        redirect: 'tel:5038926905',
     }
 ];
 
 export const hours = [
     {
         label: 'Monday - Friday: ',
-        data: '9:00AM to 7:00PM'
+        data: '10:00-6:00PM'
     },
     {
         label: 'Saturday: ',
-        data: '10:00 am - 2:00 pm'
+        data: '9:00AM-4:00PM'
     },
     {
         label: 'Sunday: ',
         data: 'CLOSED'
     },
     {
-        label: 'Storage Access Hours: ',
-        data: '24 hours a day, 7 days a week'
+        label: 'Access Hours: ',
+        data: '7 Days a Week 6:00AM-4:00PM'
     }
 ];
 
 export const socialLinks = [
-    {
-        label: 'twitter',
-        path: '',
-        class: 'fab fa-twitter-square',
-    },
+    // {
+    //     label: 'twitter',
+    //     path: '',
+    //     class: 'fab fa-twitter-square',
+    // },
     {
         label: 'facebook',
-        path: '',
+        path: 'https://www.facebook.com/easystoragellc/',
         class: 'fab fa-facebook-square',
     },
 ];

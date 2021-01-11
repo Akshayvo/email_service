@@ -2,25 +2,23 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Sample Self Storage - North has been serving Baldwinsville, and the surrounding communities
-      with quality regular and climate controlled self storage units for nearly two decades. We have
-      the experience and commitment to modern conveniences you need to make your next storage project an easy one`,
+      p: `Easy Storage provides Woodburn, Gervais, Hubbard, Mt Angel, and the surrounding communities with a
+      large selection of regular and climate controlled self storage units. Our facility is designed from the ground
+      up to make your self storage project a convenient one.`,
     },
     {
-      p: `At Sample Self Storage - North, you'll have access to our services with an online tenant portal
-      for contactless rentals, and online payments. If you're here after hours and want to make a payment,
-      stop into the office's foyer and use our 24-hour kiosk!`
+      p: `Start by reserving your unit through our contactless form, or you can call our offices and speak with one of
+      our self storage experts. We'll walk you through the process, and you can pick out any tape, boxes, or other
+      supplies from our retail store.`
     },
     {
-      p: `Our residential storage users love our convenient location and affordable rates that take the stress
-      out of their move, renovation, or seasonal de-cluttering projects. An extra closet to an extra garage's
-      worth of space makes the most out of your home's space!
-      `
+      p: `Once you're moved into your unit, you'll have access from 6:00AM to 10:00PM 7 days a week(longer by
+        request!), and can use your personal pin-code to come and go as needed. Our well-lit, fully-fenced self
+        storage facility also includes numerous security cameras placed around the premises to ensure a sense of
+        safety at all times.`
     },
     {
-      p: `Many local businesses in use our climate controlled storage units to save money by storing in a climate
-      controlled storage unit instead of expensive commercial real estate. We are the ideal space for your extra
-    inventory, or documents. Our 24-hour access policy is the ideal solution for your local business.`
+      p: `Give us a call, or reserve your unit today! Our team looks forward to meeting your self storage needs!`
     }
 ];
 
@@ -35,18 +33,18 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    data: 'Deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  },
+  // {
+  //   data: 'Deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
   {
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
-  {
-    data: `Move In`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
-  },
+  // {
+  //   data: `Move In`,
+  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  // },
   {
     data: `Climate Control`,
     state: objSIMSetting.objUnitSizesSetting.blnClimateControl

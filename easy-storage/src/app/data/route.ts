@@ -77,13 +77,13 @@ const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
  export const apiRoutes = [
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
-    { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
-    { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
+    { path: `storage-tips`, component: StorageTipsComponent },
+    { path: `reserve-unit`, component: ReserveComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     {
-      path: `${environment.locationName}/view-rates`,
+      path: `view-rates`,
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
@@ -95,19 +95,19 @@ const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
       ]
      },
-     {
-      path: `${environment.locationName}/rent-now`,
-      component: ViewRatesComponent,
-      children: [
-        { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
-        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
-      ]
-     },
+    //  {
+    //   path: `rent-now`,
+    //   component: ViewRatesComponent,
+    //   children: [
+    //     { path: '', component: ViewRatesPageComponent },
+    //     { path: 'reserve', component: ReserveUnitFormComponent },
+    //     { path: 'move-in', component: ReserveUnitFormComponent },
+    //     { path: 'confirmation', component: ConfirmationDataComponent },
+    //     { path: 'payReservationCharges', component: PayRentFormComponent },
+    //     { path: 'payMoveInCharges', component: PayRentFormComponent },
+    //     { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+    //   ]
+    //  },
     {
       path: 'pay-rent', component: PayRentComponent,
       children: childroute
@@ -118,7 +118,7 @@ const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: ''
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJDy-DzZ5elVQRBEAWeWjsfOc'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -140,7 +140,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: ''
+          externalUrl: 'http://search.google.com/local/writereview?placeid=ChIJDy-DzZ5elVQRBEAWeWjsfOc'
       }
     },
     { path: 'error', component: ErrorHandlerComponent },

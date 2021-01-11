@@ -5,7 +5,7 @@ Welcome to the project documentation!
 ## Changing the project name
 Replace ng-starter-pack with your project name(Hyphen Case)
 
-Replace sample with your project name(camelCase)
+Replace easy-storage with your project name(camelCase)
 
 Find and Replace across project
 
