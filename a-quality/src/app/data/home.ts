@@ -23,17 +23,14 @@ export const featuresHead = [
 ];
 
 export const serviceOffered = [
-    {
-        p: `Our Line Drive location is located off of Red Bluff Rd. behind McCoy’s Building Supply
-        (across from the Deer Park ISD Outdoor Learning Center / Ag Barn). `,
-    },
+   
     {
         p: `A-Quality Boat & RV Storage has served the Greater Southeast Harris County area since 2003. We were
-        happy to add our second location in Pasadena at Holly Avenue in 2020. At A-Quality Boat & RV Storage, you
-        will be greeted by friendly customer service and be able to choose from several different unit sizes for
-        your storage needs. Our Line Drive location is located off of Red Bluff Rd. behind McCoy’s Building Supply
-        (across from the Deer Park ISD Outdoor Learning Center / Ag Barn).  The Holly Avenue location is right
-        across the street from Golden Acres Elementary School.`
+        happy to add our second location in Pasadena at Holly Avenue in 2020. At A-Quality Boat & RV Storage,
+        you will be greeted by friendly customer service and be able to choose from several different unit sizes
+        for your storage needs. Our Line Drive location is located off of Red Bluff Rd. behind McCoy’s Building
+        Supply (across from the Deer Park ISD Outdoor Learning Center / Ag Barn).  The Holly Avenue location is
+        right across the street from Golden Acres Elementary School.`
     },
     {
         p: `Both locations give you 24-hour access to your unit, and easy online reservations and online rentals. Don't

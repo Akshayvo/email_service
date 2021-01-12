@@ -45,7 +45,7 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '5226 Holly Ave, Pasadena, TX 77505',
+        data: '5226 Holly Ave, Pasadena, TX 77503',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: ''
     },
