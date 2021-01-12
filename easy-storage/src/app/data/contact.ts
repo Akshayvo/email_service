@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Facility Address:',
-        data: '535 S Pacific Hwy, Talent, OR 97540',
+        data: '535 S Pacific Hwy, Woodburn, OR 97071',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
@@ -22,9 +22,9 @@ export const contact = [
     {
         id: 3,
         label: 'Phone:',
-        data: '(503) 892-6905',
+        data: '(503) 982-6905',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:5038926905',
+        redirect: 'tel:5039826905',
     }
 ];
 
