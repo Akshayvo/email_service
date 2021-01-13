@@ -14,8 +14,8 @@ export const contact = [
     {
         id: 2,
         label: 'Email: ',
-        redirect: 'mailto:gjhennen@msn.com',
-        data: 'gjhennen@msn.com',
+        redirect: 'mailto:southsidestoragemorrismn@gmail.com',
+        data: 'southsidestoragemorrismn@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
     },
     {
