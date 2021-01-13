@@ -32,7 +32,7 @@ export const tableDataContactPage = [
   },
   {
     facility: 'A-Quality Boat & RV Storage - Holly Avenue Location',
-    address: '5226 Holly Ave, Pasadena, TX 77505',
+    address: '5226 Holly Ave, Pasadena, TX 77503',
     url: 'holly-avenue'
   },
 ];
