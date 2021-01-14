@@ -6,6 +6,24 @@
   }
 }
 
+.jumbotron-image {
+  height: 80vh;
+}
+
+#overlay {
+  position: fixed;
+  top: -1080;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.6);
+  // background: #000;
+  pointer-events: none;
+  opacity: 0.8;
+  color: #fff;
+}
+
 
 .jumbotron-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Easy_Storage/webp/easy-storage-jumbotron.webp");
@@ -92,12 +110,17 @@
   align-items: center;
 }
 
-.jumbotorn-skew-style {
-  width: 75%;
-  float: left;
-  left: -25%;
+.jumbotorn-skew-style1 {
+  // width: 75%;
+  // float: left;
+  // left: -25%;
+  // position: relative;
+  // transform: skew(15deg);
+  // height: 100%;
+
+  left: 0;
+  top: -1080px;
   position: relative;
-  transform: skew(15deg);
   height: 100%;
 
   a {
@@ -546,6 +569,39 @@
 
   .jumbotorn-button {
     padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .jumbotron-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron-background-webp {
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Easy_Storage/webp/easy-storage-jumbotron.webp");
+  }
+  
+  .jumbotron-background-jpg {
+    background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Easy_Storage/jpg/easy-storage-jumbotron.jpg");
+  }
+  .jumbotron-image {
+    // background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/jumbotron-photo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 80vh;
+  }
+  .video-background {
+    display: none;
+  }
+  .jumbotorn-skew-style1 {
+    display: none;
+  }
+  .jumbotron-bottom {
+    display: none;
   }
 }
 
