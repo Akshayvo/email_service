@@ -13,7 +13,7 @@ import { DataSharingService } from '../services/data-sharing.service';
 export class LoginModalComponent implements OnInit, OnDestroy {
 
 
-  @Output() someEvent = new EventEmitter<string>();
+  @Output() closeLoginPrompt  = new EventEmitter<string>();
 
   loginModalForm: FormGroup;
   showForgotPassword: boolean;
@@ -47,7 +47,7 @@ export class LoginModalComponent implements OnInit, OnDestroy {
   get f() { return this.loginModalForm.controls; }
 
   closeBox() {
-    this.someEvent.next();
+    this.closeLoginPrompt.next();
   }
 
   handleForgotPassword() {

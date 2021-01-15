@@ -30,8 +30,6 @@ import { ViewRatesPageComponent } from './api-bundle/view-rates-page/view-rates-
 import { ReserveUnitFormComponent } from './api-bundle/reserve-unit-form/reserve-unit-form.component';
 import { ReserveUnitIframePageComponent } from './iframe-bundle/reserve-unit-iframe-page/reserve-unit-iframe-page.component';
 import { ConfirmationDataComponent } from './api-bundle/confirmation-data/confirmation-data.component';
-import { PayRentFormComponent } from './api-bundle/pay-rent-form/pay-rent-form.component';
-import { PaymentComponent } from './api-bundle/payment/payment.component';
 import { PaymentIframePageComponent } from './iframe-bundle/payment-iframe-page/payment-iframe-page.component';
 import { LoginComponent } from './api-bundle/login/login.component';
 import { LoginModalComponent } from './api-bundle/login-modal/login-modal.component';
@@ -52,6 +50,16 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { PhotosComponent } from './photos/photos.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { BotAndRvComponent } from './bot-and-rv/bot-and-rv.component';
+import { PayRentFormComponent } from './api-bundle/pay-rent-form/pay-rent-form.component';
+import { PaymentComponent } from './api-bundle/payment/payment.component';
+import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
+import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { UpdateDetailsComponent } from './api-bundle/update-details/update-details.component';
+import { UpdateComponent } from './api-bundle/update/update.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,7 +92,15 @@ import { BotAndRvComponent } from './bot-and-rv/bot-and-rv.component';
     VerifyCodeComponent,
     ResetPasswordComponent,
     BotAndRvComponent,
-    ContactButtonComponent
+    ContactButtonComponent,
+    PayRentComponent,
+    RentSubComponent,
+    ThankYouComponent,
+    SignUpComponent,
+    AutoPayComponent,
+    TabsComponent,
+    UpdateDetailsComponent,
+    UpdateComponent
   ],
   imports: [
     CommonModule,

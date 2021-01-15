@@ -31,3 +31,6 @@ recreational vehicle storage? Use our contact form, or call us today!`;
 export const carBotRvTitle = `Car, Boat & RV Storage | McKeeSport Storage: Christy Park`;
 export const carBotRvContent = `At McKeesport Storage, we offer short-term contracts, which are perfect for
 your car, boat, or recreational vehicle parking during the offseason!`;
+
+export const thankYouPageTitle = `Thank You For Reserving Your Unit at Sample Self Storage!`;
+export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;

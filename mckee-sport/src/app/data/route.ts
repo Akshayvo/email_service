@@ -6,8 +6,6 @@ import { ViewRatesComponent } from '../api-bundle/view-rates/view-rates.componen
 import { ViewRatesPageComponent } from '../api-bundle/view-rates-page/view-rates-page.component';
 import { ReserveUnitFormComponent } from '../api-bundle/reserve-unit-form/reserve-unit-form.component';
 import { ConfirmationDataComponent } from '../api-bundle/confirmation-data/confirmation-data.component';
-import { PayRentFormComponent } from '../api-bundle/pay-rent-form/pay-rent-form.component';
-import { PaymentComponent } from '../api-bundle/payment/payment.component';
 import { LoginComponent } from '../api-bundle/login/login.component';
 import { ForgotPasswordComponent } from '../api-bundle/forgot-password/forgot-password.component';
 import { AuthGuard } from '../auth-guard/auth.gurad';
@@ -24,7 +22,72 @@ import { ResetPasswordComponent } from '../api-bundle/reset-password/reset-passw
 import { VerifictionCodeGuard } from '../auth-guard/verificationCode.guard';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
 import { BotAndRvComponent } from '../bot-and-rv/bot-and-rv.component';
+import { ThankYouGuard } from '../thank-you.guard';
+import { environment } from '../../environments/environment';
+import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
+import { RentSubComponent } from '../api-bundle/rent-sub/rent-sub.component';
+import { SignUpComponent } from '../api-bundle/sign-up/sign-up.component';
+import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
+import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
+import { PayRentFormComponent } from '../api-bundle/pay-rent-form/pay-rent-form.component';
+import { UpdateDetailsComponent } from '../api-bundle/update-details/update-details.component';
+import { UpdateComponent } from '../api-bundle/update/update.component';
 
+const withoutTab = [
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
+        {path: 'login', component: LoginComponent },
+        {path: 'forgotPassword', component: ForgotPasswordComponent },
+        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+        {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+        { path: 'verifyCode', component: VerifyCodeComponent },
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+        // canActivate: [VerifictionCodeGuard]
+];
+
+const withTab = [
+      { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
+      { path: 'rent-sub', component: RentSubComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      },
+      { path: 'sign-up', component: SignUpComponent,
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ]
+      },
+      { path: 'update', component: UpdateComponent,
+      children: [
+        {path: '', redirectTo: 'login', pathMatch: 'full'},
+        {path: 'login', component: LoginComponent },
+        {path: 'forgotPassword', component: ForgotPasswordComponent },
+        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+        {path: 'update-information', component: UpdateDetailsComponent, canActivate: [AuthGuard]},
+        { path: 'verifyCode', component: VerifyCodeComponent },
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+        // canActivate: [VerifictionCodeGuard]
+      ]
+    }
+];
+
+// const reservationForm = environment
+const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
@@ -47,18 +110,9 @@ import { BotAndRvComponent } from '../bot-and-rv/bot-and-rv.component';
         { path: 'payMoveInCharges', component: PayRentFormComponent },
       ]
      },
-    {
-      path: 'pay-rent', component: PaymentComponent,
-      children: [
-        {path: '', redirectTo: 'login', pathMatch: 'full'},
-        {path: 'login', component: LoginComponent },
-        {path: 'forgotPassword', component: ForgotPasswordComponent },
-        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-        {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-        { path: 'verifyCode', component: VerifyCodeComponent },
-        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-        // canActivate: [VerifictionCodeGuard]
-      ]
+     {
+      path: 'pay-rent', component: PayRentComponent,
+      children: childroute
     },
     { path: 'forgot-password', component: ForgotPasswordComponent },
     { path: 'review', component: HomeComponent,
