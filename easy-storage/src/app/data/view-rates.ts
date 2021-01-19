@@ -2,20 +2,18 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Easy Storage provides Woodburn, Gervais, Hubbard, Mt Angel, and the surrounding communities with a
-      large selection of regular and climate controlled self storage units. Our facility is designed from the ground
-      up to make your self storage project a convenient one.`,
+      p: `Easy Storage provides Woodburn, Gervais, Hubbard, Mt Angel, and the surrounding communities with a large selection
+      of self storage units. Our facility is designed from the ground up to make your self storage project a convenient one.`,
     },
     {
-      p: `Start by reserving your unit through our contactless form, or you can call our offices and speak with one of
-      our self storage experts. We'll walk you through the process, and you can pick out any tape, boxes, or other
-      supplies from our retail store.`
+      p: `Start by reserving your unit through our contactless form, or you can call our offices and speak with one of our
+      self storage experts. We'll walk you through the process, and you can pick out any tape, boxes, or other supplies from
+      our retail store.`
     },
     {
-      p: `Once you're moved into your unit, you'll have access from 6:00AM to 10:00PM 7 days a week(longer by
-        request!), and can use your personal pin-code to come and go as needed. Our well-lit, fully-fenced self
-        storage facility also includes numerous security cameras placed around the premises to ensure a sense of
-        safety at all times.`
+      p: `Once you're moved into your unit, you'll have access from 6:00AM to 10:00PM 7 days a week (longer by request!),
+      and can use your personal pin-code to come and go as needed. Our well-lit, fully-fenced self storage facility also
+      includes numerous security cameras placed around the premises to ensure a sense of safety at all times.`
     },
     {
       p: `Give us a call, or reserve your unit today! Our team looks forward to meeting your self storage needs!`
@@ -45,10 +43,10 @@ export const th = [
   //   data: `Move In`,
   //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
   // },
-  {
-    data: `Climate Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  },
+  // {
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
 ];
 
 

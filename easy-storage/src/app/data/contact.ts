@@ -1,13 +1,13 @@
 export const contact = [
     {
         id: 0,
-        label: 'Facility Address:',
+        label: 'Office Address:',
         data: '535 S Pacific Hwy, Woodburn, OR 97071',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 1,
-        label: 'Office Address:',
+        label: 'Mailing Address:',
         data: 'P.O. Box 318, Woodburn, OR 97071',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
@@ -43,7 +43,7 @@ export const hours = [
     },
     {
         label: 'Access Hours: ',
-        data: '7 Days a Week 6:00AM-4:00PM'
+        data: '7 Days a Week 6:00AM-10:00PM'
     }
 ];
 
