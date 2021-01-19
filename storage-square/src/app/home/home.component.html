@@ -32,6 +32,14 @@
     </div>
   </div>
 
+  <div class="bg-price">
+    <div class="container py-4">
+      <div class="price text-center">
+        <p class="mb-0">Nobody Beats Our Prices!</p>
+      </div>
+    </div>
+  </div>
+
 
   <div class="bg-light">
     <div class="container py-4">
@@ -46,7 +54,7 @@
               
               <p>
                 <span *ngFor="let contact of contactDetails" class="display-contact">
-                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.id === 3 || contact?.id === 4 else other_content">
                     <h4><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></h4>
                   </span>
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>

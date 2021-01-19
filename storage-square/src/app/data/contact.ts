@@ -7,6 +7,12 @@ export const contact = [
     },
     {
         id: 1,
+        label: 'Mailing Address:',
+        data: '5158 Cleveland Avenue, West Mifflin, PA, 15122.',
+        class: 'fas fa-map-marker-alt mx-2 iconColor',
+    },
+    {
+        id: 2,
         label: 'Email:',
         data: 'storagesquare.wm@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
@@ -14,11 +20,18 @@ export const contact = [
         redirect: 'mailto:`storagesquare.wm@gmail.com`'
     },
     {
-        id: 2,
-        label: 'Phone:',
+        id: 3,
+        label: 'Office Number:',
         data: '(412) 462-4777',
         class: 'fas fa-phone mx-2 iconColor',
         redirect: 'tel:4124624777',
+    },
+    {
+        id: 4,
+        label: 'Call or Text:',
+        data: '(412) 461-0556',
+        class: 'fas fa-phone mx-2 iconColor',
+        redirect: 'tel:4124610556',
     }
 ];
 

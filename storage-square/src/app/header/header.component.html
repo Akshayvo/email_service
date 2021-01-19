@@ -3,9 +3,11 @@
     <div class="contact-header">
       <div class="row">
         <div class="col-md-10">
-          <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
-            <i [class]="contact?.class"></i><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+          <span class="contact-details pr-2" *ngFor="let contact of contactDetails; let i=index">
+            <span *ngIf="i % 2 == 0">
+            <i [class]="contact?.class"></i><span class="contact-links" *ngIf="contact?.id === 2 || contact?.id === 4 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
             <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
+           </span>
           </span>
         </div>
         <div class="col-md-2 ml-auto text-right">

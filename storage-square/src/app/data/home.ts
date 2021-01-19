@@ -31,7 +31,7 @@ export const aboutUsHeading = `Self Storage Units in West Mifflin, PA`;
 
 export const aboutUs = [
     {
-        p: `Storage Square is a modern self storage facility located in West Mifflin, P.A.  As a locally owned and operated company, we're committed to providing the best storage services, and customer service at the lowest possible price!  We are conveniently located on Homestead Duquesne Road right behind Staley's Dust To Glory.`,
+        p: `Storage Square is a modern self storage facility located in West Mifflin, P.A. As a locally owned and operated company, we're committed to providing the best storage services, and customer service at the lowest possible price! We are conveniently located on Homestead Duquesne Road right across the street from Carl's Tree Service.`,
     },
     {
         p: `We understand that security is a top concern when storing your belongings. That's why our facility comes complete with a security gate with keypad entry that opens to your unique pin-code, fencing, and security cameras covering the facility. `,
