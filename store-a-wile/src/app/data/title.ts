@@ -1,8 +1,8 @@
 export const homePageTitle = `Affordable Self Storage Units & Outside Parking in Woodland`;
 export const homePageContent = `Stor-a-Wile serves Woodland and the surrounding communities with a variety of well-maintained and affordable self storage units.`;
 
-export const viewRatesPageTitle = ``;
-export const viewRatesPageContent = ``;
+export const viewRatesPageTitle = `View Rates | Stor-A-Wile`;
+export const viewRatesPageContent = `Take a moment to review our highly competitive rates, then reserve online, or you can call our friendly management team!`;
 
 export const reservePageTitle = ``;
 export const reservePageContent = ``;

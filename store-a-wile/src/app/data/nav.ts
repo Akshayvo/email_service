@@ -5,10 +5,10 @@ export const navLinks = [
         label: 'HOME',
         path: '/',
     },
-    // {
-    //     label: 'VIEW RATES',
-    //     path: `${environment.locationName}/view-rates`,
-    // },
+    {
+        label: 'VIEW RATES',
+        path: `${environment.locationName}/view-rates`,
+    },
     // {
     //     label: 'RENT NOW',
     //     path: `${environment.locationName}/rent-now`,

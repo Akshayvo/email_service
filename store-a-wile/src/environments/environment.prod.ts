@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  locationName: 'new-york',
+  locationName: 'woodland',
   type: 0,  // { API: 0, iframe: 1 }
   paymentPageType: 0, // { withoutTab: 0, withTab: 1}
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
@@ -12,6 +12,6 @@ export const environment = {
   facilityName: 'Store-A-Wile',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
+  APIKey: `dzJ0OVczSjgqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29384
   websiteUrl: 'https://www.store-a-wilestorage.com'
 };

@@ -1,4 +1,4 @@
-export const viewRatesHeading = ``;
+export const viewRatesHeading = `View Rates`;
 
 export const reserveUnitHeading = ``;
 
