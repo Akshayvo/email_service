@@ -1,6 +1,6 @@
 export const featuresList = [
     {
-        td1: 'Keepad Access Gate System',
+        td1: 'Keypad Access Gate System',
         td2: 'Drive Up Access'
     },
     {
