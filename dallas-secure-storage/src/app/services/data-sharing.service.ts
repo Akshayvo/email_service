@@ -27,8 +27,8 @@ export class DataSharingService {
   };
 
   // locationAPIKey = {                                                     // demo north
-  //   loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-  //   loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  //   loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28463
+  //   loc2: 'YzI+OEs0ejZqNUg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
   //   loc3: 'YzI+OEs0ejZqNUg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   //   loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   //   loc5: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',

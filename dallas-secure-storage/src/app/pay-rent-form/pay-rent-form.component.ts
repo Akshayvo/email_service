@@ -50,6 +50,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   showloaderForPayment = false;
   toggleSignUp = false;
   IsAutoPaymentsEnabled = false;
+  makePaymentForUnit = false;
   totalReserveAmount: number;
   totalMoveInAmount: number;
   date: Date;
@@ -458,6 +459,7 @@ public navigateToPrevious() {
   }
 
   makePayment(paymentData: any) {
+    this.makePaymentForUnit = true;
     if (this.toggleSignUp === true) {
       if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
       this.signUpAutoPay(this.signUp);
@@ -468,12 +470,13 @@ public navigateToPrevious() {
     this.invalidPayment = null,
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
-        this.showloaderForPayment = false;
+        // this.showloaderForPayment = false;
         if (paymentDataResponse && paymentDataResponse.PayTypeForResult && paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
           this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
         }
         this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         if ( paymentDataResponse.intErrorCode === 1 ) {
+          this.makePaymentForUnit = false;
           if (this.navigateToReserve) {
             this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
             this.makeAReservation(this.MoveIn);
@@ -485,11 +488,13 @@ public navigateToPrevious() {
           }
           this.showSuccessPayment = true;
         } else {
+          this.makePaymentForUnit = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
 
 
       }, (err: any) => {
+        this.makePaymentForUnit = false;
         if (err instanceof HttpErrorResponse) {
           if (err.status === 400) {
             this.showloaderForPayment = false;
@@ -526,11 +531,13 @@ public navigateToPrevious() {
   }
 
   makeAReservation(strConfirmation: any) {
+    this.makePaymentForUnit = true;
   this.reservationInProgress = true;
   this.makeAReservationSubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
     .subscribe(strConfirmationResponse => {
       this.strConfirmation = strConfirmationResponse.strConfirmation;
       this.showConfirmation = false;
+      this.makePaymentForUnit = false;
       this.submitted = false;
        this.tokenExit = localStorage.getItem('strTenantToken');
 
@@ -546,6 +553,7 @@ public navigateToPrevious() {
       }
       this.reservationInProgress = false;
     }, (err: any) => {
+      this.makePaymentForUnit = false;
       if (err.status === 403) {
 
       } else {
@@ -565,12 +573,14 @@ public navigateToPrevious() {
   }
 
   moveIn(strAccessCode: any) {
+    this.makePaymentForUnit = true;
     this.reservationInProgress = true;
     this.MoveIn['blnGenerateDocuments'] = true;
     this.MoveIn.dteMoveIn = this.convertDate(new Date());
     this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
       .subscribe(strConfirmationResponse => {
         this.strAccessCode = strConfirmationResponse.strAccessCode;
+        this.makePaymentForUnit = false;
         this.submitted = false;
          this.tokenExit = localStorage.getItem('strTenantToken');
          if (this.tokenExit) {
@@ -583,6 +593,7 @@ public navigateToPrevious() {
         }
         this.reservationInProgress = false;
       }, (err: any) => {
+        this.makePaymentForUnit = false;
         if (err.status === 403) {
           this.showConfirmation = false;
 
