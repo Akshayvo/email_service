@@ -82,5 +82,22 @@ export const unitSizer = [
             { content: 'Bookcases', },
             { content: 'Tow Trailer', },
         ],
+    },
+    {
+        id: 5,
+        size: '10\' x 35\'',
+        heading: '10\' x 35\' Storage Unit',
+        // tslint:disable-next-line:max-line-length
+        unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x35.png',
+        data: `This unit is approximately 350 sq feet of space that can hold the contents
+        of a multiple bedroom apartments or a small house. `,
+        amenities: [
+            { content: 'Appliances', },
+            { content: 'Car or Small Boat', },
+            { content: 'Furniture', },
+            { content: 'Mattresses' },
+            { content: 'Bookcases', },
+            { content: 'Tow Trailer', },
+        ],
     }
 ];

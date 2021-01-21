@@ -17,8 +17,8 @@ export const storageTipsTitle = `Storage Tips  | Southside Storage`;
 export const storageTipsContent = `Use our helpful self storage tips list to make your stay at Southside Storage an easy and enjoyable one!`;
 
 
-export const unitSizerPageTitle = ``;
-export const unitSizerPageContent = ``;
+export const unitSizerPageTitle = `Unit Sizer | Southside Storage`;
+export const unitSizerPageContent = `If you're not sure what size unit you require, check out our Unit Sizer page and see what will fit into your unit selection!`;
 
 
 export const contactPageTitle = `Contact Us | Southside Storage`;

@@ -7,10 +7,10 @@ export const navLinks = [
         label: 'VIEW RATES',
         path: '/view-rates',
     },
-    // {
-    //     label: 'UNIT SIZER',
-    //     path: '/unit-sizer',
-    // },
+    {
+        label: 'UNIT SIZER',
+        path: '/unit-sizer',
+    },
     {
         label: 'PAY RENT',
         path: '/pay-rent'

@@ -3,7 +3,7 @@
 .unit-sizer-top {
   color: $white;
   height: 60vh;
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites//unit.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Southside_Storage/jpg/unit.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -51,7 +51,7 @@
   h2 {
     color: $white;
     border-bottom: 1px solid $primary;
-    width: 250px;
+    width: 485px;
     margin: auto;
     font-size: 2.25rem;
     text-align: center;
@@ -73,7 +73,7 @@
     }
 
     .active-unit {
-      color: $primary;
+      color: #ffde03;
       font-size: 1.2rem;
     }
   }

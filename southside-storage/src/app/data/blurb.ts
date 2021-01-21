@@ -15,8 +15,11 @@ export const viewRates = [
 
 export const unitSizers = [
   {
-    heading: ``,
-    blurb: ``,
+    heading: `Unit Sizer`,
+    blurb: `Use our handy unit sizer to help you determine the right unit for your needs! Still not sure what kind
+    of unit you need? Call our offices for friendly assistance!
+
+    `,
   },
 ];
 
