@@ -9,9 +9,9 @@
       <!-- <b height="80" width="auto">Inez Storage</b> -->
     </a>
     <div class="mobile">
-      <a class="btn btn-primary" href="#gallery" >
+      <!-- <a class="btn btn-primary" href="#gallery" >
         Gallery
-      </a>
+      </a> -->
       <a href="http://www.storage-defender.com/inez/" target="_blank">
         <img  src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/Smart-Units-Learn-More-Banner.png" width="200px" alt="Smart-Units-Learn-More-Banner">
       </a>
@@ -29,7 +29,9 @@
             [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
             <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'"  *ngIf="nav?.path === '/pay-rent'"
             [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)">{{nav.label}}</a>
-
+          </span>
+          <span *ngIf="nav?.type === 'gallery'"> 
+            <a class="nav-link text-center" href="{{nav.path}}" (click)="onClick(menu)">{{nav.label}}</a>
           </span>
 
           <span *ngIf="nav?.type === 'dropdown'">
@@ -44,9 +46,9 @@
       </ul>
     </div>
     <div class="desktop">
-      <a class="btn btn-primary" href="#gallery" >
+      <!-- <a class="btn btn-primary" href="#gallery" >
         Gallery
-      </a>
+      </a> -->
       <a href="http://www.storage-defender.com/inez/" target="_blank">
         <img  src="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Inez_Storage/Smart-Units-Learn-More-Banner.png" width="200px" alt="Smart-Units-Learn-More-Banner">
       </a>

@@ -41,4 +41,9 @@ export const navLinks = [
         path: '/contact',
         type: 'link'
     },
+    {
+        label: 'Gallery',
+        path: '#gallery',
+        type: 'gallery'
+    },
 ];

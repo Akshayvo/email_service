@@ -33,6 +33,7 @@ import { PayRentComponent } from '../api-bundle/pay-rent/pay-rent.component';
 import { ViewRatesComponent } from '../api-bundle/view-rates/view-rates.component';
 import { ReserveComponent } from '../api-bundle/reserve/reserve.component';
 import { WinnebagoComponent } from '../winnebago/winnebago.component';
+import { AboutusPhotosComponent } from '../aboutus-photos/aboutus-photos.component';
 
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
@@ -122,6 +123,7 @@ export const apiRoutes = [
         { path: 'photos', component: PhotosComponent },
         { path: 'about', component: AboutUsComponent },
         { path: 'directions', component: DirectionsComponent },
+        { path: 'gallery', component: AboutusPhotosComponent },
       ],
       resolve: { data: AppResolver }
     },
