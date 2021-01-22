@@ -26,13 +26,13 @@ export const contact = [
         class: 'fas fa-phone mx-2 iconColor',
         redirect: 'tel:4124624777',
     },
-    {
-        id: 4,
-        label: 'Call or Text:',
-        data: '(412) 461-0556',
-        class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:4124610556',
-    }
+    // {
+    //     id: 4,
+    //     label: 'Call or Text:',
+    //     data: '(412) 461-0556',
+    //     class: 'fas fa-phone mx-2 iconColor',
+    //     redirect: 'tel:4124610556',
+    // }
 ];
 
 export const hours = [
@@ -48,11 +48,11 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    {
-        label: 'twitter',
-        path: 'https://twitter.com/AlCheapoStorage',
-        class: 'fab fa-twitter-square',
-    },
+    // {
+    //     label: 'twitter',
+    //     path: 'https://twitter.com/AlCheapoStorage',
+    //     class: 'fab fa-twitter-square',
+    // },
     {
         label: 'facebook',
         path: 'https://www.facebook.com/Al-Cheapos-Self-Storage-268622179916564/timeline',
