@@ -123,7 +123,7 @@
                    </div>
    
                    <!-- Start of Aletrnate Contact Detail -->
-                   <div *ngIf="navigateToMoveIn">
+                   <!-- <div *ngIf="navigateToMoveIn">
                        <h2 class="pb-1 pt-2 border-bottom border-dark  ">Alternate Contact Information</h2>
                        <div class="pt-3 row">
                            <div class="col-md-6 form-group">
@@ -146,7 +146,7 @@
                                <div *ngIf="f.objTenant.controls.AlternatePhone.errors" >
                                    <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternatePhone.errors.pattern">Please enter valid number</small>
                                </div>
-                           </div> 
+                           </div>  -->
        
                           <!-- <div class="col-lg-6 form-group">
                                 <label>Last Name*</label>
@@ -156,7 +156,7 @@
                                     <small class="form-text text-muted" *ngIf="f.objTenant.controls.AlternateLastName.errors.required">Please fill out this field</small>
                                 </div>
                            </div> -->
-                        </div>
+                        <!-- </div> -->
                         <!-- <div class="row"> -->
                             
                             <!-- <div class="col-md-6 form-group">
@@ -171,7 +171,7 @@
                                      </div>
                              </div>  -->
                              <!-- </div> -->
-                            <div class="row">
+                            <!-- <div class="row">
                              <div class="col-lg-12  form-group">
                                        <label>Address Line 1*</label>
                                        <input type="text" formControlName="AlternateAddressLine1" class="form-control" placeholder="Enter Alternate Address Line 1"
@@ -235,7 +235,7 @@
                             </div>
                         </div>
                         </div>
-                   </div>
+                   </div> -->
                    <!-- End of Aletrnate Contact Detail -->
    
                </div>
@@ -277,7 +277,7 @@
                                   <small class="form-text text-muted" *ngIf="f.dteMoveIn.errors.required">Please fill out this field</small>
                               </div>
                       </div>
-                      <div class="pb-4" formArrayName="lstInsuranceChoices" *ngIf="navigateToMoveIn">
+                      <!-- <div class="pb-4" formArrayName="lstInsuranceChoices" *ngIf="navigateToMoveIn">
                           <div *ngFor="let itemInsuranceChoice of f.lstUnitTypes.controls; let i = index">
                               <div  [formGroupName]="i">
                                   <label for="CoverageDescription">Insurance Choice*</label>&nbsp;
@@ -292,7 +292,7 @@
        
                               </div>
                           </div>
-                      </div>
+                      </div> -->
                    </div>
                    </div>
                    <!-- <div class="row">

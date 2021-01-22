@@ -77,4 +77,14 @@
         </ng-template>
     </div>
   </div>
+  <div class="py-5" [class.display]="!showTable" *ngFor="let data of offerList">
+    <p class="mb-3">{{data.p1}}</p>
+    <ul>
+      <li>{{data.offer1}}</li>
+      <li>{{data.offer2}}</li>
+      <li>{{data.offer3}}</li>
+      <li>{{data.offer4}}</li>
+    </ul>
+    <p>{{data.p2}}</p>
+  </div>
 </div>

@@ -19,6 +19,17 @@ export const dataViewRates = [
     },
 ];
 
+export const offerList = [
+  {
+    p1: `Want to take advantage of our discounts? Call for a contactless rental!*`,
+    offer1: `6 Months Prepaid - 5% off`,
+    offer2: `1 Year Prepaid - 10% off`,
+    offer3: `Senior Discount (65+) - 5% off`,
+    offer4: `Military Discount - 5% off`,
+    p2: `In order to receive the discount, tenant must call the facility before renting.`,
+  }
+]
+
 export const viewRatesAltText = ``;
 
 export const th = [
