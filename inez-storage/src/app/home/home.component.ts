@@ -12,7 +12,12 @@ import { homeScript } from '../data/script';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
+
+
 export class HomeComponent implements OnInit {
+
+  
   contactDetails: any;
   hoursDetails: any;
   locationId: any;

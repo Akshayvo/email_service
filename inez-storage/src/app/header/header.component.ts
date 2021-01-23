@@ -56,6 +56,9 @@ export class HeaderComponent implements OnInit {
 
   public onClick(menu: any) {
     menu.classList.remove('show');
+
+    if (this.router.url.includes('gallery')) {
+    }
   }
   public fetchContactDetails(){
     this.contactDetails = contactsLocation1
