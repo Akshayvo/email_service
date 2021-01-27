@@ -34,7 +34,7 @@ export const storageTips = [
 export const payRent = [
   {
     heading: `Pay Rent`,
-    blurb: `Use our easy online bill pay service to pay your rent and manage your St. Joe Self Storage tenant account!`,
+    blurb: `Use our easy online bill pay service to pay your rent and manage your Southside Storage tenant account!`,
   },
 ];
 
