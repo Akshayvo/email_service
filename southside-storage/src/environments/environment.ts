@@ -16,7 +16,8 @@ export const environment = {
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   // APIKey: `dzJ0OFc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464
-  APIKey: `dzJ0OVczSjgqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // soutside storage 29385
+  APIKey: `YzI+OEs0ejZqNUg6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 28465
+  // APIKey: `dzJ0OVczSjgqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // southside storage 29385
   websiteUrl: ''
 };
 
