@@ -16,6 +16,29 @@ export const th = [
   },
 ];
 
+export const th1 = [
+  {
+    data: `Size`
+  },
+  {
+    data: `Rate`
+  },
+  {
+    data: `Deposit`
+  },
+  {
+    data: `Reserve a Unit`
+  },
+  // {
+  //   data: `Move In`
+  // },
+  {
+    data: `Climate Control`
+  },
+];
+
+
+
 export const viewrates = [
     {
         p: `Do you like the facility, and it's extremely affordable self storage and workshop pricing?

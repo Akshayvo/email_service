@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataSharingService } from '../services/data-sharing.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { contact, contacts500EastGardenStreet, contacts430SHwy83, contacts817SGetty,
-  contacts246WSouthLane, contacts201Grove, contacts260NGrove, contacts2633EastMainStreet } from '../data/contact';
+  contacts246WSouthLane, contacts201Grove, contacts260NGrove, contacts2633EastMainStreet, contacts244NGrove } from '../data/contact';
 
 @Component({
   selector: 'app-pay-rent',
@@ -49,6 +49,10 @@ export class PayRentComponent implements OnInit {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc7;
       this.name = 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST';
       this.contact = contacts2633EastMainStreet;
+    } else  if (this.router.url.includes('244-n-grove')) {
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc7;
+      this.name = 'Affordable Storage #8 - 244 N. Grove';
+      this.contact = contacts244NGrove;
     }
     // this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
     this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[1].path;

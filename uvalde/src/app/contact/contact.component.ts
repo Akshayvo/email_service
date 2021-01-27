@@ -10,15 +10,17 @@ import {
   contacts817SGetty,
   contacts430SHwy83,
   contacts500EastGardenStreet,
+  contacts2633EastMainStreet,
+  contacts244NGrove,
   hours,
   hours260NGrove,
   hours201Grove,
   hours246WSouthLane,
   hours817SGetty,
   hours430SHwy83,
-  hours500EastGardenStreet,
-  contacts2633EastMainStreet,
+  hours500EastGardenStreet, 
   hours2633EastMainStreet,
+  hours244NGrove
 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
@@ -59,6 +61,10 @@ export class ContactComponent implements OnInit {
       id: 6,
       name: 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST',
     },
+    {
+      id: 7,
+      name: 'Affordable Storage #8 - 244 N. Grove',
+    },
  ];
 
   contacts201Grove: any;
@@ -67,6 +73,7 @@ export class ContactComponent implements OnInit {
   contacts817SGetty: any;
   contacts246WSouthLane: any;
   contacts430SHwy83: any;
+  contacts244NGrove: any;
   hours260NGrove: any;
   hours201Grove: any;
   hours246WSouthLane: any;
@@ -75,6 +82,7 @@ export class ContactComponent implements OnInit {
   contacts2633EastMainStreet: any;
   hours500EastGardenStreet: any;
   hours817SGetty: any;
+  hours244NGrove: any;
   placeName: string;
   name: string;
   email: any;
@@ -141,6 +149,7 @@ export class ContactComponent implements OnInit {
     this.contacts500EastGardenStreet = contacts500EastGardenStreet;
     this.contacts430SHwy83 = contacts430SHwy83;
     this.contacts2633EastMainStreet = contacts2633EastMainStreet;
+    this.contacts244NGrove = contacts244NGrove;
   }
 
   public fetchHours() {
@@ -152,6 +161,7 @@ export class ContactComponent implements OnInit {
     this.hours817SGetty = hours817SGetty;
     this.hours500EastGardenStreet = hours500EastGardenStreet;
     this.hours2633EastMainStreet = hours2633EastMainStreet;
+    this.hours244NGrove = hours244NGrove;
   }
 
 onSubmit() {
@@ -180,6 +190,8 @@ onSubmit() {
     this.receiveremail = this.contacts500EastGardenStreet[2].data;
   } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST') {
     this.receiveremail = this.contacts2633EastMainStreet[2].data;
+  } else if (this.contactForm.value.location === 'Affordable Storage #8 - 244 N. Grove') {
+    this.receiveremail = this.contacts244NGrove[3].data;
   }
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;

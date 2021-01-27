@@ -38,6 +38,9 @@ export class StorageUnitComponent implements OnInit {
     } else if (this.router.url.includes('/2633-east-main-street')) {
       this.id = 6;
       this.name = 'Reserve Your Unit at Our 2633 E. Main St Location';
+    } else if (this.router.url.includes('/244-n-grove')) {
+      this.id = 7;
+      this.name = 'Reserve Your Unit at Our 244 North Grove St Location';
     }
   }
 }

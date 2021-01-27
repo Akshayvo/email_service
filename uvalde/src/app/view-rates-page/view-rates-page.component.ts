@@ -4,7 +4,7 @@ import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { FetchDataService } from '../services/fetch-data.service';
-import { th } from '../data/view-rates';
+import { th, th1 } from '../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 
@@ -49,6 +49,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   text = false;
   navTo: any;
   windowLocation: any;
+  id: number;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -70,7 +71,12 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   }
 
   public fetchThData() {
-    this.th = th;
+    if (this.router.url.includes('/244-n-grove')) {
+      this.id = 7;
+      this.th = th1;
+    } else {
+      this.th = th;
+    }
   }
 
 

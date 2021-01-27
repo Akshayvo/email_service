@@ -301,6 +301,51 @@ export const hours2633EastMainStreet = [
     }
 ];
 
+export const contacts244NGrove = [
+    {
+        id: 0,
+        label: 'Office Address: ',
+        data: '260 N. Grove St, Uvalde, TX 78801',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+    {
+        id: 1,
+        label: 'Facility Address: ',
+        data: '244 N. Grove, Uvalde, Texas 78801',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+    },
+    {
+        id: 2,
+        label: 'Phone: ',
+        data: '(830) 279-5390',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:830279-5390'
+    },
+    {
+        id: 3,
+        label: 'Email: ',
+        data: 'uvaldeaffordablestorage@yahoo.com',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:uvaldeaffordablestorage@yahoo.com'
+    },
+];
+
+export const hours244NGrove = [
+    {
+        label: 'Mon - Fri: ',
+        data: '8:00AM to 4:00PM'
+    },
+    {
+        label: 'Sat - Sun ',
+        data: 'CLOSED'
+    },
+    {
+        label: 'Access Hours: ',
+        data: '24 hours a day, 7 days a week'
+    }
+];
+
+
 // export const socialLinks = [
 //     {
 //         label: 'facebook',

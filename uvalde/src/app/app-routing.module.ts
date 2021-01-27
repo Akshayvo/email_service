@@ -185,6 +185,29 @@ const routes: Routes = [
   ],
   resolve: { data: AppResolver }
 },
+{ path: 'location/244-n-grove',
+component: LocationComponent,
+children: [
+  {path: '', redirectTo: 'storageUnits', pathMatch: 'full' },
+  { path: 'storageUnits', component: StorageUnitComponent,
+  children: [
+    { path: '', component: ViewRatesPageComponent },
+    { path: 'reserve', component: ReserveUnitFormComponent },
+    { path: 'move-in', component: ReserveUnitFormComponent },
+    // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+    { path: 'confirmation', component: ConfirmationDataComponent },
+    { path: 'payReservationCharges', component: PayRentFormComponent },
+    { path: 'payMoveInCharges', component: PayRentFormComponent },
+  ] },
+  { path: 'unitSizer', component: UnitSizerComponent },
+  { path: 'reserveUnit', component: ReserveUnitComponent },
+  // { path: 'photos', component: PhotosComponent },
+  // { path: 'about', component: AboutUsComponent },
+  // { path: 'directions', component: DirectionsComponent },
+],
+resolve: { data: AppResolver }
+},
+
   { path: 'pay-rent',
     component: PaymentComponent,
   },
@@ -237,6 +260,14 @@ const routes: Routes = [
     }
   },
   { path: 'review/2633-east-main-street', component: HomeComponent,
+  resolve: {
+      url: 'externalUrlRedirectResolver'
+  },
+  data: {
+      externalUrl: ''
+  }
+},
+{ path: 'review/244-n-grove', component: HomeComponent,
   resolve: {
       url: 'externalUrlRedirectResolver'
   },
@@ -324,6 +355,17 @@ children: [
     { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
   ]
 },
+{ path: 'pay-rent/244-n-grove', component: PayRentComponent,
+    children: [
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent },
+      {path: 'forgotPassword', component: ForgotPasswordComponent },
+      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+      { path: 'verifyCode', component: VerifyCodeComponent },
+      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+    ]
+  },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },
 ];

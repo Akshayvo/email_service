@@ -51,6 +51,12 @@ export const navLinks = [
                 path: '/location/2633-east-main-street',
                 name: '2633-east-main-street'
             },
+            {
+                id: '8',
+                label: 'Affordable Storage #8 - 244 N. Grove',
+                path: '/location/244-n-grove',
+                name: '244-n-grove'
+            },
         ]
     },
     {

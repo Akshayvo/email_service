@@ -473,6 +473,72 @@ export const unitSizer2633EastMainStreet = [
     },
 ];
 
+export const unitSizer244NGrove = [
+    {
+        size: '5\' x 10\' Storage Unit Graphic',
+        alt: '5\' x 10\' Storage Unit',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
+        data: `This unit is approximately 25 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small desks', },
+            { content: 'Small bookcases', },
+            { content: 'Suitcases', },
+            { content: 'Lamps', },
+            { content: 'Kitchenware' },
+            { content: 'Mattresses' }
+        ],
+    },
+
+    {
+        size: '10\' x 10\'  Storage Unit Graphic',
+        alt: '10\' x 10\' Storage Unit',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
+        data: `This unit is approximately 50 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+                    { content: 'Chairs', },
+                    { content: 'Small desks', },
+                    { content: 'Bookcases', },
+                    { content: 'Furniture' },
+                    { content: 'Suitcases', },
+                    { content: 'Mattresses', },
+                    { content: 'Kitchen Appliances' }
+        ],
+    },
+    {
+        size: '10\' x 15\' Storage Unit Graphic',
+        alt: '10\' x 15\' Storage Unit',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        data: `This unit is approximately 150 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small desks', },
+            { content: 'Bookcases', },
+            { content: 'Furniture' },
+            { content: 'Suitcases', },
+            { content: 'Lamps', },
+            { content: 'Kitchen Appliances' }
+        ],
+    },
+    {
+        size: '10\' x 20\' Storage Unit Graphic',
+        alt: '10\' x 20\' Storage Unit',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
+        data: `This unit is approximately 150 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+            { content: 'Appliances', },
+            { content: 'Car or Small Boat', },
+            { content: 'Furniture' },
+            { content: 'Bookcases', },
+            { content: 'Tow Trailer', },
+        ],
+    },
+];
+
 export const heading = ``;
 
 export const aboutUsImage = ``;

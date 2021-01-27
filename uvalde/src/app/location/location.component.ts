@@ -6,7 +6,7 @@ import { contacts260NGrove, hours260NGrove,
   contacts430SHwy83, hours430SHwy83, contacts500EastGardenStreet,
   hours500EastGardenStreet,
   contacts2633EastMainStreet,
-  hours2633EastMainStreet } from '../data/contact';
+  hours2633EastMainStreet,contacts244NGrove,hours244NGrove } from '../data/contact';
 import { tabs } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
@@ -103,7 +103,15 @@ export class LocationComponent implements OnInit {
         });
         this.titleService.setTitle('Self Storage Units in Uvalde, TX | Affordable Self Storage');
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc7;
-    }
+    } else if (this.router.url.includes('/location/244-n-grove')) {
+      this.meta.addTag({
+        name: 'description',
+        content: `Check out our competitive storage unit prices and availability at our
+        244 North Grove location! Reserve or call today!`
+      });
+      this.titleService.setTitle('Self Storage Units in Uvalde, TX | Affordable Self Storage');
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc8;
+  }
       this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
     }
@@ -130,6 +138,8 @@ export class LocationComponent implements OnInit {
       this.fetchDetails500EastGardenStreet();
     } else if (this.router.url.includes('/location/2633-east-main-street')) {
       this.fetchDetails2633EastMainStreet();
+    } else if (this.router.url.includes('/location/244-n-grove')) {
+      this.fetchDetails244NGrove();
     }
  }
 
@@ -152,6 +162,8 @@ export class LocationComponent implements OnInit {
       this.router.navigate(['/pay-rent/500-east-garden-street']);
     } else if ( this.id === 6) {
       this.router.navigate(['/pay-rent/2633-east-main-street']);
+    } else if ( this.id === 7) {
+      this.router.navigate(['/pay-rent/244-n-grove']);
     }
    }
 
@@ -176,6 +188,9 @@ export class LocationComponent implements OnInit {
       );
     } else if ( this.id === 6) {
       this.router.navigate(['/location/2633-east-main-street/reserveUnit'],
+      );
+    } else if ( this.id === 7) {
+      this.router.navigate(['/location/244-n-grove/reserveUnit'],
       );
     }
    }
@@ -241,5 +256,14 @@ export class LocationComponent implements OnInit {
     this.hours = hours2633EastMainStreet;
     this.tabs = tabs;
     // this.photo = `${this.imageBaseUrl}/affordable-storage-7.${this.imagetype}`;
+   }
+
+   public fetchDetails244NGrove() {
+    this.name = 'Affordable Storage #8 - 244 N. Grove';
+    this.id = 7;
+    this.contacts = contacts244NGrove;
+    this.hours = hours244NGrove;
+    this.tabs = tabs;
+    // this.photo = `${this.imageBaseUrl}/affordable-storage-8.${this.imagetype}`;
    }
 }
