@@ -2,7 +2,7 @@
   <div class="container">
     <div class="contact-header">
       <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-9">
           <span class="contact-details pr-4" *ngFor="let contact of contactDetails" >
             <span *ngIf="contact?.id !== 1">
               <span style="display: inline-block;"> 
@@ -18,12 +18,14 @@
             </ng-template>
           </span>
         </div>
-        <div class="col-md-2 ml-auto text-right">
+        <div class="col-md-3 ml-auto text-right">
+         <span class="follow" > Follow us on:
           <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
             <a [href]="social?.path" target="_blank" rel="noreferrer">
               <i [class]="social?.class"></i>
             </a>
           </span>
+        </span>
         </div>
       </div>
     </div>

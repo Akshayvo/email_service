@@ -51,11 +51,11 @@ export const socialLinks = [
     {
         label: 'twitter',
         path: 'https://www.instagram.com/easystoragellc/',
-        class: 'fab fa-instagram',
+        class: 'fab fa-instagram fa-2x ',
     },
     {
         label: 'facebook',
         path: 'https://www.facebook.com/easystoragellc/',
-        class: 'fab fa-facebook-square',
+        class: 'fab fa-facebook-square fa-2x ',
     },
 ];

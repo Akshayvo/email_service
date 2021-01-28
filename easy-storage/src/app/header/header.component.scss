@@ -24,10 +24,21 @@ img {
   }
 }
 
+  .follow {
+  display: flex;
+  color: $white;
+  font-size: 1rem;
+  align-items: center;
+}
+
 .social {
   a {
     color: $white;
     text-decoration: none;
+
+    .fa-2x {
+      font-size: 1.4em;
+  }
   }
 
   i {
@@ -114,5 +125,16 @@ img {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .follow {
+    display: flex;
+    color: $white;
+    font-size: 1rem;
+    align-items: center;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
 }
