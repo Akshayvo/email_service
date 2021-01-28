@@ -26,7 +26,7 @@ export const offerList = [
     offer2: `1 Year Prepaid - 10% off`,
     offer3: `Senior Discount (65+) - 5% off`,
     offer4: `Military Discount - 5% off`,
-    p2: `In order to receive the discount, tenant must call the facility before renting.`,
+    p2: `*In order to receive the discount, tenant must call the facility before renting.`,
   }
 ]
 
