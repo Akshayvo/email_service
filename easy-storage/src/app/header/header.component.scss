@@ -91,12 +91,14 @@ img {
 }
 
 @media screen and (max-width: 991px) {
-  .display {
-    display: none;
-  }
-
-  .nav-link {
-    text-align: center;
+  // .display {
+  //   display: none;
+  // }
+  .navbar {
+    .nav-link {
+      text-align: center;
+      padding: 17px 14px;
+    }
   }
 
   .navbar-nav {

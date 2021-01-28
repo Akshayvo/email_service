@@ -13,11 +13,11 @@ export const environment = {
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Easy Storage - Teasting',
+  appId: 'Easy Storage - Testing',
   facilityName: 'Easy Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://easy-storage-staging.netlify.app',
+  websiteUrl: 'https://easystoragellc.com',
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   // APIKey: `bTV+N24zeTY6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Easy Storage 5736
 };
