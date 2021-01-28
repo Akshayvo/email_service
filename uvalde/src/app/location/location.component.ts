@@ -259,7 +259,7 @@ export class LocationComponent implements OnInit {
    }
 
    public fetchDetails244NGrove() {
-    this.name = 'Affordable Storage #8 - 244 N. Grove';
+    this.name = 'AFFORDABLE STORAGE #8 - 244 N. GROVE';
     this.id = 7;
     this.contacts = contacts244NGrove;
     this.hours = hours244NGrove;

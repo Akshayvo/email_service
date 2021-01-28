@@ -43,7 +43,7 @@ export class ReserveUnitComponent implements OnInit {
       this.heading = 'Reserve Your Unit at Our AFFORDABLE STORAGE #7 - 2633 E. MAIN ST';
     } else if (this.router.url.includes('/244-n-grove')) {
       this.id = 7;
-      this.heading = 'Reserve Your Unit at Our Affordable Storage #8 - 244 N. Grove';
+      this.heading = 'Reserve Your Unit at Our AFFORDABLE STORAGE #8 - 244 N. GROVE';
     }
   }
 }

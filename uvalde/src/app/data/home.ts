@@ -24,7 +24,7 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Affordable Storage in Uvalde has 7 well-lit, well-maintained locations across town with a wide variety of self storage
+        p: `Affordable Storage in Uvalde has 8 well-lit, well-maintained locations across town with a wide variety of self storage
         unit sizes in both climate-controlled and regular unconditioned units with keypad secured fenced access. Our convenient
         locations and the number of options make us the ideal solution for any storage purpose.`,
     },
@@ -62,7 +62,7 @@ export const jumbotron = [
 
 export const featuresList = [
     {
-        td1: '7 Convenient Locations',
+        td1: '8 Convenient Locations',
         td2: 'Affordable Rates'
     },
     {

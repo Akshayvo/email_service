@@ -70,13 +70,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
   }
 
-  public fetchThData() {
-    if (this.router.url.includes('/244-n-grove')) {
-      this.id = 7;
-      this.th = th1;
-    } else {
+  public fetchThData() { 
       this.th = th;
-    }
   }
 
 

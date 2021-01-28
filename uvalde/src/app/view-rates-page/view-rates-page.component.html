@@ -6,7 +6,9 @@
   <table  class="viewrates-desktop">
       <tHead [class.display]="!showTable">
           <tr>
-            <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th">{{th.data}}</th>
+            <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th">
+                {{th.data}}
+            </th>
           </tr>
       </tHead>
       <tbody>
@@ -17,9 +19,9 @@
           <td colspan="2" class="px-4 border text-center">
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}
           </td>
-          <td colspan="2" class="px-4 border text-center" *ngIf="id === 7">
+          <!-- <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount}}
-        </td>
+        </td> -->
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
               <button (click)="navigate('reserve', lstUnitType )">Reserve</button>
           </td>

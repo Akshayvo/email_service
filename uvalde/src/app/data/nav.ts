@@ -53,7 +53,7 @@ export const navLinks = [
             },
             {
                 id: '8',
-                label: 'Affordable Storage #8 - 244 N. Grove',
+                label: 'AFFORDABLE STORAGE #8 - 244 N. GROVE',
                 path: '/location/244-n-grove',
                 name: '244-n-grove'
             },

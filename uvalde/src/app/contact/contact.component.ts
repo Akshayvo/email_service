@@ -63,7 +63,7 @@ export class ContactComponent implements OnInit {
     },
     {
       id: 7,
-      name: 'Affordable Storage #8 - 244 N. Grove',
+      name: 'AFFORDABLE STORAGE #8 - 244 N. GROVE',
     },
  ];
 
@@ -190,7 +190,7 @@ onSubmit() {
     this.receiveremail = this.contacts500EastGardenStreet[2].data;
   } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST') {
     this.receiveremail = this.contacts2633EastMainStreet[2].data;
-  } else if (this.contactForm.value.location === 'Affordable Storage #8 - 244 N. Grove') {
+  } else if (this.contactForm.value.location === 'AFFORDABLE STORAGE #8 - 244 N. GROVE') {
     this.receiveremail = this.contacts244NGrove[3].data;
   }
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
