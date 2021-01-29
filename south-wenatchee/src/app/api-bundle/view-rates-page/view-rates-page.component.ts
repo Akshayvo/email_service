@@ -48,6 +48,10 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   tenant: any;
   text = false;
 
+  lstUnitTypes: LstUnitTypes[];
+  filterClimateControlled: LstUnitTypes[];
+  filterNotClimateControlled: LstUnitTypes[];
+
   private getDataSubscribe$: Subscription;
   constructor(
     private getMoveinChargesService: MoveInService,
@@ -114,11 +118,19 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       });
   }
 
+
+  getFilterLstUnitTypes(unitTypesResponse: any) {
+    this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
+    this.filterClimateControlled = this.lstUnitTypes.filter(x => x.IsClimateControlled === true);
+    this.filterNotClimateControlled = this.lstUnitTypes.filter(x => x.IsClimateControlled === undefined);
+  }
+
   getData() {
   this.getDataSubscribe$ = this.fetchDataService.getData( )
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+      this.getFilterLstUnitTypes(unitTypesResponse);
     });
   }
 
