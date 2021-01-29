@@ -5,7 +5,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4 } from '../../data/contact';
+import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5 } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
 import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4,
    twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4 } from '../../data/script';
@@ -126,30 +126,36 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchContactDetail() {
-    if (this.router.url.includes('chester-andrews-lane')) {
+    if (this.router.url.includes('poughkeepsie/arlington')) {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';
       this.contact = contactsLocation1;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
-    } else  if (this.router.url.includes('chester-brookside-ave')) {
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
+    } else  if (this.router.url.includes('poughkeepsie/hyde-park')) {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';
       this.contact = contactsLocation2;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
-    } else  if (this.router.url.includes('montgomery-walden')) {
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
+    } else  if (this.router.url.includes('highland')) {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
-    } else  if (this.router.url.includes('middletown-wallKill')) {
+    } else  if (this.router.url.includes('lake-katrine')) {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';
       this.contact = contactsLocation4;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
+    } else  if (this.router.url.includes('pawling')) {
+      this.id = 1;
+      this.name = 'Affordable Secure Storage - Floral City, LLC';
+      this.contact = contactsLocation5;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
     }
   }
 
@@ -162,33 +168,41 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('poughkeepsie/arlington')) {
       this.og = ogPayRentPageLocation1;
     } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
+      if (this.router.url.includes('poughkeepsie/hyde-park')) {
         this.og = ogPayRentPageLocation2;
       } else {
-        if (this.router.url.includes('montgomery-walden')) {
+        if (this.router.url.includes('highland')) {
           this.og = ogPayRentPageLocation3;
         } else {
-          if (this.router.url.includes('middletown-wallKill'))
+          if (this.router.url.includes('lake-katrine')) {
           this.og = ogPayRentPageLocation4;
+          } else {
+            if (this.router.url.includes('pawling'))
+            this.og = ogPayRentPageLocation4;
+          }
         }
       }
     }}
 
 public fetchTwitter() {
-  if (this.router.url.includes('chester-brookside-ave')) {
+  if (this.router.url.includes('poughkeepsie/arlington')) {
     this.twitter = twitterPayRentPageLocation1;
   } else {
-    if (this.router.url.includes('chester-andrews-lane')) {
+    if (this.router.url.includes('poughkeepsie/hyde-park')) {
       this.twitter = twitterPayRentPageLocation2;
     } else {
-      if (this.router.url.includes('montgomery-walden')) {
+      if (this.router.url.includes('highland')) {
         this.twitter = twitterPayRentPageLocation3;
       } else {
-        if (this.router.url.includes('middletown-wallKill'))
+        if (this.router.url.includes('lake-katrine')) {
         this.twitter = twitterPayRentPageLocation4;
+        } else {
+          if (this.router.url.includes('pawling'))
+          this.twitter = twitterPayRentPageLocation4;
+        }
       }
     }
   }

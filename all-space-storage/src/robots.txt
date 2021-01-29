@@ -1,6 +1,6 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://www.storage-town.com/sitemap.xml
+Sitemap: https://allspacestorage.com/sitemap.xml
 
 User-agent: *
 Disallow:/privacy-policy

@@ -39,6 +39,7 @@ import { environment } from '../../environments/environment';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { ThankYouGuard } from '../thank-you.guard';
+import { ReviewsComponent } from '../reviews/reviews.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -87,7 +88,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
-    { path: 'location/chester-brookside-ave',
+    { path: 'location/poughkeepsie/arlington',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -119,10 +120,11 @@ export const apiRoutes = [
         // { path: 'photos', component: PhotosComponent },
         { path: 'about', component: AboutUsComponent },
         { path: 'directions', component: DirectionsComponent },
+        { path: 'reviews', component: ReviewsComponent },
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/chester-andrews-lane',
+    { path: 'location/poughkeepsie/hyde-park',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -154,10 +156,11 @@ export const apiRoutes = [
         // { path: 'photos', component: PhotosComponent },
         { path: 'about', component: AboutUsComponent },
         { path: 'directions', component: DirectionsComponent },
+        { path: 'reviews', component: ReviewsComponent },
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/montgomery-walden',
+    { path: 'location/highland',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -189,10 +192,11 @@ export const apiRoutes = [
         // { path: 'photos', component: PhotosComponent },
         { path: 'about', component: AboutUsComponent },
         { path: 'directions', component: DirectionsComponent },
+        { path: 'reviews', component: ReviewsComponent },
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/middletown-wallKill',
+    { path: 'location/lake-katrine',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -225,65 +229,117 @@ export const apiRoutes = [
         // { path: 'photos', component: PhotosComponent },
         { path: 'about', component: AboutUsComponent },
         { path: 'directions', component: DirectionsComponent },
+        { path: 'reviews', component: ReviewsComponent },
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/chester-andrews-lane', component: HomeComponent,
+    { path: 'location/pawling',
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          ]
+        },
+        { path: 'moveIn', component: ReserveComponent,
+          children: [
+            // { path: '', component: ViewRatesPageComponent },
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
+
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+        { path: 'reviews', component: ReviewsComponent },
+        { path: 'reviews', component: ReviewsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
+    { path: 'review/poughkeepsie/arlington', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJv-tcSK4_3YkR9RRujwV_wSY'
     }
   },
-  { path: 'review/chester-brookside-ave', component: HomeComponent,
+  { path: 'review/poughkeepsie/hyde-park', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJm7SnExspw4kRPUDRDPAzAIc'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJyym5TS8-3YkRd4c1dJuA1ag'
     }
   },
-  { path: 'review/montgomery-walden', component: HomeComponent,
+  { path: 'review/highland', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJF0fu6ofV3IkR6yRjmwhuYZk'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJbetg0VU93YkRChX3EmDOpGQ'
     }
   },
-  { path: 'review/middletown-wallKill', component: HomeComponent,
+  { path: 'review/lake-katrine', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ3Q9xV4rN3IkRiDFuXQjIbD0'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ1Z2_VNkI3YkROO9QmOt0upk'
+    }
+  },
+  { path: 'review/pawling', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJVYFs8EBa3YkRGSFGFh1-_-w'
     }
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/chester-brookside-ave', component: PayRentComponent,
+    path: 'pay-rent/poughkeepsie/arlington', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/chester-andrews-lane', component: PayRentComponent,
+    path: 'pay-rent/poughkeepsie/hyde-park', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/montgomery-walden', component: PayRentComponent,
+    path: 'pay-rent/highland', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/middletown-wallKill', component: PayRentComponent,
+    path: 'pay-rent/lake-katrine', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/pawling', component: PayRentComponent,
     children: childroute
   },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-chester-andrews-lane', component: ContactUsComponent},
-  { path: 'contact-chester-brookside-ave', component: ContactUsComponent},
-  { path: 'contact-montgomery-walden', component: ContactUsComponent},
-  { path: 'contact-middletown-wallKill', component: ContactUsComponent},
+  { path: 'contact-poughkeepsie/arlington', component: ContactUsComponent},
+  { path: 'contact-poughkeepsie/hyde-park', component: ContactUsComponent},
+  { path: 'contact-highland', component: ContactUsComponent},
+  { path: 'contact-lake-katrine', component: ContactUsComponent},
+  { path: 'contact-pawling', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
 ];
@@ -292,7 +348,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: 'location/chester-andrews-lane',
+  { path: '/location/poughkeepsie/arlington',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -301,9 +357,10 @@ export const iFrameRoutes = [
       { path: 'reserve-unit', component: ReserveUnitComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
+      { path: 'reviews', component: ReviewsComponent }
     ]
   },
-  { path: 'location/chester-brookside-ave',
+  { path: '/location/poughkeepsie/hyde-park',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -312,9 +369,10 @@ export const iFrameRoutes = [
       { path: 'reserve-unit', component: ReserveUnitComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
+      { path: 'reviews', component: ReviewsComponent }
     ]
   },
-  { path: 'location/montgomery-walden',
+  { path: '/location/highland',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -323,9 +381,10 @@ export const iFrameRoutes = [
       { path: 'reserve-unit', component: ReserveUnitComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
+      { path: 'reviews', component: ReviewsComponent }
     ]
   },
-  { path: 'location/middletown-wallKill',
+  { path: '/location/lake-katrine',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -334,38 +393,59 @@ export const iFrameRoutes = [
       { path: 'reserve-unit', component: ReserveUnitComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'directions', component: DirectionsComponent },
+      { path: 'reviews', component: ReviewsComponent }
     ]
   },
-  { path: 'review/chester-andrews-lane', component: HomeComponent,
+  { path: '/location/pawling',
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: StorageUnitComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
+      { path: 'reserve-unit', component: ReserveUnitComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+      { path: 'reviews', component: ReviewsComponent }
+    ]
+  },
+  { path: 'review/poughkeepsie/arlington', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJv-tcSK4_3YkR9RRujwV_wSY'
     }
   },
-  { path: 'review/chester-brookside-ave', component: HomeComponent,
+  { path: 'review/poughkeepsie/hyde-park', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJm7SnExspw4kRPUDRDPAzAIc'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJyym5TS8-3YkRd4c1dJuA1ag'
     }
   },
-  { path: 'review/montgomery-walden', component: HomeComponent,
+  { path: 'review/highland', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJF0fu6ofV3IkR6yRjmwhuYZk'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJbetg0VU93YkRChX3EmDOpGQ'
     }
   },
-  { path: 'review/middletown-wallKill', component: HomeComponent,
+  { path: 'review/lake-katrine', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ3Q9xV4rN3IkRiDFuXQjIbD0'
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ1Z2_VNkI3YkROO9QmOt0upk'
+    }
+  },
+  { path: 'review/pawling', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJVYFs8EBa3YkRGSFGFh1-_-w'
     }
   },
   { path: 'error', component: ErrorHandlerComponent },

@@ -2,76 +2,83 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '1 Andrews Lane, Chester, NY 10918',
+        data: '189 Manchester Road Poughkeepsie, NY 12603',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
+        redirect: ''
     },
     {
         id: 2,
         label: 'Email: ',
-        email: 'storagetownchester@gmail.com, syrasoftsoftware@gmail.com',
-        data: `storagetownchester@gmail.com`,
+        email: 'allspacestoragert55@hvc.rr.com, syrasoftsoftware@gmail.com',
+        data: `allspacestoragert55@hvc.rr.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`storagetownchester@gmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`allspacestoragert55@hvc.rr.com, syrasoftsoftware@gmail.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(845) 469-4888',
+        data: '(845) 454-0066',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:8454694888'
+        redirect: 'tel:8454540066'
     },
 ];
 
 export const hoursLocation1 = [
     {
-        id: 1,
-        label: 'Storage Access Hour: ',
-        // datahours: {
-        //     data1:'7 Days a Week ',
-        //     data2:'6:00AM to 8:00PM'
-        // },
-        data: '7 Days a Week 6:00AM to 8:00PM'
-    }
+        label: 'Mon - Sat: ',
+        data: '10am - 2pm'
+    },
+    {
+        label: 'Sunday: ',
+        data: 'Closed'
+    },
+    {
+        label: 'Access hours: ',
+        data: '6am-11pm - 7 days a week'
+    },
 ];
 
 export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '53 Brookside Ave, Chester, NY 10918',
+        data: '120 Salt Point Turnpike, Poughkeepsie, NY 12603',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CT1A0QzwMwCHEBA'
+        redirect: ''
     },
     {
         id: 2,
         label: 'Email: ',
-        data: 'storagetownchester@gmail.com',
-        email: `storagetownchester@gmail.com, syrasoftsoftware@gmail.com`,
+        data: 'AllSpaceStorage@hvc.rr.com',
+        email: `AllSpaceStorage@hvc.rr.com, syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`storagetownchester@gmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`AllSpaceStorage@hvc.rr.com, syrasoftsoftware@gmail.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(845) 469-4888',
+        data: '(845) 473-0066',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:8454694888'
+        redirect: 'tel:8454730066'
     },
 ];
 
 export const hoursLocation2 = [
     {
-        label: 'Monday - Saturday: ',
-        data: '9:00AM - 5:00PM',
+        label: 'Mon-Fri: ',
+        data: '9:00AM-5:00PM',
+    },
+    {
+        label: 'Saturday: ',
+        data: '10:00AM-4:00PM',
     },
     {
         label: 'Sunday: ',
         data: 'CLOSED',
     },
     {
-        label: 'Storage Access Hour: ',
-        data: '7 Days a Week 6:00AM to 8:00PM',
+        label: 'Access Hours: ',
+        data: '7 Days a Week 6:00AM - 11:00PM',
     },
 ];
 
@@ -79,39 +86,43 @@ export const contactsLocation3 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '130 Neelytown Rd, Montgomery, NY 12549',
+        data: '480 Route 299 Highland, NY 12528',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CeskY5sIbmGZEAE'
+        redirect: ''
     },
     {
         id: 2,
         label: 'Email: ',
-        data: 'storagetownmontgomery@gmail.com',
-        email: `storagetownmontgomery@gmail.com, syrasoftsoftware@gmail.com`,
+        data: 'allspacestoragert299@hvc.rr.com',
+        email: `allspacestoragert299@hvc.rr.com, syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`storagetownmontgomery@gmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`allspacestoragert299@hvc.rr.com, syrasoftsoftware@gmail.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(845) 457-3500',
+        data: '845-691-6999',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:8454573500'
+        redirect: 'tel:8456916999'
     },
 ];
 
 export const hoursLocation3 = [
     {
-        label: 'Monday - Saturday: ',
-        data: '9:00AM - 5:00PM',
+        label: 'Mon-Fri: ',
+        data: '10am-5pm',
+    },
+    {
+        label: 'Saturday: ',
+        data: '10am-4pm',
     },
     {
         label: 'Sunday: ',
         data: 'CLOSED',
     },
     {
-        label: 'Storage Access Hour: ',
-        data: '7 Days a Week 6:00AM - 8:00PM',
+        label: 'Access Hours: ',
+        data: '6am-11pm - 7 days a week',
     },
 ];
 
@@ -119,38 +130,86 @@ export const contactsLocation4 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '2070 Goshen Turnpike, Middletown, NY 10941',
+        data: '1693 Ulster Avenue Lake Katrine, NY 12449',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CYgxbl0IyGw9EBA'
+        redirect: ''
     },
     {
         id: 2,
         label: 'Email: ',
-        email: 'storagetownmiddletown@gmail.com, syrasoftsoftware@gmail.com',
-        data: `storagetownmiddletown@gmail.com`,
+        data: 'allspacestorageLK@hvc.rr.com',
+        email: `allspacestorageLK@hvc.rr.com, syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`storagetownmiddletown@gmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`allspacestorageLK@hvc.rr.com, syrasoftsoftware@gmail.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(845) 692-4838',
+        data: '(845) 383-0606',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:8456924838'
+        redirect: 'tel:8453830606'
     },
 ];
 
 export const hoursLocation4 = [
     {
-        label: 'Monday - Saturday: ',
-        data: '9:00AM - 5:00PM',
+        label: 'Mon-Fri: ',
+        data: '9am-5pm',
+    },
+    {
+        label: 'Saturday: ',
+        data: '9am-4pm',
     },
     {
         label: 'Sunday: ',
         data: 'CLOSED',
     },
     {
-        label: 'Storage Access Hour: ',
-        data: '7 Days a Week 6:00AM - 8:00PM',
+        label: 'Access Hours: ',
+        data: '6am-11pm - 7 days a week',
+    },
+];
+
+export const contactsLocation5 = [
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '165 Route 22 Pawling, NY 12564',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: ''
+    },
+    {
+        id: 2,
+        label: 'Email: ',
+        email: 'allspacestoragert22@hvc.rr.com, syrasoftsoftware@gmail.com',
+        data: `allspacestoragert22@hvc.rr.com`,
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:`allspacestoragert22@hvc.rr.com, syrasoftsoftware@gmail.com`'
+    },
+    {
+        id: 3,
+        label: 'Phone: ',
+        data: '(845) 855-0700',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:8458550700'
+    },
+];
+
+export const hoursLocation5 = [
+    {
+        label: 'Mon, Tues, Wed, Fri: ',
+        data: '10:00AM - 5:00PM',
+    },
+    {
+        label: 'Thursday: ',
+        data: '10:00AM - 2:00PM',
+    },
+    {
+        label: 'Saturday: ',
+        data: '9:00AM - 3:00PM',
+    },
+    {
+        label: 'Sunday: ',
+        data: 'Closed',
     },
 ];

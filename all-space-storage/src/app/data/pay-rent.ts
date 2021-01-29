@@ -13,42 +13,57 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: 'Both Chester Locations',
-    address: 'Andrews Lane & Brookside Ave',
-    url: 'chester-brookside-ave'
+    facility: 'Poughkeepsie/Arlington',
+    address: '189 Manchester Road Poughkeepsie, NY 12603',
+    url: 'poughkeepsie/arlington'
   },
   {
-    facility: 'Montgomery / Walden',
-    address: '130 Neelytown Rd, Montgomery, NY 12549',
-    url: 'montgomery-walden'
+    facility: 'Poughkeepsie/Hyde Park',
+    address: '120 Salt Point Turnpike, Poughkeepsie, NY 12603',
+    url: 'poughkeepsie/hyde-park'
   },
   {
-    facility: 'Middletown / WallKill',
-    address: '2070 Goshen Turnpike, Middletown, NY 10941',
-    url: 'middletown-wallKill'
+    facility: 'Highland',
+    address: '480 Route 299 Highland, NY 12528',
+    url: 'highland'
+  },
+  {
+    facility: 'Kingston/Lake Katrine',
+    address: '1693 Ulster Avenue Lake Katrine, NY 12449',
+    url: 'lake-katrine'
+  },
+  {
+    facility: 'Pawling',
+    address: '165 Route 22 Pawling, NY 12564',
+    url: 'pawling'
   },
 ];
 
 export const tableDataContactPage = [
   {
-    facility: 'Chester - Brookside Ave',
-    address: '53 Brookside Ave, Chester, NY 10918',
-    url: 'chester-brookside-ave'
+    facility: 'Poughkeepsie/Arlington',
+    address: '189 Manchester Road Poughkeepsie, NY 12603',
+    url: 'poughkeepsie/arlington'
   },
   {
-    facility: 'Chester - Andrews Lane',
-    address: '1 Andrews Lane, Chester, NY 10918',
-    url: 'chester-andrews-lane'
+    facility: 'Poughkeepsie/Hyde Park',
+    address: '120 Salt Point Turnpike, Poughkeepsie, NY 12603',
+    url: 'poughkeepsie/hyde-park'
   },
   {
-    facility: 'Montgomery / Walden',
-    address: '130 Neelytown Rd, Montgomery, NY 12549',
-    url: 'montgomery-walden'
+    facility: 'Highland',
+    address: '480 Route 299 Highland, NY 12528',
+    url: 'highland'
   },
   {
-    facility: 'Middletown / WallKill',
-    address: '2070 Goshen Turnpike, Middletown, NY 10941',
-    url: 'middletown-wallKill'
+    facility: 'Kingston/Lake Katrine',
+    address: '1693 Ulster Avenue Lake Katrine, NY 12449',
+    url: 'lake-katrine'
+  },
+  {
+    facility: 'Pawling',
+    address: '165 Route 22 Pawling, NY 12564',
+    url: 'pawling'
   },
 ];
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
-import { headingReservePageLocation1, headingReservePageLocation2, headingReservePageLocation3, headingReservePageLocation4 } from '../../data/location';
+import { headingReservePageLocation1, headingReservePageLocation2, headingReservePageLocation3, headingReservePageLocation4, headingReservePageLocation5 } from '../../data/location';
 import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
@@ -30,18 +30,21 @@ export class ReserveComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/chester-andrews-lane')) {
+    if (this.router.url.includes('/location/poughkeepsie/arlington')) {
       this.id = 1;
       this.heading = headingReservePageLocation2;
-    } else if (this.router.url.includes('/location/chester-brookside-ave')) {
+    } else if (this.router.url.includes('/location/poughkeepsie/hyde-park')) {
       this.id = 2;
       this.heading = headingReservePageLocation1;
-    } else if (this.router.url.includes('/location/montgomery-walden')) {
+    } else if (this.router.url.includes('/location/highland')) {
       this.id = 3;
       this.heading = headingReservePageLocation3;
-    } else if (this.router.url.includes('/location/middletown-wallKill')) {
+    } else if (this.router.url.includes('/location/lake-katrine')) {
       this.id = 4;
       this.heading = headingReservePageLocation4;
+    } else if (this.router.url.includes('/location/pawling')) {
+      this.id = 4;
+      this.heading = headingReservePageLocation5;
     }
   }
 

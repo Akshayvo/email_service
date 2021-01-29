@@ -44,10 +44,10 @@ export class StorageTipsComponent implements OnInit {
       });
     this.meta.addTag({
       name: 'description',
-      content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
-      make your stay with us a breeze!`
+      content: `AllSpace Storage has been making the storage experience
+      more convenient since 1996! Here are some quick tips to help you during your stay!`
     });
-    this.titleService.setTitle('Storage Tips | StorageTown Rental Spaces');
+    this.titleService.setTitle('Storage Tips | AllSpace Storage');
   }
 
   ngOnInit() {

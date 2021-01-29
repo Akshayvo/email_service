@@ -52,9 +52,10 @@ export class PaymentComponent implements OnInit {
     });
     this.meta.addTag({
       name: 'description',
-      content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+      content: `AllSpace Storage  offers convenient online bill pay!
+      Simply follow the instructions or call your location to learn how to access your account!`
     });
-    this.titleService.setTitle('Pay Rent | Affordable Secure Storage');
+    this.titleService.setTitle('Pay Your Rent Online');
   }
 
   ngOnInit() {

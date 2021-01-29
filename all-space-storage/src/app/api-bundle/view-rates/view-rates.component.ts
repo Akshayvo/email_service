@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
-import { headingLocation1, headingLocation2, headingLocation3, headingLocation4  } from '../../data/location';
+import { headingLocation1, headingLocation2, headingLocation3, headingLocation4, headingLocation5  } from '../../data/location';
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -24,18 +24,21 @@ export class ViewRatesComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/chester-andrews-lane')) {
+    if (this.router.url.includes('/location/poughkeepsie/arlington')) {
       this.id = 1;
       this.heading = headingLocation1;
-    } else if (this.router.url.includes('/location/chester-brookside-ave')) {
+    } else if (this.router.url.includes('/location/poughkeepsie/hyde-park')) {
       this.id = 2;
       this.heading = headingLocation2;
-    } else if (this.router.url.includes('/location/montgomery-walden')) {
+    } else if (this.router.url.includes('/location/highland')) {
       this.id = 3;
       this.heading = headingLocation3;
-    } else if (this.router.url.includes('/location/middletown-wallKill')) {
+    } else if (this.router.url.includes('/location/lake-katrine')) {
       this.id = 4;
       this.heading = headingLocation4;
+    } else if (this.router.url.includes('/location/pawling')) {
+      this.id = 4;
+      this.heading = headingLocation5;
     }
   }
 }

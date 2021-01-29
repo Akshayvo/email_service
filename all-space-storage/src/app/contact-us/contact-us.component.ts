@@ -4,11 +4,13 @@ import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3, hoursLocation4, contactsLocation4,  } from '../data/contact';
+          hoursLocation3, hoursLocation4, contactsLocation4, contactsLocation5, hoursLocation5  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3, ogContactPageLocation4, twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4 } from '../data/script';
+import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2,
+   ogContactPageLocation3, ogContactPageLocation4, twitterContactPage, twitterContactPageLocation1,
+    twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4 } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 @Component({
   selector: 'app-contact-us',
@@ -66,10 +68,10 @@ export class ContactUsComponent implements OnInit {
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Want to reserve a unit or find information about your account? Use our contact
-      form or the contact information for your StorageTown location on this page!`
+      content: `Have a question about the services provided by AllSpace Storage?
+      Use our handy form or reach out today and let our friendly staff help today!`
     });
-    this.titleService.setTitle('Contact Us | StorageTown Rental Spaces');
+    this.titleService.setTitle('Contact Us | AllSpace Storage');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -95,34 +97,42 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('poughkeepsie/arlington')) {
       this.og = ogContactPageLocation1;
     } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
+      if (this.router.url.includes('poughkeepsie/hyde-park')) {
         this.og = ogContactPageLocation2;
       } else {
-        if (this.router.url.includes('montgomery-walden')) {
+        if (this.router.url.includes('highland')) {
           this.og = ogContactPageLocation3;
         } else {
-          if (this.router.url.includes('middletown-wallKill'))
+          if (this.router.url.includes('lake-katrine')) {
           this.og = ogContactPageLocation4;
-        }
+          } else {
+            if (this.router.url.includes('pawling'))
+            this.og = ogContactPageLocation4;
+          }
+        } 
       }
     }
 }
 
 public fetchTwitter() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('poughkeepsie/arlington')) {
       this.twitter = twitterContactPageLocation1;
     } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
+      if (this.router.url.includes('poughkeepsie/hyde-park')) {
         this.twitter = twitterContactPageLocation2;
       } else {
-        if (this.router.url.includes('montgomery-walden')) {
+        if (this.router.url.includes('highland')) {
           this.twitter = twitterContactPageLocation3;
         } else {
-          if (this.router.url.includes('middletown-wallKill'))
+          if (this.router.url.includes('lake-katrine')) {
           this.twitter = twitterContactPageLocation4;
+          } else {
+            if (this.router.url.includes('pawling'))
+            this.twitter = twitterContactPageLocation4;
+          }
         }
       }
     }
@@ -160,19 +170,21 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('chester-andrews-lane')) {
+    if (this.router.url.includes('poughkeepsie/arlington')) {
       this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('chester-brookside-ave')) {
+    } else if (this.router.url.includes('poughkeepsie/hyde-park')) {
       this.fetchContactDetailsLocation1();
-    } else if (this.router.url.includes('montgomery-walden')) {
+    } else if (this.router.url.includes('highland')) {
       this.fetchContactDetailsLocation3();
-    } else if (this.router.url.includes('middletown-wallKill')) {
+    } else if (this.router.url.includes('lake-katrine')) {
+      this.fetchContactDetailsLocation4();
+    } else if (this.router.url.includes('pawling')) {
       this.fetchContactDetailsLocation4();
     }
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `StorageTown Rental Spaces - Chester - Brookside Ave`;
+    this.heading = `AllSpace Storage - Poughkeepsie/Arlington`;
     this.locationId = '1'
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
@@ -180,23 +192,30 @@ public fetchTwitter() {
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading = `StorageTown Rental Spaces - Chester - Andrews Lane `;
+    this.heading = `AllSpace Storage - Poughkeepsie/Hyde Park`;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = `StorageTown Rental Spaces - Montgomery/Walden`;
+    this.heading = `AllSpace Storage - Highland`;
     this.locationId = '3'
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
-    this.heading = `StorageTown - Middletown/WallKill Location`;
+    this.heading = `AllSpace Storage - Lake Katrine`;
     this.locationId = '4'
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
+  }
+
+  public fetchContactDetailsLocation5() {
+    this.heading = `AllSpace Storage - Pawling`;
+    this.locationId = '5'
+    this.contactDetails = contactsLocation5;
+    this.hoursDetails = hoursLocation5;
   }
 
 onSubmit() {

@@ -22,10 +22,10 @@ export class PaymentIframeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent for any of the 4 StorageTown Rental Spaces locations right here!
-      Simply follow the instructions or call your facility to learn how!`
+      content: `AllSpace Storage  offers convenient online bill pay!
+      Simply follow the instructions or call your location to learn how to access your account!`
     });
-    this.titleService.setTitle('Pay Rent | StorageTown Rental Spaces');
+    this.titleService.setTitle('Pay Your Rent Online');
   }
 
   ngOnInit() {

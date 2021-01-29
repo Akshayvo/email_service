@@ -4,7 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3, hoursLocation4, contactsLocation4,  } from '../data/contact';
+          hoursLocation3, hoursLocation4, contactsLocation4, contactsLocation5, hoursLocation5  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -70,10 +70,10 @@ export class ContactComponent implements OnInit {
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Want to reserve a unit or find information about your account? Use our contact
-      form or the contact information for your StorageTown location on this page!`
+      content: `Have a question about the services provided by AllSpace Storage?
+      Use our handy form or reach out today and let our friendly staff help today!`
     });
-    this.titleService.setTitle('Contact Us | StorageTown Rental Spaces');
+    this.titleService.setTitle('Contact Us | AllSpace Storage');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -121,6 +121,8 @@ public fetchTwitter() {
       this.fetchContactDetailsLocation3();
     } else if ( this.locationId === '4' ) {
       this.fetchContactDetailsLocation4();
+    } else if ( this.locationId === '5' ) {
+      this.fetchContactDetailsLocation4();
     }
   }
 
@@ -133,27 +135,33 @@ public fetchTwitter() {
   }
   
   public fetchContactDetailsLocation1() {
-    this.heading = `StorageTown Rental Spaces - Chester - Andrews Lane `;
+    this.heading = `AllSpace Storage - Poughkeepsie/Arlington`;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
 
   public fetchContactDetailsLocation2() {
-    this.heading = `StorageTown Rental Spaces - Chester - Brookside Ave`;
+    this.heading = `AllSpace Storage - Poughkeepsie/Hyde Park`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = `StorageTown Rental Spaces - Montgomery/Walden`;
+    this.heading = `AllSpace Storage - Highland`;
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
-    this.heading = `StorageTown - Middletown/WallKill Location`;
+    this.heading = `AllSpace Storage - Lake Katrine`;
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
+  }
+
+  public fetchContactDetailsLocation5() {
+    this.heading = `AllSpace Storage - Pawling`;
+    this.contactDetails = contactsLocation5;
+    this.hoursDetails = hoursLocation5;
   }
 
 onSubmit() {

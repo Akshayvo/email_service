@@ -44,12 +44,16 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('chester-brookside-ave') || this.router.url.includes('chester-andrews-lane')) {
-      this.name = 'Chester - Andrews Lane & Brookside Ave';
-  }  else if (this.router.url.includes('montgomery-walden')) {
-    this.name = 'Montgomery/Walden';
-  } else if (this.router.url.includes('middletown-wallKill')) {
-    this.name = 'Middletown/WallKill';
+    if (this.router.url.includes('poughkeepsie/arlington') ) {
+      this.name = 'Poughkeepsie/Arlington';
+  }  else if (this.router.url.includes('poughkeepsie/hyde-park')) {
+    this.name = 'Poughkeepsie/Hyde Park';
+  } else if (this.router.url.includes('highland')) {
+    this.name = 'Highland';
+  } else if (this.router.url.includes('lake-katrine')) {
+    this.name = 'Kingston/Lake Katrine';
+  } else if (this.router.url.includes('pawling')) {
+    this.name = 'Pawling';
   }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
@@ -64,34 +68,41 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('poughkeepsie/arlington')) {
       this.og = ogPayRentPageLocation1;
     } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
+      if (this.router.url.includes('poughkeepsie/hyde-park')) {
         this.og = ogPayRentPageLocation2;
       } else {
-        if (this.router.url.includes('montgomery-walden')) {
+        if (this.router.url.includes('highland')) {
           this.og = ogPayRentPageLocation3;
         } else {
-          if (this.router.url.includes('middletown-wallKill'))
+          if (this.router.url.includes('lake-katrine')) {
           this.og = ogPayRentPageLocation4;
+          } else {
+            if (this.router.url.includes('pawling')) 
+            this.og = ogPayRentPageLocation4;
         }
       }
     }
-}
+}}
 
 public fetchTwitter() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('poughkeepsie/arlington')) {
       this.twitter = twitterPayRentPageLocation1;
     } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
+      if (this.router.url.includes('poughkeepsie/hyde-park')) {
         this.twitter = twitterPayRentPageLocation2;
       } else {
-        if (this.router.url.includes('montgomery-walden')) {
+        if (this.router.url.includes('highland')) {
           this.twitter = twitterPayRentPageLocation3;
         } else {
-          if (this.router.url.includes('middletown-wallKill'))
+          if (this.router.url.includes('lake-katrine')){
           this.twitter = twitterPayRentPageLocation4;
+          } else {
+            if (this.router.url.includes('pawling'))
+            this.twitter = twitterPayRentPageLocation4;
+          }
         }
       }
     }
