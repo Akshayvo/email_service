@@ -27,6 +27,7 @@ export class DataSharingService {
   CCApprovalCode: string;
   eventName: string;
   signUpForAutoPay: boolean;
+  showAltDetails: boolean;
 
   cardDetailsObject = {
     CCNumber: '',

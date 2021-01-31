@@ -89,6 +89,7 @@ unitData = {
 canExit = true;
 navTo: any;
 period: string;
+showAltDetails = false;
 public destroyed = new Subject<any>();
 
 
@@ -112,10 +113,12 @@ constructor(
 ) {
   this.fetchOption();
   this.fetchSharedData();
+  
 }
 
 ngOnInit() {
   this.getTenantUnitData();
+  this.showAltDetails = this.dataSharingService.showAltDetails;
 }
 
 fetchSharedData() {

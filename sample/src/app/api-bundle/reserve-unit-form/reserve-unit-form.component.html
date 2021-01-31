@@ -114,7 +114,7 @@
                 </div>
                    </div>
                    <!-- Start of Aletrnate Contact Detail -->
-                   <div class="" >
+                   <div *ngIf="!!showAltDetails" >
                      <h2 class="pb-1 pt-3 border-bottom border-dark  ">Alternate Contact Information</h2>
                      <div class="pt-3 row">
                          <div class="col-md-6 form-group">
@@ -281,18 +281,18 @@
                     </div>
                 </div>
             </div>
-        <div *ngIf="UnitTypeRate">
+        <div *ngIf="monthlyRate">
             <label>Rate:</label>&nbsp;
-            ${{UnitTypeRate}}
+            ${{monthlyRate}}
             <span *ngIf="rateTax > 0">
                 + ${{rateTax}} (Tax)
             </span>
         </div>
-        <div class="form-group readonly-form-control" *ngIf="navigateToReserve && ReservationFee !== undefined">
+        <div class="form-group readonly-form-control" *ngIf="navigateToReserve && reservationFee !== undefined">
             <label>Reservation Charges:</label>&nbsp;
-            ${{ ReservationFee}}
-            <span *ngIf="ReservationFeeTax !== undefined">
-                    + ${{ReservationFeeTax }} (Tax)
+            ${{reservationFee}}
+            <span *ngIf="reservationFeeTax !== undefined">
+                    + ${{reservationFeeTax }} (Tax)
                 </span>
         </div>
     
