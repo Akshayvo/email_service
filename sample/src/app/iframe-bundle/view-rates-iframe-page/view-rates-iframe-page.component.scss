@@ -29,9 +29,6 @@
   background-color: white;
 }
 
-.padding-top {
-  padding-top: 110px;
-}
 
 .background-padding {
   padding: 64px;
@@ -59,10 +56,6 @@
   .view-rate-heading {
     display: inline;
   }
-
-  .padding-top {
-    padding-top: 56px;
-  }
 }
 
 
@@ -74,9 +67,3 @@
   }
 }
 
-
-@media only screen and (max-width: 991px) {
-  .padding-top {
-    padding-top: 56px;
-  }
-}

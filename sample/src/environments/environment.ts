@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  type: 0,  // { API: 0, iframe: 1 }
+  type: 1,  // { API: 0, iframe: 1 }
   locationName: 'new-york/baldwinsville', // state/city
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
