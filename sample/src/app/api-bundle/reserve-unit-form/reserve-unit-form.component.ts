@@ -472,17 +472,17 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
       .subscribe(unitTypesResponse => {
       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
       this.getFilterLstUnitTypes(unitTypesResponse);
-      const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
+      const defaultMonthlyValue = this.filterLstUnitTypes[0].MonthlyRate;
+      this.Description = this.filterLstUnitTypes[0].Description;
+      this.ReservationFeeTax = this.filterLstUnitTypes[0].ReservationFeeTax;
+      this.ReservationFee = this.filterLstUnitTypes[0].ReservationFee;
       this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
       const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
-      this.Description = unitTypesResponse.lstUnitTypes[0].Description;
       const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
-      this.ReservationFee = unitTypesResponse.lstUnitTypes[0].ReservationFee;
-      this.ReservationFeeTax = unitTypesResponse.lstUnitTypes[0].ReservationFeeTax;
       this.MoveIn.intUnitTypeID = this.UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
       this.unitTypeId =
       this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
-      this.UnitTypeID = unitTypesResponse.lstUnitTypes[0].UnitTypeID;
+      this.UnitTypeID = this.filterLstUnitTypes[0].UnitTypeID;
       if (this.navigateToMoveIn) {
         // tslint:disable-next-line:max-line-length
         this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
