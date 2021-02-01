@@ -1,7 +1,9 @@
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
-  alternateTenant: `navigateToMoveIn`, // {0, 1, navigateToReserve, navigateToMoveIn},
+  locationName: 'me/portland', // state/city
+  signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
+  alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   paymentPageType: 0, // { withoutTab: 0, withTab: 1}
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
@@ -11,6 +13,7 @@ export const environment = {
   appId: 'Southern Maine Storage - Production',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
+  facilityName: 'Southern Maine Storage',
   APIKey: `dzZ0MVc4SjhOOjIyfCU4Nzg3NyQoOD1iVzBzaGRkOWtlb2NeTg==`, // 6188 southern Maine
   websiteUrl: ''
 };

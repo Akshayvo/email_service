@@ -6,6 +6,7 @@ import { tabs } from '../../data/tab';
 import { payRentHeading } from '../../data/heading';
 import { payRentPageContent, payRentPageTitle } from '../../data/title';
 import { environment } from '../../../environments/environment';
+import { CanonicalService } from '../../services/canonical.service';
 
 @Component({
   selector: 'app-pay-rent',
@@ -28,7 +29,8 @@ export class PayRentComponent implements OnInit {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private dataSharingService: DataSharingService,
-    private meta: Meta
+    private meta: Meta,
+    private canonical: CanonicalService,
 
   ) {
     this.fetchMetaData();
@@ -37,11 +39,12 @@ export class PayRentComponent implements OnInit {
       content: `${this.payRentPageContent}`
     });
     this.titleService.setTitle(`${this.payRentPageTitle}`);
+    this.canonical.create();
   }
 
   ngOnInit() {
     this.fetchContactDetails();
-    this.showPaymentPageType = environment.paymentPageType;
+    this.showPaymentPageType = environment.signUpForAuotoPay;
   }
 
   public fetchMetaData() {

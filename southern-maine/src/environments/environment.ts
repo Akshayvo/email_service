@@ -5,8 +5,10 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  alternateTenant: `navigateToMoveIn`, // {0, 1, navigateToReserve, navigateToMoveIn},
-  paymentPageType: 1, // { withoutTab: 0, withTab: 1}
+  locationName: 'me/portland', // state/city,
+  signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
+  alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
+  paymentPageType: 0, // { withoutTab: 0, withTab: 1}
   reservetionFormType: 0, // { withoutAlternateDetail:0, withAlternateDetial: 1}
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
@@ -15,6 +17,7 @@ export const environment = {
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   appId: 'Southern Maine Storage - Testing',
   VERSION: require('../../package.json').version,
+  facilityName: 'Southern Maine Storage',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: '',
   // baseUrl: `https://simapi.syrasoft.com/1/api/`,

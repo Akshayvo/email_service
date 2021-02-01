@@ -4,9 +4,10 @@ import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { FetchDataService } from '../services/fetch-data.service';
-import { th, offerList } from '../../data/view-rates';
+import { offerList, th } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
+import { environment } from '../../../environments/environment';
 
 
 @Component({
@@ -40,7 +41,6 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
   defaultClimateString = ' ';
-  offerList: any;
 
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
@@ -48,6 +48,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   th: any;
   tenant: any;
   text = false;
+  offerList: any;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -62,7 +63,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.getData();
-    this.fetchThData();
+    this.fetchThData();    
   }
 
   public fetchThData() {
@@ -73,7 +74,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);
-    this.router.navigate([location]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
     this.dataSharingService.LstUnitTypes = unitData;
   }
 

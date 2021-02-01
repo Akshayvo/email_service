@@ -15,7 +15,7 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-6 col-12">
-                        <label>UserName</label> &nbsp;
+                        <label>User Name</label> &nbsp;
                         <input type="text" formControlName="strUserName"  
                         class="form-control" 
                         [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }"
@@ -64,10 +64,10 @@
     <div class="col-md-5  vertical-line"  >
         <h3>How to Login</h3>
         <div *ngFor="let loginDetail of loginDetail">
-          <p><b>Username</b>&nbsp;{{loginDetail.userName}}<br>
+          <p><b>Username: </b>&nbsp;{{loginDetail.userName}}<br>
           <b>Password:</b>&nbsp;{{loginDetail.password}}</p>
             <p><b>Example:</b></p>
-            <p>{{loginDetail.example.code}}</p>
+            <p>John Smith's {{loginDetail.example.code}}</p>
             <p>John's Username: {{loginDetail.example.userName}}<br>
               John's Password: {{loginDetail.example.password}}</p>
             <p><strong>Have questions about your account?</strong><br>
