@@ -38,7 +38,6 @@ const withoutTab = [
         { path: 'verifyCode', component: VerifyCodeComponent },
         { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
-
         // canActivate: [VerifictionCodeGuard]
 ];
 
@@ -54,7 +53,6 @@ const withTab = [
           { path: 'verifyCode', component: VerifyCodeComponent },
           { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
           { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
-
           // canActivate: [VerifictionCodeGuard]
         ]
       },
@@ -73,7 +71,7 @@ const withTab = [
 ];
 
 // const reservationForm = environment
-const childroute = environment.paymentPageType ? withTab : withoutTab;
+const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
 
  export const apiRoutes = [
     // Fallback when no prior route is matched

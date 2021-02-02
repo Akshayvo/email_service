@@ -2,9 +2,8 @@ export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
   locationName: 'me/portland', // state/city
-  signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
+  signUpForAuotoPay: 0, // { Yes: 1, No: 0 }
   alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
-  paymentPageType: 0, // { withoutTab: 0, withTab: 1}
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: ['website.dev@codeparva.in'],
