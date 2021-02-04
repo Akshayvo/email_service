@@ -68,9 +68,9 @@ export class UnitSizesComponent implements OnInit {
   public activeUnit(unitId: number) {
     this.i = unitId;
     if ( this.i === 0 ) {
-      this.h = 7;
+      this.h = 6;
       this.j = this.i + 6;
-    } else if ( this.i === 7 ) {
+    } else if ( this.i === 6 ) {
       this.j = 0;
       this.h = this.i - 1;
     } else {

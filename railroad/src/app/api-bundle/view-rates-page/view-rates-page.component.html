@@ -35,9 +35,9 @@
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
               <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
             </td>
-          <td colspan="2" class="px-4 border text-center" >
+          <!-- <td colspan="2" class="px-4 border text-center" >
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
-          </td>
+          </td> -->
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>
@@ -45,14 +45,14 @@
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
             <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
           </td>
-          <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled; else other_climate">
+          <!-- <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled; else other_climate">
             <strong> Yes</strong>
-          </td>
-          <ng-template #other_climate>
+          </td> -->
+          <!-- <ng-template #other_climate>
             <td colspan="2"  class="px-4 border text-center">
             {{defaultClimateString}}
           </td>
-          </ng-template>
+          </ng-template> -->
           <ng-template #other_reserve>
             <td colspan="2" class="py-2 px-4 border">
             <div class="text-center">Please call the facility to reserve a unit.</div>
