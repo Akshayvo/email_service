@@ -2,25 +2,10 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Railroad Street Self Storage has been serving Baldwinsville, and the surrounding communities
-      with quality regular and climate controlled self storage units for nearly two decades. We have
-      the experience and commitment to modern conveniences you need to make your next storage project an easy one`,
+      p: `Railroad Street Self Storage is proud to serve Sun Prairie, Burke, Cottage Grove, and the surrounding communities with 24 hour a day access to clean, well-maintained and affordable self storage units.`,
     },
     {
-      p: `At Railroad Street Self Storage, you'll have access to our services with an online tenant portal
-      for contactless rentals, and online payments. If you're here after hours and want to make a payment,
-      stop into the office's foyer and use our 24-hour kiosk!`
-    },
-    {
-      p: `Our residential storage users love our convenient location and affordable rates that take the stress
-      out of their move, renovation, or seasonal de-cluttering projects. An extra closet to an extra garage's
-      worth of space makes the most out of your home's space!
-      `
-    },
-    {
-      p: `Many local businesses in use our climate controlled storage units to save money by storing in a climate
-      controlled storage unit instead of expensive commercial real estate. We are the ideal space for your extra
-    inventory, or documents. Our 24-hour access policy is the ideal solution for your local business.`
+      p: `Take advantage of our contactless reservation, or rental processes to start your next storage project! Whether you’re a renter or homeowner just looking for some elbow room around the house or garage, or if you’re a local business owner looking to store equipment, supplies, or inventory, we’ve got you covered! Check out our prices, then reserve or rent your unit online in minutes! Our friendly management staff look forward to meeting you!`
     }
 ];
 
