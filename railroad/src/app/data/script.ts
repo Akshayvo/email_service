@@ -19,13 +19,13 @@ export const homePageScript = [ {
      ],
     "@id": "http://davessteakhouse.example.com",
     "name": "railroad site ",
-     "description": "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
+     "description": "Railroad Street Self Storage.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "148 W 51st St",
-      "addressLocality": "New York",
-      "addressRegion": "NY",
-      "postalCode": "10019",
+      "streetAddress": "113 Railroad St",
+      "addressLocality": "Sun Prairie",
+      "addressRegion": "WI",
+      "postalCode": "53590",
       "addressCountry": "US"
     },
    "aggregateRating": {
@@ -40,7 +40,7 @@ export const homePageScript = [ {
       "longitude": -73.982294
     },
     "url": "http://www.example.com/",
-    "telephone": "+12122459600",
+    "telephone": "+(608) 228-0686",
     
     "priceRange": "$$$",
    "openingHours":["Mo-Fr 10:00-19:00", "Sa 10:00-22:00", "Su 10:00-21:00"],
@@ -48,7 +48,7 @@ export const homePageScript = [ {
   "paymentAccepted":"Cash, Credit Card",
      "areaServed": {
   "@type": "State",
-  "name": "Massachusetts"
+  "name": "Wisconsin"
    },
    
 "hasMap":"https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
@@ -96,7 +96,7 @@ export const homePageScript = [ {
           "telephone": "4",
           "contactType": "customer service"
         }],
-        "email": "contact@sample.com",
+        "email": "fiftyoneselfstorage@gmail.com",
         "sameAs": [
           "facebook.com/xxx",
           "",
