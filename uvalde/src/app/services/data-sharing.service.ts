@@ -22,11 +22,12 @@ export class DataSharingService {
     loc3: 'dzJ0OVcwSjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
     loc4: 'dzJ0OVcwSjMqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
     loc5: 'dzJ0OVcwSjMqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-    loc6: 'dzJ0OVcwSjMqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29038
+    loc6: 'dzJ0OVczSjkqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29396
     loc7: 'dzJ0OVcySjgqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29289
     loc8: 'dzJ0OVczSjcqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O'  // 29378
   };
 
+  
   // locationAPIKey = {                                                     // demo north
   //   loc1: 'PTJeOCM0VDZ4M2s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   //   loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
