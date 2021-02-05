@@ -1,7 +1,9 @@
+import { environment } from "../../environments/environment";
+
 export const objSIMSetting = {
     objActionSetting: {
-        blnAllowMoveIn: true,
-        blnAllowReservation: true
+        blnAllowMoveIn: false,
+        blnAllowReservation: true,
     },
     objPaymentSetting: {
         blnAllowACHPayments: true,
@@ -14,8 +16,9 @@ export const objSIMSetting = {
         blnHideGateAccessCode: false,
     },
     objUnitSizesSetting: {
-        blnClimateControl: true,
-        blnShowDeposit: true,
+        blnReservationFee: true,
+        blnClimateControl: false,
+        blnShowDeposit: false,
         blnShowRate: true,
         blnShowUnavailableUnitTypes: true,
         blnShowUnitAvailability: true

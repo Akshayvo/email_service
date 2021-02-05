@@ -1,9 +1,10 @@
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
-  alternateTenant: `navigateToMoveIn`, // {0, 1, navigateToReserve, navigateToMoveIn},
-  paymentPageType: 1, // { withoutTab: 0, withTab: 1}
-  reservetionFormType: 1, // { withoutAlternateDetail:0, withAlternateDetial: 1}
+  locationName: 'or/lebanon',  // state/city
+  facilityName: 'Starlite Storage',
+  alternateType: { moveIn: false, reserve: true }, // { moveIn: true, reserve: true },
+  signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['website.dev@codeparva.in'],

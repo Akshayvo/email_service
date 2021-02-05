@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { FormGroup, FormBuilder, Validators, FormArray, AbstractControl, ValidatorFn } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, FormArray, AbstractControl, ValidatorFn, FormGroupName } from '@angular/forms';
 import { FetchDataService } from '../services/fetch-data.service';
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
@@ -35,7 +35,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   clickedMoveIn?: boolean;
   defaultTotalTaxAmount?: number;
   defaultTotalChargesAmount?: number;
-  UnitTypeID: number;
+  unitTypeID: number;
   showPaymentForMoveIn: boolean;
   showPaymentForReserve: boolean;
   filterLstUnitTypes: LstUnitTypes[];
@@ -70,12 +70,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   submitted = false;
   rate: string;
   PeriodDescription: string;
-  ReservationFee: number;
+  reservationFee: number;
   ReservationFeeValue: number;
-  ReservationFeeTax: number;
+  reservationFeeTax: number;
   reservationInProgress = false;
   UnitTypeRate: number;
-  Description: string;
+  description: string;
   defaultReservationFee: number;
   defaultReservationFeeTax: number;
   unitTypeId: number;
@@ -129,7 +129,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   biAnnualRate: number;
   quarterRate: number;
 
-  alternateTenantDetail: any;
+  alternatetypeDetail: any;
+
+  showAltDetails = false;
 
   private  getLeadDaysSubscribe$: Subscription;
   private  getTenantInfoSubscribe$: Subscription;
@@ -145,7 +147,30 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     private leadDaysService: LeadDaysService,
     private moveInService: MoveInService,
     public router: Router,
-    ) {
+    ) {      
+
+      if (this.router.url.includes('view-rates')) {
+        this.showReservationButton = true;
+      } else {
+        this.showReservationButton = false;
+      }
+  
+      if ((this.router.url.includes('reserve'))) {
+        this.navigateToReserve = true;
+        this.dataSharingService.navigateToReserve = true;
+        this.dataSharingService.navigateToMoveIn = false;
+        this.showAltDetails = (environment.alternateType.reserve === true) ? true : false;
+        this.dataSharingService.showAltDetails = this.showAltDetails;
+      } else {
+        if (this.router.url.includes('move-in')) {
+          this.navigateToMoveIn = true;
+          this.dataSharingService.navigateToMoveIn = true;
+          this.dataSharingService.navigateToReserve = false;
+          this.showAltDetails = (environment.alternateType.moveIn === true) ? true : false;
+          this.dataSharingService.showAltDetails = this.showAltDetails;
+        }
+      }
+        
     this.reserveUnitForm = this.formBuilder.group({
       objTenant: this.formBuilder.group({
         FirstName: ['', Validators.required],
@@ -161,7 +186,22 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
+        AlternateName: [''],
+        AlternatePhone:   ['', [  conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),
+          Validators.pattern(
+            '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
+            )
+        ]],
+        AlternateAddressLine1: [''],
+        AlternateAddressLine2: [''],
+        AlternateCity: [''],
+        AlternateState: [''],
+        AlternateZIP: [''],
       }),
+
 
       lstUnitTypes: new FormArray([
         this.initLstUnitTypes(),
@@ -174,6 +214,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       lstRentalPeriods: new FormArray([
         this.initPeriodDescription(),
       ]),
+
       dteMoveIn: ['',
       conditionalValidator(
         (() => this.navigateToMoveIn === true),
@@ -181,6 +222,15 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       )
     ],
     });
+    // if (this.showAltDetails === true) {
+
+
+    // }
+    console.log('type of ', 
+    typeof(this.reserveUnitForm.controls.objTenant), 
+    this.reserveUnitForm.controls['objTenant'],
+    this.reserveUnitForm.get('objTenant')['controls']);
+
 
 
     function conditionalValidator(condition: (() => boolean), validator: ValidatorFn): ValidatorFn {
@@ -191,28 +241,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         return validator(control);
       };
     }
-
-    this.alternateTenantDetail = environment.alternateTenant;
-
-    console.log('this.alternateTenantDetail', this.alternateTenantDetail);
-
-    if (this.router.url.includes('view-rates')) {
-      this.showReservationButton = true;
-    } else {
-      this.showReservationButton = false;
-    }
-
-      if ((this.router.url.includes('reserve'))) {
-        this.navigateToReserve = true;
-        this.dataSharingService.navigateToReserve = true;
-        this.dataSharingService.navigateToMoveIn = false;
-      } else {
-        if (this.router.url.includes('move-in')) {
-          this.navigateToMoveIn = true;
-          this.dataSharingService.navigateToMoveIn = true;
-          this.dataSharingService.navigateToReserve = false;
-        }
-      }
   }
 
   initLstInsuranceChoices() {
@@ -235,8 +263,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.Description  = this.dataSharingService.getReservationData().Description;
-    this.UnitTypeRate = this.dataSharingService.getReservationData().MonthlyRate;
+    this.description  = this.dataSharingService.getReservationData().Description;
+    this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
 
     this.getData();
@@ -258,7 +286,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     }
     this.reserveUnitForm.patchValue({
       lstUnitTypes: ([{
-        Description: this.Description,
+        Description: this.description,
       }])
     });
   }
@@ -268,7 +296,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     }
 
   public navigate(location: any) {
-    this.router.navigate([location]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
   }
 
   get f(): any { return this.reserveUnitForm.controls; }
@@ -289,7 +317,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
      return;
     } else {
     }
-    this.router.navigate([location]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
   }
 
 
@@ -315,14 +343,13 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const indexValue  = event.target.value;
     const index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
     if (!!index) {
-      this.UnitTypeRate = this.lstUnitTypes[index].MonthlyRate;
       this.monthlyRate = this.lstUnitTypes[index].MonthlyRate;
       this.annualRate = this.lstUnitTypes[index].AnnualRate;
       this.biAnnualRate = this.lstUnitTypes[index].BiAnnualRate;
       this.quarterRate = this.lstUnitTypes[index].QuarterRate;
       this.unitTypeId = this.lstUnitTypes[index].UnitTypeID;
-      this.ReservationFee = this.lstUnitTypes[index].ReservationFee;
-      this.ReservationFeeTax = this.lstUnitTypes[index].ReservationFeeTax;
+      this.reservationFee = this.lstUnitTypes[index].ReservationFee;
+      this.reservationFeeTax = this.lstUnitTypes[index].ReservationFeeTax;
     }
     this.MoveIn.intUnitTypeID = this.unitTypeId;
     this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
@@ -402,6 +429,13 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
+            AlternateName: Tenant.AlternateName,
+            AlternatePhone: Tenant.AlternatePhone,
+            AlternateAddressLine1: Tenant.AlternateAddressLine2,
+            AlternateAddressLine2: Tenant.AlternateAddressLine2,
+            AlternateCity: Tenant.AlternateCity,
+            AlternateState: Tenant.AlternateState,
+            AlternateZIP: Tenant.AlternateZIP,
           };
           this.reserveUnitForm.patchValue({
             objTenant: ({
@@ -414,6 +448,13 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
+              AlternateName: Tenant.AlternateName,
+              AlternatePhone: Tenant.AlternatePhone,
+              AlternateAddressLine1: Tenant.AlternateAddressLine1,
+              AlternateAddressLine2: Tenant.AlternateAddressLine2,
+              AlternateCity: Tenant.AlternateCity,
+              AlternateState: Tenant.AlternateState,
+              AlternateZIP: Tenant.AlternateZIP,
             }),
           });
 
@@ -426,6 +467,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
         }
       }
       , (err: any) => {
+        this.gettingTenantData = false;
         if (err.status === 401) {
           localStorage.removeItem('strTenantToken');
         }
@@ -448,35 +490,35 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
       .subscribe(unitTypesResponse => {
       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
       this.getFilterLstUnitTypes(unitTypesResponse);
-      const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
-      this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
+      const defaultMonthlyValue = this.filterLstUnitTypes[0].MonthlyRate;
+      this.description = this.filterLstUnitTypes[0].Description;
+      this.reservationFeeTax = this.filterLstUnitTypes[0].ReservationFeeTax;
+      this.reservationFee = this.filterLstUnitTypes[0].ReservationFee;
+      this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
       const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
-      this.Description = unitTypesResponse.lstUnitTypes[0].Description;
       const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
-      this.ReservationFee = unitTypesResponse.lstUnitTypes[0].ReservationFee;
-      this.ReservationFeeTax = unitTypesResponse.lstUnitTypes[0].ReservationFeeTax;
-      this.MoveIn.intUnitTypeID = this.UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
+      this.MoveIn.intUnitTypeID = this.unitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
       this.unitTypeId =
       this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
-      this.UnitTypeID = unitTypesResponse.lstUnitTypes[0].UnitTypeID;
+      this.unitTypeID = this.filterLstUnitTypes[0].UnitTypeID;
       if (this.navigateToMoveIn) {
         // tslint:disable-next-line:max-line-length
         this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
       }
 
 
-        this.dataSharingService.LstUnitTypes.ReservationFee = this.ReservationFee;
-        this.dataSharingService.LstUnitTypes.ReservationFeeTax = this.ReservationFeeTax;
+        this.dataSharingService.LstUnitTypes.ReservationFee = this.reservationFee;
+        this.dataSharingService.LstUnitTypes.ReservationFeeTax = this.reservationFeeTax;
 
       if (!serviceDescriptionValue && !serviceMonthlyValue) {
         this.reserveUnitForm.patchValue({
           lstUnitTypes: ([{
-            Description: this.Description,
+            Description: this.description,
           }])
         });
 
-        this.dataSharingService.LstUnitTypes.Description = this.Description;
-        this.dataSharingService.LstUnitTypes.UnitTypeID = this.UnitTypeID;
+        this.dataSharingService.LstUnitTypes.Description = this.description;
+        this.dataSharingService.LstUnitTypes.UnitTypeID = this.unitTypeID;
         this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
         this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
         this.dataSharingService.LstUnitTypes.BiAnnualRate = this.biAnnualRate;

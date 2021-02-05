@@ -7,7 +7,8 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { th } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
-
+import { environment } from '../../../environments/environment';
+import { objSIMSetting } from '../../data/configuration';
 
 @Component({
   selector: 'app-view-rates-page',
@@ -22,6 +23,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   descriptionVR: string;
   monthlyRateVR: number;
+  
   unitTypeIdVR: number;
   ProrateAmt: any;
   deposit: any;
@@ -40,7 +42,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
   defaultClimateString = ' ';
-
+  objSIMSetting: any;
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
   objCharges: ObjCharges;
@@ -61,17 +63,21 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.getData();
-    this.fetchThData();
+    this.fetchThData();    
+    this.fetchObjSIMSetting();
   }
 
   public fetchThData() {
-    this.th = th;
+    // this.th = th;
+    this.th = th.filter(x => x.state === true);
   }
 
-
+  public fetchObjSIMSetting(){
+    this.objSIMSetting = objSIMSetting;
+  }
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);
-    this.router.navigate([location]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
     this.dataSharingService.LstUnitTypes = unitData;
   }
 

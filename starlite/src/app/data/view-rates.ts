@@ -19,32 +19,33 @@ export const viewRatesAltText = `row of self storage units with red metal roll u
 export const th = [
   {
     data: `Size`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
+    state: true
   },
   {
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  // {
-  //   data: 'Deposit',
-  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  // },
   {
-    data: `Reservation Fee(Non-Refundable)`,
-    state: objSIMSetting.objActionSetting.blnAllowReservation
+    data: 'deposit',
+    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   },
   {
+    data: 'Reservation Fee(Non-Refundable)',
+    state: objSIMSetting.objUnitSizesSetting.blnReservationFee
+  },
+  {
+    
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
-  // {
-  //   data: `Move In`,
-  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
-  // },
-  // {
-  //   data: `Climate Control`,
-  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  // },
+  {
+    data: `Move In`,
+    state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  },
+  {
+    data: `Climate Control`,
+    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  },
 ];
 
 

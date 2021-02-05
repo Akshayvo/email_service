@@ -25,6 +25,9 @@ export const unitSizerPageTitle = `Unit Sizer | Starlite Storage`;
 export const unitSizerPageContent = `If you're having trouble visualizing what will fit in any given unit, check
 out our unit sizer page for help!`;
 
+export const thankYouPageTitle = `Thank You For Reserving Your Unit at Sample Self Storage!`;
+export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
+
 
 export const contactPageTitle = `Contact Us  | Starlite Storage`;
 export const contactPageContent = `Do you have a question about our services, or would you like help with your

@@ -5,25 +5,21 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  alternateTenant: `navigateToMoveIn`, // {0, 1, navigateToReserve, navigateToMoveIn},
-  paymentPageType: 1, // { withoutTab: 0, withTab: 1}
-  reservetionFormType: 1, // { withoutAlternateDetail:0, withAlternateDetial: 1}
+  locationName: 'or/lebanon',  // state/city
+  facilityName: 'Starlite Storage',
+  alternateType: { moveIn: false, reserve: true }, // { moveIn: true, reserve: true },
+  signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: [ 'website.dev@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Starlite Storage - Testing',
+  appId: 'Starlite Storage - Production',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: '',
-  // baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  // AnotherLocationAPIKey: `MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
-  // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
-  // APIKey: `dzJ0OVczSjMqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29338 Starlite Storage
-  // APIKey: `dzJ0OFc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464 (For 0 reservetion charges)
-  // baseUrl: `http://localhost:60444/api/`,
+  websiteUrl: 'https://starlitestorage.com/',
+  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
+  APIKey: `dzJ0OVczSjMqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29338 Starlite Storage
 };
 
 /*

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ConfirmationPageComponent } from './confirmation-page.component';
+import { MicrodataComponent } from './microdata.component';
 
-describe('ConfirmationPageComponent', () => {
-  let component: ConfirmationPageComponent;
-  let fixture: ComponentFixture<ConfirmationPageComponent>;
+describe('MicrodataComponent', () => {
+  let component: MicrodataComponent;
+  let fixture: ComponentFixture<MicrodataComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ConfirmationPageComponent ]
+      declarations: [ MicrodataComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ConfirmationPageComponent);
+    fixture = TestBed.createComponent(MicrodataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -50,14 +50,13 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 import { PhotosComponent } from './photos/photos.component';
-import { ConfirmationPageComponent } from './api-bundle/confirmation-page/confirmation-page.component';
 import { ScriptHackComponent } from './script-hack/script-hack.component';
 import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
 import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
 import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
 import { TabsComponent } from './tabs/tabs.component';
-import { AlternateDetailsReservationFormComponent } from './api-bundle/alternate-details-reservation-form/alternate-details-reservation-form.component';
+import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +73,7 @@ import { AlternateDetailsReservationFormComponent } from './api-bundle/alternate
     AccordionComponent,
     ReserveComponent,
     ViewRatesComponent,
+    ThankYouComponent ,
     ViewRatesIframePageComponent,
     ViewRatesPageComponent,
     ReserveUnitFormComponent,
@@ -91,15 +91,12 @@ import { AlternateDetailsReservationFormComponent } from './api-bundle/alternate
     UnitSizerComponent,
     UnitSizesComponent,
     PhotosComponent,
-    ConfirmationPageComponent,
-    ConfirmationPageComponent,
     ScriptHackComponent,
     AutoPayComponent,
     RentSubComponent,
     PayRentComponent,
     SignUpComponent,
     TabsComponent,
-    AlternateDetailsReservationFormComponent
   ],
   imports: [
     CommonModule,

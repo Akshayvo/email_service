@@ -23,7 +23,11 @@ export class DataSharingService {
   paymentNavigation: string;
   isDataUpdated: boolean;
   isDataSaved: boolean;
+  PaymentAmount: number;
+  CCApprovalCode: string;
+  eventName: string;
   signUpForAutoPay: boolean;
+  showAltDetails: boolean;
 
   cardDetailsObject = {
     CCNumber: '',
@@ -81,13 +85,12 @@ export class DataSharingService {
     State: '',
     ZIP: '',
     AlternateName: '',
-    // AlternateLastName: '',
     AlternatePhone: '',
     AlternateAddressLine1: '',
     AlternateAddressLine2: '',
     AlternateCity: '',
     AlternateState: '',
-    AlternateZIP: '',
+    AlternateZIP: ''
   };
 
 
