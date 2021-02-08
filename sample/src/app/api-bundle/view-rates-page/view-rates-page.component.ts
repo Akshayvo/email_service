@@ -8,7 +8,7 @@ import { th } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
-
+import { objSIMSetting } from '../../data/configuration';
 
 @Component({
   selector: 'app-view-rates-page',
@@ -48,6 +48,12 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   th: any;
   tenant: any;
   text = false;
+  objSIMSetting: any;
+  showRate: boolean;
+  showDeposit: boolean;
+  showReserve: boolean;
+  showMovein: boolean;
+  showClimateControl: boolean; 
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -66,7 +72,12 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   }
 
   public fetchThData() {
-    this.th = th;
+    this.th = th.filter(x => x.state === true);
+    this.showRate = objSIMSetting.objUnitSizesSetting.blnShowRate;
+    this.showDeposit = objSIMSetting.objUnitSizesSetting.blnShowDeposit;
+    this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;
+    this.showMovein = objSIMSetting.objActionSetting.blnAllowMoveIn;
+    this.showClimateControl = objSIMSetting.objUnitSizesSetting.blnClimateControl;
   }
 
 

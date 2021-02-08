@@ -29,17 +29,17 @@ export const viewRatesAltText = `two rows of roll-up metal self storage unit doo
 export const th = [
   {
     data: `Size`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
+    state: true,
   },
   {
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
   {
-    data: 'Deposit',
+    data: 'deposit',
     state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   },
-  {
+  {  
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
@@ -53,6 +53,14 @@ export const th = [
   },
 ];
 
+export const state = {
+  size: true,
+  rate: objSIMSetting.objUnitSizesSetting.blnShowRate,
+  deposit: objSIMSetting.objUnitSizesSetting.blnShowDeposit,
+  reserve: objSIMSetting.objActionSetting.blnAllowReservation,
+  moveIn: objSIMSetting.objActionSetting.blnAllowMoveIn,
+  climateControl: objSIMSetting.objUnitSizesSetting.blnClimateControl,
+};
 
 export const option =  [
     {

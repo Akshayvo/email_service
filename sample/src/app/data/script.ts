@@ -4,6 +4,9 @@ import { homePageContent, homePageTitle, payRentPageContent,
   payRentPageTitle, storageTipsContent, storageTipsTitle,
 contactPageContent, contactPageTitle } from '../data/title';
 import { HomeComponent } from '../home/home.component';
+import { featuresList } from '../data/home';
+
+
 
 export const script = {
     // Put your script here
@@ -52,7 +55,8 @@ export const homePageScript = [ {
    },
    
 "hasMap":"https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
-"amenityFeature":[{"@type":"LocationFeatureSpecification",
+"amenityFeature":[
+  {"@type":"LocationFeatureSpecification",
   "name":"Convenient Kimberly, WI Location"},
   {"@type":"LocationFeatureSpecification",
   "name":"Easy Online Payments"},
