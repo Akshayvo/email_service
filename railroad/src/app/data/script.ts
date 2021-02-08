@@ -13,9 +13,9 @@ export const homePageScript = [ {
     "@context": "https://schema.org",
     "@type": "SelfStorage",
     "image": [
-      "https://example.com/photos/1x1/photo.jpg",
-      "https://example.com/photos/4x3/photo.jpg",
-      "https://example.com/photos/16x9/photo.jpg"
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Railroad_Storage/jpg/Self_Storage_Rail_Road_1.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Railroad_Storage/jpg/Self_Storage_Rail_Road_2.JPG",
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Railroad_Storage/jpg/Self_Storage_Rail_Road_3.JPG"
      ],
     "@id": "http://davessteakhouse.example.com",
     "name": "railroad site ",
@@ -30,28 +30,28 @@ export const homePageScript = [ {
     },
    "aggregateRating": {
   "@type": "AggregateRating",
-  "ratingValue": "4",
+  "ratingValue": "4.8",
   "bestRating": "5",
-  "reviewCount": "250"
+  "reviewCount": "4"
 },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 40.761293,
-      "longitude": -73.982294
+      "latitude": 43.1793090611163,
+      "longitude": -89.21367618200023
     },
-    "url": "http://www.example.com/",
+    "url": "https://railroad-storage.com",
     "telephone": "+(608) 228-0686",
     
-    "priceRange": "$$$",
-   "openingHours":["Mo-Fr 10:00-19:00", "Sa 10:00-22:00", "Su 10:00-21:00"],
-    "currenciesAccepted": "EUR",
+    "priceRange": "$140.00",
+   "openingHours":["7 Days a Week 9:00AM to 5:00PM"],
+    "currenciesAccepted": "USD",
   "paymentAccepted":"Cash, Credit Card",
      "areaServed": {
   "@type": "State",
   "name": "Wisconsin"
    },
    
-"hasMap":"https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
+"hasMap":"https://goo.gl/maps/DF9jRXfuNANZZ9m89",
 "amenityFeature":[{"@type":"LocationFeatureSpecification",
   "name":"Convenient Kimberly, WI Location"},
   {"@type":"LocationFeatureSpecification",
@@ -64,8 +64,7 @@ export const homePageScript = [ {
   "name":"Great Customer Service"},
   {"@type":"LocationFeatureSpecification",
   "name":"Manage Account Online"},
-  {"@type":"LocationFeatureSpecification",
-  "name":"Climate Controlled Storage"}],
+],
 
 
     "acceptsReservations": "True"
@@ -76,20 +75,20 @@ export const homePageScript = [ {
     {
         "@context": "http://schema.org",
         "@type": "Selfstorage",
-        "name": "Marca",
+        "name": "railroad site",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Bangalore, Karnataka",
-          "postalCode": "560094",
-          "streetAddress": "1st floor, SLN Emeralds Building, Dr Rajgopal Rd, Krishnappa Layout, AECS Layout, R.M.V. 2nd Stage,"
+          "addressLocality": "Sun Prairie",
+          "postalCode": "53590",
+          "streetAddress": "113 Railroad St"
         },
-         "url": "dfd.com/ff",
+         "url": "https://railroad-storage.com",
          "image": [
-              "https://example.com/photos/1x1/photo.jpg"
+              "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Railroad_Storage/jpg/Self_Storage_Rail_Road_1.jpg"
              ],
         "contactPoint": [{
           "@type": "ContactPoint",
-          "telephone": "",
+          "telephone": "+(608) 228-0686",
           "contactType": "reservations"
         },{
           "@type": "ContactPoint",
@@ -98,7 +97,7 @@ export const homePageScript = [ {
         }],
         "email": "fiftyoneselfstorage@gmail.com",
         "sameAs": [
-          "facebook.com/xxx",
+          "https://www.facebook.com/Railroad-St-Self-Storage",
           "",
           ""
         ]
