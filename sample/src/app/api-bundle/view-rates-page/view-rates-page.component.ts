@@ -127,7 +127,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   }
 
   getData() {
-  this.getDataSubscribe$ = this.fetchDataService.getData( )
+  this.getDataSubscribe$ = this.fetchDataService.getData()
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;

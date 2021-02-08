@@ -43,6 +43,7 @@ export class HomeComponent implements OnInit {
   twitterHomePage: any;
   script: any;
 
+
   constructor(
     private router: Router,
     private titleService: Title,
@@ -144,6 +145,8 @@ export class HomeComponent implements OnInit {
 
   public fetchHours() {
     this.hours = hours;
+
+    
   }
 
   public fetchFeatures() {
@@ -164,8 +167,6 @@ export class HomeComponent implements OnInit {
   public fetchJumbotron() {
     this.jumbotron = jumbotron;
   }
-
-
 
   public getImageUrl(imageName: string) {
     return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
