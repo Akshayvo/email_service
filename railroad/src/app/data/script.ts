@@ -17,7 +17,7 @@ export const homePageScript = [ {
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Railroad_Storage/jpg/Self_Storage_Rail_Road_2.JPG",
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Railroad_Storage/jpg/Self_Storage_Rail_Road_3.JPG"
      ],
-    "@id": "http://davessteakhouse.example.com",
+    "@id": "https://railroad-staging.netlify.app",
     "name": "railroad site ",
      "description": "Railroad Street Self Storage.",
     "address": {
@@ -45,7 +45,7 @@ export const homePageScript = [ {
     "priceRange": "$140.00",
    "openingHours":["7 Days a Week 9:00AM to 5:00PM"],
     "currenciesAccepted": "USD",
-  "paymentAccepted":"Cash, Credit Card",
+  "paymentAccepted":"Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
      "areaServed": {
   "@type": "State",
   "name": "Wisconsin"
@@ -92,7 +92,7 @@ export const homePageScript = [ {
           "contactType": "reservations"
         },{
           "@type": "ContactPoint",
-          "telephone": "4",
+          "telephone": "+(608) 228-0686",
           "contactType": "customer service"
         }],
         "email": "fiftyoneselfstorage@gmail.com",

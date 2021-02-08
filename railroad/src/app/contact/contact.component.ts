@@ -70,6 +70,7 @@ export class ContactComponent implements OnInit {
     });
     this.titleService.setTitle(`${this.contactPageTitle}`);
     this.canonical.create();
+
     }
 
   ngOnInit() {

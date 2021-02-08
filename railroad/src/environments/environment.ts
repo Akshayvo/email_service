@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
+  production: true,
   type: 0,  // { API: 0, iframe: 1 }
   locationName: 'wi/sun-prairie', // state/city
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
