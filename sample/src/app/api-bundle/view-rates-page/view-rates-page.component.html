@@ -1,8 +1,8 @@
 <div  itemscope itemtype="https://schema.org/SelfStorage" itemtype="https://schema.org/LocalBusiness">
   <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
-  <span hidden itemprop="name">Sample Self Storage - North</span>
+  <span hidden itemprop="name">{{facilityName}}</span>
   <span hidden itemprop="areaServed" itemscope itemtype="https://schema.org/State">
-    <span itemprop="name">New York</span>
+    <span itemprop="name">{{state}}</span>
   </span>
   <!-- <app-microdata></app-microdata> -->
   <div [class.loader]="!showTable">
@@ -17,9 +17,9 @@
             </th>
           </tr>
       </tHead>
-      <span hidden itemprop="name">Sample Self Storage- North</span>
+      <span hidden itemprop="name">{{facilityName}}</span>
 
-      <meta itemprop="name" content="Sample Self Storage - North" />
+      <meta itemprop="name" content="{{facilityName}}" />
 
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
         <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of LstUnitTypes" >

@@ -54,6 +54,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showReserve: boolean;
   showMovein: boolean;
   showClimateControl: boolean; 
+  facilityName: string;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -63,6 +64,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     private dataSharingService: DataSharingService,
     private eRef: ElementRef
   ) {
+    this.facilityName = environment.facilityName;
    }
 
 

@@ -11,7 +11,7 @@ import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
 import { Router } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
-
+import { script } from '../../data/script';
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -34,6 +34,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   viewRatesPageContent: string;
   viewRatesPageTitle: string;
   viewRatesAltText: string;
+  state:string;
  private isUnsubscribe$: Subscription;
 
   constructor(
@@ -44,6 +45,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private uaParserService: UaParserService,
     private canonical: CanonicalService
   ) {
+    this.state = script.state;
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
