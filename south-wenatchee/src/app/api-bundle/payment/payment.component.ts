@@ -52,9 +52,9 @@ export class PaymentComponent implements OnInit {
     });
     this.meta.addTag({
       name: 'description',
-      content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+      content: `Pay your rent at either of our locations by clicking on this link and following our basic instructions!`
     });
-    this.titleService.setTitle('Pay Rent | Affordable Secure Storage');
+    this.titleService.setTitle('Pay Rent | South Wenatchee Self Storage');
   }
 
   ngOnInit() {

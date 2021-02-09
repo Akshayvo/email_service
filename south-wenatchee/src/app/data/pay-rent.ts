@@ -31,14 +31,14 @@ export const tableData = [
 
 export const tableDataContactPage = [
   {
+    facility: 'South Wenatchee Self Storage',
+    address: '1536 S Wenatchee Ave, Wenatchee, WA 98801',
+    url: 'south-wenatchee'
+  },
+  {
     facility: 'Chester - Brookside Ave',
     address: '53 Brookside Ave, Chester, NY 10918',
     url: 'chester-brookside-ave'
-  },
-  {
-    facility: 'Chester - Andrews Lane',
-    address: '1 Andrews Lane, Chester, NY 10918',
-    url: 'chester-andrews-lane'
   },
   {
     facility: 'Montgomery / Walden',

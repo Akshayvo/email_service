@@ -70,10 +70,10 @@ export class ContactComponent implements OnInit {
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Want to reserve a unit or find information about your account? Use our contact
-      form or the contact information for your StorageTown location on this page!`
+      content: `Use the contact information or the contact form on this page
+      to speak to one of our friendly self storage managers!`
     });
-    this.titleService.setTitle('Contact Us | StorageTown Rental Spaces');
+    this.titleService.setTitle('Contact Us | South Wenatchee Self Storage');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],

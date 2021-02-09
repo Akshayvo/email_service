@@ -122,7 +122,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/chester-andrews-lane',
+    { path: 'location/south-wenatchee',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -228,7 +228,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/chester-andrews-lane', component: HomeComponent,
+    { path: 'review/south-wenatchee', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -267,7 +267,7 @@ export const apiRoutes = [
     children: childroute
   },
   {
-    path: 'pay-rent/chester-andrews-lane', component: PayRentComponent,
+    path: 'pay-rent/south-wenatchee', component: PayRentComponent,
     children: childroute
   },
   {
@@ -292,7 +292,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: 'location/chester-andrews-lane',
+  { path: 'location/south-wenatchee',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -336,7 +336,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/chester-andrews-lane', component: HomeComponent,
+  { path: 'review/south-wenatchee', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },

@@ -1,42 +1,60 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: '4 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/location.svg',
+        label: '2 Convenient Locations',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: 'Well-Lit Facility',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/light-bulb.svg',
-        alt: 'Icon of an illuminated light'
+        label: 'Affordable Self Storage Rates',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        alt: 'Icon of a hand holding money'
     },
     {
-        label: 'Fully-Fenced Facility',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/fence.svg',
-        alt: 'Icon of a section of fencing'
+        label: 'Locally Owned and Operated',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+        alt: 'Icon of people standing together'
     },
     {
         label: 'Security Cameras on Premises',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/cctv.svg',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
         alt: 'Icon of a security camera'
     },
 ];
 
 export const serviceOffered = [
     {
-        p: `StorageTown Rental Spaces offers self storage units and parking spaces for recreational vehicles, and boats(requiring title, insurance, 
-            and current registration). We are proud to serve the Orange County communities with facilities conveniently located in Chester, Montgomery, 
-            and Middletown.`,
+        p: `South Wenatchee Self Storage serves the Wenatchee community with clean,
+        well-maintained self storage units at our 2 convenient locations. All of our
+        units are  secured behind a pin-code activated electronic gate, and we have
+        security cameras placed around the facility.`,
     },
     {
-        p: `Each facility offers packing boxes, tape, locks, dust-covers, furniture, and mattress covers! We offer easy online reservations and bill-pay 
-            to make your stay with us a convenient one!`,
+        p: `As locally owned and operated businesses, we understand the importance
+        of offering high quality services at fair prices. We live and work in the
+        same community as our customers, and it's our mission to provide the best
+        self storage experience and customer service to our friends, family, and
+        neighbors.`,
     },
     {
-        p: `All StorageTown Rental Spaces facilities are fully fenced, well-lit, and covered by security cameras! Each facility is secured behind a 
-            pin-code activated gate for added security. All units have high, 9' ceilings and are ground-level for easy accessibility. We have both short 
-            and long term rental agreements so whether you're in need of residential storage for a brief move or long term inventory and supplies storage, we've got you covered!`,
+        p: `We understand that if you're searching for a self storage unit, odds
+        are pretty good that you're dealing with enough stress as it is. Be it
+        a move, a home renovation, or other life changing event; we're here to
+        make your self storage experience easier! Take a moment to check our
+        rates and availability on our View Rates page, then you can either
+        reserve your unit online for a later date, or perform an immediate
+        and contactless rental through our website!`,
     },
+];
+
+export const jumbotron = [
+    {
+        h1: `Self Storage Units in Wenatchee`,
+        blurb: `We are a locally owned & operated self storage facility serving the Wenatchee,
+        community! We offer affordable self storage units in a variety of sizes, and our
+        service always comes with a smile. Take a moment to review our pricing and availability,
+        then call, or reserve online to start de-cluttering today!`,
+    }
 ];
 
 export const featuresList = [

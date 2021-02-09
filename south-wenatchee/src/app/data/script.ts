@@ -589,7 +589,7 @@ export const ogLocation2 = [
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/location/chester-andrews-lane/storage-units`
+    content: `https://storage-town.com/location/south-wenatchee/storage-units`
   },
   {
     property: `og:image`,
@@ -741,7 +741,7 @@ export const twitterLocation4 = [
 export const ogPayRentPage = [
   {
     property: `og:title`,
-    content: `Pay Rent | Affordable Secure Storage`
+    content: `Pay Rent | South Wenatchee Self Storage`
   },
   {
     property: `og:description`,
@@ -768,7 +768,7 @@ export const ogPayRentPage = [
 export const twitterPayRentPage = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | Affordable Secure Storage`
+    content: `@Pay Rent | South Wenatchee Self Storage`
   },
   {
     name: `twitter:description`,
@@ -795,7 +795,7 @@ export const twitterPayRentPage = [
 export const ogPayRentPageLocation1 = [
   {
     property: `og:title`,
-    content: `Pay Rent | Affordable Secure Storage`
+    content: `Pay Rent | South Wenatchee Self Storage`
   },
   {
     property: `og:description`,
@@ -822,7 +822,7 @@ export const ogPayRentPageLocation1 = [
 export const twitterPayRentPageLocation1 = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | Affordable Secure Storage`
+    content: `@Pay Rent | South Wenatchee Self Storage`
   },
   {
     name: `twitter:description`,
@@ -849,7 +849,7 @@ export const twitterPayRentPageLocation1 = [
 export const ogPayRentPageLocation2 = [
   {
     property: `og:title`,
-    content: `Pay Rent | Affordable Secure Storage`
+    content: `Pay Rent | South Wenatchee Self Storage`
   },
   {
     property: `og:description`,
@@ -876,7 +876,7 @@ export const ogPayRentPageLocation2 = [
 export const twitterPayRentPageLocation2 = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | Affordable Secure Storage`
+    content: `@Pay Rent | South Wenatchee Self Storage`
   },
   {
     name: `twitter:description`,
@@ -903,7 +903,7 @@ export const twitterPayRentPageLocation2 = [
 export const ogPayRentPageLocation3 = [
   {
     property: `og:title`,
-    content: `Pay Rent | Affordable Secure Storage`
+    content: `Pay Rent | South Wenatchee Self Storage`
   },
   {
     property: `og:description`,
@@ -930,7 +930,7 @@ export const ogPayRentPageLocation3 = [
 export const twitterPayRentPageLocation3 = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | Affordable Secure Storage`
+    content: `@Pay Rent | South Wenatchee Self Storage`
   },
   {
     name: `twitter:description`,
@@ -957,7 +957,7 @@ export const twitterPayRentPageLocation3 = [
 export const ogPayRentPageLocation4 = [
   {
     property: `og:title`,
-    content: `Pay Rent | Affordable Secure Storage`
+    content: `Pay Rent | South Wenatchee Self Storage`
   },
   {
     property: `og:description`,
@@ -984,7 +984,7 @@ export const ogPayRentPageLocation4 = [
 export const twitterPayRentPageLocation4 = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | Affordable Secure Storage`
+    content: `@Pay Rent | South Wenatchee Self Storage`
   },
   {
     name: `twitter:description`,
@@ -1067,7 +1067,7 @@ export const twitterStorageTipsPage = [
 export const ogContactPage = [
   {
     property: `og:title`,
-    content: `Contact Us | StorageTown Rental Spaces`
+    content: `Contact Us | South Wenatchee Self Storage`
   },
   {
     property: `og:description`,
@@ -1095,7 +1095,7 @@ export const ogContactPage = [
 export const twitterContactPage = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | StorageTown Rental Spaces`
+    content: `@Contact Us | South Wenatchee Self Storage`
   },
   {
     name: `twitter:description`,
@@ -1123,7 +1123,7 @@ export const twitterContactPage = [
 export const ogContactPageLocation1 = [
   {
     property: `og:title`,
-    content: `Contact Us | StorageTown Rental Spaces`
+    content: `Contact Us | South Wenatchee Self Storage`
   },
   {
     property: `og:description`,
@@ -1151,7 +1151,7 @@ export const ogContactPageLocation1 = [
 export const twitterContactPageLocation1 = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | StorageTown Rental Spaces`
+    content: `@Contact Us | South Wenatchee Self Storage`
   },
   {
     name: `twitter:description`,
@@ -1178,7 +1178,7 @@ export const twitterContactPageLocation1 = [
 export const ogContactPageLocation2 = [
   {
     property: `og:title`,
-    content: `Contact Us | StorageTown Rental Spaces`
+    content: `Contact Us | South Wenatchee Self Storage`
   },
   {
     property: `og:description`,
@@ -1195,7 +1195,7 @@ export const ogContactPageLocation2 = [
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-chester-andrews-lane`
+    content: `https://storage-town.com/contact-south-wenatchee`
   },
   {
     property: `og:image`,
@@ -1206,7 +1206,7 @@ export const ogContactPageLocation2 = [
 export const twitterContactPageLocation2 = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | StorageTown Rental Spaces`
+    content: `@Contact Us | South Wenatchee Self Storage`
   },
   {
     name: `twitter:description`,
@@ -1233,7 +1233,7 @@ export const twitterContactPageLocation2 = [
 export const ogContactPageLocation3 = [
   {
     property: `og:title`,
-    content: `Contact Us | StorageTown Rental Spaces`
+    content: `Contact Us | South Wenatchee Self Storage`
   },
   {
     property: `og:description`,
@@ -1261,7 +1261,7 @@ export const ogContactPageLocation3 = [
 export const twitterContactPageLocation3 = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | StorageTown Rental Spaces`
+    content: `@Contact Us | South Wenatchee Self Storage`
   },
   {
     name: `twitter:description`,
@@ -1288,7 +1288,7 @@ export const twitterContactPageLocation3 = [
 export const ogContactPageLocation4 = [
   {
     property: `og:title`,
-    content: `Contact Us | StorageTown Rental Spaces`
+    content: `Contact Us | South Wenatchee Self Storage`
   },
   {
     property: `og:description`,
@@ -1316,7 +1316,7 @@ export const ogContactPageLocation4 = [
 export const twitterContactPageLocation4 = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | StorageTown Rental Spaces`
+    content: `@Contact Us | South Wenatchee Self Storage`
   },
   {
     name: `twitter:description`,

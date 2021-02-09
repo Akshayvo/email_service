@@ -10,25 +10,25 @@ export const navLinks = [
         path: '/location',
         sublinks: [
             {
-                id: '2',
-                label: 'Chester - Brookside Ave',
-                path: '/location/chester-brookside-ave',
+                id: '1',
+                label: 'South Wenatchee Self Storage',
+                path: '/location/south-wenatchee',
             },
             {
-                id: '1',
-                label: 'Chester - Andrews Lane',
+                id: '2',
+                label: `Leo's Self Storage`,
                 path: '/location/chester-andrews-lane',
               },
-              {
-                id: '3',
-                label: 'Montgomery/Walden',
-                path: '/location/montgomery-walden',
-            },
-            {
-                id: '4',
-                label: 'Middletown/WallKill',
-                path: '/location/middletown-wallKill',
-            },
+            //   {
+            //     id: '3',
+            //     label: 'Montgomery/Walden',
+            //     path: '/location/montgomery-walden',
+            // },
+            // {
+            //     id: '4',
+            //     label: 'Middletown/WallKill',
+            //     path: '/location/middletown-wallKill',
+            // },
         ]
     },
     {

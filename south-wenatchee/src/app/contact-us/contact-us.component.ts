@@ -66,10 +66,10 @@ export class ContactUsComponent implements OnInit {
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Want to reserve a unit or find information about your account? Use our contact
-      form or the contact information for your StorageTown location on this page!`
+      content: `Use the contact information or the contact form on this page to
+      speak to one of our friendly self storage managers!`
     });
-    this.titleService.setTitle('Contact Us | StorageTown Rental Spaces');
+    this.titleService.setTitle('Contact Us | South Wenatchee Self Storage');
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -96,10 +96,10 @@ export class ContactUsComponent implements OnInit {
 
   public fetchOg() {
     if (this.router.url.includes('chester-brookside-ave')) {
-      this.og = ogContactPageLocation1;
+      this.og = ogContactPageLocation2;
     } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
-        this.og = ogContactPageLocation2;
+      if (this.router.url.includes('south-wenatchee')) {
+        this.og = ogContactPageLocation1;
       } else {
         if (this.router.url.includes('montgomery-walden')) {
           this.og = ogContactPageLocation3;
@@ -113,10 +113,10 @@ export class ContactUsComponent implements OnInit {
 
 public fetchTwitter() {
     if (this.router.url.includes('chester-brookside-ave')) {
-      this.twitter = twitterContactPageLocation1;
+      this.twitter = twitterContactPageLocation2;
     } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
-        this.twitter = twitterContactPageLocation2;
+      if (this.router.url.includes('south-wenatchee')) {
+        this.twitter = twitterContactPageLocation1;
       } else {
         if (this.router.url.includes('montgomery-walden')) {
           this.twitter = twitterContactPageLocation3;
@@ -160,10 +160,10 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('chester-andrews-lane')) {
-      this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.fetchContactDetailsLocation1();
+    } else if (this.router.url.includes('chester-brookside-ave')) {
+      this.fetchContactDetailsLocation2();
     } else if (this.router.url.includes('montgomery-walden')) {
       this.fetchContactDetailsLocation3();
     } else if (this.router.url.includes('middletown-wallKill')) {

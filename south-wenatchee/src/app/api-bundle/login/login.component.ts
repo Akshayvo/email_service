@@ -126,7 +126,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchContactDetail() {
-    if (this.router.url.includes('chester-andrews-lane')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';
       this.contact = contactsLocation1;
@@ -165,7 +165,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (this.router.url.includes('chester-brookside-ave')) {
       this.og = ogPayRentPageLocation1;
     } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
+      if (this.router.url.includes('south-wenatchee')) {
         this.og = ogPayRentPageLocation2;
       } else {
         if (this.router.url.includes('montgomery-walden')) {
@@ -181,7 +181,7 @@ public fetchTwitter() {
   if (this.router.url.includes('chester-brookside-ave')) {
     this.twitter = twitterPayRentPageLocation1;
   } else {
-    if (this.router.url.includes('chester-andrews-lane')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.twitter = twitterPayRentPageLocation2;
     } else {
       if (this.router.url.includes('montgomery-walden')) {

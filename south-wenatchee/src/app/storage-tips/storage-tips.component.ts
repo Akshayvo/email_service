@@ -44,10 +44,9 @@ export class StorageTipsComponent implements OnInit {
       });
     this.meta.addTag({
       name: 'description',
-      content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
-      make your stay with us a breeze!`
+      content: `Take a moment to review our storage tips page and make your self storage experience a breeze!`
     });
-    this.titleService.setTitle('Storage Tips | StorageTown Rental Spaces');
+    this.titleService.setTitle('Storage Tips  | South Wenatchee Self Stoage');
   }
 
   ngOnInit() {

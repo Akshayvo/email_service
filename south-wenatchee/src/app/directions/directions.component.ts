@@ -25,7 +25,7 @@ export class DirectionsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/chester-andrews-lane')) {
+    if (this.router.url.includes('/location/south-wenatchee')) {
        this.fetchDetailsLocation1();
      } else if (this.router.url.includes('/location/chester-brookside-ave')) {
        this.fetchDetailsLocation2();

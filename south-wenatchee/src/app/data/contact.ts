@@ -2,37 +2,40 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '1 Andrews Lane, Chester, NY 10918',
+        data: '1536 S Wenatchee Ave, Wenatchee, WA 98801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
+        redirect: ''
     },
     {
         id: 2,
         label: 'Email: ',
-        email: 'storagetownchester@gmail.com, syrasoftsoftware@gmail.com',
-        data: `storagetownchester@gmail.com`,
+        email: 'selfstorageinc@hotmail.com, syrasoftsoftware@gmail.com',
+        data: `selfstorageinc@hotmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`storagetownchester@gmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`selfstorageinc@hotmail.com, syrasoftsoftware@gmail.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(845) 469-4888',
+        data: '(509) 662-2600',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:8454694888'
+        redirect: 'tel:5096622600'
     },
 ];
 
 export const hoursLocation1 = [
     {
-        id: 1,
-        label: 'Storage Access Hour: ',
-        // datahours: {
-        //     data1:'7 Days a Week ',
-        //     data2:'6:00AM to 8:00PM'
-        // },
-        data: '7 Days a Week 6:00AM to 8:00PM'
-    }
+        label: 'Monday - Friday: ',
+        data: '12:00PM to 5:00PM'
+    },
+    {
+        label: 'Saturday - Sunday: ',
+        data: 'CLOSED'
+    },
+    {
+        label: 'Access Hours: ',
+        data: '7 Days a Week 6:30AM to 9:00PM'
+    },
 ];
 
 export const contactsLocation2 = [
@@ -74,6 +77,48 @@ export const hoursLocation2 = [
         data: '7 Days a Week 6:00AM to 8:00PM',
     },
 ];
+
+export const contactMainOffice = [
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '1536 S Wenatchee Ave, Wenatchee, WA 98801',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
+    },
+    {
+        id: 2,
+        label: 'Email: ',
+        email: 'selfstorageinc@hotmail.com, syrasoftsoftware@gmail.com',
+        data: `selfstorageinc@hotmail.com`,
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:`selfstorageinc@hotmail.com, syrasoftsoftware@gmail.com`'
+    },
+    {
+        id: 3,
+        label: 'Phone: ',
+        data: '(509) 662-2600',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:5096622600'
+    },
+];
+
+export const hoursMainOffice = [
+    {
+        label: 'Monday - Friday: ',
+        data: '12:00PM to 5:00PM'
+    },
+    {
+        label: 'Saturday - Sunday: ',
+        data: 'CLOSED'
+    },
+    {
+        label: 'Access Hours: ',
+        data: '7 Days a Week 6:30AM to 9:00PM'
+    },
+];
+
+
 
 export const contactsLocation3 = [
     {

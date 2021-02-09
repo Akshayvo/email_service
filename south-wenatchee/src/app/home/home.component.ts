@@ -3,10 +3,11 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
   contactsLocation3, contactsLocation4, hoursLocation3, hoursLocation4, } from '../data/contact';
-import { featuresHead, serviceOffered, featuresList } from '../data/home';
+import { featuresHead, serviceOffered, featuresList,jumbotron } from '../data/home';
 import { homePageScript, ogHomePage, twitterHomePage } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { LocationService } from '../services/location.service';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,7 @@ export class HomeComponent implements OnInit {
   contactDetails: any;
   hoursDetails: any;
   featuresList: any;
+  jumbotron: any;
   locationId: any;
   heading: string;
   features: any;
@@ -25,13 +27,16 @@ export class HomeComponent implements OnInit {
   script: any;
   ogHomePage: any;
   twitterHomePage: any;
+  imageBaseUrl: any;
+  imagetype: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
     private data: LocationService,
-    private canonical: CanonicalService
+    private canonical: CanonicalService,
+    private uaParserService: UaParserService,
   ) {
     this.fetchScript();
     this.loadScript();
@@ -55,11 +60,13 @@ export class HomeComponent implements OnInit {
 
     this.meta.addTag({
       name: 'description',
-      content: `We offer a wide range of self storage, car, RV and boat storage!
-      Check out our 4 convenient locations in Orange County, NY!`
+      content: `South Wenatchee Self Storage serves Wenatchee and the surrounding communities with a
+      variety of well-maintained and affordable self storage units`
     });
 
-    this.titleService.setTitle('Affordable Self Storage Units | StorageTown Rental Spaces');
+    this.titleService.setTitle('Affordable Self Storage Units in Wenatchee ');
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {
@@ -68,6 +75,7 @@ export class HomeComponent implements OnInit {
     window.scrollTo(0, 0);
     this.receiveMessage();
     this.fetchFeatures();
+    this.fetchJumbotron();
    
 
     // fetch(this.script)
@@ -126,6 +134,10 @@ export class HomeComponent implements OnInit {
 
   public fetchFeatures() {
     this.featuresList = featuresList;
+  }
+
+  public fetchJumbotron() {
+    this.jumbotron = jumbotron;
   }
 
 

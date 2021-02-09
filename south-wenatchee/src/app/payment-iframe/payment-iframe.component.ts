@@ -25,7 +25,7 @@ export class PaymentIframeComponent implements OnInit {
       content: `Pay your rent for any of the 4 StorageTown Rental Spaces locations right here!
       Simply follow the instructions or call your facility to learn how!`
     });
-    this.titleService.setTitle('Pay Rent | StorageTown Rental Spaces');
+    this.titleService.setTitle('Pay Rent | South Wenatchee Self Storage');
   }
 
   ngOnInit() {
