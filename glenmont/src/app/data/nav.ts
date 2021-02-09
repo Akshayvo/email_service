@@ -13,10 +13,10 @@ export const navLinks = [
     //     label: 'RENT NOW',
     //     path: `${environment.locationName}/rent-now`,
     // },
-    {
-        label: 'RESERVE UNIT',
-        path: `${environment.locationName}/reserve-unit`,
-    },
+    // {
+    //     label: 'RESERVE UNIT',
+    //     path: `${environment.locationName}/reserve-unit`,
+    // },
     // {
     //     label: 'PAY RENT',
     //     path: '/pay-rent'
