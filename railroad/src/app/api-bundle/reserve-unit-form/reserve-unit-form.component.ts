@@ -13,6 +13,7 @@ import * as moment from 'moment';
 import { MoveInService } from '../services/moveIn.service';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
+import { CanonicalService } from 'src/app/services/canonical.service';
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -147,8 +148,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     private leadDaysService: LeadDaysService,
     private moveInService: MoveInService,
     public router: Router,
+    private canonical: CanonicalService
     ) {      
-
+      this.canonical.create();
       if (this.router.url.includes('view-rates')) {
         this.showReservationButton = true;
       } else {

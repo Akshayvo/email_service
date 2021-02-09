@@ -1,108 +1,129 @@
-import { env } from 'process';
 import { environment } from '../../environments/environment';
 import { homePageContent, homePageTitle, payRentPageContent,
   payRentPageTitle, storageTipsContent, storageTipsTitle,
 contactPageContent, contactPageTitle } from '../data/title';
-import { HomeComponent } from '../home/home.component';
+import { featuresList } from '../data/home';
+import { contact, hours, socialLinks } from '../data/contact';
 
-export const script = {
-    // Put your script here
-};
+const contactIndex = contact.findIndex(x => x.label === 'Phone:');
+const emailIndex = contact.findIndex(x => x.label === 'Email:');
+const sameAs = [];
+const openingHours = [];
+const amenityFeature = [];
+hours.forEach(hour =>
+  openingHours.push(hour.label + hour.data)
+)
 
-export const homePageScript = [ {
-    "@context": "https://schema.org",
-    "@type": "SelfStorage",
-    "image": [
+featuresList.forEach(
+  feature => 
+  (amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td1}),
+  amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td2}))
+)
+
+socialLinks.forEach(links => 
+  sameAs.push(links.path)
+)
+  
+
+export const script = {               // Please fill this script according to facility's information
+    imagesHomePage: [
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Railroad_Storage/jpg/Self_Storage_Rail_Road_1.jpg",
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Railroad_Storage/jpg/Self_Storage_Rail_Road_2.JPG",
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Railroad_Storage/jpg/Self_Storage_Rail_Road_3.JPG"
      ],
-    "@id": "https://railroad-staging.netlify.app",
-    "name": "railroad site ",
-     "description": "Railroad Street Self Storage.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "113 Railroad St",
-      "addressLocality": "Sun Prairie",
-      "addressRegion": "WI",
-      "postalCode": "53590",
-      "addressCountry": "US"
-    },
-   "aggregateRating": {
-  "@type": "AggregateRating",
-  "ratingValue": "4.8",
-  "bestRating": "5",
-  "reviewCount": "4"
-},
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 43.1793090611163,
-      "longitude": -89.21367618200023
-    },
-    "url": "https://railroad-storage.com",
-    "telephone": "+(608) 228-0686",
-    
-    "priceRange": "$140.00",
-   "openingHours":["7 Days a Week 9:00AM to 5:00PM"],
-    "currenciesAccepted": "USD",
-  "paymentAccepted":"Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
-     "areaServed": {
+     imagesContactPage: [
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Railroad_Storage/jpg/Self_Storage_Rail_Road_1.jpg",
+     ],
+     telephone: contact[contactIndex].data,
+     map: "https://www.facebook.com/Railroad-St-Self-Storage",
+     description: "" || homePageContent,
+     streetAddress: "113 Railroad St",
+     state: "Wisconsin",
+     addressLocality: "Sun Prairie",
+     addressRegion: "WI",
+     postalCode: "53590",
+     addressCountry: "US",
+     id: "" || environment.websiteUrl,
+     paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
+     currenciesAccepted: "USD",
+     ratingValue: "4.8",
+     bestRating: "5",
+     reviewCount: "4",
+     latitude: 43.1793090611163,
+     longitude: -89.21367618200023,
+};
+
+
+export const homePageScript = [ {
+  "@context": "https://schema.org",
+  "@type": ["Organization","SelfStorage","Place","LocalBusiness"],
+  "image": script.imagesHomePage,
+  "@id": script.id,
+  "name": environment.facilityName,
+   "description": script.description,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": script.streetAddress,
+    "addressLocality": script.addressLocality,
+    "addressRegion": script.addressRegion,
+    "postalCode": script.postalCode,
+    "addressCountry": script.addressCountry
+  },
+ "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": script.ratingValue,
+    "bestRating": script.bestRating,
+    "reviewCount": script.reviewCount
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": script.latitude,
+    "longitude": script.longitude
+  },
+  "url": environment.websiteUrl,
+  "telephone": script.telephone,
+  
+  "priceRange": "$140",
+  "openingHours": "Mo-Su 09:00-17:00" || openingHours,
+  "currenciesAccepted": script.currenciesAccepted,
+  "paymentAccepted": script.paymentAccepted,
+   "areaServed": {
   "@type": "State",
-  "name": "Wisconsin"
-   },
-   
-"hasMap":"https://goo.gl/maps/DF9jRXfuNANZZ9m89",
-"amenityFeature":[{"@type":"LocationFeatureSpecification",
-  "name":"Convenient Kimberly, WI Location"},
-  {"@type":"LocationFeatureSpecification",
-  "name":"Easy Online Payments"},
-  {"@type":"LocationFeatureSpecification",
-  "name":"Gate with Pin-code Access"},
-  {"@type":"LocationFeatureSpecification",
-  "name":"Well-lit Storage Units"},
-  {"@type":"LocationFeatureSpecification",
-  "name":"Great Customer Service"},
-  {"@type":"LocationFeatureSpecification",
-  "name":"Manage Account Online"},
-],
+  "name": script.state
+ },
+ 
+"hasMap": script.map,
+"amenityFeature": amenityFeature,
+"acceptsReservations": "True"
+}];
 
 
-    "acceptsReservations": "True"
-  }];
-
-
-  export const contactPageScript = [
-    {
-        "@context": "http://schema.org",
-        "@type": "Selfstorage",
-        "name": "railroad site",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Sun Prairie",
-          "postalCode": "53590",
-          "streetAddress": "113 Railroad St"
-        },
-         "url": "https://railroad-storage.com",
-         "image": [
-              "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Railroad_Storage/jpg/Self_Storage_Rail_Road_1.jpg"
-             ],
-        "contactPoint": [{
-          "@type": "ContactPoint",
-          "telephone": "+(608) 228-0686",
-          "contactType": "reservations"
-        },{
-          "@type": "ContactPoint",
-          "telephone": "+(608) 228-0686",
-          "contactType": "customer service"
-        }],
-        "email": "fiftyoneselfstorage@gmail.com",
-        "sameAs": [
-          "https://www.facebook.com/Railroad-St-Self-Storage",
-          "",
-          ""
-        ]
-      }
-  ];
+export const contactPageScript = [
+  {
+      "@context": "http://schema.org",
+      "@type": "Selfstorage",
+      "name": environment.facilityName,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": script.addressLocality,
+        "postalCode": script.postalCode,
+        "streetAddress": script.streetAddress,
+      },
+       "url": environment.websiteUrl,
+       "image": script.imagesContactPage,
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": script.telephone,
+        "contactType": "reservations"
+      },{
+        "@type": "ContactPoint",
+        "telephone": script.telephone,
+        "contactType": "customer service"
+      }],
+      "email": contact[emailIndex].data,
+      "sameAs": sameAs
+    }
+];
 
 
 export const ogHomePage = [
