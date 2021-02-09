@@ -30,3 +30,36 @@
   from = "/*"
   to = "/index.html"
   status = 200
+[[redirects]]
+  from = "http://www.glenmontselfstorage.com/index.html"
+  to = "http://www.glenmontselfstorage.com/"
+  status = 301
+[[redirects]]
+  from = "http://www.glenmontselfstorage.com/albany_self_storage_glenmont_bethlehem_slingerlands_delmar_ravena_selkirk.html"
+  to = "http://www.glenmontselfstorage.com/"
+  status = 301
+[[redirects]]
+  from = "http://www.glenmontselfstorage.com/moving_supplies_albany_glenmont_bethlehem_slingerlands_delmar_coeymans_selkirk_ravena.html"
+  to = "http://www.glenmontselfstorage.com/"
+  status = 301
+[[redirects]] 
+  from = "http://www.glenmontselfstorage.com/self_storage_tips_albany_glenmont_bethlehem_slingerlands_delmar_selkirk.html"
+  to = "http://www.glenmontselfstorage.com/storage-tips"
+  status = 301
+[[redirects]]  
+  from = "http://www.glenmontselfstorage.com/self_storage_sizes_albany_glenmont_bethlehem_slingerlands_delmar_selkirk.html"
+  to = " http://www.glenmontselfstorage.com/unit-sizer"
+  status = 301
+[[redirects]]
+  from = "http://www.glenmontselfstorage.com/rental_trucks_albany_glenmont_bethlehem_slingerlands_delmar_selkirk_coeymans.html"
+  to = " http://www.glenmontselfstorage.com/"
+  status = 301
+[[redirects]]
+  from = "http://www.glenmontselfstorage.com/glenmont_self_storage_offers_albany_bethlehem_slingerlands_delmar_selkirk.html"
+  to = "http://www.glenmontselfstorage.com/"
+  status = 301
+[[redirects]]
+  from = "http://www.glenmontselfstorage.com/glenmont_self_storage_albany_bethlehem_slingerlands_delmar_selkirk.html"
+  to = "http://www.glenmontselfstorage.com/contact-us"
+  status = 301
+  
