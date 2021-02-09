@@ -4,6 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '113 Railroad St, Sun Prairie, WI 53590',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: 'https://goo.gl/maps/DF9jRXfuNANZZ9m89'
     },
     {
         id: 1,

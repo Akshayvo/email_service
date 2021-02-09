@@ -35,7 +35,7 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Railroad_Storage/jpg/Self_Storage_Rail_Road_1.jpg",
      ],
      telephone: contact[contactIndex].data,
-     map: "https://www.facebook.com/Railroad-St-Self-Storage",
+     map: "https://goo.gl/maps/DF9jRXfuNANZZ9m89",
      description: "" || homePageContent,
      streetAddress: "113 Railroad St",
      state: "Wisconsin",
