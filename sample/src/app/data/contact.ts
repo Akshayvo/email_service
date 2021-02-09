@@ -4,6 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '6 Canton St, Baldwinsville, NY 13027',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: ''
     },
     {
         id: 1,
