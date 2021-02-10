@@ -9,33 +9,36 @@ export const dataViewRates = [
     }
 ];
 
+export const viewRatesAltImage = 'herron-hill-storage-unit-open';
+
 export const viewRatesAltText = `an open self storage unit that shows household belongings such as clothing, luggage, children's toys and shelving neatly packed inside`;
+
 
 export const th = [
   {
     data: `Size`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
+    state: true,
   },
   {
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
   {
-    data: 'Deposit',
+    data: 'deposit',
     state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   },
-  {
+  {  
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
-  // {
-  //   data: `Move In`,
-  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
-  // },
-  // {
-  //   data: `Climate Control`,
-  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  // },
+  {
+    data: `Move In`,
+    state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  },
+  {
+    data: `Climate Control`,
+    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  },
 ];
 
 

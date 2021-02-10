@@ -77,26 +77,29 @@
           </div>
       </form>
       </div>
-      <div class="col-lg-5 col-md-6 col-12 px-4">
+      <div class="col-lg-5 col-md-6 col-12 px-4 contact-details">
         <div class="my-4 contact-map">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.811551324289!2d-76.16098078458467!3d41.05124997929645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c59e6649a8ad8b%3A0x64927dd4ed996ed6!2s621%20Berwick%20Hazleton%20Hwy%2C%20Nescopeck%2C%20PA%2018635!5e0!3m2!1sen!2sus!4v1604960349940!5m2!1sen!2sus" 
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12035.186999741116!2d-76.16128118996582!3d41.05157363344769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9960c45cdde25024!2sHerron%20Hill%20Storage!5e0!3m2!1sen!2sus!4v1611772812535!5m2!1sen!2sus" 
               width="100%" height="250" frameborder="0" allowfullscreen></iframe> 
         </div>
         <p>
-          <span *ngFor="let contact of contactDetails">
-            <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
-                <a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
-            <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
-          </span>
-        </p>
-        <b>Hours:</b>
-        <p>
-          <span *ngFor="let hour of hours">
-            <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
-          </span>
-        </p>
-      </div>
+            <span *ngFor="let contact of contactDetails" class="display-contact">
+                <span><h4><b>{{contact.label}}</b></h4></span>
+                <span class="contact-links" *ngIf="contact?.label === 'Mailing Address: ' || contact?.label === 'Facility Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+                    <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Mailing Address: ' || contact?.label === 'Facility Address: ') ? '_blank' : '_self' }}"
+                        rel="{{(contact?.label === 'Mailing Address: ' || contact?.label === 'Facility Address: ') ? 'noreferrer' : '' }}">&nbsp;{{contact.data}}</a></h4>
+                </span>
+                <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
+            </span>
+            </p>
+            <h4><b>Facility office Hours:</b></h4>
+            <p>
+            <span class="display-contact" *ngFor="let hour of hours">
+                <h4><strong>{{hour.label}}</strong></h4>&nbsp;<h4>{{hour.data}}</h4><br>
+            </span>
+            </p>
+            </div>
+        </div>
     </div>
-  </div>
 
 </div>

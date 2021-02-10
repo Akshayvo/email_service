@@ -3,9 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
+  production: true,
   type: 0,  // { API: 0, iframe: 1 }
+  locationName: 'pa/nescopeck', // state/city
+  signUpForAuotoPay: 0, // { Yes: 1, No: 0 }
+  alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
+  facilityName: 'Herron Hill Storage',
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
@@ -13,14 +17,9 @@ export const environment = {
   appId: 'Herron Hill Storage - Production',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: '',
-  // baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  // AnotherLocationAPIKey: `MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
-  // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
-  // APIKey: `dTJXOUQzUDRIMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Herron hill
-  // APIKey: `dzJ0OFc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464 (For 0 reservetion charges)
-  // baseUrl: `http://localhost:60444/api/`,
+  websiteUrl: 'https://herronhillstorage.com',
+  // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463,
+  APIKey: `dTJXOUQzUDRIMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Herron hill
 };
 
 /*

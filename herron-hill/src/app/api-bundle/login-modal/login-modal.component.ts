@@ -22,6 +22,7 @@ export class LoginModalComponent implements OnInit, OnDestroy {
   allowedToshow: boolean;
   credentialsInvalid: boolean;
   showPayRent: boolean;
+  paymentTab: string;
   authData: string;
   private authUnsubscribe$: Subscription;
 
@@ -40,6 +41,10 @@ export class LoginModalComponent implements OnInit, OnDestroy {
       strPassword: ['', Validators.required],
       intAuthMethod: 1
     });
+
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
   }
 
 
@@ -67,7 +72,12 @@ export class LoginModalComponent implements OnInit, OnDestroy {
             localStorage.setItem('strTenantToken', this.authData);
             this.dataSharingService.changePassword = true;
 
-            this.router.navigate(['/pay-rent/changePassword']);
+            if (!!this.paymentTab) {
+              this.router.navigate([`/pay-rent/${this.paymentTab}/changePassword`]);
+            } else {
+              this.router.navigate([`/pay-rent/changePassword`]);
+            }
+            // this.router.navigate(['/pay-rent/changePassword']);
           }, (err) => {
             this.credentialsInvalid = true;
             this.showLoader = false;

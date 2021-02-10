@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy, ViewChild  } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { dataViewRates, viewRatesAltText } from '../../data/view-rates';
+import { dataViewRates, viewRatesAltImage, viewRatesAltText } from '../../data/view-rates';
 import { MetaService } from '../../services/link.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
@@ -8,6 +8,10 @@ import { UaParserService } from '../../services/ua-parser.service';
 import { Subscription } from 'rxjs';
 import { viewRatesHeading } from '../../data/heading';
 import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
+import { Router } from '@angular/router';
+import { CanonicalService } from '../../services/canonical.service';
+import { environment } from '../../../environments/environment';
+import { script } from '../../data/script';
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -30,21 +34,26 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   viewRatesPageContent: string;
   viewRatesPageTitle: string;
   viewRatesAltText: string;
+  state:string;
+  viewRatesAltImage: string;
  private isUnsubscribe$: Subscription;
 
   constructor(
     private titleService: Title,
+    private router: Router,
     private meta: Meta,
     private metaService: MetaService,
     private uaParserService: UaParserService,
+    private canonical: CanonicalService
   ) {
+    this.state = script.state;
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
       content: `${this.viewRatesPageContent}`
     });
     this.titleService.setTitle(`${this.viewRatesPageTitle}`);
-    this.metaService.createCanonicalURL();
+    this.canonical.create();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
 
@@ -56,9 +65,19 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     this.fetchViewRatesHeading();
   }
 
+  
+  public navigate(location: any) {
+    if ((location === '/view-rates') || (location === '/storage-tips') || (location === '/reserve-unit')) {
+      this.router.navigate([`${environment.locationName}/${location}`]);
+    } else {
+      this.router.navigate([`${location}`]); 
+    }
+  }
+
   public fetchViewRates() {
     this.viewRates = dataViewRates;
     this.viewRatesAltText = viewRatesAltText;
+    this.viewRatesAltImage = viewRatesAltImage;
   }
 
   public fetchViewRatesHeading() {

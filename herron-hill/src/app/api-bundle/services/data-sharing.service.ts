@@ -19,6 +19,25 @@ export class DataSharingService {
   strConfirmation: string;
   addingTenant = false;
   period: string;
+  apiKey = '';
+  paymentNavigation: string;
+  isDataUpdated: boolean;
+  isDataSaved: boolean;
+  PaymentAmount: number;
+  CCApprovalCode: string;
+  eventName: string;
+  signUpForAutoPay: boolean;
+  showAltDetails: boolean;
+
+  cardDetailsObject = {
+    CCNumber: '',
+    CCBillingAccountName: '',
+    CCExpirationMonth: '',
+    CCExpirationYear: '',
+    CCBillingAddress: '',
+    CCBillingZIP: '',
+  };
+
 
   MoveInData = {
     Description: '',
@@ -66,13 +85,12 @@ export class DataSharingService {
     State: '',
     ZIP: '',
     AlternateName: '',
-    // AlternateLastName: '',
     AlternatePhone: '',
     AlternateAddressLine1: '',
     AlternateAddressLine2: '',
     AlternateCity: '',
     AlternateState: '',
-    AlternateZIP: '',
+    AlternateZIP: ''
   };
 
 

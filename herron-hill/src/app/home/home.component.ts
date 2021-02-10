@@ -61,8 +61,13 @@ export class HomeComponent implements OnInit {
     this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
+
   public navigate(location: any) {
-    this.router.navigate([location]);
+    if ((location === '/view-rates') || (location === '/storage-tips') || (location === '/reserve-unit')) {
+      this.router.navigate([`${environment.locationName}/${location}`]);
+    } else {
+      this.router.navigate([`${location}`]); 
+    }
   }
 
   ngOnInit() {

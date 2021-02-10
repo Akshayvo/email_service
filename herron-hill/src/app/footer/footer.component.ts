@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { environment } from '../../environments/environment';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  facilityName: string;
+  currentYear: any;
+
+
   constructor() { }
 
   ngOnInit() {
+    this.facilityName = environment.facilityName;
+    this.currentYear = new Date().getFullYear();
   }
 
 }
