@@ -11,8 +11,8 @@ export const contact = [
         label: 'Email:',
         data: 'railroadselfstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        email: 'sales@syrasoft.com, syrasoftsoftware@gmail.com',
-        redirect: 'mailto:`sales@syrasoft.com, syrasoftsoftware@gmail.com`'
+        email: ' railroadselfstorage@gmail.com',
+        redirect: 'mailto:`railroadselfstorage@gmail.com`'
     },
     {
         id: 2,
@@ -39,7 +39,7 @@ export const socialLinks = [
     
     {
         label: 'facebook',
-        path: ' https://www.facebook.com/Railroad-St-Self-Storage-457416034678407',
+        path: 'https://www.facebook.com/Railroad-St-Self-Storage-457416034678407',
         class: 'fab fa-facebook-square',
     },
 ];
