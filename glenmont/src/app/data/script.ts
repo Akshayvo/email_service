@@ -362,30 +362,30 @@ socialLinks.forEach(links =>
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://example.com/photos/1x1/photo.jpg",
-      "https://example.com/photos/4x3/photo.jpg",
-      "https://example.com/photos/16x9/photo.jpg"
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Glenmont_Storage/jpg/glenmont-self-storage-jumbotron%20-%201x1.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Glenmont_Storage/jpg/glenmont-self-storage-jumbotron%2016x9.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Glenmont_Storage/jpg/glenmont-self-storage-jumbotron%204x3.jpg"
      ],
      imagesContactPage: [
-      "https://example.com/photos/1x1/photo.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Glenmont_Storage/jpg/glenmont-self-storage-jumbotron%20-%201x1.jpg",
      ],
      telephone: contact[contactIndex].data,
-     map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
+     map: "https://goo.gl/maps/mEPDzqvkE7rXcjgQ9",
      description: "Glenmont Self Storage serves Glenmont and the surrounding communities with a variety of well-maintained and affordable self storage units." || homePageContent,
      streetAddress: "560 Rte 9W",
      state: "New York",
-     addressLocality: "New York",
+     addressLocality: "Glenmont",
      addressRegion: "NY",
      postalCode: "12077",
      addressCountry: "US",
      id: environment.websiteUrl || "",
      paymentAccepted:  "",
-     currenciesAccepted: "EUR",
-     ratingValue: "4",
+     currenciesAccepted: "USD",
+     ratingValue: "4.9",
      bestRating: "5",
-     reviewCount: "250",
-     latitude: 40.761293,
-     longitude: -73.982294,
+     reviewCount: "173",
+     latitude: 42.59361702512399,
+     longitude: -73.79318342031998,
 };
 
 export const homePageScript = [ {
@@ -417,8 +417,8 @@ export const homePageScript = [ {
     "url": environment.websiteUrl,
     "telephone": script.telephone,
     
-    "priceRange": "$$$",
-    "openingHours": openingHours,
+    "priceRange": "$49.95 - $229.95",
+    "openingHours": 'Mo-Fr 09:00-17:00", "Sa 09:00-13:00',
     "currenciesAccepted": script.currenciesAccepted,
     "paymentAccepted": script.paymentAccepted,
      "areaServed": {
@@ -645,7 +645,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Glenmont_Storage/jpg/glenmont-self-storage-jumbotron.jpg`
+      content: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Glenmont_Storage/jpg/glenmont-self-storage-jumbotron%20-%201x1.jpg`
     },
   ];
   

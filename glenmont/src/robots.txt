@@ -2,4 +2,4 @@
 # Allow crawling of all content
 Sitemap: https://glenmont-staging.netlify.app/sitemap.xml
 User-agent: *
-Disallow:
+Disallow: /privacy-policy

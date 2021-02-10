@@ -4,6 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '560 Rte 9W, Glenmont, NY 12077',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: 'https://goo.gl/maps/mEPDzqvkE7rXcjgQ9'
     },
     {
         id: 1,
@@ -42,14 +43,14 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    {
-        label: 'twitter',
-        path: '',
-        class: 'fab fa-twitter-square',
-    },
-    {
-        label: 'facebook',
-        path: '',
-        class: 'fab fa-facebook-square',
-    },
+    // {
+    //     label: 'twitter',
+    //     path: '',
+    //     class: 'fab fa-twitter-square',
+    // },
+    // {
+    //     label: 'facebook',
+    //     path: '',
+    //     class: 'fab fa-facebook-square',
+    // },
 ];
