@@ -1,6 +1,6 @@
 export const privacyPolicy = [
   {
-    content: `This privacy notice discloses the privacy practices for "storage-town.com".
+    content: `This privacy notice discloses the privacy practices for "south-wenatchee-multi.netlify.app".
     This privacy notice applies solely to information collected by this website. It will notify you of the following:`,
     list: [
         {
@@ -124,7 +124,7 @@ export const privacyPolicy = [
       }
     ],
     note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-    at  <a href="tel:8454573500" style="color: #000;">(845) 457-3500</a> or via email at <a href="mailto:storagetownmontgomery@gmail.com" style="color:#000;">storagetownmontgomery@gmail.com</a>.`,
+    at  <a href="tel:5096622600" style="color: #000;">(509) 662-2600</a> or via email at <a href="mailto:selfstorageinc@hotmail.com" style="color:#000;">selfstorageinc@hotmail.com</a>.`,
     // sharing: [
     //   {
     //     heading: `Sharing`

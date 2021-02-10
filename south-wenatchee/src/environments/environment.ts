@@ -13,7 +13,7 @@ export const environment = {
   appId: 'Storage- Town - Testing',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://storage-town.com`
+  websiteUrl: `https://south-wenatchee-multi.netlify.app`
 };
 
 /*

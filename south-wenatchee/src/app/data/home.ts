@@ -1,4 +1,6 @@
 /* tslint:disable:max-line-length */
+
+
 export const featuresHead = [
     {
         label: '2 Convenient Locations',
@@ -14,6 +16,29 @@ export const featuresHead = [
         label: 'Locally Owned and Operated',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
         alt: 'Icon of people standing together'
+    },
+    {
+        label: 'Security Cameras on Premises',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
+        alt: 'Icon of a security camera'
+    },
+];
+
+export const featuresSouthWenatchee = [
+    {
+        label: '2 Convenient Locations',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+        alt: 'Icon art displaying a location pin'
+    },
+    {
+        label: 'Stellar Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Customer Service Representative Icon'
+    },
+    {
+        label: 'Affordable Self Storage Rates',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        alt: 'Icon of a hand holding money'
     },
     {
         label: 'Security Cameras on Premises',

@@ -22,6 +22,10 @@ export class ListOfFacilityComponent implements OnInit {
   hoursAndrews: any;
   hoursMontgomery: any;
   hoursMiddletown: any;
+  contactsLocation1: any;
+  contactsLocation2: any;
+  hoursLocation1: any;
+  hoursLocation2: any;
 
   constructor() { }
 
@@ -31,17 +35,15 @@ export class ListOfFacilityComponent implements OnInit {
   }
 
   public fetchContactBrookside() {
-    this.contactsBrookside = contactsLocation2;
-    this.contactsAndrews = contactsLocation1;
-    this.contactsMontgomery = contactsLocation3;
-    this.contactsMiddletown = contactsLocation4;
+    this.contactsLocation1 = contactsLocation1;
+    this.contactsLocation2 = contactsLocation2;
+    
   }
 
   public fetchHoursBrookside() {
-    this.hoursBrookside = hoursLocation2;
-    this.hoursAndrews = hoursLocation1;
-    this.hoursMontgomery = hoursLocation3;
-    this.hoursMiddletown = hoursLocation4;
+    this.hoursLocation1 = hoursLocation1;
+    this.hoursLocation2 = hoursLocation2;
+    
   }
 
 }

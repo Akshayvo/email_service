@@ -30,7 +30,7 @@ export class AboutUsComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/south-wenatchee')) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes('/location/chester-brookside-ave')) {
+  } else if (this.router.url.includes('/location/leos-self-storage')) {
     this.fetchDetailsLocation2();
   } else if (this.router.url.includes('/location/montgomery-walden')) {
     this.fetchDetailsLocation3();

@@ -42,39 +42,32 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '53 Brookside Ave, Chester, NY 10918',
+        data: '1313 N Wenatchee Ave, Wenatchee, WA, 98801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/r/CT1A0QzwMwCHEBA'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: 'storagetownchester@gmail.com',
-        email: `storagetownchester@gmail.com, syrasoftsoftware@gmail.com`,
+        data: 'selfstorageinc@hotmail.com',
+        email: `selfstorageinc@hotmail.com, syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`storagetownchester@gmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`selfstorageinc@hotmail.com, syrasoftsoftware@gmail.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(845) 469-4888',
+        data: '(509) 662-2600',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:8454694888'
+        redirect: 'tel:509662-2600'
     },
 ];
 
 export const hoursLocation2 = [
+    
     {
-        label: 'Monday - Saturday: ',
-        data: '9:00AM - 5:00PM',
-    },
-    {
-        label: 'Sunday: ',
-        data: 'CLOSED',
-    },
-    {
-        label: 'Storage Access Hour: ',
-        data: '7 Days a Week 6:00AM to 8:00PM',
+        label: 'Access Hours: ',
+        data: '7 Days a Week 6:30AM to 9:00PM',
     },
 ];
 

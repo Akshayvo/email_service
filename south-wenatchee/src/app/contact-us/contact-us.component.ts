@@ -95,7 +95,7 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('leos-self-storage')) {
       this.og = ogContactPageLocation2;
     } else {
       if (this.router.url.includes('south-wenatchee')) {
@@ -112,7 +112,7 @@ export class ContactUsComponent implements OnInit {
 }
 
 public fetchTwitter() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('leos-self-storage')) {
       this.twitter = twitterContactPageLocation2;
     } else {
       if (this.router.url.includes('south-wenatchee')) {
@@ -162,7 +162,7 @@ public fetchTwitter() {
   public fetchLocationDetails() {
     if (this.router.url.includes('south-wenatchee')) {
       this.fetchContactDetailsLocation1();
-    } else if (this.router.url.includes('chester-brookside-ave')) {
+    } else if (this.router.url.includes('leos-self-storage')) {
       this.fetchContactDetailsLocation2();
     } else if (this.router.url.includes('montgomery-walden')) {
       this.fetchContactDetailsLocation3();
@@ -172,17 +172,17 @@ public fetchTwitter() {
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `StorageTown Rental Spaces - Chester - Brookside Ave`;
+    this.heading = `South Wenatchee Self Storage`;
     this.locationId = '1'
-    this.contactDetails = contactsLocation2;
-    this.hoursDetails = hoursLocation2;
+    this.contactDetails = contactsLocation1;
+    this.hoursDetails = hoursLocation1;
   }
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading = `StorageTown Rental Spaces - Chester - Andrews Lane `;
-    this.contactDetails = contactsLocation1;
-    this.hoursDetails = hoursLocation1;
+    this.heading = `Leo's Self Storage`;
+    this.contactDetails = contactsLocation2;
+    this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {

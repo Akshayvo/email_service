@@ -17,7 +17,7 @@ export const navLinks = [
             {
                 id: '2',
                 label: `Leo's Self Storage`,
-                path: '/location/chester-andrews-lane',
+                path: '/location/leos-self-storage',
               },
             //   {
             //     id: '3',

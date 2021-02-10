@@ -130,14 +130,14 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';
       this.contact = contactsLocation1;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
-    } else  if (this.router.url.includes('chester-brookside-ave')) {
-      this.id = 1;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
-      this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
+    } else  if (this.router.url.includes('leos-self-storage')) {
+      this.id = 1;
+      this.name = `Leo's Self Storage`;
+      this.contact = contactsLocation2;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
     } else  if (this.router.url.includes('montgomery-walden')) {
       this.id = 1;
       this.name = 'Affordable Secure Storage - Floral City, LLC';
@@ -162,7 +162,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('leos-self-storage')) {
       this.og = ogPayRentPageLocation1;
     } else {
       if (this.router.url.includes('south-wenatchee')) {
@@ -178,11 +178,11 @@ export class LoginComponent implements OnInit, OnDestroy {
     }}
 
 public fetchTwitter() {
-  if (this.router.url.includes('chester-brookside-ave')) {
-    this.twitter = twitterPayRentPageLocation1;
+  if (this.router.url.includes('leos-self-storage')) {
+    this.twitter = twitterPayRentPageLocation2;
   } else {
     if (this.router.url.includes('south-wenatchee')) {
-      this.twitter = twitterPayRentPageLocation2;
+      this.twitter = twitterPayRentPageLocation1;
     } else {
       if (this.router.url.includes('montgomery-walden')) {
         this.twitter = twitterPayRentPageLocation3;

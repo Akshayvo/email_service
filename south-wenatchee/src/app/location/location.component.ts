@@ -13,8 +13,8 @@ import { CanonicalService } from '../services/canonical.service';
 import { Location1Script, Location2Script, Location3Script, Location4Script,
   ogLocation1, ogLocation2, ogLocation3, ogLocation4, twitterLocation1,
   twitterLocation2, twitterLocation3, twitterLocation4 } from '../data/script';
-import { featuresHead, featuresList } from '../data/home';
-
+import { featuresHead, featuresSouthWenatchee, featuresList } from '../data/home';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-location',
@@ -37,6 +37,8 @@ export class LocationComponent implements OnInit {
   og: any;
   featuresList: any;
   features: any;
+  imageBaseUrl: any;
+  imagetype: any;
 
 
   constructor(
@@ -47,6 +49,7 @@ export class LocationComponent implements OnInit {
     private dataSharingService: DataSharingService,
     // private canonical: CanonicalService,
     private activatedRoute: ActivatedRoute,
+    private uaParserService: UaParserService,
     ) {
       // this.canonical.create();
 
@@ -64,6 +67,8 @@ export class LocationComponent implements OnInit {
         name: element.name,
         content: element.content
       })
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
     });
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
@@ -71,12 +76,11 @@ export class LocationComponent implements OnInit {
       if (this.router.url.includes('/location/south-wenatchee')) {
             this.meta.addTag({
               name: 'description',
-              content: `Our Florida/Warwick location has a variety of unit sizes and all storage units
-              are individually alarmed for your safety!`
+              content: `Our South Wenatchee location offers a variety of unit types at very affordable rates! Check the rates and reserve today!`
             });
-            this.titleService.setTitle('Storage Units in Chester, NY | StorageTown Rental Spaces');
-            this.locationName = `Storage Town Rental Space - Chester - Andrews Lane`;
-            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+            this.titleService.setTitle('South Wenatchee Location | South Wenatchee Self Storage');
+            this.locationName = `South Wenatchee Self Storage`;
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location2Script;
             this.loadScript();
@@ -93,15 +97,16 @@ export class LocationComponent implements OnInit {
                 content: element.content
               })
             });
-    } else if (this.router.url.includes('/location/chester-brookside-ave')) {
+    } else if (this.router.url.includes('/location/leos-self-storage')) {
            this.meta.addTag({
              name: 'description',
-             content: `Our brookside location offers a variety of well-lit, fully-fenced self
-             storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!`
+             content: `Take a look at the rates and availability at our Leo's Self Storage
+             location, then reserve your unit online in seconds, or call our office for
+             more information!`
            });
-           this.titleService.setTitle('Self Storage Units in brookside | StorageTown Rental Spaces');
-           this.locationName = `Storage Town Rental Space - Chester - Brookside Ave`;
-           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
+           this.titleService.setTitle(`Leo's Self Storage | South Wenatchee Self Storage`);
+           this.locationName = `Leo's Self Storage`;
+           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location1Script;
            this.loadScript();
@@ -118,57 +123,7 @@ export class LocationComponent implements OnInit {
               content: element.content
             })
           });
-      } else if (this.router.url.includes('/location/montgomery-walden')) {
-        this.meta.addTag({
-          name: 'description',
-          content: `Our Montgomery location offers a wide variety of affordable self storage units in a well-lit,
-          fully-fenced storage facility! Call (845) 457-3500 to learn more!`
-        });
-        this.titleService.setTitle('Storage Units in Montgomery, NY | StorageTown Rental Spaces');
-        this.locationName = `StorageTown Rental Spaces - Montgomery/Walden`;
-        this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
-        this.dataSharingService.locationName = this.locationName;
-        this.script = Location3Script;
-        this.loadScript();
-        this.og.forEach(element => {
-          this.meta.addTag({
-            property: element.property,
-            content: element.content
-          })
-        });
-    
-        this.twitter.forEach(element => {
-          this.meta.addTag({
-            name: element.name,
-            content: element.content
-          })
-        });
-   } else if (this.router.url.includes('/location/middletown-wallKill')) {
-    this.meta.addTag({
-      name: 'description',
-      content: `Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable,
-      well maintained, fully-fenced in self storage units 7 days a week!`
-    });
-    this.titleService.setTitle('Self Storage Units in Middletown | StorageTown Rental Spaces');
-    this.locationName = `StorageTown - Middletown/WallKill Location`;
-    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
-    this.dataSharingService.locationName = this.locationName;
-    this.script = Location4Script;
-    this.loadScript();
-    this.og.forEach(element => {
-      this.meta.addTag({
-        property: element.property,
-        content: element.content
-      })
-    });
-
-    this.twitter.forEach(element => {
-      this.meta.addTag({
-        name: element.name,
-        content: element.content
-      })
-    });
-  }
+      }
 }
 
   ngOnInit() {
@@ -193,44 +148,32 @@ export class LocationComponent implements OnInit {
   }
 
   public fetchFeatureHead() {
-    this.features = featuresHead;
+    this.features = featuresSouthWenatchee;
   }
 
   
   public fetchOg() {
     if (this.router.url.includes('/location/south-wenatchee')) {
       this.og = ogLocation1;
-  } else if (this.router.url.includes('/location/chester-brookside-ave')) {
+  } else if (this.router.url.includes('/location/leos-self-storage')) {
     this.og = ogLocation2;
-  } else if (this.router.url.includes('/location/montgomery-walden')) {
-    this.og = ogLocation3;
-  } else if (this.router.url.includes('/location/middletown-wallKill')) {
-    this.og = ogLocation4;
-  }
+  } 
   }
 
   public fetchTwitter() {
     if (this.router.url.includes('/location/south-wenatchee')) {
       this.twitter = twitterLocation1;
-  } else if (this.router.url.includes('/location/chester-brookside-ave')) {
+  } else if (this.router.url.includes('/location/leos-self-storage')) {
     this.twitter = twitterLocation2;
-  } else if (this.router.url.includes('/location/montgomery-walden')) {
-    this.twitter = twitterLocation3;
-  } else if (this.router.url.includes('/location/middletown-wallKill')) {
-    this.twitter = twitterLocation4;
-  }
+  } 
   }
 
   public isSomePage() {
     if (this.router.url.includes('/location/south-wenatchee')) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes('/location/chester-brookside-ave')) {
+    } else if (this.router.url.includes('/location/leos-self-storage')) {
       this.fetchDetailsLocation2();
-    } else if (this.router.url.includes('/location/montgomery-walden')) {
-      this.fetchDetailsLocation3();
-    } else if (this.router.url.includes('/location/middletown-wallKill')) {
-      this.fetchDetailsLocation4();
-    }
+    } 
  }
 
  public navigateToReserve() {
@@ -238,19 +181,13 @@ export class LocationComponent implements OnInit {
     this.router.navigate(['/location/south-wenatchee/reserve-unit'],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/chester-brookside-ave/reserve-unit'],
+    this.router.navigate(['/location/leos-self-storage/reserve-unit'],
           );
-  }  else if ( this.locationId === 3 ) {
-    this.router.navigate(['/location/montgomery-walden/reserve-unit'],
-         );
-  }  else if ( this.locationId === 4 ) {
-    this.router.navigate(['/location/middletown-wallKill/reserve-unit'],
-          );
-  }
+  }  
  }
 
   public fetchDetailsLocation1() {
-      this.name = heading2;
+      this.name = heading1;
       this.locationId = 1;
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
@@ -258,26 +195,10 @@ export class LocationComponent implements OnInit {
     }
 
    public fetchDetailsLocation2() {
-     this.name = heading1;
+     this.name = heading2;
      this.locationId = 2;
      this.contacts = contactsLocation2;
      this.hours = hoursLocation2;
      this.tabs = tabs;
    }
-
-   public fetchDetailsLocation3() {
-    this.name = heading3;
-    this.locationId = 3;
-    this.contacts = contactsLocation3;
-    this.hours = hoursLocation3;
-    this.tabs = tabs2;
-  }
-
-  public fetchDetailsLocation4() {
-    this.name = heading4;
-    this.locationId = 4;
-    this.contacts = contactsLocation4;
-    this.hours = hoursLocation4;
-    this.tabs = tabs3;
-  }
 }

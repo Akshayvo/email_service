@@ -12,7 +12,7 @@ import { NavigationService } from './services/navigation.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Storage Town Rental Spaces';
+  title = 'South Wenatchee Self Storage';
   flag: boolean;
   public offsets: number[];
   x: any;

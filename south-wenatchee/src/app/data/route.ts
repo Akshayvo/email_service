@@ -87,7 +87,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
-    { path: 'location/chester-brookside-ave',
+    { path: 'location/leos-self-storage',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -236,7 +236,7 @@ export const apiRoutes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
     }
   },
-  { path: 'review/chester-brookside-ave', component: HomeComponent,
+  { path: 'review/leos-self-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -263,7 +263,7 @@ export const apiRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/chester-brookside-ave', component: PayRentComponent,
+    path: 'pay-rent/leos-self-storage', component: PayRentComponent,
     children: childroute
   },
   {
@@ -280,8 +280,8 @@ export const apiRoutes = [
   },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-chester-andrews-lane', component: ContactUsComponent},
-  { path: 'contact-chester-brookside-ave', component: ContactUsComponent},
+  { path: 'contact-south-wenatchee', component: ContactUsComponent},
+  { path: 'contact-leos-self-storage', component: ContactUsComponent},
   { path: 'contact-montgomery-walden', component: ContactUsComponent},
   { path: 'contact-middletown-wallKill', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
@@ -303,7 +303,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/chester-brookside-ave',
+  { path: 'location/leos-self-storage',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -344,7 +344,7 @@ export const iFrameRoutes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
     }
   },
-  { path: 'review/chester-brookside-ave', component: HomeComponent,
+  { path: 'review/leos-self-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -370,8 +370,8 @@ export const iFrameRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-chester-andrews-lane', component: PayRentFloridaComponent },
-  { path: 'pay-rent-chester-brookside-ave', component: PayRentChesterComponent},
+  { path: 'pay-rent-south-wenatchee', component: PayRentFloridaComponent },
+  { path: 'pay-rent-leos-self-storage', component: PayRentChesterComponent},
   { path: 'pay-rent-montgomery-walden', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-middletown-wallkill', component: PayRentMiddletownComponent},
   { path: 'storage-tips', component: StorageTipsComponent },

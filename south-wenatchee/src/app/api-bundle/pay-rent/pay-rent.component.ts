@@ -44,10 +44,10 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('chester-brookside-ave') || this.router.url.includes('south-wenatchee')) {
-      this.name = 'Chester - Andrews Lane & Brookside Ave';
-  }  else if (this.router.url.includes('montgomery-walden')) {
-    this.name = 'Montgomery/Walden';
+    if (this.router.url.includes('south-wenatchee')) {
+      this.name = 'South Wenatchee Self Storage';
+  }  else if (this.router.url.includes('leos-self-storage')) {
+    this.name = `Leo's Self Storage`;
   } 
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
@@ -62,7 +62,7 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('leos-self-storage')) {
       this.og = ogPayRentPageLocation2;
     } else {
       if (this.router.url.includes('south-wenatchee')) {
@@ -79,7 +79,7 @@ export class PayRentComponent implements OnInit {
 }
 
 public fetchTwitter() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('leos-self-storage')) {
       this.twitter = twitterPayRentPageLocation2;
     } else {
       if (this.router.url.includes('south-wenatchee')) {

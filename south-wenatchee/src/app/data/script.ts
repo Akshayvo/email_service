@@ -8,14 +8,14 @@ export const script = {
 export const homePageScript = [ {
     '@context': 'https://schema.org',
     '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
-    'name': 'StorageTown Rental Spaces',
-    'url': 'https://storage-town.com/',
+    'name': 'South Wenatchee Self Storage',
+    'url': 'https://south-wenatchee-multi.netlify.app/',
     'priceRange': '$87-$309',
       'address' : {
       '@type' : 'PostalAddress',
       'addressRegion' : 'New York'
     },
-     'telephone' : '(845) 469-4888',
+     'telephone' : '(509) 662-2600',
     'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
     'logo': 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png'
   }, {
@@ -24,14 +24,14 @@ export const homePageScript = [ {
     '@type' : ['LocalBusiness', 'SelfStorage'],
     'name' : 'StorageTown Rental Spaces - Chester - Brookside Ave',
     'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
-    'telephone' : '(845) 469-4888',
-    'email' : 'storagetownchester@gmail.com',
+    'telephone' : '(509) 662-2600',
+    'email' : 'selfstorageinc@hotmail.com',
     'address' : {
       '@type' : 'PostalAddress',
-      'streetAddress' : '53 Brookside Ave',
-      'addressLocality' : 'Chester',
-      'addressRegion' : 'NY',
-      'postalCode' : '10918'
+      'streetAddress' : '1536 S Wenatchee Ave',
+      'addressLocality' : 'Wenatchee',
+      'addressRegion' : 'WA',
+      'postalCode' : '98801'
     },
     'openingHours': 'Mo,Tu,We,Th,Fri 09:00-17:00',
     'amenityFeature': [{'@type': 'LocationFeatureSpecification',
@@ -49,14 +49,14 @@ export const homePageScript = [ {
     {'@type': 'LocationFeatureSpecification',
     'name': 'Fully alarmed units'}],
     'priceRange': '$87-$309',
-    'url' : 'https://storage-town.com/location/chester/storage-units'
+    'url' : 'https://south-wenatchee-multi.netlify.app/location/chester/storage-units'
   }, {
     '@context' : 'http://schema.org',
     '@type' : ['LocalBusiness', 'SelfStorage'],
     'name' : 'StorageTown Rental Spaces - Chester - Andrews Lane',
     'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
     'telephone' : '(845) 469-4888',
-    'email' : 'storagetownchester@gmail.com',
+    'email' : 'selfstorageinc@hotmail.com',
     'address' : {
       '@type' : 'PostalAddress',
       'streetAddress' : '1 Andrews Lane',
@@ -79,7 +79,7 @@ export const homePageScript = [ {
     'name': 'Security Cameras on Premises'},
     {'@type': 'LocationFeatureSpecification',
     'name': 'Fully alarmed units'}],
-    'url' : 'https://storage-town.com/location/andrews/storage-units'
+    'url' : 'https://south-wenatchee-multi.netlify.app/location/andrews/storage-units'
   }, {
     '@context' : 'http://schema.org',
     '@type' : ['LocalBusiness', 'SelfStorage'],
@@ -109,7 +109,7 @@ export const homePageScript = [ {
     'name': 'Security Cameras on Premises'},
     {'@type': 'LocationFeatureSpecification',
     'name': 'Fully alarmed units'}],
-    'url' : 'https://storage-town.com/location/montgomery-walden/storage-units'
+    'url' : 'https://south-wenatchee-multi.netlify.app/location/montgomery-walden/storage-units'
   }, {
     '@context' : 'http://schema.org',
     '@type' : ['LocalBusiness', 'SelfStorage'],
@@ -139,7 +139,7 @@ export const homePageScript = [ {
     'name': 'Security Cameras on Premises'},
     {'@type': 'LocationFeatureSpecification',
     'name': 'Fully alarmed units'}],
-    'url' : 'https://storage-town.com/location/middletown-wallKill/storage-units'
+    'url' : 'https://south-wenatchee-multi.netlify.app/location/middletown-wallKill/storage-units'
   } ];
 
 
@@ -151,7 +151,7 @@ export const Location1Script = {
       'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-brookside-ave-small%20%284x3%29.jpg',
       'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-brookside-ave-small%20%2816x9%29.jpg'
      ],
-    '@id': 'https://storage-town.com/location/chester/storage-units',
+    '@id': 'https://south-wenatchee-multi.netlify.app/location/chester/storage-units',
     'name': 'StorageTown Rental Spaces - Chester - Brookside Ave',
      'description': 'Our Chester location offers a variety of well-lit, fully-fenced self storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!',
     'address': {
@@ -173,7 +173,7 @@ export const Location1Script = {
       'latitude': 41.351539,
       'longitude': -74.278008
     },
-    'url': 'https://storage-town.com/location/chester/about',
+    'url': 'https://south-wenatchee-multi.netlify.app/location/chester/about',
     'telephone': '(845) 469-4888',
 
     'priceRange': '$57 - $309',
@@ -197,7 +197,7 @@ export const Location2Script = {
       'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-andrews-lane%20%284x3%29.jpg',
       'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-andrews-lane%20%2816x9%29.jpg'
      ],
-    '@id': 'https://storage-town.com/location/andrews/storage-units',
+    '@id': 'https://south-wenatchee-multi.netlify.app/location/andrews/storage-units',
     'name': 'StorageTown Rental Spaces - Chester - Andrews Lane',
      'description': 'Our Chester location offers a variety of well-lit, fully-fenced self storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!',
     'address': {
@@ -219,7 +219,7 @@ export const Location2Script = {
       'latitude': 41.351674,
       'longitude': -74.29747
     },
-    'url': 'https://storage-town.com/location/andrews/about',
+    'url': 'https://south-wenatchee-multi.netlify.app/location/andrews/about',
     'telephone': '(845) 469-4888',
 
     'priceRange': '$57 - $309',
@@ -243,7 +243,7 @@ export const Location3Script = {
       'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-4%20%284x3%29.jpg',
       'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-4%20%2816x9%29.jpg'
      ],
-    '@id': 'https://storage-town.com/location/montgomery-walden/storage-units',
+    '@id': 'https://south-wenatchee-multi.netlify.app/location/montgomery-walden/storage-units',
     'name': 'StorageTown Rental Spaces - Montgomery/Walden',
      'description': 'Our Montgomery location offers a wide variety of affordable self storage units in a well-lit, fully-fenced storage facility! Call (845) 457-3500 to learn more!',
     'address': {
@@ -265,7 +265,7 @@ export const Location3Script = {
       'latitude': 41.504837,
       'longitude': -74.217813
     },
-    'url': 'https://storage-town.com/location/montgomery-walden/about',
+    'url': 'https://south-wenatchee-multi.netlify.app/location/montgomery-walden/about',
     'telephone': '(845) 457-3500',
 
     'priceRange': '$58 - $247',
@@ -290,7 +290,7 @@ export const Location4Script = {
       'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-3-%204x3.jpg',
       'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-3%2016x9.jpg'
      ],
-    '@id': 'https://storage-town.com/location/middletown-wallKill/storage-units',
+    '@id': 'https://south-wenatchee-multi.netlify.app/location/middletown-wallKill/storage-units',
     'name': 'StorageTown - Middletown/WallKill Location',
      'description': 'Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable, well maintained, fully-fenced in self storage units 7 days a week!',
     'address': {
@@ -312,7 +312,7 @@ export const Location4Script = {
       'latitude': 41.465688,
       'longitude': -74.344892
     },
-    'url': 'https://storage-town.com/location/middletown-wallKill/about',
+    'url': 'https://south-wenatchee-multi.netlify.app/location/middletown-wallKill/about',
     'telephone': '(845) 692-4838',
 
     'priceRange': '$92 - $300',
@@ -338,7 +338,7 @@ export const contactPageLocation1Script = {
       'postalCode': '10918',
       'streetAddress': '53 Brookside Ave'
     },
-     'url': 'https://storage-town.com/location/chester/about',
+     'url': 'https://south-wenatchee-multi.netlify.app/location/chester/about',
      'image': [
           'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-brookside-ave-small%20%281x1%29.jpg'
          ],
@@ -370,7 +370,7 @@ export const contactPageLocation2Script = {
       'postalCode': '10918',
       'streetAddress': '1 Andrews Lane'
     },
-     'url': 'https://storage-town.com/location/andrews/about',
+     'url': 'https://south-wenatchee-multi.netlify.app/location/andrews/about',
      'image': [
           'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-andrews-lane%20-%201x1.jpg'
          ],
@@ -401,7 +401,7 @@ export const contactPageLocation3Script = {
       'postalCode': '12549',
       'streetAddress': '130 Neelytown Rd'
     },
-     'url': 'https://storage-town.com/location/montgomery-walden/about',
+     'url': 'https://south-wenatchee-multi.netlify.app/location/montgomery-walden/about',
      'image': [
           'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-4%201x1.jpg'
          ],
@@ -433,7 +433,7 @@ export const contactPageLocation4Script = {
       'postalCode': '10941',
       'streetAddress': '2070 Goshen Turnpike'
     },
-     'url': 'https://storage-town.com/location/middletown-wallKill/about',
+     'url': 'https://south-wenatchee-multi.netlify.app/location/middletown-wallKill/about',
      'image': [
           'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-3-1x1.jpg'
          ],
@@ -471,11 +471,11 @@ export const ogHomePage = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com`
+    content: `https://south-wenatchee-multi.netlify.app`
   },
   {
     property: `og:image`,
@@ -528,11 +528,11 @@ export const ogLocation1 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/location/chester-brookside-ave/storage-units`
+    content: `https://south-wenatchee-multi.netlify.app/location/leos-self-storage/storage-units`
   },
   {
     property: `og:image`,
@@ -585,11 +585,11 @@ export const ogLocation2 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/location/south-wenatchee/storage-units`
+    content: `https://south-wenatchee-multi.netlify.app/location/south-wenatchee/storage-units`
   },
   {
     property: `og:image`,
@@ -642,11 +642,11 @@ export const ogLocation3 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/location/montgomery-walden/storage-units`
+    content: `https://south-wenatchee-multi.netlify.app/location/montgomery-walden/storage-units`
   },
   {
     property: `og:image`,
@@ -698,11 +698,11 @@ export const ogLocation4 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/location/middletown-wallKill/storage-units`
+    content: `https://south-wenatchee-multi.netlify.app/location/middletown-wallKill/storage-units`
   },
   {
     property: `og:image`,
@@ -753,11 +753,11 @@ export const ogPayRentPage = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/pay-rent`
+    content: `https://south-wenatchee-multi.netlify.app/pay-rent`
   },
   {
     property: `og:image`,
@@ -807,11 +807,11 @@ export const ogPayRentPageLocation1 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/pay-rent/chester-brookside-ave/login`
+    content: `https://south-wenatchee-multi.netlify.app/pay-rent/leos-self-storage/login`
   },
   {
     property: `og:image`,
@@ -861,11 +861,11 @@ export const ogPayRentPageLocation2 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/pay-rent/chester-brookside-ave/login`
+    content: `https://south-wenatchee-multi.netlify.app/pay-rent/leos-self-storage/login`
   },
   {
     property: `og:image`,
@@ -915,11 +915,11 @@ export const ogPayRentPageLocation3 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/pay-rent/montgomery-walden/login`
+    content: `https://south-wenatchee-multi.netlify.app/pay-rent/montgomery-walden/login`
   },
   {
     property: `og:image`,
@@ -969,11 +969,11 @@ export const ogPayRentPageLocation4 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/pay-rent/middletown-wallKill/login`
+    content: `https://south-wenatchee-multi.netlify.app/pay-rent/middletown-wallKill/login`
   },
   {
     property: `og:image`,
@@ -1024,11 +1024,11 @@ export const ogStorageTipsPage = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/storage-tips`
+    content: `https://south-wenatchee-multi.netlify.app/storage-tips`
   },
   {
     property: `og:image`,
@@ -1080,11 +1080,11 @@ export const ogContactPage = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-us`
+    content: `https://south-wenatchee-multi.netlify.app/contact-us`
   },
   {
     property: `og:image`,
@@ -1136,11 +1136,11 @@ export const ogContactPageLocation1 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-chester-brookside-ave`
+    content: `https://south-wenatchee-multi.netlify.app/contact-leos-self-storage`
   },
   {
     property: `og:image`,
@@ -1191,11 +1191,11 @@ export const ogContactPageLocation2 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-south-wenatchee`
+    content: `https://south-wenatchee-multi.netlify.app/contact-south-wenatchee`
   },
   {
     property: `og:image`,
@@ -1246,11 +1246,11 @@ export const ogContactPageLocation3 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-montgomery-walden`
+    content: `https://south-wenatchee-multi.netlify.app/contact-montgomery-walden`
   },
   {
     property: `og:image`,
@@ -1301,11 +1301,11 @@ export const ogContactPageLocation4 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: `South Wenatchee Self Storage`
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-middletown-wallKill`
+    content: `https://south-wenatchee-multi.netlify.app/contact-middletown-wallKill`
   },
   {
     property: `og:image`,

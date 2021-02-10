@@ -13,20 +13,16 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: 'Both Chester Locations',
-    address: 'Andrews Lane & Brookside Ave',
-    url: 'chester-brookside-ave'
+    facility: 'South Wenatchee Self Storage',
+    address: '1536 S Wenatchee Ave, Wenatchee, WA 98801',
+    url: 'south-wenatchee'
   },
   {
-    facility: 'Montgomery / Walden',
-    address: '130 Neelytown Rd, Montgomery, NY 12549',
-    url: 'montgomery-walden'
+    facility: `Leo's Self Storage`,
+    address: '1313 N Wenatchee Ave, Wenatchee, WA, 98801',
+    url: 'leos-self-storage'
   },
-  {
-    facility: 'Middletown / WallKill',
-    address: '2070 Goshen Turnpike, Middletown, NY 10941',
-    url: 'middletown-wallKill'
-  },
+  
 ];
 
 export const tableDataContactPage = [
@@ -36,29 +32,20 @@ export const tableDataContactPage = [
     url: 'south-wenatchee'
   },
   {
-    facility: 'Chester - Brookside Ave',
-    address: '53 Brookside Ave, Chester, NY 10918',
-    url: 'chester-brookside-ave'
+    facility: `Leo's Self Storage`,
+    address: '1313 N Wenatchee Ave, Wenatchee, WA, 98801',
+    url: 'leos-self-storage'
   },
-  {
-    facility: 'Montgomery / Walden',
-    address: '130 Neelytown Rd, Montgomery, NY 12549',
-    url: 'montgomery-walden'
-  },
-  {
-    facility: 'Middletown / WallKill',
-    address: '2070 Goshen Turnpike, Middletown, NY 10941',
-    url: 'middletown-wallKill'
-  },
+
 ];
 
 
 export const loginDetail = [
   {
       userName: `Tenant's First Initial + Last Name`,
-      password: `Tenant's Gate Access Code + Last 4 Digits of Phone Number`,
+      password: `Tenant's Phone Number`,
       example: {
-          code: 'Gate Codeode is 1234 and Phone Number is 555-555-5555',
+          code: `John Smith's Phone Number is 555-555-5555`,
           userName: 'jsmith',
           password: '12345555'
       }

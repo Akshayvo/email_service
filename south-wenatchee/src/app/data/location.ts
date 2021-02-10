@@ -137,17 +137,17 @@ export const headingLocation3 = `Make a Free Online Reserve on a Storage Unit To
 
 export const headingLocation4 = `Make a Free Online Reserve on a Storage Unit Today!`;
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Chester`;
+export const headingReservePageLocation1 = `Ready to Reserve a Unit in South Wenatchee Self Storage`;
 
-export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Chester`;
+export const headingReservePageLocation2 = `Ready to Reserve a Unit in Leo's Self Storage`;
 
-export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Montgomery`;
+export const headingReservePageLocation3 = ``;
 
-export const headingReservePageLocation4 = `Ready to Reserve a Fully Alarmed Self Storage Unit in Middletown`;
+export const headingReservePageLocation4 = ``;
 
-export const heading1 = `Storage Town Rental Space - Chester - Brookside Ave`;
+export const heading1 = `South Wenatchee Self Storage`;
 
-export const heading2 = `Storage Town Rental Space - Chester - Andrews Lane`;
+export const heading2 = `Leo's Self Storage`;
 
 export const heading3 = `Storage Town Rental Space - Montgomery/Walden`;
 

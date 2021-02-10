@@ -30,7 +30,7 @@ export class StorageUnitComponent implements OnInit {
     if (this.router.url.includes('/location/south-wenatchee')) {
       this.id = 1;
       this.heading = headingLocation1;
-    } else if (this.router.url.includes('/location/chester-brookside-ave')) {
+    } else if (this.router.url.includes('/location/leos-self-storage')) {
       this.id = 2;
       this.heading = headingLocation2;
     } else if (this.router.url.includes('/location/montgomery-walden')) {
