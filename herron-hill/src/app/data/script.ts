@@ -159,7 +159,7 @@ export const ogHomePage = [
   },
   {
     property: `og:image`,
-    content: ogGraphImage
+    content: `${ogGraphImage}`
   },
 ];
 
@@ -186,7 +186,7 @@ export const twitterHomePage = [
   },
   {
     name: `twitter:image`,
-    content: twitterImage
+    content: `${twitterImage}`
   },
 ];
 
@@ -213,7 +213,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: ogGraphImage
+      content: `${ogGraphImage}`
     },
   ];
   
@@ -240,7 +240,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: twitterImage
+      content: `${twitterImage}`
     },
   ];
 
@@ -267,7 +267,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: ogGraphImage
+      content: `${ogGraphImage}`
     },
   ];
   
@@ -294,7 +294,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: twitterImage
+      content: `${twitterImage}`
     },
   ];
   
@@ -321,7 +321,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: ogGraphImage
+      content: `${ogGraphImage}`
     },
   ];
   
@@ -348,7 +348,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: twitterImage
+      content: `${twitterImage}`
     },
   ];
 

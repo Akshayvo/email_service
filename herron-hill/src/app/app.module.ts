@@ -50,7 +50,6 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 import { PhotosComponent } from './photos/photos.component';
-import { ScriptHackComponent } from './script-hack/script-hack.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
@@ -90,7 +89,6 @@ import { TabsComponent } from './tabs/tabs.component';
     UnitSizerComponent,
     UnitSizesComponent,
     PhotosComponent,
-    ScriptHackComponent,
     PrivacyPolicyComponent,
     ThankYouComponent,
     PayRentComponent,

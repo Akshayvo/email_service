@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         name: element.name,
         content: element.content
       })
-    })
+    });
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
@@ -172,6 +172,8 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   public fetchHours() {
     this.hours = hours;
+
+    
   }
 
   public fetchFeatures() {

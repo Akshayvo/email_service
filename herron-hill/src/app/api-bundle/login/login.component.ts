@@ -7,8 +7,9 @@ import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
 import { loginDetail } from '../../data/pay-rent';
 import { contact } from '../../data/contact';
-
-
+import { Meta } from '@angular/platform-browser';
+import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
+import { payRentPageContent, payRentPageTitle } from '../../data/title';
 @Injectable()
 
 @Component({
@@ -41,6 +42,11 @@ export class LoginComponent implements OnInit, OnDestroy {
   tenant: any;
   balance: number;
   open = false;
+  og: any;
+  twitter: any;
+  payRentPageTitle: string;
+  payRentPageContent: string;
+  
   private authUnsubscribe$: Subscription;
 
 
@@ -48,10 +54,26 @@ export class LoginComponent implements OnInit, OnDestroy {
     private formBuilder: FormBuilder,
     private dataSharingService: DataSharingService,
     private authService: AuthService,
+    private meta: Meta,
     public router: Router,
-    public elementRef: ElementRef
-
+    public elementRef: ElementRef,
   ) {
+    this.fetchMetaData();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
 
   }
 
@@ -92,6 +114,19 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   openBox() {
     this.open = !this.open;
+  }
+
+  public fetchOg() {
+    this.og = ogPayRentPage;
+  }
+
+  public fetchTwitter() {
+    this.twitter = twitterPayRentPage;
+  }
+
+  public fetchMetaData() {
+    this.payRentPageContent = payRentPageContent;
+    this.payRentPageTitle = payRentPageTitle;
   }
 
   public navigate (location: any) {
