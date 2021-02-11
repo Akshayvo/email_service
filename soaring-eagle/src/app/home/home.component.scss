@@ -194,7 +194,8 @@
 }
 
 
-.btn-primary[_ngcontent-app-root-c4] {
+
+.btn-primary {
   background-color: #81301f;
   border-color: #81301f;
   color: #fff!important;
@@ -203,7 +204,7 @@
   margin: 8px;
 }
 
-.btn-outline-primary[_ngcontent-app-root-c4] {
+.btn-outline-primary {
   background-color: transparent;
   min-width: 200px;
   color: #fff!important;
@@ -280,6 +281,7 @@
 
     h1 {
       font-size: 2em;
+
     }
 
     .container {
