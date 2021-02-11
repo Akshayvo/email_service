@@ -12,7 +12,7 @@ export const contactsLocation1 = [
         email: 'selfstorageinc@hotmail.com, syrasoftsoftware@gmail.com',
         data: `selfstorageinc@hotmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`selfstorageinc@hotmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`selfstorageinc@hotmail.com`'
     },
     {
         id: 3,
@@ -44,7 +44,7 @@ export const contactsLocation2 = [
         label: 'Address: ',
         data: '1313 N Wenatchee Ave, Wenatchee, WA, 98801',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CT1A0QzwMwCHEBA'
+        redirect: 'https://goo.gl/maps/BaiNCYwtcMK3LZP88'
     },
     {
         id: 2,
@@ -52,7 +52,7 @@ export const contactsLocation2 = [
         data: 'selfstorageinc@hotmail.com',
         email: `selfstorageinc@hotmail.com, syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`selfstorageinc@hotmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`selfstorageinc@hotmail.com`'
     },
     {
         id: 3,
