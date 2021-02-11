@@ -19,7 +19,7 @@ export const contact = [
         label: 'Phone:',
         data: '(608) 228-0686',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:5555555555',
+        redirect: 'tel:6082280686',
     }
 ];
 
