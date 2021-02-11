@@ -4,7 +4,6 @@ import { Title, Meta } from '@angular/platform-browser';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
-import { MetaService } from '../services/link.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
 import { contactHeading } from '../data/heading';
 import { CanonicalService } from '../services/canonical.service';
@@ -43,7 +42,6 @@ export class ContactComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     private formBuilder: FormBuilder,
-    private metaService: MetaService,
     private canonical: CanonicalService
   ) {
     this.fetchScript();

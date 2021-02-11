@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { storageTip, storageTipAccordion } from '../data/storage';
-import { MetaService } from '../services/link.service';
 import { storageTipsTitle, storageTipsContent } from '../data/title';
 import { storageTipsHeading } from '../data/heading';
+import { CanonicalService } from '../services/canonical.service';
 
 @Component({
   selector: 'app-storage-tips',
@@ -21,7 +21,7 @@ export class StorageTipsComponent implements OnInit {
   constructor(
     private titleService: Title,
     private meta: Meta,
-    private metaService: MetaService,
+    private canonical: CanonicalService
   ) {
     this.fetchMetaData();
     this.meta.addTag({
@@ -29,7 +29,7 @@ export class StorageTipsComponent implements OnInit {
       content: `${this.storageTipsContent}`
     });
     this.titleService.setTitle(`${this.storageTipsTitle}`);
-    this.metaService.createCanonicalURL();
+    this.canonical.create();
   }
 
   ngOnInit() {
