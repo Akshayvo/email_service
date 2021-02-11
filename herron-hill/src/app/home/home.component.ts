@@ -57,7 +57,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   ) {
     this.fetchScript();
     this.loadScript();
-    this.fetchMetaData();
     this.fetchOgHomePage();
     this.fetchTwitterHomePage();
     this.ogHomePage.forEach(element => {
@@ -72,8 +71,8 @@ export class HomeComponent implements OnInit, OnDestroy {
         name: element.name,
         content: element.content
       })
-    });
-
+    })
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
       content: `${this.homePageContent}`
@@ -173,8 +172,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   public fetchHours() {
     this.hours = hours;
-
-    
   }
 
   public fetchFeatures() {
