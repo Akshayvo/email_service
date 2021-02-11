@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
-
+import { script } from '../../data/script';
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
@@ -55,6 +55,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showMovein: boolean;
   showClimateControl: boolean; 
   facilityName: string;
+  state: string;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -71,6 +72,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.getData();
     this.fetchThData();    
+    this.state = script.state;
   }
 
   public fetchThData() {

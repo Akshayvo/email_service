@@ -56,7 +56,6 @@ import { TabsComponent } from './tabs/tabs.component';
 import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import { MicrodataComponent } from './api-bundle/microdata/microdata.component';
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
 
 @NgModule({
@@ -99,7 +98,6 @@ import { AlternateDetailsComponent } from './alternate-details/alternate-details
     TabsComponent,
     ThankYouComponent,
     PrivacyPolicyComponent,
-    MicrodataComponent,
     AlternateDetailsComponent,
   ],
   imports: [

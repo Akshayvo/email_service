@@ -7,26 +7,26 @@ import { contact, hours, socialLinks } from '../data/contact';
 import { FetchDataService } from '../api-bundle/services/fetch-data.service';
 import { OnInit, Component, Input, Output  } from '@angular/core';
 
-@Component({})
-export class getValues  {
+// @Component({})
+// export class getValues  {
 
 
-  constructor(
+//   constructor(
     
-  ) {
-    console.log('class is wrkng');
-    this.getData();
+//   ) {
+//     console.log('class is wrkng');
+//     this.getData();
 
-  }
+//   }
 
-  getData() {
-console.log('im ');
+//   getData() {
+// console.log('im ');
 
-    }
+//     }
  
-} 
+// } 
 
-new getValues();
+// new getValues();
 
  
  
