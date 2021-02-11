@@ -25,28 +25,19 @@ export const featuresHead = [
 export const serviceOffered = [
    
     {
-        p: `A-Quality Boat & RV Storage has served the Greater Southeast Harris County area since 2003. We were
-        happy to add our second location in Pasadena at Holly Avenue in 2020. At A-Quality Boat & RV Storage,
-        you will be greeted by friendly customer service and be able to choose from several different unit sizes
-        for your storage needs. Our Line Drive location is located off of Red Bluff Rd. behind McCoy’s Building
-        Supply (across from the Deer Park ISD Outdoor Learning Center / Ag Barn).  The Holly Avenue location is
-        right across the street from Golden Acres Elementary School.`
+        p: `A-Quality Boat & RV Storage has served the Pasadena, Deer Park, La Porte and Clear Lake areas since 2003. We were excited to add our second location in Pasadena on Holly Avenue in 2020. At A-Quality Boat & RV Storage, we pride ourselves with friendly customer service. We offer a wide range of unit sizes for your storage needs including outdoor parking. Our Line Drive location is located off of Red Bluff Rd. behind McCoy’s Building Supply (across from the Deer Park ISD Outdoor Learning Center / Ag Barn). The Holly Avenue location is right across the street from Golden Acres Elementary School.`
     },
     {
-        p: `Both locations give you 24-hour access to your unit, and easy online reservations and online rentals. Don't
-        want to come into the office, or can't make it during regular business hours? You can rent a unit online in a
-        matter of minutes! Once you've moved into your new unit, you'll have around-the-clock access to your account
-        through our tenant portal. Pay your rent without having to call or come in during business hours.`,
+        p: `Both locations provide 24-hour access to your unit with the ability to make easy online payments, reservations and rentals. Once you've moved into your new unit, you'll have around-the-clock access to your account through our tenant portal. Pay your rent without having to call or come in during business hours.`,
     },
     {
-        p: `We understand that storing your belongings, work supplies, recreational vehicle, boat, or camper is not
-        just about conveniences. That's why we take security seriously. Each location is fenced, well-lit, and has
-        security cameras placed around the lot. Our managers also perform routine lot-checks to keep an eye on the
-        condition of the facilities.`,
+        p: `We understand that storing your belongings, work supplies, recreational vehicle, boat, or camper is not just about conveniences. That's why we take security seriously. The facility is fenced, well-lit, with security cameras placed throughout the property. Our managers also perform routine property visits to keep an eye on the facilities.`,
     },
     {
-        p: `Take a moment to review our locations' availability and pricing, then give us a call or perform your own
-        online rental to start reclaiming some of that elbow room and free up that spot in your yard!`
+        p: `Take a moment to review our locations' availability and pricing.  Feel free to give us a call or complete your own online rental which will be followed up with an email confirmation and instructions for gaining access to your new storage unit. `
+    },
+    {
+        p:`We look forward to meeting your storage needs. `
     }
 ];
 
