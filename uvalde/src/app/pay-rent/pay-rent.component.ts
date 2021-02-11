@@ -50,7 +50,7 @@ export class PayRentComponent implements OnInit {
       this.name = 'AFFORDABLE STORAGE #7 - 2633 E. MAIN ST';
       this.contact = contacts2633EastMainStreet;
     } else  if (this.router.url.includes('244-n-grove')) {
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc7;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc8;
       this.name = 'AFFORDABLE STORAGE #8 - 244 N. GROVE';
       this.contact = contacts244NGrove;
     }
