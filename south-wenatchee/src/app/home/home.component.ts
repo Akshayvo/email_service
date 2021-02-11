@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
-  contactsLocation3, contactsLocation4, hoursLocation3, hoursLocation4, } from '../data/contact';
+   } from '../data/contact';
 import { featuresHead, serviceOffered, featuresList,jumbotron } from '../data/home';
 import { homePageScript, ogHomePage, twitterHomePage } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
@@ -120,11 +120,7 @@ export class HomeComponent implements OnInit {
       this.fetchContactDetailsLocation2();
     } else if ( this.locationId === '2' ) {
       this.fetchContactDetailsLocation1();
-    } else if ( this.locationId === '3' ) {
-      this.fetchContactDetailsLocation3();
-    } else if ( this.locationId === '4' ) {
-      this.fetchContactDetailsLocation4();
-    }
+    } 
   }
 
   public fetchScript() {
@@ -142,27 +138,15 @@ export class HomeComponent implements OnInit {
 
 
     public fetchContactDetailsLocation1() {
-      this.heading = `StorageTown Rental Spaces - Chester - Andrews Lane`;
+      this.heading = `South Wenatchee Self Storage`;
       this.contactDetails = contactsLocation1;
       this.hoursDetails = hoursLocation1;
     }
 
     public fetchContactDetailsLocation2() {
-      this.heading = `StorageTown Rental Spaces - Chester - Brookside Ave`;
+      this.heading = `Leo's Self Storage`;
       this.contactDetails = contactsLocation2;
       this.hoursDetails = hoursLocation2;
-    }
-
-    public fetchContactDetailsLocation3() {
-      this.heading = `StorageTown Rental Spaces - Montgomery/Walden`;
-      this.contactDetails = contactsLocation3;
-      this.hoursDetails = hoursLocation3;
-    }
-
-    public fetchContactDetailsLocation4() {
-      this.heading = `StorageTown - Middletown/WallKill Location`;
-      this.contactDetails = contactsLocation4;
-      this.hoursDetails = hoursLocation4;
     }
 
     public fetchFeatureHead() {

@@ -5,10 +5,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4 } from '../../data/contact';
+import { contactsLocation1, contactsLocation2,} from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4,
-   twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4 } from '../../data/script';
+import { ogPayRentPageLocation1, ogPayRentPageLocation2,
+   twitterPayRentPageLocation1, twitterPayRentPageLocation2,} from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -138,19 +138,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
-    } else  if (this.router.url.includes('montgomery-walden')) {
-      this.id = 1;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
-      this.contact = contactsLocation3;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
-    } else  if (this.router.url.includes('middletown-wallKill')) {
-      this.id = 1;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
-      this.contact = contactsLocation4;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
-    }
+    } 
   }
 
   public navigate (location: any) {
@@ -163,33 +151,19 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   public fetchOg() {
     if (this.router.url.includes('leos-self-storage')) {
-      this.og = ogPayRentPageLocation1;
+      this.og = ogPayRentPageLocation2;
     } else {
       if (this.router.url.includes('south-wenatchee')) {
-        this.og = ogPayRentPageLocation2;
-      } else {
-        if (this.router.url.includes('montgomery-walden')) {
-          this.og = ogPayRentPageLocation3;
-        } else {
-          if (this.router.url.includes('middletown-wallKill'))
-          this.og = ogPayRentPageLocation4;
-        }
+        this.og = ogPayRentPageLocation1;
       }
     }}
 
 public fetchTwitter() {
   if (this.router.url.includes('leos-self-storage')) {
-    this.twitter = twitterPayRentPageLocation2;
+    this.twitter = twitterPayRentPageLocation1;
   } else {
     if (this.router.url.includes('south-wenatchee')) {
-      this.twitter = twitterPayRentPageLocation1;
-    } else {
-      if (this.router.url.includes('montgomery-walden')) {
-        this.twitter = twitterPayRentPageLocation3;
-      } else {
-        if (this.router.url.includes('middletown-wallKill'))
-        this.twitter = twitterPayRentPageLocation4;
-      }
+      this.twitter = twitterPayRentPageLocation2;
     }
   }
 }

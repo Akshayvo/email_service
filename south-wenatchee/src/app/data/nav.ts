@@ -19,16 +19,6 @@ export const navLinks = [
                 label: `Leo's Self Storage`,
                 path: '/location/leos-self-storage',
               },
-            //   {
-            //     id: '3',
-            //     label: 'Montgomery/Walden',
-            //     path: '/location/montgomery-walden',
-            // },
-            // {
-            //     id: '4',
-            //     label: 'Middletown/WallKill',
-            //     path: '/location/middletown-wallKill',
-            // },
         ]
     },
     {

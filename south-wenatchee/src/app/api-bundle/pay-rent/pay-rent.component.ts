@@ -5,7 +5,7 @@ import { tabs } from '../../data/tab';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
 import { Meta } from '@angular/platform-browser';
-import { ogPayRentPage, ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4, twitterPayRentPage, twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4 } from '../../data/script';
+import { ogPayRentPage,ogPayRentPageLocation1, ogPayRentPageLocation2, twitterPayRentPageLocation2,twitterPayRentPageLocation1 } from '../../data/script';
 @Component({
   selector: 'app-pay-rent',
   templateUrl: './pay-rent.component.html',
@@ -67,13 +67,6 @@ export class PayRentComponent implements OnInit {
     } else {
       if (this.router.url.includes('south-wenatchee')) {
         this.og = ogPayRentPageLocation1;
-      } else {
-        if (this.router.url.includes('montgomery-walden')) {
-          this.og = ogPayRentPageLocation3;
-        } else {
-          if (this.router.url.includes('middletown-wallKill'))
-          this.og = ogPayRentPageLocation4;
-        }
       }
     }
 }
@@ -84,13 +77,6 @@ public fetchTwitter() {
     } else {
       if (this.router.url.includes('south-wenatchee')) {
         this.twitter = twitterPayRentPageLocation1;
-      } else {
-        if (this.router.url.includes('montgomery-walden')) {
-          this.twitter = twitterPayRentPageLocation3;
-        } else {
-          if (this.router.url.includes('middletown-wallKill'))
-          this.twitter = twitterPayRentPageLocation4;
-        }
       }
     }
 }

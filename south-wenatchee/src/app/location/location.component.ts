@@ -1,18 +1,17 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
-          contactsLocation2, hoursLocation2, hoursLocation3, contactsLocation3, contactsLocation4, hoursLocation4,
-          // contactsLocation3, hoursLocation3,
+          contactsLocation2, hoursLocation2,
           } from '../data/contact';
-import { tabs, tabs1, tabs2, heading3, tabs3, heading4 } from '../data/location';
+import { tabs, tabs1, tabs2,  tabs3,  } from '../data/location';
 import { heading1, heading2 } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
-import { Location1Script, Location2Script, Location3Script, Location4Script,
-  ogLocation1, ogLocation2, ogLocation3, ogLocation4, twitterLocation1,
-  twitterLocation2, twitterLocation3, twitterLocation4 } from '../data/script';
+import { Location1Script, Location2Script, 
+  ogLocation1, ogLocation2, twitterLocation1,
+  twitterLocation2,  } from '../data/script';
 import { featuresHead, featuresSouthWenatchee, featuresList } from '../data/home';
 import { UaParserService } from '../services/ua-parser.service';
 

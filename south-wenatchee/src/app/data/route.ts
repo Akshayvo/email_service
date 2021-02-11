@@ -27,8 +27,6 @@ import { RentSubComponent } from '../api-bundle/rent-sub/rent-sub.component';
 import { SignUpComponent } from '../api-bundle/sign-up/sign-up.component';
 import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
 import { PayRentChesterComponent } from '../pay-rent-chester/pay-rent-chester.component';
-import { PayRentMontgomeryComponent } from '../pay-rent-montgomery/pay-rent-montgomery.component';
-import { PayRentMiddletownComponent } from '../pay-rent-middletown/pay-rent-middletown.component';
 import { PayRentFloridaComponent } from '../pay-rent-florida/pay-rent-florida.component';
 import { ReserveUnitComponent } from '../reserve-unit/reserve-unit.component';
 import { StorageUnitComponent } from '../storage-unit/storage-unit.component';
@@ -157,83 +155,12 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/montgomery-walden',
-      component: LocationComponent,
-      children: [
-        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-        { path: 'storage-units', component: ViewRatesComponent },
-        { path: 'unit-sizer', component: UnitSizerComponent },
-        { path: 'reserve-unit', component: ReserveComponent,
-          children: [
-            { path: '', component: ReserveUnitFormComponent },
-            { path: 'reserve', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-
-          ]
-        },
-        { path: 'moveIn', component: ReserveComponent,
-          children: [
-            { path: '', component: ReserveUnitFormComponent },
-            { path: 'move-in', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-          ]
-        },
-        // { path: 'photos', component: PhotosComponent },
-        { path: 'about', component: AboutUsComponent },
-        { path: 'directions', component: DirectionsComponent },
-      ],
-      resolve: { data: AppResolver }
-    },
-    { path: 'location/middletown-wallKill',
-      component: LocationComponent,
-      children: [
-        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-        { path: 'storage-units', component: ViewRatesComponent },
-        { path: 'unit-sizer', component: UnitSizerComponent },
-        { path: 'reserve-unit', component: ReserveComponent,
-          children: [
-            { path: '', component: ReserveUnitFormComponent },
-            { path: 'reserve', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-          ]
-        },
-        { path: 'moveIn', component: ReserveComponent,
-          children: [
-            // { path: '', component: ViewRatesPageComponent },
-            { path: '', component: ReserveUnitFormComponent },
-            { path: 'move-in', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
-
-          ]
-        },
-        // { path: 'photos', component: PhotosComponent },
-        { path: 'about', component: AboutUsComponent },
-        { path: 'directions', component: DirectionsComponent },
-      ],
-      resolve: { data: AppResolver }
-    },
     { path: 'review/south-wenatchee', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
+        externalUrl: ''
     }
   },
   { path: 'review/leos-self-storage', component: HomeComponent,
@@ -241,25 +168,10 @@ export const apiRoutes = [
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJm7SnExspw4kRPUDRDPAzAIc'
+        externalUrl: ''
     }
   },
-  { path: 'review/montgomery-walden', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJF0fu6ofV3IkR6yRjmwhuYZk'
-    }
-  },
-  { path: 'review/middletown-wallKill', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ3Q9xV4rN3IkRiDFuXQjIbD0'
-    }
-  },
+ 
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
@@ -270,20 +182,10 @@ export const apiRoutes = [
     path: 'pay-rent/south-wenatchee', component: PayRentComponent,
     children: childroute
   },
-  {
-    path: 'pay-rent/montgomery-walden', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/middletown-wallKill', component: PayRentComponent,
-    children: childroute
-  },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'contact-south-wenatchee', component: ContactUsComponent},
   { path: 'contact-leos-self-storage', component: ContactUsComponent},
-  { path: 'contact-montgomery-walden', component: ContactUsComponent},
-  { path: 'contact-middletown-wallKill', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
 ];
@@ -314,34 +216,13 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/montgomery-walden',
-    component: LocationComponent,
-    children: [
-      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-      { path: 'storage-units', component: StorageUnitComponent },
-      { path: 'unit-sizer', component: UnitSizerComponent },
-      { path: 'reserve-unit', component: ReserveUnitComponent },
-      { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
-    ]
-  },
-  { path: 'location/middletown-wallKill',
-    component: LocationComponent,
-    children: [
-      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-      { path: 'storage-units', component: StorageUnitComponent },
-      { path: 'unit-sizer', component: UnitSizerComponent },
-      { path: 'reserve-unit', component: ReserveUnitComponent },
-      { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
-    ]
-  },
+ 
   { path: 'review/south-wenatchee', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
+        externalUrl: ''
     }
   },
   { path: 'review/leos-self-storage', component: HomeComponent,
@@ -349,31 +230,14 @@ export const iFrameRoutes = [
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJm7SnExspw4kRPUDRDPAzAIc'
+        externalUrl: ''
     }
   },
-  { path: 'review/montgomery-walden', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJF0fu6ofV3IkR6yRjmwhuYZk'
-    }
-  },
-  { path: 'review/middletown-wallKill', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ3Q9xV4rN3IkRiDFuXQjIbD0'
-    }
-  },
+ 
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
   { path: 'pay-rent-south-wenatchee', component: PayRentFloridaComponent },
   { path: 'pay-rent-leos-self-storage', component: PayRentChesterComponent},
-  { path: 'pay-rent-montgomery-walden', component: PayRentMontgomeryComponent},
-  { path: 'pay-rent-middletown-wallkill', component: PayRentMiddletownComponent},
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },

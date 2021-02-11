@@ -26,12 +26,6 @@ export class ReserveUnitComponent implements OnInit {
     } else if (this.router.url.includes('/location/leos-self-storage')) {
       this.id = 2;
       this.heading = headingLocation2;
-    } else if (this.router.url.includes('/location/montgomery-walden')) {
-      this.id = 3;
-      this.heading = headingLocation3;
-    } else if (this.router.url.includes('/location/middletown-wallKill')) {
-      this.id = 4;
-      this.heading = headingLocation4;
     }
   }
 }

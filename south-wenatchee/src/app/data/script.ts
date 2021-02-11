@@ -10,20 +10,20 @@ export const homePageScript = [ {
     '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
     'name': 'South Wenatchee Self Storage',
     'url': 'https://south-wenatchee-multi.netlify.app/',
-    'priceRange': '$87-$309',
+    'priceRange': '$44 - $199',
       'address' : {
       '@type' : 'PostalAddress',
-      'addressRegion' : 'New York'
+      'addressRegion' : 'Wenatchee'
     },
      'telephone' : '(509) 662-2600',
-    'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
-    'logo': 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png'
+    'image' : '',
+    'logo': ''
   }, {
 
     '@context' : 'http://schema.org',
     '@type' : ['LocalBusiness', 'SelfStorage'],
-    'name' : 'StorageTown Rental Spaces - Chester - Brookside Ave',
-    'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
+    'name' : 'South Wenatchee Self Storage',
+    'image' : '',
     'telephone' : '(509) 662-2600',
     'email' : 'selfstorageinc@hotmail.com',
     'address' : {
@@ -33,7 +33,7 @@ export const homePageScript = [ {
       'addressRegion' : 'WA',
       'postalCode' : '98801'
     },
-    'openingHours': 'Mo,Tu,We,Th,Fri 09:00-17:00',
+    'openingHours': 'Mo,Tu,We,Th,Fri 12:00-17:00',
     'amenityFeature': [{'@type': 'LocationFeatureSpecification',
     'name': 'Fully-Fenced Facility'},
     {'@type': 'LocationFeatureSpecification',
@@ -49,20 +49,20 @@ export const homePageScript = [ {
     {'@type': 'LocationFeatureSpecification',
     'name': 'Fully alarmed units'}],
     'priceRange': '$87-$309',
-    'url' : 'https://south-wenatchee-multi.netlify.app/location/chester/storage-units'
+    'url' : 'https://south-wenatchee-multi.netlify.app/location/south-wenatchee/storage-units'
   }, {
     '@context' : 'http://schema.org',
     '@type' : ['LocalBusiness', 'SelfStorage'],
-    'name' : 'StorageTown Rental Spaces - Chester - Andrews Lane',
-    'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
-    'telephone' : '(845) 469-4888',
+    'name' : `Leo's Self Storage`,
+    'image' : '',
+    'telephone' : '(509) 662-2600',
     'email' : 'selfstorageinc@hotmail.com',
     'address' : {
       '@type' : 'PostalAddress',
-      'streetAddress' : '1 Andrews Lane',
-      'addressLocality' : 'Chester',
-      'addressRegion' : 'NY',
-      'postalCode' : '10918'
+      'streetAddress' : '1313 N Wenatchee Ave, , WA, 98801',
+      'addressLocality' : 'Wenatchee',
+      'addressRegion' : 'WA',
+      'postalCode' : '98801'
     }, 'priceRange': '$87-$309',
     'openingHours': 'Mo,Tu,We,Th,Fri 09:00-17:00',
     'amenityFeature': [{'@type': 'LocationFeatureSpecification',
@@ -79,107 +79,47 @@ export const homePageScript = [ {
     'name': 'Security Cameras on Premises'},
     {'@type': 'LocationFeatureSpecification',
     'name': 'Fully alarmed units'}],
-    'url' : 'https://south-wenatchee-multi.netlify.app/location/andrews/storage-units'
-  }, {
-    '@context' : 'http://schema.org',
-    '@type' : ['LocalBusiness', 'SelfStorage'],
-    'name' : 'StorageTown Rental Spaces - Montgomery/Walden',
-    'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
-    'telephone' : '(845) 457-3500',
-    'email' : 'storagetownmontgomery@gmail.com',
-    'address' : {
-      '@type' : 'PostalAddress',
-      'streetAddress' : '130 Neelytown Rd,',
-      'addressLocality' : 'Montgomery',
-      'addressRegion' : 'NY',
-      'postalCode' : '12549'
-    }, 'priceRange': '$87-$309',
-    'openingHours': 'Mo,Tu,We,Th,Fri 09:00-17:00',
-    'amenityFeature': [{'@type': 'LocationFeatureSpecification',
-    'name': 'Fully-Fenced Facility'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Easy Online Payments'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Gate with Pin-code Access'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Well-lit Storage Units'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Great Customer Service'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Security Cameras on Premises'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Fully alarmed units'}],
-    'url' : 'https://south-wenatchee-multi.netlify.app/location/montgomery-walden/storage-units'
-  }, {
-    '@context' : 'http://schema.org',
-    '@type' : ['LocalBusiness', 'SelfStorage'],
-    'name' : 'StorageTown - Middletown/WallKill Location',
-    'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
-    'telephone' : '(845) 692-4838',
-    'email' : 'storagetownmiddletown@gmail.com',
-    'address' : {
-      '@type' : 'PostalAddress',
-      'streetAddress' : '2070 Goshen Turnpike',
-      'addressLocality' : 'Middletown',
-      'addressRegion' : 'NY',
-      'postalCode' : '10941'
-    }, 'priceRange': '$87-$309',
-    'openingHours': 'Mo,Tu,We,Th,Fri 09:00-17:00',
-    'amenityFeature': [{'@type': 'LocationFeatureSpecification',
-    'name': 'Fully-Fenced Facility'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Easy Online Payments'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Gate with Pin-code Access'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Well-lit Storage Units'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Great Customer Service'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Security Cameras on Premises'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Fully alarmed units'}],
-    'url' : 'https://south-wenatchee-multi.netlify.app/location/middletown-wallKill/storage-units'
-  } ];
+    'url' : 'https://south-wenatchee-multi.netlify.app/location/leos-self-storage/storage-units'
+  },  ];
 
 
 export const Location1Script = {
     '@context': 'https://schema.org',
     '@type': 'SelfStorage',
     'image': [
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-brookside-ave-small%20%281x1%29.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-brookside-ave-small%20%284x3%29.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-brookside-ave-small%20%2816x9%29.jpg'
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-11.webp',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-43.webp',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-169.webp'
      ],
-    '@id': 'https://south-wenatchee-multi.netlify.app/location/chester/storage-units',
-    'name': 'StorageTown Rental Spaces - Chester - Brookside Ave',
-     'description': 'Our Chester location offers a variety of well-lit, fully-fenced self storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!',
+    '@id': 'https://south-wenatchee-multi.netlify.app/location/south-wenatchee/storage-units',
+    'name': 'South Wenatchee Self Storage',
+     'description': 'We are a locally owned & operated self storage facility serving the Wenatchee, community! Take a moment to review our pricing and availability, then give us a call today!',
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': '53 Brookside Ave',
-      'addressLocality': 'Chester',
-      'addressRegion': 'NY',
-      'postalCode': '10918',
+      'streetAddress': '1536 S Wenatchee Ave',
+      'addressLocality': 'Wenatchee',
+      'addressRegion': 'WA',
+      'postalCode': '98801',
       'addressCountry': 'United state'
     },
    'aggregateRating': {
   '@type': 'AggregateRating',
-  'ratingValue': '3.4',
+  'ratingValue': '3.9',
   'bestRating': '5',
-  'reviewCount': '7'
+  'reviewCount': '18'
 },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 41.351539,
-      'longitude': -74.278008
+      'latitude': 47.401888,
+      'longitude':  -120.300534
     },
-    'url': 'https://south-wenatchee-multi.netlify.app/location/chester/about',
-    'telephone': '(845) 469-4888',
+    'url': 'https://south-wenatchee-multi.netlify.app/location/south-wenatchee/about',
+    'telephone': '(509) 662-2600',
 
-    'priceRange': '$57 - $309',
+    'priceRange': '$44 - $199',
    'openingHours': ['Mo-Sat 09:00-17:00'],
     'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Credit card, Online Payment',
+  'paymentAccepted': 'Check, Cash, Credit Card, Debit Card, Online Credit, Online Debit',
      'areaServed': {
   '@type': 'State',
   'name': 'New York'
@@ -193,165 +133,73 @@ export const Location2Script = {
     '@context': 'https://schema.org',
     '@type': 'SelfStorage',
     'image': [
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-andrews-lane%20-%201x1.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-andrews-lane%20%284x3%29.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-andrews-lane%20%2816x9%29.jpg'
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-11.webp',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-43.webp',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-169.webp'
      ],
-    '@id': 'https://south-wenatchee-multi.netlify.app/location/andrews/storage-units',
-    'name': 'StorageTown Rental Spaces - Chester - Andrews Lane',
-     'description': 'Our Chester location offers a variety of well-lit, fully-fenced self storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!',
+    '@id': 'https://south-wenatchee-multi.netlify.app/location/leos-self-storage/storage-units',
+    'name': `Leo's Self Storage`,
+     'description': 'We are a locally owned & operated self storage facility serving the Wenatchee, community! We offer affordable self storage units in a variety of sizes, and our service always comes with a smile. ',
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': '1 Andrews Lane',
-      'addressLocality': 'Chester',
-      'addressRegion': 'NY',
-      'postalCode': '10918',
+      'streetAddress': '1313 N Wenatchee Ave',
+      'addressLocality': 'Wenatchee',
+      'addressRegion': 'WA',
+      'postalCode': '98801',
       'addressCountry': 'United state'
     },
    'aggregateRating': {
   '@type': 'AggregateRating',
-  'ratingValue': '3',
+  'ratingValue': '',
   'bestRating': '5',
-  'reviewCount': '1'
+  'reviewCount': ''
 },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 41.351674,
-      'longitude': -74.29747
+      'latitude': 47.4409925,
+      'longitude': -120.3269893
     },
-    'url': 'https://south-wenatchee-multi.netlify.app/location/andrews/about',
-    'telephone': '(845) 469-4888',
+    'url': 'https://south-wenatchee-multi.netlify.app/location/leos-self-storage/about',
+    'telephone': '(509) 662-2600',
 
-    'priceRange': '$57 - $309',
+    'priceRange': '$44 - $199',
    'openingHours': ['Mo-Sat 09:00-17:00'],
     'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Credit card, Online Payment',
+  'paymentAccepted': 'Cash, Credit, Check, Online Credit,  Online Debit',
      'areaServed': {
   '@type': 'State',
-  'name': 'New York'
+  'name': 'Wenatchee'
    },
 
     'acceptsReservations': 'True'
 
 };
 
-export const Location3Script = {
-    '@context': 'https://schema.org',
-    '@type': 'SelfStorage',
-    'image': [
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-4%201x1.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-4%20%284x3%29.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-4%20%2816x9%29.jpg'
-     ],
-    '@id': 'https://south-wenatchee-multi.netlify.app/location/montgomery-walden/storage-units',
-    'name': 'StorageTown Rental Spaces - Montgomery/Walden',
-     'description': 'Our Montgomery location offers a wide variety of affordable self storage units in a well-lit, fully-fenced storage facility! Call (845) 457-3500 to learn more!',
-    'address': {
-      '@type': 'PostalAddress',
-      'streetAddress': '130 Neelytown Rd',
-      'addressLocality': 'Montgomery',
-      'addressRegion': 'NY',
-      'postalCode': '12549',
-      'addressCountry': 'United state'
-    },
-   'aggregateRating': {
-  '@type': 'AggregateRating',
-  'ratingValue': '4.3',
-  'bestRating': '5',
-  'reviewCount': '8'
-},
-    'geo': {
-      '@type': 'GeoCoordinates',
-      'latitude': 41.504837,
-      'longitude': -74.217813
-    },
-    'url': 'https://south-wenatchee-multi.netlify.app/location/montgomery-walden/about',
-    'telephone': '(845) 457-3500',
-
-    'priceRange': '$58 - $247',
-   'openingHours': ['Mo-Sat 09:00-17:00'],
-    'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Credit card, Online Payment',
-     'areaServed': {
-  '@type': 'State',
-  'name': 'New York'
-   },
-
-    'acceptsReservations': 'True'
-
-
-};
-
-export const Location4Script = {
-    '@context': 'https://schema.org',
-    '@type': 'SelfStorage',
-    'image': [
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-3-1x1.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-3-%204x3.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-3%2016x9.jpg'
-     ],
-    '@id': 'https://south-wenatchee-multi.netlify.app/location/middletown-wallKill/storage-units',
-    'name': 'StorageTown - Middletown/WallKill Location',
-     'description': 'Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable, well maintained, fully-fenced in self storage units 7 days a week!',
-    'address': {
-      '@type': 'PostalAddress',
-      'streetAddress': '2070 Goshen Turnpike',
-      'addressLocality': 'Middletown',
-      'addressRegion': 'NY',
-      'postalCode': '10941',
-      'addressCountry': 'United state'
-    },
-   'aggregateRating': {
-  '@type': 'AggregateRating',
-  'ratingValue': '4.6',
-  'bestRating': '5',
-  'reviewCount': '8'
-},
-    'geo': {
-      '@type': 'GeoCoordinates',
-      'latitude': 41.465688,
-      'longitude': -74.344892
-    },
-    'url': 'https://south-wenatchee-multi.netlify.app/location/middletown-wallKill/about',
-    'telephone': '(845) 692-4838',
-
-    'priceRange': '$92 - $300',
-   'openingHours': ['Mo-Sat 09:00-17:00'],
-    'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Credit card, Online Payment',
-     'areaServed': {
-  '@type': 'State',
-  'name': 'New York'
-   },
-
-    'acceptsReservations': 'True'
-
-};
 
 export const contactPageLocation1Script = {
     '@context': 'http://schema.org',
     '@type': 'Selfstorage',
-    'name': 'StorageTown Rental Spaces - Chester - Brookside Ave',
+    'name': 'South Wenatchee Self Storage',
     'address': {
       '@type': 'PostalAddress',
-      'addressLocality': 'Chester',
-      'postalCode': '10918',
-      'streetAddress': '53 Brookside Ave'
+      'addressLocality': 'Wenatchee',
+      'postalCode': '98801',
+      'streetAddress': ' 1536 S Wenatchee Ave'
     },
-     'url': 'https://south-wenatchee-multi.netlify.app/location/chester/about',
+     'url': 'https://south-wenatchee-multi.netlify.app/location/south-wenatchee/about',
      'image': [
-          'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-brookside-ave-small%20%281x1%29.jpg'
+          'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-11.webp'
          ],
     'contactPoint': [{
       '@type': 'ContactPoint',
-      'telephone': '(845) 469-4888',
+      'telephone': '(509) 662-2600',
       'contactType': 'reservations'
     }, {
       '@type': 'ContactPoint',
-      'telephone': '(845) 469-4888',
+      'telephone': '(509) 662-2600',
       'contactType': 'customer service'
     }],
-    'email': 'storagetownchester@gmail.com',
+    'email': 'selfstorageinc@hotmail.com',
     'sameAs': [
       '',
       '',
@@ -363,27 +211,27 @@ export const contactPageLocation1Script = {
 export const contactPageLocation2Script = {
     '@context': 'http://schema.org',
     '@type': 'Selfstorage',
-    'name': 'StorageTown Rental Spaces - Chester - Andrews Lane',
+    'name': `Leo's Self Storage`,
     'address': {
       '@type': 'PostalAddress',
-      'addressLocality': 'Chester',
-      'postalCode': '10918',
-      'streetAddress': '1 Andrews Lane'
+      'addressLocality': 'Wenatchee',
+      'postalCode': '98801',
+      'streetAddress': ' 1313 N Wenatchee Ave'
     },
-     'url': 'https://south-wenatchee-multi.netlify.app/location/andrews/about',
+     'url': 'https://south-wenatchee-multi.netlify.app/location/leos-self-storage/about',
      'image': [
-          'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-andrews-lane%20-%201x1.jpg'
+          'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-11.webp'
          ],
     'contactPoint': [{
       '@type': 'ContactPoint',
-      'telephone': '(845) 469-4888',
+      'telephone': '(509) 662-2600',
       'contactType': 'reservations'
     }, {
       '@type': 'ContactPoint',
-      'telephone': '(845) 469-4888',
+      'telephone': '(509) 662-2600',
       'contactType': 'customer service'
     }],
-    'email': 'storagetownchester@gmail.com',
+    'email': 'selfstorageinc@hotmail.com',
     'sameAs': [
       '',
       '',
@@ -391,75 +239,12 @@ export const contactPageLocation2Script = {
     ]
 };
 
-export const contactPageLocation3Script = {
-    '@context': 'http://schema.org',
-    '@type': 'Selfstorage',
-    'name': 'StorageTown Rental Spaces - Montgomery/Walden',
-    'address': {
-      '@type': 'PostalAddress',
-      'addressLocality': 'Montgomery',
-      'postalCode': '12549',
-      'streetAddress': '130 Neelytown Rd'
-    },
-     'url': 'https://south-wenatchee-multi.netlify.app/location/montgomery-walden/about',
-     'image': [
-          'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-4%201x1.jpg'
-         ],
-    'contactPoint': [{
-      '@type': 'ContactPoint',
-      'telephone': '(845) 457-3500',
-      'contactType': 'reservations'
-    }, {
-      '@type': 'ContactPoint',
-      'telephone': '(845) 457-3500',
-      'contactType': 'customer service'
-    }],
-    'email': 'storagetownmontgomery@gmail.com',
-    'sameAs': [
-      '',
-      '',
-      ''
-    ]
 
-};
-
-export const contactPageLocation4Script = {
-    '@context': 'http://schema.org',
-    '@type': 'Selfstorage',
-    'name': 'StorageTown - Middletown/WallKill Location',
-    'address': {
-      '@type': 'PostalAddress',
-      'addressLocality': 'Middletown',
-      'postalCode': '10941',
-      'streetAddress': '2070 Goshen Turnpike'
-    },
-     'url': 'https://south-wenatchee-multi.netlify.app/location/middletown-wallKill/about',
-     'image': [
-          'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-3-1x1.jpg'
-         ],
-    'contactPoint': [{
-      '@type': 'ContactPoint',
-      'telephone': '(845) 692-4838',
-      'contactType': 'reservations'
-    }, {
-      '@type': 'ContactPoint',
-      'telephone': '(845) 692-4838',
-      'contactType': 'customer service'
-    }],
-    'email': 'storagetownmiddletown@gmail.com',
-    'sameAs': [
-      '',
-      '',
-      ''
-    ]
-
-};
 
 export const ogHomePage = [
   {
     property: `og:description`,
-    content: `We offer a wide range of self storage, car, RV and boat storage!
-    Check out our 4 convenient locations in Orange County, NY!`
+    content: `Our South Wenatchee location offers a variety of unit types at very affordable rates! Check the rates and reserve today!`
   },
   {
     property: `og:type`,
@@ -467,7 +252,7 @@ export const ogHomePage = [
   },
   {
     property: `og:title`,
-    content: `Affordable Self Storage Units | StorageTown Rental Spaces`
+    content: `South Wenatchee Location | South Wenatchee Self Storage`
   },
   {
     property: `og:site_name`,
@@ -479,14 +264,14 @@ export const ogHomePage = [
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
 export const twitterHomePage = [
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@South Wenatchee Self Storage`
   },
   {
     name: `twitter:card`,
@@ -498,16 +283,15 @@ export const twitterHomePage = [
   },
   {
     name: `twitter:title`,
-    content: `@StorageTown Rental Speces`
+    content: `@South Wenatchee Self Storage`
   },
   {
     name: `twitter:description`,
-    content: `We offer a wide range of self storage, car, RV and boat storage!
-    Check out our 4 convenient locations in Orange County, NY!`
+    content: `Our South Wenatchee location offers a variety of unit types at very affordable rates! Check the rates and reserve today!`
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
@@ -515,69 +299,11 @@ export const twitterHomePage = [
 export const ogLocation1 = [
   {
     property: `og:title`,
-    content: `Self Storage Units in Chester | StorageTown Rental Spaces`
+    content: `South Wenatchee Location | South Wenatchee Self Storage`
   },
   {
     property: `og:description`,
-    content: `Our Chester location offers a variety of well-lit, fully-fenced self
-    storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!`
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: `South Wenatchee Self Storage`
-  },
-  {
-    property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/location/leos-self-storage/storage-units`
-  },
-  {
-    property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`
-  },
-];
-
-export const twitterLocation1 = [
-  {
-    name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:title`,
-    content: `@Self Storage Units in Chester | StorageTown Rental Spaces`
-  },
-  {
-    name: `twitter:description`,
-    content: `Our Chester location offers a variety of well-lit, fully-fenced self
-    storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!`
-  },
-  {
-    name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`
-  },
-];
-
-
-export const ogLocation2 = [
-  {
-    property: `og:title`,
-    content: `Storage Units in Chester, NY | StorageTown Rental Spaces `
-  },
-  {
-    property: `og:description`,
-    content: `Our Florida/Warwick location has a variety of unit sizes and all storage units
-    are individually alarmed for your safety!`
+    content: `Our South Wenatchee location offers a variety of unit types at very affordable rates! Check the rates and reserve today!`
   },
   {
     property: `og:type`,
@@ -593,14 +319,69 @@ export const ogLocation2 = [
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+  },
+];
+
+export const twitterLocation1 = [
+  {
+    name: `twitter:site`,
+    content: `@South Wenatchee Self Storage`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:title`,
+    content: `@South Wenatchee Location | South Wenatchee Self Storage`
+  },
+  {
+    name: `twitter:description`,
+    content: `Our South Wenatchee location offers a variety of unit types at very affordable rates! Check the rates and reserve today!`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+  },
+];
+
+
+export const ogLocation2 = [
+  {
+    property: `og:title`,
+    content: `Leo's Self Storage | South Wenatchee Self Storage`
+  },
+  {
+    property: `og:description`,
+    content: `Take a look at the rates and availability at our Leo's Self Storage location, then reserve your unit online in seconds, or call our office for more information!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Leo's Self Storage`
+  },
+  {
+    property: `og:url`,
+    content: `https://south-wenatchee-multi.netlify.app/location/south-wenatchee/storage-units`
+  },
+  {
+    property: `og:image`,
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
 export const twitterLocation2 = [
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@Leo's Self Storage`
   },
   {
     name: `twitter:card`,
@@ -612,131 +393,19 @@ export const twitterLocation2 = [
   },
   {
     name: `twitter:title`,
-    content: `@Storage Units in Chester, NY | StorageTown Rental Spaces`
+    content: `@Leo's Self Storage | South Wenatchee Self Storage`
   },
   {
     name: `twitter:description`,
-    content: `Our Florida/Warwick location has a variety of unit sizes and all storage units
-    are individually alarmed for your safety!`
+    content: `Take a look at the rates and availability at our Leo's Self Storage location, then reserve your unit online in seconds, or call our office for more information!`
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
 
-export const ogLocation3 = [
-  {
-    property: `og:title`,
-    content: `Storage Units in Montgomery, NY | StorageTown Rental Spaces`
-  },
-  {
-    property: `og:description`,
-    content: `Our Montgomery location offers a wide variety of affordable self storage units in a well-lit,
-    fully-fenced storage facility! Call (845) 457-3500 to learn more!`
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: `South Wenatchee Self Storage`
-  },
-  {
-    property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/location/montgomery-walden/storage-units`
-  },
-  {
-    property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-4.jpg`
-  },
-];
-
-export const twitterLocation3 = [
-  {
-    name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:title`,
-    content: `@Storage Units in Montgomery, NY | StorageTown Rental Spaces`
-  },
-  {
-    name: `twitter:description`,
-    content: `Our Montgomery location offers a wide variety of affordable self storage units in a well-lit,
-    fully-fenced storage facility! Call (845) 457-3500 to learn more!`
-  },
-  {
-    name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-4.jpg`
-  },
-];
-
-export const ogLocation4 = [
-  {
-    property: `og:title`,
-    content: `Self Storage Units in Middletown | StorageTown Rental Spaces`
-  },
-  {
-    property: `og:description`,
-    content: `Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable,
-    well maintained, fully-fenced in self storage units 7 days a week!`
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: `South Wenatchee Self Storage`
-  },
-  {
-    property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/location/middletown-wallKill/storage-units`
-  },
-  {
-    property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg`
-  },
-];
-
-export const twitterLocation4 = [
-  {
-    name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:title`,
-    content: `@Self Storage Units in Middletown | StorageTown Rental Spaces`
-  },
-  {
-    name: `twitter:description`,
-    content: `Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable,
-    well maintained, fully-fenced in self storage units 7 days a week!`
-  },
-  {
-    name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg`
-  },
-];
 
 export const ogPayRentPage = [
   {
@@ -745,7 +414,7 @@ export const ogPayRentPage = [
   },
   {
     property: `og:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: `Pay your rent at either of our locations by clicking on this link and following our basic instructions!`
   },
   {
     property: `og:type`,
@@ -761,7 +430,7 @@ export const ogPayRentPage = [
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
@@ -772,11 +441,11 @@ export const twitterPayRentPage = [
   },
   {
     name: `twitter:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: `Pay your rent at either of our locations by clicking on this link and following our basic instructions!`
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@South Wenatchee Self Storage`
   },
   {
     name: `twitter:card`,
@@ -788,7 +457,7 @@ export const twitterPayRentPage = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
@@ -799,7 +468,7 @@ export const ogPayRentPageLocation1 = [
   },
   {
     property: `og:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: `Review our current rates and availability, then reserve your unit, or rent now in minutes with our easy online tenant portal!`
   },
   {
     property: `og:type`,
@@ -811,11 +480,11 @@ export const ogPayRentPageLocation1 = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/pay-rent/leos-self-storage/login`
+    content: `https://south-wenatchee-multi.netlify.app/pay-rent/south-wenatchee/login`
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
@@ -826,11 +495,11 @@ export const twitterPayRentPageLocation1 = [
   },
   {
     name: `twitter:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: `Review our current rates and availability, then reserve your unit, or rent now in minutes with our easy online tenant portal!`
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@South Wenatchee Self Storage`
   },
   {
     name: `twitter:card`,
@@ -842,18 +511,18 @@ export const twitterPayRentPageLocation1 = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
 export const ogPayRentPageLocation2 = [
   {
     property: `og:title`,
-    content: `Pay Rent | South Wenatchee Self Storage`
+    content: `Pay Rent | South Wenatchee Storage`
   },
   {
     property: `og:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: `Follow the simple instructions on this page to access your account. Pay your rent 24 hours a day!`
   },
   {
     property: `og:type`,
@@ -861,7 +530,7 @@ export const ogPayRentPageLocation2 = [
   },
   {
     property: `og:site_name`,
-    content: `South Wenatchee Self Storage`
+    content: `Leo's Self Storage`
   },
   {
     property: `og:url`,
@@ -869,22 +538,22 @@ export const ogPayRentPageLocation2 = [
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
 export const twitterPayRentPageLocation2 = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | South Wenatchee Self Storage`
+    content: `@Pay Rent | South Wenatchee Storage`
   },
   {
     name: `twitter:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: `Follow the simple instructions on this page to access your account. Pay your rent 24 hours a day!`
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@Leo's Self Storage`
   },
   {
     name: `twitter:card`,
@@ -896,127 +565,20 @@ export const twitterPayRentPageLocation2 = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
-export const ogPayRentPageLocation3 = [
-  {
-    property: `og:title`,
-    content: `Pay Rent | South Wenatchee Self Storage`
-  },
-  {
-    property: `og:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: `South Wenatchee Self Storage`
-  },
-  {
-    property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/pay-rent/montgomery-walden/login`
-  },
-  {
-    property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
-  },
-];
 
-export const twitterPayRentPageLocation3 = [
-  {
-    name: `twitter:title`,
-    content: `@Pay Rent | South Wenatchee Self Storage`
-  },
-  {
-    name: `twitter:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
-  },
-  {
-    name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
-  },
-];
-
-export const ogPayRentPageLocation4 = [
-  {
-    property: `og:title`,
-    content: `Pay Rent | South Wenatchee Self Storage`
-  },
-  {
-    property: `og:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: `South Wenatchee Self Storage`
-  },
-  {
-    property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/pay-rent/middletown-wallKill/login`
-  },
-  {
-    property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
-  },
-];
-
-export const twitterPayRentPageLocation4 = [
-  {
-    name: `twitter:title`,
-    content: `@Pay Rent | South Wenatchee Self Storage`
-  },
-  {
-    name: `twitter:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
-  },
-  {
-    name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
-  },
-];
 
 export const ogStorageTipsPage = [
   {
     property: `og:title`,
-    content: `Storage Tips | StorageTown Rental Spaces`
+    content: `Storage Tips  | South Wenatchee Self Stoage`
   },
   {
     property: `og:description`,
-    content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
-    make your stay with us a breeze!`
+    content: `Take a moment to review our storage tips page and make your self storage experience a breeze!`
   },
   {
     property: `og:type`,
@@ -1032,23 +594,22 @@ export const ogStorageTipsPage = [
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
 export const twitterStorageTipsPage = [
   {
     name: `twitter:title`,
-    content: `@Storage Tips | StorageTown Rental Spaces`
+    content: `@Storage Tips  | South Wenatchee Self Stoage`
   },
   {
     name: `twitter:description`,
-    content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
-    make your stay with us a breeze!`
+    content: `Take a moment to review our storage tips page and make your self storage experience a breeze!`
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@South Wenatchee Self Stoage`
   },
   {
     name: `twitter:card`,
@@ -1060,7 +621,7 @@ export const twitterStorageTipsPage = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
@@ -1071,8 +632,7 @@ export const ogContactPage = [
   },
   {
     property: `og:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: `Use the contact information or the contact form on this page to speak to one of our friendly self storage managers!`
   },
   {
     property: `og:type`,
@@ -1088,7 +648,7 @@ export const ogContactPage = [
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
@@ -1099,12 +659,11 @@ export const twitterContactPage = [
   },
   {
     name: `twitter:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: `Use the contact information or the contact form on this page to speak to one of our friendly self storage managers!`
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@South Wenatchee Self Storage`
   },
   {
     name: `twitter:card`,
@@ -1116,7 +675,7 @@ export const twitterContactPage = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
@@ -1127,63 +686,7 @@ export const ogContactPageLocation1 = [
   },
   {
     property: `og:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: `South Wenatchee Self Storage`
-  },
-  {
-    property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/contact-leos-self-storage`
-  },
-  {
-    property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
-  },
-];
-
-export const twitterContactPageLocation1 = [
-  {
-    name: `twitter:title`,
-    content: `@Contact Us | South Wenatchee Self Storage`
-  },
-  {
-    name: `twitter:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
-  },
-  {
-    name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
-  },
-];
-export const ogContactPageLocation2 = [
-  {
-    property: `og:title`,
-    content: `Contact Us | South Wenatchee Self Storage`
-  },
-  {
-    property: `og:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`
   },
   {
     property: `og:type`,
@@ -1199,7 +702,60 @@ export const ogContactPageLocation2 = [
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+  },
+];
+
+export const twitterContactPageLocation1 = [
+  {
+    name: `twitter:title`,
+    content: `@Contact Us | South Wenatchee Self Storage`
+  },
+  {
+    name: `twitter:description`,
+    content: `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`
+  },
+  {
+    name: `twitter:site`,
+    content: `@South Wenatchee Self Storage`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+  },
+];
+export const ogContactPageLocation2 = [
+  {
+    property: `og:title`,
+    content: `Contact Us | South Wenatchee Self Storage`
+  },
+  {
+    property: `og:description`,
+    content: `Take a moment to fill our out form or use the contact information to reach out to our friendly storage management team!`
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: `Leo's Self Storage`
+  },
+  {
+    property: `og:url`,
+    content: `https://south-wenatchee-multi.netlify.app/contact-leos-self-storage`
+  },
+  {
+    property: `og:image`,
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];
 
@@ -1210,12 +766,11 @@ export const twitterContactPageLocation2 = [
   },
   {
     name: `twitter:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: `Take a moment to fill our out form or use the contact information to reach out to our friendly storage management team!`
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@Leo's Self Storage`
   },
   {
     name: `twitter:card`,
@@ -1227,116 +782,6 @@ export const twitterContactPageLocation2 = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
-  },
-];
-export const ogContactPageLocation3 = [
-  {
-    property: `og:title`,
-    content: `Contact Us | South Wenatchee Self Storage`
-  },
-  {
-    property: `og:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: `South Wenatchee Self Storage`
-  },
-  {
-    property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/contact-montgomery-walden`
-  },
-  {
-    property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
-  },
-];
-
-export const twitterContactPageLocation3 = [
-  {
-    name: `twitter:title`,
-    content: `@Contact Us | South Wenatchee Self Storage`
-  },
-  {
-    name: `twitter:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
-  },
-  {
-    name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
-  },
-];
-export const ogContactPageLocation4 = [
-  {
-    property: `og:title`,
-    content: `Contact Us | South Wenatchee Self Storage`
-  },
-  {
-    property: `og:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: `South Wenatchee Self Storage`
-  },
-  {
-    property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/contact-middletown-wallKill`
-  },
-  {
-    property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
-  },
-];
-
-export const twitterContactPageLocation4 = [
-  {
-    name: `twitter:title`,
-    content: `@Contact Us | South Wenatchee Self Storage`
-  },
-  {
-    name: `twitter:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
-  },
-  {
-    name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
   },
 ];

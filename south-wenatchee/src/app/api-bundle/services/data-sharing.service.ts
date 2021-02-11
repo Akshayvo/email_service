@@ -8,8 +8,6 @@ export class DataSharingService {
   locationAPIKey = {
     loc1: 'XjF7MkYyVzVHOEk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 12258
     loc2: 'XjF7MkYyVzVHOEk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 12258
-    loc3: 'XjF7N0YzVzZHMEk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 17360
-    loc4: 'XjF7NUY0VzhHOUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 15489
   };
 
 //  locationAPIKey = {                                                     // demo north

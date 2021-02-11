@@ -3,12 +3,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
-          contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3, hoursLocation4, contactsLocation4,  } from '../data/contact';
+          contactsLocation2, hoursLocation2,  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3, ogContactPageLocation4, twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4 } from '../data/script';
+import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2,  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 @Component({
   selector: 'app-contact-us',
@@ -100,13 +99,6 @@ export class ContactUsComponent implements OnInit {
     } else {
       if (this.router.url.includes('south-wenatchee')) {
         this.og = ogContactPageLocation1;
-      } else {
-        if (this.router.url.includes('montgomery-walden')) {
-          this.og = ogContactPageLocation3;
-        } else {
-          if (this.router.url.includes('middletown-wallKill'))
-          this.og = ogContactPageLocation4;
-        }
       }
     }
 }
@@ -117,14 +109,7 @@ public fetchTwitter() {
     } else {
       if (this.router.url.includes('south-wenatchee')) {
         this.twitter = twitterContactPageLocation1;
-      } else {
-        if (this.router.url.includes('montgomery-walden')) {
-          this.twitter = twitterContactPageLocation3;
-        } else {
-          if (this.router.url.includes('middletown-wallKill'))
-          this.twitter = twitterContactPageLocation4;
-        }
-      }
+      } 
     }
 }
 
@@ -164,10 +149,6 @@ public fetchTwitter() {
       this.fetchContactDetailsLocation1();
     } else if (this.router.url.includes('leos-self-storage')) {
       this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('montgomery-walden')) {
-      this.fetchContactDetailsLocation3();
-    } else if (this.router.url.includes('middletown-wallKill')) {
-      this.fetchContactDetailsLocation4();
     }
   }
 
@@ -185,20 +166,7 @@ public fetchTwitter() {
     this.hoursDetails = hoursLocation2;
   }
 
-  public fetchContactDetailsLocation3() {
-    this.heading = `StorageTown Rental Spaces - Montgomery/Walden`;
-    this.locationId = '3'
-    this.contactDetails = contactsLocation3;
-    this.hoursDetails = hoursLocation3;
-  }
-
-  public fetchContactDetailsLocation4() {
-    this.heading = `StorageTown - Middletown/WallKill Location`;
-    this.locationId = '4'
-    this.contactDetails = contactsLocation4;
-    this.hoursDetails = hoursLocation4;
-  }
-
+  
 onSubmit() {
   this.submitted = true;
   const today = new Date();
