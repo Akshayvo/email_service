@@ -224,14 +224,6 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       )
     ],
     });
-    // if (this.showAltDetails === true) {
-
-
-    // }
-    console.log('type of ', 
-    typeof(this.reserveUnitForm.controls.objTenant), 
-    this.reserveUnitForm.controls['objTenant'],
-    this.reserveUnitForm.get('objTenant')['controls']);
 
 
 

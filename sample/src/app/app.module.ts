@@ -113,7 +113,7 @@ import { AlternateDetailsComponent } from './alternate-details/alternate-details
     HttpClientModule,
     SelectDropDownModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [
     DatePipe,

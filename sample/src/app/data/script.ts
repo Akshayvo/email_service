@@ -5,12 +5,30 @@ contactPageContent, contactPageTitle } from '../data/title';
 import { featuresList } from '../data/home';
 import { contact, hours, socialLinks } from '../data/contact';
 import { FetchDataService } from '../api-bundle/services/fetch-data.service';
+import { OnInit, Component, Input, Output  } from '@angular/core';
+
+@Component({})
+export class getValues  {
 
 
-//  let foo = new FetchDataService();
-//  foo.getData().subscribe(unitTypesResponse => {
-//    console.log('unitTypesResponse', unitTypesResponse);
-// });
+  constructor(
+    
+  ) {
+    console.log('class is wrkng');
+    this.getData();
+
+  }
+
+  getData() {
+console.log('im ');
+
+    }
+ 
+} 
+
+new getValues();
+
+ 
  
 const contactIndex = contact.findIndex(x => x.label === 'Phone:');
 const emailIndex = contact.findIndex(x => x.label === 'Email:');
@@ -27,10 +45,14 @@ featuresList.forEach(
   amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td2}))
 )
 
-socialLinks.forEach(links => 
-  sameAs.push(links.path)
-)
+socialLinks.forEach(links => {
+  links.path ? sameAs.push(links.path) : sameAs.push(' ')
+}
+);
   
+export const ogGraphImage = `https://example.com/photos/16x9/photo.jpg` // 4:3
+
+export const twitterImage = `https://example.com/photos/1x1/photo.jpg` // 1:1
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
@@ -155,7 +177,7 @@ export const ogHomePage = [
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+    content: ogGraphImage
   },
 ];
 
@@ -182,7 +204,7 @@ export const twitterHomePage = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+    content: twitterImage
   },
 ];
 
@@ -209,7 +231,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+      content: ogGraphImage
     },
   ];
   
@@ -236,7 +258,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+      content: twitterImage
     },
   ];
 
@@ -263,7 +285,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+      content: ogGraphImage
     },
   ];
   
@@ -290,7 +312,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+      content: twitterImage
     },
   ];
   
@@ -317,7 +339,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+      content: ogGraphImage
     },
   ];
   
@@ -344,7 +366,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg`
+      content: twitterImage
     },
   ];
 

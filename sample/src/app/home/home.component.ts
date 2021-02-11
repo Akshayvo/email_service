@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2, Inject } from '@angular/core';
+import { Component, OnInit, Renderer2, Inject,OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
@@ -11,13 +11,15 @@ import { objSIMSetting } from '../data/configuration';
 import { environment } from '../../environments/environment';
 import { homePageScript, ogHomePage, script, twitterHomePage } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
+import { FetchDataService } from '../api-bundle/services/fetch-data.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
 
   contactDetails: any;
   hours: any;
@@ -43,7 +45,7 @@ export class HomeComponent implements OnInit {
   twitterHomePage: any;
   script: any;
 
-
+  private getDataSubscribe$: Subscription;
   constructor(
     private router: Router,
     private titleService: Title,
@@ -52,6 +54,7 @@ export class HomeComponent implements OnInit {
     private metaService: MetaService,
     private uaParserService: UaParserService,
     private canonical: CanonicalService,
+    private fetchDataService: FetchDataService,
     @Inject(DOCUMENT) private _document: any,
   ) {
     this.fetchScript();
@@ -93,6 +96,7 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit() {
+    this.getData();
     this.objSIMSetting = objSIMSetting;
     this.fetchContactDetails();
     this.fetchHours();
@@ -104,6 +108,32 @@ export class HomeComponent implements OnInit {
     this.fetchScript();
     window.scrollTo(0, 0);
   }
+
+  findMinMax(arr) {
+    let min = arr[0].MonthlyRate, max = arr[0].MonthlyRate;
+    for (let i = 1, len=arr.length; i < len; i++) {
+      let v = arr[i].MonthlyRate;
+      min = (v < min) ? v : min;
+      max = (v > max) ? v : max;
+    }
+  
+    return [min, max];
+  }
+
+  getData() {
+    this.getDataSubscribe$ = this.fetchDataService.getData()
+      .subscribe(unitTypesResponse => {
+        this.findMinMax(unitTypesResponse.lstUnitTypes)
+
+     const min = this.findMinMax(unitTypesResponse.lstUnitTypes)[0];
+     const max= this.findMinMax(unitTypesResponse.lstUnitTypes)[1];
+
+     console.log('this.findMinMax(unitTypesResponse.lstUnitTypes)[0]', min,
+     'this.findMinMax(unitTypesResponse.lstUnitTypes)[1]', max);
+     
+      });
+    }
+  
 
   public loadScript() {
     const node = document.createElement('script'); // creates the script tag
@@ -172,4 +202,9 @@ export class HomeComponent implements OnInit {
     return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 
+  public ngOnDestroy(): void {
+    if (this.getDataSubscribe$ && this.getDataSubscribe$.closed) {
+      this.getDataSubscribe$.unsubscribe();
+    }
+  }
 }
