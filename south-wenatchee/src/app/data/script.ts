@@ -16,14 +16,22 @@ export const homePageScript = [ {
       'addressRegion' : 'Wenatchee'
     },
      'telephone' : '(509) 662-2600',
-    'image' : '',
+     'image': [
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-11.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-43.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-169.jpg'
+     ],
     'logo': ''
   }, {
 
     '@context' : 'http://schema.org',
     '@type' : ['LocalBusiness', 'SelfStorage'],
     'name' : 'South Wenatchee Self Storage',
-    'image' : '',
+    'image': [
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-11.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-43.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-169.jpg'
+     ],
     'telephone' : '(509) 662-2600',
     'email' : 'selfstorageinc@hotmail.com',
     'address' : {
@@ -34,27 +42,24 @@ export const homePageScript = [ {
       'postalCode' : '98801'
     },
     'openingHours': 'Mo,Tu,We,Th,Fri 12:00-17:00',
-    'amenityFeature': [{'@type': 'LocationFeatureSpecification',
-    'name': 'Fully-Fenced Facility'},
+    'amenityFeature': [
     {'@type': 'LocationFeatureSpecification',
     'name': 'Easy Online Payments'},
     {'@type': 'LocationFeatureSpecification',
-    'name': 'Gate with Pin-code Access'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Well-lit Storage Units'},
-    {'@type': 'LocationFeatureSpecification',
     'name': 'Great Customer Service'},
     {'@type': 'LocationFeatureSpecification',
-    'name': 'Security Cameras on Premises'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Fully alarmed units'}],
-    'priceRange': '$87-$309',
-    'url' : 'https://south-wenatchee-multi.netlify.app/location/south-wenatchee/storage-units'
+    'name': 'Security Cameras on Premises'}],
+    'priceRange': '$44-$199',
+    'url' : 'https://south-wenatchee-multi.netlify.app/wa/south-wenatchee/storage-units'
   }, {
     '@context' : 'http://schema.org',
     '@type' : ['LocalBusiness', 'SelfStorage'],
     'name' : `Leo's Self Storage`,
-    'image' : '',
+    'image': [
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-11.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-43.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-169.jpg'
+     ],
     'telephone' : '(509) 662-2600',
     'email' : 'selfstorageinc@hotmail.com',
     'address' : {
@@ -63,23 +68,15 @@ export const homePageScript = [ {
       'addressLocality' : 'Wenatchee',
       'addressRegion' : 'WA',
       'postalCode' : '98801'
-    }, 'priceRange': '$87-$309',
+    }, 'priceRange': '$44-$199',
     'openingHours': 'Mo,Tu,We,Th,Fri 09:00-17:00',
     'amenityFeature': [{'@type': 'LocationFeatureSpecification',
-    'name': 'Fully-Fenced Facility'},
-    {'@type': 'LocationFeatureSpecification',
     'name': 'Easy Online Payments'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Gate with Pin-code Access'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Well-lit Storage Units'},
     {'@type': 'LocationFeatureSpecification',
     'name': 'Great Customer Service'},
     {'@type': 'LocationFeatureSpecification',
-    'name': 'Security Cameras on Premises'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Fully alarmed units'}],
-    'url' : 'https://south-wenatchee-multi.netlify.app/location/leos-self-storage/storage-units'
+    'name': 'Security Cameras on Premises'}],
+    'url' : 'https://south-wenatchee-multi.netlify.app/wa/leos-self-storage/storage-units'
   },  ];
 
 
@@ -87,11 +84,11 @@ export const Location1Script = {
     '@context': 'https://schema.org',
     '@type': 'SelfStorage',
     'image': [
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-11.webp',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-43.webp',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-169.webp'
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-11.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-43.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-169.jpg'
      ],
-    '@id': 'https://south-wenatchee-multi.netlify.app/location/south-wenatchee/storage-units',
+    '@id': 'https://south-wenatchee-multi.netlify.app/wa/south-wenatchee/storage-units',
     'name': 'South Wenatchee Self Storage',
      'description': 'We are a locally owned & operated self storage facility serving the Wenatchee, community! Take a moment to review our pricing and availability, then give us a call today!',
     'address': {
@@ -113,7 +110,7 @@ export const Location1Script = {
       'latitude': 47.401888,
       'longitude':  -120.300534
     },
-    'url': 'https://south-wenatchee-multi.netlify.app/location/south-wenatchee/about',
+    'url': 'https://south-wenatchee-multi.netlify.app/wa/south-wenatchee/about',
     'telephone': '(509) 662-2600',
 
     'priceRange': '$44 - $199',
@@ -133,11 +130,11 @@ export const Location2Script = {
     '@context': 'https://schema.org',
     '@type': 'SelfStorage',
     'image': [
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-11.webp',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-43.webp',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-169.webp'
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-11.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-43.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-169.jpg'
      ],
-    '@id': 'https://south-wenatchee-multi.netlify.app/location/leos-self-storage/storage-units',
+    '@id': 'https://south-wenatchee-multi.netlify.app/wa/leos-self-storage/storage-units',
     'name': `Leo's Self Storage`,
      'description': 'We are a locally owned & operated self storage facility serving the Wenatchee, community! We offer affordable self storage units in a variety of sizes, and our service always comes with a smile. ',
     'address': {
@@ -148,18 +145,18 @@ export const Location2Script = {
       'postalCode': '98801',
       'addressCountry': 'United state'
     },
-   'aggregateRating': {
-  '@type': 'AggregateRating',
-  'ratingValue': '',
-  'bestRating': '5',
-  'reviewCount': ''
-},
+//    'aggregateRating': {
+//   '@type': 'AggregateRating',
+//   'ratingValue': '',
+//   'bestRating': '5',
+//   'reviewCount': ''
+// },
     'geo': {
       '@type': 'GeoCoordinates',
       'latitude': 47.4409925,
       'longitude': -120.3269893
     },
-    'url': 'https://south-wenatchee-multi.netlify.app/location/leos-self-storage/about',
+    'url': 'https://south-wenatchee-multi.netlify.app/wa/leos-self-storage/about',
     'telephone': '(509) 662-2600',
 
     'priceRange': '$44 - $199',
@@ -186,9 +183,9 @@ export const contactPageLocation1Script = {
       'postalCode': '98801',
       'streetAddress': ' 1536 S Wenatchee Ave'
     },
-     'url': 'https://south-wenatchee-multi.netlify.app/location/south-wenatchee/about',
+     'url': 'https://south-wenatchee-multi.netlify.app/wa/south-wenatchee/about',
      'image': [
-          'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-11.webp'
+          'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-11.jpg'
          ],
     'contactPoint': [{
       '@type': 'ContactPoint',
@@ -218,9 +215,9 @@ export const contactPageLocation2Script = {
       'postalCode': '98801',
       'streetAddress': ' 1313 N Wenatchee Ave'
     },
-     'url': 'https://south-wenatchee-multi.netlify.app/location/leos-self-storage/about',
+     'url': 'https://south-wenatchee-multi.netlify.app/wa/leos-self-storage/about',
      'image': [
-          'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-11.webp'
+          'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-11.jpg'
          ],
     'contactPoint': [{
       '@type': 'ContactPoint',
@@ -264,7 +261,7 @@ export const ogHomePage = [
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -291,7 +288,7 @@ export const twitterHomePage = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -315,11 +312,11 @@ export const ogLocation1 = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/location/south-wenatchee/storage-units`
+    content: `https://south-wenatchee-multi.netlify.app/wa/south-wenatchee/storage-units`
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -346,7 +343,7 @@ export const twitterLocation1 = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -370,11 +367,11 @@ export const ogLocation2 = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/location/south-wenatchee/storage-units`
+    content: `https://south-wenatchee-multi.netlify.app/wa/south-wenatchee/storage-units`
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -401,7 +398,7 @@ export const twitterLocation2 = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -430,7 +427,7 @@ export const ogPayRentPage = [
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -457,7 +454,7 @@ export const twitterPayRentPage = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -484,7 +481,7 @@ export const ogPayRentPageLocation1 = [
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -511,7 +508,7 @@ export const twitterPayRentPageLocation1 = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -538,7 +535,7 @@ export const ogPayRentPageLocation2 = [
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -565,7 +562,7 @@ export const twitterPayRentPageLocation2 = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -594,7 +591,7 @@ export const ogStorageTipsPage = [
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -621,7 +618,7 @@ export const twitterStorageTipsPage = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -648,7 +645,7 @@ export const ogContactPage = [
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -675,7 +672,7 @@ export const twitterContactPage = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -702,7 +699,7 @@ export const ogContactPageLocation1 = [
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -729,7 +726,7 @@ export const twitterContactPageLocation1 = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 export const ogContactPageLocation2 = [
@@ -755,7 +752,7 @@ export const ogContactPageLocation2 = [
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];
 
@@ -782,6 +779,6 @@ export const twitterContactPageLocation2 = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp`
+    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg`
   },
 ];

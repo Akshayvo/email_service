@@ -27,9 +27,9 @@ export class AboutUsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/south-wenatchee')) {
+    if (this.router.url.includes('/wa/south-wenatchee')) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes('/location/leos-self-storage')) {
+  } else if (this.router.url.includes('/wa/south-wenatchee')) {
     this.fetchDetailsLocation2();
   }
 }

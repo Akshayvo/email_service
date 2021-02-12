@@ -72,7 +72,7 @@ export class LocationComponent implements OnInit {
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
-      if (this.router.url.includes('/location/south-wenatchee')) {
+      if (this.router.url.includes('/wa/south-wenatchee')) {
             this.meta.addTag({
               name: 'description',
               content: `Our South Wenatchee location offers a variety of unit types at very affordable rates! Check the rates and reserve today!`
@@ -96,7 +96,7 @@ export class LocationComponent implements OnInit {
                 content: element.content
               })
             });
-    } else if (this.router.url.includes('/location/leos-self-storage')) {
+    } else if (this.router.url.includes('/wa/leos-self-storage')) {
            this.meta.addTag({
              name: 'description',
              content: `Take a look at the rates and availability at our Leo's Self Storage
@@ -152,35 +152,35 @@ export class LocationComponent implements OnInit {
 
   
   public fetchOg() {
-    if (this.router.url.includes('/location/south-wenatchee')) {
+    if (this.router.url.includes('/wa/south-wenatchee')) {
       this.og = ogLocation1;
-  } else if (this.router.url.includes('/location/leos-self-storage')) {
+  } else if (this.router.url.includes('/wa/leos-self-storage')) {
     this.og = ogLocation2;
   } 
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes('/location/south-wenatchee')) {
+    if (this.router.url.includes('/wa/south-wenatchee')) {
       this.twitter = twitterLocation1;
-  } else if (this.router.url.includes('/location/leos-self-storage')) {
+  } else if (this.router.url.includes('/wa/leos-self-storage')) {
     this.twitter = twitterLocation2;
   } 
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/south-wenatchee')) {
+    if (this.router.url.includes('/wa/south-wenatchee')) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes('/location/leos-self-storage')) {
+    } else if (this.router.url.includes('/wa/leos-self-storage')) {
       this.fetchDetailsLocation2();
     } 
  }
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate(['/location/south-wenatchee/reserve-unit'],
+    this.router.navigate(['/wa/south-wenatchee/reserve-unit'],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/leos-self-storage/reserve-unit'],
+    this.router.navigate(['/wa/leos-self-storage/reserve-unit'],
           );
   }  
  }

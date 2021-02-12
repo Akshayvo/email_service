@@ -12,12 +12,12 @@ export const navLinks = [
             {
                 id: '1',
                 label: 'South Wenatchee Self Storage',
-                path: '/location/south-wenatchee',
+                path: '/wa/south-wenatchee',
             },
             {
                 id: '2',
                 label: `Leo's Self Storage`,
-                path: '/location/leos-self-storage',
+                path: '/wa/leos-self-storage',
               },
         ]
     },
