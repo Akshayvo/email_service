@@ -13,6 +13,6 @@ export const environment = {
   facilityName: 'Railroad Street Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://railroad-staging.netlify.app',
+  websiteUrl: 'https://railroad-storage.com',
   APIKey: `bTJUOW40TDBbOFs6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
 };

@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://railroad-staging.netlify.app/sitemap.xml
+Sitemap: https://railroad-storage.com/sitemap.xml
 User-agent: *
 Disallow: /privacy-policy
