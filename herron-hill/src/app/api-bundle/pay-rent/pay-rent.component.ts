@@ -7,6 +7,7 @@ import { payRentHeading } from '../../data/heading';
 import { payRentPageContent, payRentPageTitle } from '../../data/title';
 import { environment } from '../../../environments/environment';
 import { CanonicalService } from '../../services/canonical.service';
+import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
 
 @Component({
   selector: 'app-pay-rent',
@@ -24,6 +25,9 @@ export class PayRentComponent implements OnInit {
   payRentHeading: string;
   showPaymentPageType: number;
 
+  og: any;
+  twitter: any;
+  
   constructor(
     private titleService: Title,
     private router: Router,
@@ -34,6 +38,21 @@ export class PayRentComponent implements OnInit {
 
   ) {
     this.fetchMetaData();
+     this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
     this.meta.addTag({
       name: 'description',
       content: `${this.payRentPageContent}`
@@ -50,6 +69,14 @@ export class PayRentComponent implements OnInit {
   public fetchMetaData() {
     this.payRentPageContent = payRentPageContent;
     this.payRentPageTitle = payRentPageTitle;
+  }
+
+  public fetchOg() {
+    this.og = ogPayRentPage;
+  }
+
+  public fetchTwitter() {
+    this.twitter = twitterPayRentPage;
   }
 
   public fetchContactDetails() {

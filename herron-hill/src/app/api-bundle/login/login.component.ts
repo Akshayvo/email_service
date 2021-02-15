@@ -59,21 +59,21 @@ export class LoginComponent implements OnInit, OnDestroy {
     public elementRef: ElementRef,
   ) {
     this.fetchMetaData();
-    this.fetchOg();
-    this.fetchTwitter();
-    this.og.forEach(element => {
-      this.meta.addTag({
-        property: element.property,
-        content: element.content
-      })
-    });
+    // this.fetchOg();
+    // this.fetchTwitter();
+    // this.og.forEach(element => {
+    //   this.meta.addTag({
+    //     property: element.property,
+    //     content: element.content
+    //   })
+    // });
 
-    this.twitter.forEach(element => {
-      this.meta.addTag({
-        name: element.name,
-        content: element.content
-      })
-    });
+    // this.twitter.forEach(element => {
+    //   this.meta.addTag({
+    //     name: element.name,
+    //     content: element.content
+    //   })
+    // });
 
   }
 
@@ -116,13 +116,13 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.open = !this.open;
   }
 
-  public fetchOg() {
-    this.og = ogPayRentPage;
-  }
+  // public fetchOg() {
+  //   this.og = ogPayRentPage;
+  // }
 
-  public fetchTwitter() {
-    this.twitter = twitterPayRentPage;
-  }
+  // public fetchTwitter() {
+  //   this.twitter = twitterPayRentPage;
+  // }
 
   public fetchMetaData() {
     this.payRentPageContent = payRentPageContent;

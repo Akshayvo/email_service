@@ -263,7 +263,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:url`,
-      content: `${environment.websiteUrl}/storage-tips`
+      content: `${environment.websiteUrl}/${environment.locationName}/storage-tips`
     },
     {
       property: `og:image`,
