@@ -240,9 +240,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           this.reservationInProgress = false;
 
           if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+            this.router.navigate([`wa/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
           } else {
-            this.router.navigate([`location/${this.facilityLocation}/reserve-unit/thank-you`]);
+            this.router.navigate([`wa/${this.facilityLocation}/reserve-unit/thank-you`]);
           }
         }
 
@@ -287,9 +287,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           }
           this.reservationInProgress = false;
           if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`location/${this.facilityLocation}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
+            this.router.navigate([`wa/${this.facilityLocation}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
           } else {
-            this.router.navigate([`location/${this.facilityLocation}/moveIn/thank-you`]);
+            this.router.navigate([`wa/${this.facilityLocation}/moveIn/thank-you`]);
           }
         }
       }, (err: any) => {

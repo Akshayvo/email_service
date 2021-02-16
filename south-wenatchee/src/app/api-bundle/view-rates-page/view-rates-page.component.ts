@@ -86,7 +86,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.dataSharingService.updateMyNavLink('viewRates', 'prev', `${this.router.url}`);
     const myNavLinks = this.dataSharingService.getMyNavLinks('viewRates');
     console.log('TCL: ViewRatesPageComponent -> navigate -> myNavLinks', myNavLinks);
-    this.router.navigate([`location/${this.facilityLocation}/${location}`]);
+    this.router.navigate([`wa/${this.facilityLocation}/${location}`]);
     this.dataSharingService.LstUnitTypes = unitData;
   }
 
