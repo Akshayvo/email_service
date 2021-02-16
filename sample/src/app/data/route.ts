@@ -74,6 +74,9 @@ const withTab = [
 // const reservationForm = environment
 const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
 
+
+const reviewURL = ``
+
  export const apiRoutes = [
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
@@ -118,7 +121,7 @@ const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: ''
+          externalUrl: `${reviewURL}`
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
@@ -140,7 +143,7 @@ export const iFrameRoutes = [
           url: 'externalUrlRedirectResolver'
       },
       data: {
-          externalUrl: ''
+          externalUrl: `${reviewURL}`
       }
     },
     { path: 'error', component: ErrorHandlerComponent },

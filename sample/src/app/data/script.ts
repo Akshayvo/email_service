@@ -50,18 +50,18 @@ socialLinks.forEach(links => {
 }
 );
   
-export const ogGraphImage = `https://example.com/photos/16x9/photo.jpg` // 4:3
+export const ogGraphImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jp` // 4:3
 
-export const twitterImage = `https://example.com/photos/1x1/photo.jpg` // 1:1
+export const twitterImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg` // 1:1
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://example.com/photos/1x1/photo.jpg",
-      "https://example.com/photos/4x3/photo.jpg",
-      "https://example.com/photos/16x9/photo.jpg"
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jp", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jp" // 16:9
      ],
      imagesContactPage: [
-      "https://example.com/photos/1x1/photo.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg",
      ],
      telephone: contact[contactIndex].data,
      map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
@@ -281,7 +281,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:url`,
-      content: `${environment.websiteUrl}/storage-tips`
+      content: `${environment.websiteUrl}/${environment.locationName}/storage-tips`
     },
     {
       property: `og:image`,

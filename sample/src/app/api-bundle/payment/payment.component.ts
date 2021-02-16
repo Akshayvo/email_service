@@ -25,22 +25,22 @@ export class PaymentComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private meta: Meta
   ) {
-    this.fetchMetaData();
-    this.fetchOg();
-    this.fetchTwitter();
-    this.og.forEach(element => {
-      this.meta.addTag({
-        property: element.property,
-        content: element.content
-      })
-    });
+    // this.fetchMetaData();
+    // this.fetchOg();
+    // this.fetchTwitter();
+    // this.og.forEach(element => {
+    //   this.meta.addTag({
+    //     property: element.property,
+    //     content: element.content
+    //   })
+    // });
 
-    this.twitter.forEach(element => {
-      this.meta.addTag({
-        name: element.name,
-        content: element.content
-      })
-    });
+    // this.twitter.forEach(element => {
+    //   this.meta.addTag({
+    //     name: element.name,
+    //     content: element.content
+    //   })
+    // });
     this.meta.addTag({
       name: 'description',
       content: `${this.payRentPageContent}`
@@ -55,13 +55,13 @@ export class PaymentComponent implements OnInit {
   }
 
   
-  public fetchOg() {
-    this.og = ogPayRentPage;
-  }
+  // public fetchOg() {
+  //   this.og = ogPayRentPage;
+  // }
 
-  public fetchTwitter() {
-    this.twitter = twitterPayRentPage;
-  }
+  // public fetchTwitter() {
+  //   this.twitter = twitterPayRentPage;
+  // }
 
 
   public fetchMetaData() {
