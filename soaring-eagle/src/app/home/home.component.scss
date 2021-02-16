@@ -6,9 +6,6 @@
   }
 }
 
-
-
-
 .display-contact {
   display: flex;
 }
@@ -164,18 +161,13 @@
 }
 
 .jumbotorn-skew-style {
-  width: 60%;
-  float: right;
-  left: -20%;
-  position: relative;
-  height: 50%;
-  margin-top: 300px;
   text-align: center;
-  padding: 4.5rem!important;
+  padding: 40px;
 
   a {
     margin-top: 20px;
   }
+
   p {
     display: block;
     // margin-block-start: 1em;
@@ -194,6 +186,13 @@
 }
 
 
+.display {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
 
 .btn-primary {
   background-color: #81301f;
@@ -211,16 +210,7 @@
   border-radius: 25px;
 }
 
-.jumbotorn-skew-text {
-  transform: skew(0deg);
-  width: 500px;
-  position: absolute;
-  top: 30%;
 
-  .btn-outline-primary {
-    margin-right: 10px;
-  }
-}
 
 
 
@@ -235,13 +225,6 @@
     }
   }
 
-  .jumbotorn-skew-text {
-    a {
-      font-size: 1rem;
-    }
-
-  }
-
   .jumbotorn-skew-style {
     margin-top: 200px;
   }
@@ -251,6 +234,11 @@
 @media only screen and (min-width: 1200px) and (max-height: 639px) and (min-height: 480px) {
   .jumbotron {
     height: 100vh;
+  }
+
+  .jumbotorn-skew-style {
+    margin-top: 60px;
+    padding: 20px;
   }
 
   .disp {
@@ -269,12 +257,6 @@
 
   .jumbotron-bottom {
     height: 150px;
-  }
-
-  .jumbotorn-skew-text {
-    a {
-      font-size: 1rem;
-    }
   }
 }
 
@@ -296,35 +278,16 @@
     }
   }
 
-  .disp {
-    display: none;
-  }
-
   .button-width {
     max-width: 200px;
     margin: auto;
   }
 
   .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 90px;
-    bottom: 0;
-    position: absolute;
+    display: none;
   }
 
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 10px;
 
-    a {
-      font-size: 1.25rem;
-      min-width: 200px;
-    }
-  }
 
   .jumbotorn-button {
     padding: 10px;
@@ -340,23 +303,7 @@
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
-  .jumbotorn-skew-text {
-    width: 444px;
 
-    a {
-      font-size: 1rem;
-    }
-
-    .disp {
-      h2 {
-        font-size: 2.1rem;
-      }
-
-      p {
-        font-size: 0.9rem;
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 750px) and (min-height: 640px) {
@@ -369,16 +316,6 @@
       font-size: 0.8rem;
     }
   }
-
-  .jumbotorn-skew-text {
-    top: 25%;
-
-    .disp {
-      h2 {
-        font-size: 2rem;
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 639px) and (min-height: 480px) {
@@ -386,13 +323,20 @@
     height: 100vh;
   }
 
-  .jumbotorn-skew-text {
-    .disp {
-      h2 {
-        font-size: 2rem;
-      }
-    }
+  .jumbotorn-skew-style {
+    padding: 20px;
+    margin-top: 40px;
   }
+
+ .disp {
+   h1 {
+     font-size: 2rem;
+   }
+
+   p {
+     font-size: 0.9rem;
+   }
+ }
 
   .jumbotron-top {
     height: 100vh;
@@ -420,9 +364,6 @@
     }
   }
 
-  .disp {
-    display: none;
-  }
 
   .button-width {
     max-width: 200px;
@@ -430,25 +371,9 @@
   }
 
   .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 90px;
-    bottom: 0;
-    position: absolute;
+    display: none;
   }
 
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 10px;
-
-    a {
-      font-size: 1.25rem;
-      min-width: 200px;
-    }
-  }
 
   .jumbotorn-button {
     padding: 10px;
@@ -473,26 +398,8 @@
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .jumbotorn-skew-style {
-    width: 85%;
   }
 
-  .jumbotorn-skew-text {
-    width: 410px;
-
-    a {
-      font-size: 1rem;
-    }
-
-    .disp {
-      h2 {
-        font-size: 1.8rem;
-      }
-
-      p {
-        font-size: 0.9rem;
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 700px) and (min-height: 480px) {
@@ -506,6 +413,31 @@
 
   .jumbotron-bottom {
     height: 160px;
+  }
+
+  .disp {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .button-top-margin {
+    .btn-outline-primary {
+      font-size: 1rem;
+    }
+
+    .btn-primary {
+      font-size: 1rem;
+    }
+  }
+
+  .jumbotorn-skew-style {
+    padding: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -531,9 +463,6 @@
     display: none;
   }
 
-  .disp {
-    display: none;
-  }
 
   .button-width {
     max-width: 200px;
@@ -541,24 +470,7 @@
   }
 
   .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 90px;
-    bottom: 0;
-    position: absolute;
-  }
-
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 10px;
-
-    a {
-      font-size: 1.25rem;
-      min-width: 200px;
-    }
+    display: none;
   }
 
   .jumbotorn-button {
@@ -567,181 +479,123 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
-  .jumbotron-top {
-    height: 100vh;
-  }
-
-  .jumbotron {
-    height: 100vh;
-  }
-
-  .jumbotron-bottom {
-    height: 200px;
-  }
-
   .jumbotorn-skew-style {
-    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
   }
 
-  .jumbotorn-skew-text {
-    top: 45%;
-    width: 340px;
+  .disp {
+    h1 {
+      font-size: 2rem;
+    }
 
-    a {
-      min-width: 140px;
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 700px) and (min-height: 480px)  {
+  .jumbotorn-skew-style {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .disp {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
       font-size: 0.8rem;
     }
-
-    .disp {
-      p {
-        font-size: 0.8rem;
-      }
-
-      h2 {
-        font-size: 1.6rem;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 600px) {
-  .jumbotron {
-    text-align: center;
-    background-attachment: unset;
-    background-position: center left;
-    height: 100vh;
-
-    h1 {
-      font-size: 2em;
-    }
-
-    .container {
-      height: 100%;
-      display: flex;
-    }
   }
 
-  .jumbotron-top {
-    height: 100vh;
-  }
-
-  .jumbotron-bottom {
-    height: 0;
-  }
-
-  .feature {
-    display: none;
-  }
-
-  .disp {
-    display: none;
-  }
-
-  .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 90px;
-    bottom: 0;
-    position: absolute;
-  }
-
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 10px;
-
-    a {
-      font-size: 1.25rem;
-      min-width: 200px;
-    }
-  }
-
-  .jumbotorn-button {
-    padding: 10px;
-  }
-}
-
-@media only screen and (max-width: 600px) and (min-width: 420px) {
-  .jumbotron {
-    text-align: center;
-    background-attachment: unset;
-    background-position: center left;
-    height: 100vh;
-  }
-
-  .feature {
-    display: none;
-  }
-
-  .disp {
-    display: none;
-  }
-
-  .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 90px;
-    bottom: 0;
-    position: absolute;
-  }
-
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 10px;
-  }
-
-  .jumbotorn-button {
-    padding: 10px;
-  }
-}
-
-@media only screen and (max-width: 429px) {
-  .jumbotron {
-    text-align: center;
-    background-attachment: unset;
-    background-position: center left;
-    height: 100vh;
-  }
-
-  .feature {
-    display: none;
-  }
-
-  .disp {
-    display: none;
-  }
-
-  .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 150px;
-    bottom: 0;
-    position: absolute;
-  }
-
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 2px;
-
+  .button-top-margin {
     .btn-outline-primary {
-      margin-right: 0;
-      margin-bottom: 8px;
+      font-size: 1rem;
     }
 
     .btn-primary {
-      margin-top: 8px;
+      font-size: 1rem;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 479px) {
+  .jumbotorn-skew-style {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 486px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+  }
+
+  .feature {
+    display: none;
+  }
+
+
+  .jumbotorn-skew-style {
+    padding: 20px;
+
+    h1 {
+      font-size: 1.8rem;
+    } 
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .button-top-margin {
+    .btn-outline-primary {
+      font-size: 1rem;
     }
 
-    .jumbotorn-button {
-      padding: 15px;
+    .btn-primary {
+      font-size: 1rem;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 486px) and (max-height: 479px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+  }
+
+  .feature {
+    display: none;
+  }
+
+  .jumbotorn-skew-style {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+  }
+
+  .feature {
+    display: none;
+  }
+
+  .jumbotorn-skew-style {
+    display: none;
   }
 }
