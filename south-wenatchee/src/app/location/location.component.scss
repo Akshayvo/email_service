@@ -127,9 +127,10 @@
 @media only screen and (min-width: 992px) {
   .contact-details {
     .btn-area {
+      padding-top: 20px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: initial;
     }
   }
 }
