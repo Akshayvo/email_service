@@ -83,7 +83,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
-        // { path: 'reserve', component: ReserveUnitFormComponent },
+        { path: 'reserve', component: ReserveUnitFormComponent },
         { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
         { path: 'confirmation-page', component: ConfirmationPageComponent },
