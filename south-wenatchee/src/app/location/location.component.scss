@@ -2,7 +2,7 @@
 
 .contact-details {
   background-color: $light;
-  padding-top: 172px;
+  padding-top: 90px;
 }
 
 .feature-block {
@@ -269,16 +269,24 @@
   }
 }
 
-// @media only screen and (max-width: 767px) and (min-width: 601px) {
-//   .contact-details {
-//     padding-top: 174px;
-//   }
-// }
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .contact-details {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+  .contact-details {
+    padding-top: 40px;
+  }
+}
+
+
 
 @media only screen and (max-width: 600px) {
   .contact-details {
     background-color: $light;
-    padding-top: 115px;
+    padding-top: 30px;
 
     .row {
       margin-left: 1px;
