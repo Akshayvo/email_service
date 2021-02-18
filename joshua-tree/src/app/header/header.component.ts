@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
   navbarCollapsed = true;
   imagetype: any;
   imageBaseUrl: any;
+  mobile: boolean;
 
   constructor(
     private router: Router,
@@ -30,6 +31,10 @@ export class HeaderComponent implements OnInit {
     this.fetchNavigationLinks();
     this.fetchSocialLinks();
     this.fetchContactDetails();
+
+    if (window.screen.width === 360) { // 768px portrait
+      this.mobile = true;
+    }
   }
 
   public fetchContactDetails() {
