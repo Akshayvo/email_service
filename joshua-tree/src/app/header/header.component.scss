@@ -45,7 +45,8 @@ img {
   .nav-link {
     color: $black;
     font-weight: 600;
-    // padding: 21px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 
   .nav-link:hover {
@@ -64,9 +65,7 @@ img {
       color: $primary;
     }
   }
-  .container{
-    align-items: flex-end;
-  }
+
   button:focus {
     outline: 5px auto $primary;
   }
@@ -100,7 +99,6 @@ img {
   .nav-link {
     text-align: center;
   }
-
 
   .navbar-nav {
     align-items: center;
