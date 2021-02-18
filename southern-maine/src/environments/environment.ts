@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'me/portland', // state/city,
+  locationName: 'me/saco', // state/city,
   signUpForAuotoPay: 0, // { Yes: 1, No: 0 }
   alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   reservetionFormType: 0, // { withoutAlternateDetail:0, withAlternateDetial: 1}
@@ -18,7 +18,7 @@ export const environment = {
   VERSION: require('../../package.json').version,
   facilityName: 'Southern Maine Storage',
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: '',
+  websiteUrl: 'https://www.southernmainestorage.com/',
   // baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // AnotherLocationAPIKey: `MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
   // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',

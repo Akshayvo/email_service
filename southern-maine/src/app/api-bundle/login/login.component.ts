@@ -59,6 +59,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.fetchLoginDetail();
     this.fetchContactDetails();
 
+
     this.loginForm = this.formBuilder.group({
       strUserName: ['', Validators.required],
       strPassword: ['', Validators.required],
@@ -68,7 +69,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
         if (this.dataSharingService.changePassword === true) {
-          this.router.navigate(['/pay-rent/rent-sub/changePassword']);
+          this.router.navigate(['/pay-rent/changePassword']);
         } else {
           if (this.router.url.includes('rent-sub')) {
             this.router.navigate(['/pay-rent/rent-sub/payment']);
@@ -81,6 +82,7 @@ export class LoginComponent implements OnInit, OnDestroy {
           }
         }
        }
+       
     }
 
     if (!!localStorage.getItem('paymentTab')) {
@@ -96,6 +98,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   public navigate (location: any) {
     if (!!this.paymentTab) {
+      console.log("here working")
       this.router.navigate([`/pay-rent/${this.paymentTab}/${location}`]);
     } else {
       this.router.navigate([`/pay-rent/${location}`]);

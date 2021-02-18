@@ -9,7 +9,10 @@ import { UaParserService } from '../services/ua-parser.service';
 import { homePageTitle, homePageContent } from '../data/title';
 import { objSIMSetting } from '../data/configuration';
 import { environment } from '../../environments/environment';
-import { script } from '../data/script';
+import { script, homePageScript, ogHomePage, twitterHomePage } from '../data/script';
+import { FetchDataService } from '../api-bundle/services/fetch-data.service';
+import { CanonicalService } from '../services/canonical.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -40,7 +43,10 @@ export class HomeComponent implements OnInit {
   template: string;
   script: any;
   accessHours: any;
+  ogHomePage: any;
+  twitterHomePage: any;
 
+  private getDataSubscribe$: Subscription;
   constructor(
     private router: Router,
     private titleService: Title,
@@ -48,25 +54,49 @@ export class HomeComponent implements OnInit {
     private _renderer2: Renderer2,
     private metaService: MetaService,
     private uaParserService: UaParserService,
+    private canonical: CanonicalService,
+    private fetchDataService: FetchDataService,
     @Inject(DOCUMENT) private _document: any,
   ) {
+    this.fetchScript();
+    this.loadScript();
     this.fetchMetaData();
+    this.fetchOgHomePage();
+    this.fetchTwitterHomePage();
+    this.ogHomePage.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitterHomePage.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
     this.meta.addTag({
       name: 'description',
       content: `${this.homePageContent}`
     });
     this.titleService.setTitle(`${this.homePageTitle}`);
-    this.metaService.createCanonicalURL();
+    this.canonical.create();
 
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   public navigate(location: any) {
-    this.router.navigate([location]);
+    if ((location === '/view-rates') || (location === '/storage-tips') || (location === '/reserve-unit')) {
+      this.router.navigate([`${environment.locationName}/${location}`]);
+    } else {
+      this.router.navigate([`${location}`]); 
+    }
   }
 
   ngOnInit() {
+    this.getData();
     this.objSIMSetting = objSIMSetting;
     this.fetchContactDetails();
     this.fetchHours();
@@ -75,8 +105,53 @@ export class HomeComponent implements OnInit {
     this.fetchFeature();
     this.fetchJumbotron();
     this.fetchTemplate();
-    this.fetchScript();
     window.scrollTo(0, 0);
+  }
+
+  findMinMax(arr) {
+    let min = arr[0].MonthlyRate, max = arr[0].MonthlyRate;
+    for (let i = 1, len=arr.length; i < len; i++) {
+      let v = arr[i].MonthlyRate;
+      min = (v < min) ? v : min;
+      max = (v > max) ? v : max;
+    }
+  
+    return [min, max];
+  }
+
+  getData() {
+    this.getDataSubscribe$ = this.fetchDataService.getData()
+      .subscribe(unitTypesResponse => {
+        this.findMinMax(unitTypesResponse.lstUnitTypes)
+
+     const min = this.findMinMax(unitTypesResponse.lstUnitTypes)[0];
+     const max= this.findMinMax(unitTypesResponse.lstUnitTypes)[1];
+
+     console.log('this.findMinMax(unitTypesResponse.lstUnitTypes)[0]', min,
+     'this.findMinMax(unitTypesResponse.lstUnitTypes)[1]', max);
+     
+      });
+    }
+  
+
+  public loadScript() {
+    const node = document.createElement('script'); // creates the script tag
+    node.type = 'application/ld+json'; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+
+  }
+
+  public fetchOgHomePage() {
+    this.ogHomePage = ogHomePage;
+  }
+
+  public fetchTwitterHomePage() {
+    this.twitterHomePage = twitterHomePage;
   }
 
   public fetchTemplate() {
@@ -117,7 +192,7 @@ export class HomeComponent implements OnInit {
   }
 
   public fetchScript() {
-    this.script = script;
+    this.script = homePageScript;
   }
 
   public getImageUrl(imageName: string) {
