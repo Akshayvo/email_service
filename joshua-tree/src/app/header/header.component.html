@@ -26,6 +26,10 @@
     <a class="navbar-brand" (click)="navigate('/')" class="mr-0">
       <img src="{{imageBaseUrl}}/joshua-tree-mini-storage-and-plaza.{{imagetype}}"  alt="joshua tree mini storage & plaza logo displaying a tree with decorative fonts around it">
     </a>
+    <div>
+    <a class="btn btn-lg btn-primary mobile-btn" (click)="navigate('/pay-rent')"  >PAY RENT
+    </a>
+    </div>
     <div class="p-2">
     <button class="navbar-toggler py-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
    aria-label="Toggle navigation">
@@ -37,7 +41,7 @@
         <li class="nav-item px-2" *ngFor="let nav of navLinks">
           <a class="nav-link" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
           [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)" *ngIf="nav?.path != '/pay-rent'">{{nav.label}}</a>
-          <a class="btn btn-lg btn-primary" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
+          <a class="btn btn-lg btn-primary header-payrent" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path" 
           [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)" *ngIf="nav?.path === '/pay-rent' ">{{nav.label}}</a>
         </li>
       </ul>

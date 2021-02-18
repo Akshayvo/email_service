@@ -35,6 +35,9 @@ img {
   }
 }
 
+.mobile-btn{
+  display:none;
+}
 .social :hover {
   color: $white;
 }
@@ -77,6 +80,7 @@ img {
     border-bottom: #0366d6!important;
     border: #0366d6!important ;
   }
+  
 }
 
 .display {
@@ -114,12 +118,6 @@ img {
     font-size: 13px;
   }
 
-  .btn-primary{
-    display: flex;
-    align-items: center;
-    flex: 0 0 auto; 
-  }
-
   .navbar-nav {
     align-items: center;
 
@@ -140,4 +138,17 @@ img {
     overflow-y: scroll;
   }
   
+}
+
+@media only screen and (max-width: 420px) {
+
+  .header-payrent{
+    display:none;
+  }
+  .mobile-btn{
+    display: inline;
+  }
+  img {
+    width: 100px;
+  }
 }
