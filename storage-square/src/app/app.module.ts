@@ -58,6 +58,8 @@ import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { MicrodataComponent } from './api-bundle/microdata/microdata.component';
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
+import { UpdateDetailsComponent } from './api-bundle/update-details/update-details.component';
+import { UpdateComponent } from '../app/api-bundle/update/update.component';
 
 @NgModule({
   declarations: [
@@ -101,6 +103,8 @@ import { AlternateDetailsComponent } from './alternate-details/alternate-details
     PrivacyPolicyComponent,
     MicrodataComponent,
     AlternateDetailsComponent,
+    UpdateComponent,
+    UpdateDetailsComponent
   ],
   imports: [
     CommonModule,
