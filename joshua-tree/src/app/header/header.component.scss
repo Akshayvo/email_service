@@ -64,7 +64,9 @@ img {
       color: $primary;
     }
   }
-
+  .container{
+    align-items: flex-end;
+  }
   button:focus {
     outline: 5px auto $primary;
   }
