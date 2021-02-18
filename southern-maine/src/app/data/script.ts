@@ -88,7 +88,7 @@ import { homePageContent, homePageTitle, payRentPageTitle, payRentPageContent,
       "telephone": script.telephone,
       
       "priceRange": "$15 - $245",
-      "openingHours": ['mo,tu,we,th,fr, 8:00 AM to 5:00 PM'],
+      "openingHours": ['Mo,Tu,We,Th,Fr 8:00 - 17:00'],
       "currenciesAccepted": script.currenciesAccepted,
       "paymentAccepted": script.paymentAccepted,
        "areaServed": {
