@@ -33,23 +33,6 @@ export const unitSizer = [
     },
     {
       id: 2,
-      size: '5\' x 15\'',
-      heading: '5\' x 15\' Storage Unit',
-      alt: '5\' x 15\' Storage Unit Graphic',
-      unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
-      data: `This unit is approximately 75 sq feet of space that can hold the contents of one small room, such as:`,
-      amenities: [
-        { content: 'Chairs', },
-        { content: 'Small desks', },
-        { content: 'Small Bookcases', },
-        { content: 'Suitcases', },
-        { content: 'Lamps', },
-        { content: 'Kitchenware', },
-        { content : 'Mattresses' },
-      ],
-    },
-    {
-      id: 3,
       size: '10\' x 10\'',
       heading: '10\' x 10\' Storage Unit',
       alt: '10\' x 10\' Storage Unit Graphic ',
@@ -66,7 +49,7 @@ export const unitSizer = [
       ],
     },
     {
-      id: 4,
+      id: 3,
       size: '10\' x 15\'',
       heading: '10\' x 15\' Storage Unit',
       alt: '10\' x 15\' Storage Unit Graphic ',
@@ -82,7 +65,7 @@ export const unitSizer = [
       ],
     },
     {
-      id: 5,
+      id: 4,
       size: '10\' x 20\'',
       heading: '10\' x 20\' Storage Unit',
       alt: '10\' x 20\' Storage Unit Graphic ',
@@ -97,7 +80,7 @@ export const unitSizer = [
       ],
     },
     {
-      id: 6,
+      id: 5,
       size: '10\' x 25\'',
       heading: '10\' x 25\' Storage Unit',
       alt: '10\' x 25\' Storage Unit Graphic ',
@@ -113,7 +96,7 @@ export const unitSizer = [
       ],
     },
     {
-      id: 7,
+      id: 6,
       size: '10\' x 30\'',
       heading: '10\' x 30\' Storage Unit',
       alt: '10\' x 30\' Storage Unit Graphic ',

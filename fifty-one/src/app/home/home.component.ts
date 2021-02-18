@@ -2,7 +2,7 @@ import { Component, OnInit, Renderer2, Inject,OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
-import { featuresList, aboutUs, gettingStarted, feature, jumbotron, aboutUsAlt, aboutUsHeading } from '../data/home';
+import { featuresList, aboutUs, gettingStarted, feature, jumbotron, aboutUsAlt, aboutUsHeading, testimonials } from '../data/home';
 import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { UaParserService } from '../services/ua-parser.service';
@@ -44,6 +44,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   ogHomePage: any;
   twitterHomePage: any;
   script: any;
+  testimonials: any;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -106,6 +107,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.fetchJumbotron();
     this.fetchTemplate();
     this.fetchScript();
+    this.fetchTestimonials();
     window.scrollTo(0, 0);
   }
 
@@ -154,6 +156,10 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   public fetchOgHomePage() {
     this.ogHomePage = ogHomePage;
+  }
+
+  public fetchTestimonials() {
+    this.testimonials = testimonials;
   }
 
   public fetchTwitterHomePage() {

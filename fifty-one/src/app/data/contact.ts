@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '6446 N Towne Rd, Windsor, WI 53598',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://g.page/fiftyoneselfstorage'
     },
     {
         id: 1,

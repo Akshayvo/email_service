@@ -2,29 +2,22 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Sample Self Storage - North has been serving Baldwinsville, and the surrounding communities
-      with quality regular and climate controlled self storage units for nearly two decades. We have
-      the experience and commitment to modern conveniences you need to make your next storage project an easy one`,
+      p: `Fifty One Self Storage is Windsor’s premiere self storage facility. We offer a number of unit
+      sizes in both regular and climate controlled varieties. Start with our closet-sized 5-foot by f-foot
+      units for that extra closet’s worth of space for seasonal clothing, yard equipment, or decorations.
+      Our units go up to our oversized 10-foot by 40-foot that are an ideal solution for a growing business
+      that understands how affordable self storage is compared to storing equipment, inventory, or documents
+      at commercial real estate pricing.`,
     },
     {
-      p: `At Sample Self Storage - North, you'll have access to our services with an online tenant portal
-      for contactless rentals, and online payments. If you're here after hours and want to make a payment,
-      stop into the office's foyer and use our 24-hour kiosk!`
+      p: `Whether your self storage needs are residential or commercial, or if you need that extra protection
+      from the elements with climate controlled units, we’ve got you covered. Take a moment to review our
+      available inventory and reserve or rent online! If you’ve still got questions, give our office a call,
+      and we’ll be happy to assist you!`
     },
-    {
-      p: `Our residential storage users love our convenient location and affordable rates that take the stress
-      out of their move, renovation, or seasonal de-cluttering projects. An extra closet to an extra garage's
-      worth of space makes the most out of your home's space!
-      `
-    },
-    {
-      p: `Many local businesses in use our climate controlled storage units to save money by storing in a climate
-      controlled storage unit instead of expensive commercial real estate. We are the ideal space for your extra
-    inventory, or documents. Our 24-hour access policy is the ideal solution for your local business.`
-    }
 ];
 
-export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
+export const viewRatesAltText = ``;
 
 export const th = [
   {

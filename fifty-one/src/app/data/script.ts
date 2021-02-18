@@ -50,36 +50,36 @@ socialLinks.forEach(links => {
 }
 );
   
-export const ogGraphImage = `https://example.com/photos/16x9/photo.jpg` // 4:3
+export const ogGraphImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Fifty_One_Self_Storage/fifty-one-self-storage16x9.jpg` // 4:3
 
-export const twitterImage = `https://example.com/photos/1x1/photo.jpg` // 1:1
+export const twitterImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Fifty_One_Self_Storage/fifty-one-self-storage1x1.jpg` // 1:1
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://example.com/photos/1x1/photo.jpg",
-      "https://example.com/photos/4x3/photo.jpg",
-      "https://example.com/photos/16x9/photo.jpg"
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Fifty_One_Self_Storage/fifty-one-self-storage1x1.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Fifty_One_Self_Storage/fifty-one-self-storage4x3.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Fifty_One_Self_Storage/fifty-one-self-storage16x9.jpg"
      ],
      imagesContactPage: [
       "https://example.com/photos/1x1/photo.jpg",
      ],
      telephone: contact[contactIndex].data,
-     map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
+     map: "https://g.page/fiftyoneselfstorage",
      description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach." || homePageContent,
-     streetAddress: "148 W 51st St",
-     state: "New York",
-     addressLocality: "New York",
-     addressRegion: "NY",
-     postalCode: "10019",
+     streetAddress: "6446 N Towne Rd",
+     state: "Wisconsin",
+     addressLocality: "Windsor",
+     addressRegion: "WI",
+     postalCode: "53598",
      addressCountry: "US",
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
-     currenciesAccepted: "EUR",
-     ratingValue: "4",
+     currenciesAccepted: "USD",
+     ratingValue: "5.0",
      bestRating: "5",
-     reviewCount: "250",
-     latitude: 40.761293,
-     longitude: -73.982294,
+     reviewCount: "38",
+     latitude: 43.203844407666324,
+     longitude: -89.32427985211014,
 };
 
 export const homePageScript = [ {
@@ -111,7 +111,7 @@ export const homePageScript = [ {
     "url": environment.websiteUrl,
     "telephone": script.telephone,
     
-    "priceRange": "$$$",
+    "priceRange": "$75 - $205",
     "openingHours": openingHours,
     "currenciesAccepted": script.currenciesAccepted,
     "paymentAccepted": script.paymentAccepted,

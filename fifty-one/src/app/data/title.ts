@@ -19,6 +19,9 @@ export const unitSizerPageContent = `Use our unit sizing chart to help you figur
 export const contactPageTitle = `Contact Us | Fifty One Self Storage`;
 export const contactPageContent = `If you have questions about your account or the services we offer, take a moment to fill our out form, or use the contact information to reach out!`;
 
+export const faqPageTitle = `FAQs | Fifty One Self Storage`;
+export const faqPagecontent = `Do you have questions about the services offered at Fifty One Self Storage? Take a look at our Frequently Asked Questions page, then call our office to learn more!`;
+
 export const thankYouPageTitle = `Thank You For Reserving Your Unit at Fifty One Self Storage!`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
 

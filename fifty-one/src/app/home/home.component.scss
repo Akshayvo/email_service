@@ -6,6 +6,10 @@
   }
 }
 
+.btn-outline-primary {
+  margin-right: 10px;
+}
+
 
 .jumbotron-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Fifty_One_Self_Storage/webp/fifty-one-self-storage.webp");
@@ -28,6 +32,12 @@
   color: $white;
   overflow: hidden;
   border-radius: 0;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.25rem;
 }
 
 .home-map {
@@ -42,11 +52,6 @@
 
   img {
     padding: 10px;
-    height: 100px;
-  }
-
-  h2 {
-    font-size: 1rem;
   }
 }
 
@@ -61,10 +66,7 @@
 }
 
 .getStarted {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: $white;
+  color: $primary;
   text-align: center;
 
   h2 {
@@ -73,17 +75,16 @@
 }
 
 .disp {
-  text-align: left;
   color: $white;
 
   h2 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-weight: 600;
   }
 }
 
 .jumbotron-top {
-  height: 80vh;
+  height: 100vh;
 }
 
 .jumbotron-bottom {
@@ -92,192 +93,71 @@
   align-items: center;
 }
 
-.jumbotorn-skew-style {
-  width: 60%;
-  float: right;
-  left: -20%;
-  position: relative;
-  height: 50%;
-  margin-top: 290px;
-
-  a {
-    margin-top: 20px;
+.carousel-indicators {
+  li {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px $primary solid;
+    border-radius: 50%;
+    position: relative;
+    flex: 0 1 auto;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
   }
-}
 
-.jumbotorn-skew-text {
-  transform: skew(0deg);
-  width: 500px;
-  position: absolute;
-  top: 30%;
-
-  .btn-outline-primary {
-    margin-right: 10px;
+  .active {
+    background-color: $primary;
   }
 }
 
 
-@media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 640px) {
-  .disp {
-    h2 {
-      font-size: 2rem;
-    }
+.carousel-item {
+  max-width: 100%;
 
-    p {
-      font-size: 0.9rem;
-    }
+  .active {
+    background-position: center center;
   }
 
-  .jumbotorn-skew-text {
-    a {
-      font-size: 1rem;
-    }
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-height: 639px) and (min-height: 480px) {
-  .jumbotron {
-    height: 100vh;
-  }
-
-  .disp {
-    h2 {
-      font-size: 2rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-    }
-  }
-
-  .jumbotron-top {
-    height: 100vh;
-  }
-
-  .jumbotron-bottom {
-    height: 150px;
-  }
-
-  .jumbotorn-skew-text {
-    a {
-      font-size: 1rem;
-    }
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-height: 479px) {
-  .jumbotron {
+  p {
     text-align: center;
-    background-attachment: unset;
-    background-position: center left;
-    height: 100vh;
-
-    h1 {
-      font-size: 2em;
-    }
-
-    .container {
-      height: 100%;
-      display: flex;
-    }
-  }
-
-  .disp {
-    display: none;
-  }
-
-  .button-width {
-    max-width: 200px;
-    margin: auto;
-  }
-
-  .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 90px;
-    bottom: 0;
-    position: absolute;
-  }
-
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 10px;
-
-    a {
-      font-size: 1.25rem;
-      min-width: 200px;
-    }
-  }
-
-  .jumbotorn-button {
-    padding: 10px;
-  }
-
-  .jumbotron-top {
-    height: 100vh;
-  }
-
-  .jumbotron-bottom {
-    height: 150px;
+    font-size: 1rem;
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) {
-  .jumbotorn-skew-text {
-    width: 444px;
 
-    a {
-      font-size: 1rem;
-    }
+  @media only screen and (min-width: 1200px) {
 
-    .disp {
-      h2 {
-        font-size: 2.1rem;
-      }
-
-      p {
-        font-size: 0.9rem;
-      }
-    }
   }
-}
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 750px) and (min-height: 640px) {
+
+@media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 641px) {
   .feature-icon-style {
-    img {
-      height: 80px;
-    }
+    padding: 12px 24px;
 
-    h2 {
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 640px) and (min-height: 451px) {
+  .jumbotron {
+    height: 80vh;
+  }
+
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
       font-size: 0.8rem;
     }
   }
 
-  .jumbotorn-skew-text {
-    top: 25%;
-
-    .disp {
-      h2 {
-        font-size: 2rem;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 639px) and (min-height: 480px) {
-  .jumbotron {
-    height: 100vh;
-  }
-
-  .jumbotorn-skew-text {
-    .disp {
-      h2 {
-        font-size: 2rem;
-      }
-    }
+  .jumbotorn-skew-style {
+    margin-top: 118px;
   }
 
   .jumbotron-top {
@@ -285,11 +165,11 @@
   }
 
   .jumbotron-bottom {
-    height: 150px;
+    height: 20vh;
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 479px) {
+@media only screen and (min-width: 1200px) and (max-height: 450px) {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
@@ -306,6 +186,10 @@
     }
   }
 
+  .jumbotorn-skew-style {
+    display: none;
+  }
+
   .disp {
     display: none;
   }
@@ -315,25 +199,100 @@
     margin: auto;
   }
 
-  .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 90px;
-    bottom: 0;
-    position: absolute;
+
+  .jumbotorn-button {
+    display: none;
   }
 
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 10px;
+  .feature-icon-style {
+    padding: 12px 24px;
 
-    a {
-      font-size: 1.25rem;
-      min-width: 200px;
+    h6 {
+      font-size: 0.8rem;
     }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .jumbotron-bottom {
+    img {
+      height: 70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 750px) and (min-height: 641px) {
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 640px) and (min-height: 451px) {
+  .jumbotron {
+    height: 80vh;
+  }
+
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+
+  .jumbotorn-skew-style {
+    margin-top: 118px;
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 450px) {
+  .jumbotron {
+    text-align: center;
+    background-attachment: unset;
+    background-position: center left;
+    height: 100vh;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+  .jumbotorn-skew-style {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
+
+  .button-width {
+    max-width: 200px;
+    margin: auto;
   }
 
   .jumbotorn-button {
@@ -343,7 +302,7 @@
   .feature-icon-style {
     padding: 12px 24px;
 
-    h2 {
+    h6 {
       font-size: 0.8rem;
     }
   }
@@ -353,49 +312,58 @@
   }
 
   .jumbotron-bottom {
-    height: 150px;
+    display: none;
   }
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
-  .jumbotorn-skew-style {
-    width: 85%;
-  }
+  
 
-  .jumbotorn-skew-text {
-    width: 410px;
 
-    a {
-      font-size: 1rem;
-    }
+}
 
-    .disp {
-      h2 {
-        font-size: 1.8rem;
-      }
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 830px) and (min-height: 701px) {
+  .feature-icon-style {
+    padding: 12px 24px;
 
-      p {
-        font-size: 0.9rem;
-      }
+    h6 {
+      font-size: 0.8rem;
     }
   }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 700px) and (min-height: 480px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 700px) and (min-height: 481px) {
   .jumbotron-top {
     height: 100vh;
   }
 
   .jumbotron {
-    height: 100vh;
+    height: 80vh;
   }
 
   .jumbotron-bottom {
-    height: 160px;
+    height: 20vh;
+
+    img {
+      height: 70px;
+    }
+  }
+
+  .jumbotorn-skew-style {
+    margin-top: 98px;
+  }
+
+
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
   }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 479px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 480px) {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
@@ -404,6 +372,10 @@
 
     h1 {
       font-size: 2em;
+    }
+  
+    .jumbotorn-skew-style {
+      display: none;
     }
 
     .container {
@@ -426,29 +398,8 @@
     margin: auto;
   }
 
-  .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 90px;
-    bottom: 0;
-    position: absolute;
-  }
-
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 10px;
-
-    a {
-      font-size: 1.25rem;
-      min-width: 200px;
-    }
-  }
-
   .jumbotorn-button {
-    padding: 10px;
+    display: none;
   }
 }
 
@@ -458,39 +409,30 @@
   }
 
   .jumbotron {
-    height: 100vh;
+    height: 80vh;
+  }
+
+  .disp {
+    font-size: 0.7rem;
+ }
+
+  .jumbotorn-skew-style {
+    margin-top: 95px;
   }
 
   .jumbotron-bottom {
-    height: 200px;
-  }
-
-  .jumbotorn-skew-style {
-    width: 90%;
-  }
-
-  .jumbotorn-skew-text {
-    top: 45%;
-    width: 340px;
-
-    a {
-      min-width: 140px;
-      font-size: 0.8rem;
+    height: 20vh;
+    font-size: 0.7rem;
+    img {
+      height: 70px;
     }
-
-    .disp {
-      p {
-        font-size: 0.8rem;
-      }
-
-      h2 {
-        font-size: 1.6rem;
-      }
+    .feature-text {
+      font-size: 0.7rem;
     }
   }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 600px) {
+@media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 500px) {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
@@ -507,12 +449,16 @@
     }
   }
 
+  .jumbotorn-skew-style {
+    display: none;
+  }
+
   .jumbotron-top {
     height: 100vh;
   }
 
   .jumbotron-bottom {
-    height: 0;
+    display: none;
   }
 
   .feature {
@@ -523,26 +469,6 @@
     display: none;
   }
 
-  .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 90px;
-    bottom: 0;
-    position: absolute;
-  }
-
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 10px;
-
-    a {
-      font-size: 1.25rem;
-      min-width: 200px;
-    }
-  }
 
   .jumbotorn-button {
     padding: 10px;
@@ -566,20 +492,9 @@
   }
 
   .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 90px;
-    bottom: 0;
-    position: absolute;
+    display: none;
   }
 
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 10px;
-  }
 
   .jumbotorn-button {
     padding: 10px;
@@ -598,36 +513,11 @@
     display: none;
   }
 
-  .disp {
+  .jumbotorn-skew-style {
     display: none;
   }
 
-  .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 150px;
-    bottom: 0;
-    position: absolute;
-  }
-
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 2px;
-
-    .btn-outline-primary {
-      margin-right: 0;
-      margin-bottom: 8px;
-    }
-
-    .btn-primary {
-      margin-top: 8px;
-    }
-
-    .jumbotorn-button {
-      padding: 15px;
-    }
+  .disp {
+    display: none;
   }
 }

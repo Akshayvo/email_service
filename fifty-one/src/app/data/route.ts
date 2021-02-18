@@ -29,6 +29,7 @@ import { environment } from '../../environments/environment';
 import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from '../thank-you.guard';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
+import { FaqComponent } from '../faq/faq.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -82,6 +83,7 @@ const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
+    { path: 'frequently-asked-questions', component: FaqComponent },
     {
       path: `${environment.locationName}/view-rates`,
       component: ViewRatesComponent,
@@ -92,7 +94,8 @@ const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
         { path: 'confirmation', component: ConfirmationDataComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
-        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  },
+        
       ]
      },
     //  {
@@ -135,6 +138,7 @@ export const iFrameRoutes = [
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
+    { path: 'frequently-asked-questions', component: FaqComponent },
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'
