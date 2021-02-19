@@ -16,10 +16,10 @@ export const contact = [
     {
         id: 2,
         label: 'Email: ',
-        data: 'info@herronhillstorage.com',
+        data: 'herronhillstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        email: 'info@herronhillstorage.com, syrasoftsoftware@gmail.com',
-        redirect: 'mailto:`info@herronhillstorage.com, syrasoftsoftware@gmail.com`'
+        email: 'herronhillstorage@gmail.com',
+        redirect: 'mailto:` herronhillstorage@gmail.com`'
     },
     {
         id: 3,
