@@ -21,26 +21,24 @@ export const featuresList = [
     },
     {
         td1: 'Climate-Controlled Units Available',
-        td2: 'Retail Store On-Premises',
+        td2: '24-Hour Self-Service Kiosk',
     },
     {
-        td1: 'Packing Supplies Available',
-        td2: 'Fully-Fenced Facility',
+        td1: 'Fully-Fenced Facility',
     },
 ];
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
 
-export const aboutUsHeading = `24 Hour Access Affordable Self Storage in Windsor, WI`;
+export const aboutUsHeading = `24 Hour Access Affordable Self Storage in Deforest and Windsor`;
 
 export const aboutUs = [
     {
-        p: `Fifty One Self Storage is a locally owned and operated self storage facility located on the
-        quiet North Towne Road in Windsor, WI directly across from Bell Laboratories. Our convenient
-        location is just a stone’s throw from WI-19’s US-51 exit and the I-90 making for easy access
-        to Windsor,  DeForest, Madison, Sun Prairie, and the surrounding Wisconsin communities. We
-        offer units ranging from closet-sized 5-foot by 5-foot to oversized 10-foot by 4-foot and many
-        unit sizes are also available as climate controlled units.`,
+        p: `Fifty One Self Storage is a locally owned and operated self storage facility located on
+        the quiet North Towne Road in Windsor, WI directly across from Bell Laboratories. Our convenient location 
+        is just a stone’s throw from WI-19’s US-51 exit and the I-90 making for easy access to DeForest, Sun Prairie, Windsor, Madison,
+        and the surrounding Wisconsin communities. We offer units ranging from closet-sized 5-foot by 5-foot to oversized
+        10-foot by 40-foot and many unit sizes are also available as climate controlled units.`,
     },
     {
         p: `We built our self storage facility from the ground up with convenience in mind. Start by
@@ -67,9 +65,9 @@ export const gettingStarted = ``;
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        label: 'Convenient Location',
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg`,
-        alt: 'Icon art displaying a location pin'
+        label: 'On-Site Self Service Kiosk',
+        path: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Syrasoft_Poweredby/icons/online.svg`,
+        alt: 'Icon art displaying a screen with a cursor'
     },
     {
         // tslint:disable-next-line:max-line-length

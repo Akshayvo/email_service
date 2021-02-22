@@ -21,6 +21,11 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
 
+  lstUnitTypes: LstUnitTypes[];
+  filterClimateControlled: LstUnitTypes[];
+  filterOutdoorandParking: LstUnitTypes[];
+  filterRestTypes : LstUnitTypes[];
+
   descriptionVR: string;
   monthlyRateVR: number;
   unitTypeIdVR: number;
@@ -130,11 +135,19 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       });
   }
 
+  getFilterLstUnitTypes(unitTypesResponse: any) {
+    this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
+    this.filterClimateControlled = this.lstUnitTypes.filter(x => x.IsClimateControlled === true);
+    this.filterOutdoorandParking = this.lstUnitTypes.filter(x => x.IsOutdoor === true &&  x.IsClimateControlled === undefined);
+    this.filterRestTypes = this.lstUnitTypes.filter(x => x.IsClimateControlled === undefined && x.IsOutdoor === false);
+  }
+
   getData() {
   this.getDataSubscribe$ = this.fetchDataService.getData()
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+      this.getFilterLstUnitTypes(unitTypesResponse);
     });
   }
 

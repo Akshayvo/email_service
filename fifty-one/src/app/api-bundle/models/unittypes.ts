@@ -18,6 +18,8 @@ export class LstUnitTypes {
     UnitTypeID: number;
     IsUnitsAvailable: boolean;
     IsClimateControlled: boolean;
+    IsOutdoor : boolean;
+    IsAutomobile : boolean;
 
     constructor(
         Description: string,

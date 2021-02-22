@@ -17,9 +17,9 @@ export const contact = [
     {
         id: 2,
         label: 'Phone:',
-        data: '+16082280686',
+        data: '+(608) 228-0686',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:16082280686',
+        redirect: 'tel:(608) 228-0686',
     }
 ];
 
@@ -44,6 +44,16 @@ export const socialLinks = [
         label: 'facebook',
         path: 'https://www.facebook.com/fiftyoneselfstorage',
         class: 'fab fa-facebook-square',
+    },
+    {
+        label: 'yelp',
+        path: 'https://www.yelp.com/biz/fifty-one-self-storage-deforest?osq=self+storage',
+        class: 'fab fa-yelp',
+    },
+    {
+        label: 'googlemybussiness',
+        path: 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x8806ff84f3a1d231:0xcb23299243d0feb5?source=g.page.default',
+        class: 'fas fa-map-marker-alt',
     },
 ];
 
