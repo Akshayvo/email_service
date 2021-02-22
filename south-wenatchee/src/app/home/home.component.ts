@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
    } from '../data/contact';
@@ -37,6 +38,7 @@ export class HomeComponent implements OnInit {
     private data: LocationService,
     private canonical: CanonicalService,
     private uaParserService: UaParserService,
+    private router: Router,
   ) {
     this.fetchScript();
     this.loadScript();
@@ -123,6 +125,9 @@ export class HomeComponent implements OnInit {
     } 
   }
 
+  public navigate (location: any) {
+    this.router.navigate([location]);
+  }
   public fetchScript() {
     this.script = homePageScript;
   }
