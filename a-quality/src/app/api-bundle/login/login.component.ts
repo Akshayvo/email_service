@@ -5,10 +5,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsLocation1, contactsLocation2 } from '../../data/contact';
+import { contactsLocation1, contactsLocation2,} from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPageLocation1, ogPayRentPageLocation2, 
-   twitterPayRentPageLocation1, twitterPayRentPageLocation2, } from '../../data/script';
+import { ogPayRentPageLocation1, ogPayRentPageLocation2,
+   twitterPayRentPageLocation1, twitterPayRentPageLocation2 } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -150,21 +150,21 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('line-drive')) {
-      this.og = ogPayRentPageLocation1;
+    if (this.router.url.includes('holly-avenue')) {
+      this.og = ogPayRentPageLocation2;
     } else {
-      if (this.router.url.includes('holly-avenue')) {
-        this.og = ogPayRentPageLocation2;
-      }
+      if (this.router.url.includes('line-drive')) {
+        this.og = ogPayRentPageLocation1;
+      } 
     }}
 
 public fetchTwitter() {
-  if (this.router.url.includes('line-drive')) {
-    this.twitter = twitterPayRentPageLocation1;
+  if (this.router.url.includes('holly-avenue')) {
+    this.twitter = twitterPayRentPageLocation2;
   } else {
-    if (this.router.url.includes('holly-avenue')) {
-      this.twitter = twitterPayRentPageLocation2;
-    }
+    if (this.router.url.includes('line-drive')) {
+      this.twitter = twitterPayRentPageLocation1;
+    } 
   }
 }
 

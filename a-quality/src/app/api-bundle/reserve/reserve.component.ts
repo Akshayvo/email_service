@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
-import { headingReserveLocation1, headingReserveLocation2, } from '../../data/location';
+import { headingReservePageLocation1, headingReservePageLocation2 } from '../../data/location';
 import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
@@ -32,10 +32,10 @@ export class ReserveComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/location/line-drive')) {
       this.id = 1;
-      this.heading = headingReserveLocation1;
+      this.heading = headingReservePageLocation1;
     } else if (this.router.url.includes('/location/holly-avenue')) {
       this.id = 2;
-      this.heading = headingReserveLocation2;
+      this.heading = headingReservePageLocation2;
     }
   }
 

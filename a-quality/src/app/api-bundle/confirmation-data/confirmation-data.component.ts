@@ -219,6 +219,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   }
 
   makeAReservation(strConfirmation: any) {
+    console.log('working in confirmation');
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
     this.reservationInProgress = true;

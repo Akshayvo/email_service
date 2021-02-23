@@ -21,6 +21,10 @@ export const headingStorageUnitLocation1 = `Reserve Your Unit at Our Line Drive 
 
 export const headingStorageUnitLocation2 = `Reserve Your Unit at Our Holly Avenue Facility`;
 
+export const headingReservePageLocation1 = `Reserve Your Unit at Our Line Drive Facility`;
+
+export const headingReservePageLocation2 = `Reserve Your Unit at Our Holly Avenue Facility`;
+
 export const headingReserveLocation1 = `Reserve Your Unit at Our Line Drive Facility`;
 
 export const headingReserveLocation2 = `Reserve Your Unit at Our Holly Avenue Facility`;

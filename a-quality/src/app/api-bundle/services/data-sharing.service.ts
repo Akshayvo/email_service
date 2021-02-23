@@ -5,15 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
-  locationAPIKey = {
-    loc1: 'czJHOUUzPDh0MF46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29380 Line Drive Location
-    loc2: 'YjJdOUwzLDh7MSk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29381 Holly Avenue Location
-  };
+  // locationAPIKey = {
+  //   loc1: 'czJHOUUzPDh0MF46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29380 Line Drive Location
+  //   loc2: 'YjJdOUwzLDh7MSk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29381 Holly Avenue Location
+  // };
 
-//  locationAPIKey = {                                                     // demo north
-//     loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-//     loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-//   };
+ locationAPIKey = {                                                     // demo north
+    loc1: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28465
+    loc2: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28463
+  };
 
   locationName: string;
   strConfirmation: string;

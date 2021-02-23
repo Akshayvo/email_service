@@ -5,9 +5,7 @@ import { tabs } from '../../data/tab';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
 import { Meta } from '@angular/platform-browser';
-import { ogPayRentPageLocation1, ogPayRentPageLocation2, 
-  twitterPayRentPageLocation1, twitterPayRentPageLocation2, 
- } from '../../data/script';
+import { ogPayRentPage, ogPayRentPageLocation1, ogPayRentPageLocation2, twitterPayRentPage, twitterPayRentPageLocation1, twitterPayRentPageLocation2 } from '../../data/script';
 @Component({
   selector: 'app-pay-rent',
   templateUrl: './pay-rent.component.html',
@@ -64,22 +62,22 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('line-drive')) {
-      this.og = ogPayRentPageLocation1;
+    if (this.router.url.includes('holly-avenue')) {
+      this.og = ogPayRentPageLocation2;
     } else {
-      if (this.router.url.includes('holly-avenue')) {
-        this.og = ogPayRentPageLocation2;
-      }
+      if (this.router.url.includes('line-drive')) {
+        this.og = ogPayRentPageLocation1;
+      } 
     }
 }
 
 public fetchTwitter() {
-    if (this.router.url.includes('line-drive')) {
-      this.twitter = twitterPayRentPageLocation1;
+    if (this.router.url.includes('holly-avenue')) {
+      this.twitter = twitterPayRentPageLocation2;
     } else {
-      if (this.router.url.includes('holly-avenue')) {
-        this.twitter = twitterPayRentPageLocation2;
-      }
+      if (this.router.url.includes('line-drive')) {
+        this.twitter = twitterPayRentPageLocation1;
+      } 
     }
 }
 

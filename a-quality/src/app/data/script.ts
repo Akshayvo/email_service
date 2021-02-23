@@ -6,23 +6,289 @@ export const script = {
 };
 
 export const homePageScript = [ 
+  {
+  '@context': 'https://schema.org',
+  '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
+  'name': 'A-Quality Boat & RV Storage',
+
+'url': 'https://aqualitystoragetx.com/',
+
+'priceRange': '$75-$250',
+
+'address': {'@type': 'PostalAddress',
+'addressRegion': ' Pasadena, Texas '},
+
+'telephone': ' (281) 889-1732',
+
+'email': 'aqualitystoragetx@gmail.com',
+
+'image': ' https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/jpg/storage-units.jpg',
+
+'logo': ' https://aqualitystoragetx.com/favicon.ico'
+
+},
+
+{'@type': ['LocalBusiness', 'SelfStorage'],
+
+'parentOrganization': {
+
+                         'name' : ' A-Quality Boat & RV Storage '
+
+                     },
+
+'name': ' A-Quality Boat & RV Storage - Line Drive Location ',
+
+'image': ' https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/jpg/storage-units.jpg',
+
+'telephone': ' (281) 889-1732',
+
+'email': 'aqualitystoragetx@gmail.com',
+
+'address': {'@type': 'PostalAddress',
+ 'streetAddress': '6939 Line Drive',
+'addressLocality': 'Pasadena',
+'addressRegion': 'TX',
+ 'postalCode': '77505'},
+
+'openingHours': 'Mo,Tu,We,Th,Fr, Sa,Su 00:00-24:00',
+
+'amenityFeature': [{'@type': 'LocationFeatureSpecification',
+ 'name': 'Fully-Fenced Facility'},
+
+{'@type': 'LocationFeatureSpecification',
+ 'name': 'Easy Online Payments'},
+
+{'@type': 'LocationFeatureSpecification',
+ 'name': 'Electric Monitored Gate'},
+{'@type': 'LocationFeatureSpecification',
+'name': 'Well-lit Storage Units'},
+{'@type': 'LocationFeatureSpecification',
+'name': 'Great Customer Service'},
+{'@type': 'LocationFeatureSpecification',
+'name': 'Security Cameras on Premises'},
+{'@type': 'LocationFeatureSpecification',
+'name': 'Drive-Up Units'}],
+
+'priceRange': '$75-$250',
+
+'url': 'https://aqualitystoragetx.com/location/line-drive/storage-units'},
+
+{'@type': ['LocalBusiness', 'SelfStorage'],
+
+'parentOrganization': {
+
+                         'name' : ' A-Quality Boat & RV Storage '
+
+                     },
+
+'name': ' A-Quality Boat & RV Storage - Holly Avenue Location',
+
+'image': ' https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/jpg/storage-units.jpg',
+
+'telephone': ' (281) 889-1732',
+
+'email': 'aqualitystoragetx@gmail.com',
+
+'address': {'@type': 'PostalAddress',
+'streetAddress': '5226 Holly Ave',
+'addressLocality': 'Pasadena',
+'addressRegion': 'TX',
+'postalCode': '77503'},
+
+'openingHours': 'Mo,Tu,We,Th,Fr, Sa,Su 00:00-24:00',
+
+'amenityFeature': [{'@type': 'LocationFeatureSpecification',
+'name': 'Fully-Fenced Facility'},
+
+{'@type': 'LocationFeatureSpecification',
+'name': 'Easy Online Payments'},
+
+{'@type': 'LocationFeatureSpecification',
+'name': 'Electric Monitored Gate'},
+{'@type': 'LocationFeatureSpecification',
+'name': 'Well-lit Storage Units'},
+{'@type': 'LocationFeatureSpecification',
+'name': 'Great Customer Service'},
+{'@type': 'LocationFeatureSpecification',
+'name': 'Security Cameras on Premises'},
+{'@type': 'LocationFeatureSpecification',
+'name': 'Drive-Up Units'}],
+
+'priceRange': '$70-$140',
+
+'url': 'https://aqualitystoragetx.com/location/holly-avenue/storage-units'}
   ];
 
 
 export const Location1Script = {
-   
-};
+  '@context': 'https://schema.org',
+  '@type': 'SelfStorage',
+'image': ' https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/jpg/storage-units.jpg',
+
+
+  '@id': 'https://aqualitystoragetx.com/location/line-drive/storage-units',
+  'name': ' A-Quality Boat & RV Storage - Line Drive Location',
+   'description': 'Self Storage Units and Parking in Pasadena | A-Quality Boat & RV Storage.',
+
+
+'address': {'@type': 'PostalAddress', 'streetAddress': '6939 Line Drive',
+
+'addressLocality': 'Pasadena', 'addressRegion': 'TX', 'postalCode': '77505',
+
+
+    'addressCountry': 'US'
+  },
+
+ 'aggregateRating': {
+'@type': 'AggregateRating',
+'ratingValue': '5',
+'reviewCount': '1'
+},
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 29.656317727001262,
+    'longitude': -95.13046907965563
+  },
+
+'amenityFeature': [{'@type': 'LocationFeatureSpecification', 'name': 'Fully-Fenced Facility'},
+
+{'@type': 'LocationFeatureSpecification', 'name': 'Easy Online Payments'},
+
+{'@type': 'LocationFeatureSpecification', 'name': 'Electric Monitored Gate'}, {'@type': 'LocationFeatureSpecification', 'name': 'Well-lit Storage Units'}, {'@type': 'LocationFeatureSpecification', 'name': 'Great Customer Service'}, {'@type': 'LocationFeatureSpecification', 'name': 'Security Cameras on Premises'}, {'@type': 'LocationFeatureSpecification', 'name': 'Drive-Up Units'}],
+
+'url': 'https://aqualitystoragetx.com/location/line-drive/storage-units',
+'telephone': ' (281) 889-1732',
+  
+
+'priceRange': '$65 - $250',
+
+ 'openingHours': ['Mo-Sun 00:00-24:00'],
+
+  'currenciesAccepted': 'USD',
+
+'paymentAccepted': 'Cash, Credit card, Online Payment',
+
+   'areaServed': {
+
+'@type': 'State',
+
+'name': 'Texas'
+
+
+ },
+
+  'acceptsReservations': 'True'
+  
+  };
 
 export const Location2Script = {
+  '@context': 'https://schema.org',
+  '@type': 'SelfStorage',
+'image': ' https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/jpg/storage-units.jpg',
+  '@id': 'https://aqualitystoragetx.com/location/holly-avenue/storage-units',
+  'name': ' A-Quality Boat & RV Storage - Holly Avenue Location',
+   'description': 'Self Storage Units and Parking in Pasadena | A-Quality Boat & RV Storage.',
+
+
+'address': {'@type': 'PostalAddress', 'streetAddress': '5226 Holly Ave',
+
+'addressLocality': 'Pasadena', 'addressRegion': 'TX', 'postalCode': '77503',
+
+
+    'addressCountry': 'US'
+  },
+
+ 'aggregateRating': {
+'@type': 'AggregateRating',
+'ratingValue': '4',
+'reviewCount': '250'
+},
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 29.675994778767215,
+    'longitude': -95.16228261731818
+  },
+
+'amenityFeature': [{'@type': 'LocationFeatureSpecification', 'name': 'Fully-Fenced Facility'},
+
+{'@type': 'LocationFeatureSpecification', 'name': 'Easy Online Payments'},
+
+{'@type': 'LocationFeatureSpecification', 'name': 'Electric Monitored Gate'}, {'@type': 'LocationFeatureSpecification', 'name': 'Well-lit Storage Units'}, {'@type': 'LocationFeatureSpecification', 'name': 'Great Customer Service'}, {'@type': 'LocationFeatureSpecification', 'name': 'Security Cameras on Premises'}, {'@type': 'LocationFeatureSpecification', 'name': 'Drive-Up Units'}],
+
+'url': 'https://aqualitystoragetx.com/location/holly-avenue/storage-units',
+'telephone': ' (281) 889-1732',
+  
+
+'priceRange': '$70 - $140',
+
+ 'openingHours': ['Mo-Sun 00:00-24:00'],
+
+  'currenciesAccepted': 'USD',
+
+'paymentAccepted': 'Cash, Credit card, Online Payment',
+
+   'areaServed': {
+
+'@type': 'State',
+
+'name': 'Texas'
+
+
+ },
+
+  'acceptsReservations': 'True'
    
 };
 
 
 export const contactPageLocation1Script = {
+  '@context': 'http://schema.org',
+  '@type': 'Selfstorage',
+ 
+  'name': ' A-Quality Boat & RV Storage - Line Drive Location',
+      
+'address': {'@type': 'PostalAddress', 'streetAddress': '6939 Line Drive',
+'addressLocality': 'Pasadena', 'addressRegion': 'TX', 'postalCode': '77505',
+        'addressCountry': 'US'
+      },
+  'url': 'https://aqualitystoragetx.com/location/line-drive/storage-units',
+  'image': [' https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/webp/storage-units.webp'],
+  'contactPoint': [{
+    '@type': 'ContactPoint',
+    'telephone': '(281) 889-1732',
+    'contactType': 'reservations'
+  }, {
+    '@type': 'ContactPoint',
+    'telephone': '(281) 889-1732',
+    'contactType': 'customer service'
+  }],
+ 'email': 'aqualitystoragetx@gmail.com'
+  
    
 };
 
 export const contactPageLocation2Script = {
+  '@context': 'http://schema.org',
+  '@type': 'Selfstorage',
+ 
+  'name': ' A-Quality Boat & RV Storage - Holly Avenue Location',
+      
+'address': {'@type': 'PostalAddress', 'streetAddress': '5226 Holly Ave',
+'addressLocality': 'Pasadena', 'addressRegion': 'TX', 'postalCode': '77503',
+        'addressCountry': 'US'
+      },
+   'url': 'https://aqualitystoragetx.com/location/holly-avenue/storage-units',
+  'image': ' https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/webp/storage-units.webp',
+  'contactPoint': [{
+    '@type': 'ContactPoint',
+    'telephone': '(281) 889-1732',
+    'contactType': 'reservations'
+  }, {
+    '@type': 'ContactPoint',
+    'telephone': '(281) 889-1732',
+    'contactType': 'customer service'
+  }],
+ 'email': 'aqualitystoragetx@gmail.com'
     
 };
 
