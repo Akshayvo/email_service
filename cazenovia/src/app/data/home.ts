@@ -72,9 +72,9 @@ export const gettingStarted = ``;
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        label: 'Convenient Location',
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg`,
-        alt: 'Icon art displaying a location pin'
+        label: 'Locally Owned & Operated',
+        path: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Syrasoft_Poweredby/icons/team.svg`,
+        alt: 'Icon of people standing together'
     },
     {
         // tslint:disable-next-line:max-line-length
