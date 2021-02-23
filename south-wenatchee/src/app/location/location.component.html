@@ -48,7 +48,7 @@
           <div class="row">
             <div class="col-lg-8">
               <h4 class="pt-3" *ngIf="locationId == 2 else other_content" >Facility Hours</h4>
-              <ng-template #other_content><h4 class="pt-3">Access Hours:</h4></ng-template>
+              <ng-template #other_content><h4 class="pt-3">Facility Hours:</h4></ng-template>
               <app-tables [tBody]="hours" ></app-tables> 
             </div>
             <div class="col-lg-4 btn-area text-center">
