@@ -55,9 +55,13 @@
   p {
     font-size: 1rem;
   }
-
-  .btn-outline-primary {
-    margin-right: 10px;
+  .btn{
+    text-align: center;
+    width: 400px;
+  }
+  .btn:hover{  
+    background-color:$primaryDark!important;
+    border-color: $primaryDark!important;
   }
 
   .btn-outline-primary {
@@ -74,14 +78,7 @@
     color: #fff!important;
     min-width: 200px;
   }
-  .btn-outline-primary:hover {
-    background-color:$primaryDark!important;
-    border-color: $primaryDark!important;
-  }
   
-  .btn-primary:hover {
-    background-color:$primaryDark!important;
-    border-color: $primaryDark!important;}
 }
 
 .service {
@@ -645,9 +642,10 @@
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .jumbotron-top {
-    height: 80vh;
+    height: 100vh;
   }
   .feature-block {
+    display: none;
     height: 20vh;
     p {
       margin-bottom: 0.5rem;
@@ -672,13 +670,16 @@
 
   .jumbotorn-skew-text {
     top: 30%;
-    width: 49%;
+    width: 40%;
 
     a {
       min-width: 140px;
       font-size: 0.8rem;
+      
     }
-
+    .btn-lg{
+      width: 300px;
+    }
     .disp {
       p {
         font-size: 0.8rem;
@@ -688,7 +689,10 @@
         font-size: 2.3rem;
       }
     }
+    
   }
+  
+ 
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 500px) {
@@ -804,23 +808,36 @@
     display: none;
   }
 
+
   .jumbotorn-skew-text {
     width: 100%;
     left: 0;
     top: auto;
     bottom: 2px;
+    
 
+    
     .view-button {
       margin-right: 0;
       margin-bottom: 8px;
     }
 
+
     .btn-primary {
       margin-top: 8px;
+     
     }
 
     .jumbotorn-button {
       padding: 15px;
+      background: rgba(0, 0, 0, 0.6);
+      align-items: center;
+     
     }
+
+    span{
+      display:none;
+    }
+
   }
 }
