@@ -3,8 +3,7 @@
     <div class="jumbotron-top">
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
         <div class="jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
-         <div class="text-container">
-          <div class="jumbotorn-skew-text p-4">
+          <div class="jumbotorn-skew-text container p-4">
             <div class="disp" *ngFor="let jumbotron of jumbotron">
               <h2  class="my-4 text-center">
                 {{jumbotron.h2}}
@@ -15,7 +14,6 @@
               <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
             <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">Reserve Unit</a>
             </div>
-          </div>
           </div>
       </div>
       </div>
