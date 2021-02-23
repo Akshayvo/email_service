@@ -51,6 +51,10 @@
   to = "/"
   status = 301
 [[redirects]]
+  from = "https://fiftyoneselfstorage.com/railroad-street"
+  to = "https://railroad-storage.com"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
