@@ -11,6 +11,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
 import { Location1Script, Location2Script, Location3Script, Location4Script,
+  Location5Script,
   ogLocation1, ogLocation2, ogLocation3, ogLocation4, ogLocation5, twitterLocation1,
   twitterLocation2, twitterLocation3, twitterLocation4, twitterLocation5 } from '../data/script';
 import { featuresHead, featuresList } from '../data/home';
@@ -78,7 +79,7 @@ export class LocationComponent implements OnInit {
             this.locationName = `AllSpace Storage - Poughkeepsie/Arlington`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
-            this.script = Location2Script;
+            this.script = Location1Script;
             this.loadScript();
             this.og.forEach(element => {
               this.meta.addTag({
@@ -103,7 +104,7 @@ export class LocationComponent implements OnInit {
            this.locationName = `AllSpace Storage - Poughkeepsie/Hyde Park`;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
            this.dataSharingService.locationName = this.locationName;
-           this.script = Location1Script;
+           this.script = Location2Script;
            this.loadScript();
            this.og.forEach(element => {
             this.meta.addTag({
@@ -178,7 +179,7 @@ export class LocationComponent implements OnInit {
     this.locationName = `AllSpace Storage - Pawling`;
     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
     this.dataSharingService.locationName = this.locationName;
-    this.script = Location4Script;
+    this.script = Location5Script;
     this.loadScript();
     this.og.forEach(element => {
       this.meta.addTag({

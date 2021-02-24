@@ -4,7 +4,7 @@ export const contactsLocation1 = [
         label: 'Address: ',
         data: '189 Manchester Road Poughkeepsie, NY 12603',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/Yk3fJZwdVSKb6e737'
     },
     {
         id: 2,

@@ -1,7 +1,6 @@
 
 import { Component, OnInit , OnDestroy } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { script } from '../../data/script';
 import { DataSharingService } from '../services/data-sharing.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -17,7 +16,6 @@ import { SignOutService } from '../services/sign-out.service';
 
 export class ThankYouComponent implements OnInit, OnDestroy {
 
-  script: any;
   strConfirmation: string;
   strAccessCode: string;
   tokenExit: string;

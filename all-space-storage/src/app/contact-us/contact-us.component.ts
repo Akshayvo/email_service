@@ -9,8 +9,8 @@ import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
 import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2,
-   ogContactPageLocation3, ogContactPageLocation4, twitterContactPage, twitterContactPageLocation1,
-    twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4 } from '../data/script';
+   ogContactPageLocation3, ogContactPageLocation4, ogContactPageLocation5, twitterContactPage, twitterContactPageLocation1,
+    twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4, twitterContactPageLocation5 } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 @Component({
   selector: 'app-contact-us',
@@ -110,7 +110,7 @@ export class ContactUsComponent implements OnInit {
           this.og = ogContactPageLocation4;
           } else {
             if (this.router.url.includes('pawling'))
-            this.og = ogContactPageLocation4;
+            this.og = ogContactPageLocation5;
           }
         } 
       }
@@ -131,7 +131,7 @@ public fetchTwitter() {
           this.twitter = twitterContactPageLocation4;
           } else {
             if (this.router.url.includes('pawling'))
-            this.twitter = twitterContactPageLocation4;
+            this.twitter = twitterContactPageLocation5;
           }
         }
       }
@@ -179,7 +179,7 @@ public fetchTwitter() {
     } else if (this.router.url.includes('lake-katrine')) {
       this.fetchContactDetailsLocation4();
     } else if (this.router.url.includes('pawling')) {
-      this.fetchContactDetailsLocation4();
+      this.fetchContactDetailsLocation5();
     }
   }
 

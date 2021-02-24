@@ -122,7 +122,7 @@ public fetchTwitter() {
     } else if ( this.locationId === '4' ) {
       this.fetchContactDetailsLocation4();
     } else if ( this.locationId === '5' ) {
-      this.fetchContactDetailsLocation4();
+      this.fetchContactDetailsLocation5();
     }
   }
 

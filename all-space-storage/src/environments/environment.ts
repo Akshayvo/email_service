@@ -10,7 +10,8 @@ export const environment = {
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'AllSpace-Storage- Testing',
+  appId: 'AllSpace Storage- Testing',
+  facilityName: 'All Space SELF STORAGE',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: `https://allspacestorage.com`

@@ -12,7 +12,6 @@ import { LocationService } from '../services/location.service';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  // template: `<ngx-json-ld [json]="script"></ngx-json-ld>`
 })
 export class HomeComponent implements OnInit {
   contactDetails: any;
