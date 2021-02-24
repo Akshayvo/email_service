@@ -196,10 +196,28 @@ h1 {
   }
 
   .jumbotorn-skew-text {
-    a {
-      font-size: 1rem;
+    .disp {
+      h2 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
     }
-    
+  }
+
+  .feature-icon-style {
+    img {
+      height: 80px;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+    }
+
+    h6 {
+      font-size: 0.8rem;
+    }
   }
 }
 
@@ -244,9 +262,6 @@ h1 {
     }
   }
 
-  .jumbotorn-button {
-    padding: 10px;
-  }
 
   .jumbotron-top {
     height: 100vh;
@@ -279,6 +294,8 @@ h1 {
   .jumbotron-top {
     height: 100vh;
   }
+
+  
 
   
 }
@@ -330,25 +347,13 @@ h1 {
     }
   }
 
-  .feature-icon-style {
-    padding: 12px 24px;
-    img {
-      height: 80px;
-    }
-
-    h6 {
-      font-size: 0.5rem;
-    }
-  }
 
   .jumbotron-top {
     height: 100vh;
   }
 
   .jumbotron-bottom {
-    height: 20vh;
-    display: flex;
-    align-items: center;
+   display: none;
   }
   
 }
@@ -468,11 +473,6 @@ h1 {
     display: none;
   }
 
-  .button-width {
-    max-width: 200px;
-    margin: auto;
-  }
-
   .jumbotorn-skew-style {
     width: 100%;
     
@@ -493,9 +493,7 @@ h1 {
     }
   }
 
-  .jumbotorn-button {
-    padding: 10px;
-  }
+  
   
 }
 
@@ -566,9 +564,6 @@ h1 {
     }
   }
 
-  .jumbotorn-button {
-    padding: 10px;
-  }
 
   .jumbotron-bottom {
     display: none;
@@ -606,9 +601,6 @@ h1 {
     bottom: 10px;
   }
 
-  .jumbotorn-button {
-    padding: 10px;
-  }
 }
 
 @media only screen and (max-width: 429px) {
@@ -650,9 +642,6 @@ h1 {
       margin-top: 8px;
     }
 
-    .jumbotorn-button {
-      padding: 15px;
-    }
   }
   .jumbotron-bottom {
     display: none;
