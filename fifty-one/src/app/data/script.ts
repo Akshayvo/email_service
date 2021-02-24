@@ -36,7 +36,7 @@ const sameAs = [];
 const openingHours = [];
 const amenityFeature = [];
 hours.forEach(hour =>
-  openingHours.push(hour.label + hour.data)
+  openingHours.push(hour)
 )
 
 featuresList.forEach(
@@ -61,11 +61,11 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Fifty_One_Self_Storage/fifty-one-self-storage16x9.jpg"
      ],
      imagesContactPage: [
-      "https://example.com/photos/1x1/photo.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Fifty_One_Self_Storage/fifty-one-self-storage1x1.jpg",
      ],
      telephone: contact[contactIndex].data,
      map: "https://g.page/fiftyoneselfstorage",
-     description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach." || homePageContent,
+     description: homePageContent,
      streetAddress: "6446 N Towne Rd",
      state: "Wisconsin",
      addressLocality: "Windsor",
@@ -112,7 +112,7 @@ export const homePageScript = [ {
     "telephone": script.telephone,
     
     "priceRange": "$75 - $205",
-    "openingHours": openingHours,
+    "openingHours": (openingHours.length === 2 ? openingHours[0].data : openingHours.slice(0,openingHours.length-1)),
     "currenciesAccepted": script.currenciesAccepted,
     "paymentAccepted": script.paymentAccepted,
      "areaServed": {
