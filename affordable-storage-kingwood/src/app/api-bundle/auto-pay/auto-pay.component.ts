@@ -165,7 +165,6 @@ export class AutoPayComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
-    console.log('value changing', this.dataSharingService.isDataUpdated);
     if (!!localStorage.getItem('strTenantToken')) {
       this.getPayMethods();
     } else {
@@ -338,7 +337,6 @@ export class AutoPayComponent implements OnInit, OnDestroy {
           this.autoPayForm.controls.objTenant.valueChanges.subscribe(data => {
             this.objTenantCopy = data;
             this.dataSharingService.isDataUpdated = (JSON.stringify(this.objTenantCopy) !== JSON.stringify(tempObject));
-            console.log('this.isDataUpdated', this.dataSharingService.isDataUpdated);
             this.isDataUpdated = this.dataSharingService.isDataUpdated;
             this.enableUpdateButton = true;
           });
@@ -388,7 +386,6 @@ export class AutoPayComponent implements OnInit, OnDestroy {
 
   toggleEvent() {
     this.enableUpdateButton = true;
-    console.log('this.enableUpdateButton', this.enableUpdateButton);
     this.count = this.count + 1;
     this.toggleSignUp = true;
     this.dataSharingService.signUpForAutoPay = !this.dataSharingService.signUpForAutoPay;
@@ -504,16 +501,13 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   autoPayStatus() {
     switch (true) {
       case ((this.dataSharingService.isDataUpdated ===  true) && (this.toggleSignUp === true)):
-        console.log('both are working case 1');
         this.customDataUpdate();
         // this.customSignUp();
         break;
       case (this.toggleSignUp === true):
-        console.log('checkbox is working case 2');
         this.customSignUp();
         break;
       case (this.dataSharingService.isDataUpdated === true):
-        console.log('data updated case 3');
         this.customDataUpdate();
         break;
     }

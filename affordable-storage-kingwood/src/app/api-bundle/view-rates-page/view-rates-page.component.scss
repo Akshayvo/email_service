@@ -4,6 +4,23 @@
   display: none;
 }
 
+.discount-header {
+  font-weight: 600;
+  margin-bottom: 6px;
+  line-height: 1rem;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.discount-data {
+  // font-weight: 600;
+  margin-bottom: 2px;
+}
+
 .iconStyle {
   cursor: pointer;
 }

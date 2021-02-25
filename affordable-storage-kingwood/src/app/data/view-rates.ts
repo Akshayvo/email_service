@@ -18,7 +18,7 @@ export const viewRatesAltText = `photograph of several self storage unit buildin
 export const th = [
   {
     data: `Size`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
+    state: true,
   },
   {
     data: `Rate`,
@@ -380,3 +380,58 @@ export const discountRate = [
     discountAnnualRental: '$2,268.00'
   }
 ];
+
+export const option1 =  [
+  {
+    description: 'Alberta',
+    id: 'AB'
+  },
+  {
+    description: 'British Columbia',
+    id: 'BC'
+  },
+  {
+    description: 'Manitoba',
+    id: 'MB'
+  },
+  { 
+    description: 'New Brunswick',
+    id: 'NB'
+  },
+  {
+    description: 'Newfoundland and Labrador',
+    id: 'NL'
+  },
+  {
+    description: 'Northwest Territories',
+    id: 'NT'
+  },
+  {
+    description: 'Nova Scotia',
+    id: 'NS'
+  },
+  {
+    description: 'Nunavut',
+    id: 'NU'
+  },
+  {
+    description: 'Ontario',
+    id: 'ON'
+  },
+  {
+    description: 'Prince Edward Island',
+    id: 'PE'
+  },
+  {
+    description: 'Quebec',
+    id: 'QC'
+  },
+  {
+    description: 'Saskatchewan',
+    id: 'SK'
+  },
+  {
+    description: 'Yukon',
+    id: 'YT'
+  },
+  ];

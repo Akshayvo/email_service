@@ -27,6 +27,11 @@ import { RentSubComponent } from '../api-bundle/rent-sub/rent-sub.component';
 import { AutoPayComponent } from '../api-bundle/auto-pay/auto-pay.component';
 import { SignUpComponent } from '../api-bundle/sign-up/sign-up.component';
 import { environment } from '../../environments/environment';
+import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
+import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
+import { ThankYouGuard } from '../thank-you.guard';
+
+
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -35,7 +40,8 @@ const withoutTab = [
         {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
         {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
         { path: 'verifyCode', component: VerifyCodeComponent },
-        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
         // canActivate: [VerifictionCodeGuard]
 ];
 
@@ -49,7 +55,8 @@ const withTab = [
           {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
           {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
           { path: 'verifyCode', component: VerifyCodeComponent },
-          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
           // canActivate: [VerifictionCodeGuard]
         ]
       },
@@ -61,25 +68,26 @@ const withTab = [
           {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
           {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
           { path: 'verifyCode', component: VerifyCodeComponent },
-          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
           // canActivate: [VerifictionCodeGuard]
         ]
       }
 ];
 
 // const reservationForm = environment
-const childroute = environment.paymentPageType ? withTab : withoutTab;
+const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
-    { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'reserve-unit', component: ReserveComponent },
-    { path: 'storageTips', component: StorageTipsComponent },
+    { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
+    { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
     { path: 'contact-us', component: ContactComponent },
     // { path: 'unit-sizer', component: UnitSizerComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
     {
-      path: 'view-rates',
+      path: `${environment.locationName}/view-rates`,
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
@@ -89,6 +97,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
         { path: 'confirmation-page', component: ConfirmationPageComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
       ]
      },
     {

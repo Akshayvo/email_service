@@ -28,3 +28,9 @@ export const unitSizerPageContent = ``;
 export const contactPageTitle = `Contact Us  | Affordable Storage of Kingwood`;
 export const contactPageContent = `If you have questions about your account or the services we offer, take a moment
 to fill our out form, or use the contact information to speak with us!`;
+
+export const thankYouPageTitle = `Thank You For Reserving Your Unit at Affordable Storage of Kingwood!`;
+export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
+
+export const privacyPolicyPageTitle = `Privacy Policy | Affordable Storage of Kingwood`;
+export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
