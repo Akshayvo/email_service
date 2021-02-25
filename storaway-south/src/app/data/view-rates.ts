@@ -32,8 +32,7 @@ export const currentDiscounts = [
     },
     {
         p: `1 year prepaid - Prepay 11 months, 12th month free`
-    },
-    {
-        p: `Student Discount - 20%`
+  
     }
+
 ];
