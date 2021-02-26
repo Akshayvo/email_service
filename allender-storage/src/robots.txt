@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://allender.netlify.app/sitemap.xml
+Sitemap: https://www.allenderstorage.com/sitemap.xml
 User-agent: *
-Disallow:
+Disallow:/privacy-policy

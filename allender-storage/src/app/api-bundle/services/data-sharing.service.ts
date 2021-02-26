@@ -17,6 +17,7 @@ export class DataSharingService {
   periodID: number;
   strAccessCode: string;
   strConfirmation: string;
+  showSuccessPayment: boolean;
   addingTenant = false;
   period: string;
   apiKey = '';
