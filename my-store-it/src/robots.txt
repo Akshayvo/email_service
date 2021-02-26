@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: http://mystoreitspace.com/sitemap.xml
+Sitemap: https://mystoreitspace.com/sitemap.xml
 User-agent: *
 Disallow:
