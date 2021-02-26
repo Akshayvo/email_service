@@ -1,0 +1,84 @@
+<div class="">
+  <div class="jumbotron-container">
+    <div class="jumbotron-top">
+    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+      </div>
+      </div>
+      <div class="jumbotron-bottom">
+        <div class="container">
+          <div class="feature row">
+            <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
+              <img [src]="feature?.path" [alt]="feature?.alt" height="100px"/>
+                <h6 class="feature-text">{{feature.label}}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="bg-light">
+    <div class="container py-4">
+      <div class="section py-4 m-0">
+        <div class="row">
+          <div class="col-lg-6 py-3 home-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5660.133026119418!2d-67.05357607734352!3d44.820209597394275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca8bef957723055%3A0x2c88a6d89b63d692!2sLubec%20Safe%20Space%20Storage!5e0!3m2!1sen!2sus!4v1613703296874!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+          </div>
+
+          <div class="col-lg-6 py-3">
+            <div class="mb-4 contact-details">
+              
+              <p>
+                <span *ngFor="let contact of contactDetails" class="display-contact">
+                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' || contact?.label === 'Mailing Address:' else other_content">
+                    <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:' || contact?.label === 'Mailing Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h4>
+                  </span>
+                  <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
+                </span>
+              </p>
+              <!-- <h4><b>Facility Hours:</b></h4> -->
+              <p>
+                <span class="display-contact" *ngFor="let hour of hours">
+                  <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
+                </span>
+              </p>
+            </div>
+            <div>
+              <app-tables [tBody]="featuresList"></app-tables>
+              <a class="btn btn-lg btn-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section py-5 m-0">
+      <div class="row">
+        <div class="col-lg-6 py-3">
+          <!-- <img src="{{imageBaseUrl}}/self-storage-facility.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
+          <app-photos></app-photos>
+        </div>
+        <div class="col-lg-6 py-3">
+          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
+          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="getStarted" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+    <div class="bg-translucent-dark">
+      <div class="container">
+        <div class="section py-5 m-0">
+          <div class="row">
+            <div class="col-md-12 py-3">
+              <h2 class="heading pb-4">Getting Started</h2>
+              <p class="pb-4">{{gettingStarted}}</p>
+              <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit Now!</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div> 
