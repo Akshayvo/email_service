@@ -57,6 +57,7 @@ import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
+import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 
 @NgModule({
   declarations: [
@@ -99,6 +100,7 @@ import { AlternateDetailsComponent } from './alternate-details/alternate-details
     ThankYouComponent,
     PrivacyPolicyComponent,
     AlternateDetailsComponent,
+    TermsAndConditionsComponent,
   ],
   imports: [
     CommonModule,

@@ -2,29 +2,32 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Sample Self Storage - North has been serving Baldwinsville, and the surrounding communities
-      with quality regular and climate controlled self storage units for nearly two decades. We have
-      the experience and commitment to modern conveniences you need to make your next storage project an easy one`,
+      p: `Allender Storage provides clean, well-maintained self storage units and stellar customer service to White Marsh and the surrounding Maryland communities. Our service comes complete with a large range of unit sizes and the amenities to make your storage experience a convenient one. `,
     },
     {
-      p: `At Sample Self Storage - North, you'll have access to our services with an online tenant portal
-      for contactless rentals, and online payments. If you're here after hours and want to make a payment,
-      stop into the office's foyer and use our 24-hour kiosk!`
+      p: `Many of our business customers make regular use of our 24/7 access hours to store extra equipment, excess inventory, and documents in our units. Our around-the-clock access gives you the extra square footage without the expense of commercial real estate.`
     },
     {
-      p: `Our residential storage users love our convenient location and affordable rates that take the stress
-      out of their move, renovation, or seasonal de-cluttering projects. An extra closet to an extra garage's
-      worth of space makes the most out of your home's space!
-      `
+      p: `Are you in the process of moving, renovating, or downsizing? Consider getting a storage unit to make your project a little easier. We store seasonal belongings such as furniture, clothing, and seasonal yard tools or hardware. Reclaim that space around the home or yard at Allender Storage!`
     },
-    {
-      p: `Many local businesses in use our climate controlled storage units to save money by storing in a climate
-      controlled storage unit instead of expensive commercial real estate. We are the ideal space for your extra
-    inventory, or documents. Our 24-hour access policy is the ideal solution for your local business.`
-    }
+    
 ];
 
-export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
+export const dataViewRatesHeading = [
+  {
+    h1: ``,
+  },
+  {
+    h1: `Business Storage`
+  },
+  {
+    h1: `Residential Storage`
+  },
+  
+];
+
+
+export const viewRatesAltText = `a metal roll up self storage unit with luggage, a bike, shelves, and boxes inside`;
 
 export const th = [
   {
@@ -35,10 +38,10 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    data: 'deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  },
+  // {
+  //   data: 'deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
   {  
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation

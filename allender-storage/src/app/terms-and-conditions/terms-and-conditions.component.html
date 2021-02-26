@@ -1,0 +1,14 @@
+<div class="contentHolder">
+  <div class="container pb-5 my-3">
+    <h1 class="py-5" >{{termsAndConditionsHeading}}</h1>
+    <div class="row accordion-background bg-light background-padding">
+      <div class="px-4 col-md-12">
+        <p>Allender Storage is concerned about the safety of your personal belongings. Please read and observe our rules and regulations.</p>
+        <p><b>Please Note:</b> It is against the law to store materials that are hazardous or combustible such as gasoline, cleaning fluids, paint, etc. Drain all gasoline from lawnmowers, power tools, boats, snowmobiles, etc. before storing. Do not store food items that could attract rodents or pests.
+        <p>The Allender Storage team will be pleased to answer any of your questions.</p>
+        <h2>Rules and Regulations:</h2>
+        <ul><li class="terms-left text-justify" *ngFor="let terms of termsAndConditions">{{terms.data}}</li></ul>
+      </div>
+    </div>
+  </div>
+</div>

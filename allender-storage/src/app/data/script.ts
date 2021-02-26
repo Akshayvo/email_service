@@ -1,11 +1,12 @@
 import { environment } from '../../environments/environment';
 import { homePageContent, homePageTitle, payRentPageContent,
   payRentPageTitle, storageTipsContent, storageTipsTitle,
-contactPageContent, contactPageTitle } from '../data/title';
+contactPageContent, contactPageTitle, termsAndconditionsPageTitle ,termsAndconditionsPageContent } from '../data/title';
 import { featuresList } from '../data/home';
 import { contact, hours, socialLinks } from '../data/contact';
 import { FetchDataService } from '../api-bundle/services/fetch-data.service';
 import { OnInit, Component, Input, Output  } from '@angular/core';
+
 
 // @Component({})
 // export class getValues  {
@@ -33,11 +34,11 @@ import { OnInit, Component, Input, Output  } from '@angular/core';
 const contactIndex = contact.findIndex(x => x.label === 'Phone:');
 const emailIndex = contact.findIndex(x => x.label === 'Email:');
 const sameAs = [];
-const openingHours = [];
+const openingHours = ["Mo-Fr 09:00-16:00\", \"Sa 09:00-15:00"];
 const amenityFeature = [];
-hours.forEach(hour =>
-  openingHours.push(hour.label + hour.data)
-)
+// hours.forEach(hour =>
+//   openingHours.push(hour.label + hour.data)
+// )
 
 featuresList.forEach(
   feature => 
@@ -50,36 +51,38 @@ socialLinks.forEach(links => {
 }
 );
   
-export const ogGraphImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jp` // 4:3
+export const ogGraphImage = `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Allender_Storage/jpg/self-storage-facility-jumbotron.jpg` // 4:3
 
-export const twitterImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg` // 1:1
+export const twitterImage = `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Allender_Storage/jpg/self-storage-unit-1x1.jpg` // 1:1
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jp", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jp" // 16:9
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Allender_Storage/jpg/self-storage-unit-1x1.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Allender_Storage/jpg/self-storage-unit-4x3.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Allender_Storage/jpg/self-storage-unit-16x9.jpg" // 16:9
      ],
      imagesContactPage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Allender_Storage/jpg/self-storage-unit-1x1.jpg",
      ],
      telephone: contact[contactIndex].data,
-     map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
-     description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach." || homePageContent,
-     streetAddress: "148 W 51st St",
-     state: "New York",
-     addressLocality: "New York",
-     addressRegion: "NY",
-     postalCode: "10019",
+     map: "https://g.page/allender-storage?share",
+     description: "Allender Storage is a locally owned and operated self storage facility located in White Marsh, Maryland. We offer a number of unit sizes that serve both residential and commercial storage users." || homePageContent,
+     streetAddress: "5808 Allender Rd",
+     state: "Maryland",
+     addressLocality: "White Marsh",
+     addressRegion: "Maryland",
+     postalCode: "21162",
      addressCountry: "US",
      id: environment.websiteUrl || "",
-     paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
-     currenciesAccepted: "EUR",
-     ratingValue: "4",
+     paymentAccepted:  "Cash, Credit, Debit, Check, Online Credit, Online Debit",
+     currenciesAccepted: "USD",
+     ratingValue: "4.7",
      bestRating: "5",
      reviewCount: "250",
-     latitude: 40.761293,
-     longitude: -73.982294,
+     latitude: -76.4053614,
+     longitude: 39.4002949,
+     priceRange: '$49-$199'
+     
 };
 
 export const homePageScript = [ {
@@ -111,7 +114,7 @@ export const homePageScript = [ {
     "url": environment.websiteUrl,
     "telephone": script.telephone,
     
-    "priceRange": "$$$",
+    "priceRange": script.priceRange,
     "openingHours": openingHours,
     "currenciesAccepted": script.currenciesAccepted,
     "paymentAccepted": script.paymentAccepted,
@@ -370,4 +373,58 @@ export const ogPayRentPage = [
     },
   ];
 
+
+  export const ogTermsAndConditionsPage = [
+    {
+      property: `og:title`,
+      content: `${termsAndconditionsPageTitle}`
+    },
+    {
+      property: `og:description`,
+      content: `${termsAndconditionsPageContent}`
+    },
+    {
+      property: `og:type`,
+      content: `website`
+    },
+    {
+      property: `og:site_name`,
+      content: `${environment.facilityName}`
+    },
+    {
+      property: `og:url`,
+      content: `${environment.websiteUrl}/${environment.locationName}/terms-and-conditions`
+    },
+    {
+      property: `og:image`,
+      content: ogGraphImage
+    },
+  ];
+  
+  export const twitterTermsAndConditionsPage = [
+    {
+      name: `twitter:title`,
+      content: `@${termsAndconditionsPageTitle}`
+    },
+    {
+      name: `twitter:description`,
+      content: `${termsAndconditionsPageContent}`
+    },
+    {
+      name: `twitter:site`,
+      content: `@${environment.facilityName}`
+    },
+    {
+      name: `twitter:card`,
+      content: `summary`
+    },
+    {
+      name: `twitter:creator`,
+      content: `@syrasoft_connect`
+    },
+    {
+      name: `twitter:image`,
+      content: twitterImage
+    },
+  ];
   

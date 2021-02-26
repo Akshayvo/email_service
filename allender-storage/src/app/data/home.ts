@@ -5,53 +5,34 @@ export const featuresList = [
     },
     {
         td1: 'Security Cameras',
-        td2: 'Well-Lit Facility',
+        td2: 'Drive-Up Units',
     },
     {
-        td1: 'Brand New Units',
-        td2: 'Auto-Pay Available',
+        td1: 'Auto-Pay Available',
+        td2: 'Friendly Customer Service',
     },
     {
-        td1: 'Fully-Paved Facility',
-        td2: 'Pin-Pad Activated Security Gate',
+        td1: 'Pin-Pad Activated Security Gate',
+        td2: 'Affordable Rates',
     },
     {
-        td1: 'Affordable Rates',
-        td2: 'Climate-Controlled Units Available',
+        td1: 'Fully-Fenced Facility',
     },
-    {
-        td1: 'Retail Store On-Premises',
-        td2: 'Fully-Fenced Facility',
-    }
 ];
 
-export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
+export const aboutUsAlt = `a metal roll up self storage unit with luggage, a bike, shelves, and boxes inside`;
 
-export const aboutUsHeading = `Affordable Self Storage in Baldwinsville`;
+export const aboutUsHeading = `Affordable Storage Units in White Marsh, Maryland`;
 
 export const aboutUs = [
     {
-        p: `Sample Self Storage - North has proudly served the village of Baldwinsville with friendly
-        service, and clean, well-maintained self storage units for nearly 20 years. We are a locally
-        owned business that prides itself on the trust we've earned from out friends and neighbors over
-        the past two decades.`,
+        p: `Allender Storage is a locally owned and operated self storage facility located in White Marsh, Maryland. We are conveniently located on Allender Road across from Freestate Indoor Sports. Thanks to our decade of self storage experience, you’ll find all of the modern conveniences and security considerations required to make your next storage project a breeze. From our contactless rentals through our website to our 24-hour access policies, all you have to worry about is what to do with all that extra space around the house or office.`,
     },
     {
-        p: `We are located across the street from the iconic Lock 24 restaurant, and offer easy access
-        through our electronic pin-code secured front gate. Our parking lanes are extra-wide to make
-        maneuvering your moving truck to your unit a breeze. Need access outside of regular banking hours?
-        We're open 24 hours a day! Use our on-site kiosk or rent online and you can can be moving into your unit in minutes!`,
+        p: `We are well-lit, fenced, and access to the facility is controlled with a pin-code activated gate to provide a sense of security as you come and go from your self storage units. You’ll find we provide a number of unit sizes from 5-foot by 8-foot units that are perfect for seasonal clothing and decorations up to our oversized 15-foot by 20-foot units that can hold the equipment and inventory of a growing business!`,
     },
     {
-        p: `Our units range from closet-sized 5-foot-by-5-foot units that are perfect for seasonal
-        clothing, and sports equipment to our 10-foot-by-30-foot units that will store a multi-bedroom
-        home during a move! Sample Self Storage - North has units available in regular, unconditioned
-        varieties and climate controlled for those belongings that require a little extra protection.`,
-    },
-    {
-        p: `Whether you're a growing business in need of a place for equipment, documents, and supplies,
-        or if you're a residential storage user in the process of a move, or a renovation, we've got your
-        storage needs covered. Let Sample Self Storage - North help de-clutter your life today!`,
+        p: `Take a moment to review our rates and availability, then use our contactless rental process to fill out your lease, pay your first months’ charges, and receive your unique access pin-code! Whether you’re a local homeowner or renter in need of some extra space around your home or a growing business that values saving money on storage costs, Allender Storage has you covered! Our friendly staff are available to answer any questions you may have, simply give us a call, or fill out our contact form!`,
     }
     
 ];
@@ -69,32 +50,29 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
-        label: 'Stellar Customer Service',
-        alt: 'Customer Service Representative Icon'
-    },
-    {
-        // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
-        label: 'Affordable Self Storage Rates',
-        alt: 'Icon of a hand holding money'
+        path: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Syrasoft_Poweredby/icons/24-hours.svg`,
+        label: '24 Hour Facility Access',
+        alt: 'Icon art displaying clock hands and the number 24'
 
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg`,
-        label: 'Security Cameras on Premises',
-        alt: 'Icon of a security camera'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
+        label: 'Stellar Customer Service',
+        alt: 'Customer Service Representative Icon'
+    },
+    
+    {
+        // tslint:disable-next-line:max-line-length
+        path: `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Syrasoft_Poweredby/icons/light-bulb.svg`,
+        label: 'Well-Lit Facility',
+        alt: 'Icon of an illuminated light'
     },
 ];
 
 export const jumbotron = [
     {
-        h2: `Affordable Climate Controlled Units in Baldwinsville`,
-        blurb: `Sample Self Storage - North was the first self storage facility we built nearly 20 years ago.
-        We recently renovated our entire operation to make sure our valued customers have another 20 years of
-        clean, affordable regular and climate controlled self storage options in Baldwinsville! Let Sample Self
-        Storage - North help you today. Our well-lit and personalized pin-code secured facility awaits your next
-        storage project!`,
+        h2: `24-Hour Access Storage Units in White Marsh`,
+        blurb: `Allender Storage is the one-stop storage solution for White Marsh. We have been serving White Marsh for over two decades with clean, well-maintained self storage services. Our facility offers a variety of self storage unit sizes perfect to help you free up some elbow room around the home, office, or worksite. Whether you're a homeowner trying to clean their garage out or a local business in search of a place for that excess inventory or supplies, Allender storage has a unit for you!`,
     }
 ];

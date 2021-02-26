@@ -25,12 +25,16 @@ export const navLinks = [
         label: 'STORAGE TIPS',
         path: `${environment.locationName}/storage-tips`
     },
-    {
-        label: 'UNIT SIZER',
-        path: '/unit-sizer'
-    },
+    // {
+    //     label: 'UNIT SIZER',
+    //     path: '/unit-sizer'
+    // },
     {
         label: 'CONTACT US',
         path: '/contact-us'
+    },
+    {
+        label:'TERMS AND CONDITIONS',
+        path:`${environment.locationName}/terms-and-conditions`
     },
 ];

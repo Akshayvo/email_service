@@ -29,6 +29,7 @@ import { environment } from '../../environments/environment';
 import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from '../thank-you.guard';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
+import { TermsAndConditionsComponent } from '../terms-and-conditions/terms-and-conditions.component'
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -39,6 +40,7 @@ const withoutTab = [
         { path: 'verifyCode', component: VerifyCodeComponent },
         { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+      
         // canActivate: [VerifictionCodeGuard]
 ];
 
@@ -81,6 +83,7 @@ const reviewURL = ``
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
     { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
+    { path: `${environment.locationName}/terms-and-conditions`, component: TermsAndConditionsComponent},
     { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
@@ -133,6 +136,7 @@ export const iFrameRoutes = [
     { path: '', component: HomeComponent },
     { path: 'pay-rent', component: PaymentIframePageComponent },
     { path:  `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
+    { path: `${environment.locationName}/terms-and-conditions`, component: TermsAndConditionsComponent},
     { path: `${environment.locationName}/view-rates`, component: ViewRatesIframePageComponent },
     { path: `${environment.locationName}/reserve-unit`, component: ReserveUnitIframePageComponent },    
     { path: 'contact-us', component: ContactComponent },

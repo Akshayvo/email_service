@@ -4,20 +4,22 @@ export const objSIMSetting = {
         blnAllowReservation: true
     },
     objPaymentSetting: {
-        blnAllowACHPayments: true,
-        blnAllowAutoPay: true,
+        blnAllowACHPayments: false,
+        blnAllowAutoPay: false,
         blnAllowCCPayments: true,
         blnAllowCancelAutoPay: true,
         blnAllowPartialPayments: true
     },
     objReservationSetting: {
         blnHideGateAccessCode: true,
+        intLeadDaysFrom: 1,
+        intLeadDaysTo: 12
     },
     objUnitSizesSetting: {
-        blnClimateControl: true,
-        blnShowDeposit: true,
+        blnClimateControl: false,
+        blnShowDeposit: false,
         blnShowRate: true,
         blnShowUnavailableUnitTypes: true,
-        blnShowUnitAvailability: true
+        blnShowUnitAvailability: false
     },
 };
