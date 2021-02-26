@@ -1,7 +1,9 @@
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
-  paymentPageType: 1, // { withoutTab: 0, withTab: 1}
+  locationName: 'new-york/baldwinsville', // state/city
+  signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
+  alternateType: { moveIn: false, reserve: true }, // { moveIn: true, reserve: true },
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',

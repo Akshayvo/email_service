@@ -122,7 +122,7 @@
                                     ${{UnpaidAR.Amount}}
                                 </td>
                                 <td  colspan="3" class="px-2 py-1 text-center" *ngIf="UnpaidAR.AmountOwed < 0; else other">
-                                    (${{UnpaidAR.amountOwed}})
+                                    (${{UnpaidAR.AmountOwed}})
                                 </td>
                                 <ng-template #other><td class="px-2 py-1 text-center">${{UnpaidAR.AmountOwed}}</td></ng-template>
                                 <td  colspan="3" class="pl-2 py-1">
