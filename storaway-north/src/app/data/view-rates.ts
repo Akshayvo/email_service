@@ -27,7 +27,7 @@ export const currentDiscounts = [
     {
         p: `Fall special October - December - 3 months prepaid, 1 month free for rental of 10x20 unit.`
     },
-    {
-        p: `Student Discount - 20%`
-    },
+    // {
+    //     p: `Student Discount - 20%`
+    // },
 ];
