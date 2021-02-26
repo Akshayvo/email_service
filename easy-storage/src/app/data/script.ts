@@ -74,7 +74,7 @@ export const script = {               // Please fill this script according to fa
      addressCountry: 'US',
      id: environment.websiteUrl || '',
      paymentAccepted:  'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
-     currenciesAccepted: 'EUR',
+     currenciesAccepted: 'USD',
      ratingValue: '4.7',
      bestRating: '5',
      reviewCount: '31',
