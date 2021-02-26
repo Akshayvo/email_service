@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'Fifty One Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://fifty-one-staging.netlify.app',
+  websiteUrl: 'https://fiftyoneselfstorage.com',
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   // APIKey: `dTJXOUQ0UDBIN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29407 fifty one 
 };
