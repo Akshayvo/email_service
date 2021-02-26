@@ -27,26 +27,26 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/https://www.allenderstorage.com/self-storage-white-marsh-md-88825"
+  to = "/https://www.allenderstorage.com/"
+  status = 301
+[[redirects]]
+  from = "/https://www.allenderstorage.com/self-storage-calculator"
+  to = "/https://www.allenderstorage.com/"
+  status = 301
+[[redirects]]
+  from = "/https://www.allenderstorage.com/about"
+  to = "/https://www.allenderstorage.com/"
+  status = 301
+[[redirects]]
+  from = "/https://www.allenderstorage.com/info/terms-and-conditions"
+  to = "/https://www.allenderstorage.com/terms-and-conditions"
+  status = 301
+[[redirects]]
+  from = "/https://www.allenderstorage.com/self-storage-white-marsh-md-88825/payonline"
+  to = "/https://www.allenderstorage.com/pay-rent"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200
-[[redirects]]
-  from = "https://www.allenderstorage.com/self-storage-white-marsh-md-88825"
-  to = "https://www.allenderstorage.com/"
-  status = 200
-[[redirects]]
-  from = "https://www.allenderstorage.com/self-storage-calculator"
-  to = "https://www.allenderstorage.com/"
-  status = 200
-[[redirects]]
-  from = "https://www.allenderstorage.com/about"
-  to = "https://www.allenderstorage.com/"
-  status = 200
-[[redirects]]
-  from = "https://www.allenderstorage.com/info/terms-and-conditions"
-  to = "https://www.allenderstorage.com/terms-and-conditions"
-  status = 200
-[[redirects]]
-  from = "https://www.allenderstorage.com/self-storage-white-marsh-md-88825/payonline"
-  to = "https://www.allenderstorage.com/pay-rent"
   status = 200

@@ -77,7 +77,7 @@ const withTab = [
 const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
 
 
-const reviewURL = ``
+const reviewURL = `http://search.google.com/local/writereview?placeid=ChIJJTzgxrPjx4kRiFrCyERrfS8`
 
  export const apiRoutes = [
     // Fallback when no prior route is matched
