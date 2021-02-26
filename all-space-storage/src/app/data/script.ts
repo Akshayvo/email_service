@@ -163,7 +163,7 @@ export const homePageScript = [
     '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
     'name': nameLocation1,
     'url': urlLocation1,
-    'openingHours': ["Mo-Sa 10:00- 14:00\", \"Su Closed"],
+    'openingHours': ["Mo-Sa 10:00- 14:00"],
     'priceRange': '$65',
       'address' : addressLoaction1,
     'telephone': contactsLocation1[contactIndex1].data,
@@ -178,7 +178,7 @@ export const homePageScript = [
     'telephone': contactsLocation2[contactIndex2].data,
     'email': contactsLocation2[emailIndex2].data,
     'address': addressLoaction2,
-    'openingHours': ["Mo-Fr 09:00-17:00\", \"Sa 10:00-16:00\" , \"Su Closed"],
+    'openingHours': ["Mo-Fr 09:00-17:00\", \"Sa 10:00-16:00" ],
     'priceRange': '$290 - $64',
     'url' : urlLocation2,
   }, 
@@ -191,7 +191,7 @@ export const homePageScript = [
     'email' : contactsLocation3[emailIndex3].data,
     'address':addressLoaction3,
     'priceRange': '$55 - $165',
-    'openingHours': ["Mo-Fr 10:00-17:00\", \"Sa 10:00-16:00\" , \"Su Closed"],
+    'openingHours': ["Mo-Fr 10:00-17:00\", \"Sa 10:00-16:00" ],
     'url' : urlLocation3
   }, 
   {
@@ -203,7 +203,7 @@ export const homePageScript = [
     'email' : contactsLocation4[emailIndex4].data,
     'address': addressLoaction4,
      'priceRange': '',
-     'openingHours': ["Mo-Fr 09:00-17:00\", \"Sa 09:00-16:00\" , \"Su Closed"],
+     'openingHours': ["Mo-Fr 09:00-17:00\", \"Sa 09:00-16:00" ],
      'url' : urlLocation4
   }, 
   {
@@ -244,7 +244,7 @@ export const Location1Script = {
     'telephone': contactsLocation1[contactIndex1].data,
 
     'priceRange': '$65',
-    'openingHours': ["Mo-Sa 10:00- 14:00\", \"Su Closed"],
+    'openingHours': ["Mo-Sa 10:00- 14:00"],
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Credit card, Online Payment',
      'areaServed': {
@@ -279,7 +279,7 @@ export const Location2Script = {
     'telephone': contactsLocation2[contactIndex2].data,
 
     'priceRange': '$290 - $64',
-    'openingHours': ["Mo-Fr 09:00-17:00\", \"Sa 10:00-16:00\" , \"Su Closed"],
+    'openingHours': ["Mo-Fr 09:00-17:00\", \"Sa 10:00-16:00" ],
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Credit card, Online Payment',
      'areaServed': {
@@ -315,7 +315,7 @@ export const Location3Script = {
     'telephone': contactsLocation3[contactIndex3].data,
 
     'priceRange': '$55 - $165',
-    'openingHours': ["Mo-Fr 10:00-17:00\", \"Sa 10:00-16:00\" , \"Su Closed"],
+    'openingHours': ["Mo-Fr 10:00-17:00\", \"Sa 10:00-16:00" ],
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Credit card, Online Payment',
      'areaServed': {
@@ -351,7 +351,7 @@ export const Location4Script = {
     'telephone': contactsLocation4[contactIndex4].data,
 
     'priceRange': '',
-    'openingHours': ["Mo-Fr 09:00-17:00\", \"Sa 09:00-16:00\" , \"Su Closed"],
+    'openingHours': ["Mo-Fr 09:00-17:00\", \"Sa 09:00-16:00" ],
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Credit card, Online Payment',
      'areaServed': {
