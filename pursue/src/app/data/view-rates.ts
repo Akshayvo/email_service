@@ -37,35 +37,35 @@ export const gridHeader = [
 export const gridData = [
   {
     length: `15 Foot`,
-    rate: `$55.00`
+    rate: `$61.05`
   },
   {
     length: `20 Foot`,
-    rate: `$60.00`
+    rate: `$66.60`
   },
   {
     length: `25 Foot`,
-    rate: `$65.00`
+    rate: `$72.15`
   },
   {
     length: `30 Foot`,
-    rate: `$84.00`
+    rate: `$93.24`
   },
   {
     length: `35 Foot`,
-    rate: `	$95.00`
+    rate: `	$105.45`
   },
   {
     length: `40 Foot`,
-    rate: `$106.00`
+    rate: `$117.66`
   },
   {
     length: `45 Foot`,
-    rate: `$125.00`
+    rate: `$138.75`
   },
   {
     length: `75 Foot`,
-    rate: `$192.50`
+    rate: `$213.68`
   },
 ];
 
