@@ -28,7 +28,7 @@ export class DataSharingService {
   eventName: string;
   signUpForAutoPay: boolean;
   showAltDetails: boolean;
-
+  showSuccessPayment: boolean;
   cardDetailsObject = {
     CCNumber: '',
     CCBillingAccountName: '',

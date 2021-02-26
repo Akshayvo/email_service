@@ -31,7 +31,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   thankYouPageTitle: string;
   thankYouPageContent: string;
   facilityName: string;
-
+  showSuccessPayment = false;
   MoveIn = {
     dteMoveIn: '',
     intUnitTypeID: 0,
@@ -58,6 +58,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.showSuccessPayment = this.dataSharingService.showSuccessPayment;
     this.strConfirmation = this.dataSharingService.strConfirmation;
     this.strAccessCode = this.dataSharingService.strAccessCode;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;

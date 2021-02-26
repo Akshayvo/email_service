@@ -76,7 +76,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   UnpaidAR: UnpaidAR[];
 
-  showSuccessPayment = false;
 
   lastPaymentOn: string;
   lastPaymentAmount: string;
@@ -582,9 +581,10 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               } else {
                 this.router.navigate([`pay-rent/thank-you`]);
               }
+              this.dataSharingService.showSuccessPayment = true;
             }
           }
-          this.showSuccessPayment = true;
+          
         } else {
           this.makePaymentForUnit = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
