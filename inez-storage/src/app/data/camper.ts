@@ -301,16 +301,16 @@ export const winnebagoLeftColumn = [
         p: `Price List:`,
     },
     {
-        p: `Three night minimum: $219 per night`,
+        p: `Three night minimum: $229 per night`,
     },
     {
-        p: `mileage allowance 200 miles per night rented:   .40 cents per mile over allowance`,
+        p: `mileage allowance 200 miles per night rented: .45 cents per mile over allowance`,
     },
     {
         p: `Pre-paid cleaning fee $75`,
     },
     {
-        p: `Optional Linen package: $50, includes sheets and pillows (memory foam), eight bath towels, eight wash cloths, three hand towels for the bath.`,
+        p: `Optional Linen package: $50, includes sheets and pillows (memory foam), eight bath towels, eight wash cloths, three hand towels for bath.`,
     }
 ];
 
