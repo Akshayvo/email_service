@@ -15,9 +15,40 @@ import { contactsLocation1, hoursLocation1,
   contactsLocation5, hoursLocation5, 
  } from '../data/contact';
 
- import { navLinks } from '../data/nav';
+ const openingHoursLocation1 = [];
+hoursLocation1.filter( hour => {
+  if (hour.label !== 'Access hours: ') {
+    openingHoursLocation1.push(hour.label + hour.data)
+  }
+})
 
- navLinks.findIndex
+const openingHoursLocation2 = [];
+hoursLocation2.filter( hour => {
+  if (hour.label !== 'Access hours: ') {
+    openingHoursLocation2.push(hour.label + hour.data)
+  }
+})
+
+const openingHoursLocation3 = [];
+hoursLocation3.filter( hour => {
+  if (hour.label !== 'Access hours: ') {
+    openingHoursLocation3.push(hour.label + hour.data)
+  }
+})
+
+const openingHoursLocation4 = [];
+hoursLocation4.filter( hour => {
+  if (hour.label !== 'Access hours: ') {
+    openingHoursLocation4.push(hour.label + hour.data)
+  }
+})
+
+const openingHoursLocation5 = [];
+hoursLocation5.filter( hour => {
+  if (hour.label !== 'Access hours: ') {
+    openingHoursLocation5.push(hour.label + hour.data)
+  }
+})
  
 const contactIndex1 = contactsLocation1.findIndex(x => x.label === 'Phone: ');
 const contactIndex2 = contactsLocation2.findIndex(x => x.label === 'Phone: ');
@@ -131,6 +162,7 @@ export const homePageScript = [
     '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
     'name': nameLocation1,
     'url': urlLocation1,
+    'openingHours': openingHoursLocation1,
     'priceRange': '$65',
       'address' : addressLoaction1,
     'telephone': contactsLocation1[contactIndex1].data,
@@ -145,7 +177,7 @@ export const homePageScript = [
     'telephone': contactsLocation2[contactIndex2].data,
     'email': contactsLocation2[emailIndex2].data,
     'address': addressLoaction2,
-    'openingHours': ['Mo-Fr 09:00-17:00", "Sa 10:00-16:00'],
+    'openingHours': openingHoursLocation2,
     'priceRange': '$290 - $64',
     'url' : urlLocation2,
   }, 
@@ -158,7 +190,7 @@ export const homePageScript = [
     'email' : contactsLocation3[emailIndex3].data,
     'address':addressLoaction3,
     'priceRange': '$55 - $165',
-    "openingHours":["Mo-Fr 10:00-17:00", "Sa 10:00-16:00"],
+    'openingHours': openingHoursLocation3,
     'url' : urlLocation3
   }, 
   {
@@ -170,8 +202,8 @@ export const homePageScript = [
     'email' : contactsLocation4[emailIndex4].data,
     'address': addressLoaction4,
      'priceRange': '',
-    'openingHours': ["Mo-Fr 09:00-17:00", "Sa 09:00-16:00"],
-    'url' : urlLocation4
+     'openingHours': openingHoursLocation4,
+     'url' : urlLocation4
   }, 
   {
     '@context' : 'http://schema.org',
@@ -182,7 +214,7 @@ export const homePageScript = [
     'email' : contactsLocation5[emailIndex5].data,
     'address': addressLoaction5,
     'priceRange': '$65 - $185',
-    'openingHours': ['Mo, Tu, We, Fr 10:00-17:00", "Th 10:00-14:00",  "Sa 09:00-15:00'],
+    'openingHours': openingHoursLocation5,
     'url' : urlLocation5
   }
  ];
@@ -211,7 +243,7 @@ export const Location1Script = {
     'telephone': contactsLocation1[contactIndex1].data,
 
     'priceRange': '$65',
-   'openingHours': ['Mo-Sa 10:00-14:00'],
+    'openingHours': openingHoursLocation1,
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Credit card, Online Payment',
      'areaServed': {
@@ -246,7 +278,7 @@ export const Location2Script = {
     'telephone': contactsLocation2[contactIndex2].data,
 
     'priceRange': '$290 - $64',
-   'openingHours': ['Mo-Fr 09:00-17:00", "Sa 10:00-16:00'],
+    'openingHours': openingHoursLocation2,
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Credit card, Online Payment',
      'areaServed': {
@@ -282,7 +314,7 @@ export const Location3Script = {
     'telephone': contactsLocation3[contactIndex3].data,
 
     'priceRange': '$55 - $165',
-    "openingHours":["Mo-Fr 10:00-17:00", "Sa 10:00-16:00"],
+    'openingHours': openingHoursLocation3,
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Credit card, Online Payment',
      'areaServed': {
@@ -318,7 +350,7 @@ export const Location4Script = {
     'telephone': contactsLocation4[contactIndex4].data,
 
     'priceRange': '',
-   'openingHours': ["Mo-Fr 09:00-17:00", "Sa 09:00-16:00"],
+    'openingHours': openingHoursLocation4,
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Credit card, Online Payment',
      'areaServed': {
@@ -354,7 +386,7 @@ export const Location5Script = {
   'telephone': contactsLocation5[contactIndex5].data,
 
   'priceRange': '$65 - $185',
- 'openingHours': ['Mo, Tu, We, Fr 10:00-17:00", "Th 10:00-14:00",  "Sa 09:00-15:00'],
+  'openingHours': openingHoursLocation5,
   'currenciesAccepted': 'USD',
 'paymentAccepted': 'Cash, Credit card, Online Payment',
    'areaServed': {
