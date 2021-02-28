@@ -18,7 +18,6 @@ export const contact = [
         label: 'Email: ',
         data: 'herronhillstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        email: 'herronhillstorage@gmail.com',
         redirect: 'mailto:` herronhillstorage@gmail.com`'
     },
     {
