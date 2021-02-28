@@ -221,7 +221,7 @@ onSubmit() {
     this.contactForm.value.subject = 'Website Form Submission';
   }
 
-  this.receiveremail = this.contactDetails[1].email;
+  this.receiveremail = this.contactDetails[1].data;
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
 
