@@ -16,8 +16,7 @@ export const contact = [
         label: 'Email:',
         data: 'easystoragewoodburn@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        email: 'easystoragewoodburn@gmail.com, syrasoftsoftware@gmail.com',
-        redirect: 'mailto:`easystoragewoodburn@gmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`easystoragewoodburn@gmail.com`'
     },
     {
         id: 3,
