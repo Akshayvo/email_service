@@ -33,11 +33,8 @@ import { OnInit, Component, Input, Output  } from '@angular/core';
 const contactIndex = contact.findIndex(x => x.label === 'Phone:');
 const emailIndex = contact.findIndex(x => x.label === 'Email:');
 const sameAs = [];
-const openingHours = [];
 const amenityFeature = [];
-hours.forEach(hour =>
-  openingHours.push(hour.label + hour.data)
-)
+
 
 featuresList.forEach(
   feature => 
@@ -80,6 +77,8 @@ export const script = {               // Please fill this script according to fa
      reviewCount: "250",
      latitude: 40.761293,
      longitude: -73.982294,
+     openingHours: [],
+     priceRange: ''
 };
 
 export const homePageScript = [ {
@@ -111,8 +110,8 @@ export const homePageScript = [ {
     "url": environment.websiteUrl,
     "telephone": script.telephone,
     
-    "priceRange": "$$$",
-    "openingHours": openingHours,
+    "priceRange": script.priceRange,
+    "openingHours": script.openingHours,
     "currenciesAccepted": script.currenciesAccepted,
     "paymentAccepted": script.paymentAccepted,
      "areaServed": {
