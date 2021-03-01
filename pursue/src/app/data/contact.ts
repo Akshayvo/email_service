@@ -10,8 +10,8 @@ export const contact = [
         label: 'Email:',
         data: 'service@pursuegroup.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        email: 'service@pursuegroup.com, syrasoftsoftware@gmail.com',
-        redirect: 'mailto:`service@pursuegroup.com, syrasoftsoftware@gmail.com`'
+        email: 'service@pursuegroup.com',
+        redirect: 'mailto:`service@pursuegroup.com`'
     },
     {
         id: 2,
