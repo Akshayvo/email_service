@@ -9,10 +9,10 @@ export const contactsLocation1 = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'allspacestoragert55@hvc.rr.com, syrasoftsoftware@gmail.com',
+        
         data: `allspacestoragert55@hvc.rr.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`allspacestoragert55@hvc.rr.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`allspacestoragert55@hvc.rr.com`'
     },
     {
         id: 3,
@@ -50,9 +50,8 @@ export const contactsLocation2 = [
         id: 2,
         label: 'Email: ',
         data: 'AllSpaceStorage@hvc.rr.com',
-        email: `AllSpaceStorage@hvc.rr.com, syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`AllSpaceStorage@hvc.rr.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`AllSpaceStorage@hvc.rr.com`'
     },
     {
         id: 3,
@@ -94,9 +93,8 @@ export const contactsLocation3 = [
         id: 2,
         label: 'Email: ',
         data: 'allspacestoragert299@hvc.rr.com',
-        email: `allspacestoragert299@hvc.rr.com, syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`allspacestoragert299@hvc.rr.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`allspacestoragert299@hvc.rr.com`'
     },
     {
         id: 3,
@@ -138,9 +136,8 @@ export const contactsLocation4 = [
         id: 2,
         label: 'Email: ',
         data: 'allspacestorageLK@hvc.rr.com',
-        email: `allspacestorageLK@hvc.rr.com, syrasoftsoftware@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`allspacestorageLK@hvc.rr.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`allspacestorageLK@hvc.rr.com`'
     },
     {
         id: 3,
@@ -181,10 +178,9 @@ export const contactsLocation5 = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'allspacestoragert22@hvc.rr.com, syrasoftsoftware@gmail.com',
         data: `allspacestoragert22@hvc.rr.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`allspacestoragert22@hvc.rr.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`allspacestoragert22@hvc.rr.com`'
     },
     {
         id: 3,
