@@ -2,7 +2,7 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Fifty One Self Storage is Deforest and Windsor’s premiere self storage facility. We offer a number of unit sizes in both regular and climate controlled varieties.Start with our closet-sized 5-foot by 5-foot 
+      p: `Fifty One Self Storage is Deforest and Windsor’s premiere self storage facility. We offer a number of unit sizes in both regular and climate controlled varieties. Start with our closet-sized 5-foot by 5-foot 
       units for that extra closet’s worth of space for seasonal clothing, yard equipment, or decorations.
       Our units go up to our oversized 10-foot by 40-foot that are an ideal solution for a growing business
       that understands how affordable self storage is compared to storing equipment, inventory, or documents

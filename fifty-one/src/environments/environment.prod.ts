@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'windsor/wisconsin',  // state/city
+  locationName: 'wisconsin/windsor',  // state/city
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}

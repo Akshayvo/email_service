@@ -4,31 +4,6 @@ import { homePageContent, homePageTitle, payRentPageContent,
 contactPageContent, contactPageTitle } from '../data/title';
 import { featuresList } from '../data/home';
 import { contact, hours, socialLinks } from '../data/contact';
-import { FetchDataService } from '../api-bundle/services/fetch-data.service';
-import { OnInit, Component, Input, Output  } from '@angular/core';
-
-// @Component({})
-// export class getValues  {
-
-
-//   constructor(
-    
-//   ) {
-//     console.log('class is wrkng');
-//     this.getData();
-
-//   }
-
-//   getData() {
-// console.log('im ');
-
-//     }
- 
-// } 
-
-// new getValues();
-
- 
  
 const contactIndex = contact.findIndex(x => x.label === 'Phone:');
 const emailIndex = contact.findIndex(x => x.label === 'Email:');
@@ -38,6 +13,9 @@ const amenityFeature = [];
 hours.forEach(hour =>
   openingHours.push(hour)
 )
+
+// "openingHours": (openingHours.length === 2 ? openingHours[0].data : openingHours.slice(0,openingHours.length-1)),
+
 
 featuresList.forEach(
   feature => 
@@ -112,7 +90,7 @@ export const homePageScript = [ {
     "telephone": script.telephone,
     
     "priceRange": "$75 - $205",
-    "openingHours": (openingHours.length === 2 ? openingHours[0].data : openingHours.slice(0,openingHours.length-1)),
+    "openingHours": ["Mon-Su 09:00-17:00"],
     "currenciesAccepted": script.currenciesAccepted,
     "paymentAccepted": script.paymentAccepted,
      "areaServed": {
