@@ -14,5 +14,5 @@ export const environment = {
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   facilityName: 'Southern Maine Storage',
   APIKey: `dzZ0MVc4SjhOOjIyfCU4Nzg3NyQoOD1iVzBzaGRkOWtlb2NeTg==`, // 6188 southern Maine
-  websiteUrl: 'https://www.southernmainestorage.com/'
+  websiteUrl: 'https://www.southernmainestorage.com'
 };

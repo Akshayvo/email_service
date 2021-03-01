@@ -1,10 +1,9 @@
 <div  itemscope itemtype="https://schema.org/SelfStorage" itemtype="https://schema.org/LocalBusiness">
-  <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
-  <span hidden itemprop="name">Sample Self Storage - North</span>
+  <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Southern_Maine/southern-maine-storage-16x9.jpg" />
+  <span hidden itemprop="name">Southern Maine Storage</span>
   <span hidden itemprop="areaServed" itemscope itemtype="https://schema.org/State">
     <span itemprop="name">New York</span>
   </span>
-  <!-- <app-microdata></app-microdata> -->
   <div [class.loader]="!showTable">
   </div>
   <div [class.loader]="showLoader" class="loader-position"> 
@@ -17,9 +16,9 @@
             </th>
           </tr>
       </tHead>
-      <span hidden itemprop="name">Sample Self Storage- North</span>
+      <span hidden itemprop="name">Southern Maine Storage</span>
 
-      <meta itemprop="name" content="Sample Self Storage - North" />
+      <meta itemprop="name" content="Southern Maine Storage" />
 
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
         <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of LstUnitTypes" >
@@ -28,7 +27,7 @@
               {{lstUnitType.Description}}
               <meta itemprop="description" 
               content="{{lstUnitType.Description}}" />
-              <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
+              <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Southern_Maine/southern-maine-storage-16x9.jpg" />
 
           </td>
           <td colspan="2" class="px-4 border text-center">

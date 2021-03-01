@@ -30,5 +30,5 @@ export const contactPageTitle = `Contact Us  | Southern Maine Storage`;
 export const contactPageContent = `Contact us with the easy-to-use form, or use our contact information to
 inquire about your account, or our services.`;
 
-export const thankYouPageTitle = `Thank You For Reserving Your Unit at Sample Self Storage!`;
+export const thankYouPageTitle = `Thank You For Reserving Your Unit at Southern Maine Storage!`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;

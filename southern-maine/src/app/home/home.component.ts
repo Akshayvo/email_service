@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours,accessHours } from '../data/contact';
 import { featuresList, aboutUs, gettingStarted, feature, jumbotron, aboutUsAlt, aboutUsHeading } from '../data/home';
-import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { UaParserService } from '../services/ua-parser.service';
 import { homePageTitle, homePageContent } from '../data/title';
@@ -52,7 +51,6 @@ export class HomeComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     private _renderer2: Renderer2,
-    private metaService: MetaService,
     private uaParserService: UaParserService,
     private canonical: CanonicalService,
     private fetchDataService: FetchDataService,

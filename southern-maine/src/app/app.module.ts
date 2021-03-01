@@ -57,7 +57,7 @@ import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
 import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
-import { MicrodataComponent } from './api-bundle/microdata/microdata.component';
+
 
 @NgModule({
   declarations: [
@@ -98,7 +98,6 @@ import { MicrodataComponent } from './api-bundle/microdata/microdata.component';
     SignUpComponent,
     TabsComponent,
     ThankYouComponent,
-    MicrodataComponent
   ],
   imports: [
     CommonModule,
