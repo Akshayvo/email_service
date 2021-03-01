@@ -25,6 +25,7 @@ export const featuresList = [
     },
     {
         td1: 'Fully-Fenced Facility',
+        td2:'State-Of-The-Art Construction'
     },
 ];
 
