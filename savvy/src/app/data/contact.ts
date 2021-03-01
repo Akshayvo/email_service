@@ -10,8 +10,8 @@ export const contact = [
         label: 'Email:',
         data: 'service@savvy-storage.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        email: 'service@savvy-storage.com, syrasoftsoftware@gmail.com',
-        redirect: 'mailto:`service@savvy-storage.com, syrasoftsoftware@gmail.com`'
+        email: 'service@savvy-storage.com',
+        redirect: 'mailto:`service@savvy-storage.com`'
     },
     {
         id: 2,

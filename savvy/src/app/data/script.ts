@@ -31,7 +31,7 @@ export const ogHomePage = [
   },
   {
     property: `og:url`,
-    content: `https://savvy-staging.netlify.app/`
+    content: `https://www.savvy-storage.com/`
   },
   {
     property: `og:image`,
@@ -85,7 +85,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:url`,
-      content: `https://savvy-staging.netlify.app/pay-rent/rent-sub/login`
+      content: `https://www.savvy-storage.com/pay-rent/rent-sub/login`
     },
     {
       property: `og:image`,
@@ -139,7 +139,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:url`,
-      content: `https://savvy-staging.netlify.app/storage-tips`
+      content: `https://www.savvy-storage.com/storage-tips`
     },
     {
       property: `og:image`,
@@ -193,7 +193,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:url`,
-      content: `https://savvy-staging.netlify.app/contact-us`
+      content: `https://www.savvy-storage.com/contact-us`
     },
     {
       property: `og:image`,

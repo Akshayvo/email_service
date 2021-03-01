@@ -2,7 +2,7 @@ import { contact } from './contact';
 
 export const privacyPolicy = [
     {
-      content: `This privacy notice discloses the privacy practices for "https://savvy-staging.netlify.app".
+      content: `This privacy notice discloses the privacy practices for "https://www.savvy-storage.com".
       This privacy notice applies solely to information collected by this website. It will notify you of the following:`,
       list: [
           {
