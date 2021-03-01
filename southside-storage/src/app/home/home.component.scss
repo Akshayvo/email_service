@@ -45,6 +45,18 @@
   background-position: center;
   height: 100vh;
 }
+.horizontal-row {
+  background-color: #014421;
+}
+
+.textbottom {
+  color : white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  letter-spacing: normal;
+}
 
 .jumbotorn-background-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Southside_Storage/jpg/southside-storage-jumbotron.jpg");
@@ -241,6 +253,9 @@
       }
     }
   }
+  .jumbotron-bottom {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-height: 480px) {
@@ -267,6 +282,9 @@
       }
     }
   }
+  .jumbotron-bottom {
+    display: none;
+  }
 }
 
 
@@ -289,6 +307,9 @@
     .heading {
       width: auto;
     }
+  }
+  .jumbotron-bottom {
+    display: none;
   }
 }
 
@@ -320,6 +341,9 @@
     background-attachment: unset;
     background-position: center top;
   }
+  .jumbotron-bottom {
+    display: none;
+  }
 }
 
 
@@ -336,6 +360,10 @@
         margin-top: 0;
       }
     }
+  }
+
+  .jumbotron-bottom {
+    display: none;
   }
 
   .we-provide {
@@ -368,6 +396,9 @@
       margin: auto;
     }
   }
+  .jumbotron-bottom {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 649px) and (min-height: 481px) {
@@ -383,6 +414,9 @@
         margin-top: 0;
       }
     }
+  }
+  .jumbotron-bottom {
+    display: none;
   }
 
   .arrow {
@@ -421,7 +455,9 @@
       }
     }
   }
-
+  .jumbotron-bottom {
+    display: none;
+  }
   .arrow {
     display: none;
   }
@@ -449,7 +485,9 @@
     background-attachment: unset;
     background-position: center top;
   }
-
+  .jumbotron-bottom {
+    display: none;
+  }
   .we-provide {
     background-attachment: unset;
     background-position: center top;
@@ -473,6 +511,9 @@
         margin-top: 0;
       }
     }
+  }
+  .jumbotron-bottom {
+    display: none;
   }
 
   .we-provide {
@@ -518,7 +559,9 @@
       }
     }
   }
-
+  .jumbotron-bottom {
+    display: none;
+  }
   .arrow {
     display: none;
   }
@@ -570,7 +613,9 @@
       }
     }
   }
-
+  .jumbotron-bottom {
+    display: none;
+  }
   .we-provide {
     background-attachment: unset;
     background-position: center top;
@@ -614,7 +659,9 @@
       font-size: 2em;
     }
   }
-
+  .jumbotron-bottom {
+    display: none;
+  }
   .btn-primary {
     min-width: 100%;
     margin: 10px 0;
@@ -670,7 +717,9 @@
       margin: 10px 0;
     }
   }
-
+  .jumbotron-bottom {
+    display: none;
+  }
   .we-provide {
     background-attachment: unset;
     background-position: center top;
@@ -729,7 +778,9 @@
       }
     }
   }
-
+  .jumbotron-bottom {
+    display: none;
+  }
   .margin-bottom {
     margin-bottom: 10vh;
   }
@@ -777,7 +828,9 @@
       padding: 0;
     }
   }
-
+  .jumbotron-bottom {
+    display: none;
+  }
   .arrow {
     display: none;
   }
