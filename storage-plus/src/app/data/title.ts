@@ -24,3 +24,6 @@ export const thankYouPageContent = `We've received your reservation! One of our 
 
 export const privacyPolicyPageTitle = `Privacy Policy | Sample Self Storage - North`;
 export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
+
+export const faqPageTitle = `Frequently Asked Questions | Sample Self Storage - North`;
+export const faqPagecontent = `Have some questions about the services at Sample Self Storage - North? Check out our FAQ page!`;

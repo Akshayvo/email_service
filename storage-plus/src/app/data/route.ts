@@ -39,6 +39,7 @@ import { environment } from '../../environments/environment';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { ThankYouGuard } from '../thank-you.guard';
+import { FaqComponent } from '../faq/faq.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -87,6 +88,7 @@ const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
+    { path: 'frequently-asked-questions', component: FaqComponent},
     { path: 'location/chester-brookside-ave',
       component: LocationComponent,
       children: [

@@ -66,6 +66,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ThankYouGuard } from './thank-you.guard';
 import { PhotosComponent } from './photos/photos.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -119,6 +120,7 @@ import { PhotosComponent } from './photos/photos.component';
     PrivacyPolicyComponent,
     ContactUsComponent,
     PhotosComponent,
+    FaqComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
