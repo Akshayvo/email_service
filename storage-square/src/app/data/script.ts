@@ -1,74 +1,96 @@
-import { env } from 'process';
 import { environment } from '../../environments/environment';
 import { homePageContent, homePageTitle, payRentPageContent,
   payRentPageTitle, storageTipsContent, storageTipsTitle,
 contactPageContent, contactPageTitle } from '../data/title';
-import { HomeComponent } from '../home/home.component';
+import { featuresList } from '../data/home';
+import { contact, socialLinks } from '../data/contact';
+ 
+const contactIndex = contact.findIndex(x => x.label === 'Phone:');
+const emailIndex = contact.findIndex(x => x.label === 'Email:');
+const sameAs = [];
+const amenityFeature = [];
 
-export const script = {
-    // Put your script here
+
+featuresList.forEach(
+  feature => 
+  (amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td1}),
+  amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td2}))
+)
+
+socialLinks.forEach(links => {
+  links.path ? sameAs.push(links.path) : sameAs.push(' ')
+}
+);
+  
+
+export const script = {               // Please fill this script according to facility's information
+    imagesHomePage: [
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Square/jpg/storage-unit%20%281x1%29.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Square/jpg/storage-unit%20%284x3%29.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Square/jpg/storage-unit%20%2816x9%29.jpg"
+     ],
+     telephone: contact[contactIndex].data,
+     map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
+     description: "Storage Square serves West Mifflin and the surrounding communities with a variety of well-maintained and affordable self storage units.",
+     streetAddress: "4021 Homestead Duquesne Rd",
+     state: "Pennsylvania",
+     addressLocality: "West Mifflin",
+     addressRegion: "PA",
+     postalCode: "15122",
+     addressCountry: "US",
+     id: environment.websiteUrl || "",
+     paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
+     currenciesAccepted: "USD",
+     ratingValue: "3.5",
+     bestRating: "5",
+     reviewCount: "4",
+     latitude:  40.36852128,
+     longitude: -79.89217917,
+     openingHours: ["Mo-Sun 00:00-24:00"],
+     priceRange: ''
 };
 
 export const homePageScript = [ {
     "@context": "https://schema.org",
-    "@type": "SelfStorage",
-    "image": [
-      "https://example.com/photos/1x1/photo.jpg",
-      "https://example.com/photos/4x3/photo.jpg",
-      "https://example.com/photos/16x9/photo.jpg"
-     ],
-    "@id": "http://davessteakhouse.example.com",
-    "name": "Storage Square ",
-     "description": "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
+    "@type": ["Organization","SelfStorage","Place","LocalBusiness"],
+    "image": script.imagesHomePage,
+    "@id": script.id,
+    "name": environment.facilityName,
+     "description": script.description || homePageContent,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "148 W 51st St",
-      "addressLocality": "New York",
-      "addressRegion": "NY",
-      "postalCode": "10019",
-      "addressCountry": "US"
+      "streetAddress": script.streetAddress,
+      "addressLocality": script.addressLocality,
+      "addressRegion": script.addressRegion,
+      "postalCode": script.postalCode,
+      "addressCountry": script.addressCountry
     },
    "aggregateRating": {
-  "@type": "AggregateRating",
-  "ratingValue": "4",
-  "bestRating": "5",
-  "reviewCount": "250"
-},
+      "@type": "AggregateRating",
+      "ratingValue": script.ratingValue,
+      "bestRating": script.bestRating,
+      "reviewCount": script.reviewCount
+    },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 40.761293,
-      "longitude": -73.982294
+      "latitude": script.latitude,
+      "longitude": script.longitude
     },
-    "url": "http://www.example.com/",
-    "telephone": "+12122459600",
+    "url": environment.websiteUrl,
+    "telephone": script.telephone,
     
-    "priceRange": "$$$",
-   "openingHours":["Mo-Fr 10:00-19:00", "Sa 10:00-22:00", "Su 10:00-21:00"],
-    "currenciesAccepted": "EUR",
-  "paymentAccepted":"Cash, Credit Card",
+    "priceRange": script.priceRange,
+    "openingHours": script.openingHours,
+    "currenciesAccepted": script.currenciesAccepted,
+    "paymentAccepted": script.paymentAccepted,
      "areaServed": {
-  "@type": "State",
-  "name": "Massachusetts"
+    "@type": "State",
+    "name": script.state
    },
    
-"hasMap":"https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
-"amenityFeature":[{"@type":"LocationFeatureSpecification",
-  "name":"Convenient Kimberly, WI Location"},
-  {"@type":"LocationFeatureSpecification",
-  "name":"Easy Online Payments"},
-  {"@type":"LocationFeatureSpecification",
-  "name":"Gate with Pin-code Access"},
-  {"@type":"LocationFeatureSpecification",
-  "name":"Well-lit Storage Units"},
-  {"@type":"LocationFeatureSpecification",
-  "name":"Great Customer Service"},
-  {"@type":"LocationFeatureSpecification",
-  "name":"Manage Account Online"},
-  {"@type":"LocationFeatureSpecification",
-  "name":"Climate Controlled Storage"}],
-
-
-    "acceptsReservations": "True"
+  "hasMap": script.map,
+  "amenityFeature": amenityFeature,
+  "acceptsReservations": "True"
   }];
 
 
@@ -76,32 +98,26 @@ export const homePageScript = [ {
     {
         "@context": "http://schema.org",
         "@type": "Selfstorage",
-        "name": "Marca",
+        "name": environment.facilityName,
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Bangalore, Karnataka",
-          "postalCode": "560094",
-          "streetAddress": "1st floor, SLN Emeralds Building, Dr Rajgopal Rd, Krishnappa Layout, AECS Layout, R.M.V. 2nd Stage,"
+          "addressLocality": script.addressLocality,
+          "postalCode": script.postalCode,
+          "streetAddress": script.streetAddress,
         },
-         "url": "dfd.com/ff",
-         "image": [
-              "https://example.com/photos/1x1/photo.jpg"
-             ],
+         "url": environment.websiteUrl,
+         "image": script.imagesHomePage[0],
         "contactPoint": [{
           "@type": "ContactPoint",
-          "telephone": "",
+          "telephone": script.telephone,
           "contactType": "reservations"
         },{
           "@type": "ContactPoint",
-          "telephone": "4",
+          "telephone": script.telephone,
           "contactType": "customer service"
         }],
-        "email": "storagesquare.wm@gmail.com",
-        "sameAs": [
-          "facebook.com/xxx",
-          "",
-          ""
-        ]
+        "email": contact[emailIndex].data,
+        "sameAs": sameAs
       }
   ];
 
@@ -129,7 +145,7 @@ export const ogHomePage = [
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
+    content: script.imagesHomePage[1]
   },
 ];
 
@@ -156,7 +172,7 @@ export const twitterHomePage = [
   },
   {
     name: `twitter:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
+    content: script.imagesHomePage[0]
   },
 ];
 
@@ -183,7 +199,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
+      content: script.imagesHomePage[1]
     },
   ];
   
@@ -210,7 +226,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
+      content: script.imagesHomePage[0]
     },
   ];
 
@@ -233,11 +249,11 @@ export const ogPayRentPage = [
     },
     {
       property: `og:url`,
-      content: `${environment.websiteUrl}/storage-tips`
+      content: `${environment.websiteUrl}/${environment.locationName}/storage-tips`
     },
     {
       property: `og:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
+      content: script.imagesHomePage[1]
     },
   ];
   
@@ -264,7 +280,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
+      content: script.imagesHomePage[0]
     },
   ];
   
@@ -291,7 +307,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
+      content: script.imagesHomePage[1]
     },
   ];
   
@@ -318,8 +334,6 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Square/jpg/storage-square.jpg`
+      content: script.imagesHomePage[0]
     },
   ];
-
-  

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { dataViewRates, viewRatesAltText } from '../../data/view-rates';
-import { MetaService } from '../../services/link.service';
 import { UaParserService } from '../../services/ua-parser.service';
 import { viewRatesHeading } from '../..//data/heading';
 import { viewRatesPageContent, viewRatesPageTitle } from '../../data/title';
@@ -25,7 +24,6 @@ export class ViewRatesIframePageComponent implements OnInit {
   constructor(
     private titleService: Title,
     private meta: Meta,
-    private metaService: MetaService,
     private uaParserService: UaParserService,
     private canonical: CanonicalService
   ) {

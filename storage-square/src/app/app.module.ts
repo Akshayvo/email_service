@@ -47,7 +47,6 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 import { PhotosComponent } from './photos/photos.component';
-import { ScriptHackComponent } from './script-hack/script-hack.component';
 import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
 import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
@@ -56,7 +55,6 @@ import { TabsComponent } from './tabs/tabs.component';
 import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import { MicrodataComponent } from './api-bundle/microdata/microdata.component';
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
 import { UpdateDetailsComponent } from './api-bundle/update-details/update-details.component';
 import { UpdateComponent } from '../app/api-bundle/update/update.component';
@@ -93,7 +91,6 @@ import { UpdateComponent } from '../app/api-bundle/update/update.component';
     UnitSizerComponent,
     UnitSizesComponent,
     PhotosComponent,
-    ScriptHackComponent,
     AutoPayComponent,
     RentSubComponent,
     PayRentComponent,
@@ -101,7 +98,6 @@ import { UpdateComponent } from '../app/api-bundle/update/update.component';
     TabsComponent,
     ThankYouComponent,
     PrivacyPolicyComponent,
-    MicrodataComponent,
     AlternateDetailsComponent,
     UpdateComponent,
     UpdateDetailsComponent
