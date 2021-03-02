@@ -13,9 +13,8 @@ export const dataViewRates = [
       loading or unloading easier!`,
     },
     {
-      p: `Check out our affordable storage unit and parking rates, then start your move in process
-      with our contactless rental form. You can pay your rent, and sign your lease instantly, then
-      move in with your new gate access code!`,
+      p: `Check out our affordable storage unit and parking rates, then give our office
+      a call to complete your contactless rental with an electronic signed lease! `,
     },
 ];
 
@@ -49,10 +48,10 @@ export const th = [
   //   data: `Reserve a Unit`,
   //   state: objSIMSetting.objActionSetting.blnAllowReservation
   // },
-  {
-    data: `Move In`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
-  },
+  // {
+  //   data: `Move In`,
+  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  // },
   // {
   //   data: `Climate Control`,
   //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
