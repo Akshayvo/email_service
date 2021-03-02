@@ -3,10 +3,12 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
   contactsLocation3, contactsLocation4, hoursLocation3, hoursLocation4, } from '../data/contact';
-import { featuresHead, serviceOffered, featuresList } from '../data/home';
+import { featuresHead, serviceOffered, featuresList, jumbotron } from '../data/home';
 import { homePageScript, ogHomePage, twitterHomePage } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { LocationService } from '../services/location.service';
+import { homePageTitle, homePageContent } from '../data/title';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -25,6 +27,10 @@ export class HomeComponent implements OnInit {
   script: any;
   ogHomePage: any;
   twitterHomePage: any;
+  homePageContent: string;
+  homePageTitle: string;
+  template: string;
+  jumbotron: any;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -35,6 +41,7 @@ export class HomeComponent implements OnInit {
   ) {
     this.fetchScript();
     this.loadScript();
+    this.fetchMetaData();
     this.fetchOgHomePage();
     this.fetchTwitterHomePage();
     this.canonical.create();
@@ -55,11 +62,9 @@ export class HomeComponent implements OnInit {
 
     this.meta.addTag({
       name: 'description',
-      content: `We offer a wide range of self storage, car, RV and boat storage!
-      Check out our 4 convenient locations in Orange County, NY!`
+      content: `${this.homePageContent}`
     });
-
-    this.titleService.setTitle('Affordable Self Storage Units | StorageTown Rental Spaces');
+    this.titleService.setTitle(`${this.homePageTitle}`);
   }
 
   ngOnInit() {
@@ -68,6 +73,8 @@ export class HomeComponent implements OnInit {
     window.scrollTo(0, 0);
     this.receiveMessage();
     this.fetchFeatures();
+    this.fetchTemplate();
+    this.fetchJumbotron();
    
 
     // fetch(this.script)
@@ -84,8 +91,21 @@ export class HomeComponent implements OnInit {
     this.ogHomePage = ogHomePage;
   }
 
+  public fetchJumbotron() {
+    this.jumbotron = jumbotron;
+  }
+
   public fetchTwitterHomePage() {
     this.twitterHomePage = twitterHomePage;
+  }
+
+  public fetchMetaData() {
+    this.homePageTitle = homePageTitle;
+    this.homePageContent = homePageContent;
+  }
+
+  public fetchTemplate() {
+    this.template = environment.template;
   }
 
   receiveMessage() {

@@ -10,10 +10,38 @@
 
 a {
   cursor: pointer;
+  color: $white;
 }
 .dropdown:hover .dropdown-menu{
   display: block;
 }
+
+.contact-header {
+  display: inline;
+
+  .contact-details {
+    color: $white !important;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+  }
+}
+
+.social {
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 1.2rem;
+  }
+}
+
+.social :hover {
+  color: $white;
+}
+
 .navbar {
   padding-bottom: 0;
   .dropdown-menu {
@@ -68,6 +96,7 @@ a {
 
 .display {
   display: block;
+  background-color: $primary;
 }
 
 .navbar-toggler {
@@ -189,7 +218,6 @@ a {
 
   @media screen and (max-height: 476px) {
     .nav-scroll {
-      height: 70vh;
       overflow-y: auto;
     }
   }

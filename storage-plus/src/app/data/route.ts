@@ -82,7 +82,7 @@ const withTab = [
 ];
 
 // const reservationForm = environment
-const childroute = environment.paymentPageType ? withTab : withoutTab;
+const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
 
 export const apiRoutes = [
     { path: '', component: HomeComponent  },

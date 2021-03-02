@@ -4,6 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { CanonicalService } from '../services/canonical.service';
 import { ogStorageTipsPage, twitterStorageTipsPage } from '../data/script';
+import { storageTipsTitle, storageTipsContent } from '../data/title';
 
 @Component({
   selector: 'app-storage-tips',
@@ -19,6 +20,8 @@ export class StorageTipsComponent implements OnInit {
   breadcrumbActive: any = 'Storage Tips';
   og: any;
   twitter: any;
+  storageTipsTitle: string;
+  storageTipsContent: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -27,6 +30,7 @@ export class StorageTipsComponent implements OnInit {
     private canonical: CanonicalService
     ) {
       this.canonical.create();
+      this.fetchMetaData();
       this.fetchOg();
       this.fetchTwitter();
       this.og.forEach(element => {
@@ -44,10 +48,9 @@ export class StorageTipsComponent implements OnInit {
       });
     this.meta.addTag({
       name: 'description',
-      content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
-      make your stay with us a breeze!`
+      content: `${this.storageTipsContent}`
     });
-    this.titleService.setTitle('Storage Tips | StorageTown Rental Spaces');
+    this.titleService.setTitle(`${this.storageTipsTitle}`);
   }
 
   ngOnInit() {
@@ -62,6 +65,11 @@ export class StorageTipsComponent implements OnInit {
 
 public fetchTwitter() {
     this.twitter = twitterStorageTipsPage;
+}
+
+public fetchMetaData() {
+  this.storageTipsTitle = storageTipsTitle;
+  this.storageTipsContent = storageTipsContent;
 }
 
 

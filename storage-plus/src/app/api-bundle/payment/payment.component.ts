@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { CanonicalService } from '../../services/canonical.service';
 import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
+import { payRentPageTitle, payRentPageContent } from '../../data/title';
 
 @Component({
   selector: 'app-payment',
@@ -24,6 +25,8 @@ export class PaymentComponent implements OnInit {
   paymentTab: string;
   twitter: any;
   og: any;
+  payRentPageContent: string;
+  payRentPageTitle: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -35,6 +38,7 @@ export class PaymentComponent implements OnInit {
     private canonical: CanonicalService
   ) {
     this.canonical.create();
+    this.fetchMetaData();
     this.fetchOg();
     this.fetchTwitter();
     this.og.forEach(element => {
@@ -52,9 +56,9 @@ export class PaymentComponent implements OnInit {
     });
     this.meta.addTag({
       name: 'description',
-      content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+      content: `${this.payRentPageContent}`
     });
-    this.titleService.setTitle('Pay Rent | Affordable Secure Storage');
+    this.titleService.setTitle(`${this.payRentPageTitle}`);
   }
 
   ngOnInit() {
@@ -112,6 +116,11 @@ export class PaymentComponent implements OnInit {
 
   public fetchTableData() {
     this.tableData = tableData;
+  }
+
+  public fetchMetaData() {
+    this.payRentPageTitle = payRentPageTitle;
+    this.payRentPageContent = payRentPageContent;
   }
 
   public dataupdate() {

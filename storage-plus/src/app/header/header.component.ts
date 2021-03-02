@@ -2,6 +2,8 @@ import { Component, OnInit, Input, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { navLinks } from '../data/nav';
 import { WINDOW } from '@ng-toolkit/universal';
+import { contactsLocation1, socialLinks  } from '../data/contact';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +17,8 @@ export class HeaderComponent implements OnInit {
   socialLinks: any;
   data: any;
   logo: any;
+  imagetype: any;
+  imageBaseUrl: any;
   @Input() currentActive: any;
   locationId: any;
   // navbar = document.getElementById('navbar');
@@ -24,10 +28,15 @@ export class HeaderComponent implements OnInit {
     @Inject(WINDOW) private window: Window,
     private route: ActivatedRoute,
     private router: Router,
-  ) { }
+    private uaParserService: UaParserService,
+  ) { 
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
+  }
 
   ngOnInit() {
     this.fetchNavigationLinks();
+    this.fetchContactDetails();
     this.router.events.subscribe(path => {
     });
     // window.onscroll = function() {
@@ -46,63 +55,63 @@ export class HeaderComponent implements OnInit {
     // } 
 
 
-    (function(){
+    // (function(){
 
-      var doc = document.documentElement;
-      var w = window;
+    //   var doc = document.documentElement;
+    //   var w = window;
     
-      var prevScroll = w.scrollY || doc.scrollTop;
-      var curScroll;
-      var direction = 0;
-      var prevDirection = 0;
+    //   var prevScroll = w.scrollY || doc.scrollTop;
+    //   var curScroll;
+    //   var direction = 0;
+    //   var prevDirection = 0;
     
-      var header = document.getElementById('site-header');
+    //   var header = document.getElementById('site-header');
 
-      var navHeader  = document.getElementById('nav-header');
+    //   var navHeader  = document.getElementById('nav-header');
     
-      var checkScroll = function() {
+    //   var checkScroll = function() {
     
-        /*
-        ** Find the direction of scroll
-        ** 0 - initial, 1 - up, 2 - down
-        */
+    //     /*
+    //     ** Find the direction of scroll
+    //     ** 0 - initial, 1 - up, 2 - down
+    //     */
     
-        curScroll = w.scrollY || doc.scrollTop;
-        if (curScroll > prevScroll) { 
-          //scrolled up
-          direction = 2;
-        }
-        else if (curScroll < prevScroll) { 
-          //scrolled down
-          direction = 1;
-        }
+    //     curScroll = w.scrollY || doc.scrollTop;
+    //     if (curScroll > prevScroll) { 
+    //       //scrolled up
+    //       direction = 2;
+    //     }
+    //     else if (curScroll < prevScroll) { 
+    //       //scrolled down
+    //       direction = 1;
+    //     }
     
-        if (direction !== prevDirection) {
-          toggleHeader(direction, curScroll);
-        }
+    //     if (direction !== prevDirection) {
+    //       toggleHeader(direction, curScroll);
+    //     }
         
-        prevScroll = curScroll;
-      };
+    //     prevScroll = curScroll;
+    //   };
     
-      var toggleHeader = function(direction, curScroll) {
-        if (direction === 2 && curScroll > 52) { 
+    //   var toggleHeader = function(direction, curScroll) {
+    //     if (direction === 2 && curScroll > 52) { 
           
-          //replace 52 with the height of your header in px
+    //       //replace 52 with the height of your header in px
     
-          header.classList.add('hide');
-          navHeader.classList.add('customClass');
-          prevDirection = direction;
-        }
-        else if (direction === 1) {
-          header.classList.remove('hide');
-          navHeader.classList.remove('customClass');
-          prevDirection = direction;
-        }
-      };
+    //       header.classList.add('hide');
+    //       navHeader.classList.add('customClass');
+    //       prevDirection = direction;
+    //     }
+    //     else if (direction === 1) {
+    //       header.classList.remove('hide');
+    //       navHeader.classList.remove('customClass');
+    //       prevDirection = direction;
+    //     }
+    //   };
       
-      window.addEventListener('scroll', checkScroll);
+    //   window.addEventListener('scroll', checkScroll);
     
-    })();
+    // })();
   }
 
   public navigate (location: any) {
@@ -111,6 +120,12 @@ export class HeaderComponent implements OnInit {
 
   public fetchNavigationLinks() {
     this.navLinks = navLinks;
+  }
+
+  public fetchContactDetails() {
+    this.contactDetails = contactsLocation1;
+    this.socialLinks = socialLinks
+    
   }
 
   public onClick(menu: any) {

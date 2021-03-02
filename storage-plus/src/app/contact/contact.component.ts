@@ -11,6 +11,7 @@ import { LocationService } from '../services/location.service';
 import { CanonicalService } from '../services/canonical.service';
 import { ogContactPage, twitterContactPage } from '../data/script';
 import { tableDataContactPage, tableHeader } from '../data/pay-rent';
+import { contactPageTitle, contactPageContent } from '../data/title';
 
 @Component({
   selector: 'app-contact',
@@ -40,6 +41,8 @@ export class ContactComponent implements OnInit {
   twitter: any;
   tableData: any;
   tableHeader: any;
+  contactPageTitle: string;
+  contactPageContent: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -52,6 +55,7 @@ export class ContactComponent implements OnInit {
     private canonical: CanonicalService
 
   ) {
+    this.fetchMetaData();
     this.fetchOg();
     this.fetchTwitter();
     this.og.forEach(element => {
@@ -70,10 +74,9 @@ export class ContactComponent implements OnInit {
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Want to reserve a unit or find information about your account? Use our contact
-      form or the contact information for your StorageTown location on this page!`
+      content: `${this.contactPageContent}`
     });
-    this.titleService.setTitle('Contact Us | StorageTown Rental Spaces');
+    this.titleService.setTitle(`${this.contactPageTitle}`);
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -101,6 +104,11 @@ export class ContactComponent implements OnInit {
 
 public fetchTwitter() {
     this.twitter = twitterContactPage;
+}
+
+public fetchMetaData() {
+  this.contactPageTitle = contactPageTitle;
+  this.contactPageContent = contactPageContent;
 }
 
   receiveMessage() {

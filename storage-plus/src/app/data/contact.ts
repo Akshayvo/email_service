@@ -2,38 +2,55 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '1 Andrews Lane, Chester, NY 10918',
+        data: '17860 US-98, Foley, AL 36535',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
     },
     {
         id: 2,
         label: 'Email: ',
-        email: 'storagetownchester@gmail.com, syrasoftsoftware@gmail.com',
-        data: `storagetownchester@gmail.com`,
+        email: 'accounts@storageplusbaldwin.com',
+        data: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`storagetownchester@gmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(845) 469-4888',
+        data: '(251) 970-3168',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:8454694888'
+        redirect: 'tel:2519703168'
     },
 ];
 
 export const hoursLocation1 = [
     {
-        id: 1,
-        label: 'Storage Access Hour: ',
-        // datahours: {
-        //     data1:'7 Days a Week ',
-        //     data2:'6:00AM to 8:00PM'
-        // },
-        data: '7 Days a Week 6:00AM to 8:00PM'
-    }
+        label: 'Monday - Friday: ',
+        data: '8:30AM to 5:00PM',
+    },
+    {
+        label: 'Saturday - Sunday: ',
+        data: 'CLOSED',
+    },
+    {
+        label: 'Access Hour: ',
+        data: '7 Days a Week 6:00AM to 8:00PM',
+    },
 ];
+
+export const socialLinks = [
+    // {
+    //     label: 'twitter',
+    //     path: '',
+    //     class: 'fab fa-twitter-square',
+    // },
+    {
+        label: 'facebook',
+        path: 'https://www.facebook.com/storageplusbaldwin/',
+        class: 'fab fa-facebook-square',
+    },
+];
+
 
 export const contactsLocation2 = [
     {

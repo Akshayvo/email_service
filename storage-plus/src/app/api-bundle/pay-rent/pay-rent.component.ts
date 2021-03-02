@@ -57,7 +57,7 @@ export class PayRentComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.showPaymentPageType = environment.paymentPageType;
+    this.showPaymentPageType = environment.signUpForAuotoPay;
     this.fetchContactDetails();
     this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[1].path;
     localStorage.setItem('paymentNavigationUrl', this.dataSharingService.paymentNavigation);

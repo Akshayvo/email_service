@@ -65,6 +65,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 // import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ThankYouGuard } from './thank-you.guard';
+import { PhotosComponent } from './photos/photos.component';
 
 @NgModule({
   declarations: [
@@ -117,6 +118,7 @@ import { ThankYouGuard } from './thank-you.guard';
     ScriptHackComponent,
     PrivacyPolicyComponent,
     ContactUsComponent,
+    PhotosComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

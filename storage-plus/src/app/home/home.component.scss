@@ -8,6 +8,10 @@
   }
 }
 
+.btn-outline-primary{
+  color: $white;
+}
+
 .service {
   color: $dark;
   text-align: left;
@@ -23,6 +27,31 @@
 
   p {
     text-align: justify;
+  }
+}
+
+.jumbotorn-skew-style {
+  width: 75%;
+  float: left;
+  left: -25%;
+  position: relative;
+  transform: skew(15deg);
+  height: 100%;
+
+  a {
+    margin-top: 20px;
+  }
+}
+
+.jumbotorn-skew-text {
+  transform: skew(0deg);
+  width: 500px;
+  position: absolute;
+  top: 30%;
+  color: $white;
+
+  .btn-outline-primary {
+    margin-right: 10px;
   }
 }
 
@@ -61,37 +90,53 @@
   }
 }
 
+.jumbotron-background-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/storage-plus-jumbotron.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+
+.jumbotron-background-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/webp/storage-plus-jumbotron.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
 
 .jumbotron-top {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(80vh - 64px);
+  height:80vh;
 }
 
-.jumbotron-top1 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: calc(80vh - 64px);}
+// .jumbotron-top1 {
+//   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: calc(80vh - 64px);}
 
-.jumbotron-top2 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: calc(80vh - 64px);
-}
+// .jumbotron-top2 {
+//   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: calc(80vh - 64px);
+// }
 
-.jumbotron-top3 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-4.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: calc(80vh - 64px);
-}
+// .jumbotron-top3 {
+//   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-4.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: calc(80vh - 64px);
+// }
 
 .contact-links {
   a {
@@ -134,7 +179,6 @@
 
 .disp {
   display: block;
-  color: black;
 }
 
 .testimonial {
