@@ -5,7 +5,7 @@ contactPageContent, contactPageTitle } from '../data/title';
 import { featuresList } from '../data/home';
 import { contact, socialLinks } from '../data/contact';
  
-const contactIndex = contact.findIndex(x => x.label === 'Phone:');
+const contactIndex = contact.findIndex(x => x.label === 'Office Number:');
 const emailIndex = contact.findIndex(x => x.label === 'Email:');
 const sameAs = [];
 const amenityFeature = [];
