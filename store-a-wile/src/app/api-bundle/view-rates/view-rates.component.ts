@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy, ViewChild  } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { dataViewRates, viewRatesAltText } from '../../data/view-rates';
-import { MetaService } from '../../services/link.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { UaParserService } from '../../services/ua-parser.service';
@@ -27,7 +26,6 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   DescriptionVR: string;
   MonthlyRateVR: number;
 
-  openComponent = false;
   imagetype: any;
   imageBaseUrl: any;
   viewRatesHeading: string;
@@ -40,7 +38,6 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private titleService: Title,
     private router: Router,
     private meta: Meta,
-    private metaService: MetaService,
     private uaParserService: UaParserService,
     private canonical: CanonicalService
   ) {
@@ -87,7 +84,6 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
 
   handleClick(event: Event, event1: Event) {
-    this.openComponent = true;
     this.DescriptionVR = JSON.parse(JSON.stringify(event));
     this.MonthlyRateVR = parseFloat(JSON.stringify(event1));
   }

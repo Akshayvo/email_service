@@ -8,8 +8,7 @@ import { th } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
-
-
+import { script } from '../../data/script';
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
@@ -26,7 +25,6 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   unitTypeIdVR: number;
   ProrateAmt: any;
   deposit: any;
-  openComponent = false;
   showMoveIn = false;
   curStage = 0;
   depositTax: number;
@@ -41,6 +39,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
   defaultClimateString = ' ';
+  facilityName: string;
 
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
@@ -48,6 +47,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   th: any;
   tenant: any;
   text = false;
+  state: string;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -57,6 +57,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     private dataSharingService: DataSharingService,
     private eRef: ElementRef
   ) {
+    this.facilityName = environment.facilityName;
+    this.state = script.state;
    }
 
 

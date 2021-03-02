@@ -12,7 +12,6 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-// import { ViewRatesComponent } from './view-rates/view-rates.component';
 import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
 import { AccordionComponent } from './accordion/accordion.component';
@@ -50,7 +49,6 @@ import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 import { PhotosComponent } from './photos/photos.component';
-import { ScriptHackComponent } from './script-hack/script-hack.component';
 import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
 import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
@@ -60,7 +58,6 @@ import { AlternateDetailsReservationFormComponent } from './api-bundle/alternate
 import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import { MicrodataComponent } from './api-bundle/microdata/microdata.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 
 @NgModule({
@@ -95,7 +92,6 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
     UnitSizerComponent,
     UnitSizesComponent,
     PhotosComponent,
-    ScriptHackComponent,
     AutoPayComponent,
     RentSubComponent,
     PayRentComponent,
@@ -104,9 +100,7 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
     AlternateDetailsReservationFormComponent,
     ThankYouComponent,
     PrivacyPolicyComponent,
-    MicrodataComponent,
-    ContactButtonComponent
-    
+    ContactButtonComponent,
   ],
   imports: [
     CommonModule,
