@@ -3,7 +3,7 @@ import { environment } from '../../environments/environment';
 export const navLinks = [
     {
         label: 'HOME',
-        path: '/',
+        path: '',
     },
     {
         label: 'VIEW RATES',
@@ -19,7 +19,7 @@ export const navLinks = [
     // },
     {
         label: 'PAY RENT',
-        path: '/pay-rent'
+        path: 'pay-rent'
     },
     {
         label: 'STORAGE TIPS',
@@ -31,6 +31,6 @@ export const navLinks = [
     // },
     {
         label: 'CONTACT US',
-        path: '/contact-us'
+        path: 'contact-us'
     },
 ];
