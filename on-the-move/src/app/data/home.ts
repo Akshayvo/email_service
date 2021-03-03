@@ -25,7 +25,7 @@ export const aboutUs = [
         p: `On The Move Self Storage is excited to announce that we are under new management! The self storage facility has served the Charleston area with quality temperature controlled self storage units since 2000, and we are eager to continue serving our loyal customers with the same emphasis on friendly customer service and affordable self storage options you’ve come to know and love.`,
     },
     {
-        p: `We are conveniently located on Piedmont Rd next to Fazios Italian Restaurant and across the street from Habitat for Humanity and Graybar Electric. You’ll find our facility is outfitted with all the modern amenities required to make your next self storage project a breeze. From our free online reservations to our on-site retail store with all of the boxes, tape, bubble wrap, and other packing supplies. You’ll find On The Move Self Storage has everything you need to clean that garage or de-cluttering the office fast and easy!`,
+        p: `We are conveniently located on the corner of Piedmont Rd and Bullitt St next to Fazios Italian Restaurant and across the street from Habitat for Humanity and Graybar Electric. You’ll find our facility is outfitted with all the modern amenities required to make your next self storage project a breeze. From our free online reservations to our on-site retail store with all of the boxes, tape, bubble wrap, and other packing supplies. You’ll find On The Move Self Storage has everything you need to clean that garage or de-cluttering the office fast and easy!`,
     },
     {
         p: `We understand that convenience isn’t the only consideration when selecting a self storage facility. The safety of our customers, and the security of their units are our top priorities. That’s why our facility is well-lit, and covered by a number of security cameras. Access is controlled by unique pin-codes issued to tenants and staff that discourage unauthorized entry.`,
@@ -60,6 +60,11 @@ export const feature = [
         alt: 'Customer Service Representative Icon'
 
     },
+    {
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg`,
+        label: 'Temperature Controlled Units',
+        alt: 'Icon of thermometer indicating temperature-controlled units'
+    }
 ];
 
 export const jumbotron = [
