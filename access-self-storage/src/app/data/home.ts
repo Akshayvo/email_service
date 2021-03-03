@@ -49,6 +49,10 @@ export const aboutUs = [
     },
 ];
 
+export const aboutUsHeading = '';
+
+export const aboutUsAlt = `aboutUsAlt`;
+
 export const gettingStarted = `Are you ready to reserve your unit, or vehicle parking space? Click below to start de-cluttering your life today!`;
 
 export const feature = [

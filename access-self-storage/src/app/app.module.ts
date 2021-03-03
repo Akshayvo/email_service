@@ -37,10 +37,8 @@ import { LoginComponent } from './api-bundle/login/login.component';
 import { LoginModalComponent } from './api-bundle/login-modal/login-modal.component';
 import { ForgotPasswordComponent } from './api-bundle/forgot-password/forgot-password.component';
 import { ChangePasswordComponent } from './api-bundle/change-password/change-password.component';
-import { VerifictionCodeGuard } from './auth-guard/verificationCode.guard';
 import { VerifyCodeComponent } from './api-bundle/verify-code/verify-code.component';
 import { DatePipe } from '@angular/common';
-import { AuthGuard } from './auth-guard/auth.gurad';
 import { AuthService } from './api-bundle/services/auth.service';
 import { SelectDropDownModule } from 'ngx-select-dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -50,6 +48,16 @@ import { RequestInterceptorService } from './api-bundle/services/request-interce
 
 import { CanDeactivateGuard } from './preventRouteChange.guard';
 import { PhotosComponent } from './photos/photos.component';
+import { AuthGuard } from './guard/auth.gurad';
+import { VerifictionCodeGuard } from './guard/verificationCode.guard';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { ThankYouComponent } from './api-bundle/thank-you/thank-you.component';
+import { PayRentComponent } from './api-bundle/pay-rent/pay-rent.component';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,6 +72,7 @@ import { PhotosComponent } from './photos/photos.component';
     StorageTipsComponent,
     AccordionComponent,
     UnitSizerComponent,
+    UnitSizesComponent,
     ReserveComponent,
     ViewRatesComponent,
     ViewRatesIframePageComponent,
@@ -79,8 +88,15 @@ import { PhotosComponent } from './photos/photos.component';
     ForgotPasswordComponent,
     ChangePasswordComponent,
     PhotosComponent,
+    TabsComponent,
     VerifyCodeComponent,
     ResetPasswordComponent,
+    PrivacyPolicyComponent,
+    ThankYouComponent,
+    PayRentComponent,
+    RentSubComponent,
+    SignUpComponent,
+    AutoPayComponent
   ],
   imports: [
     CommonModule,

@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { navLinks } from '../data/nav';
 import { contact, socialLinks } from '../data/contact';
 import { UaParserService } from '../services/ua-parser.service';
+import { environment } from '../../environments/environment';
 
 
 @Component({
@@ -46,7 +47,11 @@ export class HeaderComponent implements OnInit {
   }
 
   public navigate (location: any) {
-    this.router.navigate([location]);
+    if (location === '/view-rates') {
+      this.router.navigate([`${environment.locationName}/${location}`]);
+    } else {
+      this.router.navigate([location]);
+    } 
   }
 
   public onClick(menu: any) {

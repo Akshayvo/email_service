@@ -2,8 +2,9 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact } from '../../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
-import { Route, Router } from '@angular/router';
-import { DataSharingService } from '../services/data-sharing.service';
+import { payRentPageContent, payRentPageTitle } from '../../data/title';
+import { payRentHeading } from '../../data/heading';
+import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
 
 @Component({
   selector: 'app-payment',
@@ -11,34 +12,65 @@ import { DataSharingService } from '../services/data-sharing.service';
   styleUrls: ['./payment.component.scss']
 })
 export class PaymentComponent implements OnInit {
-
+  
+  og: any;
+  twitter: any;
   contact: any;
-  // showLoginDetail = true;
-
+  payRentHeading: string;
+  payRentPageTitle: string;
+  payRentPageContent: string;
 
   constructor(
     private titleService: Title,
-    private router: Router,
-    private dataSharingService: DataSharingService,
     @Inject(WINDOW) private window: Window,
     private meta: Meta
   ) {
+    // this.fetchMetaData();
+    // this.fetchOg();
+    // this.fetchTwitter();
+    // this.og.forEach(element => {
+    //   this.meta.addTag({
+    //     property: element.property,
+    //     content: element.content
+    //   })
+    // });
+
+    // this.twitter.forEach(element => {
+    //   this.meta.addTag({
+    //     name: element.name,
+    //     content: element.content
+    //   })
+    // });
     this.meta.addTag({
       name: 'description',
-      content: `Simply follow the instructions on the page to log into your account at Access Self Storage. If you have any questions, please call our offices today!`
+      content: `${this.payRentPageContent}`
     });
-    this.titleService.setTitle('Pay Rent | Access Self Storage');
+    this.titleService.setTitle(`${this.payRentPageTitle}`);
   }
 
   ngOnInit() {
     this.fetchContactDetails();
+    this.fetchpayRentHeading();
     window.scrollTo(0, 0);
-    // if (this.router.url.includes('/payment')) {
-    //   this.dataSharingService.showLoginDetail = false;
-    //   this.showLoginDetail = this.dataSharingService.showLoginDetail;
-    // } else {
-    //   this.showLoginDetail = true;
-    // }
+  }
+
+  
+  // public fetchOg() {
+  //   this.og = ogPayRentPage;
+  // }
+
+  // public fetchTwitter() {
+  //   this.twitter = twitterPayRentPage;
+  // }
+
+
+  public fetchMetaData() {
+    this.payRentPageContent = payRentPageContent;
+    this.payRentPageTitle = payRentPageTitle;
+  }
+
+  public fetchpayRentHeading() {
+    this.payRentHeading = payRentHeading;
   }
 
   public fetchContactDetails() {

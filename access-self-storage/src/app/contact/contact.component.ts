@@ -4,7 +4,10 @@ import { Title, Meta } from '@angular/platform-browser';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
-import { MetaService } from '../services/link.service';
+import { contactPageTitle, contactPageContent } from '../data/title';
+import { contactHeading } from '../data/heading';
+import { CanonicalService } from '../services/canonical.service';
+import { contactPageScript, ogContactPage, twitterContactPage } from '../data/script';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +16,6 @@ import { MetaService } from '../services/link.service';
 })
 export class ContactComponent implements OnInit {
 
-  currentActive: any = 'CONTACT US';
   contactDetails: any;
   hours: any;
   name: string;
@@ -27,6 +29,12 @@ export class ContactComponent implements OnInit {
   mailSent = false;
   head: any;
   phone: any;
+  contactPageTitle: string;
+  contactPageContent: string;
+  contactHeading: string;
+  og: any;
+  twitter: any;
+  script: any;
 
   constructor(
     private router: Router,
@@ -34,20 +42,38 @@ export class ContactComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
     private formBuilder: FormBuilder,
-    private metaService: MetaService,
-
+    private canonical: CanonicalService
   ) {
+    this.fetchScript();
+    this.loadScript();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `If you have questions about your account or the services we offer, take a moment to fill our out form, or use the contact information to speak with us!`
+      content: `${this.contactPageContent}`
     });
-    this.titleService.setTitle('Contact Us  | Access Self Storage');
-    this.metaService.createCanonicalURL();
-  }
+    this.titleService.setTitle(`${this.contactPageTitle}`);
+    this.canonical.create();
+    }
 
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchHours();
+    this.fetchContactHeading();
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required,
@@ -59,12 +85,46 @@ export class ContactComponent implements OnInit {
   }
 
   get f() { return this.contactForm.controls; }
+
+
+  public fetchOg() {
+    this.og = ogContactPage;
+}
+
+public fetchScript() {
+  this.script = contactPageScript;
+}
+
+public loadScript() {
+  const node = document.createElement('script'); // creates the script tag
+  node.type = 'application/ld+json'; // set the script type
+  node.async = false; // makes script run asynchronously
+  // node.charset = 'utf-8';
+  node.innerHTML = JSON.stringify(this.script);
+  // append to head of document
+  document.getElementsByTagName('head')[0].appendChild(node);
+}
+
+
+public fetchTwitter() {
+    this.twitter = twitterContactPage;
+}
+
   public navigate(location: any) {
     this.router.navigate([location]);
   }
 
+  public fetchMetaData() {
+    this.contactPageTitle = contactPageTitle;
+    this.contactPageContent = contactPageContent;
+  }
+
   public fetchContactDetails() {
     this.contactDetails = contact;
+  }
+
+  public fetchContactHeading() {
+    this.contactHeading = contactHeading;
   }
 
   public fetchHours() {
@@ -73,6 +133,15 @@ export class ContactComponent implements OnInit {
 
 
   onSubmit() {
+    const today = new Date();
+    window['dataLayer'] = window['dataLayer'] || {};
+    window['dataLayer'] = window['dataLayer'] || [];
+    window['dataLayer'].push({
+      'event': 'ContactFormsubmission',
+      'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+      'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+    });
+
 
     this.submitted = true;
 
@@ -84,7 +153,11 @@ export class ContactComponent implements OnInit {
       this.contactForm.value.subject = 'Website Form Submission';
     }
 
-     this.receiveremail = this.contactDetails[1].data;
+    const index = contact.findIndex(x => x.label === 'Email:');
+
+    if (!!index) {
+      this.receiveremail = this.contactDetails[index].data;
+    }
 
      this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
      message: ${this.contactForm.value.message}`;
@@ -106,7 +179,6 @@ export class ContactComponent implements OnInit {
            });
          this.submitted = false;
          this.mailSent = false;
-         // MailService(body);
          this.contactForm.reset();
    }
  }
