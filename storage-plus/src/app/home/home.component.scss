@@ -85,7 +85,7 @@
     .f-text {
       color: $dark;
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 }
@@ -116,14 +116,14 @@
 }
 
 // .jumbotron-top1 {
-//   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg");
+//   background: url("");
 //   background-position: center;
 //   background-repeat: no-repeat;
 //   background-size: cover;
 //   height: calc(80vh - 64px);}
 
 // .jumbotron-top2 {
-//   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg");
+//   background: url("");
 //   background-position: center;
 //   background-repeat: no-repeat;
 //   background-size: cover;
@@ -131,7 +131,7 @@
 // }
 
 // .jumbotron-top3 {
-//   background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-4.jpg");
+//   background: url("");
 //   background-position: center;
 //   background-repeat: no-repeat;
 //   background-size: cover;
@@ -241,11 +241,45 @@
 // }
 
 
-@media screen and (max-width: 1024px) {
-  .content-align {
-    text-align: right;
+
+@media only screen and (min-width: 1200px) {
+  .jumbotorn-skew-text {
+    width: 500px;
   }
 }
+
+@media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 641px) {
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 640px) and (min-height: 451px) {
+  .jumbotron {
+    height: 100vh;
+  }
+
+  .feature-icon-style {
+    padding: 12px 24px;
+
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+
+  .jumbotron-top {
+    height: 100vh;
+  }
+
+  .jumbotron-bottom {
+    height: 120px;
+  }
+}
+
 
 @media screen and (max-width: 991px) {
   .jumbotron-home {

@@ -30,16 +30,16 @@ export class ReserveComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/chester-andrews-lane')) {
+    if (this.router.url.includes('/location/foley')) {
       this.id = 1;
       this.heading = headingReservePageLocation2;
-    } else if (this.router.url.includes('/location/chester-brookside-ave')) {
+    } else if (this.router.url.includes('/location/silverhill')) {
       this.id = 2;
       this.heading = headingReservePageLocation1;
-    } else if (this.router.url.includes('/location/montgomery-walden')) {
+    } else if (this.router.url.includes('/location/barnwell')) {
       this.id = 3;
       this.heading = headingReservePageLocation3;
-    } else if (this.router.url.includes('/location/middletown-wallKill')) {
+    } else if (this.router.url.includes('/location/belforest')) {
       this.id = 4;
       this.heading = headingReservePageLocation4;
     }

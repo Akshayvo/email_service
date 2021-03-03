@@ -72,30 +72,58 @@
   }
 }
 
-.img-box-1 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg");
+.img-box-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/storage-plus-foley-location.jpg");
   background-size: cover;
-  height: 390px;
+  height: 462px;
   background-position: center right;
 }
 
-.img-box-2 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg");
+.img-box-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/webp/storage-plus-foley-location.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/storage-plus-silverhill-location.jpg");
   background-size: cover;
   height: 390px;
   background-position: center;
 }
 
-.img-box-3 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-4.jpg");
+.img-box-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/webp/storage-plus-silverhill-location.webp");
+  background-size: cover;
+  height: 390px;
+  background-position: center;
+}
+
+.img-box-3-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/storage-plus-barnwell.jpg");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+}
+
+.img-box-3-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/webp/storage-plus-barnwell.webp");
   background-size: cover;
   height: 390px;
   background-position: center right;
   
 }
 
-.img-box-4 {
-  background: url("https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg");
+.img-box-4-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/storage-plus-belforest-location.jpg");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+}
+
+.img-box-4-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/webp/storage-plus-belforest-location.webp");
   background-size: cover;
   height: 390px;
   background-position: center right;

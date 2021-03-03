@@ -89,7 +89,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: 'location/chester-brookside-ave',
+    { path: 'location/silverhill',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -124,7 +124,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/chester-andrews-lane',
+    { path: 'location/foley',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -159,7 +159,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/montgomery-walden',
+    { path: 'location/barnwell',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -194,7 +194,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/middletown-wallKill',
+    { path: 'location/belforest',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -230,62 +230,62 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/chester-andrews-lane', component: HomeComponent,
+    { path: 'review/foley', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
+        externalUrl: ''
     }
   },
-  { path: 'review/chester-brookside-ave', component: HomeComponent,
+  { path: 'review/silverhill', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJm7SnExspw4kRPUDRDPAzAIc'
+        externalUrl: ''
     }
   },
-  { path: 'review/montgomery-walden', component: HomeComponent,
+  { path: 'review/barnwell', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJF0fu6ofV3IkR6yRjmwhuYZk'
+        externalUrl: ''
     }
   },
-  { path: 'review/middletown-wallKill', component: HomeComponent,
+  { path: 'review/belforest', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ3Q9xV4rN3IkRiDFuXQjIbD0'
+        externalUrl: ''
     }
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/chester-brookside-ave', component: PayRentComponent,
+    path: 'pay-rent/silverhill', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/chester-andrews-lane', component: PayRentComponent,
+    path: 'pay-rent/foley', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/montgomery-walden', component: PayRentComponent,
+    path: 'pay-rent/barnwell', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/middletown-wallKill', component: PayRentComponent,
+    path: 'pay-rent/belforest', component: PayRentComponent,
     children: childroute
   },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-chester-andrews-lane', component: ContactUsComponent},
-  { path: 'contact-chester-brookside-ave', component: ContactUsComponent},
-  { path: 'contact-montgomery-walden', component: ContactUsComponent},
-  { path: 'contact-middletown-wallKill', component: ContactUsComponent},
+  { path: 'contact-foley', component: ContactUsComponent},
+  { path: 'contact-silverhill', component: ContactUsComponent},
+  { path: 'contact-barnwell', component: ContactUsComponent},
+  { path: 'contact-belforest', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
 ];
@@ -294,7 +294,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: 'location/chester-andrews-lane',
+  { path: 'location/foley',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -305,7 +305,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/chester-brookside-ave',
+  { path: 'location/silverhill',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -316,7 +316,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/montgomery-walden',
+  { path: 'location/barnwell',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -327,7 +327,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'location/middletown-wallKill',
+  { path: 'location/belforest',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -338,15 +338,15 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/chester-andrews-lane', component: HomeComponent,
+  { path: 'review/foley', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM'
+        externalUrl: ''
     }
   },
-  { path: 'review/chester-brookside-ave', component: HomeComponent,
+  { path: 'review/silverhill', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -354,28 +354,28 @@ export const iFrameRoutes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJm7SnExspw4kRPUDRDPAzAIc'
     }
   },
-  { path: 'review/montgomery-walden', component: HomeComponent,
+  { path: 'review/barnwell', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJF0fu6ofV3IkR6yRjmwhuYZk'
+        externalUrl: ''
     }
   },
-  { path: 'review/middletown-wallKill', component: HomeComponent,
+  { path: 'review/belforest', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
-        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJ3Q9xV4rN3IkRiDFuXQjIbD0'
+        externalUrl: ''
     }
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-chester-andrews-lane', component: PayRentFloridaComponent },
-  { path: 'pay-rent-chester-brookside-ave', component: PayRentChesterComponent},
-  { path: 'pay-rent-montgomery-walden', component: PayRentMontgomeryComponent},
-  { path: 'pay-rent-middletown-wallkill', component: PayRentMiddletownComponent},
+  { path: 'pay-rent-foley', component: PayRentFloridaComponent },
+  { path: 'pay-rent-silverhill', component: PayRentChesterComponent},
+  { path: 'pay-rent-barnwell', component: PayRentMontgomeryComponent},
+  { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },

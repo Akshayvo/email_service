@@ -141,25 +141,25 @@ public fetchMetaData() {
   }
   
   public fetchContactDetailsLocation1() {
-    this.heading = `StorageTown Rental Spaces - Chester - Andrews Lane `;
+    this.heading = `Storage Plus of Baldwin County - Foley Location`;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
 
   public fetchContactDetailsLocation2() {
-    this.heading = `StorageTown Rental Spaces - Chester - Brookside Ave`;
+    this.heading = `Storage Plus of Baldwin County - Silverhill Location`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = `StorageTown Rental Spaces - Montgomery/Walden`;
+    this.heading = `Storage Plus of Baldwin County - Barnwell Location`;
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
-    this.heading = `StorageTown - Middletown/WallKill Location`;
+    this.heading = `Storage Plus of Baldwin County - Belforest Location`;
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
   }

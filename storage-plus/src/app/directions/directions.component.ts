@@ -25,37 +25,37 @@ export class DirectionsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/chester-andrews-lane')) {
+    if (this.router.url.includes('/location/foley')) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes('/location/chester-brookside-ave')) {
+     } else if (this.router.url.includes('/location/silverhill')) {
        this.fetchDetailsLocation2();
-    } else  if (this.router.url.includes('/location/montgomery-walden'))  {
+    } else  if (this.router.url.includes('/location/barnwell'))  {
        this.fetchDetailsLocation3();
-    }  else  if (this.router.url.includes('/location/middletown-wallKill'))  {
+    }  else  if (this.router.url.includes('/location/belforest'))  {
       this.fetchDetailsLocation4();
     }
  }
 
  public fetchDetailsLocation1() {
   this.directionPoints = directionLocation1;
-  this.directionHeading = `Directions To StorageTown Rental Spaces in Chester`;
+  this.directionHeading = ``;
   this.id = 1;
 }
   public fetchDetailsLocation2() {
     this.directionPoints = directionLocation2;
-    this.directionHeading = `Directions To StorageTown Rental Spaces in Chester`;
+    this.directionHeading = ``;
     this.id = 2;
   }
 
   public fetchDetailsLocation3() {
     this.directionPoints = directionLocation3;
-    this.directionHeading = `Directions To StorageTown Rental Spaces in Montgomery`;
+    this.directionHeading = ``;
     this.id = 3;
   }
 
   public fetchDetailsLocation4() {
     // this.directionPoints = directionLocation4;
-    this.directionHeading = `Directions To StorageTown Rental Spaces in Middletown`;
+    this.directionHeading = ``;
     this.id = 4;
   }
 }

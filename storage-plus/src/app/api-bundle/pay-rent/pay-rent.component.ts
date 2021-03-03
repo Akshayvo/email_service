@@ -44,12 +44,14 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('chester-brookside-ave') || this.router.url.includes('chester-andrews-lane')) {
-      this.name = 'Chester - Andrews Lane & Brookside Ave';
-  }  else if (this.router.url.includes('montgomery-walden')) {
-    this.name = 'Montgomery/Walden';
-  } else if (this.router.url.includes('middletown-wallKill')) {
-    this.name = 'Middletown/WallKill';
+    if (this.router.url.includes('foley')) {
+      this.name = ' Foley Location';
+  } else if (this.router.url.includes('silverhill')) {
+    this.name = ' Silverhill Location';
+  } else if (this.router.url.includes('barnwell')) {
+    this.name = 'Barnwell Location';
+  } else if (this.router.url.includes('belforest')) {
+    this.name = 'Belforest Location';
   }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
@@ -64,34 +66,36 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('foley')) {
       this.og = ogPayRentPageLocation1;
     } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
+      if (this.router.url.includes('silverhill')) {
         this.og = ogPayRentPageLocation2;
       } else {
-        if (this.router.url.includes('montgomery-walden')) {
+        if (this.router.url.includes('barnwell')) {
           this.og = ogPayRentPageLocation3;
         } else {
-          if (this.router.url.includes('middletown-wallKill'))
+          if (this.router.url.includes('belforest')) {
           this.og = ogPayRentPageLocation4;
+          }
         }
       }
     }
 }
 
 public fetchTwitter() {
-    if (this.router.url.includes('chester-brookside-ave')) {
-      this.twitter = twitterPayRentPageLocation1;
+  if (this.router.url.includes('foley')) {
+    this.twitter = twitterPayRentPageLocation1;
+  } else {
+    if (this.router.url.includes('silverhill')) {
+      this.twitter = twitterPayRentPageLocation2;
     } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
-        this.twitter = twitterPayRentPageLocation2;
-      } else {
-        if (this.router.url.includes('montgomery-walden')) {
+        if (this.router.url.includes('barnwell')) {
           this.twitter = twitterPayRentPageLocation3;
         } else {
-          if (this.router.url.includes('middletown-wallKill'))
+          if (this.router.url.includes('belforest')) {
           this.twitter = twitterPayRentPageLocation4;
+          }
         }
       }
     }

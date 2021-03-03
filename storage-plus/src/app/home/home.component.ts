@@ -9,6 +9,7 @@ import { CanonicalService } from '../services/canonical.service';
 import { LocationService } from '../services/location.service';
 import { homePageTitle, homePageContent } from '../data/title';
 import { environment } from '../../environments/environment';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-home',
@@ -31,13 +32,19 @@ export class HomeComponent implements OnInit {
   homePageTitle: string;
   template: string;
   jumbotron: any;
+  contactHomeDetails: any;
+  hoursHomeDetails: any;
+  imagetype: any;
+  imageBaseUrl: any;
+
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
     private data: LocationService,
-    private canonical: CanonicalService
+    private canonical: CanonicalService,
+    private uaParserService: UaParserService,
   ) {
     this.fetchScript();
     this.loadScript();
@@ -65,6 +72,8 @@ export class HomeComponent implements OnInit {
       content: `${this.homePageContent}`
     });
     this.titleService.setTitle(`${this.homePageTitle}`);
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {
@@ -75,7 +84,7 @@ export class HomeComponent implements OnInit {
     this.fetchFeatures();
     this.fetchTemplate();
     this.fetchJumbotron();
-   
+    this.fetchContactDetails();
 
     // fetch(this.script)
     // .then(response => response.text())
@@ -89,6 +98,11 @@ export class HomeComponent implements OnInit {
 
   public fetchOgHomePage() {
     this.ogHomePage = ogHomePage;
+  }
+
+  public fetchContactDetails() {
+    this.contactHomeDetails = contactsLocation1
+    this.hoursHomeDetails = hoursLocation1
   }
 
   public fetchJumbotron() {
@@ -129,9 +143,9 @@ export class HomeComponent implements OnInit {
 
   public dataupdate() {
     if ( this.locationId === '1' || this.locationId === 1) {
-      this.fetchContactDetailsLocation2();
-    } else if ( this.locationId === '2' ) {
       this.fetchContactDetailsLocation1();
+    } else if ( this.locationId === '2' ) {
+      this.fetchContactDetailsLocation2();
     } else if ( this.locationId === '3' ) {
       this.fetchContactDetailsLocation3();
     } else if ( this.locationId === '4' ) {
@@ -150,25 +164,25 @@ export class HomeComponent implements OnInit {
 
 
     public fetchContactDetailsLocation1() {
-      this.heading = `StorageTown Rental Spaces - Chester - Andrews Lane`;
+      this.heading = `Storage Plus of Baldwin County - Foley Location`;
       this.contactDetails = contactsLocation1;
       this.hoursDetails = hoursLocation1;
     }
 
     public fetchContactDetailsLocation2() {
-      this.heading = `StorageTown Rental Spaces - Chester - Brookside Ave`;
+      this.heading = `Storage Plus of Baldwin County - Silverhill Location`;
       this.contactDetails = contactsLocation2;
       this.hoursDetails = hoursLocation2;
     }
 
     public fetchContactDetailsLocation3() {
-      this.heading = `StorageTown Rental Spaces - Montgomery/Walden`;
+      this.heading = `Storage Plus of Baldwin County - Barnwell Location`;
       this.contactDetails = contactsLocation3;
       this.hoursDetails = hoursLocation3;
     }
 
     public fetchContactDetailsLocation4() {
-      this.heading = `StorageTown - Middletown/WallKill Location`;
+      this.heading = `Storage Plus of Baldwin County - Belforest Location`;
       this.contactDetails = contactsLocation4;
       this.hoursDetails = hoursLocation4;
     }

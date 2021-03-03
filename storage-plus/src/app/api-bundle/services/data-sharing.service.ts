@@ -6,10 +6,10 @@ import { Injectable } from '@angular/core';
 export class DataSharingService {
 
   locationAPIKey = {
-    loc1: 'XjF7MkYyVzVHOEk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 12258
-    loc2: 'XjF7MkYyVzVHOEk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 12258
-    loc3: 'XjF7N0YzVzZHMEk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 17360
-    loc4: 'XjF7NUY0VzhHOUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 15489
+    loc1: 'dzF0NFcwSjAqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 14005 foley
+    loc2: 'dzJ0MFc3SjYqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 20767 silverhill
+    loc3: 'dzJ0MFc3SjYqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 20766 barnwell
+    loc4: 'dzJ0N1c0SjUqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 27456 belforest
   };
 
 //  locationAPIKey = {                                                     // demo north

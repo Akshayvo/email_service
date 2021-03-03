@@ -56,39 +56,39 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '53 Brookside Ave, Chester, NY 10918',
+        data: '15410 AL-104, Silverhill, AL 36576',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/r/CT1A0QzwMwCHEBA'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: 'storagetownchester@gmail.com',
-        email: `storagetownchester@gmail.com, syrasoftsoftware@gmail.com`,
+        data: 'accounts@storageplusbaldwin.com',
+        email: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`storagetownchester@gmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(845) 469-4888',
+        data: '(251) 970-3168',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:8454694888'
+        redirect: 'tel:2519703168'
     },
 ];
 
 export const hoursLocation2 = [
+    // {
+    //     label: 'Monday - Saturday: ',
+    //     data: '9:00AM - 5:00PM',
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: 'CLOSED',
+    // },
     {
-        label: 'Monday - Saturday: ',
-        data: '9:00AM - 5:00PM',
-    },
-    {
-        label: 'Sunday: ',
-        data: 'CLOSED',
-    },
-    {
-        label: 'Storage Access Hour: ',
-        data: '7 Days a Week 6:00AM to 8:00PM',
+        label: 'Access Hour: ',
+        data: '24-Hours a Day 7 Days a Week',
     },
 ];
 
@@ -96,39 +96,39 @@ export const contactsLocation3 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '130 Neelytown Rd, Montgomery, NY 12549',
+        data: '8089A US-98, Fairhope, AL 36532',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/r/CeskY5sIbmGZEAE'
     },
     {
         id: 2,
         label: 'Email: ',
-        data: 'storagetownmontgomery@gmail.com',
-        email: `storagetownmontgomery@gmail.com, syrasoftsoftware@gmail.com`,
+        data: 'accounts@storageplusbaldwin.com',
+        email: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`storagetownmontgomery@gmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(845) 457-3500',
+        data: '(251) 970-3168',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:8454573500'
+        redirect: 'tel:2519703168'
     },
 ];
 
 export const hoursLocation3 = [
+    // {
+    //     label: 'Monday - Saturday: ',
+    //     data: '9:00AM - 5:00PM',
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: 'CLOSED',
+    // },
     {
-        label: 'Monday - Saturday: ',
-        data: '9:00AM - 5:00PM',
-    },
-    {
-        label: 'Sunday: ',
-        data: 'CLOSED',
-    },
-    {
-        label: 'Storage Access Hour: ',
-        data: '7 Days a Week 6:00AM - 8:00PM',
+        label: 'Access Hour: ',
+        data: '24-Hours a Day 7 Days a Week',
     },
 ];
 
@@ -136,38 +136,38 @@ export const contactsLocation4 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '2070 Goshen Turnpike, Middletown, NY 10941',
+        data: '11455 Co Rd 64, Daphne, AL 36526',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/r/CYgxbl0IyGw9EBA'
     },
     {
         id: 2,
         label: 'Email: ',
-        email: 'storagetownmiddletown@gmail.com, syrasoftsoftware@gmail.com',
-        data: `storagetownmiddletown@gmail.com`,
+        data: 'accounts@storageplusbaldwin.com',
+        email: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`storagetownmiddletown@gmail.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
     },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(845) 692-4838',
+        data: '(251) 970-3168',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:8456924838'
+        redirect: 'tel:2519703168'
     },
 ];
 
 export const hoursLocation4 = [
+    // {
+    //     label: 'Monday - Saturday: ',
+    //     data: '9:00AM - 5:00PM',
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: 'CLOSED',
+    // },
     {
-        label: 'Monday - Saturday: ',
-        data: '9:00AM - 5:00PM',
-    },
-    {
-        label: 'Sunday: ',
-        data: 'CLOSED',
-    },
-    {
-        label: 'Storage Access Hour: ',
-        data: '7 Days a Week 6:00AM - 8:00PM',
+        label: 'Access Hour: ',
+        data: '24-Hours a Day 7 Days a Week',
     },
 ];

@@ -1,6 +1,6 @@
 export const privacyPolicy = [
   {
-    content: `This privacy notice discloses the privacy practices for "storage-town.com".
+    content: `This privacy notice discloses the privacy practices for "".
     This privacy notice applies solely to information collected by this website. It will notify you of the following:`,
     list: [
         {
@@ -124,7 +124,7 @@ export const privacyPolicy = [
       }
     ],
     note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-    at  <a href="tel:8454573500" style="color: #000;">(845) 457-3500</a> or via email at <a href="mailto:storagetownmontgomery@gmail.com" style="color:#000;">storagetownmontgomery@gmail.com</a>.`,
+    at  <a href="tel:2519703168" style="color: #000;">(251) 970-3168</a> or via email at <a href="mailto:accounts@storageplusbaldwin.com" style="color:#000;">accounts@storageplusbaldwin.com</a>.`,
     // sharing: [
     //   {
     //     heading: `Sharing`

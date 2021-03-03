@@ -22,10 +22,10 @@ export class PaymentIframeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent for any of the 4 StorageTown Rental Spaces locations right here!
+      content: `Pay your rent for any of the 4 Storage Plus of Baldwin County right here!
       Simply follow the instructions or call your facility to learn how!`
     });
-    this.titleService.setTitle('Pay Rent | StorageTown Rental Spaces');
+    this.titleService.setTitle('Pay Rent | Storage Plus of Baldwin County');
   }
 
   ngOnInit() {

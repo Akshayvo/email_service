@@ -1,29 +1,71 @@
-export const homePageTitle = `Affordable Self Storage Units in Baldwinsville, New York, 13027`;
-export const homePageContent = `Our regular and climate controlled self storage units are clean, well-lit, accessible 24 hours a day, and affordable! Reserve today!`;
+export const homePageTitle = `Affordable Self Storage & Vehicle Parking in Baldwin County`;
+export const homePageContent = `Storage Plus of Baldwin County has 6 conveniently located self storage facilities with a variety of affordable self storage unit types and vehicle parking options.`;
 
-export const viewRatesPageTitle = `Storage Units in Baldwinsville | Sample Self Storage - North`;
-export const viewRatesPageContent = `Sample Self Storage - North serves Baldwinsville and the surrounding communities with a variety of well-maintained and affordable self storage units!`;
+export const location1PageTitle = `Foley Location | Storage Plus of Baldwin County`;
+export const location1PageContent = `We offer a number of affordable self storage options in Foley, Alabama. Check out our prices, then give us a call to start clearing up your home, office, or garage!`;
 
-export const reservePageTitle = `Reserve a Unit | Sample Self Storage - North`;
-export const reservePageContent = `Simply fill out our easy reservation form and one of our friendly self storage associates will be ready and waiting for your arrival!`;
+export const location2PageTitle = `Silverhill Location | Storage Plus of Baldwin County`;
+export const location2PageContent = `Our Silverhill location offers a large variety of regular and climate controlled storage units in a number of sizes, and all of our units are priced competitively!`;
 
-export const payRentPageTitle = `Pay Rent  | Sample Self Storage - North`;
-export const payRentPageContent = `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`;
+export const location3PageTitle = `Barnwell Location | Storage Plus of Baldwin County`;
+export const location3PageContent = `Our Barnwell location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
 
-export const storageTipsTitle = `Storage Tips  | Sample Self Storage - North`;
-export const storageTipsContent = `Use our helpful self storage tips list to make your stay at Sample Self Storage - North an easy and enjoyable one!`;
+export const location4PageTitle = `Belforest Location | Storage Plus of Baldwin County`;
+export const location4PageContent = `Our Belforest location offers a number of affordable regular and climate controlled self storage units, perfect for any self storage project!`;
 
-export const unitSizerPageTitle = `Unit Sizer  | Sample Self Storage - North`;
-export const unitSizerPageContent = `Are you not sure what size unit you require? Use this guide to help you figure out what fits inside the units offered at Sample Self Storage - North!`;
+export const viewRatesPageTitle = ``;
+export const viewRatesPageContent = ``;
 
-export const contactPageTitle = `Contact Us  | Sample Self Storage - North`;
-export const contactPageContent = `Use the contact information or the contact form on this page to speak to one of our friendly self storage managers!`;
+export const reservePageTitle = ``;
+export const reservePageContent = ``;
 
-export const thankYouPageTitle = `Thank You For Reserving Your Unit at Sample Self Storage!`;
+export const payRentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
+export const payRentPageContent = `Pay your bill online 24 hours a day, 7 days a week with our easy tenant portal! Just follow these instructions, or you can call our offices to learn more!`;
+
+export const storageTipsTitle = `Storage Tips | Storage Plus of Baldwin`;
+export const storageTipsContent = `Take advantage of our decades of self storage experience and follow these easy storage tips! You'll be glad you did!`;
+
+export const unitSizerPageTitle = ``;
+export const unitSizerPageContent = ``;
+
+export const contactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
+export const contactPageContent = `Have questions about any of our 6 locations or your account with Storage Plus of Baldwin County? Use our contact form or the information on this page to reach out!`;
+
+export const thankYouPageTitle = `Thank You For Reserving Your Unit at Storage Plus of Baldwin County!`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
 
-export const privacyPolicyPageTitle = `Privacy Policy | Sample Self Storage - North`;
+export const privacyPolicyPageTitle = `Privacy Policy | Storage Plus of Baldwin County`;
 export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
 
-export const faqPageTitle = `Frequently Asked Questions | Sample Self Storage - North`;
-export const faqPagecontent = `Have some questions about the services at Sample Self Storage - North? Check out our FAQ page!`;
+export const faqPageTitle = `Frequently Asked Questions | Storage Plus of Baldwin County`;
+export const faqPagecontent = `Have some questions about the services at Storage Plus of Baldwin County? Check out our FAQ page!`;
+
+
+
+export const location1PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
+export const location1PayrentPageContent = `Follow the simple instructions on this page and you'll have access to our tenant portal 24 hours a day!`;
+
+export const location2PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
+export const location2PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+
+export const location3PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
+export const location3PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+
+export const location4PayrentPageTitle = `Belfast Location Pay Rent | Storage Plus of Baldwin County`;
+export const location4PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+
+
+
+export const location1ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
+export const location1ContactPageContent = `Have questions about your account with Storage Plus of Baldwin County? Use our contact form or the information on this page to contact our friendly team!`;
+
+export const location2ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
+export const location2ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+
+export const location3ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
+export const location3ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+
+export const location4ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
+export const location4ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+
+

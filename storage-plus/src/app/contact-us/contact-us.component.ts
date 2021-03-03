@@ -10,6 +10,7 @@ import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
 import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3, ogContactPageLocation4, twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4 } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
+import { contactPageTitle, contactPageContent } from '../data/title';
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -36,6 +37,8 @@ export class ContactUsComponent implements OnInit {
   mailSent = false;
   og: any;
   twitter: any;
+  contactPageContent: string;
+  contactPageTitle: string;
   
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -48,6 +51,7 @@ export class ContactUsComponent implements OnInit {
     private data: LocationService,
     private canonical: CanonicalService
   ) {
+    this.fetchMetaData();
     this.fetchOg();
     this.fetchTwitter();
     this.og.forEach(element => {
@@ -66,10 +70,9 @@ export class ContactUsComponent implements OnInit {
     this.canonical.create();
     this.meta.addTag({
       name: 'description',
-      content: `Want to reserve a unit or find information about your account? Use our contact
-      form or the contact information for your StorageTown location on this page!`
+      content: `${this.contactPageContent}`
     });
-    this.titleService.setTitle('Contact Us | StorageTown Rental Spaces');
+    this.titleService.setTitle(`${this.contactPageTitle}`);
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -95,34 +98,41 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('foley')) {
       this.og = ogContactPageLocation1;
     } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
+      if (this.router.url.includes('silverhill')) {
         this.og = ogContactPageLocation2;
       } else {
-        if (this.router.url.includes('montgomery-walden')) {
+        if (this.router.url.includes('barnwell')) {
           this.og = ogContactPageLocation3;
         } else {
-          if (this.router.url.includes('middletown-wallKill'))
+          if (this.router.url.includes('belforest')) {
           this.og = ogContactPageLocation4;
+          }
         }
       }
     }
 }
 
+public fetchMetaData() {
+  this.contactPageTitle = contactPageTitle;
+  this.contactPageContent = contactPageContent;
+}
+
 public fetchTwitter() {
-    if (this.router.url.includes('chester-brookside-ave')) {
-      this.twitter = twitterContactPageLocation1;
-    } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
-        this.twitter = twitterContactPageLocation2;
+  if (this.router.url.includes('foley')) {
+    this.twitter = twitterContactPageLocation2;
+  } else {
+      if (this.router.url.includes('silverhill')) {
+        this.twitter = twitterContactPageLocation1;
       } else {
-        if (this.router.url.includes('montgomery-walden')) {
+        if (this.router.url.includes('barnwell')) {
           this.twitter = twitterContactPageLocation3;
         } else {
-          if (this.router.url.includes('middletown-wallKill'))
+          if (this.router.url.includes('belforest')) {
           this.twitter = twitterContactPageLocation4;
+          }
         }
       }
     }
@@ -160,40 +170,40 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('chester-andrews-lane')) {
-      this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('foley')) {
       this.fetchContactDetailsLocation1();
-    } else if (this.router.url.includes('montgomery-walden')) {
+    } else if (this.router.url.includes('silverhill')) {
+      this.fetchContactDetailsLocation2();
+    } else if (this.router.url.includes('barnwell')) {
       this.fetchContactDetailsLocation3();
-    } else if (this.router.url.includes('middletown-wallKill')) {
+    } else if (this.router.url.includes('belforest')) {
       this.fetchContactDetailsLocation4();
     }
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `StorageTown Rental Spaces - Chester - Brookside Ave`;
+    this.heading = `Storage Plus of Baldwin County - Foley Location`;
     this.locationId = '1'
-    this.contactDetails = contactsLocation2;
-    this.hoursDetails = hoursLocation2;
+    this.contactDetails = contactsLocation1;
+    this.hoursDetails = hoursLocation1;
   }
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading = `StorageTown Rental Spaces - Chester - Andrews Lane `;
-    this.contactDetails = contactsLocation1;
-    this.hoursDetails = hoursLocation1;
+    this.heading = `Storage Plus of Baldwin County - Silverhill Location`;
+    this.contactDetails = contactsLocation2;
+    this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = `StorageTown Rental Spaces - Montgomery/Walden`;
+    this.heading = `Storage Plus of Baldwin County - Barnwell Location`;
     this.locationId = '3'
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
-    this.heading = `StorageTown - Middletown/WallKill Location`;
+    this.heading = `Storage Plus of Baldwin County - Belforest Location`;
     this.locationId = '4'
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;

@@ -27,43 +27,43 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/chester-andrews-lane')) {
+    if (this.router.url.includes('/location/foley')) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes('/location/chester-brookside-ave')) {
+  } else if (this.router.url.includes('/location/silverhill')) {
     this.fetchDetailsLocation2();
-  } else if (this.router.url.includes('/location/montgomery-walden')) {
+  } else if (this.router.url.includes('/location/barnwell')) {
     this.fetchDetailsLocation3();
-  } else if (this.router.url.includes('/location/middletown-wallKill')) {
+  } else if (this.router.url.includes('/location/belforest')) {
     this.fetchDetailsLocation4();
   }
 }
 
   public fetchDetailsLocation1() {
     this.unitSizer = unitSizerLocation1;
-    this.h2tag = 'Storage Unit Sizer ';
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure
-    that out! Still have questions? Call (845) 469-4888`;
+    this.h2tag = 'Unit Sizer';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+    out! Still have questions? Call (251) 970-3168`;
   }
 
   public fetchDetailsLocation2() {
-    this.h2tag = 'Storage Unit Sizer ';
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure
-    that out! Still have questions? Call (845) 469-4888`;
+    this.h2tag = 'Unit Sizer';
+    this.description = `Check out our unit sizing chart to make sure the unit you're looking at will hold the belongings you need to
+    store. Once you decide on the right unit for you, check our availability, then give our offices a call for more information!`;
     this.unitSizer = unitSizerLocation2;
   }
 
   public fetchDetailsLocation3() {
-    this.h2tag = 'Storage Unit Sizer ';
-    this.description = `If you're having trouble figuring out what sized unit you'll need at StorageTown Rental Spaces,
-    use this handy Unit Sizer to help visualize the size you require! Still have questions? Call (845) 457-3500 and one
-    of our friendly storage associates will help!`;
+    this.h2tag = 'Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+    out! Still have questions? Call (251) 970-3168`;
     this.unitSizer = unitSizerLocation3;
   }
 
   public fetchDetailsLocation4() {
     this.h2tag = 'Storage Unit Sizer ';
-    this.description = `Having trouble figuring out what size unit is required for your storage needs? Use our self
-    storage unit sizer to help visualize what will fit!`;
+    this.description = `Finding the right size is easy, below you will find some of the common storage units, by size and what
+    typically fits. TIP: remember to think 'cubic', do your items just need floor space or can they stack and fit together?
+    *Actual contents vary depending of the size of your belongings.`;
     this.unitSizer = unitSizerLocation4;
   }
 }

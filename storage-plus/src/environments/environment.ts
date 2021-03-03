@@ -6,18 +6,18 @@ export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
   locationName: 'new-york/baldwinsville', // state/city  **Remeber to update locationName in sitemap.xml as well
-  signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
+  signUpForAuotoPay: 0, // { Yes: 1, No: 0 }
   alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Storage- Town - Testing',
-  facilityName: 'Storage- Town - Testing',
+  appId: 'Storage Plus of Baldwin County - Testing',
+  facilityName: 'Storage Plus of Baldwin County',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://storage-town.com`
+  websiteUrl: `https://storage-plus-staging.netlify.app`
 };
 
 /*

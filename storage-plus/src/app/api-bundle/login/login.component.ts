@@ -126,27 +126,27 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchContactDetail() {
-    if (this.router.url.includes('chester-andrews-lane')) {
+    if (this.router.url.includes('foley')) {
       this.id = 1;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
+      this.name = 'Storage Plus of Baldwin County - Foley Location';
       this.contact = contactsLocation1;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
-    } else  if (this.router.url.includes('chester-brookside-ave')) {
-      this.id = 1;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
-      this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
-    } else  if (this.router.url.includes('montgomery-walden')) {
-      this.id = 1;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
+    } else  if (this.router.url.includes('silverhill')) {
+      this.id = 2;
+      this.name = 'Storage Plus of Baldwin County - Silverhill Location';
+      this.contact = contactsLocation2;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
+    } else  if (this.router.url.includes('barnwell')) {
+      this.id = 3;
+      this.name = 'Storage Plus of Baldwin County - Barnwell Location';
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
-    } else  if (this.router.url.includes('middletown-wallKill')) {
-      this.id = 1;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
+    } else  if (this.router.url.includes('belforest')) {
+      this.id = 4;
+      this.name = 'Storage Plus of Baldwin County - Belforest Location';
       this.contact = contactsLocation4;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
@@ -162,33 +162,34 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('chester-brookside-ave')) {
+    if (this.router.url.includes('foley')) {
       this.og = ogPayRentPageLocation1;
-    } else {
-      if (this.router.url.includes('chester-andrews-lane')) {
-        this.og = ogPayRentPageLocation2;
-      } else {
-        if (this.router.url.includes('montgomery-walden')) {
+    } else { if (this.router.url.includes('silverhill')) {
+      this.og = ogPayRentPageLocation2;
+    }  else {
+        if (this.router.url.includes('barnwell')) {
           this.og = ogPayRentPageLocation3;
         } else {
-          if (this.router.url.includes('middletown-wallKill'))
+          if (this.router.url.includes('belforest')) {
           this.og = ogPayRentPageLocation4;
+          }
         }
       }
     }}
 
 public fetchTwitter() {
-  if (this.router.url.includes('chester-brookside-ave')) {
+  if (this.router.url.includes('foley')) {
     this.twitter = twitterPayRentPageLocation1;
   } else {
-    if (this.router.url.includes('chester-andrews-lane')) {
+    if (this.router.url.includes('silverhill')) {
       this.twitter = twitterPayRentPageLocation2;
     } else {
-      if (this.router.url.includes('montgomery-walden')) {
+      if (this.router.url.includes('barnwell')) {
         this.twitter = twitterPayRentPageLocation3;
       } else {
-        if (this.router.url.includes('middletown-wallKill'))
+        if (this.router.url.includes('belforest')) {
         this.twitter = twitterPayRentPageLocation4;
+        }
       }
     }
   }

@@ -1,235 +1,283 @@
-export const script = {
-    // Put your script here
-    'content': 'noindex, follow',
-    'name': 'robots'
+import { environment } from '../../environments/environment';
+import { homePageContent, homePageTitle, payRentPageContent,
+  payRentPageTitle, storageTipsContent, storageTipsTitle,
+contactPageContent, contactPageTitle,
+location1PageContent, location2PageTitle,
+location2PageContent, location1PageTitle,
+location3PageContent, location3PageTitle,
+location4PageContent, location4PageTitle,
+location1PayrentPageTitle, location1PayrentPageContent,
+location2PayrentPageTitle, location2PayrentPageContent,
+location3PayrentPageTitle, location3PayrentPageContent,
+location4PayrentPageTitle, location4PayrentPageContent,
+location1ContactPageTitle, location1ContactPageContent,
+location2ContactPageTitle, location2ContactPageContent,
+location3ContactPageTitle, location3ContactPageContent,
+location4ContactPageTitle, location4ContactPageContent, } from '../data/title';
+import { featuresList } from '../data/home';
+import { contactsLocation1, hoursLocation1, 
+  contactsLocation2, hoursLocation2, 
+  contactsLocation3, hoursLocation3, 
+  contactsLocation4, hoursLocation4, 
+ } from '../data/contact';
 
+//  const openingHoursLocation1 = [];
+// hoursLocation1.filter( hour => {
+//   if (hour.label !== 'Access hours: ') {
+//     openingHoursLocation1.push(hour.label + hour.data)
+//   }
+// })
+
+// const openingHoursLocation2 = [];
+// hoursLocation2.filter( hour => {
+//   if (hour.label !== 'Access hours: ') {
+//     openingHoursLocation2.push(hour.label + hour.data)
+//   }
+// })
+
+// const openingHoursLocation3 = [];
+// hoursLocation3.filter( hour => {
+//   if (hour.label !== 'Access hours: ') {
+//     openingHoursLocation3.push(hour.label + hour.data)
+//   }
+// })
+
+// const openingHoursLocation4 = [];
+// hoursLocation4.filter( hour => {
+//   if (hour.label !== 'Access hours: ') {
+//     openingHoursLocation4.push(hour.label + hour.data)
+//   }
+// })
+
+
+
+ 
+const contactIndex1 = contactsLocation1.findIndex(x => x.label === 'Phone: ');
+const contactIndex2 = contactsLocation2.findIndex(x => x.label === 'Phone: ');
+const contactIndex3 = contactsLocation3.findIndex(x => x.label === 'Phone: ');
+const contactIndex4 = contactsLocation4.findIndex(x => x.label === 'Phone: ');
+
+const emailIndex1 = contactsLocation1.findIndex(x => x.label === 'Email: ');
+const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
+const emailIndex3 = contactsLocation3.findIndex(x => x.label === 'Email: ');
+const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
+  
+export const nameLocation1 = `Storage Plus of Baldwin County - Foley Location`;
+export const nameLocation2 = `Storage Plus of Baldwin County - Silverhill Location`;
+export const nameLocation3 = `Storage Plus of Baldwin County - Barnwell Location`;
+export const nameLocation4 = `Storage Plus of Baldwin County - Belforest Location`;
+
+
+export const location1 = `poughkeepsie/arlington`;
+export const location2 = `poughkeepsie/hyde-park`;
+export const location3 = `highland`;
+export const location4 = `lake-katrine`;
+
+
+export const urlLocation1 = `${environment.websiteUrl}/location/poughkeepsie/arlington/storage-units`;
+export const urlLocation2 = `${environment.websiteUrl}/location/poughkeepsie/hyde-park/storage-un`;
+export const urlLocation3 = `${environment.websiteUrl}/location/highland/storage-units`;
+export const urlLocation4 = `${environment.websiteUrl}/location/lake-katrine/storage-units`;
+
+
+export const description1 = `brick self storage facility front office with a green lawn
+                             in the front and blue sky above`;
+
+export const description2 = `Our Silverhill location has a number of regular and climate controlled unit types `;
+
+export const description3 = `Our Barnwell location has a number of regular and climate controlled unit types ideal
+                             for just about any self storage need at an affordable price!  Our 24-hour access policy
+                             makes coming and going on your schedule a breeze!`;
+
+export const description4 = `Our Belfast location has a number of units in both regular and climate controlled
+                             varieties to cover all of your residential or commercial self storage needs.`;
+
+export const maplocation1 = 'https://goo.gl/maps/FqeHH1xEv8AP4GLg6';
+export const maplocation2 = 'https://goo.gl/maps/FTweCN2UdexnsJB49';
+export const maplocation3 = 'https://goo.gl/maps/EPmskBQ9TgFTBXcb8';
+export const maplocation4 = 'https://goo.gl/maps/skmJTukq9K3xRFbS7';
+
+
+export const addressLoaction1 = {
+  '@type': 'PostalAddress',
+      'streetAddress': '17860 US-98',
+      'addressLocality': 'Foley',
+      'addressRegion': 'AL',
+      'postalCode': '36535',
+      'addressCountry': 'United state'
 };
 
-export const homePageScript = [ {
+export const addressLoaction2 = {
+  '@type': 'PostalAddress',
+  'streetAddress': '15410 AL-104',
+  'addressLocality': 'Silverhill',
+  'addressRegion': 'AL',
+  'postalCode': '36576',
+  'addressCountry': 'United state'
+}
+
+export const addressLoaction3 = {
+  '@type': 'PostalAddress',
+  'streetAddress': '8089A US-98',
+  'addressLocality': 'Fairhope',
+  'addressRegion': 'AL',
+  'postalCode': '36532',
+  'addressCountry': 'United state'
+} 
+
+export const addressLoaction4 = {
+  '@type': 'PostalAddress',
+  'streetAddress': '11455 Co Rd 64',
+  'addressLocality': 'Daphne',
+  'addressRegion': 'AL',
+  'postalCode': '36526',
+  'addressCountry': 'United state'
+}
+
+
+
+export const imageLocation1 = [
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley196.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley43.jpg'
+ ]
+
+ export const imageLocation2 = [
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-silverhill-11.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-silverhill-169.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-silverhill-43.jpg'
+ ]
+
+ export const imageLocation3 = [
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-43.jpg'
+ ]
+
+ export const imageLocation4 =  [
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-11.JPG',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-169.JPG',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-43.JPG'
+ ]
+
+export const homePageScript = [ 
+  {
     '@context': 'https://schema.org',
     '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
-    'name': 'StorageTown Rental Spaces',
-    'url': 'https://storage-town.com/',
-    'priceRange': '$87-$309',
-      'address' : {
-      '@type' : 'PostalAddress',
-      'addressRegion' : 'New York'
-    },
-     'telephone' : '(845) 469-4888',
-    'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
-    'logo': 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png'
-  }, {
-
+    'name': nameLocation1,
+    'url': urlLocation1,
+    'openingHours': ['Mo-Fr 08:30 - 17:00'],
+    'priceRange': '$40 - $190',
+      'address' : addressLoaction1,
+    'telephone': contactsLocation1[contactIndex1].data,
+    'image' : imageLocation1,
+    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/storage-plus-baldwin-county-logo.jpg'
+  }, 
+  {
     '@context' : 'http://schema.org',
     '@type' : ['LocalBusiness', 'SelfStorage'],
-    'name' : 'StorageTown Rental Spaces - Chester - Brookside Ave',
-    'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
-    'telephone' : '(845) 469-4888',
-    'email' : 'storagetownchester@gmail.com',
-    'address' : {
-      '@type' : 'PostalAddress',
-      'streetAddress' : '53 Brookside Ave',
-      'addressLocality' : 'Chester',
-      'addressRegion' : 'NY',
-      'postalCode' : '10918'
-    },
-    'openingHours': 'Mo,Tu,We,Th,Fri 09:00-17:00',
-    'amenityFeature': [{'@type': 'LocationFeatureSpecification',
-    'name': 'Fully-Fenced Facility'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Easy Online Payments'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Gate with Pin-code Access'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Well-lit Storage Units'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Great Customer Service'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Security Cameras on Premises'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Fully alarmed units'}],
-    'priceRange': '$87-$309',
-    'url' : 'https://storage-town.com/location/chester/storage-units'
-  }, {
+    'name' : nameLocation2,
+    'image' : imageLocation2,
+    'telephone': contactsLocation2[contactIndex2].data,
+    'email': contactsLocation2[emailIndex2].data,
+    'address': addressLoaction2,
+    'openingHours': ['Mo-Fr 09:00-17:00", "Sa 10:00-16:00' ],
+    'priceRange': '$40 - $110',
+    'url' : urlLocation2,
+  }, 
+  {
     '@context' : 'http://schema.org',
     '@type' : ['LocalBusiness', 'SelfStorage'],
-    'name' : 'StorageTown Rental Spaces - Chester - Andrews Lane',
-    'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
-    'telephone' : '(845) 469-4888',
-    'email' : 'storagetownchester@gmail.com',
-    'address' : {
-      '@type' : 'PostalAddress',
-      'streetAddress' : '1 Andrews Lane',
-      'addressLocality' : 'Chester',
-      'addressRegion' : 'NY',
-      'postalCode' : '10918'
-    }, 'priceRange': '$87-$309',
-    'openingHours': 'Mo,Tu,We,Th,Fri 09:00-17:00',
-    'amenityFeature': [{'@type': 'LocationFeatureSpecification',
-    'name': 'Fully-Fenced Facility'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Easy Online Payments'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Gate with Pin-code Access'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Well-lit Storage Units'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Great Customer Service'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Security Cameras on Premises'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Fully alarmed units'}],
-    'url' : 'https://storage-town.com/location/andrews/storage-units'
-  }, {
+    'name' : nameLocation3,
+    'image' : imageLocation3,
+    'telephone' : contactsLocation3[contactIndex3].data,
+    'email' : contactsLocation3[emailIndex3].data,
+    'address': addressLoaction3,
+    'priceRange': '$30 - $175',
+    'openingHours': [],
+    'url' : urlLocation3
+  }, 
+  {
     '@context' : 'http://schema.org',
     '@type' : ['LocalBusiness', 'SelfStorage'],
-    'name' : 'StorageTown Rental Spaces - Montgomery/Walden',
-    'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
-    'telephone' : '(845) 457-3500',
-    'email' : 'storagetownmontgomery@gmail.com',
-    'address' : {
-      '@type' : 'PostalAddress',
-      'streetAddress' : '130 Neelytown Rd,',
-      'addressLocality' : 'Montgomery',
-      'addressRegion' : 'NY',
-      'postalCode' : '12549'
-    }, 'priceRange': '$87-$309',
-    'openingHours': 'Mo,Tu,We,Th,Fri 09:00-17:00',
-    'amenityFeature': [{'@type': 'LocationFeatureSpecification',
-    'name': 'Fully-Fenced Facility'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Easy Online Payments'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Gate with Pin-code Access'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Well-lit Storage Units'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Great Customer Service'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Security Cameras on Premises'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Fully alarmed units'}],
-    'url' : 'https://storage-town.com/location/montgomery-walden/storage-units'
-  }, {
-    '@context' : 'http://schema.org',
-    '@type' : ['LocalBusiness', 'SelfStorage'],
-    'name' : 'StorageTown - Middletown/WallKill Location',
-    'image' : 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-logo.png',
-    'telephone' : '(845) 692-4838',
-    'email' : 'storagetownmiddletown@gmail.com',
-    'address' : {
-      '@type' : 'PostalAddress',
-      'streetAddress' : '2070 Goshen Turnpike',
-      'addressLocality' : 'Middletown',
-      'addressRegion' : 'NY',
-      'postalCode' : '10941'
-    }, 'priceRange': '$87-$309',
-    'openingHours': 'Mo,Tu,We,Th,Fri 09:00-17:00',
-    'amenityFeature': [{'@type': 'LocationFeatureSpecification',
-    'name': 'Fully-Fenced Facility'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Easy Online Payments'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Gate with Pin-code Access'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Well-lit Storage Units'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Great Customer Service'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Security Cameras on Premises'},
-    {'@type': 'LocationFeatureSpecification',
-    'name': 'Fully alarmed units'}],
-    'url' : 'https://storage-town.com/location/middletown-wallKill/storage-units'
-  } ];
+    'name' : nameLocation4,
+    'image' : imageLocation4,
+    'telephone' : contactsLocation4[contactIndex4].data,
+    'email' : contactsLocation4[emailIndex4].data,
+    'address': addressLoaction4,
+     'priceRange': '$30 - $125',
+     'openingHours': [],
+     'url' : urlLocation4
+  },
+ ];
 
 
 export const Location1Script = {
     '@context': 'https://schema.org',
     '@type': 'SelfStorage',
-    'image': [
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-brookside-ave-small%20%281x1%29.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-brookside-ave-small%20%284x3%29.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-brookside-ave-small%20%2816x9%29.jpg'
-     ],
-    '@id': 'https://storage-town.com/location/chester/storage-units',
-    'name': 'StorageTown Rental Spaces - Chester - Brookside Ave',
-     'description': 'Our Chester location offers a variety of well-lit, fully-fenced self storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!',
-    'address': {
-      '@type': 'PostalAddress',
-      'streetAddress': '53 Brookside Ave',
-      'addressLocality': 'Chester',
-      'addressRegion': 'NY',
-      'postalCode': '10918',
-      'addressCountry': 'United state'
-    },
-   'aggregateRating': {
-  '@type': 'AggregateRating',
-  'ratingValue': '3.4',
-  'bestRating': '5',
-  'reviewCount': '7'
-},
+    'image': imageLocation1,
+    '@id': environment.websiteUrl,
+    'name': nameLocation1,
+     'description': description1 || location1PageContent,
+    'address': addressLoaction1,
+    'aggregateRating': {
+    '@type': 'AggregateRating',
+    'ratingValue': '4.7',
+    'bestRating': '5',
+    'reviewCount': '3'
+  },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 41.351539,
-      'longitude': -74.278008
+      'latitude': 30.4089297,
+      'longitude': -87.7331084,
     },
-    'url': 'https://storage-town.com/location/chester/about',
-    'telephone': '(845) 469-4888',
+    'url': urlLocation1,
+    'telephone': contactsLocation1[contactIndex1].data,
 
-    'priceRange': '$57 - $309',
-   'openingHours': ['Mo-Sat 09:00-17:00'],
+    'priceRange': '$40 - $190',
+    'openingHours': ['Mo-Fr 08:30 - 17:00'],
     'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Credit card, Online Payment',
+  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
      'areaServed': {
   '@type': 'State',
   'name': 'New York'
    },
+   'hasMap': maplocation1,
 
     'acceptsReservations': 'True'
-
 };
 
 export const Location2Script = {
     '@context': 'https://schema.org',
     '@type': 'SelfStorage',
-    'image': [
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-andrews-lane%20-%201x1.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-andrews-lane%20%284x3%29.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-andrews-lane%20%2816x9%29.jpg'
-     ],
-    '@id': 'https://storage-town.com/location/andrews/storage-units',
-    'name': 'StorageTown Rental Spaces - Chester - Andrews Lane',
-     'description': 'Our Chester location offers a variety of well-lit, fully-fenced self storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!',
-    'address': {
-      '@type': 'PostalAddress',
-      'streetAddress': '1 Andrews Lane',
-      'addressLocality': 'Chester',
-      'addressRegion': 'NY',
-      'postalCode': '10918',
-      'addressCountry': 'United state'
-    },
+    'image': imageLocation2,
+    '@id': environment.websiteUrl,
+    'name': nameLocation2,
+     'description': description2 || location2PageContent,
+    'address': addressLoaction2,
    'aggregateRating': {
   '@type': 'AggregateRating',
-  'ratingValue': '3',
+  'ratingValue': '4.7',
   'bestRating': '5',
-  'reviewCount': '1'
+  'reviewCount': '12'
 },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 41.351674,
-      'longitude': -74.29747
+      'latitude': 30.5445247,
+      'longitude': -87.7604384
     },
-    'url': 'https://storage-town.com/location/andrews/about',
-    'telephone': '(845) 469-4888',
+    'url': urlLocation2,
+    'telephone': contactsLocation2[contactIndex2].data,
 
-    'priceRange': '$57 - $309',
-   'openingHours': ['Mo-Sat 09:00-17:00'],
+    'priceRange': '$40 - $110',
+    'openingHours': [ ],
     'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Credit card, Online Payment',
+  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
      'areaServed': {
   '@type': 'State',
   'name': 'New York'
    },
+   'hasMap': maplocation2,
 
     'acceptsReservations': 'True'
 
@@ -238,45 +286,34 @@ export const Location2Script = {
 export const Location3Script = {
     '@context': 'https://schema.org',
     '@type': 'SelfStorage',
-    'image': [
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-4%201x1.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-4%20%284x3%29.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-4%20%2816x9%29.jpg'
-     ],
-    '@id': 'https://storage-town.com/location/montgomery-walden/storage-units',
-    'name': 'StorageTown Rental Spaces - Montgomery/Walden',
-     'description': 'Our Montgomery location offers a wide variety of affordable self storage units in a well-lit, fully-fenced storage facility! Call (845) 457-3500 to learn more!',
-    'address': {
-      '@type': 'PostalAddress',
-      'streetAddress': '130 Neelytown Rd',
-      'addressLocality': 'Montgomery',
-      'addressRegion': 'NY',
-      'postalCode': '12549',
-      'addressCountry': 'United state'
-    },
+    'image': imageLocation3,
+    '@id': environment.websiteUrl,
+    'name': nameLocation3,
+     'description': description3 || location3PageContent,
+    'address': addressLoaction3,
    'aggregateRating': {
   '@type': 'AggregateRating',
-  'ratingValue': '4.3',
+  'ratingValue': '5',
   'bestRating': '5',
-  'reviewCount': '8'
+  'reviewCount': ''
 },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 41.504837,
-      'longitude': -74.217813
+      'latitude': 30.4222526,
+      'longitude':  -87.8864467
     },
-    'url': 'https://storage-town.com/location/montgomery-walden/about',
-    'telephone': '(845) 457-3500',
+    'url': urlLocation3,
+    'telephone': contactsLocation3[contactIndex3].data,
 
-    'priceRange': '$58 - $247',
-   'openingHours': ['Mo-Sat 09:00-17:00'],
+    'priceRange': '$30 - $175',
+    'openingHours': [],
     'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Credit card, Online Payment',
+  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
      'areaServed': {
   '@type': 'State',
   'name': 'New York'
    },
-
+'hasMap': maplocation3,
     'acceptsReservations': 'True'
 
 
@@ -285,73 +322,58 @@ export const Location3Script = {
 export const Location4Script = {
     '@context': 'https://schema.org',
     '@type': 'SelfStorage',
-    'image': [
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-3-1x1.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-3-%204x3.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-3%2016x9.jpg'
-     ],
-    '@id': 'https://storage-town.com/location/middletown-wallKill/storage-units',
-    'name': 'StorageTown - Middletown/WallKill Location',
-     'description': 'Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable, well maintained, fully-fenced in self storage units 7 days a week!',
-    'address': {
-      '@type': 'PostalAddress',
-      'streetAddress': '2070 Goshen Turnpike',
-      'addressLocality': 'Middletown',
-      'addressRegion': 'NY',
-      'postalCode': '10941',
-      'addressCountry': 'United state'
-    },
+    'image': imageLocation4,
+    '@id': environment.websiteUrl,
+    'name': nameLocation4,
+     'description': description4 || location4PageContent,
+    'address': addressLoaction4,
    'aggregateRating': {
   '@type': 'AggregateRating',
-  'ratingValue': '4.6',
+  'ratingValue': '5',
   'bestRating': '5',
-  'reviewCount': '8'
+  'reviewCount': ''
 },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 41.465688,
-      'longitude': -74.344892
+      'latitude': 30.607304,
+      'longitude': -87.8104576
     },
-    'url': 'https://storage-town.com/location/middletown-wallKill/about',
-    'telephone': '(845) 692-4838',
+    'url': urlLocation4,
+    'telephone': contactsLocation4[contactIndex4].data,
 
-    'priceRange': '$92 - $300',
-   'openingHours': ['Mo-Sat 09:00-17:00'],
+    'priceRange': '$30 - $125',
+    'openingHours': [],
     'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Credit card, Online Payment',
+  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
      'areaServed': {
   '@type': 'State',
   'name': 'New York'
    },
+   'hasMap': maplocation4,
 
     'acceptsReservations': 'True'
 
 };
 
+
+
 export const contactPageLocation1Script = {
     '@context': 'http://schema.org',
     '@type': 'Selfstorage',
-    'name': 'StorageTown Rental Spaces - Chester - Brookside Ave',
-    'address': {
-      '@type': 'PostalAddress',
-      'addressLocality': 'Chester',
-      'postalCode': '10918',
-      'streetAddress': '53 Brookside Ave'
-    },
-     'url': 'https://storage-town.com/location/chester/about',
-     'image': [
-          'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-brookside-ave-small%20%281x1%29.jpg'
-         ],
+    'name': nameLocation1,
+    'address': addressLoaction1,
+     'url': urlLocation1,
+     'image':  imageLocation1,
     'contactPoint': [{
       '@type': 'ContactPoint',
-      'telephone': '(845) 469-4888',
+      'telephone':  contactsLocation1[contactIndex1].data,
       'contactType': 'reservations'
     }, {
       '@type': 'ContactPoint',
-      'telephone': '(845) 469-4888',
+      'telephone':  contactsLocation1[contactIndex1].data,
       'contactType': 'customer service'
     }],
-    'email': 'storagetownchester@gmail.com',
+    'email': contactsLocation1[emailIndex1].data,
     'sameAs': [
       '',
       '',
@@ -363,27 +385,20 @@ export const contactPageLocation1Script = {
 export const contactPageLocation2Script = {
     '@context': 'http://schema.org',
     '@type': 'Selfstorage',
-    'name': 'StorageTown Rental Spaces - Chester - Andrews Lane',
-    'address': {
-      '@type': 'PostalAddress',
-      'addressLocality': 'Chester',
-      'postalCode': '10918',
-      'streetAddress': '1 Andrews Lane'
-    },
-     'url': 'https://storage-town.com/location/andrews/about',
-     'image': [
-          'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-andrews-lane%20-%201x1.jpg'
-         ],
+    'name': nameLocation2,
+    'address': addressLoaction2,
+     'url': urlLocation2,
+     'image': imageLocation2,
     'contactPoint': [{
       '@type': 'ContactPoint',
-      'telephone': '(845) 469-4888',
+      'telephone':  contactsLocation2[contactIndex2].data,
       'contactType': 'reservations'
     }, {
       '@type': 'ContactPoint',
-      'telephone': '(845) 469-4888',
+      'telephone':  contactsLocation2[contactIndex2].data,
       'contactType': 'customer service'
     }],
-    'email': 'storagetownchester@gmail.com',
+    'email': contactsLocation2[emailIndex2].data,
     'sameAs': [
       '',
       '',
@@ -394,27 +409,20 @@ export const contactPageLocation2Script = {
 export const contactPageLocation3Script = {
     '@context': 'http://schema.org',
     '@type': 'Selfstorage',
-    'name': 'StorageTown Rental Spaces - Montgomery/Walden',
-    'address': {
-      '@type': 'PostalAddress',
-      'addressLocality': 'Montgomery',
-      'postalCode': '12549',
-      'streetAddress': '130 Neelytown Rd'
-    },
-     'url': 'https://storage-town.com/location/montgomery-walden/about',
-     'image': [
-          'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-4%201x1.jpg'
-         ],
+    'name': nameLocation3,
+    'address': addressLoaction3,
+     'url': urlLocation3,
+     'image': imageLocation3,
     'contactPoint': [{
       '@type': 'ContactPoint',
-      'telephone': '(845) 457-3500',
+      'telephone': contactsLocation3[contactIndex3].data,
       'contactType': 'reservations'
     }, {
       '@type': 'ContactPoint',
-      'telephone': '(845) 457-3500',
+      'telephone': contactsLocation3[contactIndex3].data,
       'contactType': 'customer service'
     }],
-    'email': 'storagetownmontgomery@gmail.com',
+    'email': contactsLocation3[emailIndex3].data,
     'sameAs': [
       '',
       '',
@@ -426,40 +434,33 @@ export const contactPageLocation3Script = {
 export const contactPageLocation4Script = {
     '@context': 'http://schema.org',
     '@type': 'Selfstorage',
-    'name': 'StorageTown - Middletown/WallKill Location',
-    'address': {
-      '@type': 'PostalAddress',
-      'addressLocality': 'Middletown',
-      'postalCode': '10941',
-      'streetAddress': '2070 Goshen Turnpike'
-    },
-     'url': 'https://storage-town.com/location/middletown-wallKill/about',
-     'image': [
-          'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Storage_Town_Images/storagetown-self-storage-3-1x1.jpg'
-         ],
+    'name': nameLocation4,
+    'address': addressLoaction4,
+     'url': urlLocation4,
+     'image': imageLocation4,
     'contactPoint': [{
       '@type': 'ContactPoint',
-      'telephone': '(845) 692-4838',
+      'telephone': contactsLocation4[contactIndex4].data,
       'contactType': 'reservations'
     }, {
       '@type': 'ContactPoint',
-      'telephone': '(845) 692-4838',
+      'telephone': contactsLocation4[contactIndex4].data,
       'contactType': 'customer service'
     }],
-    'email': 'storagetownmiddletown@gmail.com',
+    'email': contactsLocation4[emailIndex4].data,
     'sameAs': [
       '',
       '',
       ''
     ]
-
 };
+
+
 
 export const ogHomePage = [
   {
     property: `og:description`,
-    content: `We offer a wide range of self storage, car, RV and boat storage!
-    Check out our 4 convenient locations in Orange County, NY!`
+    content: homePageContent
   },
   {
     property: `og:type`,
@@ -467,26 +468,26 @@ export const ogHomePage = [
   },
   {
     property: `og:title`,
-    content: `Affordable Self Storage Units | StorageTown Rental Spaces`
+    content: homePageTitle
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com`
+    content: environment.websiteUrl,
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`
+    content: imageLocation1[1]
   },
 ];
 
 export const twitterHomePage = [
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -498,16 +499,15 @@ export const twitterHomePage = [
   },
   {
     name: `twitter:title`,
-    content: `@StorageTown Rental Speces`
+    content: `@${homePageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `We offer a wide range of self storage, car, RV and boat storage!
-    Check out our 4 convenient locations in Orange County, NY!`
+    content: homePageContent
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`
+    content: imageLocation1[0]
   },
 ];
 
@@ -515,12 +515,11 @@ export const twitterHomePage = [
 export const ogLocation1 = [
   {
     property: `og:title`,
-    content: `Self Storage Units in Chester | StorageTown Rental Spaces`
+    content: location1PageTitle
   },
   {
     property: `og:description`,
-    content: `Our Chester location offers a variety of well-lit, fully-fenced self
-    storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!`
+    content: location1PageContent
   },
   {
     property: `og:type`,
@@ -528,22 +527,22 @@ export const ogLocation1 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/location/chester-brookside-ave/storage-units`
+    content: urlLocation1
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`
+    content: imageLocation1[1]
   },
 ];
 
 export const twitterLocation1 = [
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -555,16 +554,15 @@ export const twitterLocation1 = [
   },
   {
     name: `twitter:title`,
-    content: `@Self Storage Units in Chester | StorageTown Rental Spaces`
+    content: `@${location1PageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Our Chester location offers a variety of well-lit, fully-fenced self
-    storage unit sizes at affordable prices! Our pin-code accessible facility also offers RV and Boat storage!`
+    content: location1PageContent
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-brookside-ave.jpg`
+    content: imageLocation1[0]
   },
 ];
 
@@ -572,12 +570,11 @@ export const twitterLocation1 = [
 export const ogLocation2 = [
   {
     property: `og:title`,
-    content: `Storage Units in Chester, NY | StorageTown Rental Spaces `
+    content: location2PageTitle
   },
   {
     property: `og:description`,
-    content: `Our Florida/Warwick location has a variety of unit sizes and all storage units
-    are individually alarmed for your safety!`
+    content: location2PageContent
   },
   {
     property: `og:type`,
@@ -585,22 +582,22 @@ export const ogLocation2 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/location/chester-andrews-lane/storage-units`
+    content: urlLocation2
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation2[1]
   },
 ];
 
 export const twitterLocation2 = [
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -612,16 +609,15 @@ export const twitterLocation2 = [
   },
   {
     name: `twitter:title`,
-    content: `@Storage Units in Chester, NY | StorageTown Rental Spaces`
+    content: `@${location2PageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Our Florida/Warwick location has a variety of unit sizes and all storage units
-    are individually alarmed for your safety!`
+    content: location2PageContent
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation2[0]
   },
 ];
 
@@ -629,12 +625,11 @@ export const twitterLocation2 = [
 export const ogLocation3 = [
   {
     property: `og:title`,
-    content: `Storage Units in Montgomery, NY | StorageTown Rental Spaces`
+    content: location3PageTitle
   },
   {
     property: `og:description`,
-    content: `Our Montgomery location offers a wide variety of affordable self storage units in a well-lit,
-    fully-fenced storage facility! Call (845) 457-3500 to learn more!`
+    content: location3PageContent
   },
   {
     property: `og:type`,
@@ -642,22 +637,22 @@ export const ogLocation3 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/location/montgomery-walden/storage-units`
+    content: urlLocation3
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-4.jpg`
+    content: imageLocation3[1]
   },
 ];
 
 export const twitterLocation3 = [
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -669,28 +664,26 @@ export const twitterLocation3 = [
   },
   {
     name: `twitter:title`,
-    content: `@Storage Units in Montgomery, NY | StorageTown Rental Spaces`
+    content: `@${location3PageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Our Montgomery location offers a wide variety of affordable self storage units in a well-lit,
-    fully-fenced storage facility! Call (845) 457-3500 to learn more!`
+    content: location3PageContent
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-4.jpg`
+    content: imageLocation3[0]
   },
 ];
 
 export const ogLocation4 = [
   {
     property: `og:title`,
-    content: `Self Storage Units in Middletown | StorageTown Rental Spaces`
+    content: location4PageTitle
   },
   {
     property: `og:description`,
-    content: `Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable,
-    well maintained, fully-fenced in self storage units 7 days a week!`
+    content: location4PageContent
   },
   {
     property: `og:type`,
@@ -698,22 +691,22 @@ export const ogLocation4 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/location/middletown-wallKill/storage-units`
+    content: urlLocation4
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg`
+    content: imageLocation4[1]
   },
 ];
 
 export const twitterLocation4 = [
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -725,27 +718,29 @@ export const twitterLocation4 = [
   },
   {
     name: `twitter:title`,
-    content: `@Self Storage Units in Middletown | StorageTown Rental Spaces`
+    content: `@${location4PageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Our Middletown location serves Middletown, Goshen and Wallkill with easy access to affordable,
-    well maintained, fully-fenced in self storage units 7 days a week!`
+    content: location4PageContent
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-3.jpg`
+    content: imageLocation4[0]
   },
 ];
+
+
+
 
 export const ogPayRentPage = [
   {
     property: `og:title`,
-    content: `Pay Rent | Affordable Secure Storage`
+    content: payRentPageTitle
   },
   {
     property: `og:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: payRentPageContent
   },
   {
     property: `og:type`,
@@ -753,30 +748,30 @@ export const ogPayRentPage = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/pay-rent`
+    content: `${environment.websiteUrl}/pay-rent`
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation1[1]
   },
 ];
 
 export const twitterPayRentPage = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | Affordable Secure Storage`
+    content: `@${payRentPageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: payRentPageContent
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -788,18 +783,18 @@ export const twitterPayRentPage = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation1[0]
   },
 ];
 
 export const ogPayRentPageLocation1 = [
   {
     property: `og:title`,
-    content: `Pay Rent | Affordable Secure Storage`
+    content: location1PayrentPageTitle
   },
   {
     property: `og:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: location1PayrentPageContent
   },
   {
     property: `og:type`,
@@ -807,30 +802,30 @@ export const ogPayRentPageLocation1 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/pay-rent/chester-brookside-ave/login`
+    content: `${environment.websiteUrl}/pay-rent/${location1}/login`
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation1[1]
   },
 ];
 
 export const twitterPayRentPageLocation1 = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | Affordable Secure Storage`
+    content: `@${location1PayrentPageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: location1PayrentPageContent
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -842,18 +837,18 @@ export const twitterPayRentPageLocation1 = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation1[0]
   },
 ];
 
 export const ogPayRentPageLocation2 = [
   {
     property: `og:title`,
-    content: `Pay Rent | Affordable Secure Storage`
+    content: location2PayrentPageTitle
   },
   {
     property: `og:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: location2PayrentPageContent
   },
   {
     property: `og:type`,
@@ -861,30 +856,30 @@ export const ogPayRentPageLocation2 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/pay-rent/chester-brookside-ave/login`
+    content: `${environment.websiteUrl}/pay-rent/${location2}/login`
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation1[1]
   },
 ];
 
 export const twitterPayRentPageLocation2 = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | Affordable Secure Storage`
+    content: `@${location2PayrentPageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: location2PayrentPageContent
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -896,18 +891,18 @@ export const twitterPayRentPageLocation2 = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation2[0]
   },
 ];
 
 export const ogPayRentPageLocation3 = [
   {
     property: `og:title`,
-    content: `Pay Rent | Affordable Secure Storage`
+    content:  location3PayrentPageTitle
   },
   {
     property: `og:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: location3PayrentPageContent
   },
   {
     property: `og:type`,
@@ -915,30 +910,30 @@ export const ogPayRentPageLocation3 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/pay-rent/montgomery-walden/login`
+    content: `${environment.websiteUrl}/pay-rent/${location3}/login`
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation3[1]
   },
 ];
 
 export const twitterPayRentPageLocation3 = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | Affordable Secure Storage`
+    content: `@${location3PayrentPageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: location3PayrentPageContent
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -950,18 +945,18 @@ export const twitterPayRentPageLocation3 = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation3[0]
   },
 ];
 
 export const ogPayRentPageLocation4 = [
   {
     property: `og:title`,
-    content: `Pay Rent | Affordable Secure Storage`
+    content: location4PayrentPageTitle
   },
   {
     property: `og:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: location4PayrentPageContent
   },
   {
     property: `og:type`,
@@ -969,30 +964,30 @@ export const ogPayRentPageLocation4 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/pay-rent/middletown-wallKill/login`
+    content: `${environment.websiteUrl}/pay-rent/${location4}/login`
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation4[1]
   },
 ];
 
 export const twitterPayRentPageLocation4 = [
   {
     name: `twitter:title`,
-    content: `@Pay Rent | Affordable Secure Storage`
+    content: `@${location4PayrentPageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`
+    content: location4PayrentPageContent
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -1004,19 +999,22 @@ export const twitterPayRentPageLocation4 = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation4[0]
   },
 ];
+
+
+
+
 
 export const ogStorageTipsPage = [
   {
     property: `og:title`,
-    content: `Storage Tips | StorageTown Rental Spaces`
+    content: storageTipsTitle
   },
   {
     property: `og:description`,
-    content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
-    make your stay with us a breeze!`
+    content: storageTipsContent
   },
   {
     property: `og:type`,
@@ -1024,31 +1022,30 @@ export const ogStorageTipsPage = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/storage-tips`
+    content: `${environment.websiteUrl}/storage-tips`
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation1[1]
   },
 ];
 
 export const twitterStorageTipsPage = [
   {
     name: `twitter:title`,
-    content: `@Storage Tips | StorageTown Rental Spaces`
+    content: `@${storageTipsTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
-    make your stay with us a breeze!`
+    content: storageTipsContent
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -1060,19 +1057,18 @@ export const twitterStorageTipsPage = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation1[0]
   },
 ];
 
 export const ogContactPage = [
   {
     property: `og:title`,
-    content: `Contact Us | StorageTown Rental Spaces`
+    content: contactPageTitle
   },
   {
     property: `og:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: contactPageContent
   },
   {
     property: `og:type`,
@@ -1080,31 +1076,30 @@ export const ogContactPage = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-us`
+    content: `${environment.websiteUrl}/contact-us`
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation1[1]
   },
 ];
 
 export const twitterContactPage = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | StorageTown Rental Spaces`
+    content: `@${contactPageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: contactPageContent
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -1116,19 +1111,18 @@ export const twitterContactPage = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content:  imageLocation1[0]
   },
 ];
 
 export const ogContactPageLocation1 = [
   {
     property: `og:title`,
-    content: `Contact Us | StorageTown Rental Spaces`
+    content: location1ContactPageTitle
   },
   {
     property: `og:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: location1ContactPageContent
   },
   {
     property: `og:type`,
@@ -1136,31 +1130,30 @@ export const ogContactPageLocation1 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-chester-brookside-ave`
+    content: `${environment.websiteUrl}/contact-${location1}`
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation1[1]
   },
 ];
 
 export const twitterContactPageLocation1 = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | StorageTown Rental Spaces`
+    content: `@${location1ContactPageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: location1ContactPageContent
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -1172,18 +1165,17 @@ export const twitterContactPageLocation1 = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation1[0]
   },
 ];
 export const ogContactPageLocation2 = [
   {
     property: `og:title`,
-    content: `Contact Us | StorageTown Rental Spaces`
+    content: `${location2ContactPageTitle}`
   },
   {
     property: `og:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: location2ContactPageContent
   },
   {
     property: `og:type`,
@@ -1191,31 +1183,30 @@ export const ogContactPageLocation2 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-chester-andrews-lane`
+    content: `${environment.websiteUrl}/contact-${location2}`
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation2[1]
   },
 ];
 
 export const twitterContactPageLocation2 = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | StorageTown Rental Spaces`
+    content: `@${location2ContactPageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: location2ContactPageContent
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -1227,18 +1218,17 @@ export const twitterContactPageLocation2 = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content:  imageLocation2[0]
   },
 ];
 export const ogContactPageLocation3 = [
   {
     property: `og:title`,
-    content: `Contact Us | StorageTown Rental Spaces`
+    content: `${location3ContactPageTitle}`
   },
   {
     property: `og:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: location3ContactPageContent
   },
   {
     property: `og:type`,
@@ -1246,31 +1236,30 @@ export const ogContactPageLocation3 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-montgomery-walden`
+    content: `${environment.websiteUrl}/contact-${location3}`
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation3[1]
   },
 ];
 
 export const twitterContactPageLocation3 = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | StorageTown Rental Spaces`
+    content: `@${location3ContactPageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: location3ContactPageContent
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -1282,18 +1271,18 @@ export const twitterContactPageLocation3 = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation3[0]
   },
 ];
+
 export const ogContactPageLocation4 = [
   {
     property: `og:title`,
-    content: `Contact Us | StorageTown Rental Spaces`
+    content: `${location4ContactPageTitle}`
   },
   {
     property: `og:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: location4ContactPageContent
   },
   {
     property: `og:type`,
@@ -1301,31 +1290,30 @@ export const ogContactPageLocation4 = [
   },
   {
     property: `og:site_name`,
-    content: `Storage Town Rental Spaces`
+    content: environment.facilityName
   },
   {
     property: `og:url`,
-    content: `https://storage-town.com/contact-middletown-wallKill`
+    content: `${environment.websiteUrl}/contact-${location4}`
   },
   {
     property: `og:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation4[1]
   },
 ];
 
 export const twitterContactPageLocation4 = [
   {
     name: `twitter:title`,
-    content: `@Contact Us | StorageTown Rental Spaces`
+    content: `@${location4ContactPageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Want to reserve a unit or find information about your account? Use our contact
-    form or the contact information for your StorageTown location on this page!`
+    content: location4ContactPageContent
   },
   {
     name: `twitter:site`,
-    content: `@StorageTown Rental Speces`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -1337,6 +1325,9 @@ export const twitterContactPageLocation4 = [
   },
   {
     name: `twitter:image`,
-    content: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Storage_Town_Images/storagetown-self-storage-andrews-lane.jpg`
+    content: imageLocation4[0]
   },
 ];
+
+
+

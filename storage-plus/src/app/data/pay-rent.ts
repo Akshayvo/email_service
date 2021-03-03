@@ -13,42 +13,47 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: 'Both Chester Locations',
-    address: 'Andrews Lane & Brookside Ave',
-    url: 'chester-brookside-ave'
+    facility: ' Foley Location',
+    address: '17860 US-98, Foley, AL 36535',
+    url: 'foley'
   },
   {
-    facility: 'Montgomery / Walden',
-    address: '130 Neelytown Rd, Montgomery, NY 12549',
-    url: 'montgomery-walden'
+    facility: 'Silverhill Location',
+    address: '15410 AL-104, Silverhill, AL 36576',
+    url: 'silverhill'
   },
   {
-    facility: 'Middletown / WallKill',
-    address: '2070 Goshen Turnpike, Middletown, NY 10941',
-    url: 'middletown-wallKill'
+    facility: 'Barnwell Location',
+    address: '8089A US-98, Fairhope, AL 36532',
+    url: 'barnwell'
+  },
+  {
+    facility: 'Belforest Location',
+    address: '11455 Co Rd 64, Daphne, AL 36526',
+    url: 'belforest'
   },
 ];
 
 export const tableDataContactPage = [
   {
-    facility: 'Chester - Brookside Ave',
-    address: '53 Brookside Ave, Chester, NY 10918',
-    url: 'chester-brookside-ave'
+    facility: ' Foley Location',
+    address: '17860 US-98, Foley, AL 36535',
+    url: 'foley'
   },
   {
-    facility: 'Chester - Andrews Lane',
-    address: '1 Andrews Lane, Chester, NY 10918',
-    url: 'chester-andrews-lane'
+    facility: 'Silverhill Location',
+    address: '15410 AL-104, Silverhill, AL 36576',
+    url: 'silverhill'
   },
   {
-    facility: 'Montgomery / Walden',
-    address: '130 Neelytown Rd, Montgomery, NY 12549',
-    url: 'montgomery-walden'
+    facility: 'Barnwell Location',
+    address: '8089A US-98, Fairhope, AL 36532',
+    url: 'barnwell'
   },
   {
-    facility: 'Middletown / WallKill',
-    address: '2070 Goshen Turnpike, Middletown, NY 10941',
-    url: 'middletown-wallKill'
+    facility: 'Belforest Location',
+    address: '11455 Co Rd 64, Daphne, AL 36526',
+    url: 'belforest'
   },
 ];
 

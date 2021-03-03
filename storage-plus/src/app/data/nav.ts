@@ -10,24 +10,24 @@ export const navLinks = [
         path: '/location',
         sublinks: [
             {
-                id: '2',
-                label: 'Chester - Brookside Ave',
-                path: '/location/chester-brookside-ave',
-            },
-            {
                 id: '1',
-                label: 'Chester - Andrews Lane',
-                path: '/location/chester-andrews-lane',
+                label: 'Baldwin County - Foley',
+                path: '/location/foley',
               },
+            {
+                id: '2',
+                label: 'Baldwin County - Silverhill',
+                path: '/location/silverhill',
+            },
               {
                 id: '3',
-                label: 'Montgomery/Walden',
-                path: '/location/montgomery-walden',
+                label: 'Baldwin County - Barnwell',
+                path: '/location/barnwell',
             },
             {
                 id: '4',
-                label: 'Middletown/WallKill',
-                path: '/location/middletown-wallKill',
+                label: 'Baldwin County - Belforest',
+                path: '/location/belforest',
             },
         ]
     },
