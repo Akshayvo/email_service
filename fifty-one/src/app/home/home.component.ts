@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2, Inject,OnDestroy } from '@angular/core';
+import { Component, OnInit, Renderer2, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contact, hours } from '../data/contact';
@@ -19,7 +19,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit {
 
   contactDetails: any;
   hours: any;
@@ -46,7 +46,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   script: any;
   testimonials: any;
 
-  private getDataSubscribe$: Subscription;
   constructor(
     private router: Router,
     private titleService: Title,
@@ -97,7 +96,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
-    this.getData();
     this.objSIMSetting = objSIMSetting;
     this.fetchContactDetails();
     this.fetchHours();
@@ -121,20 +119,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   
     return [min, max];
   }
-
-  getData() {
-    this.getDataSubscribe$ = this.fetchDataService.getData()
-      .subscribe(unitTypesResponse => {
-        this.findMinMax(unitTypesResponse.lstUnitTypes)
-
-     const min = this.findMinMax(unitTypesResponse.lstUnitTypes)[0];
-     const max= this.findMinMax(unitTypesResponse.lstUnitTypes)[1];
-
-     console.log('this.findMinMax(unitTypesResponse.lstUnitTypes)[0]', min,
-     'this.findMinMax(unitTypesResponse.lstUnitTypes)[1]', max);
-     
-      });
-    }
   
 
   public loadScript() {
@@ -208,9 +192,4 @@ export class HomeComponent implements OnInit, OnDestroy {
     return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 
-  public ngOnDestroy(): void {
-    if (this.getDataSubscribe$ && this.getDataSubscribe$.closed) {
-      this.getDataSubscribe$.unsubscribe();
-    }
-  }
 }
