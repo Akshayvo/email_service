@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '200 Piedmont Road, Charleston, WV 25301',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/VYAnqtaXQcYbq8a2A'
     },
     {
         id: 1,

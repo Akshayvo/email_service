@@ -112,7 +112,7 @@ export const homePageScript = [ {
     "telephone": script.telephone,
     
     "priceRange": "$40-$225",
-    "openingHours": openingHours,
+    "openingHours": ["Mo-Fr 09:00-17:00", "Sa 09:00-14:00"],
     "currenciesAccepted": script.currenciesAccepted,
     "paymentAccepted": script.paymentAccepted,
      "areaServed": {
