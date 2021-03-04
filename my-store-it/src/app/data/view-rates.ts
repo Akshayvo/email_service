@@ -13,7 +13,7 @@ export const dataViewRates = [
     },
 ];
 
-export const viewRatesAltText = `self storage unit door open to reveal boxes, luggage, and household items stored neatly`;
+export const viewRatesAltText = `single row of self storage unit doors under a bright blue sky.`;
 
 export const th = [
   {
