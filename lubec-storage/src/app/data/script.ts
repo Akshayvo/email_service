@@ -98,12 +98,12 @@ export const homePageScript = [ {
       "postalCode": script.postalCode,
       "addressCountry": script.addressCountry
     },
-   "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": script.ratingValue,
-      "bestRating": script.bestRating,
-      "reviewCount": script.reviewCount
-    },
+  //  "aggregateRating": {
+  //     "@type": "AggregateRating",
+  //     "ratingValue": script.ratingValue,
+  //     "bestRating": script.bestRating,
+  //     "reviewCount": script.reviewCount
+  //   },
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": script.latitude,
