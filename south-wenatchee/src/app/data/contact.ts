@@ -25,11 +25,11 @@ export const contactsLocation1 = [
 
 export const hoursLocation1 = [
     {
-        label: 'Monday - Friday: ',
+        label: 'Monday ,Wednesday, Friday: ',
         data: '1:00PM to 5:00PM'
     },
     {
-        label: 'Saturday - Sunday: ',
+        label: 'Tuesday, Thursday, Saturday, Sunday: ',
         data: 'CLOSED'
     },
     {
