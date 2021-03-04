@@ -2,7 +2,7 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Lubec Self Storage provides quality self storage options for residential, commercial, and cottage owners in Lubec, Whiting, Calais, Campbell, and the surrounding communities in Eastern Maine. Our storage units range from a closet-sized 5-foot by 5-foot that are ideal for beach supplies and boating equipment up to our 10-foot by 20-foot units that can store an entire home during a move.`,
+      p: `Lubec Self Storage provides quality self storage options for residential, commercial, and cottage owners in Lubec, Whiting, Calais, Campobello, and the surrounding communities in Eastern Maine. Our storage units range from a closet-sized 5-foot by 5-foot that are ideal for beach supplies and boating equipment up to our 10-foot by 20-foot units that can store an entire home during a move.`,
     },
     {
       p: `Local businesses love our 24-hour access policy and easy online billing. They understand how economical shifting inventory and supplies to an off-site storeroom can be compared to storing the supplies at commercial real estate pricing. You’ll have access to your equipment in a well-lit facility, so loading and unloading outside of regular business hours will never be a problem!`
