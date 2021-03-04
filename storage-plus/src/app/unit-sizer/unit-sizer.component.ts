@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { unitSizerLocation1, unitSizerLocation2,
-   unitSizerLocation3, unitSizerLocation4
+   unitSizerLocation3, unitSizerLocation4, unitSizerLocation5, unitSizerLocation6
    } from '../data/location';
 import { CanonicalService } from '../services/canonical.service';
 @Component({
@@ -35,6 +35,10 @@ export class UnitSizerComponent implements OnInit {
     this.fetchDetailsLocation3();
   } else if (this.router.url.includes('/location/belforest')) {
     this.fetchDetailsLocation4();
+  } else if (this.router.url.includes('/location/fairhope')) {
+    this.fetchDetailsLocation5();
+  } else if (this.router.url.includes('/location/robertsdale')) {
+    this.fetchDetailsLocation6();
   }
 }
 
@@ -65,5 +69,19 @@ export class UnitSizerComponent implements OnInit {
     typically fits. TIP: remember to think 'cubic', do your items just need floor space or can they stack and fit together?
     *Actual contents vary depending of the size of your belongings.`;
     this.unitSizer = unitSizerLocation4;
+  } 
+
+  public fetchDetailsLocation5() {
+    this.h2tag = 'Storage Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+    out! Still have questions? Call (251) 970-3168`;
+    this.unitSizer = unitSizerLocation5;
+  }
+
+  public fetchDetailsLocation6() {
+    this.h2tag = 'Storage Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+    out! Still have questions? Call (251) 970-3168`;
+    this.unitSizer = unitSizerLocation6;
   }
 }

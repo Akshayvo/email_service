@@ -5,10 +5,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4 } from '../../data/contact';
+import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6, } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4,
-   twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4 } from '../../data/script';
+import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4, ogPayRentPageLocation5,
+   twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4,ogPayRentPageLocation6,
+   twitterPayRentPageLocation5, twitterPayRentPageLocation6 } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -150,6 +151,18 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.contact = contactsLocation4;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
+    } else  if (this.router.url.includes('belforest')) {
+      this.id = 5;
+      this.name = 'Storage Plus of Baldwin County - Fairhope';
+      this.contact = contactsLocation5;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
+    } else  if (this.router.url.includes('belforest')) {
+      this.id = 6;
+      this.name = 'Storage Plus of Baldwin County - Robertsdale';
+      this.contact = contactsLocation6;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc6);
     }
   }
 
@@ -164,34 +177,32 @@ export class LoginComponent implements OnInit, OnDestroy {
   public fetchOg() {
     if (this.router.url.includes('foley')) {
       this.og = ogPayRentPageLocation1;
-    } else { if (this.router.url.includes('silverhill')) {
+    } else  if (this.router.url.includes('silverhill')) {
       this.og = ogPayRentPageLocation2;
-    }  else {
-        if (this.router.url.includes('barnwell')) {
-          this.og = ogPayRentPageLocation3;
-        } else {
-          if (this.router.url.includes('belforest')) {
-          this.og = ogPayRentPageLocation4;
-          }
-        }
-      }
-    }}
+    } else if (this.router.url.includes('barnwell')) {
+      this.og = ogPayRentPageLocation3;
+    } else if (this.router.url.includes('belforest')) {
+      this.og = ogPayRentPageLocation4;
+    } else if (this.router.url.includes('fairhope')) {
+      this.og = ogPayRentPageLocation5;
+    } else if (this.router.url.includes('robertsdale')) {
+      this.og = ogPayRentPageLocation6;
+    }
+    }
 
 public fetchTwitter() {
   if (this.router.url.includes('foley')) {
     this.twitter = twitterPayRentPageLocation1;
-  } else {
-    if (this.router.url.includes('silverhill')) {
+  } else if (this.router.url.includes('silverhill')) {
       this.twitter = twitterPayRentPageLocation2;
-    } else {
-      if (this.router.url.includes('barnwell')) {
+  } else if (this.router.url.includes('barnwell')) {
         this.twitter = twitterPayRentPageLocation3;
-      } else {
-        if (this.router.url.includes('belforest')) {
+  } else if (this.router.url.includes('belforest')) {
         this.twitter = twitterPayRentPageLocation4;
-        }
-      }
-    }
+  } else if (this.router.url.includes('fairhope')) {
+    this.twitter = twitterPayRentPageLocation5;
+  } else if (this.router.url.includes('robertsdale')) {
+    this.twitter = twitterPayRentPageLocation6;
   }
 }
 

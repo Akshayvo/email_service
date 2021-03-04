@@ -4,11 +4,16 @@ import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3, hoursLocation4, contactsLocation4,  } from '../data/contact';
+          hoursLocation3, hoursLocation4, contactsLocation4,
+          hoursLocation5, contactsLocation5,
+          hoursLocation6, contactsLocation6,  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3, ogContactPageLocation4, twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4 } from '../data/script';
+import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3, ogContactPageLocation4,
+  ogContactPageLocation5, ogContactPageLocation6,
+  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4,
+  twitterContactPageLocation5, twitterContactPageLocation6 } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
 @Component({
@@ -100,18 +105,16 @@ export class ContactUsComponent implements OnInit {
   public fetchOg() {
     if (this.router.url.includes('foley')) {
       this.og = ogContactPageLocation1;
-    } else {
-      if (this.router.url.includes('silverhill')) {
-        this.og = ogContactPageLocation2;
-      } else {
-        if (this.router.url.includes('barnwell')) {
-          this.og = ogContactPageLocation3;
-        } else {
-          if (this.router.url.includes('belforest')) {
-          this.og = ogContactPageLocation4;
-          }
-        }
-      }
+    } else if (this.router.url.includes('silverhill')) {
+      this.og = ogContactPageLocation2;
+    } else if (this.router.url.includes('barnwell')) {
+      this.og = ogContactPageLocation3;
+    } else if (this.router.url.includes('belforest')) {
+      this.og = ogContactPageLocation4;
+    } else if (this.router.url.includes('fairhope')) {
+      this.og = ogContactPageLocation5;
+    } else if (this.router.url.includes('robertsdale')) {
+      this.og = ogContactPageLocation6;
     }
 }
 
@@ -123,19 +126,17 @@ public fetchMetaData() {
 public fetchTwitter() {
   if (this.router.url.includes('foley')) {
     this.twitter = twitterContactPageLocation2;
-  } else {
-      if (this.router.url.includes('silverhill')) {
-        this.twitter = twitterContactPageLocation1;
-      } else {
-        if (this.router.url.includes('barnwell')) {
-          this.twitter = twitterContactPageLocation3;
-        } else {
-          if (this.router.url.includes('belforest')) {
-          this.twitter = twitterContactPageLocation4;
-          }
-        }
-      }
-    }
+  } else if (this.router.url.includes('silverhill')) {
+    this.twitter = twitterContactPageLocation1;
+  } else if (this.router.url.includes('barnwell')) {
+    this.twitter = twitterContactPageLocation3;
+  } else if (this.router.url.includes('belforest')) {
+    this.twitter = twitterContactPageLocation4;
+  } else if (this.router.url.includes('fairhope')) {
+    this.twitter = twitterContactPageLocation5;
+  } else if (this.router.url.includes('robertsdale')) {
+    this.twitter = twitterContactPageLocation6;
+  }
 }
 
   public loadScript() {
@@ -178,6 +179,10 @@ public fetchTwitter() {
       this.fetchContactDetailsLocation3();
     } else if (this.router.url.includes('belforest')) {
       this.fetchContactDetailsLocation4();
+    } else if (this.router.url.includes('fairhope')) {
+      this.fetchContactDetailsLocation5();
+    } else if (this.router.url.includes('robertsdale')) {
+      this.fetchContactDetailsLocation6();
     }
   }
 
@@ -207,6 +212,20 @@ public fetchTwitter() {
     this.locationId = '4'
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
+  } 
+
+  public fetchContactDetailsLocation5() {
+    this.heading = `Storage Plus of Baldwin County - Fairhope`;
+    this.locationId = '5'
+    this.contactDetails = contactsLocation5;
+    this.hoursDetails = hoursLocation5;
+  } 
+
+  public fetchContactDetailsLocation6() {
+    this.heading = `Storage Plus of Baldwin County - Robertsdale`;
+    this.locationId = '6'
+    this.contactDetails = contactsLocation6;
+    this.hoursDetails = hoursLocation6;
   }
 
 onSubmit() {

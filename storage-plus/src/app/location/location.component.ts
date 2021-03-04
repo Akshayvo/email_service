@@ -2,24 +2,25 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, hoursLocation3, contactsLocation3, contactsLocation4, hoursLocation4,
-          // contactsLocation3, hoursLocation3,
+          contactsLocation5, hoursLocation5, contactsLocation6, hoursLocation6,
           } from '../data/contact';
-import { tabs, tabs1, tabs2, heading3, tabs3, heading4 } from '../data/location';
-import { heading1, heading2 } from '../data/location';
+import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, heading4, heading5, heading6  } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
-import { Location1Script, Location2Script, Location3Script, Location4Script,
-  ogLocation1, ogLocation2, ogLocation3, ogLocation4, twitterLocation1,
-  twitterLocation2, twitterLocation3, twitterLocation4 } from '../data/script';
+import { Location1Script, Location2Script, Location3Script, Location4Script, Location5Script, Location6Script,
+  ogLocation1, ogLocation2, ogLocation3, ogLocation4, ogLocation5, ogLocation6, twitterLocation1,
+  twitterLocation2, twitterLocation3, twitterLocation4, twitterLocation5, twitterLocation6 } from '../data/script';
 import { featuresHead, featuresList, location1FeaturesHead, location2FeaturesHead,
-  location3FeaturesHead, location4FeaturesHead } from '../data/home';
+  location3FeaturesHead, location4FeaturesHead,location5FeaturesHead,location6FeaturesHead } from '../data/home';
 import { UaParserService } from '../services/ua-parser.service';
 import { location1PageContent, location1PageTitle,
         location2PageContent, location2PageTitle,
         location3PageContent, location3PageTitle,
-        location4PageContent, location4PageTitle} from '../data/title';
+        location4PageContent, location4PageTitle,
+        location5PageContent, location5PageTitle,
+        location6PageContent, location6PageTitle} from '../data/title';
 
 
 @Component({
@@ -53,6 +54,10 @@ export class LocationComponent implements OnInit {
   location3PageTitle: any;
   location4PageContent: any;
   location4PageTitle: any;
+  location5PageContent: any;
+  location5PageTitle: any;
+  location6PageContent: any;
+  location6PageTitle: any;
 
 
 
@@ -98,7 +103,7 @@ export class LocationComponent implements OnInit {
             this.locationName = `Storage Plus of Baldwin County - Foley Location`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
-            this.script = Location2Script;
+            this.script = Location1Script;
             this.loadScript();
             this.og.forEach(element => {
               this.meta.addTag({
@@ -122,7 +127,7 @@ export class LocationComponent implements OnInit {
            this.locationName = `Storage Plus of Baldwin County - Silverhill Location`;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
            this.dataSharingService.locationName = this.locationName;
-           this.script = Location1Script;
+           this.script = Location2Script;
            this.loadScript();
            this.og.forEach(element => {
             this.meta.addTag({
@@ -185,7 +190,55 @@ export class LocationComponent implements OnInit {
         content: element.content
       })
     });
-  }
+  } else if (this.router.url.includes('/location/fairhope')) {
+    this.meta.addTag({
+      name: 'description',
+      content: `${this.location5PageContent}`
+});
+this.titleService.setTitle(`${this.location5PageTitle}`);
+    this.locationName = `Storage Plus of Baldwin County - Fairhope`;
+    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
+    this.dataSharingService.locationName = this.locationName;
+    this.script = Location5Script;
+    this.loadScript();
+    this.og.forEach(element => {
+     this.meta.addTag({
+       property: element.property,
+       content: element.content
+     })
+   });
+
+   this.twitter.forEach(element => {
+     this.meta.addTag({
+       name: element.name,
+       content: element.content
+     })
+   });
+} else if (this.router.url.includes('/location/robertsdale')) {
+  this.meta.addTag({
+    name: 'description',
+    content: `${this.location6PageContent}`
+});
+this.titleService.setTitle(`${this.location6PageTitle}`);
+  this.locationName = `Storage Plus of Baldwin County - Robertsdale`;
+  this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
+  this.dataSharingService.locationName = this.locationName;
+  this.script = Location6Script;
+  this.loadScript();
+  this.og.forEach(element => {
+   this.meta.addTag({
+     property: element.property,
+     content: element.content
+   })
+ });
+
+ this.twitter.forEach(element => {
+   this.meta.addTag({
+     name: element.name,
+     content: element.content
+   })
+ });
+}
 }
 
   ngOnInit() {
@@ -218,6 +271,10 @@ export class LocationComponent implements OnInit {
     this.location3PageContent = location3PageContent;
     this.location4PageTitle = location4PageTitle;
     this.location4PageContent = location4PageContent;
+    this.location5PageTitle = location5PageTitle;
+    this.location5PageContent = location5PageContent;
+    this.location6PageTitle = location6PageTitle;
+    this.location6PageContent = location6PageContent;
   }
 
   public fetchFeatureHead() {
@@ -234,6 +291,10 @@ export class LocationComponent implements OnInit {
     this.og = ogLocation3;
   } else if (this.router.url.includes('/location/belforest')) {
     this.og = ogLocation4;
+  } else if (this.router.url.includes('/location/fairhope')) {
+    this.og = ogLocation5;
+  } else if (this.router.url.includes('/location/robertsdale')) {
+    this.og = ogLocation6;
   }
   }
 
@@ -246,6 +307,10 @@ export class LocationComponent implements OnInit {
     this.twitter = twitterLocation3;
   } else if (this.router.url.includes('/location/belforest')) {
     this.twitter = twitterLocation4;
+  } else if (this.router.url.includes('/location/fairhope')) {
+    this.twitter = twitterLocation5;
+  } else if (this.router.url.includes('/location/robertsdale')) {
+    this.twitter = twitterLocation6;
   }
   }
 
@@ -258,6 +323,10 @@ export class LocationComponent implements OnInit {
       this.fetchDetailsLocation3();
     } else if (this.router.url.includes('/location/belforest')) {
       this.fetchDetailsLocation4();
+    } else if (this.router.url.includes('/location/fairhope')) {
+      this.fetchDetailsLocation5();
+    } else if (this.router.url.includes('/location/robertsdale')) {
+      this.fetchDetailsLocation6();
     }
  }
 
@@ -274,11 +343,17 @@ export class LocationComponent implements OnInit {
   }  else if ( this.locationId === 4 ) {
     this.router.navigate(['/location/belforest/reserve-unit'],
           );
+  } else if ( this.locationId === 5 ) {
+    this.router.navigate(['/location/fairhope/reserve-unit'],
+          );
+  } else if ( this.locationId === 6 ) {
+    this.router.navigate(['/location/robertsdale/reserve-unit'],
+          );
   }
  }
 
   public fetchDetailsLocation1() {
-      this.name = heading2;
+      this.name = heading1;
       this.locationId = 1;
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
@@ -287,7 +362,7 @@ export class LocationComponent implements OnInit {
     }
 
    public fetchDetailsLocation2() {
-     this.name = heading1;
+     this.name = heading2;
      this.locationId = 2;
      this.contacts = contactsLocation2;
      this.hours = hoursLocation2;
@@ -311,5 +386,23 @@ export class LocationComponent implements OnInit {
     this.hours = hoursLocation4;
     this.tabs = tabs3;
     this.features = location4FeaturesHead;
+  }
+
+  public fetchDetailsLocation5() {
+    this.name = heading5;
+    this.locationId = 5;
+    this.contacts = contactsLocation5;
+    this.hours = hoursLocation5;
+    this.tabs = tabs3;
+    this.features = location5FeaturesHead;
+  }
+
+  public fetchDetailsLocation6() {
+    this.name = heading6;
+    this.locationId = 6;
+    this.contacts = contactsLocation6;
+    this.hours = hoursLocation6;
+    this.tabs = tabs3;
+    this.features = location6FeaturesHead;
   }
 }

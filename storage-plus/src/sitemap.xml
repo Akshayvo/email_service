@@ -9,6 +9,14 @@
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
+    <loc> https://storage-plus-staging.netlify.app/location/robertsdale/reserve-unit </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://storage-plus-staging.netlify.app/location/fairhope/reserve-unit </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
     <loc> https://storage-plus-staging.netlify.app/storage-tips </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -32,6 +40,18 @@
   </url>
   <url>
     <loc> 
+      https://storage-plus-staging.netlify.app/location/fairhope
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://storage-plus-staging.netlify.app/location/robertsdale
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
       https://storage-plus-staging.netlify.app/location/silverhill/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
@@ -45,6 +65,18 @@
   <url>
     <loc> 
       https://storage-plus-staging.netlify.app/location/foley
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://storage-plus-staging.netlify.app/location/fairhope
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://storage-plus-staging.netlify.app/location/robertsdale
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -73,6 +105,18 @@
   <url>
     <loc> 
       https://storage-plus-staging.netlify.app/location/foley/storage-units
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://storage-plus-staging.netlify.app/location/fairhope/storage-units
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://storage-plus-staging.netlify.app/location/robertsdale/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -109,6 +153,18 @@
   <url>
     <loc>
       https://storage-plus-staging.netlify.app/contact-foley
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>
+      https://storage-plus-staging.netlify.app/contact-fairhope
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>
+      https://storage-plus-staging.netlify.app/contact-robertsdale
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>

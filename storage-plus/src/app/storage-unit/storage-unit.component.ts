@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { headingLocation1, headingLocation2, headingLocation3,
-  headingLocation4 } from '../data/location';
+  headingLocation4,  headingLocation5,  headingLocation6, } from '../data/location';
 import { CanonicalService } from '../services/canonical.service';
 
 @Component({
@@ -39,6 +39,12 @@ export class StorageUnitComponent implements OnInit {
     } else if (this.router.url.includes('/location/belforest')) {
       this.id = 4;
       this.heading = headingLocation4;
+    } else if (this.router.url.includes('/location/fairhope')) {
+      this.id = 5;
+      this.heading = headingLocation5;
+    } else if (this.router.url.includes('/location/robertsdale')) {
+      this.id = 6;
+      this.heading = headingLocation6;
     }
   }
 }

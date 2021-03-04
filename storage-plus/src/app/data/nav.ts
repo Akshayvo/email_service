@@ -11,23 +11,33 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Baldwin County - Foley',
+                label: 'Foley',
                 path: '/location/foley',
               },
             {
                 id: '2',
-                label: 'Baldwin County - Silverhill',
+                label: 'Silverhill',
                 path: '/location/silverhill',
             },
               {
                 id: '3',
-                label: 'Baldwin County - Barnwell',
+                label: 'Barnwell',
                 path: '/location/barnwell',
             },
             {
                 id: '4',
-                label: 'Baldwin County - Belforest',
+                label: 'Belforest',
                 path: '/location/belforest',
+            },
+            {
+                id: '5',
+                label: 'Fairhope',
+                path: '/location/fairhope',
+            },
+            {
+                id: '6',
+                label: 'Robertsdale',
+                path: '/location/robertsdale',
             },
         ]
     },

@@ -13,6 +13,12 @@ export const location3PageContent = `Our Barnwell location offers a number of re
 export const location4PageTitle = `Belforest Location | Storage Plus of Baldwin County`;
 export const location4PageContent = `Our Belforest location offers a number of affordable regular and climate controlled self storage units, perfect for any self storage project!`;
 
+export const location5PageTitle = `Fairhope Location  | Storage Plus of Baldwin County`;
+export const location5PageContent = `Our Fairhope location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+
+export const location6PageTitle = `Robertsdale | Storage Plus of Baldwin County`;
+export const location6PageContent = `Our Robertsdale location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+
 export const viewRatesPageTitle = ``;
 export const viewRatesPageContent = ``;
 
@@ -54,6 +60,12 @@ export const location3PayrentPageContent = `Follow the instructions on this page
 export const location4PayrentPageTitle = `Belfast Location Pay Rent | Storage Plus of Baldwin County`;
 export const location4PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
 
+export const location5PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
+export const location5PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+
+export const location6PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
+export const location6PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+
 
 
 export const location1ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
@@ -67,5 +79,11 @@ export const location3ContactPageContent = `Have questions about your account wi
 
 export const location4ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
 export const location4ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+
+export const location5ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
+export const location5ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+
+export const location6ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
+export const location6ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
 
 

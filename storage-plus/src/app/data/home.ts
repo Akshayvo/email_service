@@ -1,7 +1,7 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: '4 Convenient Locations',
+        label: '6 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -46,7 +46,7 @@ export const location1FeaturesHead = [
 ];
 export const location2FeaturesHead = [
     {
-        label: '4 Convenient Locations',
+        label: '6 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -68,7 +68,7 @@ export const location2FeaturesHead = [
 ];
 export const location3FeaturesHead = [
     {
-        label: '4 Convenient Locations',
+        label: '6 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -91,7 +91,7 @@ export const location3FeaturesHead = [
 
 export const location4FeaturesHead = [
     {
-        label: '4 Convenient Locations',
+        label: '6 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -104,6 +104,52 @@ export const location4FeaturesHead = [
         label: 'Stellar Customer Service',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
         alt: 'Customer Service Representative Icon'
+    },
+    {
+        label: 'Well-Lit Facility',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+        alt: 'Icon of an illuminated light'
+    },
+];
+
+export const location5FeaturesHead = [
+    {
+        label: '6 Convenient Locations',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+        alt: 'Icon art displaying a location pin'
+    },
+    {
+        label: '24 Hour Facility Access',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+        alt: 'Icon art displaying clock hands and the number 24'
+    },
+    {
+        label: 'Stellar Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Customer Service Representative Icon'
+    },
+    {
+        label: 'Well-Lit Facility',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+        alt: 'Icon of an illuminated light'
+    },
+];
+
+export const location6FeaturesHead = [
+    {
+        label: '6 Convenient Locations',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+        alt: 'Icon art displaying a location pin'
+    },
+    {
+        label: 'Online Reservation & Bill Pay',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+        alt: 'Icon art displaying a screen with cursor'
+    },
+    {
+        label: '24 Hour Facility Access',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+        alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         label: 'Well-Lit Facility',
@@ -156,7 +202,7 @@ export const featuresList = [
 
 export const jumbotron = [
     {
-        h2: `Self Storage Units in Wenatchee`,
+        h2: `Affordable Self Storage Units in Baldwin County`,
         blurb: `Storage Plus of Baldwin County serves the communities of Baldwin County with 6 locally owned
         self storage and vehicle parking facilities. We offer affordable self storage units in a variety of
         sizes including climate controlled varieties. Take a moment to review our pricing and storage unit
