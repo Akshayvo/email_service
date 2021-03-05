@@ -5,6 +5,16 @@
   padding-top: 90px;
 }
 
+.jumbotorn-button {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+
 .feature-block {
   h2 {
     line-height: 1.5rem;
@@ -81,8 +91,9 @@
 .img-box-1-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/webp/leos-self-storage-location.webp");
   background-size: cover;
-  height: 481px;
+  height: 550px;
   background-position: center right;
+  position: relative;
 }
 
 .img-box-2-jpg {
@@ -96,6 +107,7 @@
   background-size: cover;
   height: 390px;
   background-position: center right;
+  position: relative;
 }
 
 

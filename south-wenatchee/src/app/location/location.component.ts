@@ -200,4 +200,9 @@ export class LocationComponent implements OnInit {
      this.hours = hoursLocation2;
      this.tabs = tabs;
    }
+   public scroll(el: any) {
+    el.scrollIntoView();
+}
+
+
 }

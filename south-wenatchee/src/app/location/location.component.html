@@ -16,11 +16,17 @@
         <div class="contact-img">
             <span *ngIf="locationId == 1" title="Aerial Photograph of self storage units surrounded by a fence."> 
               <div [ngClass]="imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'">
+                <div class="jumbotorn-button">
+                  <a class="btn btn-lg btn-primary" (click)="scroll(target)">Click To See Available Units</a>   
+                  </div>
               </div>
               <!-- <div class="alarm text-center py-3">Doors at this location are alarmed</div> -->
             </span>
             <span *ngIf="locationId == 2" title="Aerial photograph of self storage facility with recreational vehicles and boats parked next to the buildings"> 
               <div [ngClass]="imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'">
+                <div class="jumbotorn-button">
+                  <a class="btn btn-lg btn-primary" (click)="scroll(target)">Click To See Available Units</a>   
+                  </div>
               </div>
               
             </span>
@@ -64,8 +70,8 @@
 </section>
 
 <section class="sub-components">
-  <div class="container feature-block mt-3">
-    <div class="row">
+  <div class="container feature-block mt-3" >
+    <div class="row" >
       <div class="col-md-3 col-6 p-3" *ngFor= "let feature of features">
         <p class="text-center f-block-img"> 
           <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
@@ -76,8 +82,8 @@
       </div>
     </div>
   </div>
-  <div  class="container px-0 pt-2 mt-3">
-      <app-tabs [tabs]='tabs' [name]='name' class="sub-component-background" [currentActiveTab]='currentTab' ></app-tabs>
+  <div  class="container px-0 pt-2 mt-3" #target>
+      <app-tabs [tabs]='tabs' [name]='name' class="sub-component-background" [currentActiveTab]='currentTab'></app-tabs>
   </div>
 </section>
 
