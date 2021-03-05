@@ -33,7 +33,7 @@ import { OnInit, Component, Input, Output  } from '@angular/core';
 const contactIndex = contact.findIndex(x => x.label === 'Phone:');
 const emailIndex = contact.findIndex(x => x.label === 'Email:');
 const sameAs = [];
-const openingHours = ['Mo,Tu,We,Th,Fr 9:00 - 16:00'];
+const openingHours = ["Mo-Fr 09:00-16:00"];
 const amenityFeature = [];
 // hours.forEach(hour =>
 //   openingHours.push(hour.label + hour.data)
