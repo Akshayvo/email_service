@@ -46,7 +46,7 @@ export const script = {               // Please fill this script according to fa
      reviewCount: "294",
      latitude: 29.736191502510405,
      longitude: -98.08446945769116,
-     openingHours: [],
+     openingHours: ["Mo-Sa 08:30-17:30"],
      priceRange: ''
 };
 
