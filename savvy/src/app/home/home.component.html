@@ -38,7 +38,7 @@
       <div class="section py-4 m-0">
         <div class="row">
           <div class="col-lg-6 py-3 home-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11455.173927477395!2d-103.0518372!3d44.1288817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x98717d2cd5adeb0d!2sSavvy%20Storage!5e0!3m2!1sen!2sus!4v1606687022264!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11455.173927477395!2d-103.0518372!3d44.1288817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x98717d2cd5adeb0d!2sSavvy%20Storage!5e0!3m2!1sen!2sus!4v1606687022264!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener"></iframe> 
           </div>
 
           <div class="col-lg-6 py-3">
@@ -46,7 +46,7 @@
               
               <p>
                 <span *ngFor="let contact of contactDetails" class="display-contact">
-                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' || contact?.label === 'Address:' else other_content">
                     <h4><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></h4>
                   </span>
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>

@@ -4,6 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '560 Liberty Blvd, Box Elder, SD 57719',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: 'https://goo.gl/maps/kBeF59GMAJeEhfsV9'
     },
     {
         id: 1,
