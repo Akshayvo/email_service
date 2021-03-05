@@ -25,12 +25,12 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Access_Self_Storage/JPG/access-self-storage-office-homepage-1.jpg",
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Access_Self_Storage/JPG/access-self-storage-office-homepage-1.jpg",
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Access_Self_Storage/JPG/access-self-storage-office-homepage-1.jpg"
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Access_Self_Storage/JPG/access-self-storage-office-homepage-11.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Access_Self_Storage/JPG/access-self-storage-office-homepage-1%20%281%29.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Access_Self_Storage/JPG/access-self-storage-office-homepage-1%20%282%29.jpg"
      ],
      telephone: contact[contactIndex].data,
-     map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
+     map: "https://g.page/accessselfstoragenewbraunfels",
      description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
      streetAddress: "148 W 51st St",
      state: "New York",
@@ -41,11 +41,11 @@ export const script = {               // Please fill this script according to fa
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
      currenciesAccepted: "EUR",
-     ratingValue: "4",
+     ratingValue: "5",
      bestRating: "5",
-     reviewCount: "250",
-     latitude: 40.761293,
-     longitude: -73.982294,
+     reviewCount: "294",
+     latitude: 29.736191502510405,
+     longitude: -98.08446945769116,
      openingHours: [],
      priceRange: ''
 };

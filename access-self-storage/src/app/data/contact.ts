@@ -42,9 +42,9 @@ export const socialLinks = [
     //     path: '',
     //     class: 'fab fa-twitter-square',
     // },
-    // {
-    //     label: 'facebook',
-    //     path: '',
-    //     class: 'fab fa-facebook-square',
-    // },
+    {
+        label: 'facebook',
+        path: 'https://www.facebook.com/accessselfstoragenb',
+        class: 'fab fa-facebook-square',
+    },
 ];
