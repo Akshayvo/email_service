@@ -85,7 +85,7 @@
 .img-box-1-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-location.jpg");
   background-size: cover;
-  height: 481px;
+  height: 550px;
   background-position: center right;
 }
 .img-box-1-webp {
@@ -269,7 +269,7 @@
   }
 
   .btn {
-    width: 30%;
+    width: 250px;
     margin-left: 5px;
   }
 
@@ -347,7 +347,10 @@
   .sub-components {
     padding: 0 16px;
   }
+
+
 }
+
 
 // @media only screen and (max-width: 600px) and (min-width: 576px) {
 //   .contact-details {
@@ -377,5 +380,21 @@
       font-size: 1rem;
       line-height: 1.5rem;
     }
+
   }
+
+
+  .btn{
+    width:100px;
+  }
+  
+}
+
+@media only screen and (max-width: 429px) {
+
+    .btn{
+      width:250px;
+    }
+
+
 }
