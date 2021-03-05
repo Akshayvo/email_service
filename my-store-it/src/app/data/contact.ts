@@ -9,10 +9,10 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'concretesawcutters@icloud.com',
+        data: 'mystoreitspace@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        email: 'concretesawcutters@icloud.com',
-        redirect: 'mailto:`concretesawcutters@icloud.com`'
+        email: 'mystoreitspace@gmail.com',
+        redirect: 'mailto:`mystoreitspace@gmail.com`'
     },
     {
         id: 2,

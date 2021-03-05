@@ -13,7 +13,7 @@ export const featuresList = [
     },
 ];
 
-export const aboutUsAlt = `self storage unit door open to reveal boxes, luggage, and household items stored neatly`;
+export const aboutUsAlt = `single row of self storage unit doors under a bright blue sky.`;
 
 export const aboutUsHeading = `Affordable Self Storage Units in Dundee, MI`;
 

@@ -50,15 +50,15 @@ socialLinks.forEach(links => {
 }
 );
   
-export const ogGraphImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/My-Store-It_Space/my-store-it-self-storage-43.jpg` // 4:3
+export const ogGraphImage = `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/My-Store-It_Space/jpg/my-store-it-space-43.jpg` // 4:3
 
-export const twitterImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/My-Store-It_Space/my-store-it-self-storage-11.jpg` // 1:1
+export const twitterImage = `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/My-Store-It_Space/jpg/my-store-it-space-11.jpg` // 1:1
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/My-Store-It_Space/my-store-it-self-storage-11.jpg', // 1:1
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/My-Store-It_Space/my-store-it-self-storage-43.jpg', // 4:3
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/My-Store-It_Space/my-store-it-self-storage-169.jpg' // 16:9
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/My-Store-It_Space/jpg/my-store-it-space-11.jpg', // 1:1
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/My-Store-It_Space/jpg/my-store-it-space-43.jpg', // 4:3
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/My-Store-It_Space/jpg/my-store-it-space-169.jpg' // 16:9
      ],
      imagesContactPage: [
       'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/My-Store-It_Space/my-store-it-self-storage-11.jpg',
