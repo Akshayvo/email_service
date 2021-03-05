@@ -38,6 +38,8 @@ export class LocationComponent implements OnInit {
   features: any;
   imageBaseUrl: any;
   imagetype: any;
+  load = true;
+  onLoad:any;
 
 
   constructor(
@@ -128,6 +130,8 @@ export class LocationComponent implements OnInit {
   ngOnInit() {
     this.fetchFeatureHead();
     window.scrollTo(0, 0);
+    this.load = this.onLoad
+    console.log(this.load)
     this.isSomePage();
     this.fetchFeatures();
   }
@@ -148,6 +152,7 @@ export class LocationComponent implements OnInit {
 
   public fetchFeatureHead() {
     this.features = featuresSouthWenatchee;
+    
   }
 
   
@@ -179,9 +184,11 @@ export class LocationComponent implements OnInit {
   if ( this.locationId === 1 ) {
     this.router.navigate(['/wa/south-wenatchee/reserve-unit'],
           );
+    this.onLoad = true;
   } else if ( this.locationId === 2 ) {
     this.router.navigate(['/wa/leos-self-storage/reserve-unit'],
           );
+    this.onLoad = true;
   }  
  }
 

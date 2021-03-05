@@ -17,7 +17,6 @@ export class DataSharingService {
 //     loc3: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
 //     loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
 //   };
-
   locationName: string;
   strConfirmation: string;
   strAccessCode: string;
