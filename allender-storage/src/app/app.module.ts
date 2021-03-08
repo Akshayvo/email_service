@@ -58,6 +58,7 @@ import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
+import { ViewRatesPhotosComponent } from './view-rates-photos/view-rates-photos.component';
 
 @NgModule({
   declarations: [
@@ -91,6 +92,7 @@ import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-co
     UnitSizerComponent,
     UnitSizesComponent,
     PhotosComponent,
+    ViewRatesPhotosComponent,
     ScriptHackComponent,
     AutoPayComponent,
     RentSubComponent,
