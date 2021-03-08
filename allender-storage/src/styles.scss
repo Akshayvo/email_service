@@ -34,7 +34,8 @@ $primaryDark: #b15213;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
-$secondary: #085b96;
+$secondary: #2780ac;
+$secondaryDark : #1d678b;
 
 $dark: #333;
 $light: #efefef;
@@ -64,7 +65,7 @@ body {
 }
 
 .bg-primary{
-  background: #f47521!important;
+  background: #ffffff!important;
 }
 
 
@@ -91,8 +92,8 @@ body {
 }
 
 .btn-primary {
-  background-color: $primary !important;
-  border-color: $primary !important;
+  background-color: $secondary !important;
+  border-color: $secondary !important;
   color: $white !important;
   min-width: 200px;
 }
@@ -100,14 +101,14 @@ body {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: $primaryDark !important;
-  border-color: $primaryDark !important;
+  background-color: $secondaryDark !important;
+  border-color: $secondaryDark !important;
 }
 
 .btn-outline-primary {
   background-color: transparent;
-  border-color: $primary !important;
-  border: 2px solid $primary !important;
+  border-color: $secondary !important;
+  border: 2px solid $secondary !important;
   min-width: 200px;
   color: $white !important;
 }
@@ -115,8 +116,8 @@ body {
 .btn-outline-primary:hover,
 .btn-outline-primary:focus,
 .btn-outline-primary:active {
-  background-color: $primaryDark !important;
-  border-color: $primaryDark !important;
+  background-color: $secondaryDark !important;
+  border-color: $secondaryDark !important;
 }
 
 .section-headings {

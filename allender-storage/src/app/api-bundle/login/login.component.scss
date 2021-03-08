@@ -6,6 +6,9 @@
   padding-left: 50px;
 }
 
+.alert-text {
+  color: rgb(235, 8, 8);
+}
 
 .display-none {
   display: none;
@@ -26,7 +29,7 @@
 
 .forgot-link {
   a {
-    color: $primary;
+    color: $secondary;
     text-decoration: underline;
     cursor: pointer;
   }
@@ -34,7 +37,7 @@
 
 .loader {
   border: 5px solid #f3f3f3;
-  border-top: 5px solid $primary;
+  border-top: 5px solid $secondary;
   border-radius: 50%;
   width: 80px;
   height: 80px;

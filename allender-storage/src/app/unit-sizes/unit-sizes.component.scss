@@ -21,7 +21,7 @@ h1 {
     }
 
     .active-unit {
-      color: $primary;
+      color: $secondary;
       font-size: 1.2rem;
       font-weight: 900;
     }
@@ -62,7 +62,7 @@ h1 {
 
     li::before {
       content: "• ";
-      color: $primary;
+      color: $secondary;
       padding-right: 10px;
     }
   }
@@ -70,7 +70,7 @@ h1 {
 
 
 .active-unit-border {
-  background-color: $primary;
+  background-color: $secondary;
   // height: 300px;
 }
 
@@ -95,7 +95,7 @@ h1 {
 
   .unit-dimention {
     .active-unit {
-      color: $primary;
+      color: $secondary;
       font-size: 1.1rem;
     }
   }
@@ -111,7 +111,7 @@ h1 {
     display: block;
 
     .active-unit {
-      color: $primary;
+      color: $secondary;
       font-size: 1.4rem;
     }
   }
@@ -122,9 +122,9 @@ h1 {
     }
   }
 
-  .unit-sizer-box {
-    // padding: 16px;
-  }
+  // .unit-sizer-box {
+  //   // padding: 16px;
+  // }
 
   .col-1 {
     img {
@@ -151,9 +151,9 @@ h1 {
   }
 
   .unit-sizer-container {
-    .unit-sizer-box {
-      // padding: 16px;
-    }
+    // .unit-sizer-box {
+    //   // padding: 16px;
+    // }
 
     .col-3 {
       img {
