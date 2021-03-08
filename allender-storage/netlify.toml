@@ -27,60 +27,60 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
-  from = "/https://www.allenderstorage.com/self-storage-white-marsh-md-88825"
-  to = "/https://www.allenderstorage.com/"
+  from = "/self-storage-white-marsh-md-88825"
+  to = "/"
   status = 301
 [[redirects]]
-  from = "/https://www.allenderstorage.com/self-storage-calculator"
-  to = "/https://www.allenderstorage.com/"
+  from = "/self-storage-calculator"
+  to = "/"
   status = 301
 [[redirects]]
-  from = "/https://www.allenderstorage.com/about"
-  to = "/https://www.allenderstorage.com/"
+  from = "/about"
+  to = "/"
   status = 301
 [[redirects]]
-  from = "/https://www.allenderstorage.com/info/terms-and-conditions"
-  to = "/https://www.allenderstorage.com/terms-and-conditions"
+  from = "/info/terms-and-conditions"
+  to = "/terms-and-conditions"
   status = 301
 [[redirects]]
-  from = "/https://www.allenderstorage.com/self-storage-white-marsh-md-88825/payonline"
-  to = "/https://www.allenderstorage.com/pay-rent"
+  from = "/self-storage-white-marsh-md-88825/payonline"
+  to = "/pay-rent"
   status = 301
 [[redirects]]
-  from = "/https://allenderstorage.com/payonline"
-  to = "/https://allenderstorage.com/pay-rent/rent-sub/login"
+  from = "/payonline"
+  to = "/pay-rent/rent-sub/login"
   status = 301
 [[redirects]]
-  from = "/https://allenderstorage.com/about"
-  to = "/https://www.allenderstorage.com"
+  from = "/about"
+  to = "/"
   status = 301
 [[redirects]]
-  from = "/https://allenderstorage.com/self-storage-white-marsh-md-88825/reviews"
-  to = "/https://www.allenderstorage.com"
+  from = "/reviews"
+  to = "/"
   status = 301
 [[redirects]]
-  from = "/https://allenderstorage.com/news"
-  to = "/https://www.allenderstorage.com"
+  from = "/news"
+  to = "/"
   status = 301
 [[redirects]]
-  from = "/https://allenderstorage.com/privacy"
-  to = "/https://allenderstorage.com/privacy-policy"
+  from = "/privacy"
+  to = "/privacy-policy"
   status = 301
 [[redirects]]
-  from = "/https://allenderstorage.com/terms"
-  to = "/https://www.allenderstorage.com/terms-and-conditions"
+  from = "/terms"
+  to = "/terms-and-conditions"
   status = 301
 [[redirects]]
-  from = "/https://allenderstorage.com/about/covid-19-coronavirus-notice-0"
-  to = "/https://www.allenderstorage.com"
+  from = "/about/covid-19-coronavirus-notice-0"
+  to = "/"
   status = 301
 [[redirects]]
-  from = "/https://allenderstorage.com/self-storage/white-marsh-md-88825/reviews"
-  to = "/https://www.allenderstorage.com"
+  from = "self-storage/white-marsh-md-88825/reviews"
+  to = "/"
   status = 301
 [[redirects]]
-  from = "/https://allenderstorage.com/self-storage-white-marsh-md-88825/payonline"
-  to = "/https://allenderstorage.com/pay-rent/rent-sub/login"
+  from = "/self-storage-white-marsh-md-88825/payonline"
+  to = "/pay-rent/rent-sub/login"
   status = 301
 [[redirects]]
   from = "/*"
