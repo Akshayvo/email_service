@@ -638,26 +638,26 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
   this.makeAReservationSubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
     .subscribe(strConfirmationResponse => {
-      this.strConfirmation = strConfirmationResponse.strConfirmation;
-      this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
-      this.showConfirmation = false;
-      this.dataSharingService.eventName = 'reservation';
-      this.makePaymentForUnit = false;
-      this.submitted = false;
-       this.tokenExit = localStorage.getItem('strTenantToken');
-
-       if (this.tokenExit) {
-         this.tenantTokenExist = true;
-       }
-
-      this.existTempToken = localStorage.getItem('strTempTenantToken');
-
-      if (this.existTempToken) {
-        localStorage.removeItem('strTempTenantToken');
-        this.tokenRemoved = true;
+      if (strConfirmationResponse.intErrorCode === 1) {
+        this.strConfirmation = strConfirmationResponse.strConfirmation;
+        this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
+        this.showConfirmation = false;
+        this.dataSharingService.eventName = 'reservation';
+        this.makePaymentForUnit = false;
+        this.submitted = false;
+         this.tokenExit = localStorage.getItem('strTenantToken');
+  
+         if (this.tokenExit) {
+           this.tenantTokenExist = true;
+         }
+    
+        if (!!localStorage.getItem('strTempTenantToken')) {
+          localStorage.removeItem('strTempTenantToken');
+        }
+        this.router.navigate([`view-rates/thank-you`]);
+        this.reservationInProgress = false;
+       
       }
-      this.router.navigate([`view-rates/thank-you`]);
-      this.reservationInProgress = false;
     }, (err: any) => {
       this.makePaymentForUnit = false;
 
@@ -686,22 +686,22 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.MoveIn.dteMoveIn = this.convertDate(new Date());
     this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
       .subscribe(strConfirmationResponse => {
-        this.strAccessCode = strConfirmationResponse.strAccessCode;
-        this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
-        this.dataSharingService.eventName = 'MoveIn';
-        this.makePaymentForUnit = false;
-        this.submitted = false;
-         this.tokenExit = localStorage.getItem('strTenantToken');
-         if (this.tokenExit) {
-           this.tenantTokenExist = true;
-         }
-        this.existTempToken = localStorage.getItem('strTempTenantToken');
-        if (this.existTempToken) {
-          localStorage.removeItem('strTempTenantToken');
-          this.tokenRemoved = true;
+        if (strConfirmationResponse.intErrorCode === 1 ) {
+          this.strAccessCode = strConfirmationResponse.strAccessCode;
+          this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
+          this.dataSharingService.eventName = 'MoveIn';
+          this.makePaymentForUnit = false;
+          this.submitted = false;
+           this.tokenExit = localStorage.getItem('strTenantToken');
+           if (this.tokenExit) {
+             this.tenantTokenExist = true;
+           }
+           if (!!localStorage.getItem('strTempTenantToken')) {
+            localStorage.removeItem('strTempTenantToken');
+          }
+          this.router.navigate([`view-rates/thank-you`]);
+          this.reservationInProgress = false;
         }
-        this.router.navigate([`view-rates/thank-you`]);
-        this.reservationInProgress = false;
       }, (err: any) => {
         this.makePaymentForUnit = false;
 
