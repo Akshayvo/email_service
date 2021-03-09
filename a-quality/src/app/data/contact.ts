@@ -24,9 +24,9 @@ export const contactsLocation1 = [
     {
         id: 3,
         label: 'Phone: ',
-        data: '(281) 889-1732',
+        data: '(281) 838-9746',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2818891732'
+        redirect: 'tel:(281) 838-9746'
     },
 ];
 
@@ -67,9 +67,9 @@ export const contactsLocation2 = [
     {
         id: 3,
         label: 'Phone: ',
-        data: '(281) 889-1732',
+        data: '(281) 838-9746',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2818891732'
+        redirect: 'tel:(281) 838-9746'
     },
 ];
 

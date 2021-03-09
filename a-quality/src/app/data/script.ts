@@ -18,7 +18,7 @@ export const homePageScript = [
 'address': {'@type': 'PostalAddress',
 'addressRegion': ' Pasadena, Texas '},
 
-'telephone': ' (281) 889-1732',
+'telephone': '(281) 838-9746',
 
 'email': 'aqualitystoragetx@gmail.com',
 
@@ -40,7 +40,7 @@ export const homePageScript = [
 
 'image': ' https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/jpg/storage-units.jpg',
 
-'telephone': ' (281) 889-1732',
+'telephone': '(281) 838-9746',
 
 'email': 'aqualitystoragetx@gmail.com',
 
@@ -85,7 +85,7 @@ export const homePageScript = [
 
 'image': ' https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/jpg/storage-units.jpg',
 
-'telephone': ' (281) 889-1732',
+'telephone': '(281) 838-9746',
 
 'email': 'aqualitystoragetx@gmail.com',
 
@@ -157,7 +157,7 @@ export const Location1Script = {
 {'@type': 'LocationFeatureSpecification', 'name': 'Electric Monitored Gate'}, {'@type': 'LocationFeatureSpecification', 'name': 'Well-lit Storage Units'}, {'@type': 'LocationFeatureSpecification', 'name': 'Great Customer Service'}, {'@type': 'LocationFeatureSpecification', 'name': 'Security Cameras on Premises'}, {'@type': 'LocationFeatureSpecification', 'name': 'Drive-Up Units'}],
 
 'url': 'https://aqualitystoragetx.com/location/line-drive/storage-units',
-'telephone': ' (281) 889-1732',
+'telephone': '(281) 838-9746',
   
 
 'priceRange': '$65 - $250',
@@ -216,7 +216,7 @@ export const Location2Script = {
 {'@type': 'LocationFeatureSpecification', 'name': 'Electric Monitored Gate'}, {'@type': 'LocationFeatureSpecification', 'name': 'Well-lit Storage Units'}, {'@type': 'LocationFeatureSpecification', 'name': 'Great Customer Service'}, {'@type': 'LocationFeatureSpecification', 'name': 'Security Cameras on Premises'}, {'@type': 'LocationFeatureSpecification', 'name': 'Drive-Up Units'}],
 
 'url': 'https://aqualitystoragetx.com/location/holly-avenue/storage-units',
-'telephone': ' (281) 889-1732',
+'telephone': '(281) 838-9746',
   
 
 'priceRange': '$70 - $140',
@@ -255,11 +255,11 @@ export const contactPageLocation1Script = {
   'image': [' https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/webp/storage-units.webp'],
   'contactPoint': [{
     '@type': 'ContactPoint',
-    'telephone': '(281) 889-1732',
+    'telephone': '(281) 838-9746',
     'contactType': 'reservations'
   }, {
     '@type': 'ContactPoint',
-    'telephone': '(281) 889-1732',
+    'telephone': '(281) 838-9746',
     'contactType': 'customer service'
   }],
  'email': 'aqualitystoragetx@gmail.com'
@@ -281,11 +281,11 @@ export const contactPageLocation2Script = {
   'image': ' https://syrasoft-tenant-facing-websites.s3.amazonaws.com/A_Quality_Image/webp/storage-units.webp',
   'contactPoint': [{
     '@type': 'ContactPoint',
-    'telephone': '(281) 889-1732',
+    'telephone': '(281) 838-9746',
     'contactType': 'reservations'
   }, {
     '@type': 'ContactPoint',
-    'telephone': '(281) 889-1732',
+    'telephone': '(281) 838-9746',
     'contactType': 'customer service'
   }],
  'email': 'aqualitystoragetx@gmail.com'
