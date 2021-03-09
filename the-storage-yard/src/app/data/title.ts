@@ -1,4 +1,4 @@
-export const homePageTitle = `Connecticut - Norwich’s premier Storage facility`;
+export const homePageTitle = `Affordable Self Storage Units in Norwich, C.T.`;
 export const homePageContent = `The Storage Yard offers convenient 24/7 access to your belongings, online payments and a variety of unit sizes for all of your self storage needs.`;
 
 export const viewRatesPageTitle = `View Rates | The Storage Yard`;
