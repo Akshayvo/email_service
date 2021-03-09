@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { contactsLocation1, hoursLocation1,
+import { contactsLocation1, hoursLocation1, hoursLocation1AcessHours,
           contactsLocation2, hoursLocation2,
           } from '../data/contact';
 import { tabs, tabs1, tabs2,  tabs3,  } from '../data/location';
@@ -27,6 +27,7 @@ export class LocationComponent implements OnInit {
   currentTab: any;
   contacts: any;
   hours: any;
+  access:any;
   iframeAdd: any;
   head: any;
   tabs: any;
@@ -197,6 +198,7 @@ export class LocationComponent implements OnInit {
       this.locationId = 1;
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
+      this.access = hoursLocation1AcessHours;
       this.tabs = tabs1;
     }
 

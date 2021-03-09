@@ -22,12 +22,16 @@
           <a class="btn btn-primary p-2 ml-0" [routerLink]="['/wa/leos-self-storage/reserve-unit']" role="button"> Reserve Unit</a>                                  
         </div>
         <div class="col-lg-3 partition-border contact-hours pt-3">
-            <h3>Facility Hours:</h3>
+            <h3>Office Hours:</h3>
             <p>
               <span *ngFor="let hour of hoursLocation1">
                 <b>{{hour.label}}</b>{{hour.data}}<br>
               </span>
             </p>
+            <h3>Access Hours:</h3>
+              <p>
+                <b>7 Days a Week:</b> 6:30AM to 9:00PM<br>
+              </p>
         </div>
       </div>
     </div>      
@@ -57,11 +61,15 @@
             <a class="btn btn-primary p-2 ml-0" [routerLink]="['/wa/south-wenatchee/reserve-unit']" role="button"> Reserve Unit</a>                                  
           </div>
           <div class="col-lg-3 partition-border contact-hours pt-3">
-              <h3>Facility Hours:</h3>
+              <!-- <h3>Office Hours:</h3>
               <p>
                 <span *ngFor="let hour of hoursLocation2">
                   <b>{{hour.label}}</b>{{hour.data}}<br>
                 </span>
+              </p> -->
+              <h3>Access Hours:</h3>
+              <p>
+                <b>7 Days a Week:</b> 6:30AM to 9:00PM<br>
               </p>
           </div>
         </div>

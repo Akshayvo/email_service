@@ -8,7 +8,7 @@
     <tbody>
       <tr *ngFor="let td of tds">
         <td *ngFor="let key of objectKeys;">
-          <p *ngIf="(key === 'label')">
+          <p *ngIf="(key === 'label')" style="font-weight:bold">
             <b>{{td[key]}}</b>
           </p>
           <p *ngIf="(key === 'data')">{{td[key]}}</p>

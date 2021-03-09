@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsLocation1, hoursLocation1,
+import { contactsLocation1, hoursLocation1,hoursLocation1AcessHours,
           contactsLocation2, hoursLocation2  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
@@ -21,6 +21,7 @@ export class ContactComponent implements OnInit {
   contactDetails: any;
   heading: string;
   hoursDetails: any;
+  accessDetails:any;
   placeName: string;
   name: string;
   email: any;
@@ -131,6 +132,7 @@ public fetchTwitter() {
     this.heading = `South Wenatchee Self Storage `;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
+    this.accessDetails = hoursLocation1AcessHours;
   }
 
   public fetchContactDetailsLocation2() {
