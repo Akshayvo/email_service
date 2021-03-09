@@ -2,14 +2,13 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Take a moment and review our current self storage unit availability above. Not sure what sized unit you
-      require? Check our Unit Sizer page to see what you can expect to fit in our unit sizes. Once you find the
-      unit that fits your needs, give our friendly management team a call, or reserve your unit online in seconds
-      by filling out the form above!`,
+      p: `Take a moment and review our current self storage unit availability above. Not sure what sized unit you require? Check our Unit Sizer page to see what you can expect to fit in our unit sizes. Once you find the unit that fits your needs, give our friendly management team a call, or reserve your unit online in seconds by filling out the form above!`,
     },
     {
-      p: `The staff at My Store-It Space can’t wait to make your next storage project easy and affordable. Feel
-      free to call our offices at any time to learn more about our services!`
+      p : `We also cater to a number of local recreational vehicle, boat, camper, and trailer owners who want to free up some space in their yard. Give us a call to learn more about our seasonal parking services!`
+    },
+    {
+      p: `The staff at My Store-It Space can’t wait to make your next storage project easy and affordable. Feel free to call our offices at any time to learn more about our services!`
     },
 ];
 
