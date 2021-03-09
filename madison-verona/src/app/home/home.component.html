@@ -38,7 +38,7 @@
       <div class="section py-4 m-0">
         <div class="row">
           <div class="col-lg-6 py-3 home-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.9166085986294!2d-89.50196668452328!3d43.001090479149084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807b1c703769555%3A0x2a11d7be82c97650!2s4201%20Maple%20Grove%20Dr%2C%20Madison%2C%20WI%2053719!5e0!3m2!1sen!2sus!4v1614541947114!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.9166085986294!2d-89.50196668452328!3d43.001090479149084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807b1c703769555%3A0x2a11d7be82c97650!2s4201%20Maple%20Grove%20Dr%2C%20Madison%2C%20WI%2053719!5e0!3m2!1sen!2sus!4v1614541947114!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" title="Facility Google Map"></iframe> 
           </div>
 
           <div class="col-lg-6 py-3">
@@ -47,7 +47,7 @@
               <p>
                 <span *ngFor="let contact of contactDetails" class="display-contact">
                   <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
-                    <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h4>
+                    <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}" rel="noreferrer">&nbsp;{{contact.data}}</a></h4>
                   </span>
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
                 </span>
@@ -75,7 +75,7 @@
           <img src="{{imageBaseUrl}}/madison-verona-self-storage-photo.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
         </div>
         <div class="col-lg-6 py-3">
-          <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
+          <h2 class="heading pb-4">{{aboutUsHeading}}</h2>
           <!-- <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p> -->
           <p>Madison Verona Self Storage is the premier self storage facility serving Madison, Fitchburg, Verona, and the surrounding communities with clean, high-quality self storage units at affordable rates. Our brand new self storage facility offers units in a wide variety of sizes including a number of climate controlled units! Madison Verona Storage also provides outdoor uncovered parking for your camper, recreational vehicle, or trailer. Take a moment to check out our current availability and rates, then rent online or give us a call!
           </p>

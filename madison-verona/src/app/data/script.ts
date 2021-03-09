@@ -47,38 +47,38 @@ socialLinks.forEach(links => {
 }
 );
   
-export const ogGraphImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jp` // 4:3
+export const ogGraphImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Madison_Verona/jpg/madison-verona-self-storge-jumbotron.jpg` // 4:3
 
-export const twitterImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg` // 1:1
+export const twitterImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Madison_Verona/jpg/madison-verona-self-storge-jumbotron.jpg` // 1:1
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jp", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jp" // 16:9
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Madison_Verona/jpg/madison-verona-self-storge-jumbotron.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Madison_Verona/jpg/madison-verona-self-storge-jumbotron.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Madison_Verona/jpg/madison-verona-self-storge-jumbotron.jpg" // 16:9
      ],
      imagesContactPage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Madison_Verona/jpg/madison-verona-self-storge-jumbotron.jpg",
      ],
      telephone: contact[contactIndex].data,
-     map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
-     description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach." || homePageContent,
-     streetAddress: "148 W 51st St",
-     state: "New York",
-     addressLocality: "New York",
-     addressRegion: "NY",
-     postalCode: "10019",
+     map: "https://www.google.com/maps/place/4201+Maple+Grove+Dr,+Madison,+WI+53719/@43.001091,-89.499778,15z/data=!4m5!3m4!1s0x8807b1c703769555:0x2a11d7be82c97650!8m2!3d43.0010905!4d-89.499778?hl=en",
+     description: "Madison Verona Self Storage offers convenient 24/7 access to your belongings, online payments, and a variety of unit sizes for all of your self storage needs." || homePageContent,
+     streetAddress: "4201 Maple Grove Dr",
+     state: "Wisconsin",
+     addressLocality: "Madison",
+     addressRegion: "US",
+     postalCode: "53719",
      addressCountry: "US",
      id: environment.websiteUrl || "",
-     paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
-     currenciesAccepted: "EUR",
-     ratingValue: "4",
-     bestRating: "5",
-     reviewCount: "250",
-     latitude: 40.761293,
-     longitude: -73.982294,
-     openingHours: [],
-     priceRange: ''
+    //  paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
+    //  currenciesAccepted: "EUR",
+    //  ratingValue: "4",
+    //  bestRating: "5",
+    //  reviewCount: "250",
+     latitude: 43.001510,
+     longitude: -89.499340,
+     openingHours: ["Su-Fr 00:00-24:00"]
+    //  priceRange: ''
 };
 
 export const homePageScript = [ {
@@ -96,12 +96,12 @@ export const homePageScript = [ {
       "postalCode": script.postalCode,
       "addressCountry": script.addressCountry
     },
-   "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": script.ratingValue,
-      "bestRating": script.bestRating,
-      "reviewCount": script.reviewCount
-    },
+  //  "aggregateRating": {
+  //     "@type": "AggregateRating",
+  //     "ratingValue": script.ratingValue,
+  //     "bestRating": script.bestRating,
+  //     "reviewCount": script.reviewCount
+  //   },
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": script.latitude,
@@ -110,10 +110,10 @@ export const homePageScript = [ {
     "url": environment.websiteUrl,
     "telephone": script.telephone,
     
-    "priceRange": script.priceRange,
-    "openingHours": script.openingHours,
-    "currenciesAccepted": script.currenciesAccepted,
-    "paymentAccepted": script.paymentAccepted,
+    // "priceRange": script.priceRange,
+    // "openingHours": script.openingHours,
+    // "currenciesAccepted": script.currenciesAccepted,
+    // "paymentAccepted": script.paymentAccepted,
      "areaServed": {
     "@type": "State",
     "name": script.state

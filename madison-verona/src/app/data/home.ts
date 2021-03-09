@@ -43,7 +43,7 @@ export const aboutUsHeading = `several self storage units in in a row with one s
 
 export const aboutUs = [
     {
-        p: `Sample Self Storage - North has proudly served the village of Baldwinsville with friendly
+        p: `Madison Verona Self Storage has proudly served the village of Baldwinsville with friendly
         service, and clean, well-maintained self storage units for nearly 20 years. We are a locally
         owned business that prides itself on the trust we've earned from out friends and neighbors over
         the past two decades.`,
@@ -57,19 +57,19 @@ export const aboutUs = [
     {
         p: `Our units range from closet-sized 5-foot-by-5-foot units that are perfect for seasonal
         clothing, and sports equipment to our 10-foot-by-30-foot units that will store a multi-bedroom
-        home during a move! Sample Self Storage - North has units available in regular, unconditioned
+        home during a move! Madison Verona Self Storage has units available in regular, unconditioned
         varieties and climate controlled for those belongings that require a little extra protection.`,
     },
     {
         p: `Whether you're a growing business in need of a place for equipment, documents, and supplies,
         or if you're a residential storage user in the process of a move, or a renovation, we've got your
-        storage needs covered. Let Sample Self Storage - North help de-clutter your life today!`,
+        storage needs covered. Let Madison Verona Self Storage help de-clutter your life today!`,
     }
     
 ];
 
 export const gettingStarted = `Are you ready to stop putting off cleaning out your attic, garage, or shed?
-Clear up some room around the house with Sample Self Storage - North and one of our affordable storage units,
+Clear up some room around the house with Madison Verona Self Storage and one of our affordable storage units,
 accessible 24 hours a day!`;
 
 export const feature = [

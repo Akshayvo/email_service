@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '4201 Maple Grove, Dr Madison, WI 53719',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://www.google.com/maps/place/4201+Maple+Grove+Dr,+Madison,+WI+53719/@43.001091,-89.499778,15z/data=!4m5!3m4!1s0x8807b1c703769555:0x2a11d7be82c97650!8m2!3d43.0010905!4d-89.499778?hl=en'
     },
     {
         id: 1,
@@ -24,16 +24,8 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Monday - Friday: ',
-        data: '9:00AM to 7:00PM'
-    },
-    {
-        label: 'Saturday: ',
-        data: '10:00 am - 2:00 pm'
-    },
-    {
-        label: 'Sunday: ',
-        data: 'CLOSED'
+        label: 'Office Hours: ',
+        data: '24-Hour Kiosk Access, On-Site Manager Available By Appointment'
     },
     {
         label: 'Storage Access Hours: ',
@@ -42,16 +34,16 @@ export const hours = [
 ];
 
 export const socialLinks = [
-    {
-        label: 'twitter',
-        path: '',
-        class: 'fab fa-twitter-square',
-    },
-    {
-        label: 'facebook',
-        path: '',
-        class: 'fab fa-facebook-square',
-    },
+    // {
+    //     label: 'twitter',
+    //     path: '',
+    //     class: 'fab fa-twitter-square',
+    // },
+    // {
+    //     label: 'facebook',
+    //     path: '',
+    //     class: 'fab fa-facebook-square',
+    // },
 ];
 
 
