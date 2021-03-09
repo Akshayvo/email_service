@@ -38,7 +38,7 @@
       <div class="section py-4 m-0">
         <div class="row">
           <div class="col-lg-6 py-3 home-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11943.37676444405!2d-72.1128467!3d41.5509707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3c5360b4f65a736c!2sThe%20Storage%20Yard!5e0!3m2!1sen!2sus!4v1613232960301!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11943.37676444405!2d-72.1128467!3d41.5509707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3c5360b4f65a736c!2sThe%20Storage%20Yard!5e0!3m2!1sen!2sus!4v1613232960301!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" title="Facility Google Map"></iframe> 
           </div>
 
           <div class="col-lg-6 py-3">
@@ -47,7 +47,7 @@
               <p>
                 <span *ngFor="let contact of contactDetails" class="display-contact">
                   <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
-                    <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h4>
+                    <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}" rel="noopener">&nbsp;{{contact.data}}</a></h4>
                   </span>
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
                 </span>
