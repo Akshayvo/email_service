@@ -17,7 +17,7 @@
             <span *ngIf="locationId == 1" title="Aerial Photograph of self storage units surrounded by a fence."> 
               <div [ngClass]="imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'">
                 <div class="jumbotorn-button">
-                  <a class="btn btn-lg btn-primary" [disabled]='load' (click)="scroll(target)">Click To See Available Units</a>   
+                  <a type="button" class="btn btn-lg btn-primary" (click)="scroll(target)">Click To See Available Units</a>   
                   </div>
               </div>
               <!-- <div class="alarm text-center py-3">Doors at this location are alarmed</div> -->
@@ -25,7 +25,7 @@
             <span *ngIf="locationId == 2" title="Aerial photograph of self storage facility with recreational vehicles and boats parked next to the buildings"> 
               <div [ngClass]="imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'">
                 <div class="jumbotorn-button">
-                  <a class="btn btn-lg btn-primary" [disabled]='load' (click)="scroll(target)">Click To See Available Units</a>   
+                  <a class="btn btn-lg btn-primary"  (click)="scroll(target)">Click To See Available Units</a>   
                   </div>
               </div>
               
