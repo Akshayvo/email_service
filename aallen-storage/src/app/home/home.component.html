@@ -4,9 +4,11 @@
       <div class="container display">
         <div class="row justify-content-center width margin-bottom">
           <div class="col-md-12">
-            <div class="disp">
-              <h1> Conveniently Located 24-Hour Access Self Storage</h1><br>
-              <p>Aallen Self Storage has been serving Fargo, West Fargo, Moorehead, and the surrounding communities since 2009. Our locally owned & operated facility has all of the amenities you need to make your next move, renovation, or other storage project fast and easy. Check out our inventory, then reserve your unit online in seconds! We look forward to meeting you!</p>
+            <div class="disp" *ngFor="let jumbotron of jumbotron">
+              <h2  class="my-4">
+                {{jumbotron.h2}}
+              </h2>
+            <p class="text-justify">{{jumbotron.blurb}}</p>
             </div>
             <div class="button-top-margin">
               <a class="btn btn-lg btn-outline-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
@@ -75,15 +77,22 @@
                 <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2293.378269093615!2d-96.83661274537617!3d46.87711184691211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1264bbc812dbf7d9!2sAallen&#39;self%20Storage!5e0!3m2!1sen!2sus!4v1614963158828!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
           <div class="col-md-6 py-3 locate-us-style">
-            <table>
-              <tr valign="top" *ngFor="let contact of contactDetails">
-                <td ><strong>{{contact.label}}</strong></td><td class="contact-data" *ngIf="contact?.id === 0 || contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect"> {{contact.data}}</a></td>
-                <ng-template #other_content><td >{{contact.data}}</td></ng-template>
-              </tr>
-              <tr valign="top" *ngFor="let hour of hours">
-                <td ><strong>{{hour.label}}</strong></td><td> {{hour.data}}</td>
-              </tr>
-              </table>
+            <div class="mb-4 contact-details">
+              
+              <p>
+                <span *ngFor="let contact of contactDetails" class="display-contact">
+                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                    <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h4>
+                  </span>
+                  <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
+                </span>
+              </p>
+              <p>
+                <span class="display-contact" *ngFor="let hour of hours">
+                  <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>

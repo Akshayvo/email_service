@@ -1,9 +1,14 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { WINDOW } from '@ng-toolkit/universal';
+import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { contact, hours } from '../data/contact';
 import { EmailService } from '../services/email.service';
+import { MetaService } from '../services/link.service';
+import { contactPageTitle, contactPageContent } from '../data/title';
+import { contactHeading } from '../data/heading';
+import { CanonicalService } from '../services/canonical.service';
+import { contactPageScript, ogContactPage, twitterContactPage } from '../data/script';
 import { contactUs } from '../data/blurb';
 
 @Component({
@@ -13,102 +18,176 @@ import { contactUs } from '../data/blurb';
 })
 export class ContactComponent implements OnInit {
 
-  currentActive: any = 'CONTACT';
   contactDetails: any;
   hours: any;
   name: string;
   email: any;
-  phone: any;
-  subject: string;
   message: string;
+  contactInfo: any;
   receiveremail: string;
   completeMessage: string;
   contactForm: FormGroup;
   submitted = false;
-  contactUs: any;
   mailSent = false;
+  head: any;
+  phone: any;
+  contactPageTitle: string;
+  contactPageContent: string;
+  contactHeading: string;
+  og: any;
+  twitter: any;
+  script: any;
+  contactUs: any;
 
   constructor(
-    @Inject(WINDOW) private window: Window,
+    private router: Router,
     private emailService: EmailService,
     private titleService: Title,
     private meta: Meta,
     private formBuilder: FormBuilder,
+    private metaService: MetaService,
+    private canonical: CanonicalService
   ) {
+    this.fetchScript();
+    this.loadScript();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `If you have questions about your account or the services we offer, take a moment to fill our out form, or use the contact information to speak with us!`
+      content: `${this.contactPageContent}`
     });
-    this.titleService.setTitle('Contact Us | Aallen Self Storage');
-
-    this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      phone: ['', [Validators.required,
-              Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      subject: [''],
-  });
+    this.titleService.setTitle(`${this.contactPageTitle}`);
+    this.canonical.create();
+    
   }
 
   ngOnInit() {
     this.fetchContactDetails();
     this.fetchContactUs();
     this.fetchHours();
+    this.fetchContactHeading();
     window.scrollTo(0, 0);
+    this.contactForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      phone: ['', [Validators.required,
+      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required],
+      subject: ['']
+  });
   
   }
 
   get f() { return this.contactForm.controls; }
 
-  public fetchContactDetails() {
-    this.contactDetails = contact;
+  public fetchOg() {
+    this.og = ogContactPage;
+}
+
+public fetchScript() {
+  this.script = contactPageScript;
+}
+
+public loadScript() {
+  const node = document.createElement('script'); // creates the script tag
+  node.type = 'application/ld+json'; // set the script type
+  node.async = false; // makes script run asynchronously
+  // node.charset = 'utf-8';
+  node.innerHTML = JSON.stringify(this.script);
+  // append to head of document
+  document.getElementsByTagName('head')[0].appendChild(node);
+}
+
+public fetchTwitter() {
+  this.twitter = twitterContactPage;
+}
+
+public navigate(location: any) {
+  this.router.navigate([location]);
+}
+
+public fetchMetaData() {
+  this.contactPageTitle = contactPageTitle;
+  this.contactPageContent = contactPageContent;
+}
+
+public fetchContactDetails() {
+  this.contactDetails = contact;
+}
+
+public fetchContactHeading() {
+  this.contactHeading = contactHeading;
+}
+
+public fetchHours() {
+  this.hours = hours;
+}
+public fetchContactUs() {
+  this.contactUs = contactUs;
+}
+
+
+onSubmit() {
+  const today = new Date();
+  window['dataLayer'] = window['dataLayer'] || {};
+  window['dataLayer'] = window['dataLayer'] || [];
+  window['dataLayer'].push({
+    'event': 'ContactFormsubmission',
+    'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+    'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+  });
+
+
+  this.submitted = true;
+
+ // stop here if form is invalid
+ if (this.contactForm.invalid) {
+     return;
+ } else {
+  if ( !this.contactForm.value.subject) {
+    this.contactForm.value.subject = 'Website Form Submission';
   }
 
-  public fetchHours() {
-    this.hours = hours;
+  const index = contact.findIndex(x => x.label === 'Email:');
+
+  if (!!index) {
+    this.receiveremail = this.contactDetails[index].data;
   }
 
-  public fetchContactUs() {
-    this.contactUs = contactUs;
-  }
+   this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
+   message: ${this.contactForm.value.message}`;
 
-  onSubmit() {
-    this.submitted = true;
-
-   // stop here if form is
-   if (this.contactForm.invalid) {
-       return;
-   } else {
-     this.receiveremail = this.contactDetails[1].data;
-
-         this.completeMessage = `<strong>Phone: </strong> ${this.contactForm.value.phone}, <br/>
-                                <strong>Message: </strong> ${this.contactForm.value.message}`;
-
-         if (!this.contactForm.value.subject) {
-          this.contactForm.value.subject = 'Website Contact Form';
-         }
-
-         const body = {
-           name: this.contactForm.value.name,
-           email: this.contactForm.value.email,
-           receiveremail: this.receiveremail,
-           message: this.completeMessage,
-           subject: this.contactForm.value.subject
-         };
-         this.emailService.sendEmail(body)
-           .subscribe((response: any) => {
-             if (response.result != null) {
+       const body = {
+         name: this.contactForm.value.name,
+         email: this.contactForm.value.email,
+         receiveremail: this.receiveremail,
+         message: this.completeMessage,
+         subject: this.contactForm.value.subject,
+       };
+       this.emailService.sendEmail(body)
+         .subscribe((response: any) => {
+           if (response.result != null) {
               this.mailSent = true;
-             } else {
-
-             }
-           }, (err) => {
-
-           });
-         this.submitted = false;
-         this.mailSent = false;
-         this.contactForm.reset();
-   }
+           } else {
+           }
+         }, (err) => {
+         });
+       this.submitted = false;
+       this.mailSent = false;
+       this.contactForm.reset();
  }
+}
 }

@@ -1,30 +1,18 @@
 import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
-    {
-      p: `Sample Self Storage - North has been serving Baldwinsville, and the surrounding communities
-      with quality regular and climate controlled self storage units for nearly two decades. We have
-      the experience and commitment to modern conveniences you need to make your next storage project an easy one`,
-    },
-    {
-      p: `At Sample Self Storage - North, you'll have access to our services with an online tenant portal
-      for contactless rentals, and online payments. If you're here after hours and want to make a payment,
-      stop into the office's foyer and use our 24-hour kiosk!`
-    },
-    {
-      p: `Our residential storage users love our convenient location and affordable rates that take the stress
-      out of their move, renovation, or seasonal de-cluttering projects. An extra closet to an extra garage's
-      worth of space makes the most out of your home's space!
-      `
-    },
-    {
-      p: `Many local businesses in use our climate controlled storage units to save money by storing in a climate
-      controlled storage unit instead of expensive commercial real estate. We are the ideal space for your extra
-    inventory, or documents. Our 24-hour access policy is the ideal solution for your local business.`
-    }
+  {
+    p: `Aallen Self Storage provides a number of self storage and vehicle parking options at competitive prices to Fargo, N.D. We are a locally owned and operated business that understands the key to success is building long-term relationships with our valued customers. That’s why we go the extra mile to give you the best experience possible.`,
+},
+{
+    p: `Starting with our online reservations and on-site kiosk you can reserve or rent your unit at your convenience. Once you’re moved into your new unit, you’ll have 24-hour access to a well-lit self storage facility, and you can pay online or through our kiosk 24 hours a day.`,
+},
+{
+    p: `Still have questions? The staff at Aallen Self Storage are available to answer questions or assist you with a contactless reservation or rental. Simply give us a call, and a friendly member of our time will be glad to help! We look forward to making your next storage project an easy and affordable one!`,
+}
 ];
 
-export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
+export const viewRatesAltText = `several self storage unit doors in a row with one door open revealing household belongings`;
 
 export const th = [
   {

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { unitSizer } from '../data/unitSizer';
 import { Title, Meta } from '@angular/platform-browser';
 import { unitSizers } from '../data/blurb';
+import { CanonicalService } from '../services/canonical.service';
+import { unitSizerPageTitle, unitSizerPageContent } from '../data/title';
 
 @Component({
   selector: 'app-unit-sizer',
@@ -15,16 +17,22 @@ export class UnitSizerComponent implements OnInit {
   current: number;
   next: number;
   unitSizers: any;
+  unitSizerPageTitle: string;
+  unitSizerPageContent: string;
 
   constructor(
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private canonical: CanonicalService
+
   ) {
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Use our unit sizing chart to help you figure out what sized unit you require for your belongings, or supplies and inventory!`
+      content: `${this.unitSizerPageContent}`
     });
-    this.titleService.setTitle('Unit Sizer | Aallen Self Storage');
+    this.titleService.setTitle(`${this.unitSizerPageTitle}`);
+    this.canonical.create();
   }
 
   ngOnInit() {
@@ -34,6 +42,10 @@ export class UnitSizerComponent implements OnInit {
     this.fetchUnitSizer();
     this.fetchUnitsizers();
     window.scrollTo(0, 0);
+  }
+  public fetchMetaData() {
+    this.unitSizerPageTitle = unitSizerPageTitle;
+    this.unitSizerPageContent = unitSizerPageContent;
   }
 
 

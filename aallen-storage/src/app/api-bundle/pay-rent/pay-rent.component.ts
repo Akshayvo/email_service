@@ -1,18 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-import { DataSharingService } from '../services/data-sharing.service';
-import { tabs } from '../../data/tab';
-import { payRentHeading } from '../../data/heading';
+import { loginDetail} from '../../data/pay-rent';
+import { contact } from '../../data/contact';
+import { payRent } from '../../data/blurb';
 import { payRentPageContent, payRentPageTitle } from '../../data/title';
 import { environment } from '../../../environments/environment';
-import { CanonicalService } from '../../services/canonical.service';
+import { tabs } from '../../data/tab';
+import { payRentHeading } from '../../data/heading';
 import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
-import { loginDetail} from '../../data/pay-rent';
-import { payRent } from '../../data/blurb';
-import { contact } from '../../data/contact';
-
-
+import { CanonicalService } from '../../services/canonical.service';
 
 
 @Component({
@@ -20,13 +16,13 @@ import { contact } from '../../data/contact';
   templateUrl: './pay-rent.component.html',
   styleUrls: ['./pay-rent.component.scss']
 })
+
 export class PayRentComponent implements OnInit {
-  contact: any;
-  name: string;
-  id: number;
-  tabs: any;
+
   loginDetail: any;
+  contact: any;
   payRent: any;
+  tabs: any;
   payRentPageTitle: string;
   payRentPageContent: string;
   payRentHeading: string;
@@ -34,17 +30,12 @@ export class PayRentComponent implements OnInit {
   og: any;
   twitter: any;
   
-  
+
   constructor(
     private titleService: Title,
-    private router: Router,
-    private activatedRoute: ActivatedRoute,
-    private dataSharingService: DataSharingService,
-    private meta: Meta,
     private canonical: CanonicalService,
-
+    private meta: Meta
   ) {
-    
     this.fetchMetaData();
     this.fetchOg();
     this.fetchTwitter();
@@ -63,30 +54,20 @@ export class PayRentComponent implements OnInit {
     });
     this.meta.addTag({
       name: 'description',
-      content: `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`
+      content: `${this.payRentPageContent}`
     });
-    this.titleService.setTitle('Pay Rent | Aallen Self Storage');
+    this.titleService.setTitle(`${this.payRentPageTitle}`);
+    this.canonical.create();
   }
 
   ngOnInit() {
+    this.fetchContactDetails();
+    this.showPaymentPageType = environment.signUpForAuotoPay;
     this.fetchPayment();
     this.fetchContact();
     this.fetchPayRent();
-    this.fetchContactDetails();
-    this.showPaymentPageType = environment.signUpForAuotoPay;
+    window.scrollTo(0, 0);
   }
-  public fetchPayment() {
-    this.loginDetail = loginDetail;
-  }
-
-  public fetchContact() {
-    this.contact = contact;
-  }
-
-  public fetchPayRent() {
-    this.payRent = payRent;
-  }
-
   public fetchOg() {
     this.og = ogPayRentPage;
   }
@@ -100,6 +81,17 @@ export class PayRentComponent implements OnInit {
     this.payRentPageTitle = payRentPageTitle;
   }
 
+  public fetchPayment() {
+    this.loginDetail = loginDetail;
+  }
+
+  public fetchContact() {
+    this.contact = contact;
+  }
+
+  public fetchPayRent() {
+    this.payRent = payRent;
+  }
   public fetchContactDetails() {
     this.payRentHeading = payRentHeading;
     this.tabs = tabs;

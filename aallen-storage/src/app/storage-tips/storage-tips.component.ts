@@ -1,8 +1,13 @@
 import { WINDOW } from '@ng-toolkit/universal';
-import { Component, OnInit , Inject} from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { storageTip, storageTipAccordion } from '../data/storage';
 import { storageTips } from '../data/blurb';
+import { MetaService } from '../services/link.service';
+import { storageTipsTitle, storageTipsContent } from '../data/title';
+import { storageTipsHeading } from '../data/heading';
+import { CanonicalService } from '../services/canonical.service';
+import { ogStorageTipsPage, twitterStorageTipsPage } from '../data/script';
 
 @Component({
   selector: 'app-storage-tips',
@@ -14,17 +19,41 @@ export class StorageTipsComponent implements OnInit {
   storageTip: any;
   storageTipAccordion: any;
   storageTips: any;
-  currentActive: any = 'STORAGE TIPS';
+  storageTipsHeading: string;
+  storageTipsTitle: string;
+  storageTipsContent: string;
+  og: any;
+  twitter: any;
 
   constructor(@Inject(WINDOW) private window: Window,
     private titleService: Title,
     private meta: Meta,
+    private metaService: MetaService,
+    private canonical: CanonicalService
+
   ) {
+    this.fetchMetaData();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
     this.meta.addTag({
       name: 'description',
-      content: `Follow these easy self storage tips to make your stay with Aallen Self Storage a breeze! Have questions? Call (701) 232-9474 today!`
+      content: `${this.storageTipsContent}`
     });
-    this.titleService.setTitle('Storage Tips | Aallen Self Storage');
+    this.titleService.setTitle(`${this.storageTipsTitle}`);
+    this.canonical.create();
   }
 
   ngOnInit() {
@@ -33,12 +62,23 @@ export class StorageTipsComponent implements OnInit {
     this.fetchStorageTips();
     window.scrollTo(0, 0);
   }
+  public fetchOg() {
+    this.og = ogStorageTipsPage;
+  }
 
+  public fetchTwitter() {
+    this.twitter = twitterStorageTipsPage;
+  }
+
+  public fetchMetaData() {
+    this.storageTipsTitle = storageTipsTitle;
+    this.storageTipsContent = storageTipsContent;
+  }
   public fetchStorageTip() {
     this.storageTip = storageTip;
   }
 
-  public fetchStorageTipAccordion () {
+  public fetchStorageTipAccordion() {
     this.storageTipAccordion = storageTipAccordion;
   }
 

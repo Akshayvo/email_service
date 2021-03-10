@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { viewRate, slideShow } from '../../data/view';
+import { dataViewRates } from '../../data/view-rates';
 import { viewRates } from '../../data/blurb';
 import { UaParserService } from '../../services/ua-parser.service';
+import { script } from '../../data/script';
+import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
+import { CanonicalService } from '../../services/canonical.service';
+
 
 @Component({
   selector: 'app-view-rates',
@@ -16,37 +20,47 @@ export class ViewRatesComponent implements OnInit {
   viewRates: any;
   imageBaseUrl: any;
   imagetype: any;
+  state:string;
+  viewRatesHeading: string;
+  viewRatesPageContent: string;
+  viewRatesPageTitle: string;
+
 
   constructor(
     private titleService: Title,
     private meta: Meta,
     private uaParserService: UaParserService,
+    private canonical: CanonicalService
   ) {
+   this.state = script.state;
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `Take a moment to view our affordable self storage unit rates, then make your reservation by filling out our form or calling our office today!`
+      content: `${this.viewRatesPageContent}`
     });
     this.titleService.setTitle('View Rates | Aallen Self Storage');
-
+    this.canonical.create();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   ngOnInit() {
     this.fetchViewRate();
-    this.fetchSlideShow();
+    // this.fetchSlideShow();
     this.fetchViewRates();
     window.scrollTo(0, 0);
   }
 
   public fetchViewRate() {
-    this.viewRate = viewRate;
+    this.viewRate = dataViewRates;
   }
-  public fetchSlideShow() {
-    this.slideShow = slideShow;
-  }
+ 
   public fetchViewRates() {
     this.viewRates = viewRates;
+  }
+  public fetchMetaData () {
+    this.viewRatesPageContent = viewRatesPageContent;
+    this.viewRatesPageTitle = viewRatesPageTitle;
   }
 
 }

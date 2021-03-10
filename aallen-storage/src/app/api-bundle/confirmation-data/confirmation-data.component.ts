@@ -8,10 +8,8 @@ import { MakeAReservationService } from '../services/make-a-reservation.service'
 import { AddTenantService } from '../services/add-tenant.service';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { Subscription, Subject } from 'rxjs';
-import { option } from '../../data/view';
+import { option } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
-import { environment } from '../../../environments/environment';
-
 
 @Component({
   selector: 'app-confirmation-data',
@@ -223,9 +221,8 @@ getTenantUnitData() {
       .subscribe(strConfirmationResponse => {
         if (strConfirmationResponse.intErrorCode === 1) {
           this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
-          this.dataSharingService.eventName = 'reservation';
           this.showConfirmation = false;
-          this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
+          this.router.navigate(['/view-rates/confirmation-page']);
           this.reservationInProgress = false;
         }
       }, (err: any) => {

@@ -205,30 +205,30 @@ export const ogPayRentPage = [
   ];
   
   export const twitterPayRentPage = [
-    // {
-    //   name: `twitter:title`,
-    //   content: `@${payRentPageTitle}`
-    // },
-    // {
-    //   name: `twitter:description`,
-    //   content: `${payRentPageContent}`
-    // },
-    // {
-    //   name: `twitter:site`,
-    //   content: `@${environment.facilityName}`
-    // },
-    // {
-    //   name: `twitter:card`,
-    //   content: `summary`
-    // },
-    // {
-    //   name: `twitter:creator`,
-    //   content: `@syrasoft_connect`
-    // },
-    // {
-    //   name: `twitter:image`,
-    //   content: script.imagesHomePage[0]
-    // },
+    {
+      name: `twitter:title`,
+      content: `@${payRentPageTitle}`
+    },
+    {
+      name: `twitter:description`,
+      content: `${payRentPageContent}`
+    },
+    {
+      name: `twitter:site`,
+      content: `@${environment.facilityName}`
+    },
+    {
+      name: `twitter:card`,
+      content: `summary`
+    },
+    {
+      name: `twitter:creator`,
+      content: `@syrasoft_connect`
+    },
+    {
+      name: `twitter:image`,
+      content: script.imagesHomePage[0]
+    },
   ];
 
   export const ogStorageTipsPage = [
