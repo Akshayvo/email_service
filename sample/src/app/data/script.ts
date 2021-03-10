@@ -3,41 +3,13 @@ import { homePageContent, homePageTitle, payRentPageContent,
   payRentPageTitle, storageTipsContent, storageTipsTitle,
 contactPageContent, contactPageTitle } from '../data/title';
 import { featuresList } from '../data/home';
-import { contact, hours, socialLinks } from '../data/contact';
-import { FetchDataService } from '../api-bundle/services/fetch-data.service';
-import { OnInit, Component, Input, Output  } from '@angular/core';
-
-// @Component({})
-// export class getValues  {
-
-
-//   constructor(
-    
-//   ) {
-//     console.log('class is wrkng');
-//     this.getData();
-
-//   }
-
-//   getData() {
-// console.log('im ');
-
-//     }
- 
-// } 
-
-// new getValues();
-
- 
+import { contact, socialLinks } from '../data/contact';
  
 const contactIndex = contact.findIndex(x => x.label === 'Phone:');
 const emailIndex = contact.findIndex(x => x.label === 'Email:');
 const sameAs = [];
-const openingHours = [];
 const amenityFeature = [];
-hours.forEach(hour =>
-  openingHours.push(hour.label + hour.data)
-)
+
 
 featuresList.forEach(
   feature => 
@@ -50,22 +22,16 @@ socialLinks.forEach(links => {
 }
 );
   
-export const ogGraphImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jp` // 4:3
-
-export const twitterImage = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg` // 1:1
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
       "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jp", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jp" // 16:9
-     ],
-     imagesContactPage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
      map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
-     description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach." || homePageContent,
+     description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
      streetAddress: "148 W 51st St",
      state: "New York",
      addressLocality: "New York",
@@ -80,6 +46,8 @@ export const script = {               // Please fill this script according to fa
      reviewCount: "250",
      latitude: 40.761293,
      longitude: -73.982294,
+     openingHours: [],
+     priceRange: ''
 };
 
 export const homePageScript = [ {
@@ -88,7 +56,7 @@ export const homePageScript = [ {
     "image": script.imagesHomePage,
     "@id": script.id,
     "name": environment.facilityName,
-     "description": script.description,
+     "description": script.description || homePageContent,
     "address": {
       "@type": "PostalAddress",
       "streetAddress": script.streetAddress,
@@ -111,8 +79,8 @@ export const homePageScript = [ {
     "url": environment.websiteUrl,
     "telephone": script.telephone,
     
-    "priceRange": "$$$",
-    "openingHours": openingHours,
+    "priceRange": script.priceRange,
+    "openingHours": script.openingHours,
     "currenciesAccepted": script.currenciesAccepted,
     "paymentAccepted": script.paymentAccepted,
      "areaServed": {
@@ -138,7 +106,7 @@ export const homePageScript = [ {
           "streetAddress": script.streetAddress,
         },
          "url": environment.websiteUrl,
-         "image": script.imagesContactPage,
+         "image": script.imagesHomePage[0],
         "contactPoint": [{
           "@type": "ContactPoint",
           "telephone": script.telephone,
@@ -177,7 +145,7 @@ export const ogHomePage = [
   },
   {
     property: `og:image`,
-    content: ogGraphImage
+    content: script.imagesHomePage[1]
   },
 ];
 
@@ -204,7 +172,7 @@ export const twitterHomePage = [
   },
   {
     name: `twitter:image`,
-    content: twitterImage
+    content: script.imagesHomePage[0]
   },
 ];
 
@@ -231,7 +199,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: ogGraphImage
+      content: script.imagesHomePage[1]
     },
   ];
   
@@ -258,7 +226,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: twitterImage
+      content: script.imagesHomePage[0]
     },
   ];
 
@@ -285,7 +253,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: ogGraphImage
+      content: script.imagesHomePage[1]
     },
   ];
   
@@ -312,7 +280,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: twitterImage
+      content: script.imagesHomePage[0]
     },
   ];
   
@@ -339,7 +307,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:image`,
-      content: ogGraphImage
+      content: script.imagesHomePage[1]
     },
   ];
   
@@ -366,7 +334,7 @@ export const ogPayRentPage = [
     },
     {
       name: `twitter:image`,
-      content: twitterImage
+      content: script.imagesHomePage[0]
     },
   ];
 

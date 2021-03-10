@@ -5,9 +5,9 @@
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'new-york/baldwinsville', // state/city
+  locationName: 'new-york/baldwinsville', // state/city  **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
-  alternateType: { moveIn: false, reserve: true }, // { moveIn: true, reserve: true },
+  alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],

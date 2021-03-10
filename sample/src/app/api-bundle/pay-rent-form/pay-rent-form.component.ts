@@ -526,7 +526,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     if (this.router.url.includes('payReservationCharges')) {
       this.surcharge = result.decTotalAmount - this.TotalReserveAmount;
     } else {
-      if (this.router.url.includes('payReservationCharges')) {
+      if (this.router.url.includes('payMoveInCharges')) {
         this.surcharge = result.decTotalAmount - this.totalMoveInAmount;
       } else {
         if (this.showInput) {

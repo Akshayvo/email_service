@@ -19,7 +19,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit {
 
   contactDetails: any;
   hours: any;
@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   twitterHomePage: any;
   script: any;
 
-  private getDataSubscribe$: Subscription;
+  // private getDataSubscribe$: Subscription;
   constructor(
     private router: Router,
     private titleService: Title,
@@ -96,7 +96,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
-    this.getData();
+    // this.getData();
     this.objSIMSetting = objSIMSetting;
     this.fetchContactDetails();
     this.fetchHours();
@@ -120,19 +120,19 @@ export class HomeComponent implements OnInit, OnDestroy {
     return [min, max];
   }
 
-  getData() {
-    this.getDataSubscribe$ = this.fetchDataService.getData()
-      .subscribe(unitTypesResponse => {
-        this.findMinMax(unitTypesResponse.lstUnitTypes)
+  // getData() {
+  //   this.getDataSubscribe$ = this.fetchDataService.getData()
+  //     .subscribe(unitTypesResponse => {
+  //       this.findMinMax(unitTypesResponse.lstUnitTypes)
 
-     const min = this.findMinMax(unitTypesResponse.lstUnitTypes)[0];
-     const max= this.findMinMax(unitTypesResponse.lstUnitTypes)[1];
+  //    const min = this.findMinMax(unitTypesResponse.lstUnitTypes)[0];
+  //    const max= this.findMinMax(unitTypesResponse.lstUnitTypes)[1];
 
-     console.log('this.findMinMax(unitTypesResponse.lstUnitTypes)[0]', min,
-     'this.findMinMax(unitTypesResponse.lstUnitTypes)[1]', max);
+  //    console.log('this.findMinMax(unitTypesResponse.lstUnitTypes)[0]', min,
+  //    'this.findMinMax(unitTypesResponse.lstUnitTypes)[1]', max);
      
-      });
-    }
+  //     });
+  //   }
   
 
   public loadScript() {
@@ -202,9 +202,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;
   }
 
-  public ngOnDestroy(): void {
-    if (this.getDataSubscribe$ && this.getDataSubscribe$.closed) {
-      this.getDataSubscribe$.unsubscribe();
-    }
-  }
+  // public ngOnDestroy(): void {
+  //   if (this.getDataSubscribe$ && this.getDataSubscribe$.closed) {
+  //     this.getDataSubscribe$.unsubscribe();
+  //   }
+  // }
 }
