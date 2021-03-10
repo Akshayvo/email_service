@@ -1,4 +1,12 @@
-<div class="contentHolder ">
+<div class="payment-top">
+  <div class="bg-translucent">
+    <div class="container jumbotorn-top text-center" *ngFor="let payRent of payRent">
+        <h1 class="pb-4">{{payRent.heading}}</h1>
+        <p>{{payRent.blurb}}</p>
+    </div>
+  </div>
+</div>
+<div class="contentHolder payment-bottom">
   <div class="container my-3 pb-5">
     <h1 class="text-center py-5 mb-0">{{payRentHeading}}</h1>
     <div class="pay-rent-holder">
