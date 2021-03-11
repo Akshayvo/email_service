@@ -230,6 +230,11 @@
       }
     }
   }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-height: 480px) {
@@ -256,6 +261,11 @@
       }
     }
   }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
 }
 
 
@@ -268,6 +278,11 @@
   .we-provide {
     background-attachment: unset;
     background-position: center top;
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
   }
 }
 
@@ -298,6 +313,11 @@
   .we-provide {
     background-attachment: unset;
     background-position: center top;
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
   }
 }
 
@@ -337,6 +357,11 @@
       font-size: 3rem;
     }
   }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 649px) and (min-height: 481px) {
@@ -374,6 +399,11 @@
       font-size: 3rem;
     }
   }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) and (max-height: 480px) {
@@ -405,11 +435,17 @@
     h1 {
       font-size: 3rem;
     }
+    
   }
 
   .we-provide {
     background-attachment: unset;
     background-position: center top;
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
   }
 }
 
@@ -426,6 +462,11 @@
 
   .disp {
     padding: 0;
+  }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
   }
 }
 
@@ -468,6 +509,11 @@
   .we-provide-background {
     li {
       text-align: left;
+    }
+  }
+  .about-us {
+    .heading {
+      width: 100%;
     }
   }
 }
@@ -522,6 +568,11 @@
       text-align: left;
     }
   }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) and (min-width: 481px) and (max-height: 480px) {
@@ -571,6 +622,11 @@
       text-align: left;
     }
   }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: 480px) and (min-height: 801px) {
@@ -615,6 +671,11 @@
   .we-provide-background {
     li {
       text-align: left;
+    }
+  }
+  .about-us {
+    .heading {
+      width: 100%;
     }
   }
 }
@@ -665,6 +726,11 @@
   .we-provide-background {
     li {
       text-align: left;
+    }
+  }
+  .about-us {
+    .heading {
+      width: 100%;
     }
   }
 }
@@ -718,6 +784,11 @@
   .arrow {
     display: none;
   }
+  .about-us {
+    .heading {
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: 480px) and (max-height: 419px) {
@@ -765,7 +836,7 @@
 
   .about-us {
     .heading {
-      width: auto;
+      width: 100%;
     }
   }
 }

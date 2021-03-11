@@ -36,7 +36,7 @@ export class UaParserService {
     if (this.typeOfImages === 'WEBP') {
       this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Aallen_Storage/webp`;
     } else {
-      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Aallen_Storage/jpg ';
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Aallen_Storage/jpg';
     }
   }
 }
