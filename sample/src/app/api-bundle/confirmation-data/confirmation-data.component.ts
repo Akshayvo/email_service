@@ -251,6 +251,9 @@ getTenantUnitData() {
         if (strConfirmationResponse.intErrorCode === 1) {
           this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
           this.dataSharingService.eventName = 'reservation';
+          if (localStorage.getItem('strTempTenantToken')) {
+            localStorage.removeItem('strTempTenantToken');
+          }
           // this.showConfirmation = false;
           this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
           this.reservationInProgress = false;
@@ -282,10 +285,15 @@ getTenantUnitData() {
       this.MoveIn['blnGenerateDocuments'] = true;
       this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
         .subscribe(strConfirmationResponse => {
-          this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
-          this.dataSharingService.eventName = 'MoveIn';
-          this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
-          this.reservationInProgress = false;
+          if (strConfirmationResponse.intErrorCode === 1) {
+            this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
+            this.dataSharingService.eventName = 'MoveIn';
+            if (localStorage.getItem('strTempTenantToken')) {
+              localStorage.removeItem('strTempTenantToken');
+            }
+            this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
+            this.reservationInProgress = false;
+          }
         }, (err: any) => {
           if (err.status === 403) {
             this.showConfirmation = false;
