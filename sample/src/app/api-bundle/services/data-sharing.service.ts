@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataSharingService {
+  paymentSuccess: boolean;
   strTenantToken: string;
   strTempTenantToken: string;
   verificationCode: string;
