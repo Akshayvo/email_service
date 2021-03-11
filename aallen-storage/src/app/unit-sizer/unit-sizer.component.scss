@@ -14,9 +14,9 @@
   }
 }
 
-.unit-sizer-bottom {
-  padding: 48px 0;
-}
+// .unit-sizer-bottom {
+//   padding: 48px 0;
+// }
 
 .bg-translucent {
   height: 60vh;
@@ -45,6 +45,7 @@
 
 .unit-sizer-border {
   border: 1px solid $primary;
+  background-color: rgba(0,0,0,.2);
 }
 
 .content-Holder {

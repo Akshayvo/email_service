@@ -3,6 +3,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { dataViewRates } from '../../data/view-rates';
 import { viewRates } from '../../data/blurb';
 import { UaParserService } from '../../services/ua-parser.service';
+import { Subscription } from 'rxjs';
 import { script } from '../../data/script';
 import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
 import { CanonicalService } from '../../services/canonical.service';
@@ -24,6 +25,8 @@ export class ViewRatesComponent implements OnInit {
   viewRatesHeading: string;
   viewRatesPageContent: string;
   viewRatesPageTitle: string;
+  private isUnsubscribe$: Subscription;
+
 
 
   constructor(
@@ -45,10 +48,9 @@ export class ViewRatesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.fetchViewRate();
-    // this.fetchSlideShow();
-    this.fetchViewRates();
     window.scrollTo(0, 0);
+    this.fetchViewRate();
+    this.fetchViewRates();   
   }
 
   public fetchViewRate() {
@@ -62,5 +64,9 @@ export class ViewRatesComponent implements OnInit {
     this.viewRatesPageContent = viewRatesPageContent;
     this.viewRatesPageTitle = viewRatesPageTitle;
   }
-
+  public ngOnDestroy(): void {
+    if (this.isUnsubscribe$ && this.isUnsubscribe$.closed) {
+      this.isUnsubscribe$.unsubscribe();
+    }
+  }
 }
