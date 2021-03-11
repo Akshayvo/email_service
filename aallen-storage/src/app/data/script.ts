@@ -81,7 +81,7 @@ export const homePageScript = [ {
     
     "priceRange": script.priceRange,
     "openingHours": script.openingHours,
-    "conditionsOfAccess": "24 Hours Kiosk Access available, on-site manager available by appointment",
+    "conditionsOfAccess": "24 Hours Kiosk Access available,In Person By Appointment Only",
     "currenciesAccepted": script.currenciesAccepted,
     "paymentAccepted": script.paymentAccepted,
      "areaServed": {
@@ -106,7 +106,7 @@ export const homePageScript = [ {
           "postalCode": script.postalCode,
           "streetAddress": script.streetAddress,
         },
-         "url": environment.websiteUrl,
+         "url": environment.websiteUrl + `/contact-us`,
          "image": script.imagesHomePage[0],
         "contactPoint": [{
           "@type": "ContactPoint",
@@ -151,30 +151,30 @@ export const ogHomePage = [
 ];
 
 export const twitterHomePage = [
-  // {
-  //   name: `twitter:site`,
-  //   content: `@${environment.facilityName}`
-  // },
-  // {
-  //   name: `twitter:card`,
-  //   content: `summary`
-  // },
-  // {
-  //   name: `twitter:creator`,
-  //   content: `@syrasoft_connect`
-  // },
-  // {
-  //   name: `twitter:title`,
-  //   content: `@${homePageTitle}`
-  // },
-  // {
-  //   name: `twitter:description`,
-  //   content: `${homePageContent}`
-  // },
-  // {
-  //   name: `twitter:image`,
-  //   content: script.imagesHomePage[0]
-  // },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:title`,
+    content: `@${homePageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: `${homePageContent}`
+  },
+  {
+    name: `twitter:image`,
+    content: script.imagesHomePage[0]
+  },
 ];
 
 export const ogPayRentPage = [
