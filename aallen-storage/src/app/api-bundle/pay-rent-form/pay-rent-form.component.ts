@@ -65,7 +65,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   showLoader = false;
   blnAllowPartialPayments: boolean;
   cards: any;
-
+  paymentSuccess = false;
   marked = false;
   signUp = {};
   logOut = {};
@@ -577,6 +577,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
               this.moveIn(this.MoveIn);
             } else {
+              this.dataSharingService.paymentSuccess = true;
               if (!!this.paymentTab) {
                 this.router.navigate([`pay-rent/${this.paymentTab}/thank-you`])
               } else {
