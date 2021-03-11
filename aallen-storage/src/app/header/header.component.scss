@@ -11,9 +11,7 @@ a {
   color: #ffffff;
   text-align: center;
 }
-.navbar-brand {
-  padding-top: 20px;
-}
+
 .contact-header {
   display: inline;
 
@@ -25,6 +23,11 @@ a {
   }
 }
 
+.nav-item {
+  padding-left: 18px;
+  padding-right: 18px;
+
+}
 
 .navbar {
   .nav-link {
@@ -51,9 +54,6 @@ a {
   }
 }
 
-.navbar-brand {
-  padding-top: 20px;
-}
 
 .bg-gradient {
   /* stylelint-disable-next-line max-line-length */
@@ -65,9 +65,15 @@ a {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   a {
     font-size: 0.9em;
+  }
+
+  .nav-item {
+    padding-left: 14px;
+    padding-right: 14px;
+  
   }
 }
 
