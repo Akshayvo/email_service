@@ -41,7 +41,7 @@ export class ViewRatesComponent implements OnInit {
       name: 'description',
       content: `${this.viewRatesPageContent}`
     });
-    this.titleService.setTitle('View Rates | Aallen Self Storage');
+    this.titleService.setTitle(`${this.viewRatesPageTitle}`);
     this.canonical.create();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;

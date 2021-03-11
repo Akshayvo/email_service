@@ -10,7 +10,7 @@
   display: flex;
 }
 .btn-outline-primary {
-  color: $primary !important;
+  color: $white !important;
 }
 
 .btn-outline-primary:hover {
@@ -83,9 +83,9 @@
   }
 }
 
-.content-margin-top {
-  margin-top: 64px;
-}
+// .content-margin-top {
+//   margin-top: 64px;
+// }
 
 label {
   font-size: 0.875rem;

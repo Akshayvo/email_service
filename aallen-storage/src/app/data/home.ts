@@ -65,7 +65,7 @@ export const aboutUs = [
 
 export const jumbotron = [
     {
-        h2: `Conveniently Located 24-Hour Access Self Storage`,
+        h1: `Conveniently Located 24-Hour Access Self Storage`,
         blurb: `Aallen Self Storage has been serving Fargo, West Fargo, Moorehead, and the surrounding communities since 2009. Our locally owned & operated facility has all of the amenities you need to make your next move, renovation, or other storage project fast and easy. Check out our inventory, then reserve your unit online in seconds! We look forward to meeting you!`,
     }
 ];

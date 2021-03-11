@@ -4,7 +4,15 @@
   display: flex;
   align-items: baseline;
 }
-
+.successmsg {
+  color: white;
+}
+.pb-1 {
+  color: white;
+}
+.pt-3 {
+  color: white;
+}
 
 .display-expiration-date {
   display: flex;
@@ -52,7 +60,7 @@ table {
 
 .payRent {
   h2 {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
   }
 }
 
@@ -121,7 +129,7 @@ table {
 .go-to-home {
   a {
     text-decoration: underline;
-    color: $secondary;
+    color: $white;
     cursor: pointer;
   }
 }

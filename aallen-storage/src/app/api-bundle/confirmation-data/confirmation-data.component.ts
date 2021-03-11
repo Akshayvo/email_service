@@ -10,6 +10,7 @@ import { TenantInfoService } from '../services/tenant-info.service';
 import { Subscription, Subject } from 'rxjs';
 import { option } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-confirmation-data',
@@ -213,7 +214,7 @@ getTenantUnitData() {
     });
   }
 
-    makeAReservation(strConfirmation: any) {
+  makeAReservation(strConfirmation: any) {
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
     this.reservationInProgress = true;
@@ -221,8 +222,9 @@ getTenantUnitData() {
       .subscribe(strConfirmationResponse => {
         if (strConfirmationResponse.intErrorCode === 1) {
           this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
-          this.showConfirmation = false;
-          this.router.navigate(['/view-rates/confirmation-page']);
+          this.dataSharingService.eventName = 'reservation';
+          // this.showConfirmation = false;
+          this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
           this.reservationInProgress = false;
         }
       }, (err: any) => {

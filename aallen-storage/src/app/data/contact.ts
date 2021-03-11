@@ -29,7 +29,7 @@ export const hours = [
         data: `In Person By Appointment Only, Kiosk Access 24/7`
     },
     {
-        label: 'Storage Access Hours: ',
+        label: 'Access Hours: ',
         data: '24 Hours a Day 7 Days a Week'
     }
 ];

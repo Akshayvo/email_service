@@ -3,7 +3,9 @@
 .display-expiration-date {
   display: flex;
 }
-
+.pt-3 {
+  color: white;
+}
 .readonly-form-control {
   .form-control {
     background-color: white;
@@ -46,7 +48,8 @@ table {
 
 .payRent {
   h2 {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
+    color: white;
   }
 }
 
@@ -74,6 +77,7 @@ table {
   .btn-link {
     padding: 0;
     text-decoration: underline;
+    
   }
 }
 
@@ -115,7 +119,7 @@ table {
 .go-to-home {
   a {
     text-decoration: underline;
-    color: $secondary;
+    color: $white;
     cursor: pointer;
   }
 }

@@ -5,9 +5,9 @@
         <div class="row justify-content-center width margin-bottom">
           <div class="col-md-12">
             <div class="disp" *ngFor="let jumbotron of jumbotron">
-              <h2  class="my-4">
-                {{jumbotron.h2}}
-              </h2>
+              <h1  class="my-4">
+                {{jumbotron.h1}}
+              </h1>
             <p class="text-justify">{{jumbotron.blurb}}</p>
             </div>
             <div class="button-top-margin">
@@ -26,7 +26,7 @@
   <div class="about-us bg-dark-background"  #target>
     <div class="container py-5">
       <div class="section py-5 m-0">
-        <h2 class="heading pb-3 text-center">Affordable Self Storage Units in Fargo, N.D.</h2>
+        <h2 class="heading pb-3 text-center">{{aboutUsHeading}}</h2>
         <div class="row content-margin-top">
           <div class="col-md-6 py-3">
             <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
@@ -74,7 +74,7 @@
         <div class="row content-margin-top">
             <div class="col-md-6 py-3">
                 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.533752182271!2d-73.94262538438662!3d42.84046171261981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6e7c26c4b959%3A0x88f2e4056402869c!2sScotia+Storage+Co!5e0!3m2!1sen!2sus!4v1542138509038" width="100%" height="250" frameborder="0" allowfullscreen></iframe> -->
-                <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2293.378269093615!2d-96.83661274537617!3d46.87711184691211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1264bbc812dbf7d9!2sAallen&#39;self%20Storage!5e0!3m2!1sen!2sus!4v1614963158828!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe title="Facility Google Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2293.378269093615!2d-96.83661274537617!3d46.87711184691211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1264bbc812dbf7d9!2sAallen&#39;self%20Storage!5e0!3m2!1sen!2sus!4v1614963158828!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
           <div class="col-md-6 py-3 locate-us-style">
             <div class="mb-4 contact-details">
