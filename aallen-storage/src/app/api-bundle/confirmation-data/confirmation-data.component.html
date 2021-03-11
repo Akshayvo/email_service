@@ -5,8 +5,8 @@
     <p class="px-2 my-2" *ngIf="navigateToMoveIn"><b>Confirming your Move in, please wait...</b></p>
 </div>
 
-<div class="row confirmation-style">
-    <div class="col-md-6 p-3">
+<div class="row">
+    <div class="col-md-6 p-3 tenant-info-style">
             <h3 class="mb-3">Tenant Information</h3>
             <table>
                 <tbody>
@@ -85,7 +85,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-lg-6 p-3 ">
+        <div class="col-lg-6 p-3 confirmation-style">
             <h3 class="mb-3">Unit Information</h3>
             <table class="p-2">
                 <tbody>
@@ -140,6 +140,69 @@
                             {{period}}
                         </td>
                     </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-6 p-3 confirmation-style" *ngIf="!!showAltDetails">
+            <h3 class="mb-3">Alternate Contact Information</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            {{alternateName}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Phone Number 
+                        </td>
+                        <td>
+                            {{alternatePhone}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Address Line 1
+                        </td>
+                        <td>
+                            {{alternateAddressLine1}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                Address Line 2
+                        </td>
+                        <td>
+                            {{alternateAddressLine2}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                City
+                        </td>
+                        <td>
+                            {{alternateCity}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            State
+                    </td>
+                        <td>
+                            {{alternateStateString}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                ZIP
+                        </td>
+                        <td>
+                            {{alternateZIP}}
+                        </td>
+                    </tr>                     
                 </tbody>
             </table>
         </div>
