@@ -1,10 +1,11 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { viewRates } from '../../data/view-rates';
+import { dataViewRates, viewRatesAltText } from '../../data/view-rates';
 import { MetaService } from '../../services/link.service';
 import { UaParserService } from '../../services/ua-parser.service';
+import { viewRatesHeading } from '../..//data/heading';
 import { viewRatesPageContent, viewRatesPageTitle } from '../../data/title';
-import { viewRatesHeading } from '../../data/heading';
+import { CanonicalService } from '../../services/canonical.service';
 
 @Component({
   selector: 'app-view-rates-iframe-page',
@@ -13,39 +14,37 @@ import { viewRatesHeading } from '../../data/heading';
 })
 export class ViewRatesIframePageComponent implements OnInit {
 
-  altText: string;
   viewRates: any;
-  iframe: any;
   imagetype: any;
   imageBaseUrl: any;
+  viewRatesHeading: string;
   viewRatesPageContent: string;
   viewRatesPageTitle: string;
-  viewRatesHeading: string;
+  viewRatesAltText: string;
 
   constructor(
     private titleService: Title,
     private meta: Meta,
     private metaService: MetaService,
     private uaParserService: UaParserService,
+    private canonical: CanonicalService
   ) {
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
       content: `${this.viewRatesPageContent}`
-
     });
     this.titleService.setTitle(`${this.viewRatesPageTitle}`);
-    this.metaService.createCanonicalURL();
-    this.metaService.createCanonicalURL();
-    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.canonical.create();
+        this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
 
   }
 
   ngOnInit() {
+    this.fetchViewRatesHeading();
     window.scrollTo(0, 0);
     this.fetchViewRates();
-    this.fetchViewRatesHeading();
   }
 
   public fetchViewRatesHeading() {
@@ -57,8 +56,9 @@ export class ViewRatesIframePageComponent implements OnInit {
     this.viewRatesPageTitle = viewRatesPageTitle;
   }
 
+
   public fetchViewRates() {
-    this.viewRates = viewRates;
+    this.viewRates = dataViewRates;
+    this.viewRatesAltText = viewRatesAltText;
   }
 }
-

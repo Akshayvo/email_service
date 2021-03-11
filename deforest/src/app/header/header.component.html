@@ -20,7 +20,7 @@
         </div>
         <div class="col-xl-2 col-1  text-right">
           <span class="social pl-lg-2 pl-md-2 pl-0" *ngFor="let social of socialLinks">
-            <a [href]="social?.path" target="_blank">
+            <a [href]="social?.path" target="_blank" rel="noopener" aria-label="facebook">
               <i [class]="social?.class" ></i>
             </a>
           </span>

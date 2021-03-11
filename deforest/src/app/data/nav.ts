@@ -1,3 +1,5 @@
+import { environment } from '../../environments/environment';
+
 export const navLinks = [
     {
         label: 'HOME',
@@ -5,19 +7,19 @@ export const navLinks = [
     },
     {
         label: 'VIEW RATES',
-        path: '/view-rates',
+        path: `${environment.locationName}/view-rates`,
     },
     {
         label: 'RENT NOW',
-        path: '/rent-now'
+        path: `${environment.locationName}/rent-now`,
     },
     {
         label: 'UNIT SIZER',
-        path: 'unit-sizer',
+        path: '/unit-sizer'
     },
     {
         label: 'RESERVE UNIT',
-        path: 'reserve-unit'
+        path: `${environment.locationName}/reserve-unit`,
     },
     {
         label: 'PAY RENT',
@@ -25,10 +27,11 @@ export const navLinks = [
     },
     {
         label: 'STORAGE TIPS',
-        path: 'storage-tips',
+        path: `${environment.locationName}/storage-tips`
     },
+   
     {
         label: 'CONTACT US',
-        path: 'contact-us'
+        path: '/contact-us'
     },
 ];

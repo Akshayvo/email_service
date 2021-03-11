@@ -15,7 +15,7 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-6 col-12">
-                        <label>UserName</label> &nbsp;
+                        <label>User Name</label> &nbsp;
                         <input type="text" formControlName="strUserName"  
                         class="form-control" 
                         [ngClass]="{ 'is-invalid': submitted && f.strUserName.errors }"
@@ -44,7 +44,7 @@
         </div>
     
         <div class="forgot-link">
-            <a (click)="navigate('/pay-rent/forgotPassword')">Forgot Password</a>
+            <a (click)="navigate('forgotPassword')">Forgot Password</a>
         </div>
         <div class="forgot-link">
             <a (click)="openBox()" >Change Your Password</a>
@@ -54,17 +54,17 @@
             <!-- <div id="myModal" class="modal fade" role="dialog">
                 <div class="modal-dialog"> -->
                     <!-- Modal content-->
-                    <app-login-modal *ngIf="!!open" (someEvent)="openBox()"></app-login-modal>
+                    <app-login-modal *ngIf="!!open" (closeLoginPrompt)="openBox()"></app-login-modal>
                 <!-- </div>
-            </div> -->
+            </div> -->      
         </div>
     </div>    
 
 
     <div class="col-md-5  vertical-line"  >
-        <h3 class="pb-2"><strong>How to Login</strong></h3>
+        <h3><strong>How to Login</strong></h3><br>
         <div *ngFor="let loginDetail of loginDetail">
-          <p><b>Username</b>&nbsp;{{loginDetail.userName}}<br>
+          <p><b>Username: </b>&nbsp;{{loginDetail.userName}}<br>
           <b>Password:</b>&nbsp;{{loginDetail.password}}</p>
             <!-- <p><b>Example:</b></p>
             <p>John Smith's {{loginDetail.example.code}}</p>
@@ -72,7 +72,7 @@
               John's Password: {{loginDetail.example.password}}</p> -->
             <p><strong>Have questions about your account?</strong><br>
             <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
-              <a  *ngIf="contact?.id == 1 || contact?.id == 2" [href]="contact?.redirect">
+              <a  *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content" [href]="contact?.redirect">
                 {{contact.data}}
               </a>
             <br>

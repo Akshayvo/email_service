@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataSharingService {
-
+  strTenantToken: string;
+  strTempTenantToken: string;
   verificationCode: string;
   navigateToPrevious: string;
   navigateToReserve: boolean;
@@ -18,7 +19,24 @@ export class DataSharingService {
   strConfirmation: string;
   addingTenant = false;
   period: string;
+  apiKey = '';
+  paymentNavigation: string;
+  isDataUpdated: boolean;
+  isDataSaved: boolean;
+  PaymentAmount: number;
+  CCApprovalCode: string;
+  eventName: string;
+  signUpForAutoPay: boolean;
+  showAltDetails: boolean;
 
+  cardDetailsObject = {
+    CCNumber: '',
+    CCBillingAccountName: '',
+    CCExpirationMonth: '',
+    CCExpirationYear: '',
+    CCBillingAddress: '',
+    CCBillingZIP: '',
+  };
 
 
   MoveInData = {
@@ -66,6 +84,13 @@ export class DataSharingService {
     City: '',
     State: '',
     ZIP: '',
+    AlternateName: '',
+    AlternatePhone: '',
+    AlternateAddressLine1: '',
+    AlternateAddressLine2: '',
+    AlternateCity: '',
+    AlternateState: '',
+    AlternateZIP: ''
   };
 
 

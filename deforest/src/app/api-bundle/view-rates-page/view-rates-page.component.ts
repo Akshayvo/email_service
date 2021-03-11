@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ElementRef, HostListener, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef, HostListener, } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
@@ -7,13 +7,13 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { th } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
-
-
+import { environment } from '../../../environments/environment';
+import { objSIMSetting } from '../../data/configuration';
+import { script } from '../../data/script';
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
-  styleUrls: ['./view-rates-page.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+  styleUrls: ['./view-rates-page.component.scss']
 })
 export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
@@ -48,6 +48,14 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   th: any;
   tenant: any;
   text = false;
+  objSIMSetting: any;
+  showRate: boolean;
+  showDeposit: boolean;
+  showReserve: boolean;
+  showMovein: boolean;
+  showClimateControl: boolean; 
+  facilityName: string;
+  state: string;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -57,22 +65,29 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     private dataSharingService: DataSharingService,
     private eRef: ElementRef
   ) {
+    this.facilityName = environment.facilityName;
    }
 
 
   ngOnInit() {
     this.getData();
-    this.fetchThData();
+    this.fetchThData();    
+    this.state = script.state;
   }
 
   public fetchThData() {
-    this.th = th;
+    this.th = th.filter(x => x.state === true);
+    this.showRate = objSIMSetting.objUnitSizesSetting.blnShowRate;
+    this.showDeposit = objSIMSetting.objUnitSizesSetting.blnShowDeposit;
+    this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;
+    this.showMovein = objSIMSetting.objActionSetting.blnAllowMoveIn;
+    this.showClimateControl = objSIMSetting.objUnitSizesSetting.blnClimateControl;
   }
 
 
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);
-    this.router.navigate([location]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
     this.dataSharingService.LstUnitTypes = unitData;
   }
 
@@ -116,7 +131,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   }
 
   getData() {
-  this.getDataSubscribe$ = this.fetchDataService.getData( )
+  this.getDataSubscribe$ = this.fetchDataService.getData()
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;

@@ -1,4 +1,5 @@
-export const viewRates = [
+import { objSIMSetting } from './configuration';
+export const dataViewRates = [
     {
         p: `Deforest Self Storage is committed to giving our clients the personalized service they
             expect, and quality Storage Rental Services they will enjoy for many years to come. We
@@ -15,28 +16,45 @@ export const viewRates = [
     },
 ];
 
-export const th = [
-    {
-      data: `Size`
-    },
-    {
-      data: `Rate`
-    },
-    {
-      data: `Deposit`
-    },
-    {
-      data: 'Move In<div class="text-style">(Move In Today)</div>'
-    },
-    {
-      data: `Reserve a Unit<div class="text-style">(Future Move In Date)</div`
-    },
-    {
-      data: 'Climate Control'
-    }
-  ];
+export const viewRatesAltText = ``;
 
-  export const option =  [
+export const th = [
+  {
+    data: `Size`,
+    state: true,
+  },
+  {
+    data: `Rate`,
+    state: objSIMSetting.objUnitSizesSetting.blnShowRate
+  },
+  {
+    data: 'Deposit',
+    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  },
+  {  
+    data: `Move In`,
+    state: objSIMSetting.objActionSetting.blnAllowReservation
+  },
+  {
+    data: `Reserve a Unit`,
+    state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  },
+  {
+    data: `Climate Control`,
+    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  },
+];
+
+export const state = {
+  size: true,
+  rate: objSIMSetting.objUnitSizesSetting.blnShowRate,
+  deposit: objSIMSetting.objUnitSizesSetting.blnShowDeposit,
+  reserve: objSIMSetting.objActionSetting.blnAllowReservation,
+  moveIn: objSIMSetting.objActionSetting.blnAllowMoveIn,
+  climateControl: objSIMSetting.objUnitSizesSetting.blnClimateControl,
+};
+
+export const option =  [
     {
       description: 'Alabama',
       id: 'AL'
@@ -326,3 +344,58 @@ export const th = [
       id: 'YT'
     },
   ];
+
+  export const option1 =  [
+    {
+      description: 'Alberta',
+      id: 'AB'
+    },
+    {
+      description: 'British Columbia',
+      id: 'BC'
+    },
+    {
+      description: 'Manitoba',
+      id: 'MB'
+    },
+    { 
+      description: 'New Brunswick',
+      id: 'NB'
+    },
+    {
+      description: 'Newfoundland and Labrador',
+      id: 'NL'
+    },
+    {
+      description: 'Northwest Territories',
+      id: 'NT'
+    },
+    {
+      description: 'Nova Scotia',
+      id: 'NS'
+    },
+    {
+      description: 'Nunavut',
+      id: 'NU'
+    },
+    {
+      description: 'Ontario',
+      id: 'ON'
+    },
+    {
+      description: 'Prince Edward Island',
+      id: 'PE'
+    },
+    {
+      description: 'Quebec',
+      id: 'QC'
+    },
+    {
+      description: 'Saskatchewan',
+      id: 'SK'
+    },
+    {
+      description: 'Yukon',
+      id: 'YT'
+    },
+    ];

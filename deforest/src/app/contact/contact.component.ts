@@ -1,12 +1,14 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { WINDOW } from '@ng-toolkit/universal';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { contact, hours, officeHours } from '../data/contact';
 import { EmailService } from '../services/email.service';
-import { contact, officeHours } from '../data/contact';
-import { contactPageContent, contactPageTitle } from '../data/title';
+import { MetaService } from '../services/link.service';
+import { contactPageTitle, contactPageContent } from '../data/title';
 import { contactHeading } from '../data/heading';
-import { contactscript } from '../data/script';
+import { CanonicalService } from '../services/canonical.service';
+import { contactPageScript, ogContactPage, twitterContactPage } from '../data/script';
 
 @Component({
   selector: 'app-contact',
@@ -15,10 +17,10 @@ import { contactscript } from '../data/script';
 })
 export class ContactComponent implements OnInit {
 
+  contactDetails: any;
   hours: any;
   name: string;
   email: any;
-  phone: any;
   message: string;
   contactInfo: any;
   receiveremail: string;
@@ -26,59 +28,104 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   submitted = false;
   mailSent = false;
-  contactPageContent: string;
+  head: any;
+  phone: any;
   contactPageTitle: string;
+  contactPageContent: string;
   contactHeading: string;
-  contactscript: any;
+  og: any;
+  twitter: any;
   script: any;
 
   constructor(
-    @Inject(WINDOW) private window: Window,
+    private router: Router,
     private emailService: EmailService,
     private titleService: Title,
+    private meta: Meta,
     private formBuilder: FormBuilder,
-    private meta: Meta
+    private metaService: MetaService,
+    private canonical: CanonicalService
   ) {
-    this.fetchMetaData();
     this.fetchScript();
     this.loadScript();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
       content: `${this.contactPageContent}`
     });
     this.titleService.setTitle(`${this.contactPageTitle}`);
-    this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      phone: ['', [Validators.required,
-              Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      subject: [''],
-  });
-  }
+    this.canonical.create();
+    }
 
   ngOnInit() {
     this.fetchContactDetails();
-    this.fetchScript();
-    window.scrollTo(0, 0);
     this.fetchHours();
+    this.fetchContactHeading();
+    this.contactForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      phone: ['', [Validators.required,
+      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required],
+      subject: ['']
+  });
   }
 
   get f() { return this.contactForm.controls; }
 
+
+  public fetchOg() {
+    this.og = ogContactPage;
+}
+
+public fetchScript() {
+  this.script = contactPageScript;
+}
+
+public loadScript() {
+  const node = document.createElement('script'); // creates the script tag
+  node.type = 'application/ld+json'; // set the script type
+  node.async = false; // makes script run asynchronously
+  // node.charset = 'utf-8';
+  node.innerHTML = JSON.stringify(this.script);
+  // append to head of document
+  document.getElementsByTagName('head')[0].appendChild(node);
+}
+
+
+public fetchTwitter() {
+    this.twitter = twitterContactPage;
+}
+
+  public navigate(location: any) {
+    this.router.navigate([location]);
+  }
 
   public fetchMetaData() {
     this.contactPageTitle = contactPageTitle;
     this.contactPageContent = contactPageContent;
   }
 
-  public fetchScript() {
-    this.script = contactscript;
+  public fetchContactDetails() {
+    this.contactDetails = contact;
   }
 
-
-  public fetchContactDetails() {
-    this.contactInfo = contact;
+  public fetchContactHeading() {
     this.contactHeading = contactHeading;
   }
 
@@ -86,34 +133,36 @@ export class ContactComponent implements OnInit {
     this.hours = officeHours;
   }
 
-  public loadScript() {
-    const node = document.createElement('script'); // creates the script tag
-    node.type = 'application/ld+json'; // set the script type
-    node.async = false; // makes script run asynchronously
-    // node.charset = 'utf-8';
-    node.innerHTML = JSON.stringify(this.script);
-    // append to head of document
-    // document.getElementsByTagName('head')[0].appendChild(node);
-    document.head.appendChild(node);
-
-  }
 
   onSubmit() {
+    const today = new Date();
+    window['dataLayer'] = window['dataLayer'] || {};
+    window['dataLayer'] = window['dataLayer'] || [];
+    window['dataLayer'].push({
+      'event': 'ContactFormsubmission',
+      'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
+      'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+    });
+
+
     this.submitted = true;
 
    // stop here if form is invalid
    if (this.contactForm.invalid) {
        return;
    } else {
-
     if ( !this.contactForm.value.subject) {
       this.contactForm.value.subject = 'Website Form Submission';
     }
 
-     this.receiveremail = this.contactInfo[1].data;
+    const index = contact.findIndex(x => x.label === 'Email:');
 
-         this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
-                                message: ${this.contactForm.value.message}`;
+    if (!!index) {
+      this.receiveremail = this.contactDetails[index].data;
+    }
+
+     this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
+     message: ${this.contactForm.value.message}`;
 
          const body = {
            name: this.contactForm.value.name,
@@ -125,16 +174,14 @@ export class ContactComponent implements OnInit {
          this.emailService.sendEmail(body)
            .subscribe((response: any) => {
              if (response.result != null) {
-              this.mailSent = true;
+                this.mailSent = true;
              } else {
              }
            }, (err) => {
-             console.log('Error :', err);
            });
          this.submitted = false;
          this.mailSent = false;
          this.contactForm.reset();
    }
  }
-
 }

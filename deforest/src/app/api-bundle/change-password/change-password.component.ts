@@ -1,9 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { AuthService } from '../services/auth.service';
-
-import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { AuthService } from '../services/auth.service';
 import { DataSharingService } from '../services/data-sharing.service';
 import { MustMatch } from './_helpers/must-match.validator';
 @Component({
@@ -13,11 +12,12 @@ import { MustMatch } from './_helpers/must-match.validator';
 })
 export class ChangePasswordComponent implements OnInit, OnDestroy {
 
-  changePasswordForm: FormGroup;
   submitted = false;
-  incorrectPassword = false;
   showLoader = false;
   passwordChanged = false;
+  incorrectPassword = false;
+  paymentTab: string;
+  changePasswordForm: FormGroup;
   private changePasswordUnsubscribe$: Subscription;
 
   constructor(
@@ -38,8 +38,15 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
     if (this.passwordChanged === true) {
-      this.router.navigate(['pay-rent/login']);
+      if (!!this.paymentTab) {
+        this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
+      } else {
+        this.router.navigate([`/pay-rent/login`]);
+      }
     }
   }
 
@@ -48,7 +55,11 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
   goBack() {
     this.dataSharingService.changePassword = false;
     localStorage.removeItem('strTenantToken');
-    this.router.navigate(['pay-rent/login']);
+    if (!!this.paymentTab) {
+      this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
+    } else {
+      this.router.navigate([`/pay-rent/login`]);
+    }
   }
 
   public navigate(location: any) {
@@ -58,7 +69,7 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
 
   changePassword(data: any): void {
     this.showLoader = true;
-  this.changePasswordUnsubscribe$ =  this.authService.changePassword(data)
+    this.changePasswordUnsubscribe$ =  this.authService.changePassword(data)
     .subscribe(
       result => {
         this.showLoader = false;
@@ -87,5 +98,4 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
       this.changePasswordUnsubscribe$.unsubscribe();
     }
   }
-
 }

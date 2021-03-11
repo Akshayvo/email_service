@@ -1,13 +1,17 @@
 import { Component, OnInit, OnDestroy, ViewChild  } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { viewRates } from '../../data/view-rates';
+import { dataViewRates, viewRatesAltText } from '../../data/view-rates';
 import { MetaService } from '../../services/link.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { UaParserService } from '../../services/ua-parser.service';
-import { viewRatesPageContent, viewRatesPageTitle } from '../../data/title';
-import { viewRatesHeading } from '../../data/heading';
 import { Subscription } from 'rxjs';
+import { viewRatesHeading } from '../../data/heading';
+import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
+import { Router } from '@angular/router';
+import { CanonicalService } from '../../services/canonical.service';
+import { environment } from '../../../environments/environment';
+import { script } from '../../data/script';
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -22,32 +26,33 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
   DescriptionVR: string;
   MonthlyRateVR: number;
-  viewRatesPageContent: string;
-  viewRatesPageTitle: string;
 
   openComponent = false;
   imagetype: any;
-  viewRatesHeading: string;
   imageBaseUrl: any;
-  altText: string;
-
+  viewRatesHeading: string;
+  viewRatesPageContent: string;
+  viewRatesPageTitle: string;
+  viewRatesAltText: string;
+  state:string;
  private isUnsubscribe$: Subscription;
 
   constructor(
     private titleService: Title,
+    private router: Router,
     private meta: Meta,
     private metaService: MetaService,
-    private fetchDataService: FetchDataService,
     private uaParserService: UaParserService,
+    private canonical: CanonicalService
   ) {
+    this.state = script.state;
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
       content: `${this.viewRatesPageContent}`
     });
     this.titleService.setTitle(`${this.viewRatesPageTitle}`);
-    this.metaService.createCanonicalURL();
-    this.metaService.createCanonicalURL();
+    this.canonical.create();
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
 
@@ -56,16 +61,26 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.fetchViewRates();
-    // this.getData();
-    this.fetchHeading();
+    this.fetchViewRatesHeading();
   }
 
-  public fetchHeading() {
-    this.viewRatesHeading = viewRatesHeading;
+  
+  public navigate(location: any) {
+    if ((location === '/view-rates') || (location === '/storage-tips') || (location === '/reserve-unit')) {
+      this.router.navigate([`${environment.locationName}/${location}`]);
+    } else {
+      this.router.navigate([`${location}`]); 
+    }
   }
 
   public fetchViewRates() {
-    this.viewRates = viewRates;
+    this.viewRates = dataViewRates;
+    this.viewRatesAltText = viewRatesAltText;
+  }
+
+  public fetchViewRatesHeading() {
+    this.viewRatesHeading = viewRatesHeading;
+    console.log(this.viewRatesHeading);
   }
 
   public fetchMetaData () {
@@ -73,20 +88,13 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     this.viewRatesPageTitle = viewRatesPageTitle;
   }
 
+
   handleClick(event: Event, event1: Event) {
     this.openComponent = true;
     this.DescriptionVR = JSON.parse(JSON.stringify(event));
     this.MonthlyRateVR = parseFloat(JSON.stringify(event1));
-
   }
 
-  getData() {
-  this.isUnsubscribe$ = this.fetchDataService.getData()
-    .subscribe(unitTypesResponse => {
-      this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
-    });
-  }
 
   public ngOnDestroy(): void {
     if (this.isUnsubscribe$ && this.isUnsubscribe$.closed) {

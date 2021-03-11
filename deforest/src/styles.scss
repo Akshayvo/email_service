@@ -7,6 +7,7 @@ $secondary: #1e4f2c;
 $dark: #333;
 $light: #edf1ee;
 $white: #fff;
+$black: #000;
 $navbg: #ebebeb;
 $border: #707070;
 $shadow: #000;
@@ -45,6 +46,9 @@ body {
   background: $navbg;
 }
 
+.background-padding {
+  padding: 64px;
+}
 
 .btn {
   min-width: 160px;
@@ -96,6 +100,7 @@ body {
 
 h1 {
   font-size: 2rem;
+  // margin-top:100px;
 }
 
 h2 {

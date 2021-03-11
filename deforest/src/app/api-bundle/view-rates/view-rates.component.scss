@@ -6,13 +6,6 @@
   display: contents;
 }
 
-
-.contentHolder {
-  padding-top: 110px;
-  min-height: 96vh;
-  margin-bottom: 50px;
-}
-
 .view-rates {
   background-color: #edf1ee;
   padding: 64px;
@@ -28,10 +21,12 @@ table {
       font-size: 1rem;
     }
   }
+
   tbody {
-    tr:nth-child(even){
+    tr:nth-child(even) {
       background-color: #dcdcdc;
     }
+
     tr {
       td {
 
@@ -75,12 +70,16 @@ table {
 }
 // table style
 
+.view-rate-heading {
+  display: none;
+}
+
 .contentHolder {
   h1 {
     margin-block-end: 0;
+    margin-top: 100px;
   }
 }
-
 
 .background-padding {
   padding: 64px;
@@ -102,8 +101,8 @@ table {
     padding: 16px 0;
   }
 
+
   img {
-    height: 200px;
     width: 100%;
   }
 

@@ -4,9 +4,7 @@ import { contact } from '../../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import { payRentPageContent, payRentPageTitle } from '../../data/title';
 import { payRentHeading } from '../../data/heading';
-import { loginDetail } from '../../data/pay-rent';
-import { Route, Router } from '@angular/router';
-import { DataSharingService } from '../services/data-sharing.service';
+import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
 
 @Component({
   selector: 'app-payment',
@@ -14,23 +12,35 @@ import { DataSharingService } from '../services/data-sharing.service';
   styleUrls: ['./payment.component.scss']
 })
 export class PaymentComponent implements OnInit {
-
+  
+  og: any;
+  twitter: any;
   contact: any;
+  payRentHeading: string;
   payRentPageTitle: string;
   payRentPageContent: string;
-  payRentHeading: string;
-  loginDetail = [];
-
-
 
   constructor(
     private titleService: Title,
-    private router: Router,
-    private  dataSharingService: DataSharingService,
     @Inject(WINDOW) private window: Window,
     private meta: Meta
   ) {
-    this.fetchMetaData();
+    // this.fetchMetaData();
+    // this.fetchOg();
+    // this.fetchTwitter();
+    // this.og.forEach(element => {
+    //   this.meta.addTag({
+    //     property: element.property,
+    //     content: element.content
+    //   })
+    // });
+
+    // this.twitter.forEach(element => {
+    //   this.meta.addTag({
+    //     name: element.name,
+    //     content: element.content
+    //   })
+    // });
     this.meta.addTag({
       name: 'description',
       content: `${this.payRentPageContent}`
@@ -40,25 +50,30 @@ export class PaymentComponent implements OnInit {
 
   ngOnInit() {
     this.fetchContactDetails();
-    this.fetchPayRentHeading();
-    this.fetchLoginDetail();
+    this.fetchpayRentHeading();
     window.scrollTo(0, 0);
   }
 
+  
+  // public fetchOg() {
+  //   this.og = ogPayRentPage;
+  // }
+
+  // public fetchTwitter() {
+  //   this.twitter = twitterPayRentPage;
+  // }
+
+
   public fetchMetaData() {
-    this.payRentPageTitle = payRentPageTitle;
     this.payRentPageContent = payRentPageContent;
+    this.payRentPageTitle = payRentPageTitle;
+  }
+
+  public fetchpayRentHeading() {
+    this.payRentHeading = payRentHeading;
   }
 
   public fetchContactDetails() {
     this.contact = contact;
-  }
-
-  public fetchLoginDetail() {
-    this.loginDetail = loginDetail;
-  }
-
-  public fetchPayRentHeading() {
-    this.payRentHeading = payRentHeading;
   }
 }

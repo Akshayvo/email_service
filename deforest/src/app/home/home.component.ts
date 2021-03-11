@@ -7,6 +7,7 @@ import { contact, officeHours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs,
           gettingStarted, feature, blurbHeading, blurbText, aboutFamily } from '../data/home';
 import { script } from '../data/script';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -49,7 +50,11 @@ export class HomeComponent implements OnInit {
   }
 
   public navigate(location: any) {
-    this.router.navigate([location]);
+    if ((location === '/view-rates') || (location === '/storage-tips') || (location === '/reserve-unit')) {
+      this.router.navigate([`${environment.locationName}/${location}`]);
+    } else {
+      this.router.navigate([`${location}`]); 
+    }
   }
 
   ngOnInit() {

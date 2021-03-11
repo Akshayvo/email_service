@@ -51,7 +51,7 @@ table {
           padding: 0.2rem 0.8rem;
         }
 
-        .btn-secondary {
+        .btn-primary {
           background-color: #3f3c3c !important;
           border-color: #212121 !important;
         }
@@ -62,7 +62,7 @@ table {
 
 .loader {
   border: 5px solid #f3f3f3;
-  border-top: 5px solid $secondary;
+  border-top: 5px solid $primary;
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -75,6 +75,12 @@ table {
   100% { transform: rotate(360deg); }
 }
 
+// try to use div
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 p {
   margin: 0;
@@ -91,7 +97,7 @@ p {
 }
 
 .ClimateBorder {
-  border-left: 1px solid #000;
+  border-left: 1px solid $black;
   text-align: left;
 }
 
@@ -105,12 +111,22 @@ p {
   .viewrates-desktop {
     display: none;
   }
+
+  .buttons {
+    .btn-outline-primary {
+      // color: $primary !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 767px)  and (min-width: 381px) {
   .buttons {
     .btn {
       min-width: 150px;
+    }
+
+    .btn-outline-primary {
+      // color: $primary !important;
     }
   }
 }

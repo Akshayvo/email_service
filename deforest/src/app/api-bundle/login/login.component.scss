@@ -34,7 +34,7 @@
 
 .loader {
   border: 5px solid #f3f3f3;
-  border-top: 5px solid $secondary;
+  border-top: 5px solid $primary;
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -56,11 +56,10 @@
   align-items: end;
 }
 
-
 @media only screen and (max-width: 767px) {
   .vertical-line {
-    padding-top: 15px;
-    border-left: 0;
-    padding-left: 15px;
+    border-left: 0 solid black;
+    padding-left: 20px;
+    padding-top: 20px;
   }
 }
