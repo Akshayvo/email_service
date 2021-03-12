@@ -17,9 +17,9 @@ export const contact = [
     {
         id: 2,
         label: 'Phone:',
-        data: '(734) 777-3711',
+        data: '(734) 790-9085',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:7347773711',
+        redirect: 'tel:7347909085',
     }
 ];
 
