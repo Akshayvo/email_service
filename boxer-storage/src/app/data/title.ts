@@ -4,8 +4,8 @@ export const homePageContent = `Boxer Storage offers convenient 24/7 access to y
 export const location1PageTitle = `Evanston Ave Location | Boxer Storage`;
 export const location1PageContent = `Take a moment to review our current availability and rates, then reserve your unit or rent online in a matter of minutes!`;
 
-export const location2PageTitle = `Silverhill Location | Storage Plus of Baldwin County`;
-export const location2PageContent = `Our Silverhill location offers a large variety of regular and climate controlled storage units in a number of sizes, and all of our units are priced competitively!`;
+export const location2PageTitle = ``;
+export const location2PageContent = ``;
 
 export const location3PageTitle = `Barnwell Location | Storage Plus of Baldwin County`;
 export const location3PageContent = `Our Barnwell location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;

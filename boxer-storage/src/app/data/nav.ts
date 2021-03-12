@@ -14,7 +14,7 @@ export const navLinks = [
             {
                 id: '1',
                 label: 'Evanston Ave Location',
-                path: `/location/evanston-ave`,
+                path: `${environment.locationName}/evanston-ave`,
               },
         ]
     },

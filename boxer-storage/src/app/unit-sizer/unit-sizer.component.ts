@@ -4,6 +4,8 @@ import { unitSizerLocation1, unitSizerLocation2,
    unitSizerLocation3, unitSizerLocation4, unitSizerLocation5, unitSizerLocation6
    } from '../data/location';
 import { CanonicalService } from '../services/canonical.service';
+import { environment } from '../../environments/environment';
+
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -27,7 +29,7 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/evanston-ave')) {
+    if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
       this.fetchDetailsLocation1();
   } 
   // else if (this.router.url.includes('/location/silverhill')) {

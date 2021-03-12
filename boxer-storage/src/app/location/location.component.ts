@@ -91,9 +91,9 @@ export class LocationComponent implements OnInit {
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
       if (this.activatedRoute.snapshot.url[1].path) {
-        this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
+        this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[2].path;
       }
-      if (this.router.url.includes(`/location/evanston-ave`)) {
+      if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
             this.meta.addTag({
               name: 'description',
               content: `${this.location1PageContent}`
@@ -283,7 +283,7 @@ export class LocationComponent implements OnInit {
 
   
   public fetchOg() {
-    if (this.router.url.includes('/location/evanston-ave')) {
+    if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
       this.og = ogLocation1;
   } 
   // else if (this.router.url.includes('/location/silverhill')) {
@@ -300,7 +300,7 @@ export class LocationComponent implements OnInit {
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes('/location/evanston-ave')) {
+    if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
       this.twitter = twitterLocation1;
   } 
   // else if (this.router.url.includes('/location/silverhill')) {
@@ -317,7 +317,7 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/evanston-ave')) {
+    if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
         this.fetchDetailsLocation1();
     } 
     // else if (this.router.url.includes('/location/silverhill')) {
@@ -335,7 +335,7 @@ export class LocationComponent implements OnInit {
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate(['/location/evanston-ave/reserve-unit'],
+    this.router.navigate([`${environment.locationName}/evanston-ave/reserve-unit`],
           );
   } 
   // else if ( this.locationId === 2 ) {

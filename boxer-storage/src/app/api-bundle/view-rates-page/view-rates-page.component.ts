@@ -7,6 +7,8 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { th } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
+import { environment } from '../../../environments/environment';
+
 
 
 @Component({
@@ -76,6 +78,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   }
 
   public navigate(location: any, unitData: any) {
+    console.log(location);
 
     // Base location of the facility will be appended to URL
     this.navTo = this.router.url;
@@ -86,7 +89,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.dataSharingService.updateMyNavLink('viewRates', 'prev', `${this.router.url}`);
     const myNavLinks = this.dataSharingService.getMyNavLinks('viewRates');
     console.log('TCL: ViewRatesPageComponent -> navigate -> myNavLinks', myNavLinks);
-    this.router.navigate([`location/${this.facilityLocation}/${location}`]);
+    this.router.navigate([`${environment.locationName}/${this.facilityLocation}/${location}`]);
     this.dataSharingService.LstUnitTypes = unitData;
   }
 

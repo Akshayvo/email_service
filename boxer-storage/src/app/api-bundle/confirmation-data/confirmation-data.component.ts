@@ -9,6 +9,7 @@ import { TenantInfoService } from '../services/tenant-info.service';
 import { Subscription } from 'rxjs';
 import { option } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-confirmation-data',
@@ -240,9 +241,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           this.reservationInProgress = false;
 
           if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
           } else {
-            this.router.navigate([`location/${this.facilityLocation}/reserve-unit/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
           }
         }
 
@@ -287,9 +288,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           }
           this.reservationInProgress = false;
           if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`location/${this.facilityLocation}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
           } else {
-            this.router.navigate([`location/${this.facilityLocation}/moveIn/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/thank-you`]);
           }
         }
       }, (err: any) => {

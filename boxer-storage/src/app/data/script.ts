@@ -91,11 +91,11 @@ export const location6 = ``;
 
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/evanston-ave/storage-units`;
-// export const urlLocation2 = `${environment.websiteUrl}/location/silverhill/storage-units`;
-// export const urlLocation3 = `${environment.websiteUrl}/location/barnwell/storage-units`;
-// export const urlLocation4 = `${environment.websiteUrl}/location/belforest/storage-units`;
-// export const urlLocation5 = `${environment.websiteUrl}/location/fairhope/storage-units`;
-// export const urlLocation6 = `${environment.websiteUrl}/location/robertsdale/storage-units`;
+// export const urlLocation2 = ``;
+// export const urlLocation3 = ``;
+// export const urlLocation4 = ``;
+// export const urlLocation5 = ``;
+// export const urlLocation6 = ``;
 
 
 export const description1 = `Boxer Storage - Evanston Location is one of our 12 conveniently located self storage

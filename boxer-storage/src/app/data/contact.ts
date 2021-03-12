@@ -1,18 +1,18 @@
 export const contactMainOffice = [
-    // {
-    //     id: 1,
-    //     label: 'Address: ',
-    //     data: '',
-    //     class: 'fas fa-map-marker-alt mr-2 iconColor',
-    //     redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
-    // },
+    {
+        id: 1,
+        label: 'Mailing Address: ',
+        data: '3609 32nd St SE, Kentwood, MI 49512',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/Aey9AuYbspcu5HgC9'
+    },
     {
         id: 2,
         label: 'Email: ',
-        email: 'accounts@storageplusbaldwin.com',
-        data: `accounts@storageplusbaldwin.com`,
+        email: 'store@boxerstorage.com',
+        data: `store@boxerstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:`store@boxerstorage.com`'
     },
     // {
     //     id: 3,
@@ -60,14 +60,14 @@ export const contactsLocation1 = [
         redirect: 'https://goo.gl/maps/Aey9AuYbspcu5HgC9'
     },
     {
-        id: 1,
+        id: 2,
         label: 'Mailing Address: ',
         data: '3609 32nd St SE, Kentwood, MI 49512',
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'https://goo.gl/maps/Aey9AuYbspcu5HgC9'
     },
     {
-        id: 2,
+        id: 3,
         label: 'Email: ',
         email: 'store@boxerstorage.com',
         data: `store@boxerstorage.com`,
@@ -75,7 +75,7 @@ export const contactsLocation1 = [
         redirect: 'mailto:`store@boxerstorage.com`'
     },
     {
-        id: 3,
+        id: 4,
         label: 'Phone: ',
         data: '(231) 652-7853',
         class: 'fas fa-phone mr-2 iconColor',

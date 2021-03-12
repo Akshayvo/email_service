@@ -3,9 +3,9 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace Storage Plus of Baldwin County with your project name(Hyphen Case)
+Replace Boxer Storage with your project name(Hyphen Case)
 
-Replace Storage Plus of Baldwin County with your project name(camelCase)
+Replace Boxer Storage with your project name(camelCase)
 
 Find and Replace across project
 
