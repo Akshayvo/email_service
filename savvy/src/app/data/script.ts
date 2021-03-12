@@ -1,21 +1,132 @@
-export const script = {
-    // Put your script here
+import { environment } from '../../environments/environment';
+import { homePageContent, homePageTitle, payRentPageContent,
+  payRentPageTitle, storageTipsContent, storageTipsTitle,
+contactPageContent, contactPageTitle } from '../data/title';
+import { featuresList } from '../data/home';
+import { contact, socialLinks } from '../data/contact';
+
+const contactIndex = contact.findIndex(x => x.label === 'Phone:');
+const emailIndex = contact.findIndex(x => x.label === 'Email:');
+const sameAs = [];
+const amenityFeature = [];
+
+featuresList.forEach(
+  feature => 
+  (amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td1}),
+  amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td2}))
+)
+
+
+socialLinks.forEach(links => {
+  links.path ? sameAs.push(links.path) : sameAs.push(' ')
+}
+);
+  
+
+export const script = {               // Please fill this script according to facility's information
+    imagesHomePage: [
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Savvy_Images/jpg/self-storage-facility.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Savvy_Images/jpg/self-storage-facility%282%29.jpg",
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Savvy_Images/jpg/self-storage-facility%20%281%29.jpg"
+     ],
+     telephone: contact[contactIndex].data,
+     map: "https://goo.gl/maps/LEQGAhY7ceUMqKT66",
+     description: "Savvy Storage serves Box Elder and the surrounding communities with a variety of well-maintained and affordable self storage units",
+     streetAddress: "560 Liberty Blvd",
+     state: "South Dakota",
+     addressLocality: "South Dakota",
+     addressRegion: "SD",
+     postalCode: "57719",
+     addressCountry: "US",
+     id: environment.websiteUrl || "",
+     paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
+     currenciesAccepted: "USD",
+     ratingValue: "4",
+     bestRating: "5",
+     reviewCount: "250",
+     latitude: 44.130237353725015,
+     longitude: -103.05278115932259,
+     openingHours: ["Mo-Fr 09:00-17:00"],
+     priceRange: '$45-$330'
 };
 
-export const homePageScript = [
-   
-];
-
-
-  export const contactPageScript = [
+export const homePageScript = [ {
+  "@context": "https://schema.org",
+  "@type": ["Organization","SelfStorage","Place","LocalBusiness"],
+  "image": script.imagesHomePage,
+  "@id": script.id,
+  "name": environment.facilityName,
+   "description": script.description || homePageContent,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": script.streetAddress,
+    "addressLocality": script.addressLocality,
+    "addressRegion": script.addressRegion,
+    "postalCode": script.postalCode,
+    "addressCountry": script.addressCountry
+  },
+ "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": script.ratingValue,
+    "bestRating": script.bestRating,
+    "reviewCount": script.reviewCount
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": script.latitude,
+    "longitude": script.longitude
+  },
+  "url": environment.websiteUrl,
+  "telephone": script.telephone,
   
-  ];
+  "priceRange": script.priceRange,
+  "openingHours": script.openingHours,
+  "currenciesAccepted": script.currenciesAccepted,
+  "paymentAccepted": script.paymentAccepted,
+   "areaServed": {
+  "@type": "State",
+  "name": script.state
+ },
+ 
+"hasMap": script.map,
+"amenityFeature": amenityFeature,
+"acceptsReservations": "True"
+}];
+
+
+
+export const contactPageScript = [
+  {
+      "@context": "http://schema.org",
+      "@type": "Selfstorage",
+      "name": environment.facilityName,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": script.addressLocality,
+        "postalCode": script.postalCode,
+        "streetAddress": script.streetAddress,
+      },
+       "url": environment.websiteUrl,
+       "image": script.imagesHomePage[0],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": script.telephone,
+        "contactType": "reservations"
+      },{
+        "@type": "ContactPoint",
+        "telephone": script.telephone,
+        "contactType": "customer service"
+      }],
+      "email": contact[emailIndex].data,
+      "sameAs": sameAs
+    }
+];
 
 
 export const ogHomePage = [
   {
     property: `og:description`,
-    content: `Savvy Storage serves Box Elder and the surrounding communities with a variety of well-maintained and affordable self storage units`
+    content:  `${homePageContent}`
   },
   {
     property: `og:type`,
@@ -23,26 +134,26 @@ export const ogHomePage = [
   },
   {
     property: `og:title`,
-    content: `Affordable Self Storage Units in Box Elder, South Dakota`
+    content: `${homePageTitle}`
   },
   {
     property: `og:site_name`,
-    content: `Savvy Storage`
+    content: `${environment.facilityName}`
   },
   {
     property: `og:url`,
-    content: `https://www.savvy-storage.com/`
+    content: `${environment.websiteUrl}`
   },
   {
     property: `og:image`,
-    content: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Savvy_Images/jpg/self-storage-facility.jpg`
+    content: script.imagesHomePage[1]
   },
 ];
 
 export const twitterHomePage = [
   {
     name: `twitter:site`,
-    content: `@Savvy Storage`
+    content: `@${environment.facilityName}`
   },
   {
     name: `twitter:card`,
@@ -54,11 +165,11 @@ export const twitterHomePage = [
   },
   {
     name: `twitter:title`,
-    content: `@Affordable Self Storage Units in Box Elder, South Dakota`
+    content: `@${homePageTitle}`
   },
   {
     name: `twitter:description`,
-    content: `Savvy Storage serves Box Elder and the surrounding communities with a variety of well-maintained and affordable self storage units`
+    content: `${homePageContent}`
   },
   {
     name: `twitter:image`,
@@ -69,11 +180,11 @@ export const twitterHomePage = [
 export const ogPayRentPage = [
     {
       property: `og:title`,
-      content: `Pay Rent  | Savvy Storage`
+      content: `${payRentPageTitle}`
     },
     {
       property: `og:description`,
-      content: `Our online tenant portal allows you to check your balance, and pay your rent online 24 hours a day, 7 days a week!`
+      content: `${payRentPageContent}`
     },
     {
       property: `og:type`,
@@ -81,11 +192,11 @@ export const ogPayRentPage = [
     },
     {
       property: `og:site_name`,
-      content: `Savvy Storage`
+      content: `${environment.facilityName}`
     },
     {
       property: `og:url`,
-      content: `https://www.savvy-storage.com/pay-rent/rent-sub/login`
+      content: `${environment.websiteUrl}/pay-rent/rent-sub/login`
     },
     {
       property: `og:image`,
@@ -96,15 +207,15 @@ export const ogPayRentPage = [
   export const twitterPayRentPage = [
     {
       name: `twitter:title`,
-      content: `@Pay Rent  | Savvy Storage`
+      content: `@${payRentPageTitle}`
     },
     {
       name: `twitter:description`,
-      content: `Our online tenant portal allows you to check your balance, and pay your rent online 24 hours a day, 7 days a week!`
+      content: `${payRentPageContent}`
     },
     {
       name: `twitter:site`,
-      content: `@Savvy Storage`
+      content: `@${environment.facilityName}`
     },
     {
       name: `twitter:card`,
@@ -123,11 +234,11 @@ export const ogPayRentPage = [
   export const ogStorageTipsPage = [
     {
       property: `og:title`,
-      content: `Storage Tips  | Savvy Storage`
+      content: `${storageTipsTitle}`
     },
     {
       property: `og:description`,
-      content: `Our quick storage tips page will help you figure out how to best use our services and avoid common pitfalls in self storage!`
+      content: `${storageTipsContent}`
     },
     {
       property: `og:type`,
@@ -135,11 +246,11 @@ export const ogPayRentPage = [
     },
     {
       property: `og:site_name`,
-      content: `Savvy Storage`
+      content: `${environment.facilityName}`
     },
     {
       property: `og:url`,
-      content: `https://www.savvy-storage.com/storage-tips`
+      content: `${environment.websiteUrl}/${environment.locationName}/storage-tips`
     },
     {
       property: `og:image`,
@@ -150,15 +261,15 @@ export const ogPayRentPage = [
   export const twitterStorageTipsPage = [
     {
       name: `twitter:title`,
-      content: `@Storage Tips  | Savvy Storage`
+      content: `@${storageTipsTitle}`
     },
     {
       name: `twitter:description`,
-      content: `Our quick storage tips page will help you figure out how to best use our services and avoid common pitfalls in self storage!`
+      content: `${storageTipsContent}`
     },
     {
       name: `twitter:site`,
-      content: `@Savvy Storage`
+      content: `@${environment.facilityName}`
     },
     {
       name: `twitter:card`,
@@ -177,11 +288,11 @@ export const ogPayRentPage = [
   export const ogContactPage = [
     {
       property: `og:title`,
-      content: `Contact Us  | Savvy Storage`
+      content: `${contactPageTitle}`
     },
     {
       property: `og:description`,
-      content: `Use the contact information or the contact form on this page to speak to one of our friendly self storage managers!`
+      content: `${contactPageContent}`
     },
     {
       property: `og:type`,
@@ -189,11 +300,11 @@ export const ogPayRentPage = [
     },
     {
       property: `og:site_name`,
-      content: `Savvy Storage`
+      content: `${environment.facilityName}`
     },
     {
       property: `og:url`,
-      content: `https://www.savvy-storage.com/contact-us`
+      content: `${environment.websiteUrl}/contact-us`
     },
     {
       property: `og:image`,
@@ -204,15 +315,15 @@ export const ogPayRentPage = [
   export const twitterContactPage = [
     {
       name: `twitter:title`,
-      content: `@Contact Us  | Savvy Storage`
+      content: `@${contactPageTitle}`
     },
     {
       name: `twitter:description`,
-      content: `Use the contact information or the contact form on this page to speak to one of our friendly self storage managers!`
+      content: `${contactPageContent}`
     },
     {
       name: `twitter:site`,
-      content: `@Savvy Storage`
+      content: `@${environment.facilityName}`
     },
     {
       name: `twitter:card`,

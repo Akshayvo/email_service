@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { SignOutService } from '../services/sign-out.service';
 import { thankYouPageContent, thankYouPageTitle } from '../../data/title';
+import { environment } from '../../../environments/environment';
 
 
 @Component({
@@ -30,6 +31,8 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   paymentNavigationUrl: string;
   thankYouPageTitle: string;
   thankYouPageContent: string;
+  facilityName: string;
+  paymentSuccess = false;
 
   MoveIn = {
     dteMoveIn: '',
@@ -47,7 +50,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     public router: Router,
     private signOutService: SignOutService,
   ) {
-
+    this.facilityName = environment.facilityName;
     this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
@@ -67,6 +70,8 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.CCApprovalCode = this.dataSharingService.CCApprovalCode;
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.eventName = this.dataSharingService.eventName;
+    this.paymentSuccess = this.dataSharingService.paymentSuccess;
+
 
     if (localStorage.getItem('strTenantToken')) {
       this.tokenExit = localStorage.getItem('strTenantToken');

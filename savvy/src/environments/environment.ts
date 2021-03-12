@@ -15,6 +15,7 @@ export const environment = {
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   appId: 'Savvy Storage - Production',
+  facilityName: 'Savvy Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://www.savvy-storage.com',
