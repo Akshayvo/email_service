@@ -143,29 +143,29 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Foley`;
+export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Evanston Ave`;
 
-export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Silverhill`;
+export const headingReservePageLocation2 = ``;
 
-export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Barnwell`;
+export const headingReservePageLocation3 = ``;
 
 export const headingReservePageLocation4 = ``;
 
-export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit in Fairhope`;
+export const headingReservePageLocation5 = ``;
 
-export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
+export const headingReservePageLocation6 = ``;
 
-export const heading1 = `Storage Plus of Baldwin County - Foley Location`;
+export const heading1 = `Boxer Storage - Evanston Ave Location`;
 
-export const heading2 = `Storage Plus of Baldwin County - Silverhill Location`;
+export const heading2 = ``;
 
-export const heading3 = `Storage Plus of Baldwin County - Barnwell Location`;
+export const heading3 = ``;
 
-export const heading4 = `Storage Plus of Baldwin County - Belforest Location`;
+export const heading4 = ``;
 
-export const heading5 = `Storage Plus of Baldwin County - Fairhope`;
+export const heading5 = ``;
 
-export const heading6 = `Storage Plus of Baldwin County - Robertsdale`;
+export const heading6 = ``;
 
 
 export const unitSizerLocation1 = [
@@ -215,6 +215,21 @@ export const unitSizerLocation1 = [
             { content: 'Tow Trailer', },
             ],
     },
+    {
+        text: '10\' x 30\' Storage Unit',
+        alt: '10\' x 30\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
+        data: `This unit is approximately 300sq feet of space that can store the contents of a multi-bedroom home,
+        including.`,
+        amenities: [
+            { content: 'Appliances', },
+            { content: 'Car or Small Boat', },
+            { content: 'Furniture', },
+            { content: 'Mattresses', },
+            { content: 'Bookcases', },
+            { content: 'Tow Trailer', },
+            ],
+    }
 ];
 
 export const unitSizerLocation2 = [

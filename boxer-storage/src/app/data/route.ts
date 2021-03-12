@@ -89,7 +89,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: 'location/foley',
+    { path: `location/evanston-ave`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -302,7 +302,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/foley', component: HomeComponent,
+    { path: 'review/evanston-ave', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -353,7 +353,7 @@ export const apiRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/foley', component: PayRentComponent,
+    path: 'pay-rent/evanston-ave', component: PayRentComponent,
     children: childroute
   },
   {
@@ -376,9 +376,9 @@ export const apiRoutes = [
     path: 'pay-rent/robertsdale', component: PayRentComponent,
     children: childroute
   },
-  { path: 'storage-tips', component: StorageTipsComponent },
+  { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-foley', component: ContactUsComponent},
+  { path: 'contact-evanston-ave', component: ContactUsComponent},
   { path: 'contact-silverhill', component: ContactUsComponent},
   { path: 'contact-barnwell', component: ContactUsComponent},
   { path: 'contact-belforest', component: ContactUsComponent},
@@ -392,7 +392,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: 'location/foley',
+  { path: 'location/evanston-ave',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -458,7 +458,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/foley', component: HomeComponent,
+  { path: 'review/evanston-ave', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -508,7 +508,7 @@ export const iFrameRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-foley', component: PayRentFloridaComponent },
+  { path: 'pay-rent-evanston-ave', component: PayRentFloridaComponent },
   { path: 'pay-rent-silverhill', component: PayRentChesterComponent},
   { path: 'pay-rent-barnwell', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},

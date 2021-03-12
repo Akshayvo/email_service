@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'alabama/foley', // state/city  **Remeber to update locationName in sitemap.xml as well
+  locationName: 'michigan/muskegon', // state/city  **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 0, // { Yes: 1, No: 0 }
   alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
@@ -13,11 +13,11 @@ export const environment = {
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Storage Plus of Baldwin County - Testing',
-  facilityName: 'Storage Plus of Baldwin County',
+  appId: 'Boxer Storage - Testing',
+  facilityName: 'Boxer Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://storage-plus-staging.netlify.app`
+  websiteUrl: `https://boxer-storage-staging.netlify.app`
 };
 
 /*

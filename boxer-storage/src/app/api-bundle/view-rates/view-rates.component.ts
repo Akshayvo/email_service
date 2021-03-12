@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
 import { headingLocation1, headingLocation2, headingLocation3, headingLocation4, headingLocation5,
   headingLocation6,   } from '../../data/location';
+import { environment } from '../../../environments/environment';
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -25,24 +26,25 @@ export class ViewRatesComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/foley')) {
+    if (this.router.url.includes(`/location/foley`)) {
       this.id = 1;
       this.heading = headingLocation1;
-    } else if (this.router.url.includes('/location/silverhill')) {
-      this.id = 2;
-      this.heading = headingLocation2;
-    } else if (this.router.url.includes('/location/barnwell')) {
-      this.id = 3;
-      this.heading = headingLocation3;
-    } else if (this.router.url.includes('/location/belforest')) {
-      this.id = 4;
-      this.heading = headingLocation4;
-    } else if (this.router.url.includes('/location/fairhope')) {
-      this.id = 5;
-      this.heading = headingLocation5;
-    } else if (this.router.url.includes('/location/robertsdale')) {
-      this.id = 6;
-      this.heading = headingLocation6;
-    }
+    } 
+    // else if (this.router.url.includes('/location/silverhill')) {
+    //   this.id = 2;
+    //   this.heading = headingLocation2;
+    // } else if (this.router.url.includes('/location/barnwell')) {
+    //   this.id = 3;
+    //   this.heading = headingLocation3;
+    // } else if (this.router.url.includes('/location/belforest')) {
+    //   this.id = 4;
+    //   this.heading = headingLocation4;
+    // } else if (this.router.url.includes('/location/fairhope')) {
+    //   this.id = 5;
+    //   this.heading = headingLocation5;
+    // } else if (this.router.url.includes('/location/robertsdale')) {
+    //   this.id = 6;
+    //   this.heading = headingLocation6;
+    // }
   }
 }

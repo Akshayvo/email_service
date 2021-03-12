@@ -2,7 +2,7 @@ export const contactMainOffice = [
     // {
     //     id: 1,
     //     label: 'Address: ',
-    //     data: '17860 US-98, Foley, AL 36535',
+    //     data: '',
     //     class: 'fas fa-map-marker-alt mr-2 iconColor',
     //     redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
     // },

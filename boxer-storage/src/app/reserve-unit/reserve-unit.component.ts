@@ -20,10 +20,11 @@ export class ReserveUnitComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/foley')) {
+    if (this.router.url.includes('/location/evanston-ave')) {
       this.id = 1;
       this.heading = headingLocation1;
-    } else if (this.router.url.includes('/location/silverhill')) {
+    } 
+    else if (this.router.url.includes('/location/silverhill')) {
       this.id = 2;
       this.heading = headingLocation2;
     } else if (this.router.url.includes('/location/barnwell')) {

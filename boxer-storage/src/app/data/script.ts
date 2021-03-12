@@ -90,7 +90,7 @@ export const location5 = ``;
 export const location6 = ``;
 
 
-export const urlLocation1 = `${environment.websiteUrl}/location/foley/storage-units`;
+export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/evanston-ave/storage-units`;
 // export const urlLocation2 = `${environment.websiteUrl}/location/silverhill/storage-units`;
 // export const urlLocation3 = `${environment.websiteUrl}/location/barnwell/storage-units`;
 // export const urlLocation4 = `${environment.websiteUrl}/location/belforest/storage-units`;
@@ -189,33 +189,33 @@ export const imageLocation1 = [
  ]
 
 //  export const imageLocation2 = [
-//       'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-silverhill-11.jpg',
-//       'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-silverhill-169.jpg',
-//       'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-silverhill-43.jpg'
+//       '',
+//       '',
+//       ''
 //  ]
 
 //  export const imageLocation3 = [
-//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-11.jpg',
-//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-169.jpg',
-//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-43.jpg'
+//   '',
+//   '',
+//   ''
 //  ]
 
 //  export const imageLocation4 =  [
-//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-11.jpg',
-//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-169.jpg',
-//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-43.jpg'
+//   '',
+//   '',
+//   ''
 //  ]
 
 //  export const imageLocation5 =  [
-//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-11.jpg',
-//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-169.jpg',
-//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-43.jpg'
+//   '',
+//   '',
+//   ''
 //  ]
 
 //  export const imageLocation6 =  [
-//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-robertsdale-11.jpg',
-//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-robertsdale-169.jpg',
-//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-robertsdale-43.jpg'
+//   '',
+//   '',
+//   ''
 //  ]
 
 export const homePageScript = [ 

@@ -1,3 +1,5 @@
+import { environment } from '../../environments/environment';
+
 export const navLinks = [
     {
         label: 'Home',
@@ -7,38 +9,13 @@ export const navLinks = [
     {
         label: 'Location',
         type: 'dropdown',
-        path: '/location',
+        path: `/location`,
         sublinks: [
             {
                 id: '1',
-                label: 'Evanston Ave  Location',
-                path: '/location/foley',
+                label: 'Evanston Ave Location',
+                path: `/location/evanston-ave`,
               },
-            {
-                id: '2',
-                label: 'Silverhill',
-                path: '/location/silverhill',
-            },
-              {
-                id: '3',
-                label: 'Barnwell',
-                path: '/location/barnwell',
-            },
-            {
-                id: '4',
-                label: 'Belforest',
-                path: '/location/belforest',
-            },
-            {
-                id: '5',
-                label: 'Fairhope',
-                path: '/location/fairhope',
-            },
-            {
-                id: '6',
-                label: 'Robertsdale',
-                path: '/location/robertsdale',
-            },
         ]
     },
     {
@@ -48,7 +25,7 @@ export const navLinks = [
     },
     {
         label: 'Storage Tips',
-        path: '/storage-tips',
+        path: `${environment.locationName}/storage-tips`,
         type: 'link'
     },
     {

@@ -124,7 +124,7 @@ export class HeaderComponent implements OnInit {
 
   public fetchContactDetails() {
     this.contactDetails = contactMainOffice;
-    this.socialLinks = socialLinks
+    this.socialLinks = socialLinks;
     
   }
 

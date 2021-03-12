@@ -27,26 +27,27 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/foley')) {
+    if (this.router.url.includes('/location/evanston-ave')) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes('/location/silverhill')) {
-    this.fetchDetailsLocation2();
-  } else if (this.router.url.includes('/location/barnwell')) {
-    this.fetchDetailsLocation3();
-  } else if (this.router.url.includes('/location/belforest')) {
-    this.fetchDetailsLocation4();
-  } else if (this.router.url.includes('/location/fairhope')) {
-    this.fetchDetailsLocation5();
-  } else if (this.router.url.includes('/location/robertsdale')) {
-    this.fetchDetailsLocation6();
-  }
+  } 
+  // else if (this.router.url.includes('/location/silverhill')) {
+  //   this.fetchDetailsLocation2();
+  // } else if (this.router.url.includes('/location/barnwell')) {
+  //   this.fetchDetailsLocation3();
+  // } else if (this.router.url.includes('/location/belforest')) {
+  //   this.fetchDetailsLocation4();
+  // } else if (this.router.url.includes('/location/fairhope')) {
+  //   this.fetchDetailsLocation5();
+  // } else if (this.router.url.includes('/location/robertsdale')) {
+  //   this.fetchDetailsLocation6();
+  // }
 }
 
   public fetchDetailsLocation1() {
     this.unitSizer = unitSizerLocation1;
     this.h2tag = 'Unit Sizer';
     this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
+    out! Still have questions? Call (231) 652-7853`;
   }
 
   public fetchDetailsLocation2() {
