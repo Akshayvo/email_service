@@ -17,6 +17,7 @@ import { MakeAReservationService } from '../services/make-a-reservation.service'
 import { MoveInService } from '../services/moveIn.service';
 import { AddTenantService } from '../services/add-tenant.service';
 import { environment } from '../../../environments/environment';
+import { objSIMSetting } from '../../data/configuration';
 
 @Component({
   selector: 'app-pay-rent-form',
@@ -24,6 +25,7 @@ import { environment } from '../../../environments/environment';
   styleUrls: ['./pay-rent-form.component.scss'],
   providers: [DatePipe],
 })
+
 export class PayRentFormComponent implements OnInit, OnDestroy {
 
   showPaymentForReserve: boolean;
@@ -61,8 +63,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   surcharge: number;
   unitTypeNotAvailability: boolean;
   showLoader = false;
-
+  blnAllowPartialPayments: boolean;
   cards: any;
+  paymentSuccess = false;
 
   marked = false;
   signUp = {};
@@ -158,49 +161,64 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     }
 
 
-
     this.navigateToReserve = this.dataSharingService.navigateToReserve;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
-
+  
     if (!!this.dataSharingService.LstUnitTypes.ReservationFeeTax) {
-      this.TotalReserveAmount =
-     // tslint:disable-next-line: max-line-length
-     parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
-     this.surchargeService.setAmt(this.TotalReserveAmount);
+      // tslint:disable-next-line: max-line-length
+      const amount =  parseFloat((this.dataSharingService.LstUnitTypes.ReservationFee + this.dataSharingService.LstUnitTypes.ReservationFeeTax).toFixed(2));
+      if (amount && amount > 0) {
+        this.surchargeService.setAmt(amount);
+        // this.getSurCharge();
+      }
     } else {
       this.TotalReserveAmount = this.dataSharingService.LstUnitTypes.ReservationFee;
-      this.surchargeService.setAmt(this.TotalReserveAmount);
+      if(!!this.TotalReserveAmount && this.TotalReserveAmount > 0) {
+        this.surchargeService.setAmt(this.TotalReserveAmount);
+        // this.getSurCharge();
+      }
     }
 
     if (!!this.dataSharingService.MoveInData.TotalChargesAmount) {
       this.totalMoveInAmount =
       // tslint:disable-next-line: max-line-length
       parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
-      this.surchargeService.setAmt(this.totalMoveInAmount);
+      if (!!this.totalMoveInAmount && this.totalMoveInAmount > 0) {
+        this.surchargeService.setAmt(this.totalMoveInAmount);
+        // this.getSurCharge();
+      }
+    } else {
+      this.totalMoveInAmount = this.dataSharingService.MoveInData.TotalChargesAmount;
+      if (!!this.totalMoveInAmount && this.totalMoveInAmount > 0) {
+        this.surchargeService.setAmt(this.totalMoveInAmount);
+        // this.getSurCharge();
+      }
     }
+
 
 
     if (this.router.url.includes('payReservationCharges')) {
       this.navigateToReserve = true;
       this.navigateToMoveIn = false;
-      // this.payRentForm.patchValue({
-      //   objPayment: {
-      //    PaymentAmount: this.TotalReserveAmount
-      //   }
-      // });
+      this.payRentForm.patchValue({
+        objPayment: {
+         PaymentAmount: this.TotalReserveAmount
+        }
+      });
     } else {
       if (this.router.url.includes('payMoveInCharges')) {
         this.navigateToReserve = false;
         this.navigateToMoveIn = true;
-        // this.payRentForm.patchValue({
-        //   objPayment: {
-        //    PaymentAmount: this.totalMoveInAmount
-        //   }
-        // });
+        this.payRentForm.patchValue({
+          objPayment: {
+           PaymentAmount: this.totalMoveInAmount
+          }
+        });
       } else {
         if (this.router.url.includes('payment')) {
           this.navigateToMoveIn = false;
           this.navigateToReserve = false;
+          this.navigateToMoveInPayment = true;
         }
 
       }
@@ -208,9 +226,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
-    if (this.router.url ===  '/pay-rent/payment' || (this.router.url ===  '/pay-rent/sign-up/payment')) {
-      this.navigateToMoveInPayment = true;
-    }
 
     this.fetchCards();
   }
@@ -224,6 +239,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.paymentTab = localStorage.getItem('paymentTab');
     }
 
+    this.blnAllowPartialPayments = objSIMSetting.objPaymentSetting.blnAllowPartialPayments;
     this.tenantData.objTenant = this.dataSharingService.objTenant;
     if (!!localStorage.getItem('strTenantToken')) {
       this.getPayMethods();
@@ -300,8 +316,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
     return '';
 }
-
-
 
   selectChangeHandler(event: any) {
     this.selectedDescription = JSON.stringify(event.target.value);
@@ -381,15 +395,15 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           this.surchargeService.getIdPaytype(this.paytypeid);
           this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled;
           this.date = Tenant.LastPaymentOn;
-          this.lastPaymentOn = this.datePipe.transform(this.date, 'dd/MM/yyyy');
+          this.lastPaymentOn = this.datePipe.transform(this.date, 'MM/dd/yyyy');
           this.lastPaymentAmount = Tenant.LastPaymentAmount;
 
           this.UnpaidAR = Tenant.UnpaidAR;
 
           // tslint:disable-next-line:forin
           for (const i in this.UnpaidAR) {
-            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, 'dd/MM/yyyy');
-            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, 'dd/MM/yyyy');
+            this.UnpaidAR[i].FromDate = this.datePipe.transform(this.UnpaidAR[i].FromDate, 'MM/dd/yyyy');
+            this.UnpaidAR[i].ToDate = this.datePipe.transform(this.UnpaidAR[i].ToDate, 'MM/dd/yyyy');
 
             if (this.UnpaidAR[i].AmountOwed < 0) {
               this.UnpaidAR[i].amountOwed = Math.abs(this.UnpaidAR[i].AmountOwed);
@@ -460,57 +474,61 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   getPayMethods() {
-   this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
-      .subscribe(payTypesResponse => {
+    this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
+       .subscribe(payTypesResponse => {
+        console.log(payTypesResponse);
+         this.cards.forEach(element => {
+           if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
+             const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
+              if (index > -1) {
+                 this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
+               }
+           }
+         });
+ 
+ 
+         if (!!localStorage.getItem('strTenantToken')) {
+           this.tenantTokenExist = true;
+           this.showLoader = true;
+           this.getTenantInfo();
+         } else {
+           console.log(this.lstPayTypes);
+           const defaultDescription = this.lstPayTypes[0].PayTypeDescription;
+           const defaultPayTypeID = this.lstPayTypes[0].PayTypeID;
+           this.paytypeid =  this.lstPayTypes[0].PayTypeID;
+           console.log('lstPayTypes', this.lstPayTypes, this.paytypeid);
+           this.surchargeService.getIdPaytype(this.paytypeid);
+           console.log('this.surchargeService.getIdPaytype(this.paytypeid);', this.surchargeService.getIdPaytype(this.paytypeid));
+           this.getSurCharge();
+           this.payRentForm.patchValue({
+             objPayment: {
+               PayType: {
+                 PayTypeDescription: defaultDescription,
+                 PayTypeID: defaultPayTypeID,
+               }
+             }
+           });
+         }
+       }
+     );
+   }
 
-        this.cards.forEach(element => {
-          if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
-            const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
-             if (index > -1) {
-                this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
-              }
-          }
-        });
-
-
-        if (!!localStorage.getItem('strTenantToken')) {
-          this.tenantTokenExist = true;
-          this.showLoader = true;
-          this.getTenantInfo();
-        }
-        if (!localStorage.getItem('strTenantToken')) {
-          const defaultDescription = this.lstPayTypes[0].PayTypeDescription;
-          const defaultPayTypeID = this.lstPayTypes[0].PayTypeID;
-          this.paytypeid =  this.lstPayTypes[0].PayTypeID;
-          this.surchargeService.getIdPaytype(defaultPayTypeID);
-          this.payRentForm.patchValue({
-            objPayment: {
-              PayType: {
-                PayTypeDescription: defaultDescription,
-                PayTypeID: defaultPayTypeID,
-              }
-            }
-          });
-        }
-      }
-    );
-  }
-
-  toggleEvent(e: any) {
-    this.toggleSignUp = true;
-  }
+  // toggleEvent(e: any) {
+  //   this.toggleSignUp = true;
+  // }
 
   getSurCharge() {
     this.surcharge = 0;
     this.surchargeService.getSurCharge()
     .subscribe(result => {
       this.amountToPay = result.decTotalAmount;
+      this.TotalReserveAmount = result.decTotalAmount;
 
 
     if (this.router.url.includes('payReservationCharges')) {
       this.surcharge = result.decTotalAmount - this.TotalReserveAmount;
     } else {
-      if (this.router.url.includes('payReservationCharges')) {
+      if (this.router.url.includes('payMoveInCharges')) {
         this.surcharge = result.decTotalAmount - this.totalMoveInAmount;
       } else {
         if (this.showInput) {
@@ -546,7 +564,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.invalidPayment = null;
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
-        this.showloaderForPayment = false;
+        // this.showloaderForPayment = false;
         if (paymentDataResponse && paymentDataResponse.PayTypeForResult &&  paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
           this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
         }
@@ -560,6 +578,13 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             if (this.navigateToMoveIn) {
               this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
               this.moveIn(this.MoveIn);
+            } else {
+              this.paymentSuccess = true;
+              // if (!!this.paymentTab) {
+              //   this.router.navigate([`pay-rent/${this.paymentTab}/thank-you`])
+              // } else {
+              //   this.router.navigate([`pay-rent/thank-you`]);
+              // }
             }
           }
           this.showSuccessPayment = true;
@@ -617,6 +642,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   this.makeAReservationSubscribe$ =  this.makeAReservationService.makeAReservation(strConfirmation)
     .subscribe(strConfirmationResponse => {
       this.strConfirmation = strConfirmationResponse.strConfirmation;
+      this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
       this.showConfirmation = false;
       this.makePaymentForUnit = false;
       this.submitted = false;
@@ -632,6 +658,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         localStorage.removeItem('strTempTenantToken');
         this.tokenRemoved = true;
       }
+      // this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
       this.reservationInProgress = false;
     }, (err: any) => {
       this.makePaymentForUnit = false;
@@ -662,6 +689,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.makeAReservationSubscribe$ =  this.moveInService.moveIn(strAccessCode)
       .subscribe(strConfirmationResponse => {
         this.strAccessCode = strConfirmationResponse.strAccessCode;
+        this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
         this.makePaymentForUnit = false;
         this.submitted = false;
          this.tokenExit = localStorage.getItem('strTenantToken');
@@ -673,6 +701,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           localStorage.removeItem('strTempTenantToken');
           this.tokenRemoved = true;
         }
+        // this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
         this.reservationInProgress = false;
       }, (err: any) => {
         this.makePaymentForUnit = false;

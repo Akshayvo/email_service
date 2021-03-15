@@ -4,12 +4,12 @@
 
 export const environment = {
   production: false,
-  type: 0,  // { API: 0, iframe: 1 }
+  type: 0,  // { API: 0, iframe: 1 },
   alternateTenant: `navigateToMoveIn`, // {0, 1, navigateToReserve, navigateToMoveIn},
   paymentPageType: 1, // { withoutTab: 0, withTab: 1}
   reservetionFormType: 0, // { withoutAlternateDetail:0, withAlternateDetial: 1}
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
-  cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
+  cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
@@ -20,7 +20,7 @@ export const environment = {
   // baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // AnotherLocationAPIKey: `MTEyOTE6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
   // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
+  APIKey: `Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   // APIKey: `dzJ0OFc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464
   // APIKey: `dzJ0OVczSjUqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29356 Route-9-Boat
   // APIKey: `dzJ0OFc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464 (For 0 reservetion charges)
