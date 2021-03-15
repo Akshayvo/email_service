@@ -39,7 +39,7 @@ export const featuresList = [
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
 
-export const aboutUsHeading = `several self storage units in in a row with one storage unit door open revealing luggage, shelves, and toys`;
+export const aboutUsHeading = `24-Hour Access Self Storage Units in Verona, WI`;
 
 export const aboutUs = [
     {

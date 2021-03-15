@@ -77,8 +77,9 @@ export const script = {               // Please fill this script according to fa
     //  reviewCount: "250",
      latitude: 43.001510,
      longitude: -89.499340,
-     openingHours: ["Su-Fr 00:00-24:00"]
-    //  priceRange: ''
+     openingHours: ["Su-Fr 00:00-24:00"],
+     priceRange: '',
+     
 };
 
 export const homePageScript = [ {
@@ -111,7 +112,7 @@ export const homePageScript = [ {
     "telephone": script.telephone,
     
     // "priceRange": script.priceRange,
-    // "openingHours": script.openingHours,
+    "openingHours": script.openingHours,
     // "currenciesAccepted": script.currenciesAccepted,
     // "paymentAccepted": script.paymentAccepted,
      "areaServed": {
@@ -121,7 +122,8 @@ export const homePageScript = [ {
    
   "hasMap": script.map,
   "amenityFeature": amenityFeature,
-  "acceptsReservations": "True"
+  "acceptsReservations": "True",
+  "conditionsOfAccess" :"24 Hours Kiosk Access available, on-site manager available by appointment"
   }];
 
 
