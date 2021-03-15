@@ -4,6 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '1030 Portland Rd, Saco, ME 04072',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: 'https://www.google.com/maps/place/1030+Portland+Rd,+Saco,+ME+04072,+USA/data=!4m2!3m1!1s0x4cb2a25685c94037:0x156715ee510b8820?sa=X&ved=2ahUKEwib_YGO2bLvAhVAyjgGHVViCc0Q8gEwAHoECAYQAQ'
     },
     {
         id: 1,
@@ -11,6 +12,7 @@ export const contact = [
         redirect: 'mailto:info@southernmainestorage.com',
         data: 'info@southernmainestorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
+        
     },
     {
         id: 2,
@@ -18,6 +20,7 @@ export const contact = [
         label: 'Phone:',
         data: '(207) 282-4844',
         class: 'fas fa-phone mx-2 iconColor',
+        
     }
 ];
 
