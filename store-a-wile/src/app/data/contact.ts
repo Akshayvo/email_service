@@ -4,6 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '1320 W Scott Ave, Woodland, WA 98674',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: 'https://www.google.com/maps/place/1320+W+Scott+Ave,+Woodland,+WA+98674,+USA/@45.9147319,-122.7597695,17z/data=!3m1!4b1!4m5!3m4!1s0x54944f5ad812b887:0x9d6c9136fc30dcc5!8m2!3d45.9147319!4d-122.7575808'
     },
     {
         id: 1,
