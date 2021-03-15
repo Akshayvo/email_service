@@ -277,7 +277,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     }
 
   public navigate(location: any) {
-    this.router.navigate([`/${location}`]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
   }
 
   get f(): any { return this.reserveUnitForm.controls; }
@@ -298,7 +298,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
      return;
     } else {
     }
-    this.router.navigate([`/${location}`]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
   }
 
 

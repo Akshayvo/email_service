@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: '', // state/city
+  locationName: 'west-mifflin/pennsylvania', // state/city
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: `none`, // { moveIn, reserve, both, none },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'Storage Square',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://storage-square-staging.netlify.app',
+  websiteUrl: 'https://alcheaposselfstorage.com',
   APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   // APIKey: `dzJ0OVczSjgqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // storage square 29387
 };

@@ -4,12 +4,14 @@ export const contact = [
         label: 'Address:',
         data: '4021 Homestead Duquesne Rd, West Mifflin, PA 15122',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: 'https://www.google.com/maps/place/4021+Homestead+Duquesne+Rd,+West+Mifflin,+PA+15122,+USA/@40.3668209,-79.8922654,17z/data=!4m2!3m1!1s0x8834ef93ccbebfe1:0xc3890ff5cae3b47a'
     },
     {
         id: 1,
         label: 'Mailing Address:',
         data: '5158 Cleveland Avenue, West Mifflin, PA, 15122.',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: 'https://www.google.com/maps/place/5158+Cleveland+Ave,+West+Mifflin,+PA+15122,+USA/data=!4m2!3m1!1s0x8834ef945dbeb82f:0xa573593f6984f77e?sa=X&ved=2ahUKEwjmnr3z8rHvAhVJlEsFHdW-CVoQ8gEwAHoECAYQAQ'
     },
     {
         id: 2,
