@@ -22,8 +22,9 @@ img {
   }
 }
 
-.row{
+.header-center{
 color: $primary;
+display: block;
 text-align: center;
 }
 
@@ -49,7 +50,7 @@ text-align: center;
   padding-right: 48px;
   a {
     color: $primary;
-    text-align: center;
+    
   }
 }
 
@@ -122,7 +123,8 @@ a {
 }
 
 .display {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-toggler {
@@ -159,7 +161,7 @@ a {
   } 
 
   .dropdown-menu {
-    left: -60px;
+    left: -100px;
   }
 
   .navbar {
