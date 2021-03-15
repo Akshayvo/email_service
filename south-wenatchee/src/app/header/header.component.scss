@@ -1,6 +1,57 @@
 @import "../../styles.scss";
 
 
+img {
+  width: 200px;
+}
+.iconColor {
+  color: $white;
+}
+.bg-color{
+  background-color: white;
+}
+.contact-header {
+  display: inline;
+
+  .contact-details {
+    color: $white;
+    font-size: 0.82em;
+    font-weight: 500;
+    width: 100%;
+    
+  }
+}
+
+.row{
+color: $primary;
+text-align: center;
+}
+
+.social {
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 1.2rem;
+  }
+  
+}
+
+
+
+.social :hover {
+  color: $white;
+}
+
+.contact-links {
+  padding-right: 48px;
+  a {
+    color: $primary;
+    text-align: center;
+  }
+}
 
 .sticky {
   position: fixed;
@@ -88,16 +139,18 @@ a {
   border: 1px #efefef solid;
 }
 
+
 @media screen and (max-width: 991px) {
-  .display {
-    display: none;
-  }
+  // .display {
+  //   display: none;
+  // }
 
   .nav-link {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
   }
 
+  
 
   .dropdown {
     ul {
@@ -157,6 +210,7 @@ a {
       box-shadow: 0 1px 25px rgba(0,0,0, .1);
     }
     
+    
     #nav-header.customClass {
       top: -64px;
     }
@@ -189,13 +243,88 @@ a {
     #nav-header.customClass {
       top: -101px;
     }
+    .navbar-brand {
+      font-size: 16px;
+    }
+      
     
   }
+
+  @media only screen and (max-width: 767px) and (min-width: 601px){
+    .contact-links {
+      padding-right: 14px ;
+      display: inline-block;
+    }
+  }
+
+  @media only screen and (max-width: 600px) and (min-width: 420px){
+  .contact-links {
+    padding-right: 7px ;
+    display: inline-block;
+  }
+  
+  // .contact-link1{
+  //   display:none;
+  // }
+}
 
   @media screen and (max-height: 476px) {
     .nav-scroll {
       overflow-y: auto;
     }
+    
+    .contact-links {
+      padding-right: 0px ;
+      display: inline-block;
+    }
+    // .contact-link1{
+    //   display:none;
+    // }
+    .display{
+      height:55px;
+    }
+   
   }
   
+  @media only screen and (max-width: 429px) {
+    
+    .navbar-brand {
+      font-size: 16px;
+    }
+      
+    .rows{
+      padding-bottom: 5px;
+      font-size: 15px;
+      text-align: center;
+    }
+    
+    .nav-scroll {
+      overflow-y: auto;
+    }
+    
+    .contact-links {
+      padding-right: 0px ;
+      display: inline-block;
+    }
+    // .contact-link1{
+    //   display:none;
+    // }
+    .display{
+      height:55px;
+      padding-right: 12px;
+    padding-left: 12px;
+    
+    }
 
+    .navbar {
+      padding-right: 1px;
+      
+      button {
+        margin-right: 10px;
+        padding:0px;
+
+        }
+    
+  }
+  
+  }  

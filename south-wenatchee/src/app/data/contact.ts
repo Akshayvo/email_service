@@ -21,6 +21,13 @@ export const contactsLocation1 = [
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:5096622600'
     },
+    {
+        id: 4,
+        label: 'Emergency Number: ',
+        data: '(509) 293-1800',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:5092931800'
+    },
 ];
 
 export const hoursLocation1 = [
@@ -68,6 +75,13 @@ export const contactsLocation2 = [
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:509662-2600'
     },
+    {
+        id: 4,
+        label: 'Emergency Number: ',
+        data: '(509) 293-1800',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:5092931800'
+    },
 ];
 
 export const hoursLocation2 = [
@@ -113,7 +127,7 @@ export const hoursMainOffice = [
         data: 'CLOSED'
     },
     {
-        label: 'Access Hours: ',
+        label: 'Gate Access Hours: ',
         data: '7 Days a Week 6:30AM to 9:00PM'
     },
 ];

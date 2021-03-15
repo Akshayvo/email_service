@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { navLinks } from '../data/nav';
+import { contactsLocation1,contactsLocation2 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 
 @Component({
@@ -28,6 +29,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.fetchNavigationLinks();
+    this.fetchLocationDetails();
     this.router.events.subscribe(path => {
     });
     // window.onscroll = function() {
@@ -60,6 +62,21 @@ export class HeaderComponent implements OnInit {
     menu.classList.remove('show');
   }
 
+  
+  public fetchLocationDetails() {
+    this.contactDetails = contactsLocation2;
+  }
+
+  // public fetchContactDetailsLocation1() {
+  //   this.locationId = '1'
+  //   this.contactDetails = contactsLocation1;
+
+  // }
+  
+  // public fetchContactDetailsLocation2() {
+  //   this.locationId = '2'
+  //   this.contactDetails = contactsLocation2;
+  // }
   // public HideContent() {
   //   if (window.pageYOffset >= this.sticky) {
   //     this.navbar.classList.add('sticky');
