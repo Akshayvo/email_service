@@ -26,10 +26,10 @@ export class ContactComponent implements OnInit {
       id: 0,
       name: 'Bluegrass Storage - Filiatreau Lane',
     },
-    {
-      id: 1,
-      name: 'Bluegrass Storage - Springfield Road',
-    },
+    // {
+    //   id: 1,
+    //   name: 'Bluegrass Storage - Springfield Road',
+    // },
  ];
 
   contactsLocation2: any;

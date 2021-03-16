@@ -24,24 +24,15 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Bluegrass Storage is your storage-stop for renters, homeowners, and businesses in Bardstown, Kentucky.
-        We have 2 conveniently located self storage facilities with drive-up, 24-hour access to your unit, and your
-        belongings whenever you need them! Rent your unit(s) online, then pay your bill around the clock with our
-        easy tenant portal. `,
+        p: `Bluegrass Storage is your storage-stop for renters, homeowners, and businesses in Bardstown, Kentucky. We are conveniently located, offer drive-up, 24-hour access to your unit, and your belongings whenever you need them! Rent your unit(s) online, then pay your bill around the clock with our easy tenant portal. Have documents, equipment, or belongings that need a little extra protection from the elements? Check out our climate controlled units!`,
     },
     {
-        p: `We understand that self storage is about more than just convenience. Our facilities are well-lit, and
-        our managers perform regular walkarounds to ensure a constant sense of safety to our valued customers.`,
+        p: `We understand that self storage is about more than just convenience. Our facilities are well-lit, and our managers perform regular walkarounds to ensure a constant sense of safety to our valued customers.`,
     },
     {
-        p: `So, whether you're a renter or homeowner looking for some extra elbow-room around the house, or a
-        growing local business in need of room for supplies, inventory, or equipment, we've got a unit for you!
-        Take a moment to review our availability, then rent your unit in seconds, or call our office today and
-        let our friendly management team guide you to your next de-cluttering project!`,
+        p: `So, whether you're a renter or homeowner looking for some extra elbow-room around the house, or a growing local business in need of room for supplies, inventory, or equipment, we've got a unit for you! Take a moment to review our availability, then rent your unit in seconds, or call our office today and let our friendly management team guide you to your next de-cluttering project!`,
     },
-    {
-        p: `Don't forget to ask about our forthcoming climate controlled units!`
-    }
+    
 ];
 
 export const gettingStarted = [

@@ -15,12 +15,12 @@ export const navLinks = [
                 path: '/location/filitreau-lane',
                 name: 'filitreau-lane'
               },
-              {
-                  id: '2',
-                  label: 'Bluegrass Storage - Springfield Road',
-                  path: '/location/springfield-road',
-                  name: 'springfield-road'
-              },
+            //   {
+            //       id: '2',
+            //       label: 'Bluegrass Storage - Springfield Road',
+            //       path: '/location/springfield-road',
+            //       name: 'springfield-road'
+            //   },
         ]
     },
     {
