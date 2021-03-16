@@ -5,7 +5,7 @@ export const faq = [
     },
     {
         h2: `What are your office hours? `,
-        paragraph: `Monday - Thursday: 10:00AM to 4:00PM<br>Friday: 12:00PM to 3:00PM<br>Outside of Regular Hours: By Appointment `
+        paragraph: `Monday - Thursday: 11:00AM to 4:00PM<br>Friday: 12:00PM to 3:00PM<br>Outside of Regular Hours: By Appointment `
     },
     {
         h2: `Do you insure my items? `,
