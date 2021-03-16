@@ -73,8 +73,7 @@ export const aboutUs = [
 ];
 
 
-export const gettingStarted = `Reserve your unit and start de-cluttering your life today! Simply click below,
-            and begin the reservation process, or you can call our friendly management team at (361) 215-6637`;
+export const gettingStarted = `View units types, rates and start de-cluttering your life today! Simply click below, or you can call our friendly management team at (361) 215-6637`;
 
 export const blurb = [
     {
