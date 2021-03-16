@@ -32,11 +32,11 @@
         <div class="row">
           <div class="col-md-12 col-12 custom-padding text-center">
             <span class="contact-details pr-lg-4 pr-md-2 pr-2" *ngFor="let contact of contactDetails">
-              <span  *ngIf="contact?.id !== 0 else other_content">
+              <span  *ngIf="contact?.id === 0 || contact?.id === 1 || contact?.id === 2 else other_content">
                 <span style="display: inline-block;">
   
                   <i [class]="contact?.class"></i>
-                  <a style="white-space: nowrap;" [href]="contact?.redirect">{{contact.data}}</a>
+                  <a style="white-space: nowrap;" [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">{{contact.data}}</a>
                 </span>
               </span>
               <ng-template #other_content>

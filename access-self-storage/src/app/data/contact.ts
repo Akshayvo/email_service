@@ -4,6 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '452 FM 306, New Braunfels, TX 78130',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: 'https://goo.gl/maps/bewzRQgUuSSjmiBd9',
     },
     {
         id: 1,
