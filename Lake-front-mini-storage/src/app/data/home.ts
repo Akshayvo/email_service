@@ -48,7 +48,7 @@ export const aboutUs = [
 ];
 
 export const gettingStarted = `Are you ready to start reclaiming some space around the house or office? Check out our
-                               rates and current availability, then reserve your unit in seconds!`;
+                               rates and current availability!`;
 
 export const feature = [
     {
