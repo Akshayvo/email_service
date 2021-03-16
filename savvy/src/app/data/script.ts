@@ -106,7 +106,7 @@ export const contactPageScript = [
         "postalCode": script.postalCode,
         "streetAddress": script.streetAddress,
       },
-       "url": environment.websiteUrl,
+       "url": environment.websiteUrl + `/contact-us`,
        "image": script.imagesHomePage[0],
       "contactPoint": [{
         "@type": "ContactPoint",
