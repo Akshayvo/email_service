@@ -249,6 +249,9 @@ getTenantUnitData() {
           this.dataSharingService.strConfirmation = strConfirmationResponse.strConfirmation;
           this.dataSharingService.eventName = 'reservation';
           // this.showConfirmation = false;
+          if (!!localStorage.getItem('strTempTenantToken')) {
+            localStorage.removeItem('strTempTenantToken');
+          }
           this.router.navigate([`view-rates/thank-you`]);
           this.reservationInProgress = false;
         }
@@ -281,6 +284,9 @@ getTenantUnitData() {
         .subscribe(strConfirmationResponse => {
           this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
           this.dataSharingService.eventName = 'MoveIn';
+          if (!!localStorage.getItem('strTempTenantToken')) {
+            localStorage.removeItem('strTempTenantToken');
+          }
           this.router.navigate([`view-rates/thank-you`]);
           this.reservationInProgress = false;
         }, (err: any) => {
