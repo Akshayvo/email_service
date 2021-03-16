@@ -45,7 +45,7 @@ export const aboutUs = [
 
 export const gettingStarted = `Are you ready to start decluttering your home or office with
                                well-lit, affordable self storage services and friendly customer
-                               service?  Reserve your unit online today by clicking below!`;
+                               service?  Check out our rates and current availability online today by clicking below!`;
 
 export const feature = [
     {
