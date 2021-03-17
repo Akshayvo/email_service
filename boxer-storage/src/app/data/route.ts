@@ -55,7 +55,7 @@ const withoutTab = [
 
 const withTab = [
   { path: '', redirectTo: ' ', pathMatch: 'full'},
-      { path: 'rent-sub', component: RentSubComponent,
+      { path: `rent-sub`, component: RentSubComponent,
         children: [
           {path: '', redirectTo: 'login', pathMatch: 'full'},
           {path: 'login', component: LoginComponent },
@@ -68,7 +68,7 @@ const withTab = [
           // canActivate: [VerifictionCodeGuard]
         ]
       },
-      { path: 'sign-up', component: SignUpComponent,
+      { path: `sign-up`, component: SignUpComponent,
         children: [
           {path: '', redirectTo: 'login', pathMatch: 'full'},
           {path: 'login', component: LoginComponent },

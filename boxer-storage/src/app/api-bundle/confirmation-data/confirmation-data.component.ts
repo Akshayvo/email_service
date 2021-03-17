@@ -61,6 +61,14 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   addressLine2: string;
   city: string;
   zip: string;
+  alternateName: String;
+  alternatePhone: String;
+  alternateAddressLine1: String;
+  alternateAddressLine2: string;
+  alternateCity: string;
+  alternateState: string;
+  alternateZIP: string;
+  
   reservationFee: number;
   reservationFeeTax: number;
   description: string;
@@ -83,6 +91,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   canExit = true;
 
   period: string;
+  showAltDetails = false;
   navTo: any;
 
   facilityLocation: string;
@@ -160,12 +169,20 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.addressLine2 = this.dataSharingService.objTenant.AddressLine2;
     this.city = this.dataSharingService.objTenant.City;
     this.zip = this.dataSharingService.objTenant.ZIP;
+    this.alternateName = this.dataSharingService.objTenant.AlternateName;
+    this.alternatePhone = this.dataSharingService.objTenant.AlternatePhone;
+    this.alternateAddressLine1 = this.dataSharingService.objTenant.AlternateAddressLine1;
+    this.alternateAddressLine2 = this.dataSharingService.objTenant.AlternateAddressLine2;
+    this.alternateCity = this.dataSharingService.objTenant.AlternateCity;
+    this.alternateState = this.dataSharingService.objTenant.AlternateState;
+    this.alternateZIP = this.dataSharingService.objTenant.AlternateZIP;
     this.reservationFee = this.dataSharingService.LstUnitTypes.ReservationFee;
     this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
     this.description = this.dataSharingService.LstUnitTypes.Description;
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
     this.navTo = this.dataSharingService.navigationTo;
     this.dataSharingService.initMyNavLinks('confirmationData', window.location.pathname);
+    this.showAltDetails = this.dataSharingService.showAltDetails;
 
     this.myNavLinks = this.dataSharingService.getMyNavLinks('confirmationData');
 

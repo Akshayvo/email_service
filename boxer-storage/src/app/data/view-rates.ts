@@ -21,12 +21,20 @@ export const th = [
 
   export const option =  [
     {
+      description: 'Alaska',
+      id: 'AK'
+    },
+    {
       description: 'Alabama',
       id: 'AL'
     },
     {
-      description: 'Alaska',
-      id: 'AK'
+      description: 'Arkansas',
+      id: 'AR'
+    },
+    {
+      description: 'Arizona',
+      id: 'AZ'
     },
     {
       description: 'Alberta',
@@ -35,18 +43,6 @@ export const th = [
     {
       description: 'American Samoa',
       id: 'AS'
-    },
-    {
-      description: 'Arizona',
-      id: 'AZ'
-    },
-    {
-      description: 'Arkansas',
-      id: 'AR'
-    },
-    {
-      description: 'British Columbia',
-      id: 'BC'
     },
     {
       description: 'California',
@@ -121,10 +117,6 @@ export const th = [
       id: 'ME'
     },
     {
-      description: 'Manitoba',
-      id: 'MB'
-    },
-    {
       description: 'Marshall Islands',
       id: 'MH'
     },
@@ -165,14 +157,6 @@ export const th = [
       id: 'NV'
     },
     {
-      description: 'Newfoundland and Labrador',
-      id: 'NL'
-    },
-    {
-      description: 'New Brunswick',
-      id: 'NB'
-    },
-    {
       description: 'New Hampshire',
       id: 'NH'
     },
@@ -189,10 +173,6 @@ export const th = [
       id: 'NY'
     },
     {
-      description: 'Northwest Territories',
-      id: 'NT'
-    },
-    {
       description: 'North Carolina',
       id: 'NC'
     },
@@ -205,24 +185,12 @@ export const th = [
       id: 'MP'
     },
     {
-      description: 'Nova Scotia',
-      id: 'NS'
-    },
-    {
-      description: 'Nunavut',
-      id: 'NU'
-    },
-    {
       description: 'Ohio',
       id: 'OH'
     },
     {
       description: 'Oklahoma',
       id: 'OK'
-    },
-    {
-      description: 'Ontario',
-      id: 'ON'
     },
     {
       description: 'Oregon',
@@ -237,24 +205,12 @@ export const th = [
       id: 'PA'
     },
     {
-      description: 'Prince Edward Island',
-      id: 'PE'
-    },
-    {
       description: 'Puerto Rico',
       id: 'PR'
     },
     {
-      description: 'Quebec',
-      id: 'QC'
-    },
-    {
       description: 'Rhode Island',
       id: 'RI'
-    },
-    {
-      description: 'Saskatchewan',
-      id: 'SK'
     },
     {
       description: 'South Carolina',
@@ -304,9 +260,61 @@ export const th = [
       description: 'Wyoming',
       id: 'WY'
     },
-    {
-      description: 'Yukon',
-      id: 'YT'
-    },
   ];
+  
+  export const option1 =  [
+  {
+    description: 'Alberta',
+    id: 'AB'
+  },
+  {
+    description: 'British Columbia',
+    id: 'BC'
+  },
+  {
+    description: 'Manitoba',
+    id: 'MB'
+  },
+  { 
+    description: 'New Brunswick',
+    id: 'NB'
+  },
+  {
+    description: 'Newfoundland and Labrador',
+    id: 'NL'
+  },
+  {
+    description: 'Northwest Territories',
+    id: 'NT'
+  },
+  {
+    description: 'Nova Scotia',
+    id: 'NS'
+  },
+  {
+    description: 'Nunavut',
+    id: 'NU'
+  },
+  {
+    description: 'Ontario',
+    id: 'ON'
+  },
+  {
+    description: 'Prince Edward Island',
+    id: 'PE'
+  },
+  {
+    description: 'Quebec',
+    id: 'QC'
+  },
+  {
+    description: 'Saskatchewan',
+    id: 'SK'
+  },
+  {
+    description: 'Yukon',
+    id: 'YT'
+  },
+  ];
+  
   

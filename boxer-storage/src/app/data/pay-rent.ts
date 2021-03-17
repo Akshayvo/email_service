@@ -15,7 +15,7 @@ export const tableData = [
   {
     facility: ' Evanston Ave Location',
     address: '4300 Evanston Ave, Muskegon, MI 49442',
-    url: 'evanston-ave'
+    url: 'evanston-ave/rent-sub/login'
   },  
 ];
 

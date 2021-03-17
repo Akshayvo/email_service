@@ -11,12 +11,12 @@ export class DataSharingService {
 
 //  locationAPIKey = {                                                     // demo north
 //     loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-//     loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-//     loc3: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-//     loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
-//     loc5: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-//     loc6: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-//   };
+    // loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+    // loc3: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+    // loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
+    // loc5: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
+    // loc6: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+  // };
 
   locationName: string;
   strConfirmation: string;
@@ -39,6 +39,7 @@ export class DataSharingService {
   CCApprovalCode: string;
   eventName: string;
   paymentTab: string;
+  showAltDetails: boolean;
 
   apiKey = '';
 
@@ -87,6 +88,13 @@ export class DataSharingService {
     City: '',
     State: '',
     ZIP: '',
+    AlternateName: '',
+    AlternatePhone: '',
+    AlternateAddressLine1: '',
+    AlternateAddressLine2: '',
+    AlternateCity: '',
+    AlternateState: '',
+    AlternateZIP: ''
   };
 
 
