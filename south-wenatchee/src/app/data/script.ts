@@ -9,7 +9,7 @@ export const homePageScript = [ {
     '@context': 'https://schema.org',
     '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
     'name': 'South Wenatchee Self Storage',
-    'url': 'https://south-wenatchee-multi.netlify.app/',
+    'url': 'https://www.bestwenatcheestorage.com/',
     'priceRange': '$44 - $199',
       'address' : {
       '@type' : 'PostalAddress',
@@ -50,7 +50,7 @@ export const homePageScript = [ {
     {'@type': 'LocationFeatureSpecification',
     'name': 'Security Cameras on Premises'}],
     'priceRange': '$44-$199',
-    'url' : 'https://south-wenatchee-multi.netlify.app/wa/south-wenatchee/storage-units'
+    'url' : 'https://www.bestwenatcheestorage.com/wa/south-wenatchee/storage-units'
   }, {
     '@context' : 'http://schema.org',
     '@type' : ['LocalBusiness', 'SelfStorage'],
@@ -76,7 +76,7 @@ export const homePageScript = [ {
     'name': 'Great Customer Service'},
     {'@type': 'LocationFeatureSpecification',
     'name': 'Security Cameras on Premises'}],
-    'url' : 'https://south-wenatchee-multi.netlify.app/wa/leos-self-storage/storage-units'
+    'url' : 'https://www.bestwenatcheestorage.com/wa/leos-self-storage/storage-units'
   },  ];
 
 
@@ -88,7 +88,7 @@ export const Location1Script = {
       'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-43.jpg',
       'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-169.jpg'
      ],
-    '@id': 'https://south-wenatchee-multi.netlify.app/wa/south-wenatchee/storage-units',
+    '@id': 'https://www.bestwenatcheestorage.com/wa/south-wenatchee/storage-units',
     'name': 'South Wenatchee Self Storage',
      'description': 'We are a locally owned & operated self storage facility serving the Wenatchee, community! Take a moment to review our pricing and availability, then give us a call today!',
     'address': {
@@ -110,7 +110,7 @@ export const Location1Script = {
       'latitude': 47.401888,
       'longitude':  -120.300534
     },
-    'url': 'https://south-wenatchee-multi.netlify.app/wa/south-wenatchee/about',
+    'url': 'https://www.bestwenatcheestorage.com/wa/south-wenatchee/about',
     'telephone': '(509) 662-2600',
 
     'priceRange': '$44 - $199',
@@ -134,7 +134,7 @@ export const Location2Script = {
       'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-43.jpg',
       'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-169.jpg'
      ],
-    '@id': 'https://south-wenatchee-multi.netlify.app/wa/leos-self-storage/storage-units',
+    '@id': 'https://www.bestwenatcheestorage.com/wa/leos-self-storage/storage-units',
     'name': `Leo's Self Storage`,
      'description': 'We are a locally owned & operated self storage facility serving the Wenatchee, community! We offer affordable self storage units in a variety of sizes, and our service always comes with a smile. ',
     'address': {
@@ -156,7 +156,7 @@ export const Location2Script = {
       'latitude': 47.4409925,
       'longitude': -120.3269893
     },
-    'url': 'https://south-wenatchee-multi.netlify.app/wa/leos-self-storage/about',
+    'url': 'https://www.bestwenatcheestorage.com/wa/leos-self-storage/about',
     'telephone': '(509) 662-2600',
 
     'priceRange': '$44 - $199',
@@ -183,7 +183,7 @@ export const contactPageLocation1Script = {
       'postalCode': '98801',
       'streetAddress': ' 1536 S Wenatchee Ave'
     },
-     'url': 'https://south-wenatchee-multi.netlify.app/wa/south-wenatchee/about',
+     'url': 'https://www.bestwenatcheestorage.com/wa/south-wenatchee/about',
      'image': [
           'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/south-wenatchee-self-storage-11.jpg'
          ],
@@ -215,7 +215,7 @@ export const contactPageLocation2Script = {
       'postalCode': '98801',
       'streetAddress': ' 1313 N Wenatchee Ave'
     },
-     'url': 'https://south-wenatchee-multi.netlify.app/wa/leos-self-storage/about',
+     'url': 'https://www.bestwenatcheestorage.com/wa/leos-self-storage/about',
      'image': [
           'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/leos-self-storage-11.jpg'
          ],
@@ -257,7 +257,7 @@ export const ogHomePage = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app`
+    content: `https://www.bestwenatcheestorage.com`
   },
   {
     property: `og:image`,
@@ -312,7 +312,7 @@ export const ogLocation1 = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/wa/south-wenatchee/storage-units`
+    content: `https://www.bestwenatcheestorage.com/wa/south-wenatchee/storage-units`
   },
   {
     property: `og:image`,
@@ -367,7 +367,7 @@ export const ogLocation2 = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/wa/south-wenatchee/storage-units`
+    content: `https://www.bestwenatcheestorage.com/wa/south-wenatchee/storage-units`
   },
   {
     property: `og:image`,
@@ -423,7 +423,7 @@ export const ogPayRentPage = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/pay-rent`
+    content: `https://www.bestwenatcheestorage.com/pay-rent`
   },
   {
     property: `og:image`,
@@ -477,7 +477,7 @@ export const ogPayRentPageLocation1 = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/pay-rent/south-wenatchee/login`
+    content: `https://www.bestwenatcheestorage.com/pay-rent/south-wenatchee/login`
   },
   {
     property: `og:image`,
@@ -531,7 +531,7 @@ export const ogPayRentPageLocation2 = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/pay-rent/leos-self-storage/login`
+    content: `https://www.bestwenatcheestorage.com/pay-rent/leos-self-storage/login`
   },
   {
     property: `og:image`,
@@ -587,7 +587,7 @@ export const ogStorageTipsPage = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/storage-tips`
+    content: `https://www.bestwenatcheestorage.com/storage-tips`
   },
   {
     property: `og:image`,
@@ -641,7 +641,7 @@ export const ogContactPage = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/contact-us`
+    content: `https://www.bestwenatcheestorage.com/contact-us`
   },
   {
     property: `og:image`,
@@ -695,7 +695,7 @@ export const ogContactPageLocation1 = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/contact-south-wenatchee`
+    content: `https://www.bestwenatcheestorage.com/contact-south-wenatchee`
   },
   {
     property: `og:image`,
@@ -748,7 +748,7 @@ export const ogContactPageLocation2 = [
   },
   {
     property: `og:url`,
-    content: `https://south-wenatchee-multi.netlify.app/contact-leos-self-storage`
+    content: `https://www.bestwenatcheestorage.com/contact-leos-self-storage`
   },
   {
     property: `og:image`,

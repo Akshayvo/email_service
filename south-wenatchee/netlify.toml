@@ -26,12 +26,12 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
-  from = "https://south-wenatchee-multi.netlify.app/pay-rent/chester/login"
-  to = "https://south-wenatchee-multi.netlify.app/pay-rent/leos-self-storage/login"
+  from = "https://www.bestwenatcheestorage.com/pay-rent/chester/login"
+  to = "https://www.bestwenatcheestorage.com/pay-rent/leos-self-storage/login"
   status = 301
 [[redirects]]
-  from = "https://south-wenatchee-multi.netlify.app/pay-rent/andrews/login"
-  to = "https://south-wenatchee-multi.netlify.app/pay-rent/south-wenatchee/login"
+  from = "https://www.bestwenatcheestorage.com/pay-rent/andrews/login"
+  to = "https://www.bestwenatcheestorage.com/pay-rent/south-wenatchee/login"
   status = 301
   [[redirects]]
 [[redirects]]

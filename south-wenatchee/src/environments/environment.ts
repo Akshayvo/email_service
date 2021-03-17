@@ -13,7 +13,7 @@ export const environment = {
   appId: 'South Wenatchee Self Storage - Testing',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://south-wenatchee-multi.netlify.app`
+  websiteUrl: `https://www.bestwenatcheestorage.com`
 };
 
 /*
