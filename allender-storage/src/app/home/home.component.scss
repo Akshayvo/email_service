@@ -109,7 +109,7 @@
   transform: skew(0deg);
   width: 500px;
   position: absolute;
-  top: 30%;
+  top: 18%;
 
   .btn-outline-primary {
     margin-right: 10px;
@@ -227,7 +227,8 @@
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .jumbotorn-skew-text {
-    width: 444px;
+    width: 410px;
+    top:18%;
 
     a {
       font-size: 1rem;
@@ -257,11 +258,11 @@
   }
 
   .jumbotorn-skew-text {
-    top: 25%;
+    top: 15%;
 
     .disp {
       h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
     }
   }
@@ -275,7 +276,7 @@
   .jumbotorn-skew-text {
     .disp {
       h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
     }
   }
@@ -359,7 +360,7 @@
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .jumbotorn-skew-style {
-    width: 85%;
+    width: 90%;
   }
 
   .jumbotorn-skew-text {
@@ -466,11 +467,11 @@
   }
 
   .jumbotorn-skew-style {
-    width: 90%;
+    width: 95%;
   }
 
   .jumbotorn-skew-text {
-    top: 45%;
+    top: 25%;
     width: 340px;
 
     a {
