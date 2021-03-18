@@ -46,11 +46,7 @@ export const aboutUs = [
         managers whenever you need them. Store more for less and call us today so you can
         have the best possible storage experience yet!`,
     },
-    {
-        p:`-Your Allender Storage Family
-        Owners, Mike & Kathy Wilmot; Son, Chris Wilmot & Daughter in Law, Jenna Wilmot
-        (with their kids) and their Dog, Bentley (also our number one Lock Salesman).`
-    }
+    
     
 ];
 
