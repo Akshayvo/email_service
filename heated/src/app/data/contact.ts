@@ -2,16 +2,16 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '6 Canton St, Baldwinsville, NY 13027',
+        data: '55 Progress Dr, Orillia, ON L3V 0T7, Canada',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: ''
     },
     {
         id: 1,
         label: 'Email:',
-        data: 'sales@syrasoft.com',
+        data: 'info@heatedselfstorage.ca',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:`sales@syrasoft.com`'
+        redirect: 'mailto:`info@heatedselfstorage.ca`'
     },
     {
         id: 2,
@@ -25,19 +25,15 @@ export const contact = [
 export const hours = [
     {
         label: 'Monday - Friday: ',
-        data: '9:00AM to 7:00PM'
+        data: '11:00AM to 4:00PM'
     },
     {
-        label: 'Saturday: ',
-        data: '10:00 am - 2:00 pm'
-    },
-    {
-        label: 'Sunday: ',
+        label: 'Saturday - Sunday: ',
         data: 'CLOSED'
     },
     {
         label: 'Storage Access Hours: ',
-        data: '24 hours a day, 7 days a week'
+        data: '06:00AM to 7:00PM'
     }
 ];
 

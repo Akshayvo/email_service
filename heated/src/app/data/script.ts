@@ -30,24 +30,24 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
-     map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
-     description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
-     streetAddress: "148 W 51st St",
-     state: "New York",
-     addressLocality: "New York",
-     addressRegion: "NY",
-     postalCode: "10019",
+     map: "https://goo.gl/maps/mMjH1jGGPdcvXkCN6",
+     description: "Heated Self Storage offers a wide range of self storage units from our climate controlled units to our outdoor units and even enclosed vehicle storage units! All of our units are affordably priced and come with all of the modern amenities and awesome customer service our tenants have come to except since 2009!",
+     streetAddress: "6 Canton St",
+     state: "Canada",
+     addressLocality: "Orillia",
+     addressRegion: "Ontario",
+     postalCode: "L3V 0T7",
      addressCountry: "US",
      id: environment.websiteUrl || "",
-     paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
-     currenciesAccepted: "EUR",
-     ratingValue: "4",
+     paymentAccepted:  "Cash, Check, Credit Card, Debit Card",
+     currenciesAccepted: "USD",
+     ratingValue: "4.2",
      bestRating: "5",
-     reviewCount: "250",
-     latitude: 40.761293,
-     longitude: -73.982294,
+     reviewCount: "25",
+     latitude: 44.5887559,
+     longitude: -79.4276553,
      openingHours: [],
-     priceRange: ''
+     priceRange: '$34.51 - $238.05'
 };
 
 export const homePageScript = [ {

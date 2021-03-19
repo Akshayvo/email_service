@@ -8,50 +8,39 @@ export const featuresList = [
         td2: 'Well-Lit Facility',
     },
     {
-        td1: 'Brand New Units',
+        td1: 'Single-Level Facility',
         td2: 'Auto-Pay Available',
     },
     {
-        td1: 'Fully-Paved Facility',
-        td2: 'Pin-Pad Activated Security Gate',
-    },
-    {
-        td1: 'Affordable Rates',
+        td1: 'Friendly Customer Service',
         td2: 'Climate-Controlled Units Available',
     },
     {
-        td1: 'Retail Store On-Premises',
-        td2: 'Fully-Fenced Facility',
+        td1: 'Pin-Pad Activated Security',
+        td2: 'Loading Bay',
+    },
+    {
+        td1: 'Online Rental',
+        td2: 'Online Reservation',
     }
 ];
 
-export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
+export const aboutUsAlt = `self storage units lined up in a row with one unit door open to reveal boxes, luggage, and other household belongings`;
 
-export const aboutUsHeading = `Affordable Self Storage in Baldwinsville`;
+export const aboutUsHeading = `Climate Controlled Self Storage Units in Orillia, O.N.`;
 
 export const aboutUs = [
     {
-        p: `Sample Self Storage - North has proudly served the village of Baldwinsville with friendly
-        service, and clean, well-maintained self storage units for nearly 20 years. We are a locally
-        owned business that prides itself on the trust we've earned from out friends and neighbors over
-        the past two decades.`,
+        p: `Heated Self Storage Inc. is Orillia’s premier self storage facility. Our state-of-the-art storage facility offers climate controlled units perfect for household belongings, equipment, and documents that require a little extra protection from the elements. We also have outdoor storage and dedicated vehicle parking units to preserve your classic car, pick-up truck or trailer during the off-season.`,
     },
     {
-        p: `We are located across the street from the iconic Lock 24 restaurant, and offer easy access
-        through our electronic pin-code secured front gate. Our parking lanes are extra-wide to make
-        maneuvering your moving truck to your unit a breeze. Need access outside of regular banking hours?
-        We're open 24 hours a day! Use our on-site kiosk or rent online and you can can be moving into your unit in minutes!`,
+        p: `Since 2009, Heated Self Storage Inc. has served Orillia, Muskoka, Simcoe, and the surrounding communities with clean, well-maintained, and affordable self storage units and vehicle parking. Our facility is built from the ground up to ensure your next self storage project is fast and easy. Start by checking out our rates and availability, then use our simple contactless rental process. Once your electronic lease agreement is signed, you’ll receive your gate access code. Our extended hours from 6:00AM to 10:00PM every day let you come and go from our tidy, solar power-equipped self storage facility with full-sized loading bays on your schedule.`,
     },
     {
-        p: `Our units range from closet-sized 5-foot-by-5-foot units that are perfect for seasonal
-        clothing, and sports equipment to our 10-foot-by-30-foot units that will store a multi-bedroom
-        home during a move! Sample Self Storage - North has units available in regular, unconditioned
-        varieties and climate controlled for those belongings that require a little extra protection.`,
+        p: `Our experienced and knowledgeable management team understands that selecting a self storage facility is about more than just a convenient location. The safety of our tenants and security of their belongings is of the utmost importance to us. That’s why our facility is well-lit, covered by numerous security cameras, and is entirely fenced. Our staff also perform regular lot checks to ensure that you feel safe at all times when loading and unloading your unit.`,
     },
     {
-        p: `Whether you're a growing business in need of a place for equipment, documents, and supplies,
-        or if you're a residential storage user in the process of a move, or a renovation, we've got your
-        storage needs covered. Let Sample Self Storage - North help de-clutter your life today!`,
+        p: `Whether you’re a growing business that recognizes the value of maximizing the use of your commercial real estate with affordable storage space, or if you’re a homeowner preparing for a move, or renovation, Heated Self Storage Inc. has you covered! Check out our availability and rates, then rent your unit today!`,
     }
     
 ];
@@ -69,32 +58,29 @@ export const feature = [
     },
     {
         // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
-        label: 'Stellar Customer Service',
-        alt: 'Customer Service Representative Icon'
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg`,
+        label: 'Online Reservation & Bill Pay',
+        alt: 'Icon art displaying a screen with cursor'
     },
-    {
-        // tslint:disable-next-line:max-line-length
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
-        label: 'Affordable Self Storage Rates',
-        alt: 'Icon of a hand holding money'
-
-    },
+   
     {
         // tslint:disable-next-line:max-line-length
         path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg`,
         label: 'Security Cameras on Premises',
         alt: 'Icon of a security camera'
     },
+    {
+        // tslint:disable-next-line:max-line-length
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg`,
+        label: 'Climate Controlled',
+        alt: 'Icon of thermometer indicating climate-controlled units'
+
+    },
 ];
 
 export const jumbotron = [
     {
-        h2: `Affordable Climate Controlled Units in Baldwinsville`,
-        blurb: `Sample Self Storage - North was the first self storage facility we built nearly 20 years ago.
-        We recently renovated our entire operation to make sure our valued customers have another 20 years of
-        clean, affordable regular and climate controlled self storage options in Baldwinsville! Let Sample Self
-        Storage - North help you today. Our well-lit and personalized pin-code secured facility awaits your next
-        storage project!`,
+        h2: `Climate Controlled Self Storage in Orillia`,
+        blurb: `Heated Self Storage Inc. has all of your self storage needs covered with our wide selection of climate controlled self storage units, outdoor units, and dedicated car and truck storage units. Our locally owned and operated facility has been serving Orillia, Muskoka, Simcoe, and the surrounding communities since 2009 with affordable self storage options and friendly customer service. Take a moment to check out our availability and rates, then rent your space online with our handy contactless rental service! `,
     }
 ];

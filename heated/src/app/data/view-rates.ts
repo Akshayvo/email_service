@@ -2,26 +2,12 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Sample Self Storage - North has been serving Baldwinsville, and the surrounding communities
-      with quality regular and climate controlled self storage units for nearly two decades. We have
-      the experience and commitment to modern conveniences you need to make your next storage project an easy one`,
+      p: `Heated Self Storage Inc. is your locally owned & operated one-stop storage shop in Orillia, Ontario! Our facility has been serving the community with great prices on climate controlled self storage units, outdoor storage unit space, and dedicated car and truck units since 2009. We are committed to making your next self storage or vehicle storage project a fast, easy, and affordable one!`,
     },
     {
-      p: `At Sample Self Storage - North, you'll have access to our services with an online tenant portal
-      for contactless rentals, and online payments. If you're here after hours and want to make a payment,
-      stop into the office's foyer and use our 24-hour kiosk!`
+      p: `Take a moment to review our available inventory and pricing, then complete a contactless rental process through our website. You'll be freeing up space around the home, office, or worksite in no time! Still have questions? Give our friendly staff a call and we'll be happy to help you find the perfect storage solution for you!`
     },
-    {
-      p: `Our residential storage users love our convenient location and affordable rates that take the stress
-      out of their move, renovation, or seasonal de-cluttering projects. An extra closet to an extra garage's
-      worth of space makes the most out of your home's space!
-      `
-    },
-    {
-      p: `Many local businesses in use our climate controlled storage units to save money by storing in a climate
-      controlled storage unit instead of expensive commercial real estate. We are the ideal space for your extra
-    inventory, or documents. Our 24-hour access policy is the ideal solution for your local business.`
-    }
+    
 ];
 
 export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
