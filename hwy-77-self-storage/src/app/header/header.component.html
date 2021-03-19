@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-10">
           <span class="contact-details" *ngFor="let contact of contactDetails" [class.display-none]="contact.id ===1"  >
-            <i class="icon" *ngIf="contact.id !== 1" [class]="contact?.class"></i><span class="contact-links pr-4" *ngIf="contact?.id > 1 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+            <i class="icon" *ngIf="contact.id !== 1" [class]="contact?.class"></i><span class="contact-links pr-4" *ngIf="contact?.id > 1 else other_content"><a [href]="contact?.redirect" rel="noopener">&nbsp;{{contact.data}}</a></span>
             <ng-template #other_content>&nbsp;<span class="contact-links pr-4" *ngIf="contact.id === 0">{{contact.data}}</span></ng-template>
           </span>
         </div>

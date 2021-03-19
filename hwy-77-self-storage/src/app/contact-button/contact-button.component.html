@@ -13,7 +13,7 @@
 </div>
 
 <div class="map-responsive py-2">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14094.096446524305!2d-97.5591838!3d27.9778571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ef52d99b277cf9e!2sHighway%2077%20Self%20Storage!5e0!3m2!1sen!2sus!4v1580772592898!5m2!1sen!2sus" width="100%" height="150px" frameborder="0"allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14094.096446524305!2d-97.5591838!3d27.9778571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ef52d99b277cf9e!2sHighway%2077%20Self%20Storage!5e0!3m2!1sen!2sus!4v1580772592898!5m2!1sen!2sus" width="100%" height="150px" frameborder="0"allowfullscreen title="Facility Google Map" rel="noopener"></iframe>
 </div>
 
 <!-- <div *ngFor="let contact of contactInfo" class="py-1 contact-links">
@@ -21,7 +21,7 @@
   <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
 </div> -->
 <div *ngFor="let contact of contactInfo" class="contact-links">
-  <span class="contact-data" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect"><span> <i class="{{contact.class}}"></i></span>{{contact.data}}</a></span>
+  <span class="contact-data" *ngIf="contact?.id === 2 || contact?.id === 3 else other_content"><a [href]="contact?.redirect" rel="noopener"><span> <i class="{{contact.class}}"></i></span>{{contact.data}}</a></span>
   <ng-template #other_content><b class="contact-data">{{contact.label}}</b><br><span class="contact-data"><i class="{{contact.class}}"></i>{{contact.data}}</span></ng-template>
 </div>
 
