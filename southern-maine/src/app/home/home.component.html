@@ -46,9 +46,9 @@
               
               <p>
                 <span *ngFor="let contact of contactDetails">
-                  <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' || contact?.label === 'Address:' else other_content">
-                    <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></span>
-                  <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                  <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+                    <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}" rel="noopener">&nbsp;{{contact.data}}</a></span>
+                 <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
                 </span>
               </p>
               <b>Office Hours:</b>

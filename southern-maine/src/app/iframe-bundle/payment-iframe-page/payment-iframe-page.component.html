@@ -19,7 +19,7 @@
               John's Password: {{loginDetail.example.password}}</p>
             <p><strong>Have questions about your account?</strong><br>
             <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
-              <a  *ngIf="contact?.id == 1 || contact?.id == 2" [href]="contact?.redirect" target="_blank" rel="noopener">
+              <a  *ngIf="contact?.id == 1 || contact?.id == 2" [href]="contact?.redirect" rel="noopener">
                 {{contact.data}}
               </a>
             <br>
