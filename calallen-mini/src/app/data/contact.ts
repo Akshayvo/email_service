@@ -4,6 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '4233 FM624, Robstown, TX 78380',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect:'https://www.google.com/maps/place/4233+FM624,+Robstown,+TX+78380,+USA/@27.8664534,-97.6960642,17z/data=!4m2!3m1!1s0x86687a2719907c95:0x7de7a5a38fd843a0'
     },
     {
         id: 1,
