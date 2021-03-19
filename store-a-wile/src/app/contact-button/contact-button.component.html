@@ -25,8 +25,9 @@
   <ng-template #other_content><b class="contact-data">{{contact.label}}</b><br><span class="contact-data"><i class="{{contact.class}}"></i>{{contact.data}}</span></ng-template>
 </div> -->
 <div class="font-xs-device pr-4" *ngFor="let contact of contactInfo">
-  <i [class]="contact?.class"></i><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a><br></span>
-  <ng-template #other_content>&nbsp;<span>{{contact.data}}</span><br></ng-template>
+  <i [class]="contact?.class"></i><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
+    <a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}" rel="noopener">&nbsp;{{contact.data}}</a></span>
+ <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
 </div>
 
 <form class="py-2" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
