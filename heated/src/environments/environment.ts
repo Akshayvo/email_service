@@ -5,7 +5,7 @@
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'new-york/baldwinsville', // state/city  **Remeber to update locationName in sitemap.xml as well
+  locationName: 'ontario/canada', // state/city  **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: true, reserve: false }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
@@ -13,12 +13,13 @@ export const environment = {
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Sample Self Storage - North',
-  facilityName: 'Sample Self Storage - North',
+  appId: 'Heated Self Storage Inc',
+  facilityName: 'Heated Self Storage Inc',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://sample-self-storage-staging.netlify.app',
-  APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
+  websiteUrl: 'https://heated-self-storage-staging.netlify.app',
+  APIKey: `bTJUOW40TDJbN1s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,
+  // APIKey:`Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, //demo north   
 };
 
 /*

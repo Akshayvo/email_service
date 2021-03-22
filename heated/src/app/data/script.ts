@@ -25,9 +25,9 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" // 16:9
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Heated_Storage/jpg/heated-storage-jumbotron.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Heated_Storage/jpg/heated-storage-jumbotron.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Heated_Storage/jpg/heated-storage-jumbotron.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
      map: "https://goo.gl/maps/mMjH1jGGPdcvXkCN6",
@@ -46,7 +46,7 @@ export const script = {               // Please fill this script according to fa
      reviewCount: "25",
      latitude: 44.5887559,
      longitude: -79.4276553,
-     openingHours: [],
+     openingHours: ["Mo-Fr 11:00-16:00"],
      priceRange: '$34.51 - $238.05'
 };
 
