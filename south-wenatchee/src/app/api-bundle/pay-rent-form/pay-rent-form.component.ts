@@ -185,11 +185,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     if (this.router.url.includes('/payReservationCharges') ) {
       this.navigateToReserve = true;
       this.navigateToMoveIn = false;
-      // this.payRentForm.patchValue({
-      //   objPayment: {
-      //    PaymentAmount: this.TotalReserveAmount
-      //   }
-      // });
+      this.payRentForm.patchValue({
+        objPayment: {
+         PaymentAmount: this.TotalReserveAmount
+        }
+      });
     } else {
       if (this.router.url.includes('/payMoveInCharges')) {
         this.navigateToReserve = false;

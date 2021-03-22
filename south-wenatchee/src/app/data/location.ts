@@ -131,7 +131,7 @@ export const tabs3 = [
 
 export const headingLocation1 = `Reserve a Storage Unit with Drive up Access Today!`;
 
-export const headingLocation2 = ` Make a Free Online Reserve on a Storage Unit Today!`;
+export const headingLocation2 = `Place your online reservation today!`;
 
 export const headingLocation3 = `Make a Free Online Reserve on a Storage Unit Today!`;
 

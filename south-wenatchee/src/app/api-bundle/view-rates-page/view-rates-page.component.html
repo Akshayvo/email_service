@@ -35,9 +35,9 @@
               <p >Rate</p>
               <div class="custom-font"><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</strong></div>
           </div>
-          <div class="text-center" *ngIf="lstUnitType.DepositAmount != null">
-            <p>Deposit</p>
-            <div><span>$</span>{{lstUnitType.DepositAmount}}</div>
+          <div class="text-center" *ngIf="lstUnitType.ReservationFee != null">
+            <p>Reservation Charges</p>
+            <div class="custom-font"><strong><span>$</span>{{lstUnitType.ReservationFee}}</strong></div>
           </div>
         </div>
       </div>

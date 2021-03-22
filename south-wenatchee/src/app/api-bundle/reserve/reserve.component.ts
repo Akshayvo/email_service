@@ -32,10 +32,10 @@ export class ReserveComponent implements OnInit {
   public isSomePage() {
     if (this.router.url.includes('/wa/south-wenatchee')) {
       this.id = 1;
-      this.heading = headingReservePageLocation2;
+      this.heading = headingReservePageLocation1;
     } else if (this.router.url.includes('/wa/leos-self-storage')) {
       this.id = 2;
-      this.heading = headingReservePageLocation1;
+      this.heading = headingReservePageLocation2;
     }
   }
 
