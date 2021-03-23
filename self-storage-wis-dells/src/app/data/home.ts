@@ -4,8 +4,8 @@ export const featuresList = [
         td2: 'Online Bill Pay'
     },
     {
-        td1: 'Security Cameras',
-        td2: 'Well-Lit Facility'
+        td1: 'High-Definition Security Cameras',
+        td2: 'Brand New LED Lighting'
     },
     {
         td1: 'Brand New Units',
