@@ -4,6 +4,7 @@ import { directionLocation1, directionLocation2, directionLocation3,
   // directionLocation4,
  } from '../data/location';
 import { CanonicalService } from '../services/canonical.service';
+import { environment } from '../../environments/environment';
 @Component({
   selector: 'app-directions',
   templateUrl: './directions.component.html',
@@ -25,17 +26,17 @@ export class DirectionsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/foley')) {
+    if (this.router.url.includes(`${environment.locationName}/foley`)) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes('/location/silverhill')) {
+     } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
        this.fetchDetailsLocation2();
-    } else  if (this.router.url.includes('/location/barnwell'))  {
+    } else  if (this.router.url.includes(`${environment.locationName}/barnwell`))  {
        this.fetchDetailsLocation3();
-    }  else  if (this.router.url.includes('/location/belforest'))  {
+    }  else  if (this.router.url.includes(`${environment.locationName}/belforest`))  {
       this.fetchDetailsLocation4();
-    } else  if (this.router.url.includes('/location/fairhope'))  {
+    } else  if (this.router.url.includes(`${environment.locationName}/fairhope`))  {
       this.fetchDetailsLocation5();
-    } else  if (this.router.url.includes('/location/robertsdale'))  {
+    } else  if (this.router.url.includes(`${environment.locationName}/robertsdale`))  {
       this.fetchDetailsLocation6();
     }
  }

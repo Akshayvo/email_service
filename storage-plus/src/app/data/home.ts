@@ -16,7 +16,7 @@ export const featuresHead = [
         alt: 'Icon of thermometer indicating climate-controlled units'
     },
     {
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Bill Pay',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
         alt: 'Icon art displaying a screen with cursor'
     },

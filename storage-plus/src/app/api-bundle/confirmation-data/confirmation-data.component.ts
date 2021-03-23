@@ -9,6 +9,7 @@ import { TenantInfoService } from '../services/tenant-info.service';
 import { Subscription } from 'rxjs';
 import { option } from '../../data/view-rates';
 import { SignOutService } from '../services/sign-out.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-confirmation-data',
@@ -60,6 +61,13 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   addressLine2: string;
   city: string;
   zip: string;
+  alternateName: String;
+  alternatePhone: String;
+  alternateAddressLine1: String;
+  alternateAddressLine2: string;
+  alternateCity: string;
+  alternateState: string;
+  alternateZIP: string;
   reservationFee: number;
   reservationFeeTax: number;
   description: string;
@@ -82,6 +90,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   canExit = true;
 
   period: string;
+  showAltDetails = false;
   navTo: any;
 
   facilityLocation: string;
@@ -159,12 +168,20 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.addressLine2 = this.dataSharingService.objTenant.AddressLine2;
     this.city = this.dataSharingService.objTenant.City;
     this.zip = this.dataSharingService.objTenant.ZIP;
+    this.alternateName = this.dataSharingService.objTenant.AlternateName;
+    this.alternatePhone = this.dataSharingService.objTenant.AlternatePhone;
+    this.alternateAddressLine1 = this.dataSharingService.objTenant.AlternateAddressLine1;
+    this.alternateAddressLine2 = this.dataSharingService.objTenant.AlternateAddressLine2;
+    this.alternateCity = this.dataSharingService.objTenant.AlternateCity;
+    this.alternateState = this.dataSharingService.objTenant.AlternateState;
+    this.alternateZIP = this.dataSharingService.objTenant.AlternateZIP;
     this.reservationFee = this.dataSharingService.LstUnitTypes.ReservationFee;
     this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
     this.description = this.dataSharingService.LstUnitTypes.Description;
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
     this.navTo = this.dataSharingService.navigationTo;
     this.dataSharingService.initMyNavLinks('confirmationData', window.location.pathname);
+    this.showAltDetails = this.dataSharingService.showAltDetails;
 
     this.myNavLinks = this.dataSharingService.getMyNavLinks('confirmationData');
 
@@ -240,9 +257,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           this.reservationInProgress = false;
 
           if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
           } else {
-            this.router.navigate([`location/${this.facilityLocation}/reserve-unit/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
           }
         }
 
@@ -287,9 +304,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           }
           this.reservationInProgress = false;
           if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`location/${this.facilityLocation}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
           } else {
-            this.router.navigate([`location/${this.facilityLocation}/moveIn/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/thank-you`]);
           }
         }
       }, (err: any) => {

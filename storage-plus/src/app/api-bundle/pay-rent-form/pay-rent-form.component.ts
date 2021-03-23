@@ -194,11 +194,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       if (this.router.url.includes('/payMoveInCharges')) {
         this.navigateToReserve = false;
         this.navigateToMoveIn = true;
-        // this.payRentForm.patchValue({
-        //   objPayment: {
-        //    PaymentAmount: this.totalMoveInAmount
-        //   }
-        // });
+        this.payRentForm.patchValue({
+          objPayment: {
+           PaymentAmount: this.totalMoveInAmount
+          }
+        });
       } else {
         if (this.router.url.includes('/payment') ) {
           this.navigateToMoveIn = false;
@@ -481,7 +481,7 @@ public navigateToPrevious() {
   }
 
   public navigateToConfirmation(location: any) {
-    this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${location}`]);
+    this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
   }
 
   getPayMethods() {
@@ -663,9 +663,9 @@ public navigateToPrevious() {
       this.showloaderForPayment = false;
 
       if (!!localStorage.getItem('paymentTab')) {
-        this.router.navigate([`location/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+        this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
       } else {
-        this.router.navigate([`location/${this.facilityLocation}/reserve-unit/thank-you`]);
+        this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
       }
     }
     }, (err: any) => {
@@ -697,9 +697,9 @@ public navigateToPrevious() {
         if (strConfirmationResponse.intErrorCode === 1  ) {
           this.makePaymentForUnit = false;
           if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`location/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
           } else {
-            this.router.navigate([`location/${this.facilityLocation}/move-in/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/thank-you`]);
           }
           this.showloaderForPayment = false;
 

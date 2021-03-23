@@ -50,7 +50,7 @@ export const navLinks = [
     },
     {
         label: 'Storage Tips',
-        path: '/storage-tips',
+        path: `${environment.locationName}/storage-tips`,
         type: 'link'
     },
     {
