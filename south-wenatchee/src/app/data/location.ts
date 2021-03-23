@@ -137,9 +137,9 @@ export const headingLocation3 = `Make a Free Online Reserve on a Storage Unit To
 
 export const headingLocation4 = `Make a Free Online Reserve on a Storage Unit Today!`;
 
-export const headingReservePageLocation1 = `Ready to Reserve a Unit in South Wenatchee Self Storage`;
+export const headingReservePageLocation1 = `Ready to reserve your unit at South Wenatchee Self Storage?`;
 
-export const headingReservePageLocation2 = `Ready to Reserve a Unit in Leo's Self Storage`;
+export const headingReservePageLocation2 = `Ready to reserve your unit at Leo's Self Storage?`;
 
 export const headingReservePageLocation3 = ``;
 
