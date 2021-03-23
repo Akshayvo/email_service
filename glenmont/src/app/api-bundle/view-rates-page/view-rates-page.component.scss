@@ -4,6 +4,78 @@
   display: none;
 }
 
+.viewrates-desktop {
+  background-color: $white;
+
+  h3 {
+    color: $white;
+    background-color: $primary;
+    font-size: 1.75rem;
+  }
+
+  .unitDetail:nth-child(odd) {
+    background: #a8a8a8;
+  }
+
+  .unitDetail:nth-child(even) {
+    background: #fff5ee;
+  }
+
+  .unitDetail {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .unitType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-font {
+    font-size: 1.4rem;
+  }
+}
+
+.viewrates-mobile {
+  background-color: $white;
+
+  h3 {
+    color: $white;
+    background-color: $primary;
+    font-size: 1.75rem;
+  }
+
+  .unitDetail:nth-child(odd) {
+    background: #a8a8a8;
+  }
+
+  .unitDetail:nth-child(even) {
+    background: #fff5ee;
+  }
+
+  .unitDetail {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .unitType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-font {
+    font-size: 1.4rem;
+  }
+}
+
 .iconStyle {
   cursor: pointer;
 }
@@ -25,7 +97,6 @@
 
 table {
   width: -webkit-fill-available;
-
   thead {
     background: $primary;
     th {
@@ -33,10 +104,12 @@ table {
       font-size: 1rem;
     }
   }
+
   tbody {
     tr:nth-child(even) {
       background-color: #dcdcdc;
     }
+
     tr {
       td {
 
@@ -61,7 +134,7 @@ table {
 }
 
 .loader {
-  border: 5px solid #f3f3f3;
+  border: 5px solid $white;
   border-top: 5px solid $primary;
   border-radius: 50%;
   width: 80px;
@@ -80,6 +153,8 @@ table {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  // width: 100%;
+  // border-bottom: thin solid lightgray;
 }
 
 p {
@@ -97,7 +172,7 @@ p {
 }
 
 .ClimateBorder {
-  border-left: 1px solid $black;
+  border-left: 1px solid #000;
   text-align: left;
 }
 
@@ -112,29 +187,13 @@ p {
     display: none;
   }
 
-  .buttons {
-    .btn-outline-primary {
-      color: $primary !important;
-    }
-  }
-}
+  // .btn-primary {
+  //   min-width: unset;
+  //   font-size: 0.7rem;
+  // }
 
-@media only screen and (max-width: 767px)  and (min-width: 381px) {
-  .buttons {
-    .btn {
-      min-width: 150px;
-    }
-
-    .btn-outline-primary {
-      color: $primary !important;
-    }
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .buttons {
-    .btn {
-      min-width: auto;
-    }
+  .btn-outline-primary {
+    min-width: 127px;
+    font-size: 0.7rem;
   }
 }

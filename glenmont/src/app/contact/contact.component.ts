@@ -20,7 +20,6 @@ export class ContactComponent implements OnInit {
   contactDetails: any;
   hours: any;
   name: string;
-  email: any;
   message: string;
   contactInfo: any;
   receiveremail: string;
@@ -158,7 +157,7 @@ public fetchTwitter() {
     const index = contact.findIndex(x => x.label === 'Email:');
 
     if (!!index) {
-      this.receiveremail = this.contactDetails[index].email;
+      this.receiveremail = this.contactDetails[index].data;
     }
 
      this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>

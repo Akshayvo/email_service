@@ -11,8 +11,7 @@ export const contact = [
         label: 'Email:',
         data: 'info@glenmontselfstorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        email: 'sales@syrasoft.com, syrasoftsoftware@gmail.com',
-        redirect: 'mailto:`sales@syrasoft.com, syrasoftsoftware@gmail.com`'
+        redirect: 'mailto:`info@glenmontselfstorage.com`'
     },
     {
         id: 2,
