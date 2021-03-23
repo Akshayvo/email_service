@@ -25,7 +25,7 @@ export const faqContent=[
     },
     {
         question: 'Q: I noticed a problem, but it’s the weekend. What can I do?',
-        answer: `A: There are emergency/after hour numbers posted at all exits to the facility. Feel free to call one of the numbers and we will be pleased to look after your concerns.`
+        answer: `A: Feel free to call the office number and select the emergency contact option and we will be pleased to look after your concerns.`
     },
     {
         question: 'Q: Do we use our own locks or are they rented too?',
@@ -53,7 +53,7 @@ export const faqContent=[
     },
     {
         question:'Q: What if I forget my PIN code',
-        answer: `A: If you enter your mobile number into the keypad it will text you a pin. You can also call the office at 705-330-4055 and let them know you have forgotten you PIN code`,
+        answer: `A: If you enter your mobile number into the keypad it will text you a pin. You can also call the office at 705-330-4055 and let them know you have forgotten your PIN code`,
         
     }
 
