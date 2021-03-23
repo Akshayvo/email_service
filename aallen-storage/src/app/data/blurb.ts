@@ -8,7 +8,7 @@ export const jumbotronHome = [
 export const viewRates = [
   {
     heading: `View Rates`,
-    blurb: `Whether you're looking for short-term storage during a move or long-term self storage for a permanent downsizing, Aallen Self Storage has the perfect unit for you! Our friendly staff and high tech facility is here to make your self storage experience a breeze!`,
+    blurb: `Whether you're looking for short-term or long-term self-storage, Aallen Self Storage has the perfect storage unit for you. Our friendly staff and high-tech facility are here to make your self-storage experience a breeze!`,
   },
 ];
 
