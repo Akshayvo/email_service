@@ -129,25 +129,25 @@ export class LoginComponent implements OnInit, OnDestroy {
   public fetchContactDetail() {
     if (this.router.url.includes('foley')) {
       this.id = 1;
-      this.name = 'Storage Plus of Baldwin County - Foley Location';
+      this.name = 'Storage Plus of Baldwin County - Foley';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
     } else  if (this.router.url.includes('silverhill')) {
       this.id = 2;
-      this.name = 'Storage Plus of Baldwin County - Silverhill Location';
+      this.name = 'Storage Plus of Baldwin County - Silverhill';
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
     } else  if (this.router.url.includes('barnwell')) {
       this.id = 3;
-      this.name = 'Storage Plus of Baldwin County - Barnwell Location';
+      this.name = 'Storage Plus of Baldwin County - Barnwell';
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
     } else  if (this.router.url.includes('belforest')) {
       this.id = 4;
-      this.name = 'Storage Plus of Baldwin County - Belforest Location';
+      this.name = 'Storage Plus of Baldwin County - Belforest';
       this.contact = contactsLocation4;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);

@@ -16,9 +16,9 @@ export const featuresHead = [
         alt: 'Icon of thermometer indicating climate-controlled units'
     },
     {
-        label: 'Security Cameras on Premises',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
-        alt: 'Icon of a security camera'
+        label: 'Online Reservation & Bill Pay',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+        alt: 'Icon art displaying a screen with cursor'
     },
 ];
 
@@ -164,7 +164,7 @@ export const serviceOffered = [
         `,
     },
     {
-        p: `Take advantage of our decades of self storage experience to make your next move, renovation, or spring cleaning easier! At Storage Plus of Baldwin County, you’ll get 24-hour access to our well-lit facilities covered by security cameras, and you can access your account to pay online or update your information with us. We understand the value of working on your own schedule and give you the freedom to come and go as your time allows.`,
+        p: `Take advantage of our decades of self storage experience to make your next move, renovation, or spring cleaning easier! At Storage Plus of Baldwin County, you’ll get 24-hour access to our well-lit facilities and you'll have access your account to pay online or update your information with us. We understand the value of working on your own schedule and give you the freedom to come and go as your time allows.`,
     },
     {
         p: `Whether you’re a residential storage user looking for a place to put seasonal decorations, and yard equipment or you’re preparing for a move and need a long term storage solution, one of our 6 conveniently located storage facilities is sure to have a unit that meets your needs. We also serve a number of growing local businesses who recognize the value of inexpensive storage space for tools, supplies, and inventory.`,
@@ -205,7 +205,7 @@ export const jumbotron = [
         h2: `Affordable Self Storage Units in Baldwin County`,
         blurb: `Storage Plus of Baldwin County serves the communities of Baldwin County with 6 locally owned
         self storage and vehicle parking facilities. We offer affordable self storage units in a variety of
-        sizes including climate controlled varieties. Take a moment to review our pricing and storage unit
-        or vehicle parking availability, then give u s a call call, or reserve your unit online!`,
+        sizes including climate controlled varieties.Take a moment to review our pricing and storage unit or
+        vehicle parking availability, then give us a call, or reserve your unit online!`,
     }
 ];

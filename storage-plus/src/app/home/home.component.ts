@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
-import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
+import { contactsHomePage, hoursHomePage, contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
   contactsLocation3, contactsLocation4, hoursLocation3, hoursLocation4,
   contactsLocation5, contactsLocation6, hoursLocation5, hoursLocation6, } from '../data/contact';
 import { featuresHead, serviceOffered, featuresList, jumbotron } from '../data/home';
@@ -102,8 +102,8 @@ export class HomeComponent implements OnInit {
   }
 
   public fetchContactDetails() {
-    this.contactHomeDetails = contactsLocation1
-    this.hoursHomeDetails = hoursLocation1
+    this.contactHomeDetails = contactsHomePage;
+    this.hoursHomeDetails = hoursHomePage;
   }
 
   public fetchJumbotron() {
@@ -169,25 +169,25 @@ export class HomeComponent implements OnInit {
 
 
     public fetchContactDetailsLocation1() {
-      this.heading = `Storage Plus of Baldwin County - Foley Location`;
+      this.heading = `Storage Plus of Baldwin County - Foley`;
       this.contactDetails = contactsLocation1;
       this.hoursDetails = hoursLocation1;
     }
 
     public fetchContactDetailsLocation2() {
-      this.heading = `Storage Plus of Baldwin County - Silverhill Location`;
+      this.heading = `Storage Plus of Baldwin County - Silverhill`;
       this.contactDetails = contactsLocation2;
       this.hoursDetails = hoursLocation2;
     }
 
     public fetchContactDetailsLocation3() {
-      this.heading = `Storage Plus of Baldwin County - Barnwell Location`;
+      this.heading = `Storage Plus of Baldwin County - Barnwell`;
       this.contactDetails = contactsLocation3;
       this.hoursDetails = hoursLocation3;
     }
 
     public fetchContactDetailsLocation4() {
-      this.heading = `Storage Plus of Baldwin County - Belforest Location`;
+      this.heading = `Storage Plus of Baldwin County - Belforest`;
       this.contactDetails = contactsLocation4;
       this.hoursDetails = hoursLocation4;
     } 

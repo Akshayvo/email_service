@@ -89,7 +89,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: 'location/foley',
+    { path: `${environment.locationName}/foley`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -106,7 +106,7 @@ export const apiRoutes = [
             { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
           ]
         },
-        { path: 'moveIn', component: ReserveComponent,
+        { path: 'move-in', component: ReserveComponent,
           children: [
             { path: '', component: ReserveUnitFormComponent },
             { path: 'move-in', component: ReserveUnitFormComponent },
@@ -124,7 +124,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/silverhill',
+    { path: `${environment.locationName}/silverhill`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -141,7 +141,7 @@ export const apiRoutes = [
             { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
           ]
         },
-        { path: 'moveIn', component: ReserveComponent,
+        { path: 'move-in', component: ReserveComponent,
           children: [
             { path: '', component: ReserveUnitFormComponent },
             { path: 'move-in', component: ReserveUnitFormComponent },
@@ -159,7 +159,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/barnwell',
+    { path: `${environment.locationName}/barnwell`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -177,7 +177,7 @@ export const apiRoutes = [
 
           ]
         },
-        { path: 'moveIn', component: ReserveComponent,
+        { path: 'move-in', component: ReserveComponent,
           children: [
             { path: '', component: ReserveUnitFormComponent },
             { path: 'move-in', component: ReserveUnitFormComponent },
@@ -194,7 +194,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/belforest',
+    { path: `${environment.locationName}/belforest`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -211,7 +211,7 @@ export const apiRoutes = [
             { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
           ]
         },
-        { path: 'moveIn', component: ReserveComponent,
+        { path: 'move-in', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
             { path: '', component: ReserveUnitFormComponent },
@@ -230,7 +230,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/fairhope',
+    { path: `${environment.locationName}/fairhope`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -247,7 +247,7 @@ export const apiRoutes = [
             { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
           ]
         },
-        { path: 'moveIn', component: ReserveComponent,
+        { path: 'move-in', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
             { path: '', component: ReserveUnitFormComponent },
@@ -266,7 +266,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/robertsdale',
+    { path: `${environment.locationName}/robertsdale`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -283,7 +283,7 @@ export const apiRoutes = [
             { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
           ]
         },
-        { path: 'moveIn', component: ReserveComponent,
+        { path: 'move-in', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
             { path: '', component: ReserveUnitFormComponent },

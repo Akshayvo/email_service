@@ -32,11 +32,11 @@
               </div>
             </span>
             <span *ngIf="locationId == 5" title="a row of self storage unit doors in a single story metal storage building"> 
-              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'">
+              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-5-jpg' : 'img-box-6-webp'">
               </div>
             </span>
             <span *ngIf="locationId == 6" title="single story self storage unit buildings with green metal roll up doors"> 
-              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'">
+              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-5-jpg' : 'img-box-6-webp'">
               </div>
             </span>
         </div>
@@ -65,9 +65,11 @@
         <div class="hours-data w-100">
           <div class="row">
             <div class="col-lg-8">
-              <h4 class="pt-3" *ngIf="locationId == 2 else other_content" >Facility Hours</h4>
-              <ng-template #other_content>&nbsp;<h4 class="pt-3">Access Hours:</h4></ng-template>
-              <app-tables [tBody]="hours" ></app-tables> 
+              <h4 class="pt-3" *ngIf="locationId !== 1;then content else other_content" >Gate Access Hours</h4>
+              <ng-template #content><h4 class="pt-3">Gate Access Hours</h4><app-tables [tBody]="hours" ></app-tables></ng-template>
+              <ng-template #other_content><h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" >
+              </app-tables><h4 class="pt-3">Gate Access Hours</h4><app-tables [tBody]="access" ></app-tables>
+            </ng-template> 
             </div>
             <div class="col-lg-4 btn-area text-center">
               <a class="btn btn-outline-primary p-2" [routerLink]="['/contact-us']" role="button">Contact Us</a> 

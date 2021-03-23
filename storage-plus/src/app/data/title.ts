@@ -1,19 +1,19 @@
 export const homePageTitle = `Affordable Self Storage & Vehicle Parking in Baldwin County`;
 export const homePageContent = `Storage Plus of Baldwin County has 6 conveniently located self storage facilities with a variety of affordable self storage unit types and vehicle parking options.`;
 
-export const location1PageTitle = `Foley Location | Storage Plus of Baldwin County`;
+export const location1PageTitle = `Foley | Storage Plus of Baldwin County`;
 export const location1PageContent = `We offer a number of affordable self storage options in Foley, Alabama. Check out our prices, then give us a call to start clearing up your home, office, or garage!`;
 
-export const location2PageTitle = `Silverhill Location | Storage Plus of Baldwin County`;
+export const location2PageTitle = `Silverhill | Storage Plus of Baldwin County`;
 export const location2PageContent = `Our Silverhill location offers a large variety of regular and climate controlled storage units in a number of sizes, and all of our units are priced competitively!`;
 
-export const location3PageTitle = `Barnwell Location | Storage Plus of Baldwin County`;
+export const location3PageTitle = `Barnwell | Storage Plus of Baldwin County`;
 export const location3PageContent = `Our Barnwell location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
 
-export const location4PageTitle = `Belforest Location | Storage Plus of Baldwin County`;
+export const location4PageTitle = `Belforest | Storage Plus of Baldwin County`;
 export const location4PageContent = `Our Belforest location offers a number of affordable regular and climate controlled self storage units, perfect for any self storage project!`;
 
-export const location5PageTitle = `Fairhope Location  | Storage Plus of Baldwin County`;
+export const location5PageTitle = `Fairhope  | Storage Plus of Baldwin County`;
 export const location5PageContent = `Our Fairhope location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
 
 export const location6PageTitle = `Robertsdale | Storage Plus of Baldwin County`;

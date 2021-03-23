@@ -1,4 +1,4 @@
- <div class="row">
+ <div class="row" *ngIf="id == 1 || id == 3" >
      <div class="col-lg-8 p-4">
     <div>
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
@@ -76,5 +76,9 @@
           </span>
           </p>
     </div> 
+</div>
+ </div>
+<div class="coming-soon" *ngIf="id == 2 || id == 4 || id == 5 || id == 6">
+    <b>Coming Soon !</b>
 </div>    
  

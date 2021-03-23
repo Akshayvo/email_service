@@ -74,10 +74,10 @@ const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
 const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
 const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
-export const nameLocation1 = `Storage Plus of Baldwin County - Foley Location`;
-export const nameLocation2 = `Storage Plus of Baldwin County - Silverhill Location`;
-export const nameLocation3 = `Storage Plus of Baldwin County - Barnwell Location`;
-export const nameLocation4 = `Storage Plus of Baldwin County - Belforest Location`;
+export const nameLocation1 = `Storage Plus of Baldwin County - Foley`;
+export const nameLocation2 = `Storage Plus of Baldwin County - Silverhill`;
+export const nameLocation3 = `Storage Plus of Baldwin County - Barnwell`;
+export const nameLocation4 = `Storage Plus of Baldwin County - Belforest`;
 export const nameLocation5 = `Storage Plus of Baldwin County - Fairhope`;
 export const nameLocation6 = `Storage Plus of Baldwin County - Robertsdale`;
 

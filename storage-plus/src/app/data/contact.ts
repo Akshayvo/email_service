@@ -1,3 +1,39 @@
+export const contactsHomePage = [
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '17860 US-98, Foley, AL 36535',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
+    },
+    {
+        id: 2,
+        label: 'Email: ',
+        email: 'accounts@storageplusbaldwin.com',
+        data: `accounts@storageplusbaldwin.com`,
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+    },
+    {
+        id: 3,
+        label: 'Phone: ',
+        data: '(251) 970-3168',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:2519703168'
+    },
+];
+
+export const hoursHomePage = [
+    {
+        label: 'Monday - Friday: ',
+        data: '8:30AM to 5:00PM',
+    },
+    {
+        label: 'Saturday - Sunday: ',
+        data: 'Self Check-In Available',
+    },
+];
+
 export const contactsLocation1 = [
     {
         id: 1,
@@ -32,9 +68,12 @@ export const hoursLocation1 = [
         label: 'Saturday - Sunday: ',
         data: 'CLOSED',
     },
+];
+
+export const hoursLocation1AcessHours = [
     {
-        label: 'Access Hour: ',
-        data: '7 Days a Week 6:00AM to 8:00PM',
+        label: '7 Days a Week: ',
+        data: '6:00AM to 8:00PM'
     },
 ];
 

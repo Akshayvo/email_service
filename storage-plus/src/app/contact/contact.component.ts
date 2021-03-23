@@ -147,25 +147,25 @@ public fetchMetaData() {
   }
   
   public fetchContactDetailsLocation1() {
-    this.heading = `Storage Plus of Baldwin County - Foley Location`;
+    this.heading = `Storage Plus of Baldwin County - Foley`;
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
 
   public fetchContactDetailsLocation2() {
-    this.heading = `Storage Plus of Baldwin County - Silverhill Location`;
+    this.heading = `Storage Plus of Baldwin County - Silverhill`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = `Storage Plus of Baldwin County - Barnwell Location`;
+    this.heading = `Storage Plus of Baldwin County - Barnwell`;
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
-    this.heading = `Storage Plus of Baldwin County - Belforest Location`;
+    this.heading = `Storage Plus of Baldwin County - Belforest`;
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
   }

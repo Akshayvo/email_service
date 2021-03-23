@@ -155,13 +155,13 @@ export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit
 
 export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
 
-export const heading1 = `Storage Plus of Baldwin County - Foley Location`;
+export const heading1 = `Storage Plus of Baldwin County - Foley`;
 
-export const heading2 = `Storage Plus of Baldwin County - Silverhill Location`;
+export const heading2 = `Storage Plus of Baldwin County - Silverhill`;
 
-export const heading3 = `Storage Plus of Baldwin County - Barnwell Location`;
+export const heading3 = `Storage Plus of Baldwin County - Barnwell`;
 
-export const heading4 = `Storage Plus of Baldwin County - Belforest Location`;
+export const heading4 = `Storage Plus of Baldwin County - Belforest`;
 
 export const heading5 = `Storage Plus of Baldwin County - Fairhope`;
 
