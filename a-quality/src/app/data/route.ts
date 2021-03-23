@@ -100,7 +100,7 @@ export const apiRoutes = [
             { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
           ]
         },
-        { path: 'moveIn', component: ReserveComponent,
+        { path: 'move-in', component: ReserveComponent,
           children: [
             { path: '', component: ReserveUnitFormComponent },
             { path: 'move-in', component: ReserveUnitFormComponent },
@@ -135,7 +135,7 @@ export const apiRoutes = [
             { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
           ]
         },
-        { path: 'moveIn', component: ReserveComponent,
+        { path: 'move-in', component: ReserveComponent,
           children: [
             { path: '', component: ReserveUnitFormComponent },
             { path: 'move-in', component: ReserveUnitFormComponent },

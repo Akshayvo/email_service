@@ -5,12 +5,12 @@ export const tabs = [
         path: './storage-units',
         active: true,
     },
-    {
-        id: '2',
-        name: 'Reserve Unit',
-        path: './reserve-unit',
-        active: false,
-    },
+    // {
+    //     id: '2',
+    //     name: 'Reserve Unit',
+    //     path: './reserve-unit',
+    //     active: false,
+    // },
 ];
 
 export const headingLocation1 = `A-Quality Boat & RV Storage - Line Drive Location`;
