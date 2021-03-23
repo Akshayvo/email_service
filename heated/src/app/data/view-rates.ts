@@ -22,7 +22,7 @@ export const th = [
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
   {
-    data: 'deposit',
+    data: 'Deposit',
     state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   },
   {  
