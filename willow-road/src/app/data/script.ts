@@ -40,17 +40,17 @@ const emailIndex1 = contactsLocation1.findIndex(x => x.label === 'Email: ');
 const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
 
   
-export const nameLocation1 = `Willow Road Self Storage - Hillside Rd Location`;
+export const nameLocation1 = `Willow Road Location - Willow Road Self Storage`;
 export const nameLocation2 = `Vista Dr Location - Willow Road Self Storage`;
 
 
 
-export const location1 = `hillside-rd`;
+export const location1 = `willow-rd`;
 export const location2 = `vista-dr`;
 
 
 
-export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/hillside-rd/storage-units`;
+export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/willow-rd/storage-units`;
 export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/vista-dr/storage-units`;
 
 

@@ -162,7 +162,7 @@ export class HomeComponent implements OnInit {
 
 
     public fetchContactDetailsLocation1() {
-      this.heading = `Willow Road Self Storage - Hillside Rd Location`;
+      this.heading = `Willow Road Location - Willow Road Self Storage`;
       this.contactDetails = contactsLocation1;
       this.hoursDetails = hoursLocation1;
     }

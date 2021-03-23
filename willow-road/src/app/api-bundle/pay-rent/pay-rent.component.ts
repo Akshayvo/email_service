@@ -46,8 +46,8 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('hillside-rd')) {
-      this.name = 'Hillside Rd Location';
+    if (this.router.url.includes('willow-rd')) {
+      this.name = 'Willow rd Location';
   } else if (this.router.url.includes('vista-dr')) {
     this.name = 'Vista Dr Location';
   } 
@@ -64,7 +64,7 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('hillside-rd')) {
+    if (this.router.url.includes('willow-rd')) {
       this.og = ogPayRentPageLocation1;
     } else if (this.router.url.includes('vista-dr')) {
       this.og = ogPayRentPageLocation2;
@@ -72,7 +72,7 @@ export class PayRentComponent implements OnInit {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('hillside-rd')) {
+  if (this.router.url.includes('willow-rd')) {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('vista-dr')) {
     this.twitter = twitterPayRentPageLocation2;

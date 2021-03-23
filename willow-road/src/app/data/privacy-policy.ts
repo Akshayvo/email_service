@@ -124,7 +124,7 @@ export const privacyPolicy = [
       }
     ],
     note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-    at  <a href="tel:2629495244" style="color: #000;">262-949-5244</a> or via email at <a href="mailto:willowroadselfstorage@gmail.com" style="color:#000;">willowroadselfstorage@gmail.com</a>.`,
+    at  <a href="tel:2629495244" style="color: #000;">(262) 949-5244 (Call or Text)</a> or via email at <a href="mailto:willowroadselfstorage@gmail.com" style="color:#000;">willowroadselfstorage@gmail.com</a>.`,
     // sharing: [
     //   {
     //     heading: `Sharing`

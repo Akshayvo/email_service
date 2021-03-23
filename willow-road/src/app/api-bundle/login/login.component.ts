@@ -126,9 +126,9 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchContactDetail() {
-    if (this.router.url.includes('hillside-rd')) {
+    if (this.router.url.includes('willow-rd')) {
       this.id = 1;
-      this.name = 'Willow Road Self Storage - Hillside Rd Location';
+      this.name = 'Willow Road Location - Willow Road Self Storage';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
@@ -151,7 +151,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('hillside-rd')) {
+    if (this.router.url.includes('willow-rd')) {
       this.og = ogPayRentPageLocation1;
     } else  if (this.router.url.includes('vista-dr')) {
       this.og = ogPayRentPageLocation2;
@@ -168,7 +168,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
 
 public fetchTwitter() {
-  if (this.router.url.includes('hillside-rd')) {
+  if (this.router.url.includes('willow-rd')) {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('vista-dr')) {
       this.twitter = twitterPayRentPageLocation2;

@@ -13,9 +13,9 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: 'Hillside Rd Location',
+    facility: 'Willow Road Location',
     address: 'N1486 Hillside Rd, Lake Geneva, WI 53147',
-    url: 'hillside-rd/rent-sub/login'
+    url: 'willow-rd/rent-sub/login'
   },  
   {
     facility: 'Vista Dr Location',
@@ -26,9 +26,9 @@ export const tableData = [
 
 export const tableDataContactPage = [
   {
-    facility: 'Hillside Rd Location',
+    facility: 'Willow Road Location',
     address: 'N1486 Hillside Rd, Lake Geneva, WI 53147',
-    url: 'hillside-rd'
+    url: 'willow-rd'
   },  
   {
     facility: 'Vista Dr Location',

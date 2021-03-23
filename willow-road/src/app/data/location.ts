@@ -40,13 +40,13 @@ export const headingLocation2 = ``;
 
 
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Evanston Ave`;
+export const headingReservePageLocation1 = `Are you ready to reserve your storage space at our Willow Road location?`;
 
-export const headingReservePageLocation2 = ``;
+export const headingReservePageLocation2 = `Are you ready to reserve your storage space at our location?`;
 
 
 
-export const heading1 = `Willow Road Self Storage - Hillside Rd Location`;
+export const heading1 = `Willow Road Location - Willow Road Self Storage`;
 
 export const heading2 = `Vista Dr Location - Willow Road Self Storage`;
 

@@ -91,13 +91,13 @@ export class LocationComponent implements OnInit {
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[2].path;
       }
-      if (this.router.url.includes(`${environment.locationName}/hillside-rd`)) {
+      if (this.router.url.includes(`${environment.locationName}/willow-rd`)) {
             this.meta.addTag({
               name: 'description',
               content: `${this.location1PageContent}`
     });
     this.titleService.setTitle(`${this.location1PageTitle}`);
-            this.locationName = `Willow Road Self Storage - Hillside Rd Location`;
+            this.locationName = `Willow Road Location - Willow Road Self Storage`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location1Script;
@@ -179,7 +179,7 @@ export class LocationComponent implements OnInit {
 
   
   public fetchOg() {
-    if (this.router.url.includes(`${environment.locationName}/hillside-rd`)) {
+    if (this.router.url.includes(`${environment.locationName}/willow-rd`)) {
       this.og = ogLocation1;
   } else if (this.router.url.includes(`${environment.locationName}/vista-dr`)) {
     this.og = ogLocation2;
@@ -188,7 +188,7 @@ export class LocationComponent implements OnInit {
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes(`${environment.locationName}/hillside-rd`)) {
+    if (this.router.url.includes(`${environment.locationName}/willow-rd`)) {
       this.twitter = twitterLocation1;
   } else if (this.router.url.includes(`${environment.locationName}/vista-dr`)) {
     this.twitter = twitterLocation2;
@@ -197,7 +197,7 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/hillside-rd`)) {
+    if (this.router.url.includes(`${environment.locationName}/willow-rd`)) {
         this.fetchDetailsLocation1();
     } else if (this.router.url.includes(`${environment.locationName}/vista-dr`)) {
       this.fetchDetailsLocation2();
@@ -206,7 +206,7 @@ export class LocationComponent implements OnInit {
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate([`${environment.locationName}/hillside-rd/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/willow-rd/reserve-unit`],
           );
   } else if ( this.locationId === 2 ) {
     this.router.navigate([`${environment.locationName}/vista-dr/reserve-unit`],

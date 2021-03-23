@@ -13,8 +13,8 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Hillside Rd Location',
-                path: `${environment.locationName}/hillside-rd`,
+                label: 'Willow Road Location',
+                path: `${environment.locationName}/willow-rd`,
               },
               {
                 id: '2',

@@ -16,9 +16,9 @@ export const featuresHead = [
         alt: 'Icon of a hand holding money'
     },
     {
-        label: 'Well-Lit Facility',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
-        alt: 'Icon of an illuminated light'
+        label: 'Online Reservation & Bill Pay',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+        alt: 'Icon art displaying a screen with cursor'
     },
 ];
 
@@ -164,16 +164,27 @@ export const aboutusALt = ``;
 
 export const serviceOffered = [
     {
-        p: `Willow Road Self Storage is Lake Geneva’s premier self storage facility. We’ve been serving Lake Geneva and the surrounding communities with high-quality self storage units and awesome customer service since 2008. We are a locally owned and operated self storage company with two locations on either side of Lake Geneva. `,
+        p: `Willow Road Self Storage is Lake Geneva’s premier self storage facility. We’ve been serving Lake Geneva and
+        the surrounding communities with high-quality self storage units and awesome customer service since 2008. We are
+        a locally owned and operated self storage company with two locations on either side of Lake Geneva. `,
     },
     {
-        p: `Both of our locations are built to serve the needs of local residents, businesses, and the camping and cottage community. Starting with our online reservations, you’ll find the unit that’s the perfect and price for your needs from our large selection of unit sizes. Once you’ve completed your contactless rental process, you’ll have access to your unit 24-hours a day at our well-lit self storage facilities. Our website even offers around the clock online payments to make maintaining your account very easy.`,
+        p: `Both of our locations are built to serve the needs of local residents, businesses, and the camping and cottage
+        community. Starting with our online reservations, you’ll find the unit that’s the perfect and price for your needs
+        from our large selection of unit sizes. Once you’ve made your reservation online, one of our friendly self storage
+        managers will reach out by phone or text message and confirm the reservation. After you've completed the contactless
+        rental process, you’ll have access to your unit 24-hours a day at our 2 conveniently located self storage facilities.
+        Our website even offers around-the-clock online payments to make maintaining your account very easy.`,
     },
     {
-        p: `We understand that conveniences are not the only considerations when it comes to selecting a self storage facility, that’s why our facilities are located in quiet neighborhoods, are well-lit, and our staff perform regular lot checks. `,
+        p: `We understand that conveniences are not the only considerations when it comes to selecting a self storage facility.
+        That’s why our facilities are located in quiet neighborhoods, and why our staff performs regular lot checks to monitor
+        the facility. `,
     },
     {
-        p: `Whether you’re a local resident, growing business, or you have a camp or cottage along Lake Geneva, Willow Road Self Storage is sure to have a unit that matches your needs and budget. Take a moment to check out our live inventory, then make your reservation, or call our offices today!`,
+        p: `Whether you’re a local resident, growing business or you have a camp or cottage along Lake Geneva, Willow Road
+        Self Storage is sure to have a unit that matches your needs and budget. Take a moment to check out our live inventory, 
+        then make your reservation, or call our offices today!`,
     },
 ];
 

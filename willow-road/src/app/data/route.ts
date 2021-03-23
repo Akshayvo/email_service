@@ -89,7 +89,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: `${environment.locationName}/hillside-rd`,
+    { path: `${environment.locationName}/willow-rd`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -159,7 +159,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/hillside-rd', component: HomeComponent,
+    { path: 'review/willow-rd', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -179,7 +179,7 @@ export const apiRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/hillside-rd', component: PayRentComponent,
+    path: 'pay-rent/willow-rd', component: PayRentComponent,
     children: childroute
   },
   {
@@ -189,7 +189,7 @@ export const apiRoutes = [
  
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-hillside-rd', component: ContactUsComponent},
+  { path: 'contact-willow-rd', component: ContactUsComponent},
   { path: 'contact-vista-dr', component: ContactUsComponent},
   { path: 'contact-barnwell', component: ContactUsComponent},
   { path: 'contact-belforest', component: ContactUsComponent},
@@ -203,7 +203,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: 'location/hillside-rd',
+  { path: 'location/willow-rd',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -226,7 +226,7 @@ export const iFrameRoutes = [
     ]
   },
   
-  { path: 'review/hillside-rd', component: HomeComponent,
+  { path: 'review/willow-rd', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -245,7 +245,7 @@ export const iFrameRoutes = [
   
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-hillside-rd', component: PayRentFloridaComponent },
+  { path: 'pay-rent-willow-rd', component: PayRentFloridaComponent },
   { path: 'pay-rent-vista-dr', component: PayRentChesterComponent},
   { path: 'pay-rent-barnwell', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},

@@ -96,7 +96,7 @@ export class ContactUsComponent implements OnInit {
 
   public fetchScript() {
     this.script = contactPageLocation1Script;
-    if (this.router.url.includes('hillside-rd')) {
+    if (this.router.url.includes('willow-rd')) {
       this.script = contactPageLocation1Script;
     } else if (this.router.url.includes('vista-dr')) {
       this.script = contactPageLocation2Script;
@@ -104,7 +104,7 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('hillside-rd')) {
+    if (this.router.url.includes('willow-rd')) {
       this.og = ogContactPageLocation1;
     } else if (this.router.url.includes('vista-dr')) {
       this.og = ogContactPageLocation2;
@@ -118,7 +118,7 @@ public fetchMetaData() {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('hillside-rd')) {
+  if (this.router.url.includes('willow-rd')) {
     this.twitter = twitterContactPageLocation1;
   }
    else if (this.router.url.includes('vista-dr')) {
@@ -147,7 +147,7 @@ public fetchTwitter() {
   
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('hillside-rd')) {
+    if (this.router.url.includes('willow-rd')) {
       this.fetchContactDetailsLocation1();
     } else if (this.router.url.includes('vista-dr')) {
       this.fetchContactDetailsLocation2();
@@ -156,7 +156,7 @@ public fetchTwitter() {
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `Willow Road Self Storage - Hillside Rd Location`;
+    this.heading = `Willow Road Location - Willow Road Self Storage`;
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;

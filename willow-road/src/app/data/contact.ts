@@ -17,7 +17,7 @@ export const contactMainOffice = [
     {
         id: 3,
         label: 'Phone: ',
-        data: '262-949-5244',
+        data: '(262) 949-5244 (Call or Text)',
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:2629495244'
     },
