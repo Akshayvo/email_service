@@ -5,12 +5,13 @@
     <span itemprop="name">{{state}}</span>
   </span>
   <!-- <app-microdata></app-microdata> -->
-  <div [class.loader]="!showTable">
+  <!-- <div [class.loader]="!showTable">
   </div>
   <div [class.loader]="showLoader" class="loader-position"> 
-  </div>
+  </div> -->
   <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
-      <tHead [class.display]="!showTable">
+      <!-- <tHead [class.display]="!showTable"> -->
+        <tHead>
           <tr>
             <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th">
               {{th.data}}
@@ -22,20 +23,20 @@
       <meta itemprop="name" content="{{facilityName}}" />
 
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-        <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of LstUnitTypes" >
+        <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of ViewRatesData" >
           <td colspan="2" class="px-4 border text-center">
-            <span hidden itemprop="name">{{lstUnitType.Description}} unit Type </span>
-              {{lstUnitType.Description}}
+            <span hidden itemprop="name">{{lstUnitType.size}} unit Type </span>
+              {{lstUnitType.size}}
               <meta itemprop="description" 
               content="{{lstUnitType.Description}}" />
               <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/My-Store-It_Space/jpg/self-storage-facility.jpg" />
 
           </td>
           <td colspan="2" class="px-4 border text-center" *ngIf="showRate">
-              <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
-              <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
+              <span>$</span>{{lstUnitType.price | number : '1.2-2'}}
+              <meta itemprop="priceRange" content="{{lstUnitType.price}}" />
           </td>
-          <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
+          <!-- <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
           </td>
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
@@ -62,7 +63,7 @@
             <td colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
             <div class="text-center">Please call the facility to move in.</div>
           </td>
-          </ng-template>
+          </ng-template> -->
         </tr> 
 
       </tbody>

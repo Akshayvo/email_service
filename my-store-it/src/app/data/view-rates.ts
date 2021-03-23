@@ -14,6 +14,32 @@ export const dataViewRates = [
 
 export const viewRatesAltText = `single row of self storage unit doors under a bright blue sky.`;
 
+export const staticViewRates = [
+  {
+    size:'05 x 10',
+    price:75
+  },
+  {
+    size:'10 x 10',
+    price:100
+  },
+  {
+    size:'10 x 15',
+    price:133
+  },
+  {
+    size:'10 x 20',
+    price:158
+  },
+  {
+    size:'10 x 25',
+    price:165
+  },
+  {
+    size:'10 x 30',
+    price:189
+  }
+]
 export const th = [
   {
     data: `Size`,
@@ -23,22 +49,22 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    data: 'deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  },
-  {  
-    data: `Reserve a Unit`,
-    state: objSIMSetting.objActionSetting.blnAllowReservation
-  },
-  {
-    data: `Move In`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
-  },
-  {
-    data: `Climate Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  },
+  // {
+  //   data: 'deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
+  // {  
+  //   data: `Reserve a Unit`,
+  //   state: objSIMSetting.objActionSetting.blnAllowReservation
+  // },
+  // {
+  //   data: `Move In`,
+  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  // },
+  // {
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
 ];
 
 export const state = {

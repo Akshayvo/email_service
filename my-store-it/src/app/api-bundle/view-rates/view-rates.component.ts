@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy, ViewChild  } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { dataViewRates, viewRatesAltText } from '../../data/view-rates';
 import { MetaService } from '../../services/link.service';
+import { contact } from '../../data/contact';
 import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { UaParserService } from '../../services/ua-parser.service';
@@ -26,7 +27,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
   DescriptionVR: string;
   MonthlyRateVR: number;
-
+  contactDetails: any;
   openComponent = false;
   imagetype: any;
   imageBaseUrl: any;
@@ -62,6 +63,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     window.scrollTo(0, 0);
     this.fetchViewRates();
     this.fetchViewRatesHeading();
+    this.fetchContactDetails();
   }
 
   
@@ -80,6 +82,9 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
   public fetchViewRatesHeading() {
     this.viewRatesHeading = viewRatesHeading;
+  }
+  public fetchContactDetails() {
+    this.contactDetails = contact;
   }
 
   public fetchMetaData () {
