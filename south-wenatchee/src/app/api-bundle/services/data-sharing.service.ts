@@ -5,18 +5,18 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
-  locationAPIKey = {
+  // locationAPIKey = {
     // loc1: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //    only for staging
-    loc1: 'dTJXOUQzUDdINE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29374 south wenatchee
-    loc2: 'dTJXOUQzUDlIOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29399 Leo's self storage
-  };
+  //   loc1: 'dTJXOUQzUDdINE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29374 south wenatchee
+  //   loc2: 'dTJXOUQzUDlIOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29399 Leo's self storage
+  // };
 
-//  locationAPIKey = {                                                     // demo north
-//     loc1: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-//     loc2: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-//     // loc3: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-//     // loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
-//   };
+ locationAPIKey = {                                                     // demo north
+    loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
+    loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+    // loc3: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+    // loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
+  };
   locationName: string;
   strConfirmation: string;
   strAccessCode: string;
