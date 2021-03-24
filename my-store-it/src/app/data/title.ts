@@ -13,8 +13,8 @@ export const payRentPageContent = `Take a moment to review our easy login instru
 export const storageTipsTitle = `Storage Tips  | My Store-It Space`;
 export const storageTipsContent = `Our quick storage tips page will help you figure out how to best use our services and avoid common pitfalls in self storage!`;
 
-export const unitSizerPageTitle = ``;
-export const unitSizerPageContent = ``;
+export const unitSizerPageTitle = `Unit Sizer | My Store-It Space`;
+export const unitSizerPageContent = `Not sure what will fit into a unit of a given size? Check out our handy unit sizer, and find out how much you can store with My Store-It Space!`;
 
 export const contactPageTitle = `Contact Us  | My Store-It Space`;
 export const contactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;

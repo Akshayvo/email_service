@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '9805 Ann Arbor Rd,  Dundee, MI 48131',
+        data: '9805 Ann Arbor Rd. Milan, M.I. 48160',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: 'https://goo.gl/maps/pZ7ZWE6bJuoRNfM47'
     },
