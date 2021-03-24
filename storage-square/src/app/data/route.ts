@@ -31,6 +31,11 @@ import { ThankYouGuard } from '../thank-you.guard';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 import { UpdateDetailsComponent } from '../api-bundle/update-details/update-details.component';
 import { UpdateComponent } from '../api-bundle/update/update.component';
+import { PayRentChesterComponent } from '../pay-rent-chester/pay-rent-chester.component';
+import { PayRentMontgomeryComponent } from '../pay-rent-montgomery/pay-rent-montgomery.component';
+import { PayRentMiddletownComponent } from '../pay-rent-middletown/pay-rent-middletown.component';
+import { PayRentFloridaComponent } from '../pay-rent-florida/pay-rent-florida.component';
+
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -109,6 +114,7 @@ const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
       ]
      },
+     
     //  {
     //   path: `${environment.locationName}/rent-now`,
     //   component: ViewRatesComponent,
@@ -122,10 +128,21 @@ const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
     //     { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
     //   ]
     //  },
-    {
-      path: 'pay-rent', component: PayRentComponent,
-      children: childroute
-    },
+    // {
+    //   path: 'pay-rent', component: PayRentComponent,
+    //   children: childroute
+    // },
+    { path: 'error', component: ErrorHandlerComponent },
+  { path: 'pay-rent', component: PaymentComponent },
+  {
+    path: 'pay-rent/al-cheapo', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/arons-space-station', component: PayRentComponent,
+    children: childroute
+  },
+  
     { path: 'forgot-password', component: ForgotPasswordComponent },
     { path: 'review', component: HomeComponent,
       resolve: {

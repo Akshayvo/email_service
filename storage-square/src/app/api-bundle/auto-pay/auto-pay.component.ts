@@ -29,6 +29,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   selectedDescription: string;
   result: any;
   month: any;
+  navTo: any;
   CCApprovalCode: string;
   year = [];
   textBox: any;
@@ -149,6 +150,10 @@ export class AutoPayComponent implements OnInit, OnDestroy {
       this.navigateToMoveInPayment = true;
     }
 
+    if (!!localStorage.getItem('paymentNavigationUrl')) {
+      this.navTo = localStorage.getItem('paymentNavigationUrl');
+    }
+
     if (!!localStorage.getItem('paymentTab')) {
       this.paymentTab = localStorage.getItem('paymentTab');
     }
@@ -169,7 +174,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
       this.getPayMethods();
     } else {
       if (!localStorage.getItem('strTempTenantToken')) {
-        this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
+        this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/login`]);
       } else {
         this.getPayMethods();
       }

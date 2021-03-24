@@ -27,6 +27,7 @@ export class DataSharingService {
   CCApprovalCode: string;
   eventName: string;
   signUpForAutoPay: boolean;
+  facilityLocation: string;
 
   cardDetailsObject = {
     CCNumber: '',
@@ -92,6 +93,26 @@ export class DataSharingService {
     AlternateZIP: ''
   };
 
+  navLinksForComponent = {
+    reservationForm: {
+      next: '',
+      prev: '',
+    },
+    confirmationData: {
+      next: '',
+      prev: '',
+    },
+    payRentForm: {
+      next: '',
+      prev: '',
+    },
+    viewRates: {
+      next: '',
+      prev: ''
+    }
+  };
+
+
 
   MoveIn = {
     dteMoveIn: '',
@@ -118,6 +139,24 @@ constructor() {
     return this.LstUnitTypes;
   }
 
+
+  initMyNavLinks = (componentName, myCurUrl) => {
+    // console.log('TCL: DataSharingService -> initMyNavLinks -> this.navLinksForComponent', this.navLinksForComponent);
+    if (this.navLinksForComponent[componentName]) {
+      this.navLinksForComponent[componentName].next = myCurUrl;
+      this.navLinksForComponent[componentName].prev = myCurUrl;
+    }
+  }
+  getMyNavLinks = (componentName) => {
+    return this.navLinksForComponent[componentName];
+  }
+  updateMyNavLink = (componentName, linkType, url) => {
+    if (this.navLinksForComponent[componentName]) {
+      if (this.navLinksForComponent[componentName][linkType]) {
+        this.navLinksForComponent[componentName][linkType] = url;
+      }
+    }
+  }
 
   setReservationData(value: any) {
     this.ReservationData.Description  = value.Description;
