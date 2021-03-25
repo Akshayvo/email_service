@@ -406,7 +406,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
    this.signOutSubscribe$ = this.signOutService.signOut(logOut)
       .subscribe(result => {
         localStorage.removeItem('strTenantToken');
-        this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
+        this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/login`]);
       }, (err) => {
       }
     );

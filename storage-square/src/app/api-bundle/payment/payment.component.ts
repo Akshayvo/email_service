@@ -62,7 +62,7 @@ export class PaymentComponent implements OnInit {
     this.receiveMessage();
     this.fetchTableHeader();
     this.fetchTableData();
-
+    console.log("inside payment");
     // if (!!localStorage.getItem('paymentTab')) {
     //   this.paymentTab = localStorage.getItem('paymentTab');
     // }
@@ -113,6 +113,8 @@ export class PaymentComponent implements OnInit {
   public fetchTableData() {
     this.tableData = tableData;
   }
+
+  
 
   public dataupdate() {
     if ( this.locationId === '1' || this.locationId === 1 ) {

@@ -58,7 +58,11 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
 import { UpdateDetailsComponent } from './api-bundle/update-details/update-details.component';
 import { UpdateComponent } from '../app/api-bundle/update/update.component';
-
+import { PayRentChesterComponent } from '../app/pay-rent-chester/pay-rent-chester.component';
+import { PayRentMontgomeryComponent } from '../app/pay-rent-montgomery/pay-rent-montgomery.component';
+import { PayRentMiddletownComponent } from '../app/pay-rent-middletown/pay-rent-middletown.component';
+import { PayRentFloridaComponent } from '../app/pay-rent-florida/pay-rent-florida.component';
+import { PaymentIframeComponent } from '../app/payment-iframe/payment-iframe.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -100,7 +104,13 @@ import { UpdateComponent } from '../app/api-bundle/update/update.component';
     PrivacyPolicyComponent,
     AlternateDetailsComponent,
     UpdateComponent,
-    UpdateDetailsComponent
+    UpdateDetailsComponent,
+    PayRentChesterComponent,
+    PayRentMontgomeryComponent,
+    PayRentMiddletownComponent,
+    PayRentFloridaComponent,
+    PaymentIframeComponent
+
   ],
   imports: [
     CommonModule,

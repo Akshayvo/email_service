@@ -4,6 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataSharingService {
+
+  locationAPIKey = {
+    loc1: 'bTJUOW4zTDhbN1s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29387
+    loc2: 'bTJUOW4zTDhbOFs6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29388
+    // loc3: 'XjF7N0YzVzZHMEk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 17360
+    // loc4: 'XjF7NUY0VzhHOUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 15489
+  };
   strTenantToken: string;
   strTempTenantToken: string;
   verificationCode: string;
@@ -176,6 +183,9 @@ constructor() {
 
   getMoveInData() {
     return this.MoveInData;
+  }
+  getAPIKey() {
+    return this.apiKey;
   }
 
 }

@@ -7,7 +7,7 @@ export const environment = {
   type: 0,  // { API: 0, iframe: 1 }
   locationName: 'west-mifflin/pennsylvania', // state/city
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
-  paymentPageType: 0, // { withoutTab: 0, withTab: 1}
+  // paymentPageType: 0, // { withoutTab: 0, withTab: 1}
   alternateType: `none`, // { moveIn, reserve, both, none },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],

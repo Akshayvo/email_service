@@ -40,7 +40,7 @@ export class UpdateDetailsComponent implements OnInit {
   showPaymentForMoveIn: boolean;
   showPaymentForReserve: boolean;
   filterLstUnitTypes: LstUnitTypes[];
-
+  navTo: any;
 
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
@@ -159,6 +159,13 @@ export class UpdateDetailsComponent implements OnInit {
       }),
     });
 
+    if (!!localStorage.getItem('paymentNavigationUrl')) {
+      this.navTo = localStorage.getItem('paymentNavigationUrl');
+    }
+
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
  
   }
 
@@ -269,7 +276,7 @@ export class UpdateDetailsComponent implements OnInit {
        .subscribe(result => {
          localStorage.removeItem('strTenantToken');
          if (!!this.paymentTab) {
-           this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
+           this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/login`]);
          } else {
            this.router.navigate(['/pay-rent/login']);
          }

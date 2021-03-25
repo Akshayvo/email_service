@@ -30,24 +30,24 @@ export class PayRentComponent implements OnInit {
   ) {
     // this.fetchOg();
     // this.fetchTwitter();
-    this.og.forEach(element => {
-      this.meta.addTag({
-        property: element.property,
-        content: element.content
-      })
-    });
+    // this.og.forEach(element => {
+    //   this.meta.addTag({
+    //     property: element.property,
+    //     content: element.content
+    //   })
+    // });
 
-    this.twitter.forEach(element => {
-      this.meta.addTag({
-        name: element.name,
-        content: element.content
-      })
-    });
+    // this.twitter.forEach(element => {
+    //   this.meta.addTag({
+    //     name: element.name,
+    //     content: element.content
+    //   })
+    // });
     this.canonical.create();
     if (this.router.url.includes('al-cheapo') ) {
-      this.name = "Al Cheapo's";
+      this.name = " Al Cheapo's";
   }  else if (this.router.url.includes('arons-space-station')) {
-    this.name = "Aaron's Space Station";
+    this.name = " Aaron's Space Station";
   } else if (this.router.url.includes('middletown-wallKill')) {
     this.name = 'Middletown/WallKill';
   }
@@ -57,10 +57,15 @@ export class PayRentComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.showPaymentPageType = environment.paymentPageType;
+    console.log("inside pay-rent")
+    this.showPaymentPageType = environment.signUpForAuotoPay;
+    console.log("inside pay-rent1")
     this.fetchContactDetails();
+    console.log("inside pay-rent2")
     this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[1].path;
+    console.log("inside pay-rent3")
     localStorage.setItem('paymentNavigationUrl', this.dataSharingService.paymentNavigation);
+    console.log("inside pay-rent4")
   }
 
 //   public fetchOg() {

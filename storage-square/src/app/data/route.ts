@@ -50,7 +50,7 @@ const withoutTab = [
 ];
 
 const withTab = [
-  { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
+  { path: '', redirectTo: ' ', pathMatch: 'full'},
       { path: 'rent-sub', component: RentSubComponent,
         children: [
           {path: '', redirectTo: 'login', pathMatch: 'full'},

@@ -7,8 +7,11 @@ export const viewRatesPageContent = `Take a moment to view our affordable self s
 export const reservePageTitle = ``;
 export const reservePageContent = ``;
 
-export const payRentPageTitle = `Pay Rent | Storage Square`;
-export const payRentPageContent = `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`;
+export const location1PayrentPageTitle = `Pay Rent | Storage Square`;
+export const location1PayrentPageContent = `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`;
+
+export const location2PayrentPageTitle = `Pay Rent | Storage Square - Aaron's Space Station`;
+export const location2PayrentPageContent = `Follow the instructions on our pay rent page, and you'll be able to pay your rent 24 hours a day, 7 days a week.`;
 
 export const storageTipsTitle = `Storage Tips | Storage Square`;
 export const storageTipsContent = `Use our helpful self storage tips list to make your stay at Storage Square an easy and enjoyable one!`;
