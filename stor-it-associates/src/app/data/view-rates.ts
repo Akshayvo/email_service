@@ -27,9 +27,9 @@ export const currentDiscounts = [
     {
         data: `1 month free with prepaid 1 year.`
     },
-    {
-        data: `Student Discount - 20%`
-    },
+    // {
+    //     data: `Student Discount - 20%`
+    // },
     {
         data: `Police, Fire, EMS, and Veterans Discount 10%`
     }
