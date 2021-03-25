@@ -7,6 +7,9 @@ export const viewRatesPageContent = `Take a moment to view our affordable self s
 export const reservePageTitle = ``;
 export const reservePageContent = ``;
 
+export const payRentPageTitle = ``;
+export const payRentPageContent = ``;
+
 export const location1PayrentPageTitle = `Pay Rent | Storage Square`;
 export const location1PayrentPageContent = `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`;
 
