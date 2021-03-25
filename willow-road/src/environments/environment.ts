@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'Willow Road Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://willow-road-staging.netlify.app`
+  websiteUrl: `https://willowroadselfstorage.com`
 };
 
 /*
