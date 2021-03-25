@@ -254,7 +254,7 @@
                     <small class="form-text text-muted" *ngIf="f.dteMoveIn.errors.required">Please fill out this field</small>
                 </div>
         </div>
-        <div class=" col-md-6" formArrayName="lstInsuranceChoices" *ngIf="navigateToMoveIn">
+        <div class=" col-md-6 pb-4" formArrayName="lstInsuranceChoices" *ngIf="navigateToMoveIn">
             <div *ngFor="let itemInsuranceChoice of f.lstUnitTypes.controls; let i = index">
                 <div  [formGroupName]="i">
                     <label for="CoverageDescription">Insurance Choice*</label>&nbsp;
@@ -271,7 +271,7 @@
             </div>
         </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-6 pb-4" formArrayName="lstRentalPeriods" *ngIf="navigateToMoveIn">
                     <div *ngFor="let itemRental of f.lstUnitTypes.controls; let i = index">
                         <div  [formGroupName]="i">
@@ -288,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         <div *ngIf="monthlyRate">
             <label>Rate:</label>&nbsp;
             ${{monthlyRate}}
@@ -312,7 +312,7 @@
                 </span>
         </div>
         <div  *ngIf=" navigateToMoveIn && deposit > 0">
-            <label>Deposit Amount:</label>&nbsp;
+            <label>Deposit:</label>&nbsp;
             ${{deposit}}
             <span *ngIf="depositTax > 0.0">
                     + ${{depositTax}} (Tax)

@@ -34,12 +34,12 @@ export const location1FeaturesHead = [
         alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: 'Locally Owned and Operated',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+        alt: 'Icon of people standing together '
     },
     {
-        label: 'Stellar Customer Service',
+        label: 'Friendly Customer Service',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
         alt: 'Icon of a customer service agent'
     },

@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { contactsLocation1, hoursLocation1,
+import { accessHoursLocation1, contactsLocation1, hoursLocation1,
           } from '../data/contact';
 import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, heading4, heading5, heading6  } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
@@ -57,6 +57,7 @@ export class LocationComponent implements OnInit {
   location5PageTitle: any;
   location6PageContent: any;
   location6PageTitle: any;
+  access: any;
 
 
 
@@ -361,6 +362,7 @@ export class LocationComponent implements OnInit {
       this.locationId = 1;
       this.contacts = contactsLocation1;
       this.hours = hoursLocation1;
+      this.access = accessHoursLocation1;
       this.tabs = tabs1;
       this.features = location1FeaturesHead;
     }

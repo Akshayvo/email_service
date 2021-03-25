@@ -53,17 +53,17 @@ export const socialLinks = [
 
 export const contactsLocation1 = [
     {
+        id: 4,
+        label: 'Phone: ',
+        data: '(231) 652-7853',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:2316527853'
+    },
+    {
         id: 1,
         label: 'Address: ',
         data: '4300 Evanston Ave, Muskegon, MI 49442',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/Aey9AuYbspcu5HgC9'
-    },
-    {
-        id: 2,
-        label: 'Mailing Address: ',
-        data: '3609 32nd St SE, Kentwood, MI 49512',
-        class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'https://goo.gl/maps/Aey9AuYbspcu5HgC9'
     },
     {
@@ -75,11 +75,11 @@ export const contactsLocation1 = [
         redirect: 'mailto:`store@boxerstorage.com`'
     },
     {
-        id: 4,
-        label: 'Phone: ',
-        data: '(231) 652-7853',
-        class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2316527853'
+        id: 2,
+        label: 'Mailing Address: ',
+        data: '3609 32nd St SE, Kentwood, MI 49512',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/Aey9AuYbspcu5HgC9'
     },
 ];
 
@@ -96,12 +96,14 @@ export const hoursLocation1 = [
         label: 'Sunday: ',
         data: 'CLOSED',
     },
+];
+
+export const accessHoursLocation1 = [
     {
-        label: 'Access Hour: ',
+        // label: 'Access Hour ',
         data: '24 Hours a Day 7 Days a Week',
     },
 ];
-
 
 
 

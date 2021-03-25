@@ -115,9 +115,12 @@
                   </span>
                 </div>
                 <div class="py-2">
+                  <b>Office Hours</b><br>
                   <span *ngFor="let hour of hoursDetails">
-                    <b>{{hour.label}}</b><span *ngIf="hour?.id === 1 else other_content ">&nbsp;{{hour.data}}</span>
-                    <ng-template #other_content>&nbsp;{{hour.data}}</ng-template><br>
+                    <b>{{hour.label}}</b><span>&nbsp;{{hour.data}}</span><br>
+                  </span><br>
+                  <span class="pt-3" *ngFor="let access of access">
+                    <b>{{access.label}}</b><br><span>{{access.data}}</span><br>
                   </span>             
                 </div>
               </div>

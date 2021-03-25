@@ -11,12 +11,12 @@ export const tabs1 = [
         path: './unit-sizer',
         active: false,
     },
-    {
-        id: '3',
-        name: 'Reserve Unit',
-        path: './reserve-unit',
-        active: false,
-    },
+    // {
+    //     id: '3',
+    //     name: 'Reserve Unit',
+    //     path: './reserve-unit',
+    //     active: false,
+    // },
     // {
     //     id: '4',
     //     name: 'About Us',
@@ -143,7 +143,7 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Evanston Ave`;
+export const headingReservePageLocation1 = `Ready to reserve your self storage unit at our Evanston Ave location?`;
 
 export const headingReservePageLocation2 = ``;
 

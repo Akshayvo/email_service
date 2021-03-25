@@ -61,6 +61,10 @@ $primaryFont: "Lato", sans-serif;
   background: $light !important;
 }
 
+.bg-white {
+  background: $white !important;
+}
+
 .bg-translucent-dark {
   background: rgba(0, 0, 0, 0.6);
   // position: relative;

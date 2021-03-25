@@ -8,6 +8,17 @@
   width: 100%;
 }
 
+.btn-payment {
+  background-color: #ffffff;
+  color: $primary;
+}
+
+.payment-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 a {
   cursor: pointer;
   color: $white;
@@ -113,10 +124,16 @@ a {
   border: 1px #efefef solid;
 }
 
-@media screen and (max-width: 991px) {
-  .display {
+@media screen and (min-width: 768px) {
+  .payment-button {
     display: none;
   }
+}
+
+@media screen and (max-width: 991px) {
+  // .display {
+  //   display: none;
+  // }
 
   .nav-link {
     padding-top: 10px !important;

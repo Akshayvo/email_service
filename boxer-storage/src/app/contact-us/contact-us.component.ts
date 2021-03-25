@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsLocation1, hoursLocation1,
+import { contactsLocation1, hoursLocation1, accessHoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
           hoursLocation5, contactsLocation5,
@@ -42,6 +42,7 @@ export class ContactUsComponent implements OnInit {
   twitter: any;
   contactPageContent: string;
   contactPageTitle: string;
+  access: any;
   
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -192,6 +193,7 @@ public fetchTwitter() {
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
+    this.access = accessHoursLocation1;
   }
   
   public fetchContactDetailsLocation2() {

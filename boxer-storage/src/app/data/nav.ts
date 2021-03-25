@@ -19,13 +19,30 @@ export const navLinks = [
         ]
     },
     {
+        label: 'View Rates',
+        type: 'dropdown1',
+        path: `/view-rates`,
+        sublinks: [
+            {
+                id: '1',
+                label: 'Evanston Ave Location',
+                path: `${environment.locationName}/evanston-ave/view-rates`,
+              },
+        ]
+    },
+    {
         label: 'Pay Rent',
         path: '/pay-rent',
         type: 'link'
     },
+    // {
+    //     label: 'Storage Tips',
+    //     path: `${environment.locationName}/storage-tips`,
+    //     type: 'link'
+    // },
     {
-        label: 'Storage Tips',
-        path: `${environment.locationName}/storage-tips`,
+        label: `FAQ's`,
+        path: '/frequently-asked-questions',
         type: 'link'
     },
     {
