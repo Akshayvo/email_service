@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://aallen-storage-staging.netlify.app/sitemap.xml
+Sitemap: http://aallenselfstorage.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy
