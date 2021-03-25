@@ -16,7 +16,7 @@ export const featuresHead = [
         alt: 'Icon of people standing together '
     },
     {
-        label: 'Stellar Customer Service',
+        label: 'Friendly Customer Service',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
         alt: 'Icon of a customer service agent'
     },
