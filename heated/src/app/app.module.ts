@@ -58,6 +58,8 @@ import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
 import { FaqComponent } from './faq/faq.component';
+import { VehicleUnitsComponent } from './vehicle-units/vehicle-units.component';
+import { VehicleUnitPhotosComponent } from './vehicle-unit-photos/vehicle-unit-photos.component';
 
 @NgModule({
   declarations: [
@@ -101,6 +103,8 @@ import { FaqComponent } from './faq/faq.component';
     PrivacyPolicyComponent,
     AlternateDetailsComponent,
     FaqComponent,
+    VehicleUnitsComponent,
+    VehicleUnitPhotosComponent,
   ],
   imports: [
     CommonModule,

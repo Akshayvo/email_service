@@ -11,6 +11,16 @@
 .display-card {
   display: block;
 }
+.moveinbutton {
+  margin-right: 3px;
+  color: #000000;
+  text-decoration: none;
+}
+.moveinbuttonmobile {
+  margin-bottom: 3px;
+  text-decoration: none;
+  outline: 0;
+}
 
 .card-text {
   width: 150px;
@@ -92,7 +102,7 @@ p {
 }
 
 .buttons {
-  display: flex;
+  display: block;
   justify-content: center;
 }
 
@@ -128,7 +138,12 @@ p {
     .btn-outline-primary {
       color: $primary !important;
     }
+
+    .moveinbuttonmobile {
+      min-width: 150px;
+    }
   }
+  
 }
 
 @media only screen and (max-width: 380px) {
@@ -136,5 +151,9 @@ p {
     .btn {
       min-width: auto;
     }
+    .moveinbuttonmobile {
+      min-width: auto;
+    }
   }
+ 
 }

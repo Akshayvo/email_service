@@ -55,7 +55,7 @@ img {
 
   .nav-link-active {
     color: $primary;
-    border-bottom: 6px solid $primary;
+    border-bottom: 7px solid $primary;
   }
 
   button {
@@ -85,13 +85,13 @@ img {
   .navbar {
 
     a {
-      font-size: 12px;
+      font-size: 10.5px;
     }
   
-    .nav-link {
-      // padding: 10px;
-      // font-size: 1rem;
-    }
+    // .nav-link {
+    //   // padding: 10px;
+    //   // font-size: 1rem;
+    // }
   }
 }
 

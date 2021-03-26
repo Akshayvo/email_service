@@ -30,7 +30,7 @@ export const th = [
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
   {
-    data: `Move In`,
+    data: `Available Options`,
     state: objSIMSetting.objActionSetting.blnAllowMoveIn
   },
   {

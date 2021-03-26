@@ -1,0 +1,24 @@
+<div class="">
+  <div class="contentHolder">
+    <div class="container">
+      <div class="section py-5 m-0">
+      <div class="row">
+        <div class="col-lg-6 py-3">
+         <!-- <img src="{{imageBaseUrl}}/heated-storage-stock.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
+         <app-vehicle-unit-photos></app-vehicle-unit-photos>
+      </div>
+        <div class="col-lg-6 py-3">
+          <h1 class="heading">{{vehicleUnitHeading}}</h1>
+          <br/>
+          <p class="justify" *ngFor="let data of vehicleUnits">{{data.p}}</p>
+          <ul class="container">
+            <li *ngFor="let ele of vehicleUnitList">{{ele.li}}<br/></li>
+          </ul>
+          <br/>
+          <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">View Our Vehicle Storage Unit Rates</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

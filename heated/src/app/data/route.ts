@@ -30,6 +30,7 @@ import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from '../thank-you.guard';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 import { FaqComponent } from '../faq/faq.component';
+import { VehicleUnitsComponent } from '../vehicle-units/vehicle-units.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -87,6 +88,7 @@ const reviewURL = ``
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
+    { path: 'car-storage', component: VehicleUnitsComponent },
     { path: 'faq', component: FaqComponent },
     {
       path: `${environment.locationName}/view-rates`,

@@ -5,6 +5,7 @@ import { ObjCharges } from '../models/movein';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { FetchDataService } from '../services/fetch-data.service';
 import { th } from '../../data/view-rates';
+import { contact } from '../../data/contact';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
@@ -20,7 +21,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
-
+  contact: any;
   descriptionVR: string;
   monthlyRateVR: number;
   unitTypeIdVR: number;
@@ -71,7 +72,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.getData();
-    this.fetchThData();    
+    this.fetchThData(); 
+    this.fetchContactData();   
     this.state = script.state;
   }
 
@@ -84,6 +86,9 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.showClimateControl = objSIMSetting.objUnitSizesSetting.blnClimateControl;
   }
 
+  public fetchContactData() {
+    this.contact = contact[2];
+  }
 
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);
