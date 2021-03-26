@@ -21,6 +21,9 @@
   text-decoration: none;
   outline: 0;
 }
+.othercasebutton {
+  color: $primary;
+}
 
 .card-text {
   width: 150px;
@@ -127,6 +130,10 @@ p {
       color: $primary !important;
     }
   }
+  .othercasebutton {
+    color: $primary !important;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 767px)  and (min-width: 381px) {
@@ -143,6 +150,12 @@ p {
       min-width: 150px;
     }
   }
+  .othercasebutton {
+    color: $primary !important;
+    min-width: 150px;
+    margin-right: auto;
+  }
+  
   
 }
 
@@ -154,6 +167,9 @@ p {
     .moveinbuttonmobile {
       min-width: auto;
     }
+  }
+  .othercasebutton {
+    min-width: auto;
   }
  
 }
