@@ -31,10 +31,6 @@ import { ThankYouGuard } from '../thank-you.guard';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 import { UpdateDetailsComponent } from '../api-bundle/update-details/update-details.component';
 import { UpdateComponent } from '../api-bundle/update/update.component';
-import { PayRentChesterComponent } from '../pay-rent-chester/pay-rent-chester.component';
-import { PayRentMontgomeryComponent } from '../pay-rent-montgomery/pay-rent-montgomery.component';
-import { PayRentMiddletownComponent } from '../pay-rent-middletown/pay-rent-middletown.component';
-import { PayRentFloridaComponent } from '../pay-rent-florida/pay-rent-florida.component';
 
 
 const withoutTab = [
@@ -77,16 +73,17 @@ const withTab = [
         ]
       },
       { path: 'update', component: UpdateComponent,
-      children: [
-        {path: '', redirectTo: 'login', pathMatch: 'full'},
-        {path: 'login', component: LoginComponent },
-        {path: 'forgotPassword', component: ForgotPasswordComponent },
-        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-        {path: 'update-information', component: UpdateDetailsComponent, canActivate: [AuthGuard]},
-        { path: 'verifyCode', component: VerifyCodeComponent },
-        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-        // canActivate: [VerifictionCodeGuard]
-      ]
+        children: [
+          {path: '', redirectTo: 'login', pathMatch: 'full'},
+          {path: 'login', component: LoginComponent },
+          {path: 'forgotPassword', component: ForgotPasswordComponent },
+          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+          {path: 'update-information', component: UpdateDetailsComponent, canActivate: [AuthGuard]},
+          { path: 'verifyCode', component: VerifyCodeComponent },
+          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+          // canActivate: [VerifictionCodeGuard]
+        ],
+      
     }
 ];
 
@@ -112,35 +109,19 @@ const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
         { path: 'payReservationCharges', component: PayRentFormComponent },
         { path: 'payMoveInCharges', component: PayRentFormComponent },
         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
-      ]
+        
+      ],
      },
-     
-    //  {
-    //   path: `${environment.locationName}/rent-now`,
-    //   component: ViewRatesComponent,
-    //   children: [
-    //     { path: '', component: ViewRatesPageComponent },
-    //     { path: 'reserve', component: ReserveUnitFormComponent },
-    //     { path: 'move-in', component: ReserveUnitFormComponent },
-    //     { path: 'confirmation', component: ConfirmationDataComponent },
-    //     { path: 'payReservationCharges', component: PayRentFormComponent },
-    //     { path: 'payMoveInCharges', component: PayRentFormComponent },
-    //     { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
-    //   ]
-    //  },
-    // {
-    //   path: 'pay-rent', component: PayRentComponent,
-    //   children: childroute
-    // },
+
     { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
     path: 'pay-rent/al-cheapo', component: PayRentComponent,
-    children: childroute
+    children: childroute,
   },
   {
     path: 'pay-rent/arons-space-station', component: PayRentComponent,
-    children: childroute
+    children: childroute,
   },
   
     { path: 'forgot-password', component: ForgotPasswordComponent },
@@ -153,7 +134,8 @@ const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
       }
     },
     { path: 'error', component: ErrorHandlerComponent },
-    { path: '**', component: ErrorComponent }
+    { path: '**', component: ErrorComponent },
+    
   ];
 
 export const iFrameRoutes = [

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { Resolve } from '@angular/router';
 import { Router } from '@angular/router';
+import { environment } from '../../../environments/environment';
 
 import { DataSharingService } from '../services/data-sharing.service';
 
@@ -17,6 +18,11 @@ export class AppResolver implements Resolve<any> {
   ) {}
 
   resolve() {
-    return this.dataSharingService.getAPIKey();
+    if (this.router.url.includes('pay-rent')) {
+this.apiKey = this.dataSharingService.getAPIKey();
+    } else {
+      this.apiKey = environment.APIKey
+    }
+    return this.apiKey;
   }
 }
