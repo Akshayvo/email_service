@@ -24,7 +24,7 @@
 
 .social-content {
   .each-contact {
-  font-size: 0.8rem;
+  font-size: 0.77rem;
   }
 }
 
@@ -72,19 +72,19 @@
   }
 }
 
-// .img-box-1-jpg {
-//   background: url("");
-//   background-size: cover;
-//   height: 462px;
-//   background-position: center right;
-// }
+.img-box-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Willow_Road/jpg/willow-road-self-storage-willow-road-location.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
 
-// .img-box-1-webp {
-//   background: url("");
-//   background-size: cover;
-//   height: 462px;
-//   background-position: center right;
-// }
+.img-box-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Willow_Road/webp/willow-road-self-storage-willow-road-location.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
 
 .img-box-2-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Willow_Road/jpg/willow-road-self-storage-vista-dr.jpg");
@@ -237,6 +237,7 @@
       .each-contact {
         width: 100%;
         display: block;
+        
       }
   }
 
