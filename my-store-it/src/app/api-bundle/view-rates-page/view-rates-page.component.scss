@@ -129,6 +129,9 @@ p {
       color: $primary !important;
     }
   }
+  .viewrates-mobile {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -136,5 +139,9 @@ p {
     .btn {
       min-width: auto;
     }
+  }
+
+  .viewrates-mobile {
+    display: block;
   }
 }

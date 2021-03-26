@@ -68,21 +68,23 @@
 
       </tbody>
   </table>
-  <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes">
-    <div class="col-6 text-center ">  
+  <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of ViewRatesData">
+    <div class="col-12 text-center">  
       <strong>Unit Size</strong>
-    <div class=" py-1 ">{{lstUnitType.Description}}</div>
+    <div class="py-2">{{lstUnitType.size}}</div>
     <div class="row">
-        <div class="col-6 text-center " *ngIf="showRate">
+        <!-- <div class="col-6 text-center" *ngIf="showRate"> -->
+          <div class="col-6 text-center">
             <p class=" "><b><u>Rate</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</div>
+            <!-- <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</div> -->
+            <div class=" "><span>$</span>{{lstUnitType.price}}</div>
         </div>
-        <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl" >
+        <!-- <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl" >
             <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
-        </div>
+        </div> -->
       </div>
     </div>
-      <div class="col-6 d-flex justify-content-center" >
+      <!-- <div class="col-6 d-flex justify-content-center" >
         <div  *ngIf="lstUnitType.IsUnitsAvailable; else other">
           <div class=" py-1 buttons" *ngIf="showReserve">
               <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
@@ -95,6 +97,6 @@
         <ng-template #other> 
           <div class="text-right" *ngIf="showMovein || showReserve" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
         </ng-template>
-    </div>
+    </div> -->
   </div>
 </div>
