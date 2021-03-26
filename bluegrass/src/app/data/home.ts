@@ -24,7 +24,7 @@ export const featuresHead = [
 
 export const serviceOffered = [
     {
-        p: `Bluegrass Storage is your storage-stop for renters, homeowners, and businesses in Bardstown, Kentucky. We are conveniently located, offer drive-up, 24-hour access to your unit, and your belongings whenever you need them! Rent your unit(s) online, then pay your bill around the clock with our easy tenant portal. Have documents, equipment, or belongings that need a little extra protection from the elements? Check out our climate controlled units!`,
+        p: `Bluegrass Storage is your storage-stop for renters, homeowners, and businesses in Bardstown, Kentucky. We are conveniently located, offer drive-up, 24-hour access to your unit, and your belongings whenever you need them! You can even pay your bill around the clock with our easy tenant portal. Have documents, equipment, or belongings that need a little extra protection from the elements? Check out our climate controlled units!`,
     },
     {
         p: `We understand that self storage is about more than just convenience. Our facilities are well-lit, and our managers perform regular walkarounds to ensure a constant sense of safety to our valued customers.`,
@@ -47,10 +47,7 @@ export const gettingStarted = [
 export const jumbotron = [
     {
         h1: `24-Hour Access Self Storage in Bardstown`,
-        blurb: `Bluegrass Storage proudly serves Bardstown, and the surrounding communities in Nelson county with
-        high-quality, affordable self storage services with 24-hour access, and a variety of amenities! Our management
-        team is here to make your self storage experience a simple, stress-free one! You may rent your unit online, or
-        just give our friendly managers a call, and start de-cluttering your life, today!`,
+        blurb: `Bluegrass Storage proudly serves Bardstown, and the surrounding communities with high-quality, affordable self storage services with 24-hour access, and a variety of amenities! Our management team is here to make your self storage experience a simple, stress-free one! You may rent your unit online, or just give our friendly managers a call, and start de-cluttering your life, today!`,
     }
 ];
 
