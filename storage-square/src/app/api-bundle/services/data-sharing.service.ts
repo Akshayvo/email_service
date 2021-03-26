@@ -11,6 +11,12 @@ export class DataSharingService {
     // loc3: 'XjF7N0YzVzZHMEk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 17360
     // loc4: 'XjF7NUY0VzhHOUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 15489
   };
+
+  // locationAPIKey = {
+  //   loc1: 'bTJUOG42TDRbM1s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 28463
+  //   loc2: 'bTJUOG42TDRbNFs6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 28464
+  // };
+
   strTenantToken: string;
   strTempTenantToken: string;
   verificationCode: string;
