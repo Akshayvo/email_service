@@ -76,7 +76,9 @@ export const aboutUsBold = [
 
 export const jumbotron = [
     {
-        h1: `Affordable 24/7 Self Storage in the Fargo-Moorhead Area`,
+        h1: `Affordable 24/7 Self Storage`,
+        h2: `in the`,
+        h3: `Fargo-Moorhead Area`,
         blurb: `Aallen Self Storage is your one-stop self-storage solution. Since 2009, we have provided the Fargo-Moorhead area with clean, secure, high-quality, self-storage services, as well as,  'For Sale by Owner' vehicle parking pads, both at affordable prices. Our locally owned and operated self-storage facility offers storage units of different sizes to accommodate your extra space needs. We are conveniently located just a stone’s throw away from the intersection of I-29 and Main Avenue. The facility entrance is on Main Avenue, right at the 34th Street South stoplight, making coming and going from your unit a breeze.`,
     }
 ];
