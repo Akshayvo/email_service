@@ -30,7 +30,7 @@ export const serviceOffered = [
         p: `We understand that self storage is about more than just convenience. Our facilities are well-lit, and our managers perform regular walkarounds to ensure a constant sense of safety to our valued customers.`,
     },
     {
-        p: `So, whether you're a renter or homeowner looking for some extra elbow-room around the house, or a growing local business in need of room for supplies, inventory, or equipment, we've got a unit for you! Take a moment to review our availability, then rent your unit in seconds, or call our office today and let our friendly management team guide you to your next de-cluttering project!`,
+        p: `So, whether you're a renter or homeowner looking for some extra elbow-room around the house, or a growing local business in need of room for supplies, inventory, or equipment, we've got a unit for you! Take a moment to review our availability, then call our office today and let our friendly management team guide you to your next de-cluttering project!`,
     },
     
 ];
