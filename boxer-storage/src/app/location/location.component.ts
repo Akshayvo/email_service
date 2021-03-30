@@ -357,6 +357,23 @@ export class LocationComponent implements OnInit {
   // }
  }
 
+ public navigateToPayment() {
+  if ( this.locationId === 1 ) {
+    if (environment.signUpForAuotoPay === 1) {
+      this.router.navigate([`pay-rent/evanston-ave/rent-sub/login`],
+      );
+    } else {
+      this.router.navigate(['pay-remt']);
+    }
+  } 
+ }
+
+ public navigateToContact() {
+  if (this.router.url.includes('evanston-ave')) {
+    this.router.navigate(['/contact-evanston-ave'])
+  }
+ }
+
   public fetchDetailsLocation1() {
       this.name = heading1;
       this.locationId = 1;

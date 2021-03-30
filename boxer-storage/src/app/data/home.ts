@@ -1,9 +1,9 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: '12 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
+        label: 'Online Reservation & Bill Pay',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+        alt: 'Icon art displaying a screen with cursor'
     },
     {
         label: '24 Hour Facility Access',
