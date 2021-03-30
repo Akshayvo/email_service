@@ -116,7 +116,7 @@ export class LocationComponent implements OnInit {
               })
             });
           }
-     else if (this.router.url.includes('/location/vista-dr')) {
+     else if (this.router.url.includes(`${environment.locationName}/vista-dr`)) {
            this.meta.addTag({
              name: 'description',
              content: `${this.location2PageContent}`

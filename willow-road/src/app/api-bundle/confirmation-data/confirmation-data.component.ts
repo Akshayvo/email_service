@@ -258,7 +258,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           this.reservationInProgress = false;
 
           if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
           } else {
             this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
           }
@@ -305,7 +305,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           }
           this.reservationInProgress = false;
           if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/thank-you`]);
           } else {
             this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/thank-you`]);
           }
