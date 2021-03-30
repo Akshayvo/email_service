@@ -88,7 +88,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: ``,
-        blurb: ``,
+        h2: `Soaring Eagle Campground`,
+        blurb: `Soaring Eagle Campground has been operated by the Fischer family for 24 years. We take great pride in serving our campers with a welcoming, clean and convenient family campground that's open year-round in the Knoxville, TN area. Our campground also offers a number of self storage options to cover your storage needs as campers or local residents in need of storage!`,
     }
 ];
