@@ -1,6 +1,27 @@
 export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
+    url: `self-storage-units`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `self-storage-units`,
+    alt: `self storage units with square metal roll up doors`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `corner-self-storage-units`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `corner-self-storage-units`,
+    alt: `the corner of a self storage unit building with red roll up metal doors`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `row-of-red-units`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `row-of-red-units`,
+    alt: `storage units in a row under a blue sky`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
     url: `calellen-mini-storage-1`,
     // tslint:disable-next-line:max-line-length
     thumb: `calellen-mini-storage-1-thumb`,
