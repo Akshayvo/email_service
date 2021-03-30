@@ -21,6 +21,13 @@ export const contactMainOffice = [
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:2629495244'
     },
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(262) 248-0518 (Call or Text)',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:2622480518'
+    },
 ];
 
 export const hoursMainOffice = [
@@ -75,6 +82,13 @@ export const contactsLocation1 = [
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:2629495244'
     },
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(262) 248-0518',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:2622480518'
+    },
 ];
 
 export const hoursLocation1 = [
@@ -113,6 +127,13 @@ export const contactsLocation2 = [
         data: '(262) 949-5244',
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:2629495244'
+    },
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(262) 248-0518',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:2622480518'
     },
 ];
 
