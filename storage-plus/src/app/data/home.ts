@@ -160,17 +160,16 @@ export const location6FeaturesHead = [
 
 export const serviceOffered = [
     {
-        p: `Storage Plus of Baldwin County has been serving the communities of Baldwin County with clean, well-maintained, and affordable self storage services since 1997. Our 6 self storage facilities are located in Foley, Fairhope, Daphne/Belforest, Barnwell, and Robertsdale. Storage Plus of Baldwin County is locally owned and operated, and provides a wide range of self storage unit sizes including climate controlled types. We also have boat, recreational vehicle, and trailer storage at select locations!
-        `,
+        p: `Storage Plus of Baldwin County has been serving the communities of Baldwin County with clean, well-maintained, and affordable self storage services since 1997. Our 6 self storage facilities are located in Foley, Fairhope, Daphne/Belforest, Barnwell, Sivlerhill, and Robertsdale. Storage Plus of Baldwin County is locally owned and operated, and provides a wide range of self storage unit sizes including climate controlled types. We also have boat, recreational vehicle, and trailer storage at select locations!`,
     },
     {
-        p: `Take advantage of our decades of self storage experience to make your next move, renovation, or spring cleaning easier! At Storage Plus of Baldwin County, you’ll get 24-hour access to our well-lit facilities and you'll have access your account to pay online or update your information with us. We understand the value of working on your own schedule and give you the freedom to come and go as your time allows.`,
+        p: `Take advantage of our decades of self storage experience to make your next move, renovation, or spring cleaning easier! At Storage Plus of Baldwin County, you’ll get 24-hour access to our well-lit facilities and you'll have access to your account to pay your rent online or update your information with us. We understand the value of working on your own schedule and give you the freedom to come and go as your time allows.`,
     },
     {
-        p: `Whether you’re a residential storage user looking for a place to put seasonal decorations, and yard equipment or you’re preparing for a move and need a long term storage solution, one of our 6 conveniently located storage facilities is sure to have a unit that meets your needs. We also serve a number of growing local businesses who recognize the value of inexpensive storage space for tools, supplies, and inventory.`,
+        p: `Whether you’re a residential storage user looking for a place to put seasonal decorations, and yard equipment or you’re preparing for a move and need a long-term storage solution, one of our 6 conveniently located storage facilities is sure to have a unit that meets your needs. We also serve a number of growing local businesses that recognize the value of inexpensive storage space for tools, supplies, and inventory.`,
     },
     {
-        p: `Take a moment to review the availability and pricing at our locations, then give the friendly staff at Storage Plus of Baldwin County a call to reserve your unit! We look forward to meeting you!`,
+        p: `Take a moment to review the availability and pricing at our locations, then give the friendly staff at Storage Plus of Baldwin County a call to rent your unit! We look forward to meeting you!`,
     },
 ];
 
@@ -206,6 +205,6 @@ export const jumbotron = [
         blurb: `Storage Plus of Baldwin County serves the communities of Baldwin County with 6 locally owned
         self storage and vehicle parking facilities. We offer affordable self storage units in a variety of
         sizes including climate controlled varieties.Take a moment to review our pricing and storage unit or
-        vehicle parking availability, then give us a call, or reserve your unit online!`,
+        vehicle parking availability, then give us a call!`,
     }
 ];

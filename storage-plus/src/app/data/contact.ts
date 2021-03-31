@@ -72,8 +72,7 @@ export const hoursLocation1 = [
 
 export const hoursLocation1AcessHours = [
     {
-        label: '7 Days a Week: ',
-        data: '6:00AM to 8:00PM'
+        data: '24 Hours a Day 7 Days a Week'
     },
 ];
 
@@ -126,7 +125,6 @@ export const hoursLocation2 = [
     //     data: 'CLOSED',
     // },
     {
-        label: 'Access Hour: ',
         data: '24-Hours a Day 7 Days a Week',
     },
 ];
@@ -166,7 +164,6 @@ export const hoursLocation3 = [
     //     data: 'CLOSED',
     // },
     {
-        label: 'Access Hour: ',
         data: '24-Hours a Day 7 Days a Week',
     },
 ];
@@ -206,7 +203,6 @@ export const hoursLocation4 = [
     //     data: 'CLOSED',
     // },
     {
-        label: 'Access Hour: ',
         data: '24-Hours a Day 7 Days a Week',
     },
 ];
@@ -246,7 +242,6 @@ export const hoursLocation5 = [
     //     data: 'CLOSED',
     // },
     {
-        label: 'Access Hour: ',
         data: '24-Hours a Day 7 Days a Week',
     },
 ];
@@ -286,7 +281,6 @@ export const hoursLocation6 = [
     //     data: 'CLOSED',
     // },
     {
-        label: 'Access Hour: ',
         data: '24-Hours a Day 7 Days a Week',
     },
 ];
