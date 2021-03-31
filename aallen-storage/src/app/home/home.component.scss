@@ -147,7 +147,7 @@
 }
 
 .disp {
-  padding: 0% 15%;
+  padding: 0% 10%;
   color: $white;
 
   a {
@@ -306,7 +306,7 @@
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 
@@ -394,7 +394,7 @@
 
   .disp {
     padding: 0%;
-
+    margin-top: 100px;
     p {
       font-size: 1rem;
     }
@@ -466,6 +466,15 @@
 
   .disp {
     padding: 0;
+    margin-top: 70px;
+    p {
+      font-size: 1rem;
+      padding-bottom: 0px;
+    }
+
+    h1 {
+      font-size: 1.8em;
+    }
   }
   .about-us {
     .heading {
@@ -506,7 +515,7 @@
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 1.9rem;
     }
   }
 
@@ -557,13 +566,14 @@
 
   .disp {
     padding: 0%;
+    
 
     p {
-      font-size: 1rem;
+      font-size: .9rem;
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -640,7 +650,7 @@
     background-position: center left;
 
     h1 {
-      font-size: 2em;
+      font-size: 1.6em;
     }
   }
 
@@ -662,13 +672,17 @@
   .content-margin-top {
     margin-top: 36px;
   }
+  
+  .arrow {
+    display: none;
+  }
 
   .disp {
     p {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
-    margin-top: 150px;
+    margin-top: 80px;
     padding: 0%;
   }
 
@@ -691,7 +705,7 @@
     background-position: center left;
 
     h1 {
-      font-size: 2em;
+      font-size: 1.2rem;
     }
 
     .btn-primary {
@@ -716,10 +730,10 @@
 
   .disp {
     p {
-      font-size: 1rem;
+      font-size: .8rem;
     }
 
-    margin-top: 150px;
+    margin-top: 70px;
     padding: 0%;
   }
 
@@ -781,7 +795,7 @@
     }
 
     h1 {
-      font-size: 2.35rem;
+      font-size: 1.9rem;
     }
   }
 

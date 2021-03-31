@@ -51,7 +51,7 @@ export const aboutUsHeading = `Affordable Self-Storage Units in the Fargo-Moorhe
 export const aboutUs = [
     {
         p: `Aallen Self Storage provides self-storage space and 'For Sale by Owner' vehicle parking pads at competitive prices. We are your one-stop self-storage solution. We understand the key to success is building long-term relationships with our valued customers. That’s why we go the extra mile to provide you the best experience possible.
-        Whether you utilize our full-service website or our 24/7 on-site kiosk, you can rent, reservse, or pay for your storage space at your convenience. You’ll have 24-hour access to a secure, well-lit, high-tech, self storage facility, and you will be able to pay online or through our on-site kiosk 24-hours a day.`,
+        Whether you utilize our full-service website or our 24/7 on-site kiosk, you can rent, reserve, or pay for your storage space at your convenience. You’ll have 24-hour access to a secure, well-lit, high-tech, self storage facility, and you will be able to pay online or through our on-site kiosk 24-hours a day.`,
     },
     {
         p: `We understand the need for self-storage. That is why we strive to provide all of the modern conveniences that make self-storage projects fast and easy. You can start the contactless rental process by viewing our available storage units, and renting or reserving your unit on our website. Once the rental process complete, you will have 24-hour access to a secure, well-lit, clean, and well-maintained self-storage unit. You will rest easy knowing our facility is covered by strategically placed security cameras, continuously recording every movement.`,
