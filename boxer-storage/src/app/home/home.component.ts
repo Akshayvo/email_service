@@ -11,6 +11,7 @@ import { LocationService } from '../services/location.service';
 import { homePageTitle, homePageContent } from '../data/title';
 import { environment } from '../../environments/environment';
 import { UaParserService } from '../services/ua-parser.service';
+import { carouselData } from '../data/carousel';
 
 @Component({
   selector: 'app-home',
@@ -39,6 +40,7 @@ export class HomeComponent implements OnInit {
   imageBaseUrl: any;
   aboutusHeading: any;
   aboutusAlt: any;
+  carouselData: any;
 
 
   constructor(
@@ -106,6 +108,7 @@ export class HomeComponent implements OnInit {
   public fetchContactDetails() {
     this.contactHomeDetails = contactMainOffice;
     this.hoursHomeDetails = hoursMainOffice;
+    this.carouselData = carouselData;
   }
 
   public fetchJumbotron() {

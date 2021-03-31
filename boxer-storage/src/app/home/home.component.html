@@ -146,3 +146,40 @@
       </div>
     </div>
 <!--Service Ends Here-->
+
+
+  <!--Testimonial-->	
+  <div class="bg-light">	
+    <div class="container">	
+      <div class="row py-5">	
+        <div class="col-md-12 text-center">	
+          <h2 class="heading pb-4">Testimonials</h2>	
+          <div class="container mt-3">	
+            <div id="bootstrapCarousel" class="carousel slide" data-ride="carousel">	
+              <!-- Slide Indicators -->	
+              <ul class="carousel-indicators" style="bottom: -30px;">	
+                <li data-target="#bootstrapCarousel" data-slide-to="0" class="active"></li>	
+                <li data-target="#bootstrapCarousel" data-slide-to="1"></li>	
+                <li data-target="#bootstrapCarousel" data-slide-to="2"></li>	
+                <li data-target="#bootstrapCarousel" data-slide-to="3"></li>	
+              </ul>	
+              <!-- The slides to show -->	
+              <div class="carousel-inner">	
+                <div class="carousel-item" [ngClass]="{'active': i === 0}" *ngFor="let testimonial of carouselData; index as i">	
+                  <p>{{testimonial.p}}</p>	
+                  <p>{{testimonial.author}}</p>	
+                </div>	
+              </div>	
+              <!--  Controls (Left and right) -->	
+              <a class="carousel-control-prev" href="#bootstrapCarousel" data-slide="prev">	
+                <span class="carousel-control-prev-icon"></span>	
+              </a>	
+              <a class="carousel-control-next" href="#bootstrapCarousel" data-slide="next">	
+                <span class="carousel-control-next-icon"></span>	
+              </a>	
+            </div>	
+          </div>	
+        </div>	
+      </div>	
+    </div>	
+    <!--Testimonial section-->
