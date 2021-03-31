@@ -158,19 +158,19 @@ export const location6FeaturesHead = [
     },
 ];
 
-export const aboutusHeading = `12 Conveniently Located Self Storage Facilities in Western Michigan`;
+export const aboutusHeading = `Conveniently Located Self Storage Facilities in West Michigan`;
 
 export const aboutusALt = `blue metal self storage unit doors in a row`;
 
 export const serviceOffered = [
     {
-        p: `We proudly serve western Michigan with the most convenient Self Storage options in the area. From drive-up access to indoor climate-controlled units to boat and RV storage, we have a solution for you self storage needs.`,
+        p: `We proudly serve western Michigan with the most convenient Self Storage options in the area. From drive-up access to indoor climate-controlled units to boat and RV storage, we have a solution for your self-storage needs.`,
     },
     {
-        p: `Whether you need to store all the furniture in your home while you move into a new house or you just need to clear out a little extra room in your basement, we have the space that you’ve been looking for.`,
+        p: `With Easy Online Rental and Payments, whether you need to store all the furniture in your home while you move into a new house, or you just need to clear out a little extra room in your garage or basement, we have the space that you’ve been looking for.`,
     },
     {
-        p: `Your convenience is our top priority. From drive-up access to 24-hour gated entry, we do what we can to work with your schedule and ensure a simple move-in. Don’t hesitate to contact the location nearest you today. Our friendly and knowledgeable team is always eager to assist you.`,
+        p: `Your convenience is our priority – Please contact the location nearest you today. Our friendly and knowledgeable team is eager to assist you.`,
     },
 ];
 
