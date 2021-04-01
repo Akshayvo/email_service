@@ -32,12 +32,12 @@ export const contactsLocation1 = [
 
 export const hoursLocation1 = [
     {
-        label: 'Monday ,Wednesday, Friday: ',
-        data: '1:00PM to 5:00PM'
+        label: '7 Days a Week: ',
+        data: '9:00AM to 5:00PM'
     },
     {
-        label: 'Tuesday, Thursday, Saturday, Sunday: ',
-        data: 'CLOSED'
+        label: 'In-Person Office Hours vary. Please call first if you need an in-person appointment.',
+        data: ''
     },
     // {
     //     label: '7 Days a Week: ',
