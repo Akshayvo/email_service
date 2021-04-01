@@ -55,8 +55,10 @@
             <div class="col-lg-8">
               <h4 class="pt-3" *ngIf="locationId == 2;then content else other_content" >Gate Access Hours</h4>
               <ng-template #content><h4 class="pt-3">Gate Access Hours</h4><app-tables [tBody]="hours" ></app-tables></ng-template>
-              <ng-template #other_content><h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" >
-              </app-tables><h4 class="pt-3">Gate Access Hours</h4><app-tables [tBody]="access" ></app-tables>
+              <ng-template #other_content><h4 class="pt-3" >Office Hours</h4><app-tables [tBody]="hours" >
+              </app-tables>
+              <p><strong>In-Person Office Hours vary. Please call first if you need an in-person appointment.</strong></p>
+              <h4 class="pt-3">Gate Access Hours</h4><app-tables [tBody]="access" ></app-tables>
             </ng-template>
             </div>
             <div class="col-lg-4 btn-area text-center">

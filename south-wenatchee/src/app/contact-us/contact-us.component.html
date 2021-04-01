@@ -106,7 +106,8 @@
                   <span *ngFor="let hour of hoursDetails">
                     <b>{{hour.label}}</b><span *ngIf="hour?.id === 1 else other_content ">&nbsp;{{hour.data}}</span>
                     <ng-template #other_content>&nbsp;{{hour.data}}</ng-template><br>
-                  </span>             
+                  </span>
+                  <p><strong>In-Person Office Hours vary. Please call first if you need an in-person appointment.</strong></p>             
                 </div>
               </div>
           </div>

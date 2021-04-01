@@ -35,10 +35,10 @@ export const hoursLocation1 = [
         label: '7 Days a Week: ',
         data: '9:00AM to 5:00PM'
     },
-    {
-        label: 'In-Person Office Hours vary. Please call first if you need an in-person appointment.',
-        data: ''
-    },
+    // {
+    //     label: 'In-Person Office Hours vary. Please call first if you need an in-person appointment.',
+    //     data: ''
+    // },
     // {
     //     label: '7 Days a Week: ',
     //     data: '6:30AM to 9:00PM'
