@@ -17,13 +17,14 @@ export const featuresList = [
     
     },
     {
-        td1: 'Trailer Parking'
+        td1: 'Trailer Parking',
+        td2: 'Outdoor Storage'
     }
 ];
 
 export const aboutUsAlt = `single row of self storage unit doors under a bright blue sky.`;
 
-export const aboutUsHeading = `Affordable Self Storage Units in Dundee, MI`;
+export const aboutUsHeading = `Affordable Self Storage Units in Milan, MI`;
 
 export const aboutUs = [
     {
