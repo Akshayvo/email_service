@@ -50,6 +50,8 @@ img {
     color: #fff;
     font-weight: 600;
     // padding: 21px;
+    align-items: center;
+    margin-top: 20px;
   }
 
   .nav-link:hover {
@@ -58,7 +60,8 @@ img {
 
   .nav-link-active {
     color: #0e425c;
-    border-bottom: 5px solid #0b3549;
+    border-bottom: 7px solid #0b3549;
+    
   }
 
   button {
