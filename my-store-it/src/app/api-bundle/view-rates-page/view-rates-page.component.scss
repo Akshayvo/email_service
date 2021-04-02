@@ -12,6 +12,10 @@
   display: block;
 }
 
+.row-margin{
+  text-align: center;
+  display: flex;
+}
 .card-text {
   width: 150px;
   padding: 10px;
@@ -52,12 +56,19 @@ table {
         }
 
         .btn-primary {
-          background-color: #3f3c3c !important;
-          border-color: #212121 !important;
+          background-color: $primary !important;
+          border-color: $primary !important;
         }
       }
     }
   }
+}
+
+.othercasebutton{
+  color: $primary!important;
+  margin-right: auto;
+  min-width: 40px;
+  
 }
 
 .loader {
@@ -91,6 +102,11 @@ p {
   font-weight: 700;
 }
 
+.button-align{
+  display: flex;
+  justify-content: center;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -117,6 +133,8 @@ p {
       color: $primary !important;
     }
   }
+
+  
 }
 
 @media only screen and (max-width: 767px)  and (min-width: 381px) {
@@ -125,14 +143,18 @@ p {
       min-width: 150px;
     }
 
-    .btn-outline-primary {
-      color: $primary !important;
+     }
+
+    .othercasebutton{
+      font-size: .7rem;
+      
     }
   }
-  .viewrates-mobile {
-    display: block;
-  }
-}
+  
+
+ 
+  
+
 
 @media only screen and (max-width: 380px) {
   .buttons {
@@ -140,8 +162,9 @@ p {
       min-width: auto;
     }
   }
-
-  .viewrates-mobile {
-    display: block;
+  .othercasebutton{
+    font-size: .7rem;
+    
   }
-}
+
+  }

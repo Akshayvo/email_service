@@ -92,6 +92,9 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.dataSharingService.setReservationData(unitData);
     this.router.navigate([`${environment.locationName}/${location}`]);
     this.dataSharingService.LstUnitTypes = unitData;
+    if (location === '/contact-us')  {
+      this.router.navigate([`${location}`]); 
+    }
   }
 
   getMoveInCharges(description: any, monthlyRate: any, intUnitTypeID: any) {
