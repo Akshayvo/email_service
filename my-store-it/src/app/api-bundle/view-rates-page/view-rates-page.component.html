@@ -24,11 +24,12 @@
 
       <tbody itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
         <tr itemprop="itemOffered" itemscope itemtype="https://schema.org/SelfStorage" *ngFor="let lstUnitType of ViewRatesData" >
-          <td colspan="2" class="px-4 border text-center">
-            <span hidden itemprop="name">{{lstUnitType.size}} unit Type </span>
+          <td colspan="2" class="px-4 border text-center button-align">
+            <span hidden itemprop="name" class="margin-span">{{lstUnitType.size}} unit Type </span>
               {{lstUnitType.size}}
               <meta itemprop="description" 
-              content="{{lstUnitType.Description}}" />
+              content="{{lstUnitType.Description}}"/>&nbsp;&nbsp;            
+              <button class="py-1 buttons" (click)="navigate('/contact-us', lstUnitType )">Join Waiting List</button>
               <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/My-Store-It_Space/jpg/self-storage-facility.jpg" />
 
           </td>
@@ -69,12 +70,12 @@
       </tbody>
   </table>
   <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of ViewRatesData">
-    <div class="col-12 text-center">  
+    <div class="col-6 text-center">  
       <strong>Unit Size</strong>
-    <div class="py-2">{{lstUnitType.size}}</div>
+    <div class="py-1">{{lstUnitType.size}}</div>
     <div class="row">
         <!-- <div class="col-6 text-center" *ngIf="showRate"> -->
-          <div class="col-6 text-center">
+          <div class="col-12 text-center">
             <p class=" "><b><u>Rate</u></b></p>
             <!-- <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</div> -->
             <div class=" "><span>$</span>{{lstUnitType.price}}</div>
@@ -84,6 +85,7 @@
         </div> -->
       </div>
     </div>
+    <div class="col-6 text-center py-2"><button class="btn btn-outline-primary othercasebutton" (click)="navigate('/contact-us', lstUnitType )">Join Waiting List</button></div>
       <!-- <div class="col-6 d-flex justify-content-center" >
         <div  *ngIf="lstUnitType.IsUnitsAvailable; else other">
           <div class=" py-1 buttons" *ngIf="showReserve">
