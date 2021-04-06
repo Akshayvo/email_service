@@ -47,7 +47,7 @@ export const loginDetail = [
       example: {
           code: `John Smith's Phone Number is 555-555-5555`,
           userName: 'jsmith',
-          password: '12345555'
+          password: '5555555555'
       }
   }
 ];
