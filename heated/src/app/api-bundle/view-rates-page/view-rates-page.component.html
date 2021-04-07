@@ -42,7 +42,7 @@
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
-            <button><a [href]="contact.redirect" class="moveinbutton">Call The Facility</a></button>
+            <!-- <button><a [href]="contact.redirect" class="moveinbutton">Call The Facility</a></button> -->
             <button class="moveinbutton" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
             <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
           </td>
@@ -60,9 +60,9 @@
             </td>
           </ng-template>
           <ng-template #other_moveIn >
-            <td colspan="2" class="py-2 px-4 border" *ngIf="showMovein">
+            <td colspan="2" class="py-2 px-4 border text-center" *ngIf="showMovein">
             <!-- <div class="text-center">Please call the facility to move in.</div> -->
-            <button class="ml-4"><a [href]="contact.redirect" class="moveinbutton">Call The Facility</a></button>
+            <button class=""><a [href]="contact.redirect" class="callfacilitybutton">Call The Facility</a></button>
           </td>
           </ng-template>
         </tr> 
@@ -89,7 +89,7 @@
               <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </div>
           <div class="py-1 buttons" *ngIf="showMovein"> 
-            <a [href]="contact.redirect" class="btn btn-outline-primary moveinbuttonmobile"> Call The Facility </a>
+            <!-- <a [href]="contact.redirect" class="btn btn-outline-primary moveinbuttonmobile"> Call The Facility </a> -->
               <button class="btn btn-outline-primary moveinbuttonmobile" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </div>
         </div>

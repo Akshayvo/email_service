@@ -1,7 +1,11 @@
 <div class="">
-  <div class="jumbotron-container">
+  <div class="jumbotron-home">
+    <div class="jumbotron">
+    <video class="video-background" oncanplay="this.play()" onloadedmetadata="this.muted = true" autoplay loop>
+      <source src="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Heated_Storage/Heated+Self+Storage+Aerial+Video.mp4" type="video/mp4">
+    </video>
     <div class="jumbotron-top">
-    <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+    <!-- <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
       <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
       </div>
       <div class="container">
@@ -13,14 +17,15 @@
           <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button">
-            <!-- <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a> -->
             <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            <!-- <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a> -->
           </div>
           </div>
         </div>
+      </div> -->
       </div>
       </div>
+      </div>
+
     <div class="jumbotron-bottom">
       <div class="container">
         <div class="feature row">
@@ -31,7 +36,7 @@
         </div>
       </div>
     </div>
-  </div>
+  
 
 
   <div class="bg-light">
@@ -53,7 +58,7 @@
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
                 </span>
               </p>
-              <h4><b>Facility Hours:</b></h4>
+              <h4><b>Remote Office Hours:</b></h4>
               <p>
                 <span class="display-contact" *ngFor="let hour of hours">
                   <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
