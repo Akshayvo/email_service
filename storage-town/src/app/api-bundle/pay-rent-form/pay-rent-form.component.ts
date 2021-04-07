@@ -487,38 +487,38 @@ public navigateToPrevious() {
   getPayMethods() {
     this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
        .subscribe(payTypesResponse => {
- 
-         this.cards.forEach(element => {
-           if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
-             const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
-              if (index > -1) {
-                 this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
-               }
-           }
-         });
- 
- 
-         if (!!localStorage.getItem('strTenantToken')) {
-           this.tenantTokenExist = true;
-           this.showLoader = true;
-           this.getTenantInfo();
-         } else {
-           const defaultDescription = this.lstPayTypes[0].PayTypeDescription;
-           const defaultPayTypeID = this.lstPayTypes[0].PayTypeID;
-           this.paytypeid =  this.lstPayTypes[0].PayTypeID;
-           console.log('lstPayTypes', this.lstPayTypes, this.paytypeid);
-           this.surchargeService.getIdPaytype(this.paytypeid);
-           console.log('this.surchargeService.getIdPaytype(this.paytypeid);', this.surchargeService.getIdPaytype(this.paytypeid));
-           this.getSurCharge();
-           this.payRentForm.patchValue({
-             objPayment: {
-               PayType: {
-                 PayTypeDescription: defaultDescription,
-                 PayTypeID: defaultPayTypeID,
-               }
-             }
+        if (!!payTypesResponse) {
+          console.log('payTypesResponse', payTypesResponse);
+           this.cards.forEach(element => {
+               const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
+                if (index > -1) {        
+                   this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
+                 }
            });
-         }
+   
+   
+           if (!!localStorage.getItem('strTenantToken')) {
+             this.tenantTokenExist = true;
+             this.showLoader = true;
+             this.getTenantInfo();
+           } else {
+             const defaultDescription = this.lstPayTypes[0].PayTypeDescription;
+             const defaultPayTypeID = this.lstPayTypes[0].PayTypeID;
+             this.paytypeid =  this.lstPayTypes[0].PayTypeID;
+             console.log('lstPayTypes', this.lstPayTypes, this.paytypeid);
+             this.surchargeService.getIdPaytype(this.paytypeid);
+             console.log('this.surchargeService.getIdPaytype(this.paytypeid);', this.surchargeService.getIdPaytype(this.paytypeid));
+             this.getSurCharge();
+             this.payRentForm.patchValue({
+               objPayment: {
+                 PayType: {
+                   PayTypeDescription: defaultDescription,
+                   PayTypeID: defaultPayTypeID,
+                 }
+               }
+             });
+           }
+        }
        }
      );
    }
