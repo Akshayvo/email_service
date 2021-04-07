@@ -346,7 +346,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   selectChangeHandler (event: any) {
     const indexValue  = event.target.value;
     const index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
-    if (!!index) {
+    if (index >= 0) {
       this.UnitTypeRate = this.lstUnitTypes[index].MonthlyRate;
       this.monthlyRate = this.lstUnitTypes[index].MonthlyRate;
       this.annualRate = this.lstUnitTypes[index].AnnualRate;
@@ -478,19 +478,20 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
   getData() {
    this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
+      const index = unitTypesResponse.lstUnitTypes.findIndex(x => x.UnitTypeID === this.dataSharingService.LstUnitTypes.UnitTypeID);
       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
       this.getFilterLstUnitTypes(unitTypesResponse);
-      const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
+      const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[index].MonthlyRate;
       this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
       const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
-      this.Description = unitTypesResponse.lstUnitTypes[0].Description;
+      this.Description = unitTypesResponse.lstUnitTypes[index].Description;
       const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
-      this.ReservationFee = unitTypesResponse.lstUnitTypes[0].ReservationFee;
-      this.ReservationFeeTax = unitTypesResponse.lstUnitTypes[0].ReservationFeeTax;
-      this.MoveIn.intUnitTypeID = this.UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
+      this.ReservationFee = unitTypesResponse.lstUnitTypes[index].ReservationFee;
+      this.ReservationFeeTax = unitTypesResponse.lstUnitTypes[index].ReservationFeeTax;
+      this.MoveIn.intUnitTypeID = this.UnitTypeID || unitTypesResponse.lstUnitTypes[index].UnitTypeID;
       this.unitTypeId =
-      this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
-      this.UnitTypeID = unitTypesResponse.lstUnitTypes[0].UnitTypeID;
+      this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[index].UnitTypeID;
+      this.UnitTypeID = unitTypesResponse.lstUnitTypes[index].UnitTypeID;
       if (this.navigateToMoveIn) {
         // tslint:disable-next-line:max-line-length
         this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
