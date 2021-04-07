@@ -478,12 +478,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
        .subscribe(payTypesResponse => {
  
          this.cards.forEach(element => {
-           if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
              const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
               if (index > -1) {
                  this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
                }
-           }
+           
          });
  
  
