@@ -29,7 +29,6 @@
               {{lstUnitType.size}}
               <meta itemprop="description" 
               content="{{lstUnitType.Description}}"/>&nbsp;&nbsp;            
-              <button class="py-1 buttons" (click)="navigate('/contact-us', lstUnitType )">Join Waiting List</button>
               <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/My-Store-It_Space/jpg/self-storage-facility.jpg" />
 
           </td>
@@ -37,10 +36,10 @@
               <span>$</span>{{lstUnitType.price | number : '1.2-2'}}
               <meta itemprop="priceRange" content="{{lstUnitType.price}}" />
           </td>
-          <!-- <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
-            <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
+          <td colspan="2" class="px-4 border text-center">
+              <button class="ml-2 py-1 buttons text-center" (click)="navigate('/contact-us', lstUnitType )">Join Waiting List</button>
           </td>
-          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
+          <!--<td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
