@@ -51,7 +51,9 @@ export class LoginComponent implements OnInit, OnDestroy {
   twitter: any;
   og: any;
   private authUnsubscribe$: Subscription;
-
+  acceptedValues = [6];
+  acceptedValuesComingSoon = [];
+  
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
@@ -112,6 +114,7 @@ export class LoginComponent implements OnInit, OnDestroy {
         }
       }
     }
+    
     this.fetchContactDetail();
 
   }
@@ -127,6 +130,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchContactDetail() {
+
     if (this.router.url.includes('foley')) {
       this.id = 1;
       this.name = 'Storage Plus of Baldwin County - Foley';
