@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'Whitewater Self-Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://whitewater-staging.netlify.app',
+  websiteUrl: 'http://whitewaterselfstorage.com',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`,// demo north 28463
   APIKey: `bTJUOW40TDJbM1s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, 
 };

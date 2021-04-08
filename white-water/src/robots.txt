@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://whitewater-staging.netlify.app/sitemap.xml
+Sitemap: http://whitewaterselfstorage.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy
