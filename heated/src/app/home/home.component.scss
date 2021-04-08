@@ -6,7 +6,6 @@
   }
 }
 
-
 .jumbotron-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Heated_Storage/webp/heated-storage-jumbotron.webp");
 }
@@ -29,22 +28,35 @@
 //   overflow: hidden;
 //   border-radius: 0;
 // }
+// .jumbotron {
+//   position: relative;
+//   // overflow: hidden;
+//   height: 100%;
+//   background-size: cover;
+//   background-position: center;
+//   padding: 0;
+//   // margin-top: 85px;
+
+//   /* Tried setting the height. Didnt work either */
+//   /* height: 200px; */
+// }
+
 .jumbotron {
   position: relative;
-    overflow: hidden;
-    height: 100%;
-    // margin-top: 85px;
+  overflow: hidden;
+  height: 100%;
+  // margin-top: 85px;
 
   /* Tried setting the height. Didnt work either */
   /* height: 200px; */
 }
 
-
 .video {
   margin: 0 auto;
   margin-left: 0 auto;
-  background-position: right;
+  background-position: center;
   position: relative;
+  height: 100vh;
 }
 
 .video-background {
@@ -54,12 +66,25 @@
   min-height: 100%;
   min-width: 100%;
   left: 50%;
-  top: 50%;
+  top: 70%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
-  z-index: 1;
+  z-index: 0;
 }
-
+// .video-background {
+//   position: absolute;
+//   top: 70%;
+//   left: 50%;
+//   min-width: 100%;
+//   min-height: 100%;
+//   width: auto;
+//   height: auto;
+//   z-index: 0;
+//   -ms-transform: translateX(-50%) translateY(-50%);
+//   -moz-transform: translateX(-50%) translateY(-50%);
+//   -webkit-transform: translateX(-50%) translateY(-50%);
+//   transform: translateX(-50%) translateY(-50%);
+// }
 .home-map {
   iframe {
     border: 2px solid white;
@@ -67,7 +92,7 @@
 }
 
 .jumbotron-home {
-  height: 80vh;
+  height: 100vh;
 
   .for-mobile-view {
     display: none;
@@ -149,7 +174,7 @@
 
 .jumbotorn-bottom {
   .feature-row {
-    height: 20vh ;
+    height: 20vh;
 
     img {
       height: 60px;
@@ -169,7 +194,7 @@
   left: -25%;
   position: relative;
   transform: skew(15deg);
-  height: 100%;
+  height: 100vh;
 
   a {
     margin-top: 20px;
@@ -186,7 +211,6 @@
     margin-right: 10px;
   }
 }
-
 
 @media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 640px) {
   .disp {
@@ -205,7 +229,7 @@
     }
   }
 
-  .video{
+  .video {
     margin: 0 auto;
     margin-left: 0 auto;
     background-position: right;
@@ -218,7 +242,7 @@
     height: 100vh;
   }
 
-  .video{
+  .video {
     margin: 0 auto;
     margin-left: 0 auto;
     background-position: right;
@@ -244,7 +268,7 @@
   // }
 
   .jumbotron-bottom {
-    .feature-text{
+    .feature-text {
       font-size: 1rem !important;
     }
   }
@@ -273,7 +297,7 @@
     }
   }
 
-  .video{
+  .video {
     margin: 0 auto;
     margin-left: 0 auto;
     background-position: right;
@@ -342,7 +366,7 @@
     }
   }
 
-  .video{
+  .video {
     margin: 0 auto;
     margin-left: 0 auto;
     background-position: right;
@@ -361,7 +385,7 @@
     }
   }
 
-  .video{
+  .video {
     margin: 0 auto;
     margin-left: 0 auto;
     background-position: right;
@@ -392,7 +416,7 @@
     height: 100vh;
   }
 
-  .video{
+  .video {
     margin: 0 auto;
     margin-left: 0 auto;
     background-position: right;
@@ -412,15 +436,14 @@
   }
 
   .jumbotron-bottom {
-    img{
+    img {
       height: 40px !important;
     }
-  .feature-text {
-    font-weight: 600;
-    font-size: 1rem !important;
+    .feature-text {
+      font-weight: 600;
+      font-size: 1rem !important;
+    }
   }
-
-}
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 479px) {
@@ -439,7 +462,7 @@
       display: flex;
     }
   }
-  .video{
+  .video {
     margin: 0 auto;
     margin-left: 0 auto;
     background-position: right;
@@ -509,7 +532,7 @@
     }
   }
 
-  .video{
+  .video {
     margin: 0 auto;
     margin-left: 0 auto;
     background-position: right;
@@ -548,7 +571,7 @@
     height: 160px;
   }
 
-  .video{
+  .video {
     margin: 0 auto;
     margin-left: 0 auto;
     background-position: right;
@@ -572,7 +595,6 @@
       display: flex;
     }
   }
-
 
   .feature {
     display: none;
@@ -612,7 +634,7 @@
     padding: 10px;
   }
 
-  .video{
+  .video {
     margin: 0 auto;
     margin-left: 0 auto;
     background-position: right;
@@ -657,7 +679,7 @@
     }
   }
 
-  .video{
+  .video {
     margin: 0 auto;
     margin-left: 0 auto;
     background-position: right;
@@ -672,7 +694,7 @@
     /* margin-bottom: 2rem; */
     /* background-color: #e9ecef; */
     /* border-radius: .3rem; */
-}
+  }
 
   // .jumbotron-top {
   //   height: 100vh;
@@ -715,7 +737,7 @@
     padding: 10px;
   }
 
-  .video{
+  .video {
     margin: 0 auto;
     margin-left: 0 auto;
     background-position: right;
@@ -737,10 +759,10 @@
     /* margin-bottom: 2rem; */
     /* background-color: #e9ecef; */
     /* border-radius: .3rem; */
-}
-.jumbotron-bottom {
-  display: none;
-}
+  }
+  .jumbotron-bottom {
+    display: none;
+  }
   .jumbotron-home {
     height: 60vh;
 
@@ -752,7 +774,6 @@
       display: none;
     }
   }
-
 
   .feature {
     display: none;
@@ -782,10 +803,10 @@
     padding: 10px;
   }
 
-  .video-background{
+  .video-background {
     display: none;
   }
-  .feature-home{
+  .feature-home {
     display: none;
   }
 
@@ -817,31 +838,30 @@
     /* margin-bottom: 2rem; */
     /* background-color: #e9ecef; */
     /* border-radius: .3rem; */
-}
+  }
 
   .jumbotron-bottom {
     display: none;
   }
-    .jumbotron-home {
-      height: 60vh;
-  
-      .for-mobile-view {
-        display: block;
-      }
-  
-      .for-desktop-view {
-        display: none;
-      }
+  .jumbotron-home {
+    height: 60vh;
+
+    .for-mobile-view {
+      display: block;
     }
-  
-  
-    .feature {
+
+    .for-desktop-view {
       display: none;
     }
-  
-    .disp {
-      display: none;
-    }
+  }
+
+  .feature {
+    display: none;
+  }
+
+  .disp {
+    display: none;
+  }
 
   .feature {
     display: none;
@@ -880,10 +900,10 @@
     }
   }
 
-  .video-background{
+  .video-background {
     display: none;
   }
-  .feature-home{
+  .feature-home {
     display: none;
   }
 
