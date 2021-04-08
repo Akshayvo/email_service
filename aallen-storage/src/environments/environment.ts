@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'Aallen Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'http://aallenselfstorage.com',
+  websiteUrl: 'https://aallen-storage.netlify.app',
   APIKey: `bTJUMW4yTDVbOFs6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
 };
 
