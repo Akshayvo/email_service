@@ -85,7 +85,12 @@ export const loginDetail = [
       example: {
           code: `John Smith's Unit Number is 123`,
           userName: 'jsmith',
-          password: '123'
+          password: '0123'
+      },
+      example1:{
+          code: `John Smith's Unit Number is RC23`,
+          userName: 'jsmith',
+          password: 'RC23'
       }
   }
 ];

@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'Storage Plus of Baldwin County',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://storage-plus-staging.netlify.app`
+  websiteUrl: `https://storageplusbaldwin.com`
 };
 
 /*
