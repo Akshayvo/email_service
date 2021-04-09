@@ -1,4 +1,4 @@
- <div class="row" *ngIf="acceptedValues.includes(id) > 0">
+ <div class="row" *ngIf="acceptedValues.includes(id) && id > 0">
      <div class="col-lg-8 p-4">
     <div>
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
@@ -78,7 +78,7 @@
     </div> 
 </div>
  </div>
-<div class="coming-soon" *ngIf="acceptedValuesComingSoon.includes(id) > 0">
+<div class="coming-soon" *ngIf="acceptedValuesComingSoon.includes(id) && id > 0">
     <b>Coming Soon !</b>
 </div>    
  
