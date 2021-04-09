@@ -478,12 +478,13 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
   getData() {
    this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
+      const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
+      const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
       if(this.dataSharingService.LstUnitTypes){
         const index = unitTypesResponse.lstUnitTypes.findIndex(x => x.UnitTypeID === this.dataSharingService.LstUnitTypes.UnitTypeID);
         this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
         this.getFilterLstUnitTypes(unitTypesResponse);
-        const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
-        const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
+        
         if(index >= 0 ){
           const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[index].MonthlyRate;
           this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
