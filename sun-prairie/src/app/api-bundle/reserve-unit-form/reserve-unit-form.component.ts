@@ -478,8 +478,6 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
   getData() {
    this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
-      const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
-      const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
       if(this.dataSharingService.LstUnitTypes){
         const index = unitTypesResponse.lstUnitTypes.findIndex(x => x.UnitTypeID === this.dataSharingService.LstUnitTypes.UnitTypeID);
         this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
@@ -487,7 +485,9 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
         
         if(index >= 0 ){
           const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[index].MonthlyRate;
+          const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
           this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
+          const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
           this.Description = unitTypesResponse.lstUnitTypes[index].Description;
           this.ReservationFee = unitTypesResponse.lstUnitTypes[index].ReservationFee;
           this.ReservationFeeTax = unitTypesResponse.lstUnitTypes[index].ReservationFeeTax;
@@ -495,8 +495,8 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
           this.unitTypeId =
           this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[index].UnitTypeID;
           this.UnitTypeID = unitTypesResponse.lstUnitTypes[index].UnitTypeID;
-      }
-    }
+      
+    
       if (this.navigateToMoveIn) {
         // tslint:disable-next-line:max-line-length
         this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
@@ -528,7 +528,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
         });
         this.dataSharingService.LstUnitTypes.Description = serviceDescriptionValue;
         this.dataSharingService.LstUnitTypes.MonthlyRate = serviceMonthlyValue;
-      }
+      }}}
     });
   }
 
