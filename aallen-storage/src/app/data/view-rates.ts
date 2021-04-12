@@ -2,13 +2,13 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
   {
-    p: `Aallen Self Storage provides a number of self storage and vehicle parking options at competitive prices to Fargo, N.D. We are a locally owned and operated business that understands the key to success is building long-term relationships with our valued customers. That’s why we go the extra mile to give you the best experience possible.`,
+    p: `Aallen Self Storage provides a number of self storage options, and 'For Sale by Owner' vehicle parking pads, at competitive prices in the Fargo Moorhead area. We are locally owned and operated, and we understand the key to success is building long-term relationships with our valued customers. That is why we go the extra mile to provide you the best possible experience. `,
 },
 {
-    p: `Starting with our online reservations and on-site kiosk you can reserve or rent your unit at your convenience. Once you’re moved into your new unit, you’ll have 24-hour access to a well-lit self storage facility, and you can pay online or through our kiosk 24 hours a day.`,
+    p: `By utilizing either our full-service website or our on-site kiosk, you can rent, reserve, or pay for your unit at your convenience. Once you have rented a storage space, you’ll have 24-hour access to a secure, well-lit self-storage facility. From that point forward, you'll be able to make monthly payments or setup reoccurring payments on our website. However, if you prefer making local payments, you can use our facility kiosk, which is available 24-hours a day, 7-days a week. `,
 },
 {
-    p: `Still have questions? The staff at Aallen Self Storage are available to answer questions or assist you with a contactless reservation or rental. Simply give us a call, and a friendly member of our time will be glad to help! We look forward to making your next storage project an easy and affordable one!`,
+    p: `If you have any questions, the staff at Aallen Self Storage is available to answer those questions, or assist you with an online, contactless rental or reservation. Simply give us a call and a friendly member of our team will be glad to help you! We look forward to making your next storage project easy and affordable! `,
 }
 ];
 

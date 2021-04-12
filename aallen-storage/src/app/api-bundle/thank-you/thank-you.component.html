@@ -1,7 +1,7 @@
 <div class="text-center">
     <div class="go-to-home py-4">
-        <div *ngIf="!navigateToMoveIn && !navigateToReserve">
-            <h1>Thank You </h1>
+        <div *ngIf="paymentSuccess">       
+        <h1>Thank You </h1>
             Your payment of <strong>${{PaymentAmount}}</strong> was successful. 
             <div *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'"> 
                 Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .

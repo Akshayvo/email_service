@@ -6,7 +6,9 @@
           <div class="col-md-12">
             <div class="disp" *ngFor="let jumbotron of jumbotron">
               <h1  class="my-4">
-                {{jumbotron.h1}}
+                {{jumbotron.h1}}<br>
+                {{jumbotron.h2}}<br>
+                {{jumbotron.h3}}
               </h1>
             <p class="text-justify">{{jumbotron.blurb}}</p>
             </div>
@@ -30,10 +32,11 @@
         <div class="row content-margin-top">
           <div class="col-md-6 py-3">
             <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
+            <p class="justify bold" *ngFor="let databold of aboutUsBold"><b>{{databold.b}}</b></p>
           </div>
           <div class="col-md-6 py-3" >
               <!-- <app-photos> </app-photos>           -->
-              <img alt="several self storage unit doors in a row with one door open revealing household belongings" class="sectionImage" src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Aallen_Storage/jpg/aallens-self-storage-11.jpg">
+              <img alt="a single story metal self storage building with a facility office on the end of the building" class="sectionImage" src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Aallen_Storage/jpg/aallen-self-storage-front-office.jpg">
           </div>
         </div>
       </div>

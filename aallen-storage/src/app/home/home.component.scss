@@ -13,6 +13,10 @@
     color: white;
   }
 }
+
+.bold{
+  font-size: 1.2rem;
+}
 .jumbotron {
   // background: url("../../assets/scotia_images/Scotia_Images_JPG/moving-boxes.jpg");
   background-repeat: no-repeat;
@@ -29,7 +33,7 @@
 }
 
 .jumbotorn-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Aallen_Storage/webp/aallens-self-storage-169.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Aallen_Storage/webp/aallen-self-storage-office.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -38,7 +42,7 @@
 }
 
 .jumbotorn-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Aallen_Storage/jpg/aallens-self-storage-169.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Aallen_Storage/jpg/aallen-self-storage-office.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -79,11 +83,11 @@
 }
 
 .we-provide-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Aallen_Storage/jpg/moving-boxes.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Aallen_Storage/jpg/aallen-self-storage-office.jpg");
 }
 
 .we-provide-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Aallen_Storage/webp/moving-boxes.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Aallen_Storage/webp/aallen-self-storage-office.webp");
 }
 
 .we-provide {
@@ -143,7 +147,7 @@
 }
 
 .disp {
-  padding: 0% 15%;
+  padding: 0% 10%;
   color: $white;
 
   a {
@@ -151,7 +155,7 @@
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-bottom: 20px;
     line-height: 1.5;
   }
@@ -222,7 +226,7 @@
 
     .disp {
       p {
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
 
       h1 {
@@ -257,7 +261,7 @@
       }
 
       h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
     }
   }
@@ -298,11 +302,11 @@
 
   .disp {
     p {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 
@@ -354,7 +358,7 @@
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
   .about-us {
@@ -390,13 +394,13 @@
 
   .disp {
     padding: 0%;
-
+    margin-top: 100px;
     p {
       font-size: 1rem;
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
   .about-us {
@@ -462,6 +466,15 @@
 
   .disp {
     padding: 0;
+    margin-top: 70px;
+    p {
+      font-size: 1rem;
+      padding-bottom: 0px;
+    }
+
+    h1 {
+      font-size: 1.8em;
+    }
   }
   .about-us {
     .heading {
@@ -502,7 +515,7 @@
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 1.9rem;
     }
   }
 
@@ -553,13 +566,14 @@
 
   .disp {
     padding: 0%;
+    
 
     p {
-      font-size: 1rem;
+      font-size: .9rem;
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -636,7 +650,7 @@
     background-position: center left;
 
     h1 {
-      font-size: 2em;
+      font-size: 1.6em;
     }
   }
 
@@ -658,13 +672,17 @@
   .content-margin-top {
     margin-top: 36px;
   }
+  
+  .arrow {
+    display: none;
+  }
 
   .disp {
     p {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
-    margin-top: 150px;
+    margin-top: 80px;
     padding: 0%;
   }
 
@@ -687,7 +705,7 @@
     background-position: center left;
 
     h1 {
-      font-size: 2em;
+      font-size: 1.2rem;
     }
 
     .btn-primary {
@@ -712,10 +730,10 @@
 
   .disp {
     p {
-      font-size: 1rem;
+      font-size: .8rem;
     }
 
-    margin-top: 150px;
+    margin-top: 70px;
     padding: 0%;
   }
 
@@ -777,7 +795,7 @@
     }
 
     h1 {
-      font-size: 2.35rem;
+      font-size: 1.9rem;
     }
   }
 

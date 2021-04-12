@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { featuresList, aboutUs, feature, aboutUsAlt,jumbotron,aboutUsHeading } from '../data/home';
+import { featuresList, aboutUs, feature, aboutUsAlt,jumbotron,aboutUsHeading,aboutUsBold } from '../data/home';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { environment } from '../../environments/environment';
@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
   hours: any;
   featuresList: any;
   aboutUs: any;
+  aboutUsBold: any;
   feature: any;
   imageBaseUrl: any;
   imagetype: any;
@@ -167,6 +168,7 @@ export class HomeComponent implements OnInit {
 }
   public fetchStaticContent() {
     this.aboutUs = aboutUs;
+    this.aboutUsBold = aboutUsBold;
     this.aboutUsAlt = aboutUsAlt;
     this.aboutUsHeading = aboutUsHeading;
   }

@@ -25,17 +25,17 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Aallen_Storage/jpg/aallens-self-storage-11.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Aallen_Storage/jpg/aallens-self-storage-43.jpg", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Aallen_Storage/jpg/aallens-self-storage-169.jpg" // 16:9
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Aallen_Storage/jpg/aallen-self-storage-11.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Aallen_Storage/jpg/aallen-self-storage-43.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Aallen_Storage/jpg/aallen-self-storage-169.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
      map: "https://goo.gl/maps/UMoABoDoc3J3q3QHA",
      description: "Aallen Self Storage is Fargo’s one-stop self storage solution. We’ve served Fargo, West Fargo, Moorhead with clean, high-quality, and affordable self storage services since 2009. Our locally owned and operated self storage facility offers a number of self storage unit sizes to accommodate a variety of extra space needs.",
      streetAddress: "3401 Main Ave",
      state: "northdakota",
-     addressLocality: "northdakota",
-     addressRegion: "ND",
+     addressLocality: "Fargo",
+     addressRegion: "North Dakota",
      postalCode: "58103",
      addressCountry: "US",
      id: environment.websiteUrl || "",
