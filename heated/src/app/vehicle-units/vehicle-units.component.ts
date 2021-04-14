@@ -7,7 +7,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { MetaService } from '../services/link.service';
 import { CanonicalService } from '../services/canonical.service';
 import { UaParserService } from '../services/ua-parser.service';
-
+import { vehicleUnitPageTitle, vehicleUnitPageContent } from '../data/title';
 
 @Component({
   selector: 'app-vehicle-units',
@@ -33,6 +33,7 @@ export class VehicleUnitsComponent implements OnInit {
     private metaService: MetaService,
     private uaParserService: UaParserService
     ) { 
+      this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
       content: `${this.vehicleUnitPageContent}`
@@ -58,8 +59,13 @@ export class VehicleUnitsComponent implements OnInit {
   public fetchStaticContent() {
     this.vehicleUnits = vehicleUnitsDesc;
     this.vehicleUnitsHeading = vehicleUnitsHeading;
+
   }
 
+  public fetchMetaData() {
+    this.vehicleUnitPageContent = vehicleUnitPageContent;
+    this.vehicleUnitPageTitle = vehicleUnitPageTitle;
+  }
   public fetchVehicleUnitHeading() {
     this.vehicleUnitHeading = vehicleUnitHeading;
   }
