@@ -59,7 +59,7 @@ export const feature = [
     {
         // tslint:disable-next-line:max-line-length
         path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg`,
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Rental & Bill Pay',
         alt: 'Icon art displaying a screen with cursor'
     },
    
