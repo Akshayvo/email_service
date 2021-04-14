@@ -25,5 +25,5 @@ export const thankYouPageContent = `We've received your reservation! One of our 
 export const privacyPolicyPageTitle = `Privacy Policy | Heated Self Storage Inc`;
 export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
 
-export const vehicleUnitPageTitle = `Vehicle Storage & Car Storage | Heated Self Storage`;
-export const vehicleUnitPageContent = `Are you in need of an extra space to park a vehicle away from the elements during the off-season? Heated Self Storage has you-and your car-covered!`
+export const vehicleUnitPageTitle = ` Vehicle Units | Heated Self Storage`;
+export const vehicleUnitPageContent = `Heated Self Storage also offers a number of vehicle storage units for your classic car or truck! `

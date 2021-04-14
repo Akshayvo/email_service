@@ -21,7 +21,6 @@ export const featuresList = [
     },
     {
         td1: 'Online Rental',
-        td2: 'Online Reservation',
     }
 ];
 
