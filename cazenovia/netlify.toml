@@ -55,6 +55,10 @@
   to = "//contact-us"
   status = 301    
 [[redirects]]
+  from = "/reserve-unit"
+  to = "/view-rates"
+  status = 301    
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
