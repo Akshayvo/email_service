@@ -16,6 +16,8 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
   showLoader = false;
   passwordChanged = false;
   incorrectPassword = false;
+  paymentTab: string;
+
   changePasswordForm: FormGroup;
   private changePasswordUnsubscribe$: Subscription;
 
@@ -47,8 +49,11 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
   goBack() {
     this.dataSharingService.changePassword = false;
     localStorage.removeItem('strTenantToken');
-    this.router.navigate(['pay-rent/login']);
-  }
+    if (!!this.paymentTab) {
+      this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
+    } else {
+      this.router.navigate(['/pay-rent/login']);
+    }   }
 
   public navigate(location: any) {
     this.router.navigate([location]);

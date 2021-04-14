@@ -16,6 +16,8 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
   submitted = false;
   passwordResetted = false;
   showLoader = false;
+  paymentTab: string;
+
    private resetPasswordUnsubscribe$: Subscription;
 
   constructor(
@@ -36,6 +38,9 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
   }
 
   get f() { return this.resetPasswordForm.controls; }
@@ -45,7 +50,12 @@ export class ResetPasswordComponent implements OnInit, OnDestroy {
   }
 
   goToLogin() {
-    this.router.navigate(['/pay-rent/login']);
+    // this.router.navigate(['/pay-rent/login']);
+    if (!!this.paymentTab) {
+      this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
+    } else {
+      this.router.navigate(['/pay-rent/login']);
+    }  
   }
 
   resetPassword(data: any): void {

@@ -137,7 +137,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         CCAccountName: ['', Validators.required],
         CCExpirationMonth: ['', Validators.required],
         CCExpirationYear: ['', Validators.required],
-        CCAccountCVV2: [''],
+        CCAccountCVV2: ['', Validators.required],
         CCAccountBillingAddress: ['', Validators.required],
         CCAccountZIP: ['', Validators.required],
         SignUpForAutoPay:  [],
@@ -468,8 +468,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       });
   }
 
-  public navigateToConfirmation(location: any) {
-    this.router.navigate([location]);
+  public navigateToConfirmation() {
+    this.router.navigate([`${environment.locationName}/view-rates/reserve`]);
   }
 
   getPayMethods() {

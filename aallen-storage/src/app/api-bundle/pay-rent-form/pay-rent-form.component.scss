@@ -1,5 +1,9 @@
 @import "../../../styles.scss";
 
+.text-muted {
+  color: $white !important;
+}
+
 .display-expiration-date {
   display: flex;
 }
