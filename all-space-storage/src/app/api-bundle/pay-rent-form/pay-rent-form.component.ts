@@ -17,7 +17,7 @@ import { MakeAReservationService } from '../services/make-a-reservation.service'
 import { MoveInService } from '../services/moveIn.service';
 import { AddTenantService } from '../services/add-tenant.service';
 import { environment } from '../../../environments/environment';
-
+import { objSIMSetting } from '../../data/configuration';
 @Component({
   selector: 'app-pay-rent-form',
   templateUrl: './pay-rent-form.component.html',
@@ -59,6 +59,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   surcharge: number;
   unitTypeNotAvailability: boolean;
   showLoader = false;
+
+  blnAllowPartialPayments: boolean;
+
 
   marked = false;
   signUp = {};
@@ -226,6 +229,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     if (!!localStorage.getItem('paymentTab')) {
       this.paymentTab = localStorage.getItem('paymentTab');
     }
+    this.blnAllowPartialPayments = objSIMSetting.objPaymentSetting.blnAllowPartialPayments;
 
     this.dataSharingService.initMyNavLinks('payRentForm', window.location.pathname);
     this.myNavLinks = this.dataSharingService.getMyNavLinks('payRentForm');

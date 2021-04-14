@@ -59,6 +59,9 @@
     </div>
     </div>
     <div class="col-lg-4 rent-example p-4" >
+        <p *ngIf="id == 4" ><strong>
+        Please Note: If you pay off a delinquent balance after-hours, your gate code will not update until after business hours resume on the next business day.
+    </strong></p>
         <h3>How to Login</h3>
         <div *ngFor="let loginDetail of loginDetail">
           <p><b>Username: </b>&nbsp;{{loginDetail.userName}}<br>

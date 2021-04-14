@@ -50,28 +50,31 @@
               <label>Amount*</label>
               <div>
                 <label>&nbsp;
-                  <input type="radio" [value]="balance" id="1" (change)="handleChange($event)"  name="radio-btn" [checked]="balance > 0">
+                  <input type="radio" [value]="balance" id="1" (change)="handleChange($event)"  name="radio-btn" [checked]="balance > 0 || !blnAllowPartialPayments">
                   <span class="loader" *ngIf="balance == null"></span>
-                  <!-- *ngIf="balance == null" -->
-                  <span>Balance Due</span> &nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance}}) </span>
-                  <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance}}</ng-template>
-                </label><br/>
-  
-                <label>&nbsp;
-                  <input type="radio" [value]="otherValue" id="2" (change)="handleChange($event)"  name="radio-btn" [checked]="balance <= 0">
-                    <span>Other Amount</span>
-                </label>
-                &nbsp;
-                <span *ngIf="showInput == true ">
-                  <input type="number"  name="radio-btn" [value]="otherValue" (keyup)="onKeyUp($event)">
-                </span>
+                <!-- *ngIf="balance == null" -->
+                <span>Balance Due</span>&nbsp; <span class="custom-balance-width" *ngIf="balance < 0 ; else other"> (${{displayBalance}}) </span>
+                <ng-template #other ><span *ngIf="balance >= 0">$</span>{{displayBalance}}</ng-template>
+              </label><br/>
+
+              <div *ngIf="blnAllowPartialPayments">
+              <label >&nbsp;
+                <input type="radio" [value]="otherValue" id="2" (change)="handleChange($event)"  name="radio-btn" [checked]="balance <= 0">
+                  <span>Other Amount</span>
+              </label>
+              &nbsp;
+
+              <span *ngIf="showInput == true ">
+                <input type="number"  name="radio-btn" [value]="otherValue" (keyup)="onKeyUp($event)">
+              </span>
               </div>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <span class="modal-custom-style modal-position">
-                  <!-- Button trigger modal -->
-                <button type="button" class="btn  btn-link ml-4" data-toggle="modal" data-target="#exampleModalLong">
-                  Balance Detail
-                </button>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="modal-custom-style modal-position">
+                <!-- Button trigger modal -->
+              <button type="button" class="btn  btn-link ml-4" data-toggle="modal" data-target="#exampleModalLong">
+                Balance Detail
+              </button>
     
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLsongTitle" aria-hidden="true">
