@@ -57,7 +57,6 @@ table {
     }
     tr {
       td {
-
         button {
           font-size: 0.8rem;
           min-width: 120px;
@@ -89,8 +88,12 @@ table {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 // try to use div
@@ -141,7 +144,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 767px)  and (min-width: 381px) {
+@media only screen and (max-width: 767px) and (min-width: 381px) {
   .buttons {
     .btn {
       min-width: 150px;
@@ -160,8 +163,6 @@ p {
     min-width: 150px;
     margin-right: auto;
   }
-  
-  
 }
 
 @media only screen and (max-width: 380px) {
@@ -176,5 +177,4 @@ p {
   .othercasebutton {
     min-width: auto;
   }
- 
 }
