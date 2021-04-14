@@ -13,9 +13,9 @@ export const contact = [
     },
     {
         id: 2,
-        redirect: 'mailto:spencerhts@yahoo.com',
+        redirect: 'mailto:spencerhts@yahoo.com, Bella@hammertimesports.net',
         label: 'Email:',
-        data: 'spencerhts@yahoo.com',
+        data: 'spencerhts@yahoo.com, Bella@hammertimesports.net',
         class: 'fas fa-envelope mr-2 iconColor',
     },
     {
