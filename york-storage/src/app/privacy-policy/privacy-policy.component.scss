@@ -1,0 +1,30 @@
+@import '../../styles.scss';
+
+.bg-light {
+  background-color: $light;
+  padding: 50px;
+}
+
+.privacy-policy {
+  padding-top: 140px;
+
+  .note {
+    font-weight: 800;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+    .bg-light {
+      padding: 16px;
+  }
+}
