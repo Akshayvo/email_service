@@ -48,9 +48,9 @@ export const aboutUs = [
     },
     {
         p: `Our facility is built from the ground up with all modern self storage conveniences needed to make your next
-        storage project a breeze. When you rent from Cazenovia self storage, you’ll have access to your units, boat, or
-        recreational vehicle 24 hours a day 7 days a week. Our website now offers contactless online rentals and reservations
-        plus online payments for 24-hour service! `,
+        storage project a breeze. When you rent from Cazenovia self storage, you’ll have access to your units, boat, or 
+        recreational vehicle 24 hours a day 7 days a week. Our website now offers contactless online rentals and online
+        payments for 24-hour service!`,
     },
     {
         p: `As Cazenovia’s self storage experts, we understand that conveniences aren’t the only aspect of your storage
