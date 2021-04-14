@@ -32,8 +32,7 @@ export const aboutUs = [
     }
 ];
 
-export const gettingStarted = `Are you ready to make some extra room at home or expand your business inventory
-and supplies storage? Click below to reserve your unit or call (719) 966-2240 today!`;
+export const gettingStarted = `Are you ready to make some extra room at home or expand your business inventory and supplies storage? Check out our rates at the link below, then call (719) 966-2240 to learn more!`;
 
 export const feature = [
     {
