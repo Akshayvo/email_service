@@ -7,8 +7,8 @@ import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
 import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6, } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPageLocation1,
-   twitterPayRentPageLocation1  } from '../../data/script';
+import { ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3,ogPayRentPageLocation4,
+   twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4  } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -126,6 +126,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchContactDetail() {
+    console.log(this.router.url)
     if (this.router.url.includes('evanston-ave')) {
       this.id = 1;
       this.name = 'Boxer Storage - Evanston Ave  Location';
@@ -133,6 +134,29 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
     } 
+
+    else if (this.router.url.includes('howard-city')) {
+      this.id = 2;
+      this.name = 'Boxer Storage - Howard City Location';
+      this.contact = contactsLocation2;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
+    }
+
+     else if (this.router.url.includes('ionia')) {
+      this.id = 3;
+      this.name = 'Boxer Storage - Ionia Location';
+      this.contact = contactsLocation3;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
+    }
+     else if (this.router.url.includes('alpine')) {
+      this.id = 3;
+      this.name = 'Boxer Storage - Alpine Location';
+      this.contact = contactsLocation4;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
+    }
     // else  if (this.router.url.includes('silverhill')) {
     //   this.id = 2;
     //   this.name = 'Storage Plus of Baldwin County - Silverhill Location';
@@ -178,6 +202,15 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (this.router.url.includes('evanston-ave')) {
       this.og = ogPayRentPageLocation1;
     }
+    else if (this.router.url.includes('howard-city')) {
+      this.og = ogPayRentPageLocation2;
+    }
+    else if (this.router.url.includes('ionia')) {
+      this.og = ogPayRentPageLocation3;
+    }
+    else if (this.router.url.includes('alpine')) {
+      this.og = ogPayRentPageLocation4;
+    }
     //  else  if (this.router.url.includes('silverhill')) {
     //   this.og = ogPayRentPageLocation2;
     // } else if (this.router.url.includes('barnwell')) {
@@ -194,6 +227,15 @@ export class LoginComponent implements OnInit, OnDestroy {
 public fetchTwitter() {
   if (this.router.url.includes('evanston-ave')) {
     this.twitter = twitterPayRentPageLocation1;
+  }
+  else if (this.router.url.includes('howard-city')) {
+    this.twitter = twitterPayRentPageLocation2;
+  }
+  else if (this.router.url.includes('ionia')) {
+    this.twitter = twitterPayRentPageLocation3;
+  }
+  else if (this.router.url.includes('alpine')) {
+    this.twitter = twitterPayRentPageLocation4;
   }
   //  else if (this.router.url.includes('silverhill')) {
   //     this.twitter = twitterPayRentPageLocation2;

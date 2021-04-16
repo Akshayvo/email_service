@@ -54,6 +54,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    console.log(this.dataSharingService.LstUnitTypes);
     this.strConfirmation = this.dataSharingService.strConfirmation;
     this.strAccessCode = this.dataSharingService.strAccessCode;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;

@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsLocation1, hoursLocation1, accessHoursLocation1,
+import { contactsLocation1, hoursLocation1, accessHoursLocation1,accessHoursLocation2,accessHoursLocation3,accessHoursLocation4,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
           hoursLocation5, contactsLocation5,
@@ -10,10 +10,12 @@ import { contactsLocation1, hoursLocation1, accessHoursLocation1,
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1,
-  twitterContactPage, twitterContactPageLocation1, } from '../data/script';
+import { contactPageLocation1Script, contactPageLocation2Script,contactPageLocation3Script,contactPageLocation4Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2,ogContactPageLocation3,ogContactPageLocation4,
+  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2,twitterContactPageLocation3,twitterContactPageLocation4 } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
+import { environment } from '../../environments/environment';
+
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -98,12 +100,32 @@ export class ContactUsComponent implements OnInit {
   get f() { return this.contactForm.controls; }
 
   public fetchScript() {
+      if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
     this.script = contactPageLocation1Script;
+      }
+      else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {
+    this.script = contactPageLocation2Script;
+      }
+      else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+    this.script = contactPageLocation3Script;
+      }
+      else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
+    this.script = contactPageLocation4Script;
+      }
   }
 
   public fetchOg() {
     if (this.router.url.includes('evanston-ave')) {
       this.og = ogContactPageLocation1;
+    } 
+    else if (this.router.url.includes('howard-city')) {
+      this.og = ogContactPageLocation2;
+    } 
+    else if (this.router.url.includes('ionia')) {
+      this.og = ogContactPageLocation3;
+    } 
+    else if (this.router.url.includes('alpine')) {
+      this.og = ogContactPageLocation4;
     } 
     // else if (this.router.url.includes('silverhill')) {
     //   this.og = ogContactPageLocation2;
@@ -126,6 +148,15 @@ public fetchMetaData() {
 public fetchTwitter() {
   if (this.router.url.includes('evanston-ave')) {
     this.twitter = twitterContactPageLocation1;
+  }
+  else if (this.router.url.includes('howard-city')) {
+    this.twitter = twitterContactPageLocation2;
+  }
+   else if (this.router.url.includes('ionia')) {
+    this.twitter = twitterContactPageLocation3;
+  }
+  else if (this.router.url.includes('alpine')) {
+    this.twitter = twitterContactPageLocation4;
   }
   //  else if (this.router.url.includes('silverhill')) {
   //   this.twitter = twitterContactPageLocation2;
@@ -175,6 +206,15 @@ public fetchTwitter() {
     if (this.router.url.includes('evanston-ave')) {
       this.fetchContactDetailsLocation1();
     }
+    else if (this.router.url.includes('howard-city')) {
+      this.fetchContactDetailsLocation2();
+    }
+    else if (this.router.url.includes('ionia')) {
+      this.fetchContactDetailsLocation3();
+    }
+     else if (this.router.url.includes('alpine')) {
+      this.fetchContactDetailsLocation4();
+    }
     //  else if (this.router.url.includes('silverhill')) {
     //   this.fetchContactDetailsLocation2();
     // } else if (this.router.url.includes('barnwell')) {
@@ -198,25 +238,27 @@ public fetchTwitter() {
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading = ``;
+    this.heading = `Boxer Storage - Howard City Location`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
+    this.access = accessHoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = ``;
     this.locationId = '3'
+    this.heading = `Boxer Storage - Ionia Location`;
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
+    this.access = accessHoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
-    this.heading = ``;
     this.locationId = '4'
+    this.heading = `Boxer Storage - Alpine Location`;
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
-  } 
-
+    this.access = accessHoursLocation4;
+  }
   public fetchContactDetailsLocation5() {
     this.heading = ``;
     this.locationId = '5'

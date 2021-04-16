@@ -124,7 +124,219 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
+        { path: `${environment.locationName}/howard-city`,
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          ]
+        },
+        { path: 'move-in', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
+    { path: `${environment.locationName}/ionia`,
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          ]
+        },
+        { path: 'move-in', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
+
+        { path: `${environment.locationName}/alpine`,
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          ]
+        },
+        { path: 'move-in', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
+
     { path: `${environment.locationName}/evanston-ave/view-rates`,
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          ]
+        },
+        { path: 'move-in', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
+        { path: `${environment.locationName}/howard-city/view-rates`,
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          ]
+        },
+        { path: 'move-in', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
+    { path: `${environment.locationName}/ionia/view-rates`,
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          ]
+        },
+        { path: 'move-in', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
+    { path: `${environment.locationName}/alpine/view-rates`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -345,6 +557,30 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
+  { path: 'review/howard-city', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+  { path: 'review/ionia', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
+    { path: 'review/alpine', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: ''
+    }
+  },
   { path: 'review/silverhill', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
@@ -391,6 +627,18 @@ export const apiRoutes = [
     path: 'pay-rent/evanston-ave', component: PayRentComponent,
     children: childroute
   },
+   {
+    path: 'pay-rent/howard-city', component: PayRentComponent,
+    children: childroute
+  },
+  {
+    path: 'pay-rent/ionia', component: PayRentComponent,
+    children: childroute
+  },
+   {
+    path: 'pay-rent/alpine', component: PayRentComponent,
+    children: childroute
+  },
   {
     path: 'pay-rent/silverhill', component: PayRentComponent,
     children: childroute
@@ -414,7 +662,9 @@ export const apiRoutes = [
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'contact-evanston-ave', component: ContactUsComponent},
-  { path: 'contact-silverhill', component: ContactUsComponent},
+  { path: 'contact-howard-city', component: ContactUsComponent},
+  { path: 'contact-ionia', component: ContactUsComponent},
+  { path: 'contact-alpine', component: ContactUsComponent},
   { path: 'contact-barnwell', component: ContactUsComponent},
   { path: 'contact-belforest', component: ContactUsComponent},
   { path: 'contact-fairhope', component: ContactUsComponent},

@@ -5,8 +5,8 @@ import { tabs } from '../../data/tab';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
 import { Meta } from '@angular/platform-browser';
-import { ogPayRentPage, ogPayRentPageLocation1, 
-   twitterPayRentPage, twitterPayRentPageLocation1,  } from '../../data/script';
+import { ogPayRentPage, ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3,ogPayRentPageLocation4,
+   twitterPayRentPage, twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4  } from '../../data/script';
 @Component({
   selector: 'app-pay-rent',
   templateUrl: './pay-rent.component.html',
@@ -48,6 +48,15 @@ export class PayRentComponent implements OnInit {
     if (this.router.url.includes('evanston-ave')) {
       this.name = ' Evanston Ave Location';
   }
+    else if (this.router.url.includes('howard-city')) {
+      this.name = ' Howard City Location';
+  }
+  else if (this.router.url.includes('ionia')) {
+      this.name = ' Ionia Location';
+  }
+  else if (this.router.url.includes('alpine')) {
+      this.name = ' Alpine Location';
+  }
   //  else if (this.router.url.includes('silverhill')) {
   //   this.name = ' Silverhill Location';
   // } else if (this.router.url.includes('barnwell')) {
@@ -75,6 +84,15 @@ export class PayRentComponent implements OnInit {
     if (this.router.url.includes('evanston-ave')) {
       this.og = ogPayRentPageLocation1;
     }
+    else if (this.router.url.includes('howard-city')) {
+      this.og = ogPayRentPageLocation2;
+    }
+    else if (this.router.url.includes('ionia')) {
+      this.og = ogPayRentPageLocation3;
+    }
+    else if (this.router.url.includes('alpine')) {
+      this.og = ogPayRentPageLocation4;
+    }
     //  else if (this.router.url.includes('silverhill')) {
     //   this.og = ogPayRentPageLocation2;
     // } else if (this.router.url.includes('barnwell')) {
@@ -91,6 +109,15 @@ export class PayRentComponent implements OnInit {
 public fetchTwitter() {
   if (this.router.url.includes('evanston-ave')) {
     this.twitter = twitterPayRentPageLocation1;
+  }
+  else if (this.router.url.includes('howard-city')) {
+    this.twitter = twitterPayRentPageLocation2;
+  }
+  else if (this.router.url.includes('ionia')) {
+    this.twitter = twitterPayRentPageLocation3;
+  }
+   else if (this.router.url.includes('alpine')) {
+    this.twitter = twitterPayRentPageLocation4;
   }
   //  else if (this.router.url.includes('silverhill')) {
   //   this.twitter = twitterPayRentPageLocation2;

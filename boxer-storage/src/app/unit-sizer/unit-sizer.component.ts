@@ -32,6 +32,15 @@ export class UnitSizerComponent implements OnInit {
     if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
       this.fetchDetailsLocation1();
   } 
+     else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {
+      this.fetchDetailsLocation2();
+  } 
+     else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+      this.fetchDetailsLocation3();
+  }
+   else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
+      this.fetchDetailsLocation4();
+  }  
   // else if (this.router.url.includes('/location/silverhill')) {
   //   this.fetchDetailsLocation2();
   // } else if (this.router.url.includes('/location/barnwell')) {
@@ -53,26 +62,26 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public fetchDetailsLocation2() {
-    this.h2tag = 'Unit Sizer';
-    this.description = `Check out our unit sizing chart to make sure the unit you're looking at will hold the belongings you need to
-    store. Once you decide on the right unit for you, check our availability, then give our offices a call for more information!`;
     this.unitSizer = unitSizerLocation2;
+    this.h2tag = 'Unit Sizer';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+    out! Still have <br> questions? Call (231) 652-7853`;
+    
   }
 
   public fetchDetailsLocation3() {
     this.h2tag = 'Unit Sizer ';
     this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
+    out! Still have questions? Call (231) 652-7853`;
     this.unitSizer = unitSizerLocation3;
   }
 
-  public fetchDetailsLocation4() {
-    this.h2tag = 'Storage Unit Sizer ';
-    this.description = `Finding the right size is easy, below you will find some of the common storage units, by size and what
-    typically fits. TIP: remember to think 'cubic', do your items just need floor space or can they stack and fit together?
-    *Actual contents vary depending of the size of your belongings.`;
+    public fetchDetailsLocation4() {
+    this.h2tag = 'Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+    out! Still have questions? Call (616) 698-7090`;
     this.unitSizer = unitSizerLocation4;
-  } 
+  }
 
   public fetchDetailsLocation5() {
     this.h2tag = 'Storage Unit Sizer ';

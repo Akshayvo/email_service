@@ -7,6 +7,12 @@ export class DataSharingService {
 
   locationAPIKey = {
     loc1: 'dzJ0OFc3SjgqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 28787 evanston-ave
+    //loc1: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',//testing
+    //loc2: 'dzJ0OFc3SjgqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+    //loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',//testing
+    loc2: 'dzJ0OFc2SjIqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28629 howard-city,
+    loc3: 'dzJ0OFc0SjEqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28410 ionia
+    loc4: 'dzJ0OFczSjIqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28327 alpine
   };
 
 //  locationAPIKey = {                                                     // demo north

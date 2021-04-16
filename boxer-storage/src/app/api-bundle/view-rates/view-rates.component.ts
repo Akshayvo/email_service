@@ -30,6 +30,18 @@ export class ViewRatesComponent implements OnInit {
       this.id = 1;
       this.heading = headingLocation1;
     } 
+    else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {
+      this.id = 2;
+      this.heading = headingLocation2;
+    } 
+    else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+      this.id = 3;
+      this.heading = headingLocation3;
+    } 
+     else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
+      this.id = 4;
+      this.heading = headingLocation4;
+    } 
     // else if (this.router.url.includes('/location/silverhill')) {
     //   this.id = 2;
     //   this.heading = headingLocation2;

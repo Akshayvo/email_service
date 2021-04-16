@@ -1,6 +1,6 @@
 export const privacyPolicy = [
   {
-    content: `This privacy notice discloses the privacy practices for "".
+    content: `This privacy notice discloses the privacy practices for "https://www.boxerstorage.com/".
     This privacy notice applies solely to information collected by this website. It will notify you of the following:`,
     list: [
         {

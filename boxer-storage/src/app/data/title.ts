@@ -4,14 +4,14 @@ export const homePageContent = `Boxer Storage offers convenient 24/7 access to y
 export const location1PageTitle = `Evanston Ave Location | Boxer Storage`;
 export const location1PageContent = `Take a moment to review our current availability and rates, then reserve your unit or rent online in a matter of minutes!`;
 
-export const location2PageTitle = ``;
-export const location2PageContent = ``;
+export const location2PageTitle = `Howard City Location | Boxer Storage`;
+export const location2PageContent = `Take a moment to review our current availability and rates, then reserve your unit or rent online in a matter of minutes!`;
 
-export const location3PageTitle = `Barnwell Location | Storage Plus of Baldwin County`;
+export const location3PageTitle = `Ionia Location | Boxer Storage`;
 export const location3PageContent = `Our Barnwell location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
 
-export const location4PageTitle = `Belforest Location | Storage Plus of Baldwin County`;
-export const location4PageContent = `Our Belforest location offers a number of affordable regular and climate controlled self storage units, perfect for any self storage project!`;
+export const location4PageTitle = `Alpine Location | Boxer Storage`;
+export const location4PageContent = `Review our current availability and rates, then reserve your unit or rent online! Have questions? Give our office a call!`;
 
 export const location5PageTitle = `Fairhope Location  | Storage Plus of Baldwin County`;
 export const location5PageContent = `Our Fairhope location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
@@ -51,14 +51,14 @@ export const faqPagecontent = `Have questions about the services our 12 self sto
 export const location1PayrentPageTitle = `Pay Rent | Boxer Storage`;
 export const location1PayrentPageContent = `Follow the simple instructions on this page, and you'll have 24 hour access to your account for online payments.`;
 
-export const location2PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location2PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location2PayrentPageTitle = `Pay Rent | Boxer Storage`;
+export const location2PayrentPageContent = `Follow the simple instructions on this page, and you'll have 24 hour access to your account for online payments.`;
 
-export const location3PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location3PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location3PayrentPageTitle = `Pay Rent | Boxer Storage`;
+export const location3PayrentPageContent = `Follow the simple instructions on this page, and you'll have 24 hour access to your account for online payments.`;
 
-export const location4PayrentPageTitle = `Belfast Location Pay Rent | Storage Plus of Baldwin County`;
-export const location4PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location4PayrentPageTitle = `Pay Rent | Boxer Storage`;
+export const location4PayrentPageContent = `Follow the simple instructions on this page, and you'll have 24 hour access to your account for online payments.`;
 
 export const location5PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
 export const location5PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
@@ -71,14 +71,14 @@ export const location6PayrentPageContent = `Follow the instructions on this page
 export const location1ContactPageTitle = `Contact Us | Boxer Storage`;
 export const location1ContactPageContent = `Fill our the form or use our contact form to reach out to our friendly and knowledgable staff.`;
 
-export const location2ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location2ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+export const location2ContactPageTitle = `Contact Us | Boxer Storage`;
+export const location2ContactPageContent = `Fill our the form or use our contact form to reach out to our friendly and knowledgable staff.`;
 
-export const location3ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location3ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+export const location3ContactPageTitle = `Contact Us | Boxer Storage`;
+export const location3ContactPageContent = `Fill our the form or use our contact form to reach out to our friendly and knowledgable staff.`;
 
-export const location4ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location4ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+export const location4ContactPageTitle = `Contact Us | Boxer Storage`;
+export const location4ContactPageContent = `Fill our the form or use our contact form to reach out to our friendly and knowledgable staff.`;
 
 export const location5ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
 export const location5ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;

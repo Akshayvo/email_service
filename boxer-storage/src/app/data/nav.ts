@@ -16,6 +16,21 @@ export const navLinks = [
                 label: 'Evanston Ave Location',
                 path: `${environment.locationName}/evanston-ave`,
               },
+               {
+                id: '2',
+                label: 'Howard City Location',
+                path: `${environment.locationName}/howard-city`,
+              },
+              {
+                id: '3',
+                label: 'Ionia Location',
+                path: `${environment.locationName}/ionia`,
+              },
+               {
+                id: '4',
+                label: 'Alpine Location',
+                path: `${environment.locationName}/alpine`,
+              },
         ]
     },
     {
@@ -27,6 +42,21 @@ export const navLinks = [
                 id: '1',
                 label: 'Evanston Ave Location',
                 path: `${environment.locationName}/evanston-ave/view-rates`,
+              },
+                {
+                id: '2',
+                label: 'Howard City Location',
+                path: `${environment.locationName}/howard-city/view-rates`,
+              },
+              {
+                id: '3',
+                label: 'Ionia Location',
+                path: `${environment.locationName}/ionia/view-rates`,
+              },
+                 {
+                id: '4',
+                label: 'Alpine Location',
+                path: `${environment.locationName}/alpine/view-rates`,
               },
         ]
     },

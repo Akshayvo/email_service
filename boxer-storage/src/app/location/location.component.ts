@@ -1,14 +1,14 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { accessHoursLocation1, contactsLocation1, hoursLocation1,
+import { accessHoursLocation1,accessHoursLocation2,accessHoursLocation3, accessHoursLocation4, contactsLocation1, contactsLocation2, contactsLocation3,contactsLocation4, hoursLocation1, hoursLocation2,hoursLocation3,hoursLocation4
           } from '../data/contact';
-import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, heading4, heading5, heading6  } from '../data/location';
+import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, tabs4, heading4, heading5, heading6  } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
-import { Location1Script,
-  ogLocation1, twitterLocation1,
+import { Location1Script,Location2Script,Location3Script,Location4Script,
+  ogLocation1,ogLocation2,ogLocation3,ogLocation4, twitterLocation1,twitterLocation2,twitterLocation3,twitterLocation4
    } from '../data/script';
 import { featuresHead, featuresList, location1FeaturesHead, location2FeaturesHead,
   location3FeaturesHead, location4FeaturesHead,location5FeaturesHead,location6FeaturesHead } from '../data/home';
@@ -119,55 +119,83 @@ export class LocationComponent implements OnInit {
               })
             });
           }
-//      else if (this.router.url.includes('/location/silverhill')) {
-//            this.meta.addTag({
-//              name: 'description',
-//              content: `${this.location2PageContent}`
-//     });
-//     this.titleService.setTitle(`${this.location2PageTitle}`);
-//            this.locationName = `Storage Plus of Baldwin County - Silverhill Location`;
-//            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-//            this.dataSharingService.locationName = this.locationName;
-//            this.script = Location2Script;
-//            this.loadScript();
-//            this.og.forEach(element => {
-//             this.meta.addTag({
-//               property: element.property,
-//               content: element.content
-//             })
-//           });
-      
-//           this.twitter.forEach(element => {
-//             this.meta.addTag({
-//               name: element.name,
-//               content: element.content
-//             })
-//           });
-//       } else if (this.router.url.includes('/location/barnwell')) {
-//         this.meta.addTag({
-//           name: 'description',
-//           content: `${this.location3PageContent}`
-//     });
-//     this.titleService.setTitle(`${this.location3PageTitle}`);
-//         this.locationName = `Storage Plus of Baldwin County - Barnwell Location`;
-//         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
-//         this.dataSharingService.locationName = this.locationName;
-//         this.script = Location3Script;
-//         this.loadScript();
-//         this.og.forEach(element => {
-//           this.meta.addTag({
-//             property: element.property,
-//             content: element.content
-//           })
-//         });
-    
-//         this.twitter.forEach(element => {
-//           this.meta.addTag({
-//             name: element.name,
-//             content: element.content
-//           })
-//         });
-//    } else if (this.router.url.includes('/location/belforest')) {
+      else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {
+            this.meta.addTag({
+              name: 'description',
+              content: `${this.location2PageContent}`
+    });
+    this.titleService.setTitle(`${this.location2PageTitle}`);
+            this.locationName = `Boxer Storage - Howard City Location`;
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+            this.dataSharingService.locationName = this.locationName;
+            this.script = Location2Script;
+            this.loadScript();
+            this.og.forEach(element => {
+              this.meta.addTag({
+                property: element.property,
+                content: element.content
+              })
+            });
+        
+            this.twitter.forEach(element => {
+              this.meta.addTag({
+                name: element.name,
+                content: element.content
+              })
+            });
+          }
+
+          else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+            this.meta.addTag({
+              name: 'description',
+              content: `${this.location3PageContent}`
+    });
+    this.titleService.setTitle(`${this.location3PageTitle}`);
+            this.locationName = `Boxer Storage - Ionia Location`;
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
+            this.dataSharingService.locationName = this.locationName;
+            this.script = Location3Script;
+            this.loadScript();
+            this.og.forEach(element => {
+              this.meta.addTag({
+                property: element.property,
+                content: element.content
+              })
+            });
+        
+            this.twitter.forEach(element => {
+              this.meta.addTag({
+                name: element.name,
+                content: element.content
+              })
+            });
+          }
+  else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
+            this.meta.addTag({
+              name: 'description',
+              content: `${this.location4PageContent}`
+    });
+    this.titleService.setTitle(`${this.location4PageTitle}`);
+            this.locationName = `Boxer Storage - Alpine Location`;
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
+            this.dataSharingService.locationName = this.locationName;
+            this.script = Location4Script;
+            this.loadScript();
+            this.og.forEach(element => {
+              this.meta.addTag({
+                property: element.property,
+                content: element.content
+              })
+            });
+        
+            this.twitter.forEach(element => {
+              this.meta.addTag({
+                name: element.name,
+                content: element.content
+              })
+            });
+          }
+//else if (this.router.url.includes('/location/belforest')) {
 //     this.meta.addTag({
 //       name: 'description',
 //       content: `${this.location4PageContent}`
@@ -287,9 +315,16 @@ export class LocationComponent implements OnInit {
     if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
       this.og = ogLocation1;
   } 
-  // else if (this.router.url.includes('/location/silverhill')) {
-  //   this.og = ogLocation2;
-  // } else if (this.router.url.includes('/location/barnwell')) {
+  else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {
+      this.og = ogLocation2;
+  } 
+  else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+      this.og = ogLocation3;
+  } 
+  else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
+      this.og = ogLocation4;
+  } 
+  //else if (this.router.url.includes('/location/barnwell')) {
   //   this.og = ogLocation3;
   // } else if (this.router.url.includes('/location/belforest')) {
   //   this.og = ogLocation4;
@@ -304,9 +339,16 @@ export class LocationComponent implements OnInit {
     if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
       this.twitter = twitterLocation1;
   } 
-  // else if (this.router.url.includes('/location/silverhill')) {
-  //   this.twitter = twitterLocation2;
-  // } else if (this.router.url.includes('/location/barnwell')) {
+   else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {
+      this.twitter = twitterLocation2;
+  } 
+     else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+      this.twitter = twitterLocation3;
+  } 
+     else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
+      this.twitter = twitterLocation4;
+  } 
+  //else if (this.router.url.includes('/location/barnwell')) {
   //   this.twitter = twitterLocation3;
   // } else if (this.router.url.includes('/location/belforest')) {
   //   this.twitter = twitterLocation4;
@@ -318,12 +360,20 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
+    console.log(this.router.url)
     if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
         this.fetchDetailsLocation1();
     } 
-    // else if (this.router.url.includes('/location/silverhill')) {
-    //   this.fetchDetailsLocation2();
-    // } else if (this.router.url.includes('/location/barnwell')) {
+  else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {
+        this.fetchDetailsLocation2();
+    } 
+    else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+        this.fetchDetailsLocation3();
+    } 
+     else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
+        this.fetchDetailsLocation4();
+    } 
+    // else if (this.router.url.includes('/location/barnwell')) {
     //   this.fetchDetailsLocation3();
     // } else if (this.router.url.includes('/location/belforest')) {
     //   this.fetchDetailsLocation4();
@@ -339,6 +389,18 @@ export class LocationComponent implements OnInit {
     this.router.navigate([`${environment.locationName}/evanston-ave/reserve-unit`],
           );
   } 
+  else if ( this.locationId === 2 ) {
+    this.router.navigate([`${environment.locationName}/howard-city/reserve-unit`],
+          );
+  }
+   else if ( this.locationId === 3 ) {
+    this.router.navigate([`${environment.locationName}/ionia/reserve-unit`],
+          );
+  }
+   else if ( this.locationId === 4 ) {
+    this.router.navigate([`${environment.locationName}/alpine/reserve-unit`],
+          );
+  }
   // else if ( this.locationId === 2 ) {
   //   this.router.navigate(['/location/silverhill/reserve-unit'],
   //         );
@@ -366,11 +428,44 @@ export class LocationComponent implements OnInit {
       this.router.navigate(['pay-remt']);
     }
   } 
+   else if ( this.locationId === 2 ) {
+    if (environment.signUpForAuotoPay === 1) {
+      this.router.navigate([`pay-rent/howard-city/rent-sub/login`],
+      );
+    } else {
+      this.router.navigate(['pay-remt']);
+    }
+  } 
+   else if ( this.locationId === 3 ) {
+    if (environment.signUpForAuotoPay === 1) {
+      this.router.navigate([`pay-rent/ionia/rent-sub/login`],
+      );
+    } else {
+      this.router.navigate(['pay-remt']);
+    }
+  } 
+     else if ( this.locationId === 4 ) {
+    if (environment.signUpForAuotoPay === 1) {
+      this.router.navigate([`pay-rent/alpine/rent-sub/login`],
+      );
+    } else {
+      this.router.navigate(['pay-remt']);
+    }
+  } 
  }
 
  public navigateToContact() {
   if (this.router.url.includes('evanston-ave')) {
     this.router.navigate(['/contact-evanston-ave'])
+  }
+ else if (this.router.url.includes('howard-city')) {
+    this.router.navigate(['/contact-howard-city'])
+  }
+   else if (this.router.url.includes('ionia')) {
+    this.router.navigate(['/contact-ionia'])
+  }
+  else if (this.router.url.includes('alpine')) {
+    this.router.navigate(['/contact-alpine'])
   }
  }
 
@@ -384,14 +479,36 @@ export class LocationComponent implements OnInit {
       this.features = location1FeaturesHead;
     }
 
-  //  public fetchDetailsLocation2() {
-  //    this.name = heading2;
-  //    this.locationId = 2;
-  //    this.contacts = contactsLocation2;
-  //    this.hours = hoursLocation2;
-  //    this.tabs = tabs;
-  //    this.features = location2FeaturesHead;
-  //  }
+  public fetchDetailsLocation2() {
+      this.name = heading2;
+      this.locationId = 2;
+      this.contacts = contactsLocation2;
+      this.hours = hoursLocation2;
+      this.access = accessHoursLocation2;
+      this.tabs = tabs2;
+      this.features = location2FeaturesHead;
+    }
+
+     public fetchDetailsLocation3() {
+      this.name = heading3;
+      this.locationId = 3;
+      this.contacts = contactsLocation3;
+      this.hours = hoursLocation3;
+      this.access = accessHoursLocation3;
+      this.tabs = tabs3;
+      this.features = location3FeaturesHead;
+    }
+
+      public fetchDetailsLocation4() {
+      this.name = heading4;
+      this.locationId = 4;
+      this.contacts = contactsLocation4;
+      this.hours = hoursLocation4;
+      this.access = accessHoursLocation4;
+      this.tabs = tabs4;
+      this.features = location4FeaturesHead;
+    }
+
 
   //  public fetchDetailsLocation3() {
   //   this.name = heading3;

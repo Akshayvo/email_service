@@ -10,7 +10,7 @@ export const environment = {
   alternateType: { moveIn: true, reserve: false }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
-  errorsMails: ['sanghmitra.v@codeparva.in'],
+  errorsMails: ['balasubramanian.k@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   appId: 'Boxer Storage - Testing',

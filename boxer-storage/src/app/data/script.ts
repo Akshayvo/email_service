@@ -61,9 +61,9 @@ import { contactsLocation1, hoursLocation1,
 
  
 const contactIndex1 = contactsLocation1.findIndex(x => x.label === 'Phone: ');
-// const contactIndex2 = contactsLocation2.findIndex(x => x.label === 'Phone: ');
-// const contactIndex3 = contactsLocation3.findIndex(x => x.label === 'Phone: ');
-// const contactIndex4 = contactsLocation4.findIndex(x => x.label === 'Phone: ');
+const contactIndex2 = contactsLocation2.findIndex(x => x.label === 'Phone: ');
+const contactIndex3 = contactsLocation3.findIndex(x => x.label === 'Phone: ');
+const contactIndex4 = contactsLocation4.findIndex(x => x.label === 'Phone: ');
 // const contactIndex5 = contactsLocation5.findIndex(x => x.label === 'Phone: ');
 // const contactIndex6 = contactsLocation6.findIndex(x => x.label === 'Phone: ');
 
@@ -75,23 +75,26 @@ const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
 const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
 export const nameLocation1 = `Boxer Storage - Evanston Ave  Location`;
-export const nameLocation2 = ``;
-export const nameLocation3 = ``;
-export const nameLocation4 = ``;
+export const nameLocation2 = `Boxer Storage - Howard City Location`;
+export const nameLocation3 = `Boxer Storage - Ionia Location`;
+export const nameLocation4 = `Boxer Storage - Alpine Location`;
 export const nameLocation5 = ``;
 export const nameLocation6 = ``;
 
 
 export const location1 = `evanston-ave`;
-export const location2 = ``;
-export const location3 = ``;
-export const location4 = ``;
+export const location2 = `howard-city`;
+export const location3 = `ionia`;
+export const location4 = `alpine`;
 export const location5 = ``;
 export const location6 = ``;
 
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/evanston-ave/storage-units`;
-// export const urlLocation2 = ``;
+export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/howard-city/storage-units`;
+export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/ionia/storage-units`;
+export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/alpine/storage-units`;
+
 // export const urlLocation3 = ``;
 // export const urlLocation4 = ``;
 // export const urlLocation5 = ``;
@@ -100,6 +103,12 @@ export const urlLocation1 = `${environment.websiteUrl}/${environment.locationNam
 
 export const description1 = `Boxer Storage - Evanston Location is one of our 12 conveniently located self storage
 facilities. We offer a number of self storage unit with friendly customer service at very affordable rates!`;
+
+export const description2 = `Boxer Storage - Howard City Location is one of our 12 conveniently located self storage facilities. We offer a number of self storage unit with friendly customer service at very affordable rates!`;
+
+export const description3 = `Boxer Storage - Ionia Location is one of our 12 conveniently located storage facilities. We offer a number of self storage unit with excellent customer service.`;
+
+export const description4 = `Boxer Storage - Alpine Location is one of our 12 conveniently located self storage facilities. We offer a number of self storage unit with friendly customer service at very affordable rates!`;
 
 // export const description2 = `Our Silverhill location has a number of regular and climate controlled unit types `;
 
@@ -119,9 +128,9 @@ facilities. We offer a number of self storage unit with friendly customer servic
 //                              on your schedule a breeze!`;
 
 export const maplocation1 = 'https://goo.gl/maps/Aey9AuYbspcu5HgC9';
-export const maplocation2 = ``;
-export const maplocation3 = ``;
-export const maplocation4 = ``;
+export const maplocation2 = `https://goo.gl/maps/V9mQLpHMRbH1CtK4A`;
+export const maplocation3 = `https://goo.gl/maps/SLhfo6WxuVcRxioU8`;
+export const maplocation4 = `https://goo.gl/maps/B8hbVLs5uHNGABTH6`;
 export const maplocation5 = ``;
 export const maplocation6 = ``;
 
@@ -135,32 +144,34 @@ export const addressLoaction1 = {
       'addressCountry': 'United state'
 };
 
-// export const addressLoaction2 = {
-//   '@type': 'PostalAddress',
-//   'streetAddress': '15410 AL-104',
-//   'addressLocality': 'Silverhill',
-//   'addressRegion': 'AL',
-//   'postalCode': '36576',
-//   'addressCountry': 'United state'
-// }
+export const addressLoaction2 = {
+  '@type': 'PostalAddress',
+  'streetAddress': '5607 Henkel Rd',
+  'addressLocality': 'Howard City',
+  'addressRegion': 'MI',
+  'postalCode': '49329',
+  'addressCountry': 'United state'
+}
 
-// export const addressLoaction3 = {
-//   '@type': 'PostalAddress',
-//   'streetAddress': '8089A US-98',
-//   'addressLocality': 'Fairhope',
-//   'addressRegion': 'AL',
-//   'postalCode': '36532',
-//   'addressCountry': 'United state'
-// } 
+export const addressLoaction3 = {
+  '@type': 'PostalAddress',
+  'streetAddress': '4062 S State Rd',
+  'addressLocality': 'Ionia',
+  'addressRegion': 'MI',
+  'postalCode': '48846',
+  'addressCountry': 'United state'
+}
 
-// export const addressLoaction4 = {
-//   '@type': 'PostalAddress',
-//   'streetAddress': '11455 Co Rd 64',
-//   'addressLocality': 'Daphne',
-//   'addressRegion': 'AL',
-//   'postalCode': '36526',
-//   'addressCountry': 'United state'
-// }
+
+export const addressLoaction4 = {
+  '@type': 'PostalAddress',
+  'streetAddress': '6659 Alpine Ave NW',
+  'addressLocality': 'Comstock Park',
+  'addressRegion': 'MI',
+  'postalCode': '49321',
+  'addressCountry': 'United state'
+}
+
 
 // export const addressLoaction5 = {
 //   '@type': 'PostalAddress',
@@ -188,23 +199,25 @@ export const imageLocation1 = [
   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/boxer-storage-evanston-ave-43.jpg'
  ]
 
-//  export const imageLocation2 = [
-//       '',
-//       '',
-//       ''
-//  ]
+ export const imageLocation2 = [
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/boxer-storage-howard-city-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/boxer-storage-howard-city-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/boxer-storage-howard-city-43.jpg'
+ ]
 
-//  export const imageLocation3 = [
-//   '',
-//   '',
-//   ''
-//  ]
+ export const imageLocation3 = [
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/boxer-self-storage-ionia-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/boxer-self-storage-ionia-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/boxer-self-storage-ionia-43.jpg'
+ ]
 
-//  export const imageLocation4 =  [
-//   '',
-//   '',
-//   ''
-//  ]
+
+ export const imageLocation4 = [
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/boxer-storage-alpine-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/boxer-storage-alpine-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/boxer-storage-alpine-43.jpg'
+ ]
+
 
 //  export const imageLocation5 =  [
 //   '',
@@ -231,30 +244,42 @@ export const homePageScript = [
     'image' : imageLocation1,
     'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-storage-logo.jpg'
   }, 
-  // {
-  //   '@context' : 'http://schema.org',
-  //   '@type' : ['LocalBusiness', 'SelfStorage'],
-  //   'name' : nameLocation2,
-  //   'image' : imageLocation2,
-  //   'telephone': contactsLocation2[contactIndex2].data,
-  //   'email': contactsLocation2[emailIndex2].data,
-  //   'address': addressLoaction2,
-  //   'openingHours': [ ],
-  //   'priceRange': '$40 - $110',
-  //   'url' : urlLocation2,
-  // }, 
-  // {
-  //   '@context' : 'http://schema.org',
-  //   '@type' : ['LocalBusiness', 'SelfStorage'],
-  //   'name' : nameLocation3,
-  //   'image' : imageLocation3,
-  //   'telephone' : contactsLocation3[contactIndex3].data,
-  //   'email' : contactsLocation3[emailIndex3].data,
-  //   'address': addressLoaction3,
-  //   'priceRange': '$30 - $175',
-  //   'openingHours': [],
-  //   'url' : urlLocation3
-  // }, 
+  {
+    '@context': 'https://schema.org',
+    '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
+    'name': nameLocation2,
+    'url': urlLocation2,
+    'openingHours': ['Mo-Fr 08:00 - 18:00', 'Sa 08:00 - 14:00'],
+    'priceRange': '$30 - $110',
+    'address' : addressLoaction2,
+    'telephone': contactsLocation2[contactIndex2].data,
+    'image' : imageLocation2,
+    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-storage-logo.jpg'
+  }, 
+    {
+    '@context': 'https://schema.org',
+    '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
+    'name': nameLocation3,
+    'url': urlLocation3,
+    'openingHours': ['Mo-Fr 08:00 - 18:00', 'Sa 08:00 - 14:00'],
+    'priceRange': '$350 - $200',
+    'address' : addressLoaction3,
+    'telephone': contactsLocation3[contactIndex3].data,
+    'image' : imageLocation3,
+    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-storage-logo.jpg'
+  }, 
+    {
+    '@context': 'https://schema.org',
+    '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
+    'name': nameLocation4,
+    'url': urlLocation4,
+    'openingHours': ['Mo-Fr 08:00 - 18:00', 'Sa 08:00 - 14:00'],
+    'priceRange': '$30 - $80',
+    'address' : addressLoaction4,
+    'telephone': contactsLocation4[contactIndex4].data,
+    'image' : imageLocation4,
+    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-storage-logo.jpg'
+  }, 
   // {
   //   '@context' : 'http://schema.org',
   //   '@type' : ['LocalBusiness', 'SelfStorage'],
@@ -329,77 +354,112 @@ export const Location1Script = {
     'acceptsReservations': 'True'
 };
 
-// export const Location2Script = {
-//     '@context': 'https://schema.org',
-//     '@type': 'SelfStorage',
-//     'image': imageLocation2,
-//     '@id': environment.websiteUrl,
-//     'name': nameLocation2,
-//      'description': description2 || location2PageContent,
-//     'address': addressLoaction2,
-//    'aggregateRating': {
-//   '@type': 'AggregateRating',
-//   'ratingValue': '4.7',
-//   'bestRating': '5',
-//   'reviewCount': '12'
-// },
-//     'geo': {
-//       '@type': 'GeoCoordinates',
-//       'latitude': 30.5445247,
-//       'longitude': -87.7604384
-//     },
-//     'url': urlLocation2,
-//     'telephone': contactsLocation2[contactIndex2].data,
+export const Location2Script = {
+     '@context': 'https://schema.org',
+    '@type': 'SelfStorage',
+    'image': imageLocation2,
+    '@id': environment.websiteUrl,
+    'name': nameLocation2,
+     'description': description2 || location2PageContent,
+    'address': addressLoaction2,
+    'aggregateRating': {
+    '@type': 'AggregateRating',
+    'ratingValue': '2.0',
+    'bestRating': '5',
+    'reviewCount': '3'
+  },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': 43.3783538,
+      'longitude': -85.4730562,
+    },
+    'url': urlLocation2,
+    'telephone': contactsLocation2[contactIndex2].data,
 
-//     'priceRange': '$40 - $110',
-//     'openingHours': [ ],
-//     'currenciesAccepted': 'USD',
-//   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
-//      'areaServed': {
-//   '@type': 'State',
-//   'name': 'New York'
-//    },
-//    'hasMap': maplocation2,
+    'priceRange': '$30 - $110',
+    'openingHours': ['Mo-Fr 08:00 - 18:00', 'Sa 08:00 - 14:00'],
+    'currenciesAccepted': 'USD',
+  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
+     'areaServed': {
+  '@type': 'State',
+  'name': 'New York'
+   },
+   'hasMap': maplocation2,
 
-//     'acceptsReservations': 'True'
+    'acceptsReservations': 'True'
 
-// };
+};
+export const Location3Script = {
+     '@context': 'https://schema.org',
+    '@type': 'SelfStorage',
+    'image': imageLocation3,
+    '@id': environment.websiteUrl,
+    'name': nameLocation3,
+     'description': description3 || location3PageContent,
+    'address': addressLoaction3,
+    'aggregateRating': {
+    '@type': 'AggregateRating',
+    'ratingValue': '2.6',
+    'bestRating': '5',
+    'reviewCount': '9'
+  },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': 42.9281179,
+      'longitude': -85.0751504,
+    },
+    'url': urlLocation3,
+    'telephone': contactsLocation3[contactIndex3].data,
 
-// export const Location3Script = {
-//     '@context': 'https://schema.org',
-//     '@type': 'SelfStorage',
-//     'image': imageLocation3,
-//     '@id': environment.websiteUrl,
-//     'name': nameLocation3,
-//      'description': description3 || location3PageContent,
-//     'address': addressLoaction3,
-//    'aggregateRating': {
-//   '@type': 'AggregateRating',
-//   'ratingValue': '5',
-//   'bestRating': '5',
-//   'reviewCount': ''
-// },
-//     'geo': {
-//       '@type': 'GeoCoordinates',
-//       'latitude': 30.4222526,
-//       'longitude':  -87.8864467
-//     },
-//     'url': urlLocation3,
-//     'telephone': contactsLocation3[contactIndex3].data,
+    'priceRange': '$200 - $350',
+    'openingHours': ['Mo-Fr 08:00 - 18:00', 'Sa 08:00 - 14:00'],
+    'currenciesAccepted': 'USD',
+  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
+     'areaServed': {
+  '@type': 'State',
+  'name': 'New York'
+   },
+   'hasMap': maplocation3,
 
-//     'priceRange': '$30 - $175',
-//     'openingHours': [],
-//     'currenciesAccepted': 'USD',
-//   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
-//      'areaServed': {
-//   '@type': 'State',
-//   'name': 'New York'
-//    },
-// 'hasMap': maplocation3,
-//     'acceptsReservations': 'True'
+    'acceptsReservations': 'True'
 
+};
 
-// };
+export const Location4Script = {
+     '@context': 'https://schema.org',
+    '@type': 'SelfStorage',
+    'image': imageLocation4,
+    '@id': environment.websiteUrl,
+    'name': nameLocation4,
+     'description': description4 || location4PageContent,
+    'address': addressLoaction4,
+    'aggregateRating': {
+    '@type': 'AggregateRating',
+    'ratingValue': '',
+    'bestRating': '',
+    'reviewCount': ''
+  },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': 43.0839938,
+      'longitude': -85.6915751,
+    },
+    'url': urlLocation4,
+    'telephone': contactsLocation4[contactIndex4].data,
+
+    'priceRange': '$30 - $80',
+    'openingHours': ['Mo-Fr 08:00 - 18:00', 'Sa 08:00 - 14:00'],
+    'currenciesAccepted': 'USD',
+  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
+     'areaServed': {
+  '@type': 'State',
+  'name': 'New York'
+   },
+   'hasMap': maplocation4,
+
+    'acceptsReservations': 'True'
+
+};
 
 // export const Location4Script = {
 //     '@context': 'https://schema.org',
@@ -536,54 +596,81 @@ export const contactPageLocation1Script = {
 
 };
 
-// export const contactPageLocation2Script = {
-//     '@context': 'http://schema.org',
-//     '@type': 'Selfstorage',
-//     'name': nameLocation2,
-//     'address': addressLoaction2,
-//      'url': urlLocation2,
-//      'image': imageLocation2,
-//     'contactPoint': [{
-//       '@type': 'ContactPoint',
-//       'telephone':  contactsLocation2[contactIndex2].data,
-//       'contactType': 'reservations'
-//     }, {
-//       '@type': 'ContactPoint',
-//       'telephone':  contactsLocation2[contactIndex2].data,
-//       'contactType': 'customer service'
-//     }],
-//     'email': contactsLocation2[emailIndex2].data,
-//     'sameAs': [
-//       '',
-//       '',
-//       ''
-//     ]
-// };
+export const contactPageLocation2Script = {
+    '@context': 'http://schema.org',
+    '@type': 'Selfstorage',
+    'name': nameLocation2,
+    'address': addressLoaction2,
+     'url': urlLocation2,
+     'image':  imageLocation2,
+    'contactPoint': [{
+      '@type': 'ContactPoint',
+      'telephone':  contactsLocation2[contactIndex2].data,
+      'contactType': 'reservations'
+    }, {
+      '@type': 'ContactPoint',
+      'telephone':  contactsLocation2[contactIndex2].data,
+      'contactType': 'customer service'
+    }],
+    'email': contactsLocation2[emailIndex2].data,
+    'sameAs': [
+      '',
+      '',
+      ''
+    ]
 
-// export const contactPageLocation3Script = {
-//     '@context': 'http://schema.org',
-//     '@type': 'Selfstorage',
-//     'name': nameLocation3,
-//     'address': addressLoaction3,
-//      'url': urlLocation3,
-//      'image': imageLocation3,
-//     'contactPoint': [{
-//       '@type': 'ContactPoint',
-//       'telephone': contactsLocation3[contactIndex3].data,
-//       'contactType': 'reservations'
-//     }, {
-//       '@type': 'ContactPoint',
-//       'telephone': contactsLocation3[contactIndex3].data,
-//       'contactType': 'customer service'
-//     }],
-//     'email': contactsLocation3[emailIndex3].data,
-//     'sameAs': [
-//       '',
-//       '',
-//       ''
-//     ]
+};
 
-// };
+export const contactPageLocation3Script = {
+    '@context': 'http://schema.org',
+    '@type': 'Selfstorage',
+    'name': nameLocation3,
+    'address': addressLoaction3,
+     'url': urlLocation3,
+     'image':  imageLocation3,
+    'contactPoint': [{
+      '@type': 'ContactPoint',
+      'telephone':  contactsLocation3[contactIndex3].data,
+      'contactType': 'reservations'
+    }, {
+      '@type': 'ContactPoint',
+      'telephone':  contactsLocation3[contactIndex3].data,
+      'contactType': 'customer service'
+    }],
+    'email': contactsLocation3[emailIndex3].data,
+    'sameAs': [
+      '',
+      '',
+      ''
+    ]
+
+};
+
+
+export const contactPageLocation4Script = {
+    '@context': 'http://schema.org',
+    '@type': 'Selfstorage',
+    'name': nameLocation4,
+    'address': addressLoaction4,
+     'url': urlLocation4,
+     'image':  imageLocation4,
+    'contactPoint': [{
+      '@type': 'ContactPoint',
+      'telephone':  contactsLocation4[contactIndex4].data,
+      'contactType': 'reservations'
+    }, {
+      '@type': 'ContactPoint',
+      'telephone':  contactsLocation4[contactIndex4].data,
+      'contactType': 'customer service'
+    }],
+    'email': contactsLocation4[emailIndex4].data,
+    'sameAs': [
+      '',
+      '',
+      ''
+    ]
+
+};
 
 // export const contactPageLocation4Script = {
 //     '@context': 'http://schema.org',
@@ -771,60 +858,166 @@ export const twitterLocation1 = [
 ];
 
 
-// export const ogLocation2 = [
-//   {
-//     property: `og:title`,
-//     content: location2PageTitle
-//   },
-//   {
-//     property: `og:description`,
-//     content: location2PageContent
-//   },
-//   {
-//     property: `og:type`,
-//     content: `website`
-//   },
-//   {
-//     property: `og:site_name`,
-//     content: environment.facilityName
-//   },
-//   {
-//     property: `og:url`,
-//     content: urlLocation2
-//   },
-//   {
-//     property: `og:image`,
-//     content: imageLocation2[1]
-//   },
-// ];
+export const ogLocation2 = [
+  {
+    property: `og:title`,
+    content: location2PageTitle
+  },
+  {
+    property: `og:description`,
+    content: location2PageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: urlLocation2
+  },
+  {
+    property: `og:image`,
+    content: imageLocation2[1]
+  },
+];
+export const ogLocation3 = [
+  {
+    property: `og:title`,
+    content: location3PageTitle
+  },
+  {
+    property: `og:description`,
+    content: location3PageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: urlLocation3
+  },
+  {
+    property: `og:image`,
+    content: imageLocation3[1]
+  },
+];
 
-// export const twitterLocation2 = [
-//   {
-//     name: `twitter:site`,
-//     content: `@${environment.facilityName}`
-//   },
-//   {
-//     name: `twitter:card`,
-//     content: `summary`
-//   },
-//   {
-//     name: `twitter:creator`,
-//     content: `@syrasoft_connect`
-//   },
-//   {
-//     name: `twitter:title`,
-//     content: `@${location2PageTitle}`
-//   },
-//   {
-//     name: `twitter:description`,
-//     content: location2PageContent
-//   },
-//   {
-//     name: `twitter:image`,
-//     content: imageLocation2[0]
-//   },
-// ];
+export const ogLocation4 = [
+  {
+    property: `og:title`,
+    content: location4PageTitle
+  },
+  {
+    property: `og:description`,
+    content: location4PageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: urlLocation4
+  },
+  {
+    property: `og:image`,
+    content: imageLocation4[1]
+  },
+];
 
+export const twitterLocation2 = [
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:title`,
+    content: `@${location2PageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location2PageContent
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation2[0]
+  },
+];
+
+export const twitterLocation3 = [
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:title`,
+    content: `@${location3PageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location3PageContent
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation3[0]
+  },
+];
+
+export const twitterLocation4 = [
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:title`,
+    content: `@${location4PageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location4PageContent
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation4[0]
+  },
+];
 
 // export const ogLocation3 = [
 //   {
@@ -1125,6 +1318,85 @@ export const ogPayRentPageLocation1 = [
     content: imageLocation1[1]
   },
 ];
+export const ogPayRentPageLocation2 = [
+  {
+    property: `og:title`,
+    content: location2PayrentPageTitle
+  },
+  {
+    property: `og:description`,
+    content: location2PayrentPageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/pay-rent/${location2}/login`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation2[1]
+  },
+];
+export const ogPayRentPageLocation3 = [
+  {
+    property: `og:title`,
+    content: location3PayrentPageTitle
+  },
+  {
+    property: `og:description`,
+    content: location3PayrentPageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/pay-rent/${location3}/login`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation3[1]
+  },
+];
+
+export const ogPayRentPageLocation4 = [
+  {
+    property: `og:title`,
+    content: location4PayrentPageTitle
+  },
+  {
+    property: `og:description`,
+    content: location4PayrentPageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/pay-rent/${location4}/login`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation4[1]
+  },
+];
 
 export const twitterPayRentPageLocation1 = [
   {
@@ -1153,6 +1425,85 @@ export const twitterPayRentPageLocation1 = [
   },
 ];
 
+export const twitterPayRentPageLocation2 = [
+  {
+    name: `twitter:title`,
+    content: `@${location2PayrentPageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location2PayrentPageContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation2[0]
+  },
+];
+export const twitterPayRentPageLocation3 = [
+  {
+    name: `twitter:title`,
+    content: `@${location3PayrentPageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location3PayrentPageContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation3[0]
+  },
+];
+
+export const twitterPayRentPageLocation4 = [
+  {
+    name: `twitter:title`,
+    content: `@${location4PayrentPageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location4PayrentPageContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation4[0]
+  },
+];
 // export const ogPayRentPageLocation2 = [
 //   {
 //     property: `og:title`,
@@ -1560,6 +1911,86 @@ export const ogContactPageLocation1 = [
   },
 ];
 
+export const ogContactPageLocation2 = [
+  {
+    property: `og:title`,
+    content: location2ContactPageTitle
+  },
+  {
+    property: `og:description`,
+    content: location2ContactPageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/contact-${location2}`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation2[1]
+  },
+];
+export const ogContactPageLocation3 = [
+  {
+    property: `og:title`,
+    content: location3ContactPageTitle
+  },
+  {
+    property: `og:description`,
+    content: location3ContactPageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/contact-${location3}`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation3[1]
+  },
+];
+
+export const ogContactPageLocation4 = [
+  {
+    property: `og:title`,
+    content: location4ContactPageTitle
+  },
+  {
+    property: `og:description`,
+    content: location4ContactPageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/contact-${location3}`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation4[1]
+  },
+];
+
 export const twitterContactPageLocation1 = [
   {
     name: `twitter:title`,
@@ -1587,6 +2018,85 @@ export const twitterContactPageLocation1 = [
   },
 ];
 
+export const twitterContactPageLocation2 = [
+  {
+    name: `twitter:title`,
+    content: `@${location2ContactPageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location2ContactPageContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation2[0]
+  },
+];
+export const twitterContactPageLocation3 = [
+  {
+    name: `twitter:title`,
+    content: `@${location3ContactPageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location3ContactPageContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation3[0]
+  },
+];
+
+export const twitterContactPageLocation4 = [
+  {
+    name: `twitter:title`,
+    content: `@${location3ContactPageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location4ContactPageContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation4[0]
+  },
+];
 
 // export const ogContactPageLocation2 = [
 //   {
