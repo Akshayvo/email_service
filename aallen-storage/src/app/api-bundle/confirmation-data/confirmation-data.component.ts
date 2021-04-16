@@ -72,6 +72,8 @@ reservationFee: number;
 reservationFeeTax: number;
 description: string;
 monthlyRate: number;
+proRateAmount: number;
+ProrateAmtTax: number;
 
 tenantData = {
   objTenant: {}
@@ -132,6 +134,8 @@ fetchSharedData() {
   this.totalTaxAmount = this.dataSharingService.MoveInData.TotalTaxAmount;
   this.totalChargesAmount = this.dataSharingService.MoveInData.TotalChargesAmount;
   this.period = this.dataSharingService.period;
+  this.proRateAmount = this.dataSharingService.MoveInData.proRateAmount;
+  this.ProrateAmtTax = this.dataSharingService.MoveInData.ProrateAmtTax; 
 }
 
 public fetchOption() {

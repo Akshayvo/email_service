@@ -469,7 +469,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   public navigateToConfirmation() {
-    this.router.navigate([`${environment.locationName}/view-rates/reserve`]);
+    this.router.navigate([`${environment.locationName}/view-rates/confirmation`]);
   }
 
   getPayMethods() {
@@ -588,6 +588,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           this.showSuccessPayment = true;
         } else {
           this.makePaymentForUnit = false;
+          this.showloaderForPayment = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
 

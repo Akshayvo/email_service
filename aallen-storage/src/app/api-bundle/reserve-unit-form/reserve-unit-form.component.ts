@@ -389,6 +389,8 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
     this.setupTax = SetupTax;
     this.totalTaxAmount = TotalTaxAmount;
     this.totalChargesAmount = TotalChargesAmount;
+    this.dataSharingService.MoveInData.proRateAmount = this.proRateAmount;
+    this.dataSharingService.MoveInData.ProrateAmtTax = this.prorateAmtTax;
     this.dataSharingService.MoveInData.TotalChargesAmount = parseFloat(this.totalChargesAmount.toFixed(2));
     this.dataSharingService.MoveInData.TotalTaxAmount = parseFloat(this.totalTaxAmount.toFixed(2));
   }, err => {

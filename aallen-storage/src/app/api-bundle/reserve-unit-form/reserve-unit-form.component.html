@@ -281,14 +281,14 @@
                     </div>
                 </div>
             </div>
-        <div *ngIf="monthlyRate">
+      <!--  <div *ngIf="monthlyRate">
             <label>Rate:</label>&nbsp;
             ${{monthlyRate | number : '1.2-2'}}
             <span *ngIf="rateTax > 0">
                 + ${{rateTax | number : '1.2-2'}} (Tax)
             </span>
         </div>
-        <div class="form-group readonly-form-control" *ngIf="navigateToReserve && reservationFee !== undefined">
+         <div class="form-group readonly-form-control" *ngIf="navigateToReserve && reservationFee !== undefined">
             <label>Reservation Charges:</label>&nbsp;
             ${{reservationFee | number : '1.2-2'}}
             <span *ngIf="reservationFeeTax !== undefined">
@@ -324,7 +324,7 @@
         <div  *ngIf="navigateToMoveIn && premium > 0">
             <label>Premium:</label>&nbsp;
             {{premium | number : '1.2-2'}}
-        </div>
+        </div> -->
             </div>
          </div>
          <div [hidden]="" *ngIf="submitted && !this.reserveUnitForm.valid" class="alert alert-danger alert-dismissible fade show">
