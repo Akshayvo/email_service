@@ -83,12 +83,12 @@ export const loginDetail = [
       userName: `Tenant's First Initial + Last Name`,
       password: `Tenant's Unit Number`,
       example: {
-          code: `John Smith's Unit Number is 123`,
+          code: `Unit Number is 123`,
           userName: 'jsmith',
           password: '0123'
       },
       example1:{
-          code: `John Smith's Unit Number is RC23`,
+          code: `Unit Number is RC23`,
           userName: 'jsmith',
           password: 'RC23'
       }
