@@ -98,14 +98,11 @@ export const urlLocation5 = `${environment.websiteUrl}/${environment.locationNam
 export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/robertsdale/storage-units`;
 
 
-export const description1 = `brick self storage facility front office with a green lawn
-                             in the front and blue sky above`;
+export const description1 = `Self Storage of York and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years.`;
 
-export const description2 = `Our Silverhill location has a number of regular and climate controlled unit types `;
+export const description2 = `Self Storage of York and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years. `;
 
-export const description3 = `Our Barnwell location has a number of regular and climate controlled unit types ideal
-                             for just about any self storage need at an affordable price!  Our 24-hour access policy
-                             makes coming and going on your schedule a breeze!`;
+export const description3 = `Self Storage of York and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years.`;
 
 export const description4 = `Our Belfast location has a number of units in both regular and climate controlled
                              varieties to cover all of your residential or commercial self storage needs.`;
@@ -118,9 +115,9 @@ export const description6 = `Our Robertsdale location has a number of unit sizes
                              storage need at great prices!  Our 24-hour access policy makes coming and going
                              on your schedule a breeze!`;
 
-export const maplocation1 = 'https://goo.gl/maps/FqeHH1xEv8AP4GLg6';
-export const maplocation2 = 'https://goo.gl/maps/FTweCN2UdexnsJB49';
-export const maplocation3 = 'https://goo.gl/maps/EPmskBQ9TgFTBXcb8';
+export const maplocation1 = 'https://goo.gl/maps/CncyW8Kg3qitggUs6';
+export const maplocation2 = 'https://goo.gl/maps/btYwTZiynghoA5ds7';
+export const maplocation3 = 'https://goo.gl/maps/FY6MqcAbKZwVETzu8';
 export const maplocation4 = 'https://goo.gl/maps/skmJTukq9K3xRFbS7';
 export const maplocation5 = 'https://goo.gl/maps/FANSU6w7QY9vCpiDA';
 export const maplocation6 = 'https://goo.gl/maps/kt1bhA6aHeRmjXsN7';
@@ -128,28 +125,28 @@ export const maplocation6 = 'https://goo.gl/maps/kt1bhA6aHeRmjXsN7';
 
 export const addressLoaction1 = {
   '@type': 'PostalAddress',
-      'streetAddress': '17860 US-98',
-      'addressLocality': 'Foley',
-      'addressRegion': 'AL',
-      'postalCode': '36535',
+      'streetAddress': '1622 N',
+      'addressLocality': 'Platte Ave York',
+      'addressRegion': 'NE',
+      'postalCode': '68467',
       'addressCountry': 'United state'
 };
 
 export const addressLoaction2 = {
   '@type': 'PostalAddress',
-  'streetAddress': '15410 AL-104',
-  'addressLocality': 'Silverhill',
-  'addressRegion': 'AL',
-  'postalCode': '36576',
+  'streetAddress': '115',
+  'addressLocality': 'Marquis Ave York',
+  'addressRegion': 'NE',
+  'postalCode': '68467',
   'addressCountry': 'United state'
 }
 
 export const addressLoaction3 = {
   '@type': 'PostalAddress',
-  'streetAddress': '8089A US-98',
-  'addressLocality': 'Fairhope',
-  'addressRegion': 'AL',
-  'postalCode': '36532',
+  'streetAddress': '2700 N',
+  'addressLocality': 'Lincoln Ave York',
+  'addressRegion': 'NE',
+  'postalCode': '68467',
   'addressCountry': 'United state'
 } 
 
@@ -183,21 +180,21 @@ export const addressLoaction6 = {
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-11.jpeg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-43.jpeg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-169.jpeg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-11,jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-43,jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-169,jpg'
  ]
 
  export const imageLocation2 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-11.jpeg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-43.jpeg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-169.jpeg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-11,jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-43,jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-169,jpg'
  ]
 
  export const imageLocation3 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-11.jpeg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-43.jpeg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-169.jpeg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-11,jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-43,jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-169,jpg'
  ]
 
  export const imageLocation4 =  [
@@ -224,12 +221,12 @@ export const homePageScript = [
     '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
     'name': nameLocation1,
     'url': urlLocation1,
-    'openingHours': ['Mo-Fr 08:30 - 17:00'],
-    'priceRange': '$40 - $190',
+    'openingHours': ['Mo-Su 08:00 - 18:00'],
+    'priceRange': '$19-$200',
       'address' : addressLoaction1,
     'telephone': contactsLocation1[contactIndex1].data,
     'image' : imageLocation1,
-    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/jpg/storage-plus-baldwin-county-logo.jpg'
+    'logo': ''
   }, 
   {
     '@context' : 'http://schema.org',
@@ -240,7 +237,7 @@ export const homePageScript = [
     'email': contactsLocation2[emailIndex2].data,
     'address': addressLoaction2,
     'openingHours': [ ],
-    'priceRange': '$40 - $110',
+    'priceRange': '$19-$200',
     'url' : urlLocation2,
   }, 
   {
@@ -251,7 +248,7 @@ export const homePageScript = [
     'telephone' : contactsLocation3[contactIndex3].data,
     'email' : contactsLocation3[emailIndex3].data,
     'address': addressLoaction3,
-    'priceRange': '$30 - $175',
+    'priceRange': '$19-$200',
     'openingHours': [],
     'url' : urlLocation3
   }, 
@@ -304,22 +301,22 @@ export const Location1Script = {
     'address': addressLoaction1,
     'aggregateRating': {
     '@type': 'AggregateRating',
-    'ratingValue': '4.7',
+    'ratingValue': '',
     'bestRating': '5',
-    'reviewCount': '3'
+    'reviewCount': ''
   },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 30.4089297,
-      'longitude': -87.7331084,
+      'latitude': 40.8764117,
+      'longitude': -97.5942909,
     },
     'url': urlLocation1,
     'telephone': contactsLocation1[contactIndex1].data,
 
-    'priceRange': '$40 - $190',
-    'openingHours': ['Mo-Fr 08:30 - 17:00'],
+    'priceRange': '$19-$200',
+    'openingHours': ['Mo-Su 08:00 - 18:00'],
     'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
+  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
      'areaServed': {
   '@type': 'State',
   'name': 'New York'
@@ -339,22 +336,22 @@ export const Location2Script = {
     'address': addressLoaction2,
    'aggregateRating': {
   '@type': 'AggregateRating',
-  'ratingValue': '4.7',
+  'ratingValue': '',
   'bestRating': '5',
-  'reviewCount': '12'
+  'reviewCount': ''
 },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 30.5445247,
-      'longitude': -87.7604384
+      'latitude': 40.8921178,
+      'longitude': -97.5946085
     },
     'url': urlLocation2,
     'telephone': contactsLocation2[contactIndex2].data,
 
-    'priceRange': '$40 - $110',
-    'openingHours': [ ],
+    'priceRange': '$19 - $200',
+    'openingHours': [],
     'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
+  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
      'areaServed': {
   '@type': 'State',
   'name': 'New York'
@@ -375,22 +372,22 @@ export const Location3Script = {
     'address': addressLoaction3,
    'aggregateRating': {
   '@type': 'AggregateRating',
-  'ratingValue': '5',
+  'ratingValue': '',
   'bestRating': '5',
   'reviewCount': ''
 },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 30.4222526,
-      'longitude':  -87.8864467
+      'latitude': 40.8895714,
+      'longitude':  -97.5929015
     },
     'url': urlLocation3,
     'telephone': contactsLocation3[contactIndex3].data,
 
-    'priceRange': '$30 - $175',
+    'priceRange': '$19 - $200',
     'openingHours': [],
     'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
+  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
      'areaServed': {
   '@type': 'State',
   'name': 'New York'

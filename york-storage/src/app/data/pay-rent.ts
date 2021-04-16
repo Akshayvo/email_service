@@ -98,12 +98,12 @@ export const loginDetail = [
       userName: `Your email address.`,
       password: `Tenant’s First Unit Number(minimum of 2 digits)`,
       example: {
-          code: `John Smith’s Unit number is 1`,
+          code: `Unit number is 1`,
           userName: 'jsmith@email.com',
           password: '01'
       },
       example1:{
-          code: `John Smith’s Unit number is P45`,
+          code: `Unit number is P45`,
           userName: 'jsmith@email.com',
           password: 'P45'
       }

@@ -3,7 +3,7 @@ export const contactsHomePage = [
         id: 1,
         label: 'Address: ',
         data: 'P.O. Box 337 York, NE 68467',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'https://goo.gl/maps/7W1Z5DgwgaJXS5nY8'
     },
     {
@@ -11,16 +11,9 @@ export const contactsHomePage = [
         label: 'Email: ',
         email: 'selfstorageofyork@gmail.com',
         data: `selfstorageofyork@gmail.com`,
+        // data: `pragathi.n@codeparva.in`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`selfstorageofyork@gmail.com`'
-    },
-    {
-        id: 3,
-        label: 'Mailing Address: ',
-        data: 'P.O. Box 337 York, NE 68467',
-        class: '',
-        redirect: ''
-
     },
     {
         id: 4,
@@ -40,12 +33,8 @@ export const contactsHomePage = [
 
 export const hoursHomePage = [
     {
-        label: 'Monday - Friday: ',
-        data: '8:30AM to 5:00PM',
-    },
-    {
-        label: 'Saturday - Sunday: ',
-        data: 'Self Check-In Available',
+        label: '7 Days a Week: ',
+        data: '8:00AM to 6:00PM',
     },
 ];
 
@@ -61,7 +50,8 @@ export const contactsLocation1 = [
         id: 2,
         label: 'Email: ',
         email: 'selfstorageofyork@gmail.com',
-        data: `selfstorageofyork@gmail.com`,
+        // data: `selfstorageofyork@gmail.com`,
+        data: `pragathi.n@codeparva.in`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`selfstorageofyork@gmail.com`'
     },
