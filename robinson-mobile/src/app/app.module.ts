@@ -59,6 +59,9 @@ import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TablesComponent } from './tables/tables.component';
+import { UpdateDetailsComponent } from './api-bundle/update-details/update-details.component';
+import { UpdateComponent } from './api-bundle/update/update.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -101,7 +104,9 @@ import { TablesComponent } from './tables/tables.component';
     AutoPayComponent,
     ContactButtonComponent,
     TabsComponent,
-    TablesComponent
+    TablesComponent,
+    UpdateComponent,
+    UpdateDetailsComponent
   ],
   imports: [
     CommonModule,

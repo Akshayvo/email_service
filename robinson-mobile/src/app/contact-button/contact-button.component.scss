@@ -22,11 +22,7 @@
     color: $primary;
   }
 }
-.contactdata {
-  a {
-    font-size: 1rem;
-  }
-}
+
 
 .socialLink {
   a {
@@ -37,12 +33,17 @@
   text-align: right;
 }
 
+
 .contact-data {
-  font-size: 13px;
   color: $white;
+
+  h5 {
+    font-size: 1rem;
+  }
 
   a {
     color: $white;
+    font-size: 1rem;
   }
 }
 

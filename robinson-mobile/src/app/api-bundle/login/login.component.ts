@@ -76,7 +76,11 @@ export class LoginComponent implements OnInit, OnDestroy {
             if (this.router.url.includes('sign-up')) {
               this.router.navigate(['/pay-rent/sign-up/auto-pay']);
             } else {
-              this.router.navigate([`/pay-rent/payment`]);
+              if(this.router.url.includes('update')) {
+                this.router.navigate([`/pay-rent/update/update-information`]);
+              } else {
+                this.router.navigate([`/pay-rent/payment`]);
+              }
             }
           }
         }
@@ -133,7 +137,11 @@ export class LoginComponent implements OnInit, OnDestroy {
             if (this.router.url.includes('sign-up')) {
               this.router.navigate(['/pay-rent/sign-up/auto-pay']);
             } else {
-              this.router.navigate(['/pay-rent/payment']);
+              if(this.router.url.includes('update')) {
+                this.router.navigate([`/pay-rent/update/update-information`]);
+              } else {
+                this.router.navigate(['/pay-rent/payment']);
+              }
             }
           }
         }, (err) => {
