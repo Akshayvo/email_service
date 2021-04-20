@@ -1,0 +1,56 @@
+<div>
+  <div [class.loader]="!showTable">
+  </div>
+  <div [class.loader]="showLoader" class="loader-position"> 
+  </div>
+  <div class="viewRates" [class.display]="!showTable">
+    <h3 class="text-center">
+      <strong>Unit Availability</strong>
+    </h3>
+    <div class="row py-2 my-2 unitDetail" *ngFor="let lstUnitType of LstUnitTypes">
+      <div class="col-4  unitType text-center">
+        <div class="p-2" *ngIf="lstUnitType.IsClimateControlled">  
+          <i class="fas fa-thermometer-half"></i><div>Climate Control</div>
+        </div>
+        <div class="p-2">
+          <div class="p-2" class="custom-font">
+            <strong>
+              {{lstUnitType.Description}}
+              </strong>
+          </div>
+          <div class="p-2" *ngIf="lstUnitType.IsOutdoor">
+              Outdoor Parking
+          </div>
+          <div class="" *ngIf="lstUnitType.IsMobile">
+            Mobile Unit
+          </div>
+          <div class="p-2" *ngIf="lstUnitType.IsAutomobile">
+            Vehicle Storage
+          </div>
+        </div>
+      </div>
+      <div class="col-4 text-center ">  
+        <div class="">
+          <div class=" text-center ">
+              <p >Rate</p>
+              <div class="custom-font"><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</strong></div>
+          </div>
+          <div class="text-center" *ngIf="lstUnitType.DepositAmount != null">
+            <p>Deposit</p>
+            <div class="custom-font"><strong><span>$</span>{{lstUnitType.DepositAmount}}</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center" >
+        <div *ngIf="lstUnitType.IsUnitsAvailable" >
+          <div class=" py-1 buttons" >
+              <button class="btn  btn-primary" (click)="navigate('reserve-unit', lstUnitType )">Reserve</button>
+          </div>
+          <div class="py-1 buttons">
+              <button class=" btn btn-primary" (click)="navigate('move-in', lstUnitType)"> Move In</button>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>

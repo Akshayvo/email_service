@@ -1,0 +1,17 @@
+<div class="d-flex justify-content-center">
+  <div class="selector-block">
+    <div class="row">
+      <span class="location-symbol">
+        <i class="fas fa-map-marker-alt location-icon"></i>
+      </span>
+      <span>
+        <form [formGroup]="getLocation">
+          <select name="location"
+          formControlName="location" class="form-control text-center selection-bar" (change)="sendMessage()">
+            <option *ngFor='let place of places' class="text-center" [value]="place.id">{{place.name}}</option>
+          </select>
+        </form>
+      </span>
+    </div>
+  </div>
+</div>
