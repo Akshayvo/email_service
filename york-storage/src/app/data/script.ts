@@ -180,21 +180,21 @@ export const addressLoaction6 = {
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-11,jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-43,jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-169,jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-169.jpg'
  ]
 
  export const imageLocation2 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-11,jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-43,jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-169,jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-169.jpg'
  ]
 
  export const imageLocation3 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-11,jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-43,jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-169,jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-169.jpg'
  ]
 
  export const imageLocation4 =  [
