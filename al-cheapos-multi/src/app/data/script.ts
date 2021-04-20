@@ -180,9 +180,9 @@ export const addressLoaction6 = {
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-11,jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-43,jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-169,jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Al_Cheapos_Storage/jpg/storage-square-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Al_Cheapos_Storage/jpg/storage-square-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Al_Cheapos_Storage/jpg/storage-square-169.jpg'
  ]
 
  export const imageLocation2 = [

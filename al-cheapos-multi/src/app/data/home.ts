@@ -24,20 +24,24 @@ export const featuresHead = [
 
 export const location1FeaturesHead = [
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: '6 Convenient Locations',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+        alt: 'Icon art displaying a location pin'
     },
-    
     {
         label: 'Affordable Self Storage Rates',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
         alt: 'Icon of a hand holding money'
     },
-    {
-        label: 'Stellar Customer Service',
+    {        
+        label: 'Friendly Customer Service',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Customer Service Representative Icon'
+        alt: 'Icon of a customer service agent'       
+    },
+    {
+        label: 'Security Cameras on Premises',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
+        alt: 'Icon of a security camera'
     },
 
 ];

@@ -46,7 +46,7 @@ export class UnitSizerComponent implements OnInit {
   public fetchDetailsLocation1() {
     this.unitSizer = unitSizerLocation1;
     this.h2tag = 'Unit Sizer';
-    this.description = `Not sure what will fit in a particular sized unit? Our unit sizer will help you estimate what will fit into each of our unit types.`;
+    this.description = `Use our handy unit sizing chart to help visualize what sized unit you need for your personal belongings or business' equipment!`;
   }
 
   public fetchDetailsLocation2() {

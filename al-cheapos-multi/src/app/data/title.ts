@@ -1,8 +1,8 @@
 export const homePageTitle = `Affordable Self Storage Units in West Mifflin`;
 export const homePageContent = `Storage Square serves West Mifflin and the surrounding communities with a variety of well-maintained and affordable self storage units.`;
 
-export const location1PageTitle = `Platt Ave Location | Self Storage of York`;
-export const location1PageContent = `Take a moment to review our rates at Self Storage of York, then reserve your unit, and start saving space today!`;
+export const location1PageTitle = `Storage Square | Al Cheapo's Self Storage`;
+export const location1PageContent = `Storage Square serves West Mifflin and the surrounding communities with a variety of well-maintained and affordable self storage units.`;
 
 export const location2PageTitle = `Maquis Ave Location | Self Storage of York`;
 export const location2PageContent = `Take a moment to review our rates at Self Storage of York, then reserve your unit, and start saving space today!`;
