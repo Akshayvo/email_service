@@ -44,21 +44,21 @@ export const contactsLocation1 = [
         label: 'Address: ',
         data: '4021 Homestead Duquesne Rd, West Mifflin, PA 15122',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/Z8AtQrqzycQEwzXr7'
+        redirect: 'https://goo.gl/maps/m1AmpViwPyqVitjD6'
     },
     {
         id: 2,
         label: 'Mailing Address: ',
         data: '5158 Cleveland Avenue, West Mifflin, PA, 15122.',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/Z8AtQrqzycQEwzXr7'  
+        redirect: 'https://goo.gl/maps/kX4PK9aN5tmse56PA'  
     },
     {
         id: 3,
         label: 'Email: ',
         email: 'storagesquare.wm@gmail.com',
-        // data: `selfstorageofyork@gmail.com`,
-        data: `pragathi.n@codeparva.in`,
+        data: `storagesquare.wm@gmail.com`,
+        // data: `pragathi.n@codeparva.in`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`storagesquare.wm@gmail.com`'
     },
@@ -76,27 +76,27 @@ export const contactsLocation1 = [
 export const hoursLocation1 = [
     {
         label: '7 Days a Week: ',
-        data: '8:00AM to 6:00PM',
+        data: '8:00AM to 8:00PM',
     },
     
 ];
 
 export const hoursLocation1AcessHours = [
     {
-        data: '24 Hours a Day 7 Days a Week'
+        data: '24 Hour Access Available Upon Request'
     },
 ];
 
 export const socialLinks = [
-    // {
-    //     label: 'twitter',
-    //     path: '',
-    //     class: 'fab fa-twitter-square',
-    // },
     {
-        label: '',
-        path: '',
-        class: '',
+        label: 'twitter',
+        path: 'https://twitter.com/AlCheapoStorage',
+        class: 'fab fa-twitter-square',
+    },
+    {
+        label: 'facebook',
+        path: 'https://www.facebook.com/Al-Cheapos-Self-Storage-268622179916564/timeline',
+        class: 'fab fa-facebook-square',
     },
 ];
 
