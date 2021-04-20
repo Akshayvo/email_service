@@ -60,6 +60,7 @@
     </div>
     <div class="col-lg-4 rent-example p-4" >
         <h3>How to Login</h3>
+        <p>Note: Once you have provided your email address to Storage Square, that will become your username.</p>
         <div *ngFor="let loginDetail of loginDetail">
           <p><b>Username: </b>&nbsp;{{loginDetail.userName}}<br>
           <b>Password: </b>&nbsp;{{loginDetail.password}}</p>
@@ -69,9 +70,9 @@
             <p>John Smith's {{loginDetail.example.code}}</p>
             <p>John's Username: {{loginDetail.example.userName}}<br>
               John's Password: {{loginDetail.example.password}}</p>
-            <p>John Smith's {{loginDetail.example1.code}}</p>
+            <!-- <p>John Smith's {{loginDetail.example1.code}}</p>
             <p>John's Username: {{loginDetail.example1.userName}}<br>
-                John's Password: {{loginDetail.example1.password}}</p>
+                John's Password: {{loginDetail.example1.password}}</p> -->
             <p><strong>Have questions about your account?</strong><br>
             <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 1">
               <a  *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content" [href]="contact?.redirect">

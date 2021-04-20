@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc> https://york-staging.netlify.app/</loc>
+    <loc> https://al-cheapos-staging.netlify.app/</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://york-staging.netlify.app/location/platt-ave/reserve-unit </loc>
+    <loc> https://al-cheapos-staging.netlify.app/location/platt-ave/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://york-staging.netlify.app/storage-tips </loc>
+    <loc> https://al-cheapos-staging.netlify.app/storage-tips </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/location/lincoln-ave/storage-units
+      https://al-cheapos-staging.netlify.app/location/lincoln-ave/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/contact-us
+      https://al-cheapos-staging.netlify.app/contact-us
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/location/lincoln-ave
+      https://al-cheapos-staging.netlify.app/location/lincoln-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -35,38 +35,38 @@
 
   <url>
     <loc> 
-      https://york-staging.netlify.app/location/marquis-ave/storage-units
+      https://al-cheapos-staging.netlify.app/location/marquis-ave/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/location/platt-ave
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  
-  
-  <url>
-    <loc> 
-      https://york-staging.netlify.app/location/marquis-ave/reserve-unit
+      https://al-cheapos-staging.netlify.app/location/platt-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
+  
   <url>
-    <loc> https://york-staging.netlify.app/location/marquis-ave </loc>
+    <loc> 
+      https://al-cheapos-staging.netlify.app/location/marquis-ave/reserve-unit
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  
+  <url>
+    <loc> https://al-cheapos-staging.netlify.app/location/marquis-ave </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/pay-rent
+      https://al-cheapos-staging.netlify.app/pay-rent
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/location/platt-ave/storage-units
+      https://al-cheapos-staging.netlify.app/location/platt-ave/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -76,26 +76,26 @@
   
   <url>
     <loc> 
-      https://york-staging.netlify.app/location/lincoln-ave/reserve-unit
+      https://al-cheapos-staging.netlify.app/location/lincoln-ave/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/contact-marquis-ave
+      https://al-cheapos-staging.netlify.app/contact-marquis-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/contact-lincoln-ave
+      https://al-cheapos-staging.netlify.app/contact-lincoln-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   <url>
     <loc>
-      https://york-staging.netlify.app/contact-platt-ave
+      https://al-cheapos-staging.netlify.app/contact-platt-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -103,32 +103,32 @@
   
   <url>
     <loc>
-      https://york-staging.netlify.app/pay-rent/lincoln-ave
+      https://al-cheapos-staging.netlify.app/pay-rent/lincoln-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/contact-lincoln-ave
+      https://al-cheapos-staging.netlify.app/contact-lincoln-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/pay-rent/marquis-ave
+      https://al-cheapos-staging.netlify.app/pay-rent/marquis-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   <url>
     <loc> 
-      https://york-staging.netlify.app/pay-rent/lincoln-ave/rent-sub/login
+      https://al-cheapos-staging.netlify.app/pay-rent/lincoln-ave/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://york-staging.netlify.app/pay-rent/marquis-ave/rent-sub/login
+      https://al-cheapos-staging.netlify.app/pay-rent/marquis-ave/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>

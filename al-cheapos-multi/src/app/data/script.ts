@@ -98,7 +98,7 @@ export const urlLocation5 = `${environment.websiteUrl}/${environment.locationNam
 export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/robertsdale/storage-units`;
 
 
-export const description1 = `Self Storage of York and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years.`;
+export const description1 = `Storage Square is a modern self storage facility located in West Mifflin, P.A. As a locally owned and operated company, we're committed to providing the best storage services, and customer service at the lowest possible price!`;
 
 export const description2 = `Self Storage of York and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years. `;
 
@@ -115,7 +115,7 @@ export const description6 = `Our Robertsdale location has a number of unit sizes
                              storage need at great prices!  Our 24-hour access policy makes coming and going
                              on your schedule a breeze!`;
 
-export const maplocation1 = 'https://goo.gl/maps/CncyW8Kg3qitggUs6';
+export const maplocation1 = 'https://goo.gl/maps/44CbKJbAda7Txrn58';
 export const maplocation2 = 'https://goo.gl/maps/btYwTZiynghoA5ds7';
 export const maplocation3 = 'https://goo.gl/maps/FY6MqcAbKZwVETzu8';
 export const maplocation4 = 'https://goo.gl/maps/skmJTukq9K3xRFbS7';
@@ -222,7 +222,7 @@ export const homePageScript = [
     'name': nameLocation1,
     'url': urlLocation1,
     'openingHours': ['Mo-Su 08:00 - 18:00'],
-    'priceRange': '$19-$200',
+    'priceRange': '$65-$125',
       'address' : addressLoaction1,
     'telephone': contactsLocation1[contactIndex1].data,
     'image' : imageLocation1,
@@ -237,7 +237,7 @@ export const homePageScript = [
     'email': contactsLocation2[emailIndex2].data,
     'address': addressLoaction2,
     'openingHours': [ ],
-    'priceRange': '$19-$200',
+    'priceRange': '$65-$125',
     'url' : urlLocation2,
   }, 
   {
@@ -248,7 +248,7 @@ export const homePageScript = [
     'telephone' : contactsLocation3[contactIndex3].data,
     'email' : contactsLocation3[emailIndex3].data,
     'address': addressLoaction3,
-    'priceRange': '$19-$200',
+    'priceRange': '$65-$125',
     'openingHours': [],
     'url' : urlLocation3
   }, 
@@ -301,22 +301,22 @@ export const Location1Script = {
     'address': addressLoaction1,
     'aggregateRating': {
     '@type': 'AggregateRating',
-    'ratingValue': '',
+    'ratingValue': '3.8',
     'bestRating': '5',
-    'reviewCount': ''
+    'reviewCount': '5'
   },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 40.8764117,
-      'longitude': -97.5942909,
+      'latitude': 40.366821,
+      'longitude': -79.892265,
     },
     'url': urlLocation1,
     'telephone': contactsLocation1[contactIndex1].data,
 
-    'priceRange': '$19-$200',
+    'priceRange': '$65-$125',
     'openingHours': ['Mo-Su 08:00 - 18:00'],
     'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
+  'paymentAccepted': 'Cash, Check, Debit Card, Credit Card',
      'areaServed': {
   '@type': 'State',
   'name': 'New York'

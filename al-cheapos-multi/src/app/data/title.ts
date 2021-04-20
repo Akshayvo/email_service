@@ -48,8 +48,8 @@ export const faqPagecontent = `Have some questions about the services at Storage
 
 
 
-export const location1PayrentPageTitle = `Pay Rent | Self Storage of York`;
-export const location1PayrentPageContent = `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`;
+export const location1PayrentPageTitle = `Pay Rent | Al Cheapo's Self Storage`;
+export const location1PayrentPageContent = `Follow the simple instructions here, and you can pay your rent online 24 hours a day, 7 days a week!`;
 
 export const location2PayrentPageTitle = `Pay Rent | Self Storage of York`;
 export const location2PayrentPageContent = `Simply follow the on-page instructions, or call one of our friendly management professionals to learn how to access your account, today!`;
@@ -68,8 +68,8 @@ export const location6PayrentPageContent = `Follow the instructions on this page
 
 
 
-export const location1ContactPageTitle = `Contact Us | Self Storage of York`;
-export const location1ContactPageContent = `Do you have a question about your account, or our self storage, boat, and recreational vehicle storage? Use our contact form, or call us today!`;
+export const location1ContactPageTitle = `Contact Us | Al Cheapo's Self Storage`;
+export const location1ContactPageContent = `Take a moment to view our affordable self storage unit rates, then make your reservation by filling out our form or calling our office today!`;
 
 export const location2ContactPageTitle = `Contact Us | Self Storage of York`;
 export const location2ContactPageContent = `Do you have a question about your account, or our self storage, boat, and recreational vehicle storage? Use our contact form, or call us today!`;

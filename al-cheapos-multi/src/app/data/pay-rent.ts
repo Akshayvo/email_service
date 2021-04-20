@@ -95,17 +95,12 @@ export const tableDataContactPage = [
 
 export const loginDetail = [
   {
-      userName: `Your email address.`,
-      password: `Tenant’s First Unit Number(minimum of 2 digits)`,
+      userName: `Tenant's First Initial + Last Name`,
+      password: `Tenant's Gate Access Code(no * after the number)`,
       example: {
-          code: `Unit number is 1`,
-          userName: 'jsmith@email.com',
-          password: '01'
+          code: `Gate Codeode is 1234`,
+          userName: 'jsmith',
+          password: '1234'
       },
-      example1:{
-          code: `Unit number is P45`,
-          userName: 'jsmith@email.com',
-          password: 'P45'
-      }
   }
 ];
