@@ -50,8 +50,8 @@ export const contactsLocation1 = [
         id: 2,
         label: 'Email: ',
         email: 'selfstorageofyork@gmail.com',
-        // data: `selfstorageofyork@gmail.com`,
-        data: `pragathi.n@codeparva.in`,
+        data: `selfstorageofyork@gmail.com`,
+        // data: `pragathi.n@codeparva.in`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`selfstorageofyork@gmail.com`'
     },
