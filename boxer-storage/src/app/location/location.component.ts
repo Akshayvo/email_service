@@ -360,7 +360,6 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    console.log(this.router.url)
     if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
         this.fetchDetailsLocation1();
     } 

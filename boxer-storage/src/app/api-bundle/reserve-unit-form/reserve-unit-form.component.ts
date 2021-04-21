@@ -422,6 +422,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const indexValue = event.target.value;
     const index = this.LstRentalPeriods.findIndex(x => x.PeriodDescription === indexValue);
     this.dataSharingService.periodID = this.LstRentalPeriods[index].PeriodID;
+    this.dataSharingService.period = indexValue; //added to show the selected period in confirmation page
     this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
   }
 
