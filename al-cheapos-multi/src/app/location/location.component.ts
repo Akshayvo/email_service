@@ -96,13 +96,13 @@ export class LocationComponent implements OnInit {
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
-      if (this.router.url.includes(`${environment.locationName}/platt-ave`)) {
+      if (this.router.url.includes(`${environment.locationName}/storage-square`)) {
             this.meta.addTag({
               name: 'description',
               content: `${this.location1PageContent}`
     });
     this.titleService.setTitle(`${this.location1PageTitle}`);
-            this.locationName = `Self Storage of York - Platt Ave`;
+            this.locationName = `Al Cheapo's Self Storage - Storage Square`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location1Script;
@@ -120,13 +120,13 @@ export class LocationComponent implements OnInit {
                 content: element.content
               })
             });
-    } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/aarons-space-station`)) {
            this.meta.addTag({
              name: 'description',
              content: `${this.location2PageContent}`
     });
     this.titleService.setTitle(`${this.location2PageTitle}`);
-           this.locationName = `Self Storage of York - Marquis Ave`;
+           this.locationName = `Al Cheapo's Self Storage - Aaron's Space Station`;
            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
            this.dataSharingService.locationName = this.locationName;
            this.script = Location2Script;
@@ -150,7 +150,7 @@ export class LocationComponent implements OnInit {
           content: `${this.location3PageContent}`
     });
     this.titleService.setTitle(`${this.location3PageTitle}`);
-        this.locationName = `Self Storage of York - Lincoln Ave`;
+        this.locationName = `Al Cheapo's Self Storage - Lincoln Ave`;
         this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
         this.dataSharingService.locationName = this.locationName;
         this.script = Location3Script;
@@ -174,7 +174,7 @@ export class LocationComponent implements OnInit {
       content: `${this.location4PageContent}`
     });
     this.titleService.setTitle(`${this.location4PageTitle}`);
-    this.locationName = `Self Storage of York - Belforest Location`;
+    this.locationName = `Al Cheapo's Self Storage - Belforest Location`;
     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
     this.dataSharingService.locationName = this.locationName;
     this.script = Location4Script;
@@ -198,7 +198,7 @@ export class LocationComponent implements OnInit {
       content: `${this.location5PageContent}`
 });
 this.titleService.setTitle(`${this.location5PageTitle}`);
-    this.locationName = `Self Storage of York - Fairhope`;
+    this.locationName = `Al Cheapo's Self Storage - Fairhope`;
     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
     this.dataSharingService.locationName = this.locationName;
     this.script = Location5Script;
@@ -222,7 +222,7 @@ this.titleService.setTitle(`${this.location5PageTitle}`);
     content: `${this.location6PageContent}`
 });
 this.titleService.setTitle(`${this.location6PageTitle}`);
-  this.locationName = `Self Storage of York - Robertsdale`;
+  this.locationName = `Al Cheapo's Self Storage - Robertsdale`;
   this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
   this.dataSharingService.locationName = this.locationName;
   this.script = Location6Script;
@@ -285,9 +285,9 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
 
   
   public fetchOg() {
-    if (this.router.url.includes(`${environment.locationName}/platt-ave`)) {
+    if (this.router.url.includes(`${environment.locationName}/storage-square`)) {
       this.og = ogLocation1;
-  } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/aarons-space-station`)) {
     this.og = ogLocation2;
   } else if (this.router.url.includes(`${environment.locationName}/lincoln-ave`)) {
     this.og = ogLocation3;
@@ -301,9 +301,9 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes(`${environment.locationName}/platt-ave`)) {
+    if (this.router.url.includes(`${environment.locationName}/storage-square`)) {
       this.twitter = twitterLocation1;
-  } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/aarons-space-station`)) {
     this.twitter = twitterLocation2;
   } else if (this.router.url.includes(`${environment.locationName}/lincoln-ave`)) {
     this.twitter = twitterLocation3;
@@ -317,9 +317,9 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/platt-ave`)) {
+    if (this.router.url.includes(`${environment.locationName}/storage-square`)) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/aarons-space-station`)) {
       this.fetchDetailsLocation2();
     } else if (this.router.url.includes(`${environment.locationName}/lincoln-ave`)) {
       this.fetchDetailsLocation3();
@@ -334,10 +334,10 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate([`${environment.locationName}/platt-ave/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/storage-square/reserve-unit`],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate([`${environment.locationName}/marquis-ave/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/aarons-space-station/reserve-unit`],
           );
   }  else if ( this.locationId === 3 ) {
     this.router.navigate([`${environment.locationName}/lincoln-ave/reserve-unit`],

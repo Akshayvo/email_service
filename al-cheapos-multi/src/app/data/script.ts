@@ -74,24 +74,24 @@ const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
 const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
 const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
-export const nameLocation1 = `Self Storage of York - Platt`;
-export const nameLocation2 = `Self Storage of York - Marquis`;
-export const nameLocation3 = `Self Storage of York - Lincoln`;
-export const nameLocation4 = `Self Storage of York - Belforest`;
-export const nameLocation5 = `Self Storage of York - Fairhope`;
-export const nameLocation6 = `Self Storage of York - Robertsdale`;
+export const nameLocation1 = `Al Cheapo's Self Storage - Storage Square`;
+export const nameLocation2 = `Al Cheapo's Self Storage - Marquis`;
+export const nameLocation3 = `Al Cheapo's Self Storage - Lincoln`;
+export const nameLocation4 = `Al Cheapo's Self Storage - Belforest`;
+export const nameLocation5 = `Al Cheapo's Self Storage - Fairhope`;
+export const nameLocation6 = `Al Cheapo's Self Storage - Robertsdale`;
 
 
-export const location1 = `platt-ave`;
-export const location2 = `marquis-ave`;
+export const location1 = `storage-square`;
+export const location2 = `aarons-space-station`;
 export const location3 = `lincoln-ave`;
 export const location4 = `belforest`;
 export const location5 = `lincoln-ave`;
 export const location6 = `robertsdale`;
 
 
-export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/platt-ave/storage-units`;
-export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/marquis-ave/storage-units`;
+export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/storage-square/storage-units`;
+export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/aarons-space-station/storage-units`;
 export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/lincoln-ave/storage-units`;
 export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/belforest/storage-units`;
 export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/fairhope/storage-units`;
@@ -100,9 +100,9 @@ export const urlLocation6 = `${environment.websiteUrl}/${environment.locationNam
 
 export const description1 = `Storage Square is a modern self storage facility located in West Mifflin, P.A. As a locally owned and operated company, we're committed to providing the best storage services, and customer service at the lowest possible price!`;
 
-export const description2 = `Self Storage of York and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years. `;
+export const description2 = `Al Cheapo's Self Storage and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years. `;
 
-export const description3 = `Self Storage of York and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years.`;
+export const description3 = `Al Cheapo's Self Storage and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years.`;
 
 export const description4 = `Our Belfast location has a number of units in both regular and climate controlled
                              varieties to cover all of your residential or commercial self storage needs.`;

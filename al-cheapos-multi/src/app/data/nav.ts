@@ -13,19 +13,19 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Platt Ave',
-                path: `${environment.locationName}/platt-ave`,
+                label: 'Storage Square',
+                path: `${environment.locationName}/storage-square`,
               },
             {
                 id: '2',
-                label: 'Marquis Ave',
-                path: `${environment.locationName}/marquis-ave`,
+                label: "Aaron's Space Station",
+                path: `${environment.locationName}/aarons-space-station`,
             },
-              {
-                id: '3',
-                label: 'Lincoln Ave',
-                path: `${environment.locationName}/lincoln-ave`,
-            },
+            //   {
+            //     id: '3',
+            //     label: 'Lincoln Ave',
+            //     path: `${environment.locationName}/lincoln-ave`,
+            // },
            
         ]
     },

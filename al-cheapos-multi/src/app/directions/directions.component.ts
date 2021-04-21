@@ -26,9 +26,9 @@ export class DirectionsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/platt-ave`)) {
+    if (this.router.url.includes(`${environment.locationName}/storage-square`)) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
+     } else if (this.router.url.includes(`${environment.locationName}/aarons-space-station`)) {
        this.fetchDetailsLocation2();
     } else  if (this.router.url.includes(`${environment.locationName}/lincoln-ave`))  {
        this.fetchDetailsLocation3();

@@ -2,33 +2,34 @@ export const contactsHomePage = [
     {
         id: 1,
         label: 'Address: ',
-        data: 'P.O. Box 337 York, NE 68467',
-        class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/7W1Z5DgwgaJXS5nY8'
+        data: '4021 Homestead Duquesne Rd, West Mifflin, PA 15122',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/m1AmpViwPyqVitjD6'
     },
     {
         id: 2,
+        label: 'Mailing Address: ',
+        data: '5158 Cleveland Avenue, West Mifflin, PA, 15122.',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/kX4PK9aN5tmse56PA'  
+    },
+    {
+        id: 3,
         label: 'Email: ',
-        email: 'selfstorageofyork@gmail.com',
-        data: `selfstorageofyork@gmail.com`,
+        email: 'storagesquare.wm@gmail.com',
+        data: `storagesquare.wm@gmail.com`,
         // data: `pragathi.n@codeparva.in`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`selfstorageofyork@gmail.com`'
+        redirect: 'mailto:`storagesquare.wm@gmail.com`'
     },
     {
         id: 4,
         label: 'Phone: ',
-        data: '(402) 362-4494',
+        data: '(412) 462-4777',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:4023624494'
+        redirect: 'tel:4124624777'
     },
-    {
-        id: 5,
-        label: 'Billing Phone: ',
-        data: '(402) 366-0849',
-        class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:4023660849'
-    },
+   
 ];
 
 export const hoursHomePage = [
@@ -105,12 +106,19 @@ export const contactsLocation2 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '115 Marquis Ave York, NE 68467',
+        data: "676 Thompson Run Rd, West Mifflin, PA 15122",
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/CZ6GBeUDTKzR9PdK9'
     },
     {
         id: 2,
+        label: 'Mailing Address: ',
+        data: '5158 Cleveland Avenue, West Mifflin, PA, 15122.',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/kX4PK9aN5tmse56PA'  
+    },
+    {
+        id: 3,
         label: 'Email: ',
         data: 'selfstorageofyork@gmail.com',
         email: `selfstorageofyork@gmail.com`,
@@ -118,14 +126,14 @@ export const contactsLocation2 = [
         redirect: 'mailto:`selfstorageofyork@gmail.com`'
     },
     {
-        id: 3,
+        id: 4,
         label: 'Phone: ',
-        data: '(402) 362-4494',
+        data: '(412) 461-0556',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:4023624494'
+        redirect: 'tel:4124610556'
     },
     {
-        id: 4,
+        id: 5,
         label: 'Billing Phone: ',
         data: '(402) 366-0849',
         class: 'fas fa-phone mr-2 iconColor',

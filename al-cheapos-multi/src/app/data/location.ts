@@ -129,9 +129,9 @@ export const tabs3 = [
     // },
 ];
 
-export const headingLocation1 = `Platt Ave`;
+export const headingLocation1 = `Storage Square`;
 
-export const headingLocation2 = `Marquis Ave`;
+export const headingLocation2 = `Aaron's Space Station`;
 
 export const headingLocation3 = `Lincoln Ave`;
 
@@ -143,9 +143,9 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Platt Ave`;
+export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Storage Square`;
 
-export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Marquis Ave`;
+export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Aaron's Space Station`;
 
 export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Lincoln Ave`;
 
@@ -155,17 +155,17 @@ export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit
 
 export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
 
-export const heading1 = `Self Storage of York - Platt Ave`;
+export const heading1 = `Al Cheapo's Self Storage - Storage Square`;
 
-export const heading2 = `Self Storage of York - Marquis Ave`;
+export const heading2 = `Al Cheapo's Self Storage - Aaron's Space Station`;
 
-export const heading3 = `Self Storage of York - Lincoln Ave`;
+export const heading3 = `Al Cheapo's Self Storage - Lincoln Ave`;
 
-export const heading4 = `Self Storage of York - Belforest`;
+export const heading4 = `Al Cheapo's Self Storage - Belforest`;
 
-export const heading5 = `Self Storage of York - Fairhope`;
+export const heading5 = `Al Cheapo's Self Storage - Fairhope`;
 
-export const heading6 = `Self Storage of York - Robertsdale`;
+export const heading6 = `Al Cheapo's Self Storage - Robertsdale`;
 
 
 export const unitSizerLocation1 = [
@@ -262,8 +262,7 @@ export const unitSizerLocation2 = [
         text: '5\' x 10\' Storage Unit',
         alt: '5\' x 10\' Storage Unit Graphic ',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
-        data: `This unit is approximately 50 sq feet of space that can hold the contents of one small room, such as:
-        `,
+        data: `This unit is approximately 50 sq feet of space that can hold the contents of one small room, such as:`,
         amenities: [
             { content: 'Chairs', },
             { content: 'Small Desks', },
@@ -274,6 +273,22 @@ export const unitSizerLocation2 = [
             { content: 'Mattresses' }
             ],
     },
+    {
+        
+        text: '5\' x 15\' Storage Unit',
+        alt: '5\' x 15\' Storage Unit Graphic',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x15.png',
+        data: `This unit is approximately 75 sq feet of space that can hold the contents of one small room, such as:`,
+        amenities: [
+          { content: 'Chairs', },
+          { content: 'Small desks', },
+          { content: 'Small Bookcases', },
+          { content: 'Suitcases', },
+          { content: 'Lamps', },
+          { content: 'Kitchenware', },
+          { content : 'Mattresses' },
+        ],
+      },
     {
         text: '10\' x 10\' Storage Unit',
         alt: '10\' x 10\' Storage Unit Graphic ',
@@ -289,7 +304,21 @@ export const unitSizerLocation2 = [
             { content: 'Kitchen Appliances' },
         ],
     },
-   
+    {
+        
+        text: '10\' x 15\' Storage Unit',
+        alt: '10\' x 15\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        data: `This unit is approximately 150 sq feet of space that can hold the contents of two rooms, such as:`,
+        amenities: [
+          { content: 'Chairs', },
+          { content: 'Small desks', },
+          { content: 'Bookcases', },
+          { content: 'Furniture', },
+          { content: 'Suitcases', },
+          { content : 'Kitchen Appliances'}
+        ],
+      },
     {
         text: '10\' x 20\' Storage Unit',
         alt: '10\' x 20\' Storage Unit Graphic ',
@@ -304,36 +333,7 @@ export const unitSizerLocation2 = [
             { content: 'Tow Trailer', },
             ],
     },
-    {
-        text: '10\' x 25\' Storage Unit',
-        alt: '10\' x 25\' Storage Unit Graphic ',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x25.png',
-        data: `This unit is approximately 250 sq feet of space that can hold the contents of about five rooms.
-        `,
-        amenities: [
-            { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
-            { content: 'Furniture', },
-            { content: 'Mattresses' },
-            { content: 'Bookcases', },
-            { content: 'Tow Trailer', },
-            ],
-    },
-    {
-        text: '10\' x 30\' Storage Unit',
-        alt: '10\' x 30\' Storage Unit Graphic ',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x30.png',
-        data: `This unit is approximately 300sq feet of space that can store the contents of a multi-bedroom home,
-        including.`,
-        amenities: [
-            { content: 'Appliances', },
-            { content: 'Car or Small Boat', },
-            { content: 'Furniture', },
-            { content: 'Mattresses', },
-            { content: 'Bookcases', },
-            { content: 'Tow Trailer', },
-            ],
-    }
+   
 ];
 export const unitSizerLocation3 = [
     {
@@ -674,7 +674,7 @@ export const unitSizerLocation6 = [
 ];
 
 
-export const aboutUsHeadingLocation1 = `Self Storage Units in West Mifflin, PA`;
+export const aboutUsHeadingLocation1 = `About Us`;
 
 export const aboutUsHeadingLocation2 = `About Us`;
 
@@ -708,7 +708,7 @@ export const aboutUsImageLocation6 = ``;
 
 export const aboutUsLocation1 = [
     {
-        p: `Self Storage of York and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years. As a locally owned & operated facility, rest assured we know a thing or two about taking care of our valued customers! You’ll find all of the modern amenities you need to make that move, remodel, or reclaiming that garage a breeze!`,
+        p: `Al Cheapo's Self Storage and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years. As a locally owned & operated facility, rest assured we know a thing or two about taking care of our valued customers! You’ll find all of the modern amenities you need to make that move, remodel, or reclaiming that garage a breeze!`,
 
     },
     {

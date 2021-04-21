@@ -4,7 +4,7 @@ export const galleryHome = [
     url: `row-of-self-storage-units`,
     // tslint:disable-next-line:max-line-length
     thumb: `row-of-self-storage-units`,
-    alt: `a single story self storage building with the name Self Storage of York and a phone number painted on the roof`
+    alt: `a single story self storage building with the name Al Cheapo's Self Storage and a phone number painted on the roof`
   },
   {
     // tslint:disable-next-line: max-line-length

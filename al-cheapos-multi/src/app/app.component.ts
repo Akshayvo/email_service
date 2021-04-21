@@ -12,7 +12,7 @@ import { NavigationService } from './services/navigation.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Self Storage of York';
+  title = "Al Cheapo's Self Storage";
   flag: boolean;
   public offsets: number[];
   x: any;

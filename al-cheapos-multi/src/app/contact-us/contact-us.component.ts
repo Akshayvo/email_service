@@ -103,9 +103,9 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('platt-ave')) {
+    if (this.router.url.includes('storage-square')) {
       this.og = ogContactPageLocation1;
-    } else if (this.router.url.includes('marquis-ave')) {
+    } else if (this.router.url.includes('aarons-space-station')) {
       this.og = ogContactPageLocation2;
     } else if (this.router.url.includes('lincoln-ave')) {
       this.og = ogContactPageLocation3;
@@ -124,9 +124,9 @@ public fetchMetaData() {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('platt-ave')) {
+  if (this.router.url.includes('storage-square')) {
     this.twitter = twitterContactPageLocation2;
-  } else if (this.router.url.includes('marquis-ave')) {
+  } else if (this.router.url.includes('aarons-space-station')) {
     this.twitter = twitterContactPageLocation1;
   } else if (this.router.url.includes('lincoln-ave')) {
     this.twitter = twitterContactPageLocation3;
@@ -171,9 +171,9 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('platt-ave')) {
+    if (this.router.url.includes('storage-square')) {
       this.fetchContactDetailsLocation1();
-    } else if (this.router.url.includes('marquis-ave')) {
+    } else if (this.router.url.includes('aarons-space-station')) {
       this.fetchContactDetailsLocation2();
     } else if (this.router.url.includes('lincoln-ave')) {
       this.fetchContactDetailsLocation3();
@@ -187,7 +187,7 @@ public fetchTwitter() {
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `Self Storage of York - Platt Ave`;
+    this.heading = `Al Cheapo's Self Storage - Storage Square`;
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
@@ -195,34 +195,34 @@ public fetchTwitter() {
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading = `Self Storage of York - Marquis Ave`;
+    this.heading = `Al Cheapo's Self Storage - Aaron's Space Station`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = `Self Storage of York - Lincoln Ave`;
+    this.heading = `Al Cheapo's Self Storage - Lincoln Ave`;
     this.locationId = '3'
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
-    this.heading = `Self Storage of York - Belforest`;
+    this.heading = `Al Cheapo's Self Storage - Belforest`;
     this.locationId = '4'
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
   } 
 
   public fetchContactDetailsLocation5() {
-    this.heading = `Self Storage of York - Fairhope`;
+    this.heading = `Al Cheapo's Self Storage - Fairhope`;
     this.locationId = '5'
     this.contactDetails = contactsLocation5;
     this.hoursDetails = hoursLocation5;
   } 
 
   public fetchContactDetailsLocation6() {
-    this.heading = `Self Storage of York - Robertsdale`;
+    this.heading = `Al Cheapo's Self Storage - Robertsdale`;
     this.locationId = '6'
     this.contactDetails = contactsLocation6;
     this.hoursDetails = hoursLocation6;

@@ -3,25 +3,25 @@
 </app-script-hack> -->
 <ngx-json-ld [json]="script"></ngx-json-ld>
 <!-- <div class="jumbotron-container"> -->
-<div class="jumbotron-home">
-  <div class="jumbotron-top jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
-    <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
-      </div>
-      <div class="container">
-        <div class="jumbotorn-skew-text">
-          <div class="disp" *ngFor="let jumbotron of jumbotron">
-            <h2  class="my-4">
-              {{jumbotron.h2}}
-            </h2>
-          <p class="text-justify">{{jumbotron.blurb}}</p>
-          </div>
-          <!-- <div class="jumbotorn-button">
-            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
-          </div> -->
+  <div class="jumbotron-home">
+    <div class="jumbotron-top jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+      <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+        </div>
+        <div class="container">
+          <div class="jumbotorn-skew-text">
+            <div class="disp" *ngFor="let jumbotron of jumbotron">
+              <h2  class="my-4">
+                {{jumbotron.h2}}
+              </h2>
+            <p class="text-justify">{{jumbotron.blurb}}</p>
+            </div>
+            <!-- <div class="jumbotorn-button">
+              <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+              <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
+            </div> -->
+            </div>
           </div>
         </div>
-      </div>
     
   <!-- <div class="for-mobile-view"> -->
     <!-- <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
@@ -141,15 +141,15 @@
   <div class="service">
       <div class="container py-5">
         <div class="row">
-          <div class="col-lg-6 pt-2">
+          <div class="col-lg-6 py-2">
             <h1  class="pb-4">Self Storage Units in West Mifflin, PA</h1>
             <div *ngFor="let para of serviceOffered">
               <p>{{ para.p }}</p>
             </div>
           </div>
-          <div class="col-lg-6 text-center">
+          <div class="col-lg-6 py-3 text-center">
             <!-- <app-photos></app-photos> -->
-            <img src="{{imageBaseUrl}}/storage-square.{{imagetype}}" width="100%" alt="the inside of a self storage unit with luggage, a bicycle, and shelving" class="sectionImage">
+            <img src="{{imageBaseUrl}}/storage-square-homepage.{{imagetype}}" width="100%" alt="the inside of a self storage unit with luggage, a bicycle, and shelving" class="sectionImage">
           </div>
         </div>
       </div>

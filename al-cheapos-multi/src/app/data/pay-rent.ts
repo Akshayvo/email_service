@@ -13,20 +13,20 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: 'Platt Ave',
-    address: '1622 N Platte Ave York, NE 68467',
-    url: 'platt-ave/rent-sub/login'
+    facility: 'Storage Square',
+    address: '4021 Homestead Duquesne Rd, West Mifflin, PA 15122',
+    url: 'storage-square/rent-sub/login'
   },
   {
-    facility: 'Marquis Ave',
-    address: '115 Marquis Ave York, NE 68467',
-    url: 'marquis-ave/rent-sub/login'
+    facility:  "Aaron's Space Station",
+    address: '676 Thompson Run Rd, West Mifflin, PA 15122',
+    url: 'aarons-space-station/rent-sub/login'
   },
-  {
-    facility: 'Lincoln Ave',
-    address: '2700 N Lincoln Ave York, NE 68467',
-    url: 'lincoln-ave/rent-sub/login'
-  },
+  // {
+  //   facility: 'Lincoln Ave',
+  //   address: '2700 N Lincoln Ave York, NE 68467',
+  //   url: 'lincoln-ave/rent-sub/login'
+  // },
   // {
   //   facility: ' Foley',
   //   address: '17860 US-98, Foley, AL 36535',
@@ -61,20 +61,20 @@ export const tableData = [
 
 export const tableDataContactPage = [
   {
-    facility: 'Platt Ave',
-    address: '1622 N Platte Ave York, NE 68467',
-    url: 'platt-ave'
+    facility: 'Storage Square',
+    address: '4021 Homestead Duquesne Rd, West Mifflin, PA 15122',
+    url: 'storage-square'
   },
   {
-    facility: 'Marquis Ave',
-    address: '115 Marquis Ave York, NE 68467',
-    url: 'marquis-ave'
+    facility:  "Aaron's Space Station",
+    address: '676 Thompson Run Rd, West Mifflin, PA 15122',
+    url: 'aarons-space-station'
   },
-  {
-    facility: 'Lincoln Ave',
-    address: '2700 N Lincoln Ave York, NE 68467',
-    url: 'lincoln-ave'
-  },
+  // {
+  //   facility: 'Lincoln Ave',
+  //   address: '2700 N Lincoln Ave York, NE 68467',
+  //   url: 'lincoln-ave'
+  // },
   // {
   //   facility: 'Belforest',
   //   address: '11455 Co Rd 64, Daphne, AL 36526',

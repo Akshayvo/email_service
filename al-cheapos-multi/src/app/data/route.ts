@@ -89,7 +89,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: `${environment.locationName}/platt-ave`,
+    { path: `${environment.locationName}/storage-square`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -124,7 +124,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/marquis-ave`,
+    { path: `${environment.locationName}/aarons-space-station`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -302,7 +302,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/platt-ave', component: HomeComponent,
+    { path: 'review/storage-square', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -310,7 +310,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/marquis-ave', component: HomeComponent,
+  { path: 'review/aarons-space-station', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -353,11 +353,11 @@ export const apiRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/platt-ave', component: PayRentComponent,
+    path: 'pay-rent/storage-square', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/marquis-ave', component: PayRentComponent,
+    path: 'pay-rent/aarons-space-station', component: PayRentComponent,
     children: childroute
   },
   {
@@ -378,8 +378,8 @@ export const apiRoutes = [
   },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-platt-ave', component: ContactUsComponent},
-  { path: 'contact-marquis-ave', component: ContactUsComponent},
+  { path: 'contact-storage-square', component: ContactUsComponent},
+  { path: 'contact-aarons-space-station', component: ContactUsComponent},
   { path: 'contact-lincoln-ave', component: ContactUsComponent},
   { path: 'contact-belforest', component: ContactUsComponent},
   { path: 'contact-fairhope', component: ContactUsComponent},
@@ -392,7 +392,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: `${environment.locationName}/platt-ave`,
+  { path: `${environment.locationName}/storage-square`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -403,7 +403,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/marquis-ave`,
+  { path: `${environment.locationName}/aarons-space-station`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -458,7 +458,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/platt-ave', component: HomeComponent,
+  { path: 'review/storage-square', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -466,7 +466,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/marquis-ave', component: HomeComponent,
+  { path: 'review/aarons-space-station', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -508,8 +508,8 @@ export const iFrameRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-platt-ave', component: PayRentFloridaComponent },
-  { path: 'pay-rent-marquis-ave', component: PayRentChesterComponent},
+  { path: 'pay-rent-storage-square', component: PayRentFloridaComponent },
+  { path: 'pay-rent-aarons-space-station', component: PayRentChesterComponent},
   { path: 'pay-rent-lincoln-ave', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},
   { path: 'pay-rent-fairhope', component: PayRentMontgomeryComponent},

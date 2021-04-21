@@ -131,15 +131,15 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   public fetchContactDetail() {
 
-    if (this.router.url.includes('platt-ave')) {
+    if (this.router.url.includes('storage-square')) {
       this.id = 1;
-      this.name = 'Self Storage of York - Platt Ave';
+      this.name = "Al Cheapo's Self Storage - Aaron's Space Station";
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
-    } else  if (this.router.url.includes('marquis-ave')) {
+    } else  if (this.router.url.includes('aarons-space-station')) {
       this.id = 2;
-      this.name = 'Self Storage of York - Marquis Ave';
+      this.name = "Al Cheapo's Self Storage - Aaron's Space Station";
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
@@ -179,9 +179,9 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('platt-ave')) {
+    if (this.router.url.includes('storage-square')) {
       this.og = ogPayRentPageLocation1;
-    } else  if (this.router.url.includes('marquis-ave')) {
+    } else  if (this.router.url.includes('aarons-space-station')) {
       this.og = ogPayRentPageLocation2;
     } else if (this.router.url.includes('lincoln-ave')) {
       this.og = ogPayRentPageLocation3;
@@ -195,9 +195,9 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
 
 public fetchTwitter() {
-  if (this.router.url.includes('platt-ave')) {
+  if (this.router.url.includes('storage-square')) {
     this.twitter = twitterPayRentPageLocation1;
-  } else if (this.router.url.includes('marquis-ave')) {
+  } else if (this.router.url.includes('aarons-space-station')) {
       this.twitter = twitterPayRentPageLocation2;
   } else if (this.router.url.includes('lincoln-ave')) {
         this.twitter = twitterPayRentPageLocation3;

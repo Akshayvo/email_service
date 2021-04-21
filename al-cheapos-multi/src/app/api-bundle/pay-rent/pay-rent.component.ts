@@ -45,10 +45,10 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('platt-ave')) {
-      this.name = ' Platt Ave';
-  } else if (this.router.url.includes('marquis-ave')) {
-    this.name = ' Marquis';
+    if (this.router.url.includes('storage-square')) {
+      this.name = ' Storage Square';
+  } else if (this.router.url.includes('aarons-space-station')) {
+    this.name = "Aaron's Space Station";
   } else if (this.router.url.includes('lincoln-ave')) {
     this.name = ' Lincoln';
   } else if (this.router.url.includes('belforest')) {
@@ -71,9 +71,9 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('platt-ave')) {
+    if (this.router.url.includes('storage-square')) {
       this.og = ogPayRentPageLocation1;
-    } else if (this.router.url.includes('marquis-ave')) {
+    } else if (this.router.url.includes('aarons-space-station')) {
       this.og = ogPayRentPageLocation2;
     } else if (this.router.url.includes('lincoln-ave')) {
       this.og = ogPayRentPageLocation3;
@@ -87,9 +87,9 @@ export class PayRentComponent implements OnInit {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('platt-ave')) {
+  if (this.router.url.includes('storage-square')) {
     this.twitter = twitterPayRentPageLocation1;
-  } else if (this.router.url.includes('marquis-ave')) {
+  } else if (this.router.url.includes('aarons-space-station')) {
     this.twitter = twitterPayRentPageLocation2;
   } else if (this.router.url.includes('lincoln-ave')) {
     this.twitter = twitterPayRentPageLocation3;
