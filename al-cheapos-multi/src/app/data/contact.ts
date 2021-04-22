@@ -51,7 +51,7 @@ export const contactsLocation1 = [
         id: 2,
         label: 'Mailing Address: ',
         data: '5158 Cleveland Avenue, West Mifflin, PA, 15122.',
-        class: 'fas fa-mail-bulk mr-2 iconColor',
+        class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'https://goo.gl/maps/kX4PK9aN5tmse56PA'  
     },
     {
@@ -114,16 +114,16 @@ export const contactsLocation2 = [
         id: 2,
         label: 'Mailing Address: ',
         data: '5158 Cleveland Avenue, West Mifflin, PA, 15122.',
-        class: 'fas fa-mail-bulk',
+        class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'https://goo.gl/maps/kX4PK9aN5tmse56PA'  
     },
     {
         id: 3,
         label: 'Email: ',
-        data: 'selfstorageofyork@gmail.com',
-        email: `selfstorageofyork@gmail.com`,
+        data: 'aaronsspacestation@gmail.com',
+        email: `aaronsspacestation@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`selfstorageofyork@gmail.com`'
+        redirect: 'mailto:`aaronsspacestation@gmail.com`'
     },
     {
         id: 4,
@@ -132,19 +132,13 @@ export const contactsLocation2 = [
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:4124610556'
     },
-    {
-        id: 5,
-        label: 'Billing Phone: ',
-        data: '(402) 366-0849',
-        class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:4023660849'
-    },
+    
 ];
 
 export const hoursLocation2 = [
     {
         label: '7 Days a Week: ',
-        data: '8:00AM to 6:00PM',
+        data: '8:00AM to 8:00PM',
     },
     
 ];

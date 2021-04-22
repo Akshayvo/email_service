@@ -101,8 +101,11 @@ export class LoginComponent implements OnInit, OnDestroy {
           } else {
           if (this.router.url.includes('rent-sub')) {
             this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/payment`]);
-          } else {
+          } else if (this.router.url.includes('sign-up')) {
             this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
+          } 
+          else {
+            this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/update-information`]);
           }
         }
         } else {
@@ -231,8 +234,12 @@ public fetchTwitter() {
             } else {
             if (this.router.url.includes('rent-sub')) {
               this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/payment`]);
-            } else {
+            } 
+            else if (this.router.url.includes('sign-up')) {
               this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
+            } 
+            else {
+              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/update-information`]);
             }
           }
           } else {
