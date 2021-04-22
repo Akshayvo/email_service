@@ -68,6 +68,7 @@ a {
     img {
       position: absolute;
       top: 9px;
+      padding-right: 5px;
     }
   }
 
@@ -113,6 +114,18 @@ a {
   border: 1px #efefef solid;
 }
 
+@media only screen and (max-width: 1199px) {
+  .navbar {
+    .navbar-brand {
+      img {
+        height: 45px;
+        top: 20px;
+        
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 991px) {
   .display {
     display: none;
@@ -150,6 +163,7 @@ a {
     .navbar-brand {
       img {
         height: 45px;
+        top: 5px;
       }
     }
   }
@@ -220,6 +234,24 @@ a {
     .nav-scroll {
       overflow-y: auto;
     }
+
+    
   }
   
+
+  @media screen and (max-width: 460px){
+    .navbar {
+      .navbar-brand {
+        img {
+          height: 42px;
+          top: 10px;
+        }
+      }
+      button {
+        
+        margin-right: 0px;
+      }
+    }
+  
+  }
 

@@ -9,6 +9,7 @@
               <span *ngFor="let contact of contacts" class="py-2 each-contact">
                 <span class="pl-3"><i class="{{contact.class}}"></i></span><span *ngIf="contact?.id === 2 || contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></span>
                 <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">{{contact.data}}</a></ng-template>
+                
               </span>
             </div>
           </div>

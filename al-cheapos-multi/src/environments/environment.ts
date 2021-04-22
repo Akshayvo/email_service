@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'new-al-cheapos', // state/city  **Remeber to update locationName in sitemap.xml as well
+  locationName: 'pennsylvania/west-mifflin', // state/city  **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}

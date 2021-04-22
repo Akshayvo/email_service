@@ -10,7 +10,7 @@ export const contactsHomePage = [
         id: 2,
         label: 'Mailing Address: ',
         data: '5158 Cleveland Avenue, West Mifflin, PA, 15122.',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        class: 'fas fa-mail-bulk mr-2 iconColor',
         redirect: 'https://goo.gl/maps/kX4PK9aN5tmse56PA'  
     },
     {
@@ -51,7 +51,7 @@ export const contactsLocation1 = [
         id: 2,
         label: 'Mailing Address: ',
         data: '5158 Cleveland Avenue, West Mifflin, PA, 15122.',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        class: 'fas fa-mail-bulk mr-2 iconColor',
         redirect: 'https://goo.gl/maps/kX4PK9aN5tmse56PA'  
     },
     {
@@ -114,7 +114,7 @@ export const contactsLocation2 = [
         id: 2,
         label: 'Mailing Address: ',
         data: '5158 Cleveland Avenue, West Mifflin, PA, 15122.',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        class: 'fas fa-mail-bulk',
         redirect: 'https://goo.gl/maps/kX4PK9aN5tmse56PA'  
     },
     {

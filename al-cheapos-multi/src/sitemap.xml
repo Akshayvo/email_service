@@ -12,24 +12,14 @@
     <loc> https://al-cheapos-staging.netlify.app/storage-tips </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
-  <url>
-    <loc> 
-      https://al-cheapos-staging.netlify.app/location/lincoln-ave/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
+  
   <url>
     <loc> 
       https://al-cheapos-staging.netlify.app/contact-us
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
-  <url>
-    <loc> 
-      https://al-cheapos-staging.netlify.app/location/lincoln-ave
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
+ 
   
   
 
@@ -74,24 +64,14 @@
 
   
   
-  <url>
-    <loc> 
-      https://al-cheapos-staging.netlify.app/location/lincoln-ave/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
+  
   <url>
     <loc> 
       https://al-cheapos-staging.netlify.app/contact-aarons-space-station
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
-  <url>
-    <loc> 
-      https://al-cheapos-staging.netlify.app/contact-lincoln-ave
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
+  
   
   <url>
     <loc>
@@ -101,18 +81,8 @@
   </url>
  
   
-  <url>
-    <loc>
-      https://al-cheapos-staging.netlify.app/pay-rent/lincoln-ave
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://al-cheapos-staging.netlify.app/contact-lincoln-ave
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
+  
+  
   <url>
     <loc> 
       https://al-cheapos-staging.netlify.app/pay-rent/aarons-space-station
@@ -120,12 +90,7 @@
     <lastmod>2020-09-21</lastmod>
   </url>
   
-  <url>
-    <loc> 
-      https://al-cheapos-staging.netlify.app/pay-rent/lincoln-ave/rent-sub/login
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
+ 
   <url>
     <loc>
       https://al-cheapos-staging.netlify.app/pay-rent/aarons-space-station/rent-sub/login
