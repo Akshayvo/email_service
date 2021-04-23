@@ -189,14 +189,11 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
         AlternateName: [''],
-        AlternatePhone:   ['', [  conditionalValidator(
-          (() => this.showAltDetails === false),
-          Validators.required
-        ),
+        AlternatePhone:   ['',
           Validators.pattern(
             '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
             )
-        ]],
+        ],
         AlternateAddressLine1: [''],
         AlternateAddressLine2: [''],
         AlternateCity: [''],
@@ -307,6 +304,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
    this.submitted = true;
    this.dataSharingService.objTenant = this.reserveUnitForm.value.objTenant;
    this.dataSharingService.MoveIn.dteMoveIn = this.convertDate(this.reserveUnitForm.value.dteMoveIn);
+   console.log(this.reserveUnitForm)
    if (this.reserveUnitForm.invalid) {
      return;
     } else {
