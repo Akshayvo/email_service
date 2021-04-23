@@ -24,11 +24,13 @@ export class PayRentComponent implements OnInit {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       this.name = 'Bluegrass Storage - Filiatreau Lane';
       this.contact = contactsLocation1;
-    } else  if (this.router.url.includes('springfield-road')) {
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-      this.name = 'Bluegrass Storage - Springfield Road';
-      this.contact = contactsLocation2;
+
     }
+    //  else  if (this.router.url.includes('springfield-road')) {
+    //   this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+    //   this.name = 'Bluegrass Storage - Springfield Road';
+    //   this.contact = contactsLocation2;
+    // }
     // this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
     this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[1].path;
     localStorage.setItem('paymentNavigationUrl', this.dataSharingService.paymentNavigation);

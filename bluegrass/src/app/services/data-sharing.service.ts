@@ -16,15 +16,15 @@ export class DataSharingService {
   navigateToPrevious: string;
   paymentNavigation: string;
 
-  // locationAPIKey = {
-  //   loc1: 'dzJ0OVcxSjYqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29169
-  //   loc2: 'dzJ0OVcxSjcqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29170
-  // };
-
-  locationAPIKey = {                                                     // demo north
-    loc1: 'bTJUOG40TDZbNls6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-    loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  locationAPIKey = {
+    loc1: 'dzJ0OVcxSjYqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29169
+    // loc2: 'dzJ0OVcxSjcqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29170
   };
+
+  // locationAPIKey = {                                                     // demo north
+  //   loc1: 'bTJUOG40TDZbNls6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  //   loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
+  // };
 
   apiKey = '';
 

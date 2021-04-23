@@ -54,14 +54,15 @@ export class LocationComponent implements OnInit {
           });
           this.titleService.setTitle(`${this.locationPage1Title}`);
           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
-      } else if (this.router.url.includes('/location/springfield-road')) {
-          this.meta.addTag({
-            name: 'description',
-            content: `${this.locationPage2Content}`
-          });
-          this.titleService.setTitle(`${this.locationPage2Title}`);
-          this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-      }
+      } 
+      // else if (this.router.url.includes('/location/springfield-road')) {
+      //     this.meta.addTag({
+      //       name: 'description',
+      //       content: `${this.locationPage2Content}`
+      //     });
+      //     this.titleService.setTitle(`${this.locationPage2Title}`);
+      //     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
+      // }
       this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
       this.imageBaseUrl = this.uaParserService.baseUrl;
     }
