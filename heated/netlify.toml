@@ -27,6 +27,42 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "https://heatedselfstorage.ca/reviews/"
+  to = "https://heatedselfstorage.ca/"
+  status = 301
+  [[redirects]]
+  from = "https://heatedselfstorage.ca/features/"
+  to = "https://heatedselfstorage.ca/"
+  status = 301
+  [[redirects]]
+  from = "https://heatedselfstorage.ca/storage-calculator/"
+  to = "https://heatedselfstorage.ca/unit-sizer"
+  status = 301
+  [[redirects]]
+  from = "https://heatedselfstorage.ca/rent-storage/"
+  to = "https://heatedselfstorage.ca/"
+  status = 301
+  [[redirects]]
+  from = "https://heatedselfstorage.ca/heated-storage"
+  to = "https://heatedselfstorage.ca/"
+  status = 301
+  [[redirects]]
+  from = "https://heatedselfstorage.ca/exterior-storage/"
+  to = "https://heatedselfstorage.ca/"
+  status = 301
+  [[redirects]]
+  from = "https://heatedselfstorage.ca/terms-and-conditions/"
+  to = "https://heatedselfstorage.ca/privacy-policy"
+  status = 301
+  [[redirects]]
+  from = "https://heatedselfstorage.ca/sitelink-terms-conditions/"
+  to = "https://heatedselfstorage.ca/privacy-policy"
+  status = 301
+  [[redirects]]
+  from = "https://heatedselfstorage.ca/location/CAN/ON/Orillia/heated-inc-1432/"
+  to = "https://heatedselfstorage.ca/view-rates"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
