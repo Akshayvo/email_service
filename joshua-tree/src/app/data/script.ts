@@ -31,7 +31,7 @@ export const ogHomePage = [
   },
   {
     property: `og:url`,
-    content: `https://joshua-tree.netlify.app/`
+    content: `https://joshuatreeministorage.com/`
   },
   {
     property: `og:image`,
@@ -86,7 +86,7 @@ speak with one of our friendly self storage managers to get access to your onlin
     },
     {
       property: `og:url`,
-      content: `https://joshua-tree.netlify.app/pay-rent/rent-sub/login`
+      content: `https://joshuatreeministorage.com/pay-rent/rent-sub/login`
     },
     {
       property: `og:image`,
@@ -141,7 +141,7 @@ speak with one of our friendly self storage managers to get access to your onlin
     },
     {
       property: `og:url`,
-      content: `https://joshua-tree.netlify.app/storage-tips`
+      content: `https://joshuatreeministorage.com/storage-tips`
     },
     {
       property: `og:image`,
@@ -195,7 +195,7 @@ speak with one of our friendly self storage managers to get access to your onlin
     },
     {
       property: `og:url`,
-      content: `https://joshua-tree.netlify.app/contact-us`
+      content: `https://joshuatreeministorage.com/contact-us`
     },
     {
       property: `og:image`,

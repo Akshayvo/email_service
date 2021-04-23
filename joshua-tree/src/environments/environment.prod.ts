@@ -12,5 +12,5 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   APIKey: `bTl+Nm45eTA6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 9690
-  websiteUrl: 'https://joshua-tree.netlify.app/'
+  websiteUrl: 'https://joshuatreeministorage.com'
 };

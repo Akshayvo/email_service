@@ -17,7 +17,7 @@ export const environment = {
   appId: 'Joshua Tree Mini Storage - Staging',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://joshua-tree.netlify.app/',
+  websiteUrl: 'https://joshuatreeministorage.com',
   // baseUrl: `https://simapi.syrasoft.com/1/api/`,
   // DemoNorthAPIKey: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
   APIKey: `bTl+Nm45eTA6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
