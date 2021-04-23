@@ -24,9 +24,9 @@
         <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
           <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Rent a Unit</button>
         </td>
-        <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
+        <!-- <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
           <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve a Unit</button>
-      </td>
+      </td> -->
         <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled; else other_climate">
           <strong> Yes</strong>
         </td>
@@ -69,9 +69,9 @@
         <div class="py-1 buttons">
             <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)">Rent a Unit</button>
         </div>
-        <div class=" py-1 buttons" >
+        <!-- <div class=" py-1 buttons" >
           <button class="btn  btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve a Unit</button>
-      </div>
+      </div> -->
       </div>
       <ng-template #other> 
         <div class="text-right" ><p class="card-text ">Please call the facility to reserve a unit or rent a unit.</p></div>
