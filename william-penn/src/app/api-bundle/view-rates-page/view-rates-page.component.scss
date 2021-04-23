@@ -27,7 +27,7 @@ table {
   width: -webkit-fill-available;
 
   thead {
-    background: $primary;
+    background: $secondary;
     th {
       color: $white;
       font-size: 1rem;
@@ -39,7 +39,6 @@ table {
     }
     tr {
       td {
-
         button {
           font-size: 0.8rem;
           min-width: 120px;
@@ -62,7 +61,7 @@ table {
 
 .loader {
   border: 5px solid #f3f3f3;
-  border-top: 5px solid $primary;
+  border-top: 5px solid $secondary;
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -71,8 +70,12 @@ table {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 // try to use div
@@ -119,7 +122,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 767px)  and (min-width: 381px) {
+@media only screen and (max-width: 767px) and (min-width: 381px) {
   .buttons {
     .btn {
       min-width: 150px;

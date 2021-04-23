@@ -14,7 +14,7 @@ img {
 }
 
 .contact-header {
-  display: inline;
+  display: inline-block;
 
   .contact-details {
     color: $white;
@@ -49,24 +49,24 @@ img {
   }
 
   .nav-link:hover {
-    color: $primary;
+    color: $secondary;
   }
 
   .nav-link-active {
-    color: $primary;
-    border-bottom: 5px solid $primary;
+    color: $secondary;
+    border-bottom: 5px solid $secondary;
   }
 
   button {
-    border-color: $primary;
+    border-color: $secondary;
 
     .iconColor {
-      color: $primary;
+      color: $secondary;
     }
   }
 
   button:focus {
-    outline: 5px auto $primary;
+    outline: 5px auto $secondary;
   }
 }
 
@@ -82,15 +82,14 @@ img {
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   .navbar {
-
     a {
       font-size: 12px;
     }
-  
-    .nav-link {
-      // padding: 10px;
-      // font-size: 1rem;
-    }
+
+    // .nav-link {
+    //   // padding: 10px;
+    //   // font-size: 1rem;
+    // }
   }
 }
 
@@ -116,5 +115,11 @@ img {
   .navbar-nav-scroll {
     height: 200px;
     overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 366px) {
+  h4 {
+    font-size: 1.2rem;
   }
 }

@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
-import { UAParser } from 'ua-parser-js';
+import { Injectable } from "@angular/core";
+import { UAParser } from "ua-parser-js";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class UaParserService {
   uaParser: any;
@@ -17,23 +17,26 @@ export class UaParserService {
 
   determineBaseUrl() {
     if (this.browserDetails) {
-      const { browser: { name = 'Chrome', major = '32 '} } = this.browserDetails;
+      const {
+        browser: { name = "Chrome", major = "32 " },
+      } = this.browserDetails;
       switch (name) {
-        case 'Chrome':
-          this.typeOfImages = (major && major < 32) ? 'JPG' : 'WEBP';
+        case "Chrome":
+          this.typeOfImages = major && major < 32 ? "JPG" : "WEBP";
           break;
-        case 'Firefox':
-            this.typeOfImages = (major && major < 65) ? 'JPG' : 'WEBP';
+        case "Firefox":
+          this.typeOfImages = major && major < 65 ? "JPG" : "WEBP";
           break;
         default:
-          this.typeOfImages = 'JPG';
+          this.typeOfImages = "JPG";
           break;
       }
     }
-    if (this.typeOfImages === 'WEBP') {
-      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/webp`;
+    if (this.typeOfImages === "WEBP") {
+      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/William_Penn/webp`;
     } else {
-      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg';
+      this.baseUrl =
+        "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/William_Penn/jpg";
     }
   }
 }

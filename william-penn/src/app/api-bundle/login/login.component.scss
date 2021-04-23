@@ -1,11 +1,9 @@
-
 @import "../../../styles.scss";
 
 .vertical-line {
   border-left: 1px solid black;
   padding-left: 50px;
 }
-
 
 .display-none {
   display: none;
@@ -26,7 +24,7 @@
 
 .forgot-link {
   a {
-    color: $primary;
+    color: $secondary;
     text-decoration: underline;
     cursor: pointer;
   }
@@ -34,7 +32,7 @@
 
 .loader {
   border: 5px solid #f3f3f3;
-  border-top: 5px solid $primary;
+  border-top: 5px solid $secondary;
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -47,8 +45,12 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .button-display {

@@ -1,30 +1,23 @@
-import { objSIMSetting } from './configuration';
+import { objSIMSetting } from "./configuration";
 
 export const dataViewRates = [
-    {
-      p: `Sample Self Storage - North has been serving Baldwinsville, and the surrounding communities
-      with quality regular and climate controlled self storage units for nearly two decades. We have
-      the experience and commitment to modern conveniences you need to make your next storage project an easy one`,
-    },
-    {
-      p: `At Sample Self Storage - North, you'll have access to our services with an online tenant portal
-      for contactless rentals, and online payments. If you're here after hours and want to make a payment,
-      stop into the office's foyer and use our 24-hour kiosk!`
-    },
-    {
-      p: `Our residential storage users love our convenient location and affordable rates that take the stress
-      out of their move, renovation, or seasonal de-cluttering projects. An extra closet to an extra garage's
-      worth of space makes the most out of your home's space!
-      `
-    },
-    {
-      p: `Many local businesses in use our climate controlled storage units to save money by storing in a climate
-      controlled storage unit instead of expensive commercial real estate. We are the ideal space for your extra
-    inventory, or documents. Our 24-hour access policy is the ideal solution for your local business.`
-    }
+  {
+    p: `William Penn Self Storage provides affordable self storage services to New Alexandria, Greensburg, 
+        Saltsburg, Delmont, and the surrounding communities. Our brand new self storage units are the perfect 
+        solution for your next move, renovation, or other storage needs. Our residential users find our low prices, 
+        24-hour access, and friendly service make cleaning out that garage, attic, or basement an easier project. 
+        Local business owners find our climate controlled units are the perfect solution for equipment and document 
+        storage where a little extra protection from the elements is a must.`,
+  },
+  {
+    p: `Still have questions about your storage needs or the services we offer? Give us a call, or use our contact 
+        form to reach out! One of our friendly self storage professionals will be happy to assist you. You can also 
+        go right ahead and begin your contactless rental through our website. Just review the unit rates and availability, 
+        and click Move In when you’re ready.`,
+  },
 ];
 
-export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
+export const viewRatesAltText = `an open self storage unit revealing household belongings packed neatly on shelves`;
 
 export const th = [
   {
@@ -33,23 +26,23 @@ export const th = [
   },
   {
     data: `Rate`,
-    state: objSIMSetting.objUnitSizesSetting.blnShowRate
+    state: objSIMSetting.objUnitSizesSetting.blnShowRate,
   },
   {
-    data: 'deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+    data: "deposit",
+    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit,
   },
-  {  
+  {
     data: `Reserve a Unit`,
-    state: objSIMSetting.objActionSetting.blnAllowReservation
+    state: objSIMSetting.objActionSetting.blnAllowReservation,
   },
   {
     data: `Move In`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
+    state: objSIMSetting.objActionSetting.blnAllowMoveIn,
   },
   {
     data: `Climate Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+    state: objSIMSetting.objUnitSizesSetting.blnClimateControl,
   },
 ];
 
@@ -62,349 +55,348 @@ export const state = {
   climateControl: objSIMSetting.objUnitSizesSetting.blnClimateControl,
 };
 
-export const option =  [
-    {
-      description: 'Alabama',
-      id: 'AL'
-    },
-    {
-      description: 'Alaska',
-      id: 'AK'
-    },
-    {
-      description: 'Alberta',
-      id: 'AB'
-    },
-    {
-      description: 'American Samoa',
-      id: 'AS'
-    },
-    {
-      description: 'Arizona',
-      id: 'AZ'
-    },
-    {
-      description: 'Arkansas',
-      id: 'AR'
-    },
-    {
-      description: 'British Columbia',
-      id: 'BC'
-    },
-    {
-      description: 'California',
-      id: 'CA'
-    },
-    {
-      description: 'Colorado',
-      id: 'CO'
-    },
-    {
-      description: 'Connecticut',
-      id: 'CT'
-    },
-    {
-      description: 'Delaware',
-      id: 'DE'
-    },
-    {
-      description: 'District Of Columbia',
-      id: 'DC'
-    },
-    {
-      description: 'Federated States Of Micronesia',
-      id: 'FM'
-    },
-    {
-      description: 'Florida',
-      id: 'FL'
-    },
-    {
-      description: 'Georgia',
-      id: 'GA'
-    },
-    {
-      description: 'Guam',
-      id: 'GU'
-    },
-    {
-      description: 'Hawaii',
-      id: 'HI'
-    },
-    {
-      description: 'Idaho',
-      id: 'ID'
-    },
-    {
-      description: 'Illinois',
-      id: 'IL'
-    },
-    {
-      description: 'Indiana',
-      id: 'IN'
-    },
-    {
-      description: 'Iowa',
-      id: 'IA'
-    },
-    {
-      description: 'Kansas',
-      id: 'KS'
-    },
-    {
-      description: 'Kentucky',
-      id: 'KY'
-    },
-    {
-      description: 'Louisiana',
-      id: 'LA'
-    },
-    {
-      description: 'Maine',
-      id: 'ME'
-    },
-    {
-      description: 'Manitoba',
-      id: 'MB'
-    },
-    {
-      description: 'Marshall Islands',
-      id: 'MH'
-    },
-    {
-      description: 'Maryland',
-      id: 'MD'
-    },
-    {
-      description: 'Massachusetts',
-      id: 'MA'
-    },
-    {
-      description: 'Michigan',
-      id: 'MI'
-    },
-    {
-      description: 'Minnesota',
-      id: 'MN'
-    },
-    {
-      description: 'Mississippi',
-      id: 'MS'
-    },
-    {
-      description: 'Missouri',
-      id: 'MO'
-    },
-    {
-      description: 'Montana',
-      id: 'MT'
-    },
-    {
-      description: 'Nebraska',
-      id: 'NE'
-    },
-    {
-      description: 'Nevada',
-      id: 'NV'
-    },
-    {
-      description: 'Newfoundland and Labrador',
-      id: 'NL'
-    },
-    {
-      description: 'New Brunswick',
-      id: 'NB'
-    },
-    {
-      description: 'New Hampshire',
-      id: 'NH'
-    },
-    {
-      description: 'New Jersey',
-      id: 'NJ'
-    },
-    {
-      description: 'New Mexico',
-      id: 'NM'
-    },
-    {
-      description: 'New York',
-      id: 'NY'
-    },
-    {
-      description: 'Northwest Territories',
-      id: 'NT'
-    },
-    {
-      description: 'North Carolina',
-      id: 'NC'
-    },
-    {
-      description: 'North Dakota',
-      id: 'ND'
-    },
-    {
-      description: 'Northern Mariana Islands',
-      id: 'MP'
-    },
-    {
-      description: 'Nova Scotia',
-      id: 'NS'
-    },
-    {
-      description: 'Nunavut',
-      id: 'NU'
-    },
-    {
-      description: 'Ohio',
-      id: 'OH'
-    },
-    {
-      description: 'Oklahoma',
-      id: 'OK'
-    },
-    {
-      description: 'Ontario',
-      id: 'ON'
-    },
-    {
-      description: 'Oregon',
-      id: 'OR'
-    },
-    {
-      description: 'Palau',
-      id: 'PW'
-    },
-    {
-      description: 'Pennsylvania',
-      id: 'PA'
-    },
-    {
-      description: 'Prince Edward Island',
-      id: 'PE'
-    },
-    {
-      description: 'Puerto Rico',
-      id: 'PR'
-    },
-    {
-      description: 'Quebec',
-      id: 'QC'
-    },
-    {
-      description: 'Rhode Island',
-      id: 'RI'
-    },
-    {
-      description: 'Saskatchewan',
-      id: 'SK'
-    },
-    {
-      description: 'South Carolina',
-      id: 'SC'
-    },
-    {
-      description: 'South Dakota',
-      id: 'SD'
-    },
-    {
-      description: 'Tennessee',
-      id: 'TN'
-    },
-    {
-      description: 'Texas',
-      id: 'TX'
-    },
-    {
-      description: 'Utah',
-      id: 'UT'
-    },
-    {
-      description: 'Vermont',
-      id: 'VT'
-    },
-    {
-      description: 'Virgin Islands',
-      id: 'VI'
-    },
-    {
-      description: 'Virginia',
-      id: 'VA'
-    },
-    {
-      description: 'Washington',
-      id: 'WA'
-    },
-    {
-      description: 'West Virginia',
-      id: 'WV'
-    },
-    {
-      description: 'Wisconsin',
-      id: 'WI'
-    },
-    {
-      description: 'Wyoming',
-      id: 'WY'
-    },
-    {
-      description: 'Yukon',
-      id: 'YT'
-    },
+export const option = [
+  {
+    description: "Alabama",
+    id: "AL",
+  },
+  {
+    description: "Alaska",
+    id: "AK",
+  },
+  {
+    description: "Alberta",
+    id: "AB",
+  },
+  {
+    description: "American Samoa",
+    id: "AS",
+  },
+  {
+    description: "Arizona",
+    id: "AZ",
+  },
+  {
+    description: "Arkansas",
+    id: "AR",
+  },
+  {
+    description: "British Columbia",
+    id: "BC",
+  },
+  {
+    description: "California",
+    id: "CA",
+  },
+  {
+    description: "Colorado",
+    id: "CO",
+  },
+  {
+    description: "Connecticut",
+    id: "CT",
+  },
+  {
+    description: "Delaware",
+    id: "DE",
+  },
+  {
+    description: "District Of Columbia",
+    id: "DC",
+  },
+  {
+    description: "Federated States Of Micronesia",
+    id: "FM",
+  },
+  {
+    description: "Florida",
+    id: "FL",
+  },
+  {
+    description: "Georgia",
+    id: "GA",
+  },
+  {
+    description: "Guam",
+    id: "GU",
+  },
+  {
+    description: "Hawaii",
+    id: "HI",
+  },
+  {
+    description: "Idaho",
+    id: "ID",
+  },
+  {
+    description: "Illinois",
+    id: "IL",
+  },
+  {
+    description: "Indiana",
+    id: "IN",
+  },
+  {
+    description: "Iowa",
+    id: "IA",
+  },
+  {
+    description: "Kansas",
+    id: "KS",
+  },
+  {
+    description: "Kentucky",
+    id: "KY",
+  },
+  {
+    description: "Louisiana",
+    id: "LA",
+  },
+  {
+    description: "Maine",
+    id: "ME",
+  },
+  {
+    description: "Manitoba",
+    id: "MB",
+  },
+  {
+    description: "Marshall Islands",
+    id: "MH",
+  },
+  {
+    description: "Maryland",
+    id: "MD",
+  },
+  {
+    description: "Massachusetts",
+    id: "MA",
+  },
+  {
+    description: "Michigan",
+    id: "MI",
+  },
+  {
+    description: "Minnesota",
+    id: "MN",
+  },
+  {
+    description: "Mississippi",
+    id: "MS",
+  },
+  {
+    description: "Missouri",
+    id: "MO",
+  },
+  {
+    description: "Montana",
+    id: "MT",
+  },
+  {
+    description: "Nebraska",
+    id: "NE",
+  },
+  {
+    description: "Nevada",
+    id: "NV",
+  },
+  {
+    description: "Newfoundland and Labrador",
+    id: "NL",
+  },
+  {
+    description: "New Brunswick",
+    id: "NB",
+  },
+  {
+    description: "New Hampshire",
+    id: "NH",
+  },
+  {
+    description: "New Jersey",
+    id: "NJ",
+  },
+  {
+    description: "New Mexico",
+    id: "NM",
+  },
+  {
+    description: "New York",
+    id: "NY",
+  },
+  {
+    description: "Northwest Territories",
+    id: "NT",
+  },
+  {
+    description: "North Carolina",
+    id: "NC",
+  },
+  {
+    description: "North Dakota",
+    id: "ND",
+  },
+  {
+    description: "Northern Mariana Islands",
+    id: "MP",
+  },
+  {
+    description: "Nova Scotia",
+    id: "NS",
+  },
+  {
+    description: "Nunavut",
+    id: "NU",
+  },
+  {
+    description: "Ohio",
+    id: "OH",
+  },
+  {
+    description: "Oklahoma",
+    id: "OK",
+  },
+  {
+    description: "Ontario",
+    id: "ON",
+  },
+  {
+    description: "Oregon",
+    id: "OR",
+  },
+  {
+    description: "Palau",
+    id: "PW",
+  },
+  {
+    description: "Pennsylvania",
+    id: "PA",
+  },
+  {
+    description: "Prince Edward Island",
+    id: "PE",
+  },
+  {
+    description: "Puerto Rico",
+    id: "PR",
+  },
+  {
+    description: "Quebec",
+    id: "QC",
+  },
+  {
+    description: "Rhode Island",
+    id: "RI",
+  },
+  {
+    description: "Saskatchewan",
+    id: "SK",
+  },
+  {
+    description: "South Carolina",
+    id: "SC",
+  },
+  {
+    description: "South Dakota",
+    id: "SD",
+  },
+  {
+    description: "Tennessee",
+    id: "TN",
+  },
+  {
+    description: "Texas",
+    id: "TX",
+  },
+  {
+    description: "Utah",
+    id: "UT",
+  },
+  {
+    description: "Vermont",
+    id: "VT",
+  },
+  {
+    description: "Virgin Islands",
+    id: "VI",
+  },
+  {
+    description: "Virginia",
+    id: "VA",
+  },
+  {
+    description: "Washington",
+    id: "WA",
+  },
+  {
+    description: "West Virginia",
+    id: "WV",
+  },
+  {
+    description: "Wisconsin",
+    id: "WI",
+  },
+  {
+    description: "Wyoming",
+    id: "WY",
+  },
+  {
+    description: "Yukon",
+    id: "YT",
+  },
 ];
 
-export const option1 =  [
+export const option1 = [
   {
-    description: 'Alberta',
-    id: 'AB'
-  },
-  {
-    description: 'British Columbia',
-    id: 'BC'
+    description: "Alberta",
+    id: "AB",
   },
   {
-    description: 'Manitoba',
-    id: 'MB'
-  },
-  { 
-    description: 'New Brunswick',
-    id: 'NB'
+    description: "British Columbia",
+    id: "BC",
   },
   {
-    description: 'Newfoundland and Labrador',
-    id: 'NL'
+    description: "Manitoba",
+    id: "MB",
   },
   {
-    description: 'Northwest Territories',
-    id: 'NT'
+    description: "New Brunswick",
+    id: "NB",
   },
   {
-    description: 'Nova Scotia',
-    id: 'NS'
+    description: "Newfoundland and Labrador",
+    id: "NL",
   },
   {
-    description: 'Nunavut',
-    id: 'NU'
+    description: "Northwest Territories",
+    id: "NT",
   },
   {
-    description: 'Ontario',
-    id: 'ON'
+    description: "Nova Scotia",
+    id: "NS",
   },
   {
-    description: 'Prince Edward Island',
-    id: 'PE'
+    description: "Nunavut",
+    id: "NU",
   },
   {
-    description: 'Quebec',
-    id: 'QC'
+    description: "Ontario",
+    id: "ON",
   },
   {
-    description: 'Saskatchewan',
-    id: 'SK'
+    description: "Prince Edward Island",
+    id: "PE",
   },
   {
-    description: 'Yukon',
-    id: 'YT'
+    description: "Quebec",
+    id: "QC",
   },
-  ];
-  
+  {
+    description: "Saskatchewan",
+    id: "SK",
+  },
+  {
+    description: "Yukon",
+    id: "YT",
+  },
+];
