@@ -1,20 +1,27 @@
 export const contact = [
     {
         id: 0,
-        label: 'Address:',
-        data: 'W8290 Sunrise Ln, Whitewater, WI 53190',
+        label: 'Office Address:',
+        data: '561 E Milwaukee St, Whitewater, WI 53190',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://www.google.com/maps/place/W8290+Sunrise+Ln,+Whitewater,+WI+53190,+USA/@42.829281,-88.707063,17z/data=!4m2!3m1!1s0x8805e73236e7eb41:0x28c778b4fa089b7b'
+        redirect: 'https://goo.gl/maps/92D8fiCBeRa84R4x6'
     },
     {
         id: 1,
+        label: 'Facility Address:',
+        data: 'W8290 Sunrise Ln, Whitewater, WI 53190',
+        class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: 'https://goo.gl/maps/eus6LFRgptWDVmRw6'
+    },
+    {
+        id: 2,
         label: 'Email:',
         data: 'whitewaterselfstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
         redirect: 'mailto:`whitewaterselfstorage@gmail.com`'
     },
     {
-        id: 2,
+        id: 3,
         label: 'Phone:',
         data: '(262) 473-4350',
         class: 'fas fa-phone mx-2 iconColor',
@@ -24,8 +31,8 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Monday - Sunday: ',
-        data: '8:00AM to 8:00PM'
+        label: 'Hours: ',
+        data: '7 days a week – 8:00 am to 8:00 pm'
     },
     // {
     //     label: 'Saturday: ',
@@ -37,7 +44,7 @@ export const hours = [
     // },
     {
         label: 'Storage Access Hours: ',
-        data: '24 hours a day, 7 days a week'
+        data: '24/7'
     }
 ];
 

@@ -4,39 +4,47 @@ export const featuresList = [
         td2: 'Online Bill Pay',
     },
     {
-        td1: 'Security Cameras',
+        td1: 'Drive-Up Units',
         td2: 'Well-Lit Facility',
     },
     {
         td1: 'Single-Level Facility',
-        td2: 'Drive-Up Units',
+        td2: 'Auto-Pay Available',
     },
     {
-        td1: 'Auto-Pay Available',
-        td2: 'Friendly Customer Service',
-    },
-    {
-        td1: 'Climate-Controlled Units Available',
-       
+        td1: 'Friendly Customer Service',
+        td2: 'Climate-Controlled Units Available',
     },
 ];
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
 
-export const aboutUsHeading = `Climate Controlled and Regular Self Storage Units in Whitewater, WI`;
+export const aboutUsHeading = `A Storage Unit for All Your Storage Needs in Whitewater, WI`;
 
 export const aboutUs = [
     {
-        p: `Whitewater Self Storage has been Whitewater’s premier self storage facility for over three decades. We are conveniently located off Elkhorn Road just south of the Bluff Ridge Apartments. With over 300 self storage units in a variety of sizes ranging from 5-foot-by-5-foot to our oversized 10-foot-by-40-foot units we are sure to have what you need for your next storage project.`,
+        p: `Whitewater Self Storage has been serving Whitewater’s self storage needs since 1983. The rental
+        units are conveniently located off Elkhorn Road (Business Hwy 12) just south of the Bluff Ridge Apartments
+        on Sunrise Lane. With over 300 self storage units in a variety of 15 select sizes ranging from 5’ x 5’ to
+        10’ x 40’ units and climate controlled units ranging from 5’ x 6’ to 10’ x 21’, we are sure to have what
+        you need for your next storage requirements.`,
     },
     {
-        p: `Our locally owned and operated self storage facility is here to make your next move, renovation, or seasonal storage needs fast, easy, and affordable. You’ll find all of the modern conveniences at Whitewater Self Storage. Start by checking out our current availability and unit pricing, then reserve your unit in seconds through our online reservation process. One of our friendly managers will reach out to confirm the reservation or offer a contactless rental process right over the phone! By the time you’ve moved your belongings into one of our clean, well-maintained units, you will have 24-hour access to your account through our online portal. Just like our 24-hour unit access policy, you can check your balance and pay your rent around-the-clock.`,
+        p: `Whitewater Self-Storage is here to make your next move, renovation, or seasonal storage needs fast,
+        easy, convenient and affordable. We don’t know what the availability of units will be further out than
+        a week or ten days, however, you can check our website under the “Review Rates” tab for pricing and
+        availability of units and secure a unit under the  “Reserve Unit” tab. We do prorate the month you
+        move in and we require a minimum of two full months rentals. After you reserve a unit you have seven
+        days to stop in with your Driver's License, sign a rental agreement and pick up the keys for the unit
+        at our Rental Office: Acorn Beverage, 561 E. Milwaukee St, Whitewater, WI 53190.`,
     },
     {
-        p: `We understand that selecting a self storage facility for your home or business is about more than just conveniences. That’s why we pride ourselves on maintaining a sense of security at Whitewater Self Storage with a well-lit facility and managers performing regular lot-checks.`,
+        p: `To offer additional convenience you can pay online under the “Pay Rent” tab. We accept Visa, MasterCard,
+        and Discover. Just set up your account and you can check your balance and pay your rent around the clock. `,
     },
     {
-        p: `Do you have questions about the services we provide or the terms and conditions of your rental? Check out our FAQ page, then reserve your unit, or give our friendly staff a call today!`,
+        p: `Thanks for visiting our website. Check out our FAQ page, then reserve your unit, or give our friendly staff a
+        call today! We look forward to serving you.`,
     }
     
 ];

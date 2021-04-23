@@ -20,11 +20,23 @@ img {
 .contact-header {
   display: inline;
 
+  .display-contact-details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .contact-details {
     color: $white;
-    font-size: 0.82em;
-    font-weight: 500;
-    width: 100%;
+    // width: fit-content;
+
+    h4 {
+      font-size: 0.82em;
+      font-weight: 500;
+
+      a {
+        color: white;
+      }
+    }
   }
 }
 
@@ -76,12 +88,6 @@ img {
 
 .display {
   display: block;
-}
-
-.contact-links {
-  a {
-    color: white;
-  }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {

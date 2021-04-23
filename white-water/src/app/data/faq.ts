@@ -31,6 +31,15 @@ export const faq = [
         assurance of avoiding any late fees. `
     },
     {
+        h2: `How does “Reserve Unit” work?`,
+        p: `You are making a commitment to rent this unit and visit the office within 7 days to sign a rental agreement,
+        provide a driver’s license, and pick up keys. You will be putting a month’s rental amount down as a deposit plus
+        a $20,00  clean out/lock deposit. If you do not come in and finalize the rental process for the unit by the 7th
+        day you will forfeit your deposit amounts and we will mark the unit as available to rent. When you do come in,
+        the first month will be prorated and you will pay the specific prorated amount, and then rent will be due the
+        first of the next month. You can pay ahead if you wish.`
+    },
+    {
         h2: `Do I need to provide ID? `,
         paragraph: `Yes! We will not rent to someone that we don’t have required
         identification from to aide in security of all our tenants.
