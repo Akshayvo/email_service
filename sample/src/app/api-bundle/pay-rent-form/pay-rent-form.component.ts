@@ -469,8 +469,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       });
   }
 
-  public navigateToConfirmation(location: any) {
-    this.router.navigate([location]);
+  public navigateToConfirmation() {
+    this.router.navigate([`${environment.locationName}/view-rates/confirmation`]);
   }
 
   getPayMethods() {
@@ -478,12 +478,11 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
        .subscribe(payTypesResponse => {
  
          this.cards.forEach(element => {
-           if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
              const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
               if (index > -1) {
                  this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
                }
-           }
+           
          });
  
  
