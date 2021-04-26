@@ -1,24 +1,30 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { accessHoursLocation1,accessHoursLocation2,accessHoursLocation3, accessHoursLocation4, contactsLocation1, contactsLocation2, contactsLocation3,contactsLocation4, hoursLocation1, hoursLocation2,hoursLocation3,hoursLocation4
+import { accessHoursLocation1,accessHoursLocation2,accessHoursLocation3, accessHoursLocation4, accessHoursLocation5, accessHoursLocation6, accessHoursLocation7, accessHoursLocation8,
+         contactsLocation1, contactsLocation2, contactsLocation3,contactsLocation4, contactsLocation5, contactsLocation6,contactsLocation7, contactsLocation8,
+         hoursLocation1, hoursLocation2,hoursLocation3,hoursLocation4,hoursLocation5,hoursLocation6,hoursLocation7,hoursLocation8,
           } from '../data/contact';
-import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, tabs4, heading4, heading5, heading6  } from '../data/location';
+import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, tabs4,tabs5,tabs6,tabs7,tabs8, heading4, heading5, heading6,heading7,heading8  } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
-import { Location1Script,Location2Script,Location3Script,Location4Script,
-  ogLocation1,ogLocation2,ogLocation3,ogLocation4, twitterLocation1,twitterLocation2,twitterLocation3,twitterLocation4
+import { Location1Script,Location2Script,Location3Script,Location4Script,Location5Script,Location6Script,Location7Script,Location8Script,
+  ogLocation1,ogLocation2,ogLocation3,ogLocation4,ogLocation5,ogLocation6,ogLocation7,ogLocation8,
+   twitterLocation1,twitterLocation2,twitterLocation3,twitterLocation4,twitterLocation5,twitterLocation6,twitterLocation7,twitterLocation8
    } from '../data/script';
 import { featuresHead, featuresList, location1FeaturesHead, location2FeaturesHead,
-  location3FeaturesHead, location4FeaturesHead,location5FeaturesHead,location6FeaturesHead } from '../data/home';
+  location3FeaturesHead, location4FeaturesHead,location5FeaturesHead,location6FeaturesHead,location7FeaturesHead,location8FeaturesHead } from '../data/home';
 import { UaParserService } from '../services/ua-parser.service';
 import { location1PageContent, location1PageTitle,
         location2PageContent, location2PageTitle,
         location3PageContent, location3PageTitle,
         location4PageContent, location4PageTitle,
         location5PageContent, location5PageTitle,
-        location6PageContent, location6PageTitle} from '../data/title';
+        location6PageContent, location6PageTitle,
+        location7PageContent, location7PageTitle,
+        location8PageContent, location8PageTitle, 
+      } from '../data/title';
 import { environment } from '../../environments/environment';
 
 
@@ -57,6 +63,10 @@ export class LocationComponent implements OnInit {
   location5PageTitle: any;
   location6PageContent: any;
   location6PageTitle: any;
+  location7PageContent: any;
+  location7PageTitle: any;
+  location8PageContent: any;
+  location8PageTitle: any;
   access: any;
 
 
@@ -195,79 +205,109 @@ export class LocationComponent implements OnInit {
               })
             });
           }
-//else if (this.router.url.includes('/location/belforest')) {
-//     this.meta.addTag({
-//       name: 'description',
-//       content: `${this.location4PageContent}`
-//     });
-//     this.titleService.setTitle(`${this.location4PageTitle}`);
-//     this.locationName = `Storage Plus of Baldwin County - Belforest Location`;
-//     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
-//     this.dataSharingService.locationName = this.locationName;
-//     this.script = Location4Script;
-//     this.loadScript();
-//     this.og.forEach(element => {
-//       this.meta.addTag({
-//         property: element.property,
-//         content: element.content
-//       })
-//     });
+  else if (this.router.url.includes(`${environment.locationName}/red-barn`)) {
+            this.meta.addTag({
+              name: 'description',
+              content: `${this.location5PageContent}`
+    });
+    this.titleService.setTitle(`${this.location5PageTitle}`);
+            this.locationName = `Boxer Storage - Red Barn Location`;
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
+            this.dataSharingService.locationName = this.locationName;
+            this.script = Location5Script;
+            this.loadScript();
+            this.og.forEach(element => {
+              this.meta.addTag({
+                property: element.property,
+                content: element.content
+              })
+            });
+        
+            this.twitter.forEach(element => {
+              this.meta.addTag({
+                name: element.name,
+                content: element.content
+              })
+            });
+          }
 
-//     this.twitter.forEach(element => {
-//       this.meta.addTag({
-//         name: element.name,
-//         content: element.content
-//       })
-//     });
-//   } else if (this.router.url.includes('/location/fairhope')) {
-//     this.meta.addTag({
-//       name: 'description',
-//       content: `${this.location5PageContent}`
-// });
-// this.titleService.setTitle(`${this.location5PageTitle}`);
-//     this.locationName = `Storage Plus of Baldwin County - Fairhope`;
-//     this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
-//     this.dataSharingService.locationName = this.locationName;
-//     this.script = Location5Script;
-//     this.loadScript();
-//     this.og.forEach(element => {
-//      this.meta.addTag({
-//        property: element.property,
-//        content: element.content
-//      })
-//    });
+  else if (this.router.url.includes(`${environment.locationName}/wayland-westside`)) {
+            this.meta.addTag({
+              name: 'description',
+              content: `${this.location6PageContent}`
+    });
+    this.titleService.setTitle(`${this.location6PageTitle}`);
+            this.locationName = `Boxer Storage - Wayland Westside Location`;
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
+            this.dataSharingService.locationName = this.locationName;
+            this.script = Location6Script;
+            this.loadScript();
+            this.og.forEach(element => {
+              this.meta.addTag({
+                property: element.property,
+                content: element.content
+              })
+            });
+        
+            this.twitter.forEach(element => {
+              this.meta.addTag({
+                name: element.name,
+                content: element.content
+              })
+            });
+          }
 
-//    this.twitter.forEach(element => {
-//      this.meta.addTag({
-//        name: element.name,
-//        content: element.content
-//      })
-//    });
-// } else if (this.router.url.includes('/location/robertsdale')) {
-//   this.meta.addTag({
-//     name: 'description',
-//     content: `${this.location6PageContent}`
-// });
-// this.titleService.setTitle(`${this.location6PageTitle}`);
-//   this.locationName = `Storage Plus of Baldwin County - Robertsdale`;
-//   this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
-//   this.dataSharingService.locationName = this.locationName;
-//   this.script = Location6Script;
-//   this.loadScript();
-//   this.og.forEach(element => {
-//    this.meta.addTag({
-//      property: element.property,
-//      content: element.content
-//    })
-//  });
+  else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
+            this.meta.addTag({
+              name: 'description',
+              content: `${this.location7PageContent}`
+    });
+    this.titleService.setTitle(`${this.location7PageTitle}`);
+            this.locationName = `Boxer Storage - Wayland Mill Street Location`;
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc7;
+            this.dataSharingService.locationName = this.locationName;
+            this.script = Location7Script;
+            this.loadScript();
+            this.og.forEach(element => {
+              this.meta.addTag({
+                property: element.property,
+                content: element.content
+              })
+            });
+        
+            this.twitter.forEach(element => {
+              this.meta.addTag({
+                name: element.name,
+                content: element.content
+              })
+            });
+          }
 
-//  this.twitter.forEach(element => {
-//    this.meta.addTag({
-//      name: element.name,
-//      content: element.content
-//    })
-//  });
-// }
+  else if (this.router.url.includes(`${environment.locationName}/southside`)) {
+            this.meta.addTag({
+              name: 'description',
+              content: `${this.location8PageContent}`
+    });
+    this.titleService.setTitle(`${this.location8PageTitle}`);
+            this.locationName = `Boxer Storage - Southside Location`;
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc8;
+            this.dataSharingService.locationName = this.locationName;
+            this.script = Location8Script;
+            this.loadScript();
+            this.og.forEach(element => {
+              this.meta.addTag({
+                property: element.property,
+                content: element.content
+              })
+            });
+        
+            this.twitter.forEach(element => {
+              this.meta.addTag({
+                name: element.name,
+                content: element.content
+              })
+            });
+          }
 }
 
   ngOnInit() {
@@ -304,6 +344,10 @@ export class LocationComponent implements OnInit {
     this.location5PageContent = location5PageContent;
     this.location6PageTitle = location6PageTitle;
     this.location6PageContent = location6PageContent;
+    this.location7PageTitle = location7PageTitle;
+    this.location7PageContent = location7PageContent;
+    this.location8PageTitle = location8PageTitle;
+    this.location8PageContent = location8PageContent;
   }
 
   public fetchFeatureHead() {
@@ -323,7 +367,16 @@ export class LocationComponent implements OnInit {
   } 
   else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
       this.og = ogLocation4;
-  } 
+  }
+  else if (this.router.url.includes(`${environment.locationName}/red-barn`)) {
+    this.og = ogLocation5;
+}  else if (this.router.url.includes(`${environment.locationName}/wayland-westside`)) {
+  this.og = ogLocation6;
+}  else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
+  this.og = ogLocation7;
+}  else if (this.router.url.includes(`${environment.locationName}/southside`)) {
+  this.og = ogLocation8;
+}  
   //else if (this.router.url.includes('/location/barnwell')) {
   //   this.og = ogLocation3;
   // } else if (this.router.url.includes('/location/belforest')) {
@@ -348,15 +401,15 @@ export class LocationComponent implements OnInit {
      else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
       this.twitter = twitterLocation4;
   } 
-  //else if (this.router.url.includes('/location/barnwell')) {
-  //   this.twitter = twitterLocation3;
-  // } else if (this.router.url.includes('/location/belforest')) {
-  //   this.twitter = twitterLocation4;
-  // } else if (this.router.url.includes('/location/fairhope')) {
-  //   this.twitter = twitterLocation5;
-  // } else if (this.router.url.includes('/location/robertsdale')) {
-  //   this.twitter = twitterLocation6;
-  // }
+  else if (this.router.url.includes('/location/red-barn')) {
+    this.twitter = twitterLocation5;
+  } else if (this.router.url.includes('/location/wayland-westside')) {
+    this.twitter = twitterLocation6;
+  } else if (this.router.url.includes('/location/wayland-mill')) {
+    this.twitter = twitterLocation7;
+  } else if (this.router.url.includes('/location/southside')) {
+    this.twitter = twitterLocation8;
+  }
   }
 
   public isSomePage() {
@@ -372,15 +425,15 @@ export class LocationComponent implements OnInit {
      else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
         this.fetchDetailsLocation4();
     } 
-    // else if (this.router.url.includes('/location/barnwell')) {
-    //   this.fetchDetailsLocation3();
-    // } else if (this.router.url.includes('/location/belforest')) {
-    //   this.fetchDetailsLocation4();
-    // } else if (this.router.url.includes('/location/fairhope')) {
-    //   this.fetchDetailsLocation5();
-    // } else if (this.router.url.includes('/location/robertsdale')) {
-    //   this.fetchDetailsLocation6();
-    // }
+    else if (this.router.url.includes('/location/red-barn')) {
+      this.fetchDetailsLocation5();
+    } else if (this.router.url.includes('/location/wayland-westside')) {
+      this.fetchDetailsLocation6();
+    } else if (this.router.url.includes('/location/wayland-mill')) {
+      this.fetchDetailsLocation7();
+    } else if (this.router.url.includes('/location/southside')) {
+      this.fetchDetailsLocation8();
+    }
  }
 
  public navigateToReserve() {
@@ -400,22 +453,19 @@ export class LocationComponent implements OnInit {
     this.router.navigate([`${environment.locationName}/alpine/reserve-unit`],
           );
   }
-  // else if ( this.locationId === 2 ) {
-  //   this.router.navigate(['/location/silverhill/reserve-unit'],
-  //         );
-  // }  else if ( this.locationId === 3 ) {
-  //   this.router.navigate(['/location/barnwell/reserve-unit'],
-  //        );
-  // }  else if ( this.locationId === 4 ) {
-  //   this.router.navigate(['/location/belforest/reserve-unit'],
-  //         );
-  // } else if ( this.locationId === 5 ) {
-  //   this.router.navigate(['/location/fairhope/reserve-unit'],
-  //         );
-  // } else if ( this.locationId === 6 ) {
-  //   this.router.navigate(['/location/robertsdale/reserve-unit'],
-  //         );
-  // }
+  else if ( this.locationId === 5 ) {
+    this.router.navigate(['/location/red-barn/reserve-unit'],
+          );
+  }  else if ( this.locationId === 6 ) {
+    this.router.navigate(['/location/wayland-westside/reserve-unit'],
+         );
+  }  else if ( this.locationId === 7 ) {
+    this.router.navigate(['/location/wayland-mill/reserve-unit'],
+          );
+  } else if ( this.locationId === 8 ) {
+    this.router.navigate(['/location/southside/reserve-unit'],
+          );
+  }
  }
 
  public navigateToPayment() {
@@ -424,7 +474,7 @@ export class LocationComponent implements OnInit {
       this.router.navigate([`pay-rent/evanston-ave/rent-sub/login`],
       );
     } else {
-      this.router.navigate(['pay-remt']);
+      this.router.navigate(['pay-rent']);
     }
   } 
    else if ( this.locationId === 2 ) {
@@ -432,7 +482,7 @@ export class LocationComponent implements OnInit {
       this.router.navigate([`pay-rent/howard-city/rent-sub/login`],
       );
     } else {
-      this.router.navigate(['pay-remt']);
+      this.router.navigate(['pay-rent']);
     }
   } 
    else if ( this.locationId === 3 ) {
@@ -440,7 +490,7 @@ export class LocationComponent implements OnInit {
       this.router.navigate([`pay-rent/ionia/rent-sub/login`],
       );
     } else {
-      this.router.navigate(['pay-remt']);
+      this.router.navigate(['pay-rent']);
     }
   } 
      else if ( this.locationId === 4 ) {
@@ -448,7 +498,39 @@ export class LocationComponent implements OnInit {
       this.router.navigate([`pay-rent/alpine/rent-sub/login`],
       );
     } else {
-      this.router.navigate(['pay-remt']);
+      this.router.navigate(['pay-rent']);
+    }
+  } 
+  else if ( this.locationId === 5 ) {
+    if (environment.signUpForAuotoPay === 1) {
+      this.router.navigate([`pay-rent/red-barn/rent-sub/login`],
+      );
+    } else {
+      this.router.navigate(['pay-rent']);
+    }
+  } 
+  else if ( this.locationId === 6 ) {
+    if (environment.signUpForAuotoPay === 1) {
+      this.router.navigate([`pay-rent/wayland-westside/rent-sub/login`],
+      );
+    } else {
+      this.router.navigate(['pay-rent']);
+    }
+  } 
+  else if ( this.locationId === 7 ) {
+    if (environment.signUpForAuotoPay === 1) {
+      this.router.navigate([`pay-rent/wayland-mill/rent-sub/login`],
+      );
+    } else {
+      this.router.navigate(['pay-rent']);
+    }
+  } 
+  else if ( this.locationId === 8 ) {
+    if (environment.signUpForAuotoPay === 1) {
+      this.router.navigate([`pay-rent/southside/rent-sub/login`],
+      );
+    } else {
+      this.router.navigate(['pay-rent']);
     }
   } 
  }
@@ -465,6 +547,18 @@ export class LocationComponent implements OnInit {
   }
   else if (this.router.url.includes('alpine')) {
     this.router.navigate(['/contact-alpine'])
+  }
+  else if (this.router.url.includes('red-barn')) {
+    this.router.navigate(['/contact-red-barn'])
+  }
+  else if (this.router.url.includes('wayland-westside')) {
+    this.router.navigate(['/contact-wayland-westside'])
+  }
+  else if (this.router.url.includes('wayland-mill')) {
+    this.router.navigate(['/contact-wayland-mill'])
+  }
+  else if (this.router.url.includes('southside')) {
+    this.router.navigate(['/contact-southside'])
   }
  }
 
@@ -509,39 +603,39 @@ export class LocationComponent implements OnInit {
     }
 
 
-  //  public fetchDetailsLocation3() {
-  //   this.name = heading3;
-  //   this.locationId = 3;
-  //   this.contacts = contactsLocation3;
-  //   this.hours = hoursLocation3;
-  //   this.tabs = tabs2;
-  //   this.features = location3FeaturesHead;
-  // }
+   public fetchDetailsLocation5() {
+    this.name = heading5;
+    this.locationId = 5;
+    this.contacts = contactsLocation5;
+    this.hours = hoursLocation5;
+    this.tabs = tabs5;
+    this.features = location5FeaturesHead;
+  }
 
-  // public fetchDetailsLocation4() {
-  //   this.name = heading4;
-  //   this.locationId = 4;
-  //   this.contacts = contactsLocation4;
-  //   this.hours = hoursLocation4;
-  //   this.tabs = tabs3;
-  //   this.features = location4FeaturesHead;
-  // }
+  public fetchDetailsLocation6() {
+    this.name = heading6;
+    this.locationId = 6;
+    this.contacts = contactsLocation6;
+    this.hours = hoursLocation6;
+    this.tabs = tabs6;
+    this.features = location6FeaturesHead;
+  }
 
-  // public fetchDetailsLocation5() {
-  //   this.name = heading5;
-  //   this.locationId = 5;
-  //   this.contacts = contactsLocation5;
-  //   this.hours = hoursLocation5;
-  //   this.tabs = tabs3;
-  //   this.features = location5FeaturesHead;
-  // }
+  public fetchDetailsLocation7() {
+    this.name = heading7;
+    this.locationId = 7;
+    this.contacts = contactsLocation7;
+    this.hours = hoursLocation7;
+    this.tabs = tabs7;
+    this.features = location7FeaturesHead;
+  }
 
-  // public fetchDetailsLocation6() {
-  //   this.name = heading6;
-  //   this.locationId = 6;
-  //   this.contacts = contactsLocation6;
-  //   this.hours = hoursLocation6;
-  //   this.tabs = tabs3;
-  //   this.features = location6FeaturesHead;
-  // }
+  public fetchDetailsLocation8() {
+    this.name = heading8;
+    this.locationId = 8;
+    this.contacts = contactsLocation8;
+    this.hours = hoursLocation8;
+    this.tabs = tabs8;
+    this.features = location8FeaturesHead;
+  }
 }

@@ -128,6 +128,34 @@ export const accessHoursLocation4 = [
     },
 ];
 
+export const accessHoursLocation5 = [
+    {
+        // label: 'Access Hour ',
+        data: '24 Hours a Day 7 Days a Week',
+    },
+];
+
+export const accessHoursLocation6 = [
+    {
+        // label: 'Access Hour ',
+        data: '24 Hours a Day 7 Days a Week',
+    },
+];
+
+export const accessHoursLocation7 = [
+    {
+        // label: 'Access Hour ',
+        data: '24 Hours a Day 7 Days a Week',
+    },
+];
+
+export const accessHoursLocation8 = [
+    {
+        // label: 'Access Hour ',
+        data: '24 Hours a Day 7 Days a Week',
+    },
+];
+
 export const contactsLocation2 = [
       {
         id: 4,
@@ -283,26 +311,33 @@ export const hoursLocation4 = [
 
 export const contactsLocation5 = [
     {
-        id: 1,
-        label: 'Address: ',
-        data: '21193 AL-181, Fairhope, AL 36532',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/FANSU6w7QY9vCpiDA'
+        id: 4,
+        label: 'Phone: ',
+        data: '(231) 652-7853',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:2316527853'
     },
     {
-        id: 2,
-        label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
-        class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        id: 1,
+        label: 'Address: ',
+        data: '10209 Mason Dr, Grant, MI 49327',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://www.google.com/search?q=10209+Mason+Dr%2C+Grant%2C+MI+49327&oq=10209+Mason+Dr%2C+Grant%2C+MI+49327&aqs=chrome..69i57.397j0j7&sourceid=chrome&ie=UTF-8#'
     },
     {
         id: 3,
-        label: 'Phone: ',
-        data: '(251) 970-3168',
-        class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        label: 'Email: ',
+        email: 'store@boxerstorage.com',
+        data: `store@boxerstorage.com`,
+        class: 'fas fa-envelope mr-2 iconColor',
+        redirect: 'mailto:`store@boxerstorage.com`'
+    },
+    {
+        id: 2,
+        label: 'Mailing Address: ',
+        data: '3609 32nd St SE, Kentwood, MI 49512',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/V9mQLpHMRbH1CtK4A'
     },
 ];
 
@@ -315,34 +350,45 @@ export const hoursLocation5 = [
     //     label: 'Sunday: ',
     //     data: 'CLOSED',
     // },
+           {
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM',
+    },
     {
-        label: 'Access Hour: ',
-        data: '24-Hours a Day 7 Days a Week',
+        label: 'Saturday: ',
+        data: '9:00AM to 2:00PM',
     },
 ];
 
 export const contactsLocation6 = [
     {
-        id: 1,
-        label: 'Address: ',
-        data: '20218 US-90, Robertsdale, AL 36567',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/kt1bhA6aHeRmjXsN7'
+        id: 4,
+        label: 'Phone: ',
+        data: '(269) 792-2290',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:2697922290'
     },
     {
-        id: 2,
-        label: 'Email: ',
-        data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
-        class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        id: 1,
+        label: 'Address: ',
+        data: '3591 12th St, Wayland, MI 49348',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/1AXuK4kwNLHmbyWB9'
     },
     {
         id: 3,
-        label: 'Phone: ',
-        data: '(251) 970-3168',
-        class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        label: 'Email: ',
+        email: 'store@boxerstorage.com',
+        data: `store@boxerstorage.com`,
+        class: 'fas fa-envelope mr-2 iconColor',
+        redirect: 'mailto:`store@boxerstorage.com`'
+    },
+    {
+        id: 2,
+        label: 'Mailing Address: ',
+        data: '3609 32nd St SE, Kentwood, MI 49512',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/V9mQLpHMRbH1CtK4A'
     },
 ];
 
@@ -355,8 +401,113 @@ export const hoursLocation6 = [
     //     label: 'Sunday: ',
     //     data: 'CLOSED',
     // },
+           {
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM',
+    },
     {
-        label: 'Access Hour: ',
-        data: '24-Hours a Day 7 Days a Week',
+        label: 'Saturday: ',
+        data: '9:00AM to 2:00PM',
+    },
+];
+export const contactsLocation7 = [
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(269) 792-2290',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:2697922290'
+    },
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '410 Mill St, Wayland, MI 49348',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/Jjxo9W6GsuWt5R8J9'
+    },
+    {
+        id: 3,
+        label: 'Email: ',
+        email: 'store@boxerstorage.com',
+        data: `store@boxerstorage.com`,
+        class: 'fas fa-envelope mr-2 iconColor',
+        redirect: 'mailto:`store@boxerstorage.com`'
+    },
+    {
+        id: 2,
+        label: 'Mailing Address: ',
+        data: '3609 32nd St SE, Kentwood, MI 49512',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/V9mQLpHMRbH1CtK4A'
+    },
+];
+
+export const hoursLocation7 = [
+    // {
+    //     label: 'Monday - Saturday: ',
+    //     data: '9:00AM - 5:00PM',
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: 'CLOSED',
+    // },
+           {
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM',
+    },
+    {
+        label: 'Saturday: ',
+        data: '9:00AM to 2:00PM',
+    },
+];
+
+export const contactsLocation8 = [
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(269) 792-2290',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:2697922290'
+    },
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '1050 133rd Ave, Wayland, MI 49348',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/APYN2UhmCfeGTHxJ9'
+    },
+    {
+        id: 3,
+        label: 'Email: ',
+        email: 'store@boxerstorage.com',
+        data: `store@boxerstorage.com`,
+        class: 'fas fa-envelope mr-2 iconColor',
+        redirect: 'mailto:`store@boxerstorage.com`'
+    },
+    {
+        id: 2,
+        label: 'Mailing Address: ',
+        data: '3609 32nd St SE, Kentwood, MI 49512',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/V9mQLpHMRbH1CtK4A'
+    },
+];
+
+export const hoursLocation8 = [
+    // {
+    //     label: 'Monday - Saturday: ',
+    //     data: '9:00AM - 5:00PM',
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: 'CLOSED',
+    // },
+           {
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM',
+    },
+    {
+        label: 'Saturday: ',
+        data: '9:00AM to 2:00PM',
     },
 ];

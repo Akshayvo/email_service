@@ -31,7 +31,27 @@ export const tableData = [
     facility: ' Alpine Location',
     address: '6659 Alpine Ave NW, Comstock Park, MI 49321',
     url: 'alpine/rent-sub/login'
+  }, 
+  {
+    facility: ' Red Barn Location',
+    address: '10209 Mason Dr, Grant, MI 49327',
+    url: 'red-barn/rent-sub/login'
   },  
+  {
+    facility: ' Wayland Westside Location',
+    address: '3591 12th St, Wayland, MI 49348',
+    url: 'wayland-westside/rent-sub/login'
+  },  
+  {
+    facility: ' Wayland Mill Street Location',
+    address: '410 Mill St, Wayland, MI 49348',
+    url: 'wayland-mill/rent-sub/login'
+  },  
+  {
+    facility: ' Southside',
+    address: '1050 133rd Ave, Wayland, MI 49348',
+    url: 'southside/rent-sub/login'
+  },   
 ];
 
 export const tableDataContactPage = [
@@ -54,7 +74,27 @@ export const tableDataContactPage = [
     facility: ' Alpine Location',
     address: '6659 Alpine Ave NW, Comstock Park, MI 49321',
     url: 'alpine'
+  }, 
+  {
+    facility: ' Red Barn Location',
+    address: '10209 Mason Dr, Grant, MI 49327',
+    url: 'red-barn'
   },  
+  {
+    facility: ' Wayland Westside Location',
+    address: '3591 12th St, Wayland, MI 49348',
+    url: 'wayland-westside'
+  },  
+  {
+    facility: ' Wayland Mill Street Location',
+    address: '410 Mill St, Wayland, MI 49348',
+    url: 'wayland-mill'
+  },  
+  {
+    facility: ' Southside',
+    address: '1050 133rd Ave, Wayland, MI 49348',
+    url: 'southside/rent'
+  },    
 ];
 
 

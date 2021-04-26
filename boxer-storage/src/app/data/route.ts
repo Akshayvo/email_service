@@ -231,6 +231,157 @@ export const apiRoutes = [
       resolve: { data: AppResolver }
     },
 
+    { path: `${environment.locationName}/red-barn`,
+    component: LocationComponent,
+    children: [
+      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+      { path: 'storage-units', component: ViewRatesComponent },
+      { path: 'unit-sizer', component: UnitSizerComponent },
+      { path: 'reserve-unit', component: ReserveComponent,
+        children: [
+          { path: '', component: ReserveUnitFormComponent },
+          { path: 'reserve', component: ReserveUnitFormComponent },
+          // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+          { path: 'confirmation', component: ConfirmationDataComponent },
+          { path: 'payReservationCharges', component: PayRentFormComponent },
+          { path: 'payMoveInCharges', component: PayRentFormComponent },
+          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+        ]
+      },
+      { path: 'move-in', component: ReserveComponent,
+        children: [
+          { path: '', component: ReserveUnitFormComponent },
+          { path: 'move-in', component: ReserveUnitFormComponent },
+          // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+          { path: 'confirmation', component: ConfirmationDataComponent },
+          { path: 'payReservationCharges', component: PayRentFormComponent },
+          { path: 'payMoveInCharges', component: PayRentFormComponent },
+          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+        ]
+      },
+      // { path: 'photos', component: PhotosComponent },
+      { path: 'about', component: AboutUsComponent },
+      { path: 'directions', component: DirectionsComponent },
+    ],
+    resolve: { data: AppResolver }
+  },
+
+  { path: `${environment.locationName}/wayland-westside`,
+  component: LocationComponent,
+  children: [
+    {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+    { path: 'storage-units', component: ViewRatesComponent },
+    { path: 'unit-sizer', component: UnitSizerComponent },
+    { path: 'reserve-unit', component: ReserveComponent,
+      children: [
+        { path: '', component: ReserveUnitFormComponent },
+        { path: 'reserve', component: ReserveUnitFormComponent },
+        // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+      ]
+    },
+    { path: 'move-in', component: ReserveComponent,
+      children: [
+        { path: '', component: ReserveUnitFormComponent },
+        { path: 'move-in', component: ReserveUnitFormComponent },
+        // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+      ]
+    },
+    // { path: 'photos', component: PhotosComponent },
+    { path: 'about', component: AboutUsComponent },
+    { path: 'directions', component: DirectionsComponent },
+  ],
+  resolve: { data: AppResolver }
+},
+
+
+{ path: `${environment.locationName}/wayland-mill`,
+component: LocationComponent,
+children: [
+  {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+  { path: 'storage-units', component: ViewRatesComponent },
+  { path: 'unit-sizer', component: UnitSizerComponent },
+  { path: 'reserve-unit', component: ReserveComponent,
+    children: [
+      { path: '', component: ReserveUnitFormComponent },
+      { path: 'reserve', component: ReserveUnitFormComponent },
+      // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+    ]
+  },
+  { path: 'move-in', component: ReserveComponent,
+    children: [
+      { path: '', component: ReserveUnitFormComponent },
+      { path: 'move-in', component: ReserveUnitFormComponent },
+      // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+    ]
+  },
+  // { path: 'photos', component: PhotosComponent },
+  { path: 'about', component: AboutUsComponent },
+  { path: 'directions', component: DirectionsComponent },
+],
+resolve: { data: AppResolver }
+},
+
+
+{ path: `${environment.locationName}/southside`,
+component: LocationComponent,
+children: [
+  {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+  { path: 'storage-units', component: ViewRatesComponent },
+  { path: 'unit-sizer', component: UnitSizerComponent },
+  { path: 'reserve-unit', component: ReserveComponent,
+    children: [
+      { path: '', component: ReserveUnitFormComponent },
+      { path: 'reserve', component: ReserveUnitFormComponent },
+      // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+    ]
+  },
+  { path: 'move-in', component: ReserveComponent,
+    children: [
+      { path: '', component: ReserveUnitFormComponent },
+      { path: 'move-in', component: ReserveUnitFormComponent },
+      // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+    ]
+  },
+  // { path: 'photos', component: PhotosComponent },
+  { path: 'about', component: AboutUsComponent },
+  { path: 'directions', component: DirectionsComponent },
+],
+resolve: { data: AppResolver }
+},
+
+
+
+
+
+
     { path: `${environment.locationName}/evanston-ave/view-rates`,
       component: LocationComponent,
       children: [
@@ -371,184 +522,155 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    // { path: 'location/silverhill',
-    //   component: LocationComponent,
-    //   children: [
-    //     {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-    //     { path: 'storage-units', component: ViewRatesComponent },
-    //     { path: 'unit-sizer', component: UnitSizerComponent },
-    //     { path: 'reserve-unit', component: ReserveComponent,
-    //       children: [
-    //         { path: '', component: ReserveUnitFormComponent },
-    //         { path: 'reserve', component: ReserveUnitFormComponent },
-    //         // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-    //         { path: 'confirmation', component: ConfirmationDataComponent },
-    //         { path: 'payReservationCharges', component: PayRentFormComponent },
-    //         { path: 'payMoveInCharges', component: PayRentFormComponent },
-    //         { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
-    //       ]
-    //     },
-    //     { path: 'moveIn', component: ReserveComponent,
-    //       children: [
-    //         { path: '', component: ReserveUnitFormComponent },
-    //         { path: 'move-in', component: ReserveUnitFormComponent },
-    //         // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-    //         { path: 'confirmation', component: ConfirmationDataComponent },
-    //         { path: 'payReservationCharges', component: PayRentFormComponent },
-    //         { path: 'payMoveInCharges', component: PayRentFormComponent },
-    //         { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
+   
+    { path: `${environment.locationName}/red-barn/view-rates`,
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          ]
+        },
+        { path: 'move-in', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
 
-    //       ]
-    //     },
-    //     // { path: 'photos', component: PhotosComponent },
-    //     { path: 'about', component: AboutUsComponent },
-    //     { path: 'directions', component: DirectionsComponent },
-    //   ],
-    //   resolve: { data: AppResolver }
-    // },
-    // { path: 'location/barnwell',
-    //   component: LocationComponent,
-    //   children: [
-    //     {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-    //     { path: 'storage-units', component: ViewRatesComponent },
-    //     { path: 'unit-sizer', component: UnitSizerComponent },
-    //     { path: 'reserve-unit', component: ReserveComponent,
-    //       children: [
-    //         { path: '', component: ReserveUnitFormComponent },
-    //         { path: 'reserve', component: ReserveUnitFormComponent },
-    //         // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-    //         { path: 'confirmation', component: ConfirmationDataComponent },
-    //         { path: 'payReservationCharges', component: PayRentFormComponent },
-    //         { path: 'payMoveInCharges', component: PayRentFormComponent },
-    //         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
 
-    //       ]
-    //     },
-    //     { path: 'moveIn', component: ReserveComponent,
-    //       children: [
-    //         { path: '', component: ReserveUnitFormComponent },
-    //         { path: 'move-in', component: ReserveUnitFormComponent },
-    //         // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-    //         { path: 'confirmation', component: ConfirmationDataComponent },
-    //         { path: 'payReservationCharges', component: PayRentFormComponent },
-    //         { path: 'payMoveInCharges', component: PayRentFormComponent },
-    //         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-    //       ]
-    //     },
-    //     // { path: 'photos', component: PhotosComponent },
-    //     { path: 'about', component: AboutUsComponent },
-    //     { path: 'directions', component: DirectionsComponent },
-    //   ],
-    //   resolve: { data: AppResolver }
-    // },
-    // { path: 'location/belforest',
-    //   component: LocationComponent,
-    //   children: [
-    //     {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-    //     { path: 'storage-units', component: ViewRatesComponent },
-    //     { path: 'unit-sizer', component: UnitSizerComponent },
-    //     { path: 'reserve-unit', component: ReserveComponent,
-    //       children: [
-    //         { path: '', component: ReserveUnitFormComponent },
-    //         { path: 'reserve', component: ReserveUnitFormComponent },
-    //         // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-    //         { path: 'confirmation', component: ConfirmationDataComponent },
-    //         { path: 'payReservationCharges', component: PayRentFormComponent },
-    //         { path: 'payMoveInCharges', component: PayRentFormComponent },
-    //         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-    //       ]
-    //     },
-    //     { path: 'moveIn', component: ReserveComponent,
-    //       children: [
-    //         // { path: '', component: ViewRatesPageComponent },
-    //         { path: '', component: ReserveUnitFormComponent },
-    //         { path: 'move-in', component: ReserveUnitFormComponent },
-    //         // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-    //         { path: 'confirmation', component: ConfirmationDataComponent },
-    //         { path: 'payReservationCharges', component: PayRentFormComponent },
-    //         { path: 'payMoveInCharges', component: PayRentFormComponent },
-    //         { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
 
-    //       ]
-    //     },
-    //     // { path: 'photos', component: PhotosComponent },
-    //     { path: 'about', component: AboutUsComponent },
-    //     { path: 'directions', component: DirectionsComponent },
-    //   ],
-    //   resolve: { data: AppResolver }
-    // },
-    // { path: 'location/fairhope',
-    //   component: LocationComponent,
-    //   children: [
-    //     {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-    //     { path: 'storage-units', component: ViewRatesComponent },
-    //     { path: 'unit-sizer', component: UnitSizerComponent },
-    //     { path: 'reserve-unit', component: ReserveComponent,
-    //       children: [
-    //         { path: '', component: ReserveUnitFormComponent },
-    //         { path: 'reserve', component: ReserveUnitFormComponent },
-    //         // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-    //         { path: 'confirmation', component: ConfirmationDataComponent },
-    //         { path: 'payReservationCharges', component: PayRentFormComponent },
-    //         { path: 'payMoveInCharges', component: PayRentFormComponent },
-    //         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-    //       ]
-    //     },
-    //     { path: 'moveIn', component: ReserveComponent,
-    //       children: [
-    //         // { path: '', component: ViewRatesPageComponent },
-    //         { path: '', component: ReserveUnitFormComponent },
-    //         { path: 'move-in', component: ReserveUnitFormComponent },
-    //         // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-    //         { path: 'confirmation', component: ConfirmationDataComponent },
-    //         { path: 'payReservationCharges', component: PayRentFormComponent },
-    //         { path: 'payMoveInCharges', component: PayRentFormComponent },
-    //         { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
+    { path: `${environment.locationName}/wayland-westside/view-rates`,
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          ]
+        },
+        { path: 'move-in', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
 
-    //       ]
-    //     },
-    //     // { path: 'photos', component: PhotosComponent },
-    //     { path: 'about', component: AboutUsComponent },
-    //     { path: 'directions', component: DirectionsComponent },
-    //   ],
-    //   resolve: { data: AppResolver }
-    // },
-    // { path: 'location/robertsdale',
-    //   component: LocationComponent,
-    //   children: [
-    //     {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-    //     { path: 'storage-units', component: ViewRatesComponent },
-    //     { path: 'unit-sizer', component: UnitSizerComponent },
-    //     { path: 'reserve-unit', component: ReserveComponent,
-    //       children: [
-    //         { path: '', component: ReserveUnitFormComponent },
-    //         { path: 'reserve', component: ReserveUnitFormComponent },
-    //         // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-    //         { path: 'confirmation', component: ConfirmationDataComponent },
-    //         { path: 'payReservationCharges', component: PayRentFormComponent },
-    //         { path: 'payMoveInCharges', component: PayRentFormComponent },
-    //         { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-    //       ]
-    //     },
-    //     { path: 'moveIn', component: ReserveComponent,
-    //       children: [
-    //         // { path: '', component: ViewRatesPageComponent },
-    //         { path: '', component: ReserveUnitFormComponent },
-    //         { path: 'move-in', component: ReserveUnitFormComponent },
-    //         // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-    //         { path: 'confirmation', component: ConfirmationDataComponent },
-    //         { path: 'payReservationCharges', component: PayRentFormComponent },
-    //         { path: 'payMoveInCharges', component: PayRentFormComponent },
-    //         { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
 
-    //       ]
-    //     },
-    //     // { path: 'photos', component: PhotosComponent },
-    //     { path: 'about', component: AboutUsComponent },
-    //     { path: 'directions', component: DirectionsComponent },
-    //   ],
-    //   resolve: { data: AppResolver }
-    // },
+
+    
+    { path: `${environment.locationName}/wayland-mill/view-rates`,
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          ]
+        },
+        { path: 'move-in', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
+
+    
+    { path: `${environment.locationName}/southside/view-rates`,
+      component: LocationComponent,
+      children: [
+        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+        { path: 'storage-units', component: ViewRatesComponent },
+        { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'reserve-unit', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'reserve', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          ]
+        },
+        { path: 'move-in', component: ReserveComponent,
+          children: [
+            { path: '', component: ReserveUnitFormComponent },
+            { path: 'move-in', component: ReserveUnitFormComponent },
+            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+            { path: 'confirmation', component: ConfirmationDataComponent },
+            { path: 'payReservationCharges', component: PayRentFormComponent },
+            { path: 'payMoveInCharges', component: PayRentFormComponent },
+            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+          ]
+        },
+        // { path: 'photos', component: PhotosComponent },
+        { path: 'about', component: AboutUsComponent },
+        { path: 'directions', component: DirectionsComponent },
+      ],
+      resolve: { data: AppResolver }
+    },
+
     { path: 'review/evanston-ave', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
@@ -581,7 +703,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/silverhill', component: HomeComponent,
+  { path: 'review/red-barn', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -589,7 +711,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/barnwell', component: HomeComponent,
+  { path: 'review/wayland-westside', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -597,7 +719,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/belforest', component: HomeComponent,
+  { path: 'review/wayland-mill', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -605,7 +727,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/fairhope', component: HomeComponent,
+  { path: 'review/southside', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -640,19 +762,19 @@ export const apiRoutes = [
     children: childroute
   },
   {
-    path: 'pay-rent/silverhill', component: PayRentComponent,
+    path: 'pay-rent/red-barn', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/barnwell', component: PayRentComponent,
+    path: 'pay-rent/wayland-westside', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/belforest', component: PayRentComponent,
+    path: 'pay-rent/wayland-mill', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/fairhope', component: PayRentComponent,
+    path: 'pay-rent/southside', component: PayRentComponent,
     children: childroute
   },
   {
@@ -665,10 +787,10 @@ export const apiRoutes = [
   { path: 'contact-howard-city', component: ContactUsComponent},
   { path: 'contact-ionia', component: ContactUsComponent},
   { path: 'contact-alpine', component: ContactUsComponent},
-  { path: 'contact-barnwell', component: ContactUsComponent},
-  { path: 'contact-belforest', component: ContactUsComponent},
-  { path: 'contact-fairhope', component: ContactUsComponent},
-  { path: 'contact-robertsdale', component: ContactUsComponent},
+  { path: 'contact-red-barn', component: ContactUsComponent},
+  { path: 'contact-wayland-westside', component: ContactUsComponent},
+  { path: 'contact-wayland-mill', component: ContactUsComponent},
+  { path: 'contact-southside', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
 ];

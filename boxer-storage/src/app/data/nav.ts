@@ -31,6 +31,26 @@ export const navLinks = [
                 label: 'Alpine Location',
                 path: `${environment.locationName}/alpine`,
               },
+              {
+                id: '5',
+                label: 'Red Barn Location',
+                path: `${environment.locationName}/red-barn`,
+              },
+              {
+                id: '6',
+                label: 'Wayland Westside Location',
+                path: `${environment.locationName}/wayland-westside`,
+              },
+              {
+                id: '7',
+                label: 'Wayland Mill Street Location',
+                path: `${environment.locationName}/wayland-mill`,
+              },
+              {
+                id: '8',
+                label: 'Southside Location',
+                path: `${environment.locationName}/southside`,
+              },
         ]
     },
     {
@@ -57,6 +77,26 @@ export const navLinks = [
                 id: '4',
                 label: 'Alpine Location',
                 path: `${environment.locationName}/alpine/view-rates`,
+              },
+              {
+                id: '5',
+                label: 'Red Barn Location',
+                path: `${environment.locationName}/red-barn/view-rates`,
+              },
+              {
+                id: '6',
+                label: 'Wayland Westside Location',
+                path: `${environment.locationName}/wayland-westside/view-rates`,
+              },
+              {
+                id: '7',
+                label: 'Wayland Mill Street Location',
+                path: `${environment.locationName}/wayland-mill/view-rates`,
+              },
+              {
+                id: '8',
+                label: 'Southside Location',
+                path: `${environment.locationName}/southside/view-rates`,
               },
         ]
     },

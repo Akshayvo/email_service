@@ -13,6 +13,10 @@ export class DataSharingService {
     loc2: 'dzJ0OFc2SjIqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28629 howard-city,
     loc3: 'dzJ0OFc0SjEqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28410 ionia
     loc4: 'dzJ0OFczSjIqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28327 alpine
+    loc5: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+    loc6: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
+    loc7: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
+    loc8: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
   };
 
 //  locationAPIKey = {                                                     // demo north
