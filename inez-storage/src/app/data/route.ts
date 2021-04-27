@@ -178,9 +178,9 @@ export const apiRoutes = [
    component: RvRentalComponent,
    children: [
    { path: '', component: CamperRentalComponent },
-    { path: '2018-wildwood-27REI', component: WildwoodComponent},
-    { path: 'winnebago-outlook-22-c', component: WinnebagoComponent },
-    { path: '2019-prime-time-tracer', component: PrimeTimeComponent},
+    // { path: '2018-wildwood-27REI', component: WildwoodComponent},
+    // { path: 'winnebago-outlook-22-c', component: WinnebagoComponent },
+    // { path: '2019-prime-time-tracer', component: PrimeTimeComponent},
    ]
   },
   { path: '**', component: ErrorComponent },
@@ -242,9 +242,9 @@ export const iFrameRoutes = [
      component: RvRentalComponent,
      children: [
      { path: '', component: CamperRentalComponent },
-      { path: '2018-wildwood-27REI', component: WildwoodComponent},
-      { path: 'winnebago-outlook-22-c', component: WinnebagoComponent },
-      { path: '2019-prime-time-tracer', component: PrimeTimeComponent},
+      // { path: '2018-wildwood-27REI', component: WildwoodComponent},
+      // { path: 'winnebago-outlook-22-c', component: WinnebagoComponent },
+      // { path: '2019-prime-time-tracer', component: PrimeTimeComponent},
      ]},
     { path: '**', component: ErrorComponent },
 ];

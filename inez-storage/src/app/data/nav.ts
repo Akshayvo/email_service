@@ -23,8 +23,8 @@ export const navLinks = [
     },
     {
         label: 'Camper Rentals',
-        path: '/camper-rentals',
-        type: 'link',
+        path: 'https://southtexasrvrentals.com/',
+        type: 'external-link',
     },
     {
         label: 'Pay Rent',
