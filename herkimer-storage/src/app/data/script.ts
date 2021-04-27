@@ -68,12 +68,12 @@ export const homePageScript = [ {
       "postalCode": script.postalCode,
       "addressCountry": script.addressCountry
     },
-   "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": script.ratingValue,
-      "bestRating": script.bestRating,
-      "reviewCount": script.reviewCount
-    },
+  //  "aggregateRating": {
+  //     "@type": "AggregateRating",
+  //     "ratingValue": script.ratingValue,
+  //     "bestRating": script.bestRating,
+  //     "reviewCount": script.reviewCount
+  //   },
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": script.latitude,
@@ -82,7 +82,7 @@ export const homePageScript = [ {
     "url": environment.websiteUrl,
     "telephone": script.telephone,
     
-    "priceRange": script.priceRange,
+    // "priceRange": script.priceRange,
     "openingHours": script.openingHours,
     "currenciesAccepted": script.currenciesAccepted,
     "paymentAccepted": script.paymentAccepted,
