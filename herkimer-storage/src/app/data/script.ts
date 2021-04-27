@@ -198,7 +198,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:url`,
-      content: `${environment.websiteUrl}/pay-rent/rent-sub/login`
+      content: `${environment.websiteUrl}/pay-rent/login`
     },
     {
       property: `og:image`,

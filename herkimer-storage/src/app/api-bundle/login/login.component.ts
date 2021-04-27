@@ -68,7 +68,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       const token = localStorage.getItem('strTenantToken');
       if (token != null) {
         if (this.dataSharingService.changePassword === true) {
-          this.router.navigate(['/pay-rent/rent-sub/changePassword']);
+          this.router.navigate(['/pay-rent/changePassword']);
         } else {
           if (this.router.url.includes('rent-sub')) {
             this.router.navigate(['/pay-rent/rent-sub/payment']);

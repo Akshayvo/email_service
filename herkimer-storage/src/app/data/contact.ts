@@ -9,7 +9,8 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'mohawkselfstorage@yahoo.com',
+        // data: 'mohawkselfstorage@yahoo.com',
+        data: `sagar.g@codeparva.in`,
         class: 'fas fa-envelope mx-2 iconColor',
         redirect: 'mailto:`mohawkselfstorage@yahoo.com`'
     },
