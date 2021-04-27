@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "my-store-it"
+  "defaultProject": "my-store-it",
+  "cli": {
+    "analytics": false
+  }
 }
