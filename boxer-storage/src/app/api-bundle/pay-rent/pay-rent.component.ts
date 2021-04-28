@@ -5,8 +5,8 @@ import { tabs } from '../../data/tab';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
 import { Meta } from '@angular/platform-browser';
-import { ogPayRentPage, ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3,ogPayRentPageLocation4,
-   twitterPayRentPage, twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4  } from '../../data/script';
+import { ogPayRentPage, ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3,ogPayRentPageLocation4,ogPayRentPageLocation5,ogPayRentPageLocation6,ogPayRentPageLocation7,ogPayRentPageLocation8,
+   twitterPayRentPage, twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4,twitterPayRentPageLocation5,twitterPayRentPageLocation6,twitterPayRentPageLocation7,twitterPayRentPageLocation8  } from '../../data/script';
 @Component({
   selector: 'app-pay-rent',
   templateUrl: './pay-rent.component.html',
@@ -57,15 +57,16 @@ export class PayRentComponent implements OnInit {
   else if (this.router.url.includes('alpine')) {
       this.name = ' Alpine Location';
   }
-  //  else if (this.router.url.includes('silverhill')) {
-  //   this.name = ' Silverhill Location';
-  // } else if (this.router.url.includes('barnwell')) {
-  //   this.name = 'Barnwell Location';
-  // } else if (this.router.url.includes('belforest')) {
-  //   this.name = 'Belforest Location';
-  // } else if (this.router.url.includes('fairhope')) {
-  //   this.name = 'Fairhope Location';
-  // } else if (this.router.url.includes('robertsdale')) {
+   else if (this.router.url.includes('red-barn')) {
+    this.name = ' Red Barn Location';
+  } else if (this.router.url.includes('wayland-westside')) {
+    this.name = 'wayland Westside street Location';
+  } else if (this.router.url.includes('wayland-mill')) {
+    this.name = 'Wayland mill Location';
+  } else if (this.router.url.includes('southside')) {
+    this.name = 'Southside Location';
+  } 
+  // else if (this.router.url.includes('robertsdale')) {
   //   this.name = 'Robertsdale Location';
   // }
     if (!!localStorage.getItem('APIKey')) {
@@ -93,15 +94,16 @@ export class PayRentComponent implements OnInit {
     else if (this.router.url.includes('alpine')) {
       this.og = ogPayRentPageLocation4;
     }
-    //  else if (this.router.url.includes('silverhill')) {
-    //   this.og = ogPayRentPageLocation2;
-    // } else if (this.router.url.includes('barnwell')) {
-    //   this.og = ogPayRentPageLocation3;
-    // } else if (this.router.url.includes('belforest')) {
-    //   this.og = ogPayRentPageLocation4;
-    // } else if (this.router.url.includes('fairhope')) {
-    //   this.og = ogPayRentPageLocation5;
-    // } else if (this.router.url.includes('robertsdale')) {
+     else if (this.router.url.includes('red-barn')) {
+      this.og = ogPayRentPageLocation5;
+    } else if (this.router.url.includes('wayland-westside')) {
+      this.og = ogPayRentPageLocation6;
+    } else if (this.router.url.includes('wayland-mill')) {
+      this.og = ogPayRentPageLocation7;
+    } else if (this.router.url.includes('southside')) {
+      this.og = ogPayRentPageLocation8;
+    } 
+    // else if (this.router.url.includes('robertsdale')) {
     //   this.og = ogPayRentPageLocation6;
     // }
 }
@@ -119,15 +121,16 @@ public fetchTwitter() {
    else if (this.router.url.includes('alpine')) {
     this.twitter = twitterPayRentPageLocation4;
   }
-  //  else if (this.router.url.includes('silverhill')) {
-  //   this.twitter = twitterPayRentPageLocation2;
-  // } else if (this.router.url.includes('barnwell')) {
-  //   this.twitter = twitterPayRentPageLocation3;
-  // } else if (this.router.url.includes('belforest')) {
-  //   this.twitter = twitterPayRentPageLocation4;
-  // } else if (this.router.url.includes('fairhope')) {
-  //   this.twitter = twitterPayRentPageLocation5;
-  // } else if (this.router.url.includes('robertsdale')) {
+   else if (this.router.url.includes('red-barn')) {
+    this.twitter = twitterPayRentPageLocation5;
+  } else if (this.router.url.includes('wayland-westside')) {
+    this.twitter = twitterPayRentPageLocation6;
+  } else if (this.router.url.includes('wayland-mill')) {
+    this.twitter = twitterPayRentPageLocation7;
+  } else if (this.router.url.includes('southside')) {
+    this.twitter = twitterPayRentPageLocation8;
+  } 
+  // else if (this.router.url.includes('robertsdale')) {
   //   this.twitter = twitterPayRentPageLocation6;
   // }
 }

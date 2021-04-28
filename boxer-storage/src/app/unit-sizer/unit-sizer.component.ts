@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { unitSizerLocation1, unitSizerLocation2,
-   unitSizerLocation3, unitSizerLocation4, unitSizerLocation5, unitSizerLocation6
+   unitSizerLocation3, unitSizerLocation4, unitSizerLocation5, unitSizerLocation6,unitSizerLocation7,unitSizerLocation8
    } from '../data/location';
 import { CanonicalService } from '../services/canonical.service';
 import { environment } from '../../environments/environment';
@@ -41,15 +41,16 @@ export class UnitSizerComponent implements OnInit {
    else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
       this.fetchDetailsLocation4();
   }  
-  // else if (this.router.url.includes('/location/silverhill')) {
-  //   this.fetchDetailsLocation2();
-  // } else if (this.router.url.includes('/location/barnwell')) {
-  //   this.fetchDetailsLocation3();
-  // } else if (this.router.url.includes('/location/belforest')) {
-  //   this.fetchDetailsLocation4();
-  // } else if (this.router.url.includes('/location/fairhope')) {
-  //   this.fetchDetailsLocation5();
-  // } else if (this.router.url.includes('/location/robertsdale')) {
+  else if (this.router.url.includes(`${environment.locationName}/red-barn`)) {
+    this.fetchDetailsLocation5();
+  } else if (this.router.url.includes(`${environment.locationName}/wayland-westside`)) {
+    this.fetchDetailsLocation6();
+  } else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
+    this.fetchDetailsLocation7();
+  } else if (this.router.url.includes(`${environment.locationName}/southside`)) {
+    this.fetchDetailsLocation8();
+  } 
+  // else if (this.router.url.includes('/location/robertsdale')) {
   //   this.fetchDetailsLocation6();
   // }
 }
@@ -95,5 +96,19 @@ export class UnitSizerComponent implements OnInit {
     this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
     out! Still have questions? Call (251) 970-3168`;
     this.unitSizer = unitSizerLocation6;
+  }
+
+  public fetchDetailsLocation7() {
+    this.h2tag = 'Storage Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+    out! Still have questions? Call (251) 970-3168`;
+    this.unitSizer = unitSizerLocation7;
+  }
+
+  public fetchDetailsLocation8() {
+    this.h2tag = 'Storage Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
+    out! Still have questions? Call (251) 970-3168`;
+    this.unitSizer = unitSizerLocation8;
   }
 }

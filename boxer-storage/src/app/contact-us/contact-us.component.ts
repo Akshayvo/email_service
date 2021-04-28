@@ -2,16 +2,17 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsLocation1, hoursLocation1, accessHoursLocation1,accessHoursLocation2,accessHoursLocation3,accessHoursLocation4,
+import { contactsLocation1, hoursLocation1, accessHoursLocation1,accessHoursLocation2,accessHoursLocation3,accessHoursLocation4,accessHoursLocation5,accessHoursLocation6,accessHoursLocation7,accessHoursLocation8,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
           hoursLocation5, contactsLocation5,
-          hoursLocation6, contactsLocation6,  } from '../data/contact';
+          hoursLocation6,hoursLocation7,hoursLocation8, contactsLocation6,contactsLocation7,contactsLocation8  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, contactPageLocation2Script,contactPageLocation3Script,contactPageLocation4Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2,ogContactPageLocation3,ogContactPageLocation4,
-  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2,twitterContactPageLocation3,twitterContactPageLocation4 } from '../data/script';
+import { contactPageLocation1Script, contactPageLocation2Script,contactPageLocation3Script,contactPageLocation4Script,contactPageLocation5Script,contactPageLocation6Script,contactPageLocation7Script,contactPageLocation8Script, 
+  ogContactPage, ogContactPageLocation1, ogContactPageLocation2,ogContactPageLocation3,ogContactPageLocation4,ogContactPageLocation5,ogContactPageLocation6,ogContactPageLocation7,ogContactPageLocation8,
+  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2,twitterContactPageLocation3,twitterContactPageLocation4,twitterContactPageLocation5,twitterContactPageLocation6,twitterContactPageLocation7,twitterContactPageLocation8 } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
 import { environment } from '../../environments/environment';
@@ -112,6 +113,19 @@ export class ContactUsComponent implements OnInit {
       else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
     this.script = contactPageLocation4Script;
       }
+      else if (this.router.url.includes(`${environment.locationName}/red-barn`)) {
+        this.script = contactPageLocation5Script;
+          }
+      else if (this.router.url.includes(`${environment.locationName}/wayland-westside`)) {
+        this.script = contactPageLocation6Script;
+          }
+      else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
+        this.script = contactPageLocation7Script;
+          }
+
+      else if (this.router.url.includes(`${environment.locationName}/southside`)) {
+        this.script = contactPageLocation8Script;
+          }
   }
 
   public fetchOg() {
@@ -127,15 +141,16 @@ export class ContactUsComponent implements OnInit {
     else if (this.router.url.includes('alpine')) {
       this.og = ogContactPageLocation4;
     } 
-    // else if (this.router.url.includes('silverhill')) {
-    //   this.og = ogContactPageLocation2;
-    // } else if (this.router.url.includes('barnwell')) {
-    //   this.og = ogContactPageLocation3;
-    // } else if (this.router.url.includes('belforest')) {
-    //   this.og = ogContactPageLocation4;
-    // } else if (this.router.url.includes('fairhope')) {
-    //   this.og = ogContactPageLocation5;
-    // } else if (this.router.url.includes('robertsdale')) {
+    else if (this.router.url.includes('red-barn')) {
+      this.og = ogContactPageLocation5;
+    } else if (this.router.url.includes('wayland-westside')) {
+      this.og = ogContactPageLocation6;
+    } else if (this.router.url.includes('wayland-mill')) {
+      this.og = ogContactPageLocation7;
+    } else if (this.router.url.includes('southside')) {
+      this.og = ogContactPageLocation8;
+    } 
+    // else if (this.router.url.includes('robertsdale')) {
     //   this.og = ogContactPageLocation6;
     // }
 }
@@ -158,15 +173,16 @@ public fetchTwitter() {
   else if (this.router.url.includes('alpine')) {
     this.twitter = twitterContactPageLocation4;
   }
-  //  else if (this.router.url.includes('silverhill')) {
-  //   this.twitter = twitterContactPageLocation2;
-  // } else if (this.router.url.includes('barnwell')) {
-  //   this.twitter = twitterContactPageLocation3;
-  // } else if (this.router.url.includes('belforest')) {
-  //   this.twitter = twitterContactPageLocation4;
-  // } else if (this.router.url.includes('fairhope')) {
-  //   this.twitter = twitterContactPageLocation5;
-  // } else if (this.router.url.includes('robertsdale')) {
+   else if (this.router.url.includes('red-barn')) {
+    this.twitter = twitterContactPageLocation5;
+  } else if (this.router.url.includes('wayland-westside')) {
+    this.twitter = twitterContactPageLocation6;
+  } else if (this.router.url.includes('wayland-mill')) {
+    this.twitter = twitterContactPageLocation7;
+  } else if (this.router.url.includes('southside')) {
+    this.twitter = twitterContactPageLocation8;
+  }
+//  else if (this.router.url.includes('robertsdale')) {
   //   this.twitter = twitterContactPageLocation6;
   // }
 }
@@ -215,15 +231,16 @@ public fetchTwitter() {
      else if (this.router.url.includes('alpine')) {
       this.fetchContactDetailsLocation4();
     }
-    //  else if (this.router.url.includes('silverhill')) {
-    //   this.fetchContactDetailsLocation2();
-    // } else if (this.router.url.includes('barnwell')) {
-    //   this.fetchContactDetailsLocation3();
-    // } else if (this.router.url.includes('belforest')) {
-    //   this.fetchContactDetailsLocation4();
-    // } else if (this.router.url.includes('fairhope')) {
-    //   this.fetchContactDetailsLocation5();
-    // } else if (this.router.url.includes('robertsdale')) {
+     else if (this.router.url.includes('red-barn')) {
+      this.fetchContactDetailsLocation5();
+    } else if (this.router.url.includes('wayland-westside')) {
+      this.fetchContactDetailsLocation6();
+    } else if (this.router.url.includes('wayland-mill')) {
+      this.fetchContactDetailsLocation7();
+    } else if (this.router.url.includes('southside')) {
+      this.fetchContactDetailsLocation8();
+    } 
+    // else if (this.router.url.includes('robertsdale')) {
     //   this.fetchContactDetailsLocation6();
     // }
   }
@@ -267,6 +284,20 @@ public fetchTwitter() {
   } 
 
   public fetchContactDetailsLocation6() {
+    this.heading = ``;
+    this.locationId = '6'
+    this.contactDetails = contactsLocation6;
+    this.hoursDetails = hoursLocation6;
+  }
+
+  public fetchContactDetailsLocation7() {
+    this.heading = ``;
+    this.locationId = '6'
+    this.contactDetails = contactsLocation6;
+    this.hoursDetails = hoursLocation6;
+  }
+
+  public fetchContactDetailsLocation8() {
     this.heading = ``;
     this.locationId = '6'
     this.contactDetails = contactsLocation6;
