@@ -242,9 +242,9 @@ export const imageLocation1 = [
  ]
 
  export const imageLocation8 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-wayland-southside-43.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-wayland-southside-43.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-wayland-southside-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-southside-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-southside-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-southside-43.jpg'
  ]
 
 
