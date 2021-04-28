@@ -1,5 +1,5 @@
 <div  itemscope itemtype="https://schema.org/SelfStorage" itemtype="https://schema.org/LocalBusiness">
-  <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
+  <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Safe_Self_Storage/jpg/safe-self-storage-jumbotron.jpg" />
   <span hidden itemprop="name">{{facilityName}}</span>
   <span hidden itemprop="areaServed" itemscope itemtype="https://schema.org/State">
     <span itemprop="name">{{state}}</span>
@@ -28,7 +28,7 @@
               {{lstUnitType.Description}}
               <meta itemprop="description" 
               content="{{lstUnitType.Description}}" />
-              <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" />
+              <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Safe_Self_Storage/jpg/safe-self-storage-jumbotron.jpg" />
 
           </td>
           <td colspan="2" class="px-4 border text-center" *ngIf="showRate">
@@ -38,9 +38,13 @@
           <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit" >
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
           </td>
-          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
+          <!-- <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
+          </td> -->
+          <td colspan="2" class="py-2 px-4 border text-center" >
+              <a class="btn btn-primary" href="tel:5853817233">Call For Pricing</a>
           </td>
+
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
             <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
@@ -82,13 +86,16 @@
       </div>
     </div>
       <div class="col-6 d-flex justify-content-center" >
-        <div  *ngIf="lstUnitType.IsUnitsAvailable; else other">
+        <!-- <div  *ngIf="lstUnitType.IsUnitsAvailable; else other">
           <div class=" py-1 buttons" *ngIf="showReserve">
               <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </div>
           <div class="py-1 buttons" *ngIf="showMovein"> 
               <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </div>
+        </div> -->
+        <div class="py-2 px-4 text-center" >
+            <a class="btn btn-primary" href="tel:5853817233">Call For Pricing</a>
         </div>
         
         <ng-template #other> 
