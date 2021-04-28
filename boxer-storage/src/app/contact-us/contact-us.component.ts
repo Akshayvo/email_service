@@ -277,31 +277,35 @@ public fetchTwitter() {
     this.access = accessHoursLocation4;
   }
   public fetchContactDetailsLocation5() {
-    this.heading = ``;
+    this.heading = `Boxer Storage - Red Barn Location`;
     this.locationId = '5'
     this.contactDetails = contactsLocation5;
     this.hoursDetails = hoursLocation5;
+    this.access = accessHoursLocation5;
   } 
 
   public fetchContactDetailsLocation6() {
-    this.heading = ``;
+    this.heading = `Boxer Storage - Wayland Westside Location`;
     this.locationId = '6'
     this.contactDetails = contactsLocation6;
     this.hoursDetails = hoursLocation6;
+    this.access = accessHoursLocation6;
   }
 
   public fetchContactDetailsLocation7() {
-    this.heading = ``;
-    this.locationId = '6'
-    this.contactDetails = contactsLocation6;
-    this.hoursDetails = hoursLocation6;
+    this.heading = `Boxer Storage - Wayland Mill Street Location`;
+    this.locationId = '7'
+    this.contactDetails = contactsLocation7;
+    this.hoursDetails = hoursLocation7;
+    this.access = accessHoursLocation7;
   }
 
   public fetchContactDetailsLocation8() {
-    this.heading = ``;
-    this.locationId = '6'
-    this.contactDetails = contactsLocation6;
-    this.hoursDetails = hoursLocation6;
+    this.heading = `Boxer Storage - Waylanf Southside Location`;
+    this.locationId = '8'
+    this.contactDetails = contactsLocation8;
+    this.hoursDetails = hoursLocation8;
+    this.access = accessHoursLocation8;
   }
 
 onSubmit() {

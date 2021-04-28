@@ -232,18 +232,18 @@ export const imageLocation1 = [
  export const imageLocation6 = [
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-westside-11.jpg',
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-westside-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-westside-169.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-westside-43.jpg'
  ]
 
  export const imageLocation7 = [
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-mill-street-11.jpg',
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-mill-street-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-mill-street-169.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-mill-street-43.jpg'
  ]
 
  export const imageLocation8 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-southside-43.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-southside-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-southside-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-southside-169.jpg',
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-southside-43.jpg'
  ]
 

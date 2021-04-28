@@ -93,7 +93,7 @@ export const tableDataContactPage = [
   {
     facility: ' Wayland Southside',
     address: '1050 133rd Ave, Wayland, MI 49348',
-    url: 'wayland-southside/rent'
+    url: 'wayland-southside'
   },    
 ];
 

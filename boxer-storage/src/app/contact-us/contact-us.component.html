@@ -120,13 +120,15 @@
                     <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br>
                   </span>
                 </div>
-                <div class="py-2">
-                  <b>Office Hours</b><br>
-                  <span *ngFor="let hour of hoursDetails">
+                <div *ngIf="locationId == 1 || locationId == 2 || locationId == 3 || locationId == 4" class="py-2">
+                  <span ><b>Office Hours</b><br></span>
+                  <span  *ngFor="let hour of hoursDetails" >
                     <b>{{hour.label}}</b><span>&nbsp;{{hour.data}}</span><br>
-                  </span><br>
+                  </span><br></div>
+              <div>
+                  <b>Access Hours</b><br>
                   <span class="pt-3" *ngFor="let access of access">
-                    <b>{{access.label}}</b><br><span>{{access.data}}</span><br>
+                    <span>{{access.data}}</span><br>
                   </span>             
                 </div>
               </div>

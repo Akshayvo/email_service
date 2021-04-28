@@ -6,7 +6,7 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
           hoursLocation5, contactsLocation5,
-          hoursLocation6, contactsLocation6,  } from '../data/contact';
+          hoursLocation6, hoursLocation7,hoursLocation8, contactsLocation6, contactsLocation7, contactsLocation8  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -133,10 +133,16 @@ public fetchMetaData() {
     } else if ( this.locationId === '4' || this.locationId === 4 ) {
       this.fetchContactDetailsLocation4();
       this.mailSent = false;
-    } else if ( this.locationId === '5' ) {
+    } else if ( this.locationId === '5' || this.locationId === 5 ) {
       this.fetchContactDetailsLocation5();
-    } else if ( this.locationId === '6' ) {
+    } else if ( this.locationId === '6' || this.locationId === 6 ) {
       this.fetchContactDetailsLocation6();
+    }
+    else if ( this.locationId === '7' || this.locationId === 7 ) {
+      this.fetchContactDetailsLocation7();
+    }
+    else if ( this.locationId === '8' || this.locationId === 8 ) {
+      this.fetchContactDetailsLocation8();
     }
   }
 
@@ -173,15 +179,27 @@ public fetchMetaData() {
   }
 
   public fetchContactDetailsLocation5() {
-    this.heading = ``;
+    this.heading = `Boxer Storage - Red barn Location`;
     this.contactDetails = contactsLocation5;
     this.hoursDetails = hoursLocation5;
   }
 
   public fetchContactDetailsLocation6() {
-    this.heading = ``;
+    this.heading = `Boxer Storage - Wayland Westside Location`;
     this.contactDetails = contactsLocation6;
     this.hoursDetails = hoursLocation6;
+  }
+
+  public fetchContactDetailsLocation7() {
+    this.heading = `Boxer Storage - Wayland Mill Street Location`;
+    this.contactDetails = contactsLocation7;
+    this.hoursDetails = hoursLocation7;
+  }
+
+  public fetchContactDetailsLocation8() {
+    this.heading = `Boxer Storage - Wayland Southside Location`;
+    this.contactDetails = contactsLocation8;
+    this.hoursDetails = hoursLocation8;
   }
 
 onSubmit() {
