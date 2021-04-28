@@ -18,7 +18,7 @@ export const contact = [
         label: 'Email:',
         data: 'kellyjjr@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:`kellyjjr@gmail.com`'
+        redirect: 'mailto:kellyjjr@gmail.com'
     },
     {
         id: 3,
