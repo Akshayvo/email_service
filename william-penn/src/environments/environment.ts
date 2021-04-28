@@ -17,7 +17,7 @@ export const environment = {
   facilityName: "William Penn Self Storage",
   VERSION: require("../../package.json").version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: "https://william-penn.netlify.app",
+  websiteUrl: "https://williampenn.netlify.app",
   APIKey: `Mjk0NTQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
 };
 
