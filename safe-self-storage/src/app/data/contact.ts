@@ -48,7 +48,7 @@ export const hours = [
     },
     {
         label: '',
-        data: '24 Hours Available'
+        data: '24 Hour Access Available Upon Request'
     }
 ];
 
