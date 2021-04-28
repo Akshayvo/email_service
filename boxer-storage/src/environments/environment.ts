@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'Boxer Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://boxer-storage-staging.netlify.app`
+  websiteUrl: `https://boxerstorage.com`
 };
 
 /*

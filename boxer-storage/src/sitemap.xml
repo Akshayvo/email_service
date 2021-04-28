@@ -1,205 +1,296 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-  <url>https://boxer-storage-staging.netlify.app/</loc>
+  <url>https://boxerstorage.com/</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://boxer-storage-staging.netlify.app/michigan/muskegon/evanston-ave/reserve-unit </loc>
+    <loc> https://boxerstorage.com/michigan/muskegon/evanston-ave/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://boxer-storage-staging.netlify.app/location/robertsdale/reserve-unit </loc>
+    <loc> https://boxerstorage.com/michigan/muskegon/howard-city/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://boxer-storage-staging.netlify.app/location/fairhope/reserve-unit </loc>
+    <loc> https://boxerstorage.com/michigan/muskegon/ionia/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://boxer-storage-staging.netlify.app/storage-tips </loc>
+    <loc> https://boxerstorage.com/michigan/muskegon/alpine/reserve-unit </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://boxerstorage.com/michigan/muskegon/red-barn/reserve-unit </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://boxerstorage.com/michigan/muskegon/wayland-westside/reserve-unit </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://boxerstorage.com/michigan/muskegon/wayland-mill/reserve-unit </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://boxerstorage.com/michigan/muskegon/wayland-southside/reserve-unit </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://boxerstorage.com/storage-tips </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/location/barnwell/storage-units
+      https://boxerstorage.com/location/evanston-ave/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/contact-us
+      https://boxerstorage.com/location/howard-city/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/location/barnwell
+      https://boxerstorage.com/location/ionia/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/location/fairhope
+      https://boxerstorage.com/location/alpine/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/location/robertsdale
+      https://boxerstorage.com/location/red-barn/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/location/silverhill/storage-units
+      https://boxerstorage.com/location/wayland-westside/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/location/belforest/storage-units
+      https://boxerstorage.com/location/wayland-mill/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/michigan/muskegon/evanston-ave
+      https://boxerstorage.com/location/wayland-southside/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/location/fairhope
+      https://boxerstorage.com/contact-us
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/location/robertsdale
+      https://boxerstorage.com/location/evanston-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/location/silverhill/reserve-unit
+      https://boxerstorage.com/location/howard-city
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://boxerstorage.com/location/ionic
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://boxerstorage.com/location/alpine
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://boxerstorage.com/location/red-barn
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://boxerstorage.com/location/wayland-westside
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://boxerstorage.com/location/wayland-mill
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+
+  <url>
+    <loc> 
+      https://boxerstorage.com/michigan/muskegon/wayland-southside
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  
+  <url>
+    <loc> 
+      https://boxerstorage.com/pay-rent
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  
+  <url>
+    <loc> 
+      https://boxerstorage.com/contact-evanston-ave
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://boxerstorage.com/contact-howard-city
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://boxerstorage.com/pay-rent/ionia
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://boxer-storage-staging.netlify.app/location/belforest
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://boxer-storage-staging.netlify.app/location/silverhill </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://boxer-storage-staging.netlify.app/pay-rent
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://boxer-storage-staging.netlify.app/michigan/muskegon/evanston-ave/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://boxer-storage-staging.netlify.app/location/fairhope/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://boxer-storage-staging.netlify.app/location/robertsdale/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://boxer-storage-staging.netlify.app/location/belforest/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://boxer-storage-staging.netlify.app/location/barnwell/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://boxer-storage-staging.netlify.app/contact-silverhill
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://boxer-storage-staging.netlify.app/contact-barnwell
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://boxer-storage-staging.netlify.app/pay-rent/belforest
+      https://boxerstorage.com/contact-alpine
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://boxer-storage-staging.netlify.app/contact-evanston-ave
+      https://boxerstorage.com/contact-red-barn
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://boxer-storage-staging.netlify.app/contact-fairhope
+      https://boxerstorage.com/contact-wayland-westside
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://boxer-storage-staging.netlify.app/contact-robertsdale
+      https://boxerstorage.com/contact-wayland-mill
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://boxer-storage-staging.netlify.app/pay-rent/barnwell
+      https://boxerstorage.com/contact-wayland-southside
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>
+      https://boxerstorage.com/pay-rent/evanston-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/contact-barnwell
+      https://boxerstorage.com/pay-rent/howard-city
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
-  <url>
+   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/pay-rent/silverhill
+      https://boxerstorage.com/pay-rent/ionia
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+   <url>
+    <loc> 
+      https://boxerstorage.com/pay-rent/alpine
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+   <url>
+    <loc> 
+      https://boxerstorage.com/pay-rent/red-barn
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+   <url>
+    <loc> 
+      https://boxerstorage.com/pay-rent/wayland-westside
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+   <url>
+    <loc> 
+      https://boxerstorage.com/pay-rent/wayland-mill
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+   <url>
+    <loc> 
+      https://boxerstorage.com/pay-rent/wayland-southside
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://boxer-storage-staging.netlify.app/pay-rent/belforest/rent-sub/login
+      https://boxerstorage.com/pay-rent/evanston-ave/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxer-storage-staging.netlify.app/pay-rent/barnwell/rent-sub/login
+      https://boxerstorage.com/pay-rent/howard-city/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://boxer-storage-staging.netlify.app/pay-rent/silverhill/rent-sub/login
+      https://boxerstorage.com/pay-rent/ionia/rent-sub/login
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>
+      https://boxerstorage.com/pay-rent/alpine/rent-sub/login
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>
+      https://boxerstorage.com/pay-rent/red-barn/rent-sub/login
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>
+      https://boxerstorage.com/pay-rent/wayland-westside/rent-sub/login
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>
+      https://boxerstorage.com/pay-rent/wayland-mill/rent-sub/login
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>
+      https://boxerstorage.com/pay-rent/wayland-southside/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
