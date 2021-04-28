@@ -75,7 +75,7 @@
     </div>
   
     <div *ngFor="let contact of contactInfo" class="py-1">
-      <span> <i class="{{contact.class}}"></i></span> <span class="contact-data" *ngIf="contact.id === 0 || contact.id === 1 || contact.id ===2 else other_content"><h5 class="mb-0 contactdata"><a [href]="contact?.redirect">{{contact.data}}</a></h5></span>
+      <span> <i class="{{contact.class}}"></i></span><span class="contact-data" *ngIf="contact.id === 0 || contact.id === 1 || contact.id === 2 else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></span>
     
       <ng-template #other_content> <span class="contact-data">{{contact.data}}</span></ng-template>
     </div>
