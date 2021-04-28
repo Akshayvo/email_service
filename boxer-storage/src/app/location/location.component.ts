@@ -600,6 +600,7 @@ export class LocationComponent implements OnInit {
     this.locationId = 5;
     this.contacts = contactsLocation5;
     this.hours = hoursLocation5;
+    this.access = accessHoursLocation5;
     this.tabs = tabs5;
     this.features = location5FeaturesHead;
     
@@ -610,6 +611,7 @@ export class LocationComponent implements OnInit {
     this.locationId = 6;
     this.contacts = contactsLocation6;
     this.hours = hoursLocation6;
+    this.access = accessHoursLocation6;
     this.tabs = tabs6;
     this.features = location6FeaturesHead;
   }
@@ -619,6 +621,7 @@ export class LocationComponent implements OnInit {
     this.locationId = 7;
     this.contacts = contactsLocation7;
     this.hours = hoursLocation7;
+    this.access = accessHoursLocation6;
     this.tabs = tabs7;
     this.features = location7FeaturesHead;
   }
@@ -628,6 +631,7 @@ export class LocationComponent implements OnInit {
     this.locationId = 8;
     this.contacts = contactsLocation8;
     this.hours = hoursLocation8;
+    this.access = accessHoursLocation6;
     this.tabs = tabs8;
     this.features = location8FeaturesHead;
   }

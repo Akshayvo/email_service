@@ -5,10 +5,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6, } from '../../data/contact';
+import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6,contactsLocation7,contactsLocation8 } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3,ogPayRentPageLocation4,
-   twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4  } from '../../data/script';
+import { ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3,ogPayRentPageLocation4,ogPayRentPageLocation5,ogPayRentPageLocation6,ogPayRentPageLocation7,ogPayRentPageLocation8,
+   twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4,twitterPayRentPageLocation5,twitterPayRentPageLocation6,twitterPayRentPageLocation7,twitterPayRentPageLocation8  } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -151,43 +151,40 @@ export class LoginComponent implements OnInit, OnDestroy {
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
     }
      else if (this.router.url.includes('alpine')) {
-      this.id = 3;
+      this.id = 4;
       this.name = 'Boxer Storage - Alpine Location';
       this.contact = contactsLocation4;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
     }
-    // else  if (this.router.url.includes('silverhill')) {
-    //   this.id = 2;
-    //   this.name = 'Storage Plus of Baldwin County - Silverhill Location';
-    //   this.contact = contactsLocation2;
-    //   this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-    //   localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
-    // } else  if (this.router.url.includes('barnwell')) {
-    //   this.id = 3;
-    //   this.name = 'Storage Plus of Baldwin County - Barnwell Location';
-    //   this.contact = contactsLocation3;
-    //   this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
-    //   localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
-    // } else  if (this.router.url.includes('belforest')) {
-    //   this.id = 4;
-    //   this.name = 'Storage Plus of Baldwin County - Belforest Location';
-    //   this.contact = contactsLocation4;
-    //   this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
-    //   localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
-    // } else  if (this.router.url.includes('belforest')) {
-    //   this.id = 5;
-    //   this.name = 'Storage Plus of Baldwin County - Fairhope';
-    //   this.contact = contactsLocation5;
-    //   this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
-    //   localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
-    // } else  if (this.router.url.includes('belforest')) {
-    //   this.id = 6;
-    //   this.name = 'Storage Plus of Baldwin County - Robertsdale';
-    //   this.contact = contactsLocation6;
-    //   this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
-    //   localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc6);
-    // }
+    else if (this.router.url.includes('red-barn')) {
+      this.id = 5;
+      this.name = 'Boxer Storage - Red Barn Location';
+      this.contact = contactsLocation5;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
+    }
+    else if (this.router.url.includes('wayland-westside')) {
+      this.id = 6;
+      this.name = 'Boxer Storage - Wayland Westside Location';
+      this.contact = contactsLocation6;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc6);
+    }
+    else if (this.router.url.includes('wayland-mill')) {
+      this.id = 7;
+      this.name = 'Boxer Storage - Wayland Mill Street Location';
+      this.contact = contactsLocation7;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc7;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc7);
+    }
+    else if (this.router.url.includes('southside')) {
+      this.id = 8;
+      this.name = 'Boxer Storage - Southside Location';
+      this.contact = contactsLocation8;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc8;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc8);
+    }
   }
 
   public navigate (location: any) {
@@ -211,15 +208,16 @@ export class LoginComponent implements OnInit, OnDestroy {
     else if (this.router.url.includes('alpine')) {
       this.og = ogPayRentPageLocation4;
     }
-    //  else  if (this.router.url.includes('silverhill')) {
-    //   this.og = ogPayRentPageLocation2;
-    // } else if (this.router.url.includes('barnwell')) {
-    //   this.og = ogPayRentPageLocation3;
-    // } else if (this.router.url.includes('belforest')) {
-    //   this.og = ogPayRentPageLocation4;
-    // } else if (this.router.url.includes('fairhope')) {
-    //   this.og = ogPayRentPageLocation5;
-    // } else if (this.router.url.includes('robertsdale')) {
+     else  if (this.router.url.includes('red-barn')) {
+      this.og = ogPayRentPageLocation5;
+    } else if (this.router.url.includes('wayland-westside')) {
+      this.og = ogPayRentPageLocation6;
+    } else if (this.router.url.includes('wayland-mill')) {
+      this.og = ogPayRentPageLocation7;
+    } else if (this.router.url.includes('southside')) {
+      this.og = ogPayRentPageLocation8;
+    } 
+    // else if (this.router.url.includes('robertsdale')) {
     //   this.og = ogPayRentPageLocation6;
     // }
     }
@@ -237,15 +235,16 @@ public fetchTwitter() {
   else if (this.router.url.includes('alpine')) {
     this.twitter = twitterPayRentPageLocation4;
   }
-  //  else if (this.router.url.includes('silverhill')) {
-  //     this.twitter = twitterPayRentPageLocation2;
-  // } else if (this.router.url.includes('barnwell')) {
-  //       this.twitter = twitterPayRentPageLocation3;
-  // } else if (this.router.url.includes('belforest')) {
-  //       this.twitter = twitterPayRentPageLocation4;
-  // } else if (this.router.url.includes('fairhope')) {
-  //   this.twitter = twitterPayRentPageLocation5;
-  // } else if (this.router.url.includes('robertsdale')) {
+   else if (this.router.url.includes('red-barn')) {
+      this.twitter = twitterPayRentPageLocation5;
+  } else if (this.router.url.includes('wayland-westside')) {
+        this.twitter = twitterPayRentPageLocation6;
+  } else if (this.router.url.includes('wayland-mill')) {
+        this.twitter = twitterPayRentPageLocation7;
+  } else if (this.router.url.includes('southside')) {
+    this.twitter = twitterPayRentPageLocation8;
+  } 
+  // else if (this.router.url.includes('robertsdale')) {
   //   this.twitter = twitterPayRentPageLocation6;
   // }
 }

@@ -60,7 +60,7 @@ export class PayRentComponent implements OnInit {
    else if (this.router.url.includes('red-barn')) {
     this.name = ' Red Barn Location';
   } else if (this.router.url.includes('wayland-westside')) {
-    this.name = 'wayland Westside street Location';
+    this.name = 'Wayland Westside street Location';
   } else if (this.router.url.includes('wayland-mill')) {
     this.name = 'Wayland mill Location';
   } else if (this.router.url.includes('southside')) {

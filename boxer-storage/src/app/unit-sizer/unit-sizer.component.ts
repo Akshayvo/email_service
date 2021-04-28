@@ -85,30 +85,29 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public fetchDetailsLocation5() {
-    this.h2tag = 'Storage Unit Sizer ';
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
+    this.h2tag = 'Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that out! Still have questions? Call (231) 652-785!`;
     this.unitSizer = unitSizerLocation5;
   }
 
   public fetchDetailsLocation6() {
-    this.h2tag = 'Storage Unit Sizer ';
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
+    this.h2tag = 'Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that out! Still have
+    questions? Call (269) 792-2290`;
     this.unitSizer = unitSizerLocation6;
   }
 
   public fetchDetailsLocation7() {
-    this.h2tag = 'Storage Unit Sizer ';
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
+    this.h2tag = 'Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that out! Still have
+    questions? Call (269) 792-2290!`;
     this.unitSizer = unitSizerLocation7;
   }
 
   public fetchDetailsLocation8() {
-    this.h2tag = 'Storage Unit Sizer ';
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
+    this.h2tag = 'Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that out! Still have
+    questions? Call (269) 792-2290!`;
     this.unitSizer = unitSizerLocation8;
   }
 }
