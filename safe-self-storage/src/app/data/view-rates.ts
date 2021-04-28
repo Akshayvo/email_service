@@ -19,26 +19,26 @@ export const th = [
     data: `Size`,
     state: true,
   },
-  {
-    data: `Rate`,
-    state: objSIMSetting.objUnitSizesSetting.blnShowRate
-  },
-  {
-    data: 'deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  },
+  // {
+  //   data: `Rate`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowRate
+  // },
+  // {
+  //   data: 'deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
   {  
-    data: `Reserve a Unit`,
+    data: `Contact Us`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
-  {
-    data: `Move In`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
-  },
-  {
-    data: `Climate Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  },
+  // {
+  //   data: `Move In`,
+  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  // },
+  // {
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
 ];
 
 export const state = {
