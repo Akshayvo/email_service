@@ -123,7 +123,7 @@ export class ContactUsComponent implements OnInit {
         this.script = contactPageLocation7Script;
           }
 
-      else if (this.router.url.includes(`${environment.locationName}/southside`)) {
+      else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
         this.script = contactPageLocation8Script;
           }
   }
@@ -147,7 +147,7 @@ export class ContactUsComponent implements OnInit {
       this.og = ogContactPageLocation6;
     } else if (this.router.url.includes('wayland-mill')) {
       this.og = ogContactPageLocation7;
-    } else if (this.router.url.includes('southside')) {
+    } else if (this.router.url.includes('wayland-southside')) {
       this.og = ogContactPageLocation8;
     } 
     // else if (this.router.url.includes('robertsdale')) {
@@ -179,7 +179,7 @@ public fetchTwitter() {
     this.twitter = twitterContactPageLocation6;
   } else if (this.router.url.includes('wayland-mill')) {
     this.twitter = twitterContactPageLocation7;
-  } else if (this.router.url.includes('southside')) {
+  } else if (this.router.url.includes('wayland-southside')) {
     this.twitter = twitterContactPageLocation8;
   }
 //  else if (this.router.url.includes('robertsdale')) {
@@ -237,7 +237,7 @@ public fetchTwitter() {
       this.fetchContactDetailsLocation6();
     } else if (this.router.url.includes('wayland-mill')) {
       this.fetchContactDetailsLocation7();
-    } else if (this.router.url.includes('southside')) {
+    } else if (this.router.url.includes('wayland-southside')) {
       this.fetchContactDetailsLocation8();
     } 
     // else if (this.router.url.includes('robertsdale')) {

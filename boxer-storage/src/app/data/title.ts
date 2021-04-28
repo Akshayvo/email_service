@@ -22,7 +22,7 @@ export const location6PageContent = `Check out our current rates, then reserve y
 export const location7PageTitle = `Wayland Mill Street | Boxer Storage`;
 export const location7PageContent = `Check out our current availability and rates, then reserve your unit or rent through our website! Have questions? Give our office a call!`;
 
-export const location8PageTitle = `Wayland Southside | Boxer Storage`;
+export const location8PageTitle = `Wayland Wayland Southside | Boxer Storage`;
 export const location8PageContent = `Review our current availability and rates, then reserve your unit or rent online! Have questions? Give our office a call to learn more!`;
 
 export const viewRatesPageTitle = ``;

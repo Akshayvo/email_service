@@ -63,8 +63,8 @@ export class PayRentComponent implements OnInit {
     this.name = 'Wayland Westside street Location';
   } else if (this.router.url.includes('wayland-mill')) {
     this.name = 'Wayland mill Location';
-  } else if (this.router.url.includes('southside')) {
-    this.name = 'Southside Location';
+  } else if (this.router.url.includes('wayland-southside')) {
+    this.name = 'Wayland Southside Location';
   } 
   // else if (this.router.url.includes('robertsdale')) {
   //   this.name = 'Robertsdale Location';
@@ -100,7 +100,7 @@ export class PayRentComponent implements OnInit {
       this.og = ogPayRentPageLocation6;
     } else if (this.router.url.includes('wayland-mill')) {
       this.og = ogPayRentPageLocation7;
-    } else if (this.router.url.includes('southside')) {
+    } else if (this.router.url.includes('wayland-southside')) {
       this.og = ogPayRentPageLocation8;
     } 
     // else if (this.router.url.includes('robertsdale')) {
@@ -127,7 +127,7 @@ public fetchTwitter() {
     this.twitter = twitterPayRentPageLocation6;
   } else if (this.router.url.includes('wayland-mill')) {
     this.twitter = twitterPayRentPageLocation7;
-  } else if (this.router.url.includes('southside')) {
+  } else if (this.router.url.includes('wayland-southside')) {
     this.twitter = twitterPayRentPageLocation8;
   } 
   // else if (this.router.url.includes('robertsdale')) {

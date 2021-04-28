@@ -178,9 +178,9 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc7;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc7);
     }
-    else if (this.router.url.includes('southside')) {
+    else if (this.router.url.includes('wayland-southside')) {
       this.id = 8;
-      this.name = 'Boxer Storage - Southside Location';
+      this.name = 'Boxer Storage - Wayland Southside Location';
       this.contact = contactsLocation8;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc8;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc8);
@@ -214,7 +214,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation6;
     } else if (this.router.url.includes('wayland-mill')) {
       this.og = ogPayRentPageLocation7;
-    } else if (this.router.url.includes('southside')) {
+    } else if (this.router.url.includes('wayland-southside')) {
       this.og = ogPayRentPageLocation8;
     } 
     // else if (this.router.url.includes('robertsdale')) {
@@ -241,7 +241,7 @@ public fetchTwitter() {
         this.twitter = twitterPayRentPageLocation6;
   } else if (this.router.url.includes('wayland-mill')) {
         this.twitter = twitterPayRentPageLocation7;
-  } else if (this.router.url.includes('southside')) {
+  } else if (this.router.url.includes('wayland-southside')) {
     this.twitter = twitterPayRentPageLocation8;
   } 
   // else if (this.router.url.includes('robertsdale')) {

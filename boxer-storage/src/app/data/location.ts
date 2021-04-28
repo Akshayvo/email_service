@@ -250,7 +250,7 @@ export const headingReservePageLocation6 = `Ready to reserve your self storage u
 
 export const headingReservePageLocation7 = `Ready to reserve your self storage unit at our Wayland Mill Street location?`;
 
-export const headingReservePageLocation8 = `Ready to reserve your self storage unit at our Southside location?`;
+export const headingReservePageLocation8 = `Ready to reserve your self storage unit at our Wayland Southside location?`;
 
 export const heading1 = `Boxer Storage - Evanston Ave Location`;
 
@@ -266,7 +266,7 @@ export const heading6 = `Boxer Storage - Wayland Westside Location`;
 
 export const heading7 = `Boxer Storage - Wayland Mill Street Location`;
 
-export const heading8 = `Boxer Storage - Southside Location`;
+export const heading8 = `Boxer Storage - Wayland Southside Location`;
 
 
 export const unitSizerLocation1 = [

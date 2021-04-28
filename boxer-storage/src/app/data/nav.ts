@@ -48,8 +48,8 @@ export const navLinks = [
               },
               {
                 id: '8',
-                label: 'Southside Location',
-                path: `${environment.locationName}/southside`,
+                label: 'Wayland Southside Location',
+                path: `${environment.locationName}/wayland-southside`,
               },
         ]
     },
@@ -95,8 +95,8 @@ export const navLinks = [
               },
               {
                 id: '8',
-                label: 'Southside Location',
-                path: `${environment.locationName}/southside/view-rates`,
+                label: 'Wayland Southside Location',
+                path: `${environment.locationName}/wayland-southside/view-rates`,
               },
         ]
     },

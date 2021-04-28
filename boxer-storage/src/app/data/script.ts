@@ -64,7 +64,7 @@ export const nameLocation4 = `Boxer Storage - Alpine Location`;
 export const nameLocation5 = `Boxer Storage - Red Barn Location`;
 export const nameLocation6 = `Boxer Storage - Wayland Westside Location`;
 export const nameLocation7 = `Boxer Storage - Wayland Mill Street Location`;
-export const nameLocation8 = `Boxer Storage - Southside Location`;
+export const nameLocation8 = `Boxer Storage - Wayland Southside Location`;
 
 
 export const location1 = `evanston-ave`;
@@ -74,7 +74,7 @@ export const location4 = `alpine`;
 export const location5 = `Red Barn`;
 export const location6 = `Wayland Westside`;
 export const location7 = `Wayland Mill`;
-export const location8 = `Southside`;
+export const location8 = `Wayland Southside`;
 
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/evanston-ave/storage-units`;
@@ -84,7 +84,7 @@ export const urlLocation4 = `${environment.websiteUrl}/${environment.locationNam
 export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/red-barn/storage-units`;
 export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/wayland-westside/storage-units`;
 export const urlLocation7 = `${environment.websiteUrl}/${environment.locationName}/wayland-mill/storage-units`;
-export const urlLocation8 = `${environment.websiteUrl}/${environment.locationName}/Southside/storage-units`;
+export const urlLocation8 = `${environment.websiteUrl}/${environment.locationName}/Wayland Southside/storage-units`;
 
 // export const urlLocation3 = ``;
 // export const urlLocation4 = ``;
@@ -107,7 +107,7 @@ export const description6 = `Boxer Storage - Wayland Westside Location is one of
 
 export const description7 = `Boxer Storage - Wayland Mill Street Location is one of our 12 self storage facilities. We offer a number of self storage unit options with friendly customer service at affordable rates!`;
 
-export const description8 = `Boxer Storage - Wayland Southside Location is one of our 12 self storage facilities. We offer a number of self storage unit choices with friendly customer service and affordable rates!`;
+export const description8 = `Boxer Storage - Wayland Wayland Southside Location is one of our 12 self storage facilities. We offer a number of self storage unit choices with friendly customer service and affordable rates!`;
 
 // export const description6 = `Our Robertsdale location has a number of unit sizes ideal for just about any self
 //                              storage need at great prices!  Our 24-hour access policy makes coming and going
@@ -226,7 +226,7 @@ export const imageLocation1 = [
  export const imageLocation5 = [
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-red-barn-11.jpg',
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-red-barn-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-red-barn-169.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-red-barn-43.jpg'
  ]
 
  export const imageLocation6 = [
@@ -242,9 +242,9 @@ export const imageLocation1 = [
  ]
 
  export const imageLocation8 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-southside-43.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-southside-43.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-southside-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-wayland-southside-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-wayland-southside-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/boxer-storage-wayland-wayland-southside-43.jpg'
  ]
 
 

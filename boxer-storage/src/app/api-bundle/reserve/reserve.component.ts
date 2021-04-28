@@ -57,7 +57,7 @@ export class ReserveComponent implements OnInit {
     } else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
       this.id = 7;
       this.heading = headingReservePageLocation7;
-    } else if (this.router.url.includes(`${environment.locationName}/southside`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
       this.id = 8;
       this.heading = headingReservePageLocation8;
     } 

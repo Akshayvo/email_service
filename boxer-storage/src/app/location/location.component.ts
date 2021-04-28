@@ -283,13 +283,13 @@ export class LocationComponent implements OnInit {
             });
           }
 
-  else if (this.router.url.includes(`${environment.locationName}/southside`)) {
+  else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
             this.meta.addTag({
               name: 'description',
               content: `${this.location8PageContent}`
     });
     this.titleService.setTitle(`${this.location8PageTitle}`);
-            this.locationName = `Boxer Storage - Southside Location`;
+            this.locationName = `Boxer Storage - Wayland Southside Location`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc8;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location8Script;
@@ -374,7 +374,7 @@ export class LocationComponent implements OnInit {
   this.og = ogLocation6;
 }  else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
   this.og = ogLocation7;
-}  else if (this.router.url.includes(`${environment.locationName}/southside`)) {
+}  else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
   this.og = ogLocation8;
 }  
   }
@@ -398,7 +398,7 @@ export class LocationComponent implements OnInit {
     this.twitter = twitterLocation6;
   } else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
     this.twitter = twitterLocation7;
-  } else if (this.router.url.includes(`${environment.locationName}/southside`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
     this.twitter = twitterLocation8;
   }
   }
@@ -422,7 +422,7 @@ export class LocationComponent implements OnInit {
       this.fetchDetailsLocation6();
     } else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
       this.fetchDetailsLocation7();
-    } else if (this.router.url.includes(`${environment.locationName}/southside`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
       this.fetchDetailsLocation8();
     }
  }
@@ -454,7 +454,7 @@ export class LocationComponent implements OnInit {
     this.router.navigate([`${environment.locationName}/wayland-mill/reserve-unit`],
           );
   } else if ( this.locationId === 8 ) {
-    this.router.navigate([`${environment.locationName}/southside/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/wayland-southside/reserve-unit`],
           );
   }
  }
@@ -518,7 +518,7 @@ export class LocationComponent implements OnInit {
   } 
   else if ( this.locationId === 8 ) {
     if (environment.signUpForAuotoPay === 1) {
-      this.router.navigate([`pay-rent/southside/rent-sub/login`],
+      this.router.navigate([`pay-rent/wayland-southside/rent-sub/login`],
       );
     } else {
       this.router.navigate(['pay-rent']);
@@ -548,8 +548,8 @@ export class LocationComponent implements OnInit {
   else if (this.router.url.includes('wayland-mill')) {
     this.router.navigate(['/contact-wayland-mill'])
   }
-  else if (this.router.url.includes('southside')) {
-    this.router.navigate(['/contact-southside'])
+  else if (this.router.url.includes('wayland-southside')) {
+    this.router.navigate(['/contact-wayland-southside'])
   }
  }
 

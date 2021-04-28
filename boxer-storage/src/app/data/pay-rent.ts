@@ -48,9 +48,9 @@ export const tableData = [
     url: 'wayland-mill/rent-sub/login'
   },  
   {
-    facility: ' Southside',
+    facility: ' Wayland Southside',
     address: '1050 133rd Ave, Wayland, MI 49348',
-    url: 'southside/rent-sub/login'
+    url: 'wayland-southside/rent-sub/login'
   },   
 ];
 
@@ -91,9 +91,9 @@ export const tableDataContactPage = [
     url: 'wayland-mill'
   },  
   {
-    facility: ' Southside',
+    facility: ' Wayland Southside',
     address: '1050 133rd Ave, Wayland, MI 49348',
-    url: 'southside/rent'
+    url: 'wayland-southside/rent'
   },    
 ];
 

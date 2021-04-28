@@ -341,7 +341,7 @@ resolve: { data: AppResolver }
 },
 
 
-{ path: `${environment.locationName}/southside`,
+{ path: `${environment.locationName}/wayland-southside`,
 component: LocationComponent,
 children: [
   {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -635,7 +635,7 @@ resolve: { data: AppResolver }
     },
 
     
-    { path: `${environment.locationName}/southside/view-rates`,
+    { path: `${environment.locationName}/wayland-southside/view-rates`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -727,7 +727,7 @@ resolve: { data: AppResolver }
         externalUrl: ''
     }
   },
-  { path: 'review/southside', component: HomeComponent,
+  { path: 'review/wayland-southside', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -774,7 +774,7 @@ resolve: { data: AppResolver }
     children: childroute
   },
   {
-    path: 'pay-rent/southside', component: PayRentComponent,
+    path: 'pay-rent/wayland-southside', component: PayRentComponent,
     children: childroute
   },
   {
@@ -790,7 +790,7 @@ resolve: { data: AppResolver }
   { path: 'contact-red-barn', component: ContactUsComponent},
   { path: 'contact-wayland-westside', component: ContactUsComponent},
   { path: 'contact-wayland-mill', component: ContactUsComponent},
-  { path: 'contact-southside', component: ContactUsComponent},
+  { path: 'contact-wayland-southside', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
 ];

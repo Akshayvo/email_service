@@ -47,7 +47,7 @@ export class UnitSizerComponent implements OnInit {
     this.fetchDetailsLocation6();
   } else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
     this.fetchDetailsLocation7();
-  } else if (this.router.url.includes(`${environment.locationName}/southside`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
     this.fetchDetailsLocation8();
   } 
   // else if (this.router.url.includes('/location/robertsdale')) {
