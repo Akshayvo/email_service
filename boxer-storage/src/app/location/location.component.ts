@@ -377,15 +377,6 @@ export class LocationComponent implements OnInit {
 }  else if (this.router.url.includes(`${environment.locationName}/southside`)) {
   this.og = ogLocation8;
 }  
-  //else if (this.router.url.includes('/location/barnwell')) {
-  //   this.og = ogLocation3;
-  // } else if (this.router.url.includes('/location/belforest')) {
-  //   this.og = ogLocation4;
-  // } else if (this.router.url.includes('/location/fairhope')) {
-  //   this.og = ogLocation5;
-  // } else if (this.router.url.includes('/location/robertsdale')) {
-  //   this.og = ogLocation6;
-  // }
   }
 
   public fetchTwitter() {
@@ -401,13 +392,13 @@ export class LocationComponent implements OnInit {
      else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
       this.twitter = twitterLocation4;
   } 
-  else if (this.router.url.includes('/location/red-barn')) {
+  else if (this.router.url.includes(`${environment.locationName}/red-barn`)) {
     this.twitter = twitterLocation5;
-  } else if (this.router.url.includes('/location/wayland-westside')) {
+  } else if (this.router.url.includes(`${environment.locationName}/wayland-westside`)) {
     this.twitter = twitterLocation6;
-  } else if (this.router.url.includes('/location/wayland-mill')) {
+  } else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
     this.twitter = twitterLocation7;
-  } else if (this.router.url.includes('/location/southside')) {
+  } else if (this.router.url.includes(`${environment.locationName}/southside`)) {
     this.twitter = twitterLocation8;
   }
   }
@@ -425,13 +416,13 @@ export class LocationComponent implements OnInit {
      else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
         this.fetchDetailsLocation4();
     } 
-    else if (this.router.url.includes('/location/red-barn')) {
+    else if (this.router.url.includes(`${environment.locationName}/red-barn`)) {
       this.fetchDetailsLocation5();
-    } else if (this.router.url.includes('/location/wayland-westside')) {
+    } else if (this.router.url.includes(`${environment.locationName}/wayland-westside`)) {
       this.fetchDetailsLocation6();
-    } else if (this.router.url.includes('/location/wayland-mill')) {
+    } else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
       this.fetchDetailsLocation7();
-    } else if (this.router.url.includes('/location/southside')) {
+    } else if (this.router.url.includes(`${environment.locationName}/southside`)) {
       this.fetchDetailsLocation8();
     }
  }
@@ -454,16 +445,16 @@ export class LocationComponent implements OnInit {
           );
   }
   else if ( this.locationId === 5 ) {
-    this.router.navigate(['/location/red-barn/reserve-unit'],
+    this.router.navigate([`${environment.locationName}/red-barn/reserve-unit`],
           );
   }  else if ( this.locationId === 6 ) {
-    this.router.navigate(['/location/wayland-westside/reserve-unit'],
+    this.router.navigate([`${environment.locationName}/wayland-westside/reserve-unit`],
          );
   }  else if ( this.locationId === 7 ) {
-    this.router.navigate(['/location/wayland-mill/reserve-unit'],
+    this.router.navigate([`${environment.locationName}/wayland-mill/reserve-unit`],
           );
   } else if ( this.locationId === 8 ) {
-    this.router.navigate(['/location/southside/reserve-unit'],
+    this.router.navigate([`${environment.locationName}/southside/reserve-unit`],
           );
   }
  }
@@ -604,12 +595,14 @@ export class LocationComponent implements OnInit {
 
 
    public fetchDetailsLocation5() {
+    
     this.name = heading5;
     this.locationId = 5;
     this.contacts = contactsLocation5;
     this.hours = hoursLocation5;
     this.tabs = tabs5;
     this.features = location5FeaturesHead;
+    
   }
 
   public fetchDetailsLocation6() {

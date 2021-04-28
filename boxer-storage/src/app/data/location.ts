@@ -230,6 +230,10 @@ export const headingLocation5 = ``;
 
 export const headingLocation6 = ``;
 
+export const headingLocation7 = ``;
+
+export const headingLocation8 = ``;
+
 
 
 export const headingReservePageLocation1 = `Ready to reserve your self storage unit at our Evanston Ave location?`;

@@ -13,10 +13,10 @@ export class DataSharingService {
     loc2: 'dzJ0OFc2SjIqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28629 howard-city,
     loc3: 'dzJ0OFc0SjEqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28410 ionia
     loc4: 'dzJ0OFczSjIqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28327 alpine
-    loc5: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-    loc6: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
-    loc7: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-    loc8: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+    loc5: 'dzJ0OFczSjEqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28318
+    loc6: 'dzJ0N1c2SjcqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 27675
+    loc7: 'dzJ0N1c2SjcqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 27673
+    loc8: 'dzJ0N1c2SjcqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
   };
 
 //  locationAPIKey = {                                                     // demo north
