@@ -136,7 +136,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     if (this.router.url.includes('storage-square')) {
       this.id = 1;
-      this.name = "Al Cheapo's Self Storage - Aaron's Space Station";
+      this.name = "Al Cheapo's Self Storage - Storage Square";
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
