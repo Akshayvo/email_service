@@ -14,12 +14,12 @@ export const tableHeader = [
 export const tableData = [
   {
     facility: ' Montello',
-    address: 'N4211 20th Ct, Montello, WI 53949',
+    address: 'W2739 Lower Locks Rd, Montello, WI 53949',
     url: 'montello/rent-sub/login'
   },
   {
     facility: 'Wautoma',
-    address: 'N4211 20th Ct, Montello, WI 53949',
+    address: '207 N Century Dr, Wautoma, WI 54982',
     url: 'wautoma/rent-sub/login'
   },
   // {
@@ -47,13 +47,15 @@ export const tableData = [
 export const tableDataContactPage = [
   {
     facility: ' Montello',
-    address: 'N4211 20th Ct, Montello, WI 53949',
-    url: 'montello'
+    address: 'W2739 Lower Locks Rd, Montello, WI 53949',
+    url: 'montello',
+    redirect: 'https://goo.gl/maps/zgNoRWd4JgdwXVQaA',
   },
   {
     facility: 'Wautoma',
-    address: 'N4211 20th Ct, Montello, WI 53949',
-    url: 'wautoma'
+    address: '207 N Century Dr, Wautoma, WI 54982',
+    url: 'wautoma',
+    redirect: 'https://goo.gl/maps/uehRzLAhdsySxLtu8',
   },
   // {
   //   facility: 'Barnwell',

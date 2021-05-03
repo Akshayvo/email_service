@@ -3,14 +3,14 @@
     <div class="container">
       <div class="row">          
         <div class="col-lg-4">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11527.792654461859!2d-89.297297!3d43.7531732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b0b06bda8e17faa!2sMP%26E%20Properties%20LLC%2C%20Storage%20and%20Apartments!5e0!3m2!1sen!2sus!4v1619032222799!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11527.792654461859!2d-89.297297!3d43.7531732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b0b06bda8e17faa!2sMP%26E%20Properties%20LLC%2C%20Storage%20and%20Apartments!5e0!3m2!1sen!2sus!4v1619032222799!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen title="Facility Google Map"></iframe>
         </div>
         <div class="col-lg-5  pt-3">
           <h2>Montello</h2>
           <!-- <p> -->
             <div *ngFor="let contact of contactsBrookside" class="contact-label pt-2">
                 <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
-              <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+              <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' || contact?.label === 'Facility Address: '  else other_content">
                 <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
                   <h3>{{contact.data}}</h3>
                 </a>
@@ -18,7 +18,7 @@
               <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
             </div>
           <!-- </p> -->
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/wautoma/storage-units']" role="button">View Rates</a>                
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/wisconsin/montello/storage-units']" role="button">View Rates</a>                
           <!-- <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/wautoma/reserve-unit']" role="button"> Reserve Unit</a>                                   -->
         </div>
         <div class="col-lg-3 partition-border contact-hours pt-3">
@@ -46,20 +46,20 @@
       <div class="container">
         <div class="row">          
           <div class="col-lg-4">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2866.561938445185!2d-89.26915858448864!3d44.07175357910917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880122ea5d420145%3A0xe9882b0769833bfd!2s207%20N%20Century%20Dr%2C%20Wautoma%2C%20WI%2054982!5e0!3m2!1sen!2sus!4v1619035876402!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2866.561938445185!2d-89.26915858448864!3d44.07175357910917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880122ea5d420145%3A0xe9882b0769833bfd!2s207%20N%20Century%20Dr%2C%20Wautoma%2C%20WI%2054982!5e0!3m2!1sen!2sus!4v1619035876402!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen title="Facility Google Map"></iframe>
           </div>
           <div class="col-lg-5 pt-3">
             <h2>Wautoma</h2>
             <div *ngFor="let contact of contactsAndrews" class="contact-label pt-2">
               <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
-            <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+            <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: '|| contact?.label === 'Facility Address: ' else other_content">
               <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
                 <h3>{{contact.data}}</h3>
               </a>
             </div>
             <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
           </div>
-            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/montello/storage-units']" role="button">View Rates</a>                
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/wisconsin/wautoma/storage-units']" role="button">View Rates</a>                
             <!-- <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/montello/reserve-unit']" role="button"> Reserve Unit</a>                                   -->
           </div>
           <div class="col-lg-3 partition-border contact-hours pt-3">

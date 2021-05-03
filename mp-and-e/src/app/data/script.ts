@@ -98,10 +98,9 @@ export const urlLocation5 = `${environment.websiteUrl}/${environment.locationNam
 export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/robertsdale/storage-units`;
 
 
-export const description1 = `brick self storage facility front office with a green lawn
-                             in the front and blue sky above`;
+export const description1 = `Our Montello location has a wide variety of unit sizes certain to meet any self storage needs. From our large closet sized 7-foot-by-8-foot units to our oversized 20-foot-by-24-foot, we've got you covered!`;
 
-export const description2 = `Our Wautoma location has a number of regular and climate controlled unit types `;
+export const description2 = `Our Wautoma location has several unit sizes to meet your larger self storage needs. Our units start at 10-foot-by-20-foot and go up to 10-foot-by-24-foot`;
 
 export const description3 = `Our Barnwell location has a number of regular and climate controlled unit types ideal
                              for just about any self storage need at an affordable price!  Our 24-hour access policy
@@ -118,8 +117,8 @@ export const description6 = `Our Robertsdale location has a number of unit sizes
                              storage need at great prices!  Our 24-hour access policy makes coming and going
                              on your schedule a breeze!`;
 
-export const maplocation1 = 'https://goo.gl/maps/FqeHH1xEv8AP4GLg6';
-export const maplocation2 = 'https://goo.gl/maps/FTweCN2UdexnsJB49';
+export const maplocation1 = 'https://goo.gl/maps/MPmzjqtH1Lhm28g97';
+export const maplocation2 = 'https://goo.gl/maps/MPmzjqtH1Lhm28g97';
 export const maplocation3 = 'https://goo.gl/maps/EPmskBQ9TgFTBXcb8';
 export const maplocation4 = 'https://goo.gl/maps/skmJTukq9K3xRFbS7';
 export const maplocation5 = 'https://goo.gl/maps/FANSU6w7QY9vCpiDA';
@@ -128,19 +127,19 @@ export const maplocation6 = 'https://goo.gl/maps/kt1bhA6aHeRmjXsN7';
 
 export const addressLoaction1 = {
   '@type': 'PostalAddress',
-      'streetAddress': '17860 US-98',
+      'streetAddress': 'N4211 20th Ct',
       'addressLocality': 'Montello',
-      'addressRegion': 'AL',
-      'postalCode': '36535',
+      'addressRegion': 'WI',
+      'postalCode': '53949',
       'addressCountry': 'United state'
 };
 
 export const addressLoaction2 = {
   '@type': 'PostalAddress',
-  'streetAddress': '15410 AL-104',
-  'addressLocality': 'Wautoma',
-  'addressRegion': 'AL',
-  'postalCode': '36576',
+  'streetAddress': 'N4211 20th Ct',
+  'addressLocality': 'Montello',
+  'addressRegion': 'WI',
+  'postalCode': '53949',
   'addressCountry': 'United state'
 }
 
@@ -183,15 +182,15 @@ export const addressLoaction6 = {
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-foley11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-foley196.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-foley43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/MP_And_E/jpg/mp-and-e-self-storage-montello-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/MP_And_E/jpg/mp-and-e-self-storage-montello-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/MP_And_E/jpg/mp-and-e-self-storage-montello-43.jpg'
  ]
 
  export const imageLocation2 = [
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-wautoma-11.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-wautoma-169.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-wautoma-43.jpg'
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/MP_And_E/jpg/mp-and-e-storage-wautoma-11.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/MP_And_E/jpg/mp-and-e-storage-wautoma-169.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/MP_And_E/jpg/mp-and-e-storage-wautoma-43.jpg'
  ]
 
  export const imageLocation3 = [
@@ -224,12 +223,12 @@ export const homePageScript = [
     '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
     'name': nameLocation1,
     'url': urlLocation1,
-    'openingHours': ['Mo-Fr 08:30 - 17:00'],
-    'priceRange': '$40 - $190',
+    'openingHours': ['Mo-Fr 08:00 - 17:00'],
+    'priceRange': '$45-$125',
       'address' : addressLoaction1,
     'telephone': contactsLocation1[contactIndex1].data,
     'image' : imageLocation1,
-    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/mp-and-e-baldwin-county-logo.jpg'
+    'logo': ''
   }, 
   {
     '@context' : 'http://schema.org',
@@ -239,8 +238,8 @@ export const homePageScript = [
     'telephone': contactsLocation2[contactIndex2].data,
     'email': contactsLocation2[emailIndex2].data,
     'address': addressLoaction2,
-    'openingHours': [ ],
-    'priceRange': '$40 - $110',
+    'openingHours': ['Mo-Fr 08:00 - 17:00'],
+    'priceRange': '$45-$125',
     'url' : urlLocation2,
   }, 
   {
@@ -304,22 +303,22 @@ export const Location1Script = {
     'address': addressLoaction1,
     'aggregateRating': {
     '@type': 'AggregateRating',
-    'ratingValue': '4.7',
-    'bestRating': '5',
-    'reviewCount': '3'
+    'ratingValue': '',
+    'bestRating': '',
+    'reviewCount': ''
   },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 30.4089297,
-      'longitude': -87.7331084,
+      'latitude':43.7531732,
+      'longitude': -89.297297,
     },
     'url': urlLocation1,
     'telephone': contactsLocation1[contactIndex1].data,
 
-    'priceRange': '$40 - $190',
-    'openingHours': ['Mo-Fr 08:30 - 17:00'],
+    'priceRange': '$45-$125',
+    'openingHours': ['Mo-Fr 08:00 - 17:00'],
     'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
+  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
      'areaServed': {
   '@type': 'State',
   'name': 'New York'
@@ -339,14 +338,14 @@ export const Location2Script = {
     'address': addressLoaction2,
    'aggregateRating': {
   '@type': 'AggregateRating',
-  'ratingValue': '4.7',
-  'bestRating': '5',
-  'reviewCount': '12'
+  'ratingValue': '',
+  'bestRating': '',
+  'reviewCount': ''
 },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 30.5445247,
-      'longitude': -87.7604384
+      'latitude': 44.0717536,
+      'longitude': -89.2691586
     },
     'url': urlLocation2,
     'telephone': contactsLocation2[contactIndex2].data,
@@ -354,7 +353,7 @@ export const Location2Script = {
     'priceRange': '$40 - $110',
     'openingHours': [ ],
     'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
+  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
      'areaServed': {
   '@type': 'State',
   'name': 'New York'

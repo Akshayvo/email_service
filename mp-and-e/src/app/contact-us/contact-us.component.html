@@ -114,6 +114,7 @@
                     <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br>
                   </span>
                 </div>
+                <h5 class="pt-3">Office Hours</h5>
                 <div class="py-2">
                   <span *ngFor="let hour of hoursDetails">
                     <b>{{hour.label}}</b><span *ngIf="hour?.id === 1 else other_content ">&nbsp;{{hour.data}}</span>

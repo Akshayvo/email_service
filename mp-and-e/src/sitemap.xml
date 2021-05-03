@@ -1,206 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc> https://mp-and-e-staging.netlify.app/</loc>
+    <loc>https://mp-and-e-staging.netlify.app/</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://mp-and-e-staging.netlify.app/location/montello/reserve-unit </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://mp-and-e-staging.netlify.app/location/robertsdale/reserve-unit </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://mp-and-e-staging.netlify.app/location/fairhope/reserve-unit </loc>
+    <loc>https://mp-and-e-staging.netlify.app/location/montello/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> https://mp-and-e-staging.netlify.app/storage-tips </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+  
   <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/barnwell/storage-units
+    <loc> https://mp-and-e-staging.netlify.app/contact-us
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mp-and-e-staging.netlify.app/location/wautoma/storage-units
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mp-and-e-staging.netlify.app/location/montello
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mp-and-e-staging.netlify.app/location/wautoma/reserve-unit
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mp-and-e-staging.netlify.app/location/wautoma </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://mp-and-e-staging.netlify.app/pay-rent
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/contact-us
+    <loc>https://mp-and-e-staging.netlify.app/location/montello/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+  
   <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/barnwell
+    <loc>https://mp-and-e-staging.netlify.app/contact-wautoma
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+  
   <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/fairhope
+    <loc>https://mp-and-e-staging.netlify.app/contact-montello
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+  
   <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/robertsdale
+    <loc>https://mp-and-e-staging.netlify.app/pay-rent/wautoma
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
+  
   <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/wautoma/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/belforest/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/montello
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/fairhope
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/wautoma/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://mp-and-e-staging.netlify.app/location/belforest
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://mp-and-e-staging.netlify.app/location/wautoma </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/pay-rent
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/montello/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/fairhope/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/robertsdale/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/belforest/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/location/barnwell/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/contact-wautoma
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/contact-barnwell
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/pay-rent/belforest
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://mp-and-e-staging.netlify.app/contact-montello
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://mp-and-e-staging.netlify.app/contact-fairhope
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://mp-and-e-staging.netlify.app/contact-robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://mp-and-e-staging.netlify.app/pay-rent/barnwell
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/contact-barnwell
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/pay-rent/wautoma
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://mp-and-e-staging.netlify.app/pay-rent/belforest/rent-sub/login
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://mp-and-e-staging.netlify.app/pay-rent/barnwell/rent-sub/login
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://mp-and-e-staging.netlify.app/pay-rent/wautoma/rent-sub/login
+    <loc>https://mp-and-e-staging.netlify.app/pay-rent/wautoma/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>

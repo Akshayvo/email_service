@@ -4,7 +4,7 @@ export const contactsHomePage = [
         label: 'Address: ',
         data: 'N4211 20th Ct, Montello, WI 53949',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/gkNpEAN7wWPSV6th6'
+        redirect: 'https://goo.gl/maps/79tjjYk1bMLyByQF6'
     },
     {
         id: 2,
@@ -37,17 +37,17 @@ export const hoursHomePage = [
 export const contactsLocation1 = [
     {
         id: 1,
-        label: 'Address: ',
-        data: 'N4211 20th Ct, Montello, WI 53949',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/MPmzjqtH1Lhm28g97'
-    },
-    {
-        id: 2,
         label: 'Facility Address: ',
         data: 'W2739 Lower Locks Rd, Montello, WI 53949',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/MPmzjqtH1Lhm28g97'
+        redirect: 'https://goo.gl/maps/zgNoRWd4JgdwXVQaA'
+    },
+    {
+        id: 2,
+        label: 'Address: ',
+        data: 'N4211 20th Ct, Montello, WI 53949',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/yfXUeASF33TbRAiF9'
     },
     {
         id: 3,
@@ -96,17 +96,17 @@ export const socialLinks = [
 export const contactsLocation2 = [
     {
         id: 1,
-        label: 'Address: ',
-        data: 'N4211 20th Ct, Montello, WI 53949',
+        label: 'Facility Address: ',
+        data: '207 N Century Dr, Wautoma, WI 54982',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/MPmzjqtH1Lhm28g97'
+        redirect: 'https://goo.gl/maps/uehRzLAhdsySxLtu8'
     },
     {
         id: 2,
-        label: 'Facility Address: ',
-        data: 'W2739 Lower Locks Rd, Montello, WI 53949',
+        label: 'Address: ',
+        data: 'N4211 20th Ct, Montello, WI 53949',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/MPmzjqtH1Lhm28g97'
+        redirect: 'https://goo.gl/maps/yfXUeASF33TbRAiF9'
     },
     {
         id: 3,
