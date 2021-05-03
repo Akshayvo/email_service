@@ -5,9 +5,9 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'alabama', // state/city  **Remeber to update locationName in sitemap.xml as well
+  locationName: 'wisconsin', // state/city  **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
-  alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
+  alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['sanghmitra.v@codeparva.in'],
@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'MP&E Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://storageplusbaldwin.com`
+  websiteUrl: `https://mp-and-e-staging.netlify.app`
 };
 
 /*

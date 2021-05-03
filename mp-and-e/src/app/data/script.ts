@@ -183,39 +183,39 @@ export const addressLoaction6 = {
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley196.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-foley11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-foley196.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-foley43.jpg'
  ]
 
  export const imageLocation2 = [
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-wautoma-11.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-wautoma-169.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-wautoma-43.jpg'
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-wautoma-11.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-wautoma-169.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-wautoma-43.jpg'
  ]
 
  export const imageLocation3 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-of-baldwin-county-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-of-baldwin-county-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-of-baldwin-county-43.jpg'
  ]
 
  export const imageLocation4 =  [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-of-baldwin-county-belforest-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-of-baldwin-county-belforest-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-of-baldwin-county-belforest-43.jpg'
  ]
 
  export const imageLocation5 =  [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-of-baldwin-county-belforest-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-of-baldwin-county-belforest-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-of-baldwin-county-belforest-43.jpg'
  ]
 
  export const imageLocation6 =  [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-robertsdale-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-robertsdale-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-robertsdale-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-of-baldwin-robertsdale-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-of-baldwin-robertsdale-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/mp-and-e-of-baldwin-robertsdale-43.jpg'
  ]
 
 export const homePageScript = [ 
@@ -229,7 +229,7 @@ export const homePageScript = [
       'address' : addressLoaction1,
     'telephone': contactsLocation1[contactIndex1].data,
     'image' : imageLocation1,
-    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/storage-plus-baldwin-county-logo.jpg'
+    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/mp-and-e-baldwin-county-logo.jpg'
   }, 
   {
     '@context' : 'http://schema.org',

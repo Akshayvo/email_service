@@ -65,16 +65,13 @@
         <div class="hours-data w-100">
           <div class="row">
             <div class="col-lg-8">
-              <h4 class="pt-3" *ngIf="locationId !== 1;then content else other_content" >Access Hours</h4>
-              <ng-template #content><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="hours" ></app-tables></ng-template>
-              <ng-template #other_content><h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" >
+              <h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" >
               </app-tables><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables>
-            </ng-template> 
             </div>
             <div class="col-lg-4 btn-area text-center">
               <a class="btn btn-outline-primary p-2" [routerLink]="['/contact-us']" role="button">Contact Us</a> 
               <a class="btn btn-primary-light p-2" [routerLink]="['/pay-rent']" role="button">Pay Rent</a> 
-              <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                       
+              <!-- <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                        -->
             </div>
           </div>
         </div>

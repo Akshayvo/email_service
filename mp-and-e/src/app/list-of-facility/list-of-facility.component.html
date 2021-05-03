@@ -19,13 +19,19 @@
             </div>
           <!-- </p> -->
           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/wautoma/storage-units']" role="button">View Rates</a>                
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/wautoma/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          <!-- <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/wautoma/reserve-unit']" role="button"> Reserve Unit</a>                                   -->
         </div>
         <div class="col-lg-3 partition-border contact-hours pt-3">
             <h3>Office Hours:</h3>
             <p>
               <span *ngFor="let hour of hoursBrookside">
                 <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>
+            </p>
+            <h3>Access Hours:</h3>
+            <p>
+              <span *ngFor="let access of accessBrookside">
+                {{access.data}}<br>
               </span>
             </p>
         </div>
@@ -54,7 +60,7 @@
             <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
           </div>
             <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/montello/storage-units']" role="button">View Rates</a>                
-            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/montello/reserve-unit']" role="button"> Reserve Unit</a>                                  
+            <!-- <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/montello/reserve-unit']" role="button"> Reserve Unit</a>                                   -->
           </div>
           <div class="col-lg-3 partition-border contact-hours pt-3">
               <h3>Office Hours:</h3>
@@ -63,6 +69,12 @@
                   <b>{{hour.label}}</b>{{hour.data}}<br>
                 </span>
               </p>
+              <h3>Access Hours:</h3>
+              <p>
+              <span *ngFor="let access of accessAndrews">
+                {{access.data}}<br>
+              </span>
+            </p>
           </div>
         </div>
       </div>      

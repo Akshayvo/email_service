@@ -132,6 +132,12 @@ export const hoursLocation2 = [
     },
 ];
 
+export const hoursLocation2AcessHours = [
+    {
+        data: '24 Hours a Day 7 Days a Week'
+    },
+];
+
 export const contactsLocation3 = [
     {
         id: 1,

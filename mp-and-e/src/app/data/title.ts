@@ -2,7 +2,7 @@ export const homePageTitle = `Affordable Storage in Montello and Wautoma, WI`;
 export const homePageContent = `MP&E Self Storage offers convenient 24/7 access to your belongings, online payments, and a variety of unit sizes for all of your self storage needs.`;
 
 export const location1PageTitle = `Montello | MP&E Storage`;
-export const location1PageContent = `We offer a number of affordable self storage options in Montello, Alabama. Check out our prices, then give us a call to start clearing up your home, office, or garage!`;
+export const location1PageContent = `Take a moment to view our affordable self storage unit rates, then call our office today!`;
 
 export const location2PageTitle = `Wautoma | MP&E Storage`;
 export const location2PageContent = `Our Wautoma location offers a large variety of regular and climate controlled storage units in a number of sizes, and all of our units are priced competitively!`;
