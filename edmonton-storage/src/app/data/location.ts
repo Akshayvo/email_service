@@ -143,29 +143,17 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Foley`;
+export const headingReservePageLocation1 = ``;
 
-export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Silverhill`;
+export const headingReservePageLocation2 = ``;
 
-export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Barnwell`;
 
-export const headingReservePageLocation4 = ``;
 
-export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit in Fairhope`;
+export const heading1 = `Guardian Storage `;
 
-export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
+export const heading2 = `Access Mini Storage`;
 
-export const heading1 = `Storage Plus of Baldwin County - Foley`;
 
-export const heading2 = `Storage Plus of Baldwin County - Silverhill`;
-
-export const heading3 = `Storage Plus of Baldwin County - Barnwell`;
-
-export const heading4 = `Storage Plus of Baldwin County - Belforest`;
-
-export const heading5 = `Storage Plus of Baldwin County - Fairhope`;
-
-export const heading6 = `Storage Plus of Baldwin County - Robertsdale`;
 
 
 export const unitSizerLocation1 = [
@@ -387,7 +375,7 @@ export const aboutUsLocation1 = [
         p: `We provide clean, dry and secure storage units at competitive prices. Our units are great for easy storage of your possessions, from furniture and personal items to your motorcycle or jet-ski.  We offer eight different unit sizes.  We also offer mailbox rentals. Our facility site is fully fenced and is video monitored with site access 7 days a week.`,
     },
     {
-        p:`<a href="/contact-us" >Contact Us</a> today. We're here to help. Let us store your belongings safely and securely for your convenience and peace of mind.`
+        p:`<a href="/contact-guardian" >Contact Us</a> today. We're here to help. Let us store your belongings safely and securely for your convenience and peace of mind.`
     }
     
 ];
@@ -397,7 +385,7 @@ export const aboutUsLocation2 = [
         p: `We offer 18 different sizes from 3’x4’ up to 15’x24’, plus outdoor and covered storage for vehicles. We also have a limited number of 5’x9’ heated units. Our facility site is fully fenced and is video monitored with site access 7 days a week.`,
     },
     {
-        p: `<a href="/contact-us" >Contact Us</a> today. We're here to help. Let us store your belongings safely and securely for your convenience and peace of mind.`,
+        p: `<a href="/contact-access-mini" >Contact Us</a> today. We're here to help. Let us store your belongings safely and securely for your convenience and peace of mind.`,
     },
     
 ];

@@ -26,19 +26,11 @@ export class DirectionsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+    if (this.router.url.includes(`${environment.locationName}/guardian`)) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+     } else if (this.router.url.includes(`${environment.locationName}/access-mini`)) {
        this.fetchDetailsLocation2();
-    } else  if (this.router.url.includes(`${environment.locationName}/barnwell`))  {
-       this.fetchDetailsLocation3();
-    }  else  if (this.router.url.includes(`${environment.locationName}/belforest`))  {
-      this.fetchDetailsLocation4();
-    } else  if (this.router.url.includes(`${environment.locationName}/fairhope`))  {
-      this.fetchDetailsLocation5();
-    } else  if (this.router.url.includes(`${environment.locationName}/robertsdale`))  {
-      this.fetchDetailsLocation6();
-    }
+    } 
  }
 
  public fetchDetailsLocation1() {
@@ -52,27 +44,5 @@ export class DirectionsComponent implements OnInit {
     this.id = 2;
   }
 
-  public fetchDetailsLocation3() {
-    this.directionPoints = directionLocation3;
-    this.directionHeading = ``;
-    this.id = 3;
-  }
-
-  public fetchDetailsLocation4() {
-    // this.directionPoints = directionLocation4;
-    this.directionHeading = ``;
-    this.id = 4;
-  }
-
-  public fetchDetailsLocation5() {
-    // this.directionPoints = directionLocation4;
-    this.directionHeading = ``;
-    this.id = 5;
-  }
-
-  public fetchDetailsLocation6() {
-    // this.directionPoints = directionLocation4;
-    this.directionHeading = ``;
-    this.id = 6;
-  }
+  
 }

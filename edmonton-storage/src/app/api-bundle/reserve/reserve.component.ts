@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
-import { headingReservePageLocation1, headingReservePageLocation2, headingReservePageLocation3, headingReservePageLocation4,
-  headingReservePageLocation5, headingReservePageLocation6,} from '../../data/location';
+import { headingReservePageLocation1, headingReservePageLocation2,} from '../../data/location';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
 
@@ -32,25 +31,13 @@ export class ReserveComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+    if (this.router.url.includes(`${environment.locationName}/guardian`)) {
       this.id = 1;
       this.heading = headingReservePageLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/access-mini`)) {
       this.id = 2;
       this.heading = headingReservePageLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
-      this.id = 3;
-      this.heading = headingReservePageLocation3;
-    } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
-      this.id = 4;
-      this.heading = headingReservePageLocation4;
-    } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
-      this.id = 5;
-      this.heading = headingReservePageLocation5;
-    } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
-      this.id = 6;
-      this.heading = headingReservePageLocation6;
-    }
+    } 
   }
 
   public navigate() {

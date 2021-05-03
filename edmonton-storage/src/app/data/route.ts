@@ -89,7 +89,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: `${environment.locationName}/foley`,
+    { path: `${environment.locationName}/guardian`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -124,7 +124,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/silverhill`,
+    { path: `${environment.locationName}/access-mini`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -159,150 +159,8 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/barnwell`,
-      component: LocationComponent,
-      children: [
-        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-        { path: 'storage-units', component: ViewRatesComponent },
-        { path: 'unit-sizer', component: UnitSizerComponent },
-        { path: 'reserve-unit', component: ReserveComponent,
-          children: [
-            // { path: '', component: ReserveUnitFormComponent },
-            // { path: 'reserve', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-
-          ]
-        },
-        { path: 'move-in', component: ReserveComponent,
-          children: [
-            // { path: '', component: ReserveUnitFormComponent },
-            // { path: 'move-in', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-          ]
-        },
-        // { path: 'photos', component: PhotosComponent },
-        { path: 'about', component: AboutUsComponent },
-        { path: 'directions', component: DirectionsComponent },
-      ],
-      resolve: { data: AppResolver }
-    },
-    { path: `${environment.locationName}/belforest`,
-      component: LocationComponent,
-      children: [
-        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-        { path: 'storage-units', component: ViewRatesComponent },
-        { path: 'unit-sizer', component: UnitSizerComponent },
-        { path: 'reserve-unit', component: ReserveComponent,
-          children: [
-            // { path: '', component: ReserveUnitFormComponent },
-            // { path: 'reserve', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-          ]
-        },
-        { path: 'move-in', component: ReserveComponent,
-          children: [
-            // { path: '', component: ViewRatesPageComponent },
-            // { path: '', component: ReserveUnitFormComponent },
-            // { path: 'move-in', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
-
-          ]
-        },
-        // { path: 'photos', component: PhotosComponent },
-        { path: 'about', component: AboutUsComponent },
-        { path: 'directions', component: DirectionsComponent },
-      ],
-      resolve: { data: AppResolver }
-    },
-    { path: `${environment.locationName}/fairhope`,
-      component: LocationComponent,
-      children: [
-        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-        { path: 'storage-units', component: ViewRatesComponent },
-        { path: 'unit-sizer', component: UnitSizerComponent },
-        { path: 'reserve-unit', component: ReserveComponent,
-          children: [
-            // { path: '', component: ReserveUnitFormComponent },
-            // { path: 'reserve', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-          ]
-        },
-        { path: 'move-in', component: ReserveComponent,
-          children: [
-            // { path: '', component: ViewRatesPageComponent },
-            // { path: '', component: ReserveUnitFormComponent },
-            // { path: 'move-in', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
-
-          ]
-        },
-        // { path: 'photos', component: PhotosComponent },
-        { path: 'about', component: AboutUsComponent },
-        { path: 'directions', component: DirectionsComponent },
-      ],
-      resolve: { data: AppResolver }
-    },
-    { path: `${environment.locationName}/robertsdale`,
-      component: LocationComponent,
-      children: [
-        {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-        { path: 'storage-units', component: ViewRatesComponent },
-        { path: 'unit-sizer', component: UnitSizerComponent },
-        { path: 'reserve-unit', component: ReserveComponent,
-          children: [
-            // { path: '', component: ReserveUnitFormComponent },
-            // { path: 'reserve', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-          ]
-        },
-        { path: 'move-in', component: ReserveComponent,
-          children: [
-            // { path: '', component: ViewRatesPageComponent },
-            // { path: '', component: ReserveUnitFormComponent },
-            // { path: 'move-in', component: ReserveUnitFormComponent },
-            // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
-            { path: 'confirmation', component: ConfirmationDataComponent },
-            { path: 'payReservationCharges', component: PayRentFormComponent },
-            { path: 'payMoveInCharges', component: PayRentFormComponent },
-            { path: 'thank-you', component: ThankYouComponent,  canActivate: [ThankYouGuard] }
-
-          ]
-        },
-        // { path: 'photos', component: PhotosComponent },
-        { path: 'about', component: AboutUsComponent },
-        { path: 'directions', component: DirectionsComponent },
-      ],
-      resolve: { data: AppResolver }
-    },
-    { path: 'review/foley', component: HomeComponent,
+    
+    { path: 'review/guardian', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -310,7 +168,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/silverhill', component: HomeComponent,
+  { path: 'review/access-mini', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -318,46 +176,15 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/barnwell', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/belforest', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/fairhope', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/robertsdale', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
+ 
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/foley', component: PayRentComponent,
+    path: 'pay-rent/guardian', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/silverhill', component: PayRentComponent,
+    path: 'pay-rent/access-mini', component: PayRentComponent,
     children: childroute
   },
   {
@@ -378,12 +205,8 @@ export const apiRoutes = [
   },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-foley', component: ContactUsComponent},
-  { path: 'contact-silverhill', component: ContactUsComponent},
-  { path: 'contact-barnwell', component: ContactUsComponent},
-  { path: 'contact-belforest', component: ContactUsComponent},
-  { path: 'contact-fairhope', component: ContactUsComponent},
-  { path: 'contact-robertsdale', component: ContactUsComponent},
+  { path: 'contact-guardian', component: ContactUsComponent},
+  { path: 'contact-access-mini', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
 ];
@@ -392,7 +215,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: `${environment.locationName}/foley`,
+  { path: `${environment.locationName}/guardian`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -403,7 +226,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/silverhill`,
+  { path: `${environment.locationName}/access-mini`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -458,7 +281,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/foley', component: HomeComponent,
+  { path: 'review/guardian', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -466,7 +289,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/silverhill', component: HomeComponent,
+  { path: 'review/access-mini', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -508,12 +331,8 @@ export const iFrameRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-foley', component: PayRentFloridaComponent },
-  { path: 'pay-rent-silverhill', component: PayRentChesterComponent},
-  { path: 'pay-rent-barnwell', component: PayRentMontgomeryComponent},
-  { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},
-  { path: 'pay-rent-fairhope', component: PayRentMontgomeryComponent},
-  { path: 'pay-rent-robertsdale', component: PayRentMiddletownComponent},
+  { path: 'pay-rent-guardian', component: PayRentFloridaComponent },
+  { path: 'pay-rent-access-mini', component: PayRentChesterComponent},
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },

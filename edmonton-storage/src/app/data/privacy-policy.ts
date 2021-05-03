@@ -124,7 +124,7 @@ export const privacyPolicy = [
       }
     ],
     note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-    at  <a href="tel:2519703168" style="color: #000;">(251) 970-3168</a> or via email at <a href="mailto:accounts@storageplusbaldwin.com" style="color:#000;">accounts@storageplusbaldwin.com</a>.`,
+    at  <a href="tel:7807325000" style="color: #000;">(780) 732-5000 </a> or via email at <a href="mailto:guardian.info@edmstorage.ca" style="color:#000;">guardian.info@edmstorage.ca </a>.`,
     // sharing: [
     //   {
     //     heading: `Sharing`

@@ -13,68 +13,27 @@ export const tableHeader = [
 
 export const tableData = [
   // {
-  //   facility: ' Foley',
-  //   address: '17860 US-98, Foley, AL 36535',
+  //   facility: 'Foley',
+  //   address: '',
   //   url: 'foley/rent-sub/login'
   // },
-  // {
-  //   facility: 'Silverhill',
-  //   address: '15410 AL-104, Silverhill, AL 36576',
-  //   url: 'silverhill/rent-sub/login'
-  // },
-  // {
-  //   facility: 'Barnwell',
-  //   address: '8089A US-98, Fairhope, AL 36532',
-  //   url: 'barnwell/rent-sub/login'
-  // },
-  // {
-  //   facility: 'Belforest',
-  //   address: '11455 Co Rd 64, Daphne, AL 36526',
-  //   url: 'belforest/rent-sub/login'
-  // },
-  // {
-  //   facility: 'Fairhope',
-  //   address: '21193 AL-181, Fairhope, AL 36532',
-  //   url: 'fairhope/rent-sub/login'
-  // },
-  {
-    facility: 'Robertsdale',
-    address: '20218 US-90, Robertsdale, AL 36567',
-    url: 'robertsdale/rent-sub/login'
-  },
+  
 ];
 
 export const tableDataContactPage = [
   {
-    facility: ' Foley',
-    address: '17860 US-98, Foley, AL 36535',
-    url: 'foley'
+    facility: 'Guardian Storage',
+    address: '14350 111 Ave NW, Edmonton, AB T5M 2P4, Canada',
+    url: 'guardian',
+    redirect: 'https://goo.gl/maps/s79NutC6MxvRi19b6'
   },
   {
-    facility: 'Silverhill',
-    address: '15410 AL-104, Silverhill, AL 36576',
-    url: 'silverhill'
+    facility: 'Access Mini Storage',
+    address: '21211 100 Ave NW, Edmonton, AB T5T 5X8, Canada',
+    url: 'access-mini',
+    redirect: 'https://goo.gl/maps/GGA5CAmXnVxGGtmQ9'
   },
-  {
-    facility: 'Barnwell',
-    address: '8089A US-98, Fairhope, AL 36532',
-    url: 'barnwell'
-  },
-  {
-    facility: 'Belforest',
-    address: '11455 Co Rd 64, Daphne, AL 36526',
-    url: 'belforest'
-  },
-  {
-    facility: 'Fairhope',
-    address: '21193 AL-181, Fairhope, AL 36532',
-    url: 'fairhope'
-  },
-  {
-    facility: 'Robertsdale',
-    address: '20218 US-90, Robertsdale, AL 36567',
-    url: 'robertsdale'
-  },
+  
 ];
 
 

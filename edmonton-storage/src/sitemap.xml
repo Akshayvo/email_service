@@ -1,206 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc> https://storageplusbaldwin.com/</loc>
+    <loc> https://edmonton-storage-staging.netlify.app/</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://storageplusbaldwin.com/location/foley/reserve-unit </loc>
+    <loc> https://edmonton-storage-staging.netlify.app/location/guardian/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://storageplusbaldwin.com/location/robertsdale/reserve-unit </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://storageplusbaldwin.com/location/fairhope/reserve-unit </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://storageplusbaldwin.com/storage-tips </loc>
+    <loc> https://edmonton-storage-staging.netlify.app/storage-tips </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://storageplusbaldwin.com/location/barnwell/storage-units
+      https://edmonton-storage-staging.netlify.app/contact-us
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://storageplusbaldwin.com/contact-us
+      https://edmonton-storage-staging.netlify.app/location/access-mini/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://storageplusbaldwin.com/location/barnwell
+      https://edmonton-storage-staging.netlify.app/location/guardian
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://storageplusbaldwin.com/location/fairhope
+      https://edmonton-storage-staging.netlify.app/location/access-mini/reserve-unit
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> https://edmonton-storage-staging.netlify.app/location/access-mini </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://edmonton-storage-staging.netlify.app/location/guardian/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://storageplusbaldwin.com/location/robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/location/silverhill/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/location/belforest/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/location/foley
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/location/fairhope
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/location/robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/location/silverhill/reserve-unit
+      https://edmonton-storage-staging.netlify.app/contact-access-mini
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://storageplusbaldwin.com/location/belforest
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> https://storageplusbaldwin.com/location/silverhill </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/pay-rent
+      https://edmonton-storage-staging.netlify.app/contact-guardian
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://storageplusbaldwin.com/location/foley/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/location/fairhope/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/location/robertsdale/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/location/belforest/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/location/barnwell/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/contact-silverhill
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/contact-barnwell
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/pay-rent/belforest
+      https://edmonton-storage-staging.netlify.app/pay-rent/access-mini
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://storageplusbaldwin.com/contact-foley
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://storageplusbaldwin.com/contact-fairhope
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://storageplusbaldwin.com/contact-robertsdale
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://storageplusbaldwin.com/pay-rent/barnwell
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/contact-barnwell
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/pay-rent/silverhill
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://storageplusbaldwin.com/pay-rent/belforest/rent-sub/login
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://storageplusbaldwin.com/pay-rent/barnwell/rent-sub/login
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc>
-      https://storageplusbaldwin.com/pay-rent/silverhill/rent-sub/login
+      https://edmonton-storage-staging.netlify.app/pay-rent/access-mini/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>

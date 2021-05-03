@@ -13,41 +13,21 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Foley',
-                path: `${environment.locationName}/foley`,
+                label: 'Guardian Storage',
+                path: `${environment.locationName}/guardian`,
               },
             {
                 id: '2',
-                label: 'Silverhill',
-                path: `${environment.locationName}/silverhill`,
-            },
-              {
-                id: '3',
-                label: 'Barnwell',
-                path: `${environment.locationName}/barnwell`,
-            },
-            {
-                id: '4',
-                label: 'Belforest',
-                path: `${environment.locationName}/belforest`,
-            },
-            {
-                id: '5',
-                label: 'Fairhope',
-                path: `${environment.locationName}/fairhope`,
-            },
-            {
-                id: '6',
-                label: 'Robertsdale',
-                path: `${environment.locationName}/robertsdale`,
+                label: 'Access Mini Storage',
+                path: `${environment.locationName}/access-mini`,
             },
         ]
     },
-    {
-        label: 'Pay Rent',
-        path: '/pay-rent',
-        type: 'link'
-    },
+    // {
+    //     label: 'Pay Rent',
+    //     path: '/pay-rent',
+    //     type: 'link'
+    // },
     {
         label: 'Storage Tips',
         path: `${environment.locationName}/storage-tips`,

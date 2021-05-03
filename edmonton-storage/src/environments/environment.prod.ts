@@ -8,10 +8,10 @@ export const environment = {
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Storage Plus of Baldwin County - Production',
-  facilityName: 'Storage Plus of Baldwin County',
+  appId: 'Edmonton Storage - Staging',
+  facilityName: 'Edmonton Storage',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://storageplusbaldwin.com`
+  websiteUrl: `https://edmonton-storage-staging.netlify.app`
 };

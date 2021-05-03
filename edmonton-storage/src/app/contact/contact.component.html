@@ -19,7 +19,7 @@
                     {{tableData.facility}}
                   </td>
                   <td class="table-data ">
-                    {{tableData.address}}
+                    <a [href]="tableData?.redirect" target="_blank" rel="noopener"> {{tableData.address}}</a>
                   </td>
                   <td class="table-data ">
                     <!-- <div [innerHtml]="{{tableData.url}}"></div> -->
@@ -45,7 +45,7 @@
             {{tableData.facility}}
           </div>
           <div class="col-6 text-center   facility-contact" >
-            {{tableData.address}}
+            <a [href]="tableData?.redirect" target="_blank" rel="noopener">{{tableData.address}}</a>
           </div>
         </div>
           <div class="row pb-1">

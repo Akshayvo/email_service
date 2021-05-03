@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
-import { contactsLocation1, contactsLocation2, contactsLocation4, contactsLocation3, } from '../data/contact';
+import { contactsLocation1, contactsLocation2,} from '../data/contact';
 
 @Component({
   selector: 'app-payment-iframe',
@@ -22,10 +22,9 @@ export class PaymentIframeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-      content: `Pay your rent for any of the 4 Storage Plus of Baldwin County right here!
-      Simply follow the instructions or call your facility to learn how!`
+      content: ``
     });
-    this.titleService.setTitle('Pay Rent | Storage Plus of Baldwin County');
+    this.titleService.setTitle('Pay Rent | Edmonton Storage');
   }
 
   ngOnInit() {
@@ -45,10 +44,6 @@ export class PaymentIframeComponent implements OnInit {
       this.contact = contactsLocation1;
     } else if ( this.locationId === '2' ) {
       this.contact = contactsLocation2;
-    } else if ( this.locationId === '3' ) {
-      this.contact = contactsLocation3;
-    } else if ( this.locationId === '4' ) {
-      this.contact = contactsLocation4;
     }
   }
 }

@@ -2,10 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { contactsLocation1,
   hoursLocation1,
   contactsLocation2,
-  contactsLocation3,
-  contactsLocation4,
   hoursLocation2,
-  hoursLocation3, hoursLocation4 } from '../data/contact';
+  } from '../data/contact';
 
 @Component({
   selector: 'app-list-of-facility',
@@ -33,15 +31,13 @@ export class ListOfFacilityComponent implements OnInit {
   public fetchContactBrookside() {
     this.contactsBrookside = contactsLocation1;
     this.contactsAndrews = contactsLocation2;
-    this.contactsMontgomery = contactsLocation3;
-    this.contactsMiddletown = contactsLocation4;
+    
   }
 
   public fetchHoursBrookside() {
     this.hoursBrookside = hoursLocation1;
     this.hoursAndrews = hoursLocation2;
-    this.hoursMontgomery = hoursLocation3;
-    this.hoursMiddletown = hoursLocation4;
+    
   }
 
 }

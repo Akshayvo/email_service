@@ -36,42 +36,22 @@ export const faqPagecontent = `Learn about our services and facilities with our 
 
 
 
-export const location1PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location1PayrentPageContent = `Follow the simple instructions on this page and you'll have access to our tenant portal 24 hours a day!`;
+export const location1PayrentPageTitle = ``;
+export const location1PayrentPageContent = ``;
 
-export const location2PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location2PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
-
-export const location3PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location3PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
-
-export const location4PayrentPageTitle = `Belfast Location Pay Rent | Storage Plus of Baldwin County`;
-export const location4PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
-
-export const location5PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location5PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
-
-export const location6PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location6PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location2PayrentPageTitle = ``;
+export const location2PayrentPageContent = ``;
 
 
 
-export const location1ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location1ContactPageContent = `Have questions about your account with Storage Plus of Baldwin County? Use our contact form or the information on this page to contact our friendly team!`;
 
-export const location2ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location2ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
 
-export const location3ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location3ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+export const location1ContactPageTitle = `Contact Us | Edmonton Storage`;
+export const location1ContactPageContent = `Use our handy contact form to submit an email to our office, or you can use the information on this page to call us directly.`;
 
-export const location4ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location4ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+export const location2ContactPageTitle = `Contact Us | Edmonton Storage`;
+export const location2ContactPageContent = `Use our handy contact form to submit an email to our office, or you can use the information on this page to call us directly.`;
 
-export const location5ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location5ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
 
-export const location6ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location6ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
 
 

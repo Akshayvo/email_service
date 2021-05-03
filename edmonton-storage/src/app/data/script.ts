@@ -6,23 +6,12 @@ location1PageContent, location2PageTitle,
 location2PageContent, location1PageTitle,
 location1PayrentPageTitle, location1PayrentPageContent,
 location2PayrentPageTitle, location2PayrentPageContent,
-location3PayrentPageTitle, location3PayrentPageContent,
-location4PayrentPageTitle, location4PayrentPageContent,
-location5PayrentPageTitle, location5PayrentPageContent,
-location6PayrentPageTitle, location6PayrentPageContent,
 location1ContactPageTitle, location1ContactPageContent,
 location2ContactPageTitle, location2ContactPageContent,
-location3ContactPageTitle, location3ContactPageContent,
-location4ContactPageTitle, location4ContactPageContent,
-location5ContactPageTitle, location5ContactPageContent,
-location6ContactPageTitle, location6ContactPageContent, } from '../data/title';
+ } from '../data/title';
 import { featuresList } from '../data/home';
 import { contactsLocation1, hoursLocation1, 
-  contactsLocation2, hoursLocation2, 
-  contactsLocation3, hoursLocation3, 
-  contactsLocation4, hoursLocation4,
-  contactsLocation5, hoursLocation5,
-  contactsLocation6, hoursLocation6, 
+  contactsLocation2, hoursLocation2,  
  } from '../data/contact';
 
 //  const openingHoursLocation1 = [];
@@ -69,13 +58,13 @@ export const nameLocation2 = `Access Mini Storage`;
 
 
 
-export const location1 = `foley`;
-export const location2 = `silverhill`;
+export const location1 = `guardian`;
+export const location2 = `access-mini`;
 
 
 
-export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/foley/storage-units`;
-export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/silverhill/storage-units`;
+export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/guardian/storage-units`;
+export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/access-mini/storage-units`;
 
 
 

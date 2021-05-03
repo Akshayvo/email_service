@@ -78,6 +78,9 @@ table {
 
   .table-data {
     padding: 8px 16px;
+    a {
+      color: #212529;
+    }
   }
 
   tr:nth-child(even) {

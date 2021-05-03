@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../data/contact';
+import { contactsLocation1, contactsLocation2, } from '../data/contact';
 
 @Component({
   selector: 'app-pay-rent-florida',
@@ -22,8 +22,6 @@ export class PayRentFloridaComponent implements OnInit {
       this.contact = contactsLocation1;
     } else if ( this.locationId === '2' ) {
       this.contact = contactsLocation2;
-    } else if ( this.locationId === '3' ) {
-      this.contact = contactsLocation3;
-    }
+    } 
   }
 }

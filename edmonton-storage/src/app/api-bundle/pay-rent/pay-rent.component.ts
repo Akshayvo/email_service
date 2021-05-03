@@ -5,8 +5,8 @@ import { tabs } from '../../data/tab';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
 import { Meta } from '@angular/platform-browser';
-import { ogPayRentPage, ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4, ogPayRentPageLocation5, ogPayRentPageLocation6,
-   twitterPayRentPage, twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4, twitterPayRentPageLocation5, twitterPayRentPageLocation6 } from '../../data/script';
+import { ogPayRentPage, ogPayRentPageLocation1, ogPayRentPageLocation2, 
+   twitterPayRentPage, twitterPayRentPageLocation1, twitterPayRentPageLocation2,  } from '../../data/script';
 @Component({
   selector: 'app-pay-rent',
   templateUrl: './pay-rent.component.html',
@@ -45,19 +45,11 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('foley')) {
-      this.name = ' Foley';
-  } else if (this.router.url.includes('silverhill')) {
-    this.name = ' Silverhill';
-  } else if (this.router.url.includes('barnwell')) {
-    this.name = 'Barnwell';
-  } else if (this.router.url.includes('belforest')) {
-    this.name = 'Belforest';
-  } else if (this.router.url.includes('fairhope')) {
-    this.name = 'Fairhope';
-  } else if (this.router.url.includes('robertsdale')) {
-    this.name = 'Robertsdale';
-  }
+    if (this.router.url.includes('guardian')) {
+      this.name = 'Guardian Storage ';
+  } else if (this.router.url.includes('access-mini')) {
+    this.name = 'Access Mini Storage';
+  } 
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
     }
@@ -71,35 +63,19 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('foley')) {
+    if (this.router.url.includes('guardian')) {
       this.og = ogPayRentPageLocation1;
-    } else if (this.router.url.includes('silverhill')) {
+    } else if (this.router.url.includes('access-mini')) {
       this.og = ogPayRentPageLocation2;
-    } else if (this.router.url.includes('barnwell')) {
-      this.og = ogPayRentPageLocation3;
-    } else if (this.router.url.includes('belforest')) {
-      this.og = ogPayRentPageLocation4;
-    } else if (this.router.url.includes('fairhope')) {
-      this.og = ogPayRentPageLocation5;
-    } else if (this.router.url.includes('robertsdale')) {
-      this.og = ogPayRentPageLocation6;
-    }
+    } 
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('foley')) {
+  if (this.router.url.includes('guardian')) {
     this.twitter = twitterPayRentPageLocation1;
-  } else if (this.router.url.includes('silverhill')) {
+  } else if (this.router.url.includes('access-mini')) {
     this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('barnwell')) {
-    this.twitter = twitterPayRentPageLocation3;
-  } else if (this.router.url.includes('belforest')) {
-    this.twitter = twitterPayRentPageLocation4;
-  } else if (this.router.url.includes('fairhope')) {
-    this.twitter = twitterPayRentPageLocation5;
-  } else if (this.router.url.includes('robertsdale')) {
-    this.twitter = twitterPayRentPageLocation6;
-  }
+  } 
 }
 
   public fetchContactDetails() {

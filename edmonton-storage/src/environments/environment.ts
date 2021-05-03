@@ -13,11 +13,11 @@ export const environment = {
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Storage Plus of Baldwin County - Testing',
-  facilityName: 'Storage Plus of Baldwin County',
+  appId: 'Edmonton Storage - Testing',
+  facilityName: 'Edmonton Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://storageplusbaldwin.com`
+  websiteUrl: `https://edmonton-storage-staging.netlify.app`
 };
 
 /*
