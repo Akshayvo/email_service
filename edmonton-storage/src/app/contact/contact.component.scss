@@ -32,6 +32,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  a {
+    color: #212529;
+  }
 }
 
 .rent-sub-holder {
@@ -180,6 +183,9 @@ table {
 
   .table-data {
     padding: 8px 10px;
+    a {
+      color: #212529 ;
+    }
   }
 
   .btn-primary {
