@@ -58,6 +58,7 @@ import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
 import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { CurrencyPipe } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -116,6 +117,7 @@ import { TabsComponent } from './tabs/tabs.component';
   ],
   providers: [
     DatePipe,
+    CurrencyPipe,
     AuthService,
     AuthGuard,
     VerifictionCodeGuard,

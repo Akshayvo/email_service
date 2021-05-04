@@ -18,12 +18,13 @@ import { MoveInService } from '../services/moveIn.service';
 import { AddTenantService } from '../services/add-tenant.service';
 import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-pay-rent-form',
   templateUrl: './pay-rent-form.component.html',
   styleUrls: ['./pay-rent-form.component.scss'],
-  providers: [DatePipe],
+  providers: [DatePipe, CurrencyPipe ],
 })
 
 export class PayRentFormComponent implements OnInit, OnDestroy {
@@ -54,7 +55,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   IsAutoPaymentsEnabled = false;
   makePaymentForUnit = false;
   TotalReserveAmount: number;
-  totalMoveInAmount: number;
+  totalMoveInAmount: any;
   date: Date;
   reservationInProgress: boolean;
   MinDate: string;
@@ -126,6 +127,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     private surchargeService: SurchargeService,
     public router: Router,
     private datePipe: DatePipe,
+    private currencyPipe: CurrencyPipe,
     private dataSharingService: DataSharingService,
     private makeAReservationService: MakeAReservationService,
     private moveInService: MoveInService,
@@ -181,7 +183,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     if (!!this.dataSharingService.MoveInData.TotalChargesAmount) {
       this.totalMoveInAmount =
       // tslint:disable-next-line: max-line-length
-      parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
+      currencyPipe.transform((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount), 'USD');
       if (!!this.totalMoveInAmount && this.totalMoveInAmount > 0) {
         this.surchargeService.setAmt(this.totalMoveInAmount);
         // this.getSurCharge();
