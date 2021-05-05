@@ -14,6 +14,6 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://aallenselfstorage.com',
-  APIKey: `bTJUMW4yTDVbOFs6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, 
-  // APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` //testing
+  // APIKey: `bTJUMW4yTDVbOFs6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, 
+  APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` //testing
 };
