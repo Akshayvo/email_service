@@ -69,7 +69,7 @@ export class LocationComponent implements OnInit {
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
-      if (this.router.url.includes('/location/poughkeepsie/arlington')) {
+      if (this.router.url.includes('/location/poughkeepsie-arlington')) {
             this.meta.addTag({
               name: 'description',
               content: `Our Route 55 Poughkeepsie location has 24 hour access available, pin-code activated gates,
@@ -94,7 +94,7 @@ export class LocationComponent implements OnInit {
                 content: element.content
               })
             });
-    } else if (this.router.url.includes('/location/poughkeepsie/hyde-park')) {
+    } else if (this.router.url.includes('/location/poughkeepsie-hyde-park')) {
            this.meta.addTag({
              name: 'description',
              content: `Whether you own a home, rent an apartment, go to school or run a business,
@@ -224,9 +224,9 @@ export class LocationComponent implements OnInit {
 
   
   public fetchOg() {
-    if (this.router.url.includes('/location/poughkeepsie/arlington')) {
+    if (this.router.url.includes('/location/poughkeepsie-arlington')) {
       this.og = ogLocation1;
-  } else if (this.router.url.includes('/location/poughkeepsie/hyde-park')) {
+  } else if (this.router.url.includes('/location/poughkeepsie-hyde-park')) {
     this.og = ogLocation2;
   } else if (this.router.url.includes('/location/highland')) {
     this.og = ogLocation3;
@@ -238,9 +238,9 @@ export class LocationComponent implements OnInit {
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes('/location/poughkeepsie/arlington')) {
+    if (this.router.url.includes('/location/poughkeepsie-arlington')) {
       this.twitter = twitterLocation1;
-  } else if (this.router.url.includes('/location/poughkeepsie/hyde-park')) {
+  } else if (this.router.url.includes('/location/poughkeepsie-hyde-park')) {
     this.twitter = twitterLocation2;
   } else if (this.router.url.includes('/location/highland')) {
     this.twitter = twitterLocation3;
@@ -252,9 +252,9 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/poughkeepsie/arlington')) {
+    if (this.router.url.includes('/location/poughkeepsie-arlington')) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes('/location/poughkeepsie/hyde-park')) {
+    } else if (this.router.url.includes('/location/poughkeepsie-hyde-park')) {
       this.fetchDetailsLocation2();
     } else if (this.router.url.includes('/location/highland')) {
       this.fetchDetailsLocation3();
@@ -267,10 +267,10 @@ export class LocationComponent implements OnInit {
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate(['/location/poughkeepsie/arlington/reserve-unit'],
+    this.router.navigate(['/location/poughkeepsie-arlington/reserve-unit'],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate(['/location/poughkeepsie/hyde-park/reserve-unit'],
+    this.router.navigate(['/location/poughkeepsie-hyde-park/reserve-unit'],
           );
   }  else if ( this.locationId === 3 ) {
     this.router.navigate(['/location/highland/reserve-unit'],

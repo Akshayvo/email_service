@@ -88,7 +88,7 @@ const childroute = environment.paymentPageType ? withTab : withoutTab;
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
-    { path: 'location/poughkeepsie/arlington',
+    { path: 'location/poughkeepsie-arlington',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -124,7 +124,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'location/poughkeepsie/hyde-park',
+    { path: 'location/poughkeepsie-hyde-park',
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -271,7 +271,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/poughkeepsie/arlington', component: HomeComponent,
+    { path: 'review/poughkeepsie-arlington', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -279,7 +279,7 @@ export const apiRoutes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJv-tcSK4_3YkR9RRujwV_wSY'
     }
   },
-  { path: 'review/poughkeepsie/hyde-park', component: HomeComponent,
+  { path: 'review/poughkeepsie-hyde-park', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -314,11 +314,11 @@ export const apiRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/poughkeepsie/arlington', component: PayRentComponent,
+    path: 'pay-rent/poughkeepsie-arlington', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/poughkeepsie/hyde-park', component: PayRentComponent,
+    path: 'pay-rent/poughkeepsie-hyde-park', component: PayRentComponent,
     children: childroute
   },
   {
@@ -335,8 +335,8 @@ export const apiRoutes = [
   },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-poughkeepsie/arlington', component: ContactUsComponent},
-  { path: 'contact-poughkeepsie/hyde-park', component: ContactUsComponent},
+  { path: 'contact-poughkeepsie-arlington', component: ContactUsComponent},
+  { path: 'contact-poughkeepsie-hyde-park', component: ContactUsComponent},
   { path: 'contact-highland', component: ContactUsComponent},
   { path: 'contact-lake-katrine', component: ContactUsComponent},
   { path: 'contact-pawling', component: ContactUsComponent},
@@ -348,7 +348,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: '/location/poughkeepsie/arlington',
+  { path: '/location/poughkeepsie-arlington',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -360,7 +360,7 @@ export const iFrameRoutes = [
       { path: 'reviews', component: ReviewsComponent }
     ]
   },
-  { path: '/location/poughkeepsie/hyde-park',
+  { path: '/location/poughkeepsie-hyde-park',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -408,7 +408,7 @@ export const iFrameRoutes = [
       { path: 'reviews', component: ReviewsComponent }
     ]
   },
-  { path: 'review/poughkeepsie/arlington', component: HomeComponent,
+  { path: 'review/poughkeepsie-arlington', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -416,7 +416,7 @@ export const iFrameRoutes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJv-tcSK4_3YkR9RRujwV_wSY'
     }
   },
-  { path: 'review/poughkeepsie/hyde-park', component: HomeComponent,
+  { path: 'review/poughkeepsie-hyde-park', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },

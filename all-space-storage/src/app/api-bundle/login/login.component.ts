@@ -126,33 +126,33 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchContactDetail() {
-    if (this.router.url.includes('poughkeepsie/arlington')) {
+    if (this.router.url.includes('poughkeepsie-arlington')) {
       this.id = 1;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
+      this.name = '';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
-    } else  if (this.router.url.includes('poughkeepsie/hyde-park')) {
+    } else  if (this.router.url.includes('poughkeepsie-hyde-park')) {
       this.id = 2;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
+      this.name = '';
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
     } else  if (this.router.url.includes('highland')) {
       this.id = 3;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
+      this.name = '';
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
     } else  if (this.router.url.includes('lake-katrine')) {
       this.id = 4;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
+      this.name = '';
       this.contact = contactsLocation4;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
     } else  if (this.router.url.includes('pawling')) {
       this.id = 5;
-      this.name = 'Affordable Secure Storage - Floral City, LLC';
+      this.name = '';
       this.contact = contactsLocation5;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
@@ -168,10 +168,10 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('poughkeepsie/arlington')) {
+    if (this.router.url.includes('poughkeepsie-arlington')) {
       this.og = ogPayRentPageLocation1;
     } else {
-      if (this.router.url.includes('poughkeepsie/hyde-park')) {
+      if (this.router.url.includes('poughkeepsie-hyde-park')) {
         this.og = ogPayRentPageLocation2;
       } else {
         if (this.router.url.includes('highland')) {
@@ -188,10 +188,10 @@ export class LoginComponent implements OnInit, OnDestroy {
     }}
 
 public fetchTwitter() {
-  if (this.router.url.includes('poughkeepsie/arlington')) {
+  if (this.router.url.includes('poughkeepsie-arlington')) {
     this.twitter = twitterPayRentPageLocation1;
   } else {
-    if (this.router.url.includes('poughkeepsie/hyde-park')) {
+    if (this.router.url.includes('poughkeepsie-hyde-park')) {
       this.twitter = twitterPayRentPageLocation2;
     } else {
       if (this.router.url.includes('highland')) {

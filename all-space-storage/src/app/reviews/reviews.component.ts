@@ -20,9 +20,9 @@ export class ReviewsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/poughkeepsie/arlington')) {
+    if (this.router.url.includes('/location/poughkeepsie-arlington')) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes('/poughkeepsie/hyde-park')) {
+     } else if (this.router.url.includes('/poughkeepsie-hyde-park')) {
        this.fetchDetailsLocation2();
      } else  if (this.router.url.includes('/location/highland'))  {
        this.fetchDetailsLocation3();

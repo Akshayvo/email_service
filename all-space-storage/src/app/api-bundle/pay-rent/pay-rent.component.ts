@@ -44,9 +44,9 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('poughkeepsie/arlington') ) {
+    if (this.router.url.includes('poughkeepsie-arlington') ) {
       this.name = 'Poughkeepsie/Arlington';
-  }  else if (this.router.url.includes('poughkeepsie/hyde-park')) {
+  }  else if (this.router.url.includes('poughkeepsie-hyde-park')) {
     this.name = 'Poughkeepsie/Hyde Park';
   } else if (this.router.url.includes('highland')) {
     this.name = 'Highland';
@@ -68,10 +68,10 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('poughkeepsie/arlington')) {
+    if (this.router.url.includes('poughkeepsie-arlington')) {
       this.og = ogPayRentPageLocation1;
     } else {
-      if (this.router.url.includes('poughkeepsie/hyde-park')) {
+      if (this.router.url.includes('poughkeepsie-hyde-park')) {
         this.og = ogPayRentPageLocation2;
       } else {
         if (this.router.url.includes('highland')) {
@@ -88,10 +88,10 @@ export class PayRentComponent implements OnInit {
 }}
 
 public fetchTwitter() {
-    if (this.router.url.includes('poughkeepsie/arlington')) {
+    if (this.router.url.includes('poughkeepsie-arlington')) {
       this.twitter = twitterPayRentPageLocation1;
     } else {
-      if (this.router.url.includes('poughkeepsie/hyde-park')) {
+      if (this.router.url.includes('poughkeepsie-hyde-park')) {
         this.twitter = twitterPayRentPageLocation2;
       } else {
         if (this.router.url.includes('highland')) {

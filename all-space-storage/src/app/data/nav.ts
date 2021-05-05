@@ -12,12 +12,12 @@ export const navLinks = [
             {
                 id: '1',
                 label: 'Poughkeepsie/Arlington',
-                path: '/location/poughkeepsie/arlington',
+                path: '/location/poughkeepsie-arlington',
             },
             {
                 id: '2',
                 label: 'Poughkeepsie/Hyde Park',
-                path: '/location/poughkeepsie/hyde-park',
+                path: '/location/poughkeepsie-hyde-park',
               },
               {
                 id: '3',

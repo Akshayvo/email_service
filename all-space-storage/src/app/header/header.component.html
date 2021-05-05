@@ -38,7 +38,7 @@
 
           <span *ngIf="nav?.type === 'dropdown'">
               <div class="dropdown show">  
-                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/location/poughkeepsie/arlington') || router.isActive('/location/poughkeepsie/hyde-park') || router.isActive('/location/highland') || router.isActive('/location/lake-katrine') || router.isActive('/location/pawling')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/location/poughkeepsie-arlington') || router.isActive('/location/poughkeepsie-hyde-park') || router.isActive('/location/highland') || router.isActive('/location/lake-katrine') || router.isActive('/location/pawling')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
                   <li *ngFor="let sub of nav.sublinks text-center">
                     <a class="dropdown-item" [routerLinkActive]="'location-active'" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a></li>

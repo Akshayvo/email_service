@@ -15,12 +15,12 @@ export const tableData = [
   {
     facility: 'Poughkeepsie/Arlington',
     address: '189 Manchester Road Poughkeepsie, NY 12603',
-    url: 'poughkeepsie/arlington'
+    url: 'poughkeepsie-arlington'
   },
   {
     facility: 'Poughkeepsie/Hyde Park',
     address: '120 Salt Point Turnpike, Poughkeepsie, NY 12603',
-    url: 'poughkeepsie/hyde-park'
+    url: 'poughkeepsie-hyde-park'
   },
   {
     facility: 'Highland',
@@ -43,12 +43,12 @@ export const tableDataContactPage = [
   {
     facility: 'Poughkeepsie/Arlington',
     address: '189 Manchester Road Poughkeepsie, NY 12603',
-    url: 'poughkeepsie/arlington'
+    url: 'poughkeepsie-arlington'
   },
   {
     facility: 'Poughkeepsie/Hyde Park',
     address: '120 Salt Point Turnpike, Poughkeepsie, NY 12603',
-    url: 'poughkeepsie/hyde-park'
+    url: 'poughkeepsie-hyde-park'
   },
   {
     facility: 'Highland',

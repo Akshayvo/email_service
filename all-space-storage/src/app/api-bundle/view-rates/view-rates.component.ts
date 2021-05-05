@@ -24,10 +24,10 @@ export class ViewRatesComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('/location/poughkeepsie/arlington')) {
+    if (this.router.url.includes('/location/poughkeepsie-arlington')) {
       this.id = 1;
       this.heading = headingLocation1;
-    } else if (this.router.url.includes('/location/poughkeepsie/hyde-park')) {
+    } else if (this.router.url.includes('/location/poughkeepsie-hyde-park')) {
       this.id = 2;
       this.heading = headingLocation2;
     } else if (this.router.url.includes('/location/highland')) {

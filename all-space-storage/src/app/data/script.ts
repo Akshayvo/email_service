@@ -69,14 +69,14 @@ export const nameLocation3 = `AllSpace Storage - Highland`;
 export const nameLocation4 = `AllSpace Storage - Kingston/Lake Katrine`;
 export const nameLocation5 = `AllSpace Storage - Pawling`;
 
-export const location1 = `poughkeepsie/arlington`;
-export const location2 = `poughkeepsie/hyde-park`;
+export const location1 = `poughkeepsie-arlington`;
+export const location2 = `poughkeepsie-hyde-park`;
 export const location3 = `highland`;
 export const location4 = `lake-katrine`;
 export const location5 = `pawling`;
 
-export const urlLocation1 = `${environment.websiteUrl}/location/poughkeepsie/arlington/storage-units`;
-export const urlLocation2 = `${environment.websiteUrl}/location/poughkeepsie/hyde-park/storage-un`;
+export const urlLocation1 = `${environment.websiteUrl}/location/poughkeepsie-arlington/storage-units`;
+export const urlLocation2 = `${environment.websiteUrl}/location/poughkeepsie-hyde-park/storage-un`;
 export const urlLocation3 = `${environment.websiteUrl}/location/highland/storage-units`;
 export const urlLocation4 = `${environment.websiteUrl}/location/lake-katrine/storage-units`;
 export const urlLocation5 = `${environment.websiteUrl}/location/pawling/storage-units`;

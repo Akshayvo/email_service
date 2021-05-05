@@ -69,6 +69,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
     this.facilityLocation = this.dataSharingService.facilityLocation;
+    console.log(this.facilityLocation);
   }
 
   public fetchThData() {
