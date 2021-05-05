@@ -35,14 +35,14 @@
               <p >Rate</p>
               <div class="custom-font"><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</strong></div>
           </div>
-          <div class="text-center" *ngIf="lstUnitType.ReservationFee != null">
+          <div class="text-center" *ngIf="lstUnitType.ReservationFee != null && locationId === 1 ">
             <p>Reservation Charges</p>
-            <div class="custom-font"><strong><span>$</span>{{lstUnitType.ReservationFee}}</strong></div>
+            <div class="custom-font"><strong><span>$</span>{{lstUnitType.ReservationFee}} </strong></div>
           </div>
         </div>
       </div>
       <div class="col-4 d-flex justify-content-center" >
-        <div *ngIf="lstUnitType.IsUnitsAvailable" >
+        <div *ngIf="lstUnitType.IsUnitsAvailable && locationId === 1 " >
           <div class=" py-1 buttons" >
               <button class="btn  btn-primary" (click)="navigate('reserve-unit', lstUnitType )">Reserve</button>
           </div>

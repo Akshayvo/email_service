@@ -40,7 +40,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
   defaultClimateString = ' ';
-
+  locationId:any;
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
   objCharges: ObjCharges;
@@ -65,11 +65,22 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
+    
     this.getData();
+    this.isSomePage();
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
     this.facilityLocation = this.dataSharingService.facilityLocation;
+    
   }
+
+  public isSomePage() {
+    if (this.router.url.includes('/wa/south-wenatchee')) {
+      this.locationId = 1;
+    } else if (this.router.url.includes('/wa/leos-self-storage')) {
+      this.locationId = 2;
+    } 
+ }
 
   public fetchThData() {
     this.th = th;
