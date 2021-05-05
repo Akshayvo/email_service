@@ -26,6 +26,70 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
+  from = "/location/poughkeepsie/arlington/storage-units"
+  to = "/location/poughkeepsie-arlington/storage-units"
+  status = 301
+[[redirects]]
+  from = "/location/poughkeepsie/arlington/reserve-unit"
+  to = "/location/poughkeepsie-arlington/reserve-unit"
+  status = 301
+[[redirects]]
+  from = "/location/poughkeepsie/arlington/unit-sizer"
+  to = "/location/poughkeepsie-arlington/unit-sizer"
+  status = 301
+[[redirects]]
+  from = "/location/poughkeepsie/arlington/about"
+  to = "/location/poughkeepsie-arlington/about"
+  status = 301
+[[redirects]]
+  from = "/location/poughkeepsie/arlington/directions"
+  to = "/location/poughkeepsie-arlington/directions"
+  status = 301
+[[redirects]]
+  from = "/location/poughkeepsie/arlington/reviews"
+  to = "/location/poughkeepsie-arlington/reviews"
+  status = 301
+[[redirects]]
+  from = "/location/poughkeepsie/arlington/login"
+  to = "/location/poughkeepsie-arlington/login"
+  status = 301
+[[redirects]]
+  from = "/contact-poughkeepsie/arlington"
+  to = "/contact-poughkeepsie-arlington"
+  status = 301
+[[redirects]]
+  from = "/location/poughkeepsie/hyde-park/storage-units"
+  to = "/location/poughkeepsie-hyde-park/storage-units"
+  status = 301
+[[redirects]]
+  from = "/location/poughkeepsie/hyde-park/reserve-unit"
+  to = "/location/poughkeepsie-hyde-park/reserve-unit"
+  status = 301
+[[redirects]]
+  from = "/location/poughkeepsie/hyde-park/unit-sizer"
+  to = "/location/poughkeepsie-hyde-park/unit-sizer"
+  status = 301
+[[redirects]]
+  from = "/location/poughkeepsie/hyde-park/about"
+  to = "/location/poughkeepsie-hyde-park/about"
+  status = 301
+[[redirects]]
+  from = "/location/poughkeepsie/hyde-park/directions"
+  to = "/location/poughkeepsie-hyde-park/directions"
+  status = 301
+[[redirects]]
+  from = "/location/poughkeepsie/hyde-park/reviews"
+  to = "/location/poughkeepsie-hyde-park/reviews"
+  status = 301
+[[redirects]]
+  from = "/pay-rent/poughkeepsie/hyde-park/login"
+  to = "/pay-rent/poughkeepsie-hyde-park/login"
+  status = 301
+[[redirects]]
+  from = "/contact-poughkeepsie/hyde-park"
+  to = "/contact-poughkeepsie-hyde-park"
+  status = 301
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
