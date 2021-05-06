@@ -1,0 +1,89 @@
+export const featuresList = [
+    {
+        td1: 'Convenient Location',
+        td2: 'On-Site Manager',
+    },
+    {
+        td1: 'Online Bill Pay',
+        td2: 'Security Cameras',
+    },
+    {
+        td1: 'Single-Level Facility',
+        td2: 'Drive-Up Units',
+    },
+    {
+        td1: 'Auto-Pay Available',
+        td2: 'Friendly Customer Service',
+    },
+    {
+        td1: 'Affordable Rates',
+        td2: 'Recreational Vehicle Storage',
+    },
+    {
+        td1: 'Boat Storage',
+        td2: 'Climate-Controlled Units Available',
+    },
+    {
+        td1: 'Temperature-Controlled Units Available',
+    }
+];
+
+export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
+
+export const aboutUsHeading = `Climate Controlled & Regular Self Storage Units in Naples, FL`;
+
+export const aboutUs = [
+    {
+        p: `Goodlette Self Storage is conveniently located on Goodlette-Frank Rd between Central Ave and 5th Ave North a stone’s throw from Downtown Naples. Our well-lit, well-maintained facility has been serving the community with affordable, well-maintained self storage services including recreational vehicle and boat parking since 1985.`,
+    },
+    {
+        p: `As a locally owned business, we go above and beyond to offer our customers every amenity to make their stay with Goodlette Self Storage easier. Check out our live inventory and rates on this website, then reserve your unit in minutes. You can even perform a contactless rental right through our website. Once you arrive at the facility, you’ll find all of our units are located on a single level. All of our regular outdoor units are drive-up for easy loading and unloading. `,
+    },
+    {
+        p: `Goodlette Self Storage is well-lit, fenced in covered by plenty of security cameras, and is designed to ensure a sense of security at all times. Our on-site manager is there to accept payments, assist in the move- answer questions and keep an eye on the facility with regular lot-checks.`,
+    },
+    {
+        p: `Whether you’re a residential storage user looking for some extra elbow-room around the house, or if you’re a growing business that needs 24-hour access to your outdoor unit, we’ve got a number of unit sizes at affordable rates. Check out our current availability and pricing, then reserve or rent your unit in minutes. Still have questions? Give us a call! We can’t wait to meet you!`,
+    }
+    
+];
+
+export const gettingStarted = `Are you ready to stop putting off cleaning out your attic, garage, or shed?
+Clear up some room around the house with Goodlette Self Storage and one of our affordable storage units,
+accessible 24 hours a day!`;
+
+export const feature = [
+    {
+        // tslint:disable-next-line:max-line-length
+        label: 'Convenient Location',
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg`,
+        alt: 'Icon art displaying a location pin'
+    },
+    {
+        // tslint:disable-next-line:max-line-length
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg`,
+        label: 'Online Reservation & Bill Pay',
+        alt: 'Icon art displaying a screen with cursor'
+    },
+    {
+        // tslint:disable-next-line:max-line-length
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg`,
+        label: 'Climate Controlled',
+        alt: 'Icon of thermometer indicating climate-controlled units'
+
+    },
+    {
+        // tslint:disable-next-line:max-line-length
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg`,
+        label: 'Affordable Self Storage Rates',
+        alt: 'Icon of a hand holding money'
+    },
+];
+
+export const jumbotron = [
+    {
+        h2: `Affordable Self Storage Units in Naples, FL`,
+        blurb: `24 Hour Access Self Storage in Ennismore
+        Robinson Storage is Ennismore's newest self storage facility, and we come complete with all of the amenities you need to make your de-cluttering, renovation, or moving project affordable and easy! Our facility is secured by keypad-activated electronic gates, and is well-lit to ensure a sense of safety at all times. You'll get all of that plus awesome customer service at a fair price with Robinson Storage!`,
+    }
+];
