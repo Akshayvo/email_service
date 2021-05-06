@@ -186,10 +186,24 @@ export const unitSizerLocation1 = [
             ],
     },
     {
+        text: '10\' x 20\' Storage Unit',
+        alt: '10\' x 20\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
+        data: `This unit is approximately 200 sq feet of space that can hold the contents of about five rooms.
+        `,
+        amenities: [
+            { content: 'Appliances', },
+            { content: 'Car or Small Boat', },
+            { content: 'Furniture', },
+            { content: 'Bookcases', },
+            { content: 'Tow Trailer', },
+            ],
+    },
+    {
         text: '10\' x 24\' Storage Unit',
         alt: 'self storage unit drawn with the dimensions 10 feet by 24 feet with boxes, shelves, sofas, desks, and other furniture',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
-        data: `This unit is approximately 100 sq feet of space that can hold the contents of two rooms, such as:`,
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/storage-unit-10-foot-by-25-foot.png',
+        data: `This unit is approximately 240 sq feet of space that can hold the contents of two rooms, such as:`,
         amenities: [
             { content: 'Appliances', },
             { content: 'Car or Small Boat', },
@@ -200,18 +214,18 @@ export const unitSizerLocation1 = [
         ],
     },
     {
-        text: '10\' x 20\' Storage Unit',
-        alt: '10\' x 20\' Storage Unit Graphic ',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
-        data: `This unit is approximately 200 sq feet of space that can hold the contents of about five rooms.
-        `,
+        text: '20\' x 24\' Storage Unit',
+        alt: 'self storage unit drawn with the dimensions 20 feet by 24 feet with boxes, shelves, sofas, desks, and other furniture',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/storage-unit-10-foot-by-25-foot.png',
+        data: `This unit is approximately 240 sq feet of space that can hold the contents of a small house:`,
         amenities: [
             { content: 'Appliances', },
             { content: 'Car or Small Boat', },
+            { content: 'Entertainment Sets', },
             { content: 'Furniture', },
             { content: 'Bookcases', },
-            { content: 'Tow Trailer', },
-            ],
+            { content: 'Tow Trailer' },
+        ],
     },
 
 ];
@@ -219,18 +233,18 @@ export const unitSizerLocation1 = [
 export const unitSizerLocation2 = [
    
     {
-        text: '10\' x 20\' Storage Unit',
-        alt: '10\' x 20\' Storage Unit Graphic ',
-        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
-        data: `This unit is approximately 200 sq feet of space that can hold the contents of about five rooms.
-        `,
+        text: '10\' x 24\' Storage Unit',
+        alt: 'self storage unit drawn with the dimensions 10 feet by 24 feet with boxes, shelves, sofas, desks, and other furniture',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/storage-unit-10-foot-by-25-foot.png',
+        data: `This unit is approximately 240 sq feet of space that can hold the contents of two rooms, such as:`,
         amenities: [
             { content: 'Appliances', },
             { content: 'Car or Small Boat', },
+            { content: 'Entertainment Sets', },
             { content: 'Furniture', },
             { content: 'Bookcases', },
-            { content: 'Tow Trailer', },
-            ],
+            { content: 'Tow Trailer' },
+        ],
     },
     
 ];

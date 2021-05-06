@@ -22,23 +22,23 @@ export const galleryHome = [
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `mp-and-e-storage-wautoma-1`,
+    url: `mp-and-e-storage-wautoma-self-storage-facility`,
     // tslint:disable-next-line:max-line-length
-    thumb: `mp-and-e-storage-wautoma-1`,
-    alt: `single story self storage building with snow on the ground in the foreground`
+    thumb: `mp-and-e-storage-wautoma-self-storage-facility`,
+    alt: `a single story self storage building with a row of units facing the camera`
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `mp-and-e-storage-wautoma-3`,
+    url: `mp-and-e-storage-wautoma-unit-building`,
     // tslint:disable-next-line:max-line-length
-    thumb: `mp-and-e-storage-wautoma-3`,
-    alt: `single story metal self storage building under a cloudy sky with snow in foreground`
+    thumb: `mp-and-e-storage-wautoma-unit-building`,
+    alt: `a self storage facility building with metal roll-up doors and wide parking areas`
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `mp-and-e-storage-wautoma-5`,
+    url: `mp-and-e-storage-wautoma-units`,
     // tslint:disable-next-line:max-line-length
-    thumb: `mp-and-e-storage-wautoma-5`,
-    alt: `metal self storage unit doors in a row`
+    thumb: `mp-and-e-storage-wautoma-units`,
+    alt: `the side of a metal self storage building with wide parking lanes for easy turnaround`
   },
 ];
