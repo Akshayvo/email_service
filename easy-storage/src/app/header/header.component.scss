@@ -18,13 +18,13 @@ img {
 
   .contact-details {
     color: $white;
-    font-size: 0.82em;
+    font-size: 0.7em;
     font-weight: 500;
     width: 100%;
   }
 }
 
-  .follow {
+.follow {
   display: flex;
   color: $white;
   font-size: 1rem;
@@ -38,7 +38,7 @@ img {
 
     .fa-2x {
       font-size: 1.4em;
-  }
+    }
   }
 
   i {
@@ -132,9 +132,32 @@ img {
   .follow {
     display: flex;
     color: $white;
-    font-size: 1rem;
+    font-size: 0.7rem;
     align-items: center;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
+  }
+
+  .display {
+    display: block;
+    height: 5em;
+  }
+
+  .contact-header {
+    display: inline;
+
+    .contact-details {
+      color: $white;
+      font-size: 0.7em;
+      font-weight: 500;
+      width: 100%;
+      height: 50px;
+    }
+  }
+  img {
+    width: 100px;
+  }
+  .spantext {
+    font-size: 0.8em;
   }
 }
