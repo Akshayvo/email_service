@@ -21,9 +21,9 @@ export const currentDiscounts = [
     {
         data: `15% off 1st month, just tell us you found us on the internet.`  
     },
-    {
-        data: `5% off prepaid 6 months.`
-    },
+    // {
+    //     data: `5% off prepaid 6 months.`
+    // },
     {
         data: `1 month free with prepaid 1 year.`
     },
