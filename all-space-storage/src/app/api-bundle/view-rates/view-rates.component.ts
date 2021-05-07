@@ -37,7 +37,7 @@ export class ViewRatesComponent implements OnInit {
       this.id = 4;
       this.heading = headingLocation4;
     } else if (this.router.url.includes('/location/pawling')) {
-      this.id = 4;
+      this.id = 5;
       this.heading = headingLocation5;
     }
   }
