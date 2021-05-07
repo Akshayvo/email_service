@@ -30,13 +30,15 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Goodlette/jpg/goodlette-self-storage-43.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
+     
+    
      map: "https://g.page/GoodletteSelfStorage?share",
      description: "Goodlette Self Storage has been in business since 1985 and offers over 500 air conditioned, air ventilated and open parking units to the local Naples community. Our staff is focused on providing excellent customer service and affordable storage.",
-     streetAddress: "148 W 51st St",
-     state: "New York",
-     addressLocality: "New York",
-     addressRegion: "NY",
-     postalCode: "10019",
+     streetAddress: "400 Goodlette Rd N",
+     state: "Florida",
+     addressLocality: "Naples",
+     addressRegion: "FL",
+     postalCode: "34102",
      addressCountry: "US",
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit Card, Debit Card",
@@ -46,7 +48,7 @@ export const script = {               // Please fill this script according to fa
      reviewCount: "16",
      latitude: 26.1523148,
      longitude: -81.7934834,
-     openingHours: [],
+     openingHours: ["Mo-Sa 09:00-18:00"],
      priceRange: '$80-$230'
 };
 

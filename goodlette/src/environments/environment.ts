@@ -18,7 +18,7 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://goodlette-staging.netlify.app',
-  APIKey: `bTFUMm4yTDlbNFs6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
+  APIKey: `dzF0MlcySjlOOjIyfCU4Nzg3NyQoOD1iVzBzaGRkOWtlb2NeTg==`, // demo north 28463
 };
 
 /*

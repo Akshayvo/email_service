@@ -82,6 +82,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;
     this.showMovein = objSIMSetting.objActionSetting.blnAllowMoveIn;
     this.showClimateControl = objSIMSetting.objUnitSizesSetting.blnClimateControl;
+    
   }
 
 
@@ -135,6 +136,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+      
     });
   }
 
