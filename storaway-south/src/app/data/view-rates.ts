@@ -15,9 +15,9 @@ export const currentDiscounts = [
     {
         p: `Multi unit discount - 5% discount on second unit`
     },
-    {
-        p: `6 months prepaid - 5% discount`
-    },
+    // {
+    //     p: `6 months prepaid - 5% discount`
+    // },
     {
         p: `Fireman, Police, EMS and Vets - 10% discount`
     },
