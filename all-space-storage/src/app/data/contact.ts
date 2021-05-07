@@ -44,7 +44,7 @@ export const contactsLocation2 = [
         label: 'Address: ',
         data: '120 Salt Point Turnpike, Poughkeepsie, NY 12603',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/24osXYR5z4MLUyQ28'
     },
     {
         id: 2,
@@ -87,7 +87,7 @@ export const contactsLocation3 = [
         label: 'Address: ',
         data: '480 Route 299 Highland, NY 12528',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/KKgxGqGd4PGAuiAR8'
     },
     {
         id: 2,
@@ -130,7 +130,7 @@ export const contactsLocation4 = [
         label: 'Address: ',
         data: '1693 Ulster Avenue Lake Katrine, NY 12449',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/DB4eMwEGsRp7nQ7e9'
     },
     {
         id: 2,
@@ -173,7 +173,7 @@ export const contactsLocation5 = [
         label: 'Address: ',
         data: '165 Route 22 Pawling, NY 12564',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/yofKLEJTnKz1iwaEA'
     },
     {
         id: 2,

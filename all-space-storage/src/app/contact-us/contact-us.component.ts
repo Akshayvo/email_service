@@ -171,9 +171,9 @@ public fetchTwitter() {
 
   public fetchLocationDetails() {
     if (this.router.url.includes('poughkeepsie-arlington')) {
-      this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('poughkeepsie-hyde-park')) {
       this.fetchContactDetailsLocation1();
+    } else if (this.router.url.includes('poughkeepsie-hyde-park')) {
+      this.fetchContactDetailsLocation2();
     } else if (this.router.url.includes('highland')) {
       this.fetchContactDetailsLocation3();
     } else if (this.router.url.includes('lake-katrine')) {
@@ -186,15 +186,15 @@ public fetchTwitter() {
   public fetchContactDetailsLocation1() {
     this.heading = `AllSpace Storage - Poughkeepsie/Arlington`;
     this.locationId = '1'
-    this.contactDetails = contactsLocation2;
-    this.hoursDetails = hoursLocation2;
+    this.contactDetails = contactsLocation1;
+    this.hoursDetails = hoursLocation1;
   }
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
     this.heading = `AllSpace Storage - Poughkeepsie/Hyde Park`;
-    this.contactDetails = contactsLocation1;
-    this.hoursDetails = hoursLocation1;
+    this.contactDetails = contactsLocation2;
+    this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
