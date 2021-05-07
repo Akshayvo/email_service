@@ -28,6 +28,12 @@ display: block;
 text-align: center;
 }
 
+.navbar {
+  button {
+    border-color: #fff;
+  }
+}
+
 .social {
   a {
     color: $white;
@@ -108,9 +114,8 @@ a {
   }
 
   button {
-    border: white;
-    margin-right: 20px;
-    color: white;
+    border-color: white;
+    color: #fff;
   }
 
   button:focus {
@@ -128,9 +133,9 @@ a {
 }
 
 .navbar-toggler {
-  margin-top: 10px;
-  margin-bottom: 10px;
-
+  // margin-top: 10px;
+  // margin-bottom: 10px;
+  border-color: #fff;
   i {
     color: #4e4848;
   }
@@ -141,12 +146,29 @@ a {
   border: 1px #efefef solid;
 }
 
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .navbar {
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+}
+
+@media screen and (min-width: 992px) {
+  .mobile-view {
+    display: none;
+  }
+}
+
 
 @media screen and (max-width: 991px) {
   // .display {
   //   display: none;
   // }
-
+    .desktop-view {
+      display: none;
+    }
   .nav-link {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
@@ -318,15 +340,5 @@ a {
     
     }
 
-    .navbar {
-      padding-right: 1px;
-      
-      button {
-        margin-right: 10px;
-        padding:0px;
-
-        }
-    
-  }
   
   }  

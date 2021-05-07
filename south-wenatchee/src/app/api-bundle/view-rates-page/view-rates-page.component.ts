@@ -7,6 +7,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { th } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
+import { containsElement } from '@angular/animations/browser/src/render/shared';
 
 
 @Component({
@@ -125,6 +126,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.monthlyRateVR = monthlyRate;
       this.unitTypeIdVR = intUnitTypeID;
       this.curStage = 2;
+      console.log(description);
       }, err => {
       });
   }
@@ -134,6 +136,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+      
     });
   }
 

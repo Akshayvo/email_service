@@ -29,16 +29,17 @@
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')">
       <!-- <img src="" width="auto" height="70px" alt=""> -->
-      <b>South Wenatchee Self Storage / Leo’s Self Storage</b>
+      <b class="desktop-view">South Wenatchee Self Storage/Leo’s Self Storage</b>
+      <span class="mobile-view"><b>South Wenatchee Self Storage<br>Leo’s Self Storage</b></span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    <button class="navbar-toggler py-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
       <ul class="navbar-nav ml-auto nav-scroll">
-        <li class="nav-item mx-2" *ngFor="let nav of navLinks">
+        <li class="nav-item mx-1" *ngFor="let nav of navLinks">
           <span *ngIf="nav?.type === 'link'">
             <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
           </span>

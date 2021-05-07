@@ -286,24 +286,14 @@
   }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px) {
-  .contact-details {
-    padding-top: 60px;
-  }
-}
 
-@media only screen and (max-width: 767px) and (min-width: 601px) {
-  .contact-details {
-    padding-top: 40px;
-  }
-}
 
 
 
 @media only screen and (max-width: 600px) {
   .contact-details {
     background-color: $light;
-    padding-top: 30px;
+    // padding-top: 30px;
 
     .row {
       margin-left: 1px;
@@ -400,8 +390,8 @@
       width:250px;
     }
 
-      .contact-details {
-    padding-top: 70px;
-  }
+  //     .contact-details {
+  //   padding-top: 70px;
+  // }
 
 }
