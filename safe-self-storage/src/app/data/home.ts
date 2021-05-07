@@ -13,6 +13,7 @@ export const featuresList = [
     },
     {
         td1: 'Climate-Controlled Units Available',
+        td2: 'Concrete Construction'
     },
 ];
 

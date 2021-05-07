@@ -31,19 +31,19 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Office Hours: ',
-        data: 'By Appointment Only'
+        label: 'Business Hours: ',
+        data: 'By Appointment Only - No On-Site Office'
     },
+    // {
+    //     label: 'Saturday: ',
+    //     data: '10:00 am - 2:00 pm'
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: 'CLOSED'
+    // },
     {
-        label: 'Saturday: ',
-        data: '10:00 am - 2:00 pm'
-    },
-    {
-        label: 'Sunday: ',
-        data: 'CLOSED'
-    },
-    {
-        label: 'Access Hours: ',
+        label: 'Facility Access Hours: ',
         data: '7 Days a Week 6:00AM to 10:00PM'
     },
     {

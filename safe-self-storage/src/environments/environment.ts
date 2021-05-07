@@ -7,7 +7,7 @@ export const environment = {
   type: 0,  // { API: 0, iframe: 1 }
   locationName: 'new-york/east-rochester', // state/city  **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
-  alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
+  alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
   template: 'withoutJumbotron', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
@@ -20,7 +20,7 @@ export const environment = {
   websiteUrl: 'https://safe-self-storage-staging.netlify.app',
   // APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464
   // APIKey: `dzJ0OVc0SjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29435 Safe self Storage
-  APIKey: `dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Website Demo Data 4-29462
+  APIKey: `dzJ0OVc0SjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Website Demo Data 4-29462
 
 };
 

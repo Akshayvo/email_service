@@ -28,6 +28,10 @@ export const th = [
   //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   // },
   {  
+    data: `Reserve a Unit`,
+    state: objSIMSetting.objActionSetting.blnAllowReservation
+  },
+  {  
     data: `Contact Us`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
