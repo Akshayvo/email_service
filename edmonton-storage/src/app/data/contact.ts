@@ -129,10 +129,10 @@ export const hoursLocation2 = [
         label: 'Sun-Mon:',
         data: 'CLOSED',
     },
-    {
-        label: 'Statutory Holidays:',
-        data: 'CLOSED',
-    },
+    // {
+    //     label: 'Statutory Holidays:',
+    //     data: 'CLOSED',
+    // },
 ];
 
 export const hoursLocation2AcessHours = [

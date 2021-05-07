@@ -5,6 +5,10 @@
   padding-top: 94px;
 }
 
+.button-col {
+ padding-right: 0; 
+}
+
 .feature-block {
   h2 {
     line-height: 1.5rem;
@@ -75,28 +79,28 @@
 .img-box-1-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Edmonton_Storage/jpg/guardian-self-stoage-169.jpg");
   background-size: cover;
-  height: 522px;
+  height: 510px;
   background-position: center right;
 }
 
 .img-box-1-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Edmonton_Storage/webp/guardian-self-stoage-169.webp");
   background-size: cover;
-  height: 522px;
+  height: 510px;
   background-position: center right;
 }
 
 .img-box-2-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Edmonton_Storage/jpg/access-mini-storage-169.jpg");
   background-size: cover;
-  height: 522px;
+  height: 458px;
   background-position: center;
 }
 
 .img-box-2-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Edmonton_Storage/webp/access-mini-storage-169.webp");
   background-size: cover;
-  height: 522px;
+  height: 458px;
   background-position: center;
 }
 
@@ -240,6 +244,11 @@
       }
   }
 
+  .button-col {
+    padding-right: 15px;
+    margin-bottom: 5px;
+  }
+
   .img-box-1 {
     height: 250px;
     background-position: center right;
@@ -256,8 +265,8 @@
   }
 
   .btn {
-    width: 30%;
-    margin-left: 5px;
+    // width: 30%;
+    // margin-left: 5px;
   }
 
   .hours-data {
