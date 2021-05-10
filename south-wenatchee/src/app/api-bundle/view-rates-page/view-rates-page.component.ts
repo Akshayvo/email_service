@@ -20,6 +20,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
+  Description1: LstUnitTypes[];
 
   descriptionVR: string;
   monthlyRateVR: number;
@@ -72,6 +73,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
     this.facilityLocation = this.dataSharingService.facilityLocation;
+    this.trimDescription();
     
   }
 
@@ -149,6 +151,10 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
       
     });
+  }
+
+  public trimDescription() {
+    console.log(this.LstUnitTypes)
   }
 
   public ngOnDestroy(): void {

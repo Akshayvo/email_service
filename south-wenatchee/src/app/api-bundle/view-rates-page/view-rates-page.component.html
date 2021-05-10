@@ -14,9 +14,9 @@
           <div class=desktop-climate>Climate Control</div>
         </div>
         <div class="p-2">
-          <div class="p-2" class="custom-font">
+          <div class="p-2" class="custom-font" *ngIf="isNumber()" >
             <strong>
-              {{lstUnitType.Description}}
+              {{lstUnitType.UnitLength}} X {{lstUnitType.UnitWidth}}
               </strong>
           </div>
           <div class="p-2" *ngIf="lstUnitType.IsOutdoor">
