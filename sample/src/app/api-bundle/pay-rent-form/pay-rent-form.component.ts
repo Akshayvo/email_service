@@ -520,6 +520,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     this.surchargeService.getSurCharge()
     .subscribe(result => {
       this.amountToPay = result.decTotalAmount;
+      this.dataSharingService.amountToPayThankYou = this.amountToPay
       this.TotalReserveAmount = result.decTotalAmount;
 
 

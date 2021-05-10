@@ -26,11 +26,13 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   monthlyRate: number;
   PaymentAmount: number;
   CCApprovalCode: string;
+  amountToPayThankYou: number;
   eventName: string;
   paymentNavigationUrl: string;
   thankYouPageTitle: string;
   thankYouPageContent: string;
   facilityName: string;
+  unitTypeid: any;
   paymentSuccess = false;
   MoveIn = {
     dteMoveIn: '',
@@ -66,9 +68,12 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
     this.PaymentAmount = this.dataSharingService.PaymentAmount;
     this.CCApprovalCode = this.dataSharingService.CCApprovalCode;
+    this.amountToPayThankYou = this.dataSharingService.amountToPayThankYou
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.eventName = this.dataSharingService.eventName;
     this.paymentSuccess = this.dataSharingService.paymentSuccess;
+    this.unitTypeid = this.dataSharingService.LstUnitTypes.UnitTypeID;
+
 
     if (localStorage.getItem('strTenantToken')) {
       this.tokenExit = localStorage.getItem('strTenantToken');
@@ -78,16 +83,24 @@ export class ThankYouComponent implements OnInit, OnDestroy {
       this.paymentNavigationUrl = localStorage.getItem('paymentNavigationUrl');
     }
     const today = new Date();
-    window['dataLayer'] = window['dataLayer'] || {};
     window['dataLayer'] = window['dataLayer'] || [];
+    window['dataLayer'].push({ ecommerce: null });  // Clear the previous ecommerce object.
     window['dataLayer'].push({
-      'event': this.eventName,
-      'confirmationNumber' : this.strConfirmation,
-      'unitType':  this.description,
-      'price': this.monthlyRate && this.monthlyRate || '',
+      'event': 'purchase',
+      'ecommerce': {
+      'transaction_id' : this.strConfirmation,
+      'unit_rate': this.monthlyRate ,
+      'items': [{
+      'item_name':  this.description,
+      'item_id' : this.unitTypeid,
+      'price': this.amountToPayThankYou,
+      'quantity': 1,
       'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
       'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
+    }]
+  }
     });
+
   }
 
   public fetchMetaData() {
