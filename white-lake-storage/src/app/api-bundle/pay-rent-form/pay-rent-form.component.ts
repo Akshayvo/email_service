@@ -552,7 +552,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   makePayment(paymentData: any) {
     console.log("working here2");
-    // this.makePaymentForUnit = true;
+    this.makePaymentForUnit = true;
     if (this.toggleSignUp === true) {
       if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
       this.signUpAutoPay(this.signUp);
@@ -560,7 +560,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       this.OptionOutOfAutoPay(this.signUp);
     }
     }
-
+      
     this.invalidPayment = null;
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)
       .subscribe(paymentDataResponse => {
@@ -575,6 +575,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
             this.makeAReservation(this.MoveIn);
           } else {
+           
             if (this.navigateToMoveIn) {
               this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
               this.moveIn(this.MoveIn);
