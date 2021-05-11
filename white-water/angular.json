@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "whitewater"
+  "defaultProject": "whitewater",
+  "cli": {
+    "analytics": "a0948604-4c4c-4c12-b098-744b70e0288e"
+  }
 }
