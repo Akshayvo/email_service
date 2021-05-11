@@ -1,6 +1,6 @@
 export const objSIMSetting = {
     objActionSetting: {
-        blnAllowMoveIn: false,
+        blnAllowMoveIn: true,
         blnAllowReservation: true
     },
     objPaymentSetting: {
@@ -16,7 +16,7 @@ export const objSIMSetting = {
     objUnitSizesSetting: {
         blnClimateControl: false,
         blnShowDeposit: false,
-        blnShowRate: false,
+        blnShowRate: true,
         blnShowUnavailableUnitTypes: true,
         blnShowUnitAvailability: false
     },

@@ -41,9 +41,9 @@
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve" >
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>
-          <td colspan="2" class="py-2 px-4 border text-center" >
+          <!-- <td colspan="2" class="py-2 px-4 border text-center" >
               <a class="btn btn-primary" href="tel:5853817233">Call For Pricing</a>
-          </td>
+          </td> -->
 
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
