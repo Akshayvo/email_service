@@ -19,7 +19,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
-
+  regularUnit:  LstUnitTypes[];
+  outsideUnit: LstUnitTypes[];
   descriptionVR: string;
   monthlyRateVR: number;
   unitTypeIdVR: number;
@@ -119,6 +120,11 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+
+      this.regularUnit = this.LstUnitTypes.filter(x => !x.Description.includes('os'));
+      this.outsideUnit = this.LstUnitTypes.filter(x => x.Description.includes('os'));
+
+  
     });
   }
 

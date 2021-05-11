@@ -11,7 +11,7 @@
           </tr>
       </tHead>
       <tbody>
-        <tr *ngFor="let lstUnitType of LstUnitTypes">
+        <tr *ngFor="let lstUnitType of regularUnit">
           <td colspan="2" class="px-4 border text-center" *ngIf="!lstUnitType.Description.includes('os')">
               {{lstUnitType.Description}}
           </td>
@@ -57,7 +57,7 @@
         </tr>
     </tHead>
     <tbody>
-      <tr *ngFor="let lstUnitType of LstUnitTypes">
+      <tr *ngFor="let lstUnitType of outsideUnit">
         <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.Description.includes('os')">
             {{lstUnitType.Description}}
         </td>
@@ -94,8 +94,10 @@
       </tr>
     </tbody>
 </table>
-  <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes">
-    <div class="col-6 text-center ">  
+
+<h2 class="pt-5 pb-4 viewrates-mobile" [class.display]="!showTable"><strong>Regular Self Storage Units</strong></h2>
+  <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of regularUnit">
+    <div class="col-6 text-center " *ngIf="!lstUnitType.Description.includes('os')">  
       <strong>Unit Size</strong>
     <div class=" py-1 ">{{lstUnitType.Description}}</div>
     <div class="row">
@@ -110,7 +112,42 @@
 
     </div>
     </div>
-      <div class="col-6 d-flex justify-content-center" >
+      <div class="col-6 d-flex justify-content-center" *ngIf="!lstUnitType.Description.includes('os')" >
+        <div *ngIf="lstUnitType.IsUnitsAvailable; else other" >
+          <div class=" py-1 buttons" >
+              <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
+          </div>
+          <!-- <div class="py-1 buttons">
+              <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
+          </div> -->
+        </div>
+        <ng-template #other> 
+          <div class="text-right" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
+        </ng-template>
+    </div>
+  
+
+  </div>
+
+  <h2 class="pt-5 pb-4 viewrates-mobile" [class.display]="!showTable"><strong>Outside Parking</strong></h2>
+
+  <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of outsideUnit"  >
+    <div class="col-6 text-center " *ngIf="lstUnitType.Description.includes('os')">  
+      <strong>Unit Size</strong>
+    <div class=" py-1 ">{{lstUnitType.Description}}</div>
+    <div class="row">
+        
+        <div class="col-6 text-center ">
+            <p class=" "><b><u>Rate</u></b></p>
+            <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</div>
+        </div>
+        <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" >
+                <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
+            </div>
+
+    </div>
+    </div>
+      <div class="col-6 d-flex justify-content-center" *ngIf="lstUnitType.Description.includes('os')" >
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other" >
           <div class=" py-1 buttons" >
               <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
