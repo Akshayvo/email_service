@@ -49,12 +49,13 @@ const withoutTab = [
         {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
         { path: 'verifyCode', component: VerifyCodeComponent },
         { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
-        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  },
+        
         // canActivate: [VerifictionCodeGuard]
 ];
 
 const withTab = [
-  { path: '', redirectTo: ' ', pathMatch: 'full'},
+  { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
       { path: 'rent-sub', component: RentSubComponent,
         children: [
           {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -64,7 +65,7 @@ const withTab = [
           {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
           { path: 'verifyCode', component: VerifyCodeComponent },
           { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
-          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
           // canActivate: [VerifictionCodeGuard]
         ]
       },
@@ -84,12 +85,13 @@ const withTab = [
 
 // const reservationForm = environment
 const childroute = environment.signUpForAuotoPay ? withTab : withoutTab;
-
+const reviewURL = ``
 export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: `${environment.locationName}/platt-ave`,
+    { path: 'contact-us', component: ContactUsComponent },
+    { path: `${environment.locationName}/platte-ave`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -350,40 +352,55 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'error', component: ErrorHandlerComponent },
-  { path: 'pay-rent', component: PaymentComponent },
+  // { path: 'error', component: ErrorHandlerComponent },
+  // { path: 'pay-rent', component: PayRentComponent },
+  // {
+  //   path: 'pay-rent/platt-ave', component: PayRentComponent,
+  //   children: childroute
+  // },
+  // {
+  //   path: 'pay-rent/marquis-ave', component: PayRentComponent,
+  //   children: childroute
+  // },
+  // {
+  //   path: 'pay-rent/lincoln-ave', component: PayRentComponent,
+  //   children: childroute
+  // },
+  // {
+  //   path: 'pay-rent/belforest', component: PayRentComponent,
+  //   children: childroute
+  // },
+  // {
+  //   path: 'pay-rent/fairhope', component: PayRentComponent,
+  //   children: childroute
+  // },
+  // {
+  //   path: 'pay-rent/robertsdale', component: PayRentComponent,
+  //   children: childroute
+  // }
+
   {
-    path: 'pay-rent/platt-ave', component: PayRentComponent,
+    path: 'pay-rent', component: PayRentComponent,
     children: childroute
   },
-  {
-    path: 'pay-rent/marquis-ave', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/lincoln-ave', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/belforest', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/fairhope', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/robertsdale', component: PayRentComponent,
-    children: childroute
-  },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'review', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: `${reviewURL}`
+    }
+  }
+  ,
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
-  { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-platt-ave', component: ContactUsComponent},
-  { path: 'contact-marquis-ave', component: ContactUsComponent},
-  { path: 'contact-lincoln-ave', component: ContactUsComponent},
-  { path: 'contact-belforest', component: ContactUsComponent},
-  { path: 'contact-fairhope', component: ContactUsComponent},
-  { path: 'contact-robertsdale', component: ContactUsComponent},
+  // { path: 'contact-us', component: ContactComponent },
+  // { path: 'contact-platt-ave', component: ContactUsComponent},
+  // { path: 'contact-marquis-ave', component: ContactUsComponent},
+  // { path: 'contact-lincoln-ave', component: ContactUsComponent},
+  // { path: 'contact-belforest', component: ContactUsComponent},
+  // { path: 'contact-fairhope', component: ContactUsComponent},
+  // { path: 'contact-robertsdale', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
 ];

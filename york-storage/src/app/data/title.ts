@@ -1,7 +1,7 @@
 export const homePageTitle = `24-Hour Access Self Storage Units in York, NE`;
 export const homePageContent = `Self Storage of York serves York, NE, and the surrounding communities with a variety of well-maintained and affordable self storage units`;
 
-export const location1PageTitle = `Platt Ave Location | Self Storage of York`;
+export const location1PageTitle = `Platte Ave Location | Self Storage of York`;
 export const location1PageContent = `Take a moment to review our rates at Self Storage of York, then reserve your unit, and start saving space today!`;
 
 export const location2PageTitle = `Maquis Ave Location | Self Storage of York`;

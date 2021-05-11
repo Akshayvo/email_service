@@ -6,7 +6,7 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
           hoursLocation5, contactsLocation5,
-          hoursLocation6, contactsLocation6,  } from '../data/contact';
+          hoursLocation6, contactsLocation6, contactsHomePage  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -44,6 +44,13 @@ export class ContactUsComponent implements OnInit {
   twitter: any;
   contactPageContent: string;
   contactPageTitle: string;
+  heading1: string;
+  heading2: string;
+  heading3: string;
+  contactDetails1: any;
+  contactDetails2: any;
+  contactDetails3: any;
+  contactHomePage:any;
   
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -90,10 +97,12 @@ export class ContactUsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.fetchLocationDetails();
+    // this.fetchLocationDetails();
     window.scrollTo(0, 0);
     this.fetchScript();
     this.loadScript();
+    this.dataupdate();
+    this.contactHomePage = contactsHomePage;
 }
 
   get f() { return this.contactForm.controls; }
@@ -103,19 +112,7 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('platt-ave')) {
-      this.og = ogContactPageLocation1;
-    } else if (this.router.url.includes('marquis-ave')) {
-      this.og = ogContactPageLocation2;
-    } else if (this.router.url.includes('lincoln-ave')) {
-      this.og = ogContactPageLocation3;
-    } else if (this.router.url.includes('belforest')) {
-      this.og = ogContactPageLocation4;
-    } else if (this.router.url.includes('fairhope')) {
-      this.og = ogContactPageLocation5;
-    } else if (this.router.url.includes('robertsdale')) {
-      this.og = ogContactPageLocation6;
-    }
+    this.og = ogContactPage;
 }
 
 public fetchMetaData() {
@@ -124,19 +121,7 @@ public fetchMetaData() {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('platt-ave')) {
-    this.twitter = twitterContactPageLocation2;
-  } else if (this.router.url.includes('marquis-ave')) {
-    this.twitter = twitterContactPageLocation1;
-  } else if (this.router.url.includes('lincoln-ave')) {
-    this.twitter = twitterContactPageLocation3;
-  } else if (this.router.url.includes('belforest')) {
-    this.twitter = twitterContactPageLocation4;
-  } else if (this.router.url.includes('fairhope')) {
-    this.twitter = twitterContactPageLocation5;
-  } else if (this.router.url.includes('robertsdale')) {
-    this.twitter = twitterContactPageLocation6;
-  }
+  this.twitter = twitterContactPage;
 }
 
   public loadScript() {
@@ -156,55 +141,53 @@ public fetchTwitter() {
   //   });
   // }
 
-  // public dataupdate() {
-  //   if ( this.locationId === '1' || this.locationId === 1 ) {
+  public dataupdate() {
+      this.fetchContactDetailsLocation1();
+      this.fetchContactDetailsLocation2();
+      this.fetchContactDetailsLocation3();
+      this.fetchContactDetailsLocation4();
+  
+  }
+
+  // public fetchLocationDetails() {
+  //   if (this.router.url.includes('platte-ave')) {
   //     this.fetchContactDetailsLocation1();
-  //     this.mailSent = false;
-  //   } else if ( this.locationId === '2' ) {
+  //   } else if (this.router.url.includes('marquis-ave')) {
   //     this.fetchContactDetailsLocation2();
-  //     this.mailSent = false;
-  //   } else if ( this.locationId === '3' ) {
+  //   } else if (this.router.url.includes('lincoln-ave')) {
   //     this.fetchContactDetailsLocation3();
-  //   } else if ( this.locationId === '4' ) {
+  //   } else if (this.router.url.includes('belforest')) {
   //     this.fetchContactDetailsLocation4();
+  //   } else if (this.router.url.includes('fairhope')) {
+  //     this.fetchContactDetailsLocation5();
+  //   } else if (this.router.url.includes('robertsdale')) {
+  //     this.fetchContactDetailsLocation6();
   //   }
   // }
 
-  public fetchLocationDetails() {
-    if (this.router.url.includes('platt-ave')) {
-      this.fetchContactDetailsLocation1();
-    } else if (this.router.url.includes('marquis-ave')) {
-      this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('lincoln-ave')) {
-      this.fetchContactDetailsLocation3();
-    } else if (this.router.url.includes('belforest')) {
-      this.fetchContactDetailsLocation4();
-    } else if (this.router.url.includes('fairhope')) {
-      this.fetchContactDetailsLocation5();
-    } else if (this.router.url.includes('robertsdale')) {
-      this.fetchContactDetailsLocation6();
-    }
-  }
-
   public fetchContactDetailsLocation1() {
-    this.heading = `Self Storage of York - Platt Ave`;
+    this.heading1 = `Platte Ave`;
     this.locationId = '1'
-    this.contactDetails = contactsLocation1;
+    this.contactDetails1 = contactsLocation1;
     this.hoursDetails = hoursLocation1;
+    console.log(this.heading1 ,this.contactDetails1 )
+    
   }
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading = `Self Storage of York - Marquis Ave`;
-    this.contactDetails = contactsLocation2;
+    this.heading2 = `Marquis Ave`;
+    this.contactDetails2 = contactsLocation2;
     this.hoursDetails = hoursLocation2;
+    console.log(this.heading2 ,this.contactDetails2 )
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = `Self Storage of York - Lincoln Ave`;
+    this.heading3 = `Lincoln Ave`;
     this.locationId = '3'
-    this.contactDetails = contactsLocation3;
+    this.contactDetails3 = contactsLocation3;
     this.hoursDetails = hoursLocation3;
+    console.log(this.heading3 ,this.contactDetails3 )
   }
 
   public fetchContactDetailsLocation4() {

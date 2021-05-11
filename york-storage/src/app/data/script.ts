@@ -74,7 +74,7 @@ const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
 const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
 const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
-export const nameLocation1 = `Self Storage of York - Platt`;
+export const nameLocation1 = `Self Storage of York - Platte`;
 export const nameLocation2 = `Self Storage of York - Marquis`;
 export const nameLocation3 = `Self Storage of York - Lincoln`;
 export const nameLocation4 = `Self Storage of York - Belforest`;
@@ -82,7 +82,7 @@ export const nameLocation5 = `Self Storage of York - Fairhope`;
 export const nameLocation6 = `Self Storage of York - Robertsdale`;
 
 
-export const location1 = `platt-ave`;
+export const location1 = `platte-ave`;
 export const location2 = `marquis-ave`;
 export const location3 = `lincoln-ave`;
 export const location4 = `belforest`;
@@ -90,7 +90,7 @@ export const location5 = `lincoln-ave`;
 export const location6 = `robertsdale`;
 
 
-export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/platt-ave/storage-units`;
+export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/platte-ave/storage-units`;
 export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/marquis-ave/storage-units`;
 export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/lincoln-ave/storage-units`;
 export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/belforest/storage-units`;
@@ -180,9 +180,9 @@ export const addressLoaction6 = {
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-43.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platt-169.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platte-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platte-43.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-platte-169.jpg'
  ]
 
  export const imageLocation2 = [

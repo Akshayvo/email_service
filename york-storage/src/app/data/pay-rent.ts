@@ -13,19 +13,19 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: 'Platt Ave',
+    facility: 'Platte Ave',
     address: '1622 N Platte Ave York, NE 68467',
-    url: 'platt-ave/rent-sub/login'
+    url: 'rent-sub/login'
   },
   {
     facility: 'Marquis Ave',
     address: '115 Marquis Ave York, NE 68467',
-    url: 'marquis-ave/rent-sub/login'
+    url: 'rent-sub/login'
   },
   {
     facility: 'Lincoln Ave',
     address: '2700 N Lincoln Ave York, NE 68467',
-    url: 'lincoln-ave/rent-sub/login'
+    url: 'rent-sub/login'
   },
   // {
   //   facility: ' Foley',
@@ -61,9 +61,9 @@ export const tableData = [
 
 export const tableDataContactPage = [
   {
-    facility: 'Platt Ave',
+    facility: 'Platte Ave',
     address: '1622 N Platte Ave York, NE 68467',
-    url: 'platt-ave'
+    url: 'platte-ave'
   },
   {
     facility: 'Marquis Ave',

@@ -1,7 +1,7 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: '6 Convenient Locations',
+        label: '3 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -46,7 +46,7 @@ export const location1FeaturesHead = [
 ];
 export const location2FeaturesHead = [
     {
-        label: '6 Convenient Locations',
+        label: '3 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -65,7 +65,7 @@ export const location2FeaturesHead = [
 ];
 export const location3FeaturesHead = [
     {
-        label: '6 Convenient Locations',
+        label: '3 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -88,7 +88,7 @@ export const location3FeaturesHead = [
 
 export const location4FeaturesHead = [
     {
-        label: '6 Convenient Locations',
+        label: '3 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -111,7 +111,7 @@ export const location4FeaturesHead = [
 
 export const location5FeaturesHead = [
     {
-        label: '6 Convenient Locations',
+        label: '3 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -134,7 +134,7 @@ export const location5FeaturesHead = [
 
 export const location6FeaturesHead = [
     {
-        label: '6 Convenient Locations',
+        label: '3 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },

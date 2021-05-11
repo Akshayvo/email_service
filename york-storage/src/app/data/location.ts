@@ -129,7 +129,7 @@ export const tabs3 = [
     // },
 ];
 
-export const headingLocation1 = `Platt Ave`;
+export const headingLocation1 = `Platte Ave`;
 
 export const headingLocation2 = `Marquis Ave`;
 
@@ -143,7 +143,7 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Platt Ave`;
+export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Platte Ave`;
 
 export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Marquis Ave`;
 
@@ -155,7 +155,7 @@ export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit
 
 export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
 
-export const heading1 = `Self Storage of York - Platt Ave`;
+export const heading1 = `Self Storage of York - Platte Ave`;
 
 export const heading2 = `Self Storage of York - Marquis Ave`;
 
