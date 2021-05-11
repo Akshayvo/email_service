@@ -8,6 +8,7 @@ import { th } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { containsElement } from '@angular/animations/browser/src/render/shared';
+// import 'rxjs/add/operator/map';
 
 
 @Component({
@@ -20,8 +21,6 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
-  Description1: LstUnitTypes[];
-
   descriptionVR: string;
   monthlyRateVR: number;
   unitTypeIdVR: number;
@@ -53,6 +52,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   windowLocation: any;
   showSpecialData = [];
   facilityLocation: string;
+  Description: any;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -73,7 +73,6 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
     this.facilityLocation = this.dataSharingService.facilityLocation;
-    this.trimDescription();
     
   }
 
@@ -99,7 +98,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.dataSharingService.updateMyNavLink('viewRates', 'next', `${this.navTo}/${location}`);
     this.dataSharingService.updateMyNavLink('viewRates', 'prev', `${this.router.url}`);
     const myNavLinks = this.dataSharingService.getMyNavLinks('viewRates');
-    console.log('TCL: ViewRatesPageComponent -> navigate -> myNavLinks', myNavLinks);
+    // console.log('TCL: ViewRatesPageComponent -> navigate -> myNavLinks', myNavLinks);
     this.router.navigate([`wa/${this.facilityLocation}/${location}`]);
     this.dataSharingService.LstUnitTypes = unitData;
   }
@@ -139,7 +138,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.monthlyRateVR = monthlyRate;
       this.unitTypeIdVR = intUnitTypeID;
       this.curStage = 2;
-      console.log(description);
+      // console.log(description);
       }, err => {
       });
   }
@@ -153,9 +152,22 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     });
   }
 
-  public trimDescription() {
-    console.log(this.LstUnitTypes)
-  }
+  public testRegex(unitType) {
+    const {
+      Description,
+      UnitLength,
+      UnitWidth
+    } = unitType
+    if(Description === "RV Parking") {
+      this.Description = Description;
+       return this.Description; 
+    } else {
+      this.Description = `${UnitLength}x${UnitWidth}`;
+      return this.Description;
+    }
+  } 
+
+  
 
   public ngOnDestroy(): void {
     if (this.getDataSubscribe$ && this.getDataSubscribe$.closed) {
