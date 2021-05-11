@@ -4,6 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { contact, hours } from '../data/contact';
 import { featuresList, aboutUs, feature } from '../data/home';
+import { UaParserService } from '../services/ua-parser.service';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,8 @@ export class HomeComponent implements OnInit {
   hours: any;
   featuresList: any;
   aboutUs: any;
+  imageBaseUrl: any;
+  imagetype: any;
   feature: any;
   currentActive: any = 'HOME';
 
@@ -23,7 +26,8 @@ export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    private uaParserService: UaParserService,
   ) {
     this.meta.addTag({
       name: 'description',
@@ -31,6 +35,8 @@ export class HomeComponent implements OnInit {
       affordable units, perfect for you!`
     });
     this.titleService.setTitle('Mobile Self Storage Units in Ham Lake | Storage World Mobile');
+    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+    this.imageBaseUrl = this.uaParserService.baseUrl;
   }
 
   public navigate(location: any) {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { UaParserService } from '../services/ua-parser.service';
 import { galleryImages } from '../data/galleryImage';
 
 @Component({
@@ -7,12 +9,21 @@ import { galleryImages } from '../data/galleryImage';
   styleUrls: ['./photos.component.scss']
 })
 export class PhotosComponent implements OnInit {
+  name: string;
   selectedImage: any;
   galleryImages: any;
-  galleryData: any;
+  imageBaseUrl: any;
+  imagetype: any;
 
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private uaParserService: UaParserService,
+    ) {
+      this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
+      this.imageBaseUrl = this.uaParserService.baseUrl;
+    }
 
   ngOnInit() {
     this.fetchGallery();
@@ -20,7 +31,7 @@ export class PhotosComponent implements OnInit {
   }
 
   public fetchGallery() {
-      this.galleryImages = galleryImages;
+    this.galleryImages = galleryImages;
   }
 
   setSelectedImage(image: any) {

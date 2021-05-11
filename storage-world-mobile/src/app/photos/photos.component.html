@@ -1,21 +1,16 @@
 <div class="gallery-content">
   <div class="container px-0">
-    <div class="row">
-      <div class="col-lg-12">
-        <div id="selectedImageM" class="text-center">
-          <img *ngIf="selectedImage" src="{{selectedImage.url}}" width="100%">
-        </div>
-      </div>
-
-      <div class="col-lg-12">
-        <div class="data">
-          <div id="thumbnailsList">
-            <span *ngFor="let image of galleryImages; let i = index" class="m-1">
-                <img src="{{image.url}}" class="tn" height="auto" 
-                  data-toggle="image.url"   data-target="#selectedImageM"
-                    (click)=setSelectedImage(image)>
-            </span>
-          </div>
+    <div id="selectedImageM" class="text-center selectedImageM">
+      <img *ngIf="selectedImage" src="{{imageBaseUrl}}/{{selectedImage.url}}.{{imagetype}}" alt="{{selectedImage.alt}}" height="auto" width="100%">
+    </div>
+    <div class="">
+      <div class="data">
+        <div id="thumbnailsList" class="thumbnailsList">
+          <span *ngFor="let image of galleryImages" class="p-1">
+             <img src="{{imageBaseUrl}}/{{image.thumb}}.{{imagetype}}" alt="{{image.alt}}" class="tn" height="auto"
+                data-toggle="image.thumb"   data-target="#selectedImageM"
+                  (click)=setSelectedImage(image)>
+          </span>
         </div>
       </div>
     </div>

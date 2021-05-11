@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "storage-world-mobile"
+  "defaultProject": "storage-world-mobile",
+  "cli": {
+    "analytics": "2adaf71c-70d1-4edc-b31a-a876fd480bf7"
+  }
 }

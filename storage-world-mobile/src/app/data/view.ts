@@ -18,6 +18,6 @@ export const rate = [
     },
     {
         td1: '8\' X 16\' Portable Storage Unit',
-        td2: ' $150 a Month',
+        td2: ' $170 a Month',
     }
 ];
