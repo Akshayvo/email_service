@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "StorageWorld"
+  "defaultProject": "StorageWorld",
+  "cli": {
+    "analytics": "fb4b8647-913c-41ad-968d-2ac57d272bbd"
+  }
 }
