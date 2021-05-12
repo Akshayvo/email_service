@@ -9,16 +9,9 @@
     </h3>
     <div class="row py-2 my-2 unitDetail" *ngFor="let lstUnitType of LstUnitTypes">
       <div class="col-4  unitType text-center">
-        <div class="p-2" *ngIf="lstUnitType.IsClimateControlled">  
-          <i class="fas fa-thermometer-half"></i>
-          <div class=desktop-climate>Climate Control</div>
-        </div>
         <div class="p-2">
           <div class="p-2" class="custom-font" *ngIf="testRegex(lstUnitType)">
-            <!-- <div class="p-2" class="custom-font" > -->
             <strong>
-              <!-- {{lstUnitType.UnitLength}}X{{lstUnitType.UnitWidth}} -->
-              <!-- {{lstUnitType.Description | '/[xX].*|[\d]./g'}} -->
               {{Description}}
               </strong>
           </div>
@@ -31,7 +24,14 @@
           <div class="p-2" *ngIf="lstUnitType.IsAutomobile">
             Vehicle Storage
           </div>
+          <div class="p-2" *ngIf="lstUnitType.IsClimateControlled">
+            <span><i class="fas fa-thermometer-half"></i> Climate Control</span>
+          </div>
         </div>
+        <!-- <div class="p-2 ccIcon" *ngIf="lstUnitType.IsClimateControlled">  
+          <span><i class="fas fa-thermometer-half"></i> <span class=desktop-climate> Climate Control</span></span> -->
+          <!-- <div class=desktop-climate>Climate Control</div> -->
+        <!-- </div> -->
       </div>
       <div class="col-4 text-center ">  
         <div class="">
