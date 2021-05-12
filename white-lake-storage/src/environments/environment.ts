@@ -4,20 +4,20 @@
 
 export const environment = {
   production: true,
-  type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'michigan/whitehall', // state/city  **Remeber to update locationName in sitemap.xml as well
+  type: 0, // { API: 0, iframe: 1 }
+  locationName: "michigan/whitehall", // state/city  **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: true, reserve: false }, // { moveIn: true, reserve: true },
-  template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
-  cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
-  errorsMails: [ 'sanghmitra.v@codeparva.in' ],
-  senderEmail: 'errors@codeparva.in',
-  emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'White Lake Storage - Testing',
-  facilityName: 'White Lake Storage',
-  VERSION: require('../../package.json').version,
+  template: "darkTheme", // { darkTheme, lightTheme, withoutJumbotron}
+  cards: ["Visa", "Master Card", "Amex", "Discover", "test"],
+  errorsMails: ["sanghmitra.v@codeparva.in"],
+  senderEmail: "errors@codeparva.in",
+  emailBaseUrl: "https://emailsvc-ext.syrasoft.com/v1/email",
+  appId: "White Lake Storage - Testing",
+  facilityName: "White Lake Storage",
+  VERSION: require("../../package.json").version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://white-lake-storage-staging.netlify.app',
+  websiteUrl: "https://whitelakestorage.com",
   APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464
   // APIKey: `dzJ0OVc0SjYqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` //29466 White Lake
 };
