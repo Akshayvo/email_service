@@ -7,11 +7,27 @@
         </div>
 
         <div class="loader" *ngIf="gettingTenantData"></div>
-        <p class="text-center moveIn-text" *ngIf="navigateToMoveIn"> <b>This move-in is not complete until contacted by Access Self Storage, and provided a Gate Access Code.</b></p>
-
+        <p class="text-center moveIn-text" *ngIf="navigateToMoveIn"> <b>This move-in is not complete until contacted by Access Self Storage, and provided a Gate Access Code.</b>&nbsp;<br>
+        <b>If either of the following apply, please call or e-mail the office to rent a unit:</b>
+        <b>
+            <ol type="1" class="list-text">
+            <li>You are a current tenant, you will not be refunded the 2nd deposit if you rent online!</li>
+            <li>You qualify for a Military Discount, the discount will not apply if you rent online!</li>
+            </ol>
+        </b>
+        </p>
+        
         <form [formGroup]="reserveUnitForm" (ngSubmit)="onSubmit()" >
-         <div  class="row justify-content">
-             <div formGroupName="objTenant" class="col-lg-12 ">
+         <div class="row justify-content">
+             <div formGroupName="objTenant" class="col-lg-12">
+                <p class="text-center reserve-text" *ngIf="navigateToReserve">
+                    <b>If either of the following apply, please call or e-mail the office to reserve a unit:
+                        <ol type="1" class="list-text">
+                            <li>You are a current tenant, you will not be refunded the 2nd deposit if you rent online!</li>
+                            <li>You qualify for a Military Discount, the discount will not apply if you rent online!</li>
+                        </ol>
+                    </b>
+                </p>
                  <h2 class="pb-3  border-bottom border-dark">Tenant Information</h2>
 
                  <div class="row pt-3 ">

@@ -5,12 +5,18 @@
       <div class="row bg-light background-padding" *ngIf="showPaymentPageType === 0">       
         <div class="col-md-12">
           <h3 class="text-center mb-5">To setup Auto Pay, please contact the office!</h3>
+          <p class="text-center payment-text">Payments made on Delinquent Accounts after 5:00 p.m., WILL NOT BE UNLOCKED until the following business day!</p>
+          <p class="text-center"><p class="text-center">If you are not able to make a payment online, please call or email the office.</p>
+          <br>
             <router-outlet></router-outlet>
         </div>
       </div>
       <div class="row" *ngIf="showPaymentPageType === 1">
             <div class="col-md-12 mx-0"  >
               <h3 class="text-center mb-5">To setup Auto Pay, please contact the office!</h3>
+              <p class="text-center payment-text">Payments made on Delinquent Accounts after 5:00 p.m., WILL NOT BE UNLOCKED until the following business day!</p>
+              <p class="text-center">If you are not able to make a payment online, please call or email the office.</p>
+              <br>
         <app-tabs [tabs]='tabs' style="background-color: #f1f0ed;" ></app-tabs>
           </div>
       </div>
