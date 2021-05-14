@@ -1,7 +1,7 @@
 export const objSIMSetting = {
     objActionSetting: {
         blnAllowMoveIn: true,
-        blnAllowReservation: false
+        blnAllowReservation: false,
     },
     objPaymentSetting: {
         blnAllowACHPayments: true,
