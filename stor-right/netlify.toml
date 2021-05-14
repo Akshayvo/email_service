@@ -30,3 +30,7 @@
   from = "/*"
   to = "/index.html"
   status = 200
+[[redirects]]
+  from = "https://www.stor-right.com/reserve-unit"
+  to = "https://www.stor-right.com/view-rates"
+  status = 200
