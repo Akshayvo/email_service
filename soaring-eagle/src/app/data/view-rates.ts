@@ -20,6 +20,10 @@ export const th = [
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
   {
+    data: `Weekely Rate`,
+    state: objSIMSetting.objUnitSizesSetting.blnShowRate
+  },
+  {
     data: 'Deposit',
     state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   },
@@ -31,10 +35,10 @@ export const th = [
   //   data: `Move In`,
   //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
   // },
-  {
-    data: `Climate Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  },
+  // {
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
 ];
 
 
