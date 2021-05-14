@@ -12,12 +12,14 @@
 }
 
 table {
+  
   width: -webkit-fill-available;
 
   thead {
-    background: $secondary;
+    background-color: $secondary ;
     th {
       color: $white;
+      // background-color: $secondary;
       font-size: 1rem;
     }
   }

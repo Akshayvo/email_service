@@ -75,9 +75,9 @@ accessible 24 hours a day!`;
 export const feature = [
     {
         // tslint:disable-next-line:max-line-length
-        label: 'Convenient Location',
-        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg`,
-        alt: 'Icon art displaying a location pin'
+        label: 'Boat and Vehicle Storage',
+        path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/garage.svg`,
+        alt: 'Icon art displaying boat and motorcycle'
     },
     {
         // tslint:disable-next-line:max-line-length

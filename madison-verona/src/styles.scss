@@ -34,7 +34,7 @@ $primaryDark:#043511;
 
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
-$secondary: #1e4f2c;
+$secondary: black;
 
 $dark: #333;
 $light: #efefef;
@@ -87,8 +87,8 @@ body {
 }
 
 .btn-primary {
-  background-color: $secondary !important;
-  border-color: $secondary !important;
+  background-color: #199a3e !important;
+  border-color: #199a3e !important;
   color: $white !important;
   min-width: 200px;
 }
@@ -102,8 +102,8 @@ body {
 
 .btn-outline-primary {
   background-color: transparent;
-  border-color: $primaryDark !important;
-  border: 2px solid $primaryDark !important;
+  border-color: #199a3e !important;
+  border: 2px solid #199a3e !important;
   min-width: 200px;
   color: $white !important;
 }
