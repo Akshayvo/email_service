@@ -14,6 +14,7 @@
   padding-top: 94px;
   min-height: 88vh;
   margin-bottom: 50px;
+  text-align: center;
 
   .heading {
     h1 {
@@ -26,10 +27,14 @@
     }
   }
 
+  .discount{
+    text-align: center;
+    padding-top: 100px;
+  }
   .storage-content {
     padding: 50px;
     background-color: $light;
-    min-height: 650px;
+    min-height: 550px;
 
     ul {
       padding-left: 30px;
