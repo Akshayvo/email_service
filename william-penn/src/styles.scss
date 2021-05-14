@@ -34,11 +34,10 @@ $website-theme: mat-light-theme(
 //Basic color and font styles
 $primary: #ffffff;
 $primaryDark: #9b9b9b;
-
 // $primary: #FF9800;
 // $primaryDark: #EF6C00;
-$secondary: #ed1c24;
-$secondaryDark: #b91d22;
+$secondary: #73859d ;
+$secondaryDark: #3b4450 ;
 
 $dark: #333;
 $light: #efefef;
@@ -147,7 +146,7 @@ body {
 
 // Content Holder Styles
 .contentHolder {
-  padding-top: 110px;
+  padding-top: 185px;
   min-height: 96vh;
   margin-bottom: 50px;
 }

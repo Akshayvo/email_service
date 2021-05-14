@@ -25,11 +25,11 @@ export const th = [
     state: true,
   },
   {
-    data: `Rate`,
+    data: `Monthly Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate,
   },
   {
-    data: "deposit",
+    data: "Deposit",
     state: objSIMSetting.objUnitSizesSetting.blnShowDeposit,
   },
   {

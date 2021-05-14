@@ -25,36 +25,36 @@ export const featuresList = [
   },
 ];
 
-export const aboutUsAlt = `an open self storage unit revealing household belongings packed neatly on shelves`;
+export const aboutUsAlt = `a family photograph with eight family members standing in a living room smiling at the camera`;
 
 export const aboutUsHeading = `Self Storage Units in New Alexandria, PA`;
 
 export const aboutUs = [
   {
-    p: `William Penn Self Storage is New Alexandria’s newest self storage facility!
-        Our facility offers a large number of affordable storage units in both outdoor 
-        and climate controlled varieties. We provide a variety of unit sizes from our 
-        walk-in closet-sized 5-foot-by-5-foot units through our 10-foot-by-25 foot units
-        that are an ideal solution for multi-bedroom homes during a move or renovation. 
-        We are conveniently located on Hannastown Road a tenth of a mile south of the William Penn Highway. 
-        We serve New Alexandria, Greensburg, Murrysville, Latrobe and the surrounding communities.`,
+    p: `William Penn Self Storage is the greater Greensburg area’s newest self storage facility! Our facility
+    offers a large number of affordable storage units in both non-climate controlled and climate controlled
+    varieties. We provide a variety of unit sizes from our 5-foot-by-10-foot units through our 10-foot-by-30
+    foot units that are an ideal solution for multi-bedroom homes during a move or renovation. We are
+    conveniently located on Hannastown Road, a tenth of a mile south of the William Penn Highway (Route 22).
+    We serve New Alexandria, Greensburg, Murrysville, Saltsburg, Delmont, Latrobe, and the surrounding communities.`,
   },
   {
-    p: `Our brand new, family-owned, and operated self storage facility is built with all of the modern 
-        self storage conveniences in mind. We offer 24/7 access to all of our units, and our contactless 
-        rental process can be performed over the phone or online. Once you’re a tenant at William Penn Self Storage, 
-        you’ll have access to your account and payment options through our easy online tenant portal. 
-        Unlike some facilities, we also fully-paved to reduce dust build-up in your units.`,
+    p: `Our brand new, family-owned, and operated self storage facility is built with all of the modern self
+    storage conveniences in mind. We offer 24/7 access to all of our units, and our contactless rental process
+    can be performed over the phone or online. Once you’re a tenant at William Penn Self Storage, you’ll have
+    access to your account and payment options through our easy online tenant portal. Unlike some facilities,
+    we also feature a fully-paved parking area to reduce dust build-up in your units.`,
   },
   {
-    p: `Selecting a self storage is about more than just conveniences and amenities, which is why at William Penn Self Storage 
-        we go above and beyond to make your stay with us feel safe and secure. Our entire facility is well-lit and fully fenced 
-        with a pin-code accessible electronic gate. Security cameras are placed strategically around the facility, 
-        and our management team performs regular lot checks.`,
+    p: `Selecting a self storage is about more than just conveniences and amenities, which is why at William
+    Penn Self Storage we go above and beyond to make your stay with us feel safe and secure. Our entire
+    facility is well-lit and fully fenced with a pin-code accessible electronic gate. Security cameras are
+    placed strategically around the facility, and our management team performs regular lot checks.`,
   },
   {
-    p: `Take a moment to check out our unit rates and availability, then reserve your unit or perform a contactless 
-        rental right through our website! You can sign your lease electronically, and receive the access code to your new storage unit in minutes.`,
+    p: `Take a moment to check out our unit rates and availability, then reserve your unit or perform a
+    contactless rental right through our website! You can sign your lease electronically, and receive the
+    access code to your new storage unit in minutes. We hope to welcome you as a new tenant at William Penn Self Storage soon!`,
   },
 ];
 

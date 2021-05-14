@@ -134,7 +134,20 @@ export const apiRoutes = [
   },
   {
     path: `${environment.locationName}/reserve-unit`,
-    component: ReserveComponent,
+    component: ViewRatesComponent,
+    children: [
+      { path: "", component: ViewRatesPageComponent },
+      { path: "reserve", component: ReserveUnitFormComponent },
+      { path: "move-in", component: ReserveUnitFormComponent },
+      { path: "confirmation", component: ConfirmationDataComponent },
+      { path: "payReservationCharges", component: PayRentFormComponent },
+      { path: "payMoveInCharges", component: PayRentFormComponent },
+      {
+        path: "thank-you",
+        component: ThankYouComponent,
+        canActivate: [ThankYouGuard],
+      },
+    ],
   },
   { path: "contact-us", component: ContactComponent },
   { path: "unit-sizer", component: UnitSizerComponent },

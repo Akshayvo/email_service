@@ -26,11 +26,11 @@ export const faqContent = [
   },
   {
     question: "Q: What happens if I'm late making a payment?",
-    answer: `A: Your rent is due on the first day of each month (first and last month will be prorated). If payment is not received on first of the month, access to the property will be denied until payment is received. William Penn Self Storage provides a 24hour grace period before charging a late fee on the second day past the payment due date. The late fee is 10% of your unit cost per day delinquent starting on the second day past the payment due date. Self storage units that are delinquent for an extended period of time risk the unit belongings going to auction based on current state law. For additional details please reference your rental agreement.`,
+    answer: `A: Your rent is due on the first day of each month (first month will be prorated). If payment is not received on first of the month, access to the property will be denied until payment is received. William Penn Self Storage provides a 24 hour grace period before charging a late fee on the second day past the payment due date. The late fee is $1 per day delinquent starting on the second day past the payment due date. Self storage units that are delinquent for an extended period of time risk the unit belongings going to auction based on current state law. For additional details, please reference your rental agreement.`,
   },
   {
     question: "Q: Will homeowners or renters insurance cover storage units?",
-    answer: `A: Homeowners and renters insurance typically include off-premises coverage that covers belongings in a storage unit. Please consult with your insurance provider for specific details.`,
+    answer: `A: Homeowners and renters’ insurance typically include off-premises coverage that covers belongings in a storage unit. Please consult with your insurance provider for specific details.`,
   },
   {
     question: "Q: Am I required to purchase insurance on my storage unit?",
@@ -47,7 +47,7 @@ export const faqContent = [
   {
     question:
       "Q: Does William Penn Self Storage offer car, motorcycle, RV or boat storage solutions?",
-    answer: `A: Size depending, garage door openings are 9' wide x 7' tall and may be able to store your property. Property must be able to run and aside of minor maintenance your unit can not be used as a work shop to work on a car, etc.`,
+    answer: `A: Size depending, garage door openings are 9' wide x 7' tall and may be able to store your property. Property must be able to run and aside from minor maintenance, your unit can not be used as a work shop to work on a car, motorcycle, etc.`,
   },
   {
     question:
@@ -64,7 +64,7 @@ export const faqContent = [
   },
   {
     question: "Q: What should I do if I lost my access code or key?",
-    answer: `A: If you lose your access code or fear it has been compromised contact a member of our team for reset. You are responsible for providing the lock you put on your individual unit. Lock cutting can be performed for a $50 fee.`,
+    answer: `A: If you lose your access code or fear it has been compromised, contact a member of our team for reset. You are responsible for providing the lock you put on your individual unit.`,
   },
   {
     question: "Q: How much notice is required to move out?",
@@ -72,7 +72,7 @@ export const faqContent = [
   },
   {
     question: "Q: What do I need to move out?",
-    answer: `A: On your scheduled move out day make sure the unit is completely empty and broom swept, your lock has been removed and the facility manager has been notified. Your access code will terminate on the last day of your rental agreement.`,
+    answer: `A: On your scheduled move out day, make sure the unit is completely empty and broom swept, your lock has been removed, and the facility manager has been notified.`,
   },
   {
     question: "Q: How do I report maintenance issues?",
