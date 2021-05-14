@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "storage-plus"
+  "defaultProject": "storage-plus",
+  "cli": {
+    "analytics": "1c415d2d-0174-4a60-857e-d39aa60b33d8"
+  }
 }

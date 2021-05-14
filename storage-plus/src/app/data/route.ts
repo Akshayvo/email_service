@@ -55,31 +55,31 @@ const withoutTab = [
 
 const withTab = [
   { path: '', redirectTo: ' ', pathMatch: 'full'},
-      { path: 'rent-sub', component: RentSubComponent,
-        children: [
-          {path: '', redirectTo: 'login', pathMatch: 'full'},
-          {path: 'login', component: LoginComponent },
-          {path: 'forgotPassword', component: ForgotPasswordComponent },
-          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-          { path: 'verifyCode', component: VerifyCodeComponent },
-          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
-          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-          // canActivate: [VerifictionCodeGuard]
-        ]
-      },
-      { path: 'sign-up', component: SignUpComponent,
-        children: [
-          {path: '', redirectTo: 'login', pathMatch: 'full'},
-          {path: 'login', component: LoginComponent },
-          {path: 'forgotPassword', component: ForgotPasswordComponent },
-          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-          {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
-          { path: 'verifyCode', component: VerifyCodeComponent },
-          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-          // canActivate: [VerifictionCodeGuard]
-        ]
-      }
+  { path: 'rent-sub', component: RentSubComponent,
+    children: [
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent },
+      {path: 'forgotPassword', component: ForgotPasswordComponent },
+      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+      { path: 'verifyCode', component: VerifyCodeComponent },
+      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+      // canActivate: [VerifictionCodeGuard]
+    ]
+  },
+  { path: 'sign-up', component: SignUpComponent,
+    children: [
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent },
+      {path: 'forgotPassword', component: ForgotPasswordComponent },
+      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+      { path: 'verifyCode', component: VerifyCodeComponent },
+      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+      // canActivate: [VerifictionCodeGuard]
+    ]
+  }
 ];
 
 // const reservationForm = environment
