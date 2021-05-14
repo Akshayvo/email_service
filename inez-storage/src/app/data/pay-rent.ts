@@ -23,3 +23,15 @@ export const tableData = [
     url: 'beck-road-storage'
   }
 ];
+
+export const loginDetail = [
+  {
+      userName: `Email Address`,
+      password: `Full Phone Number (Minus Non-Numerical Characters)`,
+      example: {
+          code: 'Phone Number is 555-555-5555',
+          userName: 'jsmith@email.com',
+          password: '5555555555'
+      }
+  }
+];

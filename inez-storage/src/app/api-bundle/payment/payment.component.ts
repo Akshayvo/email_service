@@ -2,10 +2,10 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
-import { contactsLocation1, contactsLocation3 } from '../data/contact';
-import { tableHeader, tableData } from '../data/pay-rent';
+import { contactsLocation1, contactsLocation3 } from '../../data/contact';
+import { tableHeader, tableData } from '../../data/pay-rent';
 import { Router } from '@angular/router';
-import { DataSharingService } from '../api-bundle/services/data-sharing.service';
+import { DataSharingService } from '../../api-bundle/services/data-sharing.service';
 
 @Component({
   selector: 'app-payment',

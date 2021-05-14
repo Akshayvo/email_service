@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { tabs } from '../../data/tab';
+import { environment } from '../../../environments/environment';
 import { DataSharingService } from '../services/data-sharing.service';
 
 @Component({
@@ -12,6 +14,9 @@ export class PayRentComponent implements OnInit {
   contact: any;
   name: string;
   id: number;
+  tabs: any;
+  showPaymentPageType: number;
+
 
   constructor(
     private router: Router,
@@ -29,7 +34,14 @@ export class PayRentComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.showPaymentPageType = environment.signUpForAuotoPay;
     this.dataSharingService.paymentNavigation = this.activatedRoute.snapshot.url[1].path;
-    localStorage.setItem('paymentNavigationUrl', this.dataSharingService.paymentNavigation) ;
+    localStorage.setItem('paymentNavigationUrl', this.dataSharingService.paymentNavigation);
+    this.fetchContactDetails();
+  }
+
+  public fetchContactDetails() {
+    // this.contact = contact;
+    this.tabs = tabs;
   }
 }

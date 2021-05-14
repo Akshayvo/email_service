@@ -141,7 +141,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         CCAccountCVV2: [''],
         CCAccountBillingAddress: ['', Validators.required],
         CCAccountZIP: ['', Validators.required],
-        SignUpForAutoPay:  [],
+        // SignUpForAutoPay:  [],
         PaymentAmount: ['', Validators.required],
         PayType: this.formBuilder.group({
           PayTypeDescription: ['', Validators.required],
@@ -422,7 +422,7 @@ public navigateToPrevious() {
               CCExpirationYear: Tenant.CCExpirationYear,
               CCAccountBillingAddress: Tenant.CCBillingAddress,
               CCAccountZIP: Tenant.CCBillingZIP,
-              SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
+              // SignUpForAutoPay: Tenant.IsAutoPaymentsEnabled,
               // tslint:disable-next-line: max-line-length
               PaymentAmount: (this.navigateToMoveInPayment ? this.balance : (this.navigateToReserve ? this.TotalReserveAmount : this.totalMoveInAmount)),
             }
@@ -503,13 +503,13 @@ public navigateToPrevious() {
   makePayment(paymentData: any) {
     this.makePaymentForUnit = true;
 
-    if (this.toggleSignUp === true) {
-      if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
-      this.signUpAutoPay(this.signUp);
-    } else {
-      this.OptionOutOfAutoPay(this.signUp);
-    }
-    }
+    // if (this.toggleSignUp === true) {
+    //   if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
+    //   this.signUpAutoPay(this.signUp);
+    // } else {
+    //   this.OptionOutOfAutoPay(this.signUp);
+    // }
+    // }
 
     this.invalidPayment = null,
     this.makePaymentSubscribe$ = this.paymentService.makePayment(paymentData)

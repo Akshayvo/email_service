@@ -41,7 +41,6 @@ import { PayRentFormComponent } from './api-bundle/pay-rent-form/pay-rent-form.c
 import { VerifyCodeComponent } from './api-bundle/verify-code/verify-code.component';
 import { ResetPasswordComponent } from './api-bundle/reset-password/reset-password.component';
 import { LoginModalComponent } from './api-bundle/login-modal/login-modal.component';
-import { PaymentComponent } from './payment/payment.component';
 import { MakePaymentComponent } from './iframe-bundle/make-payment/make-payment.component';
 import { StorageUnitComponent } from './iframe-bundle/storage-unit/storage-unit.component';
 import { ReserveUnitComponent } from './iframe-bundle/reserve-unit/reserve-unit.component';
@@ -61,6 +60,11 @@ import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ReserveComponent } from './api-bundle/reserve/reserve.component';
 import { WinnebagoComponent } from './winnebago/winnebago.component';
 import { ScriptHackComponent } from './script-hack/script-hack.component';
+import { PaymentComponent } from './api-bundle/payment/payment.component';
+import { RentSubComponent } from './api-bundle/rent-sub/rent-sub.component';
+import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
+import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
+
 
 @NgModule({
   declarations: [
@@ -106,7 +110,10 @@ import { ScriptHackComponent } from './script-hack/script-hack.component';
     ViewRatesComponent,
     ReserveComponent,
     WinnebagoComponent,
-    ScriptHackComponent
+    ScriptHackComponent,
+    SignUpComponent,
+    RentSubComponent,
+    AutoPayComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

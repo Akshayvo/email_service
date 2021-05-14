@@ -1,20 +1,20 @@
 export const contactsLocation1 = [
     {
         id: 0,
-        label: 'Address:',
+        label: 'Address: ',
         data: '2149 Garcitas Creek Rd, Inez, TX 77968',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
         id: 1,
-        label: 'Phone:',
+        label: 'Phone: ',
         data: '(361) 235-2109',
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:3612352109'
     },
     {
         id: 2,
-        label: 'Email:',
+        label: 'Email: ',
         data: 'inezstorage@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:inezstorage@gmail.com'

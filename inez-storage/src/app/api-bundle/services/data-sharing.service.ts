@@ -15,7 +15,11 @@ export class DataSharingService {
   //   loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // demo north 28464
   // };
 
+  isDataSaved: boolean;
+  isDataUpdated: boolean;
 
+
+  signUpForAutoPay: boolean;
   verificationCode: string;
   changePassword: boolean;
   navigationTo: string;
@@ -31,6 +35,16 @@ export class DataSharingService {
 
 
   apiKey = '';
+
+  cardDetailsObject = {
+    CCNumber: '',
+    CCBillingAccountName: '',
+    CCExpirationMonth: '',
+    CCExpirationYear: '',
+    CCBillingAddress: '',
+    CCBillingZIP: '',
+  };
+
 
   MoveInData = {
     Description: '',
