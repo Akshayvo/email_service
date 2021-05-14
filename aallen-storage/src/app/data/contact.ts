@@ -1,3 +1,12 @@
+function formatPhoneNumber(phoneNumberString) {
+    let cleaned = ('' + phoneNumberString).replace(/\D/g, '');
+    let match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
+    if (match) {
+      return '(' + match[1] + ') ' + match[2] + '-' + match[3];
+    }
+    return null;
+  }
+
 export const contact = [
     {
         id: 0,
@@ -16,7 +25,7 @@ export const contact = [
     {
         id: 2,
         label: 'Phone:',
-        data: '(701) 232-9474',
+        data: formatPhoneNumber('7012329474'),
         class: 'fas fa-phone mx-2 iconColor',
         redirect: 'tel:7012329474',
     }
