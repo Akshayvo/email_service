@@ -1,0 +1,29 @@
+@import "../../styles.scss";
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+.community-holder{
+    padding-top: 94px;
+    min-height: 88vh;
+    margin-bottom: 50px;
+    text-align: center;
+  
+    .heading {
+      h1 {
+        font-size: 2rem;
+      }
+  
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+    .storage-content {
+        padding: 300px;
+        background-color: $light;
+        min-height: 650px;
+    
+        ul {
+          padding-left: 30px;
+        }
+      }
+}

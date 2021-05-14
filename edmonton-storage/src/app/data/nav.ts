@@ -51,6 +51,11 @@ export const navLinks = [
         type: 'link'
     },
     {
+        label: 'Community',
+        path: `${environment.locationName}/community`,
+        type: 'link'
+    },
+    {
         label: 'Contact Us',
         path: '/contact-us',
         type: 'link'

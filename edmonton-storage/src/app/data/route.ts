@@ -41,6 +41,7 @@ import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { ThankYouGuard } from '../thank-you.guard';
 import { FaqComponent } from '../faq/faq.component';
 import { PromotionsPageComponent } from '../promotions-page/promotions-page.component';
+import { CommunityComponent } from '../community/community.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -91,6 +92,7 @@ export const apiRoutes = [
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: `${environment.locationName}/frequently-asked-questions`, component: FaqComponent},
     { path: `${environment.locationName}/promotions`, component: PromotionsPageComponent },
+    { path: `${environment.locationName}/community`, component: CommunityComponent },
     { path: `${environment.locationName}/guardian`,
       component: LocationComponent,
       children: [
