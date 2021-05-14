@@ -8,6 +8,7 @@ location1PayrentPageTitle, location1PayrentPageContent,
 location2PayrentPageTitle, location2PayrentPageContent,
 location1ContactPageTitle, location1ContactPageContent,
 location2ContactPageTitle, location2ContactPageContent,
+promotionsPageTitle,promotionsPageContent
  } from '../data/title';
 import { featuresList } from '../data/home';
 import { contactsLocation1, hoursLocation1, 
@@ -646,6 +647,60 @@ export const twitterStorageTipsPage = [
   {
     name: `twitter:description`,
     content: storageTipsContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation1[0]
+  },
+];
+
+export const ogPromotionsPage = [
+  {
+    property: `og:title`,
+    content: promotionsPageTitle
+  },
+  {
+    property: `og:description`,
+    content: promotionsPageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/promotions`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation1[1]
+  },
+];
+
+export const twitterPromotionsPage = [
+  {
+    name: `twitter:title`,
+    content: `@${promotionsPageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: promotionsPageContent
   },
   {
     name: `twitter:site`,

@@ -1,31 +1,32 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { storagePoints, storageTips } from '../data/storage-tips';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { CanonicalService } from '../services/canonical.service';
-import { ogStorageTipsPage, twitterStorageTipsPage } from '../data/script';
+import { ogPromotionsPage, twitterPromotionsPage } from '../data/script';
 import { promotionsPageTitle, promotionsPageContent } from '../data/title';
-
+import { Router } from '@angular/router';
+import { environment } from '../../environments/environment';
 @Component({
   selector: 'app-promotions-page',
   templateUrl: './promotions-page.component.html',
   styleUrls: ['./promotions-page.component.scss']
 })
 export class PromotionsPageComponent implements OnInit {
+  
 
-  storagePoints: any;
-  storageTips: any;
-  currentActive: any = 'Storage Tips';
-  breadcrumbActive: any = 'Storage Tips';
+  
+  currentActive: any = 'Promotions';
+  breadcrumbActive: any = 'Promotions';
   og: any;
   twitter: any;
-  storageTipsTitle: string;
-  storageTipsContent: string;
+  promotionsPageTitle: string;
+  promotionsPageContent: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
     private meta: Meta,
     private titleService: Title,
+    private router: Router,
     private canonical: CanonicalService
     ) {
       this.canonical.create();
@@ -47,36 +48,38 @@ export class PromotionsPageComponent implements OnInit {
       });
     this.meta.addTag({
       name: 'description',
-      content: `${this.storageTipsContent}`
+      content: `${this.promotionsPageContent}`
     });
-    this.titleService.setTitle(`${this.storageTipsTitle}`);
+    this.titleService.setTitle(`${this.promotionsPageTitle}`);
   }
 
   ngOnInit() {
-    this.fetchstoragePoints();
-    this.fetchstorageTips();
     window.scrollTo(0, 0);
   }
 
   public fetchOg() {
-    this.og = ogStorageTipsPage;
+    this.og = ogPromotionsPage;
 }
 
 public fetchTwitter() {
-    this.twitter = twitterStorageTipsPage;
+    this.twitter = twitterPromotionsPage;
 }
 
 public fetchMetaData() {
-  this.storageTipsTitle = promotionsPageTitle;
-  this.storageTipsContent = promotionsPageContent;
+  this.promotionsPageTitle = promotionsPageTitle;
+  this.promotionsPageContent = promotionsPageContent;
 }
 
+public navigateToStorageUnits1() {
+    this.router.navigate([`${environment.locationName}/guardian/storage-units`],
+          );
+        }
+    
+    
+public navigateToStorageUnits2() {
+  this.router.navigate([`${environment.locationName}/access-mini/storage-units`],
+);
+      }
+ 
 
-  public fetchstoragePoints() {
-    this.storagePoints = storagePoints;
-  }
-
-  public fetchstorageTips() {
-    this.storageTips = storageTips;
-  }
 }
