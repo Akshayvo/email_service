@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "181-storage"
+  "defaultProject": "181-storage",
+  "cli": {
+    "analytics": "73ed06dc-8b1d-425f-9fc3-e7fb0930e501"
+  }
 }
