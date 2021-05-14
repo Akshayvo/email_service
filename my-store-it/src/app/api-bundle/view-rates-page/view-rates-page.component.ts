@@ -70,7 +70,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
-    // this.getData();
+    this.getData();
     this.fetchThData(); 
     this.fetchStaticViewRates();   
     this.state = script.state;
@@ -88,6 +88,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   public fetchStaticViewRates() {
     this.ViewRatesData = staticViewRates
   }
+
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);
     this.router.navigate([`${environment.locationName}/${location}`]);
@@ -136,13 +137,13 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       });
   }
 
-  // getData() {
-  // this.getDataSubscribe$ = this.fetchDataService.getData()
-  //   .subscribe(unitTypesResponse => {
-  //     this.showTable =  true;
-  //     this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
-  //   });
-  // }
+  getData() {
+  this.getDataSubscribe$ = this.fetchDataService.getData()
+    .subscribe(unitTypesResponse => {
+      this.showTable =  true;
+      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+    });
+  }
 
   public ngOnDestroy(): void {
     if (this.getDataSubscribe$ && this.getDataSubscribe$.closed) {
