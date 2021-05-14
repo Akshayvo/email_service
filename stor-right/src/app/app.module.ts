@@ -101,7 +101,7 @@ import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
     CommonModule,
     NgtUniversalModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    Angulartics2Module.forRoot(),
+    Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
