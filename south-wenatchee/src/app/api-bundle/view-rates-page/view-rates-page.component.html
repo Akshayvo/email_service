@@ -36,8 +36,9 @@
       <div class="col-4 text-center ">  
         <div class="">
           <div class=" text-center ">
-              <p >Rate</p>
-              <div class="custom-font"><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</strong></div>
+              <p >Daily Rate</p>
+              <div class="custom-font"><strong>
+                <span *ngIf="lstUnitType.MonthlyRate != null || lstUnitType.DailyRate != null">$</span>{{lstUnitType.MonthlyRate || lstUnitType.DailyRate}}</strong></div>
           </div>
           <div class="text-center" *ngIf="lstUnitType.ReservationFee != null">
             <p>Reservation Charges</p>

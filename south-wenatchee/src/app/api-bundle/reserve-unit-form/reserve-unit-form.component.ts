@@ -485,9 +485,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
         }
 
-
-        this.dataSharingService.LstUnitTypes.ReservationFee = this.ReservationFee;
-        this.dataSharingService.LstUnitTypes.ReservationFeeTax = this.ReservationFeeTax;
+        this.dataSharingService.LstUnitTypes.ReservationFee = 0;
+        this.dataSharingService.LstUnitTypes.ReservationFeeTax = 0;
+        // this.dataSharingService.LstUnitTypes.ReservationFee = this.ReservationFee;
+        // this.dataSharingService.LstUnitTypes.ReservationFeeTax = this.ReservationFeeTax;
 
         if (!serviceDescriptionValue && !serviceMonthlyValue) {
           this.reserveUnitForm.patchValue({

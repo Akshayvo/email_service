@@ -158,12 +158,12 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       UnitLength,
       UnitWidth
     } = unitType
-    if(Description === "RV Parking") {
-      this.Description = Description;
-       return this.Description; 
-    } else {
+    if (!!UnitLength && !!UnitWidth && UnitLength > 0 && UnitWidth > 0 ) {
       this.Description = `${UnitLength}x${UnitWidth}`;
       return this.Description;
+    } else {
+      this.Description = Description;
+      return Description;
     }
   } 
 

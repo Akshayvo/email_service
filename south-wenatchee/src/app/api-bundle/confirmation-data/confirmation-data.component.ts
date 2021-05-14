@@ -208,11 +208,11 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           }
         } else {
           if (this.navigateToReserve) {
-            if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
-              this.router.navigate([`${this.navTo}/payReservationCharges`]);
-            } else {
+            // if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
+            //   this.router.navigate([`${this.navTo}/payReservationCharges`]);
+            // } else {
               this.makeAReservation(this.MoveIn);
-            }
+            // }
           }
         }
       });
@@ -348,11 +348,11 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
               this.moveIn(this.MoveIn);
             }
           } else {
-            if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
-              this.router.navigate([`${this.navTo}/payReservationCharges`]);
-             } else {
+            // if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
+            //   this.router.navigate([`${this.navTo}/payReservationCharges`]);
+            //  } else {
                this.makeAReservation(this.MoveIn);
-             }
+            //  }
           }
         } else {
           this.updateTenant(this.tenantData);
@@ -373,11 +373,11 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
                 this.moveIn(this.MoveIn);
               }
             } else {
-              if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
-                this.router.navigate([`${this.navTo}/payReservationCharges`]);
-               } else {
+              // if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
+              //   this.router.navigate([`${this.navTo}/payReservationCharges`]);
+              //  } else {
                  this.makeAReservation(this.MoveIn);
-               }
+              //  }
             }
           }
         } else {
@@ -386,18 +386,18 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           if (this.navigateToMoveIn === true) {
             if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
               this.dataSharingService.addingTenant = true;
-              this.router.navigate([`${this.navTo}//payMoveInCharges`]);
+              this.router.navigate([`${this.navTo}/payMoveInCharges`]);
             } else {
               this.addTenant(this.tenantData);
             }
           } else {
-            if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
-              this.dataSharingService.addingTenant = true;
-              this.dataSharingService.addingTenant = true;
-              this.router.navigate([`${this.navTo}/payReservationCharges`]);
-             } else {
+            // if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
+            //   this.dataSharingService.addingTenant = true;
+            //   this.dataSharingService.addingTenant = true;
+            //   this.router.navigate([`${this.navTo}/payReservationCharges`]);
+            //  } else {
               this.addTenant(this.tenantData);
-            }
+            // }
           }
         }
         }
