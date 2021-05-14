@@ -29,8 +29,25 @@ export const navLinks = [
     //     type: 'link'
     // },
     {
-        label: 'Storage Tips',
-        path: `${environment.locationName}/storage-tips`,
+        label: 'Storage Help',
+        type: 'dropdown',
+        path: '/help',
+        sublinks: [
+            {
+                id: '1',
+                label: 'Storage Tips',
+                path: `${environment.locationName}/storage-tips`,
+              },
+            {
+                id: '2',
+                label: 'FAQ',
+                path: `${environment.locationName}/frequently-asked-questions`,
+            },
+        ]
+    },
+    {
+        label: 'Promotions',
+        path: `${environment.locationName}/promotions`,
         type: 'link'
     },
     {

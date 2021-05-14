@@ -1,5 +1,5 @@
 <div id="accordion">
-  <div class="card" *ngFor="let storage of storageTipAccordion">
+  <div class="card" *ngFor="let storage of accordions">
       <div class="card-header">
           <div class="card-header-before-collapse  p-3" [ngClass]="storage?.id != 1 && 'collapsed'"  data-toggle="collapse" [attr.data-target]="'#collapseOne'+storage?.id" aria-expanded="true">
               {{storage.label}}                 
@@ -13,5 +13,30 @@
               </li>
           </ul>
       </div>
-  </div>
+      
+  </div><br><br>
+  
 </div>
+
+<div id="accordion" *ngIf= 'url.includes("alberta/frequently-asked-questions")'>
+<h2 >Pricing & Discounts</h2><br><br>
+      <div class="card" *ngFor="let storage of accordions1">
+        <div class="card-header" >
+            <div class="card-header-before-collapse  p-3" [ngClass]="storage?.id != 1 && 'collapsed'"  data-toggle="collapse" [attr.data-target]="'#collapseOne'+storage?.id" aria-expanded="true">
+                {{storage.label}}                 
+            </div>  
+        </div>
+  
+        <div  [id]="'collapseOne'+storage?.id"  aria-labelledby="collapseOne" data-parent="#accordion" class="collapse" [ngClass]="storage?.id == 1 && 'show'">
+            <ul class="card-body">
+                <li class="py-1 text-justify" *ngFor="let contents of storage.contents">
+                {{contents.data}}
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+

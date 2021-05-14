@@ -6,14 +6,14 @@ export const featuresHead = [
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: 'Online Reservation & Bill Pay',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
-        alt: 'Icon art displaying a screen with cursor'
+        label: 'Affordable Self Storage Rates',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        alt: 'Icon of a hand holding money'
     },
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: 'Well-Lit Facility',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+        alt: 'Icon of an illuminated light'
     },
     {
         label: 'Stellar Customer Service',

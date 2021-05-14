@@ -34,6 +34,8 @@ export const privacyPolicyPageContent = `This page contains this website's priva
 export const faqPageTitle = `Frequently Asked Questions | Edmonton Storage`;
 export const faqPagecontent = `Learn about our services and facilities with our frequently asked question page. Still have questions? Give us a call today!`;
 
+export const promotionsPageTitle = `Frequently Asked Questions | Edmonton Storage`;
+export const promotionsPageContent = `Learn about our services and facilities with our frequently asked question page. Still have questions? Give us a call today!`;
 
 
 export const location1PayrentPageTitle = ``;

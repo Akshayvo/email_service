@@ -13,7 +13,7 @@ export class FaqComponent implements OnInit {
   faqPageTitle: any;
   script: any;
   faqHeading: string;
-  faq: any;
+  faqdata:any;
 
   constructor(
     private titleService: Title,
@@ -46,6 +46,6 @@ export class FaqComponent implements OnInit {
   }
 
   public fetchFaqData() {
-    this.faq = faq;
+    this.faqdata = faq;
   }
 }
