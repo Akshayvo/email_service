@@ -52,7 +52,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   windowLocation: any;
   showSpecialData = [];
   facilityLocation: string;
-  Description: any;
+  // Description: any;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -148,24 +148,23 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
-      
     });
   }
 
-  public testRegex(unitType) {
-    const {
-      Description,
-      UnitLength,
-      UnitWidth
-    } = unitType
-    if (!!UnitLength && !!UnitWidth && UnitLength > 0 && UnitWidth > 0 ) {
-      this.Description = `${UnitLength}x${UnitWidth}`;
-      return this.Description;
-    } else {
-      this.Description = Description;
-      return Description;
-    }
-  } 
+  // public testRegex(unitType) {
+  //   const {
+  //     Description,
+  //     UnitLength,
+  //     UnitWidth
+  //   } = unitType
+  //   if (!!UnitLength && !!UnitWidth && UnitLength > 0 && UnitWidth > 0 ) {
+  //     this.Description = `${UnitLength}x${UnitWidth}`;
+  //     return this.Description;
+  //   } else {
+  //     this.Description = Description;
+  //     return Description;
+  //   }
+  // } 
 
   
 
