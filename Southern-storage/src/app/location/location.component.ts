@@ -109,7 +109,7 @@ export class LocationComponent implements OnInit {
     } else if ( this.id === 2) {
       this.router.navigate(['/pay-rent/barton']);
     }
-    else if ( this.id === 2) {
+    else if ( this.id === 3) {
       this.router.navigate(['/pay-rent/wade']);
     }
    }
