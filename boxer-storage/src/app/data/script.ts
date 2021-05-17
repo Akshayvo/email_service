@@ -34,7 +34,8 @@ location7ContactPageTitle, location7ContactPageContent,
 location8ContactPageTitle, location8ContactPageContent,
 location9ContactPageTitle, location9ContactPageContent,
 location10ContactPageTitle, location10ContactPageContent,
-location11ContactPageTitle, location11ContactPageContent, } from '../data/title';
+location11ContactPageTitle, location11ContactPageContent,
+faqPageTitle, faqPageContent } from '../data/title';
 import { featuresList } from '../data/home';
 import { contactsLocation1, hoursLocation1, 
   contactsLocation2, hoursLocation2, 
@@ -2379,6 +2380,60 @@ export const ogStorageTipsPage = [
   },
 ];
 
+export const ogFaqPage = [
+  {
+    property: `og:title`,
+    content: faqPageTitle
+  },
+  {
+    property: `og:description`,
+    content: faqPageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/frequently-asked-questions`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation1[1]
+  },
+];
+
+
+export const twitterFaqPage = [
+  {
+    name: `twitter:title`,
+    content: `@${faqPageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: faqPageContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation1[0]
+  },
+];
 export const twitterStorageTipsPage = [
   {
     name: `twitter:title`,

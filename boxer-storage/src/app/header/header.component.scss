@@ -23,10 +23,13 @@ a {
   cursor: pointer;
   color: $white;
 }
-// .dropdown:hover .dropdown-menu{
-//   display: block;
-// }
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
 
+.dropdown-menu{
+display:none;
+}
 .contact-header {
   display: inline;
 

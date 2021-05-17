@@ -59,7 +59,7 @@ export const privacyPolicyPageTitle = `Privacy Policy | Boxer Storage`;
 export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
 
 export const faqPageTitle = `Frequently Asked Questions | Boxer Storage`;
-export const faqPagecontent = `Have questions about the services our 12 self storage facilities provide? Take a look at our frequently asked questions, or you can give our office a call!`;
+export const faqPageContent = `Have questions about the services our 12 self storage facilities provide? Take a look at our frequently asked questions, or you can give our office a call!`;
 
 
 

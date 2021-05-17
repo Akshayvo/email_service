@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
-import { tabs,tabs1 } from '../../data/tab';
+import { tabs } from '../../data/tab';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
 import { Meta } from '@angular/platform-browser';
@@ -158,8 +158,7 @@ public fetchTwitter() {
 
   public fetchContactDetails() {
     // this.contact = contact;
-    if (this.router.url.includes('m45')){this.tabs = tabs;}
-    else{this.tabs = tabs1;}
+    this.tabs = tabs;
     
   }
 }
