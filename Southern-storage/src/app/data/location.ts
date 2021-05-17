@@ -189,8 +189,7 @@ export const unitSizerWade = [
         ],
     },
     {
-        text: '10\' x 20\' Storage Unit',
-        alt: '10\' x 20\' Storage Unit Graphic ',
+        size: '10\' x 20\' General Storage',
         img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
         data: `This unit is approximately 200 sq feet of space that can hold the contents of about five rooms.
         `,

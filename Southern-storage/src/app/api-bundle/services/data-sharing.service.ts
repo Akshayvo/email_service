@@ -32,6 +32,7 @@ locationAPIKey = {
   loc2: 'dzJ0OVcwSjcqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // Rocky Creek: 29074
   loc3: 'dzJ0OVcwSjkqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // Barton ID: 29090
   loc4: 'dzJ0OVc0SjYqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // Wade ID: 29464
+  // loc4: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O'
 };
 
   // locationAPIKey = {
