@@ -9,7 +9,6 @@ export const contactsHomePage = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'accounts@storageplusbaldwin.com',
         data: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`accounts@storageplusbaldwin.com`'
@@ -45,7 +44,6 @@ export const contactsLocation1 = [
     {
         id: 2,
         label: 'Email: ',
-        email: 'accounts@storageplusbaldwin.com',
         data: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`accounts@storageplusbaldwin.com`'
@@ -88,7 +86,6 @@ export const contactsLocation2 = [
         id: 2,
         label: 'Email: ',
         data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`accounts@storageplusbaldwin.com`'
     },
@@ -127,7 +124,6 @@ export const contactsLocation3 = [
         id: 2,
         label: 'Email: ',
         data: 'accounts@storageplusbaldwin.com',
-        email: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:`accounts@storageplusbaldwin.com`'
     },

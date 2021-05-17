@@ -101,6 +101,8 @@ export class PaymentComponent implements OnInit {
       this.dataupdate();
     });
   }
+  
+
 
   public fetchOg() {
       this.og = ogPayRentPage;

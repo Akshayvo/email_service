@@ -42,44 +42,44 @@ import { ThankYouGuard } from '../thank-you.guard';
 import { FaqComponent } from '../faq/faq.component';
 
 const withoutTab = [
-  {path: '', redirectTo: 'login', pathMatch: 'full'},
-        {path: 'login', component: LoginComponent },
-        {path: 'forgotPassword', component: ForgotPasswordComponent },
-        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-        {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-        { path: 'verifyCode', component: VerifyCodeComponent },
-        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
-        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-        // canActivate: [VerifictionCodeGuard]
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
+  { path: 'login', component: LoginComponent },
+  { path: 'forgotPassword', component: ForgotPasswordComponent },
+  { path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+  { path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+  { path: 'verifyCode', component: VerifyCodeComponent },
+  { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+  { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+  // canActivate: [VerifictionCodeGuard]
 ];
 
 const withTab = [
   { path: '', redirectTo: ' ', pathMatch: 'full'},
-      { path: 'rent-sub', component: RentSubComponent,
-        children: [
-          {path: '', redirectTo: 'login', pathMatch: 'full'},
-          {path: 'login', component: LoginComponent },
-          {path: 'forgotPassword', component: ForgotPasswordComponent },
-          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-          {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-          { path: 'verifyCode', component: VerifyCodeComponent },
-          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
-          { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
-          // canActivate: [VerifictionCodeGuard]
-        ]
-      },
-      { path: 'sign-up', component: SignUpComponent,
-        children: [
-          {path: '', redirectTo: 'login', pathMatch: 'full'},
-          {path: 'login', component: LoginComponent },
-          {path: 'forgotPassword', component: ForgotPasswordComponent },
-          {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-          {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
-          { path: 'verifyCode', component: VerifyCodeComponent },
-          { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-          // canActivate: [VerifictionCodeGuard]
-        ]
-      }
+  { path: 'rent-sub', component: RentSubComponent,
+    children: [
+      { path: '', redirectTo: 'login', pathMatch: 'full'},
+      { path: 'login', component: LoginComponent },
+      { path: 'forgotPassword', component: ForgotPasswordComponent },
+      { path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      { path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+      { path: 'verifyCode', component: VerifyCodeComponent },
+      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]},
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+      // canActivate: [VerifictionCodeGuard]
+    ]
+  },
+  { path: 'sign-up', component: SignUpComponent,
+    children: [
+      // { path: '', redirectTo: 'login', pathMatch: 'full'},
+      { path: 'login', component: LoginComponent },
+      { path: 'forgotPassword', component: ForgotPasswordComponent },
+      { path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      { path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+      { path: 'verifyCode', component: VerifyCodeComponent },
+      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+      // canActivate: [VerifictionCodeGuard]
+    ]
+  }
 ];
 
 // const reservationForm = environment
@@ -326,30 +326,6 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/belforest', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/fairhope', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/robertsdale', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
@@ -362,18 +338,6 @@ export const apiRoutes = [
   },
   {
     path: 'pay-rent/location-3', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/belforest', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/fairhope', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/robertsdale', component: PayRentComponent,
     children: childroute
   },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
@@ -425,39 +389,6 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/belforest`,
-    component: LocationComponent,
-    children: [
-      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-      { path: 'storage-units', component: StorageUnitComponent },
-      { path: 'unit-sizer', component: UnitSizerComponent },
-      { path: 'reserve-unit', component: ReserveUnitComponent },
-      { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
-    ]
-  },
-  { path: `${environment.locationName}/fairhope`,
-    component: LocationComponent,
-    children: [
-      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-      { path: 'storage-units', component: StorageUnitComponent },
-      { path: 'unit-sizer', component: UnitSizerComponent },
-      { path: 'reserve-unit', component: ReserveUnitComponent },
-      { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
-    ]
-  },
-  { path: `${environment.locationName}/robertsdale`,
-    component: LocationComponent,
-    children: [
-      {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
-      { path: 'storage-units', component: StorageUnitComponent },
-      { path: 'unit-sizer', component: UnitSizerComponent },
-      { path: 'reserve-unit', component: ReserveUnitComponent },
-      { path: 'about', component: AboutUsComponent },
-      { path: 'directions', component: DirectionsComponent },
-    ]
-  },
   { path: 'review/location-1', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
@@ -475,30 +406,6 @@ export const iFrameRoutes = [
     }
   },
   { path: 'review/location-3', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/belforest', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/fairhope', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/robertsdale', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
