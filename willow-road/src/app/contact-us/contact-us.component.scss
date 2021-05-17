@@ -35,6 +35,18 @@
     }
   }
 
+  .display-contact {
+    display: flex;
+  }
+
+  h5 {
+    line-height: 1.5rem;
+  }
+
+  h6 {
+    margin-bottom: 0.75rem;
+  }
+
   .form-control {
     font-size: 0.9em;
   }
@@ -114,4 +126,9 @@
   .contentHolder {
     padding-top: 200px;
   } 
+
+  .contact-data {
+    padding: 1.5rem !important;
+  }
+
 }

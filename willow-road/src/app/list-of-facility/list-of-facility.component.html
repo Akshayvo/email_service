@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">          
         <div class="col-lg-5">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4943.61418224883!2d-88.462126092238!3d42.54487495232039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ab3a3221a80407e!2sWillow%20Road%20Self%20Storage!5e0!3m2!1sen!2sus!4v1614546392248!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4943.61418224883!2d-88.462126092238!3d42.54487495232039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ab3a3221a80407e!2sWillow%20Road%20Self%20Storage!5e0!3m2!1sen!2sus!4v1614546392248!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
         </div>
         <div class="col-lg-4  pt-3">
           <h2>Willow Rd Location</h2>
@@ -11,7 +11,7 @@
             <div *ngFor="let contact of contactsLocation1" class="contact-label">
                 <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
               <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
-                <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
+                <a [href]="contact?.redirect" rel="noopener" target="_blank" rel="noopener">&nbsp;
                   <h3>{{contact.data}}</h3>
                 </a>
               </div>
@@ -40,14 +40,14 @@
       <div class="container">
         <div class="row">          
           <div class="col-lg-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6983.525321858021!2d-88.41112575414292!3d42.614487144392754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88058bf99109d65f%3A0x53718678f51b0bb4!2s2508%20Vista%20Dr%2C%20Lake%20Geneva%2C%20WI%2053147!5e0!3m2!1sen!2sus!4v1614547182848!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6983.525321858021!2d-88.41112575414292!3d42.614487144392754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88058bf99109d65f%3A0x53718678f51b0bb4!2s2508%20Vista%20Dr%2C%20Lake%20Geneva%2C%20WI%2053147!5e0!3m2!1sen!2sus!4v1614547182848!5m2!1sen!2sus" title="Facility Google Map" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="col-lg-4 pt-3">
             <h2>Vista Dr Location</h2>
             <div *ngFor="let contact of contactsLocation2" class="contact-label pt-2">
               <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
             <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
-              <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
+              <a [href]="contact?.redirect" rel="noopener" target="_blank" rel="noopener">&nbsp;
                 <h3>{{contact.data}}</h3>
               </a>
             </div>
