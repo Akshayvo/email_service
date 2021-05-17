@@ -495,7 +495,8 @@ public navigateToPrevious() {
               }
           }
         });
-        if ((!!localStorage.getItem('strTenantToken')) && (this.router.url.includes(`${this.loginUrl}`))) {
+        // if ((!!localStorage.getItem('strTenantToken')) && (this.router.url.includes(`${this.loginUrl}`))) {
+          if (!!localStorage.getItem('strTenantToken')) {
           this.tenantTokenExist = true;
           this.showLoader = true;
           this.getTenantInfo();
@@ -584,11 +585,17 @@ public navigateToPrevious() {
             } else {
               this.showloaderForPayment = false;
 
-              if (!!localStorage.getItem('paymentTab')) {
-                this.router.navigate([`pay-rent/${this.loginUrl}/${localStorage.getItem('paymentTab')}/thank-you`]);
+              if (!!this.paymentTab) {
+                this.router.navigate([`pay-rent/${this.paymentTab}/thank-you`])
               } else {
-                this.router.navigate([`pay-rent/${this.loginUrl}/thank-you`]);
+                this.router.navigate([`pay-rent/thank-you`]);
               }
+              
+              // if (!!localStorage.getItem('paymentTab')) {
+              //   this.router.navigate([`pay-rent/${this.loginUrl}/${localStorage.getItem('paymentTab')}/thank-you`]);
+              // } else {
+              //   this.router.navigate([`pay-rent/${this.loginUrl}/thank-you`]);
+              // }
             }
             
           }

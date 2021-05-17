@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 
 import { Resolve } from '@angular/router';
 import { Router } from '@angular/router';
-
 import { DataSharingService } from '../services/data-sharing.service';
 
 
@@ -17,6 +16,10 @@ export class AppResolver implements Resolve<any> {
   ) {}
 
   resolve() {
-    return this.dataSharingService.getAPIKey();
+    if (this.router.url.includes('pay-rent')) {
+      return this.dataSharingService.payRentAPI;
+    } else {
+      return this.dataSharingService.getAPIKey();
+    }
   }
 }
