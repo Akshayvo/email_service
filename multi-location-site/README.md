@@ -3,9 +3,9 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace storage-plus Rental Spaces with your project name(Hyphen Case)
+Replace multi-location-site Rental Spaces with your project name(Hyphen Case)
 
-Replace storage-plus Rental Spaces with your project name(camelCase)
+Replace multi-location-site Rental Spaces with your project name(camelCase)
 
 Find and Replace across project
 

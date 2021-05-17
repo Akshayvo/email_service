@@ -1,36 +1,3 @@
-export const tabs1 = [
-    {
-        id: '1',
-        name: 'Storage Units',
-        path: './storage-units',
-        active: true,
-    },
-    {
-        id: '2',
-        name: 'Unit Sizer',
-        path: './unit-sizer',
-        active: false,
-    },
-    {
-        id: '3',
-        name: 'Reserve Unit',
-        path: './reserve-unit',
-        active: false,
-    },
-    // {
-    //     id: '4',
-    //     name: 'About Us',
-    //     path: './about',
-    //     active: false,
-    // },
-    // {
-    //     id: '5',
-    //     name: 'Directions',
-    //     path: './directions',
-    //     active: false,
-    // },
-];
-
 export const tabs = [
     {
         id: '1',
@@ -44,89 +11,30 @@ export const tabs = [
         path: './unit-sizer',
         active: false,
     },
-    // {
-    //     id: '3',
-    //     name: 'Reserve Unit',
-    //     path: './reserve-unit',
-    //     active: false,
-    // },
-    // {
-    //     id: '4',
-    //     name: 'About Us',
-    //     path: './about',
-    //     active: false,
-    // },
-    // {
-    //     id: '5',
-    //     name: 'Directions',
-    //     path: './directions',
-    //     active: false,
-    // },
-];
-
-export const tabs2 = [
-    {
-        id: '1',
-        name: 'Storage Units',
-        path: './storage-units',
-        active: true,
-    },
-    {
-        id: '2',
-        name: 'Unit Sizer',
-        path: './unit-sizer',
-        active: false,
-    },
     {
         id: '3',
         name: 'Reserve Unit',
         path: './reserve-unit',
         active: false,
     },
-    // {
-    //     id: '4',
-    //     name: 'About Us',
-    //     path: './about',
-    //     active: false,
-    // },
-    // {
-    //     id: '5',
-    //     name: 'Directions',
-    //     path: './directions',
-    //     active: false,
-    // },
-];
-export const tabs3 = [
     {
-        id: '1',
-        name: 'Storage Units',
-        path: './storage-units',
-        active: true,
-    },
-    {
-        id: '2',
-        name: 'Unit Sizer',
-        path: './unit-sizer',
+        id: '4',
+        name: 'Move In',
+        path: './move-in',
         active: false,
     },
     {
-        id: '3',
-        name: 'Reserve Unit',
-        path: './reserve-unit',
+        id: '5',
+        name: 'About Us',
+        path: './about',
         active: false,
     },
-    // {
-    //     id: '4',
-    //     name: 'About Us',
-    //     path: './about',
-    //     active: false,
-    // },
-    // {
-    //     id: '5',
-    //     name: 'Directions',
-    //     path: './directions',
-    //     active: false,
-    // },
+    {
+        id: '6',
+        name: 'Directions',
+        path: './directions',
+        active: false,
+    },
 ];
 
 export const headingLocation1 = ``;

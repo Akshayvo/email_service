@@ -10,9 +10,9 @@
     <div class="row py-2 my-2 unitDetail" *ngFor="let lstUnitType of LstUnitTypes">
       <div class="col-4  unitType text-center">
         <div class="p-2">
-          <div class="p-2" class="custom-font" *ngIf="testRegex(lstUnitType)">
+          <div class="p-2" class="custom-font" *ngIf="lstUnitType.Description">
             <strong>
-              {{Description}}
+              {{lstUnitType.Description}}
               </strong>
           </div>
           <div class="p-2" *ngIf="lstUnitType.IsOutdoor">
@@ -41,7 +41,7 @@
           </div>
         </div>
       </div>
-      <!-- <div class="col-4 d-flex justify-content-center" >
+      <div class="col-4 d-flex justify-content-center" >
         <div *ngIf="lstUnitType.IsUnitsAvailable" >
           <div class=" py-1 buttons" >
               <button class="btn  btn-primary" (click)="navigate('reserve-unit', lstUnitType )">Reserve</button>
@@ -50,7 +50,7 @@
               <button class=" btn btn-primary" (click)="navigate('move-in', lstUnitType)"> Move In</button>
           </div>
         </div>
-      </div>   -->
+      </div>  
     </div>
   </div>
 </div>

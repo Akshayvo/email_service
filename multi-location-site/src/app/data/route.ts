@@ -97,7 +97,7 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
             // { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -108,7 +108,7 @@ export const apiRoutes = [
         },
         { path: 'move-in', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
             // { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -132,7 +132,7 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
             // { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -143,7 +143,7 @@ export const apiRoutes = [
         },
         { path: 'move-in', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
             // { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -167,7 +167,7 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
             // { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -179,7 +179,7 @@ export const apiRoutes = [
         },
         { path: 'move-in', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
             // { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -202,7 +202,7 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
             // { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -214,7 +214,7 @@ export const apiRoutes = [
         { path: 'move-in', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
-            // { path: '', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
             // { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -238,7 +238,7 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
             // { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -250,7 +250,7 @@ export const apiRoutes = [
         { path: 'move-in', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
-            // { path: '', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
             // { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -274,7 +274,7 @@ export const apiRoutes = [
         { path: 'unit-sizer', component: UnitSizerComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
-            // { path: '', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
             // { path: 'reserve', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },
@@ -286,7 +286,7 @@ export const apiRoutes = [
         { path: 'move-in', component: ReserveComponent,
           children: [
             // { path: '', component: ViewRatesPageComponent },
-            // { path: '', component: ReserveUnitFormComponent },
+            { path: '', component: ReserveUnitFormComponent },
             // { path: 'move-in', component: ReserveUnitFormComponent },
             // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
             { path: 'confirmation', component: ConfirmationDataComponent },

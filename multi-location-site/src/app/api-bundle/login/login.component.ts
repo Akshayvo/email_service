@@ -149,24 +149,6 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
-    } else  if (this.router.url.includes('belforest')) {
-      this.id = 4;
-      this.name = 'Storage Plus of Baldwin County - Belforest';
-      this.contact = contactsLocation4;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
-    } else  if (this.router.url.includes('fairhope')) {
-      this.id = 5;
-      this.name = 'Storage Plus of Baldwin County - Fairhope';
-      this.contact = contactsLocation5;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
-    } else  if (this.router.url.includes('robertsdale')) {
-      this.id = 6;
-      this.name = 'Storage Plus of Baldwin County - Robertsdale';
-      this.contact = contactsLocation6;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc6);
     }
   }
 
@@ -185,12 +167,6 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation2;
     } else if (this.router.url.includes('barnwell')) {
       this.og = ogPayRentPageLocation3;
-    } else if (this.router.url.includes('belforest')) {
-      this.og = ogPayRentPageLocation4;
-    } else if (this.router.url.includes('fairhope')) {
-      this.og = ogPayRentPageLocation5;
-    } else if (this.router.url.includes('robertsdale')) {
-      this.og = ogPayRentPageLocation6;
     }
     }
 
@@ -201,12 +177,6 @@ public fetchTwitter() {
       this.twitter = twitterPayRentPageLocation2;
   } else if (this.router.url.includes('barnwell')) {
         this.twitter = twitterPayRentPageLocation3;
-  } else if (this.router.url.includes('belforest')) {
-        this.twitter = twitterPayRentPageLocation4;
-  } else if (this.router.url.includes('fairhope')) {
-    this.twitter = twitterPayRentPageLocation5;
-  } else if (this.router.url.includes('robertsdale')) {
-    this.twitter = twitterPayRentPageLocation6;
   }
 }
 
