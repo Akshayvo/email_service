@@ -51,6 +51,21 @@ export const navLinks = [
                 label: 'Wayland Southside Location',
                 path: `${environment.locationName}/wayland-southside`,
               },
+              {
+                id: '9',
+                label: 'Dutton Location',
+                path: `${environment.locationName}/dutton`,
+              },
+              {
+                id: '10',
+                label: 'M-45 Location',
+                path: `${environment.locationName}/m45`,
+              },
+              {
+                id: '11',
+                label: 'Otsego Location',
+                path: `${environment.locationName}/otsego`,
+              },
         ]
     },
     {
@@ -97,6 +112,21 @@ export const navLinks = [
                 id: '8',
                 label: 'Wayland Southside Location',
                 path: `${environment.locationName}/wayland-southside/view-rates`,
+              },
+              {
+                id: '9',
+                label: 'Dutton Location',
+                path: `${environment.locationName}/dutton/view-rates`,
+              },
+              {
+                id: '10',
+                label: 'M-45 Location',
+                path: `${environment.locationName}/m45/view-rates`,
+              },
+              {
+                id: '11',
+                label: 'Otsego Location',
+                path: `${environment.locationName}/otsego/view-rates`,
               },
         ]
     },

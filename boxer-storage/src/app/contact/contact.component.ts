@@ -6,7 +6,7 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
           hoursLocation5, contactsLocation5,
-          hoursLocation6, hoursLocation7,hoursLocation8, contactsLocation6, contactsLocation7, contactsLocation8  } from '../data/contact';
+          hoursLocation6, hoursLocation7,hoursLocation8,hoursLocation9,hoursLocation10,hoursLocation11, contactsLocation6, contactsLocation7, contactsLocation8 ,contactsLocation9,contactsLocation10,contactsLocation11 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -144,6 +144,15 @@ public fetchMetaData() {
     else if ( this.locationId === '8' || this.locationId === 8 ) {
       this.fetchContactDetailsLocation8();
     }
+    else if ( this.locationId === '9' || this.locationId === 9 ) {
+      this.fetchContactDetailsLocation9();
+    }
+    else if ( this.locationId === '10' || this.locationId === 10 ) {
+      this.fetchContactDetailsLocation10();
+    }
+    else if ( this.locationId === '11' || this.locationId === 11 ) {
+      this.fetchContactDetailsLocation11();
+    }
   }
 
   public fetchTableData() {
@@ -200,6 +209,24 @@ public fetchMetaData() {
     this.heading = `Boxer Storage - Wayland Southside Location`;
     this.contactDetails = contactsLocation8;
     this.hoursDetails = hoursLocation8;
+  }
+
+  public fetchContactDetailsLocation9() {
+    this.heading = `Boxer Storage - Dutton Location`;
+    this.contactDetails = contactsLocation9;
+    this.hoursDetails = hoursLocation9;
+  }
+
+  public fetchContactDetailsLocation10() {
+    this.heading = `Boxer Storage - M-45 Location`;
+    this.contactDetails = contactsLocation10;
+    this.hoursDetails = hoursLocation10;
+  }
+
+  public fetchContactDetailsLocation11() {
+    this.heading = `Boxer Storage - Otsego Location`;
+    this.contactDetails = contactsLocation11;
+    this.hoursDetails = hoursLocation11;
   }
 
 onSubmit() {

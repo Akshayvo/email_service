@@ -2,7 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
-import { contactsLocation1,contactsLocation3,contactsLocation2,contactsLocation4,contactsLocation5,contactsLocation6,contactsLocation7,contactsLocation8 } from '../../data/contact';
+import { contactsLocation1,contactsLocation3,contactsLocation2,contactsLocation4,contactsLocation5,contactsLocation6,contactsLocation7,contactsLocation8,
+  contactsLocation9,contactsLocation10,contactsLocation11 } from '../../data/contact';
 import { tableHeader, tableData } from '../../data/pay-rent';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
@@ -147,6 +148,15 @@ export class PaymentComponent implements OnInit {
     }
     else if ( this.locationId === '8' || this.locationId === 8 ) {
       this.contact = contactsLocation8;
+    }
+    else if ( this.locationId === '9' || this.locationId === 9 ) {
+      this.contact = contactsLocation9;
+    }
+    else if ( this.locationId === '10' || this.locationId === 10 ) {
+      this.contact = contactsLocation10;
+    }
+    else if ( this.locationId === '11' || this.locationId === 11 ) {
+      this.contact = contactsLocation11;
     }
   }
 }

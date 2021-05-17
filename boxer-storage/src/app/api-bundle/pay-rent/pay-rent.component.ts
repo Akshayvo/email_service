@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
-import { tabs } from '../../data/tab';
+import { tabs,tabs1 } from '../../data/tab';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
 import { Meta } from '@angular/platform-browser';
-import { ogPayRentPage, ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3,ogPayRentPageLocation4,ogPayRentPageLocation5,ogPayRentPageLocation6,ogPayRentPageLocation7,ogPayRentPageLocation8,
-   twitterPayRentPage, twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4,twitterPayRentPageLocation5,twitterPayRentPageLocation6,twitterPayRentPageLocation7,twitterPayRentPageLocation8  } from '../../data/script';
+import { ogPayRentPage, ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3,ogPayRentPageLocation4,ogPayRentPageLocation5,ogPayRentPageLocation6,ogPayRentPageLocation7,ogPayRentPageLocation8,ogPayRentPageLocation9,ogPayRentPageLocation10,ogPayRentPageLocation11,
+   twitterPayRentPage, twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4,twitterPayRentPageLocation5,twitterPayRentPageLocation6,twitterPayRentPageLocation7,twitterPayRentPageLocation8,twitterPayRentPageLocation9,twitterPayRentPageLocation10,twitterPayRentPageLocation11  } from '../../data/script';
 @Component({
   selector: 'app-pay-rent',
   templateUrl: './pay-rent.component.html',
@@ -60,11 +60,20 @@ export class PayRentComponent implements OnInit {
    else if (this.router.url.includes('red-barn')) {
     this.name = ' Red Barn Location';
   } else if (this.router.url.includes('wayland-westside')) {
-    this.name = 'Wayland Westside street Location';
+    this.name = ' Wayland Westside street Location';
   } else if (this.router.url.includes('wayland-mill')) {
-    this.name = 'Wayland mill Location';
+    this.name = ' Wayland mill Location';
   } else if (this.router.url.includes('wayland-southside')) {
-    this.name = 'Wayland Southside Location';
+    this.name = ' Wayland Southside Location';
+  } 
+  else if (this.router.url.includes('dutton')) {
+    this.name = ' Dutton Location';
+  } 
+  else if (this.router.url.includes('m45')) {
+    this.name = ' M-45 Southside Location';
+  } 
+  else if (this.router.url.includes('otsego')) {
+    this.name = ' Otsego Location';
   } 
   // else if (this.router.url.includes('robertsdale')) {
   //   this.name = 'Robertsdale Location';
@@ -103,9 +112,15 @@ export class PayRentComponent implements OnInit {
     } else if (this.router.url.includes('wayland-southside')) {
       this.og = ogPayRentPageLocation8;
     } 
-    // else if (this.router.url.includes('robertsdale')) {
-    //   this.og = ogPayRentPageLocation6;
-    // }
+    else if (this.router.url.includes('dutton')) {
+      this.og = ogPayRentPageLocation9;
+    } 
+    else if (this.router.url.includes('m45')) {
+      this.og = ogPayRentPageLocation10;
+    } 
+    else if (this.router.url.includes('otsego')) {
+      this.og = ogPayRentPageLocation11;
+    } 
 }
 
 public fetchTwitter() {
@@ -130,13 +145,21 @@ public fetchTwitter() {
   } else if (this.router.url.includes('wayland-southside')) {
     this.twitter = twitterPayRentPageLocation8;
   } 
-  // else if (this.router.url.includes('robertsdale')) {
-  //   this.twitter = twitterPayRentPageLocation6;
-  // }
+  else if (this.router.url.includes('dutton')) {
+    this.twitter = twitterPayRentPageLocation9;
+  } 
+  else if (this.router.url.includes('m45')) {
+    this.twitter = twitterPayRentPageLocation10;
+  } 
+  else if (this.router.url.includes('otsego')) {
+    this.twitter = twitterPayRentPageLocation11;
+  } 
 }
 
   public fetchContactDetails() {
     // this.contact = contact;
-    this.tabs = tabs;
+    if (this.router.url.includes('m45')){this.tabs = tabs;}
+    else{this.tabs = tabs1;}
+    
   }
 }

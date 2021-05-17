@@ -25,6 +25,15 @@ export const location7PageContent = `Check out our current availability and rate
 export const location8PageTitle = `Wayland Wayland Southside | Boxer Storage`;
 export const location8PageContent = `Review our current availability and rates, then reserve your unit or rent online! Have questions? Give our office a call to learn more!`;
 
+export const location9PageTitle = `Dutton | Boxer Storage`;
+export const location9PageContent = `Review our current availability and rates, then reserve your unit or rent online! Have questions? Give our office a call to learn more!`;
+
+export const location10PageTitle = `M-45 | Boxer Storage`;
+export const location10PageContent = `Review our current availability and rates, then reserve your unit or rent online! Have questions? Give our office a call to learn more!`;
+
+export const location11PageTitle = `Otsego | Boxer Storage`;
+export const location11PageContent = `Review our current availability and rates, then reserve your unit or rent online! Have questions? Give our office a call to learn more!`;
+
 export const viewRatesPageTitle = ``;
 export const viewRatesPageContent = ``;
 
@@ -78,6 +87,15 @@ export const location7PayrentPageContent = `Follow the simple instructions on th
 export const location8PayrentPageTitle = `Pay Rent | Boxer Storage`;
 export const location8PayrentPageContent = `Follow the simple instructions on this page, and you'll have 24 hour access to your account for online payments.`;
 
+export const location9PayrentPageTitle = `Pay Rent | Boxer Storage`;
+export const location9PayrentPageContent = `Follow the simple instructions on this page, and you'll have 24 hour access to your account for online payments.`;
+
+
+export const location10PayrentPageTitle = `Pay Rent | Boxer Storage`;
+export const location10PayrentPageContent = `Follow the simple instructions on this page, and you'll have 24 hour access to your account for online payments.`;
+
+export const location11PayrentPageTitle = `Pay Rent | Boxer Storage`;
+export const location11PayrentPageContent = `Follow the simple instructions on this page, and you'll have 24 hour access to your account for online payments.`;
 
 
 
@@ -104,3 +122,13 @@ export const location7ContactPageContent = `Fill our the form or use our contact
 
 export const location8ContactPageTitle = `Contact Us | Boxer Storage`;
 export const location8ContactPageContent = `Fill our the form or use our contact form to reach out to our friendly and knowledgable staff.`;
+
+export const location9ContactPageTitle = `Contact Us | Boxer Storage`;
+export const location9ContactPageContent = `Fill our the form or use our contact form to reach out to our friendly and knowledgable staff.`;
+
+export const location10ContactPageTitle = `Contact Us | Boxer Storage`;
+export const location10ContactPageContent = `Fill our the form or use our contact form to reach out to our friendly and knowledgable staff.`;
+
+export const location11ContactPageTitle = `Contact Us | Boxer Storage`;
+export const location11ContactPageContent = `Fill our the form or use our contact form to reach out to our friendly and knowledgable staff.`;
+

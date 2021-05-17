@@ -51,6 +51,21 @@ export const tableData = [
     facility: ' Wayland Southside',
     address: '1050 133rd Ave, Wayland, MI 49348',
     url: 'wayland-southside/rent-sub/login'
+  }, 
+  {
+    facility: ' Dutton',
+    address: '3371 68th St SE, Kentwood, MI 49548',
+    url: 'dutton/rent-sub/login'
+  }, 
+  {
+    facility: ' M-45',
+    address: '10300 Lake Michigan Dr, West Olive, MI 49460',
+    url: 'm45/rent-sub/login'
+  }, 
+  {
+    facility: ' Otsego',
+    address: '714 Lincoln Rd, Otsego, MI 49078',
+    url: 'otsego/rent-sub/login'
   },   
 ];
 
@@ -94,6 +109,21 @@ export const tableDataContactPage = [
     facility: ' Wayland Southside',
     address: '1050 133rd Ave, Wayland, MI 49348',
     url: 'wayland-southside'
+  },  
+  {
+    facility: ' Dutton',
+    address: '3371 68th St SE, Kentwood, MI 49548',
+    url: 'dutton'
+  }, 
+  {
+    facility: ' M-45',
+    address: '10300 Lake Michigan Dr, West Olive, MI 49460',
+    url: 'm45'
+  }, 
+  {
+    facility: ' Otsego',
+    address: '714 Lincoln Rd, Otsego, MI 49078',
+    url: 'otsego'
   },    
 ];
 

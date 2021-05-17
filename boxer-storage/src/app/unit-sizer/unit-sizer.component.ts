@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { unitSizerLocation1, unitSizerLocation2,
-   unitSizerLocation3, unitSizerLocation4, unitSizerLocation5, unitSizerLocation6,unitSizerLocation7,unitSizerLocation8
+   unitSizerLocation3, unitSizerLocation4, unitSizerLocation5, unitSizerLocation6,unitSizerLocation7,unitSizerLocation8,unitSizerLocation9,unitSizerLocation10,unitSizerLocation11
    } from '../data/location';
 import { CanonicalService } from '../services/canonical.service';
 import { environment } from '../../environments/environment';
@@ -50,9 +50,15 @@ export class UnitSizerComponent implements OnInit {
   } else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
     this.fetchDetailsLocation8();
   } 
-  // else if (this.router.url.includes('/location/robertsdale')) {
-  //   this.fetchDetailsLocation6();
-  // }
+  else if (this.router.url.includes(`${environment.locationName}/dutton`)) {
+    this.fetchDetailsLocation9();
+  }
+  else if (this.router.url.includes(`${environment.locationName}/m45`)) {
+    this.fetchDetailsLocation10();
+  }
+  else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
+    this.fetchDetailsLocation11();
+  }
 }
 
   public fetchDetailsLocation1() {
@@ -109,5 +115,23 @@ export class UnitSizerComponent implements OnInit {
     this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that out! Still have
     questions? Call (269) 792-2290!`;
     this.unitSizer = unitSizerLocation8;
+  }
+  public fetchDetailsLocation9() {
+    this.h2tag = 'Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that out! Still have
+    questions? Call (616) 698-7090!`;
+    this.unitSizer = unitSizerLocation9;
+  }
+  public fetchDetailsLocation10() {
+    this.h2tag = 'Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that out! Still have
+    questions? Call (616) 698-7090`;
+    this.unitSizer = unitSizerLocation10;
+  }
+  public fetchDetailsLocation11() {
+    this.h2tag = 'Unit Sizer ';
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that out! Still have
+    questions? Call (269) 792-2290!`;
+    this.unitSizer = unitSizerLocation11;
   }
 }

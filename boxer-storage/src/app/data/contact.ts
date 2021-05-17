@@ -156,6 +156,26 @@ export const accessHoursLocation8 = [
     },
 ];
 
+export const accessHoursLocation9 = [
+    {
+        // label: 'Access Hour ',
+        data: '24 Hours a Day 7 Days a Week',
+    },
+];
+
+export const accessHoursLocation10 = [
+    {
+        // label: 'Access Hour ',
+        data: '24 Hours a Day 7 Days a Week',
+    },
+];
+
+export const accessHoursLocation11 = [
+    {
+        // label: 'Access Hour ',
+        data: '24 Hours a Day 7 Days a Week',
+    },
+];
 export const contactsLocation2 = [
       {
         id: 4,
@@ -494,6 +514,159 @@ export const contactsLocation8 = [
 ];
 
 export const hoursLocation8 = [
+    // {
+    //     label: 'Monday - Saturday: ',
+    //     data: '9:00AM - 5:00PM',
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: 'CLOSED',
+    // },
+           {
+        label: '',
+        data: '',
+    },
+    {
+        label: '',
+        data: '',
+    },
+];
+
+export const contactsLocation9 = [
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(616) 698-7090',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:2697922290'
+    },
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '3371 68th St SE, Kentwood, MI 49548',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/gRaiVCHnFcDJ89hdA'
+    },
+    {
+        id: 3,
+        label: 'Email: ',
+        email: 'store@boxerstorage.com',
+        data: `store@boxerstorage.com`,
+        class: 'fas fa-envelope mr-2 iconColor',
+        redirect: 'mailto:`store@boxerstorage.com`'
+    },
+    {
+        id: 2,
+        label: 'Mailing Address: ',
+        data: '3609 32nd St SE, Kentwood, MI 49512',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/V9mQLpHMRbH1CtK4A'
+    },
+];
+
+export const hoursLocation9 = [
+    // {
+    //     label: 'Monday - Saturday: ',
+    //     data: '9:00AM - 5:00PM',
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: 'CLOSED',
+    // },
+           {
+        label: '',
+        data: '',
+    },
+    {
+        label: '',
+        data: '',
+    },
+];
+
+export const contactsLocation10 = [
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(616) 698-7090',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:2697922290'
+    },
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '10300 Lake Michigan Dr, West Olive, MI 49460',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/NBskms378KsJ7rGG6'
+    },
+    {
+        id: 3,
+        label: 'Email: ',
+        email: 'store@boxerstorage.com',
+        data: `store@boxerstorage.com`,
+        class: 'fas fa-envelope mr-2 iconColor',
+        redirect: 'mailto:`store@boxerstorage.com`'
+    },
+    {
+        id: 2,
+        label: 'Mailing Address: ',
+        data: '',
+        class: '',
+        redirect: ''
+    },
+];
+
+export const hoursLocation10 = [
+    // {
+    //     label: 'Monday - Saturday: ',
+    //     data: '9:00AM - 5:00PM',
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: 'CLOSED',
+    // },
+           {
+        label: '',
+        data: '',
+    },
+    {
+        label: '',
+        data: '',
+    },
+];
+
+export const contactsLocation11 = [
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(269) 792-2290',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:2697922290'
+    },
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '714 Lincoln Rd, Otsego, MI 49078',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/Hr2k4URkZECWp1L76'
+    },
+    {
+        id: 3,
+        label: 'Email: ',
+        email: 'store@boxerstorage.com',
+        data: `store@boxerstorage.com`,
+        class: 'fas fa-envelope mr-2 iconColor',
+        redirect: 'mailto:`store@boxerstorage.com`'
+    },
+    {
+        id: 2,
+        label: 'Mailing Address: ',
+        data: '',
+        class: '',
+        redirect: ''
+    },
+];
+
+export const hoursLocation11 = [
     // {
     //     label: 'Monday - Saturday: ',
     //     data: '9:00AM - 5:00PM',

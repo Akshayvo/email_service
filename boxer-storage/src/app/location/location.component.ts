@@ -1,20 +1,20 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { accessHoursLocation1,accessHoursLocation2,accessHoursLocation3, accessHoursLocation4, accessHoursLocation5, accessHoursLocation6, accessHoursLocation7, accessHoursLocation8,
-         contactsLocation1, contactsLocation2, contactsLocation3,contactsLocation4, contactsLocation5, contactsLocation6,contactsLocation7, contactsLocation8,
-         hoursLocation1, hoursLocation2,hoursLocation3,hoursLocation4,hoursLocation5,hoursLocation6,hoursLocation7,hoursLocation8,
+import { accessHoursLocation1,accessHoursLocation2,accessHoursLocation3, accessHoursLocation4, accessHoursLocation5, accessHoursLocation6, accessHoursLocation7, accessHoursLocation8,accessHoursLocation9,accessHoursLocation10,accessHoursLocation11,
+         contactsLocation1, contactsLocation2, contactsLocation3,contactsLocation4, contactsLocation5, contactsLocation6,contactsLocation7, contactsLocation8,contactsLocation9,contactsLocation10,contactsLocation11,
+         hoursLocation1, hoursLocation2,hoursLocation3,hoursLocation4,hoursLocation5,hoursLocation6,hoursLocation7,hoursLocation8,hoursLocation9,hoursLocation10,hoursLocation11
           } from '../data/contact';
-import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, tabs4,tabs5,tabs6,tabs7,tabs8, heading4, heading5, heading6,heading7,heading8  } from '../data/location';
+import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, tabs4,tabs5,tabs6,tabs7,tabs8,tabs9,tabs10,tabs11, heading4, heading5, heading6,heading7,heading8 , heading9,heading10,heading11} from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
-import { Location1Script,Location2Script,Location3Script,Location4Script,Location5Script,Location6Script,Location7Script,Location8Script,
-  ogLocation1,ogLocation2,ogLocation3,ogLocation4,ogLocation5,ogLocation6,ogLocation7,ogLocation8,
-   twitterLocation1,twitterLocation2,twitterLocation3,twitterLocation4,twitterLocation5,twitterLocation6,twitterLocation7,twitterLocation8
+import { Location1Script,Location2Script,Location3Script,Location4Script,Location5Script,Location6Script,Location7Script,Location8Script,Location9Script,Location10Script,Location11Script,
+  ogLocation1,ogLocation2,ogLocation3,ogLocation4,ogLocation5,ogLocation6,ogLocation7,ogLocation8,ogLocation9,ogLocation10,ogLocation11,
+   twitterLocation1,twitterLocation2,twitterLocation3,twitterLocation4,twitterLocation5,twitterLocation6,twitterLocation7,twitterLocation8,twitterLocation9,twitterLocation10,twitterLocation11
    } from '../data/script';
 import { featuresHead, featuresList, location1FeaturesHead, location2FeaturesHead,
-  location3FeaturesHead, location4FeaturesHead,location5FeaturesHead,location6FeaturesHead,location7FeaturesHead,location8FeaturesHead } from '../data/home';
+  location3FeaturesHead, location4FeaturesHead,location5FeaturesHead,location6FeaturesHead,location7FeaturesHead,location8FeaturesHead,location9FeaturesHead,location10FeaturesHead,location11FeaturesHead } from '../data/home';
 import { UaParserService } from '../services/ua-parser.service';
 import { location1PageContent, location1PageTitle,
         location2PageContent, location2PageTitle,
@@ -24,6 +24,9 @@ import { location1PageContent, location1PageTitle,
         location6PageContent, location6PageTitle,
         location7PageContent, location7PageTitle,
         location8PageContent, location8PageTitle, 
+        location9PageContent, location9PageTitle, 
+        location10PageContent, location10PageTitle, 
+        location11PageContent, location11PageTitle, 
       } from '../data/title';
 import { environment } from '../../environments/environment';
 
@@ -67,6 +70,12 @@ export class LocationComponent implements OnInit {
   location7PageTitle: any;
   location8PageContent: any;
   location8PageTitle: any;
+  location9PageTitle: any;
+  location9PageContent: any;
+  location10PageTitle: any;
+  location10PageContent: any;
+  location11PageTitle: any;
+  location11PageContent: any;
   access: any;
 
 
@@ -308,6 +317,85 @@ export class LocationComponent implements OnInit {
               })
             });
           }
+
+          else if (this.router.url.includes(`${environment.locationName}/dutton`)) {
+            this.meta.addTag({
+              name: 'description',
+              content: `${this.location8PageContent}`
+    });
+    this.titleService.setTitle(`${this.location9PageTitle}`);
+            this.locationName = `Boxer Storage - Dutton Location`;
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc9;
+            this.dataSharingService.locationName = this.locationName;
+            this.script = Location9Script;
+            this.loadScript();
+            this.og.forEach(element => {
+              this.meta.addTag({
+                property: element.property,
+                content: element.content
+              })
+            });
+        
+            this.twitter.forEach(element => {
+              this.meta.addTag({
+                name: element.name,
+                content: element.content
+              })
+            });
+          }
+
+          else if (this.router.url.includes(`${environment.locationName}/m45`)) {
+            this.meta.addTag({
+              name: 'description',
+              content: `${this.location10PageContent}`
+    });
+    this.titleService.setTitle(`${this.location10PageTitle}`);
+            this.locationName = `Boxer Storage - M-45 Location`;
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc10;
+            this.dataSharingService.locationName = this.locationName;
+            this.script = Location10Script;
+            this.loadScript();
+            this.og.forEach(element => {
+              this.meta.addTag({
+                property: element.property,
+                content: element.content
+              })
+            });
+        
+            this.twitter.forEach(element => {
+              this.meta.addTag({
+                name: element.name,
+                content: element.content
+              })
+            });
+          }
+
+
+          else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
+            this.meta.addTag({
+              name: 'description',
+              content: `${this.location11PageContent}`
+    });
+    this.titleService.setTitle(`${this.location8PageTitle}`);
+            this.locationName = `Boxer Storage - Otsego Location`;
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc11;
+            this.dataSharingService.locationName = this.locationName;
+            this.script = Location11Script;
+            this.loadScript();
+            this.og.forEach(element => {
+              this.meta.addTag({
+                property: element.property,
+                content: element.content
+              })
+            });
+        
+            this.twitter.forEach(element => {
+              this.meta.addTag({
+                name: element.name,
+                content: element.content
+              })
+            });
+          }
 }
 
   ngOnInit() {
@@ -348,6 +436,12 @@ export class LocationComponent implements OnInit {
     this.location7PageContent = location7PageContent;
     this.location8PageTitle = location8PageTitle;
     this.location8PageContent = location8PageContent;
+    this.location9PageTitle = location9PageTitle;
+    this.location9PageContent = location9PageContent;
+    this.location10PageTitle = location10PageTitle;
+    this.location10PageContent = location10PageContent;
+    this.location11PageTitle = location11PageTitle;
+    this.location11PageContent = location11PageContent;
   }
 
   public fetchFeatureHead() {
@@ -377,6 +471,15 @@ export class LocationComponent implements OnInit {
 }  else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
   this.og = ogLocation8;
 }  
+else if (this.router.url.includes(`${environment.locationName}/dutton`)) {
+  this.og = ogLocation9;
+}  
+else if (this.router.url.includes(`${environment.locationName}/m45`)) {
+  this.og = ogLocation10;
+}  
+else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
+  this.og = ogLocation11;
+}  
   }
 
   public fetchTwitter() {
@@ -401,6 +504,15 @@ export class LocationComponent implements OnInit {
   } else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
     this.twitter = twitterLocation8;
   }
+  else if (this.router.url.includes(`${environment.locationName}/dutton`)) {
+    this.twitter = twitterLocation9;
+  }
+  else if (this.router.url.includes(`${environment.locationName}/m45`)) {
+    this.twitter = twitterLocation10;
+  }
+  else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
+    this.twitter = twitterLocation11;
+  }
   }
 
   public isSomePage() {
@@ -424,6 +536,15 @@ export class LocationComponent implements OnInit {
       this.fetchDetailsLocation7();
     } else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
       this.fetchDetailsLocation8();
+    }
+    else if (this.router.url.includes(`${environment.locationName}/dutton`)) {
+      this.fetchDetailsLocation9();
+    }
+    else if (this.router.url.includes(`${environment.locationName}/m45`)) {
+      this.fetchDetailsLocation10();
+    }
+    else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
+      this.fetchDetailsLocation11();
     }
  }
 
@@ -455,6 +576,18 @@ export class LocationComponent implements OnInit {
           );
   } else if ( this.locationId === 8 ) {
     this.router.navigate([`${environment.locationName}/wayland-southside/reserve-unit`],
+          );
+  }
+  else if ( this.locationId === 9 ) {
+    this.router.navigate([`${environment.locationName}/dutton/reserve-unit`],
+          );
+  }
+  else if ( this.locationId === 10 ) {
+    this.router.navigate([`${environment.locationName}/m45/reserve-unit`],
+          );
+  }
+  else if ( this.locationId === 11 ) {
+    this.router.navigate([`${environment.locationName}/otsego/reserve-unit`],
           );
   }
  }
@@ -524,6 +657,30 @@ export class LocationComponent implements OnInit {
       this.router.navigate(['pay-rent']);
     }
   } 
+  else if ( this.locationId === 9 ) {
+    if (environment.signUpForAuotoPay === 1) {
+      this.router.navigate([`pay-rent/dutton/rent-sub/login`],
+      );
+    } else {
+      this.router.navigate(['pay-rent']);
+    }
+  } 
+  else if ( this.locationId === 10 ) {
+    if (environment.signUpForAuotoPay === 1) {
+      this.router.navigate([`pay-rent/m45/rent-sub/login`],
+      );
+    } else {
+      this.router.navigate(['pay-rent']);
+    }
+  } 
+  else if ( this.locationId === 11 ) {
+    if (environment.signUpForAuotoPay === 1) {
+      this.router.navigate([`pay-rent/otsego/rent-sub/login`],
+      );
+    } else {
+      this.router.navigate(['pay-rent']);
+    }
+  } 
  }
 
  public navigateToContact() {
@@ -550,6 +707,15 @@ export class LocationComponent implements OnInit {
   }
   else if (this.router.url.includes('wayland-southside')) {
     this.router.navigate(['/contact-wayland-southside'])
+  }
+  else if (this.router.url.includes('dutton')) {
+    this.router.navigate(['/contact-dutton'])
+  }
+  else if (this.router.url.includes('m45')) {
+    this.router.navigate(['/contact-m45'])
+  }
+  else if (this.router.url.includes('otsego')) {
+    this.router.navigate(['/contact-otsego'])
   }
  }
 
@@ -621,7 +787,7 @@ export class LocationComponent implements OnInit {
     this.locationId = 7;
     this.contacts = contactsLocation7;
     this.hours = hoursLocation7;
-    this.access = accessHoursLocation6;
+    this.access = accessHoursLocation7;
     this.tabs = tabs7;
     this.features = location7FeaturesHead;
   }
@@ -631,8 +797,38 @@ export class LocationComponent implements OnInit {
     this.locationId = 8;
     this.contacts = contactsLocation8;
     this.hours = hoursLocation8;
-    this.access = accessHoursLocation6;
+    this.access = accessHoursLocation8;
     this.tabs = tabs8;
     this.features = location8FeaturesHead;
+  }
+
+  public fetchDetailsLocation9() {
+    this.name = heading9;
+    this.locationId = 9;
+    this.contacts = contactsLocation9;
+    this.hours = hoursLocation9;
+    this.access = accessHoursLocation9;
+    this.tabs = tabs9;
+    this.features = location9FeaturesHead;
+  }
+
+  public fetchDetailsLocation10() {
+    this.name = heading10;
+    this.locationId = 10;
+    this.contacts = contactsLocation10;
+    this.hours = hoursLocation10;
+    this.access = accessHoursLocation10;
+    this.tabs = tabs10;
+    this.features = location10FeaturesHead;
+  }
+
+  public fetchDetailsLocation11() {
+    this.name = heading11;
+    this.locationId = 11;
+    this.contacts = contactsLocation11;
+    this.hours = hoursLocation11;
+    this.access = accessHoursLocation11;
+    this.tabs = tabs11;
+    this.features = location11FeaturesHead;
   }
 }
