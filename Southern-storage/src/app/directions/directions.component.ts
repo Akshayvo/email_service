@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { directionAgricola, directionBarton, directionRockyCreek } from '../data/location';
+import { directionAgricola, directionBarton, directionRockyCreek, directionWade} from '../data/location';
 @Component({
   selector: 'app-directions',
   templateUrl: './directions.component.html',
@@ -22,8 +22,11 @@ export class DirectionsComponent implements OnInit {
         this.fetchDirectionAgricola();
     } else if (this.router.url.includes('/location/barton')) {
       this.fetchDirectionBarton();
-    } else {
+    } else if (this.router.url.includes('/location/rocky-creek')) {
       this.fetchDirectionRockyCreek();
+    }
+    else if (this.router.url.includes('/location/wade')) {
+      this.fetchDirectionWade();
     }
  }
 
@@ -45,5 +48,11 @@ export class DirectionsComponent implements OnInit {
     this.directionPoints = directionBarton;
     this.directionHeading = `Directions to Southern Storage at Barton`;
     this.id = 2;
+  }
+  public fetchDirectionWade() {
+    this.name = 'wade';
+    this.directionPoints = directionWade;
+    this.directionHeading = `Directions to Southern Storage at Wade`;
+    this.id = 3;
   }
 }

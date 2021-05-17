@@ -14,7 +14,7 @@
           <span *ngIf="nav?.type === 'link'">
             <span *ngIf="nav.label === 'Pay Rent'">
               <a class="nav-link text-center" 
-              [class.nav-link-active]="router.isActive('/pay-rent-agricola/payment') || router.isActive('/pay-rent-rocky-creek/payment') || router.isActive('pay-rent-barton/payment')" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" (click)="onClick(menu)">{{nav.label}}</a>
+              [class.nav-link-active]="router.isActive('/pay-rent-agricola/payment') || router.isActive('/pay-rent-rocky-creek/payment') || router.isActive('pay-rent-barton/payment') || router.isActive('pay-rent-wade/payment')" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" (click)="onClick(menu)">{{nav.label}}</a>
             </span>
             <span *ngIf="nav.label !== 'Pay Rent'">
               <a class="nav-link text-center" [routerLink]="nav?.path" [routerLinkActive]="'nav-link-active'" [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)">{{nav.label}}</a>
@@ -24,7 +24,7 @@
           <span *ngIf="nav?.type === 'dropdown'">
               <div class="dropdown show">  
                 <a class="dropdown-toggle nav-link text-center" role="button" id="dropdownMenuLink" 
-                [class.nav-link-active]="router.isActive('/location/agricola') || router.isActive('/location/rocky-creek') || router.isActive('/location/barton')" 
+                [class.nav-link-active]="router.isActive('/location/agricola') || router.isActive('/location/rocky-creek') || router.isActive('/location/barton') || router.isActive('/location/wade')" 
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
                   <li *ngFor="let sub of nav.sublinks text-left"><a class="dropdown-item" 

@@ -190,6 +190,42 @@ const routes: Routes = [
     ],
     resolve: { data: AppResolver }
   },
+  { path: 'location/wade',
+  component: LocationComponent,
+  children: [
+    {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+    { path: 'storage-units', component: ViewRatesComponent  },
+    { path: 'reserve-unit', component: ReserveComponent,
+      children: [
+        { path: '', component: ReserveUnitFormComponent },
+        { path: 'reserve', component: ReserveUnitFormComponent },
+        // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+        { path: 'thank-you', component: ThankYouComponent }
+
+      ]
+    },
+    { path: 'move-in', component: ReserveComponent,
+      children: [
+        { path: '', component: ReserveUnitFormComponent },
+        { path: 'moveIn', component: ReserveUnitFormComponent },
+        // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+        { path: 'thank-you', component: ThankYouComponent }
+
+      ]
+    },
+    { path: 'unit-sizer', component: UnitSizerComponent },
+    { path: 'photos', component: PhotosComponent },
+    { path: 'about', component: AboutUsComponent },
+    { path: 'directions', component: DirectionsComponent },
+  ],
+  resolve: { data: AppResolver }
+},
   { path: 'pay-rent',
     component: PaymentComponent,
   },
@@ -217,6 +253,14 @@ const routes: Routes = [
         externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJnTxQ_Qx0m4gRebR-ShL8-fo'
     }
   },
+  { path: 'review/wade', component: HomeComponent,
+    resolve: {
+        url: 'externalUrlRedirectResolver'
+    },
+    data: {
+        externalUrl: 'https://search.google.com/local/writereview?placeid=ChIJnTxQ_Qx0m4gRebR-ShL8-fo'
+    }
+  },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'pay-rent/agricola', component: PayRentComponent,
@@ -228,6 +272,9 @@ const routes: Routes = [
   { path: 'pay-rent/barton', component: PayRentComponent,
     children: childroute
   },
+  { path: 'pay-rent/wade', component: PayRentComponent,
+  children: childroute
+},
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },
 ];

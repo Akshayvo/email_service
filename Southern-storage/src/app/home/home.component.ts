@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { contactsRockyCreek, hoursRockyCreek,
-         contactsAgricola, hoursAgricola,
+         contactsAgricola, hoursAgricola,contactsWade,hoursWade,
          contactsBarton, hoursBarton } from '../data/contact';
 import { featuresHead, serviceOffered } from '../data/home';
 
@@ -15,10 +15,12 @@ import { featuresHead, serviceOffered } from '../data/home';
 export class HomeComponent implements OnInit {
 
   contactsRockyCreek: any;
+  contactsWade:any;
   contactsBarton: any;
   contactsAgricola: any;
   hoursRockyCreek: any;
   hoursBarton: any;
+  hoursWade:any;
   hoursAgricola: any;
   features: any;
   serviceOffered: any;
@@ -51,6 +53,7 @@ export class HomeComponent implements OnInit {
     this.contactsRockyCreek = contactsRockyCreek;
     this.contactsBarton = contactsBarton;
     this.contactsAgricola = contactsAgricola;
+    this.contactsWade = contactsWade
   }
 
 
@@ -58,6 +61,7 @@ export class HomeComponent implements OnInit {
     this.hoursRockyCreek = hoursRockyCreek;
     this.hoursAgricola = hoursAgricola;
     this.hoursBarton = hoursBarton;
+    this.hoursWade = hoursWade;
    }
 
   public fetchFeatureHead() {

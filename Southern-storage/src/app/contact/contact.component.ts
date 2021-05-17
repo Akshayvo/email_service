@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { contactsRockyCreek, hoursRockyCreek,
          contactsAgricola, hoursAgricola,
-         contactsBarton, hoursBarton } from '../data/contact';
+         contactsBarton, hoursBarton ,hoursWade,contactsWade} from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { EmailService } from '../api-bundle/services/email.service';
@@ -25,12 +25,15 @@ export class ContactComponent implements OnInit {
   name: string;
   email: any;
   phone: any;
+  contactsWade:any;
+  hoursWade:any;
   subject: string;
   location: any;
   message: string;
   places = [ 'Southern Self Storage - Rocky Creek',
              'Southern Self Storage - Agricola',
-             'Southern Self Storage - Barton' ];
+             'Southern Self Storage - Barton',
+             'Southern Self Storage - Wade' ];
   receiveremail: string;
   completeMessage: string;
 
@@ -82,12 +85,14 @@ export class ContactComponent implements OnInit {
     this.contactsRockyCreek = contactsRockyCreek;
     this.contactsAgricola = contactsAgricola;
     this.contactsBarton = contactsBarton;
+    this.contactsWade = contactsWade;
   }
 
   public fetchHours() {
     this.hoursRockyCreek = hoursRockyCreek;
     this.hoursAgricola = hoursAgricola;
     this.hoursBarton = hoursBarton;
+    this.hoursWade = hoursWade;
   }
 
 onSubmit() {
@@ -108,6 +113,9 @@ onSubmit() {
     this.receiveremail = this.contactsAgricola[2].data;
   } else if (this.contactForm.value.location === 'Southern Self Storage - Barton') {
     this.receiveremail = this.contactsBarton[2].data;
+  }
+  else if (this.contactForm.value.location === 'Southern Self Storage - wade') {
+    this.receiveremail = this.contactsWade[2].data;
   }
   this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;

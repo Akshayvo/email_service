@@ -2,8 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { contactsRockyCreek, hoursRockyCreek,
          contactsAgricola, hoursAgricola,
-         contactsBarton, hoursBarton, socialLinks } from '../data/contact';
-import { tabs, tabsBarton } from '../data/location';
+         contactsBarton, hoursBarton,contactsWade, hoursWade, socialLinks } from '../data/contact';
+import { tabs, tabsBarton,tabsWade } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
@@ -65,7 +65,16 @@ export class LocationComponent implements OnInit {
           this.titleService.setTitle('Convenient Storage Units Near Lucedale, MS | Southern Storage');
           this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       }
+      else if (this.router.url.includes('/location/wade')) {
+        this.meta.addTag({
+          name: 'description',
+          content: `Take a moment to review our selection of self storage units at our Wade location, then give our friendly staff a call!`
+        });
+        this.titleService.setTitle('Affordable Storage Units in Wade | Southern Storage');
+        this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
     }
+    }
+
 
   ngOnInit() {
     window.scrollTo(0, 0);
@@ -80,8 +89,11 @@ export class LocationComponent implements OnInit {
         this.fetchDetailsRockyCreek();
     } else if (this.router.url.includes('/location/agricola')) {
       this.fetchDetailsAgricola();
-    } else {
+    } else if(this.router.url.includes('/location/barton')) {
       this.fetchDetailsBarton();
+    }
+    else if(this.router.url.includes('/location/wade')) {
+      this.fetchDetailsWade();
     }
  }
 
@@ -97,6 +109,9 @@ export class LocationComponent implements OnInit {
     } else if ( this.id === 2) {
       this.router.navigate(['/pay-rent/barton']);
     }
+    else if ( this.id === 2) {
+      this.router.navigate(['/pay-rent/wade']);
+    }
    }
 
    public navigateToReserve() {
@@ -110,6 +125,11 @@ export class LocationComponent implements OnInit {
       this.router.navigate(['/location/barton/reserveUnit'],
       );
     }
+    else if ( this.id === 3) {
+      this.router.navigate(['/location/wade/reserveUnit'],
+      );
+    }
+
    }
 
   public fetchDetailsRockyCreek() {
@@ -138,4 +158,12 @@ export class LocationComponent implements OnInit {
      this.tabs = tabsBarton;
      this.socialLinks = socialLinks;
    }
+   public fetchDetailsWade() {
+    this.name = 'Wade';
+    this.id = 3;
+    this.contacts = contactsWade;
+    this.hours = hoursWade;
+    this.tabs = tabsWade;
+    this.socialLinks = socialLinks;
+  }
 }

@@ -30,5 +30,9 @@ export class ViewRatesComponent implements OnInit {
       this.id = 3;
       this.heading = 'Southern Storage - Barton';
     }
+    else if (this.router.url.includes('/location/wade')) {
+      this.id = 4;
+      this.heading = 'Southern Storage - Wade';
+    }
   }
 }

@@ -6,7 +6,7 @@ import { TenantInfo } from '../models/tenant';
 import { loginDetail } from '../../data/pay-rent';
 import { AuthService } from '../services/auth.service';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsAgricola, contactsRockyCreek, contactsBarton } from '../../data/contact';
+import { contactsAgricola, contactsRockyCreek, contactsBarton,contactsWade } from '../../data/contact';
 
 
 @Injectable()
@@ -91,6 +91,9 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.contact = contactsRockyCreek;
     } else  if (this.router.url.includes('barton')) {
       this.contact = contactsBarton;
+    }
+    else  if (this.router.url.includes('wade')) {
+      this.contact = contactsWade;
     }
   }
 

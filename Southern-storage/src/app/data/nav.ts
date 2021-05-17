@@ -27,6 +27,12 @@ export const navLinks = [
                   path: '/location/barton',
                   name: 'barton'
               },
+              {
+                id: '4',
+                label: 'Wade',
+                path: '/location/wade',
+                name: 'wade'
+            },
         ]
     },
     {

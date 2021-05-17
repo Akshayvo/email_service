@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { unitSizerMall } from '../data/location';
+import { unitSizerMall ,unitSizerWade} from '../data/location';
 @Component({
   selector: 'app-unit-sizer',
   templateUrl: './unit-sizer.component.html',
@@ -23,13 +23,23 @@ export class UnitSizerComponent implements OnInit {
         this.id = 0;
     } else if (this.router.url.includes('/location/rocky-creek')) {
       this.id = 1;
-    } else {
+    } else if (this.router.url.includes('/location/barton')) {
       this.id = 2;
+    }
+    else if (this.router.url.includes('/location/wade')) {
+      this.id = 3;
     }
       this.fetchUnitSizer();
   }
 
   public fetchUnitSizer() {
-    this.unitSizer = unitSizerMall;
+    if(this.router.url.includes('/location/wade')){
+      this.unitSizer = unitSizerWade;
+    }
+    else{
+      this.unitSizer = unitSizerMall;
+    }
+    
+    
   }
 }

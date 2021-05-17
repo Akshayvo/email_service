@@ -70,6 +70,40 @@ export const tabsBarton = [
     },
 ];
 
+export const tabsWade = [
+    {
+        id: '1',
+        name: 'Storage Units',
+        path: './storage-units',
+        active: true,
+    },
+    {
+        id: '2',
+        name: 'Unit Sizer',
+        path: './unit-sizer',
+        active: false,
+    },
+    // {
+    //     id: '3',
+    //     name: 'Move In',
+    //     path: './move-in',
+    //     active: false,
+    // },
+    // {
+    //     id: '4',
+    //     name: 'About Us',
+    //     path: './about',
+    //     active: false,
+    // },
+    // {
+    //     id: '5',
+    //     name: 'Directions',
+    //     path: './directions',
+    //     active: false,
+    // },
+];
+
+
 export const unitSizerMall = [
     {
         size: '5\' x 10\' General Storage',
@@ -110,6 +144,63 @@ export const unitSizerMall = [
             { content: 'suitcases', },
             { content: 'lamps', },
         ],
+    },
+];
+
+export const unitSizerWade = [
+    {
+        size: '5\' x 10\' General Storage',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/5x10.png',
+        data: `This unit is approximately 25 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small desks', },
+            { content: 'Small bookcases', },
+            { content: 'Suitcases', },
+            { content: 'Lamps', },
+        ],
+    },
+
+    {
+        size: '10\' x 10\' General Storage',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x10.png',
+        data: `This unit is approximately 50 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+                    { content: 'Chairs', },
+                    { content: 'Small desks', },
+                    { content: 'Small bookcases', },
+                    { content: 'Suitcases', },
+                    { content: 'Lamps', },
+        ],
+    },
+    {
+        size: '10\' x 15\' General Storage',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        data: `This unit is approximately 150 sq feet of space that can hold
+                the contents of one small room or large closet, such as: `,
+        amenities: [
+            { content: 'chairs', },
+            { content: 'small desks', },
+            { content: 'small bookcases', },
+            { content: 'suitcases', },
+            { content: 'lamps', },
+        ],
+    },
+    {
+        text: '10\' x 20\' Storage Unit',
+        alt: '10\' x 20\' Storage Unit Graphic ',
+        img: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
+        data: `This unit is approximately 200 sq feet of space that can hold the contents of about five rooms.
+        `,
+        amenities: [
+            { content: 'Appliances', },
+            { content: 'Car or Small Boat', },
+            { content: 'Furniture', },
+            { content: 'Bookcases', },
+            { content: 'Tow Trailer', },
+            ],
     },
 ];
 
@@ -215,6 +306,18 @@ export const directionAgricola = [
 ] ;
 
 export const directionBarton = [
+    {
+        label: 'Directions From Lucedale',
+        datas: [
+        { content: 'Head south on Winter St toward Church St - 0.6 miles.'},
+        { content: 'Continue onto MS-26 W - 282ft' },
+        { content: 'Turn left onto Old Highway 63 - 4.3 miles' },
+        { content: 'Turn left onto MS-63 S - 4.6 miles' }
+        ],
+    },
+] ;
+
+export const directionWade = [
     {
         label: 'Directions From Lucedale',
         datas: [

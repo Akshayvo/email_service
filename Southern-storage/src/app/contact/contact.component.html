@@ -140,6 +140,21 @@
                 </span>  
             </div>
 
+            <div class="for-village pt-5">
+              <h2> Southern Storage - Wade</h2>
+              <div class="py-2">
+                  <span *ngFor="let contact of contactsWade; let i = index">
+                    <span><b>{{contact.label}}</b></span><span class="contact-links" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect">&nbsp;{{contact.data}}</a></span>
+                    <ng-template #other_content>&nbsp;{{contact.data}}</ng-template><br>
+                  </span>
+              </div>
+            
+              <span><b> Office: </b></span> <br>
+              <span *ngFor="let hour of hoursWade">
+                  <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>  
+          </div>
+
 
         </div>
       </div>
