@@ -28,19 +28,13 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
       this.fetchDetailsLocation1();
-  } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
     this.fetchDetailsLocation2();
-  } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+  } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
     this.fetchDetailsLocation3();
-  } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
-    this.fetchDetailsLocation4();
-  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
-    this.fetchDetailsLocation5();
-  } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
-    this.fetchDetailsLocation6();
-  }
+  } 
 }
 
   public fetchDetailsLocation1() {

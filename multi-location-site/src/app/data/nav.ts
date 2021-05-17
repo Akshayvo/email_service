@@ -13,33 +13,18 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Foley',
-                path: `${environment.locationName}/foley`,
+                label: 'Location 1',
+                path: `${environment.locationName}/location-1`,
               },
             {
                 id: '2',
-                label: 'Silverhill',
-                path: `${environment.locationName}/silverhill`,
+                label: 'Location 2',
+                path: `${environment.locationName}/location-2`,
             },
               {
                 id: '3',
-                label: 'Barnwell',
-                path: `${environment.locationName}/barnwell`,
-            },
-            {
-                id: '4',
-                label: 'Belforest',
-                path: `${environment.locationName}/belforest`,
-            },
-            {
-                id: '5',
-                label: 'Fairhope',
-                path: `${environment.locationName}/fairhope`,
-            },
-            {
-                id: '6',
-                label: 'Robertsdale',
-                path: `${environment.locationName}/robertsdale`,
+                label: 'Location 3',
+                path: `${environment.locationName}/location-3`,
             },
         ]
     },

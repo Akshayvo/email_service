@@ -26,11 +26,11 @@ export class DirectionsComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
        this.fetchDetailsLocation1();
-     } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+     } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
        this.fetchDetailsLocation2();
-    } else  if (this.router.url.includes(`${environment.locationName}/barnwell`))  {
+    } else  if (this.router.url.includes(`${environment.locationName}/location-3`))  {
        this.fetchDetailsLocation3();
     }  else  if (this.router.url.includes(`${environment.locationName}/belforest`))  {
       this.fetchDetailsLocation4();

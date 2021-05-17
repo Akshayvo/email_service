@@ -5,11 +5,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6, } from '../../data/contact';
+import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4, ogPayRentPageLocation5,
-   twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4,ogPayRentPageLocation6,
-   twitterPayRentPageLocation5, twitterPayRentPageLocation6 } from '../../data/script';
+import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3,
+   twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3 } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -131,19 +130,19 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   public fetchContactDetail() {
 
-    if (this.router.url.includes('foley')) {
+    if (this.router.url.includes('location-1')) {
       this.id = 1;
       this.name = 'Storage Plus of Baldwin County - Foley';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
-    } else  if (this.router.url.includes('silverhill')) {
+    } else  if (this.router.url.includes('location-2')) {
       this.id = 2;
       this.name = 'Storage Plus of Baldwin County - Silverhill';
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
-    } else  if (this.router.url.includes('barnwell')) {
+    } else  if (this.router.url.includes('location-3')) {
       this.id = 3;
       this.name = 'Storage Plus of Baldwin County - Barnwell';
       this.contact = contactsLocation3;
@@ -161,21 +160,21 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('foley')) {
+    if (this.router.url.includes('location-1')) {
       this.og = ogPayRentPageLocation1;
-    } else  if (this.router.url.includes('silverhill')) {
+    } else  if (this.router.url.includes('location-2')) {
       this.og = ogPayRentPageLocation2;
-    } else if (this.router.url.includes('barnwell')) {
+    } else if (this.router.url.includes('location-3')) {
       this.og = ogPayRentPageLocation3;
     }
     }
 
 public fetchTwitter() {
-  if (this.router.url.includes('foley')) {
+  if (this.router.url.includes('location-1')) {
     this.twitter = twitterPayRentPageLocation1;
-  } else if (this.router.url.includes('silverhill')) {
+  } else if (this.router.url.includes('location-2')) {
       this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('barnwell')) {
+  } else if (this.router.url.includes('location-3')) {
         this.twitter = twitterPayRentPageLocation3;
   }
 }

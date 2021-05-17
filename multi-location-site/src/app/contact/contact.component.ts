@@ -4,9 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3, hoursLocation4, contactsLocation4,
-          hoursLocation5, contactsLocation5,
-          hoursLocation6, contactsLocation6,  } from '../data/contact';
+          hoursLocation3  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -129,12 +127,6 @@ public fetchMetaData() {
       this.mailSent = false;
     } else if ( this.locationId === '3' ) {
       this.fetchContactDetailsLocation3();
-    } else if ( this.locationId === '4' ) {
-      this.fetchContactDetailsLocation4();
-    } else if ( this.locationId === '5' ) {
-      this.fetchContactDetailsLocation5();
-    } else if ( this.locationId === '6' ) {
-      this.fetchContactDetailsLocation6();
     }
   }
 
@@ -162,24 +154,6 @@ public fetchMetaData() {
     this.heading = `Storage Plus of Baldwin County - Barnwell`;
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
-  }
-
-  public fetchContactDetailsLocation4() {
-    this.heading = `Storage Plus of Baldwin County - Belforest`;
-    this.contactDetails = contactsLocation4;
-    this.hoursDetails = hoursLocation4;
-  }
-
-  public fetchContactDetailsLocation5() {
-    this.heading = `Storage Plus of Baldwin County - Fairhope`;
-    this.contactDetails = contactsLocation5;
-    this.hoursDetails = hoursLocation5;
-  }
-
-  public fetchContactDetailsLocation6() {
-    this.heading = `Storage Plus of Baldwin County - Robertsdale`;
-    this.contactDetails = contactsLocation6;
-    this.hoursDetails = hoursLocation6;
   }
 
 onSubmit() {

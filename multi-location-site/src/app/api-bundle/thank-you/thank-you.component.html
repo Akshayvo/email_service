@@ -1,21 +1,21 @@
-<app-script-hack type="application/javascript">
-  {{script}}
- </app-script-hack>
 <div class="text-center">
   <h1>Thank You!</h1>
-  <!-- <p>We've received your reservation! One of our friendly and knowledgable staff will be in touch
-    shortly to confirm your details! If you have any questions, please give our office a call! We look forward to meeting you!
-  </p> -->
 
   <div *ngIf="PaymentAmount > 0"  class="go-to-home py-4">
     <div *ngIf="!navigateToMoveIn && !navigateToReserve">
-        Your payment of <strong>${{PaymentAmount}}</strong> was successful.<br> <span *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'"> Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .</span>
+        Your payment of <strong>${{PaymentAmount | number : '1.2-2'}}</strong> was successful.<br> 
+        <span *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'"> Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .
+        </span>
     </div>
     <div *ngIf="navigateToReserve && strConfirmation">
-        Your payment of <strong>${{PaymentAmount}}</strong> was successful. <span *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'"> Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .</span> Your reservation is confirmed.
+        Your payment of <strong>${{PaymentAmount | number : '1.2-2'}}</strong> was successful. 
+        <span *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'"> Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .
+        </span> Your reservation is confirmed.
     </div>
     <div *ngIf="navigateToMoveIn">
-        Your payment of <strong>${{PaymentAmount}}</strong> was successful. <span *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'"> Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .</span> Please check your email to sign your digital lease agreement. Your move-in is not complete without a signed lease agreement.
+        Your payment of <strong>${{PaymentAmount | number : '1.2-2'}}</strong> was successful. 
+        <span *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'"> Your confirmation number is: <strong>{{CCApprovalCode}}</strong> .
+        </span> Please check your email to sign your digital lease agreement. Your move-in is not complete without a signed lease agreement.
     </div>
   </div>
 
@@ -33,7 +33,7 @@
                     </tr>
                     <tr>
                         <td class="td-1">Rate</td>
-                        <td> <span *ngIf="monthlyRate">$</span>{{monthlyRate}}</td>
+                        <td> <span *ngIf="monthlyRate">$</span>{{monthlyRate | number : '1.2-2'}}</td>
                     </tr> 
                     <tr *ngIf="!navigateToMoveIn">
                         <td> Move In Date</td>

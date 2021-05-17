@@ -89,7 +89,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: `${environment.locationName}/foley`,
+    { path: `${environment.locationName}/location-1`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -124,7 +124,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/silverhill`,
+    { path: `${environment.locationName}/location-2`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -159,7 +159,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/barnwell`,
+    { path: `${environment.locationName}/location-3`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -302,7 +302,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/foley', component: HomeComponent,
+    { path: 'review/location-1', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -310,7 +310,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/silverhill', component: HomeComponent,
+  { path: 'review/location-2', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -318,7 +318,7 @@ export const apiRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/barnwell', component: HomeComponent,
+  { path: 'review/location-3', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -353,15 +353,15 @@ export const apiRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/foley', component: PayRentComponent,
+    path: 'pay-rent/location-1', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/silverhill', component: PayRentComponent,
+    path: 'pay-rent/location-2', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/barnwell', component: PayRentComponent,
+    path: 'pay-rent/location-3', component: PayRentComponent,
     children: childroute
   },
   {
@@ -378,9 +378,9 @@ export const apiRoutes = [
   },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-foley', component: ContactUsComponent},
-  { path: 'contact-silverhill', component: ContactUsComponent},
-  { path: 'contact-barnwell', component: ContactUsComponent},
+  { path: 'contact-location-1', component: ContactUsComponent},
+  { path: 'contact-location-2', component: ContactUsComponent},
+  { path: 'contact-location-3', component: ContactUsComponent},
   { path: 'contact-belforest', component: ContactUsComponent},
   { path: 'contact-fairhope', component: ContactUsComponent},
   { path: 'contact-robertsdale', component: ContactUsComponent},
@@ -392,7 +392,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: `${environment.locationName}/foley`,
+  { path: `${environment.locationName}/location-1`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -403,7 +403,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/silverhill`,
+  { path: `${environment.locationName}/location-2`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -414,7 +414,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: `${environment.locationName}/barnwell`,
+  { path: `${environment.locationName}/location-3`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -458,7 +458,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/foley', component: HomeComponent,
+  { path: 'review/location-1', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -466,7 +466,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/silverhill', component: HomeComponent,
+  { path: 'review/location-2', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -474,7 +474,7 @@ export const iFrameRoutes = [
         externalUrl: ''
     }
   },
-  { path: 'review/barnwell', component: HomeComponent,
+  { path: 'review/location-3', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -508,9 +508,9 @@ export const iFrameRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-foley', component: PayRentFloridaComponent },
-  { path: 'pay-rent-silverhill', component: PayRentChesterComponent},
-  { path: 'pay-rent-barnwell', component: PayRentMontgomeryComponent},
+  { path: 'pay-rent-location-1', component: PayRentFloridaComponent },
+  { path: 'pay-rent-location-2', component: PayRentChesterComponent},
+  { path: 'pay-rent-location-3', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},
   { path: 'pay-rent-fairhope', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-robertsdale', component: PayRentMiddletownComponent},

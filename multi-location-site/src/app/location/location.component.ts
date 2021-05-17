@@ -1,26 +1,23 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { contactsLocation1, hoursLocation1, hoursLocation1AcessHours,
-          contactsLocation2, hoursLocation2, hoursLocation3, contactsLocation3, contactsLocation4, hoursLocation4,
-          contactsLocation5, hoursLocation5, contactsLocation6, hoursLocation6,
+          contactsLocation2, hoursLocation2, hoursLocation3, contactsLocation3,
           } from '../data/contact';
-import { heading1, heading2, tabs, heading4, heading5, heading6, heading3  } from '../data/location';
+import { heading1, heading2, tabs, heading3  } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
-import { Location1Script, Location2Script, Location3Script, Location4Script, Location5Script, Location6Script,
-  ogLocation1, ogLocation2, ogLocation3, ogLocation4, ogLocation5, ogLocation6, twitterLocation1,
-  twitterLocation2, twitterLocation3, twitterLocation4, twitterLocation5, twitterLocation6 } from '../data/script';
+import { Location1Script, Location2Script, Location3Script,
+  ogLocation1, ogLocation2, ogLocation3, twitterLocation1,
+  twitterLocation2, twitterLocation3 } from '../data/script';
 import { featuresHead, featuresList, location1FeaturesHead, location2FeaturesHead,
-  location3FeaturesHead, location4FeaturesHead,location5FeaturesHead,location6FeaturesHead } from '../data/home';
+  location3FeaturesHead } from '../data/home';
 import { UaParserService } from '../services/ua-parser.service';
 import { location1PageContent, location1PageTitle,
         location2PageContent, location2PageTitle,
         location3PageContent, location3PageTitle,
-        location4PageContent, location4PageTitle,
-        location5PageContent, location5PageTitle,
-        location6PageContent, location6PageTitle} from '../data/title';
+        } from '../data/title';
 import { environment } from '../../environments/environment';
 
 
@@ -96,7 +93,7 @@ id = 3;
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
-      if (this.router.url.includes(`${environment.locationName}/foley`)) {
+      if (this.router.url.includes(`${environment.locationName}/location-1`)) {
             this.meta.addTag({
               name: 'description',
               content: `${this.location1PageContent}`
@@ -120,7 +117,7 @@ id = 3;
                 content: element.content
               })
             });
-    } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
            this.meta.addTag({
              name: 'description',
              content: `${this.location2PageContent}`
@@ -144,7 +141,7 @@ id = 3;
               content: element.content
             })
           });
-      } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+      } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
         this.meta.addTag({
           name: 'description',
           content: `${this.location3PageContent}`
@@ -206,44 +203,44 @@ id = 3;
 
   
   public fetchOg() {
-    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
       this.og = ogLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
       this.og = ogLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
       this.og = ogLocation3;
     }
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
         this.twitter = twitterLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
       this.twitter = twitterLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
       this.twitter = twitterLocation3;
     }
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
         this.fetchDetailsLocation1();
-    } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
       this.fetchDetailsLocation2();
-    } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
       this.fetchDetailsLocation3();
     }
  }
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate([`${environment.locationName}/foley/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/location-1/reserve-unit`],
           );
   } else if ( this.locationId === 2 ) {
-    this.router.navigate([`${environment.locationName}/silverhill/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/location-2/reserve-unit`],
           );
   }  else if ( this.locationId === 3 ) {
-    this.router.navigate([`${environment.locationName}/barnwell/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/location-3/reserve-unit`],
          );
   }
  }

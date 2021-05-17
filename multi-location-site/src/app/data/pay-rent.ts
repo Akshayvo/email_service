@@ -15,17 +15,17 @@ export const tableData = [
   // {
   //   facility: ' Foley',
   //   address: '17860 US-98, Foley, AL 36535',
-  //   url: 'foley/rent-sub/login'
+  //   url: 'location-1/rent-sub/login'
   // },
   // {
   //   facility: 'Silverhill',
   //   address: '15410 AL-104, Silverhill, AL 36576',
-  //   url: 'silverhill/rent-sub/login'
+  //   url: 'location-2/rent-sub/login'
   // },
   // {
   //   facility: 'Barnwell',
   //   address: '8089A US-98, Fairhope, AL 36532',
-  //   url: 'barnwell/rent-sub/login'
+  //   url: 'location-3/rent-sub/login'
   // },
   // {
   //   facility: 'Belforest',
@@ -48,17 +48,17 @@ export const tableDataContactPage = [
   {
     facility: ' Foley',
     address: '17860 US-98, Foley, AL 36535',
-    url: 'foley'
+    url: 'location-1'
   },
   {
     facility: 'Silverhill',
     address: '15410 AL-104, Silverhill, AL 36576',
-    url: 'silverhill'
+    url: 'location-2'
   },
   {
     facility: 'Barnwell',
     address: '8089A US-98, Fairhope, AL 36532',
-    url: 'barnwell'
+    url: 'location-3'
   },
   {
     facility: 'Belforest',
