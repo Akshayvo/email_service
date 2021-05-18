@@ -29,6 +29,11 @@ export class TabsComponent implements OnInit {
 
     public fetchTabs() {
       this.tabData = this.tabs;
-      console.log('tabData',  this.tabData);
-    }
+      this.sub = this.route.queryParams.subscribe(params => {
+             this.name = params['name'],
+             this.currentActiveTab = params['currentTab'];
+             this.selectedTab = this.currentActiveTab;
+           });
+     }
+    
 }

@@ -54,7 +54,7 @@ const withoutTab = [
 ];
 
 const withTab = [
-  { path: '', redirectTo: ' ', pathMatch: 'full'},
+  { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
   { path: 'rent-sub', component: RentSubComponent,
     children: [
       { path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -70,7 +70,7 @@ const withTab = [
   },
   { path: 'sign-up', component: SignUpComponent,
     children: [
-      // { path: '', redirectTo: 'login', pathMatch: 'full'},
+      { path: '', redirectTo: 'login', pathMatch: 'full'},
       { path: 'login', component: LoginComponent },
       { path: 'forgotPassword', component: ForgotPasswordComponent },
       { path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
@@ -345,9 +345,6 @@ export const apiRoutes = [
   { path: 'contact-location-1', component: ContactUsComponent},
   { path: 'contact-location-2', component: ContactUsComponent},
   { path: 'contact-location-3', component: ContactUsComponent},
-  { path: 'contact-belforest', component: ContactUsComponent},
-  { path: 'contact-fairhope', component: ContactUsComponent},
-  { path: 'contact-robertsdale', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
 ];

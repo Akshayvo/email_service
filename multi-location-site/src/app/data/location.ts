@@ -2,37 +2,37 @@ export const tabs = [
     {
         id: '1',
         name: 'Storage Units',
-        path: './storage-units',
+        path: 'storage-units',
         active: true,
     },
     {
         id: '2',
         name: 'Unit Sizer',
-        path: './unit-sizer',
+        path: 'unit-sizer',
         active: false,
     },
     {
         id: '3',
         name: 'Reserve Unit',
-        path: './reserve-unit',
+        path: 'reserve-unit',
         active: false,
     },
     {
         id: '4',
         name: 'Move In',
-        path: './move-in',
+        path: 'move-in',
         active: false,
     },
     {
         id: '5',
         name: 'About Us',
-        path: './about',
+        path: 'about',
         active: false,
     },
     {
         id: '6',
         name: 'Directions',
-        path: './directions',
+        path: 'directions',
         active: false,
     },
 ];
