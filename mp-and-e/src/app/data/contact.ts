@@ -2,9 +2,12 @@ export const contactsHomePage = [
     {
         id: 1,
         label: 'Address: ',
-        data: 'N4211 20th Ct, Montello, WI 53949',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/79tjjYk1bMLyByQF6'
+        // data: 'N4211 20th Ct, Montello, WI 53949',
+        data: '',
+        // class: 'fas fa-map-marker-alt mr-2 iconColor',
+        class:'',
+        // redirect: 'https://goo.gl/maps/79tjjYk1bMLyByQF6'
+        redirect:''
     },
     {
         id: 2,
@@ -38,13 +41,13 @@ export const contactsLocation1 = [
     {
         id: 1,
         label: 'Facility Address: ',
-        data: 'W2739 Lower Locks Rd, Montello, WI 53949',
+        data: 'W2739 Lower Locks Rd(State Hwy 22), Montello, WI 53949',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/zgNoRWd4JgdwXVQaA'
     },
     {
         id: 2,
-        label: 'Address: ',
+        label: 'Mailing Address: ',
         data: 'N4211 20th Ct, Montello, WI 53949',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/yfXUeASF33TbRAiF9'
@@ -103,7 +106,7 @@ export const contactsLocation2 = [
     },
     {
         id: 2,
-        label: 'Address: ',
+        label: 'Mailing Address: ',
         data: 'N4211 20th Ct, Montello, WI 53949',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/yfXUeASF33TbRAiF9'

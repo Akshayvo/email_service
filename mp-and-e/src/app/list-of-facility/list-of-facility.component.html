@@ -9,13 +9,13 @@
           <h2>Montello</h2>
           <!-- <p> -->
             <div *ngFor="let contact of contactsBrookside" class="contact-label pt-2">
-                <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
-              <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' || contact?.label === 'Facility Address: '  else other_content">
+                <div  *ngIf="contact.label != 'Mailing Address: '"><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+              <div class="contact-links" *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' || contact?.label === 'Facility Address: '  else other_content">
                 <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
                   <h3>{{contact.data}}</h3>
                 </a>
               </div>
-              <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+              <!-- <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br> -->
             </div>
           <!-- </p> -->
           <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/wisconsin/montello/storage-units']" role="button">View Rates</a>                
@@ -51,13 +51,13 @@
           <div class="col-lg-5 pt-3">
             <h2>Wautoma</h2>
             <div *ngFor="let contact of contactsAndrews" class="contact-label pt-2">
-              <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+              <div *ngIf="contact.label != 'Mailing Address: '" ><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
             <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: '|| contact?.label === 'Facility Address: ' else other_content">
               <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
                 <h3>{{contact.data}}</h3>
               </a>
             </div>
-            <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+            <!-- <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br> -->
           </div>
             <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/wisconsin/wautoma/storage-units']" role="button">View Rates</a>                
             <!-- <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/montello/reserve-unit']" role="button"> Reserve Unit</a>                                   -->

@@ -14,7 +14,7 @@ export const tableHeader = [
 export const tableData = [
   {
     facility: ' Montello',
-    address: 'W2739 Lower Locks Rd, Montello, WI 53949',
+    address: 'W2739 Lower Locks Rd(State Hwy 22), Montello, WI 53949',
     url: 'montello/rent-sub/login'
   },
   {
@@ -47,7 +47,7 @@ export const tableData = [
 export const tableDataContactPage = [
   {
     facility: ' Montello',
-    address: 'W2739 Lower Locks Rd, Montello, WI 53949',
+    address: 'W2739 Lower Locks Rd(State Hwy 22), Montello, WI 53949',
     url: 'montello',
     redirect: 'https://goo.gl/maps/zgNoRWd4JgdwXVQaA',
   },
