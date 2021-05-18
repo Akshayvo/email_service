@@ -20,7 +20,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
-
+  facilityName: string;
   descriptionVR: string;
   monthlyRateVR: number;
   unitTypeIdVR: number;
@@ -41,7 +41,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
   defaultClimateString = ' ';
-
+  state: string;
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
   objCharges: ObjCharges;
@@ -71,6 +71,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
     this.facilityLocation = this.dataSharingService.facilityLocation;
+    this.facilityName = environment.facilityName;
+    this.state = environment.locationName;
   }
 
   public fetchThData() {
