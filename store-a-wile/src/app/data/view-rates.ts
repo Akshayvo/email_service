@@ -2,7 +2,10 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: ``,
+      p: `Stor-A-Wile serves Woodland, La Center, Battleground, and the surrounding area with quality,
+      24-hour access self storage and outdoor parking services. Our friendly customer service, and 
+      modern amenities such as online reservations, a 24-hour access tenant portal, and automatic
+      payments make your storage experience an easy one.`,
     },
     {
       p: ``

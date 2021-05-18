@@ -25,13 +25,13 @@ export const aboutUsAlt = ``;
 export const aboutUsHeading = `Affordable Self Storage Units & Outside Parking in Woodland`;
 
 export const aboutUs = [
-    {
-        p: `Stor-A-Wile serves Woodland, La Center, Battleground, and the surrounding area with
-        quality, 24-hour access self storage and outdoor parking services. Our friendly customer
-        service, and modern amenities such as online reservations, a 24-hour access tenant portal,
-        and automatic payments make your storage experience an easy one.
-        `,
-    },
+    // {
+    //     p: `Stor-A-Wile serves Woodland, La Center, Battleground, and the surrounding area with
+    //     quality, 24-hour access self storage and outdoor parking services. Our friendly customer
+    //     service, and modern amenities such as online reservations, a 24-hour access tenant portal,
+    //     and automatic payments make your storage experience an easy one.
+    //     `,
+    // },
     {
         p: `If conveniently located, 24-hour access self storage is what you're looking for, take a
         moment to check out our Unit Sizer page, then give our friendly staff a call at (360) 225-5097
