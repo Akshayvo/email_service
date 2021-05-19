@@ -19,7 +19,7 @@ export const unitSizerPageContent = `Are you not sure what size unit you require
 export const contactPageTitle = `Contact Us  | Goodlette Self Storage`;
 export const contactPageContent = `If you have questions about your account or the services we offer, take a moment to fill our out form, or use the contact information to speak with us!`;
 
-export const thankYouPageTitle = `Thank You For Reserving Your Unit at Sample Self Storage!`;
+export const thankYouPageTitle = `Thank You For Reserving Your Unit at Goodlette Self Storage!`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
 
 export const privacyPolicyPageTitle = `Privacy Policy | Goodlette Self Storage`;

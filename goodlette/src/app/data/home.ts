@@ -34,16 +34,16 @@ export const aboutUsHeading = `Climate Controlled & Regular Self Storage Units i
 
 export const aboutUs = [
     {
-        p: `Goodlette Self Storage is conveniently located on Goodlette-Frank Rd between Central Ave and 5th Ave North a stone’s throw from Downtown Naples. Our well-lit, well-maintained facility has been serving the community with affordable, well-maintained self storage services including recreational vehicle and boat parking since 1985.`,
+        p: `Goodlette Self Storage is conveniently located on Goodlette-Frank Rd between Central Ave and 5th Ave North a stone’s throw from Downtown Naples. Our well-lit facility has been serving the community with affordable, well-maintained self storage services including recreational vehicle and boat parking since 1985.`,
     },
     {
-        p: `As a locally owned business, we go above and beyond to offer our customers every amenity to make their stay with Goodlette Self Storage easier. Check out our live inventory and rates on this website, then reserve your unit in minutes. You can even perform a contactless rental right through our website. Once you arrive at the facility, you’ll find all of our units are located on a single level. All of our regular outdoor units are drive-up for easy loading and unloading. `,
+        p: `As a locally owned business, we go above and beyond to offer our customers every amenity to make their stay with Goodlette Self Storage easier. Check out our live inventory and rates on this website, then reserve your unit in minutes. You can even perform a contactless rental right through our website. Once you arrive at the facility, you’ll find all of our units are located on a single level. All of our regular outdoor units are drive-up for easy loading and unloading.`,
     },
     {
-        p: `Goodlette Self Storage is well-lit, fenced in covered by plenty of security cameras, and is designed to ensure a sense of security at all times. Our on-site manager is there to accept payments, assist in the move- answer questions and keep an eye on the facility with regular lot-checks.`,
+        p: `Goodlette Self Storage is well-lit, covered by plenty of security cameras, and is designed to ensure a sense of security at all times. Our on-site manager is there to accept payments, assist in the move- answer questions, and keep an eye on the facility with regular lot checks.`,
     },
     {
-        p: `Whether you’re a residential storage user looking for some extra elbow-room around the house, or if you’re a growing business that needs 24-hour access to your outdoor unit, we’ve got a number of unit sizes at affordable rates. Check out our current availability and pricing, then reserve or rent your unit in minutes. Still have questions? Give us a call! We can’t wait to meet you!`,
+        p: `Whether you’re a residential storage user looking for some extra elbow room around the house, or if you’re a growing business that needs 24-hour access to your outdoor unit, we’ve got a number of unit sizes at affordable rates. Check out our current availability and pricing, then reserve or rent your unit in minutes. Still have questions? Give us a call! We can’t wait to meet you!`,
     }
     
 ];
@@ -83,7 +83,10 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Self Storage Units in Naples, FL`,
-        blurb: `24 Hour Access Self Storage in Ennismore
-        Robinson Storage is Ennismore's newest self storage facility, and we come complete with all of the amenities you need to make your de-cluttering, renovation, or moving project affordable and easy! Our facility is secured by keypad-activated electronic gates, and is well-lit to ensure a sense of safety at all times. You'll get all of that plus awesome customer service at a fair price with Robinson Storage!`,
+        blurb: `Goodlette Self Storage has been serving Naples with clean, well-maintained self storage and boat
+        storage at affordable rates since 1985. Our facility comes complete with all of the amenities you need
+        to make that next storage project quick and easy. From our well-lit grounds, and 24-hour monitored security
+        camera to our online reservation, rental, and payment portal, we've got your self storage and boat storage
+        needs covered!`,
     }
 ];
