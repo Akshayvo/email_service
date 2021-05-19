@@ -14,7 +14,7 @@ export const tabs = [
     {
       id: '3',
       name: 'Update Tenant Information',
-      path: './update',
+      path: './update/login',
       active: false,
     },
   ];

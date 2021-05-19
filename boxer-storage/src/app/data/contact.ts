@@ -609,9 +609,9 @@ export const contactsLocation10 = [
     {
         id: 2,
         label: 'Mailing Address: ',
-        data: '',
-        class: '',
-        redirect: ''
+        data: '3609 32nd St SE, Kentwood, MI 49512',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/V9mQLpHMRbH1CtK4A'
     },
 ];
 
@@ -660,9 +660,9 @@ export const contactsLocation11 = [
     {
         id: 2,
         label: 'Mailing Address: ',
-        data: '',
-        class: '',
-        redirect: ''
+        data: '3609 32nd St SE, Kentwood, MI 49512',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/V9mQLpHMRbH1CtK4A'
     },
 ];
 

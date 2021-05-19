@@ -69,6 +69,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { FaqComponent } from './faq/faq.component';
 import { UpdateDetailsComponent } from './api-bundle/update-details/update-details.component';
 import { UpdateComponent } from './api-bundle/update/update.component';
+import { OrderByPipe } from './order-by.pipe';
 
 
 @NgModule({
@@ -125,7 +126,8 @@ import { UpdateComponent } from './api-bundle/update/update.component';
     PhotosComponent,
     FaqComponent,
     UpdateComponent,
-    UpdateDetailsComponent
+    UpdateDetailsComponent,
+    OrderByPipe
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

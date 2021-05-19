@@ -82,7 +82,7 @@ const withTab = [
           // canActivate: [VerifictionCodeGuard]
         ]
       },
-      { path: 'update', component: UpdateComponent,
+      { path: `update`, component: UpdateComponent,
       children: [
         {path: '', redirectTo: 'login', pathMatch: 'full'},
         {path: 'login', component: LoginComponent },
