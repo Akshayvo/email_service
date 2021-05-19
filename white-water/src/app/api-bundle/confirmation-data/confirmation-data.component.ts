@@ -201,6 +201,7 @@ getTenantUnitData() {
   this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
+  console.log(this.dataSharingService.LstUnitTypes);
 }
 
   addTenant(data: any): void {
