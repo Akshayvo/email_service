@@ -482,15 +482,16 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
   getData() {
     this.getDataSubscribe$ = this.fetchDataService.getData()
        .subscribe(unitTypesResponse => {
+        if(this.dataSharingService.LstUnitTypes){
+       const index = unitTypesResponse.lstUnitTypes.findIndex(x => x.UnitTypeID === this.dataSharingService.LstUnitTypes.UnitTypeID);
        this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
        this.getFilterLstUnitTypes(unitTypesResponse);
-       if (this.filterLstUnitTypes.length != 0) {
-         const defaultMonthlyValue = this.filterLstUnitTypes[0].MonthlyRate;
-         this.description = this.filterLstUnitTypes[0].Description;
-         this.reservationFeeTax = this.filterLstUnitTypes[0].ReservationFeeTax;
-         this.reservationFee = this.filterLstUnitTypes[0].ReservationFee;
-         this.unitTypeID = this.filterLstUnitTypes[0].UnitTypeID;
-         this.MoveIn.intUnitTypeID = this.unitTypeID || this.filterLstUnitTypes[0].UnitTypeID;
+       if (index && index>=0 ) {
+         const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[index].MonthlyRate;
+         this.description = unitTypesResponse.lstUnitTypes[index].Description;
+         this.reservationFeeTax = unitTypesResponse.lstUnitTypes[index].ReservationFeeTax;
+         this.reservationFee = unitTypesResponse.lstUnitTypes[index].ReservationFee;
+         this.MoveIn.intUnitTypeID = this.unitTypeID || unitTypesResponse.lstUnitTypes[index].UnitTypeID;
          this.unitTypeId =
          this.dataSharingService.getReservationData().UnitTypeID || this.filterLstUnitTypes[0].UnitTypeID;
          this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
@@ -528,7 +529,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
          });
          this.dataSharingService.LstUnitTypes.Description = serviceDescriptionValue;
          this.dataSharingService.LstUnitTypes.MonthlyRate = serviceMonthlyValue;
-       }
+       }}
      });
    }
 
