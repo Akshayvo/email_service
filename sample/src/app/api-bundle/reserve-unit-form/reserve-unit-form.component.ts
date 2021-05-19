@@ -4,7 +4,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
-import { option, option1 } from '../../data/view-rates';
+import { MilitaryBranch, MilitaryTypes, option, option1 } from '../../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
@@ -93,8 +93,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   premium: number;
   minDay: number;
   maxDay: number;
-
-
+  militaryTypes = [];
+  militaryBranch = [];
   MoveInStringParent: string;
 
   tenant: any;
@@ -188,6 +188,16 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
+        DriversLicense: ['', Validators.required],
+        DriversLicenseExpDate: ['', Validators.required],
+        DateOfBirth: ['', Validators.required],
+        MilitaryType: ['', Validators.required],
+        MilitaryBranch: ['', Validators.required],
+        MilitaryID: ['', Validators.required],
+        DeployedUntil: ['', Validators.required],
+        MilitaryDivision: ['', Validators.required],
+        CommandingOfficer: ['', Validators.required],
+        CommandingOfficerPhone: ['', Validators.required],
         AlternateName: [''],
         AlternatePhone:   ['', [  conditionalValidator(
           (() => this.showAltDetails === false),
@@ -260,7 +270,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.description  = this.dataSharingService.getReservationData().Description;
     this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
-
+    this.fetchMilitaryBranch();
+    this.fetchMilitaryTypes();
     this.getData();
     this.getRentalPeriod();
     if (this.navigateToMoveIn === true ) {
@@ -287,6 +298,16 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     public fetchUSState() {
     this.option = option;
     this.option1 = option1;
+    }
+
+    public fetchMilitaryTypes() {
+      this.militaryTypes = MilitaryTypes;
+      console.log('this.militaryTypes', this.militaryTypes)
+    }
+
+    public fetchMilitaryBranch() {
+      this.militaryBranch = MilitaryBranch;
+      console.log('this.militaryBranch', this.militaryBranch) 
     }
 
   public navigate(location: any) {
@@ -423,6 +444,16 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
+            DriversLicense: Tenant.DriversLicense,
+            DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+            DateOfBirth: Tenant.DateOfBirth,
+            MilitaryType: Tenant.militaryType,
+            MilitaryBranch: Tenant.militaryBranch,
+            MilitaryID: Tenant.MilitaryID,
+            DeployedUntil: Tenant.DeployedUntil,
+            MilitaryDivision: Tenant.MilitaryDivision,
+            CommandingOfficer: Tenant.CommandingOfficer,
+            CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
             AlternateName: Tenant.AlternateName,
             AlternatePhone: Tenant.AlternatePhone,
             AlternateAddressLine1: Tenant.AlternateAddressLine2,
@@ -442,6 +473,16 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
+              DriversLicense: Tenant.DriversLicense,
+              DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+              DateOfBirth: Tenant.DateOfBirth,
+              MilitaryType: Tenant.militaryType,
+              MilitaryBranch: Tenant.militaryBranch,
+              MilitaryID: Tenant.MilitaryID,
+              DeployedUntil: Tenant.DeployedUntil,
+              MilitaryDivision: Tenant.MilitaryDivision,
+              CommandingOfficer: Tenant.CommandingOfficer,
+              CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
               AlternateName: Tenant.AlternateName,
               AlternatePhone: Tenant.AlternatePhone,
               AlternateAddressLine1: Tenant.AlternateAddressLine1,

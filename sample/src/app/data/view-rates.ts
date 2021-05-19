@@ -26,6 +26,60 @@ export const dataViewRates = [
 
 export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
 
+export const MilitaryTypes = [
+  {
+    Description: `NA`,
+    value: 0 
+  },
+  {
+    Description: `Active`,
+    value: 1
+  },
+  {
+    Description: `Reserve`,
+    value: 2 
+  },
+  {
+    Description: `Veteran`,
+    value: 3 
+  },
+  {
+    Description: `Retired`,
+    value: 4
+  },
+  {
+    Description: `Deployed`,
+    value: 5 
+  },
+]
+
+export const MilitaryBranch = [
+  {
+    Description: `NA`,
+    value: 0 
+  },
+  {
+    Description: `Army`,
+    value: 1
+  },
+  {
+    Description: `Navy`,
+    value: 2 
+  },
+  {
+    Description: `AirForce`,
+    value: 3 
+  },
+  {
+    Description: `Marines`,
+    value: 4
+  },
+  {
+    Description: `CoastGuard`,
+    value: 5 
+  },
+]
+
 export const th = [
   {
     data: `Size`,
