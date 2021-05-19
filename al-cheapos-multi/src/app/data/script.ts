@@ -362,149 +362,149 @@ export const Location2Script = {
 
 };
 
-export const Location3Script = {
-    '@context': 'https://schema.org',
-    '@type': 'SelfStorage',
-    'image': imageLocation3,
-    '@id': environment.websiteUrl,
-    'name': nameLocation3,
-     'description': description3 || location3PageContent,
-    'address': addressLoaction3,
-   'aggregateRating': {
-  '@type': 'AggregateRating',
-  'ratingValue': '',
-  'bestRating': '5',
-  'reviewCount': ''
-},
-    'geo': {
-      '@type': 'GeoCoordinates',
-      'latitude': 40.8895714,
-      'longitude':  -97.5929015
-    },
-    'url': urlLocation3,
-    'telephone': contactsLocation3[contactIndex3].data,
+// export const Location3Script = {
+//     '@context': 'https://schema.org',
+//     '@type': 'SelfStorage',
+//     'image': imageLocation3,
+//     '@id': environment.websiteUrl,
+//     'name': nameLocation3,
+//      'description': description3 || location3PageContent,
+//     'address': addressLoaction3,
+//    'aggregateRating': {
+//   '@type': 'AggregateRating',
+//   'ratingValue': '',
+//   'bestRating': '5',
+//   'reviewCount': ''
+// },
+//     'geo': {
+//       '@type': 'GeoCoordinates',
+//       'latitude': 40.8895714,
+//       'longitude':  -97.5929015
+//     },
+//     'url': urlLocation3,
+//     'telephone': contactsLocation3[contactIndex3].data,
 
-    'priceRange': '$19 - $200',
-    'openingHours': [],
-    'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
-     'areaServed': {
-  '@type': 'State',
-  'name': 'New York'
-   },
-'hasMap': maplocation3,
-    'acceptsReservations': 'True'
+//     'priceRange': '$19 - $200',
+//     'openingHours': [],
+//     'currenciesAccepted': 'USD',
+//   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
+//      'areaServed': {
+//   '@type': 'State',
+//   'name': 'New York'
+//    },
+// 'hasMap': maplocation3,
+//     'acceptsReservations': 'True'
 
 
-};
+// };
 
-export const Location4Script = {
-    '@context': 'https://schema.org',
-    '@type': 'SelfStorage',
-    'image': imageLocation4,
-    '@id': environment.websiteUrl,
-    'name': nameLocation4,
-     'description': description4 || location4PageContent,
-    'address': addressLoaction4,
-   'aggregateRating': {
-  '@type': 'AggregateRating',
-  'ratingValue': '5',
-  'bestRating': '5',
-  'reviewCount': ''
-},
-    'geo': {
-      '@type': 'GeoCoordinates',
-      'latitude': 30.607304,
-      'longitude': -87.8104576
-    },
-    'url': urlLocation4,
-    'telephone': contactsLocation4[contactIndex4].data,
+// export const Location4Script = {
+//     '@context': 'https://schema.org',
+//     '@type': 'SelfStorage',
+//     'image': imageLocation4,
+//     '@id': environment.websiteUrl,
+//     'name': nameLocation4,
+//      'description': description4 || location4PageContent,
+//     'address': addressLoaction4,
+//    'aggregateRating': {
+//   '@type': 'AggregateRating',
+//   'ratingValue': '5',
+//   'bestRating': '5',
+//   'reviewCount': ''
+// },
+//     'geo': {
+//       '@type': 'GeoCoordinates',
+//       'latitude': 30.607304,
+//       'longitude': -87.8104576
+//     },
+//     'url': urlLocation4,
+//     'telephone': contactsLocation4[contactIndex4].data,
 
-    'priceRange': '$30 - $125',
-    'openingHours': [],
-    'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
-     'areaServed': {
-  '@type': 'State',
-  'name': 'New York'
-   },
-   'hasMap': maplocation4,
+//     'priceRange': '$30 - $125',
+//     'openingHours': [],
+//     'currenciesAccepted': 'USD',
+//   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
+//      'areaServed': {
+//   '@type': 'State',
+//   'name': 'New York'
+//    },
+//    'hasMap': maplocation4,
 
-    'acceptsReservations': 'True'
+//     'acceptsReservations': 'True'
 
-};
+// };
 
-export const Location5Script = {
-  '@context': 'https://schema.org',
-  '@type': 'SelfStorage',
-  'image': imageLocation5,
-  '@id': environment.websiteUrl,
-  'name': nameLocation5,
-   'description': description5 || location5PageContent,
-  'address': addressLoaction5,
- 'aggregateRating': {
-'@type': 'AggregateRating',
-'ratingValue': '4',
-'bestRating': '5',
-'reviewCount': '9'
-},
-  'geo': {
-    '@type': 'GeoCoordinates',
-    'latitude': 30.5345495,
-    'longitude': -87.8561786
-  },
-  'url': urlLocation5,
-  'telephone': contactsLocation5[contactIndex5].data,
+// export const Location5Script = {
+//   '@context': 'https://schema.org',
+//   '@type': 'SelfStorage',
+//   'image': imageLocation5,
+//   '@id': environment.websiteUrl,
+//   'name': nameLocation5,
+//    'description': description5 || location5PageContent,
+//   'address': addressLoaction5,
+//  'aggregateRating': {
+// '@type': 'AggregateRating',
+// 'ratingValue': '4',
+// 'bestRating': '5',
+// 'reviewCount': '9'
+// },
+//   'geo': {
+//     '@type': 'GeoCoordinates',
+//     'latitude': 30.5345495,
+//     'longitude': -87.8561786
+//   },
+//   'url': urlLocation5,
+//   'telephone': contactsLocation5[contactIndex5].data,
 
-  'priceRange': '$40 - $135',
-  'openingHours': [],
-  'currenciesAccepted': 'USD',
-'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
-   'areaServed': {
-'@type': 'State',
-'name': 'New York'
- },
- 'hasMap': maplocation5,
+//   'priceRange': '$40 - $135',
+//   'openingHours': [],
+//   'currenciesAccepted': 'USD',
+// 'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
+//    'areaServed': {
+// '@type': 'State',
+// 'name': 'New York'
+//  },
+//  'hasMap': maplocation5,
 
-  'acceptsReservations': 'True'
+//   'acceptsReservations': 'True'
 
-};
+// };
 
-export const Location6Script = {
-  '@context': 'https://schema.org',
-  '@type': 'SelfStorage',
-  'image': imageLocation6,
-  '@id': environment.websiteUrl,
-  'name': nameLocation6,
-   'description': description6 || location6PageContent,
-  'address': addressLoaction6,
- 'aggregateRating': {
-'@type': 'AggregateRating',
-'ratingValue': '4.6',
-'bestRating': '5',
-'reviewCount': '10'
-},
-  'geo': {
-    '@type': 'GeoCoordinates',
-    'latitude': 30.5639016,
-    'longitude': -87.6814587
-  },
-  'url': urlLocation6,
-  'telephone': contactsLocation6[contactIndex6].data,
+// export const Location6Script = {
+//   '@context': 'https://schema.org',
+//   '@type': 'SelfStorage',
+//   'image': imageLocation6,
+//   '@id': environment.websiteUrl,
+//   'name': nameLocation6,
+//    'description': description6 || location6PageContent,
+//   'address': addressLoaction6,
+//  'aggregateRating': {
+// '@type': 'AggregateRating',
+// 'ratingValue': '4.6',
+// 'bestRating': '5',
+// 'reviewCount': '10'
+// },
+//   'geo': {
+//     '@type': 'GeoCoordinates',
+//     'latitude': 30.5639016,
+//     'longitude': -87.6814587
+//   },
+//   'url': urlLocation6,
+//   'telephone': contactsLocation6[contactIndex6].data,
 
-  'priceRange': '$40 - $115',
-  'openingHours': [],
-  'currenciesAccepted': 'USD',
-'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
-   'areaServed': {
-'@type': 'State',
-'name': 'New York'
- },
- 'hasMap': maplocation6,
+//   'priceRange': '$40 - $115',
+//   'openingHours': [],
+//   'currenciesAccepted': 'USD',
+// 'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
+//    'areaServed': {
+// '@type': 'State',
+// 'name': 'New York'
+//  },
+//  'hasMap': maplocation6,
 
-  'acceptsReservations': 'True'
+//   'acceptsReservations': 'True'
 
-};
+// };
 
 
 
@@ -557,102 +557,102 @@ export const contactPageLocation2Script = {
     ]
 };
 
-export const contactPageLocation3Script = {
-    '@context': 'http://schema.org',
-    '@type': 'Selfstorage',
-    'name': nameLocation3,
-    'address': addressLoaction3,
-     'url': urlLocation3,
-     'image': imageLocation3,
-    'contactPoint': [{
-      '@type': 'ContactPoint',
-      'telephone': contactsLocation3[contactIndex3].data,
-      'contactType': 'reservations'
-    }, {
-      '@type': 'ContactPoint',
-      'telephone': contactsLocation3[contactIndex3].data,
-      'contactType': 'customer service'
-    }],
-    'email': contactsLocation3[emailIndex3].data,
-    'sameAs': [
-      '',
-      '',
-      ''
-    ]
+// export const contactPageLocation3Script = {
+//     '@context': 'http://schema.org',
+//     '@type': 'Selfstorage',
+//     'name': nameLocation3,
+//     'address': addressLoaction3,
+//      'url': urlLocation3,
+//      'image': imageLocation3,
+//     'contactPoint': [{
+//       '@type': 'ContactPoint',
+//       'telephone': contactsLocation3[contactIndex3].data,
+//       'contactType': 'reservations'
+//     }, {
+//       '@type': 'ContactPoint',
+//       'telephone': contactsLocation3[contactIndex3].data,
+//       'contactType': 'customer service'
+//     }],
+//     'email': contactsLocation3[emailIndex3].data,
+//     'sameAs': [
+//       '',
+//       '',
+//       ''
+//     ]
 
-};
+// };
 
-export const contactPageLocation4Script = {
-    '@context': 'http://schema.org',
-    '@type': 'Selfstorage',
-    'name': nameLocation4,
-    'address': addressLoaction4,
-     'url': urlLocation4,
-     'image': imageLocation4,
-    'contactPoint': [{
-      '@type': 'ContactPoint',
-      'telephone': contactsLocation4[contactIndex4].data,
-      'contactType': 'reservations'
-    }, {
-      '@type': 'ContactPoint',
-      'telephone': contactsLocation4[contactIndex4].data,
-      'contactType': 'customer service'
-    }],
-    'email': contactsLocation4[emailIndex4].data,
-    'sameAs': [
-      '',
-      '',
-      ''
-    ]
-};
+// export const contactPageLocation4Script = {
+//     '@context': 'http://schema.org',
+//     '@type': 'Selfstorage',
+//     'name': nameLocation4,
+//     'address': addressLoaction4,
+//      'url': urlLocation4,
+//      'image': imageLocation4,
+//     'contactPoint': [{
+//       '@type': 'ContactPoint',
+//       'telephone': contactsLocation4[contactIndex4].data,
+//       'contactType': 'reservations'
+//     }, {
+//       '@type': 'ContactPoint',
+//       'telephone': contactsLocation4[contactIndex4].data,
+//       'contactType': 'customer service'
+//     }],
+//     'email': contactsLocation4[emailIndex4].data,
+//     'sameAs': [
+//       '',
+//       '',
+//       ''
+//     ]
+// };
 
-export const contactPageLocation5Script = {
-  '@context': 'http://schema.org',
-  '@type': 'Selfstorage',
-  'name': nameLocation5,
-  'address': addressLoaction5,
-   'url': urlLocation5,
-   'image': imageLocation5,
-  'contactPoint': [{
-    '@type': 'ContactPoint',
-    'telephone': contactsLocation5[contactIndex5].data,
-    'contactType': 'reservations'
-  }, {
-    '@type': 'ContactPoint',
-    'telephone': contactsLocation5[contactIndex5].data,
-    'contactType': 'customer service'
-  }],
-  'email': contactsLocation5[emailIndex5].data,
-  'sameAs': [
-    '',
-    '',
-    ''
-  ]
-};
+// export const contactPageLocation5Script = {
+//   '@context': 'http://schema.org',
+//   '@type': 'Selfstorage',
+//   'name': nameLocation5,
+//   'address': addressLoaction5,
+//    'url': urlLocation5,
+//    'image': imageLocation5,
+//   'contactPoint': [{
+//     '@type': 'ContactPoint',
+//     'telephone': contactsLocation5[contactIndex5].data,
+//     'contactType': 'reservations'
+//   }, {
+//     '@type': 'ContactPoint',
+//     'telephone': contactsLocation5[contactIndex5].data,
+//     'contactType': 'customer service'
+//   }],
+//   'email': contactsLocation5[emailIndex5].data,
+//   'sameAs': [
+//     '',
+//     '',
+//     ''
+//   ]
+// };
 
-export const contactPageLocation6Script = {
-  '@context': 'http://schema.org',
-  '@type': 'Selfstorage',
-  'name': nameLocation6,
-  'address': addressLoaction6,
-   'url': urlLocation6,
-   'image': imageLocation6,
-  'contactPoint': [{
-    '@type': 'ContactPoint',
-    'telephone': contactsLocation6[contactIndex6].data,
-    'contactType': 'reservations'
-  }, {
-    '@type': 'ContactPoint',
-    'telephone': contactsLocation6[contactIndex6].data,
-    'contactType': 'customer service'
-  }],
-  'email': contactsLocation6[emailIndex6].data,
-  'sameAs': [
-    '',
-    '',
-    ''
-  ]
-};
+// export const contactPageLocation6Script = {
+//   '@context': 'http://schema.org',
+//   '@type': 'Selfstorage',
+//   'name': nameLocation6,
+//   'address': addressLoaction6,
+//    'url': urlLocation6,
+//    'image': imageLocation6,
+//   'contactPoint': [{
+//     '@type': 'ContactPoint',
+//     'telephone': contactsLocation6[contactIndex6].data,
+//     'contactType': 'reservations'
+//   }, {
+//     '@type': 'ContactPoint',
+//     'telephone': contactsLocation6[contactIndex6].data,
+//     'contactType': 'customer service'
+//   }],
+//   'email': contactsLocation6[emailIndex6].data,
+//   'sameAs': [
+//     '',
+//     '',
+//     ''
+//   ]
+// };
 
 
 
@@ -823,221 +823,221 @@ export const twitterLocation2 = [
 ];
 
 
-export const ogLocation3 = [
-  {
-    property: `og:title`,
-    content: location3PageTitle
-  },
-  {
-    property: `og:description`,
-    content: location3PageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: urlLocation3
-  },
-  {
-    property: `og:image`,
-    content: imageLocation3[1]
-  },
-];
+// export const ogLocation3 = [
+//   {
+//     property: `og:title`,
+//     content: location3PageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location3PageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: urlLocation3
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation3[1]
+//   },
+// ];
 
-export const twitterLocation3 = [
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:title`,
-    content: `@${location3PageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location3PageContent
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation3[0]
-  },
-];
+// export const twitterLocation3 = [
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:title`,
+//     content: `@${location3PageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location3PageContent
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation3[0]
+//   },
+// ];
 
-export const ogLocation4 = [
-  {
-    property: `og:title`,
-    content: location4PageTitle
-  },
-  {
-    property: `og:description`,
-    content: location4PageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: urlLocation4
-  },
-  {
-    property: `og:image`,
-    content: imageLocation4[1]
-  },
-];
+// export const ogLocation4 = [
+//   {
+//     property: `og:title`,
+//     content: location4PageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location4PageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: urlLocation4
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation4[1]
+//   },
+// ];
 
-export const twitterLocation4 = [
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:title`,
-    content: `@${location4PageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location4PageContent
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation4[0]
-  },
-];
+// export const twitterLocation4 = [
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:title`,
+//     content: `@${location4PageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location4PageContent
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation4[0]
+//   },
+// ];
 
-export const ogLocation5 = [
-  {
-    property: `og:title`,
-    content: location4PageTitle
-  },
-  {
-    property: `og:description`,
-    content: location5PageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: urlLocation5
-  },
-  {
-    property: `og:image`,
-    content: imageLocation5[1]
-  },
-];
+// export const ogLocation5 = [
+//   {
+//     property: `og:title`,
+//     content: location4PageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location5PageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: urlLocation5
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation5[1]
+//   },
+// ];
 
-export const twitterLocation5 = [
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:title`,
-    content: `@${location5PageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location5PageContent
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation5[0]
-  },
-];
+// export const twitterLocation5 = [
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:title`,
+//     content: `@${location5PageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location5PageContent
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation5[0]
+//   },
+// ];
 
-export const ogLocation6 = [
-  {
-    property: `og:title`,
-    content: location6PageTitle
-  },
-  {
-    property: `og:description`,
-    content: location6PageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: urlLocation6
-  },
-  {
-    property: `og:image`,
-    content: imageLocation6[1]
-  },
-];
+// export const ogLocation6 = [
+//   {
+//     property: `og:title`,
+//     content: location6PageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location6PageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: urlLocation6
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation6[1]
+//   },
+// ];
 
-export const twitterLocation6 = [
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:title`,
-    content: `@${location6PageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location6PageContent
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation6[0]
-  },
-];
+// export const twitterLocation6 = [
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:title`,
+//     content: `@${location6PageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location6PageContent
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation6[0]
+//   },
+// ];
 
 
 
@@ -1204,221 +1204,221 @@ export const twitterPayRentPageLocation2 = [
   },
 ];
 
-export const ogPayRentPageLocation3 = [
-  {
-    property: `og:title`,
-    content:  location3PayrentPageTitle
-  },
-  {
-    property: `og:description`,
-    content: location3PayrentPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/pay-rent/${location3}/login`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation3[1]
-  },
-];
+// export const ogPayRentPageLocation3 = [
+//   {
+//     property: `og:title`,
+//     content:  location3PayrentPageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location3PayrentPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/pay-rent/${location3}/login`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation3[1]
+//   },
+// ];
 
-export const twitterPayRentPageLocation3 = [
-  {
-    name: `twitter:title`,
-    content: `@${location3PayrentPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location3PayrentPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation3[0]
-  },
-];
+// export const twitterPayRentPageLocation3 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location3PayrentPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location3PayrentPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation3[0]
+//   },
+// ];
 
-export const ogPayRentPageLocation4 = [
-  {
-    property: `og:title`,
-    content: location4PayrentPageTitle
-  },
-  {
-    property: `og:description`,
-    content: location4PayrentPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/pay-rent/${location4}/login`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation4[1]
-  },
-];
+// export const ogPayRentPageLocation4 = [
+//   {
+//     property: `og:title`,
+//     content: location4PayrentPageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location4PayrentPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/pay-rent/${location4}/login`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation4[1]
+//   },
+// ];
 
-export const twitterPayRentPageLocation4 = [
-  {
-    name: `twitter:title`,
-    content: `@${location4PayrentPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location4PayrentPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation4[0]
-  },
-];
+// export const twitterPayRentPageLocation4 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location4PayrentPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location4PayrentPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation4[0]
+//   },
+// ];
 
-export const ogPayRentPageLocation5 = [
-  {
-    property: `og:title`,
-    content: location5PayrentPageTitle
-  },
-  {
-    property: `og:description`,
-    content: location5PayrentPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/pay-rent/${location5}/login`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation5[1]
-  },
-];
+// export const ogPayRentPageLocation5 = [
+//   {
+//     property: `og:title`,
+//     content: location5PayrentPageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location5PayrentPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/pay-rent/${location5}/login`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation5[1]
+//   },
+// ];
 
-export const twitterPayRentPageLocation5 = [
-  {
-    name: `twitter:title`,
-    content: `@${location5PayrentPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location5PayrentPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation5[0]
-  },
-];
+// export const twitterPayRentPageLocation5 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location5PayrentPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location5PayrentPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation5[0]
+//   },
+// ];
 
-export const ogPayRentPageLocation6 = [
-  {
-    property: `og:title`,
-    content: location6PayrentPageTitle
-  },
-  {
-    property: `og:description`,
-    content: location6PayrentPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/pay-rent/${location6}/login`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation6[1]
-  },
-];
+// export const ogPayRentPageLocation6 = [
+//   {
+//     property: `og:title`,
+//     content: location6PayrentPageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location6PayrentPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/pay-rent/${location6}/login`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation6[1]
+//   },
+// ];
 
-export const twitterPayRentPageLocation6 = [
-  {
-    name: `twitter:title`,
-    content: `@${location6PayrentPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location6PayrentPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation6[0]
-  },
-];
+// export const twitterPayRentPageLocation6 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location6PayrentPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location6PayrentPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation6[0]
+//   },
+// ];
 
 
 
@@ -1638,221 +1638,221 @@ export const twitterContactPageLocation2 = [
     content:  imageLocation2[0]
   },
 ];
-export const ogContactPageLocation3 = [
-  {
-    property: `og:title`,
-    content: `${location3ContactPageTitle}`
-  },
-  {
-    property: `og:description`,
-    content: location3ContactPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/contact-${location3}`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation3[1]
-  },
-];
+// export const ogContactPageLocation3 = [
+//   {
+//     property: `og:title`,
+//     content: `${location3ContactPageTitle}`
+//   },
+//   {
+//     property: `og:description`,
+//     content: location3ContactPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/contact-${location3}`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation3[1]
+//   },
+// ];
 
-export const twitterContactPageLocation3 = [
-  {
-    name: `twitter:title`,
-    content: `@${location3ContactPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location3ContactPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation3[0]
-  },
-];
+// export const twitterContactPageLocation3 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location3ContactPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location3ContactPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation3[0]
+//   },
+// ];
 
-export const ogContactPageLocation4 = [
-  {
-    property: `og:title`,
-    content: `${location4ContactPageTitle}`
-  },
-  {
-    property: `og:description`,
-    content: location4ContactPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/contact-${location4}`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation4[1]
-  },
-];
+// export const ogContactPageLocation4 = [
+//   {
+//     property: `og:title`,
+//     content: `${location4ContactPageTitle}`
+//   },
+//   {
+//     property: `og:description`,
+//     content: location4ContactPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/contact-${location4}`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation4[1]
+//   },
+// ];
 
-export const twitterContactPageLocation4 = [
-  {
-    name: `twitter:title`,
-    content: `@${location4ContactPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location4ContactPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation4[0]
-  },
-];
+// export const twitterContactPageLocation4 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location4ContactPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location4ContactPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation4[0]
+//   },
+// ];
 
-export const ogContactPageLocation5 = [
-  {
-    property: `og:title`,
-    content: `${location5ContactPageTitle}`
-  },
-  {
-    property: `og:description`,
-    content: location5ContactPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/contact-${location5}`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation5[1]
-  },
-];
+// export const ogContactPageLocation5 = [
+//   {
+//     property: `og:title`,
+//     content: `${location5ContactPageTitle}`
+//   },
+//   {
+//     property: `og:description`,
+//     content: location5ContactPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/contact-${location5}`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation5[1]
+//   },
+// ];
 
-export const twitterContactPageLocation5 = [
-  {
-    name: `twitter:title`,
-    content: `@${location5ContactPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location5ContactPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation5[0]
-  },
-];
+// export const twitterContactPageLocation5 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location5ContactPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location5ContactPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation5[0]
+//   },
+// ];
 
-export const ogContactPageLocation6 = [
-  {
-    property: `og:title`,
-    content: `${location6ContactPageTitle}`
-  },
-  {
-    property: `og:description`,
-    content: location6ContactPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/contact-${location6}`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation6[1]
-  },
-];
+// export const ogContactPageLocation6 = [
+//   {
+//     property: `og:title`,
+//     content: `${location6ContactPageTitle}`
+//   },
+//   {
+//     property: `og:description`,
+//     content: location6ContactPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/contact-${location6}`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation6[1]
+//   },
+// ];
 
-export const twitterContactPageLocation6 = [
-  {
-    name: `twitter:title`,
-    content: `@${location6ContactPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location6ContactPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation6[0]
-  },
-];
+// export const twitterContactPageLocation6 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location6ContactPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location6ContactPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation6[0]
+//   },
+// ];
 
 
 
