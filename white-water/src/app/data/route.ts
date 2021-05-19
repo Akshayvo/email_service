@@ -85,11 +85,24 @@ const reviewURL = ``
     { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
     { path: 'rental-procedure', component: RentalProcedureComponent},
-    { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
+    // { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     {
+      path: `${environment.locationName}/reserve-unit`,
+      component: ViewRatesComponent,
+      children: [
+        { path: '', component: ViewRatesPageComponent },
+        { path: 'reserve', component: ReserveUnitFormComponent },
+        { path: 'move-in', component: ReserveUnitFormComponent },
+        { path: 'confirmation', component: ConfirmationDataComponent },
+        { path: 'payReservationCharges', component: PayRentFormComponent },
+        { path: 'payMoveInCharges', component: PayRentFormComponent },
+        { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard]  }
+      ]
+     },
+     {
       path: `${environment.locationName}/view-rates`,
       component: ViewRatesComponent,
       children: [
