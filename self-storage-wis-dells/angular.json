@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "self-storage-wis-dells"
+  "defaultProject": "self-storage-wis-dells",
+  "cli": {
+    "analytics": "9581ce45-613a-45ea-9ecb-d2ea650378b0"
+  }
 }
