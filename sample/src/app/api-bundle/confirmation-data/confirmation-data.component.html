@@ -81,65 +81,87 @@
                         <td>
                             {{zip}}
                         </td>
-                    </tr>                     
-                </tbody>
-            </table>
-        </div>
-        <div class="col-lg-6 p-3 confirmation-style">
-            <h3 class="mb-3">Unit Information</h3>
-            <table class="p-2">
-                <tbody>
-                    <tr>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
                         <td>
-                            Unit Type
+                            Driver's License Number
                         </td>
                         <td>
-                            {{description}}
+                            {{driversLicense}}
                         </td>
                     </tr>
-                    <tr *ngIf="monthlyRate">
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
                         <td>
-                            Rate
+                            Driver's License Expiration Date
                         </td>
                         <td>
-                            ${{monthlyRate | number : '1.2-2'}}
-                        </td>
-                    </tr>
-                    <tr *ngIf="navigateToReserve && reservationFee > 0">
-                        <td>
-                            Reservation Charges
-                        </td>
-                        <td>
-                            ${{reservationFee | number : '1.2-2'}} <span *ngIf="reservationFeeTax"> + ${{reservationFeeTax | number : '1.2-2'}}(Tax)</span>
+                            {{driversLicenseExpDate}}
                         </td>
                     </tr>
-                    <tr *ngIf="!navigateToMoveIn">
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
                         <td>
-                            Move In Date
+                            Birthdate
                         </td>
                         <td>
-                            {{MoveIn.dteMoveIn}}
-                        </td>
-                    </tr>
-                    <tr *ngIf="navigateToMoveIn">
-                        <td>
-                            Total Charges
-                        </td>
-                        <td>
-                            ${{totalChargesAmount | number : '1.2-2'}}
-                            <span *ngIf="totalTaxAmount > 0">
-                                    + ${{totalTaxAmount | number : '1.2-2'}} (Tax)
-                            </span>
-                        </td>                   
-                    </tr>
-                    <tr>
-                        <td>
-                            Period
-                        </td>
-                        <td>
-                            {{period}}
+                            {{dateOfBirth}}
                         </td>
                     </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Type
+                        </td>
+                        <td>
+                            {{militaryType}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Branch
+                        </td>
+                        <td>
+                            {{militaryBranch}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military ID
+                        </td>
+                        <td>
+                            {{militaryID}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Deployed Until Date
+                        </td>
+                        <td>
+                            {{deployedUntil}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Division/Unit
+                        </td>
+                        <td>
+                            {{militaryDivision}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Commanding Officer
+                        </td>
+                        <td>
+                            {{commandingOfficer}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military C.O. Phone
+                        </td>
+                        <td>
+                            {{commandingOfficerPhone}}
+                        </td>
+                    </tr>                    
                 </tbody>
             </table>
         </div>
@@ -203,6 +225,64 @@
                             {{alternateZIP}}
                         </td>
                     </tr>                     
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-6 p-3 confirmation-style">
+            <h3 class="mb-3">Unit Information</h3>
+            <table class="p-2">
+                <tbody>
+                    <tr>
+                        <td>
+                            Unit Type
+                        </td>
+                        <td>
+                            {{description}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="monthlyRate">
+                        <td>
+                            Rate
+                        </td>
+                        <td>
+                            ${{monthlyRate | number : '1.2-2'}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="navigateToReserve && reservationFee > 0">
+                        <td>
+                            Reservation Charges
+                        </td>
+                        <td>
+                            ${{reservationFee | number : '1.2-2'}} <span *ngIf="reservationFeeTax"> + ${{reservationFeeTax | number : '1.2-2'}}(Tax)</span>
+                        </td>
+                    </tr>
+                    <tr *ngIf="!navigateToMoveIn">
+                        <td>
+                            Move In Date
+                        </td>
+                        <td>
+                            {{MoveIn.dteMoveIn}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="navigateToMoveIn">
+                        <td>
+                            Total Charges
+                        </td>
+                        <td>
+                            ${{totalChargesAmount | number : '1.2-2'}}
+                            <span *ngIf="totalTaxAmount > 0">
+                                    + ${{totalTaxAmount | number : '1.2-2'}} (Tax)
+                            </span>
+                        </td>                   
+                    </tr>
+                    <tr>
+                        <td>
+                            Period
+                        </td>
+                        <td>
+                            {{period}}
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

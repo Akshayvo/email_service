@@ -243,7 +243,8 @@
         </div>
 
         <!-- Start of Extra Detail -->
-        <div class="row">
+        <div *ngIf="!!showMilitaryDetails && !!navigateToMoveIn">
+        <div class="row" >
           <div class="col-lg-4 col-md-6 form-group">
             <label>Driver's License Number</label>
             <input
@@ -266,52 +267,82 @@
               >
             </div>
           </div>
-            <div class="col-lg-4 col-md-6 form-group">
-                <label>Driver's License Expiration Date</label>
-                <input
-                    type="text"
-                    formControlName="DriversLicenseExpDate"
-                    class="form-control"
-                    placeholder="Enter Driver's License Expiration Date"
-                    [ngClass]="{
-                    'is-invalid': submitted && f.objTenant.controls.DriversLicenseExpDate.errors
-                    }"
-                />
-                <div
-                    *ngIf="submitted && f.objTenant.controls.DriversLicenseExpDate.errors"
-                    class="invalid-feedback"
-                >
-                    <small
-                    class="form-text text-muted"
-                    *ngIf="f.objTenant.controls.DriversLicenseExpDate.errors.required"
-                    >Please fill out this field</small
-                    >
-                </div>
-            </div>
-          <div class="col-lg-4 col-md-6 form-group">
-            <label>Birthdate</label>
-            <input
-              type="text"
-              formControlName="DateOfBirth"
+          <div
+            class="col-lg-4 col-md-6 form-group custom-date-css"
+            >
+            <label>Driver's License Expiration Date*</label>&nbsp;
+            <mat-form-field
+              class="example-full-width"
               class="form-control"
-              placeholder="Enter Birthdate"
-              [ngClass]="{
-                'is-invalid': submitted && f.objTenant.controls.DateOfBirth.errors
-              }"
-            />
+              placeholder="select your Driver's License Expiration Date"
+              [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.DriversLicenseExpDate.errors }"
+            >
+              <input
+                matInput
+                [matDatepicker]="driversLicenseExpDate"
+                formControlName="DriversLicenseExpDate"
+                [min]="from"
+                [max]="to"
+                readonly
+                (click)="driversLicenseExpDate.open()"
+              />
+
+              <mat-datepicker-toggle
+                matSuffix
+                [for]="driversLicenseExpDate"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #driversLicenseExpDate></mat-datepicker>
+            </mat-form-field>
             <div
-              *ngIf="submitted && f.objTenant.controls.DateOfBirth.errors"
+              *ngIf="submitted && f.objTenant.controls.DriversLicenseExpDate.errors"
               class="invalid-feedback"
             >
               <small
                 class="form-text text-muted"
-                *ngIf="f.objTenant.controls.DateOfBirth.errors.required"
+                *ngIf="f.objTenant.controls.DriversLicenseExpDate.errors.required"
                 >Please fill out this field</small
               >
             </div>
           </div>
+        <div
+          class="col-md-4 form-group custom-date-css"
+          >
+          <label>Birthdate*</label>&nbsp;
+          <mat-form-field
+            class="example-full-width"
+            class="form-control"
+            placeholder="select your Birthdate"
+            [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.DateOfBirth.errors }"
+          >
+            <input
+              matInput
+              [matDatepicker]="dateOfBirth"
+              formControlName="DateOfBirth"
+              [min]="from"
+              [max]="to"
+              readonly
+              (click)="dateOfBirth.open()"
+            />
+
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="dateOfBirth"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #dateOfBirth></mat-datepicker>
+          </mat-form-field>
+          <div
+            *ngIf="submitted && f.objTenant.controls.DateOfBirth.errors"
+            class="invalid-feedback"
+          >
+            <small
+              class="form-text text-muted"
+              *ngIf="f.objTenant.controls.DateOfBirth.errors.required"
+              >Please fill out this field</small
+            >
+          </div>
         </div>
-        <div class="row">
+        </div>
+         <div class="row">
             <div class="col-lg-4 col-md-6 form-group ngx-select-dropdown">
                 <label>Military Type</label>
                 <select
@@ -386,30 +417,45 @@
               >
             </div>
           </div>
-        </div>
+        </div> 
         <div class="row">
-          <div class="col-lg-4 col-md-6 form-group">
-            <label>Military Deployed Until Date</label>
+          <div
+          class="col-lg-4 col-md-6 form-group custom-date-css"
+          >
+          <label>Military Deployed Until Date*</label>&nbsp;
+          <mat-form-field
+            class="example-full-width"
+            class="form-control"
+            placeholder="select your Military Deployed Until Date"
+            [ngClass]="{ 'is-invalid': submitted && f.objTenant.controls.DeployedUntil.errors }"
+          >
             <input
-              type="text"
+              matInput
+              [matDatepicker]="deployedUntil"
               formControlName="DeployedUntil"
-              class="form-control"
-              placeholder="Enter Military Deployed Until Date"
-              [ngClass]="{
-                'is-invalid': submitted && f.objTenant.controls.DeployedUntil.errors
-              }"
+              [min]="from"
+              [max]="to"
+              readonly
+              (click)="deployedUntil.open()"
             />
-            <div
-              *ngIf="submitted && f.objTenant.controls.DeployedUntil.errors"
-              class="invalid-feedback"
+
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="deployedUntil"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #deployedUntil></mat-datepicker>
+          </mat-form-field>
+          <div
+            *ngIf="submitted && f.objTenant.controls.DeployedUntil.errors"
+            class="invalid-feedback"
+          >
+            <small
+              class="form-text text-muted"
+              *ngIf="f.objTenant.controls.DeployedUntil.errors.required"
+              >Please fill out this field</small
             >
-              <small
-                class="form-text text-muted"
-                *ngIf="f.objTenant.controls.DeployedUntil.errors.required"
-                >Please fill out this field</small
-              >
-            </div>
           </div>
+        </div>
           <div class="col-lg-4 col-md-6 form-group">
             <label>Military Division/Unit</label>
             <input
@@ -454,7 +500,7 @@
               >
             </div>
           </div>
-        </div>
+        </div> 
         <div class="row">
             <div class="col-lg-4 col-md-6 form-group">
               <label>Military C.O. Phone</label>
@@ -478,7 +524,8 @@
                 >
               </div>
             </div>
-          </div>
+          </div> 
+        </div>
         <!-- End of Extra Detail -->
         <!-- Start of Aletrnate Contact Detail -->
         <div *ngIf="!!showAltDetails">

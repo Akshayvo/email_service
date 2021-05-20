@@ -29,54 +29,54 @@ export const viewRatesAltText = `two rows of roll-up metal self storage unit doo
 export const MilitaryTypes = [
   {
     Description: `NA`,
-    value: 0 
+    Value: 0 
   },
   {
     Description: `Active`,
-    value: 1
+    Value: 1
   },
   {
     Description: `Reserve`,
-    value: 2 
+    Value: 2 
   },
   {
     Description: `Veteran`,
-    value: 3 
+    Value: 3 
   },
   {
     Description: `Retired`,
-    value: 4
+    Value: 4
   },
   {
     Description: `Deployed`,
-    value: 5 
+    Value: 5 
   },
 ]
 
 export const MilitaryBranch = [
   {
     Description: `NA`,
-    value: 0 
+    Value: 0 
   },
   {
     Description: `Army`,
-    value: 1
+    Value: 1
   },
   {
     Description: `Navy`,
-    value: 2 
+    Value: 2 
   },
   {
     Description: `AirForce`,
-    value: 3 
+    Value: 3 
   },
   {
     Description: `Marines`,
-    value: 4
+    Value: 4
   },
   {
     Description: `CoastGuard`,
-    value: 5 
+    Value: 5 
   },
 ]
 
