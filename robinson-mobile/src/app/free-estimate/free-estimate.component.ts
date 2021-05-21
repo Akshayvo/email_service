@@ -1,28 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { dataViewRates } from '../../data/view-rates';
-import { viewRates } from '../../data/blurb';
-import { UaParserService } from '../../services/ua-parser.service';
+import { dataViewRates } from '../data/view-rates';
+import { freeEstimate } from '../data/blurb';
+import { UaParserService } from '../services/ua-parser.service';
 import { Subscription } from 'rxjs';
-import { contactPageScript, script } from '../../data/script';
-import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
-import { CanonicalService } from '../../services/canonical.service';
-import { aboutUsAlt } from '../../data/home';
+import { contactPageScript, script } from '../data/script';
+import { viewRatesPageTitle, viewRatesPageContent } from '../data/title';
+import { CanonicalService } from '../services/canonical.service';
+import { aboutUsAlt } from '../data/home';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { EmailService } from '../../services/email.service';
-import { contact } from '../../data/contact';
-
+import { EmailService } from '../services/email.service';
+import { contact } from '../data/contact';
 
 @Component({
-  selector: 'app-view-rates',
-  templateUrl: './view-rates.component.html',
-  styleUrls: ['./view-rates.component.scss']
+  selector: 'app-free-estimate',
+  templateUrl: './free-estimate.component.html',
+  styleUrls: ['./free-estimate.component.scss']
 })
-export class ViewRatesComponent implements OnInit {
-
+export class FreeEstimateComponent implements OnInit {
   viewRate: any;
   slideShow: any;
-  viewRates: any;
+  freeEstimate: any;
   imageBaseUrl: any;
   imagetype: any;
   state:string;
@@ -105,7 +103,7 @@ export class ViewRatesComponent implements OnInit {
   }
  
   public fetchViewRates() {
-    this.viewRates = viewRates;
+    this.freeEstimate = freeEstimate;
   }
   public fetchMetaData () {
     this.viewRatesPageContent = viewRatesPageContent;
@@ -182,4 +180,5 @@ export class ViewRatesComponent implements OnInit {
       this.isUnsubscribe$.unsubscribe();
     }
   }
+
 }

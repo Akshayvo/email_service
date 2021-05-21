@@ -4,6 +4,9 @@ export const homePageContent = `Robinson Mobile Storage offers affordable mobile
 export const viewRatesPageTitle = `View Rates  | Robinson Mobile Storage`;
 export const viewRatesPageContent = `Review our current rates and availability, then submit an inquiry with our handy online form!`;
 
+export const freeEstimatePageTitle = `View Rates  | Robinson Mobile Storage`;
+export const freeEstimatePageContent = `Review our current rates and availability, then submit an inquiry with our handy online form!`;
+
 export const reservePageTitle = `Reserve a Unit | Robinson Mobile Storage`;
 export const reservePageContent = `Simply fill out our easy reservation form and one of our friendly self storage associates will be ready and waiting for your arrival!`;
 

@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'new-york/baldwinsville',  // state/city   **Remeber to update locationName in sitemap.xml as well
+  locationName: 'ontario/ennismore',  // state/city   **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
@@ -14,7 +14,7 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://robinson-mobile-self-storage-staging.netlify.app',
-  // APIKey: `dzJ0OVc0SjcqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
-  APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // testing
+  APIKey: `dzJ0OVc0SjcqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
+  // APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // testing
 
 };

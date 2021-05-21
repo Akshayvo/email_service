@@ -1,4 +1,4 @@
-@import "../../../styles.scss";
+@import "../../styles.scss";
 
 .view-rates-top {
   height: 60vh;
@@ -15,6 +15,7 @@ label {
 
 .btn-primary {
   margin-left: 10px;
+  color: black;
 }
 
 .form-group {
@@ -79,9 +80,10 @@ label {
   }
 }
 
-// .content-margin-top {
-//   margin-top: 64px;
-// }
+h3 {
+    color: $black;
+    
+  }
 
 .view-rates-map {
   max-width: 100%;

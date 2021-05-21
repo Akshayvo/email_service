@@ -31,7 +31,7 @@ import { ThankYouGuard } from '../thank-you.guard';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 import { UpdateDetailsComponent } from '../api-bundle/update-details/update-details.component';
 import { UpdateComponent } from '../api-bundle/update/update.component';
-
+import { FreeEstimateComponent } from '../free-estimate/free-estimate.component';
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
         {path: 'login', component: LoginComponent },
@@ -96,6 +96,7 @@ const reviewURL = ``
     { path: '', component: HomeComponent },
     { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
     { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
+    { path: `${environment.locationName}/free-estimate`, component: FreeEstimateComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },

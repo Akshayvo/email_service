@@ -6,24 +6,15 @@
       </div>
       <div class="container">
         <div class="jumbotorn-skew-text">
-          <div class='col-md-6 skew'>
           <div class="disp" *ngFor="let jumbotron of jumbotron">
-            <h1  class="my-4">
+            <h2  class="my-4">
               {{jumbotron.h2}}
-            </h1>
-            <p>Have questions about the services offered at Robinson Mobile Storage? Call <a href="tel:7634344645">(763) 434-4645</a> to learn more!</p>
-            <p> Robinson Mobile Storage offers economical delivery, pickup, and storage of mobile self storage units. Our brand new portable storage units can be scheduled for a convenient no-tilt delivery at your home or work-site. </p>
+            </h2>
+          <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button">
-            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
-          </div>
-          </div>
-          <div class="col-md-6 img-display ">
-            <div class="ml-lg-4 ml-md-0 ml-0 custom-display">
-              <img  src="{{imageBaseUrl}}/robinson-storage-mobile-home.{{imagetype}}" alt="A photograph of indoor self storage units" />
-            </div>
-
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">Free Estimate</a>
+            <!-- <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a> -->
           </div>
           </div>
         </div>
@@ -48,7 +39,7 @@
         <div class="row">
           <div class="col-lg-6 py-3 home-map">
               <iframe title="Facility Google Map"
-               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11403.301923039171!2d-78.4100365!3d44.3957041!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x517963cb6676763d!2sRobinson%20Storage!5e0!3m2!1sen!2sus!4v1618096719306!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11403.301923039171!2d-78.4100365!3d44.3957041!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x517963cb6676763d!2sRobinson%20Storage!5e0!3m2!1sen!2sus!4v1618096719306!5m2!1sen!2sus"
                 width="100%" height="100%" frameborder="0" allowfullscreen rel="noopener" ></iframe> 
           </div>
 
@@ -87,8 +78,14 @@
         </div>
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
-          <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
-        </div>
+          <p class="justify">Robinson Mobile Storage serves Peterborough, Ennismore, Bridgenorth, and the surrounding communities with quality portable storage units delivered right to your door, office, or worksite! We understand that some storage projects are best handled with an on-site storage solution. That’s where Robinson Mobile Storage comes into play. Our mobile storage units are 20’x8’x8’ and offer 160 square feet of storage space anywhere you want it.</p>
+          <h4>Mobile Storage Units for All of Your Storage Needs</h4>
+          <p>The Robinson Mobile Storage units are the ideal solution for renovations where furniture, tools, or supplies require storage and easy access throughout the duration of the project. We also serve contractors, auctioneers, and hospitals with temporary on-site storage.</p>
+          <h4>Convenient Pickup and Delivery</h4>
+          <p>Our no-tilt delivery and pickup service means all you have to do is pack your belongings for temporary on-site storage or for long term storage at our self storage facility on Robinson Road in Ennismore. Simply give us a call with the details of when and where you need your unit delivered, and our professional crew will provide the same level of service you’ve come to expect from our Robinson Storage self storage facility.</p>
+          <h4>Start De-Cluttering Today</h4>
+          <p>If you have any questions, give our friendly team a call, and we’ll be happy to help! Ready to start making your next project easier with on-site storage? Take a moment to check out our pricing information, then request your Free Estimate for a portable storage solution in seconds through our website!</p>        
+        
       </div>
     </div>
   </div>

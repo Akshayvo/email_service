@@ -1,9 +1,9 @@
 <!-- <div class="view-rates-top" [ngClass]="imagetype === 'jpg' ? 'view-rates-top-jpg' :  'view-rates-top-webp'"> -->
   <div class="view-rates-top">
     <div class="bg-translucent-dark">
-    <div class="container jumbotorn-top text-center" *ngFor="let viewRates of viewRates">
-        <h1 class="pb-4">{{viewRates.heading}}</h1>
-        <p>{{viewRates.blurb}}</p>
+    <div class="container jumbotorn-top text-center" *ngFor="let freeEstimate of freeEstimate">
+        <h1 class="pb-4">{{freeEstimate.heading}}</h1>
+        <p>{{freeEstimate.blurb}}</p>
       </div>
 </div>
 </div>
@@ -14,9 +14,9 @@
   <div class="row content-margin-top">
     <div class="col-md-6 py-3 view-rates-map">
         <!-- <router-outlet></router-outlet> -->
-        <!-- <div>
+        <div>
           <app-tables [tBody]="rate"></app-tables>
-      </div> -->
+      </div>
       <div class="text-center  pb-2">
         <h3><strong>Free Estimate</strong></h3>
         <p class="text-center">*Send us a request for a Free Estimate, and one of our friendly managers will be in touch!</p>

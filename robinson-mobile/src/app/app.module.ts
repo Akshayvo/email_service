@@ -59,6 +59,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
 import { UpdateDetailsComponent } from './api-bundle/update-details/update-details.component';
 import { UpdateComponent } from './api-bundle/update/update.component';
+import { FreeEstimateComponent } from './free-estimate/free-estimate.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +103,8 @@ import { UpdateComponent } from './api-bundle/update/update.component';
     PrivacyPolicyComponent,
     AlternateDetailsComponent,
     UpdateComponent,
-    UpdateDetailsComponent
+    UpdateDetailsComponent,
+    FreeEstimateComponent
   ],
   imports: [
     CommonModule,

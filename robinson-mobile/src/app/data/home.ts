@@ -71,10 +71,8 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Brand New, Affordable Portable Storage Units`,
-        blurb: `Robinson Mobile Storage was the first self storage facility we built nearly 20 years ago.
-        We recently renovated our entire operation to make sure our valued customers have another 20 years of
-        clean, affordable regular and climate controlled self storage options in Baldwinsville! Let Sample Self
-        Storage - North help you today. Our well-lit and personalized pin-code secured facility awaits your next
-        storage project!`,
+        blurb: `Have questions about the services offered at Robinson Mobile Storage? Call (705) 954-5454 to learn more!
+
+        Robinson Mobile Storage offers economical delivery, pickup, and storage of mobile self storage units. Our brand new portable storage units can be scheduled for convenient no-tilt delivery at your home or work site.`,
     }
 ];
