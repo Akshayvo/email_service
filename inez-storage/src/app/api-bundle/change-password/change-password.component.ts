@@ -41,7 +41,7 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
 
     }
     if (this.passwordChanged === true) {
-      this.router.navigate([`pay-rent/${this.navTo}/login`]);
+      this.router.navigate([`pay-rent/${this.navTo}/rent-sub/login`]);
     }
   }
 
@@ -50,7 +50,7 @@ export class ChangePasswordComponent implements OnInit, OnDestroy {
   goBack() {
     localStorage.removeItem('strTenantToken');
     this.dataSharingService.changePassword = false;
-    this.router.navigate([`pay-rent/${this.navTo}/login`]);
+    this.router.navigate([`pay-rent/${this.navTo}/rent-sub/login`]);
   }
 
   public navigate(location: any) {

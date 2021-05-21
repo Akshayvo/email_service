@@ -43,7 +43,7 @@ export class VerifyCodeComponent implements OnInit, OnDestroy {
   get f() { return this.verifyCodeForm.controls; }
 
   goBack() {
-    this.router.navigate([`pay-rent/${this.navTo}/login`]);
+    this.router.navigate([`pay-rent/${this.navTo}/rent-sub/login`]);
   }
 
   verifyCode(data: any): void {
