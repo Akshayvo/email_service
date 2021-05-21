@@ -4,7 +4,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
-import { option, option1 } from '../../data/view-rates';
+import { option, option1,reserveTip } from '../../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
@@ -48,6 +48,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   LstInsuranceChoices: LstInsuranceChoices[];
   objTenant: ObjTenant;
   objTenantDetail: ObjTenantDetail;
+  reserveTip:any;
 
   strTempTenantToken: StrTempTenantToken;
 
@@ -266,6 +267,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.description  = this.dataSharingService.getReservationData().Description;
     this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
+    this.reserveTip = reserveTip
 
     this.getData();
     this.getRentalPeriod();
