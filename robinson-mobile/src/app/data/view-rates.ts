@@ -51,6 +51,18 @@ export const state = {
   climateControl: objSIMSetting.objUnitSizesSetting.blnClimateControl,
 };
 
+export const rates = [
+  {
+      td1: 'SIZE',
+      td2: 'RATE ',
+  },
+  {
+      td1: `8'x20' Portable Storage Unit'`,
+      td2: `$6 per day plus travel`
+  },
+  
+];
+
 export const option =  [
     {
       description: 'Alabama',
