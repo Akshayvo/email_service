@@ -9,10 +9,10 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'sjmullerllc@gmail.com',
+        data: 'thestorageyardct@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        email: 'sjmullerllc@gmail.com',
-        redirect: 'mailto:`sjmullerllc@gmail.com`'
+        email: 'thestorageyardct@gmail.com',
+        redirect: 'mailto:`thestorageyardct@gmail.com`'
     },
     {
         id: 2,

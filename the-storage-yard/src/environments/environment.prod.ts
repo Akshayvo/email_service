@@ -13,6 +13,6 @@ export const environment = {
   facilityName: 'The Storage Yard',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://the-storage-yard-staging.netlify.app',
+  websiteUrl: 'https://thestorageyardct.com',
   APIKey: `dzJ0N1c4SjAqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // 27809 the storage yard
 };
