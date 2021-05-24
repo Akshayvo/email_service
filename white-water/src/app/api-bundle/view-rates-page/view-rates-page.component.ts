@@ -56,6 +56,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showClimateControl: boolean; 
   facilityName: string;
   state: string;
+  hideGrid = false;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -134,8 +135,13 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   getData() {
   this.getDataSubscribe$ = this.fetchDataService.getData()
     .subscribe(unitTypesResponse => {
-      this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+      if (unitTypesResponse.intErrorCode === 1 ) {
+        this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+        this.showTable =  true;
+        if (this.LstUnitTypes.length <= 0) {
+          this.hideGrid = true;
+        }
+      }
     });
   }
 
