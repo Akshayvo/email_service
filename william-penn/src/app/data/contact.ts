@@ -51,7 +51,7 @@ export const hours = [
 export const socialLinks = [
   {
     label: "facebook",
-    path: "https://www.facebook.com/William-Penn-Storage",
+    path: "https://www.facebook.com/WilliamPennSelfStorage",
     class: "fab fa-facebook-square",
   },
 ];

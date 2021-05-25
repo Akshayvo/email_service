@@ -89,7 +89,7 @@ export const feature = [
 
 export const jumbotron = [
   {
-    h2: ``,
-    blurb: ``,
+    h2: `Affordable Self Storage in New Alexandria`,
+    blurb: `We are the greater Greensburg area's newest self storage facility! We are proud to be a locally owned business serving our friends, family, and neighbors in New Alexandria and the surrounding communities. Our facility offers a number of self storage unit sizes with both outdoor and climate-controlled units available at competitive prices! Take a moment to review our rates and availability online, then reserve or rent your unit in minutes with our easy online customer portal! We look forward to making your storage experience a quick and easy one!`,
   },
 ];

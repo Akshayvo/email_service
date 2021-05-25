@@ -58,6 +58,7 @@ import { ThankYouGuard } from "./thank-you.guard";
 import { PrivacyPolicyComponent } from "./privacy-policy/privacy-policy.component";
 import { AlternateDetailsComponent } from "./alternate-details/alternate-details.component";
 import { FaqComponent } from "./faq/faq.component";
+import { ContactButtonComponent} from "./contact-button/contact-button.component";
 
 @NgModule({
   declarations: [
@@ -101,6 +102,7 @@ import { FaqComponent } from "./faq/faq.component";
     PrivacyPolicyComponent,
     AlternateDetailsComponent,
     FaqComponent,
+    ContactButtonComponent
   ],
   imports: [
     CommonModule,

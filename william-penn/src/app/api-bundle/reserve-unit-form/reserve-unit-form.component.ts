@@ -503,8 +503,10 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
        }
  
  
-         this.dataSharingService.LstUnitTypes.ReservationFee = this.reservationFee;
-         this.dataSharingService.LstUnitTypes.ReservationFeeTax = this.reservationFeeTax;
+        //  this.dataSharingService.LstUnitTypes.ReservationFee = this.reservationFee;
+        //  this.dataSharingService.LstUnitTypes.ReservationFeeTax = this.reservationFeeTax;
+        this.dataSharingService.LstUnitTypes.ReservationFee = 0;
+         this.dataSharingService.LstUnitTypes.ReservationFeeTax = 0;
  
        if (!serviceDescriptionValue && !serviceMonthlyValue) {
          this.reserveUnitForm.patchValue({
