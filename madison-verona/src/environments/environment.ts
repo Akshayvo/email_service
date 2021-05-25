@@ -13,12 +13,12 @@ export const environment = {
   errorsMails: [ 'sanghmitra.v@codeparva.in' ],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Madison Verona Self Storage',
+  appId: 'Madison Verona Self Storage - Testing',
   facilityName: 'Madison Verona Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://madison-verona-staging.netlify.app',
-  APIKey: `bTJUOW40TDJbOVs6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
+  websiteUrl: 'https://madisonveronaselfstorage.com',
+  APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28464
 };
 
 /*

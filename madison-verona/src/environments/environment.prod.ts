@@ -9,10 +9,10 @@ export const environment = {
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Madison Verona Self Storage',
+  appId: 'Madison Verona Self Storage - Production',
   facilityName: 'Madison Verona Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://madison-verona-staging.netlify.app',
-  APIKey: `bTJUOW40TDJbOVs6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
+  websiteUrl: 'https://madisonveronaselfstorage.com',
+  APIKey: `bTJUOW40TDJbOVs6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29429
 };
