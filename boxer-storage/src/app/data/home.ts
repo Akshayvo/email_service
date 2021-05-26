@@ -114,7 +114,7 @@ export const location4FeaturesHead = [
 
 export const location5FeaturesHead = [
     {
-        label: '6 Convenient Locations',
+        label: '11 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -137,7 +137,7 @@ export const location5FeaturesHead = [
 
 export const location6FeaturesHead = [
     {
-        label: '6 Convenient Locations',
+        label: '11 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -160,7 +160,7 @@ export const location6FeaturesHead = [
 
 export const location7FeaturesHead = [
     {
-        label: '6 Convenient Locations',
+        label: '11 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -183,7 +183,7 @@ export const location7FeaturesHead = [
 
 export const location8FeaturesHead = [
     {
-        label: '6 Convenient Locations',
+        label: '11 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -207,7 +207,7 @@ export const location8FeaturesHead = [
 
 export const location9FeaturesHead = [
     {
-        label: '6 Convenient Locations',
+        label: '11 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -231,7 +231,7 @@ export const location9FeaturesHead = [
 
 export const location10FeaturesHead = [
     {
-        label: '6 Convenient Locations',
+        label: '11 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },
@@ -255,7 +255,7 @@ export const location10FeaturesHead = [
 
 export const location11FeaturesHead = [
     {
-        label: '6 Convenient Locations',
+        label: '11 Convenient Locations',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying a location pin'
     },

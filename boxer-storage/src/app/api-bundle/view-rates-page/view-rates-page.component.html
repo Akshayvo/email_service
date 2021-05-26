@@ -46,7 +46,7 @@
           <div class=" py-1 buttons" >
               <button class="btn  btn-primary" (click)="navigate('reserve-unit', lstUnitType )">Reserve</button>
           </div>
-          <div class="py-1 buttons">
+          <div class="py-1 buttons " *ngIf="locationId == 10">
               <button class=" btn btn-primary" (click)="navigate('move-in', lstUnitType)"> Move In</button>
           </div>
         </div>

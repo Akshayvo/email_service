@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy, ElementRef } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { LocationService } from '../services/location.service';
 import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
@@ -23,6 +24,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   LstUnitTypes: LstUnitTypes[];
 
   descriptionVR: string;
+  locationId: any;
   monthlyRateVR: number;
   unitTypeIdVR: number;
   ProrateAmt: any;
@@ -58,6 +60,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   constructor(
     private getMoveinChargesService: MoveInService,
     private fetchDataService: FetchDataService,
+    private data: LocationService,
     private router: Router,
     private dataSharingService: DataSharingService,
     private eRef: ElementRef
@@ -67,6 +70,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
+    this.receiveMessage();
     this.getData();
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
@@ -130,6 +134,39 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.curStage = 2;
       }, err => {
       });
+  }
+
+  receiveMessage() {
+    if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
+      this.locationId = 1;
+  } 
+else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {
+  this.locationId = 2;
+  } 
+  else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+    this.locationId = 3;
+  } 
+   else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
+    this.locationId = 4;
+  } 
+  else if (this.router.url.includes(`${environment.locationName}/red-barn`)) {
+    this.locationId = 5;
+  } else if (this.router.url.includes(`${environment.locationName}/wayland-westside`)) {
+    this.locationId = 6;
+  } else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
+    this.locationId = 7;
+  } else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
+    this.locationId = 8;
+  }
+  else if (this.router.url.includes(`${environment.locationName}/dutton`)) {
+    this.locationId = 9;
+  }
+  else if (this.router.url.includes(`${environment.locationName}/m45`)) {
+    this.locationId = 10;
+  }
+  else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
+    this.locationId = 11;
+  }
   }
 
   getData() {
