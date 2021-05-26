@@ -17,6 +17,7 @@ export class DataSharingService {
 //     loc3: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
 //   };
 
+  paymentSuccess: boolean;
   locationName: string;
   strConfirmation: string;
   strAccessCode: string;

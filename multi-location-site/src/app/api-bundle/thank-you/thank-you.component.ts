@@ -29,6 +29,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   eventName: string;
   paymentNavigationUrl: string;
   locationName: string;
+  paymentSuccess = false;
 
   MoveIn = {
     dteMoveIn: '',
@@ -65,6 +66,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
     this.locationName =  this.dataSharingService.locationName;
     this.eventName = this.dataSharingService.eventName;
+    this.paymentSuccess = this.dataSharingService.paymentSuccess;
 
     if (localStorage.getItem('strTenantToken')) {
       this.tokenExit = localStorage.getItem('strTenantToken');

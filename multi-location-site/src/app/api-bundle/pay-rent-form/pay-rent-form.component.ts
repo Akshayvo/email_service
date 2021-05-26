@@ -83,6 +83,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   errorMessage: string;
   showError = false;
   count = 0;
+  paymentSuccess = false;
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
   existTempToken: string;
@@ -583,7 +584,7 @@ public navigateToPrevious() {
               this.moveIn(this.MoveIn);
             } else {
               this.showloaderForPayment = false;
-
+              this.dataSharingService.paymentSuccess = true;
               if (!!localStorage.getItem('paymentTab')) {
                 this.router.navigate([`pay-rent/${this.loginUrl}/${localStorage.getItem('paymentTab')}/thank-you`]);
               } else {
