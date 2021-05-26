@@ -421,64 +421,65 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
     this.filterLstUnitTypes = this.lstUnitTypes.filter(x => x.IsUnitsAvailable === true);
     console.log(" this.filterLstUnitTypes",  this.filterLstUnitTypes, this.filterLstUnitTypes.length);
-
-    if (this.filterLstUnitTypes && this.filterLstUnitTypes.length > 0) {
-      this.showMoveForm = false;
-    } else {
-      this.showMoveForm = true;
-    }
   }
 
   getData() {
     this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
+        if (unitTypesResponse.intErrorCode === 1) {
 
-        this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
-        this.getFilterLstUnitTypes(unitTypesResponse);
-        
-        const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
-        this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
-        const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
-        this.Description = unitTypesResponse.lstUnitTypes[0].Description;
-        const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
-        this.ReservationFee = unitTypesResponse.lstUnitTypes[0].ReservationFee;
-        this.ReservationFeeTax = unitTypesResponse.lstUnitTypes[0].ReservationFeeTax;
-        this.MoveIn.intUnitTypeID = this.UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
-        this.unitTypeId =
-          this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
-        this.UnitTypeID = this.filterLstUnitTypes[0].UnitTypeID;
-        if (this.navigateToMoveIn) {
-          this.getMoveInCharges(this.unitTypeId);
-        }
-
-
-        this.dataSharingService.LstUnitTypes.ReservationFee = this.ReservationFee;
-        this.dataSharingService.LstUnitTypes.ReservationFeeTax = this.ReservationFeeTax;
-
-        if (!serviceDescriptionValue && !serviceMonthlyValue) {
-          this.reserveUnitForm.patchValue({
-            lstUnitTypes: ([{
-              Description: this.Description,
-            }])
-          });
-
-          this.dataSharingService.LstUnitTypes.Description = this.Description;
-          this.dataSharingService.LstUnitTypes.UnitTypeID = this.UnitTypeID;
-          // this.dataSharingService.LstUnitTypes.MonthlyRate = this.UnitTypeRate;
-          this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
-          this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
-          this.dataSharingService.LstUnitTypes.BiAnnualRate = this.biAnnualRate;
-          this.dataSharingService.LstUnitTypes.QuarterRate = this.quarterRate;
-
-        } else {
-          this.reserveUnitForm.patchValue({
-            lstUnitTypes: ([{
-              Description: serviceDescriptionValue,
-            }])
-          });
-          this.dataSharingService.LstUnitTypes.Description = serviceDescriptionValue;
-          this.dataSharingService.LstUnitTypes.MonthlyRate = serviceMonthlyValue;
-        }
+          if (this.filterLstUnitTypes && this.filterLstUnitTypes.length > 0) {
+            this.showMoveForm = false;
+            this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
+            this.getFilterLstUnitTypes(unitTypesResponse);
+            
+            const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
+            this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
+            const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
+            this.Description = unitTypesResponse.lstUnitTypes[0].Description;
+            const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
+            this.ReservationFee = unitTypesResponse.lstUnitTypes[0].ReservationFee;
+            this.ReservationFeeTax = unitTypesResponse.lstUnitTypes[0].ReservationFeeTax;
+            this.MoveIn.intUnitTypeID = this.UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
+            this.unitTypeId =
+              this.dataSharingService.getReservationData().UnitTypeID || unitTypesResponse.lstUnitTypes[0].UnitTypeID;
+            this.UnitTypeID = this.filterLstUnitTypes[0].UnitTypeID;
+            if (this.navigateToMoveIn) {
+              this.getMoveInCharges(this.unitTypeId);
+            }
+    
+    
+            this.dataSharingService.LstUnitTypes.ReservationFee = this.ReservationFee;
+            this.dataSharingService.LstUnitTypes.ReservationFeeTax = this.ReservationFeeTax;
+    
+            if (!serviceDescriptionValue && !serviceMonthlyValue) {
+              this.reserveUnitForm.patchValue({
+                lstUnitTypes: ([{
+                  Description: this.Description,
+                }])
+              });
+    
+              this.dataSharingService.LstUnitTypes.Description = this.Description;
+              this.dataSharingService.LstUnitTypes.UnitTypeID = this.UnitTypeID;
+              // this.dataSharingService.LstUnitTypes.MonthlyRate = this.UnitTypeRate;
+              this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
+              this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
+              this.dataSharingService.LstUnitTypes.BiAnnualRate = this.biAnnualRate;
+              this.dataSharingService.LstUnitTypes.QuarterRate = this.quarterRate;
+    
+            } else {
+              this.reserveUnitForm.patchValue({
+                lstUnitTypes: ([{
+                  Description: serviceDescriptionValue,
+                }])
+              });
+              this.dataSharingService.LstUnitTypes.Description = serviceDescriptionValue;
+              this.dataSharingService.LstUnitTypes.MonthlyRate = serviceMonthlyValue;
+            }
+          } else {
+            this.showMoveForm = true;
+          }
+      }
       });
   }
 

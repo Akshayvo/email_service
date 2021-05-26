@@ -32,8 +32,7 @@ export class PayRentComponent implements OnInit {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       this.name = 'Pay Rent for Southern Storage - Barton';
       this.contact = contactsBarton;
-    }
-    else  if (this.router.url.includes('wade')) {
+    } else if (this.router.url.includes('wade')) {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       this.name = 'Pay Rent for Southern Storage - Wade';
       this.contact = contactsWade;

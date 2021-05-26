@@ -1,5 +1,6 @@
 export class UnitTypes {
     lstUnitTypes: LstUnitTypes[];
+    intErrorCode: number;
 
     constructor(lstUnitTypes: LstUnitTypes[]) {
         this.lstUnitTypes = lstUnitTypes;

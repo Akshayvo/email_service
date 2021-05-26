@@ -71,7 +71,7 @@ export class LocationComponent implements OnInit {
           content: `Take a moment to review our selection of self storage units at our Wade location, then give our friendly staff a call!`
         });
         this.titleService.setTitle('Affordable Storage Units in Wade | Southern Storage');
-        this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
+        this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
     }
     }
 
