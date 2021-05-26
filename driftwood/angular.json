@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "driftwood"
+  "defaultProject": "driftwood",
+  "cli": {
+    "analytics": "d3ed1144-802b-4ce9-aa07-3ff52839aa7c"
+  }
 }
