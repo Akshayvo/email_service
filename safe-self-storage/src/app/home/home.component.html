@@ -2,7 +2,7 @@
   <div class="jumbotron-container">
     <div class="jumbotron-top">
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
-      <!-- <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
       </div>
       <div class="container">
         <div class="jumbotorn-skew-text">
@@ -13,11 +13,11 @@
           <p class="text-justify">{{jumbotron.blurb}}</p>
           </div>
           <div class="jumbotorn-button">
-            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/contact-us')" role="button">Contact Us</a>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/view-rates')" role="button">Rent Now</a>
           </div>
           </div>
-        </div> -->
+        </div>
       </div>
       </div>
     <div class="jumbotron-bottom">
@@ -52,7 +52,7 @@
                   <!-- <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br> -->
                 </span>
               </p>
-              <h4><b>Facility Hours:</b></h4>
+              <!-- <h4><b>Facility Hours:</b></h4> -->
               <p>
                 <span class="display-contact" *ngFor="let hour of hours">
                   <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
@@ -72,7 +72,8 @@
     <div class="section py-5 m-0">
       <div class="row">
         <div class="col-lg-6 py-3">
-          <img src="{{imageBaseUrl}}/safe-self-storage-facility.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
+          <!-- <img src="{{imageBaseUrl}}/safe-self-storage-facility.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
+          <app-photos></app-photos>
         </div>
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>

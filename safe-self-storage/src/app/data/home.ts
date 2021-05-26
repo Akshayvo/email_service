@@ -78,7 +78,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: ``,
-        blurb: ``,
+        h2: `Affordable Self Storage Units in East Rochester`,
+        blurb: `SAFE Self-Storage is your one-stop storage stop for East Rochester and the surrounding communities. We offer a number of self storage unit sizes at very affordable rates! Our facility provides the modern conveniences that make self storage a fast and easy experience such as online rental, reservation, and payments. Take a moment to review our rates, then rent or reserve online. Still have questions? Reach out today, and our friendly managers will be happy to help! `,
     }
 ];

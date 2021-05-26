@@ -45,6 +45,37 @@ export const th = [
   // },
 ];
 
+export const th1 = [
+  {
+    data: `Size`,
+    state: true,
+  },
+  // {
+  //   data: `Rate`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowRate
+  // },
+  // {
+  //   data: 'deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
+  {  
+    data: `Reserve a Unit`,
+    state: objSIMSetting.objActionSetting.blnAllowReservation
+  },
+  // {  
+  //   data: `Contact Us`,
+  //   state: objSIMSetting.objActionSetting.blnAllowReservation
+  // },
+  {
+    data: `Move In`,
+    state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  },
+  // {
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
+];
+
 export const state = {
   size: true,
   rate: objSIMSetting.objUnitSizesSetting.blnShowRate,
@@ -53,6 +84,19 @@ export const state = {
   moveIn: objSIMSetting.objActionSetting.blnAllowMoveIn,
   climateControl: objSIMSetting.objUnitSizesSetting.blnClimateControl,
 };
+
+export const newUnitTypes = [
+  { type:'12.9 X 32.8'},
+  { type:'125.85 X 52.4'},
+  { type:'16 X 15'},
+  { type:'24 X 11'},
+  { type:'25 x 12'},
+  { type:'25 x 38'},
+  { type:'34 X 15'},
+  { type:'34 X 38.36'},
+  { type:'34 X21.66'},
+
+];
 
 export const option =  [
     {
