@@ -14,5 +14,5 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://herkimer-storage-staging.netlify.app',
-  APIKey: `dzJ0OVc0SjYqMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29461 demo data 3 
+  APIKey: `dzJ0OVc0SjcqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29472
 };

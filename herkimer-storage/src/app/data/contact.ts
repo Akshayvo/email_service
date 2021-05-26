@@ -9,7 +9,7 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'mohawkselfstorage@yahoo.com',
+        data: 'herkimerstorageoutlett@yahoo.com',
         class: 'fas fa-envelope mx-2 iconColor',
         redirect: 'mailto:`mohawkselfstorage@yahoo.com`'
     },
@@ -36,7 +36,7 @@ export const hours = [
     },
     {
         label: 'Saturday - Sunday: ',
-        data: 'CLOSED'
+        data: 'By Appointment Only'
     },
 ];
 
@@ -51,7 +51,7 @@ export const accesshours = [
     },
     {
         label: 'Sunday: ',
-        data: 'CLOSED'
+        data: 'By Appointment Only'
     },
 ];
 
