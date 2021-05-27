@@ -23,7 +23,7 @@
             <h1>Thank You </h1>
             <div *ngIf="PaymentAmount > 0" >Your payment of <strong>${{PaymentAmount}}</strong> was successful. </div> 
             <div *ngIf="CCApprovalCode && CCApprovalCode !== 'SMS_NONE'">  Your confirmation number is: <strong>{{CCApprovalCode}}</strong>.
-            </div>Please check your email to sign your digital lease agreement. Your move-in is not complete without a signed lease agreement.
+            </div><div class="note"><b>PLEASE NOTE: A confirmation email will be sent to you after electronically signing your lease. The confirmation email will contain your unit lock code. Without this code, you cannot gain access to your unit.</b></div>
         </div>
     </div>
   
