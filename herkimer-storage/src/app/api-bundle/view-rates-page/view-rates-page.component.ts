@@ -20,6 +20,9 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
+  temperatureLstUnitTypes: LstUnitTypes[];
+  regularLstUnitTypes: LstUnitTypes[];
+  vehicleLstUnitTypes: LstUnitTypes[];
 
   descriptionVR: string;
   monthlyRateVR: number;
@@ -135,6 +138,10 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+      this.temperatureLstUnitTypes = this.LstUnitTypes.filter(x => x.IsClimateControlled === true);
+      this.regularLstUnitTypes = this.LstUnitTypes.filter(x => x.IsClimateControlled !== true && x.IsAutomobile === false);
+      this.vehicleLstUnitTypes = this.LstUnitTypes.filter(x => x.IsAutomobile === true);
+
     });
   }
 

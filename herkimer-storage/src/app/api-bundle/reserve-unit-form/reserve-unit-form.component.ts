@@ -477,6 +477,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
   getFilterLstUnitTypes(unitTypesResponse: any) {
     this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
     this.filterLstUnitTypes = this.lstUnitTypes.filter(x => x.IsUnitsAvailable === true);
+    
   }
 
   getData() {
