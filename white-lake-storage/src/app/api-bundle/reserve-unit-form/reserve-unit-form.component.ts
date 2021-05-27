@@ -4,7 +4,6 @@ import { FetchDataService } from '../services/fetch-data.service';
 import {UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices  } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router } from '@angular/router';
-import { option, option1 } from '../../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
@@ -14,6 +13,7 @@ import { MoveInService } from '../services/moveIn.service';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
 import { CanonicalService } from '../../services/canonical.service';
+import { MilitaryBranch, MilitaryTypes, option, option1 } from '../../data/view-rates';
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -53,6 +53,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   strTempTenantToken: StrTempTenantToken;
 
   strConfirmation: string;
+  dteStartDate: string;
 
   successMessage = false;
 
@@ -84,6 +85,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   currentDate: string;
   minDate: Date;
   maxDate: Date;
+  militaryTypes = [];
+  militaryBranch = [];
+  MilitaryBranch: number;
+  MilitaryTypes: number;
   from: string;
   to: string;
   formattedMoveInDate: any;
@@ -133,6 +138,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   alternatetypeDetail: any;
 
   showAltDetails = false;
+  showMilitaryDetails = false;
 
   private  getLeadDaysSubscribe$: Subscription;
   private  getTenantInfoSubscribe$: Subscription;
@@ -163,6 +169,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.dataSharingService.navigateToMoveIn = false;
         this.showAltDetails = (environment.alternateType.reserve === true) ? true : false;
         this.dataSharingService.showAltDetails = this.showAltDetails;
+        
       } else {
         if (this.router.url.includes('move-in')) {
           this.navigateToMoveIn = true;
@@ -170,6 +177,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           this.dataSharingService.navigateToReserve = false;
           this.showAltDetails = (environment.alternateType.moveIn === true) ? true : false;
           this.dataSharingService.showAltDetails = this.showAltDetails;
+          this.showMilitaryDetails = (environment.military === true) ? true : false;
+          this.dataSharingService.showMilitaryDetails = this.showMilitaryDetails;
         }
       }
         
@@ -188,7 +197,50 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
-        AlternateName: [''],
+                DriversLicense: ['', conditionalValidator(
+                    (() => this.showMilitaryDetails === false),
+                    Validators.required
+                  )],
+                  DriversLicenseExpDate: ['', conditionalValidator(
+                    (() => this.showMilitaryDetails === false),
+                    Validators.required
+                  )],
+                  DateOfBirth: ['', conditionalValidator(
+                    (() => this.showMilitaryDetails === false),
+                    Validators.required
+                  )],
+                  MilitaryBranch: ['', conditionalValidator(
+                    (() => this.showMilitaryDetails === false),
+                    Validators.required
+                  )],
+                  MilitaryDivision: ['', conditionalValidator(
+                    (() => this.showMilitaryDetails === false),
+                    Validators.required
+                  )],
+                  MilitaryType: ['', conditionalValidator(
+                    (() => this.showMilitaryDetails === false),
+                    Validators.required
+                  )],
+                  MilitaryID: ['', conditionalValidator(
+                    (() => this.showMilitaryDetails === false),
+                    Validators.required
+                  )],
+                  DeployedUntil: ['', conditionalValidator(
+                    (() => this.showMilitaryDetails === false),
+                    Validators.required
+                  )],
+                  CommandingOfficer: ['', conditionalValidator(
+                    (() => this.showMilitaryDetails === false),
+                    Validators.required
+                  )],
+                  CommandingOfficerPhone: ['', conditionalValidator(
+                    (() => this.showMilitaryDetails === false),
+                    Validators.required
+                  ),],
+                  AlternateName: ['', conditionalValidator(
+                    (() => this.showAltDetails === false),
+                    Validators.required
+                  ),],
         AlternatePhone:   ['', [  conditionalValidator(
           (() => this.showAltDetails === false),
           Validators.required
@@ -197,11 +249,23 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
             '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
             )
         ]],
-        AlternateAddressLine1: [''],
+        AlternateAddressLine1: ['', conditionalValidator(
+                    (() => this.showAltDetails === false),
+                    Validators.required
+                  ),],
         AlternateAddressLine2: [''],
-        AlternateCity: [''],
-        AlternateState: [''],
-        AlternateZIP: [''],
+        AlternateCity: ['', conditionalValidator(
+                    (() => this.showAltDetails === false),
+                    Validators.required
+                  ),],
+                  AlternateState: ['', conditionalValidator(
+                    (() => this.showAltDetails === false),
+                    Validators.required
+                  ),],
+                  AlternateZIP: ['', conditionalValidator(
+                    (() => this.showAltDetails === false),
+                    Validators.required
+                  ),],
       }),
 
 
@@ -257,9 +321,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.dteStartDate =this.convertDate(new Date());
     this.description  = this.dataSharingService.getReservationData().Description;
     this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
+    this.fetchMilitaryBranch();
+    this.fetchMilitaryTypes();
 
     this.getData();
     this.getRentalPeriod();
@@ -287,8 +354,17 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     public fetchUSState() {
     this.option = option;
     this.option1 = option1;
-    }
+  }
+  
+  public fetchMilitaryTypes() {
+    this.militaryTypes = MilitaryTypes;
+    // console.log('this.militaryTypes', this.militaryTypes)
+  }
 
+  public fetchMilitaryBranch() {
+    this.militaryBranch = MilitaryBranch;
+    // console.log('this.militaryBranch', this.militaryBranch) 
+  }
   public navigate(location: any) {
     this.router.navigate([`${environment.locationName}/${location}`]);
   }
@@ -322,7 +398,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[index].InsuranceChoiceID;
       this.premium = this.LstInsuranceChoices[index].Premium;
     }
-    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID, this.dteStartDate);
   }
 
 
@@ -330,7 +406,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const indexValue = event.target.value;
     const index = this.LstRentalPeriods.findIndex(x => x.PeriodDescription === indexValue);
     this.dataSharingService.periodID = this.LstRentalPeriods[index].PeriodID;
-    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID, this.dteStartDate);
   }
 
   selectChangeHandler (event: any) {
@@ -355,17 +431,18 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
     if (this.navigateToMoveIn) {
       // tslint:disable-next-line:max-line-length
-      this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+      this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID,  this.dteStartDate);
     }
 }
 
 
 
-getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number) {
+getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number,  dteStartDate: string,) {
   this.moveInService.getMoveInCharges({
     intUnitTypeID,
     intInsuranceID,
-    intPeriodID
+    intPeriodID,
+    dteStartDate
   }).subscribe(result => {
     const {objCharges: {
       ProrateAmt = 0,
@@ -423,6 +500,16 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
+            DriversLicense: Tenant.DriversLicense,
+            DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+            DateOfBirth: Tenant.DateOfBirth,
+            MilitaryType: Tenant.militaryType,
+            MilitaryBranch: Tenant.militaryBranch,
+            MilitaryID: Tenant.MilitaryID,
+            DeployedUntil: Tenant.DeployedUntil,
+            MilitaryDivision: Tenant.MilitaryDivision,
+            CommandingOfficer: Tenant.CommandingOfficer,
+            CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
             AlternateName: Tenant.AlternateName,
             AlternatePhone: Tenant.AlternatePhone,
             AlternateAddressLine1: Tenant.AlternateAddressLine2,
@@ -442,6 +529,16 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
+                            DriversLicense: Tenant.DriversLicense,
+              DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+              DateOfBirth: Tenant.DateOfBirth,
+              MilitaryType: Tenant.militaryType,
+              MilitaryBranch: Tenant.militaryBranch,
+              MilitaryID: Tenant.MilitaryID,
+              DeployedUntil: Tenant.DeployedUntil,
+              MilitaryDivision: Tenant.MilitaryDivision,
+              CommandingOfficer: Tenant.CommandingOfficer,
+              CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
               AlternateName: Tenant.AlternateName,
               AlternatePhone: Tenant.AlternatePhone,
               AlternateAddressLine1: Tenant.AlternateAddressLine1,
@@ -484,7 +581,8 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
        .subscribe(unitTypesResponse => {
        this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
        this.getFilterLstUnitTypes(unitTypesResponse);
-       if (this.filterLstUnitTypes.length != 0) {
+
+       if (this.filterLstUnitTypes && this.filterLstUnitTypes.length > 0) {
          const defaultMonthlyValue = this.filterLstUnitTypes[0].MonthlyRate;
          this.description = this.filterLstUnitTypes[0].Description;
          this.reservationFeeTax = this.filterLstUnitTypes[0].ReservationFeeTax;
@@ -499,7 +597,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
        const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
        if (this.navigateToMoveIn) {
          // tslint:disable-next-line:max-line-length
-         this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+         this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID,  this.dteStartDate);
        }
  
  

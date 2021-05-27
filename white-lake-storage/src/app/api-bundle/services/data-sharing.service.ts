@@ -29,6 +29,8 @@ export class DataSharingService {
   eventName: string;
   signUpForAutoPay: boolean;
   showAltDetails: boolean;
+  showMilitaryDetails: boolean;
+
 
   cardDetailsObject = {
     CCNumber: '',
@@ -85,6 +87,16 @@ export class DataSharingService {
     City: '',
     State: '',
     ZIP: '',
+    DriversLicense: ' ',
+    DriversLicenseExpDate: ' ',
+    DateOfBirth: ' ',
+    MilitaryType: 0,
+    MilitaryBranch: 0,
+    MilitaryID: ' ',
+    DeployedUntil: ' ',
+    MilitaryDivision: ' ',
+    CommandingOfficer: ' ',
+    CommandingOfficerPhone: ' ',
     AlternateName: '',
     AlternatePhone: '',
     AlternateAddressLine1: '',

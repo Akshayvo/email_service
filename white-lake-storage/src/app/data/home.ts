@@ -23,20 +23,13 @@ export const aboutUsHeading = `Affordable Self Storage in Whitehall, MI`;
 
 export const aboutUs = [
   {
-    p: `White Lake Storage is Whitehall’s newest self storage facility! We are conveniently located on Holton Whitehall Rd between Silver Creek Rd and Lorenson Rd just east of Whitehall.
-        We are proud to be a locally owned and operated business serving Whitehall, Holton, Montague, and the surrounding communities. Our facility offers a number of
-        self storage unit sizes and all of the modern conveniences necessary for a hassle-free rental experience.`,
+    p: `White Lake Storage is Whitehall’s newest self storage facility! We are conveniently located on Holton Whitehall Rd between Silver Creek Rd and Lorenson Rd just east of Whitehall. We are proud to be a locally owned and operated business serving Whitehall, Holton, Montague, and the surrounding communities. Our facility offers a number of self storage unit sizes and all of the modern conveniences necessary for a hassle-free rental experience.`,
   },
   {
-    p: `We understand that the need for a storage unit can come at a stressful time. Whether you’re preparing for a
-        move, a renovation, or are just looking for a place to store the contents of your garage, we’ve got a unit for
-        you. You can reserve, rent, and pay online. No need to call or drive to the facility. Our well-lit grounds are
-        secured by an electronic pin-code activated gate, and security cameras will be installed soon to further enhance
-        the sense of safety and security around the facility.`,
+    p: `We understand that the need for a storage unit can come at a stressful time. Whether you’re preparing for a move, a renovation, or are just looking for a place to store the contents of your garage, we’ve got a unit for you. You can reserve, rent, and pay online. No need to call or drive to the facility. Our well-lit grounds and security cameras will be installed soon to further enhance the sense of safety and security around the facility.`,
   },
   {
-    p: `If you have any questions, please feel free to contact our friendly management team. We look forward
-        to meeting you and making your next storage project fast, affordable and easy!`,
+    p: `If you have any questions, please feel free to contact our friendly management team. We look forward to meeting you and making your next storage project fast, affordable and easy!`,
   },
 ];
 

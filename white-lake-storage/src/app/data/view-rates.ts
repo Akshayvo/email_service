@@ -2,10 +2,7 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Are you ready to start reclaiming that elbow room around the home, office, or worksite? Start by reviewing our current
-      availability and rates on our View Rates page. As soon as you’ve found the perfect unit for your home or business needs,
-      you can fill out our application form online, pay your first month’s charges, and sign our electronic lease. Once signed,
-      our automated system will email your unique gate code for immediate access.`,
+      p: `Are you ready to start reclaiming that elbow room around the home, office, or worksite? Start by reviewing our current availability and rates on our View Rates page. As soon as you’ve found the perfect unit for your home or business needs, you can fill out our application form online, pay your first month’s charges, and sign our electronic lease.`,
     },
     {
       p: `If you have any questions or concerns about the services we offer, give our friendly management team a call at (231) 766-1945 today!`
@@ -13,6 +10,60 @@ export const dataViewRates = [
 ];
 
 export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
+
+export const MilitaryTypes = [
+    {
+      Description: `NA`,
+      Value: 0 
+    },
+    {
+      Description: `Active`,
+      Value: 1
+    },
+    {
+      Description: `Reserve`,
+      Value: 2 
+    },
+    {
+      Description: `Veteran`,
+      Value: 3 
+    },
+    {
+      Description: `Retired`,
+      Value: 4
+    },
+    {
+      Description: `Deployed`,
+      Value: 5 
+    },
+  ]
+  
+  export const MilitaryBranch = [
+    {
+      Description: `NA`,
+      Value: 0 
+    },
+    {
+      Description: `Army`,
+      Value: 1
+    },
+    {
+      Description: `Navy`,
+      Value: 2 
+    },
+    {
+      Description: `AirForce`,
+      Value: 3 
+    },
+    {
+      Description: `Marines`,
+      Value: 4
+    },
+    {
+      Description: `CoastGuard`,
+      Value: 5 
+    },
+  ]
 
 export const th = [
   {

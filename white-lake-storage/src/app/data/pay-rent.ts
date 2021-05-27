@@ -1,7 +1,7 @@
 export const loginDetail = [
     {
         userName: `First Initial + Last Name`,
-        password: `Access Code + Last 4 of Phone Number`,
+        password: `Full Phone Number(Only the digits with no country code)`,
         example: {
             code: 'Phone Number is 555-555-5555',
             userName: 'jsmith',
