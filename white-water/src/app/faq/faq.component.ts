@@ -4,6 +4,7 @@ import { faqPageTitle } from '../data/title';
 import { faqHeading } from '../data/heading';
 import { faq } from '../data/faq';
 
+
 @Component({
   selector: 'app-faq',
   templateUrl: './faq.component.html',

@@ -9,7 +9,16 @@
         <ol>
           <li *ngFor="let faq of faq">
             <h2><strong>{{faq.h2}}</strong></h2>
-            <p [innerHTML]="faq.paragraph"></p>
+            <div *ngIf="faq.bold; else other">
+              <span>{{faq.paragraph}}</span>
+              <b><u><span>{{faq.bold}}</span></u></b>
+              <span>{{faq.paragraph1}}</span>
+              
+            </div>
+            <ng-template #other>
+              <p [innerHTML]="faq.paragraph"></p>
+            </ng-template>
+            
           </li>
         </ol>
       </div>
