@@ -591,6 +591,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           this.showSuccessPayment = true;
         } else {
           this.makePaymentForUnit = false;
+          this.showloaderForPayment = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
 
@@ -715,6 +716,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
         } else {
           if (err.status === 401 ) {
+            this.showloaderForPayment = false;
             localStorage.removeItem('strTempTenantToken');
           }
           if (err.status === 500 ) {
