@@ -9,9 +9,9 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'info@madisonveronaselfstorage.com',
+        data: 'madisonveronaselfstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:`info@madisonveronaselfstorage.com`'
+        redirect: 'mailto:madisonveronaselfstorage@gmail.com'
     },
     {
         id: 2,
