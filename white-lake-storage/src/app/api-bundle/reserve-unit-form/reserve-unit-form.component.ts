@@ -362,6 +362,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
    this.submitted = true;
    this.dataSharingService.objTenant = this.reserveUnitForm.value.objTenant;
    this.dataSharingService.MoveIn.dteMoveIn = this.convertDate(this.reserveUnitForm.value.dteMoveIn);
+   this.dataSharingService.objTenant.DateOfBirth = this.convertDate(this.reserveUnitForm.value.objTenant.DateOfBirth)
+   this.dataSharingService.objTenant.DriversLicenseExpDate = this.convertDate(this.reserveUnitForm.value.objTenant.DriversLicenseExpDate)
    if (this.reserveUnitForm.invalid) {
      return;
     } else {

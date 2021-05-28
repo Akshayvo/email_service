@@ -315,6 +315,9 @@
                             matInput
                             [matDatepicker]="dateOfBirth"
                                   formControlName="DateOfBirth"
+                                  [min]="from"
+                            [max]="to"
+                            readonly
               (click)="dateOfBirth.open()"
             />
 
@@ -416,7 +419,7 @@
                         <div
                                   class="col-lg-4 col-md-6 form-group custom-date-css"
                                   >
-                                  <label>Military Deployed Until Date*</label>&nbsp;
+                                  <label>Military Deployed Until Date</label>&nbsp;
                                   <mat-form-field
                                     class="example-full-width"
                                     class="form-control"
