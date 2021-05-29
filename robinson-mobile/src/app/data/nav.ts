@@ -8,7 +8,7 @@ export const navLinks = [
     },
     {
         id: 1,
-        label: 'FREE ESTIMATE',
+        label: 'RATES',
         path: `${environment.locationName}/free-estimate`,
     },
     // {
