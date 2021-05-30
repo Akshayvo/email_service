@@ -120,4 +120,12 @@ export const galleryImagesHome = [
         url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-security-storage-6.jpg`,
         alt: ` photograph of a self storage building with oversized roll-up doors`,
     },
+    {
+        url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-storage-650-parker-rd-building.jpg`,
+        alt: ` the end of a climate controlled self storage building with a sign containing contact information`,
+    },
+    {
+        url: `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/AA_Secure/aa-secure-storage-650-parker-rd-climate-controlled.jpg`,
+        alt: ` the interior of a well-lit self storage facility climate controlled building`,
+    },
 ];
