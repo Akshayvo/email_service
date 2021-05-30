@@ -50,26 +50,21 @@ export const th = [
 
 export const reserveTip = [
   {
-      data: `Use smaller boxes for books and heavy items.`
+      data: `Must be in Clean, good working order (No Junk).`
   },
   {
-      data: `Use larger boxes for lighter items`
+      data: `Must fit in space rented.`
   },
   {
-      data: `Reinforce the bottom of boxes with at least one strip of packing tape.`
+      data: `Title or Registration in Tenants name (No Bill of sale).`
   },
   {
-      data: `Pack boxes firmly to prevent the contents from shifting.`
+      data: `Cars & Small Boats must have Cover (No Tarps).`
   },
   {
-      data: `Seal boxes tightly with wide packing tape.`
+      data: `Subject to inspection, cannot be used for storage.`
   },
-  {
-      data: `Pack records and CDs vertically! Don't stack them flat, they will warp or bend.`
-  },
-  {
-      data: `Place heavier items in the bottom of the box and lighter items on top.`
-  }
+ 
 ];
 
 
