@@ -93,7 +93,9 @@
         </ng-template> -->
     </div>
   </div>
-  <div class="py-5" [class.display]="!showTable" *ngFor="let data of offerList">
+  
+  <div class="py-4" [class.display]="!showTable" *ngFor="let data of offerList">
+    <p class="mb-3"><b>Low-cost tenant insurance is available.  Please call our office for more information.</b></p>
     <p class="mb-3">{{data.p1}}</p>
     <ul>
       <li>{{data.offer1}}</li>

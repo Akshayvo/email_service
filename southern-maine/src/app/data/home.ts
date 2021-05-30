@@ -27,6 +27,9 @@ export const featuresList = [
         td1: 'Camper Storage',
         td2: 'Trailer Storage'
     },
+    {
+        td1: 'Tenant Insurance Available'
+    }
 ];
 
 export const aboutUsAlt = `aboutUsAlt`;
