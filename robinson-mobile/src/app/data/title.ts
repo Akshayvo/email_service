@@ -27,3 +27,6 @@ export const thankYouPageContent = `We've received your reservation! One of our 
 
 export const privacyPolicyPageTitle = `Privacy Policy | Robinson Mobile Storage`;
 export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
+
+export const howItWorksPageTitle = `Privacy Policy | Robinson Mobile Storage`;
+export const howItWorksPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;

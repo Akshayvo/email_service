@@ -42,4 +42,9 @@ export const navLinks = [
         label: 'CONTACT US',
         path: '/contact-us'
     },
+    {
+        id: 1,
+        label: 'HOW IT WORKS',
+        path: '/how-it-works'
+    },
 ];

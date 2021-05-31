@@ -9,3 +9,5 @@ export const storageTipsHeading = `Storage Tips`;
 export const unitSizerHeading = `Storage Unit Sizer`;
 
 export const contactHeading = `Contact Us`;
+
+export const howItWorksHeading = `How It Works`;

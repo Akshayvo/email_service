@@ -32,6 +32,7 @@ import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.compone
 import { UpdateDetailsComponent } from '../api-bundle/update-details/update-details.component';
 import { UpdateComponent } from '../api-bundle/update/update.component';
 import { FreeEstimateComponent } from '../free-estimate/free-estimate.component';
+import { HowItWorksComponent } from '../how-it-works/how-it-works.component';
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
         {path: 'login', component: LoginComponent },
@@ -97,6 +98,7 @@ const reviewURL = ``
     { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
     { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
     { path: `${environment.locationName}/view-rates`, component: FreeEstimateComponent },
+    { path: `how-it-works`, component: HowItWorksComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },

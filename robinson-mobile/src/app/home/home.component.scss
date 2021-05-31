@@ -23,7 +23,8 @@
 .jumbotron {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  // background-attachment: fixed;
   padding: 0;
   height: 80vh;
   color: $white;
@@ -605,16 +606,18 @@
   .feature {
     display: none;
   }
+ 
 
   .disp {
     display: none;
   }
+  
 
   .jumbotorn-skew-style {
     transform: skew(0deg);
     width: 100%;
     left: auto;
-    height: 150px;
+    height: 100px;
     bottom: 0;
     position: absolute;
   }
@@ -637,6 +640,7 @@
 
     .jumbotorn-button {
       padding: 15px;
+
     }
   }
 }

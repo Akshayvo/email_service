@@ -1,7 +1,7 @@
 import { environment } from '../../environments/environment';
 import { homePageContent, homePageTitle, payRentPageContent,
   payRentPageTitle, storageTipsContent, storageTipsTitle,
-contactPageContent, contactPageTitle } from '../data/title';
+contactPageContent, contactPageTitle, howItWorksPageContent, howItWorksPageTitle } from '../data/title';
 import { featuresList } from '../data/home';
 import { contact, socialLinks } from '../data/contact';
  
@@ -319,6 +319,61 @@ export const ogPayRentPage = [
     {
       name: `twitter:description`,
       content: `${contactPageContent}`
+    },
+    {
+      name: `twitter:site`,
+      content: `@${environment.facilityName}`
+    },
+    {
+      name: `twitter:card`,
+      content: `summary`
+    },
+    {
+      name: `twitter:creator`,
+      content: `@syrasoft_connect`
+    },
+    {
+      name: `twitter:image`,
+      content: script.imagesHomePage[0]
+    },
+  ];
+
+  
+  export const ogHowItWorksPage = [
+    {
+      property: `og:title`,
+      content: `${howItWorksPageTitle}`
+    },
+    {
+      property: `og:description`,
+      content: `${howItWorksPageContent}`
+    },
+    {
+      property: `og:type`,
+      content: `website`
+    },
+    {
+      property: `og:site_name`,
+      content: `${environment.facilityName}`
+    },
+    {
+      property: `og:url`,
+      content: `${environment.websiteUrl}/contact-us`
+    },
+    {
+      property: `og:image`,
+      content: script.imagesHomePage[1]
+    },
+  ];
+  
+  export const twitterHowItWorksPage = [
+    {
+      name: `twitter:title`,
+      content: `@${howItWorksPageTitle}`
+    },
+    {
+      name: `twitter:description`,
+      content: `${howItWorksPageContent}`
     },
     {
       name: `twitter:site`,

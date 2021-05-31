@@ -117,4 +117,27 @@ img {
     height: 200px;
     overflow-y: scroll;
   }
+
+  
+}
+
+@media only screen and (max-width: 429px) {
+  .text-right {
+    text-align: left!important;
+}
+.contact-header {
+  display: block;
+  
+  .contact-details {
+    white-space: nowrap;
+    padding-left: 1px;
+  }
+}
+.mobile{
+  padding-left: 1px;
+  font-size: .9rem;
+}
+
+
+
 }
