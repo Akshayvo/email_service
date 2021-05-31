@@ -60,7 +60,8 @@ import { AlternateDetailsComponent } from './alternate-details/alternate-details
 import { UpdateDetailsComponent } from './api-bundle/update-details/update-details.component';
 import { UpdateComponent } from './api-bundle/update/update.component';
 import { FreeEstimateComponent } from './free-estimate/free-estimate.component';
-import{ RatesTableComponent} from './rates-table/rates-table.component'
+import{ RatesTableComponent} from './rates-table/rates-table.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component'
 
 @NgModule({
   declarations: [
@@ -106,7 +107,8 @@ import{ RatesTableComponent} from './rates-table/rates-table.component'
     UpdateComponent,
     UpdateDetailsComponent,
     FreeEstimateComponent,
-    RatesTableComponent
+    RatesTableComponent,
+    HowItWorksComponent
   ],
   imports: [
     CommonModule,
