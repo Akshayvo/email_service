@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'MP&E Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://mp-and-e-staging.netlify.app`
+  websiteUrl: `https://mpestorage.com`
 };
 
 /*

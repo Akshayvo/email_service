@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc>https://mp-and-e-staging.netlify.app/</loc>
+    <loc>https://mpestorage.com/</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc>https://mp-and-e-staging.netlify.app/location/montello/reserve-unit </loc>
+    <loc>https://mpestorage.com/location/montello/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://mp-and-e-staging.netlify.app/storage-tips </loc>
+    <loc> https://mpestorage.com/storage-tips </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   <url>
-    <loc> https://mp-and-e-staging.netlify.app/contact-us
+    <loc> https://mpestorage.com/contact-us
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   <url>
-    <loc>https://mp-and-e-staging.netlify.app/location/wautoma/storage-units
+    <loc>https://mpestorage.com/location/wautoma/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   <url>
-    <loc>https://mp-and-e-staging.netlify.app/location/montello
+    <loc>https://mpestorage.com/location/montello
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   <url>
-    <loc>https://mp-and-e-staging.netlify.app/location/wautoma/reserve-unit
+    <loc>https://mpestorage.com/location/wautoma/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   <url>
-    <loc>https://mp-and-e-staging.netlify.app/location/wautoma </loc>
+    <loc>https://mpestorage.com/location/wautoma </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc>https://mp-and-e-staging.netlify.app/pay-rent
+    <loc>https://mpestorage.com/pay-rent
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc>https://mp-and-e-staging.netlify.app/location/montello/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mp-and-e-staging.netlify.app/contact-wautoma
+    <loc>https://mpestorage.com/location/montello/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   <url>
-    <loc>https://mp-and-e-staging.netlify.app/contact-montello
+    <loc>https://mpestorage.com/contact-wautoma
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   <url>
-    <loc>https://mp-and-e-staging.netlify.app/pay-rent/wautoma
+    <loc>https://mpestorage.com/contact-montello
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   <url>
-    <loc>https://mp-and-e-staging.netlify.app/pay-rent/wautoma/rent-sub/login
+    <loc>https://mpestorage.com/pay-rent/wautoma
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mpestorage.com/pay-rent/wautoma/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
