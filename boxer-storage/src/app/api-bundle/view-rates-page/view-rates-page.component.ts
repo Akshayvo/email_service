@@ -25,6 +25,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   descriptionVR: string;
   locationId: any;
+  locationReserve: any;
+  locationMovein: any;
   monthlyRateVR: number;
   unitTypeIdVR: number;
   ProrateAmt: any;
@@ -139,33 +141,55 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   receiveMessage() {
     if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
       this.locationId = 1;
+      this.locationReserve = "location1reserve";
+      this.locationMovein = "location1movein";
   } 
 else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {
   this.locationId = 2;
+  this.locationReserve = "location2reserve";
+  this.locationMovein = "location2movein";
   } 
   else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
     this.locationId = 3;
+    this.locationReserve = "location3reserve";
+    this.locationMovein = "location3movein";
   } 
    else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
     this.locationId = 4;
+    this.locationReserve = "location4reserve";
+    this.locationMovein = "location4movein";
   } 
   else if (this.router.url.includes(`${environment.locationName}/red-barn`)) {
     this.locationId = 5;
+    this.locationReserve = "location5reserve";
+    this.locationMovein = "location5movein";
   } else if (this.router.url.includes(`${environment.locationName}/wayland-westside`)) {
     this.locationId = 6;
+    this.locationReserve = "location6reserve";
+    this.locationMovein = "location6movein";
   } else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
     this.locationId = 7;
+    this.locationReserve = "location7reserve";
+    this.locationMovein = "location7movein";
   } else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
     this.locationId = 8;
+    this.locationReserve = "location8reserve";
+    this.locationMovein = "location8movein";
   }
   else if (this.router.url.includes(`${environment.locationName}/dutton`)) {
     this.locationId = 9;
+    this.locationReserve = "location9reserve";
+    this.locationMovein = "location9movein";
   }
   else if (this.router.url.includes(`${environment.locationName}/m45`)) {
     this.locationId = 10;
+    this.locationReserve = "location10reserve";
+    this.locationMovein = "location10movein";
   }
   else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
     this.locationId = 11;
+    this.locationReserve = "location1reserve";
+    this.locationMovein = "location11movein";
   }
   }
 
