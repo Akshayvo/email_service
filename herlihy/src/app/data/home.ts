@@ -94,6 +94,6 @@ export const feature = [
 export const jumbotron = [
     {
         h2: `Affordable Self Storage Units in Chillicothe`,
-        blurb: `Herlihy Self storage is Chillicothe's most trusted self storage facility. We come complete with all of the conveniences you need to make that next renovation, or moving project affordable and easy! Our facility is secured by keypad-activated electronic gates, and is covered by security cameras to ensure a sense of safety at all times. You'll get all of that plus customer service and experienced honed by 90 years of serving Chillicothe and the surrounding communities!`,
+        blurb: `Herlihy Self storage is Chillicothe's most trusted self storage facility. We come complete with all of the conveniences you need to make that next renovation, or moving project affordable and easy! Our facility is secured by keypad-activated electronic gates, and is covered by security cameras to ensure a sense of safety at all times. You'll get all of that plus customer service and experience honed by over 100 years of serving Chillicothe and the surrounding communities!`,
     }
 ];

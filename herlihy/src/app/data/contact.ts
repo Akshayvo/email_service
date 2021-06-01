@@ -9,24 +9,24 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'joe@herlihymoving.com',
+        data: 'selfstorage@herlihymoving.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:`joe@herlihymoving.com`'
+        redirect: 'mailto:`selfstorage@herlihymoving.com`'
     },
     {
         id: 2,
-        label: 'Business Hours:',
+        label: 'Phone:',
         data: '(740) 775-6683',
         class: 'fas fa-phone mx-2 iconColor',
         redirect: 'tel:7407756683',
     },
-    {
-        id: 3,
-        label: 'After Hours:',
-        data: '(740) 253-2203',
-        class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:7402532203',
-    }
+    // {
+    //     id: 3,
+    //     label: 'After Hours:',
+    //     data: '(740) 253-2203',
+    //     class: 'fas fa-phone mx-2 iconColor',
+    //     redirect: 'tel:7402532203',
+    // }
 
 ];
 

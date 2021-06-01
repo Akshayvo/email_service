@@ -73,8 +73,8 @@
             <p><strong>Have questions about your account?</strong><br>
             <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
 
-                <span *ngIf="contact?.label === 'Business Hours:' || contact?.label === 'After Hours:'">{{contact.label}}</span>
-              <a  *ngIf="contact?.label === 'Email:' || contact?.label === 'Business Hours:' || contact?.label === 'After Hours:' else other_content" [href]="contact?.redirect">
+                <span *ngIf="contact?.label === 'Phone:' || contact?.label === 'After Hours:'">{{contact.label}}</span>
+              <a  *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' || contact?.label === 'After Hours:' else other_content" [href]="contact?.redirect">
                 {{contact.data}}
               </a>
             <br>

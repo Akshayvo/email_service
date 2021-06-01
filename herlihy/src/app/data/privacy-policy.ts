@@ -7,7 +7,7 @@ const email = contact[indexEmail].data;
 
 const redirectEmail = contact[indexEmail].redirect;
 
-const indexPhone = contact.findIndex(x => x.label === 'Business Hours:');
+const indexPhone = contact.findIndex(x => x.label === 'Phone:');
 
 const phone = contact[indexPhone].data;
 
