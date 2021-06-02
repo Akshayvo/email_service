@@ -1,7 +1,7 @@
 export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `storage-plus-location-3`,
+    url: `storage-plus-barnwell`,
     // tslint:disable-next-line:max-line-length
     thumb: `storage-plus-barnwell-thumb`,
     alt: `single story metal self storage buildings behind a chain link fence`

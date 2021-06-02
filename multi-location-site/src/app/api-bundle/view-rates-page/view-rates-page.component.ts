@@ -25,6 +25,9 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   monthlyRateVR: number;
   unitTypeIdVR: number;
   ProrateAmt: any;
+  locationId: any;
+  locationReserve: any;
+  locationMovein: any;
   deposit: any;
   openComponent = false;
   showMoveIn = false;
@@ -67,6 +70,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
+    this.receiveMessage();
     this.getData();
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
@@ -78,6 +82,24 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   public fetchThData() {
     this.th = th;
   }
+
+  receiveMessage() {
+    if (this.router.url.includes(`${environment.locationName}/location-1`)) {
+      this.locationId = 1;
+      this.locationReserve = "location1reserve";
+      this.locationMovein = "location1movein";
+  } 
+else if (this.router.url.includes(`${environment.locationName}/location-2`)) {
+  this.locationId = 2;
+  this.locationReserve = "location2reserve";
+  this.locationMovein = "location2movein";
+  } 
+  else if (this.router.url.includes(`${environment.locationName}/location-3`)) {
+    this.locationId = 3;
+    this.locationReserve = "location3reserve";
+    this.locationMovein = "location3movein";
+  } 
+}
 
   public navigate(location: any, unitData: any) {
 
