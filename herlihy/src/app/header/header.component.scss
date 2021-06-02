@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import "../../styles.scss";
 
+.mobile{
+  display: none;
+}
 a {
   cursor: pointer;
 }
@@ -35,6 +38,8 @@ img {
   }
 }
 
+
+
 .social :hover {
   color: $white;
 }
@@ -51,6 +56,8 @@ img {
   .nav-link:hover {
     color: $primary;
   }
+
+  
 
   .nav-link-active {
     color: $primary;
@@ -99,6 +106,16 @@ img {
     display: none;
   }
 
+  .mobile{
+    display: block;
+    text-align: center;
+  }
+
+  .btn-outline-primary{
+    background-color: $primary!important;
+    font-size: .9rem;
+  }
+
   .nav-link {
     text-align: center;
   }
@@ -117,4 +134,5 @@ img {
     height: 200px;
     overflow-y: scroll;
   }
+ 
 }

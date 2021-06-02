@@ -58,6 +58,7 @@ import { ThankYouGuard } from './thank-you.guard';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

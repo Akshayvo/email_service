@@ -3,7 +3,10 @@ import { Router } from '@angular/router';
 import { navLinks } from '../data/nav';
 import { contact, socialLinks } from '../data/contact';
 import { UaParserService } from '../services/ua-parser.service';
-
+import { environment } from '../../environments/environment';
+import { time } from 'console';
+import { ViewRatesPageComponent } from '../api-bundle/view-rates-page/view-rates-page.component';
+import { Input} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -11,12 +14,15 @@ import { UaParserService } from '../services/ua-parser.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+
   contactDetails: any;
   navLinks: any;
   socialLinks: any;
   navbarCollapsed = true;
   imagetype: any;
   imageBaseUrl: any;
+  scroll: any;
+  paymentTab: string;
 
   constructor(
     private router: Router,
@@ -51,6 +57,16 @@ export class HeaderComponent implements OnInit {
 
   public onClick(menu: any) {
     menu.classList.remove('show');
+  }
+
+  
+
+  public payrent(){
+    // this.router.navigate([`${environment.locationName}/view-rates`,{scroll: true}])
+    if (!!localStorage.getItem('paymentTab')) {
+      this.paymentTab = localStorage.getItem('paymentTab');
+    }
+    this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
   }
 
 }

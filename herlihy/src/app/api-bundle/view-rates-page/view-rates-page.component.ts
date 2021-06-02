@@ -5,11 +5,12 @@ import { ObjCharges } from '../models/movein';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { FetchDataService } from '../services/fetch-data.service';
 import { th } from '../../data/view-rates';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
 import { objSIMSetting } from '../../data/configuration';
 import { script } from '../../data/script';
+
 @Component({
   selector: 'app-view-rates-page',
   templateUrl: './view-rates-page.component.html',
@@ -20,6 +21,9 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
+  temperatureLstUnitTypes: LstUnitTypes[];
+  regularLstUnitTypes: LstUnitTypes[];
+
 
   descriptionVR: string;
   monthlyRateVR: number;
@@ -53,26 +57,34 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showDeposit: boolean;
   showReserve: boolean;
   showMovein: boolean;
-  showClimateControl: boolean; 
+  showClimateControl: boolean;
   facilityName: string;
   state: string;
+  isScroll: any;
 
   private getDataSubscribe$: Subscription;
   constructor(
+
     private getMoveinChargesService: MoveInService,
     private fetchDataService: FetchDataService,
     private router: Router,
     private dataSharingService: DataSharingService,
-    private eRef: ElementRef
+    private eRef: ElementRef,
+    private route: ActivatedRoute
+
+
   ) {
     this.facilityName = environment.facilityName;
-   }
+  }
 
 
   ngOnInit() {
     this.getData();
-    this.fetchThData();    
+    this.fetchThData();
     this.state = script.state;
+    // this.isScroll = this.route.snapshot.paramMap.get('scroll')
+
+
   }
 
   public fetchThData() {
@@ -97,19 +109,19 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       intUnitTypeID
     }).subscribe(result => {
       this.showLoader = false;
-      const {objCharges: {
+      const { objCharges: {
         ProrateAmt = 0,
         Deposit = 0,
         DepositTax = 0,
         Rate = 0,
-        RateTax= 0,
+        RateTax = 0,
         ProrateTax = 0,
         OthDeposit = 0,
         Setup = 0,
         SetupTax = 0,
         TotalTaxAmount = 0,
         TotalChargesAmount = 0,
-      }} = result;
+      } } = result;
       this.prorateAmt = ProrateAmt;
       this.deposit = Deposit;
       this.depositTax = DepositTax;
@@ -126,21 +138,38 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.monthlyRateVR = monthlyRate;
       this.unitTypeIdVR = intUnitTypeID;
       this.curStage = 2;
-      }, err => {
-      });
+    }, err => {
+    });
   }
 
   getData() {
-  this.getDataSubscribe$ = this.fetchDataService.getData()
-    .subscribe(unitTypesResponse => {
-      this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
-    });
+    this.getDataSubscribe$ = this.fetchDataService.getData()
+      .subscribe(unitTypesResponse => {
+        this.showTable = true;
+        this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+        this.temperatureLstUnitTypes = this.LstUnitTypes.filter(x => x.IsClimateControlled === true);
+        this.regularLstUnitTypes = this.LstUnitTypes.filter(x => x.IsClimateControlled !== true);
+        // if (this.isScroll) {
+        //   this.scrollTo();
+        // }
+
+      });
   }
+
+  // public scrollTo() {
+  //   let el = this.eRef.nativeElement.querySelector('#target');
+  //   el.scrollIntoView(true);
+    
+  // }
+  public scroll(el: any) {
+    el.scrollIntoView();
+}
 
   public ngOnDestroy(): void {
     if (this.getDataSubscribe$ && this.getDataSubscribe$.closed) {
       this.getDataSubscribe$.unsubscribe();
     }
   }
+
+
 }
