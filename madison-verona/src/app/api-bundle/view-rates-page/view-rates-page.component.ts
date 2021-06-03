@@ -4,7 +4,7 @@ import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { FetchDataService } from '../services/fetch-data.service';
-import { th } from '../../data/view-rates';
+import { th, doorSize} from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
@@ -20,6 +20,10 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
+  indoorTemperatureLstUnitTypes: LstUnitTypes[];
+  regularLstUnitTypes: LstUnitTypes[];
+  outdoorTemperatureLstUnitTypes: LstUnitTypes[];
+  
 
   descriptionVR: string;
   monthlyRateVR: number;
@@ -41,6 +45,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
   defaultClimateString = ' ';
+  
 
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
@@ -56,6 +61,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showClimateControl: boolean; 
   facilityName: string;
   state: string;
+  doorSize:any;
+ 
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -82,6 +89,13 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;
     this.showMovein = objSIMSetting.objActionSetting.blnAllowMoveIn;
     this.showClimateControl = objSIMSetting.objUnitSizesSetting.blnClimateControl;
+    this.doorSize = doorSize;
+    // console.log(typeof(this.doorSize))
+    // this.doorSize = {
+    //   1:"abc",
+    //   2:"xyz",
+    //   3:"wer"
+    // }
   }
 
 
@@ -135,6 +149,39 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+      
+      this.indoorTemperatureLstUnitTypes = this.LstUnitTypes.filter(x => x.IsClimateControlled === true && x.IsOutdoor === false);
+      this.regularLstUnitTypes = this.LstUnitTypes.filter(x => !x.IsClimateControlled && x.IsOutdoor !== true);
+      // console.log(this.regularLstUnitTypes);
+      this.outdoorTemperatureLstUnitTypes = this.LstUnitTypes.filter(x => x.IsOutdoor === true && x.IsClimateControlled===true);
+      
+      this.indoorTemperatureLstUnitTypes.forEach(ele=> {
+        if(this.doorSize[ele.UnitTypeID]){
+          ele["doorSize"] = this.doorSize[ele.UnitTypeID]
+
+        }
+        else{
+          ele["doorSize"] = '-';
+        }
+      })
+      this.outdoorTemperatureLstUnitTypes.forEach(ele=> {
+        if(this.doorSize[ele.UnitTypeID]){
+          ele["doorSize"] = this.doorSize[ele.UnitTypeID]
+
+        }
+        else{
+          ele["doorSize"] = '-';
+        }
+      })
+      this.regularLstUnitTypes.forEach(ele=> {
+        if(this.doorSize[ele.UnitTypeID]){
+          ele["doorSize"] = this.doorSize[ele.UnitTypeID]
+
+        }
+        else{
+          ele["doorSize"] = '-';
+        }
+      })
     });
   }
 
@@ -143,4 +190,5 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       this.getDataSubscribe$.unsubscribe();
     }
   }
+  
 }
