@@ -1,101 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc> https://york-staging.netlify.app/</loc>
+    <loc> https://selfstorageofyork.com/</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://york-staging.netlify.app/location/platte-ave/reserve-unit </loc>
+    <loc> https://selfstorageofyork.com/new-york/platte-ave/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
-    <loc> https://york-staging.netlify.app/storage-tips </loc>
+    <loc> https://selfstorageofyork.com/storage-tips </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/location/lincoln-ave/storage-units
+      https://selfstorageofyork.com/new-york/lincoln-ave/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/contact-us
+      https://selfstorageofyork.com/contact-us
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+ 
+  <url>
+    <loc> 
+      https://selfstorageofyork.com/new-york/marquis-ave/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/location/lincoln-ave
+      https://selfstorageofyork.com/new-york/marquis-ave/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
-  
-  
-
-  <url>
     <loc> 
-      https://york-staging.netlify.app/location/marquis-ave/storage-units
+      https://selfstorageofyork.com/pay-rent
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/location/platte-ave
+      https://selfstorageofyork.com/new-york/platte-ave/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
-  </url>
-  
-  
+  </url>  
   <url>
     <loc> 
-      https://york-staging.netlify.app/location/marquis-ave/reserve-unit
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  
-  <url>
-    <loc> https://york-staging.netlify.app/location/marquis-ave </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://york-staging.netlify.app/pay-rent
+      https://selfstorageofyork.com/new-york/lincoln-ave/reserve-unit
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/location/platte-ave/storage-units
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  
-
-  
-  
-  <url>
-    <loc> 
-      https://york-staging.netlify.app/location/lincoln-ave/reserve-unit
+      https://selfstorageofyork.com/contact-marquis-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/contact-marquis-ave
-    </loc>
-    <lastmod>2020-09-21</lastmod>
-  </url>
-  <url>
-    <loc> 
-      https://york-staging.netlify.app/contact-lincoln-ave
+      https://selfstorageofyork.com/contact-lincoln-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   <url>
     <loc>
-      https://york-staging.netlify.app/contact-platte-ave
+      https://selfstorageofyork.com/contact-platte-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -103,32 +77,32 @@
   
   <url>
     <loc>
-      https://york-staging.netlify.app/pay-rent/lincoln-ave
+      https://selfstorageofyork.com/pay-rent/lincoln-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/contact-lincoln-ave
+      https://selfstorageofyork.com/contact-lincoln-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://york-staging.netlify.app/pay-rent/marquis-ave
+      https://selfstorageofyork.com/pay-rent/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   
   <url>
     <loc> 
-      https://york-staging.netlify.app/pay-rent/lincoln-ave/rent-sub/login
+      https://selfstorageofyork.com/pay-rent/lincoln-ave/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
-      https://york-staging.netlify.app/pay-rent/marquis-ave/rent-sub/login
+      https://selfstorageofyork.com/pay-rent/marquis-ave/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
