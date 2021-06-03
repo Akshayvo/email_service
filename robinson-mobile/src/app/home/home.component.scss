@@ -599,8 +599,16 @@
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
-    height: 100vh;
+    background-position: center center;
+    height: 20vh;
+  }
+
+  .jumbotron-top {
+    height: 20vh;
+    margin-top: 159px;
+  }
+  .jumbotron-bottom {
+    height: 0;
   }
 
   .feature {
@@ -608,39 +616,59 @@
   }
  
 
-  .disp {
-    display: none;
-  }
+  // .disp {
+  //   display: none;
+  // }
   
 
+  // .jumbotorn-skew-style {
+  //   transform: skew(0deg);
+  //   width: 100%;
+  //   left: auto;
+  //   height: 100px;
+  //   bottom: 0;
+  //   position: absolute;
+  // }
+
+  // .jumbotorn-skew-text {
+  //   width: 100%;
+  //   left: 0;
+  //   top: auto;
+  //   bottom: 2px;
+
+  //   .btn-outline-primary {
+  //     margin-right: 0;
+  //     margin-bottom: 8px;
+  //     border-radius: 25px;
+  //   }
+
+  //   .btn-primary {
+  //     margin-top: 8px;
+  //   }
+
+  //   // .jumbotorn-button {
+  //   //   padding: 15px;
+
+  //   // }
+  // }
+
+  .jumbotron-button {
+    display: none;
+  }
+
   .jumbotorn-skew-style {
-    transform: skew(0deg);
-    width: 100%;
-    left: auto;
-    height: 100px;
-    bottom: 0;
-    position: absolute;
+    display: none;
   }
 
-  .jumbotorn-skew-text {
-    width: 100%;
-    left: 0;
-    top: auto;
-    bottom: 2px;
-
-    .btn-outline-primary {
-      margin-right: 0;
-      margin-bottom: 8px;
-      border-radius: 25px;
-    }
-
-    .btn-primary {
-      margin-top: 8px;
-    }
-
-    .jumbotorn-button {
-      padding: 15px;
-
-    }
+  .jumbotorn-skew-text { 
+    display: none;
   }
+}
+
+@media only screen and (max-width: 416px) {
+  .jumbotron-top {
+    height: 20vh;
+    margin-top: 183px;
+  }
+
 }
