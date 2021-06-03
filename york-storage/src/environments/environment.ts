@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'Self Storage of York',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://york-staging.netlify.app`
+  websiteUrl: `https://selfstorageofyork.com`
 };
 
 /*
