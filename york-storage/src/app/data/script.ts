@@ -63,39 +63,39 @@ import { contactsLocation1, hoursLocation1,
 const contactIndex1 = contactsLocation1.findIndex(x => x.label === 'Phone: ');
 const contactIndex2 = contactsLocation2.findIndex(x => x.label === 'Phone: ');
 const contactIndex3 = contactsLocation3.findIndex(x => x.label === 'Phone: ');
-const contactIndex4 = contactsLocation4.findIndex(x => x.label === 'Phone: ');
-const contactIndex5 = contactsLocation5.findIndex(x => x.label === 'Phone: ');
-const contactIndex6 = contactsLocation6.findIndex(x => x.label === 'Phone: ');
+// const contactIndex4 = contactsLocation4.findIndex(x => x.label === 'Phone: ');
+// const contactIndex5 = contactsLocation5.findIndex(x => x.label === 'Phone: ');
+// const contactIndex6 = contactsLocation6.findIndex(x => x.label === 'Phone: ');
 
 const emailIndex1 = contactsLocation1.findIndex(x => x.label === 'Email: ');
 const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
 const emailIndex3 = contactsLocation3.findIndex(x => x.label === 'Email: ');
-const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
-const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
-const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
+// const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
+// const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
+// const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
 export const nameLocation1 = `Self Storage of York - Platte`;
 export const nameLocation2 = `Self Storage of York - Marquis`;
 export const nameLocation3 = `Self Storage of York - Lincoln`;
-export const nameLocation4 = `Self Storage of York - Belforest`;
-export const nameLocation5 = `Self Storage of York - Fairhope`;
-export const nameLocation6 = `Self Storage of York - Robertsdale`;
+// export const nameLocation4 = `Self Storage of York - Belforest`;
+// export const nameLocation5 = `Self Storage of York - Fairhope`;
+// export const nameLocation6 = `Self Storage of York - Robertsdale`;
 
 
 export const location1 = `platte-ave`;
 export const location2 = `marquis-ave`;
 export const location3 = `lincoln-ave`;
-export const location4 = `belforest`;
-export const location5 = `lincoln-ave`;
-export const location6 = `robertsdale`;
+// export const location4 = `belforest`;
+// export const location5 = `lincoln-ave`;
+// export const location6 = `robertsdale`;
 
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/platte-ave/storage-units`;
 export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/marquis-ave/storage-units`;
 export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/lincoln-ave/storage-units`;
-export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/belforest/storage-units`;
-export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/fairhope/storage-units`;
-export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/robertsdale/storage-units`;
+// export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/belforest/storage-units`;
+// export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/fairhope/storage-units`;
+// export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/robertsdale/storage-units`;
 
 
 export const description1 = `Self Storage of York and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years.`;
@@ -104,23 +104,23 @@ export const description2 = `Self Storage of York and our 3 convenient locations
 
 export const description3 = `Self Storage of York and our 3 convenient locations are York, Nebraska’s premier self storage and vehicle storage solution! We have proudly served the community with clean, well-maintained self storage and outdoor parking services for over 40 years.`;
 
-export const description4 = `Our Belfast location has a number of units in both regular and climate controlled
-                             varieties to cover all of your residential or commercial self storage needs.`;
+// export const description4 = `Our Belfast location has a number of units in both regular and climate controlled
+//                              varieties to cover all of your residential or commercial self storage needs.`;
 
-export const description5 = `Our Fairhope location has a number of unit sizes ideal for just about any self storage
-                             need at an affordable price!  Our 24-hour access policy makes coming and going on your
-                             schedule a breeze!`;
+// export const description5 = `Our Fairhope location has a number of unit sizes ideal for just about any self storage
+//                              need at an affordable price!  Our 24-hour access policy makes coming and going on your
+//                              schedule a breeze!`;
 
-export const description6 = `Our Robertsdale location has a number of unit sizes ideal for just about any self
-                             storage need at great prices!  Our 24-hour access policy makes coming and going
-                             on your schedule a breeze!`;
+// export const description6 = `Our Robertsdale location has a number of unit sizes ideal for just about any self
+//                              storage need at great prices!  Our 24-hour access policy makes coming and going
+//                              on your schedule a breeze!`;
 
 export const maplocation1 = 'https://goo.gl/maps/CncyW8Kg3qitggUs6';
 export const maplocation2 = 'https://goo.gl/maps/btYwTZiynghoA5ds7';
 export const maplocation3 = 'https://goo.gl/maps/FY6MqcAbKZwVETzu8';
-export const maplocation4 = 'https://goo.gl/maps/skmJTukq9K3xRFbS7';
-export const maplocation5 = 'https://goo.gl/maps/FANSU6w7QY9vCpiDA';
-export const maplocation6 = 'https://goo.gl/maps/kt1bhA6aHeRmjXsN7';
+// export const maplocation4 = 'https://goo.gl/maps/skmJTukq9K3xRFbS7';
+// export const maplocation5 = 'https://goo.gl/maps/FANSU6w7QY9vCpiDA';
+// export const maplocation6 = 'https://goo.gl/maps/kt1bhA6aHeRmjXsN7';
 
 
 export const addressLoaction1 = {
@@ -150,32 +150,32 @@ export const addressLoaction3 = {
   'addressCountry': 'United state'
 } 
 
-export const addressLoaction4 = {
-  '@type': 'PostalAddress',
-  'streetAddress': '11455 Co Rd 64',
-  'addressLocality': 'Daphne',
-  'addressRegion': 'AL',
-  'postalCode': '36526',
-  'addressCountry': 'United state'
-}
+// export const addressLoaction4 = {
+//   '@type': 'PostalAddress',
+//   'streetAddress': '11455 Co Rd 64',
+//   'addressLocality': 'Daphne',
+//   'addressRegion': 'AL',
+//   'postalCode': '36526',
+//   'addressCountry': 'United state'
+// }
 
-export const addressLoaction5 = {
-  '@type': 'PostalAddress',
-  'streetAddress': '21193 AL-181',
-  'addressLocality': 'Fairhope',
-  'addressRegion': 'AL',
-  'postalCode': '36532',
-  'addressCountry': 'United state'
-}
+// export const addressLoaction5 = {
+//   '@type': 'PostalAddress',
+//   'streetAddress': '21193 AL-181',
+//   'addressLocality': 'Fairhope',
+//   'addressRegion': 'AL',
+//   'postalCode': '36532',
+//   'addressCountry': 'United state'
+// }
 
-export const addressLoaction6 = {
-  '@type': 'PostalAddress',
-  'streetAddress': '20218 US-90',
-  'addressLocality': 'Robertsdale',
-  'addressRegion': 'AL',
-  'postalCode': '36567',
-  'addressCountry': 'United state'
-}
+// export const addressLoaction6 = {
+//   '@type': 'PostalAddress',
+//   'streetAddress': '20218 US-90',
+//   'addressLocality': 'Robertsdale',
+//   'addressRegion': 'AL',
+//   'postalCode': '36567',
+//   'addressCountry': 'United state'
+// }
 
 
 
@@ -197,23 +197,23 @@ export const imageLocation1 = [
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/York_Storage/jpg/self-storage-of-york-lincoln-169.jpg'
  ]
 
- export const imageLocation4 =  [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-county-belforest-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-county-belforest-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-county-belforest-43.jpg'
- ]
+//  export const imageLocation4 =  [
+//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-county-belforest-11.jpg',
+//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-county-belforest-169.jpg',
+//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-county-belforest-43.jpg'
+//  ]
 
- export const imageLocation5 =  [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-county-belforest-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-county-belforest-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-county-belforest-43.jpg'
- ]
+//  export const imageLocation5 =  [
+//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-county-belforest-11.jpg',
+//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-county-belforest-169.jpg',
+//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-county-belforest-43.jpg'
+//  ]
 
- export const imageLocation6 =  [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-robertsdale-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-robertsdale-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-robertsdale-43.jpg'
- ]
+//  export const imageLocation6 =  [
+//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-robertsdale-11.jpg',
+//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-robertsdale-169.jpg',
+//   'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/York_Storage/storage-plus-of-baldwin-robertsdale-43.jpg'
+//  ]
 
 export const homePageScript = [ 
   {
@@ -252,42 +252,42 @@ export const homePageScript = [
     'openingHours': [],
     'url' : urlLocation3
   }, 
-  {
-    '@context' : 'http://schema.org',
-    '@type' : ['LocalBusiness', 'SelfStorage'],
-    'name' : nameLocation4,
-    'image' : imageLocation4,
-    'telephone' : contactsLocation4[contactIndex4].data,
-    'email' : contactsLocation4[emailIndex4].data,
-    'address': addressLoaction4,
-     'priceRange': '$30 - $125',
-     'openingHours': [],
-     'url' : urlLocation4
-  },
-  {
-    '@context' : 'http://schema.org',
-    '@type' : ['LocalBusiness', 'SelfStorage'],
-    'name' : nameLocation5,
-    'image' : imageLocation5,
-    'telephone' : contactsLocation5[contactIndex5].data,
-    'email' : contactsLocation5[emailIndex5].data,
-    'address': addressLoaction5,
-     'priceRange': '$40 - $135',
-     'openingHours': [],
-     'url' : urlLocation5
-  },
-  {
-    '@context' : 'http://schema.org',
-    '@type' : ['LocalBusiness', 'SelfStorage'],
-    'name' : nameLocation6,
-    'image' : imageLocation6,
-    'telephone' : contactsLocation6[contactIndex6].data,
-    'email' : contactsLocation6[emailIndex6].data,
-    'address': addressLoaction6,
-     'priceRange': '$40 - $110',
-     'openingHours': [],
-     'url' : urlLocation6
-  },
+  // {
+  //   '@context' : 'http://schema.org',
+  //   '@type' : ['LocalBusiness', 'SelfStorage'],
+  //   'name' : nameLocation4,
+  //   'image' : imageLocation4,
+  //   'telephone' : contactsLocation4[contactIndex4].data,
+  //   'email' : contactsLocation4[emailIndex4].data,
+  //   'address': addressLoaction4,
+  //    'priceRange': '$30 - $125',
+  //    'openingHours': [],
+  //    'url' : urlLocation4
+  // },
+  // {
+  //   '@context' : 'http://schema.org',
+  //   '@type' : ['LocalBusiness', 'SelfStorage'],
+  //   'name' : nameLocation5,
+  //   'image' : imageLocation5,
+  //   'telephone' : contactsLocation5[contactIndex5].data,
+  //   'email' : contactsLocation5[emailIndex5].data,
+  //   'address': addressLoaction5,
+  //    'priceRange': '$40 - $135',
+  //    'openingHours': [],
+  //    'url' : urlLocation5
+  // },
+  // {
+  //   '@context' : 'http://schema.org',
+  //   '@type' : ['LocalBusiness', 'SelfStorage'],
+  //   'name' : nameLocation6,
+  //   'image' : imageLocation6,
+  //   'telephone' : contactsLocation6[contactIndex6].data,
+  //   'email' : contactsLocation6[emailIndex6].data,
+  //   'address': addressLoaction6,
+  //    'priceRange': '$40 - $110',
+  //    'openingHours': [],
+  //    'url' : urlLocation6
+  // },
  ];
 
 
@@ -398,113 +398,113 @@ export const Location3Script = {
 
 };
 
-export const Location4Script = {
-    '@context': 'https://schema.org',
-    '@type': 'SelfStorage',
-    'image': imageLocation4,
-    '@id': environment.websiteUrl,
-    'name': nameLocation4,
-     'description': description4 || location4PageContent,
-    'address': addressLoaction4,
-   'aggregateRating': {
-  '@type': 'AggregateRating',
-  'ratingValue': '5',
-  'bestRating': '5',
-  'reviewCount': ''
-},
-    'geo': {
-      '@type': 'GeoCoordinates',
-      'latitude': 30.607304,
-      'longitude': -87.8104576
-    },
-    'url': urlLocation4,
-    'telephone': contactsLocation4[contactIndex4].data,
+// export const Location4Script = {
+//     '@context': 'https://schema.org',
+//     '@type': 'SelfStorage',
+//     'image': imageLocation4,
+//     '@id': environment.websiteUrl,
+//     'name': nameLocation4,
+//      'description': description4 || location4PageContent,
+//     'address': addressLoaction4,
+//    'aggregateRating': {
+//   '@type': 'AggregateRating',
+//   'ratingValue': '5',
+//   'bestRating': '5',
+//   'reviewCount': ''
+// },
+//     'geo': {
+//       '@type': 'GeoCoordinates',
+//       'latitude': 30.607304,
+//       'longitude': -87.8104576
+//     },
+//     'url': urlLocation4,
+//     'telephone': contactsLocation4[contactIndex4].data,
 
-    'priceRange': '$30 - $125',
-    'openingHours': [],
-    'currenciesAccepted': 'USD',
-  'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
-     'areaServed': {
-  '@type': 'State',
-  'name': 'New York'
-   },
-   'hasMap': maplocation4,
+//     'priceRange': '$30 - $125',
+//     'openingHours': [],
+//     'currenciesAccepted': 'USD',
+//   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card',
+//      'areaServed': {
+//   '@type': 'State',
+//   'name': 'New York'
+//    },
+//    'hasMap': maplocation4,
 
-    'acceptsReservations': 'True'
+//     'acceptsReservations': 'True'
 
-};
+// };
 
-export const Location5Script = {
-  '@context': 'https://schema.org',
-  '@type': 'SelfStorage',
-  'image': imageLocation5,
-  '@id': environment.websiteUrl,
-  'name': nameLocation5,
-   'description': description5 || location5PageContent,
-  'address': addressLoaction5,
- 'aggregateRating': {
-'@type': 'AggregateRating',
-'ratingValue': '4',
-'bestRating': '5',
-'reviewCount': '9'
-},
-  'geo': {
-    '@type': 'GeoCoordinates',
-    'latitude': 30.5345495,
-    'longitude': -87.8561786
-  },
-  'url': urlLocation5,
-  'telephone': contactsLocation5[contactIndex5].data,
+// export const Location5Script = {
+//   '@context': 'https://schema.org',
+//   '@type': 'SelfStorage',
+//   'image': imageLocation5,
+//   '@id': environment.websiteUrl,
+//   'name': nameLocation5,
+//    'description': description5 || location5PageContent,
+//   'address': addressLoaction5,
+//  'aggregateRating': {
+// '@type': 'AggregateRating',
+// 'ratingValue': '4',
+// 'bestRating': '5',
+// 'reviewCount': '9'
+// },
+//   'geo': {
+//     '@type': 'GeoCoordinates',
+//     'latitude': 30.5345495,
+//     'longitude': -87.8561786
+//   },
+//   'url': urlLocation5,
+//   'telephone': contactsLocation5[contactIndex5].data,
 
-  'priceRange': '$40 - $135',
-  'openingHours': [],
-  'currenciesAccepted': 'USD',
-'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
-   'areaServed': {
-'@type': 'State',
-'name': 'New York'
- },
- 'hasMap': maplocation5,
+//   'priceRange': '$40 - $135',
+//   'openingHours': [],
+//   'currenciesAccepted': 'USD',
+// 'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
+//    'areaServed': {
+// '@type': 'State',
+// 'name': 'New York'
+//  },
+//  'hasMap': maplocation5,
 
-  'acceptsReservations': 'True'
+//   'acceptsReservations': 'True'
 
-};
+// };
 
-export const Location6Script = {
-  '@context': 'https://schema.org',
-  '@type': 'SelfStorage',
-  'image': imageLocation6,
-  '@id': environment.websiteUrl,
-  'name': nameLocation6,
-   'description': description6 || location6PageContent,
-  'address': addressLoaction6,
- 'aggregateRating': {
-'@type': 'AggregateRating',
-'ratingValue': '4.6',
-'bestRating': '5',
-'reviewCount': '10'
-},
-  'geo': {
-    '@type': 'GeoCoordinates',
-    'latitude': 30.5639016,
-    'longitude': -87.6814587
-  },
-  'url': urlLocation6,
-  'telephone': contactsLocation6[contactIndex6].data,
+// export const Location6Script = {
+//   '@context': 'https://schema.org',
+//   '@type': 'SelfStorage',
+//   'image': imageLocation6,
+//   '@id': environment.websiteUrl,
+//   'name': nameLocation6,
+//    'description': description6 || location6PageContent,
+//   'address': addressLoaction6,
+//  'aggregateRating': {
+// '@type': 'AggregateRating',
+// 'ratingValue': '4.6',
+// 'bestRating': '5',
+// 'reviewCount': '10'
+// },
+//   'geo': {
+//     '@type': 'GeoCoordinates',
+//     'latitude': 30.5639016,
+//     'longitude': -87.6814587
+//   },
+//   'url': urlLocation6,
+//   'telephone': contactsLocation6[contactIndex6].data,
 
-  'priceRange': '$40 - $115',
-  'openingHours': [],
-  'currenciesAccepted': 'USD',
-'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
-   'areaServed': {
-'@type': 'State',
-'name': 'New York'
- },
- 'hasMap': maplocation6,
+//   'priceRange': '$40 - $115',
+//   'openingHours': [],
+//   'currenciesAccepted': 'USD',
+// 'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
+//    'areaServed': {
+// '@type': 'State',
+// 'name': 'New York'
+//  },
+//  'hasMap': maplocation6,
 
-  'acceptsReservations': 'True'
+//   'acceptsReservations': 'True'
 
-};
+// };
 
 
 
@@ -582,77 +582,77 @@ export const contactPageLocation3Script = {
 
 };
 
-export const contactPageLocation4Script = {
-    '@context': 'http://schema.org',
-    '@type': 'Selfstorage',
-    'name': nameLocation4,
-    'address': addressLoaction4,
-     'url': urlLocation4,
-     'image': imageLocation4,
-    'contactPoint': [{
-      '@type': 'ContactPoint',
-      'telephone': contactsLocation4[contactIndex4].data,
-      'contactType': 'reservations'
-    }, {
-      '@type': 'ContactPoint',
-      'telephone': contactsLocation4[contactIndex4].data,
-      'contactType': 'customer service'
-    }],
-    'email': contactsLocation4[emailIndex4].data,
-    'sameAs': [
-      '',
-      '',
-      ''
-    ]
-};
+// export const contactPageLocation4Script = {
+//     '@context': 'http://schema.org',
+//     '@type': 'Selfstorage',
+//     'name': nameLocation4,
+//     'address': addressLoaction4,
+//      'url': urlLocation4,
+//      'image': imageLocation4,
+//     'contactPoint': [{
+//       '@type': 'ContactPoint',
+//       'telephone': contactsLocation4[contactIndex4].data,
+//       'contactType': 'reservations'
+//     }, {
+//       '@type': 'ContactPoint',
+//       'telephone': contactsLocation4[contactIndex4].data,
+//       'contactType': 'customer service'
+//     }],
+//     'email': contactsLocation4[emailIndex4].data,
+//     'sameAs': [
+//       '',
+//       '',
+//       ''
+//     ]
+// };
 
-export const contactPageLocation5Script = {
-  '@context': 'http://schema.org',
-  '@type': 'Selfstorage',
-  'name': nameLocation5,
-  'address': addressLoaction5,
-   'url': urlLocation5,
-   'image': imageLocation5,
-  'contactPoint': [{
-    '@type': 'ContactPoint',
-    'telephone': contactsLocation5[contactIndex5].data,
-    'contactType': 'reservations'
-  }, {
-    '@type': 'ContactPoint',
-    'telephone': contactsLocation5[contactIndex5].data,
-    'contactType': 'customer service'
-  }],
-  'email': contactsLocation5[emailIndex5].data,
-  'sameAs': [
-    '',
-    '',
-    ''
-  ]
-};
+// export const contactPageLocation5Script = {
+//   '@context': 'http://schema.org',
+//   '@type': 'Selfstorage',
+//   'name': nameLocation5,
+//   'address': addressLoaction5,
+//    'url': urlLocation5,
+//    'image': imageLocation5,
+//   'contactPoint': [{
+//     '@type': 'ContactPoint',
+//     'telephone': contactsLocation5[contactIndex5].data,
+//     'contactType': 'reservations'
+//   }, {
+//     '@type': 'ContactPoint',
+//     'telephone': contactsLocation5[contactIndex5].data,
+//     'contactType': 'customer service'
+//   }],
+//   'email': contactsLocation5[emailIndex5].data,
+//   'sameAs': [
+//     '',
+//     '',
+//     ''
+//   ]
+// };
 
-export const contactPageLocation6Script = {
-  '@context': 'http://schema.org',
-  '@type': 'Selfstorage',
-  'name': nameLocation6,
-  'address': addressLoaction6,
-   'url': urlLocation6,
-   'image': imageLocation6,
-  'contactPoint': [{
-    '@type': 'ContactPoint',
-    'telephone': contactsLocation6[contactIndex6].data,
-    'contactType': 'reservations'
-  }, {
-    '@type': 'ContactPoint',
-    'telephone': contactsLocation6[contactIndex6].data,
-    'contactType': 'customer service'
-  }],
-  'email': contactsLocation6[emailIndex6].data,
-  'sameAs': [
-    '',
-    '',
-    ''
-  ]
-};
+// export const contactPageLocation6Script = {
+//   '@context': 'http://schema.org',
+//   '@type': 'Selfstorage',
+//   'name': nameLocation6,
+//   'address': addressLoaction6,
+//    'url': urlLocation6,
+//    'image': imageLocation6,
+//   'contactPoint': [{
+//     '@type': 'ContactPoint',
+//     'telephone': contactsLocation6[contactIndex6].data,
+//     'contactType': 'reservations'
+//   }, {
+//     '@type': 'ContactPoint',
+//     'telephone': contactsLocation6[contactIndex6].data,
+//     'contactType': 'customer service'
+//   }],
+//   'email': contactsLocation6[emailIndex6].data,
+//   'sameAs': [
+//     '',
+//     '',
+//     ''
+//   ]
+// };
 
 
 
@@ -877,167 +877,167 @@ export const twitterLocation3 = [
   },
 ];
 
-export const ogLocation4 = [
-  {
-    property: `og:title`,
-    content: location4PageTitle
-  },
-  {
-    property: `og:description`,
-    content: location4PageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: urlLocation4
-  },
-  {
-    property: `og:image`,
-    content: imageLocation4[1]
-  },
-];
+// export const ogLocation4 = [
+//   {
+//     property: `og:title`,
+//     content: location4PageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location4PageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: urlLocation4
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation4[1]
+//   },
+// ];
 
-export const twitterLocation4 = [
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:title`,
-    content: `@${location4PageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location4PageContent
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation4[0]
-  },
-];
+// export const twitterLocation4 = [
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:title`,
+//     content: `@${location4PageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location4PageContent
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation4[0]
+//   },
+// ];
 
-export const ogLocation5 = [
-  {
-    property: `og:title`,
-    content: location4PageTitle
-  },
-  {
-    property: `og:description`,
-    content: location5PageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: urlLocation5
-  },
-  {
-    property: `og:image`,
-    content: imageLocation5[1]
-  },
-];
+// export const ogLocation5 = [
+//   {
+//     property: `og:title`,
+//     content: location4PageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location5PageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: urlLocation5
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation5[1]
+//   },
+// ];
 
-export const twitterLocation5 = [
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:title`,
-    content: `@${location5PageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location5PageContent
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation5[0]
-  },
-];
+// export const twitterLocation5 = [
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:title`,
+//     content: `@${location5PageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location5PageContent
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation5[0]
+//   },
+// ];
 
-export const ogLocation6 = [
-  {
-    property: `og:title`,
-    content: location6PageTitle
-  },
-  {
-    property: `og:description`,
-    content: location6PageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: urlLocation6
-  },
-  {
-    property: `og:image`,
-    content: imageLocation6[1]
-  },
-];
+// export const ogLocation6 = [
+//   {
+//     property: `og:title`,
+//     content: location6PageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location6PageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: urlLocation6
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation6[1]
+//   },
+// ];
 
-export const twitterLocation6 = [
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:title`,
-    content: `@${location6PageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location6PageContent
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation6[0]
-  },
-];
+// export const twitterLocation6 = [
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:title`,
+//     content: `@${location6PageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location6PageContent
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation6[0]
+//   },
+// ];
 
 
 
@@ -1258,167 +1258,167 @@ export const twitterPayRentPageLocation3 = [
   },
 ];
 
-export const ogPayRentPageLocation4 = [
-  {
-    property: `og:title`,
-    content: location4PayrentPageTitle
-  },
-  {
-    property: `og:description`,
-    content: location4PayrentPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/pay-rent/${location4}/login`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation4[1]
-  },
-];
+// export const ogPayRentPageLocation4 = [
+//   {
+//     property: `og:title`,
+//     content: location4PayrentPageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location4PayrentPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/pay-rent/${location4}/login`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation4[1]
+//   },
+// ];
 
-export const twitterPayRentPageLocation4 = [
-  {
-    name: `twitter:title`,
-    content: `@${location4PayrentPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location4PayrentPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation4[0]
-  },
-];
+// export const twitterPayRentPageLocation4 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location4PayrentPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location4PayrentPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation4[0]
+//   },
+// ];
 
-export const ogPayRentPageLocation5 = [
-  {
-    property: `og:title`,
-    content: location5PayrentPageTitle
-  },
-  {
-    property: `og:description`,
-    content: location5PayrentPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/pay-rent/${location5}/login`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation5[1]
-  },
-];
+// export const ogPayRentPageLocation5 = [
+//   {
+//     property: `og:title`,
+//     content: location5PayrentPageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location5PayrentPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/pay-rent/${location5}/login`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation5[1]
+//   },
+// ];
 
-export const twitterPayRentPageLocation5 = [
-  {
-    name: `twitter:title`,
-    content: `@${location5PayrentPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location5PayrentPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation5[0]
-  },
-];
+// export const twitterPayRentPageLocation5 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location5PayrentPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location5PayrentPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation5[0]
+//   },
+// ];
 
-export const ogPayRentPageLocation6 = [
-  {
-    property: `og:title`,
-    content: location6PayrentPageTitle
-  },
-  {
-    property: `og:description`,
-    content: location6PayrentPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/pay-rent/${location6}/login`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation6[1]
-  },
-];
+// export const ogPayRentPageLocation6 = [
+//   {
+//     property: `og:title`,
+//     content: location6PayrentPageTitle
+//   },
+//   {
+//     property: `og:description`,
+//     content: location6PayrentPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/pay-rent/${location6}/login`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation6[1]
+//   },
+// ];
 
-export const twitterPayRentPageLocation6 = [
-  {
-    name: `twitter:title`,
-    content: `@${location6PayrentPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location6PayrentPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation6[0]
-  },
-];
+// export const twitterPayRentPageLocation6 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location6PayrentPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location6PayrentPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation6[0]
+//   },
+// ];
 
 
 
@@ -1692,167 +1692,167 @@ export const twitterContactPageLocation3 = [
   },
 ];
 
-export const ogContactPageLocation4 = [
-  {
-    property: `og:title`,
-    content: `${location4ContactPageTitle}`
-  },
-  {
-    property: `og:description`,
-    content: location4ContactPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/contact-${location4}`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation4[1]
-  },
-];
+// export const ogContactPageLocation4 = [
+//   {
+//     property: `og:title`,
+//     content: `${location4ContactPageTitle}`
+//   },
+//   {
+//     property: `og:description`,
+//     content: location4ContactPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/contact-${location4}`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation4[1]
+//   },
+// ];
 
-export const twitterContactPageLocation4 = [
-  {
-    name: `twitter:title`,
-    content: `@${location4ContactPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location4ContactPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation4[0]
-  },
-];
+// export const twitterContactPageLocation4 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location4ContactPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location4ContactPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation4[0]
+//   },
+// ];
 
-export const ogContactPageLocation5 = [
-  {
-    property: `og:title`,
-    content: `${location5ContactPageTitle}`
-  },
-  {
-    property: `og:description`,
-    content: location5ContactPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/contact-${location5}`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation5[1]
-  },
-];
+// export const ogContactPageLocation5 = [
+//   {
+//     property: `og:title`,
+//     content: `${location5ContactPageTitle}`
+//   },
+//   {
+//     property: `og:description`,
+//     content: location5ContactPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/contact-${location5}`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation5[1]
+//   },
+// ];
 
-export const twitterContactPageLocation5 = [
-  {
-    name: `twitter:title`,
-    content: `@${location5ContactPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location5ContactPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation5[0]
-  },
-];
+// export const twitterContactPageLocation5 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location5ContactPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location5ContactPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation5[0]
+//   },
+// ];
 
-export const ogContactPageLocation6 = [
-  {
-    property: `og:title`,
-    content: `${location6ContactPageTitle}`
-  },
-  {
-    property: `og:description`,
-    content: location6ContactPageContent
-  },
-  {
-    property: `og:type`,
-    content: `website`
-  },
-  {
-    property: `og:site_name`,
-    content: environment.facilityName
-  },
-  {
-    property: `og:url`,
-    content: `${environment.websiteUrl}/contact-${location6}`
-  },
-  {
-    property: `og:image`,
-    content: imageLocation6[1]
-  },
-];
+// export const ogContactPageLocation6 = [
+//   {
+//     property: `og:title`,
+//     content: `${location6ContactPageTitle}`
+//   },
+//   {
+//     property: `og:description`,
+//     content: location6ContactPageContent
+//   },
+//   {
+//     property: `og:type`,
+//     content: `website`
+//   },
+//   {
+//     property: `og:site_name`,
+//     content: environment.facilityName
+//   },
+//   {
+//     property: `og:url`,
+//     content: `${environment.websiteUrl}/contact-${location6}`
+//   },
+//   {
+//     property: `og:image`,
+//     content: imageLocation6[1]
+//   },
+// ];
 
-export const twitterContactPageLocation6 = [
-  {
-    name: `twitter:title`,
-    content: `@${location6ContactPageTitle}`
-  },
-  {
-    name: `twitter:description`,
-    content: location6ContactPageContent
-  },
-  {
-    name: `twitter:site`,
-    content: `@${environment.facilityName}`
-  },
-  {
-    name: `twitter:card`,
-    content: `summary`
-  },
-  {
-    name: `twitter:creator`,
-    content: `@syrasoft_connect`
-  },
-  {
-    name: `twitter:image`,
-    content: imageLocation6[0]
-  },
-];
+// export const twitterContactPageLocation6 = [
+//   {
+//     name: `twitter:title`,
+//     content: `@${location6ContactPageTitle}`
+//   },
+//   {
+//     name: `twitter:description`,
+//     content: location6ContactPageContent
+//   },
+//   {
+//     name: `twitter:site`,
+//     content: `@${environment.facilityName}`
+//   },
+//   {
+//     name: `twitter:card`,
+//     content: `summary`
+//   },
+//   {
+//     name: `twitter:creator`,
+//     content: `@syrasoft_connect`
+//   },
+//   {
+//     name: `twitter:image`,
+//     content: imageLocation6[0]
+//   },
+// ];
 
 
 

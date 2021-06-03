@@ -10,10 +10,8 @@ import { contactsLocation1, hoursLocation1,
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3, ogContactPageLocation4,
-  ogContactPageLocation5, ogContactPageLocation6,
-  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4,
-  twitterContactPageLocation5, twitterContactPageLocation6 } from '../data/script';
+import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3,
+  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3,  } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
 @Component({
