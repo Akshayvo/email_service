@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: http://safeself-storage.com/sitemap.xml
+Sitemap: http://safeselfstoragellc.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy
