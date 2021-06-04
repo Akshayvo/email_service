@@ -17,14 +17,15 @@ export const th = [
     state: true,
   },
   {
-    data: `Rate`,
-    state: objSIMSetting.objUnitSizesSetting.blnShowRate
-  },
-  {
     data: `Door Size`,
     state: true
 
   },
+  {
+    data: `Rate`,
+    state: objSIMSetting.objUnitSizesSetting.blnShowRate
+  },
+  
   {
     data: 'Deposit',
     state: objSIMSetting.objUnitSizesSetting.blnShowDeposit

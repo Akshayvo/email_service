@@ -10,7 +10,9 @@
   <div [class.loader]="showLoader" class="loader-position"> 
   </div>
   <div [class.display]="!showTable">
+    
     <h2 class="mt-4 mb-2">Indoor Climate Controlled</h2>
+    <h6>* Electrical is available for an additional cost.</h6>
     <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
         <tHead [class.display]="!showTable">
             <tr>
@@ -34,14 +36,15 @@
                 <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Herkimer_Storage/jpg/herkimer-storage-outlet-jumbotron.jpg" />
   
             </td>
-            <td colspan="2" class="px-4 border text-center" *ngIf="showRate ">
-                <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
-                <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
-            </td>
             <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.UnitTypeID">
               {{lstUnitType.doorSize}}
               <meta itemprop="doorSize" content="{{lstUnitType.doorSize}}" />
           </td>
+            <td colspan="2" class="px-4 border text-center" *ngIf="showRate ">
+                <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
+                <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
+            </td>
+            
             <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit " >
               <span *ngIf="lstUnitType.ReservationFee != null">$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}
             </td>
@@ -77,6 +80,7 @@
   </div>
   <div [class.display]="!showTable">
     <h2 class="mt-4 mb-2 ">Outdoor Access Climate Controlled</h2>
+    <h6>* Electrical is available for an additional cost.</h6>
     <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
         <tHead [class.display]="!showTable">
             <tr>
@@ -100,14 +104,15 @@
                 <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Herkimer_Storage/jpg/herkimer-storage-outlet-jumbotron.jpg" />
   
             </td>
-            <td colspan="2" class="px-4 border text-center" *ngIf="showRate  ">
-                <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
-                <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
-            </td>
             <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.UnitTypeID">
               {{lstUnitType.doorSize}}
               <meta itemprop="doorSize" content="{{lstUnitType.doorSize}}" />
           </td>
+            <td colspan="2" class="px-4 border text-center" *ngIf="showRate  ">
+                <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
+                <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
+            </td>
+           
             <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit " >
               <span *ngIf="lstUnitType.ReservationFee != null">$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}
             </td>
@@ -143,6 +148,7 @@
   </div>
   <div [class.display]="!showTable">
     <h2 class="mt-4 mb-2">Regular Units</h2>
+    <h6>* Electrical is available for an additional cost.</h6>
     <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
         <tHead [class.display]="!showTable">
             <tr>
@@ -166,15 +172,16 @@
                 <link itemprop="image" href="https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Herkimer_Storage/jpg/herkimer-storage-outlet-jumbotron.jpg" />
   
             </td>
+            <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.UnitTypeID">
+              {{lstUnitType.doorSize}}
+              <meta itemprop="doorSize" content="{{lstUnitType.doorSize}}" />
+          </td>
             <td colspan="2" class="px-4 border text-center" *ngIf="showRate ">
                 <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
                 <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
             </td>
             
-            <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.UnitTypeID">
-              {{lstUnitType.doorSize}}
-              <meta itemprop="doorSize" content="{{lstUnitType.doorSize}}" />
-          </td>
+           
             <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit " >
               <span *ngIf="lstUnitType.ReservationFee != null">$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}
             </td>
