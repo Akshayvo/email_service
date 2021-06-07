@@ -45,28 +45,68 @@ export const location1FeaturesHead = [
     },
 ];
 export const location2FeaturesHead = [
-  {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
-    },
-    {
-        label: 'Online Reservation & Bill Pay',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
-        alt: 'Icon art displaying a screen with cursor'
-    },
-    {
-        label: 'Locally Owned and Operated',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
-        alt: 'Icon of people standing together '
-    },
-    {
-        label: 'Friendly Customer Service',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Icon of a customer service agent'
-    },
+//   {
+//         label: '24 Hour Facility Access',
+//         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+//         alt: 'Icon art displaying clock hands and the number 24'
+//     },
+//     {
+//         label: 'Online Reservation & Bill Pay',
+//         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+//         alt: 'Icon art displaying a screen with cursor'
+//     },
+//     {
+//         label: 'Locally Owned and Operated',
+//         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+//         alt: 'Icon of people standing together '
+//     },
+//     {
+//         label: 'Friendly Customer Service',
+//         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+//         alt: 'Icon of a customer service agent'
+//     },
+{
+    label: '24 Hour Facility Access',
+    data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+    alt: 'Icon art displaying clock hands and the number 24'
+},
+{
+    label: 'Online Reservation & Bill Pay',
+    data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+    alt: 'Icon art displaying a screen with cursor'
+},
+{
+    label: 'Locally Owned and Operated',
+    data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+    alt: 'Icon of people standing together '
+},
+{
+    label: 'Friendly Customer Service',
+    data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+    alt: 'Icon of a customer service agent'
+},
 ];
 export const location3FeaturesHead = [
+    // {
+    //     label: '24 Hour Facility Access',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+    //     alt: 'Icon art displaying clock hands and the number 24'
+    // },
+    // {
+    //     label: 'Online Reservation & Bill Pay',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+    //     alt: 'Icon art displaying a screen with cursor'
+    // },
+    // {
+    //     label: 'Locally Owned and Operated',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+    //     alt: 'Icon of people standing together '
+    // },
+    // {
+    //     label: 'Friendly Customer Service',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+    //     alt: 'Icon of a customer service agent'
+    // },
     {
         label: '24 Hour Facility Access',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
@@ -90,7 +130,27 @@ export const location3FeaturesHead = [
 ];
 
 export const location4FeaturesHead = [
-     {
+    //  {
+    //     label: '24 Hour Facility Access',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+    //     alt: 'Icon art displaying clock hands and the number 24'
+    // },
+    // {
+    //     label: 'Online Reservation & Bill Pay',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+    //     alt: 'Icon art displaying a screen with cursor'
+    // },
+    // {
+    //     label: 'Locally Owned and Operated',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+    //     alt: 'Icon of people standing together '
+    // },
+    // {
+    //     label: 'Friendly Customer Service',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+    //     alt: 'Icon of a customer service agent'
+    // },
+    {
         label: '24 Hour Facility Access',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
         alt: 'Icon art displaying clock hands and the number 24'
@@ -113,33 +173,73 @@ export const location4FeaturesHead = [
 ];
 
 export const location5FeaturesHead = [
-    {
-        label: '11 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
-    },
+    // {
+    //     label: '11 Convenient Locations',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+    //     alt: 'Icon art displaying a location pin'
+    // },
+    // {
+    //     label: '24 Hour Facility Access',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+    //     alt: 'Icon art displaying clock hands and the number 24'
+    // },
+    // {
+    //     label: 'Stellar Customer Service',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+    //     alt: 'Customer Service Representative Icon'
+    // },
+    // {
+    //     label: 'Well-Lit Facility',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+    //     alt: 'Icon of an illuminated light'
+    // },
     {
         label: '24 Hour Facility Access',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
         alt: 'Icon art displaying clock hands and the number 24'
     },
     {
-        label: 'Stellar Customer Service',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Customer Service Representative Icon'
+        label: 'Online Reservation & Bill Pay',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+        alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: 'Well-Lit Facility',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
-        alt: 'Icon of an illuminated light'
+        label: 'Locally Owned and Operated',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+        alt: 'Icon of people standing together '
+    },
+    {
+        label: 'Friendly Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Icon of a customer service agent'
     },
 ];
 
 export const location6FeaturesHead = [
+    // {
+    //     label: '11 Convenient Locations',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+    //     alt: 'Icon art displaying a location pin'
+    // },
+    // {
+    //     label: 'Online Reservation & Bill Pay',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+    //     alt: 'Icon art displaying a screen with cursor'
+    // },
+    // {
+    //     label: '24 Hour Facility Access',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+    //     alt: 'Icon art displaying clock hands and the number 24'
+    // },
+    // {
+    //     label: 'Well-Lit Facility',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+    //     alt: 'Icon of an illuminated light'
+    // },
     {
-        label: '11 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
+        label: '24 Hour Facility Access',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+        alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         label: 'Online Reservation & Bill Pay',
@@ -147,22 +247,42 @@ export const location6FeaturesHead = [
         alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: 'Locally Owned and Operated',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+        alt: 'Icon of people standing together '
     },
     {
-        label: 'Well-Lit Facility',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
-        alt: 'Icon of an illuminated light'
+        label: 'Friendly Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Icon of a customer service agent'
     },
 ];
 
 export const location7FeaturesHead = [
+    // {
+    //     label: '11 Convenient Locations',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+    //     alt: 'Icon art displaying a location pin'
+    // },
+    // {
+    //     label: 'Online Reservation & Bill Pay',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+    //     alt: 'Icon art displaying a screen with cursor'
+    // },
+    // {
+    //     label: '24 Hour Facility Access',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+    //     alt: 'Icon art displaying clock hands and the number 24'
+    // },
+    // {
+    //     label: 'Well-Lit Facility',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+    //     alt: 'Icon of an illuminated light'
+    // },
     {
-        label: '11 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
+        label: '24 Hour Facility Access',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+        alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         label: 'Online Reservation & Bill Pay',
@@ -170,22 +290,42 @@ export const location7FeaturesHead = [
         alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: 'Locally Owned and Operated',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+        alt: 'Icon of people standing together '
     },
     {
-        label: 'Well-Lit Facility',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
-        alt: 'Icon of an illuminated light'
+        label: 'Friendly Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Icon of a customer service agent'
     },
 ];
 
 export const location8FeaturesHead = [
+    // {
+    //     label: '11 Convenient Locations',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+    //     alt: 'Icon art displaying a location pin'
+    // },
+    // {
+    //     label: 'Online Reservation & Bill Pay',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+    //     alt: 'Icon art displaying a screen with cursor'
+    // },
+    // {
+    //     label: '24 Hour Facility Access',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+    //     alt: 'Icon art displaying clock hands and the number 24'
+    // },
+    // {
+    //     label: 'Well-Lit Facility',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+    //     alt: 'Icon of an illuminated light'
+    // },
     {
-        label: '11 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
+        label: '24 Hour Facility Access',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+        alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         label: 'Online Reservation & Bill Pay',
@@ -193,23 +333,43 @@ export const location8FeaturesHead = [
         alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: 'Locally Owned and Operated',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+        alt: 'Icon of people standing together '
     },
     {
-        label: 'Well-Lit Facility',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
-        alt: 'Icon of an illuminated light'
+        label: 'Friendly Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Icon of a customer service agent'
     },
 ];
 
 
 export const location9FeaturesHead = [
+    // {
+    //     label: '11 Convenient Locations',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+    //     alt: 'Icon art displaying a location pin'
+    // },
+    // {
+    //     label: 'Online Reservation & Bill Pay',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+    //     alt: 'Icon art displaying a screen with cursor'
+    // },
+    // {
+    //     label: '24 Hour Facility Access',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+    //     alt: 'Icon art displaying clock hands and the number 24'
+    // },
+    // {
+    //     label: 'Well-Lit Facility',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+    //     alt: 'Icon of an illuminated light'
+    // },
     {
-        label: '11 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
+        label: '24 Hour Facility Access',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+        alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         label: 'Online Reservation & Bill Pay',
@@ -217,23 +377,43 @@ export const location9FeaturesHead = [
         alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: 'Locally Owned and Operated',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+        alt: 'Icon of people standing together '
     },
     {
-        label: 'Well-Lit Facility',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
-        alt: 'Icon of an illuminated light'
+        label: 'Friendly Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Icon of a customer service agent'
     },
 ];
 
 
 export const location10FeaturesHead = [
+    // {
+    //     label: '11 Convenient Locations',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+    //     alt: 'Icon art displaying a location pin'
+    // },
+    // {
+    //     label: 'Online Reservation & Bill Pay',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+    //     alt: 'Icon art displaying a screen with cursor'
+    // },
+    // {
+    //     label: '24 Hour Facility Access',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+    //     alt: 'Icon art displaying clock hands and the number 24'
+    // },
+    // {
+    //     label: 'Well-Lit Facility',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+    //     alt: 'Icon of an illuminated light'
+    // },
     {
-        label: '11 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
+        label: '24 Hour Facility Access',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+        alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         label: 'Online Reservation & Bill Pay',
@@ -241,23 +421,43 @@ export const location10FeaturesHead = [
         alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: 'Locally Owned and Operated',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+        alt: 'Icon of people standing together '
     },
     {
-        label: 'Well-Lit Facility',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
-        alt: 'Icon of an illuminated light'
+        label: 'Friendly Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Icon of a customer service agent'
     },
 ];
 
 
 export const location11FeaturesHead = [
+    // {
+    //     label: '11 Convenient Locations',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+    //     alt: 'Icon art displaying a location pin'
+    // },
+    // {
+    //     label: 'Online Reservation & Bill Pay',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
+    //     alt: 'Icon art displaying a screen with cursor'
+    // },
+    // {
+    //     label: '24 Hour Facility Access',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+    //     alt: 'Icon art displaying clock hands and the number 24'
+    // },
+    // {
+    //     label: 'Well-Lit Facility',
+    //     data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+    //     alt: 'Icon of an illuminated light'
+    // },
     {
-        label: '11 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
+        label: '24 Hour Facility Access',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
+        alt: 'Icon art displaying clock hands and the number 24'
     },
     {
         label: 'Online Reservation & Bill Pay',
@@ -265,14 +465,14 @@ export const location11FeaturesHead = [
         alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: 'Locally Owned and Operated',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
+        alt: 'Icon of people standing together '
     },
     {
-        label: 'Well-Lit Facility',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
-        alt: 'Icon of an illuminated light'
+        label: 'Friendly Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Icon of a customer service agent'
     },
 ];
 
