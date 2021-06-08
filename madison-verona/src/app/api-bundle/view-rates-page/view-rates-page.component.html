@@ -46,7 +46,7 @@
             </td>
             
             <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit " >
-              <span *ngIf="lstUnitType.ReservationFee != null">$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}
+              <span *ngIf="lstUnitType.SetupFee != null">$</span>{{lstUnitType.SetupFee | number : '1.2-2'}}
             </td>
             <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve && lstUnitType.IsClimateControlled; else other_reserve" >
                 <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
@@ -114,7 +114,7 @@
             </td>
            
             <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit " >
-              <span *ngIf="lstUnitType.ReservationFee != null">$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}
+              <span *ngIf="lstUnitType.SetupFee != null">$</span>{{lstUnitType.SetupFee | number : '1.2-2'}}
             </td>
             <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve ; else other_reserve" >
                 <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
@@ -183,7 +183,7 @@
             
            
             <td colspan="2" class="px-4 border text-center" *ngIf="showDeposit " >
-              <span *ngIf="lstUnitType.ReservationFee != null">$</span>{{lstUnitType.ReservationFee | number : '1.2-2'}}
+              <span *ngIf="lstUnitType.SetupFee != null">$</span>{{lstUnitType.SetupFee | number : '1.2-2'}}
             </td>
             <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showReserve && lstUnitType.IsClimateControlled; else other_reserve" >
                 <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>

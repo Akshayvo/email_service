@@ -27,7 +27,7 @@ export const th = [
   },
   
   {
-    data: 'Deposit',
+    data: 'Setup Fee',
     state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   },
   {
