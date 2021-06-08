@@ -79,6 +79,10 @@
             <p class=" "><b><u>Rate</u></b></p>
             <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</div>
         </div>
+        <div class="col-6 text-center " *ngIf="showSetUpFee">
+          <p class=" "><b><u>Setup Fee (One Time)</u></b></p>
+          <div class=" "><span *ngIf="lstUnitType.SetupFee != null">$</span>{{lstUnitType.SetupFee}}</div>
+        </div>
         <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl" >
             <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
         </div>
