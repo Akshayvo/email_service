@@ -2,14 +2,13 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Robinson Mobile Storage covers a large service area with quality and affordable portable storage units. Peterborough, Buckhorn, Lakefield, Omemee, and the surrounding communities all take advantage of our friendly service and competitive prices. `,
+      p: `Robinson Storage Box covers a large service area with quality and affordable portable storage units. Peterborough, Buckhorn, Lakefield, Omemee, and the surrounding communities all take advantage of our friendly service and competitive prices.`,
     },
     {
       p: `You won’t find an easier mobile storage option! Our no-tilt delivery service means you can have your unit delivered at your convenience, then picked up for storage at our facility or moved to your new location with minimal disruption to the belongings or equipment inside.`
     },
     {
-      p: `Have questions about our service area, terms, or general information? Give our team a call, and we’ll be happy to help! If you’re ready to start making some space for your next project, submit your information request online!
-      `
+      p: `Have questions about our service area, terms, or general information? Give our team a call, and we’ll be happy to help! If you’re ready to start making some space for your next project, submit your information request online!`
     },
 ];
 

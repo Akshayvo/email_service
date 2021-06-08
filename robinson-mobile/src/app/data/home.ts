@@ -22,10 +22,10 @@ export const aboutUsHeading = `Affordable Portable Storage Units in Ennismore`;
 
 export const aboutUs = [
     {
-        p: `Robinson Mobile Storage serves Peterborough, Ennismore, Bridgenorth, and the surrounding communities with quality portable storage units delivered right to your door, office, or worksite! We understand that some storage projects are best handled with an on-site storage solution. That’s where Robinson Mobile Storage comes into play. Our mobile storage units are 20’x8’x8’ and offer 160 square feet of storage space anywhere you want it.`,
+        p: `Robinson Storage Box serves Peterborough, Ennismore, Bridgenorth, and the surrounding communities with quality portable storage units delivered right to your door, office, or worksite! We understand that some storage projects are best handled with an on-site storage solution. That’s where Robinson Storage Box comes into play. Our mobile storage units are 20’x8’x8’ and offer 160 square feet of storage space anywhere you want it.`,
     },
     {
-        p: `The Robinson Mobile Storage units are the ideal solution for renovations where furniture, tools, or supplies require storage and easy access throughout the duration of the project. We also serve contractors, auctioneers, and hospitals with temporary on-site storage.`,
+        p: `The Robinson Storage Box units are the ideal solution for renovations where furniture, tools, or supplies require storage and easy access throughout the duration of the project. We also serve contractors, auctioneers, and hospitals with temporary on-site storage.`,
     },
     {
         p: `Our no-tilt delivery and pickup service means all you have to do is pack your belongings for temporary on-site storage or for long term storage at our self storage facility on Robinson Road in Ennismore. Simply give us a call with the details of when and where you need your unit delivered, and our professional crew will provide the same level of service you’ve come to expect from our Robinson Storage self storage facility.`,
@@ -37,7 +37,7 @@ export const aboutUs = [
 ];
 
 export const gettingStarted = `Are you ready to stop putting off cleaning out your attic, garage, or shed?
-Clear up some room around the house with Robinson Mobile Storage and one of our affordable storage units,
+Clear up some room around the house with Robinson Storage Box and one of our affordable storage units,
 accessible 24 hours a day!`;
 
 export const feature = [
@@ -70,9 +70,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Brand New, Affordable Portable Storage Units`,
-        blurb: `Have questions about the services offered at Robinson Mobile Storage? Call (705) 954-5454 to learn more!
-
-        Robinson Mobile Storage offers economical delivery, pickup, and storage of mobile self storage units. Our brand new portable storage units can be scheduled for convenient no-tilt delivery at your home or work site.`,
+        h2: `Brand New, Affordable Storage, Delivered to Your Door`,
+        blurb: ``,
     }
 ];

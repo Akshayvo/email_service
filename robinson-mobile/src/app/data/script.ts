@@ -31,7 +31,7 @@ export const script = {               // Please fill this script according to fa
      ],
      telephone: contact[contactIndex].data,
      map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
-     description: "The Robinson Mobile Storage units are the ideal solution for renovations where furniture, tools, or supplies require storage and easy access throughout the duration of the project. We also serve contractors, auctioneers, and hospitals with temporary on-site storage.",
+     description: "The Robinson Storage Box units are the ideal solution for renovations where furniture, tools, or supplies require storage and easy access throughout the duration of the project. We also serve contractors, auctioneers, and hospitals with temporary on-site storage.",
      streetAddress: "586 Robinson Rd",
      state: "Ontario",
      addressLocality: "Ontario",

@@ -34,7 +34,7 @@ export const navLinks = [
     // },
     {
         id: 0,
-        label: 'REGULAR SELF STORAGE UNITS',
+        label: 'STORAGE FACILITY',
         // path: 'https://www.riverbendapt.com/apartments/'
     },
     {

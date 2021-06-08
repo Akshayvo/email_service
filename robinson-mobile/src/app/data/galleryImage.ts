@@ -1,23 +1,23 @@
 export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `robinson-storage-box-portable-unit-closed`,
+    url: `robinson-storage-box-driveway`,
     // tslint:disable-next-line:max-line-length
-    thumb: `robinson-storage-box-portable-unit-closed-thumb`,
-    alt: `the end of a portable self storage unit with a logo that reads Robinson Storage Box`
+    thumb: `robinson-storage-box-driveway-thumb`,
+    alt: `a portable storage unit on a driveway in front of a townhouse`
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `robinson-storage-box-mobile-unit-open`,
+    url: `robinson-storage-box-home`,
     // tslint:disable-next-line:max-line-length
-    thumb: `robinson-storage-box-mobile-unit-open-thumb`,
-    alt: `the end of a mobile self storage unit with the doors open `
+    thumb: `robinson-storage-box-home-thumb`,
+    alt: `a mobile storage unit on a driveyway in front of a large brick home`
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `robinson-storage-box-mobile-unit`,
+    url: `robinson-storage-box-unit`,
     // tslint:disable-next-line:max-line-length
-    thumb: `robinson-storage-box-mobile-unit-thumb`,
-    alt: `the side of a portable self storage unit with a large logo painted on the container reading Robinson Storage Box`
+    thumb: `robinson-storage-box-unit-thumb`,
+    alt: `portable self storage unit placed in front of a row of apartments`
   },
 ];
