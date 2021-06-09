@@ -18,7 +18,11 @@ $primaryFont: "Lato", sans-serif;
   background: $primary !important;
 }
 
-body { margin: 0; font-family: $primaryFont; }
+body { 
+  margin: 0; 
+  font-family: "Lato", sans-serif;
+ }
+ html, body { height: 100%; }
 
 @font-face {
   font-family: "Lato";
