@@ -18,7 +18,7 @@ export const featuresList = [
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
 
-export const aboutUsHeading = `Affordable Portable Storage Units in Ennismore`;
+export const aboutUsHeading = `Affordable, Mobile Storage Units in Ennismore`;
 
 export const aboutUs = [
     {
