@@ -260,7 +260,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.description  = this.dataSharingService.getReservationData().Description;
     this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
-
+    this.reservationFee = this.dataSharingService.getReservationData().ReservationFee;
+    this.reservationFeeTax = this.dataSharingService.getReservationData().ReservationFeeTax;
     this.getData();
     this.getRentalPeriod();
     if (this.navigateToMoveIn === true ) {
@@ -482,19 +483,21 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
   getData() {
     this.getDataSubscribe$ = this.fetchDataService.getData()
        .subscribe(unitTypesResponse => {
+        this.getFilterLstUnitTypes(unitTypesResponse);
         if(this.dataSharingService.LstUnitTypes){
-       const index = unitTypesResponse.lstUnitTypes.findIndex(x => x.UnitTypeID === this.dataSharingService.LstUnitTypes.UnitTypeID);
-       this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
-       this.getFilterLstUnitTypes(unitTypesResponse);
-       if (index && index>=0 ) {
-         const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[index].MonthlyRate;
-         this.description = unitTypesResponse.lstUnitTypes[index].Description;
-         this.reservationFeeTax = unitTypesResponse.lstUnitTypes[index].ReservationFeeTax;
-         this.reservationFee = unitTypesResponse.lstUnitTypes[index].ReservationFee;
-         this.MoveIn.intUnitTypeID = this.unitTypeID || unitTypesResponse.lstUnitTypes[index].UnitTypeID;
+       const index = this.filterLstUnitTypes.findIndex(x => x.UnitTypeID === this.dataSharingService.LstUnitTypes.UnitTypeID);
+       if (index && index >= 0 ) {
+         const defaultMonthlyValue = this.filterLstUnitTypes[0].MonthlyRate;
+         const defaultReservationValue = this.filterLstUnitTypes[0].ReservationFee;
+         this.description = this.filterLstUnitTypes[index].Description;
+         this.reservationFeeTax = this.filterLstUnitTypes[index].ReservationFeeTax;
+         this.reservationFee = this.filterLstUnitTypes[index].ReservationFee || defaultReservationValue;
          this.unitTypeId =
-         this.dataSharingService.getReservationData().UnitTypeID || this.filterLstUnitTypes[0].UnitTypeID;
+         this.dataSharingService.getReservationData().UnitTypeID || this.filterLstUnitTypes[index].UnitTypeID;
+         this.MoveIn.intUnitTypeID = this.unitTypeID || unitTypesResponse.lstUnitTypes[index].UnitTypeID;
          this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
+         this.dataSharingService.LstUnitTypes.ReservationFee = this.reservationFee;
+         this.dataSharingService.LstUnitTypes.ReservationFeeTax = this.reservationFeeTax;
        }
        const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
        const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
@@ -504,8 +507,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
        }
  
  
-         this.dataSharingService.LstUnitTypes.ReservationFee = this.reservationFee;
-         this.dataSharingService.LstUnitTypes.ReservationFeeTax = this.reservationFeeTax;
+         
  
        if (!serviceDescriptionValue && !serviceMonthlyValue) {
          this.reserveUnitForm.patchValue({

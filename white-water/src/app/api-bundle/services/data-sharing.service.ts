@@ -62,6 +62,9 @@ export class DataSharingService {
     UnitTypeID: 0,
     RateTax: 0,
     formattedMoveInDate: '',
+    ReservationFee: 0,
+    ReservationFeeTax:0
+
   };
 
   LstUnitTypes = {

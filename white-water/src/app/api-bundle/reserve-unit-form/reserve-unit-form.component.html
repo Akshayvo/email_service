@@ -288,7 +288,7 @@
                 + ${{rateTax}} (Tax)
             </span>
         </div>
-        <div class="form-group readonly-form-control" *ngIf="navigateToReserve && reservationFee !== undefined">
+        <div class="form-group " *ngIf="navigateToReserve && reservationFee !== undefined">
             <label>Reservation Charges:</label>&nbsp;
             ${{reservationFee}}
             <span *ngIf="reservationFeeTax !== undefined">
