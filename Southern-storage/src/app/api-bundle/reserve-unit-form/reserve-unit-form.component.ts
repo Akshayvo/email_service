@@ -427,12 +427,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
         if (unitTypesResponse.intErrorCode === 1) {
-
+          this.getFilterLstUnitTypes(unitTypesResponse);
+            // console.log(this.filterLstUnitTypes)
           if (this.filterLstUnitTypes && this.filterLstUnitTypes.length > 0) {
+            // console.log("unit length is greater than 0");
             this.showMoveForm = false;
             this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
-            this.getFilterLstUnitTypes(unitTypesResponse);
-            
             const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
             this.UnitTypeRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
             const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
@@ -477,6 +477,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
               this.dataSharingService.LstUnitTypes.MonthlyRate = serviceMonthlyValue;
             }
           } else {
+            // console.log("unit length is less than 0");
             this.showMoveForm = true;
           }
       }
