@@ -120,19 +120,7 @@ export class HomeComponent implements OnInit {
     return [min, max];
   }
 
-  // getData() {
-  //   this.getDataSubscribe$ = this.fetchDataService.getData()
-  //     .subscribe(unitTypesResponse => {
-  //       this.findMinMax(unitTypesResponse.lstUnitTypes)
 
-  //    const min = this.findMinMax(unitTypesResponse.lstUnitTypes)[0];
-  //    const max= this.findMinMax(unitTypesResponse.lstUnitTypes)[1];
-
-  //    console.log('this.findMinMax(unitTypesResponse.lstUnitTypes)[0]', min,
-  //    'this.findMinMax(unitTypesResponse.lstUnitTypes)[1]', max);
-     
-  //     });
-  //   }
   
 
   public loadScript() {
