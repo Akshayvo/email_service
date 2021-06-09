@@ -1,4 +1,4 @@
-import { environment } from "../../environments/environment";
+import { environment } from '../../environments/environment';
 import {
   homePageContent,
   homePageTitle,
@@ -8,71 +8,71 @@ import {
   storageTipsTitle,
   contactPageContent,
   contactPageTitle,
-} from "../data/title";
-import { featuresList } from "../data/home";
-import { contact, socialLinks } from "../data/contact";
+} from '../data/title';
+import { featuresList } from '../data/home';
+import { contact, socialLinks } from '../data/contact';
 
-const contactIndex = contact.findIndex((x) => x.label === "Phone:");
-const emailIndex = contact.findIndex((x) => x.label === "Email:");
+const contactIndex = contact.findIndex((x) => x.label === 'Phone:');
+const emailIndex = contact.findIndex((x) => x.label === 'Email:');
 const sameAs = [];
 const amenityFeature = [];
 
 featuresList.forEach(
   (feature) => (
     amenityFeature.push({
-      "@type": "LocationFeatureSpecification",
+      '@type': 'LocationFeatureSpecification',
       name: feature.td1,
     }),
     amenityFeature.push({
-      "@type": "LocationFeatureSpecification",
+      '@type': 'LocationFeatureSpecification',
       name: feature.td2,
     })
   )
 );
 
 socialLinks.forEach((links) => {
-  links.path ? sameAs.push(links.path) : sameAs.push(" ");
+  links.path ? sameAs.push(links.path) : sameAs.push(' ');
 });
 
 export const script = {
   // Please fill this script according to facility's information
   imagesHomePage: [
-    "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/William_Penn/jpg/william-penn-self-storage-11.jpg", // 1:1
-    "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/William_Penn/jpg/william-penn-self-storage-43.jpg", // 4:3
-    "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/William_Penn/jpg/william-penn-self-storage-169.jpg", // 16:9
+    'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/William_Penn/jpg/william-penn-self-storage-11.jpg', // 1:1
+    'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/William_Penn/jpg/william-penn-self-storage-43.jpg', // 4:3
+    'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/William_Penn/jpg/william-penn-self-storage-169.jpg', // 16:9
   ],
   telephone: contact[contactIndex].data,
-  map: "https://goo.gl/maps/GvHi24NqQeyeKRPq5",
+  map: 'https://goo.gl/maps/GvHi24NqQeyeKRPq5',
   description:
-    "William Penn Self Storage is New Alexandria’s newest self storage facility! Our facility offers a large number of affordable storage units in both outdoor and climate controlled varieties. We provide a variety of unit sizes from our walk-in closet-sized 5-foot-by-5-foot units through our 10-foot-by-25 foot units that are an ideal solution for multi-bedroom homes during a move or renovation.",
-  streetAddress: "972 Hannastown Rd, New Alexandria",
-  state: "pennsylvania",
-  addressLocality: "pennsylvania",
-  addressRegion: "PA",
-  postalCode: "15670",
-  addressCountry: "US",
-  id: environment.websiteUrl || "",
-  paymentAccepted: "Cash, Check, Credit Card, Debit Card",
-  currenciesAccepted: "USD",
-  ratingValue: "",
-  bestRating: "",
-  reviewCount: "",
+    'William Penn Self Storage is New Alexandria’s newest self storage facility! Our facility offers a large number of affordable storage units in both outdoor and climate controlled varieties. We provide a variety of unit sizes from our walk-in closet-sized 5-foot-by-5-foot units through our 10-foot-by-25 foot units that are an ideal solution for multi-bedroom homes during a move or renovation.',
+  streetAddress: '972 Hannastown Rd, New Alexandria',
+  state: 'pennsylvania',
+  addressLocality: 'pennsylvania',
+  addressRegion: 'PA',
+  postalCode: '15670',
+  addressCountry: 'US',
+  id: environment.websiteUrl || '',
+  paymentAccepted: 'Cash, Check, Credit Card, Debit Card',
+  currenciesAccepted: 'USD',
+  ratingValue: '',
+  bestRating: '',
+  reviewCount: '',
   latitude: 40.3952912,
   longitude: -79.4815133,
   openingHours: [],
-  priceRange: "",
+  priceRange: '$85-$299',
 };
 
 export const homePageScript = [
   {
-    "@context": "https://schema.org",
-    "@type": ["Organization", "SelfStorage", "Place", "LocalBusiness"],
+    '@context': 'https://schema.org',
+    '@type': ['Organization', 'SelfStorage', 'Place', 'LocalBusiness'],
     image: script.imagesHomePage,
-    "@id": script.id,
+    '@id': script.id,
     name: environment.facilityName,
     description: script.description || homePageContent,
     address: {
-      "@type": "PostalAddress",
+      '@type': 'PostalAddress',
       streetAddress: script.streetAddress,
       addressLocality: script.addressLocality,
       addressRegion: script.addressRegion,
@@ -86,7 +86,7 @@ export const homePageScript = [
     //   reviewCount: script.reviewCount,
     // },
     geo: {
-      "@type": "GeoCoordinates",
+      '@type': 'GeoCoordinates',
       latitude: script.latitude,
       longitude: script.longitude,
     },
@@ -98,23 +98,23 @@ export const homePageScript = [
     currenciesAccepted: script.currenciesAccepted,
     paymentAccepted: script.paymentAccepted,
     areaServed: {
-      "@type": "State",
+      '@type': 'State',
       name: script.state,
     },
 
     hasMap: script.map,
     amenityFeature: amenityFeature,
-    acceptsReservations: "True",
+    acceptsReservations: 'True',
   },
 ];
 
 export const contactPageScript = [
   {
-    "@context": "http://schema.org",
-    "@type": "Selfstorage",
+    '@context': 'http://schema.org',
+    '@type': 'Selfstorage',
     name: environment.facilityName,
     address: {
-      "@type": "PostalAddress",
+      '@type': 'PostalAddress',
       addressLocality: script.addressLocality,
       postalCode: script.postalCode,
       streetAddress: script.streetAddress,
@@ -123,14 +123,14 @@ export const contactPageScript = [
     image: script.imagesHomePage[0],
     contactPoint: [
       {
-        "@type": "ContactPoint",
+        '@type': 'ContactPoint',
         telephone: script.telephone,
-        contactType: "reservations",
+        contactType: 'reservations',
       },
       {
-        "@type": "ContactPoint",
+        '@type': 'ContactPoint',
         telephone: script.telephone,
-        contactType: "customer service",
+        contactType: 'customer service',
       },
     ],
     email: contact[emailIndex].data,

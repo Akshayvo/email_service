@@ -4,7 +4,7 @@
     <h3 class="col-6 pr-0">Contact Us</h3>
     <div class="col-6">
         <span class="socialLinks" *ngFor="let data of socialLinks" >
-          <a [href]="data?.path" target="_blank">
+          <a [href]="data?.path" target="_blank" rel="noreferrer">
             <i [class]="data?.class" ></i>
           </a>
         </span>
@@ -18,7 +18,7 @@
 
 
 <div *ngFor="let contact of contactInfo" class="contact-links">
-  <span class="contact-data" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect"><span> <i class="{{contact.class}}"></i></span>{{contact.data}}</a></span>
+  <span class="contact-data" *ngIf="contact?.id === 1 || contact?.id === 2 else other_content"><a [href]="contact?.redirect" rel="noreferrer"><span> <i class="{{contact.class}}"></i></span>{{contact.data}}</a></span>
   <ng-template #other_content><b class="contact-data"></b><br><span class="contact-data"><i class="{{contact.class}}"></i>{{contact.data}}</span></ng-template>
 </div>
 
