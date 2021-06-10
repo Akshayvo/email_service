@@ -24,13 +24,6 @@ body {
  }
  html, body { height: 100%; }
 
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
-  font-display: swap;
-}
 
 .bg-secondary {
   background: $secondary !important;
