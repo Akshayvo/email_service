@@ -101,7 +101,7 @@
           <div class="row">
             <div class="col-lg-8">
               <h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables>
-              <span *ngIf="locationId == 1 || locationId == 2 || locationId == 3 || locationId == 4"><h4 class="pt-3" >Office Hours</h4><app-tables [tBody]="hours" ></app-tables></span>
+              <span><h4 class="pt-3" >Office Hours</h4><app-tables [tBody]="hours" ></app-tables></span>
             </div>
             <div class="col-lg-4 btn-area text-center">
               <a class="btn btn-outline-primary p-2"(click)="navigateToContact()" role="button">Contact Us</a> 

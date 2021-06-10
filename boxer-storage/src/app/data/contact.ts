@@ -370,13 +370,13 @@ export const hoursLocation5 = [
     //     label: 'Sunday: ',
     //     data: 'CLOSED',
     // },
-           {
-        label: ' ',
-        data: '',
+    {
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM',
     },
     {
-        label: ' ',
-        data: '',
+        label: 'Saturday: ',
+        data: '9:00AM to 2:00PM',
     },
 ];
 
@@ -421,13 +421,13 @@ export const hoursLocation6 = [
     //     label: 'Sunday: ',
     //     data: 'CLOSED',
     // },
-           {
-        label: '',
-        data: '',
+    {
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM',
     },
     {
-        label: '',
-        data: '',
+        label: 'Saturday: ',
+        data: '9:00AM to 2:00PM',
     },
 ];
 export const contactsLocation7 = [
@@ -471,13 +471,13 @@ export const hoursLocation7 = [
     //     label: 'Sunday: ',
     //     data: 'CLOSED',
     // },
-           {
-        label: '',
-        data: '',
+    {
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM',
     },
     {
-        label: '',
-        data: '',
+        label: 'Saturday: ',
+        data: '9:00AM to 2:00PM',
     },
 ];
 
@@ -522,13 +522,13 @@ export const hoursLocation8 = [
     //     label: 'Sunday: ',
     //     data: 'CLOSED',
     // },
-           {
-        label: '',
-        data: '',
+    {
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM',
     },
     {
-        label: '',
-        data: '',
+        label: 'Saturday: ',
+        data: '9:00AM to 2:00PM',
     },
 ];
 
@@ -573,13 +573,13 @@ export const hoursLocation9 = [
     //     label: 'Sunday: ',
     //     data: 'CLOSED',
     // },
-           {
-        label: '',
-        data: '',
+    {
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM',
     },
     {
-        label: '',
-        data: '',
+        label: 'Saturday: ',
+        data: '9:00AM to 2:00PM',
     },
 ];
 
@@ -624,13 +624,13 @@ export const hoursLocation10 = [
     //     label: 'Sunday: ',
     //     data: 'CLOSED',
     // },
-           {
-        label: '',
-        data: '',
+    {
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM',
     },
     {
-        label: '',
-        data: '',
+        label: 'Saturday: ',
+        data: '9:00AM to 2:00PM',
     },
 ];
 
@@ -675,12 +675,12 @@ export const hoursLocation11 = [
     //     label: 'Sunday: ',
     //     data: 'CLOSED',
     // },
-           {
-        label: '',
-        data: '',
+    {
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM',
     },
     {
-        label: '',
-        data: '',
+        label: 'Saturday: ',
+        data: '9:00AM to 2:00PM',
     },
 ];
