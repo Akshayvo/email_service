@@ -17,11 +17,11 @@ export const featuresList = [
     },
     {
         td1: 'Affordable Rates',
-        td2: 'Climate-Controlled Units Available',
+        td2: 'Retail Store On-Premises',
     },
     {
-        td1: 'Retail Store On-Premises',
-        td2: 'Fully-Fenced Facility',
+        td1: 'Fully-Fenced Facility',
+        // td2: 'Fully-Fenced Facility',
     }
 ];
 
