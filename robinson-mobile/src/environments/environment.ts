@@ -17,7 +17,7 @@ export const environment = {
   facilityName: 'Robinson Storage Box',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://robinson-mobile-self-storage-staging.netlify.app',
+  websiteUrl: 'https://www.robinsonstorage.ca',
   // APIKey: `dzJ0OVc0SjcqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
   APIKey: `Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O` // testing
 };
