@@ -54,4 +54,9 @@ export const galleryHome = [
     thumb: `self-storage-units-rows`,
     alt: `two rows of self storage units on either side of a paved walkway`,
   },
+  {
+    url: `madison-verona-self-storage-parked-car`,
+    thumb: `madison-verona-self-storage-parked-car`,
+    alt: `a vehicle parked inside of a self storage unit with a roll-up door`,
+  },
 ];
