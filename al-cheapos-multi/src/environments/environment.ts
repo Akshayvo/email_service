@@ -17,7 +17,7 @@ export const environment = {
   facilityName: "Al Cheapo's Self Storage",
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://al-cheapos-staging.netlify.app`
+  websiteUrl: `https://alcheaposselfstorage.com`
 };
 
 /*
