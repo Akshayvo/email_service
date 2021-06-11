@@ -21,26 +21,37 @@ export const viewRatesAltText = `an open self storage unit revealing household b
 
 export const th = [
   {
+    id: `size`,
     data: `Size`,
     state: true,
   },
   {
+    id: `monthly-rate`,
     data: `Monthly Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate,
   },
   {
+    id: `deposit`,
     data: "Deposit",
     state: objSIMSetting.objUnitSizesSetting.blnShowDeposit,
   },
   {
+    id: `reserve`,
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation,
   },
   {
+    id: `move-in`,
     data: `Move In`,
     state: objSIMSetting.objActionSetting.blnAllowMoveIn,
   },
   {
+    id: `waiting-list`,
+    data:`Join Our Waiting List`,
+    state:true,
+  },  
+  {
+    id:`climate-controls`,
     data: `Climate Control`,
     state: objSIMSetting.objUnitSizesSetting.blnClimateControl,
   },
