@@ -38,6 +38,81 @@ export const th = [
   },
 ];
 
+export const tiles = [
+  {
+    size: `3 x 3 x 4`,
+    name: `File Locker`,
+    temperature: `Temp. Control`,
+    price: `please call for price`,
+    discount: `50% off 1st and 2nd months`,
+    discount1:``
+  },
+  {
+    size: `5 x 5`,
+    name: `Closet`,
+    temperature: `Temp. & Non Temp. Control`,
+    price: `please call for price`,
+    discount: `25% off 1st full month`,
+    discount1:`Free truck with move in*`
+  },
+  {
+    size: `5 x 7.5`,
+    name: `Walk-in closet`,
+    temperature: `Temp. & Non Temp. Control`,
+    price: `please call for price`,
+    discount: `25% off 1st full month`,
+    discount1:`Free truck with move in*`
+  },
+  {
+    size: `5 x 10`,
+    name: `Apartment Favorite`,
+    temperature: `Temp. & Non Temp. Control`,
+    price: `please call for price`,
+    discount: `25% off 1st full month`,
+    discount1:`Free truck with move in*`
+  },
+  {
+    size: `5 x 15`,
+    name: `Something Funky`,
+    temperature: `Temp. & Non Temp. Control`,
+    price: `please call for price`,
+    discount: `25% off 1st full month`,
+    discount1:`Free truck with move in*`
+  },
+  {
+    size: `10 x 7.5`,
+    name: `Ideal Middle`,
+    temperature: `Temp. & Non Temp. Control`,
+    price: `please call for price`,
+    discount: `25% off 1st full month`,
+    discount1:`Free truck with move in*`
+  },
+  {
+    size: `10 x 10`,
+    name: `Customer Favorite`,
+    temperature: `Temp. & Non Temp. Control`,
+    price: `please call for price`,
+    discount: `25% off 1st full month`,
+    discount1:`Free truck with move in*`
+  },
+  {
+    size: `10 x 15`,
+    name: `Gallery`,
+    temperature: `Temp. & Non Temp. Control`,
+    price: `please call for price`,
+    discount: `25% off 1st full month`,
+    discount1:`Free truck with move in*`
+  },
+  {
+    size: `10 x 20`,
+    name: `Your Additional Garage`,
+    temperature: `Temp. & Non Temp. Control`,
+    price: `please call for price`,
+    discount: `25% off 1st full month`,
+    discount1:`Free truck with move in*`
+  },
+  
+]
 
 export const option =  [
     {

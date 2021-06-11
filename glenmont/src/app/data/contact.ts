@@ -18,7 +18,7 @@ export const contact = [
         label: 'Phone:',
         data: '(518) 470-1000',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:5555555555',
+        redirect: 'tel:5184701000',
     }
 ];
 

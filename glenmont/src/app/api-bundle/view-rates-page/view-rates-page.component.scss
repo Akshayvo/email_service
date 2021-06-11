@@ -1,11 +1,23 @@
 @import "../../../styles.scss";
 
+.viewrates{
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+  text-align: center;
+  background-color:#e2f0d9 !important;
+  .btn-outline-primary{
+    background-color: #c5e0b5;
+    border-color: #c5e0b5 !important;
+    color: black!important;
+    
+  }
+}
 .display {
   display: none;
 }
 
 .viewrates-desktop {
-  background-color: $white;
+  // background-color: $white;
 
   h3 {
     color: $white;
@@ -41,7 +53,7 @@
 }
 
 .viewrates-mobile {
-  background-color: $white;
+  // background-color: $;
 
   h3 {
     color: $white;
