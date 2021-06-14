@@ -13,7 +13,7 @@ export const payRentPageContent = `Take a moment to review our easy login instru
 export const storageTipsTitle = `Storage Tips  | Madison Verona Self Storage`;
 export const storageTipsContent = `Follow these easy self storage tips to make your stay with Madison Verona Self Storage a breeze! Have questions? Call today!`;
 
-export const unitSizerPageTitle = `Coming Soon`;
+export const unitSizerPageTitle = `Unit Sizer | Madison Verona Self Storage`;
 export const unitSizerPageContent = ``;
 
 export const contactPageTitle = `Contact Us  | Madison Verona Self Storage`;
