@@ -97,6 +97,7 @@
         </div>
       </div>
       <div class="col-6 d-flex justify-content-center">
+      <div>
         <div *ngIf="lstUnitType.IsUnitsAvailable; else otherreserve">
           <div class=" py-1 buttons" id='reserve' *ngIf="showReserve">
             <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
@@ -108,15 +109,15 @@
               In</button>
           </div>
         </div>
-    
+      </div>
         <ng-template #otherreserve>
-          <div class="text-right" id='reserve' *ngIf="showMovein || showReserve">
-            <p class="card-text ">Please call the facility to reserve a unit or move in.</p>
+          <div class="text-right" id='reserve' *ngIf="showReserve">
+            <p class="card-text ">Please call the facility to reserve a unit .</p>
           </div>
         </ng-template>
         <ng-template #othermovein>
-          <div class="text-right" id='move-in' *ngIf="showMovein || showReserve">
-            <p class="card-text ">Please call the facility to reserve a unit or move in.</p>
+          <div class="text-right" id='move-in' *ngIf="showMovein">
+            <p class="card-text ">Please call the facility to  move in.</p>
           </div>
         </ng-template>
       </div>
@@ -211,6 +212,7 @@
         </div>
       </div>
       <div class="col-6 d-flex justify-content-center">
+        <div>
         <div *ngIf="lstUnitType.IsUnitsAvailable; else otherreserve">
           <div class=" py-1 buttons" id='reserve' *ngIf="showReserve">
             <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
@@ -222,14 +224,14 @@
               In</button>
           </div>
         </div>
-    
+      </div>
         <ng-template #otherreserve>
-          <div class="text-right" id='reserve' *ngIf="showMovein || showReserve">
+          <div class="text-right" id='reserve' *ngIf="showReserve">
             <p class="card-text ">Please call the facility to reserve a unit or move in.</p>
           </div>
         </ng-template>
         <ng-template #othermovein>
-          <div class="text-right" id='move-in' *ngIf="showMovein || showReserve">
+          <div class="text-right" id='move-in' *ngIf="showMovein">
             <p class="card-text ">Please call the facility to reserve a unit or move in.</p>
           </div>
         </ng-template>
@@ -325,6 +327,7 @@
         </div>
       </div>
       <div class="col-6 d-flex justify-content-center">
+        <div>
         <div *ngIf="lstUnitType.IsUnitsAvailable; else otherreserve">
           <div class=" py-1 buttons" id='reserve' *ngIf="showReserve">
             <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
@@ -336,15 +339,15 @@
               In</button>
           </div>
         </div>
-    
+        </div>
         <ng-template #otherreserve>
-          <div class="text-right" id='reserve' *ngIf="showMovein || showReserve">
-            <p class="card-text ">Please call the facility to reserve a unit or move in.</p>
+          <div class="text-right" id='reserve' *ngIf="showReserve">
+            <p class="card-text ">Please call the facility to reserve a unit.</p>
           </div>
         </ng-template>
         <ng-template #othermovein>
-          <div class="text-right" id='move-in' *ngIf="showMovein || showReserve">
-            <p class="card-text ">Please call the facility to reserve a unit or move in.</p>
+          <div class="text-right" id='move-in' *ngIf="showMovein">
+            <p class="card-text ">Please call the facility to move in.</p>
           </div>
         </ng-template>
       </div>

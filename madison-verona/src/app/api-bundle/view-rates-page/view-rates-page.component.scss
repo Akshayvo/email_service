@@ -13,6 +13,17 @@
   display: block;
 }
 
+#door-size{
+  width: 250px;
+}
+
+#size{
+  width: 300px;
+}
+
+#setup-fee{
+  width: 180px;
+}
 .card-text {
   width: 150px;
   padding: 10px;
@@ -102,6 +113,19 @@ p {
   text-align: left;
 }
 
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .viewrates-desktop{
+    font-size: .8rem;
+    
+  }
+  th{
+    font-size: .8rem!important;
+  }
+  #setup-fee{
+    width:200px;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .viewrates-mobile {
     display: none;
@@ -113,8 +137,6 @@ p {
     display: none;
   }
 
-  #reserve,#move-in
-{ display:none; }
   .buttons {
     .btn-outline-primary {
       color: $primary !important;
