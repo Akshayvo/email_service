@@ -4,6 +4,7 @@
   display: none;
 }
 
+
 .iconStyle {
   cursor: pointer;
 }
@@ -112,6 +113,8 @@ p {
     display: none;
   }
 
+  #reserve,#move-in
+{ display:none; }
   .buttons {
     .btn-outline-primary {
       color: $primary !important;

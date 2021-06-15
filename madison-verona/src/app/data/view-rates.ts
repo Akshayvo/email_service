@@ -13,28 +13,34 @@ export const viewRatesAltText = `two rows of roll-up metal self storage unit doo
 
 export const th = [
   {
+    id: `size`,
     data: `Size`,
     state: true,
   },
   {
+    id: `door-size`,
     data: `Door Size`,
     state: true
 
   },
   {
+    id: `rate`,
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
   
   {
+    id: `setup-fee`,
     data: 'Setup Fee',
     state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
   },
   {
+    id: `reserve`,
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
   {
+    id: `move-in`,
     data: `Move In`,
     state: objSIMSetting.objActionSetting.blnAllowMoveIn
   },
