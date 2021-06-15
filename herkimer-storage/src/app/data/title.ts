@@ -13,8 +13,8 @@ export const payRentPageContent = `Simply follow the on-page instructions, or ca
 export const storageTipsTitle = `Storage Tips  | Herkimer Storage Outlet`;
 export const storageTipsContent = `Take a moment to review our storage tips page and make your self storage experience a breeze!`;
 
-export const unitSizerPageTitle = ``;
-export const unitSizerPageContent = ``;
+export const unitSizerPageTitle = `Unit Sizer | Herkimer Storage Outlet`;
+export const unitSizerPageContent = `Use our handy unit sizing chart to help figure out what will fit in our wide selection of unit sizes!`;
 
 export const contactPageTitle = `Contact Us  | Herkimer Storage Outlet`;
 export const contactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;

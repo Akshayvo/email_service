@@ -83,7 +83,7 @@ const reviewURL = `http://search.google.com/local/writereview?placeid=ChIJn0pJVh
     { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
     { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
     { path: 'contact-us', component: ContactComponent },
-    // { path: 'unit-sizer', component: UnitSizerComponent },
+    { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     {
       path: `${environment.locationName}/view-rates`,

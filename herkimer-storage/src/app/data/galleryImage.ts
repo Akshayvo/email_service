@@ -34,4 +34,32 @@ export const galleryHome = [
     thumb: `herkimer-storage-outlet-front-fence-thumb`,
     alt: `a sign behind a wooden fence that reads Herkimer Storage Outlet`
   },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `herkimer-storage-outlet-2`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `herkimer-storage-outlet-2-thumb`,
+    alt: `the interior of a self storage unit with the door open revealing a clean and well lit space`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `herkimer-storage-outlet-3`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `herkimer-storage-outlet-3-thumb`,
+    alt: `the inside of a well-lit climate controlled self storage unit`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `herkimer-storage-outlet-4`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `herkimer-storage-outlet-4-thumb`,
+    alt: `the inside of  a climate controlled storage unit`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `herkimer-storage-outlet-5`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `herkimer-storage-outlet-5-thumb`,
+    alt: `the interior of a storage unit at a climate controlled self storage facility`
+  },
 ];
