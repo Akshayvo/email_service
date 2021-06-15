@@ -6,7 +6,7 @@
           <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
             <i [class]="contact?.class" *ngIf="contact?.label != 'Office Address:' && contact?.label != 'Email:' "></i>
             <span class="contact-links" *ngIf="contact?.label != 'Office Address:' && contact?.label != 'Email:' ">
-              <a [href]="contact?.redirect" target="{{(contact?.label === 'Facility Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
+              <a [href]="contact?.redirect" target="{{(contact?.label === 'Facility Address:') ? '_blank' : '_self'}}" rel="noopener">&nbsp;{{contact.data}}</a></span>
             <!-- <ng-template #other_content>&nbsp;{{contact.data}}</ng-template> -->
           </span>
         </div>
