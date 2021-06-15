@@ -140,5 +140,8 @@
       }
     }
   },
-  "defaultProject": "aa-secure"
+  "defaultProject": "aa-secure",
+  "cli": {
+    "analytics": "f21f7b0c-00f6-4576-a143-1780a12b42e7"
+  }
 }
