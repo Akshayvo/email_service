@@ -83,7 +83,7 @@ export const blurb = [
 
 export const specialRow = [
     {
-        h2: `Grand Opening Special`,
-        para: `50% Off Your First Month + A Free Lock!`
+        h2: ``,
+        para: ``
     }
 ]

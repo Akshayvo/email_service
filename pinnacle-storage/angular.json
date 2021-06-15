@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "pinnacle"
+  "defaultProject": "pinnacle",
+  "cli": {
+    "analytics": false
+  }
 }
