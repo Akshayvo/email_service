@@ -1,20 +1,28 @@
-import { WINDOW } from '@ng-toolkit/universal';
-import { Component, OnInit , Inject} from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';
-import { dataViewRates, rates,option,option1 } from '../data/view-rates';
-import { contact, hours } from '../data/contact';
-import { FormGroup, FormBuilder, Validators, FormArray, AbstractControl, ValidatorFn, FormGroupName } from '@angular/forms';
-import { EmailService } from '../services/email.service';
-import { Subscription } from 'rxjs';
-import { DataSharingService } from '../api-bundle/services/data-sharing.service';
+import { WINDOW } from "@ng-toolkit/universal";
+import { Component, OnInit, Inject } from "@angular/core";
+import { Title, Meta } from "@angular/platform-browser";
+import { dataViewRates, rates, option, option1 } from "../data/view-rates";
+import { contact, hours } from "../data/contact";
+import {
+  FormGroup,
+  FormBuilder,
+  Validators,
+  FormArray,
+  AbstractControl,
+  ValidatorFn,
+  FormGroupName,
+} from "@angular/forms";
+import { EmailService } from "../services/email.service";
+import { Subscription } from "rxjs";
+import { DataSharingService } from "../api-bundle/services/data-sharing.service";
 
 @Component({
-  selector: 'app-free-estimate',
-  templateUrl: './free-estimate.component.html',
-  styleUrls: ['./free-estimate.component.scss']
+  selector: "app-free-estimate",
+  templateUrl: "./free-estimate.component.html",
+  styleUrls: ["./free-estimate.component.scss"],
 })
 export class FreeEstimateComponent implements OnInit {
-  currentActive: any = 'VIEW RATES';
+  currentActive: any = "VIEW RATES";
   dataViewRates: any;
   name: string;
   email: any;
@@ -30,10 +38,10 @@ export class FreeEstimateComponent implements OnInit {
   currentdate: Date;
   currentDate: string;
   rates: any;
-  option =  [];
+  option = [];
   option1 = [];
   options: any;
-  private  getLeadDaysSubscribe$: Subscription;
+  private getLeadDaysSubscribe$: Subscription;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -41,71 +49,69 @@ export class FreeEstimateComponent implements OnInit {
     private emailService: EmailService,
     private meta: Meta,
     private formBuilder: FormBuilder
-
-    
   ) {
-
-    
     this.meta.addTag({
-      name: 'description',
+      name: "description",
       content: `Check out our affordable recreational vehicle storage rates and start
-                the reservation process right here! Have a question? Call (951) 603-5133!`
+                the reservation process right here! Have a question? Call (951) 603-5133!`,
     });
-    this.titleService.setTitle('View Rates  | All Valley RV Storage');
+    this.titleService.setTitle("Rates | Robinson Storage Box");
     this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      phone: ['', [Validators.required,
-      Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      subject: [''],
-      AddressLine1: ['', Validators.required],
-      AddressLine2: [''],
-      City: ['', Validators.required],
-      State: ['', Validators.required],
-      ZIP: ['', Validators.required],
-      dteMoveIn: ['',
-    ],
-
-  });
-  function conditionalValidator(condition: (() => boolean), validator: ValidatorFn): ValidatorFn {
-    return (control: AbstractControl): {[key: string]: any} => {
-      if (condition()) {
-        return null;
-      }
-      return validator(control);
-    };
-  }
-
+      name: ["", Validators.required],
+      phone: [
+        "",
+        [
+          Validators.required,
+          Validators.pattern(
+            "^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{3,5}$"
+          ),
+        ],
+      ],
+      email: ["", [Validators.required, Validators.email]],
+      message: ["", Validators.required],
+      subject: [""],
+      AddressLine1: ["", Validators.required],
+      AddressLine2: [""],
+      City: ["", Validators.required],
+      State: ["", Validators.required],
+      ZIP: ["", Validators.required],
+      dteMoveIn: [""],
+    });
+    function conditionalValidator(
+      condition: () => boolean,
+      validator: ValidatorFn
+    ): ValidatorFn {
+      return (control: AbstractControl): { [key: string]: any } => {
+        if (condition()) {
+          return null;
+        }
+        return validator(control);
+      };
+    }
   }
 
   ngOnInit() {
     this.fetchContactDetails();
     window.scrollTo(0, 0);
     this.viewRates();
-    
-    
 
     this.currentdate = new Date();
 
     this.fetchUSState();
-    
-    
   }
-    
+
   public fetchUSState() {
     this.option = option;
     this.option1 = option1;
-    }
+  }
 
- 
-
-  getError(form: {controls: any}) {
+  getError(form: { controls: any }) {
     return form.controls;
   }
 
-
-  get f() { return this.contactForm.controls; }
+  get f() {
+    return this.contactForm.controls;
+  }
   public fetchContactDetails() {
     this.contactInfo = contact;
   }
@@ -115,44 +121,41 @@ export class FreeEstimateComponent implements OnInit {
     this.rates = rates;
   }
 
-  
-
   onSubmit() {
     this.submitted = true;
 
-   // stop here if form is invalid
-   if (this.contactForm.invalid) {
-       return;
-   } else {
+    // stop here if form is invalid
+    if (this.contactForm.invalid) {
+      return;
+    } else {
+      if (!this.contactForm.value.subject) {
+        this.contactForm.value.subject = "Website Form Submission";
+      }
 
-     if ( !this.contactForm.value.subject) {
-       this.contactForm.value.subject = 'Website Form Submission';
-     }
+      this.receiveremail = this.contactInfo[1].data;
 
-     this.receiveremail = this.contactInfo[1].data;
-
-         this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
+      this.completeMessage = `phone: ${this.contactForm.value.phone}, <br/>
                                 message: ${this.contactForm.value.message}`;
 
-         const body = {
-           name: this.contactForm.value.name,
-           email: this.contactForm.value.email,
-           receiveremail: this.receiveremail,
-           message: this.completeMessage,
-           subject: this.contactForm.value.subject
-         };
-         this.emailService.sendEmail(body)
-           .subscribe((response: any) => {
-             if (response.result != null) {
-               this.mailSent = true;
-             } else {
-             }
-           }, (err) => {
-
-           });
-         this.submitted = false;
-         // MailService(body);
-         this.contactForm.reset();
-   }
- }
+      const body = {
+        name: this.contactForm.value.name,
+        email: this.contactForm.value.email,
+        receiveremail: this.receiveremail,
+        message: this.completeMessage,
+        subject: this.contactForm.value.subject,
+      };
+      this.emailService.sendEmail(body).subscribe(
+        (response: any) => {
+          if (response.result != null) {
+            this.mailSent = true;
+          } else {
+          }
+        },
+        (err) => {}
+      );
+      this.submitted = false;
+      // MailService(body);
+      this.contactForm.reset();
+    }
+  }
 }

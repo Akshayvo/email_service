@@ -1,7 +1,7 @@
 export const homePageTitle = `Affordable Portable Self Storage Units in Ennissmore`;
 export const homePageContent = `Robinson Storage Box offers affordable mobile storage units perfect for home renovations, job-sites, and local moves. Check out our pricing and call today!`;
 
-export const viewRatesPageTitle = `View Rates  | Robinson Storage Box`;
+export const viewRatesPageTitle = `Rates | Robinson Storage Box`;
 export const viewRatesPageContent = `Review our current rates and availability, then submit an inquiry with our handy online form!`;
 
 export const freeEstimatePageTitle = `View Rates  | Robinson Storage Box`;
@@ -28,5 +28,5 @@ export const thankYouPageContent = `We've received your reservation! One of our 
 export const privacyPolicyPageTitle = `Privacy Policy | Robinson Storage Box`;
 export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
 
-export const howItWorksPageTitle = `Privacy Policy | Robinson Storage Box`;
+export const howItWorksPageTitle = `How It Works | Robinson Storage Box`;
 export const howItWorksPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
