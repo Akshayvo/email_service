@@ -103,6 +103,10 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.dataSharingService.LstUnitTypes = unitData;
   }
 
+  public navigateToContactUs(location: any) {
+    this.router.navigate([`${location}`]);
+  }
+
   getMoveInCharges(description: any, monthlyRate: any, intUnitTypeID: any) {
     this.showLoader = true;
     this.getMoveinChargesService.getMoveInCharges({

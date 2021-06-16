@@ -61,12 +61,16 @@ export class HeaderComponent implements OnInit {
 
   
 
-  public payrent(){
+  public payrent() {
     // this.router.navigate([`${environment.locationName}/view-rates`,{scroll: true}])
     if (!!localStorage.getItem('paymentTab')) {
       this.paymentTab = localStorage.getItem('paymentTab');
+    } 
+    if (!!this.paymentTab) {
+      this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
+    } else {
+      this.router.navigate([`/pay-rent/rent-sub/login`]);
     }
-    this.router.navigate([`/pay-rent/${this.paymentTab}/login`]);
   }
 
 }
