@@ -40,6 +40,8 @@ img {
   }
 }
 
+
+
 .social :hover {
   color: $white;
 }
@@ -56,11 +58,14 @@ img {
   .nav-link:hover {
     color: $secondary;
   }
-
+ 
   .nav-link-active {
     color: $secondary;
-    border-bottom: 5px solid $secondary;
+    border-bottom: 5px solid $secondary;  
+    
   }
+
+
 
   button {
     border-color: $primary;

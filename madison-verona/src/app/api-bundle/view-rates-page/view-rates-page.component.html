@@ -311,14 +311,15 @@
         <strong>Unit Size</strong>
         <div class=" py-1 ">{{lstUnitType.Description}}</div>
         <div class="row">
-          <div class="col-6" id='door-size' *ngIf="doorSize">
-            <p class=" "><b><u>Door Size</u></b></p>
-            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
-          </div>
           <div class="col-6 text-center " id='rate' *ngIf="showRate">
             <p class=" "><b><u>Rate</u></b></p>
             <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</div>
           </div>
+          <div class="col-6" id='door-size' *ngIf="doorSize">
+            <p class=" "><b><u>Door Size</u></b></p>
+            <div class=" "><span *ngIf="lstUnitType.doorSize != null"></span>{{lstUnitType.doorSize}}</div>
+          </div>
+          
           <!-- <div class="col-6 " [class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl">
             <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled">Climate Controlled</div>
           </div> -->
