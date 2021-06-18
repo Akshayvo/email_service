@@ -5,11 +5,11 @@
     <span itemprop="name">{{state}}</span>
   </span>
   <!-- <app-microdata></app-microdata> -->
-  <div [class.loader]="!showTable">
+  <!-- <div [class.loader]="!showTable">
   </div>
   <div [class.loader]="showLoader" class="loader-position"> 
-  </div>
-  <h1 class='text-center'>COMING SOON</h1>
+  </div>-->
+  <h1 class='text-center'>COMING SOON</h1> 
   <!-- <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
       <tHead [class.display]="!showTable">
           <tr>
@@ -68,8 +68,10 @@
 
       </tbody>
   </table> -->
-  <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes">
-    <div class="col-6 text-center ">  
+  <!-- <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes"> -->
+    <div class="row viewrates-mobile py-2 border">
+    <h1 class='text-center'>COMING SOON</h1>
+    <!-- <div class="col-6 text-center ">  
       <strong>Unit Size</strong>
     <div class=" py-1 ">{{lstUnitType.Description}}</div>
     <div class="row">
@@ -95,6 +97,6 @@
         <ng-template #other> 
           <div  class="text-right" *ngIf="showMovein || showReserve" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
         </ng-template>
-    </div>
+    </div> -->
   </div>
 </div>

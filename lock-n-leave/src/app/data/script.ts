@@ -32,11 +32,11 @@ export const script = {               // Please fill this script according to fa
      telephone: contact[contactIndex].data,
      map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
      description: "Lock-N-Leave Self Storage is Harpursville’s newest self storage facility! We are conveniently located off of Highway 88 between Harpursville and Sanitaria Springs. We proudly serve Harpursville, Belden, Sanitaria Springs, and the surrounding communities in the Southern Tier with quality self storage units and friendly customer service at competitive prices! Our self storage facility is locally owned and operated, and was built from the ground up with the latest conveniences to make your next self storage project fast and easy.",
-     streetAddress: "148 W 51st St",
+     streetAddress: "50 Sova Rd",
      state: "New York",
-     addressLocality: "New York",
+     addressLocality: "Harpursville",
      addressRegion: "NY",
-     postalCode: "10019",
+     postalCode: "13787",
      addressCountry: "US",
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit, Debit",
@@ -46,7 +46,7 @@ export const script = {               // Please fill this script according to fa
      reviewCount: "250",
      latitude: 42.1909388,
      longitude: -75.7020814,
-     openingHours: [],
+     openingHours: ['Mo-Fr 9:00-19:00','Sa 9:00-15:00','Su  8:00-12:00'],
      priceRange: ''
 };
 
