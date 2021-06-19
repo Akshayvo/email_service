@@ -23,7 +23,7 @@ export const storageTips = [
             { data: 'Wipe and dry the interiors of all appliances.'},
             { data: 'Tape and/or tie down all movable parts.'},
             { data: 'Remove all plastic or shrink wrap from items to prevent the collection of condensation, which can cause damage and lead to mold and mildew.'},
-            { data: 'Consider dust covers or for furniture.  With weather changes, there will be changes in humidity. Old linens and blankets work well as dust covers to prevent excessive dirt or moisture from gathering on your furniture.'},
+            { data: 'Consider dust covers for furniture.  With weather changes, there will be changes in humidity. Old linens and blankets work well as dust covers to prevent excessive dirt or moisture from gathering on your furniture.'},
 
         ],
     },

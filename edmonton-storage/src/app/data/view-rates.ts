@@ -3,7 +3,7 @@ export const th = [
       data: `Size`
     },
     {
-      data: `Rate`
+      data: `Monthly Rate`
     },
     // {
     //   data: `Deposit`

@@ -1,6 +1,6 @@
 export const privacyPolicy = [
   {
-    content: `This privacy notice discloses the privacy practices for "".
+    content: `This privacy notice discloses the privacy practices for Guardian Storage and Access Mini Storage.
     This privacy notice applies solely to information collected by this website. It will notify you of the following:`,
     list: [
         {
@@ -29,9 +29,15 @@ export const privacyPolicy = [
             We will not sell or rent this information to anyone.`,
           },
           {
-            p: `We will use your information to respond to you, regarding the reason you contacted us.
-            We will not share your information with any third party outside of our organization, other
-            than as necessary to fulfill your request, e.g. to ship an order.`,
+            p: `Except for circumstances 
+            arising in which we are 
+            otherwise required by law we 
+            will not share your 
+            information with any third 
+            party outside of our 
+            organization, other than as 
+            necessary to fulfill your 
+            request. `,
           },
           {
             p: `Unless you ask us not to, we may contact you via email in the future to tell you
@@ -123,8 +129,11 @@ export const privacyPolicy = [
         ]
       }
     ],
-    note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-    at  <a href="tel:7807325000" style="color: #000;">(780) 732-5000 </a> or via email at <a href="mailto:guardian.info@edmstorage.ca" style="color:#000;">guardian.info@edmstorage.ca </a>.`,
+    note: `If you feel that we are not 
+    abiding by this privacy policy, 
+    you should contact us 
+    immediately via telephone at  <a href="tel:7807325000" style="color: #000;">(780) 732-5000 </a> or via email at <a href="mailto:guardian.info@edmstorage.ca" style="color:#000;">guardian.info@edmstorage.ca </a>for Guardian Storage or by 
+    telephone at <a href="tel:7807325000" style="color: #000;">(780) 732-5000 </a> or via email at <a href="mailto:access.info@edmstorage.ca" style="color:#000;">guardian.info@edmstorage.ca </a> for Access Mini Storage.`,
     // sharing: [
     //   {
     //     heading: `Sharing`

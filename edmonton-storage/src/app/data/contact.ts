@@ -42,14 +42,14 @@ export const contactsLocation1 = [
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/s79NutC6MxvRi19b6'
     },
-    {
-        id: 2,
-        label: 'Email: ',
-        email: 'guardian.info@edmstorage.ca ',
-        data: `guardian.info@edmstorage.ca `,
-        class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:guardian.info@edmstorage.ca'
-    },
+    // {
+    //     id: 2,
+    //     label: 'Email: ',
+    //     email: '',
+    //     data: ``,
+    //     class: 'fas fa-envelope-open mr-2 iconColor',
+    //     redirect: 'mailto:'
+    // },
     {
         id: 3,
         label: 'Phone: ',
@@ -65,11 +65,11 @@ export const hoursLocation1 = [
         data: '10:00 am - 4:00 pm',
     },
     {
-        label: 'Sun-Mon:',
+        label: 'Sun-Mon: ',
         data: 'CLOSED',
     },
     {
-        label: 'Statutory Holidays:',
+        label: 'Statutory Holidays: ',
         data: 'CLOSED',
     },
 ];
@@ -77,7 +77,7 @@ export const hoursLocation1 = [
 export const hoursLocation1AcessHours = [
     {
         label: 'Facility Gate Hours:',
-        data: '6:30 am - 10:15 pm, 7 days a week'
+        data: ' 7:00 am - 9:00 pm, 7 days a week'
     },
 ];
 

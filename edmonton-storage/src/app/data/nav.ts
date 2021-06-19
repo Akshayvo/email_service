@@ -2,12 +2,12 @@ import { environment } from '../../environments/environment';
 
 export const navLinks = [
     {
-        label: 'Home',
+        label: 'HOME',
         path: '/',
         type: 'link'
     },
     {
-        label: 'Location',
+        label: 'LOCATIONS',
         type: 'dropdown',
         path: '/location',
         sublinks: [
@@ -29,7 +29,7 @@ export const navLinks = [
     //     type: 'link'
     // },
     {
-        label: 'Storage Help',
+        label: 'STORAGE HELP',
         type: 'dropdown',
         path: '/help',
         sublinks: [
@@ -46,17 +46,17 @@ export const navLinks = [
         ]
     },
     {
-        label: 'Promotions',
+        label: 'PROMOTIONS',
         path: `${environment.locationName}/promotions`,
         type: 'link'
     },
     {
-        label: 'Community',
+        label: 'COMMUNITY',
         path: `${environment.locationName}/community`,
         type: 'link'
     },
     {
-        label: 'Contact Us',
+        label: 'CONTACT US',
         path: '/contact-us',
         type: 'link'
     },

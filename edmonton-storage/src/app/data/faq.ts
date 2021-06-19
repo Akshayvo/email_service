@@ -71,7 +71,7 @@ export const faq1 = [
         label: 'How do I pay for my unit?  ',
         contents: [
             { data: 'You pay monthly, 12 payments per year.  This can be done in person during office hours when you are visiting your unit using cash, cheque, VISA, Mastercard, and debit/Interac.'},
-            { data: 'You can also arrange automatic payments using a credit card or post-dated cheques; just ask our helpful office staff. '},
+            { data: 'You can also arrange automatic payments using a credit card or post-dated cheques, or you can arrange payment by Etransfer (EFT – electronic funds transfer); just ask our helpful office staff.'},
         ],
     },
     {
