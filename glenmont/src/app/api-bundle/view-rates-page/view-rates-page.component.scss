@@ -1,29 +1,52 @@
 @import "../../../styles.scss";
 
 .viewrates{
-  padding-right: 10px !important;
-  padding-left: 10px !important;
+  padding-right: 25px !important;
+  padding-left: 25px !important;
   text-align: center;
-  background-color:#e2f0d9 !important;
+  background-color: white !important;
+  border-color: #00b050 ;
+  border-style: solid;
+  border-width: thick;
+  h3,h4{
+  font-family: Arial, "Rounded MT", Bold;
+  }
+  
+  .discount{
+    color: #00b050 ;
+  }
+  
+  .btn-outline-primary:hover,.btn-outline-primary:focus,
+  .btn-outline-primary:active {
+    background-color: #E2CD03 !important;
+    border-color: #E2CD03 !important;
+
+  }
+  
   .btn-outline-primary{
-    background-color: #c5e0b5;
-    border-color: #c5e0b5 !important;
+    background-color: #fce404;
+    border-color: #fce404 !important;
     color: black!important;
     
   }
+}
+
+.mat-grid-list{
+  position: inherit !important;
 }
 .display {
   display: none;
 }
 
+
 .viewrates-desktop {
   // background-color: $white;
 
-  h3 {
-    color: $white;
-    background-color: $primary;
-    font-size: 1.75rem;
-  }
+  // h3 {
+    // color: $white;
+    // background-color: $primary;
+    // font-size: 1.75rem;
+  // }
 
   .unitDetail:nth-child(odd) {
     background: #a8a8a8;
