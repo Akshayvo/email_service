@@ -29,6 +29,7 @@ export const featuresList = [
     },
     {
         td1: 'Fully-Fenced Facility',
+        td2: 'Family-Owned and Operated',
     },
 
 ];
@@ -83,7 +84,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Self Storage & Moving Vans`,
+        h2: `State-of-the-art Self Storage Facility`,
         blurb: `Located in Glenmont, New York, Glenmont Self Storage provides well-maintained self storage units including climate-controlled units at reasonable rates with friendly service. Our facility is well-lit, fully-fenced, and we provide personal pin-codes for easy access through our electronic security gate. Check out our availability, then give our offices a call for pricing!`,
     }
 ];

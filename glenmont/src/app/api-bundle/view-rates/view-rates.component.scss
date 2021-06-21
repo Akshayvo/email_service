@@ -60,6 +60,10 @@ table {
   margin: auto;
 }
 
+.view-rate{
+  margin-right: 550px !important;
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -81,7 +85,9 @@ table {
 }
 
 .background-padding {
+  width: 1500px;
   padding: 64px;
+  
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
