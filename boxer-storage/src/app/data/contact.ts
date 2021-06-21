@@ -176,6 +176,13 @@ export const accessHoursLocation11 = [
         data: '24 Hours a Day 7 Days a Week',
     },
 ];
+
+export const accessHoursLocation12 = [
+    {
+        // label: 'Access Hour ',
+        data: '24 Hours a Day 7 Days a Week',
+    },
+];
 export const contactsLocation2 = [
       {
         id: 4,
@@ -667,6 +674,57 @@ export const contactsLocation11 = [
 ];
 
 export const hoursLocation11 = [
+    // {
+    //     label: 'Monday - Saturday: ',
+    //     data: '9:00AM - 5:00PM',
+    // },
+    // {
+    //     label: 'Sunday: ',
+    //     data: 'CLOSED',
+    // },
+    {
+        label: 'Monday - Friday: ',
+        data: '9:00AM to 6:00PM',
+    },
+    {
+        label: 'Saturday: ',
+        data: '9:00AM to 2:00PM',
+    },
+];
+
+export const contactsLocation12 = [
+    {
+        id: 4,
+        label: 'Phone: ',
+        data: '(616) 895-9707',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:6168959707'
+    },
+    {
+        id: 1,
+        label: 'Address: ',
+        data: '11475 48th Ave #200, Allendale, MI 49401',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/Hr2k4URkZECWp1L76'
+    },
+    {
+        id: 3,
+        label: 'Email: ',
+        email: 'store@boxerstorage.com',
+        data: `store@boxerstorage.com`,
+        class: 'fas fa-envelope mr-2 iconColor',
+        redirect: 'mailto:`store@boxerstorage.com`'
+    },
+    {
+        id: 2,
+        label: 'Mailing Address: ',
+        data: '3609 32nd St SE, Kentwood, MI 49512',
+        class: 'fas fa-envelope-open mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/V9mQLpHMRbH1CtK4A'
+    },
+];
+
+export const hoursLocation12 = [
     // {
     //     label: 'Monday - Saturday: ',
     //     data: '9:00AM - 5:00PM',

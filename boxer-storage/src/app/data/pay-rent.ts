@@ -66,7 +66,12 @@ export const tableData = [
     facility: ' Otsego',
     address: '714 Lincoln Rd, Otsego, MI 49078',
     url: 'otsego/rent-sub/login'
-  },   
+  },  
+  {
+    facility: ' Allendale',
+    address: '11475 48th Ave #200, Allendale, MI 49401',
+    url: 'allendale/rent-sub/login'
+  }, 
 ];
 
 export const tableDataContactPage = [
@@ -124,6 +129,11 @@ export const tableDataContactPage = [
     facility: ' Otsego',
     address: '714 Lincoln Rd, Otsego, MI 49078',
     url: 'otsego'
+  }, 
+  {
+    facility: ' Allendale',
+    address: '11475 48th Ave #200, Allendale, MI 49401',
+    url: 'allendale'
   },    
 ];
 

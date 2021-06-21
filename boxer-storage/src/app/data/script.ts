@@ -13,6 +13,7 @@ location8PageContent, location8PageTitle,
 location9PageContent, location9PageTitle,
 location10PageContent, location10PageTitle,
 location11PageContent, location11PageTitle,
+location12PageContent, location12PageTitle,
 location1PayrentPageTitle, location1PayrentPageContent,
 location2PayrentPageTitle, location2PayrentPageContent,
 location3PayrentPageTitle, location3PayrentPageContent,
@@ -24,6 +25,7 @@ location8PayrentPageTitle, location8PayrentPageContent,
 location9PayrentPageTitle, location9PayrentPageContent,
 location10PayrentPageTitle, location10PayrentPageContent,
 location11PayrentPageTitle, location11PayrentPageContent,
+location12PayrentPageTitle, location12PayrentPageContent,
 location1ContactPageTitle, location1ContactPageContent,
 location2ContactPageTitle, location2ContactPageContent,
 location3ContactPageTitle, location3ContactPageContent,
@@ -35,6 +37,7 @@ location8ContactPageTitle, location8ContactPageContent,
 location9ContactPageTitle, location9ContactPageContent,
 location10ContactPageTitle, location10ContactPageContent,
 location11ContactPageTitle, location11ContactPageContent,
+location12ContactPageTitle, location12ContactPageContent,
 faqPageTitle, faqPageContent } from '../data/title';
 import { featuresList } from '../data/home';
 import { contactsLocation1, hoursLocation1, 
@@ -48,6 +51,7 @@ import { contactsLocation1, hoursLocation1,
   contactsLocation9, hoursLocation9,
   contactsLocation10, hoursLocation10,
   contactsLocation11, hoursLocation11,
+  contactsLocation12, hoursLocation12,
 
  } from '../data/contact';
 
@@ -63,6 +67,7 @@ const contactIndex8 = contactsLocation8.findIndex(x => x.label === 'Phone: ');
 const contactIndex9 = contactsLocation9.findIndex(x => x.label === 'Phone: ');
 const contactIndex10 = contactsLocation10.findIndex(x => x.label === 'Phone: ');
 const contactIndex11 = contactsLocation11.findIndex(x => x.label === 'Phone: ');
+const contactIndex12 = contactsLocation12.findIndex(x => x.label === 'Phone: ');
 
 const emailIndex1 = contactsLocation1.findIndex(x => x.label === 'Email: ');
 const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
@@ -75,6 +80,7 @@ const emailIndex8 = contactsLocation8.findIndex(x => x.label === 'Email: ');
 const emailIndex9 = contactsLocation9.findIndex(x => x.label === 'Email: ');
 const emailIndex10 = contactsLocation10.findIndex(x => x.label === 'Email: ');
 const emailIndex11 = contactsLocation11.findIndex(x => x.label === 'Email: ');
+const emailIndex12 = contactsLocation12.findIndex(x => x.label === 'Email: ');
   
 export const nameLocation1 = `Boxer Storage - Evanston Ave  Location`;
 export const nameLocation2 = `Boxer Storage - Howard City Location`;
@@ -87,19 +93,21 @@ export const nameLocation8 = `Boxer Storage - Wayland Southside Location`;
 export const nameLocation9 = `Boxer Storage - Dutton Location`;
 export const nameLocation10 = `Boxer Storage - M-45 Location`;
 export const nameLocation11 = `Boxer Storage - Otsego Location`;
+export const nameLocation12 = `Boxer Storage - Allendale Location`;
 
 
 export const location1 = `evanston-ave`;
 export const location2 = `howard-city`;
 export const location3 = `ionia`;
 export const location4 = `alpine`;
-export const location5 = `Red Barn`;
-export const location6 = `Wayland Westside`;
-export const location7 = `Wayland Mill`;
-export const location8 = `Wayland Southside`;
-export const location9 = `Dutton`;
-export const location10 = `M45`;
+export const location5 = `red-barn`;
+export const location6 = `wayland-westside`;
+export const location7 = `wayland-mill`;
+export const location8 = `wayland-southside`;
+export const location9 = `dutton`;
+export const location10 = `m45`;
 export const location11 = `Otsego`;
+export const location12 = `allendale`;
 
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/evanston-ave/storage-units`;
@@ -113,6 +121,7 @@ export const urlLocation8 = `${environment.websiteUrl}/${environment.locationNam
 export const urlLocation9 = `${environment.websiteUrl}/${environment.locationName}/dutton/storage-units`;
 export const urlLocation10 = `${environment.websiteUrl}/${environment.locationName}/m45/storage-units`;
 export const urlLocation11 = `${environment.websiteUrl}/${environment.locationName}/otsego/storage-units`;
+export const urlLocation12 = `${environment.websiteUrl}/${environment.locationName}/allendale/storage-units`;
 
 // export const urlLocation3 = ``;
 // export const urlLocation4 = ``;
@@ -143,6 +152,8 @@ export const description10 = `Boxer Storage - M-45 Location is one of our 12 sel
 
 export const description11 = `Boxer Storage - Otsego Location is one of our 12 self storage facilities. We offer a number of self storage unit choices with friendly customer service and affordable rates!`;
 
+export const description12 = `Boxer Storage - Allendale Location is one of our 12 high-quality storage unit facilities. We offer a variety of storage unit choices with friendly customer service and affordable pricing!`;
+
 // export const description6 = `Our Robertsdale location has a number of unit sizes ideal for just about any self
 //                              storage need at great prices!  Our 24-hour access policy makes coming and going
 //                              on your schedule a breeze!`;
@@ -158,6 +169,7 @@ export const maplocation8 = `https://goo.gl/maps/MwuW3UGVG1S9AeFn9`;
 export const maplocation9 = `https://goo.gl/maps/WTpAyRHsJj1fvaDX9`;
 export const maplocation10 = `https://goo.gl/maps/coAPPJLgeEbmaQrE9`;
 export const maplocation11 = `https://goo.gl/maps/Hr2k4URkZECWp1L76`;
+export const maplocation12 = `https://g.page/m-s-storage-llc?share`;
 
 export const addressLoaction1 = {
   '@type': 'PostalAddress',
@@ -258,6 +270,14 @@ export const addressLoaction11 = {
   'postalCode': '49078',
   'addressCountry': 'United state'
 }
+export const addressLoaction12 = {
+  '@type': 'PostalAddress',
+  'streetAddress': '11475 48th Ave #200',
+  'addressLocality': 'Allendale',
+  'addressRegion': 'MI',
+  'postalCode': '49401',
+  'addressCountry': 'United state'
+}
 
 
 
@@ -326,6 +346,12 @@ export const imageLocation1 = [
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-otsego-169.jpg',
   'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-otsego-43.jpg'
  ]
+ export const imageLocation12 = [
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-allendale-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-allendale-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-allendale-43.jpg'
+ ]
+
 
 
 
@@ -776,6 +802,43 @@ export const Location11Script = {
 
 };
 
+export const Location12Script = {
+  '@context': 'https://schema.org',
+  '@type': 'SelfStorage',
+  'image': imageLocation12,
+  '@id': environment.websiteUrl,
+  'name': nameLocation12,
+   'description': description12 || location12PageContent,
+  'address': addressLoaction12,
+ 'aggregateRating': {
+'@type': 'AggregateRating',
+'ratingValue': '4.4',
+'bestRating': '5',
+'reviewCount': '30'
+},
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 42.9781377,
+    'longitude': -85.9077639
+  },
+  'url': urlLocation11,
+  'telephone': contactsLocation11[contactIndex11].data,
+
+  'priceRange': '$45-$135',
+  'openingHours': [],
+  'currenciesAccepted': 'USD',
+'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
+   'areaServed': {
+'@type': 'State',
+'name': 'Michigan'
+ },
+ 'hasMap': maplocation11,
+
+  'acceptsReservations': 'True'
+
+};
+
+
 
 
 export const contactPageLocation1Script = {
@@ -1040,6 +1103,30 @@ export const contactPageLocation11Script = {
     'contactType': 'customer service'
   }],
   'email': contactsLocation11[emailIndex11].data,
+  'sameAs': [
+    '',
+    '',
+    ''
+  ]
+};
+
+export const contactPageLocation12Script = {
+  '@context': 'http://schema.org',
+  '@type': 'Selfstorage',
+  'name': nameLocation12,
+  'address': addressLoaction12,
+   'url': urlLocation12,
+   'image': imageLocation12,
+  'contactPoint': [{
+    '@type': 'ContactPoint',
+    'telephone': contactsLocation12[contactIndex12].data,
+    'contactType': 'reservations'
+  }, {
+    '@type': 'ContactPoint',
+    'telephone': contactsLocation12[contactIndex12].data,
+    'contactType': 'customer service'
+  }],
+  'email': contactsLocation12[emailIndex12].data,
   'sameAs': [
     '',
     '',
@@ -1379,6 +1466,33 @@ export const ogLocation11 = [
   },
 ];
 
+export const ogLocation12 = [
+  {
+    property: `og:title`,
+    content: location12PageTitle
+  },
+  {
+    property: `og:description`,
+    content: location12PageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: urlLocation12
+  },
+  {
+    property: `og:image`,
+    content: imageLocation12[1]
+  },
+];
+
 
 export const twitterHomePage = [
   {
@@ -1701,6 +1815,33 @@ export const twitterLocation11 = [
   {
     name: `twitter:image`,
     content: imageLocation11[0]
+  },
+];
+
+export const twitterLocation12 = [
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:title`,
+    content: `@${location12PageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location12PageContent
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation12[0]
   },
 ];
 
@@ -2056,6 +2197,33 @@ export const ogPayRentPageLocation11 = [
   },
 ];
 
+export const ogPayRentPageLocation12 = [
+  {
+    property: `og:title`,
+    content: location12PayrentPageTitle
+  },
+  {
+    property: `og:description`,
+    content: location12PayrentPageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/pay-rent/${location12}/login`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation12[1]
+  },
+];
+
 export const twitterPayRentPageLocation1 = [
   {
     name: `twitter:title`,
@@ -2348,6 +2516,33 @@ export const twitterPayRentPageLocation11 = [
   {
     name: `twitter:image`,
     content: imageLocation11[0]
+  },
+];
+
+export const twitterPayRentPageLocation12 = [
+  {
+    name: `twitter:title`,
+    content: `@${location12PayrentPageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location12PayrentPageContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation12[0]
   },
 ];
 
@@ -2812,6 +3007,33 @@ export const ogContactPageLocation11 = [
   },
 ];
 
+export const ogContactPageLocation12 = [
+  {
+    property: `og:title`,
+    content: location12ContactPageTitle
+  },
+  {
+    property: `og:description`,
+    content: location12ContactPageContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/contact-${location12}`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation12[1]
+  },
+];
+
 export const twitterContactPageLocation1 = [
   {
     name: `twitter:title`,
@@ -3105,6 +3327,33 @@ export const twitterContactPageLocation11 = [
   {
     name: `twitter:image`,
     content: imageLocation11[0]
+  },
+];
+
+export const twitterContactPageLocation12 = [
+  {
+    name: `twitter:title`,
+    content: `@${location12ContactPageTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: location12ContactPageContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation12[0]
   },
 ];
 

@@ -66,6 +66,11 @@ export const navLinks = [
                 label: 'Otsego Location',
                 path: `${environment.locationName}/otsego`,
               },
+              {
+                id: '12',
+                label: 'Allendale Location',
+                path: `${environment.locationName}/allendale`,
+              },
         ]
     },
     {
@@ -127,6 +132,11 @@ export const navLinks = [
                 id: '11',
                 label: 'Otsego Location',
                 path: `${environment.locationName}/otsego/view-rates`,
+              },
+              {
+                id: '12',
+                label: 'Allendale Location',
+                path: `${environment.locationName}/allendale/view-rates`,
               },
         ]
     },

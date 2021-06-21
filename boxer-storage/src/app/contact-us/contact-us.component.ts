@@ -2,17 +2,17 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsLocation1, hoursLocation1, accessHoursLocation1,accessHoursLocation2,accessHoursLocation3,accessHoursLocation4,accessHoursLocation5,accessHoursLocation6,accessHoursLocation7,accessHoursLocation8,accessHoursLocation9,accessHoursLocation10,accessHoursLocation11,
+import { contactsLocation1, hoursLocation1, accessHoursLocation1,accessHoursLocation2,accessHoursLocation3,accessHoursLocation4,accessHoursLocation5,accessHoursLocation6,accessHoursLocation7,accessHoursLocation8,accessHoursLocation9,accessHoursLocation10,accessHoursLocation11,accessHoursLocation12,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
-          hoursLocation5, contactsLocation5,hoursLocation9,hoursLocation10,hoursLocation11,
-          hoursLocation6,hoursLocation7,hoursLocation8, contactsLocation6,contactsLocation7,contactsLocation8,contactsLocation9,contactsLocation10,contactsLocation11  } from '../data/contact';
+          hoursLocation5, contactsLocation5,hoursLocation9,hoursLocation10,hoursLocation11,hoursLocation12,
+          hoursLocation6,hoursLocation7,hoursLocation8, contactsLocation6,contactsLocation7,contactsLocation8,contactsLocation9,contactsLocation10,contactsLocation11,contactsLocation12  } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, contactPageLocation2Script,contactPageLocation3Script,contactPageLocation4Script,contactPageLocation5Script,contactPageLocation6Script,contactPageLocation7Script,contactPageLocation8Script, contactPageLocation9Script,contactPageLocation10Script,contactPageLocation11Script,
-  ogContactPage, ogContactPageLocation1, ogContactPageLocation2,ogContactPageLocation3,ogContactPageLocation4,ogContactPageLocation5,ogContactPageLocation6,ogContactPageLocation7,ogContactPageLocation8,ogContactPageLocation9,ogContactPageLocation10,ogContactPageLocation11,
-  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2,twitterContactPageLocation3,twitterContactPageLocation4,twitterContactPageLocation5,twitterContactPageLocation6,twitterContactPageLocation7,twitterContactPageLocation8,twitterContactPageLocation9,twitterContactPageLocation10,twitterContactPageLocation11 } from '../data/script';
+import { contactPageLocation1Script, contactPageLocation2Script,contactPageLocation3Script,contactPageLocation4Script,contactPageLocation5Script,contactPageLocation6Script,contactPageLocation7Script,contactPageLocation8Script, contactPageLocation9Script,contactPageLocation10Script,contactPageLocation11Script,contactPageLocation12Script,
+  ogContactPage, ogContactPageLocation1, ogContactPageLocation2,ogContactPageLocation3,ogContactPageLocation4,ogContactPageLocation5,ogContactPageLocation6,ogContactPageLocation7,ogContactPageLocation8,ogContactPageLocation9,ogContactPageLocation10,ogContactPageLocation11,ogContactPageLocation12,
+  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2,twitterContactPageLocation3,twitterContactPageLocation4,twitterContactPageLocation5,twitterContactPageLocation6,twitterContactPageLocation7,twitterContactPageLocation8,twitterContactPageLocation9,twitterContactPageLocation10,twitterContactPageLocation11,twitterContactPageLocation12 } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
 import { environment } from '../../environments/environment';
@@ -136,6 +136,9 @@ export class ContactUsComponent implements OnInit {
       else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
         this.script = contactPageLocation11Script;
           }
+          else if (this.router.url.includes(`${environment.locationName}/allendale`)) {
+            this.script = contactPageLocation12Script;
+              }
   }
 
   public fetchOg() {
@@ -169,6 +172,9 @@ export class ContactUsComponent implements OnInit {
     else if (this.router.url.includes('otsego')) {
       this.og = ogContactPageLocation11;
     } 
+    else if (this.router.url.includes('allendale')) {
+      this.og = ogContactPageLocation12;
+    }
     // else if (this.router.url.includes('robertsdale')) {
     //   this.og = ogContactPageLocation6;
     // }
@@ -209,6 +215,9 @@ public fetchTwitter() {
   }
   else if (this.router.url.includes('otsego')) {
     this.twitter = twitterContactPageLocation11;
+  }
+  else if (this.router.url.includes('allendale')) {
+    this.twitter = twitterContactPageLocation12;
   }
 //  else if (this.router.url.includes('robertsdale')) {
   //   this.twitter = twitterContactPageLocation6;
@@ -277,6 +286,9 @@ public fetchTwitter() {
     else if (this.router.url.includes('otsego')) {
       this.fetchContactDetailsLocation11();
     } 
+    else if (this.router.url.includes('allendale')) {
+      this.fetchContactDetailsLocation12();
+    }
     // else if (this.router.url.includes('robertsdale')) {
     //   this.fetchContactDetailsLocation6();
     // }
@@ -364,6 +376,13 @@ public fetchTwitter() {
     this.contactDetails = contactsLocation11;
     this.hoursDetails = hoursLocation11;
     this.access = accessHoursLocation11;
+  }
+  public fetchContactDetailsLocation12() {
+    this.heading = `Boxer Storage - Allendale Location`;
+    this.locationId = '12'
+    this.contactDetails = contactsLocation12;
+    this.hoursDetails = hoursLocation12;
+    this.access = accessHoursLocation12;
   }
 
 onSubmit() {

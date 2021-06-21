@@ -1,20 +1,20 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { accessHoursLocation1,accessHoursLocation2,accessHoursLocation3, accessHoursLocation4, accessHoursLocation5, accessHoursLocation6, accessHoursLocation7, accessHoursLocation8,accessHoursLocation9,accessHoursLocation10,accessHoursLocation11,
-         contactsLocation1, contactsLocation2, contactsLocation3,contactsLocation4, contactsLocation5, contactsLocation6,contactsLocation7, contactsLocation8,contactsLocation9,contactsLocation10,contactsLocation11,
-         hoursLocation1, hoursLocation2,hoursLocation3,hoursLocation4,hoursLocation5,hoursLocation6,hoursLocation7,hoursLocation8,hoursLocation9,hoursLocation10,hoursLocation11
+import { accessHoursLocation1,accessHoursLocation2,accessHoursLocation3, accessHoursLocation4, accessHoursLocation5, accessHoursLocation6, accessHoursLocation7, accessHoursLocation8,accessHoursLocation9,accessHoursLocation10,accessHoursLocation11,accessHoursLocation12,
+         contactsLocation1, contactsLocation2, contactsLocation3,contactsLocation4, contactsLocation5, contactsLocation6,contactsLocation7, contactsLocation8,contactsLocation9,contactsLocation10,contactsLocation11,contactsLocation12,
+         hoursLocation1, hoursLocation2,hoursLocation3,hoursLocation4,hoursLocation5,hoursLocation6,hoursLocation7,hoursLocation8,hoursLocation9,hoursLocation10,hoursLocation11,hoursLocation12
           } from '../data/contact';
-import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, tabs4,tabs5,tabs6,tabs7,tabs8,tabs9,tabs10,tabs11, heading4, heading5, heading6,heading7,heading8 , heading9,heading10,heading11} from '../data/location';
+import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, tabs4,tabs5,tabs6,tabs7,tabs8,tabs9,tabs10,tabs11, tabs12,heading4, heading5, heading6,heading7,heading8 , heading9,heading10,heading11,heading12} from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
-import { Location1Script,Location2Script,Location3Script,Location4Script,Location5Script,Location6Script,Location7Script,Location8Script,Location9Script,Location10Script,Location11Script,
-  ogLocation1,ogLocation2,ogLocation3,ogLocation4,ogLocation5,ogLocation6,ogLocation7,ogLocation8,ogLocation9,ogLocation10,ogLocation11,
-   twitterLocation1,twitterLocation2,twitterLocation3,twitterLocation4,twitterLocation5,twitterLocation6,twitterLocation7,twitterLocation8,twitterLocation9,twitterLocation10,twitterLocation11
+import { Location1Script,Location2Script,Location3Script,Location4Script,Location5Script,Location6Script,Location7Script,Location8Script,Location9Script,Location10Script,Location11Script,Location12Script,
+  ogLocation1,ogLocation2,ogLocation3,ogLocation4,ogLocation5,ogLocation6,ogLocation7,ogLocation8,ogLocation9,ogLocation10,ogLocation11,ogLocation12,
+   twitterLocation1,twitterLocation2,twitterLocation3,twitterLocation4,twitterLocation5,twitterLocation6,twitterLocation7,twitterLocation8,twitterLocation9,twitterLocation10,twitterLocation11,twitterLocation12
    } from '../data/script';
 import { featuresHead, featuresList, location1FeaturesHead, location2FeaturesHead,
-  location3FeaturesHead, location4FeaturesHead,location5FeaturesHead,location6FeaturesHead,location7FeaturesHead,location8FeaturesHead,location9FeaturesHead,location10FeaturesHead,location11FeaturesHead } from '../data/home';
+  location3FeaturesHead, location4FeaturesHead,location5FeaturesHead,location6FeaturesHead,location7FeaturesHead,location8FeaturesHead,location9FeaturesHead,location10FeaturesHead,location11FeaturesHead ,location12FeaturesHead} from '../data/home';
 import { UaParserService } from '../services/ua-parser.service';
 import { location1PageContent, location1PageTitle,
         location2PageContent, location2PageTitle,
@@ -27,6 +27,7 @@ import { location1PageContent, location1PageTitle,
         location9PageContent, location9PageTitle, 
         location10PageContent, location10PageTitle, 
         location11PageContent, location11PageTitle, 
+        location12PageContent, location12PageTitle,
       } from '../data/title';
 import { environment } from '../../environments/environment';
 
@@ -76,6 +77,8 @@ export class LocationComponent implements OnInit {
   location10PageContent: any;
   location11PageTitle: any;
   location11PageContent: any;
+  location12PageTitle: any;
+  location12PageContent: any;
   access: any;
 
 
@@ -376,11 +379,37 @@ export class LocationComponent implements OnInit {
               name: 'description',
               content: `${this.location11PageContent}`
     });
-    this.titleService.setTitle(`${this.location8PageTitle}`);
+    this.titleService.setTitle(`${this.location11PageTitle}`);
             this.locationName = `Boxer Storage - Otsego Location`;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc11;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location11Script;
+            this.loadScript();
+            this.og.forEach(element => {
+              this.meta.addTag({
+                property: element.property,
+                content: element.content
+              })
+            });
+        
+            this.twitter.forEach(element => {
+              this.meta.addTag({
+                name: element.name,
+                content: element.content
+              })
+            });
+          }
+
+          else if (this.router.url.includes(`${environment.locationName}/allendale`)) {
+            this.meta.addTag({
+              name: 'description',
+              content: `${this.location12PageContent}`
+    });
+    this.titleService.setTitle(`${this.location12PageTitle}`);
+            this.locationName = `Boxer Storage - Allendale Location`;
+            this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc12;
+            this.dataSharingService.locationName = this.locationName;
+            this.script = Location12Script;
             this.loadScript();
             this.og.forEach(element => {
               this.meta.addTag({
@@ -442,6 +471,8 @@ export class LocationComponent implements OnInit {
     this.location10PageContent = location10PageContent;
     this.location11PageTitle = location11PageTitle;
     this.location11PageContent = location11PageContent;
+    this.location12PageTitle = location12PageTitle;
+    this.location12PageContent = location12PageContent;
   }
 
   public fetchFeatureHead() {
@@ -480,6 +511,9 @@ else if (this.router.url.includes(`${environment.locationName}/m45`)) {
 else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
   this.og = ogLocation11;
 }  
+else if (this.router.url.includes(`${environment.locationName}/allendale`)) {
+  this.og = ogLocation12;
+} 
   }
 
   public fetchTwitter() {
@@ -513,6 +547,9 @@ else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
   else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
     this.twitter = twitterLocation11;
   }
+  else if (this.router.url.includes(`${environment.locationName}/allendale`)) {
+    this.twitter = twitterLocation12;
+  }
   }
 
   public isSomePage() {
@@ -545,6 +582,9 @@ else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
     }
     else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
       this.fetchDetailsLocation11();
+    }
+    else if (this.router.url.includes(`${environment.locationName}/allendale`)) {
+      this.fetchDetailsLocation12();
     }
  }
 
@@ -588,6 +628,10 @@ else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
   }
   else if ( this.locationId === 11 ) {
     this.router.navigate([`${environment.locationName}/otsego/reserve-unit`],
+          );
+  }
+  else if ( this.locationId === 12 ) {
+    this.router.navigate([`${environment.locationName}/allendale/reserve-unit`],
           );
   }
  }
@@ -681,6 +725,14 @@ else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
       this.router.navigate(['pay-rent']);
     }
   } 
+  else if ( this.locationId === 12 ) {
+    if (environment.signUpForAuotoPay === 1) {
+      this.router.navigate([`pay-rent/allendale/rent-sub/login`],
+      );
+    } else {
+      this.router.navigate(['pay-rent']);
+    }
+  } 
  }
 
  public navigateToContact() {
@@ -716,6 +768,9 @@ else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
   }
   else if (this.router.url.includes('otsego')) {
     this.router.navigate(['/contact-otsego'])
+  }
+  else if (this.router.url.includes('allendale')) {
+    this.router.navigate(['/contact-allendale'])
   }
  }
 
@@ -830,5 +885,14 @@ else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
     this.access = accessHoursLocation11;
     this.tabs = tabs11;
     this.features = location11FeaturesHead;
+  }
+  public fetchDetailsLocation12() {
+    this.name = heading12;
+    this.locationId = 12;
+    this.contacts = contactsLocation12;
+    this.hours = hoursLocation12;
+    this.access = accessHoursLocation12;
+    this.tabs = tabs12;
+    this.features = location12FeaturesHead;
   }
 }

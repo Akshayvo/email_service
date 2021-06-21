@@ -499,6 +499,42 @@ children: [
 resolve: { data: AppResolver }
 },
 
+{ path: `${environment.locationName}/allendale`,
+component: LocationComponent,
+children: [
+  {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+  { path: 'storage-units', component: ViewRatesComponent },
+  { path: 'unit-sizer', component: UnitSizerComponent },
+  { path: 'reserve-unit', component: ReserveComponent,
+    children: [
+      { path: '', component: ReserveUnitFormComponent },
+      { path: 'reserve', component: ReserveUnitFormComponent },
+      // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+    ]
+  },
+  { path: 'move-in', component: ReserveComponent,
+    children: [
+      { path: '', component: ReserveUnitFormComponent },
+      { path: 'move-in', component: ReserveUnitFormComponent },
+      // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+    ]
+  },
+  // { path: 'photos', component: PhotosComponent },
+  { path: 'about', component: AboutUsComponent },
+  { path: 'directions', component: DirectionsComponent },
+],
+resolve: { data: AppResolver }
+},
+
 
 
 
@@ -900,6 +936,41 @@ children: [
 ],
 resolve: { data: AppResolver }
 },
+{ path: `${environment.locationName}/allendale/view-rates`,
+component: LocationComponent,
+children: [
+  {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
+  { path: 'storage-units', component: ViewRatesComponent },
+  { path: 'unit-sizer', component: UnitSizerComponent },
+  { path: 'reserve-unit', component: ReserveComponent,
+    children: [
+      { path: '', component: ReserveUnitFormComponent },
+      { path: 'reserve', component: ReserveUnitFormComponent },
+      // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+    ]
+  },
+  { path: 'move-in', component: ReserveComponent,
+    children: [
+      { path: '', component: ReserveUnitFormComponent },
+      { path: 'move-in', component: ReserveUnitFormComponent },
+      // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [ThankYouGuard] }
+
+    ]
+  },
+  // { path: 'photos', component: PhotosComponent },
+  { path: 'about', component: AboutUsComponent },
+  { path: 'directions', component: DirectionsComponent },
+],
+resolve: { data: AppResolver }
+},
 
     { path: 'review/evanston-ave', component: HomeComponent,
     resolve: {
@@ -1019,6 +1090,10 @@ resolve: { data: AppResolver }
     path: 'pay-rent/otsego', component: PayRentComponent,
     children: childroute
   },
+  {
+    path: 'pay-rent/allendale', component: PayRentComponent,
+    children: childroute
+  },
 
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
@@ -1033,6 +1108,7 @@ resolve: { data: AppResolver }
   { path: 'contact-dutton', component: ContactUsComponent},
   { path: 'contact-m45', component: ContactUsComponent},
   { path: 'contact-otsego', component: ContactUsComponent},
+  { path: 'contact-allendale', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
 ];

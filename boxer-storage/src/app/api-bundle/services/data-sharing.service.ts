@@ -17,6 +17,7 @@ export class DataSharingService {
     loc9: 'dzJ0N1c2SjcqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 27672 dutton
     loc10: 'dzJ0OVcwSjgqMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 29081 m-45
     loc11: 'dzJ0OVc0SjQqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 29443 ostego
+    loc12: 'dzJ0OVc0SjgqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 29443 ostego
     // loc1: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',//testing
     // loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',//testing
     // loc3: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28410 ionia
@@ -27,7 +28,7 @@ export class DataSharingService {
     // loc8: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
     // loc9: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 27672
     // loc10: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-    // loc11: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+    // loc12: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
 
     
   };

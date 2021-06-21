@@ -5,8 +5,8 @@ import { tabs } from '../../data/tab';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
 import { Meta } from '@angular/platform-browser';
-import { ogPayRentPage, ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3,ogPayRentPageLocation4,ogPayRentPageLocation5,ogPayRentPageLocation6,ogPayRentPageLocation7,ogPayRentPageLocation8,ogPayRentPageLocation9,ogPayRentPageLocation10,ogPayRentPageLocation11,
-   twitterPayRentPage, twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4,twitterPayRentPageLocation5,twitterPayRentPageLocation6,twitterPayRentPageLocation7,twitterPayRentPageLocation8,twitterPayRentPageLocation9,twitterPayRentPageLocation10,twitterPayRentPageLocation11  } from '../../data/script';
+import { ogPayRentPage, ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3,ogPayRentPageLocation4,ogPayRentPageLocation5,ogPayRentPageLocation6,ogPayRentPageLocation7,ogPayRentPageLocation8,ogPayRentPageLocation9,ogPayRentPageLocation10,ogPayRentPageLocation11,ogPayRentPageLocation12,
+   twitterPayRentPage, twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4,twitterPayRentPageLocation5,twitterPayRentPageLocation6,twitterPayRentPageLocation7,twitterPayRentPageLocation8,twitterPayRentPageLocation9,twitterPayRentPageLocation10,twitterPayRentPageLocation11,twitterPayRentPageLocation12  } from '../../data/script';
 @Component({
   selector: 'app-pay-rent',
   templateUrl: './pay-rent.component.html',
@@ -75,6 +75,9 @@ export class PayRentComponent implements OnInit {
   else if (this.router.url.includes('otsego')) {
     this.name = ' Otsego Location';
   } 
+  else if (this.router.url.includes('allendale')) {
+    this.name = ' Allendale Location';
+  } 
   // else if (this.router.url.includes('robertsdale')) {
   //   this.name = 'Robertsdale Location';
   // }
@@ -121,6 +124,9 @@ export class PayRentComponent implements OnInit {
     else if (this.router.url.includes('otsego')) {
       this.og = ogPayRentPageLocation11;
     } 
+    else if (this.router.url.includes('allendale')) {
+      this.og = ogPayRentPageLocation12;
+    } 
 }
 
 public fetchTwitter() {
@@ -153,6 +159,9 @@ public fetchTwitter() {
   } 
   else if (this.router.url.includes('otsego')) {
     this.twitter = twitterPayRentPageLocation11;
+  } 
+  else if (this.router.url.includes('allendale')) {
+    this.twitter = twitterPayRentPageLocation12;
   } 
 }
 

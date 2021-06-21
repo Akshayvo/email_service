@@ -6,7 +6,7 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
           hoursLocation5, contactsLocation5,
-          hoursLocation6, hoursLocation7,hoursLocation8,hoursLocation9,hoursLocation10,hoursLocation11, contactsLocation6, contactsLocation7, contactsLocation8 ,contactsLocation9,contactsLocation10,contactsLocation11 } from '../data/contact';
+          hoursLocation6, hoursLocation7,hoursLocation8,hoursLocation9,hoursLocation10,hoursLocation11,hoursLocation12, contactsLocation6, contactsLocation7, contactsLocation8 ,contactsLocation9,contactsLocation10,contactsLocation11,contactsLocation12 } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -153,6 +153,9 @@ public fetchMetaData() {
     else if ( this.locationId === '11' || this.locationId === 11 ) {
       this.fetchContactDetailsLocation11();
     }
+    else if ( this.locationId === '12' || this.locationId === 12 ) {
+      this.fetchContactDetailsLocation12();
+    }
   }
 
   public fetchTableData() {
@@ -227,6 +230,11 @@ public fetchMetaData() {
     this.heading = `Boxer Storage - Otsego Location`;
     this.contactDetails = contactsLocation11;
     this.hoursDetails = hoursLocation11;
+  }
+  public fetchContactDetailsLocation12() {
+    this.heading = `Boxer Storage - Allendale Location`;
+    this.contactDetails = contactsLocation12;
+    this.hoursDetails = hoursLocation12;
   }
 
 onSubmit() {

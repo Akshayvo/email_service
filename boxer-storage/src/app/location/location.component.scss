@@ -226,7 +226,21 @@
 }
 
 .img-box-11-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-otsego-169.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-otsego-169.webp");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+}
+
+.img-box-12-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-allendale-169.jpg");
+  background-size: cover;
+  height: 390px;
+  background-position: center right;
+}
+
+.img-box-12-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-allendale-169.webp");
   background-size: cover;
   height: 390px;
   background-position: center right;

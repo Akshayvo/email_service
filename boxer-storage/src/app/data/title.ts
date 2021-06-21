@@ -34,6 +34,9 @@ export const location10PageContent = `Review our current availability and rates,
 export const location11PageTitle = `Otsego | Boxer Storage`;
 export const location11PageContent = `Review our current availability and rates, then reserve your unit or rent online! Have questions? Give our office a call to learn more!`;
 
+export const location12PageTitle = `Allendale | Boxer Storage`;
+export const location12PageContent = `Check out our current availability and unit prices, then reserve your unit or rent online! Have questions? Give us a call and learn more!`;
+
 export const viewRatesPageTitle = ``;
 export const viewRatesPageContent = ``;
 
@@ -97,6 +100,9 @@ export const location10PayrentPageContent = `Follow the simple instructions on t
 export const location11PayrentPageTitle = `Pay Rent | Boxer Storage`;
 export const location11PayrentPageContent = `Follow the simple instructions on this page, and you'll have 24 hour access to your account for online payments.`;
 
+export const location12PayrentPageTitle = `Pay Rent | Boxer Storage`;
+export const location12PayrentPageContent = `Follow the simple instructions on this page, and you'll have 24 hour access to your account for online payments.`;
+
 
 
 export const location1ContactPageTitle = `Contact Us | Boxer Storage`;
@@ -132,3 +138,5 @@ export const location10ContactPageContent = `Fill our the form or use our contac
 export const location11ContactPageTitle = `Contact Us | Boxer Storage`;
 export const location11ContactPageContent = `Fill our the form or use our contact form to reach out to our friendly and knowledgable staff.`;
 
+export const location12ContactPageTitle = `Contact Us | Boxer Storage`;
+export const location12ContactPageContent = `Fill our the form or use our contact form to reach out to our friendly and knowledgable staff.`;

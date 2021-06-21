@@ -5,11 +5,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6,contactsLocation7,contactsLocation8,contactsLocation9,contactsLocation10,contactsLocation11 } from '../../data/contact';
+import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6,contactsLocation7,contactsLocation8,contactsLocation9,contactsLocation10,contactsLocation11,contactsLocation12 } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
 import { ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3,ogPayRentPageLocation4,ogPayRentPageLocation5,ogPayRentPageLocation6,ogPayRentPageLocation7,ogPayRentPageLocation8,
-  ogPayRentPageLocation9,ogPayRentPageLocation10,ogPayRentPageLocation11,
-   twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4,twitterPayRentPageLocation5,twitterPayRentPageLocation6,twitterPayRentPageLocation7,twitterPayRentPageLocation8,twitterPayRentPageLocation9,twitterPayRentPageLocation10,twitterPayRentPageLocation11  } from '../../data/script';
+  ogPayRentPageLocation9,ogPayRentPageLocation10,ogPayRentPageLocation11,ogPayRentPageLocation12,
+   twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4,twitterPayRentPageLocation5,twitterPayRentPageLocation6,twitterPayRentPageLocation7,twitterPayRentPageLocation8,twitterPayRentPageLocation9,twitterPayRentPageLocation10,twitterPayRentPageLocation11,twitterPayRentPageLocation12  } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -210,6 +210,13 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc11;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc11);
     }
+    else if (this.router.url.includes('allendale')) {
+      this.id = 12;
+      this.name = 'Boxer Storage - Allendale Location';
+      this.contact = contactsLocation12;
+      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc12;
+      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc12);
+    }
   }
 
   public navigate (location: any) {
@@ -251,6 +258,9 @@ export class LoginComponent implements OnInit, OnDestroy {
     else if (this.router.url.includes('otsego')) {
       this.og = ogPayRentPageLocation11;
     } 
+    else if (this.router.url.includes('allendale')) {
+      this.og = ogPayRentPageLocation12;
+    } 
     // else if (this.router.url.includes('robertsdale')) {
     //   this.og = ogPayRentPageLocation6;
     // }
@@ -286,6 +296,9 @@ public fetchTwitter() {
   } 
   else if (this.router.url.includes('otsego')) {
     this.twitter = twitterPayRentPageLocation11;
+  } 
+  else if (this.router.url.includes('allendale')) {
+    this.twitter = twitterPayRentPageLocation12;
   } 
   // else if (this.router.url.includes('robertsdale')) {
   //   this.twitter = twitterPayRentPageLocation6;

@@ -3,7 +3,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { LocationService } from '../services/location.service';
 import { contactsLocation1,contactsLocation3,contactsLocation2,contactsLocation4,contactsLocation5,contactsLocation6,contactsLocation7,contactsLocation8,
-  contactsLocation9,contactsLocation10,contactsLocation11 } from '../../data/contact';
+  contactsLocation9,contactsLocation10,contactsLocation11,contactsLocation12 } from '../../data/contact';
 import { tableHeader, tableData } from '../../data/pay-rent';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
@@ -157,6 +157,9 @@ export class PaymentComponent implements OnInit {
     }
     else if ( this.locationId === '11' || this.locationId === 11 ) {
       this.contact = contactsLocation11;
+    }
+    else if ( this.locationId === '12' || this.locationId === 12) {
+      this.contact = contactsLocation12;
     }
   }
 }

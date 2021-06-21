@@ -188,8 +188,13 @@ else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {
   }
   else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
     this.locationId = 11;
-    this.locationReserve = "location1reserve";
+    this.locationReserve = "location11reserve";
     this.locationMovein = "location11movein";
+  }
+  else if (this.router.url.includes(`${environment.locationName}/allendale`)) {
+    this.locationId = 12;
+    this.locationReserve = "location12reserve";
+    this.locationMovein = "location12movein";
   }
   }
 
