@@ -34,7 +34,7 @@ export class DataSharingService {
   };
 
 
-
+  paymentSuccess: boolean;
   locationName: string;
   strConfirmation: string;
   strAccessCode: string;
@@ -57,6 +57,7 @@ export class DataSharingService {
   eventName: string;
   paymentTab: string;
   showAltDetails: boolean;
+  amountToPayThankYou: number;
 
   apiKey = '';
 

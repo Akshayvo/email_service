@@ -1,11 +1,11 @@
-
 import { Component, OnInit , OnDestroy } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { DataSharingService } from '../services/data-sharing.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { SignOutService } from '../services/sign-out.service';
-
+import { thankYouPageContent, thankYouPageTitle } from '../../data/title';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-thank-you',
@@ -26,10 +26,14 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   monthlyRate: number;
   PaymentAmount: number;
   CCApprovalCode: string;
+  amountToPayThankYou: number;
   eventName: string;
   paymentNavigationUrl: string;
-  locationName: string;
-
+  thankYouPageTitle: string;
+  thankYouPageContent: string;
+  facilityName: string;
+  unitTypeid: any;
+  paymentSuccess = false;
   MoveIn = {
     dteMoveIn: '',
     intUnitTypeID: 0,
@@ -46,15 +50,16 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     public router: Router,
     private signOutService: SignOutService,
   ) {
+    this.facilityName = environment.facilityName;
+    this.fetchMetaData();
     this.meta.addTag({
       name: 'description',
-      content: `We've received your reservation! One of our friendly staff will be in touch!`
+      content: `${this.thankYouPageContent}`
     });
-    this.titleService.setTitle('Thank You For Reserving Your Unit at Boxer Storage!');
+    this.titleService.setTitle(`${this.thankYouPageTitle}`);
   }
 
   ngOnInit() {
-    console.log(this.dataSharingService.LstUnitTypes);
     this.strConfirmation = this.dataSharingService.strConfirmation;
     this.strAccessCode = this.dataSharingService.strAccessCode;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
@@ -63,9 +68,12 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
     this.PaymentAmount = this.dataSharingService.PaymentAmount;
     this.CCApprovalCode = this.dataSharingService.CCApprovalCode;
+    this.amountToPayThankYou = this.dataSharingService.amountToPayThankYou
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
-    this.locationName =  this.dataSharingService.locationName;
     this.eventName = this.dataSharingService.eventName;
+    this.paymentSuccess = this.dataSharingService.paymentSuccess;
+    this.unitTypeid = this.dataSharingService.LstUnitTypes.UnitTypeID;
+
 
     if (localStorage.getItem('strTenantToken')) {
       this.tokenExit = localStorage.getItem('strTenantToken');
@@ -75,18 +83,31 @@ export class ThankYouComponent implements OnInit, OnDestroy {
       this.paymentNavigationUrl = localStorage.getItem('paymentNavigationUrl');
     }
     const today = new Date();
-    window['dataLayer'] = window['dataLayer'] || {};
     window['dataLayer'] = window['dataLayer'] || [];
+    window['dataLayer'].push({ ecommerce: null });  // Clear the previous ecommerce object.
     window['dataLayer'].push({
-      'event': this.eventName,
-      'location' : this.locationName,
-      'confirmationNumber' : this.strConfirmation,
-      'unitType':  this.description,
-      'price': this.monthlyRate && this.monthlyRate || '',
+      'event': 'purchase',
+      'ecommerce': {
+      'transaction_id' : this.strConfirmation,
+      'unit_rate': this.monthlyRate ,
+      'items': [{
+      'item_name':  this.description,
+      'item_id' : this.unitTypeid,
+      'price': this.amountToPayThankYou,
+      'quantity': 1,
       'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
       'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
-    });
+    }]
   }
+    });
+
+  }
+
+  public fetchMetaData() {
+    this.thankYouPageTitle = thankYouPageTitle;
+    this.thankYouPageContent = thankYouPageContent;
+  }
+
 
   public navigate(location: any) {
     this.router.navigate([location]);

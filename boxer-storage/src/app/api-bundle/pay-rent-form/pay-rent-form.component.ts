@@ -59,6 +59,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   surcharge: number;
   unitTypeNotAvailability: boolean;
   showLoader = false;
+  paymentSuccess = false;
 
   marked = false;
   signUp = {};
@@ -527,7 +528,7 @@ public navigateToPrevious() {
     this.surchargeService.getSurCharge()
       .subscribe(result => {
         this.amountToPay = result.decTotalAmount;
-
+        this.dataSharingService.amountToPayThankYou = this.amountToPay;
         if (this.router.url.includes('payReservationCharges')) {
           this.surcharge = result.decTotalAmount - this.TotalReserveAmount;
         } else {
@@ -583,7 +584,7 @@ public navigateToPrevious() {
               this.moveIn(this.MoveIn);
             } else {
               this.showloaderForPayment = false;
-
+              this.dataSharingService.paymentSuccess = true;
               if (!!localStorage.getItem('paymentTab')) {
                 this.router.navigate([`pay-rent/${this.loginUrl}/${localStorage.getItem('paymentTab')}/thank-you`]);
               } else {
