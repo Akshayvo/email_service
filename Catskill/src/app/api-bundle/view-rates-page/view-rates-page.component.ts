@@ -47,6 +47,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   th: any;
   tenant: any;
   text = false;
+  hideLoader = false;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -117,8 +118,15 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   getData() {
   this.getDataSubscribe$ = this.fetchDataService.getData( )
     .subscribe(unitTypesResponse => {
-      this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+
+      if (unitTypesResponse.intErrorCode === 1 ) {
+        this.hideLoader  = true;
+        if (unitTypesResponse.lstUnitTypes.length > 0 ) {
+          this.showTable =  true;
+          this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+        }
+      }
+
     });
   }
 
