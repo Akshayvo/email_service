@@ -14,7 +14,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr *ngFor="let tableData of tableData">
+                <tr *ngFor="let tableData of tableData | orderBy:'facility'">
                   <td class="table-data">
                     {{tableData.facility}}
                   </td>
