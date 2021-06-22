@@ -2,12 +2,7 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `If you don’t know what will fit inside of a given unit type, check out our Unit Sizer
-      page, or give our office a call! We’ll be glad to help you pick out the best unit for your
-      home, business, or college storage needs. Once you figure out what unit will suit you,
-      review our current availability, then fill our your reservation form online, or call one
-      of our friendly managers. We can’t wait to make your next self storage project an easy
-      and affordable one!`,
+      p: `If you don’t know what will fit inside of a given unit type, give our office a call! We’ll be glad to help you pick out the best unit for your home, business, or college storage needs. Once you figure out what unit will suit you, review our current availability, then fill out your reservation form online, or call one of our friendly managers. We can’t wait to make your next self storage project an easy and affordable one!`,
     },
     
 ];
@@ -39,10 +34,10 @@ export const th = [
     data: `Move In`,
     state: objSIMSetting.objActionSetting.blnAllowMoveIn
   },
-  // {
-  //   data: `Climate Control`,
-  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
-  // },
+  {
+    data: `Climate Control`,
+    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  },
 ];
 
 export const th1 = [

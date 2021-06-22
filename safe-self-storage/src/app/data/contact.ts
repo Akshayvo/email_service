@@ -26,6 +26,13 @@ export const contact = [
         data: '(585) 381-SAFE',
         class: 'fas fa-phone mx-2 iconColor',
         redirect: 'tel:5853817233',
+    },
+    {
+        id: 4,
+        label: 'Phone:',
+        data: '(585) 381-7233',
+        class: 'fas fa-phone mx-2 iconColor',
+        redirect: 'tel:5853817233',
     }
 ];
 
