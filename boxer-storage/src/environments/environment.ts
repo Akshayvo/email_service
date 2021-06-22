@@ -13,7 +13,7 @@ export const environment = {
   errorsMails: ['balasubramanian.k@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Boxer Storage - Testing',
+  appId: 'Boxer Storage - Production',
   facilityName: 'Boxer Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,

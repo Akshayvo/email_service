@@ -8,7 +8,7 @@ export const environment = {
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
-  appId: 'Boxer Storage - Staging',
+  appId: 'Boxer Storage - Production ',
   facilityName: 'Boxer Storage',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   VERSION: require('../../package.json').version,
