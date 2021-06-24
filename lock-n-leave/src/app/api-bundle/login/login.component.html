@@ -1,8 +1,8 @@
 
 <div class="row">
     <div class="col-md-7">
-        <h1 class='text-center'>COMING SOON</h1>
-        <!-- <div>
+        <!-- <h1 class='text-center'>COMING SOON</h1> -->
+        <div>
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
                     <div [hidden]="" *ngIf="submitted && credentialsInvalid" class="button-display alert alert-success alert-danger fade show">
@@ -48,17 +48,17 @@
             <a (click)="navigate('forgotPassword')">Forgot Password</a>
         </div>
         <div class="forgot-link">
-            <a (click)="openBox()" >Change Your Password</a> -->
+            <a (click)="openBox()" >Change Your Password</a>
             <!-- <a  data-toggle="modal" data-target="#myModal">Change Your Password</a> -->
     
             <!-- Modal -->
             <!-- <div id="myModal" class="modal fade" role="dialog">
                 <div class="modal-dialog"> -->
                     <!-- Modal content-->
-                    <!-- <app-login-modal *ngIf="!!open" (closeLoginPrompt)="openBox()"></app-login-modal> -->
+                    <app-login-modal *ngIf="!!open" (closeLoginPrompt)="openBox()"></app-login-modal>
                 <!-- </div>
             </div> -->      
-        <!-- </div> -->
+        </div>
     </div>    
 
 

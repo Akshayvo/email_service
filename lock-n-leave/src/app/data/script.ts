@@ -25,9 +25,9 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lock_N_leave/jpg/lock-n-leave-11.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lock_N_leave/jpg/lock-n-leave-43.jpg", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lock_N_leave/jpg/lock-n-leave-169.jpg" // 16:9
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lock_N_leave/jpg/lock-n-leave-storage-11.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lock_N_leave/jpg/lock-n-leave-storage-43.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lock_N_leave/jpg/lock-n-leave-storage-169.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
      map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",

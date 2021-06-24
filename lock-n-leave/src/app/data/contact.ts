@@ -7,13 +7,6 @@ export const contact = [
         redirect: 'https://goo.gl/maps/mymZM7ugdR2qKbP86'
     },
     {
-        id: 0,
-        label: 'Office Address:',
-        data: '1136 Ballyhack Rd, Port Crane, NY 13833',
-        class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/fwzYauyiwq4kTu9v9'
-    },
-    {
         id: 1,
         label: 'Email:',
         data: 'locknleavestorageco@gmail.com',
@@ -23,9 +16,9 @@ export const contact = [
     {
         id: 2,
         label: 'Phone:',
-        data: '(607) 725-0523',
+        data: '(607) 242-2600',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:6077250523',
+        redirect: 'tel:6072422600',
     }
 ];
 

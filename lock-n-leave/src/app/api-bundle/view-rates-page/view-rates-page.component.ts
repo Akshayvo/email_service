@@ -70,7 +70,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
-    // this.getData();
+    this.getData();
     this.fetchThData();    
     this.state = script.state;
   }
