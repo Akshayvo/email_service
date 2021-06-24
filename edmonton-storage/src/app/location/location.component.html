@@ -13,6 +13,9 @@
             </div>
           </div>
         </div>
+        <div  class="container px-0 pt-2 mt-3">
+          <app-tabs [tabs]='tabs' [name]='name' class="sub-component-background" [currentActiveTab]='currentTab' ></app-tabs>
+      </div>
         <div class="contact-img">
             <span *ngIf="locationId == 1" title="Aerial Photograph of self storage units surrounded by a fence."> 
               <div class="img-box-1" [ngClass]="imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'">
@@ -93,9 +96,7 @@
       </div>
     </div>
   </div>
-  <div  class="container px-0 pt-2 mt-3">
-      <app-tabs [tabs]='tabs' [name]='name' class="sub-component-background" [currentActiveTab]='currentTab' ></app-tabs>
-  </div>
+  
 </section>
 
 <!-- Data preloading Starts-->

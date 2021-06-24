@@ -238,7 +238,7 @@ export const contactPageLocation1Script = {
       'telephone':  contactsLocation1[contactIndex1].data,
       'contactType': 'customer service'
     }],
-    'email': contactsLocation1[emailIndex1].data,
+    // 'email': contactsLocation1[emailIndex1].data,
     'sameAs': [
       '',
       '',

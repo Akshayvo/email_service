@@ -55,7 +55,7 @@ export const contactsLocation1 = [
         label: 'Phone: ',
         data: '(780) 732-5000',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:7807325000'
     },
 ];
 
@@ -116,7 +116,7 @@ export const contactsLocation2 = [
         label: 'Phone: ',
         data: '(780) 452-2508',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2519703168'
+        redirect: 'tel:7804522508'
     },
 ];
 
@@ -141,5 +141,18 @@ export const hoursLocation2AcessHours = [
         data: '6:30 am - 10:15 pm, 7 days a week'
     },
 ];
+
+export const location1 = [
+    {
+        facility: 'Gaurdian Storage: ',
+        data: '(780) 732-5000',
+        redirect: 'tel:7807325000'
+    },
+    {
+        facility: 'Access Mini Storage: ',
+        data: '(780) 452-2508',
+        redirect: 'tel:7804522508'
+    },
+]
 
 

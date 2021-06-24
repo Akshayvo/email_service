@@ -1,70 +1,71 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: '2 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
-    },
-    {
-        label: 'Affordable Self Storage Rates',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
-        alt: 'Icon of a hand holding money'
-    },
-    {
         label: 'Well-Lit Facility',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
         alt: 'Icon of an illuminated light'
     },
     {
-        label: 'Stellar Customer Service',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Customer Service Representative Icon'
+        label: 'Security Cameras on Premises',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
+        alt: 'Icon of a security camera'
+    },
+    {
+        label: 'Fully-Fenced Facility',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/fence.svg',
+        alt: 'Icon of a section of fencing'
+    },
+    {
+        label: 'Affordable Self Storage Rates',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        alt: 'Icon of a hand holding money'
     },
 ];
 
 export const location1FeaturesHead = [
     {
-        label: '2 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
+        label: 'Well-Lit Facility',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+        alt: 'Icon of an illuminated light'
     },
     {
-        label: 'Stellar Customer Service',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Customer Service Representative Icon'
+        label: 'Security Cameras on Premises',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
+        alt: 'Icon of a security camera'
+    },
+    {
+        label: 'Fully-Fenced Facility',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/fence.svg',
+        alt: 'Icon of a section of fencing'
     },
     {
         label: 'Affordable Self Storage Rates',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
         alt: 'Icon of a hand holding money'
-    },
-    {
-        label: 'Well-Lit Facility',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
-        alt: 'Icon of an illuminated light'
     },
 ];
 export const location2FeaturesHead = [
     {
-        label: '2 Convenient Locations',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
-        alt: 'Icon art displaying a location pin'
+        label: 'Well-Lit Facility',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
+        alt: 'Icon of an illuminated light'
     },
     {
-        label: 'Stellar Customer Service',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Customer Service Representative Icon'
+        label: 'Security Cameras on Premises',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
+        alt: 'Icon of a security camera'
+    },
+    {
+        label: 'Fully-Fenced Facility',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/fence.svg',
+        alt: 'Icon of a section of fencing'
     },
     {
         label: 'Affordable Self Storage Rates',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
         alt: 'Icon of a hand holding money'
     },
-    {
-        label: 'Well-Lit Facility',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg',
-        alt: 'Icon of an illuminated light'
-    },
+    
 ];
 
 
@@ -103,7 +104,7 @@ export const featuresList = [
 
 export const jumbotron = [
     {
-        h2: ``,
-        blurb: ``,
+        h2: `Affordable Self Storage in West Edmonton`,
+        blurb: `Locally owned and operated providing hight-quality, well-maintained self storage service since 2005!`,
     }
 ];

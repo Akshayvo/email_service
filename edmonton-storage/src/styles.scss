@@ -6,7 +6,7 @@ html, body { height: 100%; }
 $primary:#005194;
 $primaryDark:#042a49;
 $primaryLight:#4aa2eb;
-$secondary:#f0bd21;
+$secondary:#F0BD21;
 $dark: #4e4848;
 $light: #f1f0ed;
 $white: #fff;
@@ -39,6 +39,10 @@ $primaryFont: "Lato", sans-serif;
 
 .bg-translucent-light {
   background: rgba(255, 255, 255, 0.9);
+}
+
+.bg-translucent-primary {
+  background: rgba(0, 81, 148, 0.8);
 }
 
 // Content Holder Styles

@@ -1,7 +1,7 @@
 export const tabs1 = [
     {
         id: '1',
-        name: 'Storage Units',
+        name: 'View Rates',
         path: './storage-units',
         active: true,
     },
@@ -34,7 +34,7 @@ export const tabs1 = [
 export const tabs = [
     {
         id: '1',
-        name: 'Storage Units',
+        name: 'View Rates',
         path: './storage-units',
         active: true,
     },
@@ -67,7 +67,7 @@ export const tabs = [
 export const tabs2 = [
     {
         id: '1',
-        name: 'Storage Units',
+        name: 'View Rates',
         path: './storage-units',
         active: true,
     },
@@ -99,7 +99,7 @@ export const tabs2 = [
 export const tabs3 = [
     {
         id: '1',
-        name: 'Storage Units',
+        name: 'View Rates',
         path: './storage-units',
         active: true,
     },

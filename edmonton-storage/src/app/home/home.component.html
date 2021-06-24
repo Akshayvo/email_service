@@ -5,20 +5,22 @@
 <!-- <div class="jumbotron-container"> -->
 <div class="jumbotron-home">
   <div class="jumbotron-top jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
-      <div class=" jumbotorn-skew-style" *ngIf="template !== 'withoutJumbotron'" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      <div class=" jumbotorn-skew-style" *ngIf="template !== 'withoutJumbotron'" [ngClass]="template === 'darkTheme' ? 'bg-translucent-primary' : 'bg-translucent-light'">
       </div>
       <div class="container">
-        <div class="jumbotorn-skew-text">
-          <div class="disp" *ngFor="let jumbotron of jumbotron">
+        
+        <div class="jumbotorn-skew-text ">
+          <div class="jumbotorn-button">
+            <a class="btn btn-lg btn-primary" (click)="navigateToStorageUnits1()" role="button"><strong>Check units at Gaurdian Storage</strong></a>
+            <a class="btn btn-lg btn-primary" (click)="navigateToStorageUnits2()" role="button"><strong>Check units at Access Mini Storage</strong></a>
+          </div>
+          <div class="disp text-center" *ngFor="let jumbotron of jumbotron">
             <h2  class="my-4">
               {{jumbotron.h2}}
             </h2>
-          <p class="text-justify">{{jumbotron.blurb}}</p>
+          <p class="text-justify text-center">{{jumbotron.blurb}}</p>
           </div>
-          <!-- <div class="jumbotorn-button">
-            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
-            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
-          </div> -->
+          
           </div>
         </div>
       </div>

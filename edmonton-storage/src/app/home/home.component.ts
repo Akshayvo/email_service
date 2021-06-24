@@ -10,6 +10,7 @@ import { LocationService } from '../services/location.service';
 import { homePageTitle, homePageContent } from '../data/title';
 import { environment } from '../../environments/environment';
 import { UaParserService } from '../services/ua-parser.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -45,6 +46,7 @@ export class HomeComponent implements OnInit {
     private data: LocationService,
     private canonical: CanonicalService,
     private uaParserService: UaParserService,
+    private router: Router,
   ) {
     this.fetchScript();
     this.loadScript();
@@ -172,7 +174,16 @@ export class HomeComponent implements OnInit {
     }
 
     
-
+    public navigateToStorageUnits1() {
+      this.router.navigate([`${environment.locationName}/guardian/storage-units`],
+            );
+          }
+      
+      
+  public navigateToStorageUnits2() {
+    this.router.navigate([`${environment.locationName}/access-mini/storage-units`],
+  );
+        }
 
 
     public fetchFeatureHead() {

@@ -30,12 +30,32 @@
   }
 }
 
+.jumbotorn-button{
+display: block;
+
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: $secondary !important;
+  border-color: $secondary !important;
+  color: $primary !important;
+}
+
+.btn-primary{
+  background-color: white !important;
+  border-color: $primaryDark !important;
+  color: $primary !important;
+  border-radius: 20px;
+  width: 300px;
+}
 .jumbotorn-skew-style {
-  width: 75%;
+  width: 63%;
   float: left;
   left: -25%;
   position: relative;
-  transform: skew(15deg);
+  transform: skew(25deg);
   height: 100%;
 
   a {
@@ -47,9 +67,10 @@
   transform: skew(0deg);
   width: 500px;
   position: absolute;
-  top: 30%;
-  color: $white;
-
+  top: 22%;
+  left: 12%;
+  color: $secondary;
+  font-size: 1.5rem;
   .btn-outline-primary {
     margin-right: 10px;
   }
@@ -243,7 +264,7 @@
 
 @media only screen and (min-width: 1200px) {
   .jumbotorn-skew-text {
-    width: 500px;
+    width: 300px;
   }
 }
 

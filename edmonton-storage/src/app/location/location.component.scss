@@ -5,6 +5,10 @@
   padding-top: 94px;
 }
 
+.container{
+  max-width: 1200px !important;
+}
+
 .button-col {
  padding-right: 0; 
 }
@@ -23,6 +27,15 @@
     color: $dark;
     font-weight: 600;
     font-size: 1.2rem;
+  }
+}
+
+.partition-border {
+  border-left: 2px solid $border;
+  padding-left: 3%;
+
+  h3 {
+      font-size: 1.2rem;
   }
 }
 

@@ -8,6 +8,9 @@
   width: 100%;
 }
 
+
+
+
 a {
   cursor: pointer;
   color: $white;
@@ -20,11 +23,14 @@ a {
   display: inline;
 
   .contact-details {
-    color: $white !important;
-    font-size: 0.82em;
+    color: $primary !important;
+    font-size: 0.9em;
     font-weight: 500;
     width: 100%;
+    
   }
+
+  
 }
 
 .social {
@@ -55,8 +61,8 @@ a {
   }
 
   .nav-link-active {
-    border-bottom: 5px $white solid;
-    color: $white !important;
+    border-bottom: 5px $secondary solid;
+    color: $secondary !important;
   }
 
   .location-active {
