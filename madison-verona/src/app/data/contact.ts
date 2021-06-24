@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '4201 Maple Grove, Dr Madison, WI 53719',
+        data: '4201 Maple Grove Dr, Madison, WI 53719',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: 'https://www.google.com/maps/place/4201+Maple+Grove+Dr,+Madison,+WI+53719/@43.001091,-89.499778,15z/data=!4m5!3m4!1s0x8807b1c703769555:0x2a11d7be82c97650!8m2!3d43.0010905!4d-89.499778?hl=en'
     },
