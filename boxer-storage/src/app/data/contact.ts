@@ -703,7 +703,7 @@ export const contactsLocation12 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '11475 48th Ave #200, Allendale, MI 49401',
+        data: '11475 48th Ave Allendale, MI 49401',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://www.google.com/maps/place/11475+48th+Ave+%23200,+Allendale,+MI+49401,+USA/@42.9781377,-85.9055752,17z/data=!4m2!3m1!1s0x8819a2f3d374a543:0x3010334547a462f6'
     },
@@ -718,7 +718,7 @@ export const contactsLocation12 = [
     {
         id: 2,
         label: 'Mailing Address: ',
-        data: ' 11475 48th Ave #200, Allendale, MI 49401',
+        data: '11475 48th Ave Allendale, MI 49401',
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'https://www.google.com/maps/place/11475+48th+Ave+%23200,+Allendale,+MI+49401,+USA/@42.9781377,-85.9055752,17z/data=!4m2!3m1!1s0x8819a2f3d374a543:0x3010334547a462f6'
     },
