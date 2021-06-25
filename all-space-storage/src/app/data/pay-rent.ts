@@ -76,6 +76,11 @@ export const loginDetail = [
           code: 'Gate Codeode is 1234 and Phone Number is 555-555-5555',
           userName: 'jsmith',
           password: '12345555'
-      }
+      },
+      example1: {
+        code: 'Gate Code is 1234, Phone Number is 555-555-5555, and the Unit Number is A27',
+        userName: 'jsmitha27',
+        password: '12345555'
+    }
   }
 ];
