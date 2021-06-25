@@ -266,6 +266,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
 
   public fetchCards() {
     this.cards = environment.cards;
+    console.log(this.cards)
   }
 
   public navigate(location: any) {
