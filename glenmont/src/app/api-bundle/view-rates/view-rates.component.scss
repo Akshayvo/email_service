@@ -60,9 +60,7 @@ table {
   margin: auto;
 }
 
-.view-rate{
-  margin-right: 550px !important;
-}
+
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -85,7 +83,7 @@ table {
 }
 
 .background-padding {
-  width: 1500px;
+  width: 1140;
   padding: 64px;
   
 }
@@ -106,6 +104,9 @@ table {
     padding: 16px 0;
   }
 
+  .view-rate{
+    padding-top: 50px;
+  }
 
   img {
     width: 100%;

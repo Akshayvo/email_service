@@ -8,7 +8,7 @@
   border-color: #00b050 ;
   border-style: solid;
   border-width: thick;
-  h3,h4{
+  h3,h4,h5{
   font-family: Arial, "Rounded MT", Bold;
   }
   
@@ -215,6 +215,14 @@ p {
   .viewrates-mobile {
     display: none;
   }
+
+  
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  h3,h4,h5{
+    font-size: .9rem;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -226,7 +234,9 @@ p {
   //   min-width: unset;
   //   font-size: 0.7rem;
   // }
-
+  h3,h4,h5{
+    font-size: .9rem;
+    }
   .btn-outline-primary {
     min-width: 127px;
     font-size: 0.7rem;
