@@ -281,8 +281,7 @@
                 matInput
                 [matDatepicker]="driversLicenseExpDate"
                 formControlName="DriversLicenseExpDate"
-                [min]="from"
-                [max]="to"
+                [min]="currentDate"
                 readonly
                 (click)="driversLicenseExpDate.open()"
               />
@@ -318,7 +317,7 @@
               matInput
               [matDatepicker]="dateOfBirth"
               formControlName="DateOfBirth"
-              
+              [max]="currentDate"
               (click)="dateOfBirth.open()"
             />
 
