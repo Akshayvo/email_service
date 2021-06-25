@@ -272,7 +272,7 @@ export const addressLoaction11 = {
 }
 export const addressLoaction12 = {
   '@type': 'PostalAddress',
-  'streetAddress': '11475 48th Ave #200',
+  'streetAddress': '11475 48th Ave',
   'addressLocality': 'Allendale',
   'addressRegion': 'MI',
   'postalCode': '49401',

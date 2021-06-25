@@ -69,7 +69,7 @@ export const tableData = [
   },  
   {
     facility: ' Allendale',
-    address: '11475 48th Ave #200, Allendale, MI 49401',
+    address: '11475 48th Ave, Allendale, MI 49401',
     url: 'allendale/rent-sub/login'
   }, 
 ];
@@ -132,7 +132,7 @@ export const tableDataContactPage = [
   }, 
   {
     facility: ' Allendale',
-    address: '11475 48th Ave #200, Allendale, MI 49401',
+    address: '11475 48th Ave, Allendale, MI 49401',
     url: 'allendale'
   },    
 ];
