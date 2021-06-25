@@ -33,7 +33,22 @@
   from = "https://storage-town.com/pay-rent/andrews/login"
   to = "https://storage-town.com/pay-rent/chester-andrews-lane/login"
   status = 301
-  [[redirects]]
+[[redirects]]
+  from = "https://storage-town.com/middletown-review"
+  to = "http://search.google.com/local/writereview?placeid=ChIJ3Q9xV4rN3IkRiDFuXQjIbD0"
+  status = 301
+[[redirects]]
+  from = "https://storage-town.com/montgomery-review"
+  to = "http://search.google.com/local/writereview?placeid=ChIJF0fu6ofV3IkR6yRjmwhuYZk"
+  status = 301
+[[redirects]]
+  from = "https://storage-town.com/andrews-lane-review"
+  to = "http://search.google.com/local/writereview?placeid=ChIJue_ECicpw4kR4EjL9wQ_6zM"
+  status = 301
+[[redirects]]
+  from = "https://storage-town.com/brookside-avenue-review"
+  to = "http://search.google.com/local/writereview?placeid=ChIJm7SnExspw4kRPUDRDPAzAIc"
+  status = 301
 [[redirects]]
   from = "/*"
   to = "/index.html"
