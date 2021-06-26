@@ -14,6 +14,9 @@ export const th = [
   {
     data: `Rate`
   },
+  {
+    data: `Waiting List`
+  }
   // {
   //   data: `Reserve a Unit`
   // },
