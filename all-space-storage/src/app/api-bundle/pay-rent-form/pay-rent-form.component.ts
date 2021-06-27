@@ -493,12 +493,12 @@ public navigateToPrevious() {
    this.getPayMethodsSubscribe$ = this.fetchDataService.getPayMethods()
       .subscribe(payTypesResponse => {
         this.cards.forEach(element => {
-          if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
+          // if (payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element)) {
             const index = payTypesResponse.lstPayTypes.findIndex(x => x.PayTypeDescription === element);
              if (index > -1) {
                 this.lstPayTypes.push(payTypesResponse.lstPayTypes[index]);
               }
-          }
+          // }
         });
         if ((!!localStorage.getItem('strTenantToken')) && (this.router.url.includes(`${this.loginUrl}`))) {
           this.tenantTokenExist = true;
