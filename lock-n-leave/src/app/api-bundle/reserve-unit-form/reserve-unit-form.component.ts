@@ -206,34 +206,34 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           (() => this.showMilitaryDetails === false),
           Validators.required
         )],
-        MilitaryBranch: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryDivision: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryType: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryID: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        DeployedUntil: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        CommandingOfficer: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        CommandingOfficerPhone: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        ),],
+        // MilitaryBranch: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryDivision: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryType: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryID: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // DeployedUntil: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // CommandingOfficer: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // CommandingOfficerPhone: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // ),],
         AlternateName: ['', conditionalValidator(
           (() => this.showAltDetails === false),
           Validators.required
@@ -322,8 +322,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.description  = this.dataSharingService.getReservationData().Description;
     this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
-    this.fetchMilitaryBranch();
-    this.fetchMilitaryTypes();
+    // this.fetchMilitaryBranch();
+    // this.fetchMilitaryTypes();
     this.getData();
     this.getRentalPeriod();
     if (this.navigateToMoveIn === true ) {
@@ -407,7 +407,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   selectChangeHandler (event: any) {
     const indexValue  = event.target.value;
     const index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
-    if (!!index) {
+    if (index || index === 0) {
       this.monthlyRate = this.lstUnitTypes[index].MonthlyRate;
       this.annualRate = this.lstUnitTypes[index].AnnualRate;
       this.biAnnualRate = this.lstUnitTypes[index].BiAnnualRate;
