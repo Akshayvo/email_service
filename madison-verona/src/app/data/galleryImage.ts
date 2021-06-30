@@ -59,4 +59,19 @@ export const galleryHome = [
     thumb: `madison-verona-self-storage-parked-car`,
     alt: `a vehicle parked inside of a self storage unit with a roll-up door`,
   },
+  {
+    url: `madison-verona-self-storage-23`,
+    thumb: `madison-verona-self-storage-23`,
+    alt: `a row of self storage unit doors under a grey sky`,
+  },
+  {
+    url: `madison-verona-self-storage-24`,
+    thumb: `madison-verona-self-storage-24`,
+    alt: `aerial photograph of a single story self storage facility with multiple metal buildings inside a fence`,
+  },
+  {
+    url: `madison-verona-self-storage-26`,
+    thumb: `madison-verona-self-storage-26`,
+    alt: `an electronic, pin-code activated security gate in the foreground and self storage units in the background`,
+  },
 ];
