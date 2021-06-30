@@ -2,7 +2,7 @@ export const homePageTitle = `24-Hour Access Self Storage Services in Harpursvil
 export const homePageContent = `Lock-N-Leave Self Storage serves Harpursville and the surrounding communities with a variety of brand new and affordable self storage units`;
 
 export const viewRatesPageTitle = `View Rates  | Lock-N-Leave Self Storage`;
-export const viewRatesPageContent = `Check out our affordable self storage unit rates and start the reservation or rental process right here! Have a question? Call (607) 725-0523!`;
+export const viewRatesPageContent = `Check out our affordable self storage unit rates and start the reservation or rental process right here! Have a question? Call (607) 242-2600!`;
 
 export const reservePageTitle = `Reserve a Unit | Lock-N-Leave Self Storage`;
 export const reservePageContent = `Simply fill out our easy reservation form and one of our friendly self storage associates will be ready and waiting for your arrival!`;
