@@ -113,9 +113,9 @@ export class LocationComponent implements OnInit {
     });
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
-      if (this.activatedRoute.snapshot.url[1].path) {
-        this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[2].path;
-      }
+      // if (this.activatedRoute.snapshot.url[1].path) {
+      //   this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[2].path;
+      // }
       if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
             this.meta.addTag({
               name: 'description',

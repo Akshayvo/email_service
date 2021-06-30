@@ -37,8 +37,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.fetchNavigationLinks();
     this.fetchContactDetails();
-    this.router.events.subscribe(path => {
-    });
+    // this.router.events.subscribe(path => {
+    // });
     // window.onscroll = function() {
     //   this.HideContent()
     // };
@@ -129,7 +129,9 @@ export class HeaderComponent implements OnInit {
   }
 
   public onClick(menu: any) {
+    console.log('path', this.router.url);
     menu.classList.remove('show');
+    console.log('working');
   }
 
   // public HideContent() {

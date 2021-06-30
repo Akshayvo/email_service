@@ -76,7 +76,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.getData();
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
-    this.facilityLocation = this.dataSharingService.facilityLocation;
+    // this.facilityLocation = this.dataSharingService.facilityLocation;
   }
 
   public fetchThData() {
@@ -95,7 +95,9 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.dataSharingService.updateMyNavLink('viewRates', 'prev', `${this.router.url}`);
     const myNavLinks = this.dataSharingService.getMyNavLinks('viewRates');
     console.log('TCL: ViewRatesPageComponent -> navigate -> myNavLinks', myNavLinks);
-    this.router.navigate([`${environment.locationName}/${this.facilityLocation}/${location}`]);
+    // this.router.navigate([`${environment.locationName}/${this.facilityLocation}/${location}`]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
+
     this.dataSharingService.LstUnitTypes = unitData;
   }
 

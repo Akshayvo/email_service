@@ -8,7 +8,7 @@ export const navLinks = [
     },
     {
         label: 'Location',
-        type: 'dropdown',
+        type: 'location',
         path: `/location`,
         sublinks: [
             {
@@ -75,7 +75,7 @@ export const navLinks = [
     },
     {
         label: 'View Rates',
-        type: 'dropdown1',
+        type: 'view-rates',
         path: `/view-rates`,
         sublinks: [
             {

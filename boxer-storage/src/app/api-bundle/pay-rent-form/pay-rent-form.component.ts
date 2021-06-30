@@ -222,6 +222,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.navTo = localStorage.getItem('paymentNavigationUrl');
+
     this.fetchCards();
 
     if (!!localStorage.getItem('paymentTab')) {
@@ -234,9 +236,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
        this.loginUrl = localStorage.getItem('paymentNavigationUrl');
     }
 
-    if (this.dataSharingService.facilityLocation) {
-      this.facilityLocation = this.dataSharingService.facilityLocation;
-    }
+    // if (this.dataSharingService.facilityLocation) {
+    //   this.facilityLocation = this.dataSharingService.facilityLocation;
+    // }
     this.tenantData.objTenant = this.dataSharingService.objTenant;
     if (!!localStorage.getItem('strTenantToken')) {
       this.getPayMethods();
@@ -474,7 +476,6 @@ public navigateToPrevious() {
       , (err: any) => {
         if (err.status === 401) {
           localStorage.removeItem('strTenantToken');
-          const navTo = localStorage.getItem('paymentNavigationUrl');
           this.router.navigate([`/pay-rent`]);
           this.sessionExpire = 'Session Expired. Please Login for completing the payment.';
         }
@@ -482,7 +483,8 @@ public navigateToPrevious() {
   }
 
   public navigateToConfirmation(location: any) {
-    this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
+    this.router.navigate([`${environment.locationName}/reserve-unit/${location}`]);
+    // this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${location}`]);
   }
 
   getPayMethods() {
@@ -614,7 +616,11 @@ public navigateToPrevious() {
   signOut(logOut: any) {
    this.signOutSubscribe$ = this.signOutService.signOut(logOut)
       .subscribe(result => {
-        this.router.navigate([`pay-rent`]);
+        if (!!this.paymentTab) {
+          this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/login`]);
+        } else {
+          this.router.navigate([`pay-rent`]);
+        }
         localStorage.removeItem('paymentNavigationUrl');
         if (!!localStorage.getItem('APIKey')) {
           localStorage.removeItem('APIKey');
@@ -663,10 +669,16 @@ public navigateToPrevious() {
       this.reservationInProgress = false;
       this.showloaderForPayment = false;
 
+      // if (!!localStorage.getItem('paymentTab')) {
+      //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+      // } else {
+      //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
+      // }
+
       if (!!localStorage.getItem('paymentTab')) {
-        this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+        this.router.navigate([`${environment.locationName}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
       } else {
-        this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
+        this.router.navigate([`${environment.locationName}/reserve-unit/thank-you`]);
       }
     }
     }, (err: any) => {
@@ -697,11 +709,17 @@ public navigateToPrevious() {
         this.dataSharingService.strAccessCode = strConfirmationResponse.strAccessCode;
         if (strConfirmationResponse.intErrorCode === 1  ) {
           this.makePaymentForUnit = false;
+
           if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
+            this.router.navigate([`${environment.locationName}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
           } else {
-            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/thank-you`]);
+            this.router.navigate([`${environment.locationName}/move-in/thank-you`]);
           }
+          // if (!!localStorage.getItem('paymentTab')) {
+          //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
+          // } else {
+          //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/thank-you`]);
+          // }
           this.showloaderForPayment = false;
 
         } else {
