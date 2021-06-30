@@ -82,15 +82,14 @@ img {
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   .navbar {
-
     a {
       font-size: 12px;
     }
-  
-    .nav-link {
-      // padding: 10px;
-      // font-size: 1rem;
-    }
+
+    // .nav-link {
+    //   // padding: 10px;
+    //   // font-size: 1rem;
+    // }
   }
 }
 
@@ -117,21 +116,13 @@ img {
     height: 200px;
     overflow-y: scroll;
   }
-  
 }
 
 @media only screen and (max-width: 429px) {
-  
-.contact-header {
-  
-  
-  .contact-details {
-    white-space: nowrap;
-    display: block;
-    
+  .contact-header {
+    .contact-details {
+      white-space: nowrap;
+      display: block;
+    }
   }
-}
-
-
-
 }

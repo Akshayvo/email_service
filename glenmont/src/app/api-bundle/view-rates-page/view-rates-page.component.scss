@@ -1,51 +1,51 @@
 @import "../../../styles.scss";
 
-.viewrates{
+.viewrates {
   padding-right: 25px !important;
   padding-left: 25px !important;
   text-align: center;
   background-color: white !important;
-  border-color: #00b050 ;
+  border-color: #00b050;
   border-style: solid;
   border-width: thick;
-  h3,h4,h5{
-  font-family: Arial, "Rounded MT", Bold;
+  h3,
+  h4,
+  h5 {
+    font-family: Arial, "Rounded MT", Bold;
   }
-  
-  .discount{
-    color: #00b050 ;
-  }
-  
-  .btn-outline-primary:hover,.btn-outline-primary:focus,
-  .btn-outline-primary:active {
-    background-color: #E2CD03 !important;
-    border-color: #E2CD03 !important;
 
+  .discount {
+    color: #00b050;
   }
-  
-  .btn-outline-primary{
+
+  .btn-outline-primary:hover,
+  .btn-outline-primary:focus,
+  .btn-outline-primary:active {
+    background-color: #e2cd03 !important;
+    border-color: #e2cd03 !important;
+  }
+
+  .btn-outline-primary {
     background-color: #fce404;
     border-color: #fce404 !important;
-    color: black!important;
-    
+    color: black !important;
   }
 }
 
-.mat-grid-list{
+.mat-grid-list {
   position: inherit !important;
 }
 .display {
   display: none;
 }
 
-
 .viewrates-desktop {
   // background-color: $white;
 
   // h3 {
-    // color: $white;
-    // background-color: $primary;
-    // font-size: 1.75rem;
+  // color: $white;
+  // background-color: $primary;
+  // font-size: 1.75rem;
   // }
 
   .unitDetail:nth-child(odd) {
@@ -147,7 +147,6 @@ table {
 
     tr {
       td {
-
         button {
           font-size: 0.8rem;
           min-width: 120px;
@@ -179,8 +178,12 @@ table {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 // try to use div
@@ -215,14 +218,14 @@ p {
   .viewrates-mobile {
     display: none;
   }
-
-  
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {
-  h3,h4,h5{
-    font-size: .9rem;
-    }
+  h3,
+  h4,
+  h5 {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -234,9 +237,11 @@ p {
   //   min-width: unset;
   //   font-size: 0.7rem;
   // }
-  h3,h4,h5{
-    font-size: .9rem;
-    }
+  h3,
+  h4,
+  h5 {
+    font-size: 0.9rem;
+  }
   .btn-outline-primary {
     min-width: 127px;
     font-size: 0.7rem;
