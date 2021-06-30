@@ -1,8 +1,8 @@
 @import "../../styles.scss";
-.jumbotron-background-webp{
+.jumbotron-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/webp/catskill-self-storage-jumbotron.webp");
 }
-.jumbotron-background-jpg{
+.jumbotron-background-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Catskill_Images/jpg/catskill-self-storage-jumbotron.jpg");
 }
 
@@ -105,7 +105,6 @@ h1 {
     width: 500px;
   }
 }
-
 
 @media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 641px) {
   .feature-icon-style {
@@ -413,7 +412,6 @@ h1 {
     }
   }
 
-
   .feature {
     display: none;
   }
@@ -495,7 +493,7 @@ h1 {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    background-position: center center;
     height: 100vh;
 
     h1 {
@@ -554,7 +552,7 @@ h1 {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    background-position: center center;
     height: 100vh;
   }
 
@@ -591,7 +589,7 @@ h1 {
   .jumbotron {
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    background-position: center center;
     height: 100vh;
   }
 
