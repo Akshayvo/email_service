@@ -23,12 +23,10 @@ export const aboutUsHeading = `Affordable Regular & Climate Controlled Self Stor
 
 export const aboutUs = [
   {
-    p: `SAFE Self-Storage provides high-quality, well-maintained regular and climate controlled self storage space
-        to East Rochester, Penfield, Panorama, Pittsford, and the surrounding communities. Our facility is locally
-        owned and operated, and we pride ourselves on our friendly service and affordable prices. Our facility is
-        conveniently located on West Commercial Street next to the Elite Performance Baseball & Softball Training
-        Center. That gives us easy access to the expressway, right off of Interstate 490. We are also a stone’s
-        throw away from St. John Fisher College!`,
+    p: `SAFE Self-Storage provides high-quality, well-maintained, regular, and climate controlled self storage space to East Rochester, Penfield, Panorama, Pittsford, and the surrounding communities. Our facility is locally owned and operated, and we pride ourselves on our friendly service and affordable prices. Our facility is conveniently located on West Commercial Street. That gives us easy access on and off to the expressway, right off of Interstate 490.`,
+  },
+  {
+    p: `We are also a stone’s throw away from St. John Fisher and Nazareth College. Our location’s easy access to the expressway makes us the ideal solution for local general contractors, landscapers, carpenters, and other local businesses! Are you a student at St. John Fisher or Nazareth College? SAFE Self-Storage is a favorite for local college students in need of short-term storage solutions.`,
   },
   {
     p: `We offer all of the modern amenities to make your stay with SAFE Self-Storage an easy one. Once you
