@@ -1,21 +1,28 @@
-import { WINDOW } from '@ng-toolkit/universal';
-import { Component, OnInit , Inject} from '@angular/core';
-import { Router } from '@angular/router';
-import { Title, Meta } from '@angular/platform-browser';
-import { homePageTitle, homePageContent } from '../data/title';
-import { contact, officeHours } from '../data/contact';
-import { featuresList, featuresHead, aboutUs,
-          gettingStarted, feature, blurbHeading, blurbText, aboutFamily } from '../data/home';
-import { script } from '../data/script';
-import { environment } from '../../environments/environment';
+import { WINDOW } from "@ng-toolkit/universal";
+import { Component, OnInit, Inject } from "@angular/core";
+import { Router } from "@angular/router";
+import { Title, Meta } from "@angular/platform-browser";
+import { homePageTitle, homePageContent } from "../data/title";
+import { contact, officeHours } from "../data/contact";
+import {
+  featuresList,
+  featuresHead,
+  aboutUs,
+  gettingStarted,
+  feature,
+  blurbHeading,
+  blurbText,
+  aboutFamily,
+} from "../data/home";
+import { script } from "../data/script";
+import { environment } from "../../environments/environment";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: "app-home",
+  templateUrl: "./home.component.html",
+  styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
-
   contactDetails: any;
   hours: any;
   featuresHead: any;
@@ -24,7 +31,7 @@ export class HomeComponent implements OnInit {
   serviceOffered: any;
   gettingStarted: any;
   feature: any;
-  currentActive: any = 'HOME';
+  currentActive: any = "HOME";
   blurbHeading: any;
   blurbText: any;
   slideShow: any;
@@ -33,8 +40,8 @@ export class HomeComponent implements OnInit {
   homePageContent: string;
   script: any;
 
-
-  constructor(@Inject(WINDOW) private window: Window,
+  constructor(
+    @Inject(WINDOW) private window: Window,
     private router: Router,
     private titleService: Title,
     private meta: Meta
@@ -43,17 +50,21 @@ export class HomeComponent implements OnInit {
     this.loadScript();
     this.fetchMetaData();
     this.meta.addTag({
-      name: 'description',
-      content: `${this.homePageContent}`
+      name: "description",
+      content: `${this.homePageContent}`,
     });
     this.titleService.setTitle(`${this.homePageTitle}`);
   }
 
   public navigate(location: any) {
-    if ((location === '/view-rates') || (location === '/storage-tips') || (location === '/reserve-unit')) {
+    if (
+      location === "/view-rates" ||
+      location === "/storage-tips" ||
+      location === "/reserve-unit"
+    ) {
       this.router.navigate([`${environment.locationName}/${location}`]);
     } else {
-      this.router.navigate([`${location}`]); 
+      this.router.navigate([`${location}`]);
     }
   }
 
@@ -85,15 +96,14 @@ export class HomeComponent implements OnInit {
   }
 
   public loadScript() {
-    const node = document.createElement('script'); // creates the script tag
-    node.type = 'application/ld+json'; // set the script type
+    const node = document.createElement("script"); // creates the script tag
+    node.type = "application/ld+json"; // set the script type
     node.async = false; // makes script run asynchronously
     // node.charset = 'utf-8';
     node.innerHTML = JSON.stringify(this.script);
     // append to head of document
     // document.getElementsByTagName('head')[0].appendChild(node);
     document.head.appendChild(node);
-
   }
 
   public fetchMetaData() {
@@ -112,8 +122,7 @@ export class HomeComponent implements OnInit {
     this.gettingStarted = gettingStarted;
   }
 
-  public fetchFeature () {
+  public fetchFeature() {
     this.feature = feature;
   }
-
 }
