@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "southern-maine"
+  "defaultProject": "southern-maine",
+  "cli": {
+    "analytics": "fec9dfda-c3fb-4624-aaaa-34a490efbcc2"
+  }
 }
