@@ -101,7 +101,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   myNavLinks: any;
   loginUrl: any;
   cardType: string;
-  facilityLocation: string;
+  // facilityLocation: string;
   cards: any;
   paymentTab: string;
 

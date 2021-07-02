@@ -99,6 +99,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   myNavLinks: any;
   minDay: number;
   maxDay: number;
+  dteStartDate: string;
+
 
 
   MoveInStringParent: string;
@@ -294,7 +296,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     });
   }
 
-  ngOnInit() {    
+  ngOnInit() {  
+    this.dteStartDate =this.convertDate(new Date());
+  
     this.description  = this.dataSharingService.getReservationData().Description;
     this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
@@ -405,7 +409,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
     if (this.navigateToMoveIn) {
       // tslint:disable-next-line:max-line-length
-      this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+      this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID, this.dteStartDate);
     }
   }
 
@@ -414,7 +418,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const index = this.LstInsuranceChoices.findIndex(x => x.CoverageDescription === indexValue);
     this.dataSharingService.insuranceChoiceId = this.LstInsuranceChoices[index].InsuranceChoiceID;
     this.premium = this.LstInsuranceChoices[index].Premium;
-    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID, this.dteStartDate);
   }
 
 
@@ -423,14 +427,15 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const index = this.LstRentalPeriods.findIndex(x => x.PeriodDescription === indexValue);
     this.dataSharingService.periodID = this.LstRentalPeriods[index].PeriodID;
     this.dataSharingService.period = indexValue; //added to show the selected period in confirmation page
-    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+    this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID, this.dteStartDate);
   }
 
-  getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number) {
+  getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number, dteStartDate: string) {
     this.moveInService.getMoveInCharges({
       intUnitTypeID,
       intInsuranceID,
-      intPeriodID
+      intPeriodID,
+      dteStartDate
     }).subscribe(result => {
       const { objCharges: {
         ProrateAmt = 0,
@@ -531,6 +536,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
 
 
+  
   getData() {
     this.getDataSubscribe$ = this.fetchDataService.getData()
       .subscribe(unitTypesResponse => {
@@ -549,7 +555,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.unitTypeID = unitTypesResponse.lstUnitTypes[0].UnitTypeID;
         if (this.navigateToMoveIn) {
           // tslint:disable-next-line:max-line-length
-          this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID);
+          this.getMoveInCharges(this.unitTypeId, this.dataSharingService.insuranceChoiceId, this.dataSharingService.periodID, this.dteStartDate);
         }
 
 

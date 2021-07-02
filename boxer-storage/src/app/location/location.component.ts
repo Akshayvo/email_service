@@ -113,9 +113,9 @@ export class LocationComponent implements OnInit {
     });
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
-      // if (this.activatedRoute.snapshot.url[1].path) {
-      //   this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[2].path;
-      // }
+      if (this.activatedRoute.snapshot.url[1].path) {
+        this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
+      }
       if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
             this.meta.addTag({
               name: 'description',
@@ -588,52 +588,53 @@ else if (this.router.url.includes(`${environment.locationName}/allendale`)) {
     }
  }
 
- public navigateToReserve() {
-  if ( this.locationId === 1 ) {
-    this.router.navigate([`${environment.locationName}/evanston-ave/reserve-unit`],
-          );
-  } 
-  else if ( this.locationId === 2 ) {
-    this.router.navigate([`${environment.locationName}/howard-city/reserve-unit`],
-          );
-  }
-   else if ( this.locationId === 3 ) {
-    this.router.navigate([`${environment.locationName}/ionia/reserve-unit`],
-          );
-  }
-   else if ( this.locationId === 4 ) {
-    this.router.navigate([`${environment.locationName}/alpine/reserve-unit`],
-          );
-  }
-  else if ( this.locationId === 5 ) {
-    this.router.navigate([`${environment.locationName}/red-barn/reserve-unit`],
-          );
-  }  else if ( this.locationId === 6 ) {
-    this.router.navigate([`${environment.locationName}/wayland-westside/reserve-unit`],
-         );
-  }  else if ( this.locationId === 7 ) {
-    this.router.navigate([`${environment.locationName}/wayland-mill/reserve-unit`],
-          );
-  } else if ( this.locationId === 8 ) {
-    this.router.navigate([`${environment.locationName}/wayland-southside/reserve-unit`],
-          );
-  }
-  else if ( this.locationId === 9 ) {
-    this.router.navigate([`${environment.locationName}/dutton/reserve-unit`],
-          );
-  }
-  else if ( this.locationId === 10 ) {
-    this.router.navigate([`${environment.locationName}/m45/reserve-unit`],
-          );
-  }
-  else if ( this.locationId === 11 ) {
-    this.router.navigate([`${environment.locationName}/otsego/reserve-unit`],
-          );
-  }
-  else if ( this.locationId === 12 ) {
-    this.router.navigate([`${environment.locationName}/allendale/reserve-unit`],
-          );
-  }
+ public navigateToReserve(el: any) {
+  el.scrollIntoView();
+  // if ( this.locationId === 1 ) {
+  //   this.router.navigate([`${environment.locationName}/evanston-ave/reserve-unit`],
+  //         );
+  // } 
+  // else if ( this.locationId === 2 ) {
+  //   this.router.navigate([`${environment.locationName}/howard-city/reserve-unit`],
+  //         );
+  // }
+  //  else if ( this.locationId === 3 ) {
+  //   this.router.navigate([`${environment.locationName}/ionia/reserve-unit`],
+  //         );
+  // }
+  //  else if ( this.locationId === 4 ) {
+  //   this.router.navigate([`${environment.locationName}/alpine/reserve-unit`],
+  //         );
+  // }
+  // else if ( this.locationId === 5 ) {
+  //   this.router.navigate([`${environment.locationName}/red-barn/reserve-unit`],
+  //         );
+  // }  else if ( this.locationId === 6 ) {
+  //   this.router.navigate([`${environment.locationName}/wayland-westside/reserve-unit`],
+  //        );
+  // }  else if ( this.locationId === 7 ) {
+  //   this.router.navigate([`${environment.locationName}/wayland-mill/reserve-unit`],
+  //         );
+  // } else if ( this.locationId === 8 ) {
+  //   this.router.navigate([`${environment.locationName}/wayland-southside/reserve-unit`],
+  //         );
+  // }
+  // else if ( this.locationId === 9 ) {
+  //   this.router.navigate([`${environment.locationName}/dutton/reserve-unit`],
+  //         );
+  // }
+  // else if ( this.locationId === 10 ) {
+  //   this.router.navigate([`${environment.locationName}/m45/reserve-unit`],
+  //         );
+  // }
+  // else if ( this.locationId === 11 ) {
+  //   this.router.navigate([`${environment.locationName}/otsego/reserve-unit`],
+  //         );
+  // }
+  // else if ( this.locationId === 12 ) {
+  //   this.router.navigate([`${environment.locationName}/allendale/reserve-unit`],
+  //         );
+  // }
  }
 
  public navigateToPayment() {

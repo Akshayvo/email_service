@@ -98,12 +98,12 @@ export class LoginComponent implements OnInit, OnDestroy {
             this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/changePassword`]);
           } else {
           if (this.router.url.includes('rent-sub')) {
-            this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/payment`]);
+            this.router.navigate([`/pay-rent/${this.navTo}/rent-sub/payment`]);
           } else if (this.router.url.includes('sign-up')) {
-            this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
+            this.router.navigate([`/pay-rent/${this.navTo}/sign-up/auto-pay`]);
           }
           else if (this.router.url.includes('update')) {
-            this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/update-information`]);
+            this.router.navigate([`/pay-rent/${this.navTo}/update/update-information`]);
           }
         }
         } else {
@@ -325,11 +325,11 @@ public fetchTwitter() {
               this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/changePassword`]);
             } else {
             if (this.router.url.includes('rent-sub')) {
-              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/payment`]);
+              this.router.navigate([`/pay-rent/${this.navTo}/rent-sub/payment`]);
             } else if(this.router.url.includes('sign-up'))  {
-              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
+              this.router.navigate([`/pay-rent/${this.navTo}/sign-up/auto-pay`]);
             } else if (this.router.url.includes('update')) {
-              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/update-information`]);
+              this.router.navigate([`/pay-rent/${this.navTo}/update/update-information`]);
             }
           }
           } else {

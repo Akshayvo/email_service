@@ -79,7 +79,7 @@ export class PaymentComponent implements OnInit {
           if (this.dataSharingService.changePassword === true) {
             this.router.navigate([`/pay-rent/${navTo}/${localStorage.getItem('paymentTab')}/changePassword`]);
           } else {
-            this.router.navigate([`/pay-rent/${navTo}/${localStorage.getItem('paymentTab')}/payment`]);
+            this.router.navigate([`/pay-rent/${navTo}/rent-sub/payment`]);
           }
         }
       } else {

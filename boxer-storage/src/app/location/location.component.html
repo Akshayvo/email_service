@@ -113,7 +113,7 @@
             <div class="col-lg-4 btn-area text-center">
               <a class="btn btn-outline-primary p-2"(click)="navigateToContact()" role="button">Contact Us</a> 
               <a class="btn btn-primary-light p-2" (click)="navigateToPayment()" role="button">Pay Rent</a> 
-              <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                       
+              <a class="btn btn-primary p-2" (click)='navigateToReserve(target)' role="button">Reserve Unit</a>                                       
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@
       </div>
     </div>
   </div>
-  <div  class="container px-0 pt-2 mt-3">
+  <div  class="container px-0 pt-2 mt-3"  #target>
       <app-tabs [tabs]='tabs' [name]='name' class="sub-component-background" [currentActiveTab]='currentTab' ></app-tabs>
   </div>
 </section>
