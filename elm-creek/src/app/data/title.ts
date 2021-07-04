@@ -4,7 +4,7 @@ export const homePageContent = `Elm Creek Mini Storage serves Owasso and the sur
 export const viewRatesPageTitle = `View Rates  | Elm Creek Mini Storage`;
 export const viewRatesPageContent = `Review our current rates and availability, then give our office a call to find out how you can rent a unit that suits your needs!`;
 
-export const reservePageTitle = `Reserve a Unit | Sample Self Storage - North`;
+export const reservePageTitle = `Reserve a Unit | Elm Creek Mini Storage`;
 export const reservePageContent = `Simply fill out our easy reservation form and one of our friendly self storage associates will be ready and waiting for your arrival!`;
 
 export const payRentPageTitle = `Pay Rent  | Elm Creek Mini Storage`;
@@ -22,5 +22,5 @@ export const contactPageContent = `Do you have a question about your account, or
 export const thankYouPageTitle = `Thank You For Reserving Your Unit at Sample Self Storage!`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
 
-export const privacyPolicyPageTitle = `Privacy Policy | Sample Self Storage - North`;
+export const privacyPolicyPageTitle = `Privacy Policy | Elm Creek Mini Storage`;
 export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;

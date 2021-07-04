@@ -32,11 +32,11 @@ export const script = {               // Please fill this script according to fa
      telephone: contact[contactIndex].data,
      map: "https://goo.gl/maps/wuAZQ8A2LfWzwSmE9",
      description: "Elm Creek Mini Storage is Owasso’s premier self storage and vehicle storage facility. Our facility is conveniently located on the 128th East Ave in Owasso between the Baskin-Robbins and the First Presbyterian Church. We proudly serve Owasso, Tulsa, Collinsville, and the surrounding communities with quality storage solutions and excellent customer service at very affordable rates.",
-     streetAddress: "148 W 51st St",
-     state: "New York",
-     addressLocality: "New York",
-     addressRegion: "NY",
-     postalCode: "10019",
+     streetAddress: "8502 128th E Ave",
+     state: "Oklahoma",
+     addressLocality: "Oklahoma",
+     addressRegion: "OK",
+     postalCode: "74055",
      addressCountry: "US",
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit, Debit",
@@ -46,7 +46,7 @@ export const script = {               // Please fill this script according to fa
      reviewCount: "9",
      latitude: 36.2773861,
      longitude: -95.8309531,
-     openingHours: [],
+     openingHours: ["Mo-Fr 08:30-17:00", "Sa 08:30-12:00"],
      priceRange: '$40-$150'
 };
 
