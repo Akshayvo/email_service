@@ -190,6 +190,9 @@ getTenantUnitData() {
   this.addressLine2 = this.dataSharingService.objTenant.AddressLine2;
   this.city = this.dataSharingService.objTenant.City;
   this.zip = this.dataSharingService.objTenant.ZIP;
+  this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
+  this.driversLicenseExpDate = this.dataSharingService.objTenant.DriversLicenseExpDate;
+  this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
   this.alternateName = this.dataSharingService.objTenant.AlternateName;
   this.alternatePhone = this.dataSharingService.objTenant.AlternatePhone;
   this.alternateAddressLine1 = this.dataSharingService.objTenant.AlternateAddressLine1;
