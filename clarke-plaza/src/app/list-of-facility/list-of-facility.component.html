@@ -1,0 +1,139 @@
+  <!--Contact Brookside  Ends Here-->
+  <div class="pb-5 pt-5 bg-light">    
+    <div class="container">
+      <div class="row">          
+        <div class="col-lg-5">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11560.006074716799!2d-71.2040514!3d43.585684699999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b63c74906a56e9c!2sClarke%20Plaza%20Self-Storage!5e0!3m2!1sen!2sus!4v1625255137509!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-4  pt-3">
+          <h2>Clarke Plaza Self Storage</h2>
+          <!-- <p> -->
+            <div *ngFor="let contact of contactsBrookside" class="contact-label">
+                <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+              <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+                <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
+                  <h3>{{contact.data}}</h3>
+                </a>
+              </div>
+              <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+            </div>
+          <!-- </p> -->
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/ossipee/storage-units']" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/ossipee/reserve-unit']" role="button"> Reserve Unit</a>                                  
+        </div>
+        <div class="col-lg-3 partition-border contact-hours pt-3">
+            <h3>Office Hours:</h3>
+            <p>
+              <span *ngFor="let hour of hoursBrookside">
+                <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>
+            </p>
+        </div>
+      </div>
+    </div>      
+  </div>
+  
+  <!--Contact Brookside  -  Ends Here-->
+
+    <!--Contact chester-andrews-lane  Ends Here-->
+    <div class="pb-5 pt-5 ">    
+      <div class="container">
+        <div class="row">          
+          <div class="col-lg-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11537.877322104998!2d-71.1121976!3d43.7007947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5778bf4ee77c589a!2sOssipee%20Self%20Storage!5e0!3m2!1sen!2sus!4v1625259667176!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-4 pt-3">
+            <h2>Ossipee Self Storage</h2>
+            <div *ngFor="let contact of contactsAndrews" class="contact-label pt-2">
+              <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+            <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+              <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
+                <h3>{{contact.data}}</h3>
+              </a>
+            </div>
+            <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+          </div>
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/clarke-plaza/storage-units']" role="button">View Rates</a>                
+            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/clarke-plaza/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          </div>
+          <div class="col-lg-3 partition-border contact-hours pt-3">
+              <h3>Office Hours:</h3>
+              <p>
+                <span *ngFor="let hour of hoursAndrews">
+                  <b>{{hour.label}}</b>{{hour.data}}<br>
+                </span>
+              </p>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!--Contact chester-andrews-lane  -  Ends Here-->
+
+      <!--Contact Montgomery Start Here-->
+  <!-- <div class="pb-5 pt-5 bg-light">    
+    <div class="container">
+      <div class="row">          
+        <div class="col-lg-5">
+            <iframe src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-4 pt-3">
+          <h2>location heading3</h2>
+          <div *ngFor="let contact of contactsMontgomery" class="contact-label">
+            <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+          <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+            <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
+              <h3>{{contact.data}}</h3>
+            </a>
+          </div>
+          <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+        </div>
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/barnwell/storage-units']" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/barnwell/reserve-unit']" role="button"> Reserve Unit</a>                                  
+        </div>
+        <div class="col-lg-3 partition-border contact-hours pt-3">
+            <h3>Office Hours:</h3>
+            <p>
+              <span *ngFor="let hour of hoursMontgomery">
+                <b>{{hour.label}}</b>{{hour.data}}<br>
+              </span>
+            </p>
+        </div>
+      </div>
+    </div>      
+  </div> -->
+  <!--Contact Montgomery -  Ends Here-->
+
+    <!--Contact Middletown Ends Here-->
+    <!-- <div class="pb-5 pt-5 ">    
+      <div class="container">
+        <div class="row">          
+          <div class="col-lg-5">
+              <iframe src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-4 pt-3">
+            <h2>location heading4</h2>
+            <div *ngFor="let contact of contactsMiddletown" class="contact-label">
+              <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
+            <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+              <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
+                <h3>{{contact.data}}</h3>
+              </a>
+            </div>
+            <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
+          </div>
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/belforest/storage-units']" role="button">View Rates</a>                
+            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/belforest/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          </div>
+          <div class="col-lg-3 partition-border contact-hours pt-3">
+              <h3>Office Hours:</h3>
+              <p>
+                <span *ngFor="let hour of hoursMiddletown">
+                  <b>{{hour.label}}</b>{{hour.data}}<br>
+                </span>
+              </p>
+          </div>
+        </div>
+      </div>      
+    </div> -->
+    <!--Contact Middletown -  Ends Here-->
+  
