@@ -101,11 +101,27 @@ export class LoginComponent implements OnInit, OnDestroy {
           if (this.dataSharingService.changePassword === true) {
             this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/changePassword`]);
           } else {
-          if (this.router.url.includes('rent-sub')) {
-            this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/payment`]);
-          } else {
-            this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
-          }
+            switch (true) {
+              case this.router.url.includes('rent-sub') : {
+                console.log('rent-sub');
+                this.router.navigate(['/pay-rent/rent-sub/payment']);
+                break;
+              }
+              case this.router.url.includes('sign-up'): {
+                console.log('sign-up');
+                this.router.navigate(['/pay-rent/sign-up/auto-pay']);
+                break;
+              }
+              case this.router.url.includes('update'): {
+                console.log('update');
+                this.router.navigate(['/pay-rent/update/update-information']);
+                break;
+              }
+              default: {
+                console.log('default');
+                this.router.navigate(['/pay-rent/payment']);
+                break;
+              }}
         }
         } else {
           if (this.dataSharingService.changePassword === true) {
@@ -231,11 +247,28 @@ public fetchTwitter() {
             if (this.dataSharingService.changePassword === true) {
               this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/changePassword`]);
             } else {
-            if (this.router.url.includes('rent-sub')) {
-              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/payment`]);
-            } else {
-              this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
-            }
+              switch (true) {
+                case this.router.url.includes('rent-sub') : {
+                  console.log('rent-sub');
+                  this.router.navigate(['/pay-rent/rent-sub/payment']);
+                  break;
+                }
+                case this.router.url.includes('sign-up'): {
+                  console.log('sign-up');
+                  this.router.navigate(['/pay-rent/sign-up/auto-pay']);
+                  break;
+                }
+                case this.router.url.includes('update'): {
+                  console.log('update');
+                  this.router.navigate(['/pay-rent/update/update-information']);
+                  break;
+                }
+                default: {
+                  console.log('default');
+                  this.router.navigate(['/pay-rent/payment']);
+                  break;
+                }
+              }
           }
           } else {
             if (this.dataSharingService.changePassword === true) {              

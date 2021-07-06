@@ -40,6 +40,8 @@ import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.compone
 import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { ThankYouGuard } from '../thank-you.guard';
 import { FaqComponent } from '../faq/faq.component';
+import { UpdateDetailsComponent } from '../api-bundle/update-details/update-details.component';
+import { UpdateComponent } from '../api-bundle/update/update.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -79,7 +81,19 @@ const withTab = [
       { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
       // canActivate: [VerifictionCodeGuard]
     ]
-  }
+  },
+  { path: 'update', component: UpdateComponent,
+      children: [
+        {path: '', redirectTo: 'login', pathMatch: 'full'},
+        {path: 'login', component: LoginComponent },
+        {path: 'forgotPassword', component: ForgotPasswordComponent },
+        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+        {path: 'update-information', component: UpdateDetailsComponent, canActivate: [AuthGuard]},
+        { path: 'verifyCode', component: VerifyCodeComponent },
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+        // canActivate: [VerifictionCodeGuard]
+      ]
+    }
 ];
 
 // const reservationForm = environment
