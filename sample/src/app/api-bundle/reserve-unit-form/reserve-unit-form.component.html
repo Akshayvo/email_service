@@ -318,9 +318,7 @@
               matInput
               [matDatepicker]="dateOfBirth"
               formControlName="DateOfBirth"
-              [min]="from"
-              [max]="to"
-              readonly
+              [max]="currentDate"  
               (click)="dateOfBirth.open()"
             />
 

@@ -474,6 +474,7 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
         this.intLeadDaysTo = result.intLeadDaysTo;
         this.from = moment().add(this.intLeadDaysFrom, 'days').toISOString();
         this.to = moment().add(this.intLeadDaysTo, 'days').toISOString();
+        this.currentDate = new Date().toISOString();
       });
     }
 
