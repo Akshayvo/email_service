@@ -1,19 +1,18 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class DataSharingService {
-
   locationAPIKey = {
-    loc1: 'czJHOUUzPDh0MF46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29380 Line Drive Location
-    loc2: 'YjJdOUwzLDh7MSk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 29381 Holly Avenue Location
+    loc1: "czJHOUUzPDh0MF46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 29380 Line Drive Location
+    loc2: "YjJdOUwzLDh7MSk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 29381 Holly Avenue Location
   };
 
-//  locationAPIKey = {                                                     // demo north
-//     loc1: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28465
-//     loc2: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28463
-//   };
+  //  locationAPIKey = {                                                     // demo north
+  //     loc1: 'Mjg0NjU6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28465
+  //     loc2: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28463
+  //   };
 
   locationName: string;
   strConfirmation: string;
@@ -37,10 +36,10 @@ export class DataSharingService {
   eventName: string;
   paymentTab: string;
 
-  apiKey = '';
+  apiKey = "";
 
   MoveInData = {
-    Description: '',
+    Description: "",
     MonthlyRate: 0,
     UnitTypeID: 0,
     proRateAmount: 0,
@@ -52,19 +51,19 @@ export class DataSharingService {
     DepositTax: 0,
     RateTax: 0,
     TotalTaxAmount: 0,
-    TotalChargesAmount: 0
+    TotalChargesAmount: 0,
   };
 
   ReservationData = {
-    Description: '',
+    Description: "",
     MonthlyRate: 0,
     UnitTypeID: 0,
     RateTax: 0,
-    formattedMoveInDate: '',
+    formattedMoveInDate: "",
   };
 
   LstUnitTypes = {
-    Description: '',
+    Description: "",
     ReservationFee: 0,
     ReservationFeeTax: 0,
     UnitTypeID: 0,
@@ -75,43 +74,40 @@ export class DataSharingService {
   };
 
   objTenant = {
-    FirstName: '',
-    LastName: '',
-    Phone: '',
-    EmailAddress: '',
-    AddressLine1: '',
-    AddressLine2: '',
-    City: '',
-    State: '',
-    ZIP: '',
+    FirstName: "",
+    LastName: "",
+    Phone: "",
+    EmailAddress: "",
+    AddressLine1: "",
+    AddressLine2: "",
+    City: "",
+    State: "",
+    ZIP: "",
   };
-
 
   navLinksForComponent = {
     reservationForm: {
-      next: '',
-      prev: '',
+      next: "",
+      prev: "",
     },
     confirmationData: {
-      next: '',
-      prev: '',
+      next: "",
+      prev: "",
     },
     payRentForm: {
-      next: '',
-      prev: '',
+      next: "",
+      prev: "",
     },
     viewRates: {
-      next: '',
-      prev: ''
-    }
-
+      next: "",
+      prev: "",
+    },
   };
 
   MoveIn = {
-    dteMoveIn: '',
+    dteMoveIn: "",
     intUnitTypeID: 0,
   };
-
 
   constructor() {
     this.getUnitData();
@@ -142,11 +138,11 @@ export class DataSharingService {
       this.navLinksForComponent[componentName].next = myCurUrl;
       this.navLinksForComponent[componentName].prev = myCurUrl;
     }
-  }
+  };
 
   getMyNavLinks = (componentName) => {
     return this.navLinksForComponent[componentName];
-  }
+  };
 
   updateMyNavLink = (componentName, linkType, url) => {
     if (this.navLinksForComponent[componentName]) {
@@ -154,7 +150,7 @@ export class DataSharingService {
         this.navLinksForComponent[componentName][linkType] = url;
       }
     }
-  }
+  };
 
   setReservationData(value: any) {
     this.ReservationData.Description = value.Description;
@@ -175,5 +171,4 @@ export class DataSharingService {
   getMoveInData() {
     return this.MoveInData;
   }
-
 }
