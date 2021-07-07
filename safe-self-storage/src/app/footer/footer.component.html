@@ -1,20 +1,36 @@
-<div class="footer bg-light sticky col-md-12 p-4">   
-    <div class="container">
-        <div class="row"> 
-            <div class="col-6 my-auto text-left privacy-policy"> 
-
-            <a  href="/privacy-policy" rel="nofollow"  target="_blank"> 
-                Privacy Policy
-            </a>
-             <div class="col-7 pl-0 copyright-text">&copy; {{currentYear}} {{facilityName}}</div>
+<div class="footer bg-light sticky col-md-12 p-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 my-auto text-left privacy-policy">
+        <a href="/privacy-policy" rel="nofollow" target="_blank">
+          Privacy Policy
+        </a>
+        <div class="col-7 pl-0 copyright-text">
+          &copy; {{ currentYear }} {{ facilityName }}
         </div>
-            <div class="col-6 my-auto text-right" >
-                <a href="https://www.syrasoft.com/" target="_blank" rel="noreferrer" >
-                    <img src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/syrasoftPoweredDark.svg" 
-                    alt="Syrasoft Powered by Image" width="auto" height="48px" > 
-                </a>
-            </div>            
-        </div>    
+      </div>
+      <div class="col-4">
+        <a href="https://nyselfstorage.org/" target="_blank">
+          <img
+            src="{{ imageBaseUrl }}/new-york-self-storage-association.{{
+              imagetype
+            }}"
+            width="100%"
+            alt="logo artwork that spells our New York Self Storage Association"
+            class="sectionImage"
+          />
+        </a>
+      </div>
+      <div class="col-4 my-auto text-right">
+        <a href="https://www.syrasoft.com/" target="_blank" rel="noreferrer">
+          <img
+            src="https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/syrasoftPoweredDark.svg"
+            alt="Syrasoft Powered by Image"
+            width="auto"
+            height="48px"
+          />
+        </a>
+      </div>
     </div>
+  </div>
 </div>
-                          
