@@ -32,7 +32,7 @@ export const hours = [
     },
     {
         label: 'Closed for Lunch: ',
-        data: '10:00 am - 3:00 pm'
+        data: '10:00 am - 2:00 pm'
     },
     {
         label: 'Access Hours: ',

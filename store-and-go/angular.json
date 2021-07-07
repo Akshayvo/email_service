@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "store-and-go"
+  "defaultProject": "store-and-go",
+  "cli": {
+    "analytics": "536c800d-c13b-4c11-bfbf-414ac3b0866e"
+  }
 }
