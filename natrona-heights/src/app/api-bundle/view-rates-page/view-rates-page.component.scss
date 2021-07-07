@@ -107,17 +107,17 @@ p {
   text-align: left;
 }
 
-@media only screen and (min-width: 992px) {
-  .viewrates-mobile {
-    display: none;
-  }
-}
+// @media only screen and (min-width: 992px) {
+//   .viewrates-mobile {
+//     display: none;
+//   }
+// }
 
-@media only screen and (max-width: 991px) {
-  .viewrates-desktop {
-    display: none;
-  }
-}
+// @media only screen and (max-width: 991px) {
+//   .viewrates-desktop {
+//     display: none;
+//   }
+// }
 
 @media only screen and (max-width: 767px)  and (min-width: 381px) {
   .buttons {

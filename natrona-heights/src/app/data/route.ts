@@ -27,7 +27,7 @@ import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confi
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
     { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'reserve-unit', component: ReserveComponent },
+    // { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
@@ -36,12 +36,12 @@ import { ConfirmationPageComponent } from '../api-bundle/confirmation-page/confi
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
-        { path: 'move-in', component: ReserveUnitFormComponent },
-        { path: 'confirmation', component: ConfirmationDataComponent },
-        { path: 'confirmation-page', component: ConfirmationPageComponent},
-        { path: 'payReservationCharges', component: PayRentFormComponent },
-        { path: 'payMoveInCharges', component: PayRentFormComponent },
+        // { path: 'reserve', component: ReserveUnitFormComponent },
+        // { path: 'move-in', component: ReserveUnitFormComponent },
+        // { path: 'confirmation', component: ConfirmationDataComponent },
+        // { path: 'confirmation-page', component: ConfirmationPageComponent},
+        // { path: 'payReservationCharges', component: PayRentFormComponent },
+        // { path: 'payMoveInCharges', component: PayRentFormComponent },
       ]
      },
     {
