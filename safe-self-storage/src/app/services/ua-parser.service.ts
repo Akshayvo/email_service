@@ -17,7 +17,7 @@ export class UaParserService {
 
   determineBaseUrl() {
     if (this.browserDetails) {
-      const { browser: { name = 'Chrome', major = '32 '} } = this.browserDetails;
+      const { browser: { name = 'Chrome', major = '32'} } = this.browserDetails;
       switch (name) {
         case 'Chrome':
           this.typeOfImages = (major && major < 32) ? 'JPG' : 'WEBP';

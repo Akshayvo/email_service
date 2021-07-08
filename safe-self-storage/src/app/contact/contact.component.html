@@ -195,7 +195,6 @@
               "
             >
               <h4 class="py-1">
-                <strong>
                   <a
                     [href]="contact?.redirect"
                     target="{{
@@ -206,7 +205,6 @@
                     rel="noopener"
                     >{{ contact.data }}</a
                   >
-                </strong>
               </h4>
             </div>
           </div>
@@ -218,7 +216,7 @@
               <strong>{{ hour.label }}</strong>
             </h4>
             <h4 class="py-1" *ngIf="hour.label === 'Business Hours: '">
-              <strong>{{ hour.data }}</strong>
+             {{ hour.data }}
             </h4>
           </div>
           <div *ngFor="let contact of contactDetails" class="display-contact">
@@ -229,7 +227,6 @@
             >
             <div class="contact-links" *ngIf="contact?.label === 'Phone:'">
               <h4 class="py-1">
-                <strong>
                   <a
                     [href]="contact?.redirect"
                     target="{{
@@ -240,7 +237,6 @@
                     rel="noopener"
                     >{{ contact.data }}</a
                   >
-                </strong>
               </h4>
             </div>
           </div>
@@ -253,7 +249,7 @@
               <strong>{{ hour.label }}</strong>
             </h4>
             <h4 class="py-1" *ngIf="hour.label != 'Business Hours: '">
-              <strong>{{ hour.data }}</strong>
+              {{ hour.data }}
             </h4>
           </span>
         </div>
