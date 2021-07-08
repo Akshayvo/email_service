@@ -177,14 +177,15 @@
           ></iframe>
         </div>
         <div class="display-order">
-          <span *ngFor="let contact of contactDetails" class="display-contact">
-            <span
+          <div *ngFor="let contact of contactDetails" class="display-contact">
+            <div
+
               *ngIf="((contact?.label != 'Email:') && (contact?.label != 'Phone:'))"
-              ><h4 [class.py-1]="contact.label">
-                <b>{{ contact.label }}</b>
-              </h4></span
+              ><h4 [class.py-1]="contact.label" class="mb-0">
+                <strong>{{ contact.label }}&nbsp;</strong>
+              </h4></div
             >
-            <span
+            <div
               class="contact-links"
               *ngIf="
                 (contact?.label === 'Facility Address:' ||
@@ -203,13 +204,13 @@
                         : '_self'
                     }}"
                     rel="noopener"
-                    >&nbsp;{{ contact.data }}</a
+                    >{{ contact.data }}</a
                   >
                 </strong>
               </h4>
-            </span>
-          </span>
-          <span class="display-contact" *ngFor="let hour of hours">
+            </div>
+          </div>
+          <div class="display-contact" *ngFor="let hour of hours">
             <h4
               [class.py-1]="hour.label"
               *ngIf="hour.label === 'Business Hours: '"
@@ -219,14 +220,14 @@
             <h4 class="py-1" *ngIf="hour.label === 'Business Hours: '">
               <strong>{{ hour.data }}</strong>
             </h4>
-          </span>
-          <span *ngFor="let contact of contactDetails" class="display-contact">
-            <span *ngIf="contact?.label === 'Phone:'"
-              ><h4 [class.py-1]="contact.label">
-                <b>{{ contact.label }}</b>
-              </h4></span
+          </div>
+          <div *ngFor="let contact of contactDetails" class="display-contact">
+            <div *ngIf="contact?.label === 'Phone:'"
+              ><h4 [class.py-1]="contact.label" class="mb-0">
+                <strong>{{ contact.label }} &nbsp;</strong>
+              </h4></div
             >
-            <span class="contact-links" *ngIf="contact?.label === 'Phone:'">
+            <div class="contact-links" *ngIf="contact?.label === 'Phone:'">
               <h4 class="py-1">
                 <strong>
                   <a
@@ -237,12 +238,12 @@
                         : '_self'
                     }}"
                     rel="noopener"
-                    >&nbsp;{{ contact.data }}</a
+                    >{{ contact.data }}</a
                   >
                 </strong>
               </h4>
-            </span>
-          </span>
+            </div>
+          </div>
 
           <span class="display-contact" *ngFor="let hour of hours">
             <h4

@@ -181,13 +181,13 @@
   </div>
 
   <table
-  [class.display]="!showTable"
-    class="mt-5"
+    [class.display]="!showTable"
+    class="mt-5 viewrates-desktop"
     itemprop="hasOfferCatalog"
     itemscope
     itemtype="https://schema.org/OfferCatalog"
   >
-    <tHead >
+    <tHead>
       <tr>
         <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th1">
           {{ th.data }}
@@ -224,4 +224,19 @@
       </tr>
     </tbody>
   </table>
+
+  <div class="mt-5">
+    <div
+      class="row viewrates-mobile py-2 border"
+      *ngFor="let units of newUnitTypes"
+    >
+      <div class="col-4 text-center">
+        <strong>Unit Size</strong>
+        <div class="py-1">{{ units.type }}</div>
+      </div>
+      <div class="col-8 d-flex justify-content-center">
+        <a class="btn btn-primary" href="tel:15853817233">Call For Pricing</a>
+      </div>
+    </div>
+  </div>
 </div>
