@@ -111,9 +111,7 @@
         </ng-template>
         <ng-template #other_reserve>
           <td colspan="2" class="py-2 px-4 border" *ngIf="showReserve">
-            <div class="text-center">
-              Please call the facility to reserve a unit.
-            </div>
+            <div class="text-center">Please call for more information.</div>
           </td>
         </ng-template>
         <ng-template #other_moveIn>
@@ -172,15 +170,13 @@
 
       <ng-template #other>
         <div class="text-right" *ngIf="showMovein || showReserve">
-          <p class="card-text">
-            Please call the facility to reserve a unit or move in.
-          </p>
+          <p class="card-text">Please call for more information.or move in.</p>
         </div>
       </ng-template>
     </div>
   </div>
 
-  <table
+  <!-- <table
     [class.display]="!showTable"
     class="mt-5 viewrates-desktop"
     itemprop="hasOfferCatalog"
@@ -223,9 +219,9 @@
         </td>
       </tr>
     </tbody>
-  </table>
+  </table> -->
 
-  <div class="mt-5">
+  <!-- <div class="mt-5">
     <div
       class="row viewrates-mobile py-2 border"
       *ngFor="let units of newUnitTypes"
@@ -238,5 +234,5 @@
         <a class="btn btn-primary" href="tel:15853817233">Call For Pricing</a>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
