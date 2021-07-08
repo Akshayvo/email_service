@@ -45,6 +45,7 @@ export class DataSharingService {
   eventName: string;
   paymentTab: string;
   showAltDetails: boolean;
+  showMilitaryDetails: boolean;
 
   apiKey = '';
 

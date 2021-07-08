@@ -371,6 +371,7 @@ export class LocationComponent implements OnInit {
      this.name = heading2;
      this.locationId = 2;
      this.contacts = contactsLocation2;
+     this.access = hoursLocation1AcessHours;
      this.hours = hoursLocation2;
      this.tabs = tabs;
      this.features = location2FeaturesHead;

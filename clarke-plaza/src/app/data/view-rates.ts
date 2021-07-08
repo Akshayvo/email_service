@@ -19,6 +19,60 @@ export const th = [
     }
   ];
 
+  export const MilitaryTypes = [
+    {
+      Description: `NA`,
+      Value: 0 
+    },
+    {
+      Description: `Active`,
+      Value: 1
+    },
+    {
+      Description: `Reserve`,
+      Value: 2 
+    },
+    {
+      Description: `Veteran`,
+      Value: 3 
+    },
+    {
+      Description: `Retired`,
+      Value: 4
+    },
+    {
+      Description: `Deployed`,
+      Value: 5 
+    },
+  ]
+  
+  export const MilitaryBranch = [
+    {
+      Description: `NA`,
+      Value: 0 
+    },
+    {
+      Description: `Army`,
+      Value: 1
+    },
+    {
+      Description: `Navy`,
+      Value: 2 
+    },
+    {
+      Description: `AirForce`,
+      Value: 3 
+    },
+    {
+      Description: `Marines`,
+      Value: 4
+    },
+    {
+      Description: `CoastGuard`,
+      Value: 5 
+    },
+  ]
+
   export const option =  [
     {
       description: 'Alaska',

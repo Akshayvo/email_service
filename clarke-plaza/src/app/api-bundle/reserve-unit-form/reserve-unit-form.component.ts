@@ -4,7 +4,7 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router, ActivatedRoute } from '@angular/router';
-import { option, option1 } from '../../data/view-rates';
+import { MilitaryBranch, MilitaryTypes, option, option1 } from '../../data/view-rates';
 import { DatePipe } from '@angular/common';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
@@ -14,6 +14,7 @@ import { MoveInService } from '../services/moveIn.service';
 import { DataSharingService } from '../services/data-sharing.service';
 import { PreviousRouteService } from '../services/previous-route.service';
 import { environment } from '../../../environments/environment';
+import { CanonicalService } from '../../services/canonical.service';
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -58,6 +59,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   strTempTenantToken: StrTempTenantToken;
 
   strConfirmation: string;
+  dteStartDate: string;
   premium: number;
 
   successMessage = false;
@@ -99,6 +101,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   myNavLinks: any;
   minDay: number;
   maxDay: number;
+  militaryTypes = [];
+  militaryBranch = [];
+  MilitaryBranch: number;
+  MilitaryTypes: number;
 
 
   MoveInStringParent: string;
@@ -137,6 +143,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   showPrevious = false;
   showAltDetails = false;
+  showMilitaryDetails = false;
 
 
   private getLeadDaysSubscribe$: Subscription;
@@ -174,6 +181,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.dataSharingService.navigateToMoveIn = true;
         this.dataSharingService.navigateToReserve = false;
         this.showAltDetails = (environment.alternateType.moveIn === true) ? true : false;
+        this.showMilitaryDetails = (environment.military === true) ? true : false;
+        this.dataSharingService.showMilitaryDetails = this.showMilitaryDetails;
         this.dataSharingService.showAltDetails = this.showAltDetails;
       }
     }
@@ -193,6 +202,46 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
+        DriversLicense: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DriversLicenseExpDate: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DateOfBirth: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        MilitaryBranch: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        MilitaryDivision: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        MilitaryType: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        MilitaryID: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DeployedUntil: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        CommandingOfficer: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        CommandingOfficerPhone: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        ),],
         AlternateName:  ['',  conditionalValidator(
           (() => this.showAltDetails === false),
           Validators.required
@@ -293,9 +342,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {    
+    this.dteStartDate =this.convertDate(new Date());
     this.description = this.dataSharingService.getReservationData().Description;
     this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
+    this.fetchMilitaryBranch();
+    this.fetchMilitaryTypes();
     this.dataSharingService.initMyNavLinks('reservationForm', window.location.pathname);
     this.myNavLinks = this.dataSharingService.getMyNavLinks('reservationForm');
     this.getData();
@@ -303,7 +355,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     if (this.navigateToMoveIn === true ) {
       this.getInsuranceChoices();
     }
-    this.getLeadDays(this.data);
+    this.getLeadDays(this.data); 
     this.MoveIn.intUnitTypeID = this.unitTypeId;
 
     this.currentdate = new Date();
@@ -345,6 +397,14 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.option = option;
     this.option1 = option1;
   }
+
+  public fetchMilitaryTypes() {
+    this.militaryTypes = MilitaryTypes;
+  }
+  public fetchMilitaryBranch() {
+    this.militaryBranch = MilitaryBranch;
+  }
+
 
   public navigate(location: any) {
     this.router.navigate([location]);
@@ -487,6 +547,23 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
+            DriversLicense: Tenant.DriversLicense,
+            DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+            DateOfBirth: Tenant.DateOfBirth,
+            MilitaryType: Tenant.militaryType,
+            MilitaryBranch: Tenant.militaryBranch,
+            MilitaryID: Tenant.MilitaryID,
+            DeployedUntil: Tenant.DeployedUntil,
+            MilitaryDivision: Tenant.MilitaryDivision,
+            CommandingOfficer: Tenant.CommandingOfficer,
+            CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
+            AlternateName: Tenant.AlternateName,
+            AlternatePhone: Tenant.AlternatePhone,
+            AlternateAddressLine1: Tenant.AlternateAddressLine2,
+            AlternateAddressLine2: Tenant.AlternateAddressLine2,
+            AlternateCity: Tenant.AlternateCity,
+            AlternateState: Tenant.AlternateState,
+            AlternateZIP: Tenant.AlternateZIP,
           };
           this.reserveUnitForm.patchValue({
             objTenant: ({
@@ -499,6 +576,23 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
+              DriversLicense: Tenant.DriversLicense,
+              DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+              DateOfBirth: Tenant.DateOfBirth,
+              MilitaryType: Tenant.militaryType,
+              MilitaryBranch: Tenant.militaryBranch,
+              MilitaryID: Tenant.MilitaryID,
+              DeployedUntil: Tenant.DeployedUntil,
+              MilitaryDivision: Tenant.MilitaryDivision,
+              CommandingOfficer: Tenant.CommandingOfficer,
+              CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
+              AlternateName: Tenant.AlternateName,
+              AlternatePhone: Tenant.AlternatePhone,
+              AlternateAddressLine1: Tenant.AlternateAddressLine1,
+              AlternateAddressLine2: Tenant.AlternateAddressLine2,
+              AlternateCity: Tenant.AlternateCity,
+              AlternateState: Tenant.AlternateState,
+              AlternateZIP: Tenant.AlternateZIP,
             }),
           });
 

@@ -16,10 +16,17 @@ export const contactsHomePage = [
     },
     {
         id: 3,
-        label: 'Phone: ',
-        data: '(603) 569-5818',
+        label: 'Primary Phone: ',
+        data: '(603) 569-5818 ext1100',
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:6035695818'
+    },
+    {
+        id: 4,
+        label: 'After Hours Phone: ',
+        data: '(603) 966-6015',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:6039666015'
     },
 ];
 
@@ -125,7 +132,7 @@ export const hoursLocation2 = [
     //     data: 'CLOSED',
     // },
     {
-        data: '24 Hours a Day, 7 Days a Week',
+        data: 'No On-Site Office',
     },
 ];
 
