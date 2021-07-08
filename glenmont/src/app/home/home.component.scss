@@ -6,7 +6,6 @@
   }
 }
 
-
 .jumbotron-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Glenmont_Storage/webp/glenmont-self-storage-jumbotron.webp");
 }
@@ -115,7 +114,6 @@
     margin-right: 10px;
   }
 }
-
 
 @media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 640px) {
   .disp {
@@ -412,7 +410,6 @@
     }
   }
 
-
   .feature {
     display: none;
   }
@@ -512,12 +509,26 @@
   }
 
   .jumbotron-bottom {
-    height: 0;
+    height: 36vh;
   }
 
-  .feature {
-    display: none;
+  .feature-icon-style {
+    padding: 14px;
+    text-align: center;
+
+    img {
+      padding: 10px;
+      height: 65px;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
   }
+
+  // .feature {
+  //   display: none;
+  // }
 
   .disp {
     display: none;
@@ -558,9 +569,26 @@
   }
 
   .feature {
-    display: none;
+    margin-top: 10rem;
   }
 
+  .jumbotron-bottom {
+    height: 36vh;
+  }
+
+  .feature-icon-style {
+    padding: 14px;
+    text-align: center;
+
+    img {
+      padding: 10px;
+      height: 55px;
+    }
+
+    h2 {
+      font-size: 0.9rem;
+    }
+  }
   .disp {
     display: none;
   }
@@ -595,9 +623,26 @@
   }
 
   .feature {
-    display: none;
+    margin-top: 8rem;
+  }
+  .jumbotron-bottom {
+    height: 36vh;
   }
 
+  .feature-icon-style {
+    padding: 14px;
+    text-align: center;
+
+    img {
+      padding: 10px;
+      height: 55px;
+    }
+
+    h2 {
+      font-size: 0.65rem;
+      margin-bottom: 0rem;
+    }
+  }
   .disp {
     display: none;
   }
