@@ -106,10 +106,10 @@
               </div>
               <!-- <h4><b>Facility Hours:</b></h4> -->
               <div class="display-contact" *ngFor="let hour of hours">
-                <h4>
-                  <b>{{ hour.label }}</b>
+                <h4 *ngIf="hour.label">
+                  <b>{{ hour.label }}</b
+                  >&nbsp;
                 </h4>
-                &nbsp;
                 <h4>{{ hour.data }}</h4>
                 <br />
               </div>
