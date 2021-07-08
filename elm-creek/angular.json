@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "elm-creek"
+  "defaultProject": "elm-creek",
+  "cli": {
+    "analytics": "5ef49d08-c5d0-46f8-83c4-608d1a71a02b"
+  }
 }
