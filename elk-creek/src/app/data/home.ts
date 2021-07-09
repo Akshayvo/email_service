@@ -17,11 +17,11 @@ export const featuresList = [
     },
     {
         td1: 'Friendly Customer Service',
-        td2: 'Fully-Paved Facility',
+        td2: 'Fully-Paved Facility (Coming Soon)',
     },
     {
         td1: 'Affordable Rates',
-        td2: 'Fully-Fenced Facility',
+        td2: 'Fully-Fenced Facility (Coming Soon) ',
     }
 ];
 
@@ -76,7 +76,7 @@ export const feature = [
 
 export const jumbotron = [
     {
-        h2: ``,
-        blurb: ``,
+        h2: `Affordable Storage Units in Crescent City`,
+        blurb: `Call or reserve your unit online today, and save your spot at Elk Creek Storage, Crescent City's newest self storage facility!`,
     }
 ];
