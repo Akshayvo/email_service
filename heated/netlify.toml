@@ -62,6 +62,50 @@
   from = "https://heatedselfstorage.ca/location/CAN/ON/Orillia/heated-inc-1432/"
   to = "https://heatedselfstorage.ca/view-rates"
   status = 301
+  [[redirects]]
+  from = "https://www.heatedselfstorage.ca/reviews/ "
+  to = "https://www.heatedselfstorage.ca/"
+  status = 301
+  [[redirects]]
+  from = "https://www.heatedselfstorage.ca/sitelink-privacy-policy/"
+  to = "https://www.heatedselfstorage.ca/"
+  status = 301
+  [[redirects]]
+  from = "https://www.heatedselfstorage.ca/sitelink-terms-conditions/"
+  to = "https://www.heatedselfstorage.ca/"
+  status = 301
+  [[redirects]]
+  from = "https://www.heatedselfstorage.ca/storage-calculator/"
+  to = "https://www.heatedselfstorage.ca/unit-sizer"
+  status = 301
+  [[redirects]]
+  from = "https://www.heatedselfstorage.ca/terms-and-conditions/"
+  to = " https://www.heatedselfstorage.ca/privacy-policy"
+  status = 301
+  [[redirects]]
+  from = "https://www.heatedselfstorage.ca/optional-payment/"
+  to = "https://www.heatedselfstorage.ca/pay-rent"
+  status = 301
+  [[redirects]]
+  from = "https://www.heatedselfstorage.ca/test-payment/"
+  to = "https://www.heatedselfstorage.ca/pay-rent"
+  status = 301
+  [[redirects]]
+  from = "https://www.heatedselfstorage.ca/heated-storage/"
+  to = "https://www.heatedselfstorage.ca/view-rates"
+  status = 301
+  [[redirects]]
+  from = "https://www.heatedselfstorage.ca/exterior-storage/"
+  to = " https://www.heatedselfstorage.ca/view-rates "
+  status = 301
+  [[redirects]]
+  from = "https://www.heatedselfstorage.ca/rent-storage/"
+  to = "https://www.heatedselfstorage.ca/view-rates"
+  status = 301
+  [[redirects]]
+  from = "https://www.heatedselfstorage.ca/features/"
+  to = "https://www.heatedselfstorage.ca/"
+  status = 301
 [[redirects]]
   from = "/*"
   to = "/index.html"
