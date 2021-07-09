@@ -28,6 +28,12 @@
                 <b>{{hour.label}}</b>{{hour.data}}<br>
               </span>
             </p>
+            <h3>Access Hours:</h3>
+              <p>
+                <span *ngFor="let access of accesshours">
+                  <b>{{access.label}}</b>{{access.data}}<br>
+                </span>
+              </p>
         </div>
       </div>
     </div>      
@@ -61,6 +67,12 @@
               <p>
                 <span *ngFor="let hour of hoursAndrews">
                   <b>{{hour.label}}</b>{{hour.data}}<br>
+                </span>
+              </p>
+              <h3>Access Hours:</h3>
+              <p>
+                <span *ngFor="let access of accesshours">
+                  <b>{{access.label}}</b>{{access.data}}<br>
                 </span>
               </p>
           </div>

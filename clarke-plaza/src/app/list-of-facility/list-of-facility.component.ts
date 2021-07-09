@@ -5,7 +5,7 @@ import { contactsLocation1,
   contactsLocation3,
   contactsLocation4,
   hoursLocation2,
-  hoursLocation3, hoursLocation4 } from '../data/contact';
+  hoursLocation3, hoursLocation4 ,hoursLocation1AcessHours} from '../data/contact';
 
 @Component({
   selector: 'app-list-of-facility',
@@ -22,6 +22,7 @@ export class ListOfFacilityComponent implements OnInit {
   hoursAndrews: any;
   hoursMontgomery: any;
   hoursMiddletown: any;
+  accesshours:any;
 
   constructor() { }
 
@@ -35,13 +36,15 @@ export class ListOfFacilityComponent implements OnInit {
     this.contactsAndrews = contactsLocation2;
     this.contactsMontgomery = contactsLocation3;
     this.contactsMiddletown = contactsLocation4;
+    this.accesshours= hoursLocation1AcessHours;
   }
 
   public fetchHoursBrookside() {
-    this.hoursBrookside = hoursLocation2;
-    this.hoursAndrews = hoursLocation1;
+    this.hoursBrookside = hoursLocation1;
+    this.hoursAndrews = hoursLocation2;
     this.hoursMontgomery = hoursLocation3;
     this.hoursMiddletown = hoursLocation4;
+    this.accesshours= hoursLocation1AcessHours;
   }
 
 }

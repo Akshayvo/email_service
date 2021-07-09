@@ -6,7 +6,7 @@ import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
           hoursLocation5, contactsLocation5,
-          hoursLocation6, contactsLocation6,  } from '../data/contact';
+          hoursLocation6, contactsLocation6, hoursLocation1AcessHours } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -46,6 +46,7 @@ export class ContactUsComponent implements OnInit {
   twitter: any;
   contactPageContent: string;
   contactPageTitle: string;
+  access:any;
   
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -193,6 +194,7 @@ public fetchTwitter() {
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
+    this.access = hoursLocation1AcessHours;
   }
   
   public fetchContactDetailsLocation2() {
@@ -200,6 +202,7 @@ public fetchTwitter() {
     this.heading = `Clarke Plaza Self Storage - Ossipee`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
+    this.access = hoursLocation1AcessHours;
   }
 
   public fetchContactDetailsLocation3() {

@@ -116,12 +116,17 @@
             <ng-template #other_content>&nbsp;<h6>{{contact.data}}</h6></ng-template><br>
           </span>
         </p>
-                <div class="py-2">
-                  <span *ngFor="let hour of hoursDetails">
-                    <b>{{hour.label}}</b><span *ngIf="hour?.id === 1 else other_content ">&nbsp;{{hour.data}}</span>
-                    <ng-template #other_content>&nbsp;{{hour.data}}</ng-template><br>
-                  </span>             
-                </div>
+        <div *ngIf="locationId == 1 || locationId == 2 || locationId == 3 || locationId == 4" class="py-2">
+          <h5><b>Office Hours</b></h5>
+          <span  *ngFor="let hour of hoursDetails" >
+            <b>{{hour.label}}</b><span>&nbsp;{{hour.data}}</span><br>
+          </span><br></div>
+      <div>
+          <h5><b>Access Hours</b></h5>
+          <span class="pt-3" *ngFor="let access of access">
+            <span>{{access.data}}</span><br>
+          </span>             
+        </div>
               </div>
           </div>
       </div>
