@@ -26,7 +26,7 @@ export const navLinks = [
     },
     {
         id: 0,
-        label: 'BOXES',
+        label: 'MOBILE STORAGE',
         // path: 'https://www.robinsonstorage.ca/'
         
     },
