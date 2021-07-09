@@ -3,7 +3,52 @@
  </app-script-hack>
 <!-- <div class=""> -->
   <div class="jumbotron-container">
-    <div class="jumbotron-top">
+   
+      <div class="layout1">
+        <div class="climate-control">
+          <div class="container">
+            <div class="section py-3 m-0">
+              <div class="row">
+                <div class="col-md-12 py-3">
+                 <h2><b>We Expanded!</b></h2> 
+                 <!-- <h4 class="m-0">NOW TAKING RESERVATIONS </h4> -->
+                 <h4>New Climate Controlled Storage Available NOW</h4>
+                 <h5>Contact us for more information!</h5>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    
+      <div class="layout2">
+          <div class="climate-control py-5">
+            <div class="container">
+              <div class="section py-5 m-0">
+                <div class="row">
+                  <div class="col-md-12 py-5">
+                   
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+
+    <div class="jumbotron-bottom">
+      <div class="container">
+        <div class="feature row">
+          <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
+            <img [src]="feature?.path" [alt]="feature?.alt" height="100px"/>
+              <h6 class="feature-text">{{feature.label}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="jumbotron-top">
     <div class="jumbotron px-0 m-0" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
       <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
       </div>
@@ -22,49 +67,6 @@
         </div>
       </div>
       </div>
-    <div class="jumbotron-bottom">
-      <div class="container">
-        <div class="feature row">
-          <div class="col-md-3 col-3 feature-icon-style" *ngFor="let feature of feature">
-            <img [src]="feature?.path" [alt]="feature?.alt" height="100px"/>
-              <h6 class="feature-text">{{feature.label}}</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="layout1">
-    <div class="climate-control">
-      <div class="container">
-        <div class="section py-3 m-0">
-          <div class="row">
-            <div class="col-md-12 py-3">
-             <h2><b>We Are Expanding!</b></h2> 
-             <h4 class="m-0">NOW TAKING RESERVATIONS </h4>
-             <h4>Additional Climate Controlled Storage Available  End of June 2021</h4>
-             <h5>Contact us for more information!</h5>
-            </div>
-          </div>
-        </div>  
-      </div>
-    </div>
-  </div>
-
-  <div class="layout2">
-      <div class="climate-control py-5">
-        <div class="container">
-          <div class="section py-5 m-0">
-            <div class="row">
-              <div class="col-md-12 py-5">
-               
-              </div>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </div>
-
 
   <div class="bg-light">
     <div class="container py-4">
