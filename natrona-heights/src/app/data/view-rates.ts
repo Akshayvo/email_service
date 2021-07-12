@@ -9,7 +9,7 @@ export const dataViewRates = [
       p: `Our front office also contains a fully stocked retail store with all of the tape, boxes, and
           packing supplies you need to make your move, renovation, or downsizing project a breeze. We're
           also an excellent choice for commercial storage. Our temperature controlled units are great for
-          documents, equipment, and inventory! Call, or reserve your unit online, today!`
+          documents, equipment, and inventory!`
     }
 ];
 
