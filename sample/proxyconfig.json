@@ -1,7 +1,0 @@
-{
-  "https://simapi.syrasoft.com/10.1.0.999/api/facility/unittypes": {
-    "target": "http://localhost:4200",
-    "secure": false,
-    "changeOrigin": true
-  }
-}
