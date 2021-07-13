@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "elk-creek"
+  "defaultProject": "elk-creek",
+  "cli": {
+    "analytics": "11b02c43-94b4-43c1-abdd-1dd599247bcf"
+  }
 }
