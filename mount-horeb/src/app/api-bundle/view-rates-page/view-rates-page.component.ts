@@ -4,7 +4,7 @@ import { MoveInService } from '../services/moveIn.service';
 import { ObjCharges } from '../models/movein';
 import { UnitTypes, LstUnitTypes } from '../models/unittypes';
 import { FetchDataService } from '../services/fetch-data.service';
-import { th } from '../../data/view-rates';
+import { th ,th1,newUnitTypes,newUnitTypes1} from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
@@ -46,6 +46,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showPaymentForReserve = false;
   objCharges: ObjCharges;
   th: any;
+  th1:any;
   tenant: any;
   text = false;
   objSIMSetting: any;
@@ -56,6 +57,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showClimateControl: boolean; 
   facilityName: string;
   state: string;
+  newUnitTypes: any;
+  newUnitTypes1: any;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -73,10 +76,13 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.getData();
     this.fetchThData();    
     this.state = script.state;
+    this.newUnitTypes = newUnitTypes;
+    this.newUnitTypes1 = newUnitTypes1;
   }
 
   public fetchThData() {
     this.th = th.filter(x => x.state === true);
+    this.th1 = th1.filter(x => x.state === true);
     this.showRate = objSIMSetting.objUnitSizesSetting.blnShowRate;
     this.showDeposit = objSIMSetting.objUnitSizesSetting.blnShowDeposit;
     this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;

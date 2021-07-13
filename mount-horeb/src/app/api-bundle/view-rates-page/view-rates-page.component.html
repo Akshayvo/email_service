@@ -9,7 +9,7 @@
   </div>
   <div [class.loader]="showLoader" class="loader-position"> 
   </div>
-  <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+  <!-- <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
       <tHead [class.display]="!showTable">
           <tr>
             <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th" id={{th.id}}>
@@ -66,8 +66,8 @@
         </tr> 
 
       </tbody>
-  </table>
-  <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes">
+  </table> -->
+  <!-- <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes">
     <div class="col-6 text-center ">  
       <strong>Unit Size</strong>
     <div class=" py-1 ">{{lstUnitType.Description}}</div>
@@ -94,6 +94,163 @@
         <ng-template #other> 
           <div  class="text-right" *ngIf="showMovein || showReserve" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
         </ng-template>
+    </div>
+  </div> -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h4 class="viewrates-desktop">Climate Controlled Units</h4>
+  <table
+    [class.display]="!showTable"
+    class="mt-5 viewrates-desktop"
+    itemprop="hasOfferCatalog"
+    itemscope
+    itemtype="https://schema.org/OfferCatalog"
+  >
+    <tHead>
+      <tr>
+        <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th">
+          {{ th.data }}
+        </th>
+      </tr>
+    </tHead>
+    <span hidden itemprop="name">{{ facilityName }}</span>
+
+    <meta itemprop="name" content="{{ facilityName }}" />
+
+    <tbody
+      itemprop="itemListElement"
+      itemscope
+      itemtype="https://schema.org/Offer"
+    >
+      <tr
+        itemprop="itemOffered"
+        itemscope
+        itemtype="https://schema.org/SelfStorage"
+        *ngFor="let units of newUnitTypes"
+      >
+        <td colspan="2" class="px-4 border text-center">
+          <span hidden itemprop="name">{{ units.type }} unit Type </span>
+          {{ units.type }}
+          <meta itemprop="description" content="{{ units.type }}" />
+          <link
+            itemprop="image"
+            href="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Safe_Self_Storage/jpg/safe-self-storage-169.jpg"
+          />
+        </td>
+        <td colspan="2" class="px-4 border text-center" *ngIf="showRate">
+          {{ units.rate }}
+          <meta itemprop="priceRange" content="{{ units.rate }}" />
+        </td>
+        <td colspan="2" class="py-2 px-4 border text-center">
+          <a class="btn btn-primary" href="tel:15853817233">Call For Pricing</a>
+        </td>
+      </tr>
+    </tbody>
+  </table><br>
+  <h4 class="viewrates-desktop">Ambient Temperature Units</h4>
+  <table
+    [class.display]="!showTable"
+    class="mt-5 viewrates-desktop"
+    itemprop="hasOfferCatalog"
+    itemscope
+    itemtype="https://schema.org/OfferCatalog"
+  >
+    <tHead>
+      <tr>
+        <th colspan="2" class="px-4 py-1 text-center" *ngFor="let th of th1">
+          {{ th.data }}
+        </th>
+      </tr>
+    </tHead>
+    <span hidden itemprop="name">{{ facilityName }}</span>
+
+    <meta itemprop="name" content="{{ facilityName }}" />
+
+    <tbody
+      itemprop="itemListElement"
+      itemscope
+      itemtype="https://schema.org/Offer"
+    >
+      <tr
+        itemprop="itemOffered"
+        itemscope
+        itemtype="https://schema.org/SelfStorage"
+        *ngFor="let units of newUnitTypes1"
+      >
+        <td colspan="2" class="px-4 border text-center">
+          <span hidden itemprop="name">{{ units.type }} unit Type </span>
+          {{ units.type }}
+          <meta itemprop="description" content="{{ units.type }}" />
+          <link
+            itemprop="image"
+            href="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Safe_Self_Storage/jpg/safe-self-storage-169.jpg"
+          />
+        </td>
+        <td colspan="2" class="px-4 border text-center" *ngIf="showRate">
+          {{ units.rate }}
+          <meta itemprop="priceRange" content="{{ units.rate }}" />
+        </td>
+        <td colspan="2" class="py-2 px-4 border text-center">
+          <a class="btn btn-primary" href="tel:15853817233">Call For Pricing</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="mt-5">
+    <h4 class="viewrates-mobile">Climate Controlled Units</h4><br>
+    <div
+      class="row viewrates-mobile py-2 border"
+      *ngFor="let units of newUnitTypes"
+    >
+      <div class="col-4 text-center">
+        <strong>Unit Size</strong>
+        <div class="py-1">{{ units.type }}</div>
+      </div>
+      <div class="col-4 text-center">
+        <strong>Rate</strong>
+        <div class="py-1">{{ units.rate }}</div>
+      </div>
+      <div class="col-8 d-flex justify-content-center">
+        <a class="btn btn-primary" href="tel:15853817233">Call For Pricing</a>
+      </div>
+    </div><br>
+
+    <h4 class="viewrates-mobile">Ambient Temperature Units</h4><br>
+    <div
+      class="row viewrates-mobile py-2 border"
+      *ngFor="let units of newUnitTypes1"
+    >
+      <div class="col-4 text-center">
+        <strong>Unit Size</strong>
+        <div class="py-1">{{ units.type }}</div>
+      </div>
+      <div class="col-4 text-center">
+        <strong>Rate</strong>
+        <div class="py-1">{{ units.rate }}</div>
+      </div>
+      <div class="col-8 d-flex justify-content-center">
+        <a class="btn btn-primary" href="tel:15853817233">Call For Pricing</a>
+      </div>
     </div>
   </div>
 </div>

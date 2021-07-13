@@ -52,8 +52,8 @@ table {
         }
 
         .btn-primary {
-          background-color: #3f3c3c !important;
-          border-color: #212121 !important;
+          background-color: $primary !important;
+          border-color: $primary !important;
         }
       }
     }
@@ -124,7 +124,11 @@ p {
 @media only screen and (max-width: 380px) {
   .buttons {
     .btn {
-      min-width: auto;
+      min-width: 100px;
     }
   }
+  .btn-primary {
+    min-width: 150px;
+  }
+  
 }

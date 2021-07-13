@@ -49,6 +49,60 @@ export const MilitaryTypes = [
   },
 ]
 
+export const newUnitTypes = [
+  { type: "5x5",
+  rate:"$50"
+ },
+  { type: "5x10",
+  rate:"$80" },
+  { type: "10x10",
+  rate:"$110" },
+  { type: "10x15",
+  rate:"$125" },
+  { type: "10x20",
+  rate:"$170" },
+  { type: "10x25",
+  rate:"$190" },
+  { type: "10x30",
+  rate:"$220" },
+  { type: "11x25",
+  rate:"$205" },
+  { type: "12x30",
+  rate:"$240" },
+];
+
+export const newUnitTypes1 = [
+  { type: "5x10",
+  rate:"$50"
+ },
+  { type: "10x10",
+  rate:"$85" },
+  { type: "10x15",
+  rate:"$95" },
+  { type: "10x20",
+  rate:"$115" },
+  { type: "10x25",
+  rate:"$125" },
+  { type: "10x30",
+  rate:"$135" },
+  { type: "11x10",
+  rate:"$95" },
+  { type: "11x30",
+  rate:"$165" },
+  { type: "12x20",
+  rate:"$130" },
+  { type: "12x25",
+  rate:"$165" },
+  { type: "12x30",
+  rate:"$200" },
+  { type: "12x35",
+  rate:"$230" },
+  { type: "12x40",
+  rate:"$265" },
+  { type: "12x45",
+  rate:"$295" },
+];
+
 export const MilitaryBranch = [
   {
     Description: `NA`,
@@ -87,25 +141,55 @@ export const th = [
     data: `Rate`,
     state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
-  {
-    id: 'deposit',
-    data: 'Deposit',
-    state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
-  },
+  // {
+  //   id: 'deposit',
+  //   data: 'Deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
   {  id: 'reserve',
     data: `Reserve a Unit`,
     state: objSIMSetting.objActionSetting.blnAllowReservation
   },
+  // {
+  //   id: 'move-in',
+  //   data: `Move In`,
+  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn
+  // },
+  // {
+  //   id: 'climate-control',
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
+];
+export const th1 = [
   {
-    id: 'move-in',
-    data: `Move In`,
-    state: objSIMSetting.objActionSetting.blnAllowMoveIn
+    data: `Size`,
+    state: true,
   },
   {
-    id: 'climate-control',
-    data: `Climate Control`,
-    state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+    data: `Rate`,
+    state: objSIMSetting.objUnitSizesSetting.blnShowRate
   },
+  // {
+  //   data: 'deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
+  {
+    data: `Reserve a Unit`,
+    state: objSIMSetting.objActionSetting.blnAllowReservation,
+  },
+  // {
+  //   data: `Contact Us`,
+  //   state: objSIMSetting.objActionSetting.blnAllowReservation
+  // },
+  // {
+  //   data: `Move In`,
+  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn,
+  // },
+  // {
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
 ];
 
 export const state = {
