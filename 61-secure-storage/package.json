@@ -1,6 +1,6 @@
 {
-  "name": "61-280-Storage",
-  "version": "0.0.5",
+  "name": "store-qc",
+  "version": "0.0.6",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxyconfig.json",
@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server.js",
-    "build:client-and-server-bundles": "ng build --prod && ng run 61-280-Storage:server",
+    "build:client-and-server-bundles": "ng build --prod && ng run store-qc:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
     "ssr": "npm run build:ssr && npm run serve:ssr"
   },
@@ -72,7 +72,7 @@
     "ts-loader": "^4.2.0",
     "ts-node": "~7.0.0",
     "tslint": "^5.14.0",
-    "typescript": "^3.2.4",
+    "typescript": "^3.1.6",
     "typescript-tslint-plugin": "^0.5.5",
     "webpack-cli": "^3.3.0"
   }

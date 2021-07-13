@@ -1,37 +1,37 @@
 export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `self-storage-facility-entrance`,
+    url: `store-qc-fence-and-units`,
     // tslint:disable-next-line:max-line-length
-    thumb: `self-storage-facility-entrance`,
-    alt: `several single story metal buildings with roll-up storage unit doors on either side`
+    thumb: `store-qc-fence-and-units`,
+    alt: `single story self storage unit buildings behind a chain linked fence`
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `self-storage-units`,
+    url: `store-qc-rows-of-storage-units`,
     // tslint:disable-next-line:max-line-length
-    thumb: `self-storage-units`,
-    alt: `a single story metal self storage unit building with a parked recreational vehicle on the right`
+    thumb: `store-qc-rows-of-storage-units`,
+    alt: `three single story self storage buildings surrounded by wide parking lanes`
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `storage-buildings`,
+    url: `store-qc-self-storage-building`,
     // tslint:disable-next-line:max-line-length
-    thumb: `storage-buildings`,
-    alt: `parked campers and recreational vehicles in a large paved parking area`
+    thumb: `store-qc-self-storage-building`,
+    alt: ` a row of self storage units with closed white metal doors`
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `storage-unit-building`,
+    url: `store-qc-self-storage-buildings`,
     // tslint:disable-next-line:max-line-length
-    thumb: `storage-unit-building`,
-    alt: `a self storage security gate with keypad access control with units behind the gate`
+    thumb: `store-qc-self-storage-buildings`,
+    alt: `self storage unit buildings lined up in a row`
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `storage-unit-camera`,
+    url: `store-qc-units`,
     // tslint:disable-next-line:max-line-length
-    thumb: `storage-unit-camera`,
-    alt: `a close up of a security camera mounted on the side of a metal self storage building`
+    thumb: `store-qc-units`,
+    alt: `a security camera mounted on the side of a self storage building`
   }
 ];
