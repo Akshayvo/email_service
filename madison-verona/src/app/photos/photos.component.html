@@ -2,6 +2,7 @@
   <div class="container px-0">
     <div id="selectedImageM" class="text-center selectedImageM">
       <img *ngIf="selectedImage" src="{{imageBaseUrl}}/{{selectedImage.url}}.{{imagetype}}" alt="{{selectedImage.alt}}" height="auto" width="100%">
+      <p *ngIf="selectedImage.caption != ''" class="p-1" style="background-color: black; color: white;"><strong>{{selectedImage.caption}}</strong></p>
     </div>
     <div class="">
       <div class="data">
