@@ -1,4 +1,4 @@
-@import "../../../styles.scss";
+@import '../../../styles.scss';
 
 .display {
   display: none;
@@ -14,7 +14,7 @@
   .unitDetail:nth-child(odd) {
     background: #a8a8a8;
   }
-  
+
   .unitDetail:nth-child(even) {
     background: #fff5ee;
   }
@@ -35,6 +35,7 @@
 
   .custom-font {
     font-size: 1.4rem;
+    word-break: break-word;
   }
 }
 
@@ -63,12 +64,11 @@ table {
     }
   }
   tbody {
-    tr:nth-child(even){
+    tr:nth-child(even) {
       background-color: #dcdcdc;
     }
     tr {
       td {
-
         button {
           font-size: 0.8rem;
           min-width: 120px;
@@ -100,10 +100,13 @@ table {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
 
 p {
   margin: 0;
