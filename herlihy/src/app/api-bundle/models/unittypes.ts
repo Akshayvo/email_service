@@ -18,6 +18,7 @@ export class LstUnitTypes {
     UnitTypeID: number;
     IsUnitsAvailable: boolean;
     IsClimateControlled: boolean;
+    IsAutomobile: boolean;
 
     constructor(
         Description: string,
@@ -31,6 +32,8 @@ export class LstUnitTypes {
         UnitTypeID: number,
         IsUnitsAvailable: boolean,
         IsClimateControlled: boolean,
+        IsAutomobile: boolean,
+
         ) {
         this.Description = Description,
         this.MonthlyRate = MonthlyRate;
@@ -43,6 +46,7 @@ export class LstUnitTypes {
         this.UnitTypeID = UnitTypeID;
         this.IsUnitsAvailable = IsUnitsAvailable;
         this.IsClimateControlled = IsClimateControlled;
+        this.IsAutomobile =  IsAutomobile;
     }
 }
 

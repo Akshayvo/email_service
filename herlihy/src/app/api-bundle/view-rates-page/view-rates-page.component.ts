@@ -23,6 +23,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   LstUnitTypes: LstUnitTypes[];
   temperatureLstUnitTypes: LstUnitTypes[];
   regularLstUnitTypes: LstUnitTypes[];
+  vehicleStorageUnitTypes: LstUnitTypes[];
 
 
   descriptionVR: string;
@@ -153,6 +154,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
         this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
         this.temperatureLstUnitTypes = this.LstUnitTypes.filter(x => x.IsClimateControlled === true);
         this.regularLstUnitTypes = this.LstUnitTypes.filter(x => x.IsClimateControlled !== true);
+        this.vehicleStorageUnitTypes = this.LstUnitTypes.filter(x => x.IsAutomobile == true);
         // if (this.isScroll) {
         //   this.scrollTo();
         // }
