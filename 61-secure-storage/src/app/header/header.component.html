@@ -8,12 +8,9 @@
             *ngFor="let contact of contactDetails"
           >
             <i [class]="contact?.class"></i
-            ><span
-              class="contact-links"
-              *ngIf="contact?.id === 1 || contact?.id === 2; else other_content"
+            ><span class="contact-links" target="_blank"
               ><a [href]="contact?.redirect">&nbsp;{{ contact.data }}</a></span
             >
-            <ng-template #other_content>&nbsp;{{ contact.data }}</ng-template>
           </span>
         </div>
         <div class="col-md-2 ml-auto text-right">

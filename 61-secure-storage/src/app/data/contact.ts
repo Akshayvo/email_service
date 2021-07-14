@@ -1,19 +1,27 @@
 export const contact = [
     {
         id: 0,
-        label: 'Address:',
+        label: 'Formerly 61-280 now Store QC Location:',
         data: '11630 140th St, Davenport, IA 52804',
+        redirect: 'https://goo.gl/maps/VU6k623mbM2poucZ8',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 1,
-        label: 'Email:',
-        redirect: 'mailto:info@61280storage.com',
-        data: 'info@61280storage.com',
-        class: 'fas fa-envelope mx-2 iconColor',
+        label: `Formerly Brady's Storage now Store QC Location: `,
+        data: '4417 N. Brady St, Davenport, IA 52804',
+        redirect: 'https://goo.gl/maps/xxt8J3hm9pc2n5kh7',
+        class: 'fas fa-map-marker-alt mx-2 iconColor',
     },
     {
         id: 2,
+        label: 'Email:',
+        redirect: 'mailto:info@storeqc.com',
+        data: 'info@storeqc.com',
+        class: 'fas fa-envelope mx-2 iconColor',
+    },
+    {
+        id: 3,
         redirect: 'tel:5633818017',
         label: 'Phone:',
         data: '(563) 381-8017',
