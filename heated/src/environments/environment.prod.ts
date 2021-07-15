@@ -14,6 +14,6 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://heatedselfstorage.ca',
-  APIKey: `bTJUOW40TDlbN1s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, 
+  APIKey: `bTJUOW40TDJbN1s6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, 
   // APIKey:`Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, //demo north 
 };
