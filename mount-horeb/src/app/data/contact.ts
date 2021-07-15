@@ -2,7 +2,7 @@ export const contact = [
     {
         id: 0,
         label: 'Address:',
-        data: '6918 Red Fox Dr, Mount Horeb, WI 53572',
+        data: '9618 Red Fox Dr, Mount Horeb, WI 53572',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
         redirect: 'https://goo.gl/maps/ZZ29p4eEtFTbqbdCA'
     },
@@ -16,9 +16,9 @@ export const contact = [
     {
         id: 2,
         label: 'Phone:',
-        data: '(608) 220-8888',
+        data: '(608) 636-9449',
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:6082208888',
+        redirect: 'tel:6086369449',
     }
 ];
 

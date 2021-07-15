@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 # Allow crawling of all content
-Sitemap: https://mount-horeb-self-storage-staging.netligy.app/sitemap.xml
+Sitemap: https://mthorebselfstorage.com/sitemap.xml
 User-agent: *
 Disallow:/privacy-policy

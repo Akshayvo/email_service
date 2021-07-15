@@ -14,7 +14,7 @@ export const environment = {
   facilityName: 'Mount Horeb Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://mount-horeb-self-storage-staging.netligy.app',
+  websiteUrl: 'https://mthorebselfstorage.com',
   // APIKey: `Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north
   APIKey: `dzJ0OVc0SjkqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29462
 

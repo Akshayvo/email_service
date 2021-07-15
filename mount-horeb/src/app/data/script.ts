@@ -32,7 +32,7 @@ export const script = {               // Please fill this script according to fa
      telephone: contact[contactIndex].data,
      map: "https://goo.gl/maps/ZZ29p4eEtFTbqbdCA",
      description: "Mount Horeb Self Storage is Mount Horeb Wisconsin’s newest self storage facility. Our state-of-the-art facility is conveniently located on Red Fox Drive and provides a number of self storage or vehicle parking solutions to the surrounding communities. ",
-     streetAddress: "6918 Red Fox Dr",
+     streetAddress: "9618 Red Fox Dr",
      state: "Mount Horeb",
      addressLocality: "Mount Horeb",
      addressRegion: "WI",

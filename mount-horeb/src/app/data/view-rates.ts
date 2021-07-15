@@ -2,7 +2,7 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Review our sizes and monthly rates in both regular self storage units and our climate-controlled variety, then give our friendly management team a call, and we’ll be happy to add you to our waiting list! Our grand opening is planned for September 2021, so be sure to get your spot before the list fills up!`,
+      p: `Review our sizes and monthly rates in both regular self storage units and our climate-controlled variety, then give our friendly management team a call, and we’ll be more than happy to take your reservation! We are open during the final stage of construction!`,
     },
     {
       p: `Still not sure what sized unit will suit your home, business, or parking needs best? Check out our unit sizer page to find charts that show all of the sizes with descriptions of what contents are best suited for each type.`
