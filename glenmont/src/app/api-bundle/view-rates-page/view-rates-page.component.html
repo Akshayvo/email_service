@@ -1,5 +1,5 @@
 <div >
-  <mat-grid-list class="container viewrates-desktop" cols="3" rowHeight="90px" gutterSize="20px">
+  <mat-grid-list class="container viewrates-desktop" cols="3" rowHeight="120px" gutterSize="20px">
     <mat-grid-tile  *ngFor="let tile of tiles" class="viewrates" [colspan]="1"
     [rowspan]="3">
     
@@ -145,17 +145,17 @@
       </div>  
     </div>
   </div> -->
-  <mat-grid-list class="viewrates-mobile" cols="1" rowHeight="200px" gutterSize="20px">
+  <mat-grid-list class="container viewrates-mobile" cols="1" rowHeight="400px" gutterSize="20px">
     <mat-grid-tile  *ngFor="let tile of tiles" class="viewrates" [colspan]="1"
     [rowspan]="1">
     
     <div>    
-      <p>{{tile.size}} - {{tile.temperature}}</p>
+        <h3><strong>{{tile.name}}</strong></h3>
     
-    <p>{{tile.name}}</p><br>
-    <p><b>{{tile.discount}}</b></p>
-    <p><b>{{tile.discount1}}</b></p><br>
-    <a href="tel:5184701000" class="btn btn-outline-primary">{{tile.price}}</a>
+        <h5><strong>{{tile.size}} - {{tile.temperature}}</strong></h5><br>
+        <h3 class="discount"><strong>{{tile.discount}}</strong></h3>
+        <h4 class="discount"><strong>{{tile.discount1}}</strong></h4><br>
+        <a href="tel:5184701000" class="btn btn-outline-primary"><strong>{{tile.price}}</strong></a>
     <!-- <button type="button" class="btn btn-outline-primary" (click)="window.location.href='';">{{tile.price}}</button> -->
       </div>
     

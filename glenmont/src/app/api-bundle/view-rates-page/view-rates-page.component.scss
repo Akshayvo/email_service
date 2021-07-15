@@ -75,41 +75,41 @@
   }
 }
 
-.viewrates-mobile {
-  // background-color: $;
+// .viewrates-mobile {
+//   // background-color: $;
 
-  h3 {
-    color: $white;
-    background-color: $primary;
-    font-size: 1.75rem;
-  }
+//   h3 {
+//     color: $white;
+//     background-color: $primary;
+//     font-size: 1.75rem;
+//   }
 
-  .unitDetail:nth-child(odd) {
-    background: #a8a8a8;
-  }
+//   .unitDetail:nth-child(odd) {
+//     background: #a8a8a8;
+//   }
 
-  .unitDetail:nth-child(even) {
-    background: #fff5ee;
-  }
+//   .unitDetail:nth-child(even) {
+//     background: #fff5ee;
+//   }
 
-  .unitDetail {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+//   .unitDetail {
+//     width: 100%;
+//     margin: auto;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
 
-  .unitType {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+//   .unitType {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
 
-  .custom-font {
-    font-size: 1.4rem;
-  }
-}
+//   .custom-font {
+//     font-size: 1.4rem;
+//   }
+// }
 
 .iconStyle {
   cursor: pointer;
@@ -224,7 +224,7 @@ p {
   h3,
   h4,
   h5 {
-    font-size: 0.9rem;
+    // font-size: 0.9rem;
   }
 }
 
@@ -240,10 +240,10 @@ p {
   h3,
   h4,
   h5 {
-    font-size: 0.9rem;
+    // font-size: 0.9rem;
   }
   .btn-outline-primary {
     min-width: 127px;
-    font-size: 0.7rem;
+    // font-size: 0.7rem;
   }
 }

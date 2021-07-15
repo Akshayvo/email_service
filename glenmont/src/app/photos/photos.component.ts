@@ -31,12 +31,12 @@ export class PhotosComponent implements OnInit {
   }
 
   public fetchGallery() {
-    if (this.router.url.includes('view-rates')){
-    this.galleryImages = galleryHome;
-  }
-  else{
+    // if (this.router.url.includes('view-rates')){
+    // this.galleryImages = galleryHome;
+//   }
+//   else{
     this.galleryImages = galleryViewRates;
-  }
+//   }
   }
   setSelectedImage(image: any) {
     this.selectedImage = image;

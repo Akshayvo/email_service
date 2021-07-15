@@ -19,11 +19,27 @@
 }
 
 .assoc-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   img {
+    margin: 10px;
     height: 40px;
   }
 }
-
+@media only screen and (max-width: 1199px) {
+  .assoc-logo {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .assoc-logo {
+    img {
+      height: 30px;
+    }
+  }
+}
 @media only screen and (max-width: 360px) {
   .secure {
     img {

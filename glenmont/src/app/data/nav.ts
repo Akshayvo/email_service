@@ -6,7 +6,7 @@ export const navLinks = [
         path: '/',
     },
     {
-        label: 'VIEW RATES',
+        label: 'VIEW UNITS',
         path: `${environment.locationName}/view-rates`,
     },
     // {

@@ -2,14 +2,14 @@ import { objSIMSetting } from "./configuration";
 
 export const dataViewRates = [
   {
-    p: `Glenmont Self Storage caters to a variety of self storage users utilizing our services for a variety of extra space needs. Homeowners and renters will find plenty of space to store their household belongings such as furniture, tools, or lawn equipment during their next move or renovation. Our local business customers use our regular units for equipment and inventory while our climate controlled units are an excellent choice for document storage. Why waste expensive commercial space when a more affordable option like Glenmont Self Storage is right down the road? Own a classic car? Many local car enthusiasts find our units to be an excellent option to free up a parking spot at home or during the winter months.`,
+    p: `Glenmont Self Storage caters to a variety of self storage users utilizing our services for a variety of extra space needs. Homeowners and renters will find plenty of space to store their household belongings such as furniture, tools, or lawn equipment during their next move or renovation. Our local business customers use our regular units for equipment and inventory while our Temperature Controlled units are an excellent choice for document storage. Why waste expensive commercial space when a more affordable option like Glenmont Self Storage is right down the road? Own a classic car? Many local car enthusiasts find our units to be an excellent option to free up a parking spot at home or during the winter months.`,
   },
   {
     p: `Take a moment to review our current availability, then give our office a call, and one of our friendly self storage management team will be happy to assist you in renting your self storage unit today!`,
   },
 ];
 
-export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a climate controlled self storage building`;
+export const viewRatesAltText = `two rows of roll-up metal self storage unit doors inside a Temperature Controlled self storage building`;
 
 export const th = [
   {
@@ -33,7 +33,7 @@ export const th = [
     state: objSIMSetting.objActionSetting.blnAllowMoveIn,
   },
   {
-    data: `Climate Control`,
+    data: `Temperature Control`,
     state: objSIMSetting.objUnitSizesSetting.blnClimateControl,
   },
 ];
