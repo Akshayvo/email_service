@@ -11,7 +11,7 @@ export const contact = [
         label: 'Email:',
         data: 'info@heatedselfstorage.ca',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:`info@heatedselfstorage.ca`'
+        redirect: 'mailto:info@heatedselfstorage.ca'
     },
     {
         id: 2,

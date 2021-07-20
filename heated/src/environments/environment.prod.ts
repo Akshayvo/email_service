@@ -3,9 +3,10 @@ export const environment = {
   type: 0,  // { API: 0, iframe: 1 }
   locationName: 'ontario',  // state/city   **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
-  alternateType: { moveIn: true, reserve: false }, // { moveIn: true, reserve: true },
+  alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover', 'test'],
+  military: true, // set true for Military and Driver's Details 
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
