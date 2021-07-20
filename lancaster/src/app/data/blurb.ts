@@ -8,7 +8,7 @@ export const jumbotronHome = [
 export const viewRates = [
   {
     heading: `View Rates`,
-    blurb: `Whether you're looking for short-term or long-term self-storage, Aallen Self Storage has the perfect storage unit for you. Our friendly staff and high-tech facility are here to make your self-storage experience a breeze!`,
+    blurb: `Whether you're looking for short-term or long-term self-storage for your household belongings, or if you need parking for a boat, trailer, or recreational vehicle, Lancaster Self Storage has the perfect solution for you. Our friendly staff are here to make your self-storage a fast and easy one.`,
   },
 ];
 
@@ -22,7 +22,7 @@ export const unitSizers = [
 export const storageTips = [
   {
     heading: `Storage Tips`,
-    blurb: `Here are some free tips for storing your belongings with Aallen Self Storage! Have specific questions that aren't covered here? Contact us today and let us make your self storage experience a breeze!`,
+    blurb: `Here are some free tips for storing your belongings with Lancaster Self Storage! Have specific questions that aren't covered here? Give us a call, and one of our friendly managers will be glad to assist you.`,
   },
 ];
 
@@ -30,7 +30,7 @@ export const storageTips = [
 export const payRent = [
   {
     heading: `Pay Rent`,
-    blurb: `Use our easy online bill pay service to pay your rent and manage your Aallen Self Storage tenant account!`,
+    blurb: `Use our easy online bill pay service to pay your rent and manage your Lancaster Self Storage account. If you have questions about accessing your account, use our Contact Us page to drop us a line, or give our helpful team a call today.`,
   },
 ];
 

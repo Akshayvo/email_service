@@ -39,19 +39,19 @@ export const featuresList = [
 
 export const feature = [
     {
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Aallen_Storage/feature/garage.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lancaster/feature/garage.svg',
         label: 'Boat and Vehicle Storage'
     },
     {
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Aallen_Storage/feature/convenient-location.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lancaster/feature/convenient-location.svg',
         label: 'Conveniently Located'
     },
     {
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Aallen_Storage/feature/24-hours.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lancaster/feature/24-hours.svg',
         label: '24 Hour Facility Access'
     },
     {
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Aallen_Storage/feature/hand.svg',
+        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lancaster/feature/hand.svg',
         label: 'Affordable Self Storage Rates'
     }
    
