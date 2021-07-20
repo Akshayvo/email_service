@@ -65,4 +65,7 @@ export const socialLinks = [
     // },
 ];
 
+export const directions = `Off of Interstate 490 (Exit 24 East Rochester) from West Commercial St, turn Left onto Crossman Terrace, drive straight back until right before you reach The Crossman Seed Company, turn Right, drive straight back, and you will enter our facility. `
+    
+
 

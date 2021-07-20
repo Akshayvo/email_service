@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { contact, hours } from '../data/contact';
+import { contact, hours, directions } from '../data/contact';
 import { EmailService } from '../services/email.service';
 import { MetaService } from '../services/link.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
@@ -36,6 +36,7 @@ export class ContactComponent implements OnInit {
   og: any;
   twitter: any;
   script: any;
+  directions:any;
 
   constructor(
     private router: Router,
@@ -123,6 +124,7 @@ public fetchTwitter() {
 
   public fetchContactDetails() {
     this.contactDetails = contact;
+    this.directions = directions;
   }
 
   public fetchContactHeading() {
