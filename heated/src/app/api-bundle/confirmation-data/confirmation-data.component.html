@@ -81,7 +81,87 @@
                         <td>
                             {{zip}}
                         </td>
-                    </tr>                     
+                    </tr> 
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Driver's License Number
+                        </td>
+                        <td>
+                            {{driversLicense}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Driver's License Expiration Date
+                        </td>
+                        <td>
+                            {{driversLicenseExpDate}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Birthdate
+                        </td>
+                        <td>
+                            {{dateOfBirth}}
+                        </td>
+                    </tr>
+                    <!-- <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Type
+                        </td>
+                        <td>
+                            {{militaryType}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Branch
+                        </td>
+                        <td>
+                            {{militaryBranch}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military ID
+                        </td>
+                        <td>
+                            {{militaryID}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Deployed Until Date
+                        </td>
+                        <td>
+                            {{deployedUntil}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Division/Unit
+                        </td>
+                        <td>
+                            {{militaryDivision}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military Commanding Officer
+                        </td>
+                        <td>
+                            {{commandingOfficer}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Military C.O. Phone
+                        </td>
+                        <td>
+                            {{commandingOfficerPhone}}
+                        </td>
+                    </tr>                     -->
                 </tbody>
             </table>
         </div>
