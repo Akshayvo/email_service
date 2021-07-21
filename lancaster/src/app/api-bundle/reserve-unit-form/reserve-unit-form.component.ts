@@ -208,34 +208,34 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
           (() => this.showMilitaryDetails === false),
           Validators.required
         )],
-        MilitaryBranch: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryDivision: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryType: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        MilitaryID: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        DeployedUntil: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        CommandingOfficer: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        )],
-        CommandingOfficerPhone: ['', conditionalValidator(
-          (() => this.showMilitaryDetails === false),
-          Validators.required
-        ),],
+        // MilitaryBranch: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryDivision: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryType: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryID: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // DeployedUntil: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // CommandingOfficer: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // CommandingOfficerPhone: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // ),],
         AlternateName: [''],
         AlternatePhone:   ['',
           Validators.pattern(
@@ -483,13 +483,13 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
             DriversLicense: Tenant.DriversLicense,
             DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
             DateOfBirth: Tenant.DateOfBirth,
-            MilitaryType: Tenant.militaryType,
-            MilitaryBranch: Tenant.militaryBranch,
-            MilitaryID: Tenant.MilitaryID,
-            DeployedUntil: Tenant.DeployedUntil,
-            MilitaryDivision: Tenant.MilitaryDivision,
-            CommandingOfficer: Tenant.CommandingOfficer,
-            CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
+            // MilitaryType: Tenant.militaryType,
+            // MilitaryBranch: Tenant.militaryBranch,
+            // MilitaryID: Tenant.MilitaryID,
+            // DeployedUntil: Tenant.DeployedUntil,
+            // MilitaryDivision: Tenant.MilitaryDivision,
+            // CommandingOfficer: Tenant.CommandingOfficer,
+            // CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
             AlternateName: Tenant.AlternateName,
             AlternatePhone: Tenant.AlternatePhone,
             AlternateAddressLine1: Tenant.AlternateAddressLine2,
@@ -512,13 +512,13 @@ getMoveInCharges(intUnitTypeID: any, intInsuranceID: number, intPeriodID: number
               DriversLicense: Tenant.DriversLicense,
               DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
               DateOfBirth: Tenant.DateOfBirth,
-              MilitaryType: Tenant.militaryType,
-              MilitaryBranch: Tenant.militaryBranch,
-              MilitaryID: Tenant.MilitaryID,
-              DeployedUntil: Tenant.DeployedUntil,
-              MilitaryDivision: Tenant.MilitaryDivision,
-              CommandingOfficer: Tenant.CommandingOfficer,
-              CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
+              // MilitaryType: Tenant.militaryType,
+              // MilitaryBranch: Tenant.militaryBranch,
+              // MilitaryID: Tenant.MilitaryID,
+              // DeployedUntil: Tenant.DeployedUntil,
+              // MilitaryDivision: Tenant.MilitaryDivision,
+              // CommandingOfficer: Tenant.CommandingOfficer,
+              // CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
               AlternateName: Tenant.AlternateName,
               AlternatePhone: Tenant.AlternatePhone,
               AlternateAddressLine1: Tenant.AlternateAddressLine1,

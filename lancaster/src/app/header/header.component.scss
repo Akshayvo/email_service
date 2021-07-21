@@ -5,11 +5,11 @@ a {
 }
 
 .iconColor {
-  color: $white;
+  color: $black;
 }
 
 .logotext {
-  color: #ffffff;
+  color: $white;
   text-align: center;
 }
 
@@ -18,13 +18,13 @@ a {
 
   .contact-details {
     white-space: nowrap;
-    color: $white;
+    color: $black;
     font-size: 0.82em;
     font-weight: 500;
     width: 100%;
 
     a {
-      color: $white;
+      color: $black;
     }
   }
 }

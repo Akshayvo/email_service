@@ -13,7 +13,7 @@ export const contact = [
         label: 'Address:',
         data: '2271 Pageland Hwy, Lancaster, SC 29720',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/D7u8ar7pW5rsaiR88'
+        redirect: 'https://goo.gl/maps/HL8io8ssdG8Aa3WF7'
     },
     {
         id: 1,
