@@ -28,7 +28,7 @@ import $ from 'jquery';
   providers: [DatePipe, CurrencyPipe ],
 })
 
-export class PayRentFormComponent implements OnInit, OnDestroy {
+export class PayRentFormComponent implements OnInit, OnDestroy {  
 
   showPaymentForReserve: boolean;
   showPaymentForMoveIn: boolean;
@@ -50,6 +50,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   invalidPayment: string;
   sessionExpire: string;
   showInput = false;
+  showInputFormat = true;
   submitted = false;
   showloaderForPayment = false;
   toggleSignUp = false;
@@ -73,7 +74,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   logOut = {};
   defaultCardType: string;
 
-  otherValue : any;
+  // otherValue : string = this.currencyPipe.transform(0, 'USD');
+  otherValue : any = 0;
   id: string;
 
   UnpaidAR: UnpaidAR[];
@@ -381,11 +383,20 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     }
   }
 
+  onShowInputFormat(){
+    this.showInputFormat = !this.showInputFormat;    
+  }
+
   onKeyUp(e: any) {
+    if (e.target.value) {
+      this.otherValue = e.target.value;
+    } else {
+      this.otherValue = 0;
+    }
     this.customOtherValue = e.target.value;
     this.surchargeService.setAmt(e.target.value);
-        setTimeout(() => {
-        this.getSurCharge();
+    setTimeout(() => {
+      this.getSurCharge();
     }, 1000);
   }
 
