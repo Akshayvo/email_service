@@ -588,6 +588,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           }
           this.showSuccessPayment = true;
         } else {
+          this.showloaderForPayment = false;
           this.makePaymentForUnit = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
