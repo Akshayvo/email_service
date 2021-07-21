@@ -25,20 +25,20 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Monday - Friday: ',
-        data: '9:00AM to 5:00PM'
+        label: 'Sunday - Monday: ',
+        data: 'Closed'
+    },
+    {
+        label: 'Tuesday - Friday: ',
+        data: ' 9:00AM to 5:00PM'
     },
     {
         label: 'Saturday: ',
         data: '9:00AM to 2:00PM'
     },
     {
-        label: 'Sunday: ',
-        data: 'CLOSED'
-    },
-    {
         label: 'Access Hours: ',
-        data: '24 Hours a Day 7 Days a Week'
+        data: '7 Days a Week 6:00AM - 10:00PM'
     }
 ];
 
