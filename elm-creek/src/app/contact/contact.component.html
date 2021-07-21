@@ -89,15 +89,16 @@
                 *ngIf="((contact?.label != 'Email:') && (contact?.label != 'Phone:'))"
                 ><h4 [class.py-1]="contact.label" class="mb-0">
                   <strong>{{ contact.label }}&nbsp;</strong>
-                </h4></div
+                </h4>
+                </div
               >
               <div
   
                 *ngIf="((contact?.label == 'Email:') && (contact?.label != 'Phone:'))"
                 ><h4 [class.py-1]="contact.label" class="mb-0">
                   <strong>{{ contact.label }}&nbsp;</strong>
-                </h4></div
-              >
+                </h4>
+                </div>
               <div
                 class="contact-links"
                 *ngIf="
@@ -158,17 +159,17 @@
               </div>
             </div>
   
-            <span class="display-contact" *ngFor="let hour of hours">
+            <div class="display-contact" *ngFor="let hour of hours">
               <h4
                 [class.py-1]="hour.label"
                 *ngIf="hour.label != 'Business Hours: '"
               >
                 <strong>{{ hour.label }}</strong>
-              </h4>
+              </h4>&nbsp;
               <h4 class="py-1" *ngIf="hour.label != 'Business Hours: '">
                 {{ hour.data }}
               </h4>
-            </span>
+            </div>
           </div>
         </div>
       </div>
