@@ -190,7 +190,9 @@
                             Reservation Charges
                         </td>
                         <td>
-                            ${{reservationFee}} <span *ngIf="reservationFeeTax"> + ${{reservationFeeTax}}(Tax)</span>
+                            ${{reservationFee}} 
+                            <!-- <span *ngIf="reservationFeeTax"> + ${{reservationFeeTax}}(Tax)</span> -->
+                            + ${{reservationFeeTax}}(Tax) = ${{totalReserveTaxAndCharges}}
                         </td>
                     </tr>
                     <tr *ngIf="!navigateToMoveIn">
@@ -206,10 +208,10 @@
                             Total Charges
                         </td>
                         <td>
-                            ${{totalChargesAmount}}
-                            <span *ngIf="totalTaxAmount > 0">
-                                    + ${{totalTaxAmount}} (Tax)
-                            </span>
+                            ${{totalChargesAmount}} + ${{totalTaxAmount}} (Tax) = ${{totalTaxAndCharges}}
+                            <!-- <span *ngIf="totalTaxAmount > 0">
+                                    + ${{totalTaxAmount}} (Tax) = ${{totalTaxAndCharges}}
+                            </span> -->
                         </td>                   
                     </tr>
                     <tr>

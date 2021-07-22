@@ -470,7 +470,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   public navigateToConfirmation(location: any) {
-    this.router.navigate([location]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
   }
 
   getPayMethods() {

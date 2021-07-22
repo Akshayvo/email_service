@@ -43,7 +43,8 @@
           </td>
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
             <!-- <button><a [href]="contact.redirect" class="moveinbutton">Call The Facility</a></button> -->
-            <button class="moveinbutton" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
+            <!-- <button class="moveinbutton" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button> -->
+            <button class="btn btn-primary moveinbutton" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
             <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
           </td>
           <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled && showClimateControl; else other_climate">
@@ -62,7 +63,8 @@
           <ng-template #other_moveIn >
             <td colspan="2" class="py-2 px-4 border text-center" *ngIf="showMovein">
             <!-- <div class="text-center">Please call the facility to move in.</div> -->
-            <button class="callfacilitybutton" (click)="navigatetoContactPage('/contact-us')">Contact Us</button>
+            <!-- <button class="callfacilitybutton" (click)="navigatetoContactPage('/contact-us')">Contact Us</button> -->
+            <button class="btn btn-primary contactbutton" (click)="navigate('/contact-us')"> Contact Us</button>
           </td>
           </ng-template>
         </tr> 
@@ -90,14 +92,16 @@
           </div>
           <div class="py-1 buttons" *ngIf="showMovein"> 
             <!-- <a [href]="contact.redirect" class="btn btn-outline-primary moveinbuttonmobile"> Call The Facility </a> -->
-              <button class="btn btn-outline-primary moveinbuttonmobile" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
+              <!-- <button class="btn btn-outline-primary moveinbuttonmobile" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button> -->
+              <button class="btn btn-primary moveinbuttonmobile" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </div>
         </div>
         
         <ng-template #other> 
           <!-- <div class="text-right" *ngIf="showMovein || showReserve" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div> -->
-          <a class="btn btn-outline-primary othercasebutton" (click)="navigatetoContactPage('/contact-us')" role="button"> Contact Us </a>
-        
+          <!-- <a class="btn btn-outline-primary othercasebutton" (click)="navigatetoContactPage('/contact-us')" role="button"> Contact Us </a> -->
+          <button class="btn btn-primary othercasebutton" (click)="navigate('/contact-us')"> Contact Us</button>
+          
         </ng-template>
     </div>
   </div>

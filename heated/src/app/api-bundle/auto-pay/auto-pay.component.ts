@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { SurchargeService } from '../services/surcharge.service';
 import { DataSharingService } from '../services/data-sharing.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-auto-pay',
@@ -353,7 +354,7 @@ export class AutoPayComponent implements OnInit, OnDestroy {
   }
 
   public navigateToConfirmation(location: any) {
-    this.router.navigate([location]);
+    this.router.navigate([`${environment.locationName}/${location}`]);
   }
 
   getPayMethods() {

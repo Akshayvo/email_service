@@ -25,9 +25,13 @@
   margin-bottom: 3px;
   text-decoration: none;
   outline: 0;
+  background-color: #1d80c3 !important;
+  border-color: #1d80c3 !important;
+  
 }
 .othercasebutton {
-  color: $primary;
+  color: $white;
+  
 }
 
 .card-text {
@@ -69,8 +73,15 @@ table {
         }
 
         .btn-primary {
-          background-color: #3f3c3c !important;
-          border-color: #212121 !important;
+          background-color: $primary !important;
+          border-color: $primary !important;
+        }
+
+        .moveinbutton{
+          
+            background-color: #1d80c3 !important;
+            border-color: #1d80c3 !important;
+          
         }
       }
     }
@@ -139,7 +150,7 @@ p {
     }
   }
   .othercasebutton {
-    color: $primary !important;
+    color: $white !important;
     margin-right: auto;
   }
 }
@@ -159,7 +170,7 @@ p {
     }
   }
   .othercasebutton {
-    color: $primary !important;
+    color: $white !important;
     min-width: 150px;
     margin-right: auto;
   }

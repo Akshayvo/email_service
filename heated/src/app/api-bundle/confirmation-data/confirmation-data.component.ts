@@ -133,6 +133,9 @@ fetchSharedData() {
   this.totalTaxAmount = this.dataSharingService.MoveInData.TotalTaxAmount;
   this.totalChargesAmount = this.dataSharingService.MoveInData.TotalChargesAmount;
   this.period = this.dataSharingService.period;
+  this.totalTaxAndCharges = this.totalTaxAmount + this.totalChargesAmount;
+  console.log("totalTaxAndCharges",this.totalTaxAndCharges)
+  
 }
 
 public fetchOption() {
@@ -203,8 +206,9 @@ getTenantUnitData() {
   this.description = this.dataSharingService.LstUnitTypes.Description;
   this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
   this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
-  this.driversLicenseExpDate = this.dataSharingService.objTenant.DriversLicenseExpDate;
-  this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
+  this.driversLicenseExpDate = this.convertDateConfirmation(this.dataSharingService.objTenant.DriversLicenseExpDate);
+  // this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
+  this.dateOfBirth = this.convertDateConfirmation(this.dataSharingService.objTenant.DateOfBirth);
   this.militaryType = this.dataSharingService.objTenant.MilitaryType;
   this.militaryBranch = this.dataSharingService.objTenant.MilitaryBranch;
   this.militaryID = this.dataSharingService.objTenant.MilitaryID;
@@ -212,6 +216,8 @@ getTenantUnitData() {
   this.militaryDivision = this.dataSharingService.objTenant.MilitaryDivision;
   this.commandingOfficer = this.dataSharingService.objTenant.CommandingOfficer;
   this.commandingOfficerPhone = this.dataSharingService.objTenant.CommandingOfficerPhone;
+  this.totalReserveTaxAndCharges = this.reservationFee + this.reservationFee ;
+
 }
 
   addTenant(data: any): void {
@@ -287,6 +293,12 @@ getTenantUnitData() {
       const formattedNormalDate = new Date(date);
       // tslint:disable-next-line:max-line-length
       return `${formattedNormalDate.getMonth() + 1}-${formattedNormalDate.getDate()}-${formattedNormalDate.getFullYear()}`;
+    }
+
+    convertDateConfirmation(date: any) {
+      const formattedNormalDate = new Date(date);
+      // tslint:disable-next-line:max-line-length
+      return ((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1)) + '/' + ((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' + date.getFullYear());
     }
 
     moveIn(strAccessCode: any) {
@@ -414,4 +426,7 @@ getTenantUnitData() {
       this.destroyed.next();
       this.destroyed.complete();
     }
+
+    
+ 
 }
