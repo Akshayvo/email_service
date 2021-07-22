@@ -36,7 +36,7 @@ export const hours = [
 export const officeHours = [
     {
         label: 'Office: ',
-        data: 'Monday- Friday 8:00am-3:00pm'
+        data: 'Monday- Friday 9:00AM - 4:00PM'
     },
     {
         label: '',
