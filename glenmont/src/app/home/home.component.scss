@@ -565,16 +565,16 @@
     text-align: center;
     background-attachment: unset;
     background-position: center left;
-    height: 100vh;
+    height: 80vh;
   }
 
-  .feature {
-    margin-top: 10rem;
-  }
+  // .feature {
+  //   display: none;
+  // }
 
-  .jumbotron-bottom {
-    height: 36vh;
-  }
+  // .jumbotron-bottom {
+  //   height: 36vh;
+  // }
 
   .feature-icon-style {
     padding: 14px;
@@ -598,7 +598,7 @@
     width: 100%;
     left: auto;
     height: 90px;
-    bottom: 0;
+    bottom: 0px;
     position: absolute;
   }
 
@@ -617,17 +617,23 @@
 @media only screen and (max-width: 429px) {
   .jumbotron {
     text-align: center;
-    background-attachment: unset;
-    background-position: center left;
-    height: 100vh;
+    // background-attachment: unset;
+    background-position: calc(100% - -101px);
+    background-size: cover;
+    height: 80vh;
   }
 
-  .feature {
-    margin-top: 8rem;
+  .jumbotron-top{
+    margin-top: 129px;
   }
-  .jumbotron-bottom {
-    height: 36vh;
-  }
+  
+
+  // .feature {
+  //   margin-top: 8rem;
+  // }
+  // .jumbotron-bottom {
+  //   height: 36vh;
+  // }
 
   .feature-icon-style {
     padding: 14px;
@@ -651,7 +657,7 @@
     transform: skew(0deg);
     width: 100%;
     left: auto;
-    height: 150px;
+    height: 100px;
     bottom: 0;
     position: absolute;
   }
