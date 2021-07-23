@@ -188,8 +188,11 @@ public fetchTwitter() {
               this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/changePassword`]);
             } else {
             if (this.router.url.includes('rent-sub')) {
+              console.log('fegfyg', this.paymentTab);
               this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/payment`]);
             } else {
+              console.log('else', this.paymentTab);
+
               this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/auto-pay`]);
             }
           }
