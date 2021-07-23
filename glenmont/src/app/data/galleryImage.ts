@@ -37,28 +37,28 @@ export const galleryHome = [
 ];
 
 export const galleryViewRates = [
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `self-storage-gate`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `self-storage-gate`,
-    alt: `self storage facility automated gate with personalized pin-code pad`,
-  },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `self-storage-unit-buildings`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `self-storage-unit-buildings`,
-    alt: `rows of self storage unit buildings with wide paved parking lanes between the buildings`,
-  },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `self-storage-units`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `self-storage-units`,
-    alt: `several self storage unit buildings with paved parking spaces between buildings
-    `,
-  },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `self-storage-gate`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `self-storage-gate`,
+  //   alt: `self storage facility automated gate with personalized pin-code pad`,
+  // },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `self-storage-unit-buildings`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `self-storage-unit-buildings`,
+  //   alt: `rows of self storage unit buildings with wide paved parking lanes between the buildings`,
+  // },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `self-storage-units`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `self-storage-units`,
+  //   alt: `several self storage unit buildings with paved parking spaces between buildings
+  //   `,
+  // },
   {
     // tslint:disable-next-line: max-line-length
     url: `self-storage`,
@@ -66,13 +66,13 @@ export const galleryViewRates = [
     thumb: `self-storage`,
     alt: `self storage facility exit sign thanking customers for storing with Glenmont Self Storage`,
   },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `welcome-to-glenmont`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `welcome-to-glenmont`,
-    alt: ` welcome sign posted outside of a self storage facility`,
-  },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `welcome-to-glenmont`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `welcome-to-glenmont`,
+  //   alt: ` welcome sign posted outside of a self storage facility`,
+  // },
   {
     // tslint:disable-next-line: max-line-length
     url: `glenmont-self-storage-electronic-gate`,
