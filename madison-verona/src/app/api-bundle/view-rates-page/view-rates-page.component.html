@@ -48,9 +48,9 @@
             <td colspan="2" class="px-4 border text-center" id='setup-fee' *ngIf="showDeposit " >
               <span *ngIf="lstUnitType.SetupFee != null">$</span>{{lstUnitType.SetupFee | number : '1.2-2'}}
             </td>
-            <td colspan="2" class="py-2 px-4 border text-center" id='reserve' *ngIf="lstUnitType.IsUnitsAvailable && showReserve && lstUnitType.IsClimateControlled; else other_reserve" >
+            <!-- <td colspan="2" class="py-2 px-4 border text-center" id='reserve' *ngIf="lstUnitType.IsUnitsAvailable && showReserve && lstUnitType.IsClimateControlled; else other_reserve" >
                 <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-            </td>
+            </td> -->
             <td colspan="2" class="py-2 px-4 border text-center" id='move-in' *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
               <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
               <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
@@ -98,11 +98,11 @@
       </div>
       <div class="col-6 d-flex justify-content-center">
       <div>
-        <div *ngIf="lstUnitType.IsUnitsAvailable; else otherreserve">
+        <!-- <div *ngIf="lstUnitType.IsUnitsAvailable; else otherreserve">
           <div class=" py-1 buttons" id='reserve' *ngIf="showReserve">
             <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </div>
-        </div>
+        </div> -->
         <div *ngIf="lstUnitType.IsUnitsAvailable; else othermovein">
           <div class="py-1 buttons" id='move-in' *ngIf="showMovein">
             <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move
@@ -163,9 +163,9 @@
             <td colspan="2" class="px-4 border text-center" id='setup-fee'  *ngIf="showDeposit " >
               <span *ngIf="lstUnitType.SetupFee != null">$</span>{{lstUnitType.SetupFee | number : '1.2-2'}}
             </td>
-            <td colspan="2" class="py-2 px-4 border text-center" id='reserve'  *ngIf="lstUnitType.IsUnitsAvailable && showReserve ; else other_reserve" >
+            <!-- <td colspan="2" class="py-2 px-4 border text-center" id='reserve'  *ngIf="lstUnitType.IsUnitsAvailable && showReserve ; else other_reserve" >
                 <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-            </td>
+            </td> -->
             <td colspan="2" class="py-2 px-4 border text-center" id='move-in' *ngIf="lstUnitType.IsUnitsAvailable && showMovein ; else other_moveIn" >
               <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
               <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
@@ -213,11 +213,11 @@
       </div>
       <div class="col-6 d-flex justify-content-center">
         <div>
-        <div *ngIf="lstUnitType.IsUnitsAvailable; else otherreserve">
+        <!-- <div *ngIf="lstUnitType.IsUnitsAvailable; else otherreserve">
           <div class=" py-1 buttons" id='reserve' *ngIf="showReserve">
             <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </div>
-        </div>
+        </div> -->
         <div *ngIf="lstUnitType.IsUnitsAvailable; else othermovein">
           <div class="py-1 buttons" id='move-in' *ngIf="showMovein">
             <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move
@@ -277,9 +277,9 @@
             <td colspan="2" class="px-4 border text-center" id='setup-fee' *ngIf="showDeposit " >
               <span *ngIf="lstUnitType.SetupFee != null">$</span>{{lstUnitType.SetupFee | number : '1.2-2'}}
             </td>
-            <td colspan="2" class="py-2 px-4 border text-center" id='reserve' *ngIf="lstUnitType.IsUnitsAvailable && showReserve && lstUnitType.IsClimateControlled; else other_reserve" >
+            <!-- <td colspan="2" class="py-2 px-4 border text-center" id='reserve' *ngIf="lstUnitType.IsUnitsAvailable && showReserve && lstUnitType.IsClimateControlled; else other_reserve" >
                 <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-            </td>
+            </td> -->
             <td colspan="2" class="py-2 px-4 border text-center" id='move-in' *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn" >
               <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
               <link *ngIf="lstUnitType.IsUnitsAvailable" itemprop="availability" href="https://schema.org/InStock" />
@@ -329,11 +329,11 @@
       </div>
       <div class="col-6 d-flex justify-content-center">
         <div>
-        <div *ngIf="lstUnitType.IsUnitsAvailable; else otherreserve">
+        <!-- <div *ngIf="lstUnitType.IsUnitsAvailable; else otherreserve">
           <div class=" py-1 buttons" id='reserve' *ngIf="showReserve">
             <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </div>
-        </div>
+        </div> -->
         <div *ngIf="lstUnitType.IsUnitsAvailable; else othermovein">
           <div class="py-1 buttons" id='move-in' *ngIf="showMovein">
             <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move

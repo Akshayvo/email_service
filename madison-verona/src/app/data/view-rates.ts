@@ -33,11 +33,11 @@ export const th = [
     data: "Setup Fee",
     state: objSIMSetting.objUnitSizesSetting.blnShowDeposit,
   },
-  {
-    id: `reserve`,
-    data: `Reserve a Unit`,
-    state: objSIMSetting.objActionSetting.blnAllowReservation,
-  },
+  // {
+  //   id: `reserve`,
+  //   data: `Reserve a Unit`,
+  //   state: objSIMSetting.objActionSetting.blnAllowReservation,
+  // },
   {
     id: `move-in`,
     data: `Move In`,
