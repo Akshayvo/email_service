@@ -59,13 +59,13 @@ export const galleryViewRates = [
   //   alt: `several self storage unit buildings with paved parking spaces between buildings
   //   `,
   // },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `self-storage`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `self-storage`,
-    alt: `self storage facility exit sign thanking customers for storing with Glenmont Self Storage`,
-  },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `self-storage`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `self-storage`,
+  //   alt: `self storage facility exit sign thanking customers for storing with Glenmont Self Storage`,
+  // },
   // {
   //   // tslint:disable-next-line: max-line-length
   //   url: `welcome-to-glenmont`,
