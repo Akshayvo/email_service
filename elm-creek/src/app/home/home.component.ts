@@ -87,8 +87,10 @@ export class HomeComponent implements OnInit {
   }
 
   public navigate(location: any) {
-    if ((location === '/view-rates') || (location === '/storage-tips') || (location === '/reserve-unit')) {
+    if ( (location === '/storage-tips') || (location === '/reserve-unit')) {
       this.router.navigate([`${environment.locationName}/${location}`]);
+    } else if (location === '/view-rates'){
+      this.router.navigate([`baldwinsville/${location}`]);
     } else {
       this.router.navigate([`${location}`]); 
     }
