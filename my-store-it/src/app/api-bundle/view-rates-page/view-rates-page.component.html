@@ -47,7 +47,7 @@
           <td colspan="2" class="px-4 border text-center" *ngIf="showRate">
             <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
             <meta itemprop="priceRange" content="{{lstUnitType.MonthlyRate}}" />
-        </td>
+          </td>
           <td colspan="2" class="px-4 border text-center">
               <button class="ml-2 py-1 buttons text-center" (click)="navigate('/contact-us', lstUnitType )">Join Waiting List</button>
           </td>
@@ -83,7 +83,7 @@
   <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes">
     <div class="col-6 text-center">  
       <strong>Unit Size</strong>
-    <div class="py-1">{{lstUnitType.size}}</div>
+    <div class=" py-1 ">{{lstUnitType.Description}}</div>
     <div class="row">
         <!-- <div class="col-6 text-center" *ngIf="showRate"> -->
           <div class="col-12 text-center">

@@ -1,26 +1,31 @@
-import { Component, OnInit, OnDestroy, ElementRef, HostListener, } from '@angular/core';
-import { Subscription } from 'rxjs';
-import { MoveInService } from '../services/moveIn.service';
-import { ObjCharges } from '../models/movein';
-import { UnitTypes, LstUnitTypes } from '../models/unittypes';
-import { FetchDataService } from '../services/fetch-data.service';
-import { th,staticViewRates } from '../../data/view-rates';
-import { Router } from '@angular/router';
-import { DataSharingService } from '../services/data-sharing.service';
-import { environment } from '../../../environments/environment';
-import { objSIMSetting } from '../../data/configuration';
-import { script } from '../../data/script';
+import {
+  Component,
+  OnInit,
+  OnDestroy,
+  ElementRef,
+  HostListener,
+} from "@angular/core";
+import { Subscription } from "rxjs";
+import { MoveInService } from "../services/moveIn.service";
+import { ObjCharges } from "../models/movein";
+import { UnitTypes, LstUnitTypes } from "../models/unittypes";
+import { FetchDataService } from "../services/fetch-data.service";
+import { th, staticViewRates } from "../../data/view-rates";
+import { Router } from "@angular/router";
+import { DataSharingService } from "../services/data-sharing.service";
+import { environment } from "../../../environments/environment";
+import { objSIMSetting } from "../../data/configuration";
+import { script } from "../../data/script";
 @Component({
-  selector: 'app-view-rates-page',
-  templateUrl: './view-rates-page.component.html',
-  styleUrls: ['./view-rates-page.component.scss']
+  selector: "app-view-rates-page",
+  templateUrl: "./view-rates-page.component.html",
+  styleUrls: ["./view-rates-page.component.scss"],
 })
 export class ViewRatesPageComponent implements OnInit, OnDestroy {
-
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
-  ViewRatesData : any
+  ViewRatesData: any;
   descriptionVR: string;
   monthlyRateVR: number;
   unitTypeIdVR: number;
@@ -40,7 +45,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showLoader = false;
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
-  defaultClimateString = ' ';
+  defaultClimateString = " ";
 
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
@@ -53,7 +58,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showDeposit: boolean;
   showReserve: boolean;
   showMovein: boolean;
-  showClimateControl: boolean; 
+  showClimateControl: boolean;
   facilityName: string;
   state: string;
 
@@ -66,83 +71,91 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     private eRef: ElementRef
   ) {
     this.facilityName = environment.facilityName;
-   }
-
+  }
 
   ngOnInit() {
     this.getData();
-    this.fetchThData(); 
-    this.fetchStaticViewRates();   
+    this.fetchThData();
+    this.fetchStaticViewRates();
     this.state = script.state;
   }
 
   public fetchThData() {
-    this.th = th.filter(x => x.state === true);
+    this.th = th.filter((x) => x.state === true);
     this.showRate = objSIMSetting.objUnitSizesSetting.blnShowRate;
     this.showDeposit = objSIMSetting.objUnitSizesSetting.blnShowDeposit;
     this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;
     this.showMovein = objSIMSetting.objActionSetting.blnAllowMoveIn;
-    this.showClimateControl = objSIMSetting.objUnitSizesSetting.blnClimateControl;
+    this.showClimateControl =
+      objSIMSetting.objUnitSizesSetting.blnClimateControl;
   }
 
   public fetchStaticViewRates() {
-    this.ViewRatesData = staticViewRates
+    this.ViewRatesData = staticViewRates;
   }
 
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);
     this.router.navigate([`${environment.locationName}/${location}`]);
     this.dataSharingService.LstUnitTypes = unitData;
-    if (location === '/contact-us')  {
-      this.router.navigate([`${location}`]); 
+    if (location === "/contact-us") {
+      this.router.navigate([`${location}`]);
     }
   }
 
   getMoveInCharges(description: any, monthlyRate: any, intUnitTypeID: any) {
     this.showLoader = true;
-    this.getMoveinChargesService.getMoveInCharges({
-      intUnitTypeID
-    }).subscribe(result => {
-      this.showLoader = false;
-      const {objCharges: {
-        ProrateAmt = 0,
-        Deposit = 0,
-        DepositTax = 0,
-        Rate = 0,
-        RateTax= 0,
-        ProrateTax = 0,
-        OthDeposit = 0,
-        Setup = 0,
-        SetupTax = 0,
-        TotalTaxAmount = 0,
-        TotalChargesAmount = 0,
-      }} = result;
-      this.prorateAmt = ProrateAmt;
-      this.deposit = Deposit;
-      this.depositTax = DepositTax;
-      this.rate = Rate;
-      this.rateTax = RateTax;
-      this.prorateAmtTax = ProrateTax;
-      this.othDeposit = OthDeposit;
-      this.setup = Setup;
-      this.setupTax = SetupTax;
-      this.defaultTotalTaxAmount = TotalTaxAmount;
-      this.defaultTotalChargesAmount = TotalChargesAmount;
-      this.showPaymentForMoveIn = true;
-      this.descriptionVR = description;
-      this.monthlyRateVR = monthlyRate;
-      this.unitTypeIdVR = intUnitTypeID;
-      this.curStage = 2;
-      }, err => {
-      });
+    this.getMoveinChargesService
+      .getMoveInCharges({
+        intUnitTypeID,
+      })
+      .subscribe(
+        (result) => {
+          this.showLoader = false;
+          const {
+            objCharges: {
+              ProrateAmt = 0,
+              Deposit = 0,
+              DepositTax = 0,
+              Rate = 0,
+              RateTax = 0,
+              ProrateTax = 0,
+              OthDeposit = 0,
+              Setup = 0,
+              SetupTax = 0,
+              TotalTaxAmount = 0,
+              TotalChargesAmount = 0,
+            },
+          } = result;
+          this.prorateAmt = ProrateAmt;
+          this.deposit = Deposit;
+          this.depositTax = DepositTax;
+          this.rate = Rate;
+          this.rateTax = RateTax;
+          this.prorateAmtTax = ProrateTax;
+          this.othDeposit = OthDeposit;
+          this.setup = Setup;
+          this.setupTax = SetupTax;
+          this.defaultTotalTaxAmount = TotalTaxAmount;
+          this.defaultTotalChargesAmount = TotalChargesAmount;
+          this.showPaymentForMoveIn = true;
+          this.descriptionVR = description;
+          this.monthlyRateVR = monthlyRate;
+          this.unitTypeIdVR = intUnitTypeID;
+          this.curStage = 2;
+        },
+        (err) => {}
+      );
   }
 
   getData() {
-  this.getDataSubscribe$ = this.fetchDataService.getData()
-    .subscribe(unitTypesResponse => {
-      this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
-    });
+    this.getDataSubscribe$ = this.fetchDataService
+      .getData()
+      .subscribe((unitTypesResponse) => {
+        this.showTable = true;
+        this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+        console.log(this.LstUnitTypes);
+      });
   }
 
   public ngOnDestroy(): void {
