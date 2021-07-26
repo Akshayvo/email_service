@@ -17,6 +17,7 @@ export class LstUnitTypes {
     ReservationFeeTax: number;
     UnitTypeID: number;
     IsUnitsAvailable: boolean;
+    IsOutdoor: boolean;
     IsClimateControlled: boolean;
     IsAutomobile: boolean;
 
