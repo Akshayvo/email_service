@@ -29,6 +29,9 @@ import { environment } from '../../environments/environment';
 import { ThankYouComponent } from '../api-bundle/thank-you/thank-you.component';
 import { ThankYouGuard } from '../thank-you.guard';
 import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
+import { UpdateDetailsComponent } from '../api-bundle/update-details/update-details.component';
+import { UpdateComponent } from '../api-bundle/update/update.component';
+import { FaqComponent } from '../faq/faq.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -68,7 +71,19 @@ const withTab = [
           { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
           // canActivate: [VerifictionCodeGuard]
         ]
-      }
+      },
+      { path: 'update', component: UpdateComponent,
+      children: [
+        {path: '', redirectTo: 'login', pathMatch: 'full'},
+        {path: 'login', component: LoginComponent },
+        {path: 'forgotPassword', component: ForgotPasswordComponent },
+        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+        {path: 'update-information', component: UpdateDetailsComponent, canActivate: [AuthGuard]},
+        { path: 'verifyCode', component: VerifyCodeComponent },
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+        // canActivate: [VerifictionCodeGuard]
+      ]
+    }
 ];
 
 // const reservationForm = environment
@@ -85,6 +100,7 @@ const reviewURL = ``
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
+    { path: 'faq', component: FaqComponent },
     {
       path: `${environment.locationName}/view-rates`,
       component: ViewRatesComponent,
@@ -138,6 +154,7 @@ export const iFrameRoutes = [
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
+    { path: 'faq', component: FaqComponent },
     { path: 'review', component: HomeComponent,
       resolve: {
           url: 'externalUrlRedirectResolver'
