@@ -11,7 +11,7 @@ export const contact = [
         label: 'Email:',
         data: 'sales@syrasoft.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:`sales@syrasoft.com`'
+        redirect: 'mailto:sales@syrasoft.com'
     },
     {
         id: 2,
