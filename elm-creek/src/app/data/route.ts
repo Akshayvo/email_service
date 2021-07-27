@@ -100,7 +100,7 @@ const reviewURL = ``
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     {
-      path: `${environment.locationName}/view-rates`,
+      path: `baldwinsville/view-rates`,
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
@@ -147,7 +147,7 @@ export const iFrameRoutes = [
     { path: '', component: HomeComponent },
     { path: 'pay-rent', component: PaymentIframePageComponent },
     { path:  `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
-    { path: `${environment.locationName}/view-rates`, component: ViewRatesIframePageComponent },
+    { path: `baldwinsville/view-rates`, component: ViewRatesIframePageComponent },
     { path: `${environment.locationName}/reserve-unit`, component: ReserveUnitIframePageComponent },    
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },

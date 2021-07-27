@@ -7,7 +7,9 @@ export const navLinks = [
     },
     {
         label: 'VIEW RATES',
-        path: `${environment.locationName}/view-rates`,
+        path: `baldwinsville/view-rates`,
+        //customer wanted this url specifically
+        // if in case reserve button is added please check the navigate function
     },
     // {
     //     label: 'RENT NOW',

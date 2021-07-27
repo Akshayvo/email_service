@@ -163,10 +163,10 @@ public fetchOption() {
 
 public navigateToPrevious() {
   if (this.dataSharingService.navigateToMoveIn) {
-    this.router.navigate([`${environment.locationName}/view-rates/move-in`]);
+    this.router.navigate([`baldwinsville/view-rates/move-in`]);
   } else {
     if (this.dataSharingService.navigateToReserve) {
-      this.router.navigate([`${environment.locationName}/view-rates/reserve`]);
+      this.router.navigate([`baldwinsville/view-rates/reserve`]);
     }
   }
 }
@@ -238,14 +238,14 @@ getTenantUnitData() {
       if (result.intErrorCode === 1 ) {
         if (this.navigateToMoveIn ) {
           if (this.dataSharingService.MoveInData.TotalChargesAmount > 0 ) {
-            this.router.navigate([`${environment.locationName}/view-rates/payMoveInCharges`]);
+            this.router.navigate([`baldwinsville/view-rates/payMoveInCharges`]);
           } else {
             this.moveIn(this.MoveIn);
           }
         } else {
           if (this.navigateToReserve) {
             if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
-              this.router.navigate([`${environment.locationName}/view-rates/payReservationCharges`]);
+              this.router.navigate([`baldwinsville/view-rates/payReservationCharges`]);
             } else {
               this.makeAReservation(this.MoveIn);
             }
@@ -268,7 +268,7 @@ getTenantUnitData() {
             localStorage.removeItem('strTempTenantToken');
           }
           // this.showConfirmation = false;
-          this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
+          this.router.navigate([`baldwinsville/view-rates/thank-you`]);
           this.reservationInProgress = false;
         }
       }, (err: any) => {
@@ -304,7 +304,7 @@ getTenantUnitData() {
             if (localStorage.getItem('strTempTenantToken')) {
               localStorage.removeItem('strTempTenantToken');
             }
-            this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
+            this.router.navigate([`baldwinsville/view-rates/thank-you`]);
             this.reservationInProgress = false;
           }
         }, (err: any) => {
@@ -348,13 +348,13 @@ getTenantUnitData() {
           if (!this.isValueUpdated) {
             if (this.navigateToMoveIn === true) {
               if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
-                this.router.navigate([`${environment.locationName}/view-rates/payMoveInCharges`]);
+                this.router.navigate([`baldwinsville/view-rates/payMoveInCharges`]);
               } else {
                 this.moveIn(this.MoveIn);
               }
             } else {
               if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
-                this.router.navigate([`${environment.locationName}/view-rates/payReservationCharges`]);
+                this.router.navigate([`baldwinsville/view-rates/payReservationCharges`]);
                } else {
                  this.makeAReservation(this.MoveIn);
                }
@@ -367,13 +367,13 @@ getTenantUnitData() {
             if (!this.isValueUpdated) {
               if (this.navigateToMoveIn === true) {
                 if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
-                  this.router.navigate([`${environment.locationName}/view-rates/payMoveInCharges`]);
+                  this.router.navigate([`baldwinsville/view-rates/payMoveInCharges`]);
                 } else {
                   this.moveIn(this.MoveIn);
                 }
               } else {
                 if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
-                  this.router.navigate([`${environment.locationName}/view-rates/payReservationCharges`]);
+                  this.router.navigate([`baldwinsville/view-rates/payReservationCharges`]);
                  } else {
                    this.makeAReservation(this.MoveIn);
                  }
@@ -383,7 +383,7 @@ getTenantUnitData() {
             if (this.navigateToMoveIn === true) {
               if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
                 this.dataSharingService.addingTenant = true;
-                this.router.navigate([`${environment.locationName}/view-rates/payMoveInCharges`]);
+                this.router.navigate([`baldwinsville/view-rates/payMoveInCharges`]);
               } else {
                 this.addTenant(this.tenantData);
               }
@@ -391,7 +391,7 @@ getTenantUnitData() {
               if (this.dataSharingService.LstUnitTypes.ReservationFee  > 0 ) {
                 this.dataSharingService.addingTenant = true;
                 this.dataSharingService.addingTenant = true;
-                this.router.navigate([`${environment.locationName}/view-rates/payReservationCharges`]);
+                this.router.navigate([`baldwinsville/view-rates/payReservationCharges`]);
                } else {
                 this.addTenant(this.tenantData);
               }

@@ -6,7 +6,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>https://elm-creek-staging.netlify.app/oklahoma/owasso/view-rates</loc>
+=======
+    <loc>https://elm-creek-staging.netlify.app/baldwinsville/view-rates</loc>
+>>>>>>> a6bdf81c29095fded7251993339cfc06cfd56631
     <lastmod>2018-09-25</lastmod>
     <priority>0.9</priority>
   </url>

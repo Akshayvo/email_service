@@ -470,7 +470,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   public navigateToConfirmation() {
-    this.router.navigate([`${environment.locationName}/view-rates/confirmation`]);
+    this.router.navigate([`baldwinsville/view-rates/confirmation`]);
   }
 
   getPayMethods() {
@@ -658,7 +658,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         localStorage.removeItem('strTempTenantToken');
         this.tokenRemoved = true;
       }
-      this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
+      this.router.navigate([`baldwinsville/view-rates/thank-you`]);
       this.reservationInProgress = false;
     }, (err: any) => {
       this.makePaymentForUnit = false;
@@ -702,7 +702,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           localStorage.removeItem('strTempTenantToken');
           this.tokenRemoved = true;
         }
-        this.router.navigate([`${environment.locationName}/view-rates/thank-you`]);
+        this.router.navigate([`baldwinsville/view-rates/thank-you`]);
         this.reservationInProgress = false;
       }, (err: any) => {
         this.makePaymentForUnit = false;

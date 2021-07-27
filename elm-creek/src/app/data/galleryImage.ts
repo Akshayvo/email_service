@@ -27,4 +27,11 @@ export const galleryHome = [
     thumb: `elm-creek-mini-storage-office-thumb`,
     alt: `the interior of a self storage facility office with locks for sale and a front counter`
   },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `elm-cree-mini-storage-units-in-row`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `elm-cree-mini-storage-units-in-row-thumb`,
+    alt: `single story self storage unit building with metal roll-up doors`
+  },
 ];
