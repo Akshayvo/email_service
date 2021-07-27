@@ -24,9 +24,176 @@
 
 <nav class="navbar navbar-expand-lg bg-white" id="nav-header">
   <div class="container">
-    <a class="navbar-brand" (click)="navigate('/')">
+    <ng-container *ngIf="currentRoute === undefined && currentRouteForPayment === '/pay-rent' && currentRouteForContact === '/contact-us'">
+    <a class="navbar-brand" (click)="navigate('/')" >
       <img src="{{imageBaseUrl}}/clarke-plaza-self-storage-logo.{{imagetype}}" width="auto" height="70px"  alt="logo artwork in the shape of a roof with the number 24 below and the words Clarke Plaza Self Storage">
     </a>
+    </ng-container>
+
+    <ng-container
+      *ngIf="currentRoute === undefined && currentRouteForPayment === 'clarke-plaza/rent-sub/login' && currentRouteForContact === '/contact-us'">
+      <a class="navbar-brand" (click)="navigate('/')">
+        <img src="{{imageBaseUrl}}/clarke-plaza-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+          alt="logo artwork in the shape of a roof with the number 24 below and the words Clarke Plaza Self Storage">
+      </a>
+    </ng-container>
+    <ng-container
+      *ngIf="currentRoute === undefined && currentRouteForPayment === 'ossipee/rent-sub/login' && currentRouteForContact === '/contact-us'">
+      <a class="navbar-brand" (click)="navigate('/')">
+        <img src="{{imageBaseUrl}}/ossipee-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+          alt="logo artwork that spells out Ossipee Self Storage">
+      </a>
+    </ng-container>
+    
+<ng-container *ngIf="currentRoute === undefined && currentRouteForPayment === '/pay-rent' && currentRouteForContact === 'clarke-plaza'">
+  <a class="navbar-brand" (click)="navigate('/')">
+    <img src="{{imageBaseUrl}}/clarke-plaza-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+      alt="logo artwork in the shape of a roof with the number 24 below and the words Clarke Plaza Self Storage">
+  </a>
+</ng-container>
+
+<ng-container *ngIf="currentRoute === undefined  && currentRouteForPayment === '/pay-rent' &&  currentRouteForContact === 'ossipee'">
+  <a class="navbar-brand" (click)="navigate('/')">
+    <img src="{{imageBaseUrl}}/ossipee-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+      alt="logo artwork that spells out Ossipee Self Storage">
+  </a>
+</ng-container>
+
+    <ng-container *ngIf="currentRoute === undefined && currentRouteForPayment === 'clarke-plaza/rent-sub/login' && currentRouteForContact === 'clarke-plaza'">
+      <a class="navbar-brand" (click)="navigate('/')">
+        <img src="{{imageBaseUrl}}/clarke-plaza-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+          alt="logo artwork in the shape of a roof with the number 24 below and the words Clarke Plaza Self Storage">
+      </a>
+    </ng-container>
+  <!-- -->
+
+
+
+
+    <ng-container *ngIf="currentRoute === undefined && currentRouteForPayment === 'ossipee/rent-sub/login' && currentRouteForContact === 'ossipee'">
+      <a class="navbar-brand" (click)="navigate('/')">
+        <img src="{{imageBaseUrl}}/ossipee-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+          alt="logo artwork that spells out Ossipee Self Storage">
+      </a>
+    </ng-container>
+    <ng-container
+      *ngIf="currentRoute === undefined && currentRouteForPayment === '/pay-rent' && currentRouteForContact === 'ossipee'">
+      <a class="navbar-brand" (click)="navigate('/')">
+        <img src="{{imageBaseUrl}}/ossipee-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+          alt="logo artwork that spells out Ossipee Self Storage">
+      </a>
+    </ng-container>
+
+
+        <ng-container *ngIf="currentRoute === 'new-hampshire/clarke-plaza' && currentRouteForPayment === 'clarke-plaza/rent-sub/login' && currentRouteForContact === 'clarke-plaza'">
+          <a class="navbar-brand" (click)="navigate('/')">
+            <img src="{{imageBaseUrl}}/clarke-plaza-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+              alt="logo artwork in the shape of a roof with the number 24 below and the words Clarke Plaza Self Storage">
+          </a>
+        </ng-container>
+        
+          <ng-container
+            *ngIf="currentRoute === 'new-hampshire/clarke-plaza' && currentRouteForPayment === 'ossipee/rent-sub/login' && currentRouteForContact === 'clarke-plaza'">
+            <a class="navbar-brand" (click)="navigate('/')">
+              <img src="{{imageBaseUrl}}/clarke-plaza-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+                alt="logo artwork in the shape of a roof with the number 24 below and the words Clarke Plaza Self Storage">
+            </a>
+          </ng-container>
+          <ng-container
+            *ngIf="currentRoute === undefined && currentRouteForPayment === 'ossipee/rent-sub/login' && currentRouteForContact === 'clarke-plaza'">
+            <a class="navbar-brand" (click)="navigate('/')">
+              <img src="{{imageBaseUrl}}/clarke-plaza-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+                alt="logo artwork in the shape of a roof with the number 24 below and the words Clarke Plaza Self Storage">
+            </a>
+          </ng-container>
+           <ng-container
+            *ngIf="currentRoute === 'new-hampshire/clarke-plaza' && currentRouteForPayment === 'ossipee/rent-sub/login' && currentRouteForContact === 'ossipee'">
+            <a class="navbar-brand" (click)="navigate('/')">
+              <img src="{{imageBaseUrl}}/clarke-plaza-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+                alt="logo artwork in the shape of a roof with the number 24 below and the words Clarke Plaza Self Storage">
+            </a>
+          </ng-container>
+        
+          <ng-container
+            *ngIf="currentRoute === 'new-hampshire/clarke-plaza' && currentRouteForPayment === '/pay-rent' && currentRouteForContact === 'clarke-plaza'">
+            <a class="navbar-brand" (click)="navigate('/')">
+              <img src="{{imageBaseUrl}}/clarke-plaza-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+                alt="logo artwork in the shape of a roof with the number 24 below and the words Clarke Plaza Self Storage">
+            </a>
+          </ng-container>
+          <ng-container
+            *ngIf="currentRoute === 'new-hampshire/clarke-plaza' && currentRouteForPayment === '/pay-rent' && currentRouteForContact === 'ossipee'">
+            <a class="navbar-brand" (click)="navigate('/')">
+              <img src="{{imageBaseUrl}}/clarke-plaza-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+                alt="logo artwork in the shape of a roof with the number 24 below and the words Clarke Plaza Self Storage">
+            </a>
+          </ng-container>
+          <ng-container
+            *ngIf="currentRoute === 'new-hampshire/clarke-plaza' && currentRouteForPayment === '/pay-rent' && currentRouteForContact === '/contact-us'">
+            <a class="navbar-brand" (click)="navigate('/')">
+              <img src="{{imageBaseUrl}}/clarke-plaza-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+                alt="logo artwork in the shape of a roof with the number 24 below and the words Clarke Plaza Self Storage">
+            </a>
+          </ng-container>
+
+
+
+        <ng-container
+          *ngIf="currentRoute === 'new-hampshire/ossipee' && currentRouteForPayment === 'ossipee/rent-sub/login' && currentRouteForContact === 'ossipee'">
+          <a class="navbar-brand" (click)="navigate('/')">
+            <img src="{{imageBaseUrl}}/ossipee-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+              alt="logo artwork that spells out Ossipee Self Storage">
+          </a>
+        </ng-container>
+        <ng-container *ngIf="currentRoute === 'new-hampshire/ossipee' && currentRouteForPayment === 'clarke-plaza/rent-sub/login' && currentRouteForContact === 'ossipee'">
+          <a class="navbar-brand" (click)="navigate('/')">
+            <img src="{{imageBaseUrl}}/ossipee-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+              alt="logo artwork that spells out Ossipee Self Storage">
+          </a>
+        </ng-container>
+        <ng-container
+          *ngIf="currentRoute === undefined && currentRouteForPayment === 'clarke-plaza/rent-sub/login' && currentRouteForContact === 'ossipee'">
+          <a class="navbar-brand" (click)="navigate('/')">
+            <img src="{{imageBaseUrl}}/ossipee-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+              alt="logo artwork that spells out Ossipee Self Storage">
+          </a>
+        </ng-container>
+          <ng-container
+            *ngIf="currentRoute === 'new-hampshire/ossipee' && currentRouteForPayment === '/pay-rent' && currentRouteForContact === 'ossipee'">
+          <a class="navbar-brand" (click)="navigate('/')">
+            <img src="{{imageBaseUrl}}/ossipee-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+              alt="logo artwork that spells out Ossipee Self Storage">
+          </a>
+          </ng-container>
+          <ng-container
+            *ngIf="currentRoute === 'new-hampshire/ossipee' && currentRouteForPayment === '/clarke-plaza/rent-sub/login' && currentRouteForContact === 'ossipee'">
+            <a class="navbar-brand" (click)="navigate('/')">
+              <img src="{{imageBaseUrl}}/ossipee-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+                alt="logo artwork that spells out Ossipee Self Storage">
+            </a>
+          </ng-container>
+          <ng-container
+            *ngIf="currentRoute === 'new-hampshire/ossipee' && currentRouteForPayment === '/clarke-plaza/rent-sub/login' && currentRouteForContact === 'clarke-plaza'">
+            <a class="navbar-brand" (click)="navigate('/')">
+              <img src="{{imageBaseUrl}}/ossipee-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+                alt="logo artwork that spells out Ossipee Self Storage">
+            </a>
+          </ng-container>
+          <ng-container
+            *ngIf="currentRoute === 'new-hampshire/ossipee' && currentRouteForPayment === '/pay-rent' && currentRouteForContact === '/contact-us'">
+        <a class="navbar-brand" (click)="navigate('/')">
+          <img src="{{imageBaseUrl}}/ossipee-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+            alt="logo artwork that spells out Ossipee Self Storage">
+        </a>
+          </ng-container>
+        
+    <!-- <ng-template #otherLocation>
+          <a class="navbar-brand" (click)="navigate('/')">
+            <img src="{{imageBaseUrl}}/ossipee-self-storage-logo.{{imagetype}}" width="auto" height="70px"
+              alt="logo artwork that spells out Ossipee Self Storage">
+              </a>
+    </ng-template> -->
+  
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
@@ -41,10 +208,10 @@
 
           <span *ngIf="nav?.type === 'dropdown'">
               <div class="dropdown show">  
-                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/alabama/clarke-plaza') || router.isActive('/alabama/ossipee') || router.isActive('/alabama/barnwell') || router.isActive('/alabama/belforest') || router.isActive('/alabama/fairhope') || router.isActive('/alabama/robertsdale')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/new-hampshire/clarke-plaza') || router.isActive('/new-hampshire/ossipee') || router.isActive('/new-hampshire/barnwell') || router.isActive('/new-hampshire/belforest') || router.isActive('/new-hampshire/fairhope') || router.isActive('/new-hampshire/robertsdale')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
                   <li *ngFor="let sub of nav.sublinks text-center">
-                    <a class="dropdown-item" [routerLinkActive]="'location-active'" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a></li>
+                    <a class="dropdown-item" [routerLinkActive]="'location-active'" [routerLink]="sub?.path" (click)="onClick(menu,sub?.path)">{{sub.label}}</a></li>
                 </ul>
               </div>
           </span>

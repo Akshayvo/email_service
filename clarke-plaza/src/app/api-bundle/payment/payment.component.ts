@@ -1,26 +1,26 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';
-import { WINDOW } from '@ng-toolkit/universal';
-import { LocationService } from '../services/location.service';
-import { contactsLocation1 } from '../../data/contact';
-import { tableHeader, tableData } from '../../data/pay-rent';
-import { Router } from '@angular/router';
-import { DataSharingService } from '../services/data-sharing.service';
-import { CanonicalService } from '../../services/canonical.service';
-import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
-import { payRentPageTitle, payRentPageContent } from '../../data/title';
+import { Component, OnInit, Inject } from "@angular/core";
+import { Title, Meta } from "@angular/platform-browser";
+import { WINDOW } from "@ng-toolkit/universal";
+import { LocationService } from "../services/location.service";
+import { contactsLocation1 } from "../../data/contact";
+import { tableHeader, tableData } from "../../data/pay-rent";
+import { Router } from "@angular/router";
+import { DataSharingService } from "../services/data-sharing.service";
+import { CanonicalService } from "../../services/canonical.service";
+import { ogPayRentPage, twitterPayRentPage } from "../../data/script";
+import { payRentPageTitle, payRentPageContent } from "../../data/title";
 
 @Component({
-  selector: 'app-payment',
-  templateUrl: './payment.component.html',
-  styleUrls: ['./payment.component.scss']
+  selector: "app-payment",
+  templateUrl: "./payment.component.html",
+  styleUrls: ["./payment.component.scss"],
 })
 export class PaymentComponent implements OnInit {
-
-  breadcrumbActive: any = 'Pay Rent';
+  breadcrumbActive: any = "Pay Rent";
   locationId: any;
   contact: any;
   tableData: any;
+  currentRouteForPayment: any;
   tableHeader = [];
   paymentTab: string;
   twitter: any;
@@ -34,29 +34,30 @@ export class PaymentComponent implements OnInit {
     private meta: Meta,
     private data: LocationService,
     public router: Router,
-    private  dataSharingService: DataSharingService,
+    private dataSharingService: DataSharingService,
     private canonical: CanonicalService
   ) {
+    console.log(this.router.url);
     this.canonical.create();
     this.fetchMetaData();
     this.fetchOg();
     this.fetchTwitter();
-    this.og.forEach(element => {
+    this.og.forEach((element) => {
       this.meta.addTag({
         property: element.property,
-        content: element.content
-      })
+        content: element.content,
+      });
     });
 
-    this.twitter.forEach(element => {
+    this.twitter.forEach((element) => {
       this.meta.addTag({
         name: element.name,
-        content: element.content
-      })
+        content: element.content,
+      });
     });
     this.meta.addTag({
-      name: 'description',
-      content: `${this.payRentPageContent}`
+      name: "description",
+      content: `${this.payRentPageContent}`,
     });
     this.titleService.setTitle(`${this.payRentPageTitle}`);
   }
@@ -66,19 +67,31 @@ export class PaymentComponent implements OnInit {
     this.receiveMessage();
     this.fetchTableHeader();
     this.fetchTableData();
-
+    this.dataSharingService.currentRouteForPayment.subscribe((updatedRoute) => {
+      this.currentRouteForPayment = updatedRoute;
+      //console.log(this.currentRouteForPayment);
+    });
     // if (!!localStorage.getItem('paymentTab')) {
     //   this.paymentTab = localStorage.getItem('paymentTab');
     // }
 
-    if (!!(localStorage.getItem('strTenantToken'))) {
-      const navTo = localStorage.getItem('paymentNavigationUrl');
-      if (!!localStorage.getItem('paymentTab')) {
+    // console.log(this.dataSharingService.currentRouteForPayment);
+    if (!!localStorage.getItem("strTenantToken")) {
+      const navTo = localStorage.getItem("paymentNavigationUrl");
+      if (!!localStorage.getItem("paymentTab")) {
         if (!!navTo) {
           if (this.dataSharingService.changePassword === true) {
-            this.router.navigate([`/pay-rent/${navTo}/${localStorage.getItem('paymentTab')}/changePassword`]);
+            this.router.navigate([
+              `/pay-rent/${navTo}/${localStorage.getItem(
+                "paymentTab"
+              )}/changePassword`,
+            ]);
           } else {
-            this.router.navigate([`/pay-rent/${navTo}/${localStorage.getItem('paymentTab')}/payment`]);
+            this.router.navigate([
+              `/pay-rent/${navTo}/${localStorage.getItem(
+                "paymentTab"
+              )}/payment`,
+            ]);
           }
         }
       } else {
@@ -91,23 +104,23 @@ export class PaymentComponent implements OnInit {
         }
       }
     } else {
-      this.router.navigate(['/pay-rent']);
+      this.router.navigate(["/pay-rent"]);
     }
   }
 
   receiveMessage() {
-    this.data.currentLocation.subscribe(locationId => {
+    this.data.currentLocation.subscribe((locationId) => {
       this.locationId = locationId;
       this.dataupdate();
     });
   }
 
   public fetchOg() {
-      this.og = ogPayRentPage;
+    this.og = ogPayRentPage;
   }
 
   public fetchTwitter() {
-      this.twitter = twitterPayRentPage;
+    this.twitter = twitterPayRentPage;
   }
 
   public fetchTableHeader() {
@@ -124,8 +137,12 @@ export class PaymentComponent implements OnInit {
   }
 
   public dataupdate() {
-    if ( this.locationId === '1' || this.locationId === 1 ) {
+    if (this.locationId === "1" || this.locationId === 1) {
       this.contact = contactsLocation1;
     }
+  }
+  public onClick(url: any) {
+    this.dataSharingService.setRoute(url);
+    // console.log(this.currentRouteForPayment);
   }
 }

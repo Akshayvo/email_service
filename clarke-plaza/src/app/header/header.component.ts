@@ -1,20 +1,23 @@
-import { Component, OnInit, Input, Inject } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { navLinks } from '../data/nav';
-import { WINDOW } from '@ng-toolkit/universal';
-import { contactsHomePage, socialLinks  } from '../data/contact';
-import { UaParserService } from '../services/ua-parser.service';
+import { Component, OnInit, Input, Inject } from "@angular/core";
+import { ActivatedRoute, Router } from "@angular/router";
+import { navLinks } from "../data/nav";
+import { WINDOW } from "@ng-toolkit/universal";
+import { contactsHomePage, socialLinks } from "../data/contact";
+import { UaParserService } from "../services/ua-parser.service";
+import { DataSharingService } from "../api-bundle/services/data-sharing.service";
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: "app-header",
+  templateUrl: "./header.component.html",
+  styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent implements OnInit {
-
   contactDetails: any;
   navLinks: any;
   socialLinks: any;
+  currentRoute: any;
+  currentRouteForPayment: any;
+  currentRouteForContact: any;
   data: any;
   logo: any;
   imagetype: any;
@@ -29,7 +32,9 @@ export class HeaderComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private uaParserService: UaParserService,
-  ) { 
+    private dataSharingService: DataSharingService
+  ) {
+    // console.log(this.router.url);
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
   }
@@ -37,8 +42,27 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.fetchNavigationLinks();
     this.fetchContactDetails();
-    this.router.events.subscribe(path => {
+    this.router.events.subscribe((path) => {});
+
+    this.dataSharingService.currentRouteForPayment.subscribe((updatedRoute) => {
+      this.currentRouteForPayment = updatedRoute;
+      // console.log("currentRoute", this.currentRoute);
+      // console.log("currentRouteForContact", this.currentRouteForContact);
+
+      // console.log("currentRouteForPay", this.currentRouteForPayment);
     });
+
+    this.dataSharingService.currentRouteForContact.subscribe(
+      (updatedContactRoute) => {
+        this.currentRouteForContact = updatedContactRoute;
+        // console.log("currentRoute", this.currentRoute);
+        // console.log("currentRouteForPay", this.currentRouteForPayment);
+
+        // console.log("currentRouteForContact", this.currentRouteForContact);
+      }
+    );
+
+    // console.log("currentRoute", this.currentRoute);
     // window.onscroll = function() {
     //   this.HideContent()
     // };
@@ -52,52 +76,51 @@ export class HeaderComponent implements OnInit {
     //     document.getElementById("top-navbar").style.top = "-50px";
     //   }
     //   prevScrollpos = currentScrollPos;
-    // } 
-
+    // }
 
     // (function(){
 
     //   var doc = document.documentElement;
     //   var w = window;
-    
+
     //   var prevScroll = w.scrollY || doc.scrollTop;
     //   var curScroll;
     //   var direction = 0;
     //   var prevDirection = 0;
-    
+
     //   var header = document.getElementById('site-header');
 
     //   var navHeader  = document.getElementById('nav-header');
-    
+
     //   var checkScroll = function() {
-    
+
     //     /*
     //     ** Find the direction of scroll
     //     ** 0 - initial, 1 - up, 2 - down
     //     */
-    
+
     //     curScroll = w.scrollY || doc.scrollTop;
-    //     if (curScroll > prevScroll) { 
+    //     if (curScroll > prevScroll) {
     //       //scrolled up
     //       direction = 2;
     //     }
-    //     else if (curScroll < prevScroll) { 
+    //     else if (curScroll < prevScroll) {
     //       //scrolled down
     //       direction = 1;
     //     }
-    
+
     //     if (direction !== prevDirection) {
     //       toggleHeader(direction, curScroll);
     //     }
-        
+
     //     prevScroll = curScroll;
     //   };
-    
+
     //   var toggleHeader = function(direction, curScroll) {
-    //     if (direction === 2 && curScroll > 52) { 
-          
+    //     if (direction === 2 && curScroll > 52) {
+
     //       //replace 52 with the height of your header in px
-    
+
     //       header.classList.add('hide');
     //       navHeader.classList.add('customClass');
     //       prevDirection = direction;
@@ -108,13 +131,13 @@ export class HeaderComponent implements OnInit {
     //       prevDirection = direction;
     //     }
     //   };
-      
+
     //   window.addEventListener('scroll', checkScroll);
-    
+
     // })();
   }
 
-  public navigate (location: any) {
+  public navigate(location: any) {
     this.router.navigate([location]);
   }
 
@@ -124,12 +147,13 @@ export class HeaderComponent implements OnInit {
 
   public fetchContactDetails() {
     this.contactDetails = contactsHomePage;
-    this.socialLinks = socialLinks
-    
+    this.socialLinks = socialLinks;
   }
 
-  public onClick(menu: any) {
-    menu.classList.remove('show');
+  public onClick(menu: any, path: any) {
+    // console.log("currentRoute after click", path);
+    this.currentRoute = path;
+    menu.classList.remove("show");
   }
 
   // public HideContent() {
@@ -139,5 +163,4 @@ export class HeaderComponent implements OnInit {
   //     this.navbar.classList.remove('sticky');
   //   }
   // }
-
 }

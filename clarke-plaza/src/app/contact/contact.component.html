@@ -23,7 +23,7 @@
                   </td>
                   <td class="table-data ">
                     <!-- <div [innerHtml]="{{tableData.url}}"></div> -->
-                    <a class="btn btn-primary p-2 ml-0" [routerLink]="'/contact-'+tableData.url" role="button">Contact Us</a>
+                    <a class="btn btn-primary p-2 ml-0" [routerLink]="'/contact-'+tableData.url" role="button" (click)="onClick(tableData.url)">Contact Us</a>
                   </td>
                 </tr>
               </tbody>

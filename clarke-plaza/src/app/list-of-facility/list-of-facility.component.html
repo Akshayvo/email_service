@@ -10,7 +10,7 @@
           <!-- <p> -->
             <div *ngFor="let contact of contactsBrookside" class="contact-label">
                 <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
-              <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+              <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' || contact?.label === 'After Hours: ' else other_content">
                 <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
                   <h3>{{contact.data}}</h3>
                 </a>
@@ -18,8 +18,8 @@
               <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
             </div>
           <!-- </p> -->
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/ossipee/storage-units']" role="button">View Rates</a>                
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/ossipee/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/new-hampshire/clarke-plaza/storage-units']" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/new-hampshire/clarke-plaza/storage-units']" role="button"> Reserve Unit</a>                                  
         </div>
         <div class="col-lg-3 partition-border contact-hours pt-3">
             <h3>Office Hours:</h3>
@@ -52,15 +52,15 @@
             <h2>Ossipee Self Storage</h2>
             <div *ngFor="let contact of contactsAndrews" class="contact-label pt-2">
               <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
-            <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+            <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' || contact?.label === 'After Hours: ' else other_content">
               <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
                 <h3>{{contact.data}}</h3>
               </a>
             </div>
             <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
           </div>
-            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/clarke-plaza/storage-units']" role="button">View Rates</a>                
-            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/clarke-plaza/reserve-unit']" role="button"> Reserve Unit</a>                                  
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/new-hampshire/ossipee/storage-units']" role="button">View Rates</a>                
+            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/new-hampshire/ossipee/storage-units']" role="button"> Reserve Unit</a>                                  
           </div>
           <div class="col-lg-3 partition-border contact-hours pt-3">
               <h3>Office Hours:</h3>
@@ -99,8 +99,8 @@
           </div>
           <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
         </div>
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/barnwell/storage-units']" role="button">View Rates</a>                
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/barnwell/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/new-hampshire/barnwell/storage-units']" role="button">View Rates</a>                
+          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/new-hampshire/barnwell/reserve-unit']" role="button"> Reserve Unit</a>                                  
         </div>
         <div class="col-lg-3 partition-border contact-hours pt-3">
             <h3>Office Hours:</h3>
@@ -133,8 +133,8 @@
             </div>
             <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
           </div>
-            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/alabama/belforest/storage-units']" role="button">View Rates</a>                
-            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/alabama/belforest/reserve-unit']" role="button"> Reserve Unit</a>                                  
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/new-hampshire/belforest/storage-units']" role="button">View Rates</a>                
+            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/new-hampshire/belforest/reserve-unit']" role="button"> Reserve Unit</a>                                  
           </div>
           <div class="col-lg-3 partition-border contact-hours pt-3">
               <h3>Office Hours:</h3>
