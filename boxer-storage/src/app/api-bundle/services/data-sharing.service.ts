@@ -5,7 +5,7 @@ import { Injectable } from "@angular/core";
 })
 export class DataSharingService {
   locationAPIKey = {
-    loc1: 'dzJ0OFc3SjgqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 28787 evanston-ave
+    // loc1: 'dzJ0OFc3SjgqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 28787 evanston-ave
     loc2: 'dzJ0OFc2SjIqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28620 howard-city,
     loc3: 'dzJ0OFc0SjEqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28410 ionia
     loc4: 'dzJ0OFczSjIqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28327 alpine
@@ -17,7 +17,7 @@ export class DataSharingService {
     loc10: 'dzJ0OVcwSjgqMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 29081 m-45
     loc11: 'dzJ0OVc0SjQqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 29443 ostego
     loc12: 'dzJ0OVc0SjgqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 29443 ostego
-    // loc1: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //testing
+    loc1: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //testing
     // loc2: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //testing
     // loc3: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28410 ionia
     // loc4: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28327 alpine
