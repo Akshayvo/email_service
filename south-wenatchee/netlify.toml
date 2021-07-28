@@ -26,14 +26,29 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
-  from = "https://www.bestwenatcheestorage.com/pay-rent/chester/login"
-  to = "https://www.bestwenatcheestorage.com/pay-rent/leos-self-storage/login"
+  from = "/pay-rent/chester/login"
+  to = "/pay-rent/leos-self-storage/rent-sub/login"
   status = 301
 [[redirects]]
-  from = "https://www.bestwenatcheestorage.com/pay-rent/andrews/login"
-  to = "https://www.bestwenatcheestorage.com/pay-rent/south-wenatchee/login"
+  from = "/pay-rent/andrews/login"
+  to = "/pay-rent/south-wenatchee/rent-sub/login"
+  status = 301
+[[redirects]]
+  from = "/pay-rent/leos-self-storage/login"
+  to = "/pay-rent/leos-self-storage/rent-sub/login"
+  status = 301
+[[redirects]]
+  from = "/pay-rent/south-wenatchee/login"
+  to = "/pay-rent/south-wenatchee/rent-sub/login"
+  status = 301
+[[redirects]]
+  from = "/view-rates"
+  to = "/"
   status = 301
   [[redirects]]
+  from = "/pay-rent/login"
+  to = "/pay-rent"
+  status = 301
 [[redirects]]
   from = "/*"
   to = "/index.html"
