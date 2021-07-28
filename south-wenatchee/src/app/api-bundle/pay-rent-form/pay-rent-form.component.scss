@@ -28,7 +28,8 @@ table {
 }
 
 .modal {
-  td, th {
+  td,
+  th {
     font-size: 0.8rem;
   }
 }
@@ -58,7 +59,6 @@ table {
 .custom-style {
   width: 86px;
 }
-
 
 .display-none {
   display: none;
@@ -93,8 +93,12 @@ table {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .loaderForPayment {
@@ -118,7 +122,6 @@ table {
   }
 }
 
-
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .btn-link {
     font-size: 0.7rem;
@@ -130,14 +133,9 @@ table {
 }
 
 @media only screen and (min-width: 576px) {
-  .rent-holder {
-    padding-top: 100px;
-  }
-}
-
-@media only screen and (min-width: 576px) {
   .modal {
-    td, th {
+    td,
+    th {
       font-size: 0.8rem;
     }
   }
@@ -145,5 +143,17 @@ table {
   .modal-dialog {
     max-width: 650px;
     margin: 1.75rem auto;
+  }
+}
+
+@media only screen and (max-width: 447px) {
+  .modal-position {
+    position: relative;
+    left: auto;
+  }
+
+  .display {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
