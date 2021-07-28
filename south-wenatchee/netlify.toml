@@ -45,9 +45,17 @@
   from = "/view-rates"
   to = "/"
   status = 301
-  [[redirects]]
+[[redirects]]
   from = "/pay-rent/login"
   to = "/pay-rent"
+  status = 301
+[[redirects]]
+  from = "/pay-rent/leos-self-storage"
+  to = "/pay-rent/leos-self-storage/rent-sub/login"
+  status = 301
+[[redirects]]
+  from = "/pay-rent/south-wenatchee"
+  to = "/pay-rent/south-wenatchee/rent-sub/login"
   status = 301
 [[redirects]]
   from = "/*"
