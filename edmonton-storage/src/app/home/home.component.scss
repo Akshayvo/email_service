@@ -8,10 +8,17 @@
   }
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
   color: $white;
 }
-
+.JumbotronGuardianButton,
+.JumbotronAccessMiniButton {
+  font-size: x-large;
+  font-weight: bold;
+  font-style: italic;
+  white-space: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 .service {
   color: $dark;
   text-align: left;
@@ -30,9 +37,9 @@
   }
 }
 
-.jumbotorn-button{
-display: block;
-
+.jumbotorn-button {
+  display: block;
+  text-align: center;
 }
 
 .btn-primary:hover,
@@ -43,7 +50,7 @@ display: block;
   color: $primary !important;
 }
 
-.btn-primary{
+.btn-primary {
   background-color: white !important;
   border-color: $primaryDark !important;
   color: $primary !important;
@@ -51,7 +58,7 @@ display: block;
   width: 300px;
 }
 .jumbotorn-skew-style {
-  width: 63%;
+  width: 67%;
   float: left;
   left: -25%;
   position: relative;
@@ -65,10 +72,10 @@ display: block;
 
 .jumbotorn-skew-text {
   transform: skew(0deg);
-  width: 500px;
+  width: 100%;
   position: absolute;
-  top: 22%;
-  left: 12%;
+  top: 25%;
+  left: 9%;
   color: $secondary;
   font-size: 1.5rem;
   .btn-outline-primary {
@@ -77,7 +84,6 @@ display: block;
 }
 
 .jumbotron-home {
-
   .for-mobile-view {
     display: none;
   }
@@ -92,11 +98,11 @@ display: block;
   }
 
   .feature-block {
-    height: 20vh;
+    padding-top: 0.5rem;
+    height: 25vh;
 
     h2 {
       line-height: 1.5rem;
-    
     }
     img {
       height: 60px;
@@ -118,7 +124,6 @@ display: block;
   height: 80vh;
 }
 
-
 .jumbotron-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Edmonton_Storage/webp/guardian-self-stoage-169.webp");
   background-position: center;
@@ -127,12 +132,11 @@ display: block;
   height: 80vh;
 }
 
-
 .jumbotron-top {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height:80vh;
+  height: 80vh;
 }
 
 // .jumbotron-top1 {
@@ -191,11 +195,9 @@ display: block;
   }
 }
 
-
 .content-left {
   text-align: left;
 }
-
 
 .disp {
   display: block;
@@ -259,8 +261,6 @@ display: block;
 //     // }
 //   }
 // }
-
-
 
 @media only screen and (min-width: 1200px) {
   .jumbotorn-skew-text {
@@ -330,8 +330,6 @@ display: block;
     display: none;
   }
 
-  
-
   .jumbotorn-button {
     padding: 10px;
   }
@@ -353,22 +351,23 @@ display: block;
   }
 }
 
-
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .jumbotorn-skew-text {
     width: 400px;
-
+    top: 36%;
+    left: 6%;
     a {
       min-width: 160px;
-      font-size: 1rem;
+      font-size: 1.4rem;
     }
 
     p {
-      font-size: 0.8rem;
+      font-size: 1.2rem;
     }
   }
 
   .jumbotorn-button {
+    text-align: center;
     .btn {
       min-width: 160px !important;
     }
@@ -490,16 +489,16 @@ display: block;
 
     a {
       min-width: 140px;
-      font-size: 0.8rem;
+      font-size: 1.4rem;
     }
 
     .disp {
       p {
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
 
       h2 {
-        font-size: 2.3rem;
+        font-size: 1.4rem;
       }
     }
   }
@@ -525,22 +524,22 @@ display: block;
   }
 
   .feature-block {
-    height: 160px !important;
+    height: 20rem !important;
   }
 
   .jumbotorn-skew-text {
     a {
       min-width: 140px;
-      font-size: 0.8rem;
+      font-size: 1.4rem;
     }
 
     .disp {
       p {
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
 
       h2 {
-        font-size: 2.3rem;
+        font-size: 1.4rem;
       }
     }
   }
@@ -576,7 +575,6 @@ display: block;
       display: flex;
     }
   }
-
 
   .feature {
     display: none;
@@ -618,11 +616,12 @@ display: block;
   }
 
   .feature-block {
-    height: 200px !important;
+    height: 20rem !important;
   }
 
   .jumbotorn-skew-style {
-    width: 90%;
+    width: 98%;
+    left: -39%;
   }
 
   .jumbotorn-button {
@@ -632,17 +631,17 @@ display: block;
   }
 
   .jumbotorn-skew-text {
-    top: 36%;
+    top: 48%;
     width: 350px;
 
     a {
       min-width: 140px;
-      font-size: 0.8rem;
+      font-size: 1.4rem;
     }
 
     .disp {
       p {
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
 
       h2 {
@@ -672,7 +671,6 @@ display: block;
   .jumbotron-top {
     height: 100vh;
   }
-
 
   .feature {
     display: none;
@@ -734,12 +732,14 @@ display: block;
   //   position: absolute;
   // }
 
-  // .jumbotorn-skew-text {
-  //   width: 100%;
-  //   left: 0;
-  //   top: auto;
-  //   bottom: 10px;
-  // }
+  .jumbotorn-skew-text {
+    width: 100%;
+    top: 25%;
+    left: auto;
+    // left: 9%;
+    // top: 0;
+    // bottom: 10px;
+  }
 
   // .jumbotorn-button {
   //   padding: 2px;
@@ -764,6 +764,15 @@ display: block;
 
   .disp {
     display: none;
+  }
+
+  .jumbotorn-skew-text {
+    width: 100%;
+    top: 25%;
+    left: auto;
+    // left: 9%;
+    // top: 0;
+    // bottom: 10px;
   }
 
   // .jumbotorn-skew-style {

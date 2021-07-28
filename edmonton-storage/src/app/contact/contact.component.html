@@ -9,22 +9,27 @@
           <div class="container px-0">
             <table class="col-md-12">
               <thead >
-                <tr>
+                <!-- <tr>
                   <th  *ngFor="let tableHeader of tableHeader">{{tableHeader.data}}</th>
-                </tr>
+                </tr> -->
               </thead>
               <tbody>
-                <tr *ngFor="let tableData of tableData">
+                <tr *ngFor="let tableData of tableData" class="table-col">
                   <td class="table-data">
+                    <span class="mt-4">
                     {{tableData.facility}}
+                    </span>
+                    <br/>
+                    <span rel="noopener" class="address"> {{tableData.address}}</span>
+                    <a class="btn btn-white p-2 ml-4 contact" [routerLink]="'/contact-'+tableData.url" role="button">Connect with us!</a>
+
                   </td>
-                  <td class="table-data ">
-                    <a [href]="tableData?.redirect" target="_blank" rel="noopener"> {{tableData.address}}</a>
-                  </td>
-                  <td class="table-data ">
-                    <!-- <div [innerHtml]="{{tableData.url}}"></div> -->
-                    <a class="btn btn-primary p-2 ml-0" [routerLink]="'/contact-'+tableData.url" role="button">Contact Us</a>
-                  </td>
+                  <!-- <td class="table-data ">
+                  
+                  </td> -->
+                  <!-- <td class="table-data ">
+                     <div [innerHtml]="{{tableData.url}}"></div>
+                  </td> -->
                 </tr>
               </tbody>
              </table>

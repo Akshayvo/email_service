@@ -3,9 +3,14 @@
 </app-script-hack> -->
 <div class="contentHolder">
   <div class="container">
-      <div class="heading pb-5">
-        <h1 class="text-center pt-5">Contact Us</h1>
+      <div class="heading pb-5" *ngIf="currentRoute === '/contact-guardian' else otherRoute">
+        <h1 class="text-center pt-5">Connect with Guardian Storage</h1>
       </div>
+      <ng-template #otherRoute>
+        <div class="heading pb-5">
+          <h1 class="text-center pt-5">Connect with Access Mini Storage</h1>
+        </div>
+      </ng-template>
       <div class="contact-data p-5">
         <!-- <div class="location-selection">
           <app-select-location (click)="receiveMessage()"></app-select-location>

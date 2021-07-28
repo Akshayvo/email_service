@@ -1,22 +1,20 @@
-import { Component, OnInit, OnDestroy, ElementRef } from '@angular/core';
-import { Subscription } from 'rxjs';
-import { MoveInService } from '../services/moveIn.service';
-import { ObjCharges } from '../models/movein';
-import { UnitTypes, LstUnitTypes } from '../models/unittypes';
-import { FetchDataService } from '../services/fetch-data.service';
-import { th } from '../../data/view-rates';
-import { Router } from '@angular/router';
-import { DataSharingService } from '../services/data-sharing.service';
-import { environment } from '../../../environments/environment';
-
+import { Component, OnInit, OnDestroy, ElementRef } from "@angular/core";
+import { Subscription } from "rxjs";
+import { MoveInService } from "../services/moveIn.service";
+import { ObjCharges } from "../models/movein";
+import { UnitTypes, LstUnitTypes } from "../models/unittypes";
+import { FetchDataService } from "../services/fetch-data.service";
+import { th } from "../../data/view-rates";
+import { Router } from "@angular/router";
+import { DataSharingService } from "../services/data-sharing.service";
+import { environment } from "../../../environments/environment";
 
 @Component({
-  selector: 'app-view-rates-page',
-  templateUrl: './view-rates-page.component.html',
-  styleUrls: ['./view-rates-page.component.scss']
+  selector: "app-view-rates-page",
+  templateUrl: "./view-rates-page.component.html",
+  styleUrls: ["./view-rates-page.component.scss"],
 })
 export class ViewRatesPageComponent implements OnInit, OnDestroy {
-
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
@@ -40,7 +38,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showLoader = false;
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
-  defaultClimateString = ' ';
+  defaultClimateString = " ";
 
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
@@ -62,13 +60,12 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     private eRef: ElementRef
   ) {
     this.windowLocation = window.location;
-   }
-
+  }
 
   ngOnInit() {
     this.getData();
     this.fetchThData();
-    this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
+    this.dataSharingService.initMyNavLinks("viewRates", this.router.url);
     this.facilityLocation = this.dataSharingService.facilityLocation;
   }
 
@@ -77,65 +74,90 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   }
 
   public navigate(location: any, unitData: any) {
-
     // Base location of the facility will be appended to URL
     this.navTo = this.router.url;
     this.dataSharingService.setReservationData(unitData);
     this.dataSharingService.navigationTo = this.navTo;
     this.dataSharingService.navigateToPrevious = this.navTo;
-    this.dataSharingService.updateMyNavLink('viewRates', 'next', `${this.navTo}/${location}`);
-    this.dataSharingService.updateMyNavLink('viewRates', 'prev', `${this.router.url}`);
-    const myNavLinks = this.dataSharingService.getMyNavLinks('viewRates');
-    console.log('TCL: ViewRatesPageComponent -> navigate -> myNavLinks', myNavLinks);
-    this.router.navigate([`${environment.locationName}/${this.facilityLocation}/${location}`]);
+    this.dataSharingService.updateMyNavLink(
+      "viewRates",
+      "next",
+      `${this.navTo}/${location}`
+    );
+    this.dataSharingService.updateMyNavLink(
+      "viewRates",
+      "prev",
+      `${this.router.url}`
+    );
+    const myNavLinks = this.dataSharingService.getMyNavLinks("viewRates");
+    console.log(
+      "TCL: ViewRatesPageComponent -> navigate -> myNavLinks",
+      myNavLinks
+    );
+    this.router.navigate([
+      `${environment.locationName}/${this.facilityLocation}/${location}`,
+    ]);
     this.dataSharingService.LstUnitTypes = unitData;
   }
 
   getMoveInCharges(description: any, monthlyRate: any, intUnitTypeID: any) {
     this.showLoader = true;
-    this.getMoveinChargesService.getMoveInCharges({
-      intUnitTypeID
-    }).subscribe(result => {
-      this.showLoader = false;
-      const {objCharges: {
-        ProrateAmt = 0,
-        Deposit = 0,
-        DepositTax = 0,
-        Rate = 0,
-        RateTax= 0,
-        ProrateTax = 0,
-        OthDeposit = 0,
-        Setup = 0,
-        SetupTax = 0,
-        TotalTaxAmount = 0,
-        TotalChargesAmount = 0,
-      }} = result;
-      this.prorateAmt = ProrateAmt;
-      this.deposit = Deposit;
-      this.depositTax = DepositTax;
-      this.rate = Rate;
-      this.rateTax = RateTax;
-      this.prorateAmtTax = ProrateTax;
-      this.othDeposit = OthDeposit;
-      this.setup = Setup;
-      this.setupTax = SetupTax;
-      this.defaultTotalTaxAmount = TotalTaxAmount;
-      this.defaultTotalChargesAmount = TotalChargesAmount;
-      this.showPaymentForMoveIn = true;
-      this.descriptionVR = description;
-      this.monthlyRateVR = monthlyRate;
-      this.unitTypeIdVR = intUnitTypeID;
-      this.curStage = 2;
-      }, err => {
-      });
+    this.getMoveinChargesService
+      .getMoveInCharges({
+        intUnitTypeID,
+      })
+      .subscribe(
+        (result) => {
+          this.showLoader = false;
+          const {
+            objCharges: {
+              ProrateAmt = 0,
+              Deposit = 0,
+              DepositTax = 0,
+              Rate = 0,
+              RateTax = 0,
+              ProrateTax = 0,
+              OthDeposit = 0,
+              Setup = 0,
+              SetupTax = 0,
+              TotalTaxAmount = 0,
+              TotalChargesAmount = 0,
+            },
+          } = result;
+          this.prorateAmt = ProrateAmt;
+          this.deposit = Deposit;
+          this.depositTax = DepositTax;
+          this.rate = Rate;
+          this.rateTax = RateTax;
+          this.prorateAmtTax = ProrateTax;
+          this.othDeposit = OthDeposit;
+          this.setup = Setup;
+          this.setupTax = SetupTax;
+          this.defaultTotalTaxAmount = TotalTaxAmount;
+          this.defaultTotalChargesAmount = TotalChargesAmount;
+          this.showPaymentForMoveIn = true;
+          this.descriptionVR = description;
+          this.monthlyRateVR = monthlyRate;
+          this.unitTypeIdVR = intUnitTypeID;
+          this.curStage = 2;
+        },
+        (err) => {}
+      );
   }
 
   getData() {
-  this.getDataSubscribe$ = this.fetchDataService.getData( )
-    .subscribe(unitTypesResponse => {
-      this.showTable =  true;
-      this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
-    });
+    this.getDataSubscribe$ = this.fetchDataService
+      .getData()
+      .subscribe((unitTypesResponse) => {
+        this.showTable = true;
+        this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+        this.LstUnitTypes.forEach((lstUnitType, index) => {
+          //console.log(lstUnitType);
+          if (lstUnitType.Description === "Signage") {
+            this.LstUnitTypes.splice(index, this.LstUnitTypes.length);
+          }
+        });
+      });
   }
 
   public ngOnDestroy(): void {

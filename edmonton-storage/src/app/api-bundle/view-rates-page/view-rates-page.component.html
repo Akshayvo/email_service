@@ -18,9 +18,16 @@
               {{lstUnitType.Description}}
               </strong>
           </div>
-          <div class="p-2" *ngIf="lstUnitType.IsOutdoor">
-              Outdoor Parking
+
+          
+          <div class="p-2" *ngIf="lstUnitType.IsOutdoor && lstUnitType.Description === '10 X 20 (CANOPY)' else otherOutdoor">
+            Covered Parking
           </div>
+          <ng-template #otherOutdoor>
+            <div class="p-2" *ngIf="lstUnitType.IsOutdoor">
+             Outdoor Parking
+            </div>
+          </ng-template>
           <div class="" *ngIf="lstUnitType.IsMobile">
             Mobile Unit
           </div>
@@ -29,12 +36,18 @@
           </div>
         </div>
       </div>
-      <div class="col-4 text-center ">  
+      <div class="col-4 text-center">  
         <div class="">
-          <div class=" text-center ">
-              <p >Monthly Rate</p>
-              <div class="custom-font"><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</strong></div>
+          <div class=" text-center"*ngIf='lstUnitType.Description === "Daily Parking" else otherDescrptions'>
+              <p >Daily Rate</p>
+              <div class="custom-font"><strong><span>$</span>{{lstUnitType.DailyRate}}</strong></div>
           </div>
+          <ng-template #otherDescrptions>
+          <div class=" text-center">
+            <p>Monthly Rate</p>
+          <div class="custom-font"><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate}}</strong></div>
+          </div>
+          </ng-template>
           <div class="text-center" *ngIf="lstUnitType.DepositAmount != null">
             <p>Deposit</p>
             <div class="custom-font"><strong><span>$</span>{{lstUnitType.DepositAmount}}</strong></div>

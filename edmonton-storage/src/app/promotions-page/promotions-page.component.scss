@@ -1,7 +1,6 @@
 @import "../../styles.scss";
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
-
 .currentActive {
   border-bottom: 3px solid $light;
 }
@@ -10,7 +9,7 @@
   text-align: justify;
 }
 
-.promotions-holder{
+.promotions-holder {
   padding-top: 94px;
   min-height: 88vh;
   margin-bottom: 50px;
@@ -27,9 +26,9 @@
     }
   }
 
-  .discount{
+  .discount {
     text-align: center;
-    padding-top: 100px;
+    // padding-top: 100px;
   }
   .storage-content {
     padding: 50px;
@@ -41,7 +40,6 @@
     }
   }
 }
-
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .promotions-holder {
@@ -68,7 +66,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .promotions-holder{
+  .promotions-holder {
     padding-top: 115px;
     .storage-content {
       padding: 16px;
@@ -83,15 +81,14 @@
 //   }
 // }
 
-
 // @media screen and (max-width: 575px) and (min-width: 453px) {
 //   .storage-tip-holder {
 //     padding-top: 172px;
-//   } 
+//   }
 // }
 
 // @media screen and (max-width: 452px) {
 //   .storage-tip-holder {
 //     padding-top: 200px;
-//   } 
+//   }
 // }

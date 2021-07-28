@@ -13,7 +13,7 @@
     h2 {
       font-size: 1.5rem;
     }
-    h3{
+    h3 {
       font-size: 1rem;
     }
   }
@@ -66,8 +66,9 @@
 // }
 
 table {
-  border: 1px solid #bab3a3;
-
+  // border: 1px solid #bab3a3;
+  border-collapse: separate;
+  border-spacing: 0 1em;
   thead {
     border: 1px solid #bab3a3;
   }
@@ -78,11 +79,34 @@ table {
     font-weight: 500;
     padding: 8px 16px;
   }
-
+  .table-col {
+    padding-bottom: 10px;
+    background-color: white;
+    column-gap: 40px;
+  }
   .table-data {
+    padding-top: 1rem !important;
     padding: 8px 16px;
+    font-size: large;
+    font-weight: bold;
+    background-color: #005194 !important;
+    color: white;
+
+    .address {
+      font-size: medium;
+      font-weight: normal;
+    }
     a {
       color: #212529;
+    }
+    .contact {
+      margin-bottom: 2rem;
+      float: right;
+      color: #005194 !important;
+      font-size: small;
+      font-weight: bold;
+      text-transform: capitalize;
+      font-style: italic;
     }
   }
 
@@ -132,13 +156,11 @@ table {
   }
 }
 
-
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .rent-holder {
     padding-top: 174px;
   }
 }
-
 
 @media only screen and (max-width: 600px) {
   .rent-holder {
@@ -169,22 +191,21 @@ table {
 //   }
 // }
 
-
 // @media screen and (max-width: 575px) and (min-width: 453px) {
 //   .rent-holder {
 //     padding-top: 172px;
-//   } 
+//   }
 // }
 
 @media screen and (max-width: 452px) {
   // .rent-holder {
   //   padding-top: 200px;
-  // } 
+  // }
 
   .table-data {
     padding: 8px 10px;
     a {
-      color: #212529 ;
+      color: #212529;
     }
   }
 

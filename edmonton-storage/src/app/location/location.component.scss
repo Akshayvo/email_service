@@ -4,19 +4,51 @@
   background-color: $light;
   padding-top: 94px;
 }
+.sub-components {
+  background-color: #f1f0ed;
+}
+.contact-links {
+  a {
+    color: black;
+  }
+}
 
-.container{
+h2 {
+  line-height: 1.8rem;
+}
+
+.partition-border {
+  border-left: 2px solid $border;
+  padding-left: 3%;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.contact-label {
+  line-height: 0rem;
+  display: flex;
+  h3 {
+    font-size: 0.88rem;
+    line-height: 1rem;
+    width: fit-content;
+    font-weight: 400;
+  }
+}
+
+.container {
   max-width: 1200px !important;
+  background-color: #f1f0ed;
 }
 
 .button-col {
- padding-right: 0; 
+  padding-right: 0;
 }
 
 .feature-block {
   h2 {
     line-height: 1.5rem;
-  
   }
 
   img {
@@ -35,19 +67,19 @@
   padding-left: 3%;
 
   h3 {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
 
 .social-content {
   .each-contact {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
   }
 }
 
-.alarm{
-  background-color: #BE2926;
-  color:#fff;
+.alarm {
+  background-color: #be2926;
+  color: #fff;
   font-size: 1.5rem;
 }
 
@@ -63,14 +95,14 @@
 
 .header-background {
   background: white;
+  flex: none !important;
+  //max-width: 100% !important;
 
   h1 {
-    text-transform:capitalize;
+    text-transform: capitalize;
     font-size: 1.6rem;
   }
 }
-
-
 
 .sub-component-background {
   background-color: #f1f0ed;
@@ -117,8 +149,6 @@
   background-position: center;
 }
 
-
-
 .hours-data {
   .col-lg-4 {
     padding-left: 0;
@@ -157,11 +187,10 @@
   }
 
   .social-content {
-      .each-contact {
-        display: block;
-      }
+    .each-contact {
+      display: block;
+    }
   }
-
 
   .img-box-1 {
     height: 410px;
@@ -201,6 +230,14 @@
     h1 {
       font-size: 1.4rem;
     }
+  }
+  h2 {
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .partition-border {
+    border-left: none;
+    padding-left: 15px;
   }
 
   .iconColor {
@@ -248,13 +285,12 @@
 //   }
 // }
 
-
 @media only screen and (max-width: 768px) {
   .social-content {
-      .each-contact {
-        width: 100%;
-        display: block;
-      }
+    .each-contact {
+      width: 100%;
+      display: block;
+    }
   }
 
   .button-col {
@@ -347,6 +383,7 @@
 
   .sub-components {
     padding: 0 16px;
+    background-color: #f1f0ed;
   }
 }
 
@@ -356,17 +393,16 @@
 //   }
 // }
 
-
 // @media screen and (max-width: 575px) and (min-width: 453px) {
 //   .contact-details {
 //     padding-top: 172px;
-//   } 
+//   }
 // }
 
 // @media screen and (max-width: 452px) {
 //   .contact-details {
 //     padding-top: 200px;
-//   } 
+//   }
 // }
 
 @media only screen and (max-width: 340px) {
