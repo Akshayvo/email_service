@@ -1,10 +1,9 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class DataSharingService {
-
   locationAPIKey = {
     loc1: 'dzJ0OFc3SjgqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 28787 evanston-ave
     loc2: 'dzJ0OFc2SjIqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28620 howard-city,
@@ -18,21 +17,19 @@ export class DataSharingService {
     loc10: 'dzJ0OVcwSjgqMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 29081 m-45
     loc11: 'dzJ0OVc0SjQqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 29443 ostego
     loc12: 'dzJ0OVc0SjgqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 29443 ostego
-    // loc1: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',//testing
-    // loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',//testing
-    // loc3: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28410 ionia
-    // loc4: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28327 alpine
-    // loc5: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28318
-    // loc6: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-    // loc7: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-    // loc8: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',
-    // loc9: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 27672
-    // loc10: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-    // loc12: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-
-    
+    // loc1: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //testing
+    // loc2: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //testing
+    // loc3: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28410 ionia
+    // loc4: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28327 alpine
+    // loc5: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 28318
+    // loc6: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
+    // loc7: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
+    // loc8: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
+    // loc9: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 27672
+    // loc10: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 28464
+    // loc11: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 28464
+    // loc12: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 28464
   };
-
 
   paymentSuccess: boolean;
   locationName: string;
@@ -59,10 +56,10 @@ export class DataSharingService {
   showAltDetails: boolean;
   amountToPayThankYou: number;
 
-  apiKey = '';
+  apiKey = "";
 
   MoveInData = {
-    Description: '',
+    Description: "",
     MonthlyRate: 0,
     UnitTypeID: 0,
     proRateAmount: 0,
@@ -74,19 +71,19 @@ export class DataSharingService {
     DepositTax: 0,
     RateTax: 0,
     TotalTaxAmount: 0,
-    TotalChargesAmount: 0
+    TotalChargesAmount: 0,
   };
 
   ReservationData = {
-    Description: '',
+    Description: "",
     MonthlyRate: 0,
     UnitTypeID: 0,
     RateTax: 0,
-    formattedMoveInDate: '',
+    formattedMoveInDate: "",
   };
 
   LstUnitTypes = {
-    Description: '',
+    Description: "",
     ReservationFee: 0,
     ReservationFeeTax: 0,
     UnitTypeID: 0,
@@ -97,50 +94,47 @@ export class DataSharingService {
   };
 
   objTenant = {
-    FirstName: '',
-    LastName: '',
-    Phone: '',
-    EmailAddress: '',
-    AddressLine1: '',
-    AddressLine2: '',
-    City: '',
-    State: '',
-    ZIP: '',
-    AlternateName: '',
-    AlternatePhone: '',
-    AlternateAddressLine1: '',
-    AlternateAddressLine2: '',
-    AlternateCity: '',
-    AlternateState: '',
-    AlternateZIP: ''
+    FirstName: "",
+    LastName: "",
+    Phone: "",
+    EmailAddress: "",
+    AddressLine1: "",
+    AddressLine2: "",
+    City: "",
+    State: "",
+    ZIP: "",
+    AlternateName: "",
+    AlternatePhone: "",
+    AlternateAddressLine1: "",
+    AlternateAddressLine2: "",
+    AlternateCity: "",
+    AlternateState: "",
+    AlternateZIP: "",
   };
-
 
   navLinksForComponent = {
     reservationForm: {
-      next: '',
-      prev: '',
+      next: "",
+      prev: "",
     },
     confirmationData: {
-      next: '',
-      prev: '',
+      next: "",
+      prev: "",
     },
     payRentForm: {
-      next: '',
-      prev: '',
+      next: "",
+      prev: "",
     },
     viewRates: {
-      next: '',
-      prev: ''
-    }
-
+      next: "",
+      prev: "",
+    },
   };
 
   MoveIn = {
-    dteMoveIn: '',
+    dteMoveIn: "",
     intUnitTypeID: 0,
   };
-
 
   constructor() {
     this.getUnitData();
@@ -171,11 +165,11 @@ export class DataSharingService {
       this.navLinksForComponent[componentName].next = myCurUrl;
       this.navLinksForComponent[componentName].prev = myCurUrl;
     }
-  }
+  };
 
   getMyNavLinks = (componentName) => {
     return this.navLinksForComponent[componentName];
-  }
+  };
 
   updateMyNavLink = (componentName, linkType, url) => {
     if (this.navLinksForComponent[componentName]) {
@@ -183,7 +177,7 @@ export class DataSharingService {
         this.navLinksForComponent[componentName][linkType] = url;
       }
     }
-  }
+  };
 
   setReservationData(value: any) {
     this.ReservationData.Description = value.Description;
@@ -204,5 +198,4 @@ export class DataSharingService {
   getMoveInData() {
     return this.MoveInData;
   }
-
 }
