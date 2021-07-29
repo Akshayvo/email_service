@@ -24,7 +24,7 @@ export const featuresList = [
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
 
-export const aboutUsHeading = `Affordable Storage Units in Green Aisle, MN`;
+export const aboutUsHeading = `Affordable Storage Units in Green Isle, MN`;
 
 export const aboutUs = [
     {
@@ -34,7 +34,7 @@ export const aboutUs = [
         p: `Start by taking a moment to review our available units and pricing, then rent your storage unit through our website in a matter of minutes. Once your agreement is signed, you’ll receive a lock code that gives you access to your new self storage unit. Inside, a complementary lock and key will be waiting for you. Just drop the combination lock in lock and payment dropbox on your way out, and you’re all set! Come and go as you please in our well-lit self storage facility with security cameras placed strategically around the grounds.`,
     },
     {
-        p: `Whether you’re a residential user in search of a home for the contents of your garage, attic, or basement, or if you’re a growing business who understands the savings to be had storing documents and equipment in a storage unit, Sibley Storage has you covered. If you have any questions or concerns, please feel free to call our offices and inquire today!`,
+        p: `Whether you’re a residential user in search of a home for the contents of your garage, attic, or basement, or if you’re a growing business who understands the savings to be had storing documents and equipment in a storage unit, Sibley Storage has you covered. If you have any questions or concerns, please feel free to call our office and inquire today!`,
     },
     // {
     //     p: `Whether you're a growing business in need of a place for equipment, documents, and supplies,
