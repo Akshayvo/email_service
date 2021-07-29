@@ -1,5 +1,20 @@
 @import "../../styles.scss";
 
+.contact-details {
+  h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+.display-contact {
+  display: flex;
+
+  // h4 {
+  //   width: 100%;
+  // }
+}
+
 .btn-outline-primary {
   color: $primary !important;
 }

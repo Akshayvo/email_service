@@ -4,7 +4,7 @@ import { contact } from '../../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import { payRentPageContent, payRentPageTitle } from '../../data/title';
 import { payRentHeading } from '../../data/heading';
-
+import { ogPayRentPage, twitterPayRentPage } from '../../data/script';
 @Component({
   selector: 'app-payment',
   templateUrl: './payment.component.html',
@@ -12,6 +12,8 @@ import { payRentHeading } from '../../data/heading';
 })
 export class PaymentComponent implements OnInit {
 
+  og: any;
+  twitter: any;
   contact: any;
   payRentPageTitle: string;
   payRentPageContent: string;

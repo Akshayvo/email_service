@@ -1,11 +1,22 @@
 @import "../../styles.scss";
 
+.contact-details {
+  h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
 .jumbotron-background-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Doc_Images/webp/docs-hideaway-mini-storage.webp");
 }
 
 .jumbotron-background-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Doc_Images/jpg/docs-hideaway-mini-storage.jpg");
+}
+
+.display-contact {
+  display: flex;
 }
 
 .jumbotron {

@@ -4,6 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '10400 East 86th St N, Owasso, OK 74055',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
+        redirect: 'https://g.page/Docshideaway?share'
     },
     {
         id: 1,

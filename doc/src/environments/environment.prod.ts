@@ -7,7 +7,8 @@ export const environment = {
   errorsMails: ['website.dev@codeparva.in'],
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   senderEmail: 'errors@codeparva.in',
-  appId: `Doc's Mini Storage - Staging`,
+  appId: `Doc's Mini Storage - Production`,
+  facilityName: `Doc's Mini Storage`,
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   APIKey: `ITlMME4xajk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // doc's mini storage 9019

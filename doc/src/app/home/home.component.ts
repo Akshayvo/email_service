@@ -7,9 +7,11 @@ import { MetaService } from '../services/link.service';
 import { DOCUMENT } from '@angular/common';
 import { UaParserService } from '../services/ua-parser.service';
 import { homePageTitle, homePageContent } from '../data/title';
+import { homePageScript, ogHomePage, script, twitterHomePage } from '../data/script';
 import { objSIMSetting } from '../data/configuration';
 import { environment } from '../../environments/environment';
-import { script } from '../data/script';
+import { CanonicalService } from '../services/canonical.service';
+import { FetchDataService } from '../api-bundle/services/fetch-data.service';
 
 @Component({
   selector: 'app-home',
@@ -38,6 +40,8 @@ export class HomeComponent implements OnInit {
   aboutUsHeading: string;
   objSIMSetting: any;
   template: string;
+  ogHomePage: any;
+  twitterHomePage: any;
   script: any;
 
   constructor(
@@ -47,15 +51,34 @@ export class HomeComponent implements OnInit {
     private _renderer2: Renderer2,
     private metaService: MetaService,
     private uaParserService: UaParserService,
+    private canonical: CanonicalService,
+    private fetchDataService: FetchDataService,
     @Inject(DOCUMENT) private _document: any,
   ) {
+    this.fetchScript();
+    this.loadScript();
     this.fetchMetaData();
+    this.fetchOgHomePage();
+    this.fetchTwitterHomePage();
+    this.ogHomePage.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitterHomePage.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
     this.meta.addTag({
       name: 'description',
       content: `${this.homePageContent}`
     });
     this.titleService.setTitle(`${this.homePageTitle}`);
-    this.metaService.createCanonicalURL();
+    this.canonical.create();
 
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
@@ -76,6 +99,31 @@ export class HomeComponent implements OnInit {
     this.fetchTemplate();
     this.fetchScript();
     window.scrollTo(0, 0);
+  }
+
+  public loadScript() {
+    const node = document.createElement('script'); // creates the script tag
+    node.type = 'application/ld+json'; // set the script type
+    node.async = false; // makes script run asynchronously
+    // node.charset = 'utf-8';
+    node.innerHTML = JSON.stringify(this.script);
+    // append to head of document
+    // document.getElementsByTagName('head')[0].appendChild(node);
+    document.head.appendChild(node);
+
+  }
+
+  public fetchScript() {
+    this.script = homePageScript;
+  }
+
+
+  public fetchOgHomePage() {
+    this.ogHomePage = ogHomePage;
+  }
+
+  public fetchTwitterHomePage() {
+    this.twitterHomePage = twitterHomePage;
   }
 
   public fetchTemplate() {
@@ -114,9 +162,6 @@ export class HomeComponent implements OnInit {
     this.jumbotron = jumbotron;
   }
 
-  public fetchScript() {
-    this.script = script;
-  }
 
   public getImageUrl(imageName: string) {
     return `${this.imageBaseUrl}/${imageName}.${this.imagetype}`;

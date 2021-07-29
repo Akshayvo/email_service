@@ -4,7 +4,8 @@ import { storageTip, storageTipAccordion } from '../data/storage';
 import { MetaService } from '../services/link.service';
 import { storageTipsTitle, storageTipsContent } from '../data/title';
 import { storageTipsHeading } from '../data/heading';
-
+import { CanonicalService } from '../services/canonical.service';
+import { ogStorageTipsPage, twitterStorageTipsPage } from '../data/script';
 @Component({
   selector: 'app-storage-tips',
   templateUrl: './storage-tips.component.html',
@@ -17,6 +18,8 @@ export class StorageTipsComponent implements OnInit {
   storageTipsHeading: string;
   storageTipsTitle: string;
   storageTipsContent: string;
+  og: any;
+  twitter: any;
 
   constructor(
     private titleService: Title,
@@ -24,6 +27,21 @@ export class StorageTipsComponent implements OnInit {
     private metaService: MetaService,
   ) {
     this.fetchMetaData();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
     this.meta.addTag({
       name: 'description',
       content: `${this.storageTipsContent}`
@@ -38,6 +56,14 @@ export class StorageTipsComponent implements OnInit {
     this.fetchStorageTipsHeading();
     window.scrollTo(0, 0);
   }
+
+  public fetchOg() {
+    this.og = ogStorageTipsPage;
+}
+
+public fetchTwitter() {
+    this.twitter = twitterStorageTipsPage;
+}
 
   public fetchMetaData() {
     this.storageTipsTitle = storageTipsTitle;
