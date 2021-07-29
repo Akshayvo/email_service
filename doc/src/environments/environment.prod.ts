@@ -11,5 +11,5 @@ export const environment = {
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   APIKey: `ITlMME4xajk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // doc's mini storage 9019
-  websiteUrl: 'https://www.docshideaway.com'
+  websiteUrl: 'https://docshideaway.com'
 };
