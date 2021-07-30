@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "sibley"
+  "defaultProject": "sibley",
+  "cli": {
+    "analytics": "02557ff8-5679-4f08-bcbf-f58fadaf8fb3"
+  }
 }
