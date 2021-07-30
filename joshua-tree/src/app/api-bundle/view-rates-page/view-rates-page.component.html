@@ -22,10 +22,11 @@
           <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
           </td>
-          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
-              <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-          </td>
-          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_moveIn">
+        <td colspan="2" class="py-2 px-4 border text-center"
+          *ngIf="lstUnitType.IsUnitsAvailable && showReserve; else other_reserve">
+          <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
+        </td>
+          <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable && showMovein; else other_moveIn">
             <button (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </td>
           <!-- <td colspan="2" class="px-4 border text-center" *ngIf="lstUnitType.IsClimateControlled; else other_climate">
@@ -36,7 +37,7 @@
             {{defaultClimateString}}
           </td>
           </ng-template> -->
-          <ng-template #other_reserve>
+          <ng-template #other_reserve *ngIf="showReserve">
             <td colspan="2" class="py-2 px-4 border">
             <div class="text-center">Currently Unavailable.</div>
           </td>
@@ -65,15 +66,15 @@
     </div>
       <div class="col-6 d-flex justify-content-center" >
         <div *ngIf="lstUnitType.IsUnitsAvailable; else other" >
-          <div class=" py-1 buttons" >
+          <div class=" py-1 buttons" *ngIf="showReserve" >
               <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </div>
-          <div class="py-1 buttons">
+          <div class="py-1 buttons" *ngIf="showMovein">
               <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
           </div>
         </div>
         <ng-template #other> 
-          <div class="text-right" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
+          <div class="text-right" *ngIf="showMovein || showReserve" ><p class="card-text ">Please call the facility to reserve a unit or move in.</p></div>
         </ng-template>
     </div>
   </div>

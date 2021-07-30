@@ -154,7 +154,7 @@
                                 <small class="form-text text-muted" *ngIf="f.dteMoveIn.errors.required">Please fill out this field</small>
                             </div>
                     </div>
-                    <div class=" col-md-6" formArrayName="lstInsuranceChoices" *ngIf="navigateToMoveIn">
+                    <!-- <div class=" col-md-6" formArrayName="lstInsuranceChoices" *ngIf="navigateToMoveIn">
                         <div *ngFor="let itemInsuranceChoice of f.lstUnitTypes.controls; let i = index">
                             <div  [formGroupName]="i">
                                 <label for="CoverageDescription">Insurance Choice*</label>&nbsp;
@@ -169,7 +169,7 @@
     
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                      </div>
                      <div class="row">
                          <div class="col-md-6 pb-4" formArrayName="lstRentalPeriods" *ngIf="navigateToMoveIn">

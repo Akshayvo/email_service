@@ -10,8 +10,8 @@ export const contact = [
     label: "Email:",
     data: "jtms@la.twcbc.com",
     class: "fas fa-envelope mx-2 iconColor",
-    email: "jtms@la.twcbc.com, syrasoftsoftware@gmail.com",
-    redirect: "mailto:`jtms@la.twcbc.com, syrasoftsoftware@gmail.com`",
+    email: "jtms@la.twcbc.com",
+    redirect: "mailto:jtms@la.twcbc.com",
   },
   {
     id: 2,
