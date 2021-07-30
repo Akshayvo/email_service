@@ -111,6 +111,13 @@ p {
   .viewrates-desktop {
     display: none;
   }
+  @media only screen and (max-width: 991px) {
+    .buttons {
+      .btn-outline-primary {
+        color: #ce1825 !important;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 767px)  and (min-width: 381px) {

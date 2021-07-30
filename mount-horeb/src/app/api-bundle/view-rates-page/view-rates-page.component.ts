@@ -20,6 +20,8 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showTable = false;
   unitTypes: UnitTypes;
   LstUnitTypes: LstUnitTypes[];
+  regularLstUnitTypes: LstUnitTypes[];
+  TemperatureLstUnitTypes: LstUnitTypes[];
 
   descriptionVR: string;
   monthlyRateVR: number;
@@ -73,7 +75,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
-    // this.getData();
+    this.getData();
     this.fetchThData();    
     this.state = script.state;
     this.newUnitTypes = newUnitTypes;
@@ -141,6 +143,13 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     .subscribe(unitTypesResponse => {
       this.showTable =  true;
       this.LstUnitTypes = unitTypesResponse.lstUnitTypes;
+
+      this.TemperatureLstUnitTypes = this.LstUnitTypes.filter(
+        (x) => x.IsClimateControlled === true
+      );
+      this.regularLstUnitTypes = this.LstUnitTypes.filter(
+        (x) => x.IsClimateControlled  !== true
+      );
     });
   }
 
