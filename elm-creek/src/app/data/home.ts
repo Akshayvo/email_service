@@ -38,7 +38,7 @@ export const aboutUsHeading = `Affordable Storage and Parking in Owasso, OK`;
 
 export const aboutUs = [
   {
-    p: `Elm Creek Mini Storage is Owasso’s premier self storage and vehicle storage facility. Our facility is conveniently located on the 128th East Ave in Owasso between the Baskin-Robbins and the First Presbyterian Church. We proudly serve Owasso, Tulsa, Collinsville, and the surrounding communities with quality storage solutions and excellent customer service at very affordable rates.`,
+    p: `Elm Creek Storage is Owasso’s premier self storage and vehicle storage facility. Our facility is conveniently located on the 128th East Ave in Owasso between the Baskin-Robbins and the First Presbyterian Church. We proudly serve Owasso, Tulsa, Collinsville, and the surrounding communities with quality storage solutions and excellent customer service at very affordable rates.`,
   },
   {
     p: `Our facility offers all of the modern conveniences that make self storage and vehicle storage a fast and easy experience. Start by reviewing our online inventory and pricing, then contact our friendly team to rent or reserve your unit or parking space in minutes.  Once you’re moved into your new unit or have your recreational vehicle stowed for the season, you’ll have 24-hour access to your belongings through our pin-code activated security gate. Come and go as you please knowing you’ll be able to load or unload your vehicle in a well-lit, well-maintained facility with numerous security cameras located throughout. Pay your rent 24-hours a day through our easy tenant portal, and know our friendly management team is only a phone call away. `,
@@ -49,7 +49,7 @@ export const aboutUs = [
 ];
 
 export const gettingStarted = `Are you ready to stop putting off cleaning out your attic, garage, or shed?
-Clear up some room around the house with Elm Creek Mini Storage and one of our affordable storage units,
+Clear up some room around the house with Elm Creek Storage and one of our affordable storage units,
 accessible 24 hours a day!`;
 
 export const feature = [
@@ -82,7 +82,7 @@ export const feature = [
 export const jumbotron = [
   {
     h2: `Affordable Climate Controlled Units in Baldwinsville`,
-    blurb: `Elm Creek Mini Storage was the first self storage facility we built nearly 20 years ago.
+    blurb: `Elm Creek Storage was the first self storage facility we built nearly 20 years ago.
         We recently renovated our entire operation to make sure our valued customers have another 20 years of
         clean, affordable regular and climate controlled self storage options in Baldwinsville! Let Sample Self
         Storage - North help you today. Our well-lit and personalized pin-code secured facility awaits your next
