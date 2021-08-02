@@ -9,9 +9,9 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'Bob@goodletteselfstorage.com',
+        data: 'manager@goodletteselfstorage.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:`Bob@goodletteselfstorage.com`'
+        redirect: 'mailto:`manager@goodletteselfstorage.com`'
     },
     {
         id: 2,
@@ -29,11 +29,11 @@ export const hours = [
     },
     {
         label: 'Sunday: ',
-        data: 'CLOSED'
+        data: '10:00AM to 2:00PM'
     },
     {
         label: 'Storage Access Hours: ',
-        data: '24-Hour Access for Outdoor Units Business Hours for Temperature Controlled Units'
+        data: 'ACCESS TO INTERIOR UNITS SAME AS OFFICE HOURS ACESS TO DRIVE-UP UNITS AND OPEN STORAGE 24/7'
     }
 ];
 

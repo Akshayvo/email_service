@@ -1,30 +1,59 @@
 export const galleryHome = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `goodlette-self-storage-row`,
+    url: `goodlette-storage`,
     // tslint:disable-next-line:max-line-length
-    thumb: `goodlette-self-storage-row-thumb`,
+    thumb: `goodlette-storage-thumb`,
     alt: `single story self storage building with a row of roll up metal door and parking spaces in the foreground`
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `goodlette-self-storage-sign`,
+    url: `goodlette-self-storage-1`,
     // tslint:disable-next-line:max-line-length
-    thumb: `goodlette-self-storage-sign-thumb`,
-    alt: `a self storage building on the right of the image and a tall yellow sign reading Self Storage on the left`
+    thumb: `goodlette-self-storage-1-thumb`,
+    alt: ` two rows of self storage buildings on either side of a parking lane`
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `goodlette-self-storage-units`,
+    url: `goodlette-self-storage-3`,
     // tslint:disable-next-line:max-line-length
-    thumb: `goodlette-self-storage-units-thumb`,
-    alt: `a row of self storage units with metal roll up doors and parking spaces in the foreground`
+    thumb: `goodlette-self-storage-3-thumb`,
+    alt: `two rows of storage units on either side of an indoor aisle`
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `goodlette-self-storage-interior`,
+    url: `goodlette-self-storage-4`,
     // tslint:disable-next-line:max-line-length
-    thumb: `goodlette-self-storage-interior-thumb`,
-    alt: `the clean, well-maintained interior of a self storage unit with concrete floor`
+    thumb: `goodlette-self-storage-4-thumb`,
+    alt: `a single story concrete self storage building`
   },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `goodlette-self-storage-5`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `goodlette-self-storage-5-thumb`,
+    alt: `a single story self storage building with an extra wide parking lane in front`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `goodlette-self-storage-6`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `goodlette-self-storage-6-thumb`,
+    alt: `the entrance to a self storage facility parking lot with vans parked out front`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `goodlette-self-storage-7`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `goodlette-self-storage-7-thumb`,
+    alt: `moving trucks parked in a self storage building parking lot`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `goodlette-self-storage-8`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `goodlette-self-storage-8-thumb`,
+    alt: `self storage units and trucks parked in a self storage facility `
+  },
+  
 ];

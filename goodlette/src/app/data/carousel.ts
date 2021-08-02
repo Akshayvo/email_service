@@ -20,5 +20,12 @@ export const carouselData = [
         author: `– Kristin`,
         id: 2,
     },
+    {
+        // tslint:disable-next-line: max-line-length
+        p: `“We began using Goodlette Self Storage back in 2007. We have always found their service to be efficient, with a helpful and accommodating staff. Just good people behind a good business––highly recommend!”`,
+        // tslint:disable-next-line:max-line-length
+        author: `– Chabad of Naples`,
+        id: 3,
+    },
     
 ];

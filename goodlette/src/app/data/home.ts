@@ -1,31 +1,28 @@
 export const featuresList = [
     {
-        td1: 'Convenient Location',
-        td2: 'On-Site Manager',
-    },
-    {
-        td1: 'Online Bill Pay',
+        td1: 'Onsite Manager',
         td2: 'Security Cameras',
     },
     {
+        td1: 'Central Naples Location',
+        td2: 'Easy in and out',
+    },
+    {
         td1: 'Single-Level Facility',
-        td2: 'Drive-Up Units',
+        td2: 'Above Flood Elevation',
     },
     {
-        td1: 'Auto-Pay Available',
-        td2: 'Friendly Customer Service',
+        td1: 'Air-conditioned Access',
+        td2: 'Air Ventilated 24/7, Access Drive-up Units, (AV units, Air Ventilated)',
     },
     {
-        td1: 'Affordable Rates',
-        td2: 'Recreational Vehicle Storage',
+        td1: 'Controlled Interior Units, Controlled Interior Units, (CC units, Climate Controlled)',
+        td2: 'All our drive-up units are equipped with roof-mounted fans for ventilation and air circulation.',
     },
     {
-        td1: 'Boat Storage',
-        td2: 'Climate-Controlled Units Available',
-    },
-    {
-        td1: 'Temperature-Controlled Units Available',
+        td1: 'You can do it all online, or call, or come in: Online Reservation without obligation, Online Rental and Move-in, Online Bill Pay,Online Set Up Autopay',
     }
+    
 ];
 
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
@@ -43,7 +40,7 @@ export const aboutUs = [
         p: `Goodlette Self Storage is well-lit, covered by plenty of security cameras, and is designed to ensure a sense of security at all times. Our on-site manager is there to accept payments, assist in the move- answer questions, and keep an eye on the facility with regular lot checks.`,
     },
     {
-        p: `Whether you’re a residential storage user looking for some extra elbow room around the house, or if you’re a growing business that needs 24-hour access to your outdoor unit, we’ve got a number of unit sizes at affordable rates. Check out our current availability and pricing, then reserve or rent your unit in minutes. Still have questions? Give us a call! We can’t wait to meet you!`,
+        p: `Whether you’re a residential storage user looking for some extra elbow room around the house, or if you’re a growing business that needs 24-hour access to your drive-up units, we’ve got a large number of unit sizes at affordable rates. Check out our current availability and pricing, then reserve or rent your unit in minutes. Still have questions? Give us a call! We can’t wait to meet you!`,
     }
     
 ];
