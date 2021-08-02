@@ -19,10 +19,10 @@ export const featuresList = [
         td1: 'Fully-Paved Facility',
         td2: 'Affordable Rates',
     },
-    {
-        td1: 'High-Definition Security Cameras',
-        td2: 'Bright LED Lighting',
-    }
+    // {
+    //     td1: 'High-Definition Security Cameras',
+    //     td2: 'Bright LED Lighting',
+    // }
 ];
 
 export const altText = `storage unit buildings surrounded by gravel parking with trees in the background`;
