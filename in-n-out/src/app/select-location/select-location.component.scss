@@ -1,0 +1,41 @@
+@import "../../styles.scss";
+
+
+.selector-block {
+  .location-symbol {
+    background-color: $primary;
+    padding: 10px 12px;
+    border-radius: 4px 0 0 4px;
+    display: flex;
+    align-items: center;
+
+    .location-icon {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+  }
+
+  .selection-bar {
+    border-radius: 0 4px 4px 0;
+    height: 42px;
+    width: 300px;
+  }
+}
+
+form {
+  width: 100%;
+
+  .form-control:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .selector-block {
+    .selection-bar {
+      height: 42px;
+      width: 250px;
+    }
+  }
+}

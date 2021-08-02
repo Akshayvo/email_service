@@ -1,0 +1,198 @@
+<!-- <app-script-hack type="application/ld+json">
+  {{ script | json }}
+</app-script-hack> -->
+<ngx-json-ld [json]="script"></ngx-json-ld>
+<!-- <div class="jumbotron-container"> -->
+<div class="jumbotron-home">
+  <div class="jumbotron-top jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
+    <div class=" jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
+      </div>
+      <div class="container">
+        <div class="jumbotorn-skew-text">
+          <div class="disp" *ngFor="let jumbotron of jumbotron">
+            <h2  class="my-4">
+              {{jumbotron.h2}}
+            </h2>
+          <p class="text-justify">{{jumbotron.blurb}}</p>
+          </div>
+          <!-- <div class="jumbotorn-button">
+            <a class="btn btn-lg btn-outline-primary" (click)="navigate('/view-rates')" role="button">View Rates</a>
+            <a class="btn btn-lg btn-primary" (click)="navigate('/reserve-unit')" role="button">Reserve Unit</a>
+          </div> -->
+          </div>
+        </div>
+      </div>
+    
+  <!-- <div class="for-mobile-view"> -->
+    <!-- <div id="carouselJumbo" class="carousel slide  jumbotron-top-style" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselJumbo" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselJumbo" data-slide-to="1"></li>
+        <li data-target="#carouselJumbo" data-slide-to="2"></li>
+        <li data-target="#carouselJumbo" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="jumbotron-top jumbotron-top-style" title="Aerial photo of outdoor self storage units and parking spaces">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron-top1 jumbotron-top-style" title="Aerial photograph of an outdoor self storage facility">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron-top2 jumbotron-top-style" title="Aerial photograph of self storage units">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron-top3 jumbotron-top-style" title="Aerial self storage photograph displaying outdoor units and RV parking spaces">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- </div> -->
+    
+  <!--Feature Box-->
+    <div class="container feature-block disp">
+      <div class="row h-100">
+        <div class="col-3 my-auto" *ngFor= "let feature of features">
+          <p class="text-center f-block-img"> 
+            <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
+          </p>
+          <h2 class="text-center f-text">
+            {{feature.label}}
+          </h2>
+        </div>
+      </div>
+    </div>
+  <!--Feature Box Ends Here-->  
+</div>
+<!-- <app-list-of-facility></app-list-of-facility> -->
+
+<!--For individual location-->
+<div class="pb-5 pt-5 bg-light">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <h2>Our Locations Around Sheboygan County!</h2>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1lw1ZbvCu1piNcojSRgcQzCD26CV6p4Ua" width="100%" title="Facility Google Map" height="480"></iframe>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--For individual location-->
+
+<!--location information-->
+<div class="">
+  <div class="container py-4">
+    <div class="section py-4 m-0">
+      <div class="row">
+        <div class="col-lg-6 py-3 home-map">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16368.047574785236!2d-87.73310842079505!3d30.408929720480803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x31d2d6bf2ad3ed5a!2sStorage%20Plus%20Baldwin%20County!5e0!3m2!1sen!2sus!4v1613101078629!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" title="Facility Google Map" allowfullscreen></iframe> 
+        </div>
+
+        <div class="col-lg-6 py-3">
+          <div class="mb-4">
+            <h2> Visit the Main Office at the Address Below</h2>
+            <p>
+              <span class="contact-links" *ngFor="let contact of contactHomeDetails">
+                <span><b>{{contact.label}}</b></span><span class="contact-links my-5" *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+                  <a [href]="contact?.redirect" rel="noopener">&nbsp;{{contact.data}}</a></span>
+                  <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;{{contact.data}}</a></ng-template><br>
+              </span>
+            </p>
+            <b>Office Hours:</b>
+            <p>
+              <span *ngFor="let hour of hoursHomeDetails">
+                <b>{{hour.label}}</b>&nbsp;{{hour.data}}<br>
+              </span>
+            </p>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--location information end-->
+
+<!--Service-->
+  <div class="service bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 pt-2">
+            <h1  class="pb-4">Affordable Self Storage Units in Sheboygan County</h1>
+            <div >
+              <h2>About In-N-Out</h2>
+              <p>In-N-Out Storage facilities are easily accessible via Highways 57 and 67 and close to residents and businesses throughout Greenbush, Howards Grove, Elkhart Lake, and several other surrounding areas. Find our state-of-the-art storage facilities at N6112 N Pleasant View Rd, 423 E Clifford St, 424 E Clifford St, and 405 Commerce St, just 10 miles from downtown Sheboygan Falls. Start storing today!</p>
+              <h2>Trailer Rentals</h2>
+              <p>In-N-Out Storage is committed to serving your needs and providing the best storage experience. To help meet those needs we supply a free trailer when moving into your storage unit. We also offer trailer rental on a day-by-day basis.</p>
+              <h2>In-N-Out Serving the Plymouth Community</h2>
+              <p>In-N-Out Storage takes to heart the solid foundation provided by its involvement in community activities for the City of Plymouth and surrounding communities. We are proud and honored to be able to give support for community activities, including local teams, youth events, churches, and various community activities.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <app-photos></app-photos>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Testimonial-->
+  <div class="">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-12 text-center">
+          <h2 class="heading pb-4">Testimonials</h2>
+          <div class="container mt-3">
+            <div id="bootstrapCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Slide Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#bootstrapCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#bootstrapCarousel" data-slide-to="1"></li>
+                <li data-target="#bootstrapCarousel" data-slide-to="2"></li>
+                <li data-target="#bootstrapCarousel" data-slide-to="3"></li>
+                <li data-target="#bootstrapCarousel" data-slide-to="4"></li>
+                <li data-target="#bootstrapCarousel" data-slide-to="5"></li>
+                <li data-target="#bootstrapCarousel" data-slide-to="6"></li>
+                <li data-target="#bootstrapCarousel" data-slide-to="7"></li>
+                <li data-target="#bootstrapCarousel" data-slide-to="8"></li>
+                <li data-target="#bootstrapCarousel" data-slide-to="9"></li>
+              </ul>
+
+              <!-- The slides to show -->
+              <div class="carousel-inner">
+                <div class="carousel-item" [ngClass]="{'active': i === 0}" *ngFor="let testimonial of carouselData; index as i">
+                  <p>{{testimonial.p}}</p>
+                  <p>{{testimonial.author}}</p>
+                </div>
+              </div>
+              
+
+              <!--  Controls (Left and right) -->
+              <!-- <a class="carousel-control-prev" href="#bootstrapCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a> -->
+              <!-- <a class="carousel-control-next" href="#bootstrapCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Testimonial section-->
+<!--Service Ends Here-->
