@@ -376,7 +376,7 @@ export const apiRoutes = [
     path: 'pay-rent/robertsdale', component: PayRentComponent,
     children: childroute
   },
-  { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
+  { path: `${environment.locationName}/trailer-rental`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'contact-commerce-st', component: ContactUsComponent},
   { path: 'contact-pleasantview', component: ContactUsComponent},
@@ -385,7 +385,7 @@ export const apiRoutes = [
   { path: 'contact-location5', component: ContactUsComponent},
   { path: 'contact-robertsdale', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
-  { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
+  { path: `${environment.locationName}/trailer-rental`, component: StorageTipsComponent },
 ];
 
 
@@ -514,7 +514,7 @@ export const iFrameRoutes = [
   { path: 'pay-rent-clifford-south', component: PayRentMiddletownComponent},
   { path: 'pay-rent-location5', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-robertsdale', component: PayRentMiddletownComponent},
-  { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
+  { path: `${environment.locationName}/trailer-rental`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },
 ];
