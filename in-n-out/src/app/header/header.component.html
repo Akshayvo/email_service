@@ -25,7 +25,7 @@
 <nav class="navbar navbar-expand-lg bg-white" id="nav-header">
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')">
-      <img src="{{imageBaseUrl}}/logo.{{imagetype}}" width="auto" height="70px"  alt="text-based artwork that spells out Storage Plus of Baldwin County">
+      <img src="{{imageBaseUrl}}/logo.{{imagetype}}" width="auto" height="70px"  alt="text-based artwork that spells out In-N-Out Storage">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -41,13 +41,22 @@
 
           <span *ngIf="nav?.type === 'dropdown'">
               <div class="dropdown show">  
-                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/alabama/foley') || router.isActive('/alabama/silverhill') || router.isActive('/alabama/barnwell') || router.isActive('/alabama/belforest') || router.isActive('/alabama/fairhope') || router.isActive('/alabama/robertsdale')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/wisconsin/commerce-st') || router.isActive('/wisconsin/pleasantview') || router.isActive('/wisconsin/clifford-north') || router.isActive('/wisconsin/clifford-south') || router.isActive('/wisconsin/location5')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
                   <li *ngFor="let sub of nav.sublinks text-center">
                     <a class="dropdown-item" [routerLinkActive]="'location-active'" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a></li>
                 </ul>
               </div>
           </span>
+          <span *ngIf="nav?.type === 'dropdown1'">
+            <div class="dropdown show">  
+              <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/wisconsin/faq') || router.isActive('/wisconsin/trailer-rental') || router.isActive('/wisconsin/trailer-info') || router.isActive('/wisconsin/discounts')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+              <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
+                <li *ngFor="let sub of nav.sublinks text-center">
+                  <a class="dropdown-item" [routerLinkActive]="'location-active'" [routerLink]="sub?.path" (click)="onClick(menu)">{{sub.label}}</a></li>
+              </ul>
+            </div>
+        </span>
         </li>
       </ul>
     </div>

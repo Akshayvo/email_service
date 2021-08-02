@@ -13,68 +13,68 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: ' Foley',
-    address: '17860 US-98, Foley, AL 36535',
-    url: 'foley/rent-sub/login'
+    facility: ' Commerce St',
+    address: '405 Commerce St Plymouth, WI 53073',
+    url: 'commerce-st/rent-sub/login'
   },
   {
-    facility: 'Silverhill',
-    address: '15410 AL-104, Silverhill, AL 36576',
-    url: 'silverhill/rent-sub/login'
+    facility: 'Pleasantview',
+    address: 'N6112 N Pleasant View Rd, Plymouth, WI 53073',
+    url: 'pleasantview/rent-sub/login'
   },
   {
-    facility: 'Barnwell',
-    address: '8089A US-98, Fairhope, AL 36532',
-    url: 'barnwell/rent-sub/login'
+    facility: 'Clifford North',
+    address: '424 E Clifford St, Plymouth, WI 53073',
+    url: 'clifford-north/rent-sub/login'
   },
   {
-    facility: 'Belforest',
-    address: '11455 Co Rd 64, Daphne, AL 36526',
-    url: 'belforest/rent-sub/login'
+    facility: 'Clifford South',
+    address: '423 E Clifford St Plymouth, WI 53073',
+    url: 'clifford-south/rent-sub/login'
   },
   {
-    facility: 'Fairhope',
-    address: '21193 AL-181, Fairhope, AL 36532',
-    url: 'fairhope/rent-sub/login'
+    facility: 'Location5',
+    address: '423 E Clifford St Plymouth, WI 53073',
+    url: 'location5/rent-sub/login'
   },
-  {
-    facility: 'Robertsdale',
-    address: '20218 US-90, Robertsdale, AL 36567',
-    url: 'robertsdale/rent-sub/login'
-  },
+  // {
+  //   facility: 'Robertsdale',
+  //   address: '20218 US-90, Robertsdale, AL 36567',
+  //   url: 'robertsdale/rent-sub/login'
+  // },
 ];
 
 export const tableDataContactPage = [
   {
-    facility: ' Foley',
-    address: '17860 US-98, Foley, AL 36535',
-    url: 'foley'
+    facility: ' Commerce St',
+    address: '405 Commerce St Plymouth, WI 53073',
+    url: 'commerce-st'
   },
   {
-    facility: 'Silverhill',
-    address: '15410 AL-104, Silverhill, AL 36576',
-    url: 'silverhill'
+    facility: 'Pleasantview',
+    address: 'N6112 N Pleasant View Rd, Plymouth, WI 53073',
+    url: 'pleasantview'
   },
   {
-    facility: 'Barnwell',
-    address: '8089A US-98, Fairhope, AL 36532',
-    url: 'barnwell'
+    facility: 'Clifford North',
+    address: '424 E Clifford St, Plymouth, WI 53073',
+    url: 'clifford-north'
   },
   {
-    facility: 'Belforest',
-    address: '11455 Co Rd 64, Daphne, AL 36526',
-    url: 'belforest'
+    facility: 'Clifford South',
+    address: '423 E Clifford St Plymouth, WI 53073',
+    url: 'clifford-south'
   },
   {
-    facility: 'Fairhope',
-    address: '21193 AL-181, Fairhope, AL 36532',
-    url: 'fairhope'
+    facility: 'Location5',
+    address: '423 E Clifford St Plymouth, WI 53073',
+    url: 'location5'
   },
-  {
-    facility: 'Robertsdale',
-    address: '20218 US-90, Robertsdale, AL 36567',
-    url: 'robertsdale'
-  },
+  // {
+  //   facility: 'Robertsdale',
+  //   address: '20218 US-90, Robertsdale, AL 36567',
+  //   url: 'robertsdale'
+  // },
 ];
 
 

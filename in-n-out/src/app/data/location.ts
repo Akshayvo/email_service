@@ -143,29 +143,29 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Foley`;
+export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Commerce St`;
 
-export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Silverhill`;
+export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Pleasantview`;
 
-export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Barnwell`;
+export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Clifford North`;
 
 export const headingReservePageLocation4 = ``;
 
-export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit in Fairhope`;
+export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit in Location5`;
 
 export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
 
-export const heading1 = `Storage Plus of Baldwin County - Foley`;
+export const heading1 = `In-N-Out Storage - Commerce St`;
 
-export const heading2 = `Storage Plus of Baldwin County - Silverhill`;
+export const heading2 = `In-N-Out Storage - Pleasantview`;
 
-export const heading3 = `Storage Plus of Baldwin County - Barnwell`;
+export const heading3 = `In-N-Out Storage - Clifford North`;
 
-export const heading4 = `Storage Plus of Baldwin County - Belforest`;
+export const heading4 = `In-N-Out Storage - Clifford South`;
 
-export const heading5 = `Storage Plus of Baldwin County - Fairhope`;
+export const heading5 = `In-N-Out Storage - Location5`;
 
-export const heading6 = `Storage Plus of Baldwin County - Robertsdale`;
+export const heading6 = `In-N-Out Storage - Robertsdale`;
 
 
 export const unitSizerLocation1 = [

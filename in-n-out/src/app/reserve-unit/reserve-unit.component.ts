@@ -22,19 +22,19 @@ export class ReserveUnitComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+    if (this.router.url.includes(`${environment.locationName}/commerce-st`)) {
       this.id = 1;
       this.heading = headingLocation1;
-    } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/pleasantview`)) {
       this.id = 2;
       this.heading = headingLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/clifford-north`)) {
       this.id = 3;
       this.heading = headingLocation3;
-    } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/clifford-south`)) {
       this.id = 4;
       this.heading = headingLocation4;
-    } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/location5`)) {
       this.id = 5;
       this.heading = headingLocation5;
     } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {

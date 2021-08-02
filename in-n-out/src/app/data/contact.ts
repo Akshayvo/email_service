@@ -211,7 +211,7 @@ export const contactsLocation5 = [
     {
         id: 1,
         label: 'Address: ',
-        data: '21193 AL-181, Fairhope, AL 36532',
+        data: '21193 AL-181, Location5, AL 36532',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://goo.gl/maps/FANSU6w7QY9vCpiDA'
     },

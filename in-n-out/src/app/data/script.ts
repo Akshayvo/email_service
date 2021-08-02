@@ -74,43 +74,43 @@ const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
 const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
 const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
-export const nameLocation1 = `Storage Plus of Baldwin County - Foley`;
-export const nameLocation2 = `Storage Plus of Baldwin County - Silverhill`;
-export const nameLocation3 = `Storage Plus of Baldwin County - Barnwell`;
-export const nameLocation4 = `Storage Plus of Baldwin County - Belforest`;
-export const nameLocation5 = `Storage Plus of Baldwin County - Fairhope`;
-export const nameLocation6 = `Storage Plus of Baldwin County - Robertsdale`;
+export const nameLocation1 = `In-N-Out Storage - Commerce St`;
+export const nameLocation2 = `In-N-Out Storage - Pleasantview`;
+export const nameLocation3 = `In-N-Out Storage - Clifford North`;
+export const nameLocation4 = `In-N-Out Storage - Clifford South`;
+export const nameLocation5 = `In-N-Out Storage - Location5`;
+export const nameLocation6 = `In-N-Out Storage - Robertsdale`;
 
 
-export const location1 = `foley`;
-export const location2 = `silverhill`;
-export const location3 = `barnwell`;
-export const location4 = `belforest`;
-export const location5 = `barnwell`;
+export const location1 = `commerce-st`;
+export const location2 = `pleasantview`;
+export const location3 = `clifford-north`;
+export const location4 = `clifford-south`;
+export const location5 = `clifford-north`;
 export const location6 = `robertsdale`;
 
 
-export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/foley/storage-units`;
-export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/silverhill/storage-units`;
-export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/barnwell/storage-units`;
-export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/belforest/storage-units`;
-export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/fairhope/storage-units`;
+export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/commerce-st/storage-units`;
+export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/pleasantview/storage-units`;
+export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/clifford-north/storage-units`;
+export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/clifford-south/storage-units`;
+export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/location5/storage-units`;
 export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/robertsdale/storage-units`;
 
 
 export const description1 = `brick self storage facility front office with a green lawn
                              in the front and blue sky above`;
 
-export const description2 = `Our Silverhill location has a number of regular and climate controlled unit types `;
+export const description2 = `Our Pleasantview location has a number of regular and climate controlled unit types `;
 
-export const description3 = `Our Barnwell location has a number of regular and climate controlled unit types ideal
+export const description3 = `Our Clifford North location has a number of regular and climate controlled unit types ideal
                              for just about any self storage need at an affordable price!  Our 24-hour access policy
                              makes coming and going on your schedule a breeze!`;
 
 export const description4 = `Our Belfast location has a number of units in both regular and climate controlled
                              varieties to cover all of your residential or commercial self storage needs.`;
 
-export const description5 = `Our Fairhope location has a number of unit sizes ideal for just about any self storage
+export const description5 = `Our Location5 location has a number of unit sizes ideal for just about any self storage
                              need at an affordable price!  Our 24-hour access policy makes coming and going on your
                              schedule a breeze!`;
 
@@ -129,7 +129,7 @@ export const maplocation6 = 'https://goo.gl/maps/kt1bhA6aHeRmjXsN7';
 export const addressLoaction1 = {
   '@type': 'PostalAddress',
       'streetAddress': '17860 US-98',
-      'addressLocality': 'Foley',
+      'addressLocality': 'Commerce St',
       'addressRegion': 'AL',
       'postalCode': '36535',
       'addressCountry': 'United state'
@@ -138,7 +138,7 @@ export const addressLoaction1 = {
 export const addressLoaction2 = {
   '@type': 'PostalAddress',
   'streetAddress': '15410 AL-104',
-  'addressLocality': 'Silverhill',
+  'addressLocality': 'Pleasantview',
   'addressRegion': 'AL',
   'postalCode': '36576',
   'addressCountry': 'United state'
@@ -147,7 +147,7 @@ export const addressLoaction2 = {
 export const addressLoaction3 = {
   '@type': 'PostalAddress',
   'streetAddress': '8089A US-98',
-  'addressLocality': 'Fairhope',
+  'addressLocality': 'Location5',
   'addressRegion': 'AL',
   'postalCode': '36532',
   'addressCountry': 'United state'
@@ -165,7 +165,7 @@ export const addressLoaction4 = {
 export const addressLoaction5 = {
   '@type': 'PostalAddress',
   'streetAddress': '21193 AL-181',
-  'addressLocality': 'Fairhope',
+  'addressLocality': 'Location5',
   'addressRegion': 'AL',
   'postalCode': '36532',
   'addressCountry': 'United state'
@@ -189,9 +189,9 @@ export const imageLocation1 = [
  ]
 
  export const imageLocation2 = [
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-silverhill-11.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-silverhill-169.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-silverhill-43.jpg'
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-pleasantview-11.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-pleasantview-169.jpg',
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-pleasantview-43.jpg'
  ]
 
  export const imageLocation3 = [
@@ -201,15 +201,15 @@ export const imageLocation1 = [
  ]
 
  export const imageLocation4 =  [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-43.jpg'
  ]
 
  export const imageLocation5 =  [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-belforest-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-43.jpg'
  ]
 
  export const imageLocation6 =  [

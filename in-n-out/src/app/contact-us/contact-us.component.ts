@@ -103,15 +103,15 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('foley')) {
+    if (this.router.url.includes('commerce-st')) {
       this.og = ogContactPageLocation1;
-    } else if (this.router.url.includes('silverhill')) {
+    } else if (this.router.url.includes('pleasantview')) {
       this.og = ogContactPageLocation2;
-    } else if (this.router.url.includes('barnwell')) {
+    } else if (this.router.url.includes('clifford-north')) {
       this.og = ogContactPageLocation3;
-    } else if (this.router.url.includes('belforest')) {
+    } else if (this.router.url.includes('clifford-south')) {
       this.og = ogContactPageLocation4;
-    } else if (this.router.url.includes('fairhope')) {
+    } else if (this.router.url.includes('location5')) {
       this.og = ogContactPageLocation5;
     } else if (this.router.url.includes('robertsdale')) {
       this.og = ogContactPageLocation6;
@@ -124,15 +124,15 @@ public fetchMetaData() {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('foley')) {
+  if (this.router.url.includes('commerce-st')) {
     this.twitter = twitterContactPageLocation2;
-  } else if (this.router.url.includes('silverhill')) {
+  } else if (this.router.url.includes('pleasantview')) {
     this.twitter = twitterContactPageLocation1;
-  } else if (this.router.url.includes('barnwell')) {
+  } else if (this.router.url.includes('clifford-north')) {
     this.twitter = twitterContactPageLocation3;
-  } else if (this.router.url.includes('belforest')) {
+  } else if (this.router.url.includes('clifford-south')) {
     this.twitter = twitterContactPageLocation4;
-  } else if (this.router.url.includes('fairhope')) {
+  } else if (this.router.url.includes('location5')) {
     this.twitter = twitterContactPageLocation5;
   } else if (this.router.url.includes('robertsdale')) {
     this.twitter = twitterContactPageLocation6;
@@ -171,15 +171,15 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('foley')) {
+    if (this.router.url.includes('commerce-st')) {
       this.fetchContactDetailsLocation1();
-    } else if (this.router.url.includes('silverhill')) {
+    } else if (this.router.url.includes('pleasantview')) {
       this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('barnwell')) {
+    } else if (this.router.url.includes('clifford-north')) {
       this.fetchContactDetailsLocation3();
-    } else if (this.router.url.includes('belforest')) {
+    } else if (this.router.url.includes('clifford-south')) {
       this.fetchContactDetailsLocation4();
-    } else if (this.router.url.includes('fairhope')) {
+    } else if (this.router.url.includes('location5')) {
       this.fetchContactDetailsLocation5();
     } else if (this.router.url.includes('robertsdale')) {
       this.fetchContactDetailsLocation6();
@@ -187,7 +187,7 @@ public fetchTwitter() {
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `Storage Plus of Baldwin County - Foley`;
+    this.heading = `In-N-Out Storage - Commerce St`;
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
@@ -195,34 +195,34 @@ public fetchTwitter() {
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading = `Storage Plus of Baldwin County - Silverhill`;
+    this.heading = `In-N-Out Storage - Pleasantview`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
-    this.heading = `Storage Plus of Baldwin County - Barnwell`;
+    this.heading = `In-N-Out Storage - Clifford North`;
     this.locationId = '3'
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
-    this.heading = `Storage Plus of Baldwin County - Belforest`;
+    this.heading = `In-N-Out Storage - Clifford South`;
     this.locationId = '4'
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
   } 
 
   public fetchContactDetailsLocation5() {
-    this.heading = `Storage Plus of Baldwin County - Fairhope`;
+    this.heading = `In-N-Out Storage - Location5`;
     this.locationId = '5'
     this.contactDetails = contactsLocation5;
     this.hoursDetails = hoursLocation5;
   } 
 
   public fetchContactDetailsLocation6() {
-    this.heading = `Storage Plus of Baldwin County - Robertsdale`;
+    this.heading = `In-N-Out Storage - Robertsdale`;
     this.locationId = '6'
     this.contactDetails = contactsLocation6;
     this.hoursDetails = hoursLocation6;

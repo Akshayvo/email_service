@@ -13,34 +13,34 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
-                label: 'Foley',
-                path: `${environment.locationName}/foley`,
+                label: 'Commerce St',
+                path: `${environment.locationName}/commerce-st`,
               },
             {
                 id: '2',
-                label: 'Silverhill',
-                path: `${environment.locationName}/silverhill`,
+                label: 'Pleasantview',
+                path: `${environment.locationName}/pleasantview`,
             },
               {
                 id: '3',
-                label: 'Barnwell',
-                path: `${environment.locationName}/barnwell`,
+                label: 'Clifford North',
+                path: `${environment.locationName}/clifford-north`,
             },
             {
                 id: '4',
-                label: 'Belforest',
-                path: `${environment.locationName}/belforest`,
+                label: 'Clifford South',
+                path: `${environment.locationName}/clifford-south`,
             },
             {
                 id: '5',
-                label: 'Fairhope',
-                path: `${environment.locationName}/fairhope`,
+                label: 'Location5',
+                path: `${environment.locationName}/location5`,
             },
-            {
-                id: '6',
-                label: 'Robertsdale',
-                path: `${environment.locationName}/robertsdale`,
-            },
+            // {
+            //     id: '6',
+            //     label: 'Robertsdale',
+            //     path: `${environment.locationName}/robertsdale`,
+            // },
         ]
     },
     {
@@ -50,13 +50,13 @@ export const navLinks = [
     },
     {
         label: 'Storage Tools',
-        type: 'dropdown',
+        type: 'dropdown1',
         path: '/storage-tools',
         sublinks: [
             {
                 id: '1',
                 label: 'FAQ',
-                path: `${environment.locationName}/faq`,
+                path: `${environment.locationName}/frequently-asked-questions`,
               },
             {
                 id: '2',
@@ -78,12 +78,12 @@ export const navLinks = [
     },
     {
         label: 'Auctions',
-        path: '/pay-rent',
+        path: '/auctions',
         type: 'link'
     },
     {
         label: 'Testimonials',
-        path: '/pay-rent',
+        path: '/testimonials',
         type: 'link'
     },
     {
