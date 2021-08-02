@@ -14,6 +14,10 @@ export const featuresList = [
     {
         td1: 'Affordable Rates',
         td2: '24 Hour Unit Access',
+    },
+    {
+        td1: 'High-Definition Security Cameras',
+        td2: 'Bright LED Lighting',
     }
 ];
 
