@@ -8,7 +8,7 @@ export const contact = [
     {
         id: 1,
         label: 'Office Address: ',
-        data: '1807 E 1st St, Vidalia, GA 30474',
+        data: '305 Maple Dr, Vidalia, GA 30474',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
     },
     {
@@ -30,7 +30,7 @@ export const contact = [
 export const hours = [
     {
         label: '7 Days a Week: ',
-        data: '10:00AM to 5:00PM'
+        data: '9:00AM to 5:00PM'
     },
     {
         label: 'Access Hours: ',
