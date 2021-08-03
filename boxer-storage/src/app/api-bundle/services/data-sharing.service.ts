@@ -5,7 +5,7 @@ import { Injectable } from "@angular/core";
 })
 export class DataSharingService {
   locationAPIKey = {
-    loc1: 'dzJ0OVc0SjgqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 29483 allendale
+    /* loc1: 'dzJ0OVc0SjgqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 29483 allendale
     loc2: 'dzJ0OFczSjIqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //28327 alpine
     loc3: 'dzJ0N1c2SjcqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 27672 dutton
     loc4: 'dzJ0OFc3SjgqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 28787 evanston-ave
@@ -17,6 +17,23 @@ export class DataSharingService {
     loc10: 'dzJ0N1c2SjcqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 27673 wayland mill
     loc11: 'dzJ0N1c2SjcqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 27677  wayland southside
     loc12: 'dzJ0N1c2SjcqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 27675 wayland westside
+    */
+    // loc1: 'dzJ0OFc3SjgqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 28787 evanston-ave
+    loc2: "dzJ0OFc2SjIqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28620 howard-city,
+    loc3: "dzJ0OFc0SjEqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28410 ionia
+    loc4: "dzJ0OFczSjIqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28327 alpine
+    loc5: "dzJ0OFczSjEqOE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 28318 red barn
+    loc6: "dzJ0N1c2SjcqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 27675 wayland westside
+    loc7: "dzJ0N1c2SjcqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 27673 wayland mill
+    loc8: "dzJ0N1c2SjcqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 27677  wayland southside
+    loc9: "dzJ0N1c2SjcqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 27672 dutton
+    loc10: "dzJ0OVcwSjgqMU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 29081 m-45
+    loc11: "dzJ0OVc0SjQqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 29443 ostego
+    loc12: "dzJ0OVc0SjgqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 29443 ostego
+    loc1: "dzJ0OFc3SjgqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28787 evanston
+    //loc1: "dzJ0OVc0SjgqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //29483 allendale
+    //loc1: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //testing
+
     // loc1: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //testing
     // loc2: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //testing
     // loc3: "dzJ0OFc0SjYqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28410 ionia
