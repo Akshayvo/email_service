@@ -11,7 +11,7 @@ export const contact = [
         label: 'Office Address:',
         data: '840 Linden Ave, Rochester, NY 14625',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/WUHvUufoU3ssxRHg7'
     },
     {
         id: 2,

@@ -13,7 +13,7 @@ export const environment = {
   facilityName: 'SAFE Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'http://safeselfstoragellc.com',
+  websiteUrl: 'https://safeselfstoragellc.com',
   // APIKey: `dzJ0OVc0SjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29435 Safe self Storage
   APIKey: `dzJ0OVc0SjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // Website Demo Data 4-29462
 };

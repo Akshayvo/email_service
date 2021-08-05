@@ -4,7 +4,7 @@ import { homePageContent, homePageTitle, payRentPageContent,
 contactPageContent, contactPageTitle } from '../data/title';
 import { featuresList } from '../data/home';
 import { contact, socialLinks } from '../data/contact';
- 
+
 const contactIndex = contact.findIndex(x => x.label === 'Phone:');
 const emailIndex = contact.findIndex(x => x.label === 'Email:');
 const sameAs = [];
@@ -12,114 +12,114 @@ const amenityFeature = [];
 
 
 featuresList.forEach(
-  feature => 
-  (amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td1}),
-  amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td2}))
+  feature =>
+  (amenityFeature.push({ '@type': 'LocationFeatureSpecification',  'name': feature.td1}),
+  amenityFeature.push({ '@type': 'LocationFeatureSpecification',  'name': feature.td2}))
 )
 
 socialLinks.forEach(links => {
   links.path ? sameAs.push(links.path) : sameAs.push(' ')
 }
 );
-  
+
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Safe_Self_Storage/jpg/safe-self-storage-11.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Safe_Self_Storage/jpg/safe-self-storage-43.jpg", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Safe_Self_Storage/jpg/safe-self-storage-169.jpg" // 16:9
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Safe_Self_Storage/jpg/safe-self-storage-11.jpg', // 1:1
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Safe_Self_Storage/jpg/safe-self-storage-43.jpg', // 4:3
+      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Safe_Self_Storage/jpg/safe-self-storage-169.jpg' // 16:9
      ],
      telephone: contact[contactIndex].data,
-     map: "https://goo.gl/maps/VEgPZ4BZ59JYkrBM9",
+     map: 'https://goo.gl/maps/VEgPZ4BZ59JYkrBM9',
      description: `SAFE Self-Storage provides high-quality, well-maintained regular and climate controlled self storage
      space to East Rochester, Penfield, Panorama, Pittsford, and the surrounding communities. Our facility is locally
      owned and operated, and we pride ourselves on our friendly service and affordable prices.`,
-     streetAddress: "499 W Commercial St",
-     state: "New York",
-     addressLocality: "East Rochester",
-     addressRegion: "NY",
-     postalCode: "14445",
-     addressCountry: "US",
-     id: environment.websiteUrl || "",
-     paymentAccepted:  "Cash, Check, Debit Card, Credit Card",
-     currenciesAccepted: "USD",
-     ratingValue: "",
-     bestRating: "",
-     reviewCount: "",
+     streetAddress: '499 W Commercial St',
+     state: 'New York',
+     addressLocality: 'East Rochester',
+     addressRegion: 'NY',
+     postalCode: '14445',
+     addressCountry: 'US',
+     id: environment.websiteUrl || '',
+     paymentAccepted:  'Cash, Check, Debit Card, Credit Card',
+     currenciesAccepted: 'USD',
+     ratingValue: '',
+     bestRating: '',
+     reviewCount: '',
      latitude: 43.116764,
      longitude: -77.499584,
-     openingHours: ["Mo-Su 06:00-22:00"],
+     openingHours: ['Mo-Su 06:00-22:00'],
      priceRange: ''
 };
 
 export const homePageScript = [ {
-    "@context": "https://schema.org",
-    "@type": ["Organization","SelfStorage","Place","LocalBusiness"],
-    "image": script.imagesHomePage,
-    "@id": script.id,
-    "name": environment.facilityName,
-     "description": script.description || homePageContent,
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": script.streetAddress,
-      "addressLocality": script.addressLocality,
-      "addressRegion": script.addressRegion,
-      "postalCode": script.postalCode,
-      "addressCountry": script.addressCountry
+    '@context': 'https://schema.org',
+    '@type': ['Organization','SelfStorage','Place','LocalBusiness'],
+    'image': script.imagesHomePage,
+    '@id': script.id,
+    'name': environment.facilityName,
+     'description': script.description || homePageContent,
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': script.streetAddress,
+      'addressLocality': script.addressLocality,
+      'addressRegion': script.addressRegion,
+      'postalCode': script.postalCode,
+      'addressCountry': script.addressCountry
     },
-   "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": script.ratingValue,
-      "bestRating": script.bestRating,
-      "reviewCount": script.reviewCount
+  //  'aggregateRating': {
+  //     '@type': 'AggregateRating',
+  //     'ratingValue': script.ratingValue,
+  //     'bestRating': script.bestRating,
+  //     'reviewCount': script.reviewCount
+  //   },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': script.latitude,
+      'longitude': script.longitude
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": script.latitude,
-      "longitude": script.longitude
-    },
-    "url": environment.websiteUrl,
-    "telephone": script.telephone,
-    
-    "priceRange": script.priceRange,
-    "openingHours": script.openingHours,
-    "currenciesAccepted": script.currenciesAccepted,
-    "paymentAccepted": script.paymentAccepted,
-     "areaServed": {
-    "@type": "State",
-    "name": script.state
+    'url': environment.websiteUrl,
+    'telephone': script.telephone,
+
+    'priceRange': script.priceRange,
+    'openingHours': script.openingHours,
+    'currenciesAccepted': script.currenciesAccepted,
+    'paymentAccepted': script.paymentAccepted,
+     'areaServed': {
+    '@type': 'State',
+    'name': script.state
    },
-   
-  "hasMap": script.map,
-  "amenityFeature": amenityFeature,
-  "acceptsReservations": "True"
+
+  'hasMap': script.map,
+  'amenityFeature': amenityFeature,
+  'acceptsReservations': 'True'
   }];
 
 
   export const contactPageScript = [
     {
-        "@context": "http://schema.org",
-        "@type": "Selfstorage",
-        "name": environment.facilityName,
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": script.addressLocality,
-          "postalCode": script.postalCode,
-          "streetAddress": script.streetAddress,
+        '@context': 'http://schema.org',
+        '@type': 'Selfstorage',
+        'name': environment.facilityName,
+        'address': {
+          '@type': 'PostalAddress',
+          'addressLocality': script.addressLocality,
+          'postalCode': script.postalCode,
+          'streetAddress': script.streetAddress,
         },
-         "url": environment.websiteUrl,
-         "image": script.imagesHomePage[0],
-        "contactPoint": [{
-          "@type": "ContactPoint",
-          "telephone": script.telephone,
-          "contactType": "reservations"
+         'url': environment.websiteUrl,
+         'image': script.imagesHomePage[0],
+        'contactPoint': [{
+          '@type': 'ContactPoint',
+          'telephone': script.telephone,
+          'contactType': 'reservations'
         },{
-          "@type": "ContactPoint",
-          "telephone": script.telephone,
-          "contactType": "customer service"
+          '@type': 'ContactPoint',
+          'telephone': script.telephone,
+          'contactType': 'customer service'
         }],
-        "email": contact[emailIndex].data,
-        "sameAs": sameAs
+        'email': contact[emailIndex].data,
+        'sameAs': sameAs
       }
   ];
 
@@ -204,7 +204,7 @@ export const ogPayRentPage = [
       content: script.imagesHomePage[1]
     },
   ];
-  
+
   export const twitterPayRentPage = [
     {
       name: `twitter:title`,
@@ -258,7 +258,7 @@ export const ogPayRentPage = [
       content: script.imagesHomePage[1]
     },
   ];
-  
+
   export const twitterStorageTipsPage = [
     {
       name: `twitter:title`,
@@ -285,7 +285,7 @@ export const ogPayRentPage = [
       content: script.imagesHomePage[0]
     },
   ];
-  
+
   export const ogContactPage = [
     {
       property: `og:title`,
@@ -312,7 +312,7 @@ export const ogPayRentPage = [
       content: script.imagesHomePage[1]
     },
   ];
-  
+
   export const twitterContactPage = [
     {
       name: `twitter:title`,
@@ -340,4 +340,3 @@ export const ogPayRentPage = [
     },
   ];
 
-  
