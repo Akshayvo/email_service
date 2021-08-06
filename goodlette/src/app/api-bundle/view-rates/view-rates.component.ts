@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
 import { script } from '../../data/script';
+import { ElementFinder } from 'protractor';
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -66,6 +67,7 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
 
   
   public navigate(location: any) {
+    
     if ((location === '/view-rates') || (location === '/storage-tips') || (location === '/reserve-unit')) {
       console.log("view rates");
       this.router.navigate([`${environment.locationName}/${location}`]);
@@ -80,7 +82,24 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   }
 
   public fetchViewRatesHeading() {
-    this.viewRatesHeading = viewRatesHeading;
+    console.log(this.router.url)
+   if(this.router.url === '/florida/naples/view-rates/reserve'){
+      this.viewRatesHeading = "Reserve Unit";
+    }
+    else if(this.router.url === '/florida/naples/view-rates/move-in'){
+      this.viewRatesHeading = "Sign Up";
+    }
+    
+    // else if(this.router.url === '/florida/naples/view-rates/confirmation'){
+    //   this.viewRatesHeading = "Reservation Information";
+    // }
+    // else if(this.router.url === '/florida/naples/view-rates/thank-you'){
+    //   this.viewRatesHeading = "SUCCESS";
+    // }
+    else{
+      this.viewRatesHeading = viewRatesHeading;
+    }
+    
   }
 
   public fetchMetaData () {

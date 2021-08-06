@@ -45,21 +45,48 @@
 
           <div class="col-lg-6 py-3">
             <div class="mb-4 contact-details">
-              
-              <p>
-                <span *ngFor="let contact of contactDetails" class="display-contact">
-                  <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
-                    <h4><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h4>
-                  </span>
-                  <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
-                </span>
-              </p>
-              <h4><b>Office Hours:</b></h4>
-              <p>
-                <span class="display-contact" *ngFor="let hour of hours">
-                  <h4><b>{{hour.label}}</b></h4>&nbsp;<h4>{{hour.data}}</h4><br>
-                </span>
-              </p>
+              <div
+                *ngFor="let contact of contactDetails"
+                class="display-contact"
+              >
+                <div >
+                  <h4>
+                    <strong>{{ contact.label }}&nbsp;</strong>
+                  </h4>
+                </div>
+                <div
+                  class="contact-links"
+                  [class.mb-2]="contact?.label === 'Phone:'"
+                  *ngIf="
+                    contact?.label === 'Address:' ||
+                    contact?.label === 'Email:' ||
+                    contact?.label === 'Phone:'
+                  "
+                >
+                  <h4>
+                    <a
+                      [href]="contact?.redirect"
+                      target="{{
+                        contact?.label === 'Address:'
+                          ? '_blank'
+                          : '_self'
+                      }}"
+                      rel="noopener"
+                      >{{ contact.data }}</a
+                    >
+                  </h4>
+                </div>
+                <!-- <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br> -->
+              </div>
+              <!-- <h4><b>Facility Hours:</b></h4> -->
+              <div class="display-contact" *ngFor="let hour of hours">
+                <h4 *ngIf="hour.label">
+                  <b>{{ hour.label }}</b
+                  >&nbsp;
+                </h4>
+                <h4>{{ hour.data }}</h4>
+                
+              </div>
             </div>
             <div>
               <app-tables [tBody]="featuresList"></app-tables>
@@ -77,7 +104,7 @@
           <!-- <img src="{{imageBaseUrl}}/inside-self-storage-unit.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage"> -->
           <app-photos></app-photos>
         </div>
-        <div class="col-lg-6 py-3">
+        <div class="col-lg-6 py-3 text-center">
           <!-- <h1 class="heading pb-4">{{aboutUsHeading}}</h1> -->
           <h3>CLIMATE CONTROLLED INTERIOR UNITS</h3>
           <h3>+</h3>
@@ -118,7 +145,8 @@
               <ul class="carousel-indicators">  
                 <li data-target="#bootstrapCarousel" data-slide-to="0" class="active"></li>   
                 <li data-target="#bootstrapCarousel" data-slide-to="1"></li>    
-                <li data-target="#bootstrapCarousel" data-slide-to="2"></li>      
+                <li data-target="#bootstrapCarousel" data-slide-to="2"></li>  
+                <li data-target="#bootstrapCarousel" data-slide-to="3"></li>    
               </ul>       
               <!-- The slides to show --> 
               <div class="carousel-inner">      

@@ -41,6 +41,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
   defaultClimateString = ' ';
+  currentRouteForHeadingReserve: any;
 
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
@@ -73,6 +74,10 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.getData();
     this.fetchThData();    
     this.state = script.state;
+    this.dataSharingService.currentRouteForHeadingReserve.subscribe((updatedRoute) => {
+      this.currentRouteForHeadingReserve = updatedRoute;
+      //console.log(this.currentRouteForPayment);
+    });
   }
 
   public fetchThData() {
@@ -88,6 +93,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
 
   public navigate(location: any, unitData: any) {
     this.dataSharingService.setReservationData(unitData);
+   
     this.router.navigate([`${environment.locationName}/${location}`]);
     this.dataSharingService.LstUnitTypes = unitData;
   }

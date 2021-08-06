@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -29,6 +30,17 @@ export class DataSharingService {
   eventName: string;
   signUpForAutoPay: boolean;
   showAltDetails: boolean;
+  reserve: boolean;
+  moveIn: boolean;
+
+  currentRouteForHeadingReserve = new BehaviorSubject("/reserve");
+  currentRouteForHeadingMovein = new BehaviorSubject("/move-in");
+  setRoute(currentRouteForHeadingReserve: string) {
+    this.currentRouteForHeadingReserve.next(currentRouteForHeadingReserve);
+  }
+  setContact(currentRouteForHeadingMovein: string) {
+    this.currentRouteForHeadingMovein.next(currentRouteForHeadingMovein);
+  }
 
   cardDetailsObject = {
     CCNumber: '',
@@ -139,6 +151,11 @@ constructor() {
 
   getMoveInData() {
     return this.MoveInData;
+  }
+
+  getHeadingData(value: any){
+    this.reserve = value.reserve;
+    this.moveIn = value.moveIn;
   }
 
 }
