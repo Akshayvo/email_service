@@ -27,10 +27,6 @@
   compress = true
 # A basic redirect rule
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-[[redirects]]
   from = "http://www.glenmontselfstorage.com/index.html"
   to = "http://www.glenmontselfstorage.com/"
   status = 301
@@ -86,3 +82,7 @@
   from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=15"
   to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
   status = 301
+  [[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
