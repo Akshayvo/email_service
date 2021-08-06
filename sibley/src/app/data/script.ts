@@ -32,11 +32,11 @@ export const script = {               // Please fill this script according to fa
      telephone: contact[contactIndex].data,
      map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
      description: "Sibley Storage is Green Isle’s newest self storage facility. Our brand new self storage units are conveniently located just north of Green Isle on 180th and offer all of the modern self storage conveniences you’d expect from a locally owned and operated business. From our contactless rental process to our 24-hour access policy and online tenant management portal, you’ll find storing at Sibley Storage to be a convenient and affordable experience.",
-     streetAddress: "148 W 51st St",
-     state: "New York",
-     addressLocality: "New York",
-     addressRegion: "NY",
-     postalCode: "10019",
+     streetAddress: "36429 180th St",
+     state: "Green Isle",
+     addressLocality: "Green Isle",
+     addressRegion: "MN",
+     postalCode: "55338",
      addressCountry: "US",
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit Card, Debit Card",
@@ -47,7 +47,7 @@ export const script = {               // Please fill this script according to fa
      latitude: 44.6886878,
      longitude: -94.0044785,
      openingHours: [],
-     priceRange: ''
+     priceRange: '$75'
 };
 
 export const homePageScript = [ {
