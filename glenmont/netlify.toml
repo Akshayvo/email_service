@@ -62,4 +62,27 @@
   from = "http://www.glenmontselfstorage.com/glenmont_self_storage_albany_bethlehem_slingerlands_delmar_selkirk.html"
   to = "http://www.glenmontselfstorage.com/contact-us"
   status = 301
-  
+[[redirects]]
+  from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=16"
+  to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+  status = 301
+[[redirects]]
+  from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=24"
+  to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+  status = 301
+  [[redirects]]
+  from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=22"
+  to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+  status = 301
+  [[redirects]]
+  from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=21"
+  to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+  status = 301
+  [[redirects]]
+  from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=19"
+  to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+  status = 301
+  [[redirects]]
+  from = "http://www.glenmontselfstorage.com/RentalUnit.aspx?ui=15"
+  to = "http://www.glenmontselfstorage.com/new-york/glenmont/view-rates"
+  status = 301

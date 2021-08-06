@@ -52,7 +52,7 @@ export const tiles = [
     name: `Closet`,
     temperature: `Temp. & Non Temp. Control`,
     price: `Please call for price`,
-    discount: `25% off 1st full month`,
+    discount: `No Admin Fee and No Deposit`,
     discount1: `Free truck with move in*`,
   },
   {
@@ -60,7 +60,7 @@ export const tiles = [
     name: `Walk-in closet`,
     temperature: `Temp. & Non Temp. Control`,
     price: `Please call for price`,
-    discount: `25% off 1st full month`,
+    discount: `No Admin Fee and No Deposit`,
     discount1: `Free truck with move in*`,
   },
   {
@@ -68,7 +68,7 @@ export const tiles = [
     name: `Apartment Favorite`,
     temperature: `Temp. & Non Temp. Control`,
     price: `Please call for price`,
-    discount: `25% off 1st full month`,
+    discount: `No Admin Fee and No Deposit`,
     discount1: `Free truck with move in*`,
   },
   {
@@ -76,7 +76,7 @@ export const tiles = [
     name: `Something Funky`,
     temperature: `Temp. & Non Temp. Control`,
     price: `Please call for price`,
-    discount: `25% off 1st full month`,
+    discount: `No Admin Fee and No Deposit`,
     discount1: `Free truck with move in*`,
   },
   {
@@ -84,7 +84,7 @@ export const tiles = [
     name: `Ideal Middle`,
     temperature: `Temp. & Non Temp. Control`,
     price: `Please call for price`,
-    discount: `25% off 1st full month`,
+    discount: `No Admin Fee and No Deposit`,
     discount1: `Free truck with move in*`,
   },
   {
@@ -92,7 +92,7 @@ export const tiles = [
     name: `Customer Favorite`,
     temperature: `Temp. & Non Temp. Control`,
     price: `Please call for price`,
-    discount: `25% off 1st full month`,
+    discount: `No Admin Fee and No Deposit`,
     discount1: `Free truck with move in*`,
   },
   {
@@ -100,7 +100,7 @@ export const tiles = [
     name: `Gallery`,
     temperature: `Temp. & Non Temp. Control`,
     price: `Please call for price`,
-    discount: `25% off 1st full month`,
+    discount: `No Admin Fee and No Deposit`,
     discount1: `Free truck with move in*`,
   },
   {
@@ -108,7 +108,7 @@ export const tiles = [
     name: `Your Additional Garage`,
     temperature: `Temp. & Non Temp. Control`,
     price: `Please call for price`,
-    discount: `25% off 1st full month`,
+    discount: `No Admin Fee and No Deposit`,
     discount1: `Free truck with move in*`,
   },
 ];
