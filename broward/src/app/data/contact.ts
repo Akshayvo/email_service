@@ -30,7 +30,7 @@ export const hours = [
   },
   {
     label: "Saturday: ",
-    data: "10:00AM to 3:00PM",
+    data: "By Appointment Only",
   },
   {
     label: "Sunday: ",
@@ -38,7 +38,7 @@ export const hours = [
   },
   {
     label: "Storage Access Hours: ",
-    data: "24 hours a day, 7 days a week",
+    data: "7 Days a Week, 6:00AM to 10:00PM",
   },
 ];
 
