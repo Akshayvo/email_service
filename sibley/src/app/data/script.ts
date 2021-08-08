@@ -1,7 +1,7 @@
 import { environment } from '../../environments/environment';
 import { homePageContent, homePageTitle, payRentPageContent,
   payRentPageTitle, storageTipsContent, storageTipsTitle,
-contactPageContent, contactPageTitle } from '../data/title';
+contactPageContent, contactPageTitle,viewRatesPageTitle,viewRatesPageContent } from '../data/title';
 import { featuresList } from '../data/home';
 import { contact, socialLinks } from '../data/contact';
  
@@ -46,7 +46,7 @@ export const script = {               // Please fill this script according to fa
      reviewCount: "250",
      latitude: 44.6886878,
      longitude: -94.0044785,
-     openingHours: [],
+     openingHours: ["Mo-Fr 08:00-16:00"],
      priceRange: '$75'
 };
 
@@ -211,6 +211,60 @@ export const ogPayRentPage = [
     {
       name: `twitter:description`,
       content: `${payRentPageContent}`
+    },
+    {
+      name: `twitter:site`,
+      content: `@${environment.facilityName}`
+    },
+    {
+      name: `twitter:card`,
+      content: `summary`
+    },
+    {
+      name: `twitter:creator`,
+      content: `@syrasoft_connect`
+    },
+    {
+      name: `twitter:image`,
+      content: script.imagesHomePage[0]
+    },
+  ];
+
+  export const ogViewRates = [
+    {
+      property: `og:title`,
+      content: `${viewRatesPageTitle}`
+    },
+    {
+      property: `og:description`,
+      content: `${viewRatesPageContent}`
+    },
+    {
+      property: `og:type`,
+      content: `website`
+    },
+    {
+      property: `og:site_name`,
+      content: `${environment.facilityName}`
+    },
+    {
+      property: `og:url`,
+      content: `${environment.websiteUrl}/view-rates`
+    },
+    {
+      property: `og:image`,
+      content: script.imagesHomePage[1]
+    },
+  ];
+  
+  export const twitterViewRates = [
+    {
+      name: `twitter:title`,
+      content: `@${viewRatesPageTitle}`
+    },
+    {
+      name: `twitter:description`,
+      content: `${viewRatesPageContent}`
     },
     {
       name: `twitter:site`,

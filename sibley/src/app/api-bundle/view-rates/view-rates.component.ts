@@ -11,7 +11,7 @@ import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
 import { Router } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
 import { environment } from '../../../environments/environment';
-import { script } from '../../data/script';
+import { ogViewRates, twitterViewRates } from '../../data/script';
 @Component({
   selector: 'app-view-rates',
   templateUrl: './view-rates.component.html',
@@ -35,6 +35,8 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   viewRatesPageTitle: string;
   viewRatesAltText: string;
   state:string;
+  og: any;
+  twitter: any;
  private isUnsubscribe$: Subscription;
 
   constructor(
@@ -45,18 +47,30 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     private uaParserService: UaParserService,
     private canonical: CanonicalService
   ) {
-    this.state = script.state;
     this.fetchMetaData();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach(element => {
+      this.meta.addTag({
+        property: element.property,
+        content: element.content
+      })
+    });
+
+    this.twitter.forEach(element => {
+      this.meta.addTag({
+        name: element.name,
+        content: element.content
+      })
+    });
     this.meta.addTag({
       name: 'description',
       content: `${this.viewRatesPageContent}`
     });
     this.titleService.setTitle(`${this.viewRatesPageTitle}`);
     this.canonical.create();
-    this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
-    this.imageBaseUrl = this.uaParserService.baseUrl;
-
   }
+
 
   ngOnInit() {
     window.scrollTo(0, 0);
@@ -73,6 +87,15 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
     }
   }
 
+  public fetchOg() {
+    this.og = ogViewRates;
+  }
+
+  public fetchTwitter() {
+    this.twitter = twitterViewRates;
+  }
+
+ 
   public fetchViewRates() {
     this.viewRates = dataViewRates;
     this.viewRatesAltText = viewRatesAltText;
