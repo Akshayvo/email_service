@@ -1,11 +1,11 @@
 export const storagePoints = [
-    { data: 'Use smaller boxes for books and heavy items.' },
-    { data: 'Use larger boxes for lighter items.' },
-    { data: 'Reinforce the bottom of boxes with at least one strip of packing tape.' },
-    { data: 'Pack boxes firmly to prevent the contents from shifting.' },
-    { data: 'Seal boxes tightly with wide packing tape.' },
-    { data: 'Pack records and CDs vertically! Don\'t stack them flat, they will warp or bend!' },
-    { data: 'Place heavier items in the bottom of the box and lighter items on top.' },
+    { data: 'Size: 12’x6’x7’ high.' },
+    { data: 'Includes receiver and 2” ball.' },
+    { data: 'Tailgate is a ramp leading into the trailer.' },
+    { data: '4-prong flat plug-in light connection.' },
+    { data: 'Deposit required:  $75.' },
+    { data: 'Renter must have a valid driver’s license' },
+    // { data: 'Place heavier items in the bottom of the box and lighter items on top.' },
 ];
 
 

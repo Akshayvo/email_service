@@ -1,6 +1,6 @@
 import { environment } from '../../environments/environment';
 import { homePageContent, homePageTitle, payRentPageContent,
-  payRentPageTitle, storageTipsContent, storageTipsTitle,
+  payRentPageTitle, storageTipsContent, storageTipsTitle,trailerInfoTitle,trailerInfoContent,
 contactPageContent, contactPageTitle,
 location1PageContent, location2PageTitle,
 location2PageContent, location1PageTitle,
@@ -118,47 +118,47 @@ export const description6 = `Our Robertsdale location has a number of unit sizes
                              storage need at great prices!  Our 24-hour access policy makes coming and going
                              on your schedule a breeze!`;
 
-export const maplocation1 = 'https://goo.gl/maps/FqeHH1xEv8AP4GLg6';
-export const maplocation2 = 'https://goo.gl/maps/FTweCN2UdexnsJB49';
-export const maplocation3 = 'https://goo.gl/maps/EPmskBQ9TgFTBXcb8';
-export const maplocation4 = 'https://goo.gl/maps/skmJTukq9K3xRFbS7';
+export const maplocation1 = 'https://goo.gl/maps/r5Q8eeg2bTZyA7YFA';
+export const maplocation2 = 'https://g.page/r/CT1A0QzwMwCHEBA';
+export const maplocation3 = 'https://goo.gl/maps/j7GCwA4RkQYLnSLt5';
+export const maplocation4 = 'https://g.page/r/CYgxbl0IyGw9EBA';
 export const maplocation5 = 'https://goo.gl/maps/FANSU6w7QY9vCpiDA';
 export const maplocation6 = 'https://goo.gl/maps/kt1bhA6aHeRmjXsN7';
 
 
 export const addressLoaction1 = {
   '@type': 'PostalAddress',
-      'streetAddress': '17860 US-98',
-      'addressLocality': 'Commerce St',
-      'addressRegion': 'AL',
-      'postalCode': '36535',
+      'streetAddress': '405 Commerce St ',
+      'addressLocality': 'Plymouth',
+      'addressRegion': 'WI',
+      'postalCode': '53073',
       'addressCountry': 'United state'
 };
 
 export const addressLoaction2 = {
   '@type': 'PostalAddress',
-  'streetAddress': '15410 AL-104',
-  'addressLocality': 'Pleasantview',
-  'addressRegion': 'AL',
-  'postalCode': '36576',
+  'streetAddress': 'N6112 N Pleasant View Rd',
+  'addressLocality': 'Plymouth',
+  'addressRegion': 'WI',
+  'postalCode': '53073',
   'addressCountry': 'United state'
 }
 
 export const addressLoaction3 = {
   '@type': 'PostalAddress',
-  'streetAddress': '8089A US-98',
-  'addressLocality': 'Location5',
-  'addressRegion': 'AL',
-  'postalCode': '36532',
+  'streetAddress': '424 E Clifford St',
+  'addressLocality': 'Plymouth',
+  'addressRegion': 'WI',
+  'postalCode': '53073',
   'addressCountry': 'United state'
 } 
 
 export const addressLoaction4 = {
   '@type': 'PostalAddress',
-  'streetAddress': '11455 Co Rd 64',
-  'addressLocality': 'Daphne',
-  'addressRegion': 'AL',
-  'postalCode': '36526',
+  'streetAddress': '423 E Clifford St',
+  'addressLocality': 'Plymouth',
+  'addressRegion': 'WI',
+  'postalCode': '53073',
   'addressCountry': 'United state'
 }
 
@@ -183,39 +183,39 @@ export const addressLoaction6 = {
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley196.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley43.jpg'
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley11.jpg',
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley196.jpg',
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-foley43.jpg'
  ]
 
  export const imageLocation2 = [
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-pleasantview-11.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-pleasantview-169.jpg',
-      'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-pleasantview-43.jpg'
+      // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-pleasantview-11.jpg',
+      // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-pleasantview-169.jpg',
+      // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-pleasantview-43.jpg'
  ]
 
  export const imageLocation3 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-43.jpg'
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-11.jpg',
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-169.jpg',
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-43.jpg'
  ]
 
  export const imageLocation4 =  [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-43.jpg'
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-11.jpg',
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-169.jpg',
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-43.jpg'
  ]
 
  export const imageLocation5 =  [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-43.jpg'
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-11.jpg',
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-169.jpg',
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-county-clifford-south-43.jpg'
  ]
 
  export const imageLocation6 =  [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-robertsdale-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-robertsdale-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-robertsdale-43.jpg'
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-robertsdale-11.jpg',
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-robertsdale-169.jpg',
+  // 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/storage-plus-of-baldwin-robertsdale-43.jpg'
  ]
 
 export const homePageScript = [ 
@@ -1460,6 +1460,60 @@ export const twitterStorageTipsPage = [
   {
     name: `twitter:description`,
     content: storageTipsContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation1[0]
+  },
+];
+
+export const ogTrailerInfoPage = [
+  {
+    property: `og:title`,
+    content: trailerInfoTitle
+  },
+  {
+    property: `og:description`,
+    content: trailerInfoContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/trailerInfo`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation1[1]
+  },
+];
+
+export const twitterTrailerInfoPage = [
+  {
+    name: `twitter:title`,
+    content: `@${trailerInfoTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: trailerInfoContent
   },
   {
     name: `twitter:site`,

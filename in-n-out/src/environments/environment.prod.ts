@@ -5,6 +5,7 @@ export const environment = {
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: false, reserve: false }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
+  military: true, // set true for Military and Driver's Details 
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',

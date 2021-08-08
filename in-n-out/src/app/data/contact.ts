@@ -116,17 +116,17 @@ export const contactsLocation2 = [
 ];
 
 export const hoursLocation2 = [
-    // {
-    //     label: 'Monday - Saturday: ',
-    //     data: '9:00AM - 5:00PM',
-    // },
+    {
+        label: 'Monday - Sunday: ',
+        data: 'No On-Site Office',
+    },
     // {
     //     label: 'Sunday: ',
     //     data: 'CLOSED',
     // },
-    {
-        data: '24-Hours a Day 7 Days a Week',
-    },
+    // {
+    //     data: '24-Hours a Day 7 Days a Week',
+    // },
 ];
 
 export const contactsLocation3 = [
@@ -155,17 +155,17 @@ export const contactsLocation3 = [
 ];
 
 export const hoursLocation3 = [
-    // {
-    //     label: 'Monday - Saturday: ',
-    //     data: '9:00AM - 5:00PM',
-    // },
+    {
+        label: 'Monday - Sunday: ',
+        data: 'No On-Site Office',
+    },
     // {
     //     label: 'Sunday: ',
     //     data: 'CLOSED',
     // },
-    {
-        data: '24-Hours a Day 7 Days a Week',
-    },
+    // {
+    //     data: '24-Hours a Day 7 Days a Week',
+    // },
 ];
 
 export const contactsLocation4 = [
@@ -194,17 +194,17 @@ export const contactsLocation4 = [
 ];
 
 export const hoursLocation4 = [
-    // {
-    //     label: 'Monday - Saturday: ',
-    //     data: '9:00AM - 5:00PM',
-    // },
+    {
+        label: 'Monday - Sunday: ',
+        data: 'No On-Site Office',
+    },
     // {
     //     label: 'Sunday: ',
     //     data: 'CLOSED',
     // },
-    {
-        data: '24-Hours a Day 7 Days a Week',
-    },
+    // {
+    //     data: '24-Hours a Day 7 Days a Week',
+    // },
 ];
 
 export const contactsLocation5 = [

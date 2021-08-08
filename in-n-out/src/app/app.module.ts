@@ -67,6 +67,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ThankYouGuard } from './thank-you.guard';
 import { PhotosComponent } from './photos/photos.component';
 import { FaqComponent } from './faq/faq.component';
+import { TrailerInfoComponent } from './trailer-info/trailer-info.component';
 
 @NgModule({
   declarations: [
@@ -121,6 +122,7 @@ import { FaqComponent } from './faq/faq.component';
     ContactUsComponent,
     PhotosComponent,
     FaqComponent,
+    TrailerInfoComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

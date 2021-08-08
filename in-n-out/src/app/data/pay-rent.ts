@@ -32,11 +32,11 @@ export const tableData = [
     address: '423 E Clifford St Plymouth, WI 53073',
     url: 'clifford-south/rent-sub/login'
   },
-  {
-    facility: 'Location5',
-    address: '423 E Clifford St Plymouth, WI 53073',
-    url: 'location5/rent-sub/login'
-  },
+  // {
+  //   facility: 'Location5',
+  //   address: '423 E Clifford St Plymouth, WI 53073',
+  //   url: 'location5/rent-sub/login'
+  // },
   // {
   //   facility: 'Robertsdale',
   //   address: '20218 US-90, Robertsdale, AL 36567',
@@ -65,11 +65,11 @@ export const tableDataContactPage = [
     address: '423 E Clifford St Plymouth, WI 53073',
     url: 'clifford-south'
   },
-  {
-    facility: 'Location5',
-    address: '423 E Clifford St Plymouth, WI 53073',
-    url: 'location5'
-  },
+  // {
+  //   facility: 'Location5',
+  //   address: '423 E Clifford St Plymouth, WI 53073',
+  //   url: 'location5'
+  // },
   // {
   //   facility: 'Robertsdale',
   //   address: '20218 US-90, Robertsdale, AL 36567',

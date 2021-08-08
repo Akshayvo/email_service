@@ -31,11 +31,11 @@ export const navLinks = [
                 label: 'Clifford South',
                 path: `${environment.locationName}/clifford-south`,
             },
-            {
-                id: '5',
-                label: 'Location5',
-                path: `${environment.locationName}/location5`,
-            },
+            // {
+            //     id: '5',
+            //     label: 'Location5',
+            //     path: `${environment.locationName}/location5`,
+            // },
             // {
             //     id: '6',
             //     label: 'Robertsdale',

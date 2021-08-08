@@ -40,6 +40,7 @@ import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.compone
 import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { ThankYouGuard } from '../thank-you.guard';
 import { FaqComponent } from '../faq/faq.component';
+import { TrailerInfoComponent } from '../trailer-info/trailer-info.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -377,6 +378,7 @@ export const apiRoutes = [
     children: childroute
   },
   { path: `${environment.locationName}/trailer-rental`, component: StorageTipsComponent },
+  { path: `${environment.locationName}/trailer-info`, component: TrailerInfoComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'contact-commerce-st', component: ContactUsComponent},
   { path: 'contact-pleasantview', component: ContactUsComponent},
@@ -386,6 +388,7 @@ export const apiRoutes = [
   { path: 'contact-robertsdale', component: ContactUsComponent},
   { path: '**', component: ErrorComponent },
   { path: `${environment.locationName}/trailer-rental`, component: StorageTipsComponent },
+  { path: `${environment.locationName}/trailer-info`, component: TrailerInfoComponent },
 ];
 
 
@@ -515,6 +518,7 @@ export const iFrameRoutes = [
   { path: 'pay-rent-location5', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-robertsdale', component: PayRentMiddletownComponent},
   { path: `${environment.locationName}/trailer-rental`, component: StorageTipsComponent },
+  { path: `${environment.locationName}/trailer-info`, component: TrailerInfoComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: '**', component: ErrorComponent },
 ];

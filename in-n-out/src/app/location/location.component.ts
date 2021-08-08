@@ -369,6 +369,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
      this.locationId = 2;
      this.contacts = contactsLocation2;
      this.hours = hoursLocation2;
+     this.access = hoursLocation1AcessHours;
      this.tabs = tabs;
      this.features = location2FeaturesHead;
    }
@@ -378,6 +379,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
     this.locationId = 3;
     this.contacts = contactsLocation3;
     this.hours = hoursLocation3;
+    this.access = hoursLocation1AcessHours;
     this.tabs = tabs;
     this.features = location3FeaturesHead;
   }
@@ -387,6 +389,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
     this.locationId = 4;
     this.contacts = contactsLocation4;
     this.hours = hoursLocation4;
+    this.access = hoursLocation1AcessHours;
     this.tabs = tabs;
     this.features = location4FeaturesHead;
   }
@@ -396,6 +399,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
     this.locationId = 5;
     this.contacts = contactsLocation5;
     this.hours = hoursLocation5;
+    this.access = hoursLocation1AcessHours;
     this.tabs = tabs;
     this.features = location5FeaturesHead;
   }
@@ -405,6 +409,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
     this.locationId = 6;
     this.contacts = contactsLocation6;
     this.hours = hoursLocation6;
+    this.access = hoursLocation1AcessHours;
     this.tabs = tabs;
     this.features = location6FeaturesHead;
   }

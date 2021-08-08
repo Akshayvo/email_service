@@ -5,23 +5,23 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
-  locationAPIKey = {
-    loc1: 'dzJ0OVcxSjMqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc2: 'dzJ0OVcxSjMqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc3: 'dzJ0OVcxSjMqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc4: 'dzJ0OVcxSjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc5: 'UDIoN0Q0YzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc6: 'UDIoMUQyYzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-  };
+  // locationAPIKey = {
+  //   loc1: 'dzJ0OVcxSjMqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
+  //   loc2: 'dzJ0OVcxSjMqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
+  //   loc3: 'dzJ0OVcxSjMqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
+  //   loc4: 'dzJ0OVcxSjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
+  //   loc5: 'UDIoN0Q0YzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
+  //   loc6: 'UDIoMUQyYzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
+  // };
 
-//  locationAPIKey = {                                                     // demo north
-//     loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-//     loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-//     loc3: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-//     loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
-//     loc5: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-//     loc6: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-//   };
+ locationAPIKey = {                                                     // demo north
+    loc1: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
+    loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+    loc3: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+    loc4: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
+    loc5: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
+    loc6: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+  };
 
   locationName: string;
   strConfirmation: string;
@@ -45,6 +45,7 @@ export class DataSharingService {
   eventName: string;
   paymentTab: string;
   showAltDetails: boolean;
+  showMilitaryDetails: boolean;
 
   apiKey = '';
 
@@ -93,6 +94,16 @@ export class DataSharingService {
     City: '',
     State: '',
     ZIP: '',
+    DriversLicense: ' ',
+    DriversLicenseExpDate: ' ',
+    DateOfBirth: ' ',
+    MilitaryType: 0,
+    MilitaryBranch: 0,
+    MilitaryID: ' ',
+    DeployedUntil: ' ',
+    MilitaryDivision: ' ',
+    CommandingOfficer: ' ',
+    CommandingOfficerPhone: ' ',
     AlternateName: '',
     AlternatePhone: '',
     AlternateAddressLine1: '',

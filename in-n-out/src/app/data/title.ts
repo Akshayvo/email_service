@@ -31,6 +31,9 @@ export const payRentPageContent = `Take a moment to review our easy login instru
 export const storageTipsTitle = `Storage Tips | Storage Plus of Baldwin`;
 export const storageTipsContent = `Take advantage of our decades of self storage experience and follow these easy storage tips! You'll be glad you did!`;
 
+export const trailerInfoTitle = `Storage Tips | Storage Plus of Baldwin`;
+export const trailerInfoContent = `Take advantage of our decades of self storage experience and follow these easy storage tips! You'll be glad you did!`;
+
 export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
 
