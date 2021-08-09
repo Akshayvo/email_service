@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { AutoPayComponent } from './auto-pay.component';
+import { AutoPayComponent } from "./auto-pay.component";
 
-describe('AutoPayComponent', () => {
+describe("AutoPayComponent", () => {
   let component: AutoPayComponent;
   let fixture: ComponentFixture<AutoPayComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AutoPayComponent ]
-    })
-    .compileComponents();
+      declarations: [AutoPayComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('AutoPayComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

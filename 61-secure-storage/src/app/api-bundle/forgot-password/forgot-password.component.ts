@@ -1,62 +1,83 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { AuthService } from '../services/auth.service';
+import { Component, OnInit, OnDestroy } from "@angular/core";
+import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+import { AuthService } from "../services/auth.service";
 
-import { Subscription } from 'rxjs';
-import { Router } from '@angular/router';
-import { DataSharingService } from '../services/data-sharing.service';
-
+import { Subscription } from "rxjs";
+import { Router } from "@angular/router";
+import { DataSharingService } from "../services/data-sharing.service";
 
 @Component({
-  selector: 'app-forgot-password',
-  templateUrl: './forgot-password.component.html',
-  styleUrls: ['./forgot-password.component.scss']
+  selector: "app-forgot-password",
+  templateUrl: "./forgot-password.component.html",
+  styleUrls: ["./forgot-password.component.scss"],
 })
 export class ForgotPasswordComponent implements OnInit, OnDestroy {
-
   forgotPasswordForm: FormGroup;
   submitted = false;
   showLoader = false;
   showNoError = false;
+  paymentTab: string;
 
-   private forgotPasswordUnsubscribe$: Subscription;
+  private forgotPasswordUnsubscribe$: Subscription;
 
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
     public router: Router,
-    private dataSharingService: DataSharingService,
-
+    private dataSharingService: DataSharingService
   ) {
     this.forgotPasswordForm = this.formBuilder.group({
-      strEmailID: ['', [Validators.required, Validators.email]],
+      strEmailID: ["", [Validators.required, Validators.email]],
     });
   }
 
   ngOnInit() {
+    if (!!localStorage.getItem("paymentTab")) {
+      this.paymentTab = localStorage.getItem("paymentTab");
+    }
   }
 
-  get f() { return this.forgotPasswordForm.controls; }
+  get f() {
+    return this.forgotPasswordForm.controls;
+  }
 
   goBack() {
-    this.router.navigate(['pay-rent/rent-sub/login']);
+    console.log(this.router.url);
+    if (!!this.paymentTab) {
+      if (this.router.url.includes("storage-qc-one")) {
+        this.router.navigate([
+          `/pay-rent/storage-qc-one/${this.paymentTab}/login`,
+        ]);
+      } else if (this.router.url.includes("storage-qc-two")) {
+        this.router.navigate([
+          `/pay-rent/storage-qc-two/${this.paymentTab}/login`,
+        ]);
+      }
+    } else {
+      this.router.navigate([`/pay-rent/login`]);
+    }
   }
 
   forgotPassword(data: any): void {
-  this.forgotPasswordUnsubscribe$ =  this.authService.forgotPassword(data)
-    .subscribe(
-      result => {
-        this.showLoader = false;
-        if (result.intErrorCode === 1) {
-          this.router.navigate(['pay-rent/rent-sub/verifyCode']);
-        } else {
-          if (result.intErrorCode === 0) {
-            this.showNoError = true;
+    this.forgotPasswordUnsubscribe$ = this.authService
+      .forgotPassword(data)
+      .subscribe(
+        (result) => {
+          this.showLoader = false;
+          if (result.intErrorCode === 1) {
+            if (!!this.paymentTab) {
+              this.router.navigate([`/pay-rent/${this.paymentTab}/verifyCode`]);
+            } else {
+              this.router.navigate([`/pay-rent/verifyCode`]);
+            }
+          } else {
+            if (result.intErrorCode === 0) {
+              this.showNoError = true;
+            }
           }
-        }
-       }, (err) => {
-      }
-    );
+        },
+        (err) => {}
+      );
   }
 
   onSubmit() {
@@ -70,10 +91,12 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
     }
   }
 
-  public ngOnDestroy(): void  {
-    if (this.forgotPasswordUnsubscribe$ && !this.forgotPasswordUnsubscribe$.closed) {
+  public ngOnDestroy(): void {
+    if (
+      this.forgotPasswordUnsubscribe$ &&
+      !this.forgotPasswordUnsubscribe$.closed
+    ) {
       this.forgotPasswordUnsubscribe$.unsubscribe();
     }
   }
-
 }

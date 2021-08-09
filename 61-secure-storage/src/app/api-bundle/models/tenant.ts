@@ -33,18 +33,16 @@ export class ObjTenant {
     this.Phone = Phone;
     this.EmailAddress = EmailAddress;
     this.AddressLine1 = AddressLine1;
-    this.AddressLine2 = AddressLine2,
-    this.City = City;
+    (this.AddressLine2 = AddressLine2), (this.City = City);
     this.State = State;
     this.ZIP = ZIP;
   }
 }
 
-
 export class TenantInfo {
   tenant: Tenant;
 
-  constructor( tenant: Tenant) {
+  constructor(tenant: Tenant) {
     this.tenant = tenant;
   }
 }
@@ -57,13 +55,14 @@ export class Tenant {
   LastPaymentAmount: number;
   UnpaidAR: UnpaidAR;
 
-  constructor(Balance: number,
+  constructor(
+    Balance: number,
     Name: string,
     IsAutoPaymentsEnabled: boolean,
     LastPaymentOn: Date,
     LastPaymentAmount: number,
-    unpaidAR: UnpaidAR) {
-
+    unpaidAR: UnpaidAR
+  ) {
     this.Balance = Balance;
     this.Name = Name;
     this.IsAutoPaymentsEnabled = IsAutoPaymentsEnabled;
@@ -80,6 +79,7 @@ export class UnpaidAR {
   Amount: number;
   AmountOwed: number;
   amountOwed: number;
+  demoAmountOwed: number;
   Comments: string;
 
   constructor(
@@ -89,6 +89,7 @@ export class UnpaidAR {
     Amount: number,
     AmountOwed: number,
     amountOwed: number,
+    demoAmountOwed: number,
     Comments: string
   ) {
     this.FromDate = FromDate;
@@ -97,10 +98,10 @@ export class UnpaidAR {
     this.Amount = Amount;
     this.AmountOwed = AmountOwed;
     this.amountOwed = amountOwed;
+    this.demoAmountOwed = demoAmountOwed;
     this.Comments = Comments;
   }
 }
-
 
 export class StrTempTenantToken {
   strTempTenantToken: string;

@@ -1,9 +1,17 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class DataSharingService {
+  locationAPIKey = {
+    loc1: "dTJXMEQxUDJINU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 20125
+    loc2: "dTJXOUQ0UDlINU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", // 29495
+    // loc1: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
+    // loc2: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
+    // loc3: 'XjF7N0YzVzZHMEk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 17360
+    // loc4: 'XjF7NUY0VzhHOUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 15489
+  };
   strTenantToken: string;
   strTempTenantToken: string;
   verificationCode: string;
@@ -19,10 +27,25 @@ export class DataSharingService {
   addingTenant = false;
   periodID: number;
   period: string;
+  apiKey = "";
+  paymentNavigation: string;
+  isDataUpdated: boolean;
+  isDataSaved: boolean;
+  PaymentAmount: number;
   signUpForAutoPay: boolean;
-
+  CCApprovalCode: string;
+  eventName: string;
+  facilityLocation: string;
+  cardDetailsObject = {
+    CCNumber: "",
+    CCBillingAccountName: "",
+    CCExpirationMonth: "",
+    CCExpirationYear: "",
+    CCBillingAddress: "",
+    CCBillingZIP: "",
+  };
   MoveInData = {
-    Description: '',
+    Description: "",
     MonthlyRate: 0,
     UnitTypeID: 0,
     proRateAmount: 0,
@@ -34,19 +57,19 @@ export class DataSharingService {
     DepositTax: 0,
     RateTax: 0,
     TotalTaxAmount: 0,
-    TotalChargesAmount: 0
+    TotalChargesAmount: 0,
   };
 
   ReservationData = {
-    Description: '',
+    Description: "",
     MonthlyRate: 0,
     UnitTypeID: 0,
     RateTax: 0,
-    formattedMoveInDate: '',
+    formattedMoveInDate: "",
   };
 
   LstUnitTypes = {
-    Description: '',
+    Description: "",
     ReservationFee: 0,
     ReservationFeeTax: 0,
     UnitTypeID: 0,
@@ -57,27 +80,43 @@ export class DataSharingService {
   };
 
   objTenant = {
-    FirstName: '',
-    LastName: '',
-    Phone: '',
-    EmailAddress: '',
-    AddressLine1: '',
-    AddressLine2: '',
-    City: '',
-    State: '',
-    ZIP: '',
+    FirstName: "",
+    LastName: "",
+    Phone: "",
+    EmailAddress: "",
+    AddressLine1: "",
+    AddressLine2: "",
+    City: "",
+    State: "",
+    ZIP: "",
+  };
+  navLinksForComponent = {
+    reservationForm: {
+      next: "",
+      prev: "",
+    },
+    confirmationData: {
+      next: "",
+      prev: "",
+    },
+    payRentForm: {
+      next: "",
+      prev: "",
+    },
+    viewRates: {
+      next: "",
+      prev: "",
+    },
   };
 
-
   MoveIn = {
-    dteMoveIn: '',
+    dteMoveIn: "",
     intUnitTypeID: 0,
   };
 
-
-constructor() {
- this.getUnitData();
-}
+  constructor() {
+    this.getUnitData();
+  }
   setTenantData(value: any) {
     this.objTenant = value;
   }
@@ -94,9 +133,26 @@ constructor() {
     return this.LstUnitTypes;
   }
 
+  initMyNavLinks = (componentName, myCurUrl) => {
+    // console.log('TCL: DataSharingService -> initMyNavLinks -> this.navLinksForComponent', this.navLinksForComponent);
+    if (this.navLinksForComponent[componentName]) {
+      this.navLinksForComponent[componentName].next = myCurUrl;
+      this.navLinksForComponent[componentName].prev = myCurUrl;
+    }
+  };
+  getMyNavLinks = (componentName) => {
+    return this.navLinksForComponent[componentName];
+  };
+  updateMyNavLink = (componentName, linkType, url) => {
+    if (this.navLinksForComponent[componentName]) {
+      if (this.navLinksForComponent[componentName][linkType]) {
+        this.navLinksForComponent[componentName][linkType] = url;
+      }
+    }
+  };
 
   setReservationData(value: any) {
-    this.ReservationData.Description  = value.Description;
+    this.ReservationData.Description = value.Description;
     this.ReservationData.MonthlyRate = value.MonthlyRate;
     this.ReservationData.UnitTypeID = value.UnitTypeID;
   }
@@ -106,7 +162,7 @@ constructor() {
   }
 
   setMoveInData(value: any) {
-    this.MoveInData.Description  = value.Description;
+    this.MoveInData.Description = value.Description;
     this.MoveInData.MonthlyRate = value.MonthlyRate;
     this.MoveInData.UnitTypeID = value.UnitTypeID;
   }
@@ -114,5 +170,7 @@ constructor() {
   getMoveInData() {
     return this.MoveInData;
   }
-
+  getAPIKey() {
+    return this.apiKey;
+  }
 }

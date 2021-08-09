@@ -1,4 +1,3 @@
 export const script = {
-    // Put your script here
+  // Put your script here
 };
-

@@ -48,29 +48,17 @@
         <i class="fas fa-bars iconColor"></i>
       </button>
     </div>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
-      <ul class="navbar-nav ml-auto navbar-nav-scroll">
-        <li class="nav-item px-2" *ngFor="let nav of navLinks">
-          <a
-            class="nav-link py-4"
-            [routerLinkActive]="'nav-link-active'"
-            [routerLink]="nav?.path"
-            [routerLinkActiveOptions]="{ exact: true }"
-            (click)="onClick(menu)"
-            *ngIf="nav?.path != '/pay-rent'"
-            >{{ nav.label }}</a
-          >
-          <a
-            class="nav-link py-4"
-            [routerLinkActive]="'nav-link-active'"
-            [routerLink]="nav?.path"
-            [routerLinkActiveOptions]="{ exact: false }"
-            (click)="onClick(menu)"
-            *ngIf="nav?.path === '/pay-rent'"
-            >{{ nav.label }}</a
-          >
-        </li>
-      </ul>
-    </div>
+<div class="collapse navbar-collapse" id="navbarSupportedContent" #menu>
+  <ul class="navbar-nav ml-auto navbar-nav-scroll">
+    <li class="nav-item px-1" *ngFor="let nav of navLinks">
+      <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path"
+        [routerLinkActiveOptions]="{exact: true}" (click)="onClick(menu)"
+        *ngIf="nav?.path != '/pay-rent'">{{nav.label}}</a>
+      <a class="nav-link py-4" [routerLinkActive]="'nav-link-active'" [routerLink]="nav?.path"
+        [routerLinkActiveOptions]="{exact: false}" (click)="onClick(menu)"
+        *ngIf="nav?.path === '/pay-rent'">{{nav.label}}</a>
+    </li>
+  </ul>
+</div>
   </div>
 </nav>
