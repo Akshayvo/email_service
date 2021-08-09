@@ -12,7 +12,7 @@ export const contact = [
         data: 'onthemoveselfstorage@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
         email: 'onthemoveselfstorage@gmail.com',
-        redirect: 'mailto:`onthemoveselfstorage@gmail.com`'
+        redirect: 'mailto:onthemoveselfstorage@gmail.com'
     },
     {
         id: 2,
@@ -45,12 +45,12 @@ export const hours = [
 export const socialLinks = [
     {
         label: 'twitter',
-        path: '',
+        path: '/',
         class: 'fab fa-twitter-square',
     },
     {
         label: 'facebook',
-        path: '',
+        path: '/',
         class: 'fab fa-facebook-square',
     },
 ];
