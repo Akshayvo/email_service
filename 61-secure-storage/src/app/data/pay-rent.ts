@@ -29,15 +29,15 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: "Store QC one",
+    facility: "Store QC 140th St Location",
     address:
       "Formerly 61-280 now Store QC Location: 11630 140th St, Davenport, IA 52804",
-    url: "storage-qc-one/rent-sub/login",
+    url: "140th-st/rent-sub/login",
   },
   {
-    facility: "Store QC two",
+    facility: "Store QC Brady St Location",
     address:
       "Formerly Brady's Storage now Store QC Location 4417 N. Brady St, Davenport, IA 52804",
-    url: "storage-qc-two/rent-sub/login",
+    url: "brady-st/rent-sub/login",
   },
 ];

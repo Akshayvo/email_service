@@ -44,14 +44,10 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
   goBack() {
     console.log(this.router.url);
     if (!!this.paymentTab) {
-      if (this.router.url.includes("storage-qc-one")) {
-        this.router.navigate([
-          `/pay-rent/storage-qc-one/${this.paymentTab}/login`,
-        ]);
-      } else if (this.router.url.includes("storage-qc-two")) {
-        this.router.navigate([
-          `/pay-rent/storage-qc-two/${this.paymentTab}/login`,
-        ]);
+      if (this.router.url.includes("140th-st")) {
+        this.router.navigate([`/pay-rent/140th-st/${this.paymentTab}/login`]);
+      } else if (this.router.url.includes("brady-st")) {
+        this.router.navigate([`/pay-rent/brady-st/${this.paymentTab}/login`]);
       }
     } else {
       this.router.navigate([`/pay-rent/login`]);

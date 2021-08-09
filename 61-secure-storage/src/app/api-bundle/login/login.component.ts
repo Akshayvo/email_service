@@ -131,7 +131,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchContactDetail() {
-    if (this.router.url.includes("storage-qc-one")) {
+    if (this.router.url.includes("140th-st")) {
       this.id = 1;
       this.name = "";
       this.contact = contactsLocation1;
@@ -141,7 +141,7 @@ export class LoginComponent implements OnInit, OnDestroy {
         "APIKey",
         this.dataSharingService.locationAPIKey.loc1
       );
-    } else if (this.router.url.includes("storage-qc-two")) {
+    } else if (this.router.url.includes("brady-st")) {
       this.id = 2;
       this.name = "";
       this.contact = contactsLocation2;

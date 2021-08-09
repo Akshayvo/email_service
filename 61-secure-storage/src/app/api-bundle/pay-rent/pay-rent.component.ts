@@ -42,9 +42,9 @@ export class PayRentComponent implements OnInit {
     //   })
     // });
     this.canonical.create();
-    if (this.router.url.includes("storage-qc-one")) {
+    if (this.router.url.includes("140th-st")) {
       this.name = " Storage QC";
-    } else if (this.router.url.includes("storage-qc-two")) {
+    } else if (this.router.url.includes("brady-st")) {
       this.name = " Storage QC N Brady";
     }
     if (!!localStorage.getItem("APIKey")) {

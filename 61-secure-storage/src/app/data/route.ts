@@ -141,12 +141,12 @@ export const apiRoutes = [
     component: PaymentComponent,
   },
   {
-    path: "pay-rent/storage-qc-one",
+    path: "pay-rent/140th-st",
     component: PayRentComponent,
     children: childroute,
   },
   {
-    path: "pay-rent/storage-qc-two",
+    path: "pay-rent/brady-st",
     component: PayRentComponent,
     children: childroute,
   },
