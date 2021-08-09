@@ -35,10 +35,10 @@
                 <p >Rate</p>
                 <div class="custom-font"><strong><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</strong></div>
             </div>
-            <div class="text-center" *ngIf="lstUnitType.DepositAmount != null">
+            <!-- <div class="text-center" *ngIf="lstUnitType.DepositAmount != null">
               <p>Deposit</p>
               <div><span>$</span>{{lstUnitType.DepositAmount}}</div>
-            </div>
+            </div> -->
             <!-- <div class=" text-center ">
               <p >50% Off First Full Month</p>
               <div class="custom-font"><strong><span *ngIf="lstUnitType.WebRate != null">$</span>{{lstUnitType.WebRate | number : '1.2-2'}}</strong></div>
@@ -48,8 +48,8 @@
         <div class="col-3 text-center ">  
           <div class="">
             <div class=" text-center ">
-                <p >50% Off First Full Month</p>
-                <div class="custom-font"><strong><span *ngIf="lstUnitType.WebRate != null">$</span>{{lstUnitType.WebRate | number : '1.2-2'}}</strong></div>
+                <p >No Admin Fee, No Deposit</p>
+                <!-- <div class="custom-font"><strong><span *ngIf="lstUnitType.WebRate != null">$</span>{{lstUnitType.WebRate | number : '1.2-2'}}</strong></div> -->
             </div>
           </div>
         </div>
@@ -110,8 +110,8 @@
         <div class=" col-12  text-center ">  
           <div class="">
             <div class="row text-center ">
-                <p class="col-6">50% Off First Full Month</p>
-                <div class=" col-6 custom-font"><strong><span *ngIf="lstUnitType.WebRate != null">$</span>{{lstUnitType.WebRate | number : '1.2-2'}}</strong></div>
+                <p class="col">No Admin Fee, No Deposit</p>
+                <!-- <div class=" col-6 custom-font"><strong><span *ngIf="lstUnitType.WebRate != null">$</span>{{lstUnitType.WebRate | number : '1.2-2'}}</strong></div> -->
             </div>
           </div>
         </div>
