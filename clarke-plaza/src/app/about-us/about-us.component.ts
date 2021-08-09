@@ -35,15 +35,16 @@ export class AboutUsComponent implements OnInit {
       this.fetchDetailsLocation1();
   } else if (this.router.url.includes(`${environment.locationName}/ossipee`)) {
     this.fetchDetailsLocation2();
-  } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
-    this.fetchDetailsLocation3();
-  } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
-    this.fetchDetailsLocation4();
-  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
-    this.fetchDetailsLocation5();
-  } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
-    this.fetchDetailsLocation6();
-  }
+  } 
+  // else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+  //   this.fetchDetailsLocation3();
+  // } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+  //   this.fetchDetailsLocation4();
+  // } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+  //   this.fetchDetailsLocation5();
+  // } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
+  //   this.fetchDetailsLocation6();
+  // }
 }
 
   public fetchDetailsLocation1() {
@@ -60,32 +61,32 @@ export class AboutUsComponent implements OnInit {
     this.alt = 'Aerial photograph of self storage facility with recreational vehicle and boat parking';
   }
 
-  public fetchDetailsLocation3() {
-    this.aboutPara = aboutUsLocation3;
-    this.heading = aboutUsHeadingLocation3;
-    this.image = aboutUsImageLocation3;
-    this.alt = 'Aerial photograph of a self storage facility and main office.';
-  }
+  // public fetchDetailsLocation3() {
+  //   this.aboutPara = aboutUsLocation3;
+  //   this.heading = aboutUsHeadingLocation3;
+  //   this.image = aboutUsImageLocation3;
+  //   this.alt = 'Aerial photograph of a self storage facility and main office.';
+  // }
 
-  public fetchDetailsLocation4() {
-    this.aboutPara = aboutUsLocation4;
-    this.heading = aboutUsHeadingLocation4;
-    this.image = aboutUsImageLocation4;
-    this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
-    vehicles parked inside the gate.`;
-  }
-  public fetchDetailsLocation5() {
-    this.aboutPara = aboutUsLocation5;
-    this.heading = aboutUsHeadingLocation5;
-    this.image = aboutUsImageLocation5;
-    this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
-    vehicles parked inside the gate.`;
-  }
-  public fetchDetailsLocation6() {
-    this.aboutPara = aboutUsLocation6;
-    this.heading = aboutUsHeadingLocation6;
-    this.image = aboutUsImageLocation6;
-    this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
-    vehicles parked inside the gate.`;
-  }
+  // public fetchDetailsLocation4() {
+  //   this.aboutPara = aboutUsLocation4;
+  //   this.heading = aboutUsHeadingLocation4;
+  //   this.image = aboutUsImageLocation4;
+  //   this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
+  //   vehicles parked inside the gate.`;
+  // }
+  // public fetchDetailsLocation5() {
+  //   this.aboutPara = aboutUsLocation5;
+  //   this.heading = aboutUsHeadingLocation5;
+  //   this.image = aboutUsImageLocation5;
+  //   this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
+  //   vehicles parked inside the gate.`;
+  // }
+  // public fetchDetailsLocation6() {
+  //   this.aboutPara = aboutUsLocation6;
+  //   this.heading = aboutUsHeadingLocation6;
+  //   this.image = aboutUsImageLocation6;
+  //   this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
+  //   vehicles parked inside the gate.`;
+  // }
 }

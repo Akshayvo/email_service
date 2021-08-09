@@ -147,15 +147,16 @@ export class HomeComponent implements OnInit {
       this.fetchContactDetailsLocation1();
     } else if ( this.locationId === '2' ) {
       this.fetchContactDetailsLocation2();
-    } else if ( this.locationId === '3' ) {
-      this.fetchContactDetailsLocation3();
-    } else if ( this.locationId === '4' ) {
-      this.fetchContactDetailsLocation4();
-    } else if ( this.locationId === '5' ) {
-      this.fetchContactDetailsLocation5();
-    } else if ( this.locationId === '6' ) {
-      this.fetchContactDetailsLocation6();
-    }
+    } 
+    // else if ( this.locationId === '3' ) {
+    //   this.fetchContactDetailsLocation3();
+    // } else if ( this.locationId === '4' ) {
+    //   this.fetchContactDetailsLocation4();
+    // } else if ( this.locationId === '5' ) {
+    //   this.fetchContactDetailsLocation5();
+    // } else if ( this.locationId === '6' ) {
+    //   this.fetchContactDetailsLocation6();
+    // }
   }
 
   public fetchScript() {
@@ -180,29 +181,29 @@ export class HomeComponent implements OnInit {
       this.hoursDetails = hoursLocation2;
     }
 
-    public fetchContactDetailsLocation3() {
-      this.heading = `Clarke Plaza Self Storage - Barnwell`;
-      this.contactDetails = contactsLocation3;
-      this.hoursDetails = hoursLocation3;
-    }
+    // public fetchContactDetailsLocation3() {
+    //   this.heading = `Clarke Plaza Self Storage - Barnwell`;
+    //   this.contactDetails = contactsLocation3;
+    //   this.hoursDetails = hoursLocation3;
+    // }
 
-    public fetchContactDetailsLocation4() {
-      this.heading = `Clarke Plaza Self Storage - Belforest`;
-      this.contactDetails = contactsLocation4;
-      this.hoursDetails = hoursLocation4;
-    } 
+    // public fetchContactDetailsLocation4() {
+    //   this.heading = `Clarke Plaza Self Storage - Belforest`;
+    //   this.contactDetails = contactsLocation4;
+    //   this.hoursDetails = hoursLocation4;
+    // } 
 
-    public fetchContactDetailsLocation5() {
-      this.heading = `Clarke Plaza Self Storage - Fairhope`;
-      this.contactDetails = contactsLocation5;
-      this.hoursDetails = hoursLocation5;
-    }
+    // public fetchContactDetailsLocation5() {
+    //   this.heading = `Clarke Plaza Self Storage - Fairhope`;
+    //   this.contactDetails = contactsLocation5;
+    //   this.hoursDetails = hoursLocation5;
+    // }
 
-    public fetchContactDetailsLocation6() {
-      this.heading = `Clarke Plaza Self Storage - Robertsdale`;
-      this.contactDetails = contactsLocation6;
-      this.hoursDetails = hoursLocation6;
-    }
+    // public fetchContactDetailsLocation6() {
+    //   this.heading = `Clarke Plaza Self Storage - Robertsdale`;
+    //   this.contactDetails = contactsLocation6;
+    //   this.hoursDetails = hoursLocation6;
+    // }
 
 
 

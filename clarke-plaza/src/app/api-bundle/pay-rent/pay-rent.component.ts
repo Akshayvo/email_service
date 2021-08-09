@@ -52,15 +52,16 @@ export class PayRentComponent implements OnInit {
       this.name = ' Clarke Plaza';
   } else if (this.router.url.includes('ossipee')) {
     this.name = ' Ossipee';
-  } else if (this.router.url.includes('barnwell')) {
-    this.name = 'Barnwell';
-  } else if (this.router.url.includes('belforest')) {
-    this.name = 'Belforest';
-  } else if (this.router.url.includes('fairhope')) {
-    this.name = 'Fairhope';
-  } else if (this.router.url.includes('robertsdale')) {
-    this.name = 'Robertsdale';
-  }
+  } 
+  // else if (this.router.url.includes('barnwell')) {
+  //   this.name = 'Barnwell';
+  // } else if (this.router.url.includes('belforest')) {
+  //   this.name = 'Belforest';
+  // } else if (this.router.url.includes('fairhope')) {
+  //   this.name = 'Fairhope';
+  // } else if (this.router.url.includes('robertsdale')) {
+  //   this.name = 'Robertsdale';
+  // }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
     }

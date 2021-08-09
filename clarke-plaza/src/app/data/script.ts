@@ -62,60 +62,53 @@ import { contactsLocation1, hoursLocation1,
  
 const contactIndex1 = contactsLocation1.findIndex(x => x.label === 'Phone: ');
 const contactIndex2 = contactsLocation2.findIndex(x => x.label === 'Phone: ');
-const contactIndex3 = contactsLocation3.findIndex(x => x.label === 'Phone: ');
-const contactIndex4 = contactsLocation4.findIndex(x => x.label === 'Phone: ');
-const contactIndex5 = contactsLocation5.findIndex(x => x.label === 'Phone: ');
-const contactIndex6 = contactsLocation6.findIndex(x => x.label === 'Phone: ');
+// const contactIndex3 = contactsLocation3.findIndex(x => x.label === 'Phone: ');
+// const contactIndex4 = contactsLocation4.findIndex(x => x.label === 'Phone: ');
+// const contactIndex5 = contactsLocation5.findIndex(x => x.label === 'Phone: ');
+// const contactIndex6 = contactsLocation6.findIndex(x => x.label === 'Phone: ');
 
 const emailIndex1 = contactsLocation1.findIndex(x => x.label === 'Email: ');
 const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
-const emailIndex3 = contactsLocation3.findIndex(x => x.label === 'Email: ');
-const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
-const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
-const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
+// const emailIndex3 = contactsLocation3.findIndex(x => x.label === 'Email: ');
+// const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
+// const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
+// const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
 export const nameLocation1 = `Clarke Plaza Self Storage - Clarke Plaza`;
 export const nameLocation2 = `Storage Plus of Baldwin County - Ossipee`;
-export const nameLocation3 = `Storage Plus of Baldwin County - Barnwell`;
-export const nameLocation4 = `Storage Plus of Baldwin County - Belforest`;
-export const nameLocation5 = `Storage Plus of Baldwin County - Fairhope`;
-export const nameLocation6 = `Storage Plus of Baldwin County - Robertsdale`;
+export const nameLocation3 = ``;
+export const nameLocation4 = ``;
+export const nameLocation5 = ``;
+export const nameLocation6 = ``;
 
 
 export const location1 = `clarke-plaza`;
 export const location2 = `ossipee`;
-export const location3 = `barnwell`;
-export const location4 = `belforest`;
-export const location5 = `barnwell`;
-export const location6 = `robertsdale`;
+export const location3 = ``;
+export const location4 = ``;
+export const location5 = ``;
+export const location6 = ``;
 
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/clarke-plaza/storage-units`;
 export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/ossipee/storage-units`;
-export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/barnwell/storage-units`;
-export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/belforest/storage-units`;
-export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/fairhope/storage-units`;
-export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/robertsdale/storage-units`;
+// export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/barnwell/storage-units`;
+// export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/belforest/storage-units`;
+// export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/fairhope/storage-units`;
+// export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/robertsdale/storage-units`;
 
 
 export const description1 = `Clarke Plaza Self Storage is a locally owned and operated self storage company with two convenient locations serving Wolfeboro and Ossipee with quality self storage unit services and friendly customer service. Whether you’re a homeowner trying to clean out the garage or attic, or if you’re a growing local business trying to free up some elbow room around the office or work site, Clarke Plaza Self Storage has the right unit for you! Looking for car, RV, or boat storage? We’ve got plenty of parking spaces to help you free up your yard during the off-season.`;
 
 export const description2 = `Clarke Plaza Self Storage is a locally owned and operated self storage company with two convenient locations serving Wolfeboro and Ossipee with quality self storage unit services and friendly customer service. Whether you’re a homeowner trying to clean out the garage or attic, or if you’re a growing local business trying to free up some elbow room around the office or work site, Clarke Plaza Self Storage has the right unit for you! Looking for car, RV, or boat storage? We’ve got plenty of parking spaces to help you free up your yard during the off-season.`;
 
-export const description3 = `Our Barnwell location has a number of regular and climate controlled unit types ideal
-                             for just about any self storage need at an affordable price!  Our 24-hour access policy
-                             makes coming and going on your schedule a breeze!`;
+// export const description3 = ``;
 
-export const description4 = `Our Belfast location has a number of units in both regular and climate controlled
-                             varieties to cover all of your residential or commercial self storage needs.`;
+// export const description4 = ``;
 
-export const description5 = `Our Fairhope location has a number of unit sizes ideal for just about any self storage
-                             need at an affordable price!  Our 24-hour access policy makes coming and going on your
-                             schedule a breeze!`;
+// export const description5 = ``;
 
-export const description6 = `Our Robertsdale location has a number of unit sizes ideal for just about any self
-                             storage need at great prices!  Our 24-hour access policy makes coming and going
-                             on your schedule a breeze!`;
+// export const description6 = ``;
 
 export const maplocation1 = 'https://goo.gl/maps/AUKyuXucA7G9L6sz8';
 export const maplocation2 = 'https://goo.gl/maps/1PuhUjf1fAJVTdzC7';

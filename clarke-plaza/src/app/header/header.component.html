@@ -208,7 +208,7 @@
 
           <span *ngIf="nav?.type === 'dropdown'">
               <div class="dropdown show">  
-                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/new-hampshire/clarke-plaza') || router.isActive('/new-hampshire/ossipee') || router.isActive('/new-hampshire/barnwell') || router.isActive('/new-hampshire/belforest') || router.isActive('/new-hampshire/fairhope') || router.isActive('/new-hampshire/robertsdale')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
+                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/new-hampshire/clarke-plaza') || router.isActive('/new-hampshire/ossipee')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
                   <li *ngFor="let sub of nav.sublinks text-center">
                     <a class="dropdown-item" [routerLinkActive]="'location-active'" [routerLink]="sub?.path" (click)="onClick(menu,sub?.path)">{{sub.label}}</a></li>

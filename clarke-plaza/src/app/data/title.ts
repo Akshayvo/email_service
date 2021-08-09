@@ -7,17 +7,17 @@ export const location1PageContent = `Take a moment to view our affordable self s
 export const location2PageTitle = `24 Hour Access Self Storage Units & Vehicle Parking in Ossipee`;
 export const location2PageContent = `Review our current rates and availability, then reserve or rent your unit or vehicle parking in minutes with our easy online forms!`;
 
-export const location3PageTitle = `Barnwell | Storage Plus of Baldwin County`;
-export const location3PageContent = `Our Barnwell location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+export const location3PageTitle = ``;
+export const location3PageContent = ``;
 
-export const location4PageTitle = `Belforest | Storage Plus of Baldwin County`;
-export const location4PageContent = `Our Belforest location offers a number of affordable regular and climate controlled self storage units, perfect for any self storage project!`;
+export const location4PageTitle = ``;
+export const location4PageContent = ``;
 
-export const location5PageTitle = `Fairhope  | Storage Plus of Baldwin County`;
-export const location5PageContent = `Our Fairhope location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+export const location5PageTitle = ``;
+export const location5PageContent = ``;
 
-export const location6PageTitle = `Robertsdale | Storage Plus of Baldwin County`;
-export const location6PageContent = `Our Robertsdale location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+export const location6PageTitle = ``;
+export const location6PageContent = ``;
 
 export const viewRatesPageTitle = ``;
 export const viewRatesPageContent = ``;
@@ -54,17 +54,17 @@ export const location1PayrentPageContent = `Simply follow the on-page instructio
 export const location2PayrentPageTitle = `Pay Rent  | Ossipee Self Storage`;
 export const location2PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
-export const location3PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location3PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location3PayrentPageTitle = ``;
+export const location3PayrentPageContent = ``;
 
-export const location4PayrentPageTitle = `Belfast Location Pay Rent | Storage Plus of Baldwin County`;
-export const location4PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location4PayrentPageTitle = ``;
+export const location4PayrentPageContent = ``;
 
-export const location5PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location5PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location5PayrentPageTitle = ``;
+export const location5PayrentPageContent = ``;
 
-export const location6PayrentPageTitle = `Pay Rent | Storage Plus of Baldwin County`;
-export const location6PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
+export const location6PayrentPageTitle = ``;
+export const location6PayrentPageContent = ``;
 
 
 
@@ -74,16 +74,16 @@ export const location1ContactPageContent = `Use the contact information or the c
 export const location2ContactPageTitle = `Contact Us  | Ossipee Self Storage`;
 export const location2ContactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
-export const location3ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location3ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+export const location3ContactPageTitle = ``;
+export const location3ContactPageContent = ``;
 
-export const location4ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location4ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+export const location4ContactPageTitle = ``;
+export const location4ContactPageContent = ``;
 
-export const location5ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location5ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+export const location5ContactPageTitle = ``;
+export const location5ContactPageContent = ``;
 
-export const location6ContactPageTitle = `Contact Us | Storage Plus of Baldwin County`;
-export const location6ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+export const location6ContactPageTitle = ``;
+export const location6ContactPageContent = ``;
 
 

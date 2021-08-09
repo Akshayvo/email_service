@@ -1,206 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc> https://storageplusbaldwin.com/</loc>
+        <loc> https://clarke-plaza-self-storage-staging.netlify.app/</loc>
         <lastmod>2020-09-21</lastmod>
     </url>
     <url>
-        <loc> https://storageplusbaldwin.com/new-hampshire/clarke-plaza/reserve-unit </loc>
+        <loc> https://clarke-plaza-self-storage-staging.netlify.app/new-hampshire/clarke-plaza/reserve-unit </loc>
         <lastmod>2020-09-21</lastmod>
     </url>
     <url>
-        <loc> https://storageplusbaldwin.com/location/robertsdale/reserve-unit </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> https://storageplusbaldwin.com/location/fairhope/reserve-unit </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> https://storageplusbaldwin.com/storage-tips </loc>
+        <loc> https://clarke-plaza-self-storage-staging.netlify.app/new-hampshire/storage-tips </loc>
         <lastmod>2020-09-21</lastmod>
     </url>
     <url>
         <loc> 
-      https://storageplusbaldwin.com/location/barnwell/storage-units
+      https://clarke-plaza-self-storage-staging.netlify.app/contact-us
     </loc>
         <lastmod>2020-09-21</lastmod>
     </url>
     <url>
         <loc> 
-      https://storageplusbaldwin.com/contact-us
+      https://clarke-plaza-self-storage-staging.netlify.app/new-hampshire/ossipee/storage-units
     </loc>
         <lastmod>2020-09-21</lastmod>
     </url>
     <url>
         <loc> 
-      https://storageplusbaldwin.com/location/barnwell
+      https://clarke-plaza-self-storage-staging.netlify.app/new-hampshire/ossipee/reserve-unit
     </loc>
         <lastmod>2020-09-21</lastmod>
     </url>
     <url>
         <loc> 
-      https://storageplusbaldwin.com/location/fairhope
+      https://clarke-plaza-self-storage-staging.netlify.app/pay-rent
     </loc>
         <lastmod>2020-09-21</lastmod>
     </url>
     <url>
         <loc> 
-      https://storageplusbaldwin.com/location/robertsdale
+      https://clarke-plaza-self-storage-staging.netlify.app/new-hampshire/clarke-plaza/storage-units
     </loc>
         <lastmod>2020-09-21</lastmod>
     </url>
     <url>
         <loc> 
-      https://storageplusbaldwin.com/new-hampshire/ossipee/storage-units
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/location/belforest/storage-units
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/new-hampshire/clarke-plaza
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/location/fairhope
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/location/robertsdale
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/new-hampshire/ossipee/reserve-unit
+      https://clarke-plaza-self-storage-staging.netlify.app/contact-ossipee
     </loc>
         <lastmod>2020-09-21</lastmod>
     </url>
     <url>
         <loc>
-      https://storageplusbaldwin.com/location/belforest
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> https://storageplusbaldwin.com/new-hampshire/ossipee </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/pay-rent
+      https://clarke-plaza-self-storage-staging.netlify.app/contact-clarke-plaza
     </loc>
         <lastmod>2020-09-21</lastmod>
     </url>
     <url>
         <loc> 
-      https://storageplusbaldwin.com/new-hampshire/clarke-plaza/storage-units
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/location/fairhope/storage-units
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/location/robertsdale/storage-units
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/location/belforest/reserve-unit
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/location/barnwell/reserve-unit
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/contact-ossipee
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/contact-barnwell
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/pay-rent/belforest
+      https://clarke-plaza-self-storage-staging.netlify.app/pay-rent/clarke-plaza/rent-sub/login
     </loc>
         <lastmod>2020-09-21</lastmod>
     </url>
     <url>
         <loc>
-      https://storageplusbaldwin.com/contact-clarke-plaza
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc>
-      https://storageplusbaldwin.com/contact-fairhope
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc>
-      https://storageplusbaldwin.com/contact-robertsdale
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc>
-      https://storageplusbaldwin.com/pay-rent/barnwell
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/contact-barnwell
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/pay-rent/ossipee
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc>
-      https://storageplusbaldwin.com/pay-rent/belforest/rent-sub/login
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc> 
-      https://storageplusbaldwin.com/pay-rent/barnwell/rent-sub/login
-    </loc>
-        <lastmod>2020-09-21</lastmod>
-    </url>
-    <url>
-        <loc>
-      https://storageplusbaldwin.com/pay-rent/ossipee/rent-sub/login
+      https://clarke-plaza-self-storage-staging.netlify.app/pay-rent/ossipee/rent-sub/login
     </loc>
         <lastmod>2020-09-21</lastmod>
     </url>

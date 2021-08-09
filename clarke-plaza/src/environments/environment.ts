@@ -18,7 +18,7 @@ export const environment = {
   facilityName: "Clarke Plaza Self Storage",
   VERSION: require("../../package.json").version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://storageplusbaldwin.com`,
+  websiteUrl: `https://clarke-plaza-self-storage-staging.netlify.app/`,
 };
 
 /*

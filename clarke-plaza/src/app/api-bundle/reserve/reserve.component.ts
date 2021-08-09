@@ -38,19 +38,20 @@ export class ReserveComponent implements OnInit {
     } else if (this.router.url.includes(`${environment.locationName}/ossipee`)) {
       this.id = 2;
       this.heading = headingReservePageLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
-      this.id = 3;
-      this.heading = headingReservePageLocation3;
-    } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
-      this.id = 4;
-      this.heading = headingReservePageLocation4;
-    } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
-      this.id = 5;
-      this.heading = headingReservePageLocation5;
-    } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
-      this.id = 6;
-      this.heading = headingReservePageLocation6;
-    }
+    } 
+    // else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+    //   this.id = 3;
+    //   this.heading = headingReservePageLocation3;
+    // } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+    //   this.id = 4;
+    //   this.heading = headingReservePageLocation4;
+    // } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+    //   this.id = 5;
+    //   this.heading = headingReservePageLocation5;
+    // } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
+    //   this.id = 6;
+    //   this.heading = headingReservePageLocation6;
+    // }
   }
 
   public navigate() {

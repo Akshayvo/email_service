@@ -145,25 +145,25 @@ export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit
 
 export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Ossipee`;
 
-export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Barnwell`;
+export const headingReservePageLocation3 = ``;
 
 export const headingReservePageLocation4 = ``;
 
-export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit in Fairhope`;
+export const headingReservePageLocation5 = ``;
 
-export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
+export const headingReservePageLocation6 = ``;
 
 export const heading1 = `Clarke Plaza Self Storage - Clarke Plaza`;
 
 export const heading2 = `Ossipee Self-Storage`;
 
-export const heading3 = `Clarke Plaza Self Storage - Barnwell`;
+export const heading3 = ``;
 
-export const heading4 = `Clarke Plaza Self Storage - Belforest`;
+export const heading4 = ``;
 
-export const heading5 = `Clarke Plaza Self Storage - Fairhope`;
+export const heading5 = ``;
 
-export const heading6 = `Clarke Plaza Self Storage - Robertsdale`;
+export const heading6 = ``;
 
 export const unitSizerLocation1 = [
   {

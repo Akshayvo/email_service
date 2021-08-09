@@ -55,7 +55,7 @@ export const contactsLocation1 = [
     email: "admin@pznh.net",
     data: `admin@pznh.net`,
     class: "fas fa-envelope-open mr-2 iconColor",
-    redirect: "mailto:`admin@pznh.net`",
+    redirect: "mailto:admin@pznh.net",
   },
   {
     id: 3,
@@ -120,7 +120,7 @@ export const contactsLocation2 = [
     data: "admin@pznh.net",
     email: `admin@pznh.net`,
     class: "fas fa-envelope-open mr-2 iconColor",
-    redirect: "mailto:`admin@pznh.net`",
+    redirect: "mailto:admin@pznh.net",
   },
   {
     id: 3,
@@ -166,10 +166,10 @@ export const contactsLocation3 = [
   {
     id: 2,
     label: "Email: ",
-    data: "accounts@storageplusbaldwin.com",
-    email: `accounts@storageplusbaldwin.com`,
+    data: "",
+    email: "",
     class: "fas fa-envelope-open mr-2 iconColor",
-    redirect: "mailto:`accounts@storageplusbaldwin.com`",
+    redirect: "mailto:",
   },
   {
     id: 3,
@@ -205,10 +205,10 @@ export const contactsLocation4 = [
   {
     id: 2,
     label: "Email: ",
-    data: "accounts@storageplusbaldwin.com",
-    email: `accounts@storageplusbaldwin.com`,
+    data: "",
+    email: "",
     class: "fas fa-envelope-open mr-2 iconColor",
-    redirect: "mailto:`accounts@storageplusbaldwin.com`",
+    redirect: "mailto:``",
   },
   {
     id: 3,
@@ -244,10 +244,10 @@ export const contactsLocation5 = [
   {
     id: 2,
     label: "Email: ",
-    data: "accounts@storageplusbaldwin.com",
-    email: `accounts@storageplusbaldwin.com`,
+    data: "",
+    email: "",
     class: "fas fa-envelope-open mr-2 iconColor",
-    redirect: "mailto:`accounts@storageplusbaldwin.com`",
+    redirect: "mailto:``",
   },
   {
     id: 3,
@@ -283,10 +283,10 @@ export const contactsLocation6 = [
   {
     id: 2,
     label: "Email: ",
-    data: "accounts@storageplusbaldwin.com",
-    email: `accounts@storageplusbaldwin.com`,
+    data: "",
+    email: "",
     class: "fas fa-envelope-open mr-2 iconColor",
-    redirect: "mailto:`accounts@storageplusbaldwin.com`",
+    redirect: "mailto:``",
   },
   {
     id: 3,
