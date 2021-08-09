@@ -495,9 +495,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
            const defaultDescription = this.lstPayTypes[0].PayTypeDescription;
            const defaultPayTypeID = this.lstPayTypes[0].PayTypeID;
            this.paytypeid =  this.lstPayTypes[0].PayTypeID;
-           console.log('lstPayTypes', this.lstPayTypes, this.paytypeid);
+          //  console.log('lstPayTypes', this.lstPayTypes, this.paytypeid);
            this.surchargeService.getIdPaytype(this.paytypeid);
-           console.log('this.surchargeService.getIdPaytype(this.paytypeid);', this.surchargeService.getIdPaytype(this.paytypeid));
+          //  console.log('this.surchargeService.getIdPaytype(this.paytypeid);', this.surchargeService.getIdPaytype(this.paytypeid));
            this.getSurCharge();
            this.payRentForm.patchValue({
              objPayment: {
@@ -593,13 +593,18 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         }
 
 
-      }, (err: any) => {
+      }, (err: any) => {        
         this.makePaymentForUnit = false;
 
         if (err instanceof HttpErrorResponse) {
           if (err.status === 400) {
             this.showloaderForPayment = false;
-            this.invalidPayment = 'Invalid Amount, Payment Amount must be greater than 0.';
+            this.invalidPayment =
+              "Invalid Amount, Payment Amount must be greater than 0.";
+          } else {
+            this.showloaderForPayment = false;
+            this.invalidPayment =
+              "Error while making the payment please do try again.";
           }
         }
       }
