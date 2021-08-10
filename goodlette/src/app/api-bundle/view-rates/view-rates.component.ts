@@ -70,9 +70,8 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.fetchViewRates();
-    // this.fetchViewRatesHeading();
     this.service.data$.subscribe(
-      (res) => ((this.data = res), console.log("res", res))
+      (res) => ((this.data = res))
     ); //read the invoked data or default data
   }
 
