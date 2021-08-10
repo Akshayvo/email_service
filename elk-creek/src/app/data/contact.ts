@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '1565 S Railroad Ave, Crescent City, CA 95531',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/tfe7ZrTUff3Fb7Uj7'
     },
     {
         id: 1,

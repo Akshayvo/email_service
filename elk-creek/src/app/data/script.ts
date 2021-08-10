@@ -13,8 +13,8 @@ const amenityFeature = [];
 
 featuresList.forEach(
   feature => 
-  (amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td1}),
-  amenityFeature.push({ "@type": "LocationFeatureSpecification",  "name": feature.td2}))
+  (amenityFeature.push({ '@type': 'LocationFeatureSpecification',  'name': feature.td1}),
+  amenityFeature.push({ '@type': 'LocationFeatureSpecification',  'name': feature.td2}))
 )
 
 socialLinks.forEach(links => {
@@ -25,25 +25,25 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Elk_Creek/jpg/elk-creek-storage-11.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Elk_Creek/jpg/elk-creek-storage-43.jpg", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Elk_Creek/jpg/elk-creek-storage%20-169.jpg" // 16:9
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Elk_Creek/jpg/elk-creek-storage-11.jpg', // 1:1
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Elk_Creek/jpg/elk-creek-storage-43.jpg', // 4:3
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Elk_Creek/jpg/elk-creek-storage%20-169.jpg' // 16:9
      ],
      telephone: contact[contactIndex].data,
-     map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
-     description: "Elk Creek Storage is Crescent City’s newest self storage facility providing self storage units in a variety of sizes for businesses and local residents in search of a little extra elbow-room around the home, office, or worksite! We are conveniently located on South Railroad Ave around the corner from the Parkway Drive and Washington Blvd intersection. Our facility is built from the ground up with all of the modern conveniences designed to make your stay with us as convenient as possible.",
-     streetAddress: "1565 S Railroad Ave",
-     state: "New York",
-     addressLocality: "Crescent",
-     addressRegion: "CA",
-     postalCode: "95531",
-     addressCountry: "US",
-     id: environment.websiteUrl || "",
-     paymentAccepted:  "Cash, Check, Credit, Debit",
-     currenciesAccepted: "USD",
-     ratingValue: "",
-     bestRating: "5",
-     reviewCount: "250",
+     map: 'https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592',
+     description: 'Elk Creek Storage is Crescent City’s newest self storage facility providing self storage units in a variety of sizes for businesses and local residents in search of a little extra elbow-room around the home, office, or worksite! We are conveniently located on South Railroad Ave around the corner from the Parkway Drive and Washington Blvd intersection. Our facility is built from the ground up with all of the modern conveniences designed to make your stay with us as convenient as possible.',
+     streetAddress: '1565 S Railroad Ave',
+     state: 'New York',
+     addressLocality: 'Crescent',
+     addressRegion: 'CA',
+     postalCode: '95531',
+     addressCountry: 'US',
+     id: environment.websiteUrl || '',
+     paymentAccepted:  'Cash, Check, Credit, Debit',
+     currenciesAccepted: 'USD',
+     ratingValue: '',
+     bestRating: '',
+     reviewCount: '',
      latitude: 41.771873,
      longitude: -124.1856473,
      openingHours: ['Mo-Sa 9:00-17:00'],
@@ -51,73 +51,73 @@ export const script = {               // Please fill this script according to fa
 };
 
 export const homePageScript = [ {
-    "@context": "https://schema.org",
-    "@type": ["Organization","SelfStorage","Place","LocalBusiness"],
-    "image": script.imagesHomePage,
-    "@id": script.id,
-    "name": environment.facilityName,
-     "description": script.description || homePageContent,
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": script.streetAddress,
-      "addressLocality": script.addressLocality,
-      "addressRegion": script.addressRegion,
-      "postalCode": script.postalCode,
-      "addressCountry": script.addressCountry
+    '@context': 'https://schema.org',
+    '@type': ['Organization','SelfStorage','Place','LocalBusiness'],
+    'image': script.imagesHomePage,
+    '@id': script.id,
+    'name': environment.facilityName,
+     'description': script.description || homePageContent,
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': script.streetAddress,
+      'addressLocality': script.addressLocality,
+      'addressRegion': script.addressRegion,
+      'postalCode': script.postalCode,
+      'addressCountry': script.addressCountry
     },
-   "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": script.ratingValue,
-      "bestRating": script.bestRating,
-      "reviewCount": script.reviewCount
+  //  "aggregateRating": {
+  //     "@type": "AggregateRating",
+  //     "ratingValue": script.ratingValue,
+  //     "bestRating": script.bestRating,
+  //     "reviewCount": script.reviewCount
+  //   },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': script.latitude,
+      'longitude': script.longitude
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": script.latitude,
-      "longitude": script.longitude
-    },
-    "url": environment.websiteUrl,
-    "telephone": script.telephone,
+    'url': environment.websiteUrl,
+    'telephone': script.telephone,
     
-    "priceRange": script.priceRange,
-    "openingHours": script.openingHours,
-    "currenciesAccepted": script.currenciesAccepted,
-    "paymentAccepted": script.paymentAccepted,
-     "areaServed": {
-    "@type": "State",
-    "name": script.state
+    'priceRange': script.priceRange,
+    'openingHours': script.openingHours,
+    'currenciesAccepted': script.currenciesAccepted,
+    'paymentAccepted': script.paymentAccepted,
+     'areaServed': {
+    '@type': 'State',
+    'name': script.state
    },
    
-  "hasMap": script.map,
-  "amenityFeature": amenityFeature,
-  "acceptsReservations": "True"
+  'hasMap': script.map,
+  'amenityFeature': amenityFeature,
+  'acceptsReservations': 'True'
   }];
 
 
   export const contactPageScript = [
     {
-        "@context": "http://schema.org",
-        "@type": "Selfstorage",
-        "name": environment.facilityName,
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": script.addressLocality,
-          "postalCode": script.postalCode,
-          "streetAddress": script.streetAddress,
+        '@context': 'http://schema.org',
+        '@type': 'Selfstorage',
+        'name': environment.facilityName,
+        'address': {
+          '@type': 'PostalAddress',
+          'addressLocality': script.addressLocality,
+          'postalCode': script.postalCode,
+          'streetAddress': script.streetAddress,
         },
-         "url": `${environment.websiteUrl}/contact-us`,
-         "image": script.imagesHomePage[0],
-        "contactPoint": [{
-          "@type": "ContactPoint",
-          "telephone": script.telephone,
-          "contactType": "reservations"
+         'url': `${environment.websiteUrl}/contact-us`,
+         'image': script.imagesHomePage[0],
+        'contactPoint': [{
+          '@type': 'ContactPoint',
+          'telephone': script.telephone,
+          'contactType': 'reservations'
         },{
-          "@type": "ContactPoint",
-          "telephone": script.telephone,
-          "contactType": "customer service"
+          '@type': 'ContactPoint',
+          'telephone': script.telephone,
+          'contactType': 'customer service'
         }],
-        "email": contact[emailIndex].data,
-        "sameAs": sameAs
+        'email': contact[emailIndex].data,
+        'sameAs': sameAs
       }
   ];
 
