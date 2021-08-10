@@ -123,12 +123,17 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.newData();
     this.service.data$.subscribe((res) => (this.data = res));
+    this.service.image$.subscribe((res) => (this.image = res));
+    this.service.content$.subscribe((res) => (this.content = res));
     this.getTenantUnitData();
     this.showAltDetails = this.dataSharingService.showAltDetails;
   }
 
   newData() {
-      this.service.changeData("Reservation Information"); //invoke new Data
+    this.image = "goodlette-self-storage-6";
+      this.content = "Access. Being near is not enough. How easy is it to get in and out of the facility, drive around, park and get to the Manager’s office or your storage unit? Check out our deceleration lane and left turn lane on Goodlette Frank Road.";
+      
+      this.service.changeData("Reservation Information",this.image, this.content ); //invoke new Data
   }
 
   fetchSharedData() {

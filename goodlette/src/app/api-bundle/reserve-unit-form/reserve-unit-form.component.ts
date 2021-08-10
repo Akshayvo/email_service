@@ -145,6 +145,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   annualRate: number;
   biAnnualRate: number;
   quarterRate: number;
+  image: any;
+  content: any;
 
   alternatetypeDetail: any;
 
@@ -308,13 +310,19 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     });
     this.newData();
     this.service.data$.subscribe((res) => (this.data = res));
+    this.service.image$.subscribe((res) => (this.image = res));
+    this.service.content$.subscribe((res) => (this.content = res));
   }
 
   newData() {
     if (this.router.url.includes("reserve")) {
-      this.service.changeData("Reserve Unit"); //invoke new Data
+      this.image = "goodlette-self-storage-5";
+      this.content = "Cost. Different facilities have different size units and cost items. When comparing cost, go by cost per square foot. Unit sizes can be confusing; which one is bigger, a 5x6 unit or 4x7? Make sure you have taken all the add-ons into account. We have no application fees, no setup and processing fees, no security deposits. Your rent plus tax is all you pay. We do ask, however, that you leave your unit clean and undamaged when you finish your rental.";
+      this.service.changeData("Reserve Unit",this.image, this.content ); //invoke new Data
     } else {
-      this.service.changeData("Move In"); //invoke new Data
+      this.image = "goodlette-self-storage-7";
+      this.content = "Security. Does the facility have closed circuit TV? How well is it monitored? If somebody tries to break into your unit, will there be a video record of it? How well lit is it at night?";
+      this.service.changeData("Sign Up",this.image, this.content); //invoke new Data
     }
   }
 
