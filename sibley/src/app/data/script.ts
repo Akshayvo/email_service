@@ -249,7 +249,7 @@ export const ogPayRentPage = [
     },
     {
       property: `og:url`,
-      content: `${environment.websiteUrl}/view-rates`
+      content: `${environment.websiteUrl}/${environment.locationName}/view-rates`
     },
     {
       property: `og:image`,
