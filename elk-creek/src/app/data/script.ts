@@ -27,7 +27,7 @@ export const script = {               // Please fill this script according to fa
     imagesHomePage: [
       'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Elk_Creek/jpg/elk-creek-storage-11.jpg', // 1:1
       'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Elk_Creek/jpg/elk-creek-storage-43.jpg', // 4:3
-      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Elk_Creek/jpg/elk-creek-storage%20-169.jpg' // 16:9
+      'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Elk_Creek/jpg/elk-creek-storage-169.jpg' // 16:9
      ],
      telephone: contact[contactIndex].data,
      map: 'https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592',
