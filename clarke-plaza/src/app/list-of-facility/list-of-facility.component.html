@@ -3,12 +3,12 @@
     <div class="container">
       <div class="row">          
         <div class="col-lg-5">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11560.006074716799!2d-71.2040514!3d43.585684699999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b63c74906a56e9c!2sClarke%20Plaza%20Self-Storage!5e0!3m2!1sen!2sus!4v1625255137509!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11560.006074716799!2d-71.2040514!3d43.585684699999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b63c74906a56e9c!2sClarke%20Plaza%20Self-Storage!5e0!3m2!1sen!2sus!4v1625255137509!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
         </div>
         <div class="col-lg-4  pt-3">
           <h2>Clarke Plaza Self Storage</h2>
           <!-- <p> -->
-            <div *ngFor="let contact of contactsBrookside" class="contact-label">
+            <div *ngFor="let contact of contactsBrookside" class="contact-label pt-2">
                 <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
               <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' || contact?.label === 'After Hours: ' else other_content">
                 <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
@@ -46,7 +46,7 @@
       <div class="container">
         <div class="row">          
           <div class="col-lg-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11537.877322104998!2d-71.1121976!3d43.7007947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5778bf4ee77c589a!2sOssipee%20Self%20Storage!5e0!3m2!1sen!2sus!4v1625259667176!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11537.877322104998!2d-71.1121976!3d43.7007947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5778bf4ee77c589a!2sOssipee%20Self%20Storage!5e0!3m2!1sen!2sus!4v1625259667176!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
           </div>
           <div class="col-lg-4 pt-3">
             <h2>Ossipee Self Storage</h2>
@@ -86,7 +86,7 @@
     <div class="container">
       <div class="row">          
         <div class="col-lg-5">
-            <iframe src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            <iframe src="" width="100%" height="100%" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
         </div>
         <div class="col-lg-4 pt-3">
           <h2>location heading3</h2>
@@ -120,7 +120,7 @@
       <div class="container">
         <div class="row">          
           <div class="col-lg-5">
-              <iframe src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+              <iframe src="" width="100%" height="100%" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
           </div>
           <div class="col-lg-4 pt-3">
             <h2>location heading4</h2>

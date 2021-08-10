@@ -37,14 +37,14 @@ export const unitSizerPageContent = ``;
 export const contactPageTitle = `Contact Us  | Clarke Plaza Self Storage`;
 export const contactPageContent = `Do you have a question about your account, or our self storage, boat, and recreational vehicle storage? Use our contact form, or call us today!  `;
 
-export const thankYouPageTitle = `Thank You For Reserving Your Unit at Storage Plus of Baldwin County!`;
+export const thankYouPageTitle = `Thank You For Reserving Your Unit at Clarke Plaza Self Storage!`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
 
-export const privacyPolicyPageTitle = `Privacy Policy | Storage Plus of Baldwin County`;
+export const privacyPolicyPageTitle = `Privacy Policy | Clarke Plaza Self Storage`;
 export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
 
-export const faqPageTitle = `Frequently Asked Questions | Storage Plus of Baldwin County`;
-export const faqPagecontent = `Have some questions about the services at Storage Plus of Baldwin County? Check out our FAQ page!`;
+export const faqPageTitle = `Frequently Asked Questions | Clarke Plaza Self Storage`;
+export const faqPagecontent = `Have some questions about the services at Clarke Plaza Self Storage? Check out our FAQ page!`;
 
 
 

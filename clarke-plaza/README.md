@@ -3,9 +3,9 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace storage-plus Rental Spaces with your project name(Hyphen Case)
+Replace Clarke Plaza Self Storage Rental Spaces with your project name(Hyphen Case)
 
-Replace storage-plus Rental Spaces with your project name(camelCase)
+Replace Clarke Plaza Self Storage Rental Spaces with your project name(camelCase)
 
 Find and Replace across project
 

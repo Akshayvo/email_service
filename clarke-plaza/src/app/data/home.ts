@@ -198,10 +198,7 @@ export const featuresList = [
 
 export const jumbotron = [
   {
-    h2: `Affordable Self Storage Units in Baldwin County`,
-    blurb: `Storage Plus of Baldwin County serves the communities of Baldwin County with 6 locally owned
-        self storage and vehicle parking facilities. We offer affordable self storage units in a variety of
-        sizes including climate controlled varieties.Take a moment to review our pricing and storage unit or
-        vehicle parking availability, then give us a call!`,
+    h2: ``,
+    blurb: ``,
   },
 ];

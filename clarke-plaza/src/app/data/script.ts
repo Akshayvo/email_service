@@ -75,7 +75,7 @@ const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
 // const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
 export const nameLocation1 = `Clarke Plaza Self Storage - Clarke Plaza`;
-export const nameLocation2 = `Storage Plus of Baldwin County - Ossipee`;
+export const nameLocation2 = `Clarke Plaza Self Storage - Ossipee`;
 export const nameLocation3 = ``;
 export const nameLocation4 = ``;
 export const nameLocation5 = ``;
@@ -221,7 +221,7 @@ export const homePageScript = [
       'address' : addressLoaction1,
     'telephone': contactsLocation1[contactIndex1].data,
     'image' : imageLocation1,
-    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg/storage-plus-baldwin-county-logo.jpg'
+    'logo': 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Clarke_Plaza/jpg/clarke-plaza-self-storage-logo.jpg'
   }, 
   {
     '@context' : 'http://schema.org',
