@@ -47,7 +47,7 @@ export const script = {               // Please fill this script according to fa
      latitude: 44.6886878,
      longitude: -94.0044785,
      openingHours: ["Mo-Fr 08:00-16:00"],
-     priceRange: '$75'
+     priceRange: '$75-$75'
 };
 
 export const homePageScript = [ {
