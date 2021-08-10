@@ -9,7 +9,7 @@
         <div class="col-lg-6 col-md-6 p-4" [class.col-lg-12]="openComponent">
           <h3 class="view-rate-heading">Amenities</h3>
           <img
-            src="{{ imageBaseUrl }}/{{ image }}.{{ imagetype }}"
+            src="{{ imageBaseUrl }}/{{ dynamicImage }}.{{ imagetype }}"
             alt="{{ viewRatesAltText }}"
             class="sectionImage"
           />
@@ -18,9 +18,9 @@
         <div class="col-lg-6 col-md-6 p-3">
           <p
             class="view-rate-text text-justify"
-            *ngFor="let viewRates of viewRates"
+            *ngFor="let viewRatesContent of viewRatesContent"
           >
-            {{ viewRates.p }}
+            {{ viewRatesContent.p }}
           </p>
           <a
             class="btn btn-lg btn-primary"

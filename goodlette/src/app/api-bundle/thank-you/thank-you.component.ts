@@ -6,6 +6,7 @@ import { Subscription } from 'rxjs';
 import { SignOutService } from '../services/sign-out.service';
 import { thankYouPageContent, thankYouPageTitle } from '../../data/title';
 import { environment } from '../../../environments/environment';
+import { CommonService } from '../services/common.service';
 
 @Component({
   selector: 'app-thank-you',
@@ -47,6 +48,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     private dataSharingService: DataSharingService,
     public router: Router,
     private signOutService: SignOutService,
+    private service: CommonService,
   ) {
     this.facilityName = environment.facilityName;
     this.fetchMetaData();
@@ -57,7 +59,16 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.titleService.setTitle(`${this.thankYouPageTitle}`);
   }
 
+  newData() {
+      this.service.changeData(
+        "SUCCESS",
+        '',
+        ''
+      ); 
+  }
+
   ngOnInit() {
+    this.newData();
     this.strConfirmation = this.dataSharingService.strConfirmation;
     this.strAccessCode = this.dataSharingService.strAccessCode;
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;

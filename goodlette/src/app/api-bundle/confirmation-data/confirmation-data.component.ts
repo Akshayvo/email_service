@@ -16,7 +16,13 @@ import { MakeAReservationService } from "../services/make-a-reservation.service"
 import { AddTenantService } from "../services/add-tenant.service";
 import { TenantInfoService } from "../services/tenant-info.service";
 import { Subscription, Subject } from "rxjs";
-import { option, option1 } from "../../data/view-rates";
+import {
+  dataConfirmationMoveIn,
+  dataConfirmationReserve,
+  dataSuccessReserve,
+  option,
+  option1,
+} from "../../data/view-rates";
 import { SignOutService } from "../services/sign-out.service";
 import { environment } from "../../../environments/environment";
 import { CommonService } from "../services/common.service";
@@ -84,6 +90,8 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   description: string;
   monthlyRate: number;
 
+  dynamicImage: any;
+  viewRatesContent: any;
   tenantData = {
     objTenant: {},
   };
@@ -114,7 +122,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     private addTenantService: AddTenantService,
     private tenantInfoService: TenantInfoService,
     private signOutService: SignOutService,
-    private service: CommonService,
+    private service: CommonService
   ) {
     this.fetchOption();
     this.fetchSharedData();
@@ -123,17 +131,28 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.newData();
     this.service.data$.subscribe((res) => (this.data = res));
-    this.service.image$.subscribe((res) => (this.image = res));
-    this.service.content$.subscribe((res) => (this.content = res));
     this.getTenantUnitData();
     this.showAltDetails = this.dataSharingService.showAltDetails;
   }
 
   newData() {
-    this.image = "goodlette-self-storage-6";
-      this.content = "Access. Being near is not enough. How easy is it to get in and out of the facility, drive around, park and get to the Manager’s office or your storage unit? Check out our deceleration lane and left turn lane on Goodlette Frank Road.";
-      
-      this.service.changeData("Reservation Information",this.image, this.content ); //invoke new Data
+    if (!!this.dataSharingService.navigateToMoveIn) {
+      this.dynamicImage = "goodlette-self-storage-8";
+      this.viewRatesContent = dataConfirmationMoveIn;
+      this.service.changeData(
+        "Move In",
+        this.dynamicImage,
+        this.viewRatesContent
+      ); //invoke new Data
+    } else {
+      this.dynamicImage = "goodlette-self-storage-5";
+      this.viewRatesContent = dataConfirmationReserve;
+      this.service.changeData(
+        "Reservation Information",
+        this.dynamicImage,
+        this.viewRatesContent
+      ); //invoke new Data
+    }
   }
 
   fetchSharedData() {
@@ -299,6 +318,13 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
               `${environment.locationName}/view-rates/thank-you`,
             ]);
             this.reservationInProgress = false;
+            this.dynamicImage = "goodlette-self-storage-6";
+            this.viewRatesContent = dataSuccessReserve;
+            this.service.changeData(
+              "SUCCESS",
+              this.dynamicImage,
+              this.viewRatesContent
+            );
           }
         },
         (err: any) => {

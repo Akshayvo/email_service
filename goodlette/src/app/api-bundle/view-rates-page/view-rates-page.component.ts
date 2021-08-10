@@ -4,7 +4,7 @@ import { MoveInService } from "../services/moveIn.service";
 import { ObjCharges } from "../models/movein";
 import { UnitTypes, LstUnitTypes } from "../models/unittypes";
 import { FetchDataService } from "../services/fetch-data.service";
-import { th } from "../../data/view-rates";
+import { dataViewRates, th } from "../../data/view-rates";
 import { Router } from "@angular/router";
 import { DataSharingService } from "../services/data-sharing.service";
 import { environment } from "../../../environments/environment";
@@ -58,9 +58,10 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   showClimateControl: boolean;
   facilityName: string;
   state: string;
+  viewRates: any;
   data: string;
-  image:any;
-  content: any;
+  dynamicImage: any;
+  viewRatesContent: any;
 
   private getDataSubscribe$: Subscription;
   constructor(
@@ -75,10 +76,13 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.fetchViewRates();
     this.newData();
     this.service.data$.subscribe((res) => (this.data = res));
-    this.service.image$.subscribe((res1) => (this.image = res1));
-    this.service.content$.subscribe((res2) => (this.content = res2));
+    this.service.dynamicImage$.subscribe((res1) => (this.dynamicImage = res1));
+    this.service.viewRatesContent$.subscribe(
+      (res2) => (this.viewRatesContent = res2)
+    );
     this.getData();
     this.fetchThData();
     this.state = script.state;
@@ -86,14 +90,21 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
       (updatedRoute) => {
         this.currentRouteForHeadingReserve = updatedRoute;
         //console.log(this.currentRouteForPayment);
-      } 
+      }
     );
   }
 
+  public fetchViewRates() {
+    this.viewRates = dataViewRates;
+  }
   newData() {
-    this.image = "goodlette-self-storage-4";
-    this.content = "Resident Manager. Few storage facilities have resident managers. But if you find one that does, give it a plus point. It makes for a safer more secure facility when there is somebody there 24 hours a day. Emergencies don’t give warnings. They can arise during off-hours. A resident manager can help.";
-    this.service.changeData("View Rates",this.image, this.content); //invoke new Data
+    this.dynamicImage = "goodlette-self-storage-3";
+    this.viewRatesContent = this.viewRates;
+    this.service.changeData(
+      "View Rates",
+      this.dynamicImage,
+      this.viewRatesContent
+    ); //invoke new Data
   }
 
   public fetchThData() {

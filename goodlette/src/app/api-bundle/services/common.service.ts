@@ -6,14 +6,14 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class CommonService {
   private data = new BehaviorSubject('');
-  private image = new BehaviorSubject('');
-  private content = new BehaviorSubject('');
+  private dynamicImage = new BehaviorSubject('');
+  private viewRatesContent = new BehaviorSubject('');
   data$ = this.data.asObservable();
-  image$ = this.image.asObservable();
-  content$ = this.content.asObservable();
+  dynamicImage$ = this.dynamicImage.asObservable();
+  viewRatesContent$ = this.viewRatesContent.asObservable();
 
-  changeData(data: string,image:any, content: any) {
+  changeData(data: string, dynamicImage:any, viewRatesContent: any) {
     this.data.next(data)
-    this.image.next(image)
-    this.content.next(content)
+    this.dynamicImage.next(dynamicImage);
+    this.viewRatesContent.next(viewRatesContent);
   }}

@@ -44,8 +44,8 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   viewRatesAltText: string;
   state: string;
   data: string;
-  image: any;
-  content: any;
+  dynamicImage: any;
+  viewRatesContent: any;
   private isUnsubscribe$: Subscription;
 
   constructor(
@@ -72,15 +72,12 @@ export class ViewRatesComponent implements OnInit, OnDestroy {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.fetchViewRates();
-    this.service.data$.subscribe(
-      (res) => ((this.data = res))
-    ); //read the invoked data or default data
-    this.service.image$.subscribe(
-      (res1) => ((this.image = res1))
+    this.service.data$.subscribe((res) => (this.data = res)); //read the invoked data or default data
+    this.service.dynamicImage$.subscribe(
+      (res1) => ((this.dynamicImage = res1), console.log("image", res1))
     );
-    console.log(this.image)
-    this.service.content$.subscribe(
-      (res2) => ((this.content = res2))
+    this.service.viewRatesContent$.subscribe(
+      (res2) => ((this.viewRatesContent = res2), console.log("content", res2))
     );
   }
 
