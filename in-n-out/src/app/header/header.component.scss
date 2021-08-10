@@ -83,11 +83,22 @@ a {
   button {
     border: 1px $dark solid;
     margin-right: 20px;
+    
   }
 
   button:focus {
     outline: 5px auto $primary;
   }
+}
+
+.btn-primary{
+  // margin-top: 30px;
+  // margin-bottom: 12px;
+  height: 30px;
+  color: $primary!important;
+  background-color: #FFFFFF!important;
+  border-bottom: #FFFFFF!important;
+  border: #FFFFFF!important ;
 }
 
 .nav-link:hover {
