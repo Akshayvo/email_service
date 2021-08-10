@@ -14,6 +14,7 @@ import { MoveInService } from '../services/moveIn.service';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
 import { CanonicalService } from '../../services/canonical.service';
+import { CommonService } from '../services/common.service';
 
 @Component({
   selector: 'app-reserve-unit-form',
@@ -148,7 +149,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     private leadDaysService: LeadDaysService,
     private moveInService: MoveInService,
     public router: Router,
-    private canonical: CanonicalService
+    private canonical: CanonicalService,
+    private service: CommonService,
     ) {      
       this.canonical.create();
       if (this.router.url.includes('view-rates')) {
@@ -283,7 +285,19 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         Description: this.description,
       }])
     });
+    this.newData();
+    this.service.data$.subscribe((res) => (this.data = res));
   }
+
+  newData() {
+    if (this.router.url.includes('reserve')) {
+      this.service.changeData("Reserve Unit"); //invoke new Data
+    } else {
+      this.service.changeData("Move In"); //invoke new Data
+    }
+  }
+
+
     public fetchUSState() {
     this.option = option;
     this.option1 = option1;
