@@ -1,7 +1,7 @@
 import { environment } from '../../environments/environment';
 import { homePageContent, homePageTitle, payRentPageContent,
   payRentPageTitle, storageTipsContent, storageTipsTitle,trailerInfoTitle,trailerInfoContent,
-contactPageContent, contactPageTitle,
+contactPageContent, contactPageTitle,auctionTitle,auctionContent,
 location1PageContent, location2PageTitle,
 location2PageContent, location1PageTitle,
 location3PageContent, location3PageTitle,
@@ -1514,6 +1514,60 @@ export const twitterTrailerInfoPage = [
   {
     name: `twitter:description`,
     content: trailerInfoContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation1[0]
+  },
+];
+
+export const ogAuctionPage = [
+  {
+    property: `og:title`,
+    content: auctionTitle
+  },
+  {
+    property: `og:description`,
+    content: auctionContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/auction`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation1[1]
+  },
+];
+
+export const twitterAuctionPage = [
+  {
+    name: `twitter:title`,
+    content: `@${auctionTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: auctionContent
   },
   {
     name: `twitter:site`,

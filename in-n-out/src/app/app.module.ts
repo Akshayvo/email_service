@@ -68,6 +68,9 @@ import { ThankYouGuard } from './thank-you.guard';
 import { PhotosComponent } from './photos/photos.component';
 import { FaqComponent } from './faq/faq.component';
 import { TrailerInfoComponent } from './trailer-info/trailer-info.component';
+import { AuctionComponent } from './auction/auction.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
+import { SpecialsComponent } from './specials/specials.component';
 
 @NgModule({
   declarations: [
@@ -123,6 +126,9 @@ import { TrailerInfoComponent } from './trailer-info/trailer-info.component';
     PhotosComponent,
     FaqComponent,
     TrailerInfoComponent,
+    AuctionComponent,
+    TestimonialComponent,
+    SpecialsComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

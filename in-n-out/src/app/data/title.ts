@@ -28,11 +28,14 @@ export const reservePageContent = ``;
 export const payRentPageTitle = `Pay Rent | In-N-Out Storage`;
 export const payRentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
-export const storageTipsTitle = `Storage Tips | Storage Plus of Baldwin`;
+export const storageTipsTitle = `Storage Tips | In-N-Out Storage`;
 export const storageTipsContent = `Take advantage of our decades of self storage experience and follow these easy storage tips! You'll be glad you did!`;
 
-export const trailerInfoTitle = `Storage Tips | Storage Plus of Baldwin`;
+export const trailerInfoTitle = `Trailer Info | In-N-Out Storage`;
 export const trailerInfoContent = `Take advantage of our decades of self storage experience and follow these easy storage tips! You'll be glad you did!`;
+
+export const auctionTitle = `Auctions | In-N-Out Storage`;
+export const auctionContent = `Take a look at our upcoming auction schedule. If you have any questions, give us a call!`;
 
 export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
