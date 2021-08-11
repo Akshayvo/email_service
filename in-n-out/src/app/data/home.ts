@@ -22,6 +22,21 @@ export const featuresHead = [
     },
 ];
 
+export const featuresHeadLink1 = {
+    label: 'FAQ',
+    data: 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Syrasoft_Poweredby/icons/bubble.svg',
+    alt: 'Icon of a customer service agent'
+}
+
+export const featuresHeadLink2 = {
+    label: 'Pay Online',
+    data: 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Syrasoft_Poweredby/icons/online-pay.svg',
+    alt: 'Icon art displaying a screen with cursor'
+}
+
+
+
+
 export const location1FeaturesHead = [
     {
         label: '5 Convenient Locations',
@@ -205,4 +220,15 @@ export const jumbotron = [
         lanes at all locations, video surveillance, 24-hour security lighting,
         accessibility 24-7, 365 days a year.`,
     }
+];
+
+export const storagePoints = [
+    { data: 'Temperature-controlled units.' },
+    { data: 'Electrical units.' },
+    { data: 'Indoor and outdoor parking in a wide variety of sizes to meet your needs.' },
+    { data: 'RV Trailer Parking - large outdoor parking stalls available to accommodate any size RV, trailer, camper, or boat.' },
+    { data: 'Well lit parking area with video camera surveillance .' },
+    { data: 'Pull-through parking stalls available' },
+    { data: 'Over 60 open spots are available!.' },
+    { data: 'Wide main entrance – 65-foot wide entrance.' },
 ];

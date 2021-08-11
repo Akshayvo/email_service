@@ -70,6 +70,37 @@
   }
 }
 
+.feature-link{
+  display: flex;
+}
+
+.image-container{
+  display: flex;
+}
+
+.storage-content {
+  padding: 50px;
+  background-color: $white;
+  min-height: 550px;
+
+  ul {
+    padding-left: 30px;
+  }
+}
+
+.banner-text{
+  color: white;
+}
+
+.banner{
+  background-color: orange;
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .jumbotron-home {
 
   .for-mobile-view {

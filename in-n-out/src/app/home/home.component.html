@@ -76,6 +76,96 @@
   <!--Feature Box Ends Here-->  
 </div>
 <!-- <app-list-of-facility></app-list-of-facility> -->
+<div class="banner">
+  
+      <h1 class="text-center ">
+        Contact-free rentals at all locations!
+      </h1>
+    
+</div>
+
+
+  
+
+<div class="row storage-content">
+  <h2>Storage Units for Every Purpose</h2>
+  <p>Our 5 facilities offers the largest inventory of self storage units in the area. All of our locations are made with high-quality steel, and offer the following conveniences</p>
+  <ul>
+    <li *ngFor="let point of storagePoints" class="p-1 text-justify"> {{point.data}} </li>
+  </ul>
+  
+</div>
+
+<div class="banner">
+  
+  <h1 class="text-center ">
+    EZ-In / EZ-Out
+  </h1>
+
+</div>
+<div class= "col-md-12 feature-link">
+  <div class= "col-md-6">
+    <p class="text-center f-block-img"> 
+      <a href="https://in-n-out-storage-staging.netlify.app/wisconsin/frequently-asked-questions">
+      <img src="{{featuresHeadLink1.data}}" class="f-img" alt="{{featuresHeadLink1.alt}}" >
+    </a>
+    </p>
+    <h2 class="text-center f-text">
+      {{featuresHeadLink1.label}}
+    </h2>
+  </div>
+  <div class= "col-md-6">
+    <p class="text-center f-block-img"> 
+      <a href="https://in-n-out-storage-staging.netlify.app/pay-rent">
+      <img src="{{featuresHeadLink2.data}}" class="f-img" alt="{{featuresHeadLink2.alt}}" >
+    </a>
+    </p>
+    <h2 class="text-center f-text">
+      {{featuresHeadLink2.label}}
+    </h2>
+  </div>
+
+</div>
+
+<div class= "col-md-12 image-container" >
+ 
+    <div class="col-lg-3 py-3">
+      <img src="{{imageBaseUrl}}/standard-units.{{imagetype}}" width="100%" alt="" class="sectionImage">
+      <h2 class="text-center f-text">
+        Standard Units
+      </h2>
+    </div>
+  
+  <div class="col-lg-3 py-3">
+    <img src="{{imageBaseUrl}}/electric-units.{{imagetype}}" width="100%" alt="" class="sectionImage">
+    <h2 class="text-center f-text">
+      Electric Units
+    </h2>
+  </div>
+  <div class="col-lg-3 py-3">
+    <img src="{{imageBaseUrl}}/temp-controlled.{{imagetype}}" width="100%" alt="" class="sectionImage">
+    <h2 class="text-center f-text">
+      Temp Controlled Units
+    </h2>
+  </div>
+  <div class="col-lg-3 py-3">
+    <img src="{{imageBaseUrl}}/outdoor-units.{{imagetype}}" width="100%" alt="" class="sectionImage">
+    <h2 class="text-center f-text">
+      Outdoor Units
+    </h2>
+  </div>
+</div>
+
+<div class="banner">
+  <a class="banner text" href = "https://in-n-out-storage-staging.netlify.app/testimonials" >
+  <h2 class="text-center">
+    CLICK HERE TO READ TESTIMONIALS FROM OUR CUSTOMERS
+  </h2>
+</a> 
+</div>
+
+
+
 
 <!--For individual location-->
 <div class="pb-5 pt-5 bg-light">  

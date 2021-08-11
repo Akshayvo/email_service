@@ -4,7 +4,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { contactsHomePage, hoursHomePage, contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2,
   contactsLocation3, contactsLocation4, hoursLocation3, hoursLocation4,
   contactsLocation5, contactsLocation6, hoursLocation5, hoursLocation6, } from '../data/contact';
-import { featuresHead, serviceOffered, featuresList, jumbotron } from '../data/home';
+import { featuresHead, serviceOffered, featuresList, jumbotron, storagePoints,featuresHeadLink2,featuresHeadLink1 } from '../data/home';
 import { homePageScript, ogHomePage, twitterHomePage } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { LocationService } from '../services/location.service';
@@ -39,6 +39,10 @@ export class HomeComponent implements OnInit {
   imagetype: any;
   imageBaseUrl: any;
   carouselData: any;
+  storagePoints: any;
+  featuresHeadLink2: any;
+  featuresHeadLink1: any;
+
 
 
   constructor(
@@ -88,6 +92,9 @@ export class HomeComponent implements OnInit {
     this.fetchTemplate();
     this.fetchJumbotron();
     this.fetchContactDetails();
+    this.storagePoints = storagePoints;
+    this.featuresHeadLink2 = featuresHeadLink2;
+    this.featuresHeadLink1 = featuresHeadLink1;
 
     // fetch(this.script)
     // .then(response => response.text())

@@ -47,7 +47,7 @@ export class UnitSizerComponent implements OnInit {
     this.unitSizer = unitSizerLocation1;
     this.h2tag = 'Unit Sizer';
     this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
+    out! Still have questions? Call (920) 332-5899`;
   }
 
   public fetchDetailsLocation2() {
@@ -60,7 +60,7 @@ export class UnitSizerComponent implements OnInit {
   public fetchDetailsLocation3() {
     this.h2tag = 'Unit Sizer ';
     this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
+    out! Still have questions? Call (920) 332-5899`;
     this.unitSizer = unitSizerLocation3;
   }
 
