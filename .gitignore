@@ -22,7 +22,7 @@
 **.zip
 **/*.zip
 # IDE - VSCode
-.vscode/*
+**/.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -35,6 +35,7 @@
 /libpeerconnection.log
 npm-debug.log
 yarn-error.log
+**/yarn.lock
 testem.log
 /typings
 
@@ -43,6 +44,4 @@ testem.log
 Thumbs.db
 **/vinay_test*
 **/package-lock.json
-
-# Local Netlify folder
 .netlify
