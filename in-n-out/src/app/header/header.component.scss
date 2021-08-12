@@ -126,15 +126,17 @@ a {
   border: 1px #efefef solid;
 }
 
+@media screen and  (min-width: 992px){
+.navbar-nav .nav-link {
+    padding-right:0px;
+    padding-left: 0px;
+}}
 @media screen and (max-width: 991px) {
   .display {
     display: none;
   }
 
-  .nav-link {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-  }
+  
 
 
   .dropdown {
@@ -158,6 +160,8 @@ a {
       li {
         width: fit-content;
       }
+
+      
     }
 
     .navbar-brand {

@@ -1,8 +1,8 @@
-<div class="col-md-12 display bg-priary py-2" id="site-header">
+<div class="col-md-12 display bg-primary py-2" id="site-header">
   <div class="container">
     <div class="contact-header">
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-9">
           <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
             <i [class]="contact?.class"></i>
             <span class="contact-links" *ngIf="contact?.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
@@ -11,13 +11,13 @@
           </span>
           
         </div>
-        <div class="col-md-3 ml-auto text-center">
+        <div class="col-md-2 ml-auto text-center">
           <a class="btn btn-primary mobile-btn" (click)="navigate('/pay-rent')"  >PAY RENT
           </a>
           
         </div>
           
-        <div class="col-md-2 ml-auto text-right">
+        <div class="col-md-1 ml-auto text-right">
           <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
             <a [href]="social?.path" target="_blank" rel="noreferrer">
               <i [class]="social?.class"></i>
@@ -34,6 +34,13 @@
     <a class="navbar-brand" (click)="navigate('/')">
       <img src="{{imageBaseUrl}}/logo.{{imagetype}}" width="auto" height="70px"  alt="text-based artwork that spells out In-N-Out Storage">
     </a>
+
+    <div class="ml-auto text-center" id="navbarSupportedContent">
+      <a class="btn btn-primary mobile-btn" (click)="navigate('/pay-rent')"  >PAY RENT
+      </a>
+      
+    </div>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
@@ -66,6 +73,7 @@
         </span>
         </li>
       </ul>
+      
     </div>
   </div>
 </nav>
