@@ -207,6 +207,16 @@ a {
 
   @media screen and (max-width: 460px) {
 
+    .btn-primary{
+      // margin-top: 30px;
+      // margin-bottom: 12px;
+      height: 30px;
+      color: $white!important;
+      background-color: $primary!important;
+      border-bottom: $primary!important;
+      border: $primary!important ;
+    }
+
     #site-header {
       position: relative;
       height: auto;
@@ -237,6 +247,9 @@ a {
     .nav-scroll {
       overflow-y: auto;
     }
+
+    
+
   }
   
 
