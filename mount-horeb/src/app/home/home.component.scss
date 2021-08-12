@@ -17,11 +17,11 @@
 }
 
 .jumbotron-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Mount_Horeb/webp/mount-horeb-self-storage-units%20169.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Mount_Horeb/webp/mount-horeb-self-storage-169.webp");
 }
 
 .jumbotron-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Mount_Horeb/jpg/mount-horeb-self-storage-units%20169.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Mount_Horeb/jpg/mount-horeb-self-storage-169.jpg");
 }
 
 .display-contact {
@@ -89,7 +89,9 @@ h1 {
 .disp {
   text-align: left;
   color: $white;
-
+  h1 {
+    font-weight: 600;
+  }
   h2 {
     font-size: 1.2rem;
     font-weight: 600;
@@ -123,7 +125,6 @@ h1 {
 //     margin-right: 10px;
 //   }
 // }
-
 
 @media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 640px) {
   .disp {
@@ -369,8 +370,6 @@ h1 {
   }
 }
 
-
-
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .jumbotorn-skew-style {
     width: 100%;
@@ -415,7 +414,6 @@ h1 {
     background-attachment: unset;
     background-position: center left;
     height: 100vh;
-    
 
     h1 {
       font-size: 2em;
@@ -426,7 +424,6 @@ h1 {
       display: flex;
     }
   }
-
 
   .feature {
     display: none;
@@ -631,7 +628,6 @@ h1 {
   }
 }
 
-
 @media only screen and (max-width: 600px) and (min-width: 468px) {
   .jumbotron {
     text-align: center;
@@ -712,7 +708,5 @@ h1 {
     .btn-primary {
       margin: 5px;
     }
-
-    
   }
 }

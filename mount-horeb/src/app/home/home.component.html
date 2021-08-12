@@ -5,6 +5,9 @@
         <div class="jumbotorn-skew-style" [ngClass]="template === 'darkTheme' ? 'bg-translucent-dark' : 'bg-translucent-light'">
           <div class="jumbotorn-skew-text container p-4">
             <div class="disp" *ngFor="let jumbotron of jumbotron">
+              <h1 class="my-4 text-center">
+                {{jumbotron.h1}}
+              </h1>
               <h2  class="my-4 text-center">
                 {{jumbotron.h2}}
               </h2>
@@ -82,7 +85,7 @@
     <div class="section py-5 m-0">
       <div class="row">
         <div class="col-lg-6 py-3">
-          <img src="{{imageBaseUrl}}/mount-horeb-self-storage -11.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
+          <img src="{{imageBaseUrl}}/mount-horeb-self-storage-11.{{imagetype}}" width="100%" alt="{{aboutUsAlt}}" class="sectionImage">
         </div>
         <div class="col-lg-6 py-3">
           <h1 class="heading pb-4">{{aboutUsHeading}}</h1>
