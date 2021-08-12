@@ -2,25 +2,25 @@ export const contactMainOffice = [
     {
         id: 1,
         label: 'Mailing Address: ',
-        data: '3609 32nd St SE, Kentwood, MI 49512',
+        data: 'P.O. Box 1032 Greenwood, MS 38935',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/Aey9AuYbspcu5HgC9'
+        redirect: ''
     },
     {
         id: 2,
         label: 'Email: ',
-        email: 'store@boxerstorage.com',
-        data: `store@boxerstorage.com`,
+        email: 'angiemax@yahoo.com',
+        data: `angiemax@yahoo.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:`angiemax@yahoo.com`'
     },
-    // {
-    //     id: 3,
-    //     label: 'Phone: ',
-    //     data: '(251) 970-3168',
-    //     class: 'fas fa-phone mr-2 iconColor',
-    //     redirect: 'tel:2519703168'
-    // },
+    {
+        id: 3,
+        label: 'Phone: ',
+        data: '(662) 453-3314',
+        class: 'fas fa-phone mr-2 iconColor',
+        redirect: 'tel:6624533314'
+    },
 ];
 
 export const hoursMainOffice = [

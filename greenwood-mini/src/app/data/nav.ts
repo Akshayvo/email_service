@@ -145,11 +145,11 @@ export const navLinks = [
         path: '/pay-rent',
         type: 'link'
     },
-    // {
-    //     label: 'Storage Tips',
-    //     path: `${environment.locationName}/storage-tips`,
-    //     type: 'link'
-    // },
+    {
+        label: 'Storage Tips',
+        path: `${environment.locationName}/storage-tips`,
+        type: 'link'
+    },
     {
         label: `FAQ's`,
         path: '/frequently-asked-questions',

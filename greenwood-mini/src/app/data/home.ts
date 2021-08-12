@@ -1,24 +1,24 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
+        label: 'Conveniently Located',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+        alt: 'Icon art displaying a location pin'
+    },
+    {
         label: 'Online Reservation & Bill Pay',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
         alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
-    },
-    {
-        label: 'Locally Owned and Operated',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
-        alt: 'Icon of people standing together '
-    },
-    {
-        label: 'Friendly Customer Service',
+        label: 'Stellar Customer Service',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Icon of a customer service agent'
+        alt: 'Customer Service Representative Icon'
+    },
+    {
+        label: 'Climate Controlled',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg',
+        alt: 'Icon of thermometer indicating climate-controlled units'
     },
 ];
 
@@ -519,19 +519,19 @@ export const location12FeaturesHead = [
     },
 ];
 
-export const aboutusHeading = `Conveniently Located Self Storage Facilities in West Michigan`;
+export const aboutusHeading = `Affordable Self Storage Units in Greenwood, MS`;
 
 export const aboutusALt = `blue metal self storage unit doors in a row`;
 
 export const serviceOffered = [
     {
-        p: `We proudly serve western Michigan with the most convenient Self Storage options in the area. From drive-up access to indoor climate-controlled units to boat and RV storage, we have a solution for your self-storage needs.`,
+        p: `Greenwood Mini-Storage offers 3 convenient self storage facilities serving the beautiful city of Greenwood, Mississippi. Our clean and well-maintained self storage facilities offer a number of storage unit sizes in both unconditioned and climate-controlled types to cover all of your storage space needs whether it’s a move, renovation, or seasonal storage! You won’t have to drive to the outskirts of town to access your units with Greenwood Mini Storage. Each of our locations is inside the city limits making them a stone’s throw from residential neighborhoods and local businesses.`,
     },
     {
-        p: `With Easy Online Rental and Payments, whether you need to store all the furniture in your home while you move into a new house, or you just need to clear out a little extra room in your garage or basement, we have the space that you’ve been looking for.`,
+        p: `Our access hours at each location are 7:00AM to 7:00PM 7 days a week, giving our business and residential customers ample opportunity to access their units through our pin-code activated gate system. The full-time on-site management team is here to keep an eye on the facilities with regular inspections and help make your stay with Greenwood Mini-Storage a convenient one. `,
     },
     {
-        p: `Your convenience is our priority – Please contact the location nearest you today. Our friendly and knowledgeable team is eager to assist you.`,
+        p: `Ready to start storing today? Take advantage of our online tenant portal by reviewing our rates and renting you new storage unit in a matter of minutes. Fill out the application online, pay your first month’s charges, and our system will email you a lease agreement that just requires your signature. Once you’ve signed, we’ll send you the gate code, and you can move into your new unit at your leisure! Still have questions? Call our friendly management team at (662) 453-3314! We look forward to making your next storage project an easy and affordable one.`,
     },
 ];
 
@@ -563,7 +563,7 @@ export const featuresList = [
 
 export const jumbotron = [
     {
-        h2: ``,
-        blurb: ``,
+        h2: `Affordable Climate Controlled & Regular Self Storage Units in Greenwood, MS`,
+        blurb: `Paragraph text: Greenwood Mini-Storage offers 3 convenient self storage facilities in Greenwood Mississippi that are ideal solutions to your storage space needs. Take a moment to review the rates and availability at each of our well-lit, fully-fenced locations, then rent your unit online in minutes with our easy tenant portal! We look forward to making your next storage project easy and affordable!`,
     }
 ];
