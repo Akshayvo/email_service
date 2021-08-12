@@ -141,7 +141,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   }
 
   receiveMessage() {
-    if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
+    if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
       this.locationId = 1;
       this.locationReserve = "location1reserve";
       this.locationMovein = "location1movein";

@@ -29,7 +29,7 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
+    if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
       this.fetchDetailsLocation1();
   } 
      else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {

@@ -7,9 +7,7 @@ import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
 import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6,contactsLocation7,contactsLocation8,contactsLocation9,contactsLocation10,contactsLocation11,contactsLocation12 } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3,ogPayRentPageLocation4,ogPayRentPageLocation5,ogPayRentPageLocation6,ogPayRentPageLocation7,ogPayRentPageLocation8,
-  ogPayRentPageLocation9,ogPayRentPageLocation10,ogPayRentPageLocation11,ogPayRentPageLocation12,
-   twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3,twitterPayRentPageLocation4,twitterPayRentPageLocation5,twitterPayRentPageLocation6,twitterPayRentPageLocation7,twitterPayRentPageLocation8,twitterPayRentPageLocation9,twitterPayRentPageLocation10,twitterPayRentPageLocation11,twitterPayRentPageLocation12  } from '../../data/script';
+import { ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3, twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3, } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -131,7 +129,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   public fetchContactDetail() {
     console.log(this.router.url)
-    if (this.router.url.includes('evanston-ave')) {
+    if (this.router.url.includes('rebel-mini')) {
       this.id = 1;
       this.name = 'Boxer Storage - Evanston Ave  Location';
       this.contact = contactsLocation1;
@@ -153,70 +151,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
-    }
-     else if (this.router.url.includes('alpine')) {
-      this.id = 4;
-      this.name = 'Boxer Storage - Alpine Location';
-      this.contact = contactsLocation4;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
-    }
-    else if (this.router.url.includes('red-barn')) {
-      this.id = 5;
-      this.name = 'Boxer Storage - Red Barn Location';
-      this.contact = contactsLocation5;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
-    }
-    else if (this.router.url.includes('wayland-westside')) {
-      this.id = 6;
-      this.name = 'Boxer Storage - Wayland Westside Location';
-      this.contact = contactsLocation6;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc6);
-    }
-    else if (this.router.url.includes('wayland-mill')) {
-      this.id = 7;
-      this.name = 'Boxer Storage - Wayland Mill Street Location';
-      this.contact = contactsLocation7;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc7;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc7);
-    }
-    else if (this.router.url.includes('wayland-southside')) {
-      this.id = 8;
-      this.name = 'Boxer Storage - Wayland Southside Location';
-      this.contact = contactsLocation8;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc8;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc8);
-    }
-    else if (this.router.url.includes('dutton')) {
-      this.id = 9;
-      this.name = 'Boxer Storage - Dutton Location';
-      this.contact = contactsLocation9;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc9;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc9);
-    }
-    else if (this.router.url.includes('m45')) {
-      this.id = 10;
-      this.name = 'Boxer Storage - M-45 Location';
-      this.contact = contactsLocation10;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc10;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc10);
-    }
-    else if (this.router.url.includes('otsego')) {
-      this.id = 11;
-      this.name = 'Boxer Storage - Otsego Location';
-      this.contact = contactsLocation11;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc11;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc11);
-    }
-    else if (this.router.url.includes('allendale')) {
-      this.id = 12;
-      this.name = 'Boxer Storage - Allendale Location';
-      this.contact = contactsLocation12;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc12;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc12);
-    }
+    }    
   }
 
   public navigate (location: any) {
@@ -228,7 +163,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('evanston-ave')) {
+    if (this.router.url.includes('rebel-mini')) {
       this.og = ogPayRentPageLocation1;
     }
     else if (this.router.url.includes('howard-city')) {
@@ -236,38 +171,11 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
     else if (this.router.url.includes('ionia')) {
       this.og = ogPayRentPageLocation3;
-    }
-    else if (this.router.url.includes('alpine')) {
-      this.og = ogPayRentPageLocation4;
-    }
-     else  if (this.router.url.includes('red-barn')) {
-      this.og = ogPayRentPageLocation5;
-    } else if (this.router.url.includes('wayland-westside')) {
-      this.og = ogPayRentPageLocation6;
-    } else if (this.router.url.includes('wayland-mill')) {
-      this.og = ogPayRentPageLocation7;
-    } else if (this.router.url.includes('wayland-southside')) {
-      this.og = ogPayRentPageLocation8;
-    } 
-    else if (this.router.url.includes('dutton')) {
-      this.og = ogPayRentPageLocation9;
-    } 
-    else if (this.router.url.includes('m45')) {
-      this.og = ogPayRentPageLocation10;
-    } 
-    else if (this.router.url.includes('otsego')) {
-      this.og = ogPayRentPageLocation11;
-    } 
-    else if (this.router.url.includes('allendale')) {
-      this.og = ogPayRentPageLocation12;
-    } 
-    // else if (this.router.url.includes('robertsdale')) {
-    //   this.og = ogPayRentPageLocation6;
-    // }
+    }   
     }
 
 public fetchTwitter() {
-  if (this.router.url.includes('evanston-ave')) {
+  if (this.router.url.includes('rebel-mini')) {
     this.twitter = twitterPayRentPageLocation1;
   }
   else if (this.router.url.includes('howard-city')) {
@@ -276,33 +184,6 @@ public fetchTwitter() {
   else if (this.router.url.includes('ionia')) {
     this.twitter = twitterPayRentPageLocation3;
   }
-  else if (this.router.url.includes('alpine')) {
-    this.twitter = twitterPayRentPageLocation4;
-  }
-   else if (this.router.url.includes('red-barn')) {
-      this.twitter = twitterPayRentPageLocation5;
-  } else if (this.router.url.includes('wayland-westside')) {
-        this.twitter = twitterPayRentPageLocation6;
-  } else if (this.router.url.includes('wayland-mill')) {
-        this.twitter = twitterPayRentPageLocation7;
-  } else if (this.router.url.includes('wayland-southside')) {
-    this.twitter = twitterPayRentPageLocation8;
-  } 
-  else if (this.router.url.includes('dutton')) {
-    this.twitter = twitterPayRentPageLocation9;
-  } 
-  else if (this.router.url.includes('m45')) {
-    this.twitter = twitterPayRentPageLocation10;
-  } 
-  else if (this.router.url.includes('otsego')) {
-    this.twitter = twitterPayRentPageLocation11;
-  } 
-  else if (this.router.url.includes('allendale')) {
-    this.twitter = twitterPayRentPageLocation12;
-  } 
-  // else if (this.router.url.includes('robertsdale')) {
-  //   this.twitter = twitterPayRentPageLocation6;
-  // }
 }
 
   handleForgotPassword() {

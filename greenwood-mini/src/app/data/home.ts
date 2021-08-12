@@ -24,9 +24,9 @@ export const featuresHead = [
 
 export const location1FeaturesHead = [
     {
-        label: '24 Hour Facility Access',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg',
-        alt: 'Icon art displaying clock hands and the number 24'
+        label: 'Conveniently Located',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+        alt: 'Icon art displaying a location pin'
     },
     {
         label: 'Online Reservation & Bill Pay',
@@ -34,14 +34,14 @@ export const location1FeaturesHead = [
         alt: 'Icon art displaying a screen with cursor'
     },
     {
-        label: 'Locally Owned and Operated',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/team.svg',
-        alt: 'Icon of people standing together '
+        label: 'Stellar Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Service Representative Icon'
     },
     {
-        label: 'Friendly Customer Service',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Icon of a customer service agent'
+        label: 'Climate Controlled',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg',
+        alt: 'Icon of thermometer indicating climate-controlled units'
     },
 ];
 export const location2FeaturesHead = [

@@ -68,6 +68,17 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   alternateCity: string;
   alternateState: string;
   alternateZIP: string;
+  showMilitaryDetails:any;
+  driversLicense:any;
+  driversLicenseExpDate:any;
+  dateOfBirth:any;
+  // militaryType:any;
+  // militaryBranch:any;
+  // militaryID:any;
+  // deployedUntil:any;
+  // militaryDivision:any;
+  // commandingOfficer:any;
+  // commandingOfficerPhone:any;
   
   reservationFee: number;
   reservationFeeTax: number;
@@ -185,6 +196,18 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.showAltDetails = this.dataSharingService.showAltDetails;
 
     this.myNavLinks = this.dataSharingService.getMyNavLinks('confirmationData');
+    this.showMilitaryDetails = this.dataSharingService.showMilitaryDetails;
+    this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
+  this.driversLicenseExpDate = this.dataSharingService.objTenant.DriversLicenseExpDate;
+  this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
+  // this.militaryType = this.dataSharingService.objTenant.MilitaryType;
+  // this.militaryBranch = this.dataSharingService.objTenant.MilitaryBranch;
+  // this.militaryID = this.dataSharingService.objTenant.MilitaryID;
+  // this.deployedUntil = this.dataSharingService.objTenant.DeployedUntil;
+  // this.militaryDivision = this.dataSharingService.objTenant.MilitaryDivision;
+  // this.commandingOfficer = this.dataSharingService.objTenant.CommandingOfficer;
+  // this.commandingOfficerPhone = this.dataSharingService.objTenant.CommandingOfficerPhone;
+
 
     // if (this.dataSharingService.facilityLocation) {
     //   this.facilityLocation = this.dataSharingService.facilityLocation;

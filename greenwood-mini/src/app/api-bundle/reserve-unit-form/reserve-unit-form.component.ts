@@ -4,8 +4,8 @@ import { FetchDataService } from '../services/fetch-data.service';
 import { UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods, LstInsuranceChoices } from '../models/unittypes';
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router, ActivatedRoute } from '@angular/router';
-import { option, option1 } from '../../data/view-rates';
 import { DatePipe } from '@angular/common';
+import { MilitaryBranch, MilitaryTypes, option, option1 } from '../../data/view-rates';
 import { TenantInfoService } from '../services/tenant-info.service';
 import { LeadDaysService } from '../services/lead-days.service';
 import { Subscription } from 'rxjs';
@@ -139,6 +139,12 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   showPrevious = false;
   showAltDetails = false;
+  militaryTypes = [];
+  militaryBranch = [];
+  MilitaryBranch: number;
+  MilitaryTypes: number;
+
+  showMilitaryDetails = false;
 
 
   private getLeadDaysSubscribe$: Subscription;
@@ -178,6 +184,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.dataSharingService.navigateToReserve = false;
         this.showAltDetails = (environment.alternateType.moveIn === true) ? true : false;
         this.dataSharingService.showAltDetails = this.showAltDetails;
+        this.showMilitaryDetails = (environment.military === true) ? true : false;
+        this.dataSharingService.showMilitaryDetails = this.showMilitaryDetails;
       }
     }
 
@@ -197,6 +205,46 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
+        DriversLicense: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DriversLicenseExpDate: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DateOfBirth: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        // MilitaryBranch: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryDivision: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryType: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryID: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // DeployedUntil: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // CommandingOfficer: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // CommandingOfficerPhone: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // ),],
         AlternateName:  ['',  conditionalValidator(
           (() => this.showAltDetails === false),
           Validators.required
@@ -302,6 +350,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.description  = this.dataSharingService.getReservationData().Description;
     this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
+    this.fetchMilitaryBranch();
+    this.fetchMilitaryTypes();
     this.dataSharingService.initMyNavLinks('reservationForm', window.location.pathname);
     this.myNavLinks = this.dataSharingService.getMyNavLinks('reservationForm');
     this.getData();
@@ -350,6 +400,14 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   public fetchUSState() {
     this.option = option;
     this.option1 = option1;
+  }
+
+  public fetchMilitaryTypes() {
+    this.militaryTypes = MilitaryTypes;
+  }
+
+  public fetchMilitaryBranch() {
+    this.militaryBranch = MilitaryBranch;
   }
 
   public navigate(location: any) {
@@ -494,6 +552,16 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
+            DriversLicense: Tenant.DriversLicense,
+            DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+            DateOfBirth: Tenant.DateOfBirth,
+            // MilitaryType: Tenant.militaryType,
+            // MilitaryBranch: Tenant.militaryBranch,
+            // MilitaryID: Tenant.MilitaryID,
+            // DeployedUntil: Tenant.DeployedUntil,
+            // MilitaryDivision: Tenant.MilitaryDivision,
+            // CommandingOfficer: Tenant.CommandingOfficer,
+            // CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
           };
           this.reserveUnitForm.patchValue({
             objTenant: ({
@@ -506,6 +574,16 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
+              DriversLicense: Tenant.DriversLicense,
+              DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+              DateOfBirth: Tenant.DateOfBirth,
+              // MilitaryType: Tenant.militaryType,
+              // MilitaryBranch: Tenant.militaryBranch,
+              // MilitaryID: Tenant.MilitaryID,
+              // DeployedUntil: Tenant.DeployedUntil,
+              // MilitaryDivision: Tenant.MilitaryDivision,
+              // CommandingOfficer: Tenant.CommandingOfficer,
+              // CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
             }),
           });
 

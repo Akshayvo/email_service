@@ -55,24 +55,24 @@ export const contactsLocation1 = [
     {
         id: 4,
         label: 'Phone: ',
-        data: '(231) 652-7853',
+        data: '(662) 453-3314',
         class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:2316527853'
+        redirect: 'tel:6624533314'
     },
     {
         id: 1,
         label: 'Address: ',
-        data: '4300 Evanston Ave, Muskegon, MI 49442',
+        data: '704 Tallahatchie St, Greenwood, MS 38930',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/Aey9AuYbspcu5HgC9'
+        redirect: 'https://goo.gl/maps/p5ZYDnwqJyKjdigf8'
     },
     {
         id: 3,
         label: 'Email: ',
-        email: 'store@boxerstorage.com',
-        data: `store@boxerstorage.com`,
+        email: 'angiemax@yahoo.com',
+        data: `angiemax@yahoo.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:`angiemax@yahoo.com`'
     },
     {
         id: 2,
@@ -86,22 +86,18 @@ export const contactsLocation1 = [
 export const hoursLocation1 = [
     {
         label: 'Monday - Friday: ',
-        data: '9:00AM to 6:00PM',
-    },
+        data: '9:00AM to 5:00PM',
+    },    
     {
-        label: 'Saturday: ',
-        data: '9:00AM to 2:00PM',
+        label: 'Saturday - Sunday: ',
+        data: 'CLOSED',
     },
-    // {
-    //     label: 'Sunday: ',
-    //     data: 'CLOSED',
-    // },
 ];
 
 export const accessHoursLocation1 = [
     {
         // label: 'Access Hour ',
-        data: '24 Hours a Day 7 Days a Week',
+        data: '7:00AM to 7:00PM 7 Days a Week',
     },
 ];
 

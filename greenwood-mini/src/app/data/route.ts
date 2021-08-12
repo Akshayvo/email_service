@@ -103,7 +103,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: `${environment.locationName}/evanston-ave`,
+    { path: `${environment.locationName}/rebel-mini`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -540,7 +540,7 @@ resolve: { data: AppResolver }
 
 
 
-    { path: `${environment.locationName}/evanston-ave/view-rates`,
+    { path: `${environment.locationName}/rebel-mini/view-rates`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -972,7 +972,7 @@ children: [
 resolve: { data: AppResolver }
 },
 
-    { path: 'review/evanston-ave', component: HomeComponent,
+    { path: 'review/rebel-mini', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -1047,7 +1047,7 @@ resolve: { data: AppResolver }
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/evanston-ave', component: PayRentComponent,
+    path: 'pay-rent/rebel-mini', component: PayRentComponent,
     children: childroute
   },
    {
@@ -1097,7 +1097,7 @@ resolve: { data: AppResolver }
 
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-evanston-ave', component: ContactUsComponent},
+  { path: 'contact-rebel-mini', component: ContactUsComponent},
   { path: 'contact-howard-city', component: ContactUsComponent},
   { path: 'contact-ionia', component: ContactUsComponent},
   { path: 'contact-alpine', component: ContactUsComponent},
@@ -1118,7 +1118,7 @@ resolve: { data: AppResolver }
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: 'location/evanston-ave',
+  { path: 'location/rebel-mini',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -1184,7 +1184,7 @@ export const iFrameRoutes = [
   //     { path: 'directions', component: DirectionsComponent },
   //   ]
   // },
-  { path: 'review/evanston-ave', component: HomeComponent,
+  { path: 'review/rebel-mini', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -1234,7 +1234,7 @@ export const iFrameRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-evanston-ave', component: PayRentFloridaComponent },
+  { path: 'pay-rent-rebel-mini', component: PayRentFloridaComponent },
   { path: 'pay-rent-silverhill', component: PayRentChesterComponent},
   { path: 'pay-rent-barnwell', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},

@@ -10,9 +10,9 @@ import { contactsLocation1, hoursLocation1, accessHoursLocation1,accessHoursLoca
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, contactPageLocation2Script,contactPageLocation3Script,contactPageLocation4Script,contactPageLocation5Script,contactPageLocation6Script,contactPageLocation7Script,contactPageLocation8Script, contactPageLocation9Script,contactPageLocation10Script,contactPageLocation11Script,contactPageLocation12Script,
-  ogContactPage, ogContactPageLocation1, ogContactPageLocation2,ogContactPageLocation3,ogContactPageLocation4,ogContactPageLocation5,ogContactPageLocation6,ogContactPageLocation7,ogContactPageLocation8,ogContactPageLocation9,ogContactPageLocation10,ogContactPageLocation11,ogContactPageLocation12,
-  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2,twitterContactPageLocation3,twitterContactPageLocation4,twitterContactPageLocation5,twitterContactPageLocation6,twitterContactPageLocation7,twitterContactPageLocation8,twitterContactPageLocation9,twitterContactPageLocation10,twitterContactPageLocation11,twitterContactPageLocation12 } from '../data/script';
+import { contactPageLocation1Script, contactPageLocation2Script,contactPageLocation3Script,
+  ogContactPage, ogContactPageLocation1, ogContactPageLocation2,ogContactPageLocation3,
+  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2,twitterContactPageLocation3, } from '../data/script';
 import { CanonicalService } from '../services/canonical.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
 import { environment } from '../../environments/environment';
@@ -101,7 +101,7 @@ export class ContactUsComponent implements OnInit {
   get f() { return this.contactForm.controls; }
 
   public fetchScript() {
-      if (this.router.url.includes(`${environment.locationName}/evanston-ave`)) {
+      if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
     this.script = contactPageLocation1Script;
       }
       else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {
@@ -109,40 +109,11 @@ export class ContactUsComponent implements OnInit {
       }
       else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
     this.script = contactPageLocation3Script;
-      }
-      else if (this.router.url.includes(`${environment.locationName}/alpine`)) {
-    this.script = contactPageLocation4Script;
-      }
-      else if (this.router.url.includes(`${environment.locationName}/red-barn`)) {
-        this.script = contactPageLocation5Script;
-          }
-      else if (this.router.url.includes(`${environment.locationName}/wayland-westside`)) {
-        this.script = contactPageLocation6Script;
-          }
-      else if (this.router.url.includes(`${environment.locationName}/wayland-mill`)) {
-        this.script = contactPageLocation7Script;
-          }
-
-      else if (this.router.url.includes(`${environment.locationName}/wayland-southside`)) {
-        this.script = contactPageLocation8Script;
-          }
-
-      else if (this.router.url.includes(`${environment.locationName}/dutton`)) {
-        this.script = contactPageLocation9Script;
-          }
-      else if (this.router.url.includes(`${environment.locationName}/m45`)) {
-        this.script = contactPageLocation10Script;
-          }
-      else if (this.router.url.includes(`${environment.locationName}/otsego`)) {
-        this.script = contactPageLocation11Script;
-          }
-          else if (this.router.url.includes(`${environment.locationName}/allendale`)) {
-            this.script = contactPageLocation12Script;
-              }
+      }      
   }
 
   public fetchOg() {
-    if (this.router.url.includes('evanston-ave')) {
+    if (this.router.url.includes('rebel-mini')) {
       this.og = ogContactPageLocation1;
     } 
     else if (this.router.url.includes('howard-city')) {
@@ -151,33 +122,6 @@ export class ContactUsComponent implements OnInit {
     else if (this.router.url.includes('ionia')) {
       this.og = ogContactPageLocation3;
     } 
-    else if (this.router.url.includes('alpine')) {
-      this.og = ogContactPageLocation4;
-    } 
-    else if (this.router.url.includes('red-barn')) {
-      this.og = ogContactPageLocation5;
-    } else if (this.router.url.includes('wayland-westside')) {
-      this.og = ogContactPageLocation6;
-    } else if (this.router.url.includes('wayland-mill')) {
-      this.og = ogContactPageLocation7;
-    } else if (this.router.url.includes('wayland-southside')) {
-      this.og = ogContactPageLocation8;
-    }
-    else if (this.router.url.includes('dutton')) {
-      this.og = ogContactPageLocation9;
-    } 
-    else if (this.router.url.includes('m45')) {
-      this.og = ogContactPageLocation10;
-    } 
-    else if (this.router.url.includes('otsego')) {
-      this.og = ogContactPageLocation11;
-    } 
-    else if (this.router.url.includes('allendale')) {
-      this.og = ogContactPageLocation12;
-    }
-    // else if (this.router.url.includes('robertsdale')) {
-    //   this.og = ogContactPageLocation6;
-    // }
 }
 
 public fetchMetaData() {
@@ -186,7 +130,7 @@ public fetchMetaData() {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('evanston-ave')) {
+  if (this.router.url.includes('rebel-mini')) {
     this.twitter = twitterContactPageLocation1;
   }
   else if (this.router.url.includes('howard-city')) {
@@ -195,33 +139,6 @@ public fetchTwitter() {
    else if (this.router.url.includes('ionia')) {
     this.twitter = twitterContactPageLocation3;
   }
-  else if (this.router.url.includes('alpine')) {
-    this.twitter = twitterContactPageLocation4;
-  }
-   else if (this.router.url.includes('red-barn')) {
-    this.twitter = twitterContactPageLocation5;
-  } else if (this.router.url.includes('wayland-westside')) {
-    this.twitter = twitterContactPageLocation6;
-  } else if (this.router.url.includes('wayland-mill')) {
-    this.twitter = twitterContactPageLocation7;
-  } else if (this.router.url.includes('wayland-southside')) {
-    this.twitter = twitterContactPageLocation8;
-  }
-  else if (this.router.url.includes('dutton')) {
-    this.twitter = twitterContactPageLocation9;
-  }
-  else if (this.router.url.includes('m45')) {
-    this.twitter = twitterContactPageLocation10;
-  }
-  else if (this.router.url.includes('otsego')) {
-    this.twitter = twitterContactPageLocation11;
-  }
-  else if (this.router.url.includes('allendale')) {
-    this.twitter = twitterContactPageLocation12;
-  }
-//  else if (this.router.url.includes('robertsdale')) {
-  //   this.twitter = twitterContactPageLocation6;
-  // }
 }
 
   public loadScript() {
@@ -256,7 +173,7 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('evanston-ave')) {
+    if (this.router.url.includes('rebel-mini')) {
       this.fetchContactDetailsLocation1();
     }
     else if (this.router.url.includes('howard-city')) {

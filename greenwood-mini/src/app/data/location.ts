@@ -315,7 +315,7 @@ export const headingReservePageLocation7 = `Ready to reserve your self storage u
 
 export const headingReservePageLocation8 = `Ready to reserve your self storage unit at our Wayland Southside location?`;
 
-export const heading1 = `Boxer Storage - Evanston Ave Location`;
+export const heading1 = `Boxer Storage - Rebel Mini Storage`;
 
 export const heading2 = `Boxer Storage - Howard City Location`;
 

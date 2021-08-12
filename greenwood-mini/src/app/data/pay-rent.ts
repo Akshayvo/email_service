@@ -13,9 +13,9 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: ' Evanston Ave Location',
+    facility: ' Rebel Mini Storage',
     address: '4300 Evanston Ave, Muskegon, MI 49442',
-    url: 'evanston-ave/rent-sub/login'
+    url: 'rebel-mini/rent-sub/login'
   },  
   {
     facility: ' Howard City Location',
@@ -76,9 +76,9 @@ export const tableData = [
 
 export const tableDataContactPage = [
   {
-    facility: ' Evanston Ave Location',
+    facility: ' Rebel Mini Storage',
     address: '4300 Evanston Ave, Muskegon, MI 49442',
-    url: 'evanston-ave'
+    url: 'rebel-mini'
   },
     {
     facility: ' Howard City Location',
@@ -141,11 +141,11 @@ export const tableDataContactPage = [
 export const loginDetail = [
   {
       userName: `Tenant's First Initial + Last Name`,
-      password: `Tenant's Full Phone Number (Only the Digits)`,
+      password: `Tenant's Gate Access Code`,
       example: {
-          code: `John Smith's Phone Number is 555-555-5555`,
+          code: `John Smith's Gate Access Code is 12345`,
           userName: 'jsmith',
-          password: '5555555555'
+          password: '12345'
       }
   }
 ];
