@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '2301 Holton Whitehall Rd, Whitehall, MI 49461',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: 'https://goo.gl/maps/NYYvkeDz3sRmqzfN9'
+        redirect: 'https://goo.gl/maps/agKaNgWHvPsK6Tch6'
     },
     {
         id: 1,

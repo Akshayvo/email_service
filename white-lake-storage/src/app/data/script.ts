@@ -30,7 +30,7 @@ export const script = {               // Please fill this script according to fa
       "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/White_Lake_Storage/jpg/white-lake-storage-169.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
-     map: "https://goo.gl/maps/NYYvkeDz3sRmqzfN9",
+     map: "https://goo.gl/maps/agKaNgWHvPsK6Tch6",
      description: "White Lake Storage is Whitehall's newest self storage facility. Our well-lit facility offers a wide variety of self storage unit sizes to accommodate all of your self storage needs!",
      streetAddress: "2301 Holton Whitehall Rd",
      state: "Michigan",
