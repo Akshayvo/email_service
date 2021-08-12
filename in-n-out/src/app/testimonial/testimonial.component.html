@@ -1,3 +1,20 @@
-<p>
-  testimonial works!
-</p>
+<div class="testimonial-holder">
+  <div class="container">
+    <div class="heading">
+      <h1 class="text-center pt-5">Testimonials</h1>
+    </div>
+    <div class="testimonial-content mt-5">
+      <div class="row">
+         
+            <div class="col-md-12 text-center" *ngFor="let testimonial of carouselData">
+              <p>{{testimonial.p}}</p>
+              <p>{{testimonial.author}}</p>
+            </div>
+        
+         
+        
+      </div>
+    </div>
+  </div>
+</div>
+

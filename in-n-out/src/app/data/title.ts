@@ -37,6 +37,12 @@ export const trailerInfoContent = `Take advantage of our decades of self storage
 export const auctionTitle = `Auctions | In-N-Out Storage`;
 export const auctionContent = `Take a look at our upcoming auction schedule. If you have any questions, give us a call!`;
 
+export const testimonialTitle = `Testimonials | In-N-Out Storage`;
+export const testimonialContent = `See what others in your community are saying about the customer service at In-N-Out Storage!`;
+
+export const specialsTitle = `Testimonials | In-N-Out Storage`;
+export const specialsContent = `See what others in your community are saying about the customer service at In-N-Out Storage!`;
+
 export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
 

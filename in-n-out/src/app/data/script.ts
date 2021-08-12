@@ -1,7 +1,7 @@
 import { environment } from '../../environments/environment';
 import { homePageContent, homePageTitle, payRentPageContent,
   payRentPageTitle, storageTipsContent, storageTipsTitle,trailerInfoTitle,trailerInfoContent,
-contactPageContent, contactPageTitle,auctionTitle,auctionContent,
+contactPageContent, contactPageTitle,auctionTitle,auctionContent, testimonialContent,testimonialTitle,specialsTitle,specialsContent,
 location1PageContent, location2PageTitle,
 location2PageContent, location1PageTitle,
 location3PageContent, location3PageTitle,
@@ -1568,6 +1568,114 @@ export const twitterAuctionPage = [
   {
     name: `twitter:description`,
     content: auctionContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation1[0]
+  },
+];
+
+export const ogSpecialsPage = [
+  {
+    property: `og:title`,
+    content: specialsTitle
+  },
+  {
+    property: `og:description`,
+    content: specialsContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/specials`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation1[1]
+  },
+];
+
+export const twitterSpecialsPage = [
+  {
+    name: `twitter:title`,
+    content: `@${specialsTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content: specialsContent
+  },
+  {
+    name: `twitter:site`,
+    content: `@${environment.facilityName}`
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`
+  },
+  {
+    name: `twitter:creator`,
+    content: `@syrasoft_connect`
+  },
+  {
+    name: `twitter:image`,
+    content: imageLocation1[0]
+  },
+];
+
+export const ogTestimonialPage = [
+  {
+    property: `og:title`,
+    content: testimonialTitle
+  },
+  {
+    property: `og:description`,
+    content:  testimonialContent
+  },
+  {
+    property: `og:type`,
+    content: `website`
+  },
+  {
+    property: `og:site_name`,
+    content: environment.facilityName
+  },
+  {
+    property: `og:url`,
+    content: `${environment.websiteUrl}/testimonials`
+  },
+  {
+    property: `og:image`,
+    content: imageLocation1[1]
+  },
+];
+
+export const twitterTestimonialPage = [
+  {
+    name: `twitter:title`,
+    content: `@${testimonialTitle}`
+  },
+  {
+    name: `twitter:description`,
+    content:  testimonialContent
   },
   {
     name: `twitter:site`,
