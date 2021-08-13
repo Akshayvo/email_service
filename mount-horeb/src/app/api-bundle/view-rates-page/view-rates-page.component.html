@@ -9,7 +9,7 @@
   </div>
   <div [class.loader]="showLoader" class="loader-position"> 
   </div>
-  <div [class.display]="!showTable"> 
+  <div [class.display]="!showTable"  *ngIf="regularLstUnitTypes?.length > 0"> 
     <h2 class="mt-4 mb-2 ">Regular Units</h2>
     <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
       <tHead [class.display]="!showTable">
@@ -99,7 +99,7 @@
       </div>
     </div>
   </div>
-  <div [class.display]="!showTable">
+  <div [class.display]="!showTable" *ngIf="TemperatureLstUnitTypes?.length > 0">
     <h2 class="mt-4 mb-2 ">Climate Controlled</h2>
     <table  class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
       <tHead [class.display]="!showTable">
@@ -190,7 +190,7 @@
     </div>
   </div>
 
-  <div [class.display]="!showTable">
+  <div [class.display]="!showTable" *ngIf="OverSizedLstUnitTypes?.length > 0">
     <h2 class="mt-4 mb-2 ">Oversized Units</h2>
     <table class="viewrates-desktop" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
       <tHead [class.display]="!showTable">

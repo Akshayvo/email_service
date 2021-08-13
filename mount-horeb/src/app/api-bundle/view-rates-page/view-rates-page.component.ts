@@ -168,12 +168,10 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
           (x) => x.IsClimateControlled === true
         );
         this.OverSizedLstUnitTypes = this.LstUnitTypes.filter(
-          (x) => x.Description === "Outdoor/Parking" //Test Oversized Unit
+          (x) => x.IsOutdoor === true //"Outdoor/Parking"
         );
         this.regularLstUnitTypes = this.LstUnitTypes.filter(
-          (x) =>
-            x.IsClimateControlled !== true &&
-            x.Description !== "Outdoor/Parking" //Test Oversized Unit
+          (x) => x.IsClimateControlled !== true && x.IsOutdoor !== true //"Outdoor/Parking"
         );
       });
   }
