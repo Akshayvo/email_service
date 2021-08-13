@@ -137,6 +137,36 @@ export const th = [
   //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
   // },
 ];
+export const thoversized = [
+  {
+    data: `Size`,
+    state: true,
+  },
+  {
+    data: `Rate`,
+    state: objSIMSetting.objUnitSizesSetting.blnShowRate,
+  },
+  // {
+  //   data: 'deposit',
+  //   state: objSIMSetting.objUnitSizesSetting.blnShowDeposit
+  // },
+  {
+    data: `Reserve a Unit`,
+    state: objSIMSetting.objActionSetting.blnAllowReservation,
+  },
+  // {
+  //   data: `Contact Us`,
+  //   state: objSIMSetting.objActionSetting.blnAllowReservation
+  // },
+  // {
+  //   data: `Move In`,
+  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn,
+  // },
+  // {
+  //   data: `Climate Control`,
+  //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
+  // },
+];
 export const th1 = [
   {
     data: `Size`,
