@@ -71,13 +71,13 @@ p{
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .storage-tip-holder {
-    padding-top: 160px;
+    padding-top: 150px;
   }
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .storage-tip-holder {
-    padding-top: 134px;
+    padding-top: 60px;
     .storage-content {
       min-height: 760px;
     }
@@ -86,16 +86,31 @@ p{
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .storage-tip-holder {
-    padding-top: 174px;
+    padding-top: 60px;
     .storage-content {
       min-height: 940px;
     }
+  }
+  .contact-info{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .contact-info > div{
+    
+    flex: 50%;
+    
+  }
+
+  .contact{
+    padding-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .storage-tip-holder {
-    padding-top: 115px;
+    padding-top: 60px;
     .storage-content {
       padding: 16px;
       min-height: 800px;
@@ -103,13 +118,17 @@ p{
   }
 
   .contact-info{
-    display: block;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .contact-info > div{
+    
+    flex: 50%;
     
   }
 
-  .contact{
-    padding-bottom: 20px;
-  }
 
 }
 

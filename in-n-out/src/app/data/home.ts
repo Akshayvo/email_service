@@ -230,5 +230,5 @@ export const storagePoints = [
     { data: 'Well lit parking area with video camera surveillance .' },
     { data: 'Pull-through parking stalls available' },
     { data: 'Over 60 open spots are available!.' },
-    { data: 'Wide main entrance – 65-foot wide entrance.' },
+    // { data: 'Wide main entrance – 65-foot wide entrance.' },
 ];

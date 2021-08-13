@@ -95,7 +95,7 @@
 .banner{
   background-color: orange;
   color: white;
-  height: 100px;
+  // height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -796,11 +796,27 @@
     height: 150px;
   }
 
-  
-
   .image-container{
-display: block;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
   }
+  .image-container > div{
+    
+    flex: 50%;
+    
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+
+  h1{
+    font-size: 1.4rem;
+  }
+
+  
   // .jumbotorn-skew-style {
   //   transform: skew(0deg);
   //   width: 100%;
