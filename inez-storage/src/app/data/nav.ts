@@ -21,11 +21,11 @@ export const navLinks = [
               },
         ]
     },
-    {
-        label: 'Camper Rentals',
-        path: 'https://southtexasrvrentals.com/',
-        type: 'external-link',
-    },
+    // {
+    //     label: 'Camper Rentals',
+    //     path: 'https://southtexasrvrentals.com/',
+    //     type: 'external-link',
+    // },
     {
         label: 'Pay Rent',
         path: '/pay-rent',

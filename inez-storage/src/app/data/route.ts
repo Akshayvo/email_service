@@ -196,12 +196,12 @@ export const apiRoutes = [
     children: childroute,   },
   { path: 'storage-tips', component: StorageTipsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'camper-rentals',
-   component: RvRentalComponent,
-   children: [
-   { path: '', component: CamperRentalComponent },
-   ]
-  },
+  // { path: 'camper-rentals',
+  //  component: RvRentalComponent,
+  //  children: [
+  //  { path: '', component: CamperRentalComponent },
+  //  ]
+  // },
   { path: '**', component: ErrorComponent },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'storage-tips', component: StorageTipsComponent },

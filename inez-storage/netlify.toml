@@ -48,15 +48,27 @@
   status = 301
 [[redirects]]
   from = "/camper-rental"
-  to = "/camper-rentals"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/camper-rentals"
+  to = "/"
   status = 301
 [[redirects]]
   from = "/copy-of-camper-rental"
-  to = "/camper-rentals/2018-wildwood-27REI"
+  to = "/"
   status = 301
 [[redirects]]
   from = "/copy-of-2018-wildwood-rei-2-slides"
-  to = "/camper-rentals/2019-prime-time-tracer"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/camper-rentals/2018-wildwood-27REI"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/camper-rentals/2019-prime-time-tracer"
+  to = "/"
   status = 301
 [[redirects]]
   from = "/*"
