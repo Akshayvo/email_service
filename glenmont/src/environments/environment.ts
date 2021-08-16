@@ -17,8 +17,8 @@ export const environment = {
   facilityName: "Glenmont Self Storage",
   VERSION: require("../../package.json").version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: "https://glenmontselfstorage.com",
-  APIKey: `dzJ0OFc2SjAqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
+  websiteUrl: "https://www.glenmontselfstorage.com",
+  APIKey: `bzM9Mi0zTTQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // demo north 28463
 };
 
 /*
