@@ -14,6 +14,7 @@ import {
   th,
   th1,
   thoversized,
+  thtempcontrolled,
   newUnitTypes,
   newUnitTypes1,
 } from "../../data/view-rates";
@@ -61,6 +62,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   objCharges: ObjCharges;
   th: any;
   thoversized: any;
+  thtempcontrolled: any;
   th1: any;
   tenant: any;
   text = false;
@@ -98,6 +100,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.th = th.filter((x) => x.state === true);
     this.th1 = th1.filter((x) => x.state === true);
     this.thoversized = thoversized.filter((x) => x.state === true);
+    this.thtempcontrolled = thtempcontrolled.filter((x) => x.state === true);
     this.showRate = objSIMSetting.objUnitSizesSetting.blnShowRate;
     this.showDeposit = objSIMSetting.objUnitSizesSetting.blnShowDeposit;
     this.showReserve = objSIMSetting.objActionSetting.blnAllowReservation;
