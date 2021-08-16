@@ -102,7 +102,7 @@ export class HomeComponent implements OnInit {
     if (location === "/storage-tips" || location === "/reserve-unit") {
       this.router.navigate([`${environment.locationName}/${location}`]);
     } else if (location === "/view-rates") {
-      this.router.navigate([`new-york/baldwinsville/${location}`]);
+      this.router.navigate([`oklahoma/owasso/${location}`]);
     } else {
       this.router.navigate([`${location}`]);
     }

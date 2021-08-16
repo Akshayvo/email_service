@@ -167,7 +167,7 @@ export const apiRoutes = [
   { path: "unit-sizer", component: UnitSizerComponent },
   { path: "privacy-policy", component: PrivacyPolicyComponent },
   {
-    path: `new-york/baldwinsville/view-rates`,
+    path: `oklahoma/owasso/view-rates`,
     component: ViewRatesComponent,
     children: [
       { path: "", component: ViewRatesPageComponent },
@@ -229,7 +229,7 @@ export const iFrameRoutes = [
     component: StorageTipsComponent,
   },
   {
-    path: `new-york/baldwinsville/view-rates`,
+    path: `oklahoma/owasso/view-rates`,
     component: ViewRatesIframePageComponent,
   },
   {

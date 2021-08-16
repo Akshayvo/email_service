@@ -186,7 +186,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
       this.router.navigate([`baldwinsville/view-rates/move-in`]);
     } else {
       if (this.dataSharingService.navigateToReserve) {
-        this.router.navigate([`new-york/baldwinsville/view-rates/reserve`]);
+        this.router.navigate([`oklahoma/owasso/view-rates/reserve`]);
       }
     }
   }
@@ -262,7 +262,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           if (this.navigateToMoveIn) {
             if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
               this.router.navigate([
-                `new-york/baldwinsville/view-rates/payMoveInCharges`,
+                `oklahoma/owasso/view-rates/payMoveInCharges`,
               ]);
             } else {
               this.moveIn(this.MoveIn);
@@ -271,7 +271,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
             if (this.navigateToReserve) {
               if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
                 this.router.navigate([
-                  `new-york/baldwinsville/view-rates/payReservationCharges`,
+                  `oklahoma/owasso/view-rates/payReservationCharges`,
                 ]);
               } else {
                 this.makeAReservation(this.MoveIn);
@@ -298,9 +298,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
               localStorage.removeItem("strTempTenantToken");
             }
             // this.showConfirmation = false;
-            this.router.navigate([
-              `new-york/baldwinsville/view-rates/thank-you`,
-            ]);
+            this.router.navigate([`oklahoma/owasso/view-rates/thank-you`]);
             this.reservationInProgress = false;
           }
         },
@@ -342,9 +340,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
             if (localStorage.getItem("strTempTenantToken")) {
               localStorage.removeItem("strTempTenantToken");
             }
-            this.router.navigate([
-              `new-york/baldwinsville/view-rates/thank-you`,
-            ]);
+            this.router.navigate([`oklahoma/owasso/view-rates/thank-you`]);
             this.reservationInProgress = false;
           }
         },
@@ -390,7 +386,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
         if (this.navigateToMoveIn === true) {
           if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
             this.router.navigate([
-              `new-york/baldwinsville/view-rates/payMoveInCharges`,
+              `oklahoma/owasso/view-rates/payMoveInCharges`,
             ]);
           } else {
             this.moveIn(this.MoveIn);
@@ -398,7 +394,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
         } else {
           if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
             this.router.navigate([
-              `new-york/baldwinsville/view-rates/payReservationCharges`,
+              `oklahoma/owasso/view-rates/payReservationCharges`,
             ]);
           } else {
             this.makeAReservation(this.MoveIn);
@@ -413,7 +409,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           if (this.navigateToMoveIn === true) {
             if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
               this.router.navigate([
-                `new-york/baldwinsville/view-rates/payMoveInCharges`,
+                `oklahoma/owasso/view-rates/payMoveInCharges`,
               ]);
             } else {
               this.moveIn(this.MoveIn);
@@ -421,7 +417,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           } else {
             if (this.dataSharingService.LstUnitTypes.ReservationFee > 0) {
               this.router.navigate([
-                `new-york/baldwinsville/view-rates/payReservationCharges`,
+                `oklahoma/owasso/view-rates/payReservationCharges`,
               ]);
             } else {
               this.makeAReservation(this.MoveIn);
@@ -433,7 +429,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
             this.dataSharingService.addingTenant = true;
             this.router.navigate([
-              `new-york/baldwinsville/view-rates/payMoveInCharges`,
+              `oklahoma/owasso/view-rates/payMoveInCharges`,
             ]);
           } else {
             this.addTenant(this.tenantData);
@@ -443,7 +439,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
             this.dataSharingService.addingTenant = true;
             this.dataSharingService.addingTenant = true;
             this.router.navigate([
-              `new-york/baldwinsville/view-rates/payReservationCharges`,
+              `oklahoma/owasso/view-rates/payReservationCharges`,
             ]);
           } else {
             this.addTenant(this.tenantData);

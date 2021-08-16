@@ -516,7 +516,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   public navigateToConfirmation() {
-    this.router.navigate([`new-york/baldwinsville/view-rates/confirmation`]);
+    this.router.navigate([`oklahoma/owasso/view-rates/confirmation`]);
   }
 
   getPayMethods() {
@@ -726,7 +726,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             localStorage.removeItem("strTempTenantToken");
             this.tokenRemoved = true;
           }
-          this.router.navigate([`new-york/baldwinsville/view-rates/thank-you`]);
+          this.router.navigate([`oklahoma/owasso/view-rates/thank-you`]);
           this.reservationInProgress = false;
         },
         (err: any) => {
@@ -775,7 +775,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
             localStorage.removeItem("strTempTenantToken");
             this.tokenRemoved = true;
           }
-          this.router.navigate([`new-york/baldwinsville/view-rates/thank-you`]);
+          this.router.navigate([`oklahoma/owasso/view-rates/thank-you`]);
           this.reservationInProgress = false;
         },
         (err: any) => {
