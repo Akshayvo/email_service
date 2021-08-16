@@ -5,7 +5,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6,contactsLocation7,contactsLocation8,contactsLocation9,contactsLocation10,contactsLocation11,contactsLocation12 } from '../../data/contact';
+import { contactsLocation1, contactsLocation2, contactsLocation3 } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
 import { ogPayRentPageLocation1,ogPayRentPageLocation2,ogPayRentPageLocation3, twitterPayRentPageLocation1,twitterPayRentPageLocation2,twitterPayRentPageLocation3, } from '../../data/script';
 import { Meta } from '@angular/platform-browser';
@@ -131,23 +131,23 @@ export class LoginComponent implements OnInit, OnDestroy {
     console.log(this.router.url)
     if (this.router.url.includes('rebel-mini')) {
       this.id = 1;
-      this.name = 'Boxer Storage - Evanston Ave  Location';
+      this.name = 'Rebel Storage Location';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
     } 
 
-    else if (this.router.url.includes('howard-city')) {
+    else if (this.router.url.includes('secure-storage')) {
       this.id = 2;
-      this.name = 'Boxer Storage - Howard City Location';
+      this.name = 'Secure Storage Location';
       this.contact = contactsLocation2;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
     }
 
-     else if (this.router.url.includes('ionia')) {
+     else if (this.router.url.includes('green-wood')) {
       this.id = 3;
-      this.name = 'Boxer Storage - Ionia Location';
+      this.name = 'Greenwood Mini-Storage Location';
       this.contact = contactsLocation3;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
@@ -166,10 +166,10 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (this.router.url.includes('rebel-mini')) {
       this.og = ogPayRentPageLocation1;
     }
-    else if (this.router.url.includes('howard-city')) {
+    else if (this.router.url.includes('secure-storage')) {
       this.og = ogPayRentPageLocation2;
     }
-    else if (this.router.url.includes('ionia')) {
+    else if (this.router.url.includes('green-wood')) {
       this.og = ogPayRentPageLocation3;
     }   
     }
@@ -178,10 +178,10 @@ public fetchTwitter() {
   if (this.router.url.includes('rebel-mini')) {
     this.twitter = twitterPayRentPageLocation1;
   }
-  else if (this.router.url.includes('howard-city')) {
+  else if (this.router.url.includes('secure-storage')) {
     this.twitter = twitterPayRentPageLocation2;
   }
-  else if (this.router.url.includes('ionia')) {
+  else if (this.router.url.includes('green-wood')) {
     this.twitter = twitterPayRentPageLocation3;
   }
 }

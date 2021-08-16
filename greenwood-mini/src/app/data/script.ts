@@ -15,16 +15,7 @@ faqPageTitle, faqPageContent } from '../data/title';
 import { featuresList } from '../data/home';
 import { contactsLocation1, hoursLocation1, 
   contactsLocation2, hoursLocation2, 
-  contactsLocation3, hoursLocation3, 
-  contactsLocation4, hoursLocation4,
-  contactsLocation5, hoursLocation5,
-  contactsLocation6, hoursLocation6,
-  contactsLocation7, hoursLocation7,
-  contactsLocation8, hoursLocation8,
-  contactsLocation9, hoursLocation9,
-  contactsLocation10, hoursLocation10,
-  contactsLocation11, hoursLocation11,
-  contactsLocation12, hoursLocation12,
+  contactsLocation3, hoursLocation3,   
 
  } from '../data/contact';
 
@@ -32,81 +23,32 @@ import { contactsLocation1, hoursLocation1,
 const contactIndex1 = contactsLocation1.findIndex(x => x.label === 'Phone: ');
 const contactIndex2 = contactsLocation2.findIndex(x => x.label === 'Phone: ');
 const contactIndex3 = contactsLocation3.findIndex(x => x.label === 'Phone: ');
-const contactIndex4 = contactsLocation4.findIndex(x => x.label === 'Phone: ');
-const contactIndex5 = contactsLocation5.findIndex(x => x.label === 'Phone: ');
-const contactIndex6 = contactsLocation6.findIndex(x => x.label === 'Phone: ');
-const contactIndex7 = contactsLocation7.findIndex(x => x.label === 'Phone: ');
-const contactIndex8 = contactsLocation8.findIndex(x => x.label === 'Phone: ');
-const contactIndex9 = contactsLocation9.findIndex(x => x.label === 'Phone: ');
-const contactIndex10 = contactsLocation10.findIndex(x => x.label === 'Phone: ');
-const contactIndex11 = contactsLocation11.findIndex(x => x.label === 'Phone: ');
-const contactIndex12 = contactsLocation12.findIndex(x => x.label === 'Phone: ');
 
 const emailIndex1 = contactsLocation1.findIndex(x => x.label === 'Email: ');
 const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
 const emailIndex3 = contactsLocation3.findIndex(x => x.label === 'Email: ');
-const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
-const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
-const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
-const emailIndex7 = contactsLocation7.findIndex(x => x.label === 'Email: ');
-const emailIndex8 = contactsLocation8.findIndex(x => x.label === 'Email: ');
-const emailIndex9 = contactsLocation9.findIndex(x => x.label === 'Email: ');
-const emailIndex10 = contactsLocation10.findIndex(x => x.label === 'Email: ');
-const emailIndex11 = contactsLocation11.findIndex(x => x.label === 'Email: ');
-const emailIndex12 = contactsLocation12.findIndex(x => x.label === 'Email: ');
   
-export const nameLocation1 = `Boxer Storage - Evanston Ave  Location`;
-export const nameLocation2 = `Boxer Storage - Howard City Location`;
-export const nameLocation3 = `Boxer Storage - Ionia Location`;
-export const nameLocation4 = `Boxer Storage - Alpine Location`;
-export const nameLocation5 = `Boxer Storage - Red Barn Location`;
-export const nameLocation6 = `Boxer Storage - Wayland Westside Location`;
-export const nameLocation7 = `Boxer Storage - Wayland Mill Street Location`;
-export const nameLocation8 = `Boxer Storage - Wayland Southside Location`;
-export const nameLocation9 = `Boxer Storage - Dutton Location`;
-export const nameLocation10 = `Boxer Storage - M-45 Location`;
-export const nameLocation11 = `Boxer Storage - Otsego Location`;
-export const nameLocation12 = `Boxer Storage - Allendale Location`;
+export const nameLocation1 = `Rebel Storage Location`;
+export const nameLocation2 = `Secure Storage Location`;
+export const nameLocation3 = `Greenwood Mini-Storage Location`;
+
 
 
 export const location1 = `rebel-mini`;
-export const location2 = `howard-city`;
-export const location3 = `ionia`;
-export const location4 = `alpine`;
-export const location5 = `red-barn`;
-export const location6 = `wayland-westside`;
-export const location7 = `wayland-mill`;
-export const location8 = `wayland-southside`;
-export const location9 = `dutton`;
-export const location10 = `m45`;
-export const location11 = `Otsego`;
-export const location12 = `allendale`;
+export const location2 = `secure-storage`;
+export const location3 = `green-wood`;
 
 
 export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/rebel-mini/storage-units`;
-export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/howard-city/storage-units`;
-export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/ionia/storage-units`;
-export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/alpine/storage-units`;
-export const urlLocation5 = `${environment.websiteUrl}/${environment.locationName}/red-barn/storage-units`;
-export const urlLocation6 = `${environment.websiteUrl}/${environment.locationName}/wayland-westside/storage-units`;
-export const urlLocation7 = `${environment.websiteUrl}/${environment.locationName}/wayland-mill/storage-units`;
-export const urlLocation8 = `${environment.websiteUrl}/${environment.locationName}/wayland Southside/storage-units`;
-export const urlLocation9 = `${environment.websiteUrl}/${environment.locationName}/dutton/storage-units`;
-export const urlLocation10 = `${environment.websiteUrl}/${environment.locationName}/m45/storage-units`;
-export const urlLocation11 = `${environment.websiteUrl}/${environment.locationName}/otsego/storage-units`;
-export const urlLocation12 = `${environment.websiteUrl}/${environment.locationName}/allendale/storage-units`;
-
-// export const urlLocation3 = ``;
-// export const urlLocation4 = ``;
-// export const urlLocation5 = ``;
-// export const urlLocation6 = ``;
+export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/secure-storage/storage-units`;
+export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/green-wood/storage-units`;
 
 
 export const description1 = `Our Rebel Mini Storage location offers a variety of storage unit sizes for residential and commercial storage users.`;
 
-export const description2 = `Boxer Storage - Howard City Location is one of our 12 conveniently located self storage facilities. We offer a number of self storage unit with friendly customer service at very affordable rates!`;
+export const description2 = `Our Secure Storage location offers a variety of storage unit sizes for residential and commercial storage users. in Greenwood, Ms. Check out our rates, then rent your unit online in minutes!`;
 
-export const description3 = `Boxer Storage - Ionia Location is one of our 12 conveniently located storage facilities. We offer a number of self storage unit with excellent customer service.`;
+export const description3 = `Our Greenwood Mini-Storage location offers a variety of storage unit sizes for residential and commercial storage users. in Greenwood, MS.`;
 
 export const maplocation1 = 'https://goo.gl/maps/gM4fTfxJyCoPAjzx9';
 export const maplocation2 = `https://goo.gl/maps/V9mQLpHMRbH1CtK4A`;
@@ -133,7 +75,7 @@ export const addressLoaction2 = {
 export const addressLoaction3 = {
   '@type': 'PostalAddress',
   'streetAddress': '4062 S State Rd',
-  'addressLocality': 'Ionia',
+  'addressLocality': 'green-wood',
   'addressRegion': 'MI',
   'postalCode': '48846',
   'addressCountry': 'United state'
@@ -141,21 +83,19 @@ export const addressLoaction3 = {
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/global-mini-storage-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/global-mini-storage-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/global-mini-storage-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-43.jpg'
  ]
-
- export const imageLocation2 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-storage-howard-city-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-storage-howard-city-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-storage-howard-city-43.jpg'
+export const imageLocation2 = [
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-43.jpg'
  ]
-
- export const imageLocation3 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-self-storage-ionia-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-self-storage-ionia-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-self-storage-ionia-43.jpg'
+export const imageLocation3 = [
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-43.jpg'
  ]
 
 export const homePageScript = [ 
@@ -169,7 +109,7 @@ export const homePageScript = [
       'address' : addressLoaction1,
     'telephone': contactsLocation1[contactIndex1].data,
     'image' : imageLocation1,
-    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-storage-logo.jpg'
+    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/boxer-storage-logo.jpg'
   }, 
   {
     '@context': 'https://schema.org',
@@ -181,7 +121,7 @@ export const homePageScript = [
     'address' : addressLoaction2,
     'telephone': contactsLocation2[contactIndex2].data,
     'image' : imageLocation2,
-    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-storage-logo.jpg'
+    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/boxer-storage-logo.jpg'
   }, 
     {
     '@context': 'https://schema.org',
@@ -193,7 +133,7 @@ export const homePageScript = [
     'address' : addressLoaction3,
     'telephone': contactsLocation3[contactIndex3].data,
     'image' : imageLocation3,
-    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-storage-logo.jpg'
+    'logo': 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/boxer-storage-logo.jpg'
   }   
   
  ];
@@ -250,13 +190,13 @@ export const Location2Script = {
   },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 43.3783538,
-      'longitude': -85.4730562,
+      'latitude': 33.5128718,
+      'longitude': -90.2063396,
     },
     'url': urlLocation2,
     'telephone': contactsLocation2[contactIndex2].data,
 
-    'priceRange': '$30 - $110',
+    'priceRange': '$22 - $242',
     'openingHours': ['Mo-Fr 08:00 - 18:00', 'Sa 08:00 - 14:00'],
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
@@ -269,6 +209,7 @@ export const Location2Script = {
     'acceptsReservations': 'True'
 
 };
+
 export const Location3Script = {
      '@context': 'https://schema.org',
     '@type': 'SelfStorage',
@@ -285,13 +226,13 @@ export const Location3Script = {
   },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 42.9281179,
-      'longitude': -85.0751504,
+      'latitude': 33.5280771,
+      'longitude': -90.2130024,
     },
     'url': urlLocation3,
     'telephone': contactsLocation3[contactIndex3].data,
 
-    'priceRange': '$200 - $350',
+    'priceRange': '$22 - $500',
     'openingHours': ['Mo-Fr 08:00 - 18:00', 'Sa 08:00 - 14:00'],
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',

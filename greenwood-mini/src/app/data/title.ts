@@ -4,11 +4,11 @@ export const homePageContent = `Greenwood Mini-Storage serves  and the surroundi
 export const location1PageTitle = `Rebel Mini Storage Location | Greenwood Mini-Storage`;
 export const location1PageContent = `Take a moment to check out our extremely affordable self storage unit rates! Complete your rental online in minutes!`;
 
-export const location2PageTitle = `Howard City Location | Boxer Storage`;
-export const location2PageContent = `Take a moment to review our current availability and rates, then reserve your unit or rent online in a matter of minutes!`;
+export const location2PageTitle = `Secure Storage Location | Greenwood Mini-Storage`;
+export const location2PageContent = `Take a moment to check out the affordable self storage unit rates at our Secure Storage location! Complete your rental online in minutes!`;
 
-export const location3PageTitle = `Ionia Location | Boxer Storage`;
-export const location3PageContent = `Our Barnwell location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+export const location3PageTitle = `Greenwood Mini-Storage | Greenwood Mini-Storage`;
+export const location3PageContent = `Take a moment to check out the affordable self storage unit rates at our Secure Storage location! Complete your rental online in minutes!`;
 
 export const viewRatesPageTitle = ``;
 export const viewRatesPageContent = ``;
@@ -42,11 +42,11 @@ export const faqPageContent = `Have questions about the services our 12 self sto
 export const location1PayrentPageTitle = `Pay Rent | Greenwood Mini-Storage`;
 export const location1PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
-export const location2PayrentPageTitle = `Pay Rent | Boxer Storage`;
-export const location2PayrentPageContent = `Follow the simple instructions on this page, and you'll have 24 hour access to your account for online payments.`;
+export const location2PayrentPageTitle = `Pay Rent | Greenwood Mini-Storage`;
+export const location2PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
-export const location3PayrentPageTitle = `Pay Rent | Boxer Storage`;
-export const location3PayrentPageContent = `Follow the simple instructions on this page, and you'll have 24 hour access to your account for online payments.`;
+export const location3PayrentPageTitle = `Pay Rent | Greenwood Mini-Storage`;
+export const location3PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
 
 
@@ -54,8 +54,8 @@ export const location3PayrentPageContent = `Follow the simple instructions on th
 export const location1ContactPageTitle = `Contact Us  | Greenwood Mini-Storage`;
 export const location1ContactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
-export const location2ContactPageTitle = `Contact Us | Boxer Storage`;
-export const location2ContactPageContent = `Fill our the form or use our contact form to reach out to our friendly and knowledgable staff.`;
+export const location2ContactPageTitle = `Contact Us  | Greenwood Mini-Storage`;
+export const location2ContactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
-export const location3ContactPageTitle = `Contact Us | Boxer Storage`;
-export const location3ContactPageContent = `Fill our the form or use our contact form to reach out to our friendly and knowledgable staff.`;
+export const location3ContactPageTitle = `Contact Us  | Greenwood Mini-Storage`;
+export const location3ContactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;

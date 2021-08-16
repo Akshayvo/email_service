@@ -18,13 +18,13 @@ export const navLinks = [
               },
                {
                 id: '2',
-                label: 'Howard City Location',
-                path: `${environment.locationName}/howard-city`,
+                label: 'Secure Storage',
+                path: `${environment.locationName}/secure-storage`,
               },
               {
                 id: '3',
-                label: 'Ionia Location',
-                path: `${environment.locationName}/ionia`,
+                label: 'Greenwood Mini-Storage Location',
+                path: `${environment.locationName}green-wood`,
               }
         ]
     },
@@ -40,13 +40,13 @@ export const navLinks = [
     //           },
     //             {
     //             id: '2',
-    //             label: 'Howard City Location',
-    //             path: `${environment.locationName}/howard-city/view-rates`,
+    //             label: 'Secure Storage',
+    //             path: `${environment.locationName}/secure-storage/view-rates`,
     //           },
     //           {
     //             id: '3',
     //             label: 'Ionia Location',
-    //             path: `${environment.locationName}/ionia/view-rates`,
+    //             path: `${environment.locationName}green-wood/view-rates`,
     //           },
     //              {
     //             id: '4',

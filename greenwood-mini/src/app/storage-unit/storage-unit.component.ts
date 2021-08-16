@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { headingLocation1, headingLocation2, headingLocation3,
-  headingLocation4,  headingLocation5,  headingLocation6, } from '../data/location';
+import { headingLocation1, headingLocation2, headingLocation3,  } from '../data/location';
 import { CanonicalService } from '../services/canonical.service';
 import { environment } from '../../environments/environment';
 

@@ -48,39 +48,14 @@ export class PayRentComponent implements OnInit {
     if (this.router.url.includes('rebel-mini')) {
       this.name = ' Rebel Mini Storage';
   }
-    else if (this.router.url.includes('howard-city')) {
-      this.name = ' Howard City Location';
+    else if (this.router.url.includes('secure-storage')) {
+      this.name = ' Secure Storage';
   }
-  else if (this.router.url.includes('ionia')) {
-      this.name = ' Ionia Location';
+  else if (this.router.url.includes('green-wood')) {
+      this.name = ' Greenwood Mini-Storage Location';
   }
-  else if (this.router.url.includes('alpine')) {
-      this.name = ' Alpine Location';
-  }
-   else if (this.router.url.includes('red-barn')) {
-    this.name = ' Red Barn Location';
-  } else if (this.router.url.includes('wayland-westside')) {
-    this.name = ' Wayland Westside street Location';
-  } else if (this.router.url.includes('wayland-mill')) {
-    this.name = ' Wayland mill Location';
-  } else if (this.router.url.includes('wayland-southside')) {
-    this.name = ' Wayland Southside Location';
-  } 
-  else if (this.router.url.includes('dutton')) {
-    this.name = ' Dutton Location';
-  } 
-  else if (this.router.url.includes('m45')) {
-    this.name = ' M-45 Southside Location';
-  } 
-  else if (this.router.url.includes('otsego')) {
-    this.name = ' Otsego Location';
-  } 
-  else if (this.router.url.includes('allendale')) {
-    this.name = ' Allendale Location';
-  } 
-  // else if (this.router.url.includes('robertsdale')) {
-  //   this.name = 'Robertsdale Location';
-  // }
+
+  
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
     }
@@ -97,10 +72,10 @@ export class PayRentComponent implements OnInit {
     if (this.router.url.includes('rebel-mini')) {
       this.og = ogPayRentPageLocation1;
     }
-    else if (this.router.url.includes('howard-city')) {
+    else if (this.router.url.includes('secure-storage')) {
       this.og = ogPayRentPageLocation2;
     }
-    else if (this.router.url.includes('ionia')) {
+    else if (this.router.url.includes('green-wood')) {
       this.og = ogPayRentPageLocation3;
     }
 }
@@ -109,10 +84,10 @@ public fetchTwitter() {
   if (this.router.url.includes('rebel-mini')) {
     this.twitter = twitterPayRentPageLocation1;
   }
-  else if (this.router.url.includes('howard-city')) {
+  else if (this.router.url.includes('secure-storage')) {
     this.twitter = twitterPayRentPageLocation2;
   }
-  else if (this.router.url.includes('ionia')) {
+  else if (this.router.url.includes('green-wood')) {
     this.twitter = twitterPayRentPageLocation3;
   }
 }

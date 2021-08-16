@@ -6,55 +6,20 @@ import {
   accessHoursLocation3,  
   contactsLocation1,
   contactsLocation2,
-  contactsLocation3,
-  contactsLocation4,
-  contactsLocation5,
-  contactsLocation6,
-  contactsLocation7,
-  contactsLocation8,
-  contactsLocation9,
-  contactsLocation10,
-  contactsLocation11,
-  contactsLocation12,
+  contactsLocation3,  
   hoursLocation1,
   hoursLocation2,
   hoursLocation3,
-  hoursLocation4,
-  hoursLocation5,
-  hoursLocation6,
-  hoursLocation7,
-  hoursLocation8,
-  hoursLocation9,
-  hoursLocation10,
-  hoursLocation11,
-  hoursLocation12,
+  
 } from "../data/contact";
 import {
   heading1,
-  heading2,
-  tabs,
+  heading2,  
   tabs1,
   tabs2,
   heading3,
   tabs3,
-  tabs4,
-  tabs5,
-  tabs6,
-  tabs7,
-  tabs8,
-  tabs9,
-  tabs10,
-  tabs11,
-  tabs12,
-  heading4,
-  heading5,
-  heading6,
-  heading7,
-  heading8,
-  heading9,
-  heading10,
-  heading11,
-  heading12,
+  
 } from "../data/location";
 import { Title, Meta } from "@angular/platform-browser";
 import { WINDOW } from "@ng-toolkit/universal";
@@ -76,16 +41,7 @@ import {
   featuresList,
   location1FeaturesHead,
   location2FeaturesHead,
-  location3FeaturesHead,
-  location4FeaturesHead,
-  location5FeaturesHead,
-  location6FeaturesHead,
-  location7FeaturesHead,
-  location8FeaturesHead,
-  location9FeaturesHead,
-  location10FeaturesHead,
-  location11FeaturesHead,
-  location12FeaturesHead,
+  location3FeaturesHead,  
 } from "../data/home";
 import { UaParserService } from "../services/ua-parser.service";
 import {
@@ -206,14 +162,14 @@ export class LocationComponent implements OnInit {
         });
       });
     } else if (
-      this.router.url.includes(`${environment.locationName}/howard-city`)
+      this.router.url.includes(`${environment.locationName}/secure-storage`)
     ) {
       this.meta.addTag({
         name: "description",
         content: `${this.location2PageContent}`,
       });
       this.titleService.setTitle(`${this.location2PageTitle}`);
-      this.locationName = `Boxer Storage - Howard City Location`;
+      this.locationName = `Boxer Storage - Secure Storage`;
       this.dataSharingService.apiKey =
         this.dataSharingService.locationAPIKey.loc2;
       this.dataSharingService.locationName = this.locationName;
@@ -232,7 +188,7 @@ export class LocationComponent implements OnInit {
           content: element.content,
         });
       });
-    } else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+    } else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
       this.meta.addTag({
         name: "description",
         content: `${this.location3PageContent}`,
@@ -298,10 +254,10 @@ export class LocationComponent implements OnInit {
     if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
       this.og = ogLocation1;
     } else if (
-      this.router.url.includes(`${environment.locationName}/howard-city`)
+      this.router.url.includes(`${environment.locationName}/secure-storage`)
     ) {
       this.og = ogLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+    } else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
       this.og = ogLocation3;
     } 
   }
@@ -310,10 +266,10 @@ export class LocationComponent implements OnInit {
     if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
       this.twitter = twitterLocation1;
     } else if (
-      this.router.url.includes(`${environment.locationName}/howard-city`)
+      this.router.url.includes(`${environment.locationName}/secure-storage`)
     ) {
       this.twitter = twitterLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+    } else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
       this.twitter = twitterLocation3;
     }    
   }
@@ -322,10 +278,10 @@ export class LocationComponent implements OnInit {
     if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
       this.fetchDetailsLocation1();
     } else if (
-      this.router.url.includes(`${environment.locationName}/howard-city`)
+      this.router.url.includes(`${environment.locationName}/secure-storage`)
     ) {
       this.fetchDetailsLocation2();
-    } else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+    } else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
       this.fetchDetailsLocation3();
     }
   }
@@ -337,11 +293,11 @@ export class LocationComponent implements OnInit {
     //         );
     // }
     // else if ( this.locationId === 2 ) {
-    //   this.router.navigate([`${environment.locationName}/howard-city/reserve-unit`],
+    //   this.router.navigate([`${environment.locationName}/secure-storage/reserve-unit`],
     //         );
     // }
     //  else if ( this.locationId === 3 ) {
-    //   this.router.navigate([`${environment.locationName}/ionia/reserve-unit`],
+    //   this.router.navigate([`${environment.locationName}green-wood/reserve-unit`],
     //         );
     // }
     //  else if ( this.locationId === 4 ) {
@@ -388,67 +344,13 @@ export class LocationComponent implements OnInit {
       }
     } else if (this.locationId === 2) {
       if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/howard-city/rent-sub/login`]);
+        this.router.navigate([`pay-rent/secure-storage/rent-sub/login`]);
       } else {
         this.router.navigate(["pay-rent"]);
       }
     } else if (this.locationId === 3) {
       if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/ionia/rent-sub/login`]);
-      } else {
-        this.router.navigate(["pay-rent"]);
-      }
-    } else if (this.locationId === 4) {
-      if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/alpine/rent-sub/login`]);
-      } else {
-        this.router.navigate(["pay-rent"]);
-      }
-    } else if (this.locationId === 5) {
-      if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/red-barn/rent-sub/login`]);
-      } else {
-        this.router.navigate(["pay-rent"]);
-      }
-    } else if (this.locationId === 6) {
-      if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/wayland-westside/rent-sub/login`]);
-      } else {
-        this.router.navigate(["pay-rent"]);
-      }
-    } else if (this.locationId === 7) {
-      if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/wayland-mill/rent-sub/login`]);
-      } else {
-        this.router.navigate(["pay-rent"]);
-      }
-    } else if (this.locationId === 8) {
-      if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/wayland-southside/rent-sub/login`]);
-      } else {
-        this.router.navigate(["pay-rent"]);
-      }
-    } else if (this.locationId === 9) {
-      if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/dutton/rent-sub/login`]);
-      } else {
-        this.router.navigate(["pay-rent"]);
-      }
-    } else if (this.locationId === 10) {
-      if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/m45/rent-sub/login`]);
-      } else {
-        this.router.navigate(["pay-rent"]);
-      }
-    } else if (this.locationId === 11) {
-      if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/otsego/rent-sub/login`]);
-      } else {
-        this.router.navigate(["pay-rent"]);
-      }
-    } else if (this.locationId === 12) {
-      if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/allendale/rent-sub/login`]);
+        this.router.navigate([`pay-rent/green-wood/rent-sub/login`]);
       } else {
         this.router.navigate(["pay-rent"]);
       }
@@ -458,29 +360,11 @@ export class LocationComponent implements OnInit {
   public navigateToContact() {
     if (this.router.url.includes("rebel-mini")) {
       this.router.navigate(["/contact-rebel-mini"]);
-    } else if (this.router.url.includes("howard-city")) {
-      this.router.navigate(["/contact-howard-city"]);
-    } else if (this.router.url.includes("ionia")) {
-      this.router.navigate(["/contact-ionia"]);
-    } else if (this.router.url.includes("alpine")) {
-      this.router.navigate(["/contact-alpine"]);
-    } else if (this.router.url.includes("red-barn")) {
-      this.router.navigate(["/contact-red-barn"]);
-    } else if (this.router.url.includes("wayland-westside")) {
-      this.router.navigate(["/contact-wayland-westside"]);
-    } else if (this.router.url.includes("wayland-mill")) {
-      this.router.navigate(["/contact-wayland-mill"]);
-    } else if (this.router.url.includes("wayland-southside")) {
-      this.router.navigate(["/contact-wayland-southside"]);
-    } else if (this.router.url.includes("dutton")) {
-      this.router.navigate(["/contact-dutton"]);
-    } else if (this.router.url.includes("m45")) {
-      this.router.navigate(["/contact-m45"]);
-    } else if (this.router.url.includes("otsego")) {
-      this.router.navigate(["/contact-otsego"]);
-    } else if (this.router.url.includes("allendale")) {
-      this.router.navigate(["/contact-allendale"]);
-    }
+    } else if (this.router.url.includes("secure-storage")) {
+      this.router.navigate(["/contact-secure-storage"]);
+    } else if (this.router.url.includes("green-wood")) {
+      this.router.navigate(["/contact-green-wood"]);
+    } 
   }
 
   public fetchDetailsLocation1() {

@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { aboutUsLocation1, aboutUsLocation2, aboutUsHeadingLocation1, aboutUsHeadingLocation2,
   aboutUsImageLocation1, aboutUsImageLocation2, aboutUsLocation3, aboutUsImageLocation3,
-  aboutUsHeadingLocation3, aboutUsLocation4, aboutUsHeadingLocation4, aboutUsImageLocation4,
-  aboutUsLocation5, aboutUsHeadingLocation5, aboutUsImageLocation5,
-  aboutUsLocation6, aboutUsHeadingLocation6, aboutUsImageLocation6,  } from '../data/location';
+  aboutUsHeadingLocation3 } from '../data/location';
 import { CanonicalService } from '../services/canonical.service';
 
 @Component({
@@ -36,12 +34,6 @@ export class AboutUsComponent implements OnInit {
     this.fetchDetailsLocation2();
   } else if (this.router.url.includes('/location/barnwell')) {
     this.fetchDetailsLocation3();
-  } else if (this.router.url.includes('/location/belforest')) {
-    this.fetchDetailsLocation4();
-  } else if (this.router.url.includes('/location/fairhope')) {
-    this.fetchDetailsLocation5();
-  } else if (this.router.url.includes('/location/robertsdale')) {
-    this.fetchDetailsLocation6();
   }
 }
 
@@ -64,27 +56,5 @@ export class AboutUsComponent implements OnInit {
     this.heading = aboutUsHeadingLocation3;
     this.image = aboutUsImageLocation3;
     this.alt = 'Aerial photograph of a self storage facility and main office.';
-  }
-
-  public fetchDetailsLocation4() {
-    this.aboutPara = aboutUsLocation4;
-    this.heading = aboutUsHeadingLocation4;
-    this.image = aboutUsImageLocation4;
-    this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
-    vehicles parked inside the gate.`;
-  }
-  public fetchDetailsLocation5() {
-    this.aboutPara = aboutUsLocation5;
-    this.heading = aboutUsHeadingLocation5;
-    this.image = aboutUsImageLocation5;
-    this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
-    vehicles parked inside the gate.`;
-  }
-  public fetchDetailsLocation6() {
-    this.aboutPara = aboutUsLocation6;
-    this.heading = aboutUsHeadingLocation6;
-    this.image = aboutUsImageLocation6;
-    this.alt = `Aerial photo of a self storage unit surrounded by fence with recreational
-    vehicles parked inside the gate.`;
   }
 }

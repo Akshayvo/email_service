@@ -2,11 +2,9 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { EmailService } from '../services/email.service';
-import { contactsLocation1, hoursLocation1, accessHoursLocation1,accessHoursLocation2,accessHoursLocation3,accessHoursLocation4,accessHoursLocation5,accessHoursLocation6,accessHoursLocation7,accessHoursLocation8,accessHoursLocation9,accessHoursLocation10,accessHoursLocation11,accessHoursLocation12,
+import { contactsLocation1, hoursLocation1, accessHoursLocation1,accessHoursLocation2,accessHoursLocation3,
           contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3, hoursLocation4, contactsLocation4,
-          hoursLocation5, contactsLocation5,hoursLocation9,hoursLocation10,hoursLocation11,hoursLocation12,
-          hoursLocation6,hoursLocation7,hoursLocation8, contactsLocation6,contactsLocation7,contactsLocation8,contactsLocation9,contactsLocation10,contactsLocation11,contactsLocation12  } from '../data/contact';
+          hoursLocation3, } from '../data/contact';
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -104,10 +102,10 @@ export class ContactUsComponent implements OnInit {
       if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
     this.script = contactPageLocation1Script;
       }
-      else if (this.router.url.includes(`${environment.locationName}/howard-city`)) {
+      else if (this.router.url.includes(`${environment.locationName}/secure-storage`)) {
     this.script = contactPageLocation2Script;
       }
-      else if (this.router.url.includes(`${environment.locationName}/ionia`)) {
+      else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
     this.script = contactPageLocation3Script;
       }      
   }
@@ -116,10 +114,10 @@ export class ContactUsComponent implements OnInit {
     if (this.router.url.includes('rebel-mini')) {
       this.og = ogContactPageLocation1;
     } 
-    else if (this.router.url.includes('howard-city')) {
+    else if (this.router.url.includes('secure-storage')) {
       this.og = ogContactPageLocation2;
     } 
-    else if (this.router.url.includes('ionia')) {
+    else if (this.router.url.includes('green-wood')) {
       this.og = ogContactPageLocation3;
     } 
 }
@@ -133,10 +131,10 @@ public fetchTwitter() {
   if (this.router.url.includes('rebel-mini')) {
     this.twitter = twitterContactPageLocation1;
   }
-  else if (this.router.url.includes('howard-city')) {
+  else if (this.router.url.includes('secure-storage')) {
     this.twitter = twitterContactPageLocation2;
   }
-   else if (this.router.url.includes('ionia')) {
+   else if (this.router.url.includes('green-wood')) {
     this.twitter = twitterContactPageLocation3;
   }
 }
@@ -176,43 +174,16 @@ public fetchTwitter() {
     if (this.router.url.includes('rebel-mini')) {
       this.fetchContactDetailsLocation1();
     }
-    else if (this.router.url.includes('howard-city')) {
+    else if (this.router.url.includes('secure-storage')) {
       this.fetchContactDetailsLocation2();
     }
-    else if (this.router.url.includes('ionia')) {
+    else if (this.router.url.includes('green-wood')) {
       this.fetchContactDetailsLocation3();
     }
-     else if (this.router.url.includes('alpine')) {
-      this.fetchContactDetailsLocation4();
-    }
-     else if (this.router.url.includes('red-barn')) {
-      this.fetchContactDetailsLocation5();
-    } else if (this.router.url.includes('wayland-westside')) {
-      this.fetchContactDetailsLocation6();
-    } else if (this.router.url.includes('wayland-mill')) {
-      this.fetchContactDetailsLocation7();
-    } else if (this.router.url.includes('wayland-southside')) {
-      this.fetchContactDetailsLocation8();
-    } 
-    else if (this.router.url.includes('dutton')) {
-      this.fetchContactDetailsLocation9();
-    } 
-    else if (this.router.url.includes('m45')) {
-      this.fetchContactDetailsLocation10();
-    } 
-    else if (this.router.url.includes('otsego')) {
-      this.fetchContactDetailsLocation11();
-    } 
-    else if (this.router.url.includes('allendale')) {
-      this.fetchContactDetailsLocation12();
-    }
-    // else if (this.router.url.includes('robertsdale')) {
-    //   this.fetchContactDetailsLocation6();
-    // }
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `Boxer Storage - Evanston Ave  Location`;
+    this.heading = `Rebel Storage Location`;
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
@@ -221,7 +192,7 @@ public fetchTwitter() {
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-    this.heading = `Boxer Storage - Howard City Location`;
+    this.heading = `Secure Storage Location`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
     this.access = accessHoursLocation2;
@@ -229,77 +200,10 @@ public fetchTwitter() {
 
   public fetchContactDetailsLocation3() {
     this.locationId = '3'
-    this.heading = `Boxer Storage - Ionia Location`;
+    this.heading = `Greenwood Mini-Storage Location`;
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
     this.access = accessHoursLocation3;
-  }
-
-  public fetchContactDetailsLocation4() {
-    this.locationId = '4'
-    this.heading = `Boxer Storage - Alpine Location`;
-    this.contactDetails = contactsLocation4;
-    this.hoursDetails = hoursLocation4;
-    this.access = accessHoursLocation4;
-  }
-  public fetchContactDetailsLocation5() {
-    this.heading = `Boxer Storage - Red Barn Location`;
-    this.locationId = '5'
-    this.contactDetails = contactsLocation5;
-    this.hoursDetails = hoursLocation5;
-    this.access = accessHoursLocation5;
-  } 
-
-  public fetchContactDetailsLocation6() {
-    this.heading = `Boxer Storage - Wayland Westside Location`;
-    this.locationId = '6'
-    this.contactDetails = contactsLocation6;
-    this.hoursDetails = hoursLocation6;
-    this.access = accessHoursLocation6;
-  }
-
-  public fetchContactDetailsLocation7() {
-    this.heading = `Boxer Storage - Wayland Mill Street Location`;
-    this.locationId = '7'
-    this.contactDetails = contactsLocation7;
-    this.hoursDetails = hoursLocation7;
-    this.access = accessHoursLocation7;
-  }
-
-  public fetchContactDetailsLocation8() {
-    this.heading = `Boxer Storage - Waylanf Southside Location`;
-    this.locationId = '8'
-    this.contactDetails = contactsLocation8;
-    this.hoursDetails = hoursLocation8;
-    this.access = accessHoursLocation8;
-  }
-  public fetchContactDetailsLocation9() {
-    this.heading = `Boxer Storage - Dutton Location`;
-    this.locationId = '9'
-    this.contactDetails = contactsLocation9;
-    this.hoursDetails = hoursLocation9;
-    this.access = accessHoursLocation9;
-  }
-  public fetchContactDetailsLocation10() {
-    this.heading = `Boxer Storage - M-45 Location`;
-    this.locationId = '10'
-    this.contactDetails = contactsLocation10;
-    this.hoursDetails = hoursLocation10;
-    this.access = accessHoursLocation10;
-  }
-  public fetchContactDetailsLocation11() {
-    this.heading = `Boxer Storage - Otsego Location`;
-    this.locationId = '11'
-    this.contactDetails = contactsLocation11;
-    this.hoursDetails = hoursLocation11;
-    this.access = accessHoursLocation11;
-  }
-  public fetchContactDetailsLocation12() {
-    this.heading = `Boxer Storage - Allendale Location`;
-    this.locationId = '12'
-    this.contactDetails = contactsLocation12;
-    this.hoursDetails = hoursLocation12;
-    this.access = accessHoursLocation12;
   }
 
 onSubmit() {

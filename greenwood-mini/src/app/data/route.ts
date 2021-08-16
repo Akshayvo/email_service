@@ -138,7 +138,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-        { path: `${environment.locationName}/howard-city`,
+        { path: `${environment.locationName}/secure-storage`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -173,7 +173,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/ionia`,
+    { path: `${environment.locationName}green-wood`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -575,7 +575,7 @@ resolve: { data: AppResolver }
       ],
       resolve: { data: AppResolver }
     },
-        { path: `${environment.locationName}/howard-city/view-rates`,
+        { path: `${environment.locationName}/secure-storage/view-rates`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -610,7 +610,7 @@ resolve: { data: AppResolver }
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}/ionia/view-rates`,
+    { path: `${environment.locationName}/green-wood/view-rates`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -980,7 +980,7 @@ resolve: { data: AppResolver }
         externalUrl: ''
     }
   },
-  { path: 'review/howard-city', component: HomeComponent,
+  { path: 'review/secure-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -988,7 +988,7 @@ resolve: { data: AppResolver }
         externalUrl: ''
     }
   },
-  { path: 'review/ionia', component: HomeComponent,
+  { path: 'reviewgreen-wood', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -1051,11 +1051,11 @@ resolve: { data: AppResolver }
     children: childroute
   },
    {
-    path: 'pay-rent/howard-city', component: PayRentComponent,
+    path: 'pay-rent/secure-storage', component: PayRentComponent,
     children: childroute
   },
   {
-    path: 'pay-rent/ionia', component: PayRentComponent,
+    path: 'pay-rentgreen-wood', component: PayRentComponent,
     children: childroute
   },
    {
@@ -1098,7 +1098,7 @@ resolve: { data: AppResolver }
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'contact-rebel-mini', component: ContactUsComponent},
-  { path: 'contact-howard-city', component: ContactUsComponent},
+  { path: 'contact-secure-storage', component: ContactUsComponent},
   { path: 'contact-ionia', component: ContactUsComponent},
   { path: 'contact-alpine', component: ContactUsComponent},
   { path: 'contact-red-barn', component: ContactUsComponent},
