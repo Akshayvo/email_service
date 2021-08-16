@@ -7,6 +7,8 @@ export const environment = {
   type: 0, // { API: 0, iframe: 1 }
   locationName: "joshua-tree",
   alternateTenant: `navigateToMoveIn`, // {0, 1, navigateToReserve, navigateToMoveIn},
+  alternateType: { moveIn: true, reserve: false }, // { moveIn: true, reserve: true },
+  military: true, // set true for Military and Driver's Details
   paymentPageType: 1, // { withoutTab: 0, withTab: 1}
   reservetionFormType: 0, // { withoutAlternateDetail:0, withAlternateDetial: 1}
   template: "darkTheme", // { darkTheme, lightTheme, withoutJumbotron}

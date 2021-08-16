@@ -3,6 +3,8 @@ export const environment = {
   locationName: "joshua-tree",
   type: 0, // { API: 0, iframe: 1 }
   paymentPageType: 1, // { withoutTab: 0, withTab: 1}
+  alternateType: { moveIn: true, reserve: false }, // { moveIn: true, reserve: true },
+  military: true, // set true for Military and Driver's Details
   template: "darkTheme", // { darkTheme, lightTheme, withoutJumbotron}
   cards: ["Visa", "Master Card", "Amex", "Discover", "test"],
   errorsMails: ["website.dev@codeparva.in"],

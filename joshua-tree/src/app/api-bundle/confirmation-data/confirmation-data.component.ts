@@ -46,6 +46,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   ];
 
   stateString: string;
+  alternateStateString: string;
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
   reservationInProgress = false;
@@ -87,6 +88,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   canExit = true;
   navTo: any;
   period: string;
+  showAltDetails = false;
   public destroyed = new Subject<any>();
 
   private addTenantSubscribe$: Subscription;
@@ -110,6 +112,8 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.getTenantUnitData();
+    this.showAltDetails = this.dataSharingService.showAltDetails;
+    this.showMilitaryDetails = this.dataSharingService.showMilitaryDetails;
   }
 
   fetchSharedData() {
@@ -136,6 +140,26 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
       );
       if (!!this.options) {
         this.stateString = this.options[this.index].description;
+      }
+    }
+
+    if (!!this.dataSharingService.objTenant.AlternateState) {
+      this.alternateIndex = JSON.stringify(
+        this.options.findIndex(
+          (x) => x.id === this.dataSharingService.objTenant.AlternateState
+        )
+      );
+      if (!!this.alternateIndex) {
+        this.alternateStateString =
+          this.options[this.alternateIndex].description;
+      } else {
+        this.alternateIndex = JSON.stringify(
+          this.options1.findIndex(
+            (x) => x.id === this.dataSharingService.objTenant.AlternateState
+          )
+        );
+        this.alternateStateString =
+          this.options1[this.alternateIndex].description;
       }
     }
   }
@@ -173,11 +197,24 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.addressLine2 = this.dataSharingService.objTenant.AddressLine2;
     this.city = this.dataSharingService.objTenant.City;
     this.zip = this.dataSharingService.objTenant.ZIP;
+    this.alternateName = this.dataSharingService.objTenant.AlternateName;
+    this.alternatePhone = this.dataSharingService.objTenant.AlternatePhone;
+    this.alternateAddressLine1 =
+      this.dataSharingService.objTenant.AlternateAddressLine1;
+    this.alternateAddressLine2 =
+      this.dataSharingService.objTenant.AlternateAddressLine2;
+    this.alternateCity = this.dataSharingService.objTenant.AlternateCity;
+    this.alternateState = this.dataSharingService.objTenant.AlternateState;
+    this.alternateZIP = this.dataSharingService.objTenant.AlternateZIP;
     this.reservationFee = this.dataSharingService.LstUnitTypes.ReservationFee;
     this.reservationFeeTax =
       this.dataSharingService.LstUnitTypes.ReservationFeeTax;
     this.description = this.dataSharingService.LstUnitTypes.Description;
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
+    this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
+    this.driversLicenseExpDate =
+      this.dataSharingService.objTenant.DriversLicenseExpDate;
+    this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
   }
 
   addTenant(data: any): void {

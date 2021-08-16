@@ -144,6 +144,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   alternateTenantDetail: any;
 
+  showAltDetails = false;
+  showMilitaryDetails = false;
+
   private getLeadDaysSubscribe$: Subscription;
   private getTenantInfoSubscribe$: Subscription;
   private getDataSubscribe$: Subscription;
@@ -178,6 +181,75 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ["", Validators.required],
         State: ["", Validators.required],
         ZIP: ["", Validators.required],
+        DriversLicense: [
+          "",
+          conditionalValidator(
+            () => this.showMilitaryDetails === false,
+            Validators.required
+          ),
+        ],
+        DriversLicenseExpDate: [
+          "",
+          conditionalValidator(
+            () => this.showMilitaryDetails === false,
+            Validators.required
+          ),
+        ],
+        DateOfBirth: [
+          "",
+          conditionalValidator(
+            () => this.showMilitaryDetails === false,
+            Validators.required
+          ),
+        ],
+        AlternateName: [
+          "",
+          conditionalValidator(
+            () => this.showAltDetails === false,
+            Validators.required
+          ),
+        ],
+        AlternatePhone: [
+          "",
+          [
+            conditionalValidator(
+              () => this.showAltDetails === false,
+              Validators.required
+            ),
+            Validators.pattern(
+              "^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$"
+            ),
+          ],
+        ],
+        AlternateAddressLine1: [
+          "",
+          conditionalValidator(
+            () => this.showAltDetails === false,
+            Validators.required
+          ),
+        ],
+        AlternateAddressLine2: [""],
+        AlternateCity: [
+          "",
+          conditionalValidator(
+            () => this.showAltDetails === false,
+            Validators.required
+          ),
+        ],
+        AlternateState: [
+          "",
+          conditionalValidator(
+            () => this.showAltDetails === false,
+            Validators.required
+          ),
+        ],
+        AlternateZIP: [
+          "",
+          conditionalValidator(
+            () => this.showAltDetails === false,
+            Validators.required
+          ),
+        ],
       }),
 
       lstUnitTypes: new FormArray([this.initLstUnitTypes()]),
@@ -225,6 +297,11 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.navigateToMoveIn = true;
         this.dataSharingService.navigateToMoveIn = true;
         this.dataSharingService.navigateToReserve = false;
+        this.showAltDetails =
+          environment.alternateType.moveIn === true ? true : false;
+        this.dataSharingService.showAltDetails = this.showAltDetails;
+        this.showMilitaryDetails = environment.military === true ? true : false;
+        this.dataSharingService.showMilitaryDetails = this.showMilitaryDetails;
       }
     }
   }
@@ -451,6 +528,16 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
+              DriversLicense: Tenant.DriversLicense,
+              DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+              DateOfBirth: Tenant.DateOfBirth,
+              AlternateName: Tenant.AlternateName,
+              AlternatePhone: Tenant.AlternatePhone,
+              AlternateAddressLine1: Tenant.AlternateAddressLine2,
+              AlternateAddressLine2: Tenant.AlternateAddressLine2,
+              AlternateCity: Tenant.AlternateCity,
+              AlternateState: Tenant.AlternateState,
+              AlternateZIP: Tenant.AlternateZIP,
             };
             this.reserveUnitForm.patchValue({
               objTenant: {
@@ -463,6 +550,16 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
                 City: Tenant.City,
                 State: Tenant.State,
                 ZIP: Tenant.ZIP,
+                DriversLicense: Tenant.DriversLicense,
+                DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+                DateOfBirth: Tenant.DateOfBirth,
+                AlternateName: Tenant.AlternateName,
+                AlternatePhone: Tenant.AlternatePhone,
+                AlternateAddressLine1: Tenant.AlternateAddressLine1,
+                AlternateAddressLine2: Tenant.AlternateAddressLine2,
+                AlternateCity: Tenant.AlternateCity,
+                AlternateState: Tenant.AlternateState,
+                AlternateZIP: Tenant.AlternateZIP,
               },
             });
 
