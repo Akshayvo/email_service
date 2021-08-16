@@ -258,7 +258,6 @@ export const tabs11 = [
         active: false,
     },];
 
-    
 export const tabs12 = [
     {
         id: '1',
@@ -271,7 +270,20 @@ export const tabs12 = [
         name: 'Unit Sizer',
         path: './unit-sizer',
         active: false,
-    },];
+    },
+    {
+        id: '3',
+        name: 'About Us',
+        path: './about',
+        active: false,
+    },
+    {
+        id: '4',
+        name: 'Gallery',
+        path: './photos',
+        active: false,
+    },
+];
 
 
 
@@ -1276,7 +1288,7 @@ export const unitSizerLocation12 = [
 
 
 
-export const aboutUsHeadingLocation1 = `About Us`;
+export const aboutUsHeadingLocation12 = `About Us`;
 
 export const aboutUsHeadingLocation2 = `About Us`;
 
@@ -1290,7 +1302,7 @@ export const aboutUsHeadingLocation6 = `About Us`;
 
 
 // tslint:disable-next-line:max-line-length
-export const aboutUsImageLocation1 = ``;
+export const aboutUsImageLocation12 = ``;
 
 // tslint:disable-next-line:max-line-length
 export const aboutUsImageLocation2 = ``;
@@ -1308,11 +1320,27 @@ export const aboutUsImageLocation5 = ``;
 export const aboutUsImageLocation6 = ``;
 
 
-export const aboutUsLocation1 = [
+export const aboutUsLocation12 = [
     {
-        p: ``,
+        p: `Need some extra space?`,
     },
-    
+    {
+        p: `When you rent from Boxer Storage – Allendale, you'll have 24-hour access to your belongings, friendly on-site staff,
+        and quality storage at affordable prices.`
+    },
+    {
+        p: `Moving? We’ve got the supplies and rentals that you need to pack, move and store your items safely.`
+    },
+    {
+        p: `Whether you need to store all the furniture in your home while you move, or you just need to clear out a little extra
+        room in your garage or basement, we have the space that you’ve been looking for.`
+    },
+    {
+        p: `Boxer Storage is Easy & Secure. Use our Online Rental and Payments, give us a call or email, or stop in to see us today!`
+    },
+    {
+        p: ` Need a rental truck, trailer or dollies? Book with us at:`
+    },
 ];
 
 export const aboutUsLocation2 = [

@@ -42,6 +42,7 @@ import { ThankYouGuard } from '../thank-you.guard';
 import { FaqComponent } from '../faq/faq.component';
 import { UpdateDetailsComponent } from '../api-bundle/update-details/update-details.component';
 import { UpdateComponent } from '../api-bundle/update/update.component';
+import { GalleryComponent } from '../gallery/gallery.component';
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -528,7 +529,7 @@ children: [
 
     ]
   },
-  // { path: 'photos', component: PhotosComponent },
+  { path: 'photos', component: GalleryComponent },
   { path: 'about', component: AboutUsComponent },
   { path: 'directions', component: DirectionsComponent },
 ],

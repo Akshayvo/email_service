@@ -735,7 +735,7 @@ export const hoursLocation12 = [
     // },
     {
         label: 'Monday - Friday: ',
-        data: '9:00AM to 6:00PM',
+        data: '9:00AM to 5:00PM',
     },
     {
         label: 'Saturday: ',
