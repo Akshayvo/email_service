@@ -31,3 +31,9 @@ button:focus {
   /* position: fixe; */
 }
 
+
+@media only screen and (max-width: 480px) {
+  .contact-button {
+    top: 170px;
+  }
+}

@@ -2,7 +2,7 @@
     <div class="heading py-2 row">
       <!-- <h2 class="col-6">Contact Us</h2> -->
       <div class="socialLink col-6" *ngFor="let socialLink of socialLink">
-          <a [href]="socialLink?.path" target="_blank">
+          <a [href]="socialLink?.path" target="_blank" rel="noopener">
               <i [class]="socialLink?.class" ></i>
             </a>
         </div>
@@ -75,7 +75,7 @@
     </div>
   
     <div *ngFor="let contact of contactInfo" class="py-1">
-      <span> <i class="{{contact.class}}"></i></span><span class="contact-data" *ngIf="contact.id === 0 || contact.id === 1 || contact.id === 2 else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></span>
+      <span> <i class="{{contact.class}}"></i></span><span class="contact-data" *ngIf="contact.id === 0 || contact.id === 1 || contact.id === 2 else other_content"><a [href]="contact?.redirect" rel="noopener">{{contact.data}}</a></span>
     
       <ng-template #other_content> <span class="contact-data">{{contact.data}}</span></ng-template>
     </div>

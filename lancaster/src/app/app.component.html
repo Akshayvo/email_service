@@ -5,11 +5,11 @@
 <router-outlet></router-outlet>
 
 <div class="contact-button">
-    <button (click)='dataShow();' *ngIf="!flag"><img src="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/telephone.svg" alt="" height="25px" width="25px;"></button>
+    <button aria-label="telephone" (click)='dataShow();' *ngIf="!flag"><img src="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/telephone.svg" alt="" height="25px" width="25px;"></button>
     <span *ngIf='flag' [ngClass]="'sticky-template'">
         <div class="row mx-0">
             <div class="col-2 px-0">
-                 <button (click)='dataShow()'><img src="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/close.svg" alt="" height="25px" width="25px;"></button>        
+                 <button aria-label="Close" (click)='dataShow()'><img src="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/close.svg" alt="" height="25px" width="25px;">close</button>        
             </div>
             <div class="col-10 px-0">
                 <app-contact-button></app-contact-button>

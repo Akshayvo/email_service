@@ -139,7 +139,7 @@ export const privacyPolicy = [
         }
       ],
       note: `If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone
-      at  <a href="${redirectPhone}" style="color: #000;">${phone}</a> or via email at <a href="${redirectEmail}" style="color:#000;">${email}</a>.`,
+      at  <a href="${redirectPhone}" rel="noopener" style="color: #000;">${phone}</a> or via email at <a href="${redirectEmail}" rel="noopener" style="color:#000;">${email}</a>.`,
       // sharing: [
       //   {
       //     heading: `Sharing`

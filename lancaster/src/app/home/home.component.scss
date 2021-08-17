@@ -3,7 +3,12 @@
 .contact-details {
   h4 {
     font-size: 1rem;
+    line-height: 1.4;
   }
+}
+
+.feature-text {
+  font-size: 1rem;
 }
 
 .display-contact {
@@ -105,6 +110,7 @@
     border-bottom: 1px solid $primary;
     width: 300px;
     margin: auto;
+    font-size: 2rem;
   }
 
   .we-provide-background {
@@ -136,6 +142,7 @@
     border-bottom: 1px solid $primary;
     width: 300px;
     margin: auto;
+    font-size: 2rem;
   }
 }
 
