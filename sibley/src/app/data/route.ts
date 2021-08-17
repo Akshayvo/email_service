@@ -96,7 +96,7 @@ const reviewURL = ``
     // Fallback when no prior route is matched
     { path: '', component: HomeComponent },
     { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
-    { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
+    // { path: `${environment.locationName}/reserve-unit`, component: ReserveComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'unit-sizer', component: UnitSizerComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
@@ -106,7 +106,7 @@ const reviewURL = ``
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
+        // { path: 'reserve', component: ReserveUnitFormComponent },
         { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
@@ -119,7 +119,7 @@ const reviewURL = ``
       component: ViewRatesComponent,
       children: [
         { path: '', component: ViewRatesPageComponent },
-        { path: 'reserve', component: ReserveUnitFormComponent },
+        // { path: 'reserve', component: ReserveUnitFormComponent },
         { path: 'move-in', component: ReserveUnitFormComponent },
         { path: 'confirmation', component: ConfirmationDataComponent },
         { path: 'payReservationCharges', component: PayRentFormComponent },
