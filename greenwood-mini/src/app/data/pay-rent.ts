@@ -14,17 +14,17 @@ export const tableHeader = [
 export const tableData = [
   {
     facility: ' Rebel Mini Storage',
-    address: '4300 Evanston Ave, Muskegon, MI 49442',
+    address: '704 Tallahatchie St, Greenwood, MS 38930',
     url: 'rebel-mini/rent-sub/login'
   },  
   {
     facility: ' Secure Storage',
-    address: '5607 Henkel Rd, Howard City, MI 49329',
+    address: '707 US-82, Greenwood, MS 38930',
     url: 'secure-storage/rent-sub/login'
   },  
   {
     facility: ' Greenwood Mini-Storage Location',
-    address: '4062 S State Rd, Ionia, MI 48846',
+    address: '1604 Chickasaw St Greenwood, MS 38930',
     url: 'green-wood/rent-sub/login'
   },
 ];
@@ -32,17 +32,17 @@ export const tableData = [
 export const tableDataContactPage = [
   {
     facility: ' Rebel Mini Storage',
-    address: '4300 Evanston Ave, Muskegon, MI 49442',
+    address: '704 Tallahatchie St, Greenwood, MS 38930',
     url: 'rebel-mini'
   },
     {
     facility: ' Secure Storage',
-    address: '5607 Henkel Rd, Howard City, MI 49329',
+    address: '707 US-82, Greenwood, MS 38930',
     url: 'secure-storage'
   },
    {
     facility: ' Greenwood Mini-Storage Location',
-    address: '4062 S State Rd, Ionia, MI 48846',
+    address: '1604 Chickasaw St Greenwood, MS 38930',
     url: 'green-wood'
   }
 ];

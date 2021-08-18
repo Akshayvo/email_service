@@ -33,7 +33,7 @@ export class ViewRatesComponent implements OnInit {
       this.id = 2;
       this.heading = headingLocation2;
     } 
-    else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
+    else if (this.router.url.includes(`${environment.locationName}/green-wood`)) {
       this.id = 3;
       this.heading = headingLocation3;
     }

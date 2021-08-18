@@ -1,7 +1,7 @@
 <div class="col-md-12 display bg-primary py-2" id="site-header">
   <div class="container">
     <div class="contact-header">
-      <!-- <div class="row">
+      <div class="row">
         <div class="col-md-10">
           <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
             <i [class]="contact?.class"></i>
@@ -17,7 +17,7 @@
             </a>
           </span>
         </div>
-      </div> -->
+      </div>
      <div class="payment-button">
       <a class="btn btn-payment p-2" [routerLink]="['/pay-rent']" role="button">Pay Rent</a>
      </div> 
@@ -29,7 +29,7 @@
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')">
       <h1>Greenwood Mini-Storage</h1>
-      <!-- <img src="{{imageBaseUrl}}/boxer-storage-logo.{{imagetype}}" width="auto" height="70px"  alt="logo artwork that spells our Boxer Storage"> -->
+      <!-- <img src="{{imageBaseUrl}}/boxer-storage-logo.{{imagetype}}" width="auto" height="70px"  alt="logo artwork that spells our Greenwood Mini-Storage"> -->
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +45,7 @@
 
           <span *ngIf="nav?.type === 'location'">
               <div class="dropdown show">  
-                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/michigan/rebel-mini/storage-units')"
+                <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink" [class.nav-link-active]="router.isActive('/mississippi/rebel-mini/storage-units')"
                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
                 <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink">
                   <li *ngFor="let sub of nav.sublinks | orderBy:'label' text-center">
@@ -55,7 +55,7 @@
           </span>
           <span *ngIf="nav?.type === 'view-rates'">
             <div class="dropdown show">  
-              <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink1" [class.nav-link-active]="router.isActive('/michigan/rebel-mini/view-rates')"
+              <a class="dropdown-toggle nav-link" role="button" id="dropdownMenuLink1" [class.nav-link-active]="router.isActive('/mississippi/rebel-mini/view-rates')"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{nav.label}}</a>
               <ul class="dropdown-menu location-list" aria-labelledby="dropdownMenuLink1">
                 <li *ngFor="let sub of nav.sublinks | orderBy:'label' text-center">

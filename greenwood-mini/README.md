@@ -3,9 +3,9 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace boxer-storage Rental Spaces with your project name(Hyphen Case)
+Replace greenwood-mini Rental Spaces with your project name(Hyphen Case)
 
-Replace boxer-storage Rental Spaces with your project name(camelCase)
+Replace greenwood-mini Rental Spaces with your project name(camelCase)
 
 Find and Replace across project
 

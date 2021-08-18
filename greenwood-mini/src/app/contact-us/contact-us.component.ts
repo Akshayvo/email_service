@@ -105,7 +105,7 @@ export class ContactUsComponent implements OnInit {
       else if (this.router.url.includes(`${environment.locationName}/secure-storage`)) {
     this.script = contactPageLocation2Script;
       }
-      else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
+      else if (this.router.url.includes(`${environment.locationName}/green-wood`)) {
     this.script = contactPageLocation3Script;
       }      
   }

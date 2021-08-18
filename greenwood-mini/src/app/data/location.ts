@@ -135,17 +135,17 @@ export const headingLocation2 = ``;
 
 export const headingLocation3 = ``;
 
-export const headingReservePageLocation1 = `Ready to reserve your self storage unit at our Evanston Ave location?`;
+export const headingReservePageLocation1 = `Ready to reserve your self storage unit at our Rebel Mini Storage?`;
 
-export const headingReservePageLocation2 = `Ready to reserve your self storage unit at our Howard City location?`;
+export const headingReservePageLocation2 = `Ready to reserve your self storage unit at our Secure Storage?`;
 
-export const headingReservePageLocation3 = `Ready to reserve your self storage unit at our Ionia location?`;
+export const headingReservePageLocation3 = `Ready to reserve your self storage unit at our Greenwood Mini Storage?`;
 
 export const heading1 = `Rebel Mini Storage`;
 
 export const heading2 = `Secure Storage`;
 
-export const heading3 = `Greenwood Mini-Storage Location`;
+export const heading3 = `Greenwood Mini-Storage`;
 
 export const unitSizerLocation1 = [
     {

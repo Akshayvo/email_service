@@ -167,7 +167,7 @@ export const Location1Script = {
   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
      'areaServed': {
   '@type': 'State',
-  'name': 'Michigan'
+  'name': 'Mississippi'
    },
    'hasMap': maplocation1,
 
@@ -202,7 +202,7 @@ export const Location2Script = {
   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
      'areaServed': {
   '@type': 'State',
-  'name': 'Michigan'
+  'name': 'Mississippi'
    },
    'hasMap': maplocation2,
 
@@ -238,7 +238,7 @@ export const Location3Script = {
   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
      'areaServed': {
   '@type': 'State',
-  'name': 'Michigan'
+  'name': 'Mississippi'
    },
    'hasMap': maplocation3,
 

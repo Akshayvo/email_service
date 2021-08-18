@@ -173,7 +173,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: `${environment.locationName}green-wood`,
+    { path: `${environment.locationName}/green-wood`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -988,62 +988,14 @@ resolve: { data: AppResolver }
         externalUrl: ''
     }
   },
-  { path: 'reviewgreen-wood', component: HomeComponent,
+  { path: 'review/green-wood', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
     data: {
         externalUrl: ''
     }
-  },
-    { path: 'review/alpine', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/red-barn', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/wayland-westside', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/wayland-mill', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/wayland-southside', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
-  { path: 'review/robertsdale', component: HomeComponent,
-    resolve: {
-        url: 'externalUrlRedirectResolver'
-    },
-    data: {
-        externalUrl: ''
-    }
-  },
+  },    
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
@@ -1055,60 +1007,14 @@ resolve: { data: AppResolver }
     children: childroute
   },
   {
-    path: 'pay-rentgreen-wood', component: PayRentComponent,
+    path: 'pay-rent/green-wood', component: PayRentComponent,
     children: childroute
   },
-   {
-    path: 'pay-rent/alpine', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/red-barn', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/wayland-westside', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/wayland-mill', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/wayland-southside', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/dutton', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/m45', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/otsego', component: PayRentComponent,
-    children: childroute
-  },
-  {
-    path: 'pay-rent/allendale', component: PayRentComponent,
-    children: childroute
-  },
-
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'contact-rebel-mini', component: ContactUsComponent},
   { path: 'contact-secure-storage', component: ContactUsComponent},
-  { path: 'contact-ionia', component: ContactUsComponent},
-  { path: 'contact-alpine', component: ContactUsComponent},
-  { path: 'contact-red-barn', component: ContactUsComponent},
-  { path: 'contact-wayland-westside', component: ContactUsComponent},
-  { path: 'contact-wayland-mill', component: ContactUsComponent},
-  { path: 'contact-wayland-southside', component: ContactUsComponent},
-  { path: 'contact-dutton', component: ContactUsComponent},
-  { path: 'contact-m45', component: ContactUsComponent},
-  { path: 'contact-otsego', component: ContactUsComponent},
-  { path: 'contact-allendale', component: ContactUsComponent},
+  { path: 'contact-green-wood', component: ContactUsComponent},  
   { path: '**', component: ErrorComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
 ];

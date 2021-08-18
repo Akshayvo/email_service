@@ -209,9 +209,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   // this.commandingOfficerPhone = this.dataSharingService.objTenant.CommandingOfficerPhone;
 
 
-    // if (this.dataSharingService.facilityLocation) {
-    //   this.facilityLocation = this.dataSharingService.facilityLocation;
-    // }
+    if (this.dataSharingService.facilityLocation) {
+      this.facilityLocation = this.dataSharingService.facilityLocation;
+    }
 
   }
 
@@ -280,16 +280,16 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           }
           this.reservationInProgress = false;
 
-          if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`${environment.locationName}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
-          } else {
-            this.router.navigate([`${environment.locationName}/reserve-unit/thank-you`]);
-          }
+          // if (!!localStorage.getItem('paymentTab')) {
+          //   this.router.navigate([`${environment.locationName}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+          // } else {
+          //   this.router.navigate([`${environment.locationName}/reserve-unit/thank-you`]);
+          // }
 
           // if (!!localStorage.getItem('paymentTab')) {
           //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
           // } else {
-          //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
           // }
         }
 
@@ -338,11 +338,11 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           // } else {
           //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/thank-you`]);
           // }
-          if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`${environment.locationName}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
-          } else {
-            this.router.navigate([`${environment.locationName}/moveIn/thank-you`]);
-          }
+          // if (!!localStorage.getItem('paymentTab')) {
+          //   this.router.navigate([`${environment.locationName}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
+          // } else {
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/thank-you`]);
+          // }
         }
       }, (err: any) => {
         if (err.status === 403) {

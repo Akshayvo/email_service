@@ -12,7 +12,7 @@ import { NavigationService } from './services/navigation.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Boxer Storage';
+  title = 'Greenwood Mini-Storage';
   flag: boolean;
   public offsets: number[];
   x: any;

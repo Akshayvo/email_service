@@ -101,7 +101,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   myNavLinks: any;
   loginUrl: any;
   cardType: string;
-  // facilityLocation: string;
+  facilityLocation: string;
   cards: any;
   paymentTab: string;
 
@@ -236,9 +236,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
        this.loginUrl = localStorage.getItem('paymentNavigationUrl');
     }
 
-    // if (this.dataSharingService.facilityLocation) {
-    //   this.facilityLocation = this.dataSharingService.facilityLocation;
-    // }
+    if (this.dataSharingService.facilityLocation) {
+      this.facilityLocation = this.dataSharingService.facilityLocation;
+    }
     this.tenantData.objTenant = this.dataSharingService.objTenant;
     if (!!localStorage.getItem('strTenantToken')) {
       this.getPayMethods();
@@ -710,15 +710,15 @@ public navigateToPrevious() {
         if (strConfirmationResponse.intErrorCode === 1  ) {
           this.makePaymentForUnit = false;
 
-          if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`${environment.locationName}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
-          } else {
-            this.router.navigate([`${environment.locationName}/move-in/thank-you`]);
-          }
+          // if (!!localStorage.getItem('paymentTab')) {
+          //   this.router.navigate([`${environment.locationName}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
+          // } else {
+          //   this.router.navigate([`${environment.locationName}/move-in/thank-you`]);
+          // }
           // if (!!localStorage.getItem('paymentTab')) {
           //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/${localStorage.getItem('paymentTab')}/thank-you`]);
           // } else {
-          //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/thank-you`]);
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/move-in/thank-you`]);
           // }
           this.showloaderForPayment = false;
 

@@ -142,7 +142,7 @@ export class LocationComponent implements OnInit {
         content: `${this.location1PageContent}`,
       });
       this.titleService.setTitle(`${this.location1PageTitle}`);
-      this.locationName = `Boxer Storage - Evanston Ave  Location`;
+      this.locationName = `Rebel Mini Storage`;
       this.dataSharingService.apiKey =
         this.dataSharingService.locationAPIKey.loc1;
       this.dataSharingService.locationName = this.locationName;
@@ -169,7 +169,7 @@ export class LocationComponent implements OnInit {
         content: `${this.location2PageContent}`,
       });
       this.titleService.setTitle(`${this.location2PageTitle}`);
-      this.locationName = `Boxer Storage - Secure Storage`;
+      this.locationName = `Secure Storage`;
       this.dataSharingService.apiKey =
         this.dataSharingService.locationAPIKey.loc2;
       this.dataSharingService.locationName = this.locationName;
@@ -188,13 +188,13 @@ export class LocationComponent implements OnInit {
           content: element.content,
         });
       });
-    } else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/green-wood`)) {
       this.meta.addTag({
         name: "description",
         content: `${this.location3PageContent}`,
       });
       this.titleService.setTitle(`${this.location3PageTitle}`);
-      this.locationName = `Boxer Storage - Ionia Location`;
+      this.locationName = `Greenwood Mini-Storage`;
       this.dataSharingService.apiKey =
         this.dataSharingService.locationAPIKey.loc3;
       this.dataSharingService.locationName = this.locationName;
@@ -257,7 +257,7 @@ export class LocationComponent implements OnInit {
       this.router.url.includes(`${environment.locationName}/secure-storage`)
     ) {
       this.og = ogLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/green-wood`)) {
       this.og = ogLocation3;
     } 
   }
@@ -269,7 +269,7 @@ export class LocationComponent implements OnInit {
       this.router.url.includes(`${environment.locationName}/secure-storage`)
     ) {
       this.twitter = twitterLocation2;
-    } else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/green-wood`)) {
       this.twitter = twitterLocation3;
     }    
   }
@@ -281,7 +281,7 @@ export class LocationComponent implements OnInit {
       this.router.url.includes(`${environment.locationName}/secure-storage`)
     ) {
       this.fetchDetailsLocation2();
-    } else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
+    } else if (this.router.url.includes(`${environment.locationName}/green-wood`)) {
       this.fetchDetailsLocation3();
     }
   }
@@ -297,7 +297,7 @@ export class LocationComponent implements OnInit {
     //         );
     // }
     //  else if ( this.locationId === 3 ) {
-    //   this.router.navigate([`${environment.locationName}green-wood/reserve-unit`],
+    //   this.router.navigate([`${environment.locationName}/green-wood/reserve-unit`],
     //         );
     // }
     //  else if ( this.locationId === 4 ) {

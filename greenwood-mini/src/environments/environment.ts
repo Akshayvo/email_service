@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'michigan', // state/city  **Remeber to update locationName in sitemap.xml as well
+  locationName: 'mississippi', // state/city  **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
   military: true, // set true for Military and Driver's Details 
@@ -14,8 +14,8 @@ export const environment = {
   errorsMails: ['balasubramanian.k@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-  appId: 'Boxer Storage - Production',
-  facilityName: 'Boxer Storage',
+  appId: 'Greenwood Mini-Storage - Production',
+  facilityName: 'Greenwood Mini-Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: `https://boxerstorage.com`  

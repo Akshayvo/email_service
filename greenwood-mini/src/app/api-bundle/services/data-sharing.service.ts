@@ -6,9 +6,14 @@ import { Injectable } from "@angular/core";
 export class DataSharingService {
   locationAPIKey = {
     loc1: "dzJ0MVc1SjgqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //21583 rebel-mini,
-    loc2: "dzJ0OFc2SjIqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28620 secure-storage,
-    loc3: "dzJ0OFc0SjEqME46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28410 ionia
+    loc2: "dzJ0MVc1SjgqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //21582 secure-storage,
+    loc3: "dzF0NFcxSjEqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //14113 greenwood-mini
   };
+  // locationAPIKey = {
+  //   loc1: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28464 
+  //   loc2: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28464 
+  //   loc3: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28464 
+  // };
   showMilitaryDetails: boolean;
   paymentSuccess: boolean;
   locationName: string;

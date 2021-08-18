@@ -151,7 +151,7 @@ else if (this.router.url.includes(`${environment.locationName}/secure-storage`))
   this.locationReserve = "location2reserve";
   this.locationMovein = "location2movein";
   } 
-  else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
+  else if (this.router.url.includes(`${environment.locationName}/green-wood`)) {
     this.locationId = 3;
     this.locationReserve = "location3reserve";
     this.locationMovein = "location3movein";

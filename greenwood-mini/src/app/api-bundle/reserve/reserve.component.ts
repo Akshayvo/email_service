@@ -39,7 +39,7 @@ export class ReserveComponent implements OnInit {
       this.id = 2;
       this.heading = headingReservePageLocation2;
     }
-     else if (this.router.url.includes(`${environment.locationName}green-wood`)) {
+     else if (this.router.url.includes(`${environment.locationName}/green-wood`)) {
       this.id = 3;
       this.heading = headingReservePageLocation3;
     }

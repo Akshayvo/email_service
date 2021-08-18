@@ -3,9 +3,9 @@
 Welcome to the project documentation!
 
 ## Changing the project name
-Replace Boxer Storage with your project name(Hyphen Case)
+Replace Greenwood Mini-Storage with your project name(Hyphen Case)
 
-Replace Boxer Storage with your project name(camelCase)
+Replace Greenwood Mini-Storage with your project name(camelCase)
 
 Find and Replace across project
 

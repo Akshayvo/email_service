@@ -28,13 +28,13 @@ export const unitSizerPageContent = ``;
 export const contactPageTitle = `Contact Us | Greenwood Mini-Storage`;
 export const contactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
 
-export const thankYouPageTitle = `Thank You For Reserving Your Unit at Boxer Storage!`;
+export const thankYouPageTitle = `Thank You For Reserving Your Unit at Greenwood Mini-Storage!`;
 export const thankYouPageContent = `We've received your reservation! One of our friendly staff will be in touch!`;
 
-export const privacyPolicyPageTitle = `Privacy Policy | Boxer Storage`;
+export const privacyPolicyPageTitle = `Privacy Policy | Greenwood Mini-Storage`;
 export const privacyPolicyPageContent = `This page contains this website's privacy policy. For more information, please contact the business directly.`;
 
-export const faqPageTitle = `Frequently Asked Questions | Boxer Storage`;
+export const faqPageTitle = `Frequently Asked Questions | Greenwood Mini-Storage`;
 export const faqPageContent = `Have questions about the services our 12 self storage facilities provide? Take a look at our frequently asked questions, or you can give our office a call!`;
 
 
