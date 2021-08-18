@@ -7,6 +7,8 @@ export const environment = {
   type: 0,  // { API: 0, iframe: 1 }
   paymentPageType: 0, // { withoutTab: 0, withTab: 1}
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
+  alternateType: { moveIn: true, reserve: false }, // { moveIn: true, reserve: true },
+  military: true, // set true for Military and Driver's Details 
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   appId: 'SouthernStorage',

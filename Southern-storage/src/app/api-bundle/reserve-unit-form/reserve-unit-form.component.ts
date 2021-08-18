@@ -4,10 +4,11 @@ import { UnitTypes, LstUnitTypes, RentalPeriod, LstRentalPeriods } from '../mode
 import { ObjTenantDetail, ObjTenant, StrTempTenantToken } from '../models/tenant';
 import { Router, ActivatedRoute } from '@angular/router';
 import { DatePipe } from '@angular/common';
-
+import { environment } from '../../../environments/environment';
 import { Subscription } from 'rxjs';
 import * as moment from 'moment';
-import { option } from '../../data/view-rates';
+import { MilitaryBranch, MilitaryTypes, option, option1 } from '../../data/view-rates';
+
 import { DataSharingService } from '../services/data-sharing.service';
 import { FetchDataService } from '../services/fetch-data.service';
 import { LeadDaysService } from '../services/lead-days.service';
@@ -62,6 +63,11 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   count = 0;
 
   option = [];
+  option1 = [];
+  militaryTypes = [];
+  militaryBranch = [];
+  MilitaryBranch: number;
+  MilitaryTypes: number;
   reserveUnitForm: FormGroup;
 
   tokenExit: string;
@@ -91,6 +97,10 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   myNavLinks: any;
   minDay: number;
   maxDay: number;
+  alternatetypeDetail: any;
+
+  showAltDetails = false;
+  showMilitaryDetails = false;
 
 
   filterLstUnitTypes: LstUnitTypes[];
@@ -159,6 +169,79 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
+        DriversLicense: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DriversLicenseExpDate: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DriversLicenseState: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        // DateOfBirth: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryBranch: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryDivision: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryType: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // MilitaryID: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // DeployedUntil: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // CommandingOfficer: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // )],
+        // CommandingOfficerPhone: ['', conditionalValidator(
+        //   (() => this.showMilitaryDetails === false),
+        //   Validators.required
+        // ),],
+        AlternateName: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternatePhone:   ['', [  conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),
+          Validators.pattern(
+            '^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$'
+            )
+        ]],
+        AlternateAddressLine1: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternateAddressLine2: [''],
+        AlternateCity: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternateState: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
+        AlternateZIP: ['', conditionalValidator(
+          (() => this.showAltDetails === false),
+          Validators.required
+        ),],
       }),
 
       lstUnitTypes: new FormArray([
@@ -190,11 +273,17 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       this.navigateToReserve = true;
       this.dataSharingService.navigateToReserve = true;
       this.dataSharingService.navigateToMoveIn = false;
+      this.showAltDetails = (environment.alternateType.reserve === true) ? true : false;
+      this.dataSharingService.showAltDetails = this.showAltDetails;
     } else {
       if (this.router.url.includes('/move-in')) {
         this.navigateToMoveIn = true;
         this.dataSharingService.navigateToMoveIn = true;
         this.dataSharingService.navigateToReserve = false;
+        this.showAltDetails = (environment.alternateType.moveIn === true) ? true : false;
+        this.dataSharingService.showAltDetails = this.showAltDetails;
+        this.showMilitaryDetails = (environment.military === true) ? true : false;
+        this.dataSharingService.showMilitaryDetails = this.showMilitaryDetails;
       }
     }
   }
@@ -217,6 +306,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
     this.dataSharingService.initMyNavLinks('reservationForm', window.location.pathname);
     this.myNavLinks = this.dataSharingService.getMyNavLinks('reservationForm');
+    this.fetchMilitaryBranch();
+    this.fetchMilitaryTypes();
     this.getData();
     this.getRentalPeriod();
     this.getLeadDays(this.data);
@@ -255,6 +346,15 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   }
   public fetchUSState() {
     this.option = option;
+    this.option1 = option1;
+  }
+
+  public fetchMilitaryTypes() {
+    this.militaryTypes = MilitaryTypes;
+  }
+
+  public fetchMilitaryBranch() {
+    this.militaryBranch = MilitaryBranch;
   }
 
   public navigate(location: any) {
@@ -380,6 +480,24 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
+            DriversLicense: Tenant.DriversLicense,
+            DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+            DriversLicenseState: Tenant.DriversLicenseState,
+            // DateOfBirth: Tenant.DateOfBirth,
+            // MilitaryType: Tenant.militaryType,
+            // MilitaryBranch: Tenant.militaryBranch,
+            // MilitaryID: Tenant.MilitaryID,
+            // DeployedUntil: Tenant.DeployedUntil,
+            // MilitaryDivision: Tenant.MilitaryDivision,
+            // CommandingOfficer: Tenant.CommandingOfficer,
+            // CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
+            AlternateName: Tenant.AlternateName,
+            AlternatePhone: Tenant.AlternatePhone,
+            AlternateAddressLine1: Tenant.AlternateAddressLine2,
+            AlternateAddressLine2: Tenant.AlternateAddressLine2,
+            AlternateCity: Tenant.AlternateCity,
+            AlternateState: Tenant.AlternateState,
+            AlternateZIP: Tenant.AlternateZIP,
           };
           this.reserveUnitForm.patchValue({
             objTenant: ({
@@ -392,6 +510,25 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
+              DriversLicense: Tenant.DriversLicense,
+            DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+            DriversLicenseState: Tenant.DriversLicenseState,
+            // DateOfBirth: Tenant.DateOfBirth,
+            // MilitaryType: Tenant.militaryType,
+            // MilitaryBranch: Tenant.militaryBranch,
+            // MilitaryID: Tenant.MilitaryID,
+            // DeployedUntil: Tenant.DeployedUntil,
+            // MilitaryDivision: Tenant.MilitaryDivision,
+            // CommandingOfficer: Tenant.CommandingOfficer,
+            // CommandingOfficerPhone: Tenant.CommandingOfficerPhone,
+            AlternateName: Tenant.AlternateName,
+            AlternatePhone: Tenant.AlternatePhone,
+            AlternateAddressLine1: Tenant.AlternateAddressLine2,
+            AlternateAddressLine2: Tenant.AlternateAddressLine2,
+            AlternateCity: Tenant.AlternateCity,
+            AlternateState: Tenant.AlternateState,
+            AlternateZIP: Tenant.AlternateZIP,
+              
             }),
           });
 

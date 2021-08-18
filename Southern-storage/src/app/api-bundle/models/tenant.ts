@@ -16,6 +16,16 @@ export class ObjTenant {
   City: string;
   State: string;
   ZIP: string;
+  DriversLicense: string;
+  DriversLicenseExpDate: string;
+  DateOfBirth: string;
+  MilitaryType: MilitaryType;
+  MilitaryBranch: MilitaryBranch
+  MilitaryID: string;
+  DeployedUntil: string;
+  MilitaryDivision: string;
+  CommandingOfficer: string;
+  CommandingOfficerPhone: string;
 
   constructor(
     FirstName: string,
@@ -37,6 +47,23 @@ export class ObjTenant {
     this.City = City;
     this.State = State;
     this.ZIP = ZIP;
+  }
+}
+
+export class MilitaryType {
+  militaryType: MilitaryType;
+
+  constructor(militaryType: MilitaryType) {
+    this.militaryType = militaryType;
+  }
+
+}
+
+export class MilitaryBranch {
+  militaryBranch: MilitaryBranch;
+
+  constructor(militaryBranch: MilitaryBranch ) {
+    this.militaryBranch = militaryBranch;
   }
 }
 

@@ -57,6 +57,7 @@ import { SignUpComponent } from './api-bundle/sign-up/sign-up.component';
 import { AutoPayComponent } from './api-bundle/auto-pay/auto-pay.component';
 import { ReserveComponent } from './api-bundle/reserve/reserve.component';
 import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component';
+import { AlternateDetailsComponent } from './alternate-details/alternate-details.component';
 
 @NgModule({
   declarations: [
@@ -98,6 +99,7 @@ import { ViewRatesComponent } from './api-bundle/view-rates/view-rates.component
     AutoPayComponent,
     ReserveComponent,
     ViewRatesComponent,
+    AlternateDetailsComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

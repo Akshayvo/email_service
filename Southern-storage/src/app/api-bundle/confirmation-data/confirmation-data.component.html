@@ -81,6 +81,149 @@
                             <td>
                                 {{zip}}
                             </td>
+                        </tr> 
+                        <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                            <td>
+                                Driver's License Number
+                            </td>
+                            <td>
+                                {{driversLicense}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                            <td>
+                                Driver's License Expiration Date
+                            </td>
+                            <td>
+                                {{driversLicenseExpDate}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                            <td>
+                                Driver's License State
+                            </td>
+                            <td>
+                                {{driversLicenseState}}
+                            </td>
+                        </tr>
+                        <!-- <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                            <td>
+                                Military Type
+                            </td>
+                            <td>
+                                {{militaryType}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                            <td>
+                                Military Branch
+                            </td>
+                            <td>
+                                {{militaryBranch}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                            <td>
+                                Military ID
+                            </td>
+                            <td>
+                                {{militaryID}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                            <td>
+                                Military Deployed Until Date
+                            </td>
+                            <td>
+                                {{deployedUntil}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                            <td>
+                                Military Division/Unit
+                            </td>
+                            <td>
+                                {{militaryDivision}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                            <td>
+                                Military Commanding Officer
+                            </td>
+                            <td>
+                                {{commandingOfficer}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                            <td>
+                                Military C.O. Phone
+                            </td>
+                            <td>
+                                {{commandingOfficerPhone}}
+                            </td>
+                        </tr>                     -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6 p-3 confirmation-style" *ngIf="!!showAltDetails">
+                <h3 class="mb-3">Alternate Contact Information</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                {{alternateName}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Phone Number 
+                            </td>
+                            <td>
+                                {{alternatePhone}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Address Line 1
+                            </td>
+                            <td>
+                                {{alternateAddressLine1}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    Address Line 2
+                            </td>
+                            <td>
+                                {{alternateAddressLine2}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    City
+                            </td>
+                            <td>
+                                {{alternateCity}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                State
+                        </td>
+                            <td>
+                                {{alternateStateString}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    ZIP
+                            </td>
+                            <td>
+                                {{alternateZIP}}
+                            </td>
                         </tr>                     
                     </tbody>
                 </table>

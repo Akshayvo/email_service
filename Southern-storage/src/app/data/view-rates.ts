@@ -16,6 +16,115 @@ export const th = [
   },
 ];
 
+export const MilitaryTypes = [
+  {
+    Description: `NA`,
+    Value: 0 
+  },
+  {
+    Description: `Active`,
+    Value: 1
+  },
+  {
+    Description: `Reserve`,
+    Value: 2 
+  },
+  {
+    Description: `Veteran`,
+    Value: 3 
+  },
+  {
+    Description: `Retired`,
+    Value: 4
+  },
+  {
+    Description: `Deployed`,
+    Value: 5 
+  },
+]
+
+export const MilitaryBranch = [
+  {
+    Description: `NA`,
+    Value: 0 
+  },
+  {
+    Description: `Army`,
+    Value: 1
+  },
+  {
+    Description: `Navy`,
+    Value: 2 
+  },
+  {
+    Description: `AirForce`,
+    Value: 3 
+  },
+  {
+    Description: `Marines`,
+    Value: 4
+  },
+  {
+    Description: `CoastGuard`,
+    Value: 5 
+  },
+]
+
+export const option1 =  [
+  {
+    description: 'Alberta',
+    id: 'AB'
+  },
+  {
+    description: 'British Columbia',
+    id: 'BC'
+  },
+  {
+    description: 'Manitoba',
+    id: 'MB'
+  },
+  { 
+    description: 'New Brunswick',
+    id: 'NB'
+  },
+  {
+    description: 'Newfoundland and Labrador',
+    id: 'NL'
+  },
+  {
+    description: 'Northwest Territories',
+    id: 'NT'
+  },
+  {
+    description: 'Nova Scotia',
+    id: 'NS'
+  },
+  {
+    description: 'Nunavut',
+    id: 'NU'
+  },
+  {
+    description: 'Ontario',
+    id: 'ON'
+  },
+  {
+    description: 'Prince Edward Island',
+    id: 'PE'
+  },
+  {
+    description: 'Quebec',
+    id: 'QC'
+  },
+  {
+    description: 'Saskatchewan',
+    id: 'SK'
+  },
+  {
+    description: 'Yukon',
+    id: 'YT'
+  },
+  ];
+
 export const viewrates = [
     {
         p: `Do you like the facility, and it's extremely affordable self storage and workshop pricing?

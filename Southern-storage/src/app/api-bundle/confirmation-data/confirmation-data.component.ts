@@ -35,11 +35,17 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     id: ''
   }];
 
+  options1 = [ {
+    description: '',
+    id: ''
+  }];
+
   stateString: string;
+  alternateStateString: string;
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
   reservationInProgress = false;
-
+  alternateIndex: string;
   strAccessCode: string;
   strConfirmation: string;
   tokenExit: string;
@@ -51,7 +57,8 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   // formattedMoveInDate: any;
 
   unitTypeNotAvailability = false;
-
+  showAltDetails = false;
+  showMilitaryDetails = false; 
   firstName: string;
   lastName: string;
   phone: string;
@@ -65,6 +72,26 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   description: string;
   monthlyRate: number;
   myNavLinks: any;
+  alternateName : any;
+  alternatePhone : any;
+  alternateAddressLine1 : any;
+  alternateAddressLine2 : any;
+  alternateCity : any;
+  alternateState : any;
+  alternateZIP : any;
+
+  driversLicense : any;
+  driversLicenseExpDate : any;
+  driversLicenseState: any;
+  dateOfBirth : any;
+  militaryType : any;
+  militaryBranch: any; 
+  militaryID: any;
+  deployedUntil : any;
+  militaryDivision: any;
+  commandingOfficer: any;
+  commandingOfficerPhone: any;
+  
 
   tenantData = {
     objTenant: {}
@@ -135,6 +162,16 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
         this.stateString = this.options[this.index].description;
       }
      }
+
+     if (!!this.dataSharingService.objTenant.AlternateState) {
+      this.alternateIndex = JSON.stringify(this.options.findIndex(x => x.id === this.dataSharingService.objTenant.AlternateState));
+      if (!!this.alternateIndex) {
+        this.alternateStateString = this.options[this.alternateIndex].description;
+      } else {
+        this.alternateIndex = JSON.stringify(this.options1.findIndex(x => x.id === this.dataSharingService.objTenant.AlternateState));
+        this.alternateStateString = this.options1[this.alternateIndex].description; 
+      }
+     }
   }
 
   public navigateToPrevious() {
@@ -150,24 +187,48 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.router.navigate([location]);
   }
 
-  ngOnInit() {
+  getTenantUnitData() {
     this.firstName = this.dataSharingService.objTenant.FirstName;
     this.lastName = this.dataSharingService.objTenant.LastName;
     this.phone = this.dataSharingService.objTenant.Phone;
     this.emailAddress = this.dataSharingService.objTenant.EmailAddress;
-    this.addressLine1 = this.dataSharingService.objTenant.AddressLine1;
+    this.addressLine1  = this.dataSharingService.objTenant.AddressLine1;
     this.addressLine2 = this.dataSharingService.objTenant.AddressLine2;
     this.city = this.dataSharingService.objTenant.City;
     this.zip = this.dataSharingService.objTenant.ZIP;
+    this.alternateName = this.dataSharingService.objTenant.AlternateName;
+    this.alternatePhone = this.dataSharingService.objTenant.AlternatePhone;
+    this.alternateAddressLine1 = this.dataSharingService.objTenant.AlternateAddressLine1;
+    this.alternateAddressLine2 = this.dataSharingService.objTenant.AlternateAddressLine2;
+    this.alternateCity = this.dataSharingService.objTenant.AlternateCity;
+    this.alternateState = this.dataSharingService.objTenant.AlternateState;
+    this.alternateZIP = this.dataSharingService.objTenant.AlternateZIP;
     this.reservationFee = this.dataSharingService.LstUnitTypes.ReservationFee;
     this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
     this.description = this.dataSharingService.LstUnitTypes.Description;
     this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
-    this.navTo = this.dataSharingService.navigationTo;
+    this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
+    this.driversLicenseExpDate = this.dataSharingService.objTenant.DriversLicenseExpDate;
+    this.driversLicenseState = this.dataSharingService.objTenant.DriversLicenseState;
+    // this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
+    // this.militaryType = this.dataSharingService.objTenant.MilitaryType;
+    // this.militaryBranch = this.dataSharingService.objTenant.MilitaryBranch;
+    // this.militaryID = this.dataSharingService.objTenant.MilitaryID;
+    // this.deployedUntil = this.dataSharingService.objTenant.DeployedUntil;
+    // this.militaryDivision = this.dataSharingService.objTenant.MilitaryDivision;
+    // this.commandingOfficer = this.dataSharingService.objTenant.CommandingOfficer;
+    // this.commandingOfficerPhone = this.dataSharingService.objTenant.CommandingOfficerPhone;
+  
+  }
+
+  ngOnInit() {
+    this.showAltDetails = this.dataSharingService.showAltDetails;
+    this.showMilitaryDetails = this.dataSharingService.showMilitaryDetails;
+    this.getTenantUnitData();
     this.dataSharingService.initMyNavLinks('confirmationData', window.location.pathname);
 
     this.myNavLinks = this.dataSharingService.getMyNavLinks('confirmationData');
-
+    this.navTo = this.dataSharingService.navigationTo;
     if (this.dataSharingService.facilityLocation) {
       this.facilityLocation = this.dataSharingService.facilityLocation;
     }
@@ -385,7 +446,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           if (this.navigateToMoveIn === true) {
             if (this.dataSharingService.MoveInData.TotalChargesAmount > 0) {
               this.dataSharingService.addingTenant = true;
-              this.router.navigate([`${this.navTo}//payMoveInCharges`]);
+              this.router.navigate([`${this.navTo}/payMoveInCharges`]);
             } else {
               this.addTenant(this.tenantData);
             }
