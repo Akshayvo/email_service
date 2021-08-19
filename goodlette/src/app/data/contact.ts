@@ -4,7 +4,7 @@ export const contact = [
         label: 'Address:',
         data: '400 Goodlette Rd N, Naples, FL 34102',
         class: 'fas fa-map-marker-alt mx-2 iconColor',
-        redirect: ''
+        redirect: 'https://goo.gl/maps/gUEbtrJB3L92U6BQ9'
     },
     {
         id: 1,
