@@ -72,8 +72,8 @@
               John's Password: {{loginDetail.example.password}}</p> -->
             <p><strong>Have questions about your account?</strong><br>
             <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
-              <a  *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content" [href]="contact?.redirect">
-                {{contact.data}} rel="noopener"
+              <a  *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content" [href]="contact?.redirect" rel="noopener">
+                {{contact.data}} 
               </a>
             <br>
           </span>
