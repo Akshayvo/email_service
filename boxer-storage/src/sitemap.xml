@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-  <url>https://boxerstorage.com/</loc>
+  <url><loc>https://boxerstorage.com/</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://boxerstorage.com/frequently-asked-questions</loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://boxerstorage.com/contact-us</loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> https://boxerstorage.com/michigan/evanston-ave/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
-  </url>/
+  </url>
   <url>
     <loc> https://boxerstorage.com/michigan/howard-city/reserve-unit </loc>
     <lastmod>2020-09-21</lastmod>
@@ -36,54 +44,64 @@
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
+    <loc> https://boxerstorage.com/michigan/allendale/reserve-unit </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
     <loc> https://boxerstorage.com/storage-tips </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/evanston-ave/storage-units
+      https://boxerstorage.com/michigan/evanston-ave/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/howard-city/storage-units
+      https://boxerstorage.com/michigan/howard-city/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/ionia/storage-units
+      https://boxerstorage.com/michigan/ionia/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/alpine/storage-units
+      https://boxerstorage.com/michigan/alpine/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/red-barn/storage-units
+      https://boxerstorage.com/michigan/red-barn/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/wayland-westside/storage-units
+      https://boxerstorage.com/michigan/allendale/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/wayland-mill/storage-units
+      https://boxerstorage.com/michigan/wayland-westside/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/wayland-southside/storage-units
+      https://boxerstorage.com/michigan/wayland-mill/storage-units
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc> 
+      https://boxerstorage.com/michigan/wayland-southside/storage-units
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -95,43 +113,43 @@
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/evanston-ave
+      https://boxerstorage.com/michigan/evanston-ave
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/howard-city
+      https://boxerstorage.com/michigan/howard-city
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/ionic
+      https://boxerstorage.com/michigan/ionic
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/alpine
+      https://boxerstorage.com/michigan/alpine
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/red-barn
+      https://boxerstorage.com/michigan/red-barn
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/wayland-westside
+      https://boxerstorage.com/michigan/wayland-westside
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/location/wayland-mill
+      https://boxerstorage.com/michigan/wayland-mill
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
@@ -200,55 +218,67 @@
   </url>
   <url>
     <loc>
-      https://boxerstorage.com/pay-rent/evanston-ave
+      https://boxerstorage.com/pay-rent/evanston-ave/sign-up/login
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>
+      https://boxerstorage.com/pay-rent/allendale/sign-up/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc> 
-      https://boxerstorage.com/pay-rent/howard-city
+      https://boxerstorage.com/pay-rent/howard-city/sign-up/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
    <url>
     <loc> 
-      https://boxerstorage.com/pay-rent/ionia
+      https://boxerstorage.com/pay-rent/ionia/sign-up/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
    <url>
     <loc> 
-      https://boxerstorage.com/pay-rent/alpine
+      https://boxerstorage.com/pay-rent/alpine/sign-up/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
    <url>
     <loc> 
-      https://boxerstorage.com/pay-rent/red-barn
+      https://boxerstorage.com/pay-rent/red-barn/sign-up/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
    <url>
     <loc> 
-      https://boxerstorage.com/pay-rent/wayland-westside
+      https://boxerstorage.com/pay-rent/wayland-westside/sign-up/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
    <url>
     <loc> 
-      https://boxerstorage.com/pay-rent/wayland-mill
+      https://boxerstorage.com/pay-rent/wayland-mill/sign-up/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
    <url>
     <loc> 
-      https://boxerstorage.com/pay-rent/wayland-southside
+      https://boxerstorage.com/pay-rent/wayland-southside/sign-up/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
   <url>
     <loc>
       https://boxerstorage.com/pay-rent/evanston-ave/rent-sub/login
+    </loc>
+    <lastmod>2020-09-21</lastmod>
+  </url>
+  <url>
+    <loc>
+      https://boxerstorage.com/pay-rent/allendale/rent-sub/login
     </loc>
     <lastmod>2020-09-21</lastmod>
   </url>
