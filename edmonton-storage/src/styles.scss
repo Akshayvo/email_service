@@ -1,6 +1,6 @@
 
 
-html, body { height: 100%; }
+
 // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 //Basic color and font styles
 $primary:#005194;
@@ -15,6 +15,11 @@ $shadow: rgb(2, 2, 2);
 $fontColor: #707070;
 $primaryFont: "Lato", sans-serif;
 
+body{
+  font-family: $primaryFont;
+  margin:0;
+}
+html, body { height: 100%; }
 // Different Background colors
 .bg-primary {
   background: $primary !important;
