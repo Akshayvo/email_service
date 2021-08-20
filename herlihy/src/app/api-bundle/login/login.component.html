@@ -74,7 +74,7 @@
             <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 0">
 
                 <span *ngIf="contact?.label === 'Phone:' || contact?.label === 'After Hours:'">{{contact.label}}</span>
-              <a  *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' || contact?.label === 'After Hours:' else other_content" [href]="contact?.redirect">
+              <a  *ngIf="contact?.label === 'Email:' || contact?.label === 'Phone:' || contact?.label === 'After Hours:' else other_content" [href]="contact?.redirect" rel="noopener">
                 {{contact.data}}
               </a>
             <br>
