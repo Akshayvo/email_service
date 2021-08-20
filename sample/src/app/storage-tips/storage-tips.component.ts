@@ -1,19 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';
-import { storageTip, storageTipAccordion } from '../data/storage';
-import { MetaService } from '../services/link.service';
-import { storageTipsTitle, storageTipsContent } from '../data/title';
-import { storageTipsHeading } from '../data/heading';
-import { CanonicalService } from '../services/canonical.service';
-import { ogStorageTipsPage, twitterStorageTipsPage } from '../data/script';
+import { Component, OnInit } from "@angular/core";
+import { Title, Meta } from "@angular/platform-browser";
+import { storageTip, storageTipAccordion } from "../data/storage";
+import { MetaService } from "../services/link.service";
+import { storageTipsTitle, storageTipsContent } from "../data/title";
+import { storageTipsHeading } from "../data/heading";
+import { CanonicalService } from "../services/canonical.service";
+import { ogStorageTipsPage, twitterStorageTipsPage } from "../data/script";
 
 @Component({
-  selector: 'app-storage-tips',
-  templateUrl: './storage-tips.component.html',
-  styleUrls: ['./storage-tips.component.scss']
+  selector: "app-storage-tips",
+  templateUrl: "./storage-tips.component.html",
+  styleUrls: ["./storage-tips.component.scss"],
 })
 export class StorageTipsComponent implements OnInit {
-
   storageTip: any;
   storageTipAccordion: any;
   storageTipsHeading: string;
@@ -27,31 +26,29 @@ export class StorageTipsComponent implements OnInit {
     private meta: Meta,
     private metaService: MetaService,
     private canonical: CanonicalService
-
   ) {
     this.fetchMetaData();
     this.fetchOg();
     this.fetchTwitter();
-    this.og.forEach(element => {
-      this.meta.addTag({
+    this.og.forEach((element) => {
+      this.meta.updateTag({
         property: element.property,
-        content: element.content
-      })
+        content: element.content,
+      });
     });
 
-    this.twitter.forEach(element => {
-      this.meta.addTag({
+    this.twitter.forEach((element) => {
+      this.meta.updateTag({
         name: element.name,
-        content: element.content
-      })
+        content: element.content,
+      });
     });
-    this.meta.addTag({
-      name: 'description',
-      content: `${this.storageTipsContent}`
+    this.meta.updateTag({
+      name: "description",
+      content: `${this.storageTipsContent}`,
     });
     this.titleService.setTitle(`${this.storageTipsTitle}`);
     this.canonical.create();
-
   }
 
   ngOnInit() {
@@ -61,15 +58,13 @@ export class StorageTipsComponent implements OnInit {
     window.scrollTo(0, 0);
   }
 
-
-  
   public fetchOg() {
     this.og = ogStorageTipsPage;
-}
+  }
 
-public fetchTwitter() {
+  public fetchTwitter() {
     this.twitter = twitterStorageTipsPage;
-}
+  }
 
   public fetchMetaData() {
     this.storageTipsTitle = storageTipsTitle;
@@ -83,9 +78,7 @@ public fetchTwitter() {
   public fetchStorageTip() {
     this.storageTip = storageTip;
   }
-  public fetchStorageTipAccordion () {
+  public fetchStorageTipAccordion() {
     this.storageTipAccordion = storageTipAccordion;
   }
-
-
 }

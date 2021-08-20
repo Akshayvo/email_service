@@ -1,16 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { unitSizerHeading } from '../data/heading';
-import { unitSizerPageTitle, unitSizerPageContent } from '../data/title';
-import { Title, Meta } from '@angular/platform-browser';
-import { CanonicalService } from '../services/canonical.service';
+import { Component, OnInit } from "@angular/core";
+import { unitSizerHeading } from "../data/heading";
+import { unitSizerPageTitle, unitSizerPageContent } from "../data/title";
+import { Title, Meta } from "@angular/platform-browser";
+import { CanonicalService } from "../services/canonical.service";
 
 @Component({
-  selector: 'app-unit-sizer',
-  templateUrl: './unit-sizer.component.html',
-  styleUrls: ['./unit-sizer.component.scss']
+  selector: "app-unit-sizer",
+  templateUrl: "./unit-sizer.component.html",
+  styleUrls: ["./unit-sizer.component.scss"],
 })
 export class UnitSizerComponent implements OnInit {
-
   unitSizerHeading: string;
   unitSizerPageTitle: string;
   unitSizerPageContent: string;
@@ -18,13 +17,12 @@ export class UnitSizerComponent implements OnInit {
   constructor(
     private titleService: Title,
     private meta: Meta,
-    private canonical: CanonicalService,
-
+    private canonical: CanonicalService
   ) {
     this.fetchMetaData();
-    this.meta.addTag({
-      name: 'description',
-      content: `${this.unitSizerPageContent}`
+    this.meta.updateTag({
+      name: "description",
+      content: `${this.unitSizerPageContent}`,
     });
     this.titleService.setTitle(`${this.unitSizerPageTitle}`);
     this.canonical.create();
@@ -42,5 +40,4 @@ export class UnitSizerComponent implements OnInit {
   public fetchContactHeading() {
     this.unitSizerHeading = unitSizerHeading;
   }
-
 }
