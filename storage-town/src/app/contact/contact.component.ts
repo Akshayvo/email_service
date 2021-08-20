@@ -1,24 +1,30 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Title, Meta } from '@angular/platform-browser';
-import { EmailService } from '../services/email.service';
-import { contactsLocation1, hoursLocation1,
-          contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3, hoursLocation4, contactsLocation4,  } from '../data/contact';
-import { WINDOW } from '@ng-toolkit/universal';
-import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
-import { LocationService } from '../services/location.service';
-import { CanonicalService } from '../services/canonical.service';
-import { ogContactPage, twitterContactPage } from '../data/script';
-import { tableDataContactPage, tableHeader } from '../data/pay-rent';
+import { Component, OnInit, Inject } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+import { Title, Meta } from "@angular/platform-browser";
+import { EmailService } from "../services/email.service";
+import {
+  contactsLocation1,
+  hoursLocation1,
+  contactsLocation2,
+  hoursLocation2,
+  contactsLocation3,
+  hoursLocation3,
+  hoursLocation4,
+  contactsLocation4,
+} from "../data/contact";
+import { WINDOW } from "@ng-toolkit/universal";
+import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+import { LocationService } from "../services/location.service";
+import { CanonicalService } from "../services/canonical.service";
+import { ogContactPage, twitterContactPage } from "../data/script";
+import { tableDataContactPage, tableHeader } from "../data/pay-rent";
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  selector: "app-contact",
+  templateUrl: "./contact.component.html",
+  styleUrls: ["./contact.component.scss"],
 })
 export class ContactComponent implements OnInit {
-
   contactDetails: any;
   heading: string;
   hoursDetails: any;
@@ -50,39 +56,45 @@ export class ContactComponent implements OnInit {
     private formBuilder: FormBuilder,
     private data: LocationService,
     private canonical: CanonicalService
-
   ) {
     this.fetchOg();
     this.fetchTwitter();
-    this.og.forEach(element => {
-      this.meta.addTag({
+    this.og.forEach((element) => {
+      this.meta.updateTag({
         property: element.property,
-        content: element.content
-      })
+        content: element.content,
+      });
     });
 
-    this.twitter.forEach(element => {
-      this.meta.addTag({
+    this.twitter.forEach((element) => {
+      this.meta.updateTag({
         name: element.name,
-        content: element.content
-      })
+        content: element.content,
+      });
     });
     this.canonical.create();
-    this.meta.addTag({
-      name: 'description',
+    this.meta.updateTag({
+      name: "description",
       content: `Want to reserve a unit or find information about your account? Use our contact
-      form or the contact information for your StorageTown location on this page!`
+      form or the contact information for your StorageTown location on this page!`,
     });
-    this.titleService.setTitle('Contact Us | StorageTown Rental Spaces');
+    this.titleService.setTitle("Contact Us | StorageTown Rental Spaces");
 
     this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      phone: ['', [Validators.required,
-                Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      subject: [''],
-  });
+      name: ["", Validators.required],
+      phone: [
+        "",
+        [
+          Validators.required,
+          Validators.pattern(
+            "^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{3,5}$"
+          ),
+        ],
+      ],
+      email: ["", [Validators.required, Validators.email]],
+      message: ["", Validators.required],
+      subject: [""],
+    });
   }
 
   ngOnInit() {
@@ -90,36 +102,37 @@ export class ContactComponent implements OnInit {
     this.receiveMessage();
     this.fetchTableHeader();
     this.fetchTableData();
+  }
 
-}
-
-  get f() { return this.contactForm.controls; }
+  get f() {
+    return this.contactForm.controls;
+  }
 
   public fetchOg() {
     this.og = ogContactPage;
-}
+  }
 
-public fetchTwitter() {
+  public fetchTwitter() {
     this.twitter = twitterContactPage;
-}
+  }
 
   receiveMessage() {
-    this.data.currentLocation.subscribe(locationId => {
+    this.data.currentLocation.subscribe((locationId) => {
       this.locationId = locationId;
       this.dataupdate();
     });
   }
 
   public dataupdate() {
-    if ( this.locationId === '1' || this.locationId === 1 ) {
+    if (this.locationId === "1" || this.locationId === 1) {
       this.fetchContactDetailsLocation1();
       this.mailSent = false;
-    } else if ( this.locationId === '2' ) {
+    } else if (this.locationId === "2") {
       this.fetchContactDetailsLocation2();
       this.mailSent = false;
-    } else if ( this.locationId === '3' ) {
+    } else if (this.locationId === "3") {
       this.fetchContactDetailsLocation3();
-    } else if ( this.locationId === '4' ) {
+    } else if (this.locationId === "4") {
       this.fetchContactDetailsLocation4();
     }
   }
@@ -127,11 +140,11 @@ public fetchTwitter() {
   public fetchTableData() {
     this.tableData = tableDataContactPage;
   }
-  
+
   public fetchTableHeader() {
     this.tableHeader = tableHeader;
   }
-  
+
   public fetchContactDetailsLocation1() {
     this.heading = `StorageTown Rental Spaces - Chester - Andrews Lane `;
     this.contactDetails = contactsLocation1;
@@ -156,44 +169,42 @@ public fetchTwitter() {
     this.hoursDetails = hoursLocation4;
   }
 
-onSubmit() {
-  this.submitted = true;
+  onSubmit() {
+    this.submitted = true;
 
+    // stop here if form is invalid
+    if (this.contactForm.invalid) {
+      return;
+    } else {
+      if (!this.contactForm.value.subject) {
+        this.contactForm.value.subject = "Website Form Submission";
+      }
 
- // stop here if form is invalid
- if (this.contactForm.invalid) {
-     return;
- } else {
-
-  if ( !this.contactForm.value.subject) {
-    this.contactForm.value.subject = 'Website Form Submission';
-  }
-
-  this.receiveremail = this.contactDetails[1].data;
-  this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
+      this.receiveremail = this.contactDetails[1].data;
+      this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
 
-       const body = {
-         name: this.contactForm.value.name,
-         email: this.contactForm.value.email,
-         receiveremail: this.receiveremail,
-         message: this.completeMessage,
-         subject: this.contactForm.value.subject,
-       };
-       this.emailService.sendEmail(body)
-         .subscribe((response: any) => {
-           if (response.result != null) {
+      const body = {
+        name: this.contactForm.value.name,
+        email: this.contactForm.value.email,
+        receiveremail: this.receiveremail,
+        message: this.completeMessage,
+        subject: this.contactForm.value.subject,
+      };
+      this.emailService.sendEmail(body).subscribe(
+        (response: any) => {
+          if (response.result != null) {
             this.mailSent = true;
-           } else {
-           }
-         }, (err) => {
-           console.log('Error :', err);
-         });
-       this.submitted = false;
-       this.mailSent = false;
-       this.contactForm.reset();
- }
-}
-
-
+          } else {
+          }
+        },
+        (err) => {
+          console.log("Error :", err);
+        }
+      );
+      this.submitted = false;
+      this.mailSent = false;
+      this.contactForm.reset();
+    }
+  }
 }

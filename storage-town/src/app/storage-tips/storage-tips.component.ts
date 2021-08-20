@@ -1,22 +1,20 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { storagePoints, storageTips } from '../data/storage-tips';
-import { Title, Meta } from '@angular/platform-browser';
-import { WINDOW } from '@ng-toolkit/universal';
-import { CanonicalService } from '../services/canonical.service';
-import { ogStorageTipsPage, twitterStorageTipsPage } from '../data/script';
+import { Component, OnInit, Inject } from "@angular/core";
+import { storagePoints, storageTips } from "../data/storage-tips";
+import { Title, Meta } from "@angular/platform-browser";
+import { WINDOW } from "@ng-toolkit/universal";
+import { CanonicalService } from "../services/canonical.service";
+import { ogStorageTipsPage, twitterStorageTipsPage } from "../data/script";
 
 @Component({
-  selector: 'app-storage-tips',
-  templateUrl: './storage-tips.component.html',
-  styleUrls: ['./storage-tips.component.scss']
+  selector: "app-storage-tips",
+  templateUrl: "./storage-tips.component.html",
+  styleUrls: ["./storage-tips.component.scss"],
 })
-
-
 export class StorageTipsComponent implements OnInit {
   storagePoints: any;
   storageTips: any;
-  currentActive: any = 'Storage Tips';
-  breadcrumbActive: any = 'Storage Tips';
+  currentActive: any = "Storage Tips";
+  breadcrumbActive: any = "Storage Tips";
   og: any;
   twitter: any;
 
@@ -25,29 +23,29 @@ export class StorageTipsComponent implements OnInit {
     private meta: Meta,
     private titleService: Title,
     private canonical: CanonicalService
-    ) {
-      this.canonical.create();
-      this.fetchOg();
-      this.fetchTwitter();
-      this.og.forEach(element => {
-        this.meta.addTag({
-          property: element.property,
-          content: element.content
-        })
+  ) {
+    this.canonical.create();
+    this.fetchOg();
+    this.fetchTwitter();
+    this.og.forEach((element) => {
+      this.meta.updateTag({
+        property: element.property,
+        content: element.content,
       });
-  
-      this.twitter.forEach(element => {
-        this.meta.addTag({
-          name: element.name,
-          content: element.content
-        })
-      });
-    this.meta.addTag({
-      name: 'description',
-      content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
-      make your stay with us a breeze!`
     });
-    this.titleService.setTitle('Storage Tips | StorageTown Rental Spaces');
+
+    this.twitter.forEach((element) => {
+      this.meta.updateTag({
+        name: element.name,
+        content: element.content,
+      });
+    });
+    this.meta.updateTag({
+      name: "description",
+      content: `Moving can be a hassle, why not make it easier? Use these helpful hints and
+      make your stay with us a breeze!`,
+    });
+    this.titleService.setTitle("Storage Tips | StorageTown Rental Spaces");
   }
 
   ngOnInit() {
@@ -58,12 +56,11 @@ export class StorageTipsComponent implements OnInit {
 
   public fetchOg() {
     this.og = ogStorageTipsPage;
-}
+  }
 
-public fetchTwitter() {
+  public fetchTwitter() {
     this.twitter = twitterStorageTipsPage;
-}
-
+  }
 
   public fetchstoragePoints() {
     this.storagePoints = storagePoints;
