@@ -8,7 +8,7 @@
         <div class="col-lg-4  pt-3">
           <h2>Guardian Storage</h2>
           <!-- <p> -->
-            <div *ngFor="let contact of contactsBrookside" class="contact-label">
+            <div *ngFor="let contact of contactsBrookside" class="contact-label pt-2">
                 <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
               <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
                 <a [href]="contact?.redirect" target="_blank" rel="noopener">&nbsp;
