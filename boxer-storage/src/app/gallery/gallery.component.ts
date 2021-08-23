@@ -1,30 +1,40 @@
-import { Component, OnInit } from '@angular/core';
-import { galleryAllendale } from '../data/galleryImage';
-import { Router } from '@angular/router';
-import { UaParserService } from '../services/ua-parser.service';
+import { Component, OnInit } from "@angular/core";
+import {
+  galleryAllendale,
+  galleryAlpine,
+  galleryDutton,
+  galleryHoward,
+  galleryM45,
+  galleryOtsego,
+  galleryWaylandMillStreet,
+  galleryWaylandSouthSide,
+  galleryWaylandWestSide,
+} from "../data/galleryImage";
+import { Router } from "@angular/router";
+import { UaParserService } from "../services/ua-parser.service";
 
 @Component({
-  selector: 'app-gallery',
-  templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.scss']
+  selector: "app-gallery",
+  templateUrl: "./gallery.component.html",
+  styleUrls: ["./gallery.component.scss"],
 })
 export class GalleryComponent implements OnInit {
-
   name: string;
   id: number;
-  currentActiveTab: any = 'Photos';
+  currentActiveTab: any = "Photos";
   selectedImage: any;
   galleryImages: any;
   galleryData: any;
   imagetype: any;
   imageBaseUrl: any;
 
-  constructor(private router: Router,
-    private uaParserService: UaParserService,
-    ) {
+  constructor(
+    private router: Router,
+    private uaParserService: UaParserService
+  ) {
     this.imagetype = this.uaParserService.typeOfImages.toLowerCase();
     this.imageBaseUrl = this.uaParserService.baseUrl;
-   }
+  }
 
   ngOnInit() {
     this.isSomePage();
@@ -32,8 +42,32 @@ export class GalleryComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes('allendale')) {
+    if (this.router.url.includes("allendale")) {
       this.fetchDetailsLocation1();
+    }
+    if (this.router.url.includes("alpine")) {
+      this.fetchDetailsLocation2();
+    }
+    if (this.router.url.includes("dutton")) {
+      this.fetchDetailsLocation3();
+    }
+    if (this.router.url.includes("howard-city")) {
+      this.fetchDetailsLocation4();
+    }
+    if (this.router.url.includes("m45")) {
+      this.fetchDetailsLocation5();
+    }
+    if (this.router.url.includes("otsego")) {
+      this.fetchDetailsLocation6();
+    }
+    if (this.router.url.includes("wayland-mill")) {
+      this.fetchDetailsLocation7();
+    }
+    if (this.router.url.includes("wayland-southside")) {
+      this.fetchDetailsLocation8();
+    }
+    if (this.router.url.includes("wayland-westside")) {
+      this.fetchDetailsLocation9();
     }
   }
 
@@ -42,10 +76,43 @@ export class GalleryComponent implements OnInit {
     // this.galleryData = galleryDataLocation1;
     this.id = 1;
   }
+  public fetchDetailsLocation2() {
+    this.galleryImages = galleryAlpine;
+    // this.galleryData = galleryDataLocation1;
+    this.id = 2;
+  }
 
+  public fetchDetailsLocation3() {
+    this.galleryImages = galleryDutton;
+    this.id = 3;
+  }
+  public fetchDetailsLocation4() {
+    this.galleryImages = galleryHoward;
+    this.id = 4;
+  }
+  public fetchDetailsLocation5() {
+    this.galleryImages = galleryM45;
+    this.id = 5;
+  }
+  public fetchDetailsLocation6() {
+    this.galleryImages = galleryOtsego;
+    this.id = 6;
+  }
 
+  public fetchDetailsLocation7() {
+    this.galleryImages = galleryWaylandMillStreet;
+    this.id = 7;
+  }
+
+  public fetchDetailsLocation8() {
+    this.galleryImages = galleryWaylandSouthSide;
+    this.id = 8;
+  }
+  public fetchDetailsLocation9() {
+    this.galleryImages = galleryWaylandWestSide;
+    this.id = 9;
+  }
   setSelectedImage(image: any) {
     this.selectedImage = image;
- }
-
+  }
 }
