@@ -9,9 +9,9 @@ import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';
 import { CanonicalService } from '../services/canonical.service';
-import { Location1Script, Location2Script, Location3Script, Location4Script, Location5Script, Location6Script,
-  ogLocation1, ogLocation2, ogLocation3, ogLocation4, ogLocation5, ogLocation6, twitterLocation1,
-  twitterLocation2, twitterLocation3, twitterLocation4, twitterLocation5, twitterLocation6 } from '../data/script';
+import { Location1Script, Location2Script,
+  ogLocation1, ogLocation2,  twitterLocation1,
+  twitterLocation2 } from '../data/script';
 import { featuresHead, featuresList, location1FeaturesHead, location2FeaturesHead,
   location3FeaturesHead, location4FeaturesHead,location5FeaturesHead,location6FeaturesHead } from '../data/home';
 import { UaParserService } from '../services/ua-parser.service';
@@ -144,103 +144,9 @@ export class LocationComponent implements OnInit {
               content: element.content
             })
           });
-      } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
-        this.meta.addTag({
-          name: 'description',
-          content: `${this.location3PageContent}`
-    });
-    this.titleService.setTitle(`${this.location3PageTitle}`);
-        this.locationName = `MP&E Storage - Barnwell Location`;
-        this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
-        this.dataSharingService.locationName = this.locationName;
-        this.script = Location3Script;
-        this.loadScript();
-        this.og.forEach(element => {
-          this.meta.addTag({
-            property: element.property,
-            content: element.content
-          })
-        });
+      } 
     
-        this.twitter.forEach(element => {
-          this.meta.addTag({
-            name: element.name,
-            content: element.content
-          })
-        });
-   } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
-    this.meta.addTag({
-      name: 'description',
-      content: `${this.location4PageContent}`
-    });
-    this.titleService.setTitle(`${this.location4PageTitle}`);
-    this.locationName = `MP&E Storage - Belforest Location`;
-    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
-    this.dataSharingService.locationName = this.locationName;
-    this.script = Location4Script;
-    this.loadScript();
-    this.og.forEach(element => {
-      this.meta.addTag({
-        property: element.property,
-        content: element.content
-      })
-    });
-
-    this.twitter.forEach(element => {
-      this.meta.addTag({
-        name: element.name,
-        content: element.content
-      })
-    });
-  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
-    this.meta.addTag({
-      name: 'description',
-      content: `${this.location5PageContent}`
-});
-this.titleService.setTitle(`${this.location5PageTitle}`);
-    this.locationName = `MP&E Storage - Fairhope`;
-    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
-    this.dataSharingService.locationName = this.locationName;
-    this.script = Location5Script;
-    this.loadScript();
-    this.og.forEach(element => {
-     this.meta.addTag({
-       property: element.property,
-       content: element.content
-     })
-   });
-
-   this.twitter.forEach(element => {
-     this.meta.addTag({
-       name: element.name,
-       content: element.content
-     })
-   });
-} else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
-  this.meta.addTag({
-    name: 'description',
-    content: `${this.location6PageContent}`
-});
-this.titleService.setTitle(`${this.location6PageTitle}`);
-  this.locationName = `MP&E Storage - Robertsdale`;
-  this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
-  this.dataSharingService.locationName = this.locationName;
-  this.script = Location6Script;
-  this.loadScript();
-  this.og.forEach(element => {
-   this.meta.addTag({
-     property: element.property,
-     content: element.content
-   })
- });
-
- this.twitter.forEach(element => {
-   this.meta.addTag({
-     name: element.name,
-     content: element.content
-   })
- });
-}
+        
 }
 
   ngOnInit() {
@@ -289,15 +195,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
       this.og = ogLocation1;
   } else if (this.router.url.includes(`${environment.locationName}/wautoma`)) {
     this.og = ogLocation2;
-  } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
-    this.og = ogLocation3;
-  } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
-    this.og = ogLocation4;
-  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
-    this.og = ogLocation5;
-  } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
-    this.og = ogLocation6;
-  }
+  } 
   }
 
   public fetchTwitter() {
@@ -305,14 +203,6 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
       this.twitter = twitterLocation1;
   } else if (this.router.url.includes(`${environment.locationName}/wautoma`)) {
     this.twitter = twitterLocation2;
-  } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
-    this.twitter = twitterLocation3;
-  } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
-    this.twitter = twitterLocation4;
-  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
-    this.twitter = twitterLocation5;
-  } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
-    this.twitter = twitterLocation6;
   }
   }
 

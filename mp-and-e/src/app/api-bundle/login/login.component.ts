@@ -7,9 +7,8 @@ import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
 import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6, } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4, ogPayRentPageLocation5,
-   twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4,ogPayRentPageLocation6,
-   twitterPayRentPageLocation5, twitterPayRentPageLocation6 } from '../../data/script';
+import { ogPayRentPageLocation1, ogPayRentPageLocation2,
+   twitterPayRentPageLocation1, twitterPayRentPageLocation2} from '../../data/script';
 import { Meta } from '@angular/platform-browser';
 
 
@@ -183,15 +182,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation1;
     } else  if (this.router.url.includes('wautoma')) {
       this.og = ogPayRentPageLocation2;
-    } else if (this.router.url.includes('barnwell')) {
-      this.og = ogPayRentPageLocation3;
-    } else if (this.router.url.includes('belforest')) {
-      this.og = ogPayRentPageLocation4;
-    } else if (this.router.url.includes('fairhope')) {
-      this.og = ogPayRentPageLocation5;
-    } else if (this.router.url.includes('robertsdale')) {
-      this.og = ogPayRentPageLocation6;
-    }
+    } 
     }
 
 public fetchTwitter() {
@@ -199,15 +190,7 @@ public fetchTwitter() {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('wautoma')) {
       this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('barnwell')) {
-        this.twitter = twitterPayRentPageLocation3;
-  } else if (this.router.url.includes('belforest')) {
-        this.twitter = twitterPayRentPageLocation4;
-  } else if (this.router.url.includes('fairhope')) {
-    this.twitter = twitterPayRentPageLocation5;
-  } else if (this.router.url.includes('robertsdale')) {
-    this.twitter = twitterPayRentPageLocation6;
-  }
+  } 
 }
 
   handleForgotPassword() {

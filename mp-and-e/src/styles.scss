@@ -1,4 +1,6 @@
 
+
+
 //Basic color and font styles
 $primary: #be2926;
 $primaryDark: #80100e;
@@ -11,6 +13,9 @@ $border: #4e4848;
 $shadow: rgb(2, 2, 2);
 $fontColor: #707070;
 $primaryFont: "Lato", sans-serif;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: $primaryFont }
 
 // Different Background colors
 .bg-primary {
@@ -136,6 +141,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
 }
+
 /* You can add global styles to this file, and also import other style files */
 
 // For Date Picker
@@ -166,6 +172,3 @@ $AffordableSecureStorage-theme: mat-light-theme($AffordableSecureStorage-primary
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($AffordableSecureStorage-theme);
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
