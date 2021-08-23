@@ -95,7 +95,7 @@ export const location3FeaturesHead = [
 
 export const aboutusHeading = `Affordable Self Storage Units in Greenwood, MS`;
 
-export const aboutusALt = `blue metal self storage unit doors in a row`;
+export const aboutusALt = `Affordable Self Storage Units in Greenwood, MS`;
 
 export const serviceOffered = [
     {
