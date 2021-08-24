@@ -93,7 +93,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
-    this.getData();
     this.objSIMSetting = objSIMSetting;
     this.fetchContactDetails();
     this.fetchHours();
@@ -106,31 +105,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     window.scrollTo(0, 0);
   }
 
-  findMinMax(arr) {
-    let min = arr[0].MonthlyRate, max = arr[0].MonthlyRate;
-    for (let i = 1, len=arr.length; i < len; i++) {
-      let v = arr[i].MonthlyRate;
-      min = (v < min) ? v : min;
-      max = (v > max) ? v : max;
-    }
-  
-    return [min, max];
-  }
 
-  getData() {
-    this.getDataSubscribe$ = this.fetchDataService.getData()
-      .subscribe(unitTypesResponse => {
-        this.findMinMax(unitTypesResponse.lstUnitTypes)
 
-     const min = this.findMinMax(unitTypesResponse.lstUnitTypes)[0];
-     const max= this.findMinMax(unitTypesResponse.lstUnitTypes)[1];
 
-     console.log('this.findMinMax(unitTypesResponse.lstUnitTypes)[0]', min,
-     'this.findMinMax(unitTypesResponse.lstUnitTypes)[1]', max);
-     
-      });
-    }
-  
 
   public loadScript() {
     const node = document.createElement('script'); // creates the script tag
