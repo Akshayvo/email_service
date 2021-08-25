@@ -17,6 +17,10 @@
 .modal-position {
   position: absolute;
   left: 285px;
+  @media screen and (max-width: 455px) {
+    left: 158px;
+    top: 106px;
+  }
 }
 
 table {
@@ -67,6 +71,7 @@ table {
 .modal-custom-style {
   .btn {
     display: contents;
+    font-size: 14px;
   }
 
   .btn-link {
