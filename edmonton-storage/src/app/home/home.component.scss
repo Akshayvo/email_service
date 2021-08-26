@@ -74,7 +74,7 @@
   transform: skew(0deg);
   width: 100%;
   position: absolute;
-  top: 21%;
+  top: 16%;
   left: 9%;
   color: $secondary;
   font-size: 1.5rem;
@@ -99,7 +99,7 @@
 
   .feature-block {
     padding-top: 0.5rem;
-    height: 25vh;
+    height: 35vh;
 
     h2 {
       line-height: 1.5rem;
@@ -261,7 +261,22 @@
 //     // }
 //   }
 // }
-
+@media screen and (max-height: 870px) {
+  .jumbotorn-skew-text {
+    font-size: 14px;
+  }
+  .disp {
+    h2 {
+      font-size: 16px;
+      margin-bottom: 0px;
+    }
+  }
+}
+@media screen and (max-height: 548px) {
+  .disp {
+    display: none;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .jumbotorn-skew-text {
     width: 300px;
@@ -332,6 +347,7 @@
 
   .jumbotorn-button {
     padding: 10px;
+    width: fit-content;
   }
 
   .feature-icon-style {
