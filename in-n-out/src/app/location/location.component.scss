@@ -8,7 +8,6 @@
 .feature-block {
   h2 {
     line-height: 1.5rem;
-  
   }
 
   img {
@@ -24,13 +23,13 @@
 
 .social-content {
   .each-contact {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
   }
 }
 
-.alarm{
-  background-color: #BE2926;
-  color:#fff;
+.alarm {
+  background-color: #be2926;
+  color: #fff;
   font-size: 1.5rem;
 }
 
@@ -48,12 +47,10 @@
   background: white;
 
   h1 {
-    text-transform:capitalize;
+    text-transform: capitalize;
     font-size: 1.6rem;
   }
 }
-
-
 
 .sub-component-background {
   background-color: #f1f0ed;
@@ -87,14 +84,14 @@
 }
 
 .img-box-2-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-pleasantview.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/jpg/in-n-out-pleasantviewmain.jpg");
   background-size: cover;
   height: 500px;
   background-position: center;
 }
 
 .img-box-2-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/webp/in-n-out-pleasantview.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/IN_N_OUT/webp/in-n-out-pleasantviewmain.webp");
   background-size: cover;
   height: 500px;
   background-position: center;
@@ -112,7 +109,6 @@
   background-size: cover;
   height: 500px;
   background-position: center right;
-  
 }
 
 .img-box-4-jpg {
@@ -195,11 +191,10 @@
   }
 
   .social-content {
-      .each-contact {
-        display: block;
-      }
+    .each-contact {
+      display: block;
+    }
   }
-
 
   .img-box-1 {
     height: 410px;
@@ -286,13 +281,12 @@
 //   }
 // }
 
-
 @media only screen and (max-width: 768px) {
   .social-content {
-      .each-contact {
-        width: 100%;
-        display: block;
-      }
+    .each-contact {
+      width: 100%;
+      display: block;
+    }
   }
 
   .img-box-1 {
@@ -389,17 +383,16 @@
 //   }
 // }
 
-
 // @media screen and (max-width: 575px) and (min-width: 453px) {
 //   .contact-details {
 //     padding-top: 172px;
-//   } 
+//   }
 // }
 
 // @media screen and (max-width: 452px) {
 //   .contact-details {
 //     padding-top: 200px;
-//   } 
+//   }
 // }
 
 @media only screen and (max-width: 340px) {

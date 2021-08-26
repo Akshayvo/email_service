@@ -38,9 +38,9 @@ export const contactsLocation1 = [
   {
     id: 1,
     label: "Address: ",
-    data: "405 Commerce St Plymouth, WI 53073",
+    data: "N7124 Willow Rd, Sheboygan Falls, WI 53085",
     class: "fas fa-map-marker-alt mr-2 iconColor",
-    redirect: "https://goo.gl/maps/r5Q8eeg2bTZyA7YFA",
+    redirect: "https://goo.gl/maps/FvYLyzooyVF6uZzNA",
   },
   {
     id: 2,
