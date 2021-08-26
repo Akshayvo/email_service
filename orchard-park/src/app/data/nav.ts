@@ -1,3 +1,33 @@
+// export const navLinks = [
+//     {
+//         label: 'HOME',
+//         path: '/',
+//     },
+//     {
+//         label: 'VIEW RATES',
+//         path: '/view-rates',
+//     },
+//     {
+//         label: 'PAY RENT',
+//         path: 'pay-rent'
+//     },
+//     {
+//         label: 'UNIT SIZER',
+//         path: 'unit-sizer'
+//     },
+//     {
+//         label: 'STORAGE TIPS',
+//         path: 'storage-tips',
+//     },
+//     {
+//         label: 'CONTACT US',
+//         path: 'contact-us'
+//     },
+// ];
+
+
+import { environment } from '../../environments/environment';
+
 export const navLinks = [
     {
         label: 'HOME',
@@ -5,22 +35,31 @@ export const navLinks = [
     },
     {
         label: 'VIEW RATES',
-        path: '/view-rates',
+        path: `${environment.locationName}/view-rates`,
     },
+    // {
+    //     label: 'RENT NOW',
+    //     path: `${environment.locationName}/rent-now`,
+    // },
+    // {
+    //     label: 'RESERVE UNIT',
+    //     path: `${environment.locationName}/reserve-unit`,
+    // },
     {
         label: 'PAY RENT',
-        path: 'pay-rent'
+        path: '/pay-rent'
     },
+    
     {
         label: 'UNIT SIZER',
-        path: 'unit-sizer'
+        path: '/unit-sizer'
     },
     {
         label: 'STORAGE TIPS',
-        path: 'storage-tips',
+        path: `${environment.locationName}/storage-tips`
     },
     {
         label: 'CONTACT US',
-        path: 'contact-us'
+        path: '/contact-us'
     },
 ];

@@ -1,4 +1,4 @@
-export const viewRatesHeading = `Storage Unit Rates`;
+export const viewRatesHeading = `View Our Rates`;
 
 export const reserveUnitHeading = `Reserve Your Unit`;
 

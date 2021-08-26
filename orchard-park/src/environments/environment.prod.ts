@@ -2,7 +2,7 @@ declare var require: any
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'new-york/baldwinsville', // state/city  **Remeber to update locationName in sitemap.xml as well
+  locationName: 'lubbock/texas', // state/city  **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
   military: true, // set true for Military and Driver's Details 
@@ -15,6 +15,6 @@ export const environment = {
   facilityName: 'Sample Self Storage - North',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: 'https://sample-self-storage-staging.netlify.app',
-  APIKey: `dzJ0OVc0SjYqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29462
+  websiteUrl: 'https://www.opselfstorage.com',
+  APIKey: `dzJ0OVcxSjIqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29126
 };
