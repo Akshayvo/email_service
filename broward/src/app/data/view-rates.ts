@@ -5,7 +5,7 @@ export const dataViewRates = [
     p: `We offer a large number of unit sizes for every storage project from storing personal belongings off season to preparing for a large move or relocating the contents of your garage or attic to free up space around the home. Not sure what size you need? Give our friendly staff a call! We’d be happy to help assess your storage project needs.`,
   },
   {
-    p: `Self storage isn’t just for moves and renovations. Smart business owners know they can save money using an off-site storage unit instead of taking up valuable commercial square footage for equipment, documents, supplies, and inventory. We cater to a number of businesses who enjoy 24 hour access to their equipment and belongings.`,
+    p: `Self storage isn’t just for moves and renovations. Smart business owners know they can save money using an off-site storage unit instead of taking up valuable commercial square footage for equipment, documents, supplies, and inventory.We cater to a number of businesses who enjoy our after-hours access to their equipment and belongings.`,
   },
   // {
   //   p: `Our residential storage users love our convenient location and affordable rates that take the stress

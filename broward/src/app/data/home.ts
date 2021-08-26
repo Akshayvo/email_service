@@ -51,9 +51,9 @@ export const feature = [
   },
   {
     // tslint:disable-next-line:max-line-length
-    path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/24-hours.svg`,
-    label: "24 Hour Facility Access",
-    alt: "Icon art displaying clock hands and the number 24",
+    path: `https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg`,
+    label: "Friendly Customer Service",
+    alt: "Customer Service Representative Icon",
   },
   {
     // tslint:disable-next-line:max-line-length
