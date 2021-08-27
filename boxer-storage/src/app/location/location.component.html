@@ -3,117 +3,859 @@
     <div class="row">
       <div class="col-lg-8 py-0 px-0 header-background">
         <div class="social-content px-3 py-4">
-          <h1> {{name}}</h1>
+          <h1>{{ name }}</h1>
           <div class="row">
             <div class="col-lg-12 px-0 contact-data">
               <span *ngFor="let contact of contacts" class="py-2 each-contact">
-                <span class="pl-3"><i class="{{contact.class}}"></i></span><span *ngIf="contact?.id === 2 || contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect">{{contact.data}}</a></span>
-                <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">{{contact.data}}</a></ng-template>
+                <span class="pl-3"><i class="{{ contact.class }}"></i></span
+                ><span
+                  *ngIf="
+                    contact?.id === 2 || contact?.id === 3 || contact?.id === 4;
+                    else other_content
+                  "
+                  ><a [href]="contact?.redirect">{{ contact.data }}</a></span
+                >
+                <ng-template #other_content
+                  >&nbsp;<a
+                    [href]="contact?.redirect"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ contact.data }}</a
+                  ></ng-template
+                >
               </span>
             </div>
           </div>
         </div>
         <div class="contact-img">
-            <span *ngIf="locationId == 1" title="Aerial Photograph of self storage units surrounded by a fence."> 
-              <div class="img-box-1" [ngClass]="imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'">
+          <span
+            *ngIf="locationId == 1"
+            title="Photograph of self storage units."
+          >
+            <div
+              id="carouselJumbo"
+              class="carousel slide jumbotron-top-style"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo" data-slide-to="1"></li>
+                <li data-target="#carouselJumbo" data-slide-to="2"></li>
+                <li data-target="#carouselJumbo" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-1-carousel-1-jpg'
+                        : 'img-box-1-carousel-1-webp'
+                    "
+                    title="photo of interior of self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-1-carousel-2-jpg'
+                        : 'img-box-1-carousel-2-webp'
+                    "
+                    title="photo of outdoor self storage units with the sky view"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-1-carousel-3-jpg'
+                        : 'img-box-1-carousel-3-webp'
+                    "
+                    title="photo of outdoor self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
               </div>
-            </span>
-            <span *ngIf="locationId == 2" title="a row of self storage units under a blue sky with wide parking spaces around the units"> 
-              <div class="img-box-2" [ngClass]="imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'">
+            </div>
+          </span>
+          <span
+            *ngIf="locationId == 2"
+            title="Photograph of self storage units."
+          >
+            <div
+              id="carouselJumbo"
+              class="carousel slide jumbotron-top-style"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-2-carousel-1-jpg'
+                        : 'img-box-2-carousel-1-webp'
+                    "
+                    title="photo of interior of self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
               </div>
-              
-            </span>
-            <span *ngIf="locationId == 3" title="a row of single story self storage buildings behind a security fence and electronically controlled gate"> 
-              <div class="img-box-3" [ngClass]="imagetype === 'jpg' ? 'img-box-3-jpg' : 'img-box-3-webp'">
+            </div>
+          </span>
+          <span
+            *ngIf="locationId == 3"
+            title="a row of single story self storage buildings behind a security fence and electronically controlled gate"
+          >
+            <div
+              id="carouselJumbo"
+              class="carousel slide jumbotron-top-style"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-3-carousel-1-jpg'
+                        : 'img-box-3-carousel-1-webp'
+                    "
+                    title="photo of self storage units with billboard and fencing"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-3-carousel-2-jpg'
+                        : 'img-box-3-carousel-2-webp'
+                    "
+                    title="photo of self storage units and fencing"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
               </div>
-            </span>
-            <span *ngIf="locationId == 4" title="aerial photograph of a self storage building and recreational vehicles parked in a large lot"> 
-              <div class="img-box-4" [ngClass]="imagetype === 'jpg' ? 'img-box-4-jpg' : 'img-box-4-webp'">
+            </div>
+          </span>
+          <span
+            *ngIf="locationId == 4"
+            title="aerial photograph of a self storage building and recreational vehicles parked in a large lot"
+          >
+            <div
+              id="carouselJumbo"
+              class="carousel slide jumbotron-top-style"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-4-carousel-1-jpg'
+                        : 'img-box-4-carousel-1-webp'
+                    "
+                    title="photo of self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-4-carousel-2-jpg'
+                        : 'img-box-4-carousel-2-webp'
+                    "
+                    title="photo of outdoor self storage units and parking spaces"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
               </div>
-            </span>
-            <span *ngIf="locationId == 5" title="a row of self storage unit doors in a single story metal storage building"> 
-              <div class="img-box-5" [ngClass]="imagetype === 'jpg' ? 'img-box-5-jpg' : 'img-box-5-webp'">
+            </div>
+          </span>
+          <span *ngIf="locationId == 5" title="a row of self storage units">
+            <div
+              id="carouselJumbo"
+              class="carousel slide jumbotron-top-style"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo" data-slide-to="1"></li>
+                <li data-target="#carouselJumbo" data-slide-to="2"></li>
+                <li data-target="#carouselJumbo" data-slide-to="3"></li>
+                <li data-target="#carouselJumbo" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-5-carousel-1-jpg'
+                        : 'img-box-5-carousel-1-webp'
+                    "
+                    title="wide photo of self storage units with the faciltyname in a board"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-5-carousel-2-jpg'
+                        : 'img-box-5-carousel-2-webp'
+                    "
+                    title="side view photo of the storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-5-carousel-3-jpg'
+                        : 'img-box-5-carousel-3-webp'
+                    "
+                    title="photo of the storage units along with the yellow poles"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-5-carousel-4-jpg'
+                        : 'img-box-5-carousel-4-webp'
+                    "
+                    title="photo of the storage units along with the yellow poles"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-5-carousel-5-jpg'
+                        : 'img-box-5-carousel-5-webp'
+                    "
+                    title="photo of the storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
               </div>
-            </span>
-            <span *ngIf="locationId == 6" title="single story self storage unit buildings with green metal roll up doors"> 
-              <div class="img-box-6" [ngClass]="imagetype === 'jpg' ? 'img-box-6-jpg' : 'img-box-6-webp'">
+            </div>
+          </span>
+          <span
+            *ngIf="locationId == 6"
+            title="single story self storage unit buildings with green metal roll up doors"
+          >
+            <div
+              id="carouselJumbo"
+              class="carousel slide jumbotron-top-style"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-6-carousel-1-jpg'
+                        : 'img-box-6-carousel-1-webp'
+                    "
+                    title="photo of self storage units alogn with the billboard containing the name of the facility"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-6-carousel-2-jpg'
+                        : 'img-box-6-carousel-2-webp'
+                    "
+                    title="photo of outdoor self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
               </div>
-            </span>
-            <span *ngIf="locationId == 7" title="single story self storage unit buildings with green metal roll up doors"> 
-              <div class="img-box-7" [ngClass]="imagetype === 'jpg' ? 'img-box-7-jpg' : 'img-box-7-webp'">
+            </div>
+          </span>
+          <span
+            *ngIf="locationId == 7"
+            title="photo of the storage units along with the yellow poles"
+          >
+            <div
+              id="carouselJumbo"
+              class="carousel slide jumbotron-top-style"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo" data-slide-to="1"></li>
+                <li data-target="#carouselJumbo" data-slide-to="2"></li>
+                <li data-target="#carouselJumbo" data-slide-to="3"></li>
+                <li data-target="#carouselJumbo" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-7-carousel-1-jpg'
+                        : 'img-box-7-carousel-1-webp'
+                    "
+                    title="wide photo of self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-7-carousel-2-jpg'
+                        : 'img-box-7-carousel-2-webp'
+                    "
+                    title="photo of the storage units along with the yellow poles"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-7-carousel-3-jpg'
+                        : 'img-box-7-carousel-3-webp'
+                    "
+                    title="photo of the storage units along with the white poles"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-7-carousel-4-jpg'
+                        : 'img-box-7-carousel-4-webp'
+                    "
+                    title="photo of the storage units along with the white poles"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-7-carousel-5-jpg'
+                        : 'img-box-7-carousel-5-webp'
+                    "
+                    title="photo of the storage units along with the fencing"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
               </div>
-            </span>
-            <span *ngIf="locationId == 8" title="single story self storage unit buildings with green metal roll up doors"> 
-              <div class="img-box-8" [ngClass]="imagetype === 'jpg' ? 'img-box-8-jpg' : 'img-box-8-webp'">
+            </div>
+          </span>
+          <span *ngIf="locationId == 8" title="storage units with fencing">
+            <div
+              id="carouselJumbo"
+              class="carousel slide jumbotron-top-style"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo" data-slide-to="1"></li>
+                <li data-target="#carouselJumbo" data-slide-to="2"></li>
+                <li data-target="#carouselJumbo" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-8-carousel-1-jpg'
+                        : 'img-box-8-carousel-1-webp'
+                    "
+                    title="wide photo of self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-8-carousel-2-jpg'
+                        : 'img-box-8-carousel-2-webp'
+                    "
+                    title="photo of the storage units along with fencing"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-8-carousel-3-jpg'
+                        : 'img-box-8-carousel-3-webp'
+                    "
+                    title="photo of the storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-8-carousel-4-jpg'
+                        : 'img-box-8-carousel-4-webp'
+                    "
+                    title="photo of the storage units along with the billboard"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
               </div>
-            </span>
-            <span *ngIf="locationId == 9" title="single story self storage unit buildings with green metal roll up doors"> 
-              <div class="img-box-9" [ngClass]="imagetype === 'jpg' ? 'img-box-9-jpg' : 'img-box-9-webp'">
+            </div>
+          </span>
+          <span
+            *ngIf="locationId == 9"
+            title="single story self storage unit buildings with green metal roll up doors"
+          >
+            <div
+              id="carouselJumbo"
+              class="carousel slide jumbotron-top-style"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo" data-slide-to="1"></li>
+                <li data-target="#carouselJumbo" data-slide-to="2"></li>
+                <li data-target="#carouselJumbo" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-9-carousel-1-jpg'
+                        : 'img-box-9-carousel-1-webp'
+                    "
+                    title="photo of interior of self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-9-carousel-2-jpg'
+                        : 'img-box-9-carousel-2-webp'
+                    "
+                    title="photo of outdoor self storage units with the sky view"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-9-carousel-3-jpg'
+                        : 'img-box-9-carousel-3-webp'
+                    "
+                    title="photo of outdoor self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-9-carousel-4-jpg'
+                        : 'img-box-9-carousel-4-webp'
+                    "
+                    title="photo of outdoor self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
               </div>
-            </span>
-            <span *ngIf="locationId == 10" title="single story self storage unit buildings with green metal roll up doors"> 
-              <div class="img-box-10" [ngClass]="imagetype === 'jpg' ? 'img-box-10-jpg' : 'img-box-10-webp'">
+            </div>
+          </span>
+          <span
+            *ngIf="locationId == 10"
+            title="single story self storage unit buildings with green metal roll up doors"
+          >
+            <div
+              id="carouselJumbo"
+              class="carousel slide jumbotron-top-style"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo" data-slide-to="1"></li>
+                <li data-target="#carouselJumbo" data-slide-to="2"></li>
+                <li data-target="#carouselJumbo" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-10-carousel-1-jpg'
+                        : 'img-box-10-carousel-1-webp'
+                    "
+                    title="wide photo of self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-10-carousel-2-jpg'
+                        : 'img-box-10-carousel-2-webp'
+                    "
+                    title="wide photo of outdoor self storage units with the sky view"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-10-carousel-3-jpg'
+                        : 'img-box-10-carousel-3-webp'
+                    "
+                    title="photo of outdoor self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-10-carousel-4-jpg'
+                        : 'img-box-10-carousel-4-webp'
+                    "
+                    title="photo of outdoor self storage units with grass"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
               </div>
-            </span>
-            <span *ngIf="locationId == 11" title="single story self storage unit buildings with green metal roll up doors"> 
-              <div class="img-box-11" [ngClass]="imagetype === 'jpg' ? 'img-box-11-jpg' : 'img-box-11-webp'">
+            </div>
+          </span>
+          <span
+            *ngIf="locationId == 11"
+            title="single story self storage unit buildings with green metal roll up doors"
+          >
+            <div
+              id="carouselJumbo"
+              class="carousel slide jumbotron-top-style"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo" data-slide-to="1"></li>
+                <li data-target="#carouselJumbo" data-slide-to="2"></li>
+                <li data-target="#carouselJumbo" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-11-carousel-1-jpg'
+                        : 'img-box-11-carousel-1-webp'
+                    "
+                    title="wide photo of self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-11-carousel-2-jpg'
+                        : 'img-box-11-carousel-2-webp'
+                    "
+                    title="gateaccess code photo with fence"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-11-carousel-3-jpg'
+                        : 'img-box-11-carousel-3-webp'
+                    "
+                    title="photo of the facility board along with the fencing"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-11-carousel-4-jpg'
+                        : 'img-box-11-carousel-4-webp'
+                    "
+                    title="elevated view of photo of self storage units with grass"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
               </div>
-            </span>
-            <span *ngIf="locationId == 12" title="self storage unit buildings in rows on the left behind an electronic gate with moving trucks parked on the right"> 
-              <div class="img-box-12" [ngClass]="imagetype === 'jpg' ? 'img-box-12-jpg' : 'img-box-12-webp'">
-              </div>
-            </span>
+            </div>
+          </span>
+          <span
+            *ngIf="locationId == 12"
+            title="self storage unit buildings in rows on the left behind an electronic gate with moving trucks parked on the right"
+          >
+            <div
+              class="img-box-12"
+              [ngClass]="
+                imagetype === 'jpg' ? 'img-box-12-jpg' : 'img-box-12-webp'
+              "
+            ></div>
+          </span>
         </div>
       </div>
-      <div class="col-lg-4 pt-3 tab-background" >
+      <div class="col-lg-4 pt-3 tab-background">
         <div class="map-responsive">
-            <span *ngIf="locationId == 1">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11631.245783257717!2d-86.139441!3d43.213444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec701dabcb5a8db9!2sBoxer%20Self%20Storage!5e0!3m2!1sen!2sus!4v1615259818051!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
-            </span>
-            <span *ngIf="locationId == 2">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11599.745612554876!2d-85.4730562!3d43.3783538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa75c8ec31343bb96!2sJ%20%26%20L%20Self%20Storage!5e0!3m2!1sen!2sus!4v1618342078065!5m2!1sen!2sus" width="100%" height="220" frameborder="0" allowfullscreen loading="lazy"></iframe>
-            </span>
-            <span *ngIf="locationId == 3">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11685.519490282275!2d-85.0751504!3d42.9281179!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc610ff3a8c1fb381!2sSmarter%20Storage%20LLC!5e0!3m2!1sen!2sus!4v1618347194154!5m2!1sen!2sus" width="100%" height="220" frameborder="0" allowfullscreen loading="lazy"></iframe>
-            </span>
-            <span *ngIf="locationId == 4">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11655.905163196605!2d-85.6915751!3d43.0839938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe5f8849266706140!2sAOV%20Storage!5e0!3m2!1sen!2sus!4v1618365654405!5m2!1sen!2sus" width="100%" height="220" frameborder="0" allowfullscreen loading="lazy"></iframe>
-            </span>
-            <span *ngIf="locationId == 5">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11601.535241854954!2d-85.8011198!3d43.3689982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x71bc20b3c52a1d5f!2sRed%20Barn%20Mini%20Storage!5e0!3m2!1sen!2sus!4v1618866579367!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
-            </span>
-            <span *ngIf="locationId == 6">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.07395782364!2d-85.66407698453352!3d42.68097567916664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819cc40e4236735%3A0x271a4fcddc851d0c!2s3591%2012th%20St%2C%20Wayland%2C%20MI%2049348!5e0!3m2!1sen!2sus!4v1618868066608!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
-            </span>
-            <span *ngIf="locationId == 7">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11732.83497303608!2d-85.6543239!3d42.6781204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6435299a920ef9dd!2sWayland%20Self%20Storage!5e0!3m2!1sen!2sus!4v1618869180123!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
-            </span>
-            <span *ngIf="locationId == 8">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11735.789871700059!2d-85.6443378!3d42.6624686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce2aed81651c209e!2sWayland%20Self%20Storage!5e0!3m2!1sen!2sus!4v1618870473701!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
-            </span>
-            <span *ngIf="locationId == 9">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11735.789871700059!2d-85.6443378!3d42.6624686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce2aed81651c209e!2sWayland%20Self%20Storage!5e0!3m2!1sen!2sus!4v1618870473701!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
-            </span>
-            <span *ngIf="locationId == 10">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11735.789871700059!2d-85.6443378!3d42.6624686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce2aed81651c209e!2sWayland%20Self%20Storage!5e0!3m2!1sen!2sus!4v1618870473701!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
-            </span>
-            <span *ngIf="locationId == 11">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11735.789871700059!2d-85.6443378!3d42.6624686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce2aed81651c209e!2sWayland%20Self%20Storage!5e0!3m2!1sen!2sus!4v1618870473701!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
-            </span>
-            <span *ngIf="locationId == 12">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.0064543895473!2d-85.90776388452402!3d42.97813767915021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819a2f22b74395b%3A0x8892d611a9291ed9!2sM%20%26%20S%20Storage%20LLC!5e0!3m2!1sen!2sus!4v1624205587994!5m2!1sen!2sus" width="100%" height="220" frameborder="0"  allowfullscreen></iframe>
-            </span>
+          <span *ngIf="locationId == 1">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11631.245783257717!2d-86.139441!3d43.213444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec701dabcb5a8db9!2sBoxer%20Self%20Storage!5e0!3m2!1sen!2sus!4v1615259818051!5m2!1sen!2sus"
+              width="100%"
+              height="220"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </span>
+          <span *ngIf="locationId == 2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11599.745612554876!2d-85.4730562!3d43.3783538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa75c8ec31343bb96!2sJ%20%26%20L%20Self%20Storage!5e0!3m2!1sen!2sus!4v1618342078065!5m2!1sen!2sus"
+              width="100%"
+              height="220"
+              frameborder="0"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </span>
+          <span *ngIf="locationId == 3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11685.519490282275!2d-85.0751504!3d42.9281179!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc610ff3a8c1fb381!2sSmarter%20Storage%20LLC!5e0!3m2!1sen!2sus!4v1618347194154!5m2!1sen!2sus"
+              width="100%"
+              height="220"
+              frameborder="0"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </span>
+          <span *ngIf="locationId == 4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11655.905163196605!2d-85.6915751!3d43.0839938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe5f8849266706140!2sAOV%20Storage!5e0!3m2!1sen!2sus!4v1618365654405!5m2!1sen!2sus"
+              width="100%"
+              height="220"
+              frameborder="0"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </span>
+          <span *ngIf="locationId == 5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11601.535241854954!2d-85.8011198!3d43.3689982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x71bc20b3c52a1d5f!2sRed%20Barn%20Mini%20Storage!5e0!3m2!1sen!2sus!4v1618866579367!5m2!1sen!2sus"
+              width="100%"
+              height="220"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </span>
+          <span *ngIf="locationId == 6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.07395782364!2d-85.66407698453352!3d42.68097567916664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819cc40e4236735%3A0x271a4fcddc851d0c!2s3591%2012th%20St%2C%20Wayland%2C%20MI%2049348!5e0!3m2!1sen!2sus!4v1618868066608!5m2!1sen!2sus"
+              width="100%"
+              height="220"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </span>
+          <span *ngIf="locationId == 7">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11732.83497303608!2d-85.6543239!3d42.6781204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6435299a920ef9dd!2sWayland%20Self%20Storage!5e0!3m2!1sen!2sus!4v1618869180123!5m2!1sen!2sus"
+              width="100%"
+              height="220"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </span>
+          <span *ngIf="locationId == 8">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11735.789871700059!2d-85.6443378!3d42.6624686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce2aed81651c209e!2sWayland%20Self%20Storage!5e0!3m2!1sen!2sus!4v1618870473701!5m2!1sen!2sus"
+              width="100%"
+              height="220"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </span>
+          <span *ngIf="locationId == 9">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11735.789871700059!2d-85.6443378!3d42.6624686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce2aed81651c209e!2sWayland%20Self%20Storage!5e0!3m2!1sen!2sus!4v1618870473701!5m2!1sen!2sus"
+              width="100%"
+              height="220"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </span>
+          <span *ngIf="locationId == 10">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11735.789871700059!2d-85.6443378!3d42.6624686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce2aed81651c209e!2sWayland%20Self%20Storage!5e0!3m2!1sen!2sus!4v1618870473701!5m2!1sen!2sus"
+              width="100%"
+              height="220"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </span>
+          <span *ngIf="locationId == 11">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11735.789871700059!2d-85.6443378!3d42.6624686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce2aed81651c209e!2sWayland%20Self%20Storage!5e0!3m2!1sen!2sus!4v1618870473701!5m2!1sen!2sus"
+              width="100%"
+              height="220"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </span>
+          <span *ngIf="locationId == 12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.0064543895473!2d-85.90776388452402!3d42.97813767915021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819a2f22b74395b%3A0x8892d611a9291ed9!2sM%20%26%20S%20Storage%20LLC!5e0!3m2!1sen!2sus!4v1624205587994!5m2!1sen!2sus"
+              width="100%"
+              height="220"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </span>
         </div>
         <div class="hours-data w-100">
           <div class="row">
             <div class="col-lg-8">
-              <h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables>
-              <span><h4 class="pt-3" >Office Hours</h4><app-tables [tBody]="hours" ></app-tables></span>
+              <h4 class="pt-3">Access Hours</h4>
+              <app-tables [tBody]="access"></app-tables>
+              <span
+                ><h4 class="pt-3">Office Hours</h4>
+                <app-tables [tBody]="hours"></app-tables
+              ></span>
             </div>
             <div class="col-lg-4 btn-area text-center">
-              <a class="btn btn-outline-primary p-2"(click)="navigateToContact()" role="button">Contact Us</a> 
-              <a class="btn btn-primary-light p-2" (click)="navigateToPayment()" role="button">Pay Rent</a> 
-              <a class="btn btn-primary p-2" (click)='navigateToReserve(target)' role="button">Reserve Unit</a>                                       
+              <a
+                class="btn btn-outline-primary p-2"
+                (click)="navigateToContact()"
+                role="button"
+                >Contact Us</a
+              >
+              <a
+                class="btn btn-primary-light p-2"
+                (click)="navigateToPayment()"
+                role="button"
+                >Pay Rent</a
+              >
+              <a
+                class="btn btn-primary p-2"
+                (click)="navigateToReserve(target)"
+                role="button"
+                >Reserve Unit</a
+              >
             </div>
           </div>
         </div>
@@ -125,18 +867,23 @@
 <section class="sub-components">
   <div class="container feature-block mt-3">
     <div class="row">
-      <div class="col-md-3 col-6 p-3" *ngFor= "let feature of features">
-        <p class="text-center f-block-img"> 
-          <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
+      <div class="col-md-3 col-6 p-3" *ngFor="let feature of features">
+        <p class="text-center f-block-img">
+          <img src="{{ feature.data }}" class="f-img" alt="{{ feature.alt }}" />
         </p>
         <h2 class="text-center f-text">
-          {{feature.label}}
+          {{ feature.label }}
         </h2>
       </div>
     </div>
   </div>
-  <div  class="container px-0 pt-2 mt-3"  #target>
-      <app-tabs [tabs]='tabs' [name]='name' class="sub-component-background" [currentActiveTab]='currentTab' ></app-tabs>
+  <div class="container px-0 pt-2 mt-3" #target>
+    <app-tabs
+      [tabs]="tabs"
+      [name]="name"
+      class="sub-component-background"
+      [currentActiveTab]="currentTab"
+    ></app-tabs>
   </div>
 </section>
 

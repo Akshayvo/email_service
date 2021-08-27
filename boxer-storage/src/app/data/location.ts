@@ -115,7 +115,12 @@ export const tabs3 = [
     path: "./unit-sizer",
     active: false,
   },
-
+  {
+    id: "3",
+    name: "Gallery",
+    path: "./photos",
+    active: false,
+  },
   // {
   //     id: '3',
   //     name: 'Reserve Unit',
@@ -186,6 +191,12 @@ export const tabs5 = [
     id: "2",
     name: "Unit Sizer",
     path: "./unit-sizer",
+    active: false,
+  },
+  {
+    id: "3",
+    name: "Gallery",
+    path: "./photos",
     active: false,
   },
 ];

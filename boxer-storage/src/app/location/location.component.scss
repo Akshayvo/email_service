@@ -1,4 +1,11 @@
 @import "../../styles.scss";
+.carousel-caption {
+  bottom: 40px;
+
+  img {
+    height: 120px;
+  }
+}
 
 .contact-details {
   background-color: $light;
@@ -75,6 +82,36 @@
     color: $white;
   }
 }
+.carousel-indicators {
+  li {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px $primary solid;
+    position: relative;
+    flex: 0 1 auto;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: $primary;
+  }
+}
+.carousel-item {
+  max-width: 100%;
+
+  .active {
+    background-position: center center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
 
 .img-box-1-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-storage-evanston-ave-169.jpg");
@@ -85,6 +122,47 @@
 
 .img-box-1-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/webp/boxer-storage-evanston-ave-169.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+//carousel for evanston-ave
+.img-box-1-carousel-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-evanston-ave-carousel-1.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-1-carousel-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-evanston-ave-carousel-2.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-1-carousel-3-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-evanston-ave-carousel-3.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-1-carousel-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-evanston-ave-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-1-carousel-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-evanston-ave-carousel-2.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-1-carousel-3-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-evanston-ave-carousel-3.jpg");
   background-size: cover;
   height: 462px;
   background-position: center right;
@@ -104,6 +182,21 @@
   background-position: center right;
 }
 
+//carousel images for howard
+.img-box-2-carousel-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-howard-carousel-1.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-2-carousel-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-howard-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
 .img-box-3-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/jpg/boxer-self-storage-ionia-169.jpg");
   background-size: cover;
@@ -113,6 +206,32 @@
 
 .img-box-3-webp {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Boxer_Storage/webp/boxer-self-storage-ionia-169.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+//carosel for ionia
+.img-box-3-carousel-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-ionia-carousel-1.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-3-carousel-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-ionia-carousel-2.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-3-carousel-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-ionia-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-3-carousel-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-ionia-carousel-2.jpg");
   background-size: cover;
   height: 462px;
   background-position: center right;
@@ -132,6 +251,87 @@
   background-position: center right;
 }
 
+//carousel images
+.img-box-4-carousel-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-alpine-carousel-1.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-4-carousel-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-alpine-carousel-2.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-4-carousel-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-alpine-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-4-carousel-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-alpine-carousel-2.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+//carousel images dutton
+
+.img-box-9-carousel-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-dutton-carousel-1.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-9-carousel-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-dutton-carousel-2.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-9-carousel-3-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-dutton-carousel-3.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-9-carousel-4-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-dutton-carousel-4.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-9-carousel-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-dutton-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-9-carousel-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-dutton-carousel-2.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-9-carousel-3-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-dutton-carousel-3.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-9-carousel-4-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-dutton-carousel-4.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
 .img-box-5-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-red-barn-169.jpg");
   background-size: cover;
@@ -143,6 +343,72 @@
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-red-barn-169.webp");
   background-size: cover;
   height: 390px;
+  background-position: center right;
+}
+
+//red barn carousel
+.img-box-5-carousel-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-red-barn-carousel-1.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-5-carousel-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-red-barn-carousel-2.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-5-carousel-3-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-red-barn-carousel-3.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-5-carousel-4-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-red-barn-carousel-4.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-5-carousel-5-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-red-barn-carousel-5.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-5-carousel-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-red-barn-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-5-carousel-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-red-barn-carousel-2.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-5-carousel-3-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-red-barn-carousel-3.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-5-carousel-4-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-red-barn-carousel-4.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-5-carousel-5-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-red-barn-carousel-5.jpg");
+  background-size: cover;
+  height: 462px;
   background-position: center right;
 }
 
@@ -159,7 +425,32 @@
   height: 390px;
   background-position: center right;
 }
+//carousel for westside
+.img-box-6-carousel-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-westside-carousel-1.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-6-carousel-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-westside-carousel-2.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
 
+.img-box-6-carousel-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-westside-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-6-carousel-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-westside-carousel-2.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
 
 .img-box-7-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-mill-street-169.jpg");
@@ -175,6 +466,71 @@
   background-position: center right;
 }
 
+//wayland-mill carousel
+.img-box-7-carousel-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-mill-carousel-1.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-7-carousel-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-mill-carousel-2.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-7-carousel-3-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-mill-carousel-3.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-7-carousel-4-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-mill-carousel-4.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-7-carousel-5-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-mill-carousel-5.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-7-carousel-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-mill-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-7-carousel-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-mill-carousel-2.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-7-carousel-3-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-mill-carousel-3.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-7-carousel-4-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-mill-carousel-4.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-7-carousel-5-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-mill-carousel-5.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
 
 .img-box-8-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-southside-43.jpg");
@@ -187,6 +543,59 @@
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-southside-43.webp");
   background-size: cover;
   height: 390px;
+  background-position: center right;
+}
+
+//wayland-southside carousel
+.img-box-8-carousel-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-southside-carousel-1.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-8-carousel-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-southside-carousel-2.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-8-carousel-3-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-southside-carousel-3.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-8-carousel-4-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-southside-carousel-4.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-8-carousel-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-southside-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-8-carousel-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-southside-carousel-2.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-8-carousel-3-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-southside-carousel-3.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-8-carousel-4-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-southside-carousel-4.jpg");
+  background-size: cover;
+  height: 462px;
   background-position: center right;
 }
 
@@ -204,6 +613,31 @@
   background-position: center right;
 }
 
+.img-box-9-carousel-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-southside-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-9-carousel-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-wayland-southside-carousel-2.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-9-carousel-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-southside-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-9-carousel-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-wayland-southside-carousel-2.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
 .img-box-10-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-m45-169.jpg");
   background-size: cover;
@@ -218,6 +652,59 @@
   background-position: center right;
 }
 
+//m-45 carousel
+.img-box-10-carousel-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-m-45-carousel-1.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-10-carousel-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-m-45-carousel-2.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-10-carousel-3-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-m-45-carousel-3.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-10-carousel-4-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-m-45-carousel-4.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-10-carousel-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-m-45-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-10-carousel-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-m-45-carousel-2.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-10-carousel-3-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-m-45-carousel-3.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-10-carousel-4-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-m-45-carousel-4.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
 .img-box-11-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-m45-169.jpg");
   background-size: cover;
@@ -229,6 +716,60 @@
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-otsego-169.webp");
   background-size: cover;
   height: 390px;
+  background-position: center right;
+}
+
+//carousel otsego
+
+.img-box-11-carousel-1-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-otsego-carousel-1.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-11-carousel-2-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-otsego-carousel-2.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-11-carousel-3-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-otsego-carousel-3.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-11-carousel-4-webp {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/webp/boxer-storage-otsego-carousel-4.webp");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-11-carousel-1-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-otsego-carousel-1.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-11-carousel-2-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-otsego-carousel-2.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+
+.img-box-11-carousel-3-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-otsego-carousel-3.jpg");
+  background-size: cover;
+  height: 462px;
+  background-position: center right;
+}
+.img-box-11-carousel-4-jpg {
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Boxer_Storage/jpg/boxer-storage-otsego-carousel-4.jpg");
+  background-size: cover;
+  height: 462px;
   background-position: center right;
 }
 

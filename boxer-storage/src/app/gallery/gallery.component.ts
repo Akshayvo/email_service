@@ -4,8 +4,10 @@ import {
   galleryAlpine,
   galleryDutton,
   galleryHoward,
+  galleryIonia,
   galleryM45,
   galleryOtsego,
+  galleryRedBarn,
   galleryWaylandMillStreet,
   galleryWaylandSouthSide,
   galleryWaylandWestSide,
@@ -69,6 +71,12 @@ export class GalleryComponent implements OnInit {
     if (this.router.url.includes("wayland-westside")) {
       this.fetchDetailsLocation9();
     }
+    if (this.router.url.includes("red-barn")) {
+      this.fetchDetailsLocation10();
+    }
+    if (this.router.url.includes("ionia")) {
+      this.fetchDetailsLocation11();
+    }
   }
 
   public fetchDetailsLocation1() {
@@ -111,6 +119,14 @@ export class GalleryComponent implements OnInit {
   public fetchDetailsLocation9() {
     this.galleryImages = galleryWaylandWestSide;
     this.id = 9;
+  }
+  public fetchDetailsLocation10() {
+    this.galleryImages = galleryRedBarn;
+    this.id = 10;
+  }
+  public fetchDetailsLocation11() {
+    this.galleryImages = galleryIonia;
+    this.id = 11;
   }
   setSelectedImage(image: any) {
     this.selectedImage = image;

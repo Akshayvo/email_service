@@ -248,3 +248,58 @@ export const galleryWaylandWestSide = [
     alt: `A photograph of self storage units with the billboard contianing the facility name`,
   },
 ];
+
+export const galleryRedBarn = [
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-red-barn-1`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-red-barn-1-thumb`,
+    alt: `A photograph of self storage units with the banner containing the facility name`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-red-barn-2`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-red-barn-2-thumb`,
+    alt: `A photograph of self storage units`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-red-barn-3`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-red-barn-3-thumb`,
+    alt: `A photograph of self storage units`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-red-barn-4`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-red-barn-4-thumb`,
+    alt: `A photograph of self storage units`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-red-barn-5`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-red-barn-5-thumb`,
+    alt: `A photograph of self storage units`,
+  },
+];
+
+export const galleryIonia = [
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-ionia-1`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-ionia-1-thumb`,
+    alt: `A photograph of self storage units with the banner containing the facility name`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-ionia-2`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-ionia-2-thumb`,
+    alt: `A photograph of self storage units along with fencing`,
+  },
+];
