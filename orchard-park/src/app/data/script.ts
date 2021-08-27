@@ -25,27 +25,27 @@ socialLinks.forEach(links => {
 
 export const script = {               // Please fill this script according to facility's information
     imagesHomePage: [
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/inside-self-storage-unit.jpg", // 1:1
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg", // 4:3
-      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Sample_Self_Storage/jpg/sample-self-storage-north-jumbotron.jpg" // 16:9
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Orchard_Park/orchard-park-self-storage-jumbotron.jpg", // 1:1
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Orchard_Park/orchard-park-self-storage-jumbotron.jpg", // 4:3
+      "https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Orchard_Park/orchard-park-self-storage-jumbotron.jpg" // 16:9
      ],
      telephone: contact[contactIndex].data,
      map: "https://www.google.com/maps?ie=UTF8&hq&ll=44.264137,-88.3540592",
      description: "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.",
-     streetAddress: "148 W 51st St",
-     state: "New York",
-     addressLocality: "New York",
-     addressRegion: "NY",
-     postalCode: "10019",
+     streetAddress: "3917 114th St",
+     state: "Texas",
+     addressLocality: "Lubbock",
+     addressRegion: "TX",
+     postalCode: "79423",
      addressCountry: "US",
      id: environment.websiteUrl || "",
      paymentAccepted:  "Cash, Check, Credit Card, Debit Card, Online Credit Card, Online Debit Card",
      currenciesAccepted: "USD",
-     ratingValue: "4",
-     bestRating: "5",
-     reviewCount: "250",
-     latitude: 40.761293,
-     longitude: -73.982294,
+     ratingValue: "",
+     bestRating: "",
+     reviewCount: "",
+     latitude: "",
+     longitude: "",
      openingHours: [],
      priceRange: ''
 };

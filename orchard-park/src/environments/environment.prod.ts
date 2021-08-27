@@ -1,4 +1,4 @@
-declare var require: any
+
 export const environment = {
   production: true,
   type: 0,  // { API: 0, iframe: 1 }
@@ -12,9 +12,10 @@ export const environment = {
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   appId: 'orchard-park',
-  facilityName: 'Sample Self Storage - North',
+  facilityName: 'Orchard Park Self Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: 'https://www.opselfstorage.com',
   APIKey: `dzJ0OVcxSjIqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O`, // 29126
+  
 };
