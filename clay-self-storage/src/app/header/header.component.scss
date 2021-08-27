@@ -18,6 +18,8 @@ img {
   color: $white;
 }
 
+
+
 .navbar-brand {
   display: inline-block;
   padding-top: .3125rem;
@@ -36,6 +38,10 @@ img {
     font-size: 0.82em;
     font-weight: 500;
     width: 100%;
+  }
+
+  .climate{
+    color: $white;
   }
 }
 
@@ -109,6 +115,14 @@ img {
   }
 }
 
+@media screen and (min-width: 768px){
+  .contact-header {
+  .contact-details{
+    padding: 0px;
+  }
+}
+}
+
 @media screen and (max-width: 991px) {
   .display {
     display: none;
@@ -125,6 +139,7 @@ img {
       width: fit-content;
     }
   }
+  
 }
 
 @media only screen and (max-width: 991px) and (max-height: 480px) {
