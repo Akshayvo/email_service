@@ -82,8 +82,15 @@ table {
 
 .background-padding {
   padding: 64px;
+ 
 }
 
+@media screen and (max-width:1024px) and (min-width:768px) {
+  .testing{
+    font-size: 24px;
+    font-weight: bolder;
+  }
+}
 @media only screen and (max-width: 767px) and (min-width: 601px) {
   .view-rates {
     padding: 40px;
@@ -95,6 +102,10 @@ table {
 }
 
 @media screen and (max-width: 600px) {
+  .testing{
+    font-size: 18px;
+    font-weight: bolder;
+  }
   .view-rates {
     background-color: #edf1ee;
     padding: 16px 0;

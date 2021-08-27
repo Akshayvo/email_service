@@ -2,15 +2,15 @@
   <div class="container">
     <div class="contact-header">
       <div class="row">
-        <div class="col-md-8 col-s-11">
-          <span class="contact-details pr-lg-4 pr-md-0" *ngFor="let contact of contactDetails">
+        <div class="col-lg-8 ">
+          <span class="contact-details  pr-md-2" *ngFor="let contact of contactDetails">
             <i [class]="contact?.class"></i>
             <span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
               <a [href]="contact?.redirect" rel="noopener" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></span>
             <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
           </span>
         </div>
-        <div class="col-md-4 col-s-1 ml-auto text-right climate">
+        <div class="col-lg-4  ml-auto text-right text-white">
           <strong>Climate Controlled - First Month Free</strong>
         </div>
       </div>
