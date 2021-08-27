@@ -17,11 +17,11 @@ export const dataViewRates = [
 export const militaryData = [
     {
         td1: '10\' x 5\'',
-        td2: '$45'
+        td2: '$75'
     },
     {
         td1: '10\' x 10\'',
-        td2: '$65'
+        td2: '$90'
     },
     {
         td1: '10\' x 15\'',
