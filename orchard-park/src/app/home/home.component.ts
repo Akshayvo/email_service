@@ -2,7 +2,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-
+import { environment } from '../../environments/environment';
 import { contact, hours } from '../data/contact';
 import { featuresList, featuresHead, aboutUs,  gettingStarted, feature, blurb} from '../data/home';
 
@@ -40,7 +40,11 @@ export class HomeComponent implements OnInit {
   }
 
   public navigate(location: any) {
-    this.router.navigate([location]);
+    if ((location === '/view-rates') || (location === '/storage-tips') || (location === '/reserve-unit')) {
+      this.router.navigate([`${environment.locationName}/${location}`]);
+    } else {
+      this.router.navigate([`${location}`]); 
+    }
   }
 
   ngOnInit() {
