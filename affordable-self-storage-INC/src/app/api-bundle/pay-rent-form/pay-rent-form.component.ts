@@ -346,6 +346,15 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           const { Tenant } = tenantData;
           this.balance = Tenant.Balance;
           this.surchargeService.setAmt(this.balance);
+          if (this.router.url.includes('payReservationCharges')) {
+            this.surchargeService.setAmt(this.TotalReserveAmount);
+          } else {
+            if (this.router.url.includes('payMoveInCharges')) {
+              this.surchargeService.setAmt(this.totalMoveInAmount);
+            } else {
+              this.surchargeService.setAmt(this.balance);
+            }
+          }
           this.surchargeService.getIdPaytype(this.paytypeid);
           this.IsAutoPaymentsEnabled = Tenant.IsAutoPaymentsEnabled;
           this.date = Tenant.LastPaymentOn;
@@ -671,8 +680,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         return;
       } else {
         this.showloaderForPayment = true;
-        if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
-console.log('this.payRentForm.value.objPayment.PaymentAmount', this.payRentForm.value.objPayment.PaymentAmount);
+        // if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
+// console.log('this.payRentForm.value.objPayment.PaymentAmount', this.payRentForm.value.objPayment.PaymentAmount);
           if (this.amountToPay > 0) {
             this.payRentForm.patchValue({
               objPayment: {
@@ -692,7 +701,7 @@ console.log('this.payRentForm.value.objPayment.PaymentAmount', this.payRentForm.
               }
             });
           }
-        }
+        // }
 
         if (!localStorage.getItem('strTenantToken') &&
         !localStorage.getItem('strTempTenantToken')) {

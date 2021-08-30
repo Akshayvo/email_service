@@ -2,9 +2,8 @@ export const homePageTitle = `Self Storage Units in Lambertville In Lambertville
 export const homePageContent = `Affordable Self Storage, INC. offers convenient 24/7 access to your belongings,
 online payments and a variety of unit sizes for all of your self storage needs.`;
 
-export const viewRatesPageTitle = `View Rates  | Affordable Self Storage, INC.`;
-export const viewRatesPageContent = `Review our current rates and availability, then reserve your unit in
-minutes with our easy online reservation form!`;
+export const viewRatesPageTitle = `View Rates | Affordable Self Storage, INC.`;
+export const viewRatesPageContent = `Check out our rates and reserve online or give us a call to speak with a member of our team to reserve your unit!`;
 
 export const reservePageTitle = `Reserve a Unit | Sample Self Storage - North`;
 export const reservePageContent = `Ready to reserve your unit at Affordable Self Storage, INC.? Click here

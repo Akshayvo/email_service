@@ -3,6 +3,8 @@
     </div>
     <div [class.loader]="showLoader" class="loader-position"> 
     </div>
+    <p>Units of identical size with different pricing are priced based on convenience of their location. Carts are available for customers' use. </p><br>
+        <p>A reservation deposit is required to secure a unit. The reservation deposit will serve as the security deposit for the duration of the rental. It is refundable upon vacating in accordance with the terms in the rental agreement.</p><br>
   <table  class="viewrates-desktop">
       <tHead [class.display]="!showTable">
           <tr>
@@ -19,9 +21,9 @@
           <td colspan="2" class="px-4 border text-center">
               <span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}
           </td>
-          <!-- <td colspan="2" class="px-4 border text-center">
+          <td colspan="2" class="px-4 border text-center">
             <span *ngIf="lstUnitType.DepositAmount != null">$</span>{{lstUnitType.DepositAmount | number : '1.2-2'}}
-          </td> -->
+          </td>
           <td colspan="2" class="py-2 px-4 border text-center" *ngIf="lstUnitType.IsUnitsAvailable; else other_reserve">
               <button (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
           </td>

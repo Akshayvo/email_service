@@ -31,51 +31,51 @@ export const apiRoutes = [
   // Fallback when no prior route is matched
   { path: "", component: HomeComponent },
   { path: "storage-tips", component: StorageTipsComponent },
-  //{ path: 'reserve-unit', component: ReserveComponent }, //commented since the reserve unit is turned off , we can uncomment if the reservations is turned on
+  { path: 'reserve-unit', component: ReserveComponent }, //commented since the reserve unit is turned off , we can uncomment if the reservations is turned on
   { path: "storageTips", component: StorageTipsComponent },
   { path: "contact-us", component: ContactComponent },
   { path: "unit-sizer", component: UnitSizerComponent },
-  // {
-  //   path: 'view-rates',
-  //   component: ViewRatesComponent,
-  //   children: [
-  //     { path: '', component: ViewRatesPageComponent },
-  //     { path: 'reserve', component: ReserveUnitFormComponent },
-  //     { path: 'move-in', component: ReserveUnitFormComponent },
-  //     { path: 'confirmation', component: ConfirmationDataComponent },
-  //     { path: 'confirmation-page', component: ConfirmationPageComponent },
-  //     { path: 'payReservationCharges', component: PayRentFormComponent },
-  //     { path: 'payMoveInCharges', component: PayRentFormComponent },
-  //   ]
-  //  },
-  // {
-  //   path: 'pay-rent', component: PaymentComponent,
-  //   children: [
-  //     { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
-  //     { path: 'rent-sub', component: RentSubComponent,
-  //     children: [
-  //     {path: '', redirectTo: 'login', pathMatch: 'full'},
-  //     {path: 'login', component: LoginComponent },
-  //     {path: 'forgotPassword', component: ForgotPasswordComponent },
-  //     {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-  //     {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
-  //     { path: 'verifyCode', component: VerifyCodeComponent },
-  //     { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-  //     // canActivate: [VerifictionCodeGuard]
-  //   ] },
-  //   { path: 'sign-up', component: SignUpComponent,
-  //     children: [
-  //       {path: '', redirectTo: 'login', pathMatch: 'full'},
-  //       {path: 'login', component: LoginComponent },
-  //       {path: 'forgotPassword', component: ForgotPasswordComponent },
-  //       {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-  //       {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
-  //       { path: 'verifyCode', component: VerifyCodeComponent },
-  //       { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
-  //       // canActivate: [VerifictionCodeGuard]
-  //     ]  }
-  //   ] },
-  // { path: 'forgot-password', component: ForgotPasswordComponent },
+  {
+    path: 'view-rates',
+    component: ViewRatesComponent,
+    children: [
+      { path: '', component: ViewRatesPageComponent },
+      { path: 'reserve', component: ReserveUnitFormComponent },
+      { path: 'move-in', component: ReserveUnitFormComponent },
+      { path: 'confirmation', component: ConfirmationDataComponent },
+      { path: 'confirmation-page', component: ConfirmationPageComponent },
+      { path: 'payReservationCharges', component: PayRentFormComponent },
+      { path: 'payMoveInCharges', component: PayRentFormComponent },
+    ]
+   },
+  {
+    path: 'pay-rent', component: PaymentComponent,
+    children: [
+      { path: '', redirectTo: 'rent-sub', pathMatch: 'full'},
+      { path: 'rent-sub', component: RentSubComponent,
+      children: [
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent },
+      {path: 'forgotPassword', component: ForgotPasswordComponent },
+      {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      {path: 'payment', component: PayRentFormComponent, canActivate: [AuthGuard]},
+      { path: 'verifyCode', component: VerifyCodeComponent },
+      { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+      // canActivate: [VerifictionCodeGuard]
+    ] },
+    { path: 'sign-up', component: SignUpComponent,
+      children: [
+        {path: '', redirectTo: 'login', pathMatch: 'full'},
+        {path: 'login', component: LoginComponent },
+        {path: 'forgotPassword', component: ForgotPasswordComponent },
+        {path: 'changePassword', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+        {path: 'auto-pay', component: AutoPayComponent, canActivate: [AuthGuard]},
+        { path: 'verifyCode', component: VerifyCodeComponent },
+        { path: 'reset', component: ResetPasswordComponent, canActivate: [VerifictionCodeGuard]}
+        // canActivate: [VerifictionCodeGuard]
+      ]  }
+    ] },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: "frequently-asked-questions", component: FaqComponent },
   {
     path: "review",
