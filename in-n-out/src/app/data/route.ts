@@ -93,6 +93,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: `${environment.locationName}/frequently-asked-questions`, component: FaqComponent},
+    { path: `${environment.locationName}/unit-sizer`, component: UnitSizerComponent},
     { path: `${environment.locationName}/commerce-st`,
       component: LocationComponent,
       children: [

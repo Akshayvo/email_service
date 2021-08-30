@@ -15,15 +15,28 @@ a {
 }
 
 .contact-header {
-  display: inline;
+  // display: inline;
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  
   .contact-details {
     color: $white !important;
     //  font-size: 0.82em;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 500;
     width: 100%;
+    margin-right: 7px;
+    
   }
+  .contact-links a{
+    font-size: 15px;
+    
+  }
+  
 }
 
 .social {
@@ -34,6 +47,7 @@ a {
 
   i {
     font-size: 1.2rem;
+    
   }
 }
 
@@ -127,6 +141,7 @@ a {
 }
 
 @media screen and (min-width: 992px) {
+  
   .navbar-nav .nav-link {
     padding-right: 2px;
     padding-left: 2px;

@@ -14,5 +14,5 @@ export const environment = {
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://storageplusbaldwin.com`
+  websiteUrl: `https://in-n-out-storage-staging.netlify.app`
 };

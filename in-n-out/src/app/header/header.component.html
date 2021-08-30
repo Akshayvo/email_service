@@ -2,24 +2,22 @@
   <div class="container">
     <div class="contact-header">
       <div class="row">
-        <div class="col-md-9 text-center">
-          <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
-            <i [class]="contact?.class"></i>
+        <div class="col-md-9 ">
+          <span class="contact-details " *ngFor="let contact of contactDetails">
+            <i [class]="contact?.class "></i>
             <span class="contact-links" *ngIf="contact?.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
               <a [href]="contact?.redirect" target="{{(contact?.label === 'Address: ') ? '_blank' : '_self'}}" rel="noopener">&nbsp;{{contact.data}}</a></span>
             <ng-template #other_content>&nbsp;{{contact.data}}</ng-template>
           </span>
-          
         </div>
-        <div class="col-md-2 text-center">
+        <div class="col-md-2 ">
           <a class="btn btn-primary mobile-btn" (click)="navigate('/pay-rent')"  >PAY RENT
           </a>
-          
         </div>
           
-        <div class="col-md-1 ml-auto text-center">
+        <div class="col-md-1">
           <span class="social pl-2 text-right" *ngFor="let social of socialLinks">
-            <a [href]="social?.path" target="_blank" rel="noreferrer">
+            <a [href]="social?.path" target="_blank" rel="noreferrer" >
               <i [class]="social?.class"></i>
             </a>
           </span>
@@ -32,7 +30,7 @@
 <nav class="navbar navbar-expand-lg bg-white" id="nav-header">
   <div class="container">
     <a class="navbar-brand" (click)="navigate('/')">
-      <img src="{{imageBaseUrl}}/logo.{{imagetype}}" width="auto" height="70px"  alt="text-based artwork that spells out In-N-Out Storage">
+      <img src="{{imageBaseUrl}}/in-n-out-storage-logo.{{imagetype}}" width="auto" height="70px"  alt="text-based artwork that spells out In-N-Out Storage">
     </a>
 
     <div class="ml-5 text-center mobile" >

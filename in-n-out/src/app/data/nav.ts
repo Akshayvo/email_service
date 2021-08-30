@@ -73,6 +73,11 @@ export const navLinks = [
                 label: 'Specials & Discounts',
                 path: `${environment.locationName}/specials`,
             },
+            {
+                id: '5',
+                label: 'Unit Sizes',
+                path: `${environment.locationName}/unit-sizer`,
+            }
             
         ]
     },
