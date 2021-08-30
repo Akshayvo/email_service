@@ -705,11 +705,84 @@
             title="self storage unit buildings in rows on the left behind an electronic gate with moving trucks parked on the right"
           >
             <div
-              class="img-box-12"
-              [ngClass]="
-                imagetype === 'jpg' ? 'img-box-12-jpg' : 'img-box-12-webp'
-              "
-            ></div>
+              id="carouselJumbo"
+              class="carousel slide jumbotron-top-style"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo" data-slide-to="1"></li>
+                <li data-target="#carouselJumbo" data-slide-to="2"></li>
+                <li data-target="#carouselJumbo" data-slide-to="3"></li>
+                 <li data-target="#carouselJumbo" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-12-carousel-1-jpg'
+                        : 'img-box-12-carousel-1-webp'
+                    "
+                    title="photo containing supplies and cardboard boxes"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-12-carousel-2-jpg'
+                        : 'img-box-12-carousel-2-webp'
+                    "
+                    title="photo containing trucks along the office main entrance"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-12-carousel-3-jpg'
+                        : 'img-box-12-carousel-3-webp'
+                    "
+                    title="photo of the facility officedoor along with key drop box"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-12-carousel-4-jpg'
+                        : 'img-box-12-carousel-4-webp'
+                    "
+                    title="photo containing the containers alongside the fencing"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                 <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-12-carousel-5-jpg'
+                        : 'img-box-12-carousel-5-webp'
+                    "
+                    title="photo containing u-haul trucks"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </span>
         </div>
       </div>
