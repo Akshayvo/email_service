@@ -14,9 +14,11 @@ export class TablesComponent implements OnInit {
   @Input() tHead: any;
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {    
     this.th = this.tHead;
     this.tds = this.tBody;
-    this.objectKeys = Object.keys(this.tds[0]);
+    if(this.tds.length){
+      this.objectKeys = Object.keys(this.tds[0]);
+    }
   }
 }
