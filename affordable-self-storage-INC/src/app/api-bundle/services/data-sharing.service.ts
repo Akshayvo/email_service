@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataSharingService {
+  paymentSuccess: boolean;
   strTenantToken: string;
   strTempTenantToken: string;
   verificationCode: string;
@@ -19,6 +20,8 @@ export class DataSharingService {
   addingTenant = false;
   periodID: number;
   period: string;
+  PaymentAmount: number;
+  CCApprovalCode: string;
   signUpForAutoPay: boolean;
 
   MoveInData = {

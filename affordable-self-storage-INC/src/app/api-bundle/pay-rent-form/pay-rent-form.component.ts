@@ -174,7 +174,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
     parseFloat((this.dataSharingService.MoveInData.TotalChargesAmount + this.dataSharingService.MoveInData.TotalTaxAmount).toFixed(2));
 
 
-    if (this.router.url.includes('/payReservationCharges')) {
+    if (this.router.url.includes('payReservationCharges')) {
+      console.log(this.TotalReserveAmount)
       this.navigateToReserve = true;
       this.navigateToMoveIn = false;
       this.payRentForm.patchValue({
@@ -498,6 +499,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   makePayment(paymentData: any) {
+    console.log("makepayment");
     this.makePaymentForUnit = true;
     if (this.toggleSignUp === true) {
       if (this.payRentForm.value.objPayment.SignUpForAutoPay === true) {
@@ -512,14 +514,20 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       .subscribe(paymentDataResponse => {
         this.showloaderForPayment = false;
         if (paymentDataResponse && paymentDataResponse.PayTypeForResult && paymentDataResponse.PayTypeForResult.PaymentAmountTotal) {
-          this.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
+          this.dataSharingService.PaymentAmount = paymentDataResponse.PayTypeForResult.PaymentAmountTotal;
         }
-        this.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
+        this.dataSharingService.CCApprovalCode = paymentDataResponse.PayTypeForResult.CCApprovalCode;
         if ( paymentDataResponse.intErrorCode === 1 ) {
+          
           this.makePaymentForUnit = false;
+         
           if (this.navigateToReserve) {
+           
             this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
+            
             this.makeAReservation(this.MoveIn);
+            
+
           } else {
             if (this.navigateToMoveIn) {
               this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
@@ -528,6 +536,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
           }
           this.showSuccessPayment = true;
         } else {
+          this.showloaderForPayment = false;
           this.makePaymentForUnit = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
@@ -545,7 +554,6 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
       }
     );
   }
-
   signOut(logOut: any) {
    this.signOutSubscribe$ = this.signOutService.signOut(logOut)
       .subscribe(result => {
@@ -680,8 +688,8 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
         return;
       } else {
         this.showloaderForPayment = true;
-        // if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
-// console.log('this.payRentForm.value.objPayment.PaymentAmount', this.payRentForm.value.objPayment.PaymentAmount);
+        if ( this.navigateToMoveIn === false && this.navigateToReserve === false) {
+console.log('this.payRentForm.value.objPayment.PaymentAmount', this.payRentForm.value.objPayment.PaymentAmount);
           if (this.amountToPay > 0) {
             this.payRentForm.patchValue({
               objPayment: {
@@ -701,7 +709,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               }
             });
           }
-        // }
+        }
 
         if (!localStorage.getItem('strTenantToken') &&
         !localStorage.getItem('strTempTenantToken')) {
