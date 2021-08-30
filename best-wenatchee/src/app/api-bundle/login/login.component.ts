@@ -129,7 +129,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   public fetchContactDetail() {
     console.log(this.router.url)
-    if (this.router.url.includes('rebel-mini')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.id = 1;
       this.name = 'Rebel Storage Location';
       this.contact = contactsLocation1;
@@ -137,7 +137,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
     } 
 
-    else if (this.router.url.includes('secure-storage')) {
+    else if (this.router.url.includes('leos-storage')) {
       this.id = 2;
       this.name = 'Secure Storage Location';
       this.contact = contactsLocation2;
@@ -155,19 +155,19 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('rebel-mini')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.og = ogPayRentPageLocation1;
     }
-    else if (this.router.url.includes('secure-storage')) {
+    else if (this.router.url.includes('leos-storage')) {
       this.og = ogPayRentPageLocation2;
     }    
     }
 
 public fetchTwitter() {
-  if (this.router.url.includes('rebel-mini')) {
+  if (this.router.url.includes('south-wenatchee')) {
     this.twitter = twitterPayRentPageLocation1;
   }
-  else if (this.router.url.includes('secure-storage')) {
+  else if (this.router.url.includes('leos-storage')) {
     this.twitter = twitterPayRentPageLocation2;
   } 
 }

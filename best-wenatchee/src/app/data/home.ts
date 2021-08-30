@@ -29,19 +29,19 @@ export const location1FeaturesHead = [
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: 'Online Reservation & Bill Pay',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
-        alt: 'Icon art displaying a screen with cursor'
-    },
-    {
         label: 'Stellar Customer Service',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Service Representative Icon'
+        alt: 'Customer Service Representative Icon'
     },
     {
-        label: 'Climate Controlled',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg',
-        alt: 'Icon of thermometer indicating climate-controlled units'
+        label: 'Affordable Self Storage Rates',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        alt: 'Icon of a hand holding money'
+    },
+    {
+        label: 'Security Cameras on Premises',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
+        alt: 'Icon of a security camera'
     },
 ];
 export const location2FeaturesHead = [
@@ -51,22 +51,21 @@ export const location2FeaturesHead = [
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: 'Online Reservation & Bill Pay',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
-        alt: 'Icon art displaying a screen with cursor'
-    },
-    {
         label: 'Stellar Customer Service',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
-        alt: 'Service Representative Icon'
+        alt: 'Customer Service Representative Icon'
     },
     {
         label: 'Affordable Self Storage Rates',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
-        alt: ' Icon of a hand holding money'
+        alt: 'Icon of a hand holding money'
+    },
+    {
+        label: 'Security Cameras on Premises',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/cctv.svg',
+        alt: 'Icon of a security camera'
     },
 ];
-
 
 export const aboutusHeading = `Affordable Storage Units in Wenatchee Washington`;
 

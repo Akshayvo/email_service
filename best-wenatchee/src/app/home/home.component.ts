@@ -10,6 +10,7 @@ import { homePageTitle, homePageContent } from '../data/title';
 import { environment } from '../../environments/environment';
 import { UaParserService } from '../services/ua-parser.service';
 import { carouselData } from '../data/carousel';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -48,6 +49,7 @@ export class HomeComponent implements OnInit {
     private data: LocationService,
     private canonical: CanonicalService,
     private uaParserService: UaParserService,
+    public router: Router,
   ) {
     this.fetchScript();
     this.loadScript();
@@ -183,6 +185,10 @@ export class HomeComponent implements OnInit {
       this.serviceOffered = serviceOffered;
       this.aboutusHeading = aboutusHeading;
       this.aboutusAlt = aboutusALt;
+    }
+
+    public navigate(location: any) {
+      this.router.navigate([`${environment.locationName}/${location}`]);
     }
 
 }

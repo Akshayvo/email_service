@@ -45,11 +45,11 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('rebel-mini')) {
-      this.name = ' Rebel Mini Storage';
+    if (this.router.url.includes('south-wenatchee')) {
+      this.name = 'South Wenatchee Self Storage';
   }
-    else if (this.router.url.includes('secure-storage')) {
-      this.name = ' Secure Storage';
+    else if (this.router.url.includes('leos-storage')) {
+      this.name = 'Leo\'s Self Storage';
   }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
@@ -64,19 +64,19 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('rebel-mini')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.og = ogPayRentPageLocation1;
     }
-    else if (this.router.url.includes('secure-storage')) {
+    else if (this.router.url.includes('leos-storage')) {
       this.og = ogPayRentPageLocation2;
     }   
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('rebel-mini')) {
+  if (this.router.url.includes('south-wenatchee')) {
     this.twitter = twitterPayRentPageLocation1;
   }
-  else if (this.router.url.includes('secure-storage')) {
+  else if (this.router.url.includes('leos-storage')) {
     this.twitter = twitterPayRentPageLocation2;
   }
 }

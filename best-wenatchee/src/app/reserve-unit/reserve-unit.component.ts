@@ -22,7 +22,7 @@ export class ReserveUnitComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
+    if (this.router.url.includes(`${environment.locationName}/south-wenatchee`)) {
       this.id = 1;
       this.heading = headingLocation1;
     } 

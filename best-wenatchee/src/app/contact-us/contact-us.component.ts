@@ -99,19 +99,19 @@ export class ContactUsComponent implements OnInit {
   get f() { return this.contactForm.controls; }
 
   public fetchScript() {
-      if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
+      if (this.router.url.includes(`${environment.locationName}/south-wenatchee`)) {
     this.script = contactPageLocation1Script;
       }
-      else if (this.router.url.includes(`${environment.locationName}/secure-storage`)) {
+      else if (this.router.url.includes(`${environment.locationName}/leos-storage`)) {
     this.script = contactPageLocation2Script;
       }         
   }
 
   public fetchOg() {
-    if (this.router.url.includes('rebel-mini')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.og = ogContactPageLocation1;
     } 
-    else if (this.router.url.includes('secure-storage')) {
+    else if (this.router.url.includes('leos-storage')) {
       this.og = ogContactPageLocation2;
     } 
     
@@ -123,10 +123,10 @@ public fetchMetaData() {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('rebel-mini')) {
+  if (this.router.url.includes('south-wenatchee')) {
     this.twitter = twitterContactPageLocation1;
   }
-  else if (this.router.url.includes('secure-storage')) {
+  else if (this.router.url.includes('leos-storage')) {
     this.twitter = twitterContactPageLocation2;
   }
   
@@ -164,10 +164,10 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('rebel-mini')) {
+    if (this.router.url.includes('south-wenatchee')) {
       this.fetchContactDetailsLocation1();
     }
-    else if (this.router.url.includes('secure-storage')) {
+    else if (this.router.url.includes('leos-storage')) {
       this.fetchContactDetailsLocation2();
     }   
   }

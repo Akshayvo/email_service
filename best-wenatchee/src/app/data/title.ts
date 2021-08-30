@@ -1,14 +1,11 @@
 export const homePageTitle = `Affordable Self Storage Units in Wenatchee`;
 export const homePageContent = `South Wenatchee Self Storage serves Wenatchee and the surrounding communities with a variety of well-maintained and affordable self storage units.`;
 
-export const location1PageTitle = `Rebel Mini Storage Location | Greenwood Mini-Storage`;
-export const location1PageContent = `Take a moment to check out our extremely affordable self storage unit rates! Complete your rental online in minutes!`;
+export const location1PageTitle = `South Wenatchee | South Wenatchee Self Storage`;
+export const location1PageContent = `Our South Wenatchee location offers a variety of unit types at very affordable rates! Check the rates and reserve today!`;
 
-export const location2PageTitle = `Secure Storage Location | Greenwood Mini-Storage`;
-export const location2PageContent = `Take a moment to check out the affordable self storage unit rates at our Secure Storage location! Complete your rental online in minutes!`;
-
-export const location3PageTitle = `Greenwood Mini-Storage | Greenwood Mini-Storage`;
-export const location3PageContent = `Take a moment to check out the affordable self storage unit rates at our Secure Storage location! Complete your rental online in minutes!`;
+export const location2PageTitle = `Leo's Self Storage | South Wenatchee Self Storage`;
+export const location2PageContent = `Take a look at the rates and availability at our Leo's Self Storage location, then reserve your unit online in seconds, or call our office for more information!`;
 
 export const viewRatesPageTitle = ``;
 export const viewRatesPageContent = ``;
@@ -39,23 +36,15 @@ export const faqPageContent = `Have questions about the services our 12 self sto
 
 
 
-export const location1PayrentPageTitle = `Pay Rent | Greenwood Mini-Storage`;
-export const location1PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
+export const location1PayrentPageTitle = `Pay Rent | South Wenatchee Self Storage`;
+export const location1PayrentPageContent = `Pay your rent at by clicking on this link and following our basic instructions!`;
 
-export const location2PayrentPageTitle = `Pay Rent | Greenwood Mini-Storage`;
-export const location2PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
+export const location2PayrentPageTitle = `Pay Rent | South Wenatchee Self Storage`;
+export const location2PayrentPageContent = `Pay your rent at by clicking on this link and following our basic instructions!`;
 
-export const location3PayrentPageTitle = `Pay Rent | Greenwood Mini-Storage`;
-export const location3PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
+export const location1ContactPageTitle = `Contact Us | South Wenatchee Self Storage`;
+export const location1ContactPageContent = `Use the contact information or the contact form on this page to speak to one of our friendly self storage managers!`;
 
+export const location2ContactPageTitle = `Contact Us | South Wenatchee Self Storage`;
+export const location2ContactPageContent = `Use the contact information or the contact form on this page to speak to one of our friendly self storage managers!`;
 
-
-
-export const location1ContactPageTitle = `Contact Us  | Greenwood Mini-Storage`;
-export const location1ContactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
-
-export const location2ContactPageTitle = `Contact Us  | Greenwood Mini-Storage`;
-export const location2ContactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;
-
-export const location3ContactPageTitle = `Contact Us  | Greenwood Mini-Storage`;
-export const location3ContactPageContent = `Do you have a question about our services, or would you like help with your account? Use our form or contact information to reach out, today!`;

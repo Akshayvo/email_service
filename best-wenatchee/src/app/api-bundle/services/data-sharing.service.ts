@@ -5,9 +5,8 @@ import { Injectable } from "@angular/core";
 })
 export class DataSharingService {
   locationAPIKey = {
-    loc1: "dzJ0MVc1SjgqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //21583 rebel-mini,
-    loc2: "dzJ0MVc1SjgqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //21582 secure-storage,
-    loc3: "dzF0NFcxSjEqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //14113 greenwood-mini
+    loc1: "dzJ0MVc1SjgqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //29373 south-wenatchee,
+    loc2: "dzJ0MVc1SjgqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //29373 leos-storage,
   };
   // locationAPIKey = {
   //   loc1: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28464 

@@ -103,7 +103,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: `${environment.locationName}/rebel-mini`,
+    { path: `${environment.locationName}/south-wenatchee`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -138,7 +138,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-        { path: `${environment.locationName}/secure-storage`,
+        { path: `${environment.locationName}/leos-storage`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -540,7 +540,7 @@ resolve: { data: AppResolver }
 
 
 
-    { path: `${environment.locationName}/rebel-mini/view-rates`,
+    { path: `${environment.locationName}/south-wenatchee/view-rates`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -575,7 +575,7 @@ resolve: { data: AppResolver }
       ],
       resolve: { data: AppResolver }
     },
-        { path: `${environment.locationName}/secure-storage/view-rates`,
+        { path: `${environment.locationName}/leos-storage/view-rates`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -972,7 +972,7 @@ children: [
 resolve: { data: AppResolver }
 },
 
-    { path: 'review/rebel-mini', component: HomeComponent,
+    { path: 'review/south-wenatchee', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -980,7 +980,7 @@ resolve: { data: AppResolver }
         externalUrl: ''
     }
   },
-  { path: 'review/secure-storage', component: HomeComponent,
+  { path: 'review/leos-storage', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -999,11 +999,11 @@ resolve: { data: AppResolver }
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/rebel-mini', component: PayRentComponent,
+    path: 'pay-rent/south-wenatchee', component: PayRentComponent,
     children: childroute
   },
    {
-    path: 'pay-rent/secure-storage', component: PayRentComponent,
+    path: 'pay-rent/leos-storage', component: PayRentComponent,
     children: childroute
   },
   {
@@ -1012,8 +1012,8 @@ resolve: { data: AppResolver }
   },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-rebel-mini', component: ContactUsComponent},
-  { path: 'contact-secure-storage', component: ContactUsComponent},
+  { path: 'contact-south-wenatchee', component: ContactUsComponent},
+  { path: 'contact-leos-storage', component: ContactUsComponent},
   { path: 'contact-green-wood', component: ContactUsComponent},  
   { path: '**', component: ErrorComponent },
   { path: 'storage-tips', component: StorageTipsComponent },
@@ -1024,7 +1024,7 @@ resolve: { data: AppResolver }
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: 'location/rebel-mini',
+  { path: 'location/south-wenatchee',
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -1090,7 +1090,7 @@ export const iFrameRoutes = [
   //     { path: 'directions', component: DirectionsComponent },
   //   ]
   // },
-  { path: 'review/rebel-mini', component: HomeComponent,
+  { path: 'review/south-wenatchee', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -1140,7 +1140,7 @@ export const iFrameRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-rebel-mini', component: PayRentFloridaComponent },
+  { path: 'pay-rent-south-wenatchee', component: PayRentFloridaComponent },
   { path: 'pay-rent-silverhill', component: PayRentChesterComponent},
   { path: 'pay-rent-barnwell', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},

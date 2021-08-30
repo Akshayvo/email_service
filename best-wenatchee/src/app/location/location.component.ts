@@ -38,9 +38,7 @@ import {
   location1PageContent,
   location1PageTitle,
   location2PageContent,
-  location2PageTitle,
-  location3PageContent,
-  location3PageTitle,  
+  location2PageTitle  
 } from "../data/title";
 import { environment } from "../../environments/environment";
 
@@ -69,8 +67,7 @@ export class LocationComponent implements OnInit {
   location1PageContent: any;
   location1PageTitle: any;
   location2PageContent: any;
-  location2PageTitle: any;
-  location3PageContent: any;
+  location2PageTitle: any;  
   location3PageTitle: any;
   location4PageContent: any;
   location4PageTitle: any;
@@ -126,13 +123,13 @@ export class LocationComponent implements OnInit {
       this.dataSharingService.facilityLocation =
         this.activatedRoute.snapshot.url[1].path;
     }
-    if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
+    if (this.router.url.includes(`${environment.locationName}/south-wenatchee`)) {
       this.meta.addTag({
         name: "description",
         content: `${this.location1PageContent}`,
       });
       this.titleService.setTitle(`${this.location1PageTitle}`);
-      this.locationName = `Rebel Mini Storage`;
+      this.locationName = `South Wenatchee Self Storage`;
       this.dataSharingService.apiKey =
         this.dataSharingService.locationAPIKey.loc1;
       this.dataSharingService.locationName = this.locationName;
@@ -152,14 +149,14 @@ export class LocationComponent implements OnInit {
         });
       });
     } else if (
-      this.router.url.includes(`${environment.locationName}/secure-storage`)
+      this.router.url.includes(`${environment.locationName}/leos-storage`)
     ) {
       this.meta.addTag({
         name: "description",
         content: `${this.location2PageContent}`,
       });
       this.titleService.setTitle(`${this.location2PageTitle}`);
-      this.locationName = `Secure Storage`;
+      this.locationName = `Leo\'s Self Storage`;
       this.dataSharingService.apiKey =
         this.dataSharingService.locationAPIKey.loc2;
       this.dataSharingService.locationName = this.locationName;
@@ -207,8 +204,6 @@ export class LocationComponent implements OnInit {
     this.location1PageContent = location1PageContent;
     this.location2PageTitle = location2PageTitle;
     this.location2PageContent = location2PageContent;
-    this.location3PageTitle = location3PageTitle;
-    this.location3PageContent = location3PageContent;    
   }
 
   public fetchFeatureHead() {
@@ -216,30 +211,30 @@ export class LocationComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
+    if (this.router.url.includes(`${environment.locationName}/south-wenatchee`)) {
       this.og = ogLocation1;
     } else if (
-      this.router.url.includes(`${environment.locationName}/secure-storage`)
+      this.router.url.includes(`${environment.locationName}/leos-storage`)
     ) {
       this.og = ogLocation2;
     }
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
+    if (this.router.url.includes(`${environment.locationName}/south-wenatchee`)) {
       this.twitter = twitterLocation1;
     } else if (
-      this.router.url.includes(`${environment.locationName}/secure-storage`)
+      this.router.url.includes(`${environment.locationName}/leos-storage`)
     ) {
       this.twitter = twitterLocation2;
     }  
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
+    if (this.router.url.includes(`${environment.locationName}/south-wenatchee`)) {
       this.fetchDetailsLocation1();
     } else if (
-      this.router.url.includes(`${environment.locationName}/secure-storage`)
+      this.router.url.includes(`${environment.locationName}/leos-storage`)
     ) {
       this.fetchDetailsLocation2();
     }
@@ -252,13 +247,13 @@ export class LocationComponent implements OnInit {
   public navigateToPayment() {
     if (this.locationId === 1) {
       if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/rebel-mini/rent-sub/login`]);
+        this.router.navigate([`pay-rent/south-wenatchee/rent-sub/login`]);
       } else {
         this.router.navigate(["pay-rent"]);
       }
     } else if (this.locationId === 2) {
       if (environment.signUpForAuotoPay === 1) {
-        this.router.navigate([`pay-rent/secure-storage/rent-sub/login`]);
+        this.router.navigate([`pay-rent/leos-storage/rent-sub/login`]);
       } else {
         this.router.navigate(["pay-rent"]);
       }
@@ -272,10 +267,10 @@ export class LocationComponent implements OnInit {
   }
 
   public navigateToContact() {
-    if (this.router.url.includes("rebel-mini")) {
-      this.router.navigate(["/contact-rebel-mini"]);
-    } else if (this.router.url.includes("secure-storage")) {
-      this.router.navigate(["/contact-secure-storage"]);
+    if (this.router.url.includes("south-wenatchee")) {
+      this.router.navigate(["/contact-south-wenatchee"]);
+    } else if (this.router.url.includes("leos-storage")) {
+      this.router.navigate(["/contact-leos-storage"]);
     } else if (this.router.url.includes("green-wood")) {
       this.router.navigate(["/contact-green-wood"]);
     } 

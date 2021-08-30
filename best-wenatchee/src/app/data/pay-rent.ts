@@ -13,27 +13,27 @@ export const tableHeader = [
 
 export const tableData = [
   {
-    facility: ' Rebel Mini Storage',
-    address: '704 Tallahatchie St, Greenwood, MS 38930',
-    url: 'rebel-mini/rent-sub/login'
+    facility: 'South Wenatchee Self Storage',
+    address: '1536 S Wenatchee Ave, Wenatchee, WA 98801',
+    url: 'south-wenatchee/rent-sub/login'
   },  
   {
-    facility: ' Secure Storage',
-    address: '707 US-82, Greenwood, MS 38930',
-    url: 'secure-storage/rent-sub/login'
+    facility: 'Leo\'s Self Storage',
+    address: '1313 N Wenatchee Ave, Wenatchee, WA, 98801',
+    url: 'leos-storage/rent-sub/login'
   }    
 ];
 
 export const tableDataContactPage = [
   {
-    facility: ' Rebel Mini Storage',
-    address: '704 Tallahatchie St, Greenwood, MS 38930',
-    url: 'rebel-mini'
+    facility: 'South Wenatchee Self Storage',
+    address: '1536 S Wenatchee Ave, Wenatchee, WA 98801',
+    url: 'south-wenatchee'
   },
     {
-    facility: ' Secure Storage',
-    address: '707 US-82, Greenwood, MS 38930',
-    url: 'secure-storage'
+    facility: 'Leo\'s Self Storage',
+    address: '1313 N Wenatchee Ave, Wenatchee, WA, 98801',
+    url: 'leos-storage'
   }
 ];
 
@@ -41,11 +41,11 @@ export const tableDataContactPage = [
 export const loginDetail = [
   {
       userName: `Tenant's First Initial + Last Name`,
-      password: `Tenant's Gate Access Code`,
+      password: `Tenant's Phone Number`,
       example: {
-          code: `John Smith's Gate Access Code is 12345`,
+          code: `John Smith's Phone Number is 555-555-5555`,
           userName: 'jsmith',
-          password: '12345'
+          password: '5555555555'
       }
   }
 ];

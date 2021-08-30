@@ -27,10 +27,10 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/rebel-mini`)) {
+    if (this.router.url.includes(`${environment.locationName}/south-wenatchee`)) {
       this.fetchDetailsLocation1();
   } 
-     else if (this.router.url.includes(`${environment.locationName}/secure-storage`)) {
+     else if (this.router.url.includes(`${environment.locationName}/leos-storage`)) {
       this.fetchDetailsLocation2();
   } 
 }
@@ -38,12 +38,12 @@ export class UnitSizerComponent implements OnInit {
   public fetchDetailsLocation1() {
     this.unitSizer = unitSizerLocation1;
     this.h2tag = 'Unit Sizer';
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that out!`;
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that out! Still have questions? Call (509) 662-2600`;
   }
 
   public fetchDetailsLocation2() {
     this.unitSizer = unitSizerLocation2;
     this.h2tag = 'Unit Sizer';
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that out!`;    
+    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that out! Still have questions? Call (509) 662-2600`;    
   }
 }

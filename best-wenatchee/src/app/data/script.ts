@@ -4,19 +4,13 @@ import { homePageContent, homePageTitle, payRentPageContent,
 contactPageContent, contactPageTitle,
 location1PageContent, location2PageTitle,
 location2PageContent, location1PageTitle,
-location3PageContent, location3PageTitle,
 location1PayrentPageTitle, location1PayrentPageContent,
 location2PayrentPageTitle, location2PayrentPageContent,
-location3PayrentPageTitle, location3PayrentPageContent,
 location1ContactPageTitle, location1ContactPageContent,
 location2ContactPageTitle, location2ContactPageContent,
-location3ContactPageTitle, location3ContactPageContent,
 faqPageTitle, faqPageContent } from '../data/title';
 import { featuresList } from '../data/home';
-import { contactsLocation1, hoursLocation1, 
-  contactsLocation2, hoursLocation2,   
-
- } from '../data/contact';
+import { contactsLocation1,  contactsLocation2 } from '../data/contact';
 
  
 const contactIndex1 = contactsLocation1.findIndex(x => x.label === 'Phone: ');
@@ -28,21 +22,21 @@ const emailIndex2 = contactsLocation2.findIndex(x => x.label === 'Email: ');
 export const nameLocation1 = `Rebel Storage Location`;
 export const nameLocation2 = `Secure Storage Location`;
 
-export const location1 = `rebel-mini`;
-export const location2 = `secure-storage`;
+export const location1 = `south-wenatchee`;
+export const location2 = `leos-storage`;
 
 
-export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/rebel-mini/storage-units`;
-export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/secure-storage/storage-units`;
+export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/south-wenatchee/storage-units`;
+export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/leos-storage/storage-units`;
 
 
-export const description1 = `Our Rebel Mini Storage location offers a variety of storage unit sizes for residential and commercial storage users.`;
+export const description1 = `We are a locally owned & operated self storage facility serving the Wenatchee, community! We offer affordable self storage units in a variety of sizes, and our service always comes with a smile. Take a moment to review our pricing and availability, then call, or reserve online to start de-cluttering today!`;
 
-export const description2 = `Our Secure Storage location offers a variety of storage unit sizes for residential and commercial storage users. in Greenwood, Ms. Check out our rates, then rent your unit online in minutes!`;
+export const description2 = `We are a locally owned & operated self storage facility serving the Wenatchee, community! We offer affordable self storage units in a variety of sizes, and our service always comes with a smile. Take a moment to review our pricing and availability, then call, or reserve online to start de-cluttering today!`;
 
 
-export const maplocation1 = 'https://goo.gl/maps/gM4fTfxJyCoPAjzx9';
-export const maplocation2 = `https://goo.gl/maps/V9mQLpHMRbH1CtK4A`;
+export const maplocation1 = 'https://goo.gl/maps/QoGcnib1qbfTrUQo9';
+export const maplocation2 = `https://goo.gl/maps/dbK4Xo5f5HeTvr68A`;
 
 export const addressLoaction1 = {
   '@type': 'PostalAddress',
@@ -65,14 +59,14 @@ export const addressLoaction2 = {
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-43.jpg'
  ]
 export const imageLocation2 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Greenwood_Mini/jpg/greenwood-mini-storage-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/south-wenatchee-self-storage-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/south-wenatchee-self-storage-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/south-wenatchee-self-storage-43.jpg'
  ]
 
 
@@ -115,19 +109,19 @@ export const Location1Script = {
     'address': addressLoaction1,
     'aggregateRating': {
     '@type': 'AggregateRating',
-    'ratingValue': '4.3',
+    'ratingValue': '4.0',
     'bestRating': '5',
-    'reviewCount': '7'
+    'reviewCount': '19'
   },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 33.5297476,
-      'longitude': -90.2102095,
+      'latitude': 47.401888,
+      'longitude': -120.300534,
     },
     'url': urlLocation1,
     'telephone': contactsLocation1[contactIndex1].data,
 
-    'priceRange': '$36 - $87',
+    'priceRange': '$59 - $220',
     'openingHours': ['Mo-Fr 08:00 - 18:00', 'Sa 08:00 - 14:00'],
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
@@ -150,19 +144,19 @@ export const Location2Script = {
     'address': addressLoaction2,
     'aggregateRating': {
     '@type': 'AggregateRating',
-    'ratingValue': '2.0',
+    'ratingValue': '',
     'bestRating': '5',
-    'reviewCount': '3'
+    'reviewCount': ''
   },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 33.5128718,
-      'longitude': -90.2063396,
+      'latitude': 47.4411416,
+      'longitude': 120.3240101,
     },
     'url': urlLocation2,
     'telephone': contactsLocation2[contactIndex2].data,
 
-    'priceRange': '$22 - $242',
+    'priceRange': '$60 - $160',
     'openingHours': ['Mo-Fr 08:00 - 18:00', 'Sa 08:00 - 14:00'],
     'currenciesAccepted': 'USD',
   'paymentAccepted': 'Cash, Check, Credit Card, Debit Card',
