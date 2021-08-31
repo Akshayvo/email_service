@@ -99,5 +99,98 @@ export const unitSizer = [
             { content: 'Bookcases', },
             { content: 'Tow Trailer', },
         ],
+    },
+    {
+        id: 6,
+        size: '12\' x 10\'',
+        heading: '12\' x 10\' Storage Unit',
+        // tslint:disable-next-line:max-line-length
+        unitImg: 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Syrasoft_Poweredby/Unit_Sizer_Images/10x12.png',
+        data: `This unit is approximately 120 sq feet of space that can hold the contents of three to four rooms.`,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small desks' },
+            { content: 'Bookcases', },
+            { content: 'Furniture', },
+            { content: 'Suitcases', },
+            { content: 'Mattresses', },
+            { content: 'Kitchen Appliances' }
+        ],
+    },
+    {
+        id: 7,
+        size: '12\' x 15\'',
+        heading: '12\' x 15\' Storage Unit',
+        // tslint:disable-next-line:max-line-length
+        unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x15.png',
+        data: `This unit is approximately 180 sq feet of space that can hold the contents of three to four rooms.`,
+        amenities: [
+            { content: 'Chairs', },
+            { content: 'Small desks' },
+            { content: 'Bookcases', },
+            { content: 'Furniture', },
+            { content: 'Suitcases', },
+            { content: 'Kitchen Appliances' }
+        ],
+    },
+    {
+        id: 8,
+        size: '12\' x 20\'',
+        heading: '12\' x 20\' Storage Unit',
+        // tslint:disable-next-line:max-line-length
+        unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/10x20.png',
+        data: `This unit is approximately 240 sq feet of space that can hold the contents of about five rooms.`,
+        amenities: [
+            { content: 'Appliances', },
+            { content: 'Car or Small Boat', },
+            { content: 'Furniture', },
+            { content: 'Bookcases', },
+            { content: 'Tow Trailer', },
+        ],
+    },
+    {
+        id: 9,
+        size: '12\' x 25\'',
+        heading: '12\' x 25\' Storage Unit',
+        // tslint:disable-next-line:max-line-length
+        unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/12x28.png',
+        data: `This unit is approximately 300 sq feet of space that can hold the contents of about five rooms.`,
+        amenities: [
+            { content: 'Appliances', },
+            { content: 'Car or Small Boat', },
+            { content: 'Furniture', },
+            { content: 'Bookcases', },
+            { content: 'Tow Trailer', },
+        ],
+    },
+    {
+        id: 10,
+        size: '12\' x 30\'',
+        heading: '12\' x 30\' Storage Unit',
+        // tslint:disable-next-line:max-line-length
+        unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/12x30.png',
+        data: `This unit is approximately 360 sq feet of space that can hold the contents of about six rooms.`,
+        amenities: [
+            { content: 'Appliances', },
+            { content: 'Car or Small Boat', },
+            { content: 'Furniture', },
+            { content: 'Bookcases', },
+            { content: 'Tow Trailer', },
+        ],
+    },
+    {
+        id: 11,
+        size: '12\' x 40\'',
+        heading: '12\' x 40\' Storage Unit',
+        // tslint:disable-next-line:max-line-length
+        unitImg: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/unit-sizer/12x46.png',
+        data: `This unit is approximately 480 sq feet of space that can hold the contents of about six rooms.`,
+        amenities: [
+            { content: 'Appliances', },
+            { content: 'Car or Small Boat', },
+            { content: 'Furniture', },
+            { content: 'Bookcases', },
+            { content: 'Tow Trailer', },
+        ],
     }
 ];

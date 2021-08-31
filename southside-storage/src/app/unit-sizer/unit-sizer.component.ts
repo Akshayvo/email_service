@@ -20,7 +20,6 @@ export class UnitSizerComponent implements OnInit {
   unitSizerPageContent: string;
   unitSizerPageTitle: string;
   unitSizerHeading: string;
-  
   constructor(
     private titleService: Title,
     private meta: Meta
@@ -35,7 +34,7 @@ export class UnitSizerComponent implements OnInit {
 
   ngOnInit() {
     this.current = 0;
-    this.previous = 5;
+    this.previous = 11;
     this.next = this.current + 1;
     this.fetchUnitSizer();
     this.fetchUnitsizers();
@@ -63,7 +62,7 @@ export class UnitSizerComponent implements OnInit {
     this.next = this.current;
     this.current = this.previous;
     if ( this.previous === 0 ) {
-      this.previous = 5;
+      this.previous = 11;
     } else {
       this.previous = this.previous - 1;
     }
@@ -72,7 +71,7 @@ export class UnitSizerComponent implements OnInit {
   public moveRight() {
     this.previous = this.current;
     this.current = this.next;
-    if ( this.next === 5 ) {
+    if ( this.next === 11 ) {
       this.next = 0;
     } else {
     this.next = this.next + 1;
@@ -82,9 +81,9 @@ export class UnitSizerComponent implements OnInit {
   public activeUnit(unitId: number) {
     this.current = unitId;
     if ( this.current === 0 ) {
-      this.previous = 5;
+      this.previous = 11;
       this.next = this.current + 1;
-    } else if ( this.current === 5 ) {
+    } else if ( this.current === 11 ) {
       this.next = 0;
       this.previous = this.current - 1;
     } else {
