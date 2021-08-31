@@ -71,6 +71,7 @@ import { TrailerInfoComponent } from './trailer-info/trailer-info.component';
 import { AuctionComponent } from './auction/auction.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { SpecialsComponent } from './specials/specials.component';
+import { UnitSizesComponent } from './unit-sizes/unit-sizes.component';
 
 @NgModule({
   declarations: [
@@ -129,6 +130,7 @@ import { SpecialsComponent } from './specials/specials.component';
     AuctionComponent,
     TestimonialComponent,
     SpecialsComponent,
+    UnitSizesComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

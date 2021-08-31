@@ -1,100 +1,38 @@
-import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
-import {
-  unitSizerLocation1,
-  unitSizerLocation2,
-  unitSizerLocation3,
-  unitSizerLocation4,
-  unitSizerLocation5,
-  unitSizerLocation6,
-} from "../data/location";
-import { CanonicalService } from "../services/canonical.service";
-import { environment } from "../../environments/environment";
+import { Component, OnInit } from '@angular/core';
+import { unitSizerHeading } from '../data/heading';
+import { unitSizerPageTitle, unitSizerPageContent } from '../data/title';
+import { Title, Meta } from '@angular/platform-browser';
+import { CanonicalService } from '../services/canonical.service';
 @Component({
-  selector: "app-unit-sizer",
-  templateUrl: "./unit-sizer.component.html",
-  styleUrls: ["./unit-sizer.component.scss"],
+  selector: 'app-unit-sizer',
+  templateUrl: './unit-sizer.component.html',
+  styleUrls: ['./unit-sizer.component.scss']
 })
 export class UnitSizerComponent implements OnInit {
-  name: any;
-  unitSizer: any;
-  tabs: any;
-  h2tag: string;
-  description: string;
-  constructor(private router: Router, private canonical: CanonicalService) {
+  unitSizerHeading: string;
+  unitSizerPageTitle: string;
+  unitSizerPageContent: string;
+  constructor(
+    private titleService: Title,
+    private meta: Meta,
+    private canonical: CanonicalService,
+  ) {
+    this.fetchMetaData();
+    this.meta.addTag({
+      name: 'description',
+      content: `${this.unitSizerPageContent}`
+    });
+    this.titleService.setTitle(`${this.unitSizerPageTitle}`);
     this.canonical.create();
   }
-
   ngOnInit() {
-    this.isSomePage();
+    this.fetchContactHeading();
   }
-
-  public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/commerce-st`)) {
-      this.fetchDetailsLocation1();
-    } else if (
-      this.router.url.includes(`${environment.locationName}/pleasantview`)
-    ) {
-      this.fetchDetailsLocation2();
-    } else if (
-      this.router.url.includes(`${environment.locationName}/clifford-north`)
-    ) {
-      this.fetchDetailsLocation3();
-    } else if (
-      this.router.url.includes(`${environment.locationName}/clifford-south`)
-    ) {
-      this.fetchDetailsLocation4();
-    } else if (
-      this.router.url.includes(`${environment.locationName}/location5`)
-    ) {
-      this.fetchDetailsLocation5();
-    } else if (
-      this.router.url.includes(`${environment.locationName}/robertsdale`)
-    ) {
-      this.fetchDetailsLocation6();
-    }
+  public fetchMetaData() {
+    this.unitSizerPageTitle = unitSizerPageTitle;
+    this.unitSizerPageContent = unitSizerPageContent;
   }
-
-  public fetchDetailsLocation1() {
-    this.unitSizer = unitSizerLocation1;
-    this.h2tag = "Unit Sizer";
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (920) 644-4423`;
-  }
-
-  public fetchDetailsLocation2() {
-    this.h2tag = "Unit Sizer";
-    this.description = `Check out our unit sizing chart to make sure the unit you're looking at will hold the belongings you need to
-    store. Once you decide on the right unit for you, check our availability, then give our offices a call for more information!`;
-    this.unitSizer = unitSizerLocation2;
-  }
-
-  public fetchDetailsLocation3() {
-    this.h2tag = "Unit Sizer ";
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (920) 644-4423`;
-    this.unitSizer = unitSizerLocation3;
-  }
-
-  public fetchDetailsLocation4() {
-    this.h2tag = "Storage Unit Sizer ";
-    this.description = `Finding the right size is easy, below you will find some of the common storage units, by size and what
-    typically fits. TIP: remember to think 'cubic', do your items just need floor space or can they stack and fit together?
-    *Actual contents vary depending of the size of your belongings.`;
-    this.unitSizer = unitSizerLocation4;
-  }
-
-  public fetchDetailsLocation5() {
-    this.h2tag = "Storage Unit Sizer ";
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
-    this.unitSizer = unitSizerLocation5;
-  }
-
-  public fetchDetailsLocation6() {
-    this.h2tag = "Storage Unit Sizer ";
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
-    this.unitSizer = unitSizerLocation6;
+  public fetchContactHeading() {
+    this.unitSizerHeading = unitSizerHeading;
   }
 }
