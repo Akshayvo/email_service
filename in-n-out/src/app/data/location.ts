@@ -5,12 +5,12 @@ export const tabs1 = [
         path: './storage-units',
         active: true,
     },
-    {
-        id: '2',
-        name: 'Unit Sizer',
-        path: './unit-sizer',
-        active: false,
-    },
+    // {
+    //     id: '2',
+    //     name: 'Unit Sizer',
+    //     path: './unit-sizer',
+    //     active: false,
+    // },
     {
         id: '3',
         name: 'Reserve Unit',
@@ -38,12 +38,12 @@ export const tabs = [
         path: './storage-units',
         active: true,
     },
-    {
-        id: '2',
-        name: 'Unit Sizer',
-        path: './unit-sizer',
-        active: false,
-    },
+    // {
+    //     id: '2',
+    //     name: 'Unit Sizer',
+    //     path: './unit-sizer',
+    //     active: false,
+    // },
     // {
     //     id: '3',
     //     name: 'Reserve Unit',
@@ -71,12 +71,12 @@ export const tabs2 = [
         path: './storage-units',
         active: true,
     },
-    {
-        id: '2',
-        name: 'Unit Sizer',
-        path: './unit-sizer',
-        active: false,
-    },
+    // {
+    //     id: '2',
+    //     name: 'Unit Sizer',
+    //     path: './unit-sizer',
+    //     active: false,
+    // },
     {
         id: '3',
         name: 'Reserve Unit',
@@ -103,12 +103,12 @@ export const tabs3 = [
         path: './storage-units',
         active: true,
     },
-    {
-        id: '2',
-        name: 'Unit Sizer',
-        path: './unit-sizer',
-        active: false,
-    },
+    // {
+    //     id: '2',
+    //     name: 'Unit Sizer',
+    //     path: './unit-sizer',
+    //     active: false,
+    // },
     {
         id: '3',
         name: 'Reserve Unit',

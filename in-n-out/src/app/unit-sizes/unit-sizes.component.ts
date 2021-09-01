@@ -22,12 +22,21 @@ export class UnitSizesComponent implements OnInit {
   ) {
   }
 
+  public fetchUnitSizer() {
+    console.log("inits");
+    this.unitsizers = unitSizer;
+    console.log(this.unitsizers);
+  }
+
   ngOnInit() {
+    window.scrollTo(0, 0);
+    console.log("unitsizes")
     this.i = 0;
     this.h = 7;
     this.j = this.i + 1;
     this.fetchUnitSizer();
-    window.scrollTo(0, 0);
+    console.log("unitsizes1")
+    
   }
 
   public navigate(location: any) {
@@ -41,9 +50,7 @@ export class UnitSizesComponent implements OnInit {
   /**
    * fetchUnitSizer
    */
-  public fetchUnitSizer() {
-    this.unitsizers = unitSizer;
-  }
+  
 
   public moveLeft() {
     this.j = this.i;
