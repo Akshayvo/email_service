@@ -609,10 +609,15 @@
 @media only screen and (max-width: 429px) {
   .jumbotron {
     text-align: center;
-    background-attachment: unset;
+    background-size: contain;
     background-position: center left;
-    height: 100vh;
+    height: 50vh;
   }
+
+  .jumbotron-top {
+    height: 10vh;
+  }
+
   .facility {
     margin-top: 3rem;
   }
@@ -624,9 +629,14 @@
     text-align: center;
     width: 100%;
     position: absolute;
-    margin-top: 16rem;
+    margin-top: 12rem;
     height: auto;
+
+    h2{
+      font-size: 1.5rem;
+    }
   }
+
   .feature {
     display: none;
   }
@@ -635,7 +645,12 @@
     display: none;
   }
 
+  .home-map{
+    margin: 0px 10px;
+  }
+
   .jumbotorn-skew-style {
+    display: none;
     transform: skew(0deg);
     width: 100%;
     left: auto;
@@ -645,6 +660,7 @@
   }
 
   .jumbotorn-skew-text {
+    display: none;
     width: 100%;
     left: 0;
     top: auto;
