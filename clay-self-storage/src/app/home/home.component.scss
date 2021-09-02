@@ -629,11 +629,23 @@
     text-align: center;
     width: 100%;
     position: absolute;
-    margin-top: 12rem;
+    // margin-top: 12rem;
     height: auto;
 
     h2{
       font-size: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 429px) {
+    .banner{
+      margin-top: 12rem;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    .banner{
+      margin-top: 10rem;
     }
   }
 
@@ -646,7 +658,7 @@
   }
 
   .home-map{
-    margin: 0px 10px;
+    margin-top: 10px;
   }
 
   .jumbotorn-skew-style {
@@ -680,3 +692,4 @@
     }
   }
 }
+
