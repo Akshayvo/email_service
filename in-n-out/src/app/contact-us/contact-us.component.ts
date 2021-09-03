@@ -1,28 +1,49 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Title, Meta } from '@angular/platform-browser';
-import { EmailService } from '../services/email.service';
-import { contactsLocation1, hoursLocation1,
-          contactsLocation2, hoursLocation2, contactsLocation3,
-          hoursLocation3, hoursLocation4, contactsLocation4,
-          hoursLocation5, contactsLocation5,
-          hoursLocation6, contactsLocation6,  } from '../data/contact';
-import { WINDOW } from '@ng-toolkit/universal';
-import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
-import { LocationService } from '../services/location.service';
-import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3, ogContactPageLocation4,
-  ogContactPageLocation5, ogContactPageLocation6,
-  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4,
-  twitterContactPageLocation5, twitterContactPageLocation6 } from '../data/script';
-import { CanonicalService } from '../services/canonical.service';
-import { contactPageTitle, contactPageContent } from '../data/title';
+import { Component, OnInit, Inject } from "@angular/core";
+import { ActivatedRoute, Router } from "@angular/router";
+import { Title, Meta } from "@angular/platform-browser";
+import { EmailService } from "../services/email.service";
+import {
+  contactsLocation1,
+  hoursLocation1,
+  contactsLocation2,
+  hoursLocation2,
+  contactsLocation3,
+  hoursLocation3,
+  hoursLocation4,
+  contactsLocation4,
+  hoursLocation5,
+  contactsLocation5,
+  hoursLocation6,
+  contactsLocation6,
+} from "../data/contact";
+import { WINDOW } from "@ng-toolkit/universal";
+import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+import { LocationService } from "../services/location.service";
+import {
+  contactPageLocation1Script,
+  ogContactPage,
+  ogContactPageLocation1,
+  ogContactPageLocation2,
+  ogContactPageLocation3,
+  ogContactPageLocation4,
+  ogContactPageLocation5,
+  ogContactPageLocation6,
+  twitterContactPage,
+  twitterContactPageLocation1,
+  twitterContactPageLocation2,
+  twitterContactPageLocation3,
+  twitterContactPageLocation4,
+  twitterContactPageLocation5,
+  twitterContactPageLocation6,
+} from "../data/script";
+import { CanonicalService } from "../services/canonical.service";
+import { contactPageTitle, contactPageContent } from "../data/title";
 @Component({
-  selector: 'app-contact-us',
-  templateUrl: './contact-us.component.html',
-  styleUrls: ['./contact-us.component.scss']
+  selector: "app-contact-us",
+  templateUrl: "./contact-us.component.html",
+  styleUrls: ["./contact-us.component.scss"],
 })
 export class ContactUsComponent implements OnInit {
-
   contactDetails: any;
   heading: string;
   hoursDetails: any;
@@ -44,7 +65,7 @@ export class ContactUsComponent implements OnInit {
   twitter: any;
   contactPageContent: string;
   contactPageTitle: string;
-  
+
   constructor(
     @Inject(WINDOW) private window: Window,
     private emailService: EmailService,
@@ -59,34 +80,41 @@ export class ContactUsComponent implements OnInit {
     this.fetchMetaData();
     this.fetchOg();
     this.fetchTwitter();
-    this.og.forEach(element => {
+    this.og.forEach((element) => {
       this.meta.addTag({
         property: element.property,
-        content: element.content
-      })
+        content: element.content,
+      });
     });
 
-    this.twitter.forEach(element => {
+    this.twitter.forEach((element) => {
       this.meta.addTag({
         name: element.name,
-        content: element.content
-      })
+        content: element.content,
+      });
     });
     this.canonical.create();
     this.meta.addTag({
-      name: 'description',
-      content: `${this.contactPageContent}`
+      name: "description",
+      content: `${this.contactPageContent}`,
     });
     this.titleService.setTitle(`${this.contactPageTitle}`);
 
     this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      phone: ['', [Validators.required,
-                Validators.pattern('^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$')]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
-      subject: [''],
-  });
+      name: ["", Validators.required],
+      phone: [
+        "",
+        [
+          Validators.required,
+          Validators.pattern(
+            "^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{3,5}$"
+          ),
+        ],
+      ],
+      email: ["", [Validators.required, Validators.email]],
+      message: ["", Validators.required],
+      subject: [""],
+    });
   }
 
   ngOnInit() {
@@ -94,59 +122,61 @@ export class ContactUsComponent implements OnInit {
     window.scrollTo(0, 0);
     this.fetchScript();
     this.loadScript();
-}
+  }
 
-  get f() { return this.contactForm.controls; }
+  get f() {
+    return this.contactForm.controls;
+  }
 
   public fetchScript() {
     this.script = contactPageLocation1Script;
   }
 
   public fetchOg() {
-    if (this.router.url.includes('commerce-st')) {
+    if (this.router.url.includes("commerce-st")) {
       this.og = ogContactPageLocation1;
-    } else if (this.router.url.includes('pleasantview')) {
+    } else if (this.router.url.includes("pleasantview")) {
       this.og = ogContactPageLocation2;
-    } else if (this.router.url.includes('clifford-north')) {
+    } else if (this.router.url.includes("clifford-north")) {
       this.og = ogContactPageLocation3;
-    } else if (this.router.url.includes('clifford-south')) {
+    } else if (this.router.url.includes("clifford-south")) {
       this.og = ogContactPageLocation4;
-    } else if (this.router.url.includes('location5')) {
+    } else if (this.router.url.includes("woodland")) {
       this.og = ogContactPageLocation5;
-    } else if (this.router.url.includes('robertsdale')) {
+    } else if (this.router.url.includes("robertsdale")) {
       this.og = ogContactPageLocation6;
     }
-}
-
-public fetchMetaData() {
-  this.contactPageTitle = contactPageTitle;
-  this.contactPageContent = contactPageContent;
-}
-
-public fetchTwitter() {
-  if (this.router.url.includes('commerce-st')) {
-    this.twitter = twitterContactPageLocation2;
-  } else if (this.router.url.includes('pleasantview')) {
-    this.twitter = twitterContactPageLocation1;
-  } else if (this.router.url.includes('clifford-north')) {
-    this.twitter = twitterContactPageLocation3;
-  } else if (this.router.url.includes('clifford-south')) {
-    this.twitter = twitterContactPageLocation4;
-  } else if (this.router.url.includes('location5')) {
-    this.twitter = twitterContactPageLocation5;
-  } else if (this.router.url.includes('robertsdale')) {
-    this.twitter = twitterContactPageLocation6;
   }
-}
+
+  public fetchMetaData() {
+    this.contactPageTitle = contactPageTitle;
+    this.contactPageContent = contactPageContent;
+  }
+
+  public fetchTwitter() {
+    if (this.router.url.includes("commerce-st")) {
+      this.twitter = twitterContactPageLocation2;
+    } else if (this.router.url.includes("pleasantview")) {
+      this.twitter = twitterContactPageLocation1;
+    } else if (this.router.url.includes("clifford-north")) {
+      this.twitter = twitterContactPageLocation3;
+    } else if (this.router.url.includes("clifford-south")) {
+      this.twitter = twitterContactPageLocation4;
+    } else if (this.router.url.includes("woodland")) {
+      this.twitter = twitterContactPageLocation5;
+    } else if (this.router.url.includes("robertsdale")) {
+      this.twitter = twitterContactPageLocation6;
+    }
+  }
 
   public loadScript() {
-    const node = document.createElement('script'); // creates the script tag
-    node.type = 'application/ld+json'; // set the script type
+    const node = document.createElement("script"); // creates the script tag
+    node.type = "application/ld+json"; // set the script type
     node.async = false; // makes script run asynchronously
     // node.charset = 'utf-8';
     node.innerHTML = JSON.stringify(this.script);
     // append to head of document
-    document.getElementsByTagName('head')[0].appendChild(node);
+    document.getElementsByTagName("head")[0].appendChild(node);
   }
 
   // receiveMessage() {
@@ -171,30 +201,30 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('commerce-st')) {
+    if (this.router.url.includes("commerce-st")) {
       this.fetchContactDetailsLocation1();
-    } else if (this.router.url.includes('pleasantview')) {
+    } else if (this.router.url.includes("pleasantview")) {
       this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('clifford-north')) {
+    } else if (this.router.url.includes("clifford-north")) {
       this.fetchContactDetailsLocation3();
-    } else if (this.router.url.includes('clifford-south')) {
+    } else if (this.router.url.includes("clifford-south")) {
       this.fetchContactDetailsLocation4();
-    } else if (this.router.url.includes('location5')) {
+    } else if (this.router.url.includes("woodland")) {
       this.fetchContactDetailsLocation5();
-    } else if (this.router.url.includes('robertsdale')) {
+    } else if (this.router.url.includes("robertsdale")) {
       this.fetchContactDetailsLocation6();
     }
   }
 
   public fetchContactDetailsLocation1() {
     this.heading = `In-N-Out Storage - Commerce St`;
-    this.locationId = '1'
+    this.locationId = "1";
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
-  
+
   public fetchContactDetailsLocation2() {
-    this.locationId = '2'
+    this.locationId = "2";
     this.heading = `In-N-Out Storage - Pleasantview`;
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
@@ -202,79 +232,84 @@ public fetchTwitter() {
 
   public fetchContactDetailsLocation3() {
     this.heading = `In-N-Out Storage - Clifford North`;
-    this.locationId = '3'
+    this.locationId = "3";
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
     this.heading = `In-N-Out Storage - Clifford South`;
-    this.locationId = '4'
+    this.locationId = "4";
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
-  } 
+  }
 
   public fetchContactDetailsLocation5() {
-    this.heading = `In-N-Out Storage - Location5`;
-    this.locationId = '5'
+    this.heading = `In-N-Out Storage - Woodland`;
+    this.locationId = "5";
     this.contactDetails = contactsLocation5;
     this.hoursDetails = hoursLocation5;
-  } 
+  }
 
   public fetchContactDetailsLocation6() {
     this.heading = `In-N-Out Storage - Robertsdale`;
-    this.locationId = '6'
+    this.locationId = "6";
     this.contactDetails = contactsLocation6;
     this.hoursDetails = hoursLocation6;
   }
 
-onSubmit() {
-  this.submitted = true;
-  const today = new Date();
-  this.eventName = 'ContactFormsubmission';
-  window['dataLayer'] = window['dataLayer'] || {};
-  window['dataLayer'] = window['dataLayer'] || [];
-  window['dataLayer'].push({
-    'event': this.eventName,
-    'location' : this.heading,
-    'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
-    'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
-  });
+  onSubmit() {
+    this.submitted = true;
+    const today = new Date();
+    this.eventName = "ContactFormsubmission";
+    window["dataLayer"] = window["dataLayer"] || {};
+    window["dataLayer"] = window["dataLayer"] || [];
+    window["dataLayer"].push({
+      event: this.eventName,
+      location: this.heading,
+      date:
+        today.getFullYear() +
+        "-" +
+        (today.getMonth() + 1) +
+        "-" +
+        today.getDate(),
+      time:
+        today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds(),
+    });
 
- // stop here if form is invalid
- if (this.contactForm.invalid) {
-     return;
- } else {
+    // stop here if form is invalid
+    if (this.contactForm.invalid) {
+      return;
+    } else {
+      if (!this.contactForm.value.subject) {
+        this.contactForm.value.subject = "Website Form Submission";
+      }
 
-  if ( !this.contactForm.value.subject) {
-    this.contactForm.value.subject = 'Website Form Submission';
-  }
-
-  this.receiveremail = this.contactDetails[1].email;
-  this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
+      this.receiveremail = this.contactDetails[1].email;
+      this.completeMessage = `<strong>Phone:</strong> ${this.contactForm.value.phone}, <br/>
                           <strong>Message:</strong> ${this.contactForm.value.message}`;
 
-       const body = {
-         name: this.contactForm.value.name,
-         email: this.contactForm.value.email,
-         receiveremail: this.receiveremail,
-         message: this.completeMessage,
-         subject: this.contactForm.value.subject,
-       };
-       this.emailService.sendEmail(body)
-         .subscribe((response: any) => {
-           if (response.result != null) {
+      const body = {
+        name: this.contactForm.value.name,
+        email: this.contactForm.value.email,
+        receiveremail: this.receiveremail,
+        message: this.completeMessage,
+        subject: this.contactForm.value.subject,
+      };
+      this.emailService.sendEmail(body).subscribe(
+        (response: any) => {
+          if (response.result != null) {
             this.mailSent = true;
-           } else {
-           }
-         }, (err) => {
-           console.log('Error :', err);
-         });
-       this.submitted = false;
-       this.mailSent = false;
-       this.contactForm.reset();
- }
-}
-
-
+          } else {
+          }
+        },
+        (err) => {
+          console.log("Error :", err);
+        }
+      );
+      this.submitted = false;
+      this.mailSent = false;
+      this.contactForm.reset();
+    }
+  }
 }

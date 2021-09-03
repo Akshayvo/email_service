@@ -3,7 +3,7 @@ export const faq = [
     h2: `Where is In-N-Out Storage located? `,
     paragraph: `In-N-Out Storage, LLC has locations at the following addresses:
 
-        N7124 Willow Rd, Sheboygan Falls, WI 53085
+        405 Commerce St, Plymouth, WI 53073
         Pleasantview N6112 Pleasant View Rd Plymouth, WI 53073
         Clifford South 423 E. Clifford St Plymouth, WI 53073
         Clifford South RV/Trailer 423 E. Clifford St Plymouth, WI 53073

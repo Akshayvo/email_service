@@ -13,8 +13,8 @@ export const location3PageContent = `Check out the rates and availability at our
 export const location4PageTitle = `Clifford South Location | In-N-Out Storage`;
 export const location4PageContent = `Check out the rates and availability at our Commerce St location, then reserve or rent your unit online in minutes with our easy tenant portal.`;
 
-export const location5PageTitle = `Location5  | In-N-Out Storage`;
-export const location5PageContent = `Our Location5 location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
+export const location5PageTitle = `Woodland | In-N-Out Storage`;
+export const location5PageContent = `Check out the rates and availability at our Woodland location, then reserve or rent your unit online in minutes with our easy tenant portal.`;
 
 export const location6PageTitle = `Robertsdale | In-N-Out Storage`;
 export const location6PageContent = `Our Robertsdale location offers a number of regular and climate controlled self storage units, and all of our units are economically priced!`;
@@ -58,8 +58,6 @@ export const privacyPolicyPageContent = `This page contains this website's priva
 export const faqPageTitle = `Frequently Asked Questions | In-N-Out Storage`;
 export const faqPagecontent = `Have some questions about the services at In-N-Out Storage? Check out our FAQ page!`;
 
-
-
 export const location1PayrentPageTitle = `Pay Rent | In-N-Out Storage`;
 export const location1PayrentPageContent = `Take a moment to review our easy login instructions, or call our friendly management team and start paying your rent online 24 hours a day!`;
 
@@ -78,8 +76,6 @@ export const location5PayrentPageContent = `Follow the instructions on this page
 export const location6PayrentPageTitle = `Pay Rent | In-N-Out Storage`;
 export const location6PayrentPageContent = `Follow the instructions on this page to log into your account with us, and pay your bill online 24/7! Call our office for more information!`;
 
-
-
 export const location1ContactPageTitle = `Contact Us | In-N-Out Storage`;
 export const location1ContactPageContent = `If you have questions about your account or the services we offer, take a moment to fill our out form, or use the contact information to speak with us!`;
 
@@ -93,9 +89,7 @@ export const location4ContactPageTitle = `Contact Us | In-N-Out Storage`;
 export const location4ContactPageContent = `If you have questions about your account or the services we offer, take a moment to fill our out form, or use the contact information to speak with us!`;
 
 export const location5ContactPageTitle = `Contact Us | In-N-Out Storage`;
-export const location5ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
+export const location5ContactPageContent = `If you have questions about your account or the services we offer, take a moment to fill our out form, or use the contact information to speak with us!`;
 
 export const location6ContactPageTitle = `Contact Us | In-N-Out Storage`;
 export const location6ContactPageContent = `Have questions about your account with us? Use our quick form or call our main office today to learn more!`;
-
-

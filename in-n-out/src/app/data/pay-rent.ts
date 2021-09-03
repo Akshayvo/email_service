@@ -48,7 +48,7 @@ export const tableDataContactPage = [
   {
     facility: " Commerce St",
     //address: '405 Commerce St Plymouth, WI 53073',
-    address: "N7124 Willow Rd, Sheboygan Falls, WI 53085",
+    address: "405 Commerce St, Plymouth, WI 53073",
     url: "commerce-st",
   },
   {
@@ -66,11 +66,11 @@ export const tableDataContactPage = [
     address: "423 E Clifford St Plymouth, WI 53073",
     url: "clifford-south",
   },
-  // {
-  //   facility: 'Location5',
-  //   address: '423 E Clifford St Plymouth, WI 53073',
-  //   url: 'location5'
-  // },
+  {
+    facility: "Woodland",
+    address: "N6480 WI-57 Plymouth, WI 53073",
+    url: "woodland",
+  },
   // {
   //   facility: 'Robertsdale',
   //   address: '20218 US-90, Robertsdale, AL 36567',

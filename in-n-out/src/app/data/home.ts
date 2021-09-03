@@ -126,7 +126,7 @@ export const location4FeaturesHead = [
 
 export const location5FeaturesHead = [
   {
-    label: "6 Convenient Locations",
+    label: "5 Convenient Locations",
     data: "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg",
     alt: "Icon art displaying a location pin",
   },
@@ -136,14 +136,14 @@ export const location5FeaturesHead = [
     alt: "Icon art displaying clock hands and the number 24",
   },
   {
-    label: "Stellar Customer Service",
-    data: "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg",
-    alt: "Customer Service Representative Icon",
+    label: "Climate Controlled",
+    data: "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg",
+    alt: "Icon of thermometer indicating climate-controlled units",
   },
   {
-    label: "Well-Lit Facility",
-    data: "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/light-bulb.svg",
-    alt: "Icon of an illuminated light",
+    label: "Affordable Self Storage Rates",
+    data: "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg",
+    alt: "Icon of a hand holding money",
   },
 ];
 

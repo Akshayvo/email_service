@@ -38,7 +38,7 @@ export const contactsLocation1 = [
   {
     id: 1,
     label: "Address: ",
-    data: "N7124 Willow Rd, Sheboygan Falls, WI 53085",
+    data: "405 Commerce St, Plymouth, WI 53073",
     class: "fas fa-map-marker-alt mr-2 iconColor",
     redirect: "https://goo.gl/maps/FvYLyzooyVF6uZzNA",
   },
@@ -210,24 +210,24 @@ export const contactsLocation5 = [
   {
     id: 1,
     label: "Address: ",
-    data: "21193 AL-181, Location5, AL 36532",
+    data: "N6480 WI-57 Plymouth, WI 53073",
     class: "fas fa-map-marker-alt mr-2 iconColor",
     redirect: "https://goo.gl/maps/FANSU6w7QY9vCpiDA",
   },
   {
     id: 2,
     label: "Email: ",
-    data: "accounts@storageplusbaldwin.com",
-    email: `accounts@storageplusbaldwin.com`,
+    data: "info@in-n-out-storage.com",
+    email: `info@in-n-out-storage.com`,
     class: "fas fa-envelope-open mr-2 iconColor",
-    redirect: "mailto:`accounts@storageplusbaldwin.com`",
+    redirect: "mailto:` info@in-n-out-storage.com`",
   },
   {
     id: 3,
     label: "Phone: ",
-    data: "(251) 970-3168",
+    data: "(920) 644-4423",
     class: "fas fa-phone mr-2 iconColor",
-    redirect: "tel:2519703168",
+    redirect: "tel:9206444423",
   },
 ];
 
@@ -241,8 +241,11 @@ export const hoursLocation5 = [
   //     data: 'CLOSED',
   // },
   {
-    data: "24-Hours a Day 7 Days a Week",
+    data: "No On-Site Office",
   },
+  // {
+  //   data: "24-Hours a Day 7 Days a Week",
+  // },
 ];
 
 export const contactsLocation6 = [
