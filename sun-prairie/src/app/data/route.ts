@@ -31,7 +31,7 @@ import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.compone
     { path: '', component: HomeComponent },
     { path: 'unit-sizer', component: UnitSizerComponent},
     { path: 'storage-tips', component: StorageTipsComponent },
-    { path: 'reserve-unit', component: ReserveComponent },
+    // { path: 'reserve-unit', component: ReserveComponent },
     { path: 'storageTips', component: StorageTipsComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
