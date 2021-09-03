@@ -10,39 +10,60 @@ export const galleryHome = [
 export const galleryAllendale = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `boxer-storage-allendale-1`,
+    url: `boxer-storage-allendale-1-gallery`,
     // tslint:disable-next-line:max-line-length
     thumb: `boxer-storage-allendale-1-thumb`,
     alt: `A photograph of rental truck vehicles parked next to a self storage building`,
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `boxer-storage-allendale-2`,
+    url: `boxer-storage-allendale-2-gallery`,
     // tslint:disable-next-line:max-line-length
     thumb: `boxer-storage-allendale-2-thumb`,
-    alt: `24/7 uhaul trucks parked next to a self storage building for better service`,
-  },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `boxer-storage-allendale-3`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `boxer-storage-allendale-3-thumb`,
-    alt: `A photograph of the front office door`,
-  },
-  {
-    // tslint:disable-next-line: max-line-length
-    url: `boxer-storage-allendale-4`,
-    // tslint:disable-next-line:max-line-length
-    thumb: `boxer-storage-allendale-4-thumb`,
     alt: `photograph of the retail sale wall with packing and shipping supplies available in the main office`,
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `boxer-storage-allendale-5`,
+    url: `boxer-storage-allendale-3-gallery`,
     // tslint:disable-next-line:max-line-length
-    thumb: `boxer-storage-allendale-5-thumb`,
+    thumb: `boxer-storage-allendale-3-thumb`,
     alt: `vehicles parked next to a self storage building to make moving easier`,
   },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-allendale-4-gallery`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-allendale-4-thumb`,
+    alt: `photograph of self storage units`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-allendale-5-gallery`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-allendale-5-thumb`,
+    alt: `photograph of self storage units in different view`,
+  },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `boxer-storage-allendale-6`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `boxer-storage-allendale-6-thumb`,
+  //   alt: `A photograph of self storage units`,
+  // },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `boxer-storage-allendale-7`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `boxer-storage-allendale-7-thumb`,
+  //   alt: `A photograph of self storage units`,
+  // },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `boxer-storage-allendale-8`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `boxer-storage-allendale-8-thumb`,
+  //   alt: ``,
+  // },
 ];
 
 export const galleryAlpine = [
@@ -59,6 +80,13 @@ export const galleryAlpine = [
     // tslint:disable-next-line:max-line-length
     thumb: `boxer-storage-alpine-2-thumb`,
     alt: `A photograph of rental truck vehicles in an open space`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-alpine-3-gallery`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-alpine-3-thumb`,
+    alt: `airiel view of self storage units and parking place`,
   },
 ];
 
@@ -91,14 +119,49 @@ export const galleryDutton = [
     thumb: `boxer-storage-dutton-4-thumb`,
     alt: `A photograph of interior of a storage unit `,
   },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-dutton-5-gallery`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-dutton-5-thumb`,
+    alt: `A photograph of self storage units`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-dutton-6-gallery`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-dutton-6-thumb`,
+    alt: `A photograph of Airial view of self storage`,
+  },
 ];
 
 export const galleryHoward = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `boxer-storage-howard-1`,
+    url: `boxer-storage-howard-1-gallery`,
     // tslint:disable-next-line:max-line-length
     thumb: `boxer-storage-howard-1-thumb`,
+    alt: `A photograph of self storage units`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-howard-2-gallery`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-howard-2-thumb`,
+    alt: `A photograph of self storage units both sides`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-howard-3-gallery`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-howard-3-thumb`,
+    alt: `A photograph of self storage units side view`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-howard-4-gallery`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-howard-4-thumb`,
     alt: `A photograph of self storage units`,
   },
 ];
@@ -131,6 +194,13 @@ export const galleryM45 = [
     thumb: `boxer-storage-m45-4-thumb`,
     alt: `A wider photograph of self storage units`,
   },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-m45-5-gallery`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-m45-5-thumb`,
+    alt: `A wider photograph of self storage units`,
+  },
 ];
 
 export const galleryOtsego = [
@@ -161,6 +231,13 @@ export const galleryOtsego = [
     // tslint:disable-next-line:max-line-length
     thumb: `boxer-storage-otsego-4-thumb`,
     alt: `A wider photograph of self storage units with units on both the sides`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-otsego-5-gallery`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-otsego-5-thumb`,
+    alt: `A wider photograph of self storage units `,
   },
 ];
 
@@ -199,6 +276,13 @@ export const galleryWaylandMillStreet = [
     // tslint:disable-next-line:max-line-length
     thumb: `boxer-storage-waylandmillstreet-5-thumb`,
     alt: `A wider photograph of self storage units with yellow poles`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-waylandmillstreet-6-gallery`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-waylandmillstreet-6-thumb`,
+    alt: `A wider photograph of self storage units`,
   },
 ];
 
@@ -290,16 +374,23 @@ export const galleryRedBarn = [
 export const galleryIonia = [
   {
     // tslint:disable-next-line: max-line-length
-    url: `boxer-storage-ionia-1`,
+    url: `boxer-storage-ionia-1-gallery`,
     // tslint:disable-next-line:max-line-length
     thumb: `boxer-storage-ionia-1-thumb`,
     alt: `A photograph of self storage units with the banner containing the facility name`,
   },
   {
     // tslint:disable-next-line: max-line-length
-    url: `boxer-storage-ionia-2`,
+    url: `boxer-storage-ionia-2-gallery`,
     // tslint:disable-next-line:max-line-length
     thumb: `boxer-storage-ionia-2-thumb`,
+    alt: `A photograph of self storage units along with fencing`,
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `boxer-storage-ionia-3-gallery`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `boxer-storage-ionia-3-thumb`,
     alt: `A photograph of self storage units along with fencing`,
   },
 ];
