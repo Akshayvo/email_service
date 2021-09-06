@@ -71,6 +71,9 @@ export const aboutUs = [
 export const gettingStarted = `Are you ready to start de-cluttering your life or restoring that elbow room around
 the office? Click here to check out our affordable rates, and make your reservation today!`;
 
+export const givenInfo = `Ready to rent a unit?  Click on the View Rates tab to check out our prices and see what is currently available.  
+There will be a RESERVE button next to available sizes.`;
+
 export const blurb = [
     {
         h1: `Convenient & Affordable Storage Units`,
