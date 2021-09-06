@@ -22,7 +22,7 @@ img {
 
 .contact-header {
   display: inline;
-
+  
   .contact-details {
     font-size: 0.82em;
     font-weight: 500;
@@ -33,6 +33,7 @@ img {
 .availability{
   color: $primary;
   justify-content: center;
+  
 }
 .social {
   a {
@@ -100,7 +101,10 @@ img {
 
 @media screen and (max-width: 991px) {
   .display {
-    display: none;
+    // display: none; //commented 
+    .contact-header { //added this two lines
+      display: none;
+    }
   }
 
   .nav-link {
@@ -122,3 +126,13 @@ img {
     overflow-y: scroll;
   }
 }
+
+// @media screen and (max-width: 320px) {
+//   .display {
+//     .availability h5{
+//       // font-size:18px;
+      
+
+//     }
+//   }
+// }
