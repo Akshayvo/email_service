@@ -574,7 +574,7 @@
     text-align: center;
     width: 100%;
     position: absolute;
-    margin-top: 16rem;
+    // margin-top: 16rem;
     height: auto;
   }
   .feature {
@@ -608,19 +608,24 @@
 
 @media only screen and (max-width: 429px) {
   .jumbotron {
+    position: relative;
+    display: block;
     text-align: center;
-    background-size: contain;
-    background-position: center left;
-    height: 50vh;
+    background-size: cover;
+    object-fit: contain;
+    background-position: center center;
+    height: 85vh;
+    min-width: 100%;
   }
-
+  
   .jumbotron-top {
-    height: 10vh;
+    height: 85vh;
   }
 
-  .facility {
-    margin-top: 3rem;
-  }
+  // .facility {
+  //   margin-top: 3rem;
+  // }
+
   .banner {
     background-color: $primary;
     display: flex;
@@ -637,17 +642,17 @@
     }
   }
   
-  @media only screen and (max-width: 429px) {
-    .banner{
-      margin-top: 12rem;
-    }
-  }
+  // @media only screen and (max-width: 429px) {
+  //   .banner{
+  //     margin-top: 12rem;
+  //   }
+  // }
 
-  @media only screen and (max-width: 380px) {
-    .banner{
-      margin-top: 10rem;
-    }
-  }
+  // @media only screen and (max-width: 380px) {
+  //   .banner{
+  //     margin-top: 10rem;
+  //   }
+  // }
 
   .feature {
     display: none;
@@ -657,22 +662,24 @@
     display: none;
   }
 
+  .jumbotron-bottom{
+    display: none;
+  }
+
   .home-map{
-    margin-top: 10px;
+    margin-top: 2vh;
   }
 
   .jumbotorn-skew-style {
-    display: none;
     transform: skew(0deg);
     width: 100%;
     left: auto;
-    height: 150px;
+    height: 25vh;
     bottom: 0;
     position: absolute;
   }
 
   .jumbotorn-skew-text {
-    display: none;
     width: 100%;
     left: 0;
     top: auto;
