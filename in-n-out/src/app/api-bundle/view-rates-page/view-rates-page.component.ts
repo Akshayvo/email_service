@@ -107,7 +107,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.dataSharingService.LstUnitTypes = unitData;
   }
 
-  getMoveInCharges(description: any, monthlyRate: any, intUnitTypeID: any) {
+  getMoveInCharges(description: any, twentyEightDayRate: any, intUnitTypeID: any) {
     this.showLoader = true;
     this.getMoveinChargesService
       .getMoveInCharges({
@@ -144,7 +144,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
           this.defaultTotalChargesAmount = TotalChargesAmount;
           this.showPaymentForMoveIn = true;
           this.descriptionVR = description;
-          this.monthlyRateVR = monthlyRate;
+          this.monthlyRateVR = twentyEightDayRate;
           this.unitTypeIdVR = intUnitTypeID;
           this.curStage = 2;
         },

@@ -1,7 +1,7 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
   {
-    label: "6 Convenient Locations",
+    label: "5 Convenient Locations",
     data: "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg",
     alt: "Icon art displaying a location pin",
   },
@@ -149,7 +149,7 @@ export const location5FeaturesHead = [
 
 export const location6FeaturesHead = [
   {
-    label: "6 Convenient Locations",
+    label: "5 Convenient Locations",
     data: "https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg",
     alt: "Icon art displaying a location pin",
   },

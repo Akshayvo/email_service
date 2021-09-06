@@ -6,13 +6,14 @@ import { Injectable } from '@angular/core';
 export class DataSharingService {
 
   locationAPIKey = {
-    loc1: 'dzJ0OVcxSjMqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc2: 'dzJ0OVcxSjMqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc3: 'dzJ0OVcxSjMqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc4: 'dzJ0OVcxSjMqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
+    loc1: 'dzJ0OVc1SjAqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
+    loc2: 'dzJ0OVc1SjAqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
+    loc3: 'dzJ0OVc1SjAqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
+    loc4: 'dzJ0OVc1SjAqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
     loc5: 'UDIoN0Q0YzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
     loc6: 'UDIoMUQyYzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
   };
+
 
 //  locationAPIKey = {                                                     // demo north
 //     loc1: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
@@ -51,7 +52,7 @@ export class DataSharingService {
 
   MoveInData = {
     Description: '',
-    MonthlyRate: 0,
+    TwentyEightDayRate: 0,
     UnitTypeID: 0,
     proRateAmount: 0,
     ProrateAmtTax: 0,
@@ -67,7 +68,7 @@ export class DataSharingService {
 
   ReservationData = {
     Description: '',
-    MonthlyRate: 0,
+    TwentyEightDayRate: 0,
     UnitTypeID: 0,
     RateTax: 0,
     formattedMoveInDate: '',
@@ -78,7 +79,8 @@ export class DataSharingService {
     ReservationFee: 0,
     ReservationFeeTax: 0,
     UnitTypeID: 0,
-    MonthlyRate: 0,
+    TwentyEightDayRate: 0,
+    
     AnnualRate: 0,
     BiAnnualRate: 0,
     QuarterRate: 0,
@@ -185,7 +187,7 @@ export class DataSharingService {
 
   setReservationData(value: any) {
     this.ReservationData.Description = value.Description;
-    this.ReservationData.MonthlyRate = value.MonthlyRate;
+    this.ReservationData.TwentyEightDayRate = value.TwentyEightDayRate;
     this.ReservationData.UnitTypeID = value.UnitTypeID;
   }
 
@@ -195,7 +197,7 @@ export class DataSharingService {
 
   setMoveInData(value: any) {
     this.MoveInData.Description = value.Description;
-    this.MoveInData.MonthlyRate = value.MonthlyRate;
+    this.MoveInData.TwentyEightDayRate = value.TwentyEightDayRate;
     this.MoveInData.UnitTypeID = value.UnitTypeID;
   }
 

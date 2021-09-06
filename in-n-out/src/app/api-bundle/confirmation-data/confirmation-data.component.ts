@@ -71,7 +71,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   reservationFee: number;
   reservationFeeTax: number;
   description: string;
-  monthlyRate: number;
+  twentyEightDayRate: number;
   myNavLinks: any;
  showMilitaryDetails : any;
   driversLicense : any;
@@ -189,7 +189,7 @@ commandingOfficerPhone : any;
     this.reservationFee = this.dataSharingService.LstUnitTypes.ReservationFee;
     this.reservationFeeTax = this.dataSharingService.LstUnitTypes.ReservationFeeTax;
     this.description = this.dataSharingService.LstUnitTypes.Description;
-    this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
+    this.twentyEightDayRate = this.dataSharingService.LstUnitTypes.TwentyEightDayRate;
     this.navTo = this.dataSharingService.navigationTo;
     this.dataSharingService.initMyNavLinks('confirmationData', window.location.pathname);
     this.showAltDetails = this.dataSharingService.showAltDetails;

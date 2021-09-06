@@ -23,7 +23,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
   navigateToReserve: boolean;
   navigateToMoveIn: boolean;
   description: string;
-  monthlyRate: number;
+  twentyEightDayRate: number;
   PaymentAmount: number;
   CCApprovalCode: string;
   eventName: string;
@@ -59,7 +59,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
     this.navigateToMoveIn = this.dataSharingService.navigateToMoveIn;
     this.navigateToReserve = this.dataSharingService.navigateToReserve;
     this.description = this.dataSharingService.LstUnitTypes.Description;
-    this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate;
+    this.twentyEightDayRate = this.dataSharingService.LstUnitTypes.TwentyEightDayRate;
     this.PaymentAmount = this.dataSharingService.PaymentAmount;
     this.CCApprovalCode = this.dataSharingService.CCApprovalCode;
     this.MoveIn.dteMoveIn = this.dataSharingService.MoveIn.dteMoveIn;
@@ -81,7 +81,7 @@ export class ThankYouComponent implements OnInit, OnDestroy {
       'location' : this.locationName,
       'confirmationNumber' : this.strConfirmation,
       'unitType':  this.description,
-      'price': this.monthlyRate && this.monthlyRate || '',
+      'price': this.twentyEightDayRate && this.twentyEightDayRate || '',
       'date': today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(),
       'time': today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(),
     });

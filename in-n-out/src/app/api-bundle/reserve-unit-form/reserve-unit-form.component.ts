@@ -82,7 +82,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
   ReservationFeeValue: number;
   reservationFeeTax: number;
   reservationInProgress = false;
-  monthlyRate: number;
+  twentyEightDayRate: number;
   description: string;
   defaultReservationFee: number;
   defaultReservationFeeTax: number;
@@ -341,7 +341,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   ngOnInit() {    
     this.description = this.dataSharingService.getReservationData().Description;
-    this.monthlyRate = this.dataSharingService.getReservationData().MonthlyRate;
+    this.twentyEightDayRate = this.dataSharingService.getReservationData().TwentyEightDayRate;
     this.unitTypeId = this.dataSharingService.getReservationData().UnitTypeID;
     this.dataSharingService.initMyNavLinks('reservationForm', window.location.pathname);
     this.myNavLinks = this.dataSharingService.getMyNavLinks('reservationForm');
@@ -443,7 +443,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     const indexValue = event.target.value;
     const index = this.lstUnitTypes.findIndex(x => x.Description === indexValue);
     if (!!index) {
-    this.monthlyRate = this.lstUnitTypes[index].MonthlyRate;
+    this.twentyEightDayRate = this.lstUnitTypes[index].TwentyEightDayRate;
     this.annualRate = this.lstUnitTypes[index].AnnualRate;
     this.biAnnualRate = this.lstUnitTypes[index].BiAnnualRate;
     this.quarterRate = this.lstUnitTypes[index].QuarterRate;
@@ -452,7 +452,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
     this.reservationFeeTax = this.lstUnitTypes[index].ReservationFeeTax;
     }
     this.MoveIn.intUnitTypeID = this.unitTypeId;
-    this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
+    this.dataSharingService.LstUnitTypes.TwentyEightDayRate = this.twentyEightDayRate;
     this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
     this.dataSharingService.LstUnitTypes.BiAnnualRate = this.biAnnualRate;
     this.dataSharingService.LstUnitTypes.QuarterRate = this.quarterRate;
@@ -617,9 +617,9 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
       .subscribe(unitTypesResponse => {
         this.getFilterLstUnitTypes(unitTypesResponse);
         this.lstUnitTypes = unitTypesResponse.lstUnitTypes;
-        const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].MonthlyRate;
-        this.monthlyRate = this.dataSharingService.LstUnitTypes.MonthlyRate || defaultMonthlyValue;
-        const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.MonthlyRate;
+        const defaultMonthlyValue = unitTypesResponse.lstUnitTypes[0].TwentyEightDayRate;
+        this.twentyEightDayRate = this.dataSharingService.LstUnitTypes.TwentyEightDayRate || defaultMonthlyValue;
+        const serviceMonthlyValue = this.dataSharingService.LstUnitTypes.TwentyEightDayRate;
         this.description = unitTypesResponse.lstUnitTypes[0].Description;
         const serviceDescriptionValue = this.dataSharingService.LstUnitTypes.Description;
         this.reservationFee = unitTypesResponse.lstUnitTypes[0].ReservationFee;
@@ -646,7 +646,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
           this.dataSharingService.LstUnitTypes.Description = this.description;
           this.dataSharingService.LstUnitTypes.UnitTypeID = this.unitTypeID;
-          this.dataSharingService.LstUnitTypes.MonthlyRate = this.monthlyRate;
+          this.dataSharingService.LstUnitTypes.TwentyEightDayRate = this.twentyEightDayRate;
           this.dataSharingService.LstUnitTypes.AnnualRate = this.annualRate;
           this.dataSharingService.LstUnitTypes.BiAnnualRate = this.biAnnualRate;
           this.dataSharingService.LstUnitTypes.QuarterRate = this.quarterRate;
@@ -657,7 +657,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
             }])
           });
           this.dataSharingService.LstUnitTypes.Description = serviceDescriptionValue;
-          this.dataSharingService.LstUnitTypes.MonthlyRate = serviceMonthlyValue;
+          this.dataSharingService.LstUnitTypes.TwentyEightDayRate = serviceMonthlyValue;
         }
       });
   }
