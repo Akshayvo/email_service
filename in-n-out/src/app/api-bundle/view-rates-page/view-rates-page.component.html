@@ -49,9 +49,13 @@
           <div class="text-center">
             <p>Rate</p>
             <div class="custom-font">
-              <strong
+              <!-- <strong
                 ><span *ngIf="lstUnitType.TwentyEightDayRate != null">$</span
                 >{{ lstUnitType.TwentyEightDayRate }}</strong
+              > -->
+              <strong
+                ><span *ngIf="lstUnitType.MonthlyRate">$</span
+                >{{ lstUnitType.MonthlyRate }}</strong
               >
             </div>
           </div>

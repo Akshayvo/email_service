@@ -1,28 +1,26 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class DataSharingService {
-
   locationAPIKey = {
-    loc1: 'dzJ0OVc1SjAqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc2: 'dzJ0OVc1SjAqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc3: 'dzJ0OVc1SjAqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc4: 'dzJ0OVc1SjAqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc5: 'UDIoN0Q0YzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
-    loc6: 'UDIoMUQyYzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', 
+    loc1: "dzJ0OVc1SjAqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
+    loc2: "dzJ0OVc1SjAqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
+    loc3: "dzJ0OVc1SjAqMk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
+    loc4: "dzJ0OVc1SjAqM046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
+    loc5: "dzJ0OVc1SjAqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
+    loc6: "UDIoMUQyYzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O",
   };
 
-
-//  locationAPIKey = {                                                     // demo north
-//     loc1: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-//     loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-//     loc3: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-//     loc4: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
-//     loc5: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-//     loc6: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-//   };
+  //  locationAPIKey = {                                                     // demo north
+  //     loc1: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
+  //     loc2: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+  //     loc3: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+  //     loc4: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
+  //     loc5: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
+  //     loc6: 'Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+  //   };
 
   locationName: string;
   strConfirmation: string;
@@ -48,10 +46,10 @@ export class DataSharingService {
   showAltDetails: boolean;
   showMilitaryDetails: boolean;
 
-  apiKey = '';
+  apiKey = "";
 
   MoveInData = {
-    Description: '',
+    Description: "",
     TwentyEightDayRate: 0,
     UnitTypeID: 0,
     proRateAmount: 0,
@@ -63,84 +61,81 @@ export class DataSharingService {
     DepositTax: 0,
     RateTax: 0,
     TotalTaxAmount: 0,
-    TotalChargesAmount: 0
+    TotalChargesAmount: 0,
   };
 
   ReservationData = {
-    Description: '',
+    Description: "",
     TwentyEightDayRate: 0,
     UnitTypeID: 0,
     RateTax: 0,
-    formattedMoveInDate: '',
+    formattedMoveInDate: "",
   };
 
   LstUnitTypes = {
-    Description: '',
+    Description: "",
     ReservationFee: 0,
     ReservationFeeTax: 0,
     UnitTypeID: 0,
     TwentyEightDayRate: 0,
-    
+
     AnnualRate: 0,
     BiAnnualRate: 0,
     QuarterRate: 0,
   };
 
   objTenant = {
-    FirstName: '',
-    LastName: '',
-    Phone: '',
-    EmailAddress: '',
-    AddressLine1: '',
-    AddressLine2: '',
-    City: '',
-    State: '',
-    ZIP: '',
-    DriversLicense: ' ',
-    DriversLicenseExpDate: ' ',
-    DateOfBirth: ' ',
+    FirstName: "",
+    LastName: "",
+    Phone: "",
+    EmailAddress: "",
+    AddressLine1: "",
+    AddressLine2: "",
+    City: "",
+    State: "",
+    ZIP: "",
+    DriversLicense: " ",
+    DriversLicenseExpDate: " ",
+    DateOfBirth: " ",
     MilitaryType: 0,
     MilitaryBranch: 0,
-    MilitaryID: ' ',
-    DeployedUntil: ' ',
-    MilitaryDivision: ' ',
-    CommandingOfficer: ' ',
-    CommandingOfficerPhone: ' ',
-    AlternateName: '',
-    AlternatePhone: '',
-    AlternateAddressLine1: '',
-    AlternateAddressLine2: '',
-    AlternateCity: '',
-    AlternateState: '',
-    AlternateZIP: ''
+    MilitaryID: " ",
+    DeployedUntil: " ",
+    MilitaryDivision: " ",
+    CommandingOfficer: " ",
+    CommandingOfficerPhone: " ",
+    AlternateName: "",
+    AlternatePhone: "",
+    AlternateAddressLine1: "",
+    AlternateAddressLine2: "",
+    AlternateCity: "",
+    AlternateState: "",
+    AlternateZIP: "",
   };
-
 
   navLinksForComponent = {
     reservationForm: {
-      next: '',
-      prev: '',
+      next: "",
+      prev: "",
     },
     confirmationData: {
-      next: '',
-      prev: '',
+      next: "",
+      prev: "",
     },
     payRentForm: {
-      next: '',
-      prev: '',
+      next: "",
+      prev: "",
     },
     viewRates: {
-      next: '',
-      prev: ''
-    }
-
+      next: "",
+      prev: "",
+    },
   };
 
   MoveIn = {
-    dteMoveIn: '',
+    dteMoveIn: "",
     intUnitTypeID: 0,
   };
-
 
   constructor() {
     this.getUnitData();
@@ -171,11 +166,11 @@ export class DataSharingService {
       this.navLinksForComponent[componentName].next = myCurUrl;
       this.navLinksForComponent[componentName].prev = myCurUrl;
     }
-  }
+  };
 
   getMyNavLinks = (componentName) => {
     return this.navLinksForComponent[componentName];
-  }
+  };
 
   updateMyNavLink = (componentName, linkType, url) => {
     if (this.navLinksForComponent[componentName]) {
@@ -183,7 +178,7 @@ export class DataSharingService {
         this.navLinksForComponent[componentName][linkType] = url;
       }
     }
-  }
+  };
 
   setReservationData(value: any) {
     this.ReservationData.Description = value.Description;
@@ -204,5 +199,4 @@ export class DataSharingService {
   getMoveInData() {
     return this.MoveInData;
   }
-
 }
