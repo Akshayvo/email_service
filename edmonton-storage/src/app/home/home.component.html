@@ -3,7 +3,7 @@
 </app-script-hack> -->
 <ngx-json-ld [json]="script"></ngx-json-ld>
 <!-- <div class="jumbotron-container"> -->
-<div class="jumbotron-home">
+<div class="jumbotron-home ">
   <div class="jumbotron-top jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
       <div class=" jumbotorn-skew-style" *ngIf="template !== 'withoutJumbotron'" [ngClass]="template === 'darkTheme' ? 'bg-translucent-primary' : 'bg-translucent-light'">
       </div>
@@ -63,13 +63,13 @@
   <!-- </div> -->
     
   <!--Feature Box-->
-    <div class="container feature-block disp">
-      <div class="row h-100">
-        <div class="col-3 my-auto" *ngFor= "let feature of features">
-          <p class="text-center f-block-img"> 
+    <div class="container feature-block disp">  <!--removed disp class-->
+      <div class="row h-100  sub_container">
+        <div class="col-3 my-auto icon_container" *ngFor= "let feature of features">
+          <p class=""> <!--removed text-center f-block-img-->
             <img src="{{feature.data}}" class="f-img" alt="{{feature.alt}}" >
           </p>
-          <h2 class="text-center f-text">
+          <h2 class=" text-center f-text "> <!--removed text-center-->
             {{feature.label}}
           </h2>
         </div>

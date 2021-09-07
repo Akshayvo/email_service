@@ -64,7 +64,7 @@
   position: relative;
   transform: skew(25deg);
   height: 100%;
-
+  
   a {
     margin-top: 20px;
   }
@@ -74,7 +74,7 @@
   transform: skew(0deg);
   width: 100%;
   position: absolute;
-  top: 16%;
+  top: 21%; //changed from 16%
   left: 9%;
   color: $secondary;
   font-size: 1.5rem;
@@ -85,7 +85,8 @@
 
 .jumbotron-home {
   .for-mobile-view {
-    display: none;
+    display: none; 
+    
   }
 
   .for-desktop-view {
@@ -97,24 +98,48 @@
     }
   }
 
-  .feature-block {
+  .feature-block {     
     padding-top: 0.5rem;
-    height: 35vh;
+    height: 20vh; // changed from 35vh
 
+    .sub_container{
+      display: flex;
+      flex-wrap: nowrap;
+      // flex-direction: row;
+      // justify-content: space-between;
+      // align-items: flex-start;
+      justify-content: flex-start; 
+      width:70%; 
+      // margin:auto;
+    }
+  
+   .icon_container{
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center; 
+      width:40px; 
+   }
+  
     h2 {
-      line-height: 1.5rem;
+      line-height: 1rem; 
     }
     img {
       height: 60px;
+      
     }
 
     .f-text {
       color: $dark;
       font-weight: 600;
-      font-size: 1rem;
+      // font-size: 1rem; 
+      font-size: 0.8rem; 
+      
     }
+    
   }
 }
+
 
 .jumbotron-background-jpg {
   background: url("https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Edmonton_Storage/jpg/guardian-self-stoage-169.jpg");
@@ -201,6 +226,7 @@
 
 .disp {
   display: block;
+  
 }
 
 .testimonial {
@@ -264,6 +290,9 @@
 @media screen and (max-height: 870px) {
   .jumbotorn-skew-text {
     font-size: 14px;
+    
+    
+
   }
   .disp {
     h2 {
@@ -284,6 +313,16 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 641px) {
+  
+  .jumbotorn-skew-text {
+
+    top:20%;
+    .jumbotorn-button {
+      a{
+      font-size: 15px;
+    }
+  }
+  }
   .feature-icon-style {
     padding: 12px 24px;
 
@@ -368,10 +407,15 @@
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .jumbotorn-skew-style { //added this block
+    width: 80%;
+    
+  }
   .jumbotorn-skew-text {
     width: 400px;
-    top: 36%;
+    top: 22%; //it was 36%
     left: 6%;
+    
     a {
       min-width: 160px;
       font-size: 1.4rem;
@@ -427,6 +471,7 @@
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) and (max-height: 450px) {
+  
   .jumbotron {
     text-align: center;
     background-attachment: unset;
@@ -491,7 +536,8 @@
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .jumbotorn-skew-style {
-    width: 85%;
+    width: 91%;
+    
   }
 
   .jumbotorn-button {
@@ -502,7 +548,7 @@
 
   .jumbotorn-skew-text {
     width: 400px;
-
+    
     a {
       min-width: 140px;
       font-size: 1.4rem;
@@ -533,6 +579,10 @@
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 700px) and (min-height: 481px) {
   .jumbotron-top {
     height: 100vh;
+    .jumbotorn-skew-style { //added this block
+      width: 95%;
+      
+    }
   }
 
   .jumbotron {
@@ -576,12 +626,14 @@
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 480px) {
+  
   .jumbotron-top {
     text-align: center;
     background-attachment: unset;
     background-position: center left;
     height: 100vh;
 
+    
     h1 {
       font-size: 2em;
     }
@@ -589,6 +641,7 @@
     .container {
       height: 100%;
       display: flex;
+      
     }
   }
 
@@ -623,6 +676,7 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 601px) {
+  
   .jumbotron-top {
     height: 100vh;
   }
@@ -633,6 +687,8 @@
 
   .feature-block {
     height: 20rem !important;
+    min-width:100%; //added this line
+    
   }
 
   .jumbotorn-skew-style {
@@ -681,11 +737,13 @@
     .container {
       height: 100%;
       display: flex;
+      
     }
   }
 
   .jumbotron-top {
     height: 100vh;
+    
   }
 
   .feature {
@@ -720,12 +778,26 @@
 }
 
 @media only screen and (max-width: 600px) and (min-width: 420px) {
+  // .jumbotron-home{
+  //   border:2px solid orangered;
+  //   padding-left:15px;
+  //   .jumbotron-background-webp{
+  //     width:100%;
+  //   }
+  //   .feature-block{
+  //     border: 2px solid black;
+      
+  //   }
+   
+  // }
   .jumbotron {
     text-align: center;
     background-attachment: unset;
     background-position: center left;
     height: 100vh;
+   
   }
+  
 
   .feature {
     display: none;
@@ -737,6 +809,7 @@
 
   .jumbotron-bottom {
     height: 0;
+    
   }
 
   // .jumbotorn-skew-style {
@@ -785,11 +858,14 @@
   .jumbotorn-skew-text {
     width: 100%;
     top: 25%;
-    left: auto;
+    left: 2px; //changed from auto
+    
     // left: 9%;
     // top: 0;
     // bottom: 10px;
+    
   }
+
 
   // .jumbotorn-skew-style {
   //   transform: skew(0deg);
