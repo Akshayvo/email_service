@@ -12,7 +12,7 @@ export const contactMainOffice = [
         email: 'store@boxerstorage.com',
         data: `store@boxerstorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     // {
     //     id: 3,
@@ -70,9 +70,10 @@ export const contactsLocation1 = [
         id: 3,
         label: 'Email: ',
         email: 'store@boxerstorage.com',
-        data: `store@boxerstorage.com`,
+        // data: `store@boxerstorage.com`,
+        data: 'sagar.g@codeparva.in',
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     {
         id: 2,
@@ -204,7 +205,7 @@ export const contactsLocation2 = [
         email: 'store@boxerstorage.com',
         data: `store@boxerstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     {
         id: 2,
@@ -255,7 +256,7 @@ export const contactsLocation3 = [
         email: 'store@boxerstorage.com',
         data: `store@boxerstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     {
         id: 2,
@@ -306,7 +307,7 @@ export const contactsLocation4 = [
         email: 'store@boxerstorage.com',
         data: `store@boxerstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     {
         id: 2,
@@ -357,7 +358,7 @@ export const contactsLocation5 = [
         email: 'store@boxerstorage.com',
         data: `store@boxerstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     {
         id: 2,
@@ -408,7 +409,7 @@ export const contactsLocation6 = [
         email: 'store@boxerstorage.com',
         data: `store@boxerstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     {
         id: 2,
@@ -458,7 +459,7 @@ export const contactsLocation7 = [
         email: 'store@boxerstorage.com',
         data: `store@boxerstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     {
         id: 2,
@@ -509,7 +510,7 @@ export const contactsLocation8 = [
         email: 'store@boxerstorage.com',
         data: `store@boxerstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     {
         id: 2,
@@ -560,7 +561,7 @@ export const contactsLocation9 = [
         email: 'store@boxerstorage.com',
         data: `store@boxerstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     {
         id: 2,
@@ -611,7 +612,7 @@ export const contactsLocation10 = [
         email: 'store@boxerstorage.com',
         data: `store@boxerstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     {
         id: 2,
@@ -662,7 +663,7 @@ export const contactsLocation11 = [
         email: 'store@boxerstorage.com',
         data: `store@boxerstorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     {
         id: 2,
@@ -711,9 +712,10 @@ export const contactsLocation12 = [
         id: 3,
         label: 'Email: ',
         email: 'store@boxerstorage.com',
-        data: `store@boxerstorage.com`,
+        // data: `store@boxerstorage.com`,
+        data: `sagar.g@codeparva.in`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`store@boxerstorage.com`'
+        redirect: 'mailto:store@boxerstorage.com'
     },
     {
         id: 2,
