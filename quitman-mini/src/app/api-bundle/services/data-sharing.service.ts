@@ -5,13 +5,12 @@ import { Injectable } from "@angular/core";
 })
 export class DataSharingService {
   locationAPIKey = {
-    loc1: "dzJ0OVczSjcqNE46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //29374 quitman-mini,
-    loc2: "dzJ0OVczSjkqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //29399 heber-springs,
+    loc1: "dzJ0OFc4SjkqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28896 quitman-mini,
+    loc2: "dzV0OVc0SjQqTjoyMnwlODc4NzckKDg9Ylcwc2hkZDlrZW9jXk4=", //5944 heber-springs,
   };
   // locationAPIKey = {
   //   loc1: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28464 
-  //   loc2: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28464 
-  //   loc3: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28464 
+  //   loc2: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28464
   // };
   showMilitaryDetails: boolean;
   paymentSuccess: boolean;

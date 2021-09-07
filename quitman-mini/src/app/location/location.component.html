@@ -13,7 +13,7 @@
             </div>
           </div>
         </div>
-        <div class="contact-img">
+        <!-- <div class="contact-img">
             <span *ngIf="locationId == 1" title="Aerial Photograph of self storage units surrounded by a fence."> 
               <div class="img-box-1" [ngClass]="imagetype === 'jpg' ? 'img-box-1-jpg' : 'img-box-1-webp'">
               </div>
@@ -22,7 +22,125 @@
               <div class="img-box-2" [ngClass]="imagetype === 'jpg' ? 'img-box-2-jpg' : 'img-box-2-webp'">
               </div>              
             </span>            
-        </div>
+        </div> -->
+        <div class="contact-img">
+          <span
+            *ngIf="locationId == 1"
+            title="Photograph of self storage units."
+          >
+            <div
+              id="carouselJumbo1"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo1"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo1" data-slide-to="1"></li>
+                <li data-target="#carouselJumbo1" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-1-carousel-1-jpg'
+                        : 'img-box-1-carousel-1-webp'
+                    "
+                    title="photo of interior of self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-1-carousel-2-jpg'
+                        : 'img-box-1-carousel-2-webp'
+                    "
+                    title="photo of outdoor self storage units with the sky view"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-1-carousel-3-jpg'
+                        : 'img-box-1-carousel-3-webp'
+                    "
+                    title="photo of outdoor self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </span>
+          <span
+            *ngIf="locationId == 2"
+            title="Photograph of self storage units."
+          >
+            <div
+              id="carouselJumbo1"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselJumbo1"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselJumbo1" data-slide-to="1"></li>
+                <li data-target="#carouselJumbo1" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-2-carousel-1-jpg'
+                        : 'img-box-2-carousel-1-webp'
+                    "
+                    title="photo of interior of self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-2-carousel-2-jpg'
+                        : 'img-box-2-carousel-2-webp'
+                    "
+                    title="photo of outdoor self storage units with the sky view"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-2-carousel-3-jpg'
+                        : 'img-box-2-carousel-3-webp'
+                    "
+                    title="photo of outdoor self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </span>
+          </div>
       </div>
       <div class="col-lg-4 pt-3 tab-background" >
         <div class="map-responsive">

@@ -59,14 +59,14 @@ export const addressLoaction2 = {
 
 
 export const imageLocation1 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/leos-self-storage-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Quitman_Mini/jpg/leos-self-storage-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Quitman_Mini/jpg/leos-self-storage-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Quitman_Mini/jpg/leos-self-storage-43.jpg'
  ]
 export const imageLocation2 = [
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/quitman-mini-self-storage-11.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/quitman-mini-self-storage-169.jpg',
-  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/South_Wenatchee_Multi/jpg/quitman-mini-self-storage-43.jpg'
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Quitman_Mini/jpg/quitman-mini-self-storage-11.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Quitman_Mini/jpg/quitman-mini-self-storage-169.jpg',
+  'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Quitman_Mini/jpg/quitman-mini-self-storage-43.jpg'
  ]
 
 
