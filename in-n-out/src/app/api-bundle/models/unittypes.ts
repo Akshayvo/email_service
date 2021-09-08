@@ -1,109 +1,109 @@
 export class UnitTypes {
-    lstUnitTypes: LstUnitTypes[];
+  lstUnitTypes: LstUnitTypes[];
 
-    constructor(lstUnitTypes: LstUnitTypes[]) {
-        this.lstUnitTypes = lstUnitTypes;
-    }
+  constructor(lstUnitTypes: LstUnitTypes[]) {
+    this.lstUnitTypes = lstUnitTypes;
+  }
 }
 
 export class LstUnitTypes {
-    Description: string;
-    TwentyEightDayRate: number;
-    DailyRate: number;
-    AnnualRate: number;
-    BiAnnualRate: number;
-    QuarterRate: number;
-    ReservationFee: number;
-    ReservationFeeTax: number;
-    UnitTypeID: number;
-    IsUnitsAvailable: boolean;
-    IsClimateControlled: boolean;
-    DepositAmount: number;
-    IsMobile: boolean;
-    IsAutomobile: boolean;
-    IsOutdoor: boolean;
+  Description: string;
+  MonthlyRate: number;
+  TwentyEightDayRate: number;
+  DailyRate: number;
+  AnnualRate: number;
+  BiAnnualRate: number;
+  QuarterRate: number;
+  ReservationFee: number;
+  ReservationFeeTax: number;
+  UnitTypeID: number;
+  IsUnitsAvailable: boolean;
+  IsClimateControlled: boolean;
+  DepositAmount: number;
+  IsMobile: boolean;
+  IsAutomobile: boolean;
+  IsOutdoor: boolean;
 
-
-    constructor(
-        Description: string,
-        TwentyEightDayRate: number,
-        DailyRate: number,
-        AnnualRate: number,
-        BiAnnualRate: number,
-        QuarterRate: number,
-        ReservationFeeTax: number,
-        ReservationFee: number,
-        UnitTypeID: number,
-        IsUnitsAvailable: boolean,
-        IsClimateControlled: boolean,
-        DepositAmount: number,
-        IsOutdoor: boolean,
-        IsAutomobile: boolean,
-        IsMobile: boolean,
-        ) {
-        this.Description = Description,
-        this.TwentyEightDayRate = TwentyEightDayRate;
-        this.DailyRate = DailyRate;
-        this.AnnualRate = AnnualRate;
-        this.BiAnnualRate = BiAnnualRate;
-        this.QuarterRate = QuarterRate;
-        this.ReservationFeeTax  = ReservationFeeTax;
-        this.ReservationFee = ReservationFee;
-        this.UnitTypeID = UnitTypeID;
-        this.IsUnitsAvailable = IsUnitsAvailable;
-        this.IsClimateControlled = IsClimateControlled;
-        this.DepositAmount = DepositAmount;
-        this.IsAutomobile = IsAutomobile;
-        this.IsMobile = IsMobile;
-        this.IsOutdoor = IsOutdoor;
-    }
+  constructor(
+    Description: string,
+    MonthlyRate: number,
+    TwentyEightDayRate: number,
+    DailyRate: number,
+    AnnualRate: number,
+    BiAnnualRate: number,
+    QuarterRate: number,
+    ReservationFeeTax: number,
+    ReservationFee: number,
+    UnitTypeID: number,
+    IsUnitsAvailable: boolean,
+    IsClimateControlled: boolean,
+    DepositAmount: number,
+    IsOutdoor: boolean,
+    IsAutomobile: boolean,
+    IsMobile: boolean
+  ) {
+    (this.Description = Description),
+      (this.TwentyEightDayRate = TwentyEightDayRate);
+    this.MonthlyRate = MonthlyRate;
+    this.DailyRate = DailyRate;
+    this.AnnualRate = AnnualRate;
+    this.BiAnnualRate = BiAnnualRate;
+    this.QuarterRate = QuarterRate;
+    this.ReservationFeeTax = ReservationFeeTax;
+    this.ReservationFee = ReservationFee;
+    this.UnitTypeID = UnitTypeID;
+    this.IsUnitsAvailable = IsUnitsAvailable;
+    this.IsClimateControlled = IsClimateControlled;
+    this.DepositAmount = DepositAmount;
+    this.IsAutomobile = IsAutomobile;
+    this.IsMobile = IsMobile;
+    this.IsOutdoor = IsOutdoor;
+  }
 }
 
-
 export class RentalPeriod {
-    lstRentalPeriods: LstRentalPeriods[];
+  lstRentalPeriods: LstRentalPeriods[];
 
-    constructor(lstRentalPeriods: LstRentalPeriods[]) {
-        this.lstRentalPeriods = lstRentalPeriods;
-    }
+  constructor(lstRentalPeriods: LstRentalPeriods[]) {
+    this.lstRentalPeriods = lstRentalPeriods;
+  }
 }
 
 export class LstRentalPeriods {
-    PeriodDescription: string;
-    PeriodID: number;
+  PeriodDescription: string;
+  PeriodID: number;
 
-    constructor(PeriodDescription: string, PeriodID: number) {
-        this.PeriodDescription = PeriodDescription;
-        this.PeriodID = PeriodID;
-    }
+  constructor(PeriodDescription: string, PeriodID: number) {
+    this.PeriodDescription = PeriodDescription;
+    this.PeriodID = PeriodID;
+  }
 }
 
 export class InsuranceChoice {
-    lstInsuranceChoices: LstInsuranceChoices[];
-    blnSuccess: boolean;
+  lstInsuranceChoices: LstInsuranceChoices[];
+  blnSuccess: boolean;
 
-    constructor(lstInsuranceChoices: LstInsuranceChoices[], blnSuccess: boolean) {
-        this.lstInsuranceChoices = lstInsuranceChoices;
-        this.blnSuccess = blnSuccess;
-    }
+  constructor(lstInsuranceChoices: LstInsuranceChoices[], blnSuccess: boolean) {
+    this.lstInsuranceChoices = lstInsuranceChoices;
+    this.blnSuccess = blnSuccess;
+  }
 }
 
 export class LstInsuranceChoices {
-    InsuranceChoiceID: number;
-    CoverageDescription: string;
-    Premium: number;
-    ActualCoverageAmount: number;
+  InsuranceChoiceID: number;
+  CoverageDescription: string;
+  Premium: number;
+  ActualCoverageAmount: number;
 
-    constructor(
-        InsuranceChoiceID: number,
-        CoverageDescription: string,
-        Premium: number,
-        ActualCoverageAmount: number
-    ) {
-        this.InsuranceChoiceID = InsuranceChoiceID;
-        this.CoverageDescription =  CoverageDescription;
-        this.Premium = Premium;
-        this.ActualCoverageAmount = ActualCoverageAmount;
-    }
+  constructor(
+    InsuranceChoiceID: number,
+    CoverageDescription: string,
+    Premium: number,
+    ActualCoverageAmount: number
+  ) {
+    this.InsuranceChoiceID = InsuranceChoiceID;
+    this.CoverageDescription = CoverageDescription;
+    this.Premium = Premium;
+    this.ActualCoverageAmount = ActualCoverageAmount;
+  }
 }
-

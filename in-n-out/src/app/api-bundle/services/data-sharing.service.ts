@@ -50,6 +50,7 @@ export class DataSharingService {
 
   MoveInData = {
     Description: "",
+    MonthlyRate: 0,
     TwentyEightDayRate: 0,
     UnitTypeID: 0,
     proRateAmount: 0,
@@ -67,6 +68,7 @@ export class DataSharingService {
   ReservationData = {
     Description: "",
     TwentyEightDayRate: 0,
+    MonthlyRate: 0,
     UnitTypeID: 0,
     RateTax: 0,
     formattedMoveInDate: "",
@@ -78,7 +80,7 @@ export class DataSharingService {
     ReservationFeeTax: 0,
     UnitTypeID: 0,
     TwentyEightDayRate: 0,
-
+    MonthlyRate: 0,
     AnnualRate: 0,
     BiAnnualRate: 0,
     QuarterRate: 0,
@@ -183,6 +185,7 @@ export class DataSharingService {
   setReservationData(value: any) {
     this.ReservationData.Description = value.Description;
     this.ReservationData.TwentyEightDayRate = value.TwentyEightDayRate;
+    this.ReservationData.MonthlyRate = value.MonthlyRate;
     this.ReservationData.UnitTypeID = value.UnitTypeID;
   }
 
@@ -193,6 +196,7 @@ export class DataSharingService {
   setMoveInData(value: any) {
     this.MoveInData.Description = value.Description;
     this.MoveInData.TwentyEightDayRate = value.TwentyEightDayRate;
+    this.MoveInData.MonthlyRate = value.MonthlyRate;
     this.MoveInData.UnitTypeID = value.UnitTypeID;
   }
 
