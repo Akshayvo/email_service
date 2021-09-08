@@ -317,7 +317,7 @@ export const apiRoutes = [
         path: "move-in",
         component: ReserveComponent,
         children: [
-          { path: "", component: ViewRatesPageComponent },
+          { path: "", component: ReserveUnitFormComponent },
           // { path: '', component: ReserveUnitFormComponent },
           // { path: 'move-in', component: ReserveUnitFormComponent },
           // { path: 'confirmation', component: ConfirmationDataComponent, canDeactivate: [CanDeactivateGuard] },

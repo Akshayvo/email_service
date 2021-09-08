@@ -142,12 +142,16 @@ export const headingLocation5 = ``;
 export const headingLocation6 = ``;
 
 export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Commerce St`;
+export const headingMoveInPageLocation1 = `Rent Your Unit at Commerce St`;
 
 export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Pleasantview`;
+export const headingMoveInPageLocation2 = `Rent Your Unit at Pleasantview`;
 
 export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Clifford North`;
+export const headingMoveInPageLocation3 = `Rent Your Unit at Clifford North`;
 
-export const headingReservePageLocation4 = ``;
+export const headingReservePageLocation4 = `Ready to Reserve a Self Storage Unit in Clifford South`;
+export const headingMoveInPageLocation4 = `Rent Your Unit at Clifford South`;
 
 export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit in Woodland`;
 
