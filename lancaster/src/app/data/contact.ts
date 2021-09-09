@@ -18,16 +18,18 @@ export const contact = [
     {
         id: 1,
         label: 'Email:',
-        data: 'selfstoragesc@gmail.com',
+        data: 'lancasterselfstoragesc@gmail.com',
         class: 'fas fa-envelope mx-2 iconColor',
-        redirect: 'mailto:selfstoragesc@gmail.com'
+        redirect: 'mailto:lancasterselfstoragesc@gmail.com'
+        // redirect: 'mailto:selfstoragesc@gmail.com'
     },
     {
         id: 2,
         label: 'Phone:',
-        data: formatPhoneNumber('(555) 555-5555'),
+        data: formatPhoneNumber('(803) 285-5911'),
         class: 'fas fa-phone mx-2 iconColor',
-        redirect: 'tel:5555555555',
+        redirect: 'tel:8032855911',
+        // redirect: 'tel:5555555555',
     },
     {
         id: 0,

@@ -2,25 +2,25 @@
 
 .grid {
   display: grid;
-  background-color: #ffde03;
+  background-color: #91000d;
 }
 .tab {
   margin-bottom: 0;
   width: 100%;
-  background-color: #ffde03;
+  background-color: #91000d;
 
   .grid-item {
     border-left: 1px solid $light;
     border-right: 1px solid $light;
     border-top: 1px solid $light;
-    background-color: #ffde03;
+    background-color: #91000d;
     cursor: pointer;
   }
 
   a {
     text-decoration: none;
     color: $black;
-    background-color: #ffde03;
+    background-color: #91000d;
     width: 100%;
   }
 
@@ -35,7 +35,7 @@
 
 
 .active-tab {
-  background-color: #ffde03 !important;
+  background-color: #91000d !important;
 }
 
 
@@ -47,7 +47,7 @@
 
     .grid-item {
       position: relative;
-      background-color: #ffde03;
+      background-color: #91000d;
     }
   }
 
@@ -69,7 +69,7 @@
 
     .grid-item {
       position: relative;
-      background-color: #ffde03;
+      background-color: #91000d;
       width: 100%;
     }
 
@@ -87,7 +87,7 @@
 
     .grid-item {
       position: relative;
-      background-color: #ffde03;
+      background-color: #91000d;
 
       .btn {
         min-width: 110px;

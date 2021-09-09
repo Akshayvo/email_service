@@ -41,7 +41,7 @@
 }
 
 .jumbotorn-background-webp {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/webp/stock-self-storage-169.webp");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/webp/indoor-self-storage-ready-for-color-%283%29.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -50,7 +50,7 @@
 }
 
 .jumbotorn-background-jpg {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/jpg/stock-self-storage-169.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/jpg/indoor-self-storage-ready-for-color-%283%29.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -245,9 +245,11 @@
     }
   }
   .about-us {
+    
     .heading {
       width: 100%;
     }
+    
   }
 }
 

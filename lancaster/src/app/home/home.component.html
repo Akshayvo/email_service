@@ -25,17 +25,17 @@
   </div>
 
   <div class="about-us bg-dark-background"  #target>
-    <div class="container py-5">
+    <div class="container py-5 ">
       <div class="section py-5 m-0">
-        <h2 class="heading pb-3 text-center">{{aboutUsHeading}}</h2>
+        <h2 class="heading pb-3 text-center text-dark">{{aboutUsHeading}}</h2>
         <div class="row content-margin-top">
           <div class="col-md-6 py-3">
-            <p class="justify" *ngFor="let data of aboutUs">{{data.p}}</p>
-            <p class="justify bold" *ngFor="let databold of aboutUsBold"><b>{{databold.b}}</b></p>
+            <p class="justify text-dark" *ngFor="let data of aboutUs">{{data.p}}</p>
+            <p class="justify  bold " *ngFor="let databold of aboutUsBold"><b>{{databold.b}}</b></p>
           </div>
           <div class="col-md-6 py-3" >
-              <!-- <app-photos> </app-photos>           -->
-              <img alt="a single story metal self storage building with a facility office on the end of the building" class="sectionImage" src="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/jpg/stock-self-storage-11.jpg">
+              <app-photos> </app-photos>          
+              <!-- <img alt="a single story metal self storage building with a facility office on the end of the building" class="sectionImage" src="https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/jpg/stock-self-storage-11.jpg"> -->
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@
   <div class="locate-us bg-dark-background">
     <div class="container py-5">
       <div class="section py-5 m-0">
-          <h4 class="heading pb-3 text-center">Locate Us</h4>
+          <h4 class="heading pb-3 text-center text-dark">Locate Us</h4>
         <div class="row content-margin-top">
             <div class="col-md-6 py-3">
                 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.533752182271!2d-73.94262538438662!3d42.84046171261981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6e7c26c4b959%3A0x88f2e4056402869c!2sScotia+Storage+Co!5e0!3m2!1sen!2sus!4v1542138509038" width="100%" height="250" frameborder="0" allowfullscreen></iframe> -->
@@ -82,15 +82,15 @@
             <div class="mb-4 contact-details">
               
               <p>
-                <span *ngFor="let contact of contactDetails" class="display-contact">
+                <span *ngFor="let contact of contactDetails" class="display-contact text-dark">
                   <span><h4><b>{{contact.label}}</b></h4></span><span class="contact-links" *ngIf="contact?.label === 'Address:' || contact?.label === 'Email:' || contact?.label === 'Phone:' else other_content">
-                    <h4><a [href]="contact?.redirect" rel="noreferrer" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp; &nbsp;{{contact.data}}</a></h4>
+                    <h4><a class='text-dark' [href]="contact?.redirect" rel="noreferrer" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp; &nbsp;{{contact.data}}</a></h4>
                   </span>
                   <ng-template #other_content>&nbsp;<h4>{{contact.data}}</h4></ng-template><br>
                 </span>
               </p>
               <p>
-                <span class="display-contact" *ngFor="let hour of hours">
+                <span class="display-contact text-dark" *ngFor="let hour of hours">
                   <h4><b>{{hour.label}}</b></h4>&nbsp;&nbsp;<h4>{{hour.data}}</h4><br>
                 </span>
               </p>
