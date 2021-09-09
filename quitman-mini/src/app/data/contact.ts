@@ -12,7 +12,7 @@ export const contactMainOffice = [
         email: 'rent@quitmanministorage.com',
         data: `rent@quitmanministorage.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`rent@quitmanministorage.com`'
+        redirect: 'mailto:rent@quitmanministorage.com'
     },
     {
         id: 3,
@@ -79,7 +79,7 @@ export const contactsLocation1 = [
         email: 'rent@quitmanministorage.com',
         data: `rent@quitmanministorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`rent@quitmanministorage.com`'
+        redirect: 'mailto:rent@quitmanministorage.com'
     },
     {
         id: 2,
@@ -136,7 +136,7 @@ export const contactsLocation2 = [
         email: 'rent@quitmanministorage.com',
         data: `rent@quitmanministorage.com`,
         class: 'fas fa-envelope mr-2 iconColor',
-        redirect: 'mailto:`rent@quitmanministorage.com`'
+        redirect: 'mailto:rent@quitmanministorage.com'
     },
     {
         id: 2,
