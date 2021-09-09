@@ -350,7 +350,7 @@ public fetchTwitter() {
   }
 
   public fetchContactDetailsLocation8() {
-    this.heading = `Boxer Storage - Waylanf Southside Location`;
+    this.heading = `Boxer Storage - Wayland Southside Location`;
     this.locationId = '8'
     this.contactDetails = contactsLocation8;
     this.hoursDetails = hoursLocation8;
