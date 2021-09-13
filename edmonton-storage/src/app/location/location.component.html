@@ -17,11 +17,18 @@
           <app-tabs [tabs]='tabs' [name]='name' class="sub-component-background" [currentActiveTab]='currentTab' ></app-tabs>
 <div class="container">
   <div class="row">
-    <div class="col-lg-5">
+    <div class="col-lg-5" *ngIf="currentRoute === '/alberta/guardian/storage-units' else otherR">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9479.613570634798!2d-113.5705467!3d53.559492!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3429fc21ffb9fc8!2sGuardian%20Storage!5e0!3m2!1sen!2sus!4v1619548046439!5m2!1sen!2sus"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3985.67222022447!2d-113.57066694683647!3d53.55964393648444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3429fc21ffb9fc8!2sGuardian%20Storage!5e0!3m2!1sen!2sus!4v1631222660248!5m2!1sen!2sus"
         title="Facility Google Map" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
     </div>
+    <ng-template #otherR>
+    <div class="col-lg-5">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9484.202789316525!2d-113.684651!3d53.539009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11b55c1f331a40c5!2sAccess%20Mini%20Storage!5e0!3m2!1sen!2sus!4v1631222422645!5m2!1sen!2sus"
+        title="Facility Google Map" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </ng-template>
     <div class="col-lg-4  pt-3">
       <div *ngIf="currentRoute === '/alberta/guardian/storage-units' else otherRoute">
       <h2>Guardian Storage</h2>
@@ -29,7 +36,6 @@
       <ng-template #otherRoute>
         <div>
   <h2>Access Mini Storage</h2></div>
-      
       </ng-template>
       <!-- <p> -->
       <div *ngFor="let contact of contactDetails" class="contact-label">
