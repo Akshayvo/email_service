@@ -300,19 +300,19 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
               localStorage.removeItem("strTempTenantToken");
             }
             this.reservationInProgress = false;
-
-            if (!!localStorage.getItem("paymentTab")) {
-              this.router.navigate([
-                `${environment.locationName}/${
-                  this.facilityLocation
-                }/reserve-unit/${localStorage.getItem("paymentTab")}/thank-you`,
-              ]);
-            } else {
-              this.router.navigate([
-                `${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`,
-              ]);
-            }
+            console.log(localStorage.getItem("paymentTab"));
+            // if (!!localStorage.getItem("paymentTab")) {
+            //   this.router.navigate([
+            //     `${environment.locationName}/${
+            //       this.facilityLocation
+            //     }/reserve-unit/${localStorage.getItem("paymentTab")}/thank-you`,
+            //   ]);
+            // } else {
+            this.router.navigate([
+              `${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`,
+            ]);
           }
+          //}
         },
         (err: any) => {
           if (err.status === 403) {
