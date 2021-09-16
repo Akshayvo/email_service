@@ -107,6 +107,7 @@
                   </span> 
                 </div>
                 <h5 class="pt-3"> {{heading}} </h5>
+<<<<<<< HEAD
                 <div class="display-contact">
                 <p>
           <span *ngFor="let contact of contactDetails" >
@@ -122,6 +123,21 @@
                   <span *ngFor="let hour of hoursDetails">
                     <b>{{hour.label}}</b><span *ngIf="hour?.id === 1 else other_content ">{{hour.data}}</span>
                     <ng-template #other_content>{{hour.data}}</ng-template><br>
+=======
+                <p>
+          <span *ngFor="let contact of contactDetails" class="display-contact">
+            <span><h6><b>{{contact.label}}</b></h6></span>
+            <span class="contact-links" *ngIf="contact?.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
+                <h6><a [href]="contact?.redirect" target="{{(contact?.label === 'Address:') ? '_blank' : '_self'}}">&nbsp;{{contact.data}}</a></h6>
+            </span>
+            <ng-template #other_content>&nbsp;<h6>{{contact.data}}</h6></ng-template><br>
+          </span>
+        </p>
+                <div class="py-2">
+                  <span *ngFor="let hour of hoursDetails">
+                    <b>{{hour.label}}</b><span *ngIf="hour?.id === 1 else other_content ">&nbsp;{{hour.data}}</span>
+                    <ng-template #other_content>&nbsp;{{hour.data}}</ng-template><br>
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
                   </span>             
                 </div>
               </div>

@@ -63,6 +63,7 @@
         <div *ngFor="let loginDetail of loginDetail">
           <p><b>Username: </b>&nbsp;{{loginDetail.userName}}<br>
           <b>Password: </b>&nbsp;{{loginDetail.password}}</p>
+<<<<<<< HEAD
           <!-- <p>Note #1: If you have multiple units, your password is the first unit you rented.<br></p>
             <p>Note #2: Unit numbers are 4 digits long in our system. The password for a tenant in unit 123 is 0123.</p>-->
             <p><b>Example:</b></p>
@@ -73,6 +74,17 @@
             <!-- <p>John Smith's {{loginDetail.example1.code}}</p>
             <p>John's Username: {{loginDetail.example1.userName}}<br>
                 John's Password: {{loginDetail.example1.password}}</p> -->
+=======
+          <p>Note #1: If you have multiple units, your password is the first unit you rented.<br></p>
+            <p>Note #2: Unit numbers are 4 digits long in our system. The password for a tenant in unit 123 is 0123.</p>
+            <p><b>Example:</b></p>
+            <p>John Smith's {{loginDetail.example.code}}</p>
+            <p>John's Username: {{loginDetail.example.userName}}<br>
+              John's Password: {{loginDetail.example.password}}</p>
+            <p>John Smith's {{loginDetail.example1.code}}</p>
+            <p>John's Username: {{loginDetail.example1.userName}}<br>
+                John's Password: {{loginDetail.example1.password}}</p>
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
             <p><strong>Have questions about your account?</strong><br>
             <span *ngFor="let contact of contact" class="contact-links" [class.display-none]="contact?.id == 1">
               <a  *ngIf="contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content" [href]="contact?.redirect">

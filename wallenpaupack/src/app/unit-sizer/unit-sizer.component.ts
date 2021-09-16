@@ -28,6 +28,7 @@ export class UnitSizerComponent implements OnInit {
   }
 
   public isSomePage() {
+<<<<<<< HEAD
     if (this.router.url.includes(`${environment.locationName}/greentown`)) {
       this.fetchDetailsLocation1();
   } else if (this.router.url.includes(`${environment.locationName}/lake-ariel`)) {
@@ -37,6 +38,21 @@ export class UnitSizerComponent implements OnInit {
   } else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
     this.fetchDetailsLocation4();
   } 
+=======
+    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+      this.fetchDetailsLocation1();
+  } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+    this.fetchDetailsLocation2();
+  } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+    this.fetchDetailsLocation3();
+  } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+    this.fetchDetailsLocation4();
+  } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+    this.fetchDetailsLocation5();
+  } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
+    this.fetchDetailsLocation6();
+  }
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 }
 
   public fetchDetailsLocation1() {

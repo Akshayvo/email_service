@@ -22,6 +22,7 @@ export class ReserveUnitComponent implements OnInit {
   }
 
   public isSomePage() {
+<<<<<<< HEAD
     if (this.router.url.includes(`${environment.locationName}/greentown`)) {
       this.id = 1;
       this.heading = headingLocation1;
@@ -34,6 +35,26 @@ export class ReserveUnitComponent implements OnInit {
     } else if (this.router.url.includes(`${environment.locationName}/lakeville`)) {
       this.id = 4;
       this.heading = headingLocation4;
+=======
+    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+      this.id = 1;
+      this.heading = headingLocation1;
+    } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
+      this.id = 2;
+      this.heading = headingLocation2;
+    } else if (this.router.url.includes(`${environment.locationName}/barnwell`)) {
+      this.id = 3;
+      this.heading = headingLocation3;
+    } else if (this.router.url.includes(`${environment.locationName}/belforest`)) {
+      this.id = 4;
+      this.heading = headingLocation4;
+    } else if (this.router.url.includes(`${environment.locationName}/fairhope`)) {
+      this.id = 5;
+      this.heading = headingLocation5;
+    } else if (this.router.url.includes(`${environment.locationName}/robertsdale`)) {
+      this.id = 6;
+      this.heading = headingLocation6;
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
     }
   }
 }

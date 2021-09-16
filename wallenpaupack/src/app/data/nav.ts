@@ -13,6 +13,7 @@ export const navLinks = [
         sublinks: [
             {
                 id: '1',
+<<<<<<< HEAD
                 label: 'Greentown',
                 path: `${environment.locationName}/greentown`,
               },
@@ -32,6 +33,36 @@ export const navLinks = [
                 path: `${environment.locationName}/lakeville`,
             },
             
+=======
+                label: 'Foley',
+                path: `${environment.locationName}/foley`,
+              },
+            {
+                id: '2',
+                label: 'Silverhill',
+                path: `${environment.locationName}/silverhill`,
+            },
+              {
+                id: '3',
+                label: 'Barnwell',
+                path: `${environment.locationName}/barnwell`,
+            },
+            {
+                id: '4',
+                label: 'Belforest',
+                path: `${environment.locationName}/belforest`,
+            },
+            {
+                id: '5',
+                label: 'Fairhope',
+                path: `${environment.locationName}/fairhope`,
+            },
+            {
+                id: '6',
+                label: 'Robertsdale',
+                path: `${environment.locationName}/robertsdale`,
+            },
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
         ]
     },
     {

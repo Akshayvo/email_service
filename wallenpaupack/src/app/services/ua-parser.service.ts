@@ -31,9 +31,15 @@ export class UaParserService {
       }
     }
     if (this.typeOfImages === 'WEBP') {
+<<<<<<< HEAD
       this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Wallenpaupack/webp`;
     } else {
       this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Wallenpaupack/jpg';
+=======
+      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/webp`;
+    } else {
+      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Storage_Plus/jpg';
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
     }
   }
 }

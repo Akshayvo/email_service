@@ -5,7 +5,12 @@ import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
+<<<<<<< HEAD
            } from '../data/contact';
+=======
+          hoursLocation5, contactsLocation5,
+          hoursLocation6, contactsLocation6,  } from '../data/contact';
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
@@ -130,7 +135,15 @@ public fetchMetaData() {
       this.fetchContactDetailsLocation3();
     } else if ( this.locationId === '4' ) {
       this.fetchContactDetailsLocation4();
+<<<<<<< HEAD
     } 
+=======
+    } else if ( this.locationId === '5' ) {
+      this.fetchContactDetailsLocation5();
+    } else if ( this.locationId === '6' ) {
+      this.fetchContactDetailsLocation6();
+    }
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
   }
 
   public fetchTableData() {
@@ -142,30 +155,60 @@ public fetchMetaData() {
   }
   
   public fetchContactDetailsLocation1() {
+<<<<<<< HEAD
     this.heading = `Wallenpaupack Self Storage - Greentown`;
+=======
+    this.heading = `Storage Plus of Baldwin County - Foley`;
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
   }
 
   public fetchContactDetailsLocation2() {
+<<<<<<< HEAD
     this.heading = `Wallenpaupack Self Storage - Lake Ariel`;
+=======
+    this.heading = `Storage Plus of Baldwin County - Silverhill`;
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
+<<<<<<< HEAD
     this.heading = `Wallenpaupack Self Storage - Hawley`;
+=======
+    this.heading = `Storage Plus of Baldwin County - Barnwell`;
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
+<<<<<<< HEAD
     this.heading = `Wallenpaupack Self Storage - Lakeville`;
+=======
+    this.heading = `Storage Plus of Baldwin County - Belforest`;
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
   }
 
+<<<<<<< HEAD
  
+=======
+  public fetchContactDetailsLocation5() {
+    this.heading = `Storage Plus of Baldwin County - Fairhope`;
+    this.contactDetails = contactsLocation5;
+    this.hoursDetails = hoursLocation5;
+  }
+
+  public fetchContactDetailsLocation6() {
+    this.heading = `Storage Plus of Baldwin County - Robertsdale`;
+    this.contactDetails = contactsLocation6;
+    this.hoursDetails = hoursLocation6;
+  }
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 
 onSubmit() {
   this.submitted = true;

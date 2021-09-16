@@ -12,7 +12,11 @@ import { NavigationService } from './services/navigation.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+<<<<<<< HEAD
   title = 'Wallenpaupack Self Storage';
+=======
+  title = 'Storage Plus of Baldwin County';
+>>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
   flag: boolean;
   public offsets: number[];
   x: any;
