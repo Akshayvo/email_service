@@ -29,12 +29,16 @@ export const contact = [
 
 export const hours = [
     {
-        label: 'Sunday to Saturday: ',
-        data: '7:00AM to 10:00PM'
+        label: 'Monday - Friday: ',
+        data: '8:00AM to 2:00PM'
     },
     {
         label: 'Access Hours: ',
         data: '24/7'
+    },
+    {
+        label:'If after hours please email the Facility at: ',
+        data: 'storageinmck@gmail.com'
     }
 ];
 
