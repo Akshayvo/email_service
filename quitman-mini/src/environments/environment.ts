@@ -18,7 +18,7 @@ export const environment = {
   facilityName: 'Quitman Mini Storage',
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
-  websiteUrl: `https://boxerstorage.com`  
+  websiteUrl: `https://quitman-mini-staging.netlify.app`  
 };
 
 /*
