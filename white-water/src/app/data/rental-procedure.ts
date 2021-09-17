@@ -12,7 +12,9 @@ export const rentalProcedure = [
     },
     {
         p: `Sign a lease agreement and pay by check, cash, or credit card. We accept Visa, MasterCard, and Discover. 
-        We pro-rate the month you move in but we do not pro-rate when you move out. We give you two keys for the 
+        We pro-rate the month you move in but`, 
+        b: `we do not pro-rate when you move out.`,
+        p1: `We give you two keys for the 
         cylinder lock and you can provide your own padlock in addition, if you wish. The cylinder lock is 
         spring-loaded so you have to push in on the key and turn to open it and then pull the cylinder out. 
         If you wish we can put you on auto-pay where we will charge your credit card on the first of the month; 

@@ -25,16 +25,16 @@ export const aboutUs = [
   {
     p: `Whitewater Self Storage has been serving Whitewater’s self storage needs since 1983. The rental 
     units are conveniently located off Elkhorn Road (Business Hwy 12) just south of the Bluff Ridge Apartments 
-    on Sunrise Lane. With over 300 self storage units in a variety of 15 select sizes ranging from 5’ x 5’ to 10’ x 40’ 
-    units and climate controlled units ranging from 5’ x 6’ to 10’ x 21’, we are sure to have what you need for 
+    on Sunrise Lane. With over 300self storage units in a variety of 15 select sizes ranging from 5’ x 5’ to 10’ x 40’ units and climate controlled units ranging from 5’ x 6’ to 10’ x 21’, we are sure to have what you need for 
     your next storage requirements.`,
   },
   {
-    p: `Whitewater Self-Storage is here to make your next move, renovation, or seasonal storage needs fast, 
+    p: `Whitewater Self-Storage is <b>here to make your next move,</b> renovation, or seasonal storage needs fast, 
     easy, convenient and affordable. We don’t know what the availability of units will be further out 
     than a week or ten days, however, you can call the office to check our availability of units. 
-    We do prorate the month you move in and we require a minimum of two full months rentals. When 
-    you rent a unit we do require your Drivers License and a signed rental agreement prior to issuing the 
+    We do prorate the month you move in and`,
+    b: `we require a minimum of two full months rentals.`,
+    p1: `When you rent a unit we do require your Drivers License and a signed rental agreement prior to issuing the 
     keys for the unit at our Rental Office: Acorn Beverage, 561 E. Milwaukee St, Whitewater, WI 53190`,
   },
   {

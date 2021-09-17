@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
   imagetype: any;
   homePageContent: string;
   homePageTitle: string;
-  data: any;
+  data: string;
   aboutUsAlt: string;
   aboutUsHeading: string;
   objSIMSetting: any;
