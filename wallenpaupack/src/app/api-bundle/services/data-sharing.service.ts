@@ -5,7 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class DataSharingService {
 
-<<<<<<< HEAD
   // locationAPIKey = {
   //   loc1: 'dzF0NFcwSjAqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 14005 greentown
   //   loc2: 'dzJ0MFc3SjYqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 20767 lake-ariel
@@ -24,26 +23,6 @@ export class DataSharingService {
     loc6: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
   };
 
-=======
-  locationAPIKey = {
-    loc1: 'dzF0NFcwSjAqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 14005 foley
-    loc2: 'dzJ0MFc3SjYqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 20767 silverhill
-    loc3: 'dzJ0MFc3SjYqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 20766 barnwell
-    loc4: 'dzJ0N1c0SjUqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 27456 belforest
-    loc5: 'UDIoN0Q0YzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 27457 Fairhope
-    loc6: 'UDIoMUQyYzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 21257 robertsdale
-  };
-
-//  locationAPIKey = {                                                     // demo north
-//     loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-//     loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-//     loc3: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-//     loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
-//     loc5: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-//     loc6: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-//   };
-
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
   locationName: string;
   strConfirmation: string;
   strAccessCode: string;

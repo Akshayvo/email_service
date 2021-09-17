@@ -22,17 +22,10 @@ export class PaymentIframeComponent implements OnInit {
   ) {
     this.meta.addTag({
       name: 'description',
-<<<<<<< HEAD
       content: `Pay your rent for any of the 4 Wallenpaupack Self Storage right here!
       Simply follow the instructions or call your facility to learn how!`
     });
     this.titleService.setTitle('Pay Rent | Wallenpaupack Self Storage');
-=======
-      content: `Pay your rent for any of the 4 Storage Plus of Baldwin County right here!
-      Simply follow the instructions or call your facility to learn how!`
-    });
-    this.titleService.setTitle('Pay Rent | Storage Plus of Baldwin County');
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
   }
 
   ngOnInit() {

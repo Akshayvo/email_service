@@ -44,7 +44,6 @@
       <div class="col-lg-4 pt-3 tab-background" >
         <div class="map-responsive">
             <span *ngIf="locationId == 1"> 
-<<<<<<< HEAD
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11982.130064085359!2d-75.3195352!3d41.3407778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53f6f6b8c678ad4d!2sWallenpaupack%20Self%20Storage!5e0!3m2!1sen!2sus!4v1631557731977!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
             </span>
             <span *ngIf="locationId == 2">
@@ -55,18 +54,6 @@
             </span>
             <span *ngIf="locationId == 4">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11966.110090072405!2d-75.281754!3d41.427774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ab43978c9491515!2sWallenpaupack%20Self%20Storage!5e0!3m2!1sen!2sus!4v1631559226025!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
-=======
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16368.047574785236!2d-87.73310842079505!3d30.408929720480803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x31d2d6bf2ad3ed5a!2sStorage%20Plus%20Baldwin%20County!5e0!3m2!1sen!2sus!4v1613101078629!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
-            </span>
-            <span *ngIf="locationId == 2">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13744.67660007952!2d-87.7604384!3d30.5445247!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdfabc84c84820f7b!2sStorage%20Plus%20of%20Baldwin%20County-%20Silverhill!5e0!3m2!1sen!2sus!4v1613163186782!5m2!1sen!2sus" width="100%" height="230" frameborder="0" title="Facility Google Map" allowfullscreen></iframe>
-            </span>
-            <span *ngIf="locationId == 3">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.48844433228!2d-87.88644668454269!3d30.42225260757986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a3dd82614a34f%3A0xba78390b599dc28f!2sStorage%20Plus%20of%20Baldwin%20County%20-%20Barnwell!5e0!3m2!1sen!2sus!4v1614202825384!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
-            </span>
-            <span *ngIf="locationId == 4">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13735.78148809548!2d-87.81045761574707!3d30.60730403264883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef2f9e1491fcaf8a!2sStorage%20Plus%20of%20Baldwin%20County%20-%20Daphne%20%2F%20Belforest!5e0!3m2!1sen!2sus!4v1614220001331!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
             </span>
             <span *ngIf="locationId == 5">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5779.5182538292875!2d-87.85617859429092!3d30.534549465406016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a6a9f8513acf5%3A0xc3cac971cf80d55a!2sStorage%20Plus%20of%20Baldwin%20County-Fairhope!5e0!3m2!1sen!2sus!4v1614799952656!5m2!1sen!2sus" width="100%" height="220" frameborder="0" title="Facility Google Map"  allowfullscreen></iframe>
@@ -78,7 +65,6 @@
         <div class="hours-data w-100">
           <div class="row">
             <div class="col-lg-8">
-<<<<<<< HEAD
               <!-- <h4 class="pt-3" >Access Hours</h4> -->
               
               <!-- <h4 class="pt-3">Office Hours</h4> -->
@@ -93,19 +79,6 @@
               <!-- <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                        -->
             <!-- </div> -->
           </div>
-=======
-              <h4 class="pt-3" *ngIf="locationId !== 1;then content else other_content" >Access Hours</h4>
-              <ng-template #content><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="hours" ></app-tables></ng-template>
-              <ng-template #other_content><h4 class="pt-3">Office Hours</h4><app-tables [tBody]="hours" >
-              </app-tables><h4 class="pt-3">Access Hours</h4><app-tables [tBody]="access" ></app-tables>
-            </ng-template> 
-            </div>
-            <div class="col-lg-4 btn-area text-center">
-              <a class="btn btn-outline-primary p-2" [routerLink]="['/contact-us']" role="button">Contact Us</a> 
-              <a class="btn btn-primary-light p-2" [routerLink]="['/pay-rent']" role="button">Pay Rent</a> 
-              <!-- <a class="btn btn-primary p-2" (click)='navigateToReserve()' role="button">Reserve Unit</a>                                        -->
-            </div>
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
           </div>
         </div>
       </div>

@@ -5,25 +5,14 @@ import { EmailService } from '../services/email.service';
 import { contactsLocation1, hoursLocation1,
           contactsLocation2, hoursLocation2, contactsLocation3,
           hoursLocation3, hoursLocation4, contactsLocation4,
-<<<<<<< HEAD
             } from '../data/contact';
-=======
-          hoursLocation5, contactsLocation5,
-          hoursLocation6, contactsLocation6,  } from '../data/contact';
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 import { WINDOW } from '@ng-toolkit/universal';
 import {FormGroup, FormBuilder, Validators  } from '@angular/forms';
 import { LocationService } from '../services/location.service';
 import { contactPageLocation1Script, ogContactPage, ogContactPageLocation1, ogContactPageLocation2, ogContactPageLocation3, ogContactPageLocation4,
-<<<<<<< HEAD
  
   twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4,
   } from '../data/script';
-=======
-  ogContactPageLocation5, ogContactPageLocation6,
-  twitterContactPage, twitterContactPageLocation1, twitterContactPageLocation2, twitterContactPageLocation3, twitterContactPageLocation4,
-  twitterContactPageLocation5, twitterContactPageLocation6 } from '../data/script';
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 import { CanonicalService } from '../services/canonical.service';
 import { contactPageTitle, contactPageContent } from '../data/title';
 @Component({
@@ -113,7 +102,6 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-<<<<<<< HEAD
     if (this.router.url.includes('greentown')) {
       this.og = ogContactPageLocation1;
     } else if (this.router.url.includes('lake-ariel')) {
@@ -123,21 +111,6 @@ export class ContactUsComponent implements OnInit {
     } else if (this.router.url.includes('lakeville')) {
       this.og = ogContactPageLocation4;
     } 
-=======
-    if (this.router.url.includes('foley')) {
-      this.og = ogContactPageLocation1;
-    } else if (this.router.url.includes('silverhill')) {
-      this.og = ogContactPageLocation2;
-    } else if (this.router.url.includes('barnwell')) {
-      this.og = ogContactPageLocation3;
-    } else if (this.router.url.includes('belforest')) {
-      this.og = ogContactPageLocation4;
-    } else if (this.router.url.includes('fairhope')) {
-      this.og = ogContactPageLocation5;
-    } else if (this.router.url.includes('robertsdale')) {
-      this.og = ogContactPageLocation6;
-    }
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 }
 
 public fetchMetaData() {
@@ -146,7 +119,6 @@ public fetchMetaData() {
 }
 
 public fetchTwitter() {
-<<<<<<< HEAD
   if (this.router.url.includes('greentown')) {
     this.twitter = twitterContactPageLocation2;
   } else if (this.router.url.includes('lake-ariel')) {
@@ -156,21 +128,6 @@ public fetchTwitter() {
   } else if (this.router.url.includes('lakeville')) {
     this.twitter = twitterContactPageLocation4;
   } 
-=======
-  if (this.router.url.includes('foley')) {
-    this.twitter = twitterContactPageLocation2;
-  } else if (this.router.url.includes('silverhill')) {
-    this.twitter = twitterContactPageLocation1;
-  } else if (this.router.url.includes('barnwell')) {
-    this.twitter = twitterContactPageLocation3;
-  } else if (this.router.url.includes('belforest')) {
-    this.twitter = twitterContactPageLocation4;
-  } else if (this.router.url.includes('fairhope')) {
-    this.twitter = twitterContactPageLocation5;
-  } else if (this.router.url.includes('robertsdale')) {
-    this.twitter = twitterContactPageLocation6;
-  }
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 }
 
   public loadScript() {
@@ -205,7 +162,6 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-<<<<<<< HEAD
     if (this.router.url.includes('greentown')) {
       this.fetchContactDetailsLocation1();
     } else if (this.router.url.includes('lake-ariel')) {
@@ -219,25 +175,6 @@ public fetchTwitter() {
 
   public fetchContactDetailsLocation1() {
     this.heading = `Wallenpaupack Self Storage - Greentown`;
-=======
-    if (this.router.url.includes('foley')) {
-      this.fetchContactDetailsLocation1();
-    } else if (this.router.url.includes('silverhill')) {
-      this.fetchContactDetailsLocation2();
-    } else if (this.router.url.includes('barnwell')) {
-      this.fetchContactDetailsLocation3();
-    } else if (this.router.url.includes('belforest')) {
-      this.fetchContactDetailsLocation4();
-    } else if (this.router.url.includes('fairhope')) {
-      this.fetchContactDetailsLocation5();
-    } else if (this.router.url.includes('robertsdale')) {
-      this.fetchContactDetailsLocation6();
-    }
-  }
-
-  public fetchContactDetailsLocation1() {
-    this.heading = `Storage Plus of Baldwin County - Foley`;
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;
@@ -245,54 +182,26 @@ public fetchTwitter() {
   
   public fetchContactDetailsLocation2() {
     this.locationId = '2'
-<<<<<<< HEAD
     this.heading = `Wallenpaupack Self Storage - Lake Ariel`;
-=======
-    this.heading = `Storage Plus of Baldwin County - Silverhill`;
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
     this.contactDetails = contactsLocation2;
     this.hoursDetails = hoursLocation2;
   }
 
   public fetchContactDetailsLocation3() {
-<<<<<<< HEAD
     this.heading = `Wallenpaupack Self Storage - Hawley`;
-=======
-    this.heading = `Storage Plus of Baldwin County - Barnwell`;
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
     this.locationId = '3'
     this.contactDetails = contactsLocation3;
     this.hoursDetails = hoursLocation3;
   }
 
   public fetchContactDetailsLocation4() {
-<<<<<<< HEAD
     this.heading = `Wallenpaupack Self Storage - Lakeville`;
-=======
-    this.heading = `Storage Plus of Baldwin County - Belforest`;
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
     this.locationId = '4'
     this.contactDetails = contactsLocation4;
     this.hoursDetails = hoursLocation4;
   } 
 
-<<<<<<< HEAD
  
-=======
-  public fetchContactDetailsLocation5() {
-    this.heading = `Storage Plus of Baldwin County - Fairhope`;
-    this.locationId = '5'
-    this.contactDetails = contactsLocation5;
-    this.hoursDetails = hoursLocation5;
-  } 
-
-  public fetchContactDetailsLocation6() {
-    this.heading = `Storage Plus of Baldwin County - Robertsdale`;
-    this.locationId = '6'
-    this.contactDetails = contactsLocation6;
-    this.hoursDetails = hoursLocation6;
-  }
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 
 onSubmit() {
   this.submitted = true;

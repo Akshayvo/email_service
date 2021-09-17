@@ -5,19 +5,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TenantInfo } from '../models/tenant';
 import { DataSharingService } from '../services/data-sharing.service';
-<<<<<<< HEAD
 import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4,  } from '../../data/contact';
 import { loginDetail } from '../../data/pay-rent';
 import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4,
    twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4,
    } from '../../data/script';
-=======
-import { contactsLocation1, contactsLocation2, contactsLocation3, contactsLocation4, contactsLocation5, contactsLocation6, } from '../../data/contact';
-import { loginDetail } from '../../data/pay-rent';
-import { ogPayRentPageLocation1, ogPayRentPageLocation2, ogPayRentPageLocation3, ogPayRentPageLocation4, ogPayRentPageLocation5,
-   twitterPayRentPageLocation1, twitterPayRentPageLocation2, twitterPayRentPageLocation3, twitterPayRentPageLocation4,ogPayRentPageLocation6,
-   twitterPayRentPageLocation5, twitterPayRentPageLocation6 } from '../../data/script';
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 import { Meta } from '@angular/platform-browser';
 
 
@@ -91,17 +83,13 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-<<<<<<< HEAD
     console.log("inside");
-=======
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
     this.fetchLoginDetail();
     this.loginForm = this.formBuilder.group({
       strUserName: ['', Validators.required],
       strPassword: ['', Validators.required],
       intAuthMethod: 1
     });
-<<<<<<< HEAD
     
     //  this.navTo = this.dataSharingService.paymentNavigation;
     this.navTo = localStorage.getItem('paymentNavigationUrl');
@@ -113,15 +101,6 @@ export class LoginComponent implements OnInit, OnDestroy {
         
         if (!!this.paymentTab) {
          
-=======
-    //  this.navTo = this.dataSharingService.paymentNavigation;
-    this.navTo = localStorage.getItem('paymentNavigationUrl');
-
-    if (window.localStorage) {
-      const token = localStorage.getItem('strTenantToken');
-      if (token != null) {
-        if (!!this.paymentTab) {
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
           if (this.dataSharingService.changePassword === true) {
             this.router.navigate([`/pay-rent/${this.navTo}/${this.paymentTab}/changePassword`]);
           } else {
@@ -140,14 +119,9 @@ export class LoginComponent implements OnInit, OnDestroy {
         }
       }
     }
-<<<<<<< HEAD
   
     this.fetchContactDetail();
    
-=======
-    
-    this.fetchContactDetail();
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 
   }
 
@@ -162,7 +136,6 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchContactDetail() {
-<<<<<<< HEAD
     if (this.router.url.includes('greentown')) {
      
       this.id = 1;
@@ -190,46 +163,6 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
     } 
-=======
-
-    if (this.router.url.includes('foley')) {
-      this.id = 1;
-      this.name = 'Storage Plus of Baldwin County - Foley';
-      this.contact = contactsLocation1;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
-    } else  if (this.router.url.includes('silverhill')) {
-      this.id = 2;
-      this.name = 'Storage Plus of Baldwin County - Silverhill';
-      this.contact = contactsLocation2;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc2;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc2);
-    } else  if (this.router.url.includes('barnwell')) {
-      this.id = 3;
-      this.name = 'Storage Plus of Baldwin County - Barnwell';
-      this.contact = contactsLocation3;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc3;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc3);
-    } else  if (this.router.url.includes('belforest')) {
-      this.id = 4;
-      this.name = 'Storage Plus of Baldwin County - Belforest';
-      this.contact = contactsLocation4;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc4);
-    } else  if (this.router.url.includes('fairhope')) {
-      this.id = 5;
-      this.name = 'Storage Plus of Baldwin County - Fairhope';
-      this.contact = contactsLocation5;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc5;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc5);
-    } else  if (this.router.url.includes('robertsdale')) {
-      this.id = 6;
-      this.name = 'Storage Plus of Baldwin County - Robertsdale';
-      this.contact = contactsLocation6;
-      this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc6;
-      localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc6);
-    }
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
   }
 
   public navigate (location: any) {
@@ -241,7 +174,6 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-<<<<<<< HEAD
     if (this.router.url.includes('greentown')) {
       this.og = ogPayRentPageLocation1;
     } else  if (this.router.url.includes('lake-ariel')) {
@@ -250,25 +182,10 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.og = ogPayRentPageLocation3;
     } else if (this.router.url.includes('lakeville')) {
       this.og = ogPayRentPageLocation4;
-=======
-    if (this.router.url.includes('foley')) {
-      this.og = ogPayRentPageLocation1;
-    } else  if (this.router.url.includes('silverhill')) {
-      this.og = ogPayRentPageLocation2;
-    } else if (this.router.url.includes('barnwell')) {
-      this.og = ogPayRentPageLocation3;
-    } else if (this.router.url.includes('belforest')) {
-      this.og = ogPayRentPageLocation4;
-    } else if (this.router.url.includes('fairhope')) {
-      this.og = ogPayRentPageLocation5;
-    } else if (this.router.url.includes('robertsdale')) {
-      this.og = ogPayRentPageLocation6;
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
     }
     }
 
 public fetchTwitter() {
-<<<<<<< HEAD
   if (this.router.url.includes('greentown')) {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('lake-ariel')) {
@@ -278,21 +195,6 @@ public fetchTwitter() {
   } else if (this.router.url.includes('lakeville')) {
         this.twitter = twitterPayRentPageLocation4;
   } 
-=======
-  if (this.router.url.includes('foley')) {
-    this.twitter = twitterPayRentPageLocation1;
-  } else if (this.router.url.includes('silverhill')) {
-      this.twitter = twitterPayRentPageLocation2;
-  } else if (this.router.url.includes('barnwell')) {
-        this.twitter = twitterPayRentPageLocation3;
-  } else if (this.router.url.includes('belforest')) {
-        this.twitter = twitterPayRentPageLocation4;
-  } else if (this.router.url.includes('fairhope')) {
-    this.twitter = twitterPayRentPageLocation5;
-  } else if (this.router.url.includes('robertsdale')) {
-    this.twitter = twitterPayRentPageLocation6;
-  }
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 }
 
   handleForgotPassword() {

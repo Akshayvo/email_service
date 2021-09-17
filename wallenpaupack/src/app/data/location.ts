@@ -145,15 +145,9 @@ export const headingLocation6 = ``;
 
 export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Foley`;
 
-<<<<<<< HEAD
 export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Lake Ariel`;
 
 export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Hawley`;
-=======
-export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Silverhill`;
-
-export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Barnwell`;
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 
 export const headingReservePageLocation4 = ``;
 
@@ -161,7 +155,6 @@ export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit
 
 export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
 
-<<<<<<< HEAD
 export const heading1 = `Wallenpaupack Self Storage - Greentown`;
 
 export const heading2 = `Wallenpaupack Self Storage - Lake Ariel`;
@@ -173,19 +166,6 @@ export const heading4 = `Wallenpaupack Self Storage - Lakeville`;
 export const heading5 = `Wallenpaupack Self Storage - Fairhope`;
 
 export const heading6 = `Wallenpaupack Self Storage - Robertsdale`;
-=======
-export const heading1 = `Storage Plus of Baldwin County - Foley`;
-
-export const heading2 = `Storage Plus of Baldwin County - Silverhill`;
-
-export const heading3 = `Storage Plus of Baldwin County - Barnwell`;
-
-export const heading4 = `Storage Plus of Baldwin County - Belforest`;
-
-export const heading5 = `Storage Plus of Baldwin County - Fairhope`;
-
-export const heading6 = `Storage Plus of Baldwin County - Robertsdale`;
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
 
 
 export const unitSizerLocation1 = [

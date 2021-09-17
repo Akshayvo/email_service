@@ -5,11 +5,7 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-<<<<<<< HEAD
   locationName: 'pennsylvania', // state/city  **Remeber to update locationName in sitemap.xml as well
-=======
-  locationName: 'alabama', // state/city  **Remeber to update locationName in sitemap.xml as well
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
   template: 'darkTheme', // { darkTheme, lightTheme, withoutJumbotron}
@@ -17,13 +13,8 @@ export const environment = {
   errorsMails: ['sanghmitra.v@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',
-<<<<<<< HEAD
   appId: 'Wallenpaupack Self Storage - Testing',
   facilityName: 'Wallenpaupack Self Storage',
-=======
-  appId: 'Storage Plus of Baldwin County - Testing',
-  facilityName: 'Storage Plus of Baldwin County',
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
   VERSION: require('../../package.json').version,
   baseUrl: `https://simapi.syrasoft.com/1/api/`,
   websiteUrl: `https://storageplusbaldwin.com`

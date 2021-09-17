@@ -26,11 +26,7 @@ export class PrivacyPolicyComponent implements OnInit {
       name: 'description',
       content: `This page contains this website's privacy policy. For more information, please contact the business directly.`
     });
-<<<<<<< HEAD
     this.titleService.setTitle('Privacy Policy | Wallenpaupack Self Storage');
-=======
-    this.titleService.setTitle('Privacy Policy | Storage Plus of Baldwin County');
->>>>>>> 2fb4710631fd66ed61fa300b3f9b4f3d08827039
   }
 
   ngOnInit() {
