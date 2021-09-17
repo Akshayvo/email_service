@@ -12,7 +12,7 @@ export const contactsHomePage = [
         email: 'accounts@storageplusbaldwin.com',
         data: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:accounts@storageplusbaldwin.com'
     },
     {
         id: 3,
@@ -48,7 +48,7 @@ export const contactsLocation1 = [
         email: 'accounts@storageplusbaldwin.com',
         data: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:accounts@storageplusbaldwin.com'
     },
     {
         id: 3,
@@ -104,7 +104,7 @@ export const contactsLocation2 = [
         data: 'accounts@storageplusbaldwin.com',
         email: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:accounts@storageplusbaldwin.com'
     },
     {
         id: 3,
@@ -143,7 +143,7 @@ export const contactsLocation3 = [
         data: 'accounts@storageplusbaldwin.com',
         email: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:accounts@storageplusbaldwin.com'
     },
     {
         id: 3,
@@ -182,7 +182,7 @@ export const contactsLocation4 = [
         data: 'accounts@storageplusbaldwin.com',
         email: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:accounts@storageplusbaldwin.com'
     },
     {
         id: 3,
@@ -221,7 +221,7 @@ export const contactsLocation5 = [
         data: 'accounts@storageplusbaldwin.com',
         email: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:accounts@storageplusbaldwin.com'
     },
     {
         id: 3,
@@ -260,7 +260,7 @@ export const contactsLocation6 = [
         data: 'accounts@storageplusbaldwin.com',
         email: `accounts@storageplusbaldwin.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:accounts@storageplusbaldwin.com'
     },
     {
         id: 3,
