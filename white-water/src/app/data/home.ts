@@ -29,7 +29,7 @@ export const aboutUs = [
     your next storage requirements.`,
   },
   {
-    p: `Whitewater Self-Storage is <b>here to make your next move,</b> renovation, or seasonal storage needs fast, 
+    p: `Whitewater Self-Storage is here to make your next move, renovation, or seasonal storage needs fast, 
     easy, convenient and affordable. We don’t know what the availability of units will be further out 
     than a week or ten days, however, you can call the office to check our availability of units. 
     We do prorate the month you move in and`,
