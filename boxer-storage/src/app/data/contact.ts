@@ -70,8 +70,8 @@ export const contactsLocation1 = [
         id: 3,
         label: 'Email: ',
         email: 'store@boxerstorage.com',
-        // data: `store@boxerstorage.com`,
-        data: 'sagar.g@codeparva.in',
+        data: `store@boxerstorage.com`,
+        // data: 'sagar.g@codeparva.in',
         class: 'fas fa-envelope mr-2 iconColor',
         redirect: 'mailto:store@boxerstorage.com'
     },
