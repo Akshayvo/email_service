@@ -11,11 +11,11 @@ export const navLinks = [
         type: 'dropdown',
         path: '/location',
         sublinks: [
-            {
-                id: '1',
-                label: 'Greentown',
-                path: `${environment.locationName}/greentown`,
-              },
+            // {
+            //     id: '1',
+            //     label: 'Greentown',
+            //     path: `${environment.locationName}/greentown`,
+            //   },
             {
                 id: '2',
                 label: 'Lake Ariel',

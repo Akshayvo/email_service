@@ -174,7 +174,7 @@ export class LocationComponent implements OnInit {
     });
     this.titleService.setTitle(`${this.location4PageTitle}`);
     this.locationName = `Wallenpaupack Self Storage - Lakeville Location`;
-    this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
+    // this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc4;
     this.dataSharingService.locationName = this.locationName;
     this.script = Location4Script;
     this.loadScript();

@@ -14,14 +14,20 @@ export class DataSharingService {
   //   loc6: 'UDIoMUQyYzV2Nzw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 21257 robertsdale
   // };
 
- locationAPIKey = {                                                     // demo north
-    loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-    loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-    loc3: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
-    loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
-    loc5: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
-    loc6: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
-  };
+//  locationAPIKey = {                                                     // demo north
+//     loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
+//     loc2: 'UDIoOEQ0YzZ2NDw6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+//     loc3: 'XjJ7OEY0VzZHNUk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28465
+//     loc4: 'aDJLOGk0KzZBNng6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28466
+//     loc5: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 28463
+//     loc6: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 28464
+//   };
+
+  locationAPIKey = {
+    loc1: 'MTIzODk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 12389
+    loc2: ``,
+    loc3: 'XjF7MkYzVzhHN0k6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 12387
+  }
 
   locationName: string;
   strConfirmation: string;
