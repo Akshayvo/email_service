@@ -12,7 +12,7 @@
   display: block;
 }
 .viewrates-mobile {
-  color: white;
+  color: black;
 }
 
 .card-text {
@@ -132,9 +132,29 @@ p {
       min-width: 150px;
     }
 
-    .btn-outline-primary {
-      color: $primary !important;
+    // .btn-outline-primary {
+    //   color: $primary !important;
+    // }
+
+    .reserve{
+      color: white;
+      background-color: $primary;
+      border-radius: 20px;
     }
+
+    .MoveIn{
+      color: $primary;
+      border: 1px solid $primary;
+      border-radius: 20px;
+      &:hover {
+        background-color: $primary;
+        color: white;
+      }
+    }
+  }
+
+  .col-6{
+    max-width: 100%;
   }
 }
 
@@ -143,6 +163,25 @@ p {
     .btn {
       min-width: auto;
     }
+    .reserve{
+      color: white;
+      background-color: $primary;
+      border-radius: 20px;
+    }
+
+    .MoveIn{
+      color: $primary;
+      border: 1px solid $primary;
+      border-radius: 20px;
+      &:hover {
+        background-color: $primary;
+        color: white;
+      }
+    }
+  }
+
+  .col-6{
+    max-width: 100%;
   }
   .card-text {
     width: 100px;

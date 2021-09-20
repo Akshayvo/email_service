@@ -36,7 +36,7 @@ export class UaParserService {
     if (this.typeOfImages === 'WEBP') {
       this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Lancaster/webp`;
     } else {
-      this.baseUrl = 'https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Lancaster/jpg';
+      this.baseUrl = `https://syrasoft-tenant-facing-websites.s3.amazonaws.com/Lancaster/jpg`;
     }
   }
 }

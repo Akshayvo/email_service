@@ -7,6 +7,7 @@ import { Subscription } from 'rxjs';
 import { script } from '../../data/script';
 import { viewRatesPageTitle, viewRatesPageContent } from '../../data/title';
 import { CanonicalService } from '../../services/canonical.service';
+import { galleryHome } from '../../data/galleryImage'; 
 
 
 @Component({
@@ -19,14 +20,15 @@ export class ViewRatesComponent implements OnInit {
   viewRate: any;
   slideShow: any;
   viewRates: any;
+  selectedImage: any;
   imageBaseUrl: any;
   imagetype: any;
+  galleryImages: any;
   state:string;
   viewRatesHeading: string;
   viewRatesPageContent: string;
   viewRatesPageTitle: string;
   private isUnsubscribe$: Subscription;
-
 
 
   constructor(
@@ -48,13 +50,23 @@ export class ViewRatesComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.fetchGallery();
+    this.setSelectedImage(this.galleryImages[0]);
     window.scrollTo(0, 0);
     this.fetchViewRate();
     this.fetchViewRates();   
   }
 
+  setSelectedImage(image: any) {
+    this.selectedImage = image;
+ }
+
   public fetchViewRate() {
     this.viewRate = dataViewRates;
+  }
+
+  public fetchGallery() {
+    this.galleryImages = galleryHome;
   }
  
   public fetchViewRates() {

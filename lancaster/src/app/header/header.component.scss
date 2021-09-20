@@ -18,13 +18,15 @@ a {
 
   .contact-details {
     white-space: nowrap;
-    color: $black;
+    // color: $black;
+    color: white;
     font-size: 0.82em;
     font-weight: 500;
     width: 100%;
 
     a {
-      color: $black;
+      // color: $black;
+      color: white;
     }
   }
 }
@@ -46,8 +48,10 @@ a {
   }
 
   .nav-link-active {
-    color: $primary;
-    border-bottom: 1px solid $primary;
+    // color: $primary;
+    color: white;
+    // border-bottom: 1px solid $primary;
+    border-bottom: 2px solid white;
   }
 
   button {

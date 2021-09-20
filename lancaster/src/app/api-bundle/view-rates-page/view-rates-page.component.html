@@ -68,27 +68,31 @@
       </tbody>
   </table>
   <div class="row viewrates-mobile py-2 border" *ngFor="let lstUnitType of LstUnitTypes">
-    <div class="col-6 text-center ">  
+    <div class="col-6 text-center">  
       <strong>Unit Size</strong>
+      <hr>
     <div class=" py-1 ">{{lstUnitType.Description}}</div>
-    <div class="row">
-        <div class="col-6 text-center " *ngIf="showRate">
-            <p class=" "><b><u>Monthly Rates</u></b></p>
+    <hr>
+    <!-- <div class="row"> -->
+        <div class="col-6 text-center" *ngIf="showRate">
+            <p class=""><b><u>Monthly Rates</u></b></p>
             <div class=" "><span *ngIf="lstUnitType.MonthlyRate != null">$</span>{{lstUnitType.MonthlyRate | number : '1.2-2'}}</div>
         </div>
         <div class="col-6 "[class.ClimateBorder]="lstUnitType.IsClimateControlled" *ngIf="showClimateControl" >
             <div class=" ClimateControlled" *ngIf="lstUnitType.IsClimateControlled" >Climate Controlled</div>
-        </div>
+        <!-- </div> -->
       </div>
     </div>
       <div class="col-6 d-flex justify-content-center" >
         <div  *ngIf="lstUnitType.IsUnitsAvailable; else other">
           <div class=" py-1 buttons" *ngIf="showReserve">
-              <button class="btn btn-primary" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
-          </div>
+              <!-- <button class="btn btn-primary" style="color: white;" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button> -->
+              <button class="btn reserve" style="color: white;" (click)="navigate('/view-rates/reserve', lstUnitType )">Reserve</button>
+            </div>
           <div class="py-1 buttons" *ngIf="showMovein"> 
-              <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
-          </div>
+              <!-- <button class=" btn btn-outline-primary" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button> -->
+              <button class="btn MoveIn" (click)="navigate('/view-rates/move-in', lstUnitType)"> Move In</button>
+            </div>
         </div>
         
         <ng-template #other> 
