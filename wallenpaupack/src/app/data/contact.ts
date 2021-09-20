@@ -4,7 +4,7 @@ export const contactsHomePage = [
         label: 'Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/xnPGV335sXcoVusM9'
+        redirect: 'https://www.google.com/maps/d/u/0/embed?mid=166gB32ytd8oL3zqH1UsWhF9yMUGfkgoB'
     },
     {
         id: 2,
@@ -47,7 +47,7 @@ export const acessHoursHomepage = [
 export const contactsLocation1 = [
     {
         id: 1,
-        label: 'Address: ',
+        label: 'Facility Address: ',
         data: '116 Ehrgood Rd, Greentown, PA 18426',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
@@ -122,7 +122,7 @@ export const socialLinks = [
 export const contactsLocation2 = [
     {
         id: 1,
-        label: 'Address: ',
+        label: 'Facility Address: ',
         data: '80 Miller Rd, Lake Ariel, PA 18436',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/r/CT1A0QzwMwCHEBA'
@@ -169,7 +169,7 @@ export const hoursLocation2 = [
 export const contactsLocation3 = [
     {
         id: 1,
-        label: 'Address: ',
+        label: 'Facility Address: ',
         data: '54 Texas Palmyra Hwy, Hawley, PA 18428',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/r/CeskY5sIbmGZEAE'
@@ -216,7 +216,7 @@ export const hoursLocation3 = [
 export const contactsLocation4 = [
     {
         id: 1,
-        label: 'Address: ',
+        label: 'Facility Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://g.page/r/CYgxbl0IyGw9EBA'

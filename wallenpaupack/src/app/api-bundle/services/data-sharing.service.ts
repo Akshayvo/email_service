@@ -24,9 +24,9 @@ export class DataSharingService {
 //   };
 
   locationAPIKey = {
-    loc1: 'MTIzODk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 12389
-    loc2: ``,
-    loc3: 'XjF7MkYzVzhHN0k6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 12387
+    loc1: 'dzF0MlczSjgqOU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',   // 12389
+    loc2: 'bTd+NG44eTk6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', //7489
+    loc3: 'dzF0MlczSjgqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O',  // 12387
   }
 
   locationName: string;
