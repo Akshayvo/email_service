@@ -404,7 +404,9 @@ onSubmit() {
  } else {
 
   if ( !this.contactForm.value.subject) {
-    this.contactForm.value.subject = 'Website Form Submission';
+    this.contactForm.value.subject = 'Website Form Submission ';
+    
+    
   }
 
   this.receiveremail = this.contactDetails[2].email;
@@ -416,7 +418,7 @@ onSubmit() {
          email: this.contactForm.value.email,
          receiveremail: this.receiveremail,
          message: this.completeMessage,
-         subject: this.contactForm.value.subject,
+         subject: this.contactForm.value.subject + this.heading,
        };
        this.emailService.sendEmail(body)
          .subscribe((response: any) => {
