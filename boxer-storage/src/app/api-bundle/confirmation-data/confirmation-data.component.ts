@@ -186,9 +186,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
 
     this.myNavLinks = this.dataSharingService.getMyNavLinks('confirmationData');
 
-    // if (this.dataSharingService.facilityLocation) {
-    //   this.facilityLocation = this.dataSharingService.facilityLocation;
-    // }
+    if (this.dataSharingService.facilityLocation) {
+      this.facilityLocation = this.dataSharingService.facilityLocation;
+    }
 
   }
 
@@ -257,17 +257,19 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
           }
           this.reservationInProgress = false;
 
-          if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`${environment.locationName}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
-          } else {
-            this.router.navigate([`${environment.locationName}/reserve-unit/thank-you`]);
-          }
-
           // if (!!localStorage.getItem('paymentTab')) {
-          //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+          //   this.router.navigate([`${environment.locationName}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
           // } else {
-          //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
+          //   this.router.navigate([`${environment.locationName}/reserve-unit/thank-you`]);
           // }
+
+          if (!!localStorage.getItem('paymentTab')) {
+            // console.log("thank you2")
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/${localStorage.getItem('paymentTab')}/thank-you`]);
+          } else {
+            // console.log("thank you3")
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/reserve-unit/thank-you`]);
+          }
         }
 
 
@@ -310,16 +312,18 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
             localStorage.removeItem('strTempTenantToken');
           }
           this.reservationInProgress = false;
-          // if (!!localStorage.getItem('paymentTab')) {
-          //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
-          // } else {
-          //   this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/thank-you`]);
-          // }
           if (!!localStorage.getItem('paymentTab')) {
-            this.router.navigate([`${environment.locationName}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
+            // console.log("thank you1")
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
           } else {
-            this.router.navigate([`${environment.locationName}/moveIn/thank-you`]);
+            // console.log("thank you4")
+            this.router.navigate([`${environment.locationName}/${this.facilityLocation}/moveIn/thank-you`]);
           }
+          // if (!!localStorage.getItem('paymentTab')) {
+          //   this.router.navigate([`${environment.locationName}/moveIn/${localStorage.getItem('paymentTab')}/thank-you`]);
+          // } else {
+          //   this.router.navigate([`${environment.locationName}/moveIn/thank-you`]);
+          // }
         }
       }, (err: any) => {
         if (err.status === 403) {
@@ -356,8 +360,10 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   }
 
   onSubmit() {
+    // console.log("confirmation1")
     this.updateNavigation('confirmation');
     if (window.localStorage) {
+
       const loginUrl = localStorage.getItem('paymentNavigationUrl');
       if (localStorage.getItem('strTenantToken') && (this.router.url.includes(`${loginUrl}`))) {
         this.existingTenantToken = localStorage.getItem('strTenantToken');
@@ -368,6 +374,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.submitted = true;
     this.showConfirmation = true;
     this.reservationInProgress = true;
+    // console.log("confirmation2")
       if (this.existingTenantToken) {
         if (!this.isValueUpdated) {
           if (this.navigateToMoveIn === true) {
