@@ -2,12 +2,10 @@ import { objSIMSetting } from './configuration';
 
 export const dataViewRates = [
     {
-      p: `Route 9 Boat N RV Storage is Clifton Park's newest vehicle storage facility! Make room in your
-      yard by storing your boat, recreational vehicle or trailer in one of our high quality vehicle storage units.`,
+      p: `Route 9 Boat N RV Storage is Clifton Park's newest vehicle storage facility! Make room in your yard by storing your boat, recreational vehicle or trailer in one of our high quality vehicle storage units.`,
     },
     {
-      p: `Rent month-to-month or sign a long term storage contract depending on your needs, and don't forget about
-      our convenient auto-pay solution, and forget about the details until you're ready to hit the road on another adventure!`
+      p: `Rent seasonally or sign a long term storage contract depending on your needs, and don't forget about our convenient auto-pay solution, and forget about the details until you're ready to hit the road on another adventure!`
     },
     {
       p: `Do you have questions about Route 9 Boat N RV Storage services? Reserve online, call, or use our contact form today!`
