@@ -40,6 +40,7 @@ import { PrivacyPolicyComponent } from "../privacy-policy/privacy-policy.compone
 import { ContactUsComponent } from "../contact-us/contact-us.component";
 import { ThankYouGuard } from "../thank-you.guard";
 import { FaqComponent } from "../faq/faq.component";
+import { GalleryComponent } from "../gallery/gallery.component";
 // import { UpdateDetailsComponent } from "../api-bundle/update-details/update-details.component";
 // import { UpdateComponent } from "../api-bundle/update/update.component";
 // import { GalleryComponent } from "../gallery/gallery.component";
@@ -208,6 +209,7 @@ export const apiRoutes = [
         ],
       },
       // { path: 'photos', component: PhotosComponent },
+      { path: "photos", component: GalleryComponent },
       { path: "about", component: AboutUsComponent },
       { path: "directions", component: DirectionsComponent },
     ],
@@ -254,7 +256,7 @@ export const apiRoutes = [
           },
         ],
       },
-      
+      { path: "photos", component: GalleryComponent },
       { path: "about", component: AboutUsComponent },
       { path: "directions", component: DirectionsComponent },
     ],
@@ -301,7 +303,7 @@ export const apiRoutes = [
           },
         ],
       },
-      
+      { path: "photos", component: GalleryComponent },
       { path: "about", component: AboutUsComponent },
       { path: "directions", component: DirectionsComponent },
     ],
@@ -350,7 +352,7 @@ export const apiRoutes = [
         ],
       },
       // { path: 'photos', component: PhotosComponent },
-      
+      { path: "photos", component: GalleryComponent },
       { path: "about", component: AboutUsComponent },
       { path: "directions", component: DirectionsComponent },
     ],
@@ -401,6 +403,7 @@ export const apiRoutes = [
         ],
       },
       // { path: 'photos', component: PhotosComponent },
+      { path: "photos", component: GalleryComponent },
       { path: "about", component: AboutUsComponent },
       { path: "directions", component: DirectionsComponent },
     ],
@@ -448,6 +451,7 @@ export const apiRoutes = [
         ],
       },
       // { path: 'photos', component: PhotosComponent },
+      { path: "photos", component: GalleryComponent },
       { path: "about", component: AboutUsComponent },
       { path: "directions", component: DirectionsComponent },
     ],
@@ -495,6 +499,7 @@ export const apiRoutes = [
         ],
       },
       // { path: 'photos', component: PhotosComponent },
+      { path: "photos", component: GalleryComponent },
       { path: "about", component: AboutUsComponent },
       { path: "directions", component: DirectionsComponent },
     ],
@@ -542,6 +547,7 @@ export const apiRoutes = [
         ],
       },
       // { path: 'photos', component: PhotosComponent },
+      { path: "photos", component: GalleryComponent },
       { path: "about", component: AboutUsComponent },
       { path: "directions", component: DirectionsComponent },
     ],

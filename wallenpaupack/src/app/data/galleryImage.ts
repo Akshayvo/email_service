@@ -49,3 +49,97 @@ export const galleryHome = [
     alt: `a row of metal self storage units with gravel parking space in front of the building`
   },
 ];
+
+export const  galleryGreentown = [
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `G%201`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `G%201-thumb`,
+    alt: `two self storage buildings with metal roll up doors surrounded by wide gravel parking spaces`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `G%202`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `G%202-thumb`,
+    alt: `two self storage buildings with metal roll up doors surrounded by wide gravel parking spaces`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `G%203`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `G%203-thumb`,
+    alt: `two self storage buildings with metal roll up doors surrounded by wide gravel parking spaces`
+  },
+
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `G%204`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `G%204-thumb`,
+    alt: `single story metal self storage buildings behind a chain link fence`
+  },
+ 
+]
+
+export const  galleryLakeAriel = [
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `100_1120`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `100_1120-thumb`,
+    alt: `single story metal self storage buildings behind a chain link fence`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `100_0366`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `100_0366-thumb`,
+    alt: `two self storage buildings with metal roll up doors surrounded by wide gravel parking spaces`
+  },
+  
+]
+
+export const  galleryHawley = [
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `100_4399`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `100_4399-thumb`,
+    alt: `single story metal self storage buildings behind a chain link fence`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `100_4393`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `100_4393-thumb`,
+    alt: `two self storage buildings with metal roll up doors surrounded by wide gravel parking spaces`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `100_4078`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `100_4078-thumb`,
+    alt: `two self storage buildings with metal roll up doors surrounded by wide gravel parking spaces`
+  },
+  
+]
+
+export const  galleryLakeVille = [
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `100_9816`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `100_9816-thumb`,
+    alt: `single story metal self storage buildings behind a chain link fence`
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `100_4127`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `100_4127-thumb`,
+    alt: `two self storage buildings with metal roll up doors surrounded by wide gravel parking spaces`
+  },
+ 
+]
