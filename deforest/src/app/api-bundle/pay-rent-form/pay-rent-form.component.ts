@@ -469,7 +469,7 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
   }
 
   public navigateToConfirmation(location: any) {
-    this.router.navigate([location]);
+    this.router.navigate([`${environment.locationName}/view-rates/confirmation`]);
   }
 
   getPayMethods() {
@@ -511,9 +511,9 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
      );
    }
 
-  // toggleEvent(e: any) {
-  //   this.toggleSignUp = true;
-  // }
+  toggleEvent() {
+    this.toggleSignUp = true;
+  }
 
   getSurCharge() {
     this.surcharge = 0;
@@ -577,16 +577,17 @@ export class PayRentFormComponent implements OnInit, OnDestroy {
               this.MoveIn.intUnitTypeID = this.dataSharingService.LstUnitTypes.UnitTypeID;
               this.moveIn(this.MoveIn);
             } else {
-              if (!!this.paymentTab) {
-                this.router.navigate([`pay-rent/${this.paymentTab}/thank-you`])
-              } else {
+              // if (!!this.paymentTab) {
+              //   this.router.navigate([`pay-rent/${this.paymentTab}/thank-you`])
+              // } else {
                 this.router.navigate([`pay-rent/thank-you`]);
-              }
+              // }
             }
           }
           this.showSuccessPayment = true;
         } else {
           this.makePaymentForUnit = false;
+          this.showloaderForPayment = false;
           this.invalidPayment = 'Unable to make the payment. Please check your card detail.';
         }
 
