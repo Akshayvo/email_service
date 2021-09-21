@@ -12,7 +12,7 @@ export const contactsLocation1 = [
         email: 'selfstorageinc@hotmail.com',
         data: `selfstorageinc@hotmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`selfstorageinc@hotmail.com`'
+        redirect: 'mailto:selfstorageinc@hotmail.com'
     },
     {
         id: 3,
@@ -66,7 +66,7 @@ export const contactsLocation2 = [
         data: 'selfstorageinc@hotmail.com',
         email: `selfstorageinc@hotmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`selfstorageinc@hotmail.com`'
+        redirect: 'mailto:selfstorageinc@hotmail.com'
     },
     {
         id: 3,
@@ -106,7 +106,7 @@ export const contactMainOffice = [
         email: 'selfstorageinc@hotmail.com',
         data: `selfstorageinc@hotmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`selfstorageinc@hotmail.com`'
+        redirect: 'mailto:selfstorageinc@hotmail.com'
     },
     {
         id: 3,
