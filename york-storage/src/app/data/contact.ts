@@ -11,7 +11,7 @@ export const contactsHomePage = [
         label: 'Email: ',
         data: `selfstorageofyork@gmail.com`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`selfstorageofyork@gmail.com`'
+        redirect: 'mailto:selfstorageofyork@gmail.com'
     },
     {
         id: 4,
@@ -50,7 +50,7 @@ export const contactsLocation1 = [
         data: `selfstorageofyork@gmail.com`,
         // data: `pragathi.n@codeparva.in`,
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`selfstorageofyork@gmail.com`'
+        redirect: 'mailto:selfstorageofyork@gmail.com'
     },
     {
         id: 3,
@@ -109,7 +109,7 @@ export const contactsLocation2 = [
         label: 'Email: ',
         data: 'selfstorageofyork@gmail.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`selfstorageofyork@gmail.com`'
+        redirect: 'mailto:selfstorageofyork@gmail.com'
     },
     {
         id: 3,
@@ -151,7 +151,7 @@ export const contactsLocation3 = [
         label: 'Email: ',
         data: 'selfstorageofyork@gmail.com', 
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`selfstorageofyork@gmail.com`'
+        redirect: 'mailto:selfstorageofyork@gmail.com'
     },
     {
         id: 3,
@@ -192,7 +192,7 @@ export const contactsLocation4 = [
         label: 'Email: ',
         data: 'accounts@storageplusbaldwin.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:accounts@storageplusbaldwin.com'
     },
     {
         id: 3,
@@ -230,7 +230,7 @@ export const contactsLocation5 = [
         label: 'Email: ',
         data: 'accounts@storageplusbaldwin.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:accounts@storageplusbaldwin.com'
     },
     {
         id: 3,
@@ -268,7 +268,7 @@ export const contactsLocation6 = [
         label: 'Email: ',
         data: 'accounts@storageplusbaldwin.com',
         class: 'fas fa-envelope-open mr-2 iconColor',
-        redirect: 'mailto:`accounts@storageplusbaldwin.com`'
+        redirect: 'mailto:accounts@storageplusbaldwin.com'
     },
     {
         id: 3,
