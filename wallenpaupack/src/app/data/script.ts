@@ -103,57 +103,40 @@ export const maplocation4 = 'https://goo.gl/maps/Zqd1W9yYMM5bES1R7';
 
 export const addressLoaction1 = {
   '@type': 'PostalAddress',
-      'streetAddress': '17860 US-98',
+      'streetAddress': '116 Ehrgood Rd',
       'addressLocality': 'Greentown',
-      'addressRegion': 'AL',
-      'postalCode': '36535',
+      'addressRegion': 'PA',
+      'postalCode': '18426',
       'addressCountry': 'United state'
 };
 
 export const addressLoaction2 = {
   '@type': 'PostalAddress',
-  'streetAddress': '15410 AL-104',
+  'streetAddress': '80 Miller Rd',
   'addressLocality': 'Lake Ariel',
-  'addressRegion': 'AL',
-  'postalCode': '36576',
+  'addressRegion': 'PA',
+  'postalCode': '18436',
   'addressCountry': 'United state'
 }
 
 export const addressLoaction3 = {
   '@type': 'PostalAddress',
-  'streetAddress': '8089A US-98',
-  'addressLocality': 'Fairhope',
-  'addressRegion': 'AL',
-  'postalCode': '36532',
+  'streetAddress': '54 Texas Palmyra Hwy',
+  'addressLocality': 'Hawley',
+  'addressRegion': 'PA',
+  'postalCode': '18428',
   'addressCountry': 'United state'
 } 
 
 export const addressLoaction4 = {
   '@type': 'PostalAddress',
-  'streetAddress': '11455 Co Rd 64',
-  'addressLocality': 'Daphne',
-  'addressRegion': 'AL',
-  'postalCode': '36526',
+  'streetAddress': '204 Purdytown Turnpike',
+  'addressLocality': 'Lakeville',
+  'addressRegion': 'PA',
+  'postalCode': '18438',
   'addressCountry': 'United state'
 }
 
-export const addressLoaction5 = {
-  '@type': 'PostalAddress',
-  'streetAddress': '21193 AL-181',
-  'addressLocality': 'Fairhope',
-  'addressRegion': 'AL',
-  'postalCode': '36532',
-  'addressCountry': 'United state'
-}
-
-export const addressLoaction6 = {
-  '@type': 'PostalAddress',
-  'streetAddress': '20218 US-90',
-  'addressLocality': 'Robertsdale',
-  'addressRegion': 'AL',
-  'postalCode': '36567',
-  'addressCountry': 'United state'
-}
 
 
 

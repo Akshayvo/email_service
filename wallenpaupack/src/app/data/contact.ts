@@ -50,14 +50,14 @@ export const contactsLocation1 = [
         label: 'Facility Address: ',
         data: '116 Ehrgood Rd, Greentown, PA 18426',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
+        redirect: 'https://goo.gl/maps/qQ3uAvaGjHbfer5J9'
     },
     {
         id: 2,
         label: 'Office Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
+        redirect: 'https://goo.gl/maps/BaiCHofiQXixKvTEA'
     },
     {
         id: 3,
@@ -125,14 +125,14 @@ export const contactsLocation2 = [
         label: 'Facility Address: ',
         data: '80 Miller Rd, Lake Ariel, PA 18436',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CT1A0QzwMwCHEBA'
+        redirect: 'https://goo.gl/maps/Sk3d1U3orZAmZjcQ7'
     },
     {
         id: 2,
         label: 'Office Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
+        redirect: 'https://goo.gl/maps/i6DvcvfgzR1ofdQbA'
     },
     {
         id: 3,
@@ -172,14 +172,14 @@ export const contactsLocation3 = [
         label: 'Facility Address: ',
         data: '54 Texas Palmyra Hwy, Hawley, PA 18428',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CeskY5sIbmGZEAE'
+        redirect: 'https://goo.gl/maps/jnSFyA6ivmkt1LEE6'
     },
     {
         id: 2,
         label: 'Office Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CeBIy_cEP-szEBA'
+        redirect: 'https://goo.gl/maps/wih2fB6kHLeBPfvm8'
     },
     {
         id: 3,
@@ -219,7 +219,7 @@ export const contactsLocation4 = [
         label: 'Facility Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://g.page/r/CYgxbl0IyGw9EBA'
+        redirect: 'https://goo.gl/maps/Zqd1W9yYMM5bES1R7'
     },
     {
         id: 2,
