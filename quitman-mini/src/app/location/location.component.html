@@ -41,6 +41,7 @@
                 ></li>
                 <li data-target="#carouselJumbo1" data-slide-to="1"></li>
                 <li data-target="#carouselJumbo1" data-slide-to="2"></li>
+                <li data-target="#carouselJumbo1" data-slide-to="3"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -78,7 +79,19 @@
                   >
                     <div class="carousel-caption"></div>
                   </div>
-                </div>                
+                </div>    
+                <div class="carousel-item">
+                  <div
+                    [ngClass]="
+                      imagetype === 'jpg'
+                        ? 'img-box-1-carousel-4-jpg'
+                        : 'img-box-1-carousel-4-webp'
+                    "
+                    title="photo of outdoor self storage units"
+                  >
+                    <div class="carousel-caption"></div>
+                  </div>
+                </div>              
               </div>
             </div>
           </span>
@@ -182,7 +195,7 @@
       </div>
     </div>
   </div>
-  <div  class="container px-0 pt-2 mt-3"  #target>
+  <div  class="container px-0 pt-2 mt-3 "  #target>
       <app-tabs [tabs]='tabs' [name]='name' class="sub-component-background" [currentActiveTab]='currentTab' ></app-tabs>
   </div>
 </section>

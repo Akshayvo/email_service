@@ -70,6 +70,7 @@ import { FaqComponent } from './faq/faq.component';
 import { UpdateDetailsComponent } from './api-bundle/update-details/update-details.component';
 import { UpdateComponent } from './api-bundle/update/update.component';
 import { OrderByPipe } from './order-by.pipe';
+import { GalleryComponent } from '../app/gallery/gallery.component'
 
 
 @NgModule({
@@ -127,7 +128,8 @@ import { OrderByPipe } from './order-by.pipe';
     FaqComponent,
     UpdateComponent,
     UpdateDetailsComponent,
-    OrderByPipe
+    OrderByPipe,
+    GalleryComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

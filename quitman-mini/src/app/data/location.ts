@@ -11,12 +11,12 @@ export const tabs1 = [
         path: './unit-sizer',
         active: false,
     },
-    // {
-    //     id: '3',
-    //     name: 'Reserve Unit',
-    //     path: './reserve-unit',
-    //     active: false,
-    // },
+    {
+        id: '3',
+        name: 'Gallery',
+        path: './photos',
+        active: false,
+    },
     // {
     //     id: '4',
     //     name: 'About Us',
@@ -77,12 +77,12 @@ export const tabs2 = [
         path: './unit-sizer',
         active: false,
     },
-    // {
-    //     id: '3',
-    //     name: 'Reserve Unit',
-    //     path: './reserve-unit',
-    //     active: false,
-    // },
+    {
+        id: '3',
+        name: 'Gallery',
+        path: './photos',
+        active: false,
+    },
     // {
     //     id: '4',
     //     name: 'About Us',

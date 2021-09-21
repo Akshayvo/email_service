@@ -5,7 +5,7 @@ import { ReserveUnitFormComponent } from '../api-bundle/reserve-unit-form/reserv
 import { ConfirmationDataComponent } from '../api-bundle/confirmation-data/confirmation-data.component';
 import { PayRentFormComponent } from '../api-bundle/pay-rent-form/pay-rent-form.component';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
-// import { PhotosComponent } from '../photos/photos.component';
+import { PhotosComponent } from '../photos/photos.component'; 
 import { AboutUsComponent } from '../about-us/about-us.component';
 import { DirectionsComponent } from '../directions/directions.component';
 import { AppResolver } from '../api-bundle/resolver/app.resolver';
@@ -42,6 +42,7 @@ import { ThankYouGuard } from '../thank-you.guard';
 import { FaqComponent } from '../faq/faq.component';
 import { UpdateDetailsComponent } from '../api-bundle/update-details/update-details.component';
 import { UpdateComponent } from '../api-bundle/update/update.component';
+import { GalleryComponent } from "../gallery/gallery.component";
 
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -109,6 +110,7 @@ export const apiRoutes = [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
         { path: 'storage-units', component: ViewRatesComponent },
         { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'photos', component: GalleryComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
             { path: '', component: ReserveUnitFormComponent },
@@ -144,6 +146,7 @@ export const apiRoutes = [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
         { path: 'storage-units', component: ViewRatesComponent },
         { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'photos', component: GalleryComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
             { path: '', component: ReserveUnitFormComponent },
@@ -546,6 +549,7 @@ resolve: { data: AppResolver }
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
         { path: 'storage-units', component: ViewRatesComponent },
         { path: 'unit-sizer', component: UnitSizerComponent },
+        { path: 'photos', component: GalleryComponent },
         { path: 'reserve-unit', component: ReserveComponent,
           children: [
             { path: '', component: ReserveUnitFormComponent },
