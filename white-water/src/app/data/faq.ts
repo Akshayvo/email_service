@@ -41,14 +41,6 @@ export const faq = [
     to open it and then pull the cylinder out. `,
   },
   {
-    h2: `Do I need to bring my own lock? `,
-    paragraph: `We provide you with a cylinder lock similar to the lock on soda
-        machines. We give you two keys for the cylinder lock and you can
-        provide your own padlock in addition, if you wish. The cylinder lock is
-        spring loaded so you have to push in on the key and turn to open it
-        and then pull the cylinder out. `,
-  },
-  {
     h2: `What if I move? `,
     paragraph: `You are responsible for letting us know your new address.`,
   },
