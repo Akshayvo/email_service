@@ -7,9 +7,9 @@
   <div class="jumbotron-top jumbotron-top-style" [ngClass]="imagetype === 'jpg' ? 'jumbotron-background-jpg' : 'jumbotron-background-webp'">
       <div class=" jumbotorn-skew-style" *ngIf="template !== 'withoutJumbotron'" [ngClass]="template === 'darkTheme' ? 'bg-translucent-primary' : 'bg-translucent-light'">
       </div>
-      <div class="container">
+      <div class="container bg-primary">
         
-        <div class="jumbotorn-skew-text ">
+        <div class="jumbotorn-skew-text">
           <div class="jumbotorn-button">
             <a class="btn btn-lg btn-primary JumbotronGuardianButton" (click)="navigateToStorageUnits1()" role="button">Check units at Guardian Storage!</a>
             <a class="btn btn-lg btn-primary JumbotronAccessMiniButton" (click)="navigateToStorageUnits2()" role="button">Check units at Access Mini Storage!</a>
