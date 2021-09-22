@@ -607,10 +607,19 @@
 }
 
 @media only screen and (max-width: 429px) {
+  .jumbotron-background-webp{
+    background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/White_Water_Storage/webp/whitewhater-jumbotron-mobile.webp");
+  }
+
+  .jumbotron-background-jpg {
+    display: none;
+  }
+
   .jumbotron {
+    background-repeat: no-repeat;
     text-align: center;
     background-attachment: unset;
-    background-position: center left;
+    background-position: top;
     height: 100vh;
   }
 
