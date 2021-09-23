@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { galleryHome } from '../data/galleryImage';
-import { galleryLocation1 } from '../data/galleryImage1';
+// import { galleryLocation1 } from '../data/galleryImage1';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UaParserService } from '../services/ua-parser.service';
 import { environment } from "../../environments/environment";
-import { galleryLocation2 } from '../data/galleryImage2';
+// import { galleryLocation2 } from '../data/galleryImage2';
 @Component({
   selector: 'app-photos',
   templateUrl: './photos.component.html',
