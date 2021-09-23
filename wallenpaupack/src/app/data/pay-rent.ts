@@ -15,22 +15,22 @@ export const tableData = [
   {
     facility: ' Greentown',
     address: '116 Ehrgood Rd, Greentown, PA 18426',
-    url: 'greentown/rent-sub/login'
+    url: 'greentown/login'
   },
   {
     facility: 'Lake Ariel',
     address: '80 Miller Rd, Lake Ariel, PA 18436',
-    url: 'lake-ariel/rent-sub/login'
+    url: 'lake-ariel/login'
   },
   {
     facility: 'Hawley',
     address: '54 Texas Palmyra Hwy, Hawley, PA 18428',
-    url: 'hawley/rent-sub/login'
+    url: 'hawley/login'
   },
   {
     facility: 'Lakeville',
     address: '204 Purdytown Turnpike, Lakeville, PA 18438',
-    url: 'lakeville/rent-sub/login'
+    url: 'lakeville/login'
   },
   
 ];

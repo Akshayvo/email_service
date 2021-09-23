@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CanonicalService } from '../../services/canonical.service';
 import { headingReservePageLocation1, headingReservePageLocation2, headingReservePageLocation3, headingReservePageLocation4,
-  headingReservePageLocation5, headingReservePageLocation6,} from '../../data/location';
+  } from '../../data/location';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
 

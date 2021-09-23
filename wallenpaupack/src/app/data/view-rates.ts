@@ -11,13 +11,15 @@ export const th = [
     // {
     //   data: `Climate Control`
     // },
-    {
-      data: `Reserve a Unit`
-    },
     // {
-    //   data: `Move In`
-    // }
+    //   data: `Reserve a Unit`
+    // },
+    {
+      data: `Move In`
+    }
   ];
+
+  
 
   export const option =  [
     {

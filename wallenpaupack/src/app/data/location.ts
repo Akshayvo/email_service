@@ -155,17 +155,14 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Foley`;
+export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Greentown`;
 
 export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Lake Ariel`;
 
 export const headingReservePageLocation3 = `Ready to Reserve a Self Storage Unit in Hawley`;
 
-export const headingReservePageLocation4 = ``;
+export const headingReservePageLocation4 = `Ready to Reserve a Self Storage Unit in Lakeville`;
 
-export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit in Fairhope`;
-
-export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
 
 export const heading1 = `Wallenpaupack Self Storage - Greentown`;
 
@@ -175,9 +172,7 @@ export const heading3 = `Wallenpaupack Self Storage - Hawley`;
 
 export const heading4 = `Wallenpaupack Self Storage - Lakeville`;
 
-export const heading5 = `Wallenpaupack Self Storage - Fairhope`;
 
-export const heading6 = `Wallenpaupack Self Storage - Robertsdale`;
 
 
 export const unitSizerLocation1 = [

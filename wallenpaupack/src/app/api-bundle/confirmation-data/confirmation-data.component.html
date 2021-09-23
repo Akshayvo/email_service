@@ -81,6 +81,30 @@
                         <td>
                             {{zip}}
                         </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Driver's License Number
+                        </td>
+                        <td>
+                            {{driversLicense}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Driver's License Expiration Date
+                        </td>
+                        <td>
+                            {{driversLicenseExpDate}}
+                        </td>
+                    </tr>
+                    <tr *ngIf="!!!!showMilitaryDetails && !!navigateToMoveIn">
+                        <td>
+                            Birthdate
+                        </td>
+                        <td>
+                            {{dateOfBirth}}
+                        </td>
                     </tr>                     
                 </tbody>
             </table>

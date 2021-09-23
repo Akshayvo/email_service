@@ -137,6 +137,7 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
 
   showPrevious = false;
   showAltDetails = false;
+  showMilitaryDetails = false;
 
 
   private getLeadDaysSubscribe$: Subscription;
@@ -175,6 +176,8 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         this.dataSharingService.navigateToReserve = false;
         this.showAltDetails = (environment.alternateType.moveIn === true) ? true : false;
         this.dataSharingService.showAltDetails = this.showAltDetails;
+        this.showMilitaryDetails = (environment.military === true) ? true : false;
+          this.dataSharingService.showMilitaryDetails = this.showMilitaryDetails;
       }
     }
 
@@ -193,6 +196,18 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
         City: ['', Validators.required],
         State: ['', Validators.required],
         ZIP: ['', Validators.required],
+        DriversLicense: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DriversLicenseExpDate: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
+        DateOfBirth: ['', conditionalValidator(
+          (() => this.showMilitaryDetails === false),
+          Validators.required
+        )],
         AlternateName:  ['',  conditionalValidator(
           (() => this.showAltDetails === false),
           Validators.required
@@ -487,6 +502,16 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
             City: Tenant.City,
             State: Tenant.State,
             ZIP: Tenant.ZIP,
+            DriversLicense: Tenant.DriversLicense,
+            DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+            DateOfBirth: Tenant.DateOfBirth,
+            AlternateName: Tenant.AlternateName,
+            AlternatePhone: Tenant.AlternatePhone,
+            AlternateAddressLine1: Tenant.AlternateAddressLine2,
+            AlternateAddressLine2: Tenant.AlternateAddressLine2,
+            AlternateCity: Tenant.AlternateCity,
+            AlternateState: Tenant.AlternateState,
+            AlternateZIP: Tenant.AlternateZIP,
           };
           this.reserveUnitForm.patchValue({
             objTenant: ({
@@ -499,6 +524,16 @@ export class ReserveUnitFormComponent implements OnInit, OnDestroy {
               City: Tenant.City,
               State: Tenant.State,
               ZIP: Tenant.ZIP,
+              DriversLicense: Tenant.DriversLicense,
+              DriversLicenseExpDate: Tenant.DriversLicenseExpDate,
+              DateOfBirth: Tenant.DateOfBirth,
+              AlternateName: Tenant.AlternateName,
+              AlternatePhone: Tenant.AlternatePhone,
+              AlternateAddressLine1: Tenant.AlternateAddressLine1,
+              AlternateAddressLine2: Tenant.AlternateAddressLine2,
+              AlternateCity: Tenant.AlternateCity,
+              AlternateState: Tenant.AlternateState,
+              AlternateZIP: Tenant.AlternateZIP,
             }),
           });
 

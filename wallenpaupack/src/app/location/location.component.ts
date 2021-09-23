@@ -4,7 +4,7 @@ import { contactsLocation1, hoursLocation1, hoursLocation1AcessHours,hoursLocati
           contactsLocation2, hoursLocation2, hoursLocation3, contactsLocation3, contactsLocation4, hoursLocation4,
           
           } from '../data/contact';
-import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, heading4, heading5, heading6  } from '../data/location';
+import { heading1, heading2, tabs, tabs1, tabs2, heading3, tabs3, heading4, } from '../data/location';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { DataSharingService } from '../api-bundle/services/data-sharing.service';

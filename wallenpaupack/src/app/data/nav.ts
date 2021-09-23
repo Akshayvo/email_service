@@ -7,21 +7,11 @@ export const navLinks = [
         type: 'link'
     },
     {
-        label: 'Location',
+        label: 'Locations',
         type: 'dropdown',
         path: '/location',
         sublinks: [
             {
-                id: '1',
-                label: 'Greentown',
-                path: `${environment.locationName}/greentown`,
-              },
-            {
-                id: '2',
-                label: 'Lake Ariel',
-                path: `${environment.locationName}/lake-ariel`,
-            },
-              {
                 id: '3',
                 label: 'Hawley',
                 path: `${environment.locationName}/hawley`,
@@ -31,6 +21,19 @@ export const navLinks = [
                 label: 'Lakeville',
                 path: `${environment.locationName}/lakeville`,
             },
+            {
+                id: '2',
+                label: 'Lake Ariel',
+                path: `${environment.locationName}/lake-ariel`,
+            },
+            {
+                id: '1',
+                label: 'Greentown',
+                path: `${environment.locationName}/greentown`,
+              },
+            
+              
+            
             
         ]
     },
@@ -39,11 +42,11 @@ export const navLinks = [
         path: '/pay-rent',
         type: 'link'
     },
-    {
-        label: 'Storage Tips',
-        path: `${environment.locationName}/storage-tips`,
-        type: 'link'
-    },
+    // {
+    //     label: 'Storage Tips',
+    //     path: `${environment.locationName}/storage-tips`,
+    //     type: 'link'
+    // },
     {
         label: 'Contact Us',
         path: '/contact-us',

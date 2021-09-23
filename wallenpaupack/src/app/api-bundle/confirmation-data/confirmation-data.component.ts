@@ -61,6 +61,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   addressLine2: string;
   city: string;
   zip: string;
+  driversLicense: any;
+  driversLicenseExpDate: any;
+  dateOfBirth: any;
   alternateName: String;
   alternatePhone: String;
   alternateAddressLine1: String;
@@ -91,6 +94,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
 
   period: string;
   showAltDetails = false;
+  showMilitaryDetails = false;
   navTo: any;
 
   facilityLocation: string;
@@ -160,6 +164,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    
     this.firstName = this.dataSharingService.objTenant.FirstName;
     this.lastName = this.dataSharingService.objTenant.LastName;
     this.phone = this.dataSharingService.objTenant.Phone;
@@ -168,6 +173,9 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.addressLine2 = this.dataSharingService.objTenant.AddressLine2;
     this.city = this.dataSharingService.objTenant.City;
     this.zip = this.dataSharingService.objTenant.ZIP;
+    this.driversLicense = this.dataSharingService.objTenant.DriversLicense;
+    this.driversLicenseExpDate = this.dataSharingService.objTenant.DriversLicenseExpDate;
+    this.dateOfBirth = this.dataSharingService.objTenant.DateOfBirth;
     this.alternateName = this.dataSharingService.objTenant.AlternateName;
     this.alternatePhone = this.dataSharingService.objTenant.AlternatePhone;
     this.alternateAddressLine1 = this.dataSharingService.objTenant.AlternateAddressLine1;
@@ -182,6 +190,7 @@ export class ConfirmationDataComponent implements OnInit, OnDestroy {
     this.navTo = this.dataSharingService.navigationTo;
     this.dataSharingService.initMyNavLinks('confirmationData', window.location.pathname);
     this.showAltDetails = this.dataSharingService.showAltDetails;
+    this.showMilitaryDetails = this.dataSharingService.showMilitaryDetails;
 
     this.myNavLinks = this.dataSharingService.getMyNavLinks('confirmationData');
 
