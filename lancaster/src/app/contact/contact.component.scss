@@ -96,33 +96,37 @@ label {
 .form-group {
   input {
     background-color: $dark-background;
-    border: 1px solid $primary;
+    // border: 1px solid $primary;
+    border: 1px solid $black;
     color: $white;
   }
 
   input:focus {
     background-color: $dark-background;
-    border: 1px solid $primary;
+    // border: 1px solid $primary;
+    border: 2px solid $black;
   }
 
   textarea {
     background-color: $dark-background;
-    border: 1px solid $primary;
+    // border: 1px solid $primary;
+    border: 1px solid $black;
     color: $white;
   }
 
   textarea:focus {
     background-color: $dark-background;
-    border: 1px solid $primary;
+    // border: 1px solid $primary;
+    border: 2px solid $black;
   }
 
 
   input::placeholder {
-    color: #c7c7c7;
+    color: $black;
   }
 
   textarea::placeholder {
-    color: #c7c7c7;
+    color: $black;
   }
 
   .form-control:focus {

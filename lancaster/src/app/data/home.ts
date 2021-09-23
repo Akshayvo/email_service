@@ -39,26 +39,26 @@ export const featuresList = [
 
 export const feature = [
     {
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lancaster/feature/garage.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/feature/garage.svg',
         label: 'Boat and Vehicle Storage'
     },
     {
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lancaster/feature/convenient-location.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/feature/convenient-location.svg',
         label: 'Conveniently Located'
     },
     {
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lancaster/feature/24-hours.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/feature/24-hours.svg',
         label: '24 Hour Facility Access'
     },
     {
-        path: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Lancaster/feature/hand.svg',
+        path: 'https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Lancaster/feature/hand.svg',
         label: 'Affordable Self Storage Rates'
     }
    
 ];
 export const aboutUsAlt = `indoor climate controlled storage units with roll-up doors inside of a clean, well-lit building`;
 
-export const aboutUsHeading = `Affordable Self-Storage Units in the Fargo-Moorhead Area`;
+export const aboutUsHeading = `Affordable Self-Storage Units in the Lancaster Area`;
 
 export const aboutUs = [
     {
