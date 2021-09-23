@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { unitSizerLocation1, unitSizerLocation2,
-   unitSizerLocation3, unitSizerLocation4, unitSizerLocation5, unitSizerLocation6
+   unitSizerLocation3, unitSizerLocation4,
    } from '../data/location';
 import { CanonicalService } from '../services/canonical.service';
 import { environment } from '../../environments/environment';
@@ -68,17 +68,5 @@ export class UnitSizerComponent implements OnInit {
     this.unitSizer = unitSizerLocation4;
   } 
 
-  public fetchDetailsLocation5() {
-    this.h2tag = 'Storage Unit Sizer ';
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
-    this.unitSizer = unitSizerLocation5;
-  }
-
-  public fetchDetailsLocation6() {
-    this.h2tag = 'Storage Unit Sizer ';
-    this.description = `Not sure what size unit you need for your belongings? Use our handy unit sizing guide to figure that
-    out! Still have questions? Call (251) 970-3168`;
-    this.unitSizer = unitSizerLocation6;
-  }
+  
 }

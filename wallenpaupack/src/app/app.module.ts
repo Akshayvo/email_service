@@ -16,7 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TablesComponent } from './tables/tables.component';
 import { ErrorComponent } from './error/error.component';
 import { LocationComponent } from './location/location.component';
-import { StorageTipsComponent } from './storage-tips/storage-tips.component';
+import { TruckRentalComponent } from './truck-rental/truck-rental.component'
 import { SafePipe } from './safe.pipe';
 import { UnitSizerComponent } from './unit-sizer/unit-sizer.component';
 import { ReserveUnitComponent } from './reserve-unit/reserve-unit.component';
@@ -79,7 +79,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     TablesComponent,
     ErrorComponent,
     LocationComponent,
-    StorageTipsComponent,
+    TruckRentalComponent,
     SafePipe,
     StorageUnitComponent,
     UnitSizerComponent,

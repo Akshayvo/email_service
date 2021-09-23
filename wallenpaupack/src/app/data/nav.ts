@@ -42,11 +42,11 @@ export const navLinks = [
         path: '/pay-rent',
         type: 'link'
     },
-    // {
-    //     label: 'Storage Tips',
-    //     path: `${environment.locationName}/storage-tips`,
-    //     type: 'link'
-    // },
+    {
+        label: 'Free* Truck Rental',
+        path: `${environment.locationName}/truck-rental`,
+        type: 'link'
+    },
     {
         label: 'Contact Us',
         path: '/contact-us',

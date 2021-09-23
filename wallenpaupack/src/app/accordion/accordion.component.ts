@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { storageTips } from '../data/storage-tips';
+// import { storageTips } from '../data/truck-rental';
 
 @Component({
   selector: 'app-accordion',
@@ -17,6 +17,6 @@ export class AccordionComponent implements OnInit {
   }
 
   public fetchStorageTipAccordion() {
-    this.storageTipAccordion = storageTips;
+    // this.storageTipAccordion = storageTips;
   }
 }

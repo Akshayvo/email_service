@@ -1,15 +1,15 @@
-export const storagePoints = [
-    { data: 'Use smaller boxes for books and heavy items.' },
-    { data: 'Use larger boxes for lighter items.' },
-    { data: 'Reinforce the bottom of boxes with at least one strip of packing tape.' },
-    { data: 'Pack boxes firmly to prevent the contents from shifting.' },
-    { data: 'Seal boxes tightly with wide packing tape.' },
-    { data: 'Pack records and CDs vertically! Don\'t stack them flat, they will warp or bend!' },
-    { data: 'Place heavier items in the bottom of the box and lighter items on top.' },
+export const truckPoints = [
+    
+    { data: 'Our truck is used only for local moves within a 25 mile radius of the rental facility.' },
+    { data: 'The person who will be driving the truck needs to provide a current driver’s license.' },
+    { data: 'The person who will be driving the truck needs to provide current proof of insurance in their name. We cannot accept an insurance card in someone else’s name.' },
+    { data: 'We need to run a pre-authorization for $500.00 on a visa or Mastercard. This is not actually charged to your card, it is pre-authorization to charge the card in the event that you damage our truck. (The card must have $500.00 available at the time of the pre-authorization.)' },
+    { data: 'You must replace whatever gas you use before returning the truck, or pay a refueling charge.' },
+
 ];
 
 
-export const storageTips = [
+export const truckRental = [
     {
         id: '1',
         label: 'Furniture & Appliances',

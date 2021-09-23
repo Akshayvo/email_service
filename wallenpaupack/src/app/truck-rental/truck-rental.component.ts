@@ -1,27 +1,27 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { storagePoints, storageTips } from '../data/storage-tips';
+import { truckPoints, truckRental } from '../data/truck-rental';
 import { Title, Meta } from '@angular/platform-browser';
 import { WINDOW } from '@ng-toolkit/universal';
 import { CanonicalService } from '../services/canonical.service';
-import { ogStorageTipsPage, twitterStorageTipsPage } from '../data/script';
-import { storageTipsTitle, storageTipsContent } from '../data/title';
+import { ogTruckRentalPage, twitterTruckRentalPage } from '../data/script';
+import { truckRentalTitle, truckRentalContent } from '../data/title';
 
 @Component({
-  selector: 'app-storage-tips',
-  templateUrl: './storage-tips.component.html',
-  styleUrls: ['./storage-tips.component.scss']
+  selector: 'app-truck-rental',
+  templateUrl: './truck-rental.component.html',
+  styleUrls: ['./truck-rental.component.scss']
 })
 
 
-export class StorageTipsComponent implements OnInit {
-  storagePoints: any;
-  storageTips: any;
+export class TruckRentalComponent implements OnInit {
+  truckPoints: any;
+  truckRental: any;
   currentActive: any = 'Storage Tips';
   breadcrumbActive: any = 'Storage Tips';
   og: any;
   twitter: any;
-  storageTipsTitle: string;
-  storageTipsContent: string;
+  truckRentalTitle: string;
+  truckRentalContent: string;
 
   constructor(
     @Inject(WINDOW) private window: Window,
@@ -48,36 +48,36 @@ export class StorageTipsComponent implements OnInit {
       });
     this.meta.addTag({
       name: 'description',
-      content: `${this.storageTipsContent}`
+      content: `${this.truckRentalContent}`
     });
-    this.titleService.setTitle(`${this.storageTipsTitle}`);
+    this.titleService.setTitle(`${this.truckRentalTitle}`);
   }
 
   ngOnInit() {
-    this.fetchstoragePoints();
-    this.fetchstorageTips();
+    this.fetchtruckPoints();
+    this.fetchTruckRental();
     window.scrollTo(0, 0);
   }
 
   public fetchOg() {
-    this.og = ogStorageTipsPage;
+    this.og = ogTruckRentalPage;
 }
 
 public fetchTwitter() {
-    this.twitter = twitterStorageTipsPage;
+    this.twitter = twitterTruckRentalPage;
 }
 
 public fetchMetaData() {
-  this.storageTipsTitle = storageTipsTitle;
-  this.storageTipsContent = storageTipsContent;
+  this.truckRentalTitle = truckRentalTitle;
+  this.truckRentalContent = truckRentalContent;
 }
 
 
-  public fetchstoragePoints() {
-    this.storagePoints = storagePoints;
+  public fetchtruckPoints() {
+    this.truckPoints = truckPoints;
   }
 
-  public fetchstorageTips() {
-    this.storageTips = storageTips;
+  public fetchTruckRental() {
+    this.truckRental = truckRental;
   }
 }

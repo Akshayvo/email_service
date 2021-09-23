@@ -1,9 +1,9 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: 'Boat and Vehicle Storage',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/garage.svg',
-        alt: 'Icon art displaying boat and motorcycle'
+        label: '4 Convenient Locations',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
+        alt: 'Icon art displaying a location pin'
     },
     {
         label: 'Online Reservation & Bill Pay',
@@ -16,9 +16,9 @@ export const featuresHead = [
         alt: 'Icon of thermometer indicating climate-controlled units'
     },
     {
-        label: 'Affordable Self Storage Rates',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
-        alt: 'Icon of a hand holding money'
+        label: 'Stellar Customer Service',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/support.svg',
+        alt: 'Customer Service Representative Icon'
     },
 ];
 
@@ -162,7 +162,7 @@ export const location6FeaturesHead = [
 
 export const serviceOffered = [
     {
-        p: `Wallenpaupack Self Storage provides quality self storage and vehicle parking services in the Wallenpaupack Lake region with our 4 well-lit, well-maintained self storage facilities. Our facilities have a wide range of self storage unit sizes in both regular unconditioned and climate controlled varieties. We are a locally owned and operated business that understands the value of building long-lasting relationships with our customers by providing amazing customer service at affordable prices. `,
+        p: `Wallenpaupack Self Storage provides quality self storage and vehicle storage in the Wallenpaupack Lake region with our 4 well maintained self storage facilities. Our facilities have a wide range of self storage unit sizes, including climate controlled units. Check out our current availability, then rent your unit online, or give our friendly team a call!`,
     },
     {
         p: `Each of our 4 locations is conveniently located and comes with all of the modern amenities to make your next storage project a convenient and affordable one. Start by checking out our availability and rates at the location nearest you. Once you find that perfect unit for your home, business, or worksite, just fill out our form, pay your first month’s charges, and sign your lease. That’s it! You now access to your self storage unit or parking space, and your account has been created for 24-hour payments.`,

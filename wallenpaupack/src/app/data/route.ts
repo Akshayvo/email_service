@@ -10,7 +10,7 @@ import { AboutUsComponent } from "../about-us/about-us.component";
 import { DirectionsComponent } from "../directions/directions.component";
 import { AppResolver } from "../api-bundle/resolver/app.resolver";
 import { ErrorHandlerComponent } from "../error-handler/error-handler.component";
-import { StorageTipsComponent } from "../storage-tips/storage-tips.component";
+import { TruckRentalComponent } from "../truck-rental/truck-rental.component";
 import { LoginComponent } from "../api-bundle/login/login.component";
 import { ForgotPasswordComponent } from "../api-bundle/forgot-password/forgot-password.component";
 import { ChangePasswordComponent } from "../api-bundle/change-password/change-password.component";
@@ -620,8 +620,8 @@ export const apiRoutes = [
  
 
   {
-    path: `${environment.locationName}/storage-tips`,
-    component: StorageTipsComponent,
+    path: `${environment.locationName}/truck-rental`,
+    component: TruckRentalComponent,
   },
   { path: "contact-us", component: ContactComponent },
   { path: "contact-greentown", component: ContactUsComponent },
@@ -629,7 +629,7 @@ export const apiRoutes = [
   { path: "contact-hawley", component: ContactUsComponent },
   { path: "contact-lakeville", component: ContactUsComponent },
   { path: "**", component: ErrorComponent },
-  { path: "storage-tips", component: StorageTipsComponent },
+  { path: "truck-rental", component: TruckRentalComponent },
 ];
 
 export const iFrameRoutes = [
@@ -657,7 +657,7 @@ export const iFrameRoutes = [
   { path: "pay-rent-belforest", component: PayRentMiddletownComponent },
   { path: "pay-rent-fairhope", component: PayRentMontgomeryComponent },
   { path: "pay-rent-robertsdale", component: PayRentMiddletownComponent },
-  { path: "storage-tips", component: StorageTipsComponent },
+  { path: "truck-rental", component: TruckRentalComponent },
   { path: "contact-us", component: ContactComponent },
   { path: "**", component: ErrorComponent },
 ];

@@ -1,6 +1,6 @@
 import { environment } from '../../environments/environment';
 import { homePageContent, homePageTitle, payRentPageContent,
-  payRentPageTitle, storageTipsContent, storageTipsTitle,
+  payRentPageTitle, truckRentalContent, truckRentalTitle,
 contactPageContent, contactPageTitle,
 location1PageContent, location2PageTitle,
 location2PageContent, location1PageTitle,
@@ -1018,14 +1018,14 @@ export const twitterPayRentPageLocation4 = [
 
 
 
-export const ogStorageTipsPage = [
+export const ogTruckRentalPage = [
   {
     property: `og:title`,
-    content: storageTipsTitle
+    content: truckRentalTitle
   },
   {
     property: `og:description`,
-    content: storageTipsContent
+    content: truckRentalContent
   },
   {
     property: `og:type`,
@@ -1037,7 +1037,7 @@ export const ogStorageTipsPage = [
   },
   {
     property: `og:url`,
-    content: `${environment.websiteUrl}/storage-tips`
+    content: `${environment.websiteUrl}/truck-rental`
   },
   {
     property: `og:image`,
@@ -1045,14 +1045,14 @@ export const ogStorageTipsPage = [
   },
 ];
 
-export const twitterStorageTipsPage = [
+export const twitterTruckRentalPage = [
   {
     name: `twitter:title`,
-    content: `@${storageTipsTitle}`
+    content: `@${truckRentalTitle}`
   },
   {
     name: `twitter:description`,
-    content: storageTipsContent
+    content: truckRentalContent
   },
   {
     name: `twitter:site`,

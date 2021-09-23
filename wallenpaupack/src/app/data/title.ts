@@ -25,8 +25,8 @@ export const reservePageContent = ``;
 export const payRentPageTitle = `Pay Rent | Wallenpaupack Self Storage`;
 export const payRentPageContent = `Select your location from below, and follow the simple instructions to log into your account! Pay your bill online 24-hours a day!`;
 
-export const storageTipsTitle = `Storage Tips | Wallenpaupack Self Storage`;
-export const storageTipsContent = `Check out these self storage facility tips and save yourself some hassle when preparing for a self storage project!`;
+export const truckRentalTitle = `Free* Truck Rental`;
+export const truckRentalContent = `Our terms for the free truck rental are pretty simple. Click to learn how to get your free truck rental when you rent at Wallenpaupack Self Storage`;
 
 export const unitSizerPageTitle = ``;
 export const unitSizerPageContent = ``;
