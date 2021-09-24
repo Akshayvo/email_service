@@ -1,7 +1,7 @@
 export const faq = [
     {
         h2: `When can I move in?`,
-        paragraph: `Right away! Our online rental system allows for 24-hour service. As long as there is a unit available that meets your needs, you can sign up electronically and move in anytime. `
+        paragraph: `Right away! Our online rental system allows you to make reservations 24/7. We’ll give you a call to finalize the details and you can move right in. As long as there is a unit available that meets your needs, you can sign up electronically and move in when convenient. `
     },
     {
         h2: `Is this a long-term lease?`,
@@ -9,7 +9,7 @@ export const faq = [
     },
     {
         h2: `When is my rental fee due?`,
-        paragraph: `Your rent is due on the first (1st) day of the month. If payment is not received by the end of the day on the 5th, a late fee of $10 is assessed and your unit will be overlocked.`
+        paragraph: `Your rent is due on the first (1st) day of the month. If payment is not received by the end of the day on the 5th, a late fee of $20 is assessed and your unit will be overlocked.`
     },
     {
         h2: `Will I receive a monthly bill?`,
@@ -17,11 +17,11 @@ export const faq = [
     },
     {
         h2: `What forms of payment do you accept?`,
-        paragraph: `We accept check, cash, and major credit / debit cards. You may mail your payment, pay via our website, or provide us a card number over the telephone. `
+        paragraph: `We accept check, money orders, and major credit / debit cards. You may mail your payment, pay via our website, in person, or provide us a card number over the telephone.`
     },
     {
         h2: `Is there a security deposit?`,
-        paragraph: `Yes, the required $25 security deposit will be returned to you when you notify us that you have moved out, and we verify the unit is empty and swept clean.`
+        paragraph: `No.  We do charge a $25 admin fee when you move in.`
     },
     {
         h2: `What may I store?`,
@@ -41,7 +41,7 @@ export const faq = [
     },
     {
         h2: `Does the facility assume any liability for the goods I store?`,
-        paragraph: `No, we recommend you check with your home or renter’s insurance agent. Adding stored goods to an existing policy is usually inexpensive, or your existing insurance may already include coverage. Otherwise, we offer affordable policies as well, please ask our manager for details.`
+        paragraph: `No, but we do require that you maintain coverage for your stored property. We recommend you check with your home or renter’s insurance agent. Adding stored goods to an existing policy is usually inexpensive, or your existing insurance may already include coverage. Otherwise, we offer affordable policies as well, please ask our manager for details.`
     },
     {
         h2: `Are surveillance cameras monitored?`,
