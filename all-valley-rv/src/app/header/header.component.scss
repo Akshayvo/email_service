@@ -9,6 +9,11 @@ a {
   padding-left: 16px;
 }
 
+.logo{
+  position: absolute;
+  top: 2px;
+}
+
 .iconColor {
   color: #fff;
 }
@@ -102,6 +107,12 @@ a {
   .custom-padding {
     padding: 0;
   }
+  
+  .logo{
+    position: relative;
+    width: auto;
+    height: 80px;
+  }
 }
 
 
@@ -111,5 +122,19 @@ a {
     height: 200px;
     overflow-y: scroll;
   }
+
+  .logo{
+    position: relative;
+    width: auto;
+    height: 80px;
+  }
   
+}
+
+@media only screen and (max-width: 500px){
+  .logo{
+    position: relative;
+    width: auto;
+    height: 80px;
+  }
 }
