@@ -40,12 +40,13 @@
 .jumbotron {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center ;
   padding: 0;
   height: 80vh;
   color: $white;
   overflow: hidden;
   border-radius: 0;
+  
 }
 
 .home-map {
@@ -136,6 +137,11 @@
   }
 }
 
+// @media only screen and (max-width: 1200px) and (max-height: 1366px){
+//   .jumbotron{
+//     background: pink;
+//   }
+// }
 
 @media only screen and (min-width: 1200px) and (max-height: 750px) and (min-height: 640px) {
   .disp {
@@ -246,6 +252,9 @@
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .jumbotron{
+    background-position: right center;
+  }
   .jumbotorn-skew-text {
     width: 444px;
 
@@ -401,6 +410,12 @@
   }
 }
 
+@media only screen and (max-width: 991px) and (min-width: 768px) and (max-height:1366px) and (min-height:701px){
+  .jumbotron{
+    background-position: right center; 
+    // background-size: cover;
+  }
+} 
 @media only screen and (max-width: 991px) and (min-width: 768px) and (max-height: 700px) and (min-height: 480px) {
   .jumbotron-top {
     height: 100vh;
