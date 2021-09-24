@@ -78,9 +78,9 @@
   }
 }
 
-.btn-primary{
-  color: black !important;
-}
+// .btn-primary{
+//   color: black !important;
+// }
 
 .home-link {
   a {
@@ -105,10 +105,11 @@
 .reserve-unit-form {
   h2 {
     font-size: 1.8rem;
-    color: #fff;
+    color: $black;
+    border-bottom: 2px solid $black;
   }
   label {
-    color: #fff;
+    color: $black;
   }
 }
 
@@ -138,7 +139,7 @@ table {
 }
 
 .loader {
-  border: 3px solid #f3f3f3;
+  border: 3px solid $black;
   border-top: 3px solid $secondary;
   border-radius: 50%;
   width: 80px;

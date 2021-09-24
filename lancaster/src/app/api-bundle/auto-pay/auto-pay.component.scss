@@ -5,13 +5,13 @@
   align-items: baseline;
 }
 .successmsg {
-  color: white;
+  color: green;
 }
 .pb-1 {
-  color: white;
+  color: $black;
 }
 .pt-3 {
-  color: white;
+  color: $black;
 }
 
 .display-expiration-date {
@@ -60,7 +60,7 @@ table {
 
 .payRent {
   h2 {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $black;
   }
 }
 
@@ -96,7 +96,7 @@ table {
 }
 
 .loader {
-  border: 2px solid #f3f3f3;
+  border: 2px solid $black;
   border-top: 2px solid $secondary;
   border-radius: 50%;
   width: 20px;
