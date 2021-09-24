@@ -4,12 +4,12 @@ export const loginDetail = [
     password: ` Tenant's Unit Number`,
     example: {
       code: `John Smith's Unit Number is D94`,
-      userName: "jsmith",
+      userName: "JSmith",
       password: "D94",
     },
     example1: {
       code: `John Smith's Unit Number Is 12`,
-      userName: "jsmith",
+      userName: "JSmith",
       password: "0012",
     },
   },
