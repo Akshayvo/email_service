@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   type: 0,  // { API: 0, iframe: 1 }
-  locationName: 'mississippi', // state/city  **Remeber to update locationName in sitemap.xml as well
+  locationName: 'arkansas', // state/city  **Remeber to update locationName in sitemap.xml as well
   signUpForAuotoPay: 1, // { Yes: 1, No: 0 }
   alternateType: { moveIn: true, reserve: true }, // { moveIn: true, reserve: true },
   military: true, // set true for Military and Driver's Details 

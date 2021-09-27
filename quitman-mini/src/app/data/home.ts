@@ -29,7 +29,7 @@ export const location1FeaturesHead = [
         alt: 'Icon art displaying a location pin'
     },
     {
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Bill Pay',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
         alt: 'Icon art displaying a screen with cursor'
     },
@@ -46,12 +46,12 @@ export const location1FeaturesHead = [
 ];
 export const location2FeaturesHead = [
     {
-        label: 'Boat and Vehicle Storage',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/garage.svg',
+        label: 'Conveniently Located',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying boat and motorcycle'
     },
     {
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Bill Pay',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
         alt: 'Icon art displaying a screen with cursor'
     },
@@ -73,10 +73,10 @@ export const aboutusALt = `a row of self storage unit doors with a single unit o
 
 export const serviceOffered = [
     {
-        p: `Quitman Mini Storage is Heber Springs hometown storage solution. Our two facilities are locally owned and operated, and we pride ourselves on providing the best value and highest quality service to our friends and neighbors.`,
+        p: `Quitman Mini Storage and Heber Springs Xtra Storage are your hometown storage solutions. Our two facilities are locally owned and operated, and we pride ourselves on providing the best value and highest quality service to our friends and neighbors.`,
     },
     {
-        p: `Quitman Mini Storage and Heber Springs Xtra Storage are conveniently located in Heber Springs, and both of our locations are outfitted with all of the amenities to make your self storage experience a fast and easy one. Each of our locations has an on-site manager ready to assist you with your rental and account management needs. Searching for boat, RV, or trailer storage? We’ve got you covered there, too! We also offer online rentals and an account management portal to make your experience even easier!`,
+        p: `Both of our locations are outfitted with all of the amenities to make your self storage experience a fast and easy one. Each of our locations has an on-site manager ready to assist you with your rental and account management needs. Searching for boat, RV, or trailer storage? We’ve got you covered there, too! We also offer online rentals and an account management portal to make your experience even easier!`,
     },
     {
         p: `Concerned about safety? Our facilities are well-lit, covered by security cameras, and our management team performs regular lot checks to ensure a sense of safety at all times. Between our competitive pricing, extra value, and our friendly customer service, you simply won’t find a better self storage deal than Quitman Mini Storage.`,
@@ -114,7 +114,7 @@ export const featuresList = [
 
 export const jumbotron = [
     {
-        h2: `Affordable Self Storage Units in Heber Springs , AR`,
+        h2: `Affordable Self Storage Units in Quitman and Heber Springs , AR`,
         blurb: `Quitman Mini Storage serves  and the surrounding communities with a variety of well-maintained and affordable self storage units for all of your storage needs.`,
     }
 ];

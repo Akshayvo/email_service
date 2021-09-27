@@ -2,7 +2,7 @@ export const contactMainOffice = [
     {
         id: 1,
         label: 'Mailing Address: ',
-        data: 'P.O. Box 477 Heber Springs, Arkansas, 72543',
+        data: 'P.O. Box 477 Quitman, Arkansas, 72131',
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: ''
     },
@@ -21,13 +21,13 @@ export const contactMainOffice = [
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:5015893000'
     },
-    {
-        id: 4,
-        label: 'Phone: ',
-        data: '(509) 293-1800',
-        class: 'fas fa-phone mr-2 iconColor',
-        redirect: 'tel:5092931800'
-    },
+    // {
+    //     id: 4,
+    //     label: 'Phone: ',
+    //     data: '(509) 293-1800',
+    //     class: 'fas fa-phone mr-2 iconColor',
+    //     redirect: 'tel:5092931800'
+    // },
 ];
 
 export const hoursMainOffice = [
@@ -84,7 +84,7 @@ export const contactsLocation1 = [
     {
         id: 2,
         label: 'Mailing Address: ',
-        data: '3609 32nd St SE, Kentwood, MI 49512',
+        data: 'P.O. Box 477 Quitman, Arkansas, 72131',
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'https://goo.gl/maps/Aey9AuYbspcu5HgC9'
     },

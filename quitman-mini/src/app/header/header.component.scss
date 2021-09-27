@@ -209,7 +209,10 @@ display:none;
   }
 
   @media screen and (max-width: 460px) {
-
+    .contact-details{
+      display: block;
+    
+    }
     #site-header {
       position: relative;
       height: auto;
@@ -219,6 +222,18 @@ display:none;
       z-index: 100;
       transition: all .3s ease;
       box-shadow: 0 1px 25px rgba(0,0,0, .1);
+
+      .payment-button{
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        left: 270px;
+        top:30px;
+      }
+
+      .payment-button a{
+        font-size:10px;
+      }
     }
     #site-header.hide {
       top:-101px;
@@ -233,7 +248,34 @@ display:none;
     #nav-header.customClass {
       top: -101px;
     }
+    .navbar-brand h1{
+      font-size: 25px;
+    }
     
+  }
+
+  @media screen and (max-width: 425px) and (min-width:376px) {
+    #site-header {
+      .payment-button{
+        position: absolute;
+        left: 320px;
+        top:30px;
+      }
+  }
+}
+
+  @media screen and (max-width: 320px) {
+    #site-header {
+    .payment-button{
+      position: absolute;
+      left: 240px;
+      top:30px;
+      
+    }
+  }
+    .navbar-brand h1{
+      font-size: 20px;
+    }
   }
 
   @media screen and (max-height: 476px) {

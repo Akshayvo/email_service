@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row">          
         <div class="col-lg-5">
-          <iframe src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25983.205859785743!2d-92.06034503190946!3d35.50673273504774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d246de8c1ceae5%3A0x8c2ed7868cc4524a!2sHeber%20Springs%2C%20AR%2072543!5e0!3m2!1sen!2sus!4v1630438925524!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="col-lg-4  pt-3">
-          <h2>location heading1</h2>
+          <h2>{{heading2}}</h2>
           <!-- <p> -->
             <div *ngFor="let contact of contactsBrookside" class="contact-label">
                 <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
@@ -18,8 +18,8 @@
               <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
             </div>
           <!-- </p> -->
-          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/location/silverhill/storage-units']" role="button">View Rates</a>                
-          <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/silverhill/reserve-unit']" role="button"> Reserve Unit</a>                                  
+          <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/arkansas/heber-springs/storage-units']" role="button">View Rates</a>                
+          <!-- <a class="btn btn-primary p-2 ml-0" [routerLink]="['/location/silverhill/reserve-unit']" role="button"> Reserve Unit</a>                                   -->
         </div>
         <div class="col-lg-3 partition-border contact-hours pt-3">
             <h3>Facility Hours:</h3>
@@ -40,10 +40,11 @@
       <div class="container">
         <div class="row">          
           <div class="col-lg-5">
-            <iframe src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.984106436852!2d-92.22430108445698!3d35.380850180265476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d2689341ab9923%3A0xa0511eb1267514f8!2sQuitman%20Mini%20Storage!5e0!3m2!1sen!2sus!4v1630440151549!5m2!1sen!2sus
+            " width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="col-lg-4 pt-3">
-            <h2>location heading2</h2>
+            <h2>{{heading1}}</h2>
             <div *ngFor="let contact of contactsAndrews" class="contact-label pt-2">
               <div><h3><strong>{{contact.label}}</strong></h3></div>&nbsp;&nbsp;
             <div class="contact-links" *ngIf="contact.label === 'Address: ' || contact?.label === 'Email: ' || contact?.label === 'Phone: ' else other_content">
@@ -53,8 +54,8 @@
             </div>
             <ng-template #other_content>&nbsp;<h3>{{contact.data}}</h3></ng-template><br>
           </div>
-            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/mississippi/quitman-mini/storage-units']" role="button">View Rates</a>                
-            <a class="btn btn-primary p-2 ml-0" [routerLink]="['/mississippi/quitman-mini/reserve-unit']" role="button"> Reserve Unit</a>                                  
+            <a class="btn btn-outline-primary p-2 ml-0" [routerLink]="['/arkansas/quitman-mini/storage-units']" role="button">View Rates</a>                
+            <!-- <a class="btn btn-primary p-2 ml-0" [routerLink]="['/mississippi/quitman-mini/reserve-unit']" role="button"> Reserve Unit</a>                                   -->
           </div>
           <div class="col-lg-3 partition-border contact-hours pt-3">
               <h3>Facility Hours:</h3>
@@ -70,7 +71,7 @@
     <!--Contact chester-andrews-lane  -  Ends Here-->
 
       <!--Contact Montgomery Start Here-->
-  <div class="pb-5 pt-5 bg-light">    
+  <!-- <div class="pb-5 pt-5 bg-light">    
     <div class="container">
       <div class="row">          
         <div class="col-lg-5">
@@ -100,11 +101,11 @@
         </div>
       </div>
     </div>      
-  </div>
+  </div> -->
   <!--Contact Montgomery -  Ends Here-->
 
     <!--Contact Middletown Ends Here-->
-    <div class="pb-5 pt-5 ">    
+    <!-- <div class="pb-5 pt-5 ">    
       <div class="container">
         <div class="row">          
           <div class="col-lg-5">
@@ -134,6 +135,6 @@
           </div>
         </div>
       </div>      
-    </div>
+    </div> -->
     <!--Contact Middletown -  Ends Here-->
   

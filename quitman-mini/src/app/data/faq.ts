@@ -9,11 +9,11 @@ export const faq = [
     },
     {
         h2: `When is my rental fee due?`,
-        paragraph: `Your rent is due on the first (1st) day of the month. If payment is not received by the end of the day on the 5th, a late fee of $10 is assessed and your unit will be overlocked.`
+        paragraph: `Your rent is due on the date of the month you initially rented your unit. If payment is not received by the end of the day on the 5th, a late fee of $10 is assessed and your unit will be overlocked.`
     },
     {
         h2: `Will I receive a monthly bill?`,
-        paragraph: `We do not send a monthly bill. We offer an automatic payment system using your credit or debit card. It is your responsibility to ensure that the payment information on file is current.`
+        paragraph: `We send out an invoice 2-3 days before your rent is due. We offer an automatic payment system using your credit or debit card. It is your responsibility to ensure that the payment information on file is current.`
     },
     {
         h2: `What forms of payment do you accept?`,
@@ -21,7 +21,7 @@ export const faq = [
     },
     {
         h2: `Is there a security deposit?`,
-        paragraph: `Yes, the required $25 security deposit will be returned to you when you notify us that you have moved out, and we verify the unit is empty and swept clean.`
+        paragraph: `There is no security deposit.`
     },
     {
         h2: `What may I store?`,
@@ -41,7 +41,7 @@ export const faq = [
     },
     {
         h2: `Does the facility assume any liability for the goods I store?`,
-        paragraph: `No, we recommend you check with your home or renter’s insurance agent. Adding stored goods to an existing policy is usually inexpensive, or your existing insurance may already include coverage. Otherwise, we offer affordable policies as well, please ask our manager for details.`
+        paragraph: `No, we recommend you check with your home or renter’s insurance agent.`
     },
     {
         h2: `Are surveillance cameras monitored?`,
@@ -57,7 +57,7 @@ export const faq = [
         paragraph: `Unused rent is not refunded. We rent in one month increments and do not offer refunds for partial months.`
     },{
         h2: `What are the office hours?`,
-        paragraph: `8am – 6pm Monday through Friday.  8am – 2pm on Saturdays. Many of our facilities do not have an office onsite, but we are only a phone call away.`
+        paragraph: `9:00AM – 5:00PM Monday through Friday. 9:00AM – 2:00PM on Saturdays and Sundays. Many of our facilities do not have an office onsite, but we are only a phone call away.`
     },{
         h2: `What happens if I lose the key to my storage unit?`,
         paragraph: `You hold the only key to your storage unit. However, if you should misplace it, we have procedures in place to help you access your unit, please contact our manager.`

@@ -102,9 +102,9 @@ export const headingLocation1 = ``;
 
 export const headingLocation2 = ``;
 
-export const headingReservePageLocation1 = `Ready to reserve your self storage unit at our Rebel Mini Storage?`;
+export const headingReservePageLocation1 = `Ready to rent your self storage unit? Fill out the form below!`;
 
-export const headingReservePageLocation2 = `Ready to reserve your self storage unit at our Secure Storage?`;
+export const headingReservePageLocation2 = `Ready to rent your self storage unit? Fill out the form below!`;
 
 export const heading1 = `Quitman Mini Storage`;
 

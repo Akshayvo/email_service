@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { contactsLocation1, hoursLocation1, contactsLocation2, hoursLocation2 } from '../data/contact';
+import { heading1,heading2 } from '../data/location';
 
 @Component({
   selector: 'app-list-of-facility',
@@ -16,12 +17,14 @@ export class ListOfFacilityComponent implements OnInit {
   hoursAndrews: any;
   hoursMontgomery: any;
   hoursMiddletown: any;
-
+  heading1:any;
+  heading2:any;
   constructor() { }
 
   ngOnInit() {
     this.fetchContactBrookside();
     this.fetchHoursBrookside();
+    this.fetchHeading();
   }
 
   public fetchContactBrookside() {
@@ -32,6 +35,11 @@ export class ListOfFacilityComponent implements OnInit {
   public fetchHoursBrookside() {
     this.hoursBrookside = hoursLocation2;
     this.hoursAndrews = hoursLocation1;      
+  }
+
+  public fetchHeading(){
+    this.heading1=heading1;
+    this.heading2=heading2;
   }
 
 }
