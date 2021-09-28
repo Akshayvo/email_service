@@ -1,8 +1,6 @@
 export const viewrates = [
     {
-        p: `We offer many amenities to make your storage experience a breeze! Our online reservations and bill
-        pay are just a few that put the customer in the driver's seat. Reserve your unit and pay your rent online
-        24/7 regardless of what's going on in your busy schedule!`,
+        p: `We offer many amenities to make your storage experience a breeze! Our online bill pay is just one of the conveniences that put the customer in the driver's seat. Pay your rent online 24/7 regardless of what's going on in your busy schedule!`,
     },
     {
         p: `Security STORAGE offers concrete driveways and drive-up indoor units to keep your vehicles clean as
