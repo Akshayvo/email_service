@@ -22,11 +22,11 @@ export const rates = [
     },
     {
         td1: `Up to 34'`,
-        td2: `$105/month`
+        td2: `$105/month to $115/month`
     },
     {
         td1: `Up to 42'`,
-        td2: `$125/month`
+        td2: `$125/month to $135/month`
     }
 ];
 
