@@ -46,40 +46,40 @@ export class PayRentComponent implements OnInit {
     });
     this.canonical.create();
     if (this.router.url.includes('evanston-ave')) {
-      this.name = ' Evanston Ave Location';
+      this.name = ' Evanston Ave ';
   }
     else if (this.router.url.includes('howard-city')) {
-      this.name = ' Howard City Location';
+      this.name = ' Howard City ';
   }
   else if (this.router.url.includes('ionia')) {
-      this.name = ' Ionia Location';
+      this.name = ' Ionia ';
   }
   else if (this.router.url.includes('alpine')) {
-      this.name = ' Alpine Location';
+      this.name = ' Alpine ';
   }
    else if (this.router.url.includes('red-barn')) {
-    this.name = ' Red Barn Location';
+    this.name = ' Red Barn ';
   } else if (this.router.url.includes('wayland-westside')) {
-    this.name = ' Wayland Westside street Location';
+    this.name = ' Wayland Westside street ';
   } else if (this.router.url.includes('wayland-mill')) {
-    this.name = ' Wayland mill Location';
+    this.name = ' Wayland mill ';
   } else if (this.router.url.includes('wayland-southside')) {
-    this.name = ' Wayland Southside Location';
+    this.name = ' Wayland Southside ';
   } 
   else if (this.router.url.includes('dutton')) {
-    this.name = ' Dutton Location';
+    this.name = ' Dutton ';
   } 
   else if (this.router.url.includes('m45')) {
-    this.name = ' M-45 Southside Location';
+    this.name = ' M-45 Southside ';
   } 
   else if (this.router.url.includes('otsego')) {
-    this.name = ' Otsego Location';
+    this.name = ' Otsego ';
   } 
   else if (this.router.url.includes('allendale')) {
-    this.name = ' Allendale Location';
+    this.name = ' Allendale ';
   } 
   // else if (this.router.url.includes('robertsdale')) {
-  //   this.name = 'Robertsdale Location';
+  //   this.name = 'Robertsdale ';
   // }
     if (!!localStorage.getItem('APIKey')) {
       this.dataSharingService.apiKey = localStorage.getItem('APIKey');
