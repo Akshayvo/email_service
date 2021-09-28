@@ -126,7 +126,7 @@
                 <div class="py-2 contact-links">
                   <div *ngFor="let hour of contactHomePage" [class.mb-2]="hour?.label === 'Billing Address: '">
                     {{hour.label}}<div  *ngIf="hour?.label === 'Billing Address: ' else other_content ">&nbsp;{{hour.data}}</div>
-                    <ng-template #other_content>&nbsp;<a [href]="contact?.redirect">{{hour.data}}</a></ng-template><br>
+                    <ng-template #other_content>&nbsp;<a [href]="hour?.redirect">{{hour.data}}</a></ng-template><br>
                   </div>
                   <div *ngFor="let hour of hoursDetails">
                     Office Hours<br><span *ngIf="hour?.id === 1 else other_content ">&nbsp;{{hour.data}}</span>
