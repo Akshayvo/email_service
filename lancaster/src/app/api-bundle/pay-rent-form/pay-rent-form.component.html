@@ -65,7 +65,7 @@
               &nbsp;
 
               <span *ngIf="showInput == true ">
-                <input type="number" name="radio-btn" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" [value]="otherValue" data-type="currency" placeholder="$1,000,000.00" (keyup)="onKeyUp($event)">
+                <input type="number" name="radio-btn" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" [value]="otherValue" data-type="currency" placeholder="$0.00" (keyup)="onKeyUp($event)">
                 <!-- <input type="number"  name="radio-btn" [value]="otherValue" (keyup)="onKeyUp($event)"> -->
               </span>
               </div>
