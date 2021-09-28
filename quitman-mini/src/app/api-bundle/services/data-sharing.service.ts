@@ -12,6 +12,7 @@ export class DataSharingService {
   //   loc1: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28464 
   //   loc2: "Mjg0NjQ6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O", //28464
   // };
+
   showMilitaryDetails: boolean;
   paymentSuccess: boolean;
   locationName: string;

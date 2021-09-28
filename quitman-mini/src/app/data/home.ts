@@ -1,12 +1,12 @@
 /* tslint:disable:max-line-length */
 export const featuresHead = [
     {
-        label: 'Boat and Vehicle Storage',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/garage.svg',
+        label: 'Conveniently Located',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/location.svg',
         alt: 'Icon art displaying boat and motorcycle'
     },
     {
-        label: 'Online Reservation & Bill Pay',
+        label: 'Online Bill Pay',
         data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/online.svg',
         alt: 'Icon art displaying a screen with cursor'
     },
