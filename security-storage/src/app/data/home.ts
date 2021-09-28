@@ -17,11 +17,11 @@ export const featuresList = [
     },
     {
         td1: 'Office Suites for Lease',
-        td2: 'Online Reservation',
+        td2: 'Online Bill Pay',
     },
     {
-        td1: 'Online Bill Pay',
-        td2: 'Stellar Customer Service'
+        td1: 'Stellar Customer Service',
+        // td2: 'Stellar Customer Service'
     },
 ];
 
