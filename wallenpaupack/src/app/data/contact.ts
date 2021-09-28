@@ -4,7 +4,7 @@ export const contactsHomePage = [
         label: 'Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://www.google.com/maps/d/u/0/embed?mid=166gB32ytd8oL3zqH1UsWhF9yMUGfkgoB'
+        redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
     },
     {
         id: 2,
@@ -57,7 +57,7 @@ export const contactsLocation1 = [
         label: 'Office Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/BaiCHofiQXixKvTEA'
+        redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
     },
     {
         id: 3,
@@ -132,7 +132,7 @@ export const contactsLocation2 = [
         label: 'Office Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/i6DvcvfgzR1ofdQbA'
+        redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
     },
     {
         id: 3,
@@ -179,7 +179,7 @@ export const contactsLocation3 = [
         label: 'Office Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/wih2fB6kHLeBPfvm8'
+        redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
     },
     {
         id: 3,
@@ -219,7 +219,7 @@ export const contactsLocation4 = [
         label: 'Facility Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/Zqd1W9yYMM5bES1R7'
+        redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
     },
     {
         id: 2,

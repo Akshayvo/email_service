@@ -7,7 +7,7 @@
           <div class="row">
             <div class="col-lg-12 px-0 contact-data">
               <span *ngFor="let contact of contacts" class="py-2 each-contact">
-                <span class="pl-3"><i class="{{contact.class}}"></i></span><span *ngIf="contact?.id === 2 || contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect" rel="noopener">{{contact.data}}</a></span>
+                <span class="pl-3"><i class="{{contact.class}}"></i></span><span *ngIf="contact?.id === 2 || contact?.id === 3 || contact?.id === 4 else other_content"><a [href]="contact?.redirect" rel="noopener" target="_blank">{{contact.data}}</a></span>
                 <ng-template #other_content >&nbsp;<a [href]="contact?.redirect" target="_blank" rel="noopener">{{contact.data}}</a></ng-template>
               </span>
             </div>
