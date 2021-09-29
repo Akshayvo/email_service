@@ -14,10 +14,17 @@ export const contactsHomePage = [
         class: 'fas fa-envelope-open mr-2 iconColor',
         redirect: 'mailto:andy@wallenpaupackselfstorage.com'
     },
+    // {
+    //     id: 3,
+    //     label: 'Phone: ',
+    //     data: '(251) 970-3168',
+    //     class: 'fas fa-phone mr-2 iconColor',
+    //     redirect: 'tel:2519703168'
+    // },
     {
         id: 3,
         label: 'Phone: ',
-        data: '(251) 970-3168',
+        data: '(570) 676-0851',
         class: 'fas fa-phone mr-2 iconColor',
         redirect: 'tel:2519703168'
     },

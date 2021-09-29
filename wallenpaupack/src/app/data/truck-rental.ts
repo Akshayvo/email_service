@@ -1,6 +1,6 @@
 export const truckPoints = [
     
-    { data: 'Our truck is used only for local moves within a 25 mile radius of the rental facility.' },
+    { data: 'Our truck is used only for local moves within a 20 mile radius of the rental facility.' },
     { data: 'The person who will be driving the truck needs to provide a current driver’s license.' },
     { data: 'The person who will be driving the truck needs to provide current proof of insurance in their name. We cannot accept an insurance card in someone else’s name.' },
     { data: 'We need to run a pre-authorization for $500.00 on a visa or Mastercard. This is not actually charged to your card, it is pre-authorization to charge the card in the event that you damage our truck. (The card must have $500.00 available at the time of the pre-authorization.)' },

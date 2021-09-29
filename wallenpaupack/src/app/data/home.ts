@@ -39,9 +39,12 @@ export const location1FeaturesHead = [
         alt: 'Customer Service Representative Icon'
     },
     {
-        label: 'Affordable Self Storage Rates',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
-        alt: 'Icon of a hand holding money'
+        // label: 'Affordable Self Storage Rates',
+        // data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        // alt: 'Icon of a hand holding money'
+        label: 'Secure Storage',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/lock.svg',
+        alt: 'Icon of a locked padlock'
     },
    
 ];
@@ -62,9 +65,12 @@ export const location2FeaturesHead = [
         alt: 'Customer Service Representative Icon'
     },
     {
-        label: 'Affordable Self Storage Rates',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
-        alt: 'Icon of a hand holding money'
+        // label: 'Affordable Self Storage Rates',
+        // data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        // alt: 'Icon of a hand holding money'
+        label: 'Boat and RV Storage',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/garage.svg',
+        alt: 'Icon art displaying boat and motorcycle'
     },
    
 ];
@@ -85,9 +91,12 @@ export const location3FeaturesHead = [
         alt: 'Customer Service Representative Icon'
     },
     {
-        label: 'Affordable Self Storage Rates',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
-        alt: 'Icon of a hand holding money'
+        // label: 'Affordable Self Storage Rates',
+        // data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        // alt: 'Icon of a hand holding money'
+        label: 'Secure Storage',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/lock.svg',
+        alt: 'Icon of a locked padlock'
     },
 ];
 
@@ -108,9 +117,12 @@ export const location4FeaturesHead = [
         alt: 'Customer Service Representative Icon'
     },
     {
-        label: 'Affordable Self Storage Rates',
-        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
-        alt: 'Icon of a hand holding money'
+        // label: 'Affordable Self Storage Rates',
+        // data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/hand.svg',
+        // alt: 'Icon of a hand holding money'
+        label: 'Climate Controlled',
+        data: 'https://s3.amazonaws.com/syrasoft-tenant-facing-websites/Syrasoft_Poweredby/icons/thermometer.svg',
+        alt: 'Icon of thermometer indicating climate-controlled units'
     },
 ];
 
@@ -164,15 +176,15 @@ export const serviceOffered = [
     {
         p: `Wallenpaupack Self Storage provides quality self storage and vehicle storage in the Wallenpaupack Lake region with our 4 well maintained self storage facilities. Our facilities have a wide range of self storage unit sizes, including climate controlled units. Check out our current availability, then rent your unit online, or give our friendly team a call!`,
     },
-    {
-        p: `Each of our 4 locations is conveniently located and comes with all of the modern amenities to make your next storage project a convenient and affordable one. Start by checking out our availability and rates at the location nearest you. Once you find that perfect unit for your home, business, or worksite, just fill out our form, pay your first month’s charges, and sign your lease. That’s it! You now access to your self storage unit or parking space, and your account has been created for 24-hour payments.`,
-    },
-    {
-        p: `We understand that convenience isn’t the only factor, which is why we’ve gone the extra mile to make our facilities feel safe and secure. All of our locations are well-lit, have security cameras positioned strategically around the grounds, and our management team performs regular lot-checks. `,
-    },
-    {
-        p: `So whether you’re a residential user preparing for a move, or if you’re a growing business that understands how much can be saved using self storage over commercial square footage, we’ve got a unit for you! Check out our current availability, then rent your unit online, or give our friendly team a call!`,
-    },
+    // {
+    //     p: `Each of our 4 locations is conveniently located and comes with all of the modern amenities to make your next storage project a convenient and affordable one. Start by checking out our availability and rates at the location nearest you. Once you find that perfect unit for your home, business, or worksite, just fill out our form, pay your first month’s charges, and sign your lease. That’s it! You now access to your self storage unit or parking space, and your account has been created for 24-hour payments.`,
+    // },
+    // {
+    //     p: `We understand that convenience isn’t the only factor, which is why we’ve gone the extra mile to make our facilities feel safe and secure. All of our locations are well-lit, have security cameras positioned strategically around the grounds, and our management team performs regular lot-checks. `,
+    // },
+    // {
+    //     p: `So whether you’re a residential user preparing for a move, or if you’re a growing business that understands how much can be saved using self storage over commercial square footage, we’ve got a unit for you! Check out our current availability, then rent your unit online, or give our friendly team a call!`,
+    // },
 ];
 
 export const featuresList = [

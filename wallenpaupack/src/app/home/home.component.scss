@@ -115,12 +115,21 @@
   height: 80vh;
 }
 
+// .jumbotron-top1 {
+//   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/100_1120.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 80vh;
+// }
+
 .jumbotron-top1 {
-  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/100_1120.jpg");
+  background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/webp/100_0366.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;}
+  height: 80vh;
+}
 
 .jumbotron-top2 {
   background: url("https://syrasoft-tenant-facing-websites.s3.us-east-1.amazonaws.com/Wallenpaupack/jpg/100_4399.jpg");
@@ -212,6 +221,11 @@
   display: block;
 }
 
+.special{
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .testimonial {
   background: $light;
   height: auto;
@@ -219,6 +233,7 @@
   h1 {
     font-size: 2rem;
   }
+
 
   .carousel-indicators {
     li {
