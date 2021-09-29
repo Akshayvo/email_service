@@ -6,17 +6,17 @@
 
 .confirmation-style {
   h3 {
-    color: white;
+    color: $black;
   }
 }
 
-.btn-primary{
-  color: black !important;
-}
+// .btn-primary{
+//   color: black !important;
+// }
 
 .tenant-info-style {
   h3 {
-    color: white;
+    color: black;
   }
 }
 
@@ -28,7 +28,7 @@ table {
     }
 
     tr:nth-child(odd) {
-      color: $white;
+      color: $black;
     }
 
     tr {
