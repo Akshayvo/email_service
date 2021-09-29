@@ -8,6 +8,7 @@ import { th } from '../../data/view-rates';
 import { Router } from '@angular/router';
 import { DataSharingService } from '../services/data-sharing.service';
 import { environment } from '../../../environments/environment';
+import { contactsHomePage } from '../../data/contact';
 
 
 @Component({
@@ -41,6 +42,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
   defaultTotalChargesAmount: number;
   defaultTotalTaxAmount: number;
   defaultClimateString = ' ';
+  contactDetails: any;
 
   showPaymentForMoveIn = false;
   showPaymentForReserve = false;
@@ -70,6 +72,7 @@ export class ViewRatesPageComponent implements OnInit, OnDestroy {
     this.fetchThData();
     this.dataSharingService.initMyNavLinks('viewRates', this.router.url);
     this.facilityLocation = this.dataSharingService.facilityLocation;
+    this.contactDetails = contactsHomePage;
   }
 
   public fetchThData() {

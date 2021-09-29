@@ -47,8 +47,15 @@
               <button class="btn  btn-primary" (click)="navigate('reserve-unit', lstUnitType )">Reserve</button>
           </div> -->
           <div class="py-1 buttons">
-              <button class=" btn btn-primary" (click)="navigate('move-in', lstUnitType)"> Move In</button>
-          </div>
+              <!-- <button class=" btn btn-primary" (click)="navigate('move-in', lstUnitType)"> Move In</button> -->
+
+
+              <!-- due to request this block is added case 27150 -->
+              <span class="contact-details pr-4" *ngFor="let contact of contactDetails">
+                <span class="contact-links" *ngIf="contact?.label === 'Phone: ' else other_content">
+              <a [href]="contact?.redirect" class=" btn btn-primary" target="{{(contact?.label === 'Address: ') ? '_blank' : '_self'}}" rel="noopener">&nbsp;Call for Availability</a></span>
+              </span>
+            </div>
         </div>
       </div>  
     </div>

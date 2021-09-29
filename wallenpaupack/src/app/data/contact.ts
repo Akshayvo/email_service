@@ -52,19 +52,26 @@ export const acessHoursHomepage = [
 ];
 
 export const contactsLocation1 = [
+    // {
+    //     id: 1,
+    //     label: 'Facility Address: ',
+    //     data: '116 Ehrgood Rd, Greentown, PA 18426',
+    //     class: 'fas fa-map-marker-alt mr-2 iconColor',
+    //     redirect: 'https://goo.gl/maps/qQ3uAvaGjHbfer5J9'
+    // },
     {
         id: 1,
-        label: 'Facility Address: ',
-        data: '116 Ehrgood Rd, Greentown, PA 18426',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/qQ3uAvaGjHbfer5J9'
-    },
-    {
-        id: 2,
         label: 'Office Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
+    },
+    {
+        id: 2,
+        label: 'Facility Address: ',
+        data: '116 Ehrgood Rd, Greentown, PA 18426',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/qQ3uAvaGjHbfer5J9'
     },
     {
         id: 3,
@@ -127,19 +134,26 @@ export const socialLinks = [
 
 
 export const contactsLocation2 = [
+    // {
+    //     id: 1,
+    //     label: 'Facility Address: ',
+    //     data: '80 Miller Rd, Lake Ariel, PA 18436',
+    //     class: 'fas fa-map-marker-alt mr-2 iconColor',
+    //     redirect: 'https://goo.gl/maps/Sk3d1U3orZAmZjcQ7'
+    // },
     {
         id: 1,
-        label: 'Facility Address: ',
-        data: '80 Miller Rd, Lake Ariel, PA 18436',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/Sk3d1U3orZAmZjcQ7'
-    },
-    {
-        id: 2,
         label: 'Office Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
+    },
+    {
+        id: 2,
+        label: 'Facility Address: ',
+        data: '80 Miller Rd, Lake Ariel, PA 18436',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/Sk3d1U3orZAmZjcQ7'
     },
     {
         id: 3,
@@ -174,19 +188,26 @@ export const hoursLocation2 = [
 ];
 
 export const contactsLocation3 = [
+    // {
+    //     id: 1,
+    //     label: 'Facility Address: ',
+    //     data: '54 Texas Palmyra Hwy, Hawley, PA 18428',
+    //     class: 'fas fa-map-marker-alt mr-2 iconColor',
+    //     redirect: 'https://goo.gl/maps/jnSFyA6ivmkt1LEE6'
+    // },
     {
         id: 1,
-        label: 'Facility Address: ',
-        data: '54 Texas Palmyra Hwy, Hawley, PA 18428',
-        class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/jnSFyA6ivmkt1LEE6'
-    },
-    {
-        id: 2,
         label: 'Office Address: ',
         data: '204 Purdytown Turnpike, Lakeville, PA 18438',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
         redirect: 'https://www.google.com/maps/place/Wallenpaupack+Self+Storage,+204+Purdytown+Turnpike,+Lakeville,+PA+18438,+United+States/@41.427774,-75.281754,15z/data=!4m2!3m1!1s0x89c4b9c615c3a081:0x4ab43978c9491515'
+    },
+    {
+        id: 2,
+        label: 'Facility Address: ',
+        data: '54 Texas Palmyra Hwy, Hawley, PA 18428',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/jnSFyA6ivmkt1LEE6'
     },
     {
         id: 3,
