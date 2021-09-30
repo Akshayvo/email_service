@@ -115,7 +115,7 @@
                    </div>
                  </div>
 
-                 <div class="col-lg-4">
+                 <div class="col-lg-4 ">
                      <div formArrayName="lstUnitTypes">
                          <h2 class="pb-3">Unit</h2>
                          <i><strong *ngIf="showMoveInDateError">Please fill out the correct move in date.</strong></i>
@@ -207,6 +207,10 @@
                             </span>
                     </div>
                 </div>
+                <div class='note'>
+                    <h3>Please Note:</h3>
+                    <p>Gate code provided after Completed Move in WILL NOT open the gate. Facility will issue gate code themselves.</p>
+                </div>
             </div>
          </div>
          <div [hidden]="" *ngIf="submitted && !this.reserveUnitForm.valid" class="alert alert-danger alert-dismissible fade show">
@@ -216,9 +220,9 @@
             </button>
         </div>
 
-            <div class="form-group text-right">
+            <div class="form-group text-right mt-2">
                 <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 mr-2 margin-bottom" (click)="navigate('/view-rates')">Previous</button>
-                <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12"  (click)="navigateToConfirmation('/view-rates/confirmation')">Next</button>
+                <button type="button" class="btn btn-primary col-lg-3 col-md-4 col-sm-12 "  (click)="navigateToConfirmation('/view-rates/confirmation')">Next</button>
             </div>
         </form>
 </div>
