@@ -1,0 +1,38 @@
+@import "../../styles.scss";
+
+
+.unit-sizer-container {
+  padding: 64px;
+  background-color: $light;
+  margin-bottom: 50px;
+
+  .single-block {
+    background-color: $white;
+  }
+
+  ul {
+    padding-inline-start: 17px;
+
+    li {
+      h2 {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1rem;
+      }
+    }
+  }
+}
+
+.height {
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .unit-sizer-container {
+    padding: 16px;
+  }
+
+  .col-sm-7 {
+    padding-left: 30px !important;
+  }
+}
