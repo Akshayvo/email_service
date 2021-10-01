@@ -82,7 +82,7 @@ export const nameLocation3 = `Self Storage of York - Lincoln`;
 // export const nameLocation6 = `Self Storage of York - Robertsdale`;
 
 
-export const location1 = `platte-ave`;
+export const location1 = `baltimore`;
 export const location2 = `marquis-ave`;
 export const location3 = `lincoln-ave`;
 // export const location4 = `belforest`;
@@ -90,7 +90,7 @@ export const location3 = `lincoln-ave`;
 // export const location6 = `robertsdale`;
 
 
-export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/platte-ave/storage-units`;
+export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/baltimore/storage-units`;
 export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/marquis-ave/storage-units`;
 export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/lincoln-ave/storage-units`;
 // export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/belforest/storage-units`;

@@ -148,7 +148,7 @@ public fetchTwitter() {
   }
 
   // public fetchLocationDetails() {
-  //   if (this.router.url.includes('platte-ave')) {
+  //   if (this.router.url.includes('baltimore')) {
   //     this.fetchContactDetailsLocation1();
   //   } else if (this.router.url.includes('marquis-ave')) {
   //     this.fetchContactDetailsLocation2();

@@ -66,7 +66,7 @@ export class PayRentComponent implements OnInit {
     });
     this.titleService.setTitle(`${this.payRentPageTitle}`);
 
-    //   if (this.router.url.includes('platte-ave')) {
+    //   if (this.router.url.includes('baltimore')) {
     //     this.name = ' Platte Ave';
     // } else if (this.router.url.includes('marquis-ave')) {
     //   this.name = ' Marquis';
@@ -96,7 +96,7 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchTwitter() {
-    // if (this.router.url.includes('platte-ave')) {
+    // if (this.router.url.includes('baltimore')) {
     //   this.twitter = twitterPayRentPageLocation1;
     // } else if (this.router.url.includes('marquis-ave')) {
     //   this.twitter = twitterPayRentPageLocation2;

@@ -8,6 +8,7 @@ export const environment = {
   cards: ['Visa', 'Master Card', 'Amex', 'Discover'],
   errorsMails: ['website.dev@codeparva.in'],
   senderEmail: 'errors@codeparva.in',
+  military: true, // set true for Military and Driver's Details 
   appId: 'Self Storage of York',
   facilityName: 'Self Storage of York',
   emailBaseUrl: 'https://emailsvc-ext.syrasoft.com/v1/email',

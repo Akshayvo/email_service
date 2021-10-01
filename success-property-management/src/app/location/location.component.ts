@@ -96,7 +96,7 @@ export class LocationComponent implements OnInit {
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
-      if (this.router.url.includes(`${environment.locationName}/platte-ave`)) {
+      if (this.router.url.includes(`${environment.locationName}/baltimore`)) {
             this.meta.addTag({
               name: 'description',
               content: `${this.location1PageContent}`
@@ -213,7 +213,7 @@ export class LocationComponent implements OnInit {
 
   
   public fetchOg() {
-    if (this.router.url.includes(`${environment.locationName}/platte-ave`)) {
+    if (this.router.url.includes(`${environment.locationName}/baltimore`)) {
       this.og = ogLocation1;
   } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
     this.og = ogLocation2;
@@ -230,7 +230,7 @@ export class LocationComponent implements OnInit {
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes(`${environment.locationName}/platte-ave`)) {
+    if (this.router.url.includes(`${environment.locationName}/baltimore`)) {
       this.twitter = twitterLocation1;
   } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
     this.twitter = twitterLocation2;
@@ -247,7 +247,7 @@ export class LocationComponent implements OnInit {
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/platte-ave`)) {
+    if (this.router.url.includes(`${environment.locationName}/baltimore`)) {
         this.fetchDetailsLocation1();
     } else if (this.router.url.includes(`${environment.locationName}/marquis-ave`)) {
       this.fetchDetailsLocation2();
@@ -264,7 +264,7 @@ export class LocationComponent implements OnInit {
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate([`${environment.locationName}/platte-ave/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/baltimore/reserve-unit`],
           );
   } else if ( this.locationId === 2 ) {
     this.router.navigate([`${environment.locationName}/marquis-ave/reserve-unit`],

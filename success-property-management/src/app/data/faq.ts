@@ -1,10 +1,10 @@
 export const faq = [
     {
         h2: `Do you have an office at every location? `,
-        paragraph: `Our home office is located at our platte-ave, AL storage site. At our other 5 locations customers have access to our convenient Self Check-in board. Simply locate a unit that fits your needs. Any unit without a lock is available for rent. Move in and Lock with required Disk Lock ,complete a small information card along with the unit number you have selected and place completed card in the drop box. Our office will contact you the next business day. Brochures are available at each location and show unit numbers along with the corresponding size. `
+        paragraph: `Our home office is located at our baltimore, AL storage site. At our other 5 locations customers have access to our convenient Self Check-in board. Simply locate a unit that fits your needs. Any unit without a lock is available for rent. Move in and Lock with required Disk Lock ,complete a small information card along with the unit number you have selected and place completed card in the drop box. Our office will contact you the next business day. Brochures are available at each location and show unit numbers along with the corresponding size. `
     },
     {
-        h2: `What if your platte-ave office is closed?`,
+        h2: `What if your baltimore office is closed?`,
         paragraph: `Simply follow the instructions at the Self Check-in board.  If you still have questions call our office 251-970-3168 M-F 8:30-5:00pm. If after hours please leave a message and all calls will be returned, along with weekend and holiday calls. `
     },
     {
@@ -17,7 +17,7 @@ export const faq = [
     },
     {
         h2: `What types of units do you offer? `,
-        paragraph: `Climate Control units (temperature controlled) inside building and are available at all sites, along with our standard units.  Indoor Vented (circulates air) and Executive Climate Control (Private Entry - carpet, lights ) units are offered at our platte-ave Office.`
+        paragraph: `Climate Control units (temperature controlled) inside building and are available at all sites, along with our standard units.  Indoor Vented (circulates air) and Executive Climate Control (Private Entry - carpet, lights ) units are offered at our baltimore Office.`
     },
     {
         h2: `Do you rent space month to month? `,

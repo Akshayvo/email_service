@@ -14,7 +14,7 @@ export const navLinks = [
             {
                 id: '1',
                 label: 'Baltimore St',
-                path: `${environment.locationName}/platte-ave`,
+                path: `${environment.locationName}/baltimore`,
               },
             // {
             //     id: '2',

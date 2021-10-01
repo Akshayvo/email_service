@@ -91,7 +91,7 @@ export const apiRoutes = [
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
     { path: 'contact-us', component: ContactUsComponent },
-    { path: `${environment.locationName}/platte-ave`,
+    { path: `${environment.locationName}/baltimore`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },

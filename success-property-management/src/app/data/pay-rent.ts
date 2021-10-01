@@ -63,7 +63,7 @@ export const tableDataContactPage = [
   {
     facility: 'Platte Ave',
     address: '1622 N Platte Ave York, NE 68467',
-    url: 'platte-ave'
+    url: 'baltimore'
   },
   {
     facility: 'Marquis Ave',
