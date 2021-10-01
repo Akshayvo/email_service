@@ -78,7 +78,7 @@ export const hoursLocation1 = [
 
 export const hoursLocation1AcessHours = [
     {
-        data: '24 Hours a Day 7 Days a Week'
+        data: '7 Days a Week 8:00AM to 4:00PM'
     },
 ];
 
