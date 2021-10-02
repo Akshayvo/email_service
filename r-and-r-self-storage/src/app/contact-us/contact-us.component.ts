@@ -103,7 +103,7 @@ export class ContactUsComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('foley')) {
+    if (this.router.url.includes('confederate')) {
       this.og = ogContactPageLocation1;
     } else if (this.router.url.includes('silverhill')) {
       this.og = ogContactPageLocation2;
@@ -124,7 +124,7 @@ public fetchMetaData() {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('foley')) {
+  if (this.router.url.includes('confederate')) {
     this.twitter = twitterContactPageLocation2;
   } else if (this.router.url.includes('silverhill')) {
     this.twitter = twitterContactPageLocation1;
@@ -171,7 +171,7 @@ public fetchTwitter() {
   // }
 
   public fetchLocationDetails() {
-    if (this.router.url.includes('foley')) {
+    if (this.router.url.includes('confederate')) {
       this.fetchContactDetailsLocation1();
     } else if (this.router.url.includes('silverhill')) {
       this.fetchContactDetailsLocation2();
@@ -187,7 +187,7 @@ public fetchTwitter() {
   }
 
   public fetchContactDetailsLocation1() {
-    this.heading = `Storage Plus of Baldwin County - Foley`;
+    this.heading = `Storage Plus of Baldwin County - confederate`;
     this.locationId = '1'
     this.contactDetails = contactsLocation1;
     this.hoursDetails = hoursLocation1;

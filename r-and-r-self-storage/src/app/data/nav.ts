@@ -14,7 +14,7 @@ export const navLinks = [
             {
                 id: '1',
                 label: 'Confederate Way Location',
-                path: `${environment.locationName}/foley`,
+                path: `${environment.locationName}/confederate`,
               },
             // {
             //     id: '2',

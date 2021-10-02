@@ -169,7 +169,7 @@ export class HomeComponent implements OnInit {
 
 
     public fetchContactDetailsLocation1() {
-      this.heading = `Storage Plus of Baldwin County - Foley`;
+      this.heading = `Storage Plus of Baldwin County - confederate`;
       this.contactDetails = contactsLocation1;
       this.hoursDetails = hoursLocation1;
     }

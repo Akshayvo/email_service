@@ -44,6 +44,12 @@ export const tabs = [
         path: './unit-sizer',
         active: false,
     },
+    {
+            id: '3',
+            name: 'Gallery',
+            path: './photos',
+            active: false,
+    },
     // {
     //     id: '3',
     //     name: 'Reserve Unit',
@@ -143,7 +149,7 @@ export const headingLocation6 = ``;
 
 
 
-export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in Foley`;
+export const headingReservePageLocation1 = `Ready to Reserve a Self Storage Unit in confederate`;
 
 export const headingReservePageLocation2 = `Ready to Reserve a Self Storage Unit in Silverhill`;
 
@@ -155,7 +161,7 @@ export const headingReservePageLocation5 = `Ready to Reserve a Self Storage Unit
 
 export const headingReservePageLocation6 = `Ready to Reserve a Self Storage Unit in Robertsdale`;
 
-export const heading1 = `Storage Plus of Baldwin County - Foley`;
+export const heading1 = `Confederate Way Location`;
 
 export const heading2 = `Storage Plus of Baldwin County - Silverhill`;
 

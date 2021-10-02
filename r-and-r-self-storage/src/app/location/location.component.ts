@@ -96,13 +96,13 @@ export class LocationComponent implements OnInit {
       if (this.activatedRoute.snapshot.url[1].path) {
         this.dataSharingService.facilityLocation = this.activatedRoute.snapshot.url[1].path;
       }
-      if (this.router.url.includes(`${environment.locationName}/foley`)) {
+      if (this.router.url.includes(`${environment.locationName}/confederate`)) {
             this.meta.addTag({
               name: 'description',
               content: `${this.location1PageContent}`
     });
     this.titleService.setTitle(`${this.location1PageTitle}`);
-            this.locationName = `Storage Plus of Baldwin County - Foley`;
+            this.locationName = ``;
             this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
             this.dataSharingService.locationName = this.locationName;
             this.script = Location1Script;
@@ -285,7 +285,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
 
   
   public fetchOg() {
-    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+    if (this.router.url.includes(`${environment.locationName}/confederate`)) {
       this.og = ogLocation1;
   } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
     this.og = ogLocation2;
@@ -301,7 +301,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
   }
 
   public fetchTwitter() {
-    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+    if (this.router.url.includes(`${environment.locationName}/confederate`)) {
       this.twitter = twitterLocation1;
   } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
     this.twitter = twitterLocation2;
@@ -317,7 +317,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
   }
 
   public isSomePage() {
-    if (this.router.url.includes(`${environment.locationName}/foley`)) {
+    if (this.router.url.includes(`${environment.locationName}/confederate`)) {
         this.fetchDetailsLocation1();
     } else if (this.router.url.includes(`${environment.locationName}/silverhill`)) {
       this.fetchDetailsLocation2();
@@ -334,7 +334,7 @@ this.titleService.setTitle(`${this.location6PageTitle}`);
 
  public navigateToReserve() {
   if ( this.locationId === 1 ) {
-    this.router.navigate([`${environment.locationName}/foley/reserve-unit`],
+    this.router.navigate([`${environment.locationName}/confederate/reserve-unit`],
           );
   } else if ( this.locationId === 2 ) {
     this.router.navigate([`${environment.locationName}/silverhill/reserve-unit`],

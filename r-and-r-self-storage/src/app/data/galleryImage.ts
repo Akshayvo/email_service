@@ -42,3 +42,63 @@ export const galleryHome = [
   //   alt: `a row of metal self storage units with gravel parking space in front of the building`
   // },
 ];
+
+
+export const galleryLocation1 = [
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `confederate-way-1`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `confederate-way-1-thumb`,
+    alt: ``
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `confederate-way-2`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `confederate-way-2-thumb`,
+    alt: ``
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `confederate-way-3`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `confederate-way-3-thumb`,
+    alt: ``
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `confederate-way-4`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `confederate-way-4-thumb`,
+    alt: ``
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `confederate-way-5`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `confederate-way-5-thumb`,
+    alt: ``
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `confederate-way-6`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `confederate-way-6-thumb`,
+    alt: ``
+  },
+  {
+    // tslint:disable-next-line: max-line-length
+    url: `confederate-way-7`,
+    // tslint:disable-next-line:max-line-length
+    thumb: `confederate-way-7-thumb`,
+    alt: ``
+  },
+  // {
+  //   // tslint:disable-next-line: max-line-length
+  //   url: `storage-plus-silverhill`,
+  //   // tslint:disable-next-line:max-line-length
+  //   thumb: `storage-plus-silverhill-thumb`,
+  //   alt: `a row of metal self storage units with gravel parking space in front of the building`
+  // },
+];

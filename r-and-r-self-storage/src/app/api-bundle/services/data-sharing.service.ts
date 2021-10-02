@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class DataSharingService {
 
   locationAPIKey = {
-    loc1: 'dzF0NFcwSjAqNU46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 14005 foley
+    loc1: 'Mjg0NjM6MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 14005 confederate
     loc2: 'dzJ0MFc3SjYqN046MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 20767 silverhill
     loc3: 'dzJ0MFc3SjYqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 20766 barnwell
     loc4: 'dzJ0N1c0SjUqNk46MjJ8JTg3ODc3JCg4PWJXMHNoZGQ5a2VvY15O', // 27456 belforest

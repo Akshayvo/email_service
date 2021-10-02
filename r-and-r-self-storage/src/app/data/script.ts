@@ -74,7 +74,7 @@ const emailIndex4 = contactsLocation4.findIndex(x => x.label === 'Email: ');
 const emailIndex5 = contactsLocation5.findIndex(x => x.label === 'Email: ');
 const emailIndex6 = contactsLocation6.findIndex(x => x.label === 'Email: ');
   
-export const nameLocation1 = `Storage Plus of Baldwin County - Foley`;
+export const nameLocation1 = `Confederate Way Location`;
 export const nameLocation2 = `Storage Plus of Baldwin County - Silverhill`;
 export const nameLocation3 = `Storage Plus of Baldwin County - Barnwell`;
 export const nameLocation4 = `Storage Plus of Baldwin County - Belforest`;
@@ -82,7 +82,7 @@ export const nameLocation5 = `Storage Plus of Baldwin County - Fairhope`;
 export const nameLocation6 = `Storage Plus of Baldwin County - Robertsdale`;
 
 
-export const location1 = `foley`;
+export const location1 = `confederate`;
 export const location2 = `silverhill`;
 export const location3 = `barnwell`;
 export const location4 = `belforest`;
@@ -90,7 +90,7 @@ export const location5 = `barnwell`;
 export const location6 = `robertsdale`;
 
 
-export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/foley/storage-units`;
+export const urlLocation1 = `${environment.websiteUrl}/${environment.locationName}/confederate/storage-units`;
 export const urlLocation2 = `${environment.websiteUrl}/${environment.locationName}/silverhill/storage-units`;
 export const urlLocation3 = `${environment.websiteUrl}/${environment.locationName}/barnwell/storage-units`;
 export const urlLocation4 = `${environment.websiteUrl}/${environment.locationName}/belforest/storage-units`;
@@ -117,7 +117,7 @@ export const description6 = `Our Robertsdale location has a number of unit sizes
                              storage need at great prices!  Our 24-hour access policy makes coming and going
                              on your schedule a breeze!`;
 
-export const maplocation1 = '';
+export const maplocation1 = 'https://goo.gl/maps/FTyUco3JxYGy4KKp9';
 export const maplocation2 = 'https://goo.gl/maps/FTweCN2UdexnsJB49';
 export const maplocation3 = 'https://goo.gl/maps/EPmskBQ9TgFTBXcb8';
 export const maplocation4 = 'https://goo.gl/maps/skmJTukq9K3xRFbS7';
@@ -127,10 +127,10 @@ export const maplocation6 = 'https://goo.gl/maps/kt1bhA6aHeRmjXsN7';
 
 export const addressLoaction1 = {
   '@type': 'PostalAddress',
-      'streetAddress': '17860 US-98',
-      'addressLocality': 'Foley',
-      'addressRegion': 'AL',
-      'postalCode': '36535',
+      'streetAddress': '68 Confederate Way',
+      'addressLocality': 'confederate',
+      'addressRegion': 'GA',
+      'postalCode': '30143',
       'addressCountry': 'United state'
 };
 

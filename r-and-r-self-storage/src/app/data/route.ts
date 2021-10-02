@@ -5,7 +5,7 @@ import { ReserveUnitFormComponent } from '../api-bundle/reserve-unit-form/reserv
 import { ConfirmationDataComponent } from '../api-bundle/confirmation-data/confirmation-data.component';
 import { PayRentFormComponent } from '../api-bundle/pay-rent-form/pay-rent-form.component';
 import { UnitSizerComponent } from '../unit-sizer/unit-sizer.component';
-// import { PhotosComponent } from '../photos/photos.component';
+import { PhotosComponent } from '../photos/photos.component'; 
 import { AboutUsComponent } from '../about-us/about-us.component';
 import { DirectionsComponent } from '../directions/directions.component';
 import { AppResolver } from '../api-bundle/resolver/app.resolver';
@@ -40,7 +40,7 @@ import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.compone
 import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { ThankYouGuard } from '../thank-you.guard';
 import { FaqComponent } from '../faq/faq.component';
-
+import { GalleryComponent } from '../gallery/gallery.component';
 const withoutTab = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
         {path: 'login', component: LoginComponent },
@@ -89,7 +89,7 @@ export const apiRoutes = [
     { path: '', component: HomeComponent  },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'frequently-asked-questions', component: FaqComponent},
-    { path: `${environment.locationName}/foley`,
+    { path: `${environment.locationName}/confederate`,
       component: LocationComponent,
       children: [
         {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -118,7 +118,7 @@ export const apiRoutes = [
 
           ]
         },
-        // { path: 'photos', component: PhotosComponent },
+        { path: 'photos', component: GalleryComponent },
         { path: 'about', component: AboutUsComponent },
         { path: 'directions', component: DirectionsComponent },
       ],
@@ -302,7 +302,7 @@ export const apiRoutes = [
       ],
       resolve: { data: AppResolver }
     },
-    { path: 'review/foley', component: HomeComponent,
+    { path: 'review/confederate', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -353,7 +353,7 @@ export const apiRoutes = [
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentComponent },
   {
-    path: 'pay-rent/foley', component: PayRentComponent,
+    path: 'pay-rent/confederate', component: PayRentComponent,
     children: childroute
   },
   {
@@ -378,7 +378,7 @@ export const apiRoutes = [
   },
   { path: `${environment.locationName}/storage-tips`, component: StorageTipsComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'contact-foley', component: ContactUsComponent},
+  { path: 'contact-confederate', component: ContactUsComponent},
   { path: 'contact-silverhill', component: ContactUsComponent},
   { path: 'contact-barnwell', component: ContactUsComponent},
   { path: 'contact-belforest', component: ContactUsComponent},
@@ -392,7 +392,7 @@ export const apiRoutes = [
 export const iFrameRoutes = [
   { path: '', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: `${environment.locationName}/foley`,
+  { path: `${environment.locationName}/confederate`,
     component: LocationComponent,
     children: [
       {path: '', redirectTo: 'storage-units', pathMatch: 'full' },
@@ -458,7 +458,7 @@ export const iFrameRoutes = [
       { path: 'directions', component: DirectionsComponent },
     ]
   },
-  { path: 'review/foley', component: HomeComponent,
+  { path: 'review/confederate', component: HomeComponent,
     resolve: {
         url: 'externalUrlRedirectResolver'
     },
@@ -508,7 +508,7 @@ export const iFrameRoutes = [
   },
   { path: 'error', component: ErrorHandlerComponent },
   { path: 'pay-rent', component: PaymentIframeComponent },
-  { path: 'pay-rent-foley', component: PayRentFloridaComponent },
+  { path: 'pay-rent-confederate', component: PayRentFloridaComponent },
   { path: 'pay-rent-silverhill', component: PayRentChesterComponent},
   { path: 'pay-rent-barnwell', component: PayRentMontgomeryComponent},
   { path: 'pay-rent-belforest', component: PayRentMiddletownComponent},

@@ -45,8 +45,8 @@ export class PayRentComponent implements OnInit {
       })
     });
     this.canonical.create();
-    if (this.router.url.includes('foley')) {
-      this.name = ' Foley';
+    if (this.router.url.includes('confederate')) {
+      this.name = ' confederate';
   } else if (this.router.url.includes('silverhill')) {
     this.name = ' Silverhill';
   } else if (this.router.url.includes('barnwell')) {
@@ -71,7 +71,7 @@ export class PayRentComponent implements OnInit {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('foley')) {
+    if (this.router.url.includes('confederate')) {
       this.og = ogPayRentPageLocation1;
     } else if (this.router.url.includes('silverhill')) {
       this.og = ogPayRentPageLocation2;
@@ -87,7 +87,7 @@ export class PayRentComponent implements OnInit {
 }
 
 public fetchTwitter() {
-  if (this.router.url.includes('foley')) {
+  if (this.router.url.includes('confederate')) {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('silverhill')) {
     this.twitter = twitterPayRentPageLocation2;

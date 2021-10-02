@@ -41,13 +41,20 @@ export const hoursHomePage = [
 export const contactsLocation1 = [
     {
         id: 1,
-        label: 'Address: ',
+        label: 'Facility Address: ',
         data: '68 Confederate Way, Jasper, GA 30143',
         class: 'fas fa-map-marker-alt mr-2 iconColor',
-        redirect: 'https://goo.gl/maps/MvtwywDHezJrP4dP9'
+        redirect: 'https://goo.gl/maps/uZAAsPnp7jX8dtRz9'
     },
     {
         id: 2,
+        label: 'Office Address: ',
+        data: '291 Burnt Mountain Rd, Jasper, GA 30143',
+        class: 'fas fa-map-marker-alt mr-2 iconColor',
+        redirect: 'https://goo.gl/maps/qPSGqVGwKS7V71869'
+    },
+    {
+        id: 3,
         label: 'Email: ',
         email: 'Joyce@randrstorage.com',
         data: `Joyce@randrstorage.com`,
@@ -55,7 +62,7 @@ export const contactsLocation1 = [
         redirect: 'mailto:Joyce@randrstorage.com'
     },
     {
-        id: 3,
+        id: 4,
         label: 'Phone: ',
         data: '(706) 253-STOR(7867)',
         class: 'fas fa-phone mr-2 iconColor',

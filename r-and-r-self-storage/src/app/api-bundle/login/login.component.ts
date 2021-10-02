@@ -131,9 +131,9 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   public fetchContactDetail() {
 
-    if (this.router.url.includes('foley')) {
+    if (this.router.url.includes('confederate')) {
       this.id = 1;
-      this.name = 'Storage Plus of Baldwin County - Foley';
+      this.name = 'Storage Plus of Baldwin County - confederate';
       this.contact = contactsLocation1;
       this.dataSharingService.apiKey = this.dataSharingService.locationAPIKey.loc1;
       localStorage.setItem('APIKey', this.dataSharingService.locationAPIKey.loc1);
@@ -179,7 +179,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   public fetchOg() {
-    if (this.router.url.includes('foley')) {
+    if (this.router.url.includes('confederate')) {
       this.og = ogPayRentPageLocation1;
     } else  if (this.router.url.includes('silverhill')) {
       this.og = ogPayRentPageLocation2;
@@ -195,7 +195,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
 
 public fetchTwitter() {
-  if (this.router.url.includes('foley')) {
+  if (this.router.url.includes('confederate')) {
     this.twitter = twitterPayRentPageLocation1;
   } else if (this.router.url.includes('silverhill')) {
       this.twitter = twitterPayRentPageLocation2;

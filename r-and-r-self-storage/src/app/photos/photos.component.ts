@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { galleryHome } from '../data/galleryImage';
+import { galleryHome,galleryLocation1 } from '../data/galleryImage';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UaParserService } from '../services/ua-parser.service';
 
