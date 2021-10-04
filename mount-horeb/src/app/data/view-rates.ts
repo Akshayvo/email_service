@@ -190,10 +190,10 @@ export const thoversized = [
   //   data: `Contact Us`,
   //   state: objSIMSetting.objActionSetting.blnAllowReservation
   // },
-  // {
-  //   data: `Move In`,
-  //   state: objSIMSetting.objActionSetting.blnAllowMoveIn,
-  // },
+  {
+    data: `Move In`,
+    state: objSIMSetting.objActionSetting.blnAllowMoveIn,
+  },
   // {
   //   data: `Climate Control`,
   //   state: objSIMSetting.objUnitSizesSetting.blnClimateControl
